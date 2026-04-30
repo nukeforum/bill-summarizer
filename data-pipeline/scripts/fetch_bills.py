@@ -253,12 +253,23 @@ def build_bill_record(
 
 
 def _extract_short_title(detail: dict[str, Any]) -> str | None:
-    """Congress.gov exposes alternate titles in detail.titles."""
-    titles = detail.get("titles") or []
+    """Try to pull a short title out of detail.titles.
+
+    The shape varies: sometimes a list of {title, titleType} dicts, sometimes
+    a {url: ...} pointer to a sub-resource, sometimes a list of plain strings.
+    Be permissive — short_title is a nice-to-have, not load-bearing.
+    """
+    titles = detail.get("titles")
+    if not isinstance(titles, list):
+        return None
     for entry in titles:
+        if not isinstance(entry, dict):
+            continue
         title_type = (entry.get("titleType") or "").lower()
         if "short title" in title_type:
-            return entry.get("title")
+            value = entry.get("title")
+            if isinstance(value, str):
+                return value
     return None
 
 
@@ -266,26 +277,37 @@ def _fetch_latest_crs_summary(
     client: CongressClient, congress: int, bill_type: str, bill_number: str
 ) -> str | None:
     body = client.get(f"/bill/{congress}/{bill_type}/{bill_number}/summaries")
-    summaries = body.get("summaries") or []
-    if not summaries:
+    summaries = body.get("summaries")
+    if not isinstance(summaries, list) or not summaries:
         return None
-    summaries.sort(key=lambda s: s.get("updateDate") or "", reverse=True)
-    return summaries[0].get("text")
+    dict_summaries = [s for s in summaries if isinstance(s, dict)]
+    if not dict_summaries:
+        return None
+    dict_summaries.sort(key=lambda s: s.get("updateDate") or "", reverse=True)
+    text = dict_summaries[0].get("text")
+    return text if isinstance(text, str) else None
 
 
 def _fetch_text_urls(
     client: CongressClient, congress: int, bill_type: str, bill_number: str
 ) -> dict[str, str]:
     body = client.get(f"/bill/{congress}/{bill_type}/{bill_number}/text")
-    versions = body.get("textVersions") or []
-    if not versions:
+    versions = body.get("textVersions")
+    if not isinstance(versions, list) or not versions:
         return {}
-    versions.sort(key=lambda v: v.get("date") or "", reverse=True)
-    formats = versions[0].get("formats") or []
+    dict_versions = [v for v in versions if isinstance(v, dict)]
+    if not dict_versions:
+        return {}
+    dict_versions.sort(key=lambda v: v.get("date") or "", reverse=True)
+    formats = dict_versions[0].get("formats")
+    if not isinstance(formats, list):
+        return {}
     out: dict[str, str] = {}
     for fmt in formats:
+        if not isinstance(fmt, dict):
+            continue
         url = fmt.get("url")
-        if not url:
+        if not isinstance(url, str):
             continue
         ftype = (fmt.get("type") or "").lower()
         if "html" in ftype and "html" not in out:
@@ -348,10 +370,10 @@ def main() -> int:
 
         try:
             record = build_bill_record(client, congress, summary, outcome)
-        except requests.RequestException as exc:
+        except Exception as exc:  # noqa: BLE001 - one bad bill must not kill the run
             ref = f"{summary.get('type')}{summary.get('number')}"
-            print(f"  ! skipping {ref}: {exc}", file=sys.stderr)
-            reject_counts["fetch_error"] += 1
+            print(f"  ! skipping {ref}: {type(exc).__name__}: {exc}", file=sys.stderr)
+            reject_counts["build_error"] += 1
             continue
 
         if record["id"] in seen_ids:
