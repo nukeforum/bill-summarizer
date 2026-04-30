@@ -12,6 +12,11 @@ concurrency:
   group: update-bills
   cancel-in-progress: false
 
+# Opt JS-based actions (checkout, setup-python) into the Node 24 runtime ahead
+# of the June 2026 default switch — silences the Node 20 deprecation warning.
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 jobs:
   update:
     runs-on: ubuntu-latest

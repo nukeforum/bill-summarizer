@@ -14,6 +14,7 @@ import json
 import os
 import sys
 import time
+from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Iterable
@@ -24,10 +25,11 @@ API_BASE = "https://api.congress.gov/v3"
 USER_AGENT = "bill-summarizer-pipeline/1.0 (+https://github.com/nukeforum/bill-summarizer)"
 RECENT_DAYS = 60
 LIST_PAGE_LIMIT = 250
-LIST_PAGES_MAX = 4  # 1000 most-recently-updated bills is plenty for a 60-day window
+LIST_PAGES_MAX = 8  # 2000 most-recently-updated bills, cushion for busy Congresses
 REQUEST_TIMEOUT = 30
 RETRY_COUNT = 3
 RETRY_BACKOFF_SECONDS = 2.0
+SAMPLE_REJECTIONS = 8  # how many rejected actions to dump for debugging
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_PATH = REPO_ROOT / "docs" / "data" / "bills.json"
@@ -45,9 +47,33 @@ OUTCOME_FAILED = "failed"
 _OUTCOME_RULES: list[tuple[str, tuple[str, ...]]] = [
     (OUTCOME_ENACTED, ("became public law", "became law")),
     (OUTCOME_VETOED, ("vetoed by president",)),
-    (OUTCOME_FAILED, ("failed of passage", "motion to table agreed to")),
-    (OUTCOME_PASSED_HOUSE, ("passed/agreed to in house", "passed house")),
-    (OUTCOME_PASSED_SENATE, ("passed/agreed to in senate", "passed senate")),
+    (
+        OUTCOME_FAILED,
+        (
+            "failed of passage",
+            "motion to table agreed to",
+            "failed to pass",
+            "rejected",
+        ),
+    ),
+    (
+        OUTCOME_PASSED_HOUSE,
+        (
+            "passed/agreed to in house",
+            "passed house",
+            "on passage passed by the house",
+            "agreed to in house",
+        ),
+    ),
+    (
+        OUTCOME_PASSED_SENATE,
+        (
+            "passed/agreed to in senate",
+            "passed senate",
+            "on passage passed by the senate",
+            "agreed to in senate",
+        ),
+    ),
 ]
 
 
@@ -103,15 +129,25 @@ class CongressClient:
 # ---------- pipeline -------------------------------------------------------
 
 
-def list_recent_bills(client: CongressClient, congress: int) -> Iterable[dict[str, Any]]:
-    """Yield bill summaries from /bill/{congress}, sorted by updateDate desc."""
+def list_recent_bills(
+    client: CongressClient,
+    congress: int,
+    cutoff: datetime,
+) -> Iterable[dict[str, Any]]:
+    """Yield bill summaries from /bill/{congress} sorted by updateDate desc.
+
+    Uses fromDateTime to scope to bills updated since the cutoff so we don't
+    waste pagination on stale bills.
+    """
+    from_dt = cutoff.strftime("%Y-%m-%dT%H:%M:%SZ")
     for page in range(LIST_PAGES_MAX):
         offset = page * LIST_PAGE_LIMIT
         body = client.get(
             f"/bill/{congress}",
             limit=LIST_PAGE_LIMIT,
             offset=offset,
-            sort="updateDate+desc",
+            sort="updateDate desc",
+            fromDateTime=from_dt,
         )
         bills = body.get("bills") or []
         if not bills:
@@ -146,25 +182,39 @@ def normalize_party(value: str | None) -> str:
     return v[:1]
 
 
+def evaluate_bill(
+    bill_summary: dict[str, Any], cutoff: datetime
+) -> tuple[str | None, str]:
+    """Return (outcome, reject_reason). outcome is None when rejected."""
+    bill_type = (bill_summary.get("type") or "").lower()
+    bill_number = str(bill_summary.get("number") or "")
+    if not bill_type or not bill_number:
+        return None, "missing_type_or_number"
+
+    latest_action = bill_summary.get("latestAction") or {}
+    action_text = latest_action.get("text") or ""
+    outcome = classify_outcome(action_text)
+    if outcome is None:
+        return None, "no_outcome_match"
+
+    action_date = parse_iso_date(latest_action.get("actionDate") or latest_action.get("date"))
+    if action_date is None:
+        return None, "unparseable_action_date"
+    if action_date < cutoff:
+        return None, "action_too_old"
+
+    return outcome, "kept"
+
+
 def build_bill_record(
     client: CongressClient,
     congress: int,
     bill_summary: dict[str, Any],
-    cutoff: datetime,
-) -> dict[str, Any] | None:
-    bill_type = (bill_summary.get("type") or "").lower()
-    bill_number = str(bill_summary.get("number") or "")
-    if not bill_type or not bill_number:
-        return None
-
+    outcome: str,
+) -> dict[str, Any]:
+    bill_type = (bill_summary["type"] or "").lower()
+    bill_number = str(bill_summary["number"])
     latest_action = bill_summary.get("latestAction") or {}
-    outcome = classify_outcome(latest_action.get("text") or "")
-    if outcome is None:
-        return None
-
-    action_date = parse_iso_date(latest_action.get("actionDate") or latest_action.get("date"))
-    if action_date is None or action_date < cutoff:
-        return None
 
     detail = (
         client.get(f"/bill/{congress}/{bill_type}/{bill_number}").get("bill") or {}
@@ -219,7 +269,6 @@ def _fetch_latest_crs_summary(
     summaries = body.get("summaries") or []
     if not summaries:
         return None
-    # Pick the most recently updated CRS summary.
     summaries.sort(key=lambda s: s.get("updateDate") or "", reverse=True)
     return summaries[0].get("text")
 
@@ -231,7 +280,6 @@ def _fetch_text_urls(
     versions = body.get("textVersions") or []
     if not versions:
         return {}
-    # Use the latest (first when sorted by date desc) version's formats.
     versions.sort(key=lambda v: v.get("date") or "", reverse=True)
     formats = versions[0].get("formats") or []
     out: dict[str, str] = {}
@@ -283,23 +331,48 @@ def main() -> int:
     client = CongressClient(api_key)
     seen_ids: set[str] = set()
     records: list[dict[str, Any]] = []
+    reject_counts: Counter[str] = Counter()
+    rejection_samples: list[str] = []
+    total_evaluated = 0
 
-    for summary in list_recent_bills(client, congress):
+    for summary in list_recent_bills(client, congress, cutoff):
+        total_evaluated += 1
+        outcome, reason = evaluate_bill(summary, cutoff)
+        if outcome is None:
+            reject_counts[reason] += 1
+            if reason == "no_outcome_match" and len(rejection_samples) < SAMPLE_REJECTIONS:
+                action_text = (summary.get("latestAction") or {}).get("text") or ""
+                ref = f"{summary.get('type')}{summary.get('number')}"
+                rejection_samples.append(f"{ref}: {action_text[:140]}")
+            continue
+
         try:
-            record = build_bill_record(client, congress, summary, cutoff)
+            record = build_bill_record(client, congress, summary, outcome)
         except requests.RequestException as exc:
-            bill_ref = f"{summary.get('type')}{summary.get('number')}"
-            print(f"  ! skipping {bill_ref}: {exc}", file=sys.stderr)
+            ref = f"{summary.get('type')}{summary.get('number')}"
+            print(f"  ! skipping {ref}: {exc}", file=sys.stderr)
+            reject_counts["fetch_error"] += 1
             continue
-        if record is None:
-            continue
+
         if record["id"] in seen_ids:
+            reject_counts["duplicate"] += 1
             continue
         seen_ids.add(record["id"])
         records.append(record)
         print(f"  + {record['id']}: {record['outcome']} on {record['latest_action']['date']}")
 
     records.sort(key=lambda r: r["latest_action"]["date"], reverse=True)
+
+    print()
+    print(f"Evaluated {total_evaluated} bills, kept {len(records)}.")
+    if reject_counts:
+        print("Rejections:")
+        for reason, count in reject_counts.most_common():
+            print(f"  - {reason}: {count}")
+    if rejection_samples:
+        print("Sample latestAction texts that did not match any outcome rule:")
+        for sample in rejection_samples:
+            print(f"  · {sample}")
 
     manifest = {
         "generated_at": now.replace(microsecond=0).isoformat().replace("+00:00", "Z"),
