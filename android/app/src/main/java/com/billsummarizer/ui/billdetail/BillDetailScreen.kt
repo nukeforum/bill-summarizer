@@ -23,10 +23,13 @@ import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.AnnotatedString
+import androidx.compose.ui.text.fromHtml
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
@@ -149,7 +152,8 @@ private fun BillDetailContent(bill: Bill, innerPadding: PaddingValues) {
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             } else {
-                Text(text = summary, style = MaterialTheme.typography.bodyMedium)
+                val annotated = remember(summary) { AnnotatedString.fromHtml(summary) }
+                Text(text = annotated, style = MaterialTheme.typography.bodyMedium)
             }
         }
 

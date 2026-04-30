@@ -10,7 +10,6 @@ full-text URLs, and writes docs/data/bills.json.
 
 from __future__ import annotations
 
-import html as html_lib
 import json
 import os
 import re
@@ -23,16 +22,7 @@ from typing import Any, Iterable
 
 import requests
 
-_HTML_TAG_RE = re.compile(r"<[^>]+>")
 _PARTY_STATE_SUFFIX_RE = re.compile(r"\s*\[[A-Z]+-[A-Z]{2}\]\s*$")
-_WHITESPACE_RE = re.compile(r"\s+")
-
-
-def strip_html(value: str) -> str:
-    """Render a Congress.gov HTML-flavored string as plain text."""
-    no_tags = _HTML_TAG_RE.sub(" ", value)
-    decoded = html_lib.unescape(no_tags)
-    return _WHITESPACE_RE.sub(" ", decoded).strip()
 
 
 def clean_sponsor_name(full_name: str) -> str:
@@ -305,10 +295,7 @@ def _fetch_latest_crs_summary(
         return None
     dict_summaries.sort(key=lambda s: s.get("updateDate") or "", reverse=True)
     text = dict_summaries[0].get("text")
-    if not isinstance(text, str):
-        return None
-    cleaned = strip_html(text)
-    return cleaned or None
+    return text if isinstance(text, str) and text else None
 
 
 def _fetch_text_urls(
