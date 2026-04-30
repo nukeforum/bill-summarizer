@@ -109,4 +109,7 @@ dependencies {
 
   // DataStore
   implementation(libs.androidx.datastore.preferences)
+
+  // Chrome Custom Tabs
+  implementation(libs.androidx.browser)
 }

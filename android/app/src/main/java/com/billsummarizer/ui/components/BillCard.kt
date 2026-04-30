@@ -21,11 +21,8 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.billsummarizer.data.model.Bill
 import com.billsummarizer.theme.PartyColors
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
-import java.time.format.DateTimeParseException
-
-private val displayDateFormatter: DateTimeFormatter = DateTimeFormatter.ofPattern("MMM d, yyyy")
+import com.billsummarizer.ui.util.formatBillRef
+import com.billsummarizer.ui.util.formatDate
 
 @Composable
 fun BillCard(bill: Bill, onClick: () -> Unit, modifier: Modifier = Modifier) {
@@ -73,20 +70,3 @@ fun BillCard(bill: Bill, onClick: () -> Unit, modifier: Modifier = Modifier) {
     }
 }
 
-private fun formatBillRef(type: String, number: String): String = when (type.lowercase()) {
-    "hr" -> "H.R. $number"
-    "s" -> "S. $number"
-    "hjres" -> "H.J.Res. $number"
-    "sjres" -> "S.J.Res. $number"
-    "hconres" -> "H.Con.Res. $number"
-    "sconres" -> "S.Con.Res. $number"
-    "hres" -> "H.Res. $number"
-    "sres" -> "S.Res. $number"
-    else -> "${type.uppercase()} $number"
-}
-
-private fun formatDate(iso: String): String = try {
-    LocalDate.parse(iso).format(displayDateFormatter)
-} catch (_: DateTimeParseException) {
-    iso
-}

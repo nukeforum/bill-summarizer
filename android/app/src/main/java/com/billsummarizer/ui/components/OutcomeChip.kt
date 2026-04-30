@@ -10,12 +10,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.billsummarizer.data.model.Outcome
+import com.billsummarizer.ui.util.displayName
 
 @Composable
 fun OutcomeChip(outcome: Outcome, modifier: Modifier = Modifier) {
-    val (label, container, content) = outcomeStyle(outcome)
+    val (container, content) = outcomeColors(outcome)
     Text(
-        text = label,
+        text = outcome.displayName(),
         style = MaterialTheme.typography.labelSmall,
         color = content,
         modifier = modifier
@@ -24,33 +25,15 @@ fun OutcomeChip(outcome: Outcome, modifier: Modifier = Modifier) {
     )
 }
 
-private data class OutcomeStyle(val label: String, val container: Color, val content: Color)
-
 @Composable
-private fun outcomeStyle(outcome: Outcome): OutcomeStyle = when (outcome) {
-    Outcome.PASSED_HOUSE -> OutcomeStyle(
-        label = "Passed House",
-        container = MaterialTheme.colorScheme.primaryContainer,
-        content = MaterialTheme.colorScheme.onPrimaryContainer,
-    )
-    Outcome.PASSED_SENATE -> OutcomeStyle(
-        label = "Passed Senate",
-        container = MaterialTheme.colorScheme.primaryContainer,
-        content = MaterialTheme.colorScheme.onPrimaryContainer,
-    )
-    Outcome.ENACTED -> OutcomeStyle(
-        label = "Enacted",
-        container = MaterialTheme.colorScheme.tertiaryContainer,
-        content = MaterialTheme.colorScheme.onTertiaryContainer,
-    )
-    Outcome.VETOED -> OutcomeStyle(
-        label = "Vetoed",
-        container = MaterialTheme.colorScheme.errorContainer,
-        content = MaterialTheme.colorScheme.onErrorContainer,
-    )
-    Outcome.FAILED -> OutcomeStyle(
-        label = "Failed",
-        container = MaterialTheme.colorScheme.surfaceVariant,
-        content = MaterialTheme.colorScheme.onSurfaceVariant,
-    )
+private fun outcomeColors(outcome: Outcome): Pair<Color, Color> = when (outcome) {
+    Outcome.PASSED_HOUSE,
+    Outcome.PASSED_SENATE -> MaterialTheme.colorScheme.primaryContainer to
+        MaterialTheme.colorScheme.onPrimaryContainer
+    Outcome.ENACTED -> MaterialTheme.colorScheme.tertiaryContainer to
+        MaterialTheme.colorScheme.onTertiaryContainer
+    Outcome.VETOED -> MaterialTheme.colorScheme.errorContainer to
+        MaterialTheme.colorScheme.onErrorContainer
+    Outcome.FAILED -> MaterialTheme.colorScheme.surfaceVariant to
+        MaterialTheme.colorScheme.onSurfaceVariant
 }
