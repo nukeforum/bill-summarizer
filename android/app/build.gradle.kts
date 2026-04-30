@@ -112,4 +112,7 @@ dependencies {
 
   // Chrome Custom Tabs
   implementation(libs.androidx.browser)
+
+  // Splash screen (Android 12+ API, back-compat to API 21)
+  implementation(libs.androidx.core.splashscreen)
 }
