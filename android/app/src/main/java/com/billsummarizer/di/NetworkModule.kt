@@ -13,10 +13,9 @@ import retrofit2.Retrofit
 import retrofit2.converter.kotlinx.serialization.asConverterFactory
 import javax.inject.Singleton
 
-// TODO(milestone-1): replace with the real GitHub Pages base URL once the data
-// pipeline is publishing. The repo will host bills.json at
-// https://<github-user>.github.io/bill-summarizer/data/bills.json
-private const val BILLS_BASE_URL = "https://codemunkie.github.io/bill-summarizer/"
+// GitHub Pages site published from /docs by .github/workflows/update-bills.yml.
+// The Retrofit BillsApi appends data/bills.json to this base.
+private const val BILLS_BASE_URL = "https://nukeforum.github.io/bill-summarizer/"
 
 @Module
 @InstallIn(SingletonComponent::class)
