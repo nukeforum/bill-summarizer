@@ -3,6 +3,21 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!--
+      Android 11+ package visibility filters: declare the LLM apps so
+      PackageManager.getPackageInfo and Intent.setPackage can see them, and
+      declare ACTION_SEND text/plain so the generic chooser can resolve.
+    -->
+    <queries>
+        <package android:name="com.openai.chatgpt" />
+        <package android:name="com.anthropic.claude" />
+        <package android:name="com.google.android.apps.bard" />
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+            <data android:mimeType="text/plain" />
+        </intent>
+    </queries>
+
     <application
         android:name=".BillSummarizerApp"
         android:allowBackup="true"
