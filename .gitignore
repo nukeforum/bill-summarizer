@@ -1,0 +1,25 @@
+# Android / Gradle
+android/.gradle/
+android/build/
+android/app/build/
+android/captures/
+android/.idea/
+android/local.properties
+android/*.iml
+android/app/*.iml
+android/.cxx/
+android/.kotlin/
+
+# Data pipeline (Python)
+data-pipeline/.venv/
+data-pipeline/venv/
+data-pipeline/__pycache__/
+data-pipeline/**/__pycache__/
+data-pipeline/*.pyc
+data-pipeline/.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
