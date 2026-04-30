@@ -10,8 +10,10 @@ full-text URLs, and writes docs/data/bills.json.
 
 from __future__ import annotations
 
+import html as html_lib
 import json
 import os
+import re
 import sys
 import time
 from collections import Counter
@@ -20,6 +22,22 @@ from pathlib import Path
 from typing import Any, Iterable
 
 import requests
+
+_HTML_TAG_RE = re.compile(r"<[^>]+>")
+_PARTY_STATE_SUFFIX_RE = re.compile(r"\s*\[[A-Z]+-[A-Z]{2}\]\s*$")
+_WHITESPACE_RE = re.compile(r"\s+")
+
+
+def strip_html(value: str) -> str:
+    """Render a Congress.gov HTML-flavored string as plain text."""
+    no_tags = _HTML_TAG_RE.sub(" ", value)
+    decoded = html_lib.unescape(no_tags)
+    return _WHITESPACE_RE.sub(" ", decoded).strip()
+
+
+def clean_sponsor_name(full_name: str) -> str:
+    """Strip the trailing '[D-MI]' style party/state suffix Congress.gov bakes in."""
+    return _PARTY_STATE_SUFFIX_RE.sub("", full_name).strip()
 
 API_BASE = "https://api.congress.gov/v3"
 USER_AGENT = "bill-summarizer-pipeline/1.0 (+https://github.com/nukeforum/bill-summarizer)"
@@ -221,7 +239,9 @@ def build_bill_record(
     )
     sponsors = detail.get("sponsors") or []
     sponsor = sponsors[0] if sponsors else {}
-    sponsor_name = sponsor.get("fullName") or sponsor.get("lastName") or "Unknown"
+    sponsor_name = clean_sponsor_name(
+        sponsor.get("fullName") or sponsor.get("lastName") or "Unknown"
+    )
 
     summary_text = _fetch_latest_crs_summary(client, congress, bill_type, bill_number)
     text_urls = _fetch_text_urls(client, congress, bill_type, bill_number)
@@ -285,7 +305,10 @@ def _fetch_latest_crs_summary(
         return None
     dict_summaries.sort(key=lambda s: s.get("updateDate") or "", reverse=True)
     text = dict_summaries[0].get("text")
-    return text if isinstance(text, str) else None
+    if not isinstance(text, str):
+        return None
+    cleaned = strip_html(text)
+    return cleaned or None
 
 
 def _fetch_text_urls(
