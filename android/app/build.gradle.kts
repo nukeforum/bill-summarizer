@@ -42,6 +42,10 @@ android {
 
     lint {
         warningsAsErrors = true
+        // SDK-version advisories: bumps stay deliberate (require installing the
+        // platform locally and validating). Lint shouldn't fail the build for
+        // "your SDK isn't the latest preview."
+        disable += listOf("OldTargetApi", "GradleDependency")
     }
 }
 

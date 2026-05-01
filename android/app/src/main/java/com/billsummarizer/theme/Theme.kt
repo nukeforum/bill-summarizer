@@ -1,7 +1,10 @@
 package com.billsummarizer.theme
 
+import android.annotation.SuppressLint
+import android.content.Context
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.material3.ColorScheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.dynamicDarkColorScheme
@@ -38,13 +41,18 @@ fun MyApplicationTheme(
 ) {
   val colorScheme =
     when {
-      dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
-        val context = LocalContext.current
-        if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
-      }
+      dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S ->
+        dynamicScheme(LocalContext.current, darkTheme)
       darkTheme -> DarkColorScheme
       else -> LightColorScheme
     }
 
   MaterialTheme(colorScheme = colorScheme, typography = Typography, content = content)
 }
+
+// Caller in MyApplicationTheme gates this on Build.VERSION.SDK_INT >= S.
+// @RequiresApi alone isn't tracked through a `when` branch by the Compose
+// lint checker, so we suppress here at the API-gated boundary.
+@SuppressLint("NewApi")
+private fun dynamicScheme(context: Context, darkTheme: Boolean): ColorScheme =
+  if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
