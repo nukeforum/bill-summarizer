@@ -1,7 +1,55 @@
 {
-  "generated_at": "2026-05-01T08:11:29Z",
+  "generated_at": "2026-05-01T16:52:09Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "sres708-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "708",
+      "title": "A resolution amending rule XXXVII of the Standing Rules of the Senate to prohibit Senators from trading on prediction markets.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Moreno, Bernie",
+        "party": "R",
+        "state": "OH"
+      },
+      "introduced_date": "2026-04-30",
+      "latest_action": {
+        "date": "2026-04-30",
+        "text": "Resolution agreed to in Senate with amendments by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": null,
+      "text_url_xml": null,
+      "text_url_pdf": null,
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/708"
+    },
+    {
+      "id": "sjres184-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "184",
+      "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Islamic Republic of Iran that have not been authorized by Congress.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Schiff, Adam B.",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2026-04-16",
+      "latest_action": {
+        "date": "2026-04-30",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 50. Record Vote Number: 113. (consideration: CR S2156-2158)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": null,
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres184/BILLS-119sjres184is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres184/BILLS-119sjres184is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/184"
+    },
     {
       "id": "hr1346-119",
       "congress": 119,
@@ -10,7 +58,7 @@
       "title": "Nationwide Consumer and Fuel Retailer Choice Act of 2025",
       "short_title": null,
       "sponsor": {
-        "name": "Rep. Smith, Adrian [R-NE-3]",
+        "name": "Rep. Smith, Adrian",
         "party": "R",
         "state": "NE"
       },
@@ -27,28 +75,28 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1346"
     },
     {
-      "id": "s2975-119",
+      "id": "s1199-119",
       "congress": 119,
       "type": "s",
-      "number": "2975",
-      "title": "PIPELINE Safety Act of 2025",
+      "number": "1199",
+      "title": "SBA Fraud Enforcement Extension Act",
       "short_title": null,
       "sponsor": {
-        "name": "Sen. Cruz, Ted",
+        "name": "Sen. Ernst, Joni",
         "party": "R",
-        "state": "TX"
+        "state": "IA"
       },
-      "introduced_date": "2025-10-06",
+      "introduced_date": "2025-03-27",
       "latest_action": {
         "date": "2026-04-29",
-        "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S2109-2121; text of amendment in the nature of a substitute: CR S2109-2121)"
+        "text": "Passed Senate with an amendment by Unanimous Consent. (text of amendment in the nature of a substitute: CR S2108)"
       },
       "outcome": "passed_senate",
       "summary_crs": null,
       "text_url_html": null,
-      "text_url_xml": "https://www.congress.gov/119/bills/s2975/BILLS-119s2975es.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/s2975/BILLS-119s2975es.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2975"
+      "text_url_xml": "https://www.congress.gov/119/bills/s1199/BILLS-119s1199es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s1199/BILLS-119s1199es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1199"
     },
     {
       "id": "s2232-119",
@@ -75,28 +123,28 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2232"
     },
     {
-      "id": "s1199-119",
+      "id": "s2975-119",
       "congress": 119,
       "type": "s",
-      "number": "1199",
-      "title": "SBA Fraud Enforcement Extension Act",
+      "number": "2975",
+      "title": "PIPELINE Safety Act of 2025",
       "short_title": null,
       "sponsor": {
-        "name": "Sen. Ernst, Joni",
+        "name": "Sen. Cruz, Ted",
         "party": "R",
-        "state": "IA"
+        "state": "TX"
       },
-      "introduced_date": "2025-03-27",
+      "introduced_date": "2025-10-06",
       "latest_action": {
         "date": "2026-04-29",
-        "text": "Passed Senate with an amendment by Unanimous Consent. (text of amendment in the nature of a substitute: CR S2108)"
+        "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S2109-2121; text of amendment in the nature of a substitute: CR S2109-2121)"
       },
       "outcome": "passed_senate",
       "summary_crs": null,
       "text_url_html": null,
-      "text_url_xml": "https://www.congress.gov/119/bills/s1199/BILLS-119s1199es.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/s1199/BILLS-119s1199es.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1199"
+      "text_url_xml": "https://www.congress.gov/119/bills/s2975/BILLS-119s2975es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s2975/BILLS-119s2975es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2975"
     },
     {
       "id": "sjres99-119",
@@ -195,6 +243,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2280"
     },
     {
+      "id": "s2934-119",
+      "congress": 119,
+      "type": "s",
+      "number": "2934",
+      "title": "Protecting Americans from Russian Litigation Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2025-09-29",
+      "latest_action": {
+        "date": "2026-04-28",
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S2073-2074; text: CR S2073-2074)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": null,
+      "text_url_xml": "https://www.congress.gov/119/bills/s2934/BILLS-119s2934es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s2934/BILLS-119s2934es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2934"
+    },
+    {
       "id": "sres668-119",
       "congress": 119,
       "type": "sres",
@@ -267,30 +339,6 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/272"
     },
     {
-      "id": "s2934-119",
-      "congress": 119,
-      "type": "s",
-      "number": "2934",
-      "title": "Protecting Americans from Russian Litigation Act of 2025",
-      "short_title": null,
-      "sponsor": {
-        "name": "Sen. Cornyn, John",
-        "party": "R",
-        "state": "TX"
-      },
-      "introduced_date": "2025-09-29",
-      "latest_action": {
-        "date": "2026-04-28",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S2073-2074; text: CR S2073-2074)"
-      },
-      "outcome": "passed_senate",
-      "summary_crs": null,
-      "text_url_html": null,
-      "text_url_xml": "https://www.congress.gov/119/bills/s2934/BILLS-119s2934es.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/s2934/BILLS-119s2934es.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2934"
-    },
-    {
       "id": "hjres140-119",
       "congress": 119,
       "type": "hjres",
@@ -298,7 +346,7 @@
       "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Land Management relating to Public Land Order No. 7917 for Withdrawal of Federal Lands; Cook, Lake, and Saint Louis Counties, MN.",
       "short_title": null,
       "sponsor": {
-        "name": "Rep. Stauber, Pete [R-MN-8]",
+        "name": "Rep. Stauber, Pete",
         "party": "R",
         "state": "MN"
       },
@@ -311,7 +359,7 @@
       "summary_crs": "<p>This joint resolution nullifies Public Land Order 7917, which withdrew approximately 225,504 acres of National Forest System lands in Cook, Lake, and Saint Louis Counties, Minnesota, from mineral and geothermal leasing for 20 years. In 2023, the Bureau of Land Management issued the order to protect and preserve the Rainy River Watershed, the Boundary Waters Canoe Area Wilderness, the Boundary Waters Canoe Area Wilderness Mining Protection Area, and the 1854 Ceded Territory of the Lake Superior Chippewa from the potential adverse effects of mineral and geothermal exploration and development. The joint resolution removes such protections and allows such land to be leased for the exploration and development of minerals and geothermal energy.</p>",
       "text_url_html": null,
       "text_url_xml": null,
-      "text_url_pdf": null,
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ85/PLAW-119publ85.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/140"
     },
     {
@@ -346,7 +394,7 @@
       "title": "To amend the FISA Amendments Act of 2008 to extend the authorities of title VII of the Foreign Intelligence Surveillance Act of 1978 through April 30, 2026, and for other purposes.",
       "short_title": null,
       "sponsor": {
-        "name": "Rep. Scott, Austin [R-GA-8]",
+        "name": "Rep. Scott, Austin",
         "party": "R",
         "state": "GA"
       },
