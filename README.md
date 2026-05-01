@@ -61,4 +61,5 @@ the build until you upgrade or `@Suppress` deliberately.
 
 ## License
 
-TBD — placeholder for project owner.
+Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for
+the full text.
