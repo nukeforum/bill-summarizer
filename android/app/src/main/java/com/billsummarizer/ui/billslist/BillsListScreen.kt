@@ -12,9 +12,13 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.horizontalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FilterChip
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -34,6 +38,7 @@ import com.billsummarizer.data.model.Bill
 @Composable
 fun BillsListScreen(
     onBillClick: (Bill) -> Unit,
+    onSettingsClick: () -> Unit,
     modifier: Modifier = Modifier,
     viewModel: BillsListViewModel = hiltViewModel(),
 ) {
@@ -42,7 +47,14 @@ fun BillsListScreen(
     Scaffold(
         modifier = modifier,
         topBar = {
-            TopAppBar(title = { Text("Recently Voted On") })
+            TopAppBar(
+                title = { Text("Recently Voted On") },
+                actions = {
+                    IconButton(onClick = onSettingsClick) {
+                        Icon(Icons.Filled.Settings, contentDescription = "Settings")
+                    }
+                },
+            )
         },
     ) { innerPadding ->
         BillsListContent(
