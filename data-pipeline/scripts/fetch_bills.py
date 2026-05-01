@@ -22,12 +22,26 @@ from typing import Any, Iterable
 
 import requests
 
-_PARTY_STATE_SUFFIX_RE = re.compile(r"\s*\[[A-Z]+-[A-Z]{2}\]\s*$")
+_PARTY_STATE_SUFFIX_RE = re.compile(r"\s*\[[A-Z]+-[A-Z]{2}(?:-\d+)?\]\s*$")
 
 
 def clean_sponsor_name(full_name: str) -> str:
-    """Strip the trailing '[D-MI]' style party/state suffix Congress.gov bakes in."""
+    """Strip the trailing party/state suffix Congress.gov bakes into fullName.
+
+    Senators come back as ``Sen. Peters, Gary C. [D-MI]``; House reps add a
+    district number, e.g. ``Rep. Smith, Adrian [R-NE-3]``. Both shapes are
+    stripped. Names without a suffix (e.g. fallback to ``lastName``) pass
+    through unchanged.
+    """
     return _PARTY_STATE_SUFFIX_RE.sub("", full_name).strip()
+
+
+# Self-check: cheap to run at import; if these ever fail something has shifted
+# in upstream Congress.gov data and the rendered detail screen will look ugly.
+assert clean_sponsor_name("Sen. Peters, Gary C. [D-MI]") == "Sen. Peters, Gary C."
+assert clean_sponsor_name("Rep. Smith, Adrian [R-NE-3]") == "Rep. Smith, Adrian"
+assert clean_sponsor_name("Sen. Sanders, Bernard") == "Sen. Sanders, Bernard"
+assert clean_sponsor_name("Unknown") == "Unknown"
 
 API_BASE = "https://api.congress.gov/v3"
 USER_AGENT = "bill-summarizer-pipeline/1.0 (+https://github.com/nukeforum/bill-summarizer)"
