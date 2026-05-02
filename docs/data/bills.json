@@ -1,7 +1,55 @@
 {
-  "generated_at": "2026-05-01T16:52:09Z",
+  "generated_at": "2026-05-02T07:44:06Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "hr7147-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "7147",
+      "title": "Homeland Security and Further Additional Continuing Appropriations Act, 2026.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Cole, Tom",
+        "party": "R",
+        "state": "OK"
+      },
+      "introduced_date": "2026-01-20",
+      "latest_action": {
+        "date": "2026-04-30",
+        "text": "Became Public Law No: 119-86."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Further Additional Continuing Appropriations Act, 2026</strong></p><p>This bill provides continuing FY2026 appropriations to the Department of Homeland Security (DHS) through May 22, 2026. It is known as a continuing resolution (CR) and ends the partial DHS shutdown that began on February 14, 2026, due to a lapse in appropriations for DHS.</p><p>The CR generally funds most&nbsp;DHS agencies and&nbsp;programs&nbsp;at the FY2025 levels through the earlier of May 22, 2026, or the enactment of the FY2026 DHS appropriations act.</p><p>The bill also authorizes back pay, in accordance with current law, for federal employees who were affected by the partial DHS shutdown.</p><p>Finally, the bill ratifies and approves certain obligations that were incurred during the partial DHS shutdown, including obligations incurred to maintain the essential level of activity to protect life and property and bring about an orderly termination of government functions.</p>",
+      "text_url_html": null,
+      "text_url_xml": null,
+      "text_url_pdf": null,
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/7147"
+    },
+    {
+      "id": "s4465-119",
+      "congress": 119,
+      "type": "s",
+      "number": "4465",
+      "title": "A bill to amend the FISA Amendments Act of 2008 to extend the authorities of title VII of the Foreign Intelligence Surveillance Act of 1978, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cotton, Tom",
+        "party": "R",
+        "state": "AR"
+      },
+      "introduced_date": "2026-04-30",
+      "latest_action": {
+        "date": "2026-04-30",
+        "text": "Became Public Law No: 119-87."
+      },
+      "outcome": "enacted",
+      "summary_crs": null,
+      "text_url_html": null,
+      "text_url_xml": null,
+      "text_url_pdf": null,
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/4465"
+    },
     {
       "id": "sres708-119",
       "congress": 119,
@@ -73,6 +121,30 @@
       "text_url_xml": "https://www.congress.gov/119/bills/hr1346/BILLS-119hr1346ih.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/hr1346/BILLS-119hr1346ih.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1346"
+    },
+    {
+      "id": "s2280-119",
+      "congress": 119,
+      "type": "s",
+      "number": "2280",
+      "title": "A bill to transfer administrative jurisdiction over certain parcels of Federal land in Harpers Ferry, West Virginia, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Justice, James C.",
+        "party": "R",
+        "state": "WV"
+      },
+      "introduced_date": "2025-07-15",
+      "latest_action": {
+        "date": "2026-04-29",
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S2100; text: CR S2100)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": null,
+      "text_url_xml": "https://www.congress.gov/119/bills/s2280/BILLS-119s2280es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s2280/BILLS-119s2280es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2280"
     },
     {
       "id": "s1199-119",
@@ -217,30 +289,6 @@
       "text_url_xml": "https://www.congress.gov/119/bills/s874/BILLS-119s874es.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/s874/BILLS-119s874es.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/874"
-    },
-    {
-      "id": "s2280-119",
-      "congress": 119,
-      "type": "s",
-      "number": "2280",
-      "title": "A bill to transfer administrative jurisdiction over certain parcels of Federal land in Harpers Ferry, West Virginia, and for other purposes.",
-      "short_title": null,
-      "sponsor": {
-        "name": "Sen. Justice, James C.",
-        "party": "R",
-        "state": "WV"
-      },
-      "introduced_date": "2025-07-15",
-      "latest_action": {
-        "date": "2026-04-29",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S2100; text: CR S2100)"
-      },
-      "outcome": "passed_senate",
-      "summary_crs": null,
-      "text_url_html": null,
-      "text_url_xml": "https://www.congress.gov/119/bills/s2280/BILLS-119s2280es.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/s2280/BILLS-119s2280es.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2280"
     },
     {
       "id": "s2934-119",
