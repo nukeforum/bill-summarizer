@@ -7,10 +7,10 @@ plugins {
 }
 
 android {
-    namespace = "com.billsummarizer"
+    namespace = "com.informedcitizen"
     compileSdk = 36
     defaultConfig {
-        applicationId = "com.billsummarizer"
+        applicationId = "com.informedcitizen"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

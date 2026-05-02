@@ -1,4 +1,4 @@
-# Bill Summarizer
+# Informed Citizen
 
 A Kotlin / Jetpack Compose Android app that lists recently voted-on U.S.
 Congressional bills and lets the user hand any bill off to **ChatGPT,
@@ -27,7 +27,7 @@ of its own — it builds a structured prompt and shares it via Android's
 ## Project layout
 
 ```
-android/app/src/main/java/com/billsummarizer/
+android/app/src/main/java/com/informedcitizen/
 ├── data/
 │   ├── api/               # Retrofit + bill-text fetcher
 │   ├── model/             # Bill, Sponsor, Action, Outcome…

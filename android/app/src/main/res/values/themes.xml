@@ -2,17 +2,17 @@
 <resources>
 
     <!-- Post-splash app theme. Compose owns the rest of the styling. -->
-    <style name="Theme.MyApplication" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.InformedCitizen" parent="android:Theme.Material.Light.NoActionBar" />
 
     <!--
       Launch theme. SplashScreen API (back-compat via androidx.core:core-splashscreen)
       shows the app icon centered on the brand color, then transitions to
-      Theme.MyApplication once the activity is ready.
+      Theme.InformedCitizen once the activity is ready.
     -->
-    <style name="Theme.MyApplication.Starting" parent="Theme.SplashScreen">
+    <style name="Theme.InformedCitizen.Starting" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/brand_primary</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
-        <item name="postSplashScreenTheme">@style/Theme.MyApplication</item>
+        <item name="postSplashScreenTheme">@style/Theme.InformedCitizen</item>
     </style>
 
 </resources>
