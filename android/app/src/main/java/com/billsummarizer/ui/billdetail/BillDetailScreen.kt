@@ -74,6 +74,8 @@ fun BillDetailScreen(
     var showSheet by remember { mutableStateOf(false) }
 
     val successBill = (uiState as? BillDetailUiState.Success)?.bill
+    val hasShareableBody = successBill != null &&
+        (!successBill.summaryCrs.isNullOrBlank() || !successBill.textUrlHtml.isNullOrBlank())
 
     fun resolveBody(useFullText: Boolean): String? = when {
         useFullText -> (fullTextState as? FullTextState.Loaded)?.text
@@ -93,7 +95,7 @@ fun BillDetailScreen(
         modifier = modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
         topBar = { DetailTopBar(state = uiState, onBack = onBack, scrollBehavior = scrollBehavior) },
         floatingActionButton = {
-            if (successBill != null) {
+            if (hasShareableBody) {
                 ExtendedFloatingActionButton(
                     text = { Text("Summarize with AI") },
                     icon = {},
