@@ -1,7 +1,31 @@
 {
-  "generated_at": "2026-05-04T08:30:08Z",
+  "generated_at": "2026-05-04T19:13:21Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "s4465-119",
+      "congress": 119,
+      "type": "s",
+      "number": "4465",
+      "title": "A bill to amend the FISA Amendments Act of 2008 to extend the authorities of title VII of the Foreign Intelligence Surveillance Act of 1978, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cotton, Tom",
+        "party": "R",
+        "state": "AR"
+      },
+      "introduced_date": "2026-04-30",
+      "latest_action": {
+        "date": "2026-04-30",
+        "text": "Became Public Law No: 119-87."
+      },
+      "outcome": "enacted",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s4465/BILLS-119s4465es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s4465/BILLS-119s4465es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s4465/BILLS-119s4465es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/4465"
+    },
     {
       "id": "sres708-119",
       "congress": 119,
@@ -27,30 +51,6 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/708"
     },
     {
-      "id": "s4465-119",
-      "congress": 119,
-      "type": "s",
-      "number": "4465",
-      "title": "A bill to amend the FISA Amendments Act of 2008 to extend the authorities of title VII of the Foreign Intelligence Surveillance Act of 1978, and for other purposes.",
-      "short_title": null,
-      "sponsor": {
-        "name": "Sen. Cotton, Tom",
-        "party": "R",
-        "state": "AR"
-      },
-      "introduced_date": "2026-04-30",
-      "latest_action": {
-        "date": "2026-04-30",
-        "text": "Became Public Law No: 119-87."
-      },
-      "outcome": "enacted",
-      "summary_crs": null,
-      "text_url_html": null,
-      "text_url_xml": null,
-      "text_url_pdf": null,
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/4465"
-    },
-    {
       "id": "hr7147-119",
       "congress": 119,
       "type": "hr",
@@ -69,9 +69,9 @@
       },
       "outcome": "enacted",
       "summary_crs": "<p><strong>Further Additional Continuing Appropriations Act, 2026</strong></p><p>This bill provides continuing FY2026 appropriations to the Department of Homeland Security (DHS) through May 22, 2026. It is known as a continuing resolution (CR) and ends the partial DHS shutdown that began on February 14, 2026, due to a lapse in appropriations for DHS.</p><p>The CR generally funds most&nbsp;DHS agencies and&nbsp;programs&nbsp;at the FY2025 levels through the earlier of May 22, 2026, or the enactment of the FY2026 DHS appropriations act.</p><p>The bill also authorizes back pay, in accordance with current law, for federal employees who were affected by the partial DHS shutdown.</p><p>Finally, the bill ratifies and approves certain obligations that were incurred during the partial DHS shutdown, including obligations incurred to maintain the essential level of activity to protect life and property and bring about an orderly termination of government functions.</p>",
-      "text_url_html": null,
-      "text_url_xml": null,
-      "text_url_pdf": null,
+      "text_url_html": "https://www.congress.gov/119/bills/hr7147/BILLS-119hr7147eah.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr7147/BILLS-119hr7147eah.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr7147/BILLS-119hr7147eah.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/7147"
     },
     {
@@ -93,34 +93,10 @@
       },
       "outcome": "failed",
       "summary_crs": null,
-      "text_url_html": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres184/BILLS-119sjres184is.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/sjres184/BILLS-119sjres184is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres184/BILLS-119sjres184is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/184"
-    },
-    {
-      "id": "hr1346-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "1346",
-      "title": "Nationwide Consumer and Fuel Retailer Choice Act of 2025",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Smith, Adrian",
-        "party": "R",
-        "state": "NE"
-      },
-      "introduced_date": "2025-02-13",
-      "latest_action": {
-        "date": "2026-04-29",
-        "text": "Rule H. Res. 1224 passed House."
-      },
-      "outcome": "passed_house",
-      "summary_crs": "<p><strong>Nationwide Consumer and Fuel Retailer Choice Act of 2025</strong></p><p>This bill amends the Clean Air Act to address the limitations on Reid Vapor Pressure (a measure of gasoline's volatility) that are placed on gasoline during the summer ozone season. Specifically, the bill applies the waiver for Reid Vapor Pressure requirements that is applicable to gasoline blended with 10% ethanol (E10) to gasoline blended with up to 15% ethanol (E15). This change allows gasoline that is blended with 10% to 15% ethanol to be sold year-round.</p><p>Currently, states may be excluded from the waiver for Reid Vapor Pressure requirements by submitting documentation supporting that the waiver would increase air pollution. The bill nullifies existing state exclusions, but states may submit documentation after enactment of the bill to be excluded going forward.</p><p>The bill also modifies the Renewable Fuel Standard Program, which requires transportation fuel sold or introduced into commerce in the United States to contain minimum volumes of renewable fuel. Under the existing program, obligated parties, such as small refineries, must satisfy the volume obligations by either blending renewable fuels into their gasoline or diesel fuel products or by acquiring credits that represent the required renewable fuel volume. The bill directs the Environmental Protection Agency to return compliance credits to small refineries under certain circumstances.</p>",
-      "text_url_html": null,
-      "text_url_xml": "https://www.congress.gov/119/bills/hr1346/BILLS-119hr1346ih.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr1346/BILLS-119hr1346ih.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1346"
     },
     {
       "id": "sjres99-119",
@@ -141,7 +117,7 @@
       },
       "outcome": "failed",
       "summary_crs": null,
-      "text_url_html": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres99/BILLS-119sjres99pcs.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/sjres99/BILLS-119sjres99pcs.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres99/BILLS-119sjres99pcs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/99"
@@ -165,10 +141,34 @@
       },
       "outcome": "failed",
       "summary_crs": null,
-      "text_url_html": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres139/BILLS-119sjres139pcs.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/sjres139/BILLS-119sjres139pcs.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres139/BILLS-119sjres139pcs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/139"
+    },
+    {
+      "id": "hr1346-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "1346",
+      "title": "Nationwide Consumer and Fuel Retailer Choice Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Smith, Adrian",
+        "party": "R",
+        "state": "NE"
+      },
+      "introduced_date": "2025-02-13",
+      "latest_action": {
+        "date": "2026-04-29",
+        "text": "Rule H. Res. 1224 passed House."
+      },
+      "outcome": "passed_house",
+      "summary_crs": "<p><strong>Nationwide Consumer and Fuel Retailer Choice Act of 2025</strong></p><p>This bill amends the Clean Air Act to address the limitations on Reid Vapor Pressure (a measure of gasoline's volatility) that are placed on gasoline during the summer ozone season. Specifically, the bill applies the waiver for Reid Vapor Pressure requirements that is applicable to gasoline blended with 10% ethanol (E10) to gasoline blended with up to 15% ethanol (E15). This change allows gasoline that is blended with 10% to 15% ethanol to be sold year-round.</p><p>Currently, states may be excluded from the waiver for Reid Vapor Pressure requirements by submitting documentation supporting that the waiver would increase air pollution. The bill nullifies existing state exclusions, but states may submit documentation after enactment of the bill to be excluded going forward.</p><p>The bill also modifies the Renewable Fuel Standard Program, which requires transportation fuel sold or introduced into commerce in the United States to contain minimum volumes of renewable fuel. Under the existing program, obligated parties, such as small refineries, must satisfy the volume obligations by either blending renewable fuels into their gasoline or diesel fuel products or by acquiring credits that represent the required renewable fuel volume. The bill directs the Environmental Protection Agency to return compliance credits to small refineries under certain circumstances.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr1346/BILLS-119hr1346ih.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr1346/BILLS-119hr1346ih.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr1346/BILLS-119hr1346ih.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1346"
     },
     {
       "id": "sres668-119",
@@ -189,7 +189,7 @@
       },
       "outcome": "passed_senate",
       "summary_crs": null,
-      "text_url_html": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres668/BILLS-119sres668ats.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/sres668/BILLS-119sres668ats.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sres668/BILLS-119sres668ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/668"
@@ -213,8 +213,8 @@
       },
       "outcome": "enacted",
       "summary_crs": "<p>This joint resolution nullifies Public Land Order 7917, which withdrew approximately 225,504 acres of National Forest System lands in Cook, Lake, and Saint Louis Counties, Minnesota, from mineral and geothermal leasing for 20 years. In 2023, the Bureau of Land Management issued the order to protect and preserve the Rainy River Watershed, the Boundary Waters Canoe Area Wilderness, the Boundary Waters Canoe Area Wilderness Mining Protection Area, and the 1854 Ceded Territory of the Lake Superior Chippewa from the potential adverse effects of mineral and geothermal exploration and development. The joint resolution removes such protections and allows such land to be leased for the exploration and development of minerals and geothermal energy.</p>",
-      "text_url_html": null,
-      "text_url_xml": null,
+      "text_url_html": "https://www.congress.gov/119/plaws/publ85/PLAW-119publ85.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ85/PLAW-119publ85_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ85/PLAW-119publ85.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/140"
     },
@@ -237,7 +237,7 @@
       },
       "outcome": "failed",
       "summary_crs": "<p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending against an attack on the United States or its personnel or facilities in other nations.</p>",
-      "text_url_html": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres114/BILLS-119sjres114is.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/sjres114/BILLS-119sjres114is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres114/BILLS-119sjres114is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/114"
@@ -261,8 +261,8 @@
       },
       "outcome": "enacted",
       "summary_crs": null,
-      "text_url_html": null,
-      "text_url_xml": null,
+      "text_url_html": "https://www.congress.gov/119/plaws/publ84/PLAW-119publ84.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ84/PLAW-119publ84_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ84/PLAW-119publ84.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/8322"
     },
@@ -285,7 +285,7 @@
       },
       "outcome": "failed",
       "summary_crs": "<p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending against an attack on the United States or its personnel or facilities in other nations.</p>",
-      "text_url_html": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres116/BILLS-119sjres116is.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/sjres116/BILLS-119sjres116is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres116/BILLS-119sjres116is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/116"
@@ -309,7 +309,7 @@
       },
       "outcome": "failed",
       "summary_crs": "<p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending against an attack on the United States or its personnel or facilities in other nations.</p>",
-      "text_url_html": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres118/BILLS-119sjres118is.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/sjres118/BILLS-119sjres118is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres118/BILLS-119sjres118is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/118"
