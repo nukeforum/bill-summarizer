@@ -43,6 +43,35 @@ assert clean_sponsor_name("Rep. Smith, Adrian [R-NE-3]") == "Rep. Smith, Adrian"
 assert clean_sponsor_name("Sen. Sanders, Bernard") == "Sen. Sanders, Bernard"
 assert clean_sponsor_name("Unknown") == "Unknown"
 
+
+def _classify_text_format_url(url: str) -> str | None:
+    """Classify a bill text URL by file extension.
+
+    The Congress API's ``type`` field uses human labels like "Formatted Text"
+    for HTML and "Formatted XML" for XML, so substring-matching it is fragile.
+    The URL itself is unambiguous — pin classification to the extension.
+    """
+    lower = url.lower().split("?", 1)[0]
+    if lower.endswith((".htm", ".html")):
+        return "html"
+    if lower.endswith(".xml"):
+        return "xml"
+    if lower.endswith(".pdf"):
+        return "pdf"
+    return None
+
+
+assert _classify_text_format_url(
+    "https://www.congress.gov/119/bills/s4465/BILLS-119s4465es.htm"
+) == "html"
+assert _classify_text_format_url(
+    "https://www.congress.gov/119/bills/s4465/BILLS-119s4465es.xml"
+) == "xml"
+assert _classify_text_format_url(
+    "https://www.congress.gov/119/bills/s4465/BILLS-119s4465es.pdf"
+) == "pdf"
+assert _classify_text_format_url("https://example.com/bill") is None
+
 API_BASE = "https://api.congress.gov/v3"
 USER_AGENT = "bill-summarizer-pipeline/1.0 (+https://github.com/nukeforum/bill-summarizer)"
 RECENT_DAYS = 60
@@ -323,8 +352,13 @@ def _fetch_text_urls(
     if not dict_versions:
         return {}
     dict_versions.sort(key=lambda v: v.get("date") or "", reverse=True)
-    formats = dict_versions[0].get("formats")
-    if not isinstance(formats, list):
+    formats: list[Any] = []
+    for version in dict_versions:
+        candidate = version.get("formats")
+        if isinstance(candidate, list) and candidate:
+            formats = candidate
+            break
+    if not formats:
         return {}
     out: dict[str, str] = {}
     for fmt in formats:
@@ -333,13 +367,9 @@ def _fetch_text_urls(
         url = fmt.get("url")
         if not isinstance(url, str):
             continue
-        ftype = (fmt.get("type") or "").lower()
-        if "html" in ftype and "html" not in out:
-            out["html"] = url
-        elif ("xml" in ftype or "uslm" in ftype) and "xml" not in out:
-            out["xml"] = url
-        elif "pdf" in ftype and "pdf" not in out:
-            out["pdf"] = url
+        kind = _classify_text_format_url(url)
+        if kind and kind not in out:
+            out[kind] = url
     return out
 
 
