@@ -2,14 +2,44 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
     android:height="108dp"
-    android:viewportWidth="108"
-    android:viewportHeight="108">
-    <!-- White document body, rounded corners, centered in the safe zone -->
+    android:viewportWidth="680"
+    android:viewportHeight="680">
+
+    <!-- i: head -->
     <path
         android:fillColor="#FFFFFFFF"
-        android:pathData="M34,28 h40 a4,4 0 0 1 4,4 v44 a4,4 0 0 1 -4,4 h-40 a4,4 0 0 1 -4,-4 v-44 a4,4 0 0 1 4,-4 z" />
-    <!-- Brand-color text lines -->
+        android:pathData="M 222,235 a 75,75 0 1 0 150,0 a 75,75 0 1 0 -150,0 z" />
+
+    <!-- i: stem (rounded rect, rx=17) -->
     <path
-        android:fillColor="#FF1F5FBF"
-        android:pathData="M38,40 h32 v3 h-32 z M38,48 h32 v3 h-32 z M38,56 h32 v3 h-32 z M38,64 h22 v3 h-22 z" />
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M 241,328 h 112 a 17,17 0 0 1 17,17 v 158 a 17,17 0 0 1 -17,17 h -112 a 17,17 0 0 1 -17,-17 v -158 a 17,17 0 0 1 17,-17 z" />
+
+    <!-- C: monospaced arc, stroked -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="23"
+        android:strokeLineCap="round"
+        android:pathData="M 462,226 A 78,116 0 1 0 462,454" />
+
+    <!-- Gold text lines -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFC9A84C"
+        android:strokeWidth="12"
+        android:strokeLineCap="round"
+        android:pathData="M 409,301 L 454,301" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFC9A84C"
+        android:strokeWidth="12"
+        android:strokeLineCap="round"
+        android:pathData="M 409,340 L 454,340" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFC9A84C"
+        android:strokeWidth="12"
+        android:strokeLineCap="round"
+        android:pathData="M 409,379 L 435,379" />
 </vector>
