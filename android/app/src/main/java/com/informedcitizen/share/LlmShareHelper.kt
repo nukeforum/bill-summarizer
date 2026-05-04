@@ -21,19 +21,56 @@ object LlmShareHelper {
             ?.let { capBody(it, bill.congressGovUrl) }
             ?: "(No bill text included; see Congress.gov: ${bill.congressGovUrl})"
 
-        return """
-            Summarize this U.S. Congressional bill in plain English for a general audience. Cover:
-            1. What the bill does in 2-3 sentences
-            2. Who it affects
-            3. Key provisions (3-5 bullets)
-            4. Any controversial or notable elements
-
-            Bill: ${formatBillRef(bill.type, bill.number)} — ${bill.title}
-            Status: ${bill.outcome.displayName()} on ${bill.latestAction.date}
-            Sponsor: ${bill.sponsor.name} (${bill.sponsor.party}-${bill.sponsor.state})
-
-            $cleanBody
-        """.trimIndent()
+        return buildString {
+            appendLine(
+                "You are explaining a U.S. Congressional bill to a curious American who reads news " +
+                    "but isn't a lawyer. Write in plain English, neutral tone, no editorializing. " +
+                    "Use markdown headings and bullet points. If the text below doesn't contain " +
+                    "information a section asks for, write \"not specified in this excerpt\" rather " +
+                    "than inferring."
+            )
+            appendLine()
+            appendLine("## What the bill would do")
+            appendLine(
+                "Two or three sentences. Name the specific mechanism — what it creates, repeals, " +
+                    "amends, appropriates, or requires. Include dollar amounts and dates when " +
+                    "central. Don't restate the title."
+            )
+            appendLine()
+            appendLine("## Who is affected")
+            appendLine(
+                "Name specific stakeholder groups: industries, federal/state agencies, demographic " +
+                    "groups, geographic regions. If the bill sets eligibility thresholds (income " +
+                    "cutoffs, employer size, age bands), state the numbers. Avoid generalities " +
+                    "like \"all Americans.\""
+            )
+            appendLine()
+            appendLine("## Key provisions")
+            appendLine(
+                "Three to five bullets. Each bullet must contain, where present in the text: an " +
+                    "action verb (creates / repeals / increases / requires / authorizes), the " +
+                    "specific dollar amount or quantitative threshold, any deadline, and the " +
+                    "implementing agency."
+            )
+            appendLine()
+            appendLine("## Notable or contested elements")
+            appendLine(
+                "Provisions that drew floor debate, were amended late, or are likely to be " +
+                    "litigated. Stick to factual contention; don't characterize partisan framing. " +
+                    "If none are evident from the text, say so."
+            )
+            appendLine()
+            appendLine("---")
+            appendLine()
+            appendLine("Bill: ${formatBillRef(bill.type, bill.number)} — ${bill.title}")
+            bill.shortTitle?.takeIf { it.isNotBlank() }?.let { appendLine("Also known as: $it") }
+            appendLine("Status: ${bill.outcome.displayName()} on ${bill.latestAction.date}")
+            appendLine("Latest action: ${bill.latestAction.text}")
+            appendLine("Introduced: ${bill.introducedDate}")
+            appendLine("Sponsor: ${bill.sponsor.name} (${bill.sponsor.party}-${bill.sponsor.state})")
+            appendLine()
+            append(cleanBody)
+        }
     }
 
     fun shareTo(context: Context, target: LlmTarget, payload: String) {
