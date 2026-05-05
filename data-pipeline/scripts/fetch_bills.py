@@ -1,16 +1,17 @@
 """
-Fetch recently voted-on U.S. Congressional bills and write a static JSON
-manifest the Android app consumes.
+Fetch recently voted-on U.S. Congressional bills and merge them into the
+current Congress's manifest.
 
 Reads CONGRESS_API_KEY from the environment, queries the Congress.gov v3 API
 for the current Congress, keeps bills whose latest passage-type action falls
-within the last RECENT_DAYS, enriches each one with sponsor / CRS summary /
-full-text URLs, and writes docs/data/bills.json.
+within the last RECENT_DAYS, enriches each one, then merges the result into
+docs/data/congress{NNN}_bills.json. Mirrors the current Congress's manifest
+to docs/data/bills.json for backward compatibility with the shipped Android
+app, and rewrites docs/data/congresses.json.
 """
 
 from __future__ import annotations
 
-import json
 import os
 import sys
 from collections import Counter
@@ -20,17 +21,18 @@ from typing import Any, Iterable
 from _common import (
     CongressClient,
     LIST_PAGE_LIMIT,
-    REPO_ROOT,
     build_bill_record,
     current_congress,
     evaluate_bill,
+    load_manifest,
+    merge_records,
+    rebuild_index,
+    save_manifest,
 )
 
 RECENT_DAYS = 60
 LIST_PAGES_MAX = 8
 SAMPLE_REJECTIONS = 8
-
-OUTPUT_PATH = REPO_ROOT / "docs" / "data" / "bills.json"
 
 
 def list_recent_bills(
@@ -70,7 +72,7 @@ def main() -> int:
 
     client = CongressClient(api_key)
     seen_ids: set[str] = set()
-    records: list[dict[str, Any]] = []
+    fresh_records: list[dict[str, Any]] = []
     reject_counts: Counter[str] = Counter()
     rejection_samples: list[str] = []
     total_evaluated = 0
@@ -98,13 +100,13 @@ def main() -> int:
             reject_counts["duplicate"] += 1
             continue
         seen_ids.add(record["id"])
-        records.append(record)
+        fresh_records.append(record)
         print(f"  + {record['id']}: {record['outcome']} on {record['latest_action']['date']}")
 
-    records.sort(key=lambda r: r["latest_action"]["date"], reverse=True)
+    fresh_records.sort(key=lambda r: r["latest_action"]["date"], reverse=True)
 
     print()
-    print(f"Evaluated {total_evaluated} bills, kept {len(records)}.")
+    print(f"Evaluated {total_evaluated} bills, kept {len(fresh_records)}.")
     if reject_counts:
         print("Rejections:")
         for reason, count in reject_counts.most_common():
@@ -114,17 +116,15 @@ def main() -> int:
         for sample in rejection_samples:
             print(f"  · {sample}")
 
-    manifest = {
-        "generated_at": now.replace(microsecond=0).isoformat().replace("+00:00", "Z"),
-        "congress": congress,
-        "bills": records,
-    }
+    existing = load_manifest(congress)
+    merged, stats = merge_records(existing.get("bills", []), fresh_records)
+    final = save_manifest(congress, {"bills": merged})
+    rebuild_index()
 
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with OUTPUT_PATH.open("w", encoding="utf-8") as f:
-        json.dump(manifest, f, ensure_ascii=False, indent=2, sort_keys=False)
-        f.write("\n")
-    print(f"Wrote {len(records)} bills to {OUTPUT_PATH.relative_to(REPO_ROOT)}")
+    print(
+        f"merge: +{stats.added} added, ~{stats.updated} updated, "
+        f"={stats.unchanged} unchanged (manifest now {len(final['bills'])} bills)"
+    )
     return 0
 
 
