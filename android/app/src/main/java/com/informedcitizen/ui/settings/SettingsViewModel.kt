@@ -2,8 +2,7 @@ package com.informedcitizen.ui.settings
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.google.firebase.crashlytics.FirebaseCrashlytics
-import com.informedcitizen.crash.BuildEnvironment
+import com.informedcitizen.crash.CrashReporter
 import com.informedcitizen.data.repository.CrashReportingPreferenceRepository
 import com.informedcitizen.data.repository.ThemePreferenceRepository
 import com.informedcitizen.theme.ThemePreference
@@ -18,7 +17,7 @@ import javax.inject.Inject
 class SettingsViewModel @Inject constructor(
     private val themePrefs: ThemePreferenceRepository,
     private val crashPrefs: CrashReportingPreferenceRepository,
-    private val buildEnvironment: BuildEnvironment,
+    private val crashReporter: CrashReporter,
 ) : ViewModel() {
 
     val preference: StateFlow<ThemePreference> = themePrefs.preference
@@ -34,12 +33,9 @@ class SettingsViewModel @Inject constructor(
     fun setCrashReportingEnabled(enabled: Boolean) {
         viewModelScope.launch {
             crashPrefs.set(enabled)
-            if (!buildEnvironment.isDebuggable) {
-                val crashlytics = FirebaseCrashlytics.getInstance()
-                crashlytics.isCrashlyticsCollectionEnabled = enabled
-                if (!enabled) {
-                    crashlytics.deleteUnsentReports()
-                }
+            crashReporter.setCollectionEnabled(enabled)
+            if (!enabled) {
+                crashReporter.deleteUnsentReports()
             }
         }
     }

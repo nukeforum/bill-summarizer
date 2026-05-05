@@ -14,4 +14,17 @@ interface CrashReporter {
      * report contains a human-readable hint about what was happening.
      */
     fun recordNonFatal(throwable: Throwable, message: String? = null)
+
+    /**
+     * Apply the user's opt-in flag to the underlying SDK. Implementations
+     * are free to also force-off in debug builds regardless of [enabled].
+     */
+    fun setCollectionEnabled(enabled: Boolean)
+
+    /**
+     * Request deletion of any reports queued on disk that have not yet
+     * been uploaded. Called when the user opts out, so reports captured
+     * while opted-in are dropped rather than uploaded later.
+     */
+    fun deleteUnsentReports()
 }
