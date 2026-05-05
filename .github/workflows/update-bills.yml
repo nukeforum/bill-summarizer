@@ -34,15 +34,17 @@ jobs:
           CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
         run: python data-pipeline/scripts/fetch_bills.py
 
-      - name: Commit updated bills.json
+      - name: Commit updated bills
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data/bills.json
+          git add docs/data/bills.json \
+                  docs/data/congress*_bills.json \
+                  docs/data/congresses.json
           if git diff --staged --quiet; then
-            echo "No changes to bills.json — skipping commit."
+            echo "No changes — skipping commit."
             exit 0
           fi
-          git commit -m "Update bills.json [bot]"
+          git commit -m "Update bills [bot]"
           git push
