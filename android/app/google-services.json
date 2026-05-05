@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "499522638535",
+    "project_id": "informed-citizen-19161",
+    "storage_bucket": "informed-citizen-19161.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499522638535:android:d460d8f495a98a9ce0a4e2",
+        "android_client_info": {
+          "package_name": "com.informedcitizen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgfTEoQj2fE7q7BevOyVP_dMeadwDqYdc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
