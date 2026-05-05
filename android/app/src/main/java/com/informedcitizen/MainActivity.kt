@@ -1,7 +1,9 @@
 package com.informedcitizen
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
@@ -25,7 +27,12 @@ class MainActivity : ComponentActivity() {
         installSplashScreen()
         super.onCreate(savedInstanceState)
 
-        enableEdgeToEdge()
+        // Override the auto() default which paints a translucent scrim
+        // behind the navigation bar; we want the in-app theme background
+        // to extend cleanly under the gesture pill / 3-button nav region.
+        enableEdgeToEdge(
+            navigationBarStyle = SystemBarStyle.auto(Color.TRANSPARENT, Color.TRANSPARENT),
+        )
         setContent {
             val preference by themePrefs.preference.collectAsStateWithLifecycle(
                 initialValue = ThemePreference.DEFAULT,
