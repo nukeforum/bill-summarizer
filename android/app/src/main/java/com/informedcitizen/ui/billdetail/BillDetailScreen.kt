@@ -187,12 +187,22 @@ private fun BillDetailContent(bill: Bill, innerPadding: PaddingValues) {
     val context = LocalContext.current
     val fullTextUrl = bill.textUrlHtml ?: bill.congressGovUrl
 
+    // Top inset is applied as layout padding (so the verticalScroll's
+    // gesture region starts below the LargeTopAppBar). The bottom inset
+    // — gesture-pill area + the FAB's height-equivalent — is rolled into
+    // the inner padding so scrolling to the end leaves space above the
+    // navigation bar instead of clipping the last paragraph.
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(innerPadding)
+            .padding(top = innerPadding.calculateTopPadding())
             .verticalScroll(rememberScrollState())
-            .padding(horizontal = 16.dp, vertical = 8.dp),
+            .padding(
+                start = 16.dp,
+                end = 16.dp,
+                top = 8.dp,
+                bottom = 8.dp + innerPadding.calculateBottomPadding(),
+            ),
         verticalArrangement = Arrangement.spacedBy(20.dp),
     ) {
         Section(title = "Status") {

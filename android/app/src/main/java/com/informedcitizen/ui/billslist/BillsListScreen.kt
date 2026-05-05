@@ -76,7 +76,13 @@ private fun BillsListContent(
     onRefresh: () -> Unit,
     onBillClick: (Bill) -> Unit,
 ) {
-    Column(modifier = Modifier.fillMaxSize().padding(innerPadding)) {
+    // Top inset shapes the column (so FilterChipsRow sits below the topBar),
+    // but the bottom inset is folded into the LazyColumn's contentPadding
+    // instead of the column. That way the scroll surface extends all the way
+    // to the screen edge — gesture-pill area shows the theme background —
+    // while scrolling to the end leaves the last card cleanly above the
+    // navigation region.
+    Column(modifier = Modifier.fillMaxSize().padding(top = innerPadding.calculateTopPadding())) {
         FilterChipsRow(
             selected = (state as? BillsListUiState.Success)?.filter ?: BillsListFilter.ALL,
             onFilterChange = onFilterChange,
@@ -96,7 +102,12 @@ private fun BillsListContent(
                     } else {
                         LazyColumn(
                             modifier = Modifier.fillMaxSize(),
-                            contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
+                            contentPadding = PaddingValues(
+                                start = 16.dp,
+                                end = 16.dp,
+                                top = 8.dp,
+                                bottom = 8.dp + innerPadding.calculateBottomPadding(),
+                            ),
                             verticalArrangement = Arrangement.spacedBy(12.dp),
                         ) {
                             items(items = state.bills, key = { it.id }) { bill ->
