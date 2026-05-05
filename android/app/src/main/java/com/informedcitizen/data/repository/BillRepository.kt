@@ -4,6 +4,7 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.longPreferencesKey
+import com.informedcitizen.crash.CrashReporter
 import com.informedcitizen.data.api.BillsApi
 import com.informedcitizen.data.model.Bill
 import kotlinx.coroutines.flow.firstOrNull
@@ -16,6 +17,7 @@ import javax.inject.Singleton
 class BillRepository @Inject constructor(
     private val api: BillsApi,
     private val dataStore: DataStore<Preferences>,
+    private val crashReporter: CrashReporter,
 ) {
     private val mutex = Mutex()
     private var cached: List<Bill>? = null
@@ -29,7 +31,7 @@ class BillRepository @Inject constructor(
             cached = manifest.bills
             dataStore.edit { it[LAST_FETCHED_KEY] = System.currentTimeMillis() }
             manifest.bills
-        }
+        }.onFailure { crashReporter.recordNonFatal(it, "manifest fetch failed") }
     }
 
     fun getBillById(id: String): Bill? = cached?.firstOrNull { it.id == id }
