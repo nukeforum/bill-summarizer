@@ -4,6 +4,8 @@ plugins {
   alias(libs.plugins.kotlin.serialization)
   alias(libs.plugins.hilt.android)
   alias(libs.plugins.ksp)
+  alias(libs.plugins.google.services)
+  alias(libs.plugins.firebase.crashlytics)
 }
 
 // Release signing credentials. Read from Gradle properties (typically
@@ -119,6 +121,10 @@ dependencies {
   implementation(libs.androidx.compose.material.icons.extended)
   // Tooling
   debugImplementation(libs.androidx.compose.ui.tooling)
+
+  // Firebase
+  implementation(platform(libs.firebase.bom))
+  implementation(libs.firebase.crashlytics)
   // Instrumented tests
   androidTestImplementation(libs.androidx.compose.ui.test.junit4)
   debugImplementation(libs.androidx.compose.ui.test.manifest)
