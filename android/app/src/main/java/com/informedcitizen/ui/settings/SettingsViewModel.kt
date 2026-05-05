@@ -20,11 +20,15 @@ class SettingsViewModel @Inject constructor(
     private val crashReporter: CrashReporter,
 ) : ViewModel() {
 
+    // Eagerly so the first DataStore value lands before the user can interact
+    // with the Settings screen. Otherwise the Switch / radio buttons could
+    // render the initial-value placeholder for a frame and a fast tap would
+    // toggle from the wrong starting state.
     val preference: StateFlow<ThemePreference> = themePrefs.preference
-        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), ThemePreference.DEFAULT)
+        .stateIn(viewModelScope, SharingStarted.Eagerly, ThemePreference.DEFAULT)
 
     val crashReportingEnabled: StateFlow<Boolean> = crashPrefs.enabled
-        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), false)
+        .stateIn(viewModelScope, SharingStarted.Eagerly, false)
 
     fun setPreference(pref: ThemePreference) {
         viewModelScope.launch { themePrefs.set(pref) }

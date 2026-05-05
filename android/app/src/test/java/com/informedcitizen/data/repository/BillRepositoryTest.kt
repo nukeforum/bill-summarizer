@@ -1,31 +1,15 @@
 package com.informedcitizen.data.repository
 
-import androidx.datastore.core.DataStore
-import androidx.datastore.preferences.core.Preferences
-import androidx.datastore.preferences.core.emptyPreferences
 import com.informedcitizen.crash.FakeCrashReporter
 import com.informedcitizen.data.api.BillsApi
 import com.informedcitizen.data.model.BillsManifest
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.update
+import com.informedcitizen.testutil.InMemoryPreferencesDataStore
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertSame
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import java.io.IOException
-
-private class InMemoryPreferencesDataStoreForBillRepo : DataStore<Preferences> {
-    private val _state = MutableStateFlow(emptyPreferences())
-    override val data: Flow<Preferences> get() = _state
-
-    override suspend fun updateData(transform: suspend (t: Preferences) -> Preferences): Preferences {
-        var updated: Preferences = emptyPreferences()
-        _state.update { current -> transform(current).also { updated = it } }
-        return updated
-    }
-}
 
 class BillRepositoryTest {
 
@@ -34,7 +18,7 @@ class BillRepositoryTest {
         val reporter = FakeCrashReporter()
         val repo = BillRepository(
             api = StubApi(BillsManifest(generatedAt = "2026-01-01", congress = 119, bills = emptyList())),
-            dataStore = InMemoryPreferencesDataStoreForBillRepo(),
+            dataStore = InMemoryPreferencesDataStore(),
             crashReporter = reporter,
         )
 
@@ -50,7 +34,7 @@ class BillRepositoryTest {
         val boom = IOException("simulated network failure")
         val repo = BillRepository(
             api = ThrowingApi(boom),
-            dataStore = InMemoryPreferencesDataStoreForBillRepo(),
+            dataStore = InMemoryPreferencesDataStore(),
             crashReporter = reporter,
         )
 
