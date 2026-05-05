@@ -22,7 +22,13 @@ _PARTY_STATE_SUFFIX_RE = re.compile(r"\s*\[[A-Z]+-[A-Z]{2}(?:-\d+)?\]\s*$")
 
 
 def clean_sponsor_name(full_name: str) -> str:
-    """Strip the trailing party/state suffix Congress.gov bakes into fullName."""
+    """Strip the trailing party/state suffix Congress.gov bakes into fullName.
+
+    Senators come back as ``Sen. Peters, Gary C. [D-MI]``; House reps add a
+    district number, e.g. ``Rep. Smith, Adrian [R-NE-3]``. Both shapes are
+    stripped. Names without a suffix (e.g. fallback to ``lastName``) pass
+    through unchanged.
+    """
     return _PARTY_STATE_SUFFIX_RE.sub("", full_name).strip()
 
 
@@ -35,7 +41,12 @@ assert clean_sponsor_name("Unknown") == "Unknown"
 
 
 def _classify_text_format_url(url: str) -> str | None:
-    """Classify a bill text URL by file extension."""
+    """Classify a bill text URL by file extension.
+
+    The Congress API's ``type`` field uses human labels like "Formatted Text"
+    for HTML and "Formatted XML" for XML, so substring-matching it is fragile.
+    The URL itself is unambiguous — pin classification to the extension.
+    """
     lower = url.lower().split("?", 1)[0]
     if lower.endswith((".htm", ".html")):
         return "html"
@@ -125,6 +136,9 @@ def classify_outcome(action_text: str) -> str | None:
 def current_congress(today: datetime | None = None) -> int:
     """The 119th Congress runs Jan 3, 2025 - Jan 3, 2027."""
     today = today or datetime.now(timezone.utc)
+    # Each Congress is 2 years; 1789 was the 1st.
+    # During Jan 1-2 of an odd year the previous Congress is technically still
+    # in session, but cron runs daily so a one-day off-by-one doesn't matter.
     return (today.year - 1789) // 2 + 1
 
 
@@ -163,6 +177,7 @@ def parse_iso_date(value: str | None) -> datetime | None:
     if not value:
         return None
     try:
+        # Congress.gov returns dates like "2026-04-20" or "2026-04-20T13:45:00Z".
         if "T" in value:
             return datetime.fromisoformat(value.replace("Z", "+00:00"))
         return datetime.fromisoformat(value).replace(tzinfo=timezone.utc)
@@ -256,6 +271,12 @@ def build_bill_record(
 
 
 def _extract_short_title(detail: dict[str, Any]) -> str | None:
+    """Try to pull a short title out of detail.titles.
+
+    The shape varies: sometimes a list of {title, titleType} dicts, sometimes
+    a {url: ...} pointer to a sub-resource, sometimes a list of plain strings.
+    Be permissive — short_title is a nice-to-have, not load-bearing.
+    """
     titles = detail.get("titles")
     if not isinstance(titles, list):
         return None
