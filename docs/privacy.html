@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Informed Citizen — Privacy Policy</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; color: #222; }
+    h1 { margin-bottom: 0.25rem; }
+    h2 { margin-top: 2rem; }
+    .meta { color: #666; font-size: 0.9rem; }
+    code { background: #f4f4f4; padding: 0.1rem 0.3rem; border-radius: 3px; }
+    a { color: #2057a8; }
+  </style>
+</head>
+<body>
+  <p><a href="./">&larr; Informed Citizen</a></p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: 2026-05-04</p>
+
+  <p>
+    Informed Citizen is an Android app that displays U.S. Congressional bill
+    information. This policy describes what the app does and does not do with
+    your data. Plain version: the app does not collect personal information,
+    has no accounts, no analytics, no advertising, and no third-party tracking.
+  </p>
+
+  <h2>What the app stores on your device</h2>
+  <p>
+    The only setting the app persists is your selected theme
+    (<code>system</code>, <code>light</code>, or <code>dark</code>). It is
+    stored locally using Android Jetpack DataStore and never leaves your
+    device, except as part of the standard Android Auto Backup that your
+    device manages with your Google account.
+  </p>
+
+  <h2>What the app sends over the network</h2>
+  <ul>
+    <li>
+      <strong>Bill manifest.</strong> The app downloads a public JSON file from
+      <a href="https://nukeforum.github.io/bill-summarizer/data/bills.json">nukeforum.github.io/bill-summarizer/data/bills.json</a>,
+      hosted on GitHub Pages. This is a plain HTTPS request for a public
+      file; no personal information is sent. GitHub may log standard request
+      metadata (IP address, user agent) per their own
+      <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>.
+    </li>
+    <li>
+      <strong>Congress.gov links.</strong> When you open a bill on Congress.gov
+      from inside the app, the link is handed off to your device's browser
+      (via Chrome Custom Tabs). From that point on, the request is made by
+      your browser, not the app.
+    </li>
+  </ul>
+
+  <h2>The "Share to LLM" feature</h2>
+  <p>
+    The app can build a prompt containing the bill's public metadata and text
+    excerpt, and send it to ChatGPT, Claude, Gemini, or any app you choose
+    via Android's share menu. This action only happens when you tap a share
+    button. The content of the prompt comes from public Congressional records
+    plus the prompt template; it does not include any information about you.
+    Once the prompt is handed to another app or website, that app or website
+    handles the data under <em>its own</em> privacy policy, not this one.
+  </p>
+
+  <h2>What the app does not do</h2>
+  <ul>
+    <li>No user accounts, sign-in, or authentication.</li>
+    <li>No analytics or telemetry SDKs.</li>
+    <li>No crash reporting that leaves the device.</li>
+    <li>No advertising or ad-network integration.</li>
+    <li>No collection of location, contacts, photos, microphone, camera, or any other sensitive permission. The app's only declared permission is <code>INTERNET</code>.</li>
+    <li>No selling or sharing of personal information; we do not have any to sell or share.</li>
+  </ul>
+
+  <h2>Children's privacy</h2>
+  <p>
+    The app is not directed at children under 13 and does not knowingly
+    collect any information from anyone, including children.
+  </p>
+
+  <h2>Source code</h2>
+  <p>
+    Informed Citizen is open source. You can verify the claims above by
+    reading the source at
+    <a href="https://github.com/nukeforum/bill-summarizer">github.com/nukeforum/bill-summarizer</a>.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If the app's behavior changes in a way that affects this policy, the
+    updated version will be published at this URL with a new "Last updated"
+    date.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy can be filed as an issue at
+    <a href="https://github.com/nukeforum/bill-summarizer/issues">github.com/nukeforum/bill-summarizer/issues</a>.
+  </p>
+</body>
+</html>
