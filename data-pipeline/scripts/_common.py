@@ -456,3 +456,63 @@ def save_manifest(congress: int, manifest: dict[str, Any]) -> dict[str, Any]:
     if congress == current_congress():
         _write_manifest_json(OUTPUT_DIR / "bills.json", final)
     return final
+
+
+# ---------- index ----------------------------------------------------------
+
+
+_CONGRESS_FILE_RE = re.compile(r"^congress(\d+)_bills\.json$")
+
+
+def _load_state_silent() -> dict[str, Any]:
+    """Best-effort load of the backfill state file. Never raises."""
+    state_path = STATE_DIR / "backfill_state.json"
+    if not state_path.exists():
+        return {}
+    try:
+        with state_path.open("r", encoding="utf-8") as f:
+            return json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
+def rebuild_index() -> dict[str, Any]:
+    """Walk OUTPUT_DIR for per-Congress manifests, write docs/data/congresses.json."""
+    state = _load_state_silent()
+    completed = set(state.get("completed", []))
+    current = current_congress()
+
+    entries: list[dict[str, Any]] = []
+    for path in sorted(OUTPUT_DIR.glob("congress*_bills.json")):
+        match = _CONGRESS_FILE_RE.match(path.name)
+        if not match:
+            continue
+        congress = int(match.group(1))
+        with path.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+        bills = data.get("bills") or []
+        dates = [
+            b["latest_action"]["date"]
+            for b in bills
+            if isinstance(b, dict)
+            and isinstance(b.get("latest_action"), dict)
+            and b["latest_action"].get("date")
+        ]
+        entries.append({
+            "congress": congress,
+            "bill_count": len(bills),
+            "first_action_date": min(dates) if dates else None,
+            "last_action_date": max(dates) if dates else None,
+            "manifest_path": path.name,
+            "is_current": congress == current,
+            "backfill_complete": congress in completed,
+        })
+    entries.sort(key=lambda e: e["congress"], reverse=True)
+
+    index = {
+        "generated_at": now_iso(),
+        "current_congress": current,
+        "congresses": entries,
+    }
+    _write_manifest_json(OUTPUT_DIR / "congresses.json", index)
+    return index
