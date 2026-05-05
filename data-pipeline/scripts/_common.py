@@ -397,3 +397,62 @@ def merge_records(
         reverse=True,
     )
     return out, stats
+
+
+# ---------- manifest IO ----------------------------------------------------
+
+
+def now_iso() -> str:
+    """UTC seconds-precision ISO-8601 with trailing Z, matching legacy format."""
+    return (
+        datetime.now(timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
+        .replace("+00:00", "Z")
+    )
+
+
+def manifest_path_for(congress: int) -> Path:
+    return OUTPUT_DIR / f"congress{congress}_bills.json"
+
+
+def empty_manifest(congress: int) -> dict[str, Any]:
+    return {
+        "generated_at": now_iso(),
+        "congress": congress,
+        "bills": [],
+    }
+
+
+def load_manifest(congress: int) -> dict[str, Any]:
+    path = manifest_path_for(congress)
+    if not path.exists():
+        return empty_manifest(congress)
+    with path.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _write_manifest_json(path: Path, manifest: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as f:
+        json.dump(manifest, f, ensure_ascii=False, indent=2, sort_keys=False)
+        f.write("\n")
+
+
+def save_manifest(congress: int, manifest: dict[str, Any]) -> dict[str, Any]:
+    """Persist ``manifest`` for ``congress``.
+
+    Stamps the canonical ``generated_at`` and ``congress`` fields, writes
+    ``congress{NNN}_bills.json``, and — if ``congress`` is the current
+    Congress — also writes ``bills.json`` as a byte-identical backward-compat
+    alias the shipped Android app still reads. Returns the persisted manifest.
+    """
+    final: dict[str, Any] = {
+        "generated_at": now_iso(),
+        "congress": congress,
+        "bills": manifest.get("bills", []),
+    }
+    _write_manifest_json(manifest_path_for(congress), final)
+    if congress == current_congress():
+        _write_manifest_json(OUTPUT_DIR / "bills.json", final)
+    return final
