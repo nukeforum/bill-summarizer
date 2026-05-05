@@ -1,6 +1,7 @@
 package com.informedcitizen.data.api
 
 import androidx.core.text.HtmlCompat
+import com.informedcitizen.crash.CrashReporter
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import okhttp3.OkHttpClient
@@ -12,6 +13,7 @@ import javax.inject.Singleton
 @Singleton
 class BillTextFetcher @Inject constructor(
     private val client: OkHttpClient,
+    private val crashReporter: CrashReporter,
 ) {
     suspend fun fetchPlainText(url: String): Result<String> = withContext(Dispatchers.IO) {
         runCatching {
@@ -23,7 +25,7 @@ class BillTextFetcher @Inject constructor(
                 val html = response.body.string()
                 stripHtml(html)
             }
-        }
+        }.onFailure { crashReporter.recordNonFatal(it, "full-text fetch failed") }
     }
 
     private fun stripHtml(html: String): String {
