@@ -16,13 +16,14 @@
 <body>
   <p><a href="./">&larr; Informed Citizen</a></p>
   <h1>Privacy Policy</h1>
-  <p class="meta">Last updated: 2026-05-04</p>
+  <p class="meta">Last updated: 2026-05-05</p>
 
   <p>
     Informed Citizen is an Android app that displays U.S. Congressional bill
     information. This policy describes what the app does and does not do with
     your data. Plain version: the app does not collect personal information,
-    has no accounts, no analytics, no advertising, and no third-party tracking.
+    has no accounts, no advertising, and no third-party tracking, and no
+    analytics or crash reporting unless you opt in.
   </p>
 
   <h2>What the app stores on your device</h2>
@@ -63,11 +64,24 @@
     handles the data under <em>its own</em> privacy policy, not this one.
   </p>
 
+  <h2>Optional crash reporting</h2>
+  <p>
+    The app includes Firebase Crashlytics, <strong>off by default</strong>.
+    You can turn it on in Settings &rarr; Crash reporting. When enabled, if
+    the app crashes or hits a non-fatal error (e.g., a network failure
+    fetching the bill list), an anonymous report is sent to Google Firebase
+    containing the stack trace, device model, OS version, app version,
+    locale, and a Crashlytics-generated installation identifier. Reports
+    include no information about you, no account identifier (the app has no
+    accounts), and no content from the bills you've viewed. You can turn
+    the toggle back off at any time, which also requests deletion of any
+    unsent reports. Crashlytics is governed by Google's
+    <a href="https://firebase.google.com/terms/data-processing-terms">Firebase data processing terms</a>.
+  </p>
+
   <h2>What the app does not do</h2>
   <ul>
     <li>No user accounts, sign-in, or authentication.</li>
-    <li>No analytics or telemetry SDKs.</li>
-    <li>No crash reporting that leaves the device.</li>
     <li>No advertising or ad-network integration.</li>
     <li>No collection of location, contacts, photos, microphone, camera, or any other sensitive permission. The app's only declared permission is <code>INTERNET</code>.</li>
     <li>No selling or sharing of personal information; we do not have any to sell or share.</li>
