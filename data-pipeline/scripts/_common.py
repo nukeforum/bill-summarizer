@@ -11,6 +11,7 @@ from __future__ import annotations
 import json
 import re
 import time
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -353,3 +354,46 @@ _BILL_TYPE_TO_SLUG = {
 def _build_congress_gov_url(congress: int, bill_type: str, bill_number: str) -> str:
     slug = _BILL_TYPE_TO_SLUG.get(bill_type, bill_type)
     return f"https://www.congress.gov/bill/{congress}th-congress/{slug}/{bill_number}"
+
+
+# ---------- merging --------------------------------------------------------
+
+
+@dataclass
+class MergeStats:
+    """Per-batch counts. Bills present only in *existing* are silently preserved."""
+    added: int = 0
+    updated: int = 0
+    unchanged: int = 0
+
+
+def merge_records(
+    existing: list[dict[str, Any]],
+    incoming: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], MergeStats]:
+    """Merge ``incoming`` into ``existing`` keyed by record ``id``.
+
+    Incoming wins on id collision (the record is a snapshot of current truth,
+    not a history log). Bills present only in ``existing`` are preserved.
+    Output is sorted by ``latest_action.date`` descending so the manifest
+    stays newest-first regardless of which batch contributed each record.
+    """
+    existing_by_id = {r["id"]: r for r in existing}
+    stats = MergeStats()
+    merged: dict[str, dict[str, Any]] = dict(existing_by_id)
+    for rec in incoming:
+        bid = rec["id"]
+        if bid not in existing_by_id:
+            merged[bid] = rec
+            stats.added += 1
+        elif existing_by_id[bid] != rec:
+            merged[bid] = rec
+            stats.updated += 1
+        else:
+            stats.unchanged += 1
+    out = sorted(
+        merged.values(),
+        key=lambda r: r["latest_action"]["date"],
+        reverse=True,
+    )
+    return out, stats
