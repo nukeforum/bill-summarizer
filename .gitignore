@@ -32,3 +32,6 @@ play-listing/
 
 # Project-local Claude Code config and skills
 .claude/
+
+# Brainstorming / planning artifacts — design scaffolding, not shipped docs
+docs/superpowers/
