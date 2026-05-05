@@ -516,3 +516,76 @@ def rebuild_index() -> dict[str, Any]:
     }
     _write_manifest_json(OUTPUT_DIR / "congresses.json", index)
     return index
+
+
+# ---------- backfill state -------------------------------------------------
+
+
+OLDEST_API_CONGRESS = 93  # earliest Congress reachable via Congress.gov v3 API
+BACKFILL_PAGES_PER_RUN = 4
+
+
+def _state_path() -> Path:
+    return STATE_DIR / "backfill_state.json"
+
+
+def initial_state(now: datetime | None = None) -> dict[str, Any]:
+    current = current_congress(now)
+    queue = list(range(current, OLDEST_API_CONGRESS - 1, -1))
+    return {
+        "active_congress": queue[0] if queue else None,
+        "active_offset": 0,
+        "queue": queue,
+        "completed": [],
+        "last_run_at": None,
+    }
+
+
+def load_state() -> dict[str, Any]:
+    p = _state_path()
+    if not p.exists():
+        return initial_state()
+    try:
+        with p.open("r", encoding="utf-8") as f:
+            return json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return initial_state()
+
+
+def save_state(state: dict[str, Any]) -> None:
+    p = _state_path()
+    p.parent.mkdir(parents=True, exist_ok=True)
+    with p.open("w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False, indent=2, sort_keys=False)
+        f.write("\n")
+
+
+def advance_state(
+    state: dict[str, Any],
+    page_returned: int,
+    pages_consumed: int,
+) -> dict[str, Any]:
+    """Return a new state dict updated for the latest backfill chunk.
+
+    If the most recent list page returned fewer than LIST_PAGE_LIMIT items,
+    the active Congress is exhausted: mark it complete, drop it from the
+    queue, and shift to the next Congress (or set active_congress=None when
+    nothing is left). Otherwise just bump the offset by the pages consumed.
+    """
+    new = dict(state)
+    new["queue"] = list(state.get("queue", []))
+    new["completed"] = list(state.get("completed", []))
+    new["last_run_at"] = now_iso()
+
+    active = state.get("active_congress")
+
+    if page_returned < LIST_PAGE_LIMIT:
+        if active is not None and active not in new["completed"]:
+            new["completed"].append(active)
+        new["queue"] = [c for c in new["queue"] if c != active]
+        new["active_congress"] = new["queue"][0] if new["queue"] else None
+        new["active_offset"] = 0
+    else:
+        new["active_offset"] = state.get("active_offset", 0) + pages_consumed * LIST_PAGE_LIMIT
+
+    return new
