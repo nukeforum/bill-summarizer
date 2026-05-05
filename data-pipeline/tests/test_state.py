@@ -84,3 +84,35 @@ def test_advance_state_short_page_with_queue_exhausted(monkeypatch):
     assert new["queue"] == []
     assert new["active_congress"] is None
     assert new["active_offset"] == 0
+
+
+def test_advance_state_idempotent_through_save_load_roundtrip(tmp_path, monkeypatch):
+    """Calling advance_state, persisting, reloading, and advancing again must
+    produce the same cursor sequence as a contiguous in-memory chain."""
+    monkeypatch.setattr(_common, "STATE_DIR", tmp_path)
+    monkeypatch.setattr(_common, "current_congress", lambda *a, **kw: 119)
+
+    state = _common.initial_state()
+    assert state["active_offset"] == 0
+
+    # First chunk: full page returned, cursor advances to 250.
+    new = _common.advance_state(state, page_returned=_common.LIST_PAGE_LIMIT, pages_consumed=1)
+    _common.save_state(new)
+
+    reloaded = _common.load_state()
+    assert reloaded["active_offset"] == _common.LIST_PAGE_LIMIT
+    assert reloaded["active_congress"] == 119
+    assert reloaded["queue"] == new["queue"]
+    assert reloaded["completed"] == new["completed"]
+
+    # Second chunk: another full page, cursor advances to 500.
+    second = _common.advance_state(reloaded, page_returned=_common.LIST_PAGE_LIMIT, pages_consumed=1)
+    _common.save_state(second)
+
+    reloaded2 = _common.load_state()
+    assert reloaded2["active_offset"] == 2 * _common.LIST_PAGE_LIMIT
+    # Third chunk: short page exhausts Congress 119, advances to 118.
+    third = _common.advance_state(reloaded2, page_returned=10, pages_consumed=1)
+    assert 119 in third["completed"]
+    assert third["active_congress"] == 118
+    assert third["active_offset"] == 0

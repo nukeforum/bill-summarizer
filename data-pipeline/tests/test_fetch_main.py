@@ -107,3 +107,59 @@ def test_main_merges_into_existing_manifest(tmp_path, monkeypatch):
     index = json.loads((tmp_path / "congresses.json").read_text(encoding="utf-8"))
     assert index["current_congress"] == 119
     assert any(c["congress"] == 119 and c["bill_count"] == 2 for c in index["congresses"])
+
+
+def test_main_preserves_manifest_when_api_returns_no_new_bills(tmp_path, monkeypatch):
+    """If the daily fetch returns zero qualifying bills (API outage, API key
+    rotation, no recent passage actions), the existing manifest must be
+    preserved verbatim and the alias + index still rewritten with the same
+    bill set."""
+    monkeypatch.setenv("CONGRESS_API_KEY", "stub")
+    monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
+    monkeypatch.setattr(_common, "STATE_DIR", tmp_path / "state")
+    monkeypatch.setattr(_common, "current_congress", lambda *a, **kw: 119)
+    monkeypatch.setattr(fetch_bills, "current_congress", lambda *a, **kw: 119)
+
+    seeded_bill = {
+        "id": "hr42-119",
+        "congress": 119,
+        "type": "hr",
+        "number": "42",
+        "title": "An old preserved bill",
+        "latest_action": {"date": "2025-08-01", "text": "Became Public Law"},
+        "outcome": "enacted",
+        "sponsor": {"name": "Sen. Test, Test", "party": "D", "state": "XX"},
+        "introduced_date": "2025-01-01",
+        "short_title": None,
+        "summary_crs": None,
+        "text_url_html": None,
+        "text_url_xml": None,
+        "text_url_pdf": None,
+        "congress_gov_url": "https://example.com",
+    }
+    existing_path = tmp_path / "congress119_bills.json"
+    existing_path.write_text(
+        json.dumps({
+            "generated_at": "2026-01-01T00:00:00Z",
+            "congress": 119,
+            "bills": [seeded_bill],
+        }),
+        encoding="utf-8",
+    )
+
+    # API returns no list pages at all.
+    fake = _FakeClient([{"bills": []}], {})
+
+    with patch("fetch_bills.CongressClient", return_value=fake):
+        rc = fetch_bills.main()
+    assert rc == 0
+
+    on_disk = json.loads(existing_path.read_text(encoding="utf-8"))
+    assert [b["id"] for b in on_disk["bills"]] == ["hr42-119"]
+    assert on_disk["bills"][0] == seeded_bill, "seeded bill must be preserved verbatim"
+
+    alias = json.loads((tmp_path / "bills.json").read_text(encoding="utf-8"))
+    assert alias == on_disk
+
+    index = json.loads((tmp_path / "congresses.json").read_text(encoding="utf-8"))
+    assert any(c["congress"] == 119 and c["bill_count"] == 1 for c in index["congresses"])
