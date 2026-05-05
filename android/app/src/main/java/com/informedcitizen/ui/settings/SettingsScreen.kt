@@ -18,6 +18,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SegmentedButton
 import androidx.compose.material3.SegmentedButtonDefaults
 import androidx.compose.material3.SingleChoiceSegmentedButtonRow
+import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
@@ -45,6 +46,7 @@ fun SettingsScreen(
     viewModel: SettingsViewModel = hiltViewModel(),
 ) {
     val preference by viewModel.preference.collectAsStateWithLifecycle()
+    val crashReportingEnabled by viewModel.crashReportingEnabled.collectAsStateWithLifecycle()
 
     Scaffold(
         modifier = modifier,
@@ -61,8 +63,10 @@ fun SettingsScreen(
     ) { innerPadding ->
         SettingsContent(
             preference = preference,
+            crashReportingEnabled = crashReportingEnabled,
             innerPadding = innerPadding,
             onPreferenceChange = viewModel::setPreference,
+            onCrashReportingEnabledChange = viewModel::setCrashReportingEnabled,
         )
     }
 }
@@ -70,8 +74,10 @@ fun SettingsScreen(
 @Composable
 private fun SettingsContent(
     preference: ThemePreference,
+    crashReportingEnabled: Boolean,
     innerPadding: PaddingValues,
     onPreferenceChange: (ThemePreference) -> Unit,
+    onCrashReportingEnabledChange: (Boolean) -> Unit,
 ) {
     Column(modifier = Modifier.fillMaxWidth().padding(innerPadding)) {
         SectionHeader("Theme")
@@ -86,6 +92,11 @@ private fun SettingsContent(
             onModeChange = { newMode ->
                 onPreferenceChange(preference.withMode(newMode))
             },
+        )
+        SectionHeader("Crash reporting")
+        CrashReportingRow(
+            enabled = crashReportingEnabled,
+            onEnabledChange = onCrashReportingEnabledChange,
         )
     }
 }
@@ -155,6 +166,40 @@ private fun ModeRow(
     ) {
         RadioButton(selected = selected, onClick = null)
         Text(text = label, style = MaterialTheme.typography.bodyLarge)
+    }
+}
+
+@Composable
+private fun CrashReportingRow(
+    enabled: Boolean,
+    onEnabledChange: (Boolean) -> Unit,
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .selectable(
+                selected = enabled,
+                role = Role.Switch,
+                onClick = { onEnabledChange(!enabled) },
+            )
+            .padding(horizontal = 20.dp, vertical = 12.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(16.dp),
+    ) {
+        Column(modifier = Modifier.weight(1f)) {
+            Text(
+                text = "Send crash reports",
+                style = MaterialTheme.typography.bodyLarge,
+            )
+            Text(
+                text = "Off by default. When on, anonymous crash data " +
+                    "(stack traces, device model, OS, app version) is sent " +
+                    "to Google Firebase to help fix bugs.",
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
+        Switch(checked = enabled, onCheckedChange = null)
     }
 }
 
