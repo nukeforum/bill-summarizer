@@ -28,6 +28,14 @@
         android:supportsRtl="true"
         android:windowSoftInputMode="adjustResize"
         android:theme="@style/Theme.InformedCitizen">
+        <!--
+          Default Crashlytics auto-collection to OFF. Programmatic enable
+          happens only on release builds when the user has opted in via
+          Settings, so any race window before our app code runs is silent.
+        -->
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
