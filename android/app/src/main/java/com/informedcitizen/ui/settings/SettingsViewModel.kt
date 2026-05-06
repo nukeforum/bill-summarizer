@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.informedcitizen.crash.CrashReporter
 import com.informedcitizen.data.repository.CrashReportingPreferenceRepository
+import com.informedcitizen.data.repository.LocationPreferenceRepository
 import com.informedcitizen.data.repository.ThemePreferenceRepository
 import com.informedcitizen.theme.ThemePreference
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -18,6 +19,7 @@ class SettingsViewModel @Inject constructor(
     private val themePrefs: ThemePreferenceRepository,
     private val crashPrefs: CrashReportingPreferenceRepository,
     private val crashReporter: CrashReporter,
+    private val locationPrefs: LocationPreferenceRepository,
 ) : ViewModel() {
 
     // Eagerly so the first DataStore value lands before the user can interact
@@ -42,5 +44,9 @@ class SettingsViewModel @Inject constructor(
                 crashReporter.deleteUnsentReports()
             }
         }
+    }
+
+    fun forgetLocation() {
+        viewModelScope.launch { locationPrefs.forget() }
     }
 }

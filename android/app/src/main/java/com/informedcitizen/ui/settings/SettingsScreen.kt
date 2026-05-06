@@ -12,6 +12,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -22,6 +23,7 @@ import androidx.compose.material3.SegmentedButtonDefaults
 import androidx.compose.material3.SingleChoiceSegmentedButtonRow
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -70,6 +72,7 @@ fun SettingsScreen(
             innerPadding = innerPadding,
             onPreferenceChange = viewModel::setPreference,
             onCrashReportingEnabledChange = viewModel::setCrashReportingEnabled,
+            onForgetLocation = viewModel::forgetLocation,
             onCalendarClick = onCalendarClick,
         )
     }
@@ -82,6 +85,7 @@ private fun SettingsContent(
     innerPadding: PaddingValues,
     onPreferenceChange: (ThemePreference) -> Unit,
     onCrashReportingEnabledChange: (Boolean) -> Unit,
+    onForgetLocation: () -> Unit,
     onCalendarClick: () -> Unit,
 ) {
     Column(modifier = Modifier.fillMaxWidth().padding(innerPadding)) {
@@ -108,6 +112,16 @@ private fun SettingsContent(
             label = "Congress calendar",
             supporting = "When the House and Senate are in session.",
             onClick = onCalendarClick,
+        )
+        HorizontalDivider()
+        TextButton(onClick = onForgetLocation) {
+            Text("Forget my saved location")
+        }
+        Text(
+            "Clears the state and district stored on this device.",
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier.padding(horizontal = 20.dp),
         )
     }
 }
