@@ -35,3 +35,6 @@ play-listing/
 
 # Brainstorming / planning artifacts — design scaffolding, not shipped docs
 docs/superpowers/
+
+# Git worktrees (per-feature isolated workspaces)
+.worktrees/
