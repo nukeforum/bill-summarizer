@@ -18,24 +18,25 @@ from __future__ import annotations
 import os
 import sys
 from datetime import datetime, timezone
-from typing import Any, Iterable
+from typing import Any, Iterable  # datetime and timezone imported by main() for current_congress()
 
 from _common import (
     CongressClient,
     LIST_PAGE_LIMIT,
     current_congress,
+    now_iso,
     parse_member_legislation_item,
     parse_member_summary,
     save_member_legislation,
     save_members_index,
 )
 
+# Soft caps to bound a runaway pagination loop. Current Congress has ~535
+# voting members; the top cosponsorship counts in recent Congresses are
+# under 5,000 per (member, kind). Both ceilings have ~5x headroom — bump
+# them only if real-world runs hit the limit.
 LIST_PAGES_MAX = 10
 LEG_PAGES_MAX = 50
-
-
-def _iso_now() -> str:
-    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 def list_members(client: CongressClient, congress: int) -> Iterable[dict[str, Any]]:
@@ -52,6 +53,10 @@ def list_members(client: CongressClient, congress: int) -> Iterable[dict[str, An
         if not members:
             return
         yield from members
+        # Heuristic termination: Congress.gov returns a short final page when
+        # the list is exhausted. The `currentMember=true` filter doesn't
+        # currently break this in observed responses, but verify if behavior
+        # changes in a future API version.
         if len(members) < LIST_PAGE_LIMIT:
             return
 
@@ -101,7 +106,10 @@ def main() -> int:
         try:
             detail_body = client.get(f"/member/{bioguide_id}")
             detail = detail_body.get("member") or {}
-            # Merge: detail's fields are richer; list summary supplies depiction & terms when missing.
+            # Detail body wins on every overlapping key; list summary supplies fields
+            # the detail endpoint sometimes omits (e.g., depiction, terms). The order
+            # matters — Congress.gov detail responses are richer for most fields but
+            # can drop these specific ones intermittently.
             merged: dict[str, Any] = {**summary, **detail}
             parsed = parse_member_summary(merged)
         except Exception as exc:  # noqa: BLE001
@@ -121,13 +129,13 @@ def main() -> int:
                 "bioguide_id": bioguide_id,
                 "congress": congress,
                 "kind": kind,
-                "generated_at": _iso_now(),
+                "generated_at": now_iso(),
                 "bills": bills,
             })
 
     save_members_index(congress, {
         "congress": congress,
-        "generated_at": _iso_now(),
+        "generated_at": now_iso(),
         "members": members_out,
     })
     print(f"Wrote index with {len(members_out)} members.")

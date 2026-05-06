@@ -2,6 +2,8 @@
 import json
 from unittest.mock import patch
 
+import pytest
+
 import _common
 import fetch_members
 
@@ -157,3 +159,10 @@ def test_main_handles_empty_legislation(tmp_path, monkeypatch):
 def test_main_no_api_key_returns_2(monkeypatch):
     monkeypatch.delenv("CONGRESS_API_KEY", raising=False)
     assert fetch_members.main() == 2
+
+
+def test_fetch_legislation_rejects_unknown_kind():
+    """The kind whitelist must reject typos; otherwise we'd silently no-op."""
+    fake = _FakeClient([], {}, {}, {})
+    with pytest.raises(ValueError, match="unknown kind"):
+        fetch_members.fetch_legislation(fake, "X000001", "bogus")
