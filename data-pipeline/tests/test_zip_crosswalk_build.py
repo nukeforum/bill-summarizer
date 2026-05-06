@@ -1,6 +1,7 @@
 """Tests for the HUD ZIP→CD crosswalk asset builder."""
 import json
 from pathlib import Path
+from typing import Any
 
 import pytest
 
@@ -150,3 +151,66 @@ def test_extract_cd_value_handles_key_variants():
     assert build_zip_crosswalk._extract_cd_value({"cd": "0501"}) == "0501"
     assert build_zip_crosswalk._extract_cd_value({"geoid": "0501"}) == "0501"
     assert build_zip_crosswalk._extract_cd_value({"foo": "bar"}) is None
+
+
+def test_build_from_api_omits_year_quarter_by_default(tmp_path, monkeypatch):
+    """When year/quarter are not supplied, request params must omit them so
+    the HUD API returns its 'latest published' default."""
+    captured: list[dict[str, Any]] = []
+
+    class _FakeResp:
+        status_code = 200
+        text = ""
+        def json(self):
+            return {"data": {"results": [{"zip": "72101", "cd": "0501"}]}}
+
+    class _FakeSession:
+        def get(self, url, headers, params, timeout):
+            captured.append(dict(params))
+            return _FakeResp()
+
+    monkeypatch.setattr(build_zip_crosswalk.requests, "Session", lambda: _FakeSession())
+    monkeypatch.setattr(build_zip_crosswalk, "_STATE_QUERIES", ["AR"])
+
+    build_zip_crosswalk.build_from_api(
+        output_json=tmp_path / "out.json",
+        api_key="stub",
+        # year and quarter intentionally omitted
+    )
+
+    assert len(captured) == 1
+    sent = captured[0]
+    assert "year" not in sent
+    assert "quarter" not in sent
+    assert sent == {"type": 5, "query": "AR"}
+
+
+def test_build_from_api_includes_year_quarter_when_provided(tmp_path, monkeypatch):
+    """When year/quarter ARE supplied, they're forwarded to the API."""
+    captured: list[dict[str, Any]] = []
+
+    class _FakeResp:
+        status_code = 200
+        text = ""
+        def json(self):
+            return {"data": {"results": [{"zip": "72101", "cd": "0501"}]}}
+
+    class _FakeSession:
+        def get(self, url, headers, params, timeout):
+            captured.append(dict(params))
+            return _FakeResp()
+
+    monkeypatch.setattr(build_zip_crosswalk.requests, "Session", lambda: _FakeSession())
+    monkeypatch.setattr(build_zip_crosswalk, "_STATE_QUERIES", ["AR"])
+
+    build_zip_crosswalk.build_from_api(
+        output_json=tmp_path / "out.json",
+        api_key="stub",
+        year=2024,
+        quarter=4,
+    )
+
+    assert len(captured) == 1
+    sent = captured[0]
+    assert sent["year"] == 2024
+    assert sent["quarter"] == 4

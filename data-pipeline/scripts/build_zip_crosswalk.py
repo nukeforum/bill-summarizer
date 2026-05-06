@@ -172,20 +172,29 @@ def _extract_cd_value(row: dict[str, Any]) -> str | None:
 def build_from_api(
     output_json: Path,
     api_key: str,
-    year: int,
-    quarter: int,
+    year: int | None = None,
+    quarter: int | None = None,
     sleep_seconds: float = 0.0,
 ) -> None:
     by_zip: dict[str, dict[str, Any]] = defaultdict(
         lambda: {"state": "", "districts": set()}
     )
     session = requests.Session()
-    print(f"Fetching ZIP-CD crosswalk per state (year={year} q{quarter})")
+    period = (
+        f"year={year} q{quarter}"
+        if year is not None and quarter is not None
+        else "latest published quarter"
+    )
+    print(f"Fetching ZIP-CD crosswalk per state ({period})")
 
     debug_remaining = 1
     misses = 0
     for state in _STATE_QUERIES:
-        params = {"type": 5, "query": state, "year": year, "quarter": quarter}
+        params: dict[str, Any] = {"type": 5, "query": state}
+        if year is not None:
+            params["year"] = year
+        if quarter is not None:
+            params["quarter"] = quarter
         try:
             body = _hud_get(session, api_key, params, debug=(debug_remaining > 0))
         except Exception as exc:
@@ -235,8 +244,10 @@ def main(argv: list[str]) -> int:
 
     p_api = sub.add_parser("api", help="Build from the HUD HTTP API")
     p_api.add_argument("output_json", type=Path)
-    p_api.add_argument("--year", type=int, required=True)
-    p_api.add_argument("--quarter", type=int, choices=[1, 2, 3, 4], required=True)
+    p_api.add_argument("--year", type=int, default=None,
+                       help="HUD data year (omit for latest)")
+    p_api.add_argument("--quarter", type=int, choices=[1, 2, 3, 4], default=None,
+                       help="HUD data quarter (omit for latest)")
     p_api.add_argument(
         "--sleep", type=float, default=0.0,
         help="Seconds to sleep between requests (rate limiting)",

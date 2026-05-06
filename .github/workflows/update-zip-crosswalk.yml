@@ -39,32 +39,19 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r data-pipeline/requirements.txt
 
-      - name: Determine target HUD quarter
-        id: quarter
-        run: |
-          set -euo pipefail
-          if [ -n "${{ inputs.year }}" ] && [ -n "${{ inputs.quarter }}" ]; then
-            echo "year=${{ inputs.year }}" >> "$GITHUB_OUTPUT"
-            echo "quarter=${{ inputs.quarter }}" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-          # Default: previous quarter (HUD publishes with a lag).
-          NOW=$(date -u +%s)
-          YEAR=$(date -u -d "@$NOW - 90 days" +%Y 2>/dev/null || date -u -v -90d +%Y)
-          MONTH=$(date -u -d "@$NOW - 90 days" +%-m 2>/dev/null || date -u -v -90d +%-m)
-          QUARTER=$(( (MONTH - 1) / 3 + 1 ))
-          echo "year=$YEAR" >> "$GITHUB_OUTPUT"
-          echo "quarter=$QUARTER" >> "$GITHUB_OUTPUT"
-
       - name: Build ZIP→CD asset
         env:
           HUDUSER_API_KEY: ${{ secrets.HUDUSER_API_KEY }}
         run: |
-          python data-pipeline/scripts/build_zip_crosswalk.py api \
-            android/app/src/main/assets/zip_to_cd.json \
-            --year ${{ steps.quarter.outputs.year }} \
-            --quarter ${{ steps.quarter.outputs.quarter }} \
-            --sleep 0.1
+          set -euo pipefail
+          ARGS=( api android/app/src/main/assets/zip_to_cd.json --sleep 0.1 )
+          if [ -n "${{ inputs.year }}" ]; then
+            ARGS+=( --year "${{ inputs.year }}" )
+          fi
+          if [ -n "${{ inputs.quarter }}" ]; then
+            ARGS+=( --quarter "${{ inputs.quarter }}" )
+          fi
+          python data-pipeline/scripts/build_zip_crosswalk.py "${ARGS[@]}"
 
       - name: Commit updated asset
         run: |
