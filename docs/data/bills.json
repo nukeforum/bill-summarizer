@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T08:27:25Z",
+  "generated_at": "2026-05-06T14:30:28Z",
   "congress": 119,
   "bills": [
     {
@@ -337,6 +337,198 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres118/BILLS-119sjres118is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres118/BILLS-119sjres118is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/118"
+    },
+    {
+      "id": "sres290-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "290",
+      "title": "A resolution commemorating June 19, 2025, as \"Juneteenth National Independence Day\" in recognition of June 19, 1865, the date on which news of the end of slavery reached the slaves in the Southwestern States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2025-06-18",
+      "latest_action": {
+        "date": "2025-06-25",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S3536; text: 6/18/2025 CR S3475)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres290/BILLS-119sres290ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres290/BILLS-119sres290ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres290/BILLS-119sres290ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/290"
+    },
+    {
+      "id": "sres275-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "275",
+      "title": "A resolution honoring the memory of the victims of the heinous attack at the Pulse nightclub on June 12, 2016.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Scott, Rick",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2025-06-12",
+      "latest_action": {
+        "date": "2025-06-18",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: 6/12/2025 CR S3393)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres275/BILLS-119sres275ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres275/BILLS-119sres275ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres275/BILLS-119sres275ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/275"
+    },
+    {
+      "id": "sres259-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "259",
+      "title": "A resolution recognizing June 2, 2025, as the 39th anniversary of C-SPAN chronicling democracy in the Senate.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Grassley, Chuck",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2025-06-02",
+      "latest_action": {
+        "date": "2025-06-18",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: 6/02/2025 CR S3171)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres259/BILLS-119sres259ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres259/BILLS-119sres259ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres259/BILLS-119sres259ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/259"
+    },
+    {
+      "id": "sjres53-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "53",
+      "title": "A joint resolution providing for congressional disapproval of the proposed foreign military sale to the Government of Qatar of certain defense articles and services.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Murphy, Christopher",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2025-05-15",
+      "latest_action": {
+        "date": "2025-06-11",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 39 - 56. Record Vote Number: 306."
+      },
+      "outcome": "failed",
+      "summary_crs": "<p>This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Qatar.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sjres53/BILLS-119sjres53is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres53/BILLS-119sjres53is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres53/BILLS-119sjres53is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/53"
+    },
+    {
+      "id": "sjres54-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "54",
+      "title": "A joint resolution providing for congressional disapproval of the proposed foreign military sale to the Government of the United Arab Emirates of certain defense articles and services.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Murphy, Christopher",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2025-05-15",
+      "latest_action": {
+        "date": "2025-06-11",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 39 - 56. Record Vote Number: 307."
+      },
+      "outcome": "failed",
+      "summary_crs": "<p>This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to the United Arab Emirates.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sjres54/BILLS-119sjres54is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres54/BILLS-119sjres54is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres54/BILLS-119sjres54is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/54"
+    },
+    {
+      "id": "sres143-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "143",
+      "title": "A resolution supporting the designation of May 29, 2025, as \"Mental Health Awareness in Agriculture Day\" to raise awareness around mental health in the agricultural industry and workforce and to continue to reduce stigma associated with mental illness.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Fischer, Deb",
+        "party": "R",
+        "state": "NE"
+      },
+      "introduced_date": "2025-03-26",
+      "latest_action": {
+        "date": "2025-05-19",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S2965-2966; text: 03/26/2025 CR S1877-1878)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This resolution designates May 29, 2025, as Mental Health Awareness in Agriculture Day to raise awareness around mental health in the agricultural industry and reduce the stigma associated with mental illness.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sres143/BILLS-119sres143ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres143/BILLS-119sres143ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres143/BILLS-119sres143ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/143"
+    },
+    {
+      "id": "hjres75-119",
+      "congress": 119,
+      "type": "hjres",
+      "number": "75",
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Office of Energy Efficiency and Renewable Energy, Department of Energy relating to \"Energy Conservation Program: Energy Conservation Standards for Commercial Refrigerators, Freezers, and Refrigerator-Freezers\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Goldman, Craig",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2025-03-10",
+      "latest_action": {
+        "date": "2025-05-09",
+        "text": "Became Public Law No: 119-9."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This joint resolution nullifies the final rule issued by the Department of Energy's Office of Energy Efficiency and Renewable Energy titled&nbsp;<em>Energy Conservation Program: Energy Conservation Standards for Commercial Refrigerators, Freezers, and Refrigerator-Freezers&nbsp;</em>and published on January 21, 2025. Under the rule, the office adopted new and amended energy conservation standards for commercial refrigeration equipment in order to achieve the maximum improvement in energy efficiency that is technologically feasible and economically justified.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ9/PLAW-119publ9.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ9/PLAW-119publ9_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ9/PLAW-119publ9.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/75"
+    },
+    {
+      "id": "sjres33-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "33",
+      "title": "A joint resolution providing for congressional disapproval of the proposed foreign military sale to the Government of Israel of certain defense articles and services.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Sanders, Bernard",
+        "party": "I",
+        "state": "VT"
+      },
+      "introduced_date": "2025-03-10",
+      "latest_action": {
+        "date": "2025-04-03",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 15 - 82. Record Vote Number: 165. (consideration: CR S2152-2158)"
+      },
+      "outcome": "failed",
+      "summary_crs": "<p>This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Israel.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sjres33/BILLS-119sjres33is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres33/BILLS-119sjres33is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres33/BILLS-119sjres33is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/33"
     },
     {
       "id": "sres72-119",
