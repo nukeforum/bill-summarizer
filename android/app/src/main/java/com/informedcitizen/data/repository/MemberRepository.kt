@@ -49,6 +49,11 @@ open class MemberRepository @Inject constructor(
         return index.members.firstOrNull { it.bioguideId == bioguideId }
     }
 
+    open suspend fun getIndex(congress: Int): MembersIndex? =
+        runCatching { loadIndex(congress) }
+            .onFailure { crashReporter.recordNonFatal(it, "members index fetch failed") }
+            .getOrNull()
+
     open suspend fun getSponsored(bioguideId: String): MemberLegislation? =
         fetchLegislation(bioguideId) { api.getSponsored(it) }
 

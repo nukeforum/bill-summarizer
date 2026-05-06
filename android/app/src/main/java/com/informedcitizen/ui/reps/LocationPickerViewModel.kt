@@ -2,7 +2,9 @@ package com.informedcitizen.ui.reps
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.informedcitizen.data.model.MembersIndex
 import com.informedcitizen.data.repository.LocationPreferenceRepository
+import com.informedcitizen.data.repository.MemberRepository
 import com.informedcitizen.data.zipcrosswalk.ZipDistrictLookup
 import com.informedcitizen.data.zipcrosswalk.ZipDistrictResult
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -11,6 +13,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import java.time.LocalDate
 import javax.inject.Inject
 
 private val AT_LARGE_STATES = setOf("AK", "DE", "ND", "SD", "VT", "WY")
@@ -19,7 +22,9 @@ private val DELEGATE_JURISDICTIONS = setOf("DC", "AS", "GU", "MP", "PR", "VI")
 private fun isSingleMember(stateCode: String) =
     stateCode in AT_LARGE_STATES || stateCode in DELEGATE_JURISDICTIONS
 
-// 119th Congress House delegations.
+// 119th Congress House delegations. Used as a fallback when the live members
+// index hasn't loaded yet (e.g. first-launch network failure) so the picker
+// remains usable; the live index is preferred whenever available.
 private val HOUSE_DISTRICT_COUNTS: Map<String, Int> = mapOf(
     "AL" to 7, "AZ" to 9, "AR" to 4, "CA" to 52, "CO" to 8, "CT" to 5,
     "FL" to 28, "GA" to 14, "HI" to 2, "ID" to 2, "IL" to 17, "IN" to 9,
@@ -31,22 +36,21 @@ private val HOUSE_DISTRICT_COUNTS: Map<String, Int> = mapOf(
     "WV" to 2, "WI" to 8,
 )
 
-private fun districtsForState(stateCode: String): List<Int> {
-    if (isSingleMember(stateCode)) return emptyList()
-    val count = HOUSE_DISTRICT_COUNTS[stateCode] ?: return emptyList()
-    return (1..count).toList()
-}
-
 @HiltViewModel
 class LocationPickerViewModel @Inject constructor(
     private val prefs: LocationPreferenceRepository,
     private val zipLookup: ZipDistrictLookup,
+    private val members: MemberRepository,
 ) : ViewModel() {
+
+    // Allow tests to inject a deterministic congress.
+    internal var congressProvider: () -> Int = ::computeCurrentCongress
 
     private val _uiState = MutableStateFlow(LocationPickerUiState())
     val uiState: StateFlow<LocationPickerUiState> = _uiState.asStateFlow()
 
     private var pendingDistrict: Int? = null
+    private var loadedIndex: MembersIndex? = null
 
     init {
         // Probe the crosswalk asset on construction. If it's missing (e.g. the
@@ -56,6 +60,35 @@ class LocationPickerViewModel @Inject constructor(
             val available = zipLookup.isAvailable()
             _uiState.update { it.copy(isZipLookupAvailable = available) }
         }
+        // Pre-load the members index so district button counts reflect the
+        // current redistricting cycle. If the load fails (no network on first
+        // launch, etc.) we silently fall back to the hardcoded counts above.
+        viewModelScope.launch {
+            loadedIndex = members.getIndex(congressProvider())
+            // If a state was selected before the index finished loading,
+            // refresh its district list so the user sees the live counts.
+            val current = _uiState.value
+            val sc = current.selectedState
+            if (sc != null && !current.isAtLargeOrDelegate) {
+                _uiState.update { it.copy(districtsForState = districtsForState(sc)) }
+            }
+        }
+    }
+
+    private fun districtsForState(stateCode: String): List<Int> {
+        if (isSingleMember(stateCode)) return emptyList()
+        val fromIndex = loadedIndex?.let { idx ->
+            idx.members
+                .asSequence()
+                .filter { it.state == stateCode && it.chamber == "house" }
+                .mapNotNull { it.district }
+                .filter { it > 0 }
+                .toSortedSet()
+                .toList()
+        }
+        if (!fromIndex.isNullOrEmpty()) return fromIndex
+        val count = HOUSE_DISTRICT_COUNTS[stateCode] ?: return emptyList()
+        return (1..count).toList()
     }
 
     fun selectState(stateCode: String) {
@@ -123,4 +156,7 @@ class LocationPickerViewModel @Inject constructor(
             prefs.set(stateCode = state, district = pendingDistrict)
         }
     }
+
+    private fun computeCurrentCongress(today: LocalDate = LocalDate.now()): Int =
+        ((today.year - 1789) / 2) + 1
 }
