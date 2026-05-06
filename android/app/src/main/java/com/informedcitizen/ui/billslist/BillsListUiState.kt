@@ -9,6 +9,7 @@ sealed interface BillsListUiState {
         val bills: List<Bill>,
         val filter: BillsListFilter,
         val isRefreshing: Boolean,
+        val sessionStatusLine: String? = null,
     ) : BillsListUiState
 
     data class Error(val message: String) : BillsListUiState
