@@ -556,13 +556,22 @@ def parse_member_summary(raw: dict[str, Any]) -> dict[str, Any]:
         or raw.get("name")
         or "Unknown"
     )
+    # Normalize at-large House reps: Congress.gov inconsistently returns either
+    # null or 0 for the lone district in at-large states (VT, AK, DE, ND, SD,
+    # WY) and delegate jurisdictions (DC, AS, GU, MP, PR, VI). The Android
+    # picker stores district=0 for these, so map null -> 0 here for consistent
+    # matching.
+    chamber = _chamber_from_terms(raw.get("terms"))
+    district = raw.get("district")
+    if chamber == "house" and district is None:
+        district = 0
     return {
         "bioguide_id": raw.get("bioguideId") or "",
         "name": name,
         "party": normalize_party(raw.get("partyName") or raw.get("party")),
         "state": _state_code(raw.get("state")),
-        "district": raw.get("district"),
-        "chamber": _chamber_from_terms(raw.get("terms")),
+        "district": district,
+        "chamber": chamber,
         "photo_url": depiction.get("imageUrl") or None,
         "official_url": raw.get("officialUrl") or None,
         "sponsored_count": int(sponsored.get("count") or 0),

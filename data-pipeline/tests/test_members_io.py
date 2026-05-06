@@ -124,6 +124,28 @@ def test_parse_member_summary_senator_no_district():
     assert out["district"] is None
 
 
+def test_parse_member_summary_at_large_house_rep():
+    """At-large House reps come back from Congress.gov with district=null;
+    normalize to 0 for picker matching."""
+    raw = {
+        "bioguideId": "B001234",
+        "directOrderName": "Becca Balint",
+        "partyName": "Democratic",
+        "state": "Vermont",
+        "district": None,
+        "terms": [{"chamber": "House of Representatives"}],
+        "depiction": {"imageUrl": "x"},
+        "officialUrl": "https://balint.house.gov",
+        "addressInformation": {"officeAddress": "x", "phoneNumber": "x"},
+        "sponsoredLegislation": {"count": 0},
+        "cosponsoredLegislation": {"count": 0},
+    }
+    out = parse_member_summary(raw)
+    assert out["chamber"] == "house"
+    assert out["district"] == 0
+    assert out["state"] == "VT"
+
+
 def test_parse_member_legislation_item():
     raw = {
         "introducedDate": "2026-01-15",
