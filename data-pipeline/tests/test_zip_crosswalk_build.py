@@ -52,23 +52,30 @@ class _FakeResp:
         return self._body
 
 
-def test_build_from_api_inverts_cd_to_zip(tmp_path, monkeypatch):
-    """API mode: each district's response is inverted into ZIP→{state, [districts]}."""
+def test_build_from_api_inverts_state_query_to_zip(tmp_path, monkeypatch):
+    """API mode: per-state response is reduced into ZIP→{state, [districts]}."""
     fake_responses = {
-        "0501": {"data": {"results": [
-            {"zip": "72101", "res_ratio": 0.9},
-            {"zip": "72102", "res_ratio": 0.1},
+        "AR": {"data": {"results": [
+            {"zip": "72101", "cd": "0501", "res_ratio": 0.9},
+            {"zip": "72102", "cd": "0501", "res_ratio": 0.1},
+            {"zip": "72102", "cd": "0502", "res_ratio": 0.5},
+            {"zip": "72103", "cd": "0502", "res_ratio": 0.5},
         ]}},
-        "0502": {"data": {"results": [
-            {"zip": "72102", "res_ratio": 0.5},
-            {"zip": "72103", "res_ratio": 0.5},
+        "VT": {"data": {"results": [
+            # Vermont at-large: HUD CD code "00" → district 0.
+            {"zip": "05001", "cd": "5000", "res_ratio": 1.0},
         ]}},
+        "DC": {"data": {"results": [
+            # Delegate jurisdiction: HUD CD code "98" → district 0.
+            {"zip": "20001", "cd": "1198", "res_ratio": 1.0},
+        ]}},
+        # Other states absent → 404, treated as miss.
     }
 
     class _FakeSession:
         def get(self, url, headers=None, params=None, timeout=None):
-            cd = params["query"]
-            body = fake_responses.get(cd)
+            state = params["query"]
+            body = fake_responses.get(state)
             if body is None:
                 return _FakeResp(404, {"error": "not found"})
             return _FakeResp(200, body)
@@ -76,10 +83,8 @@ def test_build_from_api_inverts_cd_to_zip(tmp_path, monkeypatch):
     monkeypatch.setattr(
         build_zip_crosswalk.requests, "Session", lambda: _FakeSession()
     )
-    monkeypatch.setattr(build_zip_crosswalk, "_cd_codes", lambda: [
-        ("AR", 1, "0501"),
-        ("AR", 2, "0502"),
-    ])
+    # Limit the iteration to states we actually fixture.
+    monkeypatch.setattr(build_zip_crosswalk, "_STATE_QUERIES", ["AR", "VT", "DC"])
 
     out = tmp_path / "zip_to_cd.json"
     build_zip_crosswalk.build_from_api(
@@ -93,6 +98,8 @@ def test_build_from_api_inverts_cd_to_zip(tmp_path, monkeypatch):
     assert data["72101"] == {"state": "AR", "districts": [1]}
     assert data["72102"] == {"state": "AR", "districts": [1, 2]}
     assert data["72103"] == {"state": "AR", "districts": [2]}
+    assert data["05001"] == {"state": "VT", "districts": [0]}  # at-large
+    assert data["20001"] == {"state": "DC", "districts": [0]}  # delegate ("98" → 0)
 
 
 def test_build_from_api_no_zips_collected_raises(tmp_path, monkeypatch):
@@ -105,9 +112,7 @@ def test_build_from_api_no_zips_collected_raises(tmp_path, monkeypatch):
     monkeypatch.setattr(
         build_zip_crosswalk.requests, "Session", lambda: _AlwaysMissSession()
     )
-    monkeypatch.setattr(
-        build_zip_crosswalk, "_cd_codes", lambda: [("AR", 1, "0501")]
-    )
+    monkeypatch.setattr(build_zip_crosswalk, "_STATE_QUERIES", ["AR"])
 
     with pytest.raises(RuntimeError, match="empty asset"):
         build_zip_crosswalk.build_from_api(
@@ -116,6 +121,15 @@ def test_build_from_api_no_zips_collected_raises(tmp_path, monkeypatch):
             year=2024,
             quarter=4,
         )
+
+
+def test_normalize_cd_code():
+    assert build_zip_crosswalk._normalize_cd_code("0501") == 1
+    assert build_zip_crosswalk._normalize_cd_code("0512") == 12
+    assert build_zip_crosswalk._normalize_cd_code("5000") == 0   # Vermont at-large
+    assert build_zip_crosswalk._normalize_cd_code("1198") == 0   # DC delegate
+    assert build_zip_crosswalk._normalize_cd_code("0000") == 0
+    assert build_zip_crosswalk._normalize_cd_code("") == 0
 
 
 def test_extract_results_handles_alternate_shapes():
@@ -130,3 +144,9 @@ def test_extract_zip_handles_key_variants():
     assert build_zip_crosswalk._extract_zip({"ZIP": "12345"}) == "12345"
     assert build_zip_crosswalk._extract_zip({"zipcode": 12345}) == "12345"
     assert build_zip_crosswalk._extract_zip({"foo": "bar"}) is None
+
+
+def test_extract_cd_value_handles_key_variants():
+    assert build_zip_crosswalk._extract_cd_value({"cd": "0501"}) == "0501"
+    assert build_zip_crosswalk._extract_cd_value({"geoid": "0501"}) == "0501"
+    assert build_zip_crosswalk._extract_cd_value({"foo": "bar"}) is None

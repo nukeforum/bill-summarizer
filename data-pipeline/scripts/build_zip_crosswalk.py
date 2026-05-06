@@ -3,7 +3,7 @@
 Two source modes:
   csv: read a HUD-published CSV manually downloaded to disk.
   api: fetch from HUD's /hudapi/public/usps endpoint using a bearer key.
-       Iterates Congressional Districts (type=10) and inverts to ZIPs.
+       Iterates states (type=5, zip-cd) and reduces to ZIPs.
 
 The API mode is preferred — quarterly automated builds run in GitHub Actions
 via update-zip-crosswalk.yml.
@@ -71,48 +71,33 @@ def build_from_csv(source_csv: Path, output_json: Path) -> None:
 HUD_API = "https://www.huduser.gov/hudapi/public/usps"
 USER_AGENT = "bill-summarizer-pipeline/1.0"
 
-# State FIPS → USPS code. Includes territories.
-STATE_FIPS_TO_USPS: dict[str, str] = {
-    "01": "AL", "02": "AK", "04": "AZ", "05": "AR", "06": "CA", "08": "CO",
-    "09": "CT", "10": "DE", "11": "DC", "12": "FL", "13": "GA", "15": "HI",
-    "16": "ID", "17": "IL", "18": "IN", "19": "IA", "20": "KS", "21": "KY",
-    "22": "LA", "23": "ME", "24": "MD", "25": "MA", "26": "MI", "27": "MN",
-    "28": "MS", "29": "MO", "30": "MT", "31": "NE", "32": "NV", "33": "NH",
-    "34": "NJ", "35": "NM", "36": "NY", "37": "NC", "38": "ND", "39": "OH",
-    "40": "OK", "41": "OR", "42": "PA", "44": "RI", "45": "SC", "46": "SD",
-    "47": "TN", "48": "TX", "49": "UT", "50": "VT", "51": "VA", "53": "WA",
-    "54": "WV", "55": "WI", "56": "WY",
-    "60": "AS", "66": "GU", "69": "MP", "72": "PR", "78": "VI",
-}
-
-# 119th Congress House delegations. Extend if a state's count changes after
-# redistricting; alternatively, derive from members_NNN.json — but pinning
-# here keeps the script self-contained for one-shot runs.
-HOUSE_DISTRICT_COUNTS: dict[str, int] = {
-    "AL": 7, "AK": 1, "AZ": 9, "AR": 4, "CA": 52, "CO": 8, "CT": 5,
-    "DE": 1, "FL": 28, "GA": 14, "HI": 2, "ID": 2, "IL": 17, "IN": 9,
-    "IA": 4, "KS": 4, "KY": 6, "LA": 6, "ME": 2, "MD": 8, "MA": 9,
-    "MI": 13, "MN": 8, "MS": 4, "MO": 8, "MT": 2, "NE": 3, "NV": 4,
-    "NH": 2, "NJ": 12, "NM": 3, "NY": 26, "NC": 14, "ND": 1, "OH": 15,
-    "OK": 5, "OR": 6, "PA": 17, "RI": 2, "SC": 7, "SD": 1, "TN": 9,
-    "TX": 38, "UT": 4, "VA": 11, "VT": 1, "WA": 10, "WV": 2, "WI": 8,
-    "WY": 1,
-    # Delegate jurisdictions: 1 non-voting delegate.
-    "DC": 1, "AS": 1, "GU": 1, "MP": 1, "PR": 1, "VI": 1,
-}
+# 50 states + DC + 5 territories. The HUD API supports 2-letter state codes
+# in the query param (since 2021 Q1) for all crosswalk types.
+_STATE_QUERIES: list[str] = [
+    "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",
+    "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD",
+    "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ",
+    "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC",
+    "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY",
+    "DC", "AS", "GU", "MP", "PR", "VI",
+]
 
 
-def _cd_codes() -> list[tuple[str, int, str]]:
-    """Yield (USPS state code, district number, 4-digit CD query code) for every
-    voting + non-voting House seat in the 119th Congress."""
-    fips_by_usps = {usps: fips for fips, usps in STATE_FIPS_TO_USPS.items()}
-    out = []
-    for usps, count in HOUSE_DISTRICT_COUNTS.items():
-        fips = fips_by_usps[usps]
-        for d in range(1, count + 1):
-            cd_query = f"{fips}{d:02d}"
-            out.append((usps, d, cd_query))
-    return out
+def _normalize_cd_code(raw: str) -> int:
+    """Normalize HUD's 4-digit CD GEOID (FIPS+CD, e.g. "0501") to a district int.
+
+    The last 2 digits are the CD code. "00" (at-large) and "98" (non-voting
+    delegate) both map to 0 in our output for UI uniformity.
+    """
+    s = str(raw).strip()
+    if not s:
+        return 0
+    # Last 2 digits are the CD code; strip leading zeros.
+    cd_digits = s[-2:].lstrip("0") or "0"
+    n = int(cd_digits)
+    if n == 98:
+        return 0
+    return n
 
 
 def _hud_get(
@@ -171,6 +156,19 @@ def _extract_zip(row: dict[str, Any]) -> str | None:
     return None
 
 
+def _extract_cd_value(row: dict[str, Any]) -> str | None:
+    """Pull the 4-digit CD GEOID from a type=5 result row.
+
+    The docs say the per-row geometry field name varies by crosswalk type
+    ('cd' for zip-cd). It also might be exposed as 'geoid'. Try both.
+    """
+    for key in ("cd", "CD", "geoid", "GEOID"):
+        v = row.get(key)
+        if v is not None:
+            return str(v)
+    return None
+
+
 def build_from_api(
     output_json: Path,
     api_key: str,
@@ -182,41 +180,42 @@ def build_from_api(
         lambda: {"state": "", "districts": set()}
     )
     session = requests.Session()
-    queries = _cd_codes()
-    print(f"Fetching {len(queries)} CD→ZIP crosswalks (year={year} q{quarter})")
+    print(f"Fetching ZIP-CD crosswalk per state (year={year} q{quarter})")
 
     debug_remaining = 1
     misses = 0
-    for usps, district, cd_query in queries:
-        params = {"type": 10, "query": cd_query, "year": year, "quarter": quarter}
+    for state in _STATE_QUERIES:
+        params = {"type": 5, "query": state, "year": year, "quarter": quarter}
         try:
             body = _hud_get(session, api_key, params, debug=(debug_remaining > 0))
         except Exception as exc:
-            print(f"  ! {usps}-{district} (cd={cd_query}): {exc}", file=sys.stderr)
+            print(f"  ! {state}: {exc}", file=sys.stderr)
             misses += 1
             continue
         debug_remaining = max(0, debug_remaining - 1)
         try:
             rows = _extract_results(body)
         except KeyError as exc:
-            print(f"  ! {usps}-{district} (cd={cd_query}): {exc}", file=sys.stderr)
+            print(f"  ! {state}: {exc}", file=sys.stderr)
             misses += 1
             continue
         added = 0
         for row in rows:
             zip_code = _extract_zip(row)
-            if not zip_code:
+            cd_value = _extract_cd_value(row)
+            if not zip_code or not cd_value:
                 continue
+            district = _normalize_cd_code(cd_value)
             entry = by_zip[zip_code]
-            entry["state"] = usps
+            entry["state"] = state
             entry["districts"].add(district)
             added += 1
-        print(f"  + {usps}-{district}: {added} ZIPs")
+        print(f"  + {state}: {added} ZIP×CD pairs")
         if sleep_seconds > 0:
             time.sleep(sleep_seconds)
 
     print(
-        f"\nFetched {len(queries) - misses}/{len(queries)} districts; "
+        f"\nFetched {len(_STATE_QUERIES) - misses}/{len(_STATE_QUERIES)} states; "
         f"unique ZIPs: {len(by_zip)}; misses: {misses}"
     )
     if not by_zip:
