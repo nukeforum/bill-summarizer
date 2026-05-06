@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><schedule>
+    <title>Tentative 2026 Legislative Schedule</title>
+    <type>Tentative Senate Schedule</type>
+    <approvedDate>2025-11-21</approvedDate>
+
+    <publisher/>
+    <congress>119th</congress>
+    <session>2</session>
+    <year>2026</year>
+    <preface><p>The <i>tentative schedule</i> for 2026 has been announced. The list below identifies expected non-legislative periods (days that the Senate will not be in session). The schedule is also available in <a href="/legislative/resources/pdf/2026_calendar.pdf" target="_blank">calendar format</a> (PDF). The <a href="/pagelayout/legislative/one_item_and_teasers/2025_schedule.htm">2025 tentative schedule</a> is still available.</p><p><a href="/legislative/2026_schedule.xml">XML</a></p></preface>
+    <dates>
+       <date>
+           <beginDate>2026-01-01</beginDate>
+           <endDate>2026-01-02</endDate>
+  
+           <action/>
+           <note>New Year's Day - Jan 1</note>
+           </date>
+ <date>
+           <beginDate>2026-01-19</beginDate>
+           <endDate>2026-01-23</endDate>
+  
+           <action>State Work Period</action>
+           <note/>
+           </date>
+                <date>
+           <beginDate>2026-02-16</beginDate>
+           <endDate>2026-02-20</endDate>
+  
+           <action/>
+           <note>Presidents' Day - Feb 16</note>
+           </date>
+               <date>
+           <beginDate>2026-03-30</beginDate>
+           <endDate>2026-04-10</endDate>
+           <action>State Work Period</action>
+           <note/>
+           </date>
+          
+           <date>
+           <beginDate>2026-05-04</beginDate>
+           <endDate>2026-05-08</endDate>
+           <action>State Work Period</action>
+           <note/>
+           </date>
+              
+               <date>
+           <beginDate>2026-05-25</beginDate>
+           <endDate>2026-05-29</endDate>
+           <action>State Work Period</action>
+           <note>Memorial Day - May 25</note>
+           </date>
+                  <date>
+           <beginDate>2026-06-19</beginDate>
+           <endDate>2026-06-19</endDate>
+           <action>State Work Period</action>
+           <note>Juneteenth - Jun 19</note>
+           </date>
+            <date>
+           <beginDate>2026-06-29</beginDate>
+           <endDate>2026-07-10</endDate>
+           <action>State Work Period</action>
+           <note>Independence Day - Jul 4</note>
+           </date>
+    <date>
+           <beginDate>2026-08-10</beginDate>
+           <endDate>2026-09-11</endDate>
+           <action>State Work Period</action>
+           <note>Labor Day - Sep 7</note>
+           </date>
+                       <date>
+           <beginDate>2026-09-21</beginDate>
+           <endDate>2026-09-21</endDate>
+           <action/>
+           <note/>
+           </date>
+            <date>
+           <beginDate>2026-10-05</beginDate>
+           <endDate>2026-11-06</endDate>
+           <action>State Work Period</action>
+           <note>Columbus Day - Oct 12</note>
+           </date>
+
+            <date>
+           <beginDate>2026-11-11</beginDate>
+           <endDate>2026-11-13</endDate>
+           <action/>
+           <note>Veterans Day - Nov 11</note>
+           </date>
+
+            <date>
+           <beginDate>2026-11-23</beginDate>
+           <endDate>2026-11-27</endDate>
+           <action>State Work Period</action>
+           <note>Thanksgiving - Nov 26</note>
+           </date>
+
+            <date>
+           <beginDate>2026-12-21</beginDate>
+           <endDate>2026-12-31</endDate>
+           <action>State Work Period</action>
+           <note>Christmas Day - Dec 25</note>
+           </date>
+
+           
+
+        
+
+         
+
+           
+             
+          
+
+           </dates>
+           <teasers>
+               <teaser>/legislative/common/teaser/teaser_daysinsession</teaser>
+               <teaser>/legislative/common/teaser/teaser_house_calendar</teaser>
+               <teaser>/legislative/common/teaser/senators_phone_list</teaser>
+               <teaser>/legislative/common/teaser/teaser_legislative_process</teaser>
+           </teasers>
+</schedule>

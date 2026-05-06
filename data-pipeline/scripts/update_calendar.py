@@ -1,27 +1,12 @@
-"""Validation entry point for docs/data/session_calendar.json.
+"""Validate docs/data/session_calendar.json shape on disk.
 
-This script does NOT auto-fetch from upstream. The session calendar is
-hand-curated annually from the published sources because the upstream
-pages are HTML/PDF publications, not machine APIs, and rewriting once a
-year is cheaper than maintaining a scraper across format changes.
+The canonical producer of this file is build_session_calendar.py, which
+fetches the House iCalendar feed and the Senate XML schedule and
+writes the JSON. This script is a standalone shape-checker that's
+useful for spot-validation outside the build pipeline (e.g. after a
+manual edit, or when debugging a CI failure).
 
-Refresh workflow:
-
-    1. Open the published calendars:
-         House:  https://www.majorityleader.gov/calendar
-         Senate: https://www.senate.gov/legislative/2026_schedule.htm
-       (Replace 2026 in the Senate URL with the new year.)
-
-    2. Append the new year's session dates to each chamber's
-       `session_days` array in docs/data/session_calendar.json. Keep the
-       array sorted ISO-8601, no duplicates. Both chambers should be
-       refreshed in the same PR.
-
-    3. Update generated_at to the current UTC timestamp.
-
-    4. Run this script to validate, then `pytest tests/test_session_calendar.py`.
-
-    5. Commit and open a PR.
+For the full producer workflow, see build_session_calendar.py.
 """
 from __future__ import annotations
 
