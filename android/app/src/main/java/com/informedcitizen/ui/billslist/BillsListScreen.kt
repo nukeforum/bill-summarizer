@@ -39,8 +39,8 @@ import com.informedcitizen.data.model.Bill
 fun BillsListScreen(
     onBillClick: (Bill) -> Unit,
     onSettingsClick: () -> Unit,
-    onCalendarClick: () -> Unit = {},
     modifier: Modifier = Modifier,
+    onCalendarClick: () -> Unit = {},
     viewModel: BillsListViewModel = hiltViewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()

@@ -44,8 +44,8 @@ import com.informedcitizen.theme.withMode
 @Composable
 fun SettingsScreen(
     onBack: () -> Unit,
-    onCalendarClick: () -> Unit = {},
     modifier: Modifier = Modifier,
+    onCalendarClick: () -> Unit = {},
     viewModel: SettingsViewModel = hiltViewModel(),
 ) {
     val preference by viewModel.preference.collectAsStateWithLifecycle()
