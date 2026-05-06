@@ -1,5 +1,6 @@
 package com.informedcitizen.ui.settings
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -9,6 +10,7 @@ import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.selection.selectableGroup
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -42,6 +44,7 @@ import com.informedcitizen.theme.withMode
 @Composable
 fun SettingsScreen(
     onBack: () -> Unit,
+    onCalendarClick: () -> Unit = {},
     modifier: Modifier = Modifier,
     viewModel: SettingsViewModel = hiltViewModel(),
 ) {
@@ -67,6 +70,7 @@ fun SettingsScreen(
             innerPadding = innerPadding,
             onPreferenceChange = viewModel::setPreference,
             onCrashReportingEnabledChange = viewModel::setCrashReportingEnabled,
+            onCalendarClick = onCalendarClick,
         )
     }
 }
@@ -78,6 +82,7 @@ private fun SettingsContent(
     innerPadding: PaddingValues,
     onPreferenceChange: (ThemePreference) -> Unit,
     onCrashReportingEnabledChange: (Boolean) -> Unit,
+    onCalendarClick: () -> Unit,
 ) {
     Column(modifier = Modifier.fillMaxWidth().padding(innerPadding)) {
         SectionHeader("Theme")
@@ -97,6 +102,42 @@ private fun SettingsContent(
         CrashReportingRow(
             enabled = crashReportingEnabled,
             onEnabledChange = onCrashReportingEnabledChange,
+        )
+        SectionHeader("Congress")
+        SettingsLinkRow(
+            label = "Congress calendar",
+            supporting = "When the House and Senate are in session.",
+            onClick = onCalendarClick,
+        )
+    }
+}
+
+@Composable
+private fun SettingsLinkRow(
+    label: String,
+    supporting: String,
+    onClick: () -> Unit,
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable(onClick = onClick)
+            .padding(horizontal = 20.dp, vertical = 12.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(16.dp),
+    ) {
+        Column(modifier = Modifier.weight(1f)) {
+            Text(text = label, style = MaterialTheme.typography.bodyLarge)
+            Text(
+                text = supporting,
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
+        Icon(
+            imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+            contentDescription = null,
+            tint = MaterialTheme.colorScheme.onSurfaceVariant,
         )
     }
 }

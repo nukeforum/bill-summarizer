@@ -7,6 +7,7 @@ import androidx.navigation3.runtime.rememberNavBackStack
 import androidx.navigation3.ui.NavDisplay
 import com.informedcitizen.ui.billdetail.BillDetailScreen
 import com.informedcitizen.ui.billslist.BillsListScreen
+import com.informedcitizen.ui.calendar.SessionCalendarScreen
 import com.informedcitizen.ui.settings.SettingsScreen
 
 @Composable
@@ -21,6 +22,7 @@ fun MainNavigation() {
                 BillsListScreen(
                     onBillClick = { bill -> backStack.add(BillDetail(bill.id)) },
                     onSettingsClick = { backStack.add(Settings) },
+                    onCalendarClick = { backStack.add(CongressCalendar) },
                     modifier = Modifier,
                 )
             }
@@ -32,7 +34,13 @@ fun MainNavigation() {
                 )
             }
             entry<Settings> {
-                SettingsScreen(onBack = { backStack.removeLastOrNull() })
+                SettingsScreen(
+                    onBack = { backStack.removeLastOrNull() },
+                    onCalendarClick = { backStack.add(CongressCalendar) },
+                )
+            }
+            entry<CongressCalendar> {
+                SessionCalendarScreen(onBack = { backStack.removeLastOrNull() })
             }
         },
     )
