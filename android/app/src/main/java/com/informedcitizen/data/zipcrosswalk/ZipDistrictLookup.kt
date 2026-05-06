@@ -21,7 +21,7 @@ sealed interface ZipDistrictResult {
 private data class ZipEntry(val state: String, val districts: List<Int>)
 
 @Singleton
-class ZipDistrictLookup(
+open class ZipDistrictLookup(
     private val loader: suspend () -> String,
 ) {
     private val mutex = Mutex()
@@ -34,7 +34,7 @@ class ZipDistrictLookup(
         }
     })
 
-    suspend fun lookup(zip: String): ZipDistrictResult {
+    open suspend fun lookup(zip: String): ZipDistrictResult {
         val normalized = zip.padStart(5, '0').take(5)
         val data = ensureLoaded() ?: return ZipDistrictResult.Miss
         val entry = data[normalized] ?: return ZipDistrictResult.Miss
