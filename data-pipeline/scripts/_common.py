@@ -498,6 +498,92 @@ def save_member_legislation(
     return payload
 
 
+_STATE_NAME_TO_CODE = {
+    "Alabama": "AL", "Alaska": "AK", "Arizona": "AZ", "Arkansas": "AR",
+    "California": "CA", "Colorado": "CO", "Connecticut": "CT", "Delaware": "DE",
+    "Florida": "FL", "Georgia": "GA", "Hawaii": "HI", "Idaho": "ID",
+    "Illinois": "IL", "Indiana": "IN", "Iowa": "IA", "Kansas": "KS",
+    "Kentucky": "KY", "Louisiana": "LA", "Maine": "ME", "Maryland": "MD",
+    "Massachusetts": "MA", "Michigan": "MI", "Minnesota": "MN", "Mississippi": "MS",
+    "Missouri": "MO", "Montana": "MT", "Nebraska": "NE", "Nevada": "NV",
+    "New Hampshire": "NH", "New Jersey": "NJ", "New Mexico": "NM", "New York": "NY",
+    "North Carolina": "NC", "North Dakota": "ND", "Ohio": "OH", "Oklahoma": "OK",
+    "Oregon": "OR", "Pennsylvania": "PA", "Rhode Island": "RI", "South Carolina": "SC",
+    "South Dakota": "SD", "Tennessee": "TN", "Texas": "TX", "Utah": "UT",
+    "Vermont": "VT", "Virginia": "VA", "Washington": "WA", "West Virginia": "WV",
+    "Wisconsin": "WI", "Wyoming": "WY",
+    "District of Columbia": "DC", "American Samoa": "AS", "Guam": "GU",
+    "Northern Mariana Islands": "MP", "Puerto Rico": "PR", "Virgin Islands": "VI",
+}
+
+
+def _state_code(state_name: str | None) -> str:
+    if not state_name:
+        return ""
+    if len(state_name) == 2:
+        return state_name.upper()
+    return _STATE_NAME_TO_CODE.get(state_name, state_name[:2].upper())
+
+
+def _chamber_from_terms(terms: list[dict[str, Any]] | None) -> str:
+    """Pick the most recent term's chamber."""
+    if not terms:
+        return "unknown"
+    chamber = (terms[-1].get("chamber") or "").lower()
+    if "senate" in chamber:
+        return "senate"
+    if "house" in chamber:
+        return "house"
+    return "unknown"
+
+
+def parse_member_summary(raw: dict[str, Any]) -> dict[str, Any]:
+    addr = raw.get("addressInformation") or {}
+    sponsored = raw.get("sponsoredLegislation") or {}
+    cosponsored = raw.get("cosponsoredLegislation") or {}
+    depiction = raw.get("depiction") or {}
+    name = (
+        raw.get("directOrderName")
+        or raw.get("name")
+        or "Unknown"
+    )
+    return {
+        "bioguide_id": raw.get("bioguideId") or "",
+        "name": name,
+        "party": normalize_party(raw.get("partyName") or raw.get("party")),
+        "state": _state_code(raw.get("state")),
+        "district": raw.get("district"),
+        "chamber": _chamber_from_terms(raw.get("terms")),
+        "photo_url": depiction.get("imageUrl") or None,
+        "official_url": raw.get("officialUrl") or None,
+        "sponsored_count": int(sponsored.get("count") or 0),
+        "cosponsored_count": int(cosponsored.get("count") or 0),
+        "address": addr.get("officeAddress") or None,
+        "phone": addr.get("phoneNumber") or None,
+    }
+
+
+def parse_member_legislation_item(raw: dict[str, Any]) -> dict[str, Any]:
+    bill_type = (raw.get("type") or "").lower()
+    number = str(raw.get("number") or "")
+    congress = int(raw.get("congress") or 0)
+    latest = raw.get("latestAction") or {}
+    policy = raw.get("policyArea") or None
+    return {
+        "id": f"{bill_type}{number}-{congress}",
+        "type": bill_type,
+        "number": number,
+        "congress": congress,
+        "title": raw.get("latestTitle") or raw.get("title") or "",
+        "introduced_date": raw.get("introducedDate") or "",
+        "latest_action": {
+            "date": (latest.get("actionDate") or latest.get("date") or "")[:10],
+            "text": latest.get("text") or "",
+        },
+        "policy_area": (policy.get("name") if isinstance(policy, dict) else policy),
+    }
+
+
 # ---------- index ----------------------------------------------------------
 
 
