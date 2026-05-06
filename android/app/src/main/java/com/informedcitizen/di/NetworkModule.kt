@@ -1,6 +1,7 @@
 package com.informedcitizen.di
 
 import com.informedcitizen.data.api.BillsApi
+import com.informedcitizen.data.api.MembersApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -54,4 +55,8 @@ object NetworkModule {
     @Provides
     @Singleton
     fun provideBillsApi(retrofit: Retrofit): BillsApi = retrofit.create(BillsApi::class.java)
+
+    @Provides
+    @Singleton
+    fun provideMembersApi(retrofit: Retrofit): MembersApi = retrofit.create(MembersApi::class.java)
 }
