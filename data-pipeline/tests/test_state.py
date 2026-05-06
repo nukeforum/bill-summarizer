@@ -86,6 +86,63 @@ def test_advance_state_short_page_with_queue_exhausted(monkeypatch):
     assert new["active_offset"] == 0
 
 
+def test_advance_state_empty_first_page_at_offset_zero_does_not_mark_complete(monkeypatch):
+    """Guard against transient empty-page responses: a single 200-OK-with-empty-
+    bills response on the first page of a fresh run (offset 0, no non-empty
+    pages seen) must NOT mark the Congress exhausted. That signal could be a
+    Congress.gov hiccup, not a real exhaustion — recovery would otherwise need
+    manual state-file surgery."""
+    monkeypatch.setattr(_common, "current_congress", lambda *a, **kw: 119)
+    state = _common.initial_state()
+    new = _common.advance_state(
+        state,
+        page_returned=0,
+        pages_consumed=1,
+        had_non_empty_page=False,
+    )
+    assert 119 not in new["completed"]
+    assert new["active_congress"] == 119
+    assert new["active_offset"] == 0
+    assert new["queue"] == state["queue"]
+
+
+def test_advance_state_empty_page_mid_congress_marks_complete(monkeypatch):
+    """If active_offset > 0, an empty page reflects real exhaustion: prior
+    runs already fetched non-empty pages successfully."""
+    monkeypatch.setattr(_common, "current_congress", lambda *a, **kw: 119)
+    state = {
+        "active_congress": 119,
+        "active_offset": 500,
+        "queue": [119, 118],
+        "completed": [],
+        "last_run_at": None,
+    }
+    new = _common.advance_state(
+        state,
+        page_returned=0,
+        pages_consumed=1,
+        had_non_empty_page=False,
+    )
+    assert 119 in new["completed"]
+    assert new["active_congress"] == 118
+    assert new["active_offset"] == 0
+
+
+def test_advance_state_empty_page_after_non_empty_marks_complete(monkeypatch):
+    """At offset 0 but with at least one non-empty page during the run, an
+    exhaustion signal on a subsequent empty page is legitimate."""
+    monkeypatch.setattr(_common, "current_congress", lambda *a, **kw: 119)
+    state = _common.initial_state()
+    new = _common.advance_state(
+        state,
+        page_returned=0,
+        pages_consumed=2,
+        had_non_empty_page=True,
+    )
+    assert 119 in new["completed"]
+    assert new["active_congress"] == 118
+
+
 def test_advance_state_idempotent_through_save_load_roundtrip(tmp_path, monkeypatch):
     """Calling advance_state, persisting, reloading, and advancing again must
     produce the same cursor sequence as a contiguous in-memory chain."""

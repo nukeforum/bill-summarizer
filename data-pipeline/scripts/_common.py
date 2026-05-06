@@ -564,6 +564,7 @@ def advance_state(
     state: dict[str, Any],
     page_returned: int,
     pages_consumed: int,
+    had_non_empty_page: bool = False,
 ) -> dict[str, Any]:
     """Return a new state dict updated for the latest backfill chunk.
 
@@ -571,6 +572,11 @@ def advance_state(
     the active Congress is exhausted: mark it complete, drop it from the
     queue, and shift to the next Congress (or set active_congress=None when
     nothing is left). Otherwise just bump the offset by the pages consumed.
+
+    Guard against transient empty-page responses: an empty first page
+    (page_returned == 0, had_non_empty_page == False) at offset 0 is treated
+    as a hiccup, not exhaustion — leave the cursor in place so the next run
+    retries. Recovery would otherwise need manual state-file surgery.
     """
     new = dict(state)
     new["queue"] = list(state.get("queue", []))
@@ -578,14 +584,21 @@ def advance_state(
     new["last_run_at"] = now_iso()
 
     active = state.get("active_congress")
+    prior_offset = state.get("active_offset", 0)
 
     if page_returned < LIST_PAGE_LIMIT:
+        saw_evidence = (
+            page_returned > 0 or had_non_empty_page or prior_offset > 0
+        )
+        if not saw_evidence:
+            new["active_offset"] = prior_offset
+            return new
         if active is not None and active not in new["completed"]:
             new["completed"].append(active)
         new["queue"] = [c for c in new["queue"] if c != active]
         new["active_congress"] = new["queue"][0] if new["queue"] else None
         new["active_offset"] = 0
     else:
-        new["active_offset"] = state.get("active_offset", 0) + pages_consumed * LIST_PAGE_LIMIT
+        new["active_offset"] = prior_offset + pages_consumed * LIST_PAGE_LIMIT
 
     return new

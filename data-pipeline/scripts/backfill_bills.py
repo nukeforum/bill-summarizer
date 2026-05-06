@@ -73,12 +73,15 @@ def main() -> int:
     total_evaluated = 0
     last_page_size = LIST_PAGE_LIMIT
     pages_consumed = 0
+    had_non_empty_page = False
 
     for page in range(BACKFILL_PAGES_PER_RUN):
         page_offset = offset + page * LIST_PAGE_LIMIT
         bills = list_congress_page(client, active, page_offset)
         last_page_size = len(bills)
         pages_consumed += 1
+        if last_page_size > 0:
+            had_non_empty_page = True
 
         for summary in bills:
             total_evaluated += 1
@@ -118,7 +121,9 @@ def main() -> int:
     merged, stats = merge_records(existing.get("bills", []), fresh_records)
     final = save_manifest(active, {"bills": merged})
 
-    new_state = advance_state(state, last_page_size, pages_consumed)
+    new_state = advance_state(
+        state, last_page_size, pages_consumed, had_non_empty_page
+    )
     save_state(new_state)
     rebuild_index()
 
@@ -126,10 +131,19 @@ def main() -> int:
         f"merge: +{stats.added} added, ~{stats.updated} updated, "
         f"={stats.unchanged} unchanged (manifest now {len(final['bills'])} bills)"
     )
-    if last_page_size < LIST_PAGE_LIMIT:
+    held_cursor = (
+        new_state.get("active_congress") == active
+        and new_state.get("active_offset") == offset
+    )
+    if last_page_size < LIST_PAGE_LIMIT and not held_cursor:
         print(
             f"Congress {active} complete; "
             f"next: {new_state.get('active_congress')}"
+        )
+    elif held_cursor and last_page_size < LIST_PAGE_LIMIT:
+        print(
+            f"Empty page at offset {offset} with no prior progress; "
+            f"treating as transient and holding cursor on Congress {active}."
         )
     else:
         print(

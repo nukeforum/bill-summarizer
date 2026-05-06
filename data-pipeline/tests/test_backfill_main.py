@@ -128,6 +128,31 @@ def test_main_resumes_from_existing_state(tmp_path, monkeypatch):
     assert state["active_congress"] == 117
 
 
+def test_main_transient_empty_first_page_does_not_mark_congress_complete(tmp_path, monkeypatch):
+    """Regression: a single 200-OK-with-empty-bills response on the first
+    page of a fresh run must not silently mark the Congress exhausted — the
+    next run must be able to retry the same offset."""
+    import backfill_bills
+
+    monkeypatch.setenv("CONGRESS_API_KEY", "stub")
+    monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
+    state_dir = tmp_path / "state"
+    monkeypatch.setattr(_common, "STATE_DIR", state_dir)
+    monkeypatch.setattr(_common, "current_congress", lambda *a, **kw: 119)
+    monkeypatch.setattr(backfill_bills, "BACKFILL_PAGES_PER_RUN", 4)
+
+    fake = _FakeClient([{"bills": []}], {})
+
+    with patch("backfill_bills.CongressClient", return_value=fake):
+        rc = backfill_bills.main()
+    assert rc == 0
+
+    state = json.loads((state_dir / "backfill_state.json").read_text(encoding="utf-8"))
+    assert 119 not in state["completed"]
+    assert state["active_congress"] == 119
+    assert state["active_offset"] == 0
+
+
 def test_main_full_page_bumps_offset(tmp_path, monkeypatch):
     import backfill_bills
 
