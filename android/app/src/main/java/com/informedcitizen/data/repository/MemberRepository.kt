@@ -44,15 +44,15 @@ open class MemberRepository @Inject constructor(
         return RepsForLocation(house = house, senators = senators)
     }
 
-    suspend fun getMember(bioguideId: String, congress: Int): Member? {
+    open suspend fun getMember(bioguideId: String, congress: Int): Member? {
         val index = runCatching { loadIndex(congress) }.getOrNull() ?: return null
         return index.members.firstOrNull { it.bioguideId == bioguideId }
     }
 
-    suspend fun getSponsored(bioguideId: String): MemberLegislation? =
+    open suspend fun getSponsored(bioguideId: String): MemberLegislation? =
         fetchLegislation(bioguideId) { api.getSponsored(it) }
 
-    suspend fun getCosponsored(bioguideId: String): MemberLegislation? =
+    open suspend fun getCosponsored(bioguideId: String): MemberLegislation? =
         fetchLegislation(bioguideId) { api.getCosponsored(it) }
 
     private suspend fun fetchLegislation(
