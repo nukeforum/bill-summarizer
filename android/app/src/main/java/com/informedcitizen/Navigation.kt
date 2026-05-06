@@ -8,28 +8,50 @@ import androidx.navigation3.ui.NavDisplay
 import com.informedcitizen.ui.billdetail.BillDetailScreen
 import com.informedcitizen.ui.billslist.BillsListScreen
 import com.informedcitizen.ui.calendar.SessionCalendarScreen
+import com.informedcitizen.ui.reps.MemberDetailScreen
+import com.informedcitizen.ui.reps.RepsTab
 import com.informedcitizen.ui.settings.SettingsScreen
+import com.informedcitizen.ui.shell.CongressShell
 
 @Composable
 fun MainNavigation() {
-    val backStack = rememberNavBackStack(BillsList)
+    val backStack = rememberNavBackStack(Root)
 
     NavDisplay(
         backStack = backStack,
         onBack = { backStack.removeLastOrNull() },
         entryProvider = entryProvider {
-            entry<BillsList> {
-                BillsListScreen(
-                    onBillClick = { bill -> backStack.add(BillDetail(bill.id)) },
-                    onSettingsClick = { backStack.add(Settings) },
-                    onCalendarClick = { backStack.add(CongressCalendar) },
-                    modifier = Modifier,
+            entry<Root> {
+                CongressShell(
+                    billsContent = { mod ->
+                        BillsListScreen(
+                            onBillClick = { bill -> backStack.add(BillDetail(bill.id)) },
+                            onSettingsClick = { backStack.add(Settings) },
+                            modifier = mod,
+                            onCalendarClick = { backStack.add(CongressCalendar) },
+                        )
+                    },
+                    repsContent = { mod ->
+                        RepsTab(
+                            onMemberClick = { backStack.add(MemberDetail(it)) },
+                            onSettingsClick = { backStack.add(Settings) },
+                            modifier = mod,
+                        )
+                    },
                 )
             }
             entry<BillDetail> { key ->
                 BillDetailScreen(
                     billId = key.billId,
                     onBack = { backStack.removeLastOrNull() },
+                    modifier = Modifier,
+                )
+            }
+            entry<MemberDetail> { key ->
+                MemberDetailScreen(
+                    bioguideId = key.bioguideId,
+                    onBack = { backStack.removeLastOrNull() },
+                    onBillClick = { billId -> backStack.add(BillDetail(billId)) },
                     modifier = Modifier,
                 )
             }
