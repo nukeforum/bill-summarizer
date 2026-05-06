@@ -4,7 +4,6 @@ from pathlib import Path
 
 import _common
 from _common import (
-    MEMBERS_OUTPUT_DIR,
     load_members_index,
     save_members_index,
     save_member_legislation,

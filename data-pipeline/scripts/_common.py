@@ -432,10 +432,15 @@ def load_manifest(congress: int) -> dict[str, Any]:
         return json.load(f)
 
 
-def _write_manifest_json(path: Path, manifest: dict[str, Any]) -> None:
+def _write_json(path: Path, payload: dict[str, Any]) -> None:
+    """Write JSON with trailing newline, ensuring parent directories exist.
+
+    Used by all save functions to maintain consistent file shape across
+    manifests, member indices, and member legislation files.
+    """
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as f:
-        json.dump(manifest, f, ensure_ascii=False, indent=2, sort_keys=False)
+        json.dump(payload, f, ensure_ascii=False, indent=2, sort_keys=False)
         f.write("\n")
 
 
@@ -452,16 +457,15 @@ def save_manifest(congress: int, manifest: dict[str, Any]) -> dict[str, Any]:
         "congress": congress,
         "bills": manifest.get("bills", []),
     }
-    _write_manifest_json(manifest_path_for(congress), final)
+    _write_json(manifest_path_for(congress), final)
     if congress == current_congress():
-        _write_manifest_json(OUTPUT_DIR / "bills.json", final)
+        _write_json(OUTPUT_DIR / "bills.json", final)
     return final
 
 
 # ---------- members ------------------------------------------------------
 
 MEMBERS_SUBDIR = "members"
-MEMBERS_OUTPUT_DIR = OUTPUT_DIR / MEMBERS_SUBDIR
 
 
 def members_index_path(congress: int) -> Path:
@@ -481,10 +485,7 @@ def load_members_index(congress: int) -> dict[str, Any] | None:
 
 
 def save_members_index(congress: int, payload: dict[str, Any]) -> dict[str, Any]:
-    p = members_index_path(congress)
-    p.parent.mkdir(parents=True, exist_ok=True)
-    with p.open("w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2, sort_keys=False)
+    _write_json(members_index_path(congress), payload)
     return payload
 
 
@@ -493,10 +494,7 @@ def save_member_legislation(
 ) -> dict[str, Any]:
     if kind not in ("sponsored", "cosponsored"):
         raise ValueError(f"unknown kind: {kind!r}")
-    p = member_legislation_path(bioguide_id, kind)
-    p.parent.mkdir(parents=True, exist_ok=True)
-    with p.open("w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2, sort_keys=False)
+    _write_json(member_legislation_path(bioguide_id, kind), payload)
     return payload
 
 
@@ -556,7 +554,7 @@ def rebuild_index() -> dict[str, Any]:
         "current_congress": current,
         "congresses": entries,
     }
-    _write_manifest_json(OUTPUT_DIR / "congresses.json", index)
+    _write_json(OUTPUT_DIR / "congresses.json", index)
     return index
 
 
