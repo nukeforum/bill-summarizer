@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -40,6 +41,18 @@ fun RepsListScreen(
             RepsListUiState.Loading -> CircularProgressIndicator()
             RepsListUiState.NoLocation ->
                 Text("Set your location to see your representatives.")
+            is RepsListUiState.StaleDistrict -> {
+                Text(
+                    "We don't see a House representative for ${s.stateCode}-${s.district} in this Congress.",
+                    style = MaterialTheme.typography.bodyLarge,
+                )
+                Text(
+                    "Districts shift after redistricting. Pick a new district to continue.",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+                Button(onClick = onChangeLocation) { Text("Update my location") }
+            }
             is RepsListUiState.Loaded -> {
                 s.house.forEach { m ->
                     MemberCard(member = m, onClick = { onMemberClick(m.bioguideId) })
@@ -53,10 +66,10 @@ fun RepsListScreen(
                         style = MaterialTheme.typography.bodyMedium,
                     )
                 }
+                TextButton(onClick = onChangeLocation) { Text("Change my location") }
             }
             is RepsListUiState.Error ->
                 Text("Couldn't load: ${s.message}", color = MaterialTheme.colorScheme.error)
         }
-        TextButton(onClick = onChangeLocation) { Text("Change my location") }
     }
 }

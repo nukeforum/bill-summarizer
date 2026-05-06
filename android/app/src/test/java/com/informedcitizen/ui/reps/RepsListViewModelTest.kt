@@ -83,6 +83,36 @@ class RepsListViewModelTest {
     }
 
     @Test
+    fun `emits StaleDistrict when saved district has no house match`() = runTest {
+        val prefs = newPrefsRepo()
+        prefs.set(stateCode = "CA", district = 99)  // Hypothetical post-redistricting non-existent district
+        val members = StubMemberRepository(
+            RepsForLocation(
+                house = emptyList(),  // No match for CA-99
+                senators = listOf(aMember("S1")),  // Senators still found
+            ),
+        )
+        val vm = RepsListViewModel(prefs, members).also { it.congressProvider = { 119 } }
+        val s = vm.uiState.first { it is RepsListUiState.StaleDistrict } as RepsListUiState.StaleDistrict
+        assertEquals("CA", s.stateCode)
+        assertEquals(99, s.district)
+    }
+
+    @Test
+    fun `still emits Loaded when district is null and house is empty`() = runTest {
+        // E.g., user picked DC (delegate-only) — house may be empty by design.
+        val prefs = newPrefsRepo()
+        prefs.set(stateCode = "DC", district = null)
+        val members = StubMemberRepository(
+            RepsForLocation(house = emptyList(), senators = emptyList()),
+        )
+        val vm = RepsListViewModel(prefs, members).also { it.congressProvider = { 119 } }
+        val s = vm.uiState.first { it is RepsListUiState.Loaded || it is RepsListUiState.StaleDistrict }
+        // Expect Loaded, not StaleDistrict — the user didn't save a district.
+        assertEquals(RepsListUiState.Loaded(emptyList(), emptyList()), s)
+    }
+
+    @Test
     fun `emits Error when repository throws`() = runTest {
         val prefs = newPrefsRepo()
         prefs.set(stateCode = "TX", district = 21)

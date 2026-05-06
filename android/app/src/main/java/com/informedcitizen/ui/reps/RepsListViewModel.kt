@@ -47,7 +47,11 @@ class RepsListViewModel @Inject constructor(
                         stateCode = state,
                         district = saved.district,
                     )
-                    RepsListUiState.Loaded(out.house, out.senators)
+                    if (saved.district != null && out.house.isEmpty()) {
+                        RepsListUiState.StaleDistrict(state, saved.district)
+                    } else {
+                        RepsListUiState.Loaded(out.house, out.senators)
+                    }
                 } catch (t: Throwable) {
                     RepsListUiState.Error(t.message ?: "Could not load representatives")
                 }
