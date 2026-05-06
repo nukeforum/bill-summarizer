@@ -39,6 +39,7 @@ import com.informedcitizen.data.model.Bill
 fun BillsListScreen(
     onBillClick: (Bill) -> Unit,
     onSettingsClick: () -> Unit,
+    onCalendarClick: () -> Unit = {},
     modifier: Modifier = Modifier,
     viewModel: BillsListViewModel = hiltViewModel(),
 ) {
@@ -63,6 +64,7 @@ fun BillsListScreen(
             onFilterChange = viewModel::setFilter,
             onRefresh = viewModel::refresh,
             onBillClick = onBillClick,
+            onCalendarClick = onCalendarClick,
         )
     }
 }
@@ -75,6 +77,7 @@ private fun BillsListContent(
     onFilterChange: (BillsListFilter) -> Unit,
     onRefresh: () -> Unit,
     onBillClick: (Bill) -> Unit,
+    onCalendarClick: () -> Unit,
 ) {
     // Top inset shapes the column (so FilterChipsRow sits below the topBar),
     // but the bottom inset is folded into the LazyColumn's contentPadding
@@ -83,6 +86,9 @@ private fun BillsListContent(
     // while scrolling to the end leaves the last card cleanly above the
     // navigation region.
     Column(modifier = Modifier.fillMaxSize().padding(top = innerPadding.calculateTopPadding())) {
+        (state as? BillsListUiState.Success)?.sessionStatusLine?.let { line ->
+            SessionStatusLine(text = line, onClick = onCalendarClick)
+        }
         FilterChipsRow(
             selected = (state as? BillsListUiState.Success)?.filter ?: BillsListFilter.ALL,
             onFilterChange = onFilterChange,
