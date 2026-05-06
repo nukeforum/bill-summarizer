@@ -28,6 +28,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.informedcitizen.data.util.congressGovUrlFor
 import com.informedcitizen.ui.components.MemberCard
 import com.informedcitizen.ui.components.MemberLegislationRow
 import com.informedcitizen.ui.util.openInCustomTab
@@ -91,18 +92,7 @@ fun MemberDetailScreen(
                                     if (viewModel.isInLocalCache(item.id)) {
                                         onBillClick(item.id)
                                     } else {
-                                        val typeSlug = when (item.type) {
-                                            "hr" -> "house-bill"
-                                            "s" -> "senate-bill"
-                                            "hjres" -> "house-joint-resolution"
-                                            "sjres" -> "senate-joint-resolution"
-                                            "hconres" -> "house-concurrent-resolution"
-                                            "sconres" -> "senate-concurrent-resolution"
-                                            "hres" -> "house-resolution"
-                                            "sres" -> "senate-resolution"
-                                            else -> "bill"
-                                        }
-                                        val url = "https://www.congress.gov/bill/${item.congress}th-congress/$typeSlug/${item.number}"
+                                        val url = congressGovUrlFor(item.type, item.number, item.congress)
                                         openInCustomTab(context, url)
                                     }
                                 })
