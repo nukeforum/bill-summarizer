@@ -20,8 +20,10 @@ import org.junit.Test
 
 private class StubZipLookup(
     var nextResult: ZipDistrictResult = ZipDistrictResult.Miss,
+    private val available: Boolean = true,
 ) : ZipDistrictLookup(loader = { "" }) {
     override suspend fun lookup(zip: String): ZipDistrictResult = nextResult
+    override suspend fun isAvailable(): Boolean = available
 }
 
 @OptIn(ExperimentalCoroutinesApi::class)
@@ -111,6 +113,14 @@ class LocationPickerViewModelTest {
         val saved = repo.location.first()
         assertEquals("TX", saved.stateCode)
         assertEquals(21, saved.district)
+    }
+
+    @Test
+    fun `zip lookup hidden when asset unavailable`() = runTest {
+        val vm = LocationPickerViewModel(newRepo(), StubZipLookup(available = false))
+        // The flag defaults to true; wait until the init coroutine flips it.
+        val s = vm.uiState.first { !it.isZipLookupAvailable }
+        assertFalse(s.isZipLookupAvailable)
     }
 
     @Test

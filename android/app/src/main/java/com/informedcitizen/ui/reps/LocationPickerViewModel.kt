@@ -48,6 +48,16 @@ class LocationPickerViewModel @Inject constructor(
 
     private var pendingDistrict: Int? = null
 
+    init {
+        // Probe the crosswalk asset on construction. If it's missing (e.g. the
+        // HUD CSV hasn't been bundled into the build yet) the UI hides the
+        // ZIP textbox entirely instead of silently failing every lookup.
+        viewModelScope.launch {
+            val available = zipLookup.isAvailable()
+            _uiState.update { it.copy(isZipLookupAvailable = available) }
+        }
+    }
+
     fun selectState(stateCode: String) {
         val sc = stateCode.uppercase()
         val districts = districtsForState(sc)

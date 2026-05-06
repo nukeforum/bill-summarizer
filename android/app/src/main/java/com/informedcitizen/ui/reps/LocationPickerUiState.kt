@@ -14,4 +14,12 @@ data class LocationPickerUiState(
     val zipInput: String = "",
     val districtHint: DistrictHint = DistrictHint.None,
     val canSave: Boolean = false,
+    /**
+     * True when the bundled ZIP -> congressional-district crosswalk asset is
+     * loadable. Defaults to true so existing tests and pre-init UI render the
+     * ZIP entry by default; the VM probes [ZipDistrictLookup.isAvailable] on
+     * construction and flips this off if the asset is missing, in which case
+     * the UI hides the ZIP textbox entirely.
+     */
+    val isZipLookupAvailable: Boolean = true,
 )

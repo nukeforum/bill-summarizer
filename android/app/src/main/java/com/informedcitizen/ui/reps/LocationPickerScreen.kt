@@ -117,29 +117,36 @@ fun LocationPickerScreen(
             }
         }
 
-        Text("Or look up by ZIP:", style = MaterialTheme.typography.titleSmall)
-        OutlinedTextField(
-            value = state.zipInput,
-            onValueChange = viewModel::onZipChanged,
-            label = { Text("ZIP code") },
-        )
-        TextButton(onClick = viewModel::lookupZip) { Text("Look up") }
+        if (state.isZipLookupAvailable) {
+            Text("Or look up by ZIP:", style = MaterialTheme.typography.titleSmall)
+            OutlinedTextField(
+                value = state.zipInput,
+                onValueChange = viewModel::onZipChanged,
+                label = { Text("ZIP code") },
+            )
+            TextButton(onClick = viewModel::lookupZip) { Text("Look up") }
 
-        when (val hint = state.districtHint) {
-            DistrictHint.Miss -> Text(
-                "We couldn't match that ZIP. Pick your district from the list, or use House.gov.",
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.error,
+            when (val hint = state.districtHint) {
+                DistrictHint.Miss -> Text(
+                    "We couldn't match that ZIP. Pick your district from the list, or use House.gov.",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.error,
+                )
+                is DistrictHint.Multiple -> Text(
+                    "This ZIP spans districts ${hint.districts.joinToString(", ")}. Please pick one above.",
+                    style = MaterialTheme.typography.bodyMedium,
+                )
+                is DistrictHint.Single -> Text(
+                    "Detected district ${hint.district}.",
+                    style = MaterialTheme.typography.bodyMedium,
+                )
+                DistrictHint.None -> {}
+            }
+        } else {
+            Text(
+                "ZIP lookup is unavailable in this build. Pick your district above, or use House.gov.",
+                style = MaterialTheme.typography.bodySmall,
             )
-            is DistrictHint.Multiple -> Text(
-                "This ZIP spans districts ${hint.districts.joinToString(", ")}. Please pick one above.",
-                style = MaterialTheme.typography.bodyMedium,
-            )
-            is DistrictHint.Single -> Text(
-                "Detected district ${hint.district}.",
-                style = MaterialTheme.typography.bodyMedium,
-            )
-            DistrictHint.None -> {}
         }
 
         TextButton(onClick = { openInCustomTab(context, HOUSE_GOV_LOOKUP) }) {
