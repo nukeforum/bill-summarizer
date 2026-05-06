@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T08:09:29Z",
+  "generated_at": "2026-05-06T02:25:25Z",
   "congress": 119,
   "bills": [
     {
@@ -313,6 +313,54 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres118/BILLS-119sjres118is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres118/BILLS-119sjres118is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/118"
+    },
+    {
+      "id": "sres72-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "72",
+      "title": "A resolution affirming that Hamas cannot retain any political or military control in the Gaza Strip.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Graham, Lindsey",
+        "party": "R",
+        "state": "SC"
+      },
+      "introduced_date": "2025-02-11",
+      "latest_action": {
+        "date": "2025-03-13",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S1751; text: 02/11/2025 CR S863)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This resolution affirms that Hamas cannot be allowed to retain any political or military control in the Gaza Strip. The resolution also (1) calls on the President to use economic and diplomatic tools to halt funding for Hamas from Iran and elsewhere; and (2) supports Israel as it defends itself from Hamas, Iran, and Iranian proxies.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sres72/BILLS-119sres72ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres72/BILLS-119sres72ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres72/BILLS-119sres72ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/72"
+    },
+    {
+      "id": "sres53-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "53",
+      "title": "A resolution recognizing the 80th anniversary of the amphibious landing on the Japanese island of Iwo Jima during World War II and the raisings of the flag of the United States on Mount Suribachi.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Young, Todd",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2025-02-04",
+      "latest_action": {
+        "date": "2025-02-19",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S1037; text: 2/4/2025 CR S597-598)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This resolution recognizes the 80th anniversary of the amphibious landing of U.S. troops&nbsp;on the Japanese island of Iwo Jima in 1945 and commemorates the historic raising of the U.S.&nbsp;flag on Mount Suribachi that occurred on February 23, 1945. Additionally, the resolution recognizes the 250th year since the founding of the U.S. Marine Corps and the U.S. Navy.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sres53/BILLS-119sres53ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres53/BILLS-119sres53ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres53/BILLS-119sres53ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/53"
     }
   ]
 }
