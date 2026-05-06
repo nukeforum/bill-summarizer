@@ -159,3 +159,19 @@ def test_parse_member_legislation_item_missing_policy_area():
     out = parse_member_legislation_item(raw)
     assert out["policy_area"] is None
     assert out["id"] == "s99-119"
+
+
+def test_parse_member_legislation_item_string_policy_area():
+    """Defensive: API has been seen returning policyArea as a bare string in the past."""
+    raw = {
+        "introducedDate": "2026-02-01",
+        "type": "S",
+        "number": 12,
+        "congress": 119,
+        "latestTitle": "A bill",
+        "latestAction": {"actionDate": "2026-02-15", "text": "Read."},
+        "policyArea": "Education",
+    }
+    out = parse_member_legislation_item(raw)
+    assert out["policy_area"] == "Education"
+    assert out["id"] == "s12-119"

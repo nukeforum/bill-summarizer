@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -522,7 +523,15 @@ def _state_code(state_name: str | None) -> str:
         return ""
     if len(state_name) == 2:
         return state_name.upper()
-    return _STATE_NAME_TO_CODE.get(state_name, state_name[:2].upper())
+    code = _STATE_NAME_TO_CODE.get(state_name)
+    if code is not None:
+        return code
+    fallback = state_name[:2].upper()
+    print(
+        f"  ! unknown state name {state_name!r}; falling back to {fallback!r}",
+        file=sys.stderr,
+    )
+    return fallback
 
 
 def _chamber_from_terms(terms: list[dict[str, Any]] | None) -> str:
