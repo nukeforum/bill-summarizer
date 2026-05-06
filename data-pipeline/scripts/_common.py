@@ -458,6 +458,48 @@ def save_manifest(congress: int, manifest: dict[str, Any]) -> dict[str, Any]:
     return final
 
 
+# ---------- members ------------------------------------------------------
+
+MEMBERS_SUBDIR = "members"
+MEMBERS_OUTPUT_DIR = OUTPUT_DIR / MEMBERS_SUBDIR
+
+
+def members_index_path(congress: int) -> Path:
+    return OUTPUT_DIR / f"members_{congress:03d}.json"
+
+
+def member_legislation_path(bioguide_id: str, kind: str) -> Path:
+    return OUTPUT_DIR / MEMBERS_SUBDIR / f"{bioguide_id}_{kind}.json"
+
+
+def load_members_index(congress: int) -> dict[str, Any] | None:
+    p = members_index_path(congress)
+    if not p.exists():
+        return None
+    with p.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def save_members_index(congress: int, payload: dict[str, Any]) -> dict[str, Any]:
+    p = members_index_path(congress)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    with p.open("w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2, sort_keys=False)
+    return payload
+
+
+def save_member_legislation(
+    bioguide_id: str, kind: str, payload: dict[str, Any]
+) -> dict[str, Any]:
+    if kind not in ("sponsored", "cosponsored"):
+        raise ValueError(f"unknown kind: {kind!r}")
+    p = member_legislation_path(bioguide_id, kind)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    with p.open("w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2, sort_keys=False)
+    return payload
+
+
 # ---------- index ----------------------------------------------------------
 
 
