@@ -30,6 +30,13 @@ class MemberDetailViewModel @Inject constructor(
     fun load(bioguideId: String) {
         viewModelScope.launch {
             val congress = congressProvider()
+            // Pre-warm the bill cache so isInLocalCache returns accurate
+            // results when the user taps a sponsored/cosponsored row, even if
+            // they navigated straight to MemberDetail without ever opening
+            // the Bills tab. getBills() is idempotent — once cached it
+            // returns immediately. Fire-and-forget on purpose; we don't want
+            // to block the member render on the bills fetch.
+            launch { bills.getBills() }
             try {
                 val member = members.getMember(bioguideId, congress)
                 val sponsored = members.getSponsored(bioguideId)

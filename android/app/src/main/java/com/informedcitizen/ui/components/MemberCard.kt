@@ -14,22 +14,16 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.informedcitizen.data.model.Member
-
-private fun partyColor(party: String): Color = when (party) {
-    "D" -> Color(0xFF2962FF)
-    "R" -> Color(0xFFD32F2F)
-    else -> Color(0xFF6D6D6D)
-}
+import com.informedcitizen.theme.PartyColors
 
 @Composable
 fun MemberCard(member: Member, onClick: () -> Unit, modifier: Modifier = Modifier) {
     Card(modifier = modifier.fillMaxWidth().clickable(onClick = onClick)) {
         Row(verticalAlignment = Alignment.CenterVertically) {
             Column(
-                modifier = Modifier.width(8.dp).height(80.dp).background(partyColor(member.party)),
+                modifier = Modifier.width(8.dp).height(80.dp).background(PartyColors.forParty(member.party)),
             ) {}
             Column(modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp)) {
                 Text(member.name, style = MaterialTheme.typography.titleMedium)
