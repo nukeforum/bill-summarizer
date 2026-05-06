@@ -14,7 +14,7 @@ import javax.inject.Singleton
 data class RepsForLocation(val house: List<Member>, val senators: List<Member>)
 
 @Singleton
-class MemberRepository @Inject constructor(
+open class MemberRepository @Inject constructor(
     private val api: MembersApi,
     private val crashReporter: CrashReporter,
 ) {
@@ -30,7 +30,7 @@ class MemberRepository @Inject constructor(
             .also { indexCache = it }
     }
 
-    suspend fun findRepsForLocation(
+    open suspend fun findRepsForLocation(
         congress: Int,
         stateCode: String,
         district: Int?,
