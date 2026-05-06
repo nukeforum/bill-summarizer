@@ -130,7 +130,50 @@ def test_normalize_cd_code():
     assert build_zip_crosswalk._normalize_cd_code("5000") == 0   # Vermont at-large
     assert build_zip_crosswalk._normalize_cd_code("1198") == 0   # DC delegate
     assert build_zip_crosswalk._normalize_cd_code("0000") == 0
-    assert build_zip_crosswalk._normalize_cd_code("") == 0
+
+
+def test_normalize_cd_code_returns_none_for_unparseable():
+    """HUD uses '**' for ZIPs with no valid CD mapping (military APO/FPO,
+    PO-box ZIPs, etc.). The parser must signal 'skip this row' rather than
+    crash."""
+    assert build_zip_crosswalk._normalize_cd_code("**") is None
+    assert build_zip_crosswalk._normalize_cd_code("01**") is None
+    assert build_zip_crosswalk._normalize_cd_code("") is None
+    assert build_zip_crosswalk._normalize_cd_code("abcd") is None
+
+
+def test_build_from_api_skips_rows_with_unparseable_cd(tmp_path, monkeypatch):
+    """Rows whose CD value is '**' must be silently skipped (counted, not
+    crashed) so the rest of the state still imports."""
+    fake_responses = {
+        "AR": {"data": {"results": [
+            {"zip": "72101", "cd": "0501"},
+            {"zip": "09501", "cd": "**"},   # APO ZIP — no CD
+            {"zip": "72102", "cd": "0502"},
+        ]}},
+    }
+
+    class _FakeResp:
+        def __init__(self, status_code, body):
+            self.status_code = status_code
+            self._body = body
+            self.text = ""
+        def json(self):
+            return self._body
+
+    class _FakeSession:
+        def get(self, url, headers, params, timeout):
+            return _FakeResp(200, fake_responses[params["query"]])
+
+    monkeypatch.setattr(build_zip_crosswalk.requests, "Session", lambda: _FakeSession())
+    monkeypatch.setattr(build_zip_crosswalk, "_STATE_QUERIES", ["AR"])
+
+    out = tmp_path / "zip_to_cd.json"
+    build_zip_crosswalk.build_from_api(output_json=out, api_key="stub")
+    data = json.loads(out.read_text())
+    assert data["72101"] == {"state": "AR", "districts": [1]}
+    assert data["72102"] == {"state": "AR", "districts": [2]}
+    assert "09501" not in data
 
 
 def test_extract_results_handles_alternate_shapes():

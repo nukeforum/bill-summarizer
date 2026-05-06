@@ -83,17 +83,23 @@ _STATE_QUERIES: list[str] = [
 ]
 
 
-def _normalize_cd_code(raw: str) -> int:
+def _normalize_cd_code(raw: str) -> int | None:
     """Normalize HUD's 4-digit CD GEOID (FIPS+CD, e.g. "0501") to a district int.
 
     The last 2 digits are the CD code. "00" (at-large) and "98" (non-voting
     delegate) both map to 0 in our output for UI uniformity.
+
+    Returns ``None`` for values that can't be parsed (e.g. HUD's "**" marker
+    for ZIPs with no valid CD mapping — typically military APO/FPO and PO-box
+    ZIPs). Callers should skip rows where this returns ``None``.
     """
     s = str(raw).strip()
     if not s:
-        return 0
+        return None
     # Last 2 digits are the CD code; strip leading zeros.
     cd_digits = s[-2:].lstrip("0") or "0"
+    if not cd_digits.isdigit():
+        return None
     n = int(cd_digits)
     if n == 98:
         return 0
@@ -209,17 +215,24 @@ def build_from_api(
             misses += 1
             continue
         added = 0
+        skipped = 0
         for row in rows:
             zip_code = _extract_zip(row)
             cd_value = _extract_cd_value(row)
             if not zip_code or not cd_value:
+                skipped += 1
                 continue
             district = _normalize_cd_code(cd_value)
+            if district is None:
+                # HUD's "**" marker etc. — ZIP with no clean CD mapping.
+                skipped += 1
+                continue
             entry = by_zip[zip_code]
             entry["state"] = state
             entry["districts"].add(district)
             added += 1
-        print(f"  + {state}: {added} ZIP×CD pairs")
+        suffix = f" ({skipped} skipped)" if skipped else ""
+        print(f"  + {state}: {added} ZIP×CD pairs{suffix}")
         if sleep_seconds > 0:
             time.sleep(sleep_seconds)
 
