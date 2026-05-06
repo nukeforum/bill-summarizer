@@ -1,7 +1,5 @@
 package com.informedcitizen.ui.reps
 
-import com.informedcitizen.crash.FakeCrashReporter
-import com.informedcitizen.data.api.MembersApi
 import com.informedcitizen.data.model.Member
 import com.informedcitizen.data.model.MemberLegislation
 import com.informedcitizen.data.model.MembersIndex
@@ -25,7 +23,7 @@ import org.junit.Test
 private class StubMemberRepository(
     private var nextResult: RepsForLocation = RepsForLocation(emptyList(), emptyList()),
     private var throwOnNext: Throwable? = null,
-) : MemberRepository(api = NoopApi(), crashReporter = FakeCrashReporter()) {
+) : MemberRepository {
     override suspend fun findRepsForLocation(
         congress: Int,
         stateCode: String,
@@ -35,14 +33,13 @@ private class StubMemberRepository(
         return nextResult
     }
 
+    override suspend fun getMember(bioguideId: String, congress: Int): Member? = null
+    override suspend fun getSponsored(bioguideId: String): MemberLegislation? = null
+    override suspend fun getCosponsored(bioguideId: String): MemberLegislation? = null
+    override suspend fun getIndex(congress: Int): MembersIndex? = null
+
     fun setResult(result: RepsForLocation) { nextResult = result }
     fun setError(t: Throwable) { throwOnNext = t }
-}
-
-private class NoopApi : MembersApi {
-    override suspend fun getMembersIndex(congress: String): MembersIndex = error("unused")
-    override suspend fun getSponsored(bioguideId: String): MemberLegislation = error("unused")
-    override suspend fun getCosponsored(bioguideId: String): MemberLegislation = error("unused")
 }
 
 private fun aMember(bid: String) =

@@ -57,7 +57,7 @@ class MemberRepositoryTest {
 
     @Test
     fun `findRepsForLocation with district returns rep plus senators`() = runTest {
-        val repo = MemberRepository(FakeMembersApi(sampleIndex), FakeCrashReporter())
+        val repo = CachedMemberRepository(FakeMembersApi(sampleIndex), FakeCrashReporter())
         val out = repo.findRepsForLocation(congress = 119, stateCode = "TX", district = 21)
         assertEquals(listOf("A000001"), out.house.map { it.bioguideId })
         assertTrue("no senators in TX in fixture", out.senators.isEmpty())
@@ -65,7 +65,7 @@ class MemberRepositoryTest {
 
     @Test
     fun `findRepsForLocation with null district returns senators only`() = runTest {
-        val repo = MemberRepository(FakeMembersApi(sampleIndex), FakeCrashReporter())
+        val repo = CachedMemberRepository(FakeMembersApi(sampleIndex), FakeCrashReporter())
         val out = repo.findRepsForLocation(congress = 119, stateCode = "MI", district = null)
         assertTrue(out.house.isEmpty())
         assertEquals(setOf("B000002", "C000003"), out.senators.map { it.bioguideId }.toSet())
@@ -78,7 +78,7 @@ class MemberRepositoryTest {
             generatedAt = "x",
             members = sampleIndex.members + aMember("E000005", "MI", 1, "house"),
         )
-        val repo = MemberRepository(FakeMembersApi(full), FakeCrashReporter())
+        val repo = CachedMemberRepository(FakeMembersApi(full), FakeCrashReporter())
         val out = repo.findRepsForLocation(119, "MI", 1)
         assertEquals(listOf("E000005"), out.house.map { it.bioguideId })
         assertEquals(setOf("B000002", "C000003"), out.senators.map { it.bioguideId }.toSet())
@@ -86,7 +86,7 @@ class MemberRepositoryTest {
 
     @Test
     fun `getSponsored on 404 returns empty MemberLegislation`() = runTest {
-        val repo = MemberRepository(
+        val repo = CachedMemberRepository(
             FakeMembersApi(sampleIndex, sponsoredErrors = setOf("A000001")),
             FakeCrashReporter(),
         )
@@ -98,7 +98,7 @@ class MemberRepositoryTest {
     @Test
     fun `index cached on second call`() = runTest {
         val api = FakeMembersApi(sampleIndex)
-        val repo = MemberRepository(api, FakeCrashReporter())
+        val repo = CachedMemberRepository(api, FakeCrashReporter())
         repo.findRepsForLocation(119, "TX", 21)
         repo.findRepsForLocation(119, "TX", 21)
         assertEquals(1, api.indexCalls)
@@ -112,7 +112,7 @@ class MemberRepositoryTest {
             override suspend fun getSponsored(bioguideId: String): MemberLegislation = error("unused")
             override suspend fun getCosponsored(bioguideId: String): MemberLegislation = error("unused")
         }
-        val repo = MemberRepository(throwingApi, FakeCrashReporter())
+        val repo = CachedMemberRepository(throwingApi, FakeCrashReporter())
         assertNull(repo.getMember("X", 119))
     }
 }

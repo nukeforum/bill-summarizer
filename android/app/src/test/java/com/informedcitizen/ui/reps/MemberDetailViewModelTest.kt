@@ -2,7 +2,6 @@ package com.informedcitizen.ui.reps
 
 import com.informedcitizen.crash.FakeCrashReporter
 import com.informedcitizen.data.api.BillsApi
-import com.informedcitizen.data.api.MembersApi
 import com.informedcitizen.data.model.Action
 import com.informedcitizen.data.model.Bill
 import com.informedcitizen.data.model.BillsManifest
@@ -15,6 +14,7 @@ import com.informedcitizen.data.model.SessionCalendar
 import com.informedcitizen.data.model.Sponsor
 import com.informedcitizen.data.repository.BillRepository
 import com.informedcitizen.data.repository.MemberRepository
+import com.informedcitizen.data.repository.RepsForLocation
 import com.informedcitizen.testutil.InMemoryPreferencesDataStore
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -32,12 +32,6 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 
-private class StubMembersApi : MembersApi {
-    override suspend fun getMembersIndex(congress: String): MembersIndex = error("unused")
-    override suspend fun getSponsored(bioguideId: String): MemberLegislation = error("unused")
-    override suspend fun getCosponsored(bioguideId: String): MemberLegislation = error("unused")
-}
-
 private class StubBillsApi(private val bills: List<Bill>) : BillsApi {
     override suspend fun getBills(): BillsManifest =
         BillsManifest(generatedAt = "x", congress = 119, bills = bills)
@@ -48,13 +42,19 @@ private class DetailStubMemberRepository(
     private val memberById: Map<String, Member?> = emptyMap(),
     private val sponsoredById: Map<String, MemberLegislation?> = emptyMap(),
     private val cosponsoredById: Map<String, MemberLegislation?> = emptyMap(),
-) : MemberRepository(api = StubMembersApi(), crashReporter = FakeCrashReporter()) {
+) : MemberRepository {
+    override suspend fun findRepsForLocation(
+        congress: Int,
+        stateCode: String,
+        district: Int?,
+    ): RepsForLocation = error("unused")
     override suspend fun getMember(bioguideId: String, congress: Int): Member? =
         memberById[bioguideId]
     override suspend fun getSponsored(bioguideId: String): MemberLegislation? =
         sponsoredById.getOrDefault(bioguideId, MemberLegislation(bioguideId, 119, "sponsored", "x", emptyList()))
     override suspend fun getCosponsored(bioguideId: String): MemberLegislation? =
         cosponsoredById.getOrDefault(bioguideId, MemberLegislation(bioguideId, 119, "cosponsored", "x", emptyList()))
+    override suspend fun getIndex(congress: Int): MembersIndex? = null
 }
 
 private fun anItem(id: String) = MemberLegislationItem(

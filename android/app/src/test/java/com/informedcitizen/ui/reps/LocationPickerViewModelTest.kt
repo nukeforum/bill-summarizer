@@ -1,12 +1,11 @@
 package com.informedcitizen.ui.reps
 
-import com.informedcitizen.crash.FakeCrashReporter
-import com.informedcitizen.data.api.MembersApi
 import com.informedcitizen.data.model.Member
 import com.informedcitizen.data.model.MemberLegislation
 import com.informedcitizen.data.model.MembersIndex
 import com.informedcitizen.data.repository.LocationPreferenceRepository
 import com.informedcitizen.data.repository.MemberRepository
+import com.informedcitizen.data.repository.RepsForLocation
 import com.informedcitizen.data.zipcrosswalk.ZipDistrictLookup
 import com.informedcitizen.data.zipcrosswalk.ZipDistrictResult
 import com.informedcitizen.testutil.InMemoryPreferencesDataStore
@@ -28,21 +27,23 @@ import org.junit.Test
 private class StubZipLookup(
     var nextResult: ZipDistrictResult = ZipDistrictResult.Miss,
     private val available: Boolean = true,
-) : ZipDistrictLookup(loader = { "" }) {
+) : ZipDistrictLookup {
     override suspend fun lookup(zip: String): ZipDistrictResult = nextResult
     override suspend fun isAvailable(): Boolean = available
 }
 
 private class PickerStubMemberRepository(
     private val index: MembersIndex? = null,
-) : MemberRepository(api = PickerNoopMembersApi(), crashReporter = FakeCrashReporter()) {
+) : MemberRepository {
+    override suspend fun findRepsForLocation(
+        congress: Int,
+        stateCode: String,
+        district: Int?,
+    ): RepsForLocation = error("unused")
+    override suspend fun getMember(bioguideId: String, congress: Int): Member? = null
+    override suspend fun getSponsored(bioguideId: String): MemberLegislation? = null
+    override suspend fun getCosponsored(bioguideId: String): MemberLegislation? = null
     override suspend fun getIndex(congress: Int): MembersIndex? = index
-}
-
-private class PickerNoopMembersApi : MembersApi {
-    override suspend fun getMembersIndex(congress: String): MembersIndex = error("unused")
-    override suspend fun getSponsored(bioguideId: String): MemberLegislation = error("unused")
-    override suspend fun getCosponsored(bioguideId: String): MemberLegislation = error("unused")
 }
 
 @OptIn(ExperimentalCoroutinesApi::class)

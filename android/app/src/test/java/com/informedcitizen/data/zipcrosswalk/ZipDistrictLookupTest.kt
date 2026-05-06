@@ -11,7 +11,7 @@ class ZipDistrictLookupTest {
         javaClass.classLoader!!.getResource("zip_to_cd_test.json")!!.readText()
     }
 
-    private fun newLookup() = ZipDistrictLookup(loader = { testJson })
+    private fun newLookup() = AssetZipDistrictLookup(loader = { testJson })
 
     @Test
     fun `single district returns Single`() = runTest {
