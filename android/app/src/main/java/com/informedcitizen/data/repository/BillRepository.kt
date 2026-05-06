@@ -36,6 +36,8 @@ class BillRepository @Inject constructor(
 
     fun getBillById(id: String): Bill? = cached?.firstOrNull { it.id == id }
 
+    fun containsBillId(id: String): Boolean = cached?.any { it.id == id } == true
+
     suspend fun lastFetchedAtMillis(): Long? =
         dataStore.data.firstOrNull()?.get(LAST_FETCHED_KEY)
 
