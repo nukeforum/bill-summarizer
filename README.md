@@ -6,6 +6,9 @@ Claude, or Gemini** for a plain-English summary. The app brings no LLM
 of its own — it builds a structured prompt and shares it via Android's
 `ACTION_SEND` system to whichever AI app the user prefers.
 
+The app also surfaces when the House and Senate are next in session, so
+you can tell at a glance whether today is a likely floor-activity day.
+
 <p align="center"><img src="screenshots/list.png" alt="Bills list screen" width="320"></p>
 
 ## Tech stack
