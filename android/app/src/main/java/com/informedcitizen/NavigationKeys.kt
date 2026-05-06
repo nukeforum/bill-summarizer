@@ -8,3 +8,5 @@ import kotlinx.serialization.Serializable
 @Serializable data class BillDetail(val billId: String) : NavKey
 
 @Serializable data object Settings : NavKey
+
+@Serializable data object CongressCalendar : NavKey
