@@ -3,6 +3,7 @@ package com.informedcitizen.data.repository
 import com.informedcitizen.crash.FakeCrashReporter
 import com.informedcitizen.data.api.BillsApi
 import com.informedcitizen.data.model.BillsManifest
+import com.informedcitizen.data.model.SessionCalendar
 import com.informedcitizen.testutil.InMemoryPreferencesDataStore
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
@@ -48,9 +49,11 @@ class BillRepositoryTest {
 
     private class StubApi(private val manifest: BillsManifest) : BillsApi {
         override suspend fun getBills(): BillsManifest = manifest
+        override suspend fun getSessionCalendar(): SessionCalendar = error("not used in this test")
     }
 
     private class ThrowingApi(private val throwable: Throwable) : BillsApi {
         override suspend fun getBills(): BillsManifest = throw throwable
+        override suspend fun getSessionCalendar(): SessionCalendar = error("not used in this test")
     }
 }
