@@ -9,6 +9,8 @@ sealed interface DistrictHint {
     data object SaveFailed : DistrictHint
 }
 
+enum class LocationPickerMode { Pick, Lookup }
+
 sealed interface LocationPickerEvent {
     data object Saved : LocationPickerEvent
 }
@@ -20,6 +22,7 @@ data class LocationPickerUiState(
     val zipInput: String = "",
     val districtHint: DistrictHint = DistrictHint.None,
     val canSave: Boolean = false,
+    val mode: LocationPickerMode = LocationPickerMode.Pick,
     /**
      * True when the bundled ZIP -> congressional-district crosswalk asset is
      * loadable. Defaults to true so existing tests and pre-init UI render the

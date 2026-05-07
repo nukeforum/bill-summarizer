@@ -120,6 +120,10 @@ class LocationPickerViewModel @Inject constructor(
         _uiState.update { it.copy(canSave = it.selectedState != null) }
     }
 
+    fun selectMode(mode: LocationPickerMode) {
+        _uiState.update { it.copy(mode = mode) }
+    }
+
     fun onZipChanged(zip: String) {
         _uiState.update { it.copy(zipInput = zip) }
     }
@@ -143,6 +147,8 @@ class LocationPickerViewModel @Inject constructor(
                 }
                 is ZipDistrictResult.Multiple -> {
                     pendingDistrict = null
+                    // The user needs to disambiguate, which only the district
+                    // grid can do — flip to Pick so the narrowed grid is in view.
                     _uiState.update {
                         it.copy(
                             selectedState = result.state,
@@ -150,6 +156,7 @@ class LocationPickerViewModel @Inject constructor(
                             isAtLargeOrDelegate = false,
                             districtHint = DistrictHint.Multiple(result.districts),
                             canSave = false,
+                            mode = LocationPickerMode.Pick,
                         )
                     }
                 }

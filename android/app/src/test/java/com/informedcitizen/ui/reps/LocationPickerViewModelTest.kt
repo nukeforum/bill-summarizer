@@ -131,6 +131,25 @@ class LocationPickerViewModelTest {
     }
 
     @Test
+    fun `zip lookup multiple flips mode to Pick so user can disambiguate`() = runTest {
+        val zip = StubZipLookup(nextResult = ZipDistrictResult.Multiple("TX", listOf(21, 25, 35)))
+        val vm = LocationPickerViewModel(newRepo(), zip, newMembers())
+        vm.selectMode(LocationPickerMode.Lookup)
+        vm.onZipChanged("78701")
+        vm.lookupZip()
+        assertEquals(LocationPickerMode.Pick, vm.uiState.first().mode)
+    }
+
+    @Test
+    fun `selectMode updates the mode field`() = runTest {
+        val vm = LocationPickerViewModel(newRepo(), StubZipLookup(), newMembers())
+        // Default is Pick.
+        assertEquals(LocationPickerMode.Pick, vm.uiState.first().mode)
+        vm.selectMode(LocationPickerMode.Lookup)
+        assertEquals(LocationPickerMode.Lookup, vm.uiState.first().mode)
+    }
+
+    @Test
     fun `zip miss shows Miss hint`() = runTest {
         val zip = StubZipLookup(nextResult = ZipDistrictResult.Miss)
         val vm = LocationPickerViewModel(newRepo(), zip, newMembers())
