@@ -15,8 +15,10 @@ O(1) "is this bill in our cache?" lookup.
 
 from __future__ import annotations
 
+import argparse
 import os
 import sys
+import time
 from datetime import datetime, timezone
 from typing import Any, Iterable  # datetime and timezone imported by main() for current_congress()
 
@@ -24,6 +26,8 @@ from _common import (
     CongressClient,
     LIST_PAGE_LIMIT,
     current_congress,
+    load_members_index,
+    member_legislation_path,
     now_iso,
     parse_member_legislation_item,
     parse_member_summary,
@@ -36,7 +40,10 @@ from _common import (
 # under 5,000 per (member, kind). Both ceilings have ~5x headroom — bump
 # them only if real-world runs hit the limit.
 LIST_PAGES_MAX = 10
-LEG_PAGES_MAX = 50
+LEG_PAGES_MAX = 5  # 5 pages × 250 = 1250 items max per (member, kind).
+                   # Senior senators have thousands of cosponsorships; capping
+                   # at 1250 keeps runtime bounded without hurting app UX
+                   # (we display at most a couple hundred at a time).
 
 
 def list_members(client: CongressClient, congress: int) -> Iterable[dict[str, Any]]:
@@ -87,7 +94,18 @@ def fetch_legislation(
     return items
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--time-budget-minutes", type=int, default=300,
+        help="Soft time budget (default 300 = 5 hours). When elapsed, the "
+             "script finishes the current member, writes outputs, and exits 0. "
+             "GitHub Actions has a 6h hard cap; the default leaves 1h headroom.",
+    )
+    args = parser.parse_args(argv)
+    start_time = time.time()
+    deadline = start_time + args.time_budget_minutes * 60
+
     api_key = os.environ.get("CONGRESS_API_KEY")
     if not api_key:
         print("CONGRESS_API_KEY is not set in the environment.", file=sys.stderr)
@@ -99,9 +117,26 @@ def main() -> int:
     client = CongressClient(api_key)
     members_out: list[dict[str, Any]] = []
 
+    # Resume support: skip members whose per-member files already exist on disk
+    # AND who are present in the existing index (from a prior partial run).
+    existing_index = load_members_index(congress) or {"members": []}
+    existing_by_bid: dict[str, dict[str, Any]] = {
+        m["bioguide_id"]: m for m in existing_index.get("members", [])
+    }
+
+    def _files_present(bid: str) -> bool:
+        return (
+            member_legislation_path(bid, "sponsored").exists()
+            and member_legislation_path(bid, "cosponsored").exists()
+        )
+
     for summary in list_members(client, congress):
         bioguide_id = summary.get("bioguideId") or ""
         if not bioguide_id:
+            continue
+        if bioguide_id in existing_by_bid and _files_present(bioguide_id):
+            members_out.append(existing_by_bid[bioguide_id])
+            print(f"  ~ {bioguide_id} (cached from previous run)")
             continue
         try:
             detail_body = client.get(f"/member/{bioguide_id}")
@@ -133,6 +168,30 @@ def main() -> int:
                 "bills": bills,
             })
 
+        # Write the index incrementally so partial progress is durable
+        # against timeouts. The list ordering matches API enumeration order;
+        # consumers should sort by their own criteria.
+        save_members_index(congress, {
+            "congress": congress,
+            "generated_at": now_iso(),
+            "members": members_out,
+        })
+
+        # Cooperative time-budget check: we always finish the current member
+        # before bailing so on-disk state is consistent. The next re-run will
+        # pick up where we left off via the `existing_by_bid` skip path.
+        if time.time() > deadline:
+            elapsed_min = (time.time() - start_time) / 60
+            print(
+                f"\n[time-budget] Stopping early after ~{elapsed_min:.1f} min; "
+                f"processed {len(members_out)} members so far. "
+                f"Re-run to continue from where this left off.",
+                file=sys.stderr,
+            )
+            break
+
+    # Final flush so `generated_at` reflects completion when we get here
+    # without bailing on the time budget.
     save_members_index(congress, {
         "congress": congress,
         "generated_at": now_iso(),

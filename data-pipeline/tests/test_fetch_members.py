@@ -103,7 +103,7 @@ def test_main_writes_index_and_per_member_files(tmp_path, monkeypatch):
     fake = _FakeClient([list_pages[0]], member_details, sponsored_pages, cosponsored_pages)
     with patch.object(fetch_members, "CongressClient", return_value=fake), \
          patch.object(fetch_members, "current_congress", return_value=119):
-        rc = fetch_members.main()
+        rc = fetch_members.main([])
     assert rc == 0
 
     index_path = tmp_path / "members_119.json"
@@ -150,7 +150,7 @@ def test_main_handles_empty_legislation(tmp_path, monkeypatch):
                        {"Z999999": [{"cosponsoredLegislation": []}]})
     with patch.object(fetch_members, "CongressClient", return_value=fake), \
          patch.object(fetch_members, "current_congress", return_value=119):
-        rc = fetch_members.main()
+        rc = fetch_members.main([])
     assert rc == 0
     sponsored = json.loads((tmp_path / "members" / "Z999999_sponsored.json").read_text())
     assert sponsored["bills"] == []
@@ -158,7 +158,7 @@ def test_main_handles_empty_legislation(tmp_path, monkeypatch):
 
 def test_main_no_api_key_returns_2(monkeypatch):
     monkeypatch.delenv("CONGRESS_API_KEY", raising=False)
-    assert fetch_members.main() == 2
+    assert fetch_members.main([]) == 2
 
 
 def test_fetch_legislation_rejects_unknown_kind():
@@ -166,3 +166,116 @@ def test_fetch_legislation_rejects_unknown_kind():
     fake = _FakeClient([], {}, {}, {})
     with pytest.raises(ValueError, match="unknown kind"):
         fetch_members.fetch_legislation(fake, "X000001", "bogus")
+
+
+def test_main_skips_members_with_existing_files(tmp_path, monkeypatch):
+    """Re-run should skip members whose legislation files already exist."""
+    monkeypatch.setenv("CONGRESS_API_KEY", "stub")
+    monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
+
+    # Pre-seed: one member's index entry + both legislation files.
+    (tmp_path / "members").mkdir(parents=True)
+    cached_member = {
+        "bioguide_id": "C000001",
+        "name": "Cached Member",
+        "party": "D",
+        "state": "CA",
+        "district": 1,
+        "chamber": "house",
+        "photo_url": None,
+        "official_url": None,
+        "sponsored_count": 0,
+        "cosponsored_count": 0,
+        "address": None,
+        "phone": None,
+    }
+    import json as _json
+    (tmp_path / "members_119.json").write_text(_json.dumps({
+        "congress": 119,
+        "generated_at": "x",
+        "members": [cached_member],
+    }))
+    (tmp_path / "members" / "C000001_sponsored.json").write_text("{}")
+    (tmp_path / "members" / "C000001_cosponsored.json").write_text("{}")
+
+    # API returns this same member; the script should NOT re-fetch.
+    list_pages = [{"members": [_member_list_entry("C000001", "Cached Member", "California", 1)]}]
+    fake = _FakeClient([list_pages[0]], {}, {}, {})
+
+    # If the script tried to call /member/{bid}, our fake returns {} which
+    # would yield an empty `member` and an empty parse — easily detectable.
+    with patch.object(fetch_members, "CongressClient", return_value=fake), \
+         patch.object(fetch_members, "current_congress", return_value=119):
+        rc = fetch_members.main([])
+    assert rc == 0
+
+    final = _json.loads((tmp_path / "members_119.json").read_text())
+    # The cached record should be preserved unchanged (name "Cached Member")
+    assert final["members"][0]["name"] == "Cached Member"
+
+
+def test_main_writes_index_after_each_member(tmp_path, monkeypatch):
+    """Index file must be updated incrementally so partial progress is durable."""
+    import json as _json
+    monkeypatch.setenv("CONGRESS_API_KEY", "stub")
+    monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
+
+    list_pages = [{"members": [
+        _member_list_entry("A000001", "Alice", "Nebraska", 3),
+        _member_list_entry("B000002", "Bob", "Michigan", chamber="Senate"),
+    ]}]
+    member_details = {
+        "A000001": _member_detail("A000001", 0, 0, "https://a.house.gov"),
+        "B000002": _member_detail("B000002", 0, 0, "https://b.senate.gov"),
+    }
+    sponsored = {"A000001": [{"sponsoredLegislation": []}], "B000002": [{"sponsoredLegislation": []}]}
+    cosponsored = {"A000001": [{"cosponsoredLegislation": []}], "B000002": [{"cosponsoredLegislation": []}]}
+    fake = _FakeClient([list_pages[0]], member_details, sponsored, cosponsored)
+
+    # Patch save_members_index to capture every call, asserting it's called
+    # at least N+1 times for N members (once per member + final flush).
+    save_calls: list[int] = []
+    real_save = _common.save_members_index
+    def tracked_save(congress, payload):
+        save_calls.append(len(payload["members"]))
+        return real_save(congress, payload)
+    monkeypatch.setattr(_common, "save_members_index", tracked_save)
+    monkeypatch.setattr(fetch_members, "save_members_index", tracked_save)
+
+    with patch.object(fetch_members, "CongressClient", return_value=fake), \
+         patch.object(fetch_members, "current_congress", return_value=119):
+        rc = fetch_members.main([])
+    assert rc == 0
+    # Should be: incremental [1, 2] + final flush [2]
+    assert save_calls[0] == 1
+    assert save_calls[-1] == 2
+
+
+def test_main_respects_time_budget(tmp_path, monkeypatch):
+    """When the time budget expires, processing stops and existing progress persists."""
+    import json as _json
+    monkeypatch.setenv("CONGRESS_API_KEY", "stub")
+    monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
+
+    list_pages = [{"members": [
+        _member_list_entry("A000001", "Alice", "Nebraska", 3),
+        _member_list_entry("B000002", "Bob", "Michigan", chamber="Senate"),
+    ]}]
+    member_details = {
+        "A000001": _member_detail("A000001", 0, 0, "https://a.house.gov"),
+        "B000002": _member_detail("B000002", 0, 0, "https://b.senate.gov"),
+    }
+    sponsored = {"A000001": [{"sponsoredLegislation": []}], "B000002": [{"sponsoredLegislation": []}]}
+    cosponsored = {"A000001": [{"cosponsoredLegislation": []}], "B000002": [{"cosponsoredLegislation": []}]}
+    fake = _FakeClient([list_pages[0]], member_details, sponsored, cosponsored)
+
+    # time_budget_minutes=0 means deadline is the moment we start the loop;
+    # after the first member is processed, the next iteration should bail.
+    with patch.object(fetch_members, "CongressClient", return_value=fake), \
+         patch.object(fetch_members, "current_congress", return_value=119):
+        rc = fetch_members.main(["--time-budget-minutes", "0"])
+    assert rc == 0
+    final = _json.loads((tmp_path / "members_119.json").read_text())
+    # Only the first member should have been processed.
+    assert len(final["members"]) == 1
+    assert final["members"][0]["bioguide_id"] == "A000001"

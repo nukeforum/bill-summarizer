@@ -32,9 +32,10 @@ jobs:
       - name: Fetch members
         env:
           CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
-        run: python data-pipeline/scripts/fetch_members.py
+        run: python data-pipeline/scripts/fetch_members.py --time-budget-minutes 300
 
       - name: Commit updated members
+        if: always()
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
