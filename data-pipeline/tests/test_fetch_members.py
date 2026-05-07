@@ -304,3 +304,63 @@ def test_main_time_budget_only_gates_phase_two(tmp_path, monkeypatch):
         leg_files = sorted(p.name for p in members_dir.iterdir())
         # Either zero pairs or exactly one pair.
         assert len(leg_files) in (0, 2), f"unexpected legislation files: {leg_files}"
+
+
+def test_phase1_only_writes_index_and_skips_legislation(tmp_path, monkeypatch):
+    """--phase1-only publishes the index and exits without touching legislation endpoints."""
+    monkeypatch.setenv("CONGRESS_API_KEY", "stub")
+    monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
+    list_pages = [{"members": [_member_list_entry("A000001", "Alice", "Nebraska", 3)]}]
+    member_details = {"A000001": _member_detail("A000001", 0, 0, "https://a.house.gov")}
+    fake = _FakeClient([list_pages[0]], member_details, {}, {})
+    with patch.object(fetch_members, "CongressClient", return_value=fake), \
+         patch.object(fetch_members, "current_congress", return_value=119):
+        rc = fetch_members.main(["--phase1-only"])
+    assert rc == 0
+    final = json.loads((tmp_path / "members_119.json").read_text())
+    assert [m["bioguide_id"] for m in final["members"]] == ["A000001"]
+    assert fake.legislation_calls == [], "Phase 2 should not run with --phase1-only"
+    assert not (tmp_path / "members").exists() or not any((tmp_path / "members").iterdir())
+
+
+def test_phase2_only_uses_existing_index(tmp_path, monkeypatch):
+    """--phase2-only reads the on-disk index and backfills without re-fetching the roster."""
+    monkeypatch.setenv("CONGRESS_API_KEY", "stub")
+    monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
+    # Pre-seed: index from a prior --phase1-only run.
+    (tmp_path / "members_119.json").write_text(json.dumps({
+        "congress": 119, "generated_at": "x",
+        "members": [{
+            "bioguide_id": "A000001", "name": "Alice", "party": "D", "state": "NE",
+            "district": 3, "chamber": "house", "photo_url": None, "official_url": None,
+            "sponsored_count": 0, "cosponsored_count": 0, "address": None, "phone": None,
+        }],
+    }))
+    sponsored = {"A000001": [{"sponsoredLegislation": []}]}
+    cosponsored = {"A000001": [{"cosponsoredLegislation": []}]}
+    fake = _FakeClient([], {}, sponsored, cosponsored)
+    with patch.object(fetch_members, "CongressClient", return_value=fake), \
+         patch.object(fetch_members, "current_congress", return_value=119):
+        rc = fetch_members.main(["--phase2-only"])
+    assert rc == 0
+    # Roster endpoint never hit — list_pages is empty, would error if Phase 1 ran.
+    assert (tmp_path / "members" / "A000001_sponsored.json").exists()
+    assert (tmp_path / "members" / "A000001_cosponsored.json").exists()
+
+
+def test_phase2_only_with_no_index_returns_2(tmp_path, monkeypatch):
+    """--phase2-only without a pre-existing index is an error."""
+    monkeypatch.setenv("CONGRESS_API_KEY", "stub")
+    monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
+    fake = _FakeClient([], {}, {}, {})
+    with patch.object(fetch_members, "CongressClient", return_value=fake), \
+         patch.object(fetch_members, "current_congress", return_value=119):
+        rc = fetch_members.main(["--phase2-only"])
+    assert rc == 2
+
+
+def test_phase1_and_phase2_only_mutually_exclusive(monkeypatch):
+    monkeypatch.setenv("CONGRESS_API_KEY", "stub")
+    rc = fetch_members.main(["--phase1-only", "--phase2-only"])
+    assert rc == 2
+

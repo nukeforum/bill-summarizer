@@ -109,7 +109,23 @@ def main(argv: list[str] | None = None) -> int:
              "during Phase 2, the script writes outputs and exits 0. GitHub "
              "Actions has a 6h hard cap; the default leaves 1h headroom.",
     )
+    parser.add_argument(
+        "--phase1-only", action="store_true",
+        help="Run only Phase 1 (publish the members index) and exit. Use this "
+             "when the workflow commits Phase 1 output before invoking the "
+             "script a second time for Phase 2 — that pattern keeps the index "
+             "on origin within ~10 minutes regardless of Phase 2 duration.",
+    )
+    parser.add_argument(
+        "--phase2-only", action="store_true",
+        help="Run only Phase 2 (backfill sponsored/cosponsored legislation). "
+             "Phase 2 reads the existing index from disk, so a prior Phase 1 "
+             "(or a committed members_NNN.json) must be in place.",
+    )
     args = parser.parse_args(argv)
+    if args.phase1_only and args.phase2_only:
+        print("--phase1-only and --phase2-only are mutually exclusive.", file=sys.stderr)
+        return 2
     start_time = time.time()
     deadline = start_time + args.time_budget_minutes * 60
 
@@ -121,52 +137,71 @@ def main(argv: list[str] | None = None) -> int:
     congress = current_congress(datetime.now(timezone.utc))
     client = CongressClient(api_key)
 
+    run_phase1 = not args.phase2_only
+    run_phase2 = not args.phase1_only
+
     existing_index = load_members_index(congress) or {"members": []}
     existing_by_bid: dict[str, dict[str, Any]] = {
         m["bioguide_id"]: m for m in existing_index.get("members", [])
     }
+    members_out: list[dict[str, Any]] = list(existing_index.get("members", []))
 
     # ---------- Phase 1: fast — member roster + detail only ----------
-    print(f"Phase 1: fetching member index for the {congress}th Congress")
-    members_out: list[dict[str, Any]] = []
-    for summary in list_members(client, congress):
-        bioguide_id = summary.get("bioguideId") or ""
-        if not bioguide_id:
-            continue
-        try:
-            detail_body = client.get(f"/member/{bioguide_id}")
-            detail = detail_body.get("member") or {}
-            # Detail body wins on every overlapping key; list summary supplies fields
-            # the detail endpoint sometimes omits (e.g., depiction, terms). The order
-            # matters — Congress.gov detail responses are richer for most fields but
-            # can drop these specific ones intermittently.
-            merged: dict[str, Any] = {**summary, **detail}
-            parsed = parse_member_summary(merged)
-        except Exception as exc:  # noqa: BLE001
-            # Fall back to cached record from previous run if we have one;
-            # otherwise drop the member silently.
-            if bioguide_id in existing_by_bid:
-                parsed = existing_by_bid[bioguide_id]
-                print(
-                    f"  ~ {bioguide_id}: detail fetch failed ({exc}); reusing cached entry",
-                    file=sys.stderr,
-                )
-            else:
-                print(
-                    f"  ! skipping {bioguide_id}: {type(exc).__name__}: {exc}",
-                    file=sys.stderr,
-                )
+    if not run_phase1:
+        print(
+            f"Skipping Phase 1; using cached index with {len(members_out)} members."
+        )
+        if not members_out:
+            print(
+                "ERROR: --phase2-only requested but no existing index was found.",
+                file=sys.stderr,
+            )
+            return 2
+    else:
+        print(f"Phase 1: fetching member index for the {congress}th Congress")
+        members_out = []
+        for summary in list_members(client, congress):
+            bioguide_id = summary.get("bioguideId") or ""
+            if not bioguide_id:
                 continue
-        members_out.append(parsed)
-        print(f"  + {bioguide_id} {parsed['name']} ({parsed['party']}-{parsed['state']})")
+            try:
+                detail_body = client.get(f"/member/{bioguide_id}")
+                detail = detail_body.get("member") or {}
+                # Detail body wins on every overlapping key; list summary supplies
+                # fields the detail endpoint sometimes omits (e.g. depiction, terms).
+                # The order matters — Congress.gov detail responses are richer for
+                # most fields but can drop these specific ones intermittently.
+                merged: dict[str, Any] = {**summary, **detail}
+                parsed = parse_member_summary(merged)
+            except Exception as exc:  # noqa: BLE001
+                # Fall back to cached record from previous run if we have one;
+                # otherwise drop the member silently.
+                if bioguide_id in existing_by_bid:
+                    parsed = existing_by_bid[bioguide_id]
+                    print(
+                        f"  ~ {bioguide_id}: detail fetch failed ({exc}); reusing cached entry",
+                        file=sys.stderr,
+                    )
+                else:
+                    print(
+                        f"  ! skipping {bioguide_id}: {type(exc).__name__}: {exc}",
+                        file=sys.stderr,
+                    )
+                    continue
+            members_out.append(parsed)
+            print(f"  + {bioguide_id} {parsed['name']} ({parsed['party']}-{parsed['state']})")
 
-    # Publish the index. The Reps tab works as soon as this lands.
-    save_members_index(congress, {
-        "congress": congress,
-        "generated_at": now_iso(),
-        "members": members_out,
-    })
-    print(f"Phase 1 done: index has {len(members_out)} members")
+        # Publish the index. The Reps tab works as soon as this lands.
+        save_members_index(congress, {
+            "congress": congress,
+            "generated_at": now_iso(),
+            "members": members_out,
+        })
+        print(f"Phase 1 done: index has {len(members_out)} members")
+
+    if not run_phase2:
+        print("Skipping Phase 2 (--phase1-only).")
+        return 0
 
     # ---------- Phase 2: slow — per-member legislation backfill ----------
     print("\nPhase 2: backfilling sponsored/cosponsored legislation")

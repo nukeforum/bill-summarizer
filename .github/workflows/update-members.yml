@@ -29,21 +29,44 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r data-pipeline/requirements.txt
 
-      - name: Fetch members
-        env:
-          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
-        run: python data-pipeline/scripts/fetch_members.py --time-budget-minutes 300
-
-      - name: Commit updated members
-        if: always()
+      - name: Configure git for bot commits
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data/members_*.json docs/data/members/*.json
+
+      - name: Phase 1 — fetch member index
+        env:
+          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
+        run: python data-pipeline/scripts/fetch_members.py --phase1-only
+
+      - name: Commit Phase 1 (members index)
+        if: always()
+        run: |
+          set -euo pipefail
+          git add docs/data/members_*.json
           if git diff --staged --quiet; then
-            echo "No changes — skipping commit."
+            echo "No index changes — skipping commit."
             exit 0
           fi
-          git commit -m "Update members [bot]"
+          git commit -m "Update members index [bot]"
+          git push
+
+      - name: Phase 2 — backfill sponsored / cosponsored legislation
+        env:
+          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
+        run: python data-pipeline/scripts/fetch_members.py --phase2-only --time-budget-minutes 280
+
+      - name: Commit Phase 2 (members legislation)
+        if: always()
+        run: |
+          set -euo pipefail
+          # Pull anything the index commit may have raced with (rare but cheap).
+          git pull --rebase origin main || true
+          git add docs/data/members/*.json docs/data/members_*.json
+          if git diff --staged --quiet; then
+            echo "No legislation changes — skipping commit."
+            exit 0
+          fi
+          git commit -m "Update members legislation [bot]"
           git push
