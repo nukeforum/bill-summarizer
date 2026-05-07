@@ -2,8 +2,8 @@ package com.informedcitizen.ui.reps
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.informedcitizen.data.repository.LocationPreferenceRepository
 import com.informedcitizen.data.repository.MemberRepository
+import com.informedcitizen.data.repository.SavedRepsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -18,7 +18,7 @@ internal fun computeCurrentCongress(today: LocalDate = LocalDate.now()): Int =
 
 @HiltViewModel
 class RepsListViewModel @Inject constructor(
-    private val prefs: LocationPreferenceRepository,
+    private val savedReps: SavedRepsRepository,
     private val members: MemberRepository,
 ) : ViewModel() {
 
@@ -29,26 +29,29 @@ class RepsListViewModel @Inject constructor(
     internal var congressProvider: () -> Int = ::computeCurrentCongress
 
     init {
-        observeLocation()
+        observeSavedReps()
     }
 
-    private fun observeLocation() {
+    private fun observeSavedReps() {
         viewModelScope.launch {
-            prefs.location.collectLatest { saved ->
-                val state = saved.stateCode
-                if (state == null) {
+            savedReps.savedIds.collectLatest { ids ->
+                if (ids.isEmpty()) {
                     _uiState.value = RepsListUiState.NoLocation
                     return@collectLatest
                 }
                 _uiState.value = RepsListUiState.Loading
                 _uiState.value = try {
-                    val out = members.findRepsForLocation(
+                    val out = members.findRepsByIds(
                         congress = congressProvider(),
-                        stateCode = state,
-                        district = saved.district,
+                        bioguideIds = ids,
                     )
-                    if (saved.district != null && out.house.isEmpty()) {
-                        RepsListUiState.StaleDistrict(state, saved.district)
+                    val foundIds = (out.house + out.senators).map { it.bioguideId }.toSet()
+                    val missing = ids - foundIds
+                    if (missing.isNotEmpty()) {
+                        // Saved IDs that no longer appear in the index — most likely
+                        // a Congress rollover (retirement, redistricting, new
+                        // election cycle). Prompt the user to refresh their picks.
+                        RepsListUiState.StaleSavedReps
                     } else {
                         RepsListUiState.Loaded(out.house, out.senators)
                     }

@@ -5,6 +5,12 @@ sealed interface DistrictHint {
     data class Single(val district: Int) : DistrictHint
     data class Multiple(val districts: List<Int>) : DistrictHint
     data object Miss : DistrictHint
+    /** Save tapped but the index couldn't resolve any reps (offline / empty state). */
+    data object SaveFailed : DistrictHint
+}
+
+sealed interface LocationPickerEvent {
+    data object Saved : LocationPickerEvent
 }
 
 data class LocationPickerUiState(

@@ -3,9 +3,9 @@ package com.informedcitizen.ui.reps
 import com.informedcitizen.data.model.Member
 import com.informedcitizen.data.model.MemberLegislation
 import com.informedcitizen.data.model.MembersIndex
-import com.informedcitizen.data.repository.LocationPreferenceRepository
 import com.informedcitizen.data.repository.MemberRepository
 import com.informedcitizen.data.repository.RepsForLocation
+import com.informedcitizen.data.repository.SavedRepsRepository
 import com.informedcitizen.data.zipcrosswalk.ZipDistrictLookup
 import com.informedcitizen.data.zipcrosswalk.ZipDistrictResult
 import com.informedcitizen.testutil.InMemoryPreferencesDataStore
@@ -34,17 +34,29 @@ private class StubZipLookup(
 
 private class PickerStubMemberRepository(
     private val index: MembersIndex? = null,
+    private var resolvedReps: RepsForLocation = RepsForLocation(emptyList(), emptyList()),
 ) : MemberRepository {
     override suspend fun findRepsForLocation(
         congress: Int,
         stateCode: String,
         district: Int?,
+    ): RepsForLocation = resolvedReps
+
+    override suspend fun findRepsByIds(
+        congress: Int,
+        bioguideIds: Set<String>,
     ): RepsForLocation = error("unused")
+
     override suspend fun getMember(bioguideId: String, congress: Int): Member? = null
     override suspend fun getSponsored(bioguideId: String): MemberLegislation? = null
     override suspend fun getCosponsored(bioguideId: String): MemberLegislation? = null
     override suspend fun getIndex(congress: Int): MembersIndex? = index
+
+    fun setResolved(reps: RepsForLocation) { resolvedReps = reps }
 }
+
+private fun aMember(bid: String, chamber: String = "house") =
+    Member(bid, "Name $bid", "D", "TX", 21, chamber, null, null, 1, 1, null, null)
 
 @OptIn(ExperimentalCoroutinesApi::class)
 class LocationPickerViewModelTest {
@@ -52,8 +64,11 @@ class LocationPickerViewModelTest {
     @Before fun setup() { Dispatchers.setMain(UnconfinedTestDispatcher()) }
     @After fun tearDown() { Dispatchers.resetMain() }
 
-    private fun newRepo() = LocationPreferenceRepository(InMemoryPreferencesDataStore())
-    private fun newMembers(index: MembersIndex? = null) = PickerStubMemberRepository(index)
+    private fun newRepo() = SavedRepsRepository(InMemoryPreferencesDataStore())
+    private fun newMembers(
+        index: MembersIndex? = null,
+        resolved: RepsForLocation = RepsForLocation(emptyList(), emptyList()),
+    ) = PickerStubMemberRepository(index, resolved)
 
     @Test
     fun `selecting a state populates districts`() = runTest {
@@ -125,15 +140,42 @@ class LocationPickerViewModelTest {
     }
 
     @Test
-    fun `save writes to prefs`() = runTest {
+    fun `save writes resolved bioguide ids`() = runTest {
         val repo = newRepo()
-        val vm = LocationPickerViewModel(repo, StubZipLookup(), newMembers())
+        val resolved = RepsForLocation(
+            house = listOf(aMember("H1", "house")),
+            senators = listOf(aMember("S1", "senate"), aMember("S2", "senate")),
+        )
+        val vm = LocationPickerViewModel(repo, StubZipLookup(), newMembers(resolved = resolved))
         vm.selectState("TX")
         vm.selectDistrict(21)
         vm.save()
-        val saved = repo.location.first()
-        assertEquals("TX", saved.stateCode)
-        assertEquals(21, saved.district)
+        assertEquals(setOf("H1", "S1", "S2"), repo.savedIds.first())
+    }
+
+    @Test
+    fun `save with empty resolution surfaces SaveFailed and writes nothing`() = runTest {
+        val repo = newRepo()
+        val vm = LocationPickerViewModel(repo, StubZipLookup(), newMembers(/* resolved=empty */))
+        vm.selectState("TX")
+        vm.selectDistrict(21)
+        vm.save()
+        assertTrue(repo.savedIds.first().isEmpty())
+        assertEquals(DistrictHint.SaveFailed, vm.uiState.first().districtHint)
+    }
+
+    @Test
+    fun `save emits Saved event after persisting`() = runTest {
+        val repo = newRepo()
+        val resolved = RepsForLocation(
+            house = listOf(aMember("H1", "house")),
+            senators = emptyList(),
+        )
+        val vm = LocationPickerViewModel(repo, StubZipLookup(), newMembers(resolved = resolved))
+        vm.selectState("DC")  // delegate, atLarge → save without district
+        vm.save()
+        val event = vm.events.first()
+        assertEquals(LocationPickerEvent.Saved, event)
     }
 
     @Test
@@ -142,17 +184,6 @@ class LocationPickerViewModelTest {
         // The flag defaults to true; wait until the init coroutine flips it.
         val s = vm.uiState.first { !it.isZipLookupAvailable }
         assertFalse(s.isZipLookupAvailable)
-    }
-
-    @Test
-    fun `save at-large state writes district 0`() = runTest {
-        val repo = newRepo()
-        val vm = LocationPickerViewModel(repo, StubZipLookup(), newMembers())
-        vm.selectState("DC")
-        vm.save()
-        val saved = repo.location.first()
-        assertEquals("DC", saved.stateCode)
-        assertEquals(0, saved.district)
     }
 
     @Test

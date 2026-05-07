@@ -48,6 +48,10 @@ private class DetailStubMemberRepository(
         stateCode: String,
         district: Int?,
     ): RepsForLocation = error("unused")
+    override suspend fun findRepsByIds(
+        congress: Int,
+        bioguideIds: Set<String>,
+    ): RepsForLocation = error("unused")
     override suspend fun getMember(bioguideId: String, congress: Int): Member? =
         memberById[bioguideId]
     override suspend fun getSponsored(bioguideId: String): MemberLegislation? =

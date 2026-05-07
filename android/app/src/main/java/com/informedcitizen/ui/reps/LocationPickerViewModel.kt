@@ -3,14 +3,17 @@ package com.informedcitizen.ui.reps
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.informedcitizen.data.model.MembersIndex
-import com.informedcitizen.data.repository.LocationPreferenceRepository
 import com.informedcitizen.data.repository.MemberRepository
+import com.informedcitizen.data.repository.SavedRepsRepository
 import com.informedcitizen.data.zipcrosswalk.ZipDistrictLookup
 import com.informedcitizen.data.zipcrosswalk.ZipDistrictResult
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.channels.Channel
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import java.time.LocalDate
@@ -38,7 +41,7 @@ private val HOUSE_DISTRICT_COUNTS: Map<String, Int> = mapOf(
 
 @HiltViewModel
 class LocationPickerViewModel @Inject constructor(
-    private val prefs: LocationPreferenceRepository,
+    private val savedReps: SavedRepsRepository,
     private val zipLookup: ZipDistrictLookup,
     private val members: MemberRepository,
 ) : ViewModel() {
@@ -48,6 +51,11 @@ class LocationPickerViewModel @Inject constructor(
 
     private val _uiState = MutableStateFlow(LocationPickerUiState())
     val uiState: StateFlow<LocationPickerUiState> = _uiState.asStateFlow()
+
+    // One-shot channel for navigation events. The screen pops back on Saved.
+    // Conflated so a fast re-navigation doesn't deliver stale events.
+    private val _events = Channel<LocationPickerEvent>(Channel.CONFLATED)
+    val events: Flow<LocationPickerEvent> = _events.receiveAsFlow()
 
     private var pendingDistrict: Int? = null
     private var loadedIndex: MembersIndex? = null
@@ -152,8 +160,31 @@ class LocationPickerViewModel @Inject constructor(
 
     fun save() {
         val state = _uiState.value.selectedState ?: return
+        // pendingDistrict is 0 for at-large/delegate, so it's safe to pass through.
+        // For non-at-large states the UI gates save behind canSave (= district picked),
+        // so a null here means at-large; pass null and let the repo filter return all.
+        val district = pendingDistrict
         viewModelScope.launch {
-            prefs.set(stateCode = state, district = pendingDistrict)
+            val resolved = runCatching {
+                members.findRepsForLocation(
+                    congress = congressProvider(),
+                    stateCode = state,
+                    district = district,
+                )
+            }.getOrNull()
+            val ids = buildSet {
+                resolved?.house?.forEach { add(it.bioguideId) }
+                resolved?.senators?.forEach { add(it.bioguideId) }
+            }
+            // No representatives resolved means the index is unavailable or the
+            // chosen state/district has no members on file. Don't persist an
+            // empty save — surface a hint so the user knows to retry.
+            if (ids.isEmpty()) {
+                _uiState.update { it.copy(districtHint = DistrictHint.SaveFailed) }
+                return@launch
+            }
+            savedReps.set(ids)
+            _events.trySend(LocationPickerEvent.Saved)
         }
     }
 

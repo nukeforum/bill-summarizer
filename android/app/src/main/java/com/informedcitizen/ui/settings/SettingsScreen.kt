@@ -12,7 +12,6 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -23,7 +22,6 @@ import androidx.compose.material3.SegmentedButtonDefaults
 import androidx.compose.material3.SingleChoiceSegmentedButtonRow
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -52,6 +50,7 @@ fun SettingsScreen(
 ) {
     val preference by viewModel.preference.collectAsStateWithLifecycle()
     val crashReportingEnabled by viewModel.crashReportingEnabled.collectAsStateWithLifecycle()
+    val hasSavedReps by viewModel.hasSavedReps.collectAsStateWithLifecycle()
 
     Scaffold(
         modifier = modifier,
@@ -69,10 +68,11 @@ fun SettingsScreen(
         SettingsContent(
             preference = preference,
             crashReportingEnabled = crashReportingEnabled,
+            hasSavedReps = hasSavedReps,
             innerPadding = innerPadding,
             onPreferenceChange = viewModel::setPreference,
             onCrashReportingEnabledChange = viewModel::setCrashReportingEnabled,
-            onForgetLocation = viewModel::forgetLocation,
+            onForgetSavedReps = viewModel::forgetSavedReps,
             onCalendarClick = onCalendarClick,
         )
     }
@@ -82,10 +82,11 @@ fun SettingsScreen(
 private fun SettingsContent(
     preference: ThemePreference,
     crashReportingEnabled: Boolean,
+    hasSavedReps: Boolean,
     innerPadding: PaddingValues,
     onPreferenceChange: (ThemePreference) -> Unit,
     onCrashReportingEnabledChange: (Boolean) -> Unit,
-    onForgetLocation: () -> Unit,
+    onForgetSavedReps: () -> Unit,
     onCalendarClick: () -> Unit,
 ) {
     Column(modifier = Modifier.fillMaxWidth().padding(innerPadding)) {
@@ -113,16 +114,50 @@ private fun SettingsContent(
             supporting = "When the House and Senate are in session.",
             onClick = onCalendarClick,
         )
-        HorizontalDivider()
-        TextButton(onClick = onForgetLocation) {
-            Text("Forget my saved location")
-        }
+        SectionHeader("Your representatives")
         Text(
-            "Clears the state and district stored on this device.",
-            style = MaterialTheme.typography.bodySmall,
+            "We store the IDs of your three representatives on this device so " +
+                "we can show you the bills they've sponsored. Your home address " +
+                "and ZIP are never saved.",
+            style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             modifier = Modifier.padding(horizontal = 20.dp),
         )
+        ForgetSavedRepsRow(
+            enabled = hasSavedReps,
+            onClick = onForgetSavedReps,
+        )
+    }
+}
+
+@Composable
+private fun ForgetSavedRepsRow(enabled: Boolean, onClick: () -> Unit) {
+    val color =
+        if (enabled) MaterialTheme.colorScheme.error
+        else MaterialTheme.colorScheme.onSurfaceVariant
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .let { if (enabled) it.clickable(onClick = onClick) else it }
+            .padding(horizontal = 20.dp, vertical = 16.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Column(modifier = Modifier.weight(1f)) {
+            Text(
+                text = "Forget my representatives",
+                style = MaterialTheme.typography.bodyLarge,
+                color = color,
+            )
+            Text(
+                text = if (enabled) {
+                    "Removes them from this device. The picker will re-prompt next time you open the Reps tab."
+                } else {
+                    "No representatives are saved on this device yet."
+                },
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
     }
 }
 

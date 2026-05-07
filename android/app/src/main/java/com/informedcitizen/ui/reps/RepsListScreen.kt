@@ -41,13 +41,13 @@ fun RepsListScreen(
             RepsListUiState.Loading -> CircularProgressIndicator()
             RepsListUiState.NoLocation ->
                 Text("Set your location to see your representatives.")
-            is RepsListUiState.StaleDistrict -> {
+            RepsListUiState.StaleSavedReps -> {
                 Text(
-                    "We don't see a House representative for ${s.stateCode}-${s.district} in this Congress.",
+                    "Your saved representatives aren't in the current Congress.",
                     style = MaterialTheme.typography.bodyLarge,
                 )
                 Text(
-                    "Districts shift after redistricting. Pick a new district to continue.",
+                    "This usually means a new election cycle or redistricting. Pick again to refresh them.",
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )

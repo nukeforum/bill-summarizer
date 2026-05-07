@@ -42,6 +42,18 @@ class CachedMemberRepository @Inject constructor(
         return RepsForLocation(house = house, senators = senators)
     }
 
+    override suspend fun findRepsByIds(
+        congress: Int,
+        bioguideIds: Set<String>,
+    ): RepsForLocation {
+        if (bioguideIds.isEmpty()) return RepsForLocation(emptyList(), emptyList())
+        val index = loadIndex(congress)
+        val matched = index.members.filter { it.bioguideId in bioguideIds }
+        val house = matched.filter { it.chamber == "house" }
+        val senators = matched.filter { it.chamber == "senate" }
+        return RepsForLocation(house = house, senators = senators)
+    }
+
     override suspend fun getMember(bioguideId: String, congress: Int): Member? {
         val index = runCatching { loadIndex(congress) }.getOrNull() ?: return null
         return index.members.firstOrNull { it.bioguideId == bioguideId }

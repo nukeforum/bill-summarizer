@@ -4,12 +4,13 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.informedcitizen.crash.CrashReporter
 import com.informedcitizen.data.repository.CrashReportingPreferenceRepository
-import com.informedcitizen.data.repository.LocationPreferenceRepository
+import com.informedcitizen.data.repository.SavedRepsRepository
 import com.informedcitizen.data.repository.ThemePreferenceRepository
 import com.informedcitizen.theme.ThemePreference
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -19,7 +20,7 @@ class SettingsViewModel @Inject constructor(
     private val themePrefs: ThemePreferenceRepository,
     private val crashPrefs: CrashReportingPreferenceRepository,
     private val crashReporter: CrashReporter,
-    private val locationPrefs: LocationPreferenceRepository,
+    private val savedReps: SavedRepsRepository,
 ) : ViewModel() {
 
     // Eagerly so the first DataStore value lands before the user can interact
@@ -30,6 +31,10 @@ class SettingsViewModel @Inject constructor(
         .stateIn(viewModelScope, SharingStarted.Eagerly, ThemePreference.DEFAULT)
 
     val crashReportingEnabled: StateFlow<Boolean> = crashPrefs.enabled
+        .stateIn(viewModelScope, SharingStarted.Eagerly, false)
+
+    val hasSavedReps: StateFlow<Boolean> = savedReps.savedIds
+        .map { it.isNotEmpty() }
         .stateIn(viewModelScope, SharingStarted.Eagerly, false)
 
     fun setPreference(pref: ThemePreference) {
@@ -46,7 +51,7 @@ class SettingsViewModel @Inject constructor(
         }
     }
 
-    fun forgetLocation() {
-        viewModelScope.launch { locationPrefs.forget() }
+    fun forgetSavedReps() {
+        viewModelScope.launch { savedReps.forget() }
     }
 }

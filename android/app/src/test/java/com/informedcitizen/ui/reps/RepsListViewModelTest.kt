@@ -3,9 +3,9 @@ package com.informedcitizen.ui.reps
 import com.informedcitizen.data.model.Member
 import com.informedcitizen.data.model.MemberLegislation
 import com.informedcitizen.data.model.MembersIndex
-import com.informedcitizen.data.repository.LocationPreferenceRepository
 import com.informedcitizen.data.repository.MemberRepository
 import com.informedcitizen.data.repository.RepsForLocation
+import com.informedcitizen.data.repository.SavedRepsRepository
 import com.informedcitizen.testutil.InMemoryPreferencesDataStore
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -28,6 +28,11 @@ private class StubMemberRepository(
         congress: Int,
         stateCode: String,
         district: Int?,
+    ): RepsForLocation = error("unused in this VM")
+
+    override suspend fun findRepsByIds(
+        congress: Int,
+        bioguideIds: Set<String>,
     ): RepsForLocation {
         throwOnNext?.let { throw it }
         return nextResult
@@ -42,8 +47,8 @@ private class StubMemberRepository(
     fun setError(t: Throwable) { throwOnNext = t }
 }
 
-private fun aMember(bid: String) =
-    Member(bid, "Name $bid", "D", "TX", 21, "house", null, null, 1, 1, null, null)
+private fun aMember(bid: String, chamber: String = "house") =
+    Member(bid, "Name $bid", "D", "TX", 21, chamber, null, null, 1, 1, null, null)
 
 @OptIn(ExperimentalCoroutinesApi::class)
 class RepsListViewModelTest {
@@ -51,68 +56,70 @@ class RepsListViewModelTest {
     @Before fun setup() { Dispatchers.setMain(UnconfinedTestDispatcher()) }
     @After fun tearDown() { Dispatchers.resetMain() }
 
-    private fun newPrefsRepo() = LocationPreferenceRepository(InMemoryPreferencesDataStore())
+    private fun newPrefsRepo() = SavedRepsRepository(InMemoryPreferencesDataStore())
 
     @Test
-    fun `emits NoLocation when state code is null`() = runTest {
-        val prefs = newPrefsRepo()  // default: no location
+    fun `emits NoLocation when no ids saved`() = runTest {
+        val prefs = newPrefsRepo()  // default: empty
         val members = StubMemberRepository()
         val vm = RepsListViewModel(prefs, members).also { it.congressProvider = { 119 } }
-        // Initial state is Loading; once flow emits the SavedLocation(null), we expect NoLocation.
         val firstNonLoading = vm.uiState.first { it !is RepsListUiState.Loading }
         assertEquals(RepsListUiState.NoLocation, firstNonLoading)
     }
 
     @Test
-    fun `loads reps when location is saved`() = runTest {
+    fun `loads reps when ids resolve in index`() = runTest {
         val prefs = newPrefsRepo()
-        prefs.set(stateCode = "TX", district = 21)
+        prefs.set(setOf("H1", "S1", "S2"))
         val members = StubMemberRepository(
             RepsForLocation(
-                house = listOf(aMember("A1")),
-                senators = listOf(aMember("S1"), aMember("S2")),
+                house = listOf(aMember("H1", "house")),
+                senators = listOf(aMember("S1", "senate"), aMember("S2", "senate")),
             ),
         )
         val vm = RepsListViewModel(prefs, members).also { it.congressProvider = { 119 } }
         val loaded = vm.uiState.first { it is RepsListUiState.Loaded } as RepsListUiState.Loaded
-        assertEquals(listOf("A1"), loaded.house.map { it.bioguideId })
+        assertEquals(listOf("H1"), loaded.house.map { it.bioguideId })
         assertEquals(setOf("S1", "S2"), loaded.senators.map { it.bioguideId }.toSet())
     }
 
     @Test
-    fun `emits StaleDistrict when saved district has no house match`() = runTest {
+    fun `emits StaleSavedReps when any saved id is missing from index`() = runTest {
         val prefs = newPrefsRepo()
-        prefs.set(stateCode = "CA", district = 99)  // Hypothetical post-redistricting non-existent district
+        prefs.set(setOf("H1", "S1", "S2"))
+        // Index only resolves 2 of the 3 saved ids — H1 retired or redistricted.
         val members = StubMemberRepository(
             RepsForLocation(
-                house = emptyList(),  // No match for CA-99
-                senators = listOf(aMember("S1")),  // Senators still found
+                house = emptyList(),
+                senators = listOf(aMember("S1", "senate"), aMember("S2", "senate")),
             ),
         )
         val vm = RepsListViewModel(prefs, members).also { it.congressProvider = { 119 } }
-        val s = vm.uiState.first { it is RepsListUiState.StaleDistrict } as RepsListUiState.StaleDistrict
-        assertEquals("CA", s.stateCode)
-        assertEquals(99, s.district)
+        val s = vm.uiState.first { it is RepsListUiState.StaleSavedReps || it is RepsListUiState.Loaded }
+        assertEquals(RepsListUiState.StaleSavedReps, s)
     }
 
     @Test
-    fun `still emits Loaded when district is null and house is empty`() = runTest {
-        // E.g., user picked DC (delegate-only) — house may be empty by design.
+    fun `delegate save with single id resolves cleanly`() = runTest {
+        // DC delegate has no senators — saving only the delegate's bioguide id is valid.
         val prefs = newPrefsRepo()
-        prefs.set(stateCode = "DC", district = null)
+        prefs.set(setOf("D1"))
         val members = StubMemberRepository(
-            RepsForLocation(house = emptyList(), senators = emptyList()),
+            RepsForLocation(
+                house = listOf(aMember("D1", "house")),
+                senators = emptyList(),
+            ),
         )
         val vm = RepsListViewModel(prefs, members).also { it.congressProvider = { 119 } }
-        val s = vm.uiState.first { it is RepsListUiState.Loaded || it is RepsListUiState.StaleDistrict }
-        // Expect Loaded, not StaleDistrict — the user didn't save a district.
-        assertEquals(RepsListUiState.Loaded(emptyList(), emptyList()), s)
+        val s = vm.uiState.first { it is RepsListUiState.Loaded } as RepsListUiState.Loaded
+        assertEquals(listOf("D1"), s.house.map { it.bioguideId })
+        assertTrue(s.senators.isEmpty())
     }
 
     @Test
     fun `emits Error when repository throws`() = runTest {
         val prefs = newPrefsRepo()
-        prefs.set(stateCode = "TX", district = 21)
+        prefs.set(setOf("H1"))
         val members = StubMemberRepository().also { it.setError(RuntimeException("boom")) }
         val vm = RepsListViewModel(prefs, members).also { it.congressProvider = { 119 } }
         val err = vm.uiState.first { it is RepsListUiState.Error } as RepsListUiState.Error

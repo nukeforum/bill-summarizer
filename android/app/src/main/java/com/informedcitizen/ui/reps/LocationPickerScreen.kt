@@ -22,6 +22,7 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -52,6 +53,14 @@ fun LocationPickerScreen(
     val state by viewModel.uiState.collectAsStateWithLifecycle()
     val context = LocalContext.current
     var stateExpanded by remember { mutableStateOf(false) }
+
+    LaunchedEffect(viewModel) {
+        viewModel.events.collect { event ->
+            when (event) {
+                LocationPickerEvent.Saved -> onSaved()
+            }
+        }
+    }
 
     Column(
         modifier = modifier
@@ -140,6 +149,7 @@ fun LocationPickerScreen(
                     "Detected district ${hint.district}.",
                     style = MaterialTheme.typography.bodyMedium,
                 )
+                DistrictHint.SaveFailed -> {}
                 DistrictHint.None -> {}
             }
         } else {
@@ -153,11 +163,16 @@ fun LocationPickerScreen(
             Text("Look up on House.gov")
         }
 
+        if (state.districtHint == DistrictHint.SaveFailed) {
+            Text(
+                "Couldn't load representatives for that location. Check your connection and try again.",
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.error,
+            )
+        }
+
         Button(
-            onClick = {
-                viewModel.save()
-                onSaved()
-            },
+            onClick = { viewModel.save() },
             enabled = state.canSave,
         ) { Text("Save") }
     }

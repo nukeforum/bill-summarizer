@@ -13,6 +13,14 @@ interface MemberRepository {
         district: Int?,
     ): RepsForLocation
 
+    /**
+     * Resolves saved bioguide IDs against the current Congress's index.
+     * Members are partitioned by chamber. IDs not present in the index are
+     * dropped (signalling a stale save, which the ViewModel detects by
+     * counting). The order within each list mirrors the index order.
+     */
+    suspend fun findRepsByIds(congress: Int, bioguideIds: Set<String>): RepsForLocation
+
     suspend fun getMember(bioguideId: String, congress: Int): Member?
 
     suspend fun getSponsored(bioguideId: String): MemberLegislation?
