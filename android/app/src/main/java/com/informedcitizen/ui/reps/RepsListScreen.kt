@@ -2,19 +2,25 @@ package com.informedcitizen.ui.reps
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
-import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -29,6 +35,7 @@ fun RepsListScreen(
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
     val scroll = rememberScrollState()
+
     Column(
         modifier = modifier
             .fillMaxSize()
@@ -36,11 +43,31 @@ fun RepsListScreen(
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
-        Text("Your representatives", style = MaterialTheme.typography.headlineSmall)
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Text(
+                modifier = Modifier.weight(1f),
+                text = "Your representatives",
+                style = MaterialTheme.typography.headlineSmall,
+                textAlign = TextAlign.Start
+            )
+
+            if (state is RepsListUiState.Loaded) {
+                IconButton(
+                    onClick = onChangeLocation
+                ) {
+                    Icon(Icons.Filled.Delete, contentDescription = "Delete")
+                }
+            }
+        }
+
         when (val s = state) {
             RepsListUiState.Loading -> CircularProgressIndicator()
             RepsListUiState.NoLocation ->
                 Text("Set your location to see your representatives.")
+
             RepsListUiState.StaleSavedReps -> {
                 Text(
                     "Your saved representatives aren't in the current Congress.",
@@ -53,21 +80,43 @@ fun RepsListScreen(
                 )
                 Button(onClick = onChangeLocation) { Text("Update my location") }
             }
+
             is RepsListUiState.Loaded -> {
-                s.house.forEach { m ->
-                    MemberCard(member = m, onClick = { onMemberClick(m.bioguideId) })
-                }
-                s.senators.forEach { m ->
-                    MemberCard(member = m, onClick = { onMemberClick(m.bioguideId) })
-                }
-                if (s.house.isEmpty() && s.senators.isEmpty()) {
+                Text(
+                    "Senators",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+
+                if (s.senators.isEmpty()) {
                     Text(
-                        "We couldn't find members for your saved location. Try changing it.",
-                        style = MaterialTheme.typography.bodyMedium,
+                        "Your senators' data can't be located",
+                        style = MaterialTheme.typography.bodyMedium
                     )
+                } else {
+                    s.senators.forEach { m ->
+                        MemberCard(member = m, onClick = { onMemberClick(m.bioguideId) })
+                    }
                 }
-                TextButton(onClick = onChangeLocation) { Text("Change my location") }
+
+                Text(
+                    "House Representatives",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+
+                if (s.house.isEmpty()) {
+                    Text(
+                        "Your House representatives' data can't be located",
+                        style = MaterialTheme.typography.bodyMedium
+                    )
+                } else {
+                    s.house.forEach { m ->
+                        MemberCard(member = m, onClick = { onMemberClick(m.bioguideId) })
+                    }
+                }
             }
+
             is RepsListUiState.Error ->
                 Text("Couldn't load: ${s.message}", color = MaterialTheme.colorScheme.error)
         }

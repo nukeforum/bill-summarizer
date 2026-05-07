@@ -45,15 +45,69 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.informedcitizen.ui.util.openInCustomTab
 
-private const val HOUSE_GOV_LOOKUP = "https://www.house.gov/representatives/find-your-representative"
+private const val HOUSE_GOV_LOOKUP =
+    "https://www.house.gov/representatives/find-your-representative"
 
 private val ALL_STATES = listOf(
-    "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY",
-    "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND",
-    "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY",
-    "DC", "AS", "GU", "MP", "PR", "VI",
+    "AL",
+    "AK",
+    "AZ",
+    "AR",
+    "CA",
+    "CO",
+    "CT",
+    "DE",
+    "FL",
+    "GA",
+    "HI",
+    "ID",
+    "IL",
+    "IN",
+    "IA",
+    "KS",
+    "KY",
+    "LA",
+    "ME",
+    "MD",
+    "MA",
+    "MI",
+    "MN",
+    "MS",
+    "MO",
+    "MT",
+    "NE",
+    "NV",
+    "NH",
+    "NJ",
+    "NM",
+    "NY",
+    "NC",
+    "ND",
+    "OH",
+    "OK",
+    "OR",
+    "PA",
+    "RI",
+    "SC",
+    "SD",
+    "TN",
+    "TX",
+    "UT",
+    "VT",
+    "VA",
+    "WA",
+    "WV",
+    "WI",
+    "WY",
+    "DC",
+    "AS",
+    "GU",
+    "MP",
+    "PR",
+    "VI",
 )
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun LocationPickerScreen(
     onSaved: () -> Unit,
@@ -70,49 +124,28 @@ fun LocationPickerScreen(
         }
     }
 
-    Box(modifier = modifier.fillMaxSize()) {
-        PickerContent(
-            state = state,
-            onSelectState = viewModel::selectState,
-            onSelectDistrict = viewModel::selectDistrict,
-            onSelectMode = viewModel::selectMode,
-            onZipChanged = viewModel::onZipChanged,
-            onLookupZip = viewModel::lookupZip,
-            // Reserve space at the bottom so scrollable content doesn't sit
-            // beneath the pinned save bar.
-            contentPadding = PaddingValues(start = 16.dp, end = 16.dp, top = 16.dp, bottom = 96.dp),
-        )
-        SaveBar(
-            canSave = state.canSave,
-            saveFailed = state.districtHint == DistrictHint.SaveFailed,
-            onSave = viewModel::save,
-            modifier = Modifier.align(Alignment.BottomCenter),
-        )
-    }
-}
-
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-private fun PickerContent(
-    state: LocationPickerUiState,
-    onSelectState: (String) -> Unit,
-    onSelectDistrict: (Int) -> Unit,
-    onSelectMode: (LocationPickerMode) -> Unit,
-    onZipChanged: (String) -> Unit,
-    onLookupZip: () -> Unit,
-    contentPadding: PaddingValues,
-) {
     val context = LocalContext.current
     var stateExpanded by remember { mutableStateOf(false) }
 
     Column(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxSize()
             .verticalScroll(rememberScrollState())
-            .padding(contentPadding),
+            .padding(
+                paddingValues = PaddingValues(
+                    start = 16.dp,
+                    end = 16.dp,
+                    top = 16.dp,
+                    bottom = 16.dp
+                )
+            ),
         verticalArrangement = Arrangement.spacedBy(16.dp),
     ) {
-        Text("Where do you live?", style = MaterialTheme.typography.headlineSmall)
+        Text(
+            "Where do you live?",
+            style = MaterialTheme.typography.headlineSmall,
+        )
+
         Text(
             "We'll show you your House representative and senators, and the bills they've sponsored or cosponsored.",
             style = MaterialTheme.typography.bodyMedium,
@@ -132,6 +165,7 @@ private fun PickerContent(
                 label = { Text("State or territory") },
                 trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(stateExpanded) },
             )
+
             ExposedDropdownMenu(
                 expanded = stateExpanded,
                 onDismissRequest = { stateExpanded = false },
@@ -140,7 +174,7 @@ private fun PickerContent(
                     DropdownMenuItem(
                         text = { Text(code) },
                         onClick = {
-                            onSelectState(code)
+                            viewModel.selectState(code)
                             stateExpanded = false
                         },
                     )
@@ -151,20 +185,51 @@ private fun PickerContent(
         ModeSegmentedRow(
             mode = state.mode,
             zipLookupAvailable = state.isZipLookupAvailable,
-            onSelectMode = onSelectMode,
+            onSelectMode = { it: LocationPickerMode -> viewModel.selectMode(it) },
         )
 
-        when (state.mode) {
-            LocationPickerMode.Pick -> PickModeContent(
-                state = state,
-                onSelectDistrict = onSelectDistrict,
-            )
-            LocationPickerMode.Lookup -> LookupModeContent(
-                state = state,
-                onZipChanged = onZipChanged,
-                onLookupZip = onLookupZip,
-                onOpenHouseGov = { openInCustomTab(context, HOUSE_GOV_LOOKUP) },
-            )
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .weight(1f)
+        ) {
+            when (state.mode) {
+                LocationPickerMode.Pick -> PickModeContent(
+                    state = state,
+                    onSelectDistrict = { it: Int -> viewModel.selectDistrict(it) },
+                )
+
+                LocationPickerMode.Lookup -> LookupModeContent(
+                    state = state,
+                    onZipChanged = { it: String -> viewModel.onZipChanged(it) },
+                    onLookupZip = { viewModel.lookupZip() },
+                    onOpenHouseGov = { openInCustomTab(context, HOUSE_GOV_LOOKUP) },
+                )
+            }
+        }
+
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp, vertical = 12.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp),
+        ) {
+            if (state.districtHint == DistrictHint.SaveFailed) {
+                Text(
+                    "Couldn't load representatives for that location. Check your connection and try again.",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.error,
+                )
+            }
+            Box(
+                modifier = Modifier.fillMaxWidth(),
+                contentAlignment = Alignment.CenterEnd,
+            ) {
+                Button(onClick = { viewModel.save() },
+                    // Reserve space at the bottom so scrollable content doesn't sit
+                    // beneath the pinned save bar.
+                    enabled = state.canSave) { Text("Save") }
+            }
         }
     }
 }
@@ -202,10 +267,12 @@ private fun PickModeContent(
             style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
         )
+
         state.isAtLargeOrDelegate -> Text(
             "${state.selectedState} has a single representative.",
             style = MaterialTheme.typography.bodyMedium,
         )
+
         else -> {
             // Render the multi-district hint here too — when ZIP→Multiple
             // auto-flips us to Pick mode, the user lands on the narrowed grid
@@ -273,6 +340,7 @@ private fun LookupModeContent(
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.error,
             )
+
             is DistrictHint.Single -> Text(
                 "Detected ${hint.district}${state.selectedState?.let { " ($it-${hint.district})" } ?: ""}.",
                 style = MaterialTheme.typography.bodyMedium,
@@ -281,7 +349,8 @@ private fun LookupModeContent(
             is DistrictHint.Multiple,
             DistrictHint.SaveFailed,
             DistrictHint.None,
-            -> {}
+                -> {
+            }
         }
     }
 
