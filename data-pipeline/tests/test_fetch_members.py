@@ -16,15 +16,20 @@ class _FakeClient:
         self._member_details = member_details
         self._sponsored_pages = {k: list(v) for k, v in sponsored_pages.items()}
         self._cosponsored_pages = {k: list(v) for k, v in cosponsored_pages.items()}
+        # Track every legislation-endpoint call so tests can assert that
+        # certain members were not re-fetched.
+        self.legislation_calls: list[str] = []
 
     def get(self, path, **params):
         if path.startswith("/member/congress/") and path.count("/") == 3:
             return self._list_pages.pop(0) if self._list_pages else {"members": []}
         if path.startswith("/member/") and path.endswith("/sponsored-legislation"):
+            self.legislation_calls.append(path)
             bid = path.split("/")[2]
             pages = self._sponsored_pages.get(bid, [])
             return pages.pop(0) if pages else {"sponsoredLegislation": []}
         if path.startswith("/member/") and path.endswith("/cosponsored-legislation"):
+            self.legislation_calls.append(path)
             bid = path.split("/")[2]
             pages = self._cosponsored_pages.get(bid, [])
             return pages.pop(0) if pages else {"cosponsoredLegislation": []}
@@ -70,6 +75,7 @@ def _legislation_item(bill_type, number, congress, title, action_date, action_te
 
 
 def test_main_writes_index_and_per_member_files(tmp_path, monkeypatch):
+    """Both phases run when the time budget allows; both outputs land."""
     monkeypatch.setenv("CONGRESS_API_KEY", "stub")
     monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
     list_pages = [{
@@ -168,55 +174,52 @@ def test_fetch_legislation_rejects_unknown_kind():
         fetch_members.fetch_legislation(fake, "X000001", "bogus")
 
 
-def test_main_skips_members_with_existing_files(tmp_path, monkeypatch):
-    """Re-run should skip members whose legislation files already exist."""
+def test_main_skips_members_with_existing_legislation_files(tmp_path, monkeypatch):
+    """Phase 1 always re-fetches detail; Phase 2 skips members whose two
+    legislation files already exist on disk."""
     monkeypatch.setenv("CONGRESS_API_KEY", "stub")
     monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
 
-    # Pre-seed: one member's index entry + both legislation files.
+    # Pre-seed: one member's legislation files.
     (tmp_path / "members").mkdir(parents=True)
-    cached_member = {
-        "bioguide_id": "C000001",
-        "name": "Cached Member",
-        "party": "D",
-        "state": "CA",
-        "district": 1,
-        "chamber": "house",
-        "photo_url": None,
-        "official_url": None,
-        "sponsored_count": 0,
-        "cosponsored_count": 0,
-        "address": None,
-        "phone": None,
-    }
-    import json as _json
-    (tmp_path / "members_119.json").write_text(_json.dumps({
-        "congress": 119,
-        "generated_at": "x",
-        "members": [cached_member],
-    }))
     (tmp_path / "members" / "C000001_sponsored.json").write_text("{}")
     (tmp_path / "members" / "C000001_cosponsored.json").write_text("{}")
 
-    # API returns this same member; the script should NOT re-fetch.
-    list_pages = [{"members": [_member_list_entry("C000001", "Cached Member", "California", 1)]}]
-    fake = _FakeClient([list_pages[0]], {}, {}, {})
+    list_pages = [{
+        "members": [_member_list_entry("C000001", "Cached Member", "California", 1)],
+    }]
+    member_details = {"C000001": _member_detail("C000001", 0, 0, "https://c.house.gov")}
+    fake = _FakeClient(
+        [list_pages[0]],
+        member_details,
+        {"C000001": [{"sponsoredLegislation": []}]},
+        {"C000001": [{"cosponsoredLegislation": []}]},
+    )
 
-    # If the script tried to call /member/{bid}, our fake returns {} which
-    # would yield an empty `member` and an empty parse — easily detectable.
     with patch.object(fetch_members, "CongressClient", return_value=fake), \
          patch.object(fetch_members, "current_congress", return_value=119):
         rc = fetch_members.main([])
     assert rc == 0
 
-    final = _json.loads((tmp_path / "members_119.json").read_text())
-    # The cached record should be preserved unchanged (name "Cached Member")
-    assert final["members"][0]["name"] == "Cached Member"
+    # Phase 1 re-published the index with fresh detail data.
+    index = json.loads((tmp_path / "members_119.json").read_text())
+    assert len(index["members"]) == 1
+    assert index["members"][0]["bioguide_id"] == "C000001"
+
+    # Phase 2 skipped the legislation fetches entirely — no calls made.
+    assert fake.legislation_calls == [], (
+        f"expected no legislation calls but got {fake.legislation_calls}"
+    )
+
+    # Pre-existing legislation files left untouched (still '{}').
+    assert (tmp_path / "members" / "C000001_sponsored.json").read_text() == "{}"
+    assert (tmp_path / "members" / "C000001_cosponsored.json").read_text() == "{}"
 
 
-def test_main_writes_index_after_each_member(tmp_path, monkeypatch):
-    """Index file must be updated incrementally so partial progress is durable."""
-    import json as _json
+def test_main_writes_index_after_phase_one(tmp_path, monkeypatch):
+    """The index file must be fully populated before any per-member legislation
+    file is written. This ensures partial Phase 2 progress doesn't gate the
+    Reps tab from working."""
     monkeypatch.setenv("CONGRESS_API_KEY", "stub")
     monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
 
@@ -232,28 +235,44 @@ def test_main_writes_index_after_each_member(tmp_path, monkeypatch):
     cosponsored = {"A000001": [{"cosponsoredLegislation": []}], "B000002": [{"cosponsoredLegislation": []}]}
     fake = _FakeClient([list_pages[0]], member_details, sponsored, cosponsored)
 
-    # Patch save_members_index to capture every call, asserting it's called
-    # at least N+1 times for N members (once per member + final flush).
-    save_calls: list[int] = []
-    real_save = _common.save_members_index
-    def tracked_save(congress, payload):
-        save_calls.append(len(payload["members"]))
-        return real_save(congress, payload)
-    monkeypatch.setattr(_common, "save_members_index", tracked_save)
-    monkeypatch.setattr(fetch_members, "save_members_index", tracked_save)
+    # Track ordering: index saves vs. legislation saves. Phase 1 must save the
+    # final index BEFORE any legislation file is written.
+    events: list[tuple[str, int]] = []
+
+    real_save_index = _common.save_members_index
+    def tracked_save_index(congress, payload):
+        events.append(("index", len(payload["members"])))
+        return real_save_index(congress, payload)
+
+    real_save_leg = _common.save_member_legislation
+    def tracked_save_leg(bioguide_id, kind, payload):
+        events.append(("leg", 0))
+        return real_save_leg(bioguide_id, kind, payload)
+
+    monkeypatch.setattr(_common, "save_members_index", tracked_save_index)
+    monkeypatch.setattr(fetch_members, "save_members_index", tracked_save_index)
+    monkeypatch.setattr(_common, "save_member_legislation", tracked_save_leg)
+    monkeypatch.setattr(fetch_members, "save_member_legislation", tracked_save_leg)
 
     with patch.object(fetch_members, "CongressClient", return_value=fake), \
          patch.object(fetch_members, "current_congress", return_value=119):
         rc = fetch_members.main([])
     assert rc == 0
-    # Should be: incremental [1, 2] + final flush [2]
-    assert save_calls[0] == 1
-    assert save_calls[-1] == 2
+
+    # First event must be an index save with the FULL membership (2 members).
+    assert events, "expected at least one save event"
+    first_kind, first_count = events[0]
+    assert first_kind == "index"
+    assert first_count == 2, f"expected full index before any legislation save: {events}"
+
+    # The index save must come before any leg save.
+    first_leg_idx = next((i for i, (k, _) in enumerate(events) if k == "leg"), len(events))
+    assert any(k == "index" for k, _ in events[:first_leg_idx])
 
 
-def test_main_respects_time_budget(tmp_path, monkeypatch):
-    """When the time budget expires, processing stops and existing progress persists."""
-    import json as _json
+def test_main_time_budget_only_gates_phase_two(tmp_path, monkeypatch):
+    """A zero time budget must still produce a fully-populated index but
+    write zero or one legislation file (whichever the deadline check hits)."""
     monkeypatch.setenv("CONGRESS_API_KEY", "stub")
     monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
 
@@ -269,13 +288,19 @@ def test_main_respects_time_budget(tmp_path, monkeypatch):
     cosponsored = {"A000001": [{"cosponsoredLegislation": []}], "B000002": [{"cosponsoredLegislation": []}]}
     fake = _FakeClient([list_pages[0]], member_details, sponsored, cosponsored)
 
-    # time_budget_minutes=0 means deadline is the moment we start the loop;
-    # after the first member is processed, the next iteration should bail.
     with patch.object(fetch_members, "CongressClient", return_value=fake), \
          patch.object(fetch_members, "current_congress", return_value=119):
         rc = fetch_members.main(["--time-budget-minutes", "0"])
     assert rc == 0
-    final = _json.loads((tmp_path / "members_119.json").read_text())
-    # Only the first member should have been processed.
-    assert len(final["members"]) == 1
-    assert final["members"][0]["bioguide_id"] == "A000001"
+
+    # Index is fully populated regardless of Phase 2 budget.
+    final = json.loads((tmp_path / "members_119.json").read_text())
+    assert {m["bioguide_id"] for m in final["members"]} == {"A000001", "B000002"}
+
+    # Phase 2 wrote at most one member's pair (deadline check at top of loop
+    # bails before even the first iteration when budget=0).
+    members_dir = tmp_path / "members"
+    if members_dir.exists():
+        leg_files = sorted(p.name for p in members_dir.iterdir())
+        # Either zero pairs or exactly one pair.
+        assert len(leg_files) in (0, 2), f"unexpected legislation files: {leg_files}"

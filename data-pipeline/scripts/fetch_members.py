@@ -1,12 +1,18 @@
 """Fetch members of the current Congress and their sponsored/cosponsored bills.
 
-Reads CONGRESS_API_KEY from the environment, walks /member/congress/{c} to
-enumerate members, fetches each member's detail + paged sponsored-legislation
-and cosponsored-legislation, and writes:
+Reads CONGRESS_API_KEY from the environment, runs in two sequential phases:
 
-  docs/data/members_{NNN}.json
-  docs/data/members/{bioguideId}_sponsored.json
-  docs/data/members/{bioguideId}_cosponsored.json
+  Phase 1 (fast, ~7 min): walk /member/congress/{c} + per-member detail and
+  publish docs/data/members_{NNN}.json. The Reps tab works as soon as this
+  lands, so this phase is unconditional — it always runs to completion and
+  the time budget does not gate it.
+
+  Phase 2 (slow, paginated): walk each member's sponsored-legislation and
+  cosponsored-legislation endpoints and write
+  docs/data/members/{bioguideId}_{kind}.json. Senior senators have thousands
+  of cosponsorships; this phase is gated by --time-budget-minutes and is
+  self-resumable via per-member file existence (skips members whose two
+  legislation files already exist).
 
 The output `id` field on each bill matches the {type}{number}-{congress}
 shape used by the existing bills manifest, so the Android app can do an
@@ -20,7 +26,7 @@ import os
 import sys
 import time
 from datetime import datetime, timezone
-from typing import Any, Iterable  # datetime and timezone imported by main() for current_congress()
+from typing import Any, Iterable
 
 from _common import (
     CongressClient,
@@ -98,9 +104,10 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--time-budget-minutes", type=int, default=300,
-        help="Soft time budget (default 300 = 5 hours). When elapsed, the "
-             "script finishes the current member, writes outputs, and exits 0. "
-             "GitHub Actions has a 6h hard cap; the default leaves 1h headroom.",
+        help="Soft time budget for Phase 2 (default 300 = 5 hours). Phase 1 "
+             "always runs to completion (it's fast). When the budget elapses "
+             "during Phase 2, the script writes outputs and exits 0. GitHub "
+             "Actions has a 6h hard cap; the default leaves 1h headroom.",
     )
     args = parser.parse_args(argv)
     start_time = time.time()
@@ -112,31 +119,19 @@ def main(argv: list[str] | None = None) -> int:
         return 2
 
     congress = current_congress(datetime.now(timezone.utc))
-    print(f"Fetching members for the {congress}th Congress")
-
     client = CongressClient(api_key)
-    members_out: list[dict[str, Any]] = []
 
-    # Resume support: skip members whose per-member files already exist on disk
-    # AND who are present in the existing index (from a prior partial run).
     existing_index = load_members_index(congress) or {"members": []}
     existing_by_bid: dict[str, dict[str, Any]] = {
         m["bioguide_id"]: m for m in existing_index.get("members", [])
     }
 
-    def _files_present(bid: str) -> bool:
-        return (
-            member_legislation_path(bid, "sponsored").exists()
-            and member_legislation_path(bid, "cosponsored").exists()
-        )
-
+    # ---------- Phase 1: fast — member roster + detail only ----------
+    print(f"Phase 1: fetching member index for the {congress}th Congress")
+    members_out: list[dict[str, Any]] = []
     for summary in list_members(client, congress):
         bioguide_id = summary.get("bioguideId") or ""
         if not bioguide_id:
-            continue
-        if bioguide_id in existing_by_bid and _files_present(bioguide_id):
-            members_out.append(existing_by_bid[bioguide_id])
-            print(f"  ~ {bioguide_id} (cached from previous run)")
             continue
         try:
             detail_body = client.get(f"/member/{bioguide_id}")
@@ -148,11 +143,51 @@ def main(argv: list[str] | None = None) -> int:
             merged: dict[str, Any] = {**summary, **detail}
             parsed = parse_member_summary(merged)
         except Exception as exc:  # noqa: BLE001
-            print(f"  ! skipping {bioguide_id}: {type(exc).__name__}: {exc}", file=sys.stderr)
-            continue
+            # Fall back to cached record from previous run if we have one;
+            # otherwise drop the member silently.
+            if bioguide_id in existing_by_bid:
+                parsed = existing_by_bid[bioguide_id]
+                print(
+                    f"  ~ {bioguide_id}: detail fetch failed ({exc}); reusing cached entry",
+                    file=sys.stderr,
+                )
+            else:
+                print(
+                    f"  ! skipping {bioguide_id}: {type(exc).__name__}: {exc}",
+                    file=sys.stderr,
+                )
+                continue
         members_out.append(parsed)
         print(f"  + {bioguide_id} {parsed['name']} ({parsed['party']}-{parsed['state']})")
 
+    # Publish the index. The Reps tab works as soon as this lands.
+    save_members_index(congress, {
+        "congress": congress,
+        "generated_at": now_iso(),
+        "members": members_out,
+    })
+    print(f"Phase 1 done: index has {len(members_out)} members")
+
+    # ---------- Phase 2: slow — per-member legislation backfill ----------
+    print("\nPhase 2: backfilling sponsored/cosponsored legislation")
+    backfilled = 0
+    skipped_cached = 0
+    for parsed in members_out:
+        if time.time() > deadline:
+            print(
+                f"\n[time-budget] Stopping Phase 2 early; processed "
+                f"{backfilled} new + skipped {skipped_cached} cached. "
+                f"Re-run to continue.",
+                file=sys.stderr,
+            )
+            break
+        bioguide_id = parsed["bioguide_id"]
+        if (
+            member_legislation_path(bioguide_id, "sponsored").exists()
+            and member_legislation_path(bioguide_id, "cosponsored").exists()
+        ):
+            skipped_cached += 1
+            continue
         for kind in ("sponsored", "cosponsored"):
             try:
                 raw_items = fetch_legislation(client, bioguide_id, kind)
@@ -167,37 +202,14 @@ def main(argv: list[str] | None = None) -> int:
                 "generated_at": now_iso(),
                 "bills": bills,
             })
+        backfilled += 1
+        print(f"  + {bioguide_id}: legislation backfilled")
 
-        # Write the index incrementally so partial progress is durable
-        # against timeouts. The list ordering matches API enumeration order;
-        # consumers should sort by their own criteria.
-        save_members_index(congress, {
-            "congress": congress,
-            "generated_at": now_iso(),
-            "members": members_out,
-        })
-
-        # Cooperative time-budget check: we always finish the current member
-        # before bailing so on-disk state is consistent. The next re-run will
-        # pick up where we left off via the `existing_by_bid` skip path.
-        if time.time() > deadline:
-            elapsed_min = (time.time() - start_time) / 60
-            print(
-                f"\n[time-budget] Stopping early after ~{elapsed_min:.1f} min; "
-                f"processed {len(members_out)} members so far. "
-                f"Re-run to continue from where this left off.",
-                file=sys.stderr,
-            )
-            break
-
-    # Final flush so `generated_at` reflects completion when we get here
-    # without bailing on the time budget.
-    save_members_index(congress, {
-        "congress": congress,
-        "generated_at": now_iso(),
-        "members": members_out,
-    })
-    print(f"Wrote index with {len(members_out)} members.")
+    print(
+        f"\nPhase 2 done: backfilled {backfilled} members, "
+        f"skipped {skipped_cached} already-cached. "
+        f"Index has {len(members_out)} total."
+    )
     return 0
 
 
