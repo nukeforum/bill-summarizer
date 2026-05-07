@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T08:33:58Z",
+  "generated_at": "2026-05-07T14:31:32Z",
   "congress": 119,
   "bills": [
     {
@@ -363,6 +363,198 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/118"
     },
     {
+      "id": "hr2170-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "2170",
+      "title": "To name the Department of Veterans Affairs community-based outpatient clinic in Toms River, New Jersey, the Leonard G. 'Bud' Lomell, VA Clinic, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Smith, Christopher H.",
+        "party": "R",
+        "state": "NJ"
+      },
+      "introduced_date": "2025-03-18",
+      "latest_action": {
+        "date": "2025-09-05",
+        "text": "Became Public Law No: 119-35."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This act designates the community-based outpatient clinic of the Department of Veterans Affairs in Toms River, New Jersey, as the Leonard G. “Bud” Lomell VA Clinic.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ35/PLAW-119publ35.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ35/PLAW-119publ35_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ35/PLAW-119publ35.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2170"
+    },
+    {
+      "id": "hres539-119",
+      "congress": 119,
+      "type": "hres",
+      "number": "539",
+      "title": "Censuring Representative LaMonica McIver and removing her from the Committee on Homeland Security.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Higgins, Clay",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2025-06-24",
+      "latest_action": {
+        "date": "2025-09-03",
+        "text": "On motion to table Agreed to by the Yeas and Nays: 215 - 207, 2 Present (Roll no. 223)."
+      },
+      "outcome": "failed",
+      "summary_crs": "<p>This resolution censures Representative LaMonica McIver and removes her from the Committee on Homeland Security.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hres539/BILLS-119hres539ih.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hres539/BILLS-119hres539ih.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hres539/BILLS-119hres539ih.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-resolution/539"
+    },
+    {
+      "id": "sjres41-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "41",
+      "title": "A joint resolution providing for congressional disapproval of the proposed export of certain defense articles to Israel.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Sanders, Bernard",
+        "party": "I",
+        "state": "VT"
+      },
+      "introduced_date": "2025-03-27",
+      "latest_action": {
+        "date": "2025-07-30",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 27 - 70. Record Vote Number: 454."
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres41/BILLS-119sjres41is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres41/BILLS-119sjres41is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres41/BILLS-119sjres41is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/41"
+    },
+    {
+      "id": "sjres34-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "34",
+      "title": "A joint resolution providing for congressional disapproval of the proposed foreign military sale to the Government of Israel of certain defense articles and services.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Sanders, Bernard",
+        "party": "I",
+        "state": "VT"
+      },
+      "introduced_date": "2025-03-10",
+      "latest_action": {
+        "date": "2025-07-30",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 24 - 73. Record Vote Number: 455."
+      },
+      "outcome": "failed",
+      "summary_crs": "<p>This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Israel.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sjres34/BILLS-119sjres34is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres34/BILLS-119sjres34is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres34/BILLS-119sjres34is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/34"
+    },
+    {
+      "id": "sres309-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "309",
+      "title": "A resolution commemorating the 65th anniversary of the Marshall Space Flight Center and recognizing its continued leadership in the development of the Space Launch System and human space exploration.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Tuberville, Tommy",
+        "party": "R",
+        "state": "AL"
+      },
+      "introduced_date": "2025-06-26",
+      "latest_action": {
+        "date": "2025-07-29",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4856; text: 06/26/2025 CR S3566)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres309/BILLS-119sres309ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres309/BILLS-119sres309ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres309/BILLS-119sres309ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/309"
+    },
+    {
+      "id": "s1596-119",
+      "congress": 119,
+      "type": "s",
+      "number": "1596",
+      "title": "Jocelyn Nungaray National Wildlife Refuge Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2025-05-05",
+      "latest_action": {
+        "date": "2025-07-24",
+        "text": "Became Public Law No: 119-30."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Jocelyn Nungaray National Wildlife Refuge Act</strong></p><p>This bill renames the Anahuac National Wildlife Refuge located in Anahuac, Texas, as the Jocelyn Nungaray National Wildlife Refuge.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ30/PLAW-119publ30.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ30/PLAW-119publ30_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ30/PLAW-119publ30.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1596"
+    },
+    {
+      "id": "sres267-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "267",
+      "title": "A resolution honoring the deep and enduring friendship between the Kingdom of Denmark and the United States on the occasion of Danish Constitution Day celebrations.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Welch, Peter",
+        "party": "D",
+        "state": "VT"
+      },
+      "introduced_date": "2025-06-10",
+      "latest_action": {
+        "date": "2025-07-23",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4685; text: 6/10/2025 CR S3318-3319)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres267/BILLS-119sres267ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres267/BILLS-119sres267ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres267/BILLS-119sres267ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/267"
+    },
+    {
+      "id": "sres276-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "276",
+      "title": "A resolution designating June 12, 2025, as \"Women Veterans Appreciation Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blackburn, Marsha",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2025-06-12",
+      "latest_action": {
+        "date": "2025-07-21",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4511; text: 6/12/2025 CR S3393)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres276/BILLS-119sres276ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres276/BILLS-119sres276ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres276/BILLS-119sres276ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/276"
+    },
+    {
       "id": "sres290-119",
       "congress": 119,
       "type": "sres",
@@ -555,6 +747,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/33"
     },
     {
+      "id": "hjres35-119",
+      "congress": 119,
+      "type": "hjres",
+      "number": "35",
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"Waste Emissions Charge for Petroleum and Natural Gas Systems: Procedures for Facilitating Compliance, Including Netting and Exemptions\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Pfluger, August",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2025-02-04",
+      "latest_action": {
+        "date": "2025-03-14",
+        "text": "Became Public Law No: 119-2."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This joint resolution nullifies the Environmental Protection Agency (EPA) rule titled <em>Waste Emissions Charge for Petroleum and Natural Gas Systems: Procedures for Facilitating Compliance, Including Netting and Exemptions&nbsp;</em>and published on November 18, 2024. The rule outlines compliance requirements under the Methane Emissions Reduction Program. Under the program, the EPA collects an annual charge on emissions of methane and other greenhouse gases from the oil and gas sector if the emissions exceed specified waste emissions thresholds.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ2/PLAW-119publ2.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ2/PLAW-119publ2_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ2/PLAW-119publ2.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/35"
+    },
+    {
       "id": "sres72-119",
       "congress": 119,
       "type": "sres",
@@ -577,6 +793,30 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sres72/BILLS-119sres72ats.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sres72/BILLS-119sres72ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/72"
+    },
+    {
+      "id": "sres94-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "94",
+      "title": "An original resolution authorizing expenditures by committees of the Senate for the periods March 1, 2025, through September 30, 2025, October 1, 2025, through September 30, 2026, and October 1, 2026, through February 28, 2027.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. McConnell, Mitch",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2025-02-25",
+      "latest_action": {
+        "date": "2025-02-27",
+        "text": "Resolution agreed to in Senate without amendment by Unanimous Consent. (consideration: CR S1434; text: 02/25/2025 CR S1352-1358)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres94/BILLS-119sres94ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres94/BILLS-119sres94ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres94/BILLS-119sres94ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/94"
     },
     {
       "id": "sres53-119",
