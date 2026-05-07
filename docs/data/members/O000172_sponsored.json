@@ -1,0 +1,931 @@
+{
+  "bioguide_id": "O000172",
+  "congress": 119,
+  "kind": "sponsored",
+  "generated_at": "2026-05-07T21:08:58Z",
+  "bills": [
+    {
+      "id": "hr7917-119",
+      "type": "hr",
+      "number": "7917",
+      "congress": 119,
+      "title": "Fair Wages for Home Care Workers Act",
+      "introduced_date": "2026-03-12",
+      "latest_action": {
+        "date": "2026-03-12",
+        "text": "Referred to the House Committee on Education and Workforce."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr5333-119",
+      "type": "hr",
+      "number": "5333",
+      "congress": 119,
+      "title": "9/11 Immigrant Worker Freedom Act",
+      "introduced_date": "2025-09-11",
+      "latest_action": {
+        "date": "2025-09-11",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "hr3562-119",
+      "type": "hr",
+      "number": "3562",
+      "congress": 119,
+      "title": "DEFIANCE Act of 2025",
+      "introduced_date": "2025-05-21",
+      "latest_action": {
+        "date": "2025-05-21",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr3302-119",
+      "type": "hr",
+      "number": "3302",
+      "congress": 119,
+      "title": "Healthy Start Reauthorization Act of 2025",
+      "introduced_date": "2025-05-08",
+      "latest_action": {
+        "date": "2025-10-03",
+        "text": "Placed on the Union Calendar, Calendar No. 284."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr1944-119",
+      "type": "hr",
+      "number": "1944",
+      "congress": 119,
+      "title": "10 Percent Credit Card Interest Rate Cap Act",
+      "introduced_date": "2025-03-06",
+      "latest_action": {
+        "date": "2025-03-06",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr398-119",
+      "type": "hr",
+      "number": "398",
+      "congress": 119,
+      "title": "Geothermal Cost-Recovery Authority Act of 2025",
+      "introduced_date": "2025-01-14",
+      "latest_action": {
+        "date": "2026-03-05",
+        "text": "Ordered to be Reported by Unanimous Consent."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr360-119",
+      "type": "hr",
+      "number": "360",
+      "congress": 119,
+      "title": "Oyster Reef Recovery Act of 2025",
+      "introduced_date": "2025-01-13",
+      "latest_action": {
+        "date": "2025-01-13",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr9705-118",
+      "type": "hr",
+      "number": "9705",
+      "congress": 118,
+      "title": "Oyster Reef Recovery Act",
+      "introduced_date": "2024-09-19",
+      "latest_action": {
+        "date": "2024-09-19",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr9662-118",
+      "type": "hr",
+      "number": "9662",
+      "congress": 118,
+      "title": "Homes Act of 2024",
+      "introduced_date": "2024-09-18",
+      "latest_action": {
+        "date": "2024-09-18",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hres1353-118",
+      "type": "hres",
+      "number": "1353",
+      "congress": 118,
+      "title": "Impeaching Clarence Thomas, Associate Justice of the Supreme Court of the United States, for high crimes and misdemeanors.",
+      "introduced_date": "2024-07-10",
+      "latest_action": {
+        "date": "2024-07-10",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Law"
+    },
+    {
+      "id": "hres1354-118",
+      "type": "hres",
+      "number": "1354",
+      "congress": 118,
+      "title": "Impeaching Samuel Alito, Jr., Associate Justice of the Supreme Court of the United States, for high crimes and misdemeanors.",
+      "introduced_date": "2024-07-10",
+      "latest_action": {
+        "date": "2024-07-10",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Law"
+    },
+    {
+      "id": "hr7782-118",
+      "type": "hr",
+      "number": "7782",
+      "congress": 118,
+      "title": "Green New Deal for Public Housing Act",
+      "introduced_date": "2024-03-21",
+      "latest_action": {
+        "date": "2024-03-21",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr7569-118",
+      "type": "hr",
+      "number": "7569",
+      "congress": 118,
+      "title": "DEFIANCE Act of 2024",
+      "introduced_date": "2024-03-06",
+      "latest_action": {
+        "date": "2024-03-06",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr7422-118",
+      "type": "hr",
+      "number": "7422",
+      "congress": 118,
+      "title": "Geothermal Cost-Recovery Authority Act of 2024",
+      "introduced_date": "2024-02-20",
+      "latest_action": {
+        "date": "2024-09-25",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Energy and Natural Resources."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr5572-118",
+      "type": "hr",
+      "number": "5572",
+      "congress": 118,
+      "title": "Civilian Climate Corps for Jobs and Justice Act",
+      "introduced_date": "2023-09-19",
+      "latest_action": {
+        "date": "2023-09-19",
+        "text": "Referred to the Committee on Education and the Workforce, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr5154-118",
+      "type": "hr",
+      "number": "5154",
+      "congress": 118,
+      "title": "CHARGE Act of 2023",
+      "introduced_date": "2023-08-04",
+      "latest_action": {
+        "date": "2023-08-11",
+        "text": "Referred to the Subcommittee on Energy, Climate and Grid Security."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr4936-118",
+      "type": "hr",
+      "number": "4936",
+      "congress": 118,
+      "title": "NOW Act",
+      "introduced_date": "2023-07-26",
+      "latest_action": {
+        "date": "2023-07-26",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hres319-118",
+      "type": "hres",
+      "number": "319",
+      "congress": 118,
+      "title": "Recognizing the duty of the Federal Government to create a Green New Deal.",
+      "introduced_date": "2023-04-24",
+      "latest_action": {
+        "date": "2023-05-15",
+        "text": "Referred to the Subcommittee on Conservation, Research, and Biotechnology."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "-118",
+      "type": "",
+      "number": "",
+      "congress": 118,
+      "title": "",
+      "introduced_date": "2023-01-26",
+      "latest_action": {
+        "date": "2023-01-27",
+        "text": "On agreeing to the Ocasio-Cortez amendment (A043) Failed by recorded vote: 199 - 229 (Roll no. 69). (consideration: CR H454)"
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-118",
+      "type": "",
+      "number": "",
+      "congress": 118,
+      "title": "",
+      "introduced_date": "2023-01-26",
+      "latest_action": {
+        "date": "2023-01-27",
+        "text": "On agreeing to the Ocasio-Cortez amendment (A042) Failed by recorded vote: 193 - 228 (Roll no. 68). (consideration: CR H453-454)"
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-118",
+      "type": "",
+      "number": "",
+      "congress": 118,
+      "title": "",
+      "introduced_date": "2023-01-26",
+      "latest_action": {
+        "date": "2023-01-27",
+        "text": "On agreeing to the Ocasio-Cortez amendment (A041) Failed by recorded vote: 171 - 256 (Roll no. 67). (consideration: CR H453)"
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr8476-117",
+      "type": "hr",
+      "number": "8476",
+      "congress": 117,
+      "title": "Housing Inspections Accountability Act",
+      "introduced_date": "2022-07-21",
+      "latest_action": {
+        "date": "2022-07-27",
+        "text": "Ordered to be Reported in the Nature of a Substitute (Amended) by the Yeas and Nays: 28 - 23."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr8394-117",
+      "type": "hr",
+      "number": "8394",
+      "congress": 117,
+      "title": "Lawrence v. Texas Codification Act of 2022",
+      "introduced_date": "2022-07-15",
+      "latest_action": {
+        "date": "2022-11-01",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr8395-117",
+      "type": "hr",
+      "number": "8395",
+      "congress": 117,
+      "title": "EPA Regulatory Authority Act of 2022",
+      "introduced_date": "2022-07-15",
+      "latest_action": {
+        "date": "2022-07-15",
+        "text": "Referred to the House Committee on Energy and Commerce."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr8396-117",
+      "type": "hr",
+      "number": "8396",
+      "congress": 117,
+      "title": "Loving v. Virginia Codification Act of 2022",
+      "introduced_date": "2022-07-15",
+      "latest_action": {
+        "date": "2022-11-01",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr7393-117",
+      "type": "hr",
+      "number": "7393",
+      "congress": 117,
+      "title": "Improving VA Workforce Diversity Through Minority-serving Institutions Act of 2022",
+      "introduced_date": "2022-04-05",
+      "latest_action": {
+        "date": "2022-04-06",
+        "text": "Ordered to be Reported by Voice Vote."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hres899-117",
+      "type": "hres",
+      "number": "899",
+      "congress": 117,
+      "title": "Providing for the consideration of the bill (H.R. 1579) to prohibit Members of Congress from purchasing or selling certain investments, and for other purposes.",
+      "introduced_date": "2022-02-01",
+      "latest_action": {
+        "date": "2022-02-01",
+        "text": "Referred to the House Committee on Rules."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "hr6549-117",
+      "type": "hr",
+      "number": "6549",
+      "congress": 117,
+      "title": "To provide support for international initiatives to provide debt relief to developing countries with unsustainable levels of debt, and for other purposes.",
+      "introduced_date": "2022-02-01",
+      "latest_action": {
+        "date": "2022-02-01",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr6419-117",
+      "type": "hr",
+      "number": "6419",
+      "congress": 117,
+      "title": "Fair Chance Improvement Act",
+      "introduced_date": "2022-01-18",
+      "latest_action": {
+        "date": "2022-02-02",
+        "text": "Ordered to be Reported (Amended) by the Yeas and Nays: 27 - 11."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "-117",
+      "type": "",
+      "number": "",
+      "congress": 117,
+      "title": "",
+      "introduced_date": "2021-12-09",
+      "latest_action": {
+        "date": "2021-12-09",
+        "text": "On agreeing to the Ocasio-Cortez amendment (A004) Failed by the Yeas and Nays: 196 - 233 (Roll no. 438). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr5700-117",
+      "type": "hr",
+      "number": "5700",
+      "congress": 117,
+      "title": "9/11 Immigrant Worker Freedom Act",
+      "introduced_date": "2021-10-22",
+      "latest_action": {
+        "date": "2022-11-01",
+        "text": "Referred to the Subcommittee on Immigration and Citizenship."
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "hr4207-117",
+      "type": "hr",
+      "number": "4207",
+      "congress": 117,
+      "title": "Political Appointments Inclusion and Diversity Act",
+      "introduced_date": "2021-06-28",
+      "latest_action": {
+        "date": "2021-06-28",
+        "text": "Referred to the House Committee on Oversight and Reform."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "-117",
+      "type": "",
+      "number": "",
+      "congress": 117,
+      "title": "",
+      "introduced_date": "2021-09-22",
+      "latest_action": {
+        "date": "2021-09-23",
+        "text": "On agreeing to the Ocasio-Cortez amendment (A023) Failed by the Yeas and Nays: 86 - 332 (Roll no. 284). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr5285-117",
+      "type": "hr",
+      "number": "5285",
+      "congress": 117,
+      "title": "Extend Unemployment Assistance Act of 2021",
+      "introduced_date": "2021-09-17",
+      "latest_action": {
+        "date": "2021-09-17",
+        "text": "Referred to the Subcommittee on Worker and Family Support."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "-117",
+      "type": "",
+      "number": "",
+      "congress": 117,
+      "title": "",
+      "introduced_date": "2021-07-27",
+      "latest_action": {
+        "date": "2021-07-27",
+        "text": "On agreeing to the Ocasio-Cortez amendment (A007) Failed by the Yeas and Nays: 140 - 285 (Roll no. 230). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr4620-117",
+      "type": "hr",
+      "number": "4620",
+      "congress": 117,
+      "title": "To amend the Investment Advisers Act of 1940 to limit the exemption provided for family offices from the definition of an investment adviser, and for other purposes.",
+      "introduced_date": "2021-07-22",
+      "latest_action": {
+        "date": "2021-07-29",
+        "text": "Ordered to be Reported in the Nature of a Substitute (Amended) by the Yeas and Nays: 27 - 22."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hjres49-117",
+      "type": "hjres",
+      "number": "49",
+      "congress": 117,
+      "title": "Providing for congressional disapproval of the proposed direct commercial sale to Israel of certain weaponry and munitions.",
+      "introduced_date": "2021-05-20",
+      "latest_action": {
+        "date": "2021-05-20",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr2670-117",
+      "type": "hr",
+      "number": "2670",
+      "congress": 117,
+      "title": "The Civilian Climate Corps for Jobs and Justice Act",
+      "introduced_date": "2021-04-20",
+      "latest_action": {
+        "date": "2021-04-20",
+        "text": "Referred to the Committee on Education and Labor, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hres332-117",
+      "type": "hres",
+      "number": "332",
+      "congress": 117,
+      "title": "Recognizing the duty of the Federal Government to create a Green New Deal.",
+      "introduced_date": "2021-04-20",
+      "latest_action": {
+        "date": "2021-10-19",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr2664-117",
+      "type": "hr",
+      "number": "2664",
+      "congress": 117,
+      "title": "Green New Deal for Public Housing Act",
+      "introduced_date": "2021-04-19",
+      "latest_action": {
+        "date": "2021-04-19",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hres239-117",
+      "type": "hres",
+      "number": "239",
+      "congress": 117,
+      "title": "Commemorating the 50th anniversary of Bangladesh's independence.",
+      "introduced_date": "2021-03-16",
+      "latest_action": {
+        "date": "2021-03-16",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr659-117",
+      "type": "hr",
+      "number": "659",
+      "congress": 117,
+      "title": "Repeal the Faircloth Amendment Act of 2021",
+      "introduced_date": "2021-02-01",
+      "latest_action": {
+        "date": "2021-02-01",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr8019-116",
+      "type": "hr",
+      "number": "8019",
+      "congress": 116,
+      "title": "Climate Equity Act of 2020",
+      "introduced_date": "2020-08-11",
+      "latest_action": {
+        "date": "2020-08-11",
+        "text": "Referred to the Committee on Oversight and Reform, and in addition to the Committees on the Budget, Rules, the Judiciary, Energy and Commerce, Science, Space, and Technology, and Natural Resources, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "-116",
+      "type": "",
+      "number": "",
+      "congress": 116,
+      "title": "",
+      "introduced_date": "2020-07-30",
+      "latest_action": {
+        "date": "2020-07-30",
+        "text": "On agreeing to the Ocasio-Cortez amendment (A005) Failed by the Yeas and Nays: 126 - 292 (Roll no. 173). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr7711-116",
+      "type": "hr",
+      "number": "7711",
+      "congress": 116,
+      "title": "Badge Transparency Act of 2020",
+      "introduced_date": "2020-07-21",
+      "latest_action": {
+        "date": "2020-07-21",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr7221-116",
+      "type": "hr",
+      "number": "7221",
+      "congress": 116,
+      "title": "Prohibiting Law Enforcement Use of Chemical Weapons Act",
+      "introduced_date": "2020-06-15",
+      "latest_action": {
+        "date": "2020-06-15",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr6989-116",
+      "type": "hr",
+      "number": "6989",
+      "congress": 116,
+      "title": "Pandemic Anti-Monopoly Act of 2020",
+      "introduced_date": "2020-05-22",
+      "latest_action": {
+        "date": "2020-05-22",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Commerce"
+    },
+    {
+      "id": "hr6852-116",
+      "type": "hr",
+      "number": "6852",
+      "congress": 116,
+      "title": "To prohibit the Secretary of the Treasury and the Board of Governors of the Federal Reserve System from waiving provisions related to COVID-19 emergency relief and taxpayer protections related to such relief.",
+      "introduced_date": "2020-05-13",
+      "latest_action": {
+        "date": "2020-05-13",
+        "text": "Referred to the Committee on Financial Services, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr6851-116",
+      "type": "hr",
+      "number": "6851",
+      "congress": 116,
+      "title": "To require major corporations receiving Federal aid related to COVID-19 to make annual payments of equity to employees of the corporation while such aid is outstanding, and for other purposes.",
+      "introduced_date": "2020-05-13",
+      "latest_action": {
+        "date": "2020-05-13",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Commerce"
+    },
+    {
+      "id": "hr6827-116",
+      "type": "hr",
+      "number": "6827",
+      "congress": 116,
+      "title": "Corporate Accountability Act",
+      "introduced_date": "2020-05-12",
+      "latest_action": {
+        "date": "2020-05-12",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Commerce"
+    },
+    {
+      "id": "hr6828-116",
+      "type": "hr",
+      "number": "6828",
+      "congress": 116,
+      "title": "COVID–19 Funeral Assistance Fund",
+      "introduced_date": "2020-05-12",
+      "latest_action": {
+        "date": "2020-05-13",
+        "text": "Referred to the Subcommittee on Economic Development, Public Buildings, and Emergency Management."
+      },
+      "policy_area": "Emergency Management"
+    },
+    {
+      "id": "hr6778-116",
+      "type": "hr",
+      "number": "6778",
+      "congress": 116,
+      "title": "_______ Act of 2020",
+      "introduced_date": "2020-05-08",
+      "latest_action": {
+        "date": "2020-05-08",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr6779-116",
+      "type": "hr",
+      "number": "6779",
+      "congress": 116,
+      "title": "To specify the ineligibility requirements based on illegal activity or criminal record applicable to the Paycheck Protection Program and certain emergency relief programs under the CARES Act, and for other purposes.",
+      "introduced_date": "2020-05-08",
+      "latest_action": {
+        "date": "2020-05-08",
+        "text": "Referred to the House Committee on Small Business."
+      },
+      "policy_area": "Commerce"
+    },
+    {
+      "id": "hr6687-116",
+      "type": "hr",
+      "number": "6687",
+      "congress": 116,
+      "title": "Pandemic Disaster Assistance Act of 2020",
+      "introduced_date": "2020-05-01",
+      "latest_action": {
+        "date": "2020-05-04",
+        "text": "Referred to the Subcommittee on Economic Development, Public Buildings, and Emergency Management."
+      },
+      "policy_area": "Emergency Management"
+    },
+    {
+      "id": "hr6360-116",
+      "type": "hr",
+      "number": "6360",
+      "congress": 116,
+      "title": "To establish requirements on accelerated filers receiving Federal aid related to COVID-19, to establish requirements on all corporations until Federal aid related to COVID-19 is repaid, and for other purposes.",
+      "introduced_date": "2020-03-23",
+      "latest_action": {
+        "date": "2020-03-23",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr5857-116",
+      "type": "hr",
+      "number": "5857",
+      "congress": 116,
+      "title": "Fracking Ban Act",
+      "introduced_date": "2020-02-12",
+      "latest_action": {
+        "date": "2020-02-21",
+        "text": "Referred to the Subcommittee on Energy and Mineral Resources."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr5185-116",
+      "type": "hr",
+      "number": "5185",
+      "congress": 116,
+      "title": "Green New Deal for Public Housing Act",
+      "introduced_date": "2019-11-19",
+      "latest_action": {
+        "date": "2019-12-05",
+        "text": "Sponsor introductory remarks on measure. (CR H9284)"
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr5069-116",
+      "type": "hr",
+      "number": "5069",
+      "congress": 116,
+      "title": "The Recognizing Poverty Act",
+      "introduced_date": "2019-11-13",
+      "latest_action": {
+        "date": "2019-11-13",
+        "text": "Referred to the House Committee on Education and Labor."
+      },
+      "policy_area": "Social Welfare"
+    },
+    {
+      "id": "hr5071-116",
+      "type": "hr",
+      "number": "5071",
+      "congress": 116,
+      "title": "A Just Society: The Embrace Act",
+      "introduced_date": "2019-11-13",
+      "latest_action": {
+        "date": "2019-11-13",
+        "text": "Referred to the House Committee on Oversight and Reform."
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "hr5070-116",
+      "type": "hr",
+      "number": "5070",
+      "congress": 116,
+      "title": "A Just Society: The Mercy In Re-entry Act",
+      "introduced_date": "2019-11-13",
+      "latest_action": {
+        "date": "2019-11-13",
+        "text": "Referred to the House Committee on Oversight and Reform."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr5072-116",
+      "type": "hr",
+      "number": "5072",
+      "congress": 116,
+      "title": "A Just Society: A Place to Prosper Act of 2019",
+      "introduced_date": "2019-11-13",
+      "latest_action": {
+        "date": "2019-12-18",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr5073-116",
+      "type": "hr",
+      "number": "5073",
+      "congress": 116,
+      "title": "A Just Society: The Uplift Our Workers Act",
+      "introduced_date": "2019-11-13",
+      "latest_action": {
+        "date": "2020-11-19",
+        "text": "Message on Senate action sent to the House."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hres666-116",
+      "type": "hres",
+      "number": "666",
+      "congress": 116,
+      "title": "Expressing the sense of the House of Representatives on the ratification of the United Nations Covenant on Economic, Social and Cultural Rights.",
+      "introduced_date": "2019-10-30",
+      "latest_action": {
+        "date": "2019-10-30",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "-116",
+      "type": "",
+      "number": "",
+      "congress": 116,
+      "title": "",
+      "introduced_date": "2019-07-11",
+      "latest_action": {
+        "date": "2019-07-12",
+        "text": "On agreeing to the Ocasio-Cortez amendment (A052) Failed by recorded vote: 179 - 241, 1 Present (Roll no. 467). (consideration: CR H5756-5757)"
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-116",
+      "type": "",
+      "number": "",
+      "congress": 116,
+      "title": "",
+      "introduced_date": "2019-07-11",
+      "latest_action": {
+        "date": "2019-07-12",
+        "text": "On agreeing to the Ocasio-Cortez amendment (A053) Failed by recorded vote: 173 - 245 (Roll no. 468). (consideration: CR H5757)"
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr3685-116",
+      "type": "hr",
+      "number": "3685",
+      "congress": 116,
+      "title": "Fair Chance at Housing Act of 2018",
+      "introduced_date": "2019-07-10",
+      "latest_action": {
+        "date": "2019-07-10",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "-116",
+      "type": "",
+      "number": "",
+      "congress": 116,
+      "title": "",
+      "introduced_date": "2019-06-20",
+      "latest_action": {
+        "date": "2019-06-20",
+        "text": "On agreeing to the Ocasio-Cortez amendment (A031) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-116",
+      "type": "",
+      "number": "",
+      "congress": 116,
+      "title": "",
+      "introduced_date": "2019-06-13",
+      "latest_action": {
+        "date": "2019-06-13",
+        "text": "On agreeing to the Ocasio-Cortez amendment (A055) Failed by recorded vote: 91 - 331 (Roll no. 304). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-116",
+      "type": "",
+      "number": "",
+      "congress": 116,
+      "title": "",
+      "introduced_date": "2019-06-13",
+      "latest_action": {
+        "date": "2019-06-13",
+        "text": "On agreeing to the Ocasio-Cortez amendment (A054) Agreed to by recorded vote: 264 - 158 (Roll no. 303). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr2930-116",
+      "type": "hr",
+      "number": "2930",
+      "congress": 116,
+      "title": "Loan Shark Prevention Act",
+      "introduced_date": "2019-05-22",
+      "latest_action": {
+        "date": "2019-05-22",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hres109-116",
+      "type": "hres",
+      "number": "109",
+      "congress": 116,
+      "title": "Recognizing the duty of the Federal Government to create a Green New Deal.",
+      "introduced_date": "2019-02-07",
+      "latest_action": {
+        "date": "2019-02-12",
+        "text": "Referred to the Subcommittee on Energy and Mineral Resources."
+      },
+      "policy_area": "Environmental Protection"
+    }
+  ]
+}

@@ -1,0 +1,4779 @@
+{
+  "bioguide_id": "G000553",
+  "congress": 119,
+  "kind": "sponsored",
+  "generated_at": "2026-05-07T19:19:19Z",
+  "bills": [
+    {
+      "id": "hr8647-119",
+      "type": "hr",
+      "number": "8647",
+      "congress": 119,
+      "title": "Representative Green's Original Legislation to increase from 9 to 13 the number of justices of the Supreme Court.",
+      "introduced_date": "2026-05-04",
+      "latest_action": {
+        "date": "2026-05-04",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hjres160-119",
+      "type": "hjres",
+      "number": "160",
+      "congress": 119,
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"Consumer Financial Protection Circular 2024-04: Whistleblower Protections Under CFPA Section 1057\".",
+      "introduced_date": "2026-04-30",
+      "latest_action": {
+        "date": "2026-04-30",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hres1226-119",
+      "type": "hres",
+      "number": "1226",
+      "congress": 119,
+      "title": "Original Resolution Condemning President Donald J. Trump for his disgraceful, despicable, and disrespectful social media post depicting himself as Jesus Christ, diminishing the dignity of the Presidency and bringing disrepute to the office",
+      "introduced_date": "2026-04-29",
+      "latest_action": {
+        "date": "2026-04-29",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hres1225-119",
+      "type": "hres",
+      "number": "1225",
+      "congress": 119,
+      "title": "Original Resolution Commending the Islamic Republic of Pakistan for its efforts to facilitate peace between the United States and Israel with Iran",
+      "introduced_date": "2026-04-29",
+      "latest_action": {
+        "date": "2026-04-29",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr8411-119",
+      "type": "hr",
+      "number": "8411",
+      "congress": 119,
+      "title": "Original Legislation to Give TSA Employees a Raise",
+      "introduced_date": "2026-04-21",
+      "latest_action": {
+        "date": "2026-04-21",
+        "text": "Referred to the House Committee on Homeland Security."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr8318-119",
+      "type": "hr",
+      "number": "8318",
+      "congress": 119,
+      "title": "Original Additional Credit FHA Pilot Program Authorization Act",
+      "introduced_date": "2026-04-16",
+      "latest_action": {
+        "date": "2026-04-16",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr8291-119",
+      "type": "hr",
+      "number": "8291",
+      "congress": 119,
+      "title": "Reforming Disaster Recovery Act",
+      "introduced_date": "2026-04-15",
+      "latest_action": {
+        "date": "2026-04-15",
+        "text": "Referred to the Committee on Financial Services, and in addition to the Committee on Appropriations, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr8292-119",
+      "type": "hr",
+      "number": "8292",
+      "congress": 119,
+      "title": "Original Alternative Data for Additional Credit FHA Pilot Program Reauthorization Act",
+      "introduced_date": "2026-04-15",
+      "latest_action": {
+        "date": "2026-04-15",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hres1159-119",
+      "type": "hres",
+      "number": "1159",
+      "congress": 119,
+      "title": "Original Resolution Condemning the Hateful and Islamophobic Comments of Representative Andy Ogles",
+      "introduced_date": "2026-04-09",
+      "latest_action": {
+        "date": "2026-04-09",
+        "text": "Referred to the House Committee on Ethics."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "hr8071-119",
+      "type": "hr",
+      "number": "8071",
+      "congress": 119,
+      "title": "Strengthening and Improving Mobilization Act of 2026",
+      "introduced_date": "2026-03-25",
+      "latest_action": {
+        "date": "2026-03-25",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hres1080-119",
+      "type": "hres",
+      "number": "1080",
+      "congress": 119,
+      "title": "Original Black History Month Resolution of 2026",
+      "introduced_date": "2026-02-25",
+      "latest_action": {
+        "date": "2026-02-25",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr7053-119",
+      "type": "hr",
+      "number": "7053",
+      "congress": 119,
+      "title": "Preemption of Real Property Discrimination Act",
+      "introduced_date": "2026-01-14",
+      "latest_action": {
+        "date": "2026-01-14",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Law"
+    },
+    {
+      "id": "hres970-119",
+      "type": "hres",
+      "number": "970",
+      "congress": 119,
+      "title": "Original Resolution Calling on the United States Government to Help Bring Peace to Sudan",
+      "introduced_date": "2025-12-19",
+      "latest_action": {
+        "date": "2025-12-19",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hres962-119",
+      "type": "hres",
+      "number": "962",
+      "congress": 119,
+      "title": "Original Resolution Honoring Harriet Tubman",
+      "introduced_date": "2025-12-18",
+      "latest_action": {
+        "date": "2025-12-18",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres939-119",
+      "type": "hres",
+      "number": "939",
+      "congress": 119,
+      "title": "Impeaching Donald John Trump, President of the United States for high crimes and misdemeanors.",
+      "introduced_date": "2025-12-10",
+      "latest_action": {
+        "date": "2025-12-11",
+        "text": "Motion to reconsider laid on the table Agreed to without objection."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr5909-119",
+      "type": "hr",
+      "number": "5909",
+      "congress": 119,
+      "title": "To direct the Secretary of Housing and Urban Development to establish procedures for reporting of condemned Federally assisted rental housing and to authorize penalties related to such condemned housing, and for other purposes.",
+      "introduced_date": "2025-11-04",
+      "latest_action": {
+        "date": "2025-11-04",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hres846-119",
+      "type": "hres",
+      "number": "846",
+      "congress": 119,
+      "title": "Original National Domestic Violence Awareness Month Resolution of 2025",
+      "introduced_date": "2025-10-31",
+      "latest_action": {
+        "date": "2025-10-31",
+        "text": "Referred to the House Committee on Education and Workforce."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hres768-119",
+      "type": "hres",
+      "number": "768",
+      "congress": 119,
+      "title": "Original Resolution Honoring Alpha Phi Alpha",
+      "introduced_date": "2025-09-26",
+      "latest_action": {
+        "date": "2025-09-26",
+        "text": "Referred to the House Committee on Education and Workforce."
+      },
+      "policy_area": "Education"
+    },
+    {
+      "id": "hres769-119",
+      "type": "hres",
+      "number": "769",
+      "congress": 119,
+      "title": "Original Resolution Affirming the State of Palestine’s Right to Exist",
+      "introduced_date": "2025-09-26",
+      "latest_action": {
+        "date": "2025-09-26",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hjres113-119",
+      "type": "hjres",
+      "number": "113",
+      "congress": 119,
+      "title": "Original Slavery Remembrance Day Resolution",
+      "introduced_date": "2025-08-15",
+      "latest_action": {
+        "date": "2025-08-15",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres650-119",
+      "type": "hres",
+      "number": "650",
+      "congress": 119,
+      "title": "Original Resolution Condemning the Racist Mid-Decade Texas Redistricting Ordered by President Donald J. Trump",
+      "introduced_date": "2025-08-15",
+      "latest_action": {
+        "date": "2025-08-15",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hres645-119",
+      "type": "hres",
+      "number": "645",
+      "congress": 119,
+      "title": "Original Resolution Honoring John Brown",
+      "introduced_date": "2025-08-08",
+      "latest_action": {
+        "date": "2025-08-08",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hres644-119",
+      "type": "hres",
+      "number": "644",
+      "congress": 119,
+      "title": "Original Resolution Honoring the 25th Army Corps",
+      "introduced_date": "2025-08-08",
+      "latest_action": {
+        "date": "2025-08-08",
+        "text": "Referred to the House Committee on Armed Services."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hres646-119",
+      "type": "hres",
+      "number": "646",
+      "congress": 119,
+      "title": "Calling on the Senate to remove the name of Richard B. Russell from the Russell Senate Office Building.",
+      "introduced_date": "2025-08-08",
+      "latest_action": {
+        "date": "2025-08-09",
+        "text": "Referred to the Subcommittee on Economic Development, Public Buildings, and Emergency Management."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "hr4925-119",
+      "type": "hr",
+      "number": "4925",
+      "congress": 119,
+      "title": "Original Securities and Exchange Atonement Act of 2025",
+      "introduced_date": "2025-08-08",
+      "latest_action": {
+        "date": "2025-08-08",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hres633-119",
+      "type": "hres",
+      "number": "633",
+      "congress": 119,
+      "title": "Original Resolution Honoring Prince Hall",
+      "introduced_date": "2025-08-05",
+      "latest_action": {
+        "date": "2025-08-05",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr4885-119",
+      "type": "hr",
+      "number": "4885",
+      "congress": 119,
+      "title": "The original legislation awarding a historic Congressional Gold Medal, collectively, to Africans and their descendants enslaved within our country from August 20, 1619, to December 6, 1865",
+      "introduced_date": "2025-08-05",
+      "latest_action": {
+        "date": "2025-08-05",
+        "text": "Referred to the Committee on Financial Services, and in addition to the Committees on House Administration, and the Budget, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres634-119",
+      "type": "hres",
+      "number": "634",
+      "congress": 119,
+      "title": "The Original Resolution Recognizing Al Edwards as the Father of Juneteenth",
+      "introduced_date": "2025-08-05",
+      "latest_action": {
+        "date": "2025-08-05",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres632-119",
+      "type": "hres",
+      "number": "632",
+      "congress": 119,
+      "title": "Recognizing the courageous actions of Reverend Nat Turner in his fight to abolish slavery and make the majestic words of the Jeffersonian Declaration of Independence, \"We hold these truths to be self-evident, that all men are created equal, that they are endowed by their creator with certain unalienable rights, that among these are life, liberty, and the pursuit of happiness\", apply to the enslaved, and for other purposes.",
+      "introduced_date": "2025-08-05",
+      "latest_action": {
+        "date": "2025-08-05",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr3716-119",
+      "type": "hr",
+      "number": "3716",
+      "congress": 119,
+      "title": "Systemic Risk Authority Transparency Act",
+      "introduced_date": "2025-06-04",
+      "latest_action": {
+        "date": "2025-12-02",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr4228-119",
+      "type": "hr",
+      "number": "4228",
+      "congress": 119,
+      "title": "Original Justice for living survivors of the 1921 Tulsa/Greenwood Race Massacre Act",
+      "introduced_date": "2025-06-27",
+      "latest_action": {
+        "date": "2025-06-27",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hres550-119",
+      "type": "hres",
+      "number": "550",
+      "congress": 119,
+      "title": "Original LGBTQIA+ Pride Month Resolution of 2025",
+      "introduced_date": "2025-06-26",
+      "latest_action": {
+        "date": "2025-06-27",
+        "text": "Sponsor introductory remarks on measure. (CR H3027-3028)"
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres537-119",
+      "type": "hres",
+      "number": "537",
+      "congress": 119,
+      "title": "Impeaching Donald J. Trump, President of the United States, for high crimes and misdemeanors.",
+      "introduced_date": "2025-06-24",
+      "latest_action": {
+        "date": "2025-06-24",
+        "text": "Motion to reconsider laid on the table Agreed to without objection."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hres415-119",
+      "type": "hres",
+      "number": "415",
+      "congress": 119,
+      "title": "Impeaching Donald John Trump, President of the United States, of high crimes and misdemeanors.",
+      "introduced_date": "2025-05-15",
+      "latest_action": {
+        "date": "2025-05-15",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr2983-119",
+      "type": "hr",
+      "number": "2983",
+      "congress": 119,
+      "title": "SNAP SECURE Act of 2025",
+      "introduced_date": "2025-04-24",
+      "latest_action": {
+        "date": "2025-04-24",
+        "text": "Referred to the House Committee on Agriculture."
+      },
+      "policy_area": "Agriculture and Food"
+    },
+    {
+      "id": "hr2843-119",
+      "type": "hr",
+      "number": "2843",
+      "congress": 119,
+      "title": "Reconciliation in Place Names Act",
+      "introduced_date": "2025-04-10",
+      "latest_action": {
+        "date": "2025-04-10",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hres181-119",
+      "type": "hres",
+      "number": "181",
+      "congress": 119,
+      "title": "Original Black History Month Resolution of 2025",
+      "introduced_date": "2025-03-03",
+      "latest_action": {
+        "date": "2025-03-03",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hjres67-119",
+      "type": "hjres",
+      "number": "67",
+      "congress": 119,
+      "title": "Original Slavery Remembrance Month Resolution",
+      "introduced_date": "2025-03-03",
+      "latest_action": {
+        "date": "2025-03-03",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr124-119",
+      "type": "hr",
+      "number": "124",
+      "congress": 119,
+      "title": "Byron Nash Renal Medullary Carcinoma Awareness Act of 2023",
+      "introduced_date": "2025-01-03",
+      "latest_action": {
+        "date": "2025-01-03",
+        "text": "Referred to the House Committee on Energy and Commerce."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr126-119",
+      "type": "hr",
+      "number": "126",
+      "congress": 119,
+      "title": "Original Students Voicing Opinions in Today’s Elections (VOTE) Act",
+      "introduced_date": "2025-01-03",
+      "latest_action": {
+        "date": "2025-01-03",
+        "text": "Referred to the House Committee on House Administration."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr122-119",
+      "type": "hr",
+      "number": "122",
+      "congress": 119,
+      "title": "Original LAW Act",
+      "introduced_date": "2025-01-03",
+      "latest_action": {
+        "date": "2025-01-03",
+        "text": "Referred to the House Committee on Education and Workforce."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr39-119",
+      "type": "hr",
+      "number": "39",
+      "congress": 119,
+      "title": "Original Honoring Our WWII Merchant Mariners Act of 2025",
+      "introduced_date": "2025-01-03",
+      "latest_action": {
+        "date": "2025-12-19",
+        "text": "Referred to the Subcommittee on Disability Assistance and Memorial Affairs."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr68-119",
+      "type": "hr",
+      "number": "68",
+      "congress": 119,
+      "title": "Housing Fairness Act of 2025",
+      "introduced_date": "2025-01-03",
+      "latest_action": {
+        "date": "2025-01-03",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr166-119",
+      "type": "hr",
+      "number": "166",
+      "congress": 119,
+      "title": "Fair Lending for All Act",
+      "introduced_date": "2025-01-03",
+      "latest_action": {
+        "date": "2025-01-03",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hres1578-118",
+      "type": "hres",
+      "number": "1578",
+      "congress": 118,
+      "title": "Original Resolution honoring and commending the American Jewish Committee on its 118th anniversary",
+      "introduced_date": "2024-11-18",
+      "latest_action": {
+        "date": "2024-11-18",
+        "text": "Referred to the House Committee on Oversight and Accountability."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hres1559-118",
+      "type": "hres",
+      "number": "1559",
+      "congress": 118,
+      "title": "Original Resolution Recognizing Islam as One of the Great Religions of the World",
+      "introduced_date": "2024-11-01",
+      "latest_action": {
+        "date": "2024-11-01",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hres1558-118",
+      "type": "hres",
+      "number": "1558",
+      "congress": 118,
+      "title": "Original National Domestic Violence Awareness Month Resolution of 2024",
+      "introduced_date": "2024-11-01",
+      "latest_action": {
+        "date": "2024-11-01",
+        "text": "Referred to the House Committee on Education and the Workforce."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hres1546-118",
+      "type": "hres",
+      "number": "1546",
+      "congress": 118,
+      "title": "Original resolution calling for, among other things, the inclusion of peace with a two state solution in H. Res. 1537 by way of a manager’s amendment or amendment in the Committee on Rules",
+      "introduced_date": "2024-10-18",
+      "latest_action": {
+        "date": "2024-10-18",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hconres125-118",
+      "type": "hconres",
+      "number": "125",
+      "congress": 118,
+      "title": "Original Slavery Remembrance Day Commemorative Remembrance Program Resolution",
+      "introduced_date": "2024-08-09",
+      "latest_action": {
+        "date": "2024-08-09",
+        "text": "Referred to the House Committee on Oversight and Accountability."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr9330-118",
+      "type": "hr",
+      "number": "9330",
+      "congress": 118,
+      "title": "Original Prince Hall Commemorative Stamp Act",
+      "introduced_date": "2024-08-09",
+      "latest_action": {
+        "date": "2024-08-09",
+        "text": "Referred to the Committee on Oversight and Accountability, and in addition to the Committee on Education and the Workforce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hres1413-118",
+      "type": "hres",
+      "number": "1413",
+      "congress": 118,
+      "title": "Original Resolution Honoring Prince Hall",
+      "introduced_date": "2024-08-09",
+      "latest_action": {
+        "date": "2024-08-09",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr9329-118",
+      "type": "hr",
+      "number": "9329",
+      "congress": 118,
+      "title": "To posthumously award a Congressional Gold Medal to Prince Hall, in recognition of his service to the Black Community as the founder of the first Black Masonic lodge.",
+      "introduced_date": "2024-08-09",
+      "latest_action": {
+        "date": "2024-08-09",
+        "text": "Referred to the Committee on Financial Services, and in addition to the Committee on House Administration, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "hr8933-118",
+      "type": "hr",
+      "number": "8933",
+      "congress": 118,
+      "title": "Original Securities and Exchange Atonement Act of 2024",
+      "introduced_date": "2024-07-05",
+      "latest_action": {
+        "date": "2024-07-05",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hres1332-118",
+      "type": "hres",
+      "number": "1332",
+      "congress": 118,
+      "title": "Original LGBTQIA+ Pride Month Resolution of 2024",
+      "introduced_date": "2024-06-28",
+      "latest_action": {
+        "date": "2024-06-28",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hconres116-118",
+      "type": "hconres",
+      "number": "116",
+      "congress": 118,
+      "title": "Original Resolution to Commemorate Slavery Remembrance Day in Emancipation Hall",
+      "introduced_date": "2024-06-25",
+      "latest_action": {
+        "date": "2024-06-25",
+        "text": "Referred to the House Committee on House Administration."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "hr8103-118",
+      "type": "hr",
+      "number": "8103",
+      "congress": 118,
+      "title": "Department of Homeland Security Office for Civil Rights and Civil Liberties Authorization Act",
+      "introduced_date": "2024-04-20",
+      "latest_action": {
+        "date": "2024-04-20",
+        "text": "Referred to the Subcommittee on Oversight, Investigations, and Accountability."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres1161-118",
+      "type": "hres",
+      "number": "1161",
+      "congress": 118,
+      "title": "Original Resolution Commemorating Innocent Civilian Lives Lost in Gaza, Especially Children",
+      "introduced_date": "2024-04-19",
+      "latest_action": {
+        "date": "2024-04-19",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr7905-118",
+      "type": "hr",
+      "number": "7905",
+      "congress": 118,
+      "title": "STAMP Act of 2024",
+      "introduced_date": "2024-04-09",
+      "latest_action": {
+        "date": "2024-04-09",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Taxation"
+    },
+    {
+      "id": "hres1040-118",
+      "type": "hres",
+      "number": "1040",
+      "congress": 118,
+      "title": "Recognizing and celebrating the significance of Black History Month.",
+      "introduced_date": "2024-02-29",
+      "latest_action": {
+        "date": "2024-02-29",
+        "text": "Referred to the House Committee on Oversight and Accountability."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres902-118",
+      "type": "hres",
+      "number": "902",
+      "congress": 118,
+      "title": "Original Resolution Affirming the State of Palestine’s Right to Exist",
+      "introduced_date": "2023-12-01",
+      "latest_action": {
+        "date": "2023-12-01",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hres831-118",
+      "type": "hres",
+      "number": "831",
+      "congress": 118,
+      "title": "Original National Domestic Violence Awareness Month Resolution of 2023",
+      "introduced_date": "2023-11-01",
+      "latest_action": {
+        "date": "2023-11-01",
+        "text": "Referred to the House Committee on Education and the Workforce."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr5940-118",
+      "type": "hr",
+      "number": "5940",
+      "congress": 118,
+      "title": "Reforming Disaster Recovery Act",
+      "introduced_date": "2023-10-12",
+      "latest_action": {
+        "date": "2023-10-25",
+        "text": "Referred to the Committee on Financial Services, and in addition to the Committee on Appropriations, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hres664-118",
+      "type": "hres",
+      "number": "664",
+      "congress": 118,
+      "title": "Original Resolution Honoring the 25th Army Corps",
+      "introduced_date": "2023-08-25",
+      "latest_action": {
+        "date": "2023-08-25",
+        "text": "Referred to the House Committee on Armed Services."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr5223-118",
+      "type": "hr",
+      "number": "5223",
+      "congress": 118,
+      "title": "Original Open for Business Act of 2023",
+      "introduced_date": "2023-08-18",
+      "latest_action": {
+        "date": "2023-08-18",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hres659-118",
+      "type": "hres",
+      "number": "659",
+      "congress": 118,
+      "title": "Recognizing the 25th Army Corps of the Union Army and thanking them for their role in capturing Galveston, Texas, on June 5th, 1865, and liberating thousands of enslaved people.",
+      "introduced_date": "2023-08-22",
+      "latest_action": {
+        "date": "2023-08-22",
+        "text": "Referred to the House Committee on Armed Services."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hres660-118",
+      "type": "hres",
+      "number": "660",
+      "congress": 118,
+      "title": "Recognizing the courageous actions of Reverend Nat Turner in his fight to abolish slavery and make the majestic words of the Jeffersonian Declaration of Independence, \"We hold these truths to be self-evident, that all men are created equal, that they are endowed by their creator with certain unalienable rights, that among these are life, liberty, and the pursuit of happiness\", apply to the enslaved, and for other purposes.",
+      "introduced_date": "2023-08-22",
+      "latest_action": {
+        "date": "2023-08-22",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres656-118",
+      "type": "hres",
+      "number": "656",
+      "congress": 118,
+      "title": "Original Resolution Honoring John Brown",
+      "introduced_date": "2023-08-18",
+      "latest_action": {
+        "date": "2023-08-18",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hres657-118",
+      "type": "hres",
+      "number": "657",
+      "congress": 118,
+      "title": "Declaring unconditional war on racism and invidious discrimination and providing for the establishment of a Cabinet-level Department of Reconciliation charged with eliminating racism and invidious discrimination.",
+      "introduced_date": "2023-08-18",
+      "latest_action": {
+        "date": "2023-08-18",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hconres62-118",
+      "type": "hconres",
+      "number": "62",
+      "congress": 118,
+      "title": "Original Slavery Remembrance Day Memorialization Resolution",
+      "introduced_date": "2023-08-18",
+      "latest_action": {
+        "date": "2023-08-18",
+        "text": "Referred to the House Committee on Oversight and Accountability."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres654-118",
+      "type": "hres",
+      "number": "654",
+      "congress": 118,
+      "title": "Calling on the Senate to remove the name of Richard B. Russell from the Russell Senate Office Building.",
+      "introduced_date": "2023-08-18",
+      "latest_action": {
+        "date": "2023-08-21",
+        "text": "Referred to the Subcommittee on Economic Development, Public Buildings, and Emergency Management."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "hres655-118",
+      "type": "hres",
+      "number": "655",
+      "congress": 118,
+      "title": "Original Resolution Honoring Houston’s Seven Major Black Newspapers",
+      "introduced_date": "2023-08-18",
+      "latest_action": {
+        "date": "2023-08-18",
+        "text": "Referred to the House Committee on Oversight and Accountability."
+      },
+      "policy_area": "Arts, Culture, Religion"
+    },
+    {
+      "id": "hr5214-118",
+      "type": "hr",
+      "number": "5214",
+      "congress": 118,
+      "title": "Original Open for Business Act of 2023",
+      "introduced_date": "2023-08-15",
+      "latest_action": {
+        "date": "2023-08-15",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hjres84-118",
+      "type": "hjres",
+      "number": "84",
+      "congress": 118,
+      "title": "Original Slavery Remembrance Day Resolution",
+      "introduced_date": "2023-08-01",
+      "latest_action": {
+        "date": "2023-08-01",
+        "text": "Referred to the House Committee on Oversight and Accountability."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres635-118",
+      "type": "hres",
+      "number": "635",
+      "congress": 118,
+      "title": "Original Resolution Recognizing Islam as One of the Great Religions of the World",
+      "introduced_date": "2023-07-28",
+      "latest_action": {
+        "date": "2023-07-28",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hres568-118",
+      "type": "hres",
+      "number": "568",
+      "congress": 118,
+      "title": "Original LGBTQIA+ Pride Month Resolution of 2023",
+      "introduced_date": "2023-06-30",
+      "latest_action": {
+        "date": "2023-06-30",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres569-118",
+      "type": "hres",
+      "number": "569",
+      "congress": 118,
+      "title": "The Original Resolution Recognizing Al Edwards as the Father of Juneteenth",
+      "introduced_date": "2023-06-30",
+      "latest_action": {
+        "date": "2023-06-30",
+        "text": "Referred to the House Committee on Oversight and Accountability."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr4204-118",
+      "type": "hr",
+      "number": "4204",
+      "congress": 118,
+      "title": "Shielding Community Banks from Systemic Risk Assessments Act",
+      "introduced_date": "2023-06-20",
+      "latest_action": {
+        "date": "2023-06-20",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr4116-118",
+      "type": "hr",
+      "number": "4116",
+      "congress": 118,
+      "title": "Systemic Risk Authority Transparency Act",
+      "introduced_date": "2023-06-14",
+      "latest_action": {
+        "date": "2024-07-30",
+        "text": "Placed on the Union Calendar, Calendar No. 512."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr3747-118",
+      "type": "hr",
+      "number": "3747",
+      "congress": 118,
+      "title": "To rename the Richard B. Russell National School Lunch Act, and for other purposes.",
+      "introduced_date": "2023-05-30",
+      "latest_action": {
+        "date": "2023-05-31",
+        "text": "Referred to the Subcommittee on Economic Development, Public Buildings, and Emergency Management."
+      },
+      "policy_area": "Agriculture and Food"
+    },
+    {
+      "id": "hr3697-118",
+      "type": "hr",
+      "number": "3697",
+      "congress": 118,
+      "title": "Preemption of Real Property Discrimination Act",
+      "introduced_date": "2023-05-25",
+      "latest_action": {
+        "date": "2023-05-25",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Law"
+    },
+    {
+      "id": "hres337-118",
+      "type": "hres",
+      "number": "337",
+      "congress": 118,
+      "title": "Original Fair Housing Resolution of 2023",
+      "introduced_date": "2023-04-28",
+      "latest_action": {
+        "date": "2023-04-28",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr2465-118",
+      "type": "hr",
+      "number": "2465",
+      "congress": 118,
+      "title": "Financial Compensation for CFPB Whistleblowers Act",
+      "introduced_date": "2023-04-03",
+      "latest_action": {
+        "date": "2023-04-03",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr124-118",
+      "type": "hr",
+      "number": "124",
+      "congress": 118,
+      "title": "Byron Nash Renal Medullary Carcinoma Awareness Act of 2023",
+      "introduced_date": "2023-01-09",
+      "latest_action": {
+        "date": "2023-01-20",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr1244-118",
+      "type": "hr",
+      "number": "1244",
+      "congress": 118,
+      "title": "The original legislation awarding a historic Congressional Gold Medal, collectively, to Africans and their descendants enslaved within our country from August 20, 1619, to December 6, 1865",
+      "introduced_date": "2023-02-28",
+      "latest_action": {
+        "date": "2023-02-28",
+        "text": "Referred to the Committee on Financial Services, and in addition to the Committees on House Administration, and the Budget, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres184-118",
+      "type": "hres",
+      "number": "184",
+      "congress": 118,
+      "title": "Original Black History Month Resolution of 2023",
+      "introduced_date": "2023-02-28",
+      "latest_action": {
+        "date": "2023-02-28",
+        "text": "Referred to the House Committee on Oversight and Accountability."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr166-118",
+      "type": "hr",
+      "number": "166",
+      "congress": 118,
+      "title": "Fair Lending for All Act",
+      "introduced_date": "2023-01-09",
+      "latest_action": {
+        "date": "2023-01-09",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr123-118",
+      "type": "hr",
+      "number": "123",
+      "congress": 118,
+      "title": "Alternative Data for Additional Credit FHA Pilot Program Reauthorization Act",
+      "introduced_date": "2023-01-09",
+      "latest_action": {
+        "date": "2023-01-09",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr39-118",
+      "type": "hr",
+      "number": "39",
+      "congress": 118,
+      "title": "Honoring Our WWII Merchant Mariners Act of 2023",
+      "introduced_date": "2023-01-09",
+      "latest_action": {
+        "date": "2023-03-21",
+        "text": "Referred to the Subcommittee on Disability Assistance and Memorial Affairs."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr122-118",
+      "type": "hr",
+      "number": "122",
+      "congress": 118,
+      "title": "Original Living Wage Act",
+      "introduced_date": "2023-01-09",
+      "latest_action": {
+        "date": "2023-01-09",
+        "text": "Referred to the House Committee on Education and the Workforce."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr126-118",
+      "type": "hr",
+      "number": "126",
+      "congress": 118,
+      "title": "Students Voicing Opinions in Today’s Elections (VOTE) Act",
+      "introduced_date": "2023-01-09",
+      "latest_action": {
+        "date": "2023-01-09",
+        "text": "Referred to the House Committee on House Administration."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr68-118",
+      "type": "hr",
+      "number": "68",
+      "congress": 118,
+      "title": "Housing Fairness Act of 2023",
+      "introduced_date": "2023-01-09",
+      "latest_action": {
+        "date": "2023-01-09",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "-118",
+      "type": "",
+      "number": "",
+      "congress": 118,
+      "title": "",
+      "introduced_date": "2023-06-14",
+      "latest_action": {
+        "date": "2023-06-14",
+        "text": "On agreeing to the Green, Al (TX) amendment (A011) Failed by recorded vote: 213 - 221 (Roll no. 260). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-118",
+      "type": "",
+      "number": "",
+      "congress": 118,
+      "title": "",
+      "introduced_date": "2023-06-14",
+      "latest_action": {
+        "date": "2023-06-14",
+        "text": "On agreeing to the Green, Al (TX) amendment (A010) Failed by recorded vote: 207 - 225 (Roll no. 259). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr9437-117",
+      "type": "hr",
+      "number": "9437",
+      "congress": 117,
+      "title": "Securities and Exchange Atonement Act of 2022",
+      "introduced_date": "2022-12-06",
+      "latest_action": {
+        "date": "2022-12-06",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr9276-117",
+      "type": "hr",
+      "number": "9276",
+      "congress": 117,
+      "title": "For the relief of Jaime Avalos Rosales.",
+      "introduced_date": "2022-11-03",
+      "latest_action": {
+        "date": "2022-11-03",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Private Legislation"
+    },
+    {
+      "id": "hr9261-117",
+      "type": "hr",
+      "number": "9261",
+      "congress": 117,
+      "title": "Exception for Certain Bars to Admissibility Relating to Previous Unlawful Entry as Children Act",
+      "introduced_date": "2022-11-03",
+      "latest_action": {
+        "date": "2022-11-03",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "hres1451-117",
+      "type": "hres",
+      "number": "1451",
+      "congress": 117,
+      "title": "Original National Domestic Violence Awareness Month Resolution of 2022",
+      "introduced_date": "2022-10-28",
+      "latest_action": {
+        "date": "2022-10-28",
+        "text": "Referred to the House Committee on Education and Labor."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr9055-117",
+      "type": "hr",
+      "number": "9055",
+      "congress": 117,
+      "title": "To provide for the posthumous commission as a captain in the regular Army of Milton Holland, who, while sergeant major of the 5th Regiment, United States Colored Infantry, was awarded the Medal of Honor for gallantry during the Civil War.",
+      "introduced_date": "2022-09-29",
+      "latest_action": {
+        "date": "2022-09-29",
+        "text": "Referred to the House Committee on Armed Services."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hres1305-117",
+      "type": "hres",
+      "number": "1305",
+      "congress": 117,
+      "title": "Recognizing Islam as one of the great religions of the world.",
+      "introduced_date": "2022-07-29",
+      "latest_action": {
+        "date": "2022-07-29",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "-117",
+      "type": "",
+      "number": "",
+      "congress": 117,
+      "title": "",
+      "introduced_date": "2022-07-14",
+      "latest_action": {
+        "date": "2022-07-14",
+        "text": "On agreeing to the Green, Al (TX) amendment (A037) Agreed to by the Yeas and Nays: 216 - 208 (Roll no. 343). (consideration: CR H6599)"
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr8269-117",
+      "type": "hr",
+      "number": "8269",
+      "congress": 117,
+      "title": "PATH Data Act of 2022",
+      "introduced_date": "2022-07-01",
+      "latest_action": {
+        "date": "2022-07-01",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hres1198-117",
+      "type": "hres",
+      "number": "1198",
+      "congress": 117,
+      "title": "Encouraging the celebration of the month of June as LGBTQIA+ Pride Month.",
+      "introduced_date": "2022-06-22",
+      "latest_action": {
+        "date": "2022-11-01",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr8107-117",
+      "type": "hr",
+      "number": "8107",
+      "congress": 117,
+      "title": "STAMP Act of 2022.",
+      "introduced_date": "2022-06-16",
+      "latest_action": {
+        "date": "2022-11-01",
+        "text": "Referred to the Subcommittee on Antitrust, Commercial, and Administrative Law."
+      },
+      "policy_area": "Taxation"
+    },
+    {
+      "id": "-117",
+      "type": "",
+      "number": "",
+      "congress": 117,
+      "title": "",
+      "introduced_date": "2022-06-15",
+      "latest_action": {
+        "date": "2022-06-15",
+        "text": "On agreeing to the Green, Al (TX) amendments (A002) Agreed to by the Yeas and Nays: 217 - 192 (Roll no. 270). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-117",
+      "type": "",
+      "number": "",
+      "congress": 117,
+      "title": "",
+      "introduced_date": "2022-06-15",
+      "latest_action": {
+        "date": "2022-06-15",
+        "text": "On agreeing to the Green, Al (TX) amendments (A003) Failed by the Yeas and Nays: 202 - 217 (Roll no. 271). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hres1078-117",
+      "type": "hres",
+      "number": "1078",
+      "congress": 117,
+      "title": "Promoting and supporting the goals and ideals of the Fair Housing Act and recognizing April 2022 as Fair Housing Month, which includes bringing attention to the discrimination faced by everyday Americans in the United States in housing and housing-related transactions on the basis of race, color, national origin, sex, sexual orientation, gender identity, familial status, disability, and religion, particularly during the COVID-19 pandemic.",
+      "introduced_date": "2022-04-29",
+      "latest_action": {
+        "date": "2022-11-01",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hres942-117",
+      "type": "hres",
+      "number": "942",
+      "congress": 117,
+      "title": "Original Black History Month Resolution of 2022",
+      "introduced_date": "2022-02-25",
+      "latest_action": {
+        "date": "2022-02-25",
+        "text": "Referred to the House Committee on Oversight and Reform."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres919-117",
+      "type": "hres",
+      "number": "919",
+      "congress": 117,
+      "title": "Declaring unconditional war on racism and invidious discrimination and providing for the establishment of a Cabinet-level Department of Reconciliation charged with eliminating racism and invidious discrimination.",
+      "introduced_date": "2022-02-09",
+      "latest_action": {
+        "date": "2022-11-01",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres920-117",
+      "type": "hres",
+      "number": "920",
+      "congress": 117,
+      "title": "Calling on the Senate to remove the name of Richard B. Russell from the Russell Senate Office Building.",
+      "introduced_date": "2022-02-09",
+      "latest_action": {
+        "date": "2022-02-10",
+        "text": "Referred to the Subcommittee on Economic Development, Public Buildings, and Emergency Management."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "hjres64-117",
+      "type": "hjres",
+      "number": "64",
+      "congress": 117,
+      "title": "Original Slavery Remembrance Day Resolution",
+      "introduced_date": "2021-11-17",
+      "latest_action": {
+        "date": "2021-11-17",
+        "text": "Referred to the House Committee on Oversight and Reform."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr5865-117",
+      "type": "hr",
+      "number": "5865",
+      "congress": 117,
+      "title": "To designate the facility of the United States Postal Service located at 4110 Bluebonnet Drive in Stafford, Texas, as the \"Leonard Scarcella Post Office Building\".",
+      "introduced_date": "2021-11-04",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-282."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hres746-117",
+      "type": "hres",
+      "number": "746",
+      "congress": 117,
+      "title": "Original National Domestic Violence Awareness Month Resolution of 2021",
+      "introduced_date": "2021-10-26",
+      "latest_action": {
+        "date": "2021-10-26",
+        "text": "Referred to the House Committee on Education and Labor."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr4707-117",
+      "type": "hr",
+      "number": "4707",
+      "congress": 117,
+      "title": "Reforming Disaster Recovery Act",
+      "introduced_date": "2021-07-27",
+      "latest_action": {
+        "date": "2021-07-27",
+        "text": "Referred to the Committee on Financial Services, and in addition to the Committee on Appropriations, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr4454-117",
+      "type": "hr",
+      "number": "4454",
+      "congress": 117,
+      "title": "Reconciliation in Place Names Act",
+      "introduced_date": "2021-07-16",
+      "latest_action": {
+        "date": "2021-10-14",
+        "text": "Subcommittee Hearings Held."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr4349-117",
+      "type": "hr",
+      "number": "4349",
+      "congress": 117,
+      "title": "Department of Homeland Security Office for Civil Rights and Civil Liberties Authorization Act",
+      "introduced_date": "2021-07-02",
+      "latest_action": {
+        "date": "2021-10-26",
+        "text": "Ordered to be Reported (Amended) by Voice Vote."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr5485-117",
+      "type": "hr",
+      "number": "5485",
+      "congress": 117,
+      "title": "Whistleblower Protection Reform Act of 2021",
+      "introduced_date": "2021-10-05",
+      "latest_action": {
+        "date": "2021-10-05",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr5484-117",
+      "type": "hr",
+      "number": "5484",
+      "congress": 117,
+      "title": "Financial Compensation for CFPB Whistleblowers Act",
+      "introduced_date": "2021-10-05",
+      "latest_action": {
+        "date": "2021-10-05",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hres670-117",
+      "type": "hres",
+      "number": "670",
+      "congress": 117,
+      "title": "Condemning the inhumane treatment of Haitian migrants at the southern border of the United States.",
+      "introduced_date": "2021-09-21",
+      "latest_action": {
+        "date": "2021-09-23",
+        "text": "Sponsor introductory remarks on measure. (CR H5096)"
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "-117",
+      "type": "",
+      "number": "",
+      "congress": 117,
+      "title": "",
+      "introduced_date": "2021-09-21",
+      "latest_action": {
+        "date": "2021-09-21",
+        "text": "On agreeing to the Green, Al (TX) amendment (A004) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr5251-117",
+      "type": "hr",
+      "number": "5251",
+      "congress": 117,
+      "title": "Honoring Military Service in Homebuying Act of 2021",
+      "introduced_date": "2021-09-14",
+      "latest_action": {
+        "date": "2021-09-14",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr4957-117",
+      "type": "hr",
+      "number": "4957",
+      "congress": 117,
+      "title": "To direct the Secretary of Transportation to issue regulations to require the announcement of the penalty for interference with cabin or flight crew, and for other purposes.",
+      "introduced_date": "2021-08-06",
+      "latest_action": {
+        "date": "2021-08-06",
+        "text": "Referred to the House Committee on Transportation and Infrastructure."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hres576-117",
+      "type": "hres",
+      "number": "576",
+      "congress": 117,
+      "title": "Recognizing Islam as one of the great religions of the world.",
+      "introduced_date": "2021-07-30",
+      "latest_action": {
+        "date": "2021-07-30",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hres577-117",
+      "type": "hres",
+      "number": "577",
+      "congress": 117,
+      "title": "Supporting the members of the 87th Texas Legislature who embraced a noble stand against the State's egregious assault on free and fair elections.",
+      "introduced_date": "2021-07-30",
+      "latest_action": {
+        "date": "2022-11-01",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr4619-117",
+      "type": "hr",
+      "number": "4619",
+      "congress": 117,
+      "title": "To amend the Securities Exchange Act of 1934 to prohibit trading ahead by market makers, and for other purposes.",
+      "introduced_date": "2021-07-22",
+      "latest_action": {
+        "date": "2021-07-29",
+        "text": "Ordered to be Reported in the Nature of a Substitute (Amended) by the Yeas and Nays: 27 - 22."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hres517-117",
+      "type": "hres",
+      "number": "517",
+      "congress": 117,
+      "title": "Original Slavery Remembrance Day Resolution of 2021",
+      "introduced_date": "2021-07-01",
+      "latest_action": {
+        "date": "2022-07-27",
+        "text": "Pursuant to the provisions of H. Res. 1256, H. Res. 517 is considered passed House. (consideration: CR H7182-7184; text: CR H7183-7184)"
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr4253-117",
+      "type": "hr",
+      "number": "4253",
+      "congress": 117,
+      "title": "To require the Administrator of the Environmental Protection Agency to promulgate a national primary drinking water regulation for chromium-6, and for other purposes.",
+      "introduced_date": "2021-06-30",
+      "latest_action": {
+        "date": "2021-07-01",
+        "text": "Referred to the Subcommittee on Environment and Climate Change."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hres501-117",
+      "type": "hres",
+      "number": "501",
+      "congress": 117,
+      "title": "Supporting the members of the 87th Texas Legislature who fought against the State's Senate Bill 7 with every tool they had.",
+      "introduced_date": "2021-06-25",
+      "latest_action": {
+        "date": "2022-11-01",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hres489-117",
+      "type": "hres",
+      "number": "489",
+      "congress": 117,
+      "title": "Encouraging the celebration of the month of June as LGBTQIA+ Pride Month.",
+      "introduced_date": "2021-06-22",
+      "latest_action": {
+        "date": "2022-11-01",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres363-117",
+      "type": "hres",
+      "number": "363",
+      "congress": 117,
+      "title": "Original Fair Housing Resolution of 2021",
+      "introduced_date": "2021-04-30",
+      "latest_action": {
+        "date": "2021-11-09",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hjres45-117",
+      "type": "hjres",
+      "number": "45",
+      "congress": 117,
+      "title": "Proposing an amendment to the Constitution of the United States to clarify the presidential pardoning power.",
+      "introduced_date": "2021-04-22",
+      "latest_action": {
+        "date": "2021-10-19",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr2689-117",
+      "type": "hr",
+      "number": "2689",
+      "congress": 117,
+      "title": "Minority Business Resiliency Act of 2021",
+      "introduced_date": "2021-04-20",
+      "latest_action": {
+        "date": "2021-06-23",
+        "text": "Ordered to be Reported in the Nature of a Substitute (Amended) by the Yeas and Nays: 28 - 23."
+      },
+      "policy_area": "Commerce"
+    },
+    {
+      "id": "hr2516-117",
+      "type": "hr",
+      "number": "2516",
+      "congress": 117,
+      "title": "Promoting Diversity and Inclusion in Banking Act of 2021",
+      "introduced_date": "2021-04-14",
+      "latest_action": {
+        "date": "2022-06-07",
+        "text": "Placed on the Union Calendar, Calendar No. 269."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hres235-117",
+      "type": "hres",
+      "number": "235",
+      "congress": 117,
+      "title": "Supporting the demands of the #EndSARS movement for justice, accountability, and meaningful police and security sector reforms in Nigeria and calling upon the President and the Secretary of State to safeguard and promote the protection of freedoms of thought, assembly, and expression in Nigeria and around the world.",
+      "introduced_date": "2021-03-16",
+      "latest_action": {
+        "date": "2021-04-02",
+        "text": "Referred to the Subcommittee on Africa, Global Health, and Global Human Rights."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr1674-117",
+      "type": "hr",
+      "number": "1674",
+      "congress": 117,
+      "title": "Fair Housing Enforcement Emergency Act of 2021",
+      "introduced_date": "2021-03-09",
+      "latest_action": {
+        "date": "2021-05-18",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr1669-117",
+      "type": "hr",
+      "number": "1669",
+      "congress": 117,
+      "title": "State Small Business Credit Initiative Renewal Act",
+      "introduced_date": "2021-03-09",
+      "latest_action": {
+        "date": "2021-03-09",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Commerce"
+    },
+    {
+      "id": "hres168-117",
+      "type": "hres",
+      "number": "168",
+      "congress": 117,
+      "title": "Original Black History Month Resolution of 2021",
+      "introduced_date": "2021-02-26",
+      "latest_action": {
+        "date": "2021-02-26",
+        "text": "Referred to the House Committee on Oversight and Reform."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres56-117",
+      "type": "hres",
+      "number": "56",
+      "congress": 117,
+      "title": "Expressing the sense of the House of Representatives that the amount of the Members' Representational Allowance should be increased in response to increasing threats against Members of the House.",
+      "introduced_date": "2021-01-21",
+      "latest_action": {
+        "date": "2021-01-21",
+        "text": "Referred to the House Committee on House Administration."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "hres37-117",
+      "type": "hres",
+      "number": "37",
+      "congress": 117,
+      "title": "Impeaching Donald John Trump, President of the United States, for high crimes and misdemeanors.",
+      "introduced_date": "2021-01-12",
+      "latest_action": {
+        "date": "2021-03-04",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "hr168-117",
+      "type": "hr",
+      "number": "168",
+      "congress": 117,
+      "title": "Reentry and Reunification Act",
+      "introduced_date": "2021-01-04",
+      "latest_action": {
+        "date": "2021-01-04",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "hr169-117",
+      "type": "hr",
+      "number": "169",
+      "congress": 117,
+      "title": "Driver and Officer Safety Education Act",
+      "introduced_date": "2021-01-04",
+      "latest_action": {
+        "date": "2021-02-04",
+        "text": "Referred to the Subcommittee on Highways and Transit."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr126-117",
+      "type": "hr",
+      "number": "126",
+      "congress": 117,
+      "title": "Students Voicing Opinions in Today’s Elections (VOTE) Act",
+      "introduced_date": "2021-01-04",
+      "latest_action": {
+        "date": "2021-01-04",
+        "text": "Referred to the House Committee on House Administration."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr122-117",
+      "type": "hr",
+      "number": "122",
+      "congress": 117,
+      "title": "Original Living Wage Act",
+      "introduced_date": "2021-01-04",
+      "latest_action": {
+        "date": "2021-01-04",
+        "text": "Referred to the House Committee on Education and Labor."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr124-117",
+      "type": "hr",
+      "number": "124",
+      "congress": 117,
+      "title": "Byron Nash Renal Medullary Carcinoma Awareness Act of 2021",
+      "introduced_date": "2021-01-04",
+      "latest_action": {
+        "date": "2021-02-02",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr166-117",
+      "type": "hr",
+      "number": "166",
+      "congress": 117,
+      "title": "Fair Lending for All Act",
+      "introduced_date": "2021-01-04",
+      "latest_action": {
+        "date": "2022-06-07",
+        "text": "Placed on the Union Calendar, Calendar No. 263."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr167-117",
+      "type": "hr",
+      "number": "167",
+      "congress": 117,
+      "title": "To prohibit the transfer of a firearm at a gun show by a person who is not a federally licensed firearms dealer.",
+      "introduced_date": "2021-01-04",
+      "latest_action": {
+        "date": "2021-03-04",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, and Homeland Security."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr165-117",
+      "type": "hr",
+      "number": "165",
+      "congress": 117,
+      "title": "Improving Access to Homes for Heroes Act of 2021",
+      "introduced_date": "2021-01-04",
+      "latest_action": {
+        "date": "2021-01-04",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr68-117",
+      "type": "hr",
+      "number": "68",
+      "congress": 117,
+      "title": "Housing Fairness Act of 2021",
+      "introduced_date": "2021-01-04",
+      "latest_action": {
+        "date": "2022-06-22",
+        "text": "Ordered to be Reported (Amended) by the Yeas and Nays: 28 - 24."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr123-117",
+      "type": "hr",
+      "number": "123",
+      "congress": 117,
+      "title": "Alternative Data for Additional Credit FHA Pilot Program Reauthorization Act",
+      "introduced_date": "2021-01-04",
+      "latest_action": {
+        "date": "2021-01-04",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr39-117",
+      "type": "hr",
+      "number": "39",
+      "congress": 117,
+      "title": "Honoring Our WWII Merchant Mariners Act of 2021",
+      "introduced_date": "2021-01-04",
+      "latest_action": {
+        "date": "2021-02-04",
+        "text": "Referred to the Subcommittee on Disability Assistance and Memorial Affairs."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hres1216-116",
+      "type": "hres",
+      "number": "1216",
+      "congress": 116,
+      "title": "Supporting the #EndSARS peaceful protest movement in Nigeria.",
+      "introduced_date": "2020-11-12",
+      "latest_action": {
+        "date": "2020-11-20",
+        "text": "Referred to the Subcommittee on Africa, Global Health, Global Human Rights, and International Organizations."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hres1168-116",
+      "type": "hres",
+      "number": "1168",
+      "congress": 116,
+      "title": "Original National Domestic Violence Awareness Month Resolution of 2020",
+      "introduced_date": "2020-10-01",
+      "latest_action": {
+        "date": "2020-10-01",
+        "text": "Referred to the House Committee on Education and Labor."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr8340-116",
+      "type": "hr",
+      "number": "8340",
+      "congress": 116,
+      "title": "To designate the facility of the United States Postal Service located at 4110 Bluebonnet Drive in Stafford, Texas, as the \"Leonard Scarcella Post Office Building\".",
+      "introduced_date": "2020-09-22",
+      "latest_action": {
+        "date": "2020-09-22",
+        "text": "Referred to the House Committee on Oversight and Reform."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr8252-116",
+      "type": "hr",
+      "number": "8252",
+      "congress": 116,
+      "title": "To require the Director of the Federal Housing Finance Agency to require each enterprise to include a military service question on the form known as the Uniform Residential Loan Application above the signature line of such application, and for other purposes.",
+      "introduced_date": "2020-09-15",
+      "latest_action": {
+        "date": "2020-09-15",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr8160-116",
+      "type": "hr",
+      "number": "8160",
+      "congress": 116,
+      "title": "Promoting Diversity and Inclusion in Banking Act of 2020",
+      "introduced_date": "2020-09-04",
+      "latest_action": {
+        "date": "2020-09-04",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hres1090-116",
+      "type": "hres",
+      "number": "1090",
+      "congress": 116,
+      "title": "Recognizing Islam as one of the great religions of the world.",
+      "introduced_date": "2020-08-21",
+      "latest_action": {
+        "date": "2020-08-21",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr7793-116",
+      "type": "hr",
+      "number": "7793",
+      "congress": 116,
+      "title": "Financial Compensation for CFPB Whistleblowers Act",
+      "introduced_date": "2020-07-27",
+      "latest_action": {
+        "date": "2020-07-27",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hres1042-116",
+      "type": "hres",
+      "number": "1042",
+      "congress": 116,
+      "title": "Calling on the Senate to rename the Russell Senate Office Building.",
+      "introduced_date": "2020-07-09",
+      "latest_action": {
+        "date": "2020-07-10",
+        "text": "Referred to the Subcommittee on Economic Development, Public Buildings, and Emergency Management."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "hres1014-116",
+      "type": "hres",
+      "number": "1014",
+      "congress": 116,
+      "title": "Encouraging the celebration of the month of June as LGBTQ Pride Month.",
+      "introduced_date": "2020-06-22",
+      "latest_action": {
+        "date": "2020-06-22",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres992-116",
+      "type": "hres",
+      "number": "992",
+      "congress": 116,
+      "title": "Declaring unconditional war on racism and invidious discrimination and providing for the establishment of a Cabinet-level Department of Reconciliation charged with eliminating racism and invidious discrimination.",
+      "introduced_date": "2020-06-04",
+      "latest_action": {
+        "date": "2020-06-04",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr6869-116",
+      "type": "hr",
+      "number": "6869",
+      "congress": 116,
+      "title": "Minority Business Resiliency Act of 2020",
+      "introduced_date": "2020-05-14",
+      "latest_action": {
+        "date": "2020-05-14",
+        "text": "Referred to the Committee on Financial Services, and in addition to the Committees on the Budget, and Small Business, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Commerce"
+    },
+    {
+      "id": "hr6868-116",
+      "type": "hr",
+      "number": "6868",
+      "congress": 116,
+      "title": "To amend the CARES Act to establish a Community Capital Investment Program, and for other purposes.",
+      "introduced_date": "2020-05-14",
+      "latest_action": {
+        "date": "2020-05-14",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr6818-116",
+      "type": "hr",
+      "number": "6818",
+      "congress": 116,
+      "title": "To amend the CARES Act to provide for the prioritization of applications from certain small businesses seeking Payroll Protection Program loans through the Small Business Administration.",
+      "introduced_date": "2020-05-12",
+      "latest_action": {
+        "date": "2020-05-12",
+        "text": "Referred to the House Committee on Small Business."
+      },
+      "policy_area": "Commerce"
+    },
+    {
+      "id": "hr6817-116",
+      "type": "hr",
+      "number": "6817",
+      "congress": 116,
+      "title": "To establish a payroll loan facility for small financial institutions affected by COVID-19, and for other purposes.",
+      "introduced_date": "2020-05-12",
+      "latest_action": {
+        "date": "2020-05-12",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr6760-116",
+      "type": "hr",
+      "number": "6760",
+      "congress": 116,
+      "title": "Fair Housing Further Enforcement Emergency Act of 2020",
+      "introduced_date": "2020-05-08",
+      "latest_action": {
+        "date": "2020-05-08",
+        "text": "Referred to the Committee on Financial Services, and in addition to the Committee on the Judiciary, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr6672-116",
+      "type": "hr",
+      "number": "6672",
+      "congress": 116,
+      "title": "To amend the CARES Act to increase the authority for commitments and appropriations for paycheck protection program, and for other purposes.",
+      "introduced_date": "2020-05-01",
+      "latest_action": {
+        "date": "2020-05-01",
+        "text": "Referred to the House Committee on Small Business."
+      },
+      "policy_area": "Commerce"
+    },
+    {
+      "id": "hres946-116",
+      "type": "hres",
+      "number": "946",
+      "congress": 116,
+      "title": "Promoting and supporting the goals and ideals of the Fair Housing Act and recognizing April 2020 as Fair Housing Month, which includes bringing attention to the discrimination faced by everyday Americans in the United States in housing and housing-related transactions on the basis of race, color, national origin, sex, familial status, disability, and religion, particularly during the COVID-19 pandemic.",
+      "introduced_date": "2020-05-01",
+      "latest_action": {
+        "date": "2020-05-01",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr6475-116",
+      "type": "hr",
+      "number": "6475",
+      "congress": 116,
+      "title": "To amend the Small Business Act to expand eligibility for the paycheck protection program, and for other purposes.",
+      "introduced_date": "2020-04-10",
+      "latest_action": {
+        "date": "2020-04-10",
+        "text": "Referred to the House Committee on Small Business."
+      },
+      "policy_area": "Commerce"
+    },
+    {
+      "id": "hr6476-116",
+      "type": "hr",
+      "number": "6476",
+      "congress": 116,
+      "title": "To amend the CARES Act to establish a loan program to provide liquidity to eligible lenders for the purpose of providing loans under the Paycheck Protection Program, and for other purposes.",
+      "introduced_date": "2020-04-10",
+      "latest_action": {
+        "date": "2020-04-10",
+        "text": "Referred to the Committee on Small Business, and in addition to the Committee on Financial Services, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr6382-116",
+      "type": "hr",
+      "number": "6382",
+      "congress": 116,
+      "title": "Fair Housing Enforcement Emergency Act of 2020",
+      "introduced_date": "2020-03-24",
+      "latest_action": {
+        "date": "2020-03-24",
+        "text": "Referred to the Committee on Financial Services, and in addition to the Committee on the Judiciary, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr6381-116",
+      "type": "hr",
+      "number": "6381",
+      "congress": 116,
+      "title": "To require the Board of Governors of the Federal Reserve System to provide zero-interest loans to minority depository institutions and community development financial institutions to combat COVID-19, and for other purposes.",
+      "introduced_date": "2020-03-24",
+      "latest_action": {
+        "date": "2020-03-24",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr6380-116",
+      "type": "hr",
+      "number": "6380",
+      "congress": 116,
+      "title": "To temporarily provide for Federal insurance of transaction accounts during the COVID-19 emergency.",
+      "introduced_date": "2020-03-24",
+      "latest_action": {
+        "date": "2020-03-24",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr6189-116",
+      "type": "hr",
+      "number": "6189",
+      "congress": 116,
+      "title": "To limit employers from requiring employees to use vacation leave before using sick leave, and for other purposes.",
+      "introduced_date": "2020-03-11",
+      "latest_action": {
+        "date": "2020-03-11",
+        "text": "Referred to the Committee on Education and Labor, and in addition to the Committees on Oversight and Reform, House Administration, and the Judiciary, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hres869-116",
+      "type": "hres",
+      "number": "869",
+      "congress": 116,
+      "title": "Original Black History Month Resolution of 2020",
+      "introduced_date": "2020-02-27",
+      "latest_action": {
+        "date": "2020-02-27",
+        "text": "Referred to the House Committee on Oversight and Reform."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr5951-116",
+      "type": "hr",
+      "number": "5951",
+      "congress": 116,
+      "title": "For the relief of Teresita Espino Ladrillo.",
+      "introduced_date": "2020-02-21",
+      "latest_action": {
+        "date": "2020-03-10",
+        "text": "Referred to the Subcommittee on Immigration and Citizenship."
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hres760-116",
+      "type": "hres",
+      "number": "760",
+      "congress": 116,
+      "title": "Commemorating the centennial of Houston Methodist Hospital.",
+      "introduced_date": "2019-12-11",
+      "latest_action": {
+        "date": "2019-12-12",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "-116",
+      "type": "",
+      "number": "",
+      "congress": 116,
+      "title": "",
+      "introduced_date": "2019-11-21",
+      "latest_action": {
+        "date": "2019-11-21",
+        "text": "On agreeing to the Green, Al (TX) amendment (A006) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hres728-116",
+      "type": "hres",
+      "number": "728",
+      "congress": 116,
+      "title": "Condemning the decision of Federal Housing Finance Agency Director Mark A. Calabria to remove the borrower's preferred language question and the housing counseling question from the Universal Residential Loan Application.",
+      "introduced_date": "2019-11-21",
+      "latest_action": {
+        "date": "2019-11-21",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hres664-116",
+      "type": "hres",
+      "number": "664",
+      "congress": 116,
+      "title": "Original National Domestic Violence Awareness Month Resolution of 2019",
+      "introduced_date": "2019-10-30",
+      "latest_action": {
+        "date": "2019-10-30",
+        "text": "Referred to the House Committee on Education and Labor."
+      },
+      "policy_area": "Families"
+    },
+    {
+      "id": "hr4783-116",
+      "type": "hr",
+      "number": "4783",
+      "congress": 116,
+      "title": "LEP Data Acquisition in Mortgage Lending Act",
+      "introduced_date": "2019-10-22",
+      "latest_action": {
+        "date": "2019-10-22",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr4713-116",
+      "type": "hr",
+      "number": "4713",
+      "congress": 116,
+      "title": "Department of Homeland Security Office for Civil Rights and Civil Liberties Authorization Act",
+      "introduced_date": "2019-10-17",
+      "latest_action": {
+        "date": "2020-10-19",
+        "text": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 574."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr4523-116",
+      "type": "hr",
+      "number": "4523",
+      "congress": 116,
+      "title": "Nonprofit Property Protection Act",
+      "introduced_date": "2019-09-26",
+      "latest_action": {
+        "date": "2019-09-26",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hres544-116",
+      "type": "hres",
+      "number": "544",
+      "congress": 116,
+      "title": "Recognizing Islam as one of the great religions of the world.",
+      "introduced_date": "2019-08-30",
+      "latest_action": {
+        "date": "2019-08-30",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hres530-116",
+      "type": "hres",
+      "number": "530",
+      "congress": 116,
+      "title": "Expressing the sense of the House of Representatives that the amount of the Members' Representational Allowance should be increased in response to increasing threats against Members of the House.",
+      "introduced_date": "2019-07-30",
+      "latest_action": {
+        "date": "2019-07-30",
+        "text": "Referred to the House Committee on House Administration."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "hres498-116",
+      "type": "hres",
+      "number": "498",
+      "congress": 116,
+      "title": "Impeaching Donald John Trump, President of the United States, of high misdemeanors.",
+      "introduced_date": "2019-07-17",
+      "latest_action": {
+        "date": "2019-07-17",
+        "text": "On motion to table the measure Agreed to by the Yeas and Nays: 332 - 95, 1 Present (Roll no. 483)."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr3702-116",
+      "type": "hr",
+      "number": "3702",
+      "congress": 116,
+      "title": "Reforming Disaster Recovery Act of 2019",
+      "introduced_date": "2019-07-11",
+      "latest_action": {
+        "date": "2019-11-19",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hres464-116",
+      "type": "hres",
+      "number": "464",
+      "congress": 116,
+      "title": "Encouraging the celebration of the month of June as LGBTQ Pride Month.",
+      "introduced_date": "2019-06-26",
+      "latest_action": {
+        "date": "2019-07-30",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "-116",
+      "type": "",
+      "number": "",
+      "congress": 116,
+      "title": "",
+      "introduced_date": "2019-05-22",
+      "latest_action": {
+        "date": "2019-05-22",
+        "text": "On agreeing to the Green (TX) amendment (A017) Agreed to by recorded vote: 235 - 193 (Roll no. 226). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr2515-116",
+      "type": "hr",
+      "number": "2515",
+      "congress": 116,
+      "title": "Whistleblower Protection Reform Act of 2019",
+      "introduced_date": "2019-05-03",
+      "latest_action": {
+        "date": "2019-07-10",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hres333-116",
+      "type": "hres",
+      "number": "333",
+      "congress": 116,
+      "title": "Promoting and supporting the goals and ideals of the Fair Housing Act and supporting the recognition of April 2019 as Fair Housing Month, which includes bringing attention to the discrimination faced by everyday Americans in the United States in housing and housing-related transactions on the basis of race, color, national origin, sex, familial status, disability, and religion.",
+      "introduced_date": "2019-04-30",
+      "latest_action": {
+        "date": "2019-05-20",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hres154-116",
+      "type": "hres",
+      "number": "154",
+      "congress": 116,
+      "title": "Original NAACP Resolution of 2019",
+      "introduced_date": "2019-02-27",
+      "latest_action": {
+        "date": "2019-03-25",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "-116",
+      "type": "",
+      "number": "",
+      "congress": 116,
+      "title": "",
+      "introduced_date": "2019-03-07",
+      "latest_action": {
+        "date": "2019-03-07",
+        "text": "On agreeing to the Green (TX) amendment (A025) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hres155-116",
+      "type": "hres",
+      "number": "155",
+      "congress": 116,
+      "title": "Original Black History Month Resolution of 2019",
+      "introduced_date": "2019-02-27",
+      "latest_action": {
+        "date": "2019-02-27",
+        "text": "Referred to the House Committee on Oversight and Reform."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "-113",
+      "type": "",
+      "number": "",
+      "congress": 113,
+      "title": "",
+      "introduced_date": "2013-07-30",
+      "latest_action": {
+        "date": "2013-07-30",
+        "text": "By unanimous consent, the Green, Al amendment was withdrawn. (consideration: CR H5164)"
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr5407-113",
+      "type": "hr",
+      "number": "5407",
+      "congress": 113,
+      "title": "TIP Act of 2014",
+      "introduced_date": "2014-09-08",
+      "latest_action": {
+        "date": "2014-09-26",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr4839-113",
+      "type": "hr",
+      "number": "4839",
+      "congress": 113,
+      "title": "Original Living Wage Act of 2014",
+      "introduced_date": "2014-06-11",
+      "latest_action": {
+        "date": "2014-11-17",
+        "text": "Referred to the Subcommittee on Workforce Protections."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr3876-113",
+      "type": "hr",
+      "number": "3876",
+      "congress": 113,
+      "title": "Burial with Dignity for Heroes Act of 2014",
+      "introduced_date": "2014-01-14",
+      "latest_action": {
+        "date": "2014-01-28",
+        "text": "Referred to the Subcommittee on Disability Assistance and Memorial Affairs."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr3743-113",
+      "type": "hr",
+      "number": "3743",
+      "congress": 113,
+      "title": "HAVEN Act",
+      "introduced_date": "2013-12-12",
+      "latest_action": {
+        "date": "2013-12-12",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr3602-113",
+      "type": "hr",
+      "number": "3602",
+      "congress": 113,
+      "title": "Filipino Temporary Protected Status Act of 2013",
+      "introduced_date": "2013-11-21",
+      "latest_action": {
+        "date": "2014-01-09",
+        "text": "Referred to the Subcommittee on Immigration and Border Security."
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "hr2816-113",
+      "type": "hr",
+      "number": "2816",
+      "congress": 113,
+      "title": "FHA Alternative Credit Pilot Program Reauthorization Act of 2013",
+      "introduced_date": "2013-07-24",
+      "latest_action": {
+        "date": "2013-07-24",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr2815-113",
+      "type": "hr",
+      "number": "2815",
+      "congress": 113,
+      "title": "FHA In-Person Servicing Improvement Act of 2013",
+      "introduced_date": "2013-07-24",
+      "latest_action": {
+        "date": "2013-07-24",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr2756-113",
+      "type": "hr",
+      "number": "2756",
+      "congress": 113,
+      "title": "Redistricting and Voter Protection Act of 2013",
+      "introduced_date": "2013-07-19",
+      "latest_action": {
+        "date": "2013-09-13",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr2362-113",
+      "type": "hr",
+      "number": "2362",
+      "congress": 113,
+      "title": "Transportation for Heroes Act of 2013",
+      "introduced_date": "2013-06-13",
+      "latest_action": {
+        "date": "2013-06-14",
+        "text": "Referred to the Subcommittee on Highways and Transit."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr653-113",
+      "type": "hr",
+      "number": "653",
+      "congress": 113,
+      "title": "Students Voicing Opinions in Today's Elections (VOTE) Act",
+      "introduced_date": "2013-02-13",
+      "latest_action": {
+        "date": "2013-02-13",
+        "text": "Referred to the House Committee on House Administration."
+      },
+      "policy_area": "Education"
+    },
+    {
+      "id": "hr386-113",
+      "type": "hr",
+      "number": "386",
+      "congress": 113,
+      "title": "Homes for Heroes Act of 2013",
+      "introduced_date": "2013-01-23",
+      "latest_action": {
+        "date": "2013-01-23",
+        "text": "Referred to the Committee on Financial Services, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr384-113",
+      "type": "hr",
+      "number": "384",
+      "congress": 113,
+      "title": "Homes for Heroes Act of 2013",
+      "introduced_date": "2013-01-23",
+      "latest_action": {
+        "date": "2013-05-16",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr385-113",
+      "type": "hr",
+      "number": "385",
+      "congress": 113,
+      "title": "HAVEN Act",
+      "introduced_date": "2013-01-23",
+      "latest_action": {
+        "date": "2013-01-23",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr285-113",
+      "type": "hr",
+      "number": "285",
+      "congress": 113,
+      "title": "Housing Fairness Act of 2013",
+      "introduced_date": "2013-01-15",
+      "latest_action": {
+        "date": "2013-01-15",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr229-113",
+      "type": "hr",
+      "number": "229",
+      "congress": 113,
+      "title": "Original Living American Wage (LAW) Act",
+      "introduced_date": "2013-01-14",
+      "latest_action": {
+        "date": "2013-04-23",
+        "text": "Referred to the Subcommittee on Workforce Protections."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr230-113",
+      "type": "hr",
+      "number": "230",
+      "congress": 113,
+      "title": "Johnson Space Center Workforce of 2013",
+      "introduced_date": "2013-01-14",
+      "latest_action": {
+        "date": "2013-04-23",
+        "text": "Referred to the Subcommittee on Higher Education and Workforce Training."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hres560-113",
+      "type": "hres",
+      "number": "560",
+      "congress": 113,
+      "title": "Promoting minority health awareness and supporting the goals and ideals of National Minority Health Month in April 2014, which include bringing attention to the health disparities faced by minority populations of the United States, such as American Indians, Alaska Natives, Asian Americans, African Americans, Hispanic Americans, and Native Hawaiians or other Pacific Islanders.",
+      "introduced_date": "2014-04-30",
+      "latest_action": {
+        "date": "2014-04-30",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hres481-113",
+      "type": "hres",
+      "number": "481",
+      "congress": 113,
+      "title": "Recognizing the significance of Black History Month.",
+      "introduced_date": "2014-02-11",
+      "latest_action": {
+        "date": "2014-02-11",
+        "text": "Referred to the House Committee on Education and the Workforce."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres416-113",
+      "type": "hres",
+      "number": "416",
+      "congress": 113,
+      "title": "Encouraging the celebration of the month of June as LGBT Pride Month.",
+      "introduced_date": "2013-11-15",
+      "latest_action": {
+        "date": "2014-01-09",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres392-113",
+      "type": "hres",
+      "number": "392",
+      "congress": 113,
+      "title": "Supporting the goals and ideals of October as National Domestic Violence Awareness Month and expressing the sense of the House of Representatives that Congress should continue to raise awareness of domestic violence and its devastating effects on individuals, families, and communities, and support programs designed to end domestic violence in the United States.",
+      "introduced_date": "2013-10-28",
+      "latest_action": {
+        "date": "2013-10-30",
+        "text": "Sponsor introductory remarks on measure. (CR H6935-6936, H6936-6937, H6938, H6939, H6940, H6941)"
+      },
+      "policy_area": "Families"
+    },
+    {
+      "id": "hres114-113",
+      "type": "hres",
+      "number": "114",
+      "congress": 113,
+      "title": "Recognizing the Sabin Vaccine Institute on the 20th anniversary of its founding.",
+      "introduced_date": "2013-03-13",
+      "latest_action": {
+        "date": "2013-03-22",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hres84-113",
+      "type": "hres",
+      "number": "84",
+      "congress": 113,
+      "title": "Supporting the goals and ideals of National Salute to Hospitalized Veterans Week.",
+      "introduced_date": "2013-02-26",
+      "latest_action": {
+        "date": "2013-03-01",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hres49-113",
+      "type": "hres",
+      "number": "49",
+      "congress": 113,
+      "title": "Recognizing the significance of Black History Month.",
+      "introduced_date": "2013-02-04",
+      "latest_action": {
+        "date": "2013-02-04",
+        "text": "Referred to the House Committee on Education and the Workforce."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hconres84-113",
+      "type": "hconres",
+      "number": "84",
+      "congress": 113,
+      "title": "Honoring and praising the National Association for the Advancement of Colored People on the occasion of its 105th anniversary.",
+      "introduced_date": "2014-02-11",
+      "latest_action": {
+        "date": "2014-03-20",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hconres12-113",
+      "type": "hconres",
+      "number": "12",
+      "congress": 113,
+      "title": "Honoring and praising the National Association for the Advancement of Colored People on the occasion of its 104th anniversary.",
+      "introduced_date": "2013-02-12",
+      "latest_action": {
+        "date": "2013-04-15",
+        "text": "Referred to the Subcommittee on the Constitution And Civil Justice."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "-112",
+      "type": "",
+      "number": "",
+      "congress": 112,
+      "title": "",
+      "introduced_date": "2012-03-27",
+      "latest_action": {
+        "date": "2012-03-27",
+        "text": "On agreeing to the Green, Al amendment (A005) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-112",
+      "type": "",
+      "number": "",
+      "congress": 112,
+      "title": "",
+      "introduced_date": "2011-12-08",
+      "latest_action": {
+        "date": "2011-12-08",
+        "text": "On agreeing to the Green, Al amendment (A008) Failed by recorded vote: 170 - 247 (Roll no. 910). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr6381-112",
+      "type": "hr",
+      "number": "6381",
+      "congress": 112,
+      "title": "HAVEN Act",
+      "introduced_date": "2012-09-12",
+      "latest_action": {
+        "date": "2012-10-01",
+        "text": "Referred to the Subcommittee on Insurance, Housing and Community Opportunity."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr6076-112",
+      "type": "hr",
+      "number": "6076",
+      "congress": 112,
+      "title": "Original Living American Wage (LAW) Act",
+      "introduced_date": "2012-06-29",
+      "latest_action": {
+        "date": "2012-09-26",
+        "text": "Referred to the Subcommittee on Workforce Protections."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr3298-112",
+      "type": "hr",
+      "number": "3298",
+      "congress": 112,
+      "title": "Homes for Heroes Act of 2011",
+      "introduced_date": "2011-11-01",
+      "latest_action": {
+        "date": "2012-03-28",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr286-112",
+      "type": "hr",
+      "number": "286",
+      "congress": 112,
+      "title": "Johnson Space Center Workforce Stability Act of 2011",
+      "introduced_date": "2011-01-12",
+      "latest_action": {
+        "date": "2011-03-23",
+        "text": "Referred to the Subcommittee on Domestic Monetary Policy and Technology."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr285-112",
+      "type": "hr",
+      "number": "285",
+      "congress": 112,
+      "title": "Pakistani Temporary Protected Status Act of 2011",
+      "introduced_date": "2011-01-12",
+      "latest_action": {
+        "date": "2011-02-07",
+        "text": "Referred to the Subcommittee on Immigration Policy and Enforcement."
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "hr287-112",
+      "type": "hr",
+      "number": "287",
+      "congress": 112,
+      "title": "Homes for Heroes Act of 2011",
+      "introduced_date": "2011-01-12",
+      "latest_action": {
+        "date": "2011-03-23",
+        "text": "Referred to the Subcommittee on Insurance, Housing and Community Opportunity."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr283-112",
+      "type": "hr",
+      "number": "283",
+      "congress": 112,
+      "title": "Living American Wage (LAW) Act of 2011",
+      "introduced_date": "2011-01-12",
+      "latest_action": {
+        "date": "2011-02-25",
+        "text": "Referred to the Subcommittee on Workforce Protections."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr284-112",
+      "type": "hr",
+      "number": "284",
+      "congress": 112,
+      "title": "Veterans, Women, Families with Children, and Persons With Disabilities Housing Fairness Act of 2011",
+      "introduced_date": "2011-01-12",
+      "latest_action": {
+        "date": "2011-03-23",
+        "text": "Referred to the Subcommittee on Insurance, Housing and Community Opportunity."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hres567-112",
+      "type": "hres",
+      "number": "567",
+      "congress": 112,
+      "title": "Recognizing the significance of Black History Month.",
+      "introduced_date": "2012-02-29",
+      "latest_action": {
+        "date": "2012-02-29",
+        "text": "Referred to the House Committee on Education and the Workforce."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres36-112",
+      "type": "hres",
+      "number": "36",
+      "congress": 112,
+      "title": "Recognizing the significance of Black History Month.",
+      "introduced_date": "2011-01-12",
+      "latest_action": {
+        "date": "2011-01-12",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hconres130-112",
+      "type": "hconres",
+      "number": "130",
+      "congress": 112,
+      "title": "Honoring and praising the National Association for the Advancement of Colored People on the occasion of its 103rd anniversary.",
+      "introduced_date": "2012-06-29",
+      "latest_action": {
+        "date": "2012-07-11",
+        "text": "Referred to the Subcommittee on the Constitution."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hconres19-112",
+      "type": "hconres",
+      "number": "19",
+      "congress": 112,
+      "title": "Honoring and praising the National Association for the Advancement of Colored People on the occasion of its 102nd anniversary.",
+      "introduced_date": "2011-02-17",
+      "latest_action": {
+        "date": "2011-02-28",
+        "text": "Referred to the Subcommittee on the Constitution."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr169-116",
+      "type": "hr",
+      "number": "169",
+      "congress": 116,
+      "title": "Driver and Officer Safety Education Act",
+      "introduced_date": "2019-01-03",
+      "latest_action": {
+        "date": "2019-02-07",
+        "text": "Referred to the Subcommittee on Highways and Transit."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr165-116",
+      "type": "hr",
+      "number": "165",
+      "congress": 116,
+      "title": "Improving Access to Homes for Heroes Act of 2019",
+      "introduced_date": "2019-01-03",
+      "latest_action": {
+        "date": "2019-01-03",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr166-116",
+      "type": "hr",
+      "number": "166",
+      "congress": 116,
+      "title": "Fair Lending for All Act",
+      "introduced_date": "2019-01-03",
+      "latest_action": {
+        "date": "2019-01-03",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr167-116",
+      "type": "hr",
+      "number": "167",
+      "congress": 116,
+      "title": "To prohibit the transfer of a firearm at a gun show by a person who is not a licensed dealer.",
+      "introduced_date": "2019-01-03",
+      "latest_action": {
+        "date": "2019-01-03",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, and Homeland Security."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr168-116",
+      "type": "hr",
+      "number": "168",
+      "congress": 116,
+      "title": "Reentry and Reunification Act",
+      "introduced_date": "2019-01-03",
+      "latest_action": {
+        "date": "2019-01-03",
+        "text": "Referred to the Subcommittee on Immigration and Citizenship."
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "hr154-116",
+      "type": "hr",
+      "number": "154",
+      "congress": 116,
+      "title": "Honoring Our WWII Merchant Mariners Act of 2019",
+      "introduced_date": "2019-01-03",
+      "latest_action": {
+        "date": "2019-01-03",
+        "text": "Referred to the House Committee on Veterans' Affairs."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr148-116",
+      "type": "hr",
+      "number": "148",
+      "congress": 116,
+      "title": "Byron Nash Renal Medullary Carcinoma Awareness Act of 2019",
+      "introduced_date": "2019-01-03",
+      "latest_action": {
+        "date": "2019-01-25",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr149-116",
+      "type": "hr",
+      "number": "149",
+      "congress": 116,
+      "title": "Housing Fairness Act of 2020",
+      "introduced_date": "2019-01-03",
+      "latest_action": {
+        "date": "2020-12-17",
+        "text": "Placed on the Union Calendar, Calendar No. 548."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr126-116",
+      "type": "hr",
+      "number": "126",
+      "congress": 116,
+      "title": "Students Voicing Opinions in Today’s Elections (VOTE) Act",
+      "introduced_date": "2019-01-03",
+      "latest_action": {
+        "date": "2019-01-03",
+        "text": "Referred to the House Committee on House Administration."
+      },
+      "policy_area": "Education"
+    },
+    {
+      "id": "hr123-116",
+      "type": "hr",
+      "number": "123",
+      "congress": 116,
+      "title": "Alternative Data for Additional Credit FHA Pilot Program Reauthorization Act",
+      "introduced_date": "2019-01-03",
+      "latest_action": {
+        "date": "2020-12-17",
+        "text": "Placed on the Union Calendar, Calendar No. 547."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr122-116",
+      "type": "hr",
+      "number": "122",
+      "congress": 116,
+      "title": "Original Living Wage Act",
+      "introduced_date": "2019-01-03",
+      "latest_action": {
+        "date": "2019-01-03",
+        "text": "Referred to the House Committee on Education and Labor."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hjres13-116",
+      "type": "hjres",
+      "number": "13",
+      "congress": 116,
+      "title": "Proposing an amendment to the Constitution of the United States to clarify the presidential pardoning power.",
+      "introduced_date": "2019-01-03",
+      "latest_action": {
+        "date": "2019-01-03",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hres17-116",
+      "type": "hres",
+      "number": "17",
+      "congress": 116,
+      "title": "Expressing concern over the detention of Austin Tice and Majd Kamalmaz, and for other purposes.",
+      "introduced_date": "2019-01-03",
+      "latest_action": {
+        "date": "2020-12-03",
+        "text": "The title of the measure was amended. Agreed to without objection."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hres19-116",
+      "type": "hres",
+      "number": "19",
+      "congress": 116,
+      "title": "Expressing concern regarding the prevalence of hexavalent chromium in drinking water in the United States.",
+      "introduced_date": "2019-01-03",
+      "latest_action": {
+        "date": "2019-01-25",
+        "text": "Referred to the Subcommittee on Environment and Climate Change."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr7281-115",
+      "type": "hr",
+      "number": "7281",
+      "congress": 115,
+      "title": "Driver and Officer Safety Education Act",
+      "introduced_date": "2018-12-12",
+      "latest_action": {
+        "date": "2018-12-13",
+        "text": "Referred to the Subcommittee on Highways and Transit."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hres1166-115",
+      "type": "hres",
+      "number": "1166",
+      "congress": 115,
+      "title": "Honoring and praising the American Jewish Committee (AJC) on the occasion of its 112th anniversary.",
+      "introduced_date": "2018-11-30",
+      "latest_action": {
+        "date": "2018-12-12",
+        "text": "Sponsor introductory remarks on measure. (CR H10163-10164)"
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres1104-115",
+      "type": "hres",
+      "number": "1104",
+      "congress": 115,
+      "title": "Supporting the goals and ideals of October as \"National Domestic Violence Awareness Month\" and expressing the sense of the House of Representatives that Congress should continue to raise awareness of domestic violence and its devastating effects on individuals, families, and communities, and support programs designed to end domestic violence in the United States.",
+      "introduced_date": "2018-09-28",
+      "latest_action": {
+        "date": "2018-09-28",
+        "text": "Referred to the House Committee on Education and the Workforce."
+      },
+      "policy_area": "Families"
+    },
+    {
+      "id": "hr6654-115",
+      "type": "hr",
+      "number": "6654",
+      "congress": 115,
+      "title": "To prohibit the transfer of a firearm at a gun show by a person who is not a licensed dealer.",
+      "introduced_date": "2018-08-03",
+      "latest_action": {
+        "date": "2018-10-09",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hres972-115",
+      "type": "hres",
+      "number": "972",
+      "congress": 115,
+      "title": "Original LGBTQ Pride Month Resolution of 2018",
+      "introduced_date": "2018-06-28",
+      "latest_action": {
+        "date": "2018-08-02",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr5510-115",
+      "type": "hr",
+      "number": "5510",
+      "congress": 115,
+      "title": "Reentry and Reunification Act of 2018",
+      "introduced_date": "2018-04-13",
+      "latest_action": {
+        "date": "2018-05-21",
+        "text": "Referred to the Subcommittee on Immigration and Border Security."
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "hres817-115",
+      "type": "hres",
+      "number": "817",
+      "congress": 115,
+      "title": "Promoting and supporting the goals and ideals of the Fair Housing Act and recognizing April 2018 as Fair Housing Month, which includes bringing attention to the discrimination faced by every-day Americans in the United States in housing and housing-related transactions on the basis of race, color, national origin, sex, familial status, disability, and religion.",
+      "introduced_date": "2018-04-11",
+      "latest_action": {
+        "date": "2018-04-12",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres755-115",
+      "type": "hres",
+      "number": "755",
+      "congress": 115,
+      "title": "Original Black History Month Resolution of 2018",
+      "introduced_date": "2018-02-27",
+      "latest_action": {
+        "date": "2018-02-27",
+        "text": "Referred to the House Committee on Education and the Workforce."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hconres108-115",
+      "type": "hconres",
+      "number": "108",
+      "congress": 115,
+      "title": "Original NAACP Resolution of 2018",
+      "introduced_date": "2018-02-27",
+      "latest_action": {
+        "date": "2018-03-08",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres705-115",
+      "type": "hres",
+      "number": "705",
+      "congress": 115,
+      "title": "Impeaching Donald John Trump, President of the United States, of high misdemeanors.",
+      "introduced_date": "2018-01-19",
+      "latest_action": {
+        "date": "2018-01-19",
+        "text": "On motion to table the measure Agreed to by the Yeas and Nays: 355 - 66, 3 Present (Roll no. 35)."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hres646-115",
+      "type": "hres",
+      "number": "646",
+      "congress": 115,
+      "title": "Impeaching Donald John Trump, President of the United States, of high misdemeanors.",
+      "introduced_date": "2017-12-06",
+      "latest_action": {
+        "date": "2017-12-06",
+        "text": "On motion to table the measure Agreed to by the Yeas and Nays: 364 - 58, 4 Present (Roll no. 658)."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hres492-115",
+      "type": "hres",
+      "number": "492",
+      "congress": 115,
+      "title": "Expressing concern for the separation of José Escobar from his wife and children as a result of his deportation, and for other purposes.",
+      "introduced_date": "2017-07-28",
+      "latest_action": {
+        "date": "2017-08-17",
+        "text": "Referred to the Subcommittee on Immigration and Border Security."
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "hjres115-115",
+      "type": "hjres",
+      "number": "115",
+      "congress": 115,
+      "title": "Proposing an amendment to the Constitution of the United States to clarify the presidential pardoning power.",
+      "introduced_date": "2017-07-27",
+      "latest_action": {
+        "date": "2017-08-17",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "-115",
+      "type": "",
+      "number": "",
+      "congress": 115,
+      "title": "",
+      "introduced_date": "2017-07-26",
+      "latest_action": {
+        "date": "2017-07-26",
+        "text": "By unanimous consent, the Green, Al amendment was withdrawn. (consideration: CR H6421)"
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hres419-115",
+      "type": "hres",
+      "number": "419",
+      "congress": 115,
+      "title": "Encouraging the celebration of the month of June as LGBTQ Pride Month.",
+      "introduced_date": "2017-06-28",
+      "latest_action": {
+        "date": "2017-06-28",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres291-115",
+      "type": "hres",
+      "number": "291",
+      "congress": 115,
+      "title": "Promoting and supporting the goals and ideals of the Fair Housing Act and recognizing April 2017 as Fair Housing Month, which includes bringing attention to the discrimination faced by every-day Americans in the United States in housing and housing-related transactions on the basis of race, color, national origin, sex, familial status, disability, and religion.",
+      "introduced_date": "2017-04-27",
+      "latest_action": {
+        "date": "2017-05-02",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr127-114",
+      "type": "hr",
+      "number": "127",
+      "congress": 114,
+      "title": "Transportation for Heroes Act of 2015",
+      "introduced_date": "2015-01-06",
+      "latest_action": {
+        "date": "2015-01-07",
+        "text": "Referred to the Subcommittee on Highways and Transit."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr126-114",
+      "type": "hr",
+      "number": "126",
+      "congress": 114,
+      "title": "Students Voicing Opinions in Today's Elections (VOTE) Act",
+      "introduced_date": "2015-01-06",
+      "latest_action": {
+        "date": "2015-01-06",
+        "text": "Referred to the House Committee on House Administration."
+      },
+      "policy_area": "Education"
+    },
+    {
+      "id": "hr125-114",
+      "type": "hr",
+      "number": "125",
+      "congress": 114,
+      "title": "FHA In-Person Servicing Improvement Act of 2015",
+      "introduced_date": "2015-01-06",
+      "latest_action": {
+        "date": "2015-01-06",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr123-114",
+      "type": "hr",
+      "number": "123",
+      "congress": 114,
+      "title": "FHA Alternative Credit Pilot Program Reauthorization Act of 2015",
+      "introduced_date": "2015-01-06",
+      "latest_action": {
+        "date": "2015-01-06",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr122-114",
+      "type": "hr",
+      "number": "122",
+      "congress": 114,
+      "title": "Original Living Wage Act of 2015",
+      "introduced_date": "2015-01-06",
+      "latest_action": {
+        "date": "2015-04-29",
+        "text": "Referred to the Subcommittee on Workforce Protections."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hres13-114",
+      "type": "hres",
+      "number": "13",
+      "congress": 114,
+      "title": "Recognizing the significance of Black History Month.",
+      "introduced_date": "2015-01-06",
+      "latest_action": {
+        "date": "2015-02-04",
+        "text": "Sponsor introductory remarks on measure. (CR H796-799)"
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hconres2-114",
+      "type": "hconres",
+      "number": "2",
+      "congress": 114,
+      "title": "Honoring and praising the National Association for the Advancement of Colored People on the occasion of its 106th anniversary.",
+      "introduced_date": "2015-01-06",
+      "latest_action": {
+        "date": "2015-01-12",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres153-115",
+      "type": "hres",
+      "number": "153",
+      "congress": 115,
+      "title": "Expressing concern over the detainment of Sandy Phan-Gillis, and for other purposes.",
+      "introduced_date": "2017-02-27",
+      "latest_action": {
+        "date": "2017-05-18",
+        "text": "Referred to the Subcommittee on Asia and the Pacific."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hres147-115",
+      "type": "hres",
+      "number": "147",
+      "congress": 115,
+      "title": "Expressing concern regarding the prevalence of hexavalent chromium in drinking water in the United States.",
+      "introduced_date": "2017-02-17",
+      "latest_action": {
+        "date": "2017-02-24",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hres79-115",
+      "type": "hres",
+      "number": "79",
+      "congress": 115,
+      "title": "Original Black History Month Resolution of 2017",
+      "introduced_date": "2017-02-01",
+      "latest_action": {
+        "date": "2017-02-14",
+        "text": "Sponsor introductory remarks on measure. (CR H1173-1175)"
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hconres17-115",
+      "type": "hconres",
+      "number": "17",
+      "congress": 115,
+      "title": "Original NAACP Resolution of 2017",
+      "introduced_date": "2017-02-01",
+      "latest_action": {
+        "date": "2017-02-08",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "-115",
+      "type": "",
+      "number": "",
+      "congress": 115,
+      "title": "",
+      "introduced_date": "2017-01-12",
+      "latest_action": {
+        "date": "2017-01-12",
+        "text": "On agreeing to the Green, Al amendment (A001) Failed by recorded vote: 192 - 233 (Roll no. 46). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-115",
+      "type": "",
+      "number": "",
+      "congress": 115,
+      "title": "",
+      "introduced_date": "2017-01-12",
+      "latest_action": {
+        "date": "2017-01-12",
+        "text": "On agreeing to the Green, Al amendment (A003) Failed by recorded vote: 191 - 232 (Roll no. 47). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr252-115",
+      "type": "hr",
+      "number": "252",
+      "congress": 115,
+      "title": "Comprehensive Homes for Heroes Act of 2017",
+      "introduced_date": "2017-01-04",
+      "latest_action": {
+        "date": "2017-01-04",
+        "text": "Referred to the Committee on Financial Services, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr153-115",
+      "type": "hr",
+      "number": "153",
+      "congress": 115,
+      "title": "Michael E. DeBakey Stamp Act",
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2017-01-03",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr154-115",
+      "type": "hr",
+      "number": "154",
+      "congress": 115,
+      "title": "Honoring Our WWII Merchant Mariners Act of 2017",
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2017-01-19",
+        "text": "Referred to the Subcommittee on Disability Assistance and Memorial Affairs."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr150-115",
+      "type": "hr",
+      "number": "150",
+      "congress": 115,
+      "title": "PROTECT Act of 2017",
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2017-01-13",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr152-115",
+      "type": "hr",
+      "number": "152",
+      "congress": 115,
+      "title": "Prince Hall Freemasonry Stamp Act",
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2017-01-03",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr149-115",
+      "type": "hr",
+      "number": "149",
+      "congress": 115,
+      "title": "Housing Fairness Act of 2017",
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2017-01-03",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr148-115",
+      "type": "hr",
+      "number": "148",
+      "congress": 115,
+      "title": "Byron Nash Renal Medullary Carcinoma Awareness Act of 2017",
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2017-01-25",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr151-115",
+      "type": "hr",
+      "number": "151",
+      "congress": 115,
+      "title": "Redistricting and Voter Protection Act of 2017",
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2017-01-23",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr122-115",
+      "type": "hr",
+      "number": "122",
+      "congress": 115,
+      "title": "Original Living Wage Act of 2017",
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2017-01-03",
+        "text": "Referred to the House Committee on Education and the Workforce."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr121-115",
+      "type": "hr",
+      "number": "121",
+      "congress": 115,
+      "title": "Emergency Flood Control Supplemental Funding Act of 2017",
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2017-01-03",
+        "text": "Referred to the Committee on Appropriations, and in addition to the Committee on the Budget, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Emergency Management"
+    },
+    {
+      "id": "hr125-115",
+      "type": "hr",
+      "number": "125",
+      "congress": 115,
+      "title": "FHA In-Person Servicing Improvement Act of 2017",
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2017-01-03",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr127-115",
+      "type": "hr",
+      "number": "127",
+      "congress": 115,
+      "title": "Transportation for Heroes Act of 2017",
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2017-01-04",
+        "text": "Referred to the Subcommittee on Highways and Transit."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr124-115",
+      "type": "hr",
+      "number": "124",
+      "congress": 115,
+      "title": "CAM TIP Act of 2017",
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2017-02-21",
+        "text": "Referred to the Subcommittee on Readiness."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr126-115",
+      "type": "hr",
+      "number": "126",
+      "congress": 115,
+      "title": "Students Voicing Opinions in Today's Elections (VOTE) Act",
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2017-01-03",
+        "text": "Referred to the House Committee on House Administration."
+      },
+      "policy_area": "Education"
+    },
+    {
+      "id": "hr123-115",
+      "type": "hr",
+      "number": "123",
+      "congress": 115,
+      "title": "FHA Alternative Credit Pilot Program Reauthorization Act of 2017",
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2017-01-03",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hres16-115",
+      "type": "hres",
+      "number": "16",
+      "congress": 115,
+      "title": "Supporting local law enforcement agencies in their continued work to serve our communities, and supporting their use of body worn cameras to promote transparency to protect both citizens and officers alike.",
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2017-01-11",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hres18-115",
+      "type": "hres",
+      "number": "18",
+      "congress": 115,
+      "title": "Expressing concern over the detainment of Sandy Phan-Gillis, and for other purposes.",
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2017-02-16",
+        "text": "Referred to the Subcommittee on Asia and the Pacific."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hres17-115",
+      "type": "hres",
+      "number": "17",
+      "congress": 115,
+      "title": "Expressing concern over the disappearance of Austin Tice, and for other purposes.",
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2017-02-16",
+        "text": "Referred to the Subcommittee on Middle East and North Africa."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hconres3-115",
+      "type": "hconres",
+      "number": "3",
+      "congress": 115,
+      "title": "Recognizing former United States Federal Judge Frank Minis Johnson, Jr., for his role in the civil rights movement.",
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2017-01-11",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres904-114",
+      "type": "hres",
+      "number": "904",
+      "congress": 114,
+      "title": "Honoring Sisters Network Inc.® for its work to raise awareness about the tragic impact of breast cancer in the African-American community.",
+      "introduced_date": "2016-09-28",
+      "latest_action": {
+        "date": "2016-09-28",
+        "text": "Referred to the House Committee on Energy and Commerce."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hres905-114",
+      "type": "hres",
+      "number": "905",
+      "congress": 114,
+      "title": "Expressing condolences to the family of Ms. Jacqueline A. Ellis, and commemorating the life and work of Ms. Jacqueline Ellis.",
+      "introduced_date": "2016-09-28",
+      "latest_action": {
+        "date": "2016-09-28",
+        "text": "Referred to the House Committee on House Administration."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "-114",
+      "type": "",
+      "number": "",
+      "congress": 114,
+      "title": "",
+      "introduced_date": "2016-09-27",
+      "latest_action": {
+        "date": "2016-09-27",
+        "text": "On agreeing to the Green, Al amendment (A021) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hres889-114",
+      "type": "hres",
+      "number": "889",
+      "congress": 114,
+      "title": "Supporting the goals and ideals of October as National Domestic Violence Awareness Month and expressing the sense of the House of Representatives that Congress should continue to raise awareness of domestic violence and its devastating effects on individuals, families, and communities, and support programs designed to end domestic violence in the United States.",
+      "introduced_date": "2016-09-22",
+      "latest_action": {
+        "date": "2016-09-22",
+        "text": "Referred to the House Committee on Education and the Workforce."
+      },
+      "policy_area": "Families"
+    },
+    {
+      "id": "hres772-114",
+      "type": "hres",
+      "number": "772",
+      "congress": 114,
+      "title": "Original LGBTQ Pride Month Resolution of 2016",
+      "introduced_date": "2016-06-08",
+      "latest_action": {
+        "date": "2016-06-10",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "-114",
+      "type": "",
+      "number": "",
+      "congress": 114,
+      "title": "",
+      "introduced_date": "2016-05-25",
+      "latest_action": {
+        "date": "2016-05-25",
+        "text": "Mr. Simpson raised a point of order against the Green, Al amendment (A039). Mr. Simpson stated that the amendment sought to change existing law and constituted legislation in an appropriations bill. The Chair sustained the point of order. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hres714-114",
+      "type": "hres",
+      "number": "714",
+      "congress": 114,
+      "title": "Supporting the goals and ideals of the Fair Housing Act and Fair Housing Month, which includes bringing attention to the discrimination faced by minority populations in the United States in housing and housing-related transactions on the basis of race, color, national origin, sex, familial status, disability, and religion.",
+      "introduced_date": "2016-04-29",
+      "latest_action": {
+        "date": "2016-05-17",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr5025-114",
+      "type": "hr",
+      "number": "5025",
+      "congress": 114,
+      "title": "2016 Tax Day Floods Supplemental Funding Act",
+      "introduced_date": "2016-04-21",
+      "latest_action": {
+        "date": "2016-04-21",
+        "text": "Referred to the Committee on Appropriations, and in addition to the Committee on the Budget, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Emergency Management"
+    },
+    {
+      "id": "hres699-114",
+      "type": "hres",
+      "number": "699",
+      "congress": 114,
+      "title": "Promoting minority health awareness and supporting the goals and ideals of National Minority Health Month in April 2016, which includes bringing attention to the health disparities faced by minority populations of the United States such as American Indians, Alaskan Natives, Asian Americans, African-Americans, Latino Americans, and Native Hawaiians or other Pacific Islanders.",
+      "introduced_date": "2016-04-21",
+      "latest_action": {
+        "date": "2016-04-21",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "-114",
+      "type": "",
+      "number": "",
+      "congress": 114,
+      "title": "",
+      "introduced_date": "2016-02-02",
+      "latest_action": {
+        "date": "2016-02-02",
+        "text": "On agreeing to the Green, Al amendment (A011) Failed by recorded vote: 181 - 239 (Roll no. 51). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hres597-114",
+      "type": "hres",
+      "number": "597",
+      "congress": 114,
+      "title": "Original Black History Month Resolution of 2016",
+      "introduced_date": "2016-02-02",
+      "latest_action": {
+        "date": "2016-02-25",
+        "text": "Sponsor introductory remarks on measure. (CR H945-947)"
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hconres110-114",
+      "type": "hconres",
+      "number": "110",
+      "congress": 114,
+      "title": "Original NAACP Resolution of 2016",
+      "introduced_date": "2016-02-02",
+      "latest_action": {
+        "date": "2016-02-02",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres518-114",
+      "type": "hres",
+      "number": "518",
+      "congress": 114,
+      "title": "Honoring and praising the American Jewish Committee (AJC) on the occasion of its 109th anniversary.",
+      "introduced_date": "2015-11-05",
+      "latest_action": {
+        "date": "2015-11-05",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hconres84-114",
+      "type": "hconres",
+      "number": "84",
+      "congress": 114,
+      "title": "Recognizing former United States Federal Judge Frank Minis Johnson, Jr. for his role in the civil rights movement.",
+      "introduced_date": "2015-10-01",
+      "latest_action": {
+        "date": "2015-11-03",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "-114",
+      "type": "",
+      "number": "",
+      "congress": 114,
+      "title": "",
+      "introduced_date": "2015-06-03",
+      "latest_action": {
+        "date": "2015-06-03",
+        "text": "Mr. Diaz-Balart raised a point of order against the Green, Al amendment (A034). Mr. Diaz-Balart stated that the amendment seeks to cause a net increase in budget authority in violation of the provisions of H. Res. 5. The Chair sustained the point of order. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr3347-114",
+      "type": "hr",
+      "number": "3347",
+      "congress": 114,
+      "title": "Byron Nash Renal Medullary Carcinoma Awareness Act of 2015",
+      "introduced_date": "2015-07-29",
+      "latest_action": {
+        "date": "2015-07-31",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr2033-114",
+      "type": "hr",
+      "number": "2033",
+      "congress": 114,
+      "title": "Nepal Temporary Protected Status Act of 2015",
+      "introduced_date": "2015-04-27",
+      "latest_action": {
+        "date": "2015-05-15",
+        "text": "Referred to the Subcommittee on Immigration and Border Security."
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "hr934-114",
+      "type": "hr",
+      "number": "934",
+      "congress": 114,
+      "title": "Redistricting and Voter Protection Act of 2015",
+      "introduced_date": "2015-02-12",
+      "latest_action": {
+        "date": "2015-03-16",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr251-114",
+      "type": "hr",
+      "number": "251",
+      "congress": 114,
+      "title": "Homes for Heroes Act of 2015",
+      "introduced_date": "2015-01-09",
+      "latest_action": {
+        "date": "2015-07-15",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hres329-114",
+      "type": "hres",
+      "number": "329",
+      "congress": 114,
+      "title": "Encouraging the celebration of the month of June as LGBTQ Pride Month.",
+      "introduced_date": "2015-06-18",
+      "latest_action": {
+        "date": "2015-07-01",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres295-114",
+      "type": "hres",
+      "number": "295",
+      "congress": 114,
+      "title": "Supporting local law enforcement agencies in their continued work to serve our communities, and supporting their use of body worn cameras to promote transparency to protect both citizens and officers alike.",
+      "introduced_date": "2015-06-03",
+      "latest_action": {
+        "date": "2015-06-10",
+        "text": "Motion to reconsider laid on the table Agreed to without objection."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hres238-114",
+      "type": "hres",
+      "number": "238",
+      "congress": 114,
+      "title": "Promoting minority health awareness and supporting the goals and ideals of National Minority Health Month in April 2015, which includes bringing attention to the health disparities faced by minority populations of the United States such as American Indians, Alaska Natives, Asian Americans, African Americans, Hispanic Americans, and Native Hawaiians or other Pacific Islanders.",
+      "introduced_date": "2015-04-30",
+      "latest_action": {
+        "date": "2015-04-30",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "-109",
+      "type": "",
+      "number": "",
+      "congress": 109,
+      "title": "",
+      "introduced_date": "2005-06-29",
+      "latest_action": {
+        "date": "2005-06-29",
+        "text": "On agreeing to the Green, Al amendment (A010) Agreed to by recorded vote: 231 - 191 (Roll no. 338). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr6149-109",
+      "type": "hr",
+      "number": "6149",
+      "congress": 109,
+      "title": "Gulf Coast Housing Accessibility Act of 2006",
+      "introduced_date": "2006-09-21",
+      "latest_action": {
+        "date": "2006-10-18",
+        "text": "Referred to the Subcommittee on Housing and Community Opportunity."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr5731-109",
+      "type": "hr",
+      "number": "5731",
+      "congress": 109,
+      "title": "Living American Wage (LAW) Act of 2006",
+      "introduced_date": "2006-06-29",
+      "latest_action": {
+        "date": "2006-09-07",
+        "text": "Referred to the Subcommittee on Workforce Protections."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr5458-109",
+      "type": "hr",
+      "number": "5458",
+      "congress": 109,
+      "title": "To provide for the National Science Foundation to make grants for the establishment of summer science and mathematics camps for middle school and high school students.",
+      "introduced_date": "2006-05-23",
+      "latest_action": {
+        "date": "2006-09-12",
+        "text": "Referred to the Subcommittee on Research."
+      },
+      "policy_area": "Education"
+    },
+    {
+      "id": "hr4073-109",
+      "type": "hr",
+      "number": "4073",
+      "congress": 109,
+      "title": "Pakistani Temporary Protected Status Act of 2005",
+      "introduced_date": "2005-10-18",
+      "latest_action": {
+        "date": "2006-02-06",
+        "text": "Referred to the Subcommittee on Immigration, Border Security, and Claims."
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "hr3165-109",
+      "type": "hr",
+      "number": "3165",
+      "congress": 109,
+      "title": "To amend the Occupational Safety and Health Act to provide for criminal liability for willful safety standard violations resulting in the death of contract employees.",
+      "introduced_date": "2005-06-30",
+      "latest_action": {
+        "date": "2005-08-23",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, and Homeland Security."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hconres335-109",
+      "type": "hconres",
+      "number": "335",
+      "congress": 109,
+      "title": "Honoring and praising the National Association for the Advancement of Colored People on the occasion of its 97th anniversary.",
+      "introduced_date": "2006-02-08",
+      "latest_action": {
+        "date": "2006-05-11",
+        "text": "Message on Senate action sent to the House."
+      },
+      "policy_area": "Commemorations"
+    },
+    {
+      "id": "hconres209-109",
+      "type": "hconres",
+      "number": "209",
+      "congress": 109,
+      "title": "Supporting the goals and ideals of Domestic Violence Awareness Month and expressing the sense of Congress that Congress should raise awareness of domestic violence in the United States and its devastating effects on families.",
+      "introduced_date": "2005-07-14",
+      "latest_action": {
+        "date": "2005-09-28",
+        "text": "Received in the Senate."
+      },
+      "policy_area": "Commemorations"
+    },
+    {
+      "id": "-114",
+      "type": "",
+      "number": "",
+      "congress": 114,
+      "title": "",
+      "introduced_date": "2015-06-03",
+      "latest_action": {
+        "date": "2015-06-03",
+        "text": "By unanimous consent, the Green, Al amendment was withdrawn. (consideration: CR H3860)"
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr3348-114",
+      "type": "hr",
+      "number": "3348",
+      "congress": 114,
+      "title": "PROTECT Act of 2015",
+      "introduced_date": "2015-07-29",
+      "latest_action": {
+        "date": "2015-09-28",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr1124-114",
+      "type": "hr",
+      "number": "1124",
+      "congress": 114,
+      "title": "CAM TIP Act of 2015",
+      "introduced_date": "2015-02-26",
+      "latest_action": {
+        "date": "2015-08-13",
+        "text": "Referred to the Subcommittee on Readiness."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr372-114",
+      "type": "hr",
+      "number": "372",
+      "congress": 114,
+      "title": "Housing Fairness Act of 2015",
+      "introduced_date": "2015-01-14",
+      "latest_action": {
+        "date": "2015-01-14",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr252-114",
+      "type": "hr",
+      "number": "252",
+      "congress": 114,
+      "title": "Comprehensive Homes for Heroes Act of 2015",
+      "introduced_date": "2015-01-09",
+      "latest_action": {
+        "date": "2015-01-09",
+        "text": "Referred to the Committee on Financial Services, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "-111",
+      "type": "",
+      "number": "",
+      "congress": 111,
+      "title": "",
+      "introduced_date": "2010-06-16",
+      "latest_action": {
+        "date": "2010-06-16",
+        "text": "On agreeing to the Green, Al amendment (A006) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-111",
+      "type": "",
+      "number": "",
+      "congress": 111,
+      "title": "",
+      "introduced_date": "2010-06-16",
+      "latest_action": {
+        "date": "2010-06-16",
+        "text": "On agreeing to the Green, Al amendment (A014) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-111",
+      "type": "",
+      "number": "",
+      "congress": 111,
+      "title": "",
+      "introduced_date": "2009-06-04",
+      "latest_action": {
+        "date": "2009-06-04",
+        "text": "On agreeing to the Green, Al amendment (A002) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr6505-111",
+      "type": "hr",
+      "number": "6505",
+      "congress": 111,
+      "title": "Pakistani Temporary Protected Status Act of 2010",
+      "introduced_date": "2010-12-08",
+      "latest_action": {
+        "date": "2010-12-20",
+        "text": "Referred to the Subcommittee on Immigration, Citizenship, Refugees, Border Security, and International Law."
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "hr5855-111",
+      "type": "hr",
+      "number": "5855",
+      "congress": 111,
+      "title": "Johnson Space Center Workforce Stability Act of 2010",
+      "introduced_date": "2010-07-26",
+      "latest_action": {
+        "date": "2010-10-13",
+        "text": "Referred to the Subcommittee on Higher Education, Lifelong Learning, and Competitiveness."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr3041-111",
+      "type": "hr",
+      "number": "3041",
+      "congress": 111,
+      "title": "Living American Wage (LAW) Act of 2009",
+      "introduced_date": "2009-06-25",
+      "latest_action": {
+        "date": "2009-06-25",
+        "text": "Referred to the House Committee on Education and Labor."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr600-111",
+      "type": "hr",
+      "number": "600",
+      "congress": 111,
+      "title": "FHA Seller-Financed Downpayment Reform Act of 2009",
+      "introduced_date": "2009-01-16",
+      "latest_action": {
+        "date": "2009-01-16",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr476-111",
+      "type": "hr",
+      "number": "476",
+      "congress": 111,
+      "title": "Veterans, Women, Families with Children, and Persons With Disabilities Housing Fairness Act of 2010",
+      "introduced_date": "2009-01-13",
+      "latest_action": {
+        "date": "2010-12-09",
+        "text": "Placed on the Union Calendar, Calendar No. 404."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr403-111",
+      "type": "hr",
+      "number": "403",
+      "congress": 111,
+      "title": "Homes for Heroes Act of 2009",
+      "introduced_date": "2009-01-09",
+      "latest_action": {
+        "date": "2009-06-17",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hres1046-111",
+      "type": "hres",
+      "number": "1046",
+      "congress": 111,
+      "title": "Recognizing the significance of Black History Month.",
+      "introduced_date": "2010-01-27",
+      "latest_action": {
+        "date": "2010-02-23",
+        "text": "Motion to reconsider laid on the table Agreed to without objection."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres817-111",
+      "type": "hres",
+      "number": "817",
+      "congress": 111,
+      "title": "Supporting the goals and ideals of National Domestic Violence Awareness Month and expressing the sense of the House of Representatives that Congress should continue to raise awareness of domestic violence in the United States and its devastating effects on families and communities, and support programs designed to end domestic violence.",
+      "introduced_date": "2009-10-08",
+      "latest_action": {
+        "date": "2009-11-16",
+        "text": "Referred to the Subcommittee on Healthy Families and Communities."
+      },
+      "policy_area": "Families"
+    },
+    {
+      "id": "hres784-111",
+      "type": "hres",
+      "number": "784",
+      "congress": 111,
+      "title": "Honoring the 2560th anniversary of the birth of Confucius and recognizing his invaluable contributions to philosophy and social and political thought.",
+      "introduced_date": "2009-09-29",
+      "latest_action": {
+        "date": "2009-10-28",
+        "text": "Motion to reconsider laid on the table Agreed to without objection."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hres713-111",
+      "type": "hres",
+      "number": "713",
+      "congress": 111,
+      "title": "Recognizing the significant contributions of United States automobile dealerships, and expressing the sense of the House of Representatives that in the interest of equity, automobile dealers be given consideration to enter the automobile market once it rebounds and stabilizes.",
+      "introduced_date": "2009-07-31",
+      "latest_action": {
+        "date": "2010-05-19",
+        "text": "The title of the measure was amended. Agreed to without objection."
+      },
+      "policy_area": "Commerce"
+    },
+    {
+      "id": "hres83-111",
+      "type": "hres",
+      "number": "83",
+      "congress": 111,
+      "title": "Recognizing the significance of Black History Month.",
+      "introduced_date": "2009-01-23",
+      "latest_action": {
+        "date": "2009-02-24",
+        "text": "Motion to reconsider laid on the table Agreed to without objection."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hconres242-111",
+      "type": "hconres",
+      "number": "242",
+      "congress": 111,
+      "title": "Honoring and praising the National Association for the Advancement of Colored People on the occasion of its 101st anniversary.",
+      "introduced_date": "2010-02-25",
+      "latest_action": {
+        "date": "2010-06-18",
+        "text": "Message on Senate action sent to the House."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hconres35-111",
+      "type": "hconres",
+      "number": "35",
+      "congress": 111,
+      "title": "Honoring and praising the National Association for the Advancement of Colored People on the occasion of its 100th anniversary.",
+      "introduced_date": "2009-01-28",
+      "latest_action": {
+        "date": "2009-02-13",
+        "text": "Message on Senate action sent to the House."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "-110",
+      "type": "",
+      "number": "",
+      "congress": 110,
+      "title": "",
+      "introduced_date": "2007-11-15",
+      "latest_action": {
+        "date": "2007-11-15",
+        "text": "On agreeing to the Green, Al amendment (A016) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-110",
+      "type": "",
+      "number": "",
+      "congress": 110,
+      "title": "",
+      "introduced_date": "2007-07-24",
+      "latest_action": {
+        "date": "2007-07-24",
+        "text": "By unanimous consent, the Green, Al amendment was withdrawn. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-110",
+      "type": "",
+      "number": "",
+      "congress": 110,
+      "title": "",
+      "introduced_date": "2007-05-17",
+      "latest_action": {
+        "date": "2007-05-17",
+        "text": "By unanimous consent, the Green, Al amendment was withdrawn. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-110",
+      "type": "",
+      "number": "",
+      "congress": 110,
+      "title": "",
+      "introduced_date": "2007-03-20",
+      "latest_action": {
+        "date": "2007-03-21",
+        "text": "On agreeing to the Green, Al amendment (A005) as modified Agreed to by the Yeas and Nays: 242 - 184 (Roll no. 170). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr6694-110",
+      "type": "hr",
+      "number": "6694",
+      "congress": 110,
+      "title": "FHA Seller-Financed Downpayment Reform and Risk-Based Pricing Authorization Act of 2008",
+      "introduced_date": "2008-07-31",
+      "latest_action": {
+        "date": "2008-10-02",
+        "text": "Placed on the Union Calendar, Calendar No. 582."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr6395-110",
+      "type": "hr",
+      "number": "6395",
+      "congress": 110,
+      "title": "DHS PREP Act of 2008",
+      "introduced_date": "2008-06-26",
+      "latest_action": {
+        "date": "2008-09-29",
+        "text": "Referred to the Subcommittee on Emergency Communications, Preparedness, and Response."
+      },
+      "policy_area": "Emergency Management"
+    },
+    {
+      "id": "hr4637-110",
+      "type": "hr",
+      "number": "4637",
+      "congress": 110,
+      "title": "Living American Wage (LAW) Act of 2007",
+      "introduced_date": "2007-12-13",
+      "latest_action": {
+        "date": "2007-12-13",
+        "text": "Referred to the House Committee on Education and Labor."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr4161-110",
+      "type": "hr",
+      "number": "4161",
+      "congress": 110,
+      "title": "Veterans Homelessness Prevention Act",
+      "introduced_date": "2007-11-13",
+      "latest_action": {
+        "date": "2008-03-25",
+        "text": "Referred to the Subcommittee on Housing and Community Opportunity."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr3725-110",
+      "type": "hr",
+      "number": "3725",
+      "congress": 110,
+      "title": "Mortgage Disclosure Simplification Act of 2007",
+      "introduced_date": "2007-10-02",
+      "latest_action": {
+        "date": "2007-10-02",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr3329-110",
+      "type": "hr",
+      "number": "3329",
+      "congress": 110,
+      "title": "Homes for Heroes Act of 2008",
+      "introduced_date": "2007-08-02",
+      "latest_action": {
+        "date": "2008-07-10",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr2962-110",
+      "type": "hr",
+      "number": "2962",
+      "congress": 110,
+      "title": "Pakistani Temporary Protected Status Act of 2007",
+      "introduced_date": "2007-07-10",
+      "latest_action": {
+        "date": "2007-08-10",
+        "text": "Referred to the Subcommittee on Immigration, Citizenship, Refugees, Border Security, and International Law."
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "hr2926-110",
+      "type": "hr",
+      "number": "2926",
+      "congress": 110,
+      "title": "Housing Fairness Act of 2007",
+      "introduced_date": "2007-06-28",
+      "latest_action": {
+        "date": "2007-06-28",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr2512-110",
+      "type": "hr",
+      "number": "2512",
+      "congress": 110,
+      "title": "Reducing Coverage Gaps for Kids Act of 2007",
+      "introduced_date": "2007-05-24",
+      "latest_action": {
+        "date": "2007-05-24",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr2435-110",
+      "type": "hr",
+      "number": "2435",
+      "congress": 110,
+      "title": "Equal Protection for All Workers Act",
+      "introduced_date": "2007-05-22",
+      "latest_action": {
+        "date": "2007-07-17",
+        "text": "Referred to the Subcommittee on Workforce Protections."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr1154-110",
+      "type": "hr",
+      "number": "1154",
+      "congress": 110,
+      "title": "To award a Congressional Gold Medal to Michael Ellis DeBakey, M.D.",
+      "introduced_date": "2007-02-16",
+      "latest_action": {
+        "date": "2007-10-26",
+        "text": "Indefinitely postponed by Senate by Unanimous Consent. (consideration: CR S13493)"
+      },
+      "policy_area": "Commemorations"
+    },
+    {
+      "id": "hres1095-110",
+      "type": "hres",
+      "number": "1095",
+      "congress": 110,
+      "title": "Recognizing and honoring the 40th anniversary of congressional passage of title VIII of the Civil Rights Act of 1968 (the Fair Housing Act) and the 20th anniversary of the Fair Housing Amendments Act of 1988.",
+      "introduced_date": "2008-04-09",
+      "latest_action": {
+        "date": "2008-04-15",
+        "text": "Motion to reconsider laid on the table Agreed to without objection."
+      },
+      "policy_area": "Commemorations"
+    },
+    {
+      "id": "hres942-110",
+      "type": "hres",
+      "number": "942",
+      "congress": 110,
+      "title": "Recognizing the significance of Black History Month.",
+      "introduced_date": "2008-01-28",
+      "latest_action": {
+        "date": "2008-02-06",
+        "text": "Motion to reconsider laid on the table Agreed to without objection."
+      },
+      "policy_area": "Commemorations"
+    },
+    {
+      "id": "hres826-110",
+      "type": "hres",
+      "number": "826",
+      "congress": 110,
+      "title": "Expressing the sense of the House of Representatives that the hanging of nooses is a horrible act when used for the purpose of intimidation and which under certain circumstances can be a criminal act that should be thoroughly investigated by Federal law enforcement authorities and that any criminal violations should be vigorously prosecuted.",
+      "introduced_date": "2007-11-14",
+      "latest_action": {
+        "date": "2007-12-05",
+        "text": "Motion to reconsider laid on the table Agreed to without objection."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres198-110",
+      "type": "hres",
+      "number": "198",
+      "congress": 110,
+      "title": "Recognizing the significance of Black History Month.",
+      "introduced_date": "2007-02-27",
+      "latest_action": {
+        "date": "2007-03-12",
+        "text": "Motion to reconsider laid on the table Agreed to without objection."
+      },
+      "policy_area": "Commemorations"
+    },
+    {
+      "id": "hconres289-110",
+      "type": "hconres",
+      "number": "289",
+      "congress": 110,
+      "title": "Honoring and praising the National Association for the Advancement of Colored People on the occasion of its 99th anniversary.",
+      "introduced_date": "2008-02-07",
+      "latest_action": {
+        "date": "2008-03-05",
+        "text": "Message on Senate action sent to the House."
+      },
+      "policy_area": "Commemorations"
+    },
+    {
+      "id": "hconres242-110",
+      "type": "hconres",
+      "number": "242",
+      "congress": 110,
+      "title": "Recognizing the two year anniversary of the earthquake that occurred in northern Pakistan in 2005 and urging the United States to continue to support rebuilding efforts in Pakistan in response to the conditions caused by that earthquake.",
+      "introduced_date": "2007-10-25",
+      "latest_action": {
+        "date": "2007-10-25",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hconres44-110",
+      "type": "hconres",
+      "number": "44",
+      "congress": 110,
+      "title": "Honoring and praising the National Association for the Advancement of Colored People on the occasion of its 98th anniversary.",
+      "introduced_date": "2007-01-24",
+      "latest_action": {
+        "date": "2007-03-26",
+        "text": "Message on Senate action sent to the House."
+      },
+      "policy_area": "Commemorations"
+    }
+  ]
+}

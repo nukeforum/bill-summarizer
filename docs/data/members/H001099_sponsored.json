@@ -1,0 +1,34 @@
+{
+  "bioguide_id": "H001099",
+  "congress": 119,
+  "kind": "sponsored",
+  "generated_at": "2026-05-07T19:06:27Z",
+  "bills": [
+    {
+      "id": "hr4091-119",
+      "type": "hr",
+      "number": "4091",
+      "congress": 119,
+      "title": "LEDGER Act",
+      "introduced_date": "2025-06-24",
+      "latest_action": {
+        "date": "2025-06-24",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Economics and Public Finance"
+    },
+    {
+      "id": "hr3343-119",
+      "type": "hr",
+      "number": "3343",
+      "congress": 119,
+      "title": "Greenlighting Growth Act",
+      "introduced_date": "2025-05-13",
+      "latest_action": {
+        "date": "2025-07-22",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+      },
+      "policy_area": "Finance and Financial Sector"
+    }
+  ]
+}

@@ -1,0 +1,4480 @@
+{
+  "bioguide_id": "B000668",
+  "congress": 119,
+  "kind": "cosponsored",
+  "generated_at": "2026-05-07T20:52:53Z",
+  "bills": [
+    {
+      "id": "hr5160-119",
+      "type": "hr",
+      "number": "5160",
+      "congress": 119,
+      "title": "Stem Cell Therapeutic and Research Reauthorization Act of 2025",
+      "introduced_date": "2026-04-27",
+      "latest_action": {
+        "date": "2025-09-04",
+        "text": "Referred to the House Committee on Energy and Commerce."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr3164-119",
+      "type": "hr",
+      "number": "3164",
+      "congress": 119,
+      "title": "Ensuring Community Access to Pharmacist Services Act",
+      "introduced_date": "2026-04-16",
+      "latest_action": {
+        "date": "2025-05-01",
+        "text": "Referred to the Committee on Energy and Commerce, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hres1169-119",
+      "type": "hres",
+      "number": "1169",
+      "congress": 119,
+      "title": "Honoring the 2026 Olympians and Paralympians from Oregon.",
+      "introduced_date": "2026-04-14",
+      "latest_action": {
+        "date": "2026-04-14",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Sports and Recreation"
+    },
+    {
+      "id": "hr8092-119",
+      "type": "hr",
+      "number": "8092",
+      "congress": 119,
+      "title": "Native American Housing Assistance and Self-Determination Modernization Act of 2026",
+      "introduced_date": "2026-03-26",
+      "latest_action": {
+        "date": "2026-04-23",
+        "text": "Sponsor introductory remarks on measure. (CR H3080)"
+      },
+      "policy_area": "Native Americans"
+    },
+    {
+      "id": "hr4282-119",
+      "type": "hr",
+      "number": "4282",
+      "congress": 119,
+      "title": "Contact Lens Prescription Verification Modernization Act",
+      "introduced_date": "2026-03-26",
+      "latest_action": {
+        "date": "2025-07-02",
+        "text": "Referred to the House Committee on Energy and Commerce."
+      },
+      "policy_area": "Commerce"
+    },
+    {
+      "id": "hr2398-119",
+      "type": "hr",
+      "number": "2398",
+      "congress": 119,
+      "title": "Rural Veterinary Workforce Act",
+      "introduced_date": "2026-03-12",
+      "latest_action": {
+        "date": "2025-03-27",
+        "text": "Referred to the House Committee on Ways and Means."
+      },
+      "policy_area": "Taxation"
+    },
+    {
+      "id": "hr740-119",
+      "type": "hr",
+      "number": "740",
+      "congress": 119,
+      "title": "Veterans’ ACCESS Act of 2025",
+      "introduced_date": "2026-03-09",
+      "latest_action": {
+        "date": "2025-07-23",
+        "text": "Ordered to be Reported (Amended) by Voice Vote."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr7825-119",
+      "type": "hr",
+      "number": "7825",
+      "congress": 119,
+      "title": "Doug LaMalfa Protect Innocent Victims of Taxation After Fire Extension Act",
+      "introduced_date": "2026-03-05",
+      "latest_action": {
+        "date": "2026-03-05",
+        "text": "Referred to the House Committee on Ways and Means."
+      },
+      "policy_area": "Taxation"
+    },
+    {
+      "id": "hres1073-119",
+      "type": "hres",
+      "number": "1073",
+      "congress": 119,
+      "title": "Expressing support for the designation of February 21 through February 28, 2026, as \"National FFA Week\", recognizing the important role of the National Future Farmers of America (FFA) Organization in developing the next generation of globally conscious leaders who will change the world, and celebrating the 50th anniversary of the chartering of the State of Alaska as a State FFA Association.",
+      "introduced_date": "2026-02-23",
+      "latest_action": {
+        "date": "2026-02-23",
+        "text": "Referred to the House Committee on Agriculture."
+      },
+      "policy_area": "Agriculture and Food"
+    },
+    {
+      "id": "hr5269-119",
+      "type": "hr",
+      "number": "5269",
+      "congress": 119,
+      "title": "RESULTS Act",
+      "introduced_date": "2026-02-23",
+      "latest_action": {
+        "date": "2025-09-10",
+        "text": "Referred to the Committee on Energy and Commerce, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr2048-119",
+      "type": "hr",
+      "number": "2048",
+      "congress": 119,
+      "title": "Metastatic Breast Cancer Access to Care Act",
+      "introduced_date": "2026-02-23",
+      "latest_action": {
+        "date": "2025-03-11",
+        "text": "Referred to the House Committee on Ways and Means."
+      },
+      "policy_area": "Social Welfare"
+    },
+    {
+      "id": "hr2120-119",
+      "type": "hr",
+      "number": "2120",
+      "congress": 119,
+      "title": "ROCR Value Based Program Act",
+      "introduced_date": "2026-02-09",
+      "latest_action": {
+        "date": "2025-03-14",
+        "text": "Referred to the Committee on Energy and Commerce, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr7356-119",
+      "type": "hr",
+      "number": "7356",
+      "congress": 119,
+      "title": "To amend the Help America Vote Act of 2002 to prohibit the use of Federal funds for election administration in States that permit ballot harvesting.",
+      "introduced_date": "2026-02-04",
+      "latest_action": {
+        "date": "2026-02-04",
+        "text": "Referred to the House Committee on House Administration."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr7008-119",
+      "type": "hr",
+      "number": "7008",
+      "congress": 119,
+      "title": "Stop Insider Trading Act",
+      "introduced_date": "2026-01-21",
+      "latest_action": {
+        "date": "2026-02-03",
+        "text": "Placed on the Union Calendar, Calendar No. 409."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "hr5343-119",
+      "type": "hr",
+      "number": "5343",
+      "congress": 119,
+      "title": "Ensuring Patient Access to Critical Breakthrough Products Act",
+      "introduced_date": "2026-01-14",
+      "latest_action": {
+        "date": "2025-09-17",
+        "text": "Ordered to be Reported in the Nature of a Substitute (Amended) by the Yeas and Nays: 37 - 3."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr379-119",
+      "type": "hr",
+      "number": "379",
+      "congress": 119,
+      "title": "Healthcare Freedom and Choice Act",
+      "introduced_date": "2025-12-18",
+      "latest_action": {
+        "date": "2025-01-14",
+        "text": "Referred to the Committee on Energy and Commerce, and in addition to the Committees on Education and Workforce, and Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr6906-119",
+      "type": "hr",
+      "number": "6906",
+      "congress": 119,
+      "title": "Protecting Patients from Rehab Fraud Act of 2025",
+      "introduced_date": "2025-12-18",
+      "latest_action": {
+        "date": "2025-12-18",
+        "text": "Referred to the House Committee on Energy and Commerce."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr5221-119",
+      "type": "hr",
+      "number": "5221",
+      "congress": 119,
+      "title": "PART Act",
+      "introduced_date": "2025-12-17",
+      "latest_action": {
+        "date": "2026-02-10",
+        "text": "Forwarded by Subcommittee to Full Committee by Voice Vote."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr4424-119",
+      "type": "hr",
+      "number": "4424",
+      "congress": 119,
+      "title": "SHIELD Act",
+      "introduced_date": "2025-12-09",
+      "latest_action": {
+        "date": "2025-07-16",
+        "text": "Referred to the House Committee on Ways and Means."
+      },
+      "policy_area": "Social Welfare"
+    },
+    {
+      "id": "hr4317-119",
+      "type": "hr",
+      "number": "4317",
+      "congress": 119,
+      "title": "PBM Reform Act of 2025",
+      "introduced_date": "2025-12-09",
+      "latest_action": {
+        "date": "2025-07-10",
+        "text": "Referred to the Committee on Energy and Commerce, and in addition to the Committees on Education and Workforce, and Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr632-119",
+      "type": "hr",
+      "number": "632",
+      "congress": 119,
+      "title": "Protecting Life on College Campus Act of 2025",
+      "introduced_date": "2025-12-09",
+      "latest_action": {
+        "date": "2025-01-22",
+        "text": "Referred to the House Committee on Education and Workforce."
+      },
+      "policy_area": "Education"
+    },
+    {
+      "id": "hr1227-119",
+      "type": "hr",
+      "number": "1227",
+      "congress": 119,
+      "title": "Alternatives to PAIN Act",
+      "introduced_date": "2025-12-09",
+      "latest_action": {
+        "date": "2025-02-12",
+        "text": "Referred to the Committee on Energy and Commerce, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr3514-119",
+      "type": "hr",
+      "number": "3514",
+      "congress": 119,
+      "title": "Improving Seniors’ Timely Access to Care Act of 2025",
+      "introduced_date": "2025-12-01",
+      "latest_action": {
+        "date": "2025-05-20",
+        "text": "Referred to the Committee on Ways and Means, and in addition to the Committee on Energy and Commerce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hres864-119",
+      "type": "hres",
+      "number": "864",
+      "congress": 119,
+      "title": "Honoring the service and sacrifice of America's veterans on Veterans Day, 2025.",
+      "introduced_date": "2025-11-17",
+      "latest_action": {
+        "date": "2025-11-07",
+        "text": "Referred to the House Committee on Veterans' Affairs."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr5401-119",
+      "type": "hr",
+      "number": "5401",
+      "congress": 119,
+      "title": "Pay Our Troops Act of 2026",
+      "introduced_date": "2025-10-06",
+      "latest_action": {
+        "date": "2025-09-16",
+        "text": "Referred to the House Committee on Appropriations."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr5267-119",
+      "type": "hr",
+      "number": "5267",
+      "congress": 119,
+      "title": "American Franchise Act",
+      "introduced_date": "2025-09-18",
+      "latest_action": {
+        "date": "2025-09-10",
+        "text": "Referred to the House Committee on Education and Workforce."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hres719-119",
+      "type": "hres",
+      "number": "719",
+      "congress": 119,
+      "title": "Honoring the life and legacy of Charles \"Charlie\" James Kirk.",
+      "introduced_date": "2025-09-16",
+      "latest_action": {
+        "date": "2025-09-19",
+        "text": "Motion to reconsider laid on the table Agreed to without objection."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr425-119",
+      "type": "hr",
+      "number": "425",
+      "congress": 119,
+      "title": "Repealing Big Brother Overreach Act",
+      "introduced_date": "2025-09-10",
+      "latest_action": {
+        "date": "2026-04-21",
+        "text": "Ordered to be Reported by the Yeas and Nays: 26 - 25."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr2814-119",
+      "type": "hr",
+      "number": "2814",
+      "congress": 119,
+      "title": "Transportation Freedom Act",
+      "introduced_date": "2025-09-10",
+      "latest_action": {
+        "date": "2025-04-10",
+        "text": "Referred to the Committee on Energy and Commerce, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr5225-119",
+      "type": "hr",
+      "number": "5225",
+      "congress": 119,
+      "title": "Protect Innocent Victims of Taxation After Fire Extension Act",
+      "introduced_date": "2025-09-09",
+      "latest_action": {
+        "date": "2025-09-09",
+        "text": "Referred to the House Committee on Ways and Means."
+      },
+      "policy_area": "Taxation"
+    },
+    {
+      "id": "hr2217-119",
+      "type": "hr",
+      "number": "2217",
+      "congress": 119,
+      "title": "Down East Remembrance Act",
+      "introduced_date": "2025-09-08",
+      "latest_action": {
+        "date": "2025-03-18",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr3194-119",
+      "type": "hr",
+      "number": "3194",
+      "congress": 119,
+      "title": "LOCOMOTIVES Act",
+      "introduced_date": "2025-08-05",
+      "latest_action": {
+        "date": "2025-05-05",
+        "text": "Referred to the House Committee on Energy and Commerce."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr1266-119",
+      "type": "hr",
+      "number": "1266",
+      "congress": 119,
+      "title": "Combating Illicit Xylazine Act",
+      "introduced_date": "2025-08-01",
+      "latest_action": {
+        "date": "2025-02-12",
+        "text": "Referred to the Committee on Energy and Commerce, and in addition to the Committee on the Judiciary, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr1262-119",
+      "type": "hr",
+      "number": "1262",
+      "congress": 119,
+      "title": "Mikaela Naylon Give Kids a Chance Act",
+      "introduced_date": "2025-07-14",
+      "latest_action": {
+        "date": "2025-12-02",
+        "text": "Received in the Senate."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr4370-119",
+      "type": "hr",
+      "number": "4370",
+      "congress": 119,
+      "title": "SAMS Act of 2025",
+      "introduced_date": "2025-07-14",
+      "latest_action": {
+        "date": "2025-07-14",
+        "text": "Referred to the Committee on Natural Resources, and in addition to the Committees on Science, Space, and Technology, Foreign Affairs, Transportation and Infrastructure, Armed Services, Energy and Commerce, Agriculture, Ways and Means, Financial Services, Oversight and Government Reform, and Small Business, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr3300-119",
+      "type": "hr",
+      "number": "3300",
+      "congress": 119,
+      "title": "Forest Protection and Wildland Firefighter Safety Act of 2025",
+      "introduced_date": "2025-06-30",
+      "latest_action": {
+        "date": "2025-06-13",
+        "text": "Referred to the Subcommittee on Water Resources and Environment."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr1492-119",
+      "type": "hr",
+      "number": "1492",
+      "congress": 119,
+      "title": "To amend title XI of the Social Security Act to equalize the negotiation period between small-molecule and biologic candidates under the Drug Price Negotiation Program.",
+      "introduced_date": "2025-06-26",
+      "latest_action": {
+        "date": "2025-02-21",
+        "text": "Referred to the Committee on Energy and Commerce, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr3286-119",
+      "type": "hr",
+      "number": "3286",
+      "congress": 119,
+      "title": "Mammoth Cave National Park Boundary Adjustment Act of 2025",
+      "introduced_date": "2025-06-23",
+      "latest_action": {
+        "date": "2026-03-18",
+        "text": "Subcommittee Hearings Held"
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr3699-119",
+      "type": "hr",
+      "number": "3699",
+      "congress": 119,
+      "title": "Energy Choice Act",
+      "introduced_date": "2025-06-12",
+      "latest_action": {
+        "date": "2026-02-04",
+        "text": "Placed on the Union Calendar, Calendar No. 412."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr3946-119",
+      "type": "hr",
+      "number": "3946",
+      "congress": 119,
+      "title": "FIGHT Act of 2025",
+      "introduced_date": "2025-06-12",
+      "latest_action": {
+        "date": "2025-06-12",
+        "text": "Referred to the House Committee on Agriculture."
+      },
+      "policy_area": "Animals"
+    },
+    {
+      "id": "hr2725-119",
+      "type": "hr",
+      "number": "2725",
+      "congress": 119,
+      "title": "Affordable Housing Credit Improvement Act of 2025",
+      "introduced_date": "2025-05-14",
+      "latest_action": {
+        "date": "2025-04-08",
+        "text": "Referred to the House Committee on Ways and Means."
+      },
+      "policy_area": "Taxation"
+    },
+    {
+      "id": "hr3079-119",
+      "type": "hr",
+      "number": "3079",
+      "congress": 119,
+      "title": "Medicaid Empowerment Act of 2025",
+      "introduced_date": "2025-04-30",
+      "latest_action": {
+        "date": "2025-04-29",
+        "text": "Referred to the House Committee on Energy and Commerce."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hjres88-119",
+      "type": "hjres",
+      "number": "88",
+      "congress": 119,
+      "title": "Providing congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"California State Motor Vehicle and Engine Pollution Control Standards; Advanced Clean Cars II; Waiver of Preemption; Notice of Decision\".",
+      "introduced_date": "2025-04-24",
+      "latest_action": {
+        "date": "2025-06-12",
+        "text": "Became Public Law No: 119-16."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hjres87-119",
+      "type": "hjres",
+      "number": "87",
+      "congress": 119,
+      "title": "Providing congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"California State Motor Vehicle and Engine Pollution Control Standards; Heavy-Duty Vehicle and Engine Emission Warranty and Maintenance Provisions; Advanced Clean Trucks; Zero Emission Airport Shuttle; Zero-Emission Power Train Certification; Waiver of Preemption; Notice of Decision\".",
+      "introduced_date": "2025-04-10",
+      "latest_action": {
+        "date": "2025-06-12",
+        "text": "Became Public Law No: 119-15."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr2709-119",
+      "type": "hr",
+      "number": "2709",
+      "congress": 119,
+      "title": "Save Our Sequoias Act",
+      "introduced_date": "2025-04-08",
+      "latest_action": {
+        "date": "2026-03-17",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Energy and Natural Resources."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hjres89-119",
+      "type": "hjres",
+      "number": "89",
+      "congress": 119,
+      "title": "Providing congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"California State Motor Vehicle and Engine and Nonroad Engine Pollution Control Standards; The 'Omnibus' Low NOX Regulation; Waiver of Preemption; Notice of Decision\".",
+      "introduced_date": "2025-04-07",
+      "latest_action": {
+        "date": "2025-06-12",
+        "text": "Became Public Law No: 119-17."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr1920-119",
+      "type": "hr",
+      "number": "1920",
+      "congress": 119,
+      "title": "FARMLAND Act of 2025",
+      "introduced_date": "2025-04-07",
+      "latest_action": {
+        "date": "2025-03-28",
+        "text": "Referred to the Subcommittee on Nutrition and Foreign Agriculture."
+      },
+      "policy_area": "Agriculture and Food"
+    },
+    {
+      "id": "hr2645-119",
+      "type": "hr",
+      "number": "2645",
+      "congress": 119,
+      "title": "Congressional Oversight of the Antiquities Act",
+      "introduced_date": "2025-04-03",
+      "latest_action": {
+        "date": "2025-04-03",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr2480-119",
+      "type": "hr",
+      "number": "2480",
+      "congress": 119,
+      "title": "Securing Semiconductor Supply Chains Act of 2025",
+      "introduced_date": "2025-03-31",
+      "latest_action": {
+        "date": "2025-04-29",
+        "text": "Received in the Senate."
+      },
+      "policy_area": "Commerce"
+    },
+    {
+      "id": "hjres79-119",
+      "type": "hjres",
+      "number": "79",
+      "congress": 119,
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"Review of Final Rule Reclassification of Major Sources as Area Sources Under Section 112 of the Clean Air Act\".",
+      "introduced_date": "2025-03-31",
+      "latest_action": {
+        "date": "2025-03-27",
+        "text": "Sponsor introductory remarks on measure. (CR H1328-1329)"
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr1232-119",
+      "type": "hr",
+      "number": "1232",
+      "congress": 119,
+      "title": "National Right-to-Work Act",
+      "introduced_date": "2025-03-31",
+      "latest_action": {
+        "date": "2025-02-12",
+        "text": "Referred to the House Committee on Education and Workforce."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr2165-119",
+      "type": "hr",
+      "number": "2165",
+      "congress": 119,
+      "title": "Choice in Automobile Retail Sales Act of 2025",
+      "introduced_date": "2025-03-27",
+      "latest_action": {
+        "date": "2025-03-27",
+        "text": "Sponsor introductory remarks on measure. (CR H1317)"
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hres254-119",
+      "type": "hres",
+      "number": "254",
+      "congress": 119,
+      "title": "Recognizing the 250th anniversary of the United States Marine Corps.",
+      "introduced_date": "2025-03-27",
+      "latest_action": {
+        "date": "2025-03-26",
+        "text": "Referred to the House Committee on Armed Services."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr2203-119",
+      "type": "hr",
+      "number": "2203",
+      "congress": 119,
+      "title": "Innovative FEED Act of 2025",
+      "introduced_date": "2025-03-18",
+      "latest_action": {
+        "date": "2025-03-18",
+        "text": "Referred to the House Committee on Energy and Commerce."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr2232-119",
+      "type": "hr",
+      "number": "2232",
+      "congress": 119,
+      "title": "Protecting Access to Ground Ambulance Medical Services Act of 2025",
+      "introduced_date": "2025-03-18",
+      "latest_action": {
+        "date": "2025-03-18",
+        "text": "Referred to the Committee on Energy and Commerce, and in addition to the Committee on Ways and Means, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr979-119",
+      "type": "hr",
+      "number": "979",
+      "congress": 119,
+      "title": "AM Radio for Every Vehicle Act of 2025",
+      "introduced_date": "2025-03-18",
+      "latest_action": {
+        "date": "2025-11-12",
+        "text": "Placed on the Union Calendar, Calendar No. 330."
+      },
+      "policy_area": "Science, Technology, Communications"
+    },
+    {
+      "id": "hr2126-119",
+      "type": "hr",
+      "number": "2126",
+      "congress": 119,
+      "title": "FOCA Act of 2025",
+      "introduced_date": "2025-03-14",
+      "latest_action": {
+        "date": "2025-03-14",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr1845-119",
+      "type": "hr",
+      "number": "1845",
+      "congress": 119,
+      "title": "TAP Promotion Act",
+      "introduced_date": "2025-03-11",
+      "latest_action": {
+        "date": "2025-03-27",
+        "text": "Referred to the Subcommittee on Economic Opportunity."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr2074-119",
+      "type": "hr",
+      "number": "2074",
+      "congress": 119,
+      "title": "POWER Act",
+      "introduced_date": "2025-03-11",
+      "latest_action": {
+        "date": "2025-03-11",
+        "text": "Referred to the Subcommittee on Water Resources and Environment."
+      },
+      "policy_area": "Water Resources Development"
+    },
+    {
+      "id": "hr2073-119",
+      "type": "hr",
+      "number": "2073",
+      "congress": 119,
+      "title": "Defending our Dams Act",
+      "introduced_date": "2025-03-11",
+      "latest_action": {
+        "date": "2025-09-03",
+        "text": "Subcommittee Hearings Held"
+      },
+      "policy_area": "Water Resources Development"
+    },
+    {
+      "id": "hr1919-119",
+      "type": "hr",
+      "number": "1919",
+      "congress": 119,
+      "title": "Anti-CBDC Surveillance State Act",
+      "introduced_date": "2025-03-10",
+      "latest_action": {
+        "date": "2025-07-17",
+        "text": "Motion to reconsider laid on the table Agreed to without objection."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr1651-119",
+      "type": "hr",
+      "number": "1651",
+      "congress": 119,
+      "title": "To nullify the final rule issued by the Environmental Protection Agency relating to \"New Source Performance Standards for Greenhouse Gas Emissions From New, Modified, and Reconstructed Fossil Fuel-Fired Electric Generating Units; Emission Guidelines for Greenhouse Gas Emissions From Existing Fossil Fuel-Fired Electric Generating Units; and Repeal of the Affordable Clean Energy Rule\".",
+      "introduced_date": "2025-03-10",
+      "latest_action": {
+        "date": "2025-02-27",
+        "text": "Referred to the House Committee on Energy and Commerce."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr1997-119",
+      "type": "hr",
+      "number": "1997",
+      "congress": 119,
+      "title": "Productive Public Lands Act",
+      "introduced_date": "2025-03-10",
+      "latest_action": {
+        "date": "2025-03-10",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr1110-119",
+      "type": "hr",
+      "number": "1110",
+      "congress": 119,
+      "title": "Grazing for Wildfire Risk Reduction Act",
+      "introduced_date": "2025-03-10",
+      "latest_action": {
+        "date": "2026-01-08",
+        "text": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 119-433, Part I."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr1897-119",
+      "type": "hr",
+      "number": "1897",
+      "congress": 119,
+      "title": "ESA Amendments Act of 2025",
+      "introduced_date": "2025-03-06",
+      "latest_action": {
+        "date": "2026-04-20",
+        "text": "Rules Committee Resolution H. Res. 1189 Reported to House. Rule provides for consideration of H.R. 4690, H. Res. 1182, H.R. 1897 and H.R. 5587. The resolution provides for consideration of H.R. 4690, H. Res. 1182, H.R. 1897, and H.R. 5587 under a closed rule with one hour of general debate on each measure. The resolution provides for one motion to recommit on H.R. 4690, H.R. 1897, and H.R. 5587."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr1820-119",
+      "type": "hr",
+      "number": "1820",
+      "congress": 119,
+      "title": "FLASH Act",
+      "introduced_date": "2025-03-05",
+      "latest_action": {
+        "date": "2025-03-11",
+        "text": "Subcommittee Hearings Held"
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr1566-119",
+      "type": "hr",
+      "number": "1566",
+      "congress": 119,
+      "title": "REPAIR Act",
+      "introduced_date": "2025-03-04",
+      "latest_action": {
+        "date": "2026-02-10",
+        "text": "Forwarded by Subcommittee to Full Committee by Voice Vote."
+      },
+      "policy_area": "Commerce"
+    },
+    {
+      "id": "hr842-119",
+      "type": "hr",
+      "number": "842",
+      "congress": 119,
+      "title": "Nancy Gardner Sewell Medicare Multi-Cancer Early Detection Screening Coverage Act",
+      "introduced_date": "2025-03-04",
+      "latest_action": {
+        "date": "2025-10-03",
+        "text": "Reported (Amended) by the Committee on Ways and Means. H. Rept. 119-333, Part I."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr909-119",
+      "type": "hr",
+      "number": "909",
+      "congress": 119,
+      "title": "Crime Victims Fund Stabilization Act of 2025",
+      "introduced_date": "2025-03-03",
+      "latest_action": {
+        "date": "2026-01-13",
+        "text": "Received in the Senate and Read twice and referred to the Committee on the Judiciary."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr956-119",
+      "type": "hr",
+      "number": "956",
+      "congress": 119,
+      "title": "Aerial Firefighting Enhancement Act of 2025",
+      "introduced_date": "2025-02-27",
+      "latest_action": {
+        "date": "2025-03-07",
+        "text": "Referred to the Subcommittee on Forestry and Horticulture."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr1624-119",
+      "type": "hr",
+      "number": "1624",
+      "congress": 119,
+      "title": "Supporting Farm Operations Act of 2025",
+      "introduced_date": "2025-02-26",
+      "latest_action": {
+        "date": "2025-02-26",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "hres166-119",
+      "type": "hres",
+      "number": "166",
+      "congress": 119,
+      "title": "Expressing support for the Iranian people's desires for a democratic, secular, and nonnuclear Republic of Iran, and condemning the Iranian regime's terrorism, regional proxy war, internal suppression, and for other purposes.",
+      "introduced_date": "2025-02-26",
+      "latest_action": {
+        "date": "2025-02-26",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr1575-119",
+      "type": "hr",
+      "number": "1575",
+      "congress": 119,
+      "title": "No American Land for Communist China Act",
+      "introduced_date": "2025-02-25",
+      "latest_action": {
+        "date": "2025-02-25",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hjres20-119",
+      "type": "hjres",
+      "number": "20",
+      "congress": 119,
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Energy relating to \"Energy Conservation Program: Energy Conservation Standards for Consumer Gas-fired Instantaneous Water Heaters\".",
+      "introduced_date": "2025-02-18",
+      "latest_action": {
+        "date": "2025-05-09",
+        "text": "Became Public Law No: 119-6."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr1383-119",
+      "type": "hr",
+      "number": "1383",
+      "congress": 119,
+      "title": "Secure Rural Schools Reauthorization Act of 2025",
+      "introduced_date": "2025-02-14",
+      "latest_action": {
+        "date": "2025-02-28",
+        "text": "Referred to the Subcommittee on Forestry and Horticulture."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr1329-119",
+      "type": "hr",
+      "number": "1329",
+      "congress": 119,
+      "title": "Smithsonian American Women’s History Museum Act",
+      "introduced_date": "2025-02-13",
+      "latest_action": {
+        "date": "2026-04-23",
+        "text": "Placed on the Union Calendar, Calendar No. 538."
+      },
+      "policy_area": "Arts, Culture, Religion"
+    },
+    {
+      "id": "hr1309-119",
+      "type": "hr",
+      "number": "1309",
+      "congress": 119,
+      "title": "Protect America’s Lands Act",
+      "introduced_date": "2025-02-13",
+      "latest_action": {
+        "date": "2025-02-13",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr1330-119",
+      "type": "hr",
+      "number": "1330",
+      "congress": 119,
+      "title": "Smithsonian National Museum of the American Latino Act",
+      "introduced_date": "2025-02-13",
+      "latest_action": {
+        "date": "2025-02-13",
+        "text": "Referred to the Committee on House Administration, and in addition to the Committee on Natural Resources, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Arts, Culture, Religion"
+    },
+    {
+      "id": "hconres12-119",
+      "type": "hconres",
+      "number": "12",
+      "congress": 119,
+      "title": "Supporting the Local Radio Freedom Act.",
+      "introduced_date": "2025-02-13",
+      "latest_action": {
+        "date": "2025-02-13",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Science, Technology, Communications"
+    },
+    {
+      "id": "hr261-119",
+      "type": "hr",
+      "number": "261",
+      "congress": 119,
+      "title": "Undersea Cable Protection Act of 2025",
+      "introduced_date": "2025-02-12",
+      "latest_action": {
+        "date": "2026-02-12",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Commerce, Science, and Transportation."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr1206-119",
+      "type": "hr",
+      "number": "1206",
+      "congress": 119,
+      "title": "WEST Act of 2025",
+      "introduced_date": "2025-02-11",
+      "latest_action": {
+        "date": "2025-02-11",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr649-119",
+      "type": "hr",
+      "number": "649",
+      "congress": 119,
+      "title": "Whole Milk for Healthy Kids Act of 2025",
+      "introduced_date": "2025-02-04",
+      "latest_action": {
+        "date": "2025-06-05",
+        "text": "Placed on the Union Calendar, Calendar No. 111."
+      },
+      "policy_area": "Agriculture and Food"
+    },
+    {
+      "id": "hr845-119",
+      "type": "hr",
+      "number": "845",
+      "congress": 119,
+      "title": "Pet and Livestock Protection Act",
+      "introduced_date": "2025-01-31",
+      "latest_action": {
+        "date": "2025-12-18",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Environment and Public Works."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr21-119",
+      "type": "hr",
+      "number": "21",
+      "congress": 119,
+      "title": "Born-Alive Abortion Survivors Protection Act",
+      "introduced_date": "2025-01-23",
+      "latest_action": {
+        "date": "2025-01-24",
+        "text": "Received in the Senate and Read twice and referred to the Committee on the Judiciary."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr626-119",
+      "type": "hr",
+      "number": "626",
+      "congress": 119,
+      "title": "Northwest Energy Security Act",
+      "introduced_date": "2025-01-22",
+      "latest_action": {
+        "date": "2025-01-23",
+        "text": "Referred to the Subcommittee on Water Resources and Environment."
+      },
+      "policy_area": "Water Resources Development"
+    },
+    {
+      "id": "hr471-119",
+      "type": "hr",
+      "number": "471",
+      "congress": 119,
+      "title": "Fix Our Forests Act",
+      "introduced_date": "2025-01-21",
+      "latest_action": {
+        "date": "2025-03-06",
+        "text": "Committee on Agriculture, Nutrition, and Forestry Subcommittee on Conservation, Forestry, Natural Resources, and Biotechnology. Hearings held. With printed Hearing: S.Hrg. 119-27."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr452-119",
+      "type": "hr",
+      "number": "452",
+      "congress": 119,
+      "title": "Miracle on Ice Congressional Gold Medal Act",
+      "introduced_date": "2025-01-15",
+      "latest_action": {
+        "date": "2025-12-12",
+        "text": "Became Public Law No: 119-53."
+      },
+      "policy_area": "Sports and Recreation"
+    },
+    {
+      "id": "hr38-119",
+      "type": "hr",
+      "number": "38",
+      "congress": 119,
+      "title": "Constitutional Concealed Carry Reciprocity Act of 2025",
+      "introduced_date": "2025-01-09",
+      "latest_action": {
+        "date": "2025-10-03",
+        "text": "Placed on the Union Calendar, Calendar No. 289."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr9950-118",
+      "type": "hr",
+      "number": "9950",
+      "congress": 118,
+      "title": "Miracle on Ice Congressional Gold Medal Act",
+      "introduced_date": "2024-12-18",
+      "latest_action": {
+        "date": "2024-10-08",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Sports and Recreation"
+    },
+    {
+      "id": "hr8147-118",
+      "type": "hr",
+      "number": "8147",
+      "congress": 118,
+      "title": "Repealing Big Brother Overreach Act",
+      "introduced_date": "2024-12-04",
+      "latest_action": {
+        "date": "2024-04-29",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr8836-118",
+      "type": "hr",
+      "number": "8836",
+      "congress": 118,
+      "title": "Wildlife Movement Through Partnerships Act",
+      "introduced_date": "2024-12-04",
+      "latest_action": {
+        "date": "2024-09-10",
+        "text": "Subcommittee Hearings Held"
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr8865-118",
+      "type": "hr",
+      "number": "8865",
+      "congress": 118,
+      "title": "To nullify Executive Order 14072 and prohibit the Secretary of Agriculture and the Secretary of the Interior from implementing, administering, or enforcing such Executive Order or any substantially similar executive order.",
+      "introduced_date": "2024-11-20",
+      "latest_action": {
+        "date": "2024-12-17",
+        "text": "Referred to the Subcommittee on Trade."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hres1566-118",
+      "type": "hres",
+      "number": "1566",
+      "congress": 118,
+      "title": "Honoring the service and sacrifice of America's veterans on Veterans Day, 2024.",
+      "introduced_date": "2024-11-08",
+      "latest_action": {
+        "date": "2024-11-08",
+        "text": "Referred to the House Committee on Veterans' Affairs."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr6012-118",
+      "type": "hr",
+      "number": "6012",
+      "congress": 118,
+      "title": "Fire Safe Electrical Corridors Act of 2023",
+      "introduced_date": "2024-09-25",
+      "latest_action": {
+        "date": "2024-12-18",
+        "text": "Reported (Amended) by the Committee on Natural Resources. H. Rept. 118-915, Part I."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hres1489-118",
+      "type": "hres",
+      "number": "1489",
+      "congress": 118,
+      "title": "Supporting the designation of the week of September 23 through September 27, 2024, as \"National Clean Energy Week\".",
+      "introduced_date": "2024-09-23",
+      "latest_action": {
+        "date": "2024-09-23",
+        "text": "Referred to the House Committee on Energy and Commerce."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr9274-118",
+      "type": "hr",
+      "number": "9274",
+      "congress": 118,
+      "title": "SHAWL Act",
+      "introduced_date": "2024-09-23",
+      "latest_action": {
+        "date": "2024-08-02",
+        "text": "Referred to the Committee on House Administration, and in addition to the Committee on Natural Resources, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Arts, Culture, Religion"
+    },
+    {
+      "id": "hr9678-118",
+      "type": "hr",
+      "number": "9678",
+      "congress": 118,
+      "title": "Federal Lands Amplified Security for the Homeland (FLASH) Act",
+      "introduced_date": "2024-09-23",
+      "latest_action": {
+        "date": "2024-09-19",
+        "text": "Referred to the Committee on Natural Resources, and in addition to the Committees on Agriculture, the Budget, and Homeland Security, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr621-118",
+      "type": "hr",
+      "number": "621",
+      "congress": 118,
+      "title": "PART Act",
+      "introduced_date": "2024-09-18",
+      "latest_action": {
+        "date": "2023-02-10",
+        "text": "Referred to the Subcommittee on Innovation, Data, and Commerce."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr9625-118",
+      "type": "hr",
+      "number": "9625",
+      "congress": 118,
+      "title": "JUDGES Act of 2024",
+      "introduced_date": "2024-09-17",
+      "latest_action": {
+        "date": "2024-09-17",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Law"
+    },
+    {
+      "id": "hr8957-118",
+      "type": "hr",
+      "number": "8957",
+      "congress": 118,
+      "title": "PROVE IT Act of 2024",
+      "introduced_date": "2024-09-17",
+      "latest_action": {
+        "date": "2024-12-17",
+        "text": "Referred to the Subcommittee on Trade."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr9549-118",
+      "type": "hr",
+      "number": "9549",
+      "congress": 118,
+      "title": "To designate the facility of the United States Postal Service located at 125 South 1st Avenue in Hillsboro, Oregon, as the \"Elizabeth Furse Post Office Building\".",
+      "introduced_date": "2024-09-17",
+      "latest_action": {
+        "date": "2025-01-04",
+        "text": "Became Public Law No: 118-265."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr9533-118",
+      "type": "hr",
+      "number": "9533",
+      "congress": 118,
+      "title": "ESA Amendments Act of 2024",
+      "introduced_date": "2024-09-10",
+      "latest_action": {
+        "date": "2024-12-16",
+        "text": "Placed on the Union Calendar, Calendar No. 717."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hjres117-118",
+      "type": "hjres",
+      "number": "117",
+      "congress": 118,
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"Reconsideration of the National Ambient Air Quality Standards for Particulate Matter\".",
+      "introduced_date": "2024-07-23",
+      "latest_action": {
+        "date": "2024-09-18",
+        "text": "Ordered to be Reported by the Yeas and Nays: 22 - 18."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hres1363-118",
+      "type": "hres",
+      "number": "1363",
+      "congress": 118,
+      "title": "Honoring the life and legacy of Patrick Gottsch.",
+      "introduced_date": "2024-07-18",
+      "latest_action": {
+        "date": "2024-07-18",
+        "text": "Referred to the House Committee on Oversight and Accountability."
+      },
+      "policy_area": "Science, Technology, Communications"
+    },
+    {
+      "id": "hr8790-118",
+      "type": "hr",
+      "number": "8790",
+      "congress": 118,
+      "title": "Fix Our Forests Act",
+      "introduced_date": "2024-07-18",
+      "latest_action": {
+        "date": "2024-11-12",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Agriculture, Nutrition, and Forestry."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr8693-118",
+      "type": "hr",
+      "number": "8693",
+      "congress": 118,
+      "title": "No American Land for Communist China Act",
+      "introduced_date": "2024-07-15",
+      "latest_action": {
+        "date": "2024-06-11",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hjres159-118",
+      "type": "hjres",
+      "number": "159",
+      "congress": 118,
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the United States Fish and Wildlife Service relating to \"Endangered and Threatened Wildlife and Plants; Regulations Pertaining to Endangered and Threatened Wildlife and Plants\".",
+      "introduced_date": "2024-07-15",
+      "latest_action": {
+        "date": "2024-05-23",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr1831-118",
+      "type": "hr",
+      "number": "1831",
+      "congress": 118,
+      "title": "To award a Congressional Gold Medal to Billie Jean King, an American icon, in recognition of a remarkable life devoted to championing equal rights for all, in sports and in society.",
+      "introduced_date": "2024-07-10",
+      "latest_action": {
+        "date": "2023-03-28",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hjres170-118",
+      "type": "hjres",
+      "number": "170",
+      "congress": 118,
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Housing and Urban Development and the Department of Agriculture relating to \"Final Determination: Adoption of Energy Efficiency Standards for New Construction of HUD- and USDA-Financed Housing\".",
+      "introduced_date": "2024-06-27",
+      "latest_action": {
+        "date": "2024-06-27",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hjres165-118",
+      "type": "hjres",
+      "number": "165",
+      "congress": 118,
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Education relating to \"Nondiscrimination on the Basis of Sex in Education Programs or Activities Receiving Federal Financial Assistance\".",
+      "introduced_date": "2024-06-14",
+      "latest_action": {
+        "date": "2024-07-23",
+        "text": "Received in the Senate. Read twice. Placed on Senate Legislative Calendar under General Orders. Calendar No. 442."
+      },
+      "policy_area": "Education"
+    },
+    {
+      "id": "hr1209-118",
+      "type": "hr",
+      "number": "1209",
+      "congress": 118,
+      "title": "FOCA Act of 2023",
+      "introduced_date": "2024-06-13",
+      "latest_action": {
+        "date": "2024-12-18",
+        "text": "Placed on the Union Calendar, Calendar No. 734."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr6089-118",
+      "type": "hr",
+      "number": "6089",
+      "congress": 118,
+      "title": "Energy Choice Act",
+      "introduced_date": "2024-06-11",
+      "latest_action": {
+        "date": "2023-11-03",
+        "text": "Referred to the Subcommittee on Energy, Climate and Grid Security."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr1015-118",
+      "type": "hr",
+      "number": "1015",
+      "congress": 118,
+      "title": "Dustoff Crews of the Vietnam War Congressional Gold Medal Act",
+      "introduced_date": "2024-06-07",
+      "latest_action": {
+        "date": "2023-02-14",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hjres163-118",
+      "type": "hjres",
+      "number": "163",
+      "congress": 118,
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"New Source Performance Standards for Greenhouse Gas Emissions From New, Modified, and Reconstructed Fossil Fuel-Fired Electric Generating Units; Emission Guidelines for Greenhouse Gas Emissions From Existing Fossil Fuel-Fired Electric Generating Units; and Repeal of the Affordable Clean Energy Rule\".",
+      "introduced_date": "2024-06-05",
+      "latest_action": {
+        "date": "2024-09-18",
+        "text": "Ordered to be Reported by the Yeas and Nays: 23 - 18."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hjres150-118",
+      "type": "hjres",
+      "number": "150",
+      "congress": 118,
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"National Emission Standards for Hazardous Air Pollutants: Coal- and Oil-Fired Electric Utility Steam Generating Units Review of the Residual Risk and Technology Review\".",
+      "introduced_date": "2024-05-17",
+      "latest_action": {
+        "date": "2024-05-24",
+        "text": "Referred to the Subcommittee on Environment, Manufacturing, and Critical Materials."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hjres144-118",
+      "type": "hjres",
+      "number": "144",
+      "congress": 118,
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Alcohol, Tobacco, Firearms, and Explosives, Department of Justice, relating to \"Definition of 'Engaged in the Business' as a Dealer in Firearms\".",
+      "introduced_date": "2024-05-16",
+      "latest_action": {
+        "date": "2024-09-19",
+        "text": "Ordered to be Reported by the Yeas and Nays: 14 - 9."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr6545-118",
+      "type": "hr",
+      "number": "6545",
+      "congress": 118,
+      "title": "Physician Fee Schedule Update and Improvements Act",
+      "introduced_date": "2024-05-15",
+      "latest_action": {
+        "date": "2024-12-17",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr2584-118",
+      "type": "hr",
+      "number": "2584",
+      "congress": 118,
+      "title": "SAVE Act",
+      "introduced_date": "2024-05-07",
+      "latest_action": {
+        "date": "2023-04-13",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hres1148-118",
+      "type": "hres",
+      "number": "1148",
+      "congress": 118,
+      "title": "Condemning the Iranian regime's terrorism, regional proxy war, internal suppression, and for other purposes.",
+      "introduced_date": "2024-05-07",
+      "latest_action": {
+        "date": "2024-04-15",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr7829-118",
+      "type": "hr",
+      "number": "7829",
+      "congress": 118,
+      "title": "SOAR Act of 2024",
+      "introduced_date": "2024-05-07",
+      "latest_action": {
+        "date": "2024-12-17",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr5030-118",
+      "type": "hr",
+      "number": "5030",
+      "congress": 118,
+      "title": "Secure Rural Schools Reauthorization Act of 2023",
+      "introduced_date": "2024-05-07",
+      "latest_action": {
+        "date": "2023-09-19",
+        "text": "Referred to the Subcommittee on Forestry."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hjres134-118",
+      "type": "hjres",
+      "number": "134",
+      "congress": 118,
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Labor relating to \"Improving Protections for Workers in Temporary Agricultural Employment in the United States\".",
+      "introduced_date": "2024-05-01",
+      "latest_action": {
+        "date": "2024-05-01",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr8156-118",
+      "type": "hr",
+      "number": "8156",
+      "congress": 118,
+      "title": "To direct the Comptroller General of the United States to submit to Congress an updated report on the roles, responsibilities, and practices of the Council on Environmental Quality.",
+      "introduced_date": "2024-04-29",
+      "latest_action": {
+        "date": "2024-04-29",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr8160-118",
+      "type": "hr",
+      "number": "8160",
+      "congress": 118,
+      "title": "Breaking Irresponsible Energy and Commercial Habits Act",
+      "introduced_date": "2024-04-29",
+      "latest_action": {
+        "date": "2024-04-30",
+        "text": "Referred to the Subcommittee on Water Resources and Environment."
+      },
+      "policy_area": "Water Resources Development"
+    },
+    {
+      "id": "hr8161-118",
+      "type": "hr",
+      "number": "8161",
+      "congress": 118,
+      "title": "Electric Act",
+      "introduced_date": "2024-04-29",
+      "latest_action": {
+        "date": "2024-04-30",
+        "text": "Referred to the Subcommittee on Water Resources and Environment."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr8158-118",
+      "type": "hr",
+      "number": "8158",
+      "congress": 118,
+      "title": "Pinniped Predator Deterrence Act",
+      "introduced_date": "2024-04-29",
+      "latest_action": {
+        "date": "2024-04-30",
+        "text": "Referred to the Subcommittee on Water Resources and Environment."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr8157-118",
+      "type": "hr",
+      "number": "8157",
+      "congress": 118,
+      "title": "To prohibit the Secretary of the Army from carrying out certain spillage operations on the Lower Snake Rivers dams, and for other purposes.",
+      "introduced_date": "2024-04-29",
+      "latest_action": {
+        "date": "2024-04-30",
+        "text": "Referred to the Subcommittee on Water Resources and Environment."
+      },
+      "policy_area": "Water Resources Development"
+    },
+    {
+      "id": "hres1175-118",
+      "type": "hres",
+      "number": "1175",
+      "congress": 118,
+      "title": "Expressing the sense of the House of Representatives that hydropower is a vital component to an all-of-the-above approach to energy development which is critical to United States national security.",
+      "introduced_date": "2024-04-29",
+      "latest_action": {
+        "date": "2024-05-03",
+        "text": "Referred to the Subcommittee on Energy, Climate and Grid Security."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr8159-118",
+      "type": "hr",
+      "number": "8159",
+      "congress": 118,
+      "title": "ACRES Act",
+      "introduced_date": "2024-04-29",
+      "latest_action": {
+        "date": "2024-04-30",
+        "text": "Referred to the Subcommittee on Water Resources and Environment."
+      },
+      "policy_area": "Water Resources Development"
+    },
+    {
+      "id": "hr8155-118",
+      "type": "hr",
+      "number": "8155",
+      "congress": 118,
+      "title": "Ratepayer Funding Alternative Act",
+      "introduced_date": "2024-04-29",
+      "latest_action": {
+        "date": "2024-04-29",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hres1176-118",
+      "type": "hres",
+      "number": "1176",
+      "congress": 118,
+      "title": "Expressing disapproval of the Columbia Basin Restoration Initiative entered into by the Biden administration.",
+      "introduced_date": "2024-04-29",
+      "latest_action": {
+        "date": "2024-04-29",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Water Resources Development"
+    },
+    {
+      "id": "hr3127-118",
+      "type": "hr",
+      "number": "3127",
+      "congress": 118,
+      "title": "SHOPP Act",
+      "introduced_date": "2024-04-11",
+      "latest_action": {
+        "date": "2023-06-01",
+        "text": "Referred to the Subcommittee on Nutrition, Foreign Agriculture, and Horticulture."
+      },
+      "policy_area": "Agriculture and Food"
+    },
+    {
+      "id": "hr7170-118",
+      "type": "hr",
+      "number": "7170",
+      "congress": 118,
+      "title": "Victims' VOICES Act",
+      "introduced_date": "2024-03-19",
+      "latest_action": {
+        "date": "2024-01-31",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr7725-118",
+      "type": "hr",
+      "number": "7725",
+      "congress": 118,
+      "title": "To amend the Higher Education Act of 1965 to prohibit graduate medical schools from receiving Federal financial assistance if such schools adopt certain policies and requirements relating to diversity, equity, and inclusion.",
+      "introduced_date": "2024-03-19",
+      "latest_action": {
+        "date": "2024-03-19",
+        "text": "Referred to the House Committee on Education and the Workforce."
+      },
+      "policy_area": "Education"
+    },
+    {
+      "id": "hr3497-118",
+      "type": "hr",
+      "number": "3497",
+      "congress": 118,
+      "title": "Uranium Miners and Workers Act of 2023",
+      "introduced_date": "2024-03-19",
+      "latest_action": {
+        "date": "2023-05-18",
+        "text": "Referred to the Committee on the Judiciary, and in addition to the Committee on Appropriations, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr1631-118",
+      "type": "hr",
+      "number": "1631",
+      "congress": 118,
+      "title": "Pro Codes Act",
+      "introduced_date": "2024-03-19",
+      "latest_action": {
+        "date": "2024-07-22",
+        "text": "On motion to suspend the rules and pass the bill, as amended Failed by the Yeas and Nays: (2/3 required): 248 - 127 (Roll no. 357)."
+      },
+      "policy_area": "Commerce"
+    },
+    {
+      "id": "hr7046-118",
+      "type": "hr",
+      "number": "7046",
+      "congress": 118,
+      "title": "Supporting Farm Operations Act of 2024",
+      "introduced_date": "2024-03-07",
+      "latest_action": {
+        "date": "2024-01-18",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "hr7471-118",
+      "type": "hr",
+      "number": "7471",
+      "congress": 118,
+      "title": "FIREARM Act",
+      "introduced_date": "2024-03-07",
+      "latest_action": {
+        "date": "2024-02-28",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr5198-118",
+      "type": "hr",
+      "number": "5198",
+      "congress": 118,
+      "title": "Expansion of Attainable Homeownership Through Manufactured Housing Act of 2023",
+      "introduced_date": "2024-03-05",
+      "latest_action": {
+        "date": "2023-08-11",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr7408-118",
+      "type": "hr",
+      "number": "7408",
+      "congress": 118,
+      "title": "America’s Wildlife Habitat Conservation Act",
+      "introduced_date": "2024-02-20",
+      "latest_action": {
+        "date": "2024-12-18",
+        "text": "Placed on the Union Calendar, Calendar No. 754."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr6951-118",
+      "type": "hr",
+      "number": "6951",
+      "congress": 118,
+      "title": "College Cost Reduction Act",
+      "introduced_date": "2024-02-14",
+      "latest_action": {
+        "date": "2024-11-18",
+        "text": "Placed on the Union Calendar, Calendar No. 624."
+      },
+      "policy_area": "Education"
+    },
+    {
+      "id": "hr6860-118",
+      "type": "hr",
+      "number": "6860",
+      "congress": 118,
+      "title": "Restore Protections for Dialysis Patients Act",
+      "introduced_date": "2024-02-13",
+      "latest_action": {
+        "date": "2024-12-17",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hconres13-118",
+      "type": "hconres",
+      "number": "13",
+      "congress": 118,
+      "title": "Supporting the Local Radio Freedom Act.",
+      "introduced_date": "2024-02-07",
+      "latest_action": {
+        "date": "2023-02-06",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Science, Technology, Communications"
+    },
+    {
+      "id": "hr3413-118",
+      "type": "hr",
+      "number": "3413",
+      "congress": 118,
+      "title": "AM Radio for Every Vehicle Act of 2023",
+      "introduced_date": "2024-02-06",
+      "latest_action": {
+        "date": "2023-05-19",
+        "text": "Referred to the Subcommittee on Innovation, Data, and Commerce."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr7066-118",
+      "type": "hr",
+      "number": "7066",
+      "congress": 118,
+      "title": "DAMN Act",
+      "introduced_date": "2024-01-22",
+      "latest_action": {
+        "date": "2024-01-22",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Water Resources Development"
+    },
+    {
+      "id": "hr6784-118",
+      "type": "hr",
+      "number": "6784",
+      "congress": 118,
+      "title": "ESA Flexibility Act",
+      "introduced_date": "2023-12-14",
+      "latest_action": {
+        "date": "2024-02-14",
+        "text": "Subcommittee Hearings Held"
+      },
+      "policy_area": "Animals"
+    },
+    {
+      "id": "hr4756-118",
+      "type": "hr",
+      "number": "4756",
+      "congress": 118,
+      "title": "Community News and Small Business Support Act",
+      "introduced_date": "2023-12-12",
+      "latest_action": {
+        "date": "2023-07-19",
+        "text": "Referred to the House Committee on Ways and Means."
+      },
+      "policy_area": "Taxation"
+    },
+    {
+      "id": "hr895-118",
+      "type": "hr",
+      "number": "895",
+      "congress": 118,
+      "title": "Combating Organized Retail Crime Act of 2023",
+      "introduced_date": "2023-12-11",
+      "latest_action": {
+        "date": "2024-05-23",
+        "text": "ASSUMING FIRST SPONSORSHIP - Mr. Joyce (OH) asked unanimous consent that he may hereafter be considered as the first sponsor of H.R. 895, a bill originally introduced by Representative Buck, for the purpose of adding cosponsors and requesting reprintings pursuant to clause 7 of rule XII. Agreed to without objection."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr427-118",
+      "type": "hr",
+      "number": "427",
+      "congress": 118,
+      "title": "SAVE Moms and Babies Act of 2023",
+      "introduced_date": "2023-12-11",
+      "latest_action": {
+        "date": "2023-01-27",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr3238-118",
+      "type": "hr",
+      "number": "3238",
+      "congress": 118,
+      "title": "Affordable Housing Credit Improvement Act of 2023",
+      "introduced_date": "2023-12-06",
+      "latest_action": {
+        "date": "2023-05-11",
+        "text": "Referred to the House Committee on Ways and Means."
+      },
+      "policy_area": "Taxation"
+    },
+    {
+      "id": "hr2809-118",
+      "type": "hr",
+      "number": "2809",
+      "congress": 118,
+      "title": "EHR Program RESET Act of 2023",
+      "introduced_date": "2023-11-29",
+      "latest_action": {
+        "date": "2023-06-29",
+        "text": "Referred to the Subcommittee on Oversight and Investigations."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr1385-118",
+      "type": "hr",
+      "number": "1385",
+      "congress": 118,
+      "title": "DOC Access Act of 2023",
+      "introduced_date": "2023-11-28",
+      "latest_action": {
+        "date": "2023-03-17",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hres627-118",
+      "type": "hres",
+      "number": "627",
+      "congress": 118,
+      "title": "Condemning the Government of the Islamic Republic of Iran for the massacre of political prisoners in 1988 and the uprisings of recent years, including the 2018, 2019, and 2022 uprisings, and calling for justice for its victims.",
+      "introduced_date": "2023-11-28",
+      "latest_action": {
+        "date": "2023-07-27",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr5530-118",
+      "type": "hr",
+      "number": "5530",
+      "congress": 118,
+      "title": "VA Emergency Transportation Access Act",
+      "introduced_date": "2023-11-28",
+      "latest_action": {
+        "date": "2024-04-16",
+        "text": "Forwarded by Subcommittee to Full Committee by Voice Vote."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr987-118",
+      "type": "hr",
+      "number": "987",
+      "congress": 118,
+      "title": "Prime Minister Golda Meir Commemorative Coin Act",
+      "introduced_date": "2023-11-07",
+      "latest_action": {
+        "date": "2023-02-10",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr2766-118",
+      "type": "hr",
+      "number": "2766",
+      "congress": 118,
+      "title": "Uyghur Policy Act of 2023",
+      "introduced_date": "2023-11-03",
+      "latest_action": {
+        "date": "2024-02-26",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Foreign Relations."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hres798-118",
+      "type": "hres",
+      "number": "798",
+      "congress": 118,
+      "title": "Condemning the support of Hamas, Hezbollah, and other terrorist organizations at institutions of higher education, which may lead to the creation of a hostile environment for Jewish students, faculty, and staff.",
+      "introduced_date": "2023-11-01",
+      "latest_action": {
+        "date": "2023-11-02",
+        "text": "The title of the measure was amended. Agreed to without objection."
+      },
+      "policy_area": "Education"
+    },
+    {
+      "id": "hres793-118",
+      "type": "hres",
+      "number": "793",
+      "congress": 118,
+      "title": "Calling on Hamas to immediately release hostages taken during October 2023 attack on Israel.",
+      "introduced_date": "2023-10-26",
+      "latest_action": {
+        "date": "2023-11-28",
+        "text": "Motion to reconsider laid on the table Agreed to without objection."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hres781-118",
+      "type": "hres",
+      "number": "781",
+      "congress": 118,
+      "title": "Expressing support for the designation of October 12, 2023, as \"National Loggers Day\".",
+      "introduced_date": "2023-10-12",
+      "latest_action": {
+        "date": "2023-10-25",
+        "text": "Referred to the House Committee on Oversight and Accountability."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hres771-118",
+      "type": "hres",
+      "number": "771",
+      "congress": 118,
+      "title": "Standing with Israel as it defends itself against the barbaric war launched by Hamas and other terrorists.",
+      "introduced_date": "2023-10-12",
+      "latest_action": {
+        "date": "2023-10-25",
+        "text": "Motion to reconsider laid on the table Agreed to without objection."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr5947-118",
+      "type": "hr",
+      "number": "5947",
+      "congress": 118,
+      "title": "To provide for the rescission of certain waivers and licenses relating to Iran, and for other purposes.",
+      "introduced_date": "2023-10-12",
+      "latest_action": {
+        "date": "2024-04-17",
+        "text": "Motion to reconsider laid on the table Agreed to without objection."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr5791-118",
+      "type": "hr",
+      "number": "5791",
+      "congress": 118,
+      "title": "Define the Mission Act",
+      "introduced_date": "2023-09-28",
+      "latest_action": {
+        "date": "2023-09-28",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hres726-118",
+      "type": "hres",
+      "number": "726",
+      "congress": 118,
+      "title": "Supporting the designation of the week of September 25 through September 29, 2023, as \"National Clean Energy Week\".",
+      "introduced_date": "2023-09-26",
+      "latest_action": {
+        "date": "2023-09-29",
+        "text": "Referred to the Subcommittee on Energy, Climate and Grid Security."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr5499-118",
+      "type": "hr",
+      "number": "5499",
+      "congress": 118,
+      "title": "Congressional Oversight of the Antiquities Act",
+      "introduced_date": "2023-09-14",
+      "latest_action": {
+        "date": "2024-03-20",
+        "text": "Subcommittee Hearings Held"
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr2742-118",
+      "type": "hr",
+      "number": "2742",
+      "congress": 118,
+      "title": "FIGHT Act",
+      "introduced_date": "2023-07-26",
+      "latest_action": {
+        "date": "2023-05-15",
+        "text": "Referred to the Subcommittee on Livestock, Dairy, and Poultry."
+      },
+      "policy_area": "Animals"
+    },
+    {
+      "id": "hr807-118",
+      "type": "hr",
+      "number": "807",
+      "congress": 118,
+      "title": "Working Dog Commemorative Coin Act",
+      "introduced_date": "2023-07-25",
+      "latest_action": {
+        "date": "2024-11-25",
+        "text": "Became Public Law No: 118-109."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr1613-118",
+      "type": "hr",
+      "number": "1613",
+      "congress": 118,
+      "title": "Drug Price Transparency in Medicaid Act of 2023",
+      "introduced_date": "2023-07-20",
+      "latest_action": {
+        "date": "2023-03-24",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr2630-118",
+      "type": "hr",
+      "number": "2630",
+      "congress": 118,
+      "title": "Safe Step Act",
+      "introduced_date": "2023-07-18",
+      "latest_action": {
+        "date": "2023-04-13",
+        "text": "Referred to the House Committee on Education and the Workforce."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr4335-118",
+      "type": "hr",
+      "number": "4335",
+      "congress": 118,
+      "title": "VA Loan Informed Disclosure Act of 2023",
+      "introduced_date": "2023-07-18",
+      "latest_action": {
+        "date": "2023-06-23",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr1586-118",
+      "type": "hr",
+      "number": "1586",
+      "congress": 118,
+      "title": "Forest Protection and Wildland Firefighter Safety Act of 2023",
+      "introduced_date": "2023-07-12",
+      "latest_action": {
+        "date": "2024-12-16",
+        "text": "Placed on the Union Calendar, Calendar No. 723."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr3392-118",
+      "type": "hr",
+      "number": "3392",
+      "congress": 118,
+      "title": "Fighter Force Preservation and Recapitalization Act of 2023",
+      "introduced_date": "2023-06-23",
+      "latest_action": {
+        "date": "2023-05-17",
+        "text": "Referred to the House Committee on Armed Services."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr1147-118",
+      "type": "hr",
+      "number": "1147",
+      "congress": 118,
+      "title": "Whole Milk for Healthy Kids Act of 2023",
+      "introduced_date": "2023-06-22",
+      "latest_action": {
+        "date": "2023-12-18",
+        "text": "Read the second time. Placed on Senate Legislative Calendar under General Orders. Calendar No. 293."
+      },
+      "policy_area": "Agriculture and Food"
+    },
+    {
+      "id": "hr2717-118",
+      "type": "hr",
+      "number": "2717",
+      "congress": 118,
+      "title": "Hershel Woody Williams National Medal of Honor Monument Location Act",
+      "introduced_date": "2023-06-13",
+      "latest_action": {
+        "date": "2024-05-15",
+        "text": "Committee on Energy and Natural Resources Subcommittee on National Parks. Hearings held."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr1477-118",
+      "type": "hr",
+      "number": "1477",
+      "congress": 118,
+      "title": "Freedom To Invest in Tomorrow's Workforce Act",
+      "introduced_date": "2023-05-30",
+      "latest_action": {
+        "date": "2023-03-08",
+        "text": "Referred to the House Committee on Ways and Means."
+      },
+      "policy_area": "Taxation"
+    },
+    {
+      "id": "hr1271-118",
+      "type": "hr",
+      "number": "1271",
+      "congress": 118,
+      "title": "No Retaining Every Gun In a System That Restricts Your Rights Act",
+      "introduced_date": "2023-05-25",
+      "latest_action": {
+        "date": "2023-03-01",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr887-118",
+      "type": "hr",
+      "number": "887",
+      "congress": 118,
+      "title": "Securing Our Students Act",
+      "introduced_date": "2023-05-25",
+      "latest_action": {
+        "date": "2023-02-09",
+        "text": "Referred to the House Committee on Education and the Workforce."
+      },
+      "policy_area": "Education"
+    },
+    {
+      "id": "hr3644-118",
+      "type": "hr",
+      "number": "3644",
+      "congress": 118,
+      "title": "ACT for Veterans Act",
+      "introduced_date": "2023-05-24",
+      "latest_action": {
+        "date": "2024-04-16",
+        "text": "Forwarded by Subcommittee to Full Committee (Amended) by Voice Vote."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr1200-118",
+      "type": "hr",
+      "number": "1200",
+      "congress": 118,
+      "title": "National Right-to-Work Act",
+      "introduced_date": "2023-05-17",
+      "latest_action": {
+        "date": "2023-02-27",
+        "text": "Referred to the House Committee on Education and the Workforce."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr1761-118",
+      "type": "hr",
+      "number": "1761",
+      "congress": 118,
+      "title": "Let Experienced Pilots Fly Act of 2023",
+      "introduced_date": "2023-05-17",
+      "latest_action": {
+        "date": "2023-03-24",
+        "text": "Referred to the Subcommittee on Aviation."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr3397-118",
+      "type": "hr",
+      "number": "3397",
+      "congress": 118,
+      "title": "WEST Act of 2024",
+      "introduced_date": "2023-05-17",
+      "latest_action": {
+        "date": "2024-05-01",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Energy and Natural Resources."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr1005-118",
+      "type": "hr",
+      "number": "1005",
+      "congress": 118,
+      "title": "EAGLES Act of 2023",
+      "introduced_date": "2023-05-17",
+      "latest_action": {
+        "date": "2023-02-14",
+        "text": "Referred to the Committee on the Judiciary, and in addition to the Committee on Education and the Workforce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr830-118",
+      "type": "hr",
+      "number": "830",
+      "congress": 118,
+      "title": "HELP Copays Act",
+      "introduced_date": "2023-05-15",
+      "latest_action": {
+        "date": "2023-02-17",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr1774-118",
+      "type": "hr",
+      "number": "1774",
+      "congress": 118,
+      "title": "VA Emergency Transportation Act",
+      "introduced_date": "2023-05-15",
+      "latest_action": {
+        "date": "2023-07-18",
+        "text": "Subcommittee Consideration and Mark-up Session Held"
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr1096-118",
+      "type": "hr",
+      "number": "1096",
+      "congress": 118,
+      "title": "250th Anniversary of the United States Marine Corps Commemorative Coin Act",
+      "introduced_date": "2023-05-15",
+      "latest_action": {
+        "date": "2023-07-26",
+        "text": "Became Public Law No: 118-10."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr7-118",
+      "type": "hr",
+      "number": "7",
+      "congress": 118,
+      "title": "No Taxpayer Funding for Abortion and Abortion Insurance Full Disclosure Act of 2023",
+      "introduced_date": "2023-05-15",
+      "latest_action": {
+        "date": "2024-12-17",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr1144-118",
+      "type": "hr",
+      "number": "1144",
+      "congress": 118,
+      "title": "Department of Veterans Affairs Telehealth Strategy Act",
+      "introduced_date": "2023-05-15",
+      "latest_action": {
+        "date": "2023-03-20",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr757-118",
+      "type": "hr",
+      "number": "757",
+      "congress": 118,
+      "title": "Protecting Kids from Candy-Flavored Drugs Act",
+      "introduced_date": "2023-05-15",
+      "latest_action": {
+        "date": "2023-02-10",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr431-118",
+      "type": "hr",
+      "number": "431",
+      "congress": 118,
+      "title": "Life at Conception Act",
+      "introduced_date": "2023-05-15",
+      "latest_action": {
+        "date": "2023-01-20",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr1105-118",
+      "type": "hr",
+      "number": "1105",
+      "congress": 118,
+      "title": "Debbie Smith Act of 2023",
+      "introduced_date": "2023-05-11",
+      "latest_action": {
+        "date": "2024-07-30",
+        "text": "Became Public Law No: 118-72."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hres363-118",
+      "type": "hres",
+      "number": "363",
+      "congress": 118,
+      "title": "Resolution memorializing law enforcement officers killed in the line of duty",
+      "introduced_date": "2023-05-10",
+      "latest_action": {
+        "date": "2023-05-15",
+        "text": "The title of the measure was amended. Agreed to without objection."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr3149-118",
+      "type": "hr",
+      "number": "3149",
+      "congress": 118,
+      "title": "To designate United States Route 20 in the States of Oregon, Idaho, Montana, Wyoming, Nebraska, Iowa, Illinois, Indiana, Ohio, Pennsylvania, New York, and Massachusetts as the \"National Medal of Honor Highway\", and for other purposes.",
+      "introduced_date": "2023-05-09",
+      "latest_action": {
+        "date": "2024-11-26",
+        "text": "Placed on the Union Calendar, Calendar No. 646."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr2989-118",
+      "type": "hr",
+      "number": "2989",
+      "congress": 118,
+      "title": "Save Our Sequoias Act",
+      "introduced_date": "2023-04-28",
+      "latest_action": {
+        "date": "2024-12-18",
+        "text": "Placed on the Union Calendar, Calendar No. 757."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr1722-118",
+      "type": "hr",
+      "number": "1722",
+      "congress": 118,
+      "title": "Grand Ronde Reservation Act Amendment of 2023",
+      "introduced_date": "2023-03-30",
+      "latest_action": {
+        "date": "2023-12-26",
+        "text": "Became Public Law No: 118-32."
+      },
+      "policy_area": "Native Americans"
+    },
+    {
+      "id": "hjres44-118",
+      "type": "hjres",
+      "number": "44",
+      "congress": 118,
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Alcohol, Tobacco, Firearms, and Explosives relating to \"Factoring Criteria for Firearms with Attached 'Stabilizing Braces'\".",
+      "introduced_date": "2023-03-17",
+      "latest_action": {
+        "date": "2023-06-22",
+        "text": "Message on Senate action sent to the House."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr764-118",
+      "type": "hr",
+      "number": "764",
+      "congress": 118,
+      "title": "Trust the Science Act",
+      "introduced_date": "2023-02-27",
+      "latest_action": {
+        "date": "2024-05-01",
+        "text": "Received in the Senate."
+      },
+      "policy_area": "Animals"
+    },
+    {
+      "id": "hr923-118",
+      "type": "hr",
+      "number": "923",
+      "congress": 118,
+      "title": "POWER Act of 2023",
+      "introduced_date": "2023-02-24",
+      "latest_action": {
+        "date": "2023-03-09",
+        "text": "Referred to the Subcommittee on Forestry."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr1141-118",
+      "type": "hr",
+      "number": "1141",
+      "congress": 118,
+      "title": "Natural Gas Tax Repeal Act",
+      "introduced_date": "2023-02-21",
+      "latest_action": {
+        "date": "2023-03-23",
+        "text": "Placed on the Union Calendar, Calendar No. 8."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr726-118",
+      "type": "hr",
+      "number": "726",
+      "congress": 118,
+      "title": "Veterans for Mustangs Act",
+      "introduced_date": "2023-02-06",
+      "latest_action": {
+        "date": "2023-02-21",
+        "text": "Referred to the Subcommittee on Federal Lands."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr386-118",
+      "type": "hr",
+      "number": "386",
+      "congress": 118,
+      "title": "Mount Rushmore Protection Act",
+      "introduced_date": "2023-02-06",
+      "latest_action": {
+        "date": "2023-07-13",
+        "text": "Subcommittee Hearings Held"
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr484-118",
+      "type": "hr",
+      "number": "484",
+      "congress": 118,
+      "title": "Natural Gas Tax Repeal Act",
+      "introduced_date": "2023-02-06",
+      "latest_action": {
+        "date": "2023-01-24",
+        "text": "Referred to the Subcommittee on Energy, Climate and Grid Security."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hjres27-118",
+      "type": "hjres",
+      "number": "27",
+      "congress": 118,
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of the Army, Corps of Engineers, Department of Defense and the Environmental Protection Agency relating to \"Revised Definition of 'Waters of the United States'\".",
+      "introduced_date": "2023-02-02",
+      "latest_action": {
+        "date": "2023-04-18",
+        "text": "The Chair directed the Clerk to notify the Senate of the action of the House."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr592-118",
+      "type": "hr",
+      "number": "592",
+      "congress": 118,
+      "title": "Department of Veterans Affairs Electronic Health Record Modernization Improvement Act",
+      "introduced_date": "2023-01-27",
+      "latest_action": {
+        "date": "2023-07-19",
+        "text": "Subcommittee Consideration and Mark-up Session Held"
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr518-118",
+      "type": "hr",
+      "number": "518",
+      "congress": 118,
+      "title": "Endangered Species Transparency and Reasonableness Act of 2023",
+      "introduced_date": "2023-01-25",
+      "latest_action": {
+        "date": "2023-02-21",
+        "text": "Referred to the Subcommittee on Water, Wildlife, and Fisheries."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr263-118",
+      "type": "hr",
+      "number": "263",
+      "congress": 118,
+      "title": "Stop Trying to Obsessively Vilify Energy Act",
+      "introduced_date": "2023-01-11",
+      "latest_action": {
+        "date": "2023-01-10",
+        "text": "Referred to the House Committee on Energy and Commerce."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr186-118",
+      "type": "hr",
+      "number": "186",
+      "congress": 118,
+      "title": "Water Supply Permitting Coordination Act",
+      "introduced_date": "2023-01-11",
+      "latest_action": {
+        "date": "2023-02-21",
+        "text": "Referred to the Subcommittee on Water, Wildlife, and Fisheries."
+      },
+      "policy_area": "Water Resources Development"
+    },
+    {
+      "id": "hr277-118",
+      "type": "hr",
+      "number": "277",
+      "congress": 118,
+      "title": "Regulations from the Executive in Need of Scrutiny Act of 2023",
+      "introduced_date": "2023-01-11",
+      "latest_action": {
+        "date": "2023-06-21",
+        "text": "Read the second time. Placed on Senate Legislative Calendar under General Orders. Calendar No. 103."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr189-118",
+      "type": "hr",
+      "number": "189",
+      "congress": 118,
+      "title": "Action Versus No Action Act",
+      "introduced_date": "2023-01-09",
+      "latest_action": {
+        "date": "2023-02-21",
+        "text": "Referred to the Subcommittee on Federal Lands."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr209-118",
+      "type": "hr",
+      "number": "209",
+      "congress": 118,
+      "title": "Permitting for Mining Needs Act of 2023",
+      "introduced_date": "2023-01-09",
+      "latest_action": {
+        "date": "2023-02-28",
+        "text": "Subcommittee Hearings Held."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr7494-118",
+      "type": "hr",
+      "number": "7494",
+      "congress": 118,
+      "title": "Protect America’s Lands Act",
+      "introduced_date": "2024-03-15",
+      "latest_action": {
+        "date": "2024-02-29",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr9353-117",
+      "type": "hr",
+      "number": "9353",
+      "congress": 117,
+      "title": "Klamath Power and Facilities Agreement Support Act",
+      "introduced_date": "2022-11-22",
+      "latest_action": {
+        "date": "2022-11-22",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Water Resources Development"
+    },
+    {
+      "id": "hres1433-117",
+      "type": "hres",
+      "number": "1433",
+      "congress": 117,
+      "title": "Expressing support for the designation of October 12, 2022, as \"National Loggers Day\".",
+      "introduced_date": "2022-10-14",
+      "latest_action": {
+        "date": "2022-10-14",
+        "text": "Referred to the House Committee on Oversight and Reform."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr9108-117",
+      "type": "hr",
+      "number": "9108",
+      "congress": 117,
+      "title": "Endangered Species Transparency and Reasonableness Act of 2022",
+      "introduced_date": "2022-10-07",
+      "latest_action": {
+        "date": "2022-09-30",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr9088-117",
+      "type": "hr",
+      "number": "9088",
+      "congress": 117,
+      "title": "Protecting Access for Hunters and Anglers Act of 2022",
+      "introduced_date": "2022-09-30",
+      "latest_action": {
+        "date": "2022-10-28",
+        "text": "Referred to the Subcommittee on Conservation and Forestry."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr8926-117",
+      "type": "hr",
+      "number": "8926",
+      "congress": 117,
+      "title": "Protect Pregnancy Care Centers Act of 2022",
+      "introduced_date": "2022-09-20",
+      "latest_action": {
+        "date": "2022-11-01",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, and Homeland Security."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr8839-117",
+      "type": "hr",
+      "number": "8839",
+      "congress": 117,
+      "title": "Protecting Kids from Candy-Flavored Drugs Act",
+      "introduced_date": "2022-09-19",
+      "latest_action": {
+        "date": "2022-11-01",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, and Homeland Security."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr8705-117",
+      "type": "hr",
+      "number": "8705",
+      "congress": 117,
+      "title": "Veteran Recruitment Act",
+      "introduced_date": "2022-08-23",
+      "latest_action": {
+        "date": "2022-08-12",
+        "text": "Referred to the Committee on Foreign Affairs, and in addition to the Committees on Armed Services, and Oversight and Reform, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr8656-117",
+      "type": "hr",
+      "number": "8656",
+      "congress": 117,
+      "title": "To designate the clinic of the Department of Veterans Affairs in Mishawaka, Indiana, as the \"Jackie Walorski VA Clinic\".",
+      "introduced_date": "2022-08-12",
+      "latest_action": {
+        "date": "2022-09-30",
+        "text": "Became Public Law No: 117-179."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr8421-117",
+      "type": "hr",
+      "number": "8421",
+      "congress": 117,
+      "title": "Access to Safe Contraception Act of 2022",
+      "introduced_date": "2022-08-05",
+      "latest_action": {
+        "date": "2022-07-21",
+        "text": "Sponsor introductory remarks on measure. (CR H6937)"
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr6889-117",
+      "type": "hr",
+      "number": "6889",
+      "congress": 117,
+      "title": "Credit Union Board Modernization Act",
+      "introduced_date": "2022-07-26",
+      "latest_action": {
+        "date": "2022-10-11",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hjres91-117",
+      "type": "hjres",
+      "number": "91",
+      "congress": 117,
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Council on Environmental Quality relating to \"National Environmental Policy Act Implementing Regulations Revisions\".",
+      "introduced_date": "2022-07-22",
+      "latest_action": {
+        "date": "2022-07-19",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hconres100-117",
+      "type": "hconres",
+      "number": "100",
+      "congress": 117,
+      "title": "Expressing the sense of Congress in opposition to the establishment of a new United States consulate or diplomatic mission in Jerusalem for outreach to Palestinians.",
+      "introduced_date": "2022-07-21",
+      "latest_action": {
+        "date": "2022-07-14",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hres1233-117",
+      "type": "hres",
+      "number": "1233",
+      "congress": 117,
+      "title": "Expressing the sense of the House of Representatives condemning the recent attacks on pro-life facilities, groups, and churches.",
+      "introduced_date": "2022-07-19",
+      "latest_action": {
+        "date": "2022-11-01",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, and Homeland Security."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr8136-117",
+      "type": "hr",
+      "number": "8136",
+      "congress": 117,
+      "title": "To amend the Endangered Species Act of 1973 to provide for protective regulations when a species is listed as an endangered species.",
+      "introduced_date": "2022-07-11",
+      "latest_action": {
+        "date": "2022-06-16",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr1229-117",
+      "type": "hr",
+      "number": "1229",
+      "congress": 117,
+      "title": "EAGLES Act of 2021",
+      "introduced_date": "2022-06-28",
+      "latest_action": {
+        "date": "2021-04-28",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, and Homeland Security."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr8230-117",
+      "type": "hr",
+      "number": "8230",
+      "congress": 117,
+      "title": "BUILD IT Act",
+      "introduced_date": "2022-06-24",
+      "latest_action": {
+        "date": "2022-06-25",
+        "text": "Referred to the Subcommittee on Border Security, Facilitation, and Operations."
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "hr7942-117",
+      "type": "hr",
+      "number": "7942",
+      "congress": 117,
+      "title": "Securing Our Students Act",
+      "introduced_date": "2022-06-14",
+      "latest_action": {
+        "date": "2022-06-03",
+        "text": "Referred to the House Committee on Education and Labor."
+      },
+      "policy_area": "Education"
+    },
+    {
+      "id": "hr7705-117",
+      "type": "hr",
+      "number": "7705",
+      "congress": 117,
+      "title": "Supreme Court Police Parity Act of 2022",
+      "introduced_date": "2022-06-14",
+      "latest_action": {
+        "date": "2022-11-01",
+        "text": "Referred to the Subcommittee on Courts, Intellectual Property, and the Internet."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr8016-117",
+      "type": "hr",
+      "number": "8016",
+      "congress": 117,
+      "title": "Federal Columbia River Power System Certainty Act",
+      "introduced_date": "2022-06-09",
+      "latest_action": {
+        "date": "2022-06-10",
+        "text": "Referred to the Subcommittee on Water Resources and Environment."
+      },
+      "policy_area": "Water Resources Development"
+    },
+    {
+      "id": "hr1642-117",
+      "type": "hr",
+      "number": "1642",
+      "congress": 117,
+      "title": "Prosecuting Gun Crimes Saves Lives Act",
+      "introduced_date": "2022-06-09",
+      "latest_action": {
+        "date": "2021-05-18",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, and Homeland Security."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr1518-117",
+      "type": "hr",
+      "number": "1518",
+      "congress": 117,
+      "title": "21st Century NICS Act",
+      "introduced_date": "2022-06-09",
+      "latest_action": {
+        "date": "2021-05-18",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, and Homeland Security."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr194-117",
+      "type": "hr",
+      "number": "194",
+      "congress": 117,
+      "title": "To require the Inspector General, Department of Justice, to submit a report to the Congress on the number of firearm transaction denials issued by the National Instant Criminal Background Check System that are referred to the Bureau of Alcohol, Tobacco, Firearms, and Explosives for investigation, the number of prosecutions resulting from such investigations, and the number of firearms recovered by the Bureau in cases in which such a denial was issued after the firearm was transferred.",
+      "introduced_date": "2022-06-09",
+      "latest_action": {
+        "date": "2021-03-04",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, and Homeland Security."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr7966-117",
+      "type": "hr",
+      "number": "7966",
+      "congress": 117,
+      "title": "STOP II Act",
+      "introduced_date": "2022-06-08",
+      "latest_action": {
+        "date": "2022-11-01",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, and Homeland Security."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr1604-117",
+      "type": "hr",
+      "number": "1604",
+      "congress": 117,
+      "title": "STOP Straw Purchases Act",
+      "introduced_date": "2022-06-08",
+      "latest_action": {
+        "date": "2021-05-18",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, and Homeland Security."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr750-117",
+      "type": "hr",
+      "number": "750",
+      "congress": 117,
+      "title": "Luke and Alex School Safety Act of 2021",
+      "introduced_date": "2022-06-08",
+      "latest_action": {
+        "date": "2021-03-22",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, and Homeland Security."
+      },
+      "policy_area": "Education"
+    },
+    {
+      "id": "hr7766-117",
+      "type": "hr",
+      "number": "7766",
+      "congress": 117,
+      "title": "Trust the Science Act",
+      "introduced_date": "2022-05-13",
+      "latest_action": {
+        "date": "2022-05-13",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr3400-117",
+      "type": "hr",
+      "number": "3400",
+      "congress": 117,
+      "title": "VA Emergency Transportation Act",
+      "introduced_date": "2022-05-12",
+      "latest_action": {
+        "date": "2021-08-02",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr5754-117",
+      "type": "hr",
+      "number": "5754",
+      "congress": 117,
+      "title": "Patient Advocate Tracker Act",
+      "introduced_date": "2022-05-10",
+      "latest_action": {
+        "date": "2022-09-16",
+        "text": "Became Public Law No: 117-175."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr1332-117",
+      "type": "hr",
+      "number": "1332",
+      "congress": 117,
+      "title": "Telehealth Modernization Act",
+      "introduced_date": "2022-05-06",
+      "latest_action": {
+        "date": "2021-02-26",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hres1094-117",
+      "type": "hres",
+      "number": "1094",
+      "congress": 117,
+      "title": "Expressing support for the designation of May 5, 2022, as the \"National Day of Awareness for Missing and Murdered Native Women and Girls\".",
+      "introduced_date": "2022-05-06",
+      "latest_action": {
+        "date": "2022-05-06",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Native Americans"
+    },
+    {
+      "id": "hr7437-117",
+      "type": "hr",
+      "number": "7437",
+      "congress": 117,
+      "title": "No Timber From Tyrants Act",
+      "introduced_date": "2022-04-07",
+      "latest_action": {
+        "date": "2022-05-05",
+        "text": "Referred to the Subcommittee on Conservation and Forestry."
+      },
+      "policy_area": "Foreign Trade and International Finance"
+    },
+    {
+      "id": "hr7021-117",
+      "type": "hr",
+      "number": "7021",
+      "congress": 117,
+      "title": "Landowner Easement Rights Act",
+      "introduced_date": "2022-04-06",
+      "latest_action": {
+        "date": "2022-03-09",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr471-117",
+      "type": "hr",
+      "number": "471",
+      "congress": 117,
+      "title": "PAUSE Act of 2021",
+      "introduced_date": "2022-04-06",
+      "latest_action": {
+        "date": "2021-02-02",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hconres34-117",
+      "type": "hconres",
+      "number": "34",
+      "congress": 117,
+      "title": "Expressing the sense of Congress that a carbon tax would be detrimental to the United States economy.",
+      "introduced_date": "2022-04-05",
+      "latest_action": {
+        "date": "2021-05-17",
+        "text": "Referred to the House Committee on Ways and Means."
+      },
+      "policy_area": "Taxation"
+    },
+    {
+      "id": "hjres72-117",
+      "type": "hjres",
+      "number": "72",
+      "congress": 117,
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by Centers for Disease Control and Prevention relating to \"Requirement for Persons To Wear Masks While on Conveyances and at Transportation Hubs\".",
+      "introduced_date": "2022-04-04",
+      "latest_action": {
+        "date": "2022-02-21",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr7304-117",
+      "type": "hr",
+      "number": "7304",
+      "congress": 117,
+      "title": "Restore Onshore Energy Production Act",
+      "introduced_date": "2022-03-31",
+      "latest_action": {
+        "date": "2022-03-30",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr7285-117",
+      "type": "hr",
+      "number": "7285",
+      "congress": 117,
+      "title": "Unleashing American Energy Act",
+      "introduced_date": "2022-03-31",
+      "latest_action": {
+        "date": "2022-03-30",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr7298-117",
+      "type": "hr",
+      "number": "7298",
+      "congress": 117,
+      "title": "Promoting Energy Independence and Transparency Act",
+      "introduced_date": "2022-03-30",
+      "latest_action": {
+        "date": "2022-03-30",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr7293-117",
+      "type": "hr",
+      "number": "7293",
+      "congress": 117,
+      "title": "Energy Permitting Certainty Act",
+      "introduced_date": "2022-03-30",
+      "latest_action": {
+        "date": "2022-03-30",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr7292-117",
+      "type": "hr",
+      "number": "7292",
+      "congress": 117,
+      "title": "Securing American Energy and Investing in Resiliency Act",
+      "introduced_date": "2022-03-30",
+      "latest_action": {
+        "date": "2022-03-30",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr7186-117",
+      "type": "hr",
+      "number": "7186",
+      "congress": 117,
+      "title": "Emergency Community Care Notification Time Adjustment Act of 2022",
+      "introduced_date": "2022-03-28",
+      "latest_action": {
+        "date": "2022-03-28",
+        "text": "Referred to the Subcommittee on Technology Modernization."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr310-117",
+      "type": "hr",
+      "number": "310",
+      "congress": 117,
+      "title": "To posthumously award the Congressional Gold Medal, collectively, to Glen Doherty, Tyrone Woods, J. Christopher Stevens, and Sean Smith, in recognition of their contributions to the Nation.",
+      "introduced_date": "2022-03-28",
+      "latest_action": {
+        "date": "2022-12-21",
+        "text": "Became Public Law No: 117-256."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hres1005-117",
+      "type": "hres",
+      "number": "1005",
+      "congress": 117,
+      "title": "Honoring the life and legacy of the late Congressman Don Young of Alaska.",
+      "introduced_date": "2022-03-28",
+      "latest_action": {
+        "date": "2022-03-28",
+        "text": "Referred to the House Committee on House Administration."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "hr4828-117",
+      "type": "hr",
+      "number": "4828",
+      "congress": 117,
+      "title": "Border Security for America Act of 2021",
+      "introduced_date": "2022-03-24",
+      "latest_action": {
+        "date": "2021-08-13",
+        "text": "Referred to the Subcommittee on Biotechnology, Horticulture, and Research."
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "hr5129-117",
+      "type": "hr",
+      "number": "5129",
+      "congress": 117,
+      "title": "Community Services Block Grant Modernization Act of 2022",
+      "introduced_date": "2022-03-18",
+      "latest_action": {
+        "date": "2022-05-16",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Health, Education, Labor, and Pensions."
+      },
+      "policy_area": "Social Welfare"
+    },
+    {
+      "id": "hr7127-117",
+      "type": "hr",
+      "number": "7127",
+      "congress": 117,
+      "title": "No OSHA Authority to Mandate Vaccines Act",
+      "introduced_date": "2022-03-17",
+      "latest_action": {
+        "date": "2022-03-17",
+        "text": "Referred to the House Committee on Education and Labor."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr7075-117",
+      "type": "hr",
+      "number": "7075",
+      "congress": 117,
+      "title": "Ukrainian Independence Park Act of 2022",
+      "introduced_date": "2022-03-17",
+      "latest_action": {
+        "date": "2022-12-07",
+        "text": "Placed on the Union Calendar, Calendar No. 437."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr6395-117",
+      "type": "hr",
+      "number": "6395",
+      "congress": 117,
+      "title": "No Mandates Act",
+      "introduced_date": "2022-03-16",
+      "latest_action": {
+        "date": "2022-01-14",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hjres76-117",
+      "type": "hjres",
+      "number": "76",
+      "congress": 117,
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Health and Human Services relating to \"Ensuring Access to Equitable, Affordable, Client-Centered, Quality Family Planning Services\".",
+      "introduced_date": "2022-03-16",
+      "latest_action": {
+        "date": "2022-03-17",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr6017-117",
+      "type": "hr",
+      "number": "6017",
+      "congress": 117,
+      "title": "Parental Rights Protection Act",
+      "introduced_date": "2022-03-15",
+      "latest_action": {
+        "date": "2021-11-19",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr4792-117",
+      "type": "hr",
+      "number": "4792",
+      "congress": 117,
+      "title": "Countering Communist China Act",
+      "introduced_date": "2022-03-15",
+      "latest_action": {
+        "date": "2021-09-03",
+        "text": "Referred to the Subcommittee on Energy and Mineral Resources."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hjres67-117",
+      "type": "hjres",
+      "number": "67",
+      "congress": 117,
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Centers for Medicare & Medicaid Services relating to \"Medicare and Medicaid Programs; Omnibus COVID-19 Health Care Staff Vaccination\".",
+      "introduced_date": "2022-03-15",
+      "latest_action": {
+        "date": "2022-02-28",
+        "text": "Motion to Discharge Committee filed by Mr. Duncan. Petition No: 117-10. (<a href=\"https://clerk.house.gov/DischargePetition/20220228?CongressNum=117\">Discharge petition</a> text with signatures.)"
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr6671-117",
+      "type": "hr",
+      "number": "6671",
+      "congress": 117,
+      "title": "To amend title 38, United States Code, to ensure that a member of the Armed Forces, granted a general discharge under honorable conditions on the sole basis that such member failed to obey a lawful order to receive a vaccine for COVID-19, is eligible for certain educational assistance administered by the Secretary of Veterans Affairs.",
+      "introduced_date": "2022-03-11",
+      "latest_action": {
+        "date": "2022-07-19",
+        "text": "Ordered to be Reported (Amended) by the Yeas and Nays: 15 - 13."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr6414-117",
+      "type": "hr",
+      "number": "6414",
+      "congress": 117,
+      "title": "No Mandates for Healthcare Workers Act",
+      "introduced_date": "2022-03-11",
+      "latest_action": {
+        "date": "2022-01-19",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr5450-117",
+      "type": "hr",
+      "number": "5450",
+      "congress": 117,
+      "title": "Blocking Joseph Robinette Biden’s Overreaching Vaccine Mandates Act",
+      "introduced_date": "2022-03-11",
+      "latest_action": {
+        "date": "2021-10-01",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr7025-117",
+      "type": "hr",
+      "number": "7025",
+      "congress": 117,
+      "title": "Advancing Human Rights-Centered International Conservation Act of 2022",
+      "introduced_date": "2022-03-09",
+      "latest_action": {
+        "date": "2022-07-20",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Environment and Public Works."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr6945-117",
+      "type": "hr",
+      "number": "6945",
+      "congress": 117,
+      "title": "No Retaining Every Gun In a System That Restricts Your Rights Act",
+      "introduced_date": "2022-03-07",
+      "latest_action": {
+        "date": "2022-11-01",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, and Homeland Security."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr6659-117",
+      "type": "hr",
+      "number": "6659",
+      "congress": 117,
+      "title": "Health Care for Burn Pit Veterans Act",
+      "introduced_date": "2022-03-07",
+      "latest_action": {
+        "date": "2022-02-09",
+        "text": "Referred to the House Committee on Veterans' Affairs."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr2718-117",
+      "type": "hr",
+      "number": "2718",
+      "congress": 117,
+      "title": "Maximum Pressure Act",
+      "introduced_date": "2022-03-07",
+      "latest_action": {
+        "date": "2021-10-19",
+        "text": "Referred to the Subcommittee on Immigration and Citizenship."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr6927-117",
+      "type": "hr",
+      "number": "6927",
+      "congress": 117,
+      "title": "American Energy Security and Transparency Act",
+      "introduced_date": "2022-03-03",
+      "latest_action": {
+        "date": "2022-03-09",
+        "text": "Referred to the Subcommittee on Energy and Mineral Resources."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr5787-117",
+      "type": "hr",
+      "number": "5787",
+      "congress": 117,
+      "title": "Department of Veterans Affairs Telehealth Strategy Act",
+      "introduced_date": "2022-03-01",
+      "latest_action": {
+        "date": "2021-12-07",
+        "text": "Referred to the Subcommittee on Technology Modernization."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr6858-117",
+      "type": "hr",
+      "number": "6858",
+      "congress": 117,
+      "title": "American Energy Independence from Russia Act",
+      "introduced_date": "2022-02-28",
+      "latest_action": {
+        "date": "2022-03-08",
+        "text": "Referred to the Subcommittee on Commodity Exchanges, Energy, and Credit."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hres932-117",
+      "type": "hres",
+      "number": "932",
+      "congress": 117,
+      "title": "Expressing support for the designation of February 19 through February 26, 2022, as \"National FFA Week\", recognizing the important role of the National Future Farmers of America (referred to in this resolution as \"FFA\") Organization in developing the next generation of leaders who will change the world, and celebrating 70 years of the National FFA Organization's membership magazine, The National Future Farmer, now called New Horizons.",
+      "introduced_date": "2022-02-18",
+      "latest_action": {
+        "date": "2022-02-24",
+        "text": "Referred to the Subcommittee on Biotechnology, Horticulture, and Research."
+      },
+      "policy_area": "Agriculture and Food"
+    },
+    {
+      "id": "hr6434-117",
+      "type": "hr",
+      "number": "6434",
+      "congress": 117,
+      "title": "Japanese American World War II History Network Act",
+      "introduced_date": "2022-02-18",
+      "latest_action": {
+        "date": "2022-09-27",
+        "text": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 514."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr6435-117",
+      "type": "hr",
+      "number": "6435",
+      "congress": 117,
+      "title": "To provide for the application of certain provisions of the Secure Rural Schools and Community Self-Determination Act of 2000 for fiscal year 2021.",
+      "introduced_date": "2022-02-15",
+      "latest_action": {
+        "date": "2022-12-14",
+        "text": "Reported by the Committee on Natural Resources. H. Rept. 117-639, Part I."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr1011-117",
+      "type": "hr",
+      "number": "1011",
+      "congress": 117,
+      "title": "Life at Conception Act",
+      "introduced_date": "2022-02-11",
+      "latest_action": {
+        "date": "2021-04-23",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hr1275-117",
+      "type": "hr",
+      "number": "1275",
+      "congress": 117,
+      "title": "National Right-to-Work Act",
+      "introduced_date": "2022-02-07",
+      "latest_action": {
+        "date": "2021-02-24",
+        "text": "Referred to the House Committee on Education and Labor."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr6502-117",
+      "type": "hr",
+      "number": "6502",
+      "congress": 117,
+      "title": "Religious Freedom Over Mandates Act",
+      "introduced_date": "2022-02-04",
+      "latest_action": {
+        "date": "2022-01-26",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hres881-117",
+      "type": "hres",
+      "number": "881",
+      "congress": 117,
+      "title": "Condemning the heinous terrorist attack on Congregation Beth Israel in Colleyville, Texas, on January 15, 2022.",
+      "introduced_date": "2022-02-03",
+      "latest_action": {
+        "date": "2022-03-08",
+        "text": "Motion to reconsider laid on the table Agreed to without objection."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hres876-117",
+      "type": "hres",
+      "number": "876",
+      "congress": 117,
+      "title": "Expressing the sense that the process behind Operation Warp Speed should be integrated within operations at the Food and Drug Administration.",
+      "introduced_date": "2022-02-01",
+      "latest_action": {
+        "date": "2022-01-20",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr6422-117",
+      "type": "hr",
+      "number": "6422",
+      "congress": 117,
+      "title": "Putin Accountability Act",
+      "introduced_date": "2022-01-19",
+      "latest_action": {
+        "date": "2022-11-01",
+        "text": "Referred to the Subcommittee on Immigration and Citizenship."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hconres33-117",
+      "type": "hconres",
+      "number": "33",
+      "congress": 117,
+      "title": "Supporting the Local Radio Freedom Act.",
+      "introduced_date": "2022-01-13",
+      "latest_action": {
+        "date": "2021-11-09",
+        "text": "Referred to the Subcommittee on Courts, Intellectual Property, and the Internet."
+      },
+      "policy_area": "Science, Technology, Communications"
+    },
+    {
+      "id": "hr3710-117",
+      "type": "hr",
+      "number": "3710",
+      "congress": 117,
+      "title": "RECORDS Act of 2021",
+      "introduced_date": "2022-01-10",
+      "latest_action": {
+        "date": "2021-06-17",
+        "text": "Sponsor introductory remarks on measure. (CR H2898)"
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr5577-117",
+      "type": "hr",
+      "number": "5577",
+      "congress": 117,
+      "title": "To designate the facility of the United States Postal Service located at 3900 Crown Road Southwest in Atlanta, Georgia, as the \"John R. Lewis Post Office Building\".",
+      "introduced_date": "2021-12-23",
+      "latest_action": {
+        "date": "2022-10-04",
+        "text": "Became Public Law No: 117-184."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr3577-117",
+      "type": "hr",
+      "number": "3577",
+      "congress": 117,
+      "title": "United States Army Rangers Veterans of World War II Congressional Gold Medal Act",
+      "introduced_date": "2021-12-20",
+      "latest_action": {
+        "date": "2021-05-28",
+        "text": "Referred to the Committee on Financial Services, and in addition to the Committee on House Administration, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr5927-117",
+      "type": "hr",
+      "number": "5927",
+      "congress": 117,
+      "title": "Veterans’ Preference Parity Act",
+      "introduced_date": "2021-12-01",
+      "latest_action": {
+        "date": "2021-11-09",
+        "text": "Referred to the House Committee on Oversight and Reform."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hjres65-117",
+      "type": "hjres",
+      "number": "65",
+      "congress": 117,
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Labor relating to \"COVID-19 Vaccination and Testing; Emergency Temporary Standard\".",
+      "introduced_date": "2021-11-18",
+      "latest_action": {
+        "date": "2021-11-17",
+        "text": "Referred to the House Committee on Education and Labor."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr5854-117",
+      "type": "hr",
+      "number": "5854",
+      "congress": 117,
+      "title": "Illegal Immigrant Payoff Prohibition Act",
+      "introduced_date": "2021-11-15",
+      "latest_action": {
+        "date": "2022-11-01",
+        "text": "Referred to the Subcommittee on Immigration and Citizenship."
+      },
+      "policy_area": "Law"
+    },
+    {
+      "id": "hjres12-117",
+      "type": "hjres",
+      "number": "12",
+      "congress": 117,
+      "title": "Proposing an amendment to the Constitution of the United States to limit the number of terms that a Member of Congress may serve.",
+      "introduced_date": "2021-11-02",
+      "latest_action": {
+        "date": "2021-03-04",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "hres754-117",
+      "type": "hres",
+      "number": "754",
+      "congress": 117,
+      "title": "Expressing that the House of Representatives opposes punitive natural gas taxes on United States businesses, families, and workers.",
+      "introduced_date": "2021-10-28",
+      "latest_action": {
+        "date": "2021-11-02",
+        "text": "Sponsor introductory remarks on measure. (CR H6084)"
+      },
+      "policy_area": "Taxation"
+    },
+    {
+      "id": "hr4664-117",
+      "type": "hr",
+      "number": "4664",
+      "congress": 117,
+      "title": "FIRESHEDS Act",
+      "introduced_date": "2021-07-22",
+      "latest_action": {
+        "date": "2021-08-13",
+        "text": "Referred to the Subcommittee on Conservation and Forestry."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr4614-117",
+      "type": "hr",
+      "number": "4614",
+      "congress": 117,
+      "title": "Resilient Federal Forests Act",
+      "introduced_date": "2021-07-22",
+      "latest_action": {
+        "date": "2021-08-11",
+        "text": "Referred to the Subcommittee on Conservation and Forestry."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr4584-117",
+      "type": "hr",
+      "number": "4584",
+      "congress": 117,
+      "title": "Healthy Forests for Hunters Act of 2021",
+      "introduced_date": "2021-07-20",
+      "latest_action": {
+        "date": "2021-08-11",
+        "text": "Referred to the Subcommittee on Conservation and Forestry."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr4579-117",
+      "type": "hr",
+      "number": "4579",
+      "congress": 117,
+      "title": "Forest Litigation Reform Act of 2021",
+      "introduced_date": "2021-07-20",
+      "latest_action": {
+        "date": "2021-08-11",
+        "text": "Referred to the Subcommittee on Conservation and Forestry."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr4574-117",
+      "type": "hr",
+      "number": "4574",
+      "congress": 117,
+      "title": "SALVAGE Act",
+      "introduced_date": "2021-07-20",
+      "latest_action": {
+        "date": "2021-08-11",
+        "text": "Referred to the Subcommittee on Conservation and Forestry."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr4573-117",
+      "type": "hr",
+      "number": "4573",
+      "congress": 117,
+      "title": "Stop CATASTROPHES Act",
+      "introduced_date": "2021-07-20",
+      "latest_action": {
+        "date": "2021-08-11",
+        "text": "Referred to the Subcommittee on Conservation and Forestry."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr4569-117",
+      "type": "hr",
+      "number": "4569",
+      "congress": 117,
+      "title": "Action Versus No Action Act",
+      "introduced_date": "2021-07-20",
+      "latest_action": {
+        "date": "2021-08-11",
+        "text": "Referred to the Subcommittee on Conservation and Forestry."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr4541-117",
+      "type": "hr",
+      "number": "4541",
+      "congress": 117,
+      "title": "RAPID Act",
+      "introduced_date": "2021-07-19",
+      "latest_action": {
+        "date": "2021-09-14",
+        "text": "Referred to the Subcommittee on Conservation and Forestry."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hres731-117",
+      "type": "hres",
+      "number": "731",
+      "congress": 117,
+      "title": "To recognize the centennial of the Tomb of the Unknown Soldier.",
+      "introduced_date": "2021-10-21",
+      "latest_action": {
+        "date": "2021-10-21",
+        "text": "Referred to the House Committee on Armed Services."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr4518-117",
+      "type": "hr",
+      "number": "4518",
+      "congress": 117,
+      "title": "Wildfire Prevention and Drought Mitigation Act of 2021",
+      "introduced_date": "2021-07-19",
+      "latest_action": {
+        "date": "2021-07-19",
+        "text": "Referred to the House Committee on Natural Resources."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr4516-117",
+      "type": "hr",
+      "number": "4516",
+      "congress": 117,
+      "title": "PROTECT Act",
+      "introduced_date": "2021-07-19",
+      "latest_action": {
+        "date": "2021-08-11",
+        "text": "Referred to the Subcommittee on Conservation and Forestry."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr4504-117",
+      "type": "hr",
+      "number": "4504",
+      "congress": 117,
+      "title": "Tribal Biochar Promotion Act of 2021",
+      "introduced_date": "2021-07-19",
+      "latest_action": {
+        "date": "2021-08-11",
+        "text": "Referred to the Subcommittee on Conservation and Forestry."
+      },
+      "policy_area": "Native Americans"
+    },
+    {
+      "id": "hr5451-117",
+      "type": "hr",
+      "number": "5451",
+      "congress": 117,
+      "title": "Protecting Financial Privacy Act of 2021",
+      "introduced_date": "2021-10-15",
+      "latest_action": {
+        "date": "2021-09-30",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr1745-117",
+      "type": "hr",
+      "number": "1745",
+      "congress": 117,
+      "title": "DRIVE-SAFE Act",
+      "introduced_date": "2021-09-24",
+      "latest_action": {
+        "date": "2021-03-11",
+        "text": "Referred to the Subcommittee on Highways and Transit."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr287-117",
+      "type": "hr",
+      "number": "287",
+      "congress": 117,
+      "title": "FORCE Act",
+      "introduced_date": "2021-09-22",
+      "latest_action": {
+        "date": "2021-01-13",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hres641-117",
+      "type": "hres",
+      "number": "641",
+      "congress": 117,
+      "title": "Recognizing and celebrating the 75th anniversary of the National Association of Conservation Districts and their commitment to our lands.",
+      "introduced_date": "2021-09-14",
+      "latest_action": {
+        "date": "2022-12-30",
+        "text": "Placed on the House Calendar, Calendar No. 171."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr5142-117",
+      "type": "hr",
+      "number": "5142",
+      "congress": 117,
+      "title": "To award posthumously a Congressional Gold Medal, in commemoration to the servicemembers who perished in Afghanistan on August 26, 2021, during the evacuation of citizens of the United States and Afghan allies at Hamid Karzai International Airport, and for other purposes.",
+      "introduced_date": "2021-08-31",
+      "latest_action": {
+        "date": "2021-12-16",
+        "text": "Became Public Law No: 117-72."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hres607-117",
+      "type": "hres",
+      "number": "607",
+      "congress": 117,
+      "title": "Condemns President Biden's failure to heed the advice of military and intelligence advisors about the speed and nature of the Taliban offensive, leading to a disorganized, chaotic, and abrupt evacuation of United States personnel and Afghan allies.",
+      "introduced_date": "2021-08-24",
+      "latest_action": {
+        "date": "2021-08-24",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr3835-117",
+      "type": "hr",
+      "number": "3835",
+      "congress": 117,
+      "title": "PRIME Act",
+      "introduced_date": "2021-08-13",
+      "latest_action": {
+        "date": "2021-07-15",
+        "text": "Referred to the Subcommittee on Livestock and Foreign Agriculture."
+      },
+      "policy_area": "Agriculture and Food"
+    },
+    {
+      "id": "hr3537-117",
+      "type": "hr",
+      "number": "3537",
+      "congress": 117,
+      "title": "Accelerating Access to Critical Therapies for ALS Act",
+      "introduced_date": "2021-08-03",
+      "latest_action": {
+        "date": "2021-12-23",
+        "text": "Became Public Law No: 117-79."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr3369-117",
+      "type": "hr",
+      "number": "3369",
+      "congress": 117,
+      "title": "Broadband for Rural America Act",
+      "introduced_date": "2021-08-03",
+      "latest_action": {
+        "date": "2021-07-07",
+        "text": "Referred to the Subcommittee on Commodity Exchanges, Energy, and Credit."
+      },
+      "policy_area": "Science, Technology, Communications"
+    },
+    {
+      "id": "hr1115-117",
+      "type": "hr",
+      "number": "1115",
+      "congress": 117,
+      "title": "Global War on Terrorism Memorial Location Act",
+      "introduced_date": "2021-08-03",
+      "latest_action": {
+        "date": "2021-03-17",
+        "text": "Referred to the Subcommittee on National Parks, Forests, and Public Lands."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr18-117",
+      "type": "hr",
+      "number": "18",
+      "congress": 117,
+      "title": "No Taxpayer Funding for Abortion and Abortion Insurance Full Disclosure Act of 2021",
+      "introduced_date": "2021-07-30",
+      "latest_action": {
+        "date": "2021-04-23",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hres548-117",
+      "type": "hres",
+      "number": "548",
+      "congress": 117,
+      "title": "Denouncing the horrors of socialism.",
+      "introduced_date": "2021-07-30",
+      "latest_action": {
+        "date": "2021-07-21",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr4842-117",
+      "type": "hr",
+      "number": "4842",
+      "congress": 117,
+      "title": "Tree Spiking Mitigation Act of 2021",
+      "introduced_date": "2021-07-29",
+      "latest_action": {
+        "date": "2021-08-18",
+        "text": "Referred to the Subcommittee on Conservation and Forestry."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr4300-117",
+      "type": "hr",
+      "number": "4300",
+      "congress": 117,
+      "title": "Alexander Lofgren Veterans in Parks (VIP) Act",
+      "introduced_date": "2021-07-01",
+      "latest_action": {
+        "date": "2021-07-30",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Energy and Natural Resources."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hres515-117",
+      "type": "hres",
+      "number": "515",
+      "congress": 117,
+      "title": "Honoring NASA suppliers for the work they are doing on the Artemis missions.",
+      "introduced_date": "2021-06-30",
+      "latest_action": {
+        "date": "2021-06-30",
+        "text": "Referred to the House Committee on Science, Space, and Technology."
+      },
+      "policy_area": "Science, Technology, Communications"
+    },
+    {
+      "id": "hr4215-117",
+      "type": "hr",
+      "number": "4215",
+      "congress": 117,
+      "title": "Rebuilding Communities After Disasters Act",
+      "introduced_date": "2021-06-29",
+      "latest_action": {
+        "date": "2021-06-29",
+        "text": "Referred to the House Committee on Small Business."
+      },
+      "policy_area": "Commerce"
+    },
+    {
+      "id": "hr38-117",
+      "type": "hr",
+      "number": "38",
+      "congress": 117,
+      "title": "Concealed Carry Reciprocity Act",
+      "introduced_date": "2021-06-25",
+      "latest_action": {
+        "date": "2021-03-01",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, and Homeland Security."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hres114-117",
+      "type": "hres",
+      "number": "114",
+      "congress": 117,
+      "title": "Expressing the sense of the House of Representatives that the United States Postal Service should take all appropriate measures to ensure the continuation of its 6-day mail delivery service.",
+      "introduced_date": "2021-06-21",
+      "latest_action": {
+        "date": "2021-02-11",
+        "text": "Referred to the House Committee on Oversight and Reform."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hres450-117",
+      "type": "hres",
+      "number": "450",
+      "congress": 117,
+      "title": "Calling upon all Americans on this Memorial Day, 2021, to honor the men and women of the Armed Forces who have died in the pursuit of freedom and peace.",
+      "introduced_date": "2021-06-01",
+      "latest_action": {
+        "date": "2021-05-28",
+        "text": "Referred to the House Committee on Oversight and Reform."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr3257-117",
+      "type": "hr",
+      "number": "3257",
+      "congress": 117,
+      "title": "US Navy SEAL SCPO Tyrone Snowden Woods Ceremony Invitee Act",
+      "introduced_date": "2021-05-14",
+      "latest_action": {
+        "date": "2021-05-14",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hres394-117",
+      "type": "hres",
+      "number": "394",
+      "congress": 117,
+      "title": "Condemning the acts of terrorism committed by Hamas against the people of the State of Israel.",
+      "introduced_date": "2021-05-14",
+      "latest_action": {
+        "date": "2021-05-28",
+        "text": "Referred to the Subcommittee on Middle East, North Africa and Global Counterterrorism."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hjres11-117",
+      "type": "hjres",
+      "number": "11",
+      "congress": 117,
+      "title": "Proposing an amendment to the Constitution of the United States to require that the Supreme Court of the United States be composed of nine justices.",
+      "introduced_date": "2021-05-13",
+      "latest_action": {
+        "date": "2021-03-04",
+        "text": "Referred to the Subcommittee on the Constitution, Civil Rights, and Civil Liberties."
+      },
+      "policy_area": "Law"
+    },
+    {
+      "id": "hr892-117",
+      "type": "hr",
+      "number": "892",
+      "congress": 117,
+      "title": "Pre-existing Conditions Protection Act of 2021",
+      "introduced_date": "2021-05-12",
+      "latest_action": {
+        "date": "2021-02-08",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr19-117",
+      "type": "hr",
+      "number": "19",
+      "congress": 117,
+      "title": "Lower Costs, More Cures Act of 2021",
+      "introduced_date": "2021-05-12",
+      "latest_action": {
+        "date": "2021-10-19",
+        "text": "Referred to the Subcommittee on Antitrust, Commercial, and Administrative Law."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hres385-117",
+      "type": "hres",
+      "number": "385",
+      "congress": 117,
+      "title": "Honoring the life and legacy of award-winning children's author Beverly Cleary.",
+      "introduced_date": "2021-05-12",
+      "latest_action": {
+        "date": "2021-05-12",
+        "text": "Referred to the House Committee on Oversight and Reform."
+      },
+      "policy_area": "Arts, Culture, Religion"
+    },
+    {
+      "id": "hr2639-117",
+      "type": "hr",
+      "number": "2639",
+      "congress": 117,
+      "title": "Trillion Trees Act",
+      "introduced_date": "2021-04-19",
+      "latest_action": {
+        "date": "2021-06-15",
+        "text": "Referred to the Subcommittee on Conservation and Forestry."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr2188-117",
+      "type": "hr",
+      "number": "2188",
+      "congress": 117,
+      "title": "Reopening America by Supporting Workers and Businesses Act of 2021",
+      "introduced_date": "2021-04-15",
+      "latest_action": {
+        "date": "2021-03-26",
+        "text": "Referred to the Committee on Ways and Means, and in addition to the Committees on Rules, and the Budget, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hres318-117",
+      "type": "hres",
+      "number": "318",
+      "congress": 117,
+      "title": "Expressing the sense of the House of Representatives that clean water is a national priority and that the April 21, 2020, Navigable Waters Protection Rule should not be withdrawn or vacated.",
+      "introduced_date": "2021-04-14",
+      "latest_action": {
+        "date": "2021-04-15",
+        "text": "Referred to the Subcommittee on Water Resources and Environment."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr2099-117",
+      "type": "hr",
+      "number": "2099",
+      "congress": 117,
+      "title": "Secure Rural Schools Reauthorization Act of 2021",
+      "introduced_date": "2021-04-08",
+      "latest_action": {
+        "date": "2021-05-26",
+        "text": "Referred to the Subcommittee on Conservation and Forestry."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr1445-117",
+      "type": "hr",
+      "number": "1445",
+      "congress": 117,
+      "title": "American Heritage Protection Act of 2021",
+      "introduced_date": "2021-03-19",
+      "latest_action": {
+        "date": "2021-04-16",
+        "text": "Referred to the Subcommittee on National Parks, Forests, and Public Lands."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr1448-117",
+      "type": "hr",
+      "number": "1448",
+      "congress": 117,
+      "title": "PAWS for Veterans Therapy Act",
+      "introduced_date": "2021-03-17",
+      "latest_action": {
+        "date": "2021-08-25",
+        "text": "Became Public Law No: 117-37."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hres127-117",
+      "type": "hres",
+      "number": "127",
+      "congress": 117,
+      "title": "Requesting the President transmit to the House of Representatives not later than 14 days after the date of the adoption of this resolution documents in his possession relating to the amount of funding previously enacted and currently unspent in certain public laws.",
+      "introduced_date": "2021-03-17",
+      "latest_action": {
+        "date": "2021-02-15",
+        "text": "Referred to the House Committee on Oversight and Reform."
+      },
+      "policy_area": "Economics and Public Finance"
+    },
+    {
+      "id": "hr707-117",
+      "type": "hr",
+      "number": "707",
+      "congress": 117,
+      "title": "Ghost Army Congressional Gold Medal Act",
+      "introduced_date": "2021-03-16",
+      "latest_action": {
+        "date": "2021-05-19",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr1381-117",
+      "type": "hr",
+      "number": "1381",
+      "congress": 117,
+      "title": "Main Street Tax Certainty Act",
+      "introduced_date": "2021-03-11",
+      "latest_action": {
+        "date": "2021-02-25",
+        "text": "Referred to the House Committee on Ways and Means."
+      },
+      "policy_area": "Taxation"
+    },
+    {
+      "id": "hr1776-117",
+      "type": "hr",
+      "number": "1776",
+      "congress": 117,
+      "title": "Regulations from the Executive in Need of Scrutiny Act of 2021",
+      "introduced_date": "2021-03-10",
+      "latest_action": {
+        "date": "2021-05-18",
+        "text": "Referred to the Subcommittee on Antitrust, Commercial, and Administrative Law."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr1650-117",
+      "type": "hr",
+      "number": "1650",
+      "congress": 117,
+      "title": "To require the Federal Communications Commission to study the current and projected demands on rural broadband networks associated with services offered by edge providers, and for other purposes.",
+      "introduced_date": "2021-03-10",
+      "latest_action": {
+        "date": "2021-03-09",
+        "text": "Referred to the Subcommittee on Communications and Technology."
+      },
+      "policy_area": "Science, Technology, Communications"
+    },
+    {
+      "id": "hr1085-117",
+      "type": "hr",
+      "number": "1085",
+      "congress": 117,
+      "title": "To award three congressional gold medals to the United States Capitol Police and those who protected the U.S. Capitol on January 6, 2021.",
+      "introduced_date": "2021-03-08",
+      "latest_action": {
+        "date": "2021-03-17",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "hr677-117",
+      "type": "hr",
+      "number": "677",
+      "congress": 117,
+      "title": "JUSTICE Act",
+      "introduced_date": "2021-03-03",
+      "latest_action": {
+        "date": "2021-03-22",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, and Homeland Security."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr1411-117",
+      "type": "hr",
+      "number": "1411",
+      "congress": 117,
+      "title": "PPP Flexibility for Farmers and Ranchers Act",
+      "introduced_date": "2021-02-26",
+      "latest_action": {
+        "date": "2021-02-26",
+        "text": "Referred to the House Committee on Small Business."
+      },
+      "policy_area": "Commerce"
+    },
+    {
+      "id": "hr543-117",
+      "type": "hr",
+      "number": "543",
+      "congress": 117,
+      "title": "POWER Act",
+      "introduced_date": "2021-02-03",
+      "latest_action": {
+        "date": "2021-02-24",
+        "text": "Referred to the Subcommittee on Conservation and Forestry."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr488-117",
+      "type": "hr",
+      "number": "488",
+      "congress": 117,
+      "title": "Saving America’s Mines Act",
+      "introduced_date": "2021-02-03",
+      "latest_action": {
+        "date": "2021-02-24",
+        "text": "Referred to the Subcommittee on Conservation and Forestry."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hres71-117",
+      "type": "hres",
+      "number": "71",
+      "congress": 117,
+      "title": "Honoring and thanking the members of the National Guard who were deployed to the District of Columbia and the National Capital region in support of civil authorities for the inauguration of Joseph R. Biden, Jr., as the 46th President of the United States and Kamala Devi Harris as 49th Vice President of the United States.",
+      "introduced_date": "2021-02-03",
+      "latest_action": {
+        "date": "2021-01-28",
+        "text": "Referred to the Committee on Armed Services, and in addition to the Committee on the Judiciary, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr619-117",
+      "type": "hr",
+      "number": "619",
+      "congress": 117,
+      "title": "Born-Alive Abortion Survivors Protection Act",
+      "introduced_date": "2021-01-28",
+      "latest_action": {
+        "date": "2021-03-22",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, and Homeland Security."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    }
+  ]
+}
