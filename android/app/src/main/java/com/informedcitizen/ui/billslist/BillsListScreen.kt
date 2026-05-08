@@ -71,7 +71,7 @@ fun BillsListScreen(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun BillsListContent(
+internal fun BillsListContent(
     state: BillsListUiState,
     innerPadding: PaddingValues,
     onFilterChange: (BillsListFilter) -> Unit,
