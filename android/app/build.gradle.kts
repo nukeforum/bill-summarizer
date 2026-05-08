@@ -181,6 +181,9 @@ dependencies {
   implementation(libs.androidx.hilt.work)
   ksp(libs.androidx.hilt.compiler)
 
+  // On-device AICore (Gemini Nano)
+  implementation(libs.google.ai.edge.aicore)
+
   testImplementation(libs.sqldelight.sqlite.driver)
   testImplementation(libs.androidx.work.testing)
   testImplementation(libs.robolectric)

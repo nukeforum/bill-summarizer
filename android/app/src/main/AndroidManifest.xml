@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!--
+      AICore declares minSdk 31; we keep app minSdk at 26 and runtime-gate
+      every AICore call (capability check + summarizer) behind Build.VERSION.
+      Older devices report NotSupported and the worker never enqueues for
+      them, so the API-31 symbols are unreachable at runtime.
+    -->
+    <uses-sdk tools:overrideLibrary="com.google.ai.edge.aicore" />
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <!--

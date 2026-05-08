@@ -29,6 +29,7 @@ sqldelight = "2.3.2"
 workManager = "2.10.0"
 hiltWork = "1.2.0"
 robolectric = "4.13"
+aicore = "0.0.1-exp02"
 
 [libraries]
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidxCore" }
@@ -74,6 +75,7 @@ androidx-work-testing = { module = "androidx.work:work-testing", version.ref = "
 androidx-hilt-work = { module = "androidx.hilt:hilt-work", version.ref = "hiltWork" }
 androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hiltWork" }
 robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric" }
+google-ai-edge-aicore = { module = "com.google.ai.edge.aicore:aicore", version.ref = "aicore" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
