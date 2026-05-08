@@ -7,6 +7,9 @@ import androidx.datastore.preferences.core.longPreferencesKey
 import com.informedcitizen.crash.CrashReporter
 import com.informedcitizen.data.api.BillsApi
 import com.informedcitizen.data.model.Bill
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
@@ -20,23 +23,31 @@ class BillRepository @Inject constructor(
     private val crashReporter: CrashReporter,
 ) {
     private val mutex = Mutex()
-    private var cached: List<Bill>? = null
+    private val _bills = MutableStateFlow<List<Bill>>(emptyList())
+
+    fun observeAll(): Flow<List<Bill>> = _bills.asStateFlow()
 
     suspend fun getBills(forceRefresh: Boolean = false): Result<List<Bill>> = mutex.withLock {
-        if (!forceRefresh) {
-            cached?.let { return@withLock Result.success(it) }
+        if (!forceRefresh && _bills.value.isNotEmpty()) {
+            return@withLock Result.success(_bills.value)
         }
         runCatching {
             val manifest = api.getBills()
-            cached = manifest.bills
+            _bills.value = manifest.bills
             dataStore.edit { it[LAST_FETCHED_KEY] = System.currentTimeMillis() }
             manifest.bills
         }.onFailure { crashReporter.recordNonFatal(it, "manifest fetch failed") }
     }
 
-    fun getBillById(id: String): Bill? = cached?.firstOrNull { it.id == id }
+    fun getBillById(id: String): Bill? = _bills.value.firstOrNull { it.id == id }
 
-    fun containsBillId(id: String): Boolean = cached?.any { it.id == id } == true
+    suspend fun findById(id: String): Bill? {
+        getBillById(id)?.let { return it }
+        getBills(forceRefresh = false)
+        return getBillById(id)
+    }
+
+    fun containsBillId(id: String): Boolean = _bills.value.any { it.id == id }
 
     suspend fun lastFetchedAtMillis(): Long? =
         dataStore.data.firstOrNull()?.get(LAST_FETCHED_KEY)
