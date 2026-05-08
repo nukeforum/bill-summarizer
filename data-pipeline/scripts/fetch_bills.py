@@ -20,6 +20,7 @@ from typing import Any, Iterable
 
 from _common import (
     CongressClient,
+    ErrorCollector,
     LIST_PAGE_LIMIT,
     build_bill_record,
     current_congress,
@@ -75,6 +76,7 @@ def main() -> int:
     fresh_records: list[dict[str, Any]] = []
     reject_counts: Counter[str] = Counter()
     rejection_samples: list[str] = []
+    errors = ErrorCollector()
     total_evaluated = 0
 
     for summary in list_recent_bills(client, congress, cutoff):
@@ -92,7 +94,7 @@ def main() -> int:
             record = build_bill_record(client, congress, summary, outcome)
         except Exception as exc:  # noqa: BLE001 - one bad bill must not kill the run
             ref = f"{summary.get('type')}{summary.get('number')}"
-            print(f"  ! skipping {ref}: {type(exc).__name__}: {exc}", file=sys.stderr)
+            errors.record("build_bill_record", ref, exc)
             reject_counts["build_error"] += 1
             continue
 
@@ -115,6 +117,7 @@ def main() -> int:
         print("Sample latestAction texts that did not match any outcome rule:")
         for sample in rejection_samples:
             print(f"  · {sample}")
+    errors.print_summary(label="fetch_bills")
 
     existing = load_manifest(congress)
     merged, stats = merge_records(existing.get("bills", []), fresh_records)

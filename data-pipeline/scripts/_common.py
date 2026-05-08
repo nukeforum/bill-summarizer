@@ -12,10 +12,11 @@ import json
 import re
 import sys
 import time
+from collections import OrderedDict
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
+from typing import Any, IO
 
 import requests
 
@@ -69,6 +70,111 @@ assert _classify_text_format_url(
     "https://www.congress.gov/119/bills/s4465/BILLS-119s4465es.pdf"
 ) == "pdf"
 assert _classify_text_format_url("https://example.com/bill") is None
+
+
+# ---------- error aggregation ---------------------------------------------
+
+
+@dataclass
+class ErrorRecord:
+    """Single per-record failure captured by an ErrorCollector.
+
+    ``kind`` is the script-defined call site (e.g. ``"build_bill_record"``,
+    ``"member_detail"``, ``"hud_get"``). ``identifier`` is whatever the
+    caller wants surfaced in the per-example line — typically the bill ref
+    or bioguide ID. ``url`` and ``params`` are optional because not every
+    failure path knows them (e.g. JSON parse errors past the HTTP layer).
+    """
+    kind: str
+    identifier: str
+    error_class: str
+    message: str
+    url: str | None = None
+    params: dict[str, Any] | None = None
+
+
+class ErrorCollector:
+    """In-memory bucket for per-record failures, surfaced at end of run.
+
+    Each script accumulates failures here instead of (or alongside) inline
+    ``print`` calls. ``print_summary`` groups by (kind, error_class) and
+    prints a deduplicated digest with the first ``examples_per_class``
+    examples of each group plus a "(N more)" tail.
+
+    Designed to pair with the existing rejection counters: rejection
+    counters track filter outcomes, this tracks unexpected exceptions.
+    """
+
+    def __init__(self) -> None:
+        self._errors: list[ErrorRecord] = []
+
+    def record(
+        self,
+        kind: str,
+        identifier: str,
+        exc: BaseException,
+        url: str | None = None,
+        params: dict[str, Any] | None = None,
+    ) -> None:
+        self._errors.append(ErrorRecord(
+            kind=kind,
+            identifier=identifier,
+            error_class=type(exc).__name__,
+            message=str(exc),
+            url=url,
+            params=params,
+        ))
+
+    def records(self) -> list[ErrorRecord]:
+        return list(self._errors)
+
+    def __len__(self) -> int:
+        return len(self._errors)
+
+    def __bool__(self) -> bool:
+        return bool(self._errors)
+
+    def summary_lines(self, examples_per_class: int = 5) -> list[str]:
+        if not self._errors:
+            return []
+        groups: "OrderedDict[tuple[str, str], list[ErrorRecord]]" = OrderedDict()
+        for rec in self._errors:
+            key = (rec.kind, rec.error_class)
+            groups.setdefault(key, []).append(rec)
+
+        lines: list[str] = [f"{len(self._errors)} error(s) during run:"]
+        for (kind, error_class), recs in groups.items():
+            lines.append(f"  {kind} / {error_class} × {len(recs)}")
+            for rec in recs[:examples_per_class]:
+                detail = f"    - {rec.identifier}: {rec.message}"
+                if rec.url:
+                    detail += f" [url={rec.url}]"
+                if rec.params:
+                    detail += f" [params={rec.params}]"
+                lines.append(detail)
+            remaining = len(recs) - examples_per_class
+            if remaining > 0:
+                lines.append(f"    … {remaining} more")
+        return lines
+
+    def print_summary(
+        self,
+        label: str | None = None,
+        file: IO[str] | None = None,
+        examples_per_class: int = 5,
+    ) -> None:
+        """Print the summary digest, defaulting to stderr.
+
+        Stderr is intentional: GitHub Actions surfaces stderr in the
+        per-step "errors" panel even when stdout is voluminous.
+        """
+        if not self._errors:
+            return
+        out = file if file is not None else sys.stderr
+        if label:
+            print(f"--- {label} errors ---", file=out)
+        for line in self.summary_lines(examples_per_class):
+            print(line, file=out)
 
 
 API_BASE = "https://api.congress.gov/v3"

@@ -18,6 +18,7 @@ from typing import Any
 from _common import (
     BACKFILL_PAGES_PER_RUN,
     CongressClient,
+    ErrorCollector,
     LIST_PAGE_LIMIT,
     advance_state,
     build_bill_record,
@@ -70,6 +71,7 @@ def main() -> int:
     fresh_records: list[dict[str, Any]] = []
     seen_ids: set[str] = set()
     reject_counts: Counter[str] = Counter()
+    errors = ErrorCollector()
     total_evaluated = 0
     last_page_size = LIST_PAGE_LIMIT
     pages_consumed = 0
@@ -93,10 +95,7 @@ def main() -> int:
                 record = build_bill_record(client, active, summary, outcome)
             except Exception as exc:  # noqa: BLE001 - one bad bill must not kill the run
                 ref = f"{summary.get('type')}{summary.get('number')}"
-                print(
-                    f"  ! skipping {ref}: {type(exc).__name__}: {exc}",
-                    file=sys.stderr,
-                )
+                errors.record("build_bill_record", ref, exc)
                 reject_counts["build_error"] += 1
                 continue
             if record["id"] in seen_ids:
@@ -116,6 +115,7 @@ def main() -> int:
         print("Rejections:")
         for reason, count in reject_counts.most_common():
             print(f"  - {reason}: {count}")
+    errors.print_summary(label=f"backfill_bills congress={active}")
 
     existing = load_manifest(active)
     merged, stats = merge_records(existing.get("bills", []), fresh_records)

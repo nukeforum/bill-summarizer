@@ -23,6 +23,8 @@ from typing import Any
 
 import requests
 
+from _common import ErrorCollector
+
 
 # --- shared output ---------------------------------------------------------
 
@@ -195,6 +197,7 @@ def build_from_api(
 
     debug_remaining = 1
     misses = 0
+    errors = ErrorCollector()
     for state in _STATE_QUERIES:
         params: dict[str, Any] = {"type": 5, "query": state}
         if year is not None:
@@ -204,14 +207,14 @@ def build_from_api(
         try:
             body = _hud_get(session, api_key, params, debug=(debug_remaining > 0))
         except Exception as exc:
-            print(f"  ! {state}: {exc}", file=sys.stderr)
+            errors.record("hud_get", state, exc, url=HUD_API, params=params)
             misses += 1
             continue
         debug_remaining = max(0, debug_remaining - 1)
         try:
             rows = _extract_results(body)
         except KeyError as exc:
-            print(f"  ! {state}: {exc}", file=sys.stderr)
+            errors.record("extract_results", state, exc, url=HUD_API, params=params)
             misses += 1
             continue
         added = 0
@@ -240,6 +243,7 @@ def build_from_api(
         f"\nFetched {len(_STATE_QUERIES) - misses}/{len(_STATE_QUERIES)} states; "
         f"unique ZIPs: {len(by_zip)}; misses: {misses}"
     )
+    errors.print_summary(label="build_zip_crosswalk")
     if not by_zip:
         raise RuntimeError("no ZIPs collected — refusing to write empty asset")
     _emit(by_zip, output_json)

@@ -30,6 +30,7 @@ from typing import Any, Iterable
 
 from _common import (
     CongressClient,
+    ErrorCollector,
     LIST_PAGE_LIMIT,
     current_congress,
     load_members_index,
@@ -146,6 +147,9 @@ def main(argv: list[str] | None = None) -> int:
     }
     members_out: list[dict[str, Any]] = list(existing_index.get("members", []))
 
+    phase1_errors = ErrorCollector()
+    phase2_errors = ErrorCollector()
+
     # ---------- Phase 1: fast — member roster + detail only ----------
     if not run_phase1:
         print(
@@ -175,18 +179,14 @@ def main(argv: list[str] | None = None) -> int:
                 parsed = parse_member_summary(merged)
             except Exception as exc:  # noqa: BLE001
                 # Fall back to cached record from previous run if we have one;
-                # otherwise drop the member silently.
+                # otherwise drop the member silently. The failure goes into
+                # the collector either way so the end-of-run summary surfaces
+                # systematic upstream issues regardless of cache hit/miss.
                 if bioguide_id in existing_by_bid:
                     parsed = existing_by_bid[bioguide_id]
-                    print(
-                        f"  ~ {bioguide_id}: detail fetch failed ({exc}); reusing cached entry",
-                        file=sys.stderr,
-                    )
+                    phase1_errors.record("member_detail_reused_cache", bioguide_id, exc)
                 else:
-                    print(
-                        f"  ! skipping {bioguide_id}: {type(exc).__name__}: {exc}",
-                        file=sys.stderr,
-                    )
+                    phase1_errors.record("member_detail_dropped", bioguide_id, exc)
                     continue
             members_out.append(parsed)
             print(f"  + {bioguide_id} {parsed['name']} ({parsed['party']}-{parsed['state']})")
@@ -198,6 +198,7 @@ def main(argv: list[str] | None = None) -> int:
             "members": members_out,
         })
         print(f"Phase 1 done: index has {len(members_out)} members")
+        phase1_errors.print_summary(label="Phase 1")
 
     if not run_phase2:
         print("Skipping Phase 2 (--phase1-only).")
@@ -227,7 +228,7 @@ def main(argv: list[str] | None = None) -> int:
             try:
                 raw_items = fetch_legislation(client, bioguide_id, kind)
             except Exception as exc:  # noqa: BLE001
-                print(f"    ! {kind} fetch failed for {bioguide_id}: {exc}", file=sys.stderr)
+                phase2_errors.record(f"{kind}_legislation", bioguide_id, exc)
                 raw_items = []
             bills = [parse_member_legislation_item(it) for it in raw_items]
             save_member_legislation(bioguide_id, kind, {
@@ -245,6 +246,7 @@ def main(argv: list[str] | None = None) -> int:
         f"skipped {skipped_cached} already-cached. "
         f"Index has {len(members_out)} total."
     )
+    phase2_errors.print_summary(label="Phase 2")
     return 0
 
 
