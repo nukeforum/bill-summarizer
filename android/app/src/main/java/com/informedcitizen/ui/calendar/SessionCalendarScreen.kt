@@ -87,11 +87,24 @@ fun SessionCalendarScreen(
             )
         },
     ) { innerPadding ->
-        when (val s = state) {
-            SessionCalendarUiState.Loading -> Centered(innerPadding) { CircularProgressIndicator() }
-            is SessionCalendarUiState.Error -> ErrorBlock(innerPadding, s.message, onRetry = viewModel::retry)
-            is SessionCalendarUiState.Success -> SuccessBody(innerPadding, s.calendar)
-        }
+        SessionCalendarContent(
+            state = state,
+            innerPadding = innerPadding,
+            onRetry = viewModel::retry,
+        )
+    }
+}
+
+@Composable
+internal fun SessionCalendarContent(
+    state: SessionCalendarUiState,
+    innerPadding: PaddingValues,
+    onRetry: () -> Unit,
+) {
+    when (state) {
+        SessionCalendarUiState.Loading -> Centered(innerPadding) { CircularProgressIndicator() }
+        is SessionCalendarUiState.Error -> ErrorBlock(innerPadding, state.message, onRetry = onRetry)
+        is SessionCalendarUiState.Success -> SuccessBody(innerPadding, state.calendar)
     }
 }
 
