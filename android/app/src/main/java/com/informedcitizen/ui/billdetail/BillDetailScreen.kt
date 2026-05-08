@@ -104,21 +104,7 @@ fun BillDetailScreen(
             }
         },
     ) { innerPadding ->
-        when (val state = uiState) {
-            BillDetailUiState.Loading -> CenteredMessage(
-                innerPadding = innerPadding,
-                text = "Loading bill…",
-                showSpinner = true,
-            )
-            is BillDetailUiState.Error -> CenteredMessage(
-                innerPadding = innerPadding,
-                text = "Couldn't load bill:\n${state.message}",
-            )
-            is BillDetailUiState.Success -> BillDetailContent(
-                bill = state.bill,
-                innerPadding = innerPadding,
-            )
-        }
+        BillDetailContent(state = uiState, innerPadding = innerPadding)
     }
 
     if (showSheet && successBill != null) {
@@ -183,7 +169,26 @@ private fun DetailTopBar(
 }
 
 @Composable
-private fun BillDetailContent(bill: Bill, innerPadding: PaddingValues) {
+internal fun BillDetailContent(state: BillDetailUiState, innerPadding: PaddingValues) {
+    when (state) {
+        BillDetailUiState.Loading -> CenteredMessage(
+            innerPadding = innerPadding,
+            text = "Loading bill…",
+            showSpinner = true,
+        )
+        is BillDetailUiState.Error -> CenteredMessage(
+            innerPadding = innerPadding,
+            text = "Couldn't load bill:\n${state.message}",
+        )
+        is BillDetailUiState.Success -> BillDetailSuccessBody(
+            bill = state.bill,
+            innerPadding = innerPadding,
+        )
+    }
+}
+
+@Composable
+private fun BillDetailSuccessBody(bill: Bill, innerPadding: PaddingValues) {
     val context = LocalContext.current
     val fullTextUrl = bill.textUrlHtml ?: bill.congressGovUrl
 
