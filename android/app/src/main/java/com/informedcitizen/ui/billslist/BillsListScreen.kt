@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.horizontalScroll
@@ -32,6 +33,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.informedcitizen.data.ai.BillTopic
 import com.informedcitizen.data.model.Bill
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -65,6 +67,8 @@ fun BillsListScreen(
             onRefresh = viewModel::refresh,
             onBillClick = onBillClick,
             onCalendarClick = onCalendarClick,
+            onTopicSelected = viewModel::selectTopic,
+            onResummarize = viewModel::resummarize,
         )
     }
 }
@@ -78,13 +82,9 @@ internal fun BillsListContent(
     onRefresh: () -> Unit,
     onBillClick: (Bill) -> Unit,
     onCalendarClick: () -> Unit,
+    onTopicSelected: (BillTopic?) -> Unit = {},
+    onResummarize: (String) -> Unit = {},
 ) {
-    // Top inset shapes the column (so FilterChipsRow sits below the topBar),
-    // but the bottom inset is folded into the LazyColumn's contentPadding
-    // instead of the column. That way the scroll surface extends all the way
-    // to the screen edge — gesture-pill area shows the theme background —
-    // while scrolling to the end leaves the last card cleanly above the
-    // navigation region.
     Column(modifier = Modifier.fillMaxSize().padding(top = innerPadding.calculateTopPadding())) {
         (state as? BillsListUiState.Success)?.sessionStatusLine?.let { line ->
             SessionStatusLine(text = line, onClick = onCalendarClick)
@@ -93,6 +93,22 @@ internal fun BillsListContent(
             selected = (state as? BillsListUiState.Success)?.filter ?: BillsListFilter.ALL,
             onFilterChange = onFilterChange,
         )
+
+        val success = state as? BillsListUiState.Success
+        if (success != null && success.aiTitlesEnabled) {
+            TopicFilterRow(
+                selected = success.selectedTopic,
+                onTopicSelected = onTopicSelected,
+            )
+            if (success.selectedTopic != null && success.hiddenByTopicCount > 0) {
+                Text(
+                    text = "${success.hiddenByTopicCount} bills hidden — not yet summarized",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
+                )
+            }
+        }
 
         when (state) {
             BillsListUiState.Loading -> CenteredMessage("Loading bills…", showSpinner = true)
@@ -119,7 +135,13 @@ internal fun BillsListContent(
                             items(items = state.bills, key = { it.id }) { bill ->
                                 com.informedcitizen.ui.components.BillCard(
                                     bill = bill,
+                                    summary = state.summaries[bill.id],
                                     onClick = { onBillClick(bill) },
+                                    onResummarize = if (state.aiTitlesEnabled && state.deviceCapable) {
+                                        { onResummarize(bill.id) }
+                                    } else null,
+                                    aiTitlesEnabled = state.aiTitlesEnabled,
+                                    deviceCapable = state.deviceCapable,
                                 )
                             }
                         }
@@ -147,6 +169,32 @@ private fun FilterChipsRow(
                 selected = entry == selected,
                 onClick = { onFilterChange(entry) },
                 label = { Text(entry.displayName) },
+            )
+        }
+    }
+}
+
+@Composable
+private fun TopicFilterRow(
+    selected: BillTopic?,
+    onTopicSelected: (BillTopic?) -> Unit,
+) {
+    LazyRow(
+        contentPadding = PaddingValues(horizontal = 16.dp),
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+    ) {
+        item {
+            FilterChip(
+                selected = selected == null,
+                onClick = { onTopicSelected(null) },
+                label = { Text("All") },
+            )
+        }
+        items(BillTopic.values().toList()) { topic ->
+            FilterChip(
+                selected = selected == topic,
+                onClick = { onTopicSelected(topic) },
+                label = { Text(topic.displayName) },
             )
         }
     }

@@ -61,6 +61,15 @@
         <meta-data
             android:name="firebase_crashlytics_collection_enabled"
             android:value="false" />
+        <!--
+          WorkManager's SystemForegroundService runs the foreground worker;
+          declare the dataSync type so SpecifyForegroundServiceType lint
+          stays happy and the OS knows what kind of work we're doing.
+        -->
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:foregroundServiceType="dataSync"
+            tools:node="merge" />
         <receiver
             android:name="com.informedcitizen.data.work.StopSummarizationReceiver"
             android:exported="false">
