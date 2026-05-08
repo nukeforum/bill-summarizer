@@ -23,6 +23,10 @@ import javax.inject.Inject
 class MainActivity : ComponentActivity() {
     @Inject lateinit var themePrefs: ThemePreferenceRepository
 
+    companion object {
+        const val ACTION_OPEN_AI_SETTINGS = "com.informedcitizen.action.OPEN_AI_SETTINGS"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
         super.onCreate(savedInstanceState)

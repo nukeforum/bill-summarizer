@@ -11,6 +11,9 @@
     <uses-sdk tools:overrideLibrary="com.google.ai.edge.aicore" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <!--
       Android 11+ package visibility filters: declare the LLM apps so
@@ -58,6 +61,13 @@
         <meta-data
             android:name="firebase_crashlytics_collection_enabled"
             android:value="false" />
+        <receiver
+            android:name="com.informedcitizen.data.work.StopSummarizationReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.informedcitizen.action.STOP_SUMMARIZATION" />
+            </intent-filter>
+        </receiver>
         <activity
             android:name=".MainActivity"
             android:exported="true"
