@@ -6,6 +6,7 @@ plugins {
   alias(libs.plugins.ksp)
   alias(libs.plugins.google.services)
   alias(libs.plugins.firebase.crashlytics)
+  alias(libs.plugins.sqldelight)
 }
 
 // Release signing credentials. Read from Gradle properties (typically
@@ -96,6 +97,14 @@ kotlin {
     }
 }
 
+sqldelight {
+    databases {
+        create("BillSummaryDatabase") {
+            packageName.set("com.informedcitizen.cache")
+        }
+    }
+}
+
 tasks.withType<JavaCompile>().configureEach {
     options.compilerArgs.add("-Werror")
 }
@@ -164,4 +173,15 @@ dependencies {
 
   // Splash screen (Android 12+ API, back-compat to API 21)
   implementation(libs.androidx.core.splashscreen)
+
+  // SQLDelight cache + WorkManager + Hilt-Work
+  implementation(libs.sqldelight.android.driver)
+  implementation(libs.sqldelight.coroutines.extensions)
+  implementation(libs.androidx.work.runtime.ktx)
+  implementation(libs.androidx.hilt.work)
+  ksp(libs.androidx.hilt.compiler)
+
+  testImplementation(libs.sqldelight.sqlite.driver)
+  testImplementation(libs.androidx.work.testing)
+  testImplementation(libs.robolectric)
 }
