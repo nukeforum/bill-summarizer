@@ -1,6 +1,7 @@
 package com.informedcitizen.ui.reps
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
@@ -28,6 +29,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.informedcitizen.data.model.MemberLegislationItem
 import com.informedcitizen.data.util.congressGovUrlFor
 import com.informedcitizen.ui.components.MemberCard
 import com.informedcitizen.ui.components.MemberLegislationRow
@@ -46,7 +48,6 @@ fun MemberDetailScreen(
 
     val state by viewModel.uiState.collectAsStateWithLifecycle()
     val context = LocalContext.current
-    var tab by remember { mutableIntStateOf(0) }
 
     Scaffold(
         modifier = modifier,
@@ -61,47 +62,61 @@ fun MemberDetailScreen(
             )
         },
     ) { padding ->
-        Column(modifier = Modifier.padding(padding).fillMaxSize()) {
-            when {
-                state.isLoading -> CircularProgressIndicator()
-                state.member != null -> {
-                    MemberCard(member = state.member!!, onClick = {})
-                    PrimaryTabRow(selectedTabIndex = tab) {
-                        Tab(
-                            selected = tab == 0,
-                            onClick = { tab = 0 },
-                            text = { Text("Sponsored (${state.sponsored.size})") },
-                        )
-                        Tab(
-                            selected = tab == 1,
-                            onClick = { tab = 1 },
-                            text = { Text("Cosponsored (${state.cosponsored.size})") },
-                        )
-                    }
-                    val items = if (tab == 0) state.sponsored else state.cosponsored
-                    if (items.isEmpty()) {
-                        Text(
-                            "No data yet for this representative.",
-                            modifier = Modifier.padding(16.dp),
-                            style = MaterialTheme.typography.bodyMedium,
-                        )
-                    } else {
-                        LazyColumn {
-                            items(items, key = { it.id }) { item ->
-                                MemberLegislationRow(item = item, onClick = {
-                                    if (viewModel.isInLocalCache(item.id)) {
-                                        onBillClick(item.id)
-                                    } else {
-                                        val url = congressGovUrlFor(item.type, item.number, item.congress)
-                                        openInCustomTab(context, url)
-                                    }
-                                })
-                            }
+        MemberDetailContent(
+            state = state,
+            innerPadding = padding,
+            onLegislationClick = { item ->
+                if (viewModel.isInLocalCache(item.id)) {
+                    onBillClick(item.id)
+                } else {
+                    val url = congressGovUrlFor(item.type, item.number, item.congress)
+                    openInCustomTab(context, url)
+                }
+            },
+        )
+    }
+}
+
+@Composable
+internal fun MemberDetailContent(
+    state: MemberDetailUiState,
+    innerPadding: PaddingValues,
+    onLegislationClick: (MemberLegislationItem) -> Unit,
+) {
+    var tab by remember { mutableIntStateOf(0) }
+    Column(modifier = Modifier.padding(innerPadding).fillMaxSize()) {
+        when {
+            state.isLoading -> CircularProgressIndicator()
+            state.member != null -> {
+                MemberCard(member = state.member, onClick = {})
+                PrimaryTabRow(selectedTabIndex = tab) {
+                    Tab(
+                        selected = tab == 0,
+                        onClick = { tab = 0 },
+                        text = { Text("Sponsored (${state.sponsored.size})") },
+                    )
+                    Tab(
+                        selected = tab == 1,
+                        onClick = { tab = 1 },
+                        text = { Text("Cosponsored (${state.cosponsored.size})") },
+                    )
+                }
+                val items = if (tab == 0) state.sponsored else state.cosponsored
+                if (items.isEmpty()) {
+                    Text(
+                        "No data yet for this representative.",
+                        modifier = Modifier.padding(16.dp),
+                        style = MaterialTheme.typography.bodyMedium,
+                    )
+                } else {
+                    LazyColumn {
+                        items(items, key = { it.id }) { item ->
+                            MemberLegislationRow(item = item, onClick = { onLegislationClick(item) })
                         }
                     }
                 }
-                state.errorMessage != null -> Text("Error: ${state.errorMessage}")
             }
+            state.errorMessage != null -> Text("Error: ${state.errorMessage}")
         }
     }
 }
