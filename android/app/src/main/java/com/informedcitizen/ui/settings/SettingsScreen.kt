@@ -79,7 +79,7 @@ fun SettingsScreen(
 }
 
 @Composable
-private fun SettingsContent(
+internal fun SettingsContent(
     preference: ThemePreference,
     crashReportingEnabled: Boolean,
     hasSavedReps: Boolean,
