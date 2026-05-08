@@ -103,7 +103,7 @@ internal fun SessionCalendarContent(
     innerPadding: PaddingValues,
     onRetry: () -> Unit,
     today: LocalDate = LocalDate.now(),
-    onOpenSource: (String) -> Unit = {},
+    onOpenSource: (String) -> Unit,
 ) {
     when (state) {
         SessionCalendarUiState.Loading -> Centered(innerPadding) { CircularProgressIndicator() }

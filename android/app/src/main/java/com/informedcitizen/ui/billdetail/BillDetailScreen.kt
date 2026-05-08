@@ -176,7 +176,7 @@ private fun DetailTopBar(
 internal fun BillDetailContent(
     state: BillDetailUiState,
     innerPadding: PaddingValues,
-    onOpenFullText: (String) -> Unit = {},
+    onOpenFullText: (String) -> Unit,
 ) {
     when (state) {
         BillDetailUiState.Loading -> CenteredMessage(
