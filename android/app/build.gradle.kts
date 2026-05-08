@@ -109,6 +109,28 @@ tasks.withType<JavaCompile>().configureEach {
     options.compilerArgs.add("-Werror")
 }
 
+// SQLDelight 2.x generates Kotlin sources into build/generated/sqldelight/.
+// AGP's regular kotlin compilation picks them up, but the KSP task doesn't,
+// so Hilt fails to resolve BillSummaryDatabase when it processes
+// SqlDelightDriverModule. Use the AGP Variant API to register the generated
+// dir as Kotlin source for each variant, and tie the kspKotlin task to the
+// generator so codegen runs first.
+androidComponents {
+    onVariants { variant ->
+        val genDir = layout.buildDirectory
+            .dir("generated/sqldelight/code/BillSummaryDatabase/${variant.name}")
+            .get().asFile.absolutePath
+        variant.sources.kotlin?.addStaticSourceDirectory(genDir)
+    }
+}
+afterEvaluate {
+    listOf("Debug", "Release").forEach { variant ->
+        val generateTask = tasks.findByName("generate${variant}BillSummaryDatabaseInterface") ?: return@forEach
+        val kspTask = tasks.findByName("ksp${variant}Kotlin") ?: return@forEach
+        kspTask.dependsOn(generateTask)
+    }
+}
+
 dependencies {
   val composeBom = platform(libs.androidx.compose.bom)
   implementation(composeBom)

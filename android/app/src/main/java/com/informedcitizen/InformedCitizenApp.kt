@@ -1,6 +1,8 @@
 package com.informedcitizen
 
 import android.app.Application
+import androidx.hilt.work.HiltWorkerFactory
+import androidx.work.Configuration
 import com.informedcitizen.crash.CrashReporter
 import com.informedcitizen.data.repository.CrashReportingPreferenceRepository
 import com.informedcitizen.data.repository.SessionCalendarRepository
@@ -15,13 +17,20 @@ import java.time.LocalDate
 import javax.inject.Inject
 
 @HiltAndroidApp
-class InformedCitizenApp : Application() {
+class InformedCitizenApp : Application(), Configuration.Provider {
 
     @Inject lateinit var crashReporter: CrashReporter
     @Inject lateinit var crashPrefs: CrashReportingPreferenceRepository
     @Inject lateinit var sessionCalendarRepository: SessionCalendarRepository
+    @Inject lateinit var workerFactory: HiltWorkerFactory
 
     private val appScope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
+
+    override val workManagerConfiguration: Configuration
+        get() = Configuration.Builder()
+            .setWorkerFactory(workerFactory)
+            .setMinimumLoggingLevel(android.util.Log.INFO)
+            .build()
 
     override fun onCreate() {
         super.onCreate()

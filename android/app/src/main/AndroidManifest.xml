@@ -37,6 +37,20 @@
         android:windowSoftInputMode="adjustResize"
         android:theme="@style/Theme.InformedCitizen">
         <!--
+          Opt out of WorkManager's default initializer because we supply
+          a Configuration.Provider in InformedCitizenApp (HiltWorkerFactory).
+        -->
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            android:exported="false"
+            tools:node="merge">
+            <meta-data
+                android:name="androidx.work.WorkManagerInitializer"
+                android:value="androidx.startup"
+                tools:node="remove" />
+        </provider>
+        <!--
           Default Crashlytics auto-collection to OFF. Programmatic enable
           happens only on release builds when the user has opted in via
           Settings, so any race window before our app code runs is silent.
