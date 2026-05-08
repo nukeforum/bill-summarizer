@@ -29,7 +29,6 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.SegmentedButton
 import androidx.compose.material3.SegmentedButtonDefaults
 import androidx.compose.material3.SingleChoiceSegmentedButtonRow
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -115,6 +114,7 @@ fun LocationPickerScreen(
     viewModel: LocationPickerViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
+    val context = LocalContext.current
 
     LaunchedEffect(viewModel) {
         viewModel.events.collect { event ->
@@ -124,7 +124,32 @@ fun LocationPickerScreen(
         }
     }
 
-    val context = LocalContext.current
+    LocationPickerContent(
+        state = state,
+        modifier = modifier,
+        onSelectState = viewModel::selectState,
+        onSelectMode = viewModel::selectMode,
+        onSelectDistrict = viewModel::selectDistrict,
+        onZipChanged = viewModel::onZipChanged,
+        onLookupZip = viewModel::lookupZip,
+        onOpenHouseGov = { openInCustomTab(context, HOUSE_GOV_LOOKUP) },
+        onSave = viewModel::save,
+    )
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+internal fun LocationPickerContent(
+    state: LocationPickerUiState,
+    onSelectState: (String) -> Unit,
+    onSelectMode: (LocationPickerMode) -> Unit,
+    onSelectDistrict: (Int) -> Unit,
+    onZipChanged: (String) -> Unit,
+    onLookupZip: () -> Unit,
+    onOpenHouseGov: () -> Unit,
+    onSave: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
     var stateExpanded by remember { mutableStateOf(false) }
 
     Column(
@@ -136,8 +161,8 @@ fun LocationPickerScreen(
                     start = 16.dp,
                     end = 16.dp,
                     top = 16.dp,
-                    bottom = 16.dp
-                )
+                    bottom = 16.dp,
+                ),
             ),
         verticalArrangement = Arrangement.spacedBy(16.dp),
     ) {
@@ -174,7 +199,7 @@ fun LocationPickerScreen(
                     DropdownMenuItem(
                         text = { Text(code) },
                         onClick = {
-                            viewModel.selectState(code)
+                            onSelectState(code)
                             stateExpanded = false
                         },
                     )
@@ -185,25 +210,24 @@ fun LocationPickerScreen(
         ModeSegmentedRow(
             mode = state.mode,
             zipLookupAvailable = state.isZipLookupAvailable,
-            onSelectMode = { it: LocationPickerMode -> viewModel.selectMode(it) },
+            onSelectMode = onSelectMode,
         )
 
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .weight(1f)
+                .weight(1f),
         ) {
             when (state.mode) {
                 LocationPickerMode.Pick -> PickModeContent(
                     state = state,
-                    onSelectDistrict = { it: Int -> viewModel.selectDistrict(it) },
+                    onSelectDistrict = onSelectDistrict,
                 )
-
                 LocationPickerMode.Lookup -> LookupModeContent(
                     state = state,
-                    onZipChanged = { it: String -> viewModel.onZipChanged(it) },
-                    onLookupZip = { viewModel.lookupZip() },
-                    onOpenHouseGov = { openInCustomTab(context, HOUSE_GOV_LOOKUP) },
+                    onZipChanged = onZipChanged,
+                    onLookupZip = onLookupZip,
+                    onOpenHouseGov = onOpenHouseGov,
                 )
             }
         }
@@ -225,10 +249,7 @@ fun LocationPickerScreen(
                 modifier = Modifier.fillMaxWidth(),
                 contentAlignment = Alignment.CenterEnd,
             ) {
-                Button(onClick = { viewModel.save() },
-                    // Reserve space at the bottom so scrollable content doesn't sit
-                    // beneath the pinned save bar.
-                    enabled = state.canSave) { Text("Save") }
+                Button(onClick = onSave, enabled = state.canSave) { Text("Save") }
             }
         }
     }
@@ -363,38 +384,4 @@ private fun LookupModeContent(
         onClick = onOpenHouseGov,
         modifier = Modifier.fillMaxWidth(),
     ) { Text("Go to House.gov") }
-}
-
-@Composable
-private fun SaveBar(
-    canSave: Boolean,
-    saveFailed: Boolean,
-    onSave: () -> Unit,
-    modifier: Modifier = Modifier,
-) {
-    Surface(
-        modifier = modifier.fillMaxWidth(),
-        tonalElevation = 3.dp,
-    ) {
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(horizontal = 16.dp, vertical = 12.dp),
-            verticalArrangement = Arrangement.spacedBy(8.dp),
-        ) {
-            if (saveFailed) {
-                Text(
-                    "Couldn't load representatives for that location. Check your connection and try again.",
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.error,
-                )
-            }
-            Box(
-                modifier = Modifier.fillMaxWidth(),
-                contentAlignment = Alignment.CenterEnd,
-            ) {
-                Button(onClick = onSave, enabled = canSave) { Text("Save") }
-            }
-        }
-    }
 }
