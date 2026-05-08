@@ -4,17 +4,26 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.selection.selectableGroup
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
+import androidx.compose.material.icons.outlined.Info
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SegmentedButton
@@ -22,16 +31,22 @@ import androidx.compose.material3.SegmentedButtonDefaults
 import androidx.compose.material3.SingleChoiceSegmentedButtonRow
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
-import androidx.compose.foundation.layout.Row
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.informedcitizen.data.ai.AiCapability
+import com.informedcitizen.data.work.SummarizationScope
 import com.informedcitizen.theme.ThemeFamily
 import com.informedcitizen.theme.ThemeMode
 import com.informedcitizen.theme.ThemePreference
@@ -51,6 +66,7 @@ fun SettingsScreen(
     val preference by viewModel.preference.collectAsStateWithLifecycle()
     val crashReportingEnabled by viewModel.crashReportingEnabled.collectAsStateWithLifecycle()
     val hasSavedReps by viewModel.hasSavedReps.collectAsStateWithLifecycle()
+    val aiState by viewModel.uiState.collectAsStateWithLifecycle()
 
     Scaffold(
         modifier = modifier,
@@ -69,11 +85,16 @@ fun SettingsScreen(
             preference = preference,
             crashReportingEnabled = crashReportingEnabled,
             hasSavedReps = hasSavedReps,
+            aiState = aiState,
             innerPadding = innerPadding,
             onPreferenceChange = viewModel::setPreference,
             onCrashReportingEnabledChange = viewModel::setCrashReportingEnabled,
             onForgetSavedReps = viewModel::forgetSavedReps,
             onCalendarClick = onCalendarClick,
+            onAiTitlesEnabledChange = viewModel::setAiTitlesEnabled,
+            onSummarizationScopeChange = viewModel::setSummarizationScope,
+            onStopNow = viewModel::stopSummarizingNow,
+            onClearCache = viewModel::clearAiCache,
         )
     }
 }
@@ -83,11 +104,16 @@ internal fun SettingsContent(
     preference: ThemePreference,
     crashReportingEnabled: Boolean,
     hasSavedReps: Boolean,
+    aiState: SettingsAiUiState,
     innerPadding: PaddingValues,
     onPreferenceChange: (ThemePreference) -> Unit,
     onCrashReportingEnabledChange: (Boolean) -> Unit,
     onForgetSavedReps: () -> Unit,
     onCalendarClick: () -> Unit,
+    onAiTitlesEnabledChange: (Boolean) -> Unit,
+    onSummarizationScopeChange: (SummarizationScope) -> Unit,
+    onStopNow: () -> Unit,
+    onClearCache: () -> Unit,
 ) {
     Column(modifier = Modifier.fillMaxWidth().padding(innerPadding)) {
         SectionHeader("Theme")
@@ -102,6 +128,14 @@ internal fun SettingsContent(
             onModeChange = { newMode ->
                 onPreferenceChange(preference.withMode(newMode))
             },
+        )
+        SectionHeader("AI title summarization")
+        AiTitlesSection(
+            state = aiState,
+            onAiTitlesEnabledChange = onAiTitlesEnabledChange,
+            onSummarizationScopeChange = onSummarizationScopeChange,
+            onStopNow = onStopNow,
+            onClearCache = onClearCache,
         )
         SectionHeader("Crash reporting")
         CrashReportingRow(
@@ -126,6 +160,147 @@ internal fun SettingsContent(
         ForgetSavedRepsRow(
             enabled = hasSavedReps,
             onClick = onForgetSavedReps,
+        )
+    }
+}
+
+@Composable
+private fun AiTitlesSection(
+    state: SettingsAiUiState,
+    onAiTitlesEnabledChange: (Boolean) -> Unit,
+    onSummarizationScopeChange: (SummarizationScope) -> Unit,
+    onStopNow: () -> Unit,
+    onClearCache: () -> Unit,
+) {
+    var helpOpen by remember { mutableStateOf(false) }
+
+    Row(
+        modifier = Modifier.fillMaxWidth().padding(horizontal = 20.dp, vertical = 12.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Switch(
+            checked = state.aiTitlesEnabled,
+            enabled = state.aiCapability != AiCapability.Status.NotSupported,
+            onCheckedChange = onAiTitlesEnabledChange,
+        )
+        Spacer(Modifier.width(12.dp))
+        Column(Modifier.weight(1f)) {
+            Text(
+                text = "AI-summarized titles & topics",
+                style = MaterialTheme.typography.bodyLarge,
+            )
+            Text(
+                text = when (state.aiCapability) {
+                    AiCapability.Status.Available -> "Available — Gemini Nano on this device"
+                    AiCapability.Status.ModelDownloading -> "Available — model downloading"
+                    AiCapability.Status.NotSupported -> "Not supported on this device"
+                },
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
+        IconButton(onClick = { helpOpen = true }) {
+            Icon(Icons.Outlined.Info, contentDescription = "About AI summarization")
+        }
+    }
+
+    if (state.aiTitlesEnabled) {
+        ScopePicker(
+            value = state.summarizationScope,
+            onChange = onSummarizationScopeChange,
+        )
+        Row(modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)) {
+            TextButton(onClick = onStopNow) { Text("Stop summarizing now") }
+            Spacer(Modifier.width(8.dp))
+            TextButton(onClick = onClearCache) { Text("Clear cache") }
+        }
+    }
+
+    if (helpOpen) {
+        AlertDialog(
+            onDismissRequest = { helpOpen = false },
+            title = { Text("About AI title summarization") },
+            text = {
+                Text(
+                    "Generated entirely on your device using Gemini Nano. " +
+                        "No bill data leaves the device. " +
+                        "When the topic filter is on, bills that haven't been summarized yet are hidden. " +
+                        "Long-press a bill in the list to re-summarize it; that bypasses the daily cap.",
+                )
+            },
+            confirmButton = {
+                TextButton(onClick = { helpOpen = false }) { Text("OK") }
+            },
+        )
+    }
+}
+
+@Composable
+private fun ScopePicker(
+    value: SummarizationScope,
+    onChange: (SummarizationScope) -> Unit,
+) {
+    Column(modifier = Modifier.padding(horizontal = 20.dp)) {
+        ScopeRadio("Floor-action only", value is SummarizationScope.FloorActionOnly) {
+            onChange(SummarizationScope.FloorActionOnly)
+        }
+        ScopeRadio("Recent (last 60 days)", value is SummarizationScope.Recent60Days) {
+            onChange(SummarizationScope.Recent60Days)
+        }
+        ScopeRadio("Progressive — cap per day", value is SummarizationScope.Progressive) {
+            onChange(SummarizationScope.Progressive(50))
+        }
+        if (value is SummarizationScope.Progressive) {
+            ProgressiveCapRow(
+                cap = value.capPerDay,
+                onChange = { newCap -> onChange(SummarizationScope.Progressive(newCap)) },
+            )
+        }
+        ScopeRadio("All eligible", value is SummarizationScope.All) {
+            onChange(SummarizationScope.All)
+        }
+    }
+}
+
+@Composable
+private fun ScopeRadio(label: String, selected: Boolean, onClick: () -> Unit) {
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = Modifier.fillMaxWidth().clickable(onClick = onClick).padding(vertical = 8.dp),
+    ) {
+        RadioButton(selected = selected, onClick = onClick)
+        Spacer(Modifier.width(8.dp))
+        Text(label)
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun ProgressiveCapRow(cap: Int, onChange: (Int) -> Unit) {
+    val presets = listOf(10, 25, 50, 100)
+    var custom by remember(cap) { mutableStateOf(if (cap !in presets) cap.toString() else "") }
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        modifier = Modifier.padding(start = 32.dp, top = 4.dp, bottom = 8.dp),
+    ) {
+        presets.forEach { preset ->
+            FilterChip(
+                selected = cap == preset && custom.isEmpty(),
+                onClick = { onChange(preset); custom = "" },
+                label = { Text(preset.toString()) },
+            )
+            Spacer(Modifier.width(4.dp))
+        }
+        OutlinedTextField(
+            value = custom,
+            onValueChange = { input ->
+                custom = input.filter(Char::isDigit).take(3)
+                custom.toIntOrNull()?.takeIf { it in 1..500 }?.let(onChange)
+            },
+            label = { Text("Custom") },
+            singleLine = true,
+            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+            modifier = Modifier.width(96.dp).height(56.dp),
         )
     }
 }
