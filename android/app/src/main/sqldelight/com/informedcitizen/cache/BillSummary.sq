@@ -1,0 +1,68 @@
+CREATE TABLE bill_summary (
+    bill_id TEXT NOT NULL PRIMARY KEY,
+    generated_title TEXT,
+    topic TEXT,
+    model_version TEXT NOT NULL,
+    prompt_version INTEGER NOT NULL,
+    generated_at INTEGER NOT NULL,
+    error_kind TEXT
+);
+CREATE INDEX bill_summary_topic ON bill_summary(topic);
+
+CREATE TABLE pending_summarization (
+    bill_id TEXT NOT NULL PRIMARY KEY,
+    priority INTEGER NOT NULL,
+    bypass_cap INTEGER NOT NULL,
+    enqueued_at INTEGER NOT NULL
+);
+CREATE INDEX pending_summarization_priority
+    ON pending_summarization(priority DESC, enqueued_at);
+
+CREATE TABLE daily_attempts (
+    date TEXT NOT NULL PRIMARY KEY,
+    count INTEGER NOT NULL
+);
+
+selectAllSummaries:
+SELECT * FROM bill_summary
+WHERE model_version = ? AND prompt_version = ?;
+
+selectSummary:
+SELECT * FROM bill_summary
+WHERE bill_id = ? AND model_version = ? AND prompt_version = ?;
+
+upsertSummary:
+INSERT OR REPLACE INTO bill_summary
+VALUES (?, ?, ?, ?, ?, ?, ?);
+
+deleteSummary:
+DELETE FROM bill_summary WHERE bill_id = ?;
+
+clearAllSummaries:
+DELETE FROM bill_summary;
+
+selectNextPending:
+SELECT * FROM pending_summarization
+ORDER BY priority DESC, enqueued_at ASC
+LIMIT 1;
+
+queueDepth:
+SELECT COUNT(*) FROM pending_summarization;
+
+enqueuePending:
+INSERT OR REPLACE INTO pending_summarization
+VALUES (?, ?, ?, ?);
+
+dequeuePending:
+DELETE FROM pending_summarization WHERE bill_id = ?;
+
+clearPending:
+DELETE FROM pending_summarization;
+
+incrementToday {
+    INSERT OR IGNORE INTO daily_attempts(date, count) VALUES (:date, 0);
+    UPDATE daily_attempts SET count = count + 1 WHERE date = :date;
+}
+
+todayCount:
+SELECT count FROM daily_attempts WHERE date = ?;
