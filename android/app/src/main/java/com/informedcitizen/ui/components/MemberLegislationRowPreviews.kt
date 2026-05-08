@@ -3,17 +3,16 @@ package com.informedcitizen.ui.components
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
-import com.informedcitizen.ui.preview.MaterialPreviewTheme
+import com.informedcitizen.ui.preview.PreviewWrap
 import com.informedcitizen.ui.preview.sampleLegislationItem
 
 @PreviewLightDark
 @Composable
-private fun PreviewMemberLegislationRows() = PreviewWrap {
+private fun PreviewMemberLegislationRows() = PreviewWrap(modifier = Modifier) {
     Column(modifier = Modifier.fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(0.dp)) {
         MemberLegislationRow(item = sampleLegislationItem(), onClick = {})
         MemberLegislationRow(
@@ -36,12 +35,5 @@ private fun PreviewMemberLegislationRows() = PreviewWrap {
             ),
             onClick = {},
         )
-    }
-}
-
-@Composable
-private fun PreviewWrap(content: @Composable () -> Unit) {
-    MaterialPreviewTheme {
-        Surface { content() }
     }
 }

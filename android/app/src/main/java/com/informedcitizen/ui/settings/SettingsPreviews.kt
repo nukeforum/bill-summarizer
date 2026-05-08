@@ -1,14 +1,11 @@
 package com.informedcitizen.ui.settings
 
 import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.informedcitizen.theme.ThemePreference
-import com.informedcitizen.ui.preview.MaterialPreviewTheme
+import com.informedcitizen.ui.preview.PreviewWrap
 
 @PreviewLightDark
 @Composable
@@ -40,9 +37,3 @@ private fun PreviewSettingsWithoutSavedReps() = PreviewWrap {
     )
 }
 
-@Composable
-private fun PreviewWrap(content: @Composable () -> Unit) {
-    MaterialPreviewTheme {
-        Surface(modifier = Modifier.fillMaxSize()) { content() }
-    }
-}

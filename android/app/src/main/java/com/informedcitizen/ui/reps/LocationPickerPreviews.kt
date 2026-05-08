@@ -1,11 +1,8 @@
 package com.informedcitizen.ui.reps
 
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
-import com.informedcitizen.ui.preview.MaterialPreviewTheme
+import com.informedcitizen.ui.preview.PreviewWrap
 
 @PreviewLightDark
 @Composable
@@ -138,9 +135,3 @@ private fun PreviewLocationPickerSaveFailed() = PreviewWrap {
     )
 }
 
-@Composable
-private fun PreviewWrap(content: @Composable () -> Unit) {
-    MaterialPreviewTheme {
-        Surface(modifier = Modifier.fillMaxSize()) { content() }
-    }
-}

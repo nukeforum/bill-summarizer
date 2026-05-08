@@ -1,6 +1,9 @@
 package com.informedcitizen.ui.preview
 
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import com.informedcitizen.data.model.Action
 import com.informedcitizen.data.model.Bill
 import com.informedcitizen.data.model.ChamberCalendar
@@ -23,6 +26,23 @@ import com.informedcitizen.theme.ThemePreference
 @Composable
 fun MaterialPreviewTheme(content: @Composable () -> Unit) {
     InformedCitizenTheme(preference = ThemePreference.MATERIAL_SYSTEM, content = content)
+}
+
+/**
+ * Shared theme + Surface wrapper for `@Preview` composables. Default
+ * modifier `Modifier.fillMaxSize()` matches the screen-level pattern
+ * (screens want the Surface to paint the full preview canvas). Caller
+ * passes a different `modifier` for component previews that should size
+ * to content (`Modifier`) or to width (`Modifier.fillMaxWidth()`).
+ */
+@Composable
+internal fun PreviewWrap(
+    modifier: Modifier = Modifier.fillMaxSize(),
+    content: @Composable () -> Unit,
+) {
+    MaterialPreviewTheme {
+        Surface(modifier = modifier) { content() }
+    }
 }
 
 /**
