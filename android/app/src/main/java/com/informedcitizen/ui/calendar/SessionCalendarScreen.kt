@@ -73,6 +73,7 @@ fun SessionCalendarScreen(
     viewModel: SessionCalendarViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
+    val context = LocalContext.current
 
     Scaffold(
         modifier = modifier,
@@ -91,6 +92,7 @@ fun SessionCalendarScreen(
             state = state,
             innerPadding = innerPadding,
             onRetry = viewModel::retry,
+            onOpenSource = { url -> openInCustomTab(context, url) },
         )
     }
 }
@@ -100,11 +102,13 @@ internal fun SessionCalendarContent(
     state: SessionCalendarUiState,
     innerPadding: PaddingValues,
     onRetry: () -> Unit,
+    today: LocalDate = LocalDate.now(),
+    onOpenSource: (String) -> Unit = {},
 ) {
     when (state) {
         SessionCalendarUiState.Loading -> Centered(innerPadding) { CircularProgressIndicator() }
         is SessionCalendarUiState.Error -> ErrorBlock(innerPadding, state.message, onRetry = onRetry)
-        is SessionCalendarUiState.Success -> SuccessBody(innerPadding, state.calendar)
+        is SessionCalendarUiState.Success -> SuccessBody(innerPadding, state.calendar, today, onOpenSource)
     }
 }
 
@@ -137,8 +141,7 @@ private fun ErrorBlock(innerPadding: PaddingValues, message: String, onRetry: ()
 }
 
 @Composable
-private fun SuccessBody(innerPadding: PaddingValues, calendar: SessionCalendar) {
-    val today = LocalDate.now()
+private fun SuccessBody(innerPadding: PaddingValues, calendar: SessionCalendar, today: LocalDate, onOpenSource: (String) -> Unit) {
     val statuses = calendar.statusOn(today)
 
     Column(
@@ -152,7 +155,7 @@ private fun SuccessBody(innerPadding: PaddingValues, calendar: SessionCalendar) 
         TodaySummaryCard(today = today, statuses = statuses)
         CalendarGridSection(calendar = calendar, today = today)
         ComingUpSection(calendar = calendar, today = today)
-        SourceFooter(calendar)
+        SourceFooter(calendar, onOpenSource)
     }
 }
 
@@ -438,19 +441,18 @@ private fun ChamberBlocks(modifier: Modifier, title: String, blocks: List<Sessio
 }
 
 @Composable
-private fun SourceFooter(calendar: SessionCalendar) {
-    val context = LocalContext.current
+private fun SourceFooter(calendar: SessionCalendar, onOpenSource: (String) -> Unit) {
     Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
         Text(
             text = "Calendar published by the Office of the House Majority Leader and the U.S. Senate.",
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
         )
-        TextButton(onClick = { openInCustomTab(context, calendar.source.house) }) {
+        TextButton(onClick = { onOpenSource(calendar.source.house) }) {
             Icon(Icons.AutoMirrored.Filled.OpenInNew, contentDescription = null)
             Text("  House calendar")
         }
-        TextButton(onClick = { openInCustomTab(context, calendar.source.senate) }) {
+        TextButton(onClick = { onOpenSource(calendar.source.senate) }) {
             Icon(Icons.AutoMirrored.Filled.OpenInNew, contentDescription = null)
             Text("  Senate calendar")
         }

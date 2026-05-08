@@ -104,7 +104,11 @@ fun BillDetailScreen(
             }
         },
     ) { innerPadding ->
-        BillDetailContent(state = uiState, innerPadding = innerPadding)
+        BillDetailContent(
+            state = uiState,
+            innerPadding = innerPadding,
+            onOpenFullText = { url -> openInCustomTab(context, url) },
+        )
     }
 
     if (showSheet && successBill != null) {
@@ -169,7 +173,11 @@ private fun DetailTopBar(
 }
 
 @Composable
-internal fun BillDetailContent(state: BillDetailUiState, innerPadding: PaddingValues) {
+internal fun BillDetailContent(
+    state: BillDetailUiState,
+    innerPadding: PaddingValues,
+    onOpenFullText: (String) -> Unit = {},
+) {
     when (state) {
         BillDetailUiState.Loading -> CenteredMessage(
             innerPadding = innerPadding,
@@ -183,13 +191,13 @@ internal fun BillDetailContent(state: BillDetailUiState, innerPadding: PaddingVa
         is BillDetailUiState.Success -> BillDetailSuccessBody(
             bill = state.bill,
             innerPadding = innerPadding,
+            onOpenFullText = onOpenFullText,
         )
     }
 }
 
 @Composable
-private fun BillDetailSuccessBody(bill: Bill, innerPadding: PaddingValues) {
-    val context = LocalContext.current
+private fun BillDetailSuccessBody(bill: Bill, innerPadding: PaddingValues, onOpenFullText: (String) -> Unit) {
     val fullTextUrl = bill.textUrlHtml ?: bill.congressGovUrl
 
     // Top inset is applied as layout padding (so the verticalScroll's
@@ -244,7 +252,7 @@ private fun BillDetailSuccessBody(bill: Bill, innerPadding: PaddingValues) {
         }
 
         Section(title = "Full text") {
-            FilledTonalButton(onClick = { openInCustomTab(context, fullTextUrl) }) {
+            FilledTonalButton(onClick = { onOpenFullText(fullTextUrl) }) {
                 Icon(
                     imageVector = Icons.AutoMirrored.Filled.OpenInNew,
                     contentDescription = null,

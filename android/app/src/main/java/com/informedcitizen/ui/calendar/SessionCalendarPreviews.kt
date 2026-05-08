@@ -10,6 +10,7 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.informedcitizen.ui.preview.MaterialPreviewTheme
 import com.informedcitizen.ui.preview.sampleSessionCalendar
+import java.time.LocalDate
 
 @Preview(showBackground = true)
 @Composable
@@ -18,6 +19,7 @@ private fun PreviewSessionCalendarLoading() = PreviewWrap {
         state = SessionCalendarUiState.Loading,
         innerPadding = PaddingValues(0.dp),
         onRetry = {},
+        onOpenSource = {},
     )
 }
 
@@ -28,6 +30,8 @@ private fun PreviewSessionCalendarSuccess() = PreviewWrap {
         state = SessionCalendarUiState.Success(calendar = sampleSessionCalendar()),
         innerPadding = PaddingValues(0.dp),
         onRetry = {},
+        today = LocalDate.of(2026, 5, 8),
+        onOpenSource = {},
     )
 }
 
@@ -38,6 +42,7 @@ private fun PreviewSessionCalendarError() = PreviewWrap {
         state = SessionCalendarUiState.Error(message = "Couldn't reach the calendar service."),
         innerPadding = PaddingValues(0.dp),
         onRetry = {},
+        onOpenSource = {},
     )
 }
 

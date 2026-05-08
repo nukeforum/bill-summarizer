@@ -17,6 +17,7 @@ private fun PreviewBillDetailLoading() = PreviewWrap {
     BillDetailContent(
         state = BillDetailUiState.Loading,
         innerPadding = PaddingValues(0.dp),
+        onOpenFullText = {},
     )
 }
 
@@ -26,6 +27,7 @@ private fun PreviewBillDetailSuccess() = PreviewWrap {
     BillDetailContent(
         state = BillDetailUiState.Success(bill = sampleBill()),
         innerPadding = PaddingValues(0.dp),
+        onOpenFullText = {},
     )
 }
 
@@ -37,6 +39,7 @@ private fun PreviewBillDetailSuccessNoSummary() = PreviewWrap {
             bill = sampleBill(summaryCrs = null),
         ),
         innerPadding = PaddingValues(0.dp),
+        onOpenFullText = {},
     )
 }
 
@@ -46,6 +49,7 @@ private fun PreviewBillDetailError() = PreviewWrap {
     BillDetailContent(
         state = BillDetailUiState.Error(message = "Bill not found in cache."),
         innerPadding = PaddingValues(0.dp),
+        onOpenFullText = {},
     )
 }
 
