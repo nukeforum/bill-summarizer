@@ -6,8 +6,10 @@ import com.informedcitizen.data.ai.AiCoreBillSummarizer
 import com.informedcitizen.data.ai.BillSummarizer
 import dagger.Binds
 import dagger.Module
+import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import java.time.Clock
 import javax.inject.Singleton
 
 @Module
@@ -18,4 +20,9 @@ abstract class AiTitlesModule {
 
     @Binds @Singleton
     abstract fun bindAiCapability(impl: AiCapabilityImpl): AiCapability
+
+    companion object {
+        @Provides @Singleton
+        fun provideClock(): Clock = Clock.systemDefaultZone()
+    }
 }

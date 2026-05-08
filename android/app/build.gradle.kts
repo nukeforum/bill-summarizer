@@ -88,6 +88,10 @@ android {
         // "your SDK isn't the latest preview."
         disable += listOf("OldTargetApi", "GradleDependency")
     }
+
+    testOptions {
+        unitTests.isIncludeAndroidResources = true
+    }
 }
 
 kotlin {
@@ -209,4 +213,6 @@ dependencies {
   testImplementation(libs.sqldelight.sqlite.driver)
   testImplementation(libs.androidx.work.testing)
   testImplementation(libs.robolectric)
+  testImplementation(libs.androidx.test.core)
+  testImplementation(libs.androidx.test.ext.junit)
 }
