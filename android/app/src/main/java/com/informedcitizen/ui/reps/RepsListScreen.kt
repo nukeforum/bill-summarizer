@@ -34,6 +34,21 @@ fun RepsListScreen(
     viewModel: RepsListViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
+    RepsListContent(
+        state = state,
+        modifier = modifier,
+        onMemberClick = onMemberClick,
+        onChangeLocation = onChangeLocation,
+    )
+}
+
+@Composable
+internal fun RepsListContent(
+    state: RepsListUiState,
+    onMemberClick: (String) -> Unit,
+    onChangeLocation: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
     val scroll = rememberScrollState()
 
     Column(
@@ -51,19 +66,17 @@ fun RepsListScreen(
                 modifier = Modifier.weight(1f),
                 text = "Your representatives",
                 style = MaterialTheme.typography.headlineSmall,
-                textAlign = TextAlign.Start
+                textAlign = TextAlign.Start,
             )
 
             if (state is RepsListUiState.Loaded) {
-                IconButton(
-                    onClick = onChangeLocation
-                ) {
+                IconButton(onClick = onChangeLocation) {
                     Icon(Icons.Filled.Delete, contentDescription = "Delete")
                 }
             }
         }
 
-        when (val s = state) {
+        when (state) {
             RepsListUiState.Loading -> CircularProgressIndicator()
             RepsListUiState.NoLocation ->
                 Text("Set your location to see your representatives.")
@@ -85,16 +98,16 @@ fun RepsListScreen(
                 Text(
                     "Senators",
                     style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
 
-                if (s.senators.isEmpty()) {
+                if (state.senators.isEmpty()) {
                     Text(
                         "Your senators' data can't be located",
-                        style = MaterialTheme.typography.bodyMedium
+                        style = MaterialTheme.typography.bodyMedium,
                     )
                 } else {
-                    s.senators.forEach { m ->
+                    state.senators.forEach { m ->
                         MemberCard(member = m, onClick = { onMemberClick(m.bioguideId) })
                     }
                 }
@@ -102,23 +115,23 @@ fun RepsListScreen(
                 Text(
                     "House Representatives",
                     style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
 
-                if (s.house.isEmpty()) {
+                if (state.house.isEmpty()) {
                     Text(
                         "Your House representatives' data can't be located",
-                        style = MaterialTheme.typography.bodyMedium
+                        style = MaterialTheme.typography.bodyMedium,
                     )
                 } else {
-                    s.house.forEach { m ->
+                    state.house.forEach { m ->
                         MemberCard(member = m, onClick = { onMemberClick(m.bioguideId) })
                     }
                 }
             }
 
             is RepsListUiState.Error ->
-                Text("Couldn't load: ${s.message}", color = MaterialTheme.colorScheme.error)
+                Text("Couldn't load: ${state.message}", color = MaterialTheme.colorScheme.error)
         }
     }
 }
