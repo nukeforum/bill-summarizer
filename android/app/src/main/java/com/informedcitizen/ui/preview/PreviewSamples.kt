@@ -12,7 +12,6 @@ import com.informedcitizen.data.model.SessionCalendarSource
 import com.informedcitizen.data.model.Sponsor
 import com.informedcitizen.theme.InformedCitizenTheme
 import com.informedcitizen.theme.ThemePreference
-import java.time.LocalDate
 
 /**
  * Theme wrapper for `@Preview` composables. Locks the resolved theme to
@@ -246,6 +245,3 @@ fun sampleSessionCalendar(): SessionCalendar = SessionCalendar(
         ),
     ),
 )
-
-@Suppress("unused")
-private val SAMPLE_REFERENCE_DATE: LocalDate = LocalDate.of(2026, 5, 8)
