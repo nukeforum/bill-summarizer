@@ -1,6 +1,7 @@
 package com.informedcitizen
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
 import androidx.navigation3.runtime.entryProvider
 import androidx.navigation3.runtime.rememberNavBackStack
@@ -14,8 +15,20 @@ import com.informedcitizen.ui.settings.SettingsScreen
 import com.informedcitizen.ui.shell.CongressShell
 
 @Composable
-fun MainNavigation() {
+fun MainNavigation(
+    pendingDeepLinkAction: String? = null,
+    onDeepLinkConsumed: () -> Unit = {},
+) {
     val backStack = rememberNavBackStack(Root)
+
+    LaunchedEffect(pendingDeepLinkAction) {
+        if (pendingDeepLinkAction == MainActivity.ACTION_OPEN_AI_SETTINGS) {
+            if (backStack.lastOrNull() != Settings) {
+                backStack.add(Settings)
+            }
+            onDeepLinkConsumed()
+        }
+    }
 
     NavDisplay(
         backStack = backStack,

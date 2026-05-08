@@ -1,5 +1,6 @@
 package com.informedcitizen
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -9,6 +10,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
@@ -17,11 +19,14 @@ import com.informedcitizen.data.repository.ThemePreferenceRepository
 import com.informedcitizen.theme.InformedCitizenTheme
 import com.informedcitizen.theme.ThemePreference
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.MutableStateFlow
 import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     @Inject lateinit var themePrefs: ThemePreferenceRepository
+
+    private val deepLinkAction = MutableStateFlow<String?>(null)
 
     companion object {
         const val ACTION_OPEN_AI_SETTINGS = "com.informedcitizen.action.OPEN_AI_SETTINGS"
@@ -30,6 +35,8 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
         super.onCreate(savedInstanceState)
+
+        deepLinkAction.value = intent?.action
 
         // Override the auto() default which paints a translucent scrim
         // behind the navigation bar; we want the in-app theme background
@@ -41,14 +48,23 @@ class MainActivity : ComponentActivity() {
             val preference by themePrefs.preference.collectAsStateWithLifecycle(
                 initialValue = ThemePreference.DEFAULT,
             )
+            val pendingAction by deepLinkAction.collectAsState()
             InformedCitizenTheme(preference) {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background,
                 ) {
-                    MainNavigation()
+                    MainNavigation(
+                        pendingDeepLinkAction = pendingAction,
+                        onDeepLinkConsumed = { deepLinkAction.value = null },
+                    )
                 }
             }
         }
+    }
+
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        deepLinkAction.value = intent.action
     }
 }
