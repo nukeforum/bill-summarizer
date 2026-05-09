@@ -74,6 +74,7 @@ class CachedMemberRepository @Inject constructor(
         bioguideId: String,
         block: suspend (String) -> MemberLegislation,
     ): MemberLegislation? = runCatching { block(bioguideId) }
+        .map { it.withRenderableBillsOnly() }
         .recover { exc ->
             if (exc is HttpException && exc.code() == 404) {
                 MemberLegislation(bioguideId, congress = 0, kind = "", generatedAt = "", bills = emptyList())
@@ -83,4 +84,11 @@ class CachedMemberRepository @Inject constructor(
         }
         .onFailure { crashReporter.recordNonFatal(it, "member legislation fetch failed") }
         .getOrNull()
+
+    // Upstream JSON fixtures occasionally contain entries with empty type/number,
+    // which collapse to a non-unique id like "-119" and crash LazyColumn on the
+    // member detail screen. Drop them at ingestion since they have no renderable
+    // identifier and no resolvable congress.gov URL.
+    private fun MemberLegislation.withRenderableBillsOnly(): MemberLegislation =
+        copy(bills = bills.filter { it.type.isNotBlank() && it.number.isNotBlank() })
 }

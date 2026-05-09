@@ -2,8 +2,10 @@ package com.informedcitizen.data.repository
 
 import com.informedcitizen.crash.FakeCrashReporter
 import com.informedcitizen.data.api.MembersApi
+import com.informedcitizen.data.model.Action
 import com.informedcitizen.data.model.Member
 import com.informedcitizen.data.model.MemberLegislation
+import com.informedcitizen.data.model.MemberLegislationItem
 import com.informedcitizen.data.model.MembersIndex
 import kotlinx.coroutines.test.runTest
 import okhttp3.MediaType.Companion.toMediaType
@@ -92,6 +94,67 @@ class MemberRepositoryTest {
         )
         val result = repo.getSponsored("A000001")
         assertNotNull(result)
+        assertTrue(result!!.bills.isEmpty())
+    }
+
+    @Test
+    fun `getSponsored drops items with blank type or number`() = runTest {
+        val malformed = MemberLegislationItem(
+            id = "-119",
+            type = "",
+            number = "",
+            congress = 119,
+            title = "",
+            introducedDate = "",
+            latestAction = Action(date = "", text = ""),
+        )
+        val good = MemberLegislationItem(
+            id = "hr1-119",
+            type = "hr",
+            number = "1",
+            congress = 119,
+            title = "Real Bill",
+            introducedDate = "2026-01-01",
+            latestAction = Action(date = "2026-01-01", text = "Introduced"),
+        )
+        val fixture = MemberLegislation(
+            bioguideId = "A000001",
+            congress = 119,
+            kind = "sponsored",
+            generatedAt = "x",
+            bills = listOf(malformed, good, malformed),
+        )
+        val repo = CachedMemberRepository(
+            FakeMembersApi(sampleIndex, sponsored = mapOf("A000001" to fixture)),
+            FakeCrashReporter(),
+        )
+        val result = repo.getSponsored("A000001")
+        assertEquals(listOf("hr1-119"), result!!.bills.map { it.id })
+    }
+
+    @Test
+    fun `getCosponsored drops items with blank type or number`() = runTest {
+        val malformed = MemberLegislationItem(
+            id = "-119",
+            type = "",
+            number = "",
+            congress = 119,
+            title = "",
+            introducedDate = "",
+            latestAction = Action(date = "", text = ""),
+        )
+        val fixture = MemberLegislation(
+            bioguideId = "A000001",
+            congress = 119,
+            kind = "cosponsored",
+            generatedAt = "x",
+            bills = listOf(malformed, malformed),
+        )
+        val repo = CachedMemberRepository(
+            FakeMembersApi(sampleIndex, cosponsored = mapOf("A000001" to fixture)),
+            FakeCrashReporter(),
+        )
+        val result = repo.getCosponsored("A000001")
         assertTrue(result!!.bills.isEmpty())
     }
 
