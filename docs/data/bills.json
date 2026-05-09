@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-09T07:58:17Z",
+  "generated_at": "2026-05-09T13:39:50Z",
   "congress": 119,
   "bills": [
     {
@@ -363,6 +363,126 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/118"
     },
     {
+      "id": "sres518-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "518",
+      "title": "A resolution designating October 2025 as \"National Principals Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Smith, Tina",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2025-11-20",
+      "latest_action": {
+        "date": "2025-12-03",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S8487)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres518/BILLS-119sres518ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres518/BILLS-119sres518ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres518/BILLS-119sres518ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/518"
+    },
+    {
+      "id": "sres516-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "516",
+      "title": "A resolution ensuring that the adoption and foster care system in the United States is child-centered and compassionate and that young people aging out of foster care are provided with adequate support and resources to transition successfully to independent adulthood.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Husted, Jon",
+        "party": "R",
+        "state": "OH"
+      },
+      "introduced_date": "2025-11-20",
+      "latest_action": {
+        "date": "2025-12-03",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S8487)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres516/BILLS-119sres516ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres516/BILLS-119sres516ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres516/BILLS-119sres516ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/516"
+    },
+    {
+      "id": "sjres76-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "76",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"Extension of Deadlines in Standards of Performance for New, Reconstructed, and Modified Sources and Emissions Guidelines for Existing Sources: Oil and Natural Gas Sector Climate Review Final Rule\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Schiff, Adam B.",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2025-09-04",
+      "latest_action": {
+        "date": "2025-11-19",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 51. Record Vote Number: 622."
+      },
+      "outcome": "failed",
+      "summary_crs": "<p>This joint resolution nullifies the rule issued by Environmental Protection Agency titled&nbsp;<em>Extension of Deadlines in Standards of Performance for New, Reconstructed, and Modified Sources and Emissions Guidelines for Existing Sources: Oil and Natural Gas Sector Climate Review Final Rule&nbsp;</em>and published on July 31, 2025. The rule extended (1) certain deadlines for performance standards concerning control devices, equipment leaks, storage vessels, process controllers, and vent systems at crude oil and natural gas facilities; (2) the date for future implementation of the&nbsp;Methane Super&nbsp;Emitter Program; and (3) a state plan submittal deadline. Thus, the joint resolution restores the original deadlines that were applicable before the extensions made by the rule.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sjres76/BILLS-119sjres76pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres76/BILLS-119sjres76pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres76/BILLS-119sjres76pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/76"
+    },
+    {
+      "id": "sres399-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "399",
+      "title": "A resolution congratulating the people of North Macedonia on the 34th anniversary of their independence and celebrating the 30th anniversary of diplomatic relations between North Macedonia and the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Welch, Peter",
+        "party": "D",
+        "state": "VT"
+      },
+      "introduced_date": "2025-09-17",
+      "latest_action": {
+        "date": "2025-11-04",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S7905; text: CR 9/17/2025 S6698)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres399/BILLS-119sres399ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres399/BILLS-119sres399ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres399/BILLS-119sres399ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/399"
+    },
+    {
+      "id": "sres459-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "459",
+      "title": "A resolution honoring the strategic importance of the C5+1 diplomatic platform and recognizing the deepening partnership between the United States and the nations of Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan, and Uzbekistan.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daines, Steve",
+        "party": "R",
+        "state": "MT"
+      },
+      "introduced_date": "2025-10-21",
+      "latest_action": {
+        "date": "2025-11-04",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S7905; text: CR 10/21/2025 S7188)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres459/BILLS-119sres459ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres459/BILLS-119sres459ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres459/BILLS-119sres459ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/459"
+    },
+    {
       "id": "sres337-119",
       "congress": 119,
       "type": "sres",
@@ -385,6 +505,30 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sres337/BILLS-119sres337ats.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sres337/BILLS-119sres337ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/337"
+    },
+    {
+      "id": "sjres83-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "83",
+      "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities that have not been authorized by Congress.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Schiff, Adam B.",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2025-09-18",
+      "latest_action": {
+        "date": "2025-10-08",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 48 - 51. Record Vote Number: 555."
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres83/BILLS-119sjres83is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres83/BILLS-119sjres83is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres83/BILLS-119sjres83is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/83"
     },
     {
       "id": "sres225-119",
@@ -481,6 +625,30 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ35/PLAW-119publ35_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ35/PLAW-119publ35.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2170"
+    },
+    {
+      "id": "hr2808-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "2808",
+      "title": "Homebuyers Privacy Protection Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Rose, John W.",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2025-04-10",
+      "latest_action": {
+        "date": "2025-09-05",
+        "text": "Became Public Law No: 119-36."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Homebuyers Privacy Protection Act</strong></p><p>This bill limits the circumstances in which credit reporting agencies may provide consumer credit reports to third parties in connection with residential mortgage transactions.&nbsp;</p><p>Specifically, the bill prohibits a credit reporting agency from providing a consumer's credit report to a third party in connection with a residential mortgage transaction unless the transaction consists of a firm offer of credit or insurance and&nbsp;(1) the third party provides documentation certifying that it has the consumer's consent; or (2) the third party has originated a mortgage on behalf of the consumer, is a current mortgage loan&nbsp;servicer to the consumer, or has a current specified banking relationship with the consumer.</p><p>These provisions take effect 180 days after the bill's enactment.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ36/PLAW-119publ36.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ36/PLAW-119publ36_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ36/PLAW-119publ36.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2808"
     },
     {
       "id": "hres539-119",
@@ -771,6 +939,78 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/259"
     },
     {
+      "id": "hjres88-119",
+      "congress": 119,
+      "type": "hjres",
+      "number": "88",
+      "title": "Providing congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"California State Motor Vehicle and Engine Pollution Control Standards; Advanced Clean Cars II; Waiver of Preemption; Notice of Decision\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Joyce, John",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2025-04-02",
+      "latest_action": {
+        "date": "2025-06-12",
+        "text": "Became Public Law No: 119-16."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This joint resolution nullifies the Environmental Protection Agency notice titled <em>California State Motor Vehicle and Engine Pollution Control Standards; Advanced Clean Cars II; Waiver of Preemption; Notice of Decision</em> (90 Fed. Reg. 642) and published on January 6, 2025. Among other elements, the notice grants the California Air Resources Board request for a waiver for its Advanced Clean Cars II (ACC II) regulations. (Under the Clean Air Act, California may seek waivers of the preemption prohibiting states from enacting certain emission standards.)&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ16/PLAW-119publ16.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ16/PLAW-119publ16_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ16/PLAW-119publ16.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/88"
+    },
+    {
+      "id": "hjres89-119",
+      "congress": 119,
+      "type": "hjres",
+      "number": "89",
+      "title": "Providing congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"California State Motor Vehicle and Engine and Nonroad Engine Pollution Control Standards; The 'Omnibus' Low NOX Regulation; Waiver of Preemption; Notice of Decision\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Obernolte, Jay",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2025-04-02",
+      "latest_action": {
+        "date": "2025-06-12",
+        "text": "Became Public Law No: 119-17."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This joint resolution nullifies the Environmental Protection Agency notice titled <em>California State Motor Vehicle and Engine and Nonroad Engine Pollution Control Standards; The ‘Omnibus’ Low NOX Regulation; Waiver of Preemption; Notice of Decision</em> (90 Fed. Reg. 643) and published on January 6, 2025. Among other elements, the notice grants the California Air Resources Board request for a waiver for its Heavy-Duty Vehicle and Engine Omnibus Low NOX regulations. (Under the Clean Air Act, California may seek waivers of the preemption prohibiting states from enacting certain emission standards.)&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ17/PLAW-119publ17.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ17/PLAW-119publ17_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ17/PLAW-119publ17.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/89"
+    },
+    {
+      "id": "hjres87-119",
+      "congress": 119,
+      "type": "hjres",
+      "number": "87",
+      "title": "Providing congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"California State Motor Vehicle and Engine Pollution Control Standards; Heavy-Duty Vehicle and Engine Emission Warranty and Maintenance Provisions; Advanced Clean Trucks; Zero Emission Airport Shuttle; Zero-Emission Power Train Certification; Waiver of Preemption; Notice of Decision\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. James, John",
+        "party": "R",
+        "state": "MI"
+      },
+      "introduced_date": "2025-04-02",
+      "latest_action": {
+        "date": "2025-06-12",
+        "text": "Became Public Law No: 119-15."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This joint resolution nullifies the Environmental Protection Agency notice titled <em>California State Motor Vehicle and Engine Pollution Control Standards; Heavy-Duty Vehicle and Engine Emission Warranty and Maintenance Provisions; Advanced Clean Trucks; Zero Emission Airport Shuttle; Zero-Emission Power Train Certification; Waiver of Preemption; Notice of Decision</em> (88 Fed. Reg. 20688) and published on April 6, 2023. Among other elements, the notice grants the California Air Resources Board request for a waiver several of its regulations, including the Heavy-Duty Vehicle and Engine Emission Warranty Regulations and Maintenance Provisions. (Under the Clean Air Act, California may seek waivers of the preemption prohibiting states from enacting certain emission standards.)&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ15/PLAW-119publ15.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ15/PLAW-119publ15_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ15/PLAW-119publ15.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/87"
+    },
+    {
       "id": "sjres53-119",
       "congress": 119,
       "type": "sjres",
@@ -843,6 +1083,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-resolution/492"
     },
     {
+      "id": "hjres61-119",
+      "congress": 119,
+      "type": "hjres",
+      "number": "61",
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"National Emission Standards for Hazardous Air Pollutants: Rubber Tire Manufacturing\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Griffith, H. Morgan",
+        "party": "R",
+        "state": "VA"
+      },
+      "introduced_date": "2025-02-25",
+      "latest_action": {
+        "date": "2025-05-23",
+        "text": "Became Public Law No: 119-14."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This joint resolution nullifies the Environmental Protection Agency rule titled <em>National Emission Standards for Hazardous Air Pollutants: Rubber Tire Manufacturing </em>(89 Fed. Reg. 94886) and published on November 29, 2024. The rule addresses the decision in <em>Louisiana Environmental Action Network v. EPA</em> (D.C. Cir. 2020) by implementing emissions standards for the rubber processing subcategory of the rubber tire manufacturing industry to ensure all emissions of hazardous air pollutants from sources in the source category are regulated.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ14/PLAW-119publ14.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ14/PLAW-119publ14_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ14/PLAW-119publ14.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/61"
+    },
+    {
       "id": "sres143-119",
       "congress": 119,
       "type": "sres",
@@ -891,6 +1155,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/146"
     },
     {
+      "id": "sres195-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "195",
+      "title": "A resolution requesting information on El Salvador's human rights practices pursuant to section 502B(c) of the Foreign Assistance Act of 1961.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kaine, Tim",
+        "party": "D",
+        "state": "VA"
+      },
+      "introduced_date": "2025-05-01",
+      "latest_action": {
+        "date": "2025-05-15",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 45 - 50. Record Vote Number: 259. (consideration: CR S2941-2947)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres195/BILLS-119sres195is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres195/BILLS-119sres195is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres195/BILLS-119sres195is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/195"
+    },
+    {
       "id": "hjres75-119",
       "congress": 119,
       "type": "hjres",
@@ -937,6 +1225,54 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ7/PLAW-119publ7_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ7/PLAW-119publ7.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/24"
+    },
+    {
+      "id": "hjres20-119",
+      "congress": 119,
+      "type": "hjres",
+      "number": "20",
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Energy relating to \"Energy Conservation Program: Energy Conservation Standards for Consumer Gas-fired Instantaneous Water Heaters\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Palmer, Gary J.",
+        "party": "R",
+        "state": "AL"
+      },
+      "introduced_date": "2025-01-15",
+      "latest_action": {
+        "date": "2025-05-09",
+        "text": "Became Public Law No: 119-6."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This act nullifies the rule titled <em>Energy Conservation Program: Energy Conservation Standards for Consumer Gas-fired Instantaneous Water Heaters </em>and submitted by the Department of Energy (DOE) on December 26, 2024. Under the rule, DOE adopted amended energy conservation standards for gas-fired instantaneous water heaters to achieve the maximum improvement in energy efficiency that DOE determined was technologically feasible and economically justified.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ6/PLAW-119publ6.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ6/PLAW-119publ6_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ6/PLAW-119publ6.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/20"
+    },
+    {
+      "id": "sjres28-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "28",
+      "title": "A joint resolution disapproving the rule submitted by the Bureau of Consumer Financial Protection relating to \"Defining Larger Participants of a Market for General-Use Digital Consumer Payment Applications\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Ricketts, Pete",
+        "party": "R",
+        "state": "NE"
+      },
+      "introduced_date": "2025-02-27",
+      "latest_action": {
+        "date": "2025-05-09",
+        "text": "Became Public Law No: 119-11."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This joint resolution nullifies the final rule issued by the Consumer Financial Protection Bureau (CFPB) titled <em>Defining Larger Participants of a Market for General-Use Digital Consumer Payment Applications</em> and published on December 10, 2024. The rule defines larger participants in the general-use digital consumer payment application market (i.e., payment apps) that are subject to&nbsp;CFPB supervisory authority. The rule defines larger participants in this market as nonbanks (1) with an annual volume of at least 50 million transactions, and (2) that are not small business concerns.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ11/PLAW-119publ11.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ11/PLAW-119publ11_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ11/PLAW-119publ11.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/28"
     },
     {
       "id": "hres293-119",
