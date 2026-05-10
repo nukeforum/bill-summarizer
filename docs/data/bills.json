@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T08:08:11Z",
+  "generated_at": "2026-05-10T13:42:39Z",
   "congress": 119,
   "bills": [
     {
@@ -363,6 +363,54 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/118"
     },
     {
+      "id": "sres532-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "532",
+      "title": "An executive resolution authorizing the en bloc consideration in Executive Session of certain nominations on the Executive Calendar.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Thune, John",
+        "party": "R",
+        "state": "SD"
+      },
+      "introduced_date": "2025-12-04",
+      "latest_action": {
+        "date": "2025-12-11",
+        "text": "Resolution agreed to in Senate without amendment by Yea-Nay Vote. 52 - 47. Record Vote Number: 645."
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres532/BILLS-119sres532ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres532/BILLS-119sres532ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres532/BILLS-119sres532ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/532"
+    },
+    {
+      "id": "sres483-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "483",
+      "title": "A resolution honoring the extraordinary life, leadership, and legacy of Dr. Jane Goodall.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Welch, Peter",
+        "party": "D",
+        "state": "VT"
+      },
+      "introduced_date": "2025-11-05",
+      "latest_action": {
+        "date": "2025-12-09",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S8580-8581; text: CR 11/5/2025 S7927-7928)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres483/BILLS-119sres483ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres483/BILLS-119sres483ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres483/BILLS-119sres483ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/483"
+    },
+    {
       "id": "sres518-119",
       "congress": 119,
       "type": "sres",
@@ -529,6 +577,54 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres83/BILLS-119sjres83is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres83/BILLS-119sjres83is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/83"
+    },
+    {
+      "id": "sres406-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "406",
+      "title": "A resolution designating September 30, 2025, as \"Impact Aid Recognition Day\" to recognize and celebrate the 75th anniversary of the establishment of the Impact Aid program.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hirono, Mazie K.",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2025-09-18",
+      "latest_action": {
+        "date": "2025-10-06",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S6959; text: CR 9/18/2025 S6737)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres406/BILLS-119sres406ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres406/BILLS-119sres406ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres406/BILLS-119sres406ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/406"
+    },
+    {
+      "id": "sres396-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "396",
+      "title": "A resolution condemning the tragic act of violence on September 10, 2025, in Evergreen, Colorado, recognizing the victims, survivors, and responders, and expressing condolences and support to their families and their communities.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Bennet, Michael F.",
+        "party": "D",
+        "state": "CO"
+      },
+      "introduced_date": "2025-09-16",
+      "latest_action": {
+        "date": "2025-09-30",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres396/BILLS-119sres396ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres396/BILLS-119sres396ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres396/BILLS-119sres396ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/396"
     },
     {
       "id": "sres225-119",
@@ -891,6 +987,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/13"
     },
     {
+      "id": "sjres31-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "31",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"Review of Final Rule Reclassification of Major Sources as Area Sources Under Section 112 of the Clean Air Act\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Curtis, John R.",
+        "party": "R",
+        "state": "UT"
+      },
+      "introduced_date": "2025-03-06",
+      "latest_action": {
+        "date": "2025-06-20",
+        "text": "Became Public Law No: 119-20."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This joint resolution nullifies the Environmental Protection Agency rule titled <em>Review of Final Rule Reclassification of Major Sources as Area Sources Under Section 112 of the Clean Air Act</em> (89 Fed. Reg. 73293) and published on September 10, 2024. Among other elements, the rule requires sources of persistent and bioaccumulative hazardous air pollutants to continue to comply with certain major source emission standards under the Clean Air Act even if the sources reclassify as area sources.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ20/PLAW-119publ20.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ20/PLAW-119publ20_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ20/PLAW-119publ20.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/31"
+    },
+    {
       "id": "sres275-119",
       "congress": 119,
       "type": "sres",
@@ -937,6 +1057,30 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sres259/BILLS-119sres259ats.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sres259/BILLS-119sres259ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/259"
+    },
+    {
+      "id": "sres247-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "247",
+      "title": "A resolution designating May 2025 as \"National Wildfire Preparedness Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hirono, Mazie K.",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2025-05-22",
+      "latest_action": {
+        "date": "2025-06-16",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres247/BILLS-119sres247ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres247/BILLS-119sres247ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres247/BILLS-119sres247ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/247"
     },
     {
       "id": "hjres88-119",
@@ -1321,6 +1465,30 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres33/BILLS-119sjres33is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres33/BILLS-119sjres33is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/33"
+    },
+    {
+      "id": "sjres26-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "26",
+      "title": "A joint resolution providing for congressional disapproval of the proposed foreign military sale to Israel of certain defense articles and services.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Sanders, Bernard",
+        "party": "I",
+        "state": "VT"
+      },
+      "introduced_date": "2025-02-25",
+      "latest_action": {
+        "date": "2025-04-03",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 15 - 83. Record Vote Number: 166. (consideration: CR S2152-2158)"
+      },
+      "outcome": "failed",
+      "summary_crs": "<p>This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Israel.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sjres26/BILLS-119sjres26is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres26/BILLS-119sjres26is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres26/BILLS-119sjres26is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/26"
     },
     {
       "id": "hjres35-119",
