@@ -1,0 +1,3297 @@
+{
+  "bioguide_id": "L000562",
+  "congress": 119,
+  "kind": "sponsored",
+  "generated_at": "2026-05-10T06:28:50Z",
+  "bills": [
+    {
+      "id": "hr8666-119",
+      "type": "hr",
+      "number": "8666",
+      "congress": 119,
+      "title": "To provide that Executive Order 14399 shall have no force or effect, and for other purposes.",
+      "introduced_date": "2026-05-07",
+      "latest_action": {
+        "date": "2026-05-07",
+        "text": "Referred to the Committee on the Judiciary, and in addition to the Committees on Oversight and Government Reform, Ways and Means, and House Administration, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr8053-119",
+      "type": "hr",
+      "number": "8053",
+      "congress": 119,
+      "title": "DPA Emerging Technology Act of 2026",
+      "introduced_date": "2026-03-24",
+      "latest_action": {
+        "date": "2026-03-24",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "hr7183-119",
+      "type": "hr",
+      "number": "7183",
+      "congress": 119,
+      "title": "Youth Financial Learning Act",
+      "introduced_date": "2026-01-21",
+      "latest_action": {
+        "date": "2026-01-21",
+        "text": "Referred to the House Committee on Education and Workforce."
+      },
+      "policy_area": "Education"
+    },
+    {
+      "id": "hres973-119",
+      "type": "hres",
+      "number": "973",
+      "congress": 119,
+      "title": "Expressing the sense of the House of Representatives that the designation of the \"Donald J. Trump and the John F. Kennedy Memorial Center for the Performing Arts\" constitutes a violation of Federal law, and for other purposes.",
+      "introduced_date": "2025-12-30",
+      "latest_action": {
+        "date": "2026-02-02",
+        "text": "Referred to the Subcommittee on Economic Development, Public Buildings, and Emergency Management."
+      },
+      "policy_area": "Arts, Culture, Religion"
+    },
+    {
+      "id": "hr6556-119",
+      "type": "hr",
+      "number": "6556",
+      "congress": 119,
+      "title": "Failing Bank Acquisition Fairness Act",
+      "introduced_date": "2025-12-10",
+      "latest_action": {
+        "date": "2026-02-02",
+        "text": "Placed on the Union Calendar, Calendar No. 406."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr6269-119",
+      "type": "hr",
+      "number": "6269",
+      "congress": 119,
+      "title": "Modular Housing Production Act",
+      "introduced_date": "2025-11-21",
+      "latest_action": {
+        "date": "2025-11-21",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr5915-119",
+      "type": "hr",
+      "number": "5915",
+      "congress": 119,
+      "title": "K2 Veterans Total Coverage Act of 2025",
+      "introduced_date": "2025-11-04",
+      "latest_action": {
+        "date": "2025-11-04",
+        "text": "Referred to the House Committee on Veterans' Affairs."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr5683-119",
+      "type": "hr",
+      "number": "5683",
+      "congress": 119,
+      "title": "Military Consumer Protection Task Force Act of 2025",
+      "introduced_date": "2025-10-03",
+      "latest_action": {
+        "date": "2025-10-03",
+        "text": "Referred to the Committee on Armed Services, and in addition to the Committee on Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr5344-119",
+      "type": "hr",
+      "number": "5344",
+      "congress": 119,
+      "title": "Kleptocracy Asset Recovery Rewards Program Act",
+      "introduced_date": "2025-09-15",
+      "latest_action": {
+        "date": "2025-11-04",
+        "text": "Placed on the Union Calendar, Calendar No. 322."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hres316-119",
+      "type": "hres",
+      "number": "316",
+      "congress": 119,
+      "title": "Of inquiry requesting the President to transmit certain documents relating to the use of insecure electronic communication platforms, including Signal, for official communications and to the compliance of the Administration with all Federal records laws.",
+      "introduced_date": "2025-04-09",
+      "latest_action": {
+        "date": "2025-04-30",
+        "text": "Committee Consideration and Mark-up Session Held"
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr1484-119",
+      "type": "hr",
+      "number": "1484",
+      "congress": 119,
+      "title": "Air Traffic Noise and Pollution Expert Consensus Act of 2025",
+      "introduced_date": "2025-02-21",
+      "latest_action": {
+        "date": "2025-02-21",
+        "text": "Referred to the Subcommittee on Aviation."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr1259-119",
+      "type": "hr",
+      "number": "1259",
+      "congress": 119,
+      "title": "The Global Demining Protection Act",
+      "introduced_date": "2025-02-12",
+      "latest_action": {
+        "date": "2025-02-12",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hres70-119",
+      "type": "hres",
+      "number": "70",
+      "congress": 119,
+      "title": "Expressing the sense of the House of Representatives that Congress should take all appropriate measures to ensure that the United States Postal Service remains an independent establishment of the Federal Government and is not subject to privatization.",
+      "introduced_date": "2025-01-28",
+      "latest_action": {
+        "date": "2025-01-28",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr6786-118",
+      "type": "hr",
+      "number": "6786",
+      "congress": 118,
+      "title": "Reengage the Workforce Act",
+      "introduced_date": "2023-12-14",
+      "latest_action": {
+        "date": "2023-12-14",
+        "text": "Referred to the House Committee on Education and the Workforce."
+      },
+      "policy_area": "Education"
+    },
+    {
+      "id": "hr6677-118",
+      "type": "hr",
+      "number": "6677",
+      "congress": 118,
+      "title": "Seawall Expansion Act",
+      "introduced_date": "2023-12-07",
+      "latest_action": {
+        "date": "2023-12-11",
+        "text": "Referred to the Subcommittee on Water Resources and Environment."
+      },
+      "policy_area": "Water Resources Development"
+    },
+    {
+      "id": "hr5410-118",
+      "type": "hr",
+      "number": "5410",
+      "congress": 118,
+      "title": "ECASH Act",
+      "introduced_date": "2023-09-12",
+      "latest_action": {
+        "date": "2023-09-12",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr4765-118",
+      "type": "hr",
+      "number": "4765",
+      "congress": 118,
+      "title": "Exposing China’s Support for the Taliban Act",
+      "introduced_date": "2023-07-20",
+      "latest_action": {
+        "date": "2023-12-19",
+        "text": "Placed on the Union Calendar, Calendar No. 267."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr3914-118",
+      "type": "hr",
+      "number": "3914",
+      "congress": 118,
+      "title": "Failing Bank Acquisition Fairness Act",
+      "introduced_date": "2023-06-07",
+      "latest_action": {
+        "date": "2023-06-07",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hres439-118",
+      "type": "hres",
+      "number": "439",
+      "congress": 118,
+      "title": "Expressing the sense of the House of Representatives that Congress should take all appropriate measures to ensure that the United States Postal Service remains an independent establishment of the Federal Government and is not subject to privatization.",
+      "introduced_date": "2023-05-23",
+      "latest_action": {
+        "date": "2023-05-23",
+        "text": "Referred to the House Committee on Oversight and Accountability."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr2564-118",
+      "type": "hr",
+      "number": "2564",
+      "congress": 118,
+      "title": "Noise Data Collection Act",
+      "introduced_date": "2023-04-10",
+      "latest_action": {
+        "date": "2023-04-11",
+        "text": "Referred to the Subcommittee on Aviation."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr2565-118",
+      "type": "hr",
+      "number": "2565",
+      "congress": 118,
+      "title": "To direct the Administrator of the Federal Aviation Administration to establish an advisory committee for communities impacted by aviation, and for other purposes.",
+      "introduced_date": "2023-04-10",
+      "latest_action": {
+        "date": "2023-04-11",
+        "text": "Referred to the Subcommittee on Aviation."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr2562-118",
+      "type": "hr",
+      "number": "2562",
+      "congress": 118,
+      "title": "Air Traffic Noise and Pollution Expert Consensus Act of 2023",
+      "introduced_date": "2023-04-10",
+      "latest_action": {
+        "date": "2023-04-11",
+        "text": "Referred to the Subcommittee on Aviation."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr2561-118",
+      "type": "hr",
+      "number": "2561",
+      "congress": 118,
+      "title": "Peer-Reviewed Report on Measuring Metrics and Thresholds",
+      "introduced_date": "2023-04-10",
+      "latest_action": {
+        "date": "2023-04-11",
+        "text": "Referred to the Subcommittee on Aviation."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr2563-118",
+      "type": "hr",
+      "number": "2563",
+      "congress": 118,
+      "title": "Aircraft Ownership Transparency Act of 2023",
+      "introduced_date": "2023-04-10",
+      "latest_action": {
+        "date": "2023-04-11",
+        "text": "Referred to the Subcommittee on Aviation."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr1186-118",
+      "type": "hr",
+      "number": "1186",
+      "congress": 118,
+      "title": "Embassy Construction Accountability Act of 2023",
+      "introduced_date": "2023-02-24",
+      "latest_action": {
+        "date": "2023-02-24",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr1187-118",
+      "type": "hr",
+      "number": "1187",
+      "congress": 118,
+      "title": "Civil Aviation Security and Safety Act of 2023",
+      "introduced_date": "2023-02-24",
+      "latest_action": {
+        "date": "2023-02-27",
+        "text": "Referred to the Subcommittee on Aviation."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr1164-118",
+      "type": "hr",
+      "number": "1164",
+      "congress": 118,
+      "title": "OFAC Outreach and Engagement Capabilities Enhancement Act",
+      "introduced_date": "2023-02-24",
+      "latest_action": {
+        "date": "2023-02-24",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr1188-118",
+      "type": "hr",
+      "number": "1188",
+      "congress": 118,
+      "title": "Military Consumer Protection Task Force Act of 2023",
+      "introduced_date": "2023-02-24",
+      "latest_action": {
+        "date": "2023-03-20",
+        "text": "Referred to the Subcommittee on Economic Opportunity."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "-118",
+      "type": "",
+      "number": "",
+      "congress": 118,
+      "title": "",
+      "introduced_date": "2024-03-08",
+      "latest_action": {
+        "date": "2024-03-08",
+        "text": "On agreeing to the Lynch amendment (A008) Failed by recorded vote: 208 - 211 (Roll no. 75)."
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr9665-117",
+      "type": "hr",
+      "number": "9665",
+      "congress": 117,
+      "title": "To amend the Water Infrastructure Finance and Innovation Act of 2014 to establish payment and performance security requirements for projects, and for other purposes.",
+      "introduced_date": "2022-12-21",
+      "latest_action": {
+        "date": "2022-12-22",
+        "text": "Referred to the Subcommittee on Water Resources and Environment."
+      },
+      "policy_area": "Water Resources Development"
+    },
+    {
+      "id": "hr9428-117",
+      "type": "hr",
+      "number": "9428",
+      "congress": 117,
+      "title": "Graduate on Your Own Schedule Act",
+      "introduced_date": "2022-12-05",
+      "latest_action": {
+        "date": "2022-12-05",
+        "text": "Referred to the House Committee on Education and Labor."
+      },
+      "policy_area": "Education"
+    },
+    {
+      "id": "hr8779-117",
+      "type": "hr",
+      "number": "8779",
+      "congress": 117,
+      "title": "Embassy Construction Accountability Act of 2022",
+      "introduced_date": "2022-09-09",
+      "latest_action": {
+        "date": "2022-09-09",
+        "text": "Referred to the House Committee on Foreign Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr8321-117",
+      "type": "hr",
+      "number": "8321",
+      "congress": 117,
+      "title": "Military Consumer Protection Task Force Act of 2022",
+      "introduced_date": "2022-07-11",
+      "latest_action": {
+        "date": "2022-07-11",
+        "text": "Referred to the Committee on Armed Services, and in addition to the Committee on Veterans' Affairs, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr7732-117",
+      "type": "hr",
+      "number": "7732",
+      "congress": 117,
+      "title": "Strengthening the Office of the Investor Advocate Act",
+      "introduced_date": "2022-05-12",
+      "latest_action": {
+        "date": "2022-05-17",
+        "text": "Ordered to be Reported in the Nature of a Substitute by the Yeas and Nays: 25 - 22."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr7384-117",
+      "type": "hr",
+      "number": "7384",
+      "congress": 117,
+      "title": "ECO Campus Act",
+      "introduced_date": "2022-04-04",
+      "latest_action": {
+        "date": "2022-04-04",
+        "text": "Referred to the House Committee on Education and Labor."
+      },
+      "policy_area": "Education"
+    },
+    {
+      "id": "hr7231-117",
+      "type": "hr",
+      "number": "7231",
+      "congress": 117,
+      "title": "ECASH Act",
+      "introduced_date": "2022-03-28",
+      "latest_action": {
+        "date": "2022-03-28",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr6524-117",
+      "type": "hr",
+      "number": "6524",
+      "congress": 117,
+      "title": "To require the Secretary of the Treasury to carry out a study on Chinese support for Afghan illicit finance, and for other purposes.",
+      "introduced_date": "2022-01-28",
+      "latest_action": {
+        "date": "2022-01-28",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr6343-117",
+      "type": "hr",
+      "number": "6343",
+      "congress": 117,
+      "title": "Illicit Finance Improvements Act",
+      "introduced_date": "2021-12-23",
+      "latest_action": {
+        "date": "2021-12-23",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr5457-117",
+      "type": "hr",
+      "number": "5457",
+      "congress": 117,
+      "title": "Afghan Threat Finance Cell Establishment Act of 2021",
+      "introduced_date": "2021-09-30",
+      "latest_action": {
+        "date": "2021-09-30",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr4465-117",
+      "type": "hr",
+      "number": "4465",
+      "congress": 117,
+      "title": "Federally Funded Research and Technology Development Protection Act",
+      "introduced_date": "2021-07-16",
+      "latest_action": {
+        "date": "2021-07-20",
+        "text": "Committee Consideration and Mark-up Session Held."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr4466-117",
+      "type": "hr",
+      "number": "4466",
+      "congress": 117,
+      "title": "National Strategy for the Global Information Domain Act",
+      "introduced_date": "2021-07-16",
+      "latest_action": {
+        "date": "2021-07-19",
+        "text": "Referred to the Subcommittee on Water Resources and Environment."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr4112-117",
+      "type": "hr",
+      "number": "4112",
+      "congress": 117,
+      "title": "Clarity in Credit Score Formation Act of 2021",
+      "introduced_date": "2021-06-24",
+      "latest_action": {
+        "date": "2021-06-24",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr3912-117",
+      "type": "hr",
+      "number": "3912",
+      "congress": 117,
+      "title": "Financial Data Sharing Choice Act",
+      "introduced_date": "2021-06-15",
+      "latest_action": {
+        "date": "2021-06-15",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr3911-117",
+      "type": "hr",
+      "number": "3911",
+      "congress": 117,
+      "title": "To amend the Gramm-Leach-Bliley Act to establish procedures for disclosures by financial institutions of nonpublic personal information, and for other purposes.",
+      "introduced_date": "2021-06-15",
+      "latest_action": {
+        "date": "2021-06-15",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr3910-117",
+      "type": "hr",
+      "number": "3910",
+      "congress": 117,
+      "title": "Safeguarding Non-bank Consumer Information Act",
+      "introduced_date": "2021-06-15",
+      "latest_action": {
+        "date": "2021-06-15",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr3521-117",
+      "type": "hr",
+      "number": "3521",
+      "congress": 117,
+      "title": "Postal Service Electric Fleet Authorization Act of 2021",
+      "introduced_date": "2021-05-25",
+      "latest_action": {
+        "date": "2021-05-25",
+        "text": "Referred to the House Committee on Oversight and Reform."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hres407-117",
+      "type": "hres",
+      "number": "407",
+      "congress": 117,
+      "title": "Expressing support for the designation of September 2021 as \"National Brain Aneurysm Awareness Month\".",
+      "introduced_date": "2021-05-17",
+      "latest_action": {
+        "date": "2021-05-18",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr3156-117",
+      "type": "hr",
+      "number": "3156",
+      "congress": 117,
+      "title": "Wartime Contracting Commission Reauthorization Act of 2021",
+      "introduced_date": "2021-05-12",
+      "latest_action": {
+        "date": "2021-05-12",
+        "text": "Referred to the Committee on Foreign Affairs, and in addition to the Committee on Armed Services, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr1641-117",
+      "type": "hr",
+      "number": "1641",
+      "congress": 117,
+      "title": "Promoting Infrastructure by Protecting Our Subcontractors and Taxpayers Act",
+      "introduced_date": "2021-03-08",
+      "latest_action": {
+        "date": "2021-03-09",
+        "text": "Referred to the Subcommittee on Highways and Transit."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr1463-117",
+      "type": "hr",
+      "number": "1463",
+      "congress": 117,
+      "title": "Ensuring Health Safety in the Skies Act of 2021",
+      "introduced_date": "2021-03-01",
+      "latest_action": {
+        "date": "2021-03-02",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr1461-117",
+      "type": "hr",
+      "number": "1461",
+      "congress": 117,
+      "title": "White House Ethics Transparency Act of 2021",
+      "introduced_date": "2021-03-01",
+      "latest_action": {
+        "date": "2021-03-01",
+        "text": "Referred to the House Committee on Oversight and Reform."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr1462-117",
+      "type": "hr",
+      "number": "1462",
+      "congress": 117,
+      "title": "Civil Aviation Security and Safety Act of 2021",
+      "introduced_date": "2021-03-01",
+      "latest_action": {
+        "date": "2021-03-02",
+        "text": "Referred to the Subcommittee on Aviation."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr1355-117",
+      "type": "hr",
+      "number": "1355",
+      "congress": 117,
+      "title": "K2 Veterans Care Act of 2021",
+      "introduced_date": "2021-02-25",
+      "latest_action": {
+        "date": "2021-02-25",
+        "text": "Referred to the House Committee on Veterans' Affairs."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr1151-117",
+      "type": "hr",
+      "number": "1151",
+      "congress": 117,
+      "title": "CPR Fund Act",
+      "introduced_date": "2021-02-18",
+      "latest_action": {
+        "date": "2021-02-18",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr1152-117",
+      "type": "hr",
+      "number": "1152",
+      "congress": 117,
+      "title": "Green Buses for Every Community Act",
+      "introduced_date": "2021-02-18",
+      "latest_action": {
+        "date": "2021-02-19",
+        "text": "Referred to the Subcommittee on Highways and Transit."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hres108-117",
+      "type": "hres",
+      "number": "108",
+      "congress": 117,
+      "title": "Expressing the sense of the House of Representatives that the dedicated employees of the United States Postal Service are frontline essential workers and must be prioritized accordingly for the purposes of the COVID-19 vaccination program and State vaccine distribution plans.",
+      "introduced_date": "2021-02-05",
+      "latest_action": {
+        "date": "2021-02-08",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr712-117",
+      "type": "hr",
+      "number": "712",
+      "congress": 117,
+      "title": "Air Traffic Noise and Pollution Expert Consensus Act of 2021",
+      "introduced_date": "2021-02-02",
+      "latest_action": {
+        "date": "2021-02-04",
+        "text": "Referred to the Subcommittee on Aviation."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr309-117",
+      "type": "hr",
+      "number": "309",
+      "congress": 117,
+      "title": "Pipeline and Compressor Safety Verification Act of 2021",
+      "introduced_date": "2021-01-13",
+      "latest_action": {
+        "date": "2021-01-14",
+        "text": "Referred to the Subcommittee on Energy."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hres47-117",
+      "type": "hres",
+      "number": "47",
+      "congress": 117,
+      "title": "Expressing the sense of the House of Representatives that Congress should take all appropriate measures to ensure that the United States Postal Service remains an independent establishment of the Federal Government and is not subject to privatization.",
+      "introduced_date": "2021-01-13",
+      "latest_action": {
+        "date": "2021-01-13",
+        "text": "Referred to the House Committee on Oversight and Reform."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr310-117",
+      "type": "hr",
+      "number": "310",
+      "congress": 117,
+      "title": "To posthumously award the Congressional Gold Medal, collectively, to Glen Doherty, Tyrone Woods, J. Christopher Stevens, and Sean Smith, in recognition of their contributions to the Nation.",
+      "introduced_date": "2021-01-13",
+      "latest_action": {
+        "date": "2022-12-21",
+        "text": "Became Public Law No: 117-256."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr8989-116",
+      "type": "hr",
+      "number": "8989",
+      "congress": 116,
+      "title": "To require the Securities and Exchange Commission to conduct a study on the feasibility, benefits, and costs of using a distributed ledger system in the post-trade clearing and settlement process, and for other purposes.",
+      "introduced_date": "2020-12-16",
+      "latest_action": {
+        "date": "2020-12-16",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr8857-116",
+      "type": "hr",
+      "number": "8857",
+      "congress": 116,
+      "title": "CPR Fund Act",
+      "introduced_date": "2020-12-03",
+      "latest_action": {
+        "date": "2020-12-03",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr7462-116",
+      "type": "hr",
+      "number": "7462",
+      "congress": 116,
+      "title": "Pedestrian and Bicyclist Safety Improvement Act of 2020",
+      "introduced_date": "2020-07-01",
+      "latest_action": {
+        "date": "2020-07-02",
+        "text": "Referred to the Subcommittee on Highways and Transit."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr7365-116",
+      "type": "hr",
+      "number": "7365",
+      "congress": 116,
+      "title": "Green Buses for Every Community Act",
+      "introduced_date": "2020-06-25",
+      "latest_action": {
+        "date": "2020-06-26",
+        "text": "Referred to the Subcommittee on Highways and Transit."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr7219-116",
+      "type": "hr",
+      "number": "7219",
+      "congress": 116,
+      "title": "Digital Overseas Voting Act",
+      "introduced_date": "2020-06-15",
+      "latest_action": {
+        "date": "2020-06-15",
+        "text": "Referred to the House Committee on House Administration."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr7177-116",
+      "type": "hr",
+      "number": "7177",
+      "congress": 116,
+      "title": "Ensuring Health Safety in the Skies Act of 2020",
+      "introduced_date": "2020-06-11",
+      "latest_action": {
+        "date": "2020-08-01",
+        "text": "Referred to the Subcommittee on Transportation and Maritime Security."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr6908-116",
+      "type": "hr",
+      "number": "6908",
+      "congress": 116,
+      "title": "Afghanistan Security and Reconstruction Transparency Act",
+      "introduced_date": "2020-05-15",
+      "latest_action": {
+        "date": "2020-05-15",
+        "text": "Referred to the Committee on Foreign Affairs, and in addition to the Committee on Armed Services, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr6607-116",
+      "type": "hr",
+      "number": "6607",
+      "congress": 116,
+      "title": "Strategic National Stockpile Enhancement and Transparency Act",
+      "introduced_date": "2020-04-23",
+      "latest_action": {
+        "date": "2020-04-23",
+        "text": "Referred to the House Committee on Energy and Commerce."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr6358-116",
+      "type": "hr",
+      "number": "6358",
+      "congress": 116,
+      "title": "To authorize supplemental appropriations for fiscal year 2020 for community development block grants, and for other purposes.",
+      "introduced_date": "2020-03-23",
+      "latest_action": {
+        "date": "2020-03-23",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr6359-116",
+      "type": "hr",
+      "number": "6359",
+      "congress": 116,
+      "title": "Promoting Infrastructure by Protecting Our Subcontractors and Taxpayers Act",
+      "introduced_date": "2020-03-23",
+      "latest_action": {
+        "date": "2020-03-24",
+        "text": "Referred to the Subcommittee on Highways and Transit."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr6088-116",
+      "type": "hr",
+      "number": "6088",
+      "congress": 116,
+      "title": "Deepfakes in Federal Elections Prohibition Act",
+      "introduced_date": "2020-03-04",
+      "latest_action": {
+        "date": "2020-03-04",
+        "text": "Referred to the House Committee on House Administration."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr4879-116",
+      "type": "hr",
+      "number": "4879",
+      "congress": 116,
+      "title": "Defense POW/MIA Accounting Agency Support Act",
+      "introduced_date": "2019-10-28",
+      "latest_action": {
+        "date": "2019-10-28",
+        "text": "Referred to the House Committee on Armed Services."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "-116",
+      "type": "",
+      "number": "",
+      "congress": 116,
+      "title": "",
+      "introduced_date": "2019-10-23",
+      "latest_action": {
+        "date": "2019-10-23",
+        "text": "On agreeing to the Lynch amendment (A003) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr3629-116",
+      "type": "hr",
+      "number": "3629",
+      "congress": 116,
+      "title": "Clarity in Credit Score Formation Act of 2019",
+      "introduced_date": "2019-07-09",
+      "latest_action": {
+        "date": "2019-11-21",
+        "text": "Placed on the Union Calendar, Calendar No. 248."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr3576-116",
+      "type": "hr",
+      "number": "3576",
+      "congress": 116,
+      "title": "Wartime Contracting Commission Reauthorization Act of 2019",
+      "introduced_date": "2019-06-27",
+      "latest_action": {
+        "date": "2019-06-27",
+        "text": "Referred to the Committee on Foreign Affairs, and in addition to the Committee on Armed Services, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "-116",
+      "type": "",
+      "number": "",
+      "congress": 116,
+      "title": "",
+      "introduced_date": "2019-05-16",
+      "latest_action": {
+        "date": "2019-05-16",
+        "text": "On agreeing to the Lynch amendment (A015) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-116",
+      "type": "",
+      "number": "",
+      "congress": 116,
+      "title": "",
+      "introduced_date": "2019-05-16",
+      "latest_action": {
+        "date": "2019-05-16",
+        "text": "On agreeing to the Lynch amendment (A014) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr2553-116",
+      "type": "hr",
+      "number": "2553",
+      "congress": 116,
+      "title": "Postal Service Financial Improvement Act of 2019",
+      "introduced_date": "2019-05-07",
+      "latest_action": {
+        "date": "2019-05-07",
+        "text": "Referred to the House Committee on Oversight and Reform."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr2152-116",
+      "type": "hr",
+      "number": "2152",
+      "congress": 116,
+      "title": "Pipeline and Compressor Safety Verification Act of 2019",
+      "introduced_date": "2019-04-09",
+      "latest_action": {
+        "date": "2019-04-10",
+        "text": "Referred to the Subcommittee on Energy."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hres251-116",
+      "type": "hres",
+      "number": "251",
+      "congress": 116,
+      "title": "Expressing support for designation of September as \"National Brain Aneurysm Awareness Month\".",
+      "introduced_date": "2019-03-21",
+      "latest_action": {
+        "date": "2019-03-22",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "-113",
+      "type": "",
+      "number": "",
+      "congress": 113,
+      "title": "",
+      "introduced_date": "2014-07-14",
+      "latest_action": {
+        "date": "2014-07-14",
+        "text": "On agreeing to the Lynch amendment (A005) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-113",
+      "type": "",
+      "number": "",
+      "congress": 113,
+      "title": "",
+      "introduced_date": "2014-05-28",
+      "latest_action": {
+        "date": "2014-05-28",
+        "text": "On agreeing to the Lynch amendment (A001) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-113",
+      "type": "",
+      "number": "",
+      "congress": 113,
+      "title": "",
+      "introduced_date": "2013-07-10",
+      "latest_action": {
+        "date": "2013-07-10",
+        "text": "On agreeing to the Lynch amendment (A045) Agreed to by recorded vote: 217 - 206 (Roll no. 338). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-113",
+      "type": "",
+      "number": "",
+      "congress": 113,
+      "title": "",
+      "introduced_date": "2013-06-05",
+      "latest_action": {
+        "date": "2013-06-05",
+        "text": "On agreeing to the Lynch amendment (A008) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr5721-113",
+      "type": "hr",
+      "number": "5721",
+      "congress": 113,
+      "title": "Overseas Security Personnel Fairness Act",
+      "introduced_date": "2014-11-17",
+      "latest_action": {
+        "date": "2014-11-17",
+        "text": "Referred to the House Committee on Education and the Workforce."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr5391-113",
+      "type": "hr",
+      "number": "5391",
+      "congress": 113,
+      "title": "National POW/MIA Remembrance Act of 2014",
+      "introduced_date": "2014-08-01",
+      "latest_action": {
+        "date": "2014-08-04",
+        "text": "Referred to the Subcommittee on Economic Development, Public Buildings and Emergency Management."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "hr5229-113",
+      "type": "hr",
+      "number": "5229",
+      "congress": 113,
+      "title": "Wounded Warriors Federal Leave Act of 2014",
+      "introduced_date": "2014-07-29",
+      "latest_action": {
+        "date": "2014-09-17",
+        "text": "Ordered to be Reported by Voice Vote."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr4690-113",
+      "type": "hr",
+      "number": "4690",
+      "congress": 113,
+      "title": "To authorize the National Emergency Medical Services Memorial Foundation to establish a memorial in the District of Columbia and its environs, and for other purposes.",
+      "introduced_date": "2014-05-20",
+      "latest_action": {
+        "date": "2014-05-30",
+        "text": "Referred to the Subcommittee on Public Lands and Environmental Regulation."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr4241-113",
+      "type": "hr",
+      "number": "4241",
+      "congress": 113,
+      "title": "Act to Ban Zohydro",
+      "introduced_date": "2014-03-13",
+      "latest_action": {
+        "date": "2014-03-14",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr4022-113",
+      "type": "hr",
+      "number": "4022",
+      "congress": 113,
+      "title": "Security Clearance Reform Act of 2014",
+      "introduced_date": "2014-02-10",
+      "latest_action": {
+        "date": "2014-03-20",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr3802-113",
+      "type": "hr",
+      "number": "3802",
+      "congress": 113,
+      "title": "To extend the legislative authority of the Adams Memorial Foundation to establish a commemorative work in honor of former President John Adams and his legacy, and for other purposes.",
+      "introduced_date": "2013-12-19",
+      "latest_action": {
+        "date": "2014-07-23",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Energy and Natural Resources."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr2849-113",
+      "type": "hr",
+      "number": "2849",
+      "congress": 113,
+      "title": "Privacy Advocate General Act of 2013",
+      "introduced_date": "2013-07-30",
+      "latest_action": {
+        "date": "2013-09-13",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr2684-113",
+      "type": "hr",
+      "number": "2684",
+      "congress": 113,
+      "title": "Telephone Surveillance Accountability Act of 2013",
+      "introduced_date": "2013-07-11",
+      "latest_action": {
+        "date": "2013-07-11",
+        "text": "Referred to the Committee on the Judiciary, and in addition to the Committee on Intelligence (Permanent Select), for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr2185-113",
+      "type": "hr",
+      "number": "2185",
+      "congress": 113,
+      "title": "Veterans Day Moment of Silence Act",
+      "introduced_date": "2013-05-23",
+      "latest_action": {
+        "date": "2013-06-11",
+        "text": "Referred to the Subcommittee on Disability Assistance and Memorial Affairs."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr1520-113",
+      "type": "hr",
+      "number": "1520",
+      "congress": 113,
+      "title": "POW/MIA Accounting and Recovery Support Act of 2013",
+      "introduced_date": "2013-04-12",
+      "latest_action": {
+        "date": "2013-04-23",
+        "text": "Referred to the Subcommittee on Readiness."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr1366-113",
+      "type": "hr",
+      "number": "1366",
+      "congress": 113,
+      "title": "Stop Oxy Abuse Act of 2013",
+      "introduced_date": "2013-03-21",
+      "latest_action": {
+        "date": "2013-03-22",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr1367-113",
+      "type": "hr",
+      "number": "1367",
+      "congress": 113,
+      "title": "FEHBP Prescription Drug Integrity, Transparency, and Cost Savings Act",
+      "introduced_date": "2013-03-21",
+      "latest_action": {
+        "date": "2013-03-21",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr961-113",
+      "type": "hr",
+      "number": "961",
+      "congress": 113,
+      "title": "United States Postal Service Stabilization Act of 2013",
+      "introduced_date": "2013-03-05",
+      "latest_action": {
+        "date": "2013-03-05",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr344-113",
+      "type": "hr",
+      "number": "344",
+      "congress": 113,
+      "title": "Competitive Health Insurance Act",
+      "introduced_date": "2013-01-22",
+      "latest_action": {
+        "date": "2013-02-28",
+        "text": "Referred to the Subcommittee on Regulatory Reform, Commercial And Antitrust Law."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr265-113",
+      "type": "hr",
+      "number": "265",
+      "congress": 113,
+      "title": "Confidential Informant Accountability Act of 2013",
+      "introduced_date": "2013-01-15",
+      "latest_action": {
+        "date": "2013-02-28",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, Homeland Security, And Investigations."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr264-113",
+      "type": "hr",
+      "number": "264",
+      "congress": 113,
+      "title": "FHA Enhanced Oversight Act of 2013",
+      "introduced_date": "2013-01-15",
+      "latest_action": {
+        "date": "2013-01-15",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr266-113",
+      "type": "hr",
+      "number": "266",
+      "congress": 113,
+      "title": "Justice for Victims of Confidential Informant Crime Act of 2013",
+      "introduced_date": "2013-01-15",
+      "latest_action": {
+        "date": "2013-01-25",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, Homeland Security, And Investigations."
+      },
+      "policy_area": "Law"
+    },
+    {
+      "id": "-112",
+      "type": "",
+      "number": "",
+      "congress": 112,
+      "title": "",
+      "introduced_date": "2012-05-08",
+      "latest_action": {
+        "date": "2012-05-08",
+        "text": "On agreeing to the Lynch amendment (A010) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-112",
+      "type": "",
+      "number": "",
+      "congress": 112,
+      "title": "",
+      "introduced_date": "2011-03-10",
+      "latest_action": {
+        "date": "2011-03-10",
+        "text": "On agreeing to the Lynch amendment (A003) Failed by recorded vote: 184 - 243 (Roll no. 168). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr3853-112",
+      "type": "hr",
+      "number": "3853",
+      "congress": 112,
+      "title": "FHA Enhanced Oversight Act of 2012",
+      "introduced_date": "2012-01-31",
+      "latest_action": {
+        "date": "2012-02-09",
+        "text": "Referred to the Subcommittee on Insurance, Housing and Community Opportunity."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr3228-112",
+      "type": "hr",
+      "number": "3228",
+      "congress": 112,
+      "title": "Confidential Informant Accountability Act of 2011",
+      "introduced_date": "2011-10-14",
+      "latest_action": {
+        "date": "2011-10-24",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, and Homeland Security."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr1351-112",
+      "type": "hr",
+      "number": "1351",
+      "congress": 112,
+      "title": "United States Postal Service Pension Obligation Recalculation and Restoration Act of 2011",
+      "introduced_date": "2011-04-04",
+      "latest_action": {
+        "date": "2011-04-08",
+        "text": "Referred to the Subcommittee on Federal Workforce, U.S. Postal Service, and Labor Policy     ."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr979-112",
+      "type": "hr",
+      "number": "979",
+      "congress": 112,
+      "title": "FEHBP Prescription Drug Integrity, Transparency, and Cost Savings Act",
+      "introduced_date": "2011-03-09",
+      "latest_action": {
+        "date": "2011-03-18",
+        "text": "Referred to the Subcommittee on Federal Workforce, U.S. Postal Service, and Labor Policy."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr1201-116",
+      "type": "hr",
+      "number": "1201",
+      "congress": 116,
+      "title": "Climate Change National Security Strategy Act of 2019",
+      "introduced_date": "2019-02-13",
+      "latest_action": {
+        "date": "2019-02-14",
+        "text": "Referred to the Subcommittee on Environment and Climate Change."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr1065-116",
+      "type": "hr",
+      "number": "1065",
+      "congress": 116,
+      "title": "Social Media Use in Clearance Investigations Act of 2019",
+      "introduced_date": "2019-02-07",
+      "latest_action": {
+        "date": "2019-02-12",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Homeland Security and Governmental Affairs."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr976-116",
+      "type": "hr",
+      "number": "976",
+      "congress": 116,
+      "title": "Air Traffic Noise and Pollution Expert Consensus Act of 2019",
+      "introduced_date": "2019-02-05",
+      "latest_action": {
+        "date": "2019-02-07",
+        "text": "Referred to the Subcommittee on Aviation."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr587-116",
+      "type": "hr",
+      "number": "587",
+      "congress": 116,
+      "title": "To posthumously award the Congressional Gold Medal, collectively, to Glen Doherty, Tyrone Woods, J. Christopher Stevens, and Sean Smith, in recognition of their contributions to the Nation.",
+      "introduced_date": "2019-01-16",
+      "latest_action": {
+        "date": "2019-01-16",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr393-116",
+      "type": "hr",
+      "number": "393",
+      "congress": 116,
+      "title": "Aircraft Ownership Transparency Act of 2019",
+      "introduced_date": "2019-01-09",
+      "latest_action": {
+        "date": "2019-02-07",
+        "text": "Referred to the Subcommittee on Aviation."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr392-116",
+      "type": "hr",
+      "number": "392",
+      "congress": 116,
+      "title": "Secure Government Buildings from Espionage Act of 2019",
+      "introduced_date": "2019-01-09",
+      "latest_action": {
+        "date": "2019-05-22",
+        "text": "Referred to the Subcommittee on Economic Development, Public Buildings, and Emergency Management."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr390-116",
+      "type": "hr",
+      "number": "390",
+      "congress": 116,
+      "title": "To establish the Adams Memorial Commission to carry out the provisions of Public Law 107-62, and for other purposes.",
+      "introduced_date": "2019-01-09",
+      "latest_action": {
+        "date": "2019-02-05",
+        "text": "Referred to the Subcommittee on National Parks, Forests, and Public Lands."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr389-116",
+      "type": "hr",
+      "number": "389",
+      "congress": 116,
+      "title": "Kleptocracy Asset Recovery Rewards Act",
+      "introduced_date": "2019-01-09",
+      "latest_action": {
+        "date": "2019-05-15",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr391-116",
+      "type": "hr",
+      "number": "391",
+      "congress": 116,
+      "title": "White House Ethics Transparency Act of 2019",
+      "introduced_date": "2019-01-09",
+      "latest_action": {
+        "date": "2019-06-12",
+        "text": "Ordered to be Reported (Amended) by the Yeas and Nays: 23 - 16."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hres33-116",
+      "type": "hres",
+      "number": "33",
+      "congress": 116,
+      "title": "Expressing the sense of the House of Representatives that Congress should take all appropriate measures to ensure that the United States Postal Service remains an independent establishment of the Federal Government and is not subject to privatization.",
+      "introduced_date": "2019-01-09",
+      "latest_action": {
+        "date": "2019-01-09",
+        "text": "Referred to the House Committee on Oversight and Reform."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hconres143-115",
+      "type": "hconres",
+      "number": "143",
+      "congress": 115,
+      "title": "Honoring the 75th anniversary of the All-American Girls Professional Baseball League (AAGPBL).",
+      "introduced_date": "2018-11-29",
+      "latest_action": {
+        "date": "2018-11-29",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Sports and Recreation"
+    },
+    {
+      "id": "hres1078-115",
+      "type": "hres",
+      "number": "1078",
+      "congress": 115,
+      "title": "Recognizing the Lawyers' Committee for Civil Rights and Economic Justice on its 50th anniversary.",
+      "introduced_date": "2018-09-25",
+      "latest_action": {
+        "date": "2018-09-25",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Civil Rights and Liberties, Minority Issues"
+    },
+    {
+      "id": "hres993-115",
+      "type": "hres",
+      "number": "993",
+      "congress": 115,
+      "title": "Expressing the sense of the House of Representatives that Congress should take all appropriate measures to ensure that the United States Postal Service remains an independent establishment of the Federal Government and is not subject to privatization.",
+      "introduced_date": "2018-07-16",
+      "latest_action": {
+        "date": "2018-07-16",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "-115",
+      "type": "",
+      "number": "",
+      "congress": 115,
+      "title": "",
+      "introduced_date": "2018-06-27",
+      "latest_action": {
+        "date": "2018-06-27",
+        "text": "On agreeing to the Lynch amendment (A018) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-115",
+      "type": "",
+      "number": "",
+      "congress": 115,
+      "title": "",
+      "introduced_date": "2018-04-26",
+      "latest_action": {
+        "date": "2018-04-26",
+        "text": "On agreeing to the Lynch amendment (A021) Failed by recorded vote: 187 - 227 (Roll no. 160). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hres783-115",
+      "type": "hres",
+      "number": "783",
+      "congress": 115,
+      "title": "Expressing support for designation of September as \"National Brain Aneurysm Awareness Month\".",
+      "introduced_date": "2018-03-14",
+      "latest_action": {
+        "date": "2018-03-16",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr5101-115",
+      "type": "hr",
+      "number": "5101",
+      "congress": 115,
+      "title": "Kleptocracy Asset Recovery Rewards Act",
+      "introduced_date": "2018-02-27",
+      "latest_action": {
+        "date": "2018-02-27",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr4381-115",
+      "type": "hr",
+      "number": "4381",
+      "congress": 115,
+      "title": "Natural Gas Pipeline Public Health Protection Act of 2017",
+      "introduced_date": "2017-11-13",
+      "latest_action": {
+        "date": "2017-11-17",
+        "text": "Referred to the Subcommittee on Energy."
+      },
+      "policy_area": "Energy"
+    },
+    {
+      "id": "hr4095-115",
+      "type": "hr",
+      "number": "4095",
+      "congress": 115,
+      "title": "DEA Opioid Enforcement Restoration Act of 2017",
+      "introduced_date": "2017-10-23",
+      "latest_action": {
+        "date": "2017-11-01",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr3938-115",
+      "type": "hr",
+      "number": "3938",
+      "congress": 115,
+      "title": "Air Traffic Noise and Pollution Expert Consensus Act of 2017",
+      "introduced_date": "2017-10-04",
+      "latest_action": {
+        "date": "2017-10-05",
+        "text": "Referred to the Subcommittee on Aviation."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hconres83-115",
+      "type": "hconres",
+      "number": "83",
+      "congress": 115,
+      "title": "Authorizing the use of Emancipation Hall in the Capitol Visitor Center for the unveiling of the American Prisoners of War/Missing in Action (POW/MIA) Chair of Honor.",
+      "introduced_date": "2017-09-28",
+      "latest_action": {
+        "date": "2017-09-28",
+        "text": "Referred to the House Committee on House Administration."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "hr3544-115",
+      "type": "hr",
+      "number": "3544",
+      "congress": 115,
+      "title": "Aircraft Ownership Transparency Act of 2017",
+      "introduced_date": "2017-07-28",
+      "latest_action": {
+        "date": "2017-07-31",
+        "text": "Referred to the Subcommittee on Aviation."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "-115",
+      "type": "",
+      "number": "",
+      "congress": 115,
+      "title": "",
+      "introduced_date": "2017-07-19",
+      "latest_action": {
+        "date": "2017-07-19",
+        "text": "On agreeing to the Lynch amendment (A002) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr2908-115",
+      "type": "hr",
+      "number": "2908",
+      "congress": 115,
+      "title": "Climate Change National Security Strategy Act of 2017",
+      "introduced_date": "2017-06-15",
+      "latest_action": {
+        "date": "2018-05-22",
+        "text": "Referred to the Subcommittee on Environment."
+      },
+      "policy_area": "Environmental Protection"
+    },
+    {
+      "id": "hr2762-115",
+      "type": "hr",
+      "number": "2762",
+      "congress": 115,
+      "title": "White House Ethics Transparency Act of 2017",
+      "introduced_date": "2017-05-30",
+      "latest_action": {
+        "date": "2017-07-12",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr2622-115",
+      "type": "hr",
+      "number": "2622",
+      "congress": 115,
+      "title": "Countering Terrorist Financing Act of 2017",
+      "introduced_date": "2017-05-24",
+      "latest_action": {
+        "date": "2017-05-24",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr2464-115",
+      "type": "hr",
+      "number": "2464",
+      "congress": 115,
+      "title": "To designate the facility of the United States Postal Service located at 25 New Chardon Street Lobby in Boston, Massachusetts, as the \"John Fitzgerald Kennedy Post Office\".",
+      "introduced_date": "2017-05-16",
+      "latest_action": {
+        "date": "2018-03-23",
+        "text": "Became Public Law No: 115-144."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr2426-115",
+      "type": "hr",
+      "number": "2426",
+      "congress": 115,
+      "title": "Secure Government Buildings from Espionage Act of 2017",
+      "introduced_date": "2017-05-16",
+      "latest_action": {
+        "date": "2017-05-17",
+        "text": "Referred to the Subcommittee on Economic Development, Public Buildings and Emergency Management."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr2315-115",
+      "type": "hr",
+      "number": "2315",
+      "congress": 115,
+      "title": "To posthumously award the Congressional Gold Medal to each of Glen Doherty, Tyrone Woods, J. Christopher Stevens, and Sean Smith in recognition of their contributions to the Nation.",
+      "introduced_date": "2017-05-03",
+      "latest_action": {
+        "date": "2018-12-13",
+        "text": "Received in the Senate and Read twice and referred to the Committee on Banking, Housing, and Urban Affairs."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr1857-115",
+      "type": "hr",
+      "number": "1857",
+      "congress": 115,
+      "title": "Confidential Informant Accountability Act of 2017",
+      "introduced_date": "2017-04-03",
+      "latest_action": {
+        "date": "2017-04-24",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr1856-115",
+      "type": "hr",
+      "number": "1856",
+      "congress": 115,
+      "title": "Justice for Victims of Confidential Informant Crime Act of 2017",
+      "introduced_date": "2017-04-03",
+      "latest_action": {
+        "date": "2017-04-24",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Law"
+    },
+    {
+      "id": "hr1442-115",
+      "type": "hr",
+      "number": "1442",
+      "congress": 115,
+      "title": "Public Service Federal Eligibility Protection Act of 2017",
+      "introduced_date": "2017-03-09",
+      "latest_action": {
+        "date": "2017-03-09",
+        "text": "Referred to the Committee on Foreign Affairs, and in addition to the Committee on Education and the Workforce, for a period to be subsequently determined by the Speaker, in each case for consideration of such provisions as fall within the jurisdiction of the committee concerned."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr1220-115",
+      "type": "hr",
+      "number": "1220",
+      "congress": 115,
+      "title": "To establish the Adams Memorial Commission to carry out the provisions of Public Law 107-62, and for other purposes.",
+      "introduced_date": "2017-02-27",
+      "latest_action": {
+        "date": "2018-12-12",
+        "text": "Committee on Energy and Natural Resources Subcommittee on National Parks. Hearings held. With printed Hearing: S.Hrg. 115-535."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr1037-115",
+      "type": "hr",
+      "number": "1037",
+      "congress": 115,
+      "title": "To authorize the National Emergency Medical Services Memorial Foundation to establish a commemorative work in the District of Columbia and its environs, and for other purposes.",
+      "introduced_date": "2017-02-14",
+      "latest_action": {
+        "date": "2018-11-03",
+        "text": "Became Public Law No: 115-275."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr1001-115",
+      "type": "hr",
+      "number": "1001",
+      "congress": 115,
+      "title": "Veterans Federal Hiring Protection Act of 2017",
+      "introduced_date": "2017-02-13",
+      "latest_action": {
+        "date": "2017-02-13",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr760-115",
+      "type": "hr",
+      "number": "760",
+      "congress": 115,
+      "title": "Postal Service Financial Improvement Act of 2017",
+      "introduced_date": "2017-01-31",
+      "latest_action": {
+        "date": "2017-03-16",
+        "text": "Ordered to be Reported (Amended) by Voice Vote."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr598-115",
+      "type": "hr",
+      "number": "598",
+      "congress": 115,
+      "title": "AIM Act of 2017",
+      "introduced_date": "2017-01-20",
+      "latest_action": {
+        "date": "2017-01-23",
+        "text": "Referred to the Subcommittee on Aviation."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr5748-114",
+      "type": "hr",
+      "number": "5748",
+      "congress": 114,
+      "title": "To establish the Adams Memorial Commission to carry out the provisions of Public Law 107-62, and for other purposes.",
+      "introduced_date": "2016-07-13",
+      "latest_action": {
+        "date": "2016-07-25",
+        "text": "Referred to the Subcommittee on Federal Lands."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr5707-114",
+      "type": "hr",
+      "number": "5707",
+      "congress": 114,
+      "title": "Postal Service Financial Improvement Act of 2016",
+      "introduced_date": "2016-07-11",
+      "latest_action": {
+        "date": "2016-12-08",
+        "text": "Placed on the Union Calendar, Calendar No. 672."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr5603-114",
+      "type": "hr",
+      "number": "5603",
+      "congress": 114,
+      "title": "Kleptocracy Asset Recovery Rewards Act",
+      "introduced_date": "2016-06-28",
+      "latest_action": {
+        "date": "2016-06-28",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr5602-114",
+      "type": "hr",
+      "number": "5602",
+      "congress": 114,
+      "title": "To amend title 31, United States Code, to authorize the Secretary of the Treasury to include all funds when issuing certain geographic targeting orders, and for other purposes.",
+      "introduced_date": "2016-06-28",
+      "latest_action": {
+        "date": "2016-12-12",
+        "text": "Message on Senate action sent to the House."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "-114",
+      "type": "",
+      "number": "",
+      "congress": 114,
+      "title": "",
+      "introduced_date": "2016-05-12",
+      "latest_action": {
+        "date": "2016-05-12",
+        "text": "On agreeing to the Lynch amendment (A009) Failed by recorded vote: 190 - 225 (Roll no. 186). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr5075-114",
+      "type": "hr",
+      "number": "5075",
+      "congress": 114,
+      "title": "AIM Act of 2016",
+      "introduced_date": "2016-04-27",
+      "latest_action": {
+        "date": "2016-04-28",
+        "text": "Referred to the Subcommittee on Aviation."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "-114",
+      "type": "",
+      "number": "",
+      "congress": 114,
+      "title": "",
+      "introduced_date": "2016-01-07",
+      "latest_action": {
+        "date": "2016-01-07",
+        "text": "On agreeing to the Lynch amendment (A004) Failed by recorded vote: 180 - 235 (Roll no. 9). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-114",
+      "type": "",
+      "number": "",
+      "congress": 114,
+      "title": "",
+      "introduced_date": "2015-11-03",
+      "latest_action": {
+        "date": "2015-11-03",
+        "text": "On agreeing to the Lynch amendment (A028) Failed by recorded vote: 160 - 263 (Roll no. 590). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-114",
+      "type": "",
+      "number": "",
+      "congress": 114,
+      "title": "",
+      "introduced_date": "2015-10-27",
+      "latest_action": {
+        "date": "2015-10-27",
+        "text": "On agreeing to the Lynch amendment (A002) Failed by the Yeas and Nays: 184 - 246 (Roll no. 574). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr2986-114",
+      "type": "hr",
+      "number": "2986",
+      "congress": 114,
+      "title": "Justice for Victims of Confidential Informant Crime Act of 2015",
+      "introduced_date": "2015-07-08",
+      "latest_action": {
+        "date": "2015-07-29",
+        "text": "Referred to the Subcommittee on the Constitution and Civil Justice."
+      },
+      "policy_area": "Law"
+    },
+    {
+      "id": "hr2985-114",
+      "type": "hr",
+      "number": "2985",
+      "congress": 114,
+      "title": "Confidential Informant Accountability Act of 2015",
+      "introduced_date": "2015-07-08",
+      "latest_action": {
+        "date": "2015-07-29",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr2274-114",
+      "type": "hr",
+      "number": "2274",
+      "congress": 114,
+      "title": "To authorize the National Emergency Medical Services Memorial Foundation to establish a commemorative work in the District of Columbia and its environs, and for other purposes.",
+      "introduced_date": "2015-05-12",
+      "latest_action": {
+        "date": "2015-06-04",
+        "text": "Referred to the Subcommittee on Federal Lands."
+      },
+      "policy_area": "Public Lands and Natural Resources"
+    },
+    {
+      "id": "hr2175-114",
+      "type": "hr",
+      "number": "2175",
+      "congress": 114,
+      "title": "FEHBP Prescription Drug Oversight and Cost Savings Act",
+      "introduced_date": "2015-04-30",
+      "latest_action": {
+        "date": "2015-04-30",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr1670-114",
+      "type": "hr",
+      "number": "1670",
+      "congress": 114,
+      "title": "National POW/MIA Remembrance Act of 2015",
+      "introduced_date": "2015-03-26",
+      "latest_action": {
+        "date": "2016-04-29",
+        "text": "Became Public Law No: 114-147."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "hr1463-114",
+      "type": "hr",
+      "number": "1463",
+      "congress": 114,
+      "title": "SEC Revolving Door Restriction Act of 2015",
+      "introduced_date": "2015-03-19",
+      "latest_action": {
+        "date": "2015-03-19",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr1173-114",
+      "type": "hr",
+      "number": "1173",
+      "congress": 114,
+      "title": "Ban Insider Trading Act of 2015",
+      "introduced_date": "2015-02-27",
+      "latest_action": {
+        "date": "2015-02-27",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr1097-114",
+      "type": "hr",
+      "number": "1097",
+      "congress": 114,
+      "title": "Ban Insider Trading Act of 2015",
+      "introduced_date": "2015-02-26",
+      "latest_action": {
+        "date": "2015-02-26",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr995-114",
+      "type": "hr",
+      "number": "995",
+      "congress": 114,
+      "title": "Veterans Day Moment of Silence Act",
+      "introduced_date": "2015-02-13",
+      "latest_action": {
+        "date": "2015-03-06",
+        "text": "Referred to the Subcommittee on Disability Assistance and Memorial Affairs."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr490-114",
+      "type": "hr",
+      "number": "490",
+      "congress": 114,
+      "title": "Security Clearance Reform Act of 2015",
+      "introduced_date": "2015-01-22",
+      "latest_action": {
+        "date": "2015-02-19",
+        "text": "Referred to the Subcommittee on Crime, Terrorism, Homeland Security, and Investigations."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr313-114",
+      "type": "hr",
+      "number": "313",
+      "congress": 114,
+      "title": "Wounded Warriors Federal Leave Act of 2015",
+      "introduced_date": "2015-01-13",
+      "latest_action": {
+        "date": "2015-11-05",
+        "text": "Became Public Law No: 114-75."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "-109",
+      "type": "",
+      "number": "",
+      "congress": 109,
+      "title": "",
+      "introduced_date": "2006-06-28",
+      "latest_action": {
+        "date": "2006-06-28",
+        "text": "On agreeing to the Lynch amendment (A017) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-109",
+      "type": "",
+      "number": "",
+      "congress": 109,
+      "title": "",
+      "introduced_date": "2006-06-08",
+      "latest_action": {
+        "date": "2006-06-08",
+        "text": "On agreeing to the Lynch amendment (A001) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-109",
+      "type": "",
+      "number": "",
+      "congress": 109,
+      "title": "",
+      "introduced_date": "2006-05-25",
+      "latest_action": {
+        "date": "2006-05-25",
+        "text": "On agreeing to the Lynch amendment (A009) Agreed to by recorded vote: 225 - 197 (Roll no. 216). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-109",
+      "type": "",
+      "number": "",
+      "congress": 109,
+      "title": "",
+      "introduced_date": "2006-05-24",
+      "latest_action": {
+        "date": "2006-05-24",
+        "text": "By unanimous consent, the Lynch amendment was withdrawn. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-109",
+      "type": "",
+      "number": "",
+      "congress": 109,
+      "title": "",
+      "introduced_date": "2006-05-19",
+      "latest_action": {
+        "date": "2006-05-19",
+        "text": "By unanimous consent, the Lynch amendment was withdrawn. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-109",
+      "type": "",
+      "number": "",
+      "congress": 109,
+      "title": "",
+      "introduced_date": "2006-03-09",
+      "latest_action": {
+        "date": "2006-03-09",
+        "text": "On agreeing to the Lynch amendment (A011) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr6319-109",
+      "type": "hr",
+      "number": "6319",
+      "congress": 109,
+      "title": "Veterans Amputee and Rehabilitation Act of 2006",
+      "introduced_date": "2006-11-13",
+      "latest_action": {
+        "date": "2006-11-28",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr6292-109",
+      "type": "hr",
+      "number": "6292",
+      "congress": 109,
+      "title": "To provide for competitive status for certain employees of the Internal Revenue Service.",
+      "introduced_date": "2006-09-29",
+      "latest_action": {
+        "date": "2006-09-29",
+        "text": "Referred to the House Committee on Government Reform."
+      },
+      "policy_area": "Taxation"
+    },
+    {
+      "id": "hr6318-109",
+      "type": "hr",
+      "number": "6318",
+      "congress": 109,
+      "title": "Iraq Weapons Accountability Act of 2006",
+      "introduced_date": "2006-11-13",
+      "latest_action": {
+        "date": "2006-11-13",
+        "text": "Referred to the House Committee on Armed Services."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr5716-109",
+      "type": "hr",
+      "number": "5716",
+      "congress": 109,
+      "title": "Iraq Transition Act of 2006",
+      "introduced_date": "2006-06-29",
+      "latest_action": {
+        "date": "2006-07-12",
+        "text": "Sponsor introductory remarks on measure. (CR H5099)"
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr5045-109",
+      "type": "hr",
+      "number": "5045",
+      "congress": 109,
+      "title": "Home for the Brave Act",
+      "introduced_date": "2006-03-29",
+      "latest_action": {
+        "date": "2006-04-21",
+        "text": "Referred to the Subcommittee on Financial Institutions and Consumer Credit."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr4372-109",
+      "type": "hr",
+      "number": "4372",
+      "congress": 109,
+      "title": "Rail Worker Emergency Training Act of 2005",
+      "introduced_date": "2005-11-17",
+      "latest_action": {
+        "date": "2005-12-08",
+        "text": "Sponsor introductory remarks on measure. (CR E2200-2201)"
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr4351-109",
+      "type": "hr",
+      "number": "4351",
+      "congress": 109,
+      "title": "Iraq Contracting Fraud Review Act of 2005",
+      "introduced_date": "2005-11-16",
+      "latest_action": {
+        "date": "2005-11-16",
+        "text": "Referred to the House Committee on Armed Services."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr4164-109",
+      "type": "hr",
+      "number": "4164",
+      "congress": 109,
+      "title": "Helping America Hear Act of 2005",
+      "introduced_date": "2005-10-27",
+      "latest_action": {
+        "date": "2006-03-24",
+        "text": "Referred to the Subcommittee on Employer-Employee Relations."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr3371-109",
+      "type": "hr",
+      "number": "3371",
+      "congress": 109,
+      "title": "To provide for the liquidation or reliquidation of certain entries.",
+      "introduced_date": "2005-07-20",
+      "latest_action": {
+        "date": "2005-07-25",
+        "text": "Referred to the Subcommittee on Trade."
+      },
+      "policy_area": "Private Legislation"
+    },
+    {
+      "id": "hr2379-109",
+      "type": "hr",
+      "number": "2379",
+      "congress": 109,
+      "title": "Vets Rx Act of 2005",
+      "introduced_date": "2005-05-16",
+      "latest_action": {
+        "date": "2005-06-01",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr2195-109",
+      "type": "hr",
+      "number": "2195",
+      "congress": 109,
+      "title": "Act to Ban OxyContin",
+      "introduced_date": "2005-05-05",
+      "latest_action": {
+        "date": "2005-05-13",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr1109-109",
+      "type": "hr",
+      "number": "1109",
+      "congress": 109,
+      "title": "Rail Transit Security and Safety Act of 2005",
+      "introduced_date": "2005-03-03",
+      "latest_action": {
+        "date": "2005-03-17",
+        "text": "Referred to the Subcommittee on Emergency Preparedness, Science, and Technology."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr1108-109",
+      "type": "hr",
+      "number": "1108",
+      "congress": 109,
+      "title": "Liver Research Enhancement Act of 2005",
+      "introduced_date": "2005-03-03",
+      "latest_action": {
+        "date": "2005-03-22",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr563-109",
+      "type": "hr",
+      "number": "563",
+      "congress": 109,
+      "title": "Prescription Drug Affordability Act of 2005",
+      "introduced_date": "2005-02-02",
+      "latest_action": {
+        "date": "2005-02-25",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr393-109",
+      "type": "hr",
+      "number": "393",
+      "congress": 109,
+      "title": "HUD Transparency and Accountability Act of 2005",
+      "introduced_date": "2005-01-26",
+      "latest_action": {
+        "date": "2005-04-04",
+        "text": "Referred to the Subcommittee on Housing and Community Opportunity."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr392-109",
+      "type": "hr",
+      "number": "392",
+      "congress": 109,
+      "title": "Retirement Security Education Act of 2005",
+      "introduced_date": "2005-01-26",
+      "latest_action": {
+        "date": "2005-03-24",
+        "text": "Referred to the Subcommittee on Select Education."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr335-109",
+      "type": "hr",
+      "number": "335",
+      "congress": 109,
+      "title": "Seniors Offering Quality Child Care Act of 2005",
+      "introduced_date": "2005-01-25",
+      "latest_action": {
+        "date": "2005-03-24",
+        "text": "Referred to the Subcommittee on 21st Century Competitiveness."
+      },
+      "policy_area": "Families"
+    },
+    {
+      "id": "hr334-109",
+      "type": "hr",
+      "number": "334",
+      "congress": 109,
+      "title": "Angolan Temporary Protected Status Act of 2005",
+      "introduced_date": "2005-01-25",
+      "latest_action": {
+        "date": "2005-03-02",
+        "text": "Referred to the Subcommittee on Immigration, Border Security, and Claims."
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "hr336-109",
+      "type": "hr",
+      "number": "336",
+      "congress": 109,
+      "title": "Brownfields Improvement Act of 2005",
+      "introduced_date": "2005-01-25",
+      "latest_action": {
+        "date": "2005-04-20",
+        "text": "Referred to the Subcommittee on Domestic and International Monetary Policy, Trade, and Technology."
+      },
+      "policy_area": "Economics and Public Finance"
+    },
+    {
+      "id": "hr333-109",
+      "type": "hr",
+      "number": "333",
+      "congress": 109,
+      "title": "Military Educational Parity Act of 2005",
+      "introduced_date": "2005-01-25",
+      "latest_action": {
+        "date": "2005-03-24",
+        "text": "Referred to the Subcommittee on 21st Century Competitiveness."
+      },
+      "policy_area": "Education"
+    },
+    {
+      "id": "hres616-109",
+      "type": "hres",
+      "number": "616",
+      "congress": 109,
+      "title": "Directing the Committee on Government Reform to hold hearings on intelligence relating to the rationale for the commencement of Operation Iraqi Freedom.",
+      "introduced_date": "2005-12-15",
+      "latest_action": {
+        "date": "2005-12-15",
+        "text": "Referred to the House Committee on Rules."
+      },
+      "policy_area": "Congress"
+    },
+    {
+      "id": "-114",
+      "type": "",
+      "number": "",
+      "congress": 114,
+      "title": "",
+      "introduced_date": "2015-06-03",
+      "latest_action": {
+        "date": "2015-06-03",
+        "text": "By unanimous consent, the Lynch amendment was withdrawn. (consideration: CR H3840)"
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr1216-114",
+      "type": "hr",
+      "number": "1216",
+      "congress": 114,
+      "title": "Maker-Taker Conflict of Interest Reform Act of 2015",
+      "introduced_date": "2015-03-03",
+      "latest_action": {
+        "date": "2015-03-03",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr312-114",
+      "type": "hr",
+      "number": "312",
+      "congress": 114,
+      "title": "Glen Anthony Doherty Overseas Security Personnel Fairness Act",
+      "introduced_date": "2015-01-13",
+      "latest_action": {
+        "date": "2015-04-29",
+        "text": "Referred to the Subcommittee on Workforce Protections."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "-111",
+      "type": "",
+      "number": "",
+      "congress": 111,
+      "title": "",
+      "introduced_date": "2010-07-14",
+      "latest_action": {
+        "date": "2010-07-14",
+        "text": "On agreeing to the Lynch amendment (A002) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-111",
+      "type": "",
+      "number": "",
+      "congress": 111,
+      "title": "",
+      "introduced_date": "2009-12-10",
+      "latest_action": {
+        "date": "2009-12-10",
+        "text": "On agreeing to the Lynch amendment (A005) Agreed to by recorded vote: 228 - 202 (Roll no. 955). "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-111",
+      "type": "",
+      "number": "",
+      "congress": 111,
+      "title": "",
+      "introduced_date": "2009-06-10",
+      "latest_action": {
+        "date": "2009-06-10",
+        "text": "On agreeing to the Lynch amendment (A019) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "-111",
+      "type": "",
+      "number": "",
+      "congress": 111,
+      "title": "",
+      "introduced_date": "2009-06-04",
+      "latest_action": {
+        "date": "2009-06-04",
+        "text": "On agreeing to the Lynch amendment (A009) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr5746-111",
+      "type": "hr",
+      "number": "5746",
+      "congress": 111,
+      "title": "United States Postal Service's CSRS Obligation Modification Act of 2010",
+      "introduced_date": "2010-07-15",
+      "latest_action": {
+        "date": "2010-07-21",
+        "text": "Forwarded by Subcommittee to Full Committee in the Nature of a Substitute by the Yeas and Nays: 8 - 1 ."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr5368-111",
+      "type": "hr",
+      "number": "5368",
+      "congress": 111,
+      "title": "United States Postal Service Postal Inspectors Equity Act",
+      "introduced_date": "2010-05-24",
+      "latest_action": {
+        "date": "2010-09-23",
+        "text": "Ordered to be Reported (Amended) by Voice Vote."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr4865-111",
+      "type": "hr",
+      "number": "4865",
+      "congress": 111,
+      "title": "Federal Employees and Uniformed Services Retirement Equity Act of 2010",
+      "introduced_date": "2010-03-17",
+      "latest_action": {
+        "date": "2010-04-14",
+        "text": "Ordered to be Reported (Amended) by Voice Vote."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr4489-111",
+      "type": "hr",
+      "number": "4489",
+      "congress": 111,
+      "title": "FEHBP Prescription Drug Integrity, Transparency, and Cost Savings Act",
+      "introduced_date": "2010-01-21",
+      "latest_action": {
+        "date": "2010-03-24",
+        "text": "Forwarded by Subcommittee to Full Committee (Amended) by Voice Vote ."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr3117-111",
+      "type": "hr",
+      "number": "3117",
+      "congress": 111,
+      "title": "Georgetowne Houses Preservation Act of 2009",
+      "introduced_date": "2009-07-07",
+      "latest_action": {
+        "date": "2009-07-07",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr2467-111",
+      "type": "hr",
+      "number": "2467",
+      "congress": 111,
+      "title": "To authorize appropriations for fiscal year 2010 for military activities of the Department of Defense, for military construction, and for defense activities of the Department of Energy, to prescribe military personnel strengths for such fiscal year, to provide special pays and allowances to certain members of the Armed Forces, expand concurrent receipt of military retirement and VA disability benefits to disabled military retirees, and for other purposes.",
+      "introduced_date": "2009-05-18",
+      "latest_action": {
+        "date": "2009-05-18",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Housing and Community Development"
+    },
+    {
+      "id": "hr1856-111",
+      "type": "hr",
+      "number": "1856",
+      "congress": 111,
+      "title": "FinCEN Reauthorization Act of 2009",
+      "introduced_date": "2009-04-01",
+      "latest_action": {
+        "date": "2009-04-01",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr1686-111",
+      "type": "hr",
+      "number": "1686",
+      "congress": 111,
+      "title": "Mail Network Protection Act of 2009",
+      "introduced_date": "2009-03-24",
+      "latest_action": {
+        "date": "2009-05-04",
+        "text": "Referred to the Subcommittee on Federal Workforce, Post Office, and the District of Columbia."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr1263-111",
+      "type": "hr",
+      "number": "1263",
+      "congress": 111,
+      "title": "Federal Retirement Reform Act of 2009",
+      "introduced_date": "2009-03-03",
+      "latest_action": {
+        "date": "2009-03-03",
+        "text": "Referred to House Ways and Means"
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr1128-111",
+      "type": "hr",
+      "number": "1128",
+      "congress": 111,
+      "title": "Liver Research Enhancement Act of 2009",
+      "introduced_date": "2009-02-23",
+      "latest_action": {
+        "date": "2009-02-24",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr1129-111",
+      "type": "hr",
+      "number": "1129",
+      "congress": 111,
+      "title": "To authorize the Secretary of the Interior to provide an annual grant to facilitate an iron working training program for Native Americans.",
+      "introduced_date": "2009-02-23",
+      "latest_action": {
+        "date": "2009-09-30",
+        "text": "Placed on Senate Legislative Calendar under General Orders. Calendar No. 170."
+      },
+      "policy_area": "Native Americans"
+    },
+    {
+      "id": "hres1247-111",
+      "type": "hres",
+      "number": "1247",
+      "congress": 111,
+      "title": "Expressing the sense of the House of Representatives that public servants should be commended for their dedication and continued service to the Nation during Public Service Recognition Week, May 3 through 9, 2010, and throughout the year.",
+      "introduced_date": "2010-04-14",
+      "latest_action": {
+        "date": "2010-05-05",
+        "text": "Motion to reconsider laid on the table Agreed to without objection."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hres299-111",
+      "type": "hres",
+      "number": "299",
+      "congress": 111,
+      "title": "Expressing the sense of the House of Representatives that public servants should be commended for their dedication and continued service to the Nation during Public Service Recognition Week, May 4 through 10, 2009, and throughout the year.",
+      "introduced_date": "2009-03-30",
+      "latest_action": {
+        "date": "2009-05-05",
+        "text": "Motion to reconsider laid on the table Agreed to without objection."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "-110",
+      "type": "",
+      "number": "",
+      "congress": 110,
+      "title": "",
+      "introduced_date": "2007-03-27",
+      "latest_action": {
+        "date": "2007-03-27",
+        "text": "On agreeing to the Lynch amendment (A008) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr6685-110",
+      "type": "hr",
+      "number": "6685",
+      "congress": 110,
+      "title": "To authorize the Secretary of the Interior to provide an annual grant to facilitate an iron working training program for Native Americans.",
+      "introduced_date": "2008-07-31",
+      "latest_action": {
+        "date": "2008-10-02",
+        "text": "Read twice and referred to the Committee on Indian Affairs."
+      },
+      "policy_area": "Native Americans"
+    },
+    {
+      "id": "hr6620-110",
+      "type": "hr",
+      "number": "6620",
+      "congress": 110,
+      "title": "Gas Pump Fair Payment Act of 2008",
+      "introduced_date": "2008-07-24",
+      "latest_action": {
+        "date": "2008-07-24",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr5528-110",
+      "type": "hr",
+      "number": "5528",
+      "congress": 110,
+      "title": "To designate the facility of the United States Postal Service located at 120 Commercial Street in Brockton, Massachusetts, as the \"Rocky Marciano Post Office Building\".",
+      "introduced_date": "2008-03-04",
+      "latest_action": {
+        "date": "2008-07-15",
+        "text": "Became Public Law No: 110-272."
+      },
+      "policy_area": "Commemorations"
+    },
+    {
+      "id": "hr4911-110",
+      "type": "hr",
+      "number": "4911",
+      "congress": 110,
+      "title": "Human Growth Hormone Restriction Act of 2007",
+      "introduced_date": "2007-12-19",
+      "latest_action": {
+        "date": "2008-01-14",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Crime and Law Enforcement"
+    },
+    {
+      "id": "hr4340-110",
+      "type": "hr",
+      "number": "4340",
+      "congress": 110,
+      "title": "For the relief of Xenia A. Rollinson.",
+      "introduced_date": "2007-12-06",
+      "latest_action": {
+        "date": "2008-01-18",
+        "text": "Referred to the Subcommittee on Immigration, Citizenship, Refugees, Border Security, and International Law."
+      },
+      "policy_area": "Private Legislation"
+    },
+    {
+      "id": "hr4236-110",
+      "type": "hr",
+      "number": "4236",
+      "congress": 110,
+      "title": "Mail Network Protection Act of 2007",
+      "introduced_date": "2007-11-15",
+      "latest_action": {
+        "date": "2008-01-16",
+        "text": "Referred to the Subcommittee on Federal Workforce, Post Office, and the District of Columbia."
+      },
+      "policy_area": "Government Operations and Politics"
+    },
+    {
+      "id": "hr3632-110",
+      "type": "hr",
+      "number": "3632",
+      "congress": 110,
+      "title": "For the relief of Naaman Ramez Damaa.",
+      "introduced_date": "2007-09-20",
+      "latest_action": {
+        "date": "2007-09-20",
+        "text": "Referred to the House Committee on the Judiciary."
+      },
+      "policy_area": "Private Legislation"
+    },
+    {
+      "id": "hr3354-110",
+      "type": "hr",
+      "number": "3354",
+      "congress": 110,
+      "title": "For the relief of Paul Ladd and Jennifer Ladd.",
+      "introduced_date": "2007-08-02",
+      "latest_action": {
+        "date": "2007-08-24",
+        "text": "Referred to the Subcommittee on Immigration, Citizenship, Refugees, Border Security, and International Law."
+      },
+      "policy_area": "Private Legislation"
+    },
+    {
+      "id": "hr2440-110",
+      "type": "hr",
+      "number": "2440",
+      "congress": 110,
+      "title": "FinCEN Reauthorization Act of 2007",
+      "introduced_date": "2007-05-22",
+      "latest_action": {
+        "date": "2007-05-22",
+        "text": "Referred to the House Committee on Financial Services. (text of measure as introduced: CR S15065-15070)"
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr1960-110",
+      "type": "hr",
+      "number": "1960",
+      "congress": 110,
+      "title": "Home for the Brave Act",
+      "introduced_date": "2007-04-19",
+      "latest_action": {
+        "date": "2007-04-19",
+        "text": "Referred to the House Committee on Financial Services."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr1743-110",
+      "type": "hr",
+      "number": "1743",
+      "congress": 110,
+      "title": "Liver Research Enhancement Act of 2007",
+      "introduced_date": "2007-03-28",
+      "latest_action": {
+        "date": "2007-03-29",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr536-110",
+      "type": "hr",
+      "number": "536",
+      "congress": 110,
+      "title": "Helping America Hear Act of 2007",
+      "introduced_date": "2007-01-17",
+      "latest_action": {
+        "date": "2007-05-18",
+        "text": "Referred to the Subcommittee on Health, Employment, Labor, and Pensions."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr535-110",
+      "type": "hr",
+      "number": "535",
+      "congress": 110,
+      "title": "Rail Worker Emergency Training Act of 2007",
+      "introduced_date": "2007-01-17",
+      "latest_action": {
+        "date": "2007-01-23",
+        "text": "Referred to the Subcommittee on Transportation Security and Infrastructure Protection."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr533-110",
+      "type": "hr",
+      "number": "533",
+      "congress": 110,
+      "title": "Iraq Transition Act of 2007",
+      "introduced_date": "2007-01-17",
+      "latest_action": {
+        "date": "2007-03-20",
+        "text": "Committee Hearings Held."
+      },
+      "policy_area": "International Affairs"
+    },
+    {
+      "id": "hr529-110",
+      "type": "hr",
+      "number": "529",
+      "congress": 110,
+      "title": "Iraq Weapons Accountability Act of 2007",
+      "introduced_date": "2007-01-17",
+      "latest_action": {
+        "date": "2007-01-17",
+        "text": "Referred to the House Committee on Armed Services."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr528-110",
+      "type": "hr",
+      "number": "528",
+      "congress": 110,
+      "title": "Iraq Contracting Fraud Review Act of 2007",
+      "introduced_date": "2007-01-17",
+      "latest_action": {
+        "date": "2007-01-17",
+        "text": "Referred to the House Committee on Armed Services."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr531-110",
+      "type": "hr",
+      "number": "531",
+      "congress": 110,
+      "title": "Retirement Security Education Act of 2007",
+      "introduced_date": "2007-01-17",
+      "latest_action": {
+        "date": "2007-05-18",
+        "text": "Referred to the Subcommittee on Healthy Families and Communities."
+      },
+      "policy_area": "Finance and Financial Sector"
+    },
+    {
+      "id": "hr530-110",
+      "type": "hr",
+      "number": "530",
+      "congress": 110,
+      "title": "Military Educational Parity Act of 2007",
+      "introduced_date": "2007-01-17",
+      "latest_action": {
+        "date": "2007-05-18",
+        "text": "Referred to the Subcommittee on Higher Education, Lifelong Learning, and Competitiveness."
+      },
+      "policy_area": "Education"
+    },
+    {
+      "id": "hr532-110",
+      "type": "hr",
+      "number": "532",
+      "congress": 110,
+      "title": "Seniors Offering Quality Child Care Act of 2007",
+      "introduced_date": "2007-01-17",
+      "latest_action": {
+        "date": "2007-05-18",
+        "text": "Referred to the Subcommittee on Early Childhood, Elementary, and Secondary Education."
+      },
+      "policy_area": "Families"
+    },
+    {
+      "id": "hr534-110",
+      "type": "hr",
+      "number": "534",
+      "congress": 110,
+      "title": "Rail Transit Security and Safety Act of 2007",
+      "introduced_date": "2007-01-17",
+      "latest_action": {
+        "date": "2007-01-29",
+        "text": "Referred to the Subcommittee on Transportation Security and Infrastructure Protection."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hconres268-110",
+      "type": "hconres",
+      "number": "268",
+      "congress": 110,
+      "title": "Expressing the sense of Congress that a commemorative postage stamp should be issued to promote public awareness of, and additional research relating to, scleroderma.",
+      "introduced_date": "2007-12-06",
+      "latest_action": {
+        "date": "2007-12-06",
+        "text": "Referred to the House Committee on Oversight and Government Reform."
+      },
+      "policy_area": "Commemorations"
+    },
+    {
+      "id": "-108",
+      "type": "",
+      "number": "",
+      "congress": 108,
+      "title": "",
+      "introduced_date": "2003-07-25",
+      "latest_action": {
+        "date": "2003-07-25",
+        "text": "On agreeing to the Lynch amendment (A014) Agreed to by voice vote. "
+      },
+      "policy_area": null
+    },
+    {
+      "id": "hr4476-108",
+      "type": "hr",
+      "number": "4476",
+      "congress": 108,
+      "title": "Rail Transit Security and Safety Act of 2004",
+      "introduced_date": "2004-06-01",
+      "latest_action": {
+        "date": "2004-06-02",
+        "text": "Referred to the Subcommittee on Railroads."
+      },
+      "policy_area": "Transportation and Public Works"
+    },
+    {
+      "id": "hr4385-108",
+      "type": "hr",
+      "number": "4385",
+      "congress": 108,
+      "title": "To provide for the suspension from Federal procurement and nonprocurement activities of persons that have not paid a fine resulting from a violation of the Occupational Safety and Health Act of 1970 that causes the death of an employee.",
+      "introduced_date": "2004-05-18",
+      "latest_action": {
+        "date": "2004-06-25",
+        "text": "Referred to the Subcommittee on Workforce Protections."
+      },
+      "policy_area": "Labor and Employment"
+    },
+    {
+      "id": "hr4321-108",
+      "type": "hr",
+      "number": "4321",
+      "congress": 108,
+      "title": "To amend part D of title XVIII of the Social Security Act to require the Secretary of Health and Human Services to negotiate and disclose lowest possible prices for prescription drug prices for Medicare beneficiaries.",
+      "introduced_date": "2004-05-10",
+      "latest_action": {
+        "date": "2004-05-21",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr4241-108",
+      "type": "hr",
+      "number": "4241",
+      "congress": 108,
+      "title": "Helping America Hear Act of 2004",
+      "introduced_date": "2004-04-28",
+      "latest_action": {
+        "date": "2004-05-21",
+        "text": "Referred to the Subcommittee on Civil Service and Agency Organization."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr3510-108",
+      "type": "hr",
+      "number": "3510",
+      "congress": 108,
+      "title": "Angolan Temporary Protected Status Act of 2003",
+      "introduced_date": "2003-11-18",
+      "latest_action": {
+        "date": "2003-12-10",
+        "text": "Referred to the Subcommittee on Immigration, Border Security, and Claims."
+      },
+      "policy_area": "Immigration"
+    },
+    {
+      "id": "hr1951-108",
+      "type": "hr",
+      "number": "1951",
+      "congress": 108,
+      "title": "VA Medical Workforce Enhancement Act of 2003",
+      "introduced_date": "2003-05-05",
+      "latest_action": {
+        "date": "2003-12-06",
+        "text": "See Public Law 108-170."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr372-108",
+      "type": "hr",
+      "number": "372",
+      "congress": 108,
+      "title": "To provide for a pilot program to be conducted by the Department of Veterans Affairs to assess the benefits of providing for pharmacies of the Department of Veterans Affairs to fill prescriptions for drugs and medicines written by private physicians.",
+      "introduced_date": "2003-01-27",
+      "latest_action": {
+        "date": "2003-02-20",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr371-108",
+      "type": "hr",
+      "number": "371",
+      "congress": 108,
+      "title": "Liver Research Enhancement Act ",
+      "introduced_date": "2003-01-27",
+      "latest_action": {
+        "date": "2003-02-03",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr370-108",
+      "type": "hr",
+      "number": "370",
+      "congress": 108,
+      "title": "Women's Autoimmune Diseases Research and Prevention Act",
+      "introduced_date": "2003-01-27",
+      "latest_action": {
+        "date": "2003-02-03",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hres610-108",
+      "type": "hres",
+      "number": "610",
+      "congress": 108,
+      "title": "Expressing the sense of the House of Representatives with respect to the level of funding provided to the National Institutes of Health for carrying out the Autoimmune Diseases Research Plan.",
+      "introduced_date": "2004-04-28",
+      "latest_action": {
+        "date": "2004-05-06",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr5576-107",
+      "type": "hr",
+      "number": "5576",
+      "congress": 107,
+      "title": "Department of Veterans Affairs Nurse Preceptor Pilot Program Act",
+      "introduced_date": "2002-10-08",
+      "latest_action": {
+        "date": "2002-10-18",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr5332-107",
+      "type": "hr",
+      "number": "5332",
+      "congress": 107,
+      "title": "To provide for a pilot program to be conducted by the Department of Veterans Affairs to assess the benefits of providing for pharmacies of the Department of Veterans Affairs to fill prescriptions for drugs and medicines written by private physicians.",
+      "introduced_date": "2002-09-04",
+      "latest_action": {
+        "date": "2002-10-18",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Armed Forces and National Security"
+    },
+    {
+      "id": "hr5104-107",
+      "type": "hr",
+      "number": "5104",
+      "congress": 107,
+      "title": "Women's Autoimmune Diseases Research and Prevention Act",
+      "introduced_date": "2002-07-11",
+      "latest_action": {
+        "date": "2002-07-29",
+        "text": "Referred to the Subcommittee on Health."
+      },
+      "policy_area": "Health"
+    },
+    {
+      "id": "hr4230-107",
+      "type": "hr",
+      "number": "4230",
+      "congress": 107,
+      "title": "To provide for the liquidation or reliquidation of certain entries of tomato sauce preparation.",
+      "introduced_date": "2002-04-15",
+      "latest_action": {
+        "date": "2002-04-15",
+        "text": "Referred to the House Committee on Ways and Means."
+      },
+      "policy_area": "Private Legislation"
+    },
+    {
+      "id": "hr4218-107",
+      "type": "hr",
+      "number": "4218",
+      "congress": 107,
+      "title": "To suspend temporarily the duty on certain filament yarns.",
+      "introduced_date": "2002-04-15",
+      "latest_action": {
+        "date": "2002-04-15",
+        "text": "Referred to the House Committee on Ways and Means."
+      },
+      "policy_area": "Foreign Trade and International Finance"
+    },
+    {
+      "id": "hr4217-107",
+      "type": "hr",
+      "number": "4217",
+      "congress": 107,
+      "title": "To suspend temporarily the duty on certain filament yarns.",
+      "introduced_date": "2002-04-15",
+      "latest_action": {
+        "date": "2002-04-15",
+        "text": "Referred to the House Committee on Ways and Means."
+      },
+      "policy_area": "Foreign Trade and International Finance"
+    },
+    {
+      "id": "hjres107-107",
+      "type": "hjres",
+      "number": "107",
+      "congress": 107,
+      "title": "To commend Sail Boston for its continuing advancement of the maritime heritage of nations, its commemoration of the nautical history of the United States, and its promotion, encouragement, and support of young cadets through training.",
+      "introduced_date": "2002-07-24",
+      "latest_action": {
+        "date": "2002-07-26",
+        "text": "Referred to the Subcommittee on Coast Guard and Maritime Transportation."
+      },
+      "policy_area": "Commemorations"
+    },
+    {
+      "id": "hconres376-107",
+      "type": "hconres",
+      "number": "376",
+      "congress": 107,
+      "title": "Recognizing ironworkers for their service in the rescue and recovery efforts in the aftermath of the terrorist attacks against the United States on September 11, 2001.",
+      "introduced_date": "2002-04-15",
+      "latest_action": {
+        "date": "2002-04-15",
+        "text": "Referred to the House Committee on Government Reform."
+      },
+      "policy_area": "Commemorations"
+    }
+  ]
+}
