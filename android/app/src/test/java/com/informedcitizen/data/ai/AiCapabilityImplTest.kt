@@ -130,6 +130,43 @@ class AiCapabilityImplTest {
         assertEquals(1, factory.engines.size)  // no new engine
     }
 
+    @Test fun `clean completion transitions to Available`() = runTest(UnconfinedTestDispatcher()) {
+        val factory = FakeAiCoreEngineFactory()
+        val impl = AiCapabilityImpl(
+            context = ApplicationProvider.getApplicationContext<Context>(),
+            engineFactory = factory,
+            scope = this,
+        )
+
+        impl.requestDownload()
+        val engine = factory.engines.first()
+        engine.emitDownloadStarted(bytesToDownload = 1_000L)
+        engine.emitProgress(totalBytesDownloaded = 1_000L)
+        engine.emitCompleted()
+        engine.completePrepare()
+
+        assertEquals(AiCapability.Status.Available, impl.status.first())
+    }
+
+    @Test fun `clean prepare return after onDownloadFailed preserves DownloadFailed state`() = runTest(UnconfinedTestDispatcher()) {
+        val factory = FakeAiCoreEngineFactory()
+        val impl = AiCapabilityImpl(
+            context = ApplicationProvider.getApplicationContext<Context>(),
+            engineFactory = factory,
+            scope = this,
+        )
+
+        impl.requestDownload()
+        val engine = factory.engines.first()
+        engine.emitDownloadStarted(bytesToDownload = 1_000L)
+        engine.emitFailed("NETWORK_ERROR")
+        engine.completePrepare()      // simulate AICore returning normally despite the failure callback
+
+        val s = impl.status.first()
+        assertTrue("Expected DownloadFailed, got $s", s is AiCapability.Status.DownloadFailed)
+        assertEquals("NETWORK_ERROR", (s as AiCapability.Status.DownloadFailed).reason)
+    }
+
     private fun makeImpl(factory: FakeAiCoreEngineFactory, scope: CoroutineScope): AiCapabilityImpl =
         AiCapabilityImpl(
             context = context,

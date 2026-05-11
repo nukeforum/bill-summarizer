@@ -90,7 +90,7 @@ class AiCapabilityImpl(
         val engine = engineFactory.create(callback)
         try {
             engine.prepareInferenceEngine()
-            if (state.value !is AiCapability.Status.Available) {
+            if (state.value is AiCapability.Status.ModelDownloading) {
                 state.value = AiCapability.Status.Available
             }
         } catch (t: Throwable) {
