@@ -29,6 +29,7 @@ private fun PreviewSettingsWithSavedReps() = PreviewWrap {
         onStopNow = {},
         onClearCache = {},
         onRequestModelDownload = {},
+        showAiTitlesSection = true,
     )
 }
 
@@ -50,6 +51,7 @@ private fun PreviewSettingsWithoutSavedReps() = PreviewWrap {
         onStopNow = {},
         onClearCache = {},
         onRequestModelDownload = {},
+        showAiTitlesSection = true,
     )
 }
 
@@ -75,6 +77,7 @@ private fun PreviewSettingsAiOnProgressive50() = PreviewWrap {
         onStopNow = {},
         onClearCache = {},
         onRequestModelDownload = {},
+        showAiTitlesSection = true,
     )
 }
 
@@ -100,6 +103,7 @@ private fun PreviewSettingsAiOnProgressive123() = PreviewWrap {
         onStopNow = {},
         onClearCache = {},
         onRequestModelDownload = {},
+        showAiTitlesSection = true,
     )
 }
 
@@ -125,6 +129,7 @@ private fun PreviewSettingsAiNotSupported() = PreviewWrap {
         onStopNow = {},
         onClearCache = {},
         onRequestModelDownload = {},
+        showAiTitlesSection = true,
     )
 }
 
@@ -150,6 +155,7 @@ private fun PreviewSettingsAiDownloadAvailable() = PreviewWrap {
         onStopNow = {},
         onClearCache = {},
         onRequestModelDownload = {},
+        showAiTitlesSection = true,
     )
 }
 
@@ -175,6 +181,7 @@ private fun PreviewSettingsAiDownloadingDeterminate() = PreviewWrap {
         onStopNow = {},
         onClearCache = {},
         onRequestModelDownload = {},
+        showAiTitlesSection = true,
     )
 }
 
@@ -200,6 +207,7 @@ private fun PreviewSettingsAiDownloadingIndeterminate() = PreviewWrap {
         onStopNow = {},
         onClearCache = {},
         onRequestModelDownload = {},
+        showAiTitlesSection = true,
     )
 }
 
@@ -225,5 +233,6 @@ private fun PreviewSettingsAiDownloadFailed() = PreviewWrap {
         onStopNow = {},
         onClearCache = {},
         onRequestModelDownload = {},
+        showAiTitlesSection = true,
     )
 }

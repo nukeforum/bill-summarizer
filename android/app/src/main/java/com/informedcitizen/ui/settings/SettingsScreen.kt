@@ -49,6 +49,7 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.informedcitizen.data.ai.AiCapability
 import com.informedcitizen.data.work.SummarizationScope
+import com.informedcitizen.featureflags.FeatureFlags
 import com.informedcitizen.theme.ThemeFamily
 import com.informedcitizen.theme.ThemeMode
 import com.informedcitizen.theme.ThemePreference
@@ -98,6 +99,7 @@ fun SettingsScreen(
             onStopNow = viewModel::stopSummarizingNow,
             onClearCache = viewModel::clearAiCache,
             onRequestModelDownload = viewModel::requestModelDownload,
+            showAiTitlesSection = FeatureFlags.AI_TITLES,
         )
     }
 }
@@ -118,6 +120,7 @@ internal fun SettingsContent(
     onStopNow: () -> Unit,
     onClearCache: () -> Unit,
     onRequestModelDownload: () -> Unit,
+    showAiTitlesSection: Boolean,
 ) {
     Column(modifier = Modifier.fillMaxWidth().padding(innerPadding)) {
         SectionHeader("Theme")
@@ -133,15 +136,17 @@ internal fun SettingsContent(
                 onPreferenceChange(preference.withMode(newMode))
             },
         )
-        SectionHeader("AI title summarization")
-        AiTitlesSection(
-            state = aiState,
-            onAiTitlesEnabledChange = onAiTitlesEnabledChange,
-            onSummarizationScopeChange = onSummarizationScopeChange,
-            onStopNow = onStopNow,
-            onClearCache = onClearCache,
-            onRequestModelDownload = onRequestModelDownload,
-        )
+        if (showAiTitlesSection) {
+            SectionHeader("AI title summarization")
+            AiTitlesSection(
+                state = aiState,
+                onAiTitlesEnabledChange = onAiTitlesEnabledChange,
+                onSummarizationScopeChange = onSummarizationScopeChange,
+                onStopNow = onStopNow,
+                onClearCache = onClearCache,
+                onRequestModelDownload = onRequestModelDownload,
+            )
+        }
         SectionHeader("Crash reporting")
         CrashReportingRow(
             enabled = crashReportingEnabled,
