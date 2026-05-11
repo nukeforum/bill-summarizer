@@ -3,10 +3,7 @@ package com.informedcitizen.data.ai
 import android.content.Context
 import android.os.Build
 import com.google.ai.edge.aicore.DownloadCallback
-import com.google.ai.edge.aicore.DownloadConfig
 import com.google.ai.edge.aicore.GenerativeAIException
-import com.google.ai.edge.aicore.GenerativeModel
-import com.google.ai.edge.aicore.generationConfig
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.coroutineScope
@@ -23,6 +20,7 @@ import javax.inject.Singleton
 @Singleton
 class AiCapabilityImpl @Inject constructor(
     @param:ApplicationContext private val context: Context,
+    private val engineFactory: AiCoreEngineFactory,
 ) : AiCapability {
 
     override val status: Flow<AiCapability.Status> =
@@ -59,26 +57,16 @@ class AiCapabilityImpl @Inject constructor(
                 state.value = AiCapability.Status.NotSupported
             }
         }
-        val model = GenerativeModel(
-            generationConfig = generationConfig {
-                this.context = this@AiCapabilityImpl.context
-                temperature = 0.2f
-                topK = 16
-                maxOutputTokens = 8
-            },
-            downloadConfig = DownloadConfig(callback),
-        )
+        val engine = engineFactory.create(callback)
         try {
-            withContext(Dispatchers.IO) { model.prepareInferenceEngine() }
+            withContext(Dispatchers.IO) { engine.prepareInferenceEngine() }
             state.value = AiCapability.Status.Available
         } catch (_: Throwable) {
-            // Failed preparation: leave whatever the DownloadCallback put in
-            // (e.g. NotSupported / ModelDownloading). Default is NotSupported.
             if (state.value === AiCapability.Status.Available) {
                 state.value = AiCapability.Status.NotSupported
             }
         } finally {
-            runCatching { model.close() }
+            engine.close()
         }
     }
 }
