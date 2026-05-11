@@ -27,3 +27,16 @@
 -keep class * implements com.google.firebase.components.ComponentRegistrar {
     <init>();
 }
+
+# Room generates a <DatabaseName>_Impl class for each RoomDatabase and
+# instantiates it reflectively via Class.getDeclaredConstructor().newInstance().
+# androidx.work bundles its own WorkDatabase whose generated Impl lives in
+# androidx.work.impl; the consumer rules currently only keep the names, so
+# R8 strips the no-arg ctor. Without this rule WorkManager fails to open
+# its database with NoSuchMethodException at first job submission.
+-keep class * extends androidx.room.RoomDatabase {
+    <init>();
+}
+-keep class **_Impl extends androidx.room.RoomDatabase {
+    <init>();
+}
