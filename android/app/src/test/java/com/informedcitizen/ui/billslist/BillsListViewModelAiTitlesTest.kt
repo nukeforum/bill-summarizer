@@ -14,6 +14,8 @@ import com.informedcitizen.data.cache.BillSummaryEntry
 import com.informedcitizen.data.model.Action
 import com.informedcitizen.data.model.Bill
 import com.informedcitizen.data.model.BillsManifest
+import com.informedcitizen.data.model.CongressEntry
+import com.informedcitizen.data.model.CongressesIndex
 import com.informedcitizen.data.model.Outcome
 import com.informedcitizen.data.model.SessionCalendar
 import com.informedcitizen.data.model.SessionCalendarSource
@@ -160,7 +162,11 @@ private fun billFixture(id: String): Bill = Bill(
 )
 
 private class StubBillsApi(private val manifest: BillsManifest) : BillsApi {
-    override suspend fun getBills(): BillsManifest = manifest
+    override suspend fun getCongressesIndex(): CongressesIndex = CongressesIndex(
+        currentCongress = manifest.congress,
+        congresses = listOf(CongressEntry(manifest.congress, "congress${manifest.congress}_bills.json", isCurrent = true)),
+    )
+    override suspend fun getBillsManifest(url: String): BillsManifest = manifest
     override suspend fun getSessionCalendar(): SessionCalendar = SessionCalendar(
         generatedAt = "2026-01-01",
         source = SessionCalendarSource(house = "stub", senate = "stub"),

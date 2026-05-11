@@ -3,6 +3,8 @@ package com.informedcitizen.data.repository
 import com.informedcitizen.crash.FakeCrashReporter
 import com.informedcitizen.data.api.BillsApi
 import com.informedcitizen.data.model.BillsManifest
+import com.informedcitizen.data.model.CongressEntry
+import com.informedcitizen.data.model.CongressesIndex
 import com.informedcitizen.data.model.ChamberCalendar
 import com.informedcitizen.data.model.SessionCalendar
 import com.informedcitizen.data.model.SessionCalendarSource
@@ -72,7 +74,8 @@ class SessionCalendarRepositoryTest {
 
     private class StubApi(private val calendar: SessionCalendar) : BillsApi {
         var callCount = 0
-        override suspend fun getBills(): BillsManifest = error("not used in this test")
+        override suspend fun getCongressesIndex(): CongressesIndex = error("not used in this test")
+        override suspend fun getBillsManifest(url: String): BillsManifest = error("not used in this test")
         override suspend fun getSessionCalendar(): SessionCalendar {
             callCount += 1
             return calendar
@@ -80,7 +83,8 @@ class SessionCalendarRepositoryTest {
     }
 
     private class ThrowingApi(private val throwable: Throwable) : BillsApi {
-        override suspend fun getBills(): BillsManifest = error("not used in this test")
+        override suspend fun getCongressesIndex(): CongressesIndex = error("not used in this test")
+        override suspend fun getBillsManifest(url: String): BillsManifest = error("not used in this test")
         override suspend fun getSessionCalendar(): SessionCalendar = throw throwable
     }
 }

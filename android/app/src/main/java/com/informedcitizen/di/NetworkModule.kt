@@ -15,7 +15,8 @@ import retrofit2.converter.kotlinx.serialization.asConverterFactory
 import javax.inject.Singleton
 
 // GitHub Pages site published from /docs by .github/workflows/update-bills.yml.
-// The Retrofit BillsApi appends data/bills.json to this base.
+// BillsApi resolves data/congresses.json first, then fetches the per-Congress
+// manifest path (e.g. data/congress119_bills.json) reported by that index.
 private const val BILLS_BASE_URL = "https://nukeforum.github.io/bill-summarizer/"
 
 @Module

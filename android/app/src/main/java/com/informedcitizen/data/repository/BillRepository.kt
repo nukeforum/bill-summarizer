@@ -32,7 +32,10 @@ class BillRepository @Inject constructor(
             return@withLock Result.success(_bills.value)
         }
         runCatching {
-            val manifest = api.getBills()
+            val index = api.getCongressesIndex()
+            val entry = index.congresses.firstOrNull { it.congress == index.currentCongress }
+                ?: error("congresses.json has no entry for current_congress=${index.currentCongress}")
+            val manifest = api.getBillsManifest("data/${entry.manifestPath}")
             _bills.value = manifest.bills
             dataStore.edit { it[LAST_FETCHED_KEY] = System.currentTimeMillis() }
             manifest.bills

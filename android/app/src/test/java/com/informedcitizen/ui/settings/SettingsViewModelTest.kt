@@ -7,6 +7,8 @@ import com.informedcitizen.data.cache.BillSummaryCache
 import com.informedcitizen.data.cache.BillSummaryEntry
 import com.informedcitizen.data.ai.BillSummary
 import com.informedcitizen.data.model.BillsManifest
+import com.informedcitizen.data.model.CongressEntry
+import com.informedcitizen.data.model.CongressesIndex
 import com.informedcitizen.data.model.SessionCalendar
 import com.informedcitizen.data.model.SessionCalendarSource
 import com.informedcitizen.data.repository.AiTitlesPreferenceRepository
@@ -65,7 +67,12 @@ class SettingsViewModelTest {
     }
 
     private class StubBillsApi : BillsApi {
-        override suspend fun getBills() = BillsManifest(generatedAt = "x", congress = 119, bills = emptyList())
+        override suspend fun getCongressesIndex() = CongressesIndex(
+            currentCongress = 119,
+            congresses = listOf(CongressEntry(119, "congress119_bills.json", isCurrent = true)),
+        )
+        override suspend fun getBillsManifest(url: String) =
+            BillsManifest(generatedAt = "x", congress = 119, bills = emptyList())
         override suspend fun getSessionCalendar() = SessionCalendar(
             generatedAt = "x",
             source = SessionCalendarSource(house = "", senate = ""),
