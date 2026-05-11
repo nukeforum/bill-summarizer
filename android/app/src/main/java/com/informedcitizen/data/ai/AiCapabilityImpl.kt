@@ -13,6 +13,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
+import kotlin.jvm.Volatile
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -37,7 +38,7 @@ class AiCapabilityImpl(
     override val status: Flow<AiCapability.Status> = state.asStateFlow()
 
     private var downloadJob: Job? = null
-    private var bytesToDownload: Long = 0L
+    @Volatile private var bytesToDownload: Long = 0L
 
     private fun initialStatus(): AiCapability.Status =
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S) {
@@ -54,6 +55,9 @@ class AiCapabilityImpl(
             AiCapability.Status.DownloadAvailable,
             is AiCapability.Status.DownloadFailed -> Unit
         }
+        // Guards against a retry firing while the prior runDownload coroutine is
+        // still draining prepareInferenceEngine after a terminal callback set state
+        // to DownloadFailed. Without this, two runDownload coroutines could race.
         if (downloadJob?.isActive == true) return
         bytesToDownload = 0L
         downloadJob = scope.launch { runDownload() }
