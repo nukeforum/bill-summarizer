@@ -18,10 +18,12 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
@@ -95,6 +97,7 @@ fun SettingsScreen(
             onSummarizationScopeChange = viewModel::setSummarizationScope,
             onStopNow = viewModel::stopSummarizingNow,
             onClearCache = viewModel::clearAiCache,
+            onRequestModelDownload = viewModel::requestModelDownload,
         )
     }
 }
@@ -114,6 +117,7 @@ internal fun SettingsContent(
     onSummarizationScopeChange: (SummarizationScope) -> Unit,
     onStopNow: () -> Unit,
     onClearCache: () -> Unit,
+    onRequestModelDownload: () -> Unit,
 ) {
     Column(modifier = Modifier.fillMaxWidth().padding(innerPadding)) {
         SectionHeader("Theme")
@@ -136,6 +140,7 @@ internal fun SettingsContent(
             onSummarizationScopeChange = onSummarizationScopeChange,
             onStopNow = onStopNow,
             onClearCache = onClearCache,
+            onRequestModelDownload = onRequestModelDownload,
         )
         SectionHeader("Crash reporting")
         CrashReportingRow(
@@ -171,6 +176,7 @@ private fun AiTitlesSection(
     onSummarizationScopeChange: (SummarizationScope) -> Unit,
     onStopNow: () -> Unit,
     onClearCache: () -> Unit,
+    onRequestModelDownload: () -> Unit,
 ) {
     var helpOpen by remember { mutableStateOf(false) }
 
@@ -180,7 +186,7 @@ private fun AiTitlesSection(
     ) {
         Switch(
             checked = state.aiTitlesEnabled,
-            enabled = state.aiCapability !is AiCapability.Status.NotSupported,
+            enabled = state.aiCapability is AiCapability.Status.Available,
             onCheckedChange = onAiTitlesEnabledChange,
         )
         Spacer(Modifier.width(12.dp))
@@ -190,12 +196,16 @@ private fun AiTitlesSection(
                 style = MaterialTheme.typography.bodyLarge,
             )
             Text(
-                text = when (state.aiCapability) {
+                text = when (val cap = state.aiCapability) {
                     AiCapability.Status.Available -> "Available — Gemini Nano on this device"
-                    is AiCapability.Status.ModelDownloading -> "Available — model downloading"
+                    AiCapability.Status.DownloadAvailable ->
+                        "Download Gemini Nano to enable AI titles. ~1 GB, one-time, stays on device."
+                    is AiCapability.Status.ModelDownloading ->
+                        if (cap.progress >= 0f) "Downloading Gemini Nano… ${(cap.progress * 100).toInt()}%"
+                        else "Downloading Gemini Nano…"
+                    is AiCapability.Status.DownloadFailed ->
+                        "Couldn't finish downloading Gemini Nano. ${cap.reason}"
                     AiCapability.Status.NotSupported -> "Not supported on this device"
-                    AiCapability.Status.DownloadAvailable -> "Available — model downloading" // placeholder, rewritten in Task 7
-                    is AiCapability.Status.DownloadFailed -> "Not supported on this device" // placeholder, rewritten in Task 7
                 },
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
@@ -204,6 +214,37 @@ private fun AiTitlesSection(
         IconButton(onClick = { helpOpen = true }) {
             Icon(Icons.Outlined.Info, contentDescription = "About AI summarization")
         }
+    }
+
+    when (val cap = state.aiCapability) {
+        AiCapability.Status.DownloadAvailable -> {
+            Row(modifier = Modifier.padding(horizontal = 20.dp, vertical = 8.dp)) {
+                Button(onClick = onRequestModelDownload) { Text("Download Gemini Nano") }
+            }
+        }
+        is AiCapability.Status.ModelDownloading -> {
+            if (cap.progress >= 0f) {
+                LinearProgressIndicator(
+                    progress = { cap.progress },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 20.dp, vertical = 8.dp),
+                )
+            } else {
+                LinearProgressIndicator(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 20.dp, vertical = 8.dp),
+                )
+            }
+        }
+        is AiCapability.Status.DownloadFailed -> {
+            Row(modifier = Modifier.padding(horizontal = 20.dp, vertical = 8.dp)) {
+                Button(onClick = onRequestModelDownload) { Text("Try again") }
+            }
+        }
+        AiCapability.Status.Available,
+        AiCapability.Status.NotSupported -> Unit
     }
 
     if (state.aiTitlesEnabled) {

@@ -28,6 +28,7 @@ private fun PreviewSettingsWithSavedReps() = PreviewWrap {
         onSummarizationScopeChange = {},
         onStopNow = {},
         onClearCache = {},
+        onRequestModelDownload = {},
     )
 }
 
@@ -48,6 +49,7 @@ private fun PreviewSettingsWithoutSavedReps() = PreviewWrap {
         onSummarizationScopeChange = {},
         onStopNow = {},
         onClearCache = {},
+        onRequestModelDownload = {},
     )
 }
 
@@ -72,6 +74,7 @@ private fun PreviewSettingsAiOnProgressive50() = PreviewWrap {
         onSummarizationScopeChange = {},
         onStopNow = {},
         onClearCache = {},
+        onRequestModelDownload = {},
     )
 }
 
@@ -96,6 +99,7 @@ private fun PreviewSettingsAiOnProgressive123() = PreviewWrap {
         onSummarizationScopeChange = {},
         onStopNow = {},
         onClearCache = {},
+        onRequestModelDownload = {},
     )
 }
 
@@ -120,5 +124,6 @@ private fun PreviewSettingsAiNotSupported() = PreviewWrap {
         onSummarizationScopeChange = {},
         onStopNow = {},
         onClearCache = {},
+        onRequestModelDownload = {},
     )
 }
