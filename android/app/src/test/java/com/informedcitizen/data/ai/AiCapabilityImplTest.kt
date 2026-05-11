@@ -167,6 +167,34 @@ class AiCapabilityImplTest {
         assertEquals("NETWORK_ERROR", (s as AiCapability.Status.DownloadFailed).reason)
     }
 
+    @Test fun `NOT_AVAILABLE from prepareInferenceEngine maps to NotSupported`() = runTest(UnconfinedTestDispatcher()) {
+        val factory = FakeAiCoreEngineFactory()
+        val impl = makeImpl(factory, this)
+
+        impl.requestDownload()
+        val engine = factory.engines.first()
+        engine.failPrepare(
+            RuntimeException(
+                "AICore failed with error type 2-INFERENCE_ERROR and error code " +
+                    "8-NOT_AVAILABLE: Required LLM feature not found",
+            ),
+        )
+
+        assertEquals(AiCapability.Status.NotSupported, impl.status.first())
+    }
+
+    @Test fun `NOT_AVAILABLE nested in cause chain maps to NotSupported`() = runTest(UnconfinedTestDispatcher()) {
+        val factory = FakeAiCoreEngineFactory()
+        val impl = makeImpl(factory, this)
+
+        impl.requestDownload()
+        val engine = factory.engines.first()
+        val cause = RuntimeException("error code 8-NOT_AVAILABLE: Required LLM feature not found")
+        engine.failPrepare(RuntimeException("AICore wrapper", cause))
+
+        assertEquals(AiCapability.Status.NotSupported, impl.status.first())
+    }
+
     private fun makeImpl(factory: FakeAiCoreEngineFactory, scope: CoroutineScope): AiCapabilityImpl =
         AiCapabilityImpl(
             context = context,

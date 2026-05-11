@@ -2,6 +2,7 @@ package com.informedcitizen.data.ai
 
 import android.content.Context
 import android.os.Build
+import android.util.Log
 import com.google.ai.edge.aicore.DownloadCallback
 import com.google.ai.edge.aicore.GenerativeAIException
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -88,24 +89,52 @@ class AiCapabilityImpl(
             }
         }
         val engine = engineFactory.create(callback)
+        Log.d(TAG, "prepareInferenceEngine: starting; current state=${state.value}")
         try {
             engine.prepareInferenceEngine()
+            Log.d(TAG, "prepareInferenceEngine: returned cleanly; current state=${state.value}")
             if (state.value is AiCapability.Status.ModelDownloading) {
                 state.value = AiCapability.Status.Available
             }
         } catch (t: Throwable) {
+            Log.w(TAG, "prepareInferenceEngine threw; current state=${state.value}", t)
             val s = state.value
             if (s !is AiCapability.Status.DownloadFailed &&
                 s !is AiCapability.Status.NotSupported &&
                 s !is AiCapability.Status.Available
             ) {
-                state.value = AiCapability.Status.DownloadFailed(
-                    reason = "Check your connection and try again.",
-                )
+                state.value = if (isFeatureUnavailable(t)) {
+                    AiCapability.Status.NotSupported
+                } else {
+                    AiCapability.Status.DownloadFailed(
+                        reason = "Check your connection and try again.",
+                    )
+                }
             }
         } finally {
             engine.close()
         }
+    }
+
+    /**
+     * AICore reports app-allowlist denial as a synchronous
+     * `InferenceException` with the marker `NOT_AVAILABLE` in its message
+     * (the actual text is "AICore failed with error type 2-INFERENCE_ERROR
+     * and error code 8-NOT_AVAILABLE: Required LLM feature not found").
+     * This state is terminal — retrying won't help, so it's mapped to
+     * `NotSupported` rather than `DownloadFailed`.
+     */
+    private fun isFeatureUnavailable(t: Throwable): Boolean {
+        var current: Throwable? = t
+        while (current != null) {
+            if (current.message?.contains("NOT_AVAILABLE") == true) return true
+            current = current.cause
+        }
+        return false
+    }
+
+    private companion object {
+        const val TAG = "AiCapability"
     }
 
     private fun progressFraction(downloaded: Long): Float {
