@@ -117,6 +117,26 @@ class RepsListViewModelTest {
     }
 
     @Test
+    fun `deleteSavedReps clears saved ids and transitions to NoLocation`() = runTest {
+        val prefs = newPrefsRepo()
+        prefs.set(setOf("H1", "S1"))
+        val members = StubMemberRepository(
+            RepsForLocation(
+                house = listOf(aMember("H1", "house")),
+                senators = listOf(aMember("S1", "senate")),
+            ),
+        )
+        val vm = RepsListViewModel(prefs, members).also { it.congressProvider = { 119 } }
+        vm.uiState.first { it is RepsListUiState.Loaded }
+
+        vm.deleteSavedReps()
+
+        val after = vm.uiState.first { it == RepsListUiState.NoLocation }
+        assertEquals(RepsListUiState.NoLocation, after)
+        assertTrue(prefs.savedIds.first().isEmpty())
+    }
+
+    @Test
     fun `emits Error when repository throws`() = runTest {
         val prefs = newPrefsRepo()
         prefs.set(setOf("H1"))

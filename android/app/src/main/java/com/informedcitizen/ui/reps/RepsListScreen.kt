@@ -39,6 +39,7 @@ fun RepsListScreen(
         modifier = modifier,
         onMemberClick = onMemberClick,
         onChangeLocation = onChangeLocation,
+        onDeleteSavedReps = viewModel::deleteSavedReps,
     )
 }
 
@@ -47,6 +48,7 @@ internal fun RepsListContent(
     state: RepsListUiState,
     onMemberClick: (String) -> Unit,
     onChangeLocation: () -> Unit,
+    onDeleteSavedReps: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val scroll = rememberScrollState()
@@ -70,7 +72,7 @@ internal fun RepsListContent(
             )
 
             if (state is RepsListUiState.Loaded) {
-                IconButton(onClick = onChangeLocation) {
+                IconButton(onClick = onDeleteSavedReps) {
                     Icon(Icons.Filled.Delete, contentDescription = "Delete")
                 }
             }

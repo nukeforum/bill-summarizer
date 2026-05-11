@@ -15,6 +15,7 @@ private fun PreviewRepsListLoading() = PreviewWrap {
         state = RepsListUiState.Loading,
         onMemberClick = {},
         onChangeLocation = {},
+        onDeleteSavedReps = {},
     )
 }
 
@@ -25,6 +26,7 @@ private fun PreviewRepsListNoLocation() = PreviewWrap {
         state = RepsListUiState.NoLocation,
         onMemberClick = {},
         onChangeLocation = {},
+        onDeleteSavedReps = {},
     )
 }
 
@@ -38,6 +40,7 @@ private fun PreviewRepsListLoadedFull() = PreviewWrap {
         ),
         onMemberClick = {},
         onChangeLocation = {},
+        onDeleteSavedReps = {},
     )
 }
 
@@ -51,6 +54,7 @@ private fun PreviewRepsListLoadedEmptySenators() = PreviewWrap {
         ),
         onMemberClick = {},
         onChangeLocation = {},
+        onDeleteSavedReps = {},
     )
 }
 
@@ -61,6 +65,7 @@ private fun PreviewRepsListStaleSavedReps() = PreviewWrap {
         state = RepsListUiState.StaleSavedReps,
         onMemberClick = {},
         onChangeLocation = {},
+        onDeleteSavedReps = {},
     )
 }
 
@@ -71,6 +76,7 @@ private fun PreviewRepsListError() = PreviewWrap {
         state = RepsListUiState.Error(message = "Network unavailable."),
         onMemberClick = {},
         onChangeLocation = {},
+        onDeleteSavedReps = {},
     )
 }
 

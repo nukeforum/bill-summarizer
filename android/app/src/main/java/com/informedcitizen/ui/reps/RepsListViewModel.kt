@@ -32,6 +32,10 @@ class RepsListViewModel @Inject constructor(
         observeSavedReps()
     }
 
+    fun deleteSavedReps() {
+        viewModelScope.launch { savedReps.forget() }
+    }
+
     private fun observeSavedReps() {
         viewModelScope.launch {
             savedReps.savedIds.collectLatest { ids ->
