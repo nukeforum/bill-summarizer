@@ -36,6 +36,11 @@ class AiCapabilityImpl @Inject constructor(
             }.flowOn(Dispatchers.IO)
         }
 
+    override fun requestDownload() {
+        // A later task wires the real implementation. This stub keeps the type
+        // system happy for the Task 3 commit.
+    }
+
     private suspend fun probe(state: MutableStateFlow<AiCapability.Status>) {
         val callback = object : DownloadCallback {
             override fun onDownloadStarted(bytesToDownload: Long) {

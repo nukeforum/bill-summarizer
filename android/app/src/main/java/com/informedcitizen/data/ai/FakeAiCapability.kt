@@ -7,5 +7,8 @@ class FakeAiCapability(
 ) : AiCapability {
     private val state = MutableStateFlow(initial)
     override val status = state
+    var downloadRequests: Int = 0
+        private set
+    override fun requestDownload() { downloadRequests++ }
     fun set(status: AiCapability.Status) { state.value = status }
 }
