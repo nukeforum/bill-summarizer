@@ -69,6 +69,37 @@ class SettingsViewModelAiTitlesTest {
         )
     }
 
+    @Test fun `requestModelDownload forwards to capability`() = runTest {
+        val cap = FakeAiCapability(AiCapability.Status.DownloadAvailable)
+        val vm = makeVm(capability = cap)
+
+        vm.requestModelDownload()
+
+        assertEquals(1, cap.downloadRequests)
+    }
+
+    @Test fun `ai capability sealed-class states surface in uiState`() = runTest {
+        val cap = FakeAiCapability(AiCapability.Status.DownloadAvailable)
+        val vm = makeVm(capability = cap)
+
+        assertEquals(
+            AiCapability.Status.DownloadAvailable,
+            vm.uiState.first { it.aiCapability is AiCapability.Status.DownloadAvailable }.aiCapability,
+        )
+
+        cap.set(AiCapability.Status.ModelDownloading(0.42f))
+        assertEquals(
+            AiCapability.Status.ModelDownloading(0.42f),
+            vm.uiState.first { it.aiCapability is AiCapability.Status.ModelDownloading }.aiCapability,
+        )
+
+        cap.set(AiCapability.Status.DownloadFailed("NETWORK"))
+        assertEquals(
+            AiCapability.Status.DownloadFailed("NETWORK"),
+            vm.uiState.first { it.aiCapability is AiCapability.Status.DownloadFailed }.aiCapability,
+        )
+    }
+
     private fun makeVm(
         capability: FakeAiCapability = FakeAiCapability(),
     ): SettingsViewModel {

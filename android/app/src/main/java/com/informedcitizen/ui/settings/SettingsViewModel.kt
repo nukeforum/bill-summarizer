@@ -87,4 +87,6 @@ class SettingsViewModel @Inject constructor(
 
     fun stopSummarizingNow() = controller.stopNow()
     fun clearAiCache() = controller.clearCache()
+
+    fun requestModelDownload() = aiCapability.requestDownload()
 }
