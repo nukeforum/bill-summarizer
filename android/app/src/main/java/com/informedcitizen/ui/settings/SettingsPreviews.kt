@@ -127,3 +127,103 @@ private fun PreviewSettingsAiNotSupported() = PreviewWrap {
         onRequestModelDownload = {},
     )
 }
+
+@PreviewLightDark
+@Composable
+private fun PreviewSettingsAiDownloadAvailable() = PreviewWrap {
+    SettingsContent(
+        preference = ThemePreference.MATERIAL_LIGHT,
+        crashReportingEnabled = false,
+        hasSavedReps = false,
+        aiState = SettingsAiUiState(
+            aiTitlesEnabled = false,
+            aiCapability = AiCapability.Status.DownloadAvailable,
+            summarizationScope = SummarizationScope.DEFAULT,
+        ),
+        innerPadding = PaddingValues(0.dp),
+        onPreferenceChange = {},
+        onCrashReportingEnabledChange = {},
+        onForgetSavedReps = {},
+        onCalendarClick = {},
+        onAiTitlesEnabledChange = {},
+        onSummarizationScopeChange = {},
+        onStopNow = {},
+        onClearCache = {},
+        onRequestModelDownload = {},
+    )
+}
+
+@PreviewLightDark
+@Composable
+private fun PreviewSettingsAiDownloadingDeterminate() = PreviewWrap {
+    SettingsContent(
+        preference = ThemePreference.MATERIAL_LIGHT,
+        crashReportingEnabled = false,
+        hasSavedReps = false,
+        aiState = SettingsAiUiState(
+            aiTitlesEnabled = false,
+            aiCapability = AiCapability.Status.ModelDownloading(0.42f),
+            summarizationScope = SummarizationScope.DEFAULT,
+        ),
+        innerPadding = PaddingValues(0.dp),
+        onPreferenceChange = {},
+        onCrashReportingEnabledChange = {},
+        onForgetSavedReps = {},
+        onCalendarClick = {},
+        onAiTitlesEnabledChange = {},
+        onSummarizationScopeChange = {},
+        onStopNow = {},
+        onClearCache = {},
+        onRequestModelDownload = {},
+    )
+}
+
+@PreviewLightDark
+@Composable
+private fun PreviewSettingsAiDownloadingIndeterminate() = PreviewWrap {
+    SettingsContent(
+        preference = ThemePreference.MATERIAL_LIGHT,
+        crashReportingEnabled = false,
+        hasSavedReps = false,
+        aiState = SettingsAiUiState(
+            aiTitlesEnabled = false,
+            aiCapability = AiCapability.Status.ModelDownloading(-1f),
+            summarizationScope = SummarizationScope.DEFAULT,
+        ),
+        innerPadding = PaddingValues(0.dp),
+        onPreferenceChange = {},
+        onCrashReportingEnabledChange = {},
+        onForgetSavedReps = {},
+        onCalendarClick = {},
+        onAiTitlesEnabledChange = {},
+        onSummarizationScopeChange = {},
+        onStopNow = {},
+        onClearCache = {},
+        onRequestModelDownload = {},
+    )
+}
+
+@PreviewLightDark
+@Composable
+private fun PreviewSettingsAiDownloadFailed() = PreviewWrap {
+    SettingsContent(
+        preference = ThemePreference.MATERIAL_LIGHT,
+        crashReportingEnabled = false,
+        hasSavedReps = false,
+        aiState = SettingsAiUiState(
+            aiTitlesEnabled = false,
+            aiCapability = AiCapability.Status.DownloadFailed("Check your connection and try again."),
+            summarizationScope = SummarizationScope.DEFAULT,
+        ),
+        innerPadding = PaddingValues(0.dp),
+        onPreferenceChange = {},
+        onCrashReportingEnabledChange = {},
+        onForgetSavedReps = {},
+        onCalendarClick = {},
+        onAiTitlesEnabledChange = {},
+        onSummarizationScopeChange = {},
+        onStopNow = {},
+        onClearCache = {},
+        onRequestModelDownload = {},
+    )
+}
