@@ -84,7 +84,7 @@ private fun PreviewSettingsAiOnProgressive123() = PreviewWrap {
         hasSavedReps = false,
         aiState = SettingsAiUiState(
             aiTitlesEnabled = true,
-            aiCapability = AiCapability.Status.ModelDownloading,
+            aiCapability = AiCapability.Status.ModelDownloading(0.42f),
             summarizationScope = SummarizationScope.Progressive(123),
         ),
         innerPadding = PaddingValues(0.dp),

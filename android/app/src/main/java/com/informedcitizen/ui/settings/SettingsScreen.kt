@@ -180,7 +180,7 @@ private fun AiTitlesSection(
     ) {
         Switch(
             checked = state.aiTitlesEnabled,
-            enabled = state.aiCapability != AiCapability.Status.NotSupported,
+            enabled = state.aiCapability !is AiCapability.Status.NotSupported,
             onCheckedChange = onAiTitlesEnabledChange,
         )
         Spacer(Modifier.width(12.dp))
@@ -192,8 +192,10 @@ private fun AiTitlesSection(
             Text(
                 text = when (state.aiCapability) {
                     AiCapability.Status.Available -> "Available — Gemini Nano on this device"
-                    AiCapability.Status.ModelDownloading -> "Available — model downloading"
+                    is AiCapability.Status.ModelDownloading -> "Available — model downloading"
                     AiCapability.Status.NotSupported -> "Not supported on this device"
+                    AiCapability.Status.DownloadAvailable -> "Available — model downloading"
+                    is AiCapability.Status.DownloadFailed -> "Not supported on this device"
                 },
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,

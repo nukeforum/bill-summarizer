@@ -111,7 +111,7 @@ class BillsListViewModel @Inject constructor(
         topic: BillTopic?,
     ): BillsListUiState.Success {
         val capable = capStatus == AiCapability.Status.Available ||
-            capStatus == AiCapability.Status.ModelDownloading
+            capStatus is AiCapability.Status.ModelDownloading
 
         val visibleSummaries: Map<String, BillCardSummary> = if (aiEnabled) {
             cacheRows.mapValues { (_, entry) ->

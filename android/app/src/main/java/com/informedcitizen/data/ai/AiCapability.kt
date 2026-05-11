@@ -5,9 +5,11 @@ import kotlinx.coroutines.flow.Flow
 interface AiCapability {
     val status: Flow<Status>
 
-    enum class Status {
-        Available,
-        ModelDownloading,
-        NotSupported,
+    sealed class Status {
+        object Available : Status()
+        object DownloadAvailable : Status()
+        data class ModelDownloading(val progress: Float) : Status()
+        data class DownloadFailed(val reason: String) : Status()
+        object NotSupported : Status()
     }
 }

@@ -31,7 +31,7 @@ class AiCapabilityImpl @Inject constructor(
         } else {
             flow {
                 coroutineScope {
-                    val state = MutableStateFlow(AiCapability.Status.NotSupported)
+                    val state = MutableStateFlow<AiCapability.Status>(AiCapability.Status.NotSupported)
                     launch { probe(state) }
                     state.collect { emit(it) }
                 }
@@ -41,13 +41,13 @@ class AiCapabilityImpl @Inject constructor(
     private suspend fun probe(state: MutableStateFlow<AiCapability.Status>) {
         val callback = object : DownloadCallback {
             override fun onDownloadStarted(bytesToDownload: Long) {
-                state.value = AiCapability.Status.ModelDownloading
+                state.value = AiCapability.Status.ModelDownloading(-1f)
             }
             override fun onDownloadPending() {
-                state.value = AiCapability.Status.ModelDownloading
+                state.value = AiCapability.Status.ModelDownloading(-1f)
             }
             override fun onDownloadProgress(totalBytesDownloaded: Long) {
-                state.value = AiCapability.Status.ModelDownloading
+                state.value = AiCapability.Status.ModelDownloading(-1f)
             }
             override fun onDownloadCompleted() {
                 state.value = AiCapability.Status.Available
@@ -74,7 +74,7 @@ class AiCapabilityImpl @Inject constructor(
         } catch (_: Throwable) {
             // Failed preparation: leave whatever the DownloadCallback put in
             // (e.g. NotSupported / ModelDownloading). Default is NotSupported.
-            if (state.value == AiCapability.Status.Available) {
+            if (state.value === AiCapability.Status.Available) {
                 state.value = AiCapability.Status.NotSupported
             }
         } finally {
