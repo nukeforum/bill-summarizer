@@ -194,8 +194,8 @@ private fun AiTitlesSection(
                     AiCapability.Status.Available -> "Available — Gemini Nano on this device"
                     is AiCapability.Status.ModelDownloading -> "Available — model downloading"
                     AiCapability.Status.NotSupported -> "Not supported on this device"
-                    AiCapability.Status.DownloadAvailable -> "Available — model downloading"
-                    is AiCapability.Status.DownloadFailed -> "Not supported on this device"
+                    AiCapability.Status.DownloadAvailable -> "Available — model downloading" // placeholder, rewritten in Task 7
+                    is AiCapability.Status.DownloadFailed -> "Not supported on this device" // placeholder, rewritten in Task 7
                 },
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
