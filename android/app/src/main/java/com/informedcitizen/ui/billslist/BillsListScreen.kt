@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -49,6 +50,10 @@ fun BillsListScreen(
 
     Scaffold(
         modifier = modifier,
+        // Hosted inside CongressShell.Scaffold which already consumes system bar insets.
+        // Without these zero-overrides, the nested Scaffold + TopAppBar reserve status-bar
+        // inset again, leaving a tall dead band above the title.
+        contentWindowInsets = WindowInsets(0, 0, 0, 0),
         topBar = {
             TopAppBar(
                 title = { Text("Recently Voted On") },
@@ -57,6 +62,7 @@ fun BillsListScreen(
                         Icon(Icons.Filled.Settings, contentDescription = "Settings")
                     }
                 },
+                windowInsets = WindowInsets(0, 0, 0, 0),
             )
         },
     ) { innerPadding ->
