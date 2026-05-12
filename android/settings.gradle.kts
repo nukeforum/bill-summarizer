@@ -22,3 +22,4 @@ rootProject.name = "Informed Citizen"
 include(":app")
 include(":core:model")
 include(":core:crash")
+include(":core:datastore")

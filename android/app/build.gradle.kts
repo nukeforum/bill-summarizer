@@ -104,6 +104,7 @@ afterEvaluate {
 dependencies {
   implementation(project(":core:model"))
   implementation(project(":core:crash"))
+  implementation(project(":core:datastore"))
 
   val composeBom = platform(libs.androidx.compose.bom)
   implementation(composeBom)
@@ -159,8 +160,7 @@ dependencies {
   implementation(libs.okhttp.logging.interceptor)
   implementation(libs.kotlinx.serialization.json)
 
-  // DataStore
-  implementation(libs.androidx.datastore.preferences)
+  // DataStore types come via :core:datastore (api-exposed).
 
   // Chrome Custom Tabs
   implementation(libs.androidx.browser)

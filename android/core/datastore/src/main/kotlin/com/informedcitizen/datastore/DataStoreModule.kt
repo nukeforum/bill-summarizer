@@ -1,4 +1,4 @@
-package com.informedcitizen.di
+package com.informedcitizen.datastore
 
 import android.content.Context
 import androidx.datastore.core.DataStore
