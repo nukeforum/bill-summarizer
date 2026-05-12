@@ -1,9 +1,8 @@
 plugins {
-  alias(libs.plugins.android.application)
+  id("informedcitizen.android.application")
+  id("informedcitizen.android.hilt")
   alias(libs.plugins.compose.compiler)
   alias(libs.plugins.kotlin.serialization)
-  alias(libs.plugins.hilt.android)
-  alias(libs.plugins.ksp)
   alias(libs.plugins.google.services)
   alias(libs.plugins.firebase.crashlytics)
   alias(libs.plugins.sqldelight)
@@ -32,11 +31,8 @@ val releaseSigningConfigured: Boolean = releaseKeystorePath != null &&
 
 android {
     namespace = "com.informedcitizen"
-    compileSdk = 36
     defaultConfig {
         applicationId = "com.informedcitizen"
-        minSdk = 26
-        targetSdk = 36
         versionCode = 3
         versionName = "1.0.1"
     }
@@ -64,41 +60,13 @@ android {
             }
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
-    }
-    buildFeatures {
-      compose = true
-      aidl = false
-      buildConfig = false
-      shaders = false
-    }
 
-    packaging {
-      resources {
-        excludes += "/META-INF/{AL2.0,LGPL2.1}"
-      }
+    buildFeatures {
+        compose = true
     }
 
     lint {
-        warningsAsErrors = true
-        // SDK-version advisories: bumps stay deliberate (require installing the
-        // platform locally and validating). Lint shouldn't fail the build for
-        // "your SDK isn't the latest preview."
-        disable += listOf("OldTargetApi", "GradleDependency", "AndroidGradlePluginVersion")
         baseline = file("lint-baseline.xml")
-    }
-
-    testOptions {
-        unitTests.isIncludeAndroidResources = true
-    }
-}
-
-kotlin {
-    jvmToolchain(17)
-    compilerOptions {
-        allWarningsAsErrors.set(true)
     }
 }
 
@@ -110,16 +78,13 @@ sqldelight {
     }
 }
 
-tasks.withType<JavaCompile>().configureEach {
-    options.compilerArgs.add("-Werror")
-}
-
 // SQLDelight 2.x generates Kotlin sources into build/generated/sqldelight/.
 // AGP's regular kotlin compilation picks them up, but the KSP task doesn't,
 // so Hilt fails to resolve BillSummaryDatabase when it processes
 // SqlDelightDriverModule. Use the AGP Variant API to register the generated
 // dir as Kotlin source for each variant, and tie the kspKotlin task to the
-// generator so codegen runs first.
+// generator so codegen runs first. (This hack goes away once SQLDelight
+// moves into its own :core:database module that doesn't apply KSP.)
 androidComponents {
     onVariants { variant ->
         val genDir = layout.buildDirectory
@@ -180,9 +145,7 @@ dependencies {
   implementation(libs.androidx.navigation3.runtime)
   implementation(libs.androidx.lifecycle.viewmodel.navigation3)
 
-  // Hilt
-  implementation(libs.hilt.android)
-  ksp(libs.hilt.android.compiler)
+  // Hilt nav-compose (Hilt core itself provided by the convention plugin)
   implementation(libs.androidx.hilt.navigation.compose)
 
   // Networking
