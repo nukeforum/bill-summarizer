@@ -20,3 +20,4 @@ plugins {
 
 rootProject.name = "Informed Citizen"
 include(":app")
+include(":core:model")

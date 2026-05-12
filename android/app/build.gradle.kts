@@ -102,6 +102,8 @@ afterEvaluate {
 }
 
 dependencies {
+  implementation(project(":core:model"))
+
   val composeBom = platform(libs.androidx.compose.bom)
   implementation(composeBom)
   androidTestImplementation(composeBom)
