@@ -1,4 +1,4 @@
-package com.informedcitizen.di
+package com.informedcitizen.network
 
 import com.informedcitizen.data.api.BillsApi
 import com.informedcitizen.data.api.MembersApi

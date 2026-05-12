@@ -105,6 +105,7 @@ dependencies {
   implementation(project(":core:model"))
   implementation(project(":core:crash"))
   implementation(project(":core:datastore"))
+  implementation(project(":core:network"))
 
   val composeBom = platform(libs.androidx.compose.bom)
   implementation(composeBom)
@@ -153,11 +154,9 @@ dependencies {
   // Hilt nav-compose (Hilt core itself provided by the convention plugin)
   implementation(libs.androidx.hilt.navigation.compose)
 
-  // Networking
-  implementation(libs.retrofit)
-  implementation(libs.retrofit.converter.kotlinx.serialization)
-  implementation(libs.okhttp)
-  implementation(libs.okhttp.logging.interceptor)
+  // Networking provided by :core:network (api-exposed Retrofit + OkHttp).
+  // kotlinx.serialization is consumed by repositories that decode their
+  // own JSON (e.g. zip crosswalk); keep it here until those move.
   implementation(libs.kotlinx.serialization.json)
 
   // DataStore types come via :core:datastore (api-exposed).
