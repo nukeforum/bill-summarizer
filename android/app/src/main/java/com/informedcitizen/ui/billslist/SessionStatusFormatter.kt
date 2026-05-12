@@ -14,23 +14,26 @@ fun formatSessionStatusLine(statuses: List<ChamberStatus>): String? {
     val house = statuses.first { it.chamber == Chamber.HOUSE }
     val senate = statuses.first { it.chamber == Chamber.SENATE }
 
+    val houseNext = house.nextSessionDay
+    val senateNext = senate.nextSessionDay
+
     return when {
         house.inSessionToday && senate.inSessionToday ->
             "House and Senate in session today"
 
-        house.inSessionToday && senate.nextSessionDay != null ->
-            "House in session — Senate returns ${senate.nextSessionDay.format(DOW_MON_DAY)}"
+        house.inSessionToday && senateNext != null ->
+            "House in session — Senate returns ${senateNext.format(DOW_MON_DAY)}"
 
-        senate.inSessionToday && house.nextSessionDay != null ->
-            "Senate in session — House returns ${house.nextSessionDay.format(DOW_MON_DAY)}"
+        senate.inSessionToday && houseNext != null ->
+            "Senate in session — House returns ${houseNext.format(DOW_MON_DAY)}"
 
         !house.inSessionToday && !senate.inSessionToday &&
-            house.nextSessionDay != null && senate.nextSessionDay != null ->
-            if (house.nextSessionDay == senate.nextSessionDay) {
-                "Both chambers on recess — they return ${house.nextSessionDay.format(DOW_MON_DAY)}"
+            houseNext != null && senateNext != null ->
+            if (houseNext == senateNext) {
+                "Both chambers on recess — they return ${houseNext.format(DOW_MON_DAY)}"
             } else {
-                "Both chambers on recess — House returns ${house.nextSessionDay.format(MON_DAY)}, " +
-                    "Senate ${senate.nextSessionDay.format(MON_DAY)}"
+                "Both chambers on recess — House returns ${houseNext.format(MON_DAY)}, " +
+                    "Senate ${senateNext.format(MON_DAY)}"
             }
 
         else -> null

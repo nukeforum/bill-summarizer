@@ -183,10 +183,11 @@ private fun chamberLine(status: ChamberStatus): String {
         Chamber.HOUSE -> "House"
         Chamber.SENATE -> "Senate"
     }
+    val next = status.nextSessionDay
     return when {
         status.inSessionToday -> "$name: in session today"
-        status.nextSessionDay != null ->
-            "$name: on recess — returns ${status.nextSessionDay.format(DOW_MON_DAY)}"
+        next != null ->
+            "$name: on recess — returns ${next.format(DOW_MON_DAY)}"
         else -> "$name: session has ended"
     }
 }
