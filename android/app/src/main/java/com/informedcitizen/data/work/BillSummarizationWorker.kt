@@ -68,6 +68,9 @@ class BillSummarizationWorker @AssistedInject constructor(
         return Result.success()
     }
 
+    // Manifest entries for dataSync foreground service are removed while
+    // FeatureFlags.AI_TITLES is off; worker is unreachable at runtime.
+    @android.annotation.SuppressLint("SpecifyForegroundServiceType")
     private fun makeForeground(
         currentIndex: Int,
         total: Int,

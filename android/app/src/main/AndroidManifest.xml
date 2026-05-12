@@ -11,9 +11,14 @@
     <uses-sdk tools:overrideLibrary="com.google.ai.edge.aicore" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!--
+      AI-titles feature permissions (FOREGROUND_SERVICE,
+      FOREGROUND_SERVICE_DATA_SYNC, POST_NOTIFICATIONS) live behind
+      FeatureFlags.AI_TITLES and are restored alongside the
+      SystemForegroundService override and StopSummarizationReceiver
+      when the flag flips. See the TODO entry "Restore AI-titles
+      manifest entries before flipping FeatureFlags.AI_TITLES."
+    -->
 
     <!--
       Android 11+ package visibility filters: declare the LLM apps so
@@ -61,22 +66,6 @@
         <meta-data
             android:name="firebase_crashlytics_collection_enabled"
             android:value="false" />
-        <!--
-          WorkManager's SystemForegroundService runs the foreground worker;
-          declare the dataSync type so SpecifyForegroundServiceType lint
-          stays happy and the OS knows what kind of work we're doing.
-        -->
-        <service
-            android:name="androidx.work.impl.foreground.SystemForegroundService"
-            android:foregroundServiceType="dataSync"
-            tools:node="merge" />
-        <receiver
-            android:name="com.informedcitizen.data.work.StopSummarizationReceiver"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.informedcitizen.action.STOP_SUMMARIZATION" />
-            </intent-filter>
-        </receiver>
         <activity
             android:name=".MainActivity"
             android:exported="true"
