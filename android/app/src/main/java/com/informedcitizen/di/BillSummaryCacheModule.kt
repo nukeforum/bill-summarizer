@@ -1,27 +1,25 @@
-package com.informedcitizen.data.cache
+package com.informedcitizen.di
 
-import android.content.Context
-import app.cash.sqldelight.driver.android.AndroidSqliteDriver
 import com.informedcitizen.cache.BillSummaryDatabase
 import com.informedcitizen.data.ai.AiCoreBillSummarizer
+import com.informedcitizen.data.cache.BillSummaryCache
+import com.informedcitizen.data.cache.SqlDelightBillSummaryCache
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
+/**
+ * Binds [BillSummaryCache] from the SQLDelight database, stamping the
+ * cache with the AICore engine's identity. Lives in :app because it's
+ * the only place that owns both the database (:core:database) and the
+ * AICore version constants (still in :app's data/ai/ for now); it will
+ * move to :feature:ai-titles when that extraction happens.
+ */
 @Module
 @InstallIn(SingletonComponent::class)
-object SqlDelightDriverModule {
-
-    @Provides @Singleton
-    fun provideDriver(@ApplicationContext context: Context): AndroidSqliteDriver =
-        AndroidSqliteDriver(BillSummaryDatabase.Schema, context, "bill_summary.db")
-
-    @Provides @Singleton
-    fun provideDatabase(driver: AndroidSqliteDriver): BillSummaryDatabase =
-        BillSummaryDatabase(driver)
+object BillSummaryCacheModule {
 
     @Provides @Singleton
     fun provideBillSummaryCache(db: BillSummaryDatabase): BillSummaryCache =

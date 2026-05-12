@@ -5,7 +5,6 @@ plugins {
   alias(libs.plugins.kotlin.serialization)
   alias(libs.plugins.google.services)
   alias(libs.plugins.firebase.crashlytics)
-  alias(libs.plugins.sqldelight)
 }
 
 // Release signing credentials. Read from Gradle properties (typically
@@ -70,42 +69,12 @@ android {
     }
 }
 
-sqldelight {
-    databases {
-        create("BillSummaryDatabase") {
-            packageName.set("com.informedcitizen.cache")
-        }
-    }
-}
-
-// SQLDelight 2.x generates Kotlin sources into build/generated/sqldelight/.
-// AGP's regular kotlin compilation picks them up, but the KSP task doesn't,
-// so Hilt fails to resolve BillSummaryDatabase when it processes
-// SqlDelightDriverModule. Use the AGP Variant API to register the generated
-// dir as Kotlin source for each variant, and tie the kspKotlin task to the
-// generator so codegen runs first. (This hack goes away once SQLDelight
-// moves into its own :core:database module that doesn't apply KSP.)
-androidComponents {
-    onVariants { variant ->
-        val genDir = layout.buildDirectory
-            .dir("generated/sqldelight/code/BillSummaryDatabase/${variant.name}")
-            .get().asFile.absolutePath
-        variant.sources.kotlin?.addStaticSourceDirectory(genDir)
-    }
-}
-afterEvaluate {
-    listOf("Debug", "Release").forEach { variant ->
-        val generateTask = tasks.findByName("generate${variant}BillSummaryDatabaseInterface") ?: return@forEach
-        val kspTask = tasks.findByName("ksp${variant}Kotlin") ?: return@forEach
-        kspTask.dependsOn(generateTask)
-    }
-}
-
 dependencies {
   implementation(project(":core:model"))
   implementation(project(":core:crash"))
   implementation(project(":core:datastore"))
   implementation(project(":core:network"))
+  implementation(project(":core:database"))
 
   val composeBom = platform(libs.androidx.compose.bom)
   implementation(composeBom)
@@ -167,9 +136,7 @@ dependencies {
   // Splash screen (Android 12+ API, back-compat to API 21)
   implementation(libs.androidx.core.splashscreen)
 
-  // SQLDelight cache + WorkManager + Hilt-Work
-  implementation(libs.sqldelight.android.driver)
-  implementation(libs.sqldelight.coroutines.extensions)
+  // SQLDelight comes from :core:database (api-exposed).
   implementation(libs.androidx.work.runtime.ktx)
   implementation(libs.androidx.hilt.work)
   ksp(libs.androidx.hilt.compiler)
