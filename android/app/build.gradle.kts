@@ -77,6 +77,7 @@ dependencies {
   implementation(project(":core:database"))
   implementation(project(":core:ui"))
   implementation(project(":feature:calendar"))
+  implementation(project(":feature:reps"))
 
   val composeBom = platform(libs.androidx.compose.bom)
   implementation(composeBom)
