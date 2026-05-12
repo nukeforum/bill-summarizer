@@ -103,6 +103,7 @@ afterEvaluate {
 
 dependencies {
   implementation(project(":core:model"))
+  implementation(project(":core:crash"))
 
   val composeBom = platform(libs.androidx.compose.bom)
   implementation(composeBom)
@@ -125,9 +126,10 @@ dependencies {
   // Tooling
   debugImplementation(libs.androidx.compose.ui.tooling)
 
-  // Firebase
-  implementation(platform(libs.firebase.bom))
-  implementation(libs.firebase.crashlytics)
+  // Firebase Crashlytics SDK is consumed via :core:crash; the
+  // google-services + firebase-crashlytics gradle plugins stay here
+  // because they operate at the APK level (read google-services.json,
+  // upload mapping.txt for the release build).
   // Instrumented tests
   androidTestImplementation(libs.androidx.compose.ui.test.junit4)
   debugImplementation(libs.androidx.compose.ui.test.manifest)

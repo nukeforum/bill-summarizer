@@ -1,10 +1,7 @@
-package com.informedcitizen.di
+package com.informedcitizen.crash
 
 import android.content.Context
 import android.content.pm.ApplicationInfo
-import com.informedcitizen.crash.BuildEnvironment
-import com.informedcitizen.crash.CrashReporter
-import com.informedcitizen.crash.FirebaseCrashReporter
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
