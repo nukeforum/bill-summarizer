@@ -78,6 +78,7 @@ dependencies {
   implementation(project(":core:ui"))
   implementation(project(":feature:calendar"))
   implementation(project(":feature:reps"))
+  implementation(project(":feature:bills"))
 
   val composeBom = platform(libs.androidx.compose.bom)
   implementation(composeBom)
@@ -109,6 +110,7 @@ dependencies {
   debugImplementation(libs.androidx.compose.ui.test.manifest)
 
   // Local tests: jUnit, coroutines, Android runner
+  testImplementation(project(":core:testing"))
   testImplementation(libs.junit)
   testImplementation(libs.kotlinx.coroutines.test)
 

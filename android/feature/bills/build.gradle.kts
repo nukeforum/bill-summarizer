@@ -3,14 +3,19 @@ plugins {
 }
 
 android {
-    namespace = "com.informedcitizen.feature.calendar"
+    namespace = "com.informedcitizen.feature.bills"
 }
 
 dependencies {
     implementation(project(":core:model"))
     implementation(project(":core:crash"))
     implementation(project(":core:network"))
+    implementation(project(":core:datastore"))
     implementation(project(":core:ui"))
+
+    // BillDetailViewModel uses BillTextFetcher via :core:network and
+    // BillRepository (now owned here). LlmShareHelper uses ui/util from
+    // :core:ui plus Bill from :core:model.
 
     testImplementation(project(":core:testing"))
     testImplementation(libs.junit)

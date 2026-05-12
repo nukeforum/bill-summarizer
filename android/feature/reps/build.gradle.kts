@@ -14,9 +14,16 @@ dependencies {
     implementation(project(":core:datastore"))
     implementation(project(":core:ui"))
 
-    // MemberDetailViewModel needs BillRepository (still in :app). Hook this
-    // up once :feature:bills exists; until then BillRepository binds through
-    // the app graph and is resolved at Hilt aggregation time.
+    // MemberDetailViewModel injects BillRepository for the sponsored
+    // legislation rows.
+    implementation(project(":feature:bills"))
 
     implementation(libs.kotlinx.serialization.json)
+
+    testImplementation(project(":core:testing"))
+    testImplementation(libs.junit)
+    testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.androidx.test.core)
+    testImplementation(libs.androidx.test.ext.junit)
+    testImplementation(libs.robolectric)
 }
