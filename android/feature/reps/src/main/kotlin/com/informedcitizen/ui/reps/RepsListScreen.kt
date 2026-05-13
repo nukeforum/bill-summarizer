@@ -18,6 +18,9 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
@@ -37,29 +40,35 @@ fun RepsListScreen(
     viewModel: RepsListViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
+    val hasSeenWebsiteFallbackDialog by viewModel.hasSeenWebsiteFallbackDialog.collectAsStateWithLifecycle()
     val context = LocalContext.current
     RepsListContent(
         state = state,
+        hasSeenWebsiteFallbackDialog = hasSeenWebsiteFallbackDialog,
         modifier = modifier,
         onMemberClick = onMemberClick,
         onChangeLocation = onChangeLocation,
         onDeleteSavedReps = viewModel::deleteSavedReps,
         onCallPhone = { phone -> dialPhone(context, phone) },
-        onOpenContactPage = { url -> openInCustomTab(context, url) },
+        onOpenUrl = { url -> openInCustomTab(context, url) },
+        onMarkWebsiteFallbackDialogSeen = viewModel::markWebsiteFallbackDialogSeen,
     )
 }
 
 @Composable
 internal fun RepsListContent(
     state: RepsListUiState,
+    hasSeenWebsiteFallbackDialog: Boolean,
     onMemberClick: (String) -> Unit,
     onChangeLocation: () -> Unit,
     onDeleteSavedReps: () -> Unit,
     onCallPhone: (String) -> Unit,
-    onOpenContactPage: (String) -> Unit,
+    onOpenUrl: (String) -> Unit,
+    onMarkWebsiteFallbackDialogSeen: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val scroll = rememberScrollState()
+    var pendingFallbackUrl by remember { mutableStateOf<String?>(null) }
 
     Column(
         modifier = modifier
@@ -122,7 +131,13 @@ internal fun RepsListContent(
                             member = m,
                             onClick = { onMemberClick(m.bioguideId) },
                             onCallPhone = onCallPhone,
-                            onOpenContactPage = onOpenContactPage,
+                            onOpenContactPage = { url, isFallback ->
+                                if (isFallback && !hasSeenWebsiteFallbackDialog) {
+                                    pendingFallbackUrl = url
+                                } else {
+                                    onOpenUrl(url)
+                                }
+                            },
                         )
                     }
                 }
@@ -144,7 +159,13 @@ internal fun RepsListContent(
                             member = m,
                             onClick = { onMemberClick(m.bioguideId) },
                             onCallPhone = onCallPhone,
-                            onOpenContactPage = onOpenContactPage,
+                            onOpenContactPage = { url, isFallback ->
+                                if (isFallback && !hasSeenWebsiteFallbackDialog) {
+                                    pendingFallbackUrl = url
+                                } else {
+                                    onOpenUrl(url)
+                                }
+                            },
                         )
                     }
                 }
@@ -152,6 +173,17 @@ internal fun RepsListContent(
 
             is RepsListUiState.Error ->
                 Text("Couldn't load: ${state.message}", color = MaterialTheme.colorScheme.error)
+        }
+
+        pendingFallbackUrl?.let { url ->
+            WebsiteFallbackDialog(
+                onConfirm = {
+                    onMarkWebsiteFallbackDialogSeen()
+                    onOpenUrl(url)
+                    pendingFallbackUrl = null
+                },
+                onDismiss = { pendingFallbackUrl = null },
+            )
         }
     }
 }

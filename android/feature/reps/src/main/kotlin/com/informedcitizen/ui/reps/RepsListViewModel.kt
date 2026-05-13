@@ -3,12 +3,15 @@ package com.informedcitizen.ui.reps
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.informedcitizen.data.repository.MemberRepository
+import com.informedcitizen.data.repository.RepsContactPreferenceRepository
 import com.informedcitizen.data.repository.SavedRepsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import java.time.LocalDate
 import javax.inject.Inject
@@ -20,10 +23,15 @@ internal fun computeCurrentCongress(today: LocalDate = LocalDate.now()): Int =
 class RepsListViewModel @Inject constructor(
     private val savedReps: SavedRepsRepository,
     private val members: MemberRepository,
+    private val contactPrefs: RepsContactPreferenceRepository,
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow<RepsListUiState>(RepsListUiState.Loading)
     val uiState: StateFlow<RepsListUiState> = _uiState.asStateFlow()
+
+    val hasSeenWebsiteFallbackDialog: StateFlow<Boolean> = contactPrefs
+        .hasSeenWebsiteFallbackDialog
+        .stateIn(viewModelScope, SharingStarted.Eagerly, false)
 
     // Allow tests to inject a deterministic congress.
     internal var congressProvider: () -> Int = ::computeCurrentCongress
@@ -34,6 +42,10 @@ class RepsListViewModel @Inject constructor(
 
     fun deleteSavedReps() {
         viewModelScope.launch { savedReps.forget() }
+    }
+
+    fun markWebsiteFallbackDialogSeen() {
+        viewModelScope.launch { contactPrefs.markWebsiteFallbackDialogSeen() }
     }
 
     private fun observeSavedReps() {

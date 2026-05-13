@@ -22,6 +22,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
@@ -48,6 +49,7 @@ fun MemberDetailScreen(
     LaunchedEffect(bioguideId) { viewModel.load(bioguideId) }
 
     val state by viewModel.uiState.collectAsStateWithLifecycle()
+    val hasSeenWebsiteFallbackDialog by viewModel.hasSeenWebsiteFallbackDialog.collectAsStateWithLifecycle()
     val context = LocalContext.current
 
     Scaffold(
@@ -65,6 +67,7 @@ fun MemberDetailScreen(
     ) { padding ->
         MemberDetailContent(
             state = state,
+            hasSeenWebsiteFallbackDialog = hasSeenWebsiteFallbackDialog,
             innerPadding = padding,
             onLegislationClick = { item ->
                 if (viewModel.isInLocalCache(item.id)) {
@@ -75,7 +78,8 @@ fun MemberDetailScreen(
                 }
             },
             onCallPhone = { phone -> dialPhone(context, phone) },
-            onOpenContactPage = { url -> openInCustomTab(context, url) },
+            onOpenUrl = { url -> openInCustomTab(context, url) },
+            onMarkWebsiteFallbackDialogSeen = viewModel::markWebsiteFallbackDialogSeen,
         )
     }
 }
@@ -83,12 +87,16 @@ fun MemberDetailScreen(
 @Composable
 internal fun MemberDetailContent(
     state: MemberDetailUiState,
+    hasSeenWebsiteFallbackDialog: Boolean,
     innerPadding: PaddingValues,
     onLegislationClick: (MemberLegislationItem) -> Unit,
     onCallPhone: (String) -> Unit,
-    onOpenContactPage: (String) -> Unit,
+    onOpenUrl: (String) -> Unit,
+    onMarkWebsiteFallbackDialogSeen: () -> Unit,
 ) {
     var tab by remember { mutableIntStateOf(0) }
+    var pendingFallbackUrl by remember { mutableStateOf<String?>(null) }
+
     Column(modifier = Modifier.padding(innerPadding).fillMaxSize()) {
         when {
             state.isLoading -> CircularProgressIndicator()
@@ -97,7 +105,13 @@ internal fun MemberDetailContent(
                     member = state.member,
                     onClick = {},
                     onCallPhone = onCallPhone,
-                    onOpenContactPage = onOpenContactPage,
+                    onOpenContactPage = { url, isFallback ->
+                        if (isFallback && !hasSeenWebsiteFallbackDialog) {
+                            pendingFallbackUrl = url
+                        } else {
+                            onOpenUrl(url)
+                        }
+                    },
                 )
                 PrimaryTabRow(selectedTabIndex = tab) {
                     Tab(
@@ -128,5 +142,16 @@ internal fun MemberDetailContent(
             }
             state.errorMessage != null -> Text("Error: ${state.errorMessage}")
         }
+    }
+
+    pendingFallbackUrl?.let { url ->
+        WebsiteFallbackDialog(
+            onConfirm = {
+                onMarkWebsiteFallbackDialogSeen()
+                onOpenUrl(url)
+                pendingFallbackUrl = null
+            },
+            onDismiss = { pendingFallbackUrl = null },
+        )
     }
 }

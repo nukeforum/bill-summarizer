@@ -30,7 +30,7 @@ fun MemberCard(
     member: Member,
     onClick: () -> Unit,
     onCallPhone: (String) -> Unit,
-    onOpenContactPage: (String) -> Unit,
+    onOpenContactPage: (url: String, isFallback: Boolean) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     Card(modifier = modifier.fillMaxWidth().clickable(onClick = onClick)) {
@@ -71,7 +71,7 @@ private fun MemberContactEndRegion(
     contactForm: String?,
     website: String?,
     onCallPhone: (String) -> Unit,
-    onOpenContactPage: (String) -> Unit,
+    onOpenContactPage: (url: String, isFallback: Boolean) -> Unit,
 ) {
     val phoneValue = phone?.takeIf { it.isNotBlank() }
     val contactFormValue = contactForm?.takeIf { it.isNotBlank() }
@@ -91,27 +91,17 @@ private fun MemberContactEndRegion(
             }
         }
         if (contactFormValue != null) {
-            IconButton(onClick = { onOpenContactPage(contactFormValue) }) {
+            IconButton(onClick = { onOpenContactPage(contactFormValue, false) }) {
                 Icon(
                     Icons.AutoMirrored.Filled.Send,
                     contentDescription = "Open contact form",
                 )
             }
         } else if (websiteValue != null) {
-            Column(
-                horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.spacedBy(0.dp),
-            ) {
-                IconButton(onClick = { onOpenContactPage(websiteValue) }) {
-                    Icon(
-                        Icons.AutoMirrored.Filled.OpenInNew,
-                        contentDescription = "Open official site — no direct contact form on file",
-                    )
-                }
-                Text(
-                    "No direct form",
-                    style = MaterialTheme.typography.labelSmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+            IconButton(onClick = { onOpenContactPage(websiteValue, true) }) {
+                Icon(
+                    Icons.AutoMirrored.Filled.OpenInNew,
+                    contentDescription = "Open official site — no direct contact form on file",
                 )
             }
         }

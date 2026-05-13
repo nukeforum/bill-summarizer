@@ -26,20 +26,20 @@ private fun PreviewMemberCards() = PreviewWrap(modifier = Modifier) {
             member = sampleSenatorD,
             onClick = {},
             onCallPhone = {},
-            onOpenContactPage = {},
+            onOpenContactPage = { _, _ -> },
         )
         MemberCard(
             member = sampleSenatorR,
             onClick = {},
             onCallPhone = {},
-            onOpenContactPage = {},
+            onOpenContactPage = { _, _ -> },
         )
         // Website fallback (typical for ~58% of House reps).
         MemberCard(
             member = sampleRepresentative,
             onClick = {},
             onCallPhone = {},
-            onOpenContactPage = {},
+            onOpenContactPage = { _, _ -> },
         )
         // Phone only — no contact URL of any kind.
         MemberCard(
@@ -51,7 +51,7 @@ private fun PreviewMemberCards() = PreviewWrap(modifier = Modifier) {
             ),
             onClick = {},
             onCallPhone = {},
-            onOpenContactPage = {},
+            onOpenContactPage = { _, _ -> },
         )
         // Nothing — collapses to the original layout.
         MemberCard(
@@ -64,7 +64,7 @@ private fun PreviewMemberCards() = PreviewWrap(modifier = Modifier) {
             ),
             onClick = {},
             onCallPhone = {},
-            onOpenContactPage = {},
+            onOpenContactPage = { _, _ -> },
         )
     }
 }
