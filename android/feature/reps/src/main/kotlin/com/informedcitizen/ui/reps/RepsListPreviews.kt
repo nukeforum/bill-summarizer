@@ -16,6 +16,8 @@ private fun PreviewRepsListLoading() = PreviewWrap {
         onMemberClick = {},
         onChangeLocation = {},
         onDeleteSavedReps = {},
+        onCallPhone = {},
+        onOpenContactPage = {},
     )
 }
 
@@ -27,6 +29,8 @@ private fun PreviewRepsListNoLocation() = PreviewWrap {
         onMemberClick = {},
         onChangeLocation = {},
         onDeleteSavedReps = {},
+        onCallPhone = {},
+        onOpenContactPage = {},
     )
 }
 
@@ -41,6 +45,8 @@ private fun PreviewRepsListLoadedFull() = PreviewWrap {
         onMemberClick = {},
         onChangeLocation = {},
         onDeleteSavedReps = {},
+        onCallPhone = {},
+        onOpenContactPage = {},
     )
 }
 
@@ -55,6 +61,8 @@ private fun PreviewRepsListLoadedEmptySenators() = PreviewWrap {
         onMemberClick = {},
         onChangeLocation = {},
         onDeleteSavedReps = {},
+        onCallPhone = {},
+        onOpenContactPage = {},
     )
 }
 
@@ -66,6 +74,8 @@ private fun PreviewRepsListStaleSavedReps() = PreviewWrap {
         onMemberClick = {},
         onChangeLocation = {},
         onDeleteSavedReps = {},
+        onCallPhone = {},
+        onOpenContactPage = {},
     )
 }
 
@@ -77,6 +87,8 @@ private fun PreviewRepsListError() = PreviewWrap {
         onMemberClick = {},
         onChangeLocation = {},
         onDeleteSavedReps = {},
+        onCallPhone = {},
+        onOpenContactPage = {},
     )
 }
 

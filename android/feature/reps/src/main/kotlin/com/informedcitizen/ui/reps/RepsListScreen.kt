@@ -20,11 +20,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.informedcitizen.ui.components.MemberCard
+import com.informedcitizen.ui.util.dialPhone
+import com.informedcitizen.ui.util.openInCustomTab
 
 @Composable
 fun RepsListScreen(
@@ -34,12 +37,15 @@ fun RepsListScreen(
     viewModel: RepsListViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
+    val context = LocalContext.current
     RepsListContent(
         state = state,
         modifier = modifier,
         onMemberClick = onMemberClick,
         onChangeLocation = onChangeLocation,
         onDeleteSavedReps = viewModel::deleteSavedReps,
+        onCallPhone = { phone -> dialPhone(context, phone) },
+        onOpenContactPage = { url -> openInCustomTab(context, url) },
     )
 }
 
@@ -49,6 +55,8 @@ internal fun RepsListContent(
     onMemberClick: (String) -> Unit,
     onChangeLocation: () -> Unit,
     onDeleteSavedReps: () -> Unit,
+    onCallPhone: (String) -> Unit,
+    onOpenContactPage: (String) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val scroll = rememberScrollState()
@@ -110,7 +118,12 @@ internal fun RepsListContent(
                     )
                 } else {
                     state.senators.forEach { m ->
-                        MemberCard(member = m, onClick = { onMemberClick(m.bioguideId) })
+                        MemberCard(
+                            member = m,
+                            onClick = { onMemberClick(m.bioguideId) },
+                            onCallPhone = onCallPhone,
+                            onOpenContactPage = onOpenContactPage,
+                        )
                     }
                 }
 
@@ -127,7 +140,12 @@ internal fun RepsListContent(
                     )
                 } else {
                     state.house.forEach { m ->
-                        MemberCard(member = m, onClick = { onMemberClick(m.bioguideId) })
+                        MemberCard(
+                            member = m,
+                            onClick = { onMemberClick(m.bioguideId) },
+                            onCallPhone = onCallPhone,
+                            onOpenContactPage = onOpenContactPage,
+                        )
                     }
                 }
             }

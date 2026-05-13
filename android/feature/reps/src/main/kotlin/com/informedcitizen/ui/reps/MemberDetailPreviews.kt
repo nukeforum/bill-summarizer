@@ -16,6 +16,8 @@ private fun PreviewMemberDetailLoading() = PreviewWrap {
         state = MemberDetailUiState(isLoading = true),
         innerPadding = PaddingValues(0.dp),
         onLegislationClick = {},
+        onCallPhone = {},
+        onOpenContactPage = {},
     )
 }
 
@@ -31,6 +33,8 @@ private fun PreviewMemberDetailLoaded() = PreviewWrap {
         ),
         innerPadding = PaddingValues(0.dp),
         onLegislationClick = {},
+        onCallPhone = {},
+        onOpenContactPage = {},
     )
 }
 
@@ -46,6 +50,8 @@ private fun PreviewMemberDetailLoadedEmpty() = PreviewWrap {
         ),
         innerPadding = PaddingValues(0.dp),
         onLegislationClick = {},
+        onCallPhone = {},
+        onOpenContactPage = {},
     )
 }
 
@@ -60,6 +66,8 @@ private fun PreviewMemberDetailError() = PreviewWrap {
         ),
         innerPadding = PaddingValues(0.dp),
         onLegislationClick = {},
+        onCallPhone = {},
+        onOpenContactPage = {},
     )
 }
 

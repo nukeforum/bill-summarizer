@@ -2,13 +2,20 @@ package com.informedcitizen.ui.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.OpenInNew
+import androidx.compose.material.icons.automirrored.filled.Send
+import androidx.compose.material.icons.filled.Phone
 import androidx.compose.material3.Card
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -19,13 +26,26 @@ import com.informedcitizen.data.model.Member
 import com.informedcitizen.theme.PartyColors
 
 @Composable
-fun MemberCard(member: Member, onClick: () -> Unit, modifier: Modifier = Modifier) {
+fun MemberCard(
+    member: Member,
+    onClick: () -> Unit,
+    onCallPhone: (String) -> Unit,
+    onOpenContactPage: (String) -> Unit,
+    modifier: Modifier = Modifier,
+) {
     Card(modifier = modifier.fillMaxWidth().clickable(onClick = onClick)) {
         Row(verticalAlignment = Alignment.CenterVertically) {
             Column(
-                modifier = Modifier.width(8.dp).height(80.dp).background(PartyColors.forParty(member.party)),
+                modifier = Modifier
+                    .width(8.dp)
+                    .height(80.dp)
+                    .background(PartyColors.forParty(member.party)),
             ) {}
-            Column(modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp)) {
+            Column(
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(horizontal = 12.dp, vertical = 8.dp),
+            ) {
                 Text(member.name, style = MaterialTheme.typography.titleMedium)
                 val role = if (member.chamber == "senate") "Senator" else "Representative"
                 val districtSuffix = member.district?.takeIf { it > 0 }?.let { "-${it}" } ?: ""
@@ -34,6 +54,72 @@ fun MemberCard(member: Member, onClick: () -> Unit, modifier: Modifier = Modifie
                     style = MaterialTheme.typography.bodyMedium,
                 )
             }
+            MemberContactEndRegion(
+                phone = member.phone,
+                contactForm = member.contactForm,
+                website = member.website,
+                onCallPhone = onCallPhone,
+                onOpenContactPage = onOpenContactPage,
+            )
+        }
+    }
+}
+
+@Composable
+private fun MemberContactEndRegion(
+    phone: String?,
+    contactForm: String?,
+    website: String?,
+    onCallPhone: (String) -> Unit,
+    onOpenContactPage: (String) -> Unit,
+) {
+    val hasPhone = !phone.isNullOrBlank()
+    val hasForm = !contactForm.isNullOrBlank()
+    val hasSiteFallback = !hasForm && !website.isNullOrBlank()
+    if (!hasPhone && !hasForm && !hasSiteFallback) return
+    Column(
+        modifier = Modifier.padding(end = 8.dp),
+        horizontalAlignment = Alignment.End,
+        verticalArrangement = Arrangement.spacedBy(2.dp),
+    ) {
+        if (hasPhone) {
+            Row(
+                modifier = Modifier
+                    .clickable { onCallPhone(phone.orEmpty()) }
+                    .padding(horizontal = 8.dp, vertical = 4.dp),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(4.dp),
+            ) {
+                Icon(
+                    Icons.Filled.Phone,
+                    contentDescription = null,
+                    modifier = Modifier.width(16.dp),
+                )
+                Text(
+                    phone.orEmpty(),
+                    style = MaterialTheme.typography.bodySmall,
+                )
+            }
+        }
+        if (hasForm) {
+            IconButton(onClick = { onOpenContactPage(contactForm.orEmpty()) }) {
+                Icon(
+                    Icons.AutoMirrored.Filled.Send,
+                    contentDescription = "Open contact form",
+                )
+            }
+        } else if (hasSiteFallback) {
+            IconButton(onClick = { onOpenContactPage(website.orEmpty()) }) {
+                Icon(
+                    Icons.AutoMirrored.Filled.OpenInNew,
+                    contentDescription = "Open official site — no direct contact form on file",
+                )
+            }
+            Text(
+                "No direct form",
+                style = MaterialTheme.typography.labelSmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
         }
     }
 }

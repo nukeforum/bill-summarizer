@@ -33,6 +33,7 @@ import com.informedcitizen.data.model.MemberLegislationItem
 import com.informedcitizen.data.util.congressGovUrlFor
 import com.informedcitizen.ui.components.MemberCard
 import com.informedcitizen.ui.components.MemberLegislationRow
+import com.informedcitizen.ui.util.dialPhone
 import com.informedcitizen.ui.util.openInCustomTab
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -73,6 +74,8 @@ fun MemberDetailScreen(
                     openInCustomTab(context, url)
                 }
             },
+            onCallPhone = { phone -> dialPhone(context, phone) },
+            onOpenContactPage = { url -> openInCustomTab(context, url) },
         )
     }
 }
@@ -82,13 +85,20 @@ internal fun MemberDetailContent(
     state: MemberDetailUiState,
     innerPadding: PaddingValues,
     onLegislationClick: (MemberLegislationItem) -> Unit,
+    onCallPhone: (String) -> Unit,
+    onOpenContactPage: (String) -> Unit,
 ) {
     var tab by remember { mutableIntStateOf(0) }
     Column(modifier = Modifier.padding(innerPadding).fillMaxSize()) {
         when {
             state.isLoading -> CircularProgressIndicator()
             state.member != null -> {
-                MemberCard(member = state.member, onClick = {})
+                MemberCard(
+                    member = state.member,
+                    onClick = {},
+                    onCallPhone = onCallPhone,
+                    onOpenContactPage = onOpenContactPage,
+                )
                 PrimaryTabRow(selectedTabIndex = tab) {
                     Tab(
                         selected = tab == 0,
