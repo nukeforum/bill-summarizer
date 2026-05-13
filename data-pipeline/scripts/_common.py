@@ -19,6 +19,7 @@ from pathlib import Path
 from typing import Any, IO
 
 import requests
+import yaml
 
 
 _PARTY_STATE_SUFFIX_RE = re.compile(r"\s*\[[A-Z]+-[A-Z]{2}(?:-\d+)?\]\s*$")
@@ -706,6 +707,39 @@ def parse_member_legislation_item(raw: dict[str, Any]) -> dict[str, Any]:
         },
         "policy_area": (policy.get("name") if isinstance(policy, dict) else policy),
     }
+
+
+# ---------- unitedstates/congress-legislators contact forms ---------------
+
+
+def parse_contact_forms_yaml(text: str) -> dict[str, str]:
+    """Extract a {bioguide_id: contact_form_url} map from legislators-current.yaml.
+
+    The upstream YAML (https://github.com/unitedstates/congress-legislators)
+    is a list of legislator entries. Each entry has an ``id.bioguide`` key
+    and a ``terms`` list; ``contact_form`` lives on individual terms. We
+    walk terms in reverse to pick the most recent one that carries a
+    contact form, since a handful of entries omit it on the current term
+    but carried it on a prior one.
+    """
+    data = yaml.safe_load(text) or []
+    out: dict[str, str] = {}
+    for entry in data:
+        if not isinstance(entry, dict):
+            continue
+        ids = entry.get("id") or {}
+        bioguide = ids.get("bioguide")
+        if not bioguide:
+            continue
+        terms = entry.get("terms") or []
+        for term in reversed(terms):
+            if not isinstance(term, dict):
+                continue
+            form = term.get("contact_form")
+            if form:
+                out[bioguide] = form
+                break
+    return out
 
 
 # ---------- index ----------------------------------------------------------
