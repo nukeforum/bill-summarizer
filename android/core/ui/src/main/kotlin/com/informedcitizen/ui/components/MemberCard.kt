@@ -18,14 +18,9 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
-import androidx.compose.material3.minimumInteractiveComponentSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.semantics.Role
-import androidx.compose.ui.semantics.contentDescription
-import androidx.compose.ui.semantics.role
-import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import com.informedcitizen.data.model.Member
 import com.informedcitizen.theme.PartyColors
@@ -82,32 +77,16 @@ private fun MemberContactEndRegion(
     val contactFormValue = contactForm?.takeIf { it.isNotBlank() }
     val websiteValue = website?.takeIf { it.isNotBlank() }
     if (phoneValue == null && contactFormValue == null && websiteValue == null) return
-    Column(
-        modifier = Modifier.padding(end = 8.dp),
-        horizontalAlignment = Alignment.End,
-        verticalArrangement = Arrangement.spacedBy(2.dp),
+    Row(
+        modifier = Modifier.padding(end = 4.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(0.dp),
     ) {
         if (phoneValue != null) {
-            Row(
-                modifier = Modifier
-                    .minimumInteractiveComponentSize()
-                    .semantics(mergeDescendants = true) {
-                        role = Role.Button
-                        contentDescription = "Call $phoneValue"
-                    }
-                    .clickable { onCallPhone(phoneValue) }
-                    .padding(horizontal = 8.dp, vertical = 4.dp),
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.spacedBy(4.dp),
-            ) {
+            IconButton(onClick = { onCallPhone(phoneValue) }) {
                 Icon(
                     Icons.Filled.Phone,
-                    contentDescription = null,
-                    modifier = Modifier.width(16.dp),
-                )
-                Text(
-                    phoneValue,
-                    style = MaterialTheme.typography.bodySmall,
+                    contentDescription = "Call $phoneValue",
                 )
             }
         }
@@ -119,17 +98,22 @@ private fun MemberContactEndRegion(
                 )
             }
         } else if (websiteValue != null) {
-            IconButton(onClick = { onOpenContactPage(websiteValue) }) {
-                Icon(
-                    Icons.AutoMirrored.Filled.OpenInNew,
-                    contentDescription = "Open official site — no direct contact form on file",
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(0.dp),
+            ) {
+                IconButton(onClick = { onOpenContactPage(websiteValue) }) {
+                    Icon(
+                        Icons.AutoMirrored.Filled.OpenInNew,
+                        contentDescription = "Open official site — no direct contact form on file",
+                    )
+                }
+                Text(
+                    "No direct form",
+                    style = MaterialTheme.typography.labelSmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             }
-            Text(
-                "No direct form",
-                style = MaterialTheme.typography.labelSmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-            )
         }
     }
 }
