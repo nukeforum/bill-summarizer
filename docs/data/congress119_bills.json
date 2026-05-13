@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13T08:44:50Z",
+  "generated_at": "2026-05-13T14:49:28Z",
   "congress": 119,
   "bills": [
     {
@@ -457,6 +457,126 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres118/BILLS-119sjres118is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres118/BILLS-119sjres118is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/118"
+    },
+    {
+      "id": "s3705-119",
+      "congress": 119,
+      "type": "s",
+      "number": "3705",
+      "title": "Semiquincentennial Congressional Time Capsule Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Tillis, Thomas",
+        "party": "R",
+        "state": "NC"
+      },
+      "introduced_date": "2026-01-27",
+      "latest_action": {
+        "date": "2026-02-18",
+        "text": "Became Public Law No: 119-79."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Semiquincentennial Congressional Time Capsule Act</strong></p><p>This bill requires the Architect of the Capitol to create a congressional time capsule in honor of the 250<sup>th</sup> anniversary of the Declaration of Independence to be buried in the Capitol Visitor Center on or before July 4, 2026. The time capsule shall contain a joint letter from congressional leadership and such other contents as they shall determine. The time capsule shall be sealed until July 4, 2276.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ79/PLAW-119publ79.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ79/PLAW-119publ79_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ79/PLAW-119publ79.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/3705"
+    },
+    {
+      "id": "sjres95-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "95",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Internal Revenue Service relating to \"Interim Guidance Simplifying Application of the Corporate Alternative Minimum Tax to Partnerships\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wyden, Ron",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2025-11-18",
+      "latest_action": {
+        "date": "2026-02-10",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 51. Record Vote Number: 35. (CR S543)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres95/BILLS-119sjres95pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres95/BILLS-119sjres95pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres95/BILLS-119sjres95pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/95"
+    },
+    {
+      "id": "sres586-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "586",
+      "title": "A resolution raising awareness and encouraging the prevention of stalking by designating January 2026 as \"National Stalking Awareness Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Klobuchar, Amy",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2026-01-27",
+      "latest_action": {
+        "date": "2026-02-09",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S537; text: CR 1/27/2026 S293-294)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres586/BILLS-119sres586ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres586/BILLS-119sres586ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres586/BILLS-119sres586ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/586"
+    },
+    {
+      "id": "s3424-119",
+      "congress": 119,
+      "type": "s",
+      "number": "3424",
+      "title": "Bankruptcy Administration Improvement Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Coons, Christopher A.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2025-12-10",
+      "latest_action": {
+        "date": "2026-02-06",
+        "text": "Became Public Law No: 119-76."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Bankruptcy Administration Improvement Act of 2025</strong></p><p>This bill makes several changes to the administration of bankruptcy cases, particularly by increasing certain fees, extending the sunset date of various fees, and extending the term of specified bankruptcy judgeships.</p><p>The bill increases the fees paid to the trustee in Chapter 7 (liquidation) cases.</p><p>The bill extends for an additional five years the fees paid quarterly to the U.S. trustee in Chapter 11 (reorganization) cases. The bill also increases the fee percentage for cases with large disbursements, subject to limitations.&nbsp;</p><p>Finally, temporary bankruptcy judgeships in various districts are extended for an additional five years.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ76/PLAW-119publ76.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ76/PLAW-119publ76_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ76/PLAW-119publ76.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/3424"
+    },
+    {
+      "id": "sres581-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "581",
+      "title": "A resolution honoring the life of Corporal Grade One Matthew T. \"Ty\" Snook of the Delaware State Police.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blunt Rochester, Lisa",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2026-01-13",
+      "latest_action": {
+        "date": "2026-02-03",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S473; text: CR 1/13/2026 S163)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres581/BILLS-119sres581ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres581/BILLS-119sres581ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres581/BILLS-119sres581ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/581"
     },
     {
       "id": "s222-119",
@@ -1683,6 +1803,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/61"
     },
     {
+      "id": "hjres60-119",
+      "congress": 119,
+      "type": "hjres",
+      "number": "60",
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the National Park Service relating to \"Glen Canyon National Recreation Area: Motor Vehicles\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Maloy, Celeste",
+        "party": "R",
+        "state": "UT"
+      },
+      "introduced_date": "2025-02-21",
+      "latest_action": {
+        "date": "2025-05-23",
+        "text": "Became Public Law No: 119-13."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This joint resolution nullifies the final rule issued by the National Park Service titled<em> Glen Canyon National Recreation Area; Motor Vehicles&nbsp;</em>and published on January 13, 2025. The rule modified regulations concerning the Glen Canyon National Recreation Area, which is located in northern Arizona and southeastern Utah. For example, the rule limited the use of off-road vehicles, such as off-highway vehicles and all-terrain vehicles, in certain areas.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ13/PLAW-119publ13.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ13/PLAW-119publ13_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ13/PLAW-119publ13.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/60"
+    },
+    {
       "id": "sres143-119",
       "congress": 119,
       "type": "sres",
@@ -1849,6 +1993,78 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ11/PLAW-119publ11_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ11/PLAW-119publ11.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/28"
+    },
+    {
+      "id": "sjres18-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "18",
+      "title": "A joint resolution disapproving the rule submitted by the Bureau of Consumer Financial Protection relating to \"Overdraft Lending: Very Large Financial Institutions\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Scott, Tim",
+        "party": "R",
+        "state": "SC"
+      },
+      "introduced_date": "2025-02-13",
+      "latest_action": {
+        "date": "2025-05-09",
+        "text": "Became Public Law No: 119-10."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This joint resolution nullifies the final rule issued by the Consumer Financial Protection Bureau titled <em>Overdraft Lending: Very Large Financial Institutions</em> and published on December 30, 2024. The rule revises provisions regarding charges for insufficient funds in a customer’s bank account (i.e., overdrafts) at very large financial institutions. Under&nbsp;the rule, these institutions must (1) cap overdraft charges at $5; (2) with justification, cap charges at a higher amount; or (3) handle overdrafts as credit and comply with applicable Truth in Lending Act disclosure requirements.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ10/PLAW-119publ10.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ10/PLAW-119publ10_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ10/PLAW-119publ10.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/18"
+    },
+    {
+      "id": "sjres49-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "49",
+      "title": "A joint resolution terminating the national emergency declared to impose global tariffs.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wyden, Ron",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2025-04-10",
+      "latest_action": {
+        "date": "2025-04-30",
+        "text": "Motion to table the motion to reconsider the vote by which S.J. Res. 49 failed of passage (Record Vote No. 225) agreed to in Senate by Yea-Nay Vote. 50 - 49. Record Vote Number: 226."
+      },
+      "outcome": "failed",
+      "summary_crs": "<p>This joint resolution terminates the national emergency declared by President Donald J. Trump on April 2, 2025, which imposed a 10% tariff on most imports to the United States and additional duties on specified trading partners.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sjres49/BILLS-119sjres49is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres49/BILLS-119sjres49is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres49/BILLS-119sjres49is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/49"
+    },
+    {
+      "id": "hjres25-119",
+      "congress": 119,
+      "type": "hjres",
+      "number": "25",
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Internal Revenue Service relating to \"Gross Proceeds Reporting by Brokers That Regularly Provide Services Effectuating Digital Asset Sales\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Carey, Mike",
+        "party": "R",
+        "state": "OH"
+      },
+      "introduced_date": "2025-01-21",
+      "latest_action": {
+        "date": "2025-04-10",
+        "text": "Became Public Law No: 119-5."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This joint resolution nullifies the rule titled <em>Gross Proceeds Reporting by Brokers That Regularly Provide Services Effectuating Digital Asset Sales</em> and issued by the Internal Revenue Service (IRS) on December 30, 2024. The rule generally requires persons effectuating decentralized financial (DeFi) transactions to report certain information regarding digital asset sales to the IRS. <em></em><em></em><em></em><em></em></p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ5/PLAW-119publ5.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ5/PLAW-119publ5_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ5/PLAW-119publ5.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/25"
     },
     {
       "id": "hres293-119",
