@@ -742,6 +742,24 @@ def parse_contact_forms_yaml(text: str) -> dict[str, str]:
     return out
 
 
+CONTACT_FORMS_YAML_URL = (
+    "https://raw.githubusercontent.com/"
+    "unitedstates/congress-legislators/main/legislators-current.yaml"
+)
+
+
+def fetch_contact_forms_index(url: str = CONTACT_FORMS_YAML_URL) -> dict[str, str]:
+    """Download legislators-current.yaml and return {bioguide_id: contact_form}.
+
+    Raises ``requests.HTTPError`` on a non-2xx status. Caller decides whether
+    to treat the failure as fatal — Phase 1 of fetch_members.py treats it as
+    non-fatal (member records still flow, just without contact_form).
+    """
+    resp = requests.get(url, timeout=30)
+    resp.raise_for_status()
+    return parse_contact_forms_yaml(resp.text)
+
+
 # ---------- index ----------------------------------------------------------
 
 

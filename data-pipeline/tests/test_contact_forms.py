@@ -83,3 +83,41 @@ def test_parse_falls_back_through_terms_when_last_lacks_contact_form():
     """)
     out = _common.parse_contact_forms_yaml(yaml_text)
     assert out == {"D000004": "https://d.house.gov/contact"}
+
+
+from unittest.mock import patch
+
+from _common import fetch_contact_forms_index, CONTACT_FORMS_YAML_URL
+
+
+def test_fetch_contact_forms_index_uses_default_url_and_parses_response():
+    sample_yaml = (
+        "- id:\n"
+        "    bioguide: E000005\n"
+        "  terms:\n"
+        "    - type: rep\n"
+        "      contact_form: https://e.house.gov/contact\n"
+    )
+
+    class _Resp:
+        text = sample_yaml
+        def raise_for_status(self) -> None: return None
+
+    with patch("_common.requests.get", return_value=_Resp()) as mock_get:
+        out = fetch_contact_forms_index()
+    mock_get.assert_called_once_with(CONTACT_FORMS_YAML_URL, timeout=30)
+    assert out == {"E000005": "https://e.house.gov/contact"}
+
+
+def test_fetch_contact_forms_index_propagates_http_errors():
+    import requests as _requests
+
+    class _Resp:
+        text = ""
+        def raise_for_status(self) -> None:
+            raise _requests.HTTPError("500 Server Error")
+
+    with patch("_common.requests.get", return_value=_Resp()):
+        import pytest as _pytest
+        with _pytest.raises(_requests.HTTPError):
+            fetch_contact_forms_index()
