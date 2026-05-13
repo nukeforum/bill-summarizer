@@ -73,19 +73,19 @@ private fun MemberContactEndRegion(
     onCallPhone: (String) -> Unit,
     onOpenContactPage: (String) -> Unit,
 ) {
-    val hasPhone = !phone.isNullOrBlank()
-    val hasForm = !contactForm.isNullOrBlank()
-    val hasSiteFallback = !hasForm && !website.isNullOrBlank()
-    if (!hasPhone && !hasForm && !hasSiteFallback) return
+    val phoneValue = phone?.takeIf { it.isNotBlank() }
+    val contactFormValue = contactForm?.takeIf { it.isNotBlank() }
+    val websiteValue = website?.takeIf { it.isNotBlank() }
+    if (phoneValue == null && contactFormValue == null && websiteValue == null) return
     Column(
         modifier = Modifier.padding(end = 8.dp),
         horizontalAlignment = Alignment.End,
         verticalArrangement = Arrangement.spacedBy(2.dp),
     ) {
-        if (hasPhone) {
+        if (phoneValue != null) {
             Row(
                 modifier = Modifier
-                    .clickable { onCallPhone(phone.orEmpty()) }
+                    .clickable { onCallPhone(phoneValue) }
                     .padding(horizontal = 8.dp, vertical = 4.dp),
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(4.dp),
@@ -96,20 +96,20 @@ private fun MemberContactEndRegion(
                     modifier = Modifier.width(16.dp),
                 )
                 Text(
-                    phone.orEmpty(),
+                    phoneValue,
                     style = MaterialTheme.typography.bodySmall,
                 )
             }
         }
-        if (hasForm) {
-            IconButton(onClick = { onOpenContactPage(contactForm.orEmpty()) }) {
+        if (contactFormValue != null) {
+            IconButton(onClick = { onOpenContactPage(contactFormValue) }) {
                 Icon(
                     Icons.AutoMirrored.Filled.Send,
                     contentDescription = "Open contact form",
                 )
             }
-        } else if (hasSiteFallback) {
-            IconButton(onClick = { onOpenContactPage(website.orEmpty()) }) {
+        } else if (websiteValue != null) {
+            IconButton(onClick = { onOpenContactPage(websiteValue) }) {
                 Icon(
                     Icons.AutoMirrored.Filled.OpenInNew,
                     contentDescription = "Open official site — no direct contact form on file",
