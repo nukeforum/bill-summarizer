@@ -1,7 +1,103 @@
 {
-  "generated_at": "2026-05-12T14:38:36Z",
+  "generated_at": "2026-05-13T08:44:50Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "hr3497-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "3497",
+      "title": "Medal of Sacrifice Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Mast, Brian J.",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2025-05-19",
+      "latest_action": {
+        "date": "2026-05-11",
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S2204; text: CR S2204)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p><strong>Medal of Sacrifice Act of 2025</strong></p><p>This bill directs the President to issue a medal of sacrifice for eligible law enforcement officers and first responders who are killed in the line of duty.</p><p>The bill also directs the President to establish a commission on the medal of sacrifice and appoint its members. The bill sets forth responsibilities of the commission, including to advise on the design of the medal and determine how the medal will be presented.</p><p>Under the bill, eligible law enforcement officers and first responders include federal, state, local, tribal, or territorial law enforcement officers or first responders who are not subject to an official act of wrongdoing (e.g., a determination that the officer or first responder acted outside the scope of their duties or in a manner that was not in accordance with official policies or procedures).</p><p>A law enforcement officer or first responder who is subject to an official act of wrongdoing is generally not eligible for the medal of sacrifice. However, in the case of such an officer or first responder, the bill requires the commission to investigate the circumstances surrounding the officer or first responder's cause of death and issue a final determination on their eligibility.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr3497/BILLS-119hr3497rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr3497/BILLS-119hr3497rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr3497/BILLS-119hr3497rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/3497"
+    },
+    {
+      "id": "s1020-119",
+      "congress": 119,
+      "type": "s",
+      "number": "1020",
+      "title": "A bill to require the Federal Energy Regulatory Commission to extend the time period during which licensees are required to commence construction of certain hydropower projects.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daines, Steve",
+        "party": "R",
+        "state": "MT"
+      },
+      "introduced_date": "2025-03-13",
+      "latest_action": {
+        "date": "2026-05-11",
+        "text": "Became Public Law No: 119-90."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This bill authorizes the Federal Energy Regulatory Commission (FERC) to extend construction deadlines for hydropower projects that were issued a license before March 13, 2020. FERC is authorized, upon the request of the licensees, to extend the deadline for beginning construction on such projects&nbsp;an additional six years beyond the eight-year extension FERC is authorized to provide under current law. The extension must&nbsp;consist of no more than three consecutive two-year periods.</p><p>The bill also provides that&nbsp;FERC may reinstate certain expired licenses for projects with construction deadlines extended under this bill, effective as of the date they expire.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s1020/BILLS-119s1020es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s1020/BILLS-119s1020es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s1020/BILLS-119s1020es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1020"
+    },
+    {
+      "id": "s98-119",
+      "congress": 119,
+      "type": "s",
+      "number": "98",
+      "title": "Rural Broadband Protection Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Capito, Shelley Moore",
+        "party": "R",
+        "state": "WV"
+      },
+      "introduced_date": "2025-01-15",
+      "latest_action": {
+        "date": "2026-05-11",
+        "text": "Became Public Law No: 119-89."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Rural Broadband Protection Act of 2025</strong></p><p>This bill requires the Federal Communications Commission (FCC) to establish a process to vet applicants for certain funding programs that support affordable broadband deployment in high-cost areas, including rural communities.</p><p>Specifically, the FCC must conduct a rulemaking to develop a vetting process for applicants seeking funding under high-cost universal service programs for the deployment of a broadband-capable network and the provision of supported services over the network. The FCC must require applications for such funding to document each applicant’s technical, financial, and operational capabilities related to the proposed deployment, as well as a reasonable business plan.&nbsp;</p><p>The FCC must evaluate applications against reasonable and well-established standards and must consider each applicant’s history of compliance with the requirements of other government broadband funding programs. After the rulemaking is finalized, funds may only be awarded to applicants that satisfy the standards established therein.&nbsp;</p><p>Finally, the FCC must set financial penalties for applicants that default in some manner during the evaluation process before they are authorized to begin receiving support. &nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s98/BILLS-119s98es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s98/BILLS-119s98es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s98/BILLS-119s98es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/98"
+    },
+    {
+      "id": "sres690-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "690",
+      "title": "An executive resolution authorizing the en bloc consideration in Executive Session of certain nominations on the Executive Calendar.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Thune, John",
+        "party": "R",
+        "state": "SD"
+      },
+      "introduced_date": "2026-04-27",
+      "latest_action": {
+        "date": "2026-05-11",
+        "text": "Resolution agreed to in Senate without amendment by Yea-Nay Vote. 46 - 45. Record Vote Number: 114. (text: CR 4/27/2026 S2056-2057)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres690/BILLS-119sres690pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres690/BILLS-119sres690pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres690/BILLS-119sres690pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/690"
+    },
     {
       "id": "s723-119",
       "congress": 119,
@@ -21,9 +117,9 @@
       },
       "outcome": "enacted",
       "summary_crs": "<p><strong>Tribal Trust Land Homeownership Act of 2025</strong></p><p>This bill sets forth requirements for the processing of a proposed residential leasehold mortgage, business leasehold mortgage, land mortgage, or right-of-way document by the Bureau of Indian Affairs (BIA). The BIA must notify lenders upon receipt of such documentation, perform a preliminary review of such documents not later than 10 days after receipt, and approve or disapprove of such documents within 20 or 30 days, depending on the type of application.</p><p>Additionally, the bill sets forth requirements for the BIA regarding (1) response times for the completion of certified title status reports, (2) notification of delays in processing, and (3) the form of notices and delivery of certain reports.</p><p>The bill also provides relevant federal agencies and Indian tribes with read-only access to the Trust Asset and Accounting Management System maintained by the BIA.</p><p>The Government Accountability Office must report on digitizing documents for the purpose of streamlining and expediting the completion of mortgage packages for residential mortgages on Indian land.</p><p>Finally, the bill establishes within the BIA's Division of Real Estate Services the position of Realty Ombudsman.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/s723/BILLS-119s723es.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/s723/BILLS-119s723es.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/s723/BILLS-119s723es.pdf",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ88/PLAW-119publ88.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ88/PLAW-119publ88_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ88/PLAW-119publ88.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/723"
     },
     {
