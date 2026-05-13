@@ -141,7 +141,9 @@ fun sampleMember(
     sponsoredCount: Int = 24,
     cosponsoredCount: Int = 132,
     address: String? = null,
-    phone: String? = null,
+    phone: String? = "(202) 224-3441",
+    contactForm: String? = "https://www.cantwell.senate.gov/contact",
+    website: String? = "https://www.cantwell.senate.gov",
 ): Member = Member(
     bioguideId = bioguideId,
     name = name,
@@ -155,6 +157,8 @@ fun sampleMember(
     cosponsoredCount = cosponsoredCount,
     address = address,
     phone = phone,
+    contactForm = contactForm,
+    website = website,
 )
 
 val sampleSenatorD: Member = sampleMember()
@@ -173,6 +177,8 @@ val sampleRepresentative: Member = sampleMember(
     state = "CO",
     district = 8,
     chamber = "house",
+    contactForm = null,
+    website = "https://caraveo.house.gov",
 )
 
 fun sampleLegislationItem(

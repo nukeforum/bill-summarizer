@@ -17,4 +17,6 @@ data class Member(
     @SerialName("cosponsored_count") val cosponsoredCount: Int = 0,
     val address: String? = null,
     val phone: String? = null,
+    @SerialName("contact_form") val contactForm: String? = null,
+    val website: String? = null,
 )
