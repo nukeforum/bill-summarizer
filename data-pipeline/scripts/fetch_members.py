@@ -33,6 +33,7 @@ from _common import (
     ErrorCollector,
     LIST_PAGE_LIMIT,
     current_congress,
+    fetch_contact_forms_index,
     load_members_index,
     member_legislation_path,
     now_iso,
@@ -150,6 +151,21 @@ def main(argv: list[str] | None = None) -> int:
     phase1_errors = ErrorCollector()
     phase2_errors = ErrorCollector()
 
+    contact_forms: dict[str, str] = {}
+    if run_phase1:
+        try:
+            contact_forms = fetch_contact_forms_index()
+            print(f"Fetched {len(contact_forms)} contact-form URLs from unitedstates dataset")
+        except Exception as exc:  # noqa: BLE001
+            # Non-fatal: members still publish, just without contact_form.
+            # Reuses the Phase 1 error collector so the end-of-run summary
+            # surfaces this alongside member-detail failures.
+            phase1_errors.record("contact_forms_index", "unitedstates", exc)
+            print(
+                f"WARN: contact-forms fetch failed ({exc!r}); contact_form will be null.",
+                file=sys.stderr,
+            )
+
     # ---------- Phase 1: fast — member roster + detail only ----------
     if not run_phase1:
         print(
@@ -188,6 +204,7 @@ def main(argv: list[str] | None = None) -> int:
                 else:
                     phase1_errors.record("member_detail_dropped", bioguide_id, exc)
                     continue
+            parsed["contact_form"] = contact_forms.get(bioguide_id)
             members_out.append(parsed)
             print(f"  + {bioguide_id} {parsed['name']} ({parsed['party']}-{parsed['state']})")
 

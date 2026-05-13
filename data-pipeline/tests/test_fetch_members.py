@@ -78,6 +78,14 @@ def test_main_writes_index_and_per_member_files(tmp_path, monkeypatch):
     """Both phases run when the time budget allows; both outputs land."""
     monkeypatch.setenv("CONGRESS_API_KEY", "stub")
     monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
+    monkeypatch.setattr(
+        fetch_members,
+        "fetch_contact_forms_index",
+        lambda: {
+            "A000001": "https://alice.house.gov/contact",
+            # B000002 deliberately absent — exercises the missing-key path.
+        },
+    )
     list_pages = [{
         "members": [
             _member_list_entry("A000001", "Alice", "Nebraska", 3, "House of Representatives", "Republican"),
@@ -131,7 +139,13 @@ def test_main_writes_index_and_per_member_files(tmp_path, monkeypatch):
         "cosponsored_count": 2,
         "address": "123 Cannon HOB",
         "phone": "+1-202-0000",
+        "contact_form": "https://alice.house.gov/contact",
     }
+
+    index = json.loads(_common.members_index_path(119).read_text())
+    by_bid = {m["bioguide_id"]: m for m in index["members"]}
+    assert by_bid["A000001"]["contact_form"] == "https://alice.house.gov/contact"
+    assert by_bid["B000002"]["contact_form"] is None
 
     sponsored_path = tmp_path / "members" / "A000001_sponsored.json"
     cosponsored_path = tmp_path / "members" / "A000001_cosponsored.json"
@@ -147,6 +161,7 @@ def test_main_writes_index_and_per_member_files(tmp_path, monkeypatch):
 def test_main_handles_empty_legislation(tmp_path, monkeypatch):
     monkeypatch.setenv("CONGRESS_API_KEY", "stub")
     monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
+    monkeypatch.setattr(fetch_members, "fetch_contact_forms_index", lambda: {})
     list_pages = [{
         "members": [_member_list_entry("Z999999", "Zed", "Vermont", 0, "House of Representatives", "Independent")],
     }]
@@ -179,6 +194,7 @@ def test_main_skips_members_with_existing_legislation_files(tmp_path, monkeypatc
     legislation files already exist on disk."""
     monkeypatch.setenv("CONGRESS_API_KEY", "stub")
     monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
+    monkeypatch.setattr(fetch_members, "fetch_contact_forms_index", lambda: {})
 
     # Pre-seed: one member's legislation files.
     (tmp_path / "members").mkdir(parents=True)
@@ -222,6 +238,7 @@ def test_main_writes_index_after_phase_one(tmp_path, monkeypatch):
     Reps tab from working."""
     monkeypatch.setenv("CONGRESS_API_KEY", "stub")
     monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
+    monkeypatch.setattr(fetch_members, "fetch_contact_forms_index", lambda: {})
 
     list_pages = [{"members": [
         _member_list_entry("A000001", "Alice", "Nebraska", 3),
@@ -275,6 +292,7 @@ def test_main_time_budget_only_gates_phase_two(tmp_path, monkeypatch):
     write zero or one legislation file (whichever the deadline check hits)."""
     monkeypatch.setenv("CONGRESS_API_KEY", "stub")
     monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
+    monkeypatch.setattr(fetch_members, "fetch_contact_forms_index", lambda: {})
 
     list_pages = [{"members": [
         _member_list_entry("A000001", "Alice", "Nebraska", 3),
@@ -310,6 +328,7 @@ def test_phase1_only_writes_index_and_skips_legislation(tmp_path, monkeypatch):
     """--phase1-only publishes the index and exits without touching legislation endpoints."""
     monkeypatch.setenv("CONGRESS_API_KEY", "stub")
     monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
+    monkeypatch.setattr(fetch_members, "fetch_contact_forms_index", lambda: {})
     list_pages = [{"members": [_member_list_entry("A000001", "Alice", "Nebraska", 3)]}]
     member_details = {"A000001": _member_detail("A000001", 0, 0, "https://a.house.gov")}
     fake = _FakeClient([list_pages[0]], member_details, {}, {})
@@ -327,6 +346,7 @@ def test_phase2_only_uses_existing_index(tmp_path, monkeypatch):
     """--phase2-only reads the on-disk index and backfills without re-fetching the roster."""
     monkeypatch.setenv("CONGRESS_API_KEY", "stub")
     monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
+    monkeypatch.setattr(fetch_members, "fetch_contact_forms_index", lambda: {})
     # Pre-seed: index from a prior --phase1-only run.
     (tmp_path / "members_119.json").write_text(json.dumps({
         "congress": 119, "generated_at": "x",
@@ -352,6 +372,7 @@ def test_phase2_only_with_no_index_returns_2(tmp_path, monkeypatch):
     """--phase2-only without a pre-existing index is an error."""
     monkeypatch.setenv("CONGRESS_API_KEY", "stub")
     monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
+    monkeypatch.setattr(fetch_members, "fetch_contact_forms_index", lambda: {})
     fake = _FakeClient([], {}, {}, {})
     with patch.object(fetch_members, "CongressClient", return_value=fake), \
          patch.object(fetch_members, "current_congress", return_value=119):
