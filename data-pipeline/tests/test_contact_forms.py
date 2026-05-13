@@ -98,6 +98,11 @@ def test_parse_handles_empty_input():
     assert parse_contact_info_yaml("[]") == {}
 
 
+def test_parse_handles_blank_and_null_yaml():
+    assert parse_contact_info_yaml("") == {}
+    assert parse_contact_info_yaml("null") == {}
+
+
 def test_parse_entry_with_no_terms_emits_both_null():
     yaml_text = textwrap.dedent("""
         - id:

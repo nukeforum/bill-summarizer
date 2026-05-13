@@ -18,9 +18,14 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.minimumInteractiveComponentSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.role
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import com.informedcitizen.data.model.Member
 import com.informedcitizen.theme.PartyColors
@@ -85,6 +90,11 @@ private fun MemberContactEndRegion(
         if (phoneValue != null) {
             Row(
                 modifier = Modifier
+                    .minimumInteractiveComponentSize()
+                    .semantics(mergeDescendants = true) {
+                        role = Role.Button
+                        contentDescription = "Call $phoneValue"
+                    }
                     .clickable { onCallPhone(phoneValue) }
                     .padding(horizontal = 8.dp, vertical = 4.dp),
                 verticalAlignment = Alignment.CenterVertically,
