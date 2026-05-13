@@ -7,7 +7,6 @@ import com.informedcitizen.crash.FakeCrashReporter
 import com.informedcitizen.data.ai.AiCapability
 import com.informedcitizen.data.ai.BillSummary
 import com.informedcitizen.data.ai.BillTopic
-import com.informedcitizen.data.ai.FakeAiCapability
 import com.informedcitizen.data.api.BillsApi
 import com.informedcitizen.data.cache.BillSummaryCache
 import com.informedcitizen.data.cache.BillSummaryEntry
@@ -21,13 +20,12 @@ import com.informedcitizen.data.model.SessionCalendar
 import com.informedcitizen.data.model.SessionCalendarSource
 import com.informedcitizen.data.model.Sponsor
 import com.informedcitizen.data.repository.AiTitlesPreferenceRepository
-import com.informedcitizen.data.repository.AiTitlesPreferenceRepositoryImpl
 import com.informedcitizen.data.repository.BillRepository
 import com.informedcitizen.data.repository.SessionCalendarRepository
-import com.informedcitizen.data.work.BillSummarizationControllerImpl
+import com.informedcitizen.data.work.BillSummarizationController
 import com.informedcitizen.data.work.SummarizationScope
-import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.filterIsInstance
 import kotlinx.coroutines.flow.first
@@ -112,15 +110,8 @@ class BillsListViewModelAiTitlesTest {
             api = StubBillsApi(BillsManifest(generatedAt = "x", congress = 119, bills = emptyList())),
             crashReporter = FakeCrashReporter(),
         )
-        val prefs = AiTitlesPreferenceRepositoryImpl(StubPreferencesDataStore())
+        val prefs = FakeAiTitlesPrefs()
         val cap = FakeAiCapability(capability)
-        // Controller is unused by the assertions; provide a no-op via a real instance.
-        val controller = BillSummarizationControllerImpl(
-            context = StubApplicationContext(),
-            prefs = prefs,
-            cache = cache,
-            billRepository = billRepo,
-        )
         kotlinx.coroutines.runBlocking {
             billRepo.getBills(forceRefresh = true)
             prefs.setEnabled(aiEnabled)
@@ -132,7 +123,7 @@ class BillsListViewModelAiTitlesTest {
             cache = cache,
             aiPrefs = prefs,
             aiCapability = cap,
-            controller = controller,
+            controller = NoOpController,
         )
     }
 
@@ -206,6 +197,26 @@ private class StubCache(initial: Map<String, BillSummaryEntry> = emptyMap()) : B
     override suspend fun attemptsToday(localDateIso: String) = 0L
 }
 
-// Minimal Context stand-in for the controller; the VM tests never call any
-// method on it, so an empty one is enough.
-private class StubApplicationContext : android.content.ContextWrapper(null)
+private class FakeAiCapability(
+    initial: AiCapability.Status = AiCapability.Status.Available,
+) : AiCapability {
+    private val state = MutableStateFlow(initial)
+    override val status: Flow<AiCapability.Status> = state
+    override fun requestDownload() = Unit
+}
+
+private class FakeAiTitlesPrefs : AiTitlesPreferenceRepository {
+    private val enabledState = MutableStateFlow(false)
+    private val scopeState = MutableStateFlow<SummarizationScope>(SummarizationScope.DEFAULT)
+    override val enabled: Flow<Boolean> = enabledState
+    override val scope: Flow<SummarizationScope> = scopeState
+    override suspend fun setEnabled(enabled: Boolean) { enabledState.value = enabled }
+    override suspend fun setScope(scope: SummarizationScope) { scopeState.value = scope }
+}
+
+private object NoOpController : BillSummarizationController {
+    override fun start() = Unit
+    override fun retry(billId: String) = Unit
+    override fun stopNow() = Unit
+    override fun clearCache() = Unit
+}
