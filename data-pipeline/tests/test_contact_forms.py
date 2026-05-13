@@ -1,50 +1,77 @@
-"""Tests for the unitedstates/congress-legislators contact-form parser."""
+"""Tests for the unitedstates/congress-legislators contact-info parser + fetcher."""
 from __future__ import annotations
 
 import textwrap
+from unittest.mock import patch
 
-import _common
+import pytest
+import requests as _requests
+
+from _common import (
+    LEGISLATORS_CURRENT_YAML_URL,
+    fetch_contact_info_index,
+    parse_contact_info_yaml,
+)
 
 
-def test_parse_extracts_contact_form_from_last_term():
+def test_parse_extracts_both_fields_from_last_term():
     yaml_text = textwrap.dedent("""
         - id:
             bioguide: O000174
           terms:
             - type: sen
-              start: "2021-01-20"
+              url: https://old.example.com
               contact_form: https://example.com/old-form
             - type: sen
-              start: "2027-01-03"
+              url: https://www.ossoff.senate.gov
               contact_form: https://www.ossoff.senate.gov/contact-us/
-        - id:
-            bioguide: S001234
-          terms:
-            - type: rep
-              contact_form: https://smith.house.gov/contact
     """)
-    out = _common.parse_contact_forms_yaml(yaml_text)
+    out = parse_contact_info_yaml(yaml_text)
     assert out == {
-        "O000174": "https://www.ossoff.senate.gov/contact-us/",
-        "S001234": "https://smith.house.gov/contact",
+        "O000174": {
+            "contact_form": "https://www.ossoff.senate.gov/contact-us/",
+            "website": "https://www.ossoff.senate.gov",
+        },
     }
 
 
-def test_parse_skips_entries_with_no_contact_form():
+def test_parse_returns_website_only_when_contact_form_missing_everywhere():
+    """Mirrors the ~58% of House reps in real data: homepage but no form."""
     yaml_text = textwrap.dedent("""
         - id:
-            bioguide: A000001
+            bioguide: P000609
           terms:
             - type: rep
-              start: "2023-01-03"
-        - id:
-            bioguide: B000002
-          terms:
-            - type: rep
-              contact_form: https://b.house.gov/contact
+              url: https://palmer.house.gov
     """)
-    out = _common.parse_contact_forms_yaml(yaml_text)
-    assert out == {"B000002": "https://b.house.gov/contact"}
+    out = parse_contact_info_yaml(yaml_text)
+    assert out == {
+        "P000609": {
+            "contact_form": None,
+            "website": "https://palmer.house.gov",
+        },
+    }
+
+
+def test_parse_falls_back_through_terms_independently_per_field():
+    """contact_form on an earlier term + url on the latest term — both surface."""
+    yaml_text = textwrap.dedent("""
+        - id:
+            bioguide: D000004
+          terms:
+            - type: rep
+              contact_form: https://d.house.gov/contact
+              url: https://old.d.house.gov
+            - type: sen
+              url: https://www.d.senate.gov
+    """)
+    out = parse_contact_info_yaml(yaml_text)
+    assert out == {
+        "D000004": {
+            "contact_form": "https://d.house.gov/contact",
+            "website": "https://www.d.senate.gov",
+        },
+    }
 
 
 def test_parse_skips_entries_with_no_bioguide_id():
@@ -54,48 +81,40 @@ def test_parse_skips_entries_with_no_bioguide_id():
           terms:
             - type: rep
               contact_form: https://nobody.house.gov/contact
+              url: https://nobody.house.gov
         - id:
             bioguide: C000003
           terms:
             - type: rep
-              contact_form: https://c.house.gov/contact
+              url: https://c.house.gov
     """)
-    out = _common.parse_contact_forms_yaml(yaml_text)
-    assert out == {"C000003": "https://c.house.gov/contact"}
+    out = parse_contact_info_yaml(yaml_text)
+    assert out == {
+        "C000003": {"contact_form": None, "website": "https://c.house.gov"},
+    }
 
 
 def test_parse_handles_empty_input():
-    assert _common.parse_contact_forms_yaml("[]") == {}
+    assert parse_contact_info_yaml("[]") == {}
 
 
-def test_parse_falls_back_through_terms_when_last_lacks_contact_form():
-    """A few entries carry contact_form on an earlier term only; accept the
-    most recent term that has one rather than dropping the legislator."""
+def test_parse_entry_with_no_terms_emits_both_null():
     yaml_text = textwrap.dedent("""
         - id:
-            bioguide: D000004
-          terms:
-            - type: rep
-              start: "2019-01-03"
-              contact_form: https://d.house.gov/contact
-            - type: sen
-              start: "2025-01-03"
+            bioguide: X000001
+          terms: []
     """)
-    out = _common.parse_contact_forms_yaml(yaml_text)
-    assert out == {"D000004": "https://d.house.gov/contact"}
+    out = parse_contact_info_yaml(yaml_text)
+    assert out == {"X000001": {"contact_form": None, "website": None}}
 
 
-from unittest.mock import patch
-
-from _common import fetch_contact_forms_index, CONTACT_FORMS_YAML_URL
-
-
-def test_fetch_contact_forms_index_uses_default_url_and_parses_response():
+def test_fetch_contact_info_index_uses_default_url_and_parses_response():
     sample_yaml = (
         "- id:\n"
         "    bioguide: E000005\n"
         "  terms:\n"
         "    - type: rep\n"
+        "      url: https://e.house.gov\n"
         "      contact_form: https://e.house.gov/contact\n"
     )
 
@@ -104,20 +123,22 @@ def test_fetch_contact_forms_index_uses_default_url_and_parses_response():
         def raise_for_status(self) -> None: return None
 
     with patch("_common.requests.get", return_value=_Resp()) as mock_get:
-        out = fetch_contact_forms_index()
-    mock_get.assert_called_once_with(CONTACT_FORMS_YAML_URL, timeout=30)
-    assert out == {"E000005": "https://e.house.gov/contact"}
+        out = fetch_contact_info_index()
+    mock_get.assert_called_once_with(LEGISLATORS_CURRENT_YAML_URL, timeout=30)
+    assert out == {
+        "E000005": {
+            "contact_form": "https://e.house.gov/contact",
+            "website": "https://e.house.gov",
+        },
+    }
 
 
-def test_fetch_contact_forms_index_propagates_http_errors():
-    import requests as _requests
-
+def test_fetch_contact_info_index_propagates_http_errors():
     class _Resp:
         text = ""
         def raise_for_status(self) -> None:
             raise _requests.HTTPError("500 Server Error")
 
     with patch("_common.requests.get", return_value=_Resp()):
-        import pytest as _pytest
-        with _pytest.raises(_requests.HTTPError):
-            fetch_contact_forms_index()
+        with pytest.raises(_requests.HTTPError):
+            fetch_contact_info_index()

@@ -709,21 +709,28 @@ def parse_member_legislation_item(raw: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-# ---------- unitedstates/congress-legislators contact forms ---------------
+# ---------- unitedstates/congress-legislators contact info ---------------
 
 
-def parse_contact_forms_yaml(text: str) -> dict[str, str]:
-    """Extract a {bioguide_id: contact_form_url} map from legislators-current.yaml.
+def parse_contact_info_yaml(text: str) -> dict[str, dict[str, str | None]]:
+    """Extract {bioguide: {"contact_form", "website"}} from legislators-current.yaml.
 
     The upstream YAML (https://github.com/unitedstates/congress-legislators)
     is a list of legislator entries. Each entry has an ``id.bioguide`` key
-    and a ``terms`` list; ``contact_form`` lives on individual terms. We
-    walk terms in reverse to pick the most recent one that carries a
-    contact form, since a handful of entries omit it on the current term
-    but carried it on a prior one.
+    and a ``terms`` list; ``contact_form`` and ``url`` (the homepage) live
+    on individual terms. We walk terms in reverse and pick the most recent
+    non-empty value for each field independently — they sometimes live on
+    different terms (e.g. a rep who carried a contact_form in a prior term
+    but only kept the homepage on the current one).
+
+    Coverage in production (verified 2026-05-13): all 536 current
+    legislators have a ``url`` (homepage); only ~224 of 536 carry a
+    ``contact_form``. The website field is the fallback that lets the
+    Android UI render a contact entry-point for every rep, with a
+    different icon + caption when the direct form is missing.
     """
     data = yaml.safe_load(text) or []
-    out: dict[str, str] = {}
+    out: dict[str, dict[str, str | None]] = {}
     for entry in data:
         if not isinstance(entry, dict):
             continue
@@ -732,32 +739,43 @@ def parse_contact_forms_yaml(text: str) -> dict[str, str]:
         if not bioguide:
             continue
         terms = entry.get("terms") or []
+        contact_form: str | None = None
+        website: str | None = None
         for term in reversed(terms):
             if not isinstance(term, dict):
                 continue
-            form = term.get("contact_form")
-            if form:
-                out[bioguide] = form
+            if contact_form is None:
+                cf = term.get("contact_form")
+                if cf:
+                    contact_form = cf
+            if website is None:
+                w = term.get("url")
+                if w:
+                    website = w
+            if contact_form is not None and website is not None:
                 break
+        out[bioguide] = {"contact_form": contact_form, "website": website}
     return out
 
 
-CONTACT_FORMS_YAML_URL = (
+LEGISLATORS_CURRENT_YAML_URL = (
     "https://raw.githubusercontent.com/"
     "unitedstates/congress-legislators/main/legislators-current.yaml"
 )
 
 
-def fetch_contact_forms_index(url: str = CONTACT_FORMS_YAML_URL) -> dict[str, str]:
-    """Download legislators-current.yaml and return {bioguide_id: contact_form}.
+def fetch_contact_info_index(
+    url: str = LEGISLATORS_CURRENT_YAML_URL,
+) -> dict[str, dict[str, str | None]]:
+    """Download legislators-current.yaml and return per-bioguide contact info.
 
     Raises ``requests.HTTPError`` on a non-2xx status. Caller decides whether
     to treat the failure as fatal — Phase 1 of fetch_members.py treats it as
-    non-fatal (member records still flow, just without contact_form).
+    non-fatal (member records still flow, just with both contact fields null).
     """
     resp = requests.get(url, timeout=30)
     resp.raise_for_status()
-    return parse_contact_forms_yaml(resp.text)
+    return parse_contact_info_yaml(resp.text)
 
 
 # ---------- index ----------------------------------------------------------

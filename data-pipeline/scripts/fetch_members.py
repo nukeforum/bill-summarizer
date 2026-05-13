@@ -33,7 +33,7 @@ from _common import (
     ErrorCollector,
     LIST_PAGE_LIMIT,
     current_congress,
-    fetch_contact_forms_index,
+    fetch_contact_info_index,
     load_members_index,
     member_legislation_path,
     now_iso,
@@ -151,18 +151,21 @@ def main(argv: list[str] | None = None) -> int:
     phase1_errors = ErrorCollector()
     phase2_errors = ErrorCollector()
 
-    contact_forms: dict[str, str] = {}
+    contact_info: dict[str, dict[str, str | None]] = {}
     if run_phase1:
         try:
-            contact_forms = fetch_contact_forms_index()
-            print(f"Fetched {len(contact_forms)} contact-form URLs from unitedstates dataset")
-        except Exception as exc:  # noqa: BLE001
-            # Non-fatal: members still publish, just without contact_form.
-            # Reuses the Phase 1 error collector so the end-of-run summary
-            # surfaces this alongside member-detail failures.
-            phase1_errors.record("contact_forms_index", "unitedstates", exc)
+            contact_info = fetch_contact_info_index()
+            with_form = sum(1 for v in contact_info.values() if v.get("contact_form"))
+            with_site = sum(1 for v in contact_info.values() if v.get("website"))
             print(
-                f"WARN: contact-forms fetch failed ({exc!r}); contact_form will be null.",
+                f"Fetched contact info: {len(contact_info)} legislators, "
+                f"{with_form} contact forms, {with_site} websites"
+            )
+        except Exception as exc:  # noqa: BLE001
+            # Non-fatal: members still publish with both fields null.
+            phase1_errors.record("contact_info_index", "unitedstates", exc)
+            print(
+                f"WARN: contact-info fetch failed ({exc!r}); contact_form and website will be null.",
                 file=sys.stderr,
             )
 
@@ -204,7 +207,9 @@ def main(argv: list[str] | None = None) -> int:
                 else:
                     phase1_errors.record("member_detail_dropped", bioguide_id, exc)
                     continue
-            parsed["contact_form"] = contact_forms.get(bioguide_id)
+            info = contact_info.get(bioguide_id) or {}
+            parsed["contact_form"] = info.get("contact_form")
+            parsed["website"] = info.get("website")
             members_out.append(parsed)
             print(f"  + {bioguide_id} {parsed['name']} ({parsed['party']}-{parsed['state']})")
 
