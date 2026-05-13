@@ -7,6 +7,10 @@ import com.informedcitizen.data.ai.AiCoreBillSummarizer
 import com.informedcitizen.data.ai.AiCoreEngineFactory
 import com.informedcitizen.data.ai.BillSummarizer
 import com.informedcitizen.data.ai.RealAiCoreEngine
+import com.informedcitizen.data.repository.AiTitlesPreferenceRepository
+import com.informedcitizen.data.repository.AiTitlesPreferenceRepositoryImpl
+import com.informedcitizen.data.work.BillSummarizationController
+import com.informedcitizen.data.work.BillSummarizationControllerImpl
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
@@ -24,6 +28,16 @@ abstract class AiTitlesModule {
 
     @Binds @Singleton
     abstract fun bindAiCapability(impl: AiCapabilityImpl): AiCapability
+
+    @Binds @Singleton
+    abstract fun bindAiTitlesPreferenceRepository(
+        impl: AiTitlesPreferenceRepositoryImpl,
+    ): AiTitlesPreferenceRepository
+
+    @Binds @Singleton
+    abstract fun bindBillSummarizationController(
+        impl: BillSummarizationControllerImpl,
+    ): BillSummarizationController
 
     companion object {
         @Provides @Singleton

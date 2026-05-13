@@ -14,22 +14,22 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class AiTitlesPreferenceRepository @Inject constructor(
+class AiTitlesPreferenceRepositoryImpl @Inject constructor(
     private val dataStore: DataStore<Preferences>,
-) {
-    val enabled: Flow<Boolean> = dataStore.data
+) : AiTitlesPreferenceRepository {
+    override val enabled: Flow<Boolean> = dataStore.data
         .map { it[KEY_ENABLED] ?: false }
         .catch { emit(false) }
 
-    val scope: Flow<SummarizationScope> = dataStore.data
+    override val scope: Flow<SummarizationScope> = dataStore.data
         .map { it.toScope() }
         .catch { emit(SummarizationScope.DEFAULT) }
 
-    suspend fun setEnabled(enabled: Boolean) {
+    override suspend fun setEnabled(enabled: Boolean) {
         dataStore.edit { it[KEY_ENABLED] = enabled }
     }
 
-    suspend fun setScope(scope: SummarizationScope) {
+    override suspend fun setScope(scope: SummarizationScope) {
         dataStore.edit { prefs ->
             prefs[KEY_SCOPE_NAME] = scope.persistName()
             when (scope) {

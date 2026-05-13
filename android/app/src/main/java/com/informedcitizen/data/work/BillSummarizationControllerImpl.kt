@@ -22,15 +22,15 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class BillSummarizationController @Inject constructor(
+class BillSummarizationControllerImpl @Inject constructor(
     @param:ApplicationContext private val context: Context,
     private val prefs: AiTitlesPreferenceRepository,
     private val cache: BillSummaryCache,
     private val billRepository: BillRepository,
-) {
+) : BillSummarizationController {
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
 
-    fun start() {
+    override fun start() {
         prefs.enabled
             .distinctUntilChanged()
             .onEach { enabled ->
@@ -59,7 +59,7 @@ class BillSummarizationController @Inject constructor(
             .launchIn(scope)
     }
 
-    fun retry(billId: String) {
+    override fun retry(billId: String) {
         scope.launch {
             cache.delete(billId)
             cache.enqueue(billId, priority = 100, bypassCap = true, enqueuedAtMillis = System.currentTimeMillis())
@@ -67,11 +67,11 @@ class BillSummarizationController @Inject constructor(
         }
     }
 
-    fun stopNow() {
+    override fun stopNow() {
         WorkManager.getInstance(context).cancelUniqueWork(BillSummarizationWorker.UNIQUE_NAME)
     }
 
-    fun clearCache() {
+    override fun clearCache() {
         scope.launch {
             cache.clearAll()
             cache.clearPending()

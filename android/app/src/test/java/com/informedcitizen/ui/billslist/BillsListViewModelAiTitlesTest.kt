@@ -21,9 +21,10 @@ import com.informedcitizen.data.model.SessionCalendar
 import com.informedcitizen.data.model.SessionCalendarSource
 import com.informedcitizen.data.model.Sponsor
 import com.informedcitizen.data.repository.AiTitlesPreferenceRepository
+import com.informedcitizen.data.repository.AiTitlesPreferenceRepositoryImpl
 import com.informedcitizen.data.repository.BillRepository
 import com.informedcitizen.data.repository.SessionCalendarRepository
-import com.informedcitizen.data.work.BillSummarizationController
+import com.informedcitizen.data.work.BillSummarizationControllerImpl
 import com.informedcitizen.data.work.SummarizationScope
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
@@ -111,10 +112,10 @@ class BillsListViewModelAiTitlesTest {
             api = StubBillsApi(BillsManifest(generatedAt = "x", congress = 119, bills = emptyList())),
             crashReporter = FakeCrashReporter(),
         )
-        val prefs = AiTitlesPreferenceRepository(StubPreferencesDataStore())
+        val prefs = AiTitlesPreferenceRepositoryImpl(StubPreferencesDataStore())
         val cap = FakeAiCapability(capability)
         // Controller is unused by the assertions; provide a no-op via a real instance.
-        val controller = BillSummarizationController(
+        val controller = BillSummarizationControllerImpl(
             context = StubApplicationContext(),
             prefs = prefs,
             cache = cache,

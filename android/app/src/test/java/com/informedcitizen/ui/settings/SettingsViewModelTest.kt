@@ -11,12 +11,12 @@ import com.informedcitizen.data.model.CongressEntry
 import com.informedcitizen.data.model.CongressesIndex
 import com.informedcitizen.data.model.SessionCalendar
 import com.informedcitizen.data.model.SessionCalendarSource
-import com.informedcitizen.data.repository.AiTitlesPreferenceRepository
+import com.informedcitizen.data.repository.AiTitlesPreferenceRepositoryImpl
 import com.informedcitizen.data.repository.BillRepository
 import com.informedcitizen.data.repository.CrashReportingPreferenceRepository
 import com.informedcitizen.data.repository.SavedRepsRepository
 import com.informedcitizen.data.repository.ThemePreferenceRepository
-import com.informedcitizen.data.work.BillSummarizationController
+import com.informedcitizen.data.work.BillSummarizationControllerImpl
 import com.informedcitizen.testutil.InMemoryPreferencesDataStore
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.Dispatchers
@@ -42,14 +42,14 @@ class SettingsViewModelTest {
         val themePrefs = ThemePreferenceRepository(InMemoryPreferencesDataStore())
         val crashPrefs = CrashReportingPreferenceRepository(InMemoryPreferencesDataStore())
         val crashReporter = FakeCrashReporter()
-        val aiPrefs = AiTitlesPreferenceRepository(InMemoryPreferencesDataStore())
+        val aiPrefs = AiTitlesPreferenceRepositoryImpl(InMemoryPreferencesDataStore())
         val cache = StubBillSummaryCache()
         val billRepo = BillRepository(
             api = StubBillsApi(),
             dataStore = InMemoryPreferencesDataStore(),
             crashReporter = FakeCrashReporter(),
         )
-        val controller = BillSummarizationController(
+        val controller = BillSummarizationControllerImpl(
             context = android.content.ContextWrapper(null),
             prefs = aiPrefs,
             cache = cache,

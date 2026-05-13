@@ -26,6 +26,7 @@ import com.informedcitizen.data.model.Outcome
 import com.informedcitizen.data.model.SessionCalendar
 import com.informedcitizen.data.model.Sponsor
 import com.informedcitizen.data.repository.AiTitlesPreferenceRepository
+import com.informedcitizen.data.repository.AiTitlesPreferenceRepositoryImpl
 import com.informedcitizen.data.repository.BillRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.runBlocking
@@ -181,7 +182,7 @@ private fun fakePrefs(
     scope: SummarizationScope,
 ): AiTitlesPreferenceRepository {
     val store = StubPreferencesDataStore()
-    val prefs = AiTitlesPreferenceRepository(store)
+    val prefs = AiTitlesPreferenceRepositoryImpl(store)
     runBlocking {
         prefs.setEnabled(enabled)
         prefs.setScope(scope)

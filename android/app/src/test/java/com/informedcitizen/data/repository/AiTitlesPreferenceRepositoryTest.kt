@@ -15,25 +15,25 @@ import org.junit.Test
 class AiTitlesPreferenceRepositoryTest {
 
     @Test fun `defaults are toggle-off and Progressive-50`() = runTest {
-        val repo = AiTitlesPreferenceRepository(StubStore())
+        val repo = AiTitlesPreferenceRepositoryImpl(StubStore())
         assertFalse(repo.enabled.first())
         assertEquals(SummarizationScope.Progressive(50), repo.scope.first())
     }
 
     @Test fun `setEnabled persists`() = runTest {
-        val repo = AiTitlesPreferenceRepository(StubStore())
+        val repo = AiTitlesPreferenceRepositoryImpl(StubStore())
         repo.setEnabled(true)
         assertTrue(repo.enabled.first())
     }
 
     @Test fun `setScope round-trips Progressive with custom cap`() = runTest {
-        val repo = AiTitlesPreferenceRepository(StubStore())
+        val repo = AiTitlesPreferenceRepositoryImpl(StubStore())
         repo.setScope(SummarizationScope.Progressive(123))
         assertEquals(SummarizationScope.Progressive(123), repo.scope.first())
     }
 
     @Test fun `setScope round-trips Floor and Recent60 and All`() = runTest {
-        val repo = AiTitlesPreferenceRepository(StubStore())
+        val repo = AiTitlesPreferenceRepositoryImpl(StubStore())
         repo.setScope(SummarizationScope.FloorActionOnly)
         assertEquals(SummarizationScope.FloorActionOnly, repo.scope.first())
         repo.setScope(SummarizationScope.Recent60Days)
@@ -43,7 +43,7 @@ class AiTitlesPreferenceRepositoryTest {
     }
 
     @Test fun `empty store falls back to default Progressive`() = runTest {
-        val repo = AiTitlesPreferenceRepository(StubStore())
+        val repo = AiTitlesPreferenceRepositoryImpl(StubStore())
         assertEquals(SummarizationScope.Progressive(50), repo.scope.first())
     }
 }
