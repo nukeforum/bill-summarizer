@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+      AI-titles foreground service permissions, the SystemForegroundService
+      dataSync override, and the StopSummarizationReceiver declaration
+      are gated behind FeatureFlags.AI_TITLES. They live here so they
+      can be added back to the merged manifest as a single unit when
+      the flag flips. See the TODO entry "Restore AI-titles manifest
+      entries before flipping FeatureFlags.AI_TITLES."
+    -->
+
+</manifest>

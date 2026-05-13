@@ -7,8 +7,8 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import androidx.core.app.NotificationCompat
-import com.informedcitizen.MainActivity
-import com.informedcitizen.R
+import com.informedcitizen.feature.aititles.AiTitlesHost
+import com.informedcitizen.feature.aititles.R
 
 object SummarizationNotifications {
     private const val CHANNEL_ID = "summarization_progress"
@@ -29,6 +29,7 @@ object SummarizationNotifications {
 
     fun build(
         context: Context,
+        host: AiTitlesHost,
         currentIndex: Int,
         total: Int,
         indeterminate: Boolean,
@@ -43,15 +44,12 @@ object SummarizationNotifications {
         )
         val openSettingsPi = PendingIntent.getActivity(
             context, 1,
-            Intent(context, MainActivity::class.java).apply {
-                action = MainActivity.ACTION_OPEN_AI_SETTINGS
-                flags = Intent.FLAG_ACTIVITY_SINGLE_TOP or Intent.FLAG_ACTIVITY_CLEAR_TOP
-            },
+            host.openAiSettingsIntent(context),
             PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT,
         )
 
         return NotificationCompat.Builder(context, CHANNEL_ID)
-            .setSmallIcon(R.drawable.ic_launcher_foreground)
+            .setSmallIcon(host.notificationSmallIconResId)
             .setContentTitle(context.getString(R.string.summarization_title))
             .setContentText(
                 if (indeterminate) context.getString(R.string.summarization_text_starting)

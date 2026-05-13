@@ -11,6 +11,7 @@ import com.informedcitizen.data.ai.BillSummarizer
 import com.informedcitizen.data.cache.BillSummaryCache
 import com.informedcitizen.data.repository.AiTitlesPreferenceRepository
 import com.informedcitizen.data.repository.BillRepository
+import com.informedcitizen.feature.aititles.AiTitlesHost
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedInject
 import kotlinx.coroutines.flow.first
@@ -26,6 +27,7 @@ class BillSummarizationWorker @AssistedInject constructor(
     private val summarizer: BillSummarizer,
     private val prefs: AiTitlesPreferenceRepository,
     private val clock: Clock,
+    private val host: AiTitlesHost,
 ) : CoroutineWorker(appContext, params) {
 
     override suspend fun doWork(): Result {
@@ -78,6 +80,7 @@ class BillSummarizationWorker @AssistedInject constructor(
     ): ForegroundInfo {
         val notification = SummarizationNotifications.build(
             context = applicationContext,
+            host = host,
             currentIndex = currentIndex,
             total = total,
             indeterminate = indeterminate,

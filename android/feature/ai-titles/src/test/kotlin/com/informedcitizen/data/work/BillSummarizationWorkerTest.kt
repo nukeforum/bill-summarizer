@@ -28,6 +28,8 @@ import com.informedcitizen.data.model.Sponsor
 import com.informedcitizen.data.repository.AiTitlesPreferenceRepository
 import com.informedcitizen.data.repository.AiTitlesPreferenceRepositoryImpl
 import com.informedcitizen.data.repository.BillRepository
+import com.informedcitizen.feature.aititles.AiTitlesHost
+import android.content.Intent
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals
@@ -138,6 +140,7 @@ class BillSummarizationWorkerTest {
                 summarizer = summarizer,
                 prefs = prefs,
                 clock = FIXED_CLOCK,
+                host = NoOpAiTitlesHost,
             )
         })
         .build()
@@ -276,4 +279,9 @@ private class FakeCache : BillSummaryCache {
 
     override suspend fun attemptsToday(localDateIso: String): Long =
         attempts[localDateIso] ?: 0L
+}
+
+private object NoOpAiTitlesHost : AiTitlesHost {
+    override fun openAiSettingsIntent(context: Context): Intent = Intent()
+    override val notificationSmallIconResId: Int = 0
 }

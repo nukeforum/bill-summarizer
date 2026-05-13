@@ -79,6 +79,7 @@ dependencies {
   implementation(project(":feature:calendar"))
   implementation(project(":feature:reps"))
   implementation(project(":feature:bills"))
+  implementation(project(":feature:ai-titles"))
 
   val composeBom = platform(libs.androidx.compose.bom)
   implementation(composeBom)
@@ -146,8 +147,9 @@ dependencies {
   implementation(libs.androidx.hilt.work)
   ksp(libs.androidx.hilt.compiler)
 
-  // On-device AICore (Gemini Nano)
-  implementation(libs.google.ai.edge.aicore)
+  // AICore (Gemini Nano) is consumed via :feature:ai-titles; the
+  // tools:overrideLibrary entry in :app/AndroidManifest.xml still applies
+  // because manifest overrides are evaluated at the merged-manifest level.
 
   testImplementation(libs.sqldelight.sqlite.driver)
   testImplementation(libs.androidx.work.testing)
