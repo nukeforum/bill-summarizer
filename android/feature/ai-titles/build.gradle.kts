@@ -13,6 +13,7 @@ dependencies {
     implementation(project(":core:network"))
     implementation(project(":core:datastore"))
     implementation(project(":core:database"))
+    implementation(project(":core:ui"))
     // BillRepository (owned by :feature:bills) is used by the worker
     // and controller. A cleaner split would extract a BillRepository
     // interface into :core:model; that's tracked as future work.
