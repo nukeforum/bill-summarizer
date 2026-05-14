@@ -1,7 +1,55 @@
 {
-  "generated_at": "2026-05-13T14:49:28Z",
+  "generated_at": "2026-05-14T08:37:58Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "hr8469-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "8469",
+      "title": "Making appropriations for military construction, the Department of Veterans Affairs, and related agencies for the fiscal year ending September 30, 2027, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Carter, John R.",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2026-04-23",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Rule H. Res. 1275 passed House."
+      },
+      "outcome": "passed_house",
+      "summary_crs": "<p><strong>Military Construction, Veterans Affairs, and Related Agencies Appropriations Act, 2027</strong></p><p>This bill provides FY2027 appropriations for military construction, the Department of Veterans Affairs (VA), and related agencies.</p><p>The bill provides appropriations to the Department of Defense (DOD) for military construction for</p><ul><li>the Army;</li><li>the Navy and Marine Corps;</li><li>the Air Force;</li><li>Defense-wide agencies and activities;</li><li>the Army and Air National Guard; and</li><li>the Army, Navy, and Air Force Reserves.</li></ul><p>The bill also provides appropriations to DOD for</p><ul><li>the North Atlantic Treaty Organization (NATO) Security Investment Program;</li><li>the Base Closure Account;</li><li>Construction and Operation and Maintenance of Family Housing for the Army, the Navy and Marine Corps, the Air Force, and Defense-wide agencies and activities;</li><li>the Family Housing Improvement Fund; and</li><li>the Military Unaccompanied Housing Improvement Fund.</li></ul><p>Within the VA budget, the bill provides appropriations for</p><ul><li>the Veterans Benefits Administration,</li><li>the Veterans Health Administration,</li><li>the National Cemetery Administration,</li><li>Departmental Administration, and</li><li>the Cost of War Toxic Exposures Fund.</li></ul><p>The bill provides appropriations for related agencies and programs, including</p><ul><li>the American Battle Monuments Commission,</li><li>the U.S. Court of Appeals for Veterans Claims,</li><li>Cemeterial Expenses of the Army, and</li><li>the Armed Forces Retirement Home.</li></ul><p>The bill also sets forth requirements and restrictions for using funds provided by this and other appropriations acts.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr8469/BILLS-119hr8469rh.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr8469/BILLS-119hr8469rh.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr8469/BILLS-119hr8469rh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/8469"
+    },
+    {
+      "id": "hconres73-119",
+      "congress": 119,
+      "type": "hconres",
+      "number": "73",
+      "title": "Authorizing the use of the Capitol Grounds for the National Peace Officers' Memorial Service and the National Honor Guard and Pipe Band Exhibition.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Perry, Scott",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2026-02-03",
+      "latest_action": {
+        "date": "2026-05-12",
+        "text": "Resolution agreed to in Senate without amendment by Unanimous Consent. (consideration: CR S2241; text: CR S2241)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This concurrent resolution authorizes the National Fraternal Order of Police to sponsor two public events on Capitol grounds: the 45th Annual National Peace Officers Memorial Service (on&nbsp;May 15, 2026) and the National Honor Guard and Pipe Band Exhibition (on May 14, 2026). The concurrent resolution also authorizes the Speaker of the House and the Committee on Rules and Administration of the Senate to&nbsp;jointly designate alternate dates.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hconres73/BILLS-119hconres73rds.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hconres73/BILLS-119hconres73rds.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hconres73/BILLS-119hconres73rds.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-concurrent-resolution/73"
+    },
     {
       "id": "hr3497-119",
       "congress": 119,
@@ -93,9 +141,9 @@
       },
       "outcome": "passed_senate",
       "summary_crs": null,
-      "text_url_html": "https://www.congress.gov/119/bills/sres690/BILLS-119sres690pcs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/sres690/BILLS-119sres690pcs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/sres690/BILLS-119sres690pcs.pdf",
+      "text_url_html": "https://www.congress.gov/119/bills/sres690/BILLS-119sres690ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres690/BILLS-119sres690ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres690/BILLS-119sres690ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/690"
     },
     {
