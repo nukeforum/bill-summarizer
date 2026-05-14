@@ -1,21 +1,24 @@
-name: Backfill bills
+name: Update session calendar
 
 on:
   schedule:
-    - cron: "0 12 * * *"  # 12:00 UTC, 6h after the daily fresh-pull job.
+    # 05:30 UTC daily — runs 30 min before update-bills so a calendar
+    # outage doesn't block the bills commit, and a bills outage doesn't
+    # block calendar freshness. Independent concurrency group.
+    - cron: "30 5 * * *"
   workflow_dispatch: {}
 
 permissions:
   contents: write
 
 concurrency:
-  group: update-bills
+  group: update-session-calendar
   cancel-in-progress: false
 
 jobs:
-  backfill:
+  update:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -34,16 +37,11 @@ jobs:
       - name: Install Python dependencies
         run: uv pip install --system -r data-pipeline/requirements.txt
 
-      - name: Backfill bills
-        env:
-          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
-        run: python data-pipeline/scripts/backfill_bills.py
+      - name: Build session calendar
+        run: python data-pipeline/scripts/build_session_calendar.py
 
-      - name: Commit updated data and state
+      - name: Commit updated calendar
         uses: ./.github/actions/safe-push
         with:
-          paths: |
-            docs/data/congress*_bills.json
-            docs/data/congresses.json
-            data-pipeline/state/backfill_state.json
-          message: "Backfill bills [bot]"
+          paths: docs/data/session_calendar.json
+          message: "Update session calendar [bot]"

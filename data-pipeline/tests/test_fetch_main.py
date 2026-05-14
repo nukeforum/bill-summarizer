@@ -1,6 +1,5 @@
 """Integration test for fetch_bills.main with mocked Congress.gov client."""
 import json
-from datetime import datetime, timezone
 from unittest.mock import patch
 
 import _common
@@ -101,8 +100,7 @@ def test_main_merges_into_existing_manifest(tmp_path, monkeypatch):
     ids = {b["id"] for b in on_disk["bills"]}
     assert ids == {"hr999-119", "hr1-119"}, "old bill must be preserved, new bill appended"
 
-    alias = json.loads((tmp_path / "bills.json").read_text(encoding="utf-8"))
-    assert alias == on_disk
+    assert not (tmp_path / "bills.json").exists()
 
     index = json.loads((tmp_path / "congresses.json").read_text(encoding="utf-8"))
     assert index["current_congress"] == 119
@@ -112,8 +110,7 @@ def test_main_merges_into_existing_manifest(tmp_path, monkeypatch):
 def test_main_preserves_manifest_when_api_returns_no_new_bills(tmp_path, monkeypatch):
     """If the daily fetch returns zero qualifying bills (API outage, API key
     rotation, no recent passage actions), the existing manifest must be
-    preserved verbatim and the alias + index still rewritten with the same
-    bill set."""
+    preserved verbatim and the index still rewritten with the same bill set."""
     monkeypatch.setenv("CONGRESS_API_KEY", "stub")
     monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
     monkeypatch.setattr(_common, "STATE_DIR", tmp_path / "state")
@@ -158,8 +155,7 @@ def test_main_preserves_manifest_when_api_returns_no_new_bills(tmp_path, monkeyp
     assert [b["id"] for b in on_disk["bills"]] == ["hr42-119"]
     assert on_disk["bills"][0] == seeded_bill, "seeded bill must be preserved verbatim"
 
-    alias = json.loads((tmp_path / "bills.json").read_text(encoding="utf-8"))
-    assert alias == on_disk
+    assert not (tmp_path / "bills.json").exists()
 
     index = json.loads((tmp_path / "congresses.json").read_text(encoding="utf-8"))
     assert any(c["congress"] == 119 and c["bill_count"] == 1 for c in index["congresses"])

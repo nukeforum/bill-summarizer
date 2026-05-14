@@ -1,21 +1,23 @@
-name: Update bills
+name: Pipeline freshness check
 
 on:
   schedule:
-    - cron: "0 6 * * *"  # Every day at 06:00 UTC.
+    # Weekly on Mondays at 14:00 UTC — late enough that Sunday's
+    # update-members and Monday's update-bills have both completed.
+    - cron: "0 14 * * 1"
   workflow_dispatch: {}
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
-  group: update-bills
+  group: check-freshness
   cancel-in-progress: false
 
 jobs:
-  update:
+  check:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 5
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -34,15 +36,5 @@ jobs:
       - name: Install Python dependencies
         run: uv pip install --system -r data-pipeline/requirements.txt
 
-      - name: Fetch bills
-        env:
-          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
-        run: python data-pipeline/scripts/fetch_bills.py
-
-      - name: Commit updated bills
-        uses: ./.github/actions/safe-push
-        with:
-          paths: |
-            docs/data/congress*_bills.json
-            docs/data/congresses.json
-          message: "Update bills [bot]"
+      - name: Run freshness check
+        run: python data-pipeline/scripts/check_freshness.py

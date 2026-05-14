@@ -11,12 +11,14 @@ from __future__ import annotations
 import json
 import re
 import sys
+import threading
 import time
 from collections import OrderedDict
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, IO
+from typing import Any, Iterable, IO
 
 import requests
 import yaml
@@ -108,6 +110,9 @@ class ErrorCollector:
 
     def __init__(self) -> None:
         self._errors: list[ErrorRecord] = []
+        # ``record`` is called from worker threads when per-bill enrichment is
+        # parallelized; keep the list mutation atomic.
+        self._lock = threading.Lock()
 
     def record(
         self,
@@ -117,14 +122,16 @@ class ErrorCollector:
         url: str | None = None,
         params: dict[str, Any] | None = None,
     ) -> None:
-        self._errors.append(ErrorRecord(
+        rec = ErrorRecord(
             kind=kind,
             identifier=identifier,
             error_class=type(exc).__name__,
             message=str(exc),
             url=url,
             params=params,
-        ))
+        )
+        with self._lock:
+            self._errors.append(rec)
 
     def records(self) -> list[ErrorRecord]:
         return list(self._errors)
@@ -184,6 +191,12 @@ LIST_PAGE_LIMIT = 250
 REQUEST_TIMEOUT = 30
 RETRY_COUNT = 3
 RETRY_BACKOFF_SECONDS = 2.0
+
+# Per-bill enrichment fans out to detail / summaries / text endpoints. Each
+# bill is independent, so we process a batch of bills concurrently. Workers
+# stay modest because Congress.gov's published quota is ~5000 req/hr per
+# key and ``CongressClient.get`` already retries on transient failure.
+BUILD_RECORD_WORKERS = 4
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = REPO_ROOT / "docs" / "data"
@@ -447,6 +460,45 @@ def _fetch_text_urls(
     return out
 
 
+def build_bill_records_parallel(
+    client: CongressClient,
+    congress: int,
+    items: Iterable[tuple[dict[str, Any], str]],
+    errors: ErrorCollector,
+    max_workers: int = BUILD_RECORD_WORKERS,
+) -> tuple[list[dict[str, Any]], int]:
+    """Build bill records for ``items`` (each ``(summary, outcome)``) in parallel.
+
+    Each call to ``build_bill_record`` issues three sequential Congress.gov
+    requests (detail / summaries / text) — independent across bills, so we
+    fan them out across a thread pool. Returns ``(records, failure_count)``.
+    Build failures are recorded into ``errors`` keyed by ``"build_bill_record"``
+    and excluded from the returned list. Result order is **not** stable
+    (futures complete in arbitrary order); callers that need a sort must
+    sort the returned list.
+    """
+    pending = list(items)
+    if not pending:
+        return [], 0
+
+    records: list[dict[str, Any]] = []
+    failures = 0
+    with ThreadPoolExecutor(max_workers=max_workers) as pool:
+        future_to_summary = {
+            pool.submit(build_bill_record, client, congress, summary, outcome): summary
+            for summary, outcome in pending
+        }
+        for fut in as_completed(future_to_summary):
+            summary = future_to_summary[fut]
+            try:
+                records.append(fut.result())
+            except Exception as exc:  # noqa: BLE001 - one bad bill must not kill the run
+                ref = f"{summary.get('type')}{summary.get('number')}"
+                errors.record("build_bill_record", ref, exc)
+                failures += 1
+    return records, failures
+
+
 _BILL_TYPE_TO_SLUG = {
     "hr": "house-bill",
     "s": "senate-bill",
@@ -555,10 +607,8 @@ def _write_json(path: Path, payload: dict[str, Any]) -> None:
 def save_manifest(congress: int, manifest: dict[str, Any]) -> dict[str, Any]:
     """Persist ``manifest`` for ``congress``.
 
-    Stamps the canonical ``generated_at`` and ``congress`` fields, writes
-    ``congress{NNN}_bills.json``, and — if ``congress`` is the current
-    Congress — also writes ``bills.json`` as a byte-identical backward-compat
-    alias the shipped Android app still reads. Returns the persisted manifest.
+    Stamps the canonical ``generated_at`` and ``congress`` fields and writes
+    ``congress{NNN}_bills.json``. Returns the persisted manifest.
     """
     final: dict[str, Any] = {
         "generated_at": now_iso(),
@@ -566,8 +616,6 @@ def save_manifest(congress: int, manifest: dict[str, Any]) -> dict[str, Any]:
         "bills": manifest.get("bills", []),
     }
     _write_json(manifest_path_for(congress), final)
-    if congress == current_congress():
-        _write_json(OUTPUT_DIR / "bills.json", final)
     return final
 
 

@@ -15,6 +15,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 360
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -23,17 +24,15 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-          cache: pip
-          cache-dependency-path: data-pipeline/requirements.txt
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+          cache-dependency-glob: data-pipeline/requirements.txt
 
       - name: Install Python dependencies
-        run: pip install -r data-pipeline/requirements.txt
-
-      - name: Configure git for bot commits
-        run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        run: uv pip install --system -r data-pipeline/requirements.txt
 
       - name: Phase 1 — fetch member index
         env:
@@ -42,15 +41,10 @@ jobs:
 
       - name: Commit Phase 1 (members index)
         if: always()
-        run: |
-          set -euo pipefail
-          git add docs/data/members_*.json
-          if git diff --staged --quiet; then
-            echo "No index changes — skipping commit."
-            exit 0
-          fi
-          git commit -m "Update members index [bot]"
-          git push
+        uses: ./.github/actions/safe-push
+        with:
+          paths: docs/data/members_*.json
+          message: "Update members index [bot]"
 
       - name: Phase 2 — backfill sponsored / cosponsored legislation
         env:
@@ -59,14 +53,9 @@ jobs:
 
       - name: Commit Phase 2 (members legislation)
         if: always()
-        run: |
-          set -euo pipefail
-          # Pull anything the index commit may have raced with (rare but cheap).
-          git pull --rebase origin main || true
-          git add docs/data/members/*.json docs/data/members_*.json
-          if git diff --staged --quiet; then
-            echo "No legislation changes — skipping commit."
-            exit 0
-          fi
-          git commit -m "Update members legislation [bot]"
-          git push
+        uses: ./.github/actions/safe-push
+        with:
+          paths: |
+            docs/data/members/*.json
+            docs/data/members_*.json
+          message: "Update members legislation [bot]"

@@ -1,6 +1,5 @@
 """IO and shape tests for member-centric pipeline outputs."""
 import json
-from pathlib import Path
 
 import _common
 from _common import (

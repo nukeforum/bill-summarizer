@@ -1,7 +1,5 @@
-"""Tests for manifest path resolution, load/save round-trips, and the
-backward-compat ``bills.json`` alias write."""
+"""Tests for manifest path resolution and load/save round-trips."""
 import json
-from pathlib import Path
 
 import _common
 
@@ -23,7 +21,11 @@ def test_load_manifest_returns_scaffold_when_missing(tmp_path, monkeypatch):
 def test_save_then_load_roundtrip(tmp_path, monkeypatch):
     monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
     monkeypatch.setattr(_common, "current_congress", lambda *a, **kw: 119)
-    manifest = {"generated_at": "ignored", "congress": 999, "bills": [{"id": "hr1-117", "latest_action": {"date": "2022-01-01"}}]}
+    manifest = {
+        "generated_at": "ignored",
+        "congress": 999,
+        "bills": [{"id": "hr1-117", "latest_action": {"date": "2022-01-01"}}],
+    }
     _common.save_manifest(117, manifest)
 
     raw = (tmp_path / "congress117_bills.json").read_text(encoding="utf-8")
@@ -35,21 +37,15 @@ def test_save_then_load_roundtrip(tmp_path, monkeypatch):
     assert raw.endswith("\n")  # trailing newline
 
 
-def test_save_manifest_writes_alias_when_current(tmp_path, monkeypatch):
+def test_save_manifest_does_not_write_bills_json_alias(tmp_path, monkeypatch):
+    """The byte-identical ``bills.json`` alias was removed once the shipped
+    app migrated to the per-Congress URL via ``congresses.json``."""
     monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
     monkeypatch.setattr(_common, "current_congress", lambda *a, **kw: 119)
-    manifest = {"congress": 119, "bills": []}
-    _common.save_manifest(119, manifest)
+    _common.save_manifest(119, {"congress": 119, "bills": []})
     assert (tmp_path / "congress119_bills.json").exists()
-    assert (tmp_path / "bills.json").exists()
-    primary = json.loads((tmp_path / "congress119_bills.json").read_text(encoding="utf-8"))
-    alias = json.loads((tmp_path / "bills.json").read_text(encoding="utf-8"))
-    assert primary == alias
+    assert not (tmp_path / "bills.json").exists()
 
-
-def test_save_manifest_skips_alias_for_non_current_congress(tmp_path, monkeypatch):
-    monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
-    monkeypatch.setattr(_common, "current_congress", lambda *a, **kw: 119)
     _common.save_manifest(118, {"congress": 118, "bills": []})
     assert (tmp_path / "congress118_bills.json").exists()
     assert not (tmp_path / "bills.json").exists()

@@ -2,3 +2,14 @@
 pythonpath = ["scripts"]
 testpaths = ["tests"]
 addopts = ["-ra"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+extend-exclude = ["state", "data"]
+
+[tool.ruff.lint]
+# Start narrow: pyflakes (real bugs — unused imports/names, bad f-strings) and
+# the pycodestyle subset that doesn't fight existing whitespace style. Widen
+# the rule set once these settle.
+select = ["E", "F"]

@@ -1,0 +1,61 @@
+name: Safe commit and push
+description: >-
+  Stage paths, commit if there are changes, push with rebase-on-conflict
+  retry. Used by every bot workflow that writes back to main so a push
+  losing the race against a concurrent workflow doesn't drop on the floor.
+
+inputs:
+  paths:
+    description: Newline-separated paths (or globs) to git add.
+    required: true
+  message:
+    description: Commit message.
+    required: true
+  branch:
+    description: Branch to rebase against on push conflict.
+    required: false
+    default: main
+  max-retries:
+    description: Maximum push attempts.
+    required: false
+    default: "3"
+
+runs:
+  using: composite
+  steps:
+    - name: Configure git identity
+      shell: bash
+      run: |
+        git config user.name 'github-actions[bot]'
+        git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+    - name: Commit and push
+      shell: bash
+      env:
+        INPUT_PATHS: ${{ inputs.paths }}
+        INPUT_MESSAGE: ${{ inputs.message }}
+        INPUT_BRANCH: ${{ inputs.branch }}
+        INPUT_MAX_RETRIES: ${{ inputs.max-retries }}
+      run: |
+        set -euo pipefail
+        while IFS= read -r path; do
+          [ -z "$path" ] && continue
+          # Unquoted on purpose so shell-globs in the input expand.
+          git add -- $path
+        done <<< "$INPUT_PATHS"
+        if git diff --staged --quiet; then
+          echo "No changes — skipping commit."
+          exit 0
+        fi
+        git commit -m "$INPUT_MESSAGE"
+        for attempt in $(seq 1 "$INPUT_MAX_RETRIES"); do
+          if git push; then
+            exit 0
+          fi
+          echo "push failed on attempt $attempt; rebasing on origin/$INPUT_BRANCH and retrying."
+          # Fetch only the target branch; rebase our single commit on top.
+          git fetch origin "$INPUT_BRANCH"
+          git rebase "origin/$INPUT_BRANCH"
+        done
+        echo "push failed after $INPUT_MAX_RETRIES attempts" >&2
+        exit 1

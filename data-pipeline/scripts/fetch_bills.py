@@ -5,9 +5,7 @@ current Congress's manifest.
 Reads CONGRESS_API_KEY from the environment, queries the Congress.gov v3 API
 for the current Congress, keeps bills whose latest passage-type action falls
 within the last RECENT_DAYS, enriches each one, then merges the result into
-docs/data/congress{NNN}_bills.json. Mirrors the current Congress's manifest
-to docs/data/bills.json for backward compatibility with the shipped Android
-app, and rewrites docs/data/congresses.json.
+docs/data/congress{NNN}_bills.json and rewrites docs/data/congresses.json.
 """
 
 from __future__ import annotations
@@ -22,7 +20,7 @@ from _common import (
     CongressClient,
     ErrorCollector,
     LIST_PAGE_LIMIT,
-    build_bill_record,
+    build_bill_records_parallel,
     current_congress,
     evaluate_bill,
     load_manifest,
@@ -72,13 +70,14 @@ def main() -> int:
     print(f"Fetching bills for the {congress}th Congress (cutoff {cutoff.date()})")
 
     client = CongressClient(api_key)
-    seen_ids: set[str] = set()
-    fresh_records: list[dict[str, Any]] = []
     reject_counts: Counter[str] = Counter()
     rejection_samples: list[str] = []
     errors = ErrorCollector()
+    kept_summaries: list[tuple[dict[str, Any], str]] = []
     total_evaluated = 0
 
+    # Phase 1: paginated list + filter. Sequential because pagination is
+    # stateful and the per-summary work (``evaluate_bill``) is pure-Python.
     for summary in list_recent_bills(client, congress, cutoff):
         total_evaluated += 1
         outcome, reason = evaluate_bill(summary, cutoff)
@@ -89,23 +88,31 @@ def main() -> int:
                 ref = f"{summary.get('type')}{summary.get('number')}"
                 rejection_samples.append(f"{ref}: {action_text[:140]}")
             continue
+        kept_summaries.append((summary, outcome))
 
-        try:
-            record = build_bill_record(client, congress, summary, outcome)
-        except Exception as exc:  # noqa: BLE001 - one bad bill must not kill the run
-            ref = f"{summary.get('type')}{summary.get('number')}"
-            errors.record("build_bill_record", ref, exc)
-            reject_counts["build_error"] += 1
-            continue
+    # Phase 2: per-bill enrichment, fanned out across a thread pool. Each
+    # build issues 3 sequential Congress.gov GETs; with N workers we get
+    # roughly an N× speedup until the API's per-key rate limit binds.
+    fresh_records, build_failures = build_bill_records_parallel(
+        client, congress, kept_summaries, errors
+    )
+    reject_counts["build_error"] += build_failures
 
+    # Drop duplicates after the parallel pass (rare; same bill could appear
+    # twice across paginated list responses if its updateDate shifts).
+    seen_ids: set[str] = set()
+    deduped: list[dict[str, Any]] = []
+    for record in fresh_records:
         if record["id"] in seen_ids:
             reject_counts["duplicate"] += 1
             continue
         seen_ids.add(record["id"])
-        fresh_records.append(record)
-        print(f"  + {record['id']}: {record['outcome']} on {record['latest_action']['date']}")
-
+        deduped.append(record)
+    fresh_records = deduped
     fresh_records.sort(key=lambda r: r["latest_action"]["date"], reverse=True)
+
+    for record in fresh_records:
+        print(f"  + {record['id']}: {record['outcome']} on {record['latest_action']['date']}")
 
     print()
     print(f"Evaluated {total_evaluated} bills, kept {len(fresh_records)}.")

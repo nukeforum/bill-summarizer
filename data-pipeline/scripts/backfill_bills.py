@@ -21,7 +21,7 @@ from _common import (
     ErrorCollector,
     LIST_PAGE_LIMIT,
     advance_state,
-    build_bill_record,
+    build_bill_records_parallel,
     evaluate_bill,
     load_manifest,
     load_state,
@@ -68,8 +68,7 @@ def main() -> int:
     )
 
     client = CongressClient(api_key)
-    fresh_records: list[dict[str, Any]] = []
-    seen_ids: set[str] = set()
+    kept_summaries: list[tuple[dict[str, Any], str]] = []
     reject_counts: Counter[str] = Counter()
     errors = ErrorCollector()
     total_evaluated = 0
@@ -77,6 +76,7 @@ def main() -> int:
     pages_consumed = 0
     had_non_empty_page = False
 
+    # Phase 1: paginate the list endpoint and filter sequentially.
     for page in range(BACKFILL_PAGES_PER_RUN):
         page_offset = offset + page * LIST_PAGE_LIMIT
         bills = list_congress_page(client, active, page_offset)
@@ -91,21 +91,26 @@ def main() -> int:
             if outcome is None:
                 reject_counts[reason] += 1
                 continue
-            try:
-                record = build_bill_record(client, active, summary, outcome)
-            except Exception as exc:  # noqa: BLE001 - one bad bill must not kill the run
-                ref = f"{summary.get('type')}{summary.get('number')}"
-                errors.record("build_bill_record", ref, exc)
-                reject_counts["build_error"] += 1
-                continue
-            if record["id"] in seen_ids:
-                reject_counts["duplicate"] += 1
-                continue
-            seen_ids.add(record["id"])
-            fresh_records.append(record)
+            kept_summaries.append((summary, outcome))
 
         if last_page_size < LIST_PAGE_LIMIT:
             break
+
+    # Phase 2: per-bill enrichment, fanned out across a thread pool.
+    fresh_records, build_failures = build_bill_records_parallel(
+        client, active, kept_summaries, errors
+    )
+    reject_counts["build_error"] += build_failures
+
+    seen_ids: set[str] = set()
+    deduped: list[dict[str, Any]] = []
+    for record in fresh_records:
+        if record["id"] in seen_ids:
+            reject_counts["duplicate"] += 1
+            continue
+        seen_ids.add(record["id"])
+        deduped.append(record)
+    fresh_records = deduped
 
     print(
         f"Evaluated {total_evaluated} bills across {pages_consumed} page(s); "

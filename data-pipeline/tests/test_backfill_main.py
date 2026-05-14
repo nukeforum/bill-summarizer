@@ -69,9 +69,7 @@ def test_main_first_run_seeds_state_and_writes_manifest(tmp_path, monkeypatch):
     ids = {b["id"] for b in manifest["bills"]}
     assert ids == {"hr1-119"}, "only the passed bill should be kept"
 
-    # Alias is byte-identical for current Congress.
-    alias = json.loads((tmp_path / "bills.json").read_text(encoding="utf-8"))
-    assert alias == manifest
+    assert not (tmp_path / "bills.json").exists()
 
     state = json.loads((tmp_path / "state" / "backfill_state.json").read_text(encoding="utf-8"))
     # Page returned 2 < LIST_PAGE_LIMIT (250) so 119 is marked complete.
@@ -108,9 +106,15 @@ def test_main_resumes_from_existing_state(tmp_path, monkeypatch):
                 return {"bills": [
                     _summary("hr", 5, "Passed House by recorded vote: 220-211", "2024-06-01"),
                 ]}
-            base = f"/bill/118/hr/5"
+            base = "/bill/118/hr/5"
+            detail_body = {"bill": {
+                "title": "Test",
+                "introducedDate": "2024-01-01",
+                "sponsors": [{"fullName": "Rep. X, Y [D-CA-12]"}],
+                "titles": [],
+            }}
             return {
-                base: {"bill": {"title": "Test", "introducedDate": "2024-01-01", "sponsors": [{"fullName": "Rep. X, Y [D-CA-12]"}], "titles": []}},
+                base: detail_body,
                 f"{base}/summaries": {"summaries": []},
                 f"{base}/text": {"textVersions": []},
             }.get(path, {})
