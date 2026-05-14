@@ -146,8 +146,11 @@ Today the section has one paired text-only row (Browse + Hand it to an
 AI) followed by four `feature-with-shot` rows (Read a bill, Calendar,
 Reps, Yours to tune). If you add a new feature with a screenshot,
 follow the `feature-with-shot` pattern; the `<img>` is a direct child
-of the feature, sized via `.feature-with-shot > img { max-height:
-420px; }`.
+of the feature, capped at 360×360 by
+`.feature-with-shot > img { max-height: 360px; max-width: 360px; }`.
+Apply the `screenshot-crop` class and tune `--crop-y` (see *Screenshot
+crop modifier* below) — every feature-row screenshot is cropped, not
+full-bleed phone.
 
 If you add a new text-only feature, pair it with another text-only one
 in the same row so neither cell sits alone with empty space next to a
@@ -155,22 +158,51 @@ spanning row.
 
 ### Screenshot crop modifier
 
-`.screenshot-crop` is a generic crop class that pairs `aspect-ratio`,
-`object-fit: cover`, and `object-position` to slice a portion of a
-9:20-ish phone screenshot. Today it's calibrated for `settings.png`
-specifically (aspect 9/10 + object-position `center 28%`), which lands
-the visible window on Theme + Crash reporting and skips the top ~14%
-of the source image (status bar + Settings nav). If you change the
-settings screenshot or apply `.screenshot-crop` to a different image,
-re-tune both values: `aspect-ratio` controls how much of the image is
-visible vertically, `object-position` shifts which slice. There's a
-useful derivation in the redesign spec, but the practical workflow is
-to iterate visually in the browser.
+All four feature-row screenshots crop to a feature-focused slice
+rather than rendering as full phone shots. The cropping is driven by
+two CSS custom properties set inline per `<img>`:
 
-The other feature screenshots (`billdetail.png`, `calendar.png`,
-`reps.png`) render uncropped at natural 9:20 phone aspect, capped at
-`max-height: 420px`. They don't need cropping because their content
-fills the screen top-to-bottom with negligible chrome.
+```html
+<img src="images/billdetail.png"
+     class="screenshot screenshot-crop"
+     style="--crop-y: 14%"
+     alt="…" />
+```
+
+The `.screenshot-crop` class itself does the mechanical work:
+
+```css
+.screenshot.screenshot-crop {
+  aspect-ratio: var(--crop-aspect, 9 / 10);
+  object-fit: cover;
+  object-position: center var(--crop-y, 0%);
+}
+```
+
+`--crop-y` shifts which vertical slice of the source image survives
+the crop (0% = top, 100% = bottom). `--crop-aspect` defaults to `9/10`
+and rarely needs overriding — that aspect shows ~50% of a 9:20 phone
+screenshot per crop, which is the right amount of content for an
+inline thumbnail.
+
+**Current per-image `--crop-y` values** (tuned 2026-05-14):
+
+| Image            | `--crop-y` | Visible slice | What lands in view                                |
+|------------------|------------|---------------|---------------------------------------------------|
+| `billdetail.png` | `14%`      | 7%–57%        | Headline → status → sponsor → bill title → summary start |
+| `calendar.png`   | `24%`      | 12%–62%       | Today-card → legend → May header → first 4 grid rows     |
+| `reps.png`       | `30%`      | 15%–65%       | Both senators + the House Reps label + the House rep card |
+| `settings.png`   | `28%`      | 14%–64%       | Theme picker + Crash-reporting toggle                    |
+
+The rough math: at `aspect-ratio: 9/10`, the visible window covers
+50% of the source image's height. `visible-start = --crop-y / 2`,
+`visible-end = visible-start + 50%`. Tune by raising or lowering
+`--crop-y` until the right band of content is centered.
+
+Combined with `max-height: 360px` and `max-width: 360px` on
+`.feature-with-shot > img`, the rendered thumbnail is about
+324×360px — readable but compact, sized to a screenshot caption
+rather than a full phone shot.
 
 ## Routine maintenance tasks
 

@@ -179,9 +179,9 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.18), 0 4px 10px rgba(0,0,0,0.10);
     }
     .screenshot.screenshot-crop {
-      aspect-ratio: 9 / 10;
+      aspect-ratio: var(--crop-aspect, 9 / 10);
       object-fit: cover;
-      object-position: center 28%;
+      object-position: center var(--crop-y, 0%);
     }
     .hero-shot .screenshot {
       max-height: 420px;
@@ -264,9 +264,10 @@
       }
     }
     .feature-with-shot > img {
-      max-height: 420px;
-      max-width: 100%;
+      max-height: 360px;
+      max-width: 360px;
       width: auto;
+      height: auto;
       display: block;
       justify-self: center;
     }
@@ -433,28 +434,28 @@
             <p><strong>Read a bill.</strong></p>
             <p>Sponsor, latest action, the full Congressional Research Service plain-English summary when one's published, and a one-tap jump to the canonical text on Congress.gov.</p>
           </div>
-          <img src="images/billdetail.png" class="screenshot" alt="Bill detail showing H.R. 8469 — sponsor, passed-House status, the CRS plain-English summary, and the &quot;Summarize with AI&quot; pill." />
+          <img src="images/billdetail.png" class="screenshot screenshot-crop" style="--crop-y: 14%" alt="Bill detail showing H.R. 8469 — headline, passed-House status, sponsor, and the start of the CRS plain-English summary." />
         </div>
         <div class="feature feature-with-shot">
           <div>
             <p><strong>Is Congress in session?</strong></p>
             <p>A status line tells you whether the House and Senate are in today, and a calendar grid shows the next two months of session days.</p>
           </div>
-          <img src="images/calendar.png" class="screenshot" alt="Congress calendar showing May and June 2026 with House (blue) and Senate (purple) session-day bars on each weekday." />
+          <img src="images/calendar.png" class="screenshot screenshot-crop" style="--crop-y: 24%" alt="Congress calendar — today-card answering whether the House and Senate are in session, plus the May 2026 grid with House (blue) and Senate (purple) session-day bars." />
         </div>
         <div class="feature feature-with-shot">
           <div>
             <p><strong>Who represents you?</strong></p>
             <p>Save your state and district, or look it up by ZIP. Open any representative's page to see their sponsored and cosponsored bills, dial their D.C. office, or open their contact page.</p>
           </div>
-          <img src="images/reps.png" class="screenshot" alt="Your representatives list showing both senators and the House representative for the saved district, each with a phone-dial button." />
+          <img src="images/reps.png" class="screenshot screenshot-crop" style="--crop-y: 30%" alt="Your representatives — both senators and the House representative, each card carrying a phone-dial button." />
         </div>
         <div class="feature feature-with-shot">
           <div>
             <p><strong>Yours to tune.</strong></p>
             <p>Material or Solarized theme; light, dark, or system. Crash reporting is off by default and lives behind a Settings toggle.</p>
           </div>
-          <img src="images/settings.png" class="screenshot screenshot-crop" alt="Settings screen showing the Theme picker (Material/Solarized + Follow system/Light/Dark) and the off-by-default Send-crash-reports toggle." />
+          <img src="images/settings.png" class="screenshot screenshot-crop" style="--crop-y: 28%" alt="Settings — the Theme picker (Material/Solarized + Follow system/Light/Dark) and the off-by-default Send-crash-reports toggle." />
         </div>
       </div>
     </section>
