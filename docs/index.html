@@ -124,20 +124,13 @@
     }
     footer p { margin: 0.3rem 0; }
 
-    /* Hero */
+    /* Hero — text-only; the feature screenshots below carry the visual argument */
     .hero {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-      align-items: center;
       margin-top: 1rem;
       padding-top: 1.5rem;
     }
-    @media (min-width: 720px) {
-      .hero {
-        grid-template-columns: 1.2fr 1fr;
-        gap: 2.5rem;
-      }
+    .hero-copy {
+      max-width: 720px;
     }
     .tagline {
       color: var(--fg-muted);
@@ -166,10 +159,6 @@
       color: var(--accent);
       border: 1.5px solid var(--accent);
     }
-    .hero-shot {
-      display: flex;
-      justify-content: center;
-    }
 
     /* Screenshots */
     .screenshot {
@@ -182,10 +171,6 @@
       aspect-ratio: var(--crop-aspect, 9 / 10);
       object-fit: cover;
       object-position: center var(--crop-y, 0%);
-    }
-    .hero-shot .screenshot {
-      max-height: 420px;
-      width: auto;
     }
 
     /* Mission */
@@ -383,9 +368,6 @@
           <a class="cta cta-secondary" href="https://github.com/nukeforum/bill-summarizer">Fork the project</a>
         </div>
       </div>
-      <div class="hero-shot">
-        <img src="images/billslist.png" alt="Recently Voted On bills list" class="screenshot" />
-      </div>
     </section>
 
     <section class="mission">
@@ -421,18 +403,17 @@
     <section class="features">
       <h2>Features</h2>
       <div class="features-grid">
-        <div class="feature">
-          <p><strong>Browse recently voted-on bills.</strong></p>
-          <p>Filter by passed, failed, enacted, or vetoed. Today's feed covers the 119th Congress, with the 93rd onward backfilled in the background.</p>
-        </div>
-        <div class="feature">
-          <p><strong>Hand it to an AI.</strong></p>
-          <p>A "Summarize with AI" sheet builds a structured prompt and sends it via Android's share menu to ChatGPT, Claude, Gemini, or anything else you've installed. The app ships no AI of its own.</p>
+        <div class="feature feature-with-shot">
+          <div>
+            <p><strong>Browse recently voted-on bills.</strong></p>
+            <p>Filter by passed, failed, enacted, or vetoed. Today's feed covers the 119th Congress, with the 93rd onward backfilled in the background.</p>
+          </div>
+          <img src="images/billslist.png" class="screenshot screenshot-crop" style="--crop-y: 12%" alt="Recently Voted On — in-session status line, the filter chips (All / Passed / Failed / Enacted / Vetoed), and the first few bills of the current Congress." />
         </div>
         <div class="feature feature-with-shot">
           <div>
             <p><strong>Read a bill.</strong></p>
-            <p>Sponsor, latest action, the full Congressional Research Service plain-English summary when one's published, and a one-tap jump to the canonical text on Congress.gov.</p>
+            <p>Sponsor, latest action, and the full Congressional Research Service plain-English summary when one's published. One tap opens the canonical text on Congress.gov; another sends the bill — as a structured prompt — to ChatGPT, Claude, Gemini, or any other app on your device. We ship no AI of our own.</p>
           </div>
           <img src="images/billdetail.png" class="screenshot screenshot-crop" style="--crop-y: 14%" alt="Bill detail showing H.R. 8469 — headline, passed-House status, sponsor, and the start of the CRS plain-English summary." />
         </div>

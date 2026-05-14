@@ -23,11 +23,11 @@ docs/
 ├── privacy.html            # Privacy policy (untouched by the redesign)
 ├── images/
 │   ├── icon.svg            # Site logo — hand-translated from the Android drawables
-│   ├── billslist.png       # Hero screenshot
+│   ├── billslist.png       # "Browse" feature row
 │   ├── billdetail.png      # "Read a bill" feature row
 │   ├── calendar.png        # "Is Congress in session?" feature row
 │   ├── reps.png            # "Who represents you?" feature row
-│   └── settings.png        # "Yours to tune" feature row (uses .screenshot-crop)
+│   └── settings.png        # "Yours to tune" feature row
 ├── data/                   # JSON feed — written by GitHub Actions, do not edit by hand
 └── MAINTAINING-LANDING-PAGE.md  # This file
 ```
@@ -128,33 +128,39 @@ If you genuinely can't balance, consider switching to a 3-column grid
 on desktop or letting one row sit asymmetric for a clear reason.
 Don't add masonry — browser support is still spotty.
 
-### Features section has two layouts
+### Hero is text-only on purpose
 
-The features grid is a 2-column desktop layout, but a feature with the
-class `feature-with-shot` uses `grid-column: 1 / -1` to span both
-columns. That cell then internally lays out as text-left | image-right
-on desktop (`1fr auto`) and stacks on mobile.
+The hero is title + tagline + dual CTAs, with no screenshot. The
+visual proof lives in the Features section below, where every feature
+gets its own thumbnail. Putting a phone shot in the hero AS WELL would
+duplicate the visual argument, so the hero stays a pitch and the
+features carry the proof. Don't add a hero screenshot without
+re-thinking the features section.
 
-In practice:
+### Features section: every feature has a screenshot
 
-- **Plain `.feature`** — text-only cell. Lives in a 2-col row. Pair two
-  of these for a "quick orientation" row.
-- **`.feature feature-with-shot`** — a wide row of text + screenshot.
-  Each takes a full row.
+The features grid is conceptually a 2-column desktop layout, but every
+current feature is a `.feature.feature-with-shot` that spans both
+columns via `grid-column: 1 / -1`. Inside each row, the layout is
+text-left | image-right on desktop (`1fr auto`) and stacks on mobile.
 
-Today the section has one paired text-only row (Browse + Hand it to an
-AI) followed by four `feature-with-shot` rows (Read a bill, Calendar,
-Reps, Yours to tune). If you add a new feature with a screenshot,
-follow the `feature-with-shot` pattern; the `<img>` is a direct child
-of the feature, capped at 360×360 by
-`.feature-with-shot > img { max-height: 360px; max-width: 360px; }`.
-Apply the `screenshot-crop` class and tune `--crop-y` (see *Screenshot
-crop modifier* below) — every feature-row screenshot is cropped, not
-full-bleed phone.
+Today the section has five rows: **Browse**, **Read a bill** (which
+also folds in the AI handoff — there's no separate "Hand it to an AI"
+row because the AI action is invisible to a screenshot and the
+tagline already mentions it), **Is Congress in session?**, **Who
+represents you?**, and **Yours to tune**.
 
-If you add a new text-only feature, pair it with another text-only one
-in the same row so neither cell sits alone with empty space next to a
-spanning row.
+If you add a feature, follow the same pattern: a `<div class="feature
+feature-with-shot">` containing a text `<div>` and an `<img class=
+"screenshot screenshot-crop" style="--crop-y: …%">`. The image is
+capped at 360×360 by `.feature-with-shot > img { max-height: 360px;
+max-width: 360px; }`; tune `--crop-y` per the *Screenshot crop
+modifier* section below.
+
+The plain `.feature` class still exists for text-only cells (it'd
+live in the 2-column row) but nothing uses it today. If you ever need
+to add a text-only feature, pair it with another text-only one in the
+same row so neither cell sits next to dead space.
 
 ### Screenshot crop modifier
 
@@ -189,10 +195,11 @@ inline thumbnail.
 
 | Image            | `--crop-y` | Visible slice | What lands in view                                |
 |------------------|------------|---------------|---------------------------------------------------|
-| `billdetail.png` | `14%`      | 7%–57%        | Headline → status → sponsor → bill title → summary start |
-| `calendar.png`   | `24%`      | 12%–62%       | Today-card → legend → May header → first 4 grid rows     |
-| `reps.png`       | `30%`      | 15%–65%       | Both senators + the House Reps label + the House rep card |
-| `settings.png`   | `28%`      | 14%–64%       | Theme picker + Crash-reporting toggle                    |
+| `billslist.png`  | `12%`      | 6%–56%        | In-session status line → filter chips → first few bill cards |
+| `billdetail.png` | `14%`      | 7%–57%        | Headline → status → sponsor → bill title → summary start     |
+| `calendar.png`   | `24%`      | 12%–62%       | Today-card → legend → May header → first 4 grid rows         |
+| `reps.png`       | `30%`      | 15%–65%       | Both senators + the House Reps label + the House rep card    |
+| `settings.png`   | `28%`      | 14%–64%       | Theme picker + Crash-reporting toggle                        |
 
 The rough math: at `aspect-ratio: 9/10`, the visible window covers
 50% of the source image's height. `visible-start = --crop-y / 2`,
