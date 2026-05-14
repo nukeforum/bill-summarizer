@@ -95,11 +95,21 @@
     ol li, ul li {
       margin: 0.4rem 0;
     }
+    .table-scroll {
+      overflow-x: auto;
+      margin: 0.6rem 0 0.4rem;
+    }
     table {
       width: 100%;
       border-collapse: collapse;
       font-size: 0.92rem;
-      margin: 0.6rem 0 0.4rem;
+    }
+    caption {
+      caption-side: top;
+      text-align: left;
+      color: var(--fg-muted);
+      font-size: 0.82rem;
+      padding: 0 0 0.4rem;
     }
     th, td {
       text-align: left;
@@ -215,18 +225,21 @@ HUD_API_TOKEN    = &lt;your HUD token&gt;</code></pre>
     </ol>
 
     <h2>What runs and when</h2>
-    <table>
-      <thead>
-        <tr><th>Workflow</th><th>Cadence</th><th>What it produces</th></tr>
-      </thead>
-      <tbody>
-        <tr><td><code>update-bills.yml</code></td><td>Daily, 06:00 UTC</td><td>The 60-day rolling window of passage-action bills for the current Congress.</td></tr>
-        <tr><td><code>backfill-bills.yml</code></td><td>Daily, 12:00 UTC</td><td>One chunk of historical bills per run (1000 candidates). Walks every Congress from the 93rd onward and resumes from a persisted cursor.</td></tr>
-        <tr><td><code>update-session-calendar.yml</code></td><td>Daily</td><td>House and Senate session days derived from the USHOR voting-days ICS and the Senate session XML.</td></tr>
-        <tr><td><code>update-members.yml</code></td><td>Weekly, Sundays 03:00 UTC</td><td>Current-Congress member roster (phase 1) and per-member sponsored/cosponsored legislation (phase 2).</td></tr>
-        <tr><td><code>update-zip-crosswalk.yml</code></td><td>Quarterly</td><td>Bundled HUD USPS ZIP&rarr;Congressional-district lookup table.</td></tr>
-      </tbody>
-    </table>
+    <div class="table-scroll">
+      <table>
+        <caption>Five GitHub Actions workflows that publish the data feed.</caption>
+        <thead>
+          <tr><th>Workflow</th><th>Cadence</th><th>What it produces</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>update-bills.yml</code></td><td>Daily, 06:00 UTC</td><td>The 60-day rolling window of passage-action bills for the current Congress.</td></tr>
+          <tr><td><code>backfill-bills.yml</code></td><td>Daily, 12:00 UTC</td><td>One chunk of historical bills per run (1000 candidates). Walks every Congress from the 93rd onward and resumes from a persisted cursor.</td></tr>
+          <tr><td><code>update-session-calendar.yml</code></td><td>Daily</td><td>House and Senate session days derived from the USHOR voting-days ICS and the Senate session XML.</td></tr>
+          <tr><td><code>update-members.yml</code></td><td>Weekly, Sundays 03:00 UTC</td><td>Current-Congress member roster (phase 1) and per-member sponsored/cosponsored legislation (phase 2).</td></tr>
+          <tr><td><code>update-zip-crosswalk.yml</code></td><td>Quarterly</td><td>Bundled HUD USPS ZIP&rarr;Congressional-district lookup table.</td></tr>
+        </tbody>
+      </table>
+    </div>
 
     <h2>Pointing the Android app at your pipeline</h2>
     <p>Today this requires a code change: the <code>BillsApi</code> base URL is hardcoded to <code>nukeforum.github.io/bill-summarizer/</code>. To run the app against your fork, you'll need to override that URL for a debug build and rebuild from source. A proper environment-driven override is an open TODO &mdash; track it on the <a href="https://github.com/nukeforum/bill-summarizer/issues">issue tracker</a>. For now, see the <a href="https://github.com/nukeforum/bill-summarizer#building">README's Building section</a> for how to produce a local debug APK.</p>
