@@ -1,53 +1,79 @@
 # Informed Citizen
 
 A Kotlin / Jetpack Compose Android app that lists recently voted-on U.S.
-Congressional bills and lets the user hand any bill off to **ChatGPT,
-Claude, or Gemini** for a plain-English summary. The app brings no LLM
-of its own — it builds a structured prompt and shares it via Android's
-`ACTION_SEND` system to whichever AI app the user prefers.
+Congressional bills and lets you hand any bill off to **ChatGPT, Claude,
+or Gemini** for a plain-English summary. The app brings no cloud LLM of
+its own — it builds a structured prompt and shares it via Android's
+`ACTION_SEND` system to whichever AI app you prefer.
 
-The app also surfaces when the House and Senate are next in session, so
-you can tell at a glance whether today is a likely floor-activity day.
+## Features
+
+- **Bills feed.** Recently voted-on House and Senate bills with party,
+  sponsor, latest action, and outcome chips.
+- **Bill detail + LLM share.** One tap composes a prompt with the bill
+  text (when available) and shares to ChatGPT, Claude, or Gemini.
+- **Reps lookup.** Find your senators and representative by ZIP code,
+  with a detail page that surfaces their recent bill activity.
+- **Session calendar.** When is the House or Senate next in session?
+  Tells you at a glance whether today is a likely floor-activity day.
+- **On-device AI titles.** Optional Gemini Nano (Google AI Edge) bill
+  title summaries that run entirely on-device. Off by default.
 
 ## Tech stack
 
 | Layer | Choice |
 |---|---|
-| Language | Kotlin 2.3.21 |
+| Language | Kotlin 2.3.21 (Java 17) |
 | UI | Jetpack Compose + Material 3 |
-| Architecture | MVVM (single repository) |
+| Navigation | AndroidX Navigation 3 |
+| Architecture | Multi-module (`:core:*` + `:feature:*`), MVVM per screen |
 | DI | Hilt (KSP, no kapt) |
 | Networking | Retrofit 3 + OkHttp 5 + kotlinx-serialization-json |
 | Async | Coroutines + Flow |
-| Persistence | DataStore (Preferences) |
-| Build | Gradle Kotlin DSL with `libs.versions.toml`, AGP 9.2 |
+| Persistence | SQLDelight + DataStore (Preferences) |
+| Background work | WorkManager + Hilt-Work |
+| On-device AI | Google AI Edge AICore (Gemini Nano) |
+| Crash reporting | Firebase Crashlytics |
+| Testing | JUnit 4, Robolectric, kotlinx-coroutines-test |
+| Build | Gradle 9.5 Kotlin DSL with `libs.versions.toml`, AGP 9.2, convention plugins |
 | Min SDK | 26 (Android 8) |
-| Target SDK | 36 |
+| Target / Compile SDK | 36 |
 | Strictness | `-Werror` on Kotlin + Java, `lint.warningsAsErrors = true` |
 
-## Project layout
+## Repo layout
 
 ```
-android/app/src/main/java/com/informedcitizen/
-├── data/
-│   ├── api/               # Retrofit + bill-text fetcher
-│   ├── model/             # Bill, Sponsor, Action, Outcome…
-│   └── repository/        # BillRepository (cache + DataStore)
-├── ui/
-│   ├── billslist/         # BillsListScreen + ViewModel
-│   ├── billdetail/        # BillDetailScreen + ViewModel + summarize sheet
-│   ├── components/        # BillCard, OutcomeChip
-│   ├── theme/             # Material 3 + party colors
-│   └── util/              # Format helpers, Custom Tabs
-├── share/                 # LlmTarget + LlmShareHelper
-├── di/                    # Hilt modules
-└── MainActivity.kt
+android/              # Multi-module Gradle build (see below)
+data-pipeline/        # Python pipeline that fetches Congress data
+docs/                 # GitHub Pages landing site
+play-listing/         # Play Store assets and copy
+```
+
+## Android module layout
+
+```
+android/
+├── app/                          # Entrypoint: MainActivity, MainNavigation, shell, settings host
+├── build-logic/convention/       # Convention plugins (compile SDK, lint, Kotlin opts)
+├── core/
+│   ├── model/                    # Bill, Sponsor, Action, Outcome…
+│   ├── network/                  # Retrofit + OkHttp wiring
+│   ├── database/                 # SQLDelight schema + driver
+│   ├── datastore/                # DataStore Preferences module
+│   ├── crash/                    # Crashlytics wrapper
+│   ├── ui/                       # Shared theme, components (BillCard, OutcomeChip…)
+│   └── testing/                  # Shared test fixtures
+└── feature/
+    ├── bills/                    # BillsList + BillDetail + LlmShareHelper / LlmTarget
+    ├── calendar/                 # House/Senate session calendar
+    ├── reps/                     # Reps lookup + ZIP crosswalk
+    └── ai-titles/                # Gemini Nano on-device title generation
 ```
 
 ## Building
 
-Open `android/` in Android Studio Hedgehog or newer, or from the command
-line:
+Open `android/` in a current Android Studio (AGP 9.2 requires a recent
+canary/beta), or build from the command line:
 
 ```bash
 cd android
@@ -55,10 +81,15 @@ cd android
 ./gradlew :app:installDebug    # with a device or emulator attached
 ```
 
-The first build downloads Gradle 9.4.1 and the AGP 9.2.0 toolchain. The
+The first build downloads Gradle 9.5.0 and the AGP 9.2.0 toolchain. The
 build is strict — Kotlin warnings, Java warnings, and lint warnings are
 all errors. New dependencies that surface deprecation warnings will fail
 the build until you upgrade or `@Suppress` deliberately.
+
+Release builds expect signing credentials in Gradle properties
+(`INFORMEDCITIZEN_KEYSTORE_PATH`, `_PASSWORD`, `_KEY_ALIAS`,
+`_KEY_PASSWORD`) or the matching environment variables. Without them,
+debug builds still work; only release bundling fails.
 
 ## License
 
