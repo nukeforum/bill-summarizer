@@ -17,7 +17,11 @@ its own — it builds a structured prompt and shares it via Android's
 - **Session calendar.** When is the House or Senate next in session?
   Tells you at a glance whether today is a likely floor-activity day.
 - **On-device AI titles.** Optional Gemini Nano (Google AI Edge) bill
-  title summaries that run entirely on-device. Off by default.
+  title summaries that run entirely on-device. **Currently suppressed**
+  by `FeatureFlags.AI_TITLES = false` in `core/model` — the full feature
+  (state machine, Settings section, worker, UI) is built and tested but
+  unreachable until the `com.informedcitizen` package is on Google's AI
+  Edge allowlist. See `FeatureFlags.kt` for the flip-on procedure.
 
 ## Tech stack
 
@@ -31,14 +35,20 @@ its own — it builds a structured prompt and shares it via Android's
 | Networking | Retrofit 3 + OkHttp 5 + kotlinx-serialization-json |
 | Async | Coroutines + Flow |
 | Persistence | SQLDelight + DataStore (Preferences) |
-| Background work | WorkManager + Hilt-Work |
-| On-device AI | Google AI Edge AICore (Gemini Nano) |
+| Background work | WorkManager + Hilt-Work † |
+| On-device AI | Google AI Edge AICore (Gemini Nano) † |
 | Crash reporting | Firebase Crashlytics |
 | Testing | JUnit 4, Robolectric, kotlinx-coroutines-test |
 | Build | Gradle 9.5 Kotlin DSL with `libs.versions.toml`, AGP 9.2, convention plugins |
 | Min SDK | 26 (Android 8) |
 | Target / Compile SDK | 36 |
 | Strictness | `-Werror` on Kotlin + Java, `lint.warningsAsErrors = true` |
+
+† **Dormant behind `FeatureFlags.AI_TITLES`.** AICore is only invoked by
+the on-device titles feature; WorkManager + Hilt-Work currently have no
+other consumers in the app, so with the flag off neither is exercised
+at runtime even though the wiring (HiltWorkerFactory, AICore SDK) is
+compiled into the APK.
 
 ## Repo layout
 
