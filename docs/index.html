@@ -12,68 +12,60 @@
       --bg: #f8f8f8;
       --bg-card: #ffffff;
       --border: #e3e3e3;
-      --accent: #2057a8;
+      --accent: #1B2A4A;
+      --accent-on: #ffffff;
+      --gold: #D9A43B;
+      --gold-bg: #fef5dc;
+      --gold-border: #1B2A4A;
     }
     @media (prefers-color-scheme: dark) {
       :root {
         --fg: #ececec;
         --fg-muted: #9a9a9a;
-        --bg: #141414;
-        --bg-card: #1d1d1d;
-        --border: #2e2e2e;
+        --bg: #0d1525;
+        --bg-card: #1a2438;
+        --border: #2a3550;
         --accent: #6ea8ff;
+        --accent-on: #0d1525;
+        --gold: #D9A43B;
+        --gold-bg: #332a14;
+        --gold-border: #6ea8ff;
       }
     }
+
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      padding: 2rem 1rem 3rem;
+      padding: 0;
       background: var(--bg);
       color: var(--fg);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.55;
     }
-    main { max-width: 720px; margin: 0 auto; }
-    h1 { margin: 0 0 0.25rem 0; font-size: 1.6rem; }
-    .tagline { color: var(--fg-muted); margin: 0 0 2rem 0; }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 1rem 3rem;
+    }
+
+    h1, h3 {
+      font-family: Georgia, "Source Serif Pro", serif;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 0.5rem 0;
+    }
     h2 {
-      margin: 2rem 0 0.6rem 0;
+      margin: 2.5rem 0 0.8rem;
       font-size: 0.78rem;
       text-transform: uppercase;
       letter-spacing: 0.06em;
       color: var(--fg-muted);
     }
-    .cards {
-      display: grid;
-      gap: 0.6rem;
-      grid-template-columns: 1fr;
-    }
-    @media (min-width: 600px) {
-      .cards { grid-template-columns: 1fr 1fr; }
-    }
-    .card {
-      display: block;
-      padding: 0.85rem 1rem;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 0.5rem;
-      text-decoration: none;
-      color: inherit;
-      transition: border-color 0.15s ease, transform 0.15s ease;
-    }
-    .card:hover {
-      border-color: var(--accent);
-      transform: translateY(-1px);
-    }
-    .card .title {
-      font-weight: 600;
-      margin: 0 0 0.15rem 0;
-    }
-    .card .desc {
-      color: var(--fg-muted);
-      font-size: 0.88rem;
-      margin: 0;
-    }
+
+    a { color: var(--accent); }
+
     code {
       font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
       background: var(--bg-card);
@@ -82,7 +74,47 @@
       border: 1px solid var(--border);
       font-size: 0.88em;
     }
-    a { color: var(--accent); }
+
+    /* Header */
+    .site-header {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1.2rem 1rem 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .site-header .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .site-logo {
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      display: block;
+    }
+    .site-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .site-nav {
+      margin-left: auto;
+      display: flex;
+      gap: 1rem;
+      font-size: 0.88rem;
+    }
+    .site-nav a {
+      color: var(--fg-muted);
+      text-decoration: none;
+    }
+    .site-nav a:hover {
+      color: var(--accent);
+    }
+
+    /* Footer */
     footer {
       margin-top: 2.5rem;
       padding-top: 1rem;
@@ -94,61 +126,24 @@
   </style>
 </head>
 <body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/icon-192.webp" alt="" class="site-logo" />
+      <span class="site-name">Informed Citizen</span>
+    </div>
+    <nav class="site-nav">
+      <a href="pipeline.html">Pipeline status</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://github.com/nukeforum/bill-summarizer">GitHub</a>
+    </nav>
+  </header>
+
   <main>
-    <h1>Informed Citizen</h1>
-    <p class="tagline">
-      Open-source Android app for tracking U.S. Congress passage actions.
-      This site hosts the static data feed the app consumes and a live
-      view of the data pipeline behind it.
-    </p>
-
-    <h2>Operations</h2>
-    <div class="cards">
-      <a class="card" href="pipeline.html">
-        <p class="title">Pipeline status &rarr;</p>
-        <p class="desc">Freshness of every published artifact, backfill progress, and per-Congress bill counts.</p>
-      </a>
-      <a class="card" href="https://github.com/nukeforum/bill-summarizer/actions">
-        <p class="title">Workflow runs &rarr;</p>
-        <p class="desc">Scheduled jobs that fetch and publish the feed.</p>
-      </a>
-    </div>
-
-    <h2>Data feed</h2>
-    <div class="cards">
-      <a class="card" href="data/congresses.json">
-        <p class="title">congresses.json &rarr;</p>
-        <p class="desc">Index of all per-Congress bill manifests. Start here.</p>
-      </a>
-      <a class="card" href="data/session_calendar.json">
-        <p class="title">session_calendar.json &rarr;</p>
-        <p class="desc">House and Senate session days, derived daily from upstream feeds.</p>
-      </a>
-      <a class="card" href="data/members_119.json">
-        <p class="title">members_119.json &rarr;</p>
-        <p class="desc">Current-Congress member roster with contact metadata.</p>
-      </a>
-      <a class="card" href="data/">
-        <p class="title">All artifacts &rarr;</p>
-        <p class="desc">Browse the raw <code>docs/data/</code> directory.</p>
-      </a>
-    </div>
-
-    <h2>App</h2>
-    <div class="cards">
-      <a class="card" href="https://github.com/nukeforum/bill-summarizer">
-        <p class="title">Source on GitHub &rarr;</p>
-        <p class="desc">Android client, data-pipeline scripts, and workflows.</p>
-      </a>
-      <a class="card" href="privacy.html">
-        <p class="title">Privacy policy &rarr;</p>
-        <p class="desc">What the app collects, what it doesn't, and how crash reporting opt-in works.</p>
-      </a>
-    </div>
+    <!-- Hero, Mission, Commitments, Features, Install, Run-your-own, Operations, Data feed will be added in Tasks 3-7. -->
 
     <footer>
       <p>Data pipeline runs from <code>.github/workflows/</code>: bills daily, session calendar daily, members weekly, ZIP→district quarterly.</p>
-      <p>Apache-2.0 licensed. Bills sourced from Congress.gov; member metadata from <a href="https://github.com/unitedstates/congress-legislators">unitedstates/congress-legislators</a>.</p>
+      <p>Apache-2.0 licensed. Bills sourced from Congress.gov; member metadata from <a href="https://github.com/unitedstates/congress-legislators">unitedstates/congress-legislators</a>. <a href="privacy.html">Privacy policy</a>. Last updated 2026-05-13.</p>
     </footer>
   </main>
 </body>
