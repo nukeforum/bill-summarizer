@@ -256,6 +256,52 @@
     .feature-with-shot .screenshot {
       margin-top: 0.4rem;
     }
+
+    /* Install */
+    .install-paths {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    @media (min-width: 720px) {
+      .install-paths {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .install-card {
+      padding: 1.1rem 1.2rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+    }
+    .install-card strong {
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+    .install-card p {
+      margin: 0.5rem 0 0;
+      color: var(--fg-muted);
+      font-size: 0.9rem;
+    }
+    .install-card pre {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.7rem;
+      font-size: 0.85rem;
+      overflow-x: auto;
+      margin: 0.5rem 0 0;
+    }
+    .install-card pre code {
+      background: transparent;
+      border: none;
+      padding: 0;
+    }
+    .install-footer {
+      font-size: 0.88rem;
+      color: var(--fg-muted);
+      margin-top: 1rem;
+    }
   </style>
 </head>
 <body>
@@ -349,7 +395,25 @@
       </div>
     </section>
 
-    <!-- Install, Run-your-own, Operations, Data feed will be added in Tasks 6-7. -->
+    <section id="install" class="install">
+      <h2>Install</h2>
+      <div class="install-paths">
+        <div class="install-card">
+          <strong>Google Play — coming soon</strong>
+          <p>Informed Citizen is in pre-publication review with Google Play. Once it's live, this section becomes a Get-it-on-Google-Play badge. For now, the build-from-source path on the right works.</p>
+        </div>
+        <div class="install-card">
+          <strong>Build from source</strong>
+          <pre><code>git clone https://github.com/nukeforum/bill-summarizer
+cd bill-summarizer/android
+./gradlew :app:installDebug</code></pre>
+          <p>Min SDK is Android 8 (API 26). The first build downloads Gradle 9.4.1 and the AGP 9.2.0 toolchain. See the <a href="https://github.com/nukeforum/bill-summarizer#building">README</a> for the full toolchain notes.</p>
+        </div>
+      </div>
+      <p class="install-footer">iOS is on the roadmap; nothing to install yet.</p>
+    </section>
+
+    <!-- Run-your-own, Operations, Data feed will be added in Task 7. -->
 
     <footer>
       <p>Data pipeline runs from <code>.github/workflows/</code>: bills daily, session calendar daily, members weekly, ZIP→district quarterly.</p>
