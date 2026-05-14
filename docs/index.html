@@ -49,8 +49,9 @@
       padding: 0 1rem 3rem;
     }
 
-    h1, h3 {
+    h1, h2, h3 {
       font-family: Georgia, "Source Serif Pro", serif;
+      color: var(--fg);
     }
     h1 {
       font-size: 2rem;
@@ -58,10 +59,7 @@
     }
     h2 {
       margin: 2.5rem 0 0.8rem;
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--fg-muted);
+      font-size: 1.45rem;
     }
 
     a { color: var(--accent); }
@@ -246,6 +244,16 @@
       .feature-with-shot {
         grid-template-columns: 1fr auto;
         gap: 2.5rem;
+      }
+      /* Alternate sides: even-numbered rows put the screenshot on the left. */
+      .features-grid > .feature-with-shot:nth-child(even) {
+        grid-template-columns: auto 1fr;
+      }
+      .features-grid > .feature-with-shot:nth-child(even) > div {
+        order: 2;
+      }
+      .features-grid > .feature-with-shot:nth-child(even) > img {
+        order: 1;
       }
     }
     .feature-with-shot > img {

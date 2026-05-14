@@ -80,14 +80,19 @@ navy.
 
 ### Typography
 
-- Headings (`h1`, `h3`): `Georgia, "Source Serif Pro", serif`. System
-  serif, no web-font fetch.
-- Body + `h2`: system sans (`-apple-system, BlinkMacSystemFont, "Segoe
-  UI", Roboto, sans-serif`).
-- `h2`s are styled as small uppercase muted labels (~0.78rem, 0.06em
-  letter-spacing) — not large titles. This is intentional; the page's
-  visual hierarchy treats `<h2>` as section markers, not headers in the
-  traditional sense.
+- Headings (`h1`, `h2`, `h3`): `Georgia, "Source Serif Pro", serif`,
+  in `var(--fg)` for full contrast. System serif — no web-font fetch.
+- Body: system sans (`-apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, sans-serif`).
+- Heading scale: `h1` 2rem (1.8rem on `run-your-own.html`), `h2`
+  1.45rem (1.35rem on `run-your-own.html`), `h3` 1.1rem. The two
+  files have slightly different `h1`/`h2` sizes because the
+  walkthrough page wants a less imposing intro than the landing page.
+- An earlier iteration styled `h2`s as small uppercase muted labels
+  (0.78rem, 0.06em letter-spacing, muted color). That made section
+  headers hard to find — body copy outweighed them. The current
+  serif-and-full-contrast `h2` is the right baseline; don't revert
+  it without a reason that beats "they were section markers."
 
 ### Entities, not literal Unicode
 
@@ -137,12 +142,22 @@ duplicate the visual argument, so the hero stays a pitch and the
 features carry the proof. Don't add a hero screenshot without
 re-thinking the features section.
 
-### Features section: every feature has a screenshot
+### Features section: every feature has a screenshot, sides alternate
 
 The features grid is conceptually a 2-column desktop layout, but every
 current feature is a `.feature.feature-with-shot` that spans both
 columns via `grid-column: 1 / -1`. Inside each row, the layout is
-text-left | image-right on desktop (`1fr auto`) and stacks on mobile.
+text + screenshot side by side on desktop (`1fr auto`) and stacks on
+mobile.
+
+**Sides alternate.** Odd-numbered rows (1st, 3rd, 5th) render
+text-left | shot-right. Even-numbered rows flip via
+`:nth-child(even)` — they swap to `grid-template-columns: auto 1fr`
+and reorder children with CSS `order` so the screenshot lands on the
+left. This avoids the "all screenshots stacked on the right" rhythm
+that earlier versions had. The alternation only applies above the
+720px breakpoint — on mobile, every row stacks text-above-shot in DOM
+order for predictable reading flow.
 
 Today the section has five rows: **Browse**, **Read a bill** (which
 also folds in the AI handoff — there's no separate "Hand it to an AI"
@@ -155,7 +170,12 @@ feature-with-shot">` containing a text `<div>` and an `<img class=
 "screenshot screenshot-crop" style="--crop-y: …%">`. The image is
 capped at 360×360 by `.feature-with-shot > img { max-height: 360px;
 max-width: 360px; }`; tune `--crop-y` per the *Screenshot crop
-modifier* section below.
+modifier* section below. The alternation falls out of `nth-child`
+automatically; you don't need a per-row class.
+
+If you reorder existing features, double-check which side each
+screenshot ends up on — moving a row changes its `nth-child` parity
+and therefore its side.
 
 The plain `.feature` class still exists for text-only cells (it'd
 live in the 2-column row) but nothing uses it today. If you ever need
