@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-14T08:37:58Z",
+  "generated_at": "2026-05-14T14:29:03Z",
   "congress": 119,
   "bills": [
     {
@@ -507,6 +507,54 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/118"
     },
     {
+      "id": "sres629-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "629",
+      "title": "A resolution honoring the life and legacy of Reverend Jesse Louis Jackson, Sr., and commending him for his significant leadership during the Civil Rights Movement and his decades of advocacy in pursuit of justice, equality, and human rights.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Durbin, Richard J.",
+        "party": "D",
+        "state": "IL"
+      },
+      "introduced_date": "2026-03-09",
+      "latest_action": {
+        "date": "2026-03-16",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S1058)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres629/BILLS-119sres629is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres629/BILLS-119sres629is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres629/BILLS-119sres629is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/629"
+    },
+    {
+      "id": "sres602-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "602",
+      "title": "A resolution supporting the United States Olympic and Paralympic Teams in the 2026 Olympic and Paralympic Winter Games.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Klobuchar, Amy",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2026-02-05",
+      "latest_action": {
+        "date": "2026-02-25",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres602/BILLS-119sres602ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres602/BILLS-119sres602ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres602/BILLS-119sres602ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/602"
+    },
+    {
       "id": "s3705-119",
       "congress": 119,
       "type": "s",
@@ -553,6 +601,30 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres95/BILLS-119sjres95pcs.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres95/BILLS-119sjres95pcs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/95"
+    },
+    {
+      "id": "s269-119",
+      "congress": 119,
+      "type": "s",
+      "number": "269",
+      "title": "Ending Improper Payments to Deceased People Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kennedy, John",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2025-01-28",
+      "latest_action": {
+        "date": "2026-02-10",
+        "text": "Became Public Law No: 119-77."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Ending Improper Payments to Deceased People Act</strong></p><p>This bill permanently allows the Department of the Treasury to access certain death records maintained by the Social Security Administration (SSA) in order to facilitate the identification&nbsp;and prevention of improper payments (e.g., payments&nbsp;to deceased individuals).&nbsp;</p><p>Current law requires the SSA to share its Death Master File with the Do Not Pay system maintained by Treasury for three years.&nbsp;The bill makes this requirement permanent.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ77/PLAW-119publ77.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ77/PLAW-119publ77_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ77/PLAW-119publ77.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/269"
     },
     {
       "id": "sres586-119",
@@ -627,6 +699,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/581"
     },
     {
+      "id": "sres519-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "519",
+      "title": "A resolution recognizing the achievements and contributions of the AH-64 Apache attack helicopter to the national defense of the United States and its allies and honoring the dedication, service, and sacrifice of the United States Army aviators, maintainers, and support personnel who operate and sustain the Apache.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kelly, Mark",
+        "party": "D",
+        "state": "AZ"
+      },
+      "introduced_date": "2025-12-01",
+      "latest_action": {
+        "date": "2026-01-15",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres519/BILLS-119sres519ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres519/BILLS-119sres519ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres519/BILLS-119sres519ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/519"
+    },
+    {
       "id": "s222-119",
       "congress": 119,
       "type": "s",
@@ -673,6 +769,30 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres84/BILLS-119sjres84pcs.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres84/BILLS-119sjres84pcs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/84"
+    },
+    {
+      "id": "hr4366-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "4366",
+      "title": "Save Local Business Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Comer, James",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2025-07-14",
+      "latest_action": {
+        "date": "2026-01-13",
+        "text": "Rule H. Res. 988 passed House."
+      },
+      "outcome": "passed_house",
+      "summary_crs": "<p><strong></strong><strong><strong></strong></strong><strong>Save Local Business Act</strong></p><p>This bill provides that a person may be considered a joint employer of the employees of another employer&nbsp;under federal labor law only if such person directly, actually, and immediately exercises significant control over the essential terms and conditions of employment. Such control may by demonstrated by hiring and discharging employees; determining individual employee rates of pay and benefits; day-to-day supervision of employees; assigning individual work schedules, positions, or tasks; or administering employee discipline.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr4366/BILLS-119hr4366rh.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr4366/BILLS-119hr4366rh.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr4366/BILLS-119hr4366rh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/4366"
     },
     {
       "id": "sjres86-119",
@@ -891,6 +1011,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2283"
     },
     {
+      "id": "sres321-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "321",
+      "title": "A resolution commemorating 30 years of diplomatic relations between the United States and Vietnam on July 11, 2025.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Merkley, Jeff",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2025-07-15",
+      "latest_action": {
+        "date": "2025-12-18",
+        "text": "Resolution agreed to in Senate with an amendment and an amended preamble by Unanimous Consent. (text: CR S8892-8893)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres321/BILLS-119sres321ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres321/BILLS-119sres321ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres321/BILLS-119sres321ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/321"
+    },
+    {
       "id": "sres492-119",
       "congress": 119,
       "type": "sres",
@@ -1083,6 +1227,54 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/76"
     },
     {
+      "id": "sres124-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "124",
+      "title": "A resolution recognizing the 250th anniversary of the United States Marine Corps.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blumenthal, Richard",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2025-03-12",
+      "latest_action": {
+        "date": "2025-11-09",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (consideration: CR S8036-8038; text: CR S8038)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres124/BILLS-119sres124ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres124/BILLS-119sres124ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres124/BILLS-119sres124ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/124"
+    },
+    {
+      "id": "sres463-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "463",
+      "title": "A resolution expressing condemnation of the Chinese Communist Party's persecution of religious minority groups, including Christians, Muslims, and Buddhists and the detention of Pastor \"Ezra\" Jin Mingri and leaders of the Zion Church, and reaffirming the United States' global commitment to promote religious freedom and tolerance.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cruz, Ted",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2025-10-23",
+      "latest_action": {
+        "date": "2025-11-07",
+        "text": "Resolution agreed to in Senate with an amendment and an amended preamble by Voice Vote. (text of amendment in the nature of a substitute: CR S7976)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres463/BILLS-119sres463ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres463/BILLS-119sres463ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres463/BILLS-119sres463ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/463"
+    },
+    {
       "id": "sres399-119",
       "congress": 119,
       "type": "sres",
@@ -1203,6 +1395,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/406"
     },
     {
+      "id": "sres412-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "412",
+      "title": "An executive resolution authorizing the en bloc consideration in Executive Session of certain nominations on the Executive Calendar.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Thune, John",
+        "party": "R",
+        "state": "SD"
+      },
+      "introduced_date": "2025-09-18",
+      "latest_action": {
+        "date": "2025-10-03",
+        "text": "Resolution agreed to in Senate without amendment by Yea-Nay Vote. 51 - 46. Record Vote Number: 541."
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres412/BILLS-119sres412ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres412/BILLS-119sres412ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres412/BILLS-119sres412ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/412"
+    },
+    {
       "id": "sres396-119",
       "congress": 119,
       "type": "sres",
@@ -1299,6 +1515,54 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-concurrent-resolution/22"
     },
     {
+      "id": "sres377-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "377",
+      "title": "An executive resolution authorizing the en bloc consideration in Executive Session of certain nominations on the Executive Calendar.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Thune, John",
+        "party": "R",
+        "state": "SD"
+      },
+      "introduced_date": "2025-09-08",
+      "latest_action": {
+        "date": "2025-09-15",
+        "text": "Resolution agreed to in Senate without amendment by Yea-Nay Vote. 51 - 44. Record Vote Number: 517."
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This resolution provides for the en bloc consideration in Executive Session of nominations for various executive officers and ambassadors. The agencies in which the executive officers shall serve&nbsp;include the Departments of Defense, Energy, the Interior, and Labor.&nbsp;The ambassadors shall represent the United States to Argentina, Greece, Liechtenstein, and Sweden.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sres377/BILLS-119sres377ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres377/BILLS-119sres377ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres377/BILLS-119sres377ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/377"
+    },
+    {
+      "id": "sres371-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "371",
+      "title": "A resolution honoring the victims and survivors of the mass shooting at the Annunciation Catholic Church and School in Minneapolis, Minnesota.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Klobuchar, Amy",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2025-09-02",
+      "latest_action": {
+        "date": "2025-09-08",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text: CR S6439)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres371/BILLS-119sres371ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres371/BILLS-119sres371ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres371/BILLS-119sres371ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/371"
+    },
+    {
       "id": "hr2170-119",
       "congress": 119,
       "type": "hr",
@@ -1369,6 +1633,30 @@
       "text_url_xml": "https://www.congress.gov/119/bills/hres539/BILLS-119hres539ih.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/hres539/BILLS-119hres539ih.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-resolution/539"
+    },
+    {
+      "id": "s201-119",
+      "congress": 119,
+      "type": "s",
+      "number": "201",
+      "title": "ACES Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kelly, Mark",
+        "party": "D",
+        "state": "AZ"
+      },
+      "introduced_date": "2025-01-23",
+      "latest_action": {
+        "date": "2025-08-14",
+        "text": "Became Public Law No: 119-32."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>ACES Act</strong></p><p>This bill requires the Department of Veterans Affairs to enter into an agreement with the National Academies of Sciences, Engineering, and Medicine to study and report on the prevalence and mortality of cancers among veterans who served on active duty as aircrew members and regularly flew in fixed-wing aircraft.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ32/PLAW-119publ32.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ32/PLAW-119publ32_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ32/PLAW-119publ32.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/201"
     },
     {
       "id": "sres340-119",
@@ -1537,6 +1825,102 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sres276/BILLS-119sres276ats.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sres276/BILLS-119sres276ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/276"
+    },
+    {
+      "id": "s1582-119",
+      "congress": 119,
+      "type": "s",
+      "number": "1582",
+      "title": "GENIUS Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hagerty, Bill",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2025-05-01",
+      "latest_action": {
+        "date": "2025-07-18",
+        "text": "Became Public Law No: 119-27."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Guiding and Establishing National Innovation for U.S. Stablecoins Act or the GENIUS Act</strong></p><p>This bill establishes a regulatory framework for payment&nbsp;stablecoins (digital assets which an issuer must redeem for a fixed value).</p><p>Under the bill, only permitted issuers may issue a payment stablecoin for use by U.S. persons, subject to certain exceptions and safe harbors. Permitted issuers must be a subsidiary of an insured depository institution, a federal-qualified nonbank payment stablecoin issuer, or a state-qualified payment stablecoin issuer. Permitted issuers must be regulated by the appropriate federal or state&nbsp;regulator. Permitted issuers may choose federal or state regulation; however, state regulation is&nbsp;limited to those with&nbsp;a&nbsp;stablecoin issuance of $10 billion or less.</p><p>Permitted issuers must maintain reserves backing the&nbsp;stablecoin on a one-to-one basis using  U.S. currency or other similarly liquid assets, as specified. Permitted issuers must also publicly disclose their redemption policy and publish monthly&nbsp;the details of their reserves.</p><p>The bill specifies requirements for (1) reusing reserves; (2) providing safekeeping services for&nbsp;stablecoins; and (3) supervisory, examination, and enforcement authority over federal-qualified issuers.</p><p>The bill allows foreign issuers of stablecoins to offer, sell, or make available in the United States stablecoins using digital asset service providers, subject to requirements, including  a determination by the&nbsp;Department of Treasury that they are subject to comparable foreign regulations.</p><p>Under the bill, permitted payment stablecoins are not considered securities under securities law. However, permitted issuers&nbsp;are&nbsp;subject to the Bank Secrecy Act for anti-money laundering and related purposes.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ27/PLAW-119publ27.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ27/PLAW-119publ27_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ27/PLAW-119publ27.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1582"
+    },
+    {
+      "id": "s331-119",
+      "congress": 119,
+      "type": "s",
+      "number": "331",
+      "title": "HALT Fentanyl Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cassidy, Bill",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2025-01-30",
+      "latest_action": {
+        "date": "2025-07-16",
+        "text": "Became Public Law No: 119-26."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Halt All Lethal Trafficking of Fentanyl Act or the HALT Fentanyl Act</strong></p><p>This act permanently places fentanyl-related substances as a class into schedule I of the Controlled Substances Act. A schedule I controlled substance is a drug, substance, or chemical that has a high potential for abuse; has no currently accepted medical value; and is subject to regulatory controls and administrative, civil, and criminal penalties under the Controlled Substances Act.</p><p>Under the act, offenses involving fentanyl-related substances are triggered by the same quantity thresholds and subject to the same penalties as offenses involving fentanyl analogues (e.g., offenses involving 100 grams or more trigger a 10-year mandatory minimum prison term).</p><p>Additionally, the act establishes a new, alternative registration process for certain schedule I research.</p><p>The act also makes several other changes to registration requirements for conducting research with controlled substances, including</p><ul><li>permitting a single registration for related research sites in certain circumstances,</li><li>waiving the requirement for a new inspection in certain situations, and</li><li>allowing a registered researcher to perform certain manufacturing activities with small quantities of a substance without obtaining a manufacturing registration.</li></ul><p>Finally, the act expresses the sense that Congress agrees with the interpretation of the Controlled Substances Act in <em>United States v. McCray</em>, a 2018 case decided by the U.S. District Court for the Western District of New York. In that case, the court held that butyryl fentanyl, a controlled substance, can be considered an analogue of fentanyl even though, under the Controlled Substances Act, the term <em>controlled substance analogue</em> specifically excludes a controlled substance.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ26/PLAW-119publ26.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ26/PLAW-119publ26_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ26/PLAW-119publ26.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/331"
+    },
+    {
+      "id": "sres283-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "283",
+      "title": "A resolution commemorating the 90th birthday of His Holiness the 14th Dalai Lama on July 6, 2025, as \"A Day of Compassion\" and expressing support for the human rights and distinct religious, cultural, linguistic, and historical identity of the Tibetan people.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Merkley, Jeff",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2025-06-17",
+      "latest_action": {
+        "date": "2025-07-14",
+        "text": "Resolution agreed to in Senate with an amendment and with a preamble by Unanimous Consent. (text: CR S4342-4343)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres283/BILLS-119sres283ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres283/BILLS-119sres283ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres283/BILLS-119sres283ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/283"
+    },
+    {
+      "id": "sjres59-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "59",
+      "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities against the Islamic Republic of Iran that have not been authorized by Congress.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kaine, Tim",
+        "party": "D",
+        "state": "VA"
+      },
+      "introduced_date": "2025-06-16",
+      "latest_action": {
+        "date": "2025-06-27",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 53. Record Vote Number: 328. (consideration: CR S3595)"
+      },
+      "outcome": "failed",
+      "summary_crs": "<p>This joint resolution directs the President to terminate the use of U.S. Armed Forces for hostilities against Iran unless explicitly authorized by a congressional declaration of war or a specific authorization for use of military force against Iran.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sjres59/BILLS-119sjres59is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres59/BILLS-119sjres59is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres59/BILLS-119sjres59is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/59"
     },
     {
       "id": "sres290-119",
@@ -1753,6 +2137,30 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ15/PLAW-119publ15_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ15/PLAW-119publ15.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/87"
+    },
+    {
+      "id": "s160-119",
+      "congress": 119,
+      "type": "s",
+      "number": "160",
+      "title": "Aerial Firefighting Enhancement Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Sheehy, Tim",
+        "party": "R",
+        "state": "MT"
+      },
+      "introduced_date": "2025-01-21",
+      "latest_action": {
+        "date": "2025-06-12",
+        "text": "Became Public Law No: 119-18."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Aerial Firefighting Enhancement Act of 2025</strong></p><p>This bill reauthorizes the Department of Defense to sell its excess aircraft and aircraft parts that are acceptable for commercial sale for wildfire suppression purposes. Such authority begins October 1, 2025, and ends October 1, 2035.</p><p>The bill also provides that such aircraft may be used to deliver water by air in order to suppress wildfire (the previous authority only provided for the delivery of fire retardant).</p><p>The bill removes the previous limitation on providing international wildfire suppression assistance with such purchased aircraft.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ18/PLAW-119publ18.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ18/PLAW-119publ18_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ18/PLAW-119publ18.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/160"
     },
     {
       "id": "sjres53-119",
@@ -2187,6 +2595,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/26"
     },
     {
+      "id": "hr1968-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "1968",
+      "title": "Full-Year Continuing Appropriations and Extensions Act, 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Cole, Tom",
+        "party": "R",
+        "state": "OK"
+      },
+      "introduced_date": "2025-03-10",
+      "latest_action": {
+        "date": "2025-03-15",
+        "text": "Became Public Law No: 119-4."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Full-Year Continuing Appropriations and Extensions Act, 2025</strong></p><p>This bill provides continuing FY2025 appropriations for federal agencies and extends various expiring programs and authorities.&nbsp;</p><p>Specifically, the bill provides continuing FY2025 appropriations to federal agencies for the remainder of FY2025. It is known as a continuing resolution (CR) and prevents a government shutdown that would otherwise occur if the FY2025 appropriations bills have not been enacted when the existing CR expires on March 14, 2025.&nbsp;</p><p>The CR funds most programs and activities at the FY2024 levels. It also includes several additional provisions that increase or decrease funding for various programs compared to FY2024 levels.&nbsp;</p><p>In addition, the bill extends several expiring programs and authorities, including</p><ul><li>several public health, Medicare, and Medicaid authorities and programs;</li><li>the National Flood Insurance Program;</li><li>authorities related to the Commodity Futures Trading Commission whistleblower program;</li><li>the Department of Homeland Security (DHS) National Cybersecurity Protection System;</li><li>authorities for DHS and the Department of Justice to take certain actions to mitigate a credible threat from an unmanned aircraft system;</li><li>the Temporary Assistance for Needy Families (TANF) program;</li><li>several immigration-related programs and authorities;&nbsp;</li><li>the special assessment on nonindigent persons or entities convicted of certain offenses involving sexual abuse or human trafficking;</li><li>the temporary scheduling order issued by the Drug Enforcement Administration to place fentanyl-related substances in Schedule I of the Controlled Substances Act;</li><li>the authorization for the U.S. Parole Commission; and</li><li>the Department of Agriculture livestock mandatory price reporting program.</li></ul>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ4/PLAW-119publ4.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ4/PLAW-119publ4_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ4/PLAW-119publ4.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1968"
+    },
+    {
       "id": "hjres35-119",
       "congress": 119,
       "type": "hjres",
@@ -2259,6 +2691,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/94"
     },
     {
+      "id": "sconres7-119",
+      "congress": 119,
+      "type": "sconres",
+      "number": "7",
+      "title": "An original concurrent resolution setting forth the congressional budget for the United States Government for fiscal year 2025 and setting forth the appropriate budgetary levels for fiscal years 2026 through 2034.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Graham, Lindsey",
+        "party": "R",
+        "state": "SC"
+      },
+      "introduced_date": "2025-02-13",
+      "latest_action": {
+        "date": "2025-02-21",
+        "text": "Resolution agreed to in Senate with amendments by Yea-Nay Vote. 52 - 48. Record Vote Number: 87. (text: CR S1119-1125)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This concurrent resolution establishes the congressional budget for the federal government for FY2025, sets forth budgetary levels for FY2026-FY2034, and provides reconciliation instructions for legislation that increases or decreases the deficit by specified amounts.&nbsp;</p><p>The resolution recommends levels and amounts for FY2025-FY2034 for</p><ul><li>federal revenues,</li><li>new budget authority,</li><li>budget outlays,</li><li>deficits,</li><li>public debt,</li><li>debt held by the public, and</li><li>the major functional categories of spending.</li></ul><p>It also recommends levels and amounts for Social Security and Postal Service discretionary administrative expenses for the purpose of budget enforcement in the Senate.</p><p>The resolution includes reconciliation instructions that direct several House and Senate committees to report legislation that will increase or decrease the deficit over FY2025-FY2034 by specified amounts. The committees must submit the legislation to the applicable congressional budget committee by March 7, 2025.&nbsp;</p><p>(Under current law, reconciliation bills are considered by Congress using expedited legislative procedures that prevent a filibuster and restrict amendments in the Senate.)</p><p>In addition, the resolution establishes reserve funds that allow certain adjustments to committee allocations and other budgetary levels to accommodate (1) reconciliation legislation, and (2) legislation that would not increase the deficit over FY2025-FY2034.&nbsp;The resolution also exempts reconciliation legislation that complies with this resolution from various budget points of order.</p><p>Finally, the resolution sets forth budget enforcement procedures that address issues such as adjustments to committee allocations and the budgetary treatment of the discretionary administrative expenses for the Social Security Administration and the U.S. Postal Service.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sconres7/BILLS-119sconres7es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sconres7/BILLS-119sconres7es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sconres7/BILLS-119sconres7es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-concurrent-resolution/7"
+    },
+    {
       "id": "sres53-119",
       "congress": 119,
       "type": "sres",
@@ -2281,6 +2737,30 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sres53/BILLS-119sres53ats.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sres53/BILLS-119sres53ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/53"
+    },
+    {
+      "id": "s5-119",
+      "congress": 119,
+      "type": "s",
+      "number": "5",
+      "title": "Laken Riley Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Britt, Katie Boyd",
+        "party": "R",
+        "state": "AL"
+      },
+      "introduced_date": "2025-01-06",
+      "latest_action": {
+        "date": "2025-01-29",
+        "text": "Became Public Law No: 119-1."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Laken Riley Act</strong></p><p>This bill requires the Department of Homeland Security (DHS) to detain certain non-U.S. nationals (<em>aliens</em> under federal law) who have been arrested for burglary, theft, larceny, or shoplifting. The bill also authorizes states to sue the federal government for decisions or alleged failures related to immigration enforcement.</p><p>Under this bill, DHS must detain an individual who (1) is unlawfully present in the United States or did not possess the necessary documents when applying for admission; and (2) has been charged with, arrested for, convicted of, or admits to having committed acts that constitute the essential elements of burglary, theft, larceny, or shoplifting.</p><p>The bill also authorizes state governments to sue for injunctive relief over certain immigration-related decisions or alleged failures by the federal government if the decision or failure caused the state or its residents harm, including financial harm of more than $100. Specifically, the state government may sue the federal government over a</p><ul><li>decision to release a non-U.S. national from custody;</li><li>failure to fulfill requirements relating to inspecting individuals seeking admission into the United States, including requirements related to asylum interviews;</li><li>failure to fulfill a requirement to stop issuing visas to nationals of a country that unreasonably denies or delays acceptance of nationals of that country;</li><li>violation of limitations on immigration parole, such as the requirement that parole be granted only on a case-by-case basis; or</li><li>failure to detain an individual who has been ordered removed from the United States.</li></ul>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ1/PLAW-119publ1.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ1/PLAW-119publ1_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ1/PLAW-119publ1.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/5"
     }
   ]
 }
