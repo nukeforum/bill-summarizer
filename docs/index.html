@@ -179,10 +179,9 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.18), 0 4px 10px rgba(0,0,0,0.10);
     }
     .screenshot.screenshot-crop {
-      aspect-ratio: 9 / 7;
+      aspect-ratio: 9 / 10;
       object-fit: cover;
-      object-position: top center;
-      width: 100%;
+      object-position: center 28%;
     }
     .hero-shot .screenshot {
       max-height: 420px;
@@ -248,13 +247,28 @@
     .feature strong {
       font-size: 1rem;
     }
+    /* Feature-with-shot spans the full row of .features-grid and lays text
+       and screenshot side-by-side on desktop, stacked on mobile. */
     .feature-with-shot {
+      grid-column: 1 / -1;
       display: grid;
       grid-template-columns: 1fr;
-      gap: 0.8rem;
+      gap: 1.4rem;
+      align-items: center;
+      padding: 0.4rem 0;
     }
-    .feature-with-shot .screenshot {
-      margin-top: 0.4rem;
+    @media (min-width: 720px) {
+      .feature-with-shot {
+        grid-template-columns: 1fr auto;
+        gap: 2.5rem;
+      }
+    }
+    .feature-with-shot > img {
+      max-height: 420px;
+      max-width: 100%;
+      width: auto;
+      display: block;
+      justify-self: center;
     }
 
     /* Install */
@@ -411,27 +425,36 @@
           <p>Filter by passed, failed, enacted, or vetoed. Today's feed covers the 119th Congress, with the 93rd onward backfilled in the background.</p>
         </div>
         <div class="feature">
-          <p><strong>Read a bill.</strong></p>
-          <p>Sponsor, latest action, the full Congressional Research Service plain-English summary when one's published, and a one-tap jump to the canonical text on Congress.gov.</p>
-        </div>
-        <div class="feature">
           <p><strong>Hand it to an AI.</strong></p>
           <p>A "Summarize with AI" sheet builds a structured prompt and sends it via Android's share menu to ChatGPT, Claude, Gemini, or anything else you've installed. The app ships no AI of its own.</p>
         </div>
-        <div class="feature">
-          <p><strong>Is Congress in session?</strong></p>
-          <p>A status line tells you whether the House and Senate are in today, and a calendar grid shows the next two months of session days.</p>
+        <div class="feature feature-with-shot">
+          <div>
+            <p><strong>Read a bill.</strong></p>
+            <p>Sponsor, latest action, the full Congressional Research Service plain-English summary when one's published, and a one-tap jump to the canonical text on Congress.gov.</p>
+          </div>
+          <img src="images/billdetail.png" class="screenshot" alt="Bill detail showing H.R. 8469 — sponsor, passed-House status, the CRS plain-English summary, and the &quot;Summarize with AI&quot; pill." />
         </div>
-        <div class="feature">
-          <p><strong>Who represents you?</strong></p>
-          <p>Save your state and district, or look it up by ZIP. Open any representative's page to see their sponsored and cosponsored bills, dial their D.C. office, or open their contact page.</p>
+        <div class="feature feature-with-shot">
+          <div>
+            <p><strong>Is Congress in session?</strong></p>
+            <p>A status line tells you whether the House and Senate are in today, and a calendar grid shows the next two months of session days.</p>
+          </div>
+          <img src="images/calendar.png" class="screenshot" alt="Congress calendar showing May and June 2026 with House (blue) and Senate (purple) session-day bars on each weekday." />
+        </div>
+        <div class="feature feature-with-shot">
+          <div>
+            <p><strong>Who represents you?</strong></p>
+            <p>Save your state and district, or look it up by ZIP. Open any representative's page to see their sponsored and cosponsored bills, dial their D.C. office, or open their contact page.</p>
+          </div>
+          <img src="images/reps.png" class="screenshot" alt="Your representatives list showing both senators and the House representative for the saved district, each with a phone-dial button." />
         </div>
         <div class="feature feature-with-shot">
           <div>
             <p><strong>Yours to tune.</strong></p>
             <p>Material or Solarized theme; light, dark, or system. Crash reporting is off by default and lives behind a Settings toggle.</p>
           </div>
-          <img src="images/settings.png" class="screenshot screenshot-crop" alt="Settings: Theme picker showing Material/Solarized and Follow system/Light/Dark options" />
+          <img src="images/settings.png" class="screenshot screenshot-crop" alt="Settings screen showing the Theme picker (Material/Solarized + Follow system/Light/Dark) and the off-by-default Send-crash-reports toggle." />
         </div>
       </div>
     </section>
