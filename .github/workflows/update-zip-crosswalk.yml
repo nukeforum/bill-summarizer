@@ -58,8 +58,14 @@ jobs:
           fi
           python data-pipeline/scripts/build_zip_crosswalk.py "${ARGS[@]}"
 
+      - name: Rebuild pipeline dashboard
+        if: always()
+        run: python data-pipeline/scripts/build_dashboard.py
+
       - name: Commit updated asset
         uses: ./.github/actions/safe-push
         with:
-          paths: android/app/src/main/assets/zip_to_cd.json
+          paths: |
+            android/app/src/main/assets/zip_to_cd.json
+            docs/pipeline.html
           message: "Update ZIP-to-CD crosswalk [bot]"

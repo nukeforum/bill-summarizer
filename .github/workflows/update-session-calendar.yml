@@ -40,8 +40,14 @@ jobs:
       - name: Build session calendar
         run: python data-pipeline/scripts/build_session_calendar.py
 
+      - name: Rebuild pipeline dashboard
+        if: always()
+        run: python data-pipeline/scripts/build_dashboard.py
+
       - name: Commit updated calendar
         uses: ./.github/actions/safe-push
         with:
-          paths: docs/data/session_calendar.json
+          paths: |
+            docs/data/session_calendar.json
+            docs/pipeline.html
           message: "Update session calendar [bot]"

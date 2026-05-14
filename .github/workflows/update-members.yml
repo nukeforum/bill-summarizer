@@ -39,17 +39,27 @@ jobs:
           CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
         run: python data-pipeline/scripts/fetch_members.py --phase1-only
 
+      - name: Rebuild pipeline dashboard (post-Phase 1)
+        if: always()
+        run: python data-pipeline/scripts/build_dashboard.py
+
       - name: Commit Phase 1 (members index)
         if: always()
         uses: ./.github/actions/safe-push
         with:
-          paths: docs/data/members_*.json
+          paths: |
+            docs/data/members_*.json
+            docs/pipeline.html
           message: "Update members index [bot]"
 
       - name: Phase 2 — backfill sponsored / cosponsored legislation
         env:
           CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
         run: python data-pipeline/scripts/fetch_members.py --phase2-only --time-budget-minutes 280
+
+      - name: Rebuild pipeline dashboard (post-Phase 2)
+        if: always()
+        run: python data-pipeline/scripts/build_dashboard.py
 
       - name: Commit Phase 2 (members legislation)
         if: always()
@@ -58,4 +68,5 @@ jobs:
           paths: |
             docs/data/members/*.json
             docs/data/members_*.json
+            docs/pipeline.html
           message: "Update members legislation [bot]"

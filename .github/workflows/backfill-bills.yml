@@ -39,6 +39,10 @@ jobs:
           CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
         run: python data-pipeline/scripts/backfill_bills.py
 
+      - name: Rebuild pipeline dashboard
+        if: always()
+        run: python data-pipeline/scripts/build_dashboard.py
+
       - name: Commit updated data and state
         uses: ./.github/actions/safe-push
         with:
@@ -46,4 +50,5 @@ jobs:
             docs/data/congress*_bills.json
             docs/data/congresses.json
             data-pipeline/state/backfill_state.json
+            docs/pipeline.html
           message: "Backfill bills [bot]"
