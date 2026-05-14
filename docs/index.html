@@ -188,6 +188,46 @@
       max-height: 420px;
       width: auto;
     }
+
+    /* Mission */
+    .mission p {
+      font-size: 1.02rem;
+      margin: 0;
+    }
+
+    /* Commitments */
+    .commitments {
+      background: var(--gold-bg);
+      border-left: 4px solid var(--gold-border);
+      padding: 1.4rem 1.4rem 1.2rem;
+      border-radius: 0 6px 6px 0;
+      margin-top: 1.5rem;
+    }
+    .commitments h2 {
+      margin-top: 0;
+    }
+    .commitments-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.9rem 1.6rem;
+    }
+    @media (min-width: 600px) {
+      .commitments-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .commitment p {
+      margin: 0;
+    }
+    .commitment strong {
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+    .commitments-footer {
+      margin-top: 1.2rem;
+      font-size: 0.88rem;
+      color: var(--fg-muted);
+    }
   </style>
 </head>
 <body>
@@ -218,7 +258,37 @@
       </div>
     </section>
 
-    <!-- Mission, Commitments, Features, Install, Run-your-own, Operations, Data feed will be added in Tasks 4-7. -->
+    <section class="mission">
+      <h2>Mission</h2>
+      <p>Bills are written for lawyers. The U.S. Congressional record is, in principle, public — but in practice it's spread across half a dozen government sites, formatted for institutional consumers. Informed Citizen pulls that record into one place, formats it for a phone, and lets you hand the rest to an AI assistant you already trust.</p>
+    </section>
+
+    <section class="commitments">
+      <h2>Our commitments</h2>
+      <div class="commitments-grid">
+        <div class="commitment">
+          <p><strong>Free, forever.</strong> No price tag. No paid tier. No "premium" version waiting in the wings.</p>
+        </div>
+        <div class="commitment">
+          <p><strong>No accounts.</strong> There is nothing to sign up for. The app has no notion of a user.</p>
+        </div>
+        <div class="commitment">
+          <p><strong>No ads, no third-party tracking, no analytics.</strong> We don't sell your attention, because we don't collect it.</p>
+        </div>
+        <div class="commitment">
+          <p><strong>No personal data leaves your device without your knowing.</strong> The app only requests the <code>INTERNET</code> permission. Optional crash reporting is off by default and lives behind a toggle in Settings.</p>
+        </div>
+        <div class="commitment">
+          <p><strong>The data is public, the code is public.</strong> Every bill we show comes from Congress.gov; every line of the app and its data pipeline is Apache-2.0 on GitHub. You can fork it, audit it, or stand up your own copy.</p>
+        </div>
+        <div class="commitment">
+          <p><strong>No LLM of our own.</strong> When you want a bill explained, the app builds a structured prompt and hands it to whichever AI app you choose. Anthropic, OpenAI, Google, or any share-sheet target — your bill, your AI relationship.</p>
+        </div>
+      </div>
+      <p class="commitments-footer">Full details in the <a href="privacy.html">privacy policy</a>.</p>
+    </section>
+
+    <!-- Features, Install, Run-your-own, Operations, Data feed will be added in Tasks 5-7. -->
 
     <footer>
       <p>Data pipeline runs from <code>.github/workflows/</code>: bills daily, session calendar daily, members weekly, ZIP→district quarterly.</p>
