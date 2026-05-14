@@ -302,6 +302,47 @@
       color: var(--fg-muted);
       margin-top: 1rem;
     }
+
+    /* Run-your-own pointer */
+    .run-your-own p {
+      margin: 0 0 0.8rem;
+    }
+    .run-your-own .cta {
+      margin-top: 0.4rem;
+    }
+
+    /* Cards (operations, data feed) */
+    .cards {
+      display: grid;
+      gap: 0.6rem;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 600px) {
+      .cards { grid-template-columns: 1fr 1fr; }
+    }
+    .card {
+      display: block;
+      padding: 0.85rem 1rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.15s ease, transform 0.15s ease;
+    }
+    .card:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+    .card .title {
+      font-weight: 600;
+      margin: 0 0 0.15rem 0;
+    }
+    .card .desc {
+      color: var(--fg-muted);
+      font-size: 0.88rem;
+      margin: 0;
+    }
   </style>
 </head>
 <body>
@@ -413,7 +454,47 @@ cd bill-summarizer/android
       <p class="install-footer">iOS is on the roadmap; nothing to install yet.</p>
     </section>
 
-    <!-- Run-your-own, Operations, Data feed will be added in Task 7. -->
+    <section class="run-your-own">
+      <h2>Run your own pipeline</h2>
+      <p>The data the app reads is published as plain JSON to GitHub Pages, built by GitHub Actions workflows from public sources (Congress.gov, the House Clerk's voting-days ICS, the Senate session XML, and HUD's USPS ZIP crosswalk). The whole thing is Apache-2.0, and you can fork it and point it at your own GitHub Pages site so nothing relies on this deployment staying online.</p>
+      <p><a class="cta cta-secondary" href="run-your-own.html">→ How to run your own pipeline</a></p>
+    </section>
+
+    <section class="operations">
+      <h2>Operations</h2>
+      <div class="cards">
+        <a class="card" href="pipeline.html">
+          <p class="title">Pipeline status &rarr;</p>
+          <p class="desc">Freshness of every published artifact, backfill progress, and per-Congress bill counts.</p>
+        </a>
+        <a class="card" href="https://github.com/nukeforum/bill-summarizer/actions">
+          <p class="title">Workflow runs &rarr;</p>
+          <p class="desc">Scheduled jobs that fetch and publish the feed.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="data-feed">
+      <h2>Data feed</h2>
+      <div class="cards">
+        <a class="card" href="data/congresses.json">
+          <p class="title">congresses.json &rarr;</p>
+          <p class="desc">Index of all per-Congress bill manifests. Start here.</p>
+        </a>
+        <a class="card" href="data/session_calendar.json">
+          <p class="title">session_calendar.json &rarr;</p>
+          <p class="desc">House and Senate session days, derived daily from upstream feeds.</p>
+        </a>
+        <a class="card" href="data/members_119.json">
+          <p class="title">members_119.json &rarr;</p>
+          <p class="desc">Current-Congress member roster with contact metadata.</p>
+        </a>
+        <a class="card" href="data/">
+          <p class="title">All artifacts &rarr;</p>
+          <p class="desc">Browse the raw <code>docs/data/</code> directory.</p>
+        </a>
+      </div>
+    </section>
 
     <footer>
       <p>Data pipeline runs from <code>.github/workflows/</code>: bills daily, session calendar daily, members weekly, ZIP→district quarterly.</p>
