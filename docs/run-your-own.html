@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Run your own pipeline · Informed Citizen</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --fg: #1a1a1a;
+      --fg-muted: #5a5a5a;
+      --bg: #f8f8f8;
+      --bg-card: #ffffff;
+      --border: #e3e3e3;
+      --accent: #1B2A4A;
+      --accent-on: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #ececec;
+        --fg-muted: #9a9a9a;
+        --bg: #0d1525;
+        --bg-card: #1a2438;
+        --border: #2a3550;
+        --accent: #6ea8ff;
+        --accent-on: #0d1525;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.55;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1rem 3rem;
+    }
+    h1, h3 {
+      font-family: Georgia, "Source Serif Pro", serif;
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin: 1.2rem 0 0.4rem;
+    }
+    h2 {
+      margin: 2rem 0 0.6rem;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--fg-muted);
+    }
+    h3 {
+      font-size: 1.1rem;
+      margin: 1.6rem 0 0.4rem;
+    }
+    a { color: var(--accent); }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      background: var(--bg-card);
+      padding: 0.05rem 0.35rem;
+      border-radius: 0.25rem;
+      border: 1px solid var(--border);
+      font-size: 0.88em;
+    }
+    pre {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.7rem;
+      font-size: 0.88rem;
+      overflow-x: auto;
+    }
+    pre code {
+      background: transparent;
+      border: none;
+      padding: 0;
+    }
+    .breadcrumb {
+      font-size: 0.85rem;
+      color: var(--fg-muted);
+      margin-top: 1.4rem;
+    }
+    .breadcrumb a {
+      color: var(--fg-muted);
+    }
+    .lede {
+      color: var(--fg-muted);
+      font-size: 1.02rem;
+    }
+    ol li, ul li {
+      margin: 0.4rem 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      margin: 0.6rem 0 0.4rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.45rem 0.6rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th {
+      color: var(--fg-muted);
+      font-weight: 600;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    /* Header (matches index.html) */
+    .site-header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1.2rem 1rem 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .site-header .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .site-logo {
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      display: block;
+    }
+    .site-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .site-nav {
+      margin-left: auto;
+      display: flex;
+      gap: 1rem;
+      font-size: 0.88rem;
+    }
+    .site-nav a {
+      color: var(--fg-muted);
+      text-decoration: none;
+    }
+    .site-nav a:hover { color: var(--accent); }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      color: var(--fg-muted);
+      font-size: 0.85rem;
+    }
+    footer p { margin: 0.3rem 0; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/icon-192.webp" alt="" class="site-logo" />
+      <span class="site-name">Informed Citizen</span>
+    </div>
+    <nav class="site-nav">
+      <a href="pipeline.html">Pipeline status</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://github.com/nukeforum/bill-summarizer">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <p class="breadcrumb"><a href="./">&larr; Informed Citizen</a></p>
+    <h1>Run your own pipeline</h1>
+    <p class="lede">Fork the project, plug in two free API keys, and the data feed publishes to your own GitHub Pages site — independent of <code>nukeforum.github.io</code>.</p>
+
+    <h2>Why you might do this</h2>
+    <ul>
+      <li><strong>Auditability.</strong> See exactly what data gets published, on what cadence, from what sources.</li>
+      <li><strong>Durability.</strong> If this deployment ever goes offline, your fork keeps running on its own schedule.</li>
+      <li><strong>Customization.</strong> Tweak the filter rules, the schedule, the sources, or the manifest shape for your own purposes.</li>
+    </ul>
+
+    <h2>What you'll need</h2>
+    <ul>
+      <li>A GitHub account.</li>
+      <li>A <strong>Congress.gov API key</strong> &mdash; free, instant signup. <a href="https://api.congress.gov/sign-up/">api.congress.gov/sign-up/</a>. Default rate limit is 5000 requests per hour, which is more than enough for the daily fetch and the historical backfill combined.</li>
+      <li>A <strong>HUD USER token</strong> &mdash; free, but manual approval can take a day. <a href="https://www.huduser.gov/portal/dataset/uspszip-api.html">huduser.gov/portal/dataset/uspszip-api.html</a>. This powers the ZIP&rarr;district lookup; the workflow only runs quarterly, so the low rate budget is fine.</li>
+    </ul>
+
+    <h2>Steps</h2>
+    <ol>
+      <li>
+        <strong>Fork the repo.</strong>
+        <a href="https://github.com/nukeforum/bill-summarizer/fork"><code>nukeforum/bill-summarizer</code></a>. Public is fine &mdash; every byte the pipeline produces is already public.
+      </li>
+      <li>
+        <strong>Add your secrets.</strong> In your fork, go to <em>Settings &rarr; Secrets and variables &rarr; Actions &rarr; New repository secret</em>. Add two secrets:
+        <pre><code>CONGRESS_API_KEY = &lt;your Congress.gov key&gt;
+HUD_API_TOKEN    = &lt;your HUD token&gt;</code></pre>
+      </li>
+      <li>
+        <strong>Enable GitHub Pages.</strong> <em>Settings &rarr; Pages &rarr; Build and deployment &rarr; Source: Deploy from a branch</em>. Pick <code>main</code> branch and <code>/docs</code> folder. Save. GitHub provisions <code>https://&lt;your-user&gt;.github.io/bill-summarizer/</code> within a minute or two.
+      </li>
+      <li>
+        <strong>Enable Actions.</strong> Go to the <em>Actions</em> tab and click the green "I understand my workflows, go ahead and enable them" button. (GitHub disables workflows on forks by default.)
+      </li>
+      <li>
+        <strong>Trigger an initial run.</strong> <em>Actions &rarr; "Update bills" &rarr; Run workflow &rarr; Run workflow</em>. After ~3 minutes the workflow commits the day's data, GitHub Pages rebuilds, and your manifest is live at <code>https://&lt;your-user&gt;.github.io/bill-summarizer/data/congresses.json</code>.
+      </li>
+    </ol>
+
+    <h2>What runs and when</h2>
+    <table>
+      <thead>
+        <tr><th>Workflow</th><th>Cadence</th><th>What it produces</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>update-bills.yml</code></td><td>Daily, 06:00 UTC</td><td>The 60-day rolling window of passage-action bills for the current Congress.</td></tr>
+        <tr><td><code>backfill-bills.yml</code></td><td>Daily, 12:00 UTC</td><td>One chunk of historical bills per run (1000 candidates). Walks every Congress from the 93rd onward and resumes from a persisted cursor.</td></tr>
+        <tr><td><code>update-session-calendar.yml</code></td><td>Daily</td><td>House and Senate session days derived from the USHOR voting-days ICS and the Senate session XML.</td></tr>
+        <tr><td><code>update-members.yml</code></td><td>Weekly, Sundays 03:00 UTC</td><td>Current-Congress member roster (phase 1) and per-member sponsored/cosponsored legislation (phase 2).</td></tr>
+        <tr><td><code>update-zip-crosswalk.yml</code></td><td>Quarterly</td><td>Bundled HUD USPS ZIP&rarr;Congressional-district lookup table.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Pointing the Android app at your pipeline</h2>
+    <p>Today this requires a code change: the <code>BillsApi</code> base URL is hardcoded to <code>nukeforum.github.io/bill-summarizer/</code>. To run the app against your fork, you'll need to override that URL for a debug build and rebuild from source. A proper environment-driven override is an open TODO &mdash; track it on the <a href="https://github.com/nukeforum/bill-summarizer/issues">issue tracker</a>. For now, see the <a href="https://github.com/nukeforum/bill-summarizer#building">README's Building section</a> for how to produce a local debug APK.</p>
+
+    <h2>Going deeper</h2>
+    <ul>
+      <li><a href="https://github.com/nukeforum/bill-summarizer#readme">Full README</a> &mdash; engineering setup, modularization, the strict toolchain.</li>
+      <li><a href="https://github.com/nukeforum/bill-summarizer/tree/main/data-pipeline">data-pipeline/</a> &mdash; the Python scripts behind every workflow.</li>
+      <li><a href="pipeline.html">pipeline.html</a> &mdash; live freshness of <em>this</em> deployment, for reference.</li>
+    </ul>
+
+    <footer>
+      <p>Apache-2.0 licensed. <a href="./">Back to Informed Citizen</a> &middot; <a href="privacy.html">Privacy policy</a>.</p>
+    </footer>
+  </main>
+</body>
+</html>
