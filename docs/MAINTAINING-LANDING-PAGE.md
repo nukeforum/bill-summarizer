@@ -1,10 +1,17 @@
-# Maintaining the docs site
+# Maintaining the landing page
 
-Notes for whoever (often: a future Claude session) needs to touch
-`docs/index.html`, `docs/run-your-own.html`, or the assets under
-`docs/images/`. The pipeline-status dashboard (`docs/pipeline.html`)
-and privacy page (`docs/privacy.html`) predate this redesign and use
-their own minimal CSS — they're out of scope for this guide.
+Notes for whoever (often: a future Claude session) needs to touch the
+two pages this guide covers — `docs/index.html` (the landing page) and
+`docs/run-your-own.html` (the pipeline walkthrough) — or the assets
+under `docs/images/`.
+
+**Out of scope on purpose.** The pipeline-status dashboard
+(`docs/pipeline.html`) and the privacy policy (`docs/privacy.html`)
+predate the 2026-05-13 redesign and use their own minimal CSS. Don't
+apply conventions from this file to them; they have their own. This
+guide is also not a substitute for repo-wide rules in the root
+`CLAUDE.md` or the global `~/.claude/CLAUDE.md` — those still apply on
+top of everything here.
 
 ## What lives where
 
@@ -17,9 +24,12 @@ docs/
 ├── images/
 │   ├── icon.svg            # Site logo — hand-translated from the Android drawables
 │   ├── billslist.png       # Hero screenshot
-│   └── settings.png        # "Yours to tune" feature screenshot
+│   ├── billdetail.png      # "Read a bill" feature row
+│   ├── calendar.png        # "Is Congress in session?" feature row
+│   ├── reps.png            # "Who represents you?" feature row
+│   └── settings.png        # "Yours to tune" feature row (uses .screenshot-crop)
 ├── data/                   # JSON feed — written by GitHub Actions, do not edit by hand
-└── MAINTAINING.md          # This file
+└── MAINTAINING-LANDING-PAGE.md  # This file
 ```
 
 The original spec and plan are gitignored under
@@ -118,24 +128,75 @@ If you genuinely can't balance, consider switching to a 3-column grid
 on desktop or letting one row sit asymmetric for a clear reason.
 Don't add masonry — browser support is still spotty.
 
+### Features section has two layouts
+
+The features grid is a 2-column desktop layout, but a feature with the
+class `feature-with-shot` uses `grid-column: 1 / -1` to span both
+columns. That cell then internally lays out as text-left | image-right
+on desktop (`1fr auto`) and stacks on mobile.
+
+In practice:
+
+- **Plain `.feature`** — text-only cell. Lives in a 2-col row. Pair two
+  of these for a "quick orientation" row.
+- **`.feature feature-with-shot`** — a wide row of text + screenshot.
+  Each takes a full row.
+
+Today the section has one paired text-only row (Browse + Hand it to an
+AI) followed by four `feature-with-shot` rows (Read a bill, Calendar,
+Reps, Yours to tune). If you add a new feature with a screenshot,
+follow the `feature-with-shot` pattern; the `<img>` is a direct child
+of the feature, sized via `.feature-with-shot > img { max-height:
+420px; }`.
+
+If you add a new text-only feature, pair it with another text-only one
+in the same row so neither cell sits alone with empty space next to a
+spanning row.
+
+### Screenshot crop modifier
+
+`.screenshot-crop` is a generic crop class that pairs `aspect-ratio`,
+`object-fit: cover`, and `object-position` to slice a portion of a
+9:20-ish phone screenshot. Today it's calibrated for `settings.png`
+specifically (aspect 9/10 + object-position `center 28%`), which lands
+the visible window on Theme + Crash reporting and skips the top ~14%
+of the source image (status bar + Settings nav). If you change the
+settings screenshot or apply `.screenshot-crop` to a different image,
+re-tune both values: `aspect-ratio` controls how much of the image is
+visible vertically, `object-position` shifts which slice. There's a
+useful derivation in the redesign spec, but the practical workflow is
+to iterate visually in the browser.
+
+The other feature screenshots (`billdetail.png`, `calendar.png`,
+`reps.png`) render uncropped at natural 9:20 phone aspect, capped at
+`max-height: 420px`. They don't need cropping because their content
+fills the screen top-to-bottom with negligible chrome.
+
 ## Routine maintenance tasks
 
 ### Refreshing screenshots
 
-The user keeps fresh Play-Store-quality screenshots in
-`play-listing/screenshots/` (in the repo, gitignored as part of
-`.gitignore`'s play-listing rules — confirm). When the app's UI
-changes:
+The user keeps fresh Play-Store-quality captures in
+`play-listing/screenshots/`. When the app UI changes, copy the
+relevant captures into `docs/images/` under the stable names the HTML
+expects:
 
 ```bash
-cp play-listing/screenshots/<latest-billslist>.png docs/images/billslist.png
-cp play-listing/screenshots/<latest-settings>.png docs/images/settings.png
+cp play-listing/screenshots/<latest-bills-list>.png   docs/images/billslist.png
+cp play-listing/screenshots/<latest-bill-detail>.png  docs/images/billdetail.png
+cp play-listing/screenshots/<latest-calendar>.png     docs/images/calendar.png
+cp play-listing/screenshots/<latest-reps-list>.png    docs/images/reps.png
+cp play-listing/screenshots/<latest-settings>.png     docs/images/settings.png
 ```
 
-The Settings screenshot crops via CSS to `aspect-ratio: 9 / 7`
-(`object-position: top center`). The crop is calibrated to show the
-Theme picker — if the Settings screen's top section changes
-substantially, the crop may need adjustment.
+After replacing `settings.png`, re-check the `.screenshot-crop`
+parameters (see "Screenshot crop modifier" above) — the crop is
+calibrated to the current Settings layout (Theme + Crash reporting)
+and may need re-tuning if the screen reorganizes.
+
+For the other screenshots, no cropping is applied and re-checking
+isn't required unless the new capture has substantially different
+chrome (e.g., a redesigned top app bar).
 
 ### Refreshing the icon
 
