@@ -18,5 +18,5 @@ data class Member(
     val address: String? = null,
     val phone: String? = null,
     @SerialName("contact_form") val contactForm: String? = null,
-    val website: String? = null,
+    @SerialName("website") val website: String? = null,
 )

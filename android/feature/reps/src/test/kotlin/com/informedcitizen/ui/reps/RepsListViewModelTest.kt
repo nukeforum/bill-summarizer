@@ -147,4 +147,17 @@ class RepsListViewModelTest {
         val err = vm.uiState.first { it is RepsListUiState.Error } as RepsListUiState.Error
         assertTrue("error message contains boom", err.message.contains("boom"))
     }
+
+    @Test
+    fun `markWebsiteFallbackDialogSeen flips StateFlow`() = runTest {
+        val contactPrefs = RepsContactPreferenceRepository(InMemoryPreferencesDataStore())
+        val vm = RepsListViewModel(
+            savedReps = newPrefsRepo(),
+            members = StubMemberRepository(),
+            contactPrefs = contactPrefs,
+        ).also { it.congressProvider = { 119 } }
+        assertEquals(false, vm.hasSeenWebsiteFallbackDialog.first())
+        vm.markWebsiteFallbackDialogSeen()
+        assertEquals(true, vm.hasSeenWebsiteFallbackDialog.first())
+    }
 }

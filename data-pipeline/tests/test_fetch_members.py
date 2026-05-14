@@ -182,6 +182,13 @@ def test_main_handles_empty_legislation(tmp_path, monkeypatch):
     sponsored = json.loads((tmp_path / "members" / "Z999999_sponsored.json").read_text())
     assert sponsored["bills"] == []
 
+    manifest_path = _common.members_index_path(119)
+    index = json.loads(manifest_path.read_text())
+    assert "contact_form" in index["members"][0]
+    assert "website" in index["members"][0]
+    assert index["members"][0]["contact_form"] is None
+    assert index["members"][0]["website"] is None
+
 
 def test_main_no_api_key_returns_2(monkeypatch):
     monkeypatch.delenv("CONGRESS_API_KEY", raising=False)

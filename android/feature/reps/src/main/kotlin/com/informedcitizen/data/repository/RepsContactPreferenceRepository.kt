@@ -10,6 +10,9 @@ import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 import javax.inject.Singleton
 
+private val KEY_SEEN_WEBSITE_FALLBACK_DIALOG =
+    booleanPreferencesKey("seen_website_fallback_dialog")
+
 @Singleton
 class RepsContactPreferenceRepository @Inject constructor(
     private val dataStore: DataStore<Preferences>,
@@ -20,10 +23,5 @@ class RepsContactPreferenceRepository @Inject constructor(
 
     suspend fun markWebsiteFallbackDialogSeen() {
         dataStore.edit { it[KEY_SEEN_WEBSITE_FALLBACK_DIALOG] = true }
-    }
-
-    private companion object {
-        val KEY_SEEN_WEBSITE_FALLBACK_DIALOG =
-            booleanPreferencesKey("seen_website_fallback_dialog")
     }
 }

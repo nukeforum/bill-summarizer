@@ -28,7 +28,7 @@ class MemberDetailViewModel @Inject constructor(
 
     val hasSeenWebsiteFallbackDialog: StateFlow<Boolean> = contactPrefs
         .hasSeenWebsiteFallbackDialog
-        .stateIn(viewModelScope, SharingStarted.Eagerly, false)
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), false)
 
     internal var congressProvider: () -> Int = { computeCurrentCongress() }
 

@@ -135,6 +135,19 @@ class MemberDetailViewModelTest {
     }
 
     @Test
+    fun `markWebsiteFallbackDialogSeen flips StateFlow`() = runTest {
+        val contactPrefs = RepsContactPreferenceRepository(InMemoryPreferencesDataStore())
+        val vm = MemberDetailViewModel(
+            members = DetailStubMemberRepository(),
+            bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter()),
+            contactPrefs = contactPrefs,
+        ).also { it.congressProvider = { 119 } }
+        assertEquals(false, vm.hasSeenWebsiteFallbackDialog.first())
+        vm.markWebsiteFallbackDialogSeen()
+        assertEquals(true, vm.hasSeenWebsiteFallbackDialog.first())
+    }
+
+    @Test
     fun `isInLocalCache reflects bill repository`() = runTest {
         val members = DetailStubMemberRepository(
             memberById = mapOf("A1" to aMember("A1")),

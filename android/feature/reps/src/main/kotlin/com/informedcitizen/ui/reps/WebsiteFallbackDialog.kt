@@ -22,6 +22,9 @@ internal fun WebsiteFallbackDialog(
         confirmButton = {
             TextButton(onClick = onConfirm) { Text("Ok") }
         },
+        dismissButton = {
+            TextButton(onClick = onDismiss) { Text("Cancel") }
+        },
         title = { Text("No direct contact form") },
         text = {
             Text(

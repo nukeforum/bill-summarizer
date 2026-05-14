@@ -31,7 +31,7 @@ class RepsListViewModel @Inject constructor(
 
     val hasSeenWebsiteFallbackDialog: StateFlow<Boolean> = contactPrefs
         .hasSeenWebsiteFallbackDialog
-        .stateIn(viewModelScope, SharingStarted.Eagerly, false)
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), false)
 
     // Allow tests to inject a deterministic congress.
     internal var congressProvider: () -> Int = ::computeCurrentCongress
