@@ -123,6 +123,71 @@
       font-size: 0.85rem;
     }
     footer p { margin: 0.3rem 0; }
+
+    /* Hero */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      align-items: center;
+      margin-top: 1rem;
+      padding-top: 1.5rem;
+    }
+    @media (min-width: 720px) {
+      .hero {
+        grid-template-columns: 1.2fr 1fr;
+        gap: 2.5rem;
+      }
+    }
+    .tagline {
+      color: var(--fg-muted);
+      font-size: 1.05rem;
+      margin: 0 0 1.4rem 0;
+    }
+    .cta-row {
+      display: flex;
+      gap: 0.7rem;
+      flex-wrap: wrap;
+    }
+    .cta {
+      display: inline-block;
+      padding: 0.7rem 1.1rem;
+      border-radius: 0.4rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .cta-primary {
+      background: var(--accent);
+      color: var(--accent-on);
+    }
+    .cta-secondary {
+      background: transparent;
+      color: var(--accent);
+      border: 1.5px solid var(--accent);
+    }
+    .hero-shot {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Screenshots */
+    .screenshot {
+      max-width: 100%;
+      display: block;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.18), 0 4px 10px rgba(0,0,0,0.10);
+    }
+    .screenshot.screenshot-crop {
+      aspect-ratio: 9 / 7;
+      object-fit: cover;
+      object-position: top center;
+      width: 100%;
+    }
+    .hero-shot .screenshot {
+      max-height: 420px;
+      width: auto;
+    }
   </style>
 </head>
 <body>
@@ -139,7 +204,21 @@
   </header>
 
   <main>
-    <!-- Hero, Mission, Commitments, Features, Install, Run-your-own, Operations, Data feed will be added in Tasks 3-7. -->
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>Informed Citizen</h1>
+        <p class="tagline">A free, open-source app that shows you what your Congress is actually doing — which bills moved this week, when the House and Senate are next in session, and who represents you. Plus a one-tap handoff to ChatGPT, Claude, or Gemini when you want a bill explained in plain English.</p>
+        <div class="cta-row">
+          <a class="cta cta-primary" href="#install">Install</a>
+          <a class="cta cta-secondary" href="https://github.com/nukeforum/bill-summarizer">Fork the project</a>
+        </div>
+      </div>
+      <div class="hero-shot">
+        <img src="images/billslist.png" alt="Recently Voted On bills list" class="screenshot" />
+      </div>
+    </section>
+
+    <!-- Mission, Commitments, Features, Install, Run-your-own, Operations, Data feed will be added in Tasks 4-7. -->
 
     <footer>
       <p>Data pipeline runs from <code>.github/workflows/</code>: bills daily, session calendar daily, members weekly, ZIP→district quarterly.</p>
