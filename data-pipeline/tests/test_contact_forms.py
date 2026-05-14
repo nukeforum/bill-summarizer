@@ -53,8 +53,13 @@ def test_parse_returns_website_only_when_contact_form_missing_everywhere():
     }
 
 
-def test_parse_falls_back_through_terms_independently_per_field():
-    """contact_form on an earlier term + url on the latest term — both surface."""
+def test_parse_does_not_reverse_walk_for_contact_form():
+    """Prior-term contact_form is ignored; only the current term contributes.
+
+    Investigation 2026-05-13 showed prior-term contact_form URLs are
+    broken 61% of the time (404 / DNS NXDOMAIN). Reps without a
+    current-term form route through the website-fallback UI instead.
+    """
     yaml_text = textwrap.dedent("""
         - id:
             bioguide: D000004
@@ -68,8 +73,29 @@ def test_parse_falls_back_through_terms_independently_per_field():
     out = parse_contact_info_yaml(yaml_text)
     assert out == {
         "D000004": {
-            "contact_form": "https://d.house.gov/contact",
+            "contact_form": None,
             "website": "https://www.d.senate.gov",
+        },
+    }
+
+
+def test_parse_website_still_reverse_walks_when_current_term_omits_it():
+    """Homepage URLs are stable enough that the fallback is still useful."""
+    yaml_text = textwrap.dedent("""
+        - id:
+            bioguide: H000001
+          terms:
+            - type: rep
+              url: https://old.h.house.gov
+              contact_form: https://old.h.house.gov/contact
+            - type: sen
+              contact_form: https://www.h.senate.gov/contact
+    """)
+    out = parse_contact_info_yaml(yaml_text)
+    assert out == {
+        "H000001": {
+            "contact_form": "https://www.h.senate.gov/contact",
+            "website": "https://old.h.house.gov",
         },
     }
 

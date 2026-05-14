@@ -718,16 +718,26 @@ def parse_contact_info_yaml(text: str) -> dict[str, dict[str, str | None]]:
     The upstream YAML (https://github.com/unitedstates/congress-legislators)
     is a list of legislator entries. Each entry has an ``id.bioguide`` key
     and a ``terms`` list; ``contact_form`` and ``url`` (the homepage) live
-    on individual terms. We walk terms in reverse and pick the most recent
-    non-empty value for each field independently — they sometimes live on
-    different terms (e.g. a rep who carried a contact_form in a prior term
-    but only kept the homepage on the current one).
+    on individual terms.
 
-    Coverage in production (verified 2026-05-13): all 536 current
-    legislators have a ``url`` (homepage); only ~224 of 536 carry a
-    ``contact_form``. The website field is the fallback that lets the
-    Android UI render a contact entry-point for every rep, with a
-    different icon + caption when the direct form is missing.
+    ``contact_form`` is read from the **current (last) term only**.
+    ``url`` (homepage) walks terms in reverse and picks the most recent
+    non-empty value, because homepages are stable enough that an older
+    term's URL is still useful when the current term hasn't been populated.
+
+    Why the asymmetry: a 2026-05-13 investigation found that of 135
+    legislators whose ``contact_form`` came from a prior term, 61%
+    returned 404, NXDOMAIN, or 403/410 — congressional offices routinely
+    rotate form URLs across terms (and decommission entire
+    ``<name>forms.house.gov`` subdomains), so a stale form URL is far
+    more likely to be dead than a stale homepage. Reps without a
+    current-term ``contact_form`` route through the website-fallback UI
+    in the Android client, which has 100% coverage.
+
+    Coverage in production (verified 2026-05-13 against the live YAML):
+    all 536 current legislators have a ``url``; ~89 of 536 carry a
+    current-term ``contact_form``. The website field is the fallback
+    that lets the UI render a contact entry-point for every rep.
     """
     data = yaml.safe_load(text) or []
     out: dict[str, dict[str, str | None]] = {}
@@ -739,20 +749,15 @@ def parse_contact_info_yaml(text: str) -> dict[str, dict[str, str | None]]:
         if not bioguide:
             continue
         terms = entry.get("terms") or []
-        contact_form: str | None = None
+        current_term = terms[-1] if terms and isinstance(terms[-1], dict) else {}
+        contact_form: str | None = current_term.get("contact_form") or None
         website: str | None = None
         for term in reversed(terms):
             if not isinstance(term, dict):
                 continue
-            if contact_form is None:
-                cf = term.get("contact_form")
-                if cf:
-                    contact_form = cf
-            if website is None:
-                w = term.get("url")
-                if w:
-                    website = w
-            if contact_form is not None and website is not None:
+            w = term.get("url")
+            if w:
+                website = w
                 break
         out[bioguide] = {"contact_form": contact_form, "website": website}
     return out
