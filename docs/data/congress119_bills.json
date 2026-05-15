@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-14T14:29:03Z",
+  "generated_at": "2026-05-15T08:49:35Z",
   "congress": 119,
   "bills": [
     {
@@ -25,6 +25,534 @@
       "text_url_xml": "https://www.congress.gov/119/bills/hr8469/BILLS-119hr8469rh.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/hr8469/BILLS-119hr8469rh.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/8469"
+    },
+    {
+      "id": "sres711-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "711",
+      "title": "A resolution expressing support for the designation of May 2026 as \"National Beef Month\" to recognize the important role cattle play in the United States, and to consumers.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Ricketts, Pete",
+        "party": "R",
+        "state": "NE"
+      },
+      "introduced_date": "2026-04-30",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres711/BILLS-119sres711ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres711/BILLS-119sres711ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres711/BILLS-119sres711ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/711"
+    },
+    {
+      "id": "sjres145-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "145",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"Fair Credit Reporting; Permissible Purposes for Furnishing, Using, and Obtaining Consumer Reports\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wyden, Ron",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2026-03-25",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Voice Vote. (consideration: CR S2266-2267)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres145/BILLS-119sjres145pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres145/BILLS-119sjres145pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres145/BILLS-119sjres145pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/145"
+    },
+    {
+      "id": "sjres130-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "130",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to withdrawal of the rule relating to \"Consumer Financial Protection Circular 2024-05: Improper Overdraft Opt-In Practices\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Van Hollen, Chris",
+        "party": "D",
+        "state": "MD"
+      },
+      "introduced_date": "2026-03-18",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 53. Record Vote Number: 123. (consideration: CR S2265-2266)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres130/BILLS-119sjres130pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres130/BILLS-119sjres130pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres130/BILLS-119sjres130pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/130"
+    },
+    {
+      "id": "sjres149-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "149",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"Truth in Lending (Regulation Z); Consumer Protections for Home Sales Financed Under Contracts for Deed\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Schumer, Charles E.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2026-03-26",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Voice Vote. (consideration: CR S2267)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres149/BILLS-119sjres149pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres149/BILLS-119sjres149pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres149/BILLS-119sjres149pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/149"
+    },
+    {
+      "id": "sjres134-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "134",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"Truth in Lending (Regulation Z); Use of Digital User Accounts to Access Buy Now, Pay Later Loans\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Reed, Jack",
+        "party": "D",
+        "state": "RI"
+      },
+      "introduced_date": "2026-03-18",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Voice Vote. (consideration: CR S2272)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres134/BILLS-119sjres134pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres134/BILLS-119sjres134pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres134/BILLS-119sjres134pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/134"
+    },
+    {
+      "id": "sjres135-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "135",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"Consumer Financial Protection Circular 2024-04: Whistleblower Protections Under CFPA Section 1057\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Warner, Mark R.",
+        "party": "D",
+        "state": "VA"
+      },
+      "introduced_date": "2026-03-19",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Voice Vote. (consideration: CR S2272)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres135/BILLS-119sjres135pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres135/BILLS-119sjres135pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres135/BILLS-119sjres135pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/135"
+    },
+    {
+      "id": "sjres147-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "147",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"Statement of Policy Regarding Prohibition on Abusive Acts or Practices\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Durbin, Richard J.",
+        "party": "D",
+        "state": "IL"
+      },
+      "introduced_date": "2026-03-25",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Voice Vote. (consideration: CR S2271-2272)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres147/BILLS-119sjres147pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres147/BILLS-119sjres147pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres147/BILLS-119sjres147pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/147"
+    },
+    {
+      "id": "sjres129-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "129",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"The Fair Credit Reporting Act's Limited Preemption of State Laws\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cortez Masto, Catherine",
+        "party": "D",
+        "state": "NV"
+      },
+      "introduced_date": "2026-03-17",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Voice Vote. (consideration: CR S2271)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres129/BILLS-119sjres129pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres129/BILLS-119sjres129pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres129/BILLS-119sjres129pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/129"
+    },
+    {
+      "id": "sjres154-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "154",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"Equal Credit Opportunity (Regulation B); Revocations or Unfavorable Changes to the Terms of Existing Credit Arrangements\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Booker, Cory A.",
+        "party": "D",
+        "state": "NJ"
+      },
+      "introduced_date": "2026-03-26",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Voice Vote. (consideration: CR S2270)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres154/BILLS-119sjres154pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres154/BILLS-119sjres154pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres154/BILLS-119sjres154pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/154"
+    },
+    {
+      "id": "sjres128-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "128",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"Consumer Financial Protection Circular 2024-03: Unlawful and Unenforceable Contract Terms and Conditions\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cortez Masto, Catherine",
+        "party": "D",
+        "state": "NV"
+      },
+      "introduced_date": "2026-03-17",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Voice Vote. (consideration: CR S2270-2271)"
+      },
+      "outcome": "failed",
+      "summary_crs": "<p>This joint resolution reinstates the Consumer Financial Protection Bureau’s (CFPB’s) guidance on unlawful and unenforceable contract terms published in a June 2024 circular. The circular states that consumer financial service providers that include unlawful or unenforceable terms in contracts with consumers (such as a contract that contains an unlawful waiver of the consumer’s right to sue) may be in violation of the Consumer Financial Protection Act's ban on deceptive acts or practices.</p><p>The&nbsp;CFPB withdrew this circular on May 12, 2025. This joint resolution disapproves of the rule that withdraws this circular.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sjres128/BILLS-119sjres128pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres128/BILLS-119sjres128pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres128/BILLS-119sjres128pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/128"
+    },
+    {
+      "id": "sjres156-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "156",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"Truth in Lending (Regulation Z); Consumer Credit Offered to Borrowers in Advance of Expected Receipt of Compensation for Work\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Merkley, Jeff",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2026-03-26",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Voice Vote. (consideration: CR S2270)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres156/BILLS-119sjres156pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres156/BILLS-119sjres156pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres156/BILLS-119sjres156pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/156"
+    },
+    {
+      "id": "sjres131-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "131",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"Consumer Financial Protection Circular 2024-02: Deceptive Marketing Practices About the Speed or Cost of Sending a Remittance Transfer\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Gallego, Ruben",
+        "party": "D",
+        "state": "AZ"
+      },
+      "introduced_date": "2026-03-18",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Voice Vote. (consideration: CR S2269-2270)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres131/BILLS-119sjres131pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres131/BILLS-119sjres131pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres131/BILLS-119sjres131pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/131"
+    },
+    {
+      "id": "sjres155-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "155",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to \"Fair Credit Reporting Act; Preemption of State Laws\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Whitehouse, Sheldon",
+        "party": "D",
+        "state": "RI"
+      },
+      "introduced_date": "2026-03-26",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Voice Vote. (consideration: CR S2268-2269)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres155/BILLS-119sjres155pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres155/BILLS-119sjres155pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres155/BILLS-119sjres155pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/155"
+    },
+    {
+      "id": "sjres125-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "125",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"Debt Collection Practices (Regulation F); Pay-to-Pay Fees\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Alsobrooks, Angela D.",
+        "party": "D",
+        "state": "MD"
+      },
+      "introduced_date": "2026-03-17",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Voice Vote. (consideration: CR S2269)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres125/BILLS-119sjres125pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres125/BILLS-119sjres125pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres125/BILLS-119sjres125pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/125"
+    },
+    {
+      "id": "sjres126-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "126",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"Fair Debt Collection Practices Act (Regulation F); Time-Barred Debt\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kim, Andy",
+        "party": "D",
+        "state": "NJ"
+      },
+      "introduced_date": "2026-03-17",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Voice Vote. (consideration: CR S2269)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres126/BILLS-119sjres126pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres126/BILLS-119sjres126pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres126/BILLS-119sjres126pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/126"
+    },
+    {
+      "id": "sjres127-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "127",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"Fair Credit Reporting; File Disclosure\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kim, Andy",
+        "party": "D",
+        "state": "NJ"
+      },
+      "introduced_date": "2026-03-17",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Voice Vote. (consideration: CR S2268)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres127/BILLS-119sjres127pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres127/BILLS-119sjres127pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres127/BILLS-119sjres127pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/127"
+    },
+    {
+      "id": "sjres150-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "150",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"Limited Applicability of Consumer Financial Protection Act's 'Time or Space' Exception With Respect to Digital Marketing Providers\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blumenthal, Richard",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2026-03-26",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Voice Vote. (consideration: CR S2268)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres150/BILLS-119sjres150pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres150/BILLS-119sjres150pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres150/BILLS-119sjres150pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/150"
+    },
+    {
+      "id": "sjres140-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "140",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of  title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"Fair Credit Reporting; Name-Only Matching Procedures\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Warnock, Raphael G.",
+        "party": "D",
+        "state": "GA"
+      },
+      "introduced_date": "2026-03-19",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Voice Vote. (consideration: CR S2267)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres140/BILLS-119sjres140pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres140/BILLS-119sjres140pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres140/BILLS-119sjres140pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/140"
+    },
+    {
+      "id": "sjres132-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "132",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"Examinations for Risks to Active-Duty Servicemembers and Their Covered Dependents\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Reed, Jack",
+        "party": "D",
+        "state": "RI"
+      },
+      "introduced_date": "2026-03-18",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 52. Record Vote Number: 121. (consideration: CR S2264-2265)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres132/BILLS-119sjres132pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres132/BILLS-119sjres132pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres132/BILLS-119sjres132pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/132"
+    },
+    {
+      "id": "sjres133-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "133",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"Fair Credit Reporting; Background Screening\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blunt Rochester, Lisa",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2026-03-18",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Voice Vote. (consideration: CR S2266)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres133/BILLS-119sjres133pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres133/BILLS-119sjres133pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres133/BILLS-119sjres133pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/133"
+    },
+    {
+      "id": "sjres141-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "141",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by Bureau of Consumer Financial Protection relating to the withdrawal of the rule relating to \"Debt Collection Practices (Regulation F); Deceptive and Unfair Collection of Medical Debt\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Warnock, Raphael G.",
+        "party": "D",
+        "state": "GA"
+      },
+      "introduced_date": "2026-03-19",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 50 - 50. Record Vote Number: 122. (consideration: CR S2265)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres141/BILLS-119sjres141pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres141/BILLS-119sjres141pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres141/BILLS-119sjres141pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/141"
+    },
+    {
+      "id": "sjres163-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "163",
+      "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Islamic Republic of Iran that have not been authorized by Congress.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Merkley, Jeff",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2026-04-13",
+      "latest_action": {
+        "date": "2026-05-13",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 49 - 50. Record Vote Number: 118. (consideration: CR S2250-2255)"
+      },
+      "outcome": "failed",
+      "summary_crs": "<p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending against an attack on the United States or its personnel or facilities in other nations.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sjres163/BILLS-119sjres163is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres163/BILLS-119sjres163is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres163/BILLS-119sjres163is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/163"
     },
     {
       "id": "hconres73-119",
