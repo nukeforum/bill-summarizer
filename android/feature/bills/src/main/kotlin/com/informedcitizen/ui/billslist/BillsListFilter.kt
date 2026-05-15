@@ -1,7 +1,7 @@
 package com.informedcitizen.ui.billslist
 
-import com.informedcitizen.data.model.Bill
-import com.informedcitizen.data.model.Outcome
+import com.informedcitizen.pipeline.model.Bill
+import com.informedcitizen.pipeline.model.Outcome
 
 enum class BillsListFilter(val displayName: String) {
     ALL("All"),

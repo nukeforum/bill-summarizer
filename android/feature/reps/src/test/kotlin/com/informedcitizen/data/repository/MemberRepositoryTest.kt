@@ -2,11 +2,11 @@ package com.informedcitizen.data.repository
 
 import com.informedcitizen.crash.FakeCrashReporter
 import com.informedcitizen.data.api.MembersApi
-import com.informedcitizen.data.model.Action
-import com.informedcitizen.data.model.Member
-import com.informedcitizen.data.model.MemberLegislation
-import com.informedcitizen.data.model.MemberLegislationItem
-import com.informedcitizen.data.model.MembersIndex
+import com.informedcitizen.pipeline.model.Action
+import com.informedcitizen.pipeline.model.Member
+import com.informedcitizen.pipeline.model.MemberLegislation
+import com.informedcitizen.pipeline.model.MemberLegislationItem
+import com.informedcitizen.pipeline.model.MembersIndex
 import kotlinx.coroutines.test.runTest
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.ResponseBody.Companion.toResponseBody

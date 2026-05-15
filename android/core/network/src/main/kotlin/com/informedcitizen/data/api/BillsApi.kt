@@ -1,8 +1,8 @@
 package com.informedcitizen.data.api
 
-import com.informedcitizen.data.model.BillsManifest
-import com.informedcitizen.data.model.CongressesIndex
-import com.informedcitizen.data.model.SessionCalendar
+import com.informedcitizen.pipeline.model.BillsManifest
+import com.informedcitizen.pipeline.model.CongressesIndex
+import com.informedcitizen.pipeline.model.SessionCalendar
 import retrofit2.http.GET
 import retrofit2.http.Url
 

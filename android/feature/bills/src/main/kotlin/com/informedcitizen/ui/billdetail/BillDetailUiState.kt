@@ -1,6 +1,6 @@
 package com.informedcitizen.ui.billdetail
 
-import com.informedcitizen.data.model.Bill
+import com.informedcitizen.pipeline.model.Bill
 
 sealed interface BillDetailUiState {
     data object Loading : BillDetailUiState

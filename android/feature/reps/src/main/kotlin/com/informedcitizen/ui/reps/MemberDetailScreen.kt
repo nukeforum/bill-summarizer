@@ -30,7 +30,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.informedcitizen.data.model.MemberLegislationItem
+import com.informedcitizen.pipeline.model.MemberLegislationItem
 import com.informedcitizen.data.util.congressGovUrlFor
 import com.informedcitizen.ui.components.MemberCard
 import com.informedcitizen.ui.components.MemberLegislationRow

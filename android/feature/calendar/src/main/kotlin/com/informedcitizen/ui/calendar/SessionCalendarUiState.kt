@@ -1,6 +1,6 @@
 package com.informedcitizen.ui.calendar
 
-import com.informedcitizen.data.model.SessionCalendar
+import com.informedcitizen.pipeline.model.SessionCalendar
 
 sealed interface SessionCalendarUiState {
     data object Loading : SessionCalendarUiState

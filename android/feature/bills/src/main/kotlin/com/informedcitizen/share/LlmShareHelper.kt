@@ -7,7 +7,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.widget.Toast
-import com.informedcitizen.data.model.Bill
+import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.ui.util.displayName
 import com.informedcitizen.ui.util.formatBillRef
 import com.informedcitizen.ui.util.openInCustomTab

@@ -2,7 +2,7 @@ package com.informedcitizen.ui.reps
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.informedcitizen.data.model.MembersIndex
+import com.informedcitizen.pipeline.model.MembersIndex
 import com.informedcitizen.data.repository.MemberRepository
 import com.informedcitizen.data.repository.SavedRepsRepository
 import com.informedcitizen.data.zipcrosswalk.ZipDistrictLookup

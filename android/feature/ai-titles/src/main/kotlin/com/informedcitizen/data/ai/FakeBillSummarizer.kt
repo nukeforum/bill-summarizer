@@ -1,6 +1,6 @@
 package com.informedcitizen.data.ai
 
-import com.informedcitizen.data.model.Bill
+import com.informedcitizen.pipeline.model.Bill
 
 class FakeBillSummarizer(
     private val forcedFailures: Map<String, String> = emptyMap(),

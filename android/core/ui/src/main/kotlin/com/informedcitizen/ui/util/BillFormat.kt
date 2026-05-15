@@ -1,6 +1,6 @@
 package com.informedcitizen.ui.util
 
-import com.informedcitizen.data.model.Outcome
+import com.informedcitizen.pipeline.model.Outcome
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.DateTimeParseException

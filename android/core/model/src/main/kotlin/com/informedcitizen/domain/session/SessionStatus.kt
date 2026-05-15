@@ -1,6 +1,6 @@
 package com.informedcitizen.domain.session
 
-import com.informedcitizen.data.model.SessionCalendar
+import com.informedcitizen.pipeline.model.SessionCalendar
 import java.time.LocalDate
 
 enum class Chamber(val key: String) {

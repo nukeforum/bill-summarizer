@@ -1,8 +1,8 @@
 package com.informedcitizen.ui.reps
 
-import com.informedcitizen.data.model.Member
-import com.informedcitizen.data.model.MemberLegislation
-import com.informedcitizen.data.model.MembersIndex
+import com.informedcitizen.pipeline.model.Member
+import com.informedcitizen.pipeline.model.MemberLegislation
+import com.informedcitizen.pipeline.model.MembersIndex
 import com.informedcitizen.data.repository.MemberRepository
 import com.informedcitizen.data.repository.RepsContactPreferenceRepository
 import com.informedcitizen.data.repository.RepsForLocation

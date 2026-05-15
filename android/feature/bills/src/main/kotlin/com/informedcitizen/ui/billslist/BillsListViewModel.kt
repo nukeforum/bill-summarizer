@@ -6,7 +6,7 @@ import com.informedcitizen.data.ai.AiCapability
 import com.informedcitizen.data.ai.BillTopic
 import com.informedcitizen.data.cache.BillSummaryCache
 import com.informedcitizen.data.cache.BillSummaryEntry
-import com.informedcitizen.data.model.Bill
+import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.data.repository.AiTitlesPreferenceRepository
 import com.informedcitizen.data.repository.BillRepository
 import com.informedcitizen.data.repository.SessionCalendarRepository

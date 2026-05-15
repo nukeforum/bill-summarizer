@@ -1,7 +1,7 @@
 package com.informedcitizen.data.work
 
-import com.informedcitizen.data.model.Bill
-import com.informedcitizen.data.model.Outcome
+import com.informedcitizen.pipeline.model.Bill
+import com.informedcitizen.pipeline.model.Outcome
 import java.time.LocalDate
 
 class BillSummarizationPolicy(

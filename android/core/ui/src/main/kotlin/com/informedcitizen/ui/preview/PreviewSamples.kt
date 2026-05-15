@@ -4,15 +4,15 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.informedcitizen.data.model.Action
-import com.informedcitizen.data.model.Bill
-import com.informedcitizen.data.model.ChamberCalendar
-import com.informedcitizen.data.model.Member
-import com.informedcitizen.data.model.MemberLegislationItem
-import com.informedcitizen.data.model.Outcome
-import com.informedcitizen.data.model.SessionCalendar
-import com.informedcitizen.data.model.SessionCalendarSource
-import com.informedcitizen.data.model.Sponsor
+import com.informedcitizen.pipeline.model.Action
+import com.informedcitizen.pipeline.model.Bill
+import com.informedcitizen.pipeline.model.ChamberCalendar
+import com.informedcitizen.pipeline.model.Member
+import com.informedcitizen.pipeline.model.MemberLegislationItem
+import com.informedcitizen.pipeline.model.Outcome
+import com.informedcitizen.pipeline.model.SessionCalendar
+import com.informedcitizen.pipeline.model.SessionCalendarSource
+import com.informedcitizen.pipeline.model.Sponsor
 import com.informedcitizen.theme.InformedCitizenTheme
 import com.informedcitizen.theme.ThemePreference
 

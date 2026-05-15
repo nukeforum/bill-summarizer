@@ -46,7 +46,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.informedcitizen.data.model.SessionCalendar
+import com.informedcitizen.pipeline.model.SessionCalendar
 import com.informedcitizen.domain.session.Chamber
 import com.informedcitizen.domain.session.ChamberStatus
 import com.informedcitizen.domain.session.statusOn

@@ -7,7 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
-import com.informedcitizen.data.model.Outcome
+import com.informedcitizen.pipeline.model.Outcome
 import com.informedcitizen.ui.preview.PreviewWrap
 
 @PreviewLightDark

@@ -45,7 +45,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.informedcitizen.data.model.Bill
+import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.share.LlmShareHelper
 import com.informedcitizen.share.LlmTarget
 import com.informedcitizen.ui.components.OutcomeChip

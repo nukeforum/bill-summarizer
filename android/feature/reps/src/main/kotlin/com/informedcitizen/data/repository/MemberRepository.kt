@@ -1,8 +1,8 @@
 package com.informedcitizen.data.repository
 
-import com.informedcitizen.data.model.Member
-import com.informedcitizen.data.model.MemberLegislation
-import com.informedcitizen.data.model.MembersIndex
+import com.informedcitizen.pipeline.model.Member
+import com.informedcitizen.pipeline.model.MemberLegislation
+import com.informedcitizen.pipeline.model.MembersIndex
 
 data class RepsForLocation(val house: List<Member>, val senators: List<Member>)
 

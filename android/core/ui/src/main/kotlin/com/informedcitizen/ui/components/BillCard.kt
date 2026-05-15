@@ -30,7 +30,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.informedcitizen.data.ai.BillTopic
-import com.informedcitizen.data.model.Bill
+import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.theme.PartyColors
 import com.informedcitizen.ui.util.formatBillRef
 import com.informedcitizen.ui.util.formatDate

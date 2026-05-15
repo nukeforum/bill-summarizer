@@ -6,7 +6,7 @@ import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.longPreferencesKey
 import com.informedcitizen.crash.CrashReporter
 import com.informedcitizen.data.api.BillsApi
-import com.informedcitizen.data.model.Bill
+import com.informedcitizen.pipeline.model.Bill
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

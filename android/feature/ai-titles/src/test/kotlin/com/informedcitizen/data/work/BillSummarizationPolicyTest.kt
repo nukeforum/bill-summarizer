@@ -1,9 +1,9 @@
 package com.informedcitizen.data.work
 
-import com.informedcitizen.data.model.Action
-import com.informedcitizen.data.model.Bill
-import com.informedcitizen.data.model.Outcome
-import com.informedcitizen.data.model.Sponsor
+import com.informedcitizen.pipeline.model.Action
+import com.informedcitizen.pipeline.model.Bill
+import com.informedcitizen.pipeline.model.Outcome
+import com.informedcitizen.pipeline.model.Sponsor
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import java.time.LocalDate

@@ -1,7 +1,7 @@
 package com.informedcitizen.data.api
 
-import com.informedcitizen.data.model.MemberLegislation
-import com.informedcitizen.data.model.MembersIndex
+import com.informedcitizen.pipeline.model.MemberLegislation
+import com.informedcitizen.pipeline.model.MembersIndex
 import retrofit2.http.GET
 import retrofit2.http.Path
 

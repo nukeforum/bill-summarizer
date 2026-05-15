@@ -23,7 +23,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
-import com.informedcitizen.data.model.Member
+import com.informedcitizen.pipeline.model.Member
 import com.informedcitizen.theme.PartyColors
 
 @Composable

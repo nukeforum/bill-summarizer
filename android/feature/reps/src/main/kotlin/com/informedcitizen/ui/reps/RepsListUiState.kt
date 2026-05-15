@@ -1,6 +1,6 @@
 package com.informedcitizen.ui.reps
 
-import com.informedcitizen.data.model.Member
+import com.informedcitizen.pipeline.model.Member
 
 sealed interface RepsListUiState {
     /** Initial state while we resolve saved reps and load members. */

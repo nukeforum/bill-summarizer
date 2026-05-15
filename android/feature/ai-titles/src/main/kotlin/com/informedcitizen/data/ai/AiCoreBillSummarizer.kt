@@ -5,7 +5,7 @@ import android.os.Build
 import com.google.ai.edge.aicore.GenerativeModel
 import com.google.ai.edge.aicore.generationConfig
 import com.informedcitizen.crash.CrashReporter
-import com.informedcitizen.data.model.Bill
+import com.informedcitizen.pipeline.model.Bill
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.withTimeoutOrNull
 import javax.inject.Inject

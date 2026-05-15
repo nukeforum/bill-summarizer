@@ -2,14 +2,14 @@ package com.informedcitizen.data.repository
 
 import com.informedcitizen.crash.FakeCrashReporter
 import com.informedcitizen.data.api.BillsApi
-import com.informedcitizen.data.model.Action
-import com.informedcitizen.data.model.Bill
-import com.informedcitizen.data.model.BillsManifest
-import com.informedcitizen.data.model.CongressEntry
-import com.informedcitizen.data.model.CongressesIndex
-import com.informedcitizen.data.model.Outcome
-import com.informedcitizen.data.model.SessionCalendar
-import com.informedcitizen.data.model.Sponsor
+import com.informedcitizen.pipeline.model.Action
+import com.informedcitizen.pipeline.model.Bill
+import com.informedcitizen.pipeline.model.BillsManifest
+import com.informedcitizen.pipeline.model.CongressEntry
+import com.informedcitizen.pipeline.model.CongressesIndex
+import com.informedcitizen.pipeline.model.Outcome
+import com.informedcitizen.pipeline.model.SessionCalendar
+import com.informedcitizen.pipeline.model.Sponsor
 import com.informedcitizen.testutil.InMemoryPreferencesDataStore
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals

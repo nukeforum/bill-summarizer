@@ -1,7 +1,7 @@
 package com.informedcitizen.ui.billslist
 
 import com.informedcitizen.data.ai.BillTopic
-import com.informedcitizen.data.model.Bill
+import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.ui.components.BillCardSummary
 
 sealed interface BillsListUiState {

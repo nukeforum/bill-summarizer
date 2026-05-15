@@ -2,7 +2,7 @@ package com.informedcitizen.data.repository
 
 import com.informedcitizen.crash.CrashReporter
 import com.informedcitizen.data.api.BillsApi
-import com.informedcitizen.data.model.SessionCalendar
+import com.informedcitizen.pipeline.model.SessionCalendar
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import javax.inject.Inject

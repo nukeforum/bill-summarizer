@@ -1,7 +1,7 @@
 package com.informedcitizen.ui.reps
 
-import com.informedcitizen.data.model.Member
-import com.informedcitizen.data.model.MemberLegislationItem
+import com.informedcitizen.pipeline.model.Member
+import com.informedcitizen.pipeline.model.MemberLegislationItem
 
 data class MemberDetailUiState(
     val isLoading: Boolean = true,

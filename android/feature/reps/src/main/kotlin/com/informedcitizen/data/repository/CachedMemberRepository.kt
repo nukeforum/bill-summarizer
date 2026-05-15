@@ -2,9 +2,9 @@ package com.informedcitizen.data.repository
 
 import com.informedcitizen.crash.CrashReporter
 import com.informedcitizen.data.api.MembersApi
-import com.informedcitizen.data.model.Member
-import com.informedcitizen.data.model.MemberLegislation
-import com.informedcitizen.data.model.MembersIndex
+import com.informedcitizen.pipeline.model.Member
+import com.informedcitizen.pipeline.model.MemberLegislation
+import com.informedcitizen.pipeline.model.MembersIndex
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import retrofit2.HttpException

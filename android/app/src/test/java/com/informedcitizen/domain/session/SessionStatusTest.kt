@@ -1,8 +1,8 @@
 package com.informedcitizen.domain.session
 
-import com.informedcitizen.data.model.ChamberCalendar
-import com.informedcitizen.data.model.SessionCalendar
-import com.informedcitizen.data.model.SessionCalendarSource
+import com.informedcitizen.pipeline.model.ChamberCalendar
+import com.informedcitizen.pipeline.model.SessionCalendar
+import com.informedcitizen.pipeline.model.SessionCalendarSource
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull

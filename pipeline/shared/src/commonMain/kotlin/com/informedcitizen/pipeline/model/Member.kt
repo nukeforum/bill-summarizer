@@ -1,4 +1,4 @@
-package com.informedcitizen.data.model
+package com.informedcitizen.pipeline.model
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
