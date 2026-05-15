@@ -1,7 +1,79 @@
 {
-  "generated_at": "2026-05-15T14:22:09Z",
+  "generated_at": "2026-05-15T20:44:15Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "sres706-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "706",
+      "title": "A resolution expressing support for the designation of April 2026 as \"National Child Abuse Prevention Month\", and the goals and ideals of National Child Abuse Prevention Month.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2026-04-29",
+      "latest_action": {
+        "date": "2026-05-14",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S2313)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres706/BILLS-119sres706is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres706/BILLS-119sres706is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres706/BILLS-119sres706is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/706"
+    },
+    {
+      "id": "sres526-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "526",
+      "title": "A resolution withholding the pay of Senators if a Government shutdown occurs.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kennedy, John",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2025-12-03",
+      "latest_action": {
+        "date": "2026-05-14",
+        "text": "Resolution agreed to in Senate without amendment by Voice Vote. (consideration: CR S2295)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres526/BILLS-119sres526rs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres526/BILLS-119sres526rs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres526/BILLS-119sres526rs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/526"
+    },
+    {
+      "id": "sres680-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "680",
+      "title": "A resolution commemorating the 10th anniversary of the Columbine Day of Service and honoring the memories of the victims, survivors, and their families.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Bennet, Michael F.",
+        "party": "D",
+        "state": "CO"
+      },
+      "introduced_date": "2026-04-20",
+      "latest_action": {
+        "date": "2026-05-14",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S2313)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres680/BILLS-119sres680is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres680/BILLS-119sres680is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres680/BILLS-119sres680is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/680"
+    },
     {
       "id": "hr8469-119",
       "congress": 119,
