@@ -36,3 +36,20 @@ fun classifyOutcome(actionText: String): String? {
     }
     return null
 }
+
+/**
+ * Map the wire-format outcome string (the one [classifyOutcome] and
+ * Python's `_OUTCOME_RULES` return) to the typed [Outcome] enum.
+ * Returns null on unknown input. Kept here (alongside the constants
+ * and the classifier) so callers don't have to import both packages
+ * to round-trip an outcome.
+ */
+fun outcomeFromWireString(value: String): com.informedcitizen.pipeline.model.Outcome? =
+    when (value) {
+        OUTCOME_PASSED_HOUSE -> com.informedcitizen.pipeline.model.Outcome.PASSED_HOUSE
+        OUTCOME_PASSED_SENATE -> com.informedcitizen.pipeline.model.Outcome.PASSED_SENATE
+        OUTCOME_ENACTED -> com.informedcitizen.pipeline.model.Outcome.ENACTED
+        OUTCOME_VETOED -> com.informedcitizen.pipeline.model.Outcome.VETOED
+        OUTCOME_FAILED -> com.informedcitizen.pipeline.model.Outcome.FAILED
+        else -> null
+    }

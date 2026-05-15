@@ -1,19 +1,54 @@
 package com.informedcitizen.pipeline.cli
 
-import com.informedcitizen.pipeline.cleanSponsorName
-import com.informedcitizen.pipeline.classifyOutcome
-import com.informedcitizen.pipeline.congressForYear
-
 /**
- * Placeholder CLI entrypoint. Subcommands (`fetch-bills`, `fetch-members`,
- * `backfill-bills`, `build-session-calendar`, `build-zip-crosswalk`,
- * `check-freshness`) will be wired in as the corresponding Python scripts
- * are ported into the shared module. See TODO "Shared Pipeline (KMP)".
+ * Pipeline CLI entrypoint. Subcommands ported so far:
+ *  - `fetch-bills` — daily refresh of the per-Congress bills manifest.
+ *
+ * Subcommands still pending port (Python scripts continue to handle
+ * them in CI until they land): `fetch-members`, `backfill-bills`,
+ * `build-session-calendar`, `build-zip-crosswalk`, `check-freshness`,
+ * `rebuild-congresses-index`. See TODO "Shared Pipeline (KMP)".
  */
 fun main(args: Array<String>) {
-    println("pipeline-cli (placeholder)")
-    println("  current congress: ${congressForYear(2026)}")
-    println("  classifyOutcome('Became Public Law No: 119-12.') = ${classifyOutcome("Became Public Law No: 119-12.")}")
-    println("  cleanSponsorName('Rep. Smith, Adrian [R-NE-3]') = '${cleanSponsorName("Rep. Smith, Adrian [R-NE-3]")}'")
-    if (args.isNotEmpty()) println("  args: ${args.joinToString(" ")}")
+    if (args.isEmpty()) {
+        printUsage()
+        return
+    }
+    val exitCode = when (val cmd = args[0]) {
+        "fetch-bills" -> FetchBillsCommand.run(args.drop(1))
+        "--help", "-h", "help" -> {
+            printUsage()
+            0
+        }
+        else -> {
+            System.err.println("Unknown subcommand: $cmd")
+            printUsage()
+            2
+        }
+    }
+    if (exitCode != 0) {
+        kotlin.system.exitProcess(exitCode)
+    }
+}
+
+private fun printUsage() {
+    println(
+        """
+        pipeline-cli — bill-summarizer data pipeline (Kotlin port)
+
+        Usage:
+          pipeline-cli <subcommand> [options]
+
+        Subcommands:
+          fetch-bills [--output-dir <path>]
+              Daily refresh of the per-Congress bills manifest. Reads
+              CONGRESS_API_KEY from the environment. Writes
+              <output-dir>/congressNNN_bills.json (default: ./docs/data).
+              Does NOT rebuild congresses.json; run the Python
+              build_dashboard.py / rebuild_index step after this for
+              the indexed view.
+          help
+              Show this message.
+        """.trimIndent(),
+    )
 }
