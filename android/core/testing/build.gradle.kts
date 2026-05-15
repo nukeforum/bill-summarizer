@@ -9,4 +9,5 @@ android {
 dependencies {
     api(project(":core:crash"))
     api(project(":core:datastore"))
+    api(project(":core:database"))
 }

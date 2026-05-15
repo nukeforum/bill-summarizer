@@ -1,0 +1,24 @@
+-- Migration from schema v1 → v2 (Slice E: output cache).
+-- Existing v1 databases predate `cached_bill` and `cached_bills_manifest`
+-- so we create them in place. Fresh installs already have the tables
+-- via `BillCache.sq` and skip this migration.
+
+CREATE TABLE cached_bill (
+    bill_id TEXT NOT NULL,
+    congress INTEGER NOT NULL,
+    source TEXT NOT NULL,
+    latest_action_date TEXT NOT NULL,
+    payload TEXT NOT NULL,
+    fetched_at INTEGER NOT NULL,
+    PRIMARY KEY (bill_id, source)
+);
+CREATE INDEX cached_bill_congress ON cached_bill(congress);
+CREATE INDEX cached_bill_latest_action ON cached_bill(latest_action_date DESC);
+
+CREATE TABLE cached_bills_manifest (
+    congress INTEGER NOT NULL,
+    source TEXT NOT NULL,
+    generated_at TEXT NOT NULL,
+    fetched_at INTEGER NOT NULL,
+    PRIMARY KEY (congress, source)
+);

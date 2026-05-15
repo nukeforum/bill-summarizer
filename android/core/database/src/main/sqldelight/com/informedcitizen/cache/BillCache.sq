@@ -1,0 +1,77 @@
+-- Output cache for the published bills manifest (and, once BYOK lands,
+-- the in-app pipeline's output). The UI consumes one source of truth
+-- regardless of whether the row came from `docs/data/congress*_bills.json`
+-- via Retrofit or from `pipeline:shared` via Ktor in BYOK mode.
+--
+-- `source` is one of `"published"` (Retrofit) or `"byok"` (Ktor); kept
+-- as a tag column so cache-clear can target one without nuking the
+-- other when the user toggles BYOK.
+--
+-- `payload` stores the kotlinx-serialization JSON of the Bill data
+-- class — flexible against future field additions without requiring
+-- per-field column ALTERs. The extracted columns (congress, source,
+-- latest_action_date) cover the common query paths (filter + sort).
+
+CREATE TABLE cached_bill (
+    bill_id TEXT NOT NULL,
+    congress INTEGER NOT NULL,
+    source TEXT NOT NULL,
+    latest_action_date TEXT NOT NULL,
+    payload TEXT NOT NULL,
+    fetched_at INTEGER NOT NULL,
+    PRIMARY KEY (bill_id, source)
+);
+CREATE INDEX cached_bill_congress ON cached_bill(congress);
+CREATE INDEX cached_bill_latest_action ON cached_bill(latest_action_date DESC);
+
+-- Per-(congress, source) manifest metadata so the UI / refresh logic
+-- can answer "when was congress 119's published data last fetched?"
+-- without scanning every row. `generated_at` is the manifest's own
+-- timestamp (server-side); `fetched_at` is when this client wrote it.
+CREATE TABLE cached_bills_manifest (
+    congress INTEGER NOT NULL,
+    source TEXT NOT NULL,
+    generated_at TEXT NOT NULL,
+    fetched_at INTEGER NOT NULL,
+    PRIMARY KEY (congress, source)
+);
+
+selectBillsByCongress:
+SELECT payload FROM cached_bill
+WHERE congress = :congress
+ORDER BY latest_action_date DESC;
+
+selectBillsByCongressAndSource:
+SELECT payload FROM cached_bill
+WHERE congress = :congress AND source = :source
+ORDER BY latest_action_date DESC;
+
+selectBillById:
+SELECT payload FROM cached_bill
+WHERE bill_id = :bill_id AND source = :source;
+
+countBillsBySource:
+SELECT COUNT(*) FROM cached_bill WHERE congress = :congress AND source = :source;
+
+upsertBill:
+INSERT OR REPLACE INTO cached_bill (
+    bill_id, congress, source, latest_action_date, payload, fetched_at
+) VALUES (?, ?, ?, ?, ?, ?);
+
+clearCongressForSource:
+DELETE FROM cached_bill WHERE congress = :congress AND source = :source;
+
+clearAllCachedBills:
+DELETE FROM cached_bill;
+
+selectManifest:
+SELECT generated_at, fetched_at FROM cached_bills_manifest
+WHERE congress = :congress AND source = :source;
+
+upsertManifest:
+INSERT OR REPLACE INTO cached_bills_manifest (
+    congress, source, generated_at, fetched_at
+) VALUES (?, ?, ?, ?);
+
+clearAllManifestMeta:
+DELETE FROM cached_bills_manifest;

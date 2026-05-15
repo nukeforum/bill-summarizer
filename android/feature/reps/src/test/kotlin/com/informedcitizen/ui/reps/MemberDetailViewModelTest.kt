@@ -18,6 +18,7 @@ import com.informedcitizen.data.repository.BillRepository
 import com.informedcitizen.data.repository.MemberRepository
 import com.informedcitizen.data.repository.RepsContactPreferenceRepository
 import com.informedcitizen.data.repository.RepsForLocation
+import com.informedcitizen.testutil.FakeBillCache
 import com.informedcitizen.testutil.InMemoryPreferencesDataStore
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -108,7 +109,7 @@ class MemberDetailViewModelTest {
             sponsoredById = mapOf("A1" to MemberLegislation("A1", 119, "sponsored", "x", listOf(anItem("hr1-119")))),
             cosponsoredById = mapOf("A1" to MemberLegislation("A1", 119, "cosponsored", "x", listOf(anItem("hr2-119"), anItem("hr3-119")))),
         )
-        val bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter())
+        val bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
         val vm = MemberDetailViewModel(members, bills, RepsContactPreferenceRepository(InMemoryPreferencesDataStore())).also { it.congressProvider = { 119 } }
         vm.load("A1")
         val s = vm.uiState.first { !it.isLoading }
@@ -125,7 +126,7 @@ class MemberDetailViewModelTest {
             sponsoredById = mapOf("A1" to null),
             cosponsoredById = mapOf("A1" to null),
         )
-        val bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter())
+        val bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
         val vm = MemberDetailViewModel(members, bills, RepsContactPreferenceRepository(InMemoryPreferencesDataStore())).also { it.congressProvider = { 119 } }
         vm.load("A1")
         val s = vm.uiState.first { !it.isLoading }
@@ -139,7 +140,7 @@ class MemberDetailViewModelTest {
         val contactPrefs = RepsContactPreferenceRepository(InMemoryPreferencesDataStore())
         val vm = MemberDetailViewModel(
             members = DetailStubMemberRepository(),
-            bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter()),
+            bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache()),
             contactPrefs = contactPrefs,
         ).also { it.congressProvider = { 119 } }
         assertEquals(false, vm.hasSeenWebsiteFallbackDialog.first())
@@ -158,6 +159,7 @@ class MemberDetailViewModelTest {
             StubBillsApi(listOf(aBill("hr1-119"))),
             InMemoryPreferencesDataStore(),
             FakeCrashReporter(),
+            FakeBillCache(),
         )
         val getResult = bills.getBills(forceRefresh = true)
         assertTrue(getResult.isSuccess)

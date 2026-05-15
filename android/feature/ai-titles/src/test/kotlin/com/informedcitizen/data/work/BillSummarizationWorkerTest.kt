@@ -10,6 +10,7 @@ import androidx.work.WorkerFactory
 import androidx.work.WorkerParameters
 import androidx.work.testing.TestListenableWorkerBuilder
 import com.informedcitizen.crash.FakeCrashReporter
+import com.informedcitizen.testutil.FakeBillCache
 import com.informedcitizen.data.ai.BillSummarizer
 import com.informedcitizen.data.ai.BillSummary
 import com.informedcitizen.data.ai.BillTopic
@@ -175,6 +176,7 @@ private fun fakeBillRepo(bills: List<Bill>): BillRepository {
         api = StubBillsApi(BillsManifest(generatedAt = "x", congress = 119, bills = bills)),
         dataStore = StubPreferencesDataStore(),
         crashReporter = FakeCrashReporter(),
+        billCache = FakeBillCache(),
     )
     runBlocking { repo.getBills(forceRefresh = true) }
     return repo

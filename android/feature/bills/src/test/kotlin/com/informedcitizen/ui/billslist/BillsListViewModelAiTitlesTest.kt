@@ -4,6 +4,7 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.emptyPreferences
 import com.informedcitizen.crash.FakeCrashReporter
+import com.informedcitizen.testutil.FakeBillCache
 import com.informedcitizen.data.ai.AiCapability
 import com.informedcitizen.data.ai.BillSummary
 import com.informedcitizen.data.ai.BillTopic
@@ -105,6 +106,7 @@ class BillsListViewModelAiTitlesTest {
             api = StubBillsApi(BillsManifest(generatedAt = "x", congress = 119, bills = bills)),
             dataStore = StubPreferencesDataStore(),
             crashReporter = FakeCrashReporter(),
+            billCache = FakeBillCache(),
         )
         val sessionRepo = SessionCalendarRepository(
             api = StubBillsApi(BillsManifest(generatedAt = "x", congress = 119, bills = emptyList())),

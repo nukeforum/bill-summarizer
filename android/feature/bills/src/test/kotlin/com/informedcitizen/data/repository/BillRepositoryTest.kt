@@ -2,6 +2,7 @@ package com.informedcitizen.data.repository
 
 import com.informedcitizen.crash.FakeCrashReporter
 import com.informedcitizen.data.api.BillsApi
+import com.informedcitizen.data.cache.BillSource
 import com.informedcitizen.pipeline.model.Action
 import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.pipeline.model.BillsManifest
@@ -10,10 +11,12 @@ import com.informedcitizen.pipeline.model.CongressesIndex
 import com.informedcitizen.pipeline.model.Outcome
 import com.informedcitizen.pipeline.model.SessionCalendar
 import com.informedcitizen.pipeline.model.Sponsor
+import com.informedcitizen.testutil.FakeBillCache
 import com.informedcitizen.testutil.InMemoryPreferencesDataStore
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
+import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertSame
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -28,6 +31,7 @@ class BillRepositoryTest {
             api = StubApi(BillsManifest(generatedAt = "2026-01-01", congress = 119, bills = emptyList())),
             dataStore = InMemoryPreferencesDataStore(),
             crashReporter = reporter,
+            billCache = FakeBillCache(),
         )
 
         val result = repo.getBills(forceRefresh = true)
@@ -44,6 +48,7 @@ class BillRepositoryTest {
             api = ThrowingApi(boom),
             dataStore = InMemoryPreferencesDataStore(),
             crashReporter = reporter,
+            billCache = FakeBillCache(),
         )
 
         val result = repo.getBills(forceRefresh = true)
@@ -64,6 +69,7 @@ class BillRepositoryTest {
             api = StubApi(BillsManifest(generatedAt = "2026-01-01", congress = 119, bills = bills)),
             dataStore = InMemoryPreferencesDataStore(),
             crashReporter = FakeCrashReporter(),
+            billCache = FakeBillCache(),
         )
         repo.getBills(forceRefresh = true)
         assertTrue(repo.containsBillId("hr1234-119"))
@@ -83,7 +89,7 @@ class BillRepositoryTest {
                 ),
             ),
         )
-        val repo = BillRepository(api, InMemoryPreferencesDataStore(), FakeCrashReporter())
+        val repo = BillRepository(api, InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
 
         val result = repo.getBills(forceRefresh = true)
 
@@ -101,7 +107,7 @@ class BillRepositoryTest {
                 congresses = listOf(CongressEntry(118, "congress118_bills.json")),
             ),
         )
-        val repo = BillRepository(api, InMemoryPreferencesDataStore(), reporter)
+        val repo = BillRepository(api, InMemoryPreferencesDataStore(), reporter, FakeBillCache())
 
         val result = repo.getBills(forceRefresh = true)
 
@@ -112,11 +118,49 @@ class BillRepositoryTest {
     }
 
     @Test
+    fun `successful fetch writes manifest through to cache under PUBLISHED source`() = runTest {
+        val bills = listOf(sampleBill("hr1-119"), sampleBill("hr2-119"))
+        val cache = FakeBillCache()
+        val manifest = BillsManifest(generatedAt = "2026-05-15T00:00:00Z", congress = 119, bills = bills)
+        val repo = BillRepository(
+            api = StubApi(manifest),
+            dataStore = InMemoryPreferencesDataStore(),
+            crashReporter = FakeCrashReporter(),
+            billCache = cache,
+        )
+
+        repo.getBills(forceRefresh = true)
+
+        assertEquals(1, cache.writes.size)
+        val write = cache.writes.single()
+        assertEquals(119, write.congress)
+        assertEquals(BillSource.PUBLISHED, write.source)
+        assertEquals(bills, write.bills)
+        assertEquals("2026-05-15T00:00:00Z", write.generatedAt)
+        val meta = cache.loadManifest(119, BillSource.PUBLISHED)
+        assertNotNull(meta)
+    }
+
+    @Test
+    fun `failed fetch does not write through to cache`() = runTest {
+        val cache = FakeBillCache()
+        val repo = BillRepository(
+            api = ThrowingApi(IOException("boom")),
+            dataStore = InMemoryPreferencesDataStore(),
+            crashReporter = FakeCrashReporter(),
+            billCache = cache,
+        )
+        repo.getBills(forceRefresh = true)
+        assertTrue("no cache write on failure", cache.writes.isEmpty())
+    }
+
+    @Test
     fun `containsBillId returns false before load`() {
         val repo = BillRepository(
             api = StubApi(BillsManifest(generatedAt = "x", congress = 119, bills = emptyList())),
             dataStore = InMemoryPreferencesDataStore(),
             crashReporter = FakeCrashReporter(),
+            billCache = FakeBillCache(),
         )
         assertFalse(repo.containsBillId("hr1-119"))
     }
