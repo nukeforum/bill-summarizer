@@ -14,11 +14,16 @@ concurrency:
 
 jobs:
   update:
+    # Bumped from 20 → 30 minutes for the parallel-run period: the
+    # workflow now runs Python *and* Kotlin fetchers, plus Gradle
+    # warm-up on a cold cache. Revert when the cut-over completes.
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+
+      # --- Python tooling (canonical, writes to docs/data/) ---
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -34,10 +39,107 @@ jobs:
       - name: Install Python dependencies
         run: uv pip install --system -r data-pipeline/requirements.txt
 
-      - name: Fetch bills
+      # --- Kotlin tooling (parallel-run, writes to /tmp shadow dir) ---
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      # --- Pre-stage Kotlin's shadow input from the current canonical ---
+      # Both fetchers must start from the same prior manifest state so
+      # the comparison is "given identical input, do they produce
+      # identical output?" — not "do they diverge because they started
+      # from different bases?" The canonical files on disk reflect the
+      # last successful run's output (committed by `safe-push`).
+      - name: Stage Kotlin shadow input from canonical
+        run: |
+          mkdir -p /tmp/kotlin-bills-shadow
+          cp docs/data/congress*_bills.json /tmp/kotlin-bills-shadow/ 2>/dev/null || true
+          ls -la /tmp/kotlin-bills-shadow/ || true
+
+      # --- Python: canonical fetch ---
+
+      - name: Fetch bills (Python — canonical)
         env:
           CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
         run: python data-pipeline/scripts/fetch_bills.py
+
+      # --- Kotlin: shadow fetch for parity validation ---
+      # Runs second so Python's fresh canonical output is available
+      # for the comparison step. Both fetchers see the same upstream
+      # API state modulo the ~minute gap between their fetches —
+      # actions arriving mid-run are tolerated by the compare step.
+
+      - name: Fetch bills (Kotlin — shadow validation)
+        # Parallel-run safety: never fail the canonical run because the
+        # Kotlin port hit a transient issue. Failure surfaces in the
+        # job UI (the step is marked red and the parity-check step
+        # logs the missing shadow file) but `safe-push` of Python's
+        # canonical output still proceeds.
+        continue-on-error: true
+        env:
+          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
+        working-directory: pipeline
+        run: ./gradlew :cli:run --args="fetch-bills --output-dir /tmp/kotlin-bills-shadow" --no-daemon
+
+      # --- Compare Python (canonical) vs Kotlin (shadow) ---
+      # The comparison writes to $GITHUB_STEP_SUMMARY so divergences
+      # surface in the workflow run UI without failing the job. The
+      # parallel-run period is for observation; we'll switch canonical
+      # ownership once diffs are clean for ~a week.
+
+      - name: Compare canonical vs Kotlin shadow output
+        if: always()
+        env:
+          CANONICAL_DIR: docs/data
+          SHADOW_DIR: /tmp/kotlin-bills-shadow
+        run: |
+          set +e  # never fail the job on diff results during parallel-run
+          {
+            echo "## fetch-bills parity check"
+            echo ""
+            echo "Comparing \`$CANONICAL_DIR\` (Python, canonical) vs \`$SHADOW_DIR\` (Kotlin)."
+            echo ""
+            for canonical in "$CANONICAL_DIR"/congress*_bills.json; do
+              [ -f "$canonical" ] || continue
+              fname=$(basename "$canonical")
+              shadow="$SHADOW_DIR/$fname"
+              if [ ! -f "$shadow" ]; then
+                echo "- ❌ \`$fname\`: shadow file missing — Kotlin did not produce output"
+                continue
+              fi
+              # Compare just the `bills` array — ignore the wrapper's
+              # `generated_at` (timestamp will always differ).
+              py_bills=$(mktemp)
+              kt_bills=$(mktemp)
+              jq -S '.bills' "$canonical" > "$py_bills"
+              jq -S '.bills' "$shadow"    > "$kt_bills"
+              py_count=$(jq '.bills | length' "$canonical")
+              kt_count=$(jq '.bills | length' "$shadow")
+              if diff -q "$py_bills" "$kt_bills" >/dev/null; then
+                echo "- ✅ \`$fname\`: identical bills array ($py_count entries)"
+              else
+                # Surface a unified diff (truncated) so the difference is inspectable.
+                echo "- ⚠️  \`$fname\`: bills arrays differ (Python: $py_count, Kotlin: $kt_count)"
+                echo ""
+                echo "<details><summary>diff (truncated to 400 lines)</summary>"
+                echo ""
+                echo '```diff'
+                diff -u "$py_bills" "$kt_bills" | head -400
+                echo '```'
+                echo "</details>"
+                echo ""
+              fi
+              rm -f "$py_bills" "$kt_bills"
+            done
+            echo ""
+            echo "_Validation runs alongside Python during the cut-over period. Python output remains canonical until parity is confirmed._"
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Rebuild pipeline dashboard
         if: always()
