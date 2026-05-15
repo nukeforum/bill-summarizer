@@ -55,7 +55,17 @@ runs:
           echo "push failed on attempt $attempt; rebasing on origin/$INPUT_BRANCH and retrying."
           # Fetch only the target branch; rebase our single commit on top.
           git fetch origin "$INPUT_BRANCH"
-          git rebase "origin/$INPUT_BRANCH"
+          # `-X theirs` resolves content conflicts in favour of the commit
+          # being replayed (this run's freshly-fetched output). Every
+          # consumer of this action commits machine-generated pipeline
+          # output where each run's snapshot is independently valid —
+          # the more recent fetch supersedes an older one. Without the
+          # strategy option a same-day race between two bot runs (or
+          # cron + manual) leaves the second run with an unresolved
+          # `<<<<<<<`-marked file and the workflow dies. In rebase
+          # vocabulary "theirs" = the commit being applied; "ours" = the
+          # upstream we're rebasing onto.
+          git rebase -X theirs "origin/$INPUT_BRANCH"
         done
         echo "push failed after $INPUT_MAX_RETRIES attempts" >&2
         exit 1
