@@ -81,6 +81,12 @@ dependencies {
   implementation(project(":feature:bills"))
   implementation(project(":feature:ai-titles"))
 
+  // Shared KMP pipeline (lives in the sibling `pipeline/` Gradle build,
+  // wired via composite-build in settings.gradle.kts). Same module is
+  // consumed by the JVM CLI in CI and will be consumed by iOS via
+  // XCFramework. See TODO "Shared Pipeline (KMP)".
+  implementation("com.informedcitizen.pipeline:shared")
+
   val composeBom = platform(libs.androidx.compose.bom)
   implementation(composeBom)
   androidTestImplementation(composeBom)

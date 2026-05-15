@@ -54,10 +54,31 @@ compiled into the APK.
 
 ```
 android/              # Multi-module Gradle build (see below)
-data-pipeline/        # Python pipeline that fetches Congress data
+pipeline/             # Shared KMP pipeline + JVM CLI (in-progress port of data-pipeline/)
+data-pipeline/        # Python pipeline that fetches Congress data — kept until KMP port replaces it
 docs/                 # GitHub Pages landing site
 play-listing/         # Play Store assets and copy
 ```
+
+## Shared pipeline (`pipeline/`)
+
+The data pipeline is being migrated from Python (`data-pipeline/`) to a
+Kotlin Multiplatform module so the same fetch / parse / transform code
+runs in **three** places: today's GitHub Actions data pipeline (via a
+JVM CLI), the Android app (so users can run the pipeline with their own
+API keys), and the future iOS app.
+
+```
+pipeline/
+├── shared/           # KMP module — commonMain + jvmMain + iosArm64/SimulatorArm64/X64
+└── cli/              # JVM-only fat-JAR entrypoint, used by GH Actions workflows
+```
+
+`pipeline/` is its own Gradle build. Android consumes `pipeline:shared`
+via Gradle composite build (`includeBuild("../pipeline")` in
+`android/settings.gradle.kts`); iOS will consume via XCFramework / SPM.
+The Python pipeline in `data-pipeline/` stays operational until every
+workflow has been migrated to the JAR.
 
 ## Android module layout
 
@@ -95,6 +116,14 @@ The first build downloads Gradle 9.5.0 and the AGP 9.2.0 toolchain. The
 build is strict — Kotlin warnings, Java warnings, and lint warnings are
 all errors. New dependencies that surface deprecation warnings will fail
 the build until you upgrade or `@Suppress` deliberately.
+
+To run the shared pipeline tests or the CLI directly:
+
+```bash
+cd pipeline
+./gradlew :shared:jvmTest      # KMP shared module unit tests
+./gradlew :cli:run             # runs the placeholder CLI
+```
 
 Release builds expect signing credentials in Gradle properties
 (`INFORMEDCITIZEN_KEYSTORE_PATH`, `_PASSWORD`, `_KEY_ALIAS`,

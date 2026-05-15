@@ -18,6 +18,12 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
 }
 
+// Composite build wiring: `pipeline:shared` (KMP, lives in the sibling
+// `pipeline/` Gradle build) is consumed by Android modules and by the
+// `pipeline:cli` JVM CLI. iOS will consume it via XCFramework / SPM.
+// See TODO "Shared Pipeline (KMP)" for the multi-consumer rationale.
+includeBuild("../pipeline")
+
 rootProject.name = "Informed Citizen"
 include(":app")
 include(":core:model")

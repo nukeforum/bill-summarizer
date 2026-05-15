@@ -10,13 +10,20 @@ android/app/*.iml
 android/.cxx/
 android/.kotlin/
 
-# Data pipeline (Python)
+# Data pipeline (Python — current, in-tree until KMP port lands)
 data-pipeline/.venv/
 data-pipeline/venv/
 data-pipeline/__pycache__/
 data-pipeline/**/__pycache__/
 data-pipeline/*.pyc
 data-pipeline/.env
+
+# Shared KMP pipeline (Gradle / Kotlin Multiplatform — consumed by Android,
+# the CLI runner used in CI, and the future iOS app)
+pipeline/.gradle/
+pipeline/build/
+pipeline/**/build/
+pipeline/.kotlin/
 
 # OS / editor
 .DS_Store
