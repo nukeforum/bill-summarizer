@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T08:49:35Z",
+  "generated_at": "2026-05-15T14:22:09Z",
   "congress": 119,
   "bills": [
     {
@@ -987,6 +987,54 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/123"
     },
     {
+      "id": "sjres103-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "103",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Veterans Affairs relating to \"Reproductive Health Services\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blumenthal, Richard",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2026-01-27",
+      "latest_action": {
+        "date": "2026-03-25",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 50. Record Vote Number: 72."
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres103/BILLS-119sjres103pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres103/BILLS-119sjres103pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres103/BILLS-119sjres103pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/103"
+    },
+    {
+      "id": "sres648-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "648",
+      "title": "A resolution honoring the memory, service, and sacrifice of Master Sergeant Nicole M. Amor, United States Army Reserve.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Klobuchar, Amy",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2026-03-17",
+      "latest_action": {
+        "date": "2026-03-25",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text: CR S1610)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres648/BILLS-119sres648ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres648/BILLS-119sres648ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres648/BILLS-119sres648ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/648"
+    },
+    {
       "id": "sjres116-119",
       "congress": 119,
       "type": "sjres",
@@ -1009,6 +1057,54 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres116/BILLS-119sjres116is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres116/BILLS-119sjres116is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/116"
+    },
+    {
+      "id": "sres372-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "372",
+      "title": "A resolution honoring the life of Kansas City, Kansas police officer Hunter Simoncic.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Moran, Jerry",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2025-09-03",
+      "latest_action": {
+        "date": "2026-03-21",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S1465)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres372/BILLS-119sres372ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres372/BILLS-119sres372ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres372/BILLS-119sres372ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/372"
+    },
+    {
+      "id": "sres425-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "425",
+      "title": "A resolution honoring the life of Hays, Kansas police sergeant Scott Heimann.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Moran, Jerry",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2025-09-30",
+      "latest_action": {
+        "date": "2026-03-21",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S1465)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres425/BILLS-119sres425ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres425/BILLS-119sres425ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres425/BILLS-119sres425ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/425"
     },
     {
       "id": "sjres118-119",
@@ -1225,6 +1321,30 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sres581/BILLS-119sres581ats.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sres581/BILLS-119sres581ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/581"
+    },
+    {
+      "id": "hr224-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "224",
+      "title": "Disabled Veterans Housing Support Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. De La Cruz, Monica",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2025-01-07",
+      "latest_action": {
+        "date": "2026-01-20",
+        "text": "Became Public Law No: 119-70."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Disabled Veterans Housing Support Act</strong></p><p>This act excludes compensation received&nbsp;for a military service-connected disability from a veteran's income when determining eligibility for assistance under the&nbsp;Community Development Block Grant (CDBG)&nbsp;program.</p><p>The CDBG program provides grants to urban communities for development activities focused on revitalizing neighborhoods, economic development, and providing improved community facilities and services.</p><p>Additionally, the Government Accountability Office must report on how service-connected disability compensation is treated when determining eligibility for all programs administered by&nbsp;the Department of Housing and Urban Development. This includes identifying instances where the treatment of such compensation is inconsistent with the requirement under this act.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ70/PLAW-119publ70.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ70/PLAW-119publ70_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ70/PLAW-119publ70.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/224"
     },
     {
       "id": "sres519-119",
@@ -1491,6 +1611,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2878"
     },
     {
+      "id": "hr410-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "410",
+      "title": "Alaska Native Vietnam Era Veterans Land Allotment Extension Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Begich, Nicholas [R-AK-At Large]",
+        "party": "R",
+        "state": "AK"
+      },
+      "introduced_date": "2025-01-15",
+      "latest_action": {
+        "date": "2025-12-26",
+        "text": "Became Public Law No: 119-63."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Alaska Native Vietnam Era Veterans Land Allotment Extension Act of 2025</strong></p><p>This bill extends for an additional five years the time period during which an eligible Alaska Native veteran may apply for a land allotment under the Alaska Native Vietnam Era Veterans Land Allotment Program. The program makes Alaska Native veterans who served in the Armed Forces in Vietnam between August 5, 1964, and December 31, 1971, or their heirs eligible to receive up to 160 acres of federal land in Alaska.</p><p>Under the current program, the Department of the Interior's Bureau of Land Management may accept applications through December 29, 2025. This bill extends this time period for an additional five years to December 29, 2030.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ63/PLAW-119publ63.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ63/PLAW-119publ63_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ63/PLAW-119publ63.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/410"
+    },
+    {
       "id": "hr165-119",
       "congress": 119,
       "type": "hr",
@@ -1611,6 +1755,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/616"
     },
     {
+      "id": "hr970-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "970",
+      "title": "Fairness for Servicemembers and their Families Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Strickland, Marilyn",
+        "party": "D",
+        "state": "WA"
+      },
+      "introduced_date": "2025-02-04",
+      "latest_action": {
+        "date": "2025-12-12",
+        "text": "Became Public Law No: 119-54."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Fairness for Servicemembers and their Families Act of 2025</strong></p><p>This bill requires the Department of Veterans Affairs (VA) to periodically review and report on the maximum coverage available under the&nbsp;Servicemembers' Group Life Insurance and Veterans' Group Life Insurance programs. Specifically, the VA must review such coverage amount every five years, taking into account the average percentage by which the Consumer Price Index for All Urban Consumers (CPI-U) increased in the five fiscal years preceding the review.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ54/PLAW-119publ54.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ54/PLAW-119publ54_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ54/PLAW-119publ54.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/970"
+    },
+    {
       "id": "sres532-119",
       "congress": 119,
       "type": "sres",
@@ -1635,6 +1803,78 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/532"
     },
     {
+      "id": "hjres104-119",
+      "congress": 119,
+      "type": "hjres",
+      "number": "104",
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Land Management relating to \"Miles City Field Office Record of Decision and Approved Resource Management Plan Amendment\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Downing, Troy",
+        "party": "R",
+        "state": "MT"
+      },
+      "introduced_date": "2025-07-10",
+      "latest_action": {
+        "date": "2025-12-11",
+        "text": "Became Public Law No: 119-48."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This joint resolution nullifies the rule submitted by the Bureau of Land Management (BLM) relating to the Record of Decision and Approved Resource Management Plan (RMP) Amendment for the Miles City Field Office in Montana and issued on November 20, 2024.&nbsp;</p><p>By way of background, such an amendment revises an RMP, which guides the management of lands administered by BLM. This Miles City Field Office RMP&nbsp;Amendment made no acres available for coal leasing and 1,745,040 acres unavailable for further consideration for coal leasing.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ48/PLAW-119publ48.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ48/PLAW-119publ48_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ48/PLAW-119publ48.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/104"
+    },
+    {
+      "id": "hjres105-119",
+      "congress": 119,
+      "type": "hjres",
+      "number": "105",
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Land Management relating to \"North Dakota Field Office Record of Decision and Approved Resource Management Plan\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Fedorchak, Julie [R-ND-At Large]",
+        "party": "R",
+        "state": "ND"
+      },
+      "introduced_date": "2025-07-10",
+      "latest_action": {
+        "date": "2025-12-11",
+        "text": "Became Public Law No: 119-49."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This joint resolution nullifies the rule submitted by the Bureau of Land Management (BLM) relating to the Record of Decision and Approved Resource Management Plan (RMP) for the North Dakota Field Office and issued on January 8, 2025.&nbsp;</p><p>By way of background, an RMP guides the management of lands administered by BLM. The 2025 North Dakota&nbsp;RMP modified the 1988&nbsp;RMP, including by limiting development of oil and gas in low-potential areas and new coal leasing to areas within four miles of existing mines.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ49/PLAW-119publ49.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ49/PLAW-119publ49_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ49/PLAW-119publ49.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/105"
+    },
+    {
+      "id": "hjres106-119",
+      "congress": 119,
+      "type": "hjres",
+      "number": "106",
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Land Management relating to \"Central Yukon Record of Decision and Approved Resource Management Plan\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Begich, Nicholas J. [R-AK-At Large]",
+        "party": "R",
+        "state": "AK"
+      },
+      "introduced_date": "2025-07-14",
+      "latest_action": {
+        "date": "2025-12-11",
+        "text": "Became Public Law No: 119-50."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This joint resolution nullifies the rule submitted by the Bureau of Land Management (BLM) relating to the Record of Decision and Approved Resource Management Plan  (RMP) for Alaska’s Central Yukon planning area and issued on November 12, 2024.&nbsp;</p><p>By way of background, an RMP guides the management of lands administered by the BLM. This Central Yukon RMP modified the prior RMP for the area, including by designating 21 areas of critical environmental concern or research natural areas, encompassing approximately 3,611,000 acres.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ50/PLAW-119publ50.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ50/PLAW-119publ50_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ50/PLAW-119publ50.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/106"
+    },
+    {
       "id": "sres483-119",
       "congress": 119,
       "type": "sres",
@@ -1657,6 +1897,30 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sres483/BILLS-119sres483ats.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sres483/BILLS-119sres483ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/483"
+    },
+    {
+      "id": "sjres80-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "80",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Land Management relating to \"National Petroleum Reserve in Alaska Integrated Activity Plan Record of Decision\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Sullivan, Dan",
+        "party": "R",
+        "state": "AK"
+      },
+      "introduced_date": "2025-09-18",
+      "latest_action": {
+        "date": "2025-12-05",
+        "text": "Became Public Law No: 119-47."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This joint resolution nullifies the rule submitted by the Bureau of Land Management (BLM) titled <em>National Petroleum Reserve in Alaska Integrated Activity Plan Record of Decision&nbsp;</em>and issued on April 25, 2022. BLM's plan provides for the management of the National Petroleum Reserve in Alaska, which is an approximately 23-million-acre area on Alaska’s North Slope. The&nbsp;2022 plan replaced the 2020 plan and closed approximately 48% of the reserve to oil and gas leasing&nbsp;in order to protect certain surface resources and uses, such as protecting wildlife and providing subsistence&nbsp;for communities. Thus, the joint resolution removes the protections provided under the 2022 plan and reverts to the 2020 plan.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ47/PLAW-119publ47.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ47/PLAW-119publ47_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ47/PLAW-119publ47.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/80"
     },
     {
       "id": "sres518-119",
@@ -1707,6 +1971,54 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/516"
     },
     {
+      "id": "hjres133-119",
+      "congress": 119,
+      "type": "hjres",
+      "number": "133",
+      "title": "Requesting the Secretary of the Interior to authorize unique and one-time arrangements for displays on the National Mall and the Washington Monument during the period beginning on December 31, 2025, and ending on January 5, 2026.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Aderholt, Robert B.",
+        "party": "R",
+        "state": "AL"
+      },
+      "introduced_date": "2025-11-04",
+      "latest_action": {
+        "date": "2025-12-02",
+        "text": "Became Public Law No: 119-46."
+      },
+      "outcome": "enacted",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/plaws/publ46/PLAW-119publ46.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ46/PLAW-119publ46_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ46/PLAW-119publ46.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/133"
+    },
+    {
+      "id": "hr695-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "695",
+      "title": "Medal of Honor Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Nehls, Troy E.",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2025-01-23",
+      "latest_action": {
+        "date": "2025-12-01",
+        "text": "Became Public Law No: 119-43."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Medal of Honor Act</strong></p><p>This bill increases the monthly special pension for living Medal of Honor recipients from $1,406.73 to $8,333.33 and establishes a rate of $1,406.73 for the monthly special pension for surviving spouses of Medal of Honor recipients. Both amounts must be adjusted annually for inflation.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ43/PLAW-119publ43.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ43/PLAW-119publ43_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ43/PLAW-119publ43.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/695"
+    },
+    {
       "id": "s260-119",
       "congress": 119,
       "type": "s",
@@ -1729,6 +2041,78 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ41/PLAW-119publ41_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ41/PLAW-119publ41.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/260"
+    },
+    {
+      "id": "hr2316-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "2316",
+      "title": "Wetlands Conservation and Access Improvement Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Hurd, Jeff",
+        "party": "R",
+        "state": "CO"
+      },
+      "introduced_date": "2025-03-25",
+      "latest_action": {
+        "date": "2025-11-25",
+        "text": "Became Public Law No: 119-40."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Wetlands Conservation and Access Improvement Act of 2025</strong></p><p>This bill delays until FY2033 (currently, FY2026) the availability of interest earned on obligations held in the Federal Aid to Wildlife Restoration Fund (i.e., the&nbsp;Wildlife Restoration Trust Fund) for apportionment to carry out certain state wildlife conservation and restoration programs.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ40/PLAW-119publ40.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ40/PLAW-119publ40_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ40/PLAW-119publ40.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2316"
+    },
+    {
+      "id": "hr998-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "998",
+      "title": "Internal Revenue Service Math and Taxpayer Help Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Feenstra, Randy",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2025-02-05",
+      "latest_action": {
+        "date": "2025-11-25",
+        "text": "Became Public Law No: 119-39."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Internal Revenue Service Math and Taxpayer Help Act</strong></p><p>This bill requires the Internal Revenue Service (IRS) to provide specific information on a notice related to a math or clerical error, send a notice related to an abatement of taxes assessed due to a math or clerical error, provide procedures for requesting such an abatement, and implement a pilot program for sending notices of a math or clerical error.</p><p>Under the bill, a notice sent by the IRS regarding&nbsp;a math or clerical error must include</p><ul><li>a clear description of the error, including the type of error and the specific federal tax return line on which the error was made;</li><li>an itemized computation of adjustments required to correct the error;</li><li>the telephone number for the automated transcript service; and</li><li>the deadline for requesting an abatement of any tax assessed due to the error.</li></ul><p>Further, the bill requires the IRS to send a notice related to an abatement of tax assessed due to a math or clerical error that clearly describes the abatement and includes an itemized computation of adjustments to be made to the items described in the notice of the&nbsp;error.</p><p>This bill also requires the IRS to</p><ul><li>provide procedures for requesting in writing, electronically, by phone, or in person an abatement of tax assessed due to a math or clerical error;</li><li>implement a pilot program to send notices of a math or clerical error by certified or registered mail; and</li><li>report to Congress certain information about the pilot program.</li></ul>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ39/PLAW-119publ39.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ39/PLAW-119publ39_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ39/PLAW-119publ39.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/998"
+    },
+    {
+      "id": "sres489-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "489",
+      "title": "A resolution commending Delta State University in Cleveland, Mississippi, for 100 years of service to the State of Mississippi and the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hyde-Smith, Cindy",
+        "party": "R",
+        "state": "MS"
+      },
+      "introduced_date": "2025-11-06",
+      "latest_action": {
+        "date": "2025-11-20",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This resolution commends Delta State University for its 100 years of service to Mississippi and the United States. It also recognizes Delta State University for its academic, cultural, and athletic excellence.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sres489/BILLS-119sres489ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres489/BILLS-119sres489ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres489/BILLS-119sres489ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/489"
     },
     {
       "id": "sjres76-119",
@@ -2163,6 +2547,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-resolution/539"
     },
     {
+      "id": "hr1316-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "1316",
+      "title": "Maintaining American Superiority by Improving Export Control Transparency Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Jackson, Ronny",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2025-02-13",
+      "latest_action": {
+        "date": "2025-08-19",
+        "text": "Became Public Law No: 119-34."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Maintaining American Superiority by Improving Export Control Transparency Act</strong></p><p>This bill requires the Department of Commerce's Bureau of Industry and Security (BIS) to annually report to Congress on export control licensing.</p><p>Under current law, BIS administers and enforces controls on the export of dual-use goods (e.g., items with both civilian and military uses) and certain military parts and components. These export controls are implemented primarily under the Export Control Reform Act of 2018 (ECRA) through the Export Administration Regulations (EAR).</p><p>Under this bill, BIS must annually report to Congress on license applications, enforcement actions, and other requests for authorization for the export, reexport, release, and in-country transfer of items subject to the&nbsp;EAR to covered entities. A covered entity is any entity that (1) is located or operating in a country listed in Country Group D:5 (countries that are identified by the Department of State as subject to U.S. arms embargoes), and (2) is included on the Entity List or the Military End-User List (two of the lists published by BIS containing information on the individuals, organizations, and addresses subject to restrictions involving items subject to the EAR).</p><p>The bill requires this report to include specified information, such as the name of the entity submitting the application, where the item is being exported, the decision with respect to the license application or authorization, and information on related enforcement activities to ensure&nbsp;compliance with U.S. export controls. The information shall be exempt from public disclosure (except for aggregate statistics).</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ34/PLAW-119publ34.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ34/PLAW-119publ34_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ34/PLAW-119publ34.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1316"
+    },
+    {
       "id": "s201-119",
       "congress": 119,
       "type": "s",
@@ -2259,6 +2667,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/34"
     },
     {
+      "id": "hr1815-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "1815",
+      "title": "VA Home Loan Program Reform Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Van Orden, Derrick",
+        "party": "R",
+        "state": "WI"
+      },
+      "introduced_date": "2025-03-03",
+      "latest_action": {
+        "date": "2025-07-30",
+        "text": "Became Public Law No: 119-31."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>VA Home Loan Program Reform Act</strong></p><p>This bill authorizes the Department of Veterans Affairs (VA) to take certain actions in cases of default on home loans under the VA home loan program and establishes a partial claim program.</p><p>First, the bill authorizes the VA to pay the holder of a loan guaranteed by the VA an amount necessary to avoid the foreclosure of the loan, provided that the holder of the loan and the veteran obligated on the loan execute documents to ensure the VA obtains a secured interest in the property covered by the loan.</p><p>The VA must prescribe loss mitigation procedures to help prevent the foreclosure of such a home loan. The VA may not take specified administrative actions (e.g., consent to the modification of loan terms) until the sequence of mitigation options has been completed.</p><p>Next, the bill establishes a five-year Partial Claim Program under which the VA may make a partial claim (purchase a&nbsp;portion of the indebtedness) on VA loans for primary residences that are in default or at imminent risk of default. Individuals who default on loans for which the VA has made a partial claim under this program must be liable to the VA for any loss resulting from the default.</p><p>Finally, the VA must report to Congress on its strategy to ensure that veterans who purchase homes under the VA home loan program are not at a disadvantage when attempting to secure representation by a real estate agent or broker.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ31/PLAW-119publ31.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ31/PLAW-119publ31_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ31/PLAW-119publ31.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1815"
+    },
+    {
       "id": "sres309-119",
       "congress": 119,
       "type": "sres",
@@ -2305,6 +2737,54 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ30/PLAW-119publ30_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ30/PLAW-119publ30.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1596"
+    },
+    {
+      "id": "hr4-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "4",
+      "title": "Rescissions Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Scalise, Steve",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2025-06-06",
+      "latest_action": {
+        "date": "2025-07-24",
+        "text": "Became Public Law No: 119-28."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Rescissions Act of 2025</strong></p><p>This bill rescinds $9.4 billion in&nbsp;unobligated funds that were provided to the Department of State, the U.S. Agency for International Development (USAID), various independent and related agencies, and the Corporation for Public Broadcasting.&nbsp;</p><p>The rescissions were proposed by the President under procedures included in the Congressional Budget and Impoundment Control Act of 1974. Under current law, the President may propose rescissions to Congress using specified procedures, and the rescissions must be enacted into law to take effect.&nbsp;</p><p>Specifically, the bill rescinds funds that were provided to the State Department or the President for</p><ul><li>Contributions to International Organizations;</li><li>Contributions for International Peacekeeping Activities;</li><li>Global Health Programs;</li><li>Migration and Refugee Assistance;</li><li>the Complex Crises Fund;</li><li>the Democracy Fund;</li><li>the Economic Support Fund;</li><li>Contributions to the Clean Technology Fund;</li><li>International Organization and Programs;</li><li>Development Assistance;</li><li>Assistance for Europe, Eurasia, and Central Asia;</li><li>International Disaster Assistance; and</li><li>Transition Initiatives.</li></ul><p>The bill also rescinds funds that were provided for&nbsp;</p><ul><li>USAID Operating Expenses,</li><li>the Inter-American Foundation,</li><li>the&nbsp;U.S. African Development Foundation,</li><li>the U.S. Institute of Peace, and</li><li>the Corporation for Public Broadcasting.</li></ul>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ28/PLAW-119publ28.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ28/PLAW-119publ28_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ28/PLAW-119publ28.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/4"
+    },
+    {
+      "id": "hr517-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "517",
+      "title": "Filing Relief for Natural Disasters Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Kustoff, David",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2025-01-16",
+      "latest_action": {
+        "date": "2025-07-24",
+        "text": "Became Public Law No: 119-29."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Filing Relief for Natural Disasters Act</strong></p><p>This bill authorizes the Internal Revenue Service (IRS) to postpone federal tax deadlines for taxpayers affected by a qualified state declared disaster, upon written request by the state governor. The bill also increases the automatic extension of federal tax deadlines for certain taxpayers.</p><p>Under current law, the IRS may postpone federal tax deadlines for taxpayers affected by a federally declared disaster, including (but not limited to) deadlines for (1) filing federal tax returns, (2) paying federal taxes, (3) making retirement plan contributions, and (4) tax assessments and collections.</p><p>The bill authorizes the IRS to postpone such federal tax deadlines for taxpayers affected by a qualified state declared disaster upon written request by the state’s governor (or the District of&nbsp;Columbia mayor). Under the bill, a state includes the District of Columbia, Puerto Rico, the U.S. Virgin Islands, Guam, American Samoa, and the Northern Mariana Islands.</p><p>The bill defines <em>qualified state declared disaster</em> as any natural catastrophe,&nbsp;fire, flood, or explosion that causes damage of sufficient severity and magnitude to warrant a request to postpone such federal tax deadlines.</p><p>Further, under current law, an automatic 60-day extension of such federal tax deadlines applies to certain relief workers, individuals killed or injured as a result of a federally declared disaster, and taxpayers whose principal residence, business, or tax records are located in a federally declared disaster area.</p><p>The bill increases to 120 days the automatic extension of federal tax deadlines for these&nbsp;taxpayers.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ29/PLAW-119publ29.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ29/PLAW-119publ29_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ29/PLAW-119publ29.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/517"
     },
     {
       "id": "sres267-119",
@@ -2379,6 +2859,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1582"
     },
     {
+      "id": "sres314-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "314",
+      "title": "A resolution recognizing the importance of trademarks in the economy and the role of trademarks in protecting consumer safety, by designating the month of July as \"National Anti-Counterfeiting and Consumer Education and Awareness Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Grassley, Chuck",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2025-07-08",
+      "latest_action": {
+        "date": "2025-07-17",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4490; text: 07/08/2025 CR S4259)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This resolution designates July 2025&nbsp;as National Anti-Counterfeiting and Consumer Education and Awareness Month.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sres314/BILLS-119sres314ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres314/BILLS-119sres314ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres314/BILLS-119sres314ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/314"
+    },
+    {
       "id": "s331-119",
       "congress": 119,
       "type": "s",
@@ -2401,6 +2905,54 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ26/PLAW-119publ26_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ26/PLAW-119publ26.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/331"
+    },
+    {
+      "id": "hr2215-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "2215",
+      "title": "Salem Maritime National Historical Park Redesignation and Boundary Study Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Moulton, Seth",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2025-03-18",
+      "latest_action": {
+        "date": "2025-07-15",
+        "text": "Became Public Law No: 119-25."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Salem Maritime National Historical Park Redesignation and Boundary Study Act</strong></p><p>This bill redesignates the Salem Maritime National Historic Site in Massachusetts as the Salem Maritime National Historical Park. In addition, the bill directs the Department of the Interior to conduct and report on a boundary study. The study must evaluate the suitability and feasibility of including in the National Park System, as part of the Salem Maritime National Historical Park, sites and resources in the study area associated with its maritime history, coastal defenses, and military history.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ25/PLAW-119publ25.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ25/PLAW-119publ25_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ25/PLAW-119publ25.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2215"
+    },
+    {
+      "id": "hr618-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "618",
+      "title": "Apex Area Technical Corrections Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Horsford, Steven",
+        "party": "D",
+        "state": "NV"
+      },
+      "introduced_date": "2025-01-22",
+      "latest_action": {
+        "date": "2025-07-15",
+        "text": "Became Public Law No: 119-24."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Apex Area Technical Corrections Act</strong></p><p>This bill&nbsp;provides for the transfer of certain rights-of-way related to the Apex Project from the Department of the Interior to&nbsp;the city of North Las Vegas and the Apex Industrial Park Owners Association.</p><p>Specifically, the bill modifies the Apex Project, Nevada Land Transfer and Authorization Act of 1989, which provided Clark County, Nevada, with the option to acquire certain federal land referred to as the Apex Site for use as sites for industries that generate hazardous materials (including the Kerr-McGee site).&nbsp;</p><p>Under the bill, the Department of the Interior must grant utility and transportation rights-of-way to the city of North Las Vegas and the Apex Industrial Park Owners Association for the connection of existing electric power, water, natural gas, telephone, railroad, and highway facilities to the Kerr-McGee site and the other lands conveyed in accordance with the bill.</p><p>Interior must also grant to the city and association such rights-of-way on public lands as may be necessary to support the development as a heavy use industrial zone of some or all of the lands authorized for sale by Interior within the Apex Site that lie outside the boundaries of the Kerr-McGee site.</p><p>Transfers by the United States of any additional lands or interests in lands within the Apex Site or rights-of-way issued pursuant to this bill must be conditioned upon compliance with applicable federal land laws.</p><p>The withdrawal of the lands within the Apex Site must continue in perpetuity for all of the transferred lands.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ24/PLAW-119publ24.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ24/PLAW-119publ24_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ24/PLAW-119publ24.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/618"
     },
     {
       "id": "sres283-119",
@@ -2427,6 +2979,78 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/283"
     },
     {
+      "id": "sres315-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "315",
+      "title": "A resolution expressing support for the designation of July 10, 2025, as Journeyman Lineworkers Recognition Day.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cortez Masto, Catherine",
+        "party": "D",
+        "state": "NV"
+      },
+      "introduced_date": "2025-07-08",
+      "latest_action": {
+        "date": "2025-07-10",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: 7/8/2025 CR S4260)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres315/BILLS-119sres315ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres315/BILLS-119sres315ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres315/BILLS-119sres315ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/315"
+    },
+    {
+      "id": "hr43-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "43",
+      "title": "Alaska Native Village Municipal Lands Restoration Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Begich, Nicholas [R-AK-At Large]",
+        "party": "R",
+        "state": "AK"
+      },
+      "introduced_date": "2025-01-03",
+      "latest_action": {
+        "date": "2025-07-07",
+        "text": "Became Public Law No: 119-23."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Alaska Native Village Municipal Lands Restoration Act of 2025</strong></p><p>This bill removes the requirement that Alaska Native village corporations must convey lands to Alaska to be held in trust for future municipal governments.&nbsp;</p><p>The Alaska Native Claims Settlement Act (ANCSA) requires all Alaska Native village corporations that receive land under the ANCSA to convey certain lands to the existing municipality in the village or, if no municipality exists, to Alaska in trust for any municipality that may be established in the future. This bill removes the requirement for conveyance. Additionally, the bill allows village corporations to regain title to the lands held in trust by dissolving the trust through formal resolution by the village corporation and the residents of the Native village.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ23/PLAW-119publ23.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ23/PLAW-119publ23_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ23/PLAW-119publ23.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/43"
+    },
+    {
+      "id": "hr42-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "42",
+      "title": "Alaska Native Settlement Trust Eligibility Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Begich, Nicholas [R-AK-At Large]",
+        "party": "R",
+        "state": "AK"
+      },
+      "introduced_date": "2025-01-03",
+      "latest_action": {
+        "date": "2025-07-07",
+        "text": "Became Public Law No: 119-22."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Alaska Native Settlement Trust Eligibility Act</strong></p><p>This bill excludes certain settlement trust payments to an Alaska Native or descendant of an Alaska Native who is aged, blind, or disabled for purposes of determining the individual's eligibility for certain need-based federal programs (e.g., the Supplemental Nutrition Assistance Program).</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ22/PLAW-119publ22.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ22/PLAW-119publ22_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ22/PLAW-119publ22.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/42"
+    },
+    {
       "id": "sjres59-119",
       "congress": 119,
       "type": "sjres",
@@ -2449,6 +3073,30 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres59/BILLS-119sjres59is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres59/BILLS-119sjres59is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/59"
+    },
+    {
+      "id": "sres301-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "301",
+      "title": "A resolution condemning the attacks on Minnesota lawmakers in Brooklyn Park and Champlin, Minnesota and calling for unity and the rejection of political violence in Minnesota and across the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Klobuchar, Amy",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2025-06-24",
+      "latest_action": {
+        "date": "2025-06-26",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S3577; text: 6/24/2025 CR S3519)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This resolution condemns the June 14, 2025, attacks on Minnesota state legislators&nbsp;and calls on the people of the United States to reaffirm our commitment to a safe, civil, and peaceful democracy.</p><p>The resolution also honors (1) the lives of Speaker Emerita Melissa Hortman and her husband Mark Hortman who were killed, (2) Senator John Hoffman and his wife Yvette Hoffman who were critically injured, and (3) the law enforcement officers who rapidly responded to the attacks and apprehended the suspected perpetrator.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sres301/BILLS-119sres301ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres301/BILLS-119sres301ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres301/BILLS-119sres301ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/301"
     },
     {
       "id": "sres290-119",
@@ -3171,6 +3819,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/35"
     },
     {
+      "id": "sjres11-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "11",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Bureau of Ocean Energy Management relating to \"Protection of Marine Archaeological Resources\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kennedy, John",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2025-02-04",
+      "latest_action": {
+        "date": "2025-03-14",
+        "text": "Became Public Law No: 119-3."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This joint resolution nullifies the&nbsp;final rule issued by the Bureau of Ocean Energy Management (BOEM) titled <em>Protection of Marine Archaeological&nbsp;</em><em>Resources</em> and published on September 3, 2024. </p><p>The rule requires operators and&nbsp;lessees conducting oil and gas exploration or development on the Outer Continental Shelf and that are seeking BOEM approval for such activities to also provide BOEM with an archaeological report for the area of potential effects.&nbsp;The report must identify potential archaeological resources (material remains of human life or activities that are at least 50 years old and that are of archaeological interest) on the sea floor. The rule modified regulations that only required such a report when a&nbsp;BOEM regional director has reason to believe that an archaeological resource may be present in the lease area.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ3/PLAW-119publ3.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ3/PLAW-119publ3_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ3/PLAW-119publ3.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/11"
+    },
+    {
       "id": "sres72-119",
       "congress": 119,
       "type": "sres",
@@ -3217,6 +3889,30 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sres94/BILLS-119sres94ats.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sres94/BILLS-119sres94ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/94"
+    },
+    {
+      "id": "sjres10-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "10",
+      "title": "A joint resolution terminating the national emergency declared with respect to energy.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kaine, Tim",
+        "party": "D",
+        "state": "VA"
+      },
+      "introduced_date": "2025-02-03",
+      "latest_action": {
+        "date": "2025-02-26",
+        "text": "Failed of passage in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 95. (consideration: CR S1364, S1367-1390)"
+      },
+      "outcome": "failed",
+      "summary_crs": "<p>This joint resolution terminates the national emergency relating to energy declared by the President on January 20, 2025, in Executive Order 14156. </p><p>The executive order states that the supply of&nbsp;and infrastructure&nbsp;for energy in the United States is insufficient to meet the country's needs. It defines&nbsp;<em>energy </em>as&nbsp;crude oil, natural gas, lease condensates,&nbsp;natural gas liquids, refined petroleum products, uranium, coal, biofuels, geothermal heat, the&nbsp;kinetic movement of flowing water, and critical minerals.&nbsp; </p><p>The executive&nbsp;order directs the heads of executive departments and agencies to use available emergency and other authorities to take certain actions to address this topic, including approving development of domestic energy resources, expediting the completion of authorized energy infrastructure (particularly in the Northeast, West Coast, and Alaska), and pursuing the use of emergency permitting provisions under&nbsp;certain environmental regulations.</p><p>The executive order also directs the Department of Defense to conduct an assessment of its ability to acquire and transport energy resources (particularly in the Northeast and West Coast), and invokes emergency military construction authority to address any vulnerabilities identified in the assessment.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sjres10/BILLS-119sjres10is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres10/BILLS-119sjres10is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres10/BILLS-119sjres10is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/10"
     },
     {
       "id": "sconres7-119",
