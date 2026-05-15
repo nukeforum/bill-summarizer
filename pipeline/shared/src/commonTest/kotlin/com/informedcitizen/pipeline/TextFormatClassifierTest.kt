@@ -43,4 +43,39 @@ class TextFormatClassifierTest {
     fun no_known_extension_returns_null() {
         assertNull(classifyTextFormatUrl("https://example.com/bill"))
     }
+
+    @Test
+    fun mixed_case_extension_classifies_correctly() {
+        assertEquals("html", classifyTextFormatUrl("https://example.com/x.HTM"))
+        assertEquals("html", classifyTextFormatUrl("https://example.com/x.Html"))
+        assertEquals("xml", classifyTextFormatUrl("https://example.com/x.XML"))
+        assertEquals("pdf", classifyTextFormatUrl("https://example.com/x.PDF"))
+    }
+
+    @Test
+    fun double_dotted_extension_still_picks_outermost() {
+        // E.g. `BILLS-119s4465es.tar.htm` — endsWith(".htm") is enough.
+        assertEquals("html", classifyTextFormatUrl("https://example.com/x.tar.htm"))
+    }
+
+    @Test
+    fun url_with_trailing_question_mark_and_no_query() {
+        assertEquals("html", classifyTextFormatUrl("https://example.com/x.htm?"))
+    }
+
+    @Test
+    fun bare_path_without_scheme_still_classifies() {
+        assertEquals("xml", classifyTextFormatUrl("BILLS-119s4465es.xml"))
+    }
+
+    @Test
+    fun empty_string_returns_null() {
+        assertNull(classifyTextFormatUrl(""))
+    }
+
+    @Test
+    fun unknown_extension_returns_null() {
+        assertNull(classifyTextFormatUrl("https://example.com/x.docx"))
+        assertNull(classifyTextFormatUrl("https://example.com/x.txt"))
+    }
 }

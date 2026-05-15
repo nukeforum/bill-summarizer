@@ -9,6 +9,19 @@ data class ErrorRecord(
     val params: Map<String, String>? = null,
 )
 
+/**
+ * Accumulates per-record failures during a pipeline run and emits a
+ * grouped digest at the end. Mirrors the Python `_common.ErrorCollector`
+ * contract (groups by `(kind, errorClass)`, caps examples, shows a
+ * `… N more` tail).
+ *
+ * Not thread-safe. When the orchestrator fan-out is ported (the Python
+ * version uses ThreadPoolExecutor in `fetch_bills` / `fetch_members`),
+ * either serialize calls through a single coroutine (e.g. an actor /
+ * Channel collector) or wrap with a Mutex at the call site. We
+ * deliberately keep the type itself dependency-free so commonMain
+ * stays minimal.
+ */
 class ErrorCollector {
     private val errors = mutableListOf<ErrorRecord>()
 

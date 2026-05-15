@@ -123,4 +123,89 @@ class ErrorCollectorTest {
         assertTrue("ValueError" in rendered, rendered)
         assertTrue("hr1" in rendered, rendered)
     }
+
+    @Test
+    fun duplicate_records_in_same_group_share_a_count() {
+        val ec = ErrorCollector().apply {
+            record("a", "1", "ValueError", "x")
+            record("a", "1", "ValueError", "x")
+            record("a", "1", "ValueError", "x")
+        }
+        val blob = ec.summaryLines().joinToString("\n")
+        assertTrue("ValueError × 3" in blob, blob)
+    }
+
+    @Test
+    fun single_record_with_examples_per_class_one_has_no_more_tail() {
+        val ec = ErrorCollector().apply {
+            record("a", "1", "ValueError", "x")
+        }
+        val lines = ec.summaryLines(examplesPerClass = 1)
+        val blob = lines.joinToString("\n")
+        assertEquals(3, lines.size, blob) // total + group line + 1 detail
+        assertTrue("more" !in blob, blob)
+    }
+
+    @Test
+    fun examples_per_class_zero_emits_no_detail_lines_but_keeps_count() {
+        val ec = ErrorCollector()
+        repeat(3) { ec.record("a", "id$it", "ValueError", "boom") }
+        val blob = ec.summaryLines(examplesPerClass = 0).joinToString("\n")
+        assertTrue("ValueError × 3" in blob, blob)
+        assertTrue("… 3 more" in blob, blob)
+        // No `id0`/`id1`/`id2` lines should appear in the body.
+        assertFalse("id0" in blob, blob)
+    }
+
+    @Test
+    fun records_preserve_insertion_order_in_records_list() {
+        val ec = ErrorCollector().apply {
+            record("a", "1", "ValueError", "x")
+            record("b", "2", "RuntimeError", "y")
+            record("c", "3", "TypeError", "z")
+        }
+        val ids = ec.records().map { it.identifier }
+        assertEquals(listOf("1", "2", "3"), ids)
+    }
+
+    @Test
+    fun special_characters_in_identifier_are_preserved() {
+        val ec = ErrorCollector().apply {
+            record("fetch", "hr1234/v2", "ValueError", "bad ref")
+        }
+        val blob = ec.summaryLines().joinToString("\n")
+        assertTrue("hr1234/v2" in blob, blob)
+    }
+
+    @Test
+    fun two_distinct_error_classes_in_same_kind_produce_two_groups() {
+        val ec = ErrorCollector().apply {
+            record("fetch", "1", "ValueError", "x")
+            record("fetch", "2", "RuntimeError", "y")
+        }
+        val blob = ec.summaryLines().joinToString("\n")
+        assertTrue("ValueError × 1" in blob, blob)
+        assertTrue("RuntimeError × 1" in blob, blob)
+    }
+
+    @Test
+    fun render_summary_with_no_label_omits_dashes_block() {
+        val ec = ErrorCollector().apply {
+            record("a", "1", "ValueError", "x")
+        }
+        val rendered = ec.renderSummary()
+        assertFalse(rendered.startsWith("---"), rendered)
+        assertTrue(rendered.startsWith("1 error"), rendered)
+    }
+
+    @Test
+    fun assigning_to_records_does_not_mutate_collector_state() {
+        // records() returns a snapshot — callers can sort/filter freely.
+        val ec = ErrorCollector().apply {
+            record("a", "1", "ValueError", "x")
+        }
+        val snapshot = ec.records().toMutableList()
+        snapshot.clear()
+        assertEquals(1, ec.size)
+    }
 }
