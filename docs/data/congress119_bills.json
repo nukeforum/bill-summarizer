@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T08:21:44Z",
+  "generated_at": "2026-05-17T13:44:56Z",
   "congress": 119,
   "bills": [
     {
@@ -1059,6 +1059,126 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/123"
     },
     {
+      "id": "sjres32-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "32",
+      "title": "A joint resolution providing for congressional disapproval of the proposed foreign military sale to the Government of Israel of certain defense articles and services.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Sanders, Bernard",
+        "party": "I",
+        "state": "VT"
+      },
+      "introduced_date": "2025-03-10",
+      "latest_action": {
+        "date": "2026-04-15",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 40 - 59. Record Vote Number: 80. (consideration: CR S1764-1779)"
+      },
+      "outcome": "failed",
+      "summary_crs": "<p>This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Israel.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sjres32/BILLS-119sjres32is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres32/BILLS-119sjres32is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres32/BILLS-119sjres32is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/32"
+    },
+    {
+      "id": "sres627-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "627",
+      "title": "A resolution designating March 5, 2026, as \"National Slam the Scam Day\" to raise awareness about pervasive scams and to prevent government imposter scams and other types of scams by promoting education about such scams.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Scott, Rick",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2026-03-05",
+      "latest_action": {
+        "date": "2026-04-15",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S1789)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres627/BILLS-119sres627ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres627/BILLS-119sres627ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres627/BILLS-119sres627ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/627"
+    },
+    {
+      "id": "sjres138-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "138",
+      "title": "A joint resolution providing for congressional disapproval of the proposed foreign military sale to the Government of Israel of certain defense articles and services.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Sanders, Bernard",
+        "party": "I",
+        "state": "VT"
+      },
+      "introduced_date": "2026-03-19",
+      "latest_action": {
+        "date": "2026-04-15",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 36 - 63. Record Vote Number: 81. (consideration: CR S1779)"
+      },
+      "outcome": "failed",
+      "summary_crs": "<p>This joint resolution prohibits a proposed foreign military sale of certain defense articles and services to Israel.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sjres138/BILLS-119sjres138is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres138/BILLS-119sjres138is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres138/BILLS-119sjres138is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/138"
+    },
+    {
+      "id": "s3971-119",
+      "congress": 119,
+      "type": "s",
+      "number": "3971",
+      "title": "Small Business Innovation and Economic Security Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Ernst, Joni",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2026-03-03",
+      "latest_action": {
+        "date": "2026-04-13",
+        "text": "Became Public Law No: 119-83."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Small Business Innovation and Economic Security Act</strong></p><p>This bill reauthorizes through FY2031 and modifies the Small Business Innovation Research (SBIR) program, the Small Business Technology Transfer (STTR) program, and related pilot programs.&nbsp;(The SBIR and STTR programs are administered by various federal agencies and provide competitive awards for domestic small businesses to conduct research and development projects that have the potential for commercialization.)</p><p>Specifically, the bill expands the requirements for federal agencies administering these programs to evaluate the security risks of the small businesses that apply for awards under the programs. If an agency denies an application for security reasons, the agency must provide the small business with&nbsp;the basis for such determination.</p><p>Further, each agency must set a maximum number of proposals per fiscal year that a small business concern may submit in response to Phase I and Phase II solicitations.</p><p>The bill expands the training requirements for agencies' contracting officers and acquisition workforce with respect to Phase III (commercialization of technologies) awards under the&nbsp;SBIR and STTR programs.</p><p>The bill also establishes strategic breakthrough allocations for critical technology areas. These are additional Phase II SBIR and STTR awards to&nbsp;small businesses that demonstrate an effective technology and receive matching funds.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ83/PLAW-119publ83.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ83/PLAW-119publ83_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ83/PLAW-119publ83.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/3971"
+    },
+    {
+      "id": "s1884-119",
+      "congress": 119,
+      "type": "s",
+      "number": "1884",
+      "title": "Holocaust Expropriated Art Recovery Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2025-05-22",
+      "latest_action": {
+        "date": "2026-04-13",
+        "text": "Became Public Law No: 119-82."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Holocaust Expropriated Art Recovery Act of 2025</strong></p><p>This bill permanently extends and expands judicial authority under the Holocaust Expropriated Art Recovery Act of 2016. The law allows and establishes procedures for civil claims and causes of action to recover artwork and other property lost between 1933 and 1945 because of Nazi persecution. </p><p>Among the changes, the bill removes the deadline for filing civil claims or causes of action. Currently, the filing deadline is December 31, 2026. (Claims must still be filed within six years of the claimant's discovery of the property in question.)</p><p>The bill permits courts to exercise jurisdiction over civil claims or causes of action against a foreign state without regard to the nationality or citizenship of the alleged victim. The art or property at issue must still have a connection to the foreign state's commercial activities in the United States.</p><p>Additionally, the bill authorizes nationwide service of process, which allows courts to exercise personal jurisdiction over defendants in any judicial district where they may be found, reside, have an agent, or transact business.</p><p>Finally, the bill limits the defenses that may be asserted against civil claims or causes of action, including by prohibiting</p><ul><li>defenses based on the passage of time, including equitable defenses such as laches (i.e., unreasonable delays); and</li><li>discretionary bases for dismissal that are unrelated to the merits of the claim, including international comity&nbsp;(i.e., deference to the laws of other countries).</li></ul><p>These changes apply to pending and future civil claims or causes of action.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ82/PLAW-119publ82.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ82/PLAW-119publ82_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ82/PLAW-119publ82.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1884"
+    },
+    {
       "id": "sres647-119",
       "congress": 119,
       "type": "sres",
@@ -1369,6 +1489,30 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ79/PLAW-119publ79_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ79/PLAW-119publ79.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/3705"
+    },
+    {
+      "id": "hjres142-119",
+      "congress": 119,
+      "type": "hjres",
+      "number": "142",
+      "title": "Disapproving the action of the District of Columbia Council in approving the D.C. Income and Franchise Tax Conformity and Revision Temporary Amendment Act of 2025.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Gill, Brandon",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2026-01-22",
+      "latest_action": {
+        "date": "2026-02-18",
+        "text": "Became Public Law No: 119-78."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This joint resolution nullifies legislation enacted by the Council of the District of Columbia (DC) on December 20, 2025, titled DC Income and Franchise Tax Conformity and Revision Temporary Amendment Act of 2025. The nullification reinstates certain DC tax code provisions that were in place before the enactment of the DC legislation and that address, among other things, the standard tax deduction, taxation of tipped wages, and depreciation of qualified property.</p><p>As background, DC automatically adopts, as DC law, changes to federal tax law (known as rolling conformity). Upon enactment of <a href=\"https://www.congress.gov/bill/119th-congress/house-bill/1?s=7&amp;r=1\">H.R.1</a> (commonly known as the&nbsp;One Big Beautiful Bill Act),&nbsp;its tax provisions became DC law, including provisions that increase the standard tax deduction,&nbsp;exempt tips from taxable income, and provide for an elective 100% depreciation allowance for nonresidential real property. The DC legislation subsequently decoupled the DC tax code from&nbsp;these and other tax provisions that originated in H.R.1, and it amended several other provisions in the DC tax code, including restoring the DC child tax credit.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ78/PLAW-119publ78.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ78/PLAW-119publ78_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ78/PLAW-119publ78.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/142"
     },
     {
       "id": "sjres95-119",
@@ -2067,6 +2211,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/356"
     },
     {
+      "id": "sjres82-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "82",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Office of the Secretary of the Department of Health and Human Services relating to \"Policy on Adhering to the Text of the Administrative Procedure Act\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. King, Angus S., Jr.",
+        "party": "I",
+        "state": "ME"
+      },
+      "introduced_date": "2025-09-18",
+      "latest_action": {
+        "date": "2025-12-18",
+        "text": "Failed of passage in Senate by Yea-Nay Vote. 50 - 50. Record Vote Number: 654."
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres82/BILLS-119sjres82pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres82/BILLS-119sjres82pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres82/BILLS-119sjres82pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/82"
+    },
+    {
       "id": "sres492-119",
       "congress": 119,
       "type": "sres",
@@ -2425,6 +2593,30 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ46/PLAW-119publ46_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ46/PLAW-119publ46.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/133"
+    },
+    {
+      "id": "hr1512-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "1512",
+      "title": "Taiwan Assurance Implementation Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Wagner, Ann",
+        "party": "R",
+        "state": "MO"
+      },
+      "introduced_date": "2025-02-21",
+      "latest_action": {
+        "date": "2025-12-02",
+        "text": "Became Public Law No: 119-45."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This bill modifies an existing requirement for the Department of State to review and report on its guidance to federal agencies on the U.S.-Taiwan relationship. (The U.S.-Taiwan relationship has been unofficial since 1979, when the United States established diplomatic relations with China and broke them with Taiwan.)</p><p>Current law requires the State Department to conduct a one-time review of its guidance governing relations with Taiwan and report to Congress on this review. Under this bill, the State Department must review that guidance and report to Congress every two years while the guidance is in effect.</p><p>The reports to Congress must (1) describe how the guidance takes into account certain considerations, such as the sense of Congress that Taiwan is governed by a representative government peacefully constituted through free and fair elections; and (2) identify opportunities and plans to lift self-imposed restrictions on relations with Taiwan.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ45/PLAW-119publ45.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ45/PLAW-119publ45_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ45/PLAW-119publ45.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1512"
     },
     {
       "id": "hr695-119",
@@ -4323,6 +4515,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/18"
     },
     {
+      "id": "hjres42-119",
+      "congress": 119,
+      "type": "hjres",
+      "number": "42",
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Energy relating to \"Energy Conservation Program for Appliance Standards: Certification Requirements, Labeling Requirements, and Enforcement Provisions for Certain Consumer Products and Commercial Equipment\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Clyde, Andrew S.",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2025-02-12",
+      "latest_action": {
+        "date": "2025-05-09",
+        "text": "Became Public Law No: 119-8."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This joint resolution nullifies the&nbsp;<em>Energy Conservation Program for Appliance Standards: Certification Requirements, Labeling Requirements, and Enforcement Provisions for Certain Consumer Products and Commercial Equipment&nbsp;</em>rule published by the Department of Energy (DOE) on October 9, 2024. Under the rule, DOE modified its regulations on the energy efficiency of certain types of&nbsp;consumer products (e.g., washing machines and dishwashers) and&nbsp;industrial equipment (e.g., computer room air conditioners). Specifically, it modified certification requirements, labeling requirements, and enforcement provisions for these products and equipment to (1) align reporting requirements with currently applicable energy conservation standards and test procedures, and (2) provide DOE with the information necessary to determine the appropriate classification of products for the application of standards.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ8/PLAW-119publ8.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ8/PLAW-119publ8_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ8/PLAW-119publ8.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/42"
+    },
+    {
       "id": "sjres49-119",
       "congress": 119,
       "type": "sjres",
@@ -4345,6 +4561,30 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres49/BILLS-119sjres49is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres49/BILLS-119sjres49is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/49"
+    },
+    {
+      "id": "sres149-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "149",
+      "title": "A resolution designating April 2025 as \"Second Chance Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Klobuchar, Amy",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2025-04-01",
+      "latest_action": {
+        "date": "2025-04-28",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S2610; text: 3/31/2025 CR S2096)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres149/BILLS-119sres149ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres149/BILLS-119sres149ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres149/BILLS-119sres149ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/149"
     },
     {
       "id": "hjres25-119",
