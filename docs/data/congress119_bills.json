@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T10:04:14Z",
+  "generated_at": "2026-05-18T15:47:04Z",
   "congress": 119,
   "bills": [
     {
@@ -1635,6 +1635,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/581"
     },
     {
+      "id": "hr7148-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "7148",
+      "title": "Consolidated Appropriations Act, 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Cole, Tom",
+        "party": "R",
+        "state": "OK"
+      },
+      "introduced_date": "2026-01-20",
+      "latest_action": {
+        "date": "2026-02-03",
+        "text": "Became Public Law No: 119-75."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Consolidated Appropriations Act, 2026</strong></p><p>This bill provides appropriations to several federal departments and agencies for the remainder of FY2026 and provides continuing FY2026 appropriations for the Department of Homeland Security (DHS) through February 13, 2026. It also extends various expiring programs and authorities.</p><p>Specifically, the bill includes 5 of the 12 regular FY2026 appropriations bills:</p><ul><li>the Department of Defense Appropriations Act, 2026;</li><li>the Departments of Labor, Health and Human Services, and Education, and Related Agencies Appropriations&nbsp;Act, 2026;&nbsp;</li><li>the Transportation, Housing and Urban Development, and Related Agencies Appropriations Act, 2026;</li><li>the Financial Services and General Government Appropriations Act, 2026; and</li><li>the National Security, Department of State, and Related Programs Appropriations Act, 2026.</li></ul><p>The departments, agencies, and activities funded in the bill include</p><ul><li>the&nbsp;Department of Defense,</li><li>the Department of Labor,</li><li>the Department of Health and Human Services,</li><li>the Department of Education,</li><li>the Department of Transportation,</li><li>the Department of Housing and Urban Development,&nbsp;</li><li>the Department of the Treasury,</li><li>the Executive Office of the President,</li><li>the judiciary,</li><li>the District of Columbia,</li><li>the Department of State and related programs,</li><li>the administration and oversight of foreign assistance programs, &nbsp;</li><li>bilateral economic assistance,</li><li>international security assistance,</li><li>multilateral assistance,</li><li>export and investment assistance, and</li><li>several related and independent agencies.</li></ul><p>In addition, the bill includes a continuing resolution (CR) that provides continuing FY2026 appropriations to DHS through the earlier of February 13, 2026, or the enactment of the DHS appropriations act. The CR funds most DHS programs and activities at the FY2025 levels.</p><p>The bill also extends several expiring programs and authorities, including</p><ul><li>the U.S. Grain Standards Act;</li><li>the Commodity Futures Trading Commission’s whistleblower program;</li><li>the National Flood Insurance Program;</li><li>the Forest Service's participation in the Agriculture Conservation Experienced Services Program;</li><li>the Transportation Security Administration’s&nbsp;Reimbursable Screening Services Program;</li><li>the Motor Carrier Safety Advisory Committee;</li><li>several authorities and programs related to cybersecurity;</li><li>the technology modernization fund and board;</li><li>the U.S. Parole Commission;</li><li>the special assessment on nonindigent persons or entities convicted of certain offenses involving sexual abuse or human trafficking;</li><li>several immigration-related programs and authorities;</li><li>the authority for the U.S. Sentencing Commission to promulgate certain guidelines or amendments related to the use of unmanned aircraft;&nbsp;</li><li>certain bankruptcy fees;</li><li>trade preferences for Haiti and countries in sub-Saharan Africa;</li><li>the Temporary Assistance for Needy Families (TANF) program; and</li><li>several health care authorities and programs.&nbsp;</li></ul>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ75/PLAW-119publ75.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ75/PLAW-119publ75.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/7148"
+    },
+    {
       "id": "hr4323-119",
       "congress": 119,
       "type": "hr",
@@ -1825,6 +1849,30 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ69/PLAW-119publ69_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ69/PLAW-119publ69.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/222"
+    },
+    {
+      "id": "sjres98-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "98",
+      "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against Venezuela that have not been authorized by Congress.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kaine, Tim",
+        "party": "D",
+        "state": "VA"
+      },
+      "introduced_date": "2025-12-03",
+      "latest_action": {
+        "date": "2026-01-14",
+        "text": "Point of order that the measure is not entitled to expedited procedures under 50 U.S.C. 1546(a) raised against the measure agreed to in Senate by Yea-Nay Vote. 50 - 50. Record Vote Number: 9."
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This joint resolution directs the President to  terminate the use of U.S. Armed Forces for hostilities within or against Venezuela unless a declaration of war or authorization to use military force for such purpose has been enacted.&nbsp;The joint resolution specifies that it shall not be construed to prevent the United States from defending itself from an armed attack or threat of an imminent armed attack.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sjres98/BILLS-119sjres98pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres98/BILLS-119sjres98pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres98/BILLS-119sjres98pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/98"
     },
     {
       "id": "sjres84-119",
@@ -2355,6 +2403,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1912"
     },
     {
+      "id": "hr452-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "452",
+      "title": "Miracle on Ice Congressional Gold Medal Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Stauber, Pete",
+        "party": "R",
+        "state": "MN"
+      },
+      "introduced_date": "2025-01-15",
+      "latest_action": {
+        "date": "2025-12-12",
+        "text": "Became Public Law No: 119-53."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Miracle on Ice Congressional Gold Medal Act</strong></p><p>This act provides for the award of Congressional Gold Medals to the members of the 1980 U.S. Olympic men's ice hockey team in recognition of the team's achievement at the 1980 Winter Olympic Games.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ53/PLAW-119publ53.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ53/PLAW-119publ53_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ53/PLAW-119publ53.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/452"
+    },
+    {
       "id": "sres532-119",
       "congress": 119,
       "type": "sres",
@@ -2881,6 +2953,30 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sres463/BILLS-119sres463ats.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sres463/BILLS-119sres463ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/463"
+    },
+    {
+      "id": "sjres90-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "90",
+      "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against Venezuela that have not been authorized by Congress.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kaine, Tim",
+        "party": "D",
+        "state": "VA"
+      },
+      "introduced_date": "2025-10-16",
+      "latest_action": {
+        "date": "2025-11-06",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 49 - 51. Record Vote Number: 608. (consideration: CR S7958)"
+      },
+      "outcome": "failed",
+      "summary_crs": "<p>This joint resolution directs the President to terminate the use of U.S. Armed Forces for hostilities within or against Venezuela unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending itself from an armed attack or threat of an imminent armed attack.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sjres90/BILLS-119sjres90is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres90/BILLS-119sjres90is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres90/BILLS-119sjres90is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/90"
     },
     {
       "id": "sres399-119",
