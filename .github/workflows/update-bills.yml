@@ -137,6 +137,44 @@ jobs:
               fi
               rm -f "$py_bills" "$kt_bills"
             done
+
+            # --- congresses.json index parity ---
+            # Kotlin now writes congresses.json too (FileCongressesIndexStore.rebuild,
+            # called from FetchBillsCommand). Compare with `generated_at` stripped
+            # since the two runs are minutes apart. This diff must be clean before
+            # we flip canonical ownership — Kotlin can't take over writing
+            # docs/data/congresses.json until its output matches Python's.
+            py_idx="$CANONICAL_DIR/congresses.json"
+            kt_idx="$SHADOW_DIR/congresses.json"
+            echo ""
+            if [ ! -f "$py_idx" ]; then
+              echo "- ⏭️  \`congresses.json\`: canonical missing — skipping index parity"
+            elif [ ! -f "$kt_idx" ]; then
+              echo "- ❌ \`congresses.json\`: shadow file missing — Kotlin did not produce index"
+            else
+              py_idx_norm=$(mktemp)
+              kt_idx_norm=$(mktemp)
+              jq -S 'del(.generated_at)' "$py_idx" > "$py_idx_norm"
+              jq -S 'del(.generated_at)' "$kt_idx" > "$kt_idx_norm"
+              if diff -q "$py_idx_norm" "$kt_idx_norm" >/dev/null; then
+                py_entries=$(jq '.congresses | length' "$py_idx")
+                echo "- ✅ \`congresses.json\`: identical index ($py_entries entries, ignoring generated_at)"
+              else
+                py_entries=$(jq '.congresses | length' "$py_idx")
+                kt_entries=$(jq '.congresses | length' "$kt_idx")
+                echo "- ⚠️  \`congresses.json\`: index differs (Python: $py_entries entries, Kotlin: $kt_entries entries)"
+                echo ""
+                echo "<details><summary>diff (truncated to 200 lines, generated_at stripped)</summary>"
+                echo ""
+                echo '```diff'
+                diff -u "$py_idx_norm" "$kt_idx_norm" | head -200
+                echo '```'
+                echo "</details>"
+                echo ""
+              fi
+              rm -f "$py_idx_norm" "$kt_idx_norm"
+            fi
+
             echo ""
             echo "_Validation runs alongside Python during the cut-over period. Python output remains canonical until parity is confirmed._"
           } >> "$GITHUB_STEP_SUMMARY"
