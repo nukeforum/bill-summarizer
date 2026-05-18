@@ -198,7 +198,7 @@ private fun fakePrefs(
 private class StubBillsApi(private val manifest: BillsManifest) : BillsApi {
     override suspend fun getCongressesIndex(): CongressesIndex = CongressesIndex(
         currentCongress = manifest.congress,
-        congresses = listOf(CongressEntry(manifest.congress, "congress${manifest.congress}_bills.json", isCurrent = true)),
+        congresses = listOf(CongressEntry(congress = manifest.congress, manifestPath = "congress${manifest.congress}_bills.json", isCurrent = true)),
     )
     override suspend fun getBillsManifest(url: String): BillsManifest = manifest
     override suspend fun getSessionCalendar(): SessionCalendar = error("unused")

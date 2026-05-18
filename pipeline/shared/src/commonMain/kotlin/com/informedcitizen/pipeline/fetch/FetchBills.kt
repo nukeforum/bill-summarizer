@@ -38,10 +38,11 @@ data class FetchBillsResult(
  *  6. Merge into the existing manifest ([mergeBillRecords]).
  *  7. Persist via [manifestStore].
  *
- * Note: this slice does NOT rewrite `congresses.json` — the CI
- * cut-over leaves that step on the Python side until a later slice
- * ports `rebuild_index`. The fetch-bills + index-rebuild can run as
- * two consecutive workflow steps until then.
+ * Note: this slice does NOT rewrite `congresses.json` — the CLI
+ * wrapper ([com.informedcitizen.pipeline.cli.FetchBillsCommand])
+ * does that as a separate step after this returns, mirroring
+ * Python `fetch_bills.main`'s flow (`save_manifest` then
+ * `rebuild_index`). Keeps this orchestrator focused on fetch + merge.
  */
 suspend fun fetchBills(
     client: CongressClient,

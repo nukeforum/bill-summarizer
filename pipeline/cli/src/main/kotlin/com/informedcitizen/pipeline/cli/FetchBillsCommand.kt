@@ -3,11 +3,14 @@ package com.informedcitizen.pipeline.cli
 import com.informedcitizen.pipeline.ErrorCollector
 import com.informedcitizen.pipeline.congressForYear
 import com.informedcitizen.pipeline.fetch.FileBillsManifestStore
+import com.informedcitizen.pipeline.fetch.FileCongressesIndexStore
 import com.informedcitizen.pipeline.fetch.RECENT_DAYS
 import com.informedcitizen.pipeline.fetch.fetchBills
 import com.informedcitizen.pipeline.fetch.nowIso
 import com.informedcitizen.pipeline.http.CongressClient
 import com.informedcitizen.pipeline.http.createPipelineHttpClient
+import com.informedcitizen.pipeline.state.FilePipelineStateStore
+import com.informedcitizen.pipeline.state.initialBackfillState
 import kotlinx.coroutines.runBlocking
 import kotlinx.datetime.Clock
 import kotlinx.datetime.DateTimeUnit
@@ -22,12 +25,20 @@ import okio.Path.Companion.toPath
  *  - `0` success
  *  - `2` CONGRESS_API_KEY unset
  *
- * Output directory defaults to `./docs/data` (matches Python's
- * `OUTPUT_DIR`). Override via `--output-dir <path>`.
+ * Flags:
+ *  - `--output-dir <path>` — published-data directory.
+ *    Default `./docs/data` (matches Python's `OUTPUT_DIR`).
+ *  - `--state-dir <path>` — pipeline state directory; the `completed`
+ *    list from `backfill_state.json` populates each index entry's
+ *    `backfill_complete` flag. Default `./data-pipeline/state` so the
+ *    JVM CLI reads the same cursor Python writes — no migration
+ *    needed when canonical ownership flips. Missing/absent state file
+ *    is fine; treated as empty completed set.
  */
 object FetchBillsCommand {
     fun run(args: List<String>): Int {
-        val outputDir = parseOutputDir(args) ?: "docs/data"
+        val outputDir = parseFlag(args, "--output-dir") ?: "docs/data"
+        val stateDir = parseFlag(args, "--state-dir") ?: "data-pipeline/state"
         val apiKey = System.getenv("CONGRESS_API_KEY")
         if (apiKey.isNullOrEmpty()) {
             System.err.println("CONGRESS_API_KEY is not set in the environment.")
@@ -83,14 +94,28 @@ object FetchBillsCommand {
                     "=${result.mergeStats.unchanged} unchanged " +
                     "(manifest now ${result.finalManifest.bills.size} bills)"
             )
+
+            // Rewrite docs/data/congresses.json. Mirrors Python's
+            // `rebuild_index()` call at the tail of `fetch_bills.main`.
+            // Reads the `completed` list from the same state file the
+            // Python backfill workflow maintains.
+            val stateStore = FilePipelineStateStore.system(stateDir.toPath())
+            val state = stateStore.loadBackfillState { initialBackfillState(congress) }
+            val indexStore = FileCongressesIndexStore.system(outputDir.toPath())
+            val index = indexStore.rebuild(
+                currentCongress = congress,
+                completed = state.completed.toSet(),
+                nowIso = nowIso(now),
+            )
+            println("Wrote ${indexStore.pathFor()}: ${index.congresses.size} congress entries.")
             return 0
         } finally {
             httpClient.close()
         }
     }
 
-    private fun parseOutputDir(args: List<String>): String? {
-        val idx = args.indexOf("--output-dir")
+    private fun parseFlag(args: List<String>, name: String): String? {
+        val idx = args.indexOf(name)
         return if (idx >= 0 && idx + 1 < args.size) args[idx + 1] else null
     }
 }

@@ -84,8 +84,8 @@ class BillRepositoryTest {
             index = CongressesIndex(
                 currentCongress = 119,
                 congresses = listOf(
-                    CongressEntry(118, "congress118_bills.json"),
-                    CongressEntry(119, "congress119_bills.json", isCurrent = true),
+                    CongressEntry(congress = 118, manifestPath = "congress118_bills.json"),
+                    CongressEntry(congress = 119, manifestPath = "congress119_bills.json", isCurrent = true),
                 ),
             ),
         )
@@ -104,7 +104,7 @@ class BillRepositoryTest {
             manifest = BillsManifest(generatedAt = "x", congress = 119, bills = emptyList()),
             index = CongressesIndex(
                 currentCongress = 119,
-                congresses = listOf(CongressEntry(118, "congress118_bills.json")),
+                congresses = listOf(CongressEntry(congress = 118, manifestPath = "congress118_bills.json")),
             ),
         )
         val repo = BillRepository(api, InMemoryPreferencesDataStore(), reporter, FakeBillCache())
@@ -170,7 +170,7 @@ class BillRepositoryTest {
         private val index: CongressesIndex = CongressesIndex(
             currentCongress = manifest.congress,
             congresses = listOf(
-                CongressEntry(manifest.congress, "congress${manifest.congress}_bills.json", isCurrent = true),
+                CongressEntry(congress = manifest.congress, manifestPath = "congress${manifest.congress}_bills.json", isCurrent = true),
             ),
         ),
     ) : BillsApi {
@@ -188,7 +188,7 @@ class BillRepositoryTest {
         private val failOnIndex: Boolean = true,
         private val index: CongressesIndex = CongressesIndex(
             currentCongress = 119,
-            congresses = listOf(CongressEntry(119, "congress119_bills.json", isCurrent = true)),
+            congresses = listOf(CongressEntry(congress = 119, manifestPath = "congress119_bills.json", isCurrent = true)),
         ),
     ) : BillsApi {
         override suspend fun getCongressesIndex(): CongressesIndex =

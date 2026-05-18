@@ -39,7 +39,7 @@ import org.junit.Test
 private class StubBillsApi(private val bills: List<Bill>) : BillsApi {
     override suspend fun getCongressesIndex(): CongressesIndex = CongressesIndex(
         currentCongress = 119,
-        congresses = listOf(CongressEntry(119, "congress119_bills.json", isCurrent = true)),
+        congresses = listOf(CongressEntry(congress = 119, manifestPath = "congress119_bills.json", isCurrent = true)),
     )
     override suspend fun getBillsManifest(url: String): BillsManifest =
         BillsManifest(generatedAt = "x", congress = 119, bills = bills)
