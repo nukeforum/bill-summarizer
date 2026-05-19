@@ -48,6 +48,12 @@ android {
     }
 
     buildTypes {
+        debug {
+            // Distinct applicationId so debug + release can coexist on a device.
+            applicationIdSuffix = ".debug"
+            versionNameSuffix = "-debug"
+            resValue("string", "app_name", "IC Debug")
+        }
         release {
             isMinifyEnabled = true
             isShrinkResources = true
@@ -57,11 +63,25 @@ android {
             } else {
                 null
             }
+            resValue("string", "app_name", "Informed Citizen")
         }
+    }
+
+    // google-services.json only lists the `com.informedcitizen` client, so the
+    // google-services + crashlytics gradle plugins would fail for the .debug
+    // variant. CrashModule gates Firebase on FLAG_DEBUGGABLE, so debug builds
+    // never invoke Crashlytics at runtime — safe to skip these tasks.
+    afterEvaluate {
+        tasks.matching { task ->
+            val n = task.name
+            n.contains("Debug") &&
+                (n.contains("GoogleServices") || n.contains("Crashlytics"))
+        }.configureEach { enabled = false }
     }
 
     buildFeatures {
         compose = true
+        resValues = true
     }
 
     lint {

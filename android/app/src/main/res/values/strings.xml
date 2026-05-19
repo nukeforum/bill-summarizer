@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Informed Citizen</string>
+    <!-- app_name is supplied per-buildType via resValue in build.gradle.kts
+         so debug builds can show "IC Debug" alongside the release install. -->
 </resources>
