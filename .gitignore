@@ -10,6 +10,10 @@ android/app/*.iml
 android/.cxx/
 android/.kotlin/
 
+# Gradle's updateDaemonJvm output — toolchain redirect URLs are
+# regenerated locally per-machine; no value in tracking.
+**/gradle-daemon-jvm.properties
+
 # Data pipeline (Python — current, in-tree until KMP port lands)
 data-pipeline/.venv/
 data-pipeline/venv/
@@ -30,6 +34,10 @@ pipeline/.kotlin/
 Thumbs.db
 *.swp
 .vscode/
+/.idea/
+
+# Local smoke-test output (verify / smoke skills)
+.smoke/
 
 # Superpowers brainstorm sessions
 .superpowers/
@@ -46,3 +54,6 @@ docs/superpowers/
 
 # Git worktrees (per-feature isolated workspaces)
 .worktrees/
+
+# Local swarm-review artifacts (android-code-review skill)
+.claude/review/
