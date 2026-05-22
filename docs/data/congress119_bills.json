@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22T17:04:14Z",
+  "generated_at": "2026-05-22T17:23:35Z",
   "congress": 119,
   "bills": [
     {
@@ -1563,6 +1563,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/629"
     },
     {
+      "id": "sjres104-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "104",
+      "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Islamic Republic of Iran that have not been authorized by Congress.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kaine, Tim",
+        "party": "D",
+        "state": "VA"
+      },
+      "introduced_date": "2026-01-29",
+      "latest_action": {
+        "date": "2026-03-04",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 53. Record Vote Number: 46. (consideration: CR S796)"
+      },
+      "outcome": "failed",
+      "summary_crs": "<p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending against an attack on the United States or its personnel or facilities in other nations.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sjres104/BILLS-119sjres104is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres104/BILLS-119sjres104is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres104/BILLS-119sjres104is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/104"
+    },
+    {
       "id": "sres602-119",
       "congress": 119,
       "type": "sres",
@@ -2403,6 +2427,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/82"
     },
     {
+      "id": "s1071-119",
+      "congress": 119,
+      "type": "s",
+      "number": "1071",
+      "title": "National Defense Authorization Act for Fiscal Year 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2025-03-14",
+      "latest_action": {
+        "date": "2025-12-18",
+        "text": "Became Public Law No: 119-60."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>National Defense Authorization Act for Fiscal Year 2026</strong></p><p>This bill sets forth policies and authorities for FY2026 for Department of Defense (DOD) programs and activities, military construction, and the national security programs of the Department of Energy (DOE). The bill also sets forth policies and authorities for the Department of State, the Coast Guard, and the Intelligence Community (IC).</p><p>Among other elements, the bill</p><ul><li>authorizes the procurement of various items, including aircraft, ships, and missiles;</li><li>sets active duty and reserve component personnel strength levels;</li><li>sets policy regarding various aspects of military health care and military compensation;</li><li>sets policy regarding DOD acquisitions and acquisition management, including contracting authorities and domestic sourcing;</li><li>sets policy for various matters related to DOD interactions with foreign nations, including matters concerning Israel, Ukraine, and the Indo-Pacific;</li><li>sets policy for various matters related to DOD cyber operations, cybersecurity, and artificial intelligence;</li><li>authorizes specified military construction projects and extends the authorization of certain projects from previous fiscal years;</li><li>authorizes the National Nuclear Security Administration, Defense Nuclear Facilities Safety Board, Naval Petroleum Reserves, and Maritime Administration;</li><li>sets policy regarding the organization and workforce of the State Department;</li><li>sets acquisition and personnel policy for the Coast Guard;&nbsp;</li><li>sets policy for merchant mariner credentials, vessel safety, and oil pollution response; and</li><li>sets policy for the IC regarding artificial intelligence and biotechnology.</li></ul><p>For additional information on the National Defense Authorization Act (NDAA) see</p><ul><li><a href=\"https://crs.gov/Reports/IF10516\">In Focus IF10516, Defense Primer: Navigating the&nbsp;NDAA</a>, and</li><li><a href=\"https://crs.gov/Reports/IF10515\">In Focus IF10515, Defense Primer: The&nbsp;NDAA Process</a>.</li></ul>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ60/PLAW-119publ60.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ60/PLAW-119publ60.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1071"
+    },
+    {
       "id": "sres492-119",
       "congress": 119,
       "type": "sres",
@@ -2929,6 +2977,30 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ39/PLAW-119publ39_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ39/PLAW-119publ39.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/998"
+    },
+    {
+      "id": "s2392-119",
+      "congress": 119,
+      "type": "s",
+      "number": "2392",
+      "title": "Veterans’ Compensation Cost-of-Living Adjustment Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Moran, Jerry",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2025-07-23",
+      "latest_action": {
+        "date": "2025-11-25",
+        "text": "Became Public Law No: 119-42."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Veterans' Compensation Cost-of-Living Adjustment Act of 2025</strong></p><p>This act requires the Department of Veterans Affairs (VA) to increase the amounts payable for wartime disability compensation, additional compensation for dependents, the clothing allowance for certain disabled veterans, and dependency and indemnity compensation for surviving spouses and children. Specifically, the VA must increase the amounts by the same percentage as the cost-of-living increase in benefits for Social Security recipients that is effective on December 1, 2025. The act requires the VA to publish the amounts payable, as increased, in the Federal Register.</p><p>The VA is authorized to make a similar adjustment to the rates of disability compensation payable to persons who have not received compensation for service-connected disability or death.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ42/PLAW-119publ42.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ42/PLAW-119publ42_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ42/PLAW-119publ42.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2392"
     },
     {
       "id": "sres489-119",
