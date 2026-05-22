@@ -21,7 +21,14 @@ jobs:
     timeout-minutes: 30
     steps:
       - name: Checkout
+        # Push back to main via a fine-grained PAT so commits are
+        # attributed to the repo admin (who has bypass on the
+        # "main branch" ruleset). The default GITHUB_TOKEN can't be
+        # added as a ruleset bypass actor on a personal-account /
+        # single-repo ruleset, so the push gets rejected (GH013).
         uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.PIPELINE_PUSH_TOKEN }}
 
       # --- Python tooling (canonical, writes to docs/data/) ---
 
