@@ -24,6 +24,8 @@ jobs:
         with:
           token: ${{ secrets.PIPELINE_PUSH_TOKEN }}
 
+      # --- Python tooling (canonical) ---
+
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
@@ -38,7 +40,29 @@ jobs:
       - name: Install Python dependencies
         run: uv pip install --system -r data-pipeline/requirements.txt
 
-      - name: Phase 1 — fetch member index
+      # --- Kotlin tooling (parallel-run, Phase 1 shadow only) ---
+      #
+      # Scope note: this workflow shadows **Phase 1 only**. Phase 2
+      # walks ~536 members fetching sponsored/cosponsored lists under
+      # a multi-hour time budget (currently 280 min). Running Python's
+      # Phase 2 AND Kotlin's Phase 2 sequentially would exceed the
+      # 6h GitHub Actions cap. Phase 2 parity will need a separate
+      # design — likely a smaller time-budget Kotlin run that verifies
+      # a sample, or a follow-up workflow that runs once Phase 1 has
+      # been canonical-flipped to Kotlin.
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      # --- Python: Phase 1 canonical (publishes members index) ---
+
+      - name: Phase 1 — fetch member index (Python — canonical)
         env:
           CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
         run: python data-pipeline/scripts/fetch_members.py --phase1-only
@@ -47,6 +71,10 @@ jobs:
         if: always()
         run: python data-pipeline/scripts/build_dashboard.py
 
+      # Commit Phase 1 immediately so the Reps tab gets the fresh index
+      # within ~10 minutes, regardless of Phase 2 / shadow duration.
+      # Kotlin shadow runs AFTER this commit so any shadow flakiness
+      # never delays the canonical index landing on origin.
       - name: Commit Phase 1 (members index)
         if: always()
         uses: ./.github/actions/safe-push
@@ -55,6 +83,82 @@ jobs:
             docs/data/members_*.json
             docs/pipeline.html
           message: "Update members index [bot]"
+
+      # --- Kotlin: Phase 1 shadow ---
+      # Phase 1 builds members_NNN.json from scratch (no prior state to
+      # stage). Run after Python's commit so Python's canonical output
+      # is on disk and a flaky shadow can't block the canonical publish.
+
+      - name: Phase 1 — fetch member index (Kotlin — shadow validation)
+        # Parallel-run safety: never fail the canonical run because the
+        # Kotlin port hit a transient issue. Failure surfaces in the
+        # job UI (the step is marked red and the parity-check step
+        # logs the missing shadow file) but Python's canonical output
+        # has already been committed.
+        continue-on-error: true
+        env:
+          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
+        working-directory: pipeline
+        run: |
+          mkdir -p /tmp/kotlin-members-shadow
+          ./gradlew :cli:run --args="fetch-members --phase1-only --output-dir /tmp/kotlin-members-shadow" --no-daemon
+
+      # --- Compare Phase 1 output ---
+      # Teed to BOTH stdout (so `gh run view --log` shows verdicts) AND
+      # $GITHUB_STEP_SUMMARY (Actions UI panel). Per the
+      # pipeline-check-cli-readable rule.
+
+      - name: Compare Phase 1 canonical vs Kotlin shadow output
+        if: always()
+        env:
+          CANONICAL_DIR: docs/data
+          SHADOW_DIR: /tmp/kotlin-members-shadow
+        run: |
+          set +e  # never fail the job on diff results during parallel-run
+          {
+            echo "## fetch-members Phase 1 parity check"
+            echo ""
+            echo "Comparing \`$CANONICAL_DIR\` (Python, canonical) vs \`$SHADOW_DIR\` (Kotlin)."
+            echo ""
+            for canonical in "$CANONICAL_DIR"/members_*.json; do
+              [ -f "$canonical" ] || continue
+              fname=$(basename "$canonical")
+              shadow="$SHADOW_DIR/$fname"
+              if [ ! -f "$shadow" ]; then
+                echo "- ❌ \`$fname\`: shadow file missing — Kotlin did not produce output"
+                continue
+              fi
+              # Compare just the `members` array — ignore the wrapper's
+              # `generated_at` (timestamp will always differ).
+              py_members=$(mktemp)
+              kt_members=$(mktemp)
+              jq -S '.members' "$canonical" > "$py_members"
+              jq -S '.members' "$shadow"    > "$kt_members"
+              py_count=$(jq '.members | length' "$canonical")
+              kt_count=$(jq '.members | length' "$shadow")
+              if diff -q "$py_members" "$kt_members" >/dev/null; then
+                echo "- ✅ \`$fname\`: identical members array ($py_count entries)"
+              else
+                echo "- ⚠️  \`$fname\`: members arrays differ (Python: $py_count, Kotlin: $kt_count)"
+                echo ""
+                echo "<details><summary>diff (truncated to 400 lines)</summary>"
+                echo ""
+                echo '```diff'
+                diff -u "$py_members" "$kt_members" | head -400
+                echo '```'
+                echo "</details>"
+                echo ""
+              fi
+              rm -f "$py_members" "$kt_members"
+            done
+
+            echo ""
+            echo "_Phase 1 validation only. Phase 2 (per-member legislation) parity is not yet shadowed — see workflow comment._"
+            echo "_Validation runs alongside Python during the cut-over period. Python output remains canonical until parity is confirmed._"
+          } | tee -a "$GITHUB_STEP_SUMMARY"
+
+      # --- Python: Phase 2 canonical (long-running, per-member fetch) ---
+      # Not shadowed — see scope note above the Kotlin tooling block.
 
       - name: Phase 2 — backfill sponsored / cosponsored legislation
         env:
