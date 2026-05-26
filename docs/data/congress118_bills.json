@@ -1,5 +1,54 @@
 {
-  "generated_at": "2026-05-26T15:55:29Z",
+  "generated_at": "2026-05-26T16:54:31Z",
   "congress": 118,
-  "bills": []
+  "bills": [
+    {
+      "id": "sjres117-118",
+      "congress": 118,
+      "type": "sjres",
+      "number": "117",
+      "title": "A joint resolution relating to the disapproval of the Presidential report with respect to the indebtedness of the Government of Ukraine.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Paul, Rand",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2024-11-19",
+      "latest_action": {
+        "date": "2024-11-20",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 37 - 61. Record Vote Number: 295."
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/118/bills/sjres117/BILLS-118sjres117pcs.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sjres117/BILLS-118sjres117pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sjres117/BILLS-118sjres117pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-joint-resolution/117"
+    },
+    {
+      "id": "s2795-118",
+      "congress": 118,
+      "type": "s",
+      "number": "2795",
+      "title": "A bill to amend title 38, United States Code, to extend and modify certain authorities and requirements relating to the Department of Veterans Affairs, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Tester, Jon",
+        "party": "D",
+        "state": "MT"
+      },
+      "introduced_date": "2023-09-13",
+      "latest_action": {
+        "date": "2023-10-06",
+        "text": "Became Public Law No: 118-19."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act extends the eligibility or applicability of various Department of Veterans Affairs (VA) programs and benefits.</p> <p>First, the act extends from three to five years the authority for additional licensed health care professionals (i.e., physician assistants, nurse practitioners, audiologists, and psychologists) to perform medical disability examinations as part of the existing VA pilot program related to the use of contract physicians for disability examinations.</p> <p>Currently, when an individual transfers fewer than 12 credits from a program of education that is closed or disapproved, the individual is deemed to have not received those credits, and no charge from the individual's entitlement to education assistance may be made for that period of enrollment. Under the act, this period of relief for those affected by a closure or disapproval is extended by two years to apply to programs that close or discontinue before September 30, 2025.</p> <p>The act extends through FY2028 the authorization for VA emergency preparedness for public health emergencies.</p> <p>The act also extends the applicability of certain loan fee rates through November 15, 2031, under the VA's home loan program.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ19/PLAW-118publ19.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ19/PLAW-118publ19_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ19/PLAW-118publ19.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/2795"
+    }
+  ]
 }
