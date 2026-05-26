@@ -193,8 +193,14 @@ jobs:
             # (active_congress, active_offset, completed[]) MUST match
             # between Python and Kotlin. A divergence here means Kotlin
             # would either skip work or re-fetch already-completed bills
-            # if canonical ownership were flipped. The state file is
-            # small and structured — diff the whole thing.
+            # if canonical ownership were flipped.
+            #
+            # Strip `last_run_at` before diffing — both implementations
+            # stamp it with their own run time, so it always differs by
+            # the ~minute gap between the two backfills. Same nuisance
+            # class as `generated_at` in congresses.json. The
+            # load-bearing fields are active_congress, active_offset,
+            # queue, and completed.
             echo ""
             if [ ! -f "$CANONICAL_STATE" ]; then
               echo "- ⏭️  \`backfill_state.json\`: canonical missing — skipping state parity"
@@ -203,16 +209,16 @@ jobs:
             else
               py_state_norm=$(mktemp)
               kt_state_norm=$(mktemp)
-              jq -S '.' "$CANONICAL_STATE" > "$py_state_norm"
-              jq -S '.' "$SHADOW_STATE"    > "$kt_state_norm"
+              jq -S 'del(.last_run_at)' "$CANONICAL_STATE" > "$py_state_norm"
+              jq -S 'del(.last_run_at)' "$SHADOW_STATE"    > "$kt_state_norm"
               if diff -q "$py_state_norm" "$kt_state_norm" >/dev/null; then
                 py_offset=$(jq -r '.active_offset // "null"' "$CANONICAL_STATE")
                 py_congress=$(jq -r '.active_congress // "null"' "$CANONICAL_STATE")
-                echo "- ✅ \`backfill_state.json\`: identical state (active_congress=$py_congress, active_offset=$py_offset)"
+                echo "- ✅ \`backfill_state.json\`: identical state (active_congress=$py_congress, active_offset=$py_offset, ignoring last_run_at)"
               else
                 echo "- ⚠️  \`backfill_state.json\`: state differs — Kotlin's cursor advancement diverged from Python's"
                 echo ""
-                echo "<details><summary>diff (full state, JSON-sorted)</summary>"
+                echo "<details><summary>diff (full state, JSON-sorted, last_run_at stripped)</summary>"
                 echo ""
                 echo '```diff'
                 diff -u "$py_state_norm" "$kt_state_norm"
