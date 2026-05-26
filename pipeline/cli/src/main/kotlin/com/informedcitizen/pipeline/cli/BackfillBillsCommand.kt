@@ -3,6 +3,7 @@ package com.informedcitizen.pipeline.cli
 import com.informedcitizen.pipeline.ErrorCollector
 import com.informedcitizen.pipeline.congressForYear
 import com.informedcitizen.pipeline.fetch.FileBillsManifestStore
+import com.informedcitizen.pipeline.fetch.FileCongressesIndexStore
 import com.informedcitizen.pipeline.fetch.backfillBills
 import com.informedcitizen.pipeline.fetch.nowIso
 import com.informedcitizen.pipeline.http.CongressClient
@@ -44,6 +45,13 @@ object BackfillBillsCommand {
 
         if (state.activeCongress == null) {
             println("Backfill complete: queue is empty.")
+            val indexStore = FileCongressesIndexStore.system(outputDir.toPath())
+            val index = indexStore.rebuild(
+                currentCongress = currentCongress,
+                completed = state.completed.toSet(),
+                nowIso = nowIso(now),
+            )
+            println("Wrote ${indexStore.pathFor()}: ${index.congresses.size} congress entries.")
             return 0
         }
         println(
@@ -87,6 +95,16 @@ object BackfillBillsCommand {
             // when work was done; mirror that. The queue-empty no-op case
             // already returned above.
             stateStore.saveBackfillState(result.newState)
+
+            // Mirror Python's `rebuild_index()` at the tail of `backfill_bills.main`.
+            // The completed set may have advanced if this run finished a Congress.
+            val indexStore = FileCongressesIndexStore.system(outputDir.toPath())
+            val index = indexStore.rebuild(
+                currentCongress = currentCongress,
+                completed = result.newState.completed.toSet(),
+                nowIso = nowIso(now),
+            )
+            println("Wrote ${indexStore.pathFor()}: ${index.congresses.size} congress entries.")
 
             result.mergeStats?.let { ms ->
                 println(

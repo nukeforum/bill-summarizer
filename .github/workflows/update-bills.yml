@@ -95,10 +95,11 @@ jobs:
         run: ./gradlew :cli:run --args="fetch-bills --output-dir /tmp/kotlin-bills-shadow" --no-daemon
 
       # --- Compare Python (canonical) vs Kotlin (shadow) ---
-      # The comparison writes to $GITHUB_STEP_SUMMARY so divergences
-      # surface in the workflow run UI without failing the job. The
-      # parallel-run period is for observation; we'll switch canonical
-      # ownership once diffs are clean for ~a week.
+      # Output is teed to BOTH stdout (so `gh run view --log` shows the
+      # verdicts) AND $GITHUB_STEP_SUMMARY (so the Actions UI renders
+      # them as a panel). Per the pipeline-check-cli-readable rule.
+      # The parallel-run period is for observation; we'll switch
+      # canonical ownership once diffs are clean for ~a week.
 
       - name: Compare canonical vs Kotlin shadow output
         if: always()
@@ -184,7 +185,7 @@ jobs:
 
             echo ""
             echo "_Validation runs alongside Python during the cut-over period. Python output remains canonical until parity is confirmed._"
-          } >> "$GITHUB_STEP_SUMMARY"
+          } | tee -a "$GITHUB_STEP_SUMMARY"
 
       - name: Rebuild pipeline dashboard
         if: always()

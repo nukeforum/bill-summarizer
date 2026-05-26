@@ -14,8 +14,11 @@ concurrency:
 
 jobs:
   backfill:
+    # Bumped from 20 → 30 minutes for the parallel-run period: the
+    # workflow now runs Python *and* Kotlin backfillers, plus Gradle
+    # warm-up on a cold cache. Revert when the cut-over completes.
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - name: Checkout
         # See update-bills.yml — PAT needed so the push-back step can
@@ -23,6 +26,8 @@ jobs:
         uses: actions/checkout@v6
         with:
           token: ${{ secrets.PIPELINE_PUSH_TOKEN }}
+
+      # --- Python tooling (canonical, writes to docs/data/ + data-pipeline/state/) ---
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -38,10 +43,189 @@ jobs:
       - name: Install Python dependencies
         run: uv pip install --system -r data-pipeline/requirements.txt
 
-      - name: Backfill bills
+      # --- Kotlin tooling (parallel-run, writes to /tmp shadow dirs) ---
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      # --- Pre-stage Kotlin's shadow input from the current canonical ---
+      # Backfill mutates BOTH the per-Congress manifest AND the cursor
+      # state file. To compare apples-to-apples, Kotlin must start from
+      # the SAME pre-Python base for both — otherwise the comparison
+      # measures "Python's effect on Kotlin's already-mutated input"
+      # instead of "given identical input, do they produce identical
+      # output?"
+      #
+      # The snapshot has to happen BEFORE the Python step runs, since
+      # Python mutates the canonical files in place.
+      - name: Stage Kotlin shadow input from canonical (pre-Python snapshot)
+        run: |
+          mkdir -p /tmp/kotlin-bills-shadow /tmp/kotlin-bills-state
+          # Per-Congress manifests — Kotlin merges into these.
+          cp docs/data/congress*_bills.json /tmp/kotlin-bills-shadow/ 2>/dev/null || true
+          # NOT copying congresses.json — Kotlin rebuilds it from the
+          # manifests in the shadow dir, and we want a "missing index"
+          # failure to surface if the rebuild step misfires.
+          # Backfill cursor — Kotlin advances from the same offset
+          # Python is about to consume.
+          cp data-pipeline/state/backfill_state.json /tmp/kotlin-bills-state/ 2>/dev/null || true
+          ls -la /tmp/kotlin-bills-shadow/ /tmp/kotlin-bills-state/ || true
+
+      # --- Python: canonical backfill ---
+
+      - name: Backfill bills (Python — canonical)
         env:
           CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
         run: python data-pipeline/scripts/backfill_bills.py
+
+      # --- Kotlin: shadow backfill for parity validation ---
+      # Runs second so Python's fresh canonical output is available
+      # for the comparison step. Both backfillers see the same upstream
+      # API state — backfill walks historical Congresses, where the
+      # API responses are stable across the ~minute gap between runs.
+
+      - name: Backfill bills (Kotlin — shadow validation)
+        # Parallel-run safety: never fail the canonical run because the
+        # Kotlin port hit a transient issue. Failure surfaces in the
+        # job UI (the step is marked red and the parity-check step
+        # logs the missing shadow file) but `safe-push` of Python's
+        # canonical output still proceeds.
+        continue-on-error: true
+        env:
+          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
+        working-directory: pipeline
+        run: ./gradlew :cli:run --args="backfill-bills --output-dir /tmp/kotlin-bills-shadow --state-dir /tmp/kotlin-bills-state" --no-daemon
+
+      # --- Compare Python (canonical) vs Kotlin (shadow) ---
+      # Output is teed to BOTH stdout (so `gh run view --log` shows the
+      # verdicts) AND $GITHUB_STEP_SUMMARY (so the Actions UI renders
+      # them as a panel). Per the pipeline-check-cli-readable rule.
+
+      - name: Compare canonical vs Kotlin shadow output
+        if: always()
+        env:
+          CANONICAL_DIR: docs/data
+          SHADOW_DIR: /tmp/kotlin-bills-shadow
+          CANONICAL_STATE: data-pipeline/state/backfill_state.json
+          SHADOW_STATE: /tmp/kotlin-bills-state/backfill_state.json
+        run: |
+          set +e  # never fail the job on diff results during parallel-run
+          {
+            echo "## backfill-bills parity check"
+            echo ""
+            echo "Comparing \`$CANONICAL_DIR\` (Python, canonical) vs \`$SHADOW_DIR\` (Kotlin)."
+            echo ""
+            for canonical in "$CANONICAL_DIR"/congress*_bills.json; do
+              [ -f "$canonical" ] || continue
+              fname=$(basename "$canonical")
+              shadow="$SHADOW_DIR/$fname"
+              if [ ! -f "$shadow" ]; then
+                echo "- ❌ \`$fname\`: shadow file missing — Kotlin did not produce output"
+                continue
+              fi
+              # Compare just the `bills` array — ignore the wrapper's
+              # `generated_at` (timestamp will always differ).
+              py_bills=$(mktemp)
+              kt_bills=$(mktemp)
+              jq -S '.bills' "$canonical" > "$py_bills"
+              jq -S '.bills' "$shadow"    > "$kt_bills"
+              py_count=$(jq '.bills | length' "$canonical")
+              kt_count=$(jq '.bills | length' "$shadow")
+              if diff -q "$py_bills" "$kt_bills" >/dev/null; then
+                echo "- ✅ \`$fname\`: identical bills array ($py_count entries)"
+              else
+                echo "- ⚠️  \`$fname\`: bills arrays differ (Python: $py_count, Kotlin: $kt_count)"
+                echo ""
+                echo "<details><summary>diff (truncated to 400 lines)</summary>"
+                echo ""
+                echo '```diff'
+                diff -u "$py_bills" "$kt_bills" | head -400
+                echo '```'
+                echo "</details>"
+                echo ""
+              fi
+              rm -f "$py_bills" "$kt_bills"
+            done
+
+            # --- congresses.json index parity ---
+            # Both Python's rebuild_index() and Kotlin's FileCongressesIndexStore.rebuild()
+            # walk the per-Congress manifests in the output dir to derive the index.
+            # `generated_at` differs by ~minutes between the two runs, so strip it.
+            py_idx="$CANONICAL_DIR/congresses.json"
+            kt_idx="$SHADOW_DIR/congresses.json"
+            echo ""
+            if [ ! -f "$py_idx" ]; then
+              echo "- ⏭️  \`congresses.json\`: canonical missing — skipping index parity"
+            elif [ ! -f "$kt_idx" ]; then
+              echo "- ❌ \`congresses.json\`: shadow file missing — Kotlin did not produce index"
+            else
+              py_idx_norm=$(mktemp)
+              kt_idx_norm=$(mktemp)
+              jq -S 'del(.generated_at)' "$py_idx" > "$py_idx_norm"
+              jq -S 'del(.generated_at)' "$kt_idx" > "$kt_idx_norm"
+              if diff -q "$py_idx_norm" "$kt_idx_norm" >/dev/null; then
+                py_entries=$(jq '.congresses | length' "$py_idx")
+                echo "- ✅ \`congresses.json\`: identical index ($py_entries entries, ignoring generated_at)"
+              else
+                py_entries=$(jq '.congresses | length' "$py_idx")
+                kt_entries=$(jq '.congresses | length' "$kt_idx")
+                echo "- ⚠️  \`congresses.json\`: index differs (Python: $py_entries entries, Kotlin: $kt_entries entries)"
+                echo ""
+                echo "<details><summary>diff (truncated to 200 lines, generated_at stripped)</summary>"
+                echo ""
+                echo '```diff'
+                diff -u "$py_idx_norm" "$kt_idx_norm" | head -200
+                echo '```'
+                echo "</details>"
+                echo ""
+              fi
+              rm -f "$py_idx_norm" "$kt_idx_norm"
+            fi
+
+            # --- backfill_state.json parity ---
+            # Unique to backfill: the cursor advancement
+            # (active_congress, active_offset, completed[]) MUST match
+            # between Python and Kotlin. A divergence here means Kotlin
+            # would either skip work or re-fetch already-completed bills
+            # if canonical ownership were flipped. The state file is
+            # small and structured — diff the whole thing.
+            echo ""
+            if [ ! -f "$CANONICAL_STATE" ]; then
+              echo "- ⏭️  \`backfill_state.json\`: canonical missing — skipping state parity"
+            elif [ ! -f "$SHADOW_STATE" ]; then
+              echo "- ❌ \`backfill_state.json\`: shadow file missing — Kotlin did not persist state"
+            else
+              py_state_norm=$(mktemp)
+              kt_state_norm=$(mktemp)
+              jq -S '.' "$CANONICAL_STATE" > "$py_state_norm"
+              jq -S '.' "$SHADOW_STATE"    > "$kt_state_norm"
+              if diff -q "$py_state_norm" "$kt_state_norm" >/dev/null; then
+                py_offset=$(jq -r '.active_offset // "null"' "$CANONICAL_STATE")
+                py_congress=$(jq -r '.active_congress // "null"' "$CANONICAL_STATE")
+                echo "- ✅ \`backfill_state.json\`: identical state (active_congress=$py_congress, active_offset=$py_offset)"
+              else
+                echo "- ⚠️  \`backfill_state.json\`: state differs — Kotlin's cursor advancement diverged from Python's"
+                echo ""
+                echo "<details><summary>diff (full state, JSON-sorted)</summary>"
+                echo ""
+                echo '```diff'
+                diff -u "$py_state_norm" "$kt_state_norm"
+                echo '```'
+                echo "</details>"
+                echo ""
+              fi
+              rm -f "$py_state_norm" "$kt_state_norm"
+            fi
+
+            echo ""
+            echo "_Validation runs alongside Python during the cut-over period. Python output remains canonical until parity is confirmed._"
+          } | tee -a "$GITHUB_STEP_SUMMARY"
 
       - name: Rebuild pipeline dashboard
         if: always()
