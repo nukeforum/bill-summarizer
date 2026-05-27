@@ -4,13 +4,10 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.informedcitizen.data.repository.BillRepository
 import com.informedcitizen.data.repository.MemberRepository
-import com.informedcitizen.data.repository.RepsContactPreferenceRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
-import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import java.time.LocalDate
@@ -20,15 +17,10 @@ import javax.inject.Inject
 class MemberDetailViewModel @Inject constructor(
     private val members: MemberRepository,
     private val bills: BillRepository,
-    private val contactPrefs: RepsContactPreferenceRepository,
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(MemberDetailUiState())
     val uiState: StateFlow<MemberDetailUiState> = _uiState.asStateFlow()
-
-    val hasSeenWebsiteFallbackDialog: StateFlow<Boolean> = contactPrefs
-        .hasSeenWebsiteFallbackDialog
-        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), false)
 
     internal var congressProvider: () -> Int = { computeCurrentCongress() }
 
@@ -39,11 +31,11 @@ class MemberDetailViewModel @Inject constructor(
         viewModelScope.launch {
             val congress = congressProvider()
             // Pre-warm the bill cache so isInLocalCache returns accurate
-            // results when the user taps a sponsored/cosponsored row, even if
-            // they navigated straight to MemberDetail without ever opening
-            // the Bills tab. getBills() is idempotent — once cached it
-            // returns immediately. Fire-and-forget on purpose; we don't want
-            // to block the member render on the bills fetch.
+            // results when the user taps a sponsored/cosponsored row, even
+            // if they navigated straight to MemberDetail without ever
+            // opening the Bills tab. getBills() is idempotent — once
+            // cached it returns immediately. Fire-and-forget on purpose;
+            // we don't want to block the member render on the bills fetch.
             launch { bills.getBills() }
             try {
                 val member = members.getMember(bioguideId, congress)
@@ -65,8 +57,4 @@ class MemberDetailViewModel @Inject constructor(
     }
 
     fun isInLocalCache(billId: String): Boolean = bills.containsBillId(billId)
-
-    fun markWebsiteFallbackDialogSeen() {
-        viewModelScope.launch { contactPrefs.markWebsiteFallbackDialogSeen() }
-    }
 }

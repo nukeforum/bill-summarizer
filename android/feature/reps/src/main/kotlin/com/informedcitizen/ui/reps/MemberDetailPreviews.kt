@@ -14,12 +14,10 @@ import com.informedcitizen.ui.preview.sampleSenatorD
 private fun PreviewMemberDetailLoading() = PreviewWrap {
     MemberDetailContent(
         state = MemberDetailUiState(isLoading = true),
-        hasSeenWebsiteFallbackDialog = false,
         innerPadding = PaddingValues(0.dp),
         onLegislationClick = {},
         onCallPhone = {},
         onOpenUrl = {},
-        onMarkWebsiteFallbackDialogSeen = {},
     )
 }
 
@@ -33,12 +31,10 @@ private fun PreviewMemberDetailLoaded() = PreviewWrap {
             sponsored = sampleLegislation,
             cosponsored = sampleLegislation,
         ),
-        hasSeenWebsiteFallbackDialog = false,
         innerPadding = PaddingValues(0.dp),
         onLegislationClick = {},
         onCallPhone = {},
         onOpenUrl = {},
-        onMarkWebsiteFallbackDialogSeen = {},
     )
 }
 
@@ -52,12 +48,10 @@ private fun PreviewMemberDetailLoadedEmpty() = PreviewWrap {
             sponsored = emptyList(),
             cosponsored = emptyList(),
         ),
-        hasSeenWebsiteFallbackDialog = false,
         innerPadding = PaddingValues(0.dp),
         onLegislationClick = {},
         onCallPhone = {},
         onOpenUrl = {},
-        onMarkWebsiteFallbackDialogSeen = {},
     )
 }
 
@@ -70,11 +64,9 @@ private fun PreviewMemberDetailError() = PreviewWrap {
             member = null,
             errorMessage = "Couldn't load this representative.",
         ),
-        hasSeenWebsiteFallbackDialog = false,
         innerPadding = PaddingValues(0.dp),
         onLegislationClick = {},
         onCallPhone = {},
         onOpenUrl = {},
-        onMarkWebsiteFallbackDialogSeen = {},
     )
 }

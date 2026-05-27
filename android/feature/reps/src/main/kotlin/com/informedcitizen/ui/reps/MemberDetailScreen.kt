@@ -30,10 +30,12 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.informedcitizen.pipeline.model.Member
 import com.informedcitizen.pipeline.model.MemberLegislationItem
 import com.informedcitizen.data.util.congressGovUrlFor
-import com.informedcitizen.ui.components.MemberCard
 import com.informedcitizen.ui.components.MemberLegislationRow
+import com.informedcitizen.ui.components.MemberRowWithHelp
+import com.informedcitizen.ui.components.availableContactMethods
 import com.informedcitizen.ui.util.dialPhone
 import com.informedcitizen.ui.util.openInCustomTab
 
@@ -49,7 +51,6 @@ fun MemberDetailScreen(
     LaunchedEffect(bioguideId) { viewModel.load(bioguideId) }
 
     val state by viewModel.uiState.collectAsStateWithLifecycle()
-    val hasSeenWebsiteFallbackDialog by viewModel.hasSeenWebsiteFallbackDialog.collectAsStateWithLifecycle()
     val context = LocalContext.current
 
     Scaffold(
@@ -67,7 +68,6 @@ fun MemberDetailScreen(
     ) { padding ->
         MemberDetailContent(
             state = state,
-            hasSeenWebsiteFallbackDialog = hasSeenWebsiteFallbackDialog,
             innerPadding = padding,
             onLegislationClick = { item ->
                 if (viewModel.isInLocalCache(item.id)) {
@@ -79,7 +79,6 @@ fun MemberDetailScreen(
             },
             onCallPhone = { phone -> dialPhone(context, phone) },
             onOpenUrl = { url -> openInCustomTab(context, url) },
-            onMarkWebsiteFallbackDialogSeen = viewModel::markWebsiteFallbackDialogSeen,
         )
     }
 }
@@ -87,31 +86,25 @@ fun MemberDetailScreen(
 @Composable
 internal fun MemberDetailContent(
     state: MemberDetailUiState,
-    hasSeenWebsiteFallbackDialog: Boolean,
     innerPadding: PaddingValues,
     onLegislationClick: (MemberLegislationItem) -> Unit,
     onCallPhone: (String) -> Unit,
     onOpenUrl: (String) -> Unit,
-    onMarkWebsiteFallbackDialogSeen: () -> Unit,
 ) {
     var tab by remember { mutableIntStateOf(0) }
-    var pendingFallbackUrl by remember { mutableStateOf<String?>(null) }
+    var helpDialogMember by remember { mutableStateOf<Member?>(null) }
 
     Column(modifier = Modifier.padding(innerPadding).fillMaxSize()) {
         when {
             state.isLoading -> CircularProgressIndicator()
             state.member != null -> {
-                MemberCard(
+                MemberRowWithHelp(
                     member = state.member,
                     onClick = {},
                     onCallPhone = onCallPhone,
-                    onOpenContactPage = { url, isFallback ->
-                        if (isFallback && !hasSeenWebsiteFallbackDialog) {
-                            pendingFallbackUrl = url
-                        } else {
-                            onOpenUrl(url)
-                        }
-                    },
+                    onOpenContactForm = onOpenUrl,
+                    onOpenWebsite = onOpenUrl,
+                    onShowHelp = { helpDialogMember = state.member },
                 )
                 PrimaryTabRow(selectedTabIndex = tab) {
                     Tab(
@@ -144,14 +137,11 @@ internal fun MemberDetailContent(
         }
     }
 
-    pendingFallbackUrl?.let { url ->
-        WebsiteFallbackDialog(
-            onConfirm = {
-                onMarkWebsiteFallbackDialogSeen()
-                onOpenUrl(url)
-                pendingFallbackUrl = null
-            },
-            onDismiss = { pendingFallbackUrl = null },
+    helpDialogMember?.let { member ->
+        ContactHelpDialog(
+            member = member,
+            methods = member.availableContactMethods(),
+            onDismiss = { helpDialogMember = null },
         )
     }
 }
