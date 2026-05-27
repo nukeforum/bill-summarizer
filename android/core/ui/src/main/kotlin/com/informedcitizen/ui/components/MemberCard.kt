@@ -2,8 +2,10 @@ package com.informedcitizen.ui.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -17,6 +19,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.VerticalDivider
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -31,9 +34,11 @@ fun MemberCard(
     member: Member,
     onClick: () -> Unit,
     onCallPhone: (String) -> Unit,
-    onOpenContactPage: (url: String, isFallback: Boolean) -> Unit,
+    onOpenContactForm: (String) -> Unit,
+    onOpenWebsite: (String) -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    val methods = member.availableContactMethods()
     Card(
         modifier = modifier
             .fillMaxWidth()
@@ -64,54 +69,54 @@ fun MemberCard(
                     style = MaterialTheme.typography.bodyMedium,
                 )
             }
-            MemberContactEndRegion(
-                phone = member.phone,
-                contactForm = member.contactForm,
-                website = member.website,
+            SegmentedContactEndRegion(
+                methods = methods,
                 onCallPhone = onCallPhone,
-                onOpenContactPage = onOpenContactPage,
+                onOpenContactForm = onOpenContactForm,
+                onOpenWebsite = onOpenWebsite,
             )
         }
     }
 }
 
 @Composable
-private fun MemberContactEndRegion(
-    phone: String?,
-    contactForm: String?,
-    website: String?,
+internal fun SegmentedContactEndRegion(
+    methods: List<ContactMethod>,
     onCallPhone: (String) -> Unit,
-    onOpenContactPage: (url: String, isFallback: Boolean) -> Unit,
+    onOpenContactForm: (String) -> Unit,
+    onOpenWebsite: (String) -> Unit,
 ) {
-    val phoneValue = phone?.takeIf { it.isNotBlank() }
-    val contactFormValue = contactForm?.takeIf { it.isNotBlank() }
-    val websiteValue = website?.takeIf { it.isNotBlank() }
-    if (phoneValue == null && contactFormValue == null && websiteValue == null) return
+    if (methods.isEmpty()) return
     Row(
-        modifier = Modifier.padding(end = 4.dp),
+        modifier = Modifier.height(80.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {
-        if (phoneValue != null) {
-            IconButton(onClick = { onCallPhone(phoneValue) }) {
-                Icon(
-                    Icons.Filled.Phone,
-                    contentDescription = "Call ${phoneValue.replace(Regex("[^0-9+]"), " ").trim()}",
-                )
-            }
-        }
-        if (contactFormValue != null) {
-            IconButton(onClick = { onOpenContactPage(contactFormValue, false) }) {
-                Icon(
-                    Icons.AutoMirrored.Filled.Send,
-                    contentDescription = "Open contact form",
-                )
-            }
-        } else if (websiteValue != null) {
-            IconButton(onClick = { onOpenContactPage(websiteValue, true) }) {
-                Icon(
-                    Icons.AutoMirrored.Filled.OpenInNew,
-                    contentDescription = "Open official website",
-                )
+        methods.forEachIndexed { index, method ->
+            if (index > 0) VerticalDivider(modifier = Modifier.fillMaxHeight())
+            Box(
+                modifier = Modifier.width(52.dp).fillMaxHeight(),
+                contentAlignment = Alignment.Center,
+            ) {
+                when (method) {
+                    is ContactMethod.Phone -> IconButton(onClick = { onCallPhone(method.number) }) {
+                        Icon(
+                            Icons.Filled.Phone,
+                            contentDescription = "Call ${method.number.replace(Regex("[^0-9+]"), " ").trim()}",
+                        )
+                    }
+                    is ContactMethod.ContactForm -> IconButton(onClick = { onOpenContactForm(method.url) }) {
+                        Icon(
+                            Icons.AutoMirrored.Filled.Send,
+                            contentDescription = "Open contact form",
+                        )
+                    }
+                    is ContactMethod.Website -> IconButton(onClick = { onOpenWebsite(method.url) }) {
+                        Icon(
+                            Icons.AutoMirrored.Filled.OpenInNew,
+                            contentDescription = "Open official website",
+                        )
+                    }
+                }
             }
         }
     }

@@ -10,61 +10,40 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.informedcitizen.ui.preview.PreviewWrap
 import com.informedcitizen.ui.preview.sampleMember
-import com.informedcitizen.ui.preview.sampleRepresentative
-import com.informedcitizen.ui.preview.sampleSenatorD
-import com.informedcitizen.ui.preview.sampleSenatorR
 
 @PreviewLightDark
 @Composable
-private fun PreviewMemberCards() = PreviewWrap(modifier = Modifier) {
+private fun PreviewMemberCards_AllPermutations() = PreviewWrap(modifier = Modifier) {
     Column(
         modifier = Modifier.fillMaxWidth().padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
-        // Direct contact form (most common in production for senators).
-        MemberCard(
-            member = sampleSenatorD,
-            onClick = {},
-            onCallPhone = {},
-            onOpenContactPage = { _, _ -> },
-        )
-        MemberCard(
-            member = sampleSenatorR,
-            onClick = {},
-            onCallPhone = {},
-            onOpenContactPage = { _, _ -> },
-        )
-        // Website fallback (typical for ~58% of House reps).
-        MemberCard(
-            member = sampleRepresentative,
-            onClick = {},
-            onCallPhone = {},
-            onOpenContactPage = { _, _ -> },
-        )
-        // Phone only — no contact URL of any kind.
-        MemberCard(
-            member = sampleMember(
-                bioguideId = "Z000099",
-                name = "Phone Only Senator",
-                contactForm = null,
-                website = null,
-            ),
-            onClick = {},
-            onCallPhone = {},
-            onOpenContactPage = { _, _ -> },
-        )
-        // Nothing — collapses to the original layout.
-        MemberCard(
-            member = sampleMember(
-                bioguideId = "Z000100",
-                name = "No Contact Data Senator",
-                phone = null,
-                contactForm = null,
-                website = null,
-            ),
-            onClick = {},
-            onCallPhone = {},
-            onOpenContactPage = { _, _ -> },
-        )
+        // 3 methods: phone + form + website
+        Card3(member = sampleMember(name = "Phone + Form + Website"))
+        // 2 methods: phone + form
+        Card3(member = sampleMember(name = "Phone + Form", website = null))
+        // 2 methods: phone + website
+        Card3(member = sampleMember(name = "Phone + Website", contactForm = null))
+        // 2 methods: form + website
+        Card3(member = sampleMember(name = "Form + Website", phone = null))
+        // 1 method: phone only
+        Card3(member = sampleMember(name = "Phone Only", contactForm = null, website = null))
+        // 1 method: form only
+        Card3(member = sampleMember(name = "Form Only", phone = null, website = null))
+        // 1 method: website only
+        Card3(member = sampleMember(name = "Website Only", phone = null, contactForm = null))
+        // 0 methods
+        Card3(member = sampleMember(name = "No Methods", phone = null, contactForm = null, website = null))
     }
+}
+
+@Composable
+private fun Card3(member: com.informedcitizen.pipeline.model.Member) {
+    MemberCard(
+        member = member,
+        onClick = {},
+        onCallPhone = {},
+        onOpenContactForm = {},
+        onOpenWebsite = {},
+    )
 }
