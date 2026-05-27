@@ -24,4 +24,6 @@ dependencies {
     implementation(libs.androidx.core.ktx)
 
     // androidx.core.text.HtmlCompat used elsewhere in core:network; not needed here.
+
+    testImplementation(libs.junit)
 }
