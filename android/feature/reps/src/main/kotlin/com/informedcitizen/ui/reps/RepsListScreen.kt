@@ -28,7 +28,9 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.informedcitizen.ui.components.MemberCard
+import com.informedcitizen.pipeline.model.Member
+import com.informedcitizen.ui.components.MemberRowWithHelp
+import com.informedcitizen.ui.components.availableContactMethods
 import com.informedcitizen.ui.util.dialPhone
 import com.informedcitizen.ui.util.openInCustomTab
 
@@ -40,35 +42,30 @@ fun RepsListScreen(
     viewModel: RepsListViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
-    val hasSeenWebsiteFallbackDialog by viewModel.hasSeenWebsiteFallbackDialog.collectAsStateWithLifecycle()
     val context = LocalContext.current
     RepsListContent(
         state = state,
-        hasSeenWebsiteFallbackDialog = hasSeenWebsiteFallbackDialog,
         modifier = modifier,
         onMemberClick = onMemberClick,
         onChangeLocation = onChangeLocation,
         onDeleteSavedReps = viewModel::deleteSavedReps,
         onCallPhone = { phone -> dialPhone(context, phone) },
         onOpenUrl = { url -> openInCustomTab(context, url) },
-        onMarkWebsiteFallbackDialogSeen = viewModel::markWebsiteFallbackDialogSeen,
     )
 }
 
 @Composable
 internal fun RepsListContent(
     state: RepsListUiState,
-    hasSeenWebsiteFallbackDialog: Boolean,
     onMemberClick: (String) -> Unit,
     onChangeLocation: () -> Unit,
     onDeleteSavedReps: () -> Unit,
     onCallPhone: (String) -> Unit,
     onOpenUrl: (String) -> Unit,
-    onMarkWebsiteFallbackDialogSeen: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val scroll = rememberScrollState()
-    var pendingFallbackUrl by remember { mutableStateOf<String?>(null) }
+    var helpDialogMember by remember { mutableStateOf<Member?>(null) }
 
     Column(
         modifier = modifier
@@ -127,17 +124,13 @@ internal fun RepsListContent(
                     )
                 } else {
                     state.senators.forEach { m ->
-                        MemberCard(
+                        MemberRowWithHelp(
                             member = m,
                             onClick = { onMemberClick(m.bioguideId) },
                             onCallPhone = onCallPhone,
-                            onOpenContactPage = { url, isFallback ->
-                                if (isFallback && !hasSeenWebsiteFallbackDialog) {
-                                    pendingFallbackUrl = url
-                                } else {
-                                    onOpenUrl(url)
-                                }
-                            },
+                            onOpenContactForm = onOpenUrl,
+                            onOpenWebsite = onOpenUrl,
+                            onShowHelp = { helpDialogMember = m },
                         )
                     }
                 }
@@ -155,17 +148,13 @@ internal fun RepsListContent(
                     )
                 } else {
                     state.house.forEach { m ->
-                        MemberCard(
+                        MemberRowWithHelp(
                             member = m,
                             onClick = { onMemberClick(m.bioguideId) },
                             onCallPhone = onCallPhone,
-                            onOpenContactPage = { url, isFallback ->
-                                if (isFallback && !hasSeenWebsiteFallbackDialog) {
-                                    pendingFallbackUrl = url
-                                } else {
-                                    onOpenUrl(url)
-                                }
-                            },
+                            onOpenContactForm = onOpenUrl,
+                            onOpenWebsite = onOpenUrl,
+                            onShowHelp = { helpDialogMember = m },
                         )
                     }
                 }
@@ -175,14 +164,11 @@ internal fun RepsListContent(
                 Text("Couldn't load: ${state.message}", color = MaterialTheme.colorScheme.error)
         }
 
-        pendingFallbackUrl?.let { url ->
-            WebsiteFallbackDialog(
-                onConfirm = {
-                    onMarkWebsiteFallbackDialogSeen()
-                    onOpenUrl(url)
-                    pendingFallbackUrl = null
-                },
-                onDismiss = { pendingFallbackUrl = null },
+        helpDialogMember?.let { member ->
+            ContactHelpDialog(
+                member = member,
+                methods = member.availableContactMethods(),
+                onDismiss = { helpDialogMember = null },
             )
         }
     }

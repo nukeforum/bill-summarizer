@@ -13,13 +13,11 @@ import com.informedcitizen.ui.preview.sampleSenatorR
 private fun PreviewRepsListLoading() = PreviewWrap {
     RepsListContent(
         state = RepsListUiState.Loading,
-        hasSeenWebsiteFallbackDialog = false,
         onMemberClick = {},
         onChangeLocation = {},
         onDeleteSavedReps = {},
         onCallPhone = {},
         onOpenUrl = {},
-        onMarkWebsiteFallbackDialogSeen = {},
     )
 }
 
@@ -28,13 +26,11 @@ private fun PreviewRepsListLoading() = PreviewWrap {
 private fun PreviewRepsListNoLocation() = PreviewWrap {
     RepsListContent(
         state = RepsListUiState.NoLocation,
-        hasSeenWebsiteFallbackDialog = false,
         onMemberClick = {},
         onChangeLocation = {},
         onDeleteSavedReps = {},
         onCallPhone = {},
         onOpenUrl = {},
-        onMarkWebsiteFallbackDialogSeen = {},
     )
 }
 
@@ -46,13 +42,11 @@ private fun PreviewRepsListLoadedFull() = PreviewWrap {
             senators = listOf(sampleSenatorD, sampleSenatorR),
             house = listOf(sampleRepresentative),
         ),
-        hasSeenWebsiteFallbackDialog = false,
         onMemberClick = {},
         onChangeLocation = {},
         onDeleteSavedReps = {},
         onCallPhone = {},
         onOpenUrl = {},
-        onMarkWebsiteFallbackDialogSeen = {},
     )
 }
 
@@ -64,13 +58,11 @@ private fun PreviewRepsListLoadedEmptySenators() = PreviewWrap {
             senators = emptyList(),
             house = listOf(sampleRepresentative),
         ),
-        hasSeenWebsiteFallbackDialog = false,
         onMemberClick = {},
         onChangeLocation = {},
         onDeleteSavedReps = {},
         onCallPhone = {},
         onOpenUrl = {},
-        onMarkWebsiteFallbackDialogSeen = {},
     )
 }
 
@@ -79,13 +71,11 @@ private fun PreviewRepsListLoadedEmptySenators() = PreviewWrap {
 private fun PreviewRepsListStaleSavedReps() = PreviewWrap {
     RepsListContent(
         state = RepsListUiState.StaleSavedReps,
-        hasSeenWebsiteFallbackDialog = false,
         onMemberClick = {},
         onChangeLocation = {},
         onDeleteSavedReps = {},
         onCallPhone = {},
         onOpenUrl = {},
-        onMarkWebsiteFallbackDialogSeen = {},
     )
 }
 
@@ -94,12 +84,10 @@ private fun PreviewRepsListStaleSavedReps() = PreviewWrap {
 private fun PreviewRepsListError() = PreviewWrap {
     RepsListContent(
         state = RepsListUiState.Error(message = "Network unavailable."),
-        hasSeenWebsiteFallbackDialog = false,
         onMemberClick = {},
         onChangeLocation = {},
         onDeleteSavedReps = {},
         onCallPhone = {},
         onOpenUrl = {},
-        onMarkWebsiteFallbackDialogSeen = {},
     )
 }

@@ -3,15 +3,12 @@ package com.informedcitizen.ui.reps
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.informedcitizen.data.repository.MemberRepository
-import com.informedcitizen.data.repository.RepsContactPreferenceRepository
 import com.informedcitizen.data.repository.SavedRepsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.collectLatest
-import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import java.time.LocalDate
 import javax.inject.Inject
@@ -23,29 +20,17 @@ internal fun computeCurrentCongress(today: LocalDate = LocalDate.now()): Int =
 class RepsListViewModel @Inject constructor(
     private val savedReps: SavedRepsRepository,
     private val members: MemberRepository,
-    private val contactPrefs: RepsContactPreferenceRepository,
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow<RepsListUiState>(RepsListUiState.Loading)
     val uiState: StateFlow<RepsListUiState> = _uiState.asStateFlow()
 
-    val hasSeenWebsiteFallbackDialog: StateFlow<Boolean> = contactPrefs
-        .hasSeenWebsiteFallbackDialog
-        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), false)
-
-    // Allow tests to inject a deterministic congress.
     internal var congressProvider: () -> Int = ::computeCurrentCongress
 
-    init {
-        observeSavedReps()
-    }
+    init { observeSavedReps() }
 
     fun deleteSavedReps() {
         viewModelScope.launch { savedReps.forget() }
-    }
-
-    fun markWebsiteFallbackDialogSeen() {
-        viewModelScope.launch { contactPrefs.markWebsiteFallbackDialogSeen() }
     }
 
     private fun observeSavedReps() {
@@ -64,9 +49,6 @@ class RepsListViewModel @Inject constructor(
                     val foundIds = (out.house + out.senators).map { it.bioguideId }.toSet()
                     val missing = ids - foundIds
                     if (missing.isNotEmpty()) {
-                        // Saved IDs that no longer appear in the index — most likely
-                        // a Congress rollover (retirement, redistricting, new
-                        // election cycle). Prompt the user to refresh their picks.
                         RepsListUiState.StaleSavedReps
                     } else {
                         RepsListUiState.Loaded(out.house, out.senators)
