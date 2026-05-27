@@ -16,7 +16,6 @@ import com.informedcitizen.pipeline.model.SessionCalendar
 import com.informedcitizen.pipeline.model.Sponsor
 import com.informedcitizen.data.repository.BillRepository
 import com.informedcitizen.data.repository.MemberRepository
-import com.informedcitizen.data.repository.RepsContactPreferenceRepository
 import com.informedcitizen.data.repository.RepsForLocation
 import com.informedcitizen.testutil.FakeBillCache
 import com.informedcitizen.testutil.InMemoryPreferencesDataStore
@@ -110,7 +109,7 @@ class MemberDetailViewModelTest {
             cosponsoredById = mapOf("A1" to MemberLegislation("A1", 119, "cosponsored", "x", listOf(anItem("hr2-119"), anItem("hr3-119")))),
         )
         val bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
-        val vm = MemberDetailViewModel(members, bills, RepsContactPreferenceRepository(InMemoryPreferencesDataStore())).also { it.congressProvider = { 119 } }
+        val vm = MemberDetailViewModel(members, bills).also { it.congressProvider = { 119 } }
         vm.load("A1")
         val s = vm.uiState.first { !it.isLoading }
         assertNotNull(s.member)
@@ -127,25 +126,12 @@ class MemberDetailViewModelTest {
             cosponsoredById = mapOf("A1" to null),
         )
         val bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
-        val vm = MemberDetailViewModel(members, bills, RepsContactPreferenceRepository(InMemoryPreferencesDataStore())).also { it.congressProvider = { 119 } }
+        val vm = MemberDetailViewModel(members, bills).also { it.congressProvider = { 119 } }
         vm.load("A1")
         val s = vm.uiState.first { !it.isLoading }
         assertNotNull(s.member)
         assertEquals(emptyList<MemberLegislationItem>(), s.sponsored)
         assertEquals(emptyList<MemberLegislationItem>(), s.cosponsored)
-    }
-
-    @Test
-    fun `markWebsiteFallbackDialogSeen flips StateFlow`() = runTest {
-        val contactPrefs = RepsContactPreferenceRepository(InMemoryPreferencesDataStore())
-        val vm = MemberDetailViewModel(
-            members = DetailStubMemberRepository(),
-            bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache()),
-            contactPrefs = contactPrefs,
-        ).also { it.congressProvider = { 119 } }
-        assertEquals(false, vm.hasSeenWebsiteFallbackDialog.first())
-        vm.markWebsiteFallbackDialogSeen()
-        assertEquals(true, vm.hasSeenWebsiteFallbackDialog.first())
     }
 
     @Test
@@ -164,7 +150,7 @@ class MemberDetailViewModelTest {
         val getResult = bills.getBills(forceRefresh = true)
         assertTrue(getResult.isSuccess)
 
-        val vm = MemberDetailViewModel(members, bills, RepsContactPreferenceRepository(InMemoryPreferencesDataStore())).also { it.congressProvider = { 119 } }
+        val vm = MemberDetailViewModel(members, bills).also { it.congressProvider = { 119 } }
         vm.load("A1")
         vm.uiState.first { !it.isLoading }
         assertTrue(vm.isInLocalCache("hr1-119"))

@@ -4,7 +4,6 @@ import com.informedcitizen.pipeline.model.Member
 import com.informedcitizen.pipeline.model.MemberLegislation
 import com.informedcitizen.pipeline.model.MembersIndex
 import com.informedcitizen.data.repository.MemberRepository
-import com.informedcitizen.data.repository.RepsContactPreferenceRepository
 import com.informedcitizen.data.repository.RepsForLocation
 import com.informedcitizen.data.repository.SavedRepsRepository
 import com.informedcitizen.testutil.InMemoryPreferencesDataStore
@@ -58,13 +57,12 @@ class RepsListViewModelTest {
     @After fun tearDown() { Dispatchers.resetMain() }
 
     private fun newPrefsRepo() = SavedRepsRepository(InMemoryPreferencesDataStore())
-    private fun newContactPrefsRepo() = RepsContactPreferenceRepository(InMemoryPreferencesDataStore())
 
     @Test
     fun `emits NoLocation when no ids saved`() = runTest {
         val prefs = newPrefsRepo()  // default: empty
         val members = StubMemberRepository()
-        val vm = RepsListViewModel(prefs, members, newContactPrefsRepo()).also { it.congressProvider = { 119 } }
+        val vm = RepsListViewModel(prefs, members).also { it.congressProvider = { 119 } }
         val firstNonLoading = vm.uiState.first { it !is RepsListUiState.Loading }
         assertEquals(RepsListUiState.NoLocation, firstNonLoading)
     }
@@ -79,7 +77,7 @@ class RepsListViewModelTest {
                 senators = listOf(aMember("S1", "senate"), aMember("S2", "senate")),
             ),
         )
-        val vm = RepsListViewModel(prefs, members, newContactPrefsRepo()).also { it.congressProvider = { 119 } }
+        val vm = RepsListViewModel(prefs, members).also { it.congressProvider = { 119 } }
         val loaded = vm.uiState.first { it is RepsListUiState.Loaded } as RepsListUiState.Loaded
         assertEquals(listOf("H1"), loaded.house.map { it.bioguideId })
         assertEquals(setOf("S1", "S2"), loaded.senators.map { it.bioguideId }.toSet())
@@ -96,7 +94,7 @@ class RepsListViewModelTest {
                 senators = listOf(aMember("S1", "senate"), aMember("S2", "senate")),
             ),
         )
-        val vm = RepsListViewModel(prefs, members, newContactPrefsRepo()).also { it.congressProvider = { 119 } }
+        val vm = RepsListViewModel(prefs, members).also { it.congressProvider = { 119 } }
         val s = vm.uiState.first { it is RepsListUiState.StaleSavedReps || it is RepsListUiState.Loaded }
         assertEquals(RepsListUiState.StaleSavedReps, s)
     }
@@ -112,7 +110,7 @@ class RepsListViewModelTest {
                 senators = emptyList(),
             ),
         )
-        val vm = RepsListViewModel(prefs, members, newContactPrefsRepo()).also { it.congressProvider = { 119 } }
+        val vm = RepsListViewModel(prefs, members).also { it.congressProvider = { 119 } }
         val s = vm.uiState.first { it is RepsListUiState.Loaded } as RepsListUiState.Loaded
         assertEquals(listOf("D1"), s.house.map { it.bioguideId })
         assertTrue(s.senators.isEmpty())
@@ -128,7 +126,7 @@ class RepsListViewModelTest {
                 senators = listOf(aMember("S1", "senate")),
             ),
         )
-        val vm = RepsListViewModel(prefs, members, newContactPrefsRepo()).also { it.congressProvider = { 119 } }
+        val vm = RepsListViewModel(prefs, members).also { it.congressProvider = { 119 } }
         vm.uiState.first { it is RepsListUiState.Loaded }
 
         vm.deleteSavedReps()
@@ -143,21 +141,9 @@ class RepsListViewModelTest {
         val prefs = newPrefsRepo()
         prefs.set(setOf("H1"))
         val members = StubMemberRepository().also { it.setError(RuntimeException("boom")) }
-        val vm = RepsListViewModel(prefs, members, newContactPrefsRepo()).also { it.congressProvider = { 119 } }
+        val vm = RepsListViewModel(prefs, members).also { it.congressProvider = { 119 } }
         val err = vm.uiState.first { it is RepsListUiState.Error } as RepsListUiState.Error
         assertTrue("error message contains boom", err.message.contains("boom"))
     }
 
-    @Test
-    fun `markWebsiteFallbackDialogSeen flips StateFlow`() = runTest {
-        val contactPrefs = RepsContactPreferenceRepository(InMemoryPreferencesDataStore())
-        val vm = RepsListViewModel(
-            savedReps = newPrefsRepo(),
-            members = StubMemberRepository(),
-            contactPrefs = contactPrefs,
-        ).also { it.congressProvider = { 119 } }
-        assertEquals(false, vm.hasSeenWebsiteFallbackDialog.first())
-        vm.markWebsiteFallbackDialogSeen()
-        assertEquals(true, vm.hasSeenWebsiteFallbackDialog.first())
-    }
 }
