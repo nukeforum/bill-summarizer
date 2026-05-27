@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T16:54:31Z",
+  "generated_at": "2026-05-27T15:59:53Z",
   "congress": 118,
   "bills": [
     {
@@ -27,6 +27,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-joint-resolution/117"
     },
     {
+      "id": "s4381-118",
+      "congress": 118,
+      "type": "s",
+      "number": "4381",
+      "title": "Right to Contraception Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Markey, Edward J.",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2024-05-21",
+      "latest_action": {
+        "date": "2024-06-05",
+        "text": "Motion to table the motion to proceed to the measure agreed to in Senate by Voice Vote."
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/118/bills/s4381/BILLS-118s4381pcs.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/s4381/BILLS-118s4381pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/s4381/BILLS-118s4381pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/4381"
+    },
+    {
       "id": "s2795-118",
       "congress": 118,
       "type": "s",
@@ -49,6 +73,30 @@
       "text_url_xml": "https://www.congress.gov/118/plaws/publ19/PLAW-118publ19_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/118/plaws/publ19/PLAW-118publ19.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/2795"
+    },
+    {
+      "id": "sres284-118",
+      "congress": 118,
+      "type": "sres",
+      "number": "284",
+      "title": "A resolution expressing support for the designation of June 2023 as \"National Dairy Month\" to recognize the important role dairy plays in a healthy diet and the exceptional work of dairy producers in being stewards of the land and livestock.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Gillibrand, Kirsten E.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2023-06-22",
+      "latest_action": {
+        "date": "2023-07-11",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S2328-2329; text: 06/22/2023 CR S2246-2247)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution (1) supports the designation of June 2023 as National Dairy Month, and (2) encourages the people of the United States to visit with dairy producers to learn more about agriculture and the vital role dairy producers play in our global food system.</p>",
+      "text_url_html": "https://www.congress.gov/118/bills/sres284/BILLS-118sres284ats.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sres284/BILLS-118sres284ats.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sres284/BILLS-118sres284ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/284"
     }
   ]
 }
