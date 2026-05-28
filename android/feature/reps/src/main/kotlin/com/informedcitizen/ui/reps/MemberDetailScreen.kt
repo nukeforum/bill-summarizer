@@ -104,6 +104,7 @@ internal fun MemberDetailContent(
                     onCallPhone = onCallPhone,
                     onOpenContactForm = onOpenUrl,
                     onOpenWebsite = onOpenUrl,
+                    onOpenSocial = onOpenUrl,
                     onShowHelp = { helpDialogMember = state.member },
                 )
                 PrimaryTabRow(selectedTabIndex = tab) {

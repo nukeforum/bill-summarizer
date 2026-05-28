@@ -130,6 +130,7 @@ internal fun RepsListContent(
                             onCallPhone = onCallPhone,
                             onOpenContactForm = onOpenUrl,
                             onOpenWebsite = onOpenUrl,
+                            onOpenSocial = onOpenUrl,
                             onShowHelp = { helpDialogMember = m },
                         )
                     }
@@ -154,6 +155,7 @@ internal fun RepsListContent(
                             onCallPhone = onCallPhone,
                             onOpenContactForm = onOpenUrl,
                             onOpenWebsite = onOpenUrl,
+                            onOpenSocial = onOpenUrl,
                             onShowHelp = { helpDialogMember = m },
                         )
                     }
