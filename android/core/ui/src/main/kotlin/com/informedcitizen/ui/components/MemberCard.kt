@@ -14,13 +14,20 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.OpenInNew
 import androidx.compose.material.icons.automirrored.filled.Send
 import androidx.compose.material.icons.filled.Phone
+import androidx.compose.material.icons.outlined.Public
 import androidx.compose.material3.Card
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.VerticalDivider
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.Role
@@ -36,6 +43,7 @@ fun MemberCard(
     onCallPhone: (String) -> Unit,
     onOpenContactForm: (String) -> Unit,
     onOpenWebsite: (String) -> Unit,
+    onOpenSocial: (String) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val methods = member.availableContactMethods()
@@ -74,6 +82,7 @@ fun MemberCard(
                 onCallPhone = onCallPhone,
                 onOpenContactForm = onOpenContactForm,
                 onOpenWebsite = onOpenWebsite,
+                onOpenSocial = onOpenSocial,
             )
         }
     }
@@ -85,6 +94,7 @@ internal fun SegmentedContactEndRegion(
     onCallPhone: (String) -> Unit,
     onOpenContactForm: (String) -> Unit,
     onOpenWebsite: (String) -> Unit,
+    onOpenSocial: (String) -> Unit,
 ) {
     if (methods.isEmpty()) return
     Row(
@@ -116,7 +126,29 @@ internal fun SegmentedContactEndRegion(
                             contentDescription = "Open official website",
                         )
                     }
-                    is ContactMethod.Socials -> { /* Task 9: socials dropdown */ }
+                    is ContactMethod.Socials -> {
+                        var expanded by remember { mutableStateOf(false) }
+                        IconButton(onClick = { expanded = true }) {
+                            Icon(
+                                Icons.Outlined.Public,
+                                contentDescription = "Social media profiles",
+                            )
+                        }
+                        DropdownMenu(
+                            expanded = expanded,
+                            onDismissRequest = { expanded = false },
+                        ) {
+                            method.items.forEach { item ->
+                                DropdownMenuItem(
+                                    text = { Text(item.platform.label) },
+                                    onClick = {
+                                        expanded = false
+                                        onOpenSocial(item.url)
+                                    },
+                                )
+                            }
+                        }
+                    }
                 }
             }
         }

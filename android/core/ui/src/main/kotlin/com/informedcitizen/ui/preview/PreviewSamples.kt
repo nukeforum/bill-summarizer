@@ -9,6 +9,7 @@ import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.pipeline.model.ChamberCalendar
 import com.informedcitizen.pipeline.model.Member
 import com.informedcitizen.pipeline.model.MemberLegislationItem
+import com.informedcitizen.pipeline.model.SocialHandle
 import com.informedcitizen.pipeline.model.Outcome
 import com.informedcitizen.pipeline.model.SessionCalendar
 import com.informedcitizen.pipeline.model.SessionCalendarSource
@@ -143,6 +144,7 @@ fun sampleMember(
     address: String? = null,
     phone: String? = "(202) 224-3441",
     contactForm: String? = "https://www.cantwell.senate.gov/contact",
+    socials: List<SocialHandle> = emptyList(),
     website: String? = "https://www.cantwell.senate.gov",
 ): Member = Member(
     bioguideId = bioguideId,
@@ -158,6 +160,7 @@ fun sampleMember(
     address = address,
     phone = phone,
     contactForm = contactForm,
+    socials = socials,
     website = website,
 )
 

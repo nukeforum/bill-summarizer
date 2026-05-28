@@ -22,19 +22,19 @@ private fun PreviewMemberRowWithHelp() = PreviewWrap(modifier = Modifier) {
         MemberRowWithHelp(
             member = sampleMember(name = "3 methods"),
             onClick = {}, onCallPhone = {}, onOpenContactForm = {}, onOpenWebsite = {},
-            onShowHelp = {},
+            onOpenSocial = {}, onShowHelp = {},
         )
         // 1 method (phone) — no badge
         MemberRowWithHelp(
             member = sampleMember(name = "Phone only", contactForm = null, website = null),
             onClick = {}, onCallPhone = {}, onOpenContactForm = {}, onOpenWebsite = {},
-            onShowHelp = {},
+            onOpenSocial = {}, onShowHelp = {},
         )
         // 0 methods — badge dot
         MemberRowWithHelp(
             member = sampleMember(name = "No methods", phone = null, contactForm = null, website = null),
             onClick = {}, onCallPhone = {}, onOpenContactForm = {}, onOpenWebsite = {},
-            onShowHelp = {},
+            onOpenSocial = {}, onShowHelp = {},
         )
     }
 }

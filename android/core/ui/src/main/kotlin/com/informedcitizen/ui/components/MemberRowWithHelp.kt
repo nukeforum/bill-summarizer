@@ -27,6 +27,7 @@ fun MemberRowWithHelp(
     onCallPhone: (String) -> Unit,
     onOpenContactForm: (String) -> Unit,
     onOpenWebsite: (String) -> Unit,
+    onOpenSocial: (String) -> Unit,
     onShowHelp: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
@@ -41,6 +42,7 @@ fun MemberRowWithHelp(
             onCallPhone = onCallPhone,
             onOpenContactForm = onOpenContactForm,
             onOpenWebsite = onOpenWebsite,
+            onOpenSocial = onOpenSocial,
             modifier = Modifier.weight(1f),
         )
         IconButton(

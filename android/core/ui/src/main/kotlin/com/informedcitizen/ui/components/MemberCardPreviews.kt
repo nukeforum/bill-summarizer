@@ -34,6 +34,14 @@ private fun PreviewMemberCards_AllPermutations() = PreviewWrap(modifier = Modifi
         Card3(member = sampleMember(name = "Website Only", phone = null, contactForm = null))
         // 0 methods
         Card3(member = sampleMember(name = "No Methods", phone = null, contactForm = null, website = null))
+        // 4 methods: phone + form + web + socials
+        Card3(member = sampleMember(
+            name = "All Four",
+            socials = listOf(
+                com.informedcitizen.pipeline.model.SocialHandle("twitter", "RepX"),
+                com.informedcitizen.pipeline.model.SocialHandle("facebook", "RepX"),
+            ),
+        ))
     }
 }
 
@@ -45,5 +53,6 @@ private fun Card3(member: com.informedcitizen.pipeline.model.Member) {
         onCallPhone = {},
         onOpenContactForm = {},
         onOpenWebsite = {},
+        onOpenSocial = {},
     )
 }
