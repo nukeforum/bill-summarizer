@@ -10,6 +10,7 @@ class MemberContactMethodsTest {
         phone: String? = null,
         contactForm: String? = null,
         website: String? = null,
+        socials: List<com.informedcitizen.pipeline.model.SocialHandle> = emptyList(),
     ): Member = Member(
         bioguideId = "T000001",
         name = "Test Rep",
@@ -25,6 +26,7 @@ class MemberContactMethodsTest {
         phone = phone,
         contactForm = contactForm,
         website = website,
+        socials = socials,
     )
 
     @Test
@@ -77,5 +79,48 @@ class MemberContactMethodsTest {
             ),
             m.availableContactMethods(),
         )
+    }
+
+    @Test
+    fun `socials appended in fixed order when present`() {
+        val m = member(
+            phone = "(202) 224-3441",
+            socials = listOf(
+                com.informedcitizen.pipeline.model.SocialHandle("twitter", "RepX"),
+                com.informedcitizen.pipeline.model.SocialHandle("facebook", "RepX"),
+            ),
+        )
+        val methods = m.availableContactMethods()
+        assertEquals(2, methods.size)
+        assertEquals(ContactMethod.Phone("(202) 224-3441"), methods[0])
+        val socialsMethod = methods[1] as ContactMethod.Socials
+        assertEquals(
+            listOf(
+                SocialItem(SocialPlatform.TWITTER, "RepX"),
+                SocialItem(SocialPlatform.FACEBOOK, "RepX"),
+            ),
+            socialsMethod.items,
+        )
+    }
+
+    @Test
+    fun `unknown platform handles are silently dropped`() {
+        val m = member(
+            socials = listOf(
+                com.informedcitizen.pipeline.model.SocialHandle("twitter", "RepX"),
+                com.informedcitizen.pipeline.model.SocialHandle("tiktok", "RepY"),
+            ),
+        )
+        val methods = m.availableContactMethods()
+        assertEquals(1, methods.size)
+        val socialsMethod = methods[0] as ContactMethod.Socials
+        assertEquals(listOf(SocialItem(SocialPlatform.TWITTER, "RepX")), socialsMethod.items)
+    }
+
+    @Test
+    fun `empty socials list does not add a Socials method`() {
+        val m = member(phone = "(202) 224-3441", socials = emptyList())
+        val methods = m.availableContactMethods()
+        assertEquals(listOf(ContactMethod.Phone("(202) 224-3441")), methods)
     }
 }

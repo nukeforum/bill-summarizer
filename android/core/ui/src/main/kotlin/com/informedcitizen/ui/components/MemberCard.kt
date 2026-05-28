@@ -116,6 +116,7 @@ internal fun SegmentedContactEndRegion(
                             contentDescription = "Open official website",
                         )
                     }
+                    is ContactMethod.Socials -> { /* Task 9: socials dropdown */ }
                 }
             }
         }
