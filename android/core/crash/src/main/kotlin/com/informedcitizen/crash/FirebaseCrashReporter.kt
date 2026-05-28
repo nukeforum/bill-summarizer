@@ -9,7 +9,15 @@ class FirebaseCrashReporter @Inject constructor(
     private val buildEnvironment: BuildEnvironment,
 ) : CrashReporter {
 
+    // Debug builds short-circuit before touching FirebaseCrashlytics. Two
+    // reasons: (1) Crashlytics is force-off in debug regardless of opt-in,
+    // so dev crashes don't pollute the production dashboard; (2) the
+    // .debug applicationId is not registered in google-services.json, so
+    // FirebaseCrashlytics.getInstance() would throw
+    // IllegalStateException("Default FirebaseApp is not initialized…")
+    // and crash the app at Application.onCreate.
     override fun recordNonFatal(throwable: Throwable, message: String?) {
+        if (buildEnvironment.isDebuggable) return
         val crashlytics = FirebaseCrashlytics.getInstance()
         if (message != null) {
             crashlytics.log(message)
@@ -18,13 +26,12 @@ class FirebaseCrashReporter @Inject constructor(
     }
 
     override fun setCollectionEnabled(enabled: Boolean) {
-        // Force-off in debug builds regardless of the opt-in flag, so dev
-        // crashes don't pollute the production Crashlytics dashboard.
-        val effective = enabled && !buildEnvironment.isDebuggable
-        FirebaseCrashlytics.getInstance().isCrashlyticsCollectionEnabled = effective
+        if (buildEnvironment.isDebuggable) return
+        FirebaseCrashlytics.getInstance().isCrashlyticsCollectionEnabled = enabled
     }
 
     override fun deleteUnsentReports() {
+        if (buildEnvironment.isDebuggable) return
         FirebaseCrashlytics.getInstance().deleteUnsentReports()
     }
 }
