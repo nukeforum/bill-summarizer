@@ -89,6 +89,7 @@ def test_main_writes_index_and_per_member_files(tmp_path, monkeypatch):
             # B000002 deliberately absent — exercises the missing-key path.
         },
     )
+    monkeypatch.setattr(fetch_members, "fetch_socials_index", lambda: {})
     list_pages = [{
         "members": [
             _member_list_entry("A000001", "Alice", "Nebraska", 3, "House of Representatives", "Republican"),
@@ -144,6 +145,7 @@ def test_main_writes_index_and_per_member_files(tmp_path, monkeypatch):
         "phone": "+1-202-0000",
         "contact_form": "https://alice.house.gov/contact",
         "website": "https://alice.house.gov",
+        "socials": [],
     }
 
     index = json.loads(_common.members_index_path(119).read_text())
@@ -168,6 +170,7 @@ def test_main_handles_empty_legislation(tmp_path, monkeypatch):
     monkeypatch.setenv("CONGRESS_API_KEY", "stub")
     monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
     monkeypatch.setattr(fetch_members, "fetch_contact_info_index", lambda: {})
+    monkeypatch.setattr(fetch_members, "fetch_socials_index", lambda: {})
     list_pages = [{
         "members": [_member_list_entry("Z999999", "Zed", "Vermont", 0, "House of Representatives", "Independent")],
     }]
@@ -208,6 +211,7 @@ def test_main_skips_members_with_existing_legislation_files(tmp_path, monkeypatc
     monkeypatch.setenv("CONGRESS_API_KEY", "stub")
     monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
     monkeypatch.setattr(fetch_members, "fetch_contact_info_index", lambda: {})
+    monkeypatch.setattr(fetch_members, "fetch_socials_index", lambda: {})
 
     # Pre-seed: one member's legislation files.
     (tmp_path / "members").mkdir(parents=True)
@@ -252,6 +256,7 @@ def test_main_writes_index_after_phase_one(tmp_path, monkeypatch):
     monkeypatch.setenv("CONGRESS_API_KEY", "stub")
     monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
     monkeypatch.setattr(fetch_members, "fetch_contact_info_index", lambda: {})
+    monkeypatch.setattr(fetch_members, "fetch_socials_index", lambda: {})
 
     list_pages = [{"members": [
         _member_list_entry("A000001", "Alice", "Nebraska", 3),
@@ -306,6 +311,7 @@ def test_main_time_budget_only_gates_phase_two(tmp_path, monkeypatch):
     monkeypatch.setenv("CONGRESS_API_KEY", "stub")
     monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
     monkeypatch.setattr(fetch_members, "fetch_contact_info_index", lambda: {})
+    monkeypatch.setattr(fetch_members, "fetch_socials_index", lambda: {})
 
     list_pages = [{"members": [
         _member_list_entry("A000001", "Alice", "Nebraska", 3),
@@ -342,6 +348,7 @@ def test_phase1_only_writes_index_and_skips_legislation(tmp_path, monkeypatch):
     monkeypatch.setenv("CONGRESS_API_KEY", "stub")
     monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
     monkeypatch.setattr(fetch_members, "fetch_contact_info_index", lambda: {})
+    monkeypatch.setattr(fetch_members, "fetch_socials_index", lambda: {})
     list_pages = [{"members": [_member_list_entry("A000001", "Alice", "Nebraska", 3)]}]
     member_details = {"A000001": _member_detail("A000001", 0, 0, "https://a.house.gov")}
     fake = _FakeClient([list_pages[0]], member_details, {}, {})

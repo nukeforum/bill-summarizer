@@ -31,9 +31,11 @@ from typing import Any, Iterable
 from _common import (
     CongressClient,
     ErrorCollector,
+    KNOWN_SOCIAL_PLATFORMS,
     LIST_PAGE_LIMIT,
     current_congress,
     fetch_contact_info_index,
+    fetch_socials_index,
     load_members_index,
     member_legislation_path,
     now_iso,
@@ -169,6 +171,23 @@ def main(argv: list[str] | None = None) -> int:
                 file=sys.stderr,
             )
 
+    socials_index: dict[str, list[dict[str, str]]] = {}
+    if run_phase1:
+        try:
+            socials_index = fetch_socials_index()
+            total_handles = sum(len(v) for v in socials_index.values())
+            print(
+                f"Fetched socials: {len(socials_index)} legislators, "
+                f"{total_handles} handles across {len(KNOWN_SOCIAL_PLATFORMS)} platforms"
+            )
+        except Exception as exc:  # noqa: BLE001
+            # Non-fatal: members still publish with socials=[].
+            phase1_errors.record("socials_index", "unitedstates", exc)
+            print(
+                f"WARN: socials fetch failed ({exc!r}); socials will be [].",
+                file=sys.stderr,
+            )
+
     # ---------- Phase 1: fast — member roster + detail only ----------
     if not run_phase1:
         print(
@@ -210,6 +229,7 @@ def main(argv: list[str] | None = None) -> int:
             info = contact_info.get(bioguide_id) or {}
             parsed["contact_form"] = info.get("contact_form")
             parsed["website"] = info.get("website")
+            parsed["socials"] = socials_index.get(bioguide_id, [])
             members_out.append(parsed)
             print(f"  + {bioguide_id} {parsed['name']} ({parsed['party']}-{parsed['state']})")
 
