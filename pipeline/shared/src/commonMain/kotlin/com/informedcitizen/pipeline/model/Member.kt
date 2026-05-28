@@ -19,4 +19,11 @@ data class Member(
     val phone: String? = null,
     @SerialName("contact_form") val contactForm: String? = null,
     @SerialName("website") val website: String? = null,
+    val socials: List<SocialHandle> = emptyList(),
+)
+
+@Serializable
+data class SocialHandle(
+    val platform: String,
+    val handle: String,
 )
