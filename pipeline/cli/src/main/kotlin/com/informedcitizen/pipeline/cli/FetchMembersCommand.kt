@@ -78,6 +78,12 @@ object FetchMembersCommand {
                         "WARN: contact-info fetch failed ($msg); contact_form and website will be null."
                     )
                 },
+                onSocialsLoaded = { size, totalHandles ->
+                    println("Fetched socials: $size legislators, $totalHandles handles")
+                },
+                onSocialsFailed = { msg ->
+                    System.err.println("WARN: socials fetch failed ($msg); socials will be [].")
+                },
                 onPhase1Start = { c ->
                     println("Phase 1: fetching member index for the ${c}th Congress")
                 },
