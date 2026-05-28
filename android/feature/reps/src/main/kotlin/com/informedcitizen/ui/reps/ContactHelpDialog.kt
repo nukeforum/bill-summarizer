@@ -8,6 +8,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.OpenInNew
 import androidx.compose.material.icons.automirrored.filled.Send
 import androidx.compose.material.icons.filled.Phone
+import androidx.compose.material.icons.outlined.Public
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -70,6 +71,11 @@ private fun HelpRow(method: ContactMethod) {
             Icons.AutoMirrored.Filled.OpenInNew,
             "Website",
             "Open this representative's official site",
+        )
+        is ContactMethod.Socials -> Triple(
+            Icons.Outlined.Public,
+            "Socials",
+            "Open one of this representative's public social-media profiles",
         )
     }
     Row(verticalAlignment = Alignment.Top) {
