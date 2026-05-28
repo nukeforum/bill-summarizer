@@ -1,7 +1,103 @@
 {
-  "generated_at": "2026-05-27T15:59:53Z",
+  "generated_at": "2026-05-28T16:14:25Z",
   "congress": 118,
   "bills": [
+    {
+      "id": "hr9124-118",
+      "congress": 118,
+      "type": "hr",
+      "number": "9124",
+      "title": "To name the Department of Veterans Affairs community-based outpatient clinic in Auburn, California, as the \"Louis A. Conter VA Clinic\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Kiley, Kevin",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2024-07-24",
+      "latest_action": {
+        "date": "2025-01-04",
+        "text": "Became Public Law No: 118-259."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This bill designates the community-based outpatient clinic of the Department of Veterans Affairs in Auburn, California, as the Louis A. Conter VA Clinic.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ259/PLAW-118publ259.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ259/PLAW-118publ259_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ259/PLAW-118publ259.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/house-bill/9124"
+    },
+    {
+      "id": "hr8667-118",
+      "congress": 118,
+      "type": "hr",
+      "number": "8667",
+      "title": "To rename the community-based outpatient clinic of the Department of Veterans Affairs in Cadillac, Michigan, as the \"Duane E. Dewey VA Clinic\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Moolenaar, John R.",
+        "party": "R",
+        "state": "MI"
+      },
+      "introduced_date": "2024-06-07",
+      "latest_action": {
+        "date": "2025-01-04",
+        "text": "Became Public Law No: 118-251."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This act designates the outpatient clinic of the Department of Veterans Affairs in Cadillac, Michigan, as the Duane E. Dewey Department of Veterans Affairs Clinic or the Duane E. Dewey VA Clinic.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ251/PLAW-118publ251.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ251/PLAW-118publ251_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ251/PLAW-118publ251.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/house-bill/8667"
+    },
+    {
+      "id": "s3938-118",
+      "congress": 118,
+      "type": "s",
+      "number": "3938",
+      "title": "A bill to designate the community-based outpatient clinic of the Department of Veterans Affairs in Lynchburg, Virginia, as the \"Private First Class Desmond T. Doss VA Clinic\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Warner, Mark R.",
+        "party": "D",
+        "state": "VA"
+      },
+      "introduced_date": "2024-03-14",
+      "latest_action": {
+        "date": "2024-12-23",
+        "text": "Became Public Law No: 118-200."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This act designates the community-based outpatient clinic of the Department of Veterans Affairs in Lynchburg, Virginia, as the Private First Class Desmond T. Doss VA Clinic.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ200/PLAW-118publ200.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ200/PLAW-118publ200_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ200/PLAW-118publ200.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/3938"
+    },
+    {
+      "id": "s3126-118",
+      "congress": 118,
+      "type": "s",
+      "number": "3126",
+      "title": "Mark Our Place Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Braun, Mike",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2023-10-25",
+      "latest_action": {
+        "date": "2024-11-25",
+        "text": "Became Public Law No: 118-134."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Mark Our Place Act</strong></p><p>This act authorizes the Department of Veterans Affairs to furnish a headstone, marker, or medallion signifying the status of a deceased member of the Armed Forces&nbsp;as a Medal of Honor recipient regardless of when the member served. Under current law, only Medal of Honor recipients who served after 1917 are eligible for such markers.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ134/PLAW-118publ134.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ134/PLAW-118publ134_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ134/PLAW-118publ134.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/3126"
+    },
     {
       "id": "sjres117-118",
       "congress": 118,
@@ -25,6 +121,174 @@
       "text_url_xml": "https://www.congress.gov/118/bills/sjres117/BILLS-118sjres117pcs.xml",
       "text_url_pdf": "https://www.congress.gov/118/bills/sjres117/BILLS-118sjres117pcs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-joint-resolution/117"
+    },
+    {
+      "id": "sjres113-118",
+      "congress": 118,
+      "type": "sjres",
+      "number": "113",
+      "title": "A joint resolution providing for congressional disapproval of the proposed foreign military sale to the Government of Israel of certain defense articles and services.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Sanders, Bernard",
+        "party": "I",
+        "state": "VT"
+      },
+      "introduced_date": "2024-09-25",
+      "latest_action": {
+        "date": "2024-11-20",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 19 - 78. Record Vote Number: 293. (consideration: CR S6665)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/118/bills/sjres113/BILLS-118sjres113is.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sjres113/BILLS-118sjres113is.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sjres113/BILLS-118sjres113is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-joint-resolution/113"
+    },
+    {
+      "id": "sjres111-118",
+      "congress": 118,
+      "type": "sjres",
+      "number": "111",
+      "title": "A joint resolution providing for congressional disapproval of the proposed foreign military sale to the Government of Israel of certain defense articles and services.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Sanders, Bernard",
+        "party": "I",
+        "state": "VT"
+      },
+      "introduced_date": "2024-09-25",
+      "latest_action": {
+        "date": "2024-11-20",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 18 - 79. Record Vote Number: 292. (consideration: CR S6653-6665)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/118/bills/sjres111/BILLS-118sjres111is.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sjres111/BILLS-118sjres111is.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sjres111/BILLS-118sjres111is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-joint-resolution/111"
+    },
+    {
+      "id": "sjres115-118",
+      "congress": 118,
+      "type": "sjres",
+      "number": "115",
+      "title": "A joint resolution providing for congressional disapproval of the proposed license amendment for the export of certain defense articles, defense services, and technical data to Israel.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Sanders, Bernard",
+        "party": "I",
+        "state": "VT"
+      },
+      "introduced_date": "2024-09-25",
+      "latest_action": {
+        "date": "2024-11-20",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 17 - 80. Record Vote Number: 294. (consideration: CR S6665-6666)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/118/bills/sjres115/BILLS-118sjres115is.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sjres115/BILLS-118sjres115is.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sjres115/BILLS-118sjres115is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-joint-resolution/115"
+    },
+    {
+      "id": "sres874-118",
+      "congress": 118,
+      "type": "sres",
+      "number": "874",
+      "title": "A resolution honoring the Southeast Region Little League baseball team from Lake Mary, Florida, for winning the 2024 Little League Baseball World Series.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Scott, Rick",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2024-09-25",
+      "latest_action": {
+        "date": "2024-11-14",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S6577; text: 9/25/2024 CR S6456)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This resolution honors the Southeast Region Little League baseball team from Lake Mary, Florida, for winning the 2024 Little League Baseball World Series Championship.</p>",
+      "text_url_html": "https://www.congress.gov/118/bills/sres874/BILLS-118sres874ats.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sres874/BILLS-118sres874ats.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sres874/BILLS-118sres874ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/874"
+    },
+    {
+      "id": "s1648-118",
+      "congress": 118,
+      "type": "s",
+      "number": "1648",
+      "title": "Launch Communications Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Schmitt, Eric",
+        "party": "R",
+        "state": "MO"
+      },
+      "introduced_date": "2023-05-17",
+      "latest_action": {
+        "date": "2024-09-26",
+        "text": "Became Public Law No: 118-85."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Launch Communications Act</strong></p><p>This act&nbsp;requires the Federal Communications Commission (FCC) to facilitate access to specified broadband spectrum frequencies for commercial space launches and reentries.</p><p>Under current law, commercial missions launching from the United States to space must use government-owned spectrum to communicate with the rockets during launch, and private companies must apply to the FCC to receive special temporary authority to use such spectrum. On June 28, 2021, the FCC issued a final rule adopting a nonfederal secondary allocation of the 2200-2290 megahertz frequencies of the electromagnetic spectrum for use during commercial space launches and reentries.</p><p>The act requires the FCC to (1) adopt service rules for access to additional frequencies for commercial space launches and reentries and complete associated rulemaking activities (e.g., those that set technical specifications and eligibility requirements), and (2) allocate the frequencies.</p><p>The FCC must also streamline the process for access authorizations, including by providing for (1) authorizations to access specified frequencies for multiple commercial space launches and reentries from one or more federal or private launch or reentry sites, (2) authorizations for multiple uses of such frequencies for a commercial space launch or reentry, (3) electronic filing and processing of access applications, and (4) improved coordination between the FCC and the National Telecommunications and Information Administration to increase the speed of the review of such applications.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ85/PLAW-118publ85.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ85/PLAW-118publ85_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ85/PLAW-118publ85.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/1648"
+    },
+    {
+      "id": "sres750-118",
+      "congress": 118,
+      "type": "sres",
+      "number": "750",
+      "title": "A resolution commending the Professional Women's Hockey League Minnesota for winning the inaugural Professional Women's Hockey League title on May 29, 2024.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Klobuchar, Amy",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2024-06-20",
+      "latest_action": {
+        "date": "2024-07-31",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5658; text: 06/20/2024 CR S4188)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This resolution commends the Professional Women's Hockey League (PWHL) Minnesota for winning the inaugural PWHL title.</p><p>The resolution also congratulates the fans, players, coaches, and staff of the entire PWHL for a great first season.</p>",
+      "text_url_html": "https://www.congress.gov/118/bills/sres750/BILLS-118sres750ats.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sres750/BILLS-118sres750ats.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sres750/BILLS-118sres750ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/750"
+    },
+    {
+      "id": "s3285-118",
+      "congress": 118,
+      "type": "s",
+      "number": "3285",
+      "title": "A bill to rename the community-based outpatient clinic of the Department of Veterans Affairs in Butte, Montana, as the \"Charlie Dowd VA Clinic\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daines, Steve",
+        "party": "R",
+        "state": "MT"
+      },
+      "introduced_date": "2023-11-09",
+      "latest_action": {
+        "date": "2024-07-30",
+        "text": "Became Public Law No: 118-76."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This act designates the community-based outpatient clinic of the Department of Veterans Affairs in Butte, Montana, as the Charlie Dowd&nbsp;Department of Veterans Affairs Clinic or the Charlie Dowd VA Clinic.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ76/PLAW-118publ76.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ76/PLAW-118publ76_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ76/PLAW-118publ76.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/3285"
     },
     {
       "id": "s4381-118",
@@ -51,6 +315,198 @@
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/4381"
     },
     {
+      "id": "sjres60-118",
+      "congress": 118,
+      "type": "sjres",
+      "number": "60",
+      "title": "A joint resolution providing for congressional disapproval of the proposed foreign military sale to the Government of Turkiye of certain defense articles and services.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Paul, Rand",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2024-02-05",
+      "latest_action": {
+        "date": "2024-02-29",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 13 - 79. Record Vote Number: 62. (consideration: CR S1067)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/118/bills/sjres60/BILLS-118sjres60is.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sjres60/BILLS-118sjres60is.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sjres60/BILLS-118sjres60is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-joint-resolution/60"
+    },
+    {
+      "id": "sres520-118",
+      "congress": 118,
+      "type": "sres",
+      "number": "520",
+      "title": "A resolution congratulating the University of Michigan Wolverines football team for winning the 2024 National Collegiate Athletic Association College Football National Championship.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Stabenow, Debbie",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2024-01-11",
+      "latest_action": {
+        "date": "2024-01-17",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S141; text: 1/11/2024 CR S95)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This resolution congratulates the University of Michigan Wolverines football team for winning the 2024 National Collegiate Athletic Association College Football National Championship.</p>",
+      "text_url_html": "https://www.congress.gov/118/bills/sres520/BILLS-118sres520ats.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sres520/BILLS-118sres520ats.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sres520/BILLS-118sres520ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/520"
+    },
+    {
+      "id": "sres504-118",
+      "congress": 118,
+      "type": "sres",
+      "number": "504",
+      "title": "A resolution requesting information on Israel's human rights practices pursuant to section 502B(c) of the Foreign Assistance Act of 1961.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Sanders, Bernard",
+        "party": "I",
+        "state": "VT"
+      },
+      "introduced_date": "2023-12-14",
+      "latest_action": {
+        "date": "2024-01-16",
+        "text": "Motion to table the motion to discharge S. Res. 504 agreed to in Senate by Yea-Nay Vote. 72 - 11. Record Vote Number: 8."
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p class=\"MsoNormal\" style=\"line-height: normal;\">This resolution requests that the Department of State provide Congress with information on Israel's human rights practices. </p> <p class=\"MsoNormal\" style=\"line-height: normal;\">The resolution also requests a description of the steps the United States has taken to promote human rights as part of Israel's activities, including in Gaza and West Bank. It also requests certain other items of information, including, for example, an assessment of Israeli compliance with international human rights law and the likelihood that Israel will use U.S. security assistance in the armed conflict in Gaza and the West Bank.</p>",
+      "text_url_html": "https://www.congress.gov/118/bills/sres504/BILLS-118sres504is.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sres504/BILLS-118sres504is.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sres504/BILLS-118sres504is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/504"
+    },
+    {
+      "id": "sres423-118",
+      "congress": 118,
+      "type": "sres",
+      "number": "423",
+      "title": "A resolution recognizing the University of Iowa women's basketball team's historic \"Crossover at Kinnick\" game and the importance of women's sports.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Ernst, Joni",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2023-10-24",
+      "latest_action": {
+        "date": "2023-12-19",
+        "text": "Resolution agreed to in Senate with an amendment and with a preamble by Unanimous Consent. (text: CR S6062-6063)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This resolution congratulates the University of Iowa women's basketball team for setting the National Collegiate Athletic Association (NCAA) women's basketball attendance record at the Crossover at Kinnick event. The Crossover at Kinnick event was the first women's basketball game played outdoors in a football stadium.</p>",
+      "text_url_html": "https://www.congress.gov/118/bills/sres423/BILLS-118sres423ats.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sres423/BILLS-118sres423ats.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sres423/BILLS-118sres423ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/423"
+    },
+    {
+      "id": "sjres51-118",
+      "congress": 118,
+      "type": "sjres",
+      "number": "51",
+      "title": "A joint resolution directing the removal of United States Armed Forces from hostilities in Syria that have not been authorized by Congress.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Paul, Rand",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2023-11-15",
+      "latest_action": {
+        "date": "2023-12-07",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 13 - 84. Record Vote Number: 333. (consideration: CR S5836-5837)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/118/bills/sjres51/BILLS-118sjres51is.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sjres51/BILLS-118sjres51is.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sjres51/BILLS-118sjres51is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-joint-resolution/51"
+    },
+    {
+      "id": "sres126-118",
+      "congress": 118,
+      "type": "sres",
+      "number": "126",
+      "title": "A resolution recognizing the vital importance of the Mekong River to Southeast Asia and the role of the Mekong-United States Partnership in supporting the prosperity of the region.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Merkley, Jeff",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2023-03-28",
+      "latest_action": {
+        "date": "2023-11-06",
+        "text": "Resolution agreed to in Senate with an amendment and an amended preamble by Unanimous Consent. (text: CR S5365-5366)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <br /> This resolution expresses concern over the environmental, economic, and humanitarian threats to the Mekong River and its communities. The resolution also declares it is U.S. policy to promote the economic and environmental well-being of people throughout the Mekong River Basin (Burma (Myanmar), Cambodia, Laos, Thailand, and Vietnam) through federal aid and support.",
+      "text_url_html": "https://www.congress.gov/118/bills/sres126/BILLS-118sres126ats.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sres126/BILLS-118sres126ats.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sres126/BILLS-118sres126ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/126"
+    },
+    {
+      "id": "sjres44-118",
+      "congress": 118,
+      "type": "sjres",
+      "number": "44",
+      "title": "A joint resolution directing the removal of United States Armed Forces from hostilities in the Republic of Niger that have not been authorized by Congress.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Paul, Rand",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2023-09-06",
+      "latest_action": {
+        "date": "2023-10-26",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 11 - 86. Record Vote Number: 270."
+      },
+      "outcome": "failed",
+      "summary_crs": " <p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities in, or affecting, Niger within 30 days of this resolution's adoption unless a declaration of war or specific authorization for such use of the Armed Forces has been enacted.</p>",
+      "text_url_html": "https://www.congress.gov/118/bills/sjres44/BILLS-118sjres44is.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sjres44/BILLS-118sjres44is.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sjres44/BILLS-118sjres44is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-joint-resolution/44"
+    },
+    {
+      "id": "sres418-118",
+      "congress": 118,
+      "type": "sres",
+      "number": "418",
+      "title": "A resolution condemning Hamas and antisemitic student activities on college campuses in the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hawley, Josh",
+        "party": "R",
+        "state": "MO"
+      },
+      "introduced_date": "2023-10-19",
+      "latest_action": {
+        "date": "2023-10-26",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Voice Vote. (text: 10/19/2023 CR S5113)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution condemns the terrorist attacks by Hamas and denounces the rhetoric of anti-Israel, pro-Hamas student groups. It also acknowledges that Israel has the right to exist and defend itself and encourages the U.S. government to fully support Israel and these rights.</p>",
+      "text_url_html": "https://www.congress.gov/118/bills/sres418/BILLS-118sres418ats.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sres418/BILLS-118sres418ats.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sres418/BILLS-118sres418ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/418"
+    },
+    {
       "id": "s2795-118",
       "congress": 118,
       "type": "s",
@@ -75,6 +531,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/2795"
     },
     {
+      "id": "sres310-118",
+      "congress": 118,
+      "type": "sres",
+      "number": "310",
+      "title": "A resolution recognizing the Motorcycle Safety Foundation for 50 years of safety education.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Peters, Gary C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2023-07-25",
+      "latest_action": {
+        "date": "2023-09-30",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4895; text: 7/25/2023 CR S3527)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution recognizes the Motorcycle Safety Foundation for 50 years of safety education and improving the ride for motorcycle riders across the United States.</p>",
+      "text_url_html": "https://www.congress.gov/118/bills/sres310/BILLS-118sres310ats.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sres310/BILLS-118sres310ats.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sres310/BILLS-118sres310ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/310"
+    },
+    {
       "id": "sres284-118",
       "congress": 118,
       "type": "sres",
@@ -97,6 +577,54 @@
       "text_url_xml": "https://www.congress.gov/118/bills/sres284/BILLS-118sres284ats.xml",
       "text_url_pdf": "https://www.congress.gov/118/bills/sres284/BILLS-118sres284ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/284"
+    },
+    {
+      "id": "sres157-118",
+      "congress": 118,
+      "type": "sres",
+      "number": "157",
+      "title": "A resolution commemorating the 25th anniversary of the signing of the Good Friday Agreement, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Menendez, Robert",
+        "party": "D",
+        "state": "NJ"
+      },
+      "introduced_date": "2023-03-30",
+      "latest_action": {
+        "date": "2023-05-09",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S1572; text: 03/30/2023 CR S1107-1108)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "  This resolution commemorates the 25th anniversary of the signing of the Good Friday Agreement and celebrates the historic compromise as the beginning of a new era of peaceful political engagement in Northern Ireland. The resolution also supports full implementation of the agreement and subsequent agreements, including the Windsor Framework, and calls for action to resolve the injustices of past violence. <p>(Since the Good Friday Agreement, there has been an open border between the Republic of Ireland, an EU member state, and Northern Ireland, which is part of the United Kingdom. The Windsor Framework seeks to resolve challenges related to this border that arose after the United Kingdom&nbsp;left the European Union.) </p>",
+      "text_url_html": "https://www.congress.gov/118/bills/sres157/BILLS-118sres157ats.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sres157/BILLS-118sres157ats.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sres157/BILLS-118sres157ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/157"
+    },
+    {
+      "id": "sres76-118",
+      "congress": 118,
+      "type": "sres",
+      "number": "76",
+      "title": "A resolution expressing deepest condolences to and solidarity with the people of Turkiye and Syria following the devastating earthquake on February 6, 2023.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Merkley, Jeff",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2023-02-16",
+      "latest_action": {
+        "date": "2023-03-29",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S1044; text: 02/16/2023 CR S464)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution expresses deepest condolences and solidarity with the people of Turkey (Turkiye) and Syria following the February 6, 2023, earthquake and commends those involved with the humanitarian response. </p> <p>The resolution also urges the U.S. government to continue providing emergency relief and reconstruction to both countries, while ensuring the assistance to Syria does not directly benefit the Assad regime or fuel continued regime atrocities against the Syrian people. </p>",
+      "text_url_html": "https://www.congress.gov/118/bills/sres76/BILLS-118sres76ats.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sres76/BILLS-118sres76ats.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sres76/BILLS-118sres76ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/76"
     }
   ]
 }
