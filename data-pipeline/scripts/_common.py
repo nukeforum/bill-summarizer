@@ -831,6 +831,78 @@ def fetch_contact_info_index(
     return parse_contact_info_yaml(resp.text)
 
 
+# ---------- unitedstates/congress-legislators socials --------------------
+
+
+# Allow-list of platform keys we surface from legislators-social-media.yaml.
+# Order here is the canonical output order — both Python and Kotlin parsers
+# preserve it per entry. Numeric `_id` variants (twitter_id, facebook_id,
+# youtube_id) and unknown keys (e.g. tiktok) are silently dropped.
+KNOWN_SOCIAL_PLATFORMS: tuple[str, ...] = (
+    "twitter", "facebook", "youtube", "instagram", "threads", "bluesky",
+)
+
+
+def parse_socials_yaml(text: str) -> dict[str, list[dict[str, str]]]:
+    """Extract {bioguide: [{platform, handle}, ...]} from legislators-social-media.yaml.
+
+    The upstream YAML (https://github.com/unitedstates/congress-legislators)
+    is a list of legislator entries. Each entry has an ``id.bioguide`` key
+    and an optional ``social`` map carrying per-platform usernames/handles.
+
+    Only platforms in ``KNOWN_SOCIAL_PLATFORMS`` are surfaced, in that
+    constant's order. Numeric ``_id`` variants and any unknown platform
+    keys are silently dropped. Entries with no ``social`` block, no
+    bioguide id, or no populated known-platform handles are omitted from
+    the output entirely (so consumers can ``.get(bid, [])`` for the
+    empty case).
+    """
+    data = yaml.safe_load(text) or []
+    out: dict[str, list[dict[str, str]]] = {}
+    for entry in data:
+        if not isinstance(entry, dict):
+            continue
+        ids = entry.get("id") or {}
+        bioguide = ids.get("bioguide")
+        if not bioguide:
+            continue
+        social = entry.get("social") or {}
+        if not isinstance(social, dict):
+            continue
+        handles: list[dict[str, str]] = []
+        for platform in KNOWN_SOCIAL_PLATFORMS:
+            raw = social.get(platform)
+            if raw is None:
+                continue
+            handle = str(raw).strip()
+            if not handle:
+                continue
+            handles.append({"platform": platform, "handle": handle})
+        if handles:
+            out[bioguide] = handles
+    return out
+
+
+LEGISLATORS_SOCIAL_MEDIA_YAML_URL = (
+    "https://raw.githubusercontent.com/"
+    "unitedstates/congress-legislators/main/legislators-social-media.yaml"
+)
+
+
+def fetch_socials_index(
+    url: str = LEGISLATORS_SOCIAL_MEDIA_YAML_URL,
+) -> dict[str, list[dict[str, str]]]:
+    """Download legislators-social-media.yaml and return per-bioguide handles.
+
+    Raises ``requests.HTTPError`` on a non-2xx status. Caller decides whether
+    to treat the failure as fatal — Phase 1 of fetch_members.py treats it as
+    non-fatal (member records still flow, just with socials=[]).
+    """
+    resp = requests.get(url, timeout=30)
+    resp.raise_for_status()
+    return parse_socials_yaml(resp.text)
+
+
 # ---------- index ----------------------------------------------------------
 
 
