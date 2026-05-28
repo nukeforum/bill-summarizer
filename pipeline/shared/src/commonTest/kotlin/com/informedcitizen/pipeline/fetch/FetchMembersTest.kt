@@ -118,7 +118,7 @@ class FetchMembersTest {
     @Test fun phase1_and_phase2_write_index_and_legislation_with_contact_info() = runTest {
         val httpClient = mockApiClient()
         val cc = CongressClient(httpClient, apiKey = "k")
-        val lc = LegislatorsClient(httpClient, sourceUrl = LEGISLATORS_TEST_URL)
+        val lc = LegislatorsClient(httpClient, currentUrl = LEGISLATORS_TEST_URL)
         val fs = FakeFileSystem()
         val indexStore = FileMembersIndexStore(fs, "/out".toPath())
         val legStore = FileMemberLegislationStore(fs, "/out".toPath())
@@ -179,7 +179,7 @@ class FetchMembersTest {
     @Test fun phase1_only_skips_legislation_files() = runTest {
         val httpClient = mockApiClient()
         val cc = CongressClient(httpClient, apiKey = "k")
-        val lc = LegislatorsClient(httpClient, sourceUrl = LEGISLATORS_TEST_URL)
+        val lc = LegislatorsClient(httpClient, currentUrl = LEGISLATORS_TEST_URL)
         val fs = FakeFileSystem()
         val indexStore = FileMembersIndexStore(fs, "/out".toPath())
         val legStore = FileMemberLegislationStore(fs, "/out".toPath())
@@ -208,7 +208,7 @@ class FetchMembersTest {
     @Test fun phase2_skips_already_cached_members() = runTest {
         val httpClient = mockApiClient()
         val cc = CongressClient(httpClient, apiKey = "k")
-        val lc = LegislatorsClient(httpClient, sourceUrl = LEGISLATORS_TEST_URL)
+        val lc = LegislatorsClient(httpClient, currentUrl = LEGISLATORS_TEST_URL)
         val fs = FakeFileSystem()
         val indexStore = FileMembersIndexStore(fs, "/out".toPath())
         val legStore = FileMemberLegislationStore(fs, "/out".toPath())
@@ -243,7 +243,7 @@ class FetchMembersTest {
     @Test fun phase2_stops_at_time_budget_exceeded() = runTest {
         val httpClient = mockApiClient()
         val cc = CongressClient(httpClient, apiKey = "k")
-        val lc = LegislatorsClient(httpClient, sourceUrl = LEGISLATORS_TEST_URL)
+        val lc = LegislatorsClient(httpClient, currentUrl = LEGISLATORS_TEST_URL)
         val fs = FakeFileSystem()
         val indexStore = FileMembersIndexStore(fs, "/out".toPath())
         val legStore = FileMemberLegislationStore(fs, "/out".toPath())
@@ -275,7 +275,7 @@ class FetchMembersTest {
     @Test fun contact_info_failure_is_non_fatal_and_recorded() = runTest {
         val httpClient = mockApiClient(legislatorsStatus = HttpStatusCode.InternalServerError)
         val cc = CongressClient(httpClient, apiKey = "k")
-        val lc = LegislatorsClient(httpClient, sourceUrl = LEGISLATORS_TEST_URL)
+        val lc = LegislatorsClient(httpClient, currentUrl = LEGISLATORS_TEST_URL)
         val fs = FakeFileSystem()
         val indexStore = FileMembersIndexStore(fs, "/out".toPath())
         val legStore = FileMemberLegislationStore(fs, "/out".toPath())
@@ -309,7 +309,7 @@ class FetchMembersTest {
     @Test fun phase2_only_with_no_index_records_error() = runTest {
         val httpClient = mockApiClient()
         val cc = CongressClient(httpClient, apiKey = "k")
-        val lc = LegislatorsClient(httpClient, sourceUrl = LEGISLATORS_TEST_URL)
+        val lc = LegislatorsClient(httpClient, currentUrl = LEGISLATORS_TEST_URL)
         val fs = FakeFileSystem()
         val indexStore = FileMembersIndexStore(fs, "/out".toPath())
         val legStore = FileMemberLegislationStore(fs, "/out".toPath())
@@ -343,7 +343,7 @@ class FetchMembersTest {
         run {
             val httpClient = mockApiClient()
             val cc = CongressClient(httpClient, apiKey = "k")
-            val lc = LegislatorsClient(httpClient, sourceUrl = LEGISLATORS_TEST_URL)
+            val lc = LegislatorsClient(httpClient, currentUrl = LEGISLATORS_TEST_URL)
             fetchMembers(
                 congressClient = cc,
                 legislatorsClient = lc,
@@ -363,7 +363,7 @@ class FetchMembersTest {
             if (bid == "A001") error("simulated 503") else null
         })
         val cc = CongressClient(httpClient, apiKey = "k")
-        val lc = LegislatorsClient(httpClient, sourceUrl = LEGISLATORS_TEST_URL)
+        val lc = LegislatorsClient(httpClient, currentUrl = LEGISLATORS_TEST_URL)
         val result = fetchMembers(
             congressClient = cc,
             legislatorsClient = lc,
