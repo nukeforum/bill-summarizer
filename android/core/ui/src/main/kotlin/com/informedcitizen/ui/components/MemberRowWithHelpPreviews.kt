@@ -36,5 +36,18 @@ private fun PreviewMemberRowWithHelp() = PreviewWrap(modifier = Modifier) {
             onClick = {}, onCallPhone = {}, onOpenContactForm = {}, onOpenWebsite = {},
             onOpenSocial = {}, onShowHelp = {},
         )
+        // 4 methods (phone + form + web + socials) — no badge
+        MemberRowWithHelp(
+            member = sampleMember(
+                name = "All four",
+                socials = listOf(
+                    com.informedcitizen.pipeline.model.SocialHandle("twitter", "RepX"),
+                    com.informedcitizen.pipeline.model.SocialHandle("youtube", "@RepX"),
+                ),
+            ),
+            onClick = {}, onCallPhone = {}, onOpenContactForm = {}, onOpenWebsite = {},
+            onOpenSocial = {},
+            onShowHelp = {},
+        )
     }
 }
