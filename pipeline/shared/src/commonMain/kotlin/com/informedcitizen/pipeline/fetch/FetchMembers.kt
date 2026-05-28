@@ -5,6 +5,7 @@ import com.informedcitizen.pipeline.http.CongressClient
 import com.informedcitizen.pipeline.http.LegislatorsClient
 import com.informedcitizen.pipeline.model.Member
 import com.informedcitizen.pipeline.model.MemberLegislationItem
+import com.informedcitizen.pipeline.model.SocialHandle
 import kotlinx.coroutines.CancellationException
 import kotlinx.datetime.Clock
 import kotlinx.serialization.json.JsonArray
@@ -35,6 +36,8 @@ data class FetchMembersResult(
     val phase2TimedOut: Boolean,
     val contactInfoLoaded: Boolean,
     val contactInfoSize: Int,
+    val socialsLoaded: Boolean,
+    val socialsSize: Int,
 )
 
 /**
@@ -51,6 +54,8 @@ data class FetchMembersProgress(
     val onPhase2Done: (backfilled: Int, skipped: Int, total: Int) -> Unit = { _, _, _ -> },
     val onContactInfoLoaded: (size: Int, withForm: Int, withSite: Int) -> Unit = { _, _, _ -> },
     val onContactInfoFailed: (message: String) -> Unit = {},
+    val onSocialsLoaded: (size: Int, totalHandles: Int) -> Unit = { _, _ -> },
+    val onSocialsFailed: (message: String) -> Unit = {},
     val onStateWarning: (message: String) -> Unit = {},
 )
 
@@ -123,6 +128,29 @@ suspend fun fetchMembers(
         }
     }
 
+    var socialsIndex: Map<String, List<SocialHandle>> = emptyMap()
+    var socialsLoaded = false
+    if (runPhase1) {
+        try {
+            val socialsText = legislatorsClient.fetchSocialMedia()
+            socialsIndex = parseSocialsJson(socialsText)
+            socialsLoaded = true
+            val totalHandles = socialsIndex.values.sumOf { it.size }
+            progress.onSocialsLoaded(socialsIndex.size, totalHandles)
+        } catch (e: CancellationException) {
+            throw e
+        } catch (e: Throwable) {
+            // Non-fatal: members still publish with socials=[].
+            errors.record(
+                kind = "socials_index",
+                identifier = "unitedstates",
+                errorClass = e::class.simpleName ?: "Throwable",
+                message = e.message ?: e.toString(),
+            )
+            progress.onSocialsFailed(e.message ?: e.toString())
+        }
+    }
+
     if (runPhase1) {
         progress.onPhase1Start(congress)
         val collected = mutableListOf<Member>()
@@ -165,6 +193,7 @@ suspend fun fetchMembers(
             val withContact = parsed.copy(
                 contactForm = info?.contactForm,
                 website = info?.website,
+                socials = socialsIndex[bioguideId].orEmpty(),
             )
             collected += withContact
             progress.onPhase1Member(withContact)
@@ -191,6 +220,8 @@ suspend fun fetchMembers(
                 phase2TimedOut = false,
                 contactInfoLoaded = false,
                 contactInfoSize = 0,
+                socialsLoaded = false,
+                socialsSize = 0,
             )
         }
     }
@@ -206,6 +237,8 @@ suspend fun fetchMembers(
             phase2TimedOut = false,
             contactInfoLoaded = contactInfoLoaded,
             contactInfoSize = contactInfo.size,
+            socialsLoaded = socialsLoaded,
+            socialsSize = socialsIndex.size,
         )
     }
 
@@ -258,6 +291,8 @@ suspend fun fetchMembers(
         phase2TimedOut = timedOut,
         contactInfoLoaded = contactInfoLoaded,
         contactInfoSize = contactInfo.size,
+        socialsLoaded = socialsLoaded,
+        socialsSize = socialsIndex.size,
     )
 }
 
