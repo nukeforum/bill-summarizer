@@ -1,6 +1,7 @@
 package com.informedcitizen.pipeline.fetch
 
 import com.informedcitizen.pipeline.model.SocialHandle
+import kotlinx.serialization.SerializationException
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonObject
@@ -31,7 +32,7 @@ val KNOWN_SOCIAL_PLATFORMS: List<String> = listOf(
 fun parseSocialsJson(text: String): Map<String, List<SocialHandle>> {
     val root = try {
         SocialsJson.parseToJsonElement(text)
-    } catch (_: Throwable) {
+    } catch (_: SerializationException) {
         return emptyMap()
     }
     val array = root as? JsonArray ?: return emptyMap()
