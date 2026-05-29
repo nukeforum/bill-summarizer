@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T16:14:25Z",
+  "generated_at": "2026-05-29T15:56:25Z",
   "congress": 118,
   "bills": [
     {
@@ -289,6 +289,30 @@
       "text_url_xml": "https://www.congress.gov/118/plaws/publ76/PLAW-118publ76_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/118/plaws/publ76/PLAW-118publ76.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/3285"
+    },
+    {
+      "id": "sjres89-118",
+      "congress": 118,
+      "type": "sjres",
+      "number": "89",
+      "title": "A joint resolution to direct the termination of the use of United States Armed Forces for the construction, maintenance, and operation of the Joint Logistics Over-the-Shore pier on the coast of the Gaza Strip that has not been authorized by Congress.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cruz, Ted",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2024-05-23",
+      "latest_action": {
+        "date": "2024-07-11",
+        "text": "Point of order that the measure is not entitled to expedited procedures under 50 U.S.C. 1546(a) against the measure agreed to in Senate by Yea-Nay Vote. 48 - 46. Record Vote Number: 212. (consideration: CR S4533-4536)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/118/bills/sjres89/BILLS-118sjres89is.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sjres89/BILLS-118sjres89is.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sjres89/BILLS-118sjres89is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-joint-resolution/89"
     },
     {
       "id": "s4381-118",
