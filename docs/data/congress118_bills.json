@@ -1,7 +1,31 @@
 {
-  "generated_at": "2026-05-29T15:56:25Z",
+  "generated_at": "2026-05-30T13:53:35Z",
   "congress": 118,
   "bills": [
+    {
+      "id": "hr82-118",
+      "congress": 118,
+      "type": "hr",
+      "number": "82",
+      "title": "Social Security Fairness Act of 2023",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Graves, Garret",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2023-01-09",
+      "latest_action": {
+        "date": "2025-01-05",
+        "text": "Became Public Law No: 118-273."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Social Security Fairness Act of 2023</strong></p><p>This act repeals provisions that reduce Social Security benefits for individuals who receive other benefits, such as a pension from a state or local government.</p><p>The act eliminates the government pension offset, which in various instances reduces Social Security benefits for spouses, widows, and widowers who also receive government pensions of their own.</p><p>The act also eliminates the windfall elimination provision, which in some instances reduces Social Security benefits for individuals who also receive a pension or disability benefit from an employer that did not withhold Social Security taxes.</p><p>These changes are effective for benefits payable after December 2023.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ273/PLAW-118publ273.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ273/PLAW-118publ273_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ273/PLAW-118publ273.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/house-bill/82"
+    },
     {
       "id": "hr9124-118",
       "congress": 118,
@@ -73,6 +97,102 @@
       "text_url_xml": "https://www.congress.gov/118/plaws/publ200/PLAW-118publ200_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/118/plaws/publ200/PLAW-118publ200.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/3938"
+    },
+    {
+      "id": "hr1097-118",
+      "congress": 118,
+      "type": "hr",
+      "number": "1097",
+      "title": "Everett Alvarez, Jr. Congressional Gold Medal Act of 2023",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Panetta, Jimmy",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2023-02-17",
+      "latest_action": {
+        "date": "2024-12-23",
+        "text": "Became Public Law No: 118-161."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Everett Alvarez, Jr. Congressional Gold Medal Act of 2023</strong></p><p>This act provides for the award of a Congressional Gold Medal to Everett Alvarez Jr. in recognition of his service to the nation.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ161/PLAW-118publ161.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ161/PLAW-118publ161_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ161/PLAW-118publ161.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/house-bill/1097"
+    },
+    {
+      "id": "s5355-118",
+      "congress": 118,
+      "type": "s",
+      "number": "5355",
+      "title": "NACIE Improvement Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Fischer, Deb",
+        "party": "R",
+        "state": "NE"
+      },
+      "introduced_date": "2024-11-20",
+      "latest_action": {
+        "date": "2024-12-23",
+        "text": "Became Public Law No: 118-209."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>National Advisory Council on Indian Education Improvement Act or the NACIE Improvement Act</strong></p><p>This act requires the President to ensure that the National Advisory Council on Indian Education&nbsp;includes at least one member who is the president of a tribal college or university.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ209/PLAW-118publ209.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ209/PLAW-118publ209_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ209/PLAW-118publ209.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/5355"
+    },
+    {
+      "id": "hr7438-118",
+      "congress": 118,
+      "type": "hr",
+      "number": "7438",
+      "title": "FIFA World Cup 2026 Commemorative Coin Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. LaHood, Darin",
+        "party": "R",
+        "state": "IL"
+      },
+      "introduced_date": "2024-02-23",
+      "latest_action": {
+        "date": "2024-12-11",
+        "text": "Became Public Law No: 118-143."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>FIFA World Cup 2026 Commemorative Coin Act</strong></p><p>This act directs the Department of the Treasury to mint coins in commemoration of the FIFA World Cup 2026 to be held in the United States, Mexico, and Canada.</p><p>All surcharges received by Treasury from the sale of the coins shall be promptly paid by Treasury to FWC2026 US, Inc. (the U.S.-incorporated FIFA subsidiary operating the FIFA Men's World Cup 2026) for the purpose of aiding soccer programs and activities in the United States.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ143/PLAW-118publ143.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ143/PLAW-118publ143_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ143/PLAW-118publ143.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/house-bill/7438"
+    },
+    {
+      "id": "sres908-118",
+      "congress": 118,
+      "type": "sres",
+      "number": "908",
+      "title": "A resolution expressing support for the goals of Stomach Cancer Awareness Month.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Young, Todd",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2024-11-21",
+      "latest_action": {
+        "date": "2024-12-05",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S6855; text: 11/21/2024 CR S6728)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<div>This resolution expresses support for Stomach Cancer Awareness Month.</div>",
+      "text_url_html": "https://www.congress.gov/118/bills/sres908/BILLS-118sres908ats.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sres908/BILLS-118sres908ats.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sres908/BILLS-118sres908ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/908"
     },
     {
       "id": "s3126-118",
@@ -195,6 +315,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-joint-resolution/115"
     },
     {
+      "id": "sres861-118",
+      "congress": 118,
+      "type": "sres",
+      "number": "861",
+      "title": "A resolution expressing support for the designation of September 2024 as \"Sickle Cell Disease Awareness Month\" in order to educate communities across the United States about sickle cell disease and the need for research, early detection methods, effective treatments, and preventative care programs with respect to complications from sickle cell disease and conditions related to sickle cell disease.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Scott, Tim",
+        "party": "R",
+        "state": "SC"
+      },
+      "introduced_date": "2024-09-25",
+      "latest_action": {
+        "date": "2024-11-19",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S6638-6639; text: 9/25/2024 CR S6450-6451)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This resolution expresses support for the goals and ideals of Sickle Cell Disease Awareness Month. Sickle cell disease is an inherited blood disorder than can lead to pain, anemia, infections, and stroke.</p>",
+      "text_url_html": "https://www.congress.gov/118/bills/sres861/BILLS-118sres861ats.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sres861/BILLS-118sres861ats.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sres861/BILLS-118sres861ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/861"
+    },
+    {
       "id": "sres874-118",
       "congress": 118,
       "type": "sres",
@@ -241,6 +385,78 @@
       "text_url_xml": "https://www.congress.gov/118/plaws/publ85/PLAW-118publ85_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/118/plaws/publ85/PLAW-118publ85.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/1648"
+    },
+    {
+      "id": "s2861-118",
+      "congress": 118,
+      "type": "s",
+      "number": "2861",
+      "title": "Billie Jean King Congressional Gold Medal Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Gillibrand, Kirsten E.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2023-09-20",
+      "latest_action": {
+        "date": "2024-09-26",
+        "text": "Became Public Law No: 118-88."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Billie Jean King Congressional Gold Medal Act</strong></p><p>This bill provides for&nbsp;the award of a Congressional Gold Medal to Billie Jean King in recognition of her&nbsp;courageous and groundbreaking leadership in advancing equal rights for women&nbsp;in athletics, education, and society.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ88/PLAW-118publ88.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ88/PLAW-118publ88_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ88/PLAW-118publ88.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/2861"
+    },
+    {
+      "id": "sres812-118",
+      "congress": 118,
+      "type": "sres",
+      "number": "812",
+      "title": "A resolution supporting the designation of September 20, 2024, as \"National Concussion Awareness Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hassan, Margaret Wood",
+        "party": "D",
+        "state": "NH"
+      },
+      "introduced_date": "2024-09-12",
+      "latest_action": {
+        "date": "2024-09-24",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S6382; text: 09/12/2024 CR S6022)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This resolution supports the designation of September 20, 2024, as National Concussion Awareness Day.</p>",
+      "text_url_html": "https://www.congress.gov/118/bills/sres812/BILLS-118sres812ats.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sres812/BILLS-118sres812ats.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sres812/BILLS-118sres812ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/812"
+    },
+    {
+      "id": "sres815-118",
+      "congress": 118,
+      "type": "sres",
+      "number": "815",
+      "title": "A resolution designating the week beginning on September 9, 2024, as \"National Hispanic-Serving Institutions Week\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Padilla, Alex",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2024-09-12",
+      "latest_action": {
+        "date": "2024-09-17",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S6109; text: 9/12/2024 CR S6023-6024)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This resolution expresses support for the designation of&nbsp;National Hispanic-Serving Institutions Week.</p>",
+      "text_url_html": "https://www.congress.gov/118/bills/sres815/BILLS-118sres815ats.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sres815/BILLS-118sres815ats.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sres815/BILLS-118sres815ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/815"
     },
     {
       "id": "sres750-118",
@@ -435,6 +651,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/423"
     },
     {
+      "id": "s788-118",
+      "congress": 118,
+      "type": "s",
+      "number": "788",
+      "title": "Duck Stamp Modernization Act of 2023",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Boozman, John",
+        "party": "R",
+        "state": "AR"
+      },
+      "introduced_date": "2023-03-14",
+      "latest_action": {
+        "date": "2023-12-19",
+        "text": "Became Public Law No: 118-25."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><strong>Duck Stamp Modernization Act of 2023</strong></p> <p>This act modifies provisions regarding the Migratory Bird Hunting and Conservation Stamp, commonly referred to as the <em>duck stamp</em>, including to allow an individual to be carrying an electronic stamp, rather than a paper stamp, at the time of taking waterfowl.</p> <p>The act requires states to issue electronic stamps at the time of purchase and the Department of the Interior to issue a paper stamp after March 10 each year to each individual who purchased an electronic stamp for the preceding waterfowl season. The electronic stamps are valid through the first June 30 after issuance.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ25/PLAW-118publ25.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ25/PLAW-118publ25_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ25/PLAW-118publ25.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/788"
+    },
+    {
       "id": "sjres51-118",
       "congress": 118,
       "type": "sjres",
@@ -603,6 +843,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/284"
     },
     {
+      "id": "sres195-118",
+      "congress": 118,
+      "type": "sres",
+      "number": "195",
+      "title": "A resolution congratulating the students, parents, teachers, and leaders of charter schools across the United States for making ongoing contributions to education, and supporting the ideals and goals of the 24th annual National Charter Schools Week, to be held May 7 through May 13, 2023.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Scott, Tim",
+        "party": "R",
+        "state": "SC"
+      },
+      "introduced_date": "2023-05-04",
+      "latest_action": {
+        "date": "2023-05-11",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S1632; text: 05/04/2023 CR S1536-1537)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution congratulates the students, families, teachers, administrators, and staff of public charter schools across the United States for (1)&nbsp;making ongoing contributions to public education, (2) making important strides in closing the academic achievement gap in U.S. schools, and (3) strengthening the public school system.</p> <p>The resolution supports the ideals and goals of the 24th annual National Charter Schools Week.</p>",
+      "text_url_html": "https://www.congress.gov/118/bills/sres195/BILLS-118sres195ats.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sres195/BILLS-118sres195ats.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sres195/BILLS-118sres195ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/195"
+    },
+    {
       "id": "sres157-118",
       "congress": 118,
       "type": "sres",
@@ -649,6 +913,30 @@
       "text_url_xml": "https://www.congress.gov/118/bills/sres76/BILLS-118sres76ats.xml",
       "text_url_pdf": "https://www.congress.gov/118/bills/sres76/BILLS-118sres76ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/76"
+    },
+    {
+      "id": "sres123-118",
+      "congress": 118,
+      "type": "sres",
+      "number": "123",
+      "title": "A resolution recognizing the week of March 19 through March 25, 2023, as \"National Poison Prevention Week\" and encouraging communities across the United States to raise awareness of the dangers of poisoning and promote poison prevention.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Brown, Sherrod",
+        "party": "D",
+        "state": "OH"
+      },
+      "introduced_date": "2023-03-23",
+      "latest_action": {
+        "date": "2023-03-27",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S951; text: 03/23/2023 CR S937-938)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution recognizes National Poison Prevention Week and thanks those who operate or support poison control centers in local communities.</p>",
+      "text_url_html": "https://www.congress.gov/118/bills/sres123/BILLS-118sres123ats.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sres123/BILLS-118sres123ats.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sres123/BILLS-118sres123ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/123"
     }
   ]
 }
