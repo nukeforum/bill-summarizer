@@ -1,7 +1,31 @@
 {
-  "generated_at": "2026-05-29T09:54:42Z",
+  "generated_at": "2026-05-30T08:28:19Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "hr3497-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "3497",
+      "title": "Medal of Sacrifice Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Mast, Brian J.",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2025-05-19",
+      "latest_action": {
+        "date": "2026-05-28",
+        "text": "Became Public Law No: 119-94."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Medal of Sacrifice Act of 2025</strong></p><p>This bill directs the President to issue a medal of sacrifice for eligible law enforcement officers and first responders who are killed in the line of duty.</p><p>The bill also directs the President to establish a commission on the medal of sacrifice and appoint its members. The bill sets forth responsibilities of the commission, including to advise on the design of the medal and determine how the medal will be presented.</p><p>Under the bill, eligible law enforcement officers and first responders include federal, state, local, tribal, or territorial law enforcement officers or first responders who are not subject to an official act of wrongdoing (e.g., a determination that the officer or first responder acted outside the scope of their duties or in a manner that was not in accordance with official policies or procedures).</p><p>A law enforcement officer or first responder who is subject to an official act of wrongdoing is generally not eligible for the medal of sacrifice. However, in the case of such an officer or first responder, the bill requires the commission to investigate the circumstances surrounding the officer or first responder's cause of death and issue a final determination on their eligibility.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr3497/BILLS-119hr3497rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr3497/BILLS-119hr3497rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr3497/BILLS-119hr3497rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/3497"
+    },
     {
       "id": "sres676-119",
       "congress": 119,
@@ -769,30 +793,6 @@
       "text_url_xml": "https://www.congress.gov/119/bills/hconres73/BILLS-119hconres73rds.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/hconres73/BILLS-119hconres73rds.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-concurrent-resolution/73"
-    },
-    {
-      "id": "hr3497-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "3497",
-      "title": "Medal of Sacrifice Act",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Mast, Brian J.",
-        "party": "R",
-        "state": "FL"
-      },
-      "introduced_date": "2025-05-19",
-      "latest_action": {
-        "date": "2026-05-11",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S2204; text: CR S2204)"
-      },
-      "outcome": "passed_senate",
-      "summary_crs": "<p><strong>Medal of Sacrifice Act of 2025</strong></p><p>This bill directs the President to issue a medal of sacrifice for eligible law enforcement officers and first responders who are killed in the line of duty.</p><p>The bill also directs the President to establish a commission on the medal of sacrifice and appoint its members. The bill sets forth responsibilities of the commission, including to advise on the design of the medal and determine how the medal will be presented.</p><p>Under the bill, eligible law enforcement officers and first responders include federal, state, local, tribal, or territorial law enforcement officers or first responders who are not subject to an official act of wrongdoing (e.g., a determination that the officer or first responder acted outside the scope of their duties or in a manner that was not in accordance with official policies or procedures).</p><p>A law enforcement officer or first responder who is subject to an official act of wrongdoing is generally not eligible for the medal of sacrifice. However, in the case of such an officer or first responder, the bill requires the commission to investigate the circumstances surrounding the officer or first responder's cause of death and issue a final determination on their eligibility.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr3497/BILLS-119hr3497rfs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr3497/BILLS-119hr3497rfs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr3497/BILLS-119hr3497rfs.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/3497"
     },
     {
       "id": "s1020-119",
