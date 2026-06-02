@@ -1,7 +1,31 @@
 {
-  "generated_at": "2026-06-01T11:33:53Z",
+  "generated_at": "2026-06-02T10:24:50Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "s4530-119",
+      "congress": 119,
+      "type": "s",
+      "number": "4530",
+      "title": "A bill to amend chapters 83 and 84 of title 5, United States Code, to authorize an increase of the retirement age for members of the Capitol Police.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. McConnell, Mitch",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2026-05-14",
+      "latest_action": {
+        "date": "2026-05-29",
+        "text": "Became Public Law No: 119-95."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This bill authorizes the Capitol Police Board to increase the mandatory retirement age for a member of the Capitol Police to up to age 62. Under current law,  members of the Capitol Police are generally subject to mandatory retirement at age 57 (with some exceptions), but&nbsp;may receive a&nbsp;waiver from the board&nbsp;authorizing them to continue working until they are 60.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s4530/BILLS-119s4530es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s4530/BILLS-119s4530es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s4530/BILLS-119s4530es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/4530"
+    },
     {
       "id": "hr3497-119",
       "congress": 119,
