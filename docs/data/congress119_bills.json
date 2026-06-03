@@ -1,7 +1,31 @@
 {
-  "generated_at": "2026-06-02T10:24:50Z",
+  "generated_at": "2026-06-03T10:58:55Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "sres727-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "727",
+      "title": "A resolution supporting the designation of May 29, 2026, as \"Mental Health Awareness in Agriculture Day\" to raise awareness around mental health in the agricultural industry and workforce and to continue to reduce stigma associated with mental illness.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Fischer, Deb",
+        "party": "R",
+        "state": "NE"
+      },
+      "introduced_date": "2026-05-13",
+      "latest_action": {
+        "date": "2026-06-01",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S2480)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This resolution designates May 29, 2026, as Mental Health Awareness in Agriculture Day to raise awareness around mental health in the agricultural industry and reduce the stigma associated with mental illness.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sres727/BILLS-119sres727ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres727/BILLS-119sres727ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres727/BILLS-119sres727ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/727"
+    },
     {
       "id": "s4530-119",
       "congress": 119,
@@ -45,9 +69,9 @@
       },
       "outcome": "enacted",
       "summary_crs": "<p><strong>Medal of Sacrifice Act of 2025</strong></p><p>This bill directs the President to issue a medal of sacrifice for eligible law enforcement officers and first responders who are killed in the line of duty.</p><p>The bill also directs the President to establish a commission on the medal of sacrifice and appoint its members. The bill sets forth responsibilities of the commission, including to advise on the design of the medal and determine how the medal will be presented.</p><p>Under the bill, eligible law enforcement officers and first responders include federal, state, local, tribal, or territorial law enforcement officers or first responders who are not subject to an official act of wrongdoing (e.g., a determination that the officer or first responder acted outside the scope of their duties or in a manner that was not in accordance with official policies or procedures).</p><p>A law enforcement officer or first responder who is subject to an official act of wrongdoing is generally not eligible for the medal of sacrifice. However, in the case of such an officer or first responder, the bill requires the commission to investigate the circumstances surrounding the officer or first responder's cause of death and issue a final determination on their eligibility.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr3497/BILLS-119hr3497rfs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr3497/BILLS-119hr3497rfs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr3497/BILLS-119hr3497rfs.pdf",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ94/PLAW-119publ94.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ94/PLAW-119publ94_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ94/PLAW-119publ94.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/3497"
     },
     {
