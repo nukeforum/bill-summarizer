@@ -1,7 +1,55 @@
 {
-  "generated_at": "2026-06-04T09:55:51Z",
+  "generated_at": "2026-06-05T09:50:12Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "sres751-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "751",
+      "title": "A resolution designating May 2026 as \"ALS Awareness Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Coons, Christopher A.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2026-05-21",
+      "latest_action": {
+        "date": "2026-06-03",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S2518)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres751/BILLS-119sres751is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres751/BILLS-119sres751is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres751/BILLS-119sres751is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/751"
+    },
+    {
+      "id": "sjres188-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "188",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"National Emission Standards for Hazardous Air Pollutants: Coal- and Oil-Fired Electric Utility Steam Generating Units: Final Repeal\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Whitehouse, Sheldon",
+        "party": "D",
+        "state": "RI"
+      },
+      "introduced_date": "2026-04-27",
+      "latest_action": {
+        "date": "2026-06-03",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 53. Record Vote Number: 135. (CR S2509)"
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres188/BILLS-119sjres188pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres188/BILLS-119sjres188pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres188/BILLS-119sjres188pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/188"
+    },
     {
       "id": "sres727-119",
       "congress": 119,
@@ -45,9 +93,9 @@
       },
       "outcome": "enacted",
       "summary_crs": "<p>This bill authorizes the Capitol Police Board to increase the mandatory retirement age for a member of the Capitol Police to up to age 62. Under current law,  members of the Capitol Police are generally subject to mandatory retirement at age 57 (with some exceptions), but&nbsp;may receive a&nbsp;waiver from the board&nbsp;authorizing them to continue working until they are 60.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/s4530/BILLS-119s4530es.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/s4530/BILLS-119s4530es.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/s4530/BILLS-119s4530es.pdf",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ95/PLAW-119publ95.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ95/PLAW-119publ95_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ95/PLAW-119publ95.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/4530"
     },
     {
