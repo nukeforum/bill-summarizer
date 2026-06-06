@@ -1,7 +1,55 @@
 {
-  "generated_at": "2026-06-05T09:50:12Z",
+  "generated_at": "2026-06-06T08:33:32Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "s2-119",
+      "congress": 119,
+      "type": "s",
+      "number": "2",
+      "title": "Secure America Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Graham, Lindsey",
+        "party": "R",
+        "state": "SC"
+      },
+      "introduced_date": "2026-05-20",
+      "latest_action": {
+        "date": "2026-06-05",
+        "text": "Passed Senate with an amendment by Yea-Nay Vote. 52 - 47. Record Vote Number: 163."
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p><strong>Secure America Act</strong></p><p>This bill provides funding to the Department of Homeland Security (DHS), U.S. Customs and Border Protection (CBP), and U.S. Immigration and Customs Enforcement (ICE) through FY2029 for immigration enforcement and related activities.</p><p>It is known as a reconciliation bill and includes legislation submitted by certain congressional committees pursuant to provisions in the FY2026 congressional budget resolution (S. Con. Res. 33) that directed the committees to submit legislation to the House or Senate Budget Committee that will increase the deficit. (Reconciliation bills are considered by Congress using expedited legislative procedures that prevent a filibuster and restrict amendments in the Senate.)</p><p>Specifically, the bill provides funding to CBP for&nbsp;</p><ul><li>personnel;</li><li>border security, technology, and screening; and</li><li>immigration enforcement activities.</li></ul><p>The bill provides funding to ICE for</p><ul><li>personnel,</li><li>Homeland Security Investigations,</li><li>immigration enforcement activities,</li><li>transportation,</li><li>information technology,</li><li>facility and fleet maintenance and sustainment,</li><li>287(g) agreements (i.e., agreements that allow state and local law enforcement&nbsp;agencies to perform certain immigration enforcement functions),</li><li>the Office of the Principal Legal Advisor,&nbsp;</li><li>operation and maintenance, and</li><li>certain arrests related to immigration enforcement.</li></ul><p>The bill also provides additional funding to DHS for (1) immigration enforcement, and (2) the participation of state and local agencies in certain homeland security efforts.&nbsp;</p><p>The funding provided by this bill generally remains available through FY2029.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s2/BILLS-119s2es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s2/BILLS-119s2es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s2/BILLS-119s2es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2"
+    },
+    {
+      "id": "s1318-119",
+      "congress": 119,
+      "type": "s",
+      "number": "1318",
+      "title": "Fallen Servicemembers Religious Heritage Restoration Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Moran, Jerry",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2025-04-07",
+      "latest_action": {
+        "date": "2026-06-05",
+        "text": "Motion to proceed to consideration of the House message to accompany S. 1318 rejected in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 164."
+      },
+      "outcome": "failed",
+      "summary_crs": "<p><strong>Foreign Intelligence Accountability Act and the Anti-CBDC Surveillance State Act</strong></p><p>This bill reauthorizes Title VII of the Foreign Intelligence Surveillance Act (FISA) until April 30, 2029, and expands protections related to surveillance under Section 702 of&nbsp;FISA. It also prohibits a Federal Reserve bank from offering financial products or services directly to an individual, maintaining an account on behalf of an individual, or issuing a central bank digital currency (CBDC).</p><p>Section 702 of FISA concerns acquiring communications of non-U.S. persons believed to be outside the United States to obtain foreign intelligence information. Information about U.S. persons may incidentally be acquired by this type of surveillance and subsequently <em>queried </em>(searched) under certain circumstances.</p><p>Changes to Section 702 include requiring monthly reviews by the Office of the Director of National Intelligence (ODNI) for each U.S. person query conducted by the Federal Bureau of Investigation (FBI). ODNI must refer queries that do not comply with established standards, as well as possible abuses of civil liberties or privacy, to the Office of the Intelligence Community Inspector General.</p><p>The bill institutes criminal penalties for (1) those who knowingly and willingly falsify or materially misrepresent complying with querying procedures, and (2) FBI personnel who knowingly and willingly violate procedures related to U.S. person queries.</p><p>FBI supervisors may no longer approve U.S. person queries; only certain FBI attorneys may do so.</p><p>The  Federal Reserve System's Board of Governors&nbsp;may not use a CBDC to implement monetary policy or test, study, create, or implement a CBDC, with certain exceptions.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s1318/BILLS-119s1318eah.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s1318/BILLS-119s1318eah.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s1318/BILLS-119s1318eah.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1318"
+    },
     {
       "id": "sres751-119",
       "congress": 119,
