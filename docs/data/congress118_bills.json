@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T14:07:39Z",
+  "generated_at": "2026-06-08T16:06:19Z",
   "congress": 118,
   "bills": [
     {
@@ -1995,6 +1995,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/3959"
     },
     {
+      "id": "s1351-118",
+      "congress": 118,
+      "type": "s",
+      "number": "1351",
+      "title": "Stop Institutional Child Abuse Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Merkley, Jeff",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2023-04-27",
+      "latest_action": {
+        "date": "2024-12-23",
+        "text": "Became Public Law No: 118-194."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Stop Institutional Child Abuse Act</strong></p><p>This act requires the Department of Health and Human Services to contract with the National Academies of Sciences, Engineering, and Medicine to study and make recommendations about various aspects of youth residential programs.</p><p>Specifically, the National Academies must identify the nature, prevalence, severity, and scope of child abuse, neglect, and deaths in youth residential programs.</p><p>The National Academies must make recommendations to improve coordination and the implementation of best practices of regarding the health, safety, care, and treatment of youth in youth residential programs. The National Academies also must make recommendations about education and training resources for personnel in health care, law enforcement, the judiciary, social work, and child protection.</p><p>In carrying out these requirements, the National Academies must consult with various experts in the field, including local, state, and federal agencies.</p><p>The National Academies must submit the report not later than three years after enactment of this bill and biennially thereafter for a period of 10 years.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ194/PLAW-118publ194.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ194/PLAW-118publ194_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ194/PLAW-118publ194.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/1351"
+    },
+    {
       "id": "hr10545-118",
       "congress": 118,
       "type": "hr",
@@ -2017,6 +2041,30 @@
       "text_url_xml": "https://www.congress.gov/118/plaws/publ158/PLAW-118publ158_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/118/plaws/publ158/PLAW-118publ158.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/house-bill/10545"
+    },
+    {
+      "id": "sres895-118",
+      "congress": 118,
+      "type": "sres",
+      "number": "895",
+      "title": "A resolution recognizing the second commemoration of the anti-LGBTQ+ attack that occurred on November 19-20, 2022, at Club Q, an LGBTQ+ bar in Colorado Springs, Colorado.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Bennet, Michael F.",
+        "party": "D",
+        "state": "CO"
+      },
+      "introduced_date": "2024-11-19",
+      "latest_action": {
+        "date": "2024-12-18",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Voice Vote. (consideration: CR S7171; text: 11/19/2024 CR S6635-6636)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This resolution recognizes the two-year remembrance of the attack that occurred on November 19-20, 2022, at Club Q, an LGBTQ+ bar in Colorado Springs, Colorado.</p>",
+      "text_url_html": "https://www.congress.gov/118/bills/sres895/BILLS-118sres895ats.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sres895/BILLS-118sres895ats.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sres895/BILLS-118sres895ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/895"
     },
     {
       "id": "s3960-118",
@@ -2137,6 +2185,30 @@
       "text_url_xml": "https://www.congress.gov/118/plaws/publ157/PLAW-118publ157_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/118/plaws/publ157/PLAW-118publ157.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/3613"
+    },
+    {
+      "id": "s1478-118",
+      "congress": 118,
+      "type": "s",
+      "number": "1478",
+      "title": "A bill to designate United States Route 20 in the States of Oregon, Idaho, Montana, Wyoming, Nebraska, Iowa, Illinois, Indiana, Ohio, Pennsylvania, New York, and Massachusetts as the \"National Medal of Honor Highway\", and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wyden, Ron",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2023-05-09",
+      "latest_action": {
+        "date": "2024-12-17",
+        "text": "Became Public Law No: 118-154."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This act designates U.S. Route 20 in the states of Oregon, Idaho, Montana, Wyoming, Nebraska, Iowa, Illinois, Indiana, Ohio, Pennsylvania, New York, and Massachusetts as the National Medal of Honor Highway.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ154/PLAW-118publ154.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ154/PLAW-118publ154_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ154/PLAW-118publ154.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/1478"
     },
     {
       "id": "sres733-118",
@@ -3339,6 +3411,54 @@
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/house-bill/6513"
     },
     {
+      "id": "s1549-118",
+      "congress": 118,
+      "type": "s",
+      "number": "1549",
+      "title": "Congressional Budget Office Data Access Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Peters, Gary C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2023-05-10",
+      "latest_action": {
+        "date": "2024-10-02",
+        "text": "Became Public Law No: 118-104."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Congressional Budget Office Data Access Act</strong></p><p>This act exempts the Congressional Budget Office (CBO) from the Privacy Act of 1974 to expedite the sharing of data and information between CBO and federal agencies.</p><p>Under current law, the Privacy Act of 1974 generally prohibits federal agencies from disclosing certain records pertaining to an individual without the individual's prior written consent. This act allows federal agencies to disclose such records to CBO (or to an authorized representative of CBO) without obtaining the prior written consent of the individual.</p><p>Several agencies, including the Government Accountability Office and the National Archives and Records Administration, are currently exempt from these requirements, and this act adds CBO to the list of exemptions.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ104/PLAW-118publ104.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ104/PLAW-118publ104_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ104/PLAW-118publ104.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/1549"
+    },
+    {
+      "id": "s2228-118",
+      "congress": 118,
+      "type": "s",
+      "number": "2228",
+      "title": "Building Chips in America Act of 2023",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kelly, Mark",
+        "party": "D",
+        "state": "AZ"
+      },
+      "introduced_date": "2023-07-11",
+      "latest_action": {
+        "date": "2024-10-02",
+        "text": "Became Public Law No: 118-105."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Building Chips in America Act of 2023</strong></p><p>This bill modifies and limits the review of certain semiconductor (i.e., microchip) projects under the National Environmental Policy Act of 1969 (NEPA) and the National Historic Preservation Act (NHPA).</p><p>First, the bill exempts from NEPA and NHPA specified semiconductor projects that receive financial assistance under the William M. (Mac) Thornberry National Defense Authorization Act for Fiscal Year 2021, including semiconductor projects with (1) activities that commence by December 31, 2024; (2) federal financial assistance provided in the form of a loan or loan guarantee; or (3) federal financial assistance, excluding any loan or loan guarantee, that comprises no more than 10% of the total estimated cost of the project. Further, the bill exempts certain activities from NEPA relating to the construction, expansion, or modernization of semiconductor facilities by establishing several categorical exclusions.</p><p>Next, the bill allows the Department of Commerce to serve as the lead agency for the review of a semiconductor project that receives such financial assistance but is not exempted from review under NEPA.</p><p>In completing an environmental review under NEPA for semiconductor projects that receive such financial assistance, Commerce may rely on or adopt prior studies and decisions under certain circumstances.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ105/PLAW-118publ105.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ105/PLAW-118publ105_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ105/PLAW-118publ105.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/2228"
+    },
+    {
       "id": "s3639-118",
       "congress": 118,
       "type": "s",
@@ -3915,6 +4035,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/house-bill/1076"
     },
     {
+      "id": "s1608-118",
+      "congress": 118,
+      "type": "s",
+      "number": "1608",
+      "title": "Starr–Camargo Bridge Expansion Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2023-05-16",
+      "latest_action": {
+        "date": "2024-09-13",
+        "text": "Became Public Law No: 118-80."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Starr–Camargo Bridge Expansion Act</strong></p><p>This act authorizes the Starr-Camargo Bridge Company to expand the Starr-Camargo international toll bridge near Rio Grande City, Texas, including expanding and adding adjacent spans to the existing bridge.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ80/PLAW-118publ80.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ80/PLAW-118publ80_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ80/PLAW-118publ80.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/1608"
+    },
+    {
       "id": "sres794-118",
       "congress": 118,
       "type": "sres",
@@ -4131,6 +4275,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/house-bill/1105"
     },
     {
+      "id": "s3249-118",
+      "congress": 118,
+      "type": "s",
+      "number": "3249",
+      "title": "A bill to designate the outpatient clinic of the Department of Veterans Affairs in Wyandotte County, Kansas City, Kansas, as the \"Captain Elwin Shopteese VA Clinic\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Moran, Jerry",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2023-11-08",
+      "latest_action": {
+        "date": "2024-07-30",
+        "text": "Became Public Law No: 118-75."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This act designates the outpatient clinic of the Department of Veterans Affairs at 9201 Parallel Parkway, Kansas City, Kansas, as the Captain Elwin Shopteese Department of Veterans Affairs Clinic or the Captain Elwin Shopteese VA Clinic.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ75/PLAW-118publ75.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ75/PLAW-118publ75_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ75/PLAW-118publ75.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/3249"
+    },
+    {
       "id": "hr3019-118",
       "congress": 118,
       "type": "hr",
@@ -4297,6 +4465,30 @@
       "text_url_xml": "https://www.congress.gov/118/bills/sres736/BILLS-118sres736ats.xml",
       "text_url_pdf": "https://www.congress.gov/118/bills/sres736/BILLS-118sres736ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/736"
+    },
+    {
+      "id": "hr2365-118",
+      "congress": 118,
+      "type": "hr",
+      "number": "2365",
+      "title": "Dr. Emmanuel Bilirakis and Honorable Jennifer Wexton National Plan to End Parkinson’s Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Bilirakis, Gus M.",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2023-03-29",
+      "latest_action": {
+        "date": "2024-07-02",
+        "text": "Became Public Law No: 118-66."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Dr. Emmanuel Bilirakis and Honorable Jennifer Wexton National Plan to End Parkinson's Act</strong></p><p>This bill requires the Department of Health and Human Services (HHS) to carry out a project to address Parkinson's disease (a progressive brain disorder that causes unintended or uncontrollable movements) and related conditions.</p><p>Among other components of the project, HHS must (1) implement and periodically update a national plan to coordinate and guide efforts to prevent, diagnose, treat, and cure the disease; and (2) improve the care of those with the disease. HHS must also annually assess the preparations for and response to the increased burden of Parkinson's disease.</p><p>In addition, the bill establishes a council, comprised of federal and nonfederal stakeholders, to advise HHS on and make recommendations concerning the prevention and treatment of Parkinson's disease.</p><p>The provisions of the bill terminate at the end of calendar year 2035.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ66/PLAW-118publ66.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ66/PLAW-118publ66_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ66/PLAW-118publ66.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/house-bill/2365"
     },
     {
       "id": "s2051-118",
@@ -5115,6 +5307,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/3222"
     },
     {
+      "id": "s3250-118",
+      "congress": 118,
+      "type": "s",
+      "number": "3250",
+      "title": "A bill to provide remote access to court proceedings for victims of the 1988 Bombing of Pan Am Flight 103 over Lockerbie, Scotland.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2023-11-08",
+      "latest_action": {
+        "date": "2024-01-26",
+        "text": "Became Public Law No: 118-37."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p>This act requires federal courts to make remote access to certain criminal court proceedings available for victims of the bombing of Pan American Flight 103 over&nbsp;Lockerbie, Scotland, on December 21, 1988.</p><p>Specifically, federal courts must make remote access available to the proceedings in the criminal case against Abu Agila Mohammed Mas'ud Kheir Al-Marimi and against any co-conspirator subsequently charged and prosecuted in federal court for crimes related to the bombing of Pan American Flight 103.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ37/PLAW-118publ37.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ37/PLAW-118publ37_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ37/PLAW-118publ37.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/3250"
+    },
+    {
       "id": "sres528-118",
       "congress": 118,
       "type": "sres",
@@ -5475,6 +5691,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/house-bill/1734"
     },
     {
+      "id": "s2787-118",
+      "congress": 118,
+      "type": "s",
+      "number": "2787",
+      "title": "5G SALE Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kennedy, John",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2023-09-13",
+      "latest_action": {
+        "date": "2023-12-19",
+        "text": "Became Public Law No: 118-27."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>5G Spectrum Authority Licensing Enforcement Act or the 5G SALE Act</b></p> <p>This act temporarily authorizes the Federal Communications Commission (FCC) to process applications for licenses or permits for the use of specified bands of the electromagnetic spectrum that were auctioned on or before March 9, 2023. The authorization terminates 90 days after the enactment of the act.</p> <p>The FCC has not processed the licenses or permits for the previously auctioned spectrum because its authority to conduct auctions lapsed on March 9, 2023.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ27/PLAW-118publ27.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ27/PLAW-118publ27_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ27/PLAW-118publ27.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/2787"
+    },
+    {
       "id": "sres453-118",
       "congress": 118,
       "type": "sres",
@@ -5545,6 +5785,30 @@
       "text_url_xml": "https://www.congress.gov/118/bills/sjres51/BILLS-118sjres51is.xml",
       "text_url_pdf": "https://www.congress.gov/118/bills/sjres51/BILLS-118sjres51is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-joint-resolution/51"
+    },
+    {
+      "id": "sres445-118",
+      "congress": 118,
+      "type": "sres",
+      "number": "445",
+      "title": "A resolution recognizing the importance of the economic relationship between the United States and Israel and affirming that trade facilitated by the United States-Israel Free Trade Agreement is a tool to support the economy of Israel during the conflict with Hamas.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blackburn, Marsha",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2023-11-02",
+      "latest_action": {
+        "date": "2023-12-06",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5803; text: 11/02/2023 CR S5342)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This resolution recognizes that the economic relationship between the United States and Israel is strong and has benefitted both countries and the peoples of both countries. It also expresses support for the people of Israel and the economy of Israel in the face of Hamas' attacks against Israel.</p><p>Additionally, the resolution affirms that (1) the United States-Israel Free Trade Agreement set the stage for robust growth in trade and investment between the United States and Israel, and (2) the agreement can serve as a tool for supporting the economy of Israel during the conflict with Hamas. &nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/118/bills/sres445/BILLS-118sres445ats.htm",
+      "text_url_xml": "https://www.congress.gov/118/bills/sres445/BILLS-118sres445ats.xml",
+      "text_url_pdf": "https://www.congress.gov/118/bills/sres445/BILLS-118sres445ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-resolution/445"
     },
     {
       "id": "hr6363-118",
@@ -5905,6 +6169,30 @@
       "text_url_xml": "https://www.congress.gov/118/plaws/publ18/PLAW-118publ18_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/118/plaws/publ18/PLAW-118publ18.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/112"
+    },
+    {
+      "id": "s475-118",
+      "congress": 118,
+      "type": "s",
+      "number": "475",
+      "title": "A bill to designate the clinic of the Department of Veterans Affairs in Gallup, New Mexico, as the Hiroshi \"Hershey\" Miyamura VA Clinic.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Heinrich, Martin",
+        "party": "D",
+        "state": "NM"
+      },
+      "introduced_date": "2023-02-16",
+      "latest_action": {
+        "date": "2023-10-02",
+        "text": "Became Public Law No: 118-16."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the clinic of the Department of Veterans Affairs in Gallup, New Mexico, as the Hiroshi &quot;Hershey&quot; Miyamura Department of Veterans Affairs Clinic or the Hiroshi &quot;Hershey&quot; Miyamura VA Clinic.</p>",
+      "text_url_html": "https://www.congress.gov/118/plaws/publ16/PLAW-118publ16.htm",
+      "text_url_xml": "https://www.congress.gov/118/plaws/publ16/PLAW-118publ16_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/118/plaws/publ16/PLAW-118publ16.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/118th-congress/senate-bill/475"
     },
     {
       "id": "sres310-118",
