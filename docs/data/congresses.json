@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T10:23:52Z",
+  "generated_at": "2026-06-11T16:13:41Z",
   "current_congress": 119,
   "congresses": [
     {
@@ -13,12 +13,12 @@
     },
     {
       "congress": 118,
-      "bill_count": 367,
+      "bill_count": 374,
       "first_action_date": "2023-01-26",
-      "last_action_date": "2025-01-05",
+      "last_action_date": "2025-01-06",
       "manifest_path": "congress118_bills.json",
       "is_current": false,
-      "backfill_complete": false
+      "backfill_complete": true
     }
   ]
 }
