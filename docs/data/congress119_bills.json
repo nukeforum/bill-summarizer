@@ -1,7 +1,55 @@
 {
-  "generated_at": "2026-06-10T10:00:48Z",
+  "generated_at": "2026-06-11T10:23:52Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "s2393-119",
+      "congress": 119,
+      "type": "s",
+      "number": "2393",
+      "title": "Fiscal Year 2025 Veterans Affairs Major Medical Facility Authorization Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Moran, Jerry",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2025-07-23",
+      "latest_action": {
+        "date": "2026-06-09",
+        "text": "Became Public Law No: 119-97."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Fiscal Year 2025 Veterans Affairs Major Medical Facility Authorization Act</strong></p><p>This bill authorizes the Department of Veterans Affairs to carry out a major medical facility project in St. Louis, Missouri, during FY2026.</p><p>The bill specifies the maximum amount that may be spent on the project and details that the project consists of the construction of a new bed tower, clinical building expansion, consolidated administrative building and warehouse, utility plant, and parking garages.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s2393/BILLS-119s2393es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s2393/BILLS-119s2393es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s2393/BILLS-119s2393es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2393"
+    },
+    {
+      "id": "hr3490-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "3490",
+      "title": "Gerald E. Connolly Esophageal Cancer Awareness Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Connolly, Gerald E.",
+        "party": "D",
+        "state": "VA"
+      },
+      "introduced_date": "2025-05-19",
+      "latest_action": {
+        "date": "2026-06-09",
+        "text": "Became Public Law No: 119-96."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Esophageal Cancer Awareness Act</strong></p><p>This bill requires the Government Accountability Office to report to Congress on (1) the impact of esophageal cancer-related health care spending under the Federal Employees Health Benefits Program (FEHBP) for federal employees and retirees diagnosed with esophageal cancer, and (2) how often FEHBP participants with a high risk of esophageal cancer undergo screenings according to established guidelines.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr3490/BILLS-119hr3490rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr3490/BILLS-119hr3490rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr3490/BILLS-119hr3490rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/3490"
+    },
     {
       "id": "s2-119",
       "congress": 119,
