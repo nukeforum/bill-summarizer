@@ -17,7 +17,10 @@ concurrency:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    # Bumped from 5 → 15 minutes for the parallel-run period: the
+    # workflow now runs Python *and* Kotlin checkers, plus Gradle
+    # warm-up on a cold cache. Revert when the cut-over completes.
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -36,5 +39,86 @@ jobs:
       - name: Install Python dependencies
         run: uv pip install --system -r data-pipeline/requirements.txt
 
-      - name: Run freshness check
-        run: python data-pipeline/scripts/check_freshness.py
+      # --- Kotlin tooling (parallel-run) ---
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      # Both checkers run with continue-on-error so the comparison step
+      # always executes; the final step re-asserts the CANONICAL
+      # (Python) verdict as the job status.
+
+      - name: Run freshness check (Python — canonical)
+        id: python-check
+        continue-on-error: true
+        run: |
+          set +e
+          python data-pipeline/scripts/check_freshness.py 2>&1 | tee /tmp/freshness-python.txt
+          echo "exit_code=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+
+      - name: Run freshness check (Kotlin — shadow validation)
+        id: kotlin-check
+        continue-on-error: true
+        working-directory: pipeline
+        # Paths are passed explicitly because the step's
+        # working-directory is pipeline/ (same gotcha as the
+        # fetch-bills shadow's --state-dir).
+        run: |
+          set +e
+          ./gradlew :cli:run --args="check-freshness --output-dir $GITHUB_WORKSPACE/docs/data --state-dir $GITHUB_WORKSPACE/data-pipeline/state" --no-daemon 2>&1 | tee /tmp/freshness-kotlin.txt
+          echo "exit_code=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+
+      # --- Compare Python (canonical) vs Kotlin (shadow) verdicts ---
+      # The artifact here is an exit code + failure lines, not a JSON
+      # file — parity means both implementations reach the same
+      # verdict. Output is teed to BOTH stdout (so `gh run view --log`
+      # shows it) AND $GITHUB_STEP_SUMMARY, per the CLI-readable rule.
+
+      - name: Compare canonical vs Kotlin shadow verdict
+        if: always()
+        env:
+          PY_EXIT: ${{ steps.python-check.outputs.exit_code }}
+          KT_EXIT: ${{ steps.kotlin-check.outputs.exit_code }}
+        run: |
+          set +e
+          {
+            echo "## check-freshness parity check"
+            echo ""
+            py_verdict=$([ "$PY_EXIT" = "0" ] && echo OK || echo FAILED)
+            kt_verdict=$([ "${KT_EXIT:-1}" = "0" ] && echo OK || echo FAILED)
+            if [ "$py_verdict" = "$kt_verdict" ]; then
+              echo "- ✅ verdicts agree: Python=$py_verdict, Kotlin=$kt_verdict"
+            else
+              echo "- ⚠️  verdicts DISAGREE: Python=$py_verdict (exit $PY_EXIT), Kotlin=$kt_verdict (exit ${KT_EXIT:-n/a})"
+            fi
+            echo ""
+            echo "<details><summary>Python output</summary>"
+            echo ""
+            echo '```'
+            cat /tmp/freshness-python.txt 2>/dev/null || echo "(no output captured)"
+            echo '```'
+            echo "</details>"
+            echo ""
+            echo "<details><summary>Kotlin output (tail)</summary>"
+            echo ""
+            echo '```'
+            tail -20 /tmp/freshness-kotlin.txt 2>/dev/null || echo "(no output captured)"
+            echo '```'
+            echo "</details>"
+            echo ""
+            echo "_Validation runs alongside Python during the cut-over period. Python's verdict remains canonical until parity is confirmed._"
+          } | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Assert canonical (Python) verdict
+        if: always()
+        run: |
+          if [ "${{ steps.python-check.outputs.exit_code }}" != "0" ]; then
+            echo "Python freshness check failed — failing the job (see summary)."
+            exit 1
+          fi

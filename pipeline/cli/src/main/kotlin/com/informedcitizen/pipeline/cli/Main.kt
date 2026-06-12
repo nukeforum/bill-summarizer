@@ -9,10 +9,11 @@ package com.informedcitizen.pipeline.cli
  *    cosponsored legislation backfill.
  *  - `build-session-calendar` — House ICS + Senate XML session days.
  *  - `build-zip-crosswalk` — HUD ZIP→congressional-district asset.
+ *  - `check-freshness` — staleness assertions over published outputs.
  *
- * Subcommands still pending port (Python scripts continue to handle
- * them in CI until they land): `check-freshness`. See TODO "Shared
- * Pipeline (KMP)".
+ * All Python pipeline scripts now have Kotlin counterparts except the
+ * operator-facing `build_dashboard.py` (deliberately unported — see
+ * TODO "Shared Pipeline (KMP)").
  */
 fun main(args: Array<String>) {
     if (args.isEmpty()) {
@@ -25,6 +26,7 @@ fun main(args: Array<String>) {
         "fetch-members" -> FetchMembersCommand.run(args.drop(1))
         "build-session-calendar" -> BuildSessionCalendarCommand.run(args.drop(1))
         "build-zip-crosswalk" -> BuildZipCrosswalkCommand.run(args.drop(1))
+        "check-freshness" -> CheckFreshnessCommand.run(args.drop(1))
         "--help", "-h", "help" -> {
             printUsage()
             0
@@ -86,6 +88,11 @@ private fun printUsage() {
               (type=5 zip-cd, per-state walk). Reads HUDUSER_API_KEY
               from the environment. Writes the compact JSON to
               <output> (default: android/app/src/main/assets/zip_to_cd.json).
+          check-freshness [--output-dir <path>] [--state-dir <path>]
+              Assert published artifacts are fresh: bills manifest age,
+              members index age, session-calendar look-ahead per
+              chamber, backfill cursor advancement. Exits 1 when
+              anything is stale. No API key required.
           help
               Show this message.
         """.trimIndent(),
