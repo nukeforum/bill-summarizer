@@ -85,7 +85,9 @@ suspend fun fetchBills(
         rejectCounts.bump(RejectionReasons.BUILD_ERROR, buildFailures)
     }
 
-    // Dedupe by id (rare cross-page repeats), then sort desc by latest_action.date.
+    // Dedupe by id (rare cross-page repeats), then sort desc by
+    // latest_action.date with id as tiebreaker — same ordering as
+    // mergeBillRecords, so the "+ id" log lines are deterministic.
     val seenIds = mutableSetOf<String>()
     val deduped = mutableListOf<Bill>()
     for (rec in freshRecords) {
@@ -96,7 +98,9 @@ suspend fun fetchBills(
         seenIds += rec.id
         deduped += rec
     }
-    val sorted = deduped.sortedByDescending { it.latestAction.date }
+    val sorted = deduped.sortedWith(
+        compareByDescending<Bill> { it.latestAction.date }.thenBy { it.id }
+    )
 
     // Merge into the existing manifest and persist.
     val existing = manifestStore.load(congress)?.bills.orEmpty()

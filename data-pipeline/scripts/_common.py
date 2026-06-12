@@ -535,8 +535,12 @@ def merge_records(
 
     Incoming wins on id collision (the record is a snapshot of current truth,
     not a history log). Bills present only in ``existing`` are preserved.
-    Output is sorted by ``latest_action.date`` descending so the manifest
-    stays newest-first regardless of which batch contributed each record.
+    Output is sorted by ``latest_action.date`` descending, ties broken by
+    ``id`` ascending, so the manifest stays newest-first AND byte-stable
+    regardless of which batch contributed each record. The tiebreaker
+    matters for the Kotlin-parity check: without it, bills sharing an
+    action date keep insertion order (ultimately thread-pool completion
+    order), which differs run to run and between the two implementations.
     """
     existing_by_id = {r["id"]: r for r in existing}
     stats = MergeStats()
@@ -551,11 +555,8 @@ def merge_records(
             stats.updated += 1
         else:
             stats.unchanged += 1
-    out = sorted(
-        merged.values(),
-        key=lambda r: r["latest_action"]["date"],
-        reverse=True,
-    )
+    out = sorted(merged.values(), key=lambda r: r["id"])
+    out.sort(key=lambda r: r["latest_action"]["date"], reverse=True)
     return out, stats
 
 

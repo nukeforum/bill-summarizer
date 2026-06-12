@@ -79,3 +79,16 @@ def test_merge_sorts_by_latest_action_date_desc():
     dates = [r["latest_action"]["date"] for r in merged]
     assert dates == sorted(dates, reverse=True)
     assert dates[0] == "2025-04-15"
+
+
+def test_merge_breaks_date_ties_by_id_ascending():
+    # Same-date bills must land in id order regardless of which batch
+    # contributed them or what order they arrived in — the Kotlin parity
+    # check diffs the manifests byte-for-byte.
+    existing = [_bill("s900-119", "2025-04-15")]
+    incoming = [
+        _bill("s1890-119", "2025-04-15"),
+        _bill("hr42-119", "2025-04-15"),
+    ]
+    merged, _ = _common.merge_records(existing, incoming)
+    assert [r["id"] for r in merged] == ["hr42-119", "s1890-119", "s900-119"]

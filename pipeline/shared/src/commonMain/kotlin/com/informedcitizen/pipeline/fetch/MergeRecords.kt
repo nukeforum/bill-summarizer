@@ -13,9 +13,12 @@ data class MergeStats(
  * Merge [incoming] bills into [existing] keyed by `Bill.id`. Incoming
  * wins on id collision (a record is a snapshot of current truth, not
  * a history log). Bills present only in [existing] are preserved.
- * Output is sorted by `latestAction.date` descending so the manifest
- * stays newest-first regardless of which batch contributed each
- * record. Mirrors Python `_common.merge_records`.
+ * Output is sorted by `latestAction.date` descending, ties broken by
+ * `id` ascending, so the manifest stays newest-first AND byte-stable
+ * regardless of which batch contributed each record. The tiebreaker
+ * keeps same-date bills in identical order across runs and across the
+ * Python/Kotlin pair — without it the parity diff flags spurious
+ * reorderings. Mirrors Python `_common.merge_records`.
  */
 fun mergeBillRecords(
     existing: List<Bill>,
@@ -40,6 +43,8 @@ fun mergeBillRecords(
             else -> unchanged++
         }
     }
-    val sorted = merged.values.sortedByDescending { it.latestAction.date }
+    val sorted = merged.values.sortedWith(
+        compareByDescending<Bill> { it.latestAction.date }.thenBy { it.id }
+    )
     return sorted to MergeStats(added, updated, unchanged)
 }

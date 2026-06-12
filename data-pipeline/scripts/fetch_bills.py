@@ -109,6 +109,9 @@ def main() -> int:
         seen_ids.add(record["id"])
         deduped.append(record)
     fresh_records = deduped
+    # Same date-desc-then-id ordering as merge_records, so the "+ id" log
+    # lines below are deterministic across runs and implementations.
+    fresh_records.sort(key=lambda r: r["id"])
     fresh_records.sort(key=lambda r: r["latest_action"]["date"], reverse=True)
 
     for record in fresh_records:

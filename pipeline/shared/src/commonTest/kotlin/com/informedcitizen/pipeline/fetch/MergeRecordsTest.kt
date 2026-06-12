@@ -63,6 +63,20 @@ class MergeRecordsTest {
         assertEquals(listOf("2026-04-10", "2026-04-05", "2026-04-01"), dates)
     }
 
+    @Test fun date_ties_break_by_id_ascending() {
+        // Same-date bills must land in id order regardless of which batch
+        // contributed them — the CI parity check diffs manifests
+        // byte-for-byte against Python's output.
+        val (merged, _) = mergeBillRecords(
+            existing = listOf(bill("s900-119", "2026-04-15")),
+            incoming = listOf(
+                bill("s1890-119", "2026-04-15"),
+                bill("hr42-119", "2026-04-15"),
+            ),
+        )
+        assertEquals(listOf("hr42-119", "s1890-119", "s900-119"), merged.map { it.id })
+    }
+
     @Test fun bills_only_in_existing_are_preserved() {
         val (merged, _) = mergeBillRecords(
             existing = listOf(bill("hr1-119", "2026-04-01"), bill("hr2-119", "2026-04-02")),
