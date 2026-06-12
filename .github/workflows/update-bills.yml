@@ -92,7 +92,13 @@ jobs:
         env:
           CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
         working-directory: pipeline
-        run: ./gradlew :cli:run --args="fetch-bills --output-dir /tmp/kotlin-bills-shadow" --no-daemon
+        # --state-dir must be passed explicitly: the default
+        # (data-pipeline/state) is relative to this step's
+        # working-directory, so it silently resolves to the nonexistent
+        # pipeline/data-pipeline/state, the completed-congresses set
+        # reads empty, and every index entry gets
+        # backfill_complete=false — a spurious parity diff.
+        run: ./gradlew :cli:run --args="fetch-bills --output-dir /tmp/kotlin-bills-shadow --state-dir $GITHUB_WORKSPACE/data-pipeline/state" --no-daemon
 
       # --- Compare Python (canonical) vs Kotlin (shadow) ---
       # Output is teed to BOTH stdout (so `gh run view --log` shows the
