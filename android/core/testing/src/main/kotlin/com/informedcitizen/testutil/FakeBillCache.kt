@@ -3,6 +3,7 @@ package com.informedcitizen.testutil
 import com.informedcitizen.data.cache.BillCache
 import com.informedcitizen.data.cache.BillSource
 import com.informedcitizen.data.cache.CachedManifestMeta
+import com.informedcitizen.data.cache.FreshestBills
 import com.informedcitizen.pipeline.model.Bill
 
 /**
@@ -43,6 +44,17 @@ class FakeBillCache : BillCache {
 
     override suspend fun loadManifest(congress: Int, source: BillSource): CachedManifestMeta? =
         manifestByKey[congress to source]
+
+    override suspend fun loadFreshest(): FreshestBills? =
+        manifestByKey.entries.maxByOrNull { it.value.fetchedAtMillis }?.let { (key, meta) ->
+            FreshestBills(
+                congress = key.first,
+                source = key.second,
+                bills = byKey[key].orEmpty(),
+                generatedAt = meta.generatedAt,
+                fetchedAtMillis = meta.fetchedAtMillis,
+            )
+        }
 
     override suspend fun clearSource(congress: Int, source: BillSource) {
         byKey.remove(congress to source)

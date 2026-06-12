@@ -68,6 +68,24 @@ class SqlDelightBillCache(
             }
         }
 
+    override suspend fun loadFreshest(): FreshestBills? =
+        withContext(Dispatchers.IO) {
+            val row = q.selectFreshestManifest().executeAsOneOrNull()
+                ?: return@withContext null
+            val source = BillSource.fromWire(row.source) ?: return@withContext null
+            val bills = q.selectBillsByCongressAndSource(
+                congress = row.congress,
+                source = row.source,
+            ).executeAsList().map { json.decodeFromString(Bill.serializer(), it) }
+            FreshestBills(
+                congress = row.congress.toInt(),
+                source = source,
+                bills = bills,
+                generatedAt = row.generated_at,
+                fetchedAtMillis = row.fetched_at,
+            )
+        }
+
     override suspend fun clearSource(congress: Int, source: BillSource) {
         withContext(Dispatchers.IO) {
             db.transaction {

@@ -50,6 +50,13 @@ interface BillCache {
 
     suspend fun loadManifest(congress: Int, source: BillSource): CachedManifestMeta?
 
+    /**
+     * The most recently written (congress, source) snapshot — the
+     * offline cold-start fallback. Returns null when the cache has
+     * never been populated.
+     */
+    suspend fun loadFreshest(): FreshestBills?
+
     suspend fun clearSource(congress: Int, source: BillSource)
 
     suspend fun clearAll()

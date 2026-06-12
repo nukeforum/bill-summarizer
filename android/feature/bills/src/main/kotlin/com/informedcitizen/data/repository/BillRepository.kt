@@ -45,7 +45,38 @@ class BillRepository @Inject constructor(
             dataStore.edit { it[LAST_FETCHED_KEY] = now }
             writeThroughCache(manifest, fetchedAtMillis = now)
             manifest.bills
-        }.onFailure { crashReporter.recordNonFatal(it, "manifest fetch failed") }
+        }.recoverCatching { networkError ->
+            // Offline cold-start fallback: surface the freshest cached
+            // snapshot (either source) instead of an empty error state.
+            // The original failure is still reported as a non-fatal.
+            crashReporter.recordNonFatal(networkError, "manifest fetch failed")
+            val cached = billCache.loadFreshest()?.takeIf { it.bills.isNotEmpty() }
+                ?: throw networkError
+            _bills.value = cached.bills
+            cached.bills
+        }
+    }
+
+    /**
+     * Accept a manifest the in-app BYOK pipeline just produced: update
+     * the in-memory state the UI observes and persist under
+     * [BillSource.BYOK]. Last-write-wins with the published path by
+     * design — BYOK output for the same Congress is a superset of the
+     * published data, fetched moments ago.
+     */
+    suspend fun publishByokBills(manifest: BillsManifest) = mutex.withLock {
+        _bills.value = manifest.bills
+        val now = System.currentTimeMillis()
+        dataStore.edit { it[LAST_FETCHED_KEY] = now }
+        runCatching {
+            billCache.replaceForSource(
+                congress = manifest.congress,
+                source = BillSource.BYOK,
+                bills = manifest.bills,
+                generatedAt = manifest.generatedAt,
+                fetchedAtMillis = now,
+            )
+        }.onFailure { crashReporter.recordNonFatal(it, "byok bill cache write failed") }
     }
 
     /**

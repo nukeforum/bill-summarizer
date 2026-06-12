@@ -155,6 +155,55 @@ class BillRepositoryTest {
     }
 
     @Test
+    fun `failed fetch falls back to freshest cached snapshot`() = runTest {
+        val reporter = FakeCrashReporter()
+        val cached = listOf(sampleBill("hr1-119"))
+        val cache = FakeBillCache().apply {
+            replaceForSource(
+                congress = 119,
+                source = BillSource.PUBLISHED,
+                bills = cached,
+                generatedAt = "2026-06-01T00:00:00Z",
+                fetchedAtMillis = 1L,
+            )
+            writes.clear()
+        }
+        val repo = BillRepository(
+            api = ThrowingApi(IOException("offline")),
+            dataStore = InMemoryPreferencesDataStore(),
+            crashReporter = reporter,
+            billCache = cache,
+        )
+
+        val result = repo.getBills(forceRefresh = true)
+
+        assertTrue(result.isSuccess)
+        assertEquals(cached, result.getOrNull())
+        // The network failure is still reported even though the UI got data.
+        assertEquals(1, reporter.recorded.size)
+    }
+
+    @Test
+    fun `publishByokBills updates in-memory state and persists under BYOK source`() = runTest {
+        val cache = FakeBillCache()
+        val repo = BillRepository(
+            api = ThrowingApi(IOException("never used")),
+            dataStore = InMemoryPreferencesDataStore(),
+            crashReporter = FakeCrashReporter(),
+            billCache = cache,
+        )
+        val byokBills = listOf(sampleBill("hr7-119"))
+
+        repo.publishByokBills(
+            BillsManifest(generatedAt = "2026-06-12T00:00:00Z", congress = 119, bills = byokBills),
+        )
+
+        assertTrue(repo.containsBillId("hr7-119"))
+        assertEquals(byokBills, cache.loadBills(119, BillSource.BYOK))
+        assertTrue(cache.loadBills(119, BillSource.PUBLISHED).isEmpty())
+    }
+
+    @Test
     fun `containsBillId returns false before load`() {
         val repo = BillRepository(
             api = StubApi(BillsManifest(generatedAt = "x", congress = 119, bills = emptyList())),

@@ -1,0 +1,21 @@
+-- Migration from schema v2 → v3 (BYOK output cache: members + calendar).
+-- Existing v2 databases predate `cached_members_index` and
+-- `cached_session_calendar` so we create them in place. Fresh installs
+-- already have the tables via `ArtifactCache.sq` and skip this
+-- migration.
+
+CREATE TABLE cached_members_index (
+    congress INTEGER NOT NULL,
+    source TEXT NOT NULL,
+    payload TEXT NOT NULL,
+    generated_at TEXT NOT NULL,
+    fetched_at INTEGER NOT NULL,
+    PRIMARY KEY (congress, source)
+);
+
+CREATE TABLE cached_session_calendar (
+    source TEXT NOT NULL PRIMARY KEY,
+    payload TEXT NOT NULL,
+    generated_at TEXT NOT NULL,
+    fetched_at INTEGER NOT NULL
+);

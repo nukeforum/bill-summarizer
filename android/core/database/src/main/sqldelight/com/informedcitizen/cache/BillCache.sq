@@ -68,6 +68,15 @@ selectManifest:
 SELECT generated_at, fetched_at FROM cached_bills_manifest
 WHERE congress = :congress AND source = :source;
 
+-- The most recently written (congress, source) pair — the offline
+-- cold-start fallback reads this to decide which rows to surface
+-- without knowing the current congress (the congresses.json fetch
+-- failed too in that scenario).
+selectFreshestManifest:
+SELECT congress, source, generated_at, fetched_at FROM cached_bills_manifest
+ORDER BY fetched_at DESC
+LIMIT 1;
+
 upsertManifest:
 INSERT OR REPLACE INTO cached_bills_manifest (
     congress, source, generated_at, fetched_at

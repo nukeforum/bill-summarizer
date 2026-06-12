@@ -1,0 +1,63 @@
+-- Output cache for the members index and session calendar — the two
+-- remaining published artifacts the UI consumes (bills live in
+-- BillCache.sq; the ZIP crosswalk stays a bundled asset). Same
+-- provenance model as cached_bill: `source` is "published" (Retrofit)
+-- or "byok" (in-app pipeline via Ktor), so cache-clear can target one
+-- path without nuking the other.
+--
+-- Both store the whole artifact as one kotlinx-serialization JSON
+-- payload rather than row-per-member / row-per-day: the UI always
+-- consumes these artifacts whole (the members index is filtered
+-- in-memory, the calendar is a single domain object), so per-row
+-- tables would add query surface nobody reads.
+
+CREATE TABLE cached_members_index (
+    congress INTEGER NOT NULL,
+    source TEXT NOT NULL,
+    payload TEXT NOT NULL,
+    generated_at TEXT NOT NULL,
+    fetched_at INTEGER NOT NULL,
+    PRIMARY KEY (congress, source)
+);
+
+CREATE TABLE cached_session_calendar (
+    source TEXT NOT NULL PRIMARY KEY,
+    payload TEXT NOT NULL,
+    generated_at TEXT NOT NULL,
+    fetched_at INTEGER NOT NULL
+);
+
+selectMembersIndex:
+SELECT payload, generated_at, fetched_at FROM cached_members_index
+WHERE congress = :congress AND source = :source;
+
+selectFreshestMembersIndex:
+SELECT source, payload, generated_at, fetched_at FROM cached_members_index
+WHERE congress = :congress
+ORDER BY fetched_at DESC
+LIMIT 1;
+
+upsertMembersIndex:
+INSERT OR REPLACE INTO cached_members_index (
+    congress, source, payload, generated_at, fetched_at
+) VALUES (?, ?, ?, ?, ?);
+
+clearMembersIndexForSource:
+DELETE FROM cached_members_index WHERE source = :source;
+
+selectSessionCalendar:
+SELECT payload, generated_at, fetched_at FROM cached_session_calendar
+WHERE source = :source;
+
+selectFreshestSessionCalendar:
+SELECT source, payload, generated_at, fetched_at FROM cached_session_calendar
+ORDER BY fetched_at DESC
+LIMIT 1;
+
+upsertSessionCalendar:
+INSERT OR REPLACE INTO cached_session_calendar (
+    source, payload, generated_at, fetched_at
+) VALUES (?, ?, ?, ?);
+
+clearSessionCalendarForSource:
+DELETE FROM cached_session_calendar WHERE source = :source;
