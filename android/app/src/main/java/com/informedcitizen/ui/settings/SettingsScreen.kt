@@ -20,10 +20,14 @@ fun SettingsScreen(
     onBack: () -> Unit,
     modifier: Modifier = Modifier,
     onCalendarClick: () -> Unit = {},
+    onDataSourcesClick: () -> Unit = {},
     viewModel: SettingsViewModel = hiltViewModel(),
 ) {
-    val navigation = remember(onCalendarClick) {
-        SettingsNavigation(onOpenCalendar = onCalendarClick)
+    val navigation = remember(onCalendarClick, onDataSourcesClick) {
+        SettingsNavigation(
+            onOpenCalendar = onCalendarClick,
+            onOpenDataSources = onDataSourcesClick,
+        )
     }
     Scaffold(
         modifier = modifier,

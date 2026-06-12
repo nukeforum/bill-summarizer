@@ -11,5 +11,5 @@ dependencies {
     // so the same types serve Android, the JVM CLI used by GitHub Actions,
     // and the future iOS app. `api` so transitive consumers of `:core:model`
     // pick the types up without a direct dep on `pipeline:shared`.
-    api("com.informedcitizen.pipeline:shared")
+    api(libs.pipeline.shared)
 }

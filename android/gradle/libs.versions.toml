@@ -26,6 +26,12 @@ firebaseBom = "33.6.0"
 googleServicesPlugin = "4.4.2"
 firebaseCrashlyticsPlugin = "3.0.2"
 sqldelight = "2.3.2"
+# Ktor/okio/datetime versions track pipeline/gradle/libs.versions.toml —
+# the BYOK in-app pipeline calls into pipeline:shared, whose Ktor types
+# appear in :feature:datasources signatures.
+ktor = "3.0.3"
+okio = "3.10.2"
+kotlinxDatetime = "0.6.1"
 workManager = "2.10.0"
 hiltWork = "1.2.0"
 robolectric = "4.13"
@@ -68,6 +74,14 @@ okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
 okhttp-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttp" }
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
 firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics" }
+# Versionless: resolved by the composite-build substitution of the
+# sibling pipeline/ Gradle build (includeBuild in settings.gradle.kts).
+pipeline-shared = { module = "com.informedcitizen.pipeline:shared" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
+okio = { module = "com.squareup.okio:okio", version.ref = "okio" }
+okio-fakefilesystem = { module = "com.squareup.okio:okio-fakefilesystem", version.ref = "okio" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDatetime" }
 sqldelight-android-driver = { module = "app.cash.sqldelight:android-driver", version.ref = "sqldelight" }
 sqldelight-coroutines-extensions = { module = "app.cash.sqldelight:coroutines-extensions", version.ref = "sqldelight" }
 sqldelight-sqlite-driver = { module = "app.cash.sqldelight:sqlite-driver", version.ref = "sqldelight" }

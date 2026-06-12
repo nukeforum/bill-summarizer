@@ -9,6 +9,7 @@ import androidx.compose.runtime.compositionLocalOf
  */
 class SettingsNavigation(
     val onOpenCalendar: () -> Unit,
+    val onOpenDataSources: () -> Unit,
 )
 
 val LocalSettingsNavigation = compositionLocalOf<SettingsNavigation> {

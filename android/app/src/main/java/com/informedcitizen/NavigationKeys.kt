@@ -11,4 +11,6 @@ import kotlinx.serialization.Serializable
 
 @Serializable data object CongressCalendar : NavKey
 
+@Serializable data object DataSources : NavKey
+
 @Serializable data class MemberDetail(val bioguideId: String) : NavKey

@@ -9,6 +9,7 @@ import androidx.navigation3.ui.NavDisplay
 import com.informedcitizen.ui.billdetail.BillDetailScreen
 import com.informedcitizen.ui.billslist.BillsListScreen
 import com.informedcitizen.ui.calendar.SessionCalendarScreen
+import com.informedcitizen.ui.datasources.DataSourcesScreen
 import com.informedcitizen.ui.reps.MemberDetailScreen
 import com.informedcitizen.ui.reps.RepsTab
 import com.informedcitizen.ui.settings.SettingsScreen
@@ -72,10 +73,14 @@ fun MainNavigation(
                 SettingsScreen(
                     onBack = { backStack.removeLastOrNull() },
                     onCalendarClick = { backStack.add(CongressCalendar) },
+                    onDataSourcesClick = { backStack.add(DataSources) },
                 )
             }
             entry<CongressCalendar> {
                 SessionCalendarScreen(onBack = { backStack.removeLastOrNull() })
+            }
+            entry<DataSources> {
+                DataSourcesScreen(onBack = { backStack.removeLastOrNull() })
             }
         },
     )
