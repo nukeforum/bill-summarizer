@@ -8,10 +8,11 @@ package com.informedcitizen.pipeline.cli
  *  - `fetch-members` — current Congress members index + sponsored /
  *    cosponsored legislation backfill.
  *  - `build-session-calendar` — House ICS + Senate XML session days.
+ *  - `build-zip-crosswalk` — HUD ZIP→congressional-district asset.
  *
  * Subcommands still pending port (Python scripts continue to handle
- * them in CI until they land): `build-zip-crosswalk`,
- * `check-freshness`. See TODO "Shared Pipeline (KMP)".
+ * them in CI until they land): `check-freshness`. See TODO "Shared
+ * Pipeline (KMP)".
  */
 fun main(args: Array<String>) {
     if (args.isEmpty()) {
@@ -23,6 +24,7 @@ fun main(args: Array<String>) {
         "backfill-bills" -> BackfillBillsCommand.run(args.drop(1))
         "fetch-members" -> FetchMembersCommand.run(args.drop(1))
         "build-session-calendar" -> BuildSessionCalendarCommand.run(args.drop(1))
+        "build-zip-crosswalk" -> BuildZipCrosswalkCommand.run(args.drop(1))
         "--help", "-h", "help" -> {
             printUsage()
             0
@@ -78,6 +80,12 @@ private fun printUsage() {
               today−1..today+1). Writes
               <output-dir>/session_calendar.json (default: ./docs/data).
               No API key required.
+          build-zip-crosswalk [--output <path>] [--year N] [--quarter 1-4]
+                              [--sleep <seconds>]
+              ZIP→{state, [districts]} asset from HUD's usps endpoint
+              (type=5 zip-cd, per-state walk). Reads HUDUSER_API_KEY
+              from the environment. Writes the compact JSON to
+              <output> (default: android/app/src/main/assets/zip_to_cd.json).
           help
               Show this message.
         """.trimIndent(),

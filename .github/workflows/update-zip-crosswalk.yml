@@ -25,7 +25,11 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    # Bumped from 15 → 30 minutes for the parallel-run period: the
+    # workflow now runs Python *and* Kotlin builders (each walking all
+    # 56 state queries with a 0.1s sleep), plus Gradle warm-up on a
+    # cold cache. Revert when the cut-over completes.
+    timeout-minutes: 30
     steps:
       - name: Checkout
         # See update-bills.yml — PAT needed so the push-back step can
@@ -48,7 +52,20 @@ jobs:
       - name: Install Python dependencies
         run: uv pip install --system -r data-pipeline/requirements.txt
 
-      - name: Build ZIP→CD asset
+      # --- Kotlin tooling (parallel-run, writes to /tmp shadow path) ---
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      # --- Python: canonical build ---
+
+      - name: Build ZIP→CD asset (Python — canonical)
         env:
           HUDUSER_API_KEY: ${{ secrets.HUDUSER_API_KEY }}
         run: |
@@ -61,6 +78,82 @@ jobs:
             ARGS+=( --quarter "${{ inputs.quarter }}" )
           fi
           python data-pipeline/scripts/build_zip_crosswalk.py "${ARGS[@]}"
+
+      # --- Kotlin: shadow build for parity validation ---
+      # Runs second, doubling the HUD API load (2×56 state queries per
+      # run) — tolerable at the quarterly cadence, and both runs keep
+      # the 0.1s inter-request sleep. HUD data only changes when a new
+      # quarter publishes, so the ~minutes gap between runs is benign.
+
+      - name: Build ZIP→CD asset (Kotlin — shadow validation)
+        # Parallel-run safety: never fail the canonical run because the
+        # Kotlin port hit a transient issue. Failure surfaces in the
+        # job UI (the step is marked red and the parity-check step
+        # logs the missing shadow file) but `safe-push` of Python's
+        # canonical output still proceeds.
+        continue-on-error: true
+        env:
+          HUDUSER_API_KEY: ${{ secrets.HUDUSER_API_KEY }}
+        working-directory: pipeline
+        run: |
+          set -euo pipefail
+          ARGS="build-zip-crosswalk --output /tmp/kotlin-crosswalk-shadow/zip_to_cd.json --sleep 0.1"
+          if [ -n "${{ inputs.year }}" ]; then
+            ARGS="$ARGS --year ${{ inputs.year }}"
+          fi
+          if [ -n "${{ inputs.quarter }}" ]; then
+            ARGS="$ARGS --quarter ${{ inputs.quarter }}"
+          fi
+          ./gradlew :cli:run --args="$ARGS" --no-daemon
+
+      # --- Compare Python (canonical) vs Kotlin (shadow) ---
+      # Output is teed to BOTH stdout (so `gh run view --log` shows the
+      # verdicts) AND $GITHUB_STEP_SUMMARY (so the Actions UI renders
+      # them as a panel). Per the pipeline-check-cli-readable rule.
+
+      - name: Compare canonical vs Kotlin shadow output
+        if: always()
+        env:
+          CANONICAL: android/app/src/main/assets/zip_to_cd.json
+          SHADOW: /tmp/kotlin-crosswalk-shadow/zip_to_cd.json
+        run: |
+          set +e  # never fail the job on diff results during parallel-run
+          {
+            echo "## build-zip-crosswalk parity check"
+            echo ""
+            echo "Comparing \`$CANONICAL\` (Python, canonical) vs \`$SHADOW\` (Kotlin)."
+            echo ""
+            if [ ! -f "$CANONICAL" ]; then
+              echo "- ⏭️  \`zip_to_cd.json\`: canonical missing — skipping parity"
+            elif [ ! -f "$SHADOW" ]; then
+              echo "- ❌ \`zip_to_cd.json\`: shadow file missing — Kotlin did not produce output"
+            else
+              # No timestamp field in this asset — sorted-key diff of
+              # the full payload.
+              py_norm=$(mktemp)
+              kt_norm=$(mktemp)
+              jq -S . "$CANONICAL" > "$py_norm"
+              jq -S . "$SHADOW"    > "$kt_norm"
+              py_zips=$(jq 'length' "$CANONICAL")
+              kt_zips=$(jq 'length' "$SHADOW")
+              if diff -q "$py_norm" "$kt_norm" >/dev/null; then
+                echo "- ✅ \`zip_to_cd.json\`: identical ($py_zips ZIPs)"
+              else
+                echo "- ⚠️  \`zip_to_cd.json\`: outputs differ (Python: $py_zips ZIPs, Kotlin: $kt_zips ZIPs)"
+                echo ""
+                echo "<details><summary>diff (truncated to 200 lines, keys sorted)</summary>"
+                echo ""
+                echo '```diff'
+                diff -u "$py_norm" "$kt_norm" | head -200
+                echo '```'
+                echo "</details>"
+                echo ""
+              fi
+              rm -f "$py_norm" "$kt_norm"
+            fi
+            echo ""
+            echo "_Validation runs alongside Python during the cut-over period. Python output remains canonical until parity is confirmed._"
+          } | tee -a "$GITHUB_STEP_SUMMARY"
 
       - name: Rebuild pipeline dashboard
         if: always()
