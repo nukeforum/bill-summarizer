@@ -18,7 +18,10 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    # Bumped from 10 → 20 minutes for the parallel-run period: the
+    # workflow now runs Python *and* Kotlin builders, plus Gradle
+    # warm-up on a cold cache. Revert when the cut-over completes.
+    timeout-minutes: 20
     steps:
       - name: Checkout
         # See update-bills.yml — PAT needed so the push-back step can
@@ -41,8 +44,87 @@ jobs:
       - name: Install Python dependencies
         run: uv pip install --system -r data-pipeline/requirements.txt
 
-      - name: Build session calendar
+      # --- Kotlin tooling (parallel-run, writes to /tmp shadow dir) ---
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      # --- Python: canonical build ---
+
+      - name: Build session calendar (Python — canonical)
         run: python data-pipeline/scripts/build_session_calendar.py
+
+      # --- Kotlin: shadow build for parity validation ---
+      # Runs second so Python's fresh canonical output is available
+      # for the comparison step. Both builders see the same upstream
+      # feeds modulo the ~minute gap between fetches; the feeds change
+      # at most a few times a year, so the gap is benign.
+
+      - name: Build session calendar (Kotlin — shadow validation)
+        # Parallel-run safety: never fail the canonical run because the
+        # Kotlin port hit a transient issue. Failure surfaces in the
+        # job UI (the step is marked red and the parity-check step
+        # logs the missing shadow file) but `safe-push` of Python's
+        # canonical output still proceeds.
+        continue-on-error: true
+        working-directory: pipeline
+        run: ./gradlew :cli:run --args="build-session-calendar --output-dir /tmp/kotlin-calendar-shadow" --no-daemon
+
+      # --- Compare Python (canonical) vs Kotlin (shadow) ---
+      # Output is teed to BOTH stdout (so `gh run view --log` shows the
+      # verdicts) AND $GITHUB_STEP_SUMMARY (so the Actions UI renders
+      # them as a panel). Per the pipeline-check-cli-readable rule.
+
+      - name: Compare canonical vs Kotlin shadow output
+        if: always()
+        env:
+          CANONICAL: docs/data/session_calendar.json
+          SHADOW: /tmp/kotlin-calendar-shadow/session_calendar.json
+        run: |
+          set +e  # never fail the job on diff results during parallel-run
+          {
+            echo "## build-session-calendar parity check"
+            echo ""
+            echo "Comparing \`$CANONICAL\` (Python, canonical) vs \`$SHADOW\` (Kotlin)."
+            echo ""
+            if [ ! -f "$CANONICAL" ]; then
+              echo "- ⏭️  \`session_calendar.json\`: canonical missing — skipping parity"
+            elif [ ! -f "$SHADOW" ]; then
+              echo "- ❌ \`session_calendar.json\`: shadow file missing — Kotlin did not produce output"
+            else
+              # Strip `generated_at` — the two runs are minutes apart.
+              py_norm=$(mktemp)
+              kt_norm=$(mktemp)
+              jq -S 'del(.generated_at)' "$CANONICAL" > "$py_norm"
+              jq -S 'del(.generated_at)' "$SHADOW"    > "$kt_norm"
+              py_house=$(jq '.chambers.house.session_days | length' "$CANONICAL")
+              py_senate=$(jq '.chambers.senate.session_days | length' "$CANONICAL")
+              if diff -q "$py_norm" "$kt_norm" >/dev/null; then
+                echo "- ✅ \`session_calendar.json\`: identical (House: $py_house days, Senate: $py_senate days, ignoring generated_at)"
+              else
+                kt_house=$(jq '.chambers.house.session_days | length' "$SHADOW")
+                kt_senate=$(jq '.chambers.senate.session_days | length' "$SHADOW")
+                echo "- ⚠️  \`session_calendar.json\`: outputs differ (Python: H$py_house/S$py_senate, Kotlin: H$kt_house/S$kt_senate)"
+                echo ""
+                echo "<details><summary>diff (truncated to 200 lines, generated_at stripped)</summary>"
+                echo ""
+                echo '```diff'
+                diff -u "$py_norm" "$kt_norm" | head -200
+                echo '```'
+                echo "</details>"
+                echo ""
+              fi
+              rm -f "$py_norm" "$kt_norm"
+            fi
+            echo ""
+            echo "_Validation runs alongside Python during the cut-over period. Python output remains canonical until parity is confirmed._"
+          } | tee -a "$GITHUB_STEP_SUMMARY"
 
       - name: Rebuild pipeline dashboard
         if: always()

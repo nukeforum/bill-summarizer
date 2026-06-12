@@ -7,11 +7,11 @@ package com.informedcitizen.pipeline.cli
  *    queue in `backfill_state.json`.
  *  - `fetch-members` — current Congress members index + sponsored /
  *    cosponsored legislation backfill.
+ *  - `build-session-calendar` — House ICS + Senate XML session days.
  *
  * Subcommands still pending port (Python scripts continue to handle
- * them in CI until they land): `build-session-calendar`,
- * `build-zip-crosswalk`, `check-freshness`, `rebuild-congresses-index`.
- * See TODO "Shared Pipeline (KMP)".
+ * them in CI until they land): `build-zip-crosswalk`,
+ * `check-freshness`. See TODO "Shared Pipeline (KMP)".
  */
 fun main(args: Array<String>) {
     if (args.isEmpty()) {
@@ -22,6 +22,7 @@ fun main(args: Array<String>) {
         "fetch-bills" -> FetchBillsCommand.run(args.drop(1))
         "backfill-bills" -> BackfillBillsCommand.run(args.drop(1))
         "fetch-members" -> FetchMembersCommand.run(args.drop(1))
+        "build-session-calendar" -> BuildSessionCalendarCommand.run(args.drop(1))
         "--help", "-h", "help" -> {
             printUsage()
             0
@@ -46,13 +47,13 @@ private fun printUsage() {
           pipeline-cli <subcommand> [options]
 
         Subcommands:
-          fetch-bills [--output-dir <path>]
+          fetch-bills [--output-dir <path>] [--state-dir <path>]
               Daily refresh of the per-Congress bills manifest. Reads
               CONGRESS_API_KEY from the environment. Writes
-              <output-dir>/congressNNN_bills.json (default: ./docs/data).
-              Does NOT rebuild congresses.json; run the Python
-              build_dashboard.py / rebuild_index step after this for
-              the indexed view.
+              <output-dir>/congressNNN_bills.json (default: ./docs/data)
+              and rebuilds <output-dir>/congresses.json, reading the
+              completed list from <state-dir>/backfill_state.json
+              (default: ./data-pipeline/state).
           backfill-bills [--output-dir <path>] [--state-dir <path>]
               Incremental historical backfill. Walks one chunk of
               BACKFILL_PAGES_PER_RUN (4) pages for the active Congress
@@ -71,6 +72,12 @@ private fun printUsage() {
               CONGRESS_API_KEY from the environment; pulls
               legislators-current.json from the unitedstates/
               congress-legislators gh-pages branch (no auth).
+          build-session-calendar [--output-dir <path>]
+              House voting days (USHOR .ics feed) + Senate session days
+              (per-year senate.gov XML schedules, candidate years
+              today−1..today+1). Writes
+              <output-dir>/session_calendar.json (default: ./docs/data).
+              No API key required.
           help
               Show this message.
         """.trimIndent(),
