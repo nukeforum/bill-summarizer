@@ -1,7 +1,175 @@
 {
-  "generated_at": "2026-06-11T10:23:52Z",
+  "generated_at": "2026-06-12T10:13:21Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "s2-119",
+      "congress": 119,
+      "type": "s",
+      "number": "2",
+      "title": "Secure America Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Graham, Lindsey",
+        "party": "R",
+        "state": "SC"
+      },
+      "introduced_date": "2026-05-20",
+      "latest_action": {
+        "date": "2026-06-10",
+        "text": "Became Public Law No: 119-98."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Secure America Act</strong></p><p>This bill provides funding to the Department of Homeland Security (DHS), U.S. Customs and Border Protection (CBP), and U.S. Immigration and Customs Enforcement (ICE) through FY2029 for immigration enforcement and related activities.</p><p>It is known as a reconciliation bill and includes legislation submitted by certain congressional committees pursuant to provisions in the FY2026 congressional budget resolution (S. Con. Res. 33) that directed the committees to submit legislation to the House or Senate Budget Committee that will increase the deficit. (Reconciliation bills are considered by Congress using expedited legislative procedures that prevent a filibuster and restrict amendments in the Senate.)</p><p>Specifically, the bill provides funding to CBP for&nbsp;</p><ul><li>personnel;</li><li>border security, technology, and screening; and</li><li>immigration enforcement activities.</li></ul><p>The bill provides funding to ICE for</p><ul><li>personnel,</li><li>Homeland Security Investigations,</li><li>immigration enforcement activities,</li><li>transportation,</li><li>information technology,</li><li>facility and fleet maintenance and sustainment,</li><li>287(g) agreements (i.e., agreements that allow state and local law enforcement&nbsp;agencies to perform certain immigration enforcement functions),</li><li>the Office of the Principal Legal Advisor,&nbsp;</li><li>operation and maintenance, and</li><li>certain arrests related to immigration enforcement.</li></ul><p>The bill also provides additional funding to DHS for (1) immigration enforcement, and (2) the participation of state and local agencies in certain homeland security efforts.&nbsp;</p><p>The funding provided by this bill generally remains available through FY2029.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s2/BILLS-119s2es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s2/BILLS-119s2es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s2/BILLS-119s2es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2"
+    },
+    {
+      "id": "s4394-119",
+      "congress": 119,
+      "type": "s",
+      "number": "4394",
+      "title": "Promoting Police Leadership Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2026-04-27",
+      "latest_action": {
+        "date": "2026-06-10",
+        "text": "Passed Senate with an amendment by Voice Vote. (consideration: CR S2724, S2727; text of amendment in the nature of a substitute: CR S2724)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s4394/BILLS-119s4394es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s4394/BILLS-119s4394es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s4394/BILLS-119s4394es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/4394"
+    },
+    {
+      "id": "s3041-119",
+      "congress": 119,
+      "type": "s",
+      "number": "3041",
+      "title": "Tribal Warrant Fairness Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cortez Masto, Catherine",
+        "party": "D",
+        "state": "NV"
+      },
+      "introduced_date": "2025-10-23",
+      "latest_action": {
+        "date": "2026-06-10",
+        "text": "Passed Senate with an amendment by Voice Vote. (consideration: CR S2723-2724, S2727; text of amendment in the nature of a substitute: CR S2723-2724)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s3041/BILLS-119s3041es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s3041/BILLS-119s3041es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s3041/BILLS-119s3041es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/3041"
+    },
+    {
+      "id": "s1890-119",
+      "congress": 119,
+      "type": "s",
+      "number": "1890",
+      "title": "Carla Walker Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2025-05-22",
+      "latest_action": {
+        "date": "2026-06-10",
+        "text": "Passed Senate with an amendment by Voice Vote. (consideration: CR S2724-2727; text of amendment in the nature of a substitute: CR S2724-2726)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s1890/BILLS-119s1890es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s1890/BILLS-119s1890es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s1890/BILLS-119s1890es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1890"
+    },
+    {
+      "id": "s825-119",
+      "congress": 119,
+      "type": "s",
+      "number": "825",
+      "title": "Fighting Post-Traumatic Stress Disorder Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Grassley, Chuck",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2025-03-04",
+      "latest_action": {
+        "date": "2026-06-10",
+        "text": "Passed Senate with amendments by Voice Vote. (consideration: CR S2723, S2726-2727; text: CR S2726-2727)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s825/BILLS-119s825es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s825/BILLS-119s825es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s825/BILLS-119s825es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/825"
+    },
+    {
+      "id": "s736-119",
+      "congress": 119,
+      "type": "s",
+      "number": "736",
+      "title": "Lieutenant Osvaldo Albarati Stopping Prison Contraband Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Grassley, Chuck",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2025-02-26",
+      "latest_action": {
+        "date": "2026-06-10",
+        "text": "Passed Senate without amendment by Voice Vote. (consideration: CR S2723, S2726; text: CR S2726)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p><strong>Lieutenant Osvaldo Albarati Stopping Prison Contraband Act</strong></p><p>This bill increases federal criminal penalties for providing or attempting to provide a cell phone to an individual who is incarcerated at a prison.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s736/BILLS-119s736es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s736/BILLS-119s736es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s736/BILLS-119s736es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/736"
+    },
+    {
+      "id": "s872-119",
+      "congress": 119,
+      "type": "s",
+      "number": "872",
+      "title": "Stop Secret Spending Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Ernst, Joni",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2025-03-05",
+      "latest_action": {
+        "date": "2026-06-10",
+        "text": "Passed Senate with amendments by Unanimous Consent. (consideration: CR S2721-2723; text: CR S2722-2723)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p><strong>Stop Secret Spending Act of 2025</strong></p><p>This bill expands a requirement for federal agencies to report expenditures on the USAspending.gov website to include <em>other transaction agreement </em>expenditures. (Other transaction agreements, or OTAs, are contractual instruments other than standard procurement contracts, grants, or cooperative agreements; they are exempt from many federal procurement laws and regulations).</p><p>Under current law, federal agencies must report expenditures on federal awards to USAspending.gov with the term <em>federal award</em> defined as federal grants, loans, cooperative agreements, contracts, and certain other types of expenditures. This bill expands the definition of federal award to include expenditures under OTAs, and therefore such expenditures must be included on the USAspending.gov website.&nbsp;</p><p>The Department of the Treasury must ensure that data relating to OTAs are automatically transmitted to the website and a centralized view of this data is available on the website.&nbsp;Treasury must also annually post on the&nbsp;USAspending.gov website a report that includes (1) the total amount of federal spending on federal awards for which data has not been posted on the website, and (2) the reason why such spending data was not posted.</p><p>For 10 years after enactment, the Office of Inspector General of specified federal agencies must periodically submit to Congress and make publicly available a report assessing the agency's spending data and use of data standards.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s872/BILLS-119s872es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s872/BILLS-119s872es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s872/BILLS-119s872es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/872"
+    },
     {
       "id": "s2393-119",
       "congress": 119,
@@ -49,30 +217,6 @@
       "text_url_xml": "https://www.congress.gov/119/bills/hr3490/BILLS-119hr3490rfs.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/hr3490/BILLS-119hr3490rfs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/3490"
-    },
-    {
-      "id": "s2-119",
-      "congress": 119,
-      "type": "s",
-      "number": "2",
-      "title": "Secure America Act",
-      "short_title": null,
-      "sponsor": {
-        "name": "Sen. Graham, Lindsey",
-        "party": "R",
-        "state": "SC"
-      },
-      "introduced_date": "2026-05-20",
-      "latest_action": {
-        "date": "2026-06-05",
-        "text": "Passed Senate with an amendment by Yea-Nay Vote. 52 - 47. Record Vote Number: 163."
-      },
-      "outcome": "passed_senate",
-      "summary_crs": "<p><strong>Secure America Act</strong></p><p>This bill provides funding to the Department of Homeland Security (DHS), U.S. Customs and Border Protection (CBP), and U.S. Immigration and Customs Enforcement (ICE) through FY2029 for immigration enforcement and related activities.</p><p>It is known as a reconciliation bill and includes legislation submitted by certain congressional committees pursuant to provisions in the FY2026 congressional budget resolution (S. Con. Res. 33) that directed the committees to submit legislation to the House or Senate Budget Committee that will increase the deficit. (Reconciliation bills are considered by Congress using expedited legislative procedures that prevent a filibuster and restrict amendments in the Senate.)</p><p>Specifically, the bill provides funding to CBP for&nbsp;</p><ul><li>personnel;</li><li>border security, technology, and screening; and</li><li>immigration enforcement activities.</li></ul><p>The bill provides funding to ICE for</p><ul><li>personnel,</li><li>Homeland Security Investigations,</li><li>immigration enforcement activities,</li><li>transportation,</li><li>information technology,</li><li>facility and fleet maintenance and sustainment,</li><li>287(g) agreements (i.e., agreements that allow state and local law enforcement&nbsp;agencies to perform certain immigration enforcement functions),</li><li>the Office of the Principal Legal Advisor,&nbsp;</li><li>operation and maintenance, and</li><li>certain arrests related to immigration enforcement.</li></ul><p>The bill also provides additional funding to DHS for (1) immigration enforcement, and (2) the participation of state and local agencies in certain homeland security efforts.&nbsp;</p><p>The funding provided by this bill generally remains available through FY2029.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/s2/BILLS-119s2es.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/s2/BILLS-119s2es.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/s2/BILLS-119s2es.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2"
     },
     {
       "id": "s1318-119",
