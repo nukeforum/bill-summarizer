@@ -77,8 +77,16 @@ pipeline/
 `pipeline/` is its own Gradle build. Android consumes `pipeline:shared`
 via Gradle composite build (`includeBuild("../pipeline")` in
 `android/settings.gradle.kts`); iOS will consume via XCFramework / SPM.
-The Python pipeline in `data-pipeline/` stays operational until every
-workflow has been migrated to the JAR.
+Every Python script except the operator dashboard now has a Kotlin
+counterpart with a CLI subcommand (`fetch-bills`, `backfill-bills`,
+`fetch-members`, `build-session-calendar`, `build-zip-crosswalk`,
+`check-freshness`), each running as a parity shadow in its GitHub
+Actions workflow. The Python pipeline in `data-pipeline/` stays
+canonical until each shadow has run green for about a week and
+ownership flips per workflow.
+
+Users can also run the pipeline in-app with their own API keys
+(Settings → Data sources) — see `pipeline/docs/api-keys.md`.
 
 ## Android module layout
 
@@ -98,7 +106,8 @@ android/
     ├── bills/                    # BillsList + BillDetail + LlmShareHelper / LlmTarget
     ├── calendar/                 # House/Senate session calendar
     ├── reps/                     # Reps lookup + ZIP crosswalk
-    └── ai-titles/                # Gemini Nano on-device title generation
+    ├── ai-titles/                # Gemini Nano on-device title generation
+    └── datasources/              # BYOK: fetch directly from Congress.gov with your own key
 ```
 
 ## Building
