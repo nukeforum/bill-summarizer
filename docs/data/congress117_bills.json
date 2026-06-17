@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T17:22:57Z",
+  "generated_at": "2026-06-17T15:51:38Z",
   "congress": 117,
   "bills": [
     {
@@ -27,6 +27,126 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/5229"
     },
     {
+      "id": "s5355-117",
+      "congress": 117,
+      "type": "s",
+      "number": "5355",
+      "title": "Disaster Relief Supplemental Appropriations Act, 2023",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Scott, Rick",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2022-12-22",
+      "latest_action": {
+        "date": "2022-12-22",
+        "text": "Under the order of 12/22/22, not having achieved 60 votes in the affirmative, failed of passage in Senate by Yea-Nay Vote. 22 - 73. Record Vote Number: 407."
+      },
+      "outcome": "failed",
+      "summary_crs": " <p><b>Disaster Relief Supplemental Appropriations Act, 2023</b></p> <p>This bill provides FY2023 supplemental appropriations to several federal departments and agencies for programs and activities to respond to natural disasters, such as hurricanes, tornadoes, wildfires, and flooding. </p>",
+      "text_url_html": "https://www.congress.gov/117/bills/s5355/BILLS-117s5355fps.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/s5355/BILLS-117s5355fps.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/s5355/BILLS-117s5355fps.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/5355"
+    },
+    {
+      "id": "sres851-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "851",
+      "title": "A resolution celebrating the 45th anniversary of the Senate Black Legislative Staff Caucus and its achievements in the Senate.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Scott, Tim",
+        "party": "R",
+        "state": "SC"
+      },
+      "introduced_date": "2022-11-29",
+      "latest_action": {
+        "date": "2022-12-07",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S7041; text: 11/29/2022 CR S6861-6862)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution honors the Senate Black Legislative Staff Caucus for its contributions to the Senate.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres851/BILLS-117sres851ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres851/BILLS-117sres851ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres851/BILLS-117sres851ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/851"
+    },
+    {
+      "id": "s2159-117",
+      "congress": 117,
+      "type": "s",
+      "number": "2159",
+      "title": "A bill to designate the community-based outpatient clinic of the Department of Veterans Affairs located at 400 College Drive, Middleburg, Florida, as the \"Andrew K. Baker Department of Veterans Affairs Clinic\", and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Rubio, Marco",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2021-06-22",
+      "latest_action": {
+        "date": "2022-12-05",
+        "text": "Became Public Law No: 117-220."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the community-based outpatient clinic of the Department of Veterans Affairs in Middleburg, Florida, as the Andrew K. Baker Department of Veterans Affairs Clinic or the A.K. Baker VA Clinic.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ220/PLAW-117publ220.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ220/PLAW-117publ220_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ220/PLAW-117publ220.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/2159"
+    },
+    {
+      "id": "sres801-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "801",
+      "title": "A resolution recognizing the 50th anniversary of the establishment of Hanalei National Wildlife Refuge and Pearl Harbor National Wildlife Refuge in the State of Hawaii.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hirono, Mazie K.",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2022-09-28",
+      "latest_action": {
+        "date": "2022-11-17",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: 09/28/2022 CR S5229)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution congratulates and celebrates Pearl Harbor National Wildlife Refuge and Hanalei National Wildlife Refuge on the 50th anniversary of their establishment. </p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres801/BILLS-117sres801ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres801/BILLS-117sres801ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres801/BILLS-117sres801ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/801"
+    },
+    {
+      "id": "s2771-117",
+      "congress": 117,
+      "type": "s",
+      "number": "2771",
+      "title": "A bill to designate the community-based outpatient clinic of the Department of Veterans Affairs in San Angelo, Texas, as the \"Colonel Charles and JoAnne Powell Department of Veterans Affairs Clinic\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2021-09-21",
+      "latest_action": {
+        "date": "2022-10-17",
+        "text": "Became Public Law No: 117-208."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the community-based outpatient clinic of the Department of Veterans Affairs in San Angelo, Texas, as the Colonel Charles and JoAnne Powell Department of Veterans Affairs Clinic or the Colonel Charles and JoAnne Powell VA Clinic.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ208/PLAW-117publ208.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ208/PLAW-117publ208_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ208/PLAW-117publ208.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/2771"
+    },
+    {
       "id": "s4791-117",
       "congress": 117,
       "type": "s",
@@ -51,6 +171,78 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/4791"
     },
     {
+      "id": "sconres43-117",
+      "congress": 117,
+      "type": "sconres",
+      "number": "43",
+      "title": "A concurrent resolution setting forth the congressional budget for the United States Government for fiscal year 2023 and setting forth the appropriate budgetary levels for fiscal years 2024 through 2032.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Braun, Mike",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2022-07-19",
+      "latest_action": {
+        "date": "2022-07-20",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 34 - 63. Record Vote Number: 265."
+      },
+      "outcome": "failed",
+      "summary_crs": " <p>This concurrent resolution establishes the congressional budget for the federal government for FY2023 and sets forth budgetary levels for FY2024-FY2032. </p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sconres43/BILLS-117sconres43pcs.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sconres43/BILLS-117sconres43pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sconres43/BILLS-117sconres43pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-concurrent-resolution/43"
+    },
+    {
+      "id": "sconres41-117",
+      "congress": 117,
+      "type": "sconres",
+      "number": "41",
+      "title": "A concurrent resolution setting forth the congressional budget for the United States Government for fiscal year 2023 and setting forth the appropriate budgetary levels for fiscal years 2024 through 2032.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Paul, Rand",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2022-06-06",
+      "latest_action": {
+        "date": "2022-06-15",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 29 - 67. Record Vote Number: 228. (CR S2960)"
+      },
+      "outcome": "failed",
+      "summary_crs": " <p>This concurrent resolution establishes the congressional budget for the federal government for FY2023 and sets forth budgetary levels for FY2024-FY2032. </p> <p>The resolution recommends levels and amounts for FY2023-FY2032 for </p> <ul> <li> federal revenues, </li> <li> new budget authority, </li> <li> budget outlays, </li> <li> deficits, </li> <li> public debt, </li> <li> debt held by the public, and </li> <li> the major functional categories of spending. </li> </ul> <p>It also recommends levels and amounts for Social Security and Postal Service discretionary administrative expenses for the purpose of budget enforcement in the Senate. </p> <p>In addition, the resolution establishes reserve funds that allow certain adjustments to committee allocations and other budgetary levels to accommodate legislation relating to (1) efficiencies, consolidations, and other savings; or (2) health savings accounts. </p> <p>The resolution also sets forth budget enforcement procedures that address issues such as budget points of order, emergency legislation, and Congressional Budget Office cost estimates.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sconres41/BILLS-117sconres41pcs.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sconres41/BILLS-117sconres41pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sconres41/BILLS-117sconres41pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-concurrent-resolution/41"
+    },
+    {
+      "id": "s3527-117",
+      "congress": 117,
+      "type": "s",
+      "number": "3527",
+      "title": "A bill to amend title 38, United States Code, to authorize the Secretary of Veterans Affairs to transfer the name of property of the Department of Veterans Affairs designated by law to other property of the Department.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Tester, Jon",
+        "party": "D",
+        "state": "MT"
+      },
+      "introduced_date": "2022-01-19",
+      "latest_action": {
+        "date": "2022-06-07",
+        "text": "Became Public Law No: 117-137."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill authorizes the Department of Veterans Affairs (VA) to transfer the name of a facility, structure, real property, or a major part of such properties (e.g., a wing) to another VA facility under certain circumstances. </p> <p>Specifically, the VA may transfer the name if (1) the original property was designated with its name by law; (2) the VA no longer offers benefits or services at the original property; (3) the other property is similar in type and purpose to the original property; (4) the other property is located in a different location or a different address from the original property within the town, city, or other local government area specified in the designation; and (5) such transfer occurs at least 30 days after the VA notifies Congress of the intent to transfer the name.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ137/PLAW-117publ137.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ137/PLAW-117publ137_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ137/PLAW-117publ137.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/3527"
+    },
+    {
       "id": "sres134-117",
       "congress": 117,
       "type": "sres",
@@ -73,6 +265,198 @@
       "text_url_xml": "https://www.congress.gov/117/bills/sres134/BILLS-117sres134ats.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/sres134/BILLS-117sres134ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/134"
+    },
+    {
+      "id": "sres612-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "612",
+      "title": "A resolution recognizing women-owned small businesses for National Small Business Week.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Ernst, Joni",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2022-05-03",
+      "latest_action": {
+        "date": "2022-05-18",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S2580; text: 5/3/2022 CR S2281)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution acknowledges the important role women-owned small businesses have in the economy and recognizes those businesses during National Small Business Week.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres612/BILLS-117sres612ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres612/BILLS-117sres612ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres612/BILLS-117sres612ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/612"
+    },
+    {
+      "id": "sres533-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "533",
+      "title": "A resolution celebrating the centennial of Navy aircraft carriers.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kaine, Tim",
+        "party": "D",
+        "state": "VA"
+      },
+      "introduced_date": "2022-03-03",
+      "latest_action": {
+        "date": "2022-04-07",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text: CR S2083)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution recognizes that aircraft carriers continue to be a cornerstone of the U.S. Navy and celebrates the centennial of Navy aircraft carriers.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres533/BILLS-117sres533ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres533/BILLS-117sres533ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres533/BILLS-117sres533ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/533"
+    },
+    {
+      "id": "sres512-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "512",
+      "title": "A resolution supporting reopening the United States Capitol Building and Senate Office Buildings to the American people.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hagerty, Bill",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2022-02-15",
+      "latest_action": {
+        "date": "2022-03-01",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: 2/15/2022 CR S710)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution supports reopening the U.S. Capitol Building and Senate Office Buildings to visitors under the public visitation policies that were in place before the COVID-19 pandemic.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres512/BILLS-117sres512ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres512/BILLS-117sres512ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres512/BILLS-117sres512ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/512"
+    },
+    {
+      "id": "sres424-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "424",
+      "title": "A resolution commemorating the 80th anniversary of the dedication of Sheppard Air Force Base and the 40th anniversary of the creation of the Euro-NATO Joint Jet Pilot Training Program.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2021-10-20",
+      "latest_action": {
+        "date": "2022-02-08",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: 10/20/2021 CR S7128)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution commemorates the 80th anniversary of the opening of Sheppard Air Force Base and the 40th anniversary of the creation of the Euro-NATO Joint Jet Pilot Training Program.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres424/BILLS-117sres424ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres424/BILLS-117sres424ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres424/BILLS-117sres424ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/424"
+    },
+    {
+      "id": "sres447-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "447",
+      "title": "A resolution celebrating the 125th anniversary of the National Grain and Feed Association and recognizing the Association and its members for transforming the bounty of United States farmers into safe, nutritious, sustainable, and affordable human and animal food.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Stabenow, Debbie",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2021-11-16",
+      "latest_action": {
+        "date": "2021-12-18",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR 11/16/2021 S8241)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution celebrates the 125th anniversary of the National Grain and Feed Association. It also recognizes the National Grain and Feed Association and its members for transforming the bounty of U.S. farmers into safe, nutritious, sustainable, and affordable human and animal food.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres447/BILLS-117sres447ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres447/BILLS-117sres447ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres447/BILLS-117sres447ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/447"
+    },
+    {
+      "id": "sres268-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "268",
+      "title": "A resolution expressing support for the designation of June 2021 as \"National Dairy Month\" to recognize the important role dairy plays in a healthy diet and the exceptional work of dairy producers in being stewards of the land and livestock.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Marshall, Roger",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2021-06-14",
+      "latest_action": {
+        "date": "2021-06-24",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: 06/14/2021 CR S4521-4522)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution (1) supports the designation of June 2021 as National Dairy Month, and (2) encourages the people of the United States to visit with dairy producers to learn more about agriculture and the vital role dairy producers play in our global food system.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres268/BILLS-117sres268ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres268/BILLS-117sres268ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres268/BILLS-117sres268ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/268"
+    },
+    {
+      "id": "sres195-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "195",
+      "title": "A resolution recognizing the 50th anniversary of the McClellan-Kerr Arkansas River Navigation System.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Inhofe, James M.",
+        "party": "R",
+        "state": "OK"
+      },
+      "introduced_date": "2021-04-29",
+      "latest_action": {
+        "date": "2021-05-28",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Voice Vote. (text: CR S3930)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution recognizes the 50th anniversary of the McClellan-Kerr Arkansas River Navigation System.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres195/BILLS-117sres195ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres195/BILLS-117sres195ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres195/BILLS-117sres195ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/195"
+    },
+    {
+      "id": "sres143-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "143",
+      "title": "A resolution to honor and recognize the patriotism and service to the United States provided by Veterans Service Organizations during the COVID-19 pandemic.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hassan, Margaret Wood",
+        "party": "D",
+        "state": "NH"
+      },
+      "introduced_date": "2021-03-25",
+      "latest_action": {
+        "date": "2021-04-21",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S2135; text: 03/25/2021 CR S1836)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution honors and recognizes the service provided to veterans by Veterans Service Organizations (VSOs) during the COVID-19 (i.e., coronavirus disease 2019) pandemic and commends their efforts to improvise and adapt to the challenges posed by COVID-19. The resolution also supports efforts by VSOs to enable veterans, their families, and their caregivers to receive the COVID-19 vaccine.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres143/BILLS-117sres143ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres143/BILLS-117sres143ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres143/BILLS-117sres143ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/143"
     }
   ]
 }
