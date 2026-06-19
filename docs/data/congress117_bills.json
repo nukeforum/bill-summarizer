@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T15:40:07Z",
+  "generated_at": "2026-06-19T15:33:22Z",
   "congress": 117,
   "bills": [
     {
@@ -265,6 +265,30 @@
       "text_url_xml": "https://www.congress.gov/117/bills/sres753/BILLS-117sres753ats.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/sres753/BILLS-117sres753ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/753"
+    },
+    {
+      "id": "hres517-117",
+      "congress": 117,
+      "type": "hres",
+      "number": "517",
+      "title": "Original Slavery Remembrance Day Resolution of 2021",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Green, Al",
+        "party": "D",
+        "state": "TX"
+      },
+      "introduced_date": "2021-07-01",
+      "latest_action": {
+        "date": "2022-07-27",
+        "text": "Pursuant to the provisions of H. Res. 1256, H. Res. 517 is considered passed House. (consideration: CR H7182-7184; text: CR H7183-7184)"
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p><strong>Original Slavery Remembrance Day Resolution of 2021</strong></p> <p>This resolution supports the designation of a Slavery Remembrance Day and condemns slavery and its progenies.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/hres517/BILLS-117hres517eh.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/hres517/BILLS-117hres517eh.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/hres517/BILLS-117hres517eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-resolution/517"
     },
     {
       "id": "sres589-117",
@@ -555,6 +579,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/612"
     },
     {
+      "id": "hres1118-117",
+      "congress": 117,
+      "type": "hres",
+      "number": "1118",
+      "title": "Expressing the sense of the House of Representatives that the United States recognizes the mounting personal and financial burden of diet-related disease in the United States and calls on medical schools, graduate medical education programs, and other health professional training programs to provide meaningful physician and health professional education on nutrition and diet.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McGovern, James P.",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2022-05-16",
+      "latest_action": {
+        "date": "2022-05-17",
+        "text": "Pursuant to the provisions of H. Res. 1119, H. Res. 1118 is considered passed House. (consideration: CR H5023; text: CR H5023)"
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p>This resolution expresses support for activities to ensure that health professional training programs (e.g., medical schools, residencies, and fellowships) incorporate substantive training in nutrition and diet.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/hres1118/BILLS-117hres1118eh.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/hres1118/BILLS-117hres1118eh.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/hres1118/BILLS-117hres1118eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-resolution/1118"
+    },
+    {
       "id": "sres122-117",
       "congress": 117,
       "type": "sres",
@@ -673,6 +721,30 @@
       "text_url_xml": "https://www.congress.gov/117/bills/sres533/BILLS-117sres533ats.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/sres533/BILLS-117sres533ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/533"
+    },
+    {
+      "id": "sres547-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "547",
+      "title": "A resolution recognizing the 201st anniversary of Greek Independence and celebrating democracy in Greece and the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Menendez, Robert",
+        "party": "D",
+        "state": "NJ"
+      },
+      "introduced_date": "2022-03-15",
+      "latest_action": {
+        "date": "2022-03-30",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S1860; text: 3/15/2022 CR S1181)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution congratulates the people of Greece as they celebrate the 201st anniversary of Greece's independence. The resolution also expresses support for the principles of democratic governance to which the people of the United States and Greece are committed. </p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres547/BILLS-117sres547ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres547/BILLS-117sres547ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres547/BILLS-117sres547ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/547"
     },
     {
       "id": "sjres35-117",
@@ -1105,6 +1177,54 @@
       "text_url_xml": "https://www.congress.gov/117/bills/sres97/BILLS-117sres97ats.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/sres97/BILLS-117sres97ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/97"
+    },
+    {
+      "id": "hres398-117",
+      "congress": 117,
+      "type": "hres",
+      "number": "398",
+      "title": "Recognizing the forthcoming centennial of the 1921 Tulsa Race Massacre.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Jackson Lee, Sheila",
+        "party": "D",
+        "state": "TX"
+      },
+      "introduced_date": "2021-05-14",
+      "latest_action": {
+        "date": "2021-05-18",
+        "text": "Pursuant to the provisions of H. Res. 403, H. Res. 398 is considered passed House. (consideration: CR H2481-2482; text: CR H2481-2482)"
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p>This resolution expresses the sense of the House of Representatives that the United States can achieve a more perfect union by condemning the violence and destruction perpetrated against the African American community of Greenwood in Tulsa, Oklahoma.</p> <p>The resolution states that a more perfect union may be achieved through other means as well, including by promoting tolerance and unity, and it recognizes Congress's commitment to acknowledge and learn from the history of racism and racial violence in the United States in order to reverse the legacy of white supremacy and fight for racial justice.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/hres398/BILLS-117hres398eh.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/hres398/BILLS-117hres398eh.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/hres398/BILLS-117hres398eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-resolution/398"
+    },
+    {
+      "id": "hres379-117",
+      "congress": 117,
+      "type": "hres",
+      "number": "379",
+      "title": "Dismissing the election contest relating to the office of Representative from the Fourteenth Congressional District of Illinois.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Lofgren, Zoe",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2021-05-11",
+      "latest_action": {
+        "date": "2021-05-12",
+        "text": "Pursuant to the provisions of H. Res. 380, H. Res. 379 is considered passed House. (consideration: CR H2226-2235; text: CR H2235)"
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p>This resolution dismisses the election contest relating to the office of Representative from the 14th Congressional District of Illinois.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/hres379/BILLS-117hres379eh.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/hres379/BILLS-117hres379eh.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/hres379/BILLS-117hres379eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-resolution/379"
     },
     {
       "id": "sres114-117",
