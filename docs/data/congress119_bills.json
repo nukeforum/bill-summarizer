@@ -1,7 +1,31 @@
 {
-  "generated_at": "2026-06-19T10:25:48Z",
+  "generated_at": "2026-06-21T09:50:14Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "s2585-119",
+      "congress": 119,
+      "type": "s",
+      "number": "2585",
+      "title": "MAP for Broadband Funding Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Fischer, Deb",
+        "party": "R",
+        "state": "NE"
+      },
+      "introduced_date": "2025-07-31",
+      "latest_action": {
+        "date": "2026-06-18",
+        "text": "Passed Senate with an amendment by Voice Vote."
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p><strong>Modernization, Accountability, and Planning for Broadband Funding Act or the MAP for Broadband Funding Act</strong></p><p>This bill requires the Federal Communications Commission (FCC) to coordinate with the National Telecommunications and Information Administration to collect data for the Broadband Funding Map on a reasonable and timely basis. It also requires information collection and reporting on the map’s functionality and management. (The map documents the location of each federally funded broadband project.)</p><p>Specifically, the FCC must seek public comment on the functionality and transparency of the map and the quality and completeness of the data within the map. Further, the Government Accountability Office must report on the management and use of the map, as well as the extent to which federal agencies are complying with obligations to submit information for the map.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s2585/BILLS-119s2585es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s2585/BILLS-119s2585es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s2585/BILLS-119s2585es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2585"
+    },
     {
       "id": "sres616-119",
       "congress": 119,
