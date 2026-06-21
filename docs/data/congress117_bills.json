@@ -1,7 +1,847 @@
 {
-  "generated_at": "2026-06-19T15:33:22Z",
+  "generated_at": "2026-06-21T14:24:35Z",
   "congress": 117,
   "bills": [
+    {
+      "id": "s4411-117",
+      "congress": 117,
+      "type": "s",
+      "number": "4411",
+      "title": "A bill to designate the facility of the United States Postal Service located at 5302 Galveston Road in Houston, Texas, as the \"Vanessa Guillen Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cruz, Ted",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2022-06-15",
+      "latest_action": {
+        "date": "2023-01-05",
+        "text": "Became Public Law No: 117-352."
+      },
+      "outcome": "enacted",
+      "summary_crs": "Designates the facility of the United States Postal Service located at 5302 Galveston Road in Houston, Texas, as the \"Vanessa Guillen Post Office Building.\"",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ352/PLAW-117publ352.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ352/PLAW-117publ352_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ352/PLAW-117publ352.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/4411"
+    },
+    {
+      "id": "s5329-117",
+      "congress": 117,
+      "type": "s",
+      "number": "5329",
+      "title": "A bill to amend the Bill Emerson Good Samaritan Food Donation Act to improve the program, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blumenthal, Richard",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2022-12-20",
+      "latest_action": {
+        "date": "2023-01-05",
+        "text": "Became Public Law No: 117-362."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill expands liability protections for the donation of food and grocery products.</p> <p>Specifically, the bill expands the liability protections to include donations of an apparently fit grocery product or apparently wholesome food</p> <ul> <li>for which the recipient is charged a <i>good Samaritan reduced</i> price that is no greater than the cost of handling, administering, harvesting, processing, packaging, transporting, and distributing the food or product; or</li> <li>that is donated directly to a needy individual at zero cost by a retail grocer, wholesaler, agricultural producer, agricultural processor, agricultural distributor, restaurant, caterer, school food authority, or institution of higher education.</li> </ul>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ362/PLAW-117publ362.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ362/PLAW-117publ362_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ362/PLAW-117publ362.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/5329"
+    },
+    {
+      "id": "hr1095-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "1095",
+      "title": "To designate the facility of the United States Postal Service located at 101 South Willowbrook Avenue in Compton, California, as the \"PFC James Anderson, Jr., Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Barragan, Nanette Diaz",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2021-02-18",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-268."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 101 South Willowbrook Avenue in Compton, California, as the PFC James Anderson, Jr., Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ268/PLAW-117publ268.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ268/PLAW-117publ268_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ268/PLAW-117publ268.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/1095"
+    },
+    {
+      "id": "hr203-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "203",
+      "title": "To designate the facility of the United States Postal Service located at 4020 Broadway Street in Houston, Texas, as the \"Benny C. Martinez Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Garcia, Sylvia R.",
+        "party": "D",
+        "state": "TX"
+      },
+      "introduced_date": "2021-01-05",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-265."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 4020 Broadway Street in Houston, Texas, as the Benny C. Martinez Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ265/PLAW-117publ265.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ265/PLAW-117publ265_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ265/PLAW-117publ265.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/203"
+    },
+    {
+      "id": "hr2473-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "2473",
+      "title": "To designate the facility of the United States Postal Service located at 275 Penn Avenue in Salem, Ohio, as the \"Howard Arthur Tibbs Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Johnson, Bill",
+        "party": "R",
+        "state": "OH"
+      },
+      "introduced_date": "2021-04-13",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-270."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 275 Penn Avenue in Salem, Ohio, as the Howard Arthur Tibbs Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ270/PLAW-117publ270.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ270/PLAW-117publ270_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ270/PLAW-117publ270.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/2473"
+    },
+    {
+      "id": "hr4622-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "4622",
+      "title": "To designate the facility of the United States Postal Service located at 226 North Main Street in Roseville, Ohio, as the \"Ronald E. Rosser Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Balderson, Troy",
+        "party": "R",
+        "state": "OH"
+      },
+      "introduced_date": "2021-07-22",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-274."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 226 North Main Street in Roseville, Ohio, as the Ronald E. Rosser Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ274/PLAW-117publ274.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ274/PLAW-117publ274_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ274/PLAW-117publ274.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/4622"
+    },
+    {
+      "id": "hr4899-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "4899",
+      "title": "To designate the facility of the United States Postal Service located at 10 Broadway Street West, in Akeley, Minnesota, as the \"Neal Kenneth Todd Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Stauber, Pete",
+        "party": "R",
+        "state": "MN"
+      },
+      "introduced_date": "2021-07-30",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-276."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 10 Broadway Street West, in Akeley, Minnesota, as the Neal Kenneth Todd Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ276/PLAW-117publ276.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ276/PLAW-117publ276_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ276/PLAW-117publ276.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/4899"
+    },
+    {
+      "id": "hr5271-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "5271",
+      "title": "To designate the facility of the United States Postal Service located at 2245 Rosa L Parks Boulevard in Nashville, Tennessee, as the \"Thelma Harper Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Cooper, Jim",
+        "party": "D",
+        "state": "TN"
+      },
+      "introduced_date": "2021-09-17",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-277."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 2245 Rosa L Parks Boulevard in Nashville, Tennessee, as the Thelma Harper Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ277/PLAW-117publ277.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ277/PLAW-117publ277_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ277/PLAW-117publ277.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/5271"
+    },
+    {
+      "id": "hr5349-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "5349",
+      "title": "To designate the facility of the United States Postal Service located at 1550 State Road S-38-211 in Orangeburg, South Carolina, as the \"J.I. Washington Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Clyburn, James E.",
+        "party": "D",
+        "state": "SC"
+      },
+      "introduced_date": "2021-09-23",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-278."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 1550 State Road S-38-211 in Orangeburg, South Carolina, as the J.I. Washington Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ278/PLAW-117publ278.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ278/PLAW-117publ278_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ278/PLAW-117publ278.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/5349"
+    },
+    {
+      "id": "hr5650-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "5650",
+      "title": "To designate the facility of the United States Postal Service located at 16605 East Avenue of the Fountains in Fountain Hills, Arizona, as the \"Dr. C.T. Wright Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Schweikert, David",
+        "party": "R",
+        "state": "AZ"
+      },
+      "introduced_date": "2021-10-20",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-279."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 16605 East Avenue of the Fountains in Fountain Hills, Arizona, as the Dr. C.T. Wright Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ279/PLAW-117publ279.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ279/PLAW-117publ279_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ279/PLAW-117publ279.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/5650"
+    },
+    {
+      "id": "hr5659-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "5659",
+      "title": "To designate the facility of the United States Postal Service located at 1961 North C Street in Oxnard, California, as the \"John R. Hatcher III Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Brownley, Julia",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2021-10-21",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-280."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 1961 North C Street in Oxnard, California, as the John R. Hatcher III Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ280/PLAW-117publ280.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ280/PLAW-117publ280_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ280/PLAW-117publ280.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/5659"
+    },
+    {
+      "id": "hr5794-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "5794",
+      "title": "To designate the facility of the United States Postal Service located at 850 Walnut Street in McKeesport, Pennsylvania, as the \"First Sergeant Leonard A. Funk, Jr. Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Doyle, Michael F.",
+        "party": "D",
+        "state": "PA"
+      },
+      "introduced_date": "2021-11-01",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-281."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 850 Walnut Street in McKeesport, Pennsylvania, as the First Sergeant Leonard A. Funk, Jr. Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ281/PLAW-117publ281.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ281/PLAW-117publ281_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ281/PLAW-117publ281.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/5794"
+    },
+    {
+      "id": "hr5865-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "5865",
+      "title": "To designate the facility of the United States Postal Service located at 4110 Bluebonnet Drive in Stafford, Texas, as the \"Leonard Scarcella Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Green, Al",
+        "party": "D",
+        "state": "TX"
+      },
+      "introduced_date": "2021-11-04",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-282."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 4110 Bluebonnet Drive in Stafford, Texas, as the Leonard Scarcella Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ282/PLAW-117publ282.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ282/PLAW-117publ282_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ282/PLAW-117publ282.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/5865"
+    },
+    {
+      "id": "hr5900-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "5900",
+      "title": "To designate the facility of the United States Postal Service located at 2016 East 1st Street in Los Angeles, California, as the \"Marine Corps Reserve PVT Jacob Cruz Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Gomez, Jimmy",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2021-11-05",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-283."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 2016 East 1st Street in Los Angeles, California, as the Marine Corps Reserve PVT Jacob Cruz Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ283/PLAW-117publ283.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ283/PLAW-117publ283_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ283/PLAW-117publ283.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/5900"
+    },
+    {
+      "id": "hr5943-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "5943",
+      "title": "To designate the outpatient clinic of the Department of Veterans Affairs in Greenville, South Carolina, as the \"Lance Corporal Dana Cornell Darnell VA Clinic\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Timmons, William R. IV",
+        "party": "R",
+        "state": "SC"
+      },
+      "introduced_date": "2021-11-09",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-284."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the outpatient clinic of the Department of Veterans Affairs in Greenville, South Carolina, as the Lance Corporal Dana Cornell Darnell VA Clinic.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ284/PLAW-117publ284.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ284/PLAW-117publ284_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ284/PLAW-117publ284.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/5943"
+    },
+    {
+      "id": "hr5952-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "5952",
+      "title": "To designate the facility of the United States Postal Service located at 123 East Main Street, in Vergas, Minnesota, as the \"Jon Glawe Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Fischbach, Michelle",
+        "party": "R",
+        "state": "MN"
+      },
+      "introduced_date": "2021-11-12",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-285."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p> This act designates the facility of the United States Postal Service located at 123 East Main Street, in Vergas, Minnesota, as the Jon Glawe Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ285/PLAW-117publ285.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ285/PLAW-117publ285_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ285/PLAW-117publ285.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/5952"
+    },
+    {
+      "id": "hr6042-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "6042",
+      "title": "To designate the facility of the United States Postal Service located at 213 William Hilton Parkway in Hilton Head Island, South Carolina, as the \"Caesar H. Wright Jr. Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Mace, Nancy",
+        "party": "R",
+        "state": "SC"
+      },
+      "introduced_date": "2021-11-18",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-288."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 213 William Hilton Parkway in Hilton Head Island, South Carolina, as the Caesar H. Wright Jr. Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ288/PLAW-117publ288.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ288/PLAW-117publ288_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ288/PLAW-117publ288.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/6042"
+    },
+    {
+      "id": "hr6064-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "6064",
+      "title": "To direct the Secretary of Veterans Affairs to seek to enter into an agreement with the National Academies of Sciences, Engineering, and Medicine for a review of examinations, furnished by the Secretary, to individuals who submit claims to the Secretary for compensation under chapter 11 of title 38, United States Code, for mental and physical conditions linked to military sexual trauma.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Nehls, Troy E.",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2021-11-19",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-289."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act requires the Department of Veterans Affairs (VA) to seek to enter into an agreement with the National Academies of Sciences, Engineering, and Medicine (NASEM) to conduct a comprehensive review of VA medical examinations provided to individuals who submit claims for compensation for a service-connected disability related to military sexual trauma. </p> <p>Specifically, NASEM must review VA examinations that are provided for mental and physical conditions linked to military sexual trauma and are conducted to assess the impairments of individuals arising from such trauma.</p> <p>NASEM must report on its review, and the VA must report on its plans to implement actions based on NASEM's findings and recommendations.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ289/PLAW-117publ289.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ289/PLAW-117publ289_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ289/PLAW-117publ289.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/6064"
+    },
+    {
+      "id": "hr6080-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "6080",
+      "title": "To designate the facility of the United States Postal Service located at 5420 Kavanaugh Boulevard in Little Rock, Arkansas, as the \"Ronald A. Robinson Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Hill, J. French",
+        "party": "R",
+        "state": "AR"
+      },
+      "introduced_date": "2021-11-26",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-290."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 5420 Kavanaugh Boulevard in Little Rock, Arkansas, as the Ronald A. Robinson Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ290/PLAW-117publ290.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ290/PLAW-117publ290_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ290/PLAW-117publ290.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/6080"
+    },
+    {
+      "id": "hr6218-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "6218",
+      "title": "To designate the facility of the United States Postal Service located at 317 Blattner Drive in Avon, Minnesota, as the \"W.O.C. Kort Miller Plantenberg Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Emmer, Tom",
+        "party": "R",
+        "state": "MN"
+      },
+      "introduced_date": "2021-12-09",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-291."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 317 Blattner Drive in Avon, Minnesota, as the W.O.C. Kort Miller Plantenberg Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ291/PLAW-117publ291.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ291/PLAW-117publ291_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ291/PLAW-117publ291.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/6218"
+    },
+    {
+      "id": "hr6220-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "6220",
+      "title": "To designate the facility of the United States Postal Service located at 100 3rd Avenue Northwest in Perham, Minnesota, as the \"Charles P. Nord Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Fischbach, Michelle",
+        "party": "R",
+        "state": "MN"
+      },
+      "introduced_date": "2021-12-09",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-292."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 100 3rd Avenue Northwest in Perham, Minnesota, as the Charles P. Nord Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ292/PLAW-117publ292.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ292/PLAW-117publ292_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ292/PLAW-117publ292.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/6220"
+    },
+    {
+      "id": "hr6221-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "6221",
+      "title": "To designate the facility of the United States Postal Service located at 155 Main Avenue West in Winsted, Minnesota, as the \"James A. Rogers Jr. Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Fischbach, Michelle",
+        "party": "R",
+        "state": "MN"
+      },
+      "introduced_date": "2021-12-09",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-293."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 155 Main Avenue West in Winsted, Minnesota, as the James A. Rogers Jr. Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ293/PLAW-117publ293.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ293/PLAW-117publ293_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ293/PLAW-117publ293.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/6221"
+    },
+    {
+      "id": "hr6386-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "6386",
+      "title": "To designate the facility of the United States Postal Service located at 450 West Schaumburg Road in Schaumburg, Illinois, as the \"Veterans of Iraq and Afghanistan Memorial Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Krishnamoorthi, Raja",
+        "party": "D",
+        "state": "IL"
+      },
+      "introduced_date": "2022-01-12",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-295."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 450 West Schaumburg Road in Schaumburg, Illinois, as the Veterans of Iraq and Afghanistan Memorial Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ295/PLAW-117publ295.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ295/PLAW-117publ295_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ295/PLAW-117publ295.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/6386"
+    },
+    {
+      "id": "hr6630-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "6630",
+      "title": "To designate the facility of the United States Postal Service located at 1400 N Kraemer Blvd. in Placentia, California, as the \"PFC Jang Ho Kim Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Kim, Young",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2022-02-07",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-298."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 1400 N Kraemer Blvd. in Placentia, California, as the PFC Jang Ho Kim Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ298/PLAW-117publ298.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ298/PLAW-117publ298_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ298/PLAW-117publ298.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/6630"
+    },
+    {
+      "id": "hr6917-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "6917",
+      "title": "To designate the facility of the United States Postal Service located at 301 East Congress Parkway in Crystal Lake, Illinois, as the \"Ryan J. Cummings Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Casten, Sean",
+        "party": "D",
+        "state": "IL"
+      },
+      "introduced_date": "2022-03-03",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-299."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 301 East Congress Parkway in Crystal Lake, Illinois, as the Ryan J. Cummings Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ299/PLAW-117publ299.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ299/PLAW-117publ299_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ299/PLAW-117publ299.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/6917"
+    },
+    {
+      "id": "hr6961-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "6961",
+      "title": "Dignity for MST Survivors Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Mrvan, Frank J.",
+        "party": "D",
+        "state": "IN"
+      },
+      "introduced_date": "2022-03-07",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-300."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act modifies communications and procedures for the Department of Veterans Affairs (VA) and Board of Veterans' Appeals (BVA) regarding claims for compensation based on military sexual trauma (MST) experienced by veterans.</p> <p>The act requires the VA to ensure each member of the BVA is offered annual training on MST and proceedings that concern a claim for compensation based on MST. A proceeding that concerns a claim for compensation based on MST may not be assigned to a member of the BVA (or a panel of members) unless such persons have completed the annual training.</p> <p>When a notice of disagreement is filed, the BVA must promptly determine whether it is filed for a case that concerns a claim for compensation based on MST and for which the appellant has requested a hearing in the notice.</p> <p>The VA must audit the language used in letters sent to individuals to explain decisions denying claims for compensation based on MST. Letters must be modified to ensure (1) the use of trauma-informed language, and (2) veterans are not retraumatized through insensitive language.</p> <p>The VA must establish protocols for VA medical providers and contract medical providers to ensure that the medical providers use trauma-informed practices in conducting examinations in relation to claims for compensation based on MST.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ300/PLAW-117publ300.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ300/PLAW-117publ300_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ300/PLAW-117publ300.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/6961"
+    },
+    {
+      "id": "hr7514-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "7514",
+      "title": "To designate the facility of the United States Postal Service located at 345 South Main Street in Butler, Pennsylvania, as the \"Andrew Gomer Williams Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Kelly, Mike",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2022-04-14",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-304."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 345 South Main Street in Butler, Pennsylvania, as the Andrew Gomer Williams Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ304/PLAW-117publ304.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ304/PLAW-117publ304_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ304/PLAW-117publ304.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/7514"
+    },
+    {
+      "id": "hr7518-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "7518",
+      "title": "To designate the facility of the United States Postal Service located at 23200 John R Road in Hazel Park, Michigan, as the \"Roy E. Dickens Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Levin, Andy",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2022-04-14",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-305."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 23200 John R Road in Hazel Park, Michigan, as the Roy E. Dickens Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ305/PLAW-117publ305.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ305/PLAW-117publ305_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ305/PLAW-117publ305.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/7518"
+    },
+    {
+      "id": "hr7519-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "7519",
+      "title": "To designate the facility of the United States Postal Service located at 2050 South Boulevard in Bloomfield Township, Michigan, as the \"Dr. Ezra S. Parke Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Levin, Andy",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2022-04-14",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-306."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 2050 South Boulevard in Bloomfield Township, Michigan, as the Dr. Ezra S. Parke Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ306/PLAW-117publ306.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ306/PLAW-117publ306_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ306/PLAW-117publ306.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/7519"
+    },
+    {
+      "id": "hr7638-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "7638",
+      "title": "To designate the facility of the United States Postal Service located at 6000 South Florida Avenue in Lakeland, Florida, as the \"U.S. Marine Corporal Ronald R. Payne Jr. Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Franklin, C. Scott",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2022-04-29",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-307."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p />This act designates the facility of the United States Postal Service located at 6000 South Florida Avenue in Lakeland, Florida, as the U.S. Marine Corporal Ronald R. Payne Jr. Post Office.",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ307/PLAW-117publ307.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ307/PLAW-117publ307_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ307/PLAW-117publ307.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/7638"
+    },
+    {
+      "id": "hr8025-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "8025",
+      "title": "To designate the facility of the United States Postal Service located at 100 South 1st Street in Minneapolis, Minnesota, as the \"Martin Olav Sabo Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Omar, Ilhan",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2022-06-13",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-309."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 100 South 1st Street in Minneapolis, Minnesota, as the Martin Olav Sabo Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ309/PLAW-117publ309.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ309/PLAW-117publ309_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ309/PLAW-117publ309.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/8025"
+    },
+    {
+      "id": "hr8026-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "8026",
+      "title": "To designate the facility of the United States Postal Service located at 825 West 65th Street in Minneapolis, Minnesota, as the \"Charles W. Lindberg Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Omar, Ilhan",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2022-06-13",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-310."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 825 West 65th Street in Minneapolis, Minnesota, as the Charles W. Lindberg Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ310/PLAW-117publ310.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ310/PLAW-117publ310_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ310/PLAW-117publ310.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/8026"
+    },
+    {
+      "id": "hr8203-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "8203",
+      "title": "To designate the facility of the United States Postal Service located at 651 Business Interstate Highway 35 North Suite 420 in New Braunfels, Texas, as the \"Bob Krueger Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Doggett, Lloyd",
+        "party": "D",
+        "state": "TX"
+      },
+      "introduced_date": "2022-06-23",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-311."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 651 Business Interstate Highway 35 North Suite 420 in New Braunfels, Texas, as the Bob Krueger Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ311/PLAW-117publ311.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ311/PLAW-117publ311_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ311/PLAW-117publ311.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/8203"
+    },
+    {
+      "id": "hr8226-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "8226",
+      "title": "To designate the facility of the United States Postal Service located at 236 Concord Exchange North in South Saint Paul, Minnesota, as the \"Officer Leo Pavlak Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Craig, Angie",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2022-06-24",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-312."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 236 Concord Exchange North in South Saint Paul, Minnesota, as the Officer Leo Pavlak Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ312/PLAW-117publ312.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ312/PLAW-117publ312_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ312/PLAW-117publ312.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/8226"
+    },
+    {
+      "id": "hr9308-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "9308",
+      "title": "To designate the facility of the United States Postal Service located at 6401 El Cajon Boulevard in San Diego, California, as the \"Susan A. Davis Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Jacobs, Sara",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2022-11-16",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-314."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 6401 El Cajon Boulevard in San Diego, California, as the Susan A. Davis Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ314/PLAW-117publ314.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ314/PLAW-117publ314_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ314/PLAW-117publ314.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/9308"
+    },
     {
       "id": "s5229-117",
       "congress": 117,
@@ -51,6 +891,102 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/5355"
     },
     {
+      "id": "hr6722-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "6722",
+      "title": "To designate the Department of Veterans Affairs community-based outpatient clinic in French Camp, California, as the \"Richard A. Pittman VA Clinic\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McNerney, Jerry",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2022-02-15",
+      "latest_action": {
+        "date": "2022-12-20",
+        "text": "Became Public Law No: 117-235."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the community-based outpatient clinic of the Department of Veterans Affairs in French Camp, California, as the Richard A. Pittman VA Clinic.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ235/PLAW-117publ235.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ235/PLAW-117publ235_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ235/PLAW-117publ235.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/6722"
+    },
+    {
+      "id": "hr6863-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "6863",
+      "title": "To designate the medical center of the Department of Veterans Affairs in Memphis, Tennessee, as the \"Lt. Col. Luke Weathers, Jr. VA Medical Center\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Cohen, Steve",
+        "party": "D",
+        "state": "TN"
+      },
+      "introduced_date": "2022-02-28",
+      "latest_action": {
+        "date": "2022-12-20",
+        "text": "Became Public Law No: 117-236."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the medical center of the Department of Veterans Affairs in Memphis, Tennessee, as the Lt. Col. Luke Weathers, Jr. VA Medical Center.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ236/PLAW-117publ236.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ236/PLAW-117publ236_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ236/PLAW-117publ236.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/6863"
+    },
+    {
+      "id": "hr7903-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "7903",
+      "title": "To designate the Department of Veterans Affairs community-based outpatient clinic located in Canton, Michigan, as the \"Major General Oliver W. Dillard VA Clinic\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Stevens, Haley M.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2022-05-27",
+      "latest_action": {
+        "date": "2022-12-20",
+        "text": "Became Public Law No: 117-237."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the community-based outpatient clinic of the Department of Veterans Affairs in Canton, Michigan, as the Major General Oliver W. Dillard VA Clinic.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ237/PLAW-117publ237.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ237/PLAW-117publ237_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ237/PLAW-117publ237.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/7903"
+    },
+    {
+      "id": "hr7925-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "7925",
+      "title": "To designate the Department of Veterans Affairs community-based outpatient clinic located in Palm Desert, California, as the \r\n\"Sy Kaplan VA Clinic\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Ruiz, Raul",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2022-05-31",
+      "latest_action": {
+        "date": "2022-12-20",
+        "text": "Became Public Law No: 117-238."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the community-based outpatient clinic of the Department of Veterans Affairs in Palm Desert, California, as the Sy Kaplan VA Clinic.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ238/PLAW-117publ238.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ238/PLAW-117publ238_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ238/PLAW-117publ238.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/7925"
+    },
+    {
       "id": "s3825-117",
       "congress": 117,
       "type": "s",
@@ -73,6 +1009,126 @@
       "text_url_xml": "https://www.congress.gov/117/plaws/publ239/PLAW-117publ239_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/117/plaws/publ239/PLAW-117publ239.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/3825"
+    },
+    {
+      "id": "hr228-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "228",
+      "title": "To designate the facility of the United States Postal Service located at 2141 Ferry Street in Anderson, California, as the \"Norma Comnick Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. LaMalfa, Doug",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2021-01-06",
+      "latest_action": {
+        "date": "2022-12-19",
+        "text": "Became Public Law No: 117-230."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 2141 Ferry Street in Anderson, California, as the Norma Comnick Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ230/PLAW-117publ230.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ230/PLAW-117publ230_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ230/PLAW-117publ230.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/228"
+    },
+    {
+      "id": "hr3175-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "3175",
+      "title": "To designate the facility of the United States Postal Service located at 135 Main Street in Biloxi, Mississippi, as the \"Robert S. McKeithen Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Palazzo, Steven M.",
+        "party": "R",
+        "state": "MS"
+      },
+      "introduced_date": "2021-05-13",
+      "latest_action": {
+        "date": "2022-12-19",
+        "text": "Became Public Law No: 117-232."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 135 Main Street in Biloxi, Mississippi, as the Robert S. McKeithen Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ232/PLAW-117publ232.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ232/PLAW-117publ232_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ232/PLAW-117publ232.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/3175"
+    },
+    {
+      "id": "hr5481-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "5481",
+      "title": "To name the Department of Veterans Affairs community-based outpatient clinic in Forest City,   North Carolina, as the \"Master Sergeant Jerry K. Crump VA Clinic\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Foxx, Virginia",
+        "party": "R",
+        "state": "NC"
+      },
+      "introduced_date": "2021-10-05",
+      "latest_action": {
+        "date": "2022-12-19",
+        "text": "Became Public Law No: 117-233."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the community-based outpatient clinic of the Department of Veterans Affairs in Forest City, North Carolina, as the Master Sergeant Jerry K. Crump VA Clinic.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ233/PLAW-117publ233.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ233/PLAW-117publ233_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ233/PLAW-117publ233.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/5481"
+    },
+    {
+      "id": "hr6614-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "6614",
+      "title": "To designate the facility of the United States Postal Service located at 4744 Grand River Avenue in Detroit, Michigan, as the \"Rosa Louise McCauley Parks Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Tlaib, Rashida",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2022-02-04",
+      "latest_action": {
+        "date": "2022-12-19",
+        "text": "Became Public Law No: 117-234."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 4744 Grand River Avenue in Detroit, Michigan, as the Rosa Louise McCauley Parks Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ234/PLAW-117publ234.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ234/PLAW-117publ234_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ234/PLAW-117publ234.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/6614"
+    },
+    {
+      "id": "hr700-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "700",
+      "title": "To designate the facility of the United States Postal Service located at 303 East Mississippi Avenue in Elwood, Illinois, as the \"Lawrence M. 'Larry' Walsh Sr. Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Foster, Bill",
+        "party": "D",
+        "state": "IL"
+      },
+      "introduced_date": "2021-02-02",
+      "latest_action": {
+        "date": "2022-12-19",
+        "text": "Became Public Law No: 117-231."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 303 East Mississippi Avenue in Elwood, Illinois, as the Lawrence M. &quot;Larry&quot; Walsh Sr. Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ231/PLAW-117publ231.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ231/PLAW-117publ231_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ231/PLAW-117publ231.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/700"
     },
     {
       "id": "sres851-117",
@@ -145,6 +1201,30 @@
       "text_url_xml": "https://www.congress.gov/117/plaws/publ217/PLAW-117publ217_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/117/plaws/publ217/PLAW-117publ217.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/3826"
+    },
+    {
+      "id": "s3884-117",
+      "congress": 117,
+      "type": "s",
+      "number": "3884",
+      "title": "A bill to designate the facility of the United States Postal Service located at 404 U.S. Highway 41 North in Baraga, Michigan, as the \"Cora Reynolds Anderson Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Peters, Gary C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2022-03-21",
+      "latest_action": {
+        "date": "2022-12-02",
+        "text": "Became Public Law No: 117-218."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the facility of the United States Postal Service located at 404 U.S. Highway 41 North in Baraga, Michigan, as the Cora Reynolds Anderson Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ218/PLAW-117publ218.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ218/PLAW-117publ218_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ218/PLAW-117publ218.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/3884"
     },
     {
       "id": "sres786-117",
@@ -241,6 +1321,198 @@
       "text_url_xml": "https://www.congress.gov/117/plaws/publ213/PLAW-117publ213_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/117/plaws/publ213/PLAW-117publ213.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/4791"
+    },
+    {
+      "id": "hr2142-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "2142",
+      "title": "To designate the facility of the United States Postal Service located at 170 Manhattan Avenue in Buffalo, New York, as the \"Indiana Hunt-Martin Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Higgins, Brian",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2021-03-23",
+      "latest_action": {
+        "date": "2022-10-11",
+        "text": "Became Public Law No: 117-195."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the facility of the United States Postal Service located at 170 Manhattan Avenue in Buffalo, New York, as the Indiana Hunt-Martin Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ195/PLAW-117publ195.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ195/PLAW-117publ195_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ195/PLAW-117publ195.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/2142"
+    },
+    {
+      "id": "hr3508-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "3508",
+      "title": "To designate the facility of the United States Postal Service located at 39 West Main Street, in Honeoye Falls, New York, as the \"CW4 Christian J. Koch Memorial Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Jacobs, Chris",
+        "party": "R",
+        "state": "NY"
+      },
+      "introduced_date": "2021-05-25",
+      "latest_action": {
+        "date": "2022-10-11",
+        "text": "Became Public Law No: 117-196."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the facility of the United States Postal Service located at 39 West Main Street, in Honeoye Falls, New York, as the CW4 Christian J. Koch Memorial Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ196/PLAW-117publ196.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ196/PLAW-117publ196_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ196/PLAW-117publ196.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/3508"
+    },
+    {
+      "id": "hr3539-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "3539",
+      "title": "To designate the facility of the United States Postal Service located at 223 West Chalan Santo Papa in Hagatna, Guam, as the \"Atanasio Taitano Perez Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Del. San Nicolas, Michael F. Q. [D-GU-At Large]",
+        "party": "D",
+        "state": "GU"
+      },
+      "introduced_date": "2021-05-25",
+      "latest_action": {
+        "date": "2022-10-11",
+        "text": "Became Public Law No: 117-197."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the facility of the United States Postal Service located at 223 West Chalan Santo Papa in Hagatna, Guam, as the Atanasio Taitano Perez Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ197/PLAW-117publ197.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ197/PLAW-117publ197_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ197/PLAW-117publ197.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/3539"
+    },
+    {
+      "id": "hr5809-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "5809",
+      "title": "To designate the facility of the United States Postal Service located at 1801 Town and Country Drive in Norco, California, as the \"Lance Corporal Kareem Nikoui Memorial Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Calvert, Ken",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2021-11-02",
+      "latest_action": {
+        "date": "2022-10-11",
+        "text": "Became Public Law No: 117-198."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the facility of the United States Postal Service located at 1801 Town and Country Drive in Norco, California, as the Lance Corporal Kareem Nikoui Memorial Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ198/PLAW-117publ198.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ198/PLAW-117publ198_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ198/PLAW-117publ198.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/5809"
+    },
+    {
+      "id": "hr7698-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "7698",
+      "title": "To designate the outpatient clinic of the Department of Veterans Affairs in Ventura, California, as the \"Captain Rosemary Bryant Mariner Outpatient Clinic\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Brownley, Julia",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2022-05-10",
+      "latest_action": {
+        "date": "2022-10-11",
+        "text": "Became Public Law No: 117-199."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the outpatient clinic of the Department of Veterans Affairs in Ventura, California, as the Captain Rosemary Bryant Mariner Outpatient Clinic.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ199/PLAW-117publ199.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ199/PLAW-117publ199_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ199/PLAW-117publ199.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/7698"
+    },
+    {
+      "id": "hr91-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "91",
+      "title": "To designate the facility of the United States Postal Service located at 810 South Pendleton Street in Easley, South Carolina, as the \"Private First Class Barrett Lyle Austin Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Duncan, Jeff",
+        "party": "R",
+        "state": "SC"
+      },
+      "introduced_date": "2021-01-04",
+      "latest_action": {
+        "date": "2022-10-11",
+        "text": "Became Public Law No: 117-193."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p> This bill designates the facility of the United States Postal Service located at 810 South Pendleton Street in Easley, South Carolina, as the Private First Class Barrett Lyle Austin Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ193/PLAW-117publ193.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ193/PLAW-117publ193_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ193/PLAW-117publ193.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/91"
+    },
+    {
+      "id": "hr92-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "92",
+      "title": "To designate the facility of the United States Postal Service located at 110 Johnson Street in Pickens, South Carolina, as the \"Specialist Four Charles Johnson Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Duncan, Jeff",
+        "party": "R",
+        "state": "SC"
+      },
+      "introduced_date": "2021-01-04",
+      "latest_action": {
+        "date": "2022-10-11",
+        "text": "Became Public Law No: 117-194."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p> This bill designates the facility of the United States Postal Service located at 110 Johnson Street in Pickens, South Carolina, as the Specialist Four Charles Johnson Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ194/PLAW-117publ194.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ194/PLAW-117publ194_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ194/PLAW-117publ194.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/92"
+    },
+    {
+      "id": "hr5577-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "5577",
+      "title": "To designate the facility of the United States Postal Service located at 3900 Crown Road Southwest in Atlanta, Georgia, as the \"John R. Lewis Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Williams, Nikema",
+        "party": "D",
+        "state": "GA"
+      },
+      "introduced_date": "2021-10-12",
+      "latest_action": {
+        "date": "2022-10-04",
+        "text": "Became Public Law No: 117-184."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the facility of the United States Postal Service located at 3900 Crown Road Southwest in Atlanta, Georgia, as the John R. Lewis Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ184/PLAW-117publ184.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ184/PLAW-117publ184_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ184/PLAW-117publ184.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/5577"
     },
     {
       "id": "sres753-117",
@@ -385,6 +1657,198 @@
       "text_url_xml": "https://www.congress.gov/117/bills/sres638/BILLS-117sres638ats.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/sres638/BILLS-117sres638ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/638"
+    },
+    {
+      "id": "hr1444-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "1444",
+      "title": "To designate the facility of the United States Postal Service located at 132 North Loudoun Street, Suite 1 in Winchester, Virginia, as the \"Patsy Cline Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Wexton, Jennifer",
+        "party": "D",
+        "state": "VA"
+      },
+      "introduced_date": "2021-02-26",
+      "latest_action": {
+        "date": "2022-06-24",
+        "text": "Became Public Law No: 117-157."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the facility of the United States Postal Service located at 132 North Loudoun Street, Suite 1 in Winchester, Virginia, as the Patsy Cline Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ157/PLAW-117publ157.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ157/PLAW-117publ157_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ157/PLAW-117publ157.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/1444"
+    },
+    {
+      "id": "hr735-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "735",
+      "title": "To designate the facility of the United States Postal Service located at 502 East Cotati Avenue in Cotati, California, as the \"Arturo L. Ibleto Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Thompson, Mike",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2021-02-02",
+      "latest_action": {
+        "date": "2022-06-24",
+        "text": "Became Public Law No: 117-155."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the facility of the United States Postal Service located at 502 East Cotati Avenue in Cotati, California, as the Arturo L. Ibleto Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ155/PLAW-117publ155.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ155/PLAW-117publ155_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ155/PLAW-117publ155.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/735"
+    },
+    {
+      "id": "hr1170-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "1170",
+      "title": "To designate the facility of the United States Postal Service located at 1 League in Irvine, California, as the \"Tuskegee Airman Lieutenant Colonel Robert J. Friend Memorial Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Porter, Katie",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2021-02-18",
+      "latest_action": {
+        "date": "2022-06-23",
+        "text": "Became Public Law No: 117-152."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the facility of the United States Postal Service located at 1 League in Irvine, California, as the Tuskegee Airman Lieutenant Colonel Robert J. Friend Memorial Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ152/PLAW-117publ152.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ152/PLAW-117publ152_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ152/PLAW-117publ152.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/1170"
+    },
+    {
+      "id": "hr2324-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "2324",
+      "title": "To designate the facility of the United States Postal Service located at 2800 South Adams Street in Tallahassee, Florida, as the \"D. Edwina Stephens Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Lawson, Al, Jr.",
+        "party": "D",
+        "state": "FL"
+      },
+      "introduced_date": "2021-04-01",
+      "latest_action": {
+        "date": "2022-06-23",
+        "text": "Became Public Law No: 117-153."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the facility of the United States Postal Service located at 2800 South Adams Street in Tallahassee, Florida, as the D. Edwina Stephens Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ153/PLAW-117publ153.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ153/PLAW-117publ153_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ153/PLAW-117publ153.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/2324"
+    },
+    {
+      "id": "hr1298-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "1298",
+      "title": "To designate the facility of the United States Postal Service located at 1233 North Cedar Street in Owasso, Oklahoma, as the \"Technical Sergeant Marshal Roberts Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Hern, Kevin",
+        "party": "R",
+        "state": "OK"
+      },
+      "introduced_date": "2021-02-24",
+      "latest_action": {
+        "date": "2022-06-16",
+        "text": "Became Public Law No: 117-143."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the facility of the United States Postal Service located at 1233 North Cedar Street in Owasso, Oklahoma, as the Technical Sergeant Marshal Roberts Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ143/PLAW-117publ143.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ143/PLAW-117publ143_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ143/PLAW-117publ143.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/1298"
+    },
+    {
+      "id": "hr3613-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "3613",
+      "title": "To designate the facility of the United States Postal Service located at 202 Trumbull Street in Saint Clair, Michigan, as the \"Corporal Jeffrey Robert Standfest Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McClain, Lisa C.",
+        "party": "R",
+        "state": "MI"
+      },
+      "introduced_date": "2021-05-28",
+      "latest_action": {
+        "date": "2022-06-16",
+        "text": "Became Public Law No: 117-147."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the facility of the United States Postal Service located at 202 Trumbull Street in Saint Clair, Michigan, as the Corporal Jeffrey Robert Standfest Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ147/PLAW-117publ147.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ147/PLAW-117publ147_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ147/PLAW-117publ147.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/3613"
+    },
+    {
+      "id": "hr3579-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "3579",
+      "title": "To designate the facility of the United States Postal Service located at 200 East Main Street in Maroa, Illinois, as the \"Jeremy L. Ridlen Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Davis, Rodney",
+        "party": "R",
+        "state": "IL"
+      },
+      "introduced_date": "2021-05-28",
+      "latest_action": {
+        "date": "2022-06-15",
+        "text": "Became Public Law No: 117-141."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the facility of the United States Postal Service located at 200 East Main Street in Maroa, Illinois, as the Jeremy L. Ridlen Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ141/PLAW-117publ141.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ141/PLAW-117publ141_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ141/PLAW-117publ141.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/3579"
+    },
+    {
+      "id": "hr4168-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "4168",
+      "title": "To designate the facility of the United States Postal Service located at 6223 Maple Street, in Omaha, Nebraska, as the \"Petty Officer 1st Class Charles Jackson French Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Bacon, Don",
+        "party": "R",
+        "state": "NE"
+      },
+      "introduced_date": "2021-06-25",
+      "latest_action": {
+        "date": "2022-06-15",
+        "text": "Became Public Law No: 117-142."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the facility of the United States Postal Service located at 6223 Maple Street in Omaha, Nebraska, as the Petty Officer 1st Class Charles Jackson French Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ142/PLAW-117publ142.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ142/PLAW-117publ142_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ142/PLAW-117publ142.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/4168"
     },
     {
       "id": "sconres41-117",
@@ -747,6 +2211,126 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/547"
     },
     {
+      "id": "hr3665-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "3665",
+      "title": "To designate the medical center of the Department of Veterans Affairs in San Diego, California, as the Jennifer Moreno Department of Veterans Affairs Medical Center, and to support the designation of a component of such medical center in honor of Kathleen Bruyere.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Levin, Mike",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2021-06-01",
+      "latest_action": {
+        "date": "2022-03-14",
+        "text": "Became Public Law No: 117-98."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the medical center of the Department of Veterans Affairs (VA) in San Diego, California, as the Jennifer Moreno Department of Veterans Affairs Medical Center.</p> <p>The bill also expresses the sense of Congress that the VA should designate a prominent physical space within the Jennifer Moreno Department of Veterans Affairs Medical Center to honor Kathleen Mae Bruyere. </p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ98/PLAW-117publ98.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ98/PLAW-117publ98_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ98/PLAW-117publ98.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/3665"
+    },
+    {
+      "id": "hr3419-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "3419",
+      "title": "To designate the facility of the United States Postal Service located at 66 Meserole Avenue in Brooklyn, New York, as the \"Joseph R. Lentol Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Maloney, Carolyn B.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2021-05-20",
+      "latest_action": {
+        "date": "2022-03-11",
+        "text": "Became Public Law No: 117-94."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the facility of the United States Postal Service located at 66 Meserole Avenue in Brooklyn, New York, as the Joseph R. Lentol Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ94/PLAW-117publ94.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ94/PLAW-117publ94_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ94/PLAW-117publ94.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/3419"
+    },
+    {
+      "id": "hr960-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "960",
+      "title": "To designate the facility of the United States Postal Service located at 3493 Burnet Avenue in Cincinnati, Ohio, as the \"John H. Leahr and Herbert M. Heilbrun Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Wenstrup, Brad R.",
+        "party": "R",
+        "state": "OH"
+      },
+      "introduced_date": "2021-02-08",
+      "latest_action": {
+        "date": "2022-03-11",
+        "text": "Became Public Law No: 117-93."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the facility of the United States Postal Service located at 3493 Burnet Avenue in Cincinnati, Ohio, as the John H. Leahr and Herbert M. Heilbrun Post Office. </p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ93/PLAW-117publ93.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ93/PLAW-117publ93_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ93/PLAW-117publ93.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/960"
+    },
+    {
+      "id": "hr2044-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "2044",
+      "title": "To designate the facility of the United States Postal Service located at 17 East Main Street in Herington, Kansas, as the \"Captain Emil J. Kapaun Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Mann, Tracey",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2021-03-18",
+      "latest_action": {
+        "date": "2022-03-10",
+        "text": "Became Public Law No: 117-91."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the facility of the United States Postal Service located at 17 East Main Street in Herington, Kansas, as the Captain Emil J. Kapaun Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ91/PLAW-117publ91.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ91/PLAW-117publ91_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ91/PLAW-117publ91.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/2044"
+    },
+    {
+      "id": "hr3210-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "3210",
+      "title": "To designate the facility of the United States Postal Service located at 1905 15th Street in Boulder, Colorado, as the \"Officer Eric H. Talley Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Neguse, Joe",
+        "party": "D",
+        "state": "CO"
+      },
+      "introduced_date": "2021-05-13",
+      "latest_action": {
+        "date": "2022-03-10",
+        "text": "Became Public Law No: 117-92."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the facility of the United States Postal Service located at 1905 15th Street in Boulder, Colorado, as the Officer Eric H. Talley Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ92/PLAW-117publ92.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ92/PLAW-117publ92_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ92/PLAW-117publ92.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/3210"
+    },
+    {
       "id": "sjres35-117",
       "congress": 117,
       "type": "sjres",
@@ -795,6 +2379,54 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/512"
     },
     {
+      "id": "hr1281-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "1281",
+      "title": "To name the Department of Veterans Affairs community-based outpatient clinic in Gaylord, Michigan, as the \"Navy Corpsman Steve Andrews Department of Veterans Affairs Health Care Clinic\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Bergman, Jack",
+        "party": "R",
+        "state": "MI"
+      },
+      "introduced_date": "2021-02-24",
+      "latest_action": {
+        "date": "2022-02-23",
+        "text": "Became Public Law No: 117-89."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the community-based outpatient clinic of the Department of Veterans Affairs in Gaylord, Michigan, as the Navy Corpsman Steve Andrews Department of Veterans Affairs Health Care Clinic.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ89/PLAW-117publ89.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ89/PLAW-117publ89_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ89/PLAW-117publ89.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/1281"
+    },
+    {
+      "id": "s566-117",
+      "congress": 117,
+      "type": "s",
+      "number": "566",
+      "title": "A bill to designate the facility of the United States Postal Service located at 42 Main Street in Slatersville, Rhode Island, as the \"Specialist Matthew R. Turcotte Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Reed, Jack",
+        "party": "D",
+        "state": "RI"
+      },
+      "introduced_date": "2021-03-03",
+      "latest_action": {
+        "date": "2022-02-22",
+        "text": "Became Public Law No: 117-87."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the facility of the United States Postal Service located at 42 Main Street in Slatersville, Rhode Island, as the Specialist Matthew R. Turcotte Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ87/PLAW-117publ87.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ87/PLAW-117publ87_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ87/PLAW-117publ87.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/566"
+    },
+    {
       "id": "sres424-117",
       "congress": 117,
       "type": "sres",
@@ -817,6 +2449,30 @@
       "text_url_xml": "https://www.congress.gov/117/bills/sres424/BILLS-117sres424ats.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/sres424/BILLS-117sres424ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/424"
+    },
+    {
+      "id": "sres496-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "496",
+      "title": "A resolution congratulating the University of Georgia Bulldogs football team for winning the 2022 National Collegiate Athletic Association College Football Playoff National Championship.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Ossoff, Jon",
+        "party": "D",
+        "state": "GA"
+      },
+      "introduced_date": "2022-01-20",
+      "latest_action": {
+        "date": "2022-02-01",
+        "text": "Resolution agreed to in Senate with an amendment and with a preamble by Unanimous Consent. (text: CR S455-456)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>\tThis resolution congratulates the University of Georgia Bulldogs for a great season and winning the 2022 National Collegiate Athletic Association College Football Playoff National Championship game.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres496/BILLS-117sres496ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres496/BILLS-117sres496ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres496/BILLS-117sres496ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/496"
     },
     {
       "id": "sres487-117",
@@ -939,6 +2595,78 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-joint-resolution/31"
     },
     {
+      "id": "hr1510-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "1510",
+      "title": "To direct the Secretary of Veterans Affairs to submit to Congress a report on the use of cameras in medical facilities of the Department of Veterans Affairs.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McKinley, David B.",
+        "party": "R",
+        "state": "WV"
+      },
+      "introduced_date": "2021-03-02",
+      "latest_action": {
+        "date": "2021-11-23",
+        "text": "Became Public Law No: 117-64."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill requires the Department of Veterans Affairs (VA) to report on its policies and procedures relating to the usage and maintenance of video cameras for patient safety and law enforcement at VA medical facilities.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ64/PLAW-117publ64.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ64/PLAW-117publ64_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ64/PLAW-117publ64.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/1510"
+    },
+    {
+      "id": "hr3475-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "3475",
+      "title": "To name the Department of Veterans Affairs community-based outpatient clinic in Columbus, Georgia, as the \"Robert S. Poydasheff VA Clinic\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Bishop, Sanford D., Jr.",
+        "party": "D",
+        "state": "GA"
+      },
+      "introduced_date": "2021-05-25",
+      "latest_action": {
+        "date": "2021-11-12",
+        "text": "Became Public Law No: 117-56."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the community-based outpatient clinic of the Department of Veterans Affairs in Columbus, Georgia, as the Robert S. Poydasheff VA Clinic.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ56/PLAW-117publ56.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ56/PLAW-117publ56_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ56/PLAW-117publ56.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/3475"
+    },
+    {
+      "id": "hr4172-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "4172",
+      "title": "To name the Department of Veterans Affairs community-based outpatient clinic in Aurora, Colorado, as the \"Lieutenant Colonel John W. Mosley VA Clinic\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Crow, Jason",
+        "party": "D",
+        "state": "CO"
+      },
+      "introduced_date": "2021-06-25",
+      "latest_action": {
+        "date": "2021-11-12",
+        "text": "Became Public Law No: 117-57."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the community-based outpatient clinic of the Department of Veterans Affairs to be located in Aurora, Colorado, as the Lieutenant Colonel John W. Mosley Clinic.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ57/PLAW-117publ57.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ57/PLAW-117publ57_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ57/PLAW-117publ57.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/4172"
+    },
+    {
       "id": "sres410-117",
       "congress": 117,
       "type": "sres",
@@ -963,6 +2691,54 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/410"
     },
     {
+      "id": "hr4981-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "4981",
+      "title": "To amend the Fentanyl Sanctions Act, to modify certain deadlines relating to the Commission on Combating Synthetic Opioid Trafficking.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Trone, David J.",
+        "party": "D",
+        "state": "MD"
+      },
+      "introduced_date": "2021-08-06",
+      "latest_action": {
+        "date": "2021-10-19",
+        "text": "Became Public Law No: 117-51."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill extends the deadline, from 270 days to 390 days, for the Commission on Combating Synthetic Opioid Trafficking to submit the final report on its activities and recommendations to combat the flow of synthetic opioids into the United States.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ51/PLAW-117publ51.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ51/PLAW-117publ51_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ51/PLAW-117publ51.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/4981"
+    },
+    {
+      "id": "hr2278-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "2278",
+      "title": "To designate the September 11th National Memorial Trail Route, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Connolly, Gerald E.",
+        "party": "D",
+        "state": "VA"
+      },
+      "introduced_date": "2021-03-29",
+      "latest_action": {
+        "date": "2021-10-13",
+        "text": "Became Public Law No: 117-48."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates a trail route, to be known as the September 11th National Memorial Trail Route, to link the National 9/11 Memorial and Museum in New York, New York, the National 9/11 Pentagon Memorial in Arlington, Virginia, and the Flight 93 National Memorial in Somerset County, Pennsylvania.</p> <p>The September 11th National Memorial Trail Route shall </p> <ul> <li>provide for a tribute to the family members and loved ones who were victims of the attack and the heroes of September 11th, including the first responders in the days, weeks, and months after the attack;</li> <li>be a trail of remembrance to honor the fallen in a tangible way that keeps their memories alive and reaffirms the exceptionalism of our country; and</li> <li>be a celebration of our nation's resilience and perseverance since September 11, 2001.</li> </ul> <p>The September 11th National Memorial Trail Route shall be administered by the National Park Service but not be considered to be a unit of the National Park System or a part of the National Trail System.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ48/PLAW-117publ48.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ48/PLAW-117publ48_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ48/PLAW-117publ48.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/2278"
+    },
+    {
       "id": "sres315-117",
       "congress": 117,
       "type": "sres",
@@ -985,6 +2761,78 @@
       "text_url_xml": "https://www.congress.gov/117/bills/sres315/BILLS-117sres315ats.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/sres315/BILLS-117sres315ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/315"
+    },
+    {
+      "id": "hr208-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "208",
+      "title": "To designate the facility of the United States Postal Service located at 500 West Main Street, Suite 102 in Tupelo, Mississippi, as the \"Colonel Carlyle 'Smitty' Harris Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Kelly, Trent",
+        "party": "R",
+        "state": "MS"
+      },
+      "introduced_date": "2021-01-05",
+      "latest_action": {
+        "date": "2021-08-06",
+        "text": "Became Public Law No: 117-33."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>Designates the facility of the United States Postal Service located at 500 West Main Street, Suite 102 in Tupelo, Mississippi, as the Colonel Carlyle &quot;Smitty&quot; Harris Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ33/PLAW-117publ33.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ33/PLAW-117publ33_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ33/PLAW-117publ33.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/208"
+    },
+    {
+      "id": "hr264-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "264",
+      "title": "To designate the facility of the United States Postal Service located at 1101 Charlotte Street in Georgetown, South Carolina, as the \"Joseph Hayne Rainey Memorial Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Rice, Tom",
+        "party": "R",
+        "state": "SC"
+      },
+      "introduced_date": "2021-01-11",
+      "latest_action": {
+        "date": "2021-08-06",
+        "text": "Became Public Law No: 117-34."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>Designates the facility of the United States Postal Service located at 1101 Charlotte Street in Georgetown, South Carolina, as the Joseph Hayne Rainey Memorial Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ34/PLAW-117publ34.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ34/PLAW-117publ34_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ34/PLAW-117publ34.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/264"
+    },
+    {
+      "id": "hr772-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "772",
+      "title": "To designate the facility of the United States Postal Service located at 229 Minnetonka Avenue South in Wayzata, Minnesota, as the Jim Ramstad Post Office.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Phillips, Dean",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2021-02-03",
+      "latest_action": {
+        "date": "2021-08-06",
+        "text": "Became Public Law No: 117-35."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>Designates the facility of the United States Postal Service located at 229 Minnetonka Avenue South in Wayzata, Minnesota, as the Jim Ramstad Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ35/PLAW-117publ35.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ35/PLAW-117publ35_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ35/PLAW-117publ35.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/772"
     },
     {
       "id": "sres317-117",
@@ -1417,6 +3265,30 @@
       "text_url_xml": "https://www.congress.gov/117/bills/sres130/BILLS-117sres130ats.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/sres130/BILLS-117sres130ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/130"
+    },
+    {
+      "id": "sres70-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "70",
+      "title": "An original resolution authorizing expenditures by committees of the Senate for the periods March 1, 2021 through September 30, 2021, October 1, 2021 through September 30, 2022, and October 1, 2022 through February 28, 2023.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Klobuchar, Amy",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2021-02-23",
+      "latest_action": {
+        "date": "2021-02-24",
+        "text": "Resolution agreed to in Senate without amendment by Unanimous Consent. (consideration: CR S868; text: 2/23/2021 CR S825-830)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution authorizes certain Senate committees to make specified expenditures and employ personnel for the 117th Congress, and it establishes a special reserve to be available to the committees on an as-needed basis to meet unpaid obligations.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres70/BILLS-117sres70ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres70/BILLS-117sres70ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres70/BILLS-117sres70ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/70"
     }
   ]
 }
