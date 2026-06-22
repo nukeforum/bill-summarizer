@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T14:24:35Z",
+  "generated_at": "2026-06-22T17:07:06Z",
   "congress": 117,
   "bills": [
     {
@@ -25,6 +25,30 @@
       "text_url_xml": "https://www.congress.gov/117/plaws/publ352/PLAW-117publ352_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/117/plaws/publ352/PLAW-117publ352.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/4411"
+    },
+    {
+      "id": "s5328-117",
+      "congress": 117,
+      "type": "s",
+      "number": "5328",
+      "title": "A bill to amend the Farm Security and Rural Investment Act of 2002 to extend terminal lakes assistance.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cortez Masto, Catherine",
+        "party": "D",
+        "state": "NV"
+      },
+      "introduced_date": "2022-12-20",
+      "latest_action": {
+        "date": "2023-01-05",
+        "text": "Became Public Law No: 117-361."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill extends through October 1, 2025, authority to provide terminal lakes assistance.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ361/PLAW-117publ361.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ361/PLAW-117publ361_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ361/PLAW-117publ361.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/5328"
     },
     {
       "id": "s5329-117",
@@ -867,6 +891,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/5229"
     },
     {
+      "id": "sconres51-117",
+      "congress": 117,
+      "type": "sconres",
+      "number": "51",
+      "title": "A concurrent resolution providing for a correction in the enrollment of H.R. 2617.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Leahy, Patrick J.",
+        "party": "D",
+        "state": "VT"
+      },
+      "introduced_date": "2022-12-22",
+      "latest_action": {
+        "date": "2022-12-23",
+        "text": "Pursuant to the provisions of H. Res. 1531, S. Con. Res. 51 is considered passed House. (text: CR H10074-10075)"
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p>This concurrent resolution amends the official title of, and makes other changes to, H.R. 2617 (Consolidated Appropriations Act, 2023).</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sconres51/BILLS-117sconres51es.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sconres51/BILLS-117sconres51es.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sconres51/BILLS-117sconres51es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-concurrent-resolution/51"
+    },
+    {
       "id": "s5355-117",
       "congress": 117,
       "type": "s",
@@ -889,6 +937,30 @@
       "text_url_xml": "https://www.congress.gov/117/bills/s5355/BILLS-117s5355fps.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/s5355/BILLS-117s5355fps.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/5355"
+    },
+    {
+      "id": "hres1434-117",
+      "congress": 117,
+      "type": "hres",
+      "number": "1434",
+      "title": "Reaffirming the preemptive authority of the Federal Food, Drug, and Cosmetic Act (21 U.S.C. 301 et seq.) and the Public Health Service Act (42 U.S.C. 201 et seq.) (including regulations thereunder) with respect to State laws that inhibit access to or use of any reproductive health product.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Jones, Mondaire",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2022-10-14",
+      "latest_action": {
+        "date": "2022-12-21",
+        "text": "Pursuant to the provisions of H. Res. 1529, H. Res. 1434 is considered passed House."
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p>This resolution affirms that there is well-established authority for the Food and Drug Administration to approve, license, and otherwise regulate reproductive health products under the Federal Food, Drug, and Cosmetic Act and the Public Health Service Act.</p> <p>The resolution also affirms that (1) such federal laws preempt (i.e., supersede conflicting state or local laws) any state or local laws that prohibit or limit access to or use of any reproductive health product, and (2) the Department of Justice has authority to enforce the preemptive effect of such federal laws by suing any state or political subdivision of a state that prohibits or limits access to or use of any reproductive health product.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/hres1434/BILLS-117hres1434eh.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/hres1434/BILLS-117hres1434eh.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/hres1434/BILLS-117hres1434eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-resolution/1434"
     },
     {
       "id": "hr6722-117",
@@ -987,6 +1059,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/7925"
     },
     {
+      "id": "s3499-117",
+      "congress": 117,
+      "type": "s",
+      "number": "3499",
+      "title": "A bill to amend the Post-Katrina Emergency Management Reform Act of 2006 to repeal certain obsolete requirements, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Peters, Gary C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2022-01-13",
+      "latest_action": {
+        "date": "2022-12-20",
+        "text": "Became Public Law No: 117-253."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act repeals a provision of the Post-Katrina Emergency Management Reform Act of 2006 that requires the Department of Homeland Security to promulgate regulations to minimize the excessive use by contractors of subcontractors or tiers of subcontractors to perform the principal work of any contract for facilitating response to or recovery from a natural or man-made disaster.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ253/PLAW-117publ253.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ253/PLAW-117publ253_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ253/PLAW-117publ253.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/3499"
+    },
+    {
       "id": "s3825-117",
       "congress": 117,
       "type": "s",
@@ -1009,6 +1105,30 @@
       "text_url_xml": "https://www.congress.gov/117/plaws/publ239/PLAW-117publ239_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/117/plaws/publ239/PLAW-117publ239.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/3825"
+    },
+    {
+      "id": "s4017-117",
+      "congress": 117,
+      "type": "s",
+      "number": "4017",
+      "title": "A bill to designate the United States courthouse located at 111 South Highland Avenue in Jackson, Tennessee, as the \"James D. Todd United States Courthouse\", and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blackburn, Marsha",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2022-04-06",
+      "latest_action": {
+        "date": "2022-12-20",
+        "text": "Became Public Law No: 117-240."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the U.S. courthouse located at 111 South Highland Avenue in Jackson, Tennessee, as the James D. Todd United States Courthouse.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ240/PLAW-117publ240.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ240/PLAW-117publ240_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ240/PLAW-117publ240.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/4017"
     },
     {
       "id": "hr228-117",
@@ -1179,6 +1299,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/2159"
     },
     {
+      "id": "hjres100-117",
+      "congress": 117,
+      "type": "hjres",
+      "number": "100",
+      "title": "To provide for a resolution with respect to the unresolved disputes between certain railroads represented by the National Carriers' Conference Committee of the National Railway Labor Conference and certain of their employees.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Payne, Donald M., Jr.",
+        "party": "D",
+        "state": "NJ"
+      },
+      "introduced_date": "2022-11-29",
+      "latest_action": {
+        "date": "2022-12-02",
+        "text": "Became Public Law No: 117-216."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This joint resolution requires the parties to the disputes between certain railroads and labor organizations to accept the most recent tentative agreements, side letters, and local carrier agreements entered into by the parties that have not been ratified before the date of enactment of this joint resolution.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ216/PLAW-117publ216.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ216/PLAW-117publ216_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ216/PLAW-117publ216.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-joint-resolution/100"
+    },
+    {
       "id": "s3826-117",
       "congress": 117,
       "type": "s",
@@ -1251,6 +1395,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/786"
     },
     {
+      "id": "hres1495-117",
+      "congress": 117,
+      "type": "hres",
+      "number": "1495",
+      "title": "Designating the caucus room in the Cannon House Office Building as the \"Speaker Nancy Pelosi Caucus Room\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Lofgren, Zoe",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2022-11-29",
+      "latest_action": {
+        "date": "2022-11-30",
+        "text": "Pursuant to the provisions of H. Res. 1499, H. Res. 1495 is considered passed House. (consideration: CR H8660; text: CR H8660)"
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p>This resolution designates the caucus room in the Cannon House Office Building (room 390) as the Speaker Nancy Pelosi Caucus Room. </p>",
+      "text_url_html": "https://www.congress.gov/117/bills/hres1495/BILLS-117hres1495eh.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/hres1495/BILLS-117hres1495eh.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/hres1495/BILLS-117hres1495eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-resolution/1495"
+    },
+    {
       "id": "sres801-117",
       "congress": 117,
       "type": "sres",
@@ -1273,6 +1441,30 @@
       "text_url_xml": "https://www.congress.gov/117/bills/sres801/BILLS-117sres801ats.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/sres801/BILLS-117sres801ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/801"
+    },
+    {
+      "id": "hres1463-117",
+      "congress": 117,
+      "type": "hres",
+      "number": "1463",
+      "title": "Supporting the goals and ideals of \"move over\" laws.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McGovern, James P.",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2022-11-14",
+      "latest_action": {
+        "date": "2022-11-15",
+        "text": "Pursuant to the provisions of H. Res. 1464, H. Res. 1463 is considered passed House. (consideration: CR H8504; text: CR H8504-8505)"
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p>This resolution expresses support for the goals and ideas of move over laws. It also urges relevant federal and state agencies, as well as nongovernmental organizations involved in traffic incident management response to spread awareness and promote the existence of, and adherence to, state move over laws. <i>Move over laws</i> generally require motorists to move at least one lane over when an emergency or rescue activity is taking place on the shoulder or side of the roadway, or, if unable to do so safely, to slow down and pass the scene with caution.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/hres1463/BILLS-117hres1463eh.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/hres1463/BILLS-117hres1463eh.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/hres1463/BILLS-117hres1463eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-resolution/1463"
     },
     {
       "id": "s2771-117",
@@ -1611,6 +1803,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-concurrent-resolution/43"
     },
     {
+      "id": "sres694-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "694",
+      "title": "A resolution expressing support for the designation of July 2022 as \"National Sarcoma Awareness Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Johnson, Ron",
+        "party": "R",
+        "state": "WI"
+      },
+      "introduced_date": "2022-06-23",
+      "latest_action": {
+        "date": "2022-07-20",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text: CR S3529)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p> This resolution expresses support for the designation of National Sarcoma Awareness Month. Sarcoma is a cancer of connective tissues, such as nerves, muscles, joints, fat, bones, and blood vessels.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres694/BILLS-117sres694ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres694/BILLS-117sres694ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres694/BILLS-117sres694ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/694"
+    },
+    {
       "id": "sres706-117",
       "congress": 117,
       "type": "sres",
@@ -1633,6 +1849,30 @@
       "text_url_xml": "https://www.congress.gov/117/bills/sres706/BILLS-117sres706ats.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/sres706/BILLS-117sres706ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/706"
+    },
+    {
+      "id": "hres1230-117",
+      "congress": 117,
+      "type": "hres",
+      "number": "1230",
+      "title": "Adopting changes to the standing rules, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McGovern, James P.",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2022-07-18",
+      "latest_action": {
+        "date": "2022-07-19",
+        "text": "Pursuant to the provisions of H. Res. 1232, H. Res. 1230 is considered passed House. (consideration: CR H6711-6718; text: CR H6719)"
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p>This bill revises the rules of the House of Representatives. The changes include</p> <ul> <li>permitting the House to meet on any legislative day for the remainder of the 117th Congress, provided that constitutional requirements are met;</li> <li>allowing consideration of resolutions reported from the Committee on Rules on the same day they are presented to the House if proposed text is made available prior to the convening of that day;</li> <li>lifting restrictions on when the Speaker may entertain a motion to suspend the House rules; and</li> <li>modifying the scope of rules for remote voting by proxy.</li></ul>",
+      "text_url_html": "https://www.congress.gov/117/bills/hres1230/BILLS-117hres1230eh.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/hres1230/BILLS-117hres1230eh.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/hres1230/BILLS-117hres1230eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-resolution/1230"
     },
     {
       "id": "sres638-117",
@@ -1707,6 +1947,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/735"
     },
     {
+      "id": "hr767-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "767",
+      "title": "To designate the facility of the United States Postal Service located at 40 Fulton Street in Middletown, New York, as the \"Benjamin A. Gilman Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Maloney, Sean Patrick",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2021-02-03",
+      "latest_action": {
+        "date": "2022-06-24",
+        "text": "Became Public Law No: 117-156."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the facility of the United States Postal Service located at 40 Fulton Street in Middletown, New York, as the Benjamin A. Gilman Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ156/PLAW-117publ156.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ156/PLAW-117publ156_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ156/PLAW-117publ156.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/767"
+    },
+    {
       "id": "hr1170-117",
       "congress": 117,
       "type": "hr",
@@ -1753,6 +2017,30 @@
       "text_url_xml": "https://www.congress.gov/117/plaws/publ153/PLAW-117publ153_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/117/plaws/publ153/PLAW-117publ153.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/2324"
+    },
+    {
+      "id": "sres676-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "676",
+      "title": "A resolution expressing support for the designation of June 23, 2022, as \"National Pell Grant Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Murray, Patty",
+        "party": "D",
+        "state": "WA"
+      },
+      "introduced_date": "2022-06-15",
+      "latest_action": {
+        "date": "2022-06-23",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Voice Vote. (text: 06/15/2022 CR S2972)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution celebrates the 50th anniversary of the Federal Pell Grant program and expresses support for the designation of June 23 as National Pell Grant Day.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres676/BILLS-117sres676ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres676/BILLS-117sres676ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres676/BILLS-117sres676ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/676"
     },
     {
       "id": "hr1298-117",
@@ -1873,6 +2161,30 @@
       "text_url_xml": "https://www.congress.gov/117/bills/sconres41/BILLS-117sconres41pcs.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/sconres41/BILLS-117sconres41pcs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-concurrent-resolution/41"
+    },
+    {
+      "id": "hres1152-117",
+      "congress": 117,
+      "type": "hres",
+      "number": "1152",
+      "title": "Condemning the atrocity that occurred in Buffalo, New York, on May 14, 2022, in which 10 Americans were killed and 3 were injured, and in which 11 of the 13 victims were Black Americans, condemning the Great Replacement Theory as a White supremacist conspiracy theory, and reaffirming the House of Representatives commitment to combating White supremacy, hatred, and racial injustice.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Bowman, Jamaal",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2022-06-07",
+      "latest_action": {
+        "date": "2022-06-08",
+        "text": "Pursuant to the provisions of H. Res. 1153, H. Res. 1152 is considered passed House. (consideration: CR H5363; text: CR H5363)"
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p>This resolution condemns in the strongest terms the great replacement theory, which it describes as a white supremacist conspiracy theory that has been used to falsely justify racially motivated, violent acts of terrorism domestically and internationally.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/hres1152/BILLS-117hres1152eh.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/hres1152/BILLS-117hres1152eh.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/hres1152/BILLS-117hres1152eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-resolution/1152"
     },
     {
       "id": "s3527-117",
@@ -2019,6 +2331,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/134"
     },
     {
+      "id": "hr7691-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "7691",
+      "title": "Additional Ukraine Supplemental Appropriations Act, 2022",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. DeLauro, Rosa L.",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2022-05-10",
+      "latest_action": {
+        "date": "2022-05-21",
+        "text": "Became Public Law No: 117-128."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><strong>Additional Ukraine Supplemental Appropriations Act, 2022</strong></p> <p>This act provides $40.1 billion in FY2022 emergency supplemental appropriations for activities to respond to Russia's invasion of Ukraine. </p> <p>The act provides appropriations to several federal departments and agencies, including </p> <ul> <li>the Department of Justice,</li> <li>the Department of Defense,</li> <li>the Nuclear Regulatory Commission,</li> <li>the Department of Health and Human Services, </li> <li>the Department of State,</li> <li>the U.S. Agency for International Development,</li> <li>the Department of Agriculture, and </li> <li>the Department of the Treasury.</li> </ul> <p>Among other things, the act provides appropriations for defense equipment, migration and refugee assistance, regulatory and technical support regarding nuclear power issues, emergency food assistance, economic assistance, and seizures of property related to the invasion. </p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ128/PLAW-117publ128.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ128/PLAW-117publ128_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ128/PLAW-117publ128.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/7691"
+    },
+    {
       "id": "sres612-117",
       "congress": 117,
       "type": "sres",
@@ -2139,6 +2475,78 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/473"
     },
     {
+      "id": "s1226-117",
+      "congress": 117,
+      "type": "s",
+      "number": "1226",
+      "title": "A bill to designate the United States courthouse located at 1501 North 6th Street in Harrisburg, Pennsylvania, as the \"Sylvia H. Rambo United States Courthouse\", and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Casey, Robert P., Jr.",
+        "party": "D",
+        "state": "PA"
+      },
+      "introduced_date": "2021-04-20",
+      "latest_action": {
+        "date": "2022-05-10",
+        "text": "Became Public Law No: 117-119."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the U.S. courthouse at 1501 North 6th Street in Harrisburg, Pennsylvania, as the Sylvia H. Rambo United States Courthouse.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ119/PLAW-117publ119.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ119/PLAW-117publ119_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ119/PLAW-117publ119.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/1226"
+    },
+    {
+      "id": "s2126-117",
+      "congress": 117,
+      "type": "s",
+      "number": "2126",
+      "title": "A bill to designate the Federal Office Building located at 308 W. 21st Street in Cheyenne, Wyoming, as the \"Louisa Swain Federal Office Building\", and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lummis, Cynthia M.",
+        "party": "R",
+        "state": "WY"
+      },
+      "introduced_date": "2021-06-17",
+      "latest_action": {
+        "date": "2022-05-10",
+        "text": "Became Public Law No: 117-120."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the federal building located at 308 West 21st Street in Cheyenne, Wyoming, as the Louisa Swain Federal Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ120/PLAW-117publ120.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ120/PLAW-117publ120_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ120/PLAW-117publ120.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/2126"
+    },
+    {
+      "id": "hres1035-117",
+      "congress": 117,
+      "type": "hres",
+      "number": "1035",
+      "title": "Adjusting the amount provided for the expenses of certain committees of the House of Representatives in the One Hundred Seventeenth Congress.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Lofgren, Zoe",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2022-04-06",
+      "latest_action": {
+        "date": "2022-04-28",
+        "text": "Pursuant to the provisions of H. Res. 1065, H. Res. 1035 is considered passed House. (consideration: CR H4594; text: CR H4594)"
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p>This resolution adjusts limitations on expenses for the 1st and 2nd sessions of the 117th Congress (including staff salaries) for the following House Committees: (1) Agriculture; (2) Armed Services; (3) the Budget; (4) Select Committee on the Climate Crisis; (5) Education and Labor; (6) Energy and Commerce; (7) Ethics; (8) Financial Services; (9) Foreign Affairs; (10) Homeland Security; (11) House Administration; (12) Permanent Select Committee on Intelligence; (13) Judiciary; (14) Select Committee on the Modernization of Congress; (15) Natural Resources; (16) Oversight and Reform; (17) Rules; (18) Science, Space, and Technology; (19) Small Business; (20) Transportation and Infrastructure; (21) Veterans' Affairs; and (22) Ways and Means.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/hres1035/BILLS-117hres1035eh.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/hres1035/BILLS-117hres1035eh.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/hres1035/BILLS-117hres1035eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-resolution/1035"
+    },
+    {
       "id": "sres503-117",
       "congress": 117,
       "type": "sres",
@@ -2209,6 +2617,30 @@
       "text_url_xml": "https://www.congress.gov/117/bills/sres547/BILLS-117sres547ats.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/sres547/BILLS-117sres547ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/547"
+    },
+    {
+      "id": "sres550-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "550",
+      "title": "A resolution recognizing the value of the Older Americans Act Nutrition Program in addressing hunger, malnutrition, food insecurity, and social or geographic isolation and improving the health and quality of life for millions of older individuals in the United States each year.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Casey, Robert P., Jr.",
+        "party": "D",
+        "state": "PA"
+      },
+      "introduced_date": "2022-03-17",
+      "latest_action": {
+        "date": "2022-03-22",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: 03/17/2022 CR S1255)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution recognizes the important role of local nutrition programs supported through the Older Americans Act of 1965 in addressing senior hunger, malnutrition, and isolation.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres550/BILLS-117sres550ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres550/BILLS-117sres550ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres550/BILLS-117sres550ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/550"
     },
     {
       "id": "hr3665-117",
@@ -2353,6 +2785,30 @@
       "text_url_xml": "https://www.congress.gov/117/bills/sjres35/BILLS-117sjres35is.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/sjres35/BILLS-117sjres35is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-joint-resolution/35"
+    },
+    {
+      "id": "hr7007-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "7007",
+      "title": "COVID Supplemental Appropriations Act, 2022",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. DeLauro, Rosa L.",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2022-03-09",
+      "latest_action": {
+        "date": "2022-03-09",
+        "text": "Rule H. Res. 973 passed House."
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p><b>COVID Supplemental Appropriations Act, 2022</b></p> <p>This bill provides FY2022 supplemental appropriations to several federal departments and agencies for programs and activities to respond to COVID-19.</p> <p>Specifically, the bill provides appropriations to </p> <ul> <li>the Department of Health and Human Services,</li> <li>the Department of State,</li> <li>the U.S. Agency for International Development, and </li> <li>the President.</li> </ul> <p>The bill also rescinds specified unobligated funds from several accounts. </p>",
+      "text_url_html": "https://www.congress.gov/117/bills/hr7007/BILLS-117hr7007ih.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/hr7007/BILLS-117hr7007ih.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/hr7007/BILLS-117hr7007ih.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/7007"
     },
     {
       "id": "sres512-117",
@@ -2523,6 +2979,78 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/488"
     },
     {
+      "id": "hr6256-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "6256",
+      "title": "To ensure that goods made with forced labor in the Xinjiang Uyghur Autonomous Region of the People's Republic of China do not enter the United States market, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McGovern, James P.",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2021-12-14",
+      "latest_action": {
+        "date": "2021-12-23",
+        "text": "Became Public Law No: 117-78."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill imposes importation limits on goods produced using forced labor in China, especially the Xinjiang Uyghur Autonomous Region, and imposes sanctions related to such forced labor.</p> <p>The Forced Labor Enforcement Task Force shall report to Congress a strategy for preventing the importation of goods produced in China using forced labor. The strategy must contain certain information, including a list of entities (1) producing goods in Xinjiang using forced labor; or (2) working with the government in Xinjiang to move forced labor or Uyghurs, Kazakhs, Kyrgyz, or members of other persecuted groups out of Xinjiang.</p> <p>The U.S. Customs and Border Protection shall generally presume that goods produced by these entities and certain other entities, including those sourcing material from Xinjiang or involved with Chinese government forced labor programs, are barred from importation into the United States. An importer may rebut this presumption by establishing, with clear and convincing evidence, that the good in question was not produced wholly or in part using forced labor.</p> <p>The bill also expands existing asset- and visa-blocking sanctions related to Xinjiang to cover foreign individuals and entities responsible for serious human rights abuses in connection with forced labor. </p> <p>The Department of State shall report to Congress a strategy to enhance international awareness of forced labor in Xinjiang and to address such forced labor.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ78/PLAW-117publ78.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ78/PLAW-117publ78_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ78/PLAW-117publ78.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/6256"
+    },
+    {
+      "id": "hr390-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "390",
+      "title": "To redesignate the Federal building located at 167 North Main Street in Memphis, Tennessee as the \"Odell Horton Federal Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Cohen, Steve",
+        "party": "D",
+        "state": "TN"
+      },
+      "introduced_date": "2021-01-21",
+      "latest_action": {
+        "date": "2021-12-21",
+        "text": "Became Public Law No: 117-74."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the federal building at 167 North Main Street in Memphis, Tennessee (commonly known as the Clifford Davis and Odell Horton Federal Building), as the Odell Horton Federal Building.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ74/PLAW-117publ74.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ74/PLAW-117publ74_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ74/PLAW-117publ74.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/390"
+    },
+    {
+      "id": "hr4660-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "4660",
+      "title": "To designate the Federal Building and United States Courthouse located at 1125 Chapline Street in Wheeling, West Virginia, as the \"Frederick P. Stamp, Jr. Federal Building and United States Courthouse\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McKinley, David B.",
+        "party": "R",
+        "state": "WV"
+      },
+      "introduced_date": "2021-07-22",
+      "latest_action": {
+        "date": "2021-12-21",
+        "text": "Became Public Law No: 117-75."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the federal building and U.S. courthouse located at 1125 Chapline Street in Wheeling, West Virginia, as the Frederick P. Stamp, Jr. Federal Building and United States Courthouse.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ75/PLAW-117publ75.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ75/PLAW-117publ75_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ75/PLAW-117publ75.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/4660"
+    },
+    {
       "id": "sres447-117",
       "congress": 117,
       "type": "sres",
@@ -2545,6 +3073,30 @@
       "text_url_xml": "https://www.congress.gov/117/bills/sres447/BILLS-117sres447ats.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/sres447/BILLS-117sres447ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/447"
+    },
+    {
+      "id": "sjres33-117",
+      "congress": 117,
+      "type": "sjres",
+      "number": "33",
+      "title": "A joint resolution relating to increasing the debt limit.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Schumer, Charles E.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2021-12-14",
+      "latest_action": {
+        "date": "2021-12-16",
+        "text": "Became Public Law No: 117-73."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This joint resolution increases the public debt limit by $2.5 trillion. </p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ73/PLAW-117publ73.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ73/PLAW-117publ73_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ73/PLAW-117publ73.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-joint-resolution/33"
     },
     {
       "id": "sres380-117",
@@ -2593,6 +3145,30 @@
       "text_url_xml": "https://www.congress.gov/117/bills/sjres31/BILLS-117sjres31is.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/sjres31/BILLS-117sjres31is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-joint-resolution/31"
+    },
+    {
+      "id": "sres437-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "437",
+      "title": "A resolution expressing support for the designation of November 8, 2021, as \"National First-Generation College Celebration Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Warnock, Raphael G.",
+        "party": "D",
+        "state": "GA"
+      },
+      "introduced_date": "2021-11-03",
+      "latest_action": {
+        "date": "2021-11-30",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR 11/03/2021 S7723)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution expresses support for the designation of November 8, 2021, as National First-Generation College Celebration Day.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres437/BILLS-117sres437ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres437/BILLS-117sres437ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres437/BILLS-117sres437ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/437"
     },
     {
       "id": "hr1510-117",
@@ -2763,6 +3339,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/315"
     },
     {
+      "id": "sres319-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "319",
+      "title": "A resolution expressing support for the designation of July 2021 as \"National Sarcoma Awareness Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Johnson, Ron",
+        "party": "R",
+        "state": "WI"
+      },
+      "introduced_date": "2021-07-26",
+      "latest_action": {
+        "date": "2021-08-09",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text: CR S6106)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution expresses support for the designation of National Sarcoma Awareness Month. Sarcoma is a cancer of connective tissues, such as nerves, muscles, joints, fat, bones, and blood vessels.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres319/BILLS-117sres319ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres319/BILLS-117sres319ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres319/BILLS-117sres319ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/319"
+    },
+    {
       "id": "hr208-117",
       "congress": 117,
       "type": "hr",
@@ -2833,6 +3433,30 @@
       "text_url_xml": "https://www.congress.gov/117/plaws/publ35/PLAW-117publ35_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/117/plaws/publ35/PLAW-117publ35.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/772"
+    },
+    {
+      "id": "hr4505-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "4505",
+      "title": "Commerce, Justice, Science, and Related Agencies Appropriations Act, 2022",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Cartwright, Matt",
+        "party": "D",
+        "state": "PA"
+      },
+      "introduced_date": "2021-07-19",
+      "latest_action": {
+        "date": "2021-07-28",
+        "text": "Rule H. Res. 567 passed House."
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p><b>Commerce, Justice, Science, and Related Agencies Appropriations Act, 2022</b></p> <p>This bill provides FY2022 appropriations to the Department of Commerce, the Department of Justice (DOJ), the science agencies, and several related agencies. </p> <p>The bill provides appropriations to the Department of Commerce for</p> <ul> <li> the International Trade Administration, </li> <li>the Bureau of Industry and Security, </li> <li>the Economic Development Administration,</li> <li> the Minority Business Development Agency, </li> <li>Economic and Statistical Analysis, </li> <li> the Bureau of the Census, </li> <li> the National Telecommunications and Information Administration, </li> <li> the U.S. Patent and Trademark Office, </li> <li> the National Institute of Standards and Technology, </li> <li> the National Oceanic and Atmospheric Administration, and </li> <li> Departmental Management. </li> </ul> <p>The bill provides appropriations to DOJ for </p> <ul> <li> General Administration; </li> <li>the Executive Office for Immigration Review;</li> <li>the Office of Inspector General; <br> </li> <li> the U.S. Parole Commission; </li> <li> Legal Activities; </li> <li> the U.S. Marshals Service; </li> <li> the National Security Division; </li> <li> Interagency Law Enforcement; </li> <li>the Federal Bureau of Investigation; </li> <li> the Drug Enforcement Administration; </li> <li> the Bureau of Alcohol, Tobacco, Firearms and Explosives; and</li> <li>the Federal Prison System.</li> </ul> <p>The bill also provides appropriations to DOJ for state and local justice activities, including </p> <ul> <li>the Office on Violence Against Women,</li> <li> the Office of Justice Programs, and</li> <li>Community Oriented Policing Services (COPS).</li> </ul> <p>The bill provides appropriations for science agencies, including </p> <ul> <li> the Office of Science and Technology Policy, </li> <li>the National Space Council, </li> <li> National Aeronautics and Space Administration (NASA), and </li> <li> the National Science Foundation. </li> </ul> <p>The bill provides appropriations to related agencies, including</p> <ul> <li> the Commission on Civil Rights, </li> <li> the Equal Employment Opportunity Commission, </li> <li> the U.S. International Trade Commission, </li> <li> the Legal Services Corporation, </li> <li> the Marine Mammal Commission, </li> <li> the Office of the U.S. Trade Representative, and </li> <li> the State Justice Institute. </li> </ul> <p> The bill also sets forth requirements and restrictions for using funds provided by this and other appropriations acts. </p>",
+      "text_url_html": "https://www.congress.gov/117/bills/hr4505/BILLS-117hr4505rh.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/hr4505/BILLS-117hr4505rh.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/hr4505/BILLS-117hr4505rh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/4505"
     },
     {
       "id": "sres317-117",
@@ -2907,6 +3531,54 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/291"
     },
     {
+      "id": "s409-117",
+      "congress": 117,
+      "type": "s",
+      "number": "409",
+      "title": "A bill to provide for the availability of amounts for customer education initiatives and non-awards expenses of the Commodity Futures Trading Commission Whistleblower Program, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Grassley, Chuck",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2021-02-24",
+      "latest_action": {
+        "date": "2021-07-06",
+        "text": "Became Public Law No: 117-25."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill expands the permissible uses of the Commodity Futures Trading Commission Customer Protection Fund to include administrative expenses. </p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ25/PLAW-117publ25.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ25/PLAW-117publ25_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ25/PLAW-117publ25.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/409"
+    },
+    {
+      "id": "sjres14-117",
+      "congress": 117,
+      "type": "sjres",
+      "number": "14",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"Oil and Natural Gas Sector: Emission Standards for New, Reconstructed, and Modified Sources Review\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Heinrich, Martin",
+        "party": "D",
+        "state": "NM"
+      },
+      "introduced_date": "2021-03-25",
+      "latest_action": {
+        "date": "2021-06-30",
+        "text": "Became Public Law No: 117-23."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This joint resolution nullifies the<i> Oil and Natural Gas Sector: Emission Standards for New, Reconstructed, and Modified Sources Review</i> rule published by the Environmental Protection Agency on September 14, 2020. The rule finalized amendments to new source performance standards under the Clean Air Act for the oil and natural gas sector, such as an amendment that removed limitations on methane emissions from such sector.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ23/PLAW-117publ23.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ23/PLAW-117publ23_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ23/PLAW-117publ23.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-joint-resolution/14"
+    },
+    {
       "id": "sres268-117",
       "congress": 117,
       "type": "sres",
@@ -2931,6 +3603,54 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/268"
     },
     {
+      "id": "hres485-117",
+      "congress": 117,
+      "type": "hres",
+      "number": "485",
+      "title": "Providing amounts for the expenses of the Select Committee on Economic Disparity and Fairness in Growth.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Lofgren, Zoe",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2021-06-22",
+      "latest_action": {
+        "date": "2021-06-23",
+        "text": "Pursuant to the provisions of H. Res. 486, H. Res. 485 is considered passed House. (consideration: CR H3024-3026; text: CR H3026)"
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p>This resolution provides amounts for the expenses of the House Select Committee on Economic Disparity and Fairness in Growth for the 117th Congress.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/hres485/BILLS-117hres485eh.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/hres485/BILLS-117hres485eh.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/hres485/BILLS-117hres485eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-resolution/485"
+    },
+    {
+      "id": "hres467-117",
+      "congress": 117,
+      "type": "hres",
+      "number": "467",
+      "title": "Providing for budget allocations for the Committee on Appropriations, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Yarmuth, John A.",
+        "party": "D",
+        "state": "KY"
+      },
+      "introduced_date": "2021-06-11",
+      "latest_action": {
+        "date": "2021-06-14",
+        "text": "Pursuant to the provisions of H. Res. 473, H. Res. 467 is considered passed House. (consideration: CR H2724-2725; text: CR H2724-2725)"
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p>This resolution establishes certain budget enforcement procedures and allocations for FY2022 appropriations legislation. </p> <p>Specifically, the resolution establishes FY2022 budget allocations for the House Appropriations Committee. In addition, the resolution allows the chair of the House Budget Committee to make specified adjustments to the allocations to accommodate additional spending for</p> <ul> <li>disaster relief,</li> <li>wildfire suppression,</li> <li>Internal Revenue Service tax enforcement,</li> <li>health care fraud and abuse control, and</li> <li>continuing disability reviews and redeterminations.</li> </ul> <p>The resolution also includes provisions that address emergency spending and advance appropriations. </p> <p>The provisions in this resolution expire when a congressional budget resolution for FY2022 is passed by both chambers of Congress. </p>",
+      "text_url_html": "https://www.congress.gov/117/bills/hres467/BILLS-117hres467eh.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/hres467/BILLS-117hres467eh.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/hres467/BILLS-117hres467eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-resolution/467"
+    },
+    {
       "id": "sres229-117",
       "congress": 117,
       "type": "sres",
@@ -2953,6 +3673,30 @@
       "text_url_xml": "https://www.congress.gov/117/bills/sres229/BILLS-117sres229ats.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/sres229/BILLS-117sres229ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/229"
+    },
+    {
+      "id": "sres253-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "253",
+      "title": "A resolution supporting the designation of May 2021 as \"National Cancer Research Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feinstein, Dianne",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2021-05-27",
+      "latest_action": {
+        "date": "2021-06-07",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: 5/27/2021 CR S3905)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution supports the designation of May 2021 as National Cancer Research Month.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres253/BILLS-117sres253ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres253/BILLS-117sres253ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres253/BILLS-117sres253ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/253"
     },
     {
       "id": "sres195-117",
@@ -3147,6 +3891,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/81"
     },
     {
+      "id": "s415-117",
+      "congress": 117,
+      "type": "s",
+      "number": "415",
+      "title": "A bill to amend the Federal Food, Drug, and Cosmetic Act with respect to the scope of new chemical exclusivity.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cassidy, Bill",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2021-02-24",
+      "latest_action": {
+        "date": "2021-04-23",
+        "text": "Became Public Law No: 117-9."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill provides statutory authority for the existing Food and Drug Administration (FDA) practice of defining <i>active ingredient </i>more narrowly as <i>active moiety</i> in certain situations, such as when determining whether a new drug is entitled to a market exclusivity period or providing priority review of drugs for treating rare pediatric diseases. </p> <p>Generally, the FDA defines <i>active moiety</i> as the core molecule or ion in a drug responsible for the relevant physiological or pharmacological action. By contrast, the FDA defines an <i>active ingredient </i>as a component in a drug that is intended to furnish pharmacological activity or other direct effect. The FDA's existing practice of interpreting <i>active ingredient</i> as <i>active moiety</i> in certain situations, as statutorily authorized by this bill, tends to exclude some drugs from market exclusivity.</p> <p>The bill replaces references to <i>active ingredient</i> with <i>active moiety</i> in various statutes authorizing FDA activities.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ9/PLAW-117publ9.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ9/PLAW-117publ9_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ9/PLAW-117publ9.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/415"
+    },
+    {
       "id": "sres143-117",
       "congress": 117,
       "type": "sres",
@@ -3243,6 +4011,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/37"
     },
     {
+      "id": "hr1868-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "1868",
+      "title": "To prevent across-the-board direct spending cuts, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Yarmuth, John A.",
+        "party": "D",
+        "state": "KY"
+      },
+      "introduced_date": "2021-03-12",
+      "latest_action": {
+        "date": "2021-04-14",
+        "text": "Became Public Law No: 117-7."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill makes several budgetary and technical changes to provisions under Medicare and Medicaid.</p> <p> The bill continues to exempt Medicare from sequestration until December 31, 2021. (Sequestration is a process of automatic, usually across-the-board spending reductions under which budgetary resources are permanently cancelled to enforce specific budget policy goals.) </p> <p>The bill also specifically</p> <ul> <li>applies certain modified payment limits to rural health clinics that temporarily enrolled in Medicare during the public health emergency relating to COVID-19 (i.e., coronavirus disease 2019) or that applied to enroll by December 31, 2020; and</li> <li> preserves higher Medicaid disproportionate-share hospital payments for public hospitals in California under forthcoming payment methodology changes.</li> </ul>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ7/PLAW-117publ7.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ7/PLAW-117publ7_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ7/PLAW-117publ7.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/1868"
+    },
+    {
       "id": "sres130-117",
       "congress": 117,
       "type": "sres",
@@ -3267,6 +4059,78 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/130"
     },
     {
+      "id": "hres232-117",
+      "congress": 117,
+      "type": "hres",
+      "number": "232",
+      "title": "Requiring an affirmative vote of a majority of the Members present and voting, a quorum being present, on final passage of House Joint Resolution 17.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Raskin, Jamie",
+        "party": "D",
+        "state": "MD"
+      },
+      "introduced_date": "2021-03-16",
+      "latest_action": {
+        "date": "2021-03-16",
+        "text": "Pursuant to the provisions of H. Res. 233, H. Res. 232 is considered passed House. (consideration: CR H1407; text: CR H1407)"
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p>This resolution requires a majority vote of the Members present and voting, a quorum being present, on final passage of H.J.Res. 17 (eliminating the deadline for the ratification of the Equal Rights Amendment, which prohibits discrimination based on sex).</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/hres232/BILLS-117hres232eh.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/hres232/BILLS-117hres232eh.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/hres232/BILLS-117hres232eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-resolution/232"
+    },
+    {
+      "id": "hres176-117",
+      "congress": 117,
+      "type": "hres",
+      "number": "176",
+      "title": "Directing the Clerk of the House of Representatives to make a correction in the engrossment of H.R. 1319.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Yarmuth, John A.",
+        "party": "D",
+        "state": "KY"
+      },
+      "introduced_date": "2021-03-01",
+      "latest_action": {
+        "date": "2021-03-01",
+        "text": "Pursuant to the provisions of H. Res. 179, H. Res. 176 is considered passed House. (consideration: CR H872; text: CR H872)"
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p>This resolution directs the Clerk of the House of Representatives to make specified corrections in the engrossment of H.R. 1319 (American Rescue Plan Act of 2021). </p>",
+      "text_url_html": "https://www.congress.gov/117/bills/hres176/BILLS-117hres176eh.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/hres176/BILLS-117hres176eh.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/hres176/BILLS-117hres176eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-resolution/176"
+    },
+    {
+      "id": "hres177-117",
+      "congress": 117,
+      "type": "hres",
+      "number": "177",
+      "title": "Authorizing candidates for election to the House of Representatives and Members of the House of Representatives to file statements with the Clerk regarding the intention to participate or not participate in the small donor financing system for such elections under title V of the Federal Election Campaign Act of 1971.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Murphy, Stephanie N.",
+        "party": "D",
+        "state": "FL"
+      },
+      "introduced_date": "2021-03-01",
+      "latest_action": {
+        "date": "2021-03-01",
+        "text": "Pursuant to the provisions of H. Res. 179, H. Res. 177 is considered passed House. (consideration: CR H872; text: CR H872)"
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p>This resolution authorizes a congressional candidate to file a statement with the Clerk of the House regarding the candidate's intent to participate in a proposed small donor financing system in the next congressional election.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/hres177/BILLS-117hres177eh.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/hres177/BILLS-117hres177eh.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/hres177/BILLS-117hres177eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-resolution/177"
+    },
+    {
       "id": "sres70-117",
       "congress": 117,
       "type": "sres",
@@ -3289,6 +4153,30 @@
       "text_url_xml": "https://www.congress.gov/117/bills/sres70/BILLS-117sres70ats.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/sres70/BILLS-117sres70ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/70"
+    },
+    {
+      "id": "sconres5-117",
+      "congress": 117,
+      "type": "sconres",
+      "number": "5",
+      "title": "A concurrent resolution setting forth the congressional budget for the United States Government for fiscal year 2021 and setting forth the appropriate budgetary levels for fiscal years 2022 through 2030.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Sanders, Bernard",
+        "party": "I",
+        "state": "VT"
+      },
+      "introduced_date": "2021-02-02",
+      "latest_action": {
+        "date": "2021-02-05",
+        "text": "Pursuant to the provisions of H. Res. 101, S. Con. Res. 5 is considered passed House. (consideration: CR H447-455)"
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p>This concurrent resolution establishes the congressional budget for the federal government for FY2021, sets forth budgetary levels for FY2022-FY2030, and provides reconciliation instructions for legislation that increases the deficit.</p> <p>The resolution recommends levels and amounts for FY2021-FY2030 for </p> <ul> <li> federal revenues, </li> <li> new budget authority, </li> <li> budget outlays, </li> <li> deficits, </li> <li> public debt, </li> <li> debt held by the public, and </li> <li> the major functional categories of spending. </li> </ul> <p>It also recommends levels and amounts for Social Security and Postal Service discretionary administrative expenses for the purpose of budget enforcement in the Senate. </p> <p>The resolution includes reconciliation instructions that direct several House and Senate committees to submit changes in laws within their jurisdictions that will increase the deficit over FY2021-FY2030 by no more than an amount specified for each committee. The committees must submit the legislation to their respective budget committees by February 16, 2021. </p> <p>(Under current law, reconciliation bills are considered by Congress using expedited legislative procedures that prevent a filibuster and restrict amendments in the Senate.)</p> <p>The resolution establishes reserve funds that allow </p> <ul> <li> the chairs of the House and Senate Budget Committees to revise committee allocations, aggregates, and other budgetary levels to accommodate reconciliation legislation that complies with the instructions in this resolution;</li> <li>the chair of the House Budget Committee to make similar adjustments for deficit-neutral legislation; and</li> <li>the chair of the Senate Budget Committee to make similar adjustments for deficit-neutral legislation that meets certain requirements such as addressing specified policy issues. </li> </ul> <p>The resolution also exempts reconciliation legislation that complies with this resolution from various budget points of order, including the congressional pay-as-you-go (PAYGO) rules.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sconres5/BILLS-117sconres5es.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sconres5/BILLS-117sconres5es.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sconres5/BILLS-117sconres5es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-concurrent-resolution/5"
     }
   ]
 }
