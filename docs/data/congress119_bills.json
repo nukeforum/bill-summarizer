@@ -1,7 +1,55 @@
 {
-  "generated_at": "2026-06-23T09:38:31Z",
+  "generated_at": "2026-06-24T09:29:13Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "sres761-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "761",
+      "title": "A resolution designating June 23, 2026, as \"Social Media Harms Victim Remembrance Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Klobuchar, Amy",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2026-06-09",
+      "latest_action": {
+        "date": "2026-06-22",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S3024)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres761/BILLS-119sres761is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres761/BILLS-119sres761is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres761/BILLS-119sres761is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/761"
+    },
+    {
+      "id": "sres768-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "768",
+      "title": "A resolution commemorating the anniversary of the antisemitic attack on participants in the Run for Their Lives walk in Boulder, Colorado on June 1, 2025.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hickenlooper, John W.",
+        "party": "D",
+        "state": "CO"
+      },
+      "introduced_date": "2026-06-11",
+      "latest_action": {
+        "date": "2026-06-22",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S3024)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres768/BILLS-119sres768is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres768/BILLS-119sres768is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres768/BILLS-119sres768is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/768"
+    },
     {
       "id": "s2585-119",
       "congress": 119,
@@ -476,7 +524,7 @@
         "text": "Became Public Law No: 119-97."
       },
       "outcome": "enacted",
-      "summary_crs": "<p><strong>Fiscal Year 2025 Veterans Affairs Major Medical Facility Authorization Act</strong></p><p>This bill authorizes the Department of Veterans Affairs to carry out a major medical facility project in St. Louis, Missouri, during FY2026.</p><p>The bill specifies the maximum amount that may be spent on the project and details that the project consists of the construction of a new bed tower, clinical building expansion, consolidated administrative building and warehouse, utility plant, and parking garages.</p>",
+      "summary_crs": "<p><strong>Fiscal Year 2025 Veterans Affairs Major Medical Facility Authorization Act</strong></p><p>This act authorizes the Department of Veterans Affairs to carry out a major medical facility project in St. Louis, Missouri, during FY2026.</p><p>The act specifies the maximum amount that may be spent on the project and details that the project consists of the construction of a new bed tower, clinical building expansion, consolidated administrative building and warehouse, utility plant, and parking garages.</p>",
       "text_url_html": "https://www.congress.gov/119/plaws/publ97/PLAW-119publ97.htm",
       "text_url_xml": "https://www.congress.gov/119/plaws/publ97/PLAW-119publ97_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ97/PLAW-119publ97.pdf",
