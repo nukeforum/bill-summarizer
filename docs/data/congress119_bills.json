@@ -1,7 +1,31 @@
 {
-  "generated_at": "2026-06-24T09:29:13Z",
+  "generated_at": "2026-06-25T09:21:20Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "hconres86-119",
+      "congress": 119,
+      "type": "hconres",
+      "number": "86",
+      "title": "Directing the President, pursuant to section 5(c) of the War Powers Resolution, to remove United States Armed Forces from hostilities with Iran.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Meeks, Gregory W.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2026-04-20",
+      "latest_action": {
+        "date": "2026-06-23",
+        "text": "Resolution agreed to in Senate without amendment by Yea-Nay Vote. 50 - 48. Record Vote Number: 184."
+      },
+      "outcome": "passed_senate",
+      "summary_crs": "<p>This concurrent resolution directs the President to remove U.S. Armed Forces from hostilities against Iran unless explicitly authorized by a declaration of war or a congressional authorization for use of military force against Iran.</p><p>Elements of the U.S. Armed Forces needed to defend the United States, an ally, or a partner from imminent attack are not covered by this requirement provided the President complies with a specified provision of the War Powers Resolution. (The provision generally requires the President to remove U.S. Armed Forces from hostilities no more than 60 days after the President notifies or is required to notify Congress of such involvement, unless Congress authorizes such use. For more information on the War Powers Resolution, see&nbsp;<a href=\"https://www.congress.gov/crs-product/IF13134\">CRS In Focus 13134</a>.)</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hconres86/BILLS-119hconres86rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hconres86/BILLS-119hconres86rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hconres86/BILLS-119hconres86rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-concurrent-resolution/86"
+    },
     {
       "id": "sres761-119",
       "congress": 119,
@@ -21,9 +45,9 @@
       },
       "outcome": "passed_senate",
       "summary_crs": null,
-      "text_url_html": "https://www.congress.gov/119/bills/sres761/BILLS-119sres761is.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/sres761/BILLS-119sres761is.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/sres761/BILLS-119sres761is.pdf",
+      "text_url_html": "https://www.congress.gov/119/bills/sres761/BILLS-119sres761ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres761/BILLS-119sres761ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres761/BILLS-119sres761ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/761"
     },
     {
@@ -45,9 +69,9 @@
       },
       "outcome": "passed_senate",
       "summary_crs": null,
-      "text_url_html": "https://www.congress.gov/119/bills/sres768/BILLS-119sres768is.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/sres768/BILLS-119sres768is.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/sres768/BILLS-119sres768is.pdf",
+      "text_url_html": "https://www.congress.gov/119/bills/sres768/BILLS-119sres768ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres768/BILLS-119sres768ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres768/BILLS-119sres768ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/768"
     },
     {
@@ -356,7 +380,7 @@
         "text": "Became Public Law No: 119-98."
       },
       "outcome": "enacted",
-      "summary_crs": "<p><strong>Secure America Act</strong></p><p>This bill provides funding to the Department of Homeland Security (DHS), U.S. Customs and Border Protection (CBP), and U.S. Immigration and Customs Enforcement (ICE) through FY2029 for immigration enforcement and related activities.</p><p>It is known as a reconciliation bill and includes legislation submitted by certain congressional committees pursuant to provisions in the FY2026 congressional budget resolution (S. Con. Res. 33) that directed the committees to submit legislation to the House or Senate Budget Committee that will increase the deficit. (Reconciliation bills are considered by Congress using expedited legislative procedures that prevent a filibuster and restrict amendments in the Senate.)</p><p>Specifically, the bill provides funding to CBP for&nbsp;</p><ul><li>personnel;</li><li>border security, technology, and screening; and</li><li>immigration enforcement activities.</li></ul><p>The bill provides funding to ICE for</p><ul><li>personnel,</li><li>Homeland Security Investigations,</li><li>immigration enforcement activities,</li><li>transportation,</li><li>information technology,</li><li>facility and fleet maintenance and sustainment,</li><li>287(g) agreements (i.e., agreements that allow state and local law enforcement&nbsp;agencies to perform certain immigration enforcement functions),</li><li>the Office of the Principal Legal Advisor,&nbsp;</li><li>operation and maintenance, and</li><li>certain arrests related to immigration enforcement.</li></ul><p>The bill also provides additional funding to DHS for (1) immigration enforcement, and (2) the participation of state and local agencies in certain homeland security efforts.&nbsp;</p><p>The funding provided by this bill generally remains available through FY2029.</p>",
+      "summary_crs": "<p><strong>Secure America Act</strong></p><p>This act provides $70 billion in&nbsp;funding to the Department of Homeland Security (DHS), U.S. Customs and Border Protection (CBP), and U.S. Immigration and Customs Enforcement (ICE) through FY2029 for immigration enforcement, border security, and related activities.</p><p>It is known as a reconciliation bill and includes legislation submitted by certain congressional committees pursuant to provisions in the FY2026 congressional budget resolution (<a href=\"https://www.congress.gov/bill/119th-congress/senate-concurrent-resolution/33\">S. Con. Res. 33</a>) that directed the committees to submit legislation to the House or Senate Budget Committee that will increase the deficit. (Reconciliation bills are considered by Congress using expedited legislative procedures that prevent a filibuster and restrict amendments in the Senate.)</p><p>TITLE I--COMMITTEE ON HOMELAND SECURITY AND GOVERNMENTAL AFFAIRS</p><p>(Sec. 101) This section provides funding for CBP to hire, pay, train, and equip Border Patrol agents and Border Patrol support personnel to conduct functions other than immigration enforcement and customs functions.</p><p>The funds provided by this section may not be used to recruit, hire, or train personnel for the duties of processing coordinators after October 31, 2028.</p><p>(Sec. 102) This section provides funding to ICE for (1) hiring, paying, training, and equipping Homeland Security Investigations (HIS) agents and support personnel, and (2) other necessary expenses for&nbsp;HSI’s mission support and operations and maintenance.</p><p>It also requires specified funds to be used to hire, pay, and equip&nbsp;additional child exploitation investigators and forensics analysts for&nbsp;certain HSI offices to (1) support the identification and rescue of victims of child sexual exploitation and abuse, and (2) train such personnel and state and local law enforcement regarding identifying victims of child sexual exploitation and abuse.</p><p>The funds provided by this section must be used for functions other than those related to HSI’s immigration enforcement and customs enforcement missions.</p><p>(Sec. 103) This section provides funding to CBP for border security, technology, and screening, including</p><ul><li>procurement and integration of new nonintrusive inspection equipment and associated civil works (e.g., artificial intelligence, machine learning, and other innovative technologies)&nbsp;and other mission support to combat the entry or exit of illicit narcotics at ports of entry and along the southwest, northern, and maritime borders;</li><li>upgrading and procurement of platforms for rapid air and marine response capabilities;</li><li>upgrading and procurement of border surveillance technologies along the southwest, northern, and maritime borders;</li><li>necessary expenses, including the deployment of technology, relating to the biometric entry and exit system under the Intelligence Reform and Terrorism Prevention Act of 2004;</li><li>enhancing border security by combating drug trafficking, including fentanyl and its precursor chemicals, at the southwest, northern, and maritime borders; and</li><li>necessary expenses for CBP's mission support and operations and maintenance for functions other than those related to its immigration enforcement and customs missions.</li></ul><p>None of the funds provided by this section may be used for the procurement or deployment of surveillance towers along the southwest border and the northern border that have not been tested and accepted by CBP to deliver autonomous capabilities.</p><p>Under this section the term <em>autonomous </em>means a system designed to apply artificial intelligence, machine learning, computer vision, or other algorithms to accurately detect, identify, classify, and track items of interest in real time such that the system can make operational adjustments without the active engagement of personnel or continuous human command or control.</p><p>(Sec. 104) This section provides additional funding to DHS for the purposes for which funding is provided in this title.</p><p>TITLE II--COMMITTEE ON THE JUDICIARY</p><p>(Sec. 201) This section provides funding to CBP for hiring, paying, training, and equipping CBP agents and the necessary support staff, and other necessary expenses for mission support and operations and maintenance, in order to carry out immigration enforcement activities.</p><p>(Sec. 202) This section provides funding to ICE for immigration enforcement and related activities, including</p><ul><li>hiring, paying, and training personnel;</li><li>transportation;</li><li>information technology;</li><li>facility and fleet maintenance and sustainment,</li><li>287(g) agreements (i.e., agreements that allow state and local law enforcement agencies to perform certain immigration enforcement functions),</li><li>the Office of the Principal Legal Advisor,</li><li>operation and maintenance, and</li><li>operations by ICE to arrest certain unlawful aliens.</li></ul><p>(Sec. 203) This section provides additional funding to DHS for (1) the purposes for which funding is provided in this title, (2) the assignment of certain&nbsp;DHS employees and state officers to carry out immigration enforcement activities, or (3) the participation of state and local agencies in certain homeland security efforts. &nbsp;</p>",
       "text_url_html": "https://www.congress.gov/119/plaws/publ98/PLAW-119publ98.htm",
       "text_url_xml": "https://www.congress.gov/119/plaws/publ98/PLAW-119publ98_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ98/PLAW-119publ98.pdf",
@@ -668,7 +692,7 @@
         "text": "Became Public Law No: 119-94."
       },
       "outcome": "enacted",
-      "summary_crs": "<p><strong>Medal of Sacrifice Act of 2025</strong></p><p>This bill directs the President to issue a medal of sacrifice for eligible law enforcement officers and first responders who are killed in the line of duty.</p><p>The bill also directs the President to establish a commission on the medal of sacrifice and appoint its members. The bill sets forth responsibilities of the commission, including to advise on the design of the medal and determine how the medal will be presented.</p><p>Under the bill, eligible law enforcement officers and first responders include federal, state, local, tribal, or territorial law enforcement officers or first responders who are not subject to an official act of wrongdoing (e.g., a determination that the officer or first responder acted outside the scope of their duties or in a manner that was not in accordance with official policies or procedures).</p><p>A law enforcement officer or first responder who is subject to an official act of wrongdoing is generally not eligible for the medal of sacrifice. However, in the case of such an officer or first responder, the bill requires the commission to investigate the circumstances surrounding the officer or first responder's cause of death and issue a final determination on their eligibility.</p>",
+      "summary_crs": "<p><strong>Medal of Sacrifice Act of 2025</strong></p><p>This act directs the President to issue a medal of sacrifice for eligible law enforcement officers and first responders who are killed in the line of duty.</p><p>The act also directs the President to establish a commission on the medal of sacrifice and appoint its members. The act sets forth responsibilities of the commission, including to advise on the design of the medal and determine how the medal will be presented.</p><p>Under the act, eligible law enforcement officers and first responders include federal, state, local, tribal, or territorial law enforcement officers or first responders who are not subject to an official act of wrongdoing (e.g., a determination that the officer or first responder acted outside the scope of their duties or in a manner that was not in accordance with official policies or procedures).</p><p>A law enforcement officer or first responder who is subject to an official act of wrongdoing is generally not eligible for the medal of sacrifice. However, in the case of such an officer or first responder, the act requires the commission to investigate the circumstances surrounding the officer or first responder's cause of death and issue a final determination on their eligibility.</p>",
       "text_url_html": "https://www.congress.gov/119/plaws/publ94/PLAW-119publ94.htm",
       "text_url_xml": "https://www.congress.gov/119/plaws/publ94/PLAW-119publ94_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ94/PLAW-119publ94.pdf",
