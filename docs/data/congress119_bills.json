@@ -1,7 +1,79 @@
 {
-  "generated_at": "2026-06-25T09:21:20Z",
+  "generated_at": "2026-06-26T09:26:22Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "sjres185-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "185",
+      "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Islamic Republic of Iran that have not been authorized by Congress.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kaine, Tim",
+        "party": "D",
+        "state": "VA"
+      },
+      "introduced_date": "2026-04-27",
+      "latest_action": {
+        "date": "2026-06-24",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 50. Record Vote Number: 192."
+      },
+      "outcome": "failed",
+      "summary_crs": "<p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending against an attack on the United States or its personnel or facilities in other nations.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sjres185/BILLS-119sjres185pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres185/BILLS-119sjres185pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres185/BILLS-119sjres185pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/185"
+    },
+    {
+      "id": "sjres196-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "196",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Education relating to \"Reimagining and Improving Student Education-Federal Student Loan Program Final Regulations\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Merkley, Jeff",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2026-06-04",
+      "latest_action": {
+        "date": "2026-06-24",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 45 - 52. Record Vote Number: 190."
+      },
+      "outcome": "failed",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres196/BILLS-119sjres196pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres196/BILLS-119sjres196pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres196/BILLS-119sjres196pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/196"
+    },
+    {
+      "id": "sres741-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "741",
+      "title": "A resolution designating May 2026 as \"National Wildfire Preparedness Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hirono, Mazie K.",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2026-05-20",
+      "latest_action": {
+        "date": "2026-06-24",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres741/BILLS-119sres741is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres741/BILLS-119sres741is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres741/BILLS-119sres741is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/741"
+    },
     {
       "id": "hconres86-119",
       "congress": 119,
@@ -44,7 +116,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S3024)"
       },
       "outcome": "passed_senate",
-      "summary_crs": null,
+      "summary_crs": "<p>This resolution designates June 23, 2026, as Social Media Harms Victim Remembrance Day&nbsp;and encourages government, industry, and community stakeholders to take action to prevent social media-related harm.</p>",
       "text_url_html": "https://www.congress.gov/119/bills/sres761/BILLS-119sres761ats.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/sres761/BILLS-119sres761ats.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sres761/BILLS-119sres761ats.pdf",
@@ -380,7 +452,7 @@
         "text": "Became Public Law No: 119-98."
       },
       "outcome": "enacted",
-      "summary_crs": "<p><strong>Secure America Act</strong></p><p>This act provides $70 billion in&nbsp;funding to the Department of Homeland Security (DHS), U.S. Customs and Border Protection (CBP), and U.S. Immigration and Customs Enforcement (ICE) through FY2029 for immigration enforcement, border security, and related activities.</p><p>It is known as a reconciliation bill and includes legislation submitted by certain congressional committees pursuant to provisions in the FY2026 congressional budget resolution (<a href=\"https://www.congress.gov/bill/119th-congress/senate-concurrent-resolution/33\">S. Con. Res. 33</a>) that directed the committees to submit legislation to the House or Senate Budget Committee that will increase the deficit. (Reconciliation bills are considered by Congress using expedited legislative procedures that prevent a filibuster and restrict amendments in the Senate.)</p><p>TITLE I--COMMITTEE ON HOMELAND SECURITY AND GOVERNMENTAL AFFAIRS</p><p>(Sec. 101) This section provides funding for CBP to hire, pay, train, and equip Border Patrol agents and Border Patrol support personnel to conduct functions other than immigration enforcement and customs functions.</p><p>The funds provided by this section may not be used to recruit, hire, or train personnel for the duties of processing coordinators after October 31, 2028.</p><p>(Sec. 102) This section provides funding to ICE for (1) hiring, paying, training, and equipping Homeland Security Investigations (HIS) agents and support personnel, and (2) other necessary expenses for&nbsp;HSI’s mission support and operations and maintenance.</p><p>It also requires specified funds to be used to hire, pay, and equip&nbsp;additional child exploitation investigators and forensics analysts for&nbsp;certain HSI offices to (1) support the identification and rescue of victims of child sexual exploitation and abuse, and (2) train such personnel and state and local law enforcement regarding identifying victims of child sexual exploitation and abuse.</p><p>The funds provided by this section must be used for functions other than those related to HSI’s immigration enforcement and customs enforcement missions.</p><p>(Sec. 103) This section provides funding to CBP for border security, technology, and screening, including</p><ul><li>procurement and integration of new nonintrusive inspection equipment and associated civil works (e.g., artificial intelligence, machine learning, and other innovative technologies)&nbsp;and other mission support to combat the entry or exit of illicit narcotics at ports of entry and along the southwest, northern, and maritime borders;</li><li>upgrading and procurement of platforms for rapid air and marine response capabilities;</li><li>upgrading and procurement of border surveillance technologies along the southwest, northern, and maritime borders;</li><li>necessary expenses, including the deployment of technology, relating to the biometric entry and exit system under the Intelligence Reform and Terrorism Prevention Act of 2004;</li><li>enhancing border security by combating drug trafficking, including fentanyl and its precursor chemicals, at the southwest, northern, and maritime borders; and</li><li>necessary expenses for CBP's mission support and operations and maintenance for functions other than those related to its immigration enforcement and customs missions.</li></ul><p>None of the funds provided by this section may be used for the procurement or deployment of surveillance towers along the southwest border and the northern border that have not been tested and accepted by CBP to deliver autonomous capabilities.</p><p>Under this section the term <em>autonomous </em>means a system designed to apply artificial intelligence, machine learning, computer vision, or other algorithms to accurately detect, identify, classify, and track items of interest in real time such that the system can make operational adjustments without the active engagement of personnel or continuous human command or control.</p><p>(Sec. 104) This section provides additional funding to DHS for the purposes for which funding is provided in this title.</p><p>TITLE II--COMMITTEE ON THE JUDICIARY</p><p>(Sec. 201) This section provides funding to CBP for hiring, paying, training, and equipping CBP agents and the necessary support staff, and other necessary expenses for mission support and operations and maintenance, in order to carry out immigration enforcement activities.</p><p>(Sec. 202) This section provides funding to ICE for immigration enforcement and related activities, including</p><ul><li>hiring, paying, and training personnel;</li><li>transportation;</li><li>information technology;</li><li>facility and fleet maintenance and sustainment,</li><li>287(g) agreements (i.e., agreements that allow state and local law enforcement agencies to perform certain immigration enforcement functions),</li><li>the Office of the Principal Legal Advisor,</li><li>operation and maintenance, and</li><li>operations by ICE to arrest certain unlawful aliens.</li></ul><p>(Sec. 203) This section provides additional funding to DHS for (1) the purposes for which funding is provided in this title, (2) the assignment of certain&nbsp;DHS employees and state officers to carry out immigration enforcement activities, or (3) the participation of state and local agencies in certain homeland security efforts. &nbsp;</p>",
+      "summary_crs": "<p><strong>Secure America Act</strong></p><p>This act provides $70 billion in&nbsp;funding to the Department of Homeland Security (DHS), U.S. Customs and Border Protection (CBP), and U.S. Immigration and Customs Enforcement (ICE) through FY2029 for immigration enforcement, border security, and related activities.</p><p>It is known as a reconciliation bill and includes legislation submitted by certain congressional committees pursuant to provisions in the FY2026 congressional budget resolution (<a href=\"https://www.congress.gov/bill/119th-congress/senate-concurrent-resolution/33\">S. Con. Res. 33</a>) that directed the committees to submit legislation to the House or Senate Budget Committee that will increase the deficit. (Reconciliation bills are considered by Congress using expedited legislative procedures that prevent a filibuster and restrict amendments in the Senate.)</p><p>TITLE I--COMMITTEE ON HOMELAND SECURITY AND GOVERNMENTAL AFFAIRS</p><p>(Sec. 101) This section provides funding for CBP to hire, pay, train, and equip Border Patrol agents and Border Patrol support personnel to conduct functions other than immigration enforcement and customs functions.</p><p>The funds provided by this section may not be used to recruit, hire, or train personnel for the duties of processing coordinators after October 31, 2028.</p><p>(Sec. 102) This section provides funding to ICE for (1) hiring, paying, training, and equipping Homeland Security Investigations (HIS) agents and support personnel; and (2) other necessary expenses for&nbsp;HSI’s mission support and operations and maintenance.</p><p>It also requires specified funds to be used to hire, pay, and equip&nbsp;additional child exploitation investigators and forensics analysts for&nbsp;certain HSI offices to (1) support the identification and rescue of victims of child sexual exploitation and abuse, and (2) train such personnel and state and local law enforcement regarding identifying victims of child sexual exploitation and abuse.</p><p>The funds provided by this section must be used for functions other than those related to HSI’s immigration enforcement and customs enforcement missions.</p><p>(Sec. 103) This section provides funding to CBP for border security, technology, and screening, including</p><ul><li>procurement and integration of new nonintrusive inspection equipment and associated civil works (e.g., artificial intelligence, machine learning, and other innovative technologies)&nbsp;and other mission support to combat the entry or exit of illicit narcotics at ports of entry and along the southwest, northern, and maritime borders;</li><li>upgrading and procurement of platforms for rapid air and marine response capabilities;</li><li>upgrading and procurement of border surveillance technologies along the southwest, northern, and maritime borders;</li><li>necessary expenses, including the deployment of technology, relating to the biometric entry and exit system under the Intelligence Reform and Terrorism Prevention Act of 2004;</li><li>enhancing border security by combating drug trafficking, including fentanyl and its precursor chemicals, at the southwest, northern, and maritime borders; and</li><li>necessary expenses for CBP's mission support and operations and maintenance for functions other than those related to its immigration enforcement and customs missions.</li></ul><p>None of the funds provided by this section may be used for the procurement or deployment of surveillance towers along the southwest border and the northern border that have not been tested and accepted by CBP to deliver autonomous capabilities.</p><p>Under this section the term <em>autonomous </em>means a system designed to apply artificial intelligence, machine learning, computer vision, or other algorithms to accurately detect, identify, classify, and track items of interest in real time such that the system can make operational adjustments without the active engagement of personnel or continuous human command or control.</p><p>(Sec. 104) This section provides additional funding to DHS for the purposes for which funding is provided in this title.</p><p>TITLE II--COMMITTEE ON THE JUDICIARY</p><p>(Sec. 201) This section provides funding to CBP for hiring, paying, training, and equipping CBP agents and the necessary support staff, and other necessary expenses for mission support and operations and maintenance, in order to carry out immigration enforcement activities.</p><p>(Sec. 202) This section provides funding to ICE for immigration enforcement and related activities, including</p><ul><li>hiring, paying, and training personnel;</li><li>transportation;</li><li>information technology;</li><li>facility and fleet maintenance and sustainment;</li><li>287(g) agreements (i.e., agreements that allow state and local law enforcement agencies to perform certain immigration enforcement functions);</li><li>the Office of the Principal Legal Advisor;</li><li>operation and maintenance; and</li><li>operations by ICE to arrest certain unlawful aliens.</li></ul><p>(Sec. 203) This section provides additional funding to DHS for (1) the purposes for which funding is provided in this title, (2) the assignment of certain&nbsp;DHS employees and state officers to carry out immigration enforcement activities, or (3) the participation of state and local agencies in certain homeland security efforts. &nbsp;</p>",
       "text_url_html": "https://www.congress.gov/119/plaws/publ98/PLAW-119publ98.htm",
       "text_url_xml": "https://www.congress.gov/119/plaws/publ98/PLAW-119publ98_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ98/PLAW-119publ98.pdf",
