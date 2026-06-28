@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T13:56:09Z",
+  "generated_at": "2026-06-28T14:02:33Z",
   "congress": 117,
   "bills": [
     {
@@ -315,6 +315,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/3949"
     },
     {
+      "id": "s4120-117",
+      "congress": 117,
+      "type": "s",
+      "number": "4120",
+      "title": "Childhood Cancer STAR Reauthorization Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Reed, Jack",
+        "party": "D",
+        "state": "RI"
+      },
+      "introduced_date": "2022-04-28",
+      "latest_action": {
+        "date": "2023-01-05",
+        "text": "Became Public Law No: 117-350."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><strong>Childhood Cancer Survivorship, Treatment, Access, and Research Reauthorization Act of 2022 or the Childhood Cancer STAR Reauthorization Act</strong></p> <p>This act reauthorizes through FY2028 and modifies pediatric cancer research and related programs, including to expand collection of and access to relevant biospecimens and to support the transition of pediatric cancer survivors to primary care.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ350/PLAW-117publ350.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ350/PLAW-117publ350_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ350/PLAW-117publ350.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/4120"
+    },
+    {
       "id": "s4411-117",
       "congress": 117,
       "type": "s",
@@ -601,6 +625,30 @@
       "text_url_xml": "https://www.congress.gov/117/plaws/publ270/PLAW-117publ270_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/117/plaws/publ270/PLAW-117publ270.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/2473"
+    },
+    {
+      "id": "hr2724-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "2724",
+      "title": "VA Peer Support Enhancement for MST Survivors Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Delgado, Antonio",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2021-04-21",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-271."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act prescribes that a peer support specialist of the Department of Veterans Affairs (VA) must not be responsible for providing assistance to a veteran regarding a claim for compensation for a covered mental health condition (e.g., post-traumatic stress disorder) based on military sexual trauma (MST) experienced during active service. Such specialists must only provide counseling services, guidance, and support and must not participate in the adjudication of the claim.</p> <p>As part of the forms for claims for compensation for a covered mental health condition based on MST, the VA must include an option for a veteran to elect to be referred to a MST trauma coordinator at the VA facility closest to the veteran's residence.</p> <p>Additionally, the VA must (1) ensure that its peer support specialists receive annual training on providing peer support regarding MST, and (2) provide annual training on the processing of claims for compensation for covered mental health conditions based on MST to its MST coordinators and peer specialists. </p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ271/PLAW-117publ271.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ271/PLAW-117publ271_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ271/PLAW-117publ271.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/2724"
     },
     {
       "id": "hr3285-117",
@@ -1251,6 +1299,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/6961"
     },
     {
+      "id": "hr7299-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "7299",
+      "title": "SVAC Act of 2022",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Mrvan, Frank J.",
+        "party": "D",
+        "state": "IN"
+      },
+      "introduced_date": "2022-03-30",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-302."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><strong>Strengthening VA Cybersecurity Act of 2022 or the</strong><strong> SVAC Act of 2022</strong></p> <p>This act requires the Department of Veterans Affairs (VA) to seek to enter into an agreement with a federally funded research and development center to provide a cybersecurity assessment of five high-impact VA information systems and the effectiveness of the VA's information security program and information security management system.</p> <p>The VA must submit a plan to Congress to address the findings of the assessment.</p> <p>The Government Accountability Office must review the assessment and the VA's response to the assessment and report its findings to Congress.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ302/PLAW-117publ302.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ302/PLAW-117publ302_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ302/PLAW-117publ302.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/7299"
+    },
+    {
       "id": "hr7335-117",
       "congress": 117,
       "type": "hr",
@@ -1635,6 +1707,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/5229"
     },
     {
+      "id": "s7-117",
+      "congress": 117,
+      "type": "s",
+      "number": "7",
+      "title": "VAWA Technical Amendment Act of 2022",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hirono, Mazie K.",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2022-11-17",
+      "latest_action": {
+        "date": "2022-12-27",
+        "text": "Became Public Law No: 117-315."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>VAWA Technical Amendment Act of 2022</b></p> <p>This act allows formula grants for tribal domestic violence and sexual assault coalitions to be used to support women in Native Hawaiian communities in addition to women in tribal communities. </p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ315/PLAW-117publ315.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ315/PLAW-117publ315_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ315/PLAW-117publ315.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/7"
+    },
+    {
       "id": "s789-117",
       "congress": 117,
       "type": "s",
@@ -1827,6 +1923,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-resolution/1434"
     },
     {
+      "id": "hres693-117",
+      "congress": 117,
+      "type": "hres",
+      "number": "693",
+      "title": "Recognizing the 25th anniversary of Radio Free Asia and its mission to provide an independent source of news to closed societies in Asia.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McGovern, James P.",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2021-09-29",
+      "latest_action": {
+        "date": "2022-12-21",
+        "text": "Pursuant to the provisions of H. Res. 1529, H. Res. 693 is considered passed House."
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <div><br /></div> <div>This resolution recognizes the importance of Radio Free Asia on its 25th anniversary as an independent news organization chartered and funded by Congress with a mission to bring uncensored, accurate news to people living in closed societies in Asia. </div> <p>The resolution also honors the dedication and courage of the former and current journalists of Radio Free Asia in the face of threats and adversity from foreign governments and rising risks for press freedom in Asia and across the globe.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/hres693/BILLS-117hres693eh.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/hres693/BILLS-117hres693eh.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/hres693/BILLS-117hres693eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-resolution/693"
+    },
+    {
       "id": "s314-117",
       "congress": 117,
       "type": "s",
@@ -1849,6 +1969,30 @@
       "text_url_xml": "https://www.congress.gov/117/plaws/publ261/PLAW-117publ261_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/117/plaws/publ261/PLAW-117publ261.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/314"
+    },
+    {
+      "id": "s4834-117",
+      "congress": 117,
+      "type": "s",
+      "number": "4834",
+      "title": "PROTECT Our Children Act of 2022",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2022-09-13",
+      "latest_action": {
+        "date": "2022-12-21",
+        "text": "Became Public Law No: 117-262."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><strong>Providing Resources, Officers, and Technology to Eradicate Cyber Threats to Our Children Act of 2022 or the PROTECT Our Children Act of 2022</strong> </p> <p>This act reauthorizes through FY2024 (1) the National Strategy for Child Exploitation Prevention and Interdiction, and (2) the National Internet Crimes Against Children Task Force Program.",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ262/PLAW-117publ262.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ262/PLAW-117publ262_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ262/PLAW-117publ262.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/4834"
     },
     {
       "id": "hr5796-117",
@@ -1995,6 +2139,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/1617"
     },
     {
+      "id": "s198-117",
+      "congress": 117,
+      "type": "s",
+      "number": "198",
+      "title": "Data Mapping to Save Moms' Lives Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Rosen, Jacky",
+        "party": "D",
+        "state": "NV"
+      },
+      "introduced_date": "2021-02-03",
+      "latest_action": {
+        "date": "2022-12-20",
+        "text": "Became Public Law No: 117-247."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Data Mapping to Save Moms' Lives Act</b></p> <p>This act directs the Federal Communications Commission (FCC) to include data on maternal mortality and severe maternal morbidity in its&nbsp;broadband health mapping tool. This is an online platform that allows users&nbsp;to visualize, overlay, and analyze broadband and health data at national, state, and county levels.</p> <p>The FCC must consult with the Centers for Disease Control and Prevention regarding the data to incorporate into the tool.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ247/PLAW-117publ247.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ247/PLAW-117publ247_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ247/PLAW-117publ247.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/198"
+    },
+    {
       "id": "s2796-117",
       "congress": 117,
       "type": "s",
@@ -2041,6 +2209,30 @@
       "text_url_xml": "https://www.congress.gov/117/plaws/publ251/PLAW-117publ251_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/117/plaws/publ251/PLAW-117publ251.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/3092"
+    },
+    {
+      "id": "s3115-117",
+      "congress": 117,
+      "type": "s",
+      "number": "3115",
+      "title": "POWER 2.0 Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Sullivan, Dan",
+        "party": "R",
+        "state": "AK"
+      },
+      "introduced_date": "2021-10-28",
+      "latest_action": {
+        "date": "2022-12-20",
+        "text": "Became Public Law No: 117-252."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><strong>Pro bono Work to Empower and Represent Act of 2021 or the POWER 2.0 Act</strong></p> <p>This act makes permanent the requirement for the chief judge of each federal judicial district to lead, at least annually, a public event to promote pro bono legal services for survivors of domestic violence, dating violence, sexual assault, and stalking. </p> <p>The requirement was enacted in 2018; it is scheduled to sunset after a four-year period.</p> <p><br> </p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ252/PLAW-117publ252.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ252/PLAW-117publ252_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ252/PLAW-117publ252.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/3115"
     },
     {
       "id": "s3499-117",
@@ -2403,6 +2595,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/7132"
     },
     {
+      "id": "s4524-117",
+      "congress": 117,
+      "type": "s",
+      "number": "4524",
+      "title": "Speak Out Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Gillibrand, Kirsten E.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2022-07-13",
+      "latest_action": {
+        "date": "2022-12-07",
+        "text": "Became Public Law No: 117-224."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><strong>Speak Out Act</strong></p> <p>This act prohibits the judicial enforceability of a nondisclosure clause or nondisparagement clause agreed to before a dispute arises involving sexual assault or sexual harassment in violation of federal, tribal, or state law.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ224/PLAW-117publ224.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ224/PLAW-117publ224_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ224/PLAW-117publ224.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/4524"
+    },
+    {
       "id": "sres851-117",
       "congress": 117,
       "type": "sres",
@@ -2473,6 +2689,30 @@
       "text_url_xml": "https://www.congress.gov/117/plaws/publ220/PLAW-117publ220_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/117/plaws/publ220/PLAW-117publ220.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/2159"
+    },
+    {
+      "id": "s3510-117",
+      "congress": 117,
+      "type": "s",
+      "number": "3510",
+      "title": "Disaster Resiliency Planning Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Peters, Gary C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2022-01-13",
+      "latest_action": {
+        "date": "2022-12-05",
+        "text": "Became Public Law No: 117-221."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><strong>Disaster Resiliency Planning Act</strong></p> <p>This act requires the Office of Management and Budget to establish guidance that requires federal agencies to incorporate natural disaster resilience into real property asset management and investment decisions. Specifically, the guidance must direct each agency to incorporate assessments of natural disaster risk information conducted by the agency, such as vulnerability and other risk assessments, into real property asset management and investment decisions. </p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ221/PLAW-117publ221.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ221/PLAW-117publ221_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ221/PLAW-117publ221.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/3510"
     },
     {
       "id": "s3655-117",
@@ -2907,6 +3147,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/169"
     },
     {
+      "id": "s2551-117",
+      "congress": 117,
+      "type": "s",
+      "number": "2551",
+      "title": "AI Training Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Peters, Gary C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2021-07-29",
+      "latest_action": {
+        "date": "2022-10-17",
+        "text": "Became Public Law No: 117-207."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><strong>Artificial Intelligence Training for the Acquisition Workforce Act or the AI Training Act</strong></p> <p>This bill requires the Office of Management and Budget (OMB) to establish or otherwise provide an artificial intelligence (AI) training program for the acquisition workforce of executive agencies (e.g., those responsible for program management or logistics), with exceptions.</p> <p>The purpose of the program is to ensure that the workforce has knowledge of the capabilities and risks associated with AI.</p> <p>The OMB must (1) update the program at least every two years, and (2) ensure there is a way to understand and measure the participation of the workforce and to receive and consider feedback from program participants.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ207/PLAW-117publ207.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ207/PLAW-117publ207_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ207/PLAW-117publ207.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/2551"
+    },
+    {
       "id": "s2771-117",
       "congress": 117,
       "type": "s",
@@ -2977,6 +3241,30 @@
       "text_url_xml": "https://www.congress.gov/117/plaws/publ211/PLAW-117publ211_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/117/plaws/publ211/PLAW-117publ211.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/3470"
+    },
+    {
+      "id": "s4205-117",
+      "congress": 117,
+      "type": "s",
+      "number": "4205",
+      "title": "PAW Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Peters, Gary C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2022-05-12",
+      "latest_action": {
+        "date": "2022-10-17",
+        "text": "Became Public Law No: 117-212."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><strong>Planning for Animal Wellness Act or the PAW Act</strong></p> <p>This act directs the Federal Emergency Management Agency (FEMA) to establish a working group relating to best practices and federal guidance for animals in emergencies and disasters.</p> <p>Specifically, the working group shall (1) encourage and foster collaborative efforts among individuals and entities working to address the needs of household pets, service and assistance animals, and captive animals in emergency and disaster preparedness, response, and recovery; and (2) review best practices and federal guidance on sheltering and evacuation planning relating to the needs of such pets and animals.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ212/PLAW-117publ212.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ212/PLAW-117publ212_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ212/PLAW-117publ212.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/4205"
     },
     {
       "id": "s442-117",
@@ -3459,6 +3747,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/6833"
     },
     {
+      "id": "hr8656-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "8656",
+      "title": "To designate the clinic of the Department of Veterans Affairs in Mishawaka, Indiana, as the \"Jackie Walorski VA Clinic\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Banks, Jim",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2022-08-05",
+      "latest_action": {
+        "date": "2022-09-30",
+        "text": "Became Public Law No: 117-179."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This act designates the clinic of the Department of Veterans Affairs in Mishawaka, Indiana, as the Jackie Walorski VA Clinic.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ179/PLAW-117publ179.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ179/PLAW-117publ179_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ179/PLAW-117publ179.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/8656"
+    },
+    {
       "id": "s3895-117",
       "congress": 117,
       "type": "s",
@@ -3529,6 +3841,30 @@
       "text_url_xml": "https://www.congress.gov/117/plaws/publ183/PLAW-117publ183_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/117/plaws/publ183/PLAW-117publ183.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/4900"
+    },
+    {
+      "id": "s2293-117",
+      "congress": 117,
+      "type": "s",
+      "number": "2293",
+      "title": "CREW Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Peters, Gary C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2021-06-24",
+      "latest_action": {
+        "date": "2022-09-29",
+        "text": "Became Public Law No: 117-178."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><strong>Civilian Reservist Emergency Workforce Act of 2021 or the CREW Act</strong></p> <p>This act makes employment protections under the Uniformed Services Employment and Reemployment Rights Act (USERRA) applicable to Federal Emergency Management Agency (FEMA) reservists who deploy to major disaster and emergency sites. It allows such reservists to claim such rights under USERRA even if they do not provide notice of their absence from work due to deployment.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ178/PLAW-117publ178.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ178/PLAW-117publ178_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ178/PLAW-117publ178.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/2293"
     },
     {
       "id": "sres769-117",
@@ -3625,6 +3961,30 @@
       "text_url_xml": "https://www.congress.gov/117/bills/sres765/BILLS-117sres765ats.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/sres765/BILLS-117sres765ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/765"
+    },
+    {
+      "id": "hr5754-117",
+      "congress": 117,
+      "type": "hr",
+      "number": "5754",
+      "title": "Patient Advocate Tracker Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McClain, Lisa C.",
+        "party": "R",
+        "state": "MI"
+      },
+      "introduced_date": "2021-10-27",
+      "latest_action": {
+        "date": "2022-09-16",
+        "text": "Became Public Law No: 117-175."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><strong>Patient Advocate Tracker Act</strong></p> <p>This act requires the Office of Patient Advocacy within the Veterans Health Administration to establish an information technology system that allows veterans or their representatives to electronically file a complaint with a patient advocate and review the status of a filed complaint.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ175/PLAW-117publ175.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ175/PLAW-117publ175_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ175/PLAW-117publ175.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/5754"
     },
     {
       "id": "s4785-117",
@@ -3745,6 +4105,30 @@
       "text_url_xml": "https://www.congress.gov/117/plaws/publ171/PLAW-117publ171_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/117/plaws/publ171/PLAW-117publ171.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/5313"
+    },
+    {
+      "id": "s3451-117",
+      "congress": 117,
+      "type": "s",
+      "number": "3451",
+      "title": "A bill to include certain computer-related projects in the Federal permitting program under title XLI of the FAST Act, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hagerty, Bill",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2022-01-10",
+      "latest_action": {
+        "date": "2022-08-16",
+        "text": "Became Public Law No: 117-173."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill expands the expedited environmental review and permitting process under Title 41 of the Fixing America's Surface Transportation (FAST) Act, commonly known as FAST-41, to include certain computer-related infrastructure projects. Specifically, the bill provides for the expedited review of infrastructure projects concerning semiconductors, artificial intelligence and machine learning, high-performance computing and advanced computer hardware and software, quantum information science and technology, data storage and data management, or cybersecurity.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ173/PLAW-117publ173.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ173/PLAW-117publ173_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ173/PLAW-117publ173.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/3451"
     },
     {
       "id": "s3373-117",
@@ -3961,6 +4345,30 @@
       "text_url_xml": "https://www.congress.gov/117/bills/hres517/BILLS-117hres517eh.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/hres517/BILLS-117hres517eh.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-resolution/517"
+    },
+    {
+      "id": "sres394-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "394",
+      "title": "A resolution recognizing the 25th anniversary of Radio Free Asia and its mission to provide an independent source of news to closed societies in Asia.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Coons, Christopher A.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2021-09-29",
+      "latest_action": {
+        "date": "2022-07-26",
+        "text": "Resolution agreed to in Senate with an amendment and an amended preamble by Voice Vote. (consideration: CR S3687-3688; text: CR S3687-3688)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution recognizes the importance of Radio Free Asia in its 25th year as an independent news organization chartered and funded by Congress with a mission to bring uncensored, accurate news to people living in closed societies in Asia. </p> <p>The resolution also honors the dedication and courage of the former and current journalists of Radio Free Asia in the face of threats and adversity from foreign governments and rising risks for press freedom in Asia and across the globe. </p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres394/BILLS-117sres394ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres394/BILLS-117sres394ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres394/BILLS-117sres394ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/394"
     },
     {
       "id": "hr8351-117",
@@ -4395,6 +4803,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/1097"
     },
     {
+      "id": "s2520-117",
+      "congress": 117,
+      "type": "s",
+      "number": "2520",
+      "title": "State and Local Government Cybersecurity Act of 2021",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Peters, Gary C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2021-07-28",
+      "latest_action": {
+        "date": "2022-06-21",
+        "text": "Became Public Law No: 117-150."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>State and Local Government Cybersecurity Act of 2021</b></p> <p>This bill provides for collaboration between the Department of Homeland Security (DHS) and state, local, tribal, and territorial governments, as well as corporations, associations, and the general public, regarding cybersecurity.</p> <p>The bill expands DHS responsibilities through grants and cooperative agreements, including provision of assistance and education related to cyber threat indicators, proactive and defensive measures and cybersecurity technologies, cybersecurity risks and vulnerabilities, incident response and management, analysis, and warnings.</p> <p>The bill requires the National Cybersecurity and Communications Integration Center, upon request, to coordinate with entities such as the Multi-State Information Sharing and Analysis Center to engage in specified activities, including to (1) conduct exercises with state, local, tribal, or territorial government entities; (2) provide operational and technical cybersecurity training to such entities; and (3) promote cybersecurity education and awareness.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ150/PLAW-117publ150.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ150/PLAW-117publ150_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ150/PLAW-117publ150.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/2520"
+    },
+    {
       "id": "hr1298-117",
       "congress": 117,
       "type": "hr",
@@ -4443,6 +4875,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/3613"
     },
     {
+      "id": "s2201-117",
+      "congress": 117,
+      "type": "s",
+      "number": "2201",
+      "title": "Supply Chain Security Training Act of 2021",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Peters, Gary C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2021-06-23",
+      "latest_action": {
+        "date": "2022-06-16",
+        "text": "Became Public Law No: 117-145."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><strong>Supply Chain Security Training Act of 2021</strong></p> <p>This bill requires the Federal Acquisition Institute to develop a training program for officials with supply chain risk management responsibilities at federal agencies (defined to include the legislative and judicial branches, as well as the executive branch, of the federal government).</p> <p>The program shall be designed to prepare such personnel to perform supply chain risk management activities and identify and mitigate supply chain security risks that arise throughout the acquisition life cycle, including for the acquisition of information and communications technology. </p> <p>The Office of Management and Budget shall (1) promulgate guidance to federal agencies requiring executive agency adoption and use of the program, and (2) make the guidance available to federal agencies of the legislative and judicial branches.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ145/PLAW-117publ145.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ145/PLAW-117publ145_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ145/PLAW-117publ145.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/2201"
+    },
+    {
       "id": "s3580-117",
       "congress": 117,
       "type": "s",
@@ -4465,6 +4921,30 @@
       "text_url_xml": "https://www.congress.gov/117/plaws/publ146/PLAW-117publ146_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/117/plaws/publ146/PLAW-117publ146.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/3580"
+    },
+    {
+      "id": "s4160-117",
+      "congress": 117,
+      "type": "s",
+      "number": "4160",
+      "title": "Supreme Court Police Parity Act of 2022",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2022-05-05",
+      "latest_action": {
+        "date": "2022-06-16",
+        "text": "Became Public Law No: 117-148."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><strong>Supreme Court Police Parity Act of 202</strong><strong>2</strong></p> <p>This bill grants the Marshal of the Supreme Court and the Supreme Court Police the authority to protect any member of the immediate family of the Chief Justice, any Associate Justice, or any officer of the Supreme Court if the Marshal determines that such protection is necessary.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ148/PLAW-117publ148.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ148/PLAW-117publ148_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ148/PLAW-117publ148.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/4160"
     },
     {
       "id": "s66-117",
@@ -4659,6 +5139,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/2102"
     },
     {
+      "id": "s2514-117",
+      "congress": 117,
+      "type": "s",
+      "number": "2514",
+      "title": "A bill to rename the Provo Veterans Center in Orem, Utah, as the \"Col. Gail S. Halvorsen 'Candy Bomber' Veterans Center\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lee, Mike",
+        "party": "R",
+        "state": "UT"
+      },
+      "introduced_date": "2021-07-28",
+      "latest_action": {
+        "date": "2022-06-07",
+        "text": "Became Public Law No: 117-134."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the Provo Veterans Center of the Department of Veterans Affairs in Orem, Utah, as the Col. Gail S. Halvorsen &quot;Candy Bomber&quot; Veterans Center.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ134/PLAW-117publ134.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ134/PLAW-117publ134_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ134/PLAW-117publ134.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/2514"
+    },
+    {
       "id": "s3527-117",
       "congress": 117,
       "type": "s",
@@ -4753,6 +5257,30 @@
       "text_url_xml": "https://www.congress.gov/117/bills/sjres46/BILLS-117sjres46pcs.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/sjres46/BILLS-117sjres46pcs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-joint-resolution/46"
+    },
+    {
+      "id": "sres341-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "341",
+      "title": "A resolution commemorating the 70th anniversary of the signing of the Security Treaty among Australia, New Zealand, and the United States of America.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Menendez, Robert",
+        "party": "D",
+        "state": "NJ"
+      },
+      "introduced_date": "2021-08-07",
+      "latest_action": {
+        "date": "2022-05-26",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Voice Vote. (consideration: CR S2737; text: 08/07/2021 CR S6012-6013)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution commemorates the 70th anniversary of the security treaty between Australia, New Zealand, and the United States and reaffirms the U.S. commitments under the treaty. It also supports new opportunities to deepen and broaden security relations and economic ties between the three countries.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres341/BILLS-117sres341ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres341/BILLS-117sres341ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres341/BILLS-117sres341ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/341"
     },
     {
       "id": "sres390-117",
@@ -5307,6 +5835,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/233"
     },
     {
+      "id": "s2629-117",
+      "congress": 117,
+      "type": "s",
+      "number": "2629",
+      "title": "Better Cybercrime Metrics Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Schatz, Brian",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2021-08-05",
+      "latest_action": {
+        "date": "2022-05-05",
+        "text": "Became Public Law No: 117-116."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><strong>Better Cybercrime Metrics Act</strong></p> <p>This bill establishes various requirements to improve the collection of data related to cybercrime and cyber-enabled crime (cybercrime). Among the requirements</p> <ul> <li>the Department of Justice (DOJ) must enter into an agreement with the National Academy of Sciences to develop a taxonomy for categorizing different types of cybercrime faced by individuals and businesses;</li> <li>DOJ must establish a category in the National Incident-Based Reporting System for collecting cybercrime reports from federal, state, and local officials;</li> <li>DOJ's Bureau of Justice Statistics and the Bureau of the Census must include questions about cybercrime in the annual National Crime Victimization Survey; and</li> <li>the Government Accountability Office must assess the effectiveness of reporting mechanisms for cybercrime and disparities in reporting cybercrime data and other types of crime data.</li></ul>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ116/PLAW-117publ116.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ116/PLAW-117publ116_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ116/PLAW-117publ116.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/2629"
+    },
+    {
       "id": "hr3113-117",
       "congress": 117,
       "type": "hr",
@@ -5713,6 +6265,30 @@
       "text_url_xml": "https://www.congress.gov/117/plaws/publ101/PLAW-117publ101_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/117/plaws/publ101/PLAW-117publ101.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/1662"
+    },
+    {
+      "id": "s3706-117",
+      "congress": 117,
+      "type": "s",
+      "number": "3706",
+      "title": "A bill to provide for the application of certain provisions of the Secure Rural Schools and Community Self-Determination Act of 2000 for fiscal year 2021.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Crapo, Mike",
+        "party": "R",
+        "state": "ID"
+      },
+      "introduced_date": "2022-02-17",
+      "latest_action": {
+        "date": "2022-03-15",
+        "text": "Became Public Law No: 117-102."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill extends through FY2021 the inapplicability of the requirement for counties to elect to receive certain payments under the Secure Rural Schools and Community Self-Determination Act of 2000. That act provides compensation to counties for the presence of untaxable federal land within their borders.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ102/PLAW-117publ102.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ102/PLAW-117publ102_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ102/PLAW-117publ102.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/3706"
     },
     {
       "id": "sjres37-117",
@@ -6145,6 +6721,30 @@
       "text_url_xml": "https://www.congress.gov/117/plaws/publ86/PLAW-117publ86_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/117/plaws/publ86/PLAW-117publ86.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/6617"
+    },
+    {
+      "id": "sres467-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "467",
+      "title": "A resolution recognizing the contributions made by the 305-meter radio telescope at the Arecibo Observatory.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blumenthal, Richard",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2021-12-02",
+      "latest_action": {
+        "date": "2022-02-10",
+        "text": "Resolution agreed to in Senate with an amendment and an amended preamble by Unanimous Consent. (text: CR S650)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution acknowledges the collapse of the radio telescope at the Arecibo Observatory in Puerto Rico and encourages federal agencies to study means of replacing the observatory's lost scientific capabilities.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres467/BILLS-117sres467ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres467/BILLS-117sres467ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres467/BILLS-117sres467ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/467"
     },
     {
       "id": "sres424-117",
@@ -6985,6 +7585,30 @@
       "text_url_xml": "https://www.congress.gov/117/plaws/publ48/PLAW-117publ48_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/117/plaws/publ48/PLAW-117publ48.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-bill/2278"
+    },
+    {
+      "id": "s848-117",
+      "congress": 117,
+      "type": "s",
+      "number": "848",
+      "title": "Consider Teachers Act of 2021",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Braun, Mike",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2021-03-18",
+      "latest_action": {
+        "date": "2021-10-13",
+        "text": "Became Public Law No: 117-49."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Consider Teachers Act</b> <strong>of 2021</strong><strong></strong></p> <p>This bill revises the service obligation verification process for the Teacher Education Assistance for College and Higher Education (TEACH) grant program. The TEACH program awards grants to postsecondary students who commit to teaching for four years in high-need subjects in low-income schools. In addition, the bill establishes certain program flexibilities with respect to the service obligations of teachers affected by the COVID-19 pandemic.</p> <p>Specifically, the bill provides a process for the Department of Education (ED) to reconsider and reverse the conversion of a TEACH grant to a loan. Under current program terms, TEACH grants are converted into loan obligations if service requirements are not met.</p> <p>In addition, the bill directs ED to notify TEACH grant recipients of the requirements for submitting employment certifications. ED must also provide an alternative to certification. </p> <p>ED must maintain and annually update a list of qualifying schools and high-need fields.</p> <p>The bill also provides certain program flexibilities with respect to the service obligations of teachers affected by the COVID-19 pandemic. In particular, the bill (1) extends the service obligation window for TEACH grants, and (2) requires ED to consider teaching service that is interrupted as a result of a qualifying emergency as full-time service for purposes of Federal Perkins Loans.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ49/PLAW-117publ49.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ49/PLAW-117publ49_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ49/PLAW-117publ49.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/848"
     },
     {
       "id": "s1828-117",
@@ -8571,6 +9195,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/422"
     },
     {
+      "id": "s578-117",
+      "congress": 117,
+      "type": "s",
+      "number": "578",
+      "title": "FASTER Act of 2021",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Scott, Tim",
+        "party": "R",
+        "state": "SC"
+      },
+      "introduced_date": "2021-03-03",
+      "latest_action": {
+        "date": "2021-04-23",
+        "text": "Became Public Law No: 117-11."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Food Allergy Safety, Treatment, Education, and Research Act of 2021 or the FASTER Act of 2021</b></p> <p>This bill expands&nbsp;the definition of<i> major food allergen</i> for purposes of certain food-labeling requirements&nbsp;to specifically include sesame. In addition, the Department of Health and Human Services must report on certain information related to food allergy research and data collection activities.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ11/PLAW-117publ11.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ11/PLAW-117publ11_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ11/PLAW-117publ11.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/578"
+    },
+    {
       "id": "sres143-117",
       "congress": 117,
       "type": "sres",
@@ -8835,6 +9483,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/34"
     },
     {
+      "id": "s579-117",
+      "congress": 117,
+      "type": "s",
+      "number": "579",
+      "title": "A bill to make a technical correction to the ALS Disability Insurance Access Act of 2019.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Braun, Mike",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2021-03-03",
+      "latest_action": {
+        "date": "2021-03-23",
+        "text": "Became Public Law No: 117-3."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill retroactively eliminates the waiting period for Social Security Disability Insurance (SSDI) benefits for certain individuals with amyotrophic lateral sclerosis (ALS). Commonly known as Lou Gehrig's Disease, ALS is a progressive neurodegenerative disease that affects nerve cells in the brain and spinal cord.</p> <p>Under current law, most SSDI recipients must wait five months after becoming disabled before their benefit payments may begin. The ALS Disability Insurance Access Act of 2019 eliminated the waiting period for individuals with ALS but only covers individuals who apply for benefits after the date of enactment (December 20, 2020). As a result, individuals with ALS who applied for SSDI benefits in the five months before that date are still subject to the waiting period. This bill eliminates the waiting period for those individuals.</p>",
+      "text_url_html": "https://www.congress.gov/117/plaws/publ3/PLAW-117publ3.htm",
+      "text_url_xml": "https://www.congress.gov/117/plaws/publ3/PLAW-117publ3_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/117/plaws/publ3/PLAW-117publ3.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-bill/579"
+    },
+    {
       "id": "sres123-117",
       "congress": 117,
       "type": "sres",
@@ -9073,6 +9745,30 @@
       "text_url_xml": "https://www.congress.gov/117/bills/hres73/BILLS-117hres73eh.xml",
       "text_url_pdf": "https://www.congress.gov/117/bills/hres73/BILLS-117hres73eh.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/117th-congress/house-resolution/73"
+    },
+    {
+      "id": "sres23-117",
+      "congress": 117,
+      "type": "sres",
+      "number": "23",
+      "title": "A resolution honoring the life and legacy of Henry Louis Aaron.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Warnock, Raphael G.",
+        "party": "D",
+        "state": "GA"
+      },
+      "introduced_date": "2021-01-28",
+      "latest_action": {
+        "date": "2021-02-02",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: 01/28/2021 CR S204)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution honors the life and legacy of Henry Louis Aaron for his accomplishments on and off the baseball field and for defying racism and breaking down racial barriers in the fight for equality.</p>",
+      "text_url_html": "https://www.congress.gov/117/bills/sres23/BILLS-117sres23ats.htm",
+      "text_url_xml": "https://www.congress.gov/117/bills/sres23/BILLS-117sres23ats.xml",
+      "text_url_pdf": "https://www.congress.gov/117/bills/sres23/BILLS-117sres23ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/117th-congress/senate-resolution/23"
     }
   ]
 }
