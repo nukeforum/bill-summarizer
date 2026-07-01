@@ -1,7 +1,31 @@
 {
-  "generated_at": "2026-06-30T09:34:55Z",
+  "generated_at": "2026-07-01T09:44:53Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "s1003-119",
+      "congress": 119,
+      "type": "s",
+      "number": "1003",
+      "title": "Lulu’s Law",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Britt, Katie Boyd",
+        "party": "R",
+        "state": "AL"
+      },
+      "introduced_date": "2025-03-12",
+      "latest_action": {
+        "date": "2026-06-26",
+        "text": "Became Public Law No: 119-100."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Lulu’s Law</strong></p><p>This act requires the Federal Communications Commission to issue an order explicitly permitting the transmission of wireless emergency alerts to mobile phones in the event of a shark attack.</p><p>(Under current regulations, authorized government authorities are permitted to send wireless emergency alerts regarding public safety emergencies, including severe weather, missing children, and other threats to life or property.)</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s1003/BILLS-119s1003es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s1003/BILLS-119s1003es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s1003/BILLS-119s1003es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1003"
+    },
     {
       "id": "sjres185-119",
       "congress": 119,
@@ -740,7 +764,7 @@
         "text": "Became Public Law No: 119-95."
       },
       "outcome": "enacted",
-      "summary_crs": "<p>This bill authorizes the Capitol Police Board to waive the mandatory retirement age for members of the Capitol Police up to age 62. (Under current law, a member of the Capitol Police is generally subject to mandatory retirement at age 57 but may receive a waiver from the board authorizing later retirement up to age 60.)&nbsp;</p>",
+      "summary_crs": "<p>This act authorizes the Capitol Police Board to increase the mandatory retirement age for a member of the Capitol Police to up to age 62 when the board determines such waiver is in the public interest.</p><p>Under current law, members of the Capitol Police are generally subject to mandatory retirement at (1) age 57; or (2) upon completing 20 years of service&nbsp;if the member is older than 57.&nbsp;Previously, a waiver from the board would authorize a member to continue working until age 60.</p><p>The act authorizes the board to issue a waiver specifying a retirement age between 57 and 62.</p>",
       "text_url_html": "https://www.congress.gov/119/plaws/publ95/PLAW-119publ95.htm",
       "text_url_xml": "https://www.congress.gov/119/plaws/publ95/PLAW-119publ95_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ95/PLAW-119publ95.pdf",
