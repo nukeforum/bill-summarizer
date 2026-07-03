@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T14:19:18Z",
+  "generated_at": "2026-07-03T14:22:12Z",
   "congress": 116,
   "bills": [
     {
@@ -123,6 +123,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/332"
     },
     {
+      "id": "sres333-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "333",
+      "title": "A resolution instructing the managers on the part of the Senate on the bill S. 1790 (116th Congress) to insist upon the provisions contained in subtitle B of title XI of the House amendment (relating to paid family leave for Federal personnel).",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Schatz, Brian",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2019-09-25",
+      "latest_action": {
+        "date": "2019-09-25",
+        "text": "Disagreed to in Senate by Yea-Nay Vote. 47 - 48. Record Vote Number: 305."
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution instructs Senate conferees on the conference committee for S. 1790 (National Defense Authorization Act for Fiscal Year 2020) to insist upon certain provisions in the House amendment that relate to paid family leave for federal personnel.</p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres333/BILLS-116sres333is.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres333/BILLS-116sres333is.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres333/BILLS-116sres333is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/333"
+    },
+    {
       "id": "sres334-116",
       "congress": 116,
       "type": "sres",
@@ -193,6 +217,30 @@
       "text_url_xml": "https://www.congress.gov/116/bills/sres336/BILLS-116sres336ats.xml",
       "text_url_pdf": "https://www.congress.gov/116/bills/sres336/BILLS-116sres336ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/336"
+    },
+    {
+      "id": "s1436-116",
+      "congress": 116,
+      "type": "s",
+      "number": "1436",
+      "title": "A bill to make technical corrections to the computation of average pay under Public Law 110-279.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Brown, Sherrod",
+        "party": "D",
+        "state": "OH"
+      },
+      "introduced_date": "2019-05-13",
+      "latest_action": {
+        "date": "2019-06-12",
+        "text": "Became Public Law No: 116-21."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill addresses retirement benefits for certain Senate Restaurants employees who were Architect of the Capitol (AOC) employees and who became employees of a contractor under a food services contract. A provision that deems their rate of basic pay the same as such rate when AOC entered into the contract no longer applies to their retirement benefits.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ21/PLAW-116publ21.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ21/PLAW-116publ21_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ21/PLAW-116publ21.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/1436"
     }
   ]
 }
