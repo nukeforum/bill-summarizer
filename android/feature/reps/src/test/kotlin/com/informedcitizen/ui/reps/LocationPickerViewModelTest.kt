@@ -36,11 +36,18 @@ private class PickerStubMemberRepository(
     private val index: MembersIndex? = null,
     private var resolvedReps: RepsForLocation = RepsForLocation(emptyList(), emptyList()),
 ) : MemberRepository {
+    var lastQueriedState: String? = null
+    var lastQueriedDistrict: Int? = null
+
     override suspend fun findRepsForLocation(
         congress: Int,
         stateCode: String,
         district: Int?,
-    ): RepsForLocation = resolvedReps
+    ): RepsForLocation {
+        lastQueriedState = stateCode
+        lastQueriedDistrict = district
+        return resolvedReps
+    }
 
     override suspend fun findRepsByIds(
         congress: Int,
@@ -114,8 +121,57 @@ class LocationPickerViewModelTest {
         vm.lookupZip()
         val s = vm.uiState.first()
         assertEquals("NY", s.selectedState)
+        assertEquals(12, s.selectedDistrict)
         assertEquals(DistrictHint.Single(12), s.districtHint)
         assertTrue(s.canSave)
+    }
+
+    @Test
+    fun `manual district pick after zip auto-find replaces the auto-found district`() = runTest {
+        val repo = newRepo()
+        val members = newMembers(
+            resolved = RepsForLocation(
+                house = listOf(aMember("H1", "house")),
+                senators = listOf(aMember("S1", "senate")),
+            ),
+        )
+        val zip = StubZipLookup(nextResult = ZipDistrictResult.Single("NY", 12))
+        val vm = LocationPickerViewModel(repo, zip, members)
+        vm.onZipChanged("10001")
+        vm.lookupZip()
+
+        vm.selectDistrict(5)
+
+        val s = vm.uiState.first()
+        assertEquals(5, s.selectedDistrict)
+        // The stale "Detected 12" hint must not survive a manual override.
+        assertEquals(DistrictHint.None, s.districtHint)
+        assertTrue(s.canSave)
+
+        vm.save()
+        assertEquals("NY", members.lastQueriedState)
+        assertEquals(5, members.lastQueriedDistrict)
+        assertEquals(setOf("H1", "S1"), repo.savedIds.first())
+    }
+
+    @Test
+    fun `manual district pick after zip multiple disambiguates and saves that district`() = runTest {
+        val members = newMembers(
+            resolved = RepsForLocation(house = listOf(aMember("H1", "house")), senators = emptyList()),
+        )
+        val zip = StubZipLookup(nextResult = ZipDistrictResult.Multiple("TX", listOf(21, 25, 35)))
+        val vm = LocationPickerViewModel(newRepo(), zip, members)
+        vm.onZipChanged("78701")
+        vm.lookupZip()
+
+        vm.selectDistrict(25)
+
+        val s = vm.uiState.first()
+        assertEquals(25, s.selectedDistrict)
+        assertTrue(s.canSave)
+
+        vm.save()
+        assertEquals(25, members.lastQueriedDistrict)
     }
 
     @Test

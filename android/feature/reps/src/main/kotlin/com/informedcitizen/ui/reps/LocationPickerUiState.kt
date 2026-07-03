@@ -17,6 +17,12 @@ sealed interface LocationPickerEvent {
 
 data class LocationPickerUiState(
     val selectedState: String? = null,
+    /**
+     * The district that will be saved — either auto-found via ZIP lookup or
+     * manually picked from the grid (a manual pick always wins over a prior
+     * auto-find). Null until one is chosen; 0 for at-large/delegate states.
+     */
+    val selectedDistrict: Int? = null,
     val districtsForState: List<Int> = emptyList(),
     val isAtLargeOrDelegate: Boolean = false,
     val zipInput: String = "",
