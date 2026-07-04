@@ -316,7 +316,14 @@ private fun PickModeContent(
                 horizontalArrangement = Arrangement.spacedBy(8.dp),
             ) {
                 items(state.districtsForState) { d ->
-                    Button(onClick = { onSelectDistrict(d) }) { Text(d.toString()) }
+                    // Filled = chosen (manually or via ZIP auto-find), outlined
+                    // = available, so a tap after an auto-find visibly moves
+                    // the selection instead of appearing to do nothing.
+                    if (d == state.selectedDistrict) {
+                        Button(onClick = { onSelectDistrict(d) }) { Text(d.toString()) }
+                    } else {
+                        OutlinedButton(onClick = { onSelectDistrict(d) }) { Text(d.toString()) }
+                    }
                 }
             }
         }

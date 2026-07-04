@@ -57,7 +57,6 @@ class LocationPickerViewModel @Inject constructor(
     private val _events = Channel<LocationPickerEvent>(Channel.CONFLATED)
     val events: Flow<LocationPickerEvent> = _events.receiveAsFlow()
 
-    private var pendingDistrict: Int? = null
     private var loadedIndex: MembersIndex? = null
 
     init {
@@ -103,10 +102,10 @@ class LocationPickerViewModel @Inject constructor(
         val sc = stateCode.uppercase()
         val districts = districtsForState(sc)
         val atLarge = isSingleMember(sc)
-        pendingDistrict = if (atLarge) 0 else null
         _uiState.update {
             it.copy(
                 selectedState = sc,
+                selectedDistrict = if (atLarge) 0 else null,
                 districtsForState = districts,
                 isAtLargeOrDelegate = atLarge,
                 districtHint = DistrictHint.None,
@@ -116,8 +115,15 @@ class LocationPickerViewModel @Inject constructor(
     }
 
     fun selectDistrict(district: Int) {
-        pendingDistrict = district
-        _uiState.update { it.copy(canSave = it.selectedState != null) }
+        // A manual pick overrides any prior ZIP auto-find, so drop the hint —
+        // otherwise a stale "Detected N" keeps showing the auto-found district.
+        _uiState.update {
+            it.copy(
+                selectedDistrict = district,
+                districtHint = DistrictHint.None,
+                canSave = it.selectedState != null,
+            )
+        }
     }
 
     fun selectMode(mode: LocationPickerMode) {
@@ -134,10 +140,10 @@ class LocationPickerViewModel @Inject constructor(
         viewModelScope.launch {
             when (val result = zipLookup.lookup(zip)) {
                 is ZipDistrictResult.Single -> {
-                    pendingDistrict = result.district
                     _uiState.update {
                         it.copy(
                             selectedState = result.state,
+                            selectedDistrict = result.district,
                             districtsForState = districtsForState(result.state),
                             isAtLargeOrDelegate = isSingleMember(result.state),
                             districtHint = DistrictHint.Single(result.district),
@@ -146,12 +152,12 @@ class LocationPickerViewModel @Inject constructor(
                     }
                 }
                 is ZipDistrictResult.Multiple -> {
-                    pendingDistrict = null
                     // The user needs to disambiguate, which only the district
                     // grid can do — flip to Pick so the narrowed grid is in view.
                     _uiState.update {
                         it.copy(
                             selectedState = result.state,
+                            selectedDistrict = null,
                             districtsForState = result.districts,
                             isAtLargeOrDelegate = false,
                             districtHint = DistrictHint.Multiple(result.districts),
@@ -167,10 +173,10 @@ class LocationPickerViewModel @Inject constructor(
 
     fun save() {
         val state = _uiState.value.selectedState ?: return
-        // pendingDistrict is 0 for at-large/delegate, so it's safe to pass through.
+        // selectedDistrict is 0 for at-large/delegate, so it's safe to pass through.
         // For non-at-large states the UI gates save behind canSave (= district picked),
         // so a null here means at-large; pass null and let the repo filter return all.
-        val district = pendingDistrict
+        val district = _uiState.value.selectedDistrict
         viewModelScope.launch {
             val resolved = runCatching {
                 members.findRepsForLocation(
