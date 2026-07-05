@@ -28,6 +28,13 @@ data class LocationPickerUiState(
     val zipInput: String = "",
     val districtHint: DistrictHint = DistrictHint.None,
     val canSave: Boolean = false,
+    /**
+     * True while a single-district ZIP match is awaiting the user's confirmation.
+     * A single match pre-fills [selectedState]/[selectedDistrict] and pops a
+     * confirmation dialog so it's obvious an action is needed, rather than
+     * saving silently or leaving the user unsure they must press Save.
+     */
+    val awaitingZipConfirm: Boolean = false,
     val mode: LocationPickerMode = LocationPickerMode.Pick,
     /**
      * True when the bundled ZIP -> congressional-district crosswalk asset is

@@ -19,18 +19,15 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.dp
-import com.informedcitizen.pipeline.model.Member
-import com.informedcitizen.ui.components.ContactMethod
 
 /**
- * Per-rep contact-options explainer. Opened by tapping the "?" button on
- * a [com.informedcitizen.ui.components.MemberRowWithHelp]. Lists the
- * methods this rep actually has, or an empty-state notice if there are none.
+ * Static explainer for the contact-option buttons that can appear on a
+ * representative's card. Describes every possible method regardless of which
+ * ones a given rep publishes, so the guidance is stable across reps. Opened
+ * from the "?" action next to the screen title.
  */
 @Composable
 internal fun ContactHelpDialog(
-    member: Member,
-    methods: List<ContactMethod>,
     onDismiss: () -> Unit,
 ) {
     AlertDialog(
@@ -40,44 +37,41 @@ internal fun ContactHelpDialog(
         },
         title = { Text("Contact options") },
         text = {
-            if (methods.isEmpty()) {
-                Text(
-                    "We don't have any published contact methods on file for " +
-                        "${member.name}. The data comes from the " +
-                        "@unitedstates/congress-legislators project; you can " +
-                        "also visit congress.gov directly.",
+            Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                HelpRow(
+                    icon = Icons.Filled.Phone,
+                    label = "Phone",
+                    description = "Call the representative's DC office.",
                 )
-            } else {
-                Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                    methods.forEach { HelpRow(it) }
-                }
+                HelpRow(
+                    icon = Icons.AutoMirrored.Filled.Send,
+                    label = "Contact form",
+                    description = "Open the representative's official contact webpage.",
+                )
+                HelpRow(
+                    icon = Icons.AutoMirrored.Filled.OpenInNew,
+                    label = "Website",
+                    description = "Open the representative's official site. Shown only " +
+                        "when no contact form is published.",
+                )
+                HelpRow(
+                    icon = Icons.Outlined.Public,
+                    label = "Socials",
+                    description = "Open one of the representative's public social-media profiles.",
+                )
+                Text(
+                    "Not every representative publishes every option, so a card only " +
+                        "shows the buttons available for that rep.",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
             }
         },
     )
 }
 
 @Composable
-private fun HelpRow(method: ContactMethod) {
-    val (icon: ImageVector, label: String, description: String) = when (method) {
-        is ContactMethod.Phone -> Triple(
-            Icons.Filled.Phone, "Phone", "Call the DC office",
-        )
-        is ContactMethod.ContactForm -> Triple(
-            Icons.AutoMirrored.Filled.Send,
-            "Contact form",
-            "Open this representative's official contact webpage",
-        )
-        is ContactMethod.Website -> Triple(
-            Icons.AutoMirrored.Filled.OpenInNew,
-            "Website",
-            "Open this representative's official site",
-        )
-        is ContactMethod.Socials -> Triple(
-            Icons.Outlined.Public,
-            "Socials",
-            "Open one of this representative's public social-media profiles",
-        )
-    }
+private fun HelpRow(icon: ImageVector, label: String, description: String) {
     Row(verticalAlignment = Alignment.Top) {
         Icon(icon, contentDescription = null, modifier = Modifier.padding(end = 12.dp, top = 2.dp))
         Column {

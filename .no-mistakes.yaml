@@ -1,0 +1,8 @@
+# no-mistakes repo config — travels with the codebase.
+# The Gradle build lives under android/, and no-mistakes has no cwd option,
+# so each command cd's into it. Task names verified via `./gradlew tasks`.
+commands:
+  test: "cd android && ./gradlew testDebugUnitTest"
+  lint: "cd android && ./gradlew lintDebug"
+  # no spotless/ktlint/detekt in this project — leave format unset so the
+  # gate's lint step owns formatting checks.

@@ -16,6 +16,8 @@ private fun PreviewLocationPickerPickEmpty() = PreviewWrap {
         onLookupZip = {},
         onOpenHouseGov = {},
         onSave = {},
+        onConfirmZipSave = {},
+        onDismissZipConfirm = {},
     )
 }
 
@@ -34,6 +36,8 @@ private fun PreviewLocationPickerPickWithDistricts() = PreviewWrap {
         onLookupZip = {},
         onOpenHouseGov = {},
         onSave = {},
+        onConfirmZipSave = {},
+        onDismissZipConfirm = {},
     )
 }
 
@@ -53,6 +57,8 @@ private fun PreviewLocationPickerPickAtLarge() = PreviewWrap {
         onLookupZip = {},
         onOpenHouseGov = {},
         onSave = {},
+        onConfirmZipSave = {},
+        onDismissZipConfirm = {},
     )
 }
 
@@ -71,6 +77,8 @@ private fun PreviewLocationPickerLookupEmpty() = PreviewWrap {
         onLookupZip = {},
         onOpenHouseGov = {},
         onSave = {},
+        onConfirmZipSave = {},
+        onDismissZipConfirm = {},
     )
 }
 
@@ -92,6 +100,8 @@ private fun PreviewLocationPickerLookupSingleHint() = PreviewWrap {
         onLookupZip = {},
         onOpenHouseGov = {},
         onSave = {},
+        onConfirmZipSave = {},
+        onDismissZipConfirm = {},
     )
 }
 
@@ -112,6 +122,33 @@ private fun PreviewLocationPickerLookupMiss() = PreviewWrap {
         onLookupZip = {},
         onOpenHouseGov = {},
         onSave = {},
+        onConfirmZipSave = {},
+        onDismissZipConfirm = {},
+    )
+}
+
+@PreviewLightDark
+@Composable
+private fun PreviewLocationPickerZipConfirm() = PreviewWrap {
+    LocationPickerContent(
+        state = LocationPickerUiState(
+            mode = LocationPickerMode.Lookup,
+            selectedState = "WA",
+            selectedDistrict = 7,
+            zipInput = "98101",
+            districtHint = DistrictHint.Single(district = 7),
+            canSave = true,
+            awaitingZipConfirm = true,
+        ),
+        onSelectState = {},
+        onSelectMode = {},
+        onSelectDistrict = {},
+        onZipChanged = {},
+        onLookupZip = {},
+        onOpenHouseGov = {},
+        onSave = {},
+        onConfirmZipSave = {},
+        onDismissZipConfirm = {},
     )
 }
 
@@ -132,6 +169,8 @@ private fun PreviewLocationPickerSaveFailed() = PreviewWrap {
         onLookupZip = {},
         onOpenHouseGov = {},
         onSave = {},
+        onConfirmZipSave = {},
+        onDismissZipConfirm = {},
     )
 }
 
