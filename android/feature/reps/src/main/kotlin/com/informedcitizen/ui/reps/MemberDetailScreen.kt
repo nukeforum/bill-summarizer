@@ -8,6 +8,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.HelpOutline
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -30,12 +31,10 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.informedcitizen.pipeline.model.Member
 import com.informedcitizen.pipeline.model.MemberLegislationItem
 import com.informedcitizen.data.util.congressGovUrlFor
+import com.informedcitizen.ui.components.MemberCard
 import com.informedcitizen.ui.components.MemberLegislationRow
-import com.informedcitizen.ui.components.MemberRowWithHelp
-import com.informedcitizen.ui.components.availableContactMethods
 import com.informedcitizen.ui.util.dialPhone
 import com.informedcitizen.ui.util.openInCustomTab
 
@@ -52,6 +51,7 @@ fun MemberDetailScreen(
 
     val state by viewModel.uiState.collectAsStateWithLifecycle()
     val context = LocalContext.current
+    var showHelp by remember { mutableStateOf(false) }
 
     Scaffold(
         modifier = modifier,
@@ -61,6 +61,14 @@ fun MemberDetailScreen(
                 navigationIcon = {
                     IconButton(onClick = onBack) {
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
+                    }
+                },
+                actions = {
+                    IconButton(onClick = { showHelp = true }) {
+                        Icon(
+                            Icons.AutoMirrored.Filled.HelpOutline,
+                            contentDescription = "Contact options help",
+                        )
                     }
                 },
             )
@@ -81,6 +89,10 @@ fun MemberDetailScreen(
             onOpenUrl = { url -> openInCustomTab(context, url) },
         )
     }
+
+    if (showHelp) {
+        ContactHelpDialog(onDismiss = { showHelp = false })
+    }
 }
 
 @Composable
@@ -92,20 +104,18 @@ internal fun MemberDetailContent(
     onOpenUrl: (String) -> Unit,
 ) {
     var tab by remember { mutableIntStateOf(0) }
-    var helpDialogMember by remember { mutableStateOf<Member?>(null) }
 
     Column(modifier = Modifier.padding(innerPadding).fillMaxSize()) {
         when {
             state.isLoading -> CircularProgressIndicator()
             state.member != null -> {
-                MemberRowWithHelp(
+                MemberCard(
                     member = state.member,
                     onClick = {},
                     onCallPhone = onCallPhone,
                     onOpenContactForm = onOpenUrl,
                     onOpenWebsite = onOpenUrl,
                     onOpenSocial = onOpenUrl,
-                    onShowHelp = { helpDialogMember = state.member },
                 )
                 PrimaryTabRow(selectedTabIndex = tab) {
                     Tab(
@@ -136,13 +146,5 @@ internal fun MemberDetailContent(
             }
             state.errorMessage != null -> Text("Error: ${state.errorMessage}")
         }
-    }
-
-    helpDialogMember?.let { member ->
-        ContactHelpDialog(
-            member = member,
-            methods = member.availableContactMethods(),
-            onDismiss = { helpDialogMember = null },
-        )
     }
 }

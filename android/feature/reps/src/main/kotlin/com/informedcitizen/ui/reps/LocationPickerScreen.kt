@@ -15,6 +15,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -30,6 +31,7 @@ import androidx.compose.material3.SegmentedButton
 import androidx.compose.material3.SegmentedButtonDefaults
 import androidx.compose.material3.SingleChoiceSegmentedButtonRow
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -134,6 +136,8 @@ fun LocationPickerScreen(
         onLookupZip = viewModel::lookupZip,
         onOpenHouseGov = { openInCustomTab(context, HOUSE_GOV_LOOKUP) },
         onSave = viewModel::save,
+        onConfirmZipSave = viewModel::confirmZipSave,
+        onDismissZipConfirm = viewModel::dismissZipConfirm,
     )
 }
 
@@ -148,6 +152,8 @@ internal fun LocationPickerContent(
     onLookupZip: () -> Unit,
     onOpenHouseGov: () -> Unit,
     onSave: () -> Unit,
+    onConfirmZipSave: () -> Unit,
+    onDismissZipConfirm: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     var stateExpanded by remember { mutableStateOf(false) }
@@ -252,6 +258,25 @@ internal fun LocationPickerContent(
                 Button(onClick = onSave, enabled = state.canSave) { Text("Save") }
             }
         }
+    }
+
+    if (state.awaitingZipConfirm) {
+        val where = state.selectedState?.let { st ->
+            state.selectedDistrict?.let { d -> "$st-$d" } ?: st
+        } ?: "this district"
+        AlertDialog(
+            onDismissRequest = onDismissZipConfirm,
+            title = { Text("Use this district?") },
+            text = {
+                Text("We matched that ZIP to $where. Save its representatives?")
+            },
+            confirmButton = {
+                TextButton(onClick = onConfirmZipSave) { Text("Save") }
+            },
+            dismissButton = {
+                TextButton(onClick = onDismissZipConfirm) { Text("Cancel") }
+            },
+        )
     }
 }
 

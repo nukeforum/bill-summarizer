@@ -114,20 +114,7 @@ class LocationPickerViewModelTest {
     }
 
     @Test
-    fun `zip lookup single sets state and district hint`() = runTest {
-        val zip = StubZipLookup(nextResult = ZipDistrictResult.Single("NY", 12))
-        val vm = LocationPickerViewModel(newRepo(), zip, newMembers())
-        vm.onZipChanged("10001")
-        vm.lookupZip()
-        val s = vm.uiState.first()
-        assertEquals("NY", s.selectedState)
-        assertEquals(12, s.selectedDistrict)
-        assertEquals(DistrictHint.Single(12), s.districtHint)
-        assertTrue(s.canSave)
-    }
-
-    @Test
-    fun `manual district pick after zip auto-find replaces the auto-found district`() = runTest {
+    fun `zip lookup single prompts for confirmation without saving yet`() = runTest {
         val repo = newRepo()
         val members = newMembers(
             resolved = RepsForLocation(
@@ -140,18 +127,77 @@ class LocationPickerViewModelTest {
         vm.onZipChanged("10001")
         vm.lookupZip()
 
-        vm.selectDistrict(5)
+        // A single unambiguous match pre-fills the selection and raises the
+        // confirmation prompt, but nothing is persisted until the user confirms.
+        val s = vm.uiState.first()
+        assertEquals("NY", s.selectedState)
+        assertEquals(12, s.selectedDistrict)
+        assertEquals(DistrictHint.Single(12), s.districtHint)
+        assertTrue(s.canSave)
+        assertTrue(s.awaitingZipConfirm)
+        assertEquals(null, members.lastQueriedDistrict)
+        assertTrue(repo.savedIds.first().isEmpty())
+    }
+
+    @Test
+    fun `confirming the zip prompt saves the found district`() = runTest {
+        val repo = newRepo()
+        val members = newMembers(
+            resolved = RepsForLocation(
+                house = listOf(aMember("H1", "house")),
+                senators = listOf(aMember("S1", "senate")),
+            ),
+        )
+        val zip = StubZipLookup(nextResult = ZipDistrictResult.Single("NY", 12))
+        val vm = LocationPickerViewModel(repo, zip, members)
+        vm.onZipChanged("10001")
+        vm.lookupZip()
+
+        vm.confirmZipSave()
+
+        assertFalse(vm.uiState.first().awaitingZipConfirm)
+        assertEquals("NY", members.lastQueriedState)
+        assertEquals(12, members.lastQueriedDistrict)
+        assertEquals(setOf("H1", "S1"), repo.savedIds.first())
+        assertEquals(LocationPickerEvent.Saved, vm.events.first())
+    }
+
+    @Test
+    fun `dismissing the zip prompt keeps the selection for a manual save`() = runTest {
+        val repo = newRepo()
+        val zip = StubZipLookup(nextResult = ZipDistrictResult.Single("NY", 12))
+        val vm = LocationPickerViewModel(repo, zip, newMembers())
+        vm.onZipChanged("10001")
+        vm.lookupZip()
+
+        vm.dismissZipConfirm()
 
         val s = vm.uiState.first()
-        assertEquals(5, s.selectedDistrict)
-        // The stale "Detected 12" hint must not survive a manual override.
-        assertEquals(DistrictHint.None, s.districtHint)
+        assertFalse(s.awaitingZipConfirm)
+        // Selection survives so the user can adjust or press Save themselves.
+        assertEquals(12, s.selectedDistrict)
         assertTrue(s.canSave)
+        assertTrue(repo.savedIds.first().isEmpty())
+    }
 
-        vm.save()
-        assertEquals("NY", members.lastQueriedState)
-        assertEquals(5, members.lastQueriedDistrict)
-        assertEquals(setOf("H1", "S1"), repo.savedIds.first())
+    @Test
+    fun `confirming the zip prompt surfaces SaveFailed when no reps resolve`() = runTest {
+        val repo = newRepo()
+        // newMembers() resolves to an empty result, so the save can't persist.
+        val zip = StubZipLookup(nextResult = ZipDistrictResult.Single("NY", 12))
+        val vm = LocationPickerViewModel(repo, zip, newMembers())
+        vm.onZipChanged("10001")
+        vm.lookupZip()
+
+        vm.confirmZipSave()
+
+        val s = vm.uiState.first()
+        assertEquals(DistrictHint.SaveFailed, s.districtHint)
+        assertFalse(s.awaitingZipConfirm)
+        assertTrue(repo.savedIds.first().isEmpty())
+        // The pick survives so the user can retry with the Save button.
+        assertEquals(12, s.selectedDistrict)
+        assertTrue(s.canSave)
     }
 
     @Test

@@ -140,6 +140,9 @@ class LocationPickerViewModel @Inject constructor(
         viewModelScope.launch {
             when (val result = zipLookup.lookup(zip)) {
                 is ZipDistrictResult.Single -> {
+                    // A single unambiguous match pre-fills the selection and pops a
+                    // confirmation dialog (awaitingZipConfirm). This makes the next
+                    // action obvious without requiring the user to hunt for Save.
                     _uiState.update {
                         it.copy(
                             selectedState = result.state,
@@ -148,6 +151,7 @@ class LocationPickerViewModel @Inject constructor(
                             isAtLargeOrDelegate = isSingleMember(result.state),
                             districtHint = DistrictHint.Single(result.district),
                             canSave = true,
+                            awaitingZipConfirm = true,
                         )
                     }
                 }
@@ -162,13 +166,29 @@ class LocationPickerViewModel @Inject constructor(
                             isAtLargeOrDelegate = false,
                             districtHint = DistrictHint.Multiple(result.districts),
                             canSave = false,
+                            awaitingZipConfirm = false,
                             mode = LocationPickerMode.Pick,
                         )
                     }
                 }
-                ZipDistrictResult.Miss -> _uiState.update { it.copy(districtHint = DistrictHint.Miss) }
+                ZipDistrictResult.Miss ->
+                    _uiState.update { it.copy(districtHint = DistrictHint.Miss, awaitingZipConfirm = false) }
             }
         }
+    }
+
+    /** Confirm the single-district ZIP match and persist it. */
+    fun confirmZipSave() {
+        _uiState.update { it.copy(awaitingZipConfirm = false) }
+        save()
+    }
+
+    /**
+     * Dismiss the ZIP confirmation without saving. The selection is kept so the
+     * user can adjust the district or press Save manually.
+     */
+    fun dismissZipConfirm() {
+        _uiState.update { it.copy(awaitingZipConfirm = false) }
     }
 
     fun save() {

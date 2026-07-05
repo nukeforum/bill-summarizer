@@ -43,7 +43,11 @@ enum class SocialPlatform(
 fun Member.availableContactMethods(): List<ContactMethod> = buildList {
     phone?.takeIf { it.isNotBlank() }?.let { add(ContactMethod.Phone(it)) }
     contactForm?.takeIf { it.isNotBlank() }?.let { add(ContactMethod.ContactForm(it)) }
-    website?.takeIf { it.isNotBlank() }?.let { add(ContactMethod.Website(it)) }
+    // Website is a fallback for reps without a contact form; when the form
+    // (message) method is present the website method is suppressed.
+    if (none { it is ContactMethod.ContactForm }) {
+        website?.takeIf { it.isNotBlank() }?.let { add(ContactMethod.Website(it)) }
+    }
     socials
         .mapNotNull { raw -> SocialPlatform.fromRaw(raw.platform)?.let { SocialItem(it, raw.handle) } }
         .takeIf { it.isNotEmpty() }

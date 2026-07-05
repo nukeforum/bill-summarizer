@@ -50,7 +50,7 @@ class MemberContactMethodsTest {
     }
 
     @Test
-    fun `all three present in fixed order Phone-ContactForm-Website`() {
+    fun `contact form suppresses website`() {
         val m = member(
             phone = "(202) 224-3441",
             contactForm = "https://example.gov/contact",
@@ -60,6 +60,20 @@ class MemberContactMethodsTest {
             listOf(
                 ContactMethod.Phone("(202) 224-3441"),
                 ContactMethod.ContactForm("https://example.gov/contact"),
+            ),
+            m.availableContactMethods(),
+        )
+    }
+
+    @Test
+    fun `website appears as fallback when contact form is absent`() {
+        val m = member(
+            phone = "(202) 224-3441",
+            website = "https://example.gov",
+        )
+        assertEquals(
+            listOf(
+                ContactMethod.Phone("(202) 224-3441"),
                 ContactMethod.Website("https://example.gov"),
             ),
             m.availableContactMethods(),
@@ -67,16 +81,13 @@ class MemberContactMethodsTest {
     }
 
     @Test
-    fun `form and website without phone preserves order`() {
+    fun `blank contact form does not suppress website`() {
         val m = member(
-            contactForm = "https://example.gov/contact",
+            contactForm = "  ",
             website = "https://example.gov",
         )
         assertEquals(
-            listOf(
-                ContactMethod.ContactForm("https://example.gov/contact"),
-                ContactMethod.Website("https://example.gov"),
-            ),
+            listOf(ContactMethod.Website("https://example.gov")),
             m.availableContactMethods(),
         )
     }

@@ -9,13 +9,16 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.HelpOutline
 import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -28,9 +31,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.informedcitizen.pipeline.model.Member
-import com.informedcitizen.ui.components.MemberRowWithHelp
-import com.informedcitizen.ui.components.availableContactMethods
+import com.informedcitizen.ui.components.MemberCard
 import com.informedcitizen.ui.util.dialPhone
 import com.informedcitizen.ui.util.openInCustomTab
 
@@ -65,7 +66,8 @@ internal fun RepsListContent(
     modifier: Modifier = Modifier,
 ) {
     val scroll = rememberScrollState()
-    var helpDialogMember by remember { mutableStateOf<Member?>(null) }
+    var showHelp by remember { mutableStateOf(false) }
+    var showDeleteConfirm by remember { mutableStateOf(false) }
 
     Column(
         modifier = modifier
@@ -85,9 +87,16 @@ internal fun RepsListContent(
                 textAlign = TextAlign.Start,
             )
 
+            IconButton(onClick = { showHelp = true }) {
+                Icon(
+                    Icons.AutoMirrored.Filled.HelpOutline,
+                    contentDescription = "Contact options help",
+                )
+            }
+
             if (state is RepsListUiState.Loaded) {
-                IconButton(onClick = onDeleteSavedReps) {
-                    Icon(Icons.Filled.Delete, contentDescription = "Delete")
+                IconButton(onClick = { showDeleteConfirm = true }) {
+                    Icon(Icons.Filled.Delete, contentDescription = "Delete saved representatives")
                 }
             }
         }
@@ -124,14 +133,13 @@ internal fun RepsListContent(
                     )
                 } else {
                     state.senators.forEach { m ->
-                        MemberRowWithHelp(
+                        MemberCard(
                             member = m,
                             onClick = { onMemberClick(m.bioguideId) },
                             onCallPhone = onCallPhone,
                             onOpenContactForm = onOpenUrl,
                             onOpenWebsite = onOpenUrl,
                             onOpenSocial = onOpenUrl,
-                            onShowHelp = { helpDialogMember = m },
                         )
                     }
                 }
@@ -149,14 +157,13 @@ internal fun RepsListContent(
                     )
                 } else {
                     state.house.forEach { m ->
-                        MemberRowWithHelp(
+                        MemberCard(
                             member = m,
                             onClick = { onMemberClick(m.bioguideId) },
                             onCallPhone = onCallPhone,
                             onOpenContactForm = onOpenUrl,
                             onOpenWebsite = onOpenUrl,
                             onOpenSocial = onOpenUrl,
-                            onShowHelp = { helpDialogMember = m },
                         )
                     }
                 }
@@ -166,11 +173,31 @@ internal fun RepsListContent(
                 Text("Couldn't load: ${state.message}", color = MaterialTheme.colorScheme.error)
         }
 
-        helpDialogMember?.let { member ->
-            ContactHelpDialog(
-                member = member,
-                methods = member.availableContactMethods(),
-                onDismiss = { helpDialogMember = null },
+        if (showHelp) {
+            ContactHelpDialog(onDismiss = { showHelp = false })
+        }
+
+        if (showDeleteConfirm) {
+            AlertDialog(
+                onDismissRequest = { showDeleteConfirm = false },
+                title = { Text("Remove saved representatives?") },
+                text = {
+                    Text(
+                        "This clears the representatives saved to this device. " +
+                            "You can add them again by setting your location.",
+                    )
+                },
+                confirmButton = {
+                    TextButton(
+                        onClick = {
+                            showDeleteConfirm = false
+                            onDeleteSavedReps()
+                        },
+                    ) { Text("Remove") }
+                },
+                dismissButton = {
+                    TextButton(onClick = { showDeleteConfirm = false }) { Text("Cancel") }
+                },
             )
         }
     }
