@@ -262,7 +262,7 @@ internal fun LocationPickerContent(
 
     if (state.awaitingZipConfirm) {
         val where = state.selectedState?.let { st ->
-            state.selectedDistrict?.let { d -> "$st-$d" } ?: st
+            state.selectedDistrict?.let { d -> if (d == 0) st else "$st-$d" } ?: st
         } ?: "this district"
         AlertDialog(
             onDismissRequest = onDismissZipConfirm,
