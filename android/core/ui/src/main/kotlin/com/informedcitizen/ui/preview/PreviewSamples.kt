@@ -37,6 +37,7 @@ fun MaterialPreviewTheme(content: @Composable () -> Unit) {
  * to content (`Modifier`) or to width (`Modifier.fillMaxWidth()`).
  */
 @Composable
+@Suppress("ModifierParameter") // Preview-only helper: fillMaxSize default is intentional (see KDoc).
 fun PreviewWrap(
     modifier: Modifier = Modifier.fillMaxSize(),
     content: @Composable () -> Unit,
