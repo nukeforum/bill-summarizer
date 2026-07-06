@@ -1,7 +1,31 @@
 {
-  "generated_at": "2026-07-05T13:52:44Z",
+  "generated_at": "2026-07-06T15:46:37Z",
   "congress": 116,
   "bills": [
+    {
+      "id": "s5076-116",
+      "congress": 116,
+      "type": "s",
+      "number": "5076",
+      "title": "A bill to authorize the Sergeant at Arms and Doorkeeper of the Senate to delegate authority to approve payroll and personnel actions.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blunt, Roy",
+        "party": "R",
+        "state": "MO"
+      },
+      "introduced_date": "2020-12-20",
+      "latest_action": {
+        "date": "2021-01-13",
+        "text": "Became Public Law No: 116-344."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill authorizes the Sergeant at Arms and Doorkeeper of the Senate to designate one or more employees to approve any payroll action or personnel action.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ344/PLAW-116publ344.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ344/PLAW-116publ344_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ344/PLAW-116publ344.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/5076"
+    },
     {
       "id": "sres488-116",
       "congress": 116,
@@ -49,6 +73,102 @@
       "text_url_xml": "https://www.congress.gov/116/bills/sres483/BILLS-116sres483ats.xml",
       "text_url_pdf": "https://www.congress.gov/116/bills/sres483/BILLS-116sres483ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/483"
+    },
+    {
+      "id": "s2710-116",
+      "congress": 116,
+      "type": "s",
+      "number": "2710",
+      "title": "A bill to prohibit the commercial export of covered munitions items to the Hong Kong Police Force.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Merkley, Jeff",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2019-10-24",
+      "latest_action": {
+        "date": "2019-11-27",
+        "text": "Became Public Law No: 116-77."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill directs the President to prohibit the issuance of licenses to export specified munitions items to the Hong Kong Police Force and the Hong Kong Auxiliary Police Force. The specified items include tear gas, rubber bullets, and handcuffs. The President may make an exception upon certifying to Congress as to how such exports are important to U.S. national interests and foreign policy goals. This prohibition shall expire one year after the bill's enactment.</p> <p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ77/PLAW-116publ77.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ77/PLAW-116publ77_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ77/PLAW-116publ77.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/2710"
+    },
+    {
+      "id": "sres345-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "345",
+      "title": "A resolution supporting the goals and ideals of National Cybersecurity Awareness Month to raise awareness about, and enhance the state of, cybersecurity in the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cassidy, Bill",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2019-09-26",
+      "latest_action": {
+        "date": "2019-10-31",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: 9/26/2019 CR S5753)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution expresses the Senate's support for the goals and ideals of National Cybersecurity Awareness Month and pronounces the Senate's commitment to enhancing U.S. cybersecurity through continued cooperation with federal agencies, businesses, educational institutions, and other organizations. </p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres345/BILLS-116sres345ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres345/BILLS-116sres345ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres345/BILLS-116sres345ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/345"
+    },
+    {
+      "id": "sjres53-116",
+      "congress": 116,
+      "type": "sjres",
+      "number": "53",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"Repeal of the Clean Power Plan; Emission Guidelines for Greenhouse Gas Emissions From Existing Electric Utility Generating Units; Revisions to Emission Guidelines Implementing Regulations\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cardin, Benjamin L.",
+        "party": "D",
+        "state": "MD"
+      },
+      "introduced_date": "2019-09-09",
+      "latest_action": {
+        "date": "2019-10-17",
+        "text": "Failed of passage in Senate by Yea-Nay Vote. 41 - 53. Record Vote Number: 324."
+      },
+      "outcome": "failed",
+      "summary_crs": " <p>This joint resolution nullifies the Environmental Protection Agency's rule that</p> <ul> <li>repealed the Clean Power Plan, which established emission guidelines for states to follow in limiting carbon dioxide emissions from existing power plants;</li> <li>finalized the Affordable Clean Energy rule, which replaced the Clean Power Plan with emission guidelines for states to use when developing plans to limit carbon dioxide; and </li> <li>revised requirements that govern the process under which the EPA and states develop emission standards for pollutants emitted by existing stationary sources.</li> </ul>",
+      "text_url_html": "https://www.congress.gov/116/bills/sjres53/BILLS-116sjres53is.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sjres53/BILLS-116sjres53is.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sjres53/BILLS-116sjres53is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-joint-resolution/53"
+    },
+    {
+      "id": "sres322-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "322",
+      "title": "A resolution expressing support for the designation of the week of September 22 through September 28, 2019, as Rail Safety Week in the United States, and supporting the goals and ideals of Rail Safety Week to reduce rail-related accidents, fatalities, and injuries.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wicker, Roger F.",
+        "party": "R",
+        "state": "MS"
+      },
+      "introduced_date": "2019-09-23",
+      "latest_action": {
+        "date": "2019-10-15",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: 09/23/2019 CR S5631)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution expresses support for the designation of Rail Safety Week.</p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres322/BILLS-116sres322ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres322/BILLS-116sres322ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres322/BILLS-116sres322ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/322"
     },
     {
       "id": "sres330-116",
@@ -241,6 +361,78 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ21/PLAW-116publ21_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ21/PLAW-116publ21.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/1436"
+    },
+    {
+      "id": "sres174-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "174",
+      "title": "A resolution expressing support for the designation of the week of June 1, 2019, through June 9, 2019, as \"National Fishing and Boating Week\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wicker, Roger F.",
+        "party": "R",
+        "state": "MS"
+      },
+      "introduced_date": "2019-04-30",
+      "latest_action": {
+        "date": "2019-06-05",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR 04/30/2019 S2523)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution (1) designates the week of June 1-June 9, 2019, as National Fishing and Boating Week; and (2)\trecognizes that the recreational boating community and the boating industry should be commended for their numerous contributions to the economy, the well-being of citizens, and responsible environmental stewardship of water resources.</p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres174/BILLS-116sres174ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres174/BILLS-116sres174ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres174/BILLS-116sres174ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/174"
+    },
+    {
+      "id": "sres160-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "160",
+      "title": "A resolution recognizing the contributions of defense laboratories to the technological dominance of the United States Armed Forces and supporting the designation of April 25, 2019, as \"Department of Defense Laboratory Day 2019\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Jones, Doug",
+        "party": "D",
+        "state": "AL"
+      },
+      "introduced_date": "2019-04-11",
+      "latest_action": {
+        "date": "2019-05-02",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR 4/11/2019 S2439-2440)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution supports the designation of April 25, 2019, as Department of Defense Laboratory Day 2019 and recognizes the contributions of the Department of Defense laboratories.</p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres160/BILLS-116sres160ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres160/BILLS-116sres160ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres160/BILLS-116sres160ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/160"
+    },
+    {
+      "id": "sres72-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "72",
+      "title": "A resolution honoring the 100th anniversary of Fort Benning in Columbus, Georgia.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Perdue, David",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2019-02-14",
+      "latest_action": {
+        "date": "2019-03-26",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR 2/14/2019 S1387-1388)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution honors Fort Benning in Columbus, Georgia, on its 100th anniversary and commends the thousands of men and women who have worked and trained at Fort Benning. </p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres72/BILLS-116sres72ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres72/BILLS-116sres72ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres72/BILLS-116sres72ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/72"
     }
   ]
 }
