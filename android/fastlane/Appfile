@@ -9,4 +9,4 @@ package_name("com.informedcitizen")
 #
 #   export PLAY_STORE_JSON_KEY=/secure/path/play-service-account.json
 #
-json_key_file(ENV["PLAY_STORE_JSON_KEY"] || "play-store-service-account.json")
+json_key_file(ENV["PLAY_STORE_JSON_KEY"] || "fastlane/play-store-service-account.json")
