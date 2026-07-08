@@ -1,0 +1,76 @@
+# Fastfile for the Informed Citizen Android app.
+#
+# Lives under android/ so it sits next to the Gradle wrapper (android/gradlew).
+# All Gradle actions run with android/ as the working directory, so
+# `project_dir: "."` targets ./gradlew (i.e. android/gradlew) and
+# `gradle_path: "./gradlew"` invokes the committed wrapper — never a
+# system-wide gradle.
+#
+# Release signing is configured entirely in android/app/build.gradle.kts,
+# which reads the keystore path/passwords from Gradle properties with an
+# environment-variable fallback (INFORMEDCITIZEN_KEYSTORE_PATH,
+# INFORMEDCITIZEN_KEYSTORE_PASSWORD, INFORMEDCITIZEN_KEY_ALIAS,
+# INFORMEDCITIZEN_KEY_PASSWORD). Fastlane does NOT re-implement signing;
+# it just runs bundleRelease and lets Gradle sign the AAB. Those env vars
+# (or ~/.gradle/gradle.properties) must be present for build/deploy lanes.
+
+default_platform(:android)
+
+# Relative to android/ (the fastlane working directory).
+AAB_OUTPUT_PATH = "app/build/outputs/bundle/release/app-release.aab".freeze
+
+platform :android do
+  desc "Run the app's unit tests (Gradle :app:testDebugUnitTest)"
+  lane :test do
+    gradle(
+      task: ":app:testDebugUnitTest",
+      project_dir: ".",
+      gradle_path: "./gradlew",
+    )
+  end
+
+  desc "Assemble a signed release App Bundle (Gradle :app:bundleRelease)"
+  lane :build do
+    gradle(
+      task: ":app:bundleRelease",
+      project_dir: ".",
+      gradle_path: "./gradlew",
+    )
+  end
+
+  desc "Build + upload the release AAB to the Play Store internal track"
+  lane :deploy_internal do
+    deploy(track: "internal")
+  end
+
+  desc "Build + upload the release AAB to the Play Store beta track"
+  lane :deploy_beta do
+    deploy(track: "beta")
+  end
+
+  desc "Build + upload the release AAB to the Play Store production track"
+  lane :deploy_production do
+    deploy(track: "production")
+  end
+
+  # Parameterized deploy shared by the per-track lanes above.
+  # Usage: fastlane deploy track:internal
+  desc "Build the release AAB and upload it to the given Play Store track"
+  lane :deploy do |options|
+    track = options[:track] || "internal"
+
+    build
+
+    upload_to_play_store(
+      track: track,
+      aab: AAB_OUTPUT_PATH,
+      # package_name + json_key_file are taken from the Appfile
+      # (json_key_file resolves PLAY_STORE_JSON_KEY at runtime).
+      skip_upload_apk: true,
+      skip_upload_metadata: true,
+      skip_upload_images: true,
+      skip_upload_screenshots: true,
+      release_status: track == "production" ? "completed" : "draft",
+    )
+  end
+end

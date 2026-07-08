@@ -1,0 +1,6 @@
+source "https://rubygems.org"
+
+# Pin fastlane. Generate a committed Gemfile.lock with `bundle install`
+# (or `bundle lock`) on a machine with a Ruby toolchain, then run lanes
+# via `bundle exec fastlane <lane>` so the pinned version is honoured.
+gem "fastlane", "~> 2.227"
