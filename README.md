@@ -12,10 +12,18 @@ its own — it builds a structured prompt and shares it via Android's
   sponsor, latest action, and outcome chips.
 - **Bill detail + LLM share.** One tap composes a prompt with the bill
   text (when available) and shares to ChatGPT, Claude, or Gemini.
-- **Reps lookup.** Find your senators and representative by ZIP code,
-  with a detail page that surfaces their recent bill activity.
+- **Reps lookup.** Find your senators and representative by ZIP code
+  (with a confirmation step for the matched district) or by picking your
+  state and district by hand. Each detail page surfaces recent bill
+  activity plus contact options — phone, website, and official social
+  accounts — with an in-app guide to each.
 - **Session calendar.** When is the House or Senate next in session?
   Tells you at a glance whether today is a likely floor-activity day.
+- **Bring your own key (BYOK).** Add your own free Congress.gov API key
+  in Settings → Data sources to fetch bill and member data directly from
+  Congress.gov instead of the published feed. The key is stored encrypted
+  on-device (AES/GCM via the Android Keystore). See `feature/datasources`
+  and `pipeline/docs/api-keys.md`.
 - **On-device AI titles.** Optional Gemini Nano (Google AI Edge) bill
   title summaries that run entirely on-device. **Currently suppressed**
   by `FeatureFlags.AI_TITLES = false` in `core/model` — the full feature

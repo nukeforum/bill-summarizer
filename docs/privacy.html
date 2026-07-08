@@ -16,7 +16,7 @@
 <body>
   <p><a href="./">&larr; Informed Citizen</a></p>
   <h1>Privacy Policy</h1>
-  <p class="meta">Last updated: 2026-05-05</p>
+  <p class="meta">Last updated: 2026-07-08</p>
 
   <p>
     Informed Citizen is an Android app that displays U.S. Congressional bill
@@ -28,22 +28,54 @@
 
   <h2>What the app stores on your device</h2>
   <p>
-    The only setting the app persists is your selected theme
-    (<code>system</code>, <code>light</code>, or <code>dark</code>). It is
-    stored locally using Android Jetpack DataStore and never leaves your
-    device, except as part of the standard Android Auto Backup that your
-    device manages with your Google account.
+    Everything the app saves stays on your device, using Android Jetpack
+    DataStore (and a local cache database). None of it is sent to us — we
+    run no server and have no account to attach it to. The app persists:
+  </p>
+  <ul>
+    <li>Your <strong>theme preference</strong> (<code>system</code>,
+      <code>light</code>, or <code>dark</code>, plus the color palette).</li>
+    <li>Your <strong>crash-reporting choice</strong> (off unless you turn it
+      on — see below).</li>
+    <li>Your <strong>saved representatives</strong> — the state and district
+      you pick, or that you confirm after a ZIP-code lookup — so the app can
+      show your senators and representative without asking again.</li>
+    <li>A <strong>local cache</strong> of the bill, session-calendar, and
+      member data the app has downloaded, so it works quickly and offline.</li>
+    <li>If you turn on <strong>Bring Your Own Key</strong> (Settings &rarr;
+      Data sources), your <strong>Congress.gov API key</strong>. It is
+      encrypted at rest with a key held in the Android Keystore that app code
+      can never read and that never leaves your device; the key is used only
+      to authenticate <em>your</em> requests to Congress.gov (see below).</li>
+  </ul>
+  <p>
+    This on-device data may be included in the standard Android Auto Backup
+    that your device manages with your Google account. The Congress.gov API
+    key is a special case: because its encryption key lives only in your
+    device's Keystore and is never backed up, a backed-up copy of the key
+    cannot be decrypted on any other device.
   </p>
 
   <h2>What the app sends over the network</h2>
   <ul>
     <li>
-      <strong>Bill manifest.</strong> The app downloads a public JSON file from
-      <a href="https://nukeforum.github.io/bill-summarizer/data/bills.json">nukeforum.github.io/bill-summarizer/data/bills.json</a>,
-      hosted on GitHub Pages. This is a plain HTTPS request for a public
-      file; no personal information is sent. GitHub may log standard request
+      <strong>Bill data feed.</strong> By default the app downloads public JSON
+      files from
+      <a href="https://nukeforum.github.io/bill-summarizer/data/congresses.json">nukeforum.github.io/bill-summarizer/data/</a>,
+      hosted on GitHub Pages. This is a plain HTTPS request for public
+      files; no personal information is sent. GitHub may log standard request
       metadata (IP address, user agent) per their own
       <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>.
+    </li>
+    <li>
+      <strong>Direct Congress.gov fetching (only if you opt in).</strong> If you
+      add your own Congress.gov API key under Settings &rarr; Data sources, the
+      app fetches bill and member data directly from the official Congress.gov
+      API (<code>api.congress.gov</code>, operated by the Library of Congress)
+      over HTTPS, authenticated with your key. Your key is sent only to
+      Congress.gov to authorize your own requests — never to us or any third
+      party. This path is off unless you enter a key; with no key, the app uses
+      only the public data feed above.
     </li>
     <li>
       <strong>Congress.gov links.</strong> When you open a bill on Congress.gov
