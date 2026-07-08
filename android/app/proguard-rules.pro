@@ -19,6 +19,13 @@
 # Compose tooling references that R8 occasionally flags in optimized builds.
 -dontwarn androidx.compose.ui.tooling.**
 
+# OkHttp 5.x's server-sent-events support (okhttp3.internal.sse.RealEventSource)
+# references okhttp3.internal.Util, which was relocated/removed in OkHttp 5, so
+# R8 flags it as a missing class. The app never uses SSE (read-only HTTP GETs),
+# making this a dead code path — suppress the warning as AGP's generated
+# missing_rules.txt recommends.
+-dontwarn okhttp3.internal.Util
+
 # Firebase Component discovery instantiates each ComponentRegistrar via the
 # no-arg constructor named in <meta-data> in the merged manifest. Firebase's
 # bundled rules keep the class name but not the constructor, so R8 strips
