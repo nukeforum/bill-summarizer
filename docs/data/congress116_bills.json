@@ -1,7 +1,31 @@
 {
-  "generated_at": "2026-07-09T15:23:58Z",
+  "generated_at": "2026-07-10T14:41:23Z",
   "congress": 116,
   "bills": [
+    {
+      "id": "hr5126-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "5126",
+      "title": "DESCEND Act of 2020",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Graves, Garret",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2019-11-15",
+      "latest_action": {
+        "date": "2021-01-13",
+        "text": "Became Public Law No: 116-340."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Direct Enhancement of Snapper Conservation and the Economy through Novel Devices Act of 2020 or the</b> <b>DESCEND Act of 2020</b></p> <p>This bill addresses the use of descending devices to release reef fish in the Gulf of Mexico. (A descending device is an instrument that will release fish at a depth sufficient for the fish to be able to recover from the effects of barotrauma.)</p> <p>Specifically, the bill requires</p> <ul> <li>commercial and recreational fishermen to possess a venting tool or descending device that is rigged and ready for use when fishing for reef fish in the Gulf of Mexico Exclusive Economic Zone, </li> <li>the Department of Commerce to contract with the National Academy of Sciences to conduct a study and produce a report on discard mortality in the Gulf reef fish fisheries, and</li> <li>Commerce and the Gulf of Mexico Fishery Management Council to develop guidance for reporting discards and associated mortality and develop a plan to assess the effectiveness and usage of barotrauma-reducing devices.</li> </ul>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ340/PLAW-116publ340.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ340/PLAW-116publ340_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ340/PLAW-116publ340.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/5126"
+    },
     {
       "id": "s5076-116",
       "congress": 116,
@@ -171,6 +195,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/5597"
     },
     {
+      "id": "hr5972-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "5972",
+      "title": "Mary Ann Shadd Cary Post Office Dedication Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Blunt Rochester, Lisa [D-DE-At Large]",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2020-02-26",
+      "latest_action": {
+        "date": "2021-01-05",
+        "text": "Became Public Law No: 116-306."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Mary Ann Shadd Cary Post Office Dedication Act</b></p> <p>Designates the facility of the United States Postal Service located at 500 Delaware Avenue, Suite 1, in Wilmington, Delaware, as the \"Mary Ann Shadd Cary Post Office.\"</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ306/PLAW-116publ306.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ306/PLAW-116publ306_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ306/PLAW-116publ306.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/5972"
+    },
+    {
       "id": "hr5983-116",
       "congress": 116,
       "type": "hr",
@@ -265,6 +313,30 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ312/PLAW-116publ312_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ312/PLAW-116publ312.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6418"
+    },
+    {
+      "id": "hr6435-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "6435",
+      "title": "Combating Pandemic Scams Act of 2020",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Carter, Earl L. \"Buddy\"",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2020-04-03",
+      "latest_action": {
+        "date": "2021-01-05",
+        "text": "Became Public Law No: 116-287."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Combating Pandemic Scams Act of 2020</b><br /><br /> This bill requires the Federal Trade Commission (FTC), in consultation with relevant agencies, to inform the public about mail, telemarketing, and internet scams related to COVID-19 (i.e., coronavirus disease 2019). The FTC must establish a national database for such information and must also disseminate information on&nbsp;how to report COVID-19-related scams to the appropriate agency. </p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ287/PLAW-116publ287.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ287/PLAW-116publ287_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ287/PLAW-116publ287.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6435"
     },
     {
       "id": "hr6535-116",
@@ -411,6 +483,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/8611"
     },
     {
+      "id": "s3418-116",
+      "congress": 116,
+      "type": "s",
+      "number": "3418",
+      "title": "STORM Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Peters, Gary C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2020-03-09",
+      "latest_action": {
+        "date": "2021-01-01",
+        "text": "Became Public Law No: 116-284."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Safeguarding Tomorrow through Ongoing Risk Mitigation Act or the STORM Act</b></p> <p>This bill authorizes the Federal Emergency Management Agency (FEMA) to enter into agreements with any state or Indian tribal government to make capitalization grants for the establishment of hazard mitigation revolving loan funds.</p> <p> Such funds shall provide funding assistance to local governments to carry out projects to reduce disaster risks for homeowners, businesses, nonprofit organizations, and communities in order to decrease the loss of life and property, the cost of insurance claims, and federal disaster payments.</p> <p>Until FEMA issues final regulations to implement provisions of this bill, it may (1) waive notice and comment rulemakings if necessary, and (2) provide capitalization grants as a pilot program.</p> <p>FEMA shall not be liable for any claim based on the exercise or performance of, or the failure to exercise or perform, a discretionary function or duty by FEMA or by a FEMA employee in carrying out this bill.</p> <p>The Government Accountability Office shall report to Congress, examining (1) the appropriateness of regulations and guidance issued by FEMA for the program; (2) a description of the number of the entity loan funds established, the projects funded from such entity loan funds, and the extent to which projects funded by the loan funds adhere to any applicable hazard mitigation plans; (3) the effectiveness of the entity loan funds to lower disaster related costs; and (4) recommendations for improving the administration of entity loan funds.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ284/PLAW-116publ284.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ284/PLAW-116publ284_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ284/PLAW-116publ284.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/3418"
+    },
+    {
       "id": "sres406-116",
       "congress": 116,
       "type": "sres",
@@ -457,6 +553,78 @@
       "text_url_xml": "https://www.congress.gov/116/bills/sres684/BILLS-116sres684ats.xml",
       "text_url_pdf": "https://www.congress.gov/116/bills/sres684/BILLS-116sres684ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/684"
+    },
+    {
+      "id": "s2216-116",
+      "congress": 116,
+      "type": "s",
+      "number": "2216",
+      "title": "TEAM Veteran Caregivers Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Peters, Gary C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2019-07-23",
+      "latest_action": {
+        "date": "2020-12-31",
+        "text": "Became Public Law No: 116-278."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Transparency and Effective Accountability Measures for Veteran Caregivers Act or the TEAM Veteran Caregivers Act</b></p> <p>The bill revises the administration of Department of Veterans Affairs (VA) caregiver programs. Specifically, the bill requires the VA to report on the feasibility and advisability of formally recognizing caregivers of veterans by identifying them in the veteran's electronic health record. Such caregivers covered by the bill include those approved as a provider of personal care services under the Program of Comprehensive Assistance for Family Caregivers and those participating in the Program of General Caregiver Support Services. If the VA determines that formally recognizing caregivers is feasible and advisable, it must implement recognition.</p> <p>The bill requires the VA to use standardized letters to notify veterans, their caregivers, and applicants for the program regarding decisions affecting the furnishing of assistance under the Program of Comprehensive Assistance for Family Caregivers. Such notifications must contain specified details regarding the decision.</p> <p>The bill also authorizes the VA to extend benefits for a 90-day period under the Program of Comprehensive Assistance for Family Caregivers, including the monthly personal caregiver stipend, after determining that a veteran is no longer eligible for the program solely because of improvement in their condition. The effective date of discharge from the program shall not be earlier than 60 days after the date on which the VA provides notice of the lack of eligibility.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ278/PLAW-116publ278.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ278/PLAW-116publ278_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ278/PLAW-116publ278.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/2216"
+    },
+    {
+      "id": "s2730-116",
+      "congress": 116,
+      "type": "s",
+      "number": "2730",
+      "title": "Drone Advisory Committee for the 21st Century Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Peters, Gary C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2019-10-29",
+      "latest_action": {
+        "date": "2020-12-31",
+        "text": "Became Public Law No: 116-280."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Drone Advisory Committee for the 21st Century Act </b></p> <p>This bill requires the Federal Aviation Administration (FAA) to take appropriate steps to encourage direct representation of county and tribal governments, as well as agriculture, forestry, rangeland sectors, and other rural interests on the Drone Advisory Committee.</p> <p>The FAA must include public participation in the process of nominating individuals for membership on the committee.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ280/PLAW-116publ280.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ280/PLAW-116publ280_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ280/PLAW-116publ280.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/2730"
+    },
+    {
+      "id": "s914-116",
+      "congress": 116,
+      "type": "s",
+      "number": "914",
+      "title": "Coordinated Ocean Observations and Research Act of 2020",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wicker, Roger F.",
+        "party": "R",
+        "state": "MS"
+      },
+      "introduced_date": "2019-03-27",
+      "latest_action": {
+        "date": "2020-12-31",
+        "text": "Became Public Law No: 116-271."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Coordinated Ocean Observations and Research Act of 2020</b></p> <p>This bill reauthorizes through FY2025 and revises the Integrated Coastal and Ocean Observation System (IOOS), which is a network of federal and regional entities that provide information about the nation's coasts, oceans, and Great Lakes, as well as new tools and forecasts to improve safety, enhance the economy, and protect the environment.</p> <p>The bill revises the authority of the National Oceanic and Atmospheric Administration (NOAA) to conduct scientific assessments related to storms, including to (1) direct NOAA to seek public input before the Named Storm Event Model (the official meteorological and oceanographic computerized model which utilizes data to replicate the magnitude, timing, and spatial variations of winds, rainfall, and storm surges associated with named storms for which post-storm assessments are conducted) takes effect, and (2) allow NOAA to deploy sensors to areas in coastal states that are at the highest risk of experiencing geophysical events that would cause indeterminate losses.</p> <p>The bill provides statutory authority for NOAA's National Water Center. (The center currently exists at NOAA as the research and operational center of excellence for hydrologic analyses, forecasting, and related decision support services.)</p> <p>Additionally, the bill directs the National Weather Service (NWS) to make a policy directive for the National Water Center publicly available. The NWS must also (1) initiate and lead all research and development activities to develop operational water resource prediction and related decision support products, (2) collaborate with relevant state and federal agencies regarding total water prediction, and (3) collaboratively develop capabilities necessary for total water predictive capacity.</p> </p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ271/PLAW-116publ271.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ271/PLAW-116publ271_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ271/PLAW-116publ271.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/914"
     },
     {
       "id": "s3257-116",
@@ -577,6 +745,102 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ268/PLAW-116publ268_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ268/PLAW-116publ268.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/4684"
+    },
+    {
+      "id": "s5036-116",
+      "congress": 116,
+      "type": "s",
+      "number": "5036",
+      "title": "Secret Service Overtime Pay Extension Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Graham, Lindsey",
+        "party": "R",
+        "state": "SC"
+      },
+      "introduced_date": "2020-12-16",
+      "latest_action": {
+        "date": "2020-12-30",
+        "text": "Became Public Law No: 116-269."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Secret Service Overtime Pay Extension Act</b></p> <p>This bill extends through 2023 the exemption of U.S. Secret Service officers, employees, and agents who perform protective services from the limitation on premium pay otherwise applicable to federal employees. </p> <p>The bill also requires progress reports on the agency's implementation of certain Government Accountability Office and U.S. Secret Service Protective Mission Panel recommendations.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ269/PLAW-116publ269.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ269/PLAW-116publ269_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ269/PLAW-116publ269.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/5036"
+    },
+    {
+      "id": "s1014-116",
+      "congress": 116,
+      "type": "s",
+      "number": "1014",
+      "title": "Route 66 Centennial Commission Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Duckworth, Tammy",
+        "party": "D",
+        "state": "IL"
+      },
+      "introduced_date": "2019-04-03",
+      "latest_action": {
+        "date": "2020-12-23",
+        "text": "Became Public Law No: 116-256."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Route 66 Centennial Commission Act</b></p> <p>This bill establishes the Route 66 Centennial Commission to honor U.S. Route 66 on the occasion of its centennial anniversary.</p> <p>The bill sets forth the duties of the commission, its membership, powers, and reporting requirements.</p> <p>The commission shall terminate on December 31, 2026.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ256/PLAW-116publ256.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ256/PLAW-116publ256_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ256/PLAW-116publ256.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/1014"
+    },
+    {
+      "id": "s2904-116",
+      "congress": 116,
+      "type": "s",
+      "number": "2904",
+      "title": "IOGAN Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cortez Masto, Catherine",
+        "party": "D",
+        "state": "NV"
+      },
+      "introduced_date": "2019-11-20",
+      "latest_action": {
+        "date": "2020-12-23",
+        "text": "Became Public Law No: 116-258."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Identifying Outputs of Generative Adversarial Networks Act or the IOGAN Act</b></p> <p>This bill directs the National Science Foundation (NSF) and the National Institute of Standards and Technology (NIST) to support research on generative adversarial networks. A generative adversarial network is a software system designed to be trained with authentic inputs (e.g., photographs) to generate similar, but artificial, outputs (e.g., deepfakes).</p> <p>Specifically, the NSF must support research on manipulated or synthesized content and information authenticity and the NIST must support research for the development of measurements and standards necessary to accelerate the development of the technological tools to examine the function and outputs of generative adversarial networks or other technologies that synthesize or manipulate content. </p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ258/PLAW-116publ258.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ258/PLAW-116publ258_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ258/PLAW-116publ258.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/2904"
+    },
+    {
+      "id": "s578-116",
+      "congress": 116,
+      "type": "s",
+      "number": "578",
+      "title": "ALS Disability Insurance Access Act of 2019",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Whitehouse, Sheldon",
+        "party": "D",
+        "state": "RI"
+      },
+      "introduced_date": "2019-02-27",
+      "latest_action": {
+        "date": "2020-12-22",
+        "text": "Became Public Law No: 116-250."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>ALS Disability Insurance Access Act of 2019</b></p> <p>This bill eliminates the five-month waiting period for disability benefits under the Old Age, Survivors, and Disability Insurance program for individuals with amyotrophic lateral sclerosis (a progressive neurodegenerative disease, also known as Lou Gehrig's disease,&nbsp;that affects nerve cells in the brain and spinal cord). Under current law, individuals&nbsp;must wait five months after becoming disabled before their disability insurance benefit payments&nbsp;may begin.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ250/PLAW-116publ250.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ250/PLAW-116publ250_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ250/PLAW-116publ250.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/578"
     },
     {
       "id": "sres682-116",
@@ -1107,6 +1371,78 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/625"
     },
     {
+      "id": "hjres110-116",
+      "congress": 116,
+      "type": "hjres",
+      "number": "110",
+      "title": "Extension of Continuing Appropriations Act, 2021",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Lowey, Nita M.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2020-12-20",
+      "latest_action": {
+        "date": "2020-12-20",
+        "text": "Became Public Law No: 116-226."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Extension of Continuing Appropriations Act, 2021</b></p> <p>This joint resolution provides continuing FY2021 appropriations to federal agencies through December 21, 2020. It is known as a continuing resolution (CR) and prevents a government shutdown that would otherwise occur if the FY2021 appropriations bills have not been enacted when the existing CR expires on December 20, 2020.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ226/PLAW-116publ226.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ226/PLAW-116publ226_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ226/PLAW-116publ226.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-joint-resolution/110"
+    },
+    {
+      "id": "hjres107-116",
+      "congress": 116,
+      "type": "hjres",
+      "number": "107",
+      "title": "Further Additional Continuing Appropriations Act, 2021",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Lowey, Nita M.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2020-12-18",
+      "latest_action": {
+        "date": "2020-12-18",
+        "text": "Became Public Law No: 116-225."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Further Additional Continuing Appropriations Act, 2021</b></p> <p>This joint resolution provides continuing FY2021 appropriations to federal agencies through December 20, 2020. It is known as a continuing resolution (CR) and prevents a government shutdown that would otherwise occur if the FY2021 appropriations bills have not been enacted when the existing CR expires on December 18, 2020.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ225/PLAW-116publ225.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ225/PLAW-116publ225_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ225/PLAW-116publ225.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-joint-resolution/107"
+    },
+    {
+      "id": "s910-116",
+      "congress": 116,
+      "type": "s",
+      "number": "910",
+      "title": "National Sea Grant College Program Amendments Act of 2020",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wicker, Roger F.",
+        "party": "R",
+        "state": "MS"
+      },
+      "introduced_date": "2019-03-27",
+      "latest_action": {
+        "date": "2020-12-18",
+        "text": "Became Public Law No: 116-221."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>National Sea Grant College Program Amendments Act of 2020</b></p> <p>This bill reauthorizes through FY2024 and revises the National Sea Grant College Program, through which the National Oceanic and Atmospheric Administration (NOAA)\tsupports university-based programs that focus on studying, conserving, and effectively using U.S. coastal resources.</p> <p>Among other things, the bill requires NOAA to award Dean John A. Knauss Marine Policy Fellowships. Currently, NOAA has discretion in awarding such fellowships. The fellowships support the placement of graduate students in fields related to ocean, coastal, and Great Lakes resources in positions with the executive and legislative branches.</p> <p>The bill reauthorizes through FY2024 grants for (1) university research on the biology, prevention, and control of aquatic nonnative species; (2) university research on oyster diseases, oyster restoration, and oyster-related human health risks; (3) university research on the biology, prevention, and forecasting of harmful algal blooms; and (4) fishery extension activities conducted by sea grant colleges or sea grant institutes to enhance existing core program funding.</p> <p>The bill authorizes grants for (1) priority issues identified in the National Sea Grant Program's strategic plan, and (2) university research on sustainable aquaculture techniques and technologies.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ221/PLAW-116publ221.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ221/PLAW-116publ221_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ221/PLAW-116publ221.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/910"
+    },
+    {
       "id": "hr4975-116",
       "congress": 116,
       "type": "hr",
@@ -1177,6 +1513,54 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ220/PLAW-116publ220_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ220/PLAW-116publ220.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/5307"
+    },
+    {
+      "id": "hr8900-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "8900",
+      "title": "Further Continuing Appropriations Act, 2021, and Other Extensions Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Lowey, Nita M.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2020-12-08",
+      "latest_action": {
+        "date": "2020-12-11",
+        "text": "Became Public Law No: 116-215."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Further Continuing Appropriations Act, 2021, and Other Extensions Act </b></p> <p>This bill provides continuing FY2021 appropriations to federal agencies through December 18, 2020, and extends several expiring health programs. </p> <p>DIVISION A--FURTHER CONTINUING APPROPRIATIONS ACT, 2021</p> <p><i>Further Continuing Appropriations Act, 2021</i></p> <p>This division provides continuing FY2021 appropriations to federal agencies through December 18, 2020.</p> <p>It is known as a continuing resolution (CR) and prevents a government shutdown that would otherwise occur if the FY2021 appropriations bills have not been enacted when the existing CR expires on December 11, 2020. </p> <p>DIVISION B--HEALTH EXTENDERS <p>TITLE I--MEDICARE AND MEDICAID EXTENDERS <p>(Sec. 1101) This section extends certain minimum adjustments to the work geographic index with respect to the payment of physician services under Medicare. <p>(Sec. 1102) This section extends funding for state health insurance programs, area agencies on aging, aging and disability resource centers, and technical assistance related to outreach and enrollment with respect to Medicare and other programs. <p>(Sec. 1103) This section extends funding for certain Medicare quality-measurement activities. <p>(Sec. 1104) This section extends the Medicaid demonstration program for certified community behavioral health clinics. <p>(Sec. 1105) This section extends the applicability of Medicaid eligibility criteria that protect against spousal impoverishment for recipients of home- and community-based services. <p>(Sec. 1106) This section delays certain reductions to Medicaid disproportionate-share hospital allotments.</p> <p>(Sec. 1107) This section extends the Money Follows the Person Rebalancing Demonstration Program. (Under this program, the Centers for Medicare &amp; Medicaid Services (CMS) may award grants to state Medicaid programs to assist states in increasing the use of home and community care for long-term care and decreasing the use of institutional care.)</p> <p>TITLE II--PUBLIC HEALTH EXTENDERS AND FOOD AND DRUG ADMINISTRATION PROVISIONS</p> <p>Subtitle A--Public Health Extenders</p> <p>(Sec. 1201) This section extends funding for specified programs for community health centers; teaching health centers that operate graduate medical education programs; and the National Health Service Corps, which provides scholarships and student loan repayment programs for health care workers.</p> <p>(Sec. 1202) This section extends funding for research grants to prevent and cure Type I diabetes and grants for services to prevent and treat diabetes among Native Americans.</p> <p>(Sec. 1203) This section extends funding for certain grants for states to educate adolescents on the prevention of pregnancy and sexually transmitted infections.</p> <p>Subtitle B--Food and Drug Administration Provisions</p> <p>(Sec. 1211) This section extends the authority of the Food and Drug Administration to designate a rare pediatric disease drug application as eligible for a priority review voucher.</p> <p>TITLE III--OFFSETS</p> <p>(Sec. 1301) This section requires the CMS to share Medicare Advantage (MA) and Medicare prescription drug benefit enrollment information with liability insurers in response to Medicare secondary payer inquiries. Specifically, the CMS must share whether the claimant who is the subject of the inquiry was entitled to Medicare benefits during the preceding three-year period on any basis, and must also share the plan name and address of any MA or prescription drug benefit plan in which the claimant was enrolled.</p> <p>(Sec. 1302) This section requires the Drug Enforcement Administration (DEA) to revise regulations that allow a practitioner to administer narcotic drugs to a person for purposes of relieving acute withdrawal symptoms while the person awaits arrangements for narcotic treatment. The regulations currently authorize up to a one-day supply of narcotic drugs at one time, for a total of up to three days.</p> <p> The DEA must revise these regulations so as to allow a practitioner to dispense up to a three-day supply of narcotic drugs to one person or for one person's use at one time for the purpose of initiating maintenance treatment or detoxification treatment, or both.</p> <p>(Sec. 1303) This section increases the funds available to the Medicaid Improvement Fund for state activities relating to mechanized claims systems beginning in FY2025.</p> <p>TITLE IV--BUDGETARY EFFECTS </p> <p>(Sec. 1401) This section exempts the budgetary effects of this division from (1) the Statutory Pay-As-You-Go Act of 2010 (PAYGO), (2) the Senate PAYGO rule, and (3) certain budget scorekeeping rules.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ215/PLAW-116publ215.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ215/PLAW-116publ215_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ215/PLAW-116publ215.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/8900"
+    },
+    {
+      "id": "hr8247-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "8247",
+      "title": "Veterans COMPACT Act of 2020",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Takano, Mark",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2020-09-14",
+      "latest_action": {
+        "date": "2020-12-05",
+        "text": "Became Public Law No: 116-214."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Veterans Comprehensive Prevention, Access to Care, and Treatment Act of 2020 or the Veterans COMPACT Act of 2020</b></p> <p>This bill implements programs, policies, and reports related to Department of Veterans Affairs (VA) transition assistance, suicide care, mental health education and treatment, health care, and women veteran care. </p> <p>(Sec. 101) This section requires the VA to carry out a two-year pilot program on information sharing between the VA and designated persons regarding the assistance and benefits available to veterans. </p> <p>(Sec. 102) The VA must annually report (for a period of five years) on its Solid Start program, which is an outreach program for those in their first year of separation from the military. The report must exclude any personally identifiable information regarding a veteran.</p> <p>(Sec. 201) The VA must furnish or pay for emergent suicide care, including transportation costs, at a VA or non-VA facility for certain veterans. The bill requires the VA to ensure certain notification procedures occur in relation to veterans receiving emergent suicide care. </p> <p>The VA must determine the eligibility of individuals receiving emergent suicide care for other VA programs and benefits. Additionally, the VA must make referrals, as appropriate, for care following the period of emergent suicide care.</p> <p>(Sec. 202) The VA must establish a four-year education program for the education and training of caregivers and family members of veterans with mental health disorders.</p> <p>(Sec. 203) This section requires the VA to establish the Task Force on Outdoor Recreation for Veterans to report on and make recommendations regarding the use of public lands or other outdoor spaces for medical treatment and therapy for veterans. </p> <p>(Sec. 204) The VA must seek to contact covered veterans to encourage them to receive comprehensive physical, mental health, eye, and audiological examinations. A covered veteran is a veteran who is enrolled in the VA health care system and has not received health care furnished or paid for by the VA in the past two years.</p> <p>Under the bill, if a covered veteran elects to receive more than one of the comprehensive examinations at a VA health care facility, the VA shall seek to furnish all such examinations on the same day. A covered veteran may also receive an examination from another specified health care provider.</p> <p>The bill provides that the VA may pay for a rural covered veteran to travel to a health care facility to receive a comprehensive examination.</p> <p>The VA shall seek to enter into agreements with nonprofit organizations to provide shuttle service to rural covered veterans for such examinations.</p> <p>(Sec. 205) The VA must provide its police officers with annual training on the prevention of suicide among the population it serves. Each police force of a VA facility must develop a plan to enter into partnerships with local community mental health organizations and experts, local community veterans organizations, local community criminal justice organizations and experts, and local police departments.</p> <p>(Sec. 301) The VA must complete an analysis and report on its programs that provide assistance to women veterans who are homeless or precariously housed to identify the areas in which such programs are failing to meet the needs of such women.</p> <p>(Sec. 302) The VA must annually report on the use of VA health care by women veterans. </p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ214/PLAW-116publ214.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ214/PLAW-116publ214_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ214/PLAW-116publ214.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/8247"
     },
     {
       "id": "hr1833-116",
@@ -1371,6 +1755,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/5384"
     },
     {
+      "id": "sres717-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "717",
+      "title": "A resolution expressing support for the designation of September 25, 2020, as \"National Ataxia Awareness Day\", and raising awareness of ataxia, ataxia research, and the search for a cure.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Warren, Elizabeth",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2020-09-24",
+      "latest_action": {
+        "date": "2020-11-12",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Voice Vote. (text: CR 09/24/2020 S5876)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution expresses support for the designation of September 25, 2020, as National Ataxia Awareness Day to bring attention to this condition.</p> <p>Ataxia is a clinical manifestation that indicates degeneration or dysfunction of the brain that negatively affects coordination, precision, and accurate timing of physical movements.</p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres717/BILLS-116sres717ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres717/BILLS-116sres717ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres717/BILLS-116sres717ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/717"
+    },
+    {
       "id": "sres766-116",
       "congress": 116,
       "type": "sres",
@@ -1419,6 +1827,78 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/767"
     },
     {
+      "id": "hr2359-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "2359",
+      "title": "Whole Veteran Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Lamb, Conor",
+        "party": "D",
+        "state": "PA"
+      },
+      "introduced_date": "2019-04-25",
+      "latest_action": {
+        "date": "2020-10-30",
+        "text": "Became Public Law No: 116-185."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Whole Veteran Act</b></p> <p>This bill requires the Department of Veterans Affairs to report on the implementation of its whole health approach to health care. The report must include an analysis of the accessibility and availability of a variety of services, including hypnosis and acupuncture. The whole health model is a holistic approach that looks at the many areas of life that may affect health in order to make a health plan suited for each individual based on his or her health goals.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ185/PLAW-116publ185.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ185/PLAW-116publ185_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ185/PLAW-116publ185.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/2359"
+    },
+    {
+      "id": "s2638-116",
+      "congress": 116,
+      "type": "s",
+      "number": "2638",
+      "title": "Friendly Airports for Mothers Improvement Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Duckworth, Tammy",
+        "party": "D",
+        "state": "IL"
+      },
+      "introduced_date": "2019-10-17",
+      "latest_action": {
+        "date": "2020-10-30",
+        "text": "Became Public Law No: 116-190."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Friendly Airports for Mothers Improvement Act</b></p> <p>This bill requires small hub airports to maintain a lactation area for nursing mothers and a baby changing table in at least one men's and one women's restroom in each passenger terminal building of the airport. </p> <p>Currently, medium and large hub airports must comply with this requirement by FY2021. The bill requires small hub airports to be in compliance by FY2023.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ190/PLAW-116publ190.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ190/PLAW-116publ190_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ190/PLAW-116publ190.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/2638"
+    },
+    {
+      "id": "s881-116",
+      "congress": 116,
+      "type": "s",
+      "number": "881",
+      "title": "PROSWIFT Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Peters, Gary C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2019-03-26",
+      "latest_action": {
+        "date": "2020-10-21",
+        "text": "Became Public Law No: 116-181."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Promoting Research and Observations of Space Weather to Improve the Forecasting of Tomorrow Act or the PROSWIFT Act</b></p> <p>This bill sets forth provisions concerning improving the ability of the United States to forecast space weather events and mitigate the effects of space weather.</p> <p>The bill provides statutory authority for the National Science and Technology Council's Space Weather Operations, Research, and Mitigation Working Group, which coordinates executive branch efforts regarding space weather.</p> <p>The bill directs the Office of Science and Technology Policy, National Oceanic and Atmospheric Administration (NOAA), National Science Foundation, Air Force, Navy, National Aeronautics and Space Administration (NASA), and U.S. Geological Survey to carry out specified space weather activities. </p> <p>NOAA may establish a pilot program under which NOAA offers to enter into contracts with entities in the commercial space weather sector to provide NOAA with space weather data that meets certain standards.</p> <p>The working group must periodically review and update the benchmarks described in the report of the National Science and Technology Council titled <i>Space Weather Phase 1 Benchmarks</i> and dated June 2018, as necessary, based on (1) any significant new data or advances in scientific understanding that become available, or (2) the evolving needs of entities impacted by space weather phenomena.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ181/PLAW-116publ181.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ181/PLAW-116publ181_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ181/PLAW-116publ181.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/881"
+    },
+    {
       "id": "hjres90-116",
       "congress": 116,
       "type": "hjres",
@@ -1441,6 +1921,54 @@
       "text_url_xml": "https://www.congress.gov/116/bills/hjres90/BILLS-116hjres90rds.xml",
       "text_url_pdf": "https://www.congress.gov/116/bills/hjres90/BILLS-116hjres90rds.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-joint-resolution/90"
+    },
+    {
+      "id": "s2661-116",
+      "congress": 116,
+      "type": "s",
+      "number": "2661",
+      "title": "National Suicide Hotline Designation Act of 2020",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Gardner, Cory",
+        "party": "R",
+        "state": "CO"
+      },
+      "introduced_date": "2019-10-22",
+      "latest_action": {
+        "date": "2020-10-17",
+        "text": "Became Public Law No: 116-172."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>National Suicide Hotline Designation Act of 20</b><b>20</b></p> <p>This bill requires the Federal Communications Commission (FCC) to designate 9-8-8 as the universal telephone number for a national suicide prevention and mental health crisis hotline.</p> <p>A state may impose and collect a fee for providing 9-8-8 related services. However, this fee must be held in a designated account to be spent only in support of 9-8-8 services, and the FCC must submit an annual report on state administration of these fees.</p> <p>The Department of Health and Human Services (HHS) and the Department of Veterans Affairs must jointly report on how to make the use of 9-8-8 operational and effective across the country, and HHS must develop a strategy to provide access to competent, specialized services for high-risk populations such as lesbian, gay, bisexual, transgender, and queer (LGBTQ) youth; minorities; and rural individuals. </p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ172/PLAW-116publ172.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ172/PLAW-116publ172_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ172/PLAW-116publ172.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/2661"
+    },
+    {
+      "id": "s785-116",
+      "congress": 116,
+      "type": "s",
+      "number": "785",
+      "title": "Commander John Scott Hannon Veterans Mental Health Care Improvement Act of 2019",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Tester, Jon",
+        "party": "D",
+        "state": "MT"
+      },
+      "introduced_date": "2019-03-13",
+      "latest_action": {
+        "date": "2020-10-17",
+        "text": "Became Public Law No: 116-171."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Commander John Scott Hannon Veterans Mental Health Care Improvement Act of 2019</b></p> <p>This bill makes updates related to Department of Veterans Affairs (VA) transition assistance, mental health care, care for women veterans, and telehealth care.</p> <p>TITLE I--IMPROVEMENT OF TRANSITION OF INDIVIDUALS TO SERVICES FROM DEPARTMENT OF VETERANS AFFAIRS</p> <p>(Sec. 101) This section requires the VA to submit a plan for the provision of VA health care to any veteran during the one-year period following the discharge or release from active military, naval, or air service.</p> <p>(Sec. 102) The Department of Defense (DOD) and the VA must jointly review and report on the records of each former member of the Armed Forces who died by suicide within one year of separation from the Armed Forces during the five-year period preceding the enactment of this bill. </p> <p>(Sec. 103) The VA must report on the Recovery Engagement and Coordination for Health&#8212;Veterans Enhanced Treatment (REACH VET) program to assess, among other elements, the impact of the program on rates of suicide among veterans. </p> <p>(Sec. 104) This section updates reporting requirements related to the mental and behavioral health care provided by the VA to former members of the Armed Forces with other than honorable discharge.</p> <p>TITLE II--SUICIDE PREVENTION</p> <p>(Sec. 201) This section establishes the Staff Sergeant Parker Gordon Fox Suicide Prevention Grant Program, under which the VA must award grants for a period of three years to eligible entities for the provision of suicide prevention services to veterans and their families. A nongovernmental entity must conduct a study on the provision of such grants to evaluate the effectiveness. </p> <p>In certain circumstances, entities receiving grants must refer eligible individuals for additional care at the VA. If it is clinically appropriate, the VA must provide an individual receiving suicide prevention services through a grant with a mental health care assessment or services. If an individual refuses such care, ongoing clinical services provided by a grantee must be at the expense of the grantee. </p> <p>(Sec. 202) The VA must complete a study and report on the feasibility and advisability of providing complementary and integrative health treatments, such as acupuncture, at all VA medical facilities. </p> <p>(Sec. 203) After the Creating Options for Veterans' Expedited Recovery Commission submits its final report, the VA must conduct a three-year pilot program to provide complementary and integrative health services (e.g., animal therapy) to certain veterans from the VA or non-VA entities for the treatment of post-traumatic stress disorder (PTSD), depression, or anxiety. The VA is authorized to extend the duration based on the results of the implementation.</p> <p>(Sec. 204) The VA must seek to enter into an agreement with the National Academies of Sciences, Engineering, and Medicine to study the effects of opioids and benzodiazepine on all-cause mortality of veterans, including suicide, regardless of whether information relating to such deaths has been reported by the Centers for Disease Control and Prevention. </p> <p>The Government Accountability Office (GAO) must conduct a review of the staffing levels for mental health professionals of the VA. </p> <p>(Sec. 205) This section requires the GAO to report on the VA's efforts to manage veterans at high risk for suicide.</p> <p>TITLE III--PROGRAMS, STUDIES, AND GUIDELINES ON MENTAL HEALTH</p> <p>(Sec. 301) This section requires the VA to conduct a study on the connection between living at high altitude and the risk of developing depression or dying by suicide among veterans. Depending on the results, a follow-up study may be required to identify biological causes and effective treatments.</p> <p>(Sec. 302) The VA must develop a clinical provider treatment toolkit and training materials for the evidence-based management of comorbid mental health conditions, comorbid mental health and substance use disorders, and a comorbid mental health condition and chronic pain.</p> <p>(Sec. 303) The VA and DOD (through the Assessment and Management of Patients at Risk for Suicide Work Group) must issue an update to the VA/DOD Clinical Practice Guideline for Assessment and Management of Patients at Risk for Suicide that (1) considers gender-specific factors; and (2) includes guidance with respect to the efficacy of certain alternative therapies, such as meditation and animal therapy. </p> <p>(Sec. 304) This section requires the VA to complete the development of a clinical practice guideline or guidelines for the treatment of serious mental illness. Under this section, such guidelines must address the treatment of schizophrenia, schizoaffective disorder, and persistent mood disorder (including bipolar disorder I and II).</p> <p>The VA must establish the Serious Mental Illness Work Group with DOD and the Department of Health and Human Services to develop such clinical practice guideline or guidelines.</p> <p>Additionally, the VA must complete an assessment of the <i>2016 Clinical Practice Guidelines for the Management of Major Depressive Disorders</i> to determine if an update is necessary.</p> <p>(Sec. 305) The VA must implement the Precision Medicine for Veterans Initiative to identify and validate brain and mental health biomarkers among veterans, with specific consideration for depression, anxiety, PTSD, bipolar disorder, and traumatic brain injury. The VA must develop data privacy and security measures to ensure the information of veterans participating in the initiative is kept private and secure. The VA must also coordinate efforts of the initiative with the Million Veterans Program.</p> <p>(Sec. 306) This section authorizes the VA to contract with academic institutions or other qualified entities to carry out any statistical analyses and data evaluation as required by law.</p> <p>TITLE IV--OVERSIGHT OF MENTAL HEALTH CARE AND RELATED SERVICES</p> <p>(Sec. 401) The VA must enter into an agreement with a nonfederal government entity that has expertise in conducting and evaluating research-based studies to conduct a study on the effectiveness of the VA's suicide prevention and mental health outreach materials and campaigns.</p> <p>(Sec. 402) The VA must establish measurable goals to evaluate the effectiveness of the VA's mental health and suicide prevention media outreach campaigns.</p> <p>(Sec. 403) This section requires the GAO to conduct a management review of the mental health and suicide prevention services provided by the VA.</p> <p>(Sec. 404) The GAO must report on the VA's efforts to integrate (1) mental health care into VA primary care clinics, and (2) community-based mental health care (care provided by a non-VA provider but paid for by the VA) into the Veterans Health Administration (VHA).</p> <p>(Sec. 405) The VA and DOD must report on their mental health programs, including joint programs of the departments. The VA must establish a joint VA/DOD Intrepid Spirit Center to serve active duty members of the Armed Forces, members of the reserve components, and veterans for mutual benefit and growth in treatment and care for PTSD and traumatic brain injury. </p> <p>TITLE V--IMPROVEMENT OF MENTAL HEALTH MEDICAL WORKFORCE</p> <p>(Sec. 501) The VA must submit a plan to address the staffing of mental health providers at its facilities. Additionally, the VA must develop an occupational series for its licensed professional mental health counselors and marriage and family therapists.</p> <p>(Sec. 502) This section requires the VA to carry out the Department of Veterans Affairs Readjustment Counseling Service Scholarship Program under the Educational Assistance Program.</p> <p>(Sec. 503) The GAO must report on the VA's Readjustment Counseling Service. Such report must include, among other elements, an assessment of barriers to care at Vet Centers.</p> <p>(Sec. 504) This section expands the annual reporting requirement on the activities of the Readjustment Counseling Service to include additional elements.</p> <p>(Sec. 505) The VA must conduct a survey on the attitudes of veterans toward the VA offering appointments outside the usual operating hours of VA facilities, including via telehealth appointments. The VA must also study the feasibility and advisability of offering appointments outside the usual operating hours</p> <p>(Sec. 506) The VA must ensure each of its medical centers is staffed with at least one suicide prevention coordinator. In addition, the VA must conduct a study to determine the feasibility and advisability of the realignment and reorganization of suicide prevention coordinators within the Office of Mental Health and Suicide Prevention and the creation of a suicide prevention coordinator program office.</p> <p>(Sec. 507) This section requires the VA to report on its efforts to implement a suicide prevention program for veterans presenting to an emergency department or urgent care center of the VHA who are assessed to be at risk for suicide and are safe to be discharged home.</p> <p>TITLE VI--IMPROVEMENT OF CARE AND SERVICES FOR WOMEN VETERANS</p> <p>(Sec. 601) This section requires the VA to expand the capabilities of the Women Veterans Call Center by including a text messaging capability.</p> <p>(Sec. 602) The VA must publish a website providing information for women veterans about the benefits and services available to them.</p> <p>TITLE VII--OTHER MATTERS</p> <p>(Sec. 701) This section requires the VA to award grants to entities for the expansion of telehealth capabilities and provision of telehealth services to veterans. An entity seeking to establish a telehealth access point for veterans without grant funding is authorized to enter into an agreement with the VA to establish such access point. </p> <p>The VA must assess and report on the barriers veterans face in accessing telehealth services.</p> <p>(Sec. 702) This section authorizes the VA to enter partnerships with nonfederal government entities to provide hyperbaric oxygen treatment to veterans to research the effectiveness of such therapy in treating certain conditions (e.g., PTSD). </p> <p>The VA must conduct a systematic review of published research literature on off-label use of hyperbaric oxygen therapy to treat PTSD and traumatic brain injury among veterans and nonveterans. Additionally, the VA must conduct a study on all individuals receiving hyperbaric oxygen therapy through the VA's current pilot program to determine the efficacy and effectiveness for treating PTSD and traumatic brain injury.</p> <p>(Sec. 703) The VA must prescribe specified technical qualifications for appointment as a licensed hearing aid specialist in the VHA. Under this section, at least one licensed hearing aid specialist must be appointed at each VA medical center.</p> <p>(Sec. 704) This section requires the VA to complete policy revisions within the internal directive titled <i>Requirements for the Protection of Human Subjects in Research</i> to allow sponsored clinical research of the VA to use accredited commercial institutional review boards to review VA research proposal protocols.</p> <p>The VA must (1) identify accredited commercial institutional review boards for use in connection with sponsored clinical research of the VA, and (2) establish a process to modify existing approvals if a board loses its accreditation during an ongoing clinical trial.</p> <p>(Sec. 705) This section also requires the VA to establish an Office of Research Reviews within the VA's Office of Information and Technology to perform centralized security reviews and complete security processes for approved research sponsored outside the VA, among other purposes.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ171/PLAW-116publ171.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ171/PLAW-116publ171_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ171/PLAW-116publ171.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/785"
     },
     {
       "id": "s1646-116",
@@ -1467,6 +1995,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/1646"
     },
     {
+      "id": "hr991-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "991",
+      "title": "Extension of the Caribbean Basin Economic Recovery Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Sewell, Terri A.",
+        "party": "D",
+        "state": "AL"
+      },
+      "introduced_date": "2019-02-06",
+      "latest_action": {
+        "date": "2020-10-10",
+        "text": "Became Public Law No: 116-164."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Extension of the Caribbean Basin Economic Recovery Act </b></p> <p>This bill extends preferential duty treatment for certain apparel items produced in the Caribbean Basin through FY2030, and it extends the date through which certain merchandise processing fees may be charged through October 21, 2029.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ164/PLAW-116publ164.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ164/PLAW-116publ164_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ164/PLAW-116publ164.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/991"
+    },
+    {
       "id": "hjres87-116",
       "congress": 116,
       "type": "hjres",
@@ -1489,6 +2041,30 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ162/PLAW-116publ162_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ162/PLAW-116publ162.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-joint-resolution/87"
+    },
+    {
+      "id": "hr8337-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "8337",
+      "title": "Continuing Appropriations Act, 2021 and Other Extensions Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Lowey, Nita M.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2020-09-22",
+      "latest_action": {
+        "date": "2020-10-01",
+        "text": "Became Public Law No: 116-159."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Continuing Appropriations Act, 2021 and Other Extensions Act</b></p> <p>This bill provides continuing FY2021 appropriations to federal agencies and extends expiring programs that address health care, surface transportation, agriculture, veterans benefits, and other issues.</p> <p>DIVISION A--CONTINUING APPROPRIATIONS ACT, 2021</p> <p><i>Continuing Appropriations Act, 2021</i></p> <p>This division provides continuing FY2021 appropriations to federal agencies through December 11, 2020.</p> <p>It is known as a continuing resolution (CR) and prevents a government shutdown that would otherwise occur if the FY2021 appropriations bills have not been enacted when FY2021 begins on October 1, 2020.</p> <p>The CR funds most programs and activities at the FY2020 levels with several exceptions that provide funding flexibility and additional appropriations to various programs.</p> <p>(Sec. 101) This section provides FY2021 appropriations to federal agencies for continuing projects or activities at the levels and under the conditions included in specified FY2020 appropriations Acts. It also specifies exceptions and extends several immigration-related programs and authorities.</p> <p>(Sec. 102) This section prohibits the Department of Defense (DOD) from using funds provided by the CR for the new or accelerated production of certain projects for which funding was not provided in FY2020. It also prohibits DOD from initiating certain multiyear procurements.</p> <p>(Sec. 103) This section specifies that funds provided by section 101 shall be available to the extent and in the manner that would be provided in the pertinent appropriations Act.</p> <p>(Sec. 104) This section prohibits appropriations provided by section 101 from being used to initiate or resume any project or activity that was not funded during FY2020.</p> <p>(Sec. 105) This section specifies that appropriations provided by the CR are to be used to conduct FY2021 activities and programs during the period of the CR.</p> <p>(Sec. 106) This section continues the appropriations provided by this division through the earlier of December 11, 2020, or the enactment of the applicable appropriations legislation.</p> <p>(Sec. 107) This section requires expenditures for activities funded in this division to be charged to the full-year appropriations bill and relevant account when the applicable appropriations bill becomes law.</p> <p>(Sec. 108) This section waives the normal time limitations for submission and approval of apportionments of accounts funded in annual appropriations Acts.</p> <p>(Sec. 109) This section limits disbursements for programs that would otherwise have high initial rates of operation or would complete distribution of funding at the beginning of the fiscal year if those actions would impinge on final congressional funding prerogatives.</p> <p>(Sec. 110) This section requires this division be implemented so that only the most limited funding action permitted by this division is taken in order to provide for continuation of projects and activities.</p> <p>(Sec. 111) This section specifies that funding for appropriated entitlements and other mandatory payments with funding provided in an FY2020 appropriations bill shall be continued at the rate to maintain program levels under current law. It also allows some of the programs to continue operating for an additional 30 days beyond the period of the CR.</p> <p>(Sec. 112) This section permits funding made available by this division for civilian personnel compensation and benefits in each department and agency to be apportioned up to the rate for operations necessary to avoid furloughs. It also requires all necessary actions to reduce or defer non-personnel-related administrative expenses to be taken prior to using this authority.</p> <p>(Sec. 113) This section permits funds appropriated by this division to be obligated and expended notwithstanding specified statutory provisions restricting appropriations for foreign assistance, the Department of State, international broadcasting, and intelligence activities in the absence of prior authorizations.</p> <p>(Sec. 114) This section extends designations for Overseas Contingency Operations/ Global War on Terrorism, disaster relief, and emergency requirements to funds provided by this division that previously carried those designations.</p> <p>(Sec. 115) This section sets forth requirements for the treatment of rescissions when federal agencies implement the funding levels provided by the CR.</p> <p>(Sec. 116) This section makes appropriations available to the Rural Utilities Service Rural Water and Waste Disposal Program Account for direct and guaranteed loans.</p> <p>(Sec. 117) This section allows the Food and Nutrition Service to spend at a higher rate to ensure that summer food for children demonstration projects (e.g., the Summer Electronic Benefit Transfer program) can be fully operational by May 2021.</p> <p>(Sec. 118) This section allows a higher spending rate for the Department of Agriculture (USDA) Commodity Supplemental Food Program to maintain the current program caseload.</p> <p>(Sec. 119) This section allows the Farm Service Agency to spend at a higher rate to accommodate approved applications for direct and guaranteed farm ownership loans.</p> <p>(Sec. 120) This section extends the authority of USDA to require reports on prices, contracts, and other purchasing information from cattle, swine, and sheep packers and processors.</p> <p>(Sec. 121) This section extends the authority of USDA to (1) collect fees for grain inspection and weighing services, and (2) conduct other activities related to grain export and domestic markets.</p> <p>(Sec. 122) This section extends the USDA pilot program to study the growth, cultivation, or marketing of industrial hemp.</p> <p>(Sec. 123) This section allows the Food and Drug Administration to collect certain user fees to support reviewing over-the-counter drugs and regulating production facilities.</p> <p>(Sec. 124) This section specifies the spending rate for the Census Bureau's Periodic Censuses and Programs account. It also allow a higher spending rate for operations necessary to conduct the 2020 Decennial Census Program.</p> <p>(Sec. 125) This section makes apportioned funding available for the Columbia-class submarine procurement program during the period of the CR and allows the Navy to enter into a contract for the procurement of up to two Columbia-class submarines. It also allows incremental funding to be used to make payments under the contract. If such a contract is terminated, the total liability of the federal government is limited to the total amount of funding obligated to the contract at the time of termination.</p> <p>(Sec. 126) This section extends the availability of funding provided by the Coronavirus Aid, Relief, and Economic Security Act (CARES Act) for the DOD Inspector General.</p> <p>(Sec. 127) This section prohibits funds from being transferred from the Western Area Power Administration (WAPA) Colorado River Basins Power Marketing Fund to the general fund of the Treasury.</p> <p>(Sec. 128) This section extends the authority of the Bureau of Reclamation to provide certain emergency drought assistance.</p> <p>(Sec. 129) This section allows schools participating in the District of Columbia's voucher program an additional year to become accredited.</p> <p>(Sec. 130) This section allows the District to spend FY2021 funds received from local tax revenues and other nonfederal sources at the rate included in the Fiscal Year 2021 Local Budget Act of 2020.</p> <p>(Sec. 131) This section provides appropriations to the District for costs associated with the presidential inauguration.</p> <p>(Sec. 132) This section allows a higher spending rate for the Small Business Administration (SBA) to accommodate increased demand for 7(a) small business loans and the Small Business Investment Company (SBIC) program.</p> <p>(Sec. 133) This section allows a higher spending rate for the SBA continue to process and service disaster loans.</p> <p>(Sec. 134) This section provides appropriations to the General Services Administration (GSA) for costs associated with a presidential transition.</p> <p>(Sec. 135) This section allows a higher spending rate for the GSA to maintain monthly rentals of office space.</p> <p>(Sec. 136) This section provides appropriations for the Executive Office of the President to provide administrative support for a presidential transition.</p> <p>(Sec. 137) This section provides appropriations to the National Archives and Records Administration for costs related to taking custody of presidential records and artifacts during a presidential transition.</p> <p>(Sec. 138) This section allows a higher spending rate for the Office of Personnel Management to cover any expected shortfall in administrative expenses resulting from the transfer of the National Background Investigations Bureau function to DOD.</p> <p>(Sec. 139) This section extends the term of certain bankruptcy judgeships.</p> <p>(Sec. 140) This section extends the authority of federal agencies to reimburse contractors for certain leave paid to employees or subcontractors due to facility closures or other restrictions as a result of the COVID-19 (i.e., coronavirus disease 2019) public health emergency.</p> <p>(Sec. 141) This section allows the Department of Homeland Security to implement an account restructuring proposal that eliminates the Working Capital Fund.</p> <p>(Sec. 142) This section authorizes the Coast Guard to use Operations and Support appropriations to pay the salaries of certain employees who are usually paid through fee collections, which have decreased during the COVID-19 pandemic.</p> <p>(Sec. 143) This section extends the authorization for the Great Lakes Pilotage Advisory Committee during the period of the CR.</p> <p>(Sec. 144) This section permits the Cybersecurity and Infrastructure Security Agency to use a new account and budget structure.</p> <p>(Sec. 145) This section allows the Federal Emergency Management Agency (FEMA) to access the entire Disaster Relief Fund appropriation for FY2021 to carry out response and recovery activities for declared disasters.</p> <p>(Sec. 146) This section extends the authority for the National Flood Insurance Program through FY2021.</p> <p>(Sec. 147) This section reduces discretionary funding from the Land and Water Conservation Fund. (Under the Great American Outdoors Act, the funds are now mandatory spending, which does not have to be funded through the annual appropriations process.)</p> <p>(Sec. 148) This section allows the Forest Service to implement a new account and budget structure required by Congress.</p> <p>(Sec. 149) This section extends funding for the Temporary Assistance for Needy Families (TANF) program and the Child Care Entitlement to States program during the period of the CR.</p> <p>(Sec. 150) This section extends the availability of funding for the Centers for Disease Control and Prevention to replace a mine safety research facility.</p> <p>(Sec. 151) This section adjusts a rescission and delayed obligation of certain funding authorized under the Children's Health Insurance Program (CHIP).</p> <p>(Sec. 152) This section extends the availability of funding for certain multiyear research grants that are supported by the National Institutes of Health and were interrupted by COVID-19.</p> <p>(Sec. 153) This section extends the authority for the Rehabilitation Services Administration Automated Personalization Computing Project.</p> <p>(Sec. 154) This section extends the authorization for the Department of Education's National Advisory Committee on Institutional Quality and Integrity.</p> <p>(Sec. 155) This section extends the authority of the Department of Education to use mandatory funds for account maintenance fees payable to guaranty agencies.</p> <p>(Sec. 156) This section makes a technical correction to a provision in the CARES Act regarding appropriations for the Corporation for National and Community Service.</p> <p>(Sec. 157 This section provides appropriations for the death gratuity for the beneficiary of the late Representative John R. Lewis.</p> <p>(Sec. 158) This section provides appropriations for the House of Representatives Salaries and Expenses account.</p> <p>(Sec. 159) This section extends the authorities for the Library of Congress (LOC), the Government Accountability Office (GAO), and the Architect of the Capitol (AOC) to reimburse contractors for the salaries of employees who are furloughed or unable to work due to the COVID-19 outbreak.</p> <p>The provision applies to employees of the Little Scholars Child Development Center at the LOC, the Tiny Findings Child Development Center at the GAO, and contractors that have a service contract with the AOC.</p> <p>(Sec. 160) This section allows the LOC to extend certain contracts that were delayed or otherwise affected by COVID-19.</p> <p>(Sec. 161) This section makes a technical correction to a provision in the Military Construction, Veterans Affairs, and Related Agencies Appropriations Act, 2020 regarding the advance appropriation for the Department of Veterans Affairs (VA) Compensation and Pensions account.</p> <p>(Sec. 162) This section allows a higher spending rate for the VA to maintain support activities related to the implementation and maintenance of the Veterans Electronic Health Record system.</p> <p>(Sec. 163) This section allows certain funds provided to the Veterans Health Administration by the CARES Act to be transferred to the Canteen Services Revolving Fund to offset losses to Veterans Canteen Services collections as a result of the COVID-19 pandemic.</p> <p>(Sec. 164) This section allows the Department of State to obligate funding provided for the Repatriation Loans Program account at a rate for operations necessary to accommodate increases in demand for repatriation loans.</p> <p>(Sec. 165) This section extends the authority of the State Department to use passport and immigration visa security surcharges for the costs of providing consular services.</p> <p>(Sec. 166) This section expands the purposes for which the State Department's Western Hemisphere Travel Initiative passport surcharge may be used to include the costs of providing consular services. This section also allows certain funds to be transferred into the Consular and Border Security Programs account for the purpose of sustaining consular operations.</p> <p>(Sec. 167) This section allows appropriations to be used to provide assistance to Sri Lanka without being subject to certain congressional certification requirements.</p> <p>The funding may be used for the following purposes:</p> <ul> <li>disaster relief;</li> <li>to protect human rights, locate and identify missing persons, and assist victims of torture;</li> <li>to promote justice, accountability, and reconciliation;</li> <li>to enhance maritime security and domain awareness; and</li> <li>for International Military Education and Training.</li> </ul> <p>(Sec. 168) This section extends the authorization for the U.S. Advisory Commission on Public Diplomacy.</p> <p>(Sec. 169) This section extends obligation deadlines for certain Department of Transportation National Infrastructure Investments grants (also known as Better Utilizing Investments to Leverage Development or BUILD grants).</p> <p>(Sec. 170) This section expands the authority for the Government National Mortgage Association (Ginnie Mae) to guarantee securities backed by federal mortgages in order to accommodate increased demand due to lower mortgage interest rates.</p> <p>(Sec. 171) This section extends the liquidation period for certain Choice Neighborhoods Initiative grants from FY2013.</p> <p>(Sec. 172) This section allows a higher rate of spending for the Department of Housing and Urban Development's Housing for the Elderly programs to (1) maintain project rental assistance for the elderly, and (2) continue the Integrated Wellness in Supportive Housing (IWISH) demonstration program.</p> <p>(Sec. 173) This section accelerates reimbursements to the Commodity Credit Corporation for net realized losses to allow USDA to continue making certain payments to farmers.</p> <p>DIVISION B--SURFACE TRANSPORTATION PROGRAM EXTENSION</p> <p>TITLE I--SURFACE TRANSPORTATION PROGRAMS</p> <p>(Sec. 1101) This section extends FY2020 enacted levels through FY2021 for federal highway, transit, and road safety programs of the Department of Transportation (DOT).</p> <p>(Sec. 1102) This section increases the cap from $500 million to $600 million on the amount of funding for nationally significant freight and highway projects. It also extends authority through FY2021 for DOT to provide funding for such projects.</p> <p>(Sec. 1103) This section revises and extends authority through FY2021 for the National Highway Traffic Safety Administration to carry out collaborative research on in-vehicle technology to prevent alcohol-impaired driving.</p> <p>(Sec. 1104) This section eliminates a provision related to federal funding to cover operating losses associated with providing food and beverage service on National Railroad Passenger Corporation (Amtrak) routes. It also extends authority through FY2021 for DOT to provide direct loans or loan guarantees for railroad rehabilitation and development near rail stations.</p> <p>(Sec. 1105) Automatic adjustments to highway and mass transit authorizations for new deposits into the Highway Trust Fund shall not apply to funds provided under this division of the bill.</p> <p>(Sec. 1106) This section prohibits the use of funds in FY2021 to adjust apportionments for the Mass Transit Account of the Highway Trust Fund or withhold funds from apportionments for the Mass Transit Account of the Highway Trust Fund.</p> <p>(Sec. 1107) This section reauthorizes and extends through FY2021 the Appalachian Regional Commission, including for the economic and energy development and high-speed broadband deployment initiatives.</p> <p>TITLE II--TRUST FUNDS</p> <p>(Sec. 1201) This section extends expenditure authority through September 30, 2021, for the Highway Trust Fund.</p> <p>(Sec. 1202) This section extends expenditure authority through September 30, 2021, for the Sport Fish Restoration and Boating Trust Fund.</p> <p>(Sec. 1203) This section extends expenditure authority through September 30, 2021, for the Leaking Underground Storage Tank Trust Fund.</p> <p>(Sec. 1204) This section provides additional funding for the Highway Account and Mass Transit Account of the Highway Trust Fund.</p> <p>(Sec. 1205) This section provides additional funding for the Airport and Airway Trust Fund.</p> <p>DIVISION C--HEALTH EXTENDERS</p> <p>TITLE I--PUBLIC HEALTH EXTENDERS</p> <p>This title extends funding and other relevant authorities for certain public health grants and programs and makes administrative changes to the operation of the Public Health Service.</p> <p>(Sec. 2101) This section increases funding for, and extends through December 11, 2020, specified programs for community health centers; teaching health centers that operate graduate medical education programs; and the National Health Service Corps, which provides scholarships and student loan repayment programs for health care workers.</p> <p>(Sec. 2102) This section increases funding for, and extends through December 11, 2020, research grants to prevent and cure Type I diabetes and grants for services to prevent and treat diabetes among Native Americans.</p> <p>(Sec. 2103) This section extends through December 11, 2020, funding for certain grants for states to educate adolescents on the prevention of pregnancy and sexually transmitted infections.</p> <p>(Sec. 2104) This section extends through December 11, 2020, funding for certain grants for states to implement sexual risk avoidance (i.e., abstinence) education.</p> <p>(Sec. 2105) This section extends through December 11, 2020, the authority of the Food and Drug Administration to designate a rare pediatric disease drug application as eligible for a priority review voucher.</p> <p>(Sec. 2106) This section temporarily authorizes commissioned officers of the Public Health Service to carry over more than 60 days of annual leave. Such leave may not be used after September 30, 2023.</p> <p>TITLE II--MEDICARE EXTENDERS</p> <p>(Sec. 2202) This section extends funding for certain Medicare quality-measurement activities.</p> <p>(Sec. 2203) This section extends funding for state health insurance programs, area agencies on aging, aging and disability resource centers, and technical assistance related to outreach and enrollment.</p> <p>TITLE III--MEDICAID EXTENDERS</p> <p>(Sec. 2301) This section extends the Money Follows the Person Rebalancing Demonstration Program. (Under this program, the Centers for Medicare &amp; Medicaid Services (CMS) may award grants to state Medicaid programs to assist states in increasing the use of home and community care for long-term care and decreasing the use of institutional care.)</p> <p>(Sec. 2302) This section extends the applicability of Medicaid eligibility criteria that protect against spousal impoverishment for recipients of home- and community-based services.</p> <p>(Sec. 2303) This section delays certain reductions to Medicaid disproportionate-share hospital allotments.</p> <p>(Sec. 2304) This section extends the Medicaid demonstration program for certified community behavioral health clinics.</p> <p>TITLE IV--MEDICARE PART B PREMIUM ADJUSTMENT</p> <p>(Sec. 2401) This section establishes a specific methodology for determining Medicare premiums for 2021. Under the methodology, the 2021 rate must be based on the 2020 rate, plus 25% of the difference between the 2020 rate and a preliminary 2021 rate (as determined by the CMS).</p> <p>TITLE V--ACCELERATED AND ADVANCE PAYMENT PROGRAMS</p> <p>(Sec. 2501) This section establishes and otherwise modifies requirements for the Medicare Accelerated and Advance Payment Program and for certain comparable programs during the public health emergency relating to COVID-19 (i.e., coronavirus disease 2019).</p> <p>Specifically, the section delays recoupment and full repayment for 12 months and 29 months, respectively. It also caps recoupments to 25% and 50% for the first 11 months and the next 6 months, respectively, and caps the applicable interest rate on repayments at 4%.</p> <p>TITLE VI--OFFSETS</p> <p>(Sec. 2601) This section specifically includes in the Medicaid Drug Rebate Program covered outpatient drugs that are used in medication-assisted treatment for opioid-use disorders.</p> <p>(Sec. 2602) This section delays the scheduled reduction in available funding for the Medicaid Improvement Fund to FY2023 and increases the funds available for state activities relating to mechanized claims systems beginning in FY2025.</p> <p>DIVISION D--OTHER MATTERS</p> <p>TITLE I--EMERGENCY STOPGAP USCIS STABILIZATION ACT</p> <p><i>Emergency Stopgap USCIS Stabilization Act</i></p> <p>This title expands Department of Homeland Security (DHS) authority to provide premium processing services for certain immigration-related petitions and applications and contains other related provisions.</p> <p>(Sec. 4102) DHS may collect a fee to provide premium processing of an application for any immigration benefit that DHS considers appropriate, subject to certain requirements. Currently, DHS only has statutory authority to provide premium processing for employment-based petitions and applications.</p> <p>Under current law, DHS must use such premium fees to provide premium processing services and make infrastructure improvements. Under this title, such fees shall be used for these purposes and other activities that offset the cost of providing adjudication and naturalization services.</p> <p>DHS may suspend premium processing only if circumstances prevent the timely processing of a significant number of the petitions or applications. DHS shall provide those who have requested premium processing with access to case status information and communications channels to the premium processing units.</p> <p>DHS may expand premium processing to certain immigrant benefits and set fees for such processing without following certain rulemaking procedures if DHS meets certain requirements, such as limiting the premium fee to specified amounts.</p> <p>The title also increases the fees charged for premium processing. DHS may, subject to requirements, biennially adjust premium fees to reflect inflation without following certain rulemaking requirements.</p> <p>(Sec. 4103) DHS shall report to Congress a five-year plan to improve processing times for all immigration and naturalization benefit requests and to implement electronic-based communications, payment acceptance, and filing procedures for such requests.</p> <p>TITLE II--UNITED STATES PAROLE COMMISSION EXTENSION</p> <p><i>United States Parole Commission Extension Act of 2020</i></p> <p>(Sec. 4202) This section extends for two years the authority and functions of the U.S. Parole Commission. Currently, the commission's authority is set to expire on October 31, 2020.</p> <p>(Sec. 4203) This section extends through FY2022 provisions requiring the commission to (1) annually report certain data to Congress, including the number of offenders of each type in its jurisdiction; and (2) report to Congress regarding the parole failure rate for the District of Columbia.</p> <p>TITLE III--ANTITRUST CRIMINAL PENALTY ENHANCEMENT AND REFORM PERMANENT EXTENSION ACT</p> <p><i>Antitrust Criminal Penalty Enhancement and Reform Permanent Extension Act</i></p> <p>(Sec. 4303) This title permanently authorizes and restores into effect the Antitrust Criminal Penalty Enhancement and Reform Act (ACPERA) of 2004. ACPERA, which expired on June 22, 2020, provides incentives (e.g., limitations on civil liability) for corporations to self-report criminal conduct to the Antitrust Division within the Department of Justice.</p> <p>TITLE IV--COMMUNITY SERVICES AND SUPPORTS</p> <p>(Sec. 4401) This title authorizes the Department of Health and Human Services to extend the designations of Head Start agencies for up to two years if it does not have the information necessary for renewals required before December 31, 2020. Currently, designations last for five years.</p> <p>TITLE V--BUDGETARY EFFECTS</p> <p>(Sec. 4501) This title exempts the budgetary effects of division B and each succeeding division of this bill from Pay-As-You-Go (PAYGO) rules and certain budget scorekeeping guidelines.</p> <p>TITLE VI--NUTRITION AND COMMODITIES PROGRAMS</p> <p>(Sec. 4601) This section extends through FY2021 the authority for the Pandemic Electronic Benefit Transfer program. Under the program, the Department of Agriculture (USDA) may approve state plans to provide emergency Supplemental Nutrition Assistance Program (SNAP, formerly known as the food stamp program) benefits to households with children who would otherwise receive free or reduced-price school meals if their schools were not closed due to the COVID-19 (i.e., coronavirus disease 2019) public health emergency. (Under current law, the child's school must be closed for at least five consecutive days for the household to be eligible for benefits, and states may provide the benefits using the Electronic Benefit Transfer system.)</p> <p>It also expands the program to include children at child care facilities affected by the closures and at schools with reduced attendance hours.</p> <p>(Sec. 4602) This section extends through FY2021 authority for USDA to allow certain waivers to requirements for its food and nutrition programs due to COVID-19, including waivers under the National School Lunch Program and the Special Supplemental Nutrition Program for Women, Infants, and Children (WIC).</p> <p>(Sec. 4603) This section extends existing SNAP flexibilities for states during the COVID-19 public health emergency. Specifically, the bill authorizes states to extend SNAP certification periods and adjust periodic reporting and interview requirements through June 30, 2021, for some or all participating households without USDA approval. Additionally, states may allow household reporting requirements to satisfy the recertification requirements for some or all participating households with recertification periods set to expire on or before December 31, 2021.</p> <p>The section also requires USDA to allow states to suspend certain requirements for quality control reviews from June 1, 2020, through September 30, 2021.</p> <p>(Sec. 4604) This section prohibits USDA from using funds, facilities, or authorities of the Commodity Credit Corporation or USDA to pay or otherwise support fossil fuel refiners and importers. The prohibition does not apply to biofuel companies.</p> <p> DIVISION E--DEPARTMENT OF VETERANS AFFAIRS EXTENSIONS</p> <p> <i>Department of Veterans Affairs Expiring Authorities Act of 2020 </i></p> <p>This division extends authorities for various Department of Veterans Affairs (VA) programs.</p> <p>TITLE I--EXTENSIONS OF AUTHORITIES RELATING TO HEALTH CARE</p> <p>(Sec. 5101) This section extends through FY2022 the authority for collection of co-payments from veterans for hospital care and nursing home care.</p> <p>(Sec. 5102) This section extends through FY2022 the requirement that the VA provide nursing home care to certain veterans with a service-connected disability.</p> <p>(Sec. 5103) This section extends through FY2022 the authority of the VA to transfer real property to other agencies, states, or public or private entities.</p> <p>(Sec. 5104) This section extends through FY2022 the authority for the VA pilot program on assistance for child care for certain veterans receiving health care.</p> <p>(Sec. 5105) This section reauthorizes through FY2022 grants that go to Veterans Service Organizations for the transportation of highly rural veterans to VA medical centers.</p> <p>(Sec. 5106) This section extends through FY2022 the authority for the VA pilot program on counseling in retreat settings for women veterans who are newly separated from service.</p> <p>(Sec. 5107) This section extends through August 7, 2031, the authority for the VA pilot program on graduate medical education and residency.</p> <p>(Sec. 5108) This section requires the Inspector General of the VA to (1) review the administration of the VA's website on staffing and vacancies, (2) develop recommendations for the administration of such site, and (3) submit a report on its findings.</p> <p>(Sec. 5109) This section extends through FY2021 the temporary expansion of payments and allowances for beneficiary travel in connection with veterans receiving care from Vet Centers.</p> <p>TITLE II--EXTENSIONS OF AUTHORITIES RELATING TO BENEFITS</p> <p>(Sec. 5201) This section extends through FY2022 the authority of the VA to make grants for specially adapted housing assistive technology.</p> <p>(Sec. 5202) This section extends the covered period during which certain adjustments for veterans' education benefits apply to December 21, 2021.</p> <p>(Sec. 5203) This section extends through FY2022 the authority of the VA to maintain a regional office in the Republic of the Philippines.</p> <p>(Sec. 5204) This section extends through FY2022 the authority of the VA to transport individuals to and from VA facilities for required vocational rehabilitation or counseling, examination, treatment, or care.</p> <p>(Sec. 5205) This section extends through January 1, 2026, the temporary increase in the number of judges on the U.S. Court of Appeals for Veterans Claims.</p> <p>TITLE III--EXTENSIONS OF AUTHORITIES RELATING TO HOMELESS VETERANS</p> <p>(Sec. 5301) This section reauthorizes through FY2022 homeless veterans reintegration programs conducted by the Department of Labor.</p> <p>(Sec. 5302) This section reauthorizes through FY2022 a grant program that provides dedicated services for homeless women veterans and homeless veterans with children.</p> <p>(Sec. 5303) This section extends through FY2022 the authority of the VA and Labor to enter contracts to provide referrals and counseling services for veterans who are at risk of homelessness and transitioning from penal institutions or institutions that provide long-term care for mental illness.</p> <p>(Sec. 5304) This section extends through FY2022 the authority of the VA to provide outreach, treatment, and rehabilitation for seriously mentally ill and homeless veterans. Additionally, the section extends the authority of the VA to operate a program to establish centers for the provision of comprehensive services to homeless veterans.</p> <p>(Sec. 5305) This section reauthorizes through FY2022 the Supportive Services for Veterans Families program, which provides financial assistance for supportive services for very low-income veteran families in permanent housing or transitioning from homelessness.</p> <p>(Sec. 5306) This section reauthorizes through FY2022 the VA program to provide grants to entities to encourage the development of programs for homeless veterans with special needs.</p> <p>TITLE IV--EXTENSIONS OF OTHER AUTHORITIES AND OTHER MATTERS</p> <p>(Sec. 5401) This section reauthorizes through FY2022 the monthly assistance allowances available to certain disabled veterans under the Office of National Veterans Sports Programs and Special Events.</p> <p>(Sec. 5402) This section extends through December 31, 2022, the requirement for the VA to submit a report containing a statement for each case recommended to the VA for equitable relief due to administrative error.</p> <p>(Sec. 5403) This section reauthorizes through FY2022 the VA program to provide grants to entities planning, developing, managing, and implementing programs to provide adaptive sports opportunities for disabled veterans and members of the Armed Forces.</p> <p>(Sec. 5404) This section extends through FY2022 the authority of the VA to enter into an agreement with the National Academy of Sciences to review and evaluate scientific evidence regarding associations between diseases and exposure to dioxin and other chemical compounds in herbicides.</p> <p>(Sec. 5405) This section modifies and extends authority through FY2025 in relation to the VA vendee loan program.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ159/PLAW-116publ159.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ159/PLAW-116publ159_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ159/PLAW-116publ159.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/8337"
     },
     {
       "id": "s3105-116",
@@ -1537,6 +2113,30 @@
       "text_url_xml": "https://www.congress.gov/116/bills/sres694/BILLS-116sres694ats.xml",
       "text_url_pdf": "https://www.congress.gov/116/bills/sres694/BILLS-116sres694ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/694"
+    },
+    {
+      "id": "hr8319-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "8319",
+      "title": "Continuing Appropriations Act, 2021 and Other Extensions Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Lowey, Nita M.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2020-09-21",
+      "latest_action": {
+        "date": "2020-09-23",
+        "text": "Rule H. Res. 1129 passed House."
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p><b>Continuing Appropriations Act, 2021 and Other Extensions Act </b></p> <p>This bill provides continuing FY2021 appropriations to federal agencies through December 11, 2020, and extends several programs. </p> <p>It is known as a continuing resolution (CR) and prevents a government shutdown that would otherwise occur if the FY2021 appropriations bills have not been enacted when FY2021 begins on October 1, 2020. </p> <p>The CR funds most programs and activities at the FY2020 levels with several exceptions that provide funding flexibility and additional appropriations to various programs.</p> <p>In addition, the bill extends several authorities and programs, including </p> <ul> <li> surface transportation programs;</li> <li> public health, Medicare, and Medicaid authorities and programs;</li> <li>several authorities related to veterans benefits; </li> <li> the National Flood Insurance Program; </li> <li> the Appalachian Regional Commission;</li> <li>the U.S. Parole Commission;</li> <li> the Temporary Assistance for Needy Families (TANF) program; and</li> <li>several authorities related to immigration.</li> </ul> <p>The bill also includes provisions that </p><ul> <li>increase and expand U.S. Citizenship and Immigration Services fees for providing premium processing services for certain immigration-related applications, and</li> <li>reauthorize a program that provides incentives (e.g., limitations on civil liability) for corporations to self-report antitrust violations to the Department of Justice.</li> </ul>",
+      "text_url_html": "https://www.congress.gov/116/bills/hr8319/BILLS-116hr8319ih.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/hr8319/BILLS-116hr8319ih.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/hr8319/BILLS-116hr8319ih.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/8319"
     },
     {
       "id": "sres658-116",
@@ -1609,6 +2209,30 @@
       "text_url_xml": "https://www.congress.gov/116/bills/sres623/BILLS-116sres623ats.xml",
       "text_url_pdf": "https://www.congress.gov/116/bills/sres623/BILLS-116sres623ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/623"
+    },
+    {
+      "id": "sres392-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "392",
+      "title": "A resolution recognizing the importance of the Young Southeast Asian Leaders Initiative to the relationship between the United States and the member states of the Association of Southeast Asian Nations and to advancing the policy of the United States in the Indo-Pacific region.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Merkley, Jeff",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2019-10-31",
+      "latest_action": {
+        "date": "2020-06-16",
+        "text": "Resolution agreed to in Senate with an amendment and an amended preamble by Unanimous Consent. (consideration: CR S3014-3015; text: CR S3015)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution celebrates the U.S. partnership with young leaders in Southeast Asia and recognizes the importance of the Young Southeast Asian Leaders Initiative in advancing U.S. soft power and promoting human rights, democracy, and good governance in the region. </p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres392/BILLS-116sres392ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres392/BILLS-116sres392ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres392/BILLS-116sres392ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/392"
     },
     {
       "id": "sres502-116",
@@ -1779,6 +2403,78 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/567"
     },
     {
+      "id": "sres571-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "571",
+      "title": "A resolution congratulating the students, parents, teachers, and leaders of charter schools across the United States for making ongoing contributions to education and supporting the ideals and goals of the 21st annual National Charter Schools Week, to be held May 10 through May 16, 2020.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Bennet, Michael F.",
+        "party": "D",
+        "state": "CO"
+      },
+      "introduced_date": "2020-05-12",
+      "latest_action": {
+        "date": "2020-05-20",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: 05/12/2020 CR S2382-2383)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution congratulates the students, families, teachers, administrators, and staff of public charter schools across the United States for (1)&nbsp;making ongoing contributions to public education, (2) making impressive strides in closing the academic achievement gap in U.S. schools, and (3) improving and strengthening the public school system.</p> <p>The resolution supports the ideals and goals of the 21st annual National Charter Schools Week.</p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres571/BILLS-116sres571ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres571/BILLS-116sres571ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres571/BILLS-116sres571ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/571"
+    },
+    {
+      "id": "hr266-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "266",
+      "title": "Paycheck Protection Program and Health Care Enhancement Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McCollum, Betty",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2019-01-08",
+      "latest_action": {
+        "date": "2020-04-24",
+        "text": "Became Public Law No: 116-139."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Paycheck Protection Program and Health Care Enhancement Act</b></p> <p>This bill responds to the COVID-19 (i.e., coronavirus disease 2019) outbreak by providing additional funding for small business loans, health care providers, and COVID-19 testing. </p> <p> DIVISION A--SMALL BUSINESS PROGRAMS</p> <p>(Sec. 101) This division provides additional lending authority for certain Small Business Administration (SBA) programs in response to COVID-19.</p> <p>Specifically, the division increases the authority for (1) the Paycheck Protection Program, under which the SBA may guarantee certain loans to small businesses during the COVID-19 pandemic; and (2) advances on emergency economic injury disaster loans made in response to COVID-19. The division also expands eligibility for such disaster loans and advances to include agricultural enterprises.</p> <p>Additionally, the division requires the SBA to guarantee no less than a specified amount of paycheck protection loans made by certain insured depository institutions, community financial institutions, and credit unions.</p> <p>(Sec. 102) The amounts provided under this division are designated as an emergency requirement pursuant to the Statutory Pay-As-You-Go Act of 2010 (PAYGO) and the Senate PAYGO rule.</p> <p>DIVISION B--ADDITIONAL EMERGENCY APPROPRIATIONS FOR CORONAVIRUS RESPONSE</p> <p><i>Additional Emergency Appropriations for Coronavirus Response</i></p> <p>This division provides FY2020 supplemental appropriations for the Department of Health and Human Services (HHS) and the SBA in response to COVID-19.</p> <p>The supplemental appropriations are designated as emergency spending, which is exempt from discretionary spending limits.</p> <p>TITLE I--DEPARTMENT OF HEALTH AND HUMAN SERVICES</p> <p>This title provides $100 billion in FY2020 supplemental appropriations to HHS for the Public Health and Social Services Emergency Fund, including</p> <ul> <li>$75 billion to reimburse health care providers for health care related expenses or lost revenues that are attributable to the coronavirus outbreak; and</li> <li>$25 billion for expenses to research, develop, validate, manufacture, purchase, administer, and expand capacity for COVID-19 tests to effectively monitor and suppress COVID-19.</li> </ul> <p>The title allocates specified portions of the $25 billion for COVID-19 testing to</p> <ul> <li>states, localities, territories, and tribes;</li> <li>the Centers for Diseases Control and Prevention;</li> <li>the National Institutes of Health;</li> <li>the Biomedical Advanced Research and Development Authority;</li> <li>the Food and Drug Administration;</li> <li>community health centers;</li> <li>rural health clinics; and</li> <li>testing for the uninsured.</li> </ul> <p>The title also establishes several reporting requirements for HHS, including requirements to submit to Congress details regarding COVID-19 cases and a strategic testing plan</p> <p>(Sec. 101) This section specifies that certain authorities, conditions, and requirements included in the Coronavirus Aid, Relief, and Economic Security Act apply to the funds provided by this division to HHS.</p> <p>(Sec. 102) This section sets forth authorities and restrictions that apply to transferring funds provided by this title.</p> <p>(Sec. 103) This section requires specified funds provided by this title for the Public Health and Social Services Emergency Fund to be transferred to the HHS Office of Inspector General for oversight of activities supported with funds appropriated to HHS to respond to the COVID-19 outbreak.</p> <p>TITLE II--INDEPENDENT AGENCIES</p> <p>This title provides FY2020 supplemental appropriations to the SBA, including</p> <ul> <li>$2.1 billion for salaries and expenses to administer programs related to COVID-19,</li> <li>$50 billion for the Economic Injury Disaster Loan (EIDL) program, and</li> <li>$10 billion for Emergency EIDL grants.</li> </ul> <p>TITLE III--GENERAL PROVISIONS--THIS ACT</p> <p>(Sec. 301) This section specifies that the funds provided by this division are in addition to funds otherwise appropriated for the fiscal year involved.</p> <p>(Sec. 302) Funds provided by this division may not remain available beyond the current fiscal year, unless this division provides otherwise.</p> <p>(Sec. 303) Unless otherwise specified by this division, the funds provided by this division are subject to the authorities and conditions that apply to the applicable appropriations account for FY2020.</p> <p>(Sec. 304) This section specifies that certain funds provided or transferred by this division may only be used to prevent, prepare for, and respond to the coronavirus outbreak.</p> <p>(Sec. 305) For the purposes of this division, the term <i>coronavirus</i> means SARS-CoV-2 or another coronavirus with pandemic potential.</p> <p>(Sec. 306) This section provides that amounts designated by this division as emergency requirements are only available (or rescinded, if applicable) if the President subsequently designates the amounts and transmits the designations to Congress.</p> <p>(Sec. 307) This section specifies that the emergency funds that are transferred pursuant to this division retain the emergency designation.</p> <p>(Sec. 308) This section exempts the budgetary effects of this division from the Statutory Pay-As-You-Go Act of 2010 (PAYGO), (2) the Senate PAYGO rule, and (3) certain budget scorekeeping rules.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ139/PLAW-116publ139.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ139/PLAW-116publ139_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ139/PLAW-116publ139.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/266"
+    },
+    {
+      "id": "hres935-116",
+      "congress": 116,
+      "type": "hres",
+      "number": "935",
+      "title": "Establishing a Select Subcommittee on the Coronavirus Crisis as a select investigative subcommittee of the Committee on Oversight and Reform.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McGovern, James P.",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2020-04-22",
+      "latest_action": {
+        "date": "2020-04-23",
+        "text": "Pursuant to the provisions of H. Res. 938, H. Res. 935 is considered passed House. (consideration: CR H1953-1954; text: CR H1953-1954)"
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p>This resolution establishes the Select Subcommittee on the Coronavirus Crisis as a select investigative subcommittee of the Committee on Oversight and Reform to investigate, study, and report to the House of Representatives on its findings, including</p> <ul> <li> the efficiency, effectiveness, equity, and transparency of the use of taxpayer funds and relief programs to address the coronavirus (i.e., the virus that causes COVID-19) crisis;</li> <li> reports of abusive practices related to the coronavirus crisis;</li> <li> the implementation or effectiveness of any federal law applied, enacted, or under consideration to address the coronavirus crisis and prepare for future pandemics;</li> <li>preparedness for and response to the coronavirus crisis;</li> <li> the economic impact of the coronavirus crisis on individuals, communities, small businesses, health care providers, states, and local government entities;</li> <li> any disparate impacts of the coronavirus crisis on different communities and populations and the measures taken to address the disparate impacts;</li> <li> executive branch policies, deliberations, decisions, activities, and internal and external communications related to the coronavirus crisis;</li> <li> the protection of whistleblowers who provide information about improper activities related to the coronavirus crisis; and</li> <li> cooperation by the executive branch and others with Congress, the Inspectors General, the Government Accountability Office, and others in connection with oversight of the preparedness for and response to the coronavirus crisis.</li></ul>",
+      "text_url_html": "https://www.congress.gov/116/bills/hres935/BILLS-116hres935eh.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/hres935/BILLS-116hres935eh.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/hres935/BILLS-116hres935eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-resolution/935"
+    },
+    {
       "id": "sjres66-116",
       "congress": 116,
       "type": "sjres",
@@ -1875,6 +2571,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-joint-resolution/67"
     },
     {
+      "id": "sres481-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "481",
+      "title": "A resolution commemorating the 75th anniversary of the liberation of the Auschwitz extermination camp in Nazi-occupied Poland.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Rosen, Jacky",
+        "party": "D",
+        "state": "NV"
+      },
+      "introduced_date": "2020-01-21",
+      "latest_action": {
+        "date": "2020-02-24",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: 01/21/2020 CR S437)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution commemorates the 75th anniversary of the liberation of the Auschwitz extermination camp and honors victims of the Holocaust. The resolution also calls on the United States to continue to work to end genocide and recommits to combatting all forms of anti-Semitism. </p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres481/BILLS-116sres481ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres481/BILLS-116sres481ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres481/BILLS-116sres481ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/481"
+    },
+    {
       "id": "sres490-116",
       "congress": 116,
       "type": "sres",
@@ -1899,6 +2619,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/490"
     },
     {
+      "id": "hres842-116",
+      "congress": 116,
+      "type": "hres",
+      "number": "842",
+      "title": "Requiring an affirmative vote of a majority of the Members present and voting, a quorum being present, on final passage of House Joint Resolution 79.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Raskin, Jamie",
+        "party": "D",
+        "state": "MD"
+      },
+      "introduced_date": "2020-02-10",
+      "latest_action": {
+        "date": "2020-02-11",
+        "text": "Pursuant to the provisions of H. Res. 844, H. Res. 842 is considered passed House. (consideration: CR H1044; text: CR H1044)"
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p>This resolution requires a majority vote of the Members present and voting, a quorum being present, on final passage of H.J.Res. 79 (eliminating the deadline for the ratification of the Equal Rights Amendment, which prohibits discrimination based on sex).</p>",
+      "text_url_html": "https://www.congress.gov/116/bills/hres842/BILLS-116hres842eh.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/hres842/BILLS-116hres842eh.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/hres842/BILLS-116hres842eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-resolution/842"
+    },
+    {
       "id": "sres488-116",
       "congress": 116,
       "type": "sres",
@@ -1921,6 +2665,30 @@
       "text_url_xml": "https://www.congress.gov/116/bills/sres488/BILLS-116sres488ats.xml",
       "text_url_pdf": "https://www.congress.gov/116/bills/sres488/BILLS-116sres488ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/488"
+    },
+    {
+      "id": "hr263-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "263",
+      "title": "To rename the Oyster Bay National Wildlife Refuge as the Congressman Lester Wolff Oyster Bay National Wildlife Refuge.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Suozzi, Thomas R.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2019-01-04",
+      "latest_action": {
+        "date": "2020-01-27",
+        "text": "Became Public Law No: 116-110."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the Oyster Bay National Wildlife Refuge near Oyster Bay, New York, as the &quot;Congressman Lester Wolff National Wildlife Refuge.&quot; </p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ110/PLAW-116publ110.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ110/PLAW-116publ110_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ110/PLAW-116publ110.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/263"
     },
     {
       "id": "sres483-116",
@@ -2089,6 +2857,30 @@
       "text_url_xml": "https://www.congress.gov/116/bills/sres343/BILLS-116sres343ats.xml",
       "text_url_pdf": "https://www.congress.gov/116/bills/sres343/BILLS-116sres343ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/343"
+    },
+    {
+      "id": "sres395-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "395",
+      "title": "A resolution recognizing the 40th anniversary of the Iran Hostage Crisis, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Isakson, Johnny",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2019-10-31",
+      "latest_action": {
+        "date": "2020-01-08",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S80-81; text: CR 10/31/2019 S6340)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution recognizes the 40th anniversary of the Iran Hostage Crisis. The resolution also honors the suffering of the hostages and sacrifices of those who attempted to rescue them.</p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres395/BILLS-116sres395ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres395/BILLS-116sres395ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres395/BILLS-116sres395ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/395"
     },
     {
       "id": "hres761-116",
@@ -2473,6 +3265,30 @@
       "text_url_xml": "https://www.congress.gov/116/bills/hconres77/BILLS-116hconres77ih.xml",
       "text_url_pdf": "https://www.congress.gov/116/bills/hconres77/BILLS-116hconres77ih.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-concurrent-resolution/77"
+    },
+    {
+      "id": "sres318-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "318",
+      "title": "A resolution to support the Global Fund to fight AIDS, Tuberculosis and Malaria, and the Sixth Replenishment.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Risch, James E.",
+        "party": "R",
+        "state": "ID"
+      },
+      "introduced_date": "2019-09-18",
+      "latest_action": {
+        "date": "2019-12-02",
+        "text": "Resolution agreed to in Senate with amendments and with a preamble by Unanimous Consent. (consideration: CR S6790-6791; text: 12/10/2019 CR S6955)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution commends the Global Fund to Fight AIDS and its partners for their contributions to ending the epidemics of AIDS, tuberculosis, and malaria. The resolution also affirms U.S. support to secure at least $14 billion in donor commitments for the Sixth Global Fund Replenishment.</p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres318/BILLS-116sres318ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres318/BILLS-116sres318ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres318/BILLS-116sres318ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/318"
     },
     {
       "id": "s2710-116",
@@ -2979,6 +3795,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/336"
     },
     {
+      "id": "sres205-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "205",
+      "title": "A resolution expressing the gratitude of the Senate for the people who operate or support diaper banks and diaper distribution programs in their local communities.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Murphy, Christopher",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2019-05-14",
+      "latest_action": {
+        "date": "2019-09-19",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR 5/14/2019 S2833-2834)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution expresses gratitude for those who operate or support diaper banks and diaper distribution programs in their local communities. The resolution also expresses support for efforts by such banks and programs in response to natural disasters.</p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres205/BILLS-116sres205ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres205/BILLS-116sres205ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres205/BILLS-116sres205ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/205"
+    },
+    {
       "id": "hr1250-116",
       "congress": 116,
       "type": "hr",
@@ -3195,6 +4035,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/2196"
     },
     {
+      "id": "sjres36-116",
+      "congress": 116,
+      "type": "sjres",
+      "number": "36",
+      "title": "A joint resolution providing for congressional disapproval of the proposed transfer to the Kingdom of Saudi Arabia, the United Kingdom of Great Britain and Northern Ireland, the Kingdom of Spain, and the Italian Republic of certain defense articles and services.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Menendez, Robert",
+        "party": "D",
+        "state": "NJ"
+      },
+      "introduced_date": "2019-06-05",
+      "latest_action": {
+        "date": "2019-07-29",
+        "text": "Failed of passage in Senate over veto by Yea-Nay Vote. 45 - 40. Record Vote Number: 231."
+      },
+      "outcome": "failed",
+      "summary_crs": " <p>This joint resolution prohibits the proposed sale of various defense articles and related support services to Saudi Arabia, the United Kingdom, Spain, and Italy, as described in Executive Communication 1427 published in the Congressional Record on June 3, 2019.</p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sjres36/BILLS-116sjres36es.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sjres36/BILLS-116sjres36es.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sjres36/BILLS-116sjres36es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-joint-resolution/36"
+    },
+    {
       "id": "sjres37-116",
       "congress": 116,
       "type": "sjres",
@@ -3265,6 +4129,30 @@
       "text_url_xml": "https://www.congress.gov/116/bills/hres507/BILLS-116hres507eh.xml",
       "text_url_pdf": "https://www.congress.gov/116/bills/hres507/BILLS-116hres507eh.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-resolution/507"
+    },
+    {
+      "id": "sres198-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "198",
+      "title": "A resolution condemning Brunei's dramatic human rights backsliding.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Durbin, Richard J.",
+        "party": "D",
+        "state": "IL"
+      },
+      "introduced_date": "2019-05-09",
+      "latest_action": {
+        "date": "2019-07-16",
+        "text": "Resolution agreed to in Senate with an amendment and an amended preamble by Unanimous Consent. (consideration: CR S4870; text: CR S4870)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p class=\"MsoNormal\" style=\"MARGIN: 0in 0in 8pt\">This resolution censures Brunei's criminal laws with respect to sexual orientation and adultery, and supports the withdrawal and denial of United States visas for Brunei officials responsible for the&nbsp;implementation of such laws until they are repealed. </p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres198/BILLS-116sres198ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres198/BILLS-116sres198ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres198/BILLS-116sres198ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/198"
     },
     {
       "id": "sres74-116",
@@ -3579,6 +4467,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/135"
     },
     {
+      "id": "sres162-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "162",
+      "title": "A resolution supporting the designation of April 2019 as \"National Donate Life Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Warren, Elizabeth",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2019-04-11",
+      "latest_action": {
+        "date": "2019-05-06",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR 4/11/2019 S2441)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p> This resolution expresses support for the designation of April 2019 as National Donate Life Month and for promoting awareness of organ and tissue donation.</p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres162/BILLS-116sres162ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres162/BILLS-116sres162ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres162/BILLS-116sres162ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/162"
+    },
+    {
       "id": "sres160-116",
       "congress": 116,
       "type": "sres",
@@ -3675,6 +4587,54 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/35"
     },
     {
+      "id": "hr2021-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "2021",
+      "title": "Investing for the People Act of 2019",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Yarmuth, John A.",
+        "party": "D",
+        "state": "KY"
+      },
+      "introduced_date": "2019-04-02",
+      "latest_action": {
+        "date": "2019-04-09",
+        "text": "Rule H. Res. 294 passed House."
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p><b>Investing for the People Act of 2019 </b></p> <p>This bill increases discretionary spending limits, modifies the procedures for enforcing the limits, and establishes budget enforcement procedures in the House of Representatives for FY2020.</p> <p>The bill increases both the defense and nondefense discretionary spending limits for FY2020 and FY2021. It also modifies the procedures for enforcing the spending limits to</p> <ul> <li>limit adjustments for funding designated for Overseas Contingency Operations/ Global War on Terrorism,</li> <li>allow specified adjustments for Internal Revenue Service enforcement activities and the 2020 Census, and</li> <li>modify the sequestration process. </li> </ul> <p>The chairman of the House Budget Committee must submit for publication in the Congressional Record committee allocations, aggregate spending levels, and aggregate revenue levels that are consistent with the discretionary spending limits and requirements specified in this bill. For budget enforcement purposes, the allocations and levels shall apply in the House of Representatives as if they were included in a FY2020 budget resolution. </p> <p>The chairman may adjust the allocations and levels to reflect (1) changes in the Congressional Budget Office baseline, or (2) legislation that does not increase the deficit over FY2020-FY2024 or FY2020-FY2029. </p> <p>The bill prohibits advance appropriations, except for programs, activities, or accounts identified in lists submitted by the chairman of the House Budget Committee for publication in the Congressional Record. The identified accounts are subject to aggregate limits specified in the bill. (An advance appropriation is any new discretionary budget authority provided in appropriations legislation for FY2020 that first becomes available after FY2020.) </p>",
+      "text_url_html": "https://www.congress.gov/116/bills/hr2021/BILLS-116hr2021rh.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/hr2021/BILLS-116hr2021rh.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/hr2021/BILLS-116hr2021rh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/2021"
+    },
+    {
+      "id": "hres293-116",
+      "congress": 116,
+      "type": "hres",
+      "number": "293",
+      "title": "Providing for budget enforcement for fiscal year 2020.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Yarmuth, John A.",
+        "party": "D",
+        "state": "KY"
+      },
+      "introduced_date": "2019-04-08",
+      "latest_action": {
+        "date": "2019-04-09",
+        "text": "Pursuant to the provisions of H. Res. 294, H. Res. 293 is considered passed House. (consideration: CR H3185-3186; text: CR H3185-3186)"
+      },
+      "outcome": "passed_house",
+      "summary_crs": " <p>This resolution establishes budget enforcement procedures in the House of Representatives for FY2020. </p> <p>Specifically, the resolution establishes requirements for</p> <ul> <li>committee allocations, </li> <li>aggregate spending levels,</li> <li>aggregate revenue levels, and</li> <li>limitations on advance appropriations. </li> </ul> <p>(An <i>advance appropriation </i>is new discretionary budget authority that is provided in FY2020 appropriations legislation and first becomes available after FY2020.)</p> <p>The resolution also specifies requirements for adjusting the allocations and levels to accommodate specified funding for</p> <ul> <li>Overseas Contingency Operations/Global War on Terrorism, </li> <li>Internal Revenue Service tax enforcement activities, and</li> <li>the 2020 census.</li> </ul>",
+      "text_url_html": "https://www.congress.gov/116/bills/hres293/BILLS-116hres293eh.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/hres293/BILLS-116hres293eh.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/hres293/BILLS-116hres293eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-resolution/293"
+    },
+    {
       "id": "sres123-116",
       "congress": 116,
       "type": "sres",
@@ -3697,6 +4657,30 @@
       "text_url_xml": "https://www.congress.gov/116/bills/sres123/BILLS-116sres123ats.xml",
       "text_url_pdf": "https://www.congress.gov/116/bills/sres123/BILLS-116sres123ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/123"
+    },
+    {
+      "id": "sres124-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "124",
+      "title": "A resolution condemning the March 15, 2019, terrorist attacks in Christchurch, New Zealand, offering sincere condolences to all of the victims and their families, and expressing and standing in solidarity with the people and Government of New Zealand.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Menendez, Robert",
+        "party": "D",
+        "state": "NJ"
+      },
+      "introduced_date": "2019-03-27",
+      "latest_action": {
+        "date": "2019-03-28",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR 3/27/2019 S2055-2056)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution condemns the March 15, 2019, terrorist attacks on the Al Noor and Linwood mosques in Christchurch, New Zealand, and expresses condolences to the victims and their families. It also calls on the U.S. government to redouble efforts to combat the spread of white supremacist terrorism. </p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres124/BILLS-116sres124ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres124/BILLS-116sres124ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres124/BILLS-116sres124ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/124"
     },
     {
       "id": "sres72-116",
