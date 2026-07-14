@@ -17,6 +17,7 @@ sealed interface BillsListUiState {
         val summaries: Map<String, BillCardSummary> = emptyMap(),
         val selectedTopic: BillTopic? = null,
         val hiddenByTopicCount: Int = 0,
+        val searchQuery: String = "",
     ) : BillsListUiState
 
     data class Error(val message: String) : BillsListUiState

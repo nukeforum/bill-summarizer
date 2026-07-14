@@ -11,6 +11,7 @@ import com.informedcitizen.data.repository.AiTitlesPreferenceRepository
 import com.informedcitizen.data.repository.BillRepository
 import com.informedcitizen.data.repository.SessionCalendarRepository
 import com.informedcitizen.data.work.BillSummarizationController
+import com.informedcitizen.domain.search.matchesSearchQuery
 import com.informedcitizen.domain.session.statusOn
 import com.informedcitizen.ui.components.BillCardSummary
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -40,6 +41,7 @@ class BillsListViewModel @Inject constructor(
     private val isRefreshing = MutableStateFlow(false)
     private val sessionStatusLine = MutableStateFlow<String?>(null)
     private val selectedTopic = MutableStateFlow<BillTopic?>(null)
+    private val searchQuery = MutableStateFlow("")
 
     val uiState: StateFlow<BillsListUiState> = combine(
         listOf(
@@ -51,6 +53,7 @@ class BillsListViewModel @Inject constructor(
             aiPrefs.enabled,
             aiCapability.status,
             selectedTopic,
+            searchQuery,
         ),
     ) { values ->
         @Suppress("UNCHECKED_CAST")
@@ -63,6 +66,7 @@ class BillsListViewModel @Inject constructor(
         val aiEnabled = values[5] as Boolean
         val capStatus = values[6] as AiCapability.Status
         val topic = values[7] as BillTopic?
+        val query = values[8] as String
 
         when {
             result == null -> BillsListUiState.Loading
@@ -78,6 +82,7 @@ class BillsListViewModel @Inject constructor(
                 aiEnabled = aiEnabled,
                 capStatus = capStatus,
                 topic = topic,
+                query = query,
             )
         }
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), BillsListUiState.Loading)
@@ -96,6 +101,10 @@ class BillsListViewModel @Inject constructor(
         selectedTopic.value = topic
     }
 
+    fun setSearchQuery(query: String) {
+        searchQuery.value = query
+    }
+
     fun resummarize(billId: String) {
         controller.retry(billId)
     }
@@ -109,6 +118,7 @@ class BillsListViewModel @Inject constructor(
         aiEnabled: Boolean,
         capStatus: AiCapability.Status,
         topic: BillTopic?,
+        query: String,
     ): BillsListUiState.Success {
         val capable = capStatus == AiCapability.Status.Available ||
             capStatus is AiCapability.Status.ModelDownloading
@@ -124,7 +134,9 @@ class BillsListViewModel @Inject constructor(
             emptyMap()
         }
 
-        val baseList = allBills.filter(currentFilter::matches)
+        val baseList = allBills
+            .filter(currentFilter::matches)
+            .filter { it.matchesSearchQuery(query) }
         val activeTopic = if (aiEnabled) topic else null
         val (filteredBills, hidden) = if (activeTopic != null) {
             val passing = baseList.filter { visibleSummaries[it.id]?.topic == activeTopic }
@@ -143,6 +155,7 @@ class BillsListViewModel @Inject constructor(
             summaries = visibleSummaries,
             selectedTopic = activeTopic,
             hiddenByTopicCount = hidden,
+            searchQuery = query,
         )
     }
 

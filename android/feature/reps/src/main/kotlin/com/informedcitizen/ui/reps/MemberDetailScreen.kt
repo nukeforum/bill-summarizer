@@ -33,6 +33,7 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.informedcitizen.pipeline.model.MemberLegislationItem
 import com.informedcitizen.data.util.congressGovUrlFor
+import com.informedcitizen.ui.components.BillSearchField
 import com.informedcitizen.ui.components.MemberCard
 import com.informedcitizen.ui.components.MemberLegislationRow
 import com.informedcitizen.ui.util.dialPhone
@@ -87,6 +88,7 @@ fun MemberDetailScreen(
             },
             onCallPhone = { phone -> dialPhone(context, phone) },
             onOpenUrl = { url -> openInCustomTab(context, url) },
+            onSearchQueryChange = viewModel::setSearchQuery,
         )
     }
 
@@ -102,6 +104,7 @@ internal fun MemberDetailContent(
     onLegislationClick: (MemberLegislationItem) -> Unit,
     onCallPhone: (String) -> Unit,
     onOpenUrl: (String) -> Unit,
+    onSearchQueryChange: (String) -> Unit = {},
 ) {
     var tab by remember { mutableIntStateOf(0) }
 
@@ -117,22 +120,32 @@ internal fun MemberDetailContent(
                     onOpenWebsite = onOpenUrl,
                     onOpenSocial = onOpenUrl,
                 )
+                BillSearchField(
+                    query = state.searchQuery,
+                    onQueryChange = onSearchQueryChange,
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
+                )
                 PrimaryTabRow(selectedTabIndex = tab) {
                     Tab(
                         selected = tab == 0,
                         onClick = { tab = 0 },
-                        text = { Text("Sponsored (${state.sponsored.size})") },
+                        text = { Text("Sponsored (${state.filteredSponsored.size})") },
                     )
                     Tab(
                         selected = tab == 1,
                         onClick = { tab = 1 },
-                        text = { Text("Cosponsored (${state.cosponsored.size})") },
+                        text = { Text("Cosponsored (${state.filteredCosponsored.size})") },
                     )
                 }
-                val items = if (tab == 0) state.sponsored else state.cosponsored
+                val items = if (tab == 0) state.filteredSponsored else state.filteredCosponsored
                 if (items.isEmpty()) {
+                    val rawItems = if (tab == 0) state.sponsored else state.cosponsored
                     Text(
-                        "No data yet for this representative.",
+                        if (rawItems.isEmpty()) {
+                            "No data yet for this representative."
+                        } else {
+                            "No bills match \"${state.searchQuery.trim()}\""
+                        },
                         modifier = Modifier.padding(16.dp),
                         style = MaterialTheme.typography.bodyMedium,
                     )
