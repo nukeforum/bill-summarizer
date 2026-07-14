@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T14:48:28Z",
+  "generated_at": "2026-07-14T13:58:16Z",
   "congress": 116,
   "bills": [
     {
@@ -219,6 +219,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/5076"
     },
     {
+      "id": "hr1240-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "1240",
+      "title": "Young Fishermen's Development Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Young, Don [R-AK-At Large]",
+        "party": "R",
+        "state": "AK"
+      },
+      "introduced_date": "2019-02-14",
+      "latest_action": {
+        "date": "2021-01-05",
+        "text": "Became Public Law No: 116-289."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Young Fishermen's Development Act</b></p> <p>This bill directs the National Sea Grant Office in the National Oceanic and Atmospheric Administration to establish a Young Fishermen's Development Grant Program to provide training, education, outreach, and technical assistance initiatives for young fishermen.</p> <p>The office shall make competitive matching grants to support local and regional training, education, outreach, and technical assistance initiatives for young fishermen, including programs, workshops, and services related to (1) seamanship, navigation, electronics, and safety; (2) vessel and engine care, maintenance, and repair; and (3) sustainable fishing practices.\tGrant recipients must be a collaborative state, tribal, local, or regionally based network or partnership of public or private entities.</p> <p> Grants may not be used to purchase a fishing license, permit, quota, or other harvesting right.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ289/PLAW-116publ289.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ289/PLAW-116publ289_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ289/PLAW-116publ289.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/1240"
+    },
+    {
       "id": "hr1503-116",
       "congress": 116,
       "type": "hr",
@@ -289,6 +313,30 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ293/PLAW-116publ293_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ293/PLAW-116publ293.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/3976"
+    },
+    {
+      "id": "hr4356-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "4356",
+      "title": "Protecting Families of Fallen Servicemembers Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Harder, Josh",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2019-09-17",
+      "latest_action": {
+        "date": "2021-01-05",
+        "text": "Became Public Law No: 116-285."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Protecting Families of Fallen Servicemembers Act</b></p> <p>This bill revises the conditions allowing a service member to terminate a commercial mobile, telephone exchange, internet access, or multichannel video programming service contract at any time after the date the service member receives military orders to relocate for at least 90 days to a location that does not support such contract. It treats as individuals covered, and therefore allowed to terminate such a contract (1) a spouse or dependent of a service member who dies while in military service or a member of the reserve components performing full-time or active reserve duty or inactive-duty training; (2) a spouse or dependent of a service member who incurs a catastrophic injury or illness, if the member incurs the injury or illness while in military service or performing such duty; and (3) a member of the reserve components performing such duty.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ285/PLAW-116publ285.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ285/PLAW-116publ285_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ285/PLAW-116publ285.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/4356"
     },
     {
       "id": "hr4988-116",
@@ -723,6 +771,54 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/7105"
     },
     {
+      "id": "hr7259-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "7259",
+      "title": "Patents for Humanity Program Improvement Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McBath, Lucy",
+        "party": "D",
+        "state": "GA"
+      },
+      "introduced_date": "2020-06-18",
+      "latest_action": {
+        "date": "2021-01-05",
+        "text": "Became Public Law No: 116-316."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Patents for Humanity Program Improvement Act</b></p> <p>This bill authorizes the holder of an acceleration certificate awarded under the Patents for Humanity program to transfer the certificate to another party. </p> <p>(The Patents for Humanity program recognizes patent owners, applicants, and licensees that use their inventions to meet humanitarian challenges. The winners each receive a certificate that can be used to accelerate certain U.S. Patent and Trademark Office proceedings, such as a patent application.)</p> ",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ316/PLAW-116publ316.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ316/PLAW-116publ316_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ316/PLAW-116publ316.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/7259"
+    },
+    {
+      "id": "hr7347-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "7347",
+      "title": "To designate the medical center of the Department of Veterans Affairs in Ann Arbor, Michigan, as the \"Lieutenant Colonel Charles S. Kettles Department of Veterans Affairs Medical Center\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Dingell, Debbie",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2020-06-25",
+      "latest_action": {
+        "date": "2021-01-05",
+        "text": "Became Public Law No: 116-317."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the medical center of the Department of Veterans Affairs in Ann Arbor, Michigan, as the Lieutenant Colonel Charles S. Kettles Department of Veterans Affairs Medical Center or the Lieutenant Colonel Charles S. Kettles VA Medical Center.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ317/PLAW-116publ317.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ317/PLAW-116publ317_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ317/PLAW-116publ317.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/7347"
+    },
+    {
       "id": "hr7502-116",
       "congress": 116,
       "type": "hr",
@@ -843,6 +939,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/3418"
     },
     {
+      "id": "s906-116",
+      "congress": 116,
+      "type": "s",
+      "number": "906",
+      "title": "Driftnet Modernization and Bycatch Reduction Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feinstein, Dianne",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2019-03-27",
+      "latest_action": {
+        "date": "2021-01-01",
+        "text": "Vetoed by President."
+      },
+      "outcome": "vetoed",
+      "summary_crs": " <p><b>Driftnet Modernization and Bycatch Reduction Act</b></p> <p>This bill addresses certain driftnet fishing. (Driftnet fishing is a method of fishing in which a gillnet composed of a panel or panels of webbing, or a series of such gillnets, is placed in the water and allowed to drift with the currents and winds for the purpose of entangling fish in the webbing.)\t</p> <p>Currently, the use of large-scale drift gillnets with a total length of 2.5 kilometers or more is prohibited in the United States.\tThe bill expands the definition of large-scale driftnet fishing to prohibit the use of gillnets with a mesh size of 14 inches or greater. This expanded prohibition does not apply within the U.S. exclusive economic zone for five years.</p> <p>The Department of Commerce must conduct a transition program to facilitate the phase out of large-scale driftnet fishing and to promote the adoption of alternative fishing practices that minimize the incidental catch of living marine resources. </p> <p>Commerce must award grants to program participants.</p> <p>The North Pacific Fishery Management Council may recommend and Commerce may approve regulations that require charter operators to pay fees on vessels that harvest Pacific halibut in specific International Pacific Halibut Commission regulatory areas.</p>",
+      "text_url_html": "https://www.congress.gov/116/bills/s906/BILLS-116s906es.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/s906/BILLS-116s906es.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/s906/BILLS-116s906es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/906"
+    },
+    {
       "id": "sres406-116",
       "congress": 116,
       "type": "sres",
@@ -889,6 +1009,30 @@
       "text_url_xml": "https://www.congress.gov/116/bills/sres684/BILLS-116sres684ats.xml",
       "text_url_pdf": "https://www.congress.gov/116/bills/sres684/BILLS-116sres684ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/684"
+    },
+    {
+      "id": "s1342-116",
+      "congress": 116,
+      "type": "s",
+      "number": "1342",
+      "title": "Great Lakes Environmental Sensitivity Index Act of 2020",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Peters, Gary C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2019-05-07",
+      "latest_action": {
+        "date": "2020-12-31",
+        "text": "Became Public Law No: 116-274."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Great Lakes Environmental Sensitivity Index Act of 2020</b></p> <p>This bill requires the National Oceanic and Atmospheric Administration to update at least once every seven years its environmental sensitivity index products for each coastal area of the Great Lakes. An environmental sensitivity index product is a map or similar tool that is utilized to identify sensitive shoreline resources prior to an oil spill event.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ274/PLAW-116publ274.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ274/PLAW-116publ274_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ274/PLAW-116publ274.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/1342"
     },
     {
       "id": "s1869-116",
@@ -1201,6 +1345,30 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ262/PLAW-116publ262_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ262/PLAW-116publ262.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/900"
+    },
+    {
+      "id": "hr133-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "133",
+      "title": "Consolidated Appropriations Act, 2021",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Cuellar, Henry",
+        "party": "D",
+        "state": "TX"
+      },
+      "introduced_date": "2019-01-03",
+      "latest_action": {
+        "date": "2020-12-27",
+        "text": "Became Public Law No: 116-260."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b style=\"\">Consolidated Appropriations Act, 2021</b></p> <p class=\"MsoNormal\" style=\"margin-bottom: 0.0001pt; line-height: normal; background: white none repeat scroll 0% 0%;\">DIVISION A--AGRICULTURE, RURAL DEVELOPMENT, FOOD AND DRUG ADMINISTRATION, AND RELATED AGENCIES APPROPRIATIONS ACT, 2021</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">This division provides FY2021 appropriations for the Department of Agriculture (USDA), the Food and Drug Administration, and related agencies.</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to USDA for agricultural programs, including</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of the Secretary,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Executive Operations,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of Civil Rights, </li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Economic Research Service,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Agricultural Statistics Service,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Agricultural Research Service,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Institute of Food and Agriculture,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Animal and Plant Health Inspection Service,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Agricultural Marketing Service, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Food Safety and Inspection Service.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division also provides appropriations to USDA for farm production and conservation programs, including</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Farm Production and Conservation Business Center,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Farm Service Agency,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Risk Management Agency, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Natural Resources Conservation Service.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">In addition, the division provides appropriations to the Federal Crop Insurance Corporation Fund and the Commodity Credit Corporation Fund.</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">For USDA Rural Development programs, the division includes appropriations for</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Rural Development Salaries and Expenses,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Rural Housing Service,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Rural Business--Cooperative Service, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Rural Utilities Service.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to the Food and Nutrition Service for</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Child Nutrition Programs;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Special Supplemental Nutrition Program for Women, Infants, and Children (WIC);</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Supplemental Nutrition Assistance Program (SNAP, formerly known as the food stamp program);</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Commodity Assistance Program; and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Nutrition Programs Administration.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to the Foreign Agricultural Service for (1) Food for Peace Title II Grants, and (2) McGovern-Dole International Food for Education and Child Nutrition Program Grants.</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division also provides appropriations for (1) the Food and Drug Administration, and (2) the Farm Credit Administration.</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">DIVISION B--COMMERCE, JUSTICE, SCIENCE, AND RELATED AGENCIES APPROPRIATIONS ACT, 2021 </p> <p class=\"MsoNormal\" style=\"line-height: normal;\">This division provides FY2021 appropriations to the Department of Commerce, the Department of Justice (DOJ), science agencies, and several related agencies.</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to Commerce for</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the International Trade Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Bureau of Industry and Security,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Economic Development Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Minority Business Development Agency,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Economic and Statistical Analysis,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Bureau of the Census,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Telecommunications and Information Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the U.S. Patent and Trademark Office,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Institute of Standards and Technology,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Oceanic and Atmospheric Administration, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Departmental Management.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to DOJ for</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">General Administration;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Executive Office for Immigration Review;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the U.S. Parole Commission;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Legal Activities;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the U.S. Marshals Service;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Security Division;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Interagency Law Enforcement;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Federal Bureau of Investigation;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Drug Enforcement Administration;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Bureau of Alcohol, Tobacco, Firearms and Explosives; and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Federal Prison System.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division also provides appropriations to DOJ for state and local law enforcement activities, including</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office on Violence Against Women,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of Justice Programs, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Community Oriented Policing Services (COPS).</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations for science agencies, including</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of Science and Technology Policy,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Space Council,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Aeronautics and Space Administration (NASA), and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Science Foundation.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to related agencies, including</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Commission on Civil Rights,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Equal Employment Opportunity Commission,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the U.S. International Trade Commission,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Legal Services Corporation,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Marine Mammal Commission,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of the U.S. Trade Representative, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the State Justice Institute.</li></ul> <p class=\"MsoNormal\">DIVISION C--DEPARTMENT OF DEFENSE APPROPRIATIONS ACT, 2021</p> <p class=\"MsoNormal\">This division provides FY2021 appropriations to the Department of Defense (DOD) for military activities.</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">Within the DOD budget, the division provides appropriations for</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Military Personnel;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Operation and Maintenance;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Procurement;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Research, Development, Test and Evaluation; and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Revolving and Management Funds.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division also provides appropriations for other DOD programs, including</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Defense Health Program,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Chemical Agents and Munitions Destruction,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Drug Interdiction and Counterdrug Activities, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of the Inspector General.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division&nbsp;provides appropriations for (1) related agencies, including the Central Intelligence Agency Retirement and Disability System Fund and the Intelligence Community Management Account; and (2) Overseas Contingency Operations.</p> <p class=\"MsoNormal\">DIVISION D--ENERGY AND WATER DEVELOPMENT AND RELATED AGENCIES APPROPRIATIONS ACT, 2021</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">This division provides FY2021 appropriations for U.S. Army Corps of Engineers civil works projects, the Bureau of Reclamation, the Department of Energy (DOE), and independent agencies such as the Nuclear Regulatory Commission.</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations for U.S. Army Corps of Engineers civil works projects, including for</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Investigations,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Construction,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Mississippi River and Tributaries,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Operation and Maintenance,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Regulatory Program,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Formerly Utilized Sites Remedial Action Program,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Flood Control and Coastal Emergencies,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Expenses, </li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Water Infrastructure Finance and Innovation Program, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of the Assistant Secretary of the Army for Civil Works.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to the Department of the Interior for the Central Utah Project and the Bureau of Reclamation.</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to DOE for energy programs, including</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Energy Efficiency and Renewable Energy;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Cybersecurity, Energy Security, and Emergency Response;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Electricity;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Nuclear Energy;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Fossil Energy Research and Development;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Naval Petroleum and Oil Shale Reserves;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Strategic Petroleum Reserve;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Northeast Home Heating Oil Reserve;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Energy Information Administration;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Nondefense Environmental Cleanup;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Uranium Enrichment Decontamination and Decommissioning Fund;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Science;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Nuclear Waste Disposal;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Advanced Research Projects Agency--Energy;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Title 17 Innovative Technology Loan Guarantee Program;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Advanced Technology Vehicles Manufacturing Loan Program;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Tribal Energy Loan Guarantee Program;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of Indian Energy Policy and Programs;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Departmental Administration; and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of the Inspector General.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division also provides appropriations to DOE for</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Nuclear Security Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Environmental and Other Defense Activities, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Power Marketing Administrations.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to several independent agencies, including the Federal Energy Regulatory Commission and the Nuclear Regulatory Commission.</p> <p class=\"MsoNormal\">DIVISION E--FINANCIAL SERVICES AND GENERAL GOVERNMENT APPROPRIATIONS ACT, 2021</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">This division provides FY2021 appropriations for several federal departments and agencies, including</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Department of the Treasury,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Executive Office of the President,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the judiciary,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the District of Columbia, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">several independent agencies.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The independent agencies funded in the division include</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Administrative Conference of the United States,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Commodity Futures Trading Commission,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Consumer Product Safety Commission,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Election Assistance Commission,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Federal Communications Commission,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Federal Deposit Insurance Corporation,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Federal Election Commission,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Federal Labor Relations Authority,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Federal Permitting Improvement Steering Council,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Federal Trade Commission,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the General Services Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Harry S. Truman Scholarship Foundation,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Merit Systems Protection Board,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Morris K. Udall and Stewart L. Udall Foundation,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Archives and Records Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Credit Union Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of Government Ethics,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of Personnel Management,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of Special Counsel,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Postal Regulatory Commission,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Privacy and Civil Liberties Oversight Board,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Public Buildings Reform Board,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Securities and Exchange Commission,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Selective Service System,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Small Business Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the U.S. Postal Service, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the U.S. Tax Court.</li></ul> <p class=\"MsoNormal\">DIVISION F--DEPARTMENT OF HOMELAND SECURITY APPROPRIATIONS ACT, 2021</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">This division provides FY2021 appropriations for the Department of Homeland Security.</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations for departmental management, operations, intelligence, and oversight, including</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of the Secretary and Executive Management;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Management Directorate;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Intelligence, Analysis, and Operations Coordination; and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of the Inspector General.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations for security, enforcement, and investigations, including</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">U.S. Customs and Border Protection,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">U.S. Immigration and Customs Enforcement,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Transportation Security Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the U.S. Coast Guard, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the U.S. Secret Service.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations for protection, preparedness, response, and recovery, including</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Cybersecurity and Infrastructure Security Agency, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Federal Emergency Management Agency (FEMA).</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations for research, development, training, and services, including</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">U.S. Citizenship and Immigration Services,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Federal Law Enforcement Training Centers,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Science and Technology Directorate, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Countering Weapons of Mass Destruction Office.</li></ul> <p class=\"MsoNormal\">DIVISION G--DEPARTMENT OF THE INTERIOR, ENVIRONMENT, AND RELATED AGENCIES APPROPRIATIONS ACT, 2021</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">This division provides FY2021 appropriations for the Department of the Interior, the Environmental Protection Agency (EPA), and related agencies.</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to Interior for</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Bureau of Land Management,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the U.S. Fish and Wildlife Service,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Park Service,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the U.S. Geological Survey,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Bureau of Ocean Energy Management,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Bureau of Safety and Environmental Enforcement,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of Surface Mining Reclamation and Enforcement,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Bureau of Indian Affairs,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Bureau of Indian Education,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of the Special Trustee For American Indians,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Departmental Offices, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Department-wide Programs.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division also provides appropriations to the EPA and the Forest Service.</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">Within the Department of Health and Human Services, the division provides appropriations for</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Indian Health Service,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Institute of Environmental Health Sciences, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Agency for Toxic Substances and Disease Registry.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to several related agencies, including</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Council on Environmental Quality and Office of Environmental Quality,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Chemical Safety and Hazard Investigation Board,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of Navajo and Hopi Indian Relocation,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Institute of American Indian and Alaska Native Culture and Arts Development,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Smithsonian Institution,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Gallery of Art,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the John F. Kennedy Center for the Performing Arts,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Woodrow Wilson International Center for Scholars,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Endowment for the Arts,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Endowment for the Humanities,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Commission of Fine Arts,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Advisory Council on Historic Preservation.</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Capital Planning Commission,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the U.S. Holocaust Memorial Museum,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Presidio Trust,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Dwight D. Eisenhower Memorial Commission, </li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the World War I Centennial Commission, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Alyce Spotted Bear and Walter Soboleff Commission on Native Children</li></ul> <p class=\"MsoNormal\">DIVISION H--DEPARTMENTS OF LABOR, HEALTH AND HUMAN SERVICES, AND EDUCATION, AND RELATED AGENCIES APPROPRIATIONS ACT, 2021</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">This division provides FY2021 appropriations to the Departments of Labor, Health and Human Services, and Education; and related agencies.</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to the Department of Labor for</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Employment and Training Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Employee Benefits Security Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Pension Benefit Guaranty Corporation,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Wage and Hour Division,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of Labor-Management Standards,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of Federal Contract Compliance Programs,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of Workers' Compensation Programs,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Occupational Safety and Health Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Mine Safety and Health Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Bureau of Labor Statistics,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of Disability Employment Policy, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Departmental Management.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to the Department of Health and Human Services for</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Health Resources and Services Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Centers for Disease Control and Prevention,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Institutes of Health,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Substance Abuse and Mental Health Services Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Agency for Healthcare Research and Quality,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Centers for Medicare &amp; Medicaid Services,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Administration for Children and Families,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Administration for Community Living, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of the Secretary.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to the Department of Education for</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Education for the Disadvantaged;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Impact Aid;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">School Improvement Programs;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Indian Education;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Innovation and Improvement;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Safe Schools and Citizenship Education;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">English Language Acquisition;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Special Education;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Rehabilitation Services;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Special Institutions for Persons with Disabilities;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Career, Technical, and Adult Education;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Student Financial Assistance;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Student Aid Administration;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Higher Education;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Howard University;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the College Housing and Academic Facilities Loan Program;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Historically Black College and University Capital Financing Program Account;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Institute of Education Sciences; and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Departmental Management.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to related agencies, including</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Committee for Purchase From People Who Are Blind or Severely Disabled,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Corporation for National and Community Service,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Corporation for Public Broadcasting,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Federal Mediation and Conciliation Service,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Federal Mine Safety and Health Review Commission,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Institute of Museum and Library Services,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Medicaid and CHIP Payment and Access Commission,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Medicare Payment Advisory Commission,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Council on Disability,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Labor Relations Board,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Mediation Board,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Occupational Safety and Health Review Commission,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Railroad Retirement Board, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Social Security Administration.</li></ul> <p class=\"MsoNormal\">DIVISION I--LEGISLATIVE BRANCH APPROPRIATIONS ACT, 2021</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">This division provides FY2021 appropriations for the legislative branch, including the House of Representatives, the Senate, and joint items such as</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Joint Economic Committee,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Joint Committee on Taxation,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of the Attending Physician, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of Congressional Accessibility Services.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">In addition, the division provides FY2021 appropriations for</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Capitol Police;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of Congressional Workplace Rights;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Congressional Budget Office;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Architect of the Capitol;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Library of Congress, including the Congressional Research Service and the Copyright Office;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Government Publishing Office;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Government Accountability Office;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Open World Leadership Center Trust Fund; and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the John C. Stennis Center for Public Service Training and Development.</li></ul> <p class=\"MsoNormal\">DIVISION J--MILITARY CONSTRUCTION, VETERANS AFFAIRS, AND RELATED AGENCIES APPROPRIATIONS ACT, 2021</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">This division provides FY2021 appropriations for military construction, the Department of Veterans Affairs (VA), and related agencies.</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to the Department of Defense (DOD) for military construction for</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Army;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Navy and Marine Corps;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Air Force;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Defense-wide agencies and activities;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Army and Air National Guard; and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Army, Navy, and Air Force Reserves.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division also provides appropriations to DOD for</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the North Atlantic Treaty Organization (NATO) Security Investment Program;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Base Closure Account;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Family Housing for the Army, the Navy and Marine Corps, the Air Force, and Defense-wide agencies and activities;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Family Housing Improvement Fund; and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Military Unaccompanied Housing Improvement Fund.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">Within the VA budget, the division provides appropriations for</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Veterans Benefits Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Veterans Health Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Cemetery Administration, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Departmental Administration.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations for related agencies and programs, including</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the American Battle Monuments Commission,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the U.S. Court of Appeals for Veterans Claims,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Cemeterial Expenses of the Army, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Armed Forces Retirement Home.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to specified DOD military construction accounts for Overseas Contingency Operations.</p> <p class=\"MsoNormal\">DIVISION K--DEPARTMENT OF STATE, FOREIGN OPERATIONS, AND RELATED PROGRAMS APPROPRIATIONS ACT, 2021</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">This division provides FY2021 appropriations for the Department of State, foreign operations, and related programs.</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to the State Department for</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Administration of Foreign Affairs,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">International Organizations, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">International Commissions.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations for related agencies and programs, including</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the U.S. Agency for Global Media,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Asia Foundation,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the U.S. Institute of Peace,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Center for Middle Eastern-Western Dialogue Trust Fund,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Eisenhower Exchange Fellowship Program,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Israeli Arab Scholarship Program,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the East-West Center, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Endowment for Democracy.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations for other commissions, including</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Commission for the Preservation of America's Heritage Abroad,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the U.S. Commission on International Religious Freedom,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Commission on Security and Cooperation in Europe,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Congressional-Executive Commission on the People's Republic of China, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the U.S.-China Economic and Security Review Commission.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the U.S. Agency for International Development (USAID),</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the State Department and the President for international security assistance, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the President and International Financial Institutions for multilateral assistance.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations for bilateral economic assistance to</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the President;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the State Department;</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Independent Agencies, including the Peace Corps, the Millennium Challenge Corporation, the Inter-American Foundation, and the U.S. African Development Foundation; and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Department of the Treasury.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations for export and investment assistance to</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Export-Import Bank of the United States,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the U.S. International Development Finance Corporation, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the U.S. Trade and Development Agency.</li></ul> <p class=\"MsoNormal\">DIVISION L--TRANSPORTATION, HOUSING AND URBAN DEVELOPMENT, AND RELATED AGENCIES APPROPRIATIONS ACT, 2021</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">This division provides FY2021 appropriations to the Department of Transportation (DOT), the Department of Housing and Urban Development (HUD), and several related agencies.</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to DOT for</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of the Secretary,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Federal Aviation Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Federal Highway Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Federal Motor Carrier Safety Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Highway Traffic Safety Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Federal Railroad Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Federal Transit Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Saint Lawrence Seaway Development Corporation,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Maritime Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Pipeline and Hazardous Materials Safety Administration, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of Inspector General.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division provides appropriations to HUD for</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Management and Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Public and Indian Housing,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Community Planning and Development,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Housing Programs,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Federal Housing Administration,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Government National Mortgage Association (Ginnie Mae),</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Policy Development and Research,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">Fair Housing and Equal Opportunity,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of Lead Hazard Control and Healthy Homes,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Information Technology Fund, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Office of Inspector General.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division also provides appropriations to several related agencies, including</p> <ul type=\"disc\"> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Access Board,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Federal Maritime Commission,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Railroad Passenger Corporation (Amtrak) Office of Inspector General,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the National Transportation Safety Board,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Neighborhood Reinvestment Corporation,</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the Surface Transportation Board, and</li> <li class=\"MsoNormal\" style=\"color: black; line-height: normal;\">the U.S. Interagency Council on Homelessness. </li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">DIVISION M--CORONAVIRUS RESPONSE AND RELIEF SUPPLEMENTAL APPROPRIATIONS ACT, 2021</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">This division provides FY2021 supplemental appropriations for federal agencies to prevent, prepare for, and respond to COVID-19.</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">Within the Department of Health and Human Service, the division provides appropriations for</p> <ul> <li>the Food and Drug Administration,</li> <li>the Centers for Disease Control and Prevention,</li> <li>the National Institutes of Health,</li> <li>the Substance Abuse and Mental Health Services Administration,</li> <li>the Administration for Children and Families, <br /></li> <li>the Administration for Community Living, and</li> <li>the Public Health and Social Services Emergency Fund.<br /> </li> </ul> Within the Department of Transportation, the division provides appropriations for <ul> <li>the Federal Aviation Administration,</li> <li>the Federal Highway Administration,</li> <li>the National Railroad Passenger Corporation (Amtrak), and</li> <li>the Federal Transit Administration.</li></ul> <p class=\"MsoNormal\" style=\"line-height: normal;\">The division also provides appropriations for </p> <ul> <li>the National Oceanic and Atmospheric Administration,</li> <li>the Federal Emergency Management Agency, and</li> <li>the Department of Education.</li> </ul> <p>DIVISION N--ADDITIONAL CORONAVIRUS RESPONSE AND RELIEF</p> <p>This division provides funding for, extends, and sets out policies for various programs and activities, including COVID-19 economic relief measures.</p> <p>For example, the division temporarily increases physician payments under Medicare and extends Medicare's exemption from sequestration (i.e., automatic spending cuts).</p> <p>Additionally, the division extends and otherwise modifies economic relief measures put in place to respond to COVID-19, including modifications to unemployment compensation and various tax provisions.</p> <p>Changes to unemployment compensation programs include, among others, extending unemployment relief to government entities and nonprofits and addressing procedures for pandemic unemployment assistance for individuals who are self-employed.</p> <p>Changes to tax provisions include, among others, providing for direct payments to eligible individuals and extending certain refundable payroll tax credits for businesses that provide sick and family leave.</p> <p>The division also provides funding for, extends, and makes changes (some retroactively) to eligibility criteria, permitted uses of funds, and other aspects of the Paycheck Protection Program (PPP) and other economic relief measures managed by the Small Business Administration.</p> <p>Changes to the PPP include</p> <ul> <li>providing certain protections from liability for lenders that extended loans under the program,</li> <li>modifying the method of calculating the maximum loan amount for certain farmers and ranchers, and</li> <li>extending the period of time during which businesses must expend loans.</li> </ul> <p>Other changes include establishing a grant program to support live venues, performing arts organizations, and related entities in response to COVID-19 and providing additional funding for the Economic Injury Disaster Loan program.</p> <p>Furthermore, the division provides for programs to support passenger air carriers and other providers of transportation services. It also permits the Department of Transportation to temporarily waive certain requirements that apply to highway transportation safety and related programs.</p> <p>The division also extends an emergency order to temporarily halt residential evictions, provides for emergency rental assistance and housing stability services, and supports economic development in low- and moderate-income communities disproportionately impacted by COVID-19. Development activities include providing funding for (1) capital investment in designated depository institutions, and (2) activities of community development financial institutions to respond to economic hardship created by COVID-19.</p> <p>Other changes include extending various provisions and emergency authorities put in place to respond to COVID-19 and allowing the Department of Housing and Urban Development to cover operating losses of certain health care facilities under specified circumstances.</p> <p>In addition, the division temporarily expands eligibility for job corps training programs administered by the Department of Labor.</p> <p>The division also extends modifications to federal nutrition assistance programs for children, pregnant women, and older adults and provides funding for programs to support agricultural producers, growers, and processors.</p> <p>Changes to nutrition programs include</p> <ul> <li>extending the increase in Supplemental Nutrition Assistance Program (SNAP) benefits,</li> <li>providing for additional nutrition assistance for U.S. territories, and</li> <li>allowing states to reimburse operators of certain nutrition programs for costs associated with closures and other COVID-19 response measures. </li> </ul> <p>Moreover, the division provides loan forgiveness to the U.S. Postal Service (USPS) for amounts borrowed pursuant to specified COVID-19 relief laws. It also temporarily allows the USPS to accept certain international mail shipments that present a low risk of violating drug trafficking laws concerning synthetic opioids (e.g., fentanyl) without transmitting certain information to U.S. Customs and Border Protection.<br /> <br /> Additionally, the division provides funding for, extends, and otherwise makes changes to various programs that support access to broadband internet service. These include programs that (1) facilitate broadband internet access and digital literacy in minority communities, and (2) support health care providers in expanding telehealth services.<br /> <br /> The division extends the period of time in which certain expenses of state, tribal, and local governments may be reimbursed under specified COVID-19 relief laws.<br /> <br /> It also rescinds certain funds made available under specified COVID-19 relief laws for direct loans and emergency lending.</p> <p>DIVISION O--EXTENSIONS AND TECHNICAL CORRECTIONS</p> <p>This division extends, modifies, and makes technical corrections to programs and activities concerning immigration, foreign trade, federal crimes, agriculture, and other topics.</p> <p>For example, the division allows the Department of Homeland Security (DHS) to increase, subject to certain conditions, the number of visas for temporary nonagricultural labor and extends a visa program for foreign investors in U.S. businesses. It also extends</p> <ul> <li>a voluntary program that allows employers to verify the eligibility of employees to work in the United States,</li> <li>provisions concerning immigrants who seek to enter the United States to carry on a religious vocation, and</li> <li>an immigration program for foreign medical graduates.<br /></li></ul> <p>The division also extends the authority of U.S. Customs and Border Protection to accept donations of land at certain points of entry.</p> <p>Furthermore, the division extends mandatory reporting requirements concerning the price of livestock and extends a pilot project to promote soil health in certain prairie states.</p> <p>In addition, the division makes technical corrections to legislation implementing the United States-Mexico-Canada Agreement, including with respect to claims of preferential tariffs and record retention.</p> <p>The division also modifies delegation authorities for the Architect of the Capitol and expands the scope of a congressional committee's oversight of COVID-19 relief funds to include, for example, Paycheck Protection Program expenditures.</p> <p>Moreover, the division extends the application period of an immigration program for certain Liberian nationals.</p> <p>The division also repeals specified provisions of the federal criminal code, including prohibitions against the interstate transport of certain plants and prohibitions against the unauthorized use of the Smokey Bear character or name.</p> <p>In addition, the division reimburses designated child care centers affiliated with the congressional branch for certain costs associated with closures and other COVID-19 response measures. </p> <p>The division also stipulates the application of statutory budget provisions to specified funding.</p> <p>DIVISION P--NATIONAL BIO AND AGRO-DEFENSE FACILITY ACT OF 2020</p> <p>This division provides statutory authority and sets out requirements for the National Bio and Agro-Defense Facility, a biocontainment laboratory for the study of zoonotic diseases and other threats to the U.S. food system, agriculture, and public health.</p> <p>Specifically, the division requires ongoing coordination between the Department of Agriculture (USDA), the Department of Homeland Security (DHS), and other relevant agencies concerning planning, reporting, and budgeting activities related to the facility's management and operation.</p> <p>USDA must evaluate the facility's work, develop a strategic plan to guide the facility's research, and report to Congress concerning the status of the facility's operations and research.</p> <p>Furthermore, USDA, DHS, and other relevant federal agencies must submit joint budget plans and reports regarding the defense and protection of the U.S. food supply to the Office of Management and Budget and to Congress.</p> <p>DIVISION Q--FINANCIAL SERVICES PROVISIONS AND INTELLECTUAL PROPERTY</p> <p>This division establishes financial services requirements related to federally assisted housing, diversified companies, and cybersecurity reporting. It also establishes intellectual property measures related to copyright and trademark.</p> <p>Specifically, the division requires that carbon monoxide alarms or detectors be installed in (1) public housing, (2) supportive housing for the elderly and for persons with disabilities, (3) housing for persons with AIDS, and (4) rural housing constructed with federal assistance. The division provides for the participation of Indian tribes and tribally designated housing entities in the Continuum of Care Program, a program administered by the Department of Housing and Urban Development (HUD) that oversees certain efforts to end homelessness. HUD must also renew for one year all Continuum of Care projects with existing grants that expire during 2021.</p> <p>Public housing agencies that receive federal assistance must extend their aid to youth who are aging out of foster care.</p> <p>The division also establishes requirements to accelerate the provision of mortgage loans for Native American housing.</p> <p>The Securities and Exchange Commission (SEC) must study and report on issues affecting the provision of and reliance upon investment research into small issuers. The SEC must also study the impact of the current definition of <em> diversified company</em>.</p> <p>Further, each banking regulator must submit a report explaining measures undertaken to strengthen cybersecurity within the financial services sector.</p> <p>The division prohibits unauthorized streaming for commercial public performance of computer programs, musical works, sound recordings, motion pictures, or other audiovisual works if (1) they have not been commercially publicly performed in the United States by or with the authorization of the copyright owner, and (2) the copyright owner has a reasonable expectation of commercial public performance.</p> <p>The division also establishes the Copyright Claims Board to serve as an alternative forum for parties to voluntarily seek resolution of certain copyright claims.</p> <p>The division establishes requirements and procedures related to the registration of a trademark, including (1) providing for third-party submission of evidence relevant to a ground for refusal of a registration, and (2) allowing flexibility in response periods for applicants that are found not to be entitled to registration. The division also establishes a procedure for ex parte expungement of a trademark whereby any person may file a petition to expunge the registration of a mark on the basis that the mark has never been used in commerce or in connection with some or all of the goods or services recited in the registration.</p> <p>The division establishes a rebuttable presumption of irreparable harm on behalf of a plaintiff seeking an injunction to prevent the violation of a mark. The division also provides that the authorities of the U.S. Patent and Trademark Office include the authority to reconsider, and modify or set aside, a decision of the Trademark Trial and Appeal Board.</p> <p>The Government Accountability Office must study and report on efforts to address inaccurate and false claims of use in trademark applications and registrations.</p> <p>DIVISION R--PROTECTING OUR INFRASTRUCTURE OF PIPELINES AND ENHANCING SAFETY ACT OF 2020</p> <p>This division provides funding through FY2023 for, and otherwise modifies, natural gas and hazardous material pipeline safety programs. It also makes changes to requirements that apply to natural gas distribution systems.</p> <p>With respect to pipeline safety programs, the division specifies due process protections in certain enforcement proceedings, including placing the burden of proof in such proceedings on the enforcement agency. </p> <p>In addition, the division expressly includes the consideration of safety and environmental benefits in certain cost-benefit analyses related to the proposal or issuance of pipeline safety regulations. It also requires the Pipeline and Hazardous Material Safety Administration to carry out rulemaking activities to address</p> <ul> <li>delays in issuing congressionally mandated rules,</li> <li>safety requirements for idled pipelines,</li> <li>the operation of liquefied natural gas facilities and pipelines,</li> <li>standards for gathering pipelines (i.e., pipelines that transport gases and liquids from the commodity's source to a processing facility, refinery, or transmission pipeline),</li> <li>leak detection and repair programs, and</li> <li>environmental protection. </li> </ul> <p>Furthermore, the division expands whistleblower protections for employees who disclose pipeline safety concerns. These protections may not be waived by any agreement or condition of employment.</p> <p>The division also sets out various reporting requirements, including a report by the National Academy of Sciences on the use of remote shut-off valves on pipelines located in areas where a leak or release from a pipeline would pose great consequences to health, safety, and the environment.</p> <p>With respect to gas distribution systems, the division expands requirements for plans, procedures, and record-keeping that apply to operators of a gas distribution system. These include requiring operators to address in relevant plans and manuals (1) risks associated with cast iron pipes and mains, and (2) indicators of overpressure.</p> <p>DIVISION S--INNOVATION FOR THE ENVIRONMENT</p> <p>This division addresses environmental concerns related to diesel emissions, carbon dioxide, and hydrofluorocarbons (greenhouse gases used in refrigeration, fire suppression, aerosols, and other applications).</p> <p>Specifically, the division extends through FY2024 a diesel emission reduction program administered by the Environmental Protection Agency (EPA).</p> <p>The division also requires the Department of Energy and the EPA to carry out research and establish task forces on carbon utilization, capture, and sequestration (a process to capture carbon dioxide emissions and either reuse it or store it so it will not enter the atmosphere). The division also expedites permit procedures and requires reports and guidance pertaining to projects to capture, utilize, and sequester carbon.</p> <p>In addition, the division provides the EPA with authority to regulate specified hydrofluorocarbon compounds. It directs the EPA to (1) phase down the production and consumption of specified compounds; (2) establish standards to manage, reclaim, and reuse the compounds; and (3) restrict the use of the compounds by certain sectors to facilitate the transition to alternative technologies.</p> <p>DIVISION T--SMITHSONIAN AMERICAN WOMEN'S HISTORY MUSEUM ACT AND NATIONAL MUSEUM OF THE AMERICAN LATINO</p> <p>This division establishes within the Smithsonian Institution a women's history museum and the National Museum of the American Latino. It also creates advisory bodies to provide guidance and oversight concerning the development, construction, and administration of the respective museums.</p> <p>DIVISION U--HOMELAND SECURITY AND GOVERNMENTAL AFFAIRS PROVISIONS</p> <p>This division establishes provisions related to homeland security and governmental affairs, including requirements regarding artificial intelligence (AI), synthetic opioid exposure, and countering unmanned aircraft systems.</p> <p>Specifically, the division establishes the AI Center of Excellence to facilitate and coordinate federal government adoption of AI technologies. The Office of Management and Budget must issue guidance for agency use of AI, and the Office of Personnel Management must establish or update an occupational series to include AI positions.</p> <p>The division requires the Department of Homeland Security (DHS) to (1) brief Congress regarding DHS personnel with primary duties that take place outside of the United States, and (2) submit a plan to enhance the effectiveness of its personnel at foreign locations.</p> <p>The division also requires U.S. Customs and Border Protection to specify effective protocols and procedures that (1) address the safe handling of potential synthetic opioids by its officers, agents, other personnel, and canines; and (2) reduce the risk of injury or death from accidental exposure and enhance postexposure management.</p> <p>The division prohibits the use of reverse auctions (i.e., auctions in which multiple sellers lower their bids to win a supply or service contract) for awarding federal contracts for construction and design services. The division also requires the Council of the Inspectors General on Integrity and Efficiency to establish and maintain a website to provide access to any audit report, inspection report, or evaluation report made by an Office of Inspector General.</p> <p>Further, the division establishes the Counter Threats Advisory Board within DHS and requires the board to coordinate departmental intelligence activities and policy and information related to the functions of DHS that counter threats. The board must also advise DHS on the issuance of terrorism alerts.</p> <p>The division requires DHS to designate a Countering Unmanned Aircraft Systems Coordinator to oversee and coordinate relevant DHS offices and components regarding the development of guidance and regulations for countering threats associated with unmanned aircraft systems. </p> <p>The division also expands the prohibition on reprisals against whistleblowers to include subgrantees for federal grants.</p> <p>The division transfers to DHS the <em>.gov</em> internet domain and requires DHS to make <em>.gov</em> internet domain registration services generally available to any federal, state, local, or territorial government entity, or other publicly controlled entity, that complies with certain registration requirements. DHS must also maintain an inventory of all hostnames and services in active use within the <em>.gov</em> internet domain.</p> <p>The division allows states to accept identifying information from driver's licenses and identification cards that are stored or accessed via electronic means, such as mobile or digital driver's licenses or identification cards.</p> <p>Additionally, the division requires DHS to submit a technology needs analysis for border security technology along the Southwest border that includes an assessment of technology needs and gaps along the border.</p> <p>DIVISION V--AIRCRAFT CERTIFICATION, SAFETY, AND ACCOUNTABILITY</p> <p>This division addresses certain safety standards relating to the aircraft certification process.</p> <p>For example, the division requires the Federal Aviation Administration (FAA) to</p> <ul> <li>direct U.S. aircraft and aerospace industry manufacturers to adopt safety management systems consistent with international standards and practices,</li> <li>require manufacturers to disclose to the FAA certain safety-critical information related to certain aircraft, and</li> <li>establish an appeals process to review decisions regarding a manufacturer's compliance with applicable design regulations. </li> </ul> <p>The division also revises the Organization Designation Authorization (ODA) program, under which the FAA may, subject to particular limitations, delegate examination, testing, inspection, and other functions related to transport airplane certification to U.S. aircraft and aerospace organizations (ODA holders). These revisions include</p> <ul> <li>requiring the FAA to undertake reviews of current ODA holders' capability to adequately carry out delegated activities,</li> <li>providing statutory authority for certain limits on the functions that the FAA may delegate to ODA holders, and</li> <li>expanding the FAA's oversight of the employees of an ODA holder who are responsible for delegated certification activities.<br /> </li> </ul> <p>The FAA must also develop a program for regular training of subject-matter experts employed in the FAA's Aircraft Certification Service, as well as a voluntary safety reporting program for those individuals to confidentially report instances where they have identified safety concerns during certification or oversight processes.</p> <p>The FAA must revise its process for issuing amended type certificates for modifying an aircraft and recommend reforms of aircraft type certifications.</p> <p>Further, the FAA must implement specified safety recommendations related to alerting flight crew in the event of systems failures or non-normal operation. It must also undertake specified activities with respect to pilot training required to operate new transport airplanes, including independently reviewing any proposal by an airplane's manufacturer concerning such training and initiating a review of pilot certification standards to facilitate stakeholder sharing of lessons learned, best practices, and actions to address any safety issues identified. Additionally, the FAA must revise policies to ensure that pilot operational evaluations of airplanes undergoing certification use pilots with varying levels of experience from air carriers that are expected to operate such airplanes.</p> <p>The FAA must develop (1) a human factors education program that addresses the effects of modern flight deck systems, including automated systems, on human performance for transport airplanes and the approaches for better integration of human factors in aircraft design and certification; (2) research requirements to address the integration of human factors in the design and certification of aircraft that are intended for use in air transportation; and (3) a Center of Excellence focused on automated systems and human factors in transport category aircraft.</p> <p>The division also requires various reports on aviation safety, including an assessment carried out by the National Academy of Sciences of the methodology and effectiveness of the Transport Airplane Risk Assessment Methodology process used by the FAA.</p> <p>The FAA must establish the National Air Grant Fellowship Program for qualified individuals at the graduate and post-graduate levels in fields related to aerospace. The FAA must also establish requirements for issuing aviation maintenance technician school certificates and associated ratings and the general operating rules for the holders of those certificates and ratings.</p> <p>The FAA must establish a Whistleblower Ombudsman and an Office of Investigations and Professional Responsibility to provide additional accountability for the FAA.</p> <p>DIVISION W--INTELLIGENCE AUTHORIZATION ACT FOR FISCAL YEAR 2021</p> <p>This division authorizes various intelligence-related activities for FY2021.</p> <p>The division requires (1) the Office of the Director of National Intelligence (ODNI), the Central Intelligence Agency (CIA), and other intelligence agencies to establish continuity of operations plans; (2) the ODNI to establish standards for collecting disaggregated attrition data for the intelligence community workforce; and (3) certain elements of the intelligence community to buy specified satellite components from American sources.</p> <p>Additionally, the division (1) directs the ODNI to establish minimum standards for the repayment of student loans for employees of elements of the intelligence community by such elements of the intelligence community, (2) establishes the Office of the Ombudsman for Analytic Objectivity, (3) authorizes the National Geospatial-Intelligence Agency to carry out a program of personnel management authority to facilitate the recruitment of experts in science or engineering, and (4) requires the ODNI to establish an honorary award for the recognition of female personnel of the National Security Agency for distinguished career contributions.</p> <p>The division requires the Department of Homeland Security to carry out an intelligence and cybersecurity diversity fellowship program. The division also requires the CIA to identify actions and establish programs to improve education in the scientific, technology, engineering, arts, and mathematics skills necessary to meet the long-term national security needs of the United States. In addition, the division requires the ODNI to award contracts or grants or make other transactions to encourage microelectronics research.</p> <p>Further, the division requires reports on various topics, including</p> <ul> <li>the efforts of the intelligence community and the Department of Defense to identify and mitigate risks posed to each by China's use of direct-to-consumer genetic testing;</li> <li>the use of hiring flexibilities and expedited human resources practices by the intelligence community to assure quality and diversity in its workforce;</li> <li>priorities for signals intelligence collection;</li> <li>the use of student loan repayment benefits by intelligence community personnel;</li> <li>corrupt activities of Chinese Communist Party officials and Eastern European oligarchs;</li> <li>the effect of lifting the United Nations arms embargo on Iran;</li> <li>the situation in Afghanistan and tensions between Armenia and Azerbaijan;</li> <li>worldwide threats to the national security of the United States; and</li> <li>the threat of global pandemic disease, including the possible continuing courses of the COVID-19 pandemic.</li> </ul> <p>DIVISION X--SUPPORTING FOSTER YOUTH AND FAMILIES THROUGH THE PANDEMIC</p> <p>This division provides additional FY2021 funding for and otherwise modifies foster care and other programs that support youth and families in responding to COVID-19.</p> <p>Specifically, the division provides FY2021 funding for grants to help current and former foster care youths achieve self-sufficiency. It also temporarily waives matching requirements and provides additional programmatic flexibilities. For example, through FY2021, the division allows foster care and former foster care youths to remain eligible for certain services, including vouchers for post-secondary education and training, until age 27.</p> <p>Furthermore, the division prevents youth from aging out of foster care during the COVID-19 emergency. Youth who already aged out of foster care during the COVID-19 emergency may voluntarily reenter foster care.</p> <p>The division also provides FY2021 funding and waives applicable matching requirements for a grant program that supports safe, stable families. It reserves a portion of that funding to address needs stemming from the COVID-19 emergency in family courts.</p> <p>In addition, the division waives matching requirements and provides various administrative and programmatic flexibilities to address COVID-19 with respect to</p> <ul> <li>time-limited prevention services for mental health, substance abuse, and in-home parent skill-based programs for children and youth at risk of entering foster care, pregnant or parenting youth in foster care, and parents or kin caregivers of those children and youth;</li> <li>kinship navigator programs; and</li> <li>maternal, infant, and early childhood home-visiting programs.</li> </ul> <p>DIVISION Y--AMERICAN MINER BENEFITS IMPROVEMENT</p> <p>This division makes additional retired coal miners eligible for health benefits through the United Mine Workers of America 1993 Benefit Plan. It also provides mandatory funding to the plan if retiree health benefits would otherwise be reduced or denied because of a qualified bankruptcy proceeding of a coal mining operator that commenced in any year after 2019.</p> <p>DIVISION Z--ENERGY ACT OF 2020</p> <p>This division addresses energy efficiency, alternative energy, carbon management and removal, grid modernization, and other energy provisions.</p> <p>Specifically, the division requires the Department of Energy (DOE) to carry out activities to promote energy efficiency and alternative energy, including in schools, institutions of higher education, federal agencies, and residential and commercial buildings. DOE must also implement (1) rebate programs to incentivize the use of energy-efficient electric motors and transformers; and (2) a pilot program to improve the net energy balance of water, wastewater, and water-reuse systems.</p> <p>With respect to nuclear energy, DOE must carry out programs that support (1) the availability of certain uranium for civilian domestic research and commercial purposes; (2) modernizing technologies for nuclear power plants to improve capacity, safety, and efficiency; (3) collaboration in international efforts concerning diplomatic, financing, and nonproliferation objectives for the use of nuclear technology; and (4) the development of a competitive U.S. fusion power industry. The division also extends and expands limitations on importing uranium from Russia.</p> <p>The division requires DOE to carry out projects and other initiatives for (1) water power technology, hydropower, and marine energy; geothermal energy; (2) wind energy; and (3) solar energy. The division also extends through FY2036 certain hydroelectric production incentives and provisions related to increasing efficiency.</p> <p>DOE must (1) establish a national office to carry out an existing program that improves coordination of federal permits for renewable energy projects on specified federal lands, and (2) set national goals for renewable energy production on federal land. The division also authorizes coproduction of geothermal energy on oil and gas leases.</p> <p>DOE must establish (1) the Energy Storage System Research, Development, and Deployment Program; and (2) a grant program for energy storage technology and microgrid projects that use renewable energy sources.</p> <p>The division also contains provisions related to carbon management and carbon removal, including provisions that establish programs for coal and natural gas carbon capture technologies, carbon storage, carbon utilization, high-efficiency gas turbines, and large-scale removal of atmospheric carbon dioxide.</p> <p>DOE must promote emissions reduction efforts, including by establishing an advisory committee, providing technical assistance, and implementing an industrial emissions reduction technology development program. This program must (1) increase technological and economic competitiveness of U.S. industry and manufacturing, (2) increase viability and competitiveness of U.S. industrial technology exports, and (3) reduce emissions in non-power industries.</p> <p>DOE must conduct a program to (1) develop advanced separation technologies to extract and recover rare earth elements and critical materials from coal and coal byproducts, and (2) determine the environmental or public health impacts of such extraction. The Department of the Interior must establish a consortium to support this program. Interior and DOE must also disseminate relevant information on critical materials.</p> <p>The division also requires measures to modernize the energy grid, such as a smart grid regional demonstration initiative and programs for integrated energy systems. Further, DOE must establish a program to develop integrated microgrid systems for isolated communities and increase critical infrastructure resiliency.</p> <p>The division establishes an office within DOE to expand the commercial impact of DOE's research and investments and to focus on commercializing technologies that support its missions. DOE must establish a pilot program to foster partnerships between the National Laboratories and public and private sector entities. The division extends through FY2030 certain DOE contracting authority and requires DOE to establish a research program in artificial intelligence and high-performance computing for veteran's health care. DOE must also operate an Established Program to Stimulate Competitive Research grant program to increase the number of researchers capable of performing research in support of DOE's mission.</p> <p>DOE must carry out a research program on low-dose and low dose-rate radiation to enhance the scientific understanding of the effects of exposure to such radiation. The division also extends through FY2031 DOE's authority to operate the disposal site for residual radioactive material in Mesa County, Colorado.</p> <p>DIVISION AA--WATER RESOURCES DEVELOPMENT ACT OF 2020</p> <p>This division contains measures related to water resources, including programs for developing such resources, required studies and reports, and the deauthorization of certain projects.</p> <p>Specifically, the division (1) expands the Harbor Maintenance Trust Fund for port and harbor maintenance; (2) directs the U.S. Army Corps of Engineers (USACE) to equitably allocate harbor maintenance expenditures for harbor operation and maintenance needs while also addressing the needs of certain donor and energy-transfer ports, Great Lakes harbors, emerging harbors, and commercial strategic seaports; and (3) provides additional federal resources for the construction of inland waterways projects. </p> <p>The USACE must issue final agency procedures to implement principles, requirements, and guidelines that ensure that the formulation of future water resources development projects is sustainable, protects and restores the functions of natural systems, and addresses the needs of economically disadvantaged communities. The USACE may provide technical assistance to support the flood risk resiliency planning efforts of economically disadvantaged communities or communities subject to repetitive flooding. In addition, the USACE must (1) update its policies on environmental justice considerations and community engagement and consultation, and (2) consult with Indian tribes when working on or adjacent to tribal lands and areas. The USACE must review and, where appropriate, revise existing planning guidance documents and regulations on the assessment of the effects of sea-level rise or inland flooding on future water resources development projects.</p> <p>The division provides for the evaluation of natural and nature-based projects as alternatives to structural projects. The division also addresses the water resources needs of economically disadvantaged communities, minority communities, and rural communities.</p> <p>The USACE must carry out a pilot program to conduct feasibility studies for flood risk management and hurricane and storm damage risk reduction projects for economically disadvantaged communities. The USACE must also carry out a program to study, design, and construct water resources projects for communities that have been subject to repetitive flooding events. When evaluating the placement of dredged material obtained from water resources projects, the USACE must consider the suitability of the dredged material for other beneficial uses. Additionally, the USACE must carry out a demonstration program to assist in detecting, treating, and preventing harmful algal blooms.</p> <p>In addition to other required studies and reports, the division authorizes various feasibility studies for water resources development projects and directs the USACE to complete comprehensive river basin studies for the Great Lakes, the Lower Mississippi River, the Upper Mississippi River, the Lower Missouri River Basin, the Upper Missouri River, and the Sacramento River.</p> <p>The USACE must deauthorize certain inactive construction projects. In addition, the division modifies funding and other requirements for a number of existing projects.</p> <p>The division also authorizes the construction of pending water resources infrastructure projects identified in specified USACE reports.</p> <p>The USACE must update its Invasive Species Policy Guidance based on the most recent National Invasive Species Management Plan and must take other steps to control, manage, and eradicate certain invasive species.</p> <p>DIVISION BB--PRIVATE HEALTH INSURANCE AND PUBLIC HEALTH PROVISIONS</p> <p>This division establishes federal protections from surprise medical bills and otherwise modifies reporting and disclosure requirements related to health insurance. It also reauthorizes, establishes, and modifies various public health programs, including certain activities of the Food and Drug Administration (FDA).</p> <p>Specifically, the division generally prohibits insurance companies and providers from billing a patient more than the applicable in-network, cost-sharing amount if the patient received care in an emergency situation or in a non-emergency situation where the patient did not have the option to choose an in-network provider. With respect to this prohibition, the division outlines procedures to resolve payment disputes between health insurers and providers and makes changes to increase price transparency, address continuity of care, and expand related consumer protections. It also provides grants for state all-payer claims databases and requires reports on market consolidation and other topics.</p> <p>Other changes that affect health insurance include (1) prohibiting, subject to privacy rules and other limitations, health insurance plans from entering into agreements with health care providers that restrict the plans from accessing and sharing cost or quality information or anonymous claims information; and (2) requiring agents, brokers, and consultants who assist employers and individuals with obtaining health insurance to disclose information about certain compensation they expect to receive from insurance carriers.</p> <p>Moreover, health insurers must annually assess their compliance with federal standards concerning parity in coverage of mental health and substance use disorder treatment and must report on pharmacy benefit and drug costs, including remuneration provided by drug manufacturers.</p> <p>The division also extends through FY2023 specified programs to expand access to health care in medically underserved areas, including scholarships and student loan repayment for certain health care providers. In addition, the Department of Health and Human Services (HHS) must expand a grant program that supports access to specialist health services in rural and other underserved areas through videoconferencing and related technology.</p> <p>Furthermore, the division extends and modifies public health programs and activities. Specifically, it</p> <ul> <li>extends through FY2023 certain diabetes programs,</li> <li>extends through FY2026 a breast cancer grant program that focuses on young women,</li> <li>extends through FY2026 a grant program for school-based health centers, and</li> <li>requires recipients of certain grants for state-wide youth suicide prevention to consult with Indian tribes and organizations and Native Hawaiian health care systems on grant-funded activities.</li> </ul> <p>The Centers for Disease Control and Prevention must also carry out activities to address vaccine-preventable diseases, obesity prevention and reduction, and public health data infrastructure modernization.</p> <p>With respect to the FDA, the division</p> <ul> <li>extends through FY2026 the FDA's authority to expedite reviews of drugs that treat rare pediatric diseases,</li> <li>allows applicants for approval of a biosimilar to show that the uses of the biosimilar have been previously approved by the FDA for the reference biologic,</li> <li>imposes a clinical superiority requirement on all orphan drugs approved after a specified date,</li> <li>establishes a process to update the labels of generic drugs in cases where the brand-name drug has exited the market for reasons other than safety or efficacy, and</li> <li>provides statutory authority for and makes changes to a database maintained by the FDA that contains information about biologics and biosimilars.</li> </ul> <p>DIVISION CC--HEALTH EXTENDERS</p> <p>This division extends and modifies provisions concerning Medicare, Medicaid, and other federal social welfare programs.</p> <p>Specifically, the division allows Medicare coverage to take effect the month after enrollment and otherwise revises Medicare enrollment processes. It also authorizes additional quality measures for an incentive program for skilled nursing facilities.</p> <p>The division changes various Medicare payment rules and systems. Changes to physician payments include extending modifications to the work geographic index and delaying use of a particular add-on code for certain complex evaluation and management visits through 2023. Other changes include eliminating coinsurance for colorectal cancer screening.</p> <p>In addition, the division addresses Medicare payments in rural areas. It establishes a classification and payment methodology for rural hospitals that furnish only outpatient and emergency services and increases the maximum payment for visits at certain independent rural health clinics.</p> <p>The division also expands, subject to specified conditions, Medicare payments for certain hospice services and home-infusion therapies. Additionally, it allows Medicare beneficiaries who do not live in rural areas to receive mental health services furnished via telehealth after the COVID-19 emergency period ends.</p> <p>Furthermore, the division delays certain Medicare Alternative Payment Model requirements until payment year 2024 and delays until January 1, 2022, a demonstration model for improving the quality of care for cancer patients receiving radiotherapy.</p> <p>The division also makes changes to the Medicare prescription drug benefit. It allows, subject to confidentiality restrictions, disclosure of payment information to specified commissions and provides statutory authority for (1) a program that assists individuals who are newly eligible for the benefit and have limited income, and (2) a requirement for drug plan sponsors to implement electronic tools to share relevant pricing and benefit information with prescribers. The Department of Health and Human Services must develop standards for the tools and require their incorporation as a condition of certification for health information technology.</p> <p>Moreover, the division increases the number of residency positions eligible for graduate medical payments under Medicare for qualifying hospitals, including hospitals in rural areas.</p> <p>The division also extends funding for outreach and Medicare enrollment activities targeting low-income older individuals and requires outreach concerning Medicare benefits for individuals with Alzheimer's disease and related dementias.</p> <p>The division also extends Medicare coverage for immunosuppressive drugs for kidney transplant recipients.</p> <p>Additionally, the division provides statutory authority for a public-private partnership to prevent health care fraud, waste, and abuse.</p> <p>With respect to Medicaid, the division changes multiple provisions. For example, it extends coverage to citizens of freely associated states who lawfully reside in the United States and expands the scope of certain patient abuse and neglect investigations.</p> <p>It also delays reductions to Medicaid disproportionate-share hospital (DSH) allotments until FY2024. In addition, beginning on October 1, 2021, the division excludes costs and payments for individuals for whom Medicaid is not the primary payer from certain DSH payment calculations.</p> <p>Moreover, the division extends protections against spousal impoverishment for recipients of home- and community-based services through FY2023 and extends various demonstration projects, including the Money Follows the Person demonstration.</p> <p>The division also provides statutory authority for required Medicaid coverage of nonemergency transportation services and requires coverage of routine items and services provided in connection with clinical trials.</p> <p>With respect to other social welfare programs, the division extends the Temporary Assistance for Needy Families (TANF) program, funding for child care, and related activities through FY2021. It also extends programs for</p> <ul> <li>abstinence and sexual health education and support for pregnant and parenting youth,</li> <li>training for low-income individuals in health care occupations, and</li> <li>state and tribal child welfare systems.</li> </ul> <p>The division rescinds funds from the Medicaid Improvement Fund and provides funds to the Medicare Improvement Fund.</p> <p>The division provides supplemental FY2021 funding to the Centers for Medicare &amp; Medicaid Services to carry out the bill's activities and programs.</p> <p>DIVISION DD--MONTANA WATER RIGHTS PROTECTION ACT</p> <p>This division authorizes, ratifies, and confirms a specified water rights settlement entered into by the United States, Montana, and the Confederated Salish and Kootenai Tribes of the Flathead Reservation of Montana. Specified claims of the tribes against the United States are waived and released.</p> <p>The division directs the Department of the Interior to allocate specified amounts of storage water in Hungry Horse Reservoir for use by the tribes.</p> <p>It also requires Interior (or the tribes on behalf of Interior) to carry out specified activities related to the Flathead Indian Irrigation Project, such as rehabilitating structures, upgrading irrigation facilities, and restoring streams that are affected by the project.</p> <p>In addition, the division (1) establishes the S&eacute;li&scaron;-Qlisp&eacute; Ksanka Settlement Trust Fund, (2) requires the National Bison Range to be held in trust for the benefit of the tribes, (3) requires Interior to make certain payments to Lake and Sanders Counties in Montana for the restoration of the National Bison Range, and (4) requires Interior to offer to negotiate with Montana for the transfer of specified parcels of state land.</p> <p>DIVISION EE--TAXPAYER CERTAINTY AND DISASTER TAX RELIEF ACT OF 2020</p> <p>This division extends certain individual and business-related tax provisions, provides tax incentives for renewable energy production and green economy jobs, and provides disaster-related tax relief.</p> <p>Specifically, the division makes permanent certain tax provisions, including (1) the reduction in the medical expense deduction floor; (2) the energy efficient commercial buildings deduction; (3) the exclusion from income for certain benefits provided to volunteer firefighters and emergency medical responders; (4) the railroad track maintenance credit; and (5) reductions in tax rates and certain other changes related to taxation of beer, wine, and distilled spirits.</p> <p>The division extends through 2025 certain tax provisions, including (1) the look-through rule for related controlled foreign corporations (a rule that allows a U.S. corporation to shift profits among its foreign subsidiaries without triggering certain tax liabilities), (2) the new markets tax credit (a credit for making certain equity investments in qualified community development entities), (3) empowerment zone tax incentives (tax incentives for certain economically distressed urban and rural communities), (4) the employer credit for paid family and medical leave, (5) the exclusion for certain employer payments of student loans, and (6) the carbon oxide sequestration credit.</p> <p>Further, the division extends through 2021 certain other tax provisions, including (1) the credit for electricity produced from certain renewable resources; (2) the credit for certain health insurance costs of eligible individuals; (3) certain credits related to Indian employment, business property, and coal production; and (4) specified credits related to alternative fuels, energy efficiency, and electric vehicles.</p> <p>Further, the division establishes new tax provisions, such as (1) setting a minimum rate for the low-income housing tax credit, (2) specifying that waste energy recovery property (i.e., property that generates electricity solely from heat from buildings or equipment where the primary purpose of the building or equipment is not electricity generation) is eligible for certain energy credits, and (3) specifying minimum rates of interest for certain determinations related to life insurance contracts.</p> <p>The division also provides disaster-related tax relief, including by establishing special rules for the use of retirement funds and establishing an employee retention credit for employers affected by qualified disasters.</p> <p>DIVISION FF--OTHER MATTER</p> <p>This division addresses various matters not covered elsewhere in the bill, including provisions related to public lands, foreign relations, cloud services, student aid, telecommunications and consumer protection, and bankruptcy relief.</p> <p>Specifically, the division requires the Social Security Administration (SSA) to enter into an agreement with the Department of the Treasury whereby the SSA must inform Treasury as to whether certain individuals receive disability insurance benefits or Supplemental Security Income benefits. </p> <p>The division also reschedules certain educational progress assessments applicable to 4th, 8th, and 12th grade reading and mathematics.</p> <p>The division expands the boundary of Saguaro National Park in Arizona, designates New River Gorge National Park and New River Gorge National Preserve in West Virginia, and designates Miracle Mountain in Utah.</p> <p>The division also contains foreign relations provisions, including measures related to (1) hostage recovery and hostage-taking accountability; (2) scholarly exchanges between the United States and India; and (3) U.S. support for Taiwan, Belarus, Tibet, El Salvador, Guatemala, and Honduras.</p> <p>Further, the division</p> <ul> <li>establishes requirements for the use of cloud services by the Senate Sergeant at Arms;</li> <li>requires the U.S. Postal Service to clarify the applicability of the existing prohibition on mailing cigarettes to electronic nicotine delivery systems (e.g., e-cigarettes and vape pens);</li> <li>modifies the application process, eligibility requirements, and certain calculations related to the Free Application for Federal Student Aid;</li> <li>provides for fee-based access to death information furnished to or maintained by the SSA; and</li> <li>authorizes specified bankruptcy relief to a debtor who suffered a material financial hardship due to COVID-19.</li> </ul> <p>The division also encompasses telecommunications provisions that include repealing the requirement for the Federal Communications Commission to reallocate and auction the 470-512 megahertz (MHz) band (referred to as the T-Band spectrum). This band is a frequency range currently utilized by public-safety entities in certain urban areas. The division (1) establishes the Office of Internet Connectivity and Growth, (2) mandates an interagency agreement to coordinate the distribution of federal funds for new broadband deployment, and (3) establishes requirements related to the assignment and allocation of electromagnetic spectrum between the frequencies of 3450 MHz and 3550 MHz.</p> <p>The division includes measures related to western water and Indian affairs, such as measures that (1) establish an aging infrastructure account in Treasury, (2) ratify the Navajo-Utah Water Rights Settlement Agreement, (3) finalize the Aamodt litigation settlement, (4) authorize the use of certain Bureau of Reclamation facilities and federal land to convey water to recharge certain aquifers, (5) authorize rural water-supply projects in Montana and North Dakota, and (6) establish the Snow Water Supply Forecasting Program.</p> <p>Additionally, the division</p> <ul> <li>recognizes the Horseracing Integrity and Safety Authority for purposes of developing and implementing a horse racing anti-doping and medication control program and a racetrack safety program;</li> <li>extends through FY2023 certain funds previously made available for Community Development Block Grants;</li> <li>authorizes the Federal Trade Commission (FTC) to seek civil penalties from entities engaging in deceptive trade practices associated with the treatment, cure, prevention, mitigation, or diagnosis of COVID-19;</li> <li>requires the Department of Commerce and the FTC to study and submit reports on the state of specified technology industries (e.g., artificial intelligence, quantum computing, blockchain technology, and unmanned delivery services) and the impact of these industries on the U.S. economy;</li> <li>requires the Department of Veterans Affairs (VA) to record as an obligation of the U.S. government certain amounts owed for hospital care or medical services furnished at non-VA facilities;</li> <li>provides for the conveyance of approximately 93 acres of National Forest System land in North Dakota to the Theodore Roosevelt Presidential Library Foundation;</li> <li>requires the State Department to develop a strategy to prioritize and expand educational and professional exchange programs with Mexico; and</li> <li>directs the Consumer Product Safety Commission to ensure that investigators are stationed at ports of entry for the duration of the COVID-19 public health emergency to protect the public against unreasonable risk of injury from consumer products.</li></ul>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ260/PLAW-116publ260.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ260/PLAW-116publ260_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ260/PLAW-116publ260.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/133"
     },
     {
       "id": "hr4761-116",
@@ -2091,6 +2259,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/8900"
     },
     {
+      "id": "sjres78-116",
+      "congress": 116,
+      "type": "sjres",
+      "number": "78",
+      "title": "A joint resolution providing for congressional disapproval of the proposed foreign  military sale to the United Arab Emirates of certain defense articles and services.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Menendez, Robert",
+        "party": "D",
+        "state": "NJ"
+      },
+      "introduced_date": "2020-11-18",
+      "latest_action": {
+        "date": "2020-12-09",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 49. Record Vote Number: 262."
+      },
+      "outcome": "failed",
+      "summary_crs": " <p>This joint resolution prohibits the proposed foreign military sale of specified defense articles to the United Arab Emirates.</p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sjres78/BILLS-116sjres78is.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sjres78/BILLS-116sjres78is.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sjres78/BILLS-116sjres78is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-joint-resolution/78"
+    },
+    {
       "id": "hr8247-116",
       "congress": 116,
       "type": "hr",
@@ -2209,6 +2401,30 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ211/PLAW-116publ211_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ211/PLAW-116publ211.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/8472"
+    },
+    {
+      "id": "s3587-116",
+      "congress": 116,
+      "type": "s",
+      "number": "3587",
+      "title": "Department of Veterans Affairs Website Accessibility Act of 2019",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Casey, Robert P., Jr.",
+        "party": "D",
+        "state": "PA"
+      },
+      "introduced_date": "2020-03-26",
+      "latest_action": {
+        "date": "2020-12-04",
+        "text": "Became Public Law No: 116-213."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Department of Veterans Affairs Website Accessibility Act of 2019</b></p> <p>This bill directs the Department of Veterans Affairs (VA) to report to Congress regarding the accessibility of VA websites (including attached files and web-based applications) to individuals with disabilities. The report shall identify websites, files, and applications that are not accessible to such individuals and include the VA's plan to make each of them accessible.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ213/PLAW-116publ213.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ213/PLAW-116publ213_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ213/PLAW-116publ213.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/3587"
     },
     {
       "id": "hr1773-116",
@@ -2739,6 +2955,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/2372"
     },
     {
+      "id": "hr4779-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "4779",
+      "title": "To extend the Undertaking Spam, Spyware, And Fraud Enforcement With Enforcers beyond Borders Act of 2006, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McMorris Rodgers, Cathy",
+        "party": "R",
+        "state": "WA"
+      },
+      "introduced_date": "2019-10-22",
+      "latest_action": {
+        "date": "2020-10-20",
+        "text": "Became Public Law No: 116-173."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill reauthorizes through FY2027 the U.S. SAFE WEB Act of 2006, which permits the Federal Trade Commission (FTC) to take certain actions to protect consumers from cross-border fraud and deception occurring over the internet. The bill further requires the FTC to report on its activities concerning cross-border, online fraud and provide any policy recommendations to address such fraud.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ173/PLAW-116publ173.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ173/PLAW-116publ173_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ173/PLAW-116publ173.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/4779"
+    },
+    {
       "id": "hr6168-116",
       "congress": 116,
       "type": "hr",
@@ -2761,6 +3001,54 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ178/PLAW-116publ178_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ178/PLAW-116publ178.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/6168"
+    },
+    {
+      "id": "s1321-116",
+      "congress": 116,
+      "type": "s",
+      "number": "1321",
+      "title": "Defending the Integrity of Voting Systems Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blumenthal, Richard",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2019-05-06",
+      "latest_action": {
+        "date": "2020-10-20",
+        "text": "Became Public Law No: 116-179."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Defending the Integrity of Voting Systems Act</b></p> <p>This bill broadens the definition of <i>protected computer</i>, for purposes of computer fraud and abuse offenses, to include a computer that is part of a voting system.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ179/PLAW-116publ179.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ179/PLAW-116publ179_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ179/PLAW-116publ179.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/1321"
+    },
+    {
+      "id": "s294-116",
+      "congress": 116,
+      "type": "s",
+      "number": "294",
+      "title": "Native American Business Incubators Program Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Udall, Tom",
+        "party": "D",
+        "state": "NM"
+      },
+      "introduced_date": "2019-01-31",
+      "latest_action": {
+        "date": "2020-10-20",
+        "text": "Became Public Law No: 116-174."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Native American Business Incubators Program Act </b></p> <p>This bill establishes a grant program to provide business incubation and other business services to Native American entrepreneurs and businesses. </p> <p>(Sec. 4) Specifically, the bill requires the Department of the Interior to establish a grant program in the Office of Indian Energy and Economic Development for establishing and operating business incubators that serve Native American communities. A business incubator is an organization that (1) provides physical workspace and facilities resources to start-ups and established businesses, and (2) is designed to accelerate the growth and success of businesses through a variety of business support resources and services. Grant applicants may be institutions of higher education, private nonprofits, Native American tribes, or tribal nonprofits.</p> <p>Interior must issue a grant for a three-year term and may renew a grant for up to three more years.</p> <p>Grant recipients must generally provide a nonfederal contribution of at least 25% of the annual grant disbursement each year; however, Interior may waive this requirement under certain circumstances. Further, grant recipients must provide a nonfederal contribution of at least 33% of a grant renewal. <p>(Sec. 6) Interior must facilitate the establishment of relationships between grant recipients and educational institutions serving Native American communities. </p> <p>(Sec. 7) Additionally, Interior must coordinate with the Department of Agriculture, the Department of Commerce, the Department of the Treasury, and the Small Business Administration to ensure that grant recipients have the information and materials needed to provide Native American businesses and entrepreneurs with assistance in applying for federal business and entrepreneurial development programs.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ174/PLAW-116publ174.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ174/PLAW-116publ174_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ174/PLAW-116publ174.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/294"
     },
     {
       "id": "hjres90-116",
@@ -2881,6 +3169,30 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ168/PLAW-116publ168_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ168/PLAW-116publ168.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/1646"
+    },
+    {
+      "id": "s4072-116",
+      "congress": 116,
+      "type": "s",
+      "number": "4072",
+      "title": "A bill to designate the clinic of the Department of Veterans Affairs in Bend, Oregon, as the \"Robert D. Maxwell Department of Veterans Affairs Clinic\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Merkley, Jeff",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2020-06-25",
+      "latest_action": {
+        "date": "2020-10-13",
+        "text": "Became Public Law No: 116-169."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill designates the Department of Veterans Affairs clinic in Bend, Oregon, as the Robert D. Maxwell Department of Veterans Affairs Clinic or the Robert D. Maxwell VA Clinic.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ169/PLAW-116publ169.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ169/PLAW-116publ169_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ169/PLAW-116publ169.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/4072"
     },
     {
       "id": "hr991-116",
@@ -3169,6 +3481,30 @@
       "text_url_xml": "https://www.congress.gov/116/bills/sres658/BILLS-116sres658ats.xml",
       "text_url_pdf": "https://www.congress.gov/116/bills/sres658/BILLS-116sres658ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/658"
+    },
+    {
+      "id": "hr1957-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "1957",
+      "title": "Great American Outdoors Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Lewis, John",
+        "party": "D",
+        "state": "GA"
+      },
+      "introduced_date": "2019-03-28",
+      "latest_action": {
+        "date": "2020-08-04",
+        "text": "Became Public Law No: 116-152."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Great American Outdoors Act</b></p> <p>This bill establishes the National Parks and Public Land Legacy Restoration Fund to support deferred maintenance projects on federal lands. </p> <p>For FY2021-FY2025, there shall be deposited into the fund an amount equal to 50% of energy development revenues credited, covered, or deposited as miscellaneous receipts from oil, gas, coal, or alternative or renewable energy development on federal lands and waters. Deposited amounts must not exceed $1.9 billion for any fiscal year.</p> <p>The fund must be used for priority deferred maintenance projects in specified systems that are administered by</p> <ul> <li>the National Park Service, </li> <li>the Forest Service, </li> <li>the U.S. Fish and Wildlife Service, </li> <li>the Bureau of Land Management, and </li> <li>the Bureau of Indian Education. </li></ul> <p>The Government Accountability Office must report on the effect of the fund in reducing the backlog of priority deferred maintenance projects for the specified agencies. </p> <p>Additionally, the bill makes funding for the Land and Water Conservation Fund (LWCF) permanent. The President shall annually&nbsp;report to Congress specified details regarding the allocation of funds to the LWCF. Congress may provide for alternate allocations using specified procedures. </p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ152/PLAW-116publ152.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ152/PLAW-116publ152_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ152/PLAW-116publ152.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/1957"
     },
     {
       "id": "s4148-116",
@@ -3939,6 +4275,54 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/4334"
     },
     {
+      "id": "s3503-116",
+      "congress": 116,
+      "type": "s",
+      "number": "3503",
+      "title": "A bill to authorize the Secretary of Veterans Affairs to treat certain programs of education converted to distance learning by reason of emergencies and health-related situations in the same manner as programs of education pursued at educational institutions, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Moran, Jerry",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2020-03-16",
+      "latest_action": {
+        "date": "2020-03-21",
+        "text": "Became Public Law No: 116-128."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill authorizes the Department of Veterans Affairs to continue to provide educational assistance through December 21, 2020, for programs of education that have been converted to distance learning due to an emergency or health-related situation. Such assistance includes monthly housing stipends or subsistence allowances.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ128/PLAW-116publ128.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ128/PLAW-116publ128_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ128/PLAW-116publ128.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/3503"
+    },
+    {
+      "id": "hr5214-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "5214",
+      "title": "Representative Payee Fraud Prevention Act of 2019",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Tlaib, Rashida",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2019-11-21",
+      "latest_action": {
+        "date": "2020-03-18",
+        "text": "Became Public Law No: 116-126."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Representative Payee Fraud Prevention Act of 2019</b></p> <p>This bill prohibits a representative payee (i.e., a person designated to receive payments on behalf of a minor, a mentally incompetent individual, or an individual under other legal disability) from embezzling or converting the amounts received from certain retirement funds.</p> <p>If the Office of Personnel Management (OPM) determines that a representative payee has embezzled or converted payments from the Civil Service Retirement System or the Federal Employees Retirement System for a use other than the benefit of the individual on whose behalf such payments were received, OPM shall (1) revoke the certification for payment of benefits to the representative payee, and (2) certify payment to another representative payee or to the individual. </p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ126/PLAW-116publ126.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ126/PLAW-116publ126_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ126/PLAW-116publ126.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/5214"
+    },
+    {
       "id": "hr4998-116",
       "congress": 116,
       "type": "hr",
@@ -4057,6 +4441,30 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ116/PLAW-116publ116_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ116/PLAW-116publ116.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/504"
+    },
+    {
+      "id": "s375-116",
+      "congress": 116,
+      "type": "s",
+      "number": "375",
+      "title": "Payment Integrity Information Act of 2019",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Carper, Thomas R.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2019-02-07",
+      "latest_action": {
+        "date": "2020-03-02",
+        "text": "Became Public Law No: 116-117."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Payment Integrity Information Act of 201</b><b>9</b></p> <p>This bill reorganizes and revises several existing improper payments statutes, which establish requirements for federal agencies to cut down on improper payments made by the federal government.</p> <p>The Office of Management and Budget (OMB) may establish one or more pilot programs to test potential accountability mechanisms for compliance with requirements regarding improper payments and the elimination of improper payments.</p> <p>The bill requires the OMB to update its plan for improving the death data maintained by the Social Security Administration and improving federal agency use of death data.</p> <p>The bill establishes an interagency working group on payment integrity.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ117/PLAW-116publ117.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ117/PLAW-116publ117_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ117/PLAW-116publ117.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/375"
     },
     {
       "id": "sjres65-116",
@@ -4179,6 +4587,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-resolution/842"
     },
     {
+      "id": "s153-116",
+      "congress": 116,
+      "type": "s",
+      "number": "153",
+      "title": "Supporting Veterans in STEM Careers Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Rubio, Marco",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2019-01-16",
+      "latest_action": {
+        "date": "2020-02-11",
+        "text": "Became Public Law No: 116-115."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Supporting Veterans in STEM Careers Act</b> </p> <p>This bill addresses the participation of veterans in STEM (science, technology, engineering, and mathematics) fields, including by making veterans eligible for certain National Science Foundation (NSF) programs. </p> <p> (Sec. 3) The bill directs the NSF to (1) encourage veterans to study and pursue careers in STEM and computer science in coordination with other federal agencies that serve veterans, and (2) submit a plan to Congress for enhancing veterans outreach. </p> <p>The National Science Board shall provide in its annual report on the state of science and engineering in the United States relevant data on veterans in science and engineering careers or education programs.</p> <p>The bill provides for veterans' participation in (1) the Robert Noyce Teacher Scholarship program to recruit and train mathematics and science teachers, (2) NSF fellowships and masters fellowships for mathematics and science teachers, (3) computer and network security capacity building grants, and (4) traineeship grants leading to a doctorate degree in computer and network security research. </p> <p> The Office of Science and Technology Policy shall establish an interagency working group to improve veteran and military spouse equity and representation in STEM fields. </p> <p>(Sec. 4) The Government Accountability Office must study (1) the academic success rates of student veterans pursuing an undergraduate degree in STEM, computer science, medicine, or other fields identified as meeting national needs; and (2) the barriers faced by such students in pursuing such degrees. </p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ115/PLAW-116publ115.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ115/PLAW-116publ115_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ115/PLAW-116publ115.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/153"
+    },
+    {
       "id": "s3201-116",
       "congress": 116,
       "type": "s",
@@ -4273,6 +4705,30 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ108/PLAW-116publ108_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ108/PLAW-116publ108.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/2476"
+    },
+    {
+      "id": "hr583-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "583",
+      "title": "PIRATE Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Tonko, Paul",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2019-01-16",
+      "latest_action": {
+        "date": "2020-01-24",
+        "text": "Became Public Law No: 116-109."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><strong>Preventing Illegal Radio Abuse Through Enforcement Act or the PIRATE Act</strong></p> <p>This bill addresses unlicensed radio broadcasting (called pirating), including by increasing the maximum fine for a pirate radio broadcasting violation to $2 million and imposing a fine of up to $100,000 per day for pirating violations subject to the $2 million limit.</p> <p>The Federal Communications Commission (FCC) must (1) annually submit to Congress a report summarizing implementation of this bill and associated enforcement activities for the previous fiscal year; and (2) at least once a year, assign appropriate enforcement personnel to focus specific and sustained attention on the elimination of pirate radio broadcasting within the top five radio markets.</p> <p>The FCC may not preempt any state or local law prohibiting pirate radio broadcasting.</p> <p>The FCC shall (1) revise its rules to require that, absent good cause, in any case alleging a violation, it shall proceed directly to issue a Notice of Apparent Liability without first issuing a Notice of Unlicensed Operation; and (2) publish a database of all licensed radio stations operating in the AM and FM band that includes each licensed station and all entities that have received a Notice of Unlicensed Operation, Notice of Apparent Liability, or Forfeiture Order issued by the FCC. </p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ109/PLAW-116publ109.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ109/PLAW-116publ109_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ109/PLAW-116publ109.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/583"
     },
     {
       "id": "sres483-116",
@@ -4635,6 +5091,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/3196"
     },
     {
+      "id": "hr4566-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "4566",
+      "title": "Virginia Beach Strong Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Luria, Elaine G.",
+        "party": "D",
+        "state": "VA"
+      },
+      "introduced_date": "2019-09-27",
+      "latest_action": {
+        "date": "2019-12-20",
+        "text": "Became Public Law No: 116-98."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Virginia Beach Strong Act</b></p> <p>This bill confirms that cash contributions made on or after May 31, 2019, for the exclusive benefit of the families of the dead or wounded victims of the mass shooting in Virginia Beach, Virginia on May 31, 2019, shall be treated as tax deductible contributions. </p> <p>The bill also confirms that payments made on or after May 31, 2019, and on or before June 1, 2021, to the spouse or any dependent of the dead or wounded victims of such mass shooting by an tax-exempt organizations shall be treated as related to such organization's tax-exempt purpose and shall not be treated as inuring to the benefit of any private individual, if such payments are made in good faith using a reasonable and objective formula that is consistently applied with respect to such victims.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ98/PLAW-116publ98.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ98/PLAW-116publ98_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ98/PLAW-116publ98.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/4566"
+    },
+    {
       "id": "s216-116",
       "congress": 116,
       "type": "s",
@@ -4657,6 +5137,30 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ100/PLAW-116publ100_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ100/PLAW-116publ100.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/216"
+    },
+    {
+      "id": "s256-116",
+      "congress": 116,
+      "type": "s",
+      "number": "256",
+      "title": "Esther Martinez Native American Languages Programs Reauthorization Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Udall, Tom",
+        "party": "D",
+        "state": "NM"
+      },
+      "introduced_date": "2019-01-29",
+      "latest_action": {
+        "date": "2019-12-20",
+        "text": "Became Public Law No: 116-101."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Esther Martinez Native American Languages Programs Reauthorization Act</b></p> <p> This bill revises a grant program administered by the Administration for Native Americans at the Department of Health and Human Services to preserve Native American languages. The minimum number of enrollees in educational programs funded by grants is reduced from 10 to 5 enrollees in Native American language nests, which provide instruction through the use of a Native American language for children under the age of 7 and their parents. For survival schools, which are programs striving for fluency in a Native American language and proficiency in other academic fields, the minimum number of enrollees is reduced from 15 to 10. The bill increases the maximum duration of grants.</p> <p>The program is reauthorized through FY2024.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ101/PLAW-116publ101.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ101/PLAW-116publ101_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ101/PLAW-116publ101.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/256"
     },
     {
       "id": "sres450-116",
@@ -5403,6 +5907,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/1396"
     },
     {
+      "id": "s693-116",
+      "congress": 116,
+      "type": "s",
+      "number": "693",
+      "title": "National POW/MIA Flag Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Warren, Elizabeth",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2019-03-07",
+      "latest_action": {
+        "date": "2019-11-07",
+        "text": "Became Public Law No: 116-67."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>National POW/MIA Flag Act</b></p> <p>The bill changes the days on which the POW/MIA flag is required to be displayed at specified locations to all days on which the U.S. flag is displayed. (Current law requires the POW/MIA flag to be displayed only on Armed Forces Day, Memorial Day, Flag Day, Independence Day, National POW/MIA Recognition Day, and Veterans Day.) </p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ67/PLAW-116publ67.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ67/PLAW-116publ67_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ67/PLAW-116publ67.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/693"
+    },
+    {
       "id": "sres396-116",
       "congress": 116,
       "type": "sres",
@@ -5499,6 +6027,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/345"
     },
     {
+      "id": "sjres52-116",
+      "congress": 116,
+      "type": "sjres",
+      "number": "52",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Secretary of the Treasury and the Secretary of Health and Human Services relating to \"State Relief and Empowerment Waivers\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Warner, Mark R.",
+        "party": "D",
+        "state": "VA"
+      },
+      "introduced_date": "2019-07-31",
+      "latest_action": {
+        "date": "2019-10-30",
+        "text": "Failed of passage in Senate by Yea-Nay Vote. 43 - 52. Record Vote Number: 337."
+      },
+      "outcome": "failed",
+      "summary_crs": " <p>This joint resolution rescinds the State Relief and Empowerment Waivers guidance issued on October 24, 2018, which relaxes the criteria for states to obtain waivers from certain health insurance plan coverage requirements. </p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sjres52/BILLS-116sjres52pcs.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sjres52/BILLS-116sjres52pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sjres52/BILLS-116sjres52pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-joint-resolution/52"
+    },
+    {
       "id": "sres183-116",
       "congress": 116,
       "type": "sres",
@@ -5593,6 +6145,30 @@
       "text_url_xml": "https://www.congress.gov/116/bills/sres367/BILLS-116sres367ats.xml",
       "text_url_pdf": "https://www.congress.gov/116/bills/sres367/BILLS-116sres367ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/367"
+    },
+    {
+      "id": "sjres50-116",
+      "congress": 116,
+      "type": "sjres",
+      "number": "50",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Internal Revenue Service, Department of the Treasury, relating to \"Contributions in Exchange for State or Local Tax Credits\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Schumer, Charles E.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2019-07-16",
+      "latest_action": {
+        "date": "2019-10-23",
+        "text": "Failed of passage in Senate by Yea-Nay Vote. 43 - 52. Record Vote Number: 331."
+      },
+      "outcome": "failed",
+      "summary_crs": " <p>This resolution expresses congressional disapproval of the rule submitted by the Internal Revenue Service relating to charitable contribution and estate tax deductions when a taxpayer receives or expects to receive a corresponding state or local tax credit, and such rule shall have no force or effect. </p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sjres50/BILLS-116sjres50pcs.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sjres50/BILLS-116sjres50pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sjres50/BILLS-116sjres50pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-joint-resolution/50"
     },
     {
       "id": "sjres53-116",
@@ -5859,6 +6435,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/1200"
     },
     {
+      "id": "sres252-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "252",
+      "title": "A resolution designating September 2019 as National Democracy Month as a time to reflect on the contributions of the system of government of the United States to a more free and stable world.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Graham, Lindsey",
+        "party": "R",
+        "state": "SC"
+      },
+      "introduced_date": "2019-06-19",
+      "latest_action": {
+        "date": "2019-09-26",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: 06/19/2019 CR S3849-3850)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution designates September 2019 as National Democracy Month.</p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres252/BILLS-116sres252ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres252/BILLS-116sres252ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres252/BILLS-116sres252ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/252"
+    },
+    {
       "id": "sres330-116",
       "congress": 116,
       "type": "sres",
@@ -6075,6 +6675,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/1250"
     },
     {
+      "id": "hr2938-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "2938",
+      "title": "HAVEN Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McBath, Lucy",
+        "party": "D",
+        "state": "GA"
+      },
+      "introduced_date": "2019-05-23",
+      "latest_action": {
+        "date": "2019-08-23",
+        "text": "Became Public Law No: 116-52."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Honoring American Veterans in Extreme Need Act of 2019 or the HAVEN Act</b></p> <p>This bill modifies the treatment of certain veterans' benefits in bankruptcy.</p> <p>Specifically, the bill excludes from a debtor's current monthly income certain benefits, including disability benefits, paid by the Department of Veterans Affairs or the Department of Defense.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ52/PLAW-116publ52.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ52/PLAW-116publ52_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ52/PLAW-116publ52.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/2938"
+    },
+    {
       "id": "hr3245-116",
       "congress": 116,
       "type": "hr",
@@ -6121,6 +6745,30 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ53/PLAW-116publ53_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ53/PLAW-116publ53.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/3304"
+    },
+    {
+      "id": "hr3311-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "3311",
+      "title": "Small Business Reorganization Act of 2019",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Cline, Ben",
+        "party": "R",
+        "state": "VA"
+      },
+      "introduced_date": "2019-06-18",
+      "latest_action": {
+        "date": "2019-08-23",
+        "text": "Became Public Law No: 116-54."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Small Business Reorganization Act of 2019 </b></p> <p>This bill creates new bankruptcy procedures for small businesses filing for reorganization under Chapter 11 and otherwise revises provisions related to venue and trustee responsibilities in Chapter 11 bankruptcies. </p> <p>(Sec. 2) The bill provides for the appointment of a trustee for a small business debtor filing under these new procedures. The trustee must assist in developing a reorganization plan, account for the property of the debtor, attend certain hearings and conferences, and ensure that the debtor complies with payments required under the plan. </p> <p>As under current law, a debtor may operate their business as a debtor in possession during the reorganization. The bill sets forth the rights and powers of a debtor in possession, as well as the procedures for removing a debtor in possession.</p> <p>The bill provides reporting requirements for debtors and reduces the amount of disclosures required by debtors under current law.</p> <p>Under these new procedures, only a debtor is allowed to file a reorganization plan. Currently, creditors may also submit plans for court approval for small businesses filing under Chapter 11.</p> <p>The bill sets forth requirements regarding the filing and contents of a plan of reorganization. A debtor must submit all or a portion of future income to the trustee as needed to execute the plan.</p> <p> The bill provides authority to the bankruptcy court to approve a reorganization plan for small businesses over the objections of the creditors. However, the plan may not discriminate unfairly, and must be fair and equitable towards each class of claims or interests that is impaired under, and has not accepted, the plan. Currently, creditors must generally vote to approve such a plan. Under a fair and equitable plan as established by this bill, a debtor's projected disposable income for at least three years, but no longer than five, must go towards payments under the plan. </p> <p>(Sec. 3) The bill also provides additional standards a trustee must meet in order to void a preferential transfer for all Chapter 11 filers. (Preferential transfers generally occur when a debtor transfers property before filing bankruptcy that is beneficial to one creditor to the detriment of others.) Specifically, a trustee may only void such a transfer based on reasonable due diligence and must take into account a party's known or reasonably knowable affirmative defenses. </p> <p>The bill also revises venue criteria for proceedings connected with a Chapter 11 bankruptcy case. Currently, an action to recover a debt against a noninsider (i.e., those that are not relatives, general partners, and directors or officers of the debtor) of less than $13,650 must be brought in the district court where the defendant resides. The bill increases that amount to $25,000. </p> <p>(Sec. 5) This bill takes effect 180 days after enactment. </p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ54/PLAW-116publ54.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ54/PLAW-116publ54_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ54/PLAW-116publ54.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/3311"
     },
     {
       "id": "hr1079-116",
@@ -6675,6 +7323,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/74"
     },
     {
+      "id": "sres208-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "208",
+      "title": "A resolution expressing support for the designation of July as \"American Grown Flower Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feinstein, Dianne",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2019-05-14",
+      "latest_action": {
+        "date": "2019-07-08",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR 5/14/2019 S2835)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution supports the designation of July as American Grown Flower Month.</p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres208/BILLS-116sres208ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres208/BILLS-116sres208ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres208/BILLS-116sres208ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/208"
+    },
+    {
       "id": "hjres60-116",
       "congress": 116,
       "type": "hjres",
@@ -6817,6 +7489,30 @@
       "text_url_xml": "https://www.congress.gov/116/bills/sres220/BILLS-116sres220ats.xml",
       "text_url_pdf": "https://www.congress.gov/116/bills/sres220/BILLS-116sres220ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/220"
+    },
+    {
+      "id": "hr559-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "559",
+      "title": "Northern Mariana Islands Long-Term Legal Residents Relief Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Del. Sablan, Gregorio Kilili Camacho [D-MP-At Large]",
+        "party": "D",
+        "state": "MP"
+      },
+      "introduced_date": "2019-01-15",
+      "latest_action": {
+        "date": "2019-06-25",
+        "text": "Became Public Law No: 116-24."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Northern Mariana Islands Long-Term Legal Residents Relief Act</b></p> <p>This bill grants Commonwealth of the Northern Mariana Islands (CNMI) Resident status to certain aliens who have resided continuously and lawfully in the CNMI since November 28, 2009. An individual with such status shall be (1) authorized to work in the CNMI; (2) issued travel documentation; and (3) inadmissible to the United States at any port of entry outside of the CNMI, with the exception of Guam in certain instances. </p> <p>To qualify for CNMI Resident status, an alien must meet various requirements, such as having (1) been lawfully present in the CNMI on the date of this bill's enactment or on December 31, 2018; and (2) resided continuously and lawfully in CNMI from November 28, 2009, through this bill's enactment.</p> <ul> <ul><ul> </ul> </ul> </ul>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ24/PLAW-116publ24.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ24/PLAW-116publ24_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ24/PLAW-116publ24.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/559"
     },
     {
       "id": "s1379-116",
@@ -7227,6 +7923,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/1222"
     },
     {
+      "id": "sres96-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "96",
+      "title": "A resolution commending the Government of Canada for upholding the rule of law and expressing concern over actions by the Government of the People's Republic of China in response to a request from the United States Government to the Government of Canada for the extradition of a Huawei Technologies Co., Ltd. executive.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Risch, James E.",
+        "party": "R",
+        "state": "ID"
+      },
+      "introduced_date": "2019-03-06",
+      "latest_action": {
+        "date": "2019-05-07",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S2701; text: CR 3/6/2019 S1710)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution commends Canada for upholding the rule of law and complying with its obligations under its extradition treaty with the United States, in connection with Canada's arrest&nbsp;Meng Wanzhou, chief financial officer&nbsp;of Huawei Technologies Co., Ltd. It also expresses the Senate's concern over China's arbitrary and abusive treatment of Canadian nationals in response to Meng's detention, and calls for the immediate release of those individuals. (The United States requested the arrest of Meng, who stands accused of various crimes under U.S. law.) <br /> </p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres96/BILLS-116sres96ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres96/BILLS-116sres96ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres96/BILLS-116sres96ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/96"
+    },
+    {
       "id": "sres162-116",
       "congress": 116,
       "type": "sres",
@@ -7321,6 +8041,30 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ15/PLAW-116publ15_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ15/PLAW-116publ15.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/725"
+    },
+    {
+      "id": "hr276-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "276",
+      "title": "Recognizing Achievement in Classified School Employees Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Titus, Dina",
+        "party": "D",
+        "state": "NV"
+      },
+      "introduced_date": "2019-01-08",
+      "latest_action": {
+        "date": "2019-04-12",
+        "text": "Became Public Law No: 116-13."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><strong>Recognizing Achievement in Classified School Employees Act</strong></p> <p>This bill directs the Department of Education (ED) to grant Recognizing Inspiring School Employees awards to classified school employees, within certain occupational specialties, who provide exemplary service to students in prekindergarten through high school.</p> <p>ED must annually select an awardee, out of nominations received from states, from any of the following occupational specialties: (1) paraprofessional services, (2) clerical and administrative services, (3) transportation services, (4) food and nutrition services, (5) custodial and maintenance services, (6) security services, (7) health and student services, (8) technical services, and (9) skilled trades.</p> <p>The award and recognition provided shall have no monetary value.</p> <p>ED shall develop uniform national guidelines for evaluating nominations. </p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ13/PLAW-116publ13.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ13/PLAW-116publ13_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ13/PLAW-116publ13.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/276"
     },
     {
       "id": "sres131-116",
@@ -7539,6 +8283,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/132"
     },
     {
+      "id": "sres100-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "100",
+      "title": "A resolution recognizing the heritage, culture, and contributions of American Indian, Alaska Native, and Native Hawaiian women in the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Murkowski, Lisa",
+        "party": "R",
+        "state": "AK"
+      },
+      "introduced_date": "2019-03-07",
+      "latest_action": {
+        "date": "2019-03-28",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Voice Vote. (text: CR 3/7/2019 S1743-1744)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution celebrates the successes of American Indian, Alaska Native, and Native Hawaiian women and the contributions they have made in the United States. The resolution also recognizes the importance of supporting equity, providing safety, and upholding the interests of these women.</p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres100/BILLS-116sres100ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres100/BILLS-116sres100ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres100/BILLS-116sres100ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/100"
+    },
+    {
       "id": "sres118-116",
       "congress": 116,
       "type": "sres",
@@ -7585,6 +8353,30 @@
       "text_url_xml": "https://www.congress.gov/116/bills/sres124/BILLS-116sres124ats.xml",
       "text_url_pdf": "https://www.congress.gov/116/bills/sres124/BILLS-116sres124ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/124"
+    },
+    {
+      "id": "sres69-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "69",
+      "title": "A resolution designating March 29, 2019, as \"Vietnam Veterans Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Burr, Richard",
+        "party": "R",
+        "state": "NC"
+      },
+      "introduced_date": "2019-02-13",
+      "latest_action": {
+        "date": "2019-03-28",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text: CR S2098-2099)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution designates March 29, 2019, as Vietnam Veterans Day. The resolution also recognizes the contributions of veterans who served in Vietnam during war and peace.</p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres69/BILLS-116sres69ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres69/BILLS-116sres69ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres69/BILLS-116sres69ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/69"
     },
     {
       "id": "sres117-116",
@@ -7753,6 +8545,30 @@
       "text_url_xml": "https://www.congress.gov/116/bills/sres70/BILLS-116sres70ats.xml",
       "text_url_pdf": "https://www.congress.gov/116/bills/sres70/BILLS-116sres70ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/70"
+    },
+    {
+      "id": "sres36-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "36",
+      "title": "A resolution supporting the observation of National Trafficking and Modern Slavery Prevention Month during the period beginning on January 1, 2019, and ending on February 1, 2019, to raise awareness of, and opposition to, human trafficking and modern slavery.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feinstein, Dianne",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2019-01-31",
+      "latest_action": {
+        "date": "2019-02-12",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR 1/31/2019 S810-811)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution expresses support for observing National Trafficking and Modern Slavery Prevention Month during the period of January 1-February 1, 2019.</p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres36/BILLS-116sres36ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres36/BILLS-116sres36ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres36/BILLS-116sres36ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/36"
     },
     {
       "id": "hres86-116",
