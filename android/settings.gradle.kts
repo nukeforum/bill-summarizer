@@ -5,6 +5,13 @@ pluginManagement {
         mavenCentral()
         gradlePluginPortal()
     }
+    // foojay-resolver version comes from `foojayResolverVersion` in
+    // gradle.properties (shared with the build-logic included build);
+    // bump it there.
+    val foojayResolverVersion: String by settings
+    plugins {
+        id("org.gradle.toolchains.foojay-resolver-convention") version foojayResolverVersion
+    }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -15,7 +22,7 @@ dependencyResolutionManagement {
 }
 
 plugins {
-    id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
+    id("org.gradle.toolchains.foojay-resolver-convention")
 }
 
 // Composite build wiring: `pipeline:shared` (KMP, lives in the sibling
