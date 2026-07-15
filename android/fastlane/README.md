@@ -86,6 +86,9 @@ bundle exec fastlane run validate_play_store_json_key
 
 ## Notes
 
+- This README is hand-written, not fastlane-generated. The `Fastfile`
+  calls `skip_docs` so lane runs never regenerate/overwrite it — keep
+  maintaining it by hand.
 - Generated `report.xml`, build artifacts (`*.aab`/`*.apk`), keystores, and
   the service-account JSON are all gitignored — see `android/.gitignore`.
 - No `Gemfile.lock` is committed yet because no Ruby toolchain was available
