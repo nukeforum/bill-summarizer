@@ -17,10 +17,13 @@ applied in three settings files but its version is centralized in the
 - `pipeline/gradle.properties` — covers `pipeline/settings.gradle.kts`.
 
 Mechanism: each settings file declares the version in
-`pluginManagement { plugins { ... } }` (read via `val foojayResolverVersion:
-String by settings`) and applies the plugin version-less in its `plugins {}`
-block. Version catalogs (`libs.versions.toml`) cannot supply settings-plugin
-versions, which is why a Gradle property is used instead.
+`pluginManagement { plugins { ... } }` and applies the plugin version-less in
+its `plugins {}` block. `android/settings.gradle.kts` and
+`pipeline/settings.gradle.kts` read the property via `val
+foojayResolverVersion: String by settings`; `build-logic/settings.gradle.kts`
+loads it explicitly instead (first sharp edge below). Version catalogs
+(`libs.versions.toml`) cannot supply settings-plugin versions, which is why a
+Gradle property is used instead.
 
 Two sharp edges, verified on Gradle 9.5:
 
