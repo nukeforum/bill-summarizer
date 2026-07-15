@@ -20,6 +20,10 @@ default_platform(:android)
 AAB_OUTPUT_PATH = "app/build/outputs/bundle/release/app-release.aab".freeze
 
 platform :android do
+  # fastlane/README.md is hand-written documentation, not generated output —
+  # never let fastlane regenerate it on lane runs.
+  skip_docs
+
   desc "Run the app's unit tests (Gradle :app:testDebugUnitTest)"
   lane :test do
     gradle(
