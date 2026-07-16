@@ -36,6 +36,7 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.informedcitizen.data.ai.BillTopic
 import com.informedcitizen.pipeline.model.Bill
+import com.informedcitizen.ui.components.BillSearchField
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -47,6 +48,7 @@ fun BillsListScreen(
     viewModel: BillsListViewModel = hiltViewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
+    val searchQuery by viewModel.searchQuery.collectAsStateWithLifecycle()
 
     Scaffold(
         modifier = modifier,
@@ -68,6 +70,7 @@ fun BillsListScreen(
     ) { innerPadding ->
         BillsListContent(
             state = uiState,
+            searchQuery = searchQuery,
             innerPadding = innerPadding,
             onFilterChange = viewModel::setFilter,
             onRefresh = viewModel::refresh,
@@ -75,6 +78,7 @@ fun BillsListScreen(
             onCalendarClick = onCalendarClick,
             onTopicSelected = viewModel::selectTopic,
             onResummarize = viewModel::resummarize,
+            onSearchQueryChange = viewModel::setSearchQuery,
         )
     }
 }
@@ -90,10 +94,19 @@ internal fun BillsListContent(
     onCalendarClick: () -> Unit,
     onTopicSelected: (BillTopic?) -> Unit = {},
     onResummarize: (String) -> Unit = {},
+    onSearchQueryChange: (String) -> Unit = {},
+    searchQuery: String = (state as? BillsListUiState.Success)?.searchQuery.orEmpty(),
 ) {
     Column(modifier = Modifier.fillMaxSize().padding(top = innerPadding.calculateTopPadding())) {
         (state as? BillsListUiState.Success)?.sessionStatusLine?.let { line ->
             SessionStatusLine(text = line, onClick = onCalendarClick)
+        }
+        if (state is BillsListUiState.Success) {
+            BillSearchField(
+                query = searchQuery,
+                onQueryChange = onSearchQueryChange,
+                modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
+            )
         }
         FilterChipsRow(
             selected = (state as? BillsListUiState.Success)?.filter ?: BillsListFilter.ALL,
@@ -126,7 +139,13 @@ internal fun BillsListContent(
                     modifier = Modifier.fillMaxSize(),
                 ) {
                     if (state.bills.isEmpty()) {
-                        CenteredMessage("No bills match this filter")
+                        CenteredMessage(
+                            if (state.searchQuery.isNotBlank()) {
+                                "No bills match \"${state.searchQuery.trim()}\""
+                            } else {
+                                "No bills match this filter"
+                            },
+                        )
                     } else {
                         LazyColumn(
                             modifier = Modifier.fillMaxSize(),

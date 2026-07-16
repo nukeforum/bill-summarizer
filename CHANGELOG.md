@@ -7,6 +7,16 @@ and the project aims to follow [Semantic Versioning](https://semver.org/spec/v2.
 This changelog begins at 1.1.0; earlier releases (through 1.0.1) predate it and are
 recorded only in git history and the Play Store release track.
 
+## [Unreleased]
+
+### Added
+
+- **Bill search.** A search box above the bills feed and on each representative's
+  sponsored/cosponsored legislation tabs filters the loaded bills by topic or
+  keyword. Every search term must match, and matching covers titles, summaries,
+  sponsors, policy areas, latest actions, and bill numbers (a typed "H.R. 1357"
+  matches too). Filtering happens entirely on-device over already-loaded data.
+
 ## [1.1.0] - 2026-07-06
 
 ### Added

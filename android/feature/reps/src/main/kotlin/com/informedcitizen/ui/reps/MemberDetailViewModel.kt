@@ -56,5 +56,9 @@ class MemberDetailViewModel @Inject constructor(
         }
     }
 
+    fun setSearchQuery(query: String) {
+        _uiState.update { it.copy(searchQuery = query) }
+    }
+
     fun isInLocalCache(billId: String): Boolean = bills.containsBillId(billId)
 }

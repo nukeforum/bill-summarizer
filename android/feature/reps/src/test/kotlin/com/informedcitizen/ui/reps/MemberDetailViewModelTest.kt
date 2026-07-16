@@ -68,15 +68,19 @@ private class DetailStubMemberRepository(
     override suspend fun getIndex(congress: Int): MembersIndex? = null
 }
 
-private fun anItem(id: String) = MemberLegislationItem(
+private fun anItem(
+    id: String,
+    title: String = "Title $id",
+    policyArea: String? = null,
+) = MemberLegislationItem(
     id = id,
     type = "hr",
     number = id.removePrefix("hr").substringBefore("-"),
     congress = 119,
-    title = "Title $id",
+    title = title,
     introducedDate = "2026-01-01",
     latestAction = Action(date = "2026-04-01", text = "Referred."),
-    policyArea = null,
+    policyArea = policyArea,
 )
 
 private fun aBill(id: String) = Bill(
@@ -132,6 +136,45 @@ class MemberDetailViewModelTest {
         assertNotNull(s.member)
         assertEquals(emptyList<MemberLegislationItem>(), s.sponsored)
         assertEquals(emptyList<MemberLegislationItem>(), s.cosponsored)
+    }
+
+    @Test
+    fun `search query filters sponsored and cosponsored lists`() = runTest {
+        val members = DetailStubMemberRepository(
+            memberById = mapOf("A1" to aMember("A1")),
+            sponsoredById = mapOf(
+                "A1" to MemberLegislation(
+                    "A1", 119, "sponsored", "x",
+                    listOf(
+                        anItem("hr1-119", title = "Student Loan Relief Act"),
+                        anItem("hr2-119", title = "Defense Authorization"),
+                        anItem("hr3-119", title = "Post Office Naming", policyArea = "Education"),
+                    ),
+                ),
+            ),
+            cosponsoredById = mapOf(
+                "A1" to MemberLegislation(
+                    "A1", 119, "cosponsored", "x",
+                    listOf(anItem("hr4-119", title = "Water Rights")),
+                ),
+            ),
+        )
+        val bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
+        val vm = MemberDetailViewModel(members, bills).also { it.congressProvider = { 119 } }
+        vm.load("A1")
+        vm.uiState.first { !it.isLoading }
+
+        vm.setSearchQuery("education")
+        val filtered = vm.uiState.value
+        assertEquals(listOf("hr3-119"), filtered.filteredSponsored.map { it.id })
+        assertEquals(emptyList<MemberLegislationItem>(), filtered.filteredCosponsored)
+        // The raw lists stay intact so clearing the query restores everything.
+        assertEquals(3, filtered.sponsored.size)
+
+        vm.setSearchQuery("")
+        val cleared = vm.uiState.value
+        assertEquals(3, cleared.filteredSponsored.size)
+        assertEquals(1, cleared.filteredCosponsored.size)
     }
 
     @Test

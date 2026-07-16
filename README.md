@@ -9,14 +9,17 @@ its own — it builds a structured prompt and shares it via Android's
 ## Features
 
 - **Bills feed.** Recently voted-on House and Senate bills with party,
-  sponsor, latest action, and outcome chips.
+  sponsor, latest action, and outcome chips. A search box filters the
+  loaded feed by topic or keyword — matching title, summary, sponsor,
+  latest action, and bill number (a typed "H.R. 1357" works too).
 - **Bill detail + LLM share.** One tap composes a prompt with the bill
   text (when available) and shares to ChatGPT, Claude, or Gemini.
 - **Reps lookup.** Find your senators and representative by ZIP code
   (with a confirmation step for the matched district) or by picking your
   state and district by hand. Each detail page surfaces recent bill
-  activity plus contact options — phone, website, and official social
-  accounts — with an in-app guide to each.
+  activity — sponsored and cosponsored lists filterable with the same
+  keyword search as the bills feed — plus contact options: phone,
+  website, and official social accounts, with an in-app guide to each.
 - **Session calendar.** When is the House or Senate next in session?
   Tells you at a glance whether today is a likely floor-activity day.
 - **Bring your own key (BYOK).** Add your own free Congress.gov API key
