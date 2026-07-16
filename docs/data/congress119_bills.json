@@ -1,7 +1,79 @@
 {
-  "generated_at": "2026-07-15T08:08:56Z",
+  "generated_at": "2026-07-16T08:12:14Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "sres742-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "742",
+      "title": "A resolution commemorating the 70th anniversary of the United States Forest Service Institute of Pacific Islands Forestry.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hirono, Mazie K.",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2026-05-20",
+      "latest_action": {
+        "date": "2026-07-14",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres742/BILLS-119sres742is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres742/BILLS-119sres742is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres742/BILLS-119sres742is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/742"
+    },
+    {
+      "id": "sres798-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "798",
+      "title": "A resolution designating June 2026 as \"Great Outdoors Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daines, Steve",
+        "party": "R",
+        "state": "MT"
+      },
+      "introduced_date": "2026-06-24",
+      "latest_action": {
+        "date": "2026-07-14",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres798/BILLS-119sres798is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres798/BILLS-119sres798is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres798/BILLS-119sres798is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/798"
+    },
+    {
+      "id": "hr6644-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "6644",
+      "title": "21st Century ROAD to Housing Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Hill, J. French",
+        "party": "R",
+        "state": "AR"
+      },
+      "introduced_date": "2025-12-11",
+      "latest_action": {
+        "date": "2026-07-11",
+        "text": "Became Public Law No: 119-101."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Housing for the 21st Century Act<br/><br/></strong>This bill revises federal housing programs, including by expanding available financing for affordable housing and providing grants for planning and community development activities.<br/><br/>For example, the bill increases the statutory maximum loan limits for mortgage insurance programs administered by the&nbsp;Federal Housing Administration&nbsp;for multifamily homes and requires the use of a more specific inflation index for such loans.<br/><br/>The bill also increases the maximum&nbsp;eligible income for the Department of Housing and Urban Development's (HUD's) HOME Investment Partnerships Program (grants to states and localities to support housing for low-income households) and&nbsp;establishes a grant program to assist regional, state, and local entities with&nbsp;strategies to support affordable housing.<br/><br/>In addition, the bill</p><ul><li>exempts certain housing-related activities from the environmental review process, including certain construction, improvement, or rehabilitation of residential buildings;</li><li>excludes veterans' disability benefits from being considered as income for purposes of determining eligibility for the Veterans Affairs Supportive Housing (VASH) program;</li><li>establishes a pilot program to provide grants to public housing agencies (PHAs) and other owners of federally assisted housing to  test the efficacy of temperature sensors to support compliance with temperature requirements;</li><li>eliminates the requirement that manufactured homes must be constructed with a permanent chassis; and</li><li>authorizes HUD to conduct performance reviews of organizations that&nbsp;provide&nbsp;housing counseling services.</li></ul><p>The bill also expands oversight of HUD and PHAs, such as by requiring PHAs to post information about contracts on their websites.</p><p>For more information about this bill, see <a href=\"https://www.congress.gov/crs-product/R48849#_Toc221206484\">CRS Report&nbsp;</a><a href=\"https://www.congress.gov/crs-product/R48849#_Toc221206484\">R48849</a>.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr6644/BILLS-119hr6644eas2.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr6644/BILLS-119hr6644eas2.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr6644/BILLS-119hr6644eas2.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/6644"
+    },
     {
       "id": "s1003-119",
       "congress": 119,
