@@ -20,6 +20,7 @@ import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
@@ -41,7 +42,8 @@ class BillsListViewModel @Inject constructor(
     private val isRefreshing = MutableStateFlow(false)
     private val sessionStatusLine = MutableStateFlow<String?>(null)
     private val selectedTopic = MutableStateFlow<BillTopic?>(null)
-    private val searchQuery = MutableStateFlow("")
+    private val _searchQuery = MutableStateFlow("")
+    val searchQuery: StateFlow<String> = _searchQuery.asStateFlow()
 
     val uiState: StateFlow<BillsListUiState> = combine(
         listOf(
@@ -53,7 +55,7 @@ class BillsListViewModel @Inject constructor(
             aiPrefs.enabled,
             aiCapability.status,
             selectedTopic,
-            searchQuery,
+            _searchQuery,
         ),
     ) { values ->
         @Suppress("UNCHECKED_CAST")
@@ -102,7 +104,7 @@ class BillsListViewModel @Inject constructor(
     }
 
     fun setSearchQuery(query: String) {
-        searchQuery.value = query
+        _searchQuery.value = query
     }
 
     fun resummarize(billId: String) {

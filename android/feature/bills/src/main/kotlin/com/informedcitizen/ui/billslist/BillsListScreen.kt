@@ -48,6 +48,7 @@ fun BillsListScreen(
     viewModel: BillsListViewModel = hiltViewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
+    val searchQuery by viewModel.searchQuery.collectAsStateWithLifecycle()
 
     Scaffold(
         modifier = modifier,
@@ -69,6 +70,7 @@ fun BillsListScreen(
     ) { innerPadding ->
         BillsListContent(
             state = uiState,
+            searchQuery = searchQuery,
             innerPadding = innerPadding,
             onFilterChange = viewModel::setFilter,
             onRefresh = viewModel::refresh,
@@ -93,14 +95,15 @@ internal fun BillsListContent(
     onTopicSelected: (BillTopic?) -> Unit = {},
     onResummarize: (String) -> Unit = {},
     onSearchQueryChange: (String) -> Unit = {},
+    searchQuery: String = (state as? BillsListUiState.Success)?.searchQuery.orEmpty(),
 ) {
     Column(modifier = Modifier.fillMaxSize().padding(top = innerPadding.calculateTopPadding())) {
         (state as? BillsListUiState.Success)?.sessionStatusLine?.let { line ->
             SessionStatusLine(text = line, onClick = onCalendarClick)
         }
-        (state as? BillsListUiState.Success)?.let { success ->
+        if (state is BillsListUiState.Success) {
             BillSearchField(
-                query = success.searchQuery,
+                query = searchQuery,
                 onQueryChange = onSearchQueryChange,
                 modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
             )
