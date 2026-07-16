@@ -147,6 +147,12 @@ Release builds expect signing credentials in Gradle properties
 `_KEY_PASSWORD`) or the matching environment variables. Without them,
 debug builds still work; only release bundling fails.
 
+Test, release-bundle, and Play Store deploy lanes are automated with
+[fastlane](https://fastlane.tools) under `android/` — see
+[`android/fastlane/README.md`](android/fastlane/README.md) for the lane
+table and required secrets. fastlane reuses the Gradle signing config
+above rather than re-implementing it.
+
 ## License
 
 Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for

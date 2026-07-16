@@ -1,0 +1,12 @@
+# Play Store package name for the Informed Citizen app.
+package_name("com.informedcitizen")
+
+# Path to the Google Play service-account JSON key used by `supply` /
+# upload_to_play_store. The key is a SECRET and is intentionally NOT
+# committed to this repo. Supply it at runtime via the PLAY_STORE_JSON_KEY
+# environment variable (an absolute or android/-relative path to the JSON
+# file). Falls back to a conventional in-tree path that is gitignored.
+#
+#   export PLAY_STORE_JSON_KEY=/secure/path/play-service-account.json
+#
+json_key_file(ENV["PLAY_STORE_JSON_KEY"] || "fastlane/play-store-service-account.json")

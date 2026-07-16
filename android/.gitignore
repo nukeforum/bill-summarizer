@@ -13,3 +13,24 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# fastlane generated output (reports, temp files, deliver/metadata cache)
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/README.md.tmp
+fastlane/.env*
+
+# Credentials — NEVER commit these
+# Play Store service-account key (referenced via PLAY_STORE_JSON_KEY)
+fastlane/play-store-service-account.json
+play-store-service-account.json
+*.jks
+*.keystore
+# Broad catch for any service-account / secret JSON dropped in android/
+**/*service-account*.json
+
+# Build artifacts (AAB / APK) — release outputs must not be committed
+*.aab
+*.apk
