@@ -1,7 +1,55 @@
 {
-  "generated_at": "2026-07-16T08:12:14Z",
+  "generated_at": "2026-07-17T08:09:17Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "sres772-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "772",
+      "title": "A resolution expressing the sense of the Senate that under no circumstances should Samuel Bankman-Fried receive executive clemency, including a pardon or commutation, and affirming the Senate's commitment to the rule of law and integrity of the United States financial system.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Gallego, Ruben",
+        "party": "D",
+        "state": "AZ"
+      },
+      "introduced_date": "2026-06-17",
+      "latest_action": {
+        "date": "2026-07-15",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4117)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres772/BILLS-119sres772is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres772/BILLS-119sres772is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres772/BILLS-119sres772is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/772"
+    },
+    {
+      "id": "sres799-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "799",
+      "title": "A resolution expressing the condolences of the Senate and honoring the memory of the victims on the fourth anniversary of the mass shooting at the Fourth of July parade in Highland Park, Illinois, on July 4, 2022.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Durbin, Richard J.",
+        "party": "D",
+        "state": "IL"
+      },
+      "introduced_date": "2026-06-24",
+      "latest_action": {
+        "date": "2026-07-15",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4117)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres799/BILLS-119sres799is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres799/BILLS-119sres799is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres799/BILLS-119sres799is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/799"
+    },
     {
       "id": "sres742-119",
       "congress": 119,
@@ -17,13 +65,13 @@
       "introduced_date": "2026-05-20",
       "latest_action": {
         "date": "2026-07-14",
-        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4087)"
       },
       "outcome": "passed_senate",
       "summary_crs": null,
-      "text_url_html": "https://www.congress.gov/119/bills/sres742/BILLS-119sres742is.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/sres742/BILLS-119sres742is.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/sres742/BILLS-119sres742is.pdf",
+      "text_url_html": "https://www.congress.gov/119/bills/sres742/BILLS-119sres742ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres742/BILLS-119sres742ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres742/BILLS-119sres742ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/742"
     },
     {
@@ -41,13 +89,13 @@
       "introduced_date": "2026-06-24",
       "latest_action": {
         "date": "2026-07-14",
-        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4087)"
       },
       "outcome": "passed_senate",
       "summary_crs": null,
-      "text_url_html": "https://www.congress.gov/119/bills/sres798/BILLS-119sres798is.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/sres798/BILLS-119sres798is.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/sres798/BILLS-119sres798is.pdf",
+      "text_url_html": "https://www.congress.gov/119/bills/sres798/BILLS-119sres798ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres798/BILLS-119sres798ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres798/BILLS-119sres798ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/798"
     },
     {
