@@ -28,6 +28,7 @@ internal fun billFixture(
     title: String = "Title for $id",
     actionText: String = "Action",
     outcome: Outcome = Outcome.PASSED_HOUSE,
+    policyArea: String? = null,
 ): Bill = Bill(
     id = id,
     congress = 119,
@@ -39,6 +40,7 @@ internal fun billFixture(
     introducedDate = "2026-01-01",
     latestAction = Action(date = "2026-05-01", text = actionText),
     outcome = outcome,
+    policyArea = policyArea,
     summaryCrs = null,
     textUrlHtml = null,
     textUrlXml = null,

@@ -62,6 +62,7 @@ suspend fun buildBillRecord(
         ),
         outcome = outcomeFromWireString(outcome)
             ?: error("buildBillRecord called with unknown outcome wire string: '$outcome'"),
+        policyArea = policyAreaName(detail["policyArea"]),
         summaryCrs = summaryText,
         textUrlHtml = textUrls["html"],
         textUrlXml = textUrls["xml"],

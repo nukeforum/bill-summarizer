@@ -91,12 +91,7 @@ fun parseMemberLegislationItem(raw: JsonObject): MemberLegislationItem {
     val congress = raw.intField("congress") ?: 0
     val latest = raw.jsonObjectField("latestAction") ?: JsonObject(emptyMap())
     val actionDate = (latest.stringField("actionDate") ?: latest.stringField("date") ?: "").take(10)
-    val policyAreaRaw = raw["policyArea"]
-    val policyArea: String? = when (policyAreaRaw) {
-        is JsonObject -> policyAreaRaw.stringField("name")
-        is JsonPrimitive -> policyAreaRaw.contentOrNull
-        else -> null
-    }
+    val policyArea = policyAreaName(raw["policyArea"])
     return MemberLegislationItem(
         id = "$billType$number-$congress",
         type = billType,

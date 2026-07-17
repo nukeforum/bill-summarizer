@@ -61,6 +61,17 @@ internal fun JsonObject.stringField(key: String): String? = this[key]?.asStringO
 
 internal fun JsonObject.jsonObjectField(key: String): JsonObject? = this[key] as? JsonObject
 
+/**
+ * Extract the policy-area name Congress.gov attaches to bills and
+ * member legislation. Arrives as either an object `{name, ...}` or a
+ * bare string; both are accepted. Mirrors Python's permissive read.
+ */
+internal fun policyAreaName(raw: JsonElement?): String? = when (raw) {
+    is JsonObject -> raw.stringField("name")
+    is JsonPrimitive -> raw.contentOrNull
+    else -> null
+}
+
 private fun JsonElement.asStringOrNull(): String? {
     val primitive = this as? JsonPrimitive ?: return null
     return if (primitive.isString) primitive.contentOrNull else primitive.contentOrNull

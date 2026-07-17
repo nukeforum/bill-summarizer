@@ -15,6 +15,7 @@ data class Bill(
     @SerialName("introduced_date") val introducedDate: String,
     @SerialName("latest_action") val latestAction: Action,
     val outcome: Outcome,
+    @SerialName("policy_area") val policyArea: String? = null,
     @SerialName("summary_crs") val summaryCrs: String? = null,
     @SerialName("text_url_html") val textUrlHtml: String? = null,
     @SerialName("text_url_xml") val textUrlXml: String? = null,

@@ -48,7 +48,8 @@ class BillRecordBuilderTest {
                               "title":"A Bill For All Purposes",
                               "titles":[{"titleType":"Short Title","title":"AllPurposes Act"}],
                               "introducedDate":"2026-01-15",
-                              "sponsors":[{"fullName":"Rep. Smith, Adrian [R-NE-3]","party":"Republican","state":"NE"}]
+                              "sponsors":[{"fullName":"Rep. Smith, Adrian [R-NE-3]","party":"Republican","state":"NE"}],
+                              "policyArea":{"name":"Government Operations and Politics"}
                             }}
                         """.trimIndent()
                     }
@@ -74,6 +75,7 @@ class BillRecordBuilderTest {
         assertEquals("2026-01-15", bill.introducedDate)
         assertEquals("2026-04-01", bill.latestAction.date)
         assertEquals(Outcome.ENACTED, bill.outcome)
+        assertEquals("Government Operations and Politics", bill.policyArea)
         assertEquals("LATEST", bill.summaryCrs)
         assertEquals("https://x/bill.htm", bill.textUrlHtml)
         assertEquals("https://x/bill.xml", bill.textUrlXml)
@@ -98,6 +100,7 @@ class BillRecordBuilderTest {
         val bill = buildBillRecord(cc, 119, summary, "passed_house")
         assertEquals("fallback title from summary", bill.title)
         assertNull(bill.shortTitle)
+        assertNull(bill.policyArea)
     }
 
     @Test fun no_summaries_endpoint_response_yields_null_summaryCrs() = runTest {
