@@ -116,6 +116,7 @@ fun BillDetailScreen(
             sheetState = sheetState,
             fullTextState = fullTextState,
             hasHtmlText = !successBill.textUrlHtml.isNullOrBlank(),
+            hasOfficialSummary = !successBill.summaryCrs.isNullOrBlank(),
             onDismiss = { closeSheet() },
             onIncludeFullTextChange = { include ->
                 if (include) viewModel.fetchFullText() else viewModel.resetFullText()
@@ -128,6 +129,8 @@ fun BillDetailScreen(
                 val payload = LlmShareHelper.buildPrompt(successBill, resolveBody(useFullText))
                 closeSheet { LlmShareHelper.shareToOther(context, payload) }
             },
+            // The official summary lives on the detail page behind the sheet.
+            onReadOfficialSummary = { closeSheet() },
         )
     }
 }
@@ -237,7 +240,7 @@ private fun BillDetailSuccessBody(bill: Bill, innerPadding: PaddingValues, onOpe
             )
         }
 
-        Section(title = "Summary") {
+        Section(title = "Official summary") {
             val summary = bill.summaryCrs
             if (summary.isNullOrBlank()) {
                 Text(
@@ -246,6 +249,11 @@ private fun BillDetailSuccessBody(bill: Bill, innerPadding: PaddingValues, onOpe
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             } else {
+                Text(
+                    text = "Plain-English summary from the Congressional Research Service — no AI account needed.",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
                 val annotated = remember(summary) { AnnotatedString.fromHtml(summary) }
                 Text(text = annotated, style = MaterialTheme.typography.bodyMedium)
             }
