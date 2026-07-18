@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T13:51:11Z",
+  "generated_at": "2026-07-18T13:34:46Z",
   "congress": 116,
   "bills": [
     {
@@ -25,6 +25,30 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ327/PLAW-116publ327_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ327/PLAW-116publ327.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/1418"
+    },
+    {
+      "id": "hr1472-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "1472",
+      "title": "To rename the Homestead National Monument of America near Beatrice, Nebraska, as the Homestead National Historical Park.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Smith, Adrian",
+        "party": "R",
+        "state": "NE"
+      },
+      "introduced_date": "2019-02-28",
+      "latest_action": {
+        "date": "2021-01-13",
+        "text": "Became Public Law No: 116-328."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill redesignates the Homestead National Monument of America in Nebraska as the Homestead National Historical Park.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ328/PLAW-116publ328.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ328/PLAW-116publ328_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ328/PLAW-116publ328.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/1472"
     },
     {
       "id": "hr1492-116",
@@ -771,6 +795,54 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/5451"
     },
     {
+      "id": "hr5458-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "5458",
+      "title": "Rocky Mountain National Park Boundary Modification Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Neguse, Joe",
+        "party": "D",
+        "state": "CO"
+      },
+      "introduced_date": "2019-12-17",
+      "latest_action": {
+        "date": "2021-01-05",
+        "text": "Became Public Law No: 116-301."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Rocky Mountain National Park Boundary Modification Act</b></p> <p>This bill authorizes the Department of the Interior to acquire, by donation, approximately 40 acres of specified nonfederal land for inclusion in Rocky Mountain National Park in Colorado. Upon acquisition, Interior shall (1) modify the boundary of the park to include the acquisition, and (2) administer the acquired land as part of the park.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ301/PLAW-116publ301.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ301/PLAW-116publ301_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ301/PLAW-116publ301.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/5458"
+    },
+    {
+      "id": "hr5459-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "5459",
+      "title": "Rocky Mountain National Park Ownership Correction Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Neguse, Joe",
+        "party": "D",
+        "state": "CO"
+      },
+      "introduced_date": "2019-12-17",
+      "latest_action": {
+        "date": "2021-01-05",
+        "text": "Became Public Law No: 116-302."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Rocky Mountain National Park Ownership Correction Act</b> </p> <p>This bill directs the Department of the Interior to convey specified federal land to the owner of specified nonfederal land if the owner of the nonfederal land offers to exchange the land.</p> <p>The values of the federal and nonfederal land to be exchanged shall be considered to be of equal value.</p> <p>The nonfederal land that is acquired by Interior shall be administered as part of Rocky Mountain National Park in Colorado. </p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ302/PLAW-116publ302.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ302/PLAW-116publ302_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ302/PLAW-116publ302.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/5459"
+    },
+    {
       "id": "hr5597-116",
       "congress": 116,
       "type": "hr",
@@ -1321,6 +1393,30 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ322/PLAW-116publ322_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ322/PLAW-116publ322.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/8611"
+    },
+    {
+      "id": "hr8810-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "8810",
+      "title": "National Landslide Preparedness Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. DelBene, Suzan K.",
+        "party": "D",
+        "state": "WA"
+      },
+      "introduced_date": "2020-11-24",
+      "latest_action": {
+        "date": "2021-01-05",
+        "text": "Became Public Law No: 116-323."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><strong>National Landslide Preparedness Act</strong> </p> <p>This bill directs the U.S. Geological Survey (USGS) to establish a National Landslide Hazards Reduction Program to identify and understand landslide hazards and risks, reduce losses from landslides, protect communities at risk of landslide hazards, and help improve communication and emergency preparedness.</p> <p>The USGS shall, among other things</p> <ul> <li> develop and publish a national strategy for landslide hazards, risk reduction, and response in the United States (including territories);</li> <li> develop and maintain a publicly accessible national landslide hazard and risk inventory database;</li> <li> expand the early warning system for debris flow; and</li> <li> establish emergency response procedures for the rapid deployment of federal scientists, equipment, and services to areas impacted by a significant landslide event.</li> </ul> <p>The USGS may provide grants to research, map, assess, and collect data on landslide hazards. </p> <p>The National Science Foundation may provide grants to eligible entities for landslide research. </p> <p>The USGS (1) shall advance the identification, mapping, research, and monitoring of subsidence and groundwater resource accounting, particularly in areas affected by drought; (2) shall establish the 3D Elevation Program and the 3D Elevation Federal Interagency Coordinating Committee; and (3) may make grants and enter into cooperative agreements to facilitate the improvement of nationwide coverage of 3D elevation data.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ323/PLAW-116publ323.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ323/PLAW-116publ323_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ323/PLAW-116publ323.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/8810"
     },
     {
       "id": "hr8906-116",
@@ -1993,6 +2089,30 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ260/PLAW-116publ260_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ260/PLAW-116publ260.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/133"
+    },
+    {
+      "id": "hr3465-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "3465",
+      "title": "Fallen Journalists Memorial Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Napolitano, Grace F.",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2019-06-25",
+      "latest_action": {
+        "date": "2020-12-23",
+        "text": "Became Public Law No: 116-253."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Fallen Journalists Memorial Act </b></p> <p>This bill authorizes the Fallen Journalists Memorial Foundation to establish a commemorative work on federal land in commemoration of America's commitment to a free press as represented by journalists who sacrificed their lives in service to that cause. </p> <p>Federal funds may not be used to pay any expense for the establishment of the commemorative work. </p> <p>The bill makes the Fallen Journalists Memorial Foundation solely responsible for acceptance of contributions and payment of the expenses for the establishment of the commemorative work. </p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ253/PLAW-116publ253.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ253/PLAW-116publ253_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ253/PLAW-116publ253.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/3465"
     },
     {
       "id": "hr4761-116",
@@ -3003,6 +3123,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/729"
     },
     {
+      "id": "hr473-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "473",
+      "title": "To authorize the Every Word We Utter Monument to establish a commemorative work in the District of Columbia and its environs, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Neguse, Joe",
+        "party": "D",
+        "state": "CO"
+      },
+      "introduced_date": "2019-01-10",
+      "latest_action": {
+        "date": "2020-12-17",
+        "text": "Became Public Law No: 116-217."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill authorizes the establishment on federal land in the District of Columbia of the Every Word We Utter Monument in commemoration of the women's suffrage movement and the passage of the 19th Amendment to the Constitution, which gave women the right to vote. </p> <p>No federal funds may be used to pay any expenses for the establishment of the commemorative work. </p> <p>The Every Word We Utter Monument organization shall be solely responsible for accepting contributions for, and paying for, the expenses of the establishment of such work.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ217/PLAW-116publ217.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ217/PLAW-116publ217_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ217/PLAW-116publ217.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/473"
+    },
+    {
       "id": "hr4975-116",
       "congress": 116,
       "type": "hr",
@@ -3627,6 +3771,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/5901"
     },
     {
+      "id": "s327-116",
+      "congress": 116,
+      "type": "s",
+      "number": "327",
+      "title": "Wounded Veterans Recreation Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Shaheen, Jeanne",
+        "party": "D",
+        "state": "NH"
+      },
+      "introduced_date": "2019-02-04",
+      "latest_action": {
+        "date": "2020-12-03",
+        "text": "Became Public Law No: 116-205."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Wounded Veterans Recreation Act</b></p> <p>This bill instructs the Department of the Interior and the Department of Agriculture to make the National Parks and Federal Recreational Lands Pass available, without charge and for the lifetime of the passholder, to (1) any U.S. citizen or person domiciled in the United States who has been medically determined to be permanently disabled, if the citizen or person furnishes adequate proof of the disability and such citizenship or residency; and (2) any veteran who has been found to have a service-connected disability. </p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ205/PLAW-116publ205.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ205/PLAW-116publ205_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ205/PLAW-116publ205.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/327"
+    },
+    {
       "id": "sres753-116",
       "congress": 116,
       "type": "sres",
@@ -4009,6 +4177,30 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ188/PLAW-116publ188_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ188/PLAW-116publ188.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/3051"
+    },
+    {
+      "id": "s3758-116",
+      "congress": 116,
+      "type": "s",
+      "number": "3758",
+      "title": "A bill to amend the Klamath Basin Water Supply Enhancement Act of 2000 to make certain technical corrections.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Merkley, Jeff",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2020-05-19",
+      "latest_action": {
+        "date": "2020-10-30",
+        "text": "Became Public Law No: 116-191."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill specifies types of programs the Bureau of Reclamation may participate in, such as land idling (i.e., refraining from cultivating crops on certain land), for the purpose of aligning water supply and demand for users of irrigation water associated with the Klamath Project in Oregon and California. Additionally, the bill provides for the continued use of power from the Pick-Sloan Missouri Basin Program by the Kinsey Irrigation Company and the Sidney Water Users Irrigation District in Montana.</p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ191/PLAW-116publ191.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ191/PLAW-116publ191_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ191/PLAW-116publ191.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/3758"
     },
     {
       "id": "s4075-116",
@@ -4417,6 +4609,30 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ169/PLAW-116publ169_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ169/PLAW-116publ169.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/4072"
+    },
+    {
+      "id": "s490-116",
+      "congress": 116,
+      "type": "s",
+      "number": "490",
+      "title": "B-47 Ridge Designation Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daines, Steve",
+        "party": "R",
+        "state": "MT"
+      },
+      "introduced_date": "2019-02-14",
+      "latest_action": {
+        "date": "2020-10-13",
+        "text": "Became Public Law No: 116-167."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>B-47 Ridge Designation Act</b></p> <p>This bill designates the mountain ridge that runs south and west of Emigrant Peak in the Absaroka Range in Montana, which is where an Air Force B-47 strategic bomber crashed while on a training mission in 1962, as the \"B-47 Ridge.\"</p> <p>The bill permits the installing of a plaque on the ridge in memory of such crash. </p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ167/PLAW-116publ167.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ167/PLAW-116publ167_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ167/PLAW-116publ167.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/490"
     },
     {
       "id": "hr991-116",
@@ -5547,6 +5763,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/7010"
     },
     {
+      "id": "hr943-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "943",
+      "title": "Never Again Education Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Maloney, Carolyn B.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2019-01-31",
+      "latest_action": {
+        "date": "2020-05-29",
+        "text": "Became Public Law No: 116-141."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><strong>Never Again Education Act</strong></p> <p>This bill expands U.S. Holocaust Memorial Museum education programming.</p> <p>The bill requires the museum to develop and nationally disseminate accurate, relevant, and accessible resources to improve awareness and understanding of the Holocaust.</p> <p> It also authorizes various Holocaust education program activities to engage prospective and current teachers and educational leaders. </p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ141/PLAW-116publ141.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ141/PLAW-116publ141_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ141/PLAW-116publ141.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/943"
+    },
+    {
       "id": "sres556-116",
       "congress": 116,
       "type": "sres",
@@ -6267,6 +6507,30 @@
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-joint-resolution/67"
     },
     {
+      "id": "sres315-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "315",
+      "title": "A resolution memorializing the discovery of the Clotilda.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Jones, Doug",
+        "party": "D",
+        "state": "AL"
+      },
+      "introduced_date": "2019-09-17",
+      "latest_action": {
+        "date": "2020-02-27",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR 09/18/2019 S5542)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This bill memorializes the discovery of the wreckage of the <i>Clotilda</i>, the last known slave ship to arrive in the United States. </p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres315/BILLS-116sres315ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres315/BILLS-116sres315ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres315/BILLS-116sres315ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/315"
+    },
+    {
       "id": "sres480-116",
       "congress": 116,
       "type": "sres",
@@ -6505,6 +6769,30 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ110/PLAW-116publ110_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ110/PLAW-116publ110.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/263"
+    },
+    {
+      "id": "hr434-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "434",
+      "title": "Emancipation National Historic Trail Study Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Jackson Lee, Sheila",
+        "party": "D",
+        "state": "TX"
+      },
+      "introduced_date": "2019-01-10",
+      "latest_action": {
+        "date": "2020-01-27",
+        "text": "Became Public Law No: 116-111."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p><b>Emancipation National Historic Trail Study Act</b></p> <p>This bill requires the Emancipation National Historic Trail, which extends approximately 51 miles and follows&nbsp;the migration route taken by newly freed slaves and other persons of African descent from Galveston, Texas, to Houston, Texas, to be studied for designation as a national scenic trail. </p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ111/PLAW-116publ111.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ111/PLAW-116publ111_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ111/PLAW-116publ111.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/434"
     },
     {
       "id": "s457-116",
@@ -6937,6 +7225,30 @@
       "text_url_xml": "https://www.congress.gov/116/plaws/publ102/PLAW-116publ102_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/116/plaws/publ102/PLAW-116publ102.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-bill/737"
+    },
+    {
+      "id": "hr1138-116",
+      "congress": 116,
+      "type": "hr",
+      "number": "1138",
+      "title": "To reauthorize the West Valley demonstration project, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Reed, Tom",
+        "party": "R",
+        "state": "NY"
+      },
+      "introduced_date": "2019-02-11",
+      "latest_action": {
+        "date": "2019-12-20",
+        "text": "Became Public Law No: 116-95."
+      },
+      "outcome": "enacted",
+      "summary_crs": " <p>This bill reauthorizes through FY2026 the West Valley Demonstration Project located in West Valley, New York.</p> <p>The Government Accountability Office must report to Congress on the volumes, origins, and types of radioactive waste at the West Valley Demonstration Project and the options for disposal of such waste. </p>",
+      "text_url_html": "https://www.congress.gov/116/plaws/publ95/PLAW-116publ95.htm",
+      "text_url_xml": "https://www.congress.gov/116/plaws/publ95/PLAW-116publ95_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/116/plaws/publ95/PLAW-116publ95.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/house-bill/1138"
     },
     {
       "id": "hr1158-116",
@@ -8881,6 +9193,30 @@
       "text_url_xml": "https://www.congress.gov/116/bills/sres205/BILLS-116sres205ats.xml",
       "text_url_pdf": "https://www.congress.gov/116/bills/sres205/BILLS-116sres205ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/205"
+    },
+    {
+      "id": "sres267-116",
+      "congress": 116,
+      "type": "sres",
+      "number": "267",
+      "title": "A resolution recognizing the September 11th National Memorial Trail as an important trail and greenway all individuals should enjoy in honor of the heroes of September 11th.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Toomey, Patrick",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2019-06-27",
+      "latest_action": {
+        "date": "2019-09-11",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR 06/27/2019 S4635-4636)"
+      },
+      "outcome": "passed_senate",
+      "summary_crs": " <p>This resolution recognizes the September 11th National Memorial Trail, which&nbsp;will pass through the states of Virginia, Maryland, West Virginia, Pennsylvania, New Jersey, New York, Delaware, and the District of Columbia, as an important trail and greenway honoring the heroes of the September 11, 2001, terrorist attack in the United States. </p>",
+      "text_url_html": "https://www.congress.gov/116/bills/sres267/BILLS-116sres267ats.htm",
+      "text_url_xml": "https://www.congress.gov/116/bills/sres267/BILLS-116sres267ats.xml",
+      "text_url_pdf": "https://www.congress.gov/116/bills/sres267/BILLS-116sres267ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/116th-congress/senate-resolution/267"
     },
     {
       "id": "hr1250-116",
