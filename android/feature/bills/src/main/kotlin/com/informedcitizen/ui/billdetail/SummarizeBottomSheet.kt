@@ -33,109 +33,164 @@ fun SummarizeBottomSheet(
     sheetState: SheetState,
     fullTextState: FullTextState,
     hasHtmlText: Boolean,
+    hasOfficialSummary: Boolean,
     onDismiss: () -> Unit,
     onIncludeFullTextChange: (Boolean) -> Unit,
     onShareToTarget: (target: LlmTarget, useFullText: Boolean) -> Unit,
     onShareToOther: (useFullText: Boolean) -> Unit,
+    onReadOfficialSummary: () -> Unit,
+) {
+    ModalBottomSheet(
+        onDismissRequest = onDismiss,
+        sheetState = sheetState,
+    ) {
+        SummarizeSheetContent(
+            fullTextState = fullTextState,
+            hasHtmlText = hasHtmlText,
+            hasOfficialSummary = hasOfficialSummary,
+            onIncludeFullTextChange = onIncludeFullTextChange,
+            onShareToTarget = onShareToTarget,
+            onShareToOther = onShareToOther,
+            onReadOfficialSummary = onReadOfficialSummary,
+        )
+    }
+}
+
+@Composable
+internal fun SummarizeSheetContent(
+    fullTextState: FullTextState,
+    hasHtmlText: Boolean,
+    hasOfficialSummary: Boolean,
+    onIncludeFullTextChange: (Boolean) -> Unit,
+    onShareToTarget: (target: LlmTarget, useFullText: Boolean) -> Unit,
+    onShareToOther: (useFullText: Boolean) -> Unit,
+    onReadOfficialSummary: () -> Unit,
 ) {
     var includeFullText by remember { mutableStateOf(false) }
     val isFetching = fullTextState is FullTextState.Loading
     val fullTextReady = fullTextState is FullTextState.Loaded
     val canShare = !includeFullText || fullTextReady
 
-    ModalBottomSheet(
-        onDismissRequest = onDismiss,
-        sheetState = sheetState,
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 24.dp, vertical = 8.dp),
+        verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(horizontal = 24.dp, vertical = 8.dp),
-            verticalArrangement = Arrangement.spacedBy(12.dp),
-        ) {
-            Text("Summarize this bill", style = MaterialTheme.typography.headlineSmall)
+        Text("Summarize this bill", style = MaterialTheme.typography.headlineSmall)
 
-            LlmTarget.entries.forEach { target ->
-                Button(
-                    onClick = { onShareToTarget(target, includeFullText) },
-                    enabled = canShare,
-                    modifier = Modifier.fillMaxWidth(),
-                ) {
-                    Text(target.displayName)
-                }
-            }
+        Text(
+            text = ACCOUNT_DISCLOSURE,
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
 
-            Row(
-                modifier = Modifier.fillMaxWidth().padding(top = 4.dp),
-                verticalAlignment = Alignment.CenterVertically,
+        if (hasOfficialSummary) {
+            Text(
+                text = OFFICIAL_SUMMARY_NOTICE,
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            OutlinedButton(
+                onClick = onReadOfficialSummary,
+                modifier = Modifier.fillMaxWidth(),
             ) {
-                Switch(
-                    checked = includeFullText,
-                    enabled = hasHtmlText,
-                    onCheckedChange = { checked ->
-                        includeFullText = checked
-                        onIncludeFullTextChange(checked)
-                    },
-                )
-                Spacer(Modifier.width(12.dp))
-                Column(modifier = Modifier.weight(1f)) {
-                    Text(
-                        text = "Include full text (longer)",
-                        style = MaterialTheme.typography.bodyMedium,
-                    )
-                    if (!hasHtmlText) {
-                        Text(
-                            text = "No full-text version published yet.",
-                            style = MaterialTheme.typography.bodySmall,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        )
-                    }
-                }
+                Text(READ_OFFICIAL_SUMMARY_LABEL)
             }
+        }
 
-            when (val s = fullTextState) {
-                FullTextState.Loading -> Row(verticalAlignment = Alignment.CenterVertically) {
-                    CircularProgressIndicator(modifier = Modifier.height(20.dp).width(20.dp))
-                    Spacer(Modifier.width(12.dp))
+        LlmTarget.entries.forEach { target ->
+            Button(
+                onClick = { onShareToTarget(target, includeFullText) },
+                enabled = canShare,
+                modifier = Modifier.fillMaxWidth(),
+            ) {
+                Text(target.displayName)
+            }
+        }
+
+        Row(
+            modifier = Modifier.fillMaxWidth().padding(top = 4.dp),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Switch(
+                checked = includeFullText,
+                enabled = hasHtmlText,
+                onCheckedChange = { checked ->
+                    includeFullText = checked
+                    onIncludeFullTextChange(checked)
+                },
+            )
+            Spacer(Modifier.width(12.dp))
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = "Include full text (longer)",
+                    style = MaterialTheme.typography.bodyMedium,
+                )
+                if (!hasHtmlText) {
                     Text(
-                        text = "Fetching full text…",
+                        text = "No full-text version published yet.",
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
                 }
-                is FullTextState.Error -> Text(
-                    text = "Couldn't fetch full text: ${s.message}",
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.error,
-                )
-                FullTextState.Idle, is FullTextState.Loaded -> {
-                    // Nothing extra to show — buttons handle the loaded case.
-                }
             }
+        }
 
-            OutlinedButton(
-                onClick = { onShareToOther(includeFullText) },
-                enabled = canShare,
-                modifier = Modifier.fillMaxWidth(),
-            ) {
-                Text("Other app…")
-            }
-
-            Text(
-                text = "Opens in your AI app. The bill text and a summary prompt will be ready to paste, or sent automatically if your app supports it.",
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-            )
-
-            // Subtle indicator that the share button is gated on the full-text fetch.
-            if (includeFullText && isFetching) {
+        when (val s = fullTextState) {
+            FullTextState.Loading -> Row(verticalAlignment = Alignment.CenterVertically) {
+                CircularProgressIndicator(modifier = Modifier.height(20.dp).width(20.dp))
+                Spacer(Modifier.width(12.dp))
                 Text(
-                    text = "Buttons activate once the full text finishes loading.",
+                    text = "Fetching full text…",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             }
-            Spacer(Modifier.height(8.dp))
+            is FullTextState.Error -> Text(
+                text = "Couldn't fetch full text: ${s.message}",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.error,
+            )
+            FullTextState.Idle, is FullTextState.Loaded -> {
+                // Nothing extra to show — buttons handle the loaded case.
+            }
         }
+
+        OutlinedButton(
+            onClick = { onShareToOther(includeFullText) },
+            enabled = canShare,
+            modifier = Modifier.fillMaxWidth(),
+        ) {
+            Text("Other app…")
+        }
+
+        Text(
+            text = "Opens in your AI app. The bill text and a summary prompt will be ready to paste, " +
+                "or sent automatically if your app supports it.",
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+
+        // Subtle indicator that the share button is gated on the full-text fetch.
+        if (includeFullText && isFetching) {
+            Text(
+                text = "Buttons activate once the full text finishes loading.",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
+        Spacer(Modifier.height(8.dp))
     }
 }
+
+internal const val ACCOUNT_DISCLOSURE =
+    "This app doesn't write the summary itself. It hands the bill to a separate AI service — " +
+        "ChatGPT, Claude, or Gemini — using your own account there. If you aren't signed in to " +
+        "that service, it will ask you to log in (or sign up) before you get a summary."
+
+internal const val OFFICIAL_SUMMARY_NOTICE =
+    "No AI account? This bill already has an official plain-English summary on this page — " +
+        "no sign-in needed."
+
+internal const val READ_OFFICIAL_SUMMARY_LABEL = "Read the official summary instead"
