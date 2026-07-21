@@ -1,9 +1,21 @@
 """Integration test for fetch_bills.main with mocked Congress.gov client."""
 import json
+from datetime import datetime, timedelta, timezone
 from unittest.mock import patch
 
 import _common
 import fetch_bills
+
+
+def _days_ago(days: int) -> str:
+    """Action date ``days`` before the real clock, as YYYY-MM-DD.
+
+    fetch_bills.main computes its cutoff from ``datetime.now``, so fixture
+    dates that must fall inside (or outside) the RECENT_DAYS window have to
+    be derived from the clock too — a hardcoded date would rot as the
+    window slides forward.
+    """
+    return (datetime.now(timezone.utc) - timedelta(days=days)).strftime("%Y-%m-%d")
 
 
 class _FakeClient:
@@ -72,7 +84,10 @@ def test_main_merges_into_existing_manifest(tmp_path, monkeypatch):
             "type": "hr",
             "number": "999",
             "title": "Old bill the daily script should preserve",
-            "latest_action": {"date": "2025-06-15", "text": "Became Public Law"},
+            "latest_action": {
+                "date": _days_ago(fetch_bills.RECENT_DAYS * 2),
+                "text": "Became Public Law",
+            },
             "outcome": "enacted",
             "sponsor": {"name": "Sen. Old, Old", "party": "D", "state": "XX"},
             "introduced_date": "2025-01-01",
@@ -85,9 +100,15 @@ def test_main_merges_into_existing_manifest(tmp_path, monkeypatch):
         }],
     }), encoding="utf-8")
 
-    # Today the daily run finds one new passed-house bill.
+    # Today the daily run finds one new passed-house bill, acted on safely
+    # inside the RECENT_DAYS window.
     list_resp = {
-        "bills": [_summary("hr", 1, "Passed House by recorded vote: 220-211", "2026-04-30")],
+        "bills": [
+            _summary(
+                "hr", 1, "Passed House by recorded vote: 220-211",
+                _days_ago(fetch_bills.RECENT_DAYS // 2),
+            ),
+        ],
     }
     detail = _detail_map("hr", "1", 119)
     fake = _FakeClient([list_resp, {"bills": []}], detail)
