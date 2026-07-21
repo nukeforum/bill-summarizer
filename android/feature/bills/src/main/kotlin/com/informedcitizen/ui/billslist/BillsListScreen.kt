@@ -79,6 +79,7 @@ fun BillsListScreen(
             onTopicSelected = viewModel::selectTopic,
             onResummarize = viewModel::resummarize,
             onSearchQueryChange = viewModel::setSearchQuery,
+            onPolicyAreaSelected = viewModel::selectPolicyArea,
         )
     }
 }
@@ -95,6 +96,7 @@ internal fun BillsListContent(
     onTopicSelected: (BillTopic?) -> Unit = {},
     onResummarize: (String) -> Unit = {},
     onSearchQueryChange: (String) -> Unit = {},
+    onPolicyAreaSelected: (String?) -> Unit = {},
     searchQuery: String = (state as? BillsListUiState.Success)?.searchQuery.orEmpty(),
 ) {
     Column(modifier = Modifier.fillMaxSize().padding(top = innerPadding.calculateTopPadding())) {
@@ -114,6 +116,13 @@ internal fun BillsListContent(
         )
 
         val success = state as? BillsListUiState.Success
+        if (success != null && success.availablePolicyAreas.isNotEmpty()) {
+            PolicyAreaFilterRow(
+                policyAreas = success.availablePolicyAreas,
+                selected = success.selectedPolicyArea,
+                onPolicyAreaSelected = onPolicyAreaSelected,
+            )
+        }
         if (success != null && success.aiTitlesEnabled) {
             TopicFilterRow(
                 selected = success.selectedTopic,
@@ -140,10 +149,12 @@ internal fun BillsListContent(
                 ) {
                     if (state.bills.isEmpty()) {
                         CenteredMessage(
-                            if (state.searchQuery.isNotBlank()) {
-                                "No bills match \"${state.searchQuery.trim()}\""
-                            } else {
-                                "No bills match this filter"
+                            when {
+                                state.searchQuery.isNotBlank() ->
+                                    "No bills match \"${state.searchQuery.trim()}\""
+                                state.selectedPolicyArea != null ->
+                                    "No bills with subject \"${state.selectedPolicyArea}\" match this filter"
+                                else -> "No bills match this filter"
                             },
                         )
                     } else {
@@ -194,6 +205,38 @@ private fun FilterChipsRow(
                 selected = entry == selected,
                 onClick = { onFilterChange(entry) },
                 label = { Text(entry.displayName) },
+            )
+        }
+    }
+}
+
+/**
+ * Chips over the Congress.gov policy-area taxonomy of the loaded bills —
+ * topical narrowing without relying on keyword matches. Only rendered when
+ * the feed carries subject data, so older manifests degrade gracefully.
+ */
+@Composable
+private fun PolicyAreaFilterRow(
+    policyAreas: List<String>,
+    selected: String?,
+    onPolicyAreaSelected: (String?) -> Unit,
+) {
+    LazyRow(
+        contentPadding = PaddingValues(horizontal = 16.dp),
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+    ) {
+        item {
+            FilterChip(
+                selected = selected == null,
+                onClick = { onPolicyAreaSelected(null) },
+                label = { Text("All subjects") },
+            )
+        }
+        items(items = policyAreas, key = { it }) { area ->
+            FilterChip(
+                selected = selected == area,
+                onClick = { onPolicyAreaSelected(if (selected == area) null else area) },
+                label = { Text(area) },
             )
         }
     }

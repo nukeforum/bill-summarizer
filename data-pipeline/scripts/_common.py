@@ -365,6 +365,7 @@ def build_bill_record(
 
     summary_text = _fetch_latest_crs_summary(client, congress, bill_type, bill_number)
     text_urls = _fetch_text_urls(client, congress, bill_type, bill_number)
+    policy = detail.get("policyArea") or None
 
     return {
         "id": f"{bill_type}{bill_number}-{congress}",
@@ -384,6 +385,7 @@ def build_bill_record(
             "text": latest_action.get("text") or "",
         },
         "outcome": outcome,
+        "policy_area": (policy.get("name") if isinstance(policy, dict) else policy),
         "summary_crs": summary_text,
         "text_url_html": text_urls.get("html"),
         "text_url_xml": text_urls.get("xml"),

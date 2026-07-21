@@ -42,6 +42,7 @@ class BillsListViewModel @Inject constructor(
     private val isRefreshing = MutableStateFlow(false)
     private val sessionStatusLine = MutableStateFlow<String?>(null)
     private val selectedTopic = MutableStateFlow<BillTopic?>(null)
+    private val selectedPolicyArea = MutableStateFlow<String?>(null)
     private val _searchQuery = MutableStateFlow("")
     val searchQuery: StateFlow<String> = _searchQuery.asStateFlow()
 
@@ -56,6 +57,7 @@ class BillsListViewModel @Inject constructor(
             aiCapability.status,
             selectedTopic,
             _searchQuery,
+            selectedPolicyArea,
         ),
     ) { values ->
         @Suppress("UNCHECKED_CAST")
@@ -69,6 +71,7 @@ class BillsListViewModel @Inject constructor(
         val capStatus = values[6] as AiCapability.Status
         val topic = values[7] as BillTopic?
         val query = values[8] as String
+        val policyArea = values[9] as String?
 
         when {
             result == null -> BillsListUiState.Loading
@@ -85,6 +88,7 @@ class BillsListViewModel @Inject constructor(
                 capStatus = capStatus,
                 topic = topic,
                 query = query,
+                policyArea = policyArea,
             )
         }
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), BillsListUiState.Loading)
@@ -101,6 +105,10 @@ class BillsListViewModel @Inject constructor(
 
     fun selectTopic(topic: BillTopic?) {
         selectedTopic.value = topic
+    }
+
+    fun selectPolicyArea(policyArea: String?) {
+        selectedPolicyArea.value = policyArea
     }
 
     fun setSearchQuery(query: String) {
@@ -121,6 +129,7 @@ class BillsListViewModel @Inject constructor(
         capStatus: AiCapability.Status,
         topic: BillTopic?,
         query: String,
+        policyArea: String?,
     ): BillsListUiState.Success {
         val capable = capStatus == AiCapability.Status.Available ||
             capStatus is AiCapability.Status.ModelDownloading
@@ -136,8 +145,16 @@ class BillsListViewModel @Inject constructor(
             emptyMap()
         }
 
+        val availablePolicyAreas = allBills
+            .mapNotNull { it.policyArea }
+            .distinct()
+            .sorted()
+        // A stale selection (e.g. the subject vanished on refresh) deselects
+        // rather than pinning the list to an invisible empty filter.
+        val activePolicyArea = policyArea?.takeIf { it in availablePolicyAreas }
         val baseList = allBills
             .filter(currentFilter::matches)
+            .filter { activePolicyArea == null || it.policyArea == activePolicyArea }
             .filter { it.matchesSearchQuery(query) }
         val activeTopic = if (aiEnabled) topic else null
         val (filteredBills, hidden) = if (activeTopic != null) {
@@ -158,6 +175,8 @@ class BillsListViewModel @Inject constructor(
             selectedTopic = activeTopic,
             hiddenByTopicCount = hidden,
             searchQuery = query,
+            availablePolicyAreas = availablePolicyAreas,
+            selectedPolicyArea = activePolicyArea,
         )
     }
 

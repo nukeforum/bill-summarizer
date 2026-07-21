@@ -16,6 +16,7 @@ fun Bill.matchesSearchQuery(query: String): Boolean = allTermsMatchSomeField(
         title,
         shortTitle,
         summaryCrs,
+        policyArea,
         latestAction.text,
         sponsor.name,
         "$type$number",

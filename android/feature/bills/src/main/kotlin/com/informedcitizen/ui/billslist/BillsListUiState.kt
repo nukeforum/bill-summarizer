@@ -18,6 +18,8 @@ sealed interface BillsListUiState {
         val selectedTopic: BillTopic? = null,
         val hiddenByTopicCount: Int = 0,
         val searchQuery: String = "",
+        val availablePolicyAreas: List<String> = emptyList(),
+        val selectedPolicyArea: String? = null,
     ) : BillsListUiState
 
     data class Error(val message: String) : BillsListUiState
