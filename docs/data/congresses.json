@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-17T13:51:11Z",
+  "generated_at": "2026-07-21T14:07:33Z",
   "current_congress": 119,
   "congresses": [
     {
       "congress": 119,
-      "bill_count": 254,
+      "bill_count": 256,
       "first_action_date": "2025-01-29",
-      "last_action_date": "2026-07-15",
+      "last_action_date": "2026-07-16",
       "manifest_path": "congress119_bills.json",
       "is_current": true,
       "backfill_complete": true
@@ -31,10 +31,19 @@
     },
     {
       "congress": 116,
-      "bill_count": 480,
+      "bill_count": 494,
       "first_action_date": "2019-01-16",
       "last_action_date": "2021-01-13",
       "manifest_path": "congress116_bills.json",
+      "is_current": false,
+      "backfill_complete": true
+    },
+    {
+      "congress": 115,
+      "bill_count": 261,
+      "first_action_date": "2017-01-03",
+      "last_action_date": "2019-01-14",
+      "manifest_path": "congress115_bills.json",
       "is_current": false,
       "backfill_complete": false
     }

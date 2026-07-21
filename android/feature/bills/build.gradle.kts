@@ -27,4 +27,8 @@ dependencies {
     testImplementation(libs.androidx.test.core)
     testImplementation(libs.androidx.test.ext.junit)
     testImplementation(libs.robolectric)
+    // Compose UI tests run on the JVM via Robolectric (versions from the
+    // compose BOM exposed by :core:ui).
+    testImplementation(libs.androidx.compose.ui.test.junit4)
+    testImplementation(libs.androidx.compose.ui.test.manifest)
 }

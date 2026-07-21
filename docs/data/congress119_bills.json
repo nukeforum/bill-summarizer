@@ -1,7 +1,31 @@
 {
-  "generated_at": "2026-07-17T08:09:17Z",
+  "generated_at": "2026-07-21T08:27:27Z",
   "congress": 119,
   "bills": [
+    {
+      "id": "sjres198-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "198",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Centers for Medicare & Medicaid Services of the Department of Health and Human Services relating to \"Medicare Program; Implementation of Prior Authorization for Select Services for the Wasteful and Inappropriate Services Reduction (WISeR) Model\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wyden, Ron",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2026-06-24",
+      "latest_action": {
+        "date": "2026-07-16",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 50. Record Vote Number: 199."
+      },
+      "outcome": "failed",
+      "summary_crs": "<p>This joint resolution prohibits the Centers for Medicare &amp; Medicaid Services (CMS) from testing a new Medicare payment model in certain states that involves a prior authorization process and the use of enhanced technology by third-party contractors to determine whether certain claims should be paid.</p><p>Specifically, the joint resolution nullifies a notice issued by the CMS on July 1, 2025, titled <em>Medicare Program; Implementation of Prior Authorization for Select Services for the Wasteful and Inappropriate Services Reduction (WISeR) Model</em>. (On May 12, 2026, the Government Accountability Office issued a letter of opinion stating that this notice constituted an agency rule and is therefore subject to the Congressional Review Act.)</p><p>The CMS selected six states to participate in this model over a six-year period: New Jersey, Ohio, Oklahoma, Texas, Arizona, and Washington. Under the model, contracted companies must process prior authorization requests (i.e., requests for coverage determinations before a service is furnished) for certain services using enhanced technology (e.g., artificial intelligence). Contracted companies are paid based on the share of resulting savings. The CMS aims to test the model's ability to produce accurate results while streamlining the prior authorization process for Medicare claims. The model is based in part on similar processes used for Medicare Advantage claims.&nbsp;</p><p>CMS began implementing the model on January 1, 2026. This joint resolution prohibits the CMS from continuing to do so.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sjres198/BILLS-119sjres198pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres198/BILLS-119sjres198pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres198/BILLS-119sjres198pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/198"
+    },
     {
       "id": "sres772-119",
       "congress": 119,
@@ -21,9 +45,9 @@
       },
       "outcome": "passed_senate",
       "summary_crs": null,
-      "text_url_html": "https://www.congress.gov/119/bills/sres772/BILLS-119sres772is.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/sres772/BILLS-119sres772is.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/sres772/BILLS-119sres772is.pdf",
+      "text_url_html": "https://www.congress.gov/119/bills/sres772/BILLS-119sres772ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres772/BILLS-119sres772ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres772/BILLS-119sres772ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/772"
     },
     {
@@ -45,9 +69,9 @@
       },
       "outcome": "passed_senate",
       "summary_crs": null,
-      "text_url_html": "https://www.congress.gov/119/bills/sres799/BILLS-119sres799is.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/sres799/BILLS-119sres799is.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/sres799/BILLS-119sres799is.pdf",
+      "text_url_html": "https://www.congress.gov/119/bills/sres799/BILLS-119sres799ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres799/BILLS-119sres799ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres799/BILLS-119sres799ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/799"
     },
     {
@@ -97,6 +121,30 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sres798/BILLS-119sres798ats.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sres798/BILLS-119sres798ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/798"
+    },
+    {
+      "id": "s629-119",
+      "congress": 119,
+      "type": "s",
+      "number": "629",
+      "title": "Emergency Conservation Program Improvement Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Fischer, Deb",
+        "party": "R",
+        "state": "NE"
+      },
+      "introduced_date": "2025-02-19",
+      "latest_action": {
+        "date": "2026-07-12",
+        "text": "Became Public Law No: 119-102."
+      },
+      "outcome": "enacted",
+      "summary_crs": "<p><strong>Emergency Conservation Program Improvement Act of 2025 </strong></p><p>This bill revises the Emergency Conservation Program (ECP) and the Emergency Forest Restoration Program (EFRP) to expand eligibility for payments to agricultural producers and owners of forest land impacted by natural disasters. The bill also&nbsp;provides additional options to receive an advance on cost-sharing payments before carrying out emergency measures.</p><p>The bill expands advance ECP payments  to include&nbsp;the replacement, repair, or restoration of farmland or conservation structures requiring an immediate response. Producers may receive an advance on cost-sharing payments for 75% of the cost of the replacement and 50% of the cost of the repair or restoration. Current law limits advance payments to 25% of the cost of the repair or replacement of fencing.</p><p>Under EFRP, the bill allows owners of nonindustrial private forest land impacted by a natural disaster to receive an advance on cost-sharing payments for up to 75% of the cost of the emergency measures. Currently, advance payments are not available under the program.</p><p>ECP and EFRP recipients must use the funds within 180 days after the funds are disbursed. This provides additional time to ECP recipients who currently must use the funds within 60 days.</p><p>The bill also expands eligibility for payments under the programs to include emergency measures to address damages caused by (1) a wildfire that is not caused naturally, if the damage is caused by the spread of the wildfire due to natural causes; and (2) a wildfire that is caused by the federal government.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ102/PLAW-119publ102.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ102/PLAW-119publ102.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/629"
     },
     {
       "id": "hr6644-119",
