@@ -1,5 +1,6 @@
 package com.informedcitizen.pipeline.fetch
 
+import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.pipeline.model.Chamber
 import com.informedcitizen.pipeline.model.MemberVote
 import com.informedcitizen.pipeline.model.RollCallVote
@@ -465,16 +466,23 @@ fun buildVoteRef(vote: RollCallVote): VoteRef = VoteRef(
 )
 
 /**
+ * Newest first (matching the bills manifests); ties broken by roll
+ * number then chamber for a deterministic order. Shared between the
+ * index and the per-bill `votes` lists so both stay byte-identical
+ * with the Python `(date, roll_number, chamber)` reverse sort.
+ */
+private val voteRefNewestFirst: Comparator<VoteRef> =
+    compareByDescending<VoteRef> { it.date }
+        .thenByDescending { it.rollNumber }
+        .thenByDescending { it.chamber.wireName }
+
+/**
  * Assemble the per-Congress `congress<N>_votes.json` payload. Newest
  * first (matching the bills manifests); ties broken by roll number
  * then chamber for a deterministic file.
  */
 fun buildVotesIndex(congress: Int, refs: List<VoteRef>, generatedAt: String): VotesIndex {
-    val ordered = refs.sortedWith(
-        compareByDescending<VoteRef> { it.date }
-            .thenByDescending { it.rollNumber }
-            .thenByDescending { it.chamber.wireName },
-    )
+    val ordered = refs.sortedWith(voteRefNewestFirst)
     return VotesIndex(
         generatedAt = generatedAt,
         congress = congress,
@@ -482,3 +490,31 @@ fun buildVotesIndex(congress: Int, refs: List<VoteRef>, generatedAt: String): Vo
         votes = ordered,
     )
 }
+
+/**
+ * Copy of [bills] with the derived [Bill.votes] field recomputed from
+ * the index [refs]: each bill gets the rows whose `bill_id` matches its
+ * id, newest first with the same tiebreak as [buildVotesIndex] (empty
+ * when no roll call touched the bill). Mirrors Python
+ * `_votes.attach_vote_refs`.
+ */
+fun attachVoteRefs(bills: List<Bill>, refs: List<VoteRef>): List<Bill> {
+    val byBill = mutableMapOf<String, MutableList<VoteRef>>()
+    for (ref in refs.sortedWith(voteRefNewestFirst)) {
+        val billId = ref.billId
+        if (billId.isNullOrEmpty()) continue
+        byBill.getOrPut(billId) { mutableListOf() } += ref
+    }
+    return bills.map { it.copy(votes = byBill[it.id].orEmpty()) }
+}
+
+/**
+ * Copy of [bills] with the derived [Bill.votes] field cleared, so merge
+ * comparisons see only bill data. Freshly fetched records carry no
+ * votes; without stripping, every refetched bill would compare unequal
+ * to its on-disk enriched copy and inflate the merge's `updated` count.
+ * Callers re-attach after merging. Mirrors Python
+ * `_votes.strip_vote_refs`.
+ */
+fun stripVoteRefs(bills: List<Bill>): List<Bill> =
+    bills.map { if (it.votes.isEmpty()) it else it.copy(votes = emptyList()) }

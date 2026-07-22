@@ -4,6 +4,7 @@ import com.informedcitizen.pipeline.ErrorCollector
 import com.informedcitizen.pipeline.congressForYear
 import com.informedcitizen.pipeline.fetch.FileBillsManifestStore
 import com.informedcitizen.pipeline.fetch.FileCongressesIndexStore
+import com.informedcitizen.pipeline.fetch.FileVotesStore
 import com.informedcitizen.pipeline.fetch.backfillBills
 import com.informedcitizen.pipeline.fetch.nowIso
 import com.informedcitizen.pipeline.http.CongressClient
@@ -64,6 +65,7 @@ object BackfillBillsCommand {
             val congressClient = CongressClient(httpClient, apiKey)
             val errors = ErrorCollector()
             val manifestStore = FileBillsManifestStore.system(outputDir.toPath())
+            val votesStore = FileVotesStore.system(outputDir.toPath())
 
             val result = runBlocking {
                 backfillBills(
@@ -72,6 +74,7 @@ object BackfillBillsCommand {
                     nowIso = nowIso(now),
                     manifestStore = manifestStore,
                     errors = errors,
+                    votesStore = votesStore,
                 )
             }
 

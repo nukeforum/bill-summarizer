@@ -1,9 +1,14 @@
 package com.informedcitizen.pipeline.fetch
 
+import com.informedcitizen.pipeline.model.Action
+import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.pipeline.model.Chamber
 import com.informedcitizen.pipeline.model.MemberVote
+import com.informedcitizen.pipeline.model.Outcome
 import com.informedcitizen.pipeline.model.RollCallVote
+import com.informedcitizen.pipeline.model.Sponsor
 import com.informedcitizen.pipeline.model.VotePosition
+import com.informedcitizen.pipeline.model.VoteRef
 import com.informedcitizen.pipeline.model.VoteTotals
 import kotlin.test.Test
 import kotlin.test.assertEquals
@@ -272,5 +277,61 @@ class VoteParsersTest {
         assertEquals(119, index.congress)
         assertEquals(2, index.voteCount)
         assertEquals(listOf("2025-11-10", "2025-01-03"), index.votes.map { it.date })
+    }
+
+    // ---------------------------------------------------- bill linkage
+
+    private fun bill(id: String, votes: List<VoteRef> = emptyList()): Bill = Bill(
+        id = id,
+        congress = 119,
+        type = "hr",
+        number = "1",
+        title = "A bill",
+        sponsor = Sponsor("X", "D", "CA"),
+        introducedDate = "2025-01-01",
+        latestAction = Action("2025-11-10", "Passed"),
+        outcome = Outcome.PASSED_HOUSE,
+        congressGovUrl = "https://example.test",
+        votes = votes,
+    )
+
+    @Test
+    fun attachVoteRefsGroupsByBillNewestFirst() {
+        val senate = buildVoteRef(vote618()) // hr5371-119, 2025-11-10
+        val house = senate.copy(
+            id = "house-119-1-2", chamber = Chamber.HOUSE, rollNumber = 2, date = "2025-01-03",
+        )
+        val quorum = senate.copy(
+            id = "house-119-1-1", chamber = Chamber.HOUSE, rollNumber = 1, billId = null,
+        )
+        val out = attachVoteRefs(
+            listOf(bill("hr5371-119"), bill("s42-119")),
+            listOf(house, quorum, senate),
+        )
+        assertEquals(listOf("senate-119-1-618", "house-119-1-2"), out[0].votes.map { it.id })
+        // Bills with no roll calls still carry the (empty) field — the
+        // publisher's encodeDefaults always emits it.
+        assertEquals(emptyList(), out[1].votes)
+    }
+
+    @Test
+    fun attachVoteRefsRecomputesStaleRefs() {
+        val stale = buildVoteRef(vote618()).copy(id = "stale-ref")
+        val out = attachVoteRefs(
+            listOf(bill("hr5371-119", votes = listOf(stale))),
+            listOf(buildVoteRef(vote618())),
+        )
+        assertEquals(listOf("senate-119-1-618"), out.single().votes.map { it.id })
+    }
+
+    @Test
+    fun stripVoteRefsClearsOnlyTheDerivedField() {
+        val out = stripVoteRefs(
+            listOf(bill("hr5371-119", votes = listOf(buildVoteRef(vote618()))), bill("s42-119")),
+        )
+        assertTrue(out[0].votes.isEmpty())
+        assertEquals("A bill", out[0].title)
+        assertEquals("hr5371-119", out[0].id)
+        assertTrue(out[1].votes.isEmpty())
     }
 }

@@ -4,6 +4,7 @@ import com.informedcitizen.pipeline.ErrorCollector
 import com.informedcitizen.pipeline.congressForYear
 import com.informedcitizen.pipeline.fetch.FileBillsManifestStore
 import com.informedcitizen.pipeline.fetch.FileCongressesIndexStore
+import com.informedcitizen.pipeline.fetch.FileVotesStore
 import com.informedcitizen.pipeline.fetch.RECENT_DAYS
 import com.informedcitizen.pipeline.fetch.fetchBills
 import com.informedcitizen.pipeline.fetch.nowIso
@@ -56,6 +57,7 @@ object FetchBillsCommand {
             val congressClient = CongressClient(httpClient, apiKey)
             val errors = ErrorCollector()
             val store = FileBillsManifestStore.system(outputDir.toPath())
+            val votesStore = FileVotesStore.system(outputDir.toPath())
 
             val result = runBlocking {
                 fetchBills(
@@ -65,6 +67,7 @@ object FetchBillsCommand {
                     nowIso = nowIso(now),
                     manifestStore = store,
                     errors = errors,
+                    votesStore = votesStore,
                 )
             }
 

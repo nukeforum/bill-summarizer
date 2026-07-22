@@ -5,6 +5,7 @@ import com.informedcitizen.pipeline.http.SenateVotesApiException
 import com.informedcitizen.pipeline.http.SenateVotesClient
 import com.informedcitizen.pipeline.model.Chamber
 import com.informedcitizen.pipeline.model.RollCallVote
+import com.informedcitizen.pipeline.model.VoteRef
 import com.informedcitizen.pipeline.model.VotesIndex
 import kotlinx.coroutines.CancellationException
 
@@ -74,6 +75,8 @@ data class FetchVotesResult(
     /** House candidate-ballot votes (Speaker elections) skipped. */
     val unsupported: Int,
     val index: VotesIndex,
+    /** True iff the bills manifest's vote refs changed and it was rewritten. */
+    val billManifestRefreshed: Boolean,
 )
 
 /**
@@ -259,6 +262,29 @@ private suspend fun fetchNewHouseVotes(
 }
 
 /**
+ * Re-attach vote refs to the bills manifest after new votes land.
+ * Mirrors Python `fetch_votes.refresh_bill_vote_refs`.
+ *
+ * Bills leave fetch-bills' refresh window ~60 days after their last
+ * action, so this pass — not the bills workflow — is what links votes
+ * that arrive later (or between bill runs) to their bills. Returns true
+ * when the manifest changed and was rewritten; no-ops when there is no
+ * manifest to enrich (votes can backfill before bills on a fresh tree).
+ */
+fun refreshBillVoteRefs(
+    manifestStore: FileBillsManifestStore,
+    congress: Int,
+    refs: List<VoteRef>,
+    nowIso: String,
+): Boolean {
+    val bills = manifestStore.load(congress)?.bills ?: return false
+    val enriched = attachVoteRefs(bills, refs)
+    if (enriched == bills) return false
+    manifestStore.save(congress, enriched, nowIso)
+    return true
+}
+
+/**
  * Full fetch-votes orchestrator. Mirrors Python `fetch_votes.main`:
  * fetch the Senate session menus and the lis→bioguide map (both fatal
  * on failure), fetch/parse/save every menu vote not already on disk (a
@@ -267,7 +293,8 @@ private suspend fun fetchNewHouseVotes(
  * disagrees with the menu is rejected rather than published under the
  * wrong id), probe clerk.house.gov for new House rolls with the
  * remaining [maxNew] budget, then rebuild the index from every vote
- * file on disk.
+ * file on disk and — when a [manifestStore] is supplied — refresh the
+ * bills manifest's derived vote refs ([refreshBillVoteRefs]).
  *
  * [maxNew] caps new fetches per run, shared across both chambers
  * (Senate first, remainder to the House); a capped run is harmless —
@@ -279,6 +306,7 @@ suspend fun fetchVotes(
     congress: Int,
     nowIso: String,
     errors: ErrorCollector,
+    manifestStore: FileBillsManifestStore? = null,
     maxNew: Int = FETCH_VOTES_MAX_NEW_DEFAULT,
     progress: FetchVotesProgress = FetchVotesProgress(),
     currentYamlUrl: String = LEGISLATORS_CURRENT_YAML_URL,
@@ -340,6 +368,8 @@ suspend fun fetchVotes(
     val refs = store.loadVotes(congress).map(::buildVoteRef)
     val index = buildVotesIndex(congress, refs, nowIso)
     store.saveIndex(index)
+    val billManifestRefreshed = manifestStore != null &&
+        refreshBillVoteRefs(manifestStore, congress, index.votes, nowIso)
     return FetchVotesResult(
         congress = congress,
         sessions = menus.map { it.session },
@@ -350,5 +380,6 @@ suspend fun fetchVotes(
         skipped = senateSkipped + house.skipped,
         unsupported = house.unsupported,
         index = index,
+        billManifestRefreshed = billManifestRefreshed,
     )
 }

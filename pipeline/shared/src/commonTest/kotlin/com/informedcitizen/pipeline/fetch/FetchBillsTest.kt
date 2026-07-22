@@ -4,7 +4,11 @@ import com.informedcitizen.pipeline.ErrorCollector
 import com.informedcitizen.pipeline.http.CongressClient
 import com.informedcitizen.pipeline.http.PipelineHttpConfig
 import com.informedcitizen.pipeline.http.configurePipelineForTest
+import com.informedcitizen.pipeline.model.Chamber
 import com.informedcitizen.pipeline.model.Outcome
+import com.informedcitizen.pipeline.model.VoteRef
+import com.informedcitizen.pipeline.model.VoteTotals
+import com.informedcitizen.pipeline.model.VotesIndex
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.mock.MockEngine
 import io.ktor.client.engine.mock.respond
@@ -130,5 +134,62 @@ class FetchBillsTest {
         assertEquals(1, result.mergeStats.added)
         val ids = result.finalManifest.bills.map { it.id }.toSet()
         assertEquals(setOf("hr1-119", "hr999-119"), ids)
+    }
+
+    @Test fun attaches_vote_refs_from_votes_index_without_merge_churn() = runTest {
+        // Mirrors Python `test_main_attaches_vote_refs_from_votes_index`:
+        // bills gain the VoteRef rows whose bill_id matches, and the
+        // derived votes field stays out of the merge comparison across runs.
+        val fs = FakeFileSystem()
+        val store = FileBillsManifestStore(fs, "/out".toPath())
+        val votesStore = FileVotesStore(fs, "/out".toPath())
+        val ref = VoteRef(
+            id = "house-119-1-17",
+            chamber = Chamber.HOUSE,
+            session = 1,
+            rollNumber = 17,
+            date = "2026-04-01",
+            question = "On Passage",
+            result = "Passed",
+            billId = "hr1-119",
+            totals = VoteTotals(yea = 220, nay = 211, present = 0, notVoting = 4),
+            path = "votes/congress119/house-1-17.json",
+        )
+        votesStore.saveIndex(
+            VotesIndex(
+                generatedAt = "2026-07-01T00:00:00Z",
+                congress = 119,
+                voteCount = 1,
+                votes = listOf(ref),
+            ),
+        )
+        val cutoff = Instant.parse("2026-03-15T00:00:00Z")
+
+        val first = fetchBills(
+            client = CongressClient(mockApiClient(), apiKey = "k"),
+            congress = 119,
+            cutoff = cutoff,
+            nowIso = "2026-05-15T00:00:00Z",
+            manifestStore = store,
+            errors = ErrorCollector(),
+            votesStore = votesStore,
+        )
+        val enriched = first.finalManifest.bills.single { it.id == "hr1-119" }
+        assertEquals(listOf(ref), enriched.votes)
+
+        // Second run rebuilds the identical record: the already-attached
+        // votes must not make the merge count it as updated.
+        val second = fetchBills(
+            client = CongressClient(mockApiClient(), apiKey = "k"),
+            congress = 119,
+            cutoff = cutoff,
+            nowIso = "2026-05-16T00:00:00Z",
+            manifestStore = store,
+            errors = ErrorCollector(),
+            votesStore = votesStore,
+        )
+        assertEquals(0, second.mergeStats.updated)
+        assertEquals(1, second.mergeStats.unchanged)
+        assertEquals(listOf(ref), second.finalManifest.bills.single { it.id == "hr1-119" }.votes)
     }
 }

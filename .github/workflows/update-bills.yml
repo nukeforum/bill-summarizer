@@ -63,10 +63,16 @@ jobs:
       # identical output?" — not "do they diverge because they started
       # from different bases?" The canonical files on disk reflect the
       # last successful run's output (committed by `safe-push`).
+      # The votes index is staged too: both fetchers attach the derived
+      # per-bill `votes` refs from their own output dir's
+      # congress*_votes.json (issue #19), so the shadow needs the same
+      # index the canonical run reads or every bill with roll calls
+      # would diff on its votes list.
       - name: Stage Kotlin shadow input from canonical
         run: |
           mkdir -p /tmp/kotlin-bills-shadow
           cp docs/data/congress*_bills.json /tmp/kotlin-bills-shadow/ 2>/dev/null || true
+          cp docs/data/congress*_votes.json /tmp/kotlin-bills-shadow/ 2>/dev/null || true
           ls -la /tmp/kotlin-bills-shadow/ || true
 
       # --- Python: canonical fetch ---
@@ -107,9 +113,9 @@ jobs:
       # The parallel-run period is for observation; we'll switch
       # canonical ownership once diffs are clean for ~a week.
       #
-      # Known window (issue #19): Python attaches the derived per-bill
-      # `votes` refs from the votes index; until the Kotlin driver ports
-      # the same attach step, bills with roll calls show ⚠️ diffs here.
+      # Both drivers attach the derived per-bill `votes` refs from the
+      # votes index (issue #19; Kotlin since the FetchBills votesStore
+      # port), so bills with roll calls are expected to compare clean.
 
       - name: Compare canonical vs Kotlin shadow output
         if: always()

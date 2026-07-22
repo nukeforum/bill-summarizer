@@ -35,7 +35,9 @@ data class FetchBillsResult(
  *  4. Dedupe by id (rare; same bill can appear twice across pages
  *     when its updateDate shifts mid-walk).
  *  5. Sort by latest_action.date desc.
- *  6. Merge into the existing manifest ([mergeBillRecords]).
+ *  6. Merge into the existing manifest ([mergeBillRecords]), with the
+ *     derived `votes` field stripped from existing records first and
+ *     re-attached from [votesStore]'s index after ([attachVoteRefs]).
  *  7. Persist via [manifestStore].
  *
  * Note: this slice does NOT rewrite `congresses.json` — the CLI
@@ -51,6 +53,7 @@ suspend fun fetchBills(
     nowIso: String,
     manifestStore: FileBillsManifestStore,
     errors: ErrorCollector,
+    votesStore: FileVotesStore? = null,
     maxListPages: Int = LIST_PAGES_MAX,
     maxWorkers: Int = ENRICH_WORKERS,
 ): FetchBillsResult {
@@ -102,10 +105,15 @@ suspend fun fetchBills(
         compareByDescending<Bill> { it.latestAction.date }.thenBy { it.id }
     )
 
-    // Merge into the existing manifest and persist.
-    val existing = manifestStore.load(congress)?.bills.orEmpty()
+    // Merge into the existing manifest and persist. `votes` is derived
+    // data: strip it before merging so equality compares bill data only
+    // (fresh records never carry it — Congress.gov isn't the vote
+    // source), then re-attach from the current votes index on the way
+    // out. Mirrors Python `fetch_bills.main`'s strip/attach pair.
+    val existing = stripVoteRefs(manifestStore.load(congress)?.bills.orEmpty())
     val (merged, mergeStats) = mergeBillRecords(existing, sorted)
-    val finalManifest = manifestStore.save(congress, merged, nowIso)
+    val enriched = attachVoteRefs(merged, votesStore?.loadVoteRefs(congress).orEmpty())
+    val finalManifest = manifestStore.save(congress, enriched, nowIso)
 
     return FetchBillsResult(
         congress = congress,

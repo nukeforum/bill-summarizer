@@ -5,8 +5,12 @@ import com.informedcitizen.pipeline.http.PipelineHttpConfig
 import com.informedcitizen.pipeline.http.SenateVotesApiException
 import com.informedcitizen.pipeline.http.SenateVotesClient
 import com.informedcitizen.pipeline.http.configurePipelineForTest
+import com.informedcitizen.pipeline.model.Action
+import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.pipeline.model.Chamber
+import com.informedcitizen.pipeline.model.Outcome
 import com.informedcitizen.pipeline.model.RollCallVote
+import com.informedcitizen.pipeline.model.Sponsor
 import com.informedcitizen.pipeline.model.VoteTotals
 import com.informedcitizen.pipeline.model.VotesIndex
 import io.ktor.client.HttpClient
@@ -450,4 +454,73 @@ class FetchVotesTest {
             buildLisToBioguide(client),
         )
     }
+
+    @Test fun attaches_vote_refs_to_bills_manifest() = runTest {
+        // Mirrors Python `test_main_attaches_vote_refs_to_bills_manifest`.
+        val env = VotesEnv()
+        val manifestStore = FileBillsManifestStore(env.fileSystem, "/out".toPath())
+        manifestStore.save(
+            congress = 119,
+            bills = listOf(seedBill("hr5371-119"), seedBill("s42-119")),
+            nowIso = "2026-01-01T00:00:00Z",
+        )
+        val responses = baseResponses(menuXml(119, 1, listOf(618)))
+        responses[DETAIL_618_URL] = SENATE_VOTE_618_XML
+
+        val result = fetchVotes(
+            mockVotesClient(responses), env.store, 119, NOW_ISO, env.errors,
+            manifestStore = manifestStore,
+        )
+        assertTrue(result.billManifestRefreshed)
+
+        val manifest = manifestStore.load(119)!!
+        val bills = manifest.bills.associateBy { it.id }
+        // The linked bill carries the index refs verbatim; the other gets [].
+        assertEquals(env.readIndex().votes, bills.getValue("hr5371-119").votes)
+        assertTrue(bills.getValue("s42-119").votes.isEmpty())
+        assertEquals(NOW_ISO, manifest.generatedAt)
+    }
+
+    @Test fun bills_manifest_untouched_when_vote_refs_unchanged() = runTest {
+        // Mirrors Python `test_bills_manifest_untouched_when_vote_refs_unchanged`:
+        // no new votes on the second run — the manifest must not churn (its
+        // generated_at would otherwise bump on every nightly votes run).
+        val env = VotesEnv()
+        val manifestStore = FileBillsManifestStore(env.fileSystem, "/out".toPath())
+        manifestStore.save(
+            congress = 119,
+            bills = listOf(seedBill("hr5371-119")),
+            nowIso = "2026-01-01T00:00:00Z",
+        )
+        val responses = baseResponses(menuXml(119, 1, listOf(618)))
+        responses[DETAIL_618_URL] = SENATE_VOTE_618_XML
+
+        val first = fetchVotes(
+            mockVotesClient(responses), env.store, 119, NOW_ISO, env.errors,
+            manifestStore = manifestStore,
+        )
+        assertTrue(first.billManifestRefreshed)
+        val enriched = env.readText("/out/congress119_bills.json")
+
+        val second = fetchVotes(
+            mockVotesClient(responses), env.store, 119, "2026-07-23T00:00:00Z", env.errors,
+            manifestStore = manifestStore,
+        )
+        assertFalse(second.billManifestRefreshed)
+        assertEquals(enriched, env.readText("/out/congress119_bills.json"))
+    }
 }
+
+/** Minimal bill record for the manifest-refresh tests. */
+private fun seedBill(id: String): Bill = Bill(
+    id = id,
+    congress = 119,
+    type = "hr",
+    number = "1",
+    title = "A bill",
+    sponsor = Sponsor("X", "D", "CA"),
+    introducedDate = "2025-01-01",
+    latestAction = Action("2025-11-10", "Passed"),
+    outcome = Outcome.PASSED_HOUSE,
+    congressGovUrl = "https://example.test",
+)
