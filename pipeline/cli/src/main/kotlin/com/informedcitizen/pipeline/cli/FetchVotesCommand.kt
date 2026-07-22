@@ -4,8 +4,10 @@ import com.informedcitizen.pipeline.ErrorCollector
 import com.informedcitizen.pipeline.congressForYear
 import com.informedcitizen.pipeline.fetch.FETCH_VOTES_MAX_NEW_DEFAULT
 import com.informedcitizen.pipeline.fetch.FetchVotesProgress
+import com.informedcitizen.pipeline.fetch.FileBillsManifestStore
 import com.informedcitizen.pipeline.fetch.FileVotesStore
 import com.informedcitizen.pipeline.fetch.fetchVotes
+import com.informedcitizen.pipeline.fetch.manifestFileName
 import com.informedcitizen.pipeline.fetch.nowIso
 import com.informedcitizen.pipeline.http.SenateVotesClient
 import com.informedcitizen.pipeline.http.createPipelineHttpClient
@@ -40,6 +42,7 @@ object FetchVotesCommand {
         val now = Clock.System.now()
         val congress = congressFlag ?: congressForYear(now.toLocalDateTime(TimeZone.UTC).year)
         val store = FileVotesStore.system(outputDir.toPath())
+        val manifestStore = FileBillsManifestStore.system(outputDir.toPath())
 
         val httpClient = createPipelineHttpClient()
         try {
@@ -52,6 +55,7 @@ object FetchVotesCommand {
                     congress = congress,
                     nowIso = nowIso(now),
                     errors = errors,
+                    manifestStore = manifestStore,
                     maxNew = maxNew,
                     progress = FetchVotesProgress(
                         onMenus = { totalListed, sessions ->
@@ -83,6 +87,9 @@ object FetchVotesCommand {
                         },
                     ),
                 )
+            }
+            if (result.billManifestRefreshed) {
+                println("bill manifest: ${manifestFileName(congress)} vote refs refreshed")
             }
             val summary = errors.renderSummary(label = "fetch-votes")
             if (summary.isNotEmpty()) System.err.println(summary)

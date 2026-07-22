@@ -174,9 +174,65 @@ def test_main_preserves_manifest_when_api_returns_no_new_bills(tmp_path, monkeyp
 
     on_disk = json.loads(existing_path.read_text(encoding="utf-8"))
     assert [b["id"] for b in on_disk["bills"]] == ["hr42-119"]
-    assert on_disk["bills"][0] == seeded_bill, "seeded bill must be preserved verbatim"
+    # Preserved verbatim apart from the derived ``votes`` key, which every
+    # save recomputes (empty here — no votes index on disk).
+    assert on_disk["bills"][0] == {**seeded_bill, "votes": []}
 
     assert not (tmp_path / "bills.json").exists()
 
     index = json.loads((tmp_path / "congresses.json").read_text(encoding="utf-8"))
     assert any(c["congress"] == 119 and c["bill_count"] == 1 for c in index["congresses"])
+
+
+def test_main_attaches_vote_refs_from_votes_index(tmp_path, monkeypatch, capsys):
+    """Bills gain the VoteRef rows whose bill_id matches, and the derived
+    votes key stays out of the merge comparison across runs."""
+    monkeypatch.setenv("CONGRESS_API_KEY", "stub")
+    monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
+    monkeypatch.setattr(_common, "STATE_DIR", tmp_path / "state")
+    monkeypatch.setattr(_common, "current_congress", lambda *a, **kw: 119)
+    monkeypatch.setattr(fetch_bills, "current_congress", lambda *a, **kw: 119)
+
+    ref = {
+        "id": "house-119-1-17",
+        "chamber": "house",
+        "session": 1,
+        "roll_number": 17,
+        "date": _days_ago(fetch_bills.RECENT_DAYS // 2),
+        "question": "On Passage",
+        "result": "Passed",
+        "bill_id": "hr1-119",
+        "totals": {"yea": 220, "nay": 211, "present": 0, "not_voting": 4},
+        "path": "votes/congress119/house-1-17.json",
+    }
+    (tmp_path / "congress119_votes.json").write_text(json.dumps({
+        "generated_at": "2026-07-01T00:00:00Z",
+        "congress": 119,
+        "vote_count": 1,
+        "votes": [ref],
+    }), encoding="utf-8")
+
+    list_resp = {
+        "bills": [
+            _summary(
+                "hr", 1, "Passed House by recorded vote: 220-211",
+                _days_ago(fetch_bills.RECENT_DAYS // 2),
+            ),
+        ],
+    }
+    detail = _detail_map("hr", "1", 119)
+
+    with patch("fetch_bills.CongressClient", return_value=_FakeClient([list_resp], detail)):
+        assert fetch_bills.main() == 0
+
+    on_disk = json.loads((tmp_path / "congress119_bills.json").read_text(encoding="utf-8"))
+    (bill,) = on_disk["bills"]
+    assert bill["votes"] == [ref]
+    assert list(bill.keys())[-1] == "votes"
+    capsys.readouterr()
+
+    # Second run rebuilds the identical record: the already-attached votes
+    # must not make the merge count it as updated.
+    with patch("fetch_bills.CongressClient", return_value=_FakeClient([list_resp], detail)):
+        assert fetch_bills.main() == 0
+    assert "~0 updated, =1 unchanged" in capsys.readouterr().out

@@ -37,6 +37,23 @@ def test_save_then_load_roundtrip(tmp_path, monkeypatch):
     assert raw.endswith("\n")  # trailing newline
 
 
+def test_save_manifest_stamps_votes_coverage_from_index_presence(tmp_path, monkeypatch):
+    monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
+    monkeypatch.setattr(_common, "current_congress", lambda *a, **kw: 119)
+
+    _common.save_manifest(119, {"congress": 119, "bills": []})
+    raw = (tmp_path / "congress119_bills.json").read_text(encoding="utf-8")
+    on_disk = json.loads(raw)
+    assert on_disk["votes_coverage"] is False
+    # Key order matches the Kotlin BillsManifest declaration for byte parity.
+    assert list(on_disk.keys()) == ["generated_at", "congress", "votes_coverage", "bills"]
+
+    (tmp_path / "congress119_votes.json").write_text("{}", encoding="utf-8")
+    _common.save_manifest(119, {"congress": 119, "bills": []})
+    on_disk = json.loads((tmp_path / "congress119_bills.json").read_text(encoding="utf-8"))
+    assert on_disk["votes_coverage"] is True
+
+
 def test_save_manifest_does_not_write_bills_json_alias(tmp_path, monkeypatch):
     """The byte-identical ``bills.json`` alias was removed once the shipped
     app migrated to the per-Congress URL via ``congresses.json``."""

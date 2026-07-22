@@ -1,9 +1,14 @@
 package com.informedcitizen.pipeline.fetch
 
+import com.informedcitizen.pipeline.model.Action
+import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.pipeline.model.Chamber
 import com.informedcitizen.pipeline.model.MemberVote
+import com.informedcitizen.pipeline.model.Outcome
 import com.informedcitizen.pipeline.model.RollCallVote
+import com.informedcitizen.pipeline.model.Sponsor
 import com.informedcitizen.pipeline.model.VotePosition
+import com.informedcitizen.pipeline.model.VoteRef
 import com.informedcitizen.pipeline.model.VoteTotals
 import kotlin.test.Test
 import kotlin.test.assertEquals
@@ -253,6 +258,71 @@ class VoteParsersTest {
         assertEquals(mapOf("S428" to "A000382"), parseLisToBioguideYaml(text))
     }
 
+    // ----------------------------------------------------- party split
+
+    @Test
+    fun buildPartySplitOrdersPositionsAndSortsParties() {
+        val positions = listOf(
+            MemberVote("A1", VotePosition.NAY, party = "R"),
+            MemberVote("A2", VotePosition.YEA, party = "R"),
+            MemberVote("A3", VotePosition.YEA, party = "D"),
+            MemberVote("A4", VotePosition.YEA, party = "R"),
+            MemberVote("A5", VotePosition.NOT_VOTING, party = "I"),
+            MemberVote("A6", VotePosition.YEA, party = null), // no party: left out
+        )
+        val split = buildPartySplit(positions)
+        // Position keys in wire order (yea before nay), party keys sorted,
+        // "present" absent because no member holds it.
+        assertEquals(listOf("yea", "nay", "not_voting"), split.keys.toList())
+        assertEquals(mapOf("D" to 1, "R" to 2), split["yea"])
+        assertEquals(listOf("D", "R"), split.getValue("yea").keys.toList())
+        assertEquals(mapOf("R" to 1), split["nay"])
+        assertEquals(mapOf("I" to 1), split["not_voting"])
+    }
+
+    @Test
+    fun senateVoteRefPartySplitMatchesOfficialBreakdown() {
+        val ref = buildVoteRef(vote618())
+        assertEquals(
+            mapOf(
+                "yea" to mapOf("D" to 7, "I" to 1, "R" to 52),
+                "nay" to mapOf("D" to 38, "I" to 1, "R" to 1),
+            ),
+            ref.partySplit,
+        )
+    }
+
+    @Test
+    fun houseVoteRefPartySplitSumsToTotals() {
+        val ref = buildVoteRef(houseVote17())
+        assertEquals(
+            mapOf(
+                "yea" to mapOf("D" to 61, "R" to 213),
+                "nay" to mapOf("D" to 145),
+                "not_voting" to mapOf("D" to 9, "R" to 6),
+            ),
+            ref.partySplit,
+        )
+        val totals = mapOf(
+            "yea" to ref.totals.yea,
+            "nay" to ref.totals.nay,
+            "present" to ref.totals.present,
+            "not_voting" to ref.totals.notVoting,
+        )
+        for ((position, byParty) in ref.partySplit) {
+            assertEquals(totals[position], byParty.values.sum())
+        }
+    }
+
+    @Test
+    fun partySplitSitsBetweenTotalsAndPathOnTheWire() {
+        val text = ManifestJson.encodeToString(VoteRef.serializer(), buildVoteRef(vote618()))
+        val totals = text.indexOf("\"totals\"")
+        val split = text.indexOf("\"party_split\"")
+        val path = text.indexOf("\"path\"")
+        assertTrue(totals in 0 until split && split < path)
+    }
+
     // ----------------------------------------------------------- index
 
     @Test
@@ -272,5 +342,61 @@ class VoteParsersTest {
         assertEquals(119, index.congress)
         assertEquals(2, index.voteCount)
         assertEquals(listOf("2025-11-10", "2025-01-03"), index.votes.map { it.date })
+    }
+
+    // ---------------------------------------------------- bill linkage
+
+    private fun bill(id: String, votes: List<VoteRef> = emptyList()): Bill = Bill(
+        id = id,
+        congress = 119,
+        type = "hr",
+        number = "1",
+        title = "A bill",
+        sponsor = Sponsor("X", "D", "CA"),
+        introducedDate = "2025-01-01",
+        latestAction = Action("2025-11-10", "Passed"),
+        outcome = Outcome.PASSED_HOUSE,
+        congressGovUrl = "https://example.test",
+        votes = votes,
+    )
+
+    @Test
+    fun attachVoteRefsGroupsByBillNewestFirst() {
+        val senate = buildVoteRef(vote618()) // hr5371-119, 2025-11-10
+        val house = senate.copy(
+            id = "house-119-1-2", chamber = Chamber.HOUSE, rollNumber = 2, date = "2025-01-03",
+        )
+        val quorum = senate.copy(
+            id = "house-119-1-1", chamber = Chamber.HOUSE, rollNumber = 1, billId = null,
+        )
+        val out = attachVoteRefs(
+            listOf(bill("hr5371-119"), bill("s42-119")),
+            listOf(house, quorum, senate),
+        )
+        assertEquals(listOf("senate-119-1-618", "house-119-1-2"), out[0].votes.map { it.id })
+        // Bills with no roll calls still carry the (empty) field — the
+        // publisher's encodeDefaults always emits it.
+        assertEquals(emptyList(), out[1].votes)
+    }
+
+    @Test
+    fun attachVoteRefsRecomputesStaleRefs() {
+        val stale = buildVoteRef(vote618()).copy(id = "stale-ref")
+        val out = attachVoteRefs(
+            listOf(bill("hr5371-119", votes = listOf(stale))),
+            listOf(buildVoteRef(vote618())),
+        )
+        assertEquals(listOf("senate-119-1-618"), out.single().votes.map { it.id })
+    }
+
+    @Test
+    fun stripVoteRefsClearsOnlyTheDerivedField() {
+        val out = stripVoteRefs(
+            listOf(bill("hr5371-119", votes = listOf(buildVoteRef(vote618()))), bill("s42-119")),
+        )
+        assertTrue(out[0].votes.isEmpty())
+        assertEquals("A bill", out[0].title)
+        assertEquals("hr5371-119", out[0].id)
+        assertTrue(out[1].votes.isEmpty())
     }
 }

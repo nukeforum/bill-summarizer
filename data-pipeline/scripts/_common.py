@@ -616,10 +616,43 @@ def save_manifest(congress: int, manifest: dict[str, Any]) -> dict[str, Any]:
     final: dict[str, Any] = {
         "generated_at": now_iso(),
         "congress": congress,
+        # Rollout gate for the app's vote surfaces: with lenient parsing an
+        # empty per-bill votes list is ambiguous ("no roll call" vs "votes
+        # not published yet"), so the manifest says whether votes coverage
+        # exists for this Congress — true once the votes index is on disk.
+        "votes_coverage": votes_coverage(congress),
         "bills": manifest.get("bills", []),
     }
     _write_json(manifest_path_for(congress), final)
     return final
+
+
+# ---------- votes index ----------------------------------------------------
+
+
+def votes_index_path(congress: int) -> Path:
+    return OUTPUT_DIR / f"congress{congress}_votes.json"
+
+
+def votes_coverage(congress: int) -> bool:
+    """Whether the votes pipeline has published an index for ``congress``."""
+    return votes_index_path(congress).exists()
+
+
+def load_vote_refs(congress: int) -> list[dict[str, Any]]:
+    """Vote refs from the on-disk votes index; ``[]`` when it doesn't exist.
+
+    Missing is normal (older Congresses, or a checkout from before the votes
+    pipeline ran) — bill records then get empty ``votes`` lists until the
+    index appears.
+    """
+    path = votes_index_path(congress)
+    if not path.exists():
+        return []
+    with path.open("r", encoding="utf-8") as f:
+        payload = json.load(f)
+    votes = payload.get("votes")
+    return votes if isinstance(votes, list) else []
 
 
 # ---------- members ------------------------------------------------------

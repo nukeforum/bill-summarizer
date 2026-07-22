@@ -25,11 +25,13 @@ from _common import (
     evaluate_bill,
     load_manifest,
     load_state,
+    load_vote_refs,
     merge_records,
     rebuild_index,
     save_manifest,
     save_state,
 )
+from _votes import attach_vote_refs, strip_vote_refs
 
 # Effectively no date floor — backfill keeps every passage-action bill we
 # find, regardless of how long ago the action was.
@@ -123,7 +125,13 @@ def main() -> int:
     errors.print_summary(label=f"backfill_bills congress={active}")
 
     existing = load_manifest(active)
-    merged, stats = merge_records(existing.get("bills", []), fresh_records)
+    # Same votes handling as fetch_bills: strip the derived key before the
+    # merge comparison, re-attach from the on-disk index (empty for
+    # Congresses the votes pipeline doesn't cover) before saving.
+    merged, stats = merge_records(
+        strip_vote_refs(existing.get("bills", [])), fresh_records
+    )
+    attach_vote_refs(merged, load_vote_refs(active))
     final = save_manifest(active, {"bills": merged})
 
     new_state = advance_state(

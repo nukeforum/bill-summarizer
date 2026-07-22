@@ -72,6 +72,7 @@ suspend fun backfillBills(
     nowIso: String,
     manifestStore: FileBillsManifestStore,
     errors: ErrorCollector,
+    votesStore: FileVotesStore? = null,
     pagesPerRun: Int = BACKFILL_PAGES_PER_RUN,
     maxWorkers: Int = ENRICH_WORKERS,
 ): BackfillBillsResult {
@@ -139,10 +140,13 @@ suspend fun backfillBills(
         deduped += rec
     }
 
-    // Merge into the existing manifest and persist.
-    val existing = manifestStore.load(active)?.bills.orEmpty()
+    // Merge into the existing manifest and persist. Same derived-votes
+    // strip/attach pair as `fetchBills` (mirrors Python
+    // `backfill_bills.main`): merge equality must see bill data only.
+    val existing = stripVoteRefs(manifestStore.load(active)?.bills.orEmpty())
     val (merged, mergeStats) = mergeBillRecords(existing, deduped)
-    val finalManifest = manifestStore.save(active, merged, nowIso)
+    val enriched = attachVoteRefs(merged, votesStore?.loadVoteRefs(active).orEmpty())
+    val finalManifest = manifestStore.save(active, enriched, nowIso)
 
     // Advance state. The empty-page guard inside `advanceBackfillState`
     // distinguishes "real exhaustion" (we saw evidence) from "transient

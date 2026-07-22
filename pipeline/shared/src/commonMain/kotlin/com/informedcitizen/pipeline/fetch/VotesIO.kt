@@ -2,6 +2,7 @@ package com.informedcitizen.pipeline.fetch
 
 import com.informedcitizen.pipeline.model.Chamber
 import com.informedcitizen.pipeline.model.RollCallVote
+import com.informedcitizen.pipeline.model.VoteRef
 import com.informedcitizen.pipeline.model.VotesIndex
 import okio.FileSystem
 import okio.Path
@@ -61,6 +62,20 @@ class FileVotesStore(
     }
 
     fun indexPathFor(congress: Int): Path = outputDir / votesIndexFileName(congress)
+
+    /**
+     * Vote refs from the on-disk index; empty when it doesn't exist.
+     * Missing is normal (older Congresses, or a checkout from before
+     * the votes pipeline ran) — bill records then get empty `votes`
+     * lists until the index appears. Mirrors Python
+     * `_common.load_vote_refs`.
+     */
+    fun loadVoteRefs(congress: Int): List<VoteRef> {
+        val path = indexPathFor(congress)
+        if (!fileSystem.exists(path)) return emptyList()
+        val text = fileSystem.source(path).buffer().use { it.readUtf8() }
+        return ManifestJson.decodeFromString(VotesIndex.serializer(), text).votes
+    }
 
     fun saveIndex(index: VotesIndex): Path {
         fileSystem.createDirectories(outputDir)

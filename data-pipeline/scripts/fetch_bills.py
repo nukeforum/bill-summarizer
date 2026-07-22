@@ -24,10 +24,12 @@ from _common import (
     current_congress,
     evaluate_bill,
     load_manifest,
+    load_vote_refs,
     merge_records,
     rebuild_index,
     save_manifest,
 )
+from _votes import attach_vote_refs, strip_vote_refs
 
 RECENT_DAYS = 60
 LIST_PAGES_MAX = 8
@@ -130,7 +132,13 @@ def main() -> int:
     errors.print_summary(label="fetch_bills")
 
     existing = load_manifest(congress)
-    merged, stats = merge_records(existing.get("bills", []), fresh_records)
+    # ``votes`` is derived data: strip it before merging so equality compares
+    # bill data only, then re-attach from the current votes index on the way
+    # out (fresh records never carry it — Congress.gov isn't the vote source).
+    merged, stats = merge_records(
+        strip_vote_refs(existing.get("bills", [])), fresh_records
+    )
+    attach_vote_refs(merged, load_vote_refs(congress))
     final = save_manifest(congress, {"bills": merged})
     rebuild_index()
 

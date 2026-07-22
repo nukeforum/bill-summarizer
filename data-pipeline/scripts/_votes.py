@@ -376,8 +376,34 @@ def parse_lis_to_bioguide_yaml(text: str) -> dict[str, str]:
     return out
 
 
+_POSITION_WIRE_ORDER = ("yea", "nay", "present", "not_voting")
+
+
+def build_party_split(positions: list[dict[str, Any]]) -> dict[str, dict[str, int]]:
+    """Per-position party counts, e.g. ``{"yea": {"D": 210, "R": 6}}``.
+
+    Position keys appear in wire order and only when at least one member
+    with a known party holds that position; party keys are sorted. Members
+    with no party recorded are left out, so party counts may sum below the
+    position total — consumers render the numbers as published rather than
+    reconciling them.
+    """
+    counts: dict[str, dict[str, int]] = {}
+    for member in positions:
+        party = member.get("party")
+        if not party:
+            continue
+        by_party = counts.setdefault(member["position"], {})
+        by_party[party] = by_party.get(party, 0) + 1
+    return {
+        position: {party: counts[position][party] for party in sorted(counts[position])}
+        for position in _POSITION_WIRE_ORDER
+        if position in counts
+    }
+
+
 def build_vote_ref(vote: dict[str, Any]) -> dict[str, Any]:
-    """A VotesIndex row: the vote minus positions, plus its file path."""
+    """A VotesIndex row: the vote minus positions, plus party split and file path."""
     return {
         "id": vote["id"],
         "chamber": vote["chamber"],
@@ -388,6 +414,7 @@ def build_vote_ref(vote: dict[str, Any]) -> dict[str, Any]:
         "result": vote["result"],
         "bill_id": vote["bill_id"],
         "totals": vote["totals"],
+        "party_split": build_party_split(vote["positions"]),
         "path": vote_file_relpath(
             vote["congress"], vote["chamber"], vote["session"], vote["roll_number"]
         ),
@@ -413,3 +440,46 @@ def build_votes_index(
         "vote_count": len(ordered),
         "votes": ordered,
     }
+
+
+def attach_vote_refs(
+    bills: list[dict[str, Any]], refs: list[dict[str, Any]]
+) -> list[dict[str, Any]]:
+    """Set the ``votes`` key on every bill record from the index refs.
+
+    ``votes`` is derived data, recomputed in full at every manifest write:
+    each bill gets the [VoteRef]-shaped rows whose ``bill_id`` matches its
+    ``id``, newest first with the same tiebreak as ``build_votes_index``.
+    The key is always set (empty list when no roll call touched the bill)
+    because the Kotlin publisher's ``encodeDefaults`` always emits it.
+    Mutates and returns ``bills``.
+    """
+    by_bill: dict[str, list[dict[str, Any]]] = {}
+    ordered = sorted(
+        refs,
+        key=lambda r: (r["date"], r["roll_number"], r["chamber"]),
+        reverse=True,
+    )
+    for ref in ordered:
+        bill_id = ref.get("bill_id")
+        if bill_id:
+            by_bill.setdefault(bill_id, []).append(ref)
+    for bill in bills:
+        # pop-then-set keeps ``votes`` as the last key even on records
+        # loaded from an already-enriched manifest.
+        bill.pop("votes", None)
+        bill["votes"] = by_bill.get(bill["id"], [])
+    return bills
+
+
+def strip_vote_refs(bills: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Drop the derived ``votes`` key so merge comparisons see only bill data.
+
+    Freshly built records carry no ``votes``; without stripping, every
+    refetched bill would compare unequal to its on-disk copy and inflate the
+    merge's ``updated`` count. Callers re-attach after merging. Mutates and
+    returns ``bills``.
+    """
+    for bill in bills:
+        bill.pop("votes", None)
+    return bills

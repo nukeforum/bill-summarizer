@@ -65,11 +65,17 @@ jobs:
       # would re-backfill the whole Congress and the comparison would
       # measure staleness, not parity. The canonical files reflect the
       # last successful run's output (committed by `safe-push`).
+      # The bills manifests are staged too: both drivers re-attach the
+      # derived per-bill `votes` refs to the manifest in their output
+      # dir when new roll calls land (issue #19). Staging happens before
+      # the Python run, so the shadow sees the same pre-run manifest
+      # state Python's refresh reads.
       - name: Stage Kotlin shadow input from canonical
         run: |
           mkdir -p /tmp/kotlin-votes-shadow
           cp -r docs/data/votes /tmp/kotlin-votes-shadow/ 2>/dev/null || true
           cp docs/data/congress*_votes.json /tmp/kotlin-votes-shadow/ 2>/dev/null || true
+          cp docs/data/congress*_bills.json /tmp/kotlin-votes-shadow/ 2>/dev/null || true
           ls -laR /tmp/kotlin-votes-shadow/ | head -20 || true
 
       # --- Python: canonical fetch (Senate LIS XML, House clerk EVS
@@ -165,6 +171,40 @@ jobs:
               rm -f "$py_norm" "$kt_norm"
             done
 
+            # --- bills-manifest refresh parity (issue #19): both
+            # drivers re-attach vote refs to the manifest in their
+            # output dir when new votes land. generated_at is stripped
+            # because Python stamps at write time while Kotlin stamps at
+            # run start; manifests for Congresses with no new votes are
+            # untouched by both and compare byte-identical anyway. ---
+            for canonical in "$CANONICAL_DIR"/congress*_bills.json; do
+              [ -f "$canonical" ] || continue
+              fname=$(basename "$canonical")
+              shadow="$SHADOW_DIR/$fname"
+              if [ ! -f "$shadow" ]; then
+                echo "- ❌ \`$fname\`: shadow manifest missing — staging step failed?"
+                continue
+              fi
+              py_norm=$(mktemp)
+              kt_norm=$(mktemp)
+              jq -S 'del(.generated_at)' "$canonical" > "$py_norm"
+              jq -S 'del(.generated_at)' "$shadow"    > "$kt_norm"
+              if diff -q "$py_norm" "$kt_norm" >/dev/null; then
+                echo "- ✅ \`$fname\`: identical vote-ref enrichment (ignoring generated_at)"
+              else
+                echo "- ⚠️  \`$fname\`: manifest vote refs differ"
+                echo ""
+                echo "<details><summary>diff (truncated to 200 lines, generated_at stripped)</summary>"
+                echo ""
+                echo '```diff'
+                diff -u "$py_norm" "$kt_norm" | head -200
+                echo '```'
+                echo "</details>"
+                echo ""
+              fi
+              rm -f "$py_norm" "$kt_norm"
+            done
+
             echo ""
             echo "_Validation runs alongside Python during the cut-over period. Python output remains canonical until parity is confirmed._"
           } | tee -a "$GITHUB_STEP_SUMMARY"
@@ -176,8 +216,12 @@ jobs:
       - name: Commit updated votes
         uses: ./.github/actions/safe-push
         with:
+          # congress*_bills.json: fetch_votes.py re-attaches the derived
+          # per-bill `votes` refs to the bills manifest whenever new roll
+          # calls land (issue #19).
           paths: |
             docs/data/votes
             docs/data/congress*_votes.json
+            docs/data/congress*_bills.json
             docs/pipeline.html
           message: "Update votes [bot]"
