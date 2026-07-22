@@ -105,8 +105,10 @@ jobs:
       # them as a panel). Per the pipeline-check-cli-readable rule.
       # The parallel-run period is for observation; we'll switch
       # canonical ownership once diffs are clean for ~a week. Both
-      # drivers cover both chambers (Senate LIS + House clerk EVS), so
-      # the whole votes/ tree is expected byte-identical.
+      # drivers cover both chambers (Senate LIS + House clerk EVS) and
+      # both rebuild the per-member votes/members/ shards, so the
+      # per-vote votes/ tree is expected byte-identical and the shards
+      # identical modulo generated_at (compared separately below).
 
       - name: Compare canonical vs Kotlin shadow output
         if: always()
@@ -121,12 +123,15 @@ jobs:
             echo "Comparing \`$CANONICAL_DIR\` (Python, canonical) vs \`$SHADOW_DIR\` (Kotlin)."
             echo ""
             # Per-vote files carry no timestamps, so the trees must be
-            # byte-identical.
+            # byte-identical. The per-member shards under votes/members/
+            # DO carry a generated_at (stamped minutes apart when both
+            # runs rewrite a shard), so they are excluded here and
+            # compared separately below with generated_at stripped.
             if [ ! -d "$SHADOW_DIR/votes" ]; then
               echo "- ❌ \`votes/\`: shadow tree missing — Kotlin did not produce output"
-            elif diff -r "$CANONICAL_DIR/votes" "$SHADOW_DIR/votes" > /tmp/votes-tree.diff 2>&1; then
-              count=$(find "$CANONICAL_DIR/votes" -name '*.json' | wc -l)
-              echo "- ✅ \`votes/\`: byte-identical per-vote trees ($count files)"
+            elif diff -r --exclude=members "$CANONICAL_DIR/votes" "$SHADOW_DIR/votes" > /tmp/votes-tree.diff 2>&1; then
+              count=$(find "$CANONICAL_DIR/votes" -path '*/members/*' -prune -o -name '*.json' -print | wc -l)
+              echo "- ✅ \`votes/\`: byte-identical per-vote trees ($count files; members/ shards compared below)"
             else
               echo "- ⚠️  \`votes/\`: per-vote trees differ"
               echo ""
@@ -137,6 +142,50 @@ jobs:
               echo '```'
               echo "</details>"
               echo ""
+            fi
+
+            # --- per-member shard parity (generated_at stripped: a
+            # shard rewritten by both runs stamps minutes apart; shards
+            # with unchanged rows keep their staged bytes on both sides).
+            # ~540 files, so verdicts are aggregated: one summary line
+            # plus details for the first few mismatches. ---
+            if [ -d "$CANONICAL_DIR/votes/members" ]; then
+              matched=0; differing=0; missing=0
+              for canonical in "$CANONICAL_DIR"/votes/members/*.json; do
+                [ -f "$canonical" ] || continue
+                fname=$(basename "$canonical")
+                shadow="$SHADOW_DIR/votes/members/$fname"
+                if [ ! -f "$shadow" ]; then
+                  missing=$((missing + 1))
+                  [ "$missing" -le 3 ] && echo "- ❌ \`votes/members/$fname\`: shadow shard missing"
+                  continue
+                fi
+                if diff -q <(jq -S 'del(.generated_at)' "$canonical") \
+                           <(jq -S 'del(.generated_at)' "$shadow") >/dev/null; then
+                  matched=$((matched + 1))
+                else
+                  differing=$((differing + 1))
+                  if [ "$differing" -le 3 ]; then
+                    echo "- ⚠️  \`votes/members/$fname\`: shard differs"
+                    echo ""
+                    echo "<details><summary>diff (truncated to 100 lines, generated_at stripped)</summary>"
+                    echo ""
+                    echo '```diff'
+                    diff -u <(jq -S 'del(.generated_at)' "$canonical") \
+                            <(jq -S 'del(.generated_at)' "$shadow") | head -100
+                    echo '```'
+                    echo "</details>"
+                    echo ""
+                  fi
+                fi
+              done
+              extras=$(find "$SHADOW_DIR/votes/members" -name '*.json' 2>/dev/null | wc -l)
+              extras=$((extras - matched - differing))
+              if [ "$differing" -eq 0 ] && [ "$missing" -eq 0 ] && [ "$extras" -eq 0 ]; then
+                echo "- ✅ \`votes/members/\`: identical shards ($matched files, ignoring generated_at)"
+              else
+                echo "- ⚠️  \`votes/members/\`: $matched identical, $differing differ, $missing missing, $extras shadow-only"
+              fi
             fi
 
             # --- per-Congress index parity (generated_at stripped:

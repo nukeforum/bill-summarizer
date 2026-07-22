@@ -8,9 +8,11 @@ import com.informedcitizen.pipeline.http.configurePipelineForTest
 import com.informedcitizen.pipeline.model.Action
 import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.pipeline.model.Chamber
+import com.informedcitizen.pipeline.model.MemberVotes
 import com.informedcitizen.pipeline.model.Outcome
 import com.informedcitizen.pipeline.model.RollCallVote
 import com.informedcitizen.pipeline.model.Sponsor
+import com.informedcitizen.pipeline.model.VotePosition
 import com.informedcitizen.pipeline.model.VoteTotals
 import com.informedcitizen.pipeline.model.VotesIndex
 import io.ktor.client.HttpClient
@@ -536,6 +538,98 @@ class FetchVotesTest {
         )
         assertFalse(second.billManifestRefreshed)
         assertEquals(enriched, env.readText("/out/congress119_bills.json"))
+    }
+
+    // ---------- per-member shards ---------------------------------------
+
+    private fun VotesEnv.readMemberShard(bioguideId: String): MemberVotes =
+        ManifestJson.decodeFromString(
+            MemberVotes.serializer(),
+            readText("/out/votes/members/$bioguideId.json"),
+        )
+
+    @Test fun writes_member_vote_shards() = runTest {
+        // Mirrors Python `test_main_writes_member_vote_shards`: the
+        // manifest supplies the short_title the shard rows carry.
+        val env = VotesEnv()
+        val manifestStore = FileBillsManifestStore(env.fileSystem, "/out".toPath())
+        manifestStore.save(
+            congress = 119,
+            bills = listOf(
+                seedBill("hr5371-119").copy(shortTitle = "Continuing Appropriations Act, 2026"),
+            ),
+            nowIso = "2026-01-01T00:00:00Z",
+        )
+        val responses = baseResponses(menuXml(119, 1, listOf(618)))
+        responses[DETAIL_618_URL] = SENATE_VOTE_618_XML
+
+        val result = fetchVotes(
+            mockVotesClient(responses), env.store, 119, NOW_ISO, env.errors,
+            manifestStore = manifestStore,
+        )
+        assertEquals(100, result.memberShardsWritten)
+        assertEquals(0, result.memberShardsUnchanged)
+
+        val shard = env.readMemberShard("A000382")
+        assertEquals("A000382", shard.bioguideId)
+        assertEquals(1, shard.voteCount)
+        val row = shard.votes.single()
+        assertEquals("senate-119-1-618", row.voteId)
+        assertEquals(VotePosition.NAY, row.position)
+        assertEquals("hr5371-119", row.billId)
+        assertEquals("Continuing Appropriations Act, 2026", row.shortTitle)
+        // One shard per voting senator.
+        assertEquals(100, env.fileSystem.list("/out/votes/members".toPath()).size)
+    }
+
+    @Test fun member_shards_not_rewritten_when_rows_unchanged() = runTest {
+        val env = VotesEnv()
+        val responses = baseResponses(menuXml(119, 1, listOf(618)))
+        responses[DETAIL_618_URL] = SENATE_VOTE_618_XML
+        fetchVotes(mockVotesClient(responses), env.store, 119, NOW_ISO, env.errors)
+        val first = env.readText("/out/votes/members/A000382.json")
+
+        // No new votes: every shard must keep its bytes (and
+        // generated_at), or the nightly run would churn ~540 committed
+        // files.
+        val second = fetchVotes(
+            mockVotesClient(responses), env.store, 119, "2026-07-23T00:00:00Z", env.errors,
+        )
+        assertEquals(0, second.memberShardsWritten)
+        assertEquals(100, second.memberShardsUnchanged)
+        assertEquals(first, env.readText("/out/votes/members/A000382.json"))
+    }
+
+    @Test fun member_shard_rewritten_when_short_title_appears() = runTest {
+        val env = VotesEnv()
+        val manifestStore = FileBillsManifestStore(env.fileSystem, "/out".toPath())
+        val responses = baseResponses(menuXml(119, 1, listOf(618)))
+        responses[DETAIL_618_URL] = SENATE_VOTE_618_XML
+        fetchVotes(
+            mockVotesClient(responses), env.store, 119, NOW_ISO, env.errors,
+            manifestStore = manifestStore,
+        )
+        assertEquals(null, env.readMemberShard("A000382").votes.single().shortTitle)
+
+        // A later bills run publishes the short title; the next votes
+        // run must sync it into the shard rows even though no new votes
+        // landed.
+        manifestStore.save(
+            congress = 119,
+            bills = listOf(
+                seedBill("hr5371-119").copy(shortTitle = "Continuing Appropriations Act, 2026"),
+            ),
+            nowIso = "2026-07-23T00:00:00Z",
+        )
+        val second = fetchVotes(
+            mockVotesClient(responses), env.store, 119, "2026-07-23T00:00:00Z", env.errors,
+            manifestStore = manifestStore,
+        )
+        assertEquals(100, second.memberShardsWritten)
+        assertEquals(
+            "Continuing Appropriations Act, 2026",
+            env.readMemberShard("A000382").votes.single().shortTitle,
+        )
     }
 }
 

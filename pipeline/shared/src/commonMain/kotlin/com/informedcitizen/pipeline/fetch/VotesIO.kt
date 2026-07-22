@@ -1,6 +1,7 @@
 package com.informedcitizen.pipeline.fetch
 
 import com.informedcitizen.pipeline.model.Chamber
+import com.informedcitizen.pipeline.model.MemberVotes
 import com.informedcitizen.pipeline.model.RollCallVote
 import com.informedcitizen.pipeline.model.VoteRef
 import com.informedcitizen.pipeline.model.VotesIndex
@@ -59,6 +60,47 @@ class FileVotesStore(
                 val text = fileSystem.source(path).buffer().use { it.readUtf8() }
                 ManifestJson.decodeFromString(RollCallVote.serializer(), text)
             }
+    }
+
+    /**
+     * Every per-vote file on disk, keyed by Congress. Mirrors Python
+     * `fetch_votes.load_congress_votes`: loaded once per run and shared
+     * by the index rebuild (current Congress) and the member-shard
+     * rebuild (all Congresses, since one shard spans a member's whole
+     * published history). The `members/` shard directory has no digit
+     * suffix and is skipped.
+     */
+    fun loadCongressVotes(): Map<Int, List<RollCallVote>> {
+        val root = outputDir / "votes"
+        if (!fileSystem.exists(root)) return emptyMap()
+        val congresses = fileSystem.list(root)
+            .mapNotNull { path ->
+                path.name.removePrefix("congress")
+                    .takeIf { path.name.startsWith("congress") }
+                    ?.takeIf { it.isNotEmpty() && it.all(Char::isDigit) }
+                    ?.toInt()
+            }
+            .sorted()
+        return congresses.associateWith { loadVotes(it) }
+    }
+
+    fun memberVotesPathFor(bioguideId: String): Path =
+        outputDir / memberVotesRelPath(bioguideId)
+
+    /** The member's shard as last published; null when none exists yet. */
+    fun loadMemberVotes(bioguideId: String): MemberVotes? {
+        val path = memberVotesPathFor(bioguideId)
+        if (!fileSystem.exists(path)) return null
+        val text = fileSystem.source(path).buffer().use { it.readUtf8() }
+        return ManifestJson.decodeFromString(MemberVotes.serializer(), text)
+    }
+
+    fun saveMemberVotes(shard: MemberVotes): Path {
+        val path = memberVotesPathFor(shard.bioguideId)
+        path.parent?.let { fileSystem.createDirectories(it) }
+        val text = ManifestJson.encodeToString(MemberVotes.serializer(), shard) + "\n"
+        fileSystem.sink(path).buffer().use { it.writeUtf8(text) }
+        return path
     }
 
     fun indexPathFor(congress: Int): Path = outputDir / votesIndexFileName(congress)

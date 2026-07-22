@@ -4,6 +4,7 @@ import com.informedcitizen.pipeline.model.Action
 import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.pipeline.model.Chamber
 import com.informedcitizen.pipeline.model.MemberVote
+import com.informedcitizen.pipeline.model.MemberVoteRow
 import com.informedcitizen.pipeline.model.Outcome
 import com.informedcitizen.pipeline.model.RollCallVote
 import com.informedcitizen.pipeline.model.Sponsor
@@ -398,5 +399,91 @@ class VoteParsersTest {
         assertEquals("A bill", out[0].title)
         assertEquals("hr5371-119", out[0].id)
         assertTrue(out[1].votes.isEmpty())
+    }
+
+    // -------------------------------------------------- member shards
+
+    @Test
+    fun memberVotesRelPathAndBillIdSplit() {
+        assertEquals("votes/members/A000382.json", memberVotesRelPath("A000382"))
+        assertEquals("hr" to "30", billTypeAndNumber("hr30-119"))
+        assertEquals("sjres" to "5", billTypeAndNumber("sjres5-119"))
+        assertEquals(null to null, billTypeAndNumber(null))
+        assertEquals(null to null, billTypeAndNumber("not-a-bill-id"))
+    }
+
+    @Test
+    fun memberVoteRowsHaveWireShapeAndShortTitle() {
+        val rows = buildMemberVoteRows(
+            listOf(vote618()),
+            mapOf("hr5371-119" to "Continuing Appropriations Act, 2026"),
+        )
+        // One row per voting senator, keyed by bioguide id.
+        assertEquals(100, rows.size)
+        val alsobrooks = rows.getValue("A000382").single()
+        assertEquals(
+            MemberVoteRow(
+                voteId = "senate-119-1-618",
+                congress = 119,
+                date = "2025-11-10",
+                question = "On Passage of the Bill",
+                result = "Bill Passed",
+                position = VotePosition.NAY,
+                billId = "hr5371-119",
+                type = "hr",
+                number = "5371",
+                shortTitle = "Continuing Appropriations Act, 2026",
+            ),
+            alsobrooks,
+        )
+        // Wire key order matches the Python row dicts for byte parity.
+        val text = ManifestJson.encodeToString(MemberVoteRow.serializer(), alsobrooks)
+        val keys = listOf(
+            "vote_id", "congress", "date", "question", "result", "position",
+            "bill_id", "type", "number", "short_title",
+        )
+        assertEquals(keys, keys.sortedBy { text.indexOf("\"$it\"") })
+    }
+
+    @Test
+    fun memberVoteRowsNullBillFieldsForNonBillVotes() {
+        val quorum = vote618().copy(billId = null)
+        val row = buildMemberVoteRows(listOf(quorum), mapOf("hr5371-119" to "unused"))
+            .getValue("A000382").single()
+        assertNull(row.billId)
+        assertNull(row.type)
+        assertNull(row.number)
+        assertNull(row.shortTitle)
+    }
+
+    @Test
+    fun memberVoteRowsAreNewestFirstAcrossChambers() {
+        val house = houseVote17() // 2025-01-16, McClintock (M001177) voted Yea
+        val senate = vote618() // 2025-11-10
+        val rows = buildMemberVoteRows(listOf(house, senate), emptyMap())
+        // A bill outside the short-title map still rows up, with a null title.
+        assertNull(rows.getValue("A000382")[0].shortTitle)
+        val mcclintock = rows.getValue("M001177").single()
+        assertEquals("house-119-1-17", mcclintock.voteId)
+        assertEquals(VotePosition.YEA, mcclintock.position)
+        assertEquals("hr", mcclintock.type)
+        assertEquals("30", mcclintock.number)
+        // A hypothetical member voting in both chambers sorts newest first.
+        val moved = house.copy(positions = listOf(house.positions[0].copy(bioguideId = "A000382")))
+        val combined = buildMemberVoteRows(listOf(moved, senate), emptyMap())
+        assertEquals(
+            listOf("senate-119-1-618", "house-119-1-17"),
+            combined.getValue("A000382").map { it.voteId },
+        )
+    }
+
+    @Test
+    fun buildMemberVotesPayloadShape() {
+        val rows = buildMemberVoteRows(listOf(vote618()), emptyMap()).getValue("A000382")
+        val payload = buildMemberVotes("A000382", rows, generatedAt = "2026-07-22T00:00:00Z")
+        assertEquals("2026-07-22T00:00:00Z", payload.generatedAt)
+        assertEquals("A000382", payload.bioguideId)
+        assertEquals(1, payload.voteCount)
+        assertEquals(rows, payload.votes)
     }
 }

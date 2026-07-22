@@ -77,6 +77,10 @@ data class FetchVotesResult(
     val index: VotesIndex,
     /** True iff the bills manifest's vote refs changed and it was rewritten. */
     val billManifestRefreshed: Boolean,
+    /** Per-member shards rewritten this run (their rows changed). */
+    val memberShardsWritten: Int,
+    /** Per-member shards left byte-untouched (rows unchanged). */
+    val memberShardsUnchanged: Int,
 )
 
 /**
@@ -289,6 +293,49 @@ fun refreshBillVoteRefs(
     return true
 }
 
+/** Result of [rebuildMemberVotes]: shards rewritten vs. left untouched. */
+data class MemberShardsResult(val written: Int, val unchanged: Int)
+
+/**
+ * Rebuild the per-member shards under `votes/members/` from disk.
+ * Mirrors Python `fetch_votes.rebuild_member_votes`.
+ *
+ * Short titles come from whichever bills manifests exist. A shard is
+ * only rewritten when its rows changed (new votes for that member, or a
+ * linked bill's short_title changed), so steady-state runs with no new
+ * votes leave all ~540 files — and their generated_at stamps —
+ * untouched.
+ */
+fun rebuildMemberVotes(
+    store: FileVotesStore,
+    votesByCongress: Map<Int, List<RollCallVote>>,
+    manifestStore: FileBillsManifestStore?,
+    nowIso: String,
+): MemberShardsResult {
+    val shortTitles = mutableMapOf<String, String>()
+    if (manifestStore != null) {
+        for (congress in votesByCongress.keys) {
+            val manifest = manifestStore.load(congress) ?: continue
+            for (bill in manifest.bills) {
+                val title = bill.shortTitle
+                if (!title.isNullOrEmpty()) shortTitles[bill.id] = title
+            }
+        }
+    }
+    val allVotes = votesByCongress.values.flatten()
+    var written = 0
+    var unchanged = 0
+    for ((bioguideId, rows) in buildMemberVoteRows(allVotes, shortTitles)) {
+        if (store.loadMemberVotes(bioguideId)?.votes == rows) {
+            unchanged++
+            continue
+        }
+        store.saveMemberVotes(buildMemberVotes(bioguideId, rows, nowIso))
+        written++
+    }
+    return MemberShardsResult(written, unchanged)
+}
+
 /**
  * Full fetch-votes orchestrator. Mirrors Python `fetch_votes.main`:
  * fetch the Senate session menus and the lis→bioguide map (both fatal
@@ -298,8 +345,9 @@ fun refreshBillVoteRefs(
  * disagrees with the menu is rejected rather than published under the
  * wrong id), probe clerk.house.gov for new House rolls with the
  * remaining [maxNew] budget, then rebuild the index from every vote
- * file on disk and — when a [manifestStore] is supplied — refresh the
- * bills manifest's derived vote refs ([refreshBillVoteRefs]).
+ * file on disk, refresh the bills manifest's derived vote refs when a
+ * [manifestStore] is supplied ([refreshBillVoteRefs]), and rebuild the
+ * per-member shards ([rebuildMemberVotes]).
  *
  * [maxNew] caps new fetches per run, shared across both chambers
  * (Senate first, remainder to the House); a capped run is harmless —
@@ -370,11 +418,13 @@ suspend fun fetchVotes(
         HouseFetchResult(fetched = 0, skipped = 0, unsupported = 0)
     }
 
-    val refs = store.loadVotes(congress).map(::buildVoteRef)
+    val votesByCongress = store.loadCongressVotes()
+    val refs = votesByCongress[congress].orEmpty().map(::buildVoteRef)
     val index = buildVotesIndex(congress, refs, nowIso)
     store.saveIndex(index)
     val billManifestRefreshed = manifestStore != null &&
         refreshBillVoteRefs(manifestStore, congress, index.votes, nowIso)
+    val memberShards = rebuildMemberVotes(store, votesByCongress, manifestStore, nowIso)
     return FetchVotesResult(
         congress = congress,
         sessions = menus.map { it.session },
@@ -386,5 +436,7 @@ suspend fun fetchVotes(
         unsupported = house.unsupported,
         index = index,
         billManifestRefreshed = billManifestRefreshed,
+        memberShardsWritten = memberShards.written,
+        memberShardsUnchanged = memberShards.unchanged,
     )
 }
