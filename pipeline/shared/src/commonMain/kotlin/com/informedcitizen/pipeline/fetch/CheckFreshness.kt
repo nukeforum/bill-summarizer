@@ -27,6 +27,9 @@ import okio.use
  *  - Current-Congress bills manifest `generated_at` within
  *    [BILLS_MAX_AGE_DAYS].
  *  - Members index `generated_at` within [MEMBERS_MAX_AGE_DAYS].
+ *  - Votes index `generated_at` within [VOTES_MAX_AGE_DAYS] (the index
+ *    is rebuilt on every fetch-votes run, so a stale timestamp means
+ *    the update-votes workflow has stopped running).
  *  - Session calendar's latest House and Senate session day at least
  *    [CALENDAR_MIN_LOOKAHEAD_DAYS] ahead of today (so the bills
  *    list's "session" line never reads "session has ended").
@@ -36,6 +39,7 @@ import okio.use
  */
 const val BILLS_MAX_AGE_DAYS: Int = 2
 const val MEMBERS_MAX_AGE_DAYS: Int = 14
+const val VOTES_MAX_AGE_DAYS: Int = 2
 const val CALENDAR_MIN_LOOKAHEAD_DAYS: Int = 30
 const val BACKFILL_MAX_AGE_DAYS: Int = 3
 
@@ -103,7 +107,23 @@ fun checkFreshness(
         }
     }
 
-    // 3. Session calendar look-ahead per chamber.
+    // 3. Votes index freshness.
+    val votesName = votesIndexFileName(congress)
+    val votes = loadJson(fileSystem, outputDir / votesName)
+    if (votes == null) {
+        failures += "votes: $votesName missing or unreadable"
+    } else {
+        val generatedAt = votes.stringField("generated_at")
+        val ageDays = staleness(generatedAt)
+        if (ageDays == null) {
+            failures += "votes: $votesName has no parseable generated_at"
+        } else if (ageDays >= VOTES_MAX_AGE_DAYS) {
+            failures += "votes: $votesName generated_at=$generatedAt " +
+                "is older than $VOTES_MAX_AGE_DAYS days"
+        }
+    }
+
+    // 4. Session calendar look-ahead per chamber.
     val cal = loadJson(fileSystem, outputDir / SESSION_CALENDAR_FILE_NAME)
     if (cal == null) {
         failures += "calendar: $SESSION_CALENDAR_FILE_NAME missing or unreadable"
@@ -132,7 +152,7 @@ fun checkFreshness(
         }
     }
 
-    // 4. Backfill cursor advancement (only if there's still work queued).
+    // 5. Backfill cursor advancement (only if there's still work queued).
     // No state file is acceptable on a brand-new repo; not a failure.
     val state = loadJson(fileSystem, stateDir / "backfill_state.json")
     if (state != null && state["active_congress"] !is JsonNull && state["active_congress"] != null) {

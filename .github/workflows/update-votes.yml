@@ -1,0 +1,67 @@
+name: Update votes
+
+on:
+  schedule:
+    # 06:30 UTC daily — 30 min after update-bills so freshly published
+    # bill records land before the votes that reference them by bill_id.
+    # Independent concurrency group; a bills outage doesn't block votes.
+    - cron: "30 6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-votes
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    # Runs are incremental (already-published roll calls are never
+    # refetched), so steady state is a handful of detail fetches. The
+    # first run backfills the whole Congress (~860 detail XMLs as of
+    # mid-2026) — 30 minutes covers that comfortably.
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        # See update-bills.yml — PAT needed so the push-back step can
+        # bypass the "main branch" ruleset (GITHUB_TOKEN can't).
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.PIPELINE_PUSH_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+          cache-dependency-glob: data-pipeline/requirements.txt
+
+      - name: Install Python dependencies
+        run: uv pip install --system -r data-pipeline/requirements.txt
+
+      # Senate LIS XML + the legislators YAMLs need no API key. No
+      # Kotlin shadow step yet: the KMP fetch-votes port doesn't exist —
+      # add the parallel-run shadow here when it lands (see
+      # update-bills.yml for the pattern).
+
+      - name: Fetch votes (Python — canonical)
+        run: python data-pipeline/scripts/fetch_votes.py
+
+      - name: Rebuild pipeline dashboard
+        if: always()
+        run: python data-pipeline/scripts/build_dashboard.py
+
+      - name: Commit updated votes
+        uses: ./.github/actions/safe-push
+        with:
+          paths: |
+            docs/data/votes
+            docs/data/congress*_votes.json
+            docs/pipeline.html
+          message: "Update votes [bot]"

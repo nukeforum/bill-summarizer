@@ -37,6 +37,10 @@ private class World {
             OUTPUT_DIR / "members_119.json",
             """{"generated_at":"${(NOW - 1.days)}","congress":119,"members":[]}""",
         )
+        write(
+            OUTPUT_DIR / "congress119_votes.json",
+            """{"congress":119,"generated_at":"${(NOW - 6.hours)}","vote_count":0,"votes":[]}""",
+        )
         writeCalendar(house = listOf("2026-06-01", "2026-07-31"), senate = listOf("2026-06-01", "2026-07-31"))
         write(
             STATE_DIR / "backfill_state.json",
@@ -103,6 +107,23 @@ class CheckFreshnessTest {
         )
         val failures = w.check()
         assertTrue(failures.any { "members:" in it && "older than" in it }, "$failures")
+    }
+
+    @Test fun stale_votes_index_flagged() {
+        val w = World()
+        w.write(
+            OUTPUT_DIR / "congress119_votes.json",
+            """{"congress":119,"generated_at":"${(NOW - 3.days)}","vote_count":0,"votes":[]}""",
+        )
+        val failures = w.check()
+        assertTrue(failures.any { "votes:" in it && "older than" in it }, "$failures")
+    }
+
+    @Test fun missing_votes_index_flagged() {
+        val w = World()
+        w.fs.delete(OUTPUT_DIR / "congress119_votes.json")
+        val failures = w.check()
+        assertTrue(failures.any { "votes:" in it && "missing" in it }, "$failures")
     }
 
     @Test fun calendar_low_lookahead_flagged_per_chamber() {

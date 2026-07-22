@@ -40,6 +40,12 @@ def _seed_fresh_world(tmp_path: Path, monkeypatch, now: datetime) -> None:
         "congress": 119,
         "members": [],
     }), encoding="utf-8")
+    (output_dir / "congress119_votes.json").write_text(json.dumps({
+        "congress": 119,
+        "generated_at": _iso(now - timedelta(hours=6)),
+        "vote_count": 0,
+        "votes": [],
+    }), encoding="utf-8")
 
     today = now.date()
     far = (today + timedelta(days=60)).isoformat()
@@ -95,6 +101,28 @@ def test_stale_members_index_flagged(tmp_path, monkeypatch):
     }), encoding="utf-8")
     failures = check_freshness.check(now=now)
     assert any("members:" in f and "older than" in f for f in failures), failures
+
+
+def test_stale_votes_index_flagged(tmp_path, monkeypatch):
+    now = datetime(2026, 6, 1, 12, 0, tzinfo=timezone.utc)
+    _seed_fresh_world(tmp_path, monkeypatch, now)
+    p = _common.OUTPUT_DIR / "congress119_votes.json"
+    p.write_text(json.dumps({
+        "congress": 119,
+        "generated_at": _iso(now - timedelta(days=3)),
+        "vote_count": 0,
+        "votes": [],
+    }), encoding="utf-8")
+    failures = check_freshness.check(now=now)
+    assert any("votes:" in f and "older than" in f for f in failures), failures
+
+
+def test_missing_votes_index_flagged(tmp_path, monkeypatch):
+    now = datetime(2026, 6, 1, 12, 0, tzinfo=timezone.utc)
+    _seed_fresh_world(tmp_path, monkeypatch, now)
+    (_common.OUTPUT_DIR / "congress119_votes.json").unlink()
+    failures = check_freshness.check(now=now)
+    assert any("votes:" in f and "missing" in f for f in failures), failures
 
 
 def test_calendar_no_lookahead_flagged(tmp_path, monkeypatch):

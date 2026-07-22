@@ -9,6 +9,9 @@ Checks (each independently emits a line):
 * Current-Congress bills manifest ``generated_at`` is within
   ``BILLS_MAX_AGE_DAYS``.
 * Members index ``generated_at`` is within ``MEMBERS_MAX_AGE_DAYS``.
+* Votes index ``generated_at`` is within ``VOTES_MAX_AGE_DAYS`` (the index is
+  rebuilt on every ``fetch_votes.py`` run, so a stale timestamp means the
+  update-votes workflow has stopped running).
 * Session calendar's latest House and Senate session day is at least
   ``CALENDAR_MIN_LOOKAHEAD_DAYS`` ahead of today (so the bills list's
   "session" line never reads "session has ended" for users).
@@ -34,6 +37,7 @@ from _common import (
 
 BILLS_MAX_AGE_DAYS = 2
 MEMBERS_MAX_AGE_DAYS = 14
+VOTES_MAX_AGE_DAYS = 2
 CALENDAR_MIN_LOOKAHEAD_DAYS = 30
 BACKFILL_MAX_AGE_DAYS = 3
 
@@ -94,7 +98,22 @@ def check(now: datetime | None = None) -> list[str]:
                 f"is older than {MEMBERS_MAX_AGE_DAYS} days"
             )
 
-    # 3. Session calendar look-ahead per chamber.
+    # 3. Votes index freshness.
+    votes_path = OUTPUT_DIR / f"congress{congress}_votes.json"
+    votes = _load_json(votes_path)
+    if votes is None:
+        failures.append(f"votes: {votes_path.name} missing or unreadable")
+    else:
+        ts = _parse_iso_utc(votes.get("generated_at"))
+        if ts is None:
+            failures.append(f"votes: {votes_path.name} has no parseable generated_at")
+        elif (now - ts).days >= VOTES_MAX_AGE_DAYS:
+            failures.append(
+                f"votes: {votes_path.name} generated_at={votes['generated_at']} "
+                f"is older than {VOTES_MAX_AGE_DAYS} days"
+            )
+
+    # 4. Session calendar look-ahead per chamber.
     cal_path = OUTPUT_DIR / "session_calendar.json"
     cal = _load_json(cal_path)
     if cal is None:
@@ -120,7 +139,7 @@ def check(now: datetime | None = None) -> list[str]:
                     f"{CALENDAR_MIN_LOOKAHEAD_DAYS} days out; upstream feed needs refresh"
                 )
 
-    # 4. Backfill cursor advancement (only if there's still work queued).
+    # 5. Backfill cursor advancement (only if there's still work queued).
     state_path = STATE_DIR / "backfill_state.json"
     state = _load_json(state_path)
     if state is None:
