@@ -3,6 +3,8 @@ import json
 from datetime import datetime, timedelta, timezone
 from unittest.mock import patch
 
+import pytest
+
 import _common
 import fetch_bills
 
@@ -236,3 +238,81 @@ def test_main_attaches_vote_refs_from_votes_index(tmp_path, monkeypatch, capsys)
     with patch("fetch_bills.CongressClient", return_value=_FakeClient([list_resp], detail)):
         assert fetch_bills.main() == 0
     assert "~0 updated, =1 unchanged" in capsys.readouterr().out
+
+
+# --- CLI flags added for the manual refresh-data workflow (--congress,
+# --recent-days). The pre-existing tests above call main() with no argv and
+# must keep passing unchanged: the flags are purely additive and a bare
+# main() parses to the historical defaults. ---
+
+
+def test_recent_days_widens_the_cutoff_window(tmp_path, monkeypatch):
+    """--recent-days threads into the cutoff computation: a bill whose passage
+    action predates the default 60-day window is rejected as action_too_old by
+    default, but kept once the window is widened past its action date."""
+    monkeypatch.setenv("CONGRESS_API_KEY", "stub")
+    monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
+    monkeypatch.setattr(_common, "STATE_DIR", tmp_path / "state")
+    monkeypatch.setattr(_common, "current_congress", lambda *a, **kw: 119)
+    monkeypatch.setattr(fetch_bills, "current_congress", lambda *a, **kw: 119)
+
+    # Acted on ~40 days *before* the default cutoff — clock-relative so it
+    # never rots as the window slides forward (see _days_ago / PR #14).
+    aged_days = fetch_bills.RECENT_DAYS + 40
+    list_resp = {
+        "bills": [
+            _summary(
+                "hr", 1, "Passed House by recorded vote: 220-211",
+                _days_ago(aged_days),
+            ),
+        ],
+    }
+    detail = _detail_map("hr", "1", 119)
+    manifest = tmp_path / "congress119_bills.json"
+
+    # Default window (60 days): the aged bill is too old to keep.
+    with patch("fetch_bills.CongressClient", return_value=_FakeClient([list_resp], detail)):
+        assert fetch_bills.main([]) == 0
+    assert [b["id"] for b in json.loads(manifest.read_text())["bills"]] == []
+
+    # Widen the window past the bill's action date: now it is kept.
+    with patch("fetch_bills.CongressClient", return_value=_FakeClient([list_resp], detail)):
+        assert fetch_bills.main(["--recent-days", str(aged_days + 20)]) == 0
+    assert [b["id"] for b in json.loads(manifest.read_text())["bills"]] == ["hr1-119"]
+
+
+def test_congress_flag_overrides_current_congress(tmp_path, monkeypatch):
+    """--congress selects the target Congress explicitly, overriding
+    current_congress() (stubbed to 119): output lands in the 118 manifest."""
+    monkeypatch.setenv("CONGRESS_API_KEY", "stub")
+    monkeypatch.setattr(_common, "OUTPUT_DIR", tmp_path)
+    monkeypatch.setattr(_common, "STATE_DIR", tmp_path / "state")
+    monkeypatch.setattr(_common, "current_congress", lambda *a, **kw: 119)
+    monkeypatch.setattr(fetch_bills, "current_congress", lambda *a, **kw: 119)
+
+    list_resp = {
+        "bills": [
+            _summary(
+                "hr", 1, "Passed House by recorded vote: 220-211",
+                _days_ago(fetch_bills.RECENT_DAYS // 2),
+            ),
+        ],
+    }
+    detail = _detail_map("hr", "1", 118)
+
+    with patch("fetch_bills.CongressClient", return_value=_FakeClient([list_resp], detail)):
+        assert fetch_bills.main(["--congress", "118"]) == 0
+
+    # current_congress would have written the 119 manifest; --congress redirects.
+    assert not (tmp_path / "congress119_bills.json").exists()
+    on_disk = json.loads((tmp_path / "congress118_bills.json").read_text(encoding="utf-8"))
+    assert [b["id"] for b in on_disk["bills"]] == ["hr1-118"]
+
+
+@pytest.mark.parametrize("bad", ["0", "-5", "366", "1000"])
+def test_recent_days_out_of_range_is_rejected(bad):
+    """The 1..365 guard turns an out-of-range workflow input into a clean
+    argparse error (exit 2) instead of an unbounded backfill."""
+    with pytest.raises(SystemExit) as exc:
+        fetch_bills.main(["--recent-days", bad])
+    assert exc.value.code == 2

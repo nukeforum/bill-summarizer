@@ -1,0 +1,122 @@
+name: Refresh data (manual)
+
+# Manual-fire, bounded re-fetch of the published data surfaces. Designed in
+# Part B of the bs-refresh-compat-s3 audit: the dailies run on cron; this
+# workflow lets an operator re-fetch a surface on demand — the intended use
+# is activating a just-merged data capability (e.g. lighting up votes_coverage
+# for every already-published bill) without waiting for the organic daily
+# cycle. Not a backfill: every surface is bounded (bills by --recent-days ≤ 365
+# and the fetcher's 8-page list cap; votes by --max-new; members by phase 1).
+
+on:
+  workflow_dispatch:
+    inputs:
+      surface:
+        description: Which surface(s) to refresh
+        type: choice
+        options: [votes, bills, members, all]
+        default: votes
+      congress:
+        description: Congress number (blank = current)
+        type: string
+        default: ""
+      recent_days:
+        description: "bills: re-fetch window in days (bounded further by the fetcher's 8-page list cap; must be 1-365)"
+        type: string
+        default: "60"
+      max_new_votes:
+        description: "votes: cap on newly fetched roll calls this run (first-ever backfill is ~1500; re-fire to continue)"
+        type: string
+        default: "250"
+
+permissions:
+  contents: write
+
+# Own concurrency group: a refresh may span multiple surfaces, so it can't
+# share any single daily's group. Races against the dailies are resolved by
+# safe-push's rebase-retry (-X theirs), which exists for exactly this
+# cron + manual case.
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        # See update-bills.yml — PAT needed so the push-back step can bypass
+        # the "main branch" ruleset (the default GITHUB_TOKEN can't).
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.PIPELINE_PUSH_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+          cache-dependency-glob: data-pipeline/requirements.txt
+
+      - name: Install Python dependencies
+        run: uv pip install --system -r data-pipeline/requirements.txt
+
+      # Surfaces run in the same order as the daily schedule (bills 06:00,
+      # votes 06:30): fresh bill records land before the votes pass
+      # re-attaches vote refs to them. Each step is gated on the selected
+      # surface; "all" runs every surface.
+
+      - name: Refresh bills
+        if: ${{ inputs.surface == 'bills' || inputs.surface == 'all' }}
+        env:
+          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
+        run: |
+          python data-pipeline/scripts/fetch_bills.py \
+            ${{ inputs.congress && format('--congress {0}', inputs.congress) || '' }} \
+            --recent-days "${{ inputs.recent_days }}"
+
+      - name: Refresh votes
+        if: ${{ inputs.surface == 'votes' || inputs.surface == 'all' }}
+        # No CONGRESS_API_KEY: votes come from keyless sources (senate.gov LIS,
+        # clerk.house.gov EVS, two GitHub-raw legislator YAMLs).
+        run: |
+          python data-pipeline/scripts/fetch_votes.py \
+            ${{ inputs.congress && format('--congress {0}', inputs.congress) || '' }} \
+            --max-new "${{ inputs.max_new_votes }}"
+          # refresh_bill_vote_refs inside this run re-attaches vote_refs /
+          # party_split to ALL published bills and flips votes_coverage — the
+          # manual path to "the votes feature is live now".
+
+      - name: Refresh members index
+        if: ${{ inputs.surface == 'members' || inputs.surface == 'all' }}
+        env:
+          CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
+        run: python data-pipeline/scripts/fetch_members.py --phase1-only
+
+      - name: Rebuild pipeline dashboard
+        if: always()
+        run: python data-pipeline/scripts/build_dashboard.py
+
+      - name: Commit refreshed data
+        uses: ./.github/actions/safe-push
+        with:
+          # Union of the dailies' path sets; safe-push skips the commit when a
+          # surface wasn't selected (no staged diff for its paths). The member
+          # vote shards under docs/data/votes are already covered by the votes
+          # glob. A data-no-op fire can still produce a timestamp-only commit
+          # (save_manifest / rebuild_votes_index always re-stamp generated_at)
+          # — the dailies already behave this way; it's harmless and feeds
+          # check_freshness.
+          paths: |
+            docs/data/congress*_bills.json
+            docs/data/congresses.json
+            docs/data/congress*_votes.json
+            docs/data/votes
+            docs/data/members_*.json
+            docs/pipeline.html
+          message: "Refresh data [bot]: ${{ inputs.surface }} (congress=${{ inputs.congress || 'current' }})"
