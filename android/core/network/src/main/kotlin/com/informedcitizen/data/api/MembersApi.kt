@@ -1,6 +1,7 @@
 package com.informedcitizen.data.api
 
 import com.informedcitizen.pipeline.model.MemberLegislation
+import com.informedcitizen.pipeline.model.MemberVotes
 import com.informedcitizen.pipeline.model.MembersIndex
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -14,4 +15,7 @@ interface MembersApi {
 
     @GET("data/members/{bioguideId}_cosponsored.json")
     suspend fun getCosponsored(@Path("bioguideId") bioguideId: String): MemberLegislation
+
+    @GET("data/votes/members/{bioguideId}.json")
+    suspend fun getMemberVotes(@Path("bioguideId") bioguideId: String): MemberVotes
 }

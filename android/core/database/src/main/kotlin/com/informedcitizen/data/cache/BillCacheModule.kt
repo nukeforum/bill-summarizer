@@ -30,4 +30,9 @@ object BillCacheModule {
     @Singleton
     fun provideSessionCalendarCache(db: BillSummaryDatabase): SessionCalendarCache =
         SqlDelightSessionCalendarCache(db)
+
+    @Provides
+    @Singleton
+    fun provideMemberVotesCache(db: BillSummaryDatabase): MemberVotesCache =
+        SqlDelightMemberVotesCache(db)
 }

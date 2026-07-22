@@ -1,0 +1,13 @@
+-- Migration from schema v3 → v4 (saved reps' votes: per-member shard cache).
+-- Existing v3 databases predate `cached_member_votes` so we create it in
+-- place. Fresh installs already have the table via `ArtifactCache.sq` and
+-- skip this migration.
+
+CREATE TABLE cached_member_votes (
+    bioguide_id TEXT NOT NULL,
+    source TEXT NOT NULL,
+    payload TEXT NOT NULL,
+    generated_at TEXT NOT NULL,
+    fetched_at INTEGER NOT NULL,
+    PRIMARY KEY (bioguide_id, source)
+);

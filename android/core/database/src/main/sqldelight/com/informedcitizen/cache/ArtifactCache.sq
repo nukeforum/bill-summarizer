@@ -27,6 +27,19 @@ CREATE TABLE cached_session_calendar (
     fetched_at INTEGER NOT NULL
 );
 
+-- Per-member roll-call positions shard (votes/members/{bioguideId}.json),
+-- fetched once per saved rep for the "your reps voted" surfaces. Whole
+-- shard as one payload for the same reason as the artifacts above: the
+-- app always consumes a member's positions in bulk.
+CREATE TABLE cached_member_votes (
+    bioguide_id TEXT NOT NULL,
+    source TEXT NOT NULL,
+    payload TEXT NOT NULL,
+    generated_at TEXT NOT NULL,
+    fetched_at INTEGER NOT NULL,
+    PRIMARY KEY (bioguide_id, source)
+);
+
 selectMembersIndex:
 SELECT payload, generated_at, fetched_at FROM cached_members_index
 WHERE congress = :congress AND source = :source;
@@ -61,3 +74,21 @@ INSERT OR REPLACE INTO cached_session_calendar (
 
 clearSessionCalendarForSource:
 DELETE FROM cached_session_calendar WHERE source = :source;
+
+selectMemberVotes:
+SELECT payload, generated_at, fetched_at FROM cached_member_votes
+WHERE bioguide_id = :bioguideId AND source = :source;
+
+selectFreshestMemberVotes:
+SELECT source, payload, generated_at, fetched_at FROM cached_member_votes
+WHERE bioguide_id = :bioguideId
+ORDER BY fetched_at DESC
+LIMIT 1;
+
+upsertMemberVotes:
+INSERT OR REPLACE INTO cached_member_votes (
+    bioguide_id, source, payload, generated_at, fetched_at
+) VALUES (?, ?, ?, ?, ?);
+
+clearMemberVotesForSource:
+DELETE FROM cached_member_votes WHERE source = :source;

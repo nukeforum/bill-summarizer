@@ -1,6 +1,7 @@
 package com.informedcitizen.data.cache
 
 import com.informedcitizen.pipeline.model.Bill
+import com.informedcitizen.pipeline.model.MemberVotes
 import com.informedcitizen.pipeline.model.MembersIndex
 import com.informedcitizen.pipeline.model.SessionCalendar
 
@@ -38,6 +39,23 @@ interface SessionCalendarCache {
 
     /** The most recently fetched calendar, regardless of source. */
     suspend fun loadFreshest(): CachedArtifact<SessionCalendar>?
+
+    suspend fun clearSource(source: BillSource)
+}
+
+/**
+ * Persistent output cache for per-member roll-call position shards
+ * (`votes/members/{bioguideId}.json`), keyed by bioguide ID. Fetched
+ * once per saved rep — never per bill — so the bills list can badge
+ * saved reps' votes without eager per-bill downloads.
+ */
+interface MemberVotesCache {
+    suspend fun replaceForSource(source: BillSource, votes: MemberVotes, fetchedAtMillis: Long)
+
+    suspend fun load(bioguideId: String, source: BillSource): CachedArtifact<MemberVotes>?
+
+    /** The most recently fetched shard for [bioguideId], regardless of source. */
+    suspend fun loadFreshest(bioguideId: String): CachedArtifact<MemberVotes>?
 
     suspend fun clearSource(source: BillSource)
 }

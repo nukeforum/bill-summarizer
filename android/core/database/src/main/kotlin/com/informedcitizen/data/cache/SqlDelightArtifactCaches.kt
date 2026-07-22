@@ -1,6 +1,7 @@
 package com.informedcitizen.data.cache
 
 import com.informedcitizen.cache.BillSummaryDatabase
+import com.informedcitizen.pipeline.model.MemberVotes
 import com.informedcitizen.pipeline.model.MembersIndex
 import com.informedcitizen.pipeline.model.SessionCalendar
 import kotlinx.coroutines.Dispatchers
@@ -126,6 +127,65 @@ class SqlDelightSessionCalendarCache(
     override suspend fun clearSource(source: BillSource) {
         withContext(Dispatchers.IO) {
             q.clearSessionCalendarForSource(source = source.wireString)
+        }
+    }
+}
+
+class SqlDelightMemberVotesCache(
+    private val db: BillSummaryDatabase,
+    private val json: Json = ArtifactJson,
+) : MemberVotesCache {
+
+    private val q = db.artifactCacheQueries
+
+    override suspend fun replaceForSource(
+        source: BillSource,
+        votes: MemberVotes,
+        fetchedAtMillis: Long,
+    ) {
+        withContext(Dispatchers.IO) {
+            q.upsertMemberVotes(
+                bioguide_id = votes.bioguideId,
+                source = source.wireString,
+                payload = json.encodeToString(MemberVotes.serializer(), votes),
+                generated_at = votes.generatedAt,
+                fetched_at = fetchedAtMillis,
+            )
+        }
+    }
+
+    override suspend fun load(bioguideId: String, source: BillSource): CachedArtifact<MemberVotes>? =
+        withContext(Dispatchers.IO) {
+            q.selectMemberVotes(bioguideId = bioguideId, source = source.wireString)
+                .executeAsOneOrNull()
+                ?.let { row ->
+                    CachedArtifact(
+                        value = json.decodeFromString(MemberVotes.serializer(), row.payload),
+                        source = source,
+                        generatedAt = row.generated_at,
+                        fetchedAtMillis = row.fetched_at,
+                    )
+                }
+        }
+
+    override suspend fun loadFreshest(bioguideId: String): CachedArtifact<MemberVotes>? =
+        withContext(Dispatchers.IO) {
+            q.selectFreshestMemberVotes(bioguideId = bioguideId)
+                .executeAsOneOrNull()
+                ?.let { row ->
+                    val source = BillSource.fromWire(row.source) ?: return@let null
+                    CachedArtifact(
+                        value = json.decodeFromString(MemberVotes.serializer(), row.payload),
+                        source = source,
+                        generatedAt = row.generated_at,
+                        fetchedAtMillis = row.fetched_at,
+                    )
+                }
+        }
+
+    override suspend fun clearSource(source: BillSource) {
+        withContext(Dispatchers.IO) {
+            q.clearMemberVotesForSource(source = source.wireString)
         }
     }
 }
