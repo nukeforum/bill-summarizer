@@ -9,9 +9,9 @@ import com.informedcitizen.pipeline.model.VoteTotals
 import com.informedcitizen.pipeline.model.VotesIndex
 
 /**
- * Pure parsing and record building for Senate roll-call votes. Direct
- * port of Python `_votes.py`; network I/O lives in the fetch-votes
- * driver. Output matches the authoritative wire models
+ * Pure parsing and record building for roll-call votes. Direct port of
+ * Python `_votes.py`; network I/O lives in the fetch-votes driver.
+ * Output matches the authoritative wire models
  * [RollCallVote] / [VotesIndex].
  *
  * Senate source: senate.gov LIS XML (no API key required). The vote
@@ -25,14 +25,34 @@ import com.informedcitizen.pipeline.model.VotesIndex
  * mid-Congress moves to the historical file while their roll calls
  * remain published.
  *
- * The LIS documents are flat, machine-generated XML, so extraction is
+ * House source: clerk.house.gov EVS XML (no API key required), one
+ * document per roll call at `evs/<year>/roll<NNN>.xml`. Positions are
+ * keyed by the `name-id` attribute, which is already the bioguide id —
+ * no mapping step. There is no machine-readable vote menu; roll
+ * numbers are dense and sequential within a calendar year, so the
+ * fetch driver discovers new votes by probing past the highest roll on
+ * disk. Speaker elections are published in the same format but record
+ * candidate *names* as votes — those throw [UnsupportedVoteException]
+ * since they cannot be expressed as yea/nay positions.
+ *
+ * Both feeds are flat, machine-generated XML, so extraction is
  * regex-based rather than pulling in a KMP XML library (same call as
  * [parseSenateXml] for the schedule feed). Tag names are matched
  * exactly (`<congress>` never matches `<congress_year>` or
- * `<document_congress>`), and the first occurrence of each top-level
- * tag is the same element ElementTree's `findtext` returns on these
- * documents.
+ * `<document_congress>`, `<vote>` never matches `<vote-question>`),
+ * and the first occurrence of each top-level tag is the same element
+ * ElementTree's `findtext` returns on these documents.
  */
+
+/**
+ * A well-formed roll call that cannot be expressed as yea/nay
+ * positions. Deliberately not an [IllegalArgumentException]: parse
+ * failures are retried on the next run (upstream may fix the
+ * document), whereas unsupported votes are permanent — the fetch
+ * driver should skip them without recording an error. Mirrors Python
+ * `_votes.UnsupportedVoteError`.
+ */
+class UnsupportedVoteException(message: String) : Exception(message)
 
 /** Wire value for a [Chamber], used in vote ids and file paths. */
 internal val Chamber.wireName: String
@@ -71,6 +91,10 @@ private val MONTHS = mapOf(
 // "November 10, 2025,  08:58 PM" (Senate detail XML vote_date)
 private val SENATE_DATE_RE = Regex("([A-Za-z]+)\\s+(\\d{1,2}),\\s*(\\d{4})")
 
+// "16-Jan-2025" (House clerk XML action-date)
+private val HOUSE_DATE_RE = Regex("(\\d{1,2})-([A-Za-z]{3})-(\\d{4})")
+private val MONTH_ABBREVS = MONTHS.mapKeys { (name, _) -> name.take(3) }
+
 private fun tagRegex(tag: String) = Regex("<$tag>([^<]*)</$tag>")
 
 private val CONGRESS_RE = tagRegex("congress")
@@ -88,6 +112,26 @@ private val STATE_RE = tagRegex("state")
 private val DOCUMENT_BLOCK_RE = Regex("<document>(.*?)</document>", RegexOption.DOT_MATCHES_ALL)
 private val MEMBER_BLOCK_RE = Regex("<member>(.*?)</member>", RegexOption.DOT_MATCHES_ALL)
 
+// House clerk EVS tags (vote-metadata block + recorded-vote entries).
+private val VOTE_METADATA_BLOCK_RE =
+    Regex("<vote-metadata>(.*?)</vote-metadata>", RegexOption.DOT_MATCHES_ALL)
+private val RECORDED_VOTE_BLOCK_RE =
+    Regex("<recorded-vote>(.*?)</recorded-vote>", RegexOption.DOT_MATCHES_ALL)
+private val ROLLCALL_NUM_RE = tagRegex("rollcall-num")
+private val ACTION_DATE_RE = tagRegex("action-date")
+private val VOTE_QUESTION_RE = tagRegex("vote-question")
+private val HOUSE_VOTE_RESULT_RE = tagRegex("vote-result")
+private val LEGIS_NUM_RE = tagRegex("legis-num")
+private val HOUSE_VOTE_RE = tagRegex("vote")
+// Attribute extraction from the <legislator ...> tag; the leading
+// whitespace keeps `name-id` from matching inside `unaccented-name`
+// and friends.
+private val NAME_ID_ATTR_RE = Regex("\\sname-id=\"([^\"]*)\"")
+private val PARTY_ATTR_RE = Regex("\\sparty=\"([^\"]*)\"")
+private val STATE_ATTR_RE = Regex("\\sstate=\"([^\"]*)\"")
+// "1st" / "2nd" (House clerk XML session)
+private val HOUSE_SESSION_RE = Regex("\\s*(\\d+)")
+
 // "    bioguide: A000382" inside a legislators-YAML id block.
 private val YAML_ID_KEY_RE = Regex("(\\w+):\\s*(.*)")
 
@@ -95,7 +139,7 @@ private fun Regex.findText(text: String): String? = find(text)?.groupValues?.get
 
 private fun Regex.findInt(text: String, what: String): Int {
     val value = findText(text)
-    require(!value.isNullOrEmpty()) { "Senate vote XML: missing <$what>" }
+    require(!value.isNullOrEmpty()) { "vote XML: missing <$what>" }
     return value.toInt()
 }
 
@@ -242,6 +286,112 @@ fun parseSenateVote(text: String, lisToBioguide: Map<String, String>): RollCallV
         ),
         positions = positions,
         sourceUrl = senateVoteSourceUrl(congress, session, rollNumber),
+    )
+}
+
+/**
+ * Calendar year of a House session (session 1 = the Congress's first
+ * year). Clerk EVS URLs are year-keyed while our ids are
+ * congress/session-keyed.
+ */
+fun houseSessionYear(congress: Int, session: Int): Int = 1789 + (congress - 1) * 2 + (session - 1)
+
+fun houseVoteSourceUrl(congress: Int, session: Int, rollNumber: Int): String {
+    val year = houseSessionYear(congress, session)
+    val padded = rollNumber.toString().padStart(3, '0')
+    return "https://clerk.house.gov/evs/$year/roll$padded.xml"
+}
+
+/**
+ * Derive a [com.informedcitizen.pipeline.model.Bill.id] from a House
+ * clerk `legis-num` (`"H R 30"`). Returns null for non-bill business
+ * (`QUORUM`, `MOTION`, blank — Speaker elections omit the element
+ * entirely).
+ */
+fun billIdFromLegisNum(legisNum: String?, congress: Int): String? {
+    val tokens = legisNum.orEmpty().split(Regex("\\s+")).filter { it.isNotEmpty() }
+    if (tokens.size < 2) return null
+    return billIdFromDocument(tokens.dropLast(1).joinToString(" "), tokens.last(), congress)
+}
+
+/** `"16-Jan-2025"` -> `"2025-01-16"`, locale-independent. */
+internal fun parseHouseDate(raw: String): String {
+    val m = HOUSE_DATE_RE.find(raw)
+    val month = m?.let { MONTH_ABBREVS[it.groupValues[2].lowercase()] }
+    requireNotNull(month) { "unparseable House vote date: '$raw'" }
+    val day = m.groupValues[1].toInt()
+    val year = m.groupValues[3].toInt()
+    return "$year-" + month.toString().padStart(2, '0') + "-" + day.toString().padStart(2, '0')
+}
+
+/** `"1st"` / `"2nd"` -> 1 / 2. */
+internal fun parseHouseSession(raw: String): Int {
+    val m = HOUSE_SESSION_RE.matchAt(raw, 0)
+    requireNotNull(m) { "unparseable House session: '$raw'" }
+    return m.groupValues[1].toInt()
+}
+
+/**
+ * Parse a House clerk EVS XML into a [RollCallVote].
+ *
+ * Same policies as [parseSenateVote]: totals are derived from the
+ * parsed positions (not the `vote-totals` block) so published tallies
+ * always agree with published positions, and an unknown vote label
+ * throws so the driver records the vote instead of miscounting.
+ * Candidate-ballot votes (Speaker elections, identified by their
+ * `totals-by-candidate` blocks) throw [UnsupportedVoteException].
+ */
+fun parseHouseVote(text: String): RollCallVote {
+    val meta = VOTE_METADATA_BLOCK_RE.find(text)?.groupValues?.get(1)
+    requireNotNull(meta) { "missing vote-metadata block" }
+    val congress = CONGRESS_RE.findInt(meta, "congress")
+    val session = parseHouseSession(SESSION_RE.findText(meta).orEmpty())
+    val rollNumber = ROLLCALL_NUM_RE.findInt(meta, "rollcall-num")
+
+    if ("<totals-by-candidate>" in meta) {
+        throw UnsupportedVoteException(
+            "candidate-ballot vote (roll $rollNumber): positions are " +
+                "candidate names, not yea/nay",
+        )
+    }
+
+    val positions = mutableListOf<MemberVote>()
+    val totals = mutableMapOf<VotePosition, Int>()
+    for (block in RECORDED_VOTE_BLOCK_RE.findAll(text)) {
+        val body = block.groupValues[1]
+        val bioguide = NAME_ID_ATTR_RE.findText(body).orEmpty()
+        require(bioguide.isNotEmpty()) { "recorded-vote without a name-id (roll $rollNumber)" }
+        val position = normalizeVotePosition(HOUSE_VOTE_RE.findText(body).orEmpty())
+        totals[position] = (totals[position] ?: 0) + 1
+        positions.add(
+            MemberVote(
+                bioguideId = bioguide,
+                position = position,
+                party = PARTY_ATTR_RE.findText(body)?.ifEmpty { null },
+                state = STATE_ATTR_RE.findText(body)?.ifEmpty { null },
+            ),
+        )
+    }
+    positions.sortBy { it.bioguideId }
+
+    return RollCallVote(
+        id = voteId(Chamber.HOUSE, congress, session, rollNumber),
+        congress = congress,
+        chamber = Chamber.HOUSE,
+        session = session,
+        rollNumber = rollNumber,
+        date = parseHouseDate(ACTION_DATE_RE.findText(meta).orEmpty()),
+        question = VOTE_QUESTION_RE.findText(meta).orEmpty(),
+        result = HOUSE_VOTE_RESULT_RE.findText(meta).orEmpty(),
+        billId = billIdFromLegisNum(LEGIS_NUM_RE.findText(meta), congress),
+        totals = VoteTotals(
+            yea = totals[VotePosition.YEA] ?: 0,
+            nay = totals[VotePosition.NAY] ?: 0,
+            present = totals[VotePosition.PRESENT] ?: 0,
+            notVoting = totals[VotePosition.NOT_VOTING] ?: 0,
+        ),
+        positions = positions,
+        sourceUrl = houseVoteSourceUrl(congress, session, rollNumber),
     )
 }
 

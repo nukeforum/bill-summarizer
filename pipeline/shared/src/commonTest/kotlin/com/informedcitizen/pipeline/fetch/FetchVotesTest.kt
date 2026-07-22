@@ -5,7 +5,9 @@ import com.informedcitizen.pipeline.http.PipelineHttpConfig
 import com.informedcitizen.pipeline.http.SenateVotesApiException
 import com.informedcitizen.pipeline.http.SenateVotesClient
 import com.informedcitizen.pipeline.http.configurePipelineForTest
+import com.informedcitizen.pipeline.model.Chamber
 import com.informedcitizen.pipeline.model.RollCallVote
+import com.informedcitizen.pipeline.model.VoteTotals
 import com.informedcitizen.pipeline.model.VotesIndex
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.mock.MockEngine
@@ -23,10 +25,11 @@ import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
 /**
- * Integration tests for [fetchVotes] with mocked senate.gov fetches.
- * Mirrors Python `test_fetch_votes_main.py`: the detail XML is the
- * real fixture for roll call 119-1-618; the vote menu is built inline
- * so tests control exactly which roll calls the driver sees.
+ * Integration tests for [fetchVotes] with mocked senate.gov and
+ * clerk.house.gov fetches. Mirrors Python `test_fetch_votes_main.py`:
+ * the detail XMLs are the real fixtures for Senate roll call 119-1-618
+ * and House 2025 roll 17; the vote menu is built inline so tests
+ * control exactly which roll calls the driver sees.
  */
 
 private const val NOW_ISO = "2026-07-22T00:00:00Z"
@@ -240,6 +243,195 @@ class FetchVotesTest {
             )
         }
         assertTrue("identifies itself as congress 118" in (e.message ?: ""))
+    }
+
+    // ---------- House probe loop ---------------------------------------
+    //
+    // The Senate side of these tests is a menu with zero votes, so all
+    // activity comes from the House probe. Unmapped House URLs 404,
+    // ending each session's probe (clerk.house.gov's behavior past the
+    // newest published roll).
+
+    private val emptyMenu = menuXml(119, 1, emptyList())
+
+    /** Save a minimal-but-valid vote file so the probe skips this roll. */
+    private fun seedHouseVote(store: FileVotesStore, congress: Int, session: Int, roll: Int) {
+        store.saveVote(
+            RollCallVote(
+                id = "house-$congress-$session-$roll",
+                congress = congress,
+                chamber = Chamber.HOUSE,
+                session = session,
+                rollNumber = roll,
+                date = "2025-01-03",
+                question = "On Passage",
+                result = "Passed",
+                billId = null,
+                totals = VoteTotals(yea = 0, nay = 0, present = 0, notVoting = 0),
+                positions = emptyList(),
+            ),
+        )
+    }
+
+    @Test fun house_fetches_past_existing_rolls_and_stops_at_404() = runTest {
+        val env = VotesEnv()
+        for (roll in 1..16) seedHouseVote(env.store, 119, 1, roll)
+        val responses = baseResponses(emptyMenu)
+        responses[houseVoteSourceUrl(119, 1, 17)] = HOUSE_VOTE_ROLL17_XML
+
+        val requested = mutableListOf<String>()
+        val result = fetchVotes(
+            mockVotesClient(responses, requested = requested),
+            env.store, 119, NOW_ISO, env.errors,
+        )
+
+        assertEquals(1, result.fetched)
+        assertEquals(0, result.senateFetched)
+        assertEquals(1, result.houseFetched)
+        assertEquals(16, result.skipped)
+        assertEquals(0, result.unsupported)
+        assertEquals(0, env.errors.size)
+
+        val savedText = env.readText("/out/votes/congress119/house-1-17.json")
+        val saved = ManifestJson.decodeFromString(RollCallVote.serializer(), savedText)
+        assertEquals(parseHouseVote(HOUSE_VOTE_ROLL17_XML), saved)
+
+        // Existing rolls cost no fetches; the probe stopped at the
+        // first 404 (roll 18) and never looked further.
+        assertTrue(houseVoteSourceUrl(119, 1, 16) !in requested)
+        assertTrue(houseVoteSourceUrl(119, 1, 18) in requested)
+        assertTrue(houseVoteSourceUrl(119, 1, 19) !in requested)
+        // Session 2 was probed and found unpublished (single 404).
+        assertTrue(houseVoteSourceUrl(119, 2, 1) in requested)
+        assertTrue(houseVoteSourceUrl(119, 2, 2) !in requested)
+
+        val index = env.readIndex()
+        assertEquals(17, index.voteCount)
+        val ref = index.votes.first { it.id == "house-119-1-17" }
+        assertEquals("hr30-119", ref.billId)
+        assertEquals("votes/congress119/house-1-17.json", ref.path)
+    }
+
+    @Test fun house_speaker_election_is_skipped_not_errored() = runTest {
+        val env = VotesEnv()
+        val responses = baseResponses(emptyMenu)
+        responses[houseVoteSourceUrl(119, 1, 1)] = HOUSE_VOTE_QUORUM_XML
+        responses[houseVoteSourceUrl(119, 1, 2)] = HOUSE_VOTE_SPEAKER_XML
+
+        val requested = mutableListOf<String>()
+        val unsupportedKeys = mutableListOf<String>()
+        val result = fetchVotes(
+            mockVotesClient(responses, requested = requested),
+            env.store, 119, NOW_ISO, env.errors,
+            progress = FetchVotesProgress(onUnsupportedVote = { key, _ -> unsupportedKeys += key }),
+        )
+
+        assertEquals(1, result.houseFetched)
+        assertEquals(1, result.unsupported)
+        assertEquals(0, env.errors.size)
+        assertEquals(listOf("119-1-2"), unsupportedKeys)
+        assertTrue(env.fileSystem.exists("/out/votes/congress119/house-1-1.json".toPath()))
+        assertFalse(env.fileSystem.exists("/out/votes/congress119/house-1-2.json".toPath()))
+        // The probe continued past the unsupported vote to roll 3 (404 -> stop).
+        assertTrue(houseVoteSourceUrl(119, 1, 3) in requested)
+
+        // Next run: roll 1 is on disk (skipped), the Speaker election is
+        // re-probed and re-skipped — cheap, and keeps disk as the only cursor.
+        val secondRequested = mutableListOf<String>()
+        val second = fetchVotes(
+            mockVotesClient(responses, requested = secondRequested),
+            env.store, 119, NOW_ISO, ErrorCollector(),
+        )
+        assertTrue(houseVoteSourceUrl(119, 1, 1) !in secondRequested)
+        assertTrue(houseVoteSourceUrl(119, 1, 2) in secondRequested)
+        assertEquals(1, second.unsupported)
+    }
+
+    @Test fun house_consecutive_parse_failures_stop_probe() = runTest {
+        val env = VotesEnv()
+        val responses = baseResponses(emptyMenu)
+        responses[houseVoteSourceUrl(119, 1, 1)] = HOUSE_VOTE_QUORUM_XML
+        responses[houseVoteSourceUrl(119, 1, 2)] = "<not-a-vote/>"
+        responses[houseVoteSourceUrl(119, 1, 3)] = "<not-a-vote/>"
+        responses[houseVoteSourceUrl(119, 1, 4)] = "<not-a-vote/>"
+        responses[houseVoteSourceUrl(119, 1, 5)] = HOUSE_VOTE_QUORUM_XML
+
+        val requested = mutableListOf<String>()
+        var failureStop: Pair<Int, Int>? = null
+        val result = fetchVotes(
+            mockVotesClient(responses, requested = requested),
+            env.store, 119, NOW_ISO, env.errors,
+            progress = FetchVotesProgress(
+                onConsecutiveFailures = { count, session -> failureStop = count to session },
+            ),
+        )
+
+        // Three consecutive failures capped the session probe before roll 5.
+        assertTrue(houseVoteSourceUrl(119, 1, 5) !in requested)
+        assertEquals(3 to 1, failureStop)
+        assertEquals(1, result.houseFetched)
+        assertEquals(3, env.errors.size)
+        assertTrue(env.errors.records().all { it.kind == "house_vote" })
+    }
+
+    @Test fun house_identity_mismatch_stops_probe() = runTest {
+        val env = VotesEnv()
+        // Roll 1's URL serves XML identifying itself as roll 17: the
+        // year/session mapping must be wrong, so nothing is published
+        // and the probe stops.
+        val responses = baseResponses(emptyMenu)
+        responses[houseVoteSourceUrl(119, 1, 1)] = HOUSE_VOTE_ROLL17_XML
+
+        val requested = mutableListOf<String>()
+        val result = fetchVotes(
+            mockVotesClient(responses, requested = requested),
+            env.store, 119, NOW_ISO, env.errors,
+        )
+
+        assertEquals(0, result.houseFetched)
+        assertFalse(env.fileSystem.exists("/out/votes/congress119/house-1-1.json".toPath()))
+        assertFalse(env.fileSystem.exists("/out/votes/congress119/house-1-17.json".toPath()))
+        assertTrue(houseVoteSourceUrl(119, 1, 2) !in requested)
+        val record = env.errors.records().single()
+        assertEquals("house_vote", record.kind)
+        assertTrue("identifies itself as house-119-1-17" in record.message)
+    }
+
+    @Test fun house_non_404_error_recorded_and_stops_probe() = runTest {
+        val env = VotesEnv()
+        val requested = mutableListOf<String>()
+        fetchVotes(
+            mockVotesClient(
+                baseResponses(emptyMenu),
+                errorStatus = mapOf(houseVoteSourceUrl(119, 1, 1) to HttpStatusCode.InternalServerError),
+                requested = requested,
+            ),
+            env.store, 119, NOW_ISO, env.errors,
+        )
+        assertTrue(houseVoteSourceUrl(119, 1, 2) !in requested)
+        val record = env.errors.records().single()
+        assertEquals("house_vote", record.kind)
+        assertEquals("SenateVotesApiException", record.errorClass)
+    }
+
+    @Test fun house_deferred_when_senate_exhausts_budget() = runTest {
+        val env = VotesEnv()
+        val responses = baseResponses(menuXml(119, 1, listOf(618)))
+        responses[DETAIL_618_URL] = SENATE_VOTE_618_XML
+        responses[houseVoteSourceUrl(119, 1, 1)] = HOUSE_VOTE_QUORUM_XML
+
+        val requested = mutableListOf<String>()
+        var houseDeferred = false
+        val result = fetchVotes(
+            mockVotesClient(responses, requested = requested),
+            env.store, 119, NOW_ISO, env.errors,
+            maxNew = 1,
+            progress = FetchVotesProgress(onHouseDeferred = { houseDeferred = true }),
+        )
+        assertTrue(houseDeferred)
+        assertEquals(1, result.senateFetched)
+        assertEquals(0, result.houseFetched)
+        assertTrue(houseVoteSourceUrl(119, 1, 1) !in requested)
     }
 
     @Test fun build_lis_to_bioguide_unions_current_over_historical() = runTest {

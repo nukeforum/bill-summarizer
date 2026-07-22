@@ -98,12 +98,9 @@ jobs:
       # verdicts) AND $GITHUB_STEP_SUMMARY (so the Actions UI renders
       # them as a panel). Per the pipeline-check-cli-readable rule.
       # The parallel-run period is for observation; we'll switch
-      # canonical ownership once diffs are clean for ~a week.
-      # NOTE: until the Kotlin driver gains House support, house-*.json
-      # files fetched tonight appear only in the canonical tree, so the
-      # tree diff shows expected ⚠️ "Only in" lines for them. Once
-      # committed, they're pre-staged into the shadow on later runs and
-      # drop out of the diff.
+      # canonical ownership once diffs are clean for ~a week. Both
+      # drivers cover both chambers (Senate LIS + House clerk EVS), so
+      # the whole votes/ tree is expected byte-identical.
 
       - name: Compare canonical vs Kotlin shadow output
         if: always()

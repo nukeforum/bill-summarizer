@@ -9,19 +9,22 @@ import com.informedcitizen.pipeline.model.VotesIndex
 import kotlinx.coroutines.CancellationException
 
 /**
- * Fetch Senate roll-call votes and publish per-vote JSON plus a
- * per-Congress index. Direct port of Python `fetch_votes.py`.
+ * Fetch roll-call votes (both chambers) and publish per-vote JSON plus
+ * a per-Congress index. Direct port of Python `fetch_votes.py`.
  *
- * Senate only for now: senate.gov LIS XML needs no API key. House
- * votes come from the Congress.gov v3 house-vote endpoints
- * (CONGRESS_API_KEY) and land in a follow-up — the output layout
- * already accommodates both chambers.
+ * Both sources are keyless: Senate votes come from senate.gov LIS XML
+ * (menu + detail documents), House votes from clerk.house.gov EVS XML.
+ * The House publishes no machine-readable vote menu, so new House
+ * rolls are discovered by probing sequentially past the rolls already
+ * on disk until the first 404 (roll numbers are dense per
+ * calendar-year session).
  *
  * Runs are incremental and self-resuming: a roll call already on disk
  * is never refetched (published roll calls are immutable), so each run
- * costs the vote menu(s), the two legislators YAMLs, and one detail
- * XML per *new* vote. The index is rebuilt from the files on disk at
- * the end of every run, so a crashed run heals on the next one.
+ * costs the Senate vote menu(s), the two legislators YAMLs, one detail
+ * XML per *new* vote, and a handful of House probe fetches. The index
+ * is rebuilt from the files on disk at the end of every run, so a
+ * crashed run heals on the next one.
  */
 
 const val LEGISLATORS_CURRENT_YAML_URL: String =
@@ -37,6 +40,16 @@ const val LEGISLATORS_HISTORICAL_YAML_URL: String =
 // schedule walk in buildSessionCalendar).
 private val SENATE_SESSIONS = listOf(1, 2)
 
+// House sessions are probed the same way: a session that hasn't
+// started 404s on its first roll and costs a single fetch.
+private val HOUSE_SESSIONS = listOf(1, 2)
+
+// A clerk.house.gov outage or format drift looks like a run of
+// consecutive parse failures; a single bad roll has parseable
+// successors that reset the counter. The cap keeps a
+// 200-with-error-page response from probing forever.
+internal const val MAX_CONSECUTIVE_HOUSE_ERRORS: Int = 3
+
 /** Mirrors Python `fetch_votes.py`'s `--max-new` default. */
 const val FETCH_VOTES_MAX_NEW_DEFAULT: Int = 1000
 
@@ -48,12 +61,18 @@ class FetchVotesException(
 
 data class FetchVotesResult(
     val congress: Int,
-    /** Sessions whose vote menu was published and parsed. */
+    /** Sessions whose Senate vote menu was published and parsed. */
     val sessions: List<Int>,
-    /** Roll calls listed across all fetched menus. */
+    /** Roll calls listed across all fetched Senate menus. */
     val totalListed: Int,
+    /** Total new votes saved this run (both chambers). */
     val fetched: Int,
+    val senateFetched: Int,
+    val houseFetched: Int,
+    /** Total votes already on disk (both chambers). */
     val skipped: Int,
+    /** House candidate-ballot votes (Speaker elections) skipped. */
+    val unsupported: Int,
     val index: VotesIndex,
 )
 
@@ -65,6 +84,14 @@ data class FetchVotesProgress(
     val onMenus: (totalListed: Int, sessions: List<Int>) -> Unit = { _, _ -> },
     val onVoteSaved: (vote: RollCallVote) -> Unit = {},
     val onMaxNewReached: (maxNew: Int) -> Unit = {},
+    /** The House probe is starting (mirrors Python's banner line). */
+    val onHouseProbeStart: () -> Unit = {},
+    /** The Senate fetch exhausted the `--max-new` budget; House deferred. */
+    val onHouseDeferred: () -> Unit = {},
+    /** A candidate-ballot vote was skipped, e.g. `voteKey = "119-1-2"`. */
+    val onUnsupportedVote: (voteKey: String, message: String) -> Unit = { _, _ -> },
+    /** [MAX_CONSECUTIVE_HOUSE_ERRORS] hit; the session probe stopped. */
+    val onConsecutiveFailures: (count: Int, session: Int) -> Unit = { _, _ -> },
 )
 
 /**
@@ -121,17 +148,130 @@ suspend fun fetchSenateMenus(client: SenateVotesClient, congress: Int): List<Sen
     return menus
 }
 
+private data class HouseFetchResult(
+    val fetched: Int,
+    val skipped: Int,
+    val unsupported: Int,
+)
+
+/**
+ * Probe clerk.house.gov for new House roll calls and save them.
+ * Mirrors Python `fetch_votes.fetch_new_house_votes`.
+ *
+ * The House publishes no vote menu, but roll numbers are dense and
+ * sequential per session, so each session is walked from roll 1: rolls
+ * already on disk are skipped for free, missing ones are fetched, and
+ * the first 404 is the end of the published roll calls. Non-404 fetch
+ * failures are recorded and stop the session probe (an outage is
+ * indistinguishable from the end of the rolls; the next run re-walks
+ * from roll 1 with free existence checks). Candidate-ballot votes
+ * (Speaker elections) cannot be expressed as yea/nay positions; they
+ * are skipped — and re-probed every run, a couple of cheap fetches per
+ * Congress — rather than recorded, keeping file existence as the only
+ * resume cursor.
+ */
+private suspend fun fetchNewHouseVotes(
+    client: SenateVotesClient,
+    store: FileVotesStore,
+    congress: Int,
+    errors: ErrorCollector,
+    maxNew: Int,
+    progress: FetchVotesProgress,
+): HouseFetchResult {
+    var fetched = 0
+    var skipped = 0
+    var unsupported = 0
+    for (session in HOUSE_SESSIONS) {
+        var consecutiveErrors = 0
+        var rollNumber = 0
+        session@ while (true) {
+            rollNumber += 1
+            if (store.voteExists(congress, Chamber.HOUSE, session, rollNumber)) {
+                skipped++
+                continue
+            }
+            if (fetched >= maxNew) {
+                progress.onMaxNewReached(maxNew)
+                return HouseFetchResult(fetched, skipped, unsupported)
+            }
+            val url = houseVoteSourceUrl(congress, session, rollNumber)
+            val voteKey = "$congress-$session-$rollNumber"
+            val text = try {
+                client.fetch(url)
+            } catch (e: CancellationException) {
+                throw e
+            } catch (e: Throwable) {
+                if (e is SenateVotesApiException && e.status == 404) {
+                    break@session // end of the published roll calls for this session
+                }
+                // Outage vs. end is indistinguishable; retry next run.
+                errors.record(
+                    kind = "house_vote",
+                    identifier = voteKey,
+                    errorClass = e::class.simpleName ?: "Throwable",
+                    message = e.message ?: e.toString(),
+                    url = url,
+                )
+                break@session
+            }
+            val vote = try {
+                parseHouseVote(text)
+            } catch (e: UnsupportedVoteException) {
+                unsupported++
+                consecutiveErrors = 0
+                progress.onUnsupportedVote(voteKey, e.message.orEmpty())
+                continue
+            } catch (e: CancellationException) {
+                throw e
+            } catch (e: Throwable) {
+                // Per-vote isolation: record and retry next run.
+                errors.record(
+                    kind = "house_vote",
+                    identifier = voteKey,
+                    errorClass = e::class.simpleName ?: "Throwable",
+                    message = e.message ?: e.toString(),
+                    url = url,
+                )
+                consecutiveErrors++
+                if (consecutiveErrors >= MAX_CONSECUTIVE_HOUSE_ERRORS) {
+                    progress.onConsecutiveFailures(consecutiveErrors, session)
+                    break@session
+                }
+                continue
+            }
+            if (vote.congress != congress || vote.session != session || vote.rollNumber != rollNumber) {
+                errors.record(
+                    kind = "house_vote",
+                    identifier = voteKey,
+                    errorClass = "IllegalArgumentException",
+                    message = "detail XML identifies itself as ${vote.id}",
+                    url = url,
+                )
+                break@session // the year->session mapping is off; nothing later can be right
+            }
+            consecutiveErrors = 0
+            store.saveVote(vote)
+            fetched++
+            progress.onVoteSaved(vote)
+        }
+    }
+    return HouseFetchResult(fetched, skipped, unsupported)
+}
+
 /**
  * Full fetch-votes orchestrator. Mirrors Python `fetch_votes.main`:
- * fetch the session menus and the lis→bioguide map (both fatal on
- * failure), fetch/parse/save every menu vote not already on disk (a
+ * fetch the Senate session menus and the lis→bioguide map (both fatal
+ * on failure), fetch/parse/save every menu vote not already on disk (a
  * vote that fails is recorded in [errors] and left off disk, so the
  * next run retries it; detail XML whose self-identified session/roll
  * disagrees with the menu is rejected rather than published under the
- * wrong id), then rebuild the index from every vote file on disk.
+ * wrong id), probe clerk.house.gov for new House rolls with the
+ * remaining [maxNew] budget, then rebuild the index from every vote
+ * file on disk.
  *
- * [maxNew] caps new fetches per run; a capped run is harmless — the
- * next run picks up where it left off.
+ * [maxNew] caps new fetches per run, shared across both chambers
+ * (Senate first, remainder to the House); a capped run is harmless —
+ * the next run picks up where it left off.
  */
 suspend fun fetchVotes(
     client: SenateVotesClient,
@@ -149,15 +289,15 @@ suspend fun fetchVotes(
     val totalListed = menus.sumOf { it.voteNumbers.size }
     progress.onMenus(totalListed, menus.map { it.session })
 
-    var fetched = 0
-    var skipped = 0
+    var senateFetched = 0
+    var senateSkipped = 0
     outer@ for (menu in menus) {
         for (rollNumber in menu.voteNumbers) {
             if (store.voteExists(congress, Chamber.SENATE, menu.session, rollNumber)) {
-                skipped++
+                senateSkipped++
                 continue
             }
-            if (fetched >= maxNew) {
+            if (senateFetched >= maxNew) {
                 progress.onMaxNewReached(maxNew)
                 break@outer
             }
@@ -183,9 +323,18 @@ suspend fun fetchVotes(
                 continue
             }
             store.saveVote(vote)
-            fetched++
+            senateFetched++
             progress.onVoteSaved(vote)
         }
+    }
+
+    val houseBudget = maxNew - senateFetched
+    val house = if (houseBudget > 0) {
+        progress.onHouseProbeStart()
+        fetchNewHouseVotes(client, store, congress, errors, houseBudget, progress)
+    } else {
+        progress.onHouseDeferred()
+        HouseFetchResult(fetched = 0, skipped = 0, unsupported = 0)
     }
 
     val refs = store.loadVotes(congress).map(::buildVoteRef)
@@ -195,8 +344,11 @@ suspend fun fetchVotes(
         congress = congress,
         sessions = menus.map { it.session },
         totalListed = totalListed,
-        fetched = fetched,
-        skipped = skipped,
+        fetched = senateFetched + house.fetched,
+        senateFetched = senateFetched,
+        houseFetched = house.fetched,
+        skipped = senateSkipped + house.skipped,
+        unsupported = house.unsupported,
         index = index,
     )
 }
