@@ -31,9 +31,13 @@ from _votes import (
     attach_vote_refs,
     bill_id_from_document,
     bill_id_from_legis_num,
+    bill_type_and_number,
+    build_member_vote_rows,
+    build_member_votes,
     build_party_split,
     build_vote_ref,
     build_votes_index,
+    member_votes_relpath,
     strip_vote_refs,
     house_session_year,
     house_vote_source_url,
@@ -386,3 +390,81 @@ def test_strip_vote_refs_removes_only_the_derived_key():
     assert "votes" not in with_votes
     assert with_votes["title"] == "A bill"
     assert "votes" not in without
+
+
+# ------------------------------------------------------------ member shards
+
+
+def test_member_votes_relpath_and_bill_id_split():
+    assert member_votes_relpath("A000382") == "votes/members/A000382.json"
+    assert bill_type_and_number("hr30-119") == ("hr", "30")
+    assert bill_type_and_number("sjres5-119") == ("sjres", "5")
+    assert bill_type_and_number(None) == (None, None)
+    assert bill_type_and_number("not-a-bill-id") == (None, None)
+
+
+def test_member_vote_rows_have_wire_shape_and_short_title():
+    rows = build_member_vote_rows(
+        [_vote_618()], {"hr5371-119": "Continuing Appropriations Act, 2026"}
+    )
+    # One row per voting senator, keyed by bioguide id.
+    assert len(rows) == 100
+    (alsobrooks,) = rows["A000382"]
+    assert alsobrooks == {
+        "vote_id": "senate-119-1-618",
+        "congress": 119,
+        "date": "2025-11-10",
+        "question": "On Passage of the Bill",
+        "result": "Bill Passed",
+        "position": "nay",
+        "bill_id": "hr5371-119",
+        "type": "hr",
+        "number": "5371",
+        "short_title": "Continuing Appropriations Act, 2026",
+    }
+    # Key order matches the Kotlin MemberVoteRow declaration for byte parity.
+    assert list(alsobrooks) == [
+        "vote_id", "congress", "date", "question", "result", "position",
+        "bill_id", "type", "number", "short_title",
+    ]
+
+
+def test_member_vote_rows_null_bill_fields_for_non_bill_votes():
+    quorum = dict(_vote_618(), bill_id=None)
+    rows = build_member_vote_rows([quorum], {"hr5371-119": "unused"})
+    (row,) = rows["A000382"]
+    assert row["bill_id"] is None
+    assert row["type"] is None
+    assert row["number"] is None
+    assert row["short_title"] is None
+
+
+def test_member_vote_rows_are_newest_first_across_chambers():
+    house = _house_vote_17()  # 2025-01-16, McClintock (M001177) voted Yea
+    senate = _vote_618()  # 2025-11-10
+    rows = build_member_vote_rows([house, senate], {})
+    # A bill outside the short-title map still rows up, with a null title.
+    assert rows["A000382"][0]["short_title"] is None
+    mcclintock = rows["M001177"]
+    assert [r["vote_id"] for r in mcclintock] == ["house-119-1-17"]
+    assert mcclintock[0]["position"] == "yea"
+    assert mcclintock[0]["type"] == "hr"
+    assert mcclintock[0]["number"] == "30"
+    # A hypothetical member voting in both chambers sorts newest first.
+    moved = dict(house, positions=[dict(house["positions"][0], bioguide_id="A000382")])
+    combined = build_member_vote_rows([moved, senate], {})
+    assert [r["vote_id"] for r in combined["A000382"]] == [
+        "senate-119-1-618",
+        "house-119-1-17",
+    ]
+
+
+def test_build_member_votes_payload_shape():
+    rows = build_member_vote_rows([_vote_618()], {})["A000382"]
+    payload = build_member_votes("A000382", rows, generated_at="2026-07-22T00:00:00Z")
+    assert payload == {
+        "generated_at": "2026-07-22T00:00:00Z",
+        "bioguide_id": "A000382",
+        "vote_count": 1,
+        "votes": rows,
+    }

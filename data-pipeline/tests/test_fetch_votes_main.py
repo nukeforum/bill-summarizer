@@ -387,6 +387,74 @@ def test_manifest_rewritten_when_only_votes_coverage_flips(env, monkeypatch, cap
     assert manifest["bills"][0]["votes"] == []
 
 
+def test_main_writes_member_vote_shards(env, monkeypatch, capsys):
+    # The manifest supplies the short_title the shard rows carry.
+    (env / "congress119_bills.json").write_text(
+        json.dumps({
+            "generated_at": "2026-01-01T00:00:00Z",
+            "congress": 119,
+            "bills": [{
+                "id": "hr5371-119",
+                "title": "A bill",
+                "short_title": "Continuing Appropriations Act, 2026",
+            }],
+        }),
+        encoding="utf-8",
+    )
+    _fake(monkeypatch, {MENU_1_URL: _menu_xml(119, 1, [618]), DETAIL_618_URL: DETAIL_618})
+
+    assert fetch_votes.main(["--congress", "119"]) == 0
+    assert "member shards: 100 written, 0 unchanged" in capsys.readouterr().out
+
+    shard = json.loads(
+        (env / "votes" / "members" / "A000382.json").read_text(encoding="utf-8")
+    )
+    assert shard["bioguide_id"] == "A000382"
+    assert shard["vote_count"] == 1
+    (row,) = shard["votes"]
+    assert row["vote_id"] == "senate-119-1-618"
+    assert row["position"] == "nay"
+    assert row["bill_id"] == "hr5371-119"
+    assert row["short_title"] == "Continuing Appropriations Act, 2026"
+    # One shard per voting senator.
+    assert len(list((env / "votes" / "members").glob("*.json"))) == 100
+
+
+def test_member_shards_not_rewritten_when_rows_unchanged(env, monkeypatch, capsys):
+    responses = {MENU_1_URL: _menu_xml(119, 1, [618]), DETAIL_618_URL: DETAIL_618}
+    _fake(monkeypatch, responses)
+    assert fetch_votes.main(["--congress", "119"]) == 0
+    shard_path = env / "votes" / "members" / "A000382.json"
+    first = shard_path.read_bytes()
+    capsys.readouterr()
+
+    # No new votes: every shard must keep its bytes (and generated_at), or
+    # the nightly run would churn ~540 committed files.
+    _fake(monkeypatch, responses)
+    assert fetch_votes.main(["--congress", "119"]) == 0
+    assert "member shards: 0 written, 100 unchanged" in capsys.readouterr().out
+    assert shard_path.read_bytes() == first
+
+
+def test_member_shard_rewritten_when_short_title_appears(env, monkeypatch):
+    responses = {MENU_1_URL: _menu_xml(119, 1, [618]), DETAIL_618_URL: DETAIL_618}
+    _fake(monkeypatch, responses)
+    assert fetch_votes.main(["--congress", "119"]) == 0
+    shard_path = env / "votes" / "members" / "A000382.json"
+    assert json.loads(shard_path.read_text(encoding="utf-8"))["votes"][0]["short_title"] is None
+
+    # A later bills run publishes the short title; the next votes run must
+    # sync it into the shard rows even though no new votes landed.
+    _seed_bills_manifest(env, "hr5371-119")
+    manifest = json.loads((env / "congress119_bills.json").read_text(encoding="utf-8"))
+    manifest["bills"][0]["short_title"] = "Continuing Appropriations Act, 2026"
+    (env / "congress119_bills.json").write_text(json.dumps(manifest), encoding="utf-8")
+    _fake(monkeypatch, responses)
+    assert fetch_votes.main(["--congress", "119"]) == 0
+    shard = json.loads(shard_path.read_text(encoding="utf-8"))
+    assert shard["votes"][0]["short_title"] == "Continuing Appropriations Act, 2026"
+
+
 def test_bills_manifest_untouched_when_vote_refs_unchanged(env, monkeypatch, capsys):
     manifest_path = _seed_bills_manifest(env, "hr5371-119")
     responses = {MENU_1_URL: _menu_xml(119, 1, [618]), DETAIL_618_URL: DETAIL_618}

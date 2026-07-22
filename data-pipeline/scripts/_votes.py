@@ -483,3 +483,73 @@ def strip_vote_refs(bills: list[dict[str, Any]]) -> list[dict[str, Any]]:
     for bill in bills:
         bill.pop("votes", None)
     return bills
+
+
+# Matches the MemberVotes / MemberVoteRow wire models in pipeline:shared:
+# one shard per member with their position on every published roll call,
+# so the app fetches per saved rep (a few tens of KB), never per bill.
+
+_BILL_ID_RE = re.compile(r"^([a-z]+?)(\d+)-\d+$")
+
+
+def member_votes_relpath(bioguide_id: str) -> str:
+    """Shard location relative to docs/data/, e.g. ``votes/members/A000382.json``."""
+    return f"votes/members/{bioguide_id}.json"
+
+
+def bill_type_and_number(bill_id: str | None) -> tuple[str | None, str | None]:
+    """Split a ``Bill.id`` into display parts: ``"hr30-119"`` -> ``("hr", "30")``."""
+    m = _BILL_ID_RE.match(bill_id or "")
+    if not m:
+        return None, None
+    return m.group(1), m.group(2)
+
+
+def build_member_vote_rows(
+    votes: list[dict[str, Any]], short_titles: dict[str, str]
+) -> dict[str, list[dict[str, Any]]]:
+    """Invert per-vote positions into per-member MemberVoteRow lists.
+
+    ``short_titles`` maps ``bill_id`` -> ``short_title`` (from the bills
+    manifests); rows for bills outside it get ``short_title: null``. Every
+    member's rows come out newest first with the ``build_votes_index``
+    tiebreak, spanning all the Congresses in ``votes``. Key order matches
+    the Kotlin MemberVoteRow declaration for byte parity.
+    """
+    ordered = sorted(
+        votes,
+        key=lambda v: (v["date"], v["roll_number"], v["chamber"]),
+        reverse=True,
+    )
+    rows: dict[str, list[dict[str, Any]]] = {}
+    for vote in ordered:
+        bill_id = vote["bill_id"]
+        bill_type, bill_number = bill_type_and_number(bill_id)
+        for member in vote["positions"]:
+            rows.setdefault(member["bioguide_id"], []).append(
+                {
+                    "vote_id": vote["id"],
+                    "congress": vote["congress"],
+                    "date": vote["date"],
+                    "question": vote["question"],
+                    "result": vote["result"],
+                    "position": member["position"],
+                    "bill_id": bill_id,
+                    "type": bill_type,
+                    "number": bill_number,
+                    "short_title": short_titles.get(bill_id) if bill_id else None,
+                }
+            )
+    return rows
+
+
+def build_member_votes(
+    bioguide_id: str, rows: list[dict[str, Any]], generated_at: str
+) -> dict[str, Any]:
+    """Assemble one member's ``votes/members/<bioguideId>.json`` payload."""
+    return {
+        "generated_at": generated_at,
+        "bioguide_id": bioguide_id,
+        "vote_count": len(rows),
+        "votes": rows,
+    }

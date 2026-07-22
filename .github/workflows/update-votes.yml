@@ -106,7 +106,8 @@ jobs:
       # The parallel-run period is for observation; we'll switch
       # canonical ownership once diffs are clean for ~a week. Both
       # drivers cover both chambers (Senate LIS + House clerk EVS), so
-      # the whole votes/ tree is expected byte-identical.
+      # the per-vote votes/ tree is expected byte-identical (the
+      # Python-only votes/members/ shards are excluded below).
 
       - name: Compare canonical vs Kotlin shadow output
         if: always()
@@ -121,12 +122,16 @@ jobs:
             echo "Comparing \`$CANONICAL_DIR\` (Python, canonical) vs \`$SHADOW_DIR\` (Kotlin)."
             echo ""
             # Per-vote files carry no timestamps, so the trees must be
-            # byte-identical.
+            # byte-identical. KNOWN PARITY WINDOW: the per-member shards
+            # under votes/members/ are rebuilt by the Python driver only
+            # (issue #21's MemberVotes contract) until the Kotlin port
+            # lands, so they are excluded from the tree diff — remove the
+            # --exclude when the Kotlin driver rebuilds them too.
             if [ ! -d "$SHADOW_DIR/votes" ]; then
               echo "- ❌ \`votes/\`: shadow tree missing — Kotlin did not produce output"
-            elif diff -r "$CANONICAL_DIR/votes" "$SHADOW_DIR/votes" > /tmp/votes-tree.diff 2>&1; then
-              count=$(find "$CANONICAL_DIR/votes" -name '*.json' | wc -l)
-              echo "- ✅ \`votes/\`: byte-identical per-vote trees ($count files)"
+            elif diff -r --exclude=members "$CANONICAL_DIR/votes" "$SHADOW_DIR/votes" > /tmp/votes-tree.diff 2>&1; then
+              count=$(find "$CANONICAL_DIR/votes" -path '*/members/*' -prune -o -name '*.json' -print | wc -l)
+              echo "- ✅ \`votes/\`: byte-identical per-vote trees ($count files; members/ shards Python-only, excluded)"
             else
               echo "- ⚠️  \`votes/\`: per-vote trees differ"
               echo ""

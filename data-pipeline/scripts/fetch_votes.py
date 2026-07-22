@@ -6,11 +6,12 @@ publishes no machine-readable vote menu, so new House rolls are discovered by
 probing sequentially past the rolls already on disk until the first 404 (roll
 numbers are dense per calendar-year session).
 
-Layout under docs/data/ (matches the RollCallVote/VotesIndex wire models in
-pipeline:shared):
+Layout under docs/data/ (matches the RollCallVote/VotesIndex/MemberVotes wire
+models in pipeline:shared):
 
     votes/congress119/senate-1-618.json   one file per roll call, with positions
     votes/congress119/house-1-17.json
+    votes/members/A000382.json            per-member shard: their every position
     congress119_votes.json                index: every vote minus positions
 
 Runs are incremental and self-resuming: a roll call already on disk is never
@@ -40,9 +41,12 @@ from _votes import (
     CHAMBER_SENATE,
     UnsupportedVoteError,
     attach_vote_refs,
+    build_member_vote_rows,
+    build_member_votes,
     build_vote_ref,
     build_votes_index,
     house_vote_source_url,
+    member_votes_relpath,
     parse_house_vote,
     parse_lis_to_bioguide_yaml,
     parse_senate_vote,
@@ -96,17 +100,69 @@ def vote_path(congress: int, chamber: str, session: int, roll_number: int) -> Pa
     return _common.OUTPUT_DIR / vote_file_relpath(congress, chamber, session, roll_number)
 
 
-def rebuild_votes_index(congress: int) -> dict[str, Any]:
-    """Rebuild congress{N}_votes.json from every vote file on disk."""
-    refs = []
-    directory = votes_dir(congress)
-    if directory.exists():
+def load_congress_votes() -> dict[int, list[dict[str, Any]]]:
+    """Every per-vote file on disk, keyed by Congress, filename-sorted.
+
+    Loaded once per run and shared by the index rebuild (current Congress)
+    and the member-shard rebuild (all Congresses, since one shard spans a
+    member's whole published history).
+    """
+    votes_by_congress: dict[int, list[dict[str, Any]]] = {}
+    root = _common.OUTPUT_DIR / "votes"
+    for directory in sorted(root.glob("congress*")):
+        suffix = directory.name.removeprefix("congress")
+        if not suffix.isdigit():
+            continue
+        votes = []
         for path in sorted(directory.glob("*.json")):
             with path.open("r", encoding="utf-8") as f:
-                refs.append(build_vote_ref(json.load(f)))
-    payload = build_votes_index(congress, refs, now_iso())
+                votes.append(json.load(f))
+        votes_by_congress[int(suffix)] = votes
+    return votes_by_congress
+
+
+def rebuild_votes_index(congress: int, votes: list[dict[str, Any]]) -> dict[str, Any]:
+    """Rebuild congress{N}_votes.json from the votes loaded off disk."""
+    payload = build_votes_index(
+        congress, [build_vote_ref(vote) for vote in votes], now_iso()
+    )
     _common._write_json(_common.votes_index_path(congress), payload)
     return payload
+
+
+def rebuild_member_votes(
+    votes_by_congress: dict[int, list[dict[str, Any]]]
+) -> tuple[int, int]:
+    """Rebuild the per-member shards under votes/members/ from disk.
+
+    Short titles come from whichever bills manifests exist. A shard is only
+    rewritten when its rows changed (new votes for that member, or a linked
+    bill's short_title changed), so steady-state runs with no new votes
+    leave all ~540 files — and their generated_at stamps — untouched.
+    Returns (written, unchanged).
+    """
+    short_titles: dict[str, str] = {}
+    for congress in votes_by_congress:
+        if not _common.manifest_path_for(congress).exists():
+            continue
+        for bill in _common.load_manifest(congress).get("bills", []):
+            if bill.get("short_title"):
+                short_titles[bill["id"]] = bill["short_title"]
+
+    all_votes = [vote for votes in votes_by_congress.values() for vote in votes]
+    written = 0
+    unchanged = 0
+    for bioguide_id, rows in build_member_vote_rows(all_votes, short_titles).items():
+        path = _common.OUTPUT_DIR / member_votes_relpath(bioguide_id)
+        if path.exists():
+            with path.open("r", encoding="utf-8") as f:
+                existing = json.load(f)
+            if existing.get("votes") == rows:
+                unchanged += 1
+                continue
+        _common._write_json(path, build_member_votes(bioguide_id, rows, now_iso()))
+        written += 1
+    return written, unchanged
 
 
 def refresh_bill_vote_refs(congress: int, refs: list[dict[str, Any]]) -> bool:
@@ -345,9 +401,14 @@ def main(argv: list[str] | None = None) -> int:
         print("House probe deferred to next run: --max-new budget exhausted")
         house_fetched = house_skipped = unsupported = 0
 
-    index = rebuild_votes_index(congress)
+    votes_by_congress = load_congress_votes()
+    index = rebuild_votes_index(congress, votes_by_congress.get(congress, []))
     if refresh_bill_vote_refs(congress, index["votes"]):
         print(f"bill manifest: congress{congress}_bills.json vote refs refreshed")
+    members_written, members_unchanged = rebuild_member_votes(votes_by_congress)
+    print(
+        f"member shards: {members_written} written, {members_unchanged} unchanged"
+    )
     errors.print_summary(label="fetch_votes")
     print(
         f"OK: {senate_fetched + house_fetched} new "
