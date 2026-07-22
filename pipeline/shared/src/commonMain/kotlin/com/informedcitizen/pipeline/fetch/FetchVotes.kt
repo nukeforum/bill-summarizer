@@ -277,9 +277,14 @@ fun refreshBillVoteRefs(
     refs: List<VoteRef>,
     nowIso: String,
 ): Boolean {
-    val bills = manifestStore.load(congress)?.bills ?: return false
+    val manifest = manifestStore.load(congress) ?: return false
+    val bills = manifest.bills
     val enriched = attachVoteRefs(bills, refs)
-    if (enriched == bills) return false
+    // The rewrite must also happen when only the votes_coverage gate flips
+    // (first index publish with no bill-linked votes yet), or the app would
+    // keep hiding vote surfaces until the next bills run.
+    val coverageChanged = manifest.votesCoverage != manifestStore.votesCoverage(congress)
+    if (enriched == bills && !coverageChanged) return false
     manifestStore.save(congress, enriched, nowIso)
     return true
 }

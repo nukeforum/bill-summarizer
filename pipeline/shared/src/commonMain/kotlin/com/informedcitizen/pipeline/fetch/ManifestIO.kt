@@ -38,6 +38,15 @@ class FileBillsManifestStore(
 ) {
     fun pathFor(congress: Int): Path = outputDir / manifestFileName(congress)
 
+    /**
+     * Whether the votes pipeline has published an index for [congress]
+     * (`congress<N>_votes.json` beside the manifest). Stamped into
+     * [BillsManifest.votesCoverage] on every save; mirrors Python
+     * `_common.votes_coverage`.
+     */
+    fun votesCoverage(congress: Int): Boolean =
+        fileSystem.exists(outputDir / votesIndexFileName(congress))
+
     /** Read the manifest; returns `null` if the file is absent. */
     fun load(congress: Int): BillsManifest? {
         val path = pathFor(congress)
@@ -59,6 +68,7 @@ class FileBillsManifestStore(
         val manifest = BillsManifest(
             generatedAt = nowIso,
             congress = congress,
+            votesCoverage = votesCoverage(congress),
             bills = bills,
         )
         outputDir.let { fileSystem.createDirectories(it) }

@@ -376,8 +376,34 @@ def parse_lis_to_bioguide_yaml(text: str) -> dict[str, str]:
     return out
 
 
+_POSITION_WIRE_ORDER = ("yea", "nay", "present", "not_voting")
+
+
+def build_party_split(positions: list[dict[str, Any]]) -> dict[str, dict[str, int]]:
+    """Per-position party counts, e.g. ``{"yea": {"D": 210, "R": 6}}``.
+
+    Position keys appear in wire order and only when at least one member
+    with a known party holds that position; party keys are sorted. Members
+    with no party recorded are left out, so party counts may sum below the
+    position total — consumers render the numbers as published rather than
+    reconciling them.
+    """
+    counts: dict[str, dict[str, int]] = {}
+    for member in positions:
+        party = member.get("party")
+        if not party:
+            continue
+        by_party = counts.setdefault(member["position"], {})
+        by_party[party] = by_party.get(party, 0) + 1
+    return {
+        position: {party: counts[position][party] for party in sorted(counts[position])}
+        for position in _POSITION_WIRE_ORDER
+        if position in counts
+    }
+
+
 def build_vote_ref(vote: dict[str, Any]) -> dict[str, Any]:
-    """A VotesIndex row: the vote minus positions, plus its file path."""
+    """A VotesIndex row: the vote minus positions, plus party split and file path."""
     return {
         "id": vote["id"],
         "chamber": vote["chamber"],
@@ -388,6 +414,7 @@ def build_vote_ref(vote: dict[str, Any]) -> dict[str, Any]:
         "result": vote["result"],
         "bill_id": vote["bill_id"],
         "totals": vote["totals"],
+        "party_split": build_party_split(vote["positions"]),
         "path": vote_file_relpath(
             vote["congress"], vote["chamber"], vote["session"], vote["roll_number"]
         ),

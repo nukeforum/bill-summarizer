@@ -479,6 +479,34 @@ class FetchVotesTest {
         assertEquals(env.readIndex().votes, bills.getValue("hr5371-119").votes)
         assertTrue(bills.getValue("s42-119").votes.isEmpty())
         assertEquals(NOW_ISO, manifest.generatedAt)
+        assertTrue(manifest.votesCoverage)
+    }
+
+    @Test fun manifest_rewritten_when_only_votes_coverage_flips() = runTest {
+        // Mirrors Python `test_manifest_rewritten_when_only_votes_coverage_flips`:
+        // a manifest whose bills gain no vote refs (the only fetched vote links
+        // a different bill) must still be rewritten on the first index publish,
+        // so votes_coverage flips and the app can stop hiding vote surfaces.
+        val env = VotesEnv()
+        val manifestStore = FileBillsManifestStore(env.fileSystem, "/out".toPath())
+        manifestStore.save(
+            congress = 119,
+            bills = listOf(seedBill("s42-119")),
+            nowIso = "2026-01-01T00:00:00Z",
+        )
+        assertFalse(manifestStore.load(119)!!.votesCoverage)
+        val responses = baseResponses(menuXml(119, 1, listOf(618)))
+        responses[DETAIL_618_URL] = SENATE_VOTE_618_XML
+
+        val result = fetchVotes(
+            mockVotesClient(responses), env.store, 119, NOW_ISO, env.errors,
+            manifestStore = manifestStore,
+        )
+        assertTrue(result.billManifestRefreshed)
+
+        val manifest = manifestStore.load(119)!!
+        assertTrue(manifest.votesCoverage)
+        assertTrue(manifest.bills.single().votes.isEmpty())
     }
 
     @Test fun bills_manifest_untouched_when_vote_refs_unchanged() = runTest {

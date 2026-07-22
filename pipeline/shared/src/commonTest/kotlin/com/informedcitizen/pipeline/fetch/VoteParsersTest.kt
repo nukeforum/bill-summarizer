@@ -258,6 +258,71 @@ class VoteParsersTest {
         assertEquals(mapOf("S428" to "A000382"), parseLisToBioguideYaml(text))
     }
 
+    // ----------------------------------------------------- party split
+
+    @Test
+    fun buildPartySplitOrdersPositionsAndSortsParties() {
+        val positions = listOf(
+            MemberVote("A1", VotePosition.NAY, party = "R"),
+            MemberVote("A2", VotePosition.YEA, party = "R"),
+            MemberVote("A3", VotePosition.YEA, party = "D"),
+            MemberVote("A4", VotePosition.YEA, party = "R"),
+            MemberVote("A5", VotePosition.NOT_VOTING, party = "I"),
+            MemberVote("A6", VotePosition.YEA, party = null), // no party: left out
+        )
+        val split = buildPartySplit(positions)
+        // Position keys in wire order (yea before nay), party keys sorted,
+        // "present" absent because no member holds it.
+        assertEquals(listOf("yea", "nay", "not_voting"), split.keys.toList())
+        assertEquals(mapOf("D" to 1, "R" to 2), split["yea"])
+        assertEquals(listOf("D", "R"), split.getValue("yea").keys.toList())
+        assertEquals(mapOf("R" to 1), split["nay"])
+        assertEquals(mapOf("I" to 1), split["not_voting"])
+    }
+
+    @Test
+    fun senateVoteRefPartySplitMatchesOfficialBreakdown() {
+        val ref = buildVoteRef(vote618())
+        assertEquals(
+            mapOf(
+                "yea" to mapOf("D" to 7, "I" to 1, "R" to 52),
+                "nay" to mapOf("D" to 38, "I" to 1, "R" to 1),
+            ),
+            ref.partySplit,
+        )
+    }
+
+    @Test
+    fun houseVoteRefPartySplitSumsToTotals() {
+        val ref = buildVoteRef(houseVote17())
+        assertEquals(
+            mapOf(
+                "yea" to mapOf("D" to 61, "R" to 213),
+                "nay" to mapOf("D" to 145),
+                "not_voting" to mapOf("D" to 9, "R" to 6),
+            ),
+            ref.partySplit,
+        )
+        val totals = mapOf(
+            "yea" to ref.totals.yea,
+            "nay" to ref.totals.nay,
+            "present" to ref.totals.present,
+            "not_voting" to ref.totals.notVoting,
+        )
+        for ((position, byParty) in ref.partySplit) {
+            assertEquals(totals[position], byParty.values.sum())
+        }
+    }
+
+    @Test
+    fun partySplitSitsBetweenTotalsAndPathOnTheWire() {
+        val text = ManifestJson.encodeToString(VoteRef.serializer(), buildVoteRef(vote618()))
+        val totals = text.indexOf("\"totals\"")
+        val split = text.indexOf("\"party_split\"")
+        val path = text.indexOf("\"path\"")
+        assertTrue(totals in 0 until split && split < path)
+    }
+
     // ----------------------------------------------------------- index
 
     @Test

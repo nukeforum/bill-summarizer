@@ -31,6 +31,7 @@ from _votes import (
     attach_vote_refs,
     bill_id_from_document,
     bill_id_from_legis_num,
+    build_party_split,
     build_vote_ref,
     build_votes_index,
     strip_vote_refs,
@@ -277,6 +278,46 @@ def test_parse_lis_to_bioguide_yaml():
     assert parse_lis_to_bioguide_yaml(text) == {"S428": "A000382"}
 
 
+# -------------------------------------------------------------- party split
+
+def test_build_party_split_orders_positions_and_sorts_parties():
+    positions = [
+        {"bioguide_id": "A1", "position": "nay", "party": "R"},
+        {"bioguide_id": "A2", "position": "yea", "party": "R"},
+        {"bioguide_id": "A3", "position": "yea", "party": "D"},
+        {"bioguide_id": "A4", "position": "yea", "party": "R"},
+        {"bioguide_id": "A5", "position": "not_voting", "party": "I"},
+        {"bioguide_id": "A6", "position": "yea", "party": None},  # no party: left out
+    ]
+    split = build_party_split(positions)
+    # Position keys in wire order (yea before nay), party keys sorted,
+    # "present" absent because no member holds it.
+    assert list(split.keys()) == ["yea", "nay", "not_voting"]
+    assert split["yea"] == {"D": 1, "R": 2}
+    assert list(split["yea"].keys()) == ["D", "R"]
+    assert split["nay"] == {"R": 1}
+    assert split["not_voting"] == {"I": 1}
+
+
+def test_senate_vote_ref_party_split_matches_official_breakdown():
+    ref = build_vote_ref(_vote_618())
+    assert ref["party_split"] == {
+        "yea": {"D": 7, "I": 1, "R": 52},
+        "nay": {"D": 38, "I": 1, "R": 1},
+    }
+
+
+def test_house_vote_ref_party_split_sums_to_totals():
+    ref = build_vote_ref(_house_vote_17())
+    assert ref["party_split"] == {
+        "yea": {"D": 61, "R": 213},
+        "nay": {"D": 145},
+        "not_voting": {"D": 9, "R": 6},
+    }
+    for position, by_party in ref["party_split"].items():
+        assert sum(by_party.values()) == ref["totals"][position]
+
+
 # -------------------------------------------------------------------- index
 
 def test_vote_ref_drops_positions_and_carries_path():
@@ -286,6 +327,9 @@ def test_vote_ref_drops_positions_and_carries_path():
     assert ref["path"] == "votes/congress119/senate-1-618.json"
     assert ref["bill_id"] == "hr5371-119"
     assert ref["totals"]["yea"] == 60
+    # party_split sits between totals and path, matching the Kotlin
+    # VoteRef declaration order for byte parity.
+    assert list(ref.keys())[-3:] == ["totals", "party_split", "path"]
 
 
 def test_votes_index_is_newest_first_with_count():

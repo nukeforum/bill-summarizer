@@ -361,6 +361,30 @@ def test_main_attaches_vote_refs_to_bills_manifest(env, monkeypatch, capsys):
     assert bills["hr5371-119"]["votes"] == index["votes"]
     assert bills["s42-119"]["votes"] == []
     assert manifest["generated_at"] != "2026-01-01T00:00:00Z"
+    assert manifest["votes_coverage"] is True
+
+
+def test_manifest_rewritten_when_only_votes_coverage_flips(env, monkeypatch, capsys):
+    # A manifest whose bills gain no vote refs (the only fetched vote links
+    # a different bill) must still be rewritten on the first index publish,
+    # so votes_coverage flips and the app can stop hiding vote surfaces.
+    (env / "congress119_bills.json").write_text(
+        json.dumps({
+            "generated_at": "2026-01-01T00:00:00Z",
+            "congress": 119,
+            "votes_coverage": False,
+            "bills": [{"id": "s42-119", "title": "A bill", "votes": []}],
+        }),
+        encoding="utf-8",
+    )
+    _fake(monkeypatch, {MENU_1_URL: _menu_xml(119, 1, [618]), DETAIL_618_URL: DETAIL_618})
+
+    assert fetch_votes.main(["--congress", "119"]) == 0
+    assert "vote refs refreshed" in capsys.readouterr().out
+
+    manifest = json.loads((env / "congress119_bills.json").read_text(encoding="utf-8"))
+    assert manifest["votes_coverage"] is True
+    assert manifest["bills"][0]["votes"] == []
 
 
 def test_bills_manifest_untouched_when_vote_refs_unchanged(env, monkeypatch, capsys):

@@ -3,6 +3,7 @@ package com.informedcitizen.pipeline.model
 import kotlinx.serialization.json.Json
 import kotlin.test.Test
 import kotlin.test.assertEquals
+import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
 /** Matches the app's lenient wire config (NetworkModule / HttpClientFactory). */
@@ -108,6 +109,39 @@ class BillVoteRefsTest {
         assertEquals(1, bill.votes.size)
         assertEquals(217, bill.votes[0].totals.yea)
         assertEquals("votes/congress119/house-1-17.json", bill.votes[0].path)
+    }
+
+    @Test fun decodes_party_split_and_defaults_empty_when_absent() {
+        val json = """
+            {
+              "id": "house-119-1-17",
+              "chamber": "house",
+              "session": 1,
+              "roll_number": 17,
+              "date": "2025-01-23",
+              "question": "On Passage",
+              "result": "Passed",
+              "bill_id": "hr1234-119",
+              "totals": {"yea": 217, "nay": 215, "present": 0, "not_voting": 3},
+              "party_split": {"yea": {"D": 61, "R": 213}, "nay": {"D": 145}},
+              "path": "votes/congress119/house-1-17.json"
+            }
+        """.trimIndent()
+        val ref = LenientJson.decodeFromString(VoteRef.serializer(), json)
+        assertEquals(mapOf("D" to 61, "R" to 213), ref.partySplit["yea"])
+        assertEquals(mapOf("D" to 145), ref.partySplit["nay"])
+        // Refs published before the field existed decode with an empty map.
+        assertTrue(voteRefFixture().partySplit.isEmpty())
+    }
+
+    @Test fun manifest_votes_coverage_defaults_false_on_legacy_json() {
+        // Manifests published before the votes pipeline carry no flag; the
+        // app must read that as "coverage unknown -> hide vote surfaces".
+        val legacy = """{"generated_at": "2026-01-01T00:00:00Z", "congress": 119, "bills": []}"""
+        assertFalse(LenientJson.decodeFromString(BillsManifest.serializer(), legacy).votesCoverage)
+        val current =
+            """{"generated_at": "2026-01-01T00:00:00Z", "congress": 119, "votes_coverage": true, "bills": []}"""
+        assertTrue(LenientJson.decodeFromString(BillsManifest.serializer(), current).votesCoverage)
     }
 
     @Test fun publish_config_always_emits_votes_key() {

@@ -616,6 +616,11 @@ def save_manifest(congress: int, manifest: dict[str, Any]) -> dict[str, Any]:
     final: dict[str, Any] = {
         "generated_at": now_iso(),
         "congress": congress,
+        # Rollout gate for the app's vote surfaces: with lenient parsing an
+        # empty per-bill votes list is ambiguous ("no roll call" vs "votes
+        # not published yet"), so the manifest says whether votes coverage
+        # exists for this Congress — true once the votes index is on disk.
+        "votes_coverage": votes_coverage(congress),
         "bills": manifest.get("bills", []),
     }
     _write_json(manifest_path_for(congress), final)
@@ -627,6 +632,11 @@ def save_manifest(congress: int, manifest: dict[str, Any]) -> dict[str, Any]:
 
 def votes_index_path(congress: int) -> Path:
     return OUTPUT_DIR / f"congress{congress}_votes.json"
+
+
+def votes_coverage(congress: int) -> bool:
+    """Whether the votes pipeline has published an index for ``congress``."""
+    return votes_index_path(congress).exists()
 
 
 def load_vote_refs(congress: int) -> list[dict[str, Any]]:

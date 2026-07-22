@@ -451,7 +451,38 @@ fun parseLisToBioguideYaml(text: String): Map<String, String> {
     return out
 }
 
-/** A [VotesIndex] row: the vote minus positions, plus its file path. */
+/** Wire value for a [VotePosition], used as [VoteRef.partySplit] keys. */
+internal val VotePosition.wireName: String
+    get() = when (this) {
+        VotePosition.YEA -> "yea"
+        VotePosition.NAY -> "nay"
+        VotePosition.PRESENT -> "present"
+        VotePosition.NOT_VOTING -> "not_voting"
+    }
+
+/**
+ * Per-position party counts for [VoteRef.partySplit]: position keys in
+ * wire order, only when at least one member with a known party holds
+ * that position; party keys sorted; members with no party left out.
+ * Mirrors Python `_votes.build_party_split` (byte-identical key order).
+ */
+fun buildPartySplit(positions: List<MemberVote>): Map<String, Map<String, Int>> {
+    val counts = mutableMapOf<VotePosition, MutableMap<String, Int>>()
+    for (member in positions) {
+        val party = member.party
+        if (party.isNullOrEmpty()) continue
+        val byParty = counts.getOrPut(member.position) { mutableMapOf() }
+        byParty[party] = (byParty[party] ?: 0) + 1
+    }
+    val out = LinkedHashMap<String, Map<String, Int>>()
+    for (position in VotePosition.entries) {
+        val byParty = counts[position] ?: continue
+        out[position.wireName] = byParty.keys.sorted().associateWith { byParty.getValue(it) }
+    }
+    return out
+}
+
+/** A [VotesIndex] row: the vote minus positions, plus party split and file path. */
 fun buildVoteRef(vote: RollCallVote): VoteRef = VoteRef(
     id = vote.id,
     chamber = vote.chamber,
@@ -462,6 +493,7 @@ fun buildVoteRef(vote: RollCallVote): VoteRef = VoteRef(
     result = vote.result,
     billId = vote.billId,
     totals = vote.totals,
+    partySplit = buildPartySplit(vote.positions),
     path = voteFileRelPath(vote.congress, vote.chamber, vote.session, vote.rollNumber),
 )
 

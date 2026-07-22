@@ -124,7 +124,11 @@ def refresh_bill_vote_refs(congress: int, refs: list[dict[str, Any]]) -> bool:
     bills = manifest.get("bills", [])
     before = copy.deepcopy(bills)
     attach_vote_refs(bills, refs)
-    if bills == before:
+    # The rewrite must also happen when only the votes_coverage gate flips
+    # (first index publish with no bill-linked votes yet), or the app would
+    # keep hiding vote surfaces until the next bills run.
+    coverage_changed = bool(manifest.get("votes_coverage")) != _common.votes_coverage(congress)
+    if bills == before and not coverage_changed:
         return False
     _common.save_manifest(congress, {"bills": bills})
     return True

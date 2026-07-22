@@ -24,6 +24,14 @@ data class VotesIndex(
  * plus [path] — the location of the full vote file relative to
  * `docs/data/` (e.g. `votes/congress119/house-1-17.json`), following
  * the `manifest_path` convention in [CongressEntry].
+ *
+ * [partySplit] maps each position wire value (`yea`, `nay`, `present`,
+ * `not_voting`) to per-party counts, e.g.
+ * `{"yea": {"D": 210, "R": 6, "I": 2}}` — position keys appear in wire
+ * order and only when at least one member with a known party holds that
+ * position; party keys are sorted. Members with no recorded party are
+ * left out, so party counts may sum below the position total; consumers
+ * render the numbers as published rather than reconciling them.
  */
 @Serializable
 data class VoteRef(
@@ -36,5 +44,6 @@ data class VoteRef(
     val result: String,
     @SerialName("bill_id") val billId: String? = null,
     val totals: VoteTotals,
+    @SerialName("party_split") val partySplit: Map<String, Map<String, Int>> = emptyMap(),
     val path: String,
 )

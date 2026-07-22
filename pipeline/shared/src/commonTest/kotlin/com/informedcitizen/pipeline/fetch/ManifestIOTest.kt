@@ -81,6 +81,26 @@ class ManifestIOTest {
         assertTrue("\"text_url_html\": null" in text, "missing explicit null text_url_html:\n$text")
     }
 
+    @Test fun save_stamps_votes_coverage_from_index_presence() {
+        val fs = FakeFileSystem()
+        val store = FileBillsManifestStore(fs, "/out".toPath())
+
+        store.save(119, listOf(fixture()), nowIso = "2026-05-15T00:00:00Z")
+        var text = fs.source("/out/congress119_bills.json".toPath()).buffer().use { it.readUtf8() }
+        assertTrue("\"votes_coverage\": false" in text, "expected coverage false without index:\n$text")
+
+        fs.write("/out/congress119_votes.json".toPath()) { writeUtf8("{}") }
+        store.save(119, listOf(fixture()), nowIso = "2026-05-15T00:00:00Z")
+        text = fs.source("/out/congress119_bills.json".toPath()).buffer().use { it.readUtf8() }
+        assertTrue("\"votes_coverage\": true" in text, "expected coverage true with index:\n$text")
+        // Key order matches Python save_manifest for byte parity.
+        assertTrue(
+            text.indexOf("\"congress\"") < text.indexOf("\"votes_coverage\"") &&
+                text.indexOf("\"votes_coverage\"") < text.indexOf("\"bills\""),
+            "votes_coverage must sit between congress and bills:\n$text",
+        )
+    }
+
     @Test fun save_uses_two_space_indent() {
         val fs = FakeFileSystem()
         val store = FileBillsManifestStore(fs, "/out".toPath())
