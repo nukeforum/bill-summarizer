@@ -6,6 +6,7 @@ import com.informedcitizen.pipeline.model.Action
 import com.informedcitizen.pipeline.model.Member
 import com.informedcitizen.pipeline.model.MemberLegislation
 import com.informedcitizen.pipeline.model.MemberLegislationItem
+import com.informedcitizen.pipeline.model.MemberVotes
 import com.informedcitizen.pipeline.model.MembersIndex
 import com.informedcitizen.testutil.FakeMembersIndexCache
 import kotlinx.coroutines.test.runTest
@@ -54,6 +55,8 @@ private class FakeMembersApi(
     }
     override suspend fun getCosponsored(bioguideId: String): MemberLegislation =
         cosponsored[bioguideId] ?: error("no cosponsored fixture for $bioguideId")
+    override suspend fun getMemberVotes(bioguideId: String): MemberVotes =
+        error("member votes not fetched by CachedMemberRepository")
 }
 
 class MemberRepositoryTest {
@@ -178,6 +181,7 @@ class MemberRepositoryTest {
                 throw RuntimeException("boom")
             override suspend fun getSponsored(bioguideId: String): MemberLegislation = error("unused")
             override suspend fun getCosponsored(bioguideId: String): MemberLegislation = error("unused")
+            override suspend fun getMemberVotes(bioguideId: String): MemberVotes = error("unused")
         }
         val repo = CachedMemberRepository(throwingApi, FakeCrashReporter(), FakeMembersIndexCache())
         assertNull(repo.getMember("X", 119))

@@ -5,7 +5,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
+import com.informedcitizen.data.repository.RepPosition
+import com.informedcitizen.data.repository.SavedRep
 import com.informedcitizen.pipeline.model.Chamber
+import com.informedcitizen.pipeline.model.VotePosition
 import com.informedcitizen.pipeline.model.VoteRef
 import com.informedcitizen.pipeline.model.VoteTotals
 import com.informedcitizen.ui.preview.PreviewWrap
@@ -47,6 +50,21 @@ private val sampleVotes = listOf(
     ),
 )
 
+private val turner = SavedRep("T000463", "Michael Turner", "R", "OH", "house")
+private val moreno = SavedRep("M002222", "Bernie Moreno", "R", "OH", "senate")
+private val husted = SavedRep("H002222", "Jon Husted", "R", "OH", "senate")
+
+private val sampleRepVotes = RepVotesUiState(
+    positionsByVoteId = mapOf(
+        "house-119-2-317" to listOf(RepPosition("house-119-2-317", turner, VotePosition.YEA)),
+        "senate-119-2-618" to listOf(
+            RepPosition("senate-119-2-618", moreno, VotePosition.YEA),
+            RepPosition("senate-119-2-618", husted, VotePosition.NOT_VOTING),
+        ),
+    ),
+    fetchFailed = false,
+)
+
 @Preview(showBackground = true)
 @Composable
 private fun PreviewBillDetailLoading() = PreviewWrap {
@@ -67,6 +85,34 @@ private fun PreviewBillDetailSuccess() = PreviewWrap {
         ),
         innerPadding = PaddingValues(0.dp),
         onOpenFullText = {},
+    )
+}
+
+@PreviewLightDark
+@Composable
+private fun PreviewBillDetailSuccessWithRepVotes() = PreviewWrap {
+    BillDetailContent(
+        state = BillDetailUiState.Success(
+            bill = sampleBill().copy(votes = sampleVotes),
+            votesCoverage = true,
+        ),
+        innerPadding = PaddingValues(0.dp),
+        onOpenFullText = {},
+        repVotes = sampleRepVotes,
+    )
+}
+
+@PreviewLightDark
+@Composable
+private fun PreviewBillDetailRepVotesFetchFailed() = PreviewWrap {
+    BillDetailContent(
+        state = BillDetailUiState.Success(
+            bill = sampleBill().copy(votes = sampleVotes),
+            votesCoverage = true,
+        ),
+        innerPadding = PaddingValues(0.dp),
+        onOpenFullText = {},
+        repVotes = RepVotesUiState(emptyMap(), fetchFailed = true),
     )
 }
 

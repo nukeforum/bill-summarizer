@@ -64,6 +64,7 @@ fun BillDetailScreen(
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val fullTextState by viewModel.fullTextState.collectAsStateWithLifecycle()
+    val repVotes by viewModel.repVotes.collectAsStateWithLifecycle()
 
     LaunchedEffect(billId) { viewModel.load(billId) }
 
@@ -108,6 +109,7 @@ fun BillDetailScreen(
             state = uiState,
             innerPadding = innerPadding,
             onOpenFullText = { url -> openInCustomTab(context, url) },
+            repVotes = repVotes,
         )
     }
 
@@ -180,6 +182,7 @@ internal fun BillDetailContent(
     state: BillDetailUiState,
     innerPadding: PaddingValues,
     onOpenFullText: (String) -> Unit,
+    repVotes: RepVotesUiState = RepVotesUiState.Empty,
 ) {
     when (state) {
         BillDetailUiState.Loading -> CenteredMessage(
@@ -194,6 +197,7 @@ internal fun BillDetailContent(
         is BillDetailUiState.Success -> BillDetailSuccessBody(
             bill = state.bill,
             votesCoverage = state.votesCoverage,
+            repVotes = repVotes,
             innerPadding = innerPadding,
             onOpenFullText = onOpenFullText,
         )
@@ -204,6 +208,7 @@ internal fun BillDetailContent(
 private fun BillDetailSuccessBody(
     bill: Bill,
     votesCoverage: Boolean,
+    repVotes: RepVotesUiState,
     innerPadding: PaddingValues,
     onOpenFullText: (String) -> Unit,
 ) {
@@ -254,7 +259,19 @@ private fun BillDetailSuccessBody(
                 } else {
                     // Published newest-first; the bill's story reads oldest-first.
                     bill.votes.asReversed().forEach { vote ->
-                        RollCallCard(vote = vote)
+                        RollCallCard(
+                            vote = vote,
+                            repPositions = repVotes.positionsByVoteId[vote.id].orEmpty(),
+                        )
+                    }
+                    // Honest partial data: totals render even when the
+                    // saved reps' shards couldn't be loaded.
+                    if (repVotes.fetchFailed) {
+                        Text(
+                            text = "Couldn't load your reps' positions.",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
                     }
                 }
             }

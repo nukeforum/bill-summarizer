@@ -2,8 +2,10 @@ package com.informedcitizen.testutil
 
 import com.informedcitizen.data.cache.BillSource
 import com.informedcitizen.data.cache.CachedArtifact
+import com.informedcitizen.data.cache.MemberVotesCache
 import com.informedcitizen.data.cache.MembersIndexCache
 import com.informedcitizen.data.cache.SessionCalendarCache
+import com.informedcitizen.pipeline.model.MemberVotes
 import com.informedcitizen.pipeline.model.MembersIndex
 import com.informedcitizen.pipeline.model.SessionCalendar
 
@@ -61,5 +63,34 @@ class FakeSessionCalendarCache : SessionCalendarCache {
 
     override suspend fun clearSource(source: BillSource) {
         bySource.remove(source)
+    }
+}
+
+/** In-memory fake of [MemberVotesCache] for repository tests. */
+class FakeMemberVotesCache : MemberVotesCache {
+    private val byKey = mutableMapOf<Pair<String, BillSource>, CachedArtifact<MemberVotes>>()
+
+    override suspend fun replaceForSource(
+        source: BillSource,
+        votes: MemberVotes,
+        fetchedAtMillis: Long,
+    ) {
+        byKey[votes.bioguideId to source] = CachedArtifact(
+            value = votes,
+            source = source,
+            generatedAt = votes.generatedAt,
+            fetchedAtMillis = fetchedAtMillis,
+        )
+    }
+
+    override suspend fun load(bioguideId: String, source: BillSource): CachedArtifact<MemberVotes>? =
+        byKey[bioguideId to source]
+
+    override suspend fun loadFreshest(bioguideId: String): CachedArtifact<MemberVotes>? =
+        byKey.entries.filter { it.key.first == bioguideId }
+            .maxByOrNull { it.value.fetchedAtMillis }?.value
+
+    override suspend fun clearSource(source: BillSource) {
+        byKey.keys.removeAll { it.second == source }
     }
 }
