@@ -1,0 +1,181 @@
+package com.informedcitizen.pipeline.fetch
+
+import com.informedcitizen.pipeline.model.Chamber
+import com.informedcitizen.pipeline.model.MemberVote
+import com.informedcitizen.pipeline.model.RollCallVote
+import com.informedcitizen.pipeline.model.VotePosition
+import com.informedcitizen.pipeline.model.VoteTotals
+import kotlin.test.Test
+import kotlin.test.assertEquals
+import kotlin.test.assertFailsWith
+import kotlin.test.assertNull
+import kotlin.test.assertTrue
+
+/**
+ * Mirrors Python `test_votes.py` on the same real senate.gov fixtures
+ * (see [SENATE_VOTE_618_XML]), keeping the KMP port in behavioral
+ * parity with the canonical Python `_votes.py`.
+ */
+class VoteParsersTest {
+
+    private fun vote618(): RollCallVote = parseSenateVote(SENATE_VOTE_618_XML, LIS_TO_BIOGUIDE)
+
+    // ------------------------------------------------------ normalization
+
+    @Test
+    fun positionLabelsNormalizeToWireValues() {
+        assertEquals(VotePosition.YEA, normalizeVotePosition("Yea"))
+        assertEquals(VotePosition.YEA, normalizeVotePosition("Aye"))
+        assertEquals(VotePosition.YEA, normalizeVotePosition("Guilty"))
+        assertEquals(VotePosition.NAY, normalizeVotePosition("Nay"))
+        assertEquals(VotePosition.NAY, normalizeVotePosition("No"))
+        assertEquals(VotePosition.NAY, normalizeVotePosition("Not Guilty"))
+        assertEquals(VotePosition.PRESENT, normalizeVotePosition("Present"))
+        assertEquals(VotePosition.PRESENT, normalizeVotePosition("Present, Giving Live Pair"))
+        assertEquals(VotePosition.NOT_VOTING, normalizeVotePosition("Not Voting"))
+        assertEquals(VotePosition.NOT_VOTING, normalizeVotePosition("Absent"))
+    }
+
+    @Test
+    fun unknownPositionLabelThrows() {
+        val e = assertFailsWith<IllegalArgumentException> { normalizeVotePosition("Abstained") }
+        assertTrue(e.message.orEmpty().contains("unknown vote position"))
+    }
+
+    // ------------------------------------------------- ids, paths, urls
+
+    @Test
+    fun voteIdAndRelPathFollowKdocConventions() {
+        assertEquals("house-119-1-17", voteId(Chamber.HOUSE, 119, 1, 17))
+        assertEquals("votes/congress119/house-1-17.json", voteFileRelPath(119, Chamber.HOUSE, 1, 17))
+    }
+
+    @Test
+    fun senateUrlsZeroPadRollNumberOnly() {
+        assertEquals(
+            "https://www.senate.gov/legislative/LIS/roll_call_votes/" +
+                "vote1191/vote_119_1_00618.xml",
+            senateVoteSourceUrl(119, 1, 618),
+        )
+        assertEquals(
+            "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_1.xml",
+            senateVoteMenuUrl(119, 1),
+        )
+    }
+
+    @Test
+    fun billIdFromDocumentCoversBillTypesAndNonBills() {
+        assertEquals("hr5371-119", billIdFromDocument("H.R.", "5371", 119))
+        assertEquals("sjres76-119", billIdFromDocument("S.J.Res.", "76", 119))
+        assertEquals("s42-119", billIdFromDocument("S.", "42", 119))
+        // Nominations, treaties, and absent documents are not bills.
+        assertNull(billIdFromDocument("PN", "373", 119))
+        assertNull(billIdFromDocument(null, null, 119))
+        assertNull(billIdFromDocument("H.R.", "", 119))
+    }
+
+    // ------------------------------------------------------ vote menu
+
+    @Test
+    fun menuParsesCongressSessionAndSortedVoteNumbers() {
+        val menu = parseSenateVoteMenu(SENATE_VOTE_MENU_119_1_XML)
+        assertEquals(119, menu.congress)
+        assertEquals(1, menu.session)
+        assertEquals(menu.voteNumbers.sorted(), menu.voteNumbers)
+        // 618 is the H.R. 5371 passage vote; 655 is an en-bloc nomination
+        // vote whose <vote_number> sits alongside nested <en_bloc> blocks.
+        assertTrue(618 in menu.voteNumbers)
+        assertTrue(655 in menu.voteNumbers)
+        assertEquals(6, menu.voteNumbers.size)
+    }
+
+    // ----------------------------------------------------- vote detail
+
+    @Test
+    fun senateVote618ParsesToWireShape() {
+        val vote = vote618()
+        assertEquals("senate-119-1-618", vote.id)
+        assertEquals(119, vote.congress)
+        assertEquals(Chamber.SENATE, vote.chamber)
+        assertEquals(1, vote.session)
+        assertEquals(618, vote.rollNumber)
+        assertEquals("2025-11-10", vote.date)
+        assertEquals("On Passage of the Bill", vote.question)
+        assertEquals("Bill Passed", vote.result)
+        assertEquals("hr5371-119", vote.billId)
+        assertEquals(senateVoteSourceUrl(119, 1, 618), vote.sourceUrl)
+    }
+
+    @Test
+    fun senateVote618TotalsMatchPositionsAndOfficialTally() {
+        val vote = vote618()
+        // Official tally: Bill Passed (60-40), all 100 senators voting.
+        assertEquals(VoteTotals(yea = 60, nay = 40, present = 0, notVoting = 0), vote.totals)
+        assertEquals(100, vote.positions.size)
+        val counted = vote.positions.groupingBy { it.position }.eachCount()
+        assertEquals(60, counted[VotePosition.YEA])
+        assertEquals(40, counted[VotePosition.NAY])
+        assertNull(counted[VotePosition.PRESENT])
+        assertNull(counted[VotePosition.NOT_VOTING])
+    }
+
+    @Test
+    fun senateVote618PositionsAreBioguideKeyedAndSorted() {
+        val vote = vote618()
+        val ids = vote.positions.map { it.bioguideId }
+        assertEquals(ids.sorted(), ids)
+        assertEquals(100, ids.toSet().size)
+        // Alsobrooks (D-MD), lis S428 -> bioguide A000382, voted Nay.
+        val alsobrooks = vote.positions.first { it.bioguideId == "A000382" }
+        assertEquals(
+            MemberVote(bioguideId = "A000382", position = VotePosition.NAY, party = "D", state = "MD"),
+            alsobrooks,
+        )
+    }
+
+    @Test
+    fun unmappedLisMemberIdThrows() {
+        val mapping = LIS_TO_BIOGUIDE - "S428"
+        val e = assertFailsWith<IllegalArgumentException> {
+            parseSenateVote(SENATE_VOTE_618_XML, mapping)
+        }
+        assertTrue(e.message.orEmpty().contains("S428"))
+    }
+
+    // -------------------------------------------------------- yaml map
+
+    @Test
+    fun parseLisToBioguideYamlExtractsSenatorsOnly() {
+        val text = """
+            |- id:
+            |    bioguide: A000382
+            |    lis: S428
+            |- id:
+            |    bioguide: B001234
+            |- not-a-dict
+            |
+        """.trimMargin()
+        assertEquals(mapOf("S428" to "A000382"), parseLisToBioguideYaml(text))
+    }
+
+    // ----------------------------------------------------------- index
+
+    @Test
+    fun voteRefDropsPositionsAndCarriesPath() {
+        val ref = buildVoteRef(vote618())
+        assertEquals("votes/congress119/senate-1-618.json", ref.path)
+        assertEquals("hr5371-119", ref.billId)
+        assertEquals(60, ref.totals.yea)
+    }
+
+    @Test
+    fun votesIndexIsNewestFirstWithCount() {
+        val newer = buildVoteRef(vote618())
+        val older = newer.copy(date = "2025-01-03", rollNumber = 2)
+        val index = buildVotesIndex(119, listOf(older, newer), generatedAt = "2026-07-21T00:00:00Z")
+        assertEquals("2026-07-21T00:00:00Z", index.generatedAt)
+        assertEquals(119, index.congress)
+        assertEquals(2, index.voteCount)
+        assertEquals(listOf("2025-11-10", "2025-01-03"), index.votes.map { it.date })
+    }
+}
