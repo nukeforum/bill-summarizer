@@ -22,8 +22,8 @@ import okio.Path.Companion.toPath
  *  - `1` unrecoverable error (no vote menu, menu identity mismatch,
  *    non-404 menu/YAML fetch failure)
  *
- * No API key required — senate.gov LIS XML and the
- * congress-legislators YAMLs are public.
+ * No API key required — senate.gov LIS XML, clerk.house.gov EVS XML,
+ * and the congress-legislators YAMLs are all public.
  *
  * Flags:
  *  - `--output-dir <path>` — published-data directory. Default
@@ -66,14 +66,32 @@ object FetchVotesCommand {
                         onMaxNewReached = { cap ->
                             println("Reached --max-new $cap; remaining votes deferred to next run")
                         },
+                        onHouseProbeStart = {
+                            println("House probe for Congress $congress (clerk.house.gov EVS):")
+                        },
+                        onHouseDeferred = {
+                            println("House probe deferred to next run: --max-new budget exhausted")
+                        },
+                        onUnsupportedVote = { voteKey, message ->
+                            println("  - house-$voteKey skipped: $message")
+                        },
+                        onConsecutiveFailures = { count, session ->
+                            println(
+                                "  ! $count consecutive House parse failures; " +
+                                    "stopping session $session probe",
+                            )
+                        },
                     ),
                 )
             }
             val summary = errors.renderSummary(label = "fetch-votes")
             if (summary.isNotEmpty()) System.err.println(summary)
             println(
-                "OK: ${result.fetched} new, ${result.skipped} already on disk, " +
-                    "${errors.size} failed; index now ${result.index.voteCount} votes",
+                "OK: ${result.fetched} new " +
+                    "(${result.senateFetched} Senate, ${result.houseFetched} House), " +
+                    "${result.skipped} already on disk, " +
+                    "${result.unsupported} unsupported, ${errors.size} failed; " +
+                    "index now ${result.index.voteCount} votes",
             )
             return 0
         } catch (e: Exception) {

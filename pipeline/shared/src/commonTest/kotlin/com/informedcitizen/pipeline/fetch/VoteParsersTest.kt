@@ -12,13 +12,16 @@ import kotlin.test.assertNull
 import kotlin.test.assertTrue
 
 /**
- * Mirrors Python `test_votes.py` on the same real senate.gov fixtures
- * (see [SENATE_VOTE_618_XML]), keeping the KMP port in behavioral
- * parity with the canonical Python `_votes.py`.
+ * Mirrors Python `test_votes.py` on the same real senate.gov and
+ * clerk.house.gov fixtures (see [SENATE_VOTE_618_XML] and
+ * [HOUSE_VOTE_ROLL17_XML]), keeping the KMP port in behavioral parity
+ * with the canonical Python `_votes.py`.
  */
 class VoteParsersTest {
 
     private fun vote618(): RollCallVote = parseSenateVote(SENATE_VOTE_618_XML, LIS_TO_BIOGUIDE)
+
+    private fun houseVote17(): RollCallVote = parseHouseVote(HOUSE_VOTE_ROLL17_XML)
 
     // ------------------------------------------------------ normalization
 
@@ -140,6 +143,98 @@ class VoteParsersTest {
             parseSenateVote(SENATE_VOTE_618_XML, mapping)
         }
         assertTrue(e.message.orEmpty().contains("S428"))
+    }
+
+    // ---------------------------------------------------- house votes
+
+    @Test
+    fun houseUrlsAreYearKeyedWithThreeDigitRolls() {
+        assertEquals(2025, houseSessionYear(119, 1))
+        assertEquals(2026, houseSessionYear(119, 2))
+        assertEquals("https://clerk.house.gov/evs/2025/roll017.xml", houseVoteSourceUrl(119, 1, 17))
+        // Rolls past 999 (seen in busy years) are not truncated by the padding.
+        assertEquals("https://clerk.house.gov/evs/2026/roll1002.xml", houseVoteSourceUrl(119, 2, 1002))
+    }
+
+    @Test
+    fun billIdFromLegisNumCoversBillTypesAndNonBills() {
+        assertEquals("hr30-119", billIdFromLegisNum("H R 30", 119))
+        assertEquals("hres5-119", billIdFromLegisNum("H RES 5", 119))
+        assertEquals("hjres20-119", billIdFromLegisNum("H J RES 20", 119))
+        assertEquals("hconres14-119", billIdFromLegisNum("H CON RES 14", 119))
+        // The House also votes on Senate bills.
+        assertEquals("s5-119", billIdFromLegisNum("S 5", 119))
+        // Non-bill business.
+        assertNull(billIdFromLegisNum("QUORUM", 119))
+        assertNull(billIdFromLegisNum("MOTION", 119))
+        assertNull(billIdFromLegisNum("", 119))
+        assertNull(billIdFromLegisNum(null, 119))
+    }
+
+    @Test
+    fun houseVote17ParsesToWireShape() {
+        val vote = houseVote17()
+        assertEquals("house-119-1-17", vote.id)
+        assertEquals(119, vote.congress)
+        assertEquals(Chamber.HOUSE, vote.chamber)
+        assertEquals(1, vote.session)
+        assertEquals(17, vote.rollNumber)
+        assertEquals("2025-01-16", vote.date)
+        assertEquals("On Passage", vote.question)
+        assertEquals("Passed", vote.result)
+        assertEquals("hr30-119", vote.billId)
+        assertEquals(houseVoteSourceUrl(119, 1, 17), vote.sourceUrl)
+    }
+
+    @Test
+    fun houseVote17TotalsMatchPositionsAndOfficialTally() {
+        val vote = houseVote17()
+        // Official tally: Passed 274-145, 15 not voting (one seat vacant).
+        assertEquals(VoteTotals(yea = 274, nay = 145, present = 0, notVoting = 15), vote.totals)
+        assertEquals(434, vote.positions.size)
+        val counted = vote.positions.groupingBy { it.position }.eachCount()
+        assertEquals(274, counted[VotePosition.YEA])
+        assertEquals(145, counted[VotePosition.NAY])
+        assertNull(counted[VotePosition.PRESENT])
+        assertEquals(15, counted[VotePosition.NOT_VOTING])
+    }
+
+    @Test
+    fun houseVote17PositionsAreBioguideKeyedAndSorted() {
+        val vote = houseVote17()
+        val ids = vote.positions.map { it.bioguideId }
+        assertEquals(ids.sorted(), ids)
+        assertEquals(434, ids.toSet().size)
+        // Adams (D-NC), name-id A000370, voted Nay.
+        val adams = vote.positions.first { it.bioguideId == "A000370" }
+        assertEquals(
+            MemberVote(bioguideId = "A000370", position = VotePosition.NAY, party = "D", state = "NC"),
+            adams,
+        )
+    }
+
+    @Test
+    fun houseQuorumCallIsANonBillVoteWithPresentPositions() {
+        val vote = parseHouseVote(HOUSE_VOTE_QUORUM_XML)
+        assertEquals("house-119-1-1", vote.id)
+        assertNull(vote.billId)
+        assertEquals("Call by States", vote.question)
+        // Fixture is trimmed to 3 Present + 1 Not Voting; totals derive
+        // from the included positions, not the vote-totals block.
+        assertEquals(VoteTotals(yea = 0, nay = 0, present = 3, notVoting = 1), vote.totals)
+    }
+
+    @Test
+    fun houseSpeakerElectionThrowsUnsupported() {
+        val e = assertFailsWith<UnsupportedVoteException> { parseHouseVote(HOUSE_VOTE_SPEAKER_XML) }
+        assertTrue(e.message.orEmpty().contains("candidate-ballot"))
+    }
+
+    @Test
+    fun houseVoteRefPathAndIndexInterop() {
+        val ref = buildVoteRef(houseVote17())
+        assertEquals("votes/congress119/house-1-17.json", ref.path)
+        assertEquals("hr30-119", ref.billId)
     }
 
     // -------------------------------------------------------- yaml map

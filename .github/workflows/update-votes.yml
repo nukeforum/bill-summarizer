@@ -19,10 +19,12 @@ jobs:
   update:
     runs-on: ubuntu-latest
     # Runs are incremental (already-published roll calls are never
-    # refetched), so steady state is a handful of detail fetches. The
-    # first run backfills the whole Congress (~860 detail XMLs as of
-    # mid-2026) — 30 minutes covers that comfortably.
-    timeout-minutes: 30
+    # refetched), so steady state is a handful of detail fetches. A
+    # from-scratch backfill of the whole Congress is ~860 Senate + several
+    # hundred House detail XMLs (capped at 1000/run by --max-new; the tail
+    # rolls over to the next run) — 45 minutes covers a capped run
+    # comfortably.
+    timeout-minutes: 45
     steps:
       - name: Checkout
         # See update-bills.yml — PAT needed so the push-back step can
@@ -70,8 +72,8 @@ jobs:
           cp docs/data/congress*_votes.json /tmp/kotlin-votes-shadow/ 2>/dev/null || true
           ls -laR /tmp/kotlin-votes-shadow/ | head -20 || true
 
-      # --- Python: canonical fetch (Senate LIS XML + legislators
-      # YAMLs need no API key) ---
+      # --- Python: canonical fetch (Senate LIS XML, House clerk EVS
+      # XML, and legislators YAMLs all need no API key) ---
 
       - name: Fetch votes (Python — canonical)
         run: python data-pipeline/scripts/fetch_votes.py
@@ -96,7 +98,9 @@ jobs:
       # verdicts) AND $GITHUB_STEP_SUMMARY (so the Actions UI renders
       # them as a panel). Per the pipeline-check-cli-readable rule.
       # The parallel-run period is for observation; we'll switch
-      # canonical ownership once diffs are clean for ~a week.
+      # canonical ownership once diffs are clean for ~a week. Both
+      # drivers cover both chambers (Senate LIS + House clerk EVS), so
+      # the whole votes/ tree is expected byte-identical.
 
       - name: Compare canonical vs Kotlin shadow output
         if: always()

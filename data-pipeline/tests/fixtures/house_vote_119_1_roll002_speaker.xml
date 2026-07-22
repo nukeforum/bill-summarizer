@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rollcall-vote PUBLIC "-//US Congress//DTDs/vote v1.0 20031119 //EN" "../vote.dtd">
+<?xml-stylesheet type="text/xsl" href="../vote.xsl"?>
+<rollcall-vote>
+<vote-metadata>
+<majority>R</majority>
+<congress>119</congress>
+<session>1st</session>
+<chamber>U.S. House of Representatives</chamber>
+<rollcall-num>2</rollcall-num>
+<vote-question>Election of the Speaker</vote-question>
+<vote-type>YEA-AND-NAY</vote-type>
+<vote-result>Johnson (LA)</vote-result>
+<action-date>3-Jan-2025</action-date>
+<action-time time-etz="14:33">2:33 PM</action-time>
+<vote-desc></vote-desc>
+<vote-totals>
+<totals-by-candidate><candidate>Johnson (LA)</candidate><candidate-total>218</candidate-total></totals-by-candidate>
+<totals-by-candidate><candidate>Jeffries</candidate><candidate-total>215</candidate-total></totals-by-candidate>
+<totals-by-candidate><candidate>Emmer</candidate><candidate-total>1</candidate-total></totals-by-candidate>
+<totals-by-candidate><candidate>Present</candidate><candidate-total>0</candidate-total></totals-by-candidate>
+<totals-by-candidate><candidate>Not Voting</candidate><candidate-total>0</candidate-total></totals-by-candidate>
+</vote-totals>
+</vote-metadata>
+<vote-data>
+<recorded-vote><legislator name-id="A000370" sort-field="Adams" unaccented-name="Adams" party="D" state="NC" role="legislator">Adams</legislator><vote>Jeffries</vote></recorded-vote>
+<recorded-vote><legislator name-id="A000055" sort-field="Aderholt" unaccented-name="Aderholt" party="R" state="AL" role="legislator">Aderholt</legislator><vote>Johnson (LA)</vote></recorded-vote>
+<recorded-vote><legislator name-id="A000371" sort-field="Aguilar" unaccented-name="Aguilar" party="D" state="CA" role="legislator">Aguilar</legislator><vote>Jeffries</vote></recorded-vote>
+<recorded-vote><legislator name-id="A000379" sort-field="Alford" unaccented-name="Alford" party="R" state="MO" role="legislator">Alford</legislator><vote>Johnson (LA)</vote></recorded-vote>
+</vote-data>
+</rollcall-vote>
