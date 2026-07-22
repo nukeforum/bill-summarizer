@@ -28,10 +28,12 @@ import pytest
 
 from _votes import (
     UnsupportedVoteError,
+    attach_vote_refs,
     bill_id_from_document,
     bill_id_from_legis_num,
     build_vote_ref,
     build_votes_index,
+    strip_vote_refs,
     house_session_year,
     house_vote_source_url,
     normalize_vote_position,
@@ -294,3 +296,49 @@ def test_votes_index_is_newest_first_with_count():
     assert index["congress"] == 119
     assert index["vote_count"] == 2
     assert [v["date"] for v in index["votes"]] == ["2025-11-10", "2025-01-03"]
+
+
+# ------------------------------------------------------------ bill linkage
+
+
+def _bill(bill_id: str, **extra) -> dict:
+    return {"id": bill_id, "title": "A bill", **extra}
+
+
+def test_attach_vote_refs_groups_by_bill_newest_first():
+    senate = build_vote_ref(_vote_618())  # hr5371-119, 2025-11-10
+    house = dict(
+        build_vote_ref(_vote_618()),
+        id="house-119-1-2", chamber="house", roll_number=2, date="2025-01-03",
+    )
+    quorum = dict(
+        build_vote_ref(_vote_618()),
+        id="house-119-1-1", chamber="house", roll_number=1, bill_id=None,
+    )
+    bills = [_bill("hr5371-119"), _bill("s42-119")]
+    out = attach_vote_refs(bills, [house, quorum, senate])
+    assert out is bills
+    assert [v["id"] for v in bills[0]["votes"]] == ["senate-119-1-618", "house-119-1-2"]
+    # Bills with no roll calls still get the key — the Kotlin publisher's
+    # encodeDefaults always emits it, so byte parity requires it here too.
+    assert bills[1]["votes"] == []
+
+
+def test_attach_vote_refs_recomputes_and_keeps_votes_last():
+    stale = dict(build_vote_ref(_vote_618()), id="stale-ref")
+    bill = _bill("hr5371-119")
+    bill["votes"] = [stale]
+    bill["congress_gov_url"] = "https://example.test"
+    attach_vote_refs([bill], [build_vote_ref(_vote_618())])
+    assert [v["id"] for v in bill["votes"]] == ["senate-119-1-618"]
+    assert list(bill.keys())[-1] == "votes"
+
+
+def test_strip_vote_refs_removes_only_the_derived_key():
+    with_votes = _bill("hr5371-119", votes=[build_vote_ref(_vote_618())])
+    without = _bill("s42-119")
+    out = strip_vote_refs([with_votes, without])
+    assert out is not None
+    assert "votes" not in with_votes
+    assert with_votes["title"] == "A bill"
+    assert "votes" not in without

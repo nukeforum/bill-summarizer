@@ -329,3 +329,51 @@ def test_build_lis_to_bioguide_unions_current_over_historical(monkeypatch):
     }
     monkeypatch.setattr(fetch_votes, "_fetch", lambda url: texts[url])
     assert fetch_votes.build_lis_to_bioguide() == {"S001": "NEW00001", "S002": "G000001"}
+
+
+# ------------------------------------------------------------ bill linkage
+
+
+def _seed_bills_manifest(env: Path, *bill_ids: str) -> Path:
+    path = env / "congress119_bills.json"
+    path.write_text(
+        json.dumps({
+            "generated_at": "2026-01-01T00:00:00Z",
+            "congress": 119,
+            "bills": [{"id": bid, "title": "A bill"} for bid in bill_ids],
+        }),
+        encoding="utf-8",
+    )
+    return path
+
+
+def test_main_attaches_vote_refs_to_bills_manifest(env, monkeypatch, capsys):
+    _seed_bills_manifest(env, "hr5371-119", "s42-119")
+    _fake(monkeypatch, {MENU_1_URL: _menu_xml(119, 1, [618]), DETAIL_618_URL: DETAIL_618})
+
+    assert fetch_votes.main(["--congress", "119"]) == 0
+    assert "vote refs refreshed" in capsys.readouterr().out
+
+    manifest = json.loads((env / "congress119_bills.json").read_text(encoding="utf-8"))
+    index = json.loads((env / "congress119_votes.json").read_text(encoding="utf-8"))
+    bills = {b["id"]: b for b in manifest["bills"]}
+    # The linked bill carries the index ref verbatim; the other gets [].
+    assert bills["hr5371-119"]["votes"] == index["votes"]
+    assert bills["s42-119"]["votes"] == []
+    assert manifest["generated_at"] != "2026-01-01T00:00:00Z"
+
+
+def test_bills_manifest_untouched_when_vote_refs_unchanged(env, monkeypatch, capsys):
+    manifest_path = _seed_bills_manifest(env, "hr5371-119")
+    responses = {MENU_1_URL: _menu_xml(119, 1, [618]), DETAIL_618_URL: DETAIL_618}
+    _fake(monkeypatch, responses)
+    assert fetch_votes.main(["--congress", "119"]) == 0
+    enriched = manifest_path.read_bytes()
+    capsys.readouterr()
+
+    # No new votes on the second run: the manifest must not churn (its
+    # generated_at would otherwise bump on every nightly votes run).
+    _fake(monkeypatch, responses)
+    assert fetch_votes.main(["--congress", "119"]) == 0
+    assert "vote refs refreshed" not in capsys.readouterr().out
+    assert manifest_path.read_bytes() == enriched

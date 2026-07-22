@@ -622,6 +622,29 @@ def save_manifest(congress: int, manifest: dict[str, Any]) -> dict[str, Any]:
     return final
 
 
+# ---------- votes index ----------------------------------------------------
+
+
+def votes_index_path(congress: int) -> Path:
+    return OUTPUT_DIR / f"congress{congress}_votes.json"
+
+
+def load_vote_refs(congress: int) -> list[dict[str, Any]]:
+    """Vote refs from the on-disk votes index; ``[]`` when it doesn't exist.
+
+    Missing is normal (older Congresses, or a checkout from before the votes
+    pipeline ran) — bill records then get empty ``votes`` lists until the
+    index appears.
+    """
+    path = votes_index_path(congress)
+    if not path.exists():
+        return []
+    with path.open("r", encoding="utf-8") as f:
+        payload = json.load(f)
+    votes = payload.get("votes")
+    return votes if isinstance(votes, list) else []
+
+
 # ---------- members ------------------------------------------------------
 
 MEMBERS_SUBDIR = "members"

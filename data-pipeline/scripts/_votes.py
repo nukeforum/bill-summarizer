@@ -413,3 +413,46 @@ def build_votes_index(
         "vote_count": len(ordered),
         "votes": ordered,
     }
+
+
+def attach_vote_refs(
+    bills: list[dict[str, Any]], refs: list[dict[str, Any]]
+) -> list[dict[str, Any]]:
+    """Set the ``votes`` key on every bill record from the index refs.
+
+    ``votes`` is derived data, recomputed in full at every manifest write:
+    each bill gets the [VoteRef]-shaped rows whose ``bill_id`` matches its
+    ``id``, newest first with the same tiebreak as ``build_votes_index``.
+    The key is always set (empty list when no roll call touched the bill)
+    because the Kotlin publisher's ``encodeDefaults`` always emits it.
+    Mutates and returns ``bills``.
+    """
+    by_bill: dict[str, list[dict[str, Any]]] = {}
+    ordered = sorted(
+        refs,
+        key=lambda r: (r["date"], r["roll_number"], r["chamber"]),
+        reverse=True,
+    )
+    for ref in ordered:
+        bill_id = ref.get("bill_id")
+        if bill_id:
+            by_bill.setdefault(bill_id, []).append(ref)
+    for bill in bills:
+        # pop-then-set keeps ``votes`` as the last key even on records
+        # loaded from an already-enriched manifest.
+        bill.pop("votes", None)
+        bill["votes"] = by_bill.get(bill["id"], [])
+    return bills
+
+
+def strip_vote_refs(bills: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Drop the derived ``votes`` key so merge comparisons see only bill data.
+
+    Freshly built records carry no ``votes``; without stripping, every
+    refetched bill would compare unequal to its on-disk copy and inflate the
+    merge's ``updated`` count. Callers re-attach after merging. Mutates and
+    returns ``bills``.
+    """
+    for bill in bills:
+        bill.pop("votes", None)
+    return bills

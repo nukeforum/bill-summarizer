@@ -21,4 +21,13 @@ data class Bill(
     @SerialName("text_url_xml") val textUrlXml: String? = null,
     @SerialName("text_url_pdf") val textUrlPdf: String? = null,
     @SerialName("congress_gov_url") val congressGovUrl: String,
+    /**
+     * Roll-call votes recorded on this bill: the same [VoteRef] rows as the
+     * per-Congress [VotesIndex], newest first. Aggregate totals ride along on
+     * each ref so list/detail screens can show a breakdown without fetching
+     * per-member positions (those stay in the per-vote file at [VoteRef.path]).
+     * Defaults to empty so manifests published before the field existed — and
+     * apps released before it — keep decoding unchanged.
+     */
+    val votes: List<VoteRef> = emptyList(),
 )

@@ -176,8 +176,12 @@ jobs:
       - name: Commit updated votes
         uses: ./.github/actions/safe-push
         with:
+          # congress*_bills.json: fetch_votes.py re-attaches the derived
+          # per-bill `votes` refs to the bills manifest whenever new roll
+          # calls land (issue #19).
           paths: |
             docs/data/votes
             docs/data/congress*_votes.json
+            docs/data/congress*_bills.json
             docs/pipeline.html
           message: "Update votes [bot]"

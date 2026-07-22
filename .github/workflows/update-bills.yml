@@ -106,6 +106,10 @@ jobs:
       # them as a panel). Per the pipeline-check-cli-readable rule.
       # The parallel-run period is for observation; we'll switch
       # canonical ownership once diffs are clean for ~a week.
+      #
+      # Known window (issue #19): Python attaches the derived per-bill
+      # `votes` refs from the votes index; until the Kotlin driver ports
+      # the same attach step, bills with roll calls show ⚠️ diffs here.
 
       - name: Compare canonical vs Kotlin shadow output
         if: always()

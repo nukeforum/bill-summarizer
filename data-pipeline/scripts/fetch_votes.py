@@ -25,6 +25,7 @@ Run locally (no key required):
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 import sys
 from pathlib import Path
@@ -38,6 +39,7 @@ from _votes import (
     CHAMBER_HOUSE,
     CHAMBER_SENATE,
     UnsupportedVoteError,
+    attach_vote_refs,
     build_vote_ref,
     build_votes_index,
     house_vote_source_url,
@@ -94,10 +96,6 @@ def vote_path(congress: int, chamber: str, session: int, roll_number: int) -> Pa
     return _common.OUTPUT_DIR / vote_file_relpath(congress, chamber, session, roll_number)
 
 
-def votes_index_path(congress: int) -> Path:
-    return _common.OUTPUT_DIR / f"congress{congress}_votes.json"
-
-
 def rebuild_votes_index(congress: int) -> dict[str, Any]:
     """Rebuild congress{N}_votes.json from every vote file on disk."""
     refs = []
@@ -107,8 +105,29 @@ def rebuild_votes_index(congress: int) -> dict[str, Any]:
             with path.open("r", encoding="utf-8") as f:
                 refs.append(build_vote_ref(json.load(f)))
     payload = build_votes_index(congress, refs, now_iso())
-    _common._write_json(votes_index_path(congress), payload)
+    _common._write_json(_common.votes_index_path(congress), payload)
     return payload
+
+
+def refresh_bill_vote_refs(congress: int, refs: list[dict[str, Any]]) -> bool:
+    """Re-attach vote refs to the bills manifest after new votes land.
+
+    Bills leave fetch_bills' refresh window ~60 days after their last
+    action, so this pass — not the bills workflow — is what links votes
+    that arrive later (or between bill runs) to their bills. Returns True
+    when the manifest changed and was rewritten; no-ops when there is no
+    manifest to enrich (votes can backfill before bills on a fresh tree).
+    """
+    if not _common.manifest_path_for(congress).exists():
+        return False
+    manifest = _common.load_manifest(congress)
+    bills = manifest.get("bills", [])
+    before = copy.deepcopy(bills)
+    attach_vote_refs(bills, refs)
+    if bills == before:
+        return False
+    _common.save_manifest(congress, {"bills": bills})
+    return True
 
 
 # ---------- fetching --------------------------------------------------------
@@ -323,6 +342,8 @@ def main(argv: list[str] | None = None) -> int:
         house_fetched = house_skipped = unsupported = 0
 
     index = rebuild_votes_index(congress)
+    if refresh_bill_vote_refs(congress, index["votes"]):
+        print(f"bill manifest: congress{congress}_bills.json vote refs refreshed")
     errors.print_summary(label="fetch_votes")
     print(
         f"OK: {senate_fetched + house_fetched} new "
