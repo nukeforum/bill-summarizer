@@ -45,13 +45,125 @@ jobs:
       - name: Install Python dependencies
         run: uv pip install --system -r data-pipeline/requirements.txt
 
-      # Senate LIS XML + the legislators YAMLs need no API key. No
-      # Kotlin shadow step yet: the KMP fetch-votes port doesn't exist —
-      # add the parallel-run shadow here when it lands (see
-      # update-bills.yml for the pattern).
+      # --- Kotlin tooling (parallel-run, writes to /tmp shadow dir) ---
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      # --- Pre-stage Kotlin's shadow input from the current canonical ---
+      # fetch-votes is incremental against the files on disk (a vote
+      # already present is never refetched), so both fetchers must start
+      # from the same prior per-vote tree — otherwise the Kotlin run
+      # would re-backfill the whole Congress and the comparison would
+      # measure staleness, not parity. The canonical files reflect the
+      # last successful run's output (committed by `safe-push`).
+      - name: Stage Kotlin shadow input from canonical
+        run: |
+          mkdir -p /tmp/kotlin-votes-shadow
+          cp -r docs/data/votes /tmp/kotlin-votes-shadow/ 2>/dev/null || true
+          cp docs/data/congress*_votes.json /tmp/kotlin-votes-shadow/ 2>/dev/null || true
+          ls -laR /tmp/kotlin-votes-shadow/ | head -20 || true
+
+      # --- Python: canonical fetch (Senate LIS XML + legislators
+      # YAMLs need no API key) ---
 
       - name: Fetch votes (Python — canonical)
         run: python data-pipeline/scripts/fetch_votes.py
+
+      # --- Kotlin: shadow fetch for parity validation ---
+      # Runs second so Python's fresh canonical output is available for
+      # the comparison step. Both fetchers see the same senate.gov menu
+      # state modulo the ~minute gap between their fetches — a roll
+      # call published mid-run is tolerated by the compare step.
+
+      - name: Fetch votes (Kotlin — shadow validation)
+        # Parallel-run safety: never fail the canonical run because the
+        # Kotlin port hit a transient issue. Failure surfaces in the
+        # job UI but `safe-push` of Python's canonical output still
+        # proceeds.
+        continue-on-error: true
+        working-directory: pipeline
+        run: ./gradlew :cli:run --args="fetch-votes --output-dir /tmp/kotlin-votes-shadow" --no-daemon
+
+      # --- Compare Python (canonical) vs Kotlin (shadow) ---
+      # Output is teed to BOTH stdout (so `gh run view --log` shows the
+      # verdicts) AND $GITHUB_STEP_SUMMARY (so the Actions UI renders
+      # them as a panel). Per the pipeline-check-cli-readable rule.
+      # The parallel-run period is for observation; we'll switch
+      # canonical ownership once diffs are clean for ~a week.
+
+      - name: Compare canonical vs Kotlin shadow output
+        if: always()
+        env:
+          CANONICAL_DIR: docs/data
+          SHADOW_DIR: /tmp/kotlin-votes-shadow
+        run: |
+          set +e  # never fail the job on diff results during parallel-run
+          {
+            echo "## fetch-votes parity check"
+            echo ""
+            echo "Comparing \`$CANONICAL_DIR\` (Python, canonical) vs \`$SHADOW_DIR\` (Kotlin)."
+            echo ""
+            # Per-vote files carry no timestamps, so the trees must be
+            # byte-identical.
+            if [ ! -d "$SHADOW_DIR/votes" ]; then
+              echo "- ❌ \`votes/\`: shadow tree missing — Kotlin did not produce output"
+            elif diff -r "$CANONICAL_DIR/votes" "$SHADOW_DIR/votes" > /tmp/votes-tree.diff 2>&1; then
+              count=$(find "$CANONICAL_DIR/votes" -name '*.json' | wc -l)
+              echo "- ✅ \`votes/\`: byte-identical per-vote trees ($count files)"
+            else
+              echo "- ⚠️  \`votes/\`: per-vote trees differ"
+              echo ""
+              echo "<details><summary>diff (truncated to 400 lines)</summary>"
+              echo ""
+              echo '```diff'
+              head -400 /tmp/votes-tree.diff
+              echo '```'
+              echo "</details>"
+              echo ""
+            fi
+
+            # --- per-Congress index parity (generated_at stripped:
+            # the two runs are minutes apart) ---
+            for canonical in "$CANONICAL_DIR"/congress*_votes.json; do
+              [ -f "$canonical" ] || continue
+              fname=$(basename "$canonical")
+              shadow="$SHADOW_DIR/$fname"
+              if [ ! -f "$shadow" ]; then
+                echo "- ❌ \`$fname\`: shadow file missing — Kotlin did not produce index"
+                continue
+              fi
+              py_norm=$(mktemp)
+              kt_norm=$(mktemp)
+              jq -S 'del(.generated_at)' "$canonical" > "$py_norm"
+              jq -S 'del(.generated_at)' "$shadow"    > "$kt_norm"
+              py_count=$(jq '.vote_count' "$canonical")
+              kt_count=$(jq '.vote_count' "$shadow")
+              if diff -q "$py_norm" "$kt_norm" >/dev/null; then
+                echo "- ✅ \`$fname\`: identical index ($py_count votes, ignoring generated_at)"
+              else
+                echo "- ⚠️  \`$fname\`: index differs (Python: $py_count votes, Kotlin: $kt_count votes)"
+                echo ""
+                echo "<details><summary>diff (truncated to 200 lines, generated_at stripped)</summary>"
+                echo ""
+                echo '```diff'
+                diff -u "$py_norm" "$kt_norm" | head -200
+                echo '```'
+                echo "</details>"
+                echo ""
+              fi
+              rm -f "$py_norm" "$kt_norm"
+            done
+
+            echo ""
+            echo "_Validation runs alongside Python during the cut-over period. Python output remains canonical until parity is confirmed._"
+          } | tee -a "$GITHUB_STEP_SUMMARY"
 
       - name: Rebuild pipeline dashboard
         if: always()

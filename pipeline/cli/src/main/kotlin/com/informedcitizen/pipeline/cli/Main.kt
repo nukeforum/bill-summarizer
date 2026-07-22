@@ -8,6 +8,7 @@ package com.informedcitizen.pipeline.cli
  *  - `fetch-members` — current Congress members index + sponsored /
  *    cosponsored legislation backfill.
  *  - `build-session-calendar` — House ICS + Senate XML session days.
+ *  - `fetch-votes` — Senate roll-call votes + per-Congress index.
  *  - `build-zip-crosswalk` — HUD ZIP→congressional-district asset.
  *  - `check-freshness` — staleness assertions over published outputs.
  *
@@ -25,6 +26,7 @@ fun main(args: Array<String>) {
         "backfill-bills" -> BackfillBillsCommand.run(args.drop(1))
         "fetch-members" -> FetchMembersCommand.run(args.drop(1))
         "build-session-calendar" -> BuildSessionCalendarCommand.run(args.drop(1))
+        "fetch-votes" -> FetchVotesCommand.run(args.drop(1))
         "build-zip-crosswalk" -> BuildZipCrosswalkCommand.run(args.drop(1))
         "check-freshness" -> CheckFreshnessCommand.run(args.drop(1))
         "--help", "-h", "help" -> {
@@ -81,6 +83,14 @@ private fun printUsage() {
               (per-year senate.gov XML schedules, candidate years
               today−1..today+1). Writes
               <output-dir>/session_calendar.json (default: ./docs/data).
+              No API key required.
+          fetch-votes [--output-dir <path>] [--congress N] [--max-new N]
+              Senate roll-call votes: incremental fetch of senate.gov
+              LIS XML (per-member positions mapped lis→bioguide via the
+              congress-legislators YAMLs), writing per-vote
+              <output-dir>/votes/congress<N>/senate-<s>-<roll>.json
+              plus the <output-dir>/congress<N>_votes.json index
+              rebuilt from disk each run (default: ./docs/data).
               No API key required.
           build-zip-crosswalk [--output <path>] [--year N] [--quarter 1-4]
                               [--sleep <seconds>]
