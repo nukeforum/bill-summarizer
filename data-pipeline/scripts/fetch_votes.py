@@ -1,8 +1,9 @@
 """Fetch Senate roll-call votes and publish per-vote JSON plus a per-Congress index.
 
 Senate only for now: senate.gov LIS XML needs no API key. House votes come from
-the Congress.gov v3 house-vote endpoints (CONGRESS_API_KEY) and land in a
-follow-up — the output layout below already accommodates both chambers.
+clerk.house.gov EVS XML (also keyless; parsing already lives in _votes.py) and
+land in a follow-up — the output layout below already accommodates both
+chambers.
 
 Layout under docs/data/ (matches the RollCallVote/VotesIndex wire models in
 pipeline:shared):

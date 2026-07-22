@@ -16,8 +16,15 @@ with legislators-historical.yaml: a member who left the Senate mid-Congress
 moves to the historical file while their roll calls remain published (seen
 live 2026-07-21 — Graham/S293 appears in 2025 votes but only in historical).
 
-House source (Congress.gov v3 ``house-vote`` endpoints, bioguide-keyed
-natively) is handled separately in fetch_votes.py.
+House source: clerk.house.gov EVS XML (no API key required), one document
+per roll call at ``evs/<year>/roll<NNN>.xml``. Positions are keyed by the
+``name-id`` attribute, which is already the bioguide id — no mapping step.
+There is no machine-readable vote menu; roll numbers are dense and
+sequential within a calendar year, so the fetch driver discovers new votes
+by probing past the highest roll on disk. Speaker elections are published
+in the same format but record candidate *names* as votes — those raise
+``UnsupportedVoteError`` since they cannot be expressed as yea/nay
+positions.
 """
 from __future__ import annotations
 
@@ -65,6 +72,19 @@ _MONTHS = {
 
 # "November 10, 2025,  08:58 PM" (Senate detail XML vote_date)
 _SENATE_DATE_RE = re.compile(r"([A-Za-z]+)\s+(\d{1,2}),\s*(\d{4})")
+
+# "16-Jan-2025" (House clerk XML action-date)
+_HOUSE_DATE_RE = re.compile(r"(\d{1,2})-([A-Za-z]{3})-(\d{4})")
+_MONTH_ABBREVS = {name[:3]: number for name, number in _MONTHS.items()}
+
+
+class UnsupportedVoteError(Exception):
+    """A well-formed roll call that cannot be expressed as yea/nay positions.
+
+    Deliberately not a ``ValueError``: parse failures are retried on the next
+    run (upstream may fix the document), whereas unsupported votes are
+    permanent — the fetch driver should skip them without recording an error.
+    """
 
 
 def normalize_vote_position(raw: str) -> str:
@@ -222,6 +242,119 @@ def parse_senate_vote(text: str, lis_to_bioguide: dict[str, str]) -> dict[str, A
         },
         "positions": positions,
         "source_url": senate_vote_source_url(congress, session, roll_number),
+    }
+
+
+def house_session_year(congress: int, session: int) -> int:
+    """Calendar year of a House session (session 1 = the Congress's first year).
+
+    Clerk EVS URLs are year-keyed while our ids are congress/session-keyed.
+    """
+    return 1789 + (congress - 1) * 2 + (session - 1)
+
+
+def house_vote_source_url(congress: int, session: int, roll_number: int) -> str:
+    year = house_session_year(congress, session)
+    return f"https://clerk.house.gov/evs/{year}/roll{roll_number:03d}.xml"
+
+
+def bill_id_from_legis_num(legis_num: str | None, congress: int) -> str | None:
+    """Derive a ``Bill.id`` from a House clerk ``legis-num`` (``"H R 30"``).
+
+    Returns None for non-bill business (``QUORUM``, ``MOTION``, blank —
+    Speaker elections omit the element entirely).
+    """
+    tokens = (legis_num or "").split()
+    if len(tokens) < 2:
+        return None
+    return bill_id_from_document(" ".join(tokens[:-1]), tokens[-1], congress)
+
+
+def _parse_house_date(raw: str) -> str:
+    """``"16-Jan-2025"`` -> ``"2025-01-16"``, locale-independent."""
+    m = _HOUSE_DATE_RE.search(raw)
+    if not m:
+        raise ValueError(f"unparseable House vote date: {raw!r}")
+    month = _MONTH_ABBREVS.get(m.group(2).lower())
+    if month is None:
+        raise ValueError(f"unparseable House vote date: {raw!r}")
+    return f"{int(m.group(3)):04d}-{month:02d}-{int(m.group(1)):02d}"
+
+
+def _parse_house_session(raw: str) -> int:
+    """``"1st"`` / ``"2nd"`` -> 1 / 2."""
+    m = re.match(r"\s*(\d+)", raw or "")
+    if not m:
+        raise ValueError(f"unparseable House session: {raw!r}")
+    return int(m.group(1))
+
+
+def parse_house_vote(text: str) -> dict[str, Any]:
+    """Parse a House clerk EVS XML into a RollCallVote-shaped dict.
+
+    Same policies as :func:`parse_senate_vote`: totals are derived from the
+    parsed positions (not the ``vote-totals`` block) so published tallies
+    always agree with published positions, and an unknown vote label raises
+    ``ValueError`` so the driver records the vote instead of miscounting.
+    Candidate-ballot votes (Speaker elections, identified by their
+    ``totals-by-candidate`` blocks) raise ``UnsupportedVoteError``.
+    """
+    root = ET.fromstring(text)
+    meta = root.find("vote-metadata")
+    if meta is None:
+        raise ValueError("missing vote-metadata block")
+    congress = int(meta.findtext("congress").strip())
+    session = _parse_house_session(meta.findtext("session") or "")
+    roll_number = int(meta.findtext("rollcall-num").strip())
+
+    if meta.find(".//totals-by-candidate") is not None:
+        raise UnsupportedVoteError(
+            f"candidate-ballot vote (roll {roll_number}): positions are "
+            "candidate names, not yea/nay"
+        )
+
+    positions: list[dict[str, Any]] = []
+    totals = {
+        POSITION_YEA: 0,
+        POSITION_NAY: 0,
+        POSITION_PRESENT: 0,
+        POSITION_NOT_VOTING: 0,
+    }
+    for recorded in root.iter("recorded-vote"):
+        legislator = recorded.find("legislator")
+        bioguide = (legislator.get("name-id") or "").strip() if legislator is not None else ""
+        if not bioguide:
+            raise ValueError(f"recorded-vote without a name-id (roll {roll_number})")
+        position = normalize_vote_position(recorded.findtext("vote") or "")
+        totals[position] += 1
+        positions.append(
+            {
+                "bioguide_id": bioguide,
+                "position": position,
+                "party": (legislator.get("party") or "").strip() or None,
+                "state": (legislator.get("state") or "").strip() or None,
+            }
+        )
+    positions.sort(key=lambda p: p["bioguide_id"])
+
+    return {
+        "id": vote_id(CHAMBER_HOUSE, congress, session, roll_number),
+        "congress": congress,
+        "chamber": CHAMBER_HOUSE,
+        "session": session,
+        "roll_number": roll_number,
+        "date": _parse_house_date(meta.findtext("action-date") or ""),
+        "question": (meta.findtext("vote-question") or "").strip(),
+        "result": (meta.findtext("vote-result") or "").strip(),
+        "bill_id": bill_id_from_legis_num(meta.findtext("legis-num"), congress),
+        "totals": {
+            "yea": totals[POSITION_YEA],
+            "nay": totals[POSITION_NAY],
+            "present": totals[POSITION_PRESENT],
+            "not_voting": totals[POSITION_NOT_VOTING],
+        },
+        "positions": positions,
+        "source_url": house_vote_source_url(congress, session, roll_number),
     }
 
 

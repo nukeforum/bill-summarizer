@@ -10,6 +10,14 @@ the 100 senators voting on roll call 618, extracted from the union of
 legislators-current.yaml and legislators-historical.yaml — current alone is
 insufficient because members who left mid-Congress (Graham/S293 here) move
 to the historical file while their votes remain published.
+
+House fixtures are real clerk.house.gov EVS documents fetched 2026-07-22:
+``house_vote_119_1_roll017.xml`` is the full XML for 2025 roll 17 (passage
+of H.R. 30) verbatim; ``house_vote_119_1_roll001_quorum.xml`` is the
+opening-day quorum call trimmed to four representative positions;
+``house_vote_119_1_roll002_speaker.xml`` is the Speaker election trimmed to
+four candidate-name votes (metadata, including the ``totals-by-candidate``
+blocks, kept verbatim).
 """
 from __future__ import annotations
 
@@ -19,10 +27,15 @@ from pathlib import Path
 import pytest
 
 from _votes import (
+    UnsupportedVoteError,
     bill_id_from_document,
+    bill_id_from_legis_num,
     build_vote_ref,
     build_votes_index,
+    house_session_year,
+    house_vote_source_url,
     normalize_vote_position,
+    parse_house_vote,
     parse_lis_to_bioguide_yaml,
     parse_senate_vote,
     parse_senate_vote_menu,
@@ -154,6 +167,98 @@ def test_unmapped_lis_member_id_raises():
     mapping.pop("S428")
     with pytest.raises(ValueError, match="S428"):
         parse_senate_vote(text, mapping)
+
+
+# ------------------------------------------------------------- house votes
+
+def _house_vote_17() -> dict:
+    text = (FIXTURES / "house_vote_119_1_roll017.xml").read_text(encoding="utf-8")
+    return parse_house_vote(text)
+
+
+def test_house_urls_are_year_keyed_with_three_digit_rolls():
+    assert house_session_year(119, 1) == 2025
+    assert house_session_year(119, 2) == 2026
+    assert house_vote_source_url(119, 1, 17) == "https://clerk.house.gov/evs/2025/roll017.xml"
+    # Rolls past 999 (seen in busy years) are not truncated by the padding.
+    assert house_vote_source_url(119, 2, 1002) == "https://clerk.house.gov/evs/2026/roll1002.xml"
+
+
+def test_bill_id_from_legis_num_covers_bill_types_and_non_bills():
+    assert bill_id_from_legis_num("H R 30", 119) == "hr30-119"
+    assert bill_id_from_legis_num("H RES 5", 119) == "hres5-119"
+    assert bill_id_from_legis_num("H J RES 20", 119) == "hjres20-119"
+    assert bill_id_from_legis_num("H CON RES 14", 119) == "hconres14-119"
+    # The House also votes on Senate bills.
+    assert bill_id_from_legis_num("S 5", 119) == "s5-119"
+    # Non-bill business.
+    assert bill_id_from_legis_num("QUORUM", 119) is None
+    assert bill_id_from_legis_num("MOTION", 119) is None
+    assert bill_id_from_legis_num("", 119) is None
+    assert bill_id_from_legis_num(None, 119) is None
+
+
+def test_house_vote_17_parses_to_wire_shape():
+    vote = _house_vote_17()
+    assert vote["id"] == "house-119-1-17"
+    assert vote["congress"] == 119
+    assert vote["chamber"] == "house"
+    assert vote["session"] == 1
+    assert vote["roll_number"] == 17
+    assert vote["date"] == "2025-01-16"
+    assert vote["question"] == "On Passage"
+    assert vote["result"] == "Passed"
+    assert vote["bill_id"] == "hr30-119"
+    assert vote["source_url"] == house_vote_source_url(119, 1, 17)
+
+
+def test_house_vote_17_totals_match_positions_and_official_tally():
+    vote = _house_vote_17()
+    # Official tally: Passed 274-145, 15 not voting (one seat vacant).
+    assert vote["totals"] == {"yea": 274, "nay": 145, "present": 0, "not_voting": 15}
+    assert len(vote["positions"]) == 434
+    counted = {"yea": 0, "nay": 0, "present": 0, "not_voting": 0}
+    for p in vote["positions"]:
+        counted[p["position"]] += 1
+    assert counted == vote["totals"]
+
+
+def test_house_vote_17_positions_are_bioguide_keyed_and_sorted():
+    vote = _house_vote_17()
+    ids = [p["bioguide_id"] for p in vote["positions"]]
+    assert ids == sorted(ids)
+    assert len(set(ids)) == 434
+    # Adams (D-NC), name-id A000370, voted Nay.
+    adams = next(p for p in vote["positions"] if p["bioguide_id"] == "A000370")
+    assert adams == {
+        "bioguide_id": "A000370",
+        "position": "nay",
+        "party": "D",
+        "state": "NC",
+    }
+
+
+def test_house_quorum_call_is_a_non_bill_vote_with_present_positions():
+    text = (FIXTURES / "house_vote_119_1_roll001_quorum.xml").read_text(encoding="utf-8")
+    vote = parse_house_vote(text)
+    assert vote["id"] == "house-119-1-1"
+    assert vote["bill_id"] is None
+    assert vote["question"] == "Call by States"
+    # Fixture is trimmed to 3 Present + 1 Not Voting; totals derive from
+    # the included positions, not the vote-totals block.
+    assert vote["totals"] == {"yea": 0, "nay": 0, "present": 3, "not_voting": 1}
+
+
+def test_house_speaker_election_raises_unsupported():
+    text = (FIXTURES / "house_vote_119_1_roll002_speaker.xml").read_text(encoding="utf-8")
+    with pytest.raises(UnsupportedVoteError, match="candidate-ballot"):
+        parse_house_vote(text)
+
+
+def test_house_vote_ref_path_and_index_interop():
+    ref = build_vote_ref(_house_vote_17())
+    assert ref["path"] == "votes/congress119/house-1-17.json"
+    assert ref["bill_id"] == "hr30-119"
 
 
 # ---------------------------------------------------------------- yaml map
