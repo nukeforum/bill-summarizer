@@ -193,6 +193,7 @@ internal fun BillDetailContent(
         )
         is BillDetailUiState.Success -> BillDetailSuccessBody(
             bill = state.bill,
+            votesCoverage = state.votesCoverage,
             innerPadding = innerPadding,
             onOpenFullText = onOpenFullText,
         )
@@ -200,7 +201,12 @@ internal fun BillDetailContent(
 }
 
 @Composable
-private fun BillDetailSuccessBody(bill: Bill, innerPadding: PaddingValues, onOpenFullText: (String) -> Unit) {
+private fun BillDetailSuccessBody(
+    bill: Bill,
+    votesCoverage: Boolean,
+    innerPadding: PaddingValues,
+    onOpenFullText: (String) -> Unit,
+) {
     val fullTextUrl = bill.textUrlHtml ?: bill.congressGovUrl
 
     // Top inset is applied as layout padding (so the verticalScroll's
@@ -231,6 +237,27 @@ private fun BillDetailSuccessBody(bill: Bill, innerPadding: PaddingValues, onOpe
                 )
             }
             Text(text = bill.latestAction.text, style = MaterialTheme.typography.bodyMedium)
+        }
+
+        // Vote refs ride on the bill record itself, so this section needs
+        // no extra fetch. Without manifest coverage an empty list is
+        // ambiguous ("no roll call" vs "votes not published yet"), so the
+        // whole section stays hidden until coverage is on.
+        if (votesCoverage) {
+            Section(title = "Votes") {
+                if (bill.votes.isEmpty()) {
+                    Text(
+                        text = "No recorded roll call — passed by voice vote or unanimous consent.",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                } else {
+                    // Published newest-first; the bill's story reads oldest-first.
+                    bill.votes.asReversed().forEach { vote ->
+                        RollCallCard(vote = vote)
+                    }
+                }
+            }
         }
 
         Section(title = "Sponsor") {

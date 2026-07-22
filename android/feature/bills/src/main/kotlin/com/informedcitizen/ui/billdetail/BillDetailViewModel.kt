@@ -28,7 +28,7 @@ class BillDetailViewModel @Inject constructor(
             _uiState.value = BillDetailUiState.Loading
 
             billRepository.getBillById(billId)?.let {
-                _uiState.value = BillDetailUiState.Success(it)
+                _uiState.value = BillDetailUiState.Success(it, billRepository.votesCoverage.value)
                 return@launch
             }
 
@@ -36,7 +36,7 @@ class BillDetailViewModel @Inject constructor(
                 .onSuccess {
                     val bill = billRepository.getBillById(billId)
                     _uiState.value = if (bill != null) {
-                        BillDetailUiState.Success(bill)
+                        BillDetailUiState.Success(bill, billRepository.votesCoverage.value)
                     } else {
                         BillDetailUiState.Error("Bill not found")
                     }

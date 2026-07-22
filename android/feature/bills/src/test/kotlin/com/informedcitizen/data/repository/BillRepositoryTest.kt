@@ -204,6 +204,69 @@ class BillRepositoryTest {
     }
 
     @Test
+    fun `votes coverage defaults false and flips with the fetched manifest`() = runTest {
+        val repo = BillRepository(
+            api = StubApi(
+                BillsManifest(generatedAt = "x", congress = 119, votesCoverage = true, bills = emptyList()),
+            ),
+            dataStore = InMemoryPreferencesDataStore(),
+            crashReporter = FakeCrashReporter(),
+            billCache = FakeBillCache(),
+        )
+
+        assertFalse(repo.votesCoverage.value)
+        repo.getBills(forceRefresh = true)
+        assertTrue(repo.votesCoverage.value)
+    }
+
+    @Test
+    fun `cache fallback leaves votes coverage off`() = runTest {
+        val cache = FakeBillCache().apply {
+            replaceForSource(
+                congress = 119,
+                source = BillSource.PUBLISHED,
+                bills = listOf(sampleBill("hr1-119")),
+                generatedAt = "2026-06-01T00:00:00Z",
+                fetchedAtMillis = 1L,
+            )
+        }
+        val repo = BillRepository(
+            api = ThrowingApi(IOException("offline")),
+            dataStore = InMemoryPreferencesDataStore(),
+            crashReporter = FakeCrashReporter(),
+            billCache = cache,
+        )
+
+        val result = repo.getBills(forceRefresh = true)
+
+        assertTrue(result.isSuccess)
+        // Coverage is manifest-level and not cached, so vote surfaces
+        // stay hidden on the offline fallback.
+        assertFalse(repo.votesCoverage.value)
+    }
+
+    @Test
+    fun `publishByokBills carries the manifest votes coverage`() = runTest {
+        val repo = BillRepository(
+            api = ThrowingApi(IOException("never used")),
+            dataStore = InMemoryPreferencesDataStore(),
+            crashReporter = FakeCrashReporter(),
+            billCache = FakeBillCache(),
+        )
+
+        repo.publishByokBills(
+            BillsManifest(
+                generatedAt = "2026-06-12T00:00:00Z",
+                congress = 119,
+                votesCoverage = true,
+                bills = listOf(sampleBill("hr7-119")),
+            ),
+        )
+
+        assertTrue(repo.votesCoverage.value)
+    }
+
+    @Test
     fun `containsBillId returns false before load`() {
         val repo = BillRepository(
             api = StubApi(BillsManifest(generatedAt = "x", congress = 119, bills = emptyList())),
