@@ -12,6 +12,7 @@ import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.pipeline.model.BillsManifest
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.sync.Mutex
@@ -28,8 +29,18 @@ class BillRepository @Inject constructor(
 ) {
     private val mutex = Mutex()
     private val _bills = MutableStateFlow<List<Bill>>(emptyList())
+    private val _votesCoverage = MutableStateFlow(false)
 
     fun observeAll(): Flow<List<Bill>> = _bills.asStateFlow()
+
+    /**
+     * [BillsManifest.votesCoverage] from the manifest behind the
+     * current in-memory bills — the rollout gate for vote surfaces.
+     * Coverage is manifest-level and not cached, so the offline
+     * cache fallback resets it to false: vote surfaces hide rather
+     * than claim a bill had no roll call.
+     */
+    val votesCoverage: StateFlow<Boolean> = _votesCoverage.asStateFlow()
 
     suspend fun getBills(forceRefresh: Boolean = false): Result<List<Bill>> = mutex.withLock {
         if (!forceRefresh && _bills.value.isNotEmpty()) {
@@ -41,6 +52,7 @@ class BillRepository @Inject constructor(
                 ?: error("congresses.json has no entry for current_congress=${index.currentCongress}")
             val manifest = api.getBillsManifest("data/${entry.manifestPath}")
             _bills.value = manifest.bills
+            _votesCoverage.value = manifest.votesCoverage
             val now = System.currentTimeMillis()
             dataStore.edit { it[LAST_FETCHED_KEY] = now }
             writeThroughCache(manifest, fetchedAtMillis = now)
@@ -53,6 +65,7 @@ class BillRepository @Inject constructor(
             val cached = billCache.loadFreshest()?.takeIf { it.bills.isNotEmpty() }
                 ?: throw networkError
             _bills.value = cached.bills
+            _votesCoverage.value = false
             cached.bills
         }
     }
@@ -66,6 +79,7 @@ class BillRepository @Inject constructor(
      */
     suspend fun publishByokBills(manifest: BillsManifest) = mutex.withLock {
         _bills.value = manifest.bills
+        _votesCoverage.value = manifest.votesCoverage
         val now = System.currentTimeMillis()
         dataStore.edit { it[LAST_FETCHED_KEY] = now }
         runCatching {
