@@ -91,6 +91,10 @@ object FetchVotesCommand {
             if (result.billManifestRefreshed) {
                 println("bill manifest: ${manifestFileName(congress)} vote refs refreshed")
             }
+            println(
+                "member shards: ${result.memberShardsWritten} written, " +
+                    "${result.memberShardsUnchanged} unchanged",
+            )
             val summary = errors.renderSummary(label = "fetch-votes")
             if (summary.isNotEmpty()) System.err.println(summary)
             println(

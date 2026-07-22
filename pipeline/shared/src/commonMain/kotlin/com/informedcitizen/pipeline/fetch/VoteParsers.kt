@@ -3,6 +3,8 @@ package com.informedcitizen.pipeline.fetch
 import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.pipeline.model.Chamber
 import com.informedcitizen.pipeline.model.MemberVote
+import com.informedcitizen.pipeline.model.MemberVoteRow
+import com.informedcitizen.pipeline.model.MemberVotes
 import com.informedcitizen.pipeline.model.RollCallVote
 import com.informedcitizen.pipeline.model.VotePosition
 import com.informedcitizen.pipeline.model.VoteRef
@@ -550,3 +552,78 @@ fun attachVoteRefs(bills: List<Bill>, refs: List<VoteRef>): List<Bill> {
  */
 fun stripVoteRefs(bills: List<Bill>): List<Bill> =
     bills.map { if (it.votes.isEmpty()) it else it.copy(votes = emptyList()) }
+
+// Matches the MemberVotes / MemberVoteRow wire models: one shard per
+// member with their position on every published roll call, so the app
+// fetches per saved rep (a few tens of KB), never per bill. Mirrors
+// Python `_votes.py`'s member-shard section.
+
+private val BILL_ID_REGEX = Regex("""^([a-z]+?)(\d+)-\d+$""")
+
+/** Shard location relative to docs/data/, e.g. `votes/members/A000382.json`. */
+fun memberVotesRelPath(bioguideId: String): String = "votes/members/$bioguideId.json"
+
+/** Split a [Bill.id] into display parts: `"hr30-119"` -> `("hr", "30")`. */
+fun billTypeAndNumber(billId: String?): Pair<String?, String?> {
+    val match = BILL_ID_REGEX.matchEntire(billId.orEmpty()) ?: return null to null
+    return match.groupValues[1] to match.groupValues[2]
+}
+
+/**
+ * Newest first with the [buildVotesIndex] tiebreak, matching the
+ * Python `(date, roll_number, chamber)` reverse sort.
+ */
+private val voteNewestFirst: Comparator<RollCallVote> =
+    compareByDescending<RollCallVote> { it.date }
+        .thenByDescending { it.rollNumber }
+        .thenByDescending { it.chamber.wireName }
+
+/**
+ * Invert per-vote positions into per-member [MemberVoteRow] lists.
+ * Mirrors Python `_votes.build_member_vote_rows`.
+ *
+ * [shortTitles] maps `bill_id` -> `short_title` (from the bills
+ * manifests); rows for bills outside it get a null [MemberVoteRow.shortTitle].
+ * Every member's rows come out newest first with the [buildVotesIndex]
+ * tiebreak, spanning all the Congresses in [votes].
+ */
+fun buildMemberVoteRows(
+    votes: List<RollCallVote>,
+    shortTitles: Map<String, String>,
+): Map<String, List<MemberVoteRow>> {
+    val rows = LinkedHashMap<String, MutableList<MemberVoteRow>>()
+    for (vote in votes.sortedWith(voteNewestFirst)) {
+        val billId = vote.billId
+        val (billType, billNumber) = billTypeAndNumber(billId)
+        for (member in vote.positions) {
+            rows.getOrPut(member.bioguideId) { mutableListOf() } += MemberVoteRow(
+                voteId = vote.id,
+                congress = vote.congress,
+                date = vote.date,
+                question = vote.question,
+                result = vote.result,
+                position = member.position,
+                billId = billId,
+                type = billType,
+                number = billNumber,
+                shortTitle = billId?.let { shortTitles[it] },
+            )
+        }
+    }
+    return rows
+}
+
+/**
+ * Assemble one member's `votes/members/<bioguideId>.json` payload.
+ * Mirrors Python `_votes.build_member_votes`.
+ */
+fun buildMemberVotes(
+    bioguideId: String,
+    rows: List<MemberVoteRow>,
+    generatedAt: String,
+): MemberVotes = MemberVotes(
+    generatedAt = generatedAt,
+    bioguideId = bioguideId,
+    voteCount = rows.size,
+    votes = rows,
+)
