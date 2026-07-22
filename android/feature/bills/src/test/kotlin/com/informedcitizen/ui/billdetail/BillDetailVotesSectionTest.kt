@@ -3,13 +3,18 @@ package com.informedcitizen.ui.billdetail
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.ui.test.assert
 import androidx.compose.ui.test.assertCountEquals
+import androidx.compose.ui.test.hasContentDescription
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.v2.createComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
+import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.unit.dp
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.informedcitizen.data.repository.RepPosition
+import com.informedcitizen.data.repository.SavedRep
 import com.informedcitizen.pipeline.model.Chamber
+import com.informedcitizen.pipeline.model.VotePosition
 import com.informedcitizen.pipeline.model.VoteRef
 import com.informedcitizen.pipeline.model.VoteTotals
 import com.informedcitizen.ui.billslist.billFixture
@@ -26,7 +31,11 @@ class BillDetailVotesSectionTest {
     @get:Rule
     val composeRule = createComposeRule()
 
-    private fun setContent(votes: List<VoteRef>, votesCoverage: Boolean) {
+    private fun setContent(
+        votes: List<VoteRef>,
+        votesCoverage: Boolean,
+        repVotes: RepVotesUiState = RepVotesUiState.Empty,
+    ) {
         composeRule.setContent {
             BillDetailContent(
                 state = BillDetailUiState.Success(
@@ -35,6 +44,7 @@ class BillDetailVotesSectionTest {
                 ),
                 innerPadding = PaddingValues(0.dp),
                 onOpenFullText = {},
+                repVotes = repVotes,
             )
         }
     }
@@ -98,6 +108,79 @@ class BillDetailVotesSectionTest {
         composeRule.onNodeWithText("Not voting 0").assertDoesNotExist()
     }
 
+    @Test
+    fun `saved reps render on the chamber-matched card via vote id join`() {
+        setContent(
+            votes = listOf(senateVote(), houseVote()),
+            votesCoverage = true,
+            repVotes = repVotesFixture(),
+        )
+
+        // Two "Your reps" sub-sections, one per card.
+        composeRule.onAllNodesWithText("Your reps").assertCountEquals(2)
+        composeRule.onNodeWithText("Rep. Michael Turner (R-OH)").assertExists()
+        composeRule.onNodeWithText("Sen. Bernie Moreno (R-OH)").assertExists()
+        composeRule.onNodeWithText("Sen. Jon Husted (R-OH)").assertExists()
+        composeRule.onNodeWithText("Not voting").assertExists()
+        composeRule.onAllNodesWithText("Yea").assertCountEquals(2)
+
+        // The merged card descriptions prove which card hosts which rep:
+        // the House card carries only the House rep, the Senate card
+        // carries both senators.
+        val houseCard = composeRule.onNodeWithContentDescription("Representative Michael Turner", substring = true)
+        houseCard.assert(hasContentDescription("House,", substring = true))
+        val senateCard = composeRule.onNodeWithContentDescription("Senator Bernie Moreno", substring = true)
+        senateCard.assert(hasContentDescription("Senator Jon Husted, Republican, Ohio — not voting", substring = true))
+    }
+
+    @Test
+    fun `cards render without rep rows when no positions are supplied`() {
+        setContent(votes = listOf(houseVote()), votesCoverage = true)
+
+        composeRule.onNodeWithText("Yea 274 · Nay 145").assertExists()
+        composeRule.onNodeWithText("Your reps").assertDoesNotExist()
+    }
+
+    @Test
+    fun `fetch failure shows the quiet line while totals still render`() {
+        setContent(
+            votes = listOf(houseVote()),
+            votesCoverage = true,
+            repVotes = RepVotesUiState(emptyMap(), fetchFailed = true),
+        )
+
+        composeRule.onNodeWithText(FETCH_FAILED_LINE).assertExists()
+        composeRule.onNodeWithText("Yea 274 · Nay 145").assertExists()
+    }
+
+    @Test
+    fun `fetch failure line is absent for a voice-vote bill`() {
+        setContent(
+            votes = emptyList(),
+            votesCoverage = true,
+            repVotes = RepVotesUiState(emptyMap(), fetchFailed = true),
+        )
+
+        composeRule.onNodeWithText(VOICE_VOTE_LINE).assertExists()
+        composeRule.onNodeWithText(FETCH_FAILED_LINE).assertDoesNotExist()
+    }
+
+    private fun repVotesFixture(): RepVotesUiState {
+        val turner = SavedRep("T000463", "Michael Turner", "R", "OH", "house")
+        val moreno = SavedRep("M002222", "Bernie Moreno", "R", "OH", "senate")
+        val husted = SavedRep("H002222", "Jon Husted", "R", "OH", "senate")
+        return RepVotesUiState(
+            positionsByVoteId = mapOf(
+                "house-119-1-17" to listOf(RepPosition("house-119-1-17", turner, VotePosition.YEA)),
+                "senate-119-1-618" to listOf(
+                    RepPosition("senate-119-1-618", moreno, VotePosition.YEA),
+                    RepPosition("senate-119-1-618", husted, VotePosition.NOT_VOTING),
+                ),
+            ),
+            fetchFailed = false,
+        )
+    }
+
     private fun houseVote(present: Int = 0, notVoting: Int = 15) = VoteRef(
         id = "house-119-1-17",
         chamber = Chamber.HOUSE,
@@ -135,5 +218,6 @@ class BillDetailVotesSectionTest {
     private companion object {
         const val VOICE_VOTE_LINE =
             "No recorded roll call — passed by voice vote or unanimous consent."
+        const val FETCH_FAILED_LINE = "Couldn't load your reps' positions."
     }
 }

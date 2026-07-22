@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -15,7 +16,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
+import com.informedcitizen.data.repository.RepPosition
+import com.informedcitizen.data.repository.SavedRep
 import com.informedcitizen.pipeline.model.Chamber
+import com.informedcitizen.pipeline.model.VotePosition
 import com.informedcitizen.pipeline.model.VoteRef
 import com.informedcitizen.ui.util.formatDate
 
@@ -25,11 +29,21 @@ import com.informedcitizen.ui.util.formatDate
  * split. Numbers render as published, never recomputed — if per-party
  * counts don't sum to a position total (unknown-party members), that
  * is a pipeline concern, not a UI one. Party identity stays text-only;
- * the app's palette is deliberately non-partisan.
+ * the app's palette is deliberately non-partisan — positions render as
+ * text, never color.
+ *
+ * [repPositions] are the saved reps' recorded positions in this roll
+ * call specifically (already joined by vote id upstream, which makes
+ * chamber matching automatic); a saved rep absent from the roll call's
+ * rows gets no row — no "did not vote" guess.
  */
 @Composable
-internal fun RollCallCard(vote: VoteRef, modifier: Modifier = Modifier) {
-    val description = rollCallDescription(vote)
+internal fun RollCallCard(
+    vote: VoteRef,
+    modifier: Modifier = Modifier,
+    repPositions: List<RepPosition> = emptyList(),
+) {
+    val description = rollCallDescription(vote, repPositions)
     Column(
         modifier = modifier
             .fillMaxWidth()
@@ -56,6 +70,27 @@ internal fun RollCallCard(vote: VoteRef, modifier: Modifier = Modifier) {
         partySplitLine("Nay", vote.partySplit["nay"])?.let { DetailLine(it) }
         if (vote.totals.present > 0) DetailLine("Present ${vote.totals.present}")
         if (vote.totals.notVoting > 0) DetailLine("Not voting ${vote.totals.notVoting}")
+        if (repPositions.isNotEmpty()) {
+            HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
+            Text(
+                text = "Your reps",
+                style = MaterialTheme.typography.labelMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            repPositions.forEach { repPosition ->
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Text(
+                        text = repLabel(repPosition.rep),
+                        style = MaterialTheme.typography.bodyMedium,
+                        modifier = Modifier.weight(1f),
+                    )
+                    Text(
+                        text = positionLabel(repPosition.position),
+                        style = MaterialTheme.typography.labelLarge,
+                    )
+                }
+            }
+        }
     }
 }
 
@@ -106,14 +141,41 @@ private fun partySplitLine(label: String, counts: Map<String, Int>?): String? =
         "$label — " + split.entries.joinToString(" · ") { (party, count) -> "$party $count" }
     }
 
-/** One merged screen-reader description per roll call, parties expanded. */
-private fun rollCallDescription(vote: VoteRef): String = buildString {
+private fun repLabel(rep: SavedRep): String {
+    val prefix = if (rep.chamber == "senate") "Sen." else "Rep."
+    return "$prefix ${rep.name} (${rep.party}-${rep.state})"
+}
+
+private fun positionLabel(position: VotePosition): String = when (position) {
+    VotePosition.YEA -> "Yea"
+    VotePosition.NAY -> "Nay"
+    VotePosition.PRESENT -> "Present"
+    VotePosition.NOT_VOTING -> "Not voting"
+}
+
+/**
+ * One merged screen-reader description per roll call, abbreviations
+ * expanded (R-OH → Republican, Ohio) as elsewhere in the section.
+ */
+private fun rollCallDescription(vote: VoteRef, repPositions: List<RepPosition>): String = buildString {
     append("${vote.chamber.displayName()}, ${formatDate(vote.date)}, ${vote.question}, ${vote.result}.")
     append(" ${vote.totals.yea} yea, ${vote.totals.nay} nay.")
     partySplitDescription("Yea", vote.partySplit["yea"])?.let { append(" $it") }
     partySplitDescription("Nay", vote.partySplit["nay"])?.let { append(" $it") }
     if (vote.totals.present > 0) append(" ${vote.totals.present} present.")
     if (vote.totals.notVoting > 0) append(" ${vote.totals.notVoting} not voting.")
+    if (repPositions.isNotEmpty()) {
+        append(" Your representatives: ")
+        append(
+            repPositions.joinToString("; ") { repPosition ->
+                val rep = repPosition.rep
+                val role = if (rep.chamber == "senate") "Senator" else "Representative"
+                "$role ${rep.name}, ${partyName(rep.party, 1)}, ${stateName(rep.state)} — " +
+                    positionLabel(repPosition.position).lowercase()
+            },
+        )
+        append(".")
+    }
 }
 
 private fun partySplitDescription(label: String, counts: Map<String, Int>?): String? =
@@ -129,3 +191,25 @@ private fun partyName(code: String, count: Int): String = when (code) {
     "I" -> if (count == 1) "Independent" else "Independents"
     else -> code
 }
+
+private fun stateName(code: String): String = STATE_NAMES[code] ?: code
+
+// Postal codes appearing in members data: 50 states plus the
+// districts/territories with congressional delegates.
+private val STATE_NAMES = mapOf(
+    "AL" to "Alabama", "AK" to "Alaska", "AZ" to "Arizona", "AR" to "Arkansas",
+    "CA" to "California", "CO" to "Colorado", "CT" to "Connecticut", "DE" to "Delaware",
+    "FL" to "Florida", "GA" to "Georgia", "HI" to "Hawaii", "ID" to "Idaho",
+    "IL" to "Illinois", "IN" to "Indiana", "IA" to "Iowa", "KS" to "Kansas",
+    "KY" to "Kentucky", "LA" to "Louisiana", "ME" to "Maine", "MD" to "Maryland",
+    "MA" to "Massachusetts", "MI" to "Michigan", "MN" to "Minnesota", "MS" to "Mississippi",
+    "MO" to "Missouri", "MT" to "Montana", "NE" to "Nebraska", "NV" to "Nevada",
+    "NH" to "New Hampshire", "NJ" to "New Jersey", "NM" to "New Mexico", "NY" to "New York",
+    "NC" to "North Carolina", "ND" to "North Dakota", "OH" to "Ohio", "OK" to "Oklahoma",
+    "OR" to "Oregon", "PA" to "Pennsylvania", "RI" to "Rhode Island", "SC" to "South Carolina",
+    "SD" to "South Dakota", "TN" to "Tennessee", "TX" to "Texas", "UT" to "Utah",
+    "VT" to "Vermont", "VA" to "Virginia", "WA" to "Washington", "WV" to "West Virginia",
+    "WI" to "Wisconsin", "WY" to "Wyoming",
+    "DC" to "District of Columbia", "AS" to "American Samoa", "GU" to "Guam",
+    "MP" to "Northern Mariana Islands", "PR" to "Puerto Rico", "VI" to "U.S. Virgin Islands",
+)
