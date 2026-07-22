@@ -13,12 +13,15 @@ import requests
 
 import _common
 import fetch_votes
-from _votes import parse_senate_vote
+from _votes import house_vote_source_url, parse_house_vote, parse_senate_vote
 
 FIXTURES = Path(__file__).parent / "fixtures"
 
 DETAIL_618 = (FIXTURES / "senate_vote_119_1_00618.xml").read_text(encoding="utf-8")
 LIS_MAP = json.loads((FIXTURES / "lis_to_bioguide.json").read_text(encoding="utf-8"))
+HOUSE_ROLL17 = (FIXTURES / "house_vote_119_1_roll017.xml").read_text(encoding="utf-8")
+HOUSE_QUORUM = (FIXTURES / "house_vote_119_1_roll001_quorum.xml").read_text(encoding="utf-8")
+HOUSE_SPEAKER = (FIXTURES / "house_vote_119_1_roll002_speaker.xml").read_text(encoding="utf-8")
 
 
 def _menu_xml(congress: int, session: int, vote_numbers: list[int]) -> str:
@@ -93,7 +96,8 @@ def test_main_writes_vote_file_and_index(env, monkeypatch, capsys):
     assert ref["bill_id"] == "hr5371-119"
     assert ref["path"] == "votes/congress119/senate-1-618.json"
     assert "positions" not in ref
-    assert "OK: 1 new, 0 already on disk, 0 failed" in capsys.readouterr().out
+    out = capsys.readouterr().out
+    assert "OK: 1 new (1 Senate, 0 House), 0 already on disk, 0 unsupported, 0 failed" in out
 
 
 def test_second_run_skips_existing_votes(env, monkeypatch):
@@ -117,7 +121,7 @@ def test_failed_vote_is_recorded_and_retried_next_run(env, monkeypatch, capsys):
 
     assert fetch_votes.main(["--congress", "119"]) == 0
     captured = capsys.readouterr()
-    assert "OK: 1 new, 0 already on disk, 1 failed" in captured.out
+    assert "OK: 1 new (1 Senate, 0 House), 0 already on disk, 0 unsupported, 1 failed" in captured.out
     assert "senate_vote / HTTPError" in captured.err
     assert not (env / "votes" / "congress119" / "senate-1-619.json").exists()
 
@@ -172,6 +176,148 @@ def test_menu_congress_mismatch_is_fatal(env, monkeypatch, capsys):
     _fake(monkeypatch, {MENU_1_URL: _menu_xml(118, 1, [618])})
     assert fetch_votes.main(["--congress", "119"]) == 1
     assert "identifies itself as congress 118" in capsys.readouterr().err
+
+
+# ---------- House probe loop ------------------------------------------------
+
+# The Senate side of these tests is a menu with zero votes, so all activity
+# comes from the House probe. Unmapped House URLs 404, ending each session's
+# probe (clerk.house.gov's behavior past the newest published roll).
+
+EMPTY_MENU = _menu_xml(119, 1, [])
+
+
+def _seed_house_vote(env: Path, congress: int, session: int, roll: int) -> None:
+    """Write a minimal-but-valid vote file so the probe skips this roll."""
+    vote = {
+        "id": f"house-{congress}-{session}-{roll}",
+        "congress": congress,
+        "chamber": "house",
+        "session": session,
+        "roll_number": roll,
+        "date": "2025-01-03",
+        "question": "On Passage",
+        "result": "Passed",
+        "bill_id": None,
+        "totals": {"yea": 0, "nay": 0, "present": 0, "not_voting": 0},
+        "positions": [],
+    }
+    path = env / "votes" / f"congress{congress}" / f"house-{session}-{roll}.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(vote), encoding="utf-8")
+
+
+def test_house_fetches_past_existing_rolls_and_stops_at_404(env, monkeypatch, capsys):
+    for roll in range(1, 17):
+        _seed_house_vote(env, 119, 1, roll)
+    fake = _fake(
+        monkeypatch,
+        {MENU_1_URL: EMPTY_MENU, house_vote_source_url(119, 1, 17): HOUSE_ROLL17},
+    )
+
+    assert fetch_votes.main(["--congress", "119"]) == 0
+
+    saved = json.loads(
+        (env / "votes" / "congress119" / "house-1-17.json").read_text(encoding="utf-8")
+    )
+    assert saved == parse_house_vote(HOUSE_ROLL17)
+    # Existing rolls cost no fetches; the probe stopped at the first 404
+    # (roll 18) and never looked further.
+    assert house_vote_source_url(119, 1, 16) not in fake.requested
+    assert house_vote_source_url(119, 1, 18) in fake.requested
+    assert house_vote_source_url(119, 1, 19) not in fake.requested
+    # Session 2 was probed and found unpublished (single 404).
+    assert house_vote_source_url(119, 2, 1) in fake.requested
+    assert house_vote_source_url(119, 2, 2) not in fake.requested
+
+    out = capsys.readouterr().out
+    assert "OK: 1 new (0 Senate, 1 House), 16 already on disk, 0 unsupported, 0 failed" in out
+    index = json.loads((env / "congress119_votes.json").read_text(encoding="utf-8"))
+    assert index["vote_count"] == 17
+    ref = next(r for r in index["votes"] if r["id"] == "house-119-1-17")
+    assert ref["bill_id"] == "hr30-119"
+    assert ref["path"] == "votes/congress119/house-1-17.json"
+
+
+def test_house_speaker_election_is_skipped_not_errored(env, monkeypatch, capsys):
+    responses = {
+        MENU_1_URL: EMPTY_MENU,
+        house_vote_source_url(119, 1, 1): HOUSE_QUORUM,
+        house_vote_source_url(119, 1, 2): HOUSE_SPEAKER,
+    }
+    fake = _fake(monkeypatch, responses)
+    assert fetch_votes.main(["--congress", "119"]) == 0
+
+    assert (env / "votes" / "congress119" / "house-1-1.json").exists()
+    assert not (env / "votes" / "congress119" / "house-1-2.json").exists()
+    # The probe continued past the unsupported vote to roll 3 (404 -> stop).
+    assert house_vote_source_url(119, 1, 3) in fake.requested
+    out = capsys.readouterr().out
+    assert "OK: 1 new (0 Senate, 1 House), 0 already on disk, 1 unsupported, 0 failed" in out
+
+    # Next run: roll 1 is on disk (skipped), the Speaker election is
+    # re-probed and re-skipped — cheap, and keeps disk as the only cursor.
+    second = _fake(monkeypatch, responses)
+    assert fetch_votes.main(["--congress", "119"]) == 0
+    assert house_vote_source_url(119, 1, 1) not in second.requested
+    assert house_vote_source_url(119, 1, 2) in second.requested
+
+
+def test_house_consecutive_parse_failures_stop_probe(env, monkeypatch, capsys):
+    fake = _fake(
+        monkeypatch,
+        {
+            MENU_1_URL: EMPTY_MENU,
+            house_vote_source_url(119, 1, 1): HOUSE_QUORUM,
+            house_vote_source_url(119, 1, 2): "<not-a-vote/>",
+            house_vote_source_url(119, 1, 3): "<not-a-vote/>",
+            house_vote_source_url(119, 1, 4): "<not-a-vote/>",
+            house_vote_source_url(119, 1, 5): HOUSE_QUORUM,
+        },
+    )
+    assert fetch_votes.main(["--congress", "119"]) == 0
+    # Three consecutive failures capped the session probe before roll 5.
+    assert house_vote_source_url(119, 1, 5) not in fake.requested
+    captured = capsys.readouterr()
+    assert "3 consecutive House parse failures" in captured.out
+    assert "OK: 1 new (0 Senate, 1 House), 0 already on disk, 0 unsupported, 3 failed" in captured.out
+
+
+def test_house_identity_mismatch_stops_probe(env, monkeypatch, capsys):
+    # Roll 1's URL serves XML identifying itself as roll 17: the year/session
+    # mapping must be wrong, so nothing is published and the probe stops.
+    fake = _fake(monkeypatch, {MENU_1_URL: EMPTY_MENU, house_vote_source_url(119, 1, 1): HOUSE_ROLL17})
+    assert fetch_votes.main(["--congress", "119"]) == 0
+    votes_dir = env / "votes" / "congress119"
+    assert not votes_dir.exists() or not list(votes_dir.glob("house-*.json"))
+    assert house_vote_source_url(119, 1, 2) not in fake.requested
+    captured = capsys.readouterr()
+    assert "house_vote / ValueError" in captured.err
+    assert "identifies itself as house-119-1-17" in captured.err
+
+
+def test_house_non_404_error_recorded_and_stops_probe(env, monkeypatch, capsys):
+    fake = _fake(
+        monkeypatch,
+        {MENU_1_URL: EMPTY_MENU, house_vote_source_url(119, 1, 1): _http_error(500)},
+    )
+    assert fetch_votes.main(["--congress", "119"]) == 0
+    assert house_vote_source_url(119, 1, 2) not in fake.requested
+    assert "house_vote / HTTPError" in capsys.readouterr().err
+
+
+def test_house_deferred_when_senate_exhausts_budget(env, monkeypatch, capsys):
+    fake = _fake(
+        monkeypatch,
+        {
+            MENU_1_URL: _menu_xml(119, 1, [618]),
+            DETAIL_618_URL: DETAIL_618,
+            house_vote_source_url(119, 1, 1): HOUSE_QUORUM,
+        },
+    )
+    assert fetch_votes.main(["--congress", "119", "--max-new", "1"]) == 0
+    assert house_vote_source_url(119, 1, 1) not in fake.requested
+    assert "House probe deferred to next run" in capsys.readouterr().out
 
 
 def test_build_lis_to_bioguide_unions_current_over_historical(monkeypatch):

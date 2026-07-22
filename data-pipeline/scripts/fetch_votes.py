@@ -1,21 +1,23 @@
-"""Fetch Senate roll-call votes and publish per-vote JSON plus a per-Congress index.
+"""Fetch roll-call votes (both chambers) and publish per-vote JSON plus a per-Congress index.
 
-Senate only for now: senate.gov LIS XML needs no API key. House votes come from
-clerk.house.gov EVS XML (also keyless; parsing already lives in _votes.py) and
-land in a follow-up — the output layout below already accommodates both
-chambers.
+Both sources are keyless: Senate votes come from senate.gov LIS XML (menu +
+detail documents), House votes from clerk.house.gov EVS XML. The House
+publishes no machine-readable vote menu, so new House rolls are discovered by
+probing sequentially past the rolls already on disk until the first 404 (roll
+numbers are dense per calendar-year session).
 
 Layout under docs/data/ (matches the RollCallVote/VotesIndex wire models in
 pipeline:shared):
 
     votes/congress119/senate-1-618.json   one file per roll call, with positions
+    votes/congress119/house-1-17.json
     congress119_votes.json                index: every vote minus positions
 
 Runs are incremental and self-resuming: a roll call already on disk is never
-refetched (published roll calls are immutable), so each run costs the vote
-menu(s), the two legislators YAMLs, and one detail XML per *new* vote. The
-index is rebuilt from the files on disk at the end of every run, so a crashed
-run heals on the next one.
+refetched (published roll calls are immutable), so each run costs the Senate
+vote menu(s), the two legislators YAMLs, one detail XML per *new* vote, and a
+handful of House probe fetches. The index is rebuilt from the files on disk at
+the end of every run, so a crashed run heals on the next one.
 
 Run locally (no key required):
     python data-pipeline/scripts/fetch_votes.py
@@ -33,9 +35,13 @@ import requests
 import _common
 from _common import ErrorCollector, LEGISLATORS_CURRENT_YAML_URL, current_congress, now_iso
 from _votes import (
+    CHAMBER_HOUSE,
     CHAMBER_SENATE,
+    UnsupportedVoteError,
     build_vote_ref,
     build_votes_index,
+    house_vote_source_url,
+    parse_house_vote,
     parse_lis_to_bioguide_yaml,
     parse_senate_vote,
     parse_senate_vote_menu,
@@ -53,6 +59,15 @@ LEGISLATORS_HISTORICAL_YAML_URL = (
 # started yet 404s and is skipped (same pattern as the Senate schedule walk
 # in build_session_calendar.py).
 SENATE_SESSIONS = (1, 2)
+
+# House sessions are probed the same way: a session that hasn't started 404s
+# on its first roll and costs a single fetch.
+HOUSE_SESSIONS = (1, 2)
+
+# A clerk.house.gov outage or format drift looks like a run of consecutive
+# parse failures; a single bad roll has parseable successors that reset the
+# counter. The cap keeps a 200-with-error-page response from probing forever.
+MAX_CONSECUTIVE_HOUSE_ERRORS = 3
 
 TIMEOUT_SECONDS = 30
 
@@ -181,6 +196,86 @@ def fetch_new_senate_votes(
     return fetched, skipped
 
 
+def fetch_new_house_votes(
+    congress: int,
+    errors: ErrorCollector,
+    max_new: int,
+) -> tuple[int, int, int]:
+    """Probe clerk.house.gov for new House roll calls and save them.
+
+    The House publishes no vote menu, but roll numbers are dense and
+    sequential per session, so each session is walked from roll 1: rolls
+    already on disk are skipped for free, missing ones are fetched, and the
+    first 404 is the end of the published roll calls. Candidate-ballot votes
+    (Speaker elections) cannot be expressed as yea/nay positions; they are
+    skipped — and re-probed every run, a couple of cheap fetches per Congress
+    — rather than recorded, keeping file existence as the only resume cursor.
+
+    Returns (fetched, skipped, unsupported).
+    """
+    fetched = 0
+    skipped = 0
+    unsupported = 0
+    for session in HOUSE_SESSIONS:
+        consecutive_errors = 0
+        roll_number = 0
+        while True:
+            roll_number += 1
+            path = vote_path(congress, CHAMBER_HOUSE, session, roll_number)
+            if path.exists():
+                skipped += 1
+                continue
+            if fetched >= max_new:
+                print(f"Reached --max-new {max_new}; remaining votes deferred to next run")
+                return fetched, skipped, unsupported
+            url = house_vote_source_url(congress, session, roll_number)
+            vote_key = f"{congress}-{session}-{roll_number}"
+            try:
+                text = _fetch(url)
+            except requests.HTTPError as exc:
+                if exc.response is not None and exc.response.status_code == 404:
+                    break  # end of the published roll calls for this session
+                errors.record("house_vote", vote_key, exc, url=url)
+                break  # outage vs. end is indistinguishable; retry next run
+            except requests.RequestException as exc:
+                errors.record("house_vote", vote_key, exc, url=url)
+                break
+            try:
+                vote = parse_house_vote(text)
+            except UnsupportedVoteError as exc:
+                unsupported += 1
+                consecutive_errors = 0
+                print(f"  - house-{vote_key} skipped: {exc}")
+                continue
+            except Exception as exc:  # noqa: BLE001 — per-vote isolation
+                errors.record("house_vote", vote_key, exc, url=url)
+                consecutive_errors += 1
+                if consecutive_errors >= MAX_CONSECUTIVE_HOUSE_ERRORS:
+                    print(
+                        f"  ! {consecutive_errors} consecutive House parse failures; "
+                        f"stopping session {session} probe"
+                    )
+                    break
+                continue
+            if (
+                vote["congress"] != congress
+                or vote["session"] != session
+                or vote["roll_number"] != roll_number
+            ):
+                errors.record(
+                    "house_vote",
+                    vote_key,
+                    ValueError(f"detail XML identifies itself as {vote['id']}"),
+                    url=url,
+                )
+                break  # the year->session mapping is off; nothing later can be right
+            consecutive_errors = 0
+            _common._write_json(path, vote)
+            fetched += 1
+            print(f"  + {vote['id']}: {vote['question']} — {vote['result']}")
+    return fetched, skipped, unsupported
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -189,10 +284,11 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument(
         "--max-new", type=int, default=1000,
-        help="Cap on new votes fetched per run (default 1000). A full-Congress "
-             "first run is ~700 detail fetches; steady-state runs fetch a "
-             "handful. The cap bounds a runaway loop, and a capped run is "
-             "harmless — the next run picks up where it left off.",
+        help="Cap on new votes fetched per run, shared across both chambers "
+             "(default 1000). A full-Congress first backfill is ~1500+ detail "
+             "fetches; steady-state runs fetch a handful. The cap bounds a "
+             "runaway loop, and a capped run is harmless — the next run picks "
+             "up where it left off.",
     )
     args = parser.parse_args(argv)
     congress = args.congress if args.congress is not None else current_congress()
@@ -212,14 +308,27 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     errors = ErrorCollector()
-    fetched, skipped = fetch_new_senate_votes(
+    senate_fetched, senate_skipped = fetch_new_senate_votes(
         congress, menus, lis_to_bioguide, errors, args.max_new
     )
+
+    house_budget = args.max_new - senate_fetched
+    if house_budget > 0:
+        print(f"House probe for Congress {congress} (clerk.house.gov EVS):")
+        house_fetched, house_skipped, unsupported = fetch_new_house_votes(
+            congress, errors, house_budget
+        )
+    else:
+        print("House probe deferred to next run: --max-new budget exhausted")
+        house_fetched = house_skipped = unsupported = 0
 
     index = rebuild_votes_index(congress)
     errors.print_summary(label="fetch_votes")
     print(
-        f"OK: {fetched} new, {skipped} already on disk, {len(errors)} failed; "
+        f"OK: {senate_fetched + house_fetched} new "
+        f"({senate_fetched} Senate, {house_fetched} House), "
+        f"{senate_skipped + house_skipped} already on disk, "
+        f"{unsupported} unsupported, {len(errors)} failed; "
         f"index now {index['vote_count']} votes"
     )
     return 0
