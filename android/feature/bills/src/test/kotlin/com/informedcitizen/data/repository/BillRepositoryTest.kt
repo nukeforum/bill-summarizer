@@ -9,6 +9,7 @@ import com.informedcitizen.pipeline.model.BillsManifest
 import com.informedcitizen.pipeline.model.CongressEntry
 import com.informedcitizen.pipeline.model.CongressesIndex
 import com.informedcitizen.pipeline.model.Outcome
+import com.informedcitizen.pipeline.model.ElectionCalendar
 import com.informedcitizen.pipeline.model.SessionCalendar
 import com.informedcitizen.pipeline.model.Sponsor
 import com.informedcitizen.testutil.FakeBillCache
@@ -293,6 +294,7 @@ class BillRepositoryTest {
             return manifest
         }
         override suspend fun getSessionCalendar(): SessionCalendar = error("not used in this test")
+        override suspend fun getElectionCalendar(): ElectionCalendar = error("not used in this test")
     }
 
     private class ThrowingApi(
@@ -307,6 +309,7 @@ class BillRepositoryTest {
             if (failOnIndex) throw throwable else index
         override suspend fun getBillsManifest(url: String): BillsManifest = throw throwable
         override suspend fun getSessionCalendar(): SessionCalendar = error("not used in this test")
+        override suspend fun getElectionCalendar(): ElectionCalendar = error("not used in this test")
     }
 
     private fun sampleBill(id: String) = Bill(

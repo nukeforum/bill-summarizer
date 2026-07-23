@@ -15,6 +15,7 @@ import com.informedcitizen.pipeline.model.MemberVotes
 import com.informedcitizen.pipeline.model.MembersIndex
 import com.informedcitizen.pipeline.model.Outcome
 import com.informedcitizen.pipeline.model.VotePosition
+import com.informedcitizen.pipeline.model.ElectionCalendar
 import com.informedcitizen.pipeline.model.SessionCalendar
 import com.informedcitizen.pipeline.model.Sponsor
 import com.informedcitizen.data.repository.BillRepository
@@ -46,6 +47,7 @@ private class StubBillsApi(private val bills: List<Bill>) : BillsApi {
     override suspend fun getBillsManifest(url: String): BillsManifest =
         BillsManifest(generatedAt = "x", congress = 119, bills = bills)
     override suspend fun getSessionCalendar(): SessionCalendar = error("not used")
+    override suspend fun getElectionCalendar(): ElectionCalendar = error("not used")
 }
 
 private class DetailStubMemberRepository(

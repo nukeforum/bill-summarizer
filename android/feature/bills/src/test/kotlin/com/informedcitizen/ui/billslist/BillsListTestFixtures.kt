@@ -17,6 +17,7 @@ import com.informedcitizen.pipeline.model.BillsManifest
 import com.informedcitizen.pipeline.model.CongressEntry
 import com.informedcitizen.pipeline.model.CongressesIndex
 import com.informedcitizen.pipeline.model.Outcome
+import com.informedcitizen.pipeline.model.ElectionCalendar
 import com.informedcitizen.pipeline.model.SessionCalendar
 import com.informedcitizen.pipeline.model.SessionCalendarSource
 import com.informedcitizen.pipeline.model.Sponsor
@@ -59,6 +60,7 @@ internal class StubBillsApi(private val manifest: BillsManifest) : BillsApi {
         source = SessionCalendarSource(house = "stub", senate = "stub"),
         chambers = emptyMap(),
     )
+    override suspend fun getElectionCalendar(): ElectionCalendar = error("not used in this test")
 }
 
 internal class StubPreferencesDataStore : DataStore<Preferences> {
