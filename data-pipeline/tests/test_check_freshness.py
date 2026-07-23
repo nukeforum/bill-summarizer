@@ -157,6 +157,100 @@ def test_calendar_chamber_fully_past_flagged(tmp_path, monkeypatch):
     assert any("calendar: house" in f and "no session days" in f for f in failures), failures
 
 
+def _write_election_calendar(now: datetime, events: list[dict]) -> None:
+    (_common.OUTPUT_DIR / "election_calendar.json").write_text(json.dumps({
+        "generated_at": _iso(now),
+        "source": "test",
+        "elections": events,
+    }), encoding="utf-8")
+
+
+def test_absent_election_calendar_is_not_a_failure(tmp_path, monkeypatch):
+    """The fresh world never seeds an election calendar; its absence is
+    tolerated until the workflow is live (issue #23)."""
+    now = datetime(2026, 6, 1, 12, 0, tzinfo=timezone.utc)
+    _seed_fresh_world(tmp_path, monkeypatch, now)
+    assert not (_common.OUTPUT_DIR / "election_calendar.json").is_file()
+    assert not any("election:" in f for f in check_freshness.check(now=now))
+
+
+def test_passed_registration_deadline_on_upcoming_election_flagged(tmp_path, monkeypatch):
+    """A registration deadline dated before today, for an election still in the
+    future, is stale by definition and must trip the lookahead check (#35)."""
+    now = datetime(2026, 6, 1, 12, 0, tzinfo=timezone.utc)
+    _seed_fresh_world(tmp_path, monkeypatch, now)
+    today = now.date()
+    _write_election_calendar(now, [{
+        "state": "GA",
+        "date": (today + timedelta(days=30)).isoformat(),
+        "type": "primary",
+        "election_year": 2026,
+        "registration": {
+            "online": (today - timedelta(days=5)).isoformat(),
+            "source": "https://sos.ga.gov",
+        },
+    }])
+    failures = check_freshness.check(now=now)
+    assert any("election: GA" in f and "registration" in f and "stale" in f for f in failures), failures
+
+
+def test_future_registration_deadline_on_upcoming_election_ok(tmp_path, monkeypatch):
+    """A deadline that is still ahead of today is fine — that's the whole point
+    of publishing it."""
+    now = datetime(2026, 6, 1, 12, 0, tzinfo=timezone.utc)
+    _seed_fresh_world(tmp_path, monkeypatch, now)
+    today = now.date()
+    _write_election_calendar(now, [{
+        "state": "GA",
+        "date": (today + timedelta(days=30)).isoformat(),
+        "type": "primary",
+        "election_year": 2026,
+        "registration": {"online": (today + timedelta(days=10)).isoformat()},
+    }])
+    assert not any("registration" in f for f in check_freshness.check(now=now))
+
+
+def test_passed_registration_deadline_on_past_election_ignored(tmp_path, monkeypatch):
+    """A past election is out of the lookahead window entirely; its (also-past)
+    registration deadline is not flagged. The horizon check owns 'no upcoming
+    election', not this per-event deadline check."""
+    now = datetime(2026, 6, 1, 12, 0, tzinfo=timezone.utc)
+    _seed_fresh_world(tmp_path, monkeypatch, now)
+    today = now.date()
+    _write_election_calendar(now, [
+        {  # keep a real upcoming event so the horizon check stays green
+            "state": "US",
+            "date": (today + timedelta(days=200)).isoformat(),
+            "type": "general",
+            "election_year": 2026,
+        },
+        {  # a past primary whose deadline is also past — not our concern
+            "state": "TX",
+            "date": (today - timedelta(days=30)).isoformat(),
+            "type": "primary",
+            "election_year": 2026,
+            "registration": {"online": (today - timedelta(days=60)).isoformat()},
+        },
+    ])
+    assert not any("registration" in f for f in check_freshness.check(now=now))
+
+
+def test_same_day_registration_is_exempt(tmp_path, monkeypatch):
+    """same_day carries no date, so an upcoming election that only advertises
+    same-day registration never trips the deadline check."""
+    now = datetime(2026, 6, 1, 12, 0, tzinfo=timezone.utc)
+    _seed_fresh_world(tmp_path, monkeypatch, now)
+    today = now.date()
+    _write_election_calendar(now, [{
+        "state": "MN",
+        "date": (today + timedelta(days=30)).isoformat(),
+        "type": "primary",
+        "election_year": 2026,
+        "registration": {"same_day": True},
+    }])
+    assert not any("registration" in f for f in check_freshness.check(now=now))
+
+
 def test_stale_backfill_cursor_flagged(tmp_path, monkeypatch):
     now = datetime(2026, 6, 1, 12, 0, tzinfo=timezone.utc)
     _seed_fresh_world(tmp_path, monkeypatch, now)

@@ -64,6 +64,13 @@ private class World {
         )
     }
 
+    fun writeElection(elections: String) {
+        write(
+            OUTPUT_DIR / "election_calendar.json",
+            """{"generated_at":"$NOW","source":"test","elections":[$elections]}""",
+        )
+    }
+
     fun check(): List<String> = checkFreshness(fs, OUTPUT_DIR, STATE_DIR, CONGRESS, NOW)
 }
 
@@ -177,5 +184,64 @@ class CheckFreshnessTest {
         val w = World()
         w.fs.delete(STATE_DIR / "backfill_state.json")
         assertEquals(emptyList(), w.check())
+    }
+
+    @Test fun absent_election_calendar_is_not_a_failure() {
+        // The fresh world never seeds an election calendar; its absence is
+        // tolerated until the workflow is live (issue #23).
+        val w = World()
+        assertFalse(w.check().any { "election:" in it }, "${w.check()}")
+    }
+
+    @Test fun election_horizon_lapse_flagged() {
+        val w = World()
+        w.writeElection("""{"state":"US","date":"2024-11-05","type":"general","election_year":2024}""")
+        val failures = w.check()
+        assertTrue(failures.any { "election:" in it && "no election on or after" in it }, "$failures")
+    }
+
+    @Test fun passed_registration_deadline_on_upcoming_election_flagged() {
+        // A registration deadline dated before today, for an election still in
+        // the future, is stale by definition and must trip the check (#35).
+        val w = World()
+        w.writeElection(
+            """{"state":"GA","date":"2026-07-01","type":"primary","election_year":2026,
+                "registration":{"online":"2026-05-27","source":"https://sos.ga.gov"}}""",
+        )
+        val failures = w.check()
+        assertTrue(failures.any { "election: GA" in it && "registration" in it && "stale" in it }, "$failures")
+    }
+
+    @Test fun future_registration_deadline_on_upcoming_election_ok() {
+        val w = World()
+        w.writeElection(
+            """{"state":"GA","date":"2026-07-01","type":"primary","election_year":2026,
+                "registration":{"online":"2026-06-11"}}""",
+        )
+        assertFalse(w.check().any { "registration" in it }, "${w.check()}")
+    }
+
+    @Test fun passed_registration_deadline_on_past_election_ignored() {
+        // A past election is out of the lookahead window; its (also-past)
+        // deadline is not flagged. The horizon check owns "no upcoming
+        // election", not this per-event deadline check.
+        val w = World()
+        w.writeElection(
+            """{"state":"US","date":"2026-11-03","type":"general","election_year":2026},
+               {"state":"TX","date":"2026-05-01","type":"primary","election_year":2026,
+                "registration":{"online":"2026-04-01"}}""",
+        )
+        assertFalse(w.check().any { "registration" in it }, "${w.check()}")
+    }
+
+    @Test fun same_day_registration_is_exempt() {
+        // same_day carries no date, so an upcoming election that only advertises
+        // same-day registration never trips the deadline check.
+        val w = World()
+        w.writeElection(
+            """{"state":"MN","date":"2026-07-01","type":"primary","election_year":2026,
+                "registration":{"same_day":true}}""",
+        )
+        assertFalse(w.check().any { "registration" in it }, "${w.check()}")
     }
 }
