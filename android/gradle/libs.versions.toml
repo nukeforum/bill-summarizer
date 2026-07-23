@@ -36,6 +36,12 @@ workManager = "2.10.0"
 hiltWork = "1.2.0"
 robolectric = "4.13"
 aicore = "0.0.1-exp02"
+# Paging 3 backs the sharded bills list (#41): the RemoteMediator bridges
+# #40 shard fetches into cached_bill and Paging drives lazy load + honest
+# "more pages exist but failed" load states. paging-runtime carries
+# paging-common (RemoteMediator/PagingState); paging-compose lands with the
+# LazyPagingItems UI slice.
+androidxPaging = "3.3.6"
 
 [libraries]
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidxCore" }
@@ -91,6 +97,7 @@ androidx-hilt-work = { module = "androidx.hilt:hilt-work", version.ref = "hiltWo
 androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hiltWork" }
 robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric" }
 google-ai-edge-aicore = { module = "com.google.ai.edge.aicore:aicore", version.ref = "aicore" }
+androidx-paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "androidxPaging" }
 
 # Gradle plugin artifacts referenced from build-logic convention plugins.
 android-gradle-plugin = { module = "com.android.tools.build:gradle", version.ref = "androidGradlePlugin" }

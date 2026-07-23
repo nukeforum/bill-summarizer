@@ -149,6 +149,18 @@ class BillRepositoryTest {
     }
 
     @Test
+    fun `fetchCurrentManifest resolves the whole manifest via the congresses index`() = runTest {
+        val manifest = BillsManifest(generatedAt = "x", congress = 119, bills = listOf(sampleBill("hr1-119")))
+        val api = StubApi(manifest)
+        val repo = BillRepository(api, InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
+
+        val result = repo.fetchCurrentManifest()
+
+        assertSame(manifest, result)
+        assertEquals(listOf("data/congress119_bills.json"), api.manifestUrls)
+    }
+
+    @Test
     fun `getBills fails when index has no entry for current congress`() = runTest {
         val reporter = FakeCrashReporter()
         val api = StubApi(

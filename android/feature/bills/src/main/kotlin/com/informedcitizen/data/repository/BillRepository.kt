@@ -160,6 +160,21 @@ class BillRepository @Inject constructor(
     suspend fun fetchShard(shard: BillShard): BillsManifest =
         api.getBillsManifest("data/${shard.path}")
 
+    /**
+     * Fetch the current Congress's whole [BillsManifest] without touching
+     * the in-memory bills state. The #41 RemoteMediator uses this for the
+     * unsharded dual-publish case ([ShardStep.WholeManifest]): a Congress
+     * with no `shard_index_path` is paged as exactly one shard, so the
+     * mediator fetches the whole manifest and appends it as shard 0. This
+     * is the no-regression path for today's 256-bill manifest.
+     */
+    suspend fun fetchCurrentManifest(): BillsManifest {
+        val index = api.getCongressesIndex()
+        val entry = index.congresses.firstOrNull { it.congress == index.currentCongress }
+            ?: error("congresses.json has no entry for current_congress=${index.currentCongress}")
+        return api.getBillsManifest("data/${entry.manifestPath}")
+    }
+
     fun getBillById(id: String): Bill? = _bills.value.firstOrNull { it.id == id }
 
     suspend fun findById(id: String): Bill? {
