@@ -1,0 +1,620 @@
+{
+  "id": "senate-119-1-394",
+  "congress": 119,
+  "chamber": "senate",
+  "session": 1,
+  "roll_number": 394,
+  "date": "2025-07-16",
+  "question": "On the Motion to Recommit",
+  "result": "Motion to Recommit Rejected",
+  "bill_id": "hr4-119",
+  "totals": {
+    "yea": 48,
+    "nay": 51,
+    "present": 0,
+    "not_voting": 1
+  },
+  "positions": [
+    {
+      "bioguide_id": "A000382",
+      "position": "yea",
+      "party": "D",
+      "state": "MD"
+    },
+    {
+      "bioguide_id": "B001230",
+      "position": "yea",
+      "party": "D",
+      "state": "WI"
+    },
+    {
+      "bioguide_id": "B001236",
+      "position": "nay",
+      "party": "R",
+      "state": "AR"
+    },
+    {
+      "bioguide_id": "B001243",
+      "position": "nay",
+      "party": "R",
+      "state": "TN"
+    },
+    {
+      "bioguide_id": "B001261",
+      "position": "nay",
+      "party": "R",
+      "state": "WY"
+    },
+    {
+      "bioguide_id": "B001267",
+      "position": "yea",
+      "party": "D",
+      "state": "CO"
+    },
+    {
+      "bioguide_id": "B001277",
+      "position": "yea",
+      "party": "D",
+      "state": "CT"
+    },
+    {
+      "bioguide_id": "B001288",
+      "position": "yea",
+      "party": "D",
+      "state": "NJ"
+    },
+    {
+      "bioguide_id": "B001299",
+      "position": "nay",
+      "party": "R",
+      "state": "IN"
+    },
+    {
+      "bioguide_id": "B001303",
+      "position": "yea",
+      "party": "D",
+      "state": "DE"
+    },
+    {
+      "bioguide_id": "B001305",
+      "position": "nay",
+      "party": "R",
+      "state": "NC"
+    },
+    {
+      "bioguide_id": "B001319",
+      "position": "nay",
+      "party": "R",
+      "state": "AL"
+    },
+    {
+      "bioguide_id": "C000127",
+      "position": "yea",
+      "party": "D",
+      "state": "WA"
+    },
+    {
+      "bioguide_id": "C000880",
+      "position": "nay",
+      "party": "R",
+      "state": "ID"
+    },
+    {
+      "bioguide_id": "C001035",
+      "position": "yea",
+      "party": "R",
+      "state": "ME"
+    },
+    {
+      "bioguide_id": "C001047",
+      "position": "nay",
+      "party": "R",
+      "state": "WV"
+    },
+    {
+      "bioguide_id": "C001056",
+      "position": "nay",
+      "party": "R",
+      "state": "TX"
+    },
+    {
+      "bioguide_id": "C001075",
+      "position": "nay",
+      "party": "R",
+      "state": "LA"
+    },
+    {
+      "bioguide_id": "C001088",
+      "position": "yea",
+      "party": "D",
+      "state": "DE"
+    },
+    {
+      "bioguide_id": "C001095",
+      "position": "nay",
+      "party": "R",
+      "state": "AR"
+    },
+    {
+      "bioguide_id": "C001096",
+      "position": "nay",
+      "party": "R",
+      "state": "ND"
+    },
+    {
+      "bioguide_id": "C001098",
+      "position": "nay",
+      "party": "R",
+      "state": "TX"
+    },
+    {
+      "bioguide_id": "C001113",
+      "position": "yea",
+      "party": "D",
+      "state": "NV"
+    },
+    {
+      "bioguide_id": "C001114",
+      "position": "nay",
+      "party": "R",
+      "state": "UT"
+    },
+    {
+      "bioguide_id": "D000563",
+      "position": "yea",
+      "party": "D",
+      "state": "IL"
+    },
+    {
+      "bioguide_id": "D000618",
+      "position": "nay",
+      "party": "R",
+      "state": "MT"
+    },
+    {
+      "bioguide_id": "D000622",
+      "position": "yea",
+      "party": "D",
+      "state": "IL"
+    },
+    {
+      "bioguide_id": "E000295",
+      "position": "nay",
+      "party": "R",
+      "state": "IA"
+    },
+    {
+      "bioguide_id": "F000463",
+      "position": "nay",
+      "party": "R",
+      "state": "NE"
+    },
+    {
+      "bioguide_id": "F000479",
+      "position": "yea",
+      "party": "D",
+      "state": "PA"
+    },
+    {
+      "bioguide_id": "G000359",
+      "position": "nay",
+      "party": "R",
+      "state": "SC"
+    },
+    {
+      "bioguide_id": "G000386",
+      "position": "nay",
+      "party": "R",
+      "state": "IA"
+    },
+    {
+      "bioguide_id": "G000555",
+      "position": "yea",
+      "party": "D",
+      "state": "NY"
+    },
+    {
+      "bioguide_id": "G000574",
+      "position": "yea",
+      "party": "D",
+      "state": "AZ"
+    },
+    {
+      "bioguide_id": "H000273",
+      "position": "yea",
+      "party": "D",
+      "state": "CO"
+    },
+    {
+      "bioguide_id": "H000601",
+      "position": "nay",
+      "party": "R",
+      "state": "TN"
+    },
+    {
+      "bioguide_id": "H001042",
+      "position": "yea",
+      "party": "D",
+      "state": "HI"
+    },
+    {
+      "bioguide_id": "H001046",
+      "position": "yea",
+      "party": "D",
+      "state": "NM"
+    },
+    {
+      "bioguide_id": "H001061",
+      "position": "nay",
+      "party": "R",
+      "state": "ND"
+    },
+    {
+      "bioguide_id": "H001076",
+      "position": "yea",
+      "party": "D",
+      "state": "NH"
+    },
+    {
+      "bioguide_id": "H001079",
+      "position": "nay",
+      "party": "R",
+      "state": "MS"
+    },
+    {
+      "bioguide_id": "H001089",
+      "position": "nay",
+      "party": "R",
+      "state": "MO"
+    },
+    {
+      "bioguide_id": "H001104",
+      "position": "nay",
+      "party": "R",
+      "state": "OH"
+    },
+    {
+      "bioguide_id": "J000293",
+      "position": "nay",
+      "party": "R",
+      "state": "WI"
+    },
+    {
+      "bioguide_id": "J000312",
+      "position": "nay",
+      "party": "R",
+      "state": "WV"
+    },
+    {
+      "bioguide_id": "K000367",
+      "position": "yea",
+      "party": "D",
+      "state": "MN"
+    },
+    {
+      "bioguide_id": "K000377",
+      "position": "yea",
+      "party": "D",
+      "state": "AZ"
+    },
+    {
+      "bioguide_id": "K000383",
+      "position": "yea",
+      "party": "I",
+      "state": "ME"
+    },
+    {
+      "bioguide_id": "K000384",
+      "position": "yea",
+      "party": "D",
+      "state": "VA"
+    },
+    {
+      "bioguide_id": "K000393",
+      "position": "nay",
+      "party": "R",
+      "state": "LA"
+    },
+    {
+      "bioguide_id": "K000394",
+      "position": "yea",
+      "party": "D",
+      "state": "NJ"
+    },
+    {
+      "bioguide_id": "L000570",
+      "position": "yea",
+      "party": "D",
+      "state": "NM"
+    },
+    {
+      "bioguide_id": "L000571",
+      "position": "nay",
+      "party": "R",
+      "state": "WY"
+    },
+    {
+      "bioguide_id": "L000575",
+      "position": "nay",
+      "party": "R",
+      "state": "OK"
+    },
+    {
+      "bioguide_id": "L000577",
+      "position": "nay",
+      "party": "R",
+      "state": "UT"
+    },
+    {
+      "bioguide_id": "M000133",
+      "position": "yea",
+      "party": "D",
+      "state": "MA"
+    },
+    {
+      "bioguide_id": "M000355",
+      "position": "nay",
+      "party": "R",
+      "state": "KY"
+    },
+    {
+      "bioguide_id": "M000934",
+      "position": "nay",
+      "party": "R",
+      "state": "KS"
+    },
+    {
+      "bioguide_id": "M001111",
+      "position": "yea",
+      "party": "D",
+      "state": "WA"
+    },
+    {
+      "bioguide_id": "M001153",
+      "position": "yea",
+      "party": "R",
+      "state": "AK"
+    },
+    {
+      "bioguide_id": "M001169",
+      "position": "yea",
+      "party": "D",
+      "state": "CT"
+    },
+    {
+      "bioguide_id": "M001176",
+      "position": "yea",
+      "party": "D",
+      "state": "OR"
+    },
+    {
+      "bioguide_id": "M001190",
+      "position": "nay",
+      "party": "R",
+      "state": "OK"
+    },
+    {
+      "bioguide_id": "M001198",
+      "position": "nay",
+      "party": "R",
+      "state": "KS"
+    },
+    {
+      "bioguide_id": "M001242",
+      "position": "nay",
+      "party": "R",
+      "state": "OH"
+    },
+    {
+      "bioguide_id": "M001243",
+      "position": "nay",
+      "party": "R",
+      "state": "PA"
+    },
+    {
+      "bioguide_id": "M001244",
+      "position": "nay",
+      "party": "R",
+      "state": "FL"
+    },
+    {
+      "bioguide_id": "O000174",
+      "position": "yea",
+      "party": "D",
+      "state": "GA"
+    },
+    {
+      "bioguide_id": "P000145",
+      "position": "yea",
+      "party": "D",
+      "state": "CA"
+    },
+    {
+      "bioguide_id": "P000595",
+      "position": "yea",
+      "party": "D",
+      "state": "MI"
+    },
+    {
+      "bioguide_id": "P000603",
+      "position": "nay",
+      "party": "R",
+      "state": "KY"
+    },
+    {
+      "bioguide_id": "R000122",
+      "position": "yea",
+      "party": "D",
+      "state": "RI"
+    },
+    {
+      "bioguide_id": "R000584",
+      "position": "nay",
+      "party": "R",
+      "state": "ID"
+    },
+    {
+      "bioguide_id": "R000605",
+      "position": "nay",
+      "party": "R",
+      "state": "SD"
+    },
+    {
+      "bioguide_id": "R000608",
+      "position": "yea",
+      "party": "D",
+      "state": "NV"
+    },
+    {
+      "bioguide_id": "R000618",
+      "position": "nay",
+      "party": "R",
+      "state": "NE"
+    },
+    {
+      "bioguide_id": "S000033",
+      "position": "yea",
+      "party": "I",
+      "state": "VT"
+    },
+    {
+      "bioguide_id": "S000148",
+      "position": "yea",
+      "party": "D",
+      "state": "NY"
+    },
+    {
+      "bioguide_id": "S001150",
+      "position": "yea",
+      "party": "D",
+      "state": "CA"
+    },
+    {
+      "bioguide_id": "S001181",
+      "position": "yea",
+      "party": "D",
+      "state": "NH"
+    },
+    {
+      "bioguide_id": "S001184",
+      "position": "nay",
+      "party": "R",
+      "state": "SC"
+    },
+    {
+      "bioguide_id": "S001194",
+      "position": "yea",
+      "party": "D",
+      "state": "HI"
+    },
+    {
+      "bioguide_id": "S001198",
+      "position": "nay",
+      "party": "R",
+      "state": "AK"
+    },
+    {
+      "bioguide_id": "S001203",
+      "position": "not_voting",
+      "party": "D",
+      "state": "MN"
+    },
+    {
+      "bioguide_id": "S001208",
+      "position": "yea",
+      "party": "D",
+      "state": "MI"
+    },
+    {
+      "bioguide_id": "S001217",
+      "position": "nay",
+      "party": "R",
+      "state": "FL"
+    },
+    {
+      "bioguide_id": "S001227",
+      "position": "nay",
+      "party": "R",
+      "state": "MO"
+    },
+    {
+      "bioguide_id": "S001232",
+      "position": "nay",
+      "party": "R",
+      "state": "MT"
+    },
+    {
+      "bioguide_id": "T000250",
+      "position": "nay",
+      "party": "R",
+      "state": "SD"
+    },
+    {
+      "bioguide_id": "T000278",
+      "position": "nay",
+      "party": "R",
+      "state": "AL"
+    },
+    {
+      "bioguide_id": "T000476",
+      "position": "nay",
+      "party": "R",
+      "state": "NC"
+    },
+    {
+      "bioguide_id": "V000128",
+      "position": "yea",
+      "party": "D",
+      "state": "MD"
+    },
+    {
+      "bioguide_id": "W000437",
+      "position": "nay",
+      "party": "R",
+      "state": "MS"
+    },
+    {
+      "bioguide_id": "W000779",
+      "position": "yea",
+      "party": "D",
+      "state": "OR"
+    },
+    {
+      "bioguide_id": "W000790",
+      "position": "yea",
+      "party": "D",
+      "state": "GA"
+    },
+    {
+      "bioguide_id": "W000800",
+      "position": "yea",
+      "party": "D",
+      "state": "VT"
+    },
+    {
+      "bioguide_id": "W000802",
+      "position": "yea",
+      "party": "D",
+      "state": "RI"
+    },
+    {
+      "bioguide_id": "W000805",
+      "position": "yea",
+      "party": "D",
+      "state": "VA"
+    },
+    {
+      "bioguide_id": "W000817",
+      "position": "yea",
+      "party": "D",
+      "state": "MA"
+    },
+    {
+      "bioguide_id": "Y000064",
+      "position": "nay",
+      "party": "R",
+      "state": "IN"
+    }
+  ],
+  "source_url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00394.xml"
+}
