@@ -286,4 +286,38 @@ class UpcomingElectionsTest {
     fun `savedRepsOnBallot is empty for no members`() {
         assertTrue(savedRepsOnBallot(emptyList(), generalCal, today).isEmpty())
     }
+
+    @Test
+    fun `ballotRepSubtitle names the chamber with party and state`() {
+        val senator = Member(
+            bioguideId = "S000001", name = "Sam Senator",
+            party = "R", state = "TX", chamber = "senate",
+        )
+        val rep = Member(
+            bioguideId = "H000001", name = "Rep Person",
+            party = "D", state = "NY", chamber = "house",
+        )
+        assertEquals("Senator · R-TX", ballotRepSubtitle(senator))
+        assertEquals("Representative · D-NY", ballotRepSubtitle(rep))
+    }
+
+    @Test
+    fun `ballotRepSubtitle drops blank party or state fragments`() {
+        val member = Member(
+            bioguideId = "X000001", name = "No Party",
+            party = "", state = "", chamber = "senate",
+        )
+        assertEquals("Senator", ballotRepSubtitle(member))
+    }
+
+    @Test
+    fun `ballotRepRowDescription merges name, role, ballot claim, and countdown`() {
+        val onBallot = namedMember("A000001", "Ada Onballot", 2026)
+        val ballotRep = savedRepsOnBallot(listOf(onBallot), generalCal, today).single()
+
+        assertEquals(
+            "Ada Onballot, Senator · D-OH, up for election Nov 3 2026, ${ballotRep.election.countdownText}",
+            ballotRepRowDescription(ballotRep, "Nov 3 2026"),
+        )
+    }
 }

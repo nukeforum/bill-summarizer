@@ -1,5 +1,7 @@
 package com.informedcitizen.di
 
+import com.informedcitizen.data.repository.BallotRepsAdapter
+import com.informedcitizen.data.repository.BallotRepsSource
 import com.informedcitizen.data.repository.CachedMemberRepository
 import com.informedcitizen.data.repository.MemberRepository
 import com.informedcitizen.data.repository.SavedRepsAdapter
@@ -23,4 +25,7 @@ abstract class RepositoryBindingsModule {
 
     @Binds @Singleton
     abstract fun bindSavedRepsSource(impl: SavedRepsAdapter): SavedRepsSource
+
+    @Binds @Singleton
+    abstract fun bindBallotRepsSource(impl: BallotRepsAdapter): BallotRepsSource
 }

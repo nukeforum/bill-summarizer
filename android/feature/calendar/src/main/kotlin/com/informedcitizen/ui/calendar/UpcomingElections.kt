@@ -203,3 +203,29 @@ fun savedRepsOnBallot(
     members.mapNotNull { member ->
         ballotElectionFor(member, calendar, today)?.let { BallotRep(member, it) }
     }.sortedWith(compareBy({ it.election.date }, { it.member.name }))
+
+/**
+ * Secondary line for a saved rep's "On your ballot" row: chamber, party, and
+ * state (e.g. "Senator · D-NY"). Blank party/state fragments are dropped so a
+ * member missing those wire fields still reads cleanly.
+ */
+internal fun ballotRepSubtitle(member: Member): String {
+    val chamber = when (member.chamber.lowercase()) {
+        "senate" -> "Senator"
+        "house" -> "Representative"
+        else -> member.chamber.ifBlank { "Member" }
+    }
+    val partyState = listOf(member.party, member.state)
+        .filter { it.isNotBlank() }
+        .joinToString("-")
+    return if (partyState.isBlank()) chamber else "$chamber · $partyState"
+}
+
+/**
+ * Merged screen-reader description for an "On your ballot" row: who the member
+ * is, that they are up for election, and the dated countdown — one utterance so
+ * TalkBack doesn't read four disconnected fragments.
+ */
+internal fun ballotRepRowDescription(ballotRep: BallotRep, formattedDate: String): String =
+    "${ballotRep.member.name}, ${ballotRepSubtitle(ballotRep.member)}, " +
+        "up for election $formattedDate, ${ballotRep.election.countdownText}"

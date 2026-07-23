@@ -49,6 +49,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.informedcitizen.pipeline.model.ElectionCalendar
+import com.informedcitizen.pipeline.model.Member
 import com.informedcitizen.pipeline.model.SessionCalendar
 import com.informedcitizen.domain.session.Chamber
 import com.informedcitizen.domain.session.ChamberStatus
@@ -75,10 +76,12 @@ private val ELECTION_DATE: DateTimeFormatter =
 fun SessionCalendarScreen(
     onBack: () -> Unit,
     modifier: Modifier = Modifier,
+    onMemberClick: (String) -> Unit = {},
     viewModel: SessionCalendarViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
     val electionCalendar by viewModel.electionCalendar.collectAsStateWithLifecycle()
+    val savedReps by viewModel.savedReps.collectAsStateWithLifecycle()
     val context = LocalContext.current
 
     Scaffold(
@@ -99,6 +102,8 @@ fun SessionCalendarScreen(
             innerPadding = innerPadding,
             onRetry = viewModel::retry,
             electionCalendar = electionCalendar,
+            savedReps = savedReps,
+            onMemberClick = onMemberClick,
             onOpenSource = { url -> openInCustomTab(context, url) },
         )
     }
@@ -111,13 +116,23 @@ internal fun SessionCalendarContent(
     onRetry: () -> Unit,
     today: LocalDate = LocalDate.now(),
     electionCalendar: ElectionCalendar? = null,
+    savedReps: List<Member> = emptyList(),
+    onMemberClick: (String) -> Unit = {},
     onOpenSource: (String) -> Unit,
 ) {
     when (state) {
         SessionCalendarUiState.Loading -> Centered(innerPadding) { CircularProgressIndicator() }
         is SessionCalendarUiState.Error -> ErrorBlock(innerPadding, state.message, onRetry = onRetry)
         is SessionCalendarUiState.Success ->
-            SuccessBody(innerPadding, state.calendar, today, electionCalendar, onOpenSource)
+            SuccessBody(
+                innerPadding = innerPadding,
+                calendar = state.calendar,
+                today = today,
+                electionCalendar = electionCalendar,
+                savedReps = savedReps,
+                onMemberClick = onMemberClick,
+                onOpenSource = onOpenSource,
+            )
     }
 }
 
@@ -155,6 +170,8 @@ private fun SuccessBody(
     calendar: SessionCalendar,
     today: LocalDate,
     electionCalendar: ElectionCalendar?,
+    savedReps: List<Member>,
+    onMemberClick: (String) -> Unit,
     onOpenSource: (String) -> Unit,
 ) {
     val statuses = calendar.statusOn(today)
@@ -170,10 +187,80 @@ private fun SuccessBody(
         TodaySummaryCard(today = today, statuses = statuses)
         if (electionCalendar != null) {
             UpcomingElectionsSection(calendar = electionCalendar, today = today)
+            OnYourBallotSection(
+                savedReps = savedReps,
+                calendar = electionCalendar,
+                today = today,
+                onMemberClick = onMemberClick,
+            )
         }
         CalendarGridSection(calendar = calendar, today = today)
         ComingUpSection(calendar = calendar, today = today)
         SourceFooter(calendar, onOpenSource)
+    }
+}
+
+/**
+ * Issue #33's pillar-2 bridge on the elections surface: the user's saved
+ * representatives who appear on an upcoming general-election ballot, each row
+ * tapping through to that member's detail (and, via #22, their voting record).
+ * The pairing is computed by [savedRepsOnBallot] from already-cached artifacts,
+ * so a rep with no dated upcoming general on record is simply omitted; the
+ * whole section hides when no saved rep matches — never a guessed date, never
+ * an empty box.
+ */
+@Composable
+private fun OnYourBallotSection(
+    savedReps: List<Member>,
+    calendar: ElectionCalendar,
+    today: LocalDate,
+    onMemberClick: (String) -> Unit,
+) {
+    val ballotReps = savedRepsOnBallot(savedReps, calendar, today)
+    if (ballotReps.isEmpty()) return
+
+    Card(modifier = Modifier.fillMaxWidth()) {
+        Column(modifier = Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+            Text("On your ballot", style = MaterialTheme.typography.titleMedium)
+            ballotReps.forEach { BallotRepRow(it, onMemberClick) }
+        }
+    }
+}
+
+@Composable
+private fun BallotRepRow(ballotRep: BallotRep, onMemberClick: (String) -> Unit) {
+    val member = ballotRep.member
+    val formattedDate = ballotRep.election.date.format(ELECTION_DATE)
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clip(RoundedCornerShape(8.dp))
+            .clickable { onMemberClick(member.bioguideId) }
+            .padding(vertical = 4.dp)
+            .clearAndSetSemantics {
+                contentDescription = ballotRepRowDescription(ballotRep, formattedDate)
+            },
+        horizontalArrangement = Arrangement.spacedBy(12.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Column(modifier = Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+            Text(text = member.name, style = MaterialTheme.typography.bodyMedium)
+            Text(
+                text = ballotRepSubtitle(member),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            Text(
+                text = formattedDate,
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
+        Text(
+            text = ballotRep.election.countdownText,
+            style = MaterialTheme.typography.labelLarge,
+            color = MaterialTheme.colorScheme.primary,
+        )
     }
 }
 

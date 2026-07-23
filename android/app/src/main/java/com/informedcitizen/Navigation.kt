@@ -77,7 +77,10 @@ fun MainNavigation(
                 )
             }
             entry<CongressCalendar> {
-                SessionCalendarScreen(onBack = { backStack.removeLastOrNull() })
+                SessionCalendarScreen(
+                    onBack = { backStack.removeLastOrNull() },
+                    onMemberClick = { backStack.add(MemberDetail(it)) },
+                )
             }
             entry<DataSources> {
                 DataSourcesScreen(onBack = { backStack.removeLastOrNull() })
