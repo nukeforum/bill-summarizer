@@ -5,6 +5,7 @@ import com.informedcitizen.data.api.BillsApi
 import com.informedcitizen.data.repository.BallotRepsSource
 import com.informedcitizen.data.repository.ElectionCalendarRepository
 import com.informedcitizen.data.repository.SessionCalendarRepository
+import com.informedcitizen.pipeline.model.BillShardIndex
 import com.informedcitizen.pipeline.model.BillsManifest
 import com.informedcitizen.pipeline.model.CongressesIndex
 import com.informedcitizen.pipeline.model.ElectionCalendar
@@ -107,6 +108,7 @@ class SessionCalendarViewModelTest {
     ) : BillsApi {
         override suspend fun getCongressesIndex(): CongressesIndex = error("not used in this test")
         override suspend fun getBillsManifest(url: String): BillsManifest = error("not used in this test")
+        override suspend fun getBillShardIndex(url: String): BillShardIndex = error("not used in this test")
         override suspend fun getSessionCalendar(): SessionCalendar = session
         override suspend fun getElectionCalendar(): ElectionCalendar =
             election ?: throw IOException("simulated election fetch failure")

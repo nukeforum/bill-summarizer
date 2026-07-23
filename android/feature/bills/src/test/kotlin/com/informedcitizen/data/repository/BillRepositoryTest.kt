@@ -5,6 +5,8 @@ import com.informedcitizen.data.api.BillsApi
 import com.informedcitizen.data.cache.BillSource
 import com.informedcitizen.pipeline.model.Action
 import com.informedcitizen.pipeline.model.Bill
+import com.informedcitizen.pipeline.model.BillShard
+import com.informedcitizen.pipeline.model.BillShardIndex
 import com.informedcitizen.pipeline.model.BillsManifest
 import com.informedcitizen.pipeline.model.CongressEntry
 import com.informedcitizen.pipeline.model.CongressesIndex
@@ -96,6 +98,54 @@ class BillRepositoryTest {
 
         assertTrue(result.isSuccess)
         assertEquals(listOf("data/congress119_bills.json"), api.manifestUrls)
+    }
+
+    @Test
+    fun `fetchShardIndex returns null when current congress has no shard index`() = runTest {
+        // Dual-publish transition: unsharded Congress publishes only manifest_path.
+        val api = StubApi(BillsManifest(generatedAt = "x", congress = 119, bills = emptyList()))
+        val repo = BillRepository(api, InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
+
+        assertEquals(null, repo.fetchShardIndex())
+        assertTrue("no shard index fetched when path absent", api.shardIndexUrls.isEmpty())
+    }
+
+    @Test
+    fun `fetchShardIndex follows shard_index_path from the current congress entry`() = runTest {
+        val shardIndex = BillShardIndex(
+            generatedAt = "x",
+            congress = 119,
+            pageSize = 500,
+            totalBills = 3,
+            shards = listOf(BillShard(page = 1, path = "congress119_bills_p001.json", count = 3)),
+        )
+        val api = StubApi(
+            manifest = BillsManifest(generatedAt = "x", congress = 119, bills = emptyList()),
+            shardIndex = shardIndex,
+            shardIndexPath = "congress119_bills_index.json",
+        )
+        val repo = BillRepository(api, InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
+
+        val result = repo.fetchShardIndex()
+
+        assertSame(shardIndex, result)
+        assertEquals(listOf("data/congress119_bills_index.json"), api.shardIndexUrls)
+    }
+
+    @Test
+    fun `fetchShard fetches the shard file under the data directory`() = runTest {
+        val shardManifest = BillsManifest(
+            generatedAt = "x",
+            congress = 119,
+            bills = listOf(sampleBill(id = "hr1-119")),
+        )
+        val api = StubApi(manifest = shardManifest)
+        val repo = BillRepository(api, InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
+
+        val result = repo.fetchShard(BillShard(page = 1, path = "congress119_bills_p001.json", count = 1))
+
+        assertSame(shardManifest, result)
+        assertEquals(listOf("data/congress119_bills_p001.json"), api.manifestUrls)
     }
 
     @Test
@@ -280,18 +330,30 @@ class BillRepositoryTest {
 
     private class StubApi(
         private val manifest: BillsManifest,
+        private val shardIndex: BillShardIndex? = null,
+        shardIndexPath: String? = null,
         private val index: CongressesIndex = CongressesIndex(
             currentCongress = manifest.congress,
             congresses = listOf(
-                CongressEntry(congress = manifest.congress, manifestPath = "congress${manifest.congress}_bills.json", isCurrent = true),
+                CongressEntry(
+                    congress = manifest.congress,
+                    manifestPath = "congress${manifest.congress}_bills.json",
+                    isCurrent = true,
+                    shardIndexPath = shardIndexPath,
+                ),
             ),
         ),
     ) : BillsApi {
         val manifestUrls = mutableListOf<String>()
+        val shardIndexUrls = mutableListOf<String>()
         override suspend fun getCongressesIndex(): CongressesIndex = index
         override suspend fun getBillsManifest(url: String): BillsManifest {
             manifestUrls += url
             return manifest
+        }
+        override suspend fun getBillShardIndex(url: String): BillShardIndex {
+            shardIndexUrls += url
+            return shardIndex ?: error("no shard index configured")
         }
         override suspend fun getSessionCalendar(): SessionCalendar = error("not used in this test")
         override suspend fun getElectionCalendar(): ElectionCalendar = error("not used in this test")
@@ -308,6 +370,7 @@ class BillRepositoryTest {
         override suspend fun getCongressesIndex(): CongressesIndex =
             if (failOnIndex) throw throwable else index
         override suspend fun getBillsManifest(url: String): BillsManifest = throw throwable
+        override suspend fun getBillShardIndex(url: String): BillShardIndex = throw throwable
         override suspend fun getSessionCalendar(): SessionCalendar = error("not used in this test")
         override suspend fun getElectionCalendar(): ElectionCalendar = error("not used in this test")
     }

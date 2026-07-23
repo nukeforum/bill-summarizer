@@ -4,6 +4,7 @@ import com.informedcitizen.crash.FakeCrashReporter
 import com.informedcitizen.data.api.BillsApi
 import com.informedcitizen.pipeline.model.Action
 import com.informedcitizen.pipeline.model.Bill
+import com.informedcitizen.pipeline.model.BillShardIndex
 import com.informedcitizen.pipeline.model.BillsManifest
 import com.informedcitizen.pipeline.model.CongressEntry
 import com.informedcitizen.pipeline.model.CongressesIndex
@@ -54,6 +55,7 @@ private class StubBillsApi(
     )
     override suspend fun getBillsManifest(url: String): BillsManifest =
         BillsManifest(generatedAt = "x", congress = 119, bills = bills)
+    override suspend fun getBillShardIndex(url: String): BillShardIndex = error("not used")
     override suspend fun getSessionCalendar(): SessionCalendar = error("not used")
     override suspend fun getElectionCalendar(): ElectionCalendar = election ?: error("no calendar")
 }

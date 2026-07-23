@@ -13,6 +13,7 @@ import com.informedcitizen.data.work.BillSummarizationController
 import com.informedcitizen.data.work.SummarizationScope
 import com.informedcitizen.pipeline.model.Action
 import com.informedcitizen.pipeline.model.Bill
+import com.informedcitizen.pipeline.model.BillShardIndex
 import com.informedcitizen.pipeline.model.BillsManifest
 import com.informedcitizen.pipeline.model.CongressEntry
 import com.informedcitizen.pipeline.model.CongressesIndex
@@ -55,6 +56,7 @@ internal class StubBillsApi(private val manifest: BillsManifest) : BillsApi {
         congresses = listOf(CongressEntry(congress = manifest.congress, manifestPath = "congress${manifest.congress}_bills.json", isCurrent = true)),
     )
     override suspend fun getBillsManifest(url: String): BillsManifest = manifest
+    override suspend fun getBillShardIndex(url: String): BillShardIndex = error("not used in this test")
     override suspend fun getSessionCalendar(): SessionCalendar = SessionCalendar(
         generatedAt = "2026-01-01",
         source = SessionCalendarSource(house = "stub", senate = "stub"),

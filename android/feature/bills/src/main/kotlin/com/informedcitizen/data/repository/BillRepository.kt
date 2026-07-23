@@ -9,6 +9,8 @@ import com.informedcitizen.data.api.BillsApi
 import com.informedcitizen.data.cache.BillCache
 import com.informedcitizen.data.cache.BillSource
 import com.informedcitizen.pipeline.model.Bill
+import com.informedcitizen.pipeline.model.BillShard
+import com.informedcitizen.pipeline.model.BillShardIndex
 import com.informedcitizen.pipeline.model.BillsManifest
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -126,6 +128,37 @@ class BillRepository @Inject constructor(
             )
         }.onFailure { crashReporter.recordNonFatal(it, "bill cache write-through failed") }
     }
+
+    /**
+     * Discover the sharded bills index (issue #40) for the current
+     * Congress, or `null` when this Congress has not been sharded yet.
+     *
+     * During the dual-publish transition a Congress publishes both the
+     * whole [BillsManifest] ([CongressEntry.manifestPath], unchanged) and,
+     * once it grows past a single page, the shard set
+     * ([CongressEntry.shardIndexPath]). A `null` return means "no shard
+     * index published — page the whole manifest instead", so the #41
+     * RemoteMediator degrades to the single-manifest path with no shard
+     * fetches. This is a plain read and does not touch the in-memory
+     * bills state, so it runs outside [mutex].
+     */
+    suspend fun fetchShardIndex(): BillShardIndex? {
+        val index = api.getCongressesIndex()
+        val entry = index.congresses.firstOrNull { it.congress == index.currentCongress }
+            ?: error("congresses.json has no entry for current_congress=${index.currentCongress}")
+        val shardIndexPath = entry.shardIndexPath ?: return null
+        return api.getBillShardIndex("data/$shardIndexPath")
+    }
+
+    /**
+     * Fetch a single [shard]'s page of bills. A shard file has the same
+     * wire shape as [BillsManifest] and is resolved under the same
+     * `data/` directory as the whole manifest, so it reuses
+     * [BillsApi.getBillsManifest]. The #41 RemoteMediator calls this per
+     * page and persists the result via [BillCache.appendShard].
+     */
+    suspend fun fetchShard(shard: BillShard): BillsManifest =
+        api.getBillsManifest("data/${shard.path}")
 
     fun getBillById(id: String): Bill? = _bills.value.firstOrNull { it.id == id }
 
