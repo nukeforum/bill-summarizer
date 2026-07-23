@@ -14,6 +14,9 @@ its own — it builds a structured prompt and shares it via Android's
   latest action, and bill number (a typed "H.R. 1357" works too).
 - **Bill detail + LLM share.** One tap composes a prompt with the bill
   text (when available) and shares to ChatGPT, Claude, or Gemini.
+- **Roll-call votes.** Bill detail shows each recorded roll call — chamber,
+  date, and question with the result, yea/nay totals, and party breakdown —
+  and, for the representatives you've saved, how each of them voted.
 - **Reps lookup.** Find your senators and representative by ZIP code
   (with a confirmation step for the matched district) or by picking your
   state and district by hand. Each detail page surfaces recent bill
