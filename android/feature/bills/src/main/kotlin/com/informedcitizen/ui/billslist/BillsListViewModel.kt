@@ -58,6 +58,7 @@ class BillsListViewModel @Inject constructor(
             selectedTopic,
             _searchQuery,
             selectedPolicyArea,
+            billRepository.generatedAt,
         ),
     ) { values ->
         @Suppress("UNCHECKED_CAST")
@@ -72,6 +73,7 @@ class BillsListViewModel @Inject constructor(
         val topic = values[7] as BillTopic?
         val query = values[8] as String
         val policyArea = values[9] as String?
+        val generatedAt = values[10] as String?
 
         when {
             result == null -> BillsListUiState.Loading
@@ -89,6 +91,7 @@ class BillsListViewModel @Inject constructor(
                 topic = topic,
                 query = query,
                 policyArea = policyArea,
+                generatedAt = generatedAt,
             )
         }
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), BillsListUiState.Loading)
@@ -130,6 +133,7 @@ class BillsListViewModel @Inject constructor(
         topic: BillTopic?,
         query: String,
         policyArea: String?,
+        generatedAt: String?,
     ): BillsListUiState.Success {
         val capable = capStatus == AiCapability.Status.Available ||
             capStatus is AiCapability.Status.ModelDownloading
@@ -169,6 +173,7 @@ class BillsListViewModel @Inject constructor(
             filter = currentFilter,
             isRefreshing = refreshing,
             sessionStatusLine = statusLine,
+            dataGeneratedAt = parseGeneratedAt(generatedAt),
             aiTitlesEnabled = aiEnabled,
             deviceCapable = capable,
             summaries = visibleSummaries,
