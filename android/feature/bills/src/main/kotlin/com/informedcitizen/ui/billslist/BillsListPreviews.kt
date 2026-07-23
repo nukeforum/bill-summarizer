@@ -159,6 +159,27 @@ private fun PreviewBillsListStatusFilter() = PreviewWrap {
 
 @PreviewLightDark
 @Composable
+private fun PreviewBillsListSubjectFilter() = PreviewWrap {
+    BillsListContent(
+        state = BillsListUiState.Success(
+            bills = sampleBills,
+            filter = BillsListFilter.ALL,
+            isRefreshing = false,
+            sessionStatusLine = null,
+            availableSubjects = listOf("Immigration", "Taxation", "Voting rights"),
+            selectedSubject = "Immigration",
+        ),
+        bills = previewBills(sampleBills),
+        innerPadding = PaddingValues(0.dp),
+        onFilterChange = {},
+        onRefresh = {},
+        onBillClick = {},
+        onCalendarClick = {},
+    )
+}
+
+@PreviewLightDark
+@Composable
 private fun PreviewBillsListAiOnTopicFilter() = PreviewWrap {
     val summaries = mapOf(
         sampleBills[0].id to BillCardSummary("Concise tech bill", BillTopic.Tech),

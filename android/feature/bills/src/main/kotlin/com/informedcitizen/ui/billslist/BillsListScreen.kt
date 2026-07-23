@@ -85,6 +85,7 @@ fun BillsListScreen(
             onResummarize = viewModel::resummarize,
             onSearchQueryChange = viewModel::setSearchQuery,
             onPolicyAreaSelected = viewModel::selectPolicyArea,
+            onSubjectSelected = viewModel::selectSubject,
             onStatusSelected = viewModel::setStatusFilter,
         )
     }
@@ -104,6 +105,7 @@ internal fun BillsListContent(
     onResummarize: (String) -> Unit = {},
     onSearchQueryChange: (String) -> Unit = {},
     onPolicyAreaSelected: (String?) -> Unit = {},
+    onSubjectSelected: (String?) -> Unit = {},
     onStatusSelected: (BillStatusFilter) -> Unit = {},
     searchQuery: String = (state as? BillsListUiState.Success)?.searchQuery.orEmpty(),
 ) {
@@ -132,6 +134,13 @@ internal fun BillsListContent(
                 policyAreas = success.availablePolicyAreas,
                 selected = success.selectedPolicyArea,
                 onPolicyAreaSelected = onPolicyAreaSelected,
+            )
+        }
+        if (success != null && success.availableSubjects.isNotEmpty()) {
+            SubjectFilterRow(
+                subjects = success.availableSubjects,
+                selected = success.selectedSubject,
+                onSubjectSelected = onSubjectSelected,
             )
         }
         if (success != null && success.statusFilterAvailable) {
@@ -185,6 +194,8 @@ internal fun BillsListContent(
                                         "No bills match \"${state.searchQuery.trim()}\""
                                     state.selectedPolicyArea != null ->
                                         "No bills with subject \"${state.selectedPolicyArea}\" match this filter"
+                                    state.selectedSubject != null ->
+                                        "No bills about \"${state.selectedSubject}\" match this filter"
                                     else -> "No bills match this filter"
                                 },
                             )
@@ -259,6 +270,41 @@ private fun PolicyAreaFilterRow(
                 selected = selected == area,
                 onClick = { onPolicyAreaSelected(if (selected == area) null else area) },
                 label = { Text(area) },
+            )
+        }
+    }
+}
+
+/**
+ * Chips over the finer-grained legislative subjects (#10/#28) present across the
+ * loaded bills — first-class topical narrowing over the multi-value `subjects`
+ * tags, distinct from the single coarse [PolicyAreaFilterRow]. Only rendered
+ * once the feed carries subject terms (see
+ * [BillsListUiState.Success.availableSubjects]), so older manifests degrade
+ * gracefully to no row rather than an empty one.
+ */
+@Composable
+private fun SubjectFilterRow(
+    subjects: List<String>,
+    selected: String?,
+    onSubjectSelected: (String?) -> Unit,
+) {
+    LazyRow(
+        contentPadding = PaddingValues(horizontal = 16.dp),
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+    ) {
+        item {
+            FilterChip(
+                selected = selected == null,
+                onClick = { onSubjectSelected(null) },
+                label = { Text("All topics") },
+            )
+        }
+        items(items = subjects, key = { it }) { subject ->
+            FilterChip(
+                selected = selected == subject,
+                onClick = { onSubjectSelected(if (selected == subject) null else subject) },
+                label = { Text(subject) },
             )
         }
     }
