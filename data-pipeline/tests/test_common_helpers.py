@@ -27,6 +27,64 @@ def test_classify_outcome_unknown_returns_none():
     assert _common.classify_outcome("Referred to the Subcommittee on Immigration.") is None
 
 
+def test_classify_lifecycle_introduced():
+    assert (
+        _common.classify_lifecycle_status("Introduced in House")
+        == _common.LIFECYCLE_INTRODUCED
+    )
+
+
+def test_classify_lifecycle_in_committee_from_referral():
+    # The same string classify_outcome returns None for is a real in_committee status.
+    assert _common.classify_outcome("Referred to the Subcommittee on Immigration.") is None
+    assert (
+        _common.classify_lifecycle_status("Referred to the Subcommittee on Immigration.")
+        == _common.LIFECYCLE_IN_COMMITTEE
+    )
+
+
+def test_classify_lifecycle_reported_beats_in_committee():
+    # A reported action often still mentions the committee; reported must win.
+    assert (
+        _common.classify_lifecycle_status(
+            "Reported by the Committee on Finance. H. Rept. 119-42."
+        )
+        == _common.LIFECYCLE_REPORTED
+    )
+
+
+def test_classify_lifecycle_placed_on_calendar_is_reported():
+    assert (
+        _common.classify_lifecycle_status("Placed on the Union Calendar, Calendar No. 88.")
+        == _common.LIFECYCLE_REPORTED
+    )
+
+
+def test_classify_lifecycle_unknown_returns_none():
+    assert _common.classify_lifecycle_status("Became Public Law No: 119-12.") is None
+
+
+def test_classify_bill_status_outcome_wins_over_lifecycle():
+    # Enacted text mentions no committee, but a terminal outcome must be flagged is_outcome.
+    status, is_outcome = _common.classify_bill_status("Became Public Law No: 119-12.")
+    assert status == _common.OUTCOME_ENACTED
+    assert is_outcome is True
+
+
+def test_classify_bill_status_falls_back_to_lifecycle():
+    status, is_outcome = _common.classify_bill_status(
+        "Referred to the House Committee on Ways and Means."
+    )
+    assert status == _common.LIFECYCLE_IN_COMMITTEE
+    assert is_outcome is False
+
+
+def test_classify_bill_status_no_match():
+    status, is_outcome = _common.classify_bill_status("Some unrecognized action text.")
+    assert status is None
+    assert is_outcome is False
+
+
 def test_current_congress_for_2026():
     cong = _common.current_congress(datetime(2026, 5, 5, tzinfo=timezone.utc))
     assert cong == 119
