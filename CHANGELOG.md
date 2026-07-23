@@ -9,8 +9,16 @@ recorded only in git history and the Play Store release track.
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-07-22
+
 ### Added
 
+- **Roll-call votes on each bill.** Bill detail now shows how Congress voted:
+  each recorded roll call lists its chamber, date, and question with the result,
+  the yea/nay totals, and the party breakdown, so you can see how the vote split.
+- **See how your representatives voted.** For the representatives you've saved,
+  each roll call also shows their own position, so you can tell at a glance how
+  the people who represent you voted on a bill.
 - **Bill search.** A search box above the bills feed and on each representative's
   sponsored/cosponsored legislation tabs filters the loaded bills by topic or
   keyword. Every search term must match, and matching covers titles, summaries,
