@@ -8,6 +8,8 @@ package com.informedcitizen.pipeline.cli
  *  - `fetch-members` — current Congress members index + sponsored /
  *    cosponsored legislation backfill.
  *  - `build-session-calendar` — House ICS + Senate XML session days.
+ *  - `build-election-calendar` — statutory federal general + curated
+ *    state primary dates.
  *  - `fetch-votes` — Senate roll-call votes + per-Congress index.
  *  - `build-zip-crosswalk` — HUD ZIP→congressional-district asset.
  *  - `check-freshness` — staleness assertions over published outputs.
@@ -26,6 +28,7 @@ fun main(args: Array<String>) {
         "backfill-bills" -> BackfillBillsCommand.run(args.drop(1))
         "fetch-members" -> FetchMembersCommand.run(args.drop(1))
         "build-session-calendar" -> BuildSessionCalendarCommand.run(args.drop(1))
+        "build-election-calendar" -> BuildElectionCalendarCommand.run(args.drop(1))
         "fetch-votes" -> FetchVotesCommand.run(args.drop(1))
         "build-zip-crosswalk" -> BuildZipCrosswalkCommand.run(args.drop(1))
         "check-freshness" -> CheckFreshnessCommand.run(args.drop(1))
@@ -84,6 +87,14 @@ private fun printUsage() {
               today−1..today+1). Writes
               <output-dir>/session_calendar.json (default: ./docs/data).
               No API key required.
+          build-election-calendar [--output-dir <path>] [--primaries <path>]
+              Statutory federal general-election date (computed) merged
+              with operator-curated state primary dates from
+              --primaries (default:
+              ./data-pipeline/data/election_primaries.json). Writes
+              <output-dir>/election_calendar.json (default: ./docs/data).
+              Curated rows that fail validation are dropped with a
+              warning. No API key or network required.
           fetch-votes [--output-dir <path>] [--congress N] [--max-new N]
               Senate roll-call votes: incremental fetch of senate.gov
               LIS XML (per-member positions mapped lis→bioguide via the

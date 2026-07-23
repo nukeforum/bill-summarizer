@@ -24,6 +24,17 @@ private val STATE_NAME_TO_CODE: Map<String, String> = mapOf(
 )
 
 /**
+ * The set of 2-letter postal codes a *known* state/territory name maps
+ * to (the 50 states, D.C., and the five delegate jurisdictions). Mirrors
+ * Python `_election_calendar._VALID_STATE_CODES`
+ * (`frozenset(_STATE_NAME_TO_CODE.values())`) — the whitelist a curated
+ * election row's `state` must belong to. Excludes the two-char pass-through
+ * and first-two-chars fallback of [stateCode], which are for upstream
+ * Congress.gov labels, not the operator-curated calendar.
+ */
+val KNOWN_STATE_CODES: Set<String> = STATE_NAME_TO_CODE.values.toSet()
+
+/**
  * Map a Congress.gov state field to a 2-letter postal code. Two-letter
  * inputs pass through uppercased. Full names are looked up in the table.
  * Unknown names fall back to the first two characters uppercased and
