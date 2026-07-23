@@ -165,29 +165,35 @@ def rebuild_member_votes(
     return written, unchanged
 
 
-def refresh_bill_vote_refs(congress: int, refs: list[dict[str, Any]]) -> bool:
+def refresh_bill_vote_refs(congress: int, refs: list[dict[str, Any]]) -> tuple[bool, int]:
     """Re-attach vote refs to the bills manifest after new votes land.
 
     Bills leave fetch_bills' refresh window ~60 days after their last
     action, so this pass — not the bills workflow — is what links votes
-    that arrive later (or between bill runs) to their bills. Returns True
-    when the manifest changed and was rewritten; no-ops when there is no
-    manifest to enrich (votes can backfill before bills on a fresh tree).
+    that arrive later (or between bill runs) to their bills. After linking,
+    a bill's outcome is reconciled against its passage roll calls
+    (``reconcile_vote_outcomes``, backlog #30): the actual vote result
+    overrides a text-classified outcome that misread an amendment rejection
+    or a motion to table as a failed bill. Returns ``(changed, overrides)``:
+    whether the manifest was rewritten, and how many outcomes the votes
+    corrected. No-ops (``(False, 0)``) when there is no manifest to enrich
+    (votes can backfill before bills on a fresh tree).
     """
     if not _common.manifest_path_for(congress).exists():
-        return False
+        return False, 0
     manifest = _common.load_manifest(congress)
     bills = manifest.get("bills", [])
     before = copy.deepcopy(bills)
     attach_vote_refs(bills, refs)
+    overrides = _common.reconcile_vote_outcomes(bills)
     # The rewrite must also happen when only the votes_coverage gate flips
     # (first index publish with no bill-linked votes yet), or the app would
     # keep hiding vote surfaces until the next bills run.
     coverage_changed = bool(manifest.get("votes_coverage")) != _common.votes_coverage(congress)
     if bills == before and not coverage_changed:
-        return False
+        return False, overrides
     _common.save_manifest(congress, {"bills": bills})
-    return True
+    return True, overrides
 
 
 # ---------- fetching --------------------------------------------------------
@@ -403,8 +409,14 @@ def main(argv: list[str] | None = None) -> int:
 
     votes_by_congress = load_congress_votes()
     index = rebuild_votes_index(congress, votes_by_congress.get(congress, []))
-    if refresh_bill_vote_refs(congress, index["votes"]):
+    refs_changed, outcome_overrides = refresh_bill_vote_refs(congress, index["votes"])
+    if refs_changed:
         print(f"bill manifest: congress{congress}_bills.json vote refs refreshed")
+    if outcome_overrides:
+        print(
+            f"bill manifest: {outcome_overrides} outcome(s) corrected from "
+            f"roll-call votes"
+        )
     members_written, members_unchanged = rebuild_member_votes(votes_by_congress)
     print(
         f"member shards: {members_written} written, {members_unchanged} unchanged"

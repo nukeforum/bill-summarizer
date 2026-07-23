@@ -252,6 +252,128 @@ def classify_outcome(action_text: str) -> str | None:
     return None
 
 
+# ---------- outcome from roll-call votes ----------------------------------
+#
+# When a bill has linked roll calls (see _votes.attach_vote_refs), the actual
+# vote result is a more reliable Outcome signal than substring-matching the
+# latest-action text. The key correctness win: only *passage* questions decide
+# the bill, so an amendment rejection or a motion to table — which the
+# latest-action substring rules can misread as a failed bill — never counts.
+# Voice-vote bills have no roll call, so callers fall back to classify_outcome.
+
+# Wire chamber values (mirror _votes.CHAMBER_HOUSE / CHAMBER_SENATE); kept as
+# literals so this module needs no _votes import.
+_CHAMBER_HOUSE = "house"
+_CHAMBER_SENATE = "senate"
+
+# Roll-call questions whose result decides the *measure itself* — not an
+# amendment, a motion to table, cloture, or a motion to proceed. Matched
+# case-insensitively as substrings. Deliberately narrow: procedural and
+# amendment votes carry none of these markers, so they contribute no outcome.
+_PASSAGE_QUESTION_MARKERS: tuple[str, ...] = (
+    "on passage",                     # House "On Passage"; Senate "On Passage of the Bill"
+    "suspend the rules and pass",     # House passage under suspension of the rules
+    "suspend the rules and agree",    # House resolution adoption under suspension
+    "on agreeing to the resolution",  # simple / concurrent resolution adoption
+    "on the conference report",       # final adoption of the conference report
+    "on concurring",                  # concur in the other chamber's amendment (final passage)
+    "on the motion to concur",
+    "on the joint resolution",
+    "on overriding the veto",         # veto override
+)
+
+
+def _vote_question_is_passage(question: str) -> bool:
+    q = (question or "").lower()
+    return any(marker in q for marker in _PASSAGE_QUESTION_MARKERS)
+
+
+def _vote_result_prevailed(result: str) -> bool | None:
+    """True the measure prevailed, False it lost, None unrecognized.
+
+    Failure markers are tested first so "Not Agreed to" / "Bill Defeated"
+    are never read as a pass by a stray "agreed"/"pass" substring.
+    """
+    r = (result or "").lower()
+    if any(k in r for k in ("fail", "reject", "defeat", "negativ", "not agreed", "not passed")):
+        return False
+    if any(k in r for k in ("pass", "agreed to", "adopted", "concurred")):
+        return True
+    return None
+
+
+def outcome_from_vote(chamber: str, question: str, result: str) -> str | None:
+    """The Outcome a single roll call implies, or None if it doesn't decide
+    the bill.
+
+    Only passage-type questions with a recognized result yield an outcome;
+    amendment and procedural votes return None so they can never override a
+    bill's outcome.
+    """
+    if not _vote_question_is_passage(question):
+        return None
+    prevailed = _vote_result_prevailed(result)
+    if prevailed is None:
+        return None
+    if not prevailed:
+        return OUTCOME_FAILED
+    if chamber == _CHAMBER_HOUSE:
+        return OUTCOME_PASSED_HOUSE
+    if chamber == _CHAMBER_SENATE:
+        return OUTCOME_PASSED_SENATE
+    return None
+
+
+def outcome_from_votes(votes: list[dict[str, Any]]) -> str | None:
+    """Derive a bill's Outcome from its linked roll-call votes, or None.
+
+    Considers only passage-type roll calls (``outcome_from_vote``); the most
+    recent decisive one by date wins (roll number then chamber break ties),
+    mirroring the latest-action semantics of ``classify_outcome`` but grounded
+    in the actual vote rather than action text. Returns None when no linked
+    roll call is a decisive passage vote (the bill moved by voice vote, or
+    every roll call was an amendment) — the caller then falls back to the
+    text classifier.
+    """
+    decisive: list[tuple[Any, int, str, str]] = []
+    for vote in votes:
+        outcome = outcome_from_vote(
+            vote.get("chamber", ""), vote.get("question", ""), vote.get("result", "")
+        )
+        if outcome is not None:
+            decisive.append(
+                (vote.get("date", ""), vote.get("roll_number", 0), vote.get("chamber", ""), outcome)
+            )
+    if not decisive:
+        return None
+    decisive.sort(key=lambda d: (d[0], d[1], d[2]))
+    return decisive[-1][3]
+
+
+def reconcile_vote_outcomes(bills: list[dict[str, Any]]) -> int:
+    """Override each bill's text-derived ``outcome`` with the outcome its
+    linked roll-call votes imply, when a passage vote decides the measure.
+
+    Bills are classified at build time from latest-action text
+    (``classify_outcome``), which can misread an amendment rejection or a
+    motion to table as a *failed bill*. Once roll calls are linked
+    (``_votes.attach_vote_refs`` sets each bill's ``votes``), a passage vote
+    is the authoritative signal: where ``outcome_from_votes`` yields an
+    outcome that differs from the stored one, this replaces it and counts the
+    correction. Bills with no decisive passage roll call (voice votes,
+    amendment-only votes) keep their text outcome — ``outcome_from_votes``
+    returns None. Mutates ``bills`` in place; returns the number of overrides
+    applied (a discrepancy counter the caller can surface).
+    """
+    overrides = 0
+    for bill in bills:
+        derived = outcome_from_votes(bill.get("votes") or [])
+        if derived is not None and derived != bill.get("outcome"):
+            bill["outcome"] = derived
+            overrides += 1
+    return overrides
+
+
 # ---------- congress math -------------------------------------------------
 
 

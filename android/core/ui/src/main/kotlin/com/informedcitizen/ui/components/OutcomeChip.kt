@@ -14,6 +14,9 @@ import com.informedcitizen.ui.util.displayName
 
 @Composable
 fun OutcomeChip(outcome: Outcome, modifier: Modifier = Modifier) {
+    // An outcome this app generation can't interpret shouldn't show a
+    // misleading status chip — omit it rather than render "Unknown".
+    if (outcome == Outcome.UNKNOWN) return
     val (container, content) = outcomeColors(outcome)
     Text(
         text = outcome.displayName(),
@@ -34,6 +37,7 @@ private fun outcomeColors(outcome: Outcome): Pair<Color, Color> = when (outcome)
         MaterialTheme.colorScheme.onTertiaryContainer
     Outcome.VETOED -> MaterialTheme.colorScheme.errorContainer to
         MaterialTheme.colorScheme.onErrorContainer
-    Outcome.FAILED -> MaterialTheme.colorScheme.surfaceVariant to
+    Outcome.FAILED,
+    Outcome.UNKNOWN -> MaterialTheme.colorScheme.surfaceVariant to
         MaterialTheme.colorScheme.onSurfaceVariant
 }

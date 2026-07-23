@@ -24,6 +24,22 @@ internal val ManifestJson: Json = Json {
     explicitNulls = true
 }
 
+/**
+ * Read-side config for decoding published manifests. Mirrors the
+ * Android app's lenient wire parsing (`ignoreUnknownKeys = true` in
+ * `:core:network`): a manifest carrying a field the Kotlin models
+ * don't know yet must decode as the bills it holds, not fail. Without
+ * this the parity shadow would read a forward-compatible manifest as a
+ * parse failure — and the swallow-to-`null` load path below would then
+ * report it as an *absent* file, silently rebuilding from empty and
+ * producing a misleading "Kotlin lost all the bills" parity diff.
+ * Kept separate from [ManifestJson] so write-side byte-parity is
+ * untouched.
+ */
+internal val ManifestReadJson: Json = Json {
+    ignoreUnknownKeys = true
+}
+
 /** Mirrors Python `manifest_path_for`. */
 fun manifestFileName(congress: Int): String = "congress${congress}_bills.json"
 
@@ -47,15 +63,23 @@ class FileBillsManifestStore(
     fun votesCoverage(congress: Int): Boolean =
         fileSystem.exists(outputDir / votesIndexFileName(congress))
 
-    /** Read the manifest; returns `null` if the file is absent. */
+    /**
+     * Read the manifest; returns `null` only when the file is absent.
+     * A present-but-unparseable manifest throws rather than coercing to
+     * `null`: masking corruption as absence lets a caller silently
+     * rebuild from an empty manifest, which shows up in the daily parity
+     * diff as "Kotlin lost all the bills" with no error logged anywhere.
+     * Unknown fields are tolerated (see [ManifestReadJson]) and are not
+     * corruption.
+     */
     fun load(congress: Int): BillsManifest? {
         val path = pathFor(congress)
         if (!fileSystem.exists(path)) return null
+        val text = fileSystem.source(path).buffer().use { it.readUtf8() }
         return try {
-            val text = fileSystem.source(path).buffer().use { it.readUtf8() }
-            ManifestJson.decodeFromString(BillsManifest.serializer(), text)
-        } catch (_: Throwable) {
-            null
+            ManifestReadJson.decodeFromString(BillsManifest.serializer(), text)
+        } catch (t: Throwable) {
+            throw IllegalStateException("Failed to parse bills manifest at $path", t)
         }
     }
 

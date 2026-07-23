@@ -36,5 +36,6 @@ class BillSummarizationPolicy(
         Outcome.ENACTED,
         Outcome.VETOED,
         Outcome.FAILED -> true
+        Outcome.UNKNOWN -> false
     }
 }

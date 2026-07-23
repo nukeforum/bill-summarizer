@@ -10,4 +10,14 @@ enum class Outcome {
     @SerialName("enacted") ENACTED,
     @SerialName("vetoed") VETOED,
     @SerialName("failed") FAILED,
+
+    /**
+     * Forward-compat fallback for any outcome string a future pipeline
+     * publishes that this app generation doesn't recognise. It is the
+     * default for [Bill.outcome], so the lenient wire config's
+     * `coerceInputValues` maps an unknown value here instead of crashing
+     * deserialization. The pipeline never emits `"unknown"`; classifier
+     * misses drop the bill rather than publishing this value.
+     */
+    @SerialName("unknown") UNKNOWN,
 }
