@@ -27,6 +27,9 @@ dependencies {
     testImplementation(project(":core:testing"))
     testImplementation(libs.junit)
     testImplementation(libs.kotlinx.coroutines.test)
+    // asSnapshot() drives the pagedBills Pager (RemoteMediator + PagingSource)
+    // end-to-end in a plain JVM test with no adapter/UI.
+    testImplementation(libs.androidx.paging.testing)
     testImplementation(libs.androidx.test.core)
     testImplementation(libs.androidx.test.ext.junit)
     testImplementation(libs.robolectric)

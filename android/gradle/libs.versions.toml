@@ -101,6 +101,7 @@ robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectr
 google-ai-edge-aicore = { module = "com.google.ai.edge.aicore:aicore", version.ref = "aicore" }
 androidx-paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "androidxPaging" }
 androidx-paging-common = { module = "androidx.paging:paging-common", version.ref = "androidxPaging" }
+androidx-paging-testing = { module = "androidx.paging:paging-testing", version.ref = "androidxPaging" }
 
 # Gradle plugin artifacts referenced from build-logic convention plugins.
 android-gradle-plugin = { module = "com.android.tools.build:gradle", version.ref = "androidGradlePlugin" }

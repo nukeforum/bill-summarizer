@@ -1,5 +1,6 @@
 package com.informedcitizen.data.repository
 
+import androidx.paging.testing.asSnapshot
 import com.informedcitizen.crash.FakeCrashReporter
 import com.informedcitizen.data.api.BillsApi
 import com.informedcitizen.data.cache.BillSource
@@ -327,6 +328,106 @@ class BillRepositoryTest {
         )
 
         assertTrue(repo.votesCoverage.value)
+    }
+
+    @Test
+    fun `resolveCurrentCongress reads the current congress from the index`() = runTest {
+        val api = StubApi(
+            manifest = BillsManifest(generatedAt = "x", congress = 118, bills = emptyList()),
+            index = CongressesIndex(
+                currentCongress = 119,
+                congresses = listOf(
+                    CongressEntry(congress = 118, manifestPath = "congress118_bills.json"),
+                    CongressEntry(congress = 119, manifestPath = "congress119_bills.json", isCurrent = true),
+                ),
+            ),
+        )
+        val repo = BillRepository(api, InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
+
+        assertEquals(119, repo.resolveCurrentCongress())
+    }
+
+    @Test
+    fun `resolveCurrentCongress falls back to the freshest cached congress when offline`() = runTest {
+        val reporter = FakeCrashReporter()
+        val cache = FakeBillCache().apply {
+            replaceForSource(
+                congress = 118,
+                source = BillSource.PUBLISHED,
+                bills = listOf(sampleBill("hr1-118")),
+                generatedAt = "2026-06-01T00:00:00Z",
+                fetchedAtMillis = 1L,
+            )
+        }
+        val repo = BillRepository(ThrowingApi(IOException("offline")), InMemoryPreferencesDataStore(), reporter, cache)
+
+        assertEquals(118, repo.resolveCurrentCongress())
+        assertEquals("index failure is reported before the cache fallback", 1, reporter.recorded.size)
+    }
+
+    @Test
+    fun `pagedBills serves recency-ordered cached bills over more than one page`() = runTest {
+        // Seed a fully-cached shard set so the mediator's initialize() skips
+        // the network refresh and the Pager reads straight from the DB — the
+        // filter-toggle / already-loaded runtime path. (Mediator fetch itself
+        // is covered by BillsRemoteMediatorTest.)
+        val bills = (1..25).map {
+            sampleBill("hr$it-119").copy(latestAction = Action(date = "2026-01-%02d".format(it), text = "x"))
+        }
+        val cache = FakeBillCache().apply {
+            appendShard(
+                congress = 119,
+                source = BillSource.PUBLISHED,
+                shardIndex = 0,
+                bills = bills,
+                generatedAt = "2026-05-01",
+                fetchedAtMillis = 1L,
+                totalShards = 1,
+                pageSize = 500,
+            )
+        }
+        val repo = BillRepository(
+            api = StubApi(BillsManifest(generatedAt = "2026-05-01", congress = 119, bills = emptyList())),
+            dataStore = InMemoryPreferencesDataStore(),
+            crashReporter = FakeCrashReporter(),
+            billCache = cache,
+        )
+
+        val snapshot = repo.pagedBills().asSnapshot()
+
+        // Newest-first (latest_action_date DESC), and all pages are stitched
+        // together across the 20-row page window.
+        assertEquals(bills.map { it.id }.reversed(), snapshot.map { it.id })
+    }
+
+    @Test
+    fun `pagedBills applies the DB-side policy-area filter`() = runTest {
+        val cache = FakeBillCache().apply {
+            appendShard(
+                congress = 119,
+                source = BillSource.PUBLISHED,
+                shardIndex = 0,
+                bills = listOf(
+                    sampleBill("hr1-119").copy(policyArea = "Health"),
+                    sampleBill("hr2-119").copy(policyArea = "Taxation"),
+                    sampleBill("hr3-119").copy(policyArea = "Health"),
+                ),
+                generatedAt = "2026-05-01",
+                fetchedAtMillis = 1L,
+                totalShards = 1,
+                pageSize = 500,
+            )
+        }
+        val repo = BillRepository(
+            api = StubApi(BillsManifest(generatedAt = "2026-05-01", congress = 119, bills = emptyList())),
+            dataStore = InMemoryPreferencesDataStore(),
+            crashReporter = FakeCrashReporter(),
+            billCache = cache,
+        )
+
+        val snapshot = repo.pagedBills(policyArea = "Health").asSnapshot()
+
+        assertEquals(setOf("hr1-119", "hr3-119"), snapshot.map { it.id }.toSet())
     }
 
     @Test

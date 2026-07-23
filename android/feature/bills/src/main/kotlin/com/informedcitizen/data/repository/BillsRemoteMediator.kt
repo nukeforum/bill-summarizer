@@ -6,6 +6,7 @@ import androidx.paging.PagingState
 import androidx.paging.RemoteMediator
 import com.informedcitizen.data.cache.BillCache
 import com.informedcitizen.data.cache.BillSource
+import com.informedcitizen.data.cache.ShardCursor
 import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.pipeline.model.BillShard
 import com.informedcitizen.pipeline.model.BillShardIndex
@@ -51,8 +52,29 @@ internal class BillsRemoteMediator(
     private val fetchShardIndex: suspend () -> BillShardIndex?,
     private val fetchShard: suspend (BillShard) -> BillsManifest,
     private val fetchWholeManifest: suspend () -> BillsManifest,
+    private val loadInitialCursor: suspend () -> ShardCursor? = { null },
     private val now: () -> Long = { System.currentTimeMillis() },
 ) : RemoteMediator<Int, Bill>() {
+
+    /**
+     * Skip the automatic initial network refresh when a full shard set is
+     * already cached, so re-collecting the Pager — e.g. when the user toggles
+     * the status/policy filter (which rebuilds the `Pager` via
+     * `flatMapLatest`) — reads straight from the DB instead of re-fetching
+     * every page. An incomplete or absent cursor still launches a refresh so a
+     * cold start (or a Congress mid-way through its shards) fills the cache.
+     * Explicit pull-to-refresh calls `PagingDataAdapter.refresh()`, which
+     * triggers a REFRESH regardless of this hint, so fresh data is never
+     * unreachable.
+     */
+    override suspend fun initialize(): InitializeAction {
+        val cursor = loadInitialCursor()
+        return if (cursor?.isComplete == true) {
+            InitializeAction.SKIP_INITIAL_REFRESH
+        } else {
+            InitializeAction.LAUNCH_INITIAL_REFRESH
+        }
+    }
 
     override suspend fun load(loadType: LoadType, state: PagingState<Int, Bill>): MediatorResult {
         if (loadType == LoadType.PREPEND) {

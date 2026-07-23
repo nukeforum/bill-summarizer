@@ -195,6 +195,67 @@ class BillsRemoteMediatorTest {
         assertTrue("no rows written on failure", cache.appends.isEmpty())
     }
 
+    @Test
+    fun `initialize skips the initial refresh when the shard set is fully cached`() = runTest {
+        val cache = FakeBillCache()
+        cache.appendShard(
+            congress = 119,
+            source = BillSource.PUBLISHED,
+            shardIndex = 0,
+            bills = listOf(bill("hr-0")),
+            generatedAt = "x",
+            fetchedAtMillis = 1L,
+            totalShards = 1,
+            pageSize = 500,
+        )
+        val mediator = mediator(
+            cache = cache,
+            shardIndex = { error("initialize must not fetch") },
+            loadInitialCursor = { cache.loadShardCursor(119, BillSource.PUBLISHED) },
+        )
+
+        assertEquals(
+            RemoteMediator.InitializeAction.SKIP_INITIAL_REFRESH,
+            mediator.initialize(),
+        )
+    }
+
+    @Test
+    fun `initialize launches the initial refresh when the cursor is absent or incomplete`() = runTest {
+        val cache = FakeBillCache()
+        val cold = mediator(
+            cache = cache,
+            shardIndex = { null },
+            loadInitialCursor = { cache.loadShardCursor(119, BillSource.PUBLISHED) },
+        )
+        assertEquals(
+            "no cursor yet → cold start refreshes",
+            RemoteMediator.InitializeAction.LAUNCH_INITIAL_REFRESH,
+            cold.initialize(),
+        )
+
+        cache.appendShard(
+            congress = 119,
+            source = BillSource.PUBLISHED,
+            shardIndex = 0,
+            bills = listOf(bill("hr-0")),
+            generatedAt = "x",
+            fetchedAtMillis = 1L,
+            totalShards = 2,
+            pageSize = 500,
+        )
+        val partial = mediator(
+            cache = cache,
+            shardIndex = { null },
+            loadInitialCursor = { cache.loadShardCursor(119, BillSource.PUBLISHED) },
+        )
+        assertEquals(
+            "shard 0 of 2 cached → still more to fetch",
+            RemoteMediator.InitializeAction.LAUNCH_INITIAL_REFRESH,
+            partial.initialize(),
+        )
+    }
+
     // --- helpers ---------------------------------------------------------
 
     private fun mediator(
@@ -202,12 +263,14 @@ class BillsRemoteMediatorTest {
         shardIndex: suspend () -> BillShardIndex?,
         shard: suspend (BillShard) -> BillsManifest = { error("shard fetch not expected") },
         wholeManifest: suspend () -> BillsManifest = { error("whole manifest fetch not expected") },
+        loadInitialCursor: suspend () -> com.informedcitizen.data.cache.ShardCursor? = { null },
     ) = BillsRemoteMediator(
         source = BillSource.PUBLISHED,
         billCache = cache,
         fetchShardIndex = shardIndex,
         fetchShard = shard,
         fetchWholeManifest = wholeManifest,
+        loadInitialCursor = loadInitialCursor,
         now = { 42L },
     )
 

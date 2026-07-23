@@ -4,6 +4,10 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.longPreferencesKey
+import androidx.paging.ExperimentalPagingApi
+import androidx.paging.Pager
+import androidx.paging.PagingConfig
+import androidx.paging.PagingData
 import com.informedcitizen.crash.CrashReporter
 import com.informedcitizen.data.api.BillsApi
 import com.informedcitizen.data.cache.BillCache
@@ -16,7 +20,9 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.emitAll
 import kotlinx.coroutines.flow.firstOrNull
+import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import javax.inject.Inject
@@ -175,6 +181,60 @@ class BillRepository @Inject constructor(
         return api.getBillsManifest("data/${entry.manifestPath}")
     }
 
+    /**
+     * The current Congress number, for keying the paged cache reads. Read
+     * from `congresses.json` when online; on failure it falls back to the
+     * freshest cached bills' Congress so [pagedBills] still functions
+     * offline. Throws only when neither the network nor any cache can name a
+     * Congress (a genuinely cold, offline first run).
+     */
+    suspend fun resolveCurrentCongress(): Int =
+        runCatching { api.getCongressesIndex().currentCongress }
+            .getOrElse {
+                crashReporter.recordNonFatal(it, "congresses index fetch failed while resolving current congress")
+                billCache.loadFreshest()?.congress
+                    ?: throw it
+            }
+
+    /**
+     * The Paging 3 read side of the sharded bills list (issue #41, epic #38).
+     *
+     * Builds a [Pager] pairing [BillsRemoteMediator] (which fetches the #40
+     * shard set — or the whole manifest during the dual-publish transition —
+     * into [BillCache]) with the DB-backed [BillCache.billsPagingSource], so
+     * the broadened ~10k-bill manifest (#39) loads one page at a time instead
+     * of being held in memory as a single list. [status] (the #39 lifecycle
+     * wire string) and [policyArea] are optional filters applied in SQL.
+     *
+     * The Congress is resolved once per collection via [resolveCurrentCongress]
+     * so both the mediator's initial-refresh decision and the paging source
+     * key agree. The caller (ViewModel) is expected to `flatMapLatest` a filter
+     * tuple onto this so a filter change swaps the [PagingData] stream; the
+     * mediator's `initialize()` skips the redundant network refresh when the
+     * shard set is already fully cached.
+     */
+    @OptIn(ExperimentalPagingApi::class)
+    fun pagedBills(
+        source: BillSource = BillSource.PUBLISHED,
+        status: String? = null,
+        policyArea: String? = null,
+    ): Flow<PagingData<Bill>> = flow {
+        val congress = resolveCurrentCongress()
+        val pager = Pager(
+            config = PagingConfig(pageSize = BILLS_PAGE_SIZE, enablePlaceholders = false),
+            remoteMediator = BillsRemoteMediator(
+                source = source,
+                billCache = billCache,
+                fetchShardIndex = ::fetchShardIndex,
+                fetchShard = ::fetchShard,
+                fetchWholeManifest = ::fetchCurrentManifest,
+                loadInitialCursor = { billCache.loadShardCursor(congress, source) },
+            ),
+            pagingSourceFactory = { billCache.billsPagingSource(congress, source, status, policyArea) },
+        )
+        emitAll(pager.flow)
+    }
+
     fun getBillById(id: String): Bill? = _bills.value.firstOrNull { it.id == id }
 
     suspend fun findById(id: String): Bill? {
@@ -190,5 +250,13 @@ class BillRepository @Inject constructor(
 
     private companion object {
         val LAST_FETCHED_KEY = longPreferencesKey("last_fetched_at_millis")
+
+        /**
+         * Paging window for [pagedBills]. Smaller than the #40 shard page
+         * size (500) so a shard is served to the UI across several DB reads;
+         * the RemoteMediator still fetches a whole shard per network round
+         * trip.
+         */
+        const val BILLS_PAGE_SIZE = 20
     }
 }
