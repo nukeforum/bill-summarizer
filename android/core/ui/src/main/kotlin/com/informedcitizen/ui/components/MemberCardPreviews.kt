@@ -42,11 +42,19 @@ private fun PreviewMemberCards_AllPermutations() = PreviewWrap(modifier = Modifi
                 com.informedcitizen.pipeline.model.SocialHandle("facebook", "RepX"),
             ),
         ))
+        // "On your ballot" badge (issue #33) — third line + grown card
+        Card3(
+            member = sampleMember(name = "On Your Ballot"),
+            upForElection = "Up for election · Nov 3, 2026",
+        )
     }
 }
 
 @Composable
-private fun Card3(member: com.informedcitizen.pipeline.model.Member) {
+private fun Card3(
+    member: com.informedcitizen.pipeline.model.Member,
+    upForElection: String? = null,
+) {
     MemberCard(
         member = member,
         onClick = {},
@@ -54,5 +62,6 @@ private fun Card3(member: com.informedcitizen.pipeline.model.Member) {
         onOpenContactForm = {},
         onOpenWebsite = {},
         onOpenSocial = {},
+        upForElection = upForElection,
     )
 }

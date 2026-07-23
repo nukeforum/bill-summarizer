@@ -146,6 +146,7 @@ internal fun MemberDetailContent(
                     onOpenContactForm = onOpenUrl,
                     onOpenWebsite = onOpenUrl,
                     onOpenSocial = onOpenUrl,
+                    upForElection = state.ballotBadge,
                 )
                 // The search field only filters the legislation tabs, so
                 // hide it on the votes tab where it would be a no-op.

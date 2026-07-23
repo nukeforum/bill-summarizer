@@ -119,6 +119,59 @@ class MemberParserTest {
         assertEquals("senate", chamberFromTerms(senRaw["terms"]))
     }
 
+    @Test fun derives_next_election_year_end_minus_one_for_both_chambers() {
+        val house = parseJsonObject("""{"terms": [{"chamber": "House", "startYear": 2025, "endYear": 2027}]}""")
+        assertEquals(2026, nextElectionYearFromTerms(house["terms"], "house"))
+        val senate = parseJsonObject("""{"terms": [{"chamber": "Senate", "startYear": 2025, "endYear": 2031}]}""")
+        assertEquals(2030, nextElectionYearFromTerms(senate["terms"], "senate"))
+    }
+
+    @Test fun next_election_year_coerces_string_years() {
+        val raw = parseJsonObject("""{"terms": [{"startYear": "2019", "endYear": "2025"}]}""")
+        assertEquals(2024, nextElectionYearFromTerms(raw["terms"], "senate"))
+    }
+
+    @Test fun next_election_year_omitted_on_ambiguous_data() {
+        // No terms / unknown chamber / missing years.
+        assertNull(nextElectionYearFromTerms(null, "house"))
+        val noYears = parseJsonObject("""{"terms": [{"chamber": "Senate"}]}""")
+        assertNull(nextElectionYearFromTerms(noYears["terms"], "senate"))
+        val known = parseJsonObject("""{"terms": [{"startYear": 2025, "endYear": 2027}]}""")
+        assertNull(nextElectionYearFromTerms(known["terms"], "unknown"))
+    }
+
+    @Test fun next_election_year_omitted_on_non_statutory_term_span() {
+        // Appointed senator (4-year span) / special-election House (3-year span).
+        val appointed = parseJsonObject("""{"terms": [{"startYear": 2023, "endYear": 2027}]}""")
+        assertNull(nextElectionYearFromTerms(appointed["terms"], "senate"))
+        val special = parseJsonObject("""{"terms": [{"startYear": 2024, "endYear": 2027}]}""")
+        assertNull(nextElectionYearFromTerms(special["terms"], "house"))
+    }
+
+    @Test fun parse_member_summary_surfaces_next_election_year() {
+        val raw = parseJsonObject(
+            """
+            {
+              "bioguideId": "H1",
+              "name": "Rep. Doe",
+              "partyName": "Democratic",
+              "state": "California",
+              "district": 5,
+              "terms": [{"chamber": "House of Representatives", "startYear": 2025, "endYear": 2027}]
+            }
+            """.trimIndent(),
+        )
+        assertEquals(2026, parseMemberSummary(raw).nextElectionYear)
+    }
+
+    @Test fun parse_member_summary_omits_next_election_year_when_ambiguous() {
+        val raw = parseJsonObject(
+            """{"bioguideId": "S1", "name": "Sen. Roe", "partyName": "Republican", "state": "Texas",
+                "terms": [{"chamber": "Senate", "startYear": 2023, "endYear": 2027}]}""",
+        )
+        assertNull(parseMemberSummary(raw).nextElectionYear)
+    }
+
     @Test fun parses_member_legislation_item_with_policy_object() {
         val raw = parseJsonObject(
             """

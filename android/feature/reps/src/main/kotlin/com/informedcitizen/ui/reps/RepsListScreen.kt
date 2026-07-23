@@ -140,6 +140,7 @@ internal fun RepsListContent(
                             onOpenContactForm = onOpenUrl,
                             onOpenWebsite = onOpenUrl,
                             onOpenSocial = onOpenUrl,
+                            upForElection = state.ballotBadges[m.bioguideId],
                         )
                     }
                 }
@@ -164,6 +165,7 @@ internal fun RepsListContent(
                             onOpenContactForm = onOpenUrl,
                             onOpenWebsite = onOpenUrl,
                             onOpenSocial = onOpenUrl,
+                            upForElection = state.ballotBadges[m.bioguideId],
                         )
                     }
                 }

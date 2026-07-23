@@ -190,3 +190,85 @@ def test_reconcile_fills_absent_outcome_from_passage_vote():
     ]}]
     assert _common.reconcile_vote_outcomes(bills) == 1
     assert bills[0]["outcome"] == _common.OUTCOME_PASSED_HOUSE
+
+
+# ---------- next_election_year_from_terms (#32) ----------------------------
+
+
+def _house_term(start, end):
+    return {"chamber": "House of Representatives", "startYear": start, "endYear": end}
+
+
+def _senate_term(start, end):
+    return {"chamber": "Senate", "startYear": start, "endYear": end}
+
+
+def test_next_election_year_house_is_end_minus_one():
+    # A House term is 2 years; the general is the even year before expiry.
+    terms = [_house_term(2023, 2025), _house_term(2025, 2027)]
+    assert _common.next_election_year_from_terms(terms, "house") == 2026
+
+
+def test_next_election_year_senate_is_end_minus_one():
+    # A Senate term is 6 years; endYear 2031 → general in 2030.
+    terms = [_senate_term(2025, 2031)]
+    assert _common.next_election_year_from_terms(terms, "senate") == 2030
+
+
+def test_next_election_year_coerces_string_years():
+    terms = [_senate_term("2019", "2025")]
+    assert _common.next_election_year_from_terms(terms, "senate") == 2024
+
+
+def test_next_election_year_omits_on_no_terms_or_unknown_chamber():
+    assert _common.next_election_year_from_terms(None, "house") is None
+    assert _common.next_election_year_from_terms([], "senate") is None
+    assert _common.next_election_year_from_terms([_house_term(2025, 2027)], "unknown") is None
+
+
+def test_next_election_year_omits_on_missing_year_fields():
+    assert _common.next_election_year_from_terms([{"chamber": "Senate"}], "senate") is None
+    assert _common.next_election_year_from_terms([_senate_term(2025, None)], "senate") is None
+
+
+def test_next_election_year_omits_appointed_senator_partial_term():
+    # An appointed senator filling a partial term shows a non-6-year span,
+    # so we omit rather than guess a wrong ballot year.
+    terms = [_senate_term(2023, 2027)]  # 4-year span, not 6
+    assert _common.next_election_year_from_terms(terms, "senate") is None
+
+
+def test_next_election_year_omits_special_election_house_partial_term():
+    terms = [_house_term(2024, 2027)]  # 3-year span, not 2
+    assert _common.next_election_year_from_terms(terms, "house") is None
+
+
+def test_next_election_year_omits_when_derived_year_is_odd():
+    # An even endYear would derive an odd (non-general) year — anomalous data.
+    terms = [_house_term(2024, 2026)]
+    assert _common.next_election_year_from_terms(terms, "house") is None
+
+
+def test_parse_member_summary_includes_next_election_year_for_house():
+    raw = {
+        "bioguideId": "H001234",
+        "directOrderName": "Rep. Doe, Jane",
+        "partyName": "Democratic",
+        "state": "California",
+        "district": 5,
+        "terms": [_house_term(2025, 2027)],
+    }
+    record = _common.parse_member_summary(raw)
+    assert record["next_election_year"] == 2026
+
+
+def test_parse_member_summary_omits_next_election_year_key_when_ambiguous():
+    raw = {
+        "bioguideId": "S009999",
+        "directOrderName": "Sen. Roe, Sam",
+        "partyName": "Republican",
+        "state": "Texas",
+        "terms": [_senate_term(2023, 2027)],  # appointed / partial term
+    }
+    record = _common.parse_member_summary(raw)
+    assert "next_election_year" not in record

@@ -8,6 +8,7 @@ import androidx.compose.ui.unit.dp
 import com.informedcitizen.pipeline.model.ElectionCalendar
 import com.informedcitizen.pipeline.model.ElectionEvent
 import com.informedcitizen.pipeline.model.ElectionType
+import com.informedcitizen.pipeline.model.Member
 import com.informedcitizen.ui.preview.PreviewWrap
 import com.informedcitizen.ui.preview.sampleSessionCalendar
 import java.time.LocalDate
@@ -32,9 +33,21 @@ private fun PreviewSessionCalendarSuccess() = PreviewWrap {
         onRetry = {},
         today = LocalDate.of(2026, 5, 8),
         electionCalendar = sampleElectionCalendar(),
+        savedReps = sampleSavedReps(),
         onOpenSource = {},
     )
 }
+
+private fun sampleSavedReps() = listOf(
+    Member(
+        bioguideId = "S000001",
+        name = "Jane Doe",
+        party = "D",
+        state = "NY",
+        chamber = "house",
+        nextElectionYear = 2026,
+    ),
+)
 
 private fun sampleElectionCalendar() = ElectionCalendar(
     generatedAt = "2026-05-05T12:00:00Z",

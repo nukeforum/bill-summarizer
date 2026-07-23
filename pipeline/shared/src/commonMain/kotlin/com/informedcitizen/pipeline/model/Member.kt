@@ -20,6 +20,12 @@ data class Member(
     @SerialName("contact_form") val contactForm: String? = null,
     @SerialName("website") val website: String? = null,
     val socials: List<SocialHandle> = emptyList(),
+    // The November general-election year this member next faces, derived from
+    // the current term's expiry (see the pipeline's next-election derivation).
+    // Optional and omitted when the term data is ambiguous or the member is
+    // known-appointed — correctness over coverage (#32). Lenient app-side
+    // parsing means this can ship data-first with no app release.
+    @SerialName("next_election_year") val nextElectionYear: Int? = null,
 )
 
 @Serializable

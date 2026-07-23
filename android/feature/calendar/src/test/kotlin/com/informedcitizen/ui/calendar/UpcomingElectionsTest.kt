@@ -3,6 +3,7 @@ package com.informedcitizen.ui.calendar
 import com.informedcitizen.pipeline.model.ElectionCalendar
 import com.informedcitizen.pipeline.model.ElectionEvent
 import com.informedcitizen.pipeline.model.ElectionType
+import com.informedcitizen.pipeline.model.Member
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
@@ -160,5 +161,163 @@ class UpcomingElectionsTest {
         val row = upcomingElections(cal, today, stateCode = "TX").single()
 
         assertEquals("TX Primary, Tue Mar 3, 2026, in 2 days", electionRowDescription(row, "Tue Mar 3, 2026"))
+    }
+
+    // -- "On your ballot" matcher (issue #33) --------------------------------
+
+    private fun member(nextElectionYear: Int?) = Member(
+        bioguideId = "X000001",
+        name = "Sherrod Moreno",
+        party = "R",
+        state = "OH",
+        chamber = "senate",
+        nextElectionYear = nextElectionYear,
+    )
+
+    private val generalCal = calendar(
+        event(ElectionEvent.NATIONWIDE, "2026-11-03", ElectionType.GENERAL),
+        event("TX", "2026-03-03", ElectionType.PRIMARY),
+    )
+
+    @Test
+    fun `ballotElectionFor matches next-election year to the upcoming general`() {
+        val match = ballotElectionFor(member(2026), generalCal, today)
+
+        assertEquals("2026-11-03", match?.event?.date)
+        assertEquals(ElectionType.GENERAL, match?.event?.type)
+        assertTrue(match!!.isNationwide)
+    }
+
+    @Test
+    fun `ballotElectionFor is null when member has no next-election year`() {
+        assertNull(ballotElectionFor(member(null), generalCal, today))
+    }
+
+    @Test
+    fun `ballotElectionFor is null when calendar is null`() {
+        assertNull(ballotElectionFor(member(2026), null, today))
+    }
+
+    @Test
+    fun `ballotElectionFor is null when calendar is empty`() {
+        assertNull(ballotElectionFor(member(2026), calendar(), today))
+    }
+
+    @Test
+    fun `ballotElectionFor is null when the year does not match`() {
+        assertNull(ballotElectionFor(member(2028), generalCal, today))
+    }
+
+    @Test
+    fun `ballotElectionFor is null when the general is in the past`() {
+        val afterElection = LocalDate.of(2026, 11, 4)
+        assertNull(ballotElectionFor(member(2026), generalCal, afterElection))
+    }
+
+    @Test
+    fun `ballotElectionFor ignores primaries in the matching year`() {
+        val primaryOnly = calendar(event("OH", "2026-05-05", ElectionType.PRIMARY))
+        assertNull(ballotElectionFor(member(2026), primaryOnly, today))
+    }
+
+    @Test
+    fun `ballotElectionFor picks the soonest matching general`() {
+        val twoGenerals = calendar(
+            event(ElectionEvent.NATIONWIDE, "2026-11-03", ElectionType.GENERAL),
+            event("OH", "2026-09-01", ElectionType.GENERAL),
+        )
+        val match = ballotElectionFor(member(2026), twoGenerals, today)
+        assertEquals("2026-09-01", match?.event?.date)
+    }
+
+    @Test
+    fun `upForElectionBadgeText and description read from the matched date`() {
+        val match = ballotElectionFor(member(2026), generalCal, today)!!
+
+        assertEquals("Up for election · Nov 3, 2026", upForElectionBadgeText(match))
+        assertEquals("up for election November 3, 2026", ballotBadgeDescription(match))
+    }
+
+    // -- "On your ballot" saved-reps section (issue #33, slice 3) ------------
+
+    private fun namedMember(bioguideId: String, name: String, nextElectionYear: Int?) = Member(
+        bioguideId = bioguideId,
+        name = name,
+        party = "D",
+        state = "OH",
+        chamber = "senate",
+        nextElectionYear = nextElectionYear,
+    )
+
+    @Test
+    fun `savedRepsOnBallot keeps only members with a dated upcoming general`() {
+        val onBallot = namedMember("A000001", "Ada Onballot", 2026)
+        val offCycle = namedMember("B000002", "Ben Offcycle", 2028)
+        val noYear = namedMember("C000003", "Cy Noyear", null)
+
+        val result = savedRepsOnBallot(listOf(onBallot, offCycle, noYear), generalCal, today)
+
+        assertEquals(listOf("A000001"), result.map { it.member.bioguideId })
+        assertEquals("2026-11-03", result.single().election.event.date)
+    }
+
+    @Test
+    fun `savedRepsOnBallot sorts by soonest election then member name`() {
+        val cal = calendar(
+            event(ElectionEvent.NATIONWIDE, "2026-11-03", ElectionType.GENERAL, year = 2026),
+            event(ElectionEvent.NATIONWIDE, "2028-11-07", ElectionType.GENERAL, year = 2028),
+        )
+        val later = namedMember("A000001", "Aaron Later", 2028)
+        val soonerZ = namedMember("Z000009", "Zoe Sooner", 2026)
+        val soonerA = namedMember("A000002", "Amy Sooner", 2026)
+
+        val result = savedRepsOnBallot(listOf(later, soonerZ, soonerA), cal, today)
+
+        assertEquals(listOf("Amy Sooner", "Zoe Sooner", "Aaron Later"), result.map { it.member.name })
+    }
+
+    @Test
+    fun `savedRepsOnBallot is empty when the calendar is null`() {
+        val onBallot = namedMember("A000001", "Ada Onballot", 2026)
+        assertTrue(savedRepsOnBallot(listOf(onBallot), null, today).isEmpty())
+    }
+
+    @Test
+    fun `savedRepsOnBallot is empty for no members`() {
+        assertTrue(savedRepsOnBallot(emptyList(), generalCal, today).isEmpty())
+    }
+
+    @Test
+    fun `ballotRepSubtitle names the chamber with party and state`() {
+        val senator = Member(
+            bioguideId = "S000001", name = "Sam Senator",
+            party = "R", state = "TX", chamber = "senate",
+        )
+        val rep = Member(
+            bioguideId = "H000001", name = "Rep Person",
+            party = "D", state = "NY", chamber = "house",
+        )
+        assertEquals("Senator · R-TX", ballotRepSubtitle(senator))
+        assertEquals("Representative · D-NY", ballotRepSubtitle(rep))
+    }
+
+    @Test
+    fun `ballotRepSubtitle drops blank party or state fragments`() {
+        val member = Member(
+            bioguideId = "X000001", name = "No Party",
+            party = "", state = "", chamber = "senate",
+        )
+        assertEquals("Senator", ballotRepSubtitle(member))
+    }
+
+    @Test
+    fun `ballotRepRowDescription merges name, role, ballot claim, and countdown`() {
+        val onBallot = namedMember("A000001", "Ada Onballot", 2026)
+        val ballotRep = savedRepsOnBallot(listOf(onBallot), generalCal, today).single()
+
+        assertEquals(
+            "Ada Onballot, Senator · D-OH, up for election Nov 3 2026, ${ballotRep.election.countdownText}",
+            ballotRepRowDescription(ballotRep, "Nov 3 2026"),
+        )
     }
 }

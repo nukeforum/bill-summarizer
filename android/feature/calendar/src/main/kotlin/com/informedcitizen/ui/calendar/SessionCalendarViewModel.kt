@@ -2,13 +2,18 @@ package com.informedcitizen.ui.calendar
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.informedcitizen.data.repository.BallotRepsSource
 import com.informedcitizen.data.repository.ElectionCalendarRepository
 import com.informedcitizen.data.repository.SessionCalendarRepository
 import com.informedcitizen.pipeline.model.ElectionCalendar
+import com.informedcitizen.pipeline.model.Member
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.catch
+import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -16,6 +21,7 @@ import javax.inject.Inject
 class SessionCalendarViewModel @Inject constructor(
     private val repository: SessionCalendarRepository,
     private val electionRepository: ElectionCalendarRepository,
+    ballotReps: BallotRepsSource,
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow<SessionCalendarUiState>(SessionCalendarUiState.Loading)
@@ -29,6 +35,17 @@ class SessionCalendarViewModel @Inject constructor(
      */
     private val _electionCalendar = MutableStateFlow<ElectionCalendar?>(null)
     val electionCalendar: StateFlow<ElectionCalendar?> = _electionCalendar.asStateFlow()
+
+    /**
+     * The user's saved representatives (issue #33), used together with
+     * [electionCalendar] to render the "On your ballot" section. Best-effort:
+     * a member-lookup failure collapses to an empty list so the section just
+     * hides rather than erroring the calendar screen.
+     */
+    val savedReps: StateFlow<List<Member>> =
+        ballotReps.savedReps
+            .catch { emit(emptyList()) }
+            .stateIn(viewModelScope, SharingStarted.Eagerly, emptyList())
 
     init {
         load(forceRefresh = false)

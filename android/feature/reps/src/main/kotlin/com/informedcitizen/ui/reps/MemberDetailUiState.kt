@@ -12,6 +12,8 @@ data class MemberDetailUiState(
     val cosponsored: List<MemberLegislationItem> = emptyList(),
     /** Recent recorded roll-call positions, newest first (issue #22). */
     val recentVotes: List<MemberVoteRow> = emptyList(),
+    /** "Up for election · Nov 3, 2026" badge (issue #33); null hides it. */
+    val ballotBadge: String? = null,
     val errorMessage: String? = null,
     val searchQuery: String = "",
 ) {
