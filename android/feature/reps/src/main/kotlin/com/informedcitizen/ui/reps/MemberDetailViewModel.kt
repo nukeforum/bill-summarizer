@@ -3,7 +3,9 @@ package com.informedcitizen.ui.reps
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.informedcitizen.data.repository.BillRepository
+import com.informedcitizen.data.repository.ElectionCalendarRepository
 import com.informedcitizen.data.repository.MemberRepository
+import com.informedcitizen.ui.calendar.upForElectionBadge
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -17,7 +19,10 @@ import javax.inject.Inject
 class MemberDetailViewModel @Inject constructor(
     private val members: MemberRepository,
     private val bills: BillRepository,
+    private val electionCalendar: ElectionCalendarRepository,
 ) : ViewModel() {
+
+    internal var todayProvider: () -> LocalDate = { LocalDate.now() }
 
     private val _uiState = MutableStateFlow(MemberDetailUiState())
     val uiState: StateFlow<MemberDetailUiState> = _uiState.asStateFlow()
@@ -42,6 +47,13 @@ class MemberDetailViewModel @Inject constructor(
                 val sponsored = members.getSponsored(bioguideId)
                 val cosponsored = members.getCosponsored(bioguideId)
                 val votes = members.getVotes(bioguideId)
+                // Best-effort ballot badge (issue #33): a missing/failed
+                // election calendar or an unmatched member yields no badge;
+                // it must never fail the member page.
+                val ballotBadge = member?.let {
+                    val calendar = electionCalendar.getCalendar().getOrNull()
+                    upForElectionBadge(it, calendar, todayProvider())
+                }
                 _uiState.update {
                     it.copy(
                         isLoading = false,
@@ -49,6 +61,7 @@ class MemberDetailViewModel @Inject constructor(
                         sponsored = sponsored?.bills.orEmpty(),
                         cosponsored = cosponsored?.bills.orEmpty(),
                         recentVotes = votes?.votes?.take(RECENT_VOTES_CAP).orEmpty(),
+                        ballotBadge = ballotBadge,
                         errorMessage = null,
                     )
                 }

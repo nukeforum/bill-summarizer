@@ -41,6 +41,8 @@ private fun PreviewRepsListLoadedFull() = PreviewWrap {
         state = RepsListUiState.Loaded(
             senators = listOf(sampleSenatorD, sampleSenatorR),
             house = listOf(sampleRepresentative),
+            // The House rep is up for election — shows the issue #33 badge.
+            ballotBadges = mapOf(sampleRepresentative.bioguideId to "Up for election · Nov 3, 2026"),
         ),
         onMemberClick = {},
         onChangeLocation = {},

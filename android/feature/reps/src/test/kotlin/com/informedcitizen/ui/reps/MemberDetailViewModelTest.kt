@@ -16,13 +16,18 @@ import com.informedcitizen.pipeline.model.MembersIndex
 import com.informedcitizen.pipeline.model.Outcome
 import com.informedcitizen.pipeline.model.VotePosition
 import com.informedcitizen.pipeline.model.ElectionCalendar
+import com.informedcitizen.pipeline.model.ElectionEvent
+import com.informedcitizen.pipeline.model.ElectionType
 import com.informedcitizen.pipeline.model.SessionCalendar
 import com.informedcitizen.pipeline.model.Sponsor
 import com.informedcitizen.data.repository.BillRepository
+import com.informedcitizen.data.repository.ElectionCalendarRepository
 import com.informedcitizen.data.repository.MemberRepository
 import com.informedcitizen.data.repository.RepsForLocation
 import com.informedcitizen.testutil.FakeBillCache
+import com.informedcitizen.testutil.FakeElectionCalendarCache
 import com.informedcitizen.testutil.InMemoryPreferencesDataStore
+import java.time.LocalDate
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.first
@@ -39,7 +44,10 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 
-private class StubBillsApi(private val bills: List<Bill>) : BillsApi {
+private class StubBillsApi(
+    private val bills: List<Bill>,
+    private val election: ElectionCalendar? = null,
+) : BillsApi {
     override suspend fun getCongressesIndex(): CongressesIndex = CongressesIndex(
         currentCongress = 119,
         congresses = listOf(CongressEntry(congress = 119, manifestPath = "congress119_bills.json", isCurrent = true)),
@@ -47,8 +55,11 @@ private class StubBillsApi(private val bills: List<Bill>) : BillsApi {
     override suspend fun getBillsManifest(url: String): BillsManifest =
         BillsManifest(generatedAt = "x", congress = 119, bills = bills)
     override suspend fun getSessionCalendar(): SessionCalendar = error("not used")
-    override suspend fun getElectionCalendar(): ElectionCalendar = error("not used")
+    override suspend fun getElectionCalendar(): ElectionCalendar = election ?: error("no calendar")
 }
+
+private fun electionRepo(election: ElectionCalendar? = null) =
+    ElectionCalendarRepository(StubBillsApi(emptyList(), election), FakeCrashReporter(), FakeElectionCalendarCache())
 
 private class DetailStubMemberRepository(
     private val memberById: Map<String, Member?> = emptyMap(),
@@ -138,7 +149,7 @@ class MemberDetailViewModelTest {
             cosponsoredById = mapOf("A1" to MemberLegislation("A1", 119, "cosponsored", "x", listOf(anItem("hr2-119"), anItem("hr3-119")))),
         )
         val bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
-        val vm = MemberDetailViewModel(members, bills).also { it.congressProvider = { 119 } }
+        val vm = MemberDetailViewModel(members, bills, electionRepo()).also { it.congressProvider = { 119 } }
         vm.load("A1")
         val s = vm.uiState.first { !it.isLoading }
         assertNotNull(s.member)
@@ -155,7 +166,7 @@ class MemberDetailViewModelTest {
             cosponsoredById = mapOf("A1" to null),
         )
         val bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
-        val vm = MemberDetailViewModel(members, bills).also { it.congressProvider = { 119 } }
+        val vm = MemberDetailViewModel(members, bills, electionRepo()).also { it.congressProvider = { 119 } }
         vm.load("A1")
         val s = vm.uiState.first { !it.isLoading }
         assertNotNull(s.member)
@@ -185,7 +196,7 @@ class MemberDetailViewModelTest {
             ),
         )
         val bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
-        val vm = MemberDetailViewModel(members, bills).also { it.congressProvider = { 119 } }
+        val vm = MemberDetailViewModel(members, bills, electionRepo()).also { it.congressProvider = { 119 } }
         vm.load("A1")
         vm.uiState.first { !it.isLoading }
 
@@ -214,7 +225,7 @@ class MemberDetailViewModelTest {
             ),
         )
         val bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
-        val vm = MemberDetailViewModel(members, bills).also { it.congressProvider = { 119 } }
+        val vm = MemberDetailViewModel(members, bills, electionRepo()).also { it.congressProvider = { 119 } }
         vm.load("A1")
         val s = vm.uiState.first { !it.isLoading }
         assertEquals(listOf("v2", "v1"), s.recentVotes.map { it.voteId })
@@ -228,7 +239,7 @@ class MemberDetailViewModelTest {
             votesById = mapOf("A1" to MemberVotes("x", "A1", rows.size, rows)),
         )
         val bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
-        val vm = MemberDetailViewModel(members, bills).also { it.congressProvider = { 119 } }
+        val vm = MemberDetailViewModel(members, bills, electionRepo()).also { it.congressProvider = { 119 } }
         vm.load("A1")
         val s = vm.uiState.first { !it.isLoading }
         assertEquals(25, s.recentVotes.size)
@@ -242,7 +253,7 @@ class MemberDetailViewModelTest {
             votesById = mapOf("A1" to null),
         )
         val bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
-        val vm = MemberDetailViewModel(members, bills).also { it.congressProvider = { 119 } }
+        val vm = MemberDetailViewModel(members, bills, electionRepo()).also { it.congressProvider = { 119 } }
         vm.load("A1")
         val s = vm.uiState.first { !it.isLoading }
         assertTrue(s.recentVotes.isEmpty())
@@ -264,10 +275,41 @@ class MemberDetailViewModelTest {
         val getResult = bills.getBills(forceRefresh = true)
         assertTrue(getResult.isSuccess)
 
-        val vm = MemberDetailViewModel(members, bills).also { it.congressProvider = { 119 } }
+        val vm = MemberDetailViewModel(members, bills, electionRepo()).also { it.congressProvider = { 119 } }
         vm.load("A1")
         vm.uiState.first { !it.isLoading }
         assertTrue(vm.isInLocalCache("hr1-119"))
         assertFalse(vm.isInLocalCache("hr999-119"))
+    }
+
+    @Test
+    fun `load fills the up-for-election badge when the member faces an upcoming general`() = runTest {
+        val onBallot = Member("A1", "Name A1", "D", "TX", 21, "house", null, null, 1, 1, null, null, nextElectionYear = 2026)
+        val members = DetailStubMemberRepository(memberById = mapOf("A1" to onBallot))
+        val bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
+        val calendar = ElectionCalendar(
+            generatedAt = "2026-01-01T00:00:00Z",
+            source = "test",
+            elections = listOf(ElectionEvent(ElectionEvent.NATIONWIDE, "2026-11-03", ElectionType.GENERAL, 2026)),
+        )
+        val vm = MemberDetailViewModel(members, bills, electionRepo(calendar)).also {
+            it.congressProvider = { 119 }
+            it.todayProvider = { LocalDate.of(2026, 6, 1) }
+        }
+        vm.load("A1")
+        val s = vm.uiState.first { !it.isLoading }
+        assertEquals("Up for election · Nov 3, 2026", s.ballotBadge)
+    }
+
+    @Test
+    fun `load leaves the ballot badge null when the election calendar is unavailable`() = runTest {
+        val onBallot = Member("A1", "Name A1", "D", "TX", 21, "house", null, null, 1, 1, null, null, nextElectionYear = 2026)
+        val members = DetailStubMemberRepository(memberById = mapOf("A1" to onBallot))
+        val bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
+        // electionRepo(null) → getElectionCalendar errors → null calendar → no badge.
+        val vm = MemberDetailViewModel(members, bills, electionRepo(null)).also { it.congressProvider = { 119 } }
+        vm.load("A1")
+        val s = vm.uiState.first { !it.isLoading }
+        assertNull(s.ballotBadge)
     }
 }

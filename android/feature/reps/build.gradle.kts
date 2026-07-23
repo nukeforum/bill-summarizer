@@ -19,6 +19,11 @@ dependencies {
     // legislation rows.
     implementation(project(":feature:bills"))
 
+    // The reps VMs read the election calendar (ElectionCalendarRepository)
+    // and the shared "on your ballot" matcher (upForElectionBadge) to flag
+    // saved reps facing their next general election (issue #33).
+    implementation(project(":feature:calendar"))
+
     implementation(libs.kotlinx.serialization.json)
 
     testImplementation(project(":core:testing"))

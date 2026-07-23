@@ -144,6 +144,19 @@ internal fun ballotElectionFor(
         .minByOrNull { it.date }
 }
 
+/**
+ * The visible "on your ballot" badge string for [member], or null when the
+ * member has no dated upcoming general on record. This is the single public
+ * seam feature:reps consumes: it bundles [ballotElectionFor] (the match) with
+ * [upForElectionBadgeText] (the string) so callers never see a fabricated
+ * date and never need the internal matcher. Null means "render no badge".
+ */
+fun upForElectionBadge(
+    member: Member,
+    calendar: ElectionCalendar?,
+    today: LocalDate = LocalDate.now(),
+): String? = ballotElectionFor(member, calendar, today)?.let(::upForElectionBadgeText)
+
 private val BALLOT_BADGE_DATE_FORMAT = DateTimeFormatter.ofPattern("MMM d, yyyy", Locale.US)
 private val BALLOT_BADGE_A11Y_FORMAT = DateTimeFormatter.ofPattern("MMMM d, yyyy", Locale.US)
 
