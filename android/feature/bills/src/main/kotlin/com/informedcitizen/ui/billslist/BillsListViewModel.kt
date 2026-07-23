@@ -156,16 +156,21 @@ class BillsListViewModel @Inject constructor(
         // A stale selection (e.g. the subject vanished on refresh) deselects
         // rather than pinning the list to an invisible empty filter.
         val activePolicyArea = policyArea?.takeIf { it in availablePolicyAreas }
-        val baseList = allBills
-            .filter(currentFilter::matches)
-            .filter { activePolicyArea == null || it.policyArea == activePolicyArea }
-            .filter { it.matchesSearchQuery(query) }
         val activeTopic = if (aiEnabled) topic else null
-        val (filteredBills, hidden) = if (activeTopic != null) {
-            val passing = baseList.filter { visibleSummaries[it.id]?.topic == activeTopic }
-            passing to (baseList.size - passing.size)
+        // policyArea filters here (it becomes a SQL predicate under #41 paging);
+        // the remaining three narrow via the shared billMatchesListFilters seam.
+        val policyFiltered = allBills
+            .filter { activePolicyArea == null || it.policyArea == activePolicyArea }
+        val filteredBills = policyFiltered.filter {
+            billMatchesListFilters(it, currentFilter, query, activeTopic, visibleSummaries)
+        }
+        // Bills passing every filter except the topic are counted as hidden so
+        // the "N bills hidden — not yet summarized" nudge stays honest.
+        val hidden = if (activeTopic != null) {
+            policyFiltered.count { currentFilter.matches(it) && it.matchesSearchQuery(query) } -
+                filteredBills.size
         } else {
-            baseList to 0
+            0
         }
 
         return BillsListUiState.Success(
