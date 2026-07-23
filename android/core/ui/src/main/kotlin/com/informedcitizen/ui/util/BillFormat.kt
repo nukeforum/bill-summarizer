@@ -31,4 +31,5 @@ fun Outcome.displayName(): String = when (this) {
     Outcome.ENACTED -> "Enacted"
     Outcome.VETOED -> "Vetoed"
     Outcome.FAILED -> "Failed"
+    Outcome.UNKNOWN -> "Unknown"
 }

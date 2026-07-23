@@ -14,7 +14,9 @@ data class Bill(
     val sponsor: Sponsor,
     @SerialName("introduced_date") val introducedDate: String,
     @SerialName("latest_action") val latestAction: Action,
-    val outcome: Outcome,
+    // Defaulted so the lenient wire config's coerceInputValues can map an
+    // unrecognised outcome string to Outcome.UNKNOWN instead of crashing.
+    val outcome: Outcome = Outcome.UNKNOWN,
     @SerialName("policy_area") val policyArea: String? = null,
     @SerialName("summary_crs") val summaryCrs: String? = null,
     @SerialName("text_url_html") val textUrlHtml: String? = null,
