@@ -59,6 +59,92 @@ fun outcomeFromWireString(value: String): Outcome? =
         else -> null
     }
 
+// ---------- pre-floor lifecycle classification (backlog #39) ---------------
+//
+// The vast majority of bills never reach a floor vote — they are introduced,
+// referred to committee, and often reported out — but [classifyOutcome] only
+// recognizes the 5 *terminal* outcomes, so pre-floor bills historically got
+// dropped as `no_outcome_match`. These lifecycle statuses let those bills carry
+// a real, derived status instead of being silently dropped. Precedence: a
+// terminal floor outcome ALWAYS wins over a lifecycle status (see
+// [classifyBillStatus]). Mirrors Python `_common`'s `classify_lifecycle_status`
+// / `classify_bill_status` field-for-field for pipeline parity.
+
+const val LIFECYCLE_INTRODUCED: String = "introduced"
+const val LIFECYCLE_IN_COMMITTEE: String = "in_committee"
+const val LIFECYCLE_REPORTED: String = "reported"
+
+// Ordered most-advanced-first so a bill's latest action maps to the furthest
+// stage it has reached: reported (out of committee, floor-ready) beats
+// in_committee (referred) beats introduced. Matched case-insensitively as
+// substrings over the latest-action text, mirroring [OUTCOME_RULES].
+private val LIFECYCLE_RULES: List<Pair<String, List<String>>> = listOf(
+    LIFECYCLE_REPORTED to listOf(
+        "reported by",
+        "reported (",
+        "reported to the house",
+        "reported to the senate",
+        "reported original measure",
+        "reported, without amendment",
+        "reported with amendment",
+        "ordered to be reported",
+        "placed on the union calendar",
+        "placed on the house calendar",
+        "placed on the senate legislative calendar",
+        "placed on senate legislative calendar",
+    ),
+    LIFECYCLE_IN_COMMITTEE to listOf(
+        "referred to the committee",
+        "referred to the subcommittee",
+        "referred to the house committee",
+        "referred to the senate committee",
+        "committee consideration and mark-up",
+        "committee hearings held",
+        "hearings held",
+        "sponsor introductory remarks",
+    ),
+    LIFECYCLE_INTRODUCED to listOf(
+        "introduced in house",
+        "introduced in senate",
+        "introduced in the house",
+        "introduced in the senate",
+    ),
+)
+
+/**
+ * The pre-floor lifecycle status implied by a bill's latest-action text, or
+ * null when no rule matches.
+ *
+ * Deliberately narrow and additive: this only recognizes the pre-floor stages
+ * (introduced / in_committee / reported). Terminal floor outcomes are
+ * [classifyOutcome]'s job and take precedence — see [classifyBillStatus].
+ */
+fun classifyLifecycleStatus(actionText: String): String? {
+    val needle = actionText.lowercase()
+    for ((status, patterns) in LIFECYCLE_RULES) {
+        if (patterns.any { it in needle }) return status
+    }
+    return null
+}
+
+/**
+ * Classify a bill's status from its latest-action text as `(status, isOutcome)`.
+ *
+ * Precedence, defined once here (backlog #39): a terminal floor outcome always
+ * wins over a pre-floor lifecycle status. [BillStatus.isOutcome] is true when
+ * the status is one of the terminal [OUTCOME_RULES] values, false for a
+ * lifecycle status. Returns `BillStatus(null, false)` when neither matches.
+ */
+data class BillStatus(val status: String?, val isOutcome: Boolean)
+
+fun classifyBillStatus(actionText: String): BillStatus {
+    val outcome = classifyOutcome(actionText)
+    if (outcome != null) return BillStatus(outcome, isOutcome = true)
+    val lifecycle = classifyLifecycleStatus(actionText)
+    if (lifecycle != null) return BillStatus(lifecycle, isOutcome = false)
+    return BillStatus(null, isOutcome = false)
+}
+
 // ---------- outcome from roll-call votes (backlog #30) --------------------
 
 /**
