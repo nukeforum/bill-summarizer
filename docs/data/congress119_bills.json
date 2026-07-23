@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T01:41:40Z",
+  "generated_at": "2026-07-23T01:43:32Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
@@ -181,7 +181,143 @@
       "text_url_xml": "https://www.congress.gov/119/bills/hr6644/BILLS-119hr6644eas2.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/hr6644/BILLS-119hr6644eas2.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/6644",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-2-53",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 53,
+          "date": "2026-03-12",
+          "question": "On Passage of the Bill",
+          "result": "Bill Passed",
+          "bill_id": "hr6644-119",
+          "totals": {
+            "yea": 89,
+            "nay": 10,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "D": 44,
+              "I": 2,
+              "R": 43
+            },
+            "nay": {
+              "D": 1,
+              "R": 9
+            },
+            "not_voting": {
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-2-53.json"
+        },
+        {
+          "id": "senate-119-2-52",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 52,
+          "date": "2026-03-11",
+          "question": "On the Cloture Motion",
+          "result": "Cloture Motion Agreed to",
+          "bill_id": "hr6644-119",
+          "totals": {
+            "yea": 82,
+            "nay": 11,
+            "present": 1,
+            "not_voting": 6
+          },
+          "party_split": {
+            "yea": {
+              "D": 41,
+              "I": 2,
+              "R": 39
+            },
+            "nay": {
+              "D": 1,
+              "R": 10
+            },
+            "present": {
+              "D": 1
+            },
+            "not_voting": {
+              "D": 2,
+              "R": 4
+            }
+          },
+          "path": "votes/congress119/senate-2-52.json"
+        },
+        {
+          "id": "senate-119-2-45",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 45,
+          "date": "2026-03-04",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Agreed to",
+          "bill_id": "hr6644-119",
+          "totals": {
+            "yea": 90,
+            "nay": 8,
+            "present": 1,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "D": 42,
+              "I": 2,
+              "R": 46
+            },
+            "nay": {
+              "D": 2,
+              "R": 6
+            },
+            "present": {
+              "D": 1
+            },
+            "not_voting": {
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-2-45.json"
+        },
+        {
+          "id": "senate-119-2-44",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 44,
+          "date": "2026-03-02",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Agreed to",
+          "bill_id": "hr6644-119",
+          "totals": {
+            "yea": 84,
+            "nay": 6,
+            "present": 1,
+            "not_voting": 9
+          },
+          "party_split": {
+            "yea": {
+              "D": 38,
+              "I": 2,
+              "R": 44
+            },
+            "nay": {
+              "D": 2,
+              "R": 4
+            },
+            "present": {
+              "D": 1
+            },
+            "not_voting": {
+              "D": 4,
+              "R": 5
+            }
+          },
+          "path": "votes/congress119/senate-2-44.json"
+        }
+      ]
     },
     {
       "id": "s1003-119",
@@ -1937,7 +2073,220 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ86/PLAW-119publ86_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ86/PLAW-119publ86.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/7147",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-2-74",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 74,
+          "date": "2026-03-26",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Rejected",
+          "bill_id": "hr7147-119",
+          "totals": {
+            "yea": 53,
+            "nay": 47,
+            "present": 0,
+            "not_voting": 0
+          },
+          "party_split": {
+            "yea": {
+              "D": 1,
+              "R": 52
+            },
+            "nay": {
+              "D": 44,
+              "I": 2,
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-2-74.json"
+        },
+        {
+          "id": "senate-119-2-71",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 71,
+          "date": "2026-03-25",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Rejected",
+          "bill_id": "hr7147-119",
+          "totals": {
+            "yea": 54,
+            "nay": 46,
+            "present": 0,
+            "not_voting": 0
+          },
+          "party_split": {
+            "yea": {
+              "D": 1,
+              "R": 53
+            },
+            "nay": {
+              "D": 44,
+              "I": 2
+            }
+          },
+          "path": "votes/congress119/senate-2-71.json"
+        },
+        {
+          "id": "senate-119-2-59",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 59,
+          "date": "2026-03-20",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Rejected",
+          "bill_id": "hr7147-119",
+          "totals": {
+            "yea": 47,
+            "nay": 37,
+            "present": 0,
+            "not_voting": 16
+          },
+          "party_split": {
+            "yea": {
+              "D": 1,
+              "R": 46
+            },
+            "nay": {
+              "D": 35,
+              "I": 2
+            },
+            "not_voting": {
+              "D": 9,
+              "R": 7
+            }
+          },
+          "path": "votes/congress119/senate-2-59.json"
+        },
+        {
+          "id": "senate-119-2-54",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 54,
+          "date": "2026-03-12",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Rejected",
+          "bill_id": "hr7147-119",
+          "totals": {
+            "yea": 51,
+            "nay": 46,
+            "present": 0,
+            "not_voting": 3
+          },
+          "party_split": {
+            "yea": {
+              "D": 1,
+              "R": 50
+            },
+            "nay": {
+              "D": 43,
+              "I": 2,
+              "R": 1
+            },
+            "not_voting": {
+              "D": 1,
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-2-54.json"
+        },
+        {
+          "id": "senate-119-2-47",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 47,
+          "date": "2026-03-05",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Rejected",
+          "bill_id": "hr7147-119",
+          "totals": {
+            "yea": 51,
+            "nay": 45,
+            "present": 0,
+            "not_voting": 4
+          },
+          "party_split": {
+            "yea": {
+              "D": 1,
+              "R": 50
+            },
+            "nay": {
+              "D": 43,
+              "I": 2
+            },
+            "not_voting": {
+              "D": 1,
+              "R": 3
+            }
+          },
+          "path": "votes/congress119/senate-2-47.json"
+        },
+        {
+          "id": "senate-119-2-39",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 39,
+          "date": "2026-02-24",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Rejected",
+          "bill_id": "hr7147-119",
+          "totals": {
+            "yea": 50,
+            "nay": 45,
+            "present": 0,
+            "not_voting": 5
+          },
+          "party_split": {
+            "yea": {
+              "D": 1,
+              "R": 49
+            },
+            "nay": {
+              "D": 42,
+              "I": 2,
+              "R": 1
+            },
+            "not_voting": {
+              "D": 2,
+              "R": 3
+            }
+          },
+          "path": "votes/congress119/senate-2-39.json"
+        },
+        {
+          "id": "senate-119-2-38",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 38,
+          "date": "2026-02-12",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Rejected",
+          "bill_id": "hr7147-119",
+          "totals": {
+            "yea": 52,
+            "nay": 47,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "D": 1,
+              "R": 51
+            },
+            "nay": {
+              "D": 44,
+              "I": 2,
+              "R": 1
+            },
+            "not_voting": {
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-2-38.json"
+        }
+      ]
     },
     {
       "id": "s4465-119",
@@ -2137,7 +2486,95 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ85/PLAW-119publ85_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ85/PLAW-119publ85.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/140",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-2-84",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 84,
+          "date": "2026-04-16",
+          "question": "On the Joint Resolution",
+          "result": "Joint Resolution Passed",
+          "bill_id": "hjres140-119",
+          "totals": {
+            "yea": 50,
+            "nay": 49,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "R": 50
+            },
+            "nay": {
+              "D": 45,
+              "I": 2,
+              "R": 2
+            },
+            "not_voting": {
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-2-84.json"
+        },
+        {
+          "id": "senate-119-2-83",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 83,
+          "date": "2026-04-15",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Agreed to",
+          "bill_id": "hjres140-119",
+          "totals": {
+            "yea": 51,
+            "nay": 49,
+            "present": 0,
+            "not_voting": 0
+          },
+          "party_split": {
+            "yea": {
+              "R": 51
+            },
+            "nay": {
+              "D": 45,
+              "I": 2,
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-2-83.json"
+        },
+        {
+          "id": "senate-119-2-82",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 82,
+          "date": "2026-04-15",
+          "question": "On the Motion to Table",
+          "result": "Motion to Table Agreed to",
+          "bill_id": "hjres140-119",
+          "totals": {
+            "yea": 51,
+            "nay": 48,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "R": 51
+            },
+            "nay": {
+              "D": 45,
+              "I": 2,
+              "R": 1
+            },
+            "not_voting": {
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-2-82.json"
+        }
+      ]
     },
     {
       "id": "sjres114-119",
@@ -2162,7 +2599,40 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres114/BILLS-119sjres114is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres114/BILLS-119sjres114is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/114",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-2-88",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 88,
+          "date": "2026-04-22",
+          "question": "On the Motion to Discharge",
+          "result": "Motion to Discharge Rejected",
+          "bill_id": "sjres114-119",
+          "totals": {
+            "yea": 46,
+            "nay": 51,
+            "present": 0,
+            "not_voting": 3
+          },
+          "party_split": {
+            "yea": {
+              "D": 43,
+              "I": 2,
+              "R": 1
+            },
+            "nay": {
+              "D": 1,
+              "R": 50
+            },
+            "not_voting": {
+              "D": 1,
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-2-88.json"
+        }
+      ]
     },
     {
       "id": "hr8322-119",
@@ -2212,7 +2682,39 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres123/BILLS-119sjres123is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres123/BILLS-119sjres123is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/123",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-2-79",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 79,
+          "date": "2026-04-15",
+          "question": "On the Motion to Discharge",
+          "result": "Motion to Discharge Rejected",
+          "bill_id": "sjres123-119",
+          "totals": {
+            "yea": 47,
+            "nay": 52,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "D": 44,
+              "I": 2,
+              "R": 1
+            },
+            "nay": {
+              "D": 1,
+              "R": 51
+            },
+            "not_voting": {
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-2-79.json"
+        }
+      ]
     },
     {
       "id": "sjres138-119",
@@ -2237,7 +2739,38 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres138/BILLS-119sjres138is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres138/BILLS-119sjres138is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/138",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-2-81",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 81,
+          "date": "2026-04-15",
+          "question": "On the Motion to Discharge",
+          "result": "Motion to Discharge Rejected",
+          "bill_id": "sjres138-119",
+          "totals": {
+            "yea": 36,
+            "nay": 63,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "D": 34,
+              "I": 2
+            },
+            "nay": {
+              "D": 11,
+              "R": 52
+            },
+            "not_voting": {
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-2-81.json"
+        }
+      ]
     },
     {
       "id": "sjres32-119",
@@ -2262,7 +2795,38 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres32/BILLS-119sjres32is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres32/BILLS-119sjres32is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/32",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-2-80",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 80,
+          "date": "2026-04-15",
+          "question": "On the Motion to Discharge",
+          "result": "Motion to Discharge Rejected",
+          "bill_id": "sjres32-119",
+          "totals": {
+            "yea": 40,
+            "nay": 59,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "D": 38,
+              "I": 2
+            },
+            "nay": {
+              "D": 7,
+              "R": 52
+            },
+            "not_voting": {
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-2-80.json"
+        }
+      ]
     },
     {
       "id": "sres627-119",
@@ -2412,7 +2976,39 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres103/BILLS-119sjres103pcs.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres103/BILLS-119sjres103pcs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/103",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-2-72",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 72,
+          "date": "2026-03-25",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Rejected",
+          "bill_id": "sjres103-119",
+          "totals": {
+            "yea": 48,
+            "nay": 50,
+            "present": 0,
+            "not_voting": 2
+          },
+          "party_split": {
+            "yea": {
+              "D": 44,
+              "I": 2,
+              "R": 2
+            },
+            "nay": {
+              "R": 50
+            },
+            "not_voting": {
+              "D": 1,
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-2-72.json"
+        }
+      ]
     },
     {
       "id": "sjres107-119",
@@ -2437,7 +3033,34 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres107/BILLS-119sjres107pcs.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres107/BILLS-119sjres107pcs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/107",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-2-70",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 70,
+          "date": "2026-03-25",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Rejected",
+          "bill_id": "sjres107-119",
+          "totals": {
+            "yea": 47,
+            "nay": 53,
+            "present": 0,
+            "not_voting": 0
+          },
+          "party_split": {
+            "yea": {
+              "D": 45,
+              "I": 2
+            },
+            "nay": {
+              "R": 53
+            }
+          },
+          "path": "votes/congress119/senate-2-70.json"
+        }
+      ]
     },
     {
       "id": "sres648-119",
@@ -2487,7 +3110,36 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres116/BILLS-119sjres116is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres116/BILLS-119sjres116is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/116",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-2-69",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 69,
+          "date": "2026-03-24",
+          "question": "On the Motion to Discharge",
+          "result": "Motion to Discharge Rejected",
+          "bill_id": "sjres116-119",
+          "totals": {
+            "yea": 47,
+            "nay": 53,
+            "present": 0,
+            "not_voting": 0
+          },
+          "party_split": {
+            "yea": {
+              "D": 44,
+              "I": 2,
+              "R": 1
+            },
+            "nay": {
+              "D": 1,
+              "R": 52
+            }
+          },
+          "path": "votes/congress119/senate-2-69.json"
+        }
+      ]
     },
     {
       "id": "sres372-119",
@@ -2587,7 +3239,36 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres118/BILLS-119sjres118is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres118/BILLS-119sjres118is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/118",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-2-58",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 58,
+          "date": "2026-03-18",
+          "question": "On the Motion to Discharge",
+          "result": "Motion to Discharge Rejected",
+          "bill_id": "sjres118-119",
+          "totals": {
+            "yea": 47,
+            "nay": 53,
+            "present": 0,
+            "not_voting": 0
+          },
+          "party_split": {
+            "yea": {
+              "D": 44,
+              "I": 2,
+              "R": 1
+            },
+            "nay": {
+              "D": 1,
+              "R": 52
+            }
+          },
+          "path": "votes/congress119/senate-2-58.json"
+        }
+      ]
     },
     {
       "id": "sres629-119",
@@ -2637,7 +3318,36 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres104/BILLS-119sjres104is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres104/BILLS-119sjres104is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/104",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-2-46",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 46,
+          "date": "2026-03-04",
+          "question": "On the Motion to Discharge",
+          "result": "Motion to Discharge Rejected",
+          "bill_id": "sjres104-119",
+          "totals": {
+            "yea": 47,
+            "nay": 53,
+            "present": 0,
+            "not_voting": 0
+          },
+          "party_split": {
+            "yea": {
+              "D": 44,
+              "I": 2,
+              "R": 1
+            },
+            "nay": {
+              "D": 1,
+              "R": 52
+            }
+          },
+          "path": "votes/congress119/senate-2-46.json"
+        }
+      ]
     },
     {
       "id": "sres602-119",
@@ -2687,7 +3397,67 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ78/PLAW-119publ78_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ78/PLAW-119publ78.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/142",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-2-37",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 37,
+          "date": "2026-02-12",
+          "question": "On the Joint Resolution",
+          "result": "Joint Resolution Passed",
+          "bill_id": "hjres142-119",
+          "totals": {
+            "yea": 49,
+            "nay": 47,
+            "present": 0,
+            "not_voting": 4
+          },
+          "party_split": {
+            "yea": {
+              "R": 49
+            },
+            "nay": {
+              "D": 45,
+              "I": 2
+            },
+            "not_voting": {
+              "R": 4
+            }
+          },
+          "path": "votes/congress119/senate-2-37.json"
+        },
+        {
+          "id": "senate-119-2-36",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 36,
+          "date": "2026-02-11",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Agreed to",
+          "bill_id": "hjres142-119",
+          "totals": {
+            "yea": 51,
+            "nay": 46,
+            "present": 0,
+            "not_voting": 3
+          },
+          "party_split": {
+            "yea": {
+              "R": 51
+            },
+            "nay": {
+              "D": 44,
+              "I": 2
+            },
+            "not_voting": {
+              "D": 1,
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-2-36.json"
+        }
+      ]
     },
     {
       "id": "s3705-119",
@@ -2762,7 +3532,39 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres95/BILLS-119sjres95pcs.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres95/BILLS-119sjres95pcs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/95",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-2-35",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 35,
+          "date": "2026-02-10",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Rejected",
+          "bill_id": "sjres95-119",
+          "totals": {
+            "yea": 47,
+            "nay": 51,
+            "present": 0,
+            "not_voting": 2
+          },
+          "party_split": {
+            "yea": {
+              "D": 44,
+              "I": 2,
+              "R": 1
+            },
+            "nay": {
+              "R": 51
+            },
+            "not_voting": {
+              "D": 1,
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-2-35.json"
+        }
+      ]
     },
     {
       "id": "sres586-119",
@@ -2837,7 +3639,64 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ75/PLAW-119publ75.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/7148",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-2-20",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 20,
+          "date": "2026-01-30",
+          "question": "On Passage of the Bill",
+          "result": "Bill Passed",
+          "bill_id": "hr7148-119",
+          "totals": {
+            "yea": 71,
+            "nay": 29,
+            "present": 0,
+            "not_voting": 0
+          },
+          "party_split": {
+            "yea": {
+              "D": 22,
+              "I": 1,
+              "R": 48
+            },
+            "nay": {
+              "D": 23,
+              "I": 1,
+              "R": 5
+            }
+          },
+          "path": "votes/congress119/senate-2-20.json"
+        },
+        {
+          "id": "senate-119-2-13",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 13,
+          "date": "2026-01-29",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Rejected",
+          "bill_id": "hr7148-119",
+          "totals": {
+            "yea": 45,
+            "nay": 55,
+            "present": 0,
+            "not_voting": 0
+          },
+          "party_split": {
+            "yea": {
+              "R": 45
+            },
+            "nay": {
+              "D": 45,
+              "I": 2,
+              "R": 8
+            }
+          },
+          "path": "votes/congress119/senate-2-13.json"
+        }
+      ]
     },
     {
       "id": "sres581-119",
@@ -2912,7 +3771,106 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ74/PLAW-119publ74_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ74/PLAW-119publ74.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/6938",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-2-11",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 11,
+          "date": "2026-01-15",
+          "question": "On Passage of the Bill",
+          "result": "Bill Passed",
+          "bill_id": "hr6938-119",
+          "totals": {
+            "yea": 82,
+            "nay": 15,
+            "present": 0,
+            "not_voting": 3
+          },
+          "party_split": {
+            "yea": {
+              "D": 35,
+              "I": 1,
+              "R": 46
+            },
+            "nay": {
+              "D": 9,
+              "I": 1,
+              "R": 5
+            },
+            "not_voting": {
+              "D": 1,
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-2-11.json"
+        },
+        {
+          "id": "senate-119-2-10",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 10,
+          "date": "2026-01-15",
+          "question": "On the Cloture Motion",
+          "result": "Cloture Motion Agreed to",
+          "bill_id": "hr6938-119",
+          "totals": {
+            "yea": 85,
+            "nay": 14,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "D": 35,
+              "I": 1,
+              "R": 49
+            },
+            "nay": {
+              "D": 9,
+              "I": 1,
+              "R": 4
+            },
+            "not_voting": {
+              "D": 1
+            }
+          },
+          "path": "votes/congress119/senate-2-10.json"
+        },
+        {
+          "id": "senate-119-2-7",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 7,
+          "date": "2026-01-12",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Agreed to",
+          "bill_id": "hr6938-119",
+          "totals": {
+            "yea": 80,
+            "nay": 13,
+            "present": 0,
+            "not_voting": 7
+          },
+          "party_split": {
+            "yea": {
+              "D": 35,
+              "I": 1,
+              "R": 44
+            },
+            "nay": {
+              "D": 9,
+              "I": 1,
+              "R": 3
+            },
+            "not_voting": {
+              "D": 1,
+              "R": 6
+            }
+          },
+          "path": "votes/congress119/senate-2-7.json"
+        }
+      ]
     },
     {
       "id": "hres375-119",
@@ -3087,7 +4045,65 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres98/BILLS-119sjres98pcs.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres98/BILLS-119sjres98pcs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/98",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-2-9",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 9,
+          "date": "2026-01-14",
+          "question": "On the Point of Order",
+          "result": "Point of Order Well Taken",
+          "bill_id": "sjres98-119",
+          "totals": {
+            "yea": 50,
+            "nay": 50,
+            "present": 0,
+            "not_voting": 0
+          },
+          "party_split": {
+            "yea": {
+              "R": 50
+            },
+            "nay": {
+              "D": 45,
+              "I": 2,
+              "R": 3
+            }
+          },
+          "path": "votes/congress119/senate-2-9.json"
+        },
+        {
+          "id": "senate-119-2-5",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 5,
+          "date": "2026-01-08",
+          "question": "On the Motion to Discharge",
+          "result": "Motion to Discharge Agreed to",
+          "bill_id": "sjres98-119",
+          "totals": {
+            "yea": 52,
+            "nay": 47,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "D": 45,
+              "I": 2,
+              "R": 5
+            },
+            "nay": {
+              "R": 47
+            },
+            "not_voting": {
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-2-5.json"
+        }
+      ]
     },
     {
       "id": "hr4366-119",
@@ -3137,7 +4153,37 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres84/BILLS-119sjres84pcs.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres84/BILLS-119sjres84pcs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/84",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-2-8",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 8,
+          "date": "2026-01-13",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Rejected",
+          "bill_id": "sjres84-119",
+          "totals": {
+            "yea": 47,
+            "nay": 52,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "D": 45,
+              "I": 2
+            },
+            "nay": {
+              "R": 52
+            },
+            "not_voting": {
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-2-8.json"
+        }
+      ]
     },
     {
       "id": "sjres86-119",
@@ -3162,7 +4208,38 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres86/BILLS-119sjres86pcs.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres86/BILLS-119sjres86pcs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/86",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-2-4",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 4,
+          "date": "2026-01-07",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Rejected",
+          "bill_id": "sjres86-119",
+          "totals": {
+            "yea": 43,
+            "nay": 50,
+            "present": 0,
+            "not_voting": 7
+          },
+          "party_split": {
+            "yea": {
+              "D": 41,
+              "I": 2
+            },
+            "nay": {
+              "R": 50
+            },
+            "not_voting": {
+              "D": 4,
+              "R": 3
+            }
+          },
+          "path": "votes/congress119/senate-2-4.json"
+        }
+      ]
     },
     {
       "id": "sres288-119",
@@ -3437,7 +4514,106 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ60/PLAW-119publ60.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1071",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-1-648",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 648,
+          "date": "2025-12-17",
+          "question": "On the Motion",
+          "result": "Motion Agreed to",
+          "bill_id": "s1071-119",
+          "totals": {
+            "yea": 77,
+            "nay": 20,
+            "present": 0,
+            "not_voting": 3
+          },
+          "party_split": {
+            "yea": {
+              "D": 27,
+              "I": 1,
+              "R": 49
+            },
+            "nay": {
+              "D": 17,
+              "I": 1,
+              "R": 2
+            },
+            "not_voting": {
+              "D": 1,
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-1-648.json"
+        },
+        {
+          "id": "senate-119-1-647",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 647,
+          "date": "2025-12-15",
+          "question": "On the Cloture Motion",
+          "result": "Cloture Motion Agreed to",
+          "bill_id": "s1071-119",
+          "totals": {
+            "yea": 76,
+            "nay": 20,
+            "present": 0,
+            "not_voting": 4
+          },
+          "party_split": {
+            "yea": {
+              "D": 27,
+              "I": 1,
+              "R": 48
+            },
+            "nay": {
+              "D": 16,
+              "I": 1,
+              "R": 3
+            },
+            "not_voting": {
+              "D": 2,
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-1-647.json"
+        },
+        {
+          "id": "senate-119-1-646",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 646,
+          "date": "2025-12-11",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Agreed to",
+          "bill_id": "s1071-119",
+          "totals": {
+            "yea": 75,
+            "nay": 22,
+            "present": 0,
+            "not_voting": 3
+          },
+          "party_split": {
+            "yea": {
+              "D": 28,
+              "I": 1,
+              "R": 46
+            },
+            "nay": {
+              "D": 17,
+              "I": 1,
+              "R": 4
+            },
+            "not_voting": {
+              "R": 3
+            }
+          },
+          "path": "votes/congress119/senate-1-646.json"
+        }
+      ]
     },
     {
       "id": "s2283-119",
@@ -3512,7 +4688,65 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres82/BILLS-119sjres82pcs.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres82/BILLS-119sjres82pcs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/82",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-1-654",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 654,
+          "date": "2025-12-18",
+          "question": "On the Joint Resolution",
+          "result": "Joint Resolution Defeated",
+          "bill_id": "sjres82-119",
+          "totals": {
+            "yea": 50,
+            "nay": 50,
+            "present": 0,
+            "not_voting": 0
+          },
+          "party_split": {
+            "yea": {
+              "D": 45,
+              "I": 2,
+              "R": 3
+            },
+            "nay": {
+              "R": 50
+            }
+          },
+          "path": "votes/congress119/senate-1-654.json"
+        },
+        {
+          "id": "senate-119-1-641",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 641,
+          "date": "2025-12-10",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Agreed to",
+          "bill_id": "sjres82-119",
+          "totals": {
+            "yea": 50,
+            "nay": 49,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "D": 45,
+              "I": 2,
+              "R": 3
+            },
+            "nay": {
+              "R": 49
+            },
+            "not_voting": {
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-1-641.json"
+        }
+      ]
     },
     {
       "id": "sres321-119",
@@ -3712,7 +4946,66 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ48/PLAW-119publ48_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ48/PLAW-119publ48.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/104",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-1-549",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 549,
+          "date": "2025-10-08",
+          "question": "On the Joint Resolution",
+          "result": "Joint Resolution Passed",
+          "bill_id": "hjres104-119",
+          "totals": {
+            "yea": 52,
+            "nay": 47,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "R": 52
+            },
+            "nay": {
+              "D": 45,
+              "I": 2
+            },
+            "not_voting": {
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-1-549.json"
+        },
+        {
+          "id": "senate-119-1-548",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 548,
+          "date": "2025-10-07",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Agreed to",
+          "bill_id": "hjres104-119",
+          "totals": {
+            "yea": 50,
+            "nay": 47,
+            "present": 0,
+            "not_voting": 3
+          },
+          "party_split": {
+            "yea": {
+              "R": 50
+            },
+            "nay": {
+              "D": 45,
+              "I": 2
+            },
+            "not_voting": {
+              "R": 3
+            }
+          },
+          "path": "votes/congress119/senate-1-548.json"
+        }
+      ]
     },
     {
       "id": "hjres105-119",
@@ -3737,7 +5030,67 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ49/PLAW-119publ49_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ49/PLAW-119publ49.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/105",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-1-556",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 556,
+          "date": "2025-10-08",
+          "question": "On the Joint Resolution",
+          "result": "Joint Resolution Passed",
+          "bill_id": "hjres105-119",
+          "totals": {
+            "yea": 50,
+            "nay": 45,
+            "present": 0,
+            "not_voting": 5
+          },
+          "party_split": {
+            "yea": {
+              "R": 50
+            },
+            "nay": {
+              "D": 43,
+              "I": 2
+            },
+            "not_voting": {
+              "D": 2,
+              "R": 3
+            }
+          },
+          "path": "votes/congress119/senate-1-556.json"
+        },
+        {
+          "id": "senate-119-1-553",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 553,
+          "date": "2025-10-08",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Agreed to",
+          "bill_id": "hjres105-119",
+          "totals": {
+            "yea": 51,
+            "nay": 47,
+            "present": 0,
+            "not_voting": 2
+          },
+          "party_split": {
+            "yea": {
+              "R": 51
+            },
+            "nay": {
+              "D": 45,
+              "I": 2
+            },
+            "not_voting": {
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-1-553.json"
+        }
+      ]
     },
     {
       "id": "hjres106-119",
@@ -3762,7 +5115,67 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ50/PLAW-119publ50_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ50/PLAW-119publ50.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/106",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-1-560",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 560,
+          "date": "2025-10-09",
+          "question": "On the Joint Resolution",
+          "result": "Joint Resolution Passed",
+          "bill_id": "hjres106-119",
+          "totals": {
+            "yea": 50,
+            "nay": 46,
+            "present": 0,
+            "not_voting": 4
+          },
+          "party_split": {
+            "yea": {
+              "R": 50
+            },
+            "nay": {
+              "D": 44,
+              "I": 2
+            },
+            "not_voting": {
+              "D": 1,
+              "R": 3
+            }
+          },
+          "path": "votes/congress119/senate-1-560.json"
+        },
+        {
+          "id": "senate-119-1-559",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 559,
+          "date": "2025-10-09",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Agreed to",
+          "bill_id": "hjres106-119",
+          "totals": {
+            "yea": 50,
+            "nay": 47,
+            "present": 0,
+            "not_voting": 3
+          },
+          "party_split": {
+            "yea": {
+              "R": 50
+            },
+            "nay": {
+              "D": 45,
+              "I": 2
+            },
+            "not_voting": {
+              "R": 3
+            }
+          },
+          "path": "votes/congress119/senate-1-559.json"
+        }
+      ]
     },
     {
       "id": "hjres130-119",
@@ -3787,7 +5200,38 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ51/PLAW-119publ51_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ51/PLAW-119publ51.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/130",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-1-623",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 623,
+          "date": "2025-11-20",
+          "question": "On the Joint Resolution",
+          "result": "Joint Resolution Passed",
+          "bill_id": "hjres130-119",
+          "totals": {
+            "yea": 51,
+            "nay": 43,
+            "present": 0,
+            "not_voting": 6
+          },
+          "party_split": {
+            "yea": {
+              "R": 51
+            },
+            "nay": {
+              "D": 41,
+              "I": 2
+            },
+            "not_voting": {
+              "D": 4,
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-1-623.json"
+        }
+      ]
     },
     {
       "id": "sres532-119",
@@ -3812,7 +5256,66 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sres532/BILLS-119sres532ats.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sres532/BILLS-119sres532ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/532",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-1-645",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 645,
+          "date": "2025-12-11",
+          "question": "On the Resolution",
+          "result": "Resolution Agreed to",
+          "bill_id": "sres532-119",
+          "totals": {
+            "yea": 52,
+            "nay": 47,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "R": 52
+            },
+            "nay": {
+              "D": 45,
+              "I": 2
+            },
+            "not_voting": {
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-1-645.json"
+        },
+        {
+          "id": "senate-119-1-642",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 642,
+          "date": "2025-12-10",
+          "question": "On the Cloture Motion",
+          "result": "Cloture Motion Agreed to",
+          "bill_id": "sres532-119",
+          "totals": {
+            "yea": 51,
+            "nay": 47,
+            "present": 0,
+            "not_voting": 2
+          },
+          "party_split": {
+            "yea": {
+              "R": 51
+            },
+            "nay": {
+              "D": 45,
+              "I": 2
+            },
+            "not_voting": {
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-1-642.json"
+        }
+      ]
     },
     {
       "id": "sres483-119",
@@ -3862,7 +5365,66 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ47/PLAW-119publ47_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ47/PLAW-119publ47.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/80",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-1-599",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 599,
+          "date": "2025-10-30",
+          "question": "On the Joint Resolution",
+          "result": "Joint Resolution Passed",
+          "bill_id": "sjres80-119",
+          "totals": {
+            "yea": 52,
+            "nay": 45,
+            "present": 0,
+            "not_voting": 3
+          },
+          "party_split": {
+            "yea": {
+              "D": 1,
+              "R": 51
+            },
+            "nay": {
+              "D": 43,
+              "I": 2
+            },
+            "not_voting": {
+              "D": 1,
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-1-599.json"
+        },
+        {
+          "id": "senate-119-1-595",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 595,
+          "date": "2025-10-29",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Agreed to",
+          "bill_id": "sjres80-119",
+          "totals": {
+            "yea": 54,
+            "nay": 46,
+            "present": 0,
+            "not_voting": 0
+          },
+          "party_split": {
+            "yea": {
+              "D": 1,
+              "R": 53
+            },
+            "nay": {
+              "D": 44,
+              "I": 2
+            }
+          },
+          "path": "votes/congress119/senate-1-595.json"
+        }
+      ]
     },
     {
       "id": "sres516-119",
@@ -4187,7 +5749,40 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres76/BILLS-119sjres76pcs.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres76/BILLS-119sjres76pcs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/76",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-1-622",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 622,
+          "date": "2025-11-19",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Rejected",
+          "bill_id": "sjres76-119",
+          "totals": {
+            "yea": 46,
+            "nay": 51,
+            "present": 0,
+            "not_voting": 3
+          },
+          "party_split": {
+            "yea": {
+              "D": 44,
+              "I": 1,
+              "R": 1
+            },
+            "nay": {
+              "R": 51
+            },
+            "not_voting": {
+              "D": 1,
+              "I": 1,
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-1-622.json"
+        }
+      ]
     },
     {
       "id": "hr5371-119",
@@ -4212,7 +5807,569 @@
       "text_url_xml": "https://www.congress.gov/119/plaws/publ37/PLAW-119publ37_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ37/PLAW-119publ37.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/5371",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-1-618",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 618,
+          "date": "2025-11-10",
+          "question": "On Passage of the Bill",
+          "result": "Bill Passed",
+          "bill_id": "hr5371-119",
+          "totals": {
+            "yea": 60,
+            "nay": 40,
+            "present": 0,
+            "not_voting": 0
+          },
+          "party_split": {
+            "yea": {
+              "D": 7,
+              "I": 1,
+              "R": 52
+            },
+            "nay": {
+              "D": 38,
+              "I": 1,
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-1-618.json"
+        },
+        {
+          "id": "senate-119-1-617",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 617,
+          "date": "2025-11-10",
+          "question": "On the Cloture Motion",
+          "result": "Cloture Motion Agreed to",
+          "bill_id": "hr5371-119",
+          "totals": {
+            "yea": 60,
+            "nay": 40,
+            "present": 0,
+            "not_voting": 0
+          },
+          "party_split": {
+            "yea": {
+              "D": 7,
+              "I": 1,
+              "R": 52
+            },
+            "nay": {
+              "D": 38,
+              "I": 1,
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-1-617.json"
+        },
+        {
+          "id": "senate-119-1-611",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 611,
+          "date": "2025-11-10",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Agreed to",
+          "bill_id": "hr5371-119",
+          "totals": {
+            "yea": 60,
+            "nay": 40,
+            "present": 0,
+            "not_voting": 0
+          },
+          "party_split": {
+            "yea": {
+              "D": 7,
+              "I": 1,
+              "R": 52
+            },
+            "nay": {
+              "D": 38,
+              "I": 1,
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-1-611.json"
+        },
+        {
+          "id": "senate-119-1-610",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 610,
+          "date": "2025-11-09",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Agreed to",
+          "bill_id": "hr5371-119",
+          "totals": {
+            "yea": 60,
+            "nay": 40,
+            "present": 0,
+            "not_voting": 0
+          },
+          "party_split": {
+            "yea": {
+              "D": 7,
+              "I": 1,
+              "R": 52
+            },
+            "nay": {
+              "D": 38,
+              "I": 1,
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-1-610.json"
+        },
+        {
+          "id": "senate-119-1-603",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 603,
+          "date": "2025-11-04",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Rejected",
+          "bill_id": "hr5371-119",
+          "totals": {
+            "yea": 54,
+            "nay": 44,
+            "present": 0,
+            "not_voting": 2
+          },
+          "party_split": {
+            "yea": {
+              "D": 2,
+              "I": 1,
+              "R": 51
+            },
+            "nay": {
+              "D": 42,
+              "I": 1,
+              "R": 1
+            },
+            "not_voting": {
+              "D": 1,
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-1-603.json"
+        },
+        {
+          "id": "senate-119-1-590",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 590,
+          "date": "2025-10-28",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Rejected",
+          "bill_id": "hr5371-119",
+          "totals": {
+            "yea": 54,
+            "nay": 45,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "D": 2,
+              "I": 1,
+              "R": 51
+            },
+            "nay": {
+              "D": 43,
+              "I": 1,
+              "R": 1
+            },
+            "not_voting": {
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-1-590.json"
+        },
+        {
+          "id": "senate-119-1-581",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 581,
+          "date": "2025-10-22",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Rejected",
+          "bill_id": "hr5371-119",
+          "totals": {
+            "yea": 54,
+            "nay": 46,
+            "present": 0,
+            "not_voting": 0
+          },
+          "party_split": {
+            "yea": {
+              "D": 2,
+              "I": 1,
+              "R": 51
+            },
+            "nay": {
+              "D": 43,
+              "I": 1,
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-1-581.json"
+        },
+        {
+          "id": "senate-119-1-576",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 576,
+          "date": "2025-10-20",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Rejected",
+          "bill_id": "hr5371-119",
+          "totals": {
+            "yea": 50,
+            "nay": 43,
+            "present": 0,
+            "not_voting": 7
+          },
+          "party_split": {
+            "yea": {
+              "D": 1,
+              "I": 1,
+              "R": 48
+            },
+            "nay": {
+              "D": 41,
+              "R": 2
+            },
+            "not_voting": {
+              "D": 3,
+              "I": 1,
+              "R": 3
+            }
+          },
+          "path": "votes/congress119/senate-1-576.json"
+        },
+        {
+          "id": "senate-119-1-573",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 573,
+          "date": "2025-10-16",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Rejected",
+          "bill_id": "hr5371-119",
+          "totals": {
+            "yea": 51,
+            "nay": 45,
+            "present": 0,
+            "not_voting": 4
+          },
+          "party_split": {
+            "yea": {
+              "D": 2,
+              "I": 1,
+              "R": 48
+            },
+            "nay": {
+              "D": 42,
+              "I": 1,
+              "R": 2
+            },
+            "not_voting": {
+              "D": 1,
+              "R": 3
+            }
+          },
+          "path": "votes/congress119/senate-1-573.json"
+        },
+        {
+          "id": "senate-119-1-572",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 572,
+          "date": "2025-10-15",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Rejected",
+          "bill_id": "hr5371-119",
+          "totals": {
+            "yea": 51,
+            "nay": 44,
+            "present": 0,
+            "not_voting": 5
+          },
+          "party_split": {
+            "yea": {
+              "D": 2,
+              "I": 1,
+              "R": 48
+            },
+            "nay": {
+              "D": 42,
+              "I": 1,
+              "R": 1
+            },
+            "not_voting": {
+              "D": 1,
+              "R": 4
+            }
+          },
+          "path": "votes/congress119/senate-1-572.json"
+        },
+        {
+          "id": "senate-119-1-571",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 571,
+          "date": "2025-10-14",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Rejected",
+          "bill_id": "hr5371-119",
+          "totals": {
+            "yea": 49,
+            "nay": 45,
+            "present": 0,
+            "not_voting": 6
+          },
+          "party_split": {
+            "yea": {
+              "D": 1,
+              "I": 1,
+              "R": 47
+            },
+            "nay": {
+              "D": 42,
+              "I": 1,
+              "R": 2
+            },
+            "not_voting": {
+              "D": 2,
+              "R": 4
+            }
+          },
+          "path": "votes/congress119/senate-1-571.json"
+        },
+        {
+          "id": "senate-119-1-558",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 558,
+          "date": "2025-10-09",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Rejected",
+          "bill_id": "hr5371-119",
+          "totals": {
+            "yea": 54,
+            "nay": 45,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "D": 2,
+              "I": 1,
+              "R": 51
+            },
+            "nay": {
+              "D": 43,
+              "I": 1,
+              "R": 1
+            },
+            "not_voting": {
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-1-558.json"
+        },
+        {
+          "id": "senate-119-1-551",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 551,
+          "date": "2025-10-08",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Rejected",
+          "bill_id": "hr5371-119",
+          "totals": {
+            "yea": 54,
+            "nay": 45,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "D": 2,
+              "I": 1,
+              "R": 51
+            },
+            "nay": {
+              "D": 43,
+              "I": 1,
+              "R": 1
+            },
+            "not_voting": {
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-1-551.json"
+        },
+        {
+          "id": "senate-119-1-545",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 545,
+          "date": "2025-10-06",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Rejected",
+          "bill_id": "hr5371-119",
+          "totals": {
+            "yea": 52,
+            "nay": 42,
+            "present": 0,
+            "not_voting": 6
+          },
+          "party_split": {
+            "yea": {
+              "D": 2,
+              "I": 1,
+              "R": 49
+            },
+            "nay": {
+              "D": 40,
+              "I": 1,
+              "R": 1
+            },
+            "not_voting": {
+              "D": 3,
+              "R": 3
+            }
+          },
+          "path": "votes/congress119/senate-1-545.json"
+        },
+        {
+          "id": "senate-119-1-543",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 543,
+          "date": "2025-10-03",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Rejected",
+          "bill_id": "hr5371-119",
+          "totals": {
+            "yea": 54,
+            "nay": 44,
+            "present": 0,
+            "not_voting": 2
+          },
+          "party_split": {
+            "yea": {
+              "D": 2,
+              "I": 1,
+              "R": 51
+            },
+            "nay": {
+              "D": 42,
+              "I": 1,
+              "R": 1
+            },
+            "not_voting": {
+              "D": 1,
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-1-543.json"
+        },
+        {
+          "id": "senate-119-1-537",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 537,
+          "date": "2025-10-01",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Rejected",
+          "bill_id": "hr5371-119",
+          "totals": {
+            "yea": 55,
+            "nay": 45,
+            "present": 0,
+            "not_voting": 0
+          },
+          "party_split": {
+            "yea": {
+              "D": 2,
+              "I": 1,
+              "R": 52
+            },
+            "nay": {
+              "D": 43,
+              "I": 1,
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-1-537.json"
+        },
+        {
+          "id": "senate-119-1-535",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 535,
+          "date": "2025-09-30",
+          "question": "On Passage of the Bill",
+          "result": "Bill Defeated",
+          "bill_id": "hr5371-119",
+          "totals": {
+            "yea": 55,
+            "nay": 45,
+            "present": 0,
+            "not_voting": 0
+          },
+          "party_split": {
+            "yea": {
+              "D": 2,
+              "I": 1,
+              "R": 52
+            },
+            "nay": {
+              "D": 43,
+              "I": 1,
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-1-535.json"
+        },
+        {
+          "id": "senate-119-1-528",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 528,
+          "date": "2025-09-19",
+          "question": "On Passage of the Bill",
+          "result": "Bill Defeated",
+          "bill_id": "hr5371-119",
+          "totals": {
+            "yea": 44,
+            "nay": 48,
+            "present": 0,
+            "not_voting": 8
+          },
+          "party_split": {
+            "yea": {
+              "D": 1,
+              "R": 43
+            },
+            "nay": {
+              "D": 44,
+              "I": 2,
+              "R": 2
+            },
+            "not_voting": {
+              "R": 8
+            }
+          },
+          "path": "votes/congress119/senate-1-528.json"
+        }
+      ]
     },
     {
       "id": "sres124-119",
@@ -4287,7 +6444,35 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres90/BILLS-119sjres90is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres90/BILLS-119sjres90is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/90",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-1-608",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 608,
+          "date": "2025-11-06",
+          "question": "On the Motion to Discharge",
+          "result": "Motion to Discharge Rejected",
+          "bill_id": "sjres90-119",
+          "totals": {
+            "yea": 49,
+            "nay": 51,
+            "present": 0,
+            "not_voting": 0
+          },
+          "party_split": {
+            "yea": {
+              "D": 45,
+              "I": 2,
+              "R": 2
+            },
+            "nay": {
+              "R": 51
+            }
+          },
+          "path": "votes/congress119/senate-1-608.json"
+        }
+      ]
     },
     {
       "id": "sres399-119",
@@ -4362,7 +6547,41 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres69/BILLS-119sjres69pcs.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres69/BILLS-119sjres69pcs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/69",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-1-597",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 597,
+          "date": "2025-10-29",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Rejected",
+          "bill_id": "sjres69-119",
+          "totals": {
+            "yea": 25,
+            "nay": 72,
+            "present": 0,
+            "not_voting": 3
+          },
+          "party_split": {
+            "yea": {
+              "D": 2,
+              "I": 1,
+              "R": 22
+            },
+            "nay": {
+              "D": 42,
+              "I": 1,
+              "R": 29
+            },
+            "not_voting": {
+              "D": 1,
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-1-597.json"
+        }
+      ]
     },
     {
       "id": "sres454-119",
@@ -4462,7 +6681,37 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres71/BILLS-119sjres71is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres71/BILLS-119sjres71is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/71",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-1-554",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 554,
+          "date": "2025-10-08",
+          "question": "On the Joint Resolution",
+          "result": "Joint Resolution Defeated",
+          "bill_id": "sjres71-119",
+          "totals": {
+            "yea": 47,
+            "nay": 51,
+            "present": 0,
+            "not_voting": 2
+          },
+          "party_split": {
+            "yea": {
+              "D": 45,
+              "I": 2
+            },
+            "nay": {
+              "R": 51
+            },
+            "not_voting": {
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-1-554.json"
+        }
+      ]
     },
     {
       "id": "sjres83-119",
@@ -4487,7 +6736,39 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres83/BILLS-119sjres83is.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres83/BILLS-119sjres83is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/83",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-1-555",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 555,
+          "date": "2025-10-08",
+          "question": "On the Motion to Discharge",
+          "result": "Motion to Discharge Rejected",
+          "bill_id": "sjres83-119",
+          "totals": {
+            "yea": 48,
+            "nay": 51,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "D": 44,
+              "I": 2,
+              "R": 2
+            },
+            "nay": {
+              "D": 1,
+              "R": 50
+            },
+            "not_voting": {
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-1-555.json"
+        }
+      ]
     },
     {
       "id": "sres406-119",
@@ -4562,7 +6843,67 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sres412/BILLS-119sres412ats.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sres412/BILLS-119sres412ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/412",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-1-541",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 541,
+          "date": "2025-10-03",
+          "question": "On the Resolution",
+          "result": "Resolution Agreed to",
+          "bill_id": "sres412-119",
+          "totals": {
+            "yea": 51,
+            "nay": 46,
+            "present": 0,
+            "not_voting": 3
+          },
+          "party_split": {
+            "yea": {
+              "R": 51
+            },
+            "nay": {
+              "D": 44,
+              "I": 2
+            },
+            "not_voting": {
+              "D": 1,
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-1-541.json"
+        },
+        {
+          "id": "senate-119-1-540",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 540,
+          "date": "2025-10-01",
+          "question": "On the Cloture Motion",
+          "result": "Cloture Motion Agreed to",
+          "bill_id": "sres412-119",
+          "totals": {
+            "yea": 53,
+            "nay": 46,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "R": 53
+            },
+            "nay": {
+              "D": 44,
+              "I": 2
+            },
+            "not_voting": {
+              "D": 1
+            }
+          },
+          "path": "votes/congress119/senate-1-540.json"
+        }
+      ]
     },
     {
       "id": "sres396-119",
@@ -4662,7 +7003,38 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sconres22/BILLS-119sconres22pcs.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sconres22/BILLS-119sconres22pcs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-concurrent-resolution/22",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-1-521",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 521,
+          "date": "2025-09-16",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Rejected",
+          "bill_id": "sconres22-119",
+          "totals": {
+            "yea": 36,
+            "nay": 62,
+            "present": 0,
+            "not_voting": 2
+          },
+          "party_split": {
+            "yea": {
+              "R": 36
+            },
+            "nay": {
+              "D": 45,
+              "I": 2,
+              "R": 15
+            },
+            "not_voting": {
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-1-521.json"
+        }
+      ]
     },
     {
       "id": "sjres60-119",
@@ -4687,7 +7059,37 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sjres60/BILLS-119sjres60pcs.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sjres60/BILLS-119sjres60pcs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/60",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-1-520",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 520,
+          "date": "2025-09-16",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Rejected",
+          "bill_id": "sjres60-119",
+          "totals": {
+            "yea": 47,
+            "nay": 51,
+            "present": 0,
+            "not_voting": 2
+          },
+          "party_split": {
+            "yea": {
+              "D": 45,
+              "I": 2
+            },
+            "nay": {
+              "R": 51
+            },
+            "not_voting": {
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-1-520.json"
+        }
+      ]
     },
     {
       "id": "sres377-119",
@@ -4712,7 +7114,215 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sres377/BILLS-119sres377ats.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sres377/BILLS-119sres377ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/377",
-      "votes": []
+      "votes": [
+        {
+          "id": "senate-119-1-517",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 517,
+          "date": "2025-09-15",
+          "question": "On the Resolution",
+          "result": "Resolution Agreed to",
+          "bill_id": "sres377-119",
+          "totals": {
+            "yea": 51,
+            "nay": 44,
+            "present": 0,
+            "not_voting": 5
+          },
+          "party_split": {
+            "yea": {
+              "R": 51
+            },
+            "nay": {
+              "D": 43,
+              "I": 1
+            },
+            "not_voting": {
+              "D": 2,
+              "I": 1,
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-1-517.json"
+        },
+        {
+          "id": "senate-119-1-516",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 516,
+          "date": "2025-09-11",
+          "question": "On the Cloture Motion",
+          "result": "Cloture Motion Agreed to",
+          "bill_id": "sres377-119",
+          "totals": {
+            "yea": 53,
+            "nay": 43,
+            "present": 0,
+            "not_voting": 4
+          },
+          "party_split": {
+            "yea": {
+              "R": 53
+            },
+            "nay": {
+              "D": 41,
+              "I": 2
+            },
+            "not_voting": {
+              "D": 4
+            }
+          },
+          "path": "votes/congress119/senate-1-516.json"
+        },
+        {
+          "id": "senate-119-1-515",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 515,
+          "date": "2025-09-11",
+          "question": "On the Decision of the Chair",
+          "result": "Decision of Chair Not Sustained",
+          "bill_id": "sres377-119",
+          "totals": {
+            "yea": 45,
+            "nay": 53,
+            "present": 0,
+            "not_voting": 2
+          },
+          "party_split": {
+            "yea": {
+              "D": 43,
+              "I": 2
+            },
+            "nay": {
+              "R": 53
+            },
+            "not_voting": {
+              "D": 2
+            }
+          },
+          "path": "votes/congress119/senate-1-515.json"
+        },
+        {
+          "id": "senate-119-1-514",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 514,
+          "date": "2025-09-11",
+          "question": "On the Motion to Reconsider",
+          "result": "Motion to Reconsider Agreed to",
+          "bill_id": "sres377-119",
+          "totals": {
+            "yea": 52,
+            "nay": 45,
+            "present": 0,
+            "not_voting": 3
+          },
+          "party_split": {
+            "yea": {
+              "R": 52
+            },
+            "nay": {
+              "D": 43,
+              "I": 2
+            },
+            "not_voting": {
+              "D": 2,
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-1-514.json"
+        },
+        {
+          "id": "senate-119-1-513",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 513,
+          "date": "2025-09-11",
+          "question": "On the Cloture Motion",
+          "result": "Cloture Motion Rejected",
+          "bill_id": "sres377-119",
+          "totals": {
+            "yea": 52,
+            "nay": 47,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "R": 52
+            },
+            "nay": {
+              "D": 44,
+              "I": 2,
+              "R": 1
+            },
+            "not_voting": {
+              "D": 1
+            }
+          },
+          "path": "votes/congress119/senate-1-513.json"
+        },
+        {
+          "id": "senate-119-1-511",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 511,
+          "date": "2025-09-09",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Agreed to",
+          "bill_id": "sres377-119",
+          "totals": {
+            "yea": 53,
+            "nay": 45,
+            "present": 0,
+            "not_voting": 2
+          },
+          "party_split": {
+            "yea": {
+              "R": 53
+            },
+            "nay": {
+              "D": 43,
+              "I": 2
+            },
+            "not_voting": {
+              "D": 2
+            }
+          },
+          "path": "votes/congress119/senate-1-511.json"
+        },
+        {
+          "id": "senate-119-1-510",
+          "chamber": "senate",
+          "session": 1,
+          "roll_number": 510,
+          "date": "2025-09-09",
+          "question": "On the Motion to Table",
+          "result": "Motion to Table Agreed to",
+          "bill_id": "sres377-119",
+          "totals": {
+            "yea": 53,
+            "nay": 46,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "R": 53
+            },
+            "nay": {
+              "D": 44,
+              "I": 2
+            },
+            "not_voting": {
+              "D": 1
+            }
+          },
+          "path": "votes/congress119/senate-1-510.json"
+        }
+      ]
     },
     {
       "id": "sres371-119",

@@ -1,8 +1,7526 @@
 {
-  "generated_at": "2026-07-23T01:41:40Z",
+  "generated_at": "2026-07-23T01:43:32Z",
   "congress": 119,
-  "vote_count": 500,
+  "vote_count": 750,
   "votes": [
+    {
+      "id": "senate-119-2-91",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 91,
+      "date": "2026-04-22",
+      "question": "On the Motion",
+      "result": "Motion Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 49,
+        "nay": 49,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 2,
+          "R": 3
+        },
+        "nay": {
+          "R": 49
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-91.json"
+    },
+    {
+      "id": "senate-119-2-90",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 90,
+      "date": "2026-04-22",
+      "question": "On the Motion",
+      "result": "Motion Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 47,
+        "nay": 50,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 43,
+          "I": 2,
+          "R": 2
+        },
+        "nay": {
+          "R": 50
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-90.json"
+    },
+    {
+      "id": "senate-119-2-89",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 89,
+      "date": "2026-04-22",
+      "question": "On the Motion",
+      "result": "Motion Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 48,
+        "nay": 50,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 2,
+          "R": 2
+        },
+        "nay": {
+          "R": 50
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-89.json"
+    },
+    {
+      "id": "senate-119-2-88",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 88,
+      "date": "2026-04-22",
+      "question": "On the Motion to Discharge",
+      "result": "Motion to Discharge Rejected",
+      "bill_id": "sjres114-119",
+      "totals": {
+        "yea": 46,
+        "nay": 51,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 43,
+          "I": 2,
+          "R": 1
+        },
+        "nay": {
+          "D": 1,
+          "R": 50
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-88.json"
+    },
+    {
+      "id": "senate-119-2-87",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 87,
+      "date": "2026-04-21",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Agreed to",
+      "bill_id": "sconres33-119",
+      "totals": {
+        "yea": 52,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-87.json"
+    },
+    {
+      "id": "senate-119-2-86",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 86,
+      "date": "2026-04-20",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 47,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "R": 47
+        },
+        "nay": {
+          "D": 43,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/senate-2-86.json"
+    },
+    {
+      "id": "senate-119-2-85",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 85,
+      "date": "2026-04-16",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 49,
+        "nay": 48,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 49
+        },
+        "nay": {
+          "D": 45,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-85.json"
+    },
+    {
+      "id": "senate-119-2-84",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 84,
+      "date": "2026-04-16",
+      "question": "On the Joint Resolution",
+      "result": "Joint Resolution Passed",
+      "bill_id": "hjres140-119",
+      "totals": {
+        "yea": 50,
+        "nay": 49,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 45,
+          "I": 2,
+          "R": 2
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-84.json"
+    },
+    {
+      "id": "senate-119-2-83",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 83,
+      "date": "2026-04-15",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Agreed to",
+      "bill_id": "hjres140-119",
+      "totals": {
+        "yea": 51,
+        "nay": 49,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 45,
+          "I": 2,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-83.json"
+    },
+    {
+      "id": "senate-119-2-82",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 82,
+      "date": "2026-04-15",
+      "question": "On the Motion to Table",
+      "result": "Motion to Table Agreed to",
+      "bill_id": "hjres140-119",
+      "totals": {
+        "yea": 51,
+        "nay": 48,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 45,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-82.json"
+    },
+    {
+      "id": "senate-119-2-81",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 81,
+      "date": "2026-04-15",
+      "question": "On the Motion to Discharge",
+      "result": "Motion to Discharge Rejected",
+      "bill_id": "sjres138-119",
+      "totals": {
+        "yea": 36,
+        "nay": 63,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 34,
+          "I": 2
+        },
+        "nay": {
+          "D": 11,
+          "R": 52
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-81.json"
+    },
+    {
+      "id": "senate-119-2-80",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 80,
+      "date": "2026-04-15",
+      "question": "On the Motion to Discharge",
+      "result": "Motion to Discharge Rejected",
+      "bill_id": "sjres32-119",
+      "totals": {
+        "yea": 40,
+        "nay": 59,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 38,
+          "I": 2
+        },
+        "nay": {
+          "D": 7,
+          "R": 52
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-80.json"
+    },
+    {
+      "id": "senate-119-2-79",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 79,
+      "date": "2026-04-15",
+      "question": "On the Motion to Discharge",
+      "result": "Motion to Discharge Rejected",
+      "bill_id": "sjres123-119",
+      "totals": {
+        "yea": 47,
+        "nay": 52,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 2,
+          "R": 1
+        },
+        "nay": {
+          "D": 1,
+          "R": 51
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-79.json"
+    },
+    {
+      "id": "senate-119-2-78",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 78,
+      "date": "2026-04-14",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 53,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-78.json"
+    },
+    {
+      "id": "senate-119-2-77",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 77,
+      "date": "2026-04-14",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 53,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-77.json"
+    },
+    {
+      "id": "senate-119-2-76",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 76,
+      "date": "2026-04-14",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 53,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-76.json"
+    },
+    {
+      "id": "senate-119-2-75",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 75,
+      "date": "2026-04-13",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 50,
+        "nay": 44,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 42,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-75.json"
+    },
+    {
+      "id": "senate-119-2-74",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 74,
+      "date": "2026-03-26",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr7147-119",
+      "totals": {
+        "yea": 53,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 1,
+          "R": 52
+        },
+        "nay": {
+          "D": 44,
+          "I": 2,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-74.json"
+    },
+    {
+      "id": "senate-119-2-73",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 73,
+      "date": "2026-03-26",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 53,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-73.json"
+    },
+    {
+      "id": "senate-119-2-72",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 72,
+      "date": "2026-03-25",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Rejected",
+      "bill_id": "sjres103-119",
+      "totals": {
+        "yea": 48,
+        "nay": 50,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 2,
+          "R": 2
+        },
+        "nay": {
+          "R": 50
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-72.json"
+    },
+    {
+      "id": "senate-119-2-71",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 71,
+      "date": "2026-03-25",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr7147-119",
+      "totals": {
+        "yea": 54,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 1,
+          "R": 53
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-71.json"
+    },
+    {
+      "id": "senate-119-2-70",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 70,
+      "date": "2026-03-25",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Rejected",
+      "bill_id": "sjres107-119",
+      "totals": {
+        "yea": 47,
+        "nay": 53,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2
+        },
+        "nay": {
+          "R": 53
+        }
+      },
+      "path": "votes/congress119/senate-2-70.json"
+    },
+    {
+      "id": "senate-119-2-69",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 69,
+      "date": "2026-03-24",
+      "question": "On the Motion to Discharge",
+      "result": "Motion to Discharge Rejected",
+      "bill_id": "sjres116-119",
+      "totals": {
+        "yea": 47,
+        "nay": 53,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 2,
+          "R": 1
+        },
+        "nay": {
+          "D": 1,
+          "R": 52
+        }
+      },
+      "path": "votes/congress119/senate-2-69.json"
+    },
+    {
+      "id": "senate-119-2-68",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 68,
+      "date": "2026-03-24",
+      "question": "On the Motion to Table",
+      "result": "Motion to Table Agreed to",
+      "bill_id": "s1383-119",
+      "totals": {
+        "yea": 53,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-68.json"
+    },
+    {
+      "id": "senate-119-2-67",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 67,
+      "date": "2026-03-24",
+      "question": "On the Motion to Table",
+      "result": "Motion to Table Agreed to",
+      "bill_id": "s1383-119",
+      "totals": {
+        "yea": 53,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-67.json"
+    },
+    {
+      "id": "senate-119-2-66",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 66,
+      "date": "2026-03-24",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-66.json"
+    },
+    {
+      "id": "senate-119-2-65",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 65,
+      "date": "2026-03-24",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 52,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-65.json"
+    },
+    {
+      "id": "senate-119-2-64",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 64,
+      "date": "2026-03-23",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-64.json"
+    },
+    {
+      "id": "senate-119-2-63",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 63,
+      "date": "2026-03-23",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 54,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "R": 52
+        },
+        "nay": {
+          "D": 42,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-63.json"
+    },
+    {
+      "id": "senate-119-2-62",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 62,
+      "date": "2026-03-22",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 54,
+        "nay": 37,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "R": 52
+        },
+        "nay": {
+          "D": 35,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 8,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-62.json"
+    },
+    {
+      "id": "senate-119-2-61",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 61,
+      "date": "2026-03-21",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Rejected",
+      "bill_id": "s1383-119",
+      "totals": {
+        "yea": 41,
+        "nay": 49,
+        "present": 0,
+        "not_voting": 10
+      },
+      "party_split": {
+        "yea": {
+          "D": 39,
+          "I": 2
+        },
+        "nay": {
+          "R": 49
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/senate-2-61.json"
+    },
+    {
+      "id": "senate-119-2-60",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 60,
+      "date": "2026-03-21",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 49,
+        "nay": 41,
+        "present": 0,
+        "not_voting": 10
+      },
+      "party_split": {
+        "yea": {
+          "R": 49
+        },
+        "nay": {
+          "D": 39,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/senate-2-60.json"
+    },
+    {
+      "id": "senate-119-2-59",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 59,
+      "date": "2026-03-20",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr7147-119",
+      "totals": {
+        "yea": 47,
+        "nay": 37,
+        "present": 0,
+        "not_voting": 16
+      },
+      "party_split": {
+        "yea": {
+          "D": 1,
+          "R": 46
+        },
+        "nay": {
+          "D": 35,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 9,
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/senate-2-59.json"
+    },
+    {
+      "id": "senate-119-2-58",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 58,
+      "date": "2026-03-18",
+      "question": "On the Motion to Discharge",
+      "result": "Motion to Discharge Rejected",
+      "bill_id": "sjres118-119",
+      "totals": {
+        "yea": 47,
+        "nay": 53,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 2,
+          "R": 1
+        },
+        "nay": {
+          "D": 1,
+          "R": 52
+        }
+      },
+      "path": "votes/congress119/senate-2-58.json"
+    },
+    {
+      "id": "senate-119-2-57",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 57,
+      "date": "2026-03-17",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Agreed to",
+      "bill_id": "s1383-119",
+      "totals": {
+        "yea": 51,
+        "nay": 48,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 45,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-57.json"
+    },
+    {
+      "id": "senate-119-2-56",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 56,
+      "date": "2026-03-17",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-56.json"
+    },
+    {
+      "id": "senate-119-2-55",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 55,
+      "date": "2026-03-17",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 48,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "R": 48
+        },
+        "nay": {
+          "D": 44,
+          "I": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "I": 1,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/senate-2-55.json"
+    },
+    {
+      "id": "senate-119-2-54",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 54,
+      "date": "2026-03-12",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr7147-119",
+      "totals": {
+        "yea": 51,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 1,
+          "R": 50
+        },
+        "nay": {
+          "D": 43,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-54.json"
+    },
+    {
+      "id": "senate-119-2-53",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 53,
+      "date": "2026-03-12",
+      "question": "On Passage of the Bill",
+      "result": "Bill Passed",
+      "bill_id": "hr6644-119",
+      "totals": {
+        "yea": 89,
+        "nay": 10,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 2,
+          "R": 43
+        },
+        "nay": {
+          "D": 1,
+          "R": 9
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-53.json"
+    },
+    {
+      "id": "senate-119-2-52",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 52,
+      "date": "2026-03-11",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": "hr6644-119",
+      "totals": {
+        "yea": 82,
+        "nay": 11,
+        "present": 1,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "D": 41,
+          "I": 2,
+          "R": 39
+        },
+        "nay": {
+          "D": 1,
+          "R": 10
+        },
+        "present": {
+          "D": 1
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/senate-2-52.json"
+    },
+    {
+      "id": "senate-119-2-51",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 51,
+      "date": "2026-03-11",
+      "question": "On the Amendment",
+      "result": "Amendment Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 84,
+        "nay": 10,
+        "present": 1,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "D": 42,
+          "I": 2,
+          "R": 40
+        },
+        "nay": {
+          "D": 1,
+          "R": 9
+        },
+        "present": {
+          "D": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/senate-2-51.json"
+    },
+    {
+      "id": "senate-119-2-50",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 50,
+      "date": "2026-03-10",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 89,
+        "nay": 9,
+        "present": 1,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 41,
+          "I": 2,
+          "R": 46
+        },
+        "nay": {
+          "D": 2,
+          "R": 7
+        },
+        "present": {
+          "D": 1
+        },
+        "not_voting": {
+          "D": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-50.json"
+    },
+    {
+      "id": "senate-119-2-49",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 49,
+      "date": "2026-03-10",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 71,
+        "nay": 29,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 17,
+          "I": 1,
+          "R": 53
+        },
+        "nay": {
+          "D": 28,
+          "I": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-49.json"
+    },
+    {
+      "id": "senate-119-2-48",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 48,
+      "date": "2026-03-09",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 68,
+        "nay": 28,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 17,
+          "I": 1,
+          "R": 50
+        },
+        "nay": {
+          "D": 27,
+          "I": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-48.json"
+    },
+    {
+      "id": "senate-119-2-47",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 47,
+      "date": "2026-03-05",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr7147-119",
+      "totals": {
+        "yea": 51,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 1,
+          "R": 50
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-47.json"
+    },
+    {
+      "id": "senate-119-2-46",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 46,
+      "date": "2026-03-04",
+      "question": "On the Motion to Discharge",
+      "result": "Motion to Discharge Rejected",
+      "bill_id": "sjres104-119",
+      "totals": {
+        "yea": 47,
+        "nay": 53,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 2,
+          "R": 1
+        },
+        "nay": {
+          "D": 1,
+          "R": 52
+        }
+      },
+      "path": "votes/congress119/senate-2-46.json"
+    },
+    {
+      "id": "senate-119-2-45",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 45,
+      "date": "2026-03-04",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Agreed to",
+      "bill_id": "hr6644-119",
+      "totals": {
+        "yea": 90,
+        "nay": 8,
+        "present": 1,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 42,
+          "I": 2,
+          "R": 46
+        },
+        "nay": {
+          "D": 2,
+          "R": 6
+        },
+        "present": {
+          "D": 1
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-45.json"
+    },
+    {
+      "id": "senate-119-2-44",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 44,
+      "date": "2026-03-02",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Agreed to",
+      "bill_id": "hr6644-119",
+      "totals": {
+        "yea": 84,
+        "nay": 6,
+        "present": 1,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 38,
+          "I": 2,
+          "R": 44
+        },
+        "nay": {
+          "D": 2,
+          "R": 4
+        },
+        "present": {
+          "D": 1
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/senate-2-44.json"
+    },
+    {
+      "id": "senate-119-2-43",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 43,
+      "date": "2026-02-26",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 57,
+        "nay": 33,
+        "present": 0,
+        "not_voting": 10
+      },
+      "party_split": {
+        "yea": {
+          "D": 9,
+          "I": 1,
+          "R": 47
+        },
+        "nay": {
+          "D": 32,
+          "I": 1
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/senate-2-43.json"
+    },
+    {
+      "id": "senate-119-2-42",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 42,
+      "date": "2026-02-26",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 60,
+        "nay": 34,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "D": 9,
+          "I": 1,
+          "R": 50
+        },
+        "nay": {
+          "D": 33,
+          "I": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-42.json"
+    },
+    {
+      "id": "senate-119-2-41",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 41,
+      "date": "2026-02-25",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 50,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-41.json"
+    },
+    {
+      "id": "senate-119-2-40",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 40,
+      "date": "2026-02-25",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 50,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-40.json"
+    },
+    {
+      "id": "senate-119-2-39",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 39,
+      "date": "2026-02-24",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr7147-119",
+      "totals": {
+        "yea": 50,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "D": 1,
+          "R": 49
+        },
+        "nay": {
+          "D": 42,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-39.json"
+    },
+    {
+      "id": "senate-119-2-38",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 38,
+      "date": "2026-02-12",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr7147-119",
+      "totals": {
+        "yea": 52,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 1,
+          "R": 51
+        },
+        "nay": {
+          "D": 44,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-38.json"
+    },
+    {
+      "id": "senate-119-2-37",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 37,
+      "date": "2026-02-12",
+      "question": "On the Joint Resolution",
+      "result": "Joint Resolution Passed",
+      "bill_id": "hjres142-119",
+      "totals": {
+        "yea": 49,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "R": 49
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/senate-2-37.json"
+    },
+    {
+      "id": "senate-119-2-36",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 36,
+      "date": "2026-02-11",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Agreed to",
+      "bill_id": "hjres142-119",
+      "totals": {
+        "yea": 51,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-36.json"
+    },
+    {
+      "id": "senate-119-2-35",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 35,
+      "date": "2026-02-10",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Rejected",
+      "bill_id": "sjres95-119",
+      "totals": {
+        "yea": 47,
+        "nay": 51,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 2,
+          "R": 1
+        },
+        "nay": {
+          "R": 51
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-35.json"
+    },
+    {
+      "id": "senate-119-2-34",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 34,
+      "date": "2026-02-10",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 52,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-34.json"
+    },
+    {
+      "id": "senate-119-2-33",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 33,
+      "date": "2026-02-09",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-33.json"
+    },
+    {
+      "id": "senate-119-2-32",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 32,
+      "date": "2026-02-05",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 50,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-32.json"
+    },
+    {
+      "id": "senate-119-2-31",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 31,
+      "date": "2026-02-05",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-31.json"
+    },
+    {
+      "id": "senate-119-2-30",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 30,
+      "date": "2026-02-05",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 50,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-30.json"
+    },
+    {
+      "id": "senate-119-2-29",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 29,
+      "date": "2026-02-04",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 50,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-29.json"
+    },
+    {
+      "id": "senate-119-2-28",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 28,
+      "date": "2026-02-04",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-28.json"
+    },
+    {
+      "id": "senate-119-2-27",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 27,
+      "date": "2026-02-04",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-27.json"
+    },
+    {
+      "id": "senate-119-2-26",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 26,
+      "date": "2026-02-04",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 58,
+        "nay": 39,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 7,
+          "R": 51
+        },
+        "nay": {
+          "D": 37,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-26.json"
+    },
+    {
+      "id": "senate-119-2-25",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 25,
+      "date": "2026-02-03",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 55,
+        "nay": 39,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "D": 4,
+          "R": 51
+        },
+        "nay": {
+          "D": 37,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-25.json"
+    },
+    {
+      "id": "senate-119-2-24",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 24,
+      "date": "2026-02-03",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-24.json"
+    },
+    {
+      "id": "senate-119-2-23",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 23,
+      "date": "2026-02-03",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 49,
+        "nay": 44,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "R": 49
+        },
+        "nay": {
+          "D": 42,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/senate-2-23.json"
+    },
+    {
+      "id": "senate-119-2-22",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 22,
+      "date": "2026-02-03",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 54,
+        "nay": 40,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "D": 5,
+          "R": 49
+        },
+        "nay": {
+          "D": 38,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/senate-2-22.json"
+    },
+    {
+      "id": "senate-119-2-21",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 21,
+      "date": "2026-02-02",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 49,
+        "nay": 40,
+        "present": 0,
+        "not_voting": 11
+      },
+      "party_split": {
+        "yea": {
+          "D": 5,
+          "R": 44
+        },
+        "nay": {
+          "D": 38,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 9
+        }
+      },
+      "path": "votes/congress119/senate-2-21.json"
+    },
+    {
+      "id": "senate-119-2-20",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 20,
+      "date": "2026-01-30",
+      "question": "On Passage of the Bill",
+      "result": "Bill Passed",
+      "bill_id": "hr7148-119",
+      "totals": {
+        "yea": 71,
+        "nay": 29,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 22,
+          "I": 1,
+          "R": 48
+        },
+        "nay": {
+          "D": 23,
+          "I": 1,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/senate-2-20.json"
+    },
+    {
+      "id": "senate-119-2-19",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 19,
+      "date": "2026-01-30",
+      "question": "On the Motion",
+      "result": "Motion Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 47,
+        "nay": 52,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2
+        },
+        "nay": {
+          "R": 52
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-19.json"
+    },
+    {
+      "id": "senate-119-2-18",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 18,
+      "date": "2026-01-30",
+      "question": "On the Amendment",
+      "result": "Amendment Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 49,
+        "nay": 51,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2,
+          "R": 2
+        },
+        "nay": {
+          "R": 51
+        }
+      },
+      "path": "votes/congress119/senate-2-18.json"
+    },
+    {
+      "id": "senate-119-2-17",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 17,
+      "date": "2026-01-30",
+      "question": "On the Motion to Table",
+      "result": "Motion to Table Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 58,
+        "nay": 42,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2,
+          "R": 11
+        },
+        "nay": {
+          "R": 42
+        }
+      },
+      "path": "votes/congress119/senate-2-17.json"
+    },
+    {
+      "id": "senate-119-2-16",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 16,
+      "date": "2026-01-30",
+      "question": "On the Motion to Table",
+      "result": "Motion to Table Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 58,
+        "nay": 42,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2,
+          "R": 11
+        },
+        "nay": {
+          "R": 42
+        }
+      },
+      "path": "votes/congress119/senate-2-16.json"
+    },
+    {
+      "id": "senate-119-2-15",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 15,
+      "date": "2026-01-30",
+      "question": "On the Motion to Table",
+      "result": "Motion to Table Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 67,
+        "nay": 33,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2,
+          "R": 20
+        },
+        "nay": {
+          "R": 33
+        }
+      },
+      "path": "votes/congress119/senate-2-15.json"
+    },
+    {
+      "id": "senate-119-2-14",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 14,
+      "date": "2026-01-30",
+      "question": "On the Amendment",
+      "result": "Amendment Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 32,
+        "nay": 67,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 32
+        },
+        "nay": {
+          "D": 45,
+          "I": 2,
+          "R": 20
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-14.json"
+    },
+    {
+      "id": "senate-119-2-13",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 13,
+      "date": "2026-01-29",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr7148-119",
+      "totals": {
+        "yea": 45,
+        "nay": 55,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "R": 45
+        },
+        "nay": {
+          "D": 45,
+          "I": 2,
+          "R": 8
+        }
+      },
+      "path": "votes/congress119/senate-2-13.json"
+    },
+    {
+      "id": "senate-119-2-12",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 12,
+      "date": "2026-01-27",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "s3627-119",
+      "totals": {
+        "yea": 47,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "R": 47
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/senate-2-12.json"
+    },
+    {
+      "id": "senate-119-2-11",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 11,
+      "date": "2026-01-15",
+      "question": "On Passage of the Bill",
+      "result": "Bill Passed",
+      "bill_id": "hr6938-119",
+      "totals": {
+        "yea": 82,
+        "nay": 15,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 35,
+          "I": 1,
+          "R": 46
+        },
+        "nay": {
+          "D": 9,
+          "I": 1,
+          "R": 5
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-11.json"
+    },
+    {
+      "id": "senate-119-2-10",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 10,
+      "date": "2026-01-15",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": "hr6938-119",
+      "totals": {
+        "yea": 85,
+        "nay": 14,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 35,
+          "I": 1,
+          "R": 49
+        },
+        "nay": {
+          "D": 9,
+          "I": 1,
+          "R": 4
+        },
+        "not_voting": {
+          "D": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-10.json"
+    },
+    {
+      "id": "senate-119-2-9",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 9,
+      "date": "2026-01-14",
+      "question": "On the Point of Order",
+      "result": "Point of Order Well Taken",
+      "bill_id": "sjres98-119",
+      "totals": {
+        "yea": 50,
+        "nay": 50,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 45,
+          "I": 2,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-9.json"
+    },
+    {
+      "id": "senate-119-2-8",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 8,
+      "date": "2026-01-13",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Rejected",
+      "bill_id": "sjres84-119",
+      "totals": {
+        "yea": 47,
+        "nay": 52,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2
+        },
+        "nay": {
+          "R": 52
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-8.json"
+    },
+    {
+      "id": "senate-119-2-7",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 7,
+      "date": "2026-01-12",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Agreed to",
+      "bill_id": "hr6938-119",
+      "totals": {
+        "yea": 80,
+        "nay": 13,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 35,
+          "I": 1,
+          "R": 44
+        },
+        "nay": {
+          "D": 9,
+          "I": 1,
+          "R": 3
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/senate-2-7.json"
+    },
+    {
+      "id": "senate-119-2-6",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 6,
+      "date": "2026-01-08",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 53,
+        "nay": 40,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 6,
+          "I": 1,
+          "R": 46
+        },
+        "nay": {
+          "D": 39,
+          "I": 1
+        },
+        "not_voting": {
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/senate-2-6.json"
+    },
+    {
+      "id": "senate-119-2-5",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 5,
+      "date": "2026-01-08",
+      "question": "On the Motion to Discharge",
+      "result": "Motion to Discharge Agreed to",
+      "bill_id": "sjres98-119",
+      "totals": {
+        "yea": 52,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2,
+          "R": 5
+        },
+        "nay": {
+          "R": 47
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-5.json"
+    },
+    {
+      "id": "senate-119-2-4",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 4,
+      "date": "2026-01-07",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Rejected",
+      "bill_id": "sjres86-119",
+      "totals": {
+        "yea": 43,
+        "nay": 50,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 41,
+          "I": 2
+        },
+        "nay": {
+          "R": 50
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-4.json"
+    },
+    {
+      "id": "senate-119-2-3",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 3,
+      "date": "2026-01-06",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 52,
+        "nay": 48,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 45,
+          "I": 2,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-3.json"
+    },
+    {
+      "id": "senate-119-2-2",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 2,
+      "date": "2026-01-06",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 53,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-2.json"
+    },
+    {
+      "id": "senate-119-2-1",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 1,
+      "date": "2026-01-05",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 50,
+        "nay": 35,
+        "present": 0,
+        "not_voting": 15
+      },
+      "party_split": {
+        "yea": {
+          "D": 6,
+          "I": 1,
+          "R": 43
+        },
+        "nay": {
+          "D": 33,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 9
+        }
+      },
+      "path": "votes/congress119/senate-2-1.json"
+    },
+    {
+      "id": "senate-119-1-659",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 659,
+      "date": "2025-12-18",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 42,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 39,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-659.json"
+    },
+    {
+      "id": "senate-119-1-658",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 658,
+      "date": "2025-12-18",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 60,
+        "nay": 35,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "D": 6,
+          "I": 1,
+          "R": 53
+        },
+        "nay": {
+          "D": 34,
+          "I": 1
+        },
+        "not_voting": {
+          "D": 5
+        }
+      },
+      "path": "votes/congress119/senate-1-658.json"
+    },
+    {
+      "id": "senate-119-1-657",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 657,
+      "date": "2025-12-18",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 58,
+        "nay": 36,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "D": 6,
+          "I": 1,
+          "R": 51
+        },
+        "nay": {
+          "D": 34,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-657.json"
+    },
+    {
+      "id": "senate-119-1-656",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 656,
+      "date": "2025-12-18",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 53,
+        "nay": 43,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 41,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 4
+        }
+      },
+      "path": "votes/congress119/senate-1-656.json"
+    },
+    {
+      "id": "senate-119-1-655",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 655,
+      "date": "2025-12-18",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 53,
+        "nay": 43,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 41,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 4
+        }
+      },
+      "path": "votes/congress119/senate-1-655.json"
+    },
+    {
+      "id": "senate-119-1-654",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 654,
+      "date": "2025-12-18",
+      "question": "On the Joint Resolution",
+      "result": "Joint Resolution Defeated",
+      "bill_id": "sjres82-119",
+      "totals": {
+        "yea": 50,
+        "nay": 50,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2,
+          "R": 3
+        },
+        "nay": {
+          "R": 50
+        }
+      },
+      "path": "votes/congress119/senate-1-654.json"
+    },
+    {
+      "id": "senate-119-1-653",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 653,
+      "date": "2025-12-17",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 53,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-653.json"
+    },
+    {
+      "id": "senate-119-1-652",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 652,
+      "date": "2025-12-17",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 71,
+        "nay": 29,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 17,
+          "I": 1,
+          "R": 53
+        },
+        "nay": {
+          "D": 28,
+          "I": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-652.json"
+    },
+    {
+      "id": "senate-119-1-651",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 651,
+      "date": "2025-12-17",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 69,
+        "nay": 27,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 17,
+          "I": 1,
+          "R": 51
+        },
+        "nay": {
+          "D": 26,
+          "I": 1
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-651.json"
+    },
+    {
+      "id": "senate-119-1-650",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 650,
+      "date": "2025-12-17",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 67,
+        "nay": 30,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 15,
+          "I": 1,
+          "R": 51
+        },
+        "nay": {
+          "D": 29,
+          "I": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-650.json"
+    },
+    {
+      "id": "senate-119-1-649",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 649,
+      "date": "2025-12-17",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 67,
+        "nay": 30,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 15,
+          "I": 1,
+          "R": 51
+        },
+        "nay": {
+          "D": 29,
+          "I": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-649.json"
+    },
+    {
+      "id": "senate-119-1-648",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 648,
+      "date": "2025-12-17",
+      "question": "On the Motion",
+      "result": "Motion Agreed to",
+      "bill_id": "s1071-119",
+      "totals": {
+        "yea": 77,
+        "nay": 20,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 27,
+          "I": 1,
+          "R": 49
+        },
+        "nay": {
+          "D": 17,
+          "I": 1,
+          "R": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-648.json"
+    },
+    {
+      "id": "senate-119-1-647",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 647,
+      "date": "2025-12-15",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": "s1071-119",
+      "totals": {
+        "yea": 76,
+        "nay": 20,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 27,
+          "I": 1,
+          "R": 48
+        },
+        "nay": {
+          "D": 16,
+          "I": 1,
+          "R": 3
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-647.json"
+    },
+    {
+      "id": "senate-119-1-646",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 646,
+      "date": "2025-12-11",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Agreed to",
+      "bill_id": "s1071-119",
+      "totals": {
+        "yea": 75,
+        "nay": 22,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 28,
+          "I": 1,
+          "R": 46
+        },
+        "nay": {
+          "D": 17,
+          "I": 1,
+          "R": 4
+        },
+        "not_voting": {
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-646.json"
+    },
+    {
+      "id": "senate-119-1-645",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 645,
+      "date": "2025-12-11",
+      "question": "On the Resolution",
+      "result": "Resolution Agreed to",
+      "bill_id": "sres532-119",
+      "totals": {
+        "yea": 52,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-645.json"
+    },
+    {
+      "id": "senate-119-1-644",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 644,
+      "date": "2025-12-11",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Rejected",
+      "bill_id": "s3385-119",
+      "totals": {
+        "yea": 51,
+        "nay": 48,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2,
+          "R": 4
+        },
+        "nay": {
+          "R": 48
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-644.json"
+    },
+    {
+      "id": "senate-119-1-643",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 643,
+      "date": "2025-12-11",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Rejected",
+      "bill_id": "s3386-119",
+      "totals": {
+        "yea": 51,
+        "nay": 48,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 45,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-643.json"
+    },
+    {
+      "id": "senate-119-1-642",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 642,
+      "date": "2025-12-10",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": "sres532-119",
+      "totals": {
+        "yea": 51,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-642.json"
+    },
+    {
+      "id": "senate-119-1-641",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 641,
+      "date": "2025-12-10",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Agreed to",
+      "bill_id": "sjres82-119",
+      "totals": {
+        "yea": 50,
+        "nay": 49,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2,
+          "R": 3
+        },
+        "nay": {
+          "R": 49
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-641.json"
+    },
+    {
+      "id": "senate-119-1-640",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 640,
+      "date": "2025-12-09",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-640.json"
+    },
+    {
+      "id": "senate-119-1-639",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 639,
+      "date": "2025-12-09",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 49,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "R": 49
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/senate-1-639.json"
+    },
+    {
+      "id": "senate-119-1-638",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 638,
+      "date": "2025-12-09",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 49,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "R": 49
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/senate-1-638.json"
+    },
+    {
+      "id": "senate-119-1-637",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 637,
+      "date": "2025-12-09",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-637.json"
+    },
+    {
+      "id": "senate-119-1-636",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 636,
+      "date": "2025-12-09",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-636.json"
+    },
+    {
+      "id": "senate-119-1-635",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 635,
+      "date": "2025-12-08",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 52,
+        "nay": 44,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 42,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-635.json"
+    },
+    {
+      "id": "senate-119-1-634",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 634,
+      "date": "2025-12-04",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 57,
+        "nay": 32,
+        "present": 0,
+        "not_voting": 11
+      },
+      "party_split": {
+        "yea": {
+          "D": 10,
+          "I": 1,
+          "R": 46
+        },
+        "nay": {
+          "D": 31,
+          "I": 1
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/senate-1-634.json"
+    },
+    {
+      "id": "senate-119-1-633",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 633,
+      "date": "2025-12-04",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Rejected",
+      "bill_id": "sres520-119",
+      "totals": {
+        "yea": 43,
+        "nay": 37,
+        "present": 0,
+        "not_voting": 20
+      },
+      "party_split": {
+        "yea": {
+          "R": 43
+        },
+        "nay": {
+          "D": 37
+        },
+        "not_voting": {
+          "D": 8,
+          "I": 2,
+          "R": 10
+        }
+      },
+      "path": "votes/congress119/senate-1-633.json"
+    },
+    {
+      "id": "senate-119-1-632",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 632,
+      "date": "2025-12-04",
+      "question": "On the Joint Resolution",
+      "result": "Joint Resolution Passed",
+      "bill_id": "hjres131-119",
+      "totals": {
+        "yea": 49,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "R": 49
+        },
+        "nay": {
+          "D": 42,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-632.json"
+    },
+    {
+      "id": "senate-119-1-631",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 631,
+      "date": "2025-12-03",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 63,
+        "nay": 34,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 10,
+          "I": 1,
+          "R": 52
+        },
+        "nay": {
+          "D": 33,
+          "I": 1
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-631.json"
+    },
+    {
+      "id": "senate-119-1-630",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 630,
+      "date": "2025-12-03",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Agreed to",
+      "bill_id": "sjres91-119",
+      "totals": {
+        "yea": 49,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "R": 49
+        },
+        "nay": {
+          "D": 44,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-630.json"
+    },
+    {
+      "id": "senate-119-1-629",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 629,
+      "date": "2025-12-03",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 57,
+        "nay": 41,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 5,
+          "R": 52
+        },
+        "nay": {
+          "D": 39,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-629.json"
+    },
+    {
+      "id": "senate-119-1-628",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 628,
+      "date": "2025-12-03",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 56,
+        "nay": 40,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 5,
+          "R": 51
+        },
+        "nay": {
+          "D": 38,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-628.json"
+    },
+    {
+      "id": "senate-119-1-627",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 627,
+      "date": "2025-12-02",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 60,
+        "nay": 39,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 7,
+          "I": 1,
+          "R": 52
+        },
+        "nay": {
+          "D": 38,
+          "I": 1
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-627.json"
+    },
+    {
+      "id": "senate-119-1-626",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 626,
+      "date": "2025-12-02",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 61,
+        "nay": 36,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 7,
+          "I": 1,
+          "R": 53
+        },
+        "nay": {
+          "D": 35,
+          "I": 1
+        },
+        "not_voting": {
+          "D": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-626.json"
+    },
+    {
+      "id": "senate-119-1-625",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 625,
+      "date": "2025-12-02",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 53,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-625.json"
+    },
+    {
+      "id": "senate-119-1-624",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 624,
+      "date": "2025-12-01",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 50,
+        "nay": 41,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 40,
+          "I": 1
+        },
+        "not_voting": {
+          "D": 5,
+          "I": 1,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-624.json"
+    },
+    {
+      "id": "senate-119-1-623",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 623,
+      "date": "2025-11-20",
+      "question": "On the Joint Resolution",
+      "result": "Joint Resolution Passed",
+      "bill_id": "hjres130-119",
+      "totals": {
+        "yea": 51,
+        "nay": 43,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 41,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-623.json"
+    },
+    {
+      "id": "senate-119-1-622",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 622,
+      "date": "2025-11-19",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Rejected",
+      "bill_id": "sjres76-119",
+      "totals": {
+        "yea": 46,
+        "nay": 51,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 1,
+          "R": 1
+        },
+        "nay": {
+          "R": 51
+        },
+        "not_voting": {
+          "D": 1,
+          "I": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-622.json"
+    },
+    {
+      "id": "senate-119-1-621",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 621,
+      "date": "2025-11-19",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Agreed to",
+      "bill_id": "sjres89-119",
+      "totals": {
+        "yea": 51,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-621.json"
+    },
+    {
+      "id": "senate-119-1-620",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 620,
+      "date": "2025-11-19",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 66,
+        "nay": 32,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 14,
+          "I": 1,
+          "R": 51
+        },
+        "nay": {
+          "D": 31,
+          "I": 1
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-620.json"
+    },
+    {
+      "id": "senate-119-1-619",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 619,
+      "date": "2025-11-18",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 65,
+        "nay": 32,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 12,
+          "I": 1,
+          "R": 52
+        },
+        "nay": {
+          "D": 32
+        },
+        "not_voting": {
+          "D": 1,
+          "I": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-619.json"
+    },
+    {
+      "id": "senate-119-1-618",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 618,
+      "date": "2025-11-10",
+      "question": "On Passage of the Bill",
+      "result": "Bill Passed",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 60,
+        "nay": 40,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 7,
+          "I": 1,
+          "R": 52
+        },
+        "nay": {
+          "D": 38,
+          "I": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-618.json"
+    },
+    {
+      "id": "senate-119-1-617",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 617,
+      "date": "2025-11-10",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 60,
+        "nay": 40,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 7,
+          "I": 1,
+          "R": 52
+        },
+        "nay": {
+          "D": 38,
+          "I": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-617.json"
+    },
+    {
+      "id": "senate-119-1-616",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 616,
+      "date": "2025-11-10",
+      "question": "On the Amendment",
+      "result": "Amendment Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 60,
+        "nay": 40,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 7,
+          "I": 1,
+          "R": 52
+        },
+        "nay": {
+          "D": 38,
+          "I": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-616.json"
+    },
+    {
+      "id": "senate-119-1-615",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 615,
+      "date": "2025-11-10",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 60,
+        "nay": 40,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 7,
+          "I": 1,
+          "R": 52
+        },
+        "nay": {
+          "D": 38,
+          "I": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-615.json"
+    },
+    {
+      "id": "senate-119-1-614",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 614,
+      "date": "2025-11-10",
+      "question": "On the Motion to Table",
+      "result": "Motion to Table Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 76,
+        "nay": 24,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 24,
+          "I": 1,
+          "R": 51
+        },
+        "nay": {
+          "D": 21,
+          "I": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-614.json"
+    },
+    {
+      "id": "senate-119-1-613",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 613,
+      "date": "2025-11-10",
+      "question": "On the Motion to Table",
+      "result": "Motion to Table Failed",
+      "bill_id": null,
+      "totals": {
+        "yea": 47,
+        "nay": 53,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2
+        },
+        "nay": {
+          "R": 53
+        }
+      },
+      "path": "votes/congress119/senate-1-613.json"
+    },
+    {
+      "id": "senate-119-1-612",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 612,
+      "date": "2025-11-10",
+      "question": "On the Motion to Table",
+      "result": "Motion to Table Failed",
+      "bill_id": null,
+      "totals": {
+        "yea": 47,
+        "nay": 53,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2
+        },
+        "nay": {
+          "R": 53
+        }
+      },
+      "path": "votes/congress119/senate-1-612.json"
+    },
+    {
+      "id": "senate-119-1-611",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 611,
+      "date": "2025-11-10",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Agreed to",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 60,
+        "nay": 40,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 7,
+          "I": 1,
+          "R": 52
+        },
+        "nay": {
+          "D": 38,
+          "I": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-611.json"
+    },
+    {
+      "id": "senate-119-1-610",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 610,
+      "date": "2025-11-09",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Agreed to",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 60,
+        "nay": 40,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 7,
+          "I": 1,
+          "R": 52
+        },
+        "nay": {
+          "D": 38,
+          "I": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-610.json"
+    },
+    {
+      "id": "senate-119-1-609",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 609,
+      "date": "2025-11-07",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "s3012-119",
+      "totals": {
+        "yea": 53,
+        "nay": 43,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 3,
+          "R": 50
+        },
+        "nay": {
+          "D": 41,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-609.json"
+    },
+    {
+      "id": "senate-119-1-608",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 608,
+      "date": "2025-11-06",
+      "question": "On the Motion to Discharge",
+      "result": "Motion to Discharge Rejected",
+      "bill_id": "sjres90-119",
+      "totals": {
+        "yea": 49,
+        "nay": 51,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2,
+          "R": 2
+        },
+        "nay": {
+          "R": 51
+        }
+      },
+      "path": "votes/congress119/senate-1-608.json"
+    },
+    {
+      "id": "senate-119-1-607",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 607,
+      "date": "2025-11-05",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 57,
+        "nay": 43,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 4,
+          "I": 1,
+          "R": 52
+        },
+        "nay": {
+          "D": 41,
+          "I": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-607.json"
+    },
+    {
+      "id": "senate-119-1-606",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 606,
+      "date": "2025-11-05",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 57,
+        "nay": 41,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 4,
+          "I": 1,
+          "R": 52
+        },
+        "nay": {
+          "D": 39,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-606.json"
+    },
+    {
+      "id": "senate-119-1-605",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 605,
+      "date": "2025-11-05",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 52,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-605.json"
+    },
+    {
+      "id": "senate-119-1-604",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 604,
+      "date": "2025-11-04",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 52,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-604.json"
+    },
+    {
+      "id": "senate-119-1-603",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 603,
+      "date": "2025-11-04",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 54,
+        "nay": 44,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "I": 1,
+          "R": 51
+        },
+        "nay": {
+          "D": 42,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-603.json"
+    },
+    {
+      "id": "senate-119-1-602",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 602,
+      "date": "2025-11-03",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-602.json"
+    },
+    {
+      "id": "senate-119-1-601",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 601,
+      "date": "2025-10-30",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-601.json"
+    },
+    {
+      "id": "senate-119-1-600",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 600,
+      "date": "2025-10-30",
+      "question": "On the Joint Resolution",
+      "result": "Joint Resolution Passed",
+      "bill_id": "sjres88-119",
+      "totals": {
+        "yea": 51,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2,
+          "R": 4
+        },
+        "nay": {
+          "R": 47
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-600.json"
+    },
+    {
+      "id": "senate-119-1-599",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 599,
+      "date": "2025-10-30",
+      "question": "On the Joint Resolution",
+      "result": "Joint Resolution Passed",
+      "bill_id": "sjres80-119",
+      "totals": {
+        "yea": 52,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 1,
+          "R": 51
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-599.json"
+    },
+    {
+      "id": "senate-119-1-598",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 598,
+      "date": "2025-10-29",
+      "question": "On the Joint Resolution",
+      "result": "Joint Resolution Passed",
+      "bill_id": "sjres77-119",
+      "totals": {
+        "yea": 50,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 2,
+          "R": 4
+        },
+        "nay": {
+          "R": 46
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-598.json"
+    },
+    {
+      "id": "senate-119-1-597",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 597,
+      "date": "2025-10-29",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Rejected",
+      "bill_id": "sjres69-119",
+      "totals": {
+        "yea": 25,
+        "nay": 72,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "I": 1,
+          "R": 22
+        },
+        "nay": {
+          "D": 42,
+          "I": 1,
+          "R": 29
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-597.json"
+    },
+    {
+      "id": "senate-119-1-596",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 596,
+      "date": "2025-10-29",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-596.json"
+    },
+    {
+      "id": "senate-119-1-595",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 595,
+      "date": "2025-10-29",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Agreed to",
+      "bill_id": "sjres80-119",
+      "totals": {
+        "yea": 54,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 1,
+          "R": 53
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-595.json"
+    },
+    {
+      "id": "senate-119-1-594",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 594,
+      "date": "2025-10-28",
+      "question": "On the Joint Resolution",
+      "result": "Joint Resolution Passed",
+      "bill_id": "sjres81-119",
+      "totals": {
+        "yea": 52,
+        "nay": 48,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2,
+          "R": 5
+        },
+        "nay": {
+          "R": 48
+        }
+      },
+      "path": "votes/congress119/senate-1-594.json"
+    },
+    {
+      "id": "senate-119-1-593",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 593,
+      "date": "2025-10-28",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 53,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-593.json"
+    },
+    {
+      "id": "senate-119-1-592",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 592,
+      "date": "2025-10-28",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 52,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-592.json"
+    },
+    {
+      "id": "senate-119-1-591",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 591,
+      "date": "2025-10-28",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 52,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-591.json"
+    },
+    {
+      "id": "senate-119-1-590",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 590,
+      "date": "2025-10-28",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 54,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "I": 1,
+          "R": 51
+        },
+        "nay": {
+          "D": 43,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-590.json"
+    },
+    {
+      "id": "senate-119-1-589",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 589,
+      "date": "2025-10-27",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 58,
+        "nay": 40,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 5,
+          "I": 1,
+          "R": 52
+        },
+        "nay": {
+          "D": 39,
+          "I": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-589.json"
+    },
+    {
+      "id": "senate-119-1-588",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 588,
+      "date": "2025-10-27",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 52,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-588.json"
+    },
+    {
+      "id": "senate-119-1-587",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 587,
+      "date": "2025-10-23",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 50,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-587.json"
+    },
+    {
+      "id": "senate-119-1-586",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 586,
+      "date": "2025-10-23",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 48,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "R": 48
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/senate-1-586.json"
+    },
+    {
+      "id": "senate-119-1-585",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 585,
+      "date": "2025-10-23",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "s3012-119",
+      "totals": {
+        "yea": 54,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 3,
+          "R": 51
+        },
+        "nay": {
+          "D": 42,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-585.json"
+    },
+    {
+      "id": "senate-119-1-584",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 584,
+      "date": "2025-10-22",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 52,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-584.json"
+    },
+    {
+      "id": "senate-119-1-583",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 583,
+      "date": "2025-10-22",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 52,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-583.json"
+    },
+    {
+      "id": "senate-119-1-582",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 582,
+      "date": "2025-10-22",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 60,
+        "nay": 39,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 7,
+          "I": 1,
+          "R": 52
+        },
+        "nay": {
+          "D": 38,
+          "I": 1
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-582.json"
+    },
+    {
+      "id": "senate-119-1-581",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 581,
+      "date": "2025-10-22",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 54,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "I": 1,
+          "R": 51
+        },
+        "nay": {
+          "D": 43,
+          "I": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-581.json"
+    },
+    {
+      "id": "senate-119-1-580",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 580,
+      "date": "2025-10-21",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 53,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-580.json"
+    },
+    {
+      "id": "senate-119-1-579",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 579,
+      "date": "2025-10-21",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 53,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-579.json"
+    },
+    {
+      "id": "senate-119-1-578",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 578,
+      "date": "2025-10-21",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 53,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-578.json"
+    },
+    {
+      "id": "senate-119-1-577",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 577,
+      "date": "2025-10-21",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 66,
+        "nay": 32,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 13,
+          "I": 1,
+          "R": 52
+        },
+        "nay": {
+          "D": 31,
+          "I": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-577.json"
+    },
+    {
+      "id": "senate-119-1-576",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 576,
+      "date": "2025-10-20",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 50,
+        "nay": 43,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 1,
+          "I": 1,
+          "R": 48
+        },
+        "nay": {
+          "D": 41,
+          "R": 2
+        },
+        "not_voting": {
+          "D": 3,
+          "I": 1,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-576.json"
+    },
+    {
+      "id": "senate-119-1-575",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 575,
+      "date": "2025-10-16",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr4016-119",
+      "totals": {
+        "yea": 50,
+        "nay": 44,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "D": 3,
+          "R": 47
+        },
+        "nay": {
+          "D": 41,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/senate-1-575.json"
+    },
+    {
+      "id": "senate-119-1-574",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 574,
+      "date": "2025-10-16",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 62,
+        "nay": 34,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 11,
+          "I": 1,
+          "R": 50
+        },
+        "nay": {
+          "D": 33,
+          "I": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-574.json"
+    },
+    {
+      "id": "senate-119-1-573",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 573,
+      "date": "2025-10-16",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 51,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "I": 1,
+          "R": 48
+        },
+        "nay": {
+          "D": 42,
+          "I": 1,
+          "R": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-573.json"
+    },
+    {
+      "id": "senate-119-1-572",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 572,
+      "date": "2025-10-15",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 51,
+        "nay": 44,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "I": 1,
+          "R": 48
+        },
+        "nay": {
+          "D": 42,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/senate-1-572.json"
+    },
+    {
+      "id": "senate-119-1-571",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 571,
+      "date": "2025-10-14",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 49,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "D": 1,
+          "I": 1,
+          "R": 47
+        },
+        "nay": {
+          "D": 42,
+          "I": 1,
+          "R": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/senate-1-571.json"
+    },
+    {
+      "id": "senate-119-1-570",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 570,
+      "date": "2025-10-09",
+      "question": "On Passage of the Bill",
+      "result": "Bill Passed",
+      "bill_id": "s2296-119",
+      "totals": {
+        "yea": 77,
+        "nay": 20,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 26,
+          "I": 1,
+          "R": 50
+        },
+        "nay": {
+          "D": 18,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-570.json"
+    },
+    {
+      "id": "senate-119-1-569",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 569,
+      "date": "2025-10-09",
+      "question": "On the Amendment",
+      "result": "Amendment Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 47,
+        "nay": 50,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 2,
+          "R": 1
+        },
+        "nay": {
+          "R": 50
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-569.json"
+    },
+    {
+      "id": "senate-119-1-568",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 568,
+      "date": "2025-10-09",
+      "question": "On the Amendment",
+      "result": "Amendment Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 10,
+        "nay": 88,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 9,
+          "I": 1
+        },
+        "nay": {
+          "D": 35,
+          "I": 1,
+          "R": 52
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-568.json"
+    },
+    {
+      "id": "senate-119-1-567",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 567,
+      "date": "2025-10-09",
+      "question": "On the Amendment",
+      "result": "Amendment Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 46,
+        "nay": 52,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 2
+        },
+        "nay": {
+          "R": 52
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-567.json"
+    },
+    {
+      "id": "senate-119-1-566",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 566,
+      "date": "2025-10-09",
+      "question": "On the Amendment",
+      "result": "Amendment Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 47,
+        "nay": 50,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 2,
+          "R": 1
+        },
+        "nay": {
+          "R": 50
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-566.json"
+    },
+    {
+      "id": "senate-119-1-565",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 565,
+      "date": "2025-10-09",
+      "question": "On the Amendment",
+      "result": "Amendment Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 46,
+        "nay": 50,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 2
+        },
+        "nay": {
+          "R": 50
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-565.json"
+    },
+    {
+      "id": "senate-119-1-564",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 564,
+      "date": "2025-10-09",
+      "question": "On the Amendment",
+      "result": "Amendment Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 3,
+          "R": 48
+        },
+        "nay": {
+          "D": 41,
+          "I": 2,
+          "R": 3
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-564.json"
+    },
+    {
+      "id": "senate-119-1-563",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 563,
+      "date": "2025-10-09",
+      "question": "On the Amendment",
+      "result": "Amendment Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 53,
+        "nay": 43,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 8,
+          "I": 1,
+          "R": 44
+        },
+        "nay": {
+          "D": 36,
+          "I": 1,
+          "R": 6
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-563.json"
+    },
+    {
+      "id": "senate-119-1-562",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 562,
+      "date": "2025-10-09",
+      "question": "On the Amendment",
+      "result": "Amendment Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 14,
+        "nay": 83,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 7,
+          "I": 1,
+          "R": 6
+        },
+        "nay": {
+          "D": 37,
+          "I": 1,
+          "R": 45
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-562.json"
+    },
+    {
+      "id": "senate-119-1-561",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 561,
+      "date": "2025-10-09",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 50,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 44,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-561.json"
+    },
+    {
+      "id": "senate-119-1-560",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 560,
+      "date": "2025-10-09",
+      "question": "On the Joint Resolution",
+      "result": "Joint Resolution Passed",
+      "bill_id": "hjres106-119",
+      "totals": {
+        "yea": 50,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-560.json"
+    },
+    {
+      "id": "senate-119-1-559",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 559,
+      "date": "2025-10-09",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Agreed to",
+      "bill_id": "hjres106-119",
+      "totals": {
+        "yea": 50,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-559.json"
+    },
+    {
+      "id": "senate-119-1-558",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 558,
+      "date": "2025-10-09",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 54,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "I": 1,
+          "R": 51
+        },
+        "nay": {
+          "D": 43,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-558.json"
+    },
+    {
+      "id": "senate-119-1-557",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 557,
+      "date": "2025-10-09",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "s2882-119",
+      "totals": {
+        "yea": 47,
+        "nay": 50,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2
+        },
+        "nay": {
+          "R": 50
+        },
+        "not_voting": {
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-557.json"
+    },
+    {
+      "id": "senate-119-1-556",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 556,
+      "date": "2025-10-08",
+      "question": "On the Joint Resolution",
+      "result": "Joint Resolution Passed",
+      "bill_id": "hjres105-119",
+      "totals": {
+        "yea": 50,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-556.json"
+    },
+    {
+      "id": "senate-119-1-555",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 555,
+      "date": "2025-10-08",
+      "question": "On the Motion to Discharge",
+      "result": "Motion to Discharge Rejected",
+      "bill_id": "sjres83-119",
+      "totals": {
+        "yea": 48,
+        "nay": 51,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 2,
+          "R": 2
+        },
+        "nay": {
+          "D": 1,
+          "R": 50
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-555.json"
+    },
+    {
+      "id": "senate-119-1-554",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 554,
+      "date": "2025-10-08",
+      "question": "On the Joint Resolution",
+      "result": "Joint Resolution Defeated",
+      "bill_id": "sjres71-119",
+      "totals": {
+        "yea": 47,
+        "nay": 51,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2
+        },
+        "nay": {
+          "R": 51
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-554.json"
+    },
+    {
+      "id": "senate-119-1-553",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 553,
+      "date": "2025-10-08",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Agreed to",
+      "bill_id": "hjres105-119",
+      "totals": {
+        "yea": 51,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-553.json"
+    },
+    {
+      "id": "senate-119-1-552",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 552,
+      "date": "2025-10-08",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 50,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-552.json"
+    },
+    {
+      "id": "senate-119-1-551",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 551,
+      "date": "2025-10-08",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 54,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "I": 1,
+          "R": 51
+        },
+        "nay": {
+          "D": 43,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-551.json"
+    },
+    {
+      "id": "senate-119-1-550",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 550,
+      "date": "2025-10-08",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "s2882-119",
+      "totals": {
+        "yea": 47,
+        "nay": 52,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2
+        },
+        "nay": {
+          "R": 52
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-550.json"
+    },
+    {
+      "id": "senate-119-1-549",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 549,
+      "date": "2025-10-08",
+      "question": "On the Joint Resolution",
+      "result": "Joint Resolution Passed",
+      "bill_id": "hjres104-119",
+      "totals": {
+        "yea": 52,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-549.json"
+    },
+    {
+      "id": "senate-119-1-548",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 548,
+      "date": "2025-10-07",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Agreed to",
+      "bill_id": "hjres104-119",
+      "totals": {
+        "yea": 50,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-548.json"
+    },
+    {
+      "id": "senate-119-1-547",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 547,
+      "date": "2025-10-07",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-547.json"
+    },
+    {
+      "id": "senate-119-1-546",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 546,
+      "date": "2025-10-06",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 50,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-546.json"
+    },
+    {
+      "id": "senate-119-1-545",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 545,
+      "date": "2025-10-06",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 52,
+        "nay": 42,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "I": 1,
+          "R": 49
+        },
+        "nay": {
+          "D": 40,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-545.json"
+    },
+    {
+      "id": "senate-119-1-544",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 544,
+      "date": "2025-10-06",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "s2882-119",
+      "totals": {
+        "yea": 45,
+        "nay": 50,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "D": 43,
+          "I": 2
+        },
+        "nay": {
+          "R": 50
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-544.json"
+    },
+    {
+      "id": "senate-119-1-543",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 543,
+      "date": "2025-10-03",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 54,
+        "nay": 44,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "I": 1,
+          "R": 51
+        },
+        "nay": {
+          "D": 42,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-543.json"
+    },
+    {
+      "id": "senate-119-1-542",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 542,
+      "date": "2025-10-03",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "s2882-119",
+      "totals": {
+        "yea": 46,
+        "nay": 52,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 2
+        },
+        "nay": {
+          "R": 52
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-542.json"
+    },
+    {
+      "id": "senate-119-1-541",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 541,
+      "date": "2025-10-03",
+      "question": "On the Resolution",
+      "result": "Resolution Agreed to",
+      "bill_id": "sres412-119",
+      "totals": {
+        "yea": 51,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-541.json"
+    },
+    {
+      "id": "senate-119-1-540",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 540,
+      "date": "2025-10-01",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": "sres412-119",
+      "totals": {
+        "yea": 53,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-540.json"
+    },
+    {
+      "id": "senate-119-1-539",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 539,
+      "date": "2025-10-01",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 52,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 42,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-539.json"
+    },
+    {
+      "id": "senate-119-1-538",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 538,
+      "date": "2025-10-01",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 52,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 45,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "I": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-538.json"
+    },
+    {
+      "id": "senate-119-1-537",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 537,
+      "date": "2025-10-01",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 55,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "I": 1,
+          "R": 52
+        },
+        "nay": {
+          "D": 43,
+          "I": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-537.json"
+    },
+    {
+      "id": "senate-119-1-536",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 536,
+      "date": "2025-10-01",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "s2882-119",
+      "totals": {
+        "yea": 47,
+        "nay": 53,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2
+        },
+        "nay": {
+          "R": 53
+        }
+      },
+      "path": "votes/congress119/senate-1-536.json"
+    },
+    {
+      "id": "senate-119-1-535",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 535,
+      "date": "2025-09-30",
+      "question": "On Passage of the Bill",
+      "result": "Bill Defeated",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 55,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "I": 1,
+          "R": 52
+        },
+        "nay": {
+          "D": 43,
+          "I": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-535.json"
+    },
+    {
+      "id": "senate-119-1-534",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 534,
+      "date": "2025-09-30",
+      "question": "On Passage of the Bill",
+      "result": "Bill Defeated",
+      "bill_id": "s2882-119",
+      "totals": {
+        "yea": 47,
+        "nay": 53,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2
+        },
+        "nay": {
+          "R": 53
+        }
+      },
+      "path": "votes/congress119/senate-1-534.json"
+    },
+    {
+      "id": "senate-119-1-533",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 533,
+      "date": "2025-09-29",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "s2806-119",
+      "totals": {
+        "yea": 37,
+        "nay": 61,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 37
+        },
+        "nay": {
+          "D": 45,
+          "I": 2,
+          "R": 14
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-533.json"
+    },
+    {
+      "id": "senate-119-1-532",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 532,
+      "date": "2025-09-29",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 54,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 3,
+          "R": 51
+        },
+        "nay": {
+          "D": 42,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-532.json"
+    },
+    {
+      "id": "senate-119-1-531",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 531,
+      "date": "2025-09-29",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 54,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 3,
+          "R": 51
+        },
+        "nay": {
+          "D": 42,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-531.json"
+    },
+    {
+      "id": "senate-119-1-530",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 530,
+      "date": "2025-09-19",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 47,
+        "nay": 43,
+        "present": 0,
+        "not_voting": 10
+      },
+      "party_split": {
+        "yea": {
+          "D": 3,
+          "R": 44
+        },
+        "nay": {
+          "D": 41,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "I": 1,
+          "R": 8
+        }
+      },
+      "path": "votes/congress119/senate-1-530.json"
+    },
+    {
+      "id": "senate-119-1-529",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 529,
+      "date": "2025-09-19",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 47,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "D": 3,
+          "R": 44
+        },
+        "nay": {
+          "D": 42,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "R": 8
+        }
+      },
+      "path": "votes/congress119/senate-1-529.json"
+    },
+    {
+      "id": "senate-119-1-528",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 528,
+      "date": "2025-09-19",
+      "question": "On Passage of the Bill",
+      "result": "Bill Defeated",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 44,
+        "nay": 48,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "D": 1,
+          "R": 43
+        },
+        "nay": {
+          "D": 44,
+          "I": 2,
+          "R": 2
+        },
+        "not_voting": {
+          "R": 8
+        }
+      },
+      "path": "votes/congress119/senate-1-528.json"
+    },
+    {
+      "id": "senate-119-1-527",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 527,
+      "date": "2025-09-19",
+      "question": "On Passage of the Bill",
+      "result": "Bill Defeated",
+      "bill_id": "s2882-119",
+      "totals": {
+        "yea": 47,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2
+        },
+        "nay": {
+          "R": 45
+        },
+        "not_voting": {
+          "R": 8
+        }
+      },
+      "path": "votes/congress119/senate-1-527.json"
+    },
+    {
+      "id": "senate-119-1-526",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 526,
+      "date": "2025-09-18",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-526.json"
+    },
+    {
+      "id": "senate-119-1-525",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 525,
+      "date": "2025-09-17",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 52,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-525.json"
+    },
+    {
+      "id": "senate-119-1-524",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 524,
+      "date": "2025-09-17",
+      "question": "On the Decision of the Chair",
+      "result": "Decision of Chair Not Sustained",
+      "bill_id": null,
+      "totals": {
+        "yea": 47,
+        "nay": 52,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2
+        },
+        "nay": {
+          "R": 52
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-524.json"
+    },
+    {
+      "id": "senate-119-1-523",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 523,
+      "date": "2025-09-17",
+      "question": "On the Motion to Reconsider",
+      "result": "Motion to Reconsider Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-523.json"
+    },
+    {
+      "id": "senate-119-1-522",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 522,
+      "date": "2025-09-17",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 48,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 45,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-522.json"
+    },
+    {
+      "id": "senate-119-1-521",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 521,
+      "date": "2025-09-16",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Rejected",
+      "bill_id": "sconres22-119",
+      "totals": {
+        "yea": 36,
+        "nay": 62,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 36
+        },
+        "nay": {
+          "D": 45,
+          "I": 2,
+          "R": 15
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-521.json"
+    },
+    {
+      "id": "senate-119-1-520",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 520,
+      "date": "2025-09-16",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Rejected",
+      "bill_id": "sjres60-119",
+      "totals": {
+        "yea": 47,
+        "nay": 51,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2
+        },
+        "nay": {
+          "R": 51
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-520.json"
+    },
+    {
+      "id": "senate-119-1-519",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 519,
+      "date": "2025-09-15",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 48,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "R": 48
+        },
+        "nay": {
+          "D": 45,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "I": 1,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/senate-1-519.json"
+    },
+    {
+      "id": "senate-119-1-518",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 518,
+      "date": "2025-09-15",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 50,
+        "nay": 44,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 42,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "I": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-518.json"
+    },
+    {
+      "id": "senate-119-1-517",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 517,
+      "date": "2025-09-15",
+      "question": "On the Resolution",
+      "result": "Resolution Agreed to",
+      "bill_id": "sres377-119",
+      "totals": {
+        "yea": 51,
+        "nay": 44,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 43,
+          "I": 1
+        },
+        "not_voting": {
+          "D": 2,
+          "I": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-517.json"
+    },
+    {
+      "id": "senate-119-1-516",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 516,
+      "date": "2025-09-11",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": "sres377-119",
+      "totals": {
+        "yea": 53,
+        "nay": 43,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 41,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 4
+        }
+      },
+      "path": "votes/congress119/senate-1-516.json"
+    },
+    {
+      "id": "senate-119-1-515",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 515,
+      "date": "2025-09-11",
+      "question": "On the Decision of the Chair",
+      "result": "Decision of Chair Not Sustained",
+      "bill_id": "sres377-119",
+      "totals": {
+        "yea": 45,
+        "nay": 53,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 43,
+          "I": 2
+        },
+        "nay": {
+          "R": 53
+        },
+        "not_voting": {
+          "D": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-515.json"
+    },
+    {
+      "id": "senate-119-1-514",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 514,
+      "date": "2025-09-11",
+      "question": "On the Motion to Reconsider",
+      "result": "Motion to Reconsider Agreed to",
+      "bill_id": "sres377-119",
+      "totals": {
+        "yea": 52,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-514.json"
+    },
+    {
+      "id": "senate-119-1-513",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 513,
+      "date": "2025-09-11",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Rejected",
+      "bill_id": "sres377-119",
+      "totals": {
+        "yea": 52,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 44,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-513.json"
+    },
+    {
+      "id": "senate-119-1-512",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 512,
+      "date": "2025-09-10",
+      "question": "On the Motion to Table",
+      "result": "Motion to Table Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 49,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 45,
+          "I": 2,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-512.json"
+    },
+    {
+      "id": "senate-119-1-511",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 511,
+      "date": "2025-09-09",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Agreed to",
+      "bill_id": "sres377-119",
+      "totals": {
+        "yea": 53,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2
+        }
+      },
+      "path": "votes/congress119/senate-1-511.json"
+    },
+    {
+      "id": "senate-119-1-510",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 510,
+      "date": "2025-09-09",
+      "question": "On the Motion to Table",
+      "result": "Motion to Table Agreed to",
+      "bill_id": "sres377-119",
+      "totals": {
+        "yea": 53,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-510.json"
+    },
+    {
+      "id": "senate-119-1-509",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 509,
+      "date": "2025-09-09",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 53,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 1,
+          "R": 52
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-509.json"
+    },
+    {
+      "id": "senate-119-1-508",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 508,
+      "date": "2025-09-09",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 53,
+        "nay": 44,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 1,
+          "R": 52
+        },
+        "nay": {
+          "D": 42,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-508.json"
+    },
+    {
+      "id": "senate-119-1-507",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 507,
+      "date": "2025-09-09",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 49,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "R": 49
+        },
+        "nay": {
+          "D": 43,
+          "I": 2,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-507.json"
+    },
+    {
+      "id": "senate-119-1-506",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 506,
+      "date": "2025-09-09",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 42,
+          "I": 2,
+          "R": 2
+        },
+        "not_voting": {
+          "D": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-506.json"
+    },
+    {
+      "id": "senate-119-1-505",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 505,
+      "date": "2025-09-09",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 52,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-505.json"
+    },
+    {
+      "id": "senate-119-1-504",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 504,
+      "date": "2025-09-08",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 50,
+        "nay": 43,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 41,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-1-504.json"
+    },
+    {
+      "id": "senate-119-1-503",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 503,
+      "date": "2025-09-04",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Agreed to",
+      "bill_id": "s2296-119",
+      "totals": {
+        "yea": 83,
+        "nay": 13,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 34,
+          "I": 1,
+          "R": 48
+        },
+        "nay": {
+          "D": 11,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/senate-1-503.json"
+    },
+    {
+      "id": "senate-119-1-502",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 502,
+      "date": "2025-09-04",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 53,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-502.json"
+    },
+    {
+      "id": "senate-119-1-501",
+      "chamber": "senate",
+      "session": 1,
+      "roll_number": 501,
+      "date": "2025-09-04",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 53,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 53
+        },
+        "nay": {
+          "D": 44,
+          "I": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "I": 1
+        }
+      },
+      "path": "votes/congress119/senate-1-501.json"
+    },
     {
       "id": "senate-119-1-500",
       "chamber": "senate",
