@@ -10,6 +10,7 @@ docs/data/congress{NNN}_bills.json and rewrites docs/data/congresses.json.
 
 from __future__ import annotations
 
+import argparse
 import os
 import sys
 from collections import Counter
@@ -60,15 +61,47 @@ def list_recent_bills(
             return
 
 
-def main() -> int:
+def _parse_args(argv: list[str] | None) -> argparse.Namespace:
+    """Parse CLI flags, mirroring fetch_votes.py's argparse pattern.
+
+    ``argv`` is normalised to ``[]`` when None so a bare ``main()`` call
+    (as the existing integration tests make) parses to defaults instead of
+    reading the ambient ``sys.argv`` — the real CLI entry point passes
+    ``sys.argv[1:]`` explicitly from ``__main__`` below.
+    """
+    parser = argparse.ArgumentParser(
+        description="Fetch recently voted-on bills and merge them into the "
+                    "current Congress's manifest.",
+    )
+    parser.add_argument(
+        "--congress", type=int, default=None,
+        help="Congress number (default: the current Congress).",
+    )
+    parser.add_argument(
+        "--recent-days", type=int, default=RECENT_DAYS,
+        help="Re-fetch window in days: keep bills whose latest passage-type "
+             f"action falls within this many days (default {RECENT_DAYS}). "
+             "The run is bounded further by the fetcher's 8-page list cap. "
+             "Must be between 1 and 365 — the ceiling keeps a manual refresh "
+             "from ever becoming an unbounded backfill.",
+    )
+    args = parser.parse_args(argv if argv is not None else [])
+    if not 1 <= args.recent_days <= 365:
+        parser.error("--recent-days must be between 1 and 365")
+    return args
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = _parse_args(argv)
+
     api_key = os.environ.get("CONGRESS_API_KEY")
     if not api_key:
         print("CONGRESS_API_KEY is not set in the environment.", file=sys.stderr)
         return 2
 
     now = datetime.now(timezone.utc)
-    cutoff = now - timedelta(days=RECENT_DAYS)
-    congress = current_congress(now)
+    cutoff = now - timedelta(days=args.recent_days)
+    congress = args.congress if args.congress is not None else current_congress(now)
     print(f"Fetching bills for the {congress}th Congress (cutoff {cutoff.date()})")
 
     client = CongressClient(api_key)
@@ -150,4 +183,4 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(main(sys.argv[1:]))

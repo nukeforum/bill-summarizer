@@ -225,7 +225,7 @@ HUDUSER_API_KEY  = &lt;your HUD token&gt;</code></pre>
     <h2>What runs and when</h2>
     <div class="table-scroll">
       <table>
-        <caption>Five GitHub Actions workflows that publish the data feed.</caption>
+        <caption>The GitHub Actions workflows that publish the data feed.</caption>
         <thead>
           <tr><th>Workflow</th><th>Cadence</th><th>What it produces</th></tr>
         </thead>
@@ -235,6 +235,7 @@ HUDUSER_API_KEY  = &lt;your HUD token&gt;</code></pre>
           <tr><td><code>update-session-calendar.yml</code></td><td>Daily</td><td>House and Senate session days derived from the USHOR voting-days ICS and the Senate session XML.</td></tr>
           <tr><td><code>update-members.yml</code></td><td>Weekly, Sundays 03:00 UTC</td><td>Current-Congress member roster (phase 1) and per-member sponsored/cosponsored legislation (phase 2).</td></tr>
           <tr><td><code>update-zip-crosswalk.yml</code></td><td>Quarterly</td><td>Bundled HUD USPS ZIP&rarr;Congressional-district lookup table.</td></tr>
+          <tr><td><code>refresh-data.yml</code></td><td>Manual (on-demand)</td><td>Bounded re-fetch of one chosen surface (<code>votes</code>, <code>bills</code>, <code>members</code>, or <code>all</code>) &mdash; e.g. to activate a newly merged capability without waiting for the daily cycle.</td></tr>
         </tbody>
       </table>
     </div>
