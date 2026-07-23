@@ -14,6 +14,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -24,6 +26,7 @@ import androidx.compose.material.icons.automirrored.filled.OpenInNew
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -186,7 +189,11 @@ private fun SuccessBody(
     ) {
         TodaySummaryCard(today = today, statuses = statuses)
         if (electionCalendar != null) {
-            UpcomingElectionsSection(calendar = electionCalendar, today = today)
+            UpcomingElectionsSection(
+                calendar = electionCalendar,
+                today = today,
+                savedReps = savedReps,
+            )
             OnYourBallotSection(
                 savedReps = savedReps,
                 calendar = electionCalendar,
@@ -266,30 +273,79 @@ private fun BallotRepRow(ballotRep: BallotRep, onMemberClick: (String) -> Unit) 
 
 /**
  * Issue #24's "when will I vote" surface: the soonest upcoming elections
- * with a days-remaining countdown. National-only for now (`stateCode = null`
- * → just the statutory federal general) since [ElectionCalendar] state
- * derivation lives in `feature:reps`; the section hides entirely when the
- * calendar holds nothing on or after [today] so it never shows an empty box.
+ * with a days-remaining countdown, still national-only for the countdown rows
+ * (`stateCode = null` → the statutory federal general). Issue #25 adds the
+ * always-actionable "Register & vote" affordance below the rows: registration
+ * is useful year-round, so — unlike before — the card renders even when nothing
+ * is upcoming, replacing the rows with a quiet "no upcoming elections" line but
+ * keeping the button. The button targets the user's state (derived from
+ * [savedReps] like #24's scope rule) or vote.gov's front door in the
+ * multi-/no-state fallback; the app collects no address or PII.
  */
 @Composable
 private fun UpcomingElectionsSection(
     calendar: ElectionCalendar,
     today: LocalDate,
+    savedReps: List<Member>,
     stateCode: String? = null,
 ) {
     val elections = upcomingElections(calendar, today, stateCode)
-    if (elections.isEmpty()) return
+    val registrationUrl = VoteGovLinks.registrationUrl(VoteGovLinks.registrationStateCode(savedReps))
 
     Card(modifier = Modifier.fillMaxWidth()) {
         Column(modifier = Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
             Text("Upcoming elections", style = MaterialTheme.typography.titleMedium)
-            elections.forEach { ElectionRow(it) }
-            Text(
-                text = calendar.source,
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            if (elections.isEmpty()) {
+                Text(
+                    text = "No upcoming elections in the calendar.",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            } else {
+                elections.forEach { ElectionRow(it) }
+                Text(
+                    text = calendar.source,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
+            RegisterAndVoteAffordance(registrationUrl = registrationUrl)
+        }
+    }
+}
+
+/**
+ * Issue #25's "Register & vote" deep-link: a full-width button that hands
+ * [registrationUrl] (a vote.gov page) to the browser, with an always-visible
+ * caption disclosing the external handoff. Button + caption merge into one
+ * semantic node so a screen reader announces the disclosure with the action.
+ */
+@Composable
+private fun RegisterAndVoteAffordance(registrationUrl: String) {
+    val context = LocalContext.current
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clearAndSetSemantics { contentDescription = VoteGovLinks.ACTION_SEMANTICS },
+        verticalArrangement = Arrangement.spacedBy(4.dp),
+    ) {
+        FilledTonalButton(
+            onClick = { openInCustomTab(context, registrationUrl) },
+            modifier = Modifier.fillMaxWidth(),
+        ) {
+            Text("Register & vote")
+            Spacer(modifier = Modifier.width(8.dp))
+            Icon(
+                imageVector = Icons.AutoMirrored.Filled.OpenInNew,
+                contentDescription = null,
+                modifier = Modifier.size(18.dp),
             )
         }
+        Text(
+            text = VoteGovLinks.HANDOFF_CAPTION,
+            style = MaterialTheme.typography.labelSmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
     }
 }
 
