@@ -32,6 +32,7 @@ internal fun billFixture(
     outcome: Outcome = Outcome.PASSED_HOUSE,
     policyArea: String? = null,
     lifecycleStatus: com.informedcitizen.pipeline.model.LifecycleStatus? = null,
+    subjects: List<String> = emptyList(),
 ): Bill = Bill(
     id = id,
     congress = 119,
@@ -45,6 +46,7 @@ internal fun billFixture(
     outcome = outcome,
     lifecycleStatus = lifecycleStatus,
     policyArea = policyArea,
+    subjects = subjects,
     summaryCrs = null,
     textUrlHtml = null,
     textUrlXml = null,

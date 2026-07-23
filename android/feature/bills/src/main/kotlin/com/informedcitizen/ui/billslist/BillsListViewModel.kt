@@ -49,6 +49,7 @@ class BillsListViewModel @Inject constructor(
     private val sessionStatusLine = MutableStateFlow<String?>(null)
     private val selectedTopic = MutableStateFlow<BillTopic?>(null)
     private val selectedPolicyArea = MutableStateFlow<String?>(null)
+    private val selectedSubject = MutableStateFlow<String?>(null)
     private val selectedStatus = MutableStateFlow(BillStatusFilter.ALL)
     private val _searchQuery = MutableStateFlow("")
     val searchQuery: StateFlow<String> = _searchQuery.asStateFlow()
@@ -67,6 +68,7 @@ class BillsListViewModel @Inject constructor(
             selectedPolicyArea,
             billRepository.generatedAt,
             selectedStatus,
+            selectedSubject,
         ),
     ) { values ->
         @Suppress("UNCHECKED_CAST")
@@ -83,6 +85,7 @@ class BillsListViewModel @Inject constructor(
         val policyArea = values[9] as String?
         val generatedAt = values[10] as String?
         val status = values[11] as BillStatusFilter
+        val subject = values[12] as String?
 
         when {
             result == null -> BillsListUiState.Loading
@@ -102,6 +105,7 @@ class BillsListViewModel @Inject constructor(
                 policyArea = policyArea,
                 generatedAt = generatedAt,
                 status = status,
+                subject = subject,
             )
         }
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), BillsListUiState.Loading)
@@ -135,6 +139,14 @@ class BillsListViewModel @Inject constructor(
             }
             .cachedIn(viewModelScope)
 
+    /**
+     * The two post-SQL "chip" filters folded into one flow so the [pagedBills]
+     * combine stays within kotlinx's 5-arg typed overload: the outcome
+     * [BillsListFilter] and the #10 legislative-subject facet.
+     */
+    private val postSqlChips: Flow<Pair<BillsListFilter, String?>> =
+        combine(filter, selectedSubject) { currentFilter, subject -> currentFilter to subject }
+
     /** The AI topic to filter by, or null when AI titles are disabled. */
     private val activeTopicFilter: Flow<BillTopic?> =
         combine(selectedTopic, aiPrefs.enabled) { topic, aiEnabled ->
@@ -164,12 +176,12 @@ class BillsListViewModel @Inject constructor(
      */
     val pagedBills: Flow<PagingData<Bill>> = combine(
         pagedSource,
-        filter,
+        postSqlChips,
         _searchQuery,
         activeTopicFilter,
         visibleSummariesFlow,
-    ) { data, currentFilter, query, activeTopic, summaries ->
-        data.filter { billMatchesListFilters(it, currentFilter, query, activeTopic, summaries) }
+    ) { data, (currentFilter, subject), query, activeTopic, summaries ->
+        data.filter { billMatchesListFilters(it, currentFilter, query, activeTopic, summaries, subject) }
     }
 
     init {
@@ -188,6 +200,10 @@ class BillsListViewModel @Inject constructor(
 
     fun selectPolicyArea(policyArea: String?) {
         selectedPolicyArea.value = policyArea
+    }
+
+    fun selectSubject(subject: String?) {
+        selectedSubject.value = subject
     }
 
     fun setStatusFilter(status: BillStatusFilter) {
@@ -215,6 +231,7 @@ class BillsListViewModel @Inject constructor(
         policyArea: String?,
         generatedAt: String?,
         status: BillStatusFilter,
+        subject: String?,
     ): BillsListUiState.Success {
         val capable = capStatus == AiCapability.Status.Available ||
             capStatus is AiCapability.Status.ModelDownloading
@@ -234,22 +251,26 @@ class BillsListViewModel @Inject constructor(
             .mapNotNull { it.policyArea }
             .distinct()
             .sorted()
+        val availableSubjects = distinctSubjects(allBills)
         // A stale selection (e.g. the subject vanished on refresh) deselects
         // rather than pinning the list to an invisible empty filter.
         val activePolicyArea = policyArea?.takeIf { it in availablePolicyAreas }
+        val activeSubject = subject?.takeIf { it in availableSubjects }
         val activeTopic = if (aiEnabled) topic else null
         // policyArea filters here (it becomes a SQL predicate under #41 paging);
-        // the remaining three narrow via the shared billMatchesListFilters seam.
+        // the remaining four narrow via the shared billMatchesListFilters seam.
         val policyFiltered = allBills
             .filter { activePolicyArea == null || it.policyArea == activePolicyArea }
         val filteredBills = policyFiltered.filter {
-            billMatchesListFilters(it, currentFilter, query, activeTopic, visibleSummaries)
+            billMatchesListFilters(it, currentFilter, query, activeTopic, visibleSummaries, activeSubject)
         }
         // Bills passing every filter except the topic are counted as hidden so
         // the "N bills hidden — not yet summarized" nudge stays honest.
         val hidden = if (activeTopic != null) {
-            policyFiltered.count { currentFilter.matches(it) && it.matchesSearchQuery(query) } -
-                filteredBills.size
+            policyFiltered.count {
+                currentFilter.matches(it) && it.matchesSearchQuery(query) &&
+                    (activeSubject == null || it.hasSubject(activeSubject))
+            } - filteredBills.size
         } else {
             0
         }
@@ -268,6 +289,8 @@ class BillsListViewModel @Inject constructor(
             searchQuery = query,
             availablePolicyAreas = availablePolicyAreas,
             selectedPolicyArea = activePolicyArea,
+            availableSubjects = availableSubjects,
+            selectedSubject = activeSubject,
             selectedStatus = status,
             // The lifecycle-status filter only makes sense once the broadened
             // (#39) pre-floor bills are published; until then every bill has a

@@ -23,6 +23,14 @@ sealed interface BillsListUiState {
         val searchQuery: String = "",
         val availablePolicyAreas: List<String> = emptyList(),
         val selectedPolicyArea: String? = null,
+        /**
+         * The finer-grained legislative subjects (#10/#28) present across the
+         * loaded bills, sorted; empty (facet hidden) until the feed carries
+         * subject terms. Distinct from [availablePolicyAreas]: `policyArea` is a
+         * single coarse value, `subjects` are multi-value topical tags.
+         */
+        val availableSubjects: List<String> = emptyList(),
+        val selectedSubject: String? = null,
         val selectedStatus: BillStatusFilter = BillStatusFilter.ALL,
         /**
          * Whether any loaded bill carries a pre-floor lifecycle status (#39/#42).

@@ -25,8 +25,14 @@ import com.informedcitizen.ui.components.BillCardSummary
  * once, independent of whether the list is materialised in memory or paged.
  *
  * All clauses are ANDed: a bill is visible only when it clears every active
- * filter. A [BillsListFilter.ALL] filter, a blank [query], and a null
- * [activeTopic] each pass everything, so the default state hides nothing.
+ * filter. A [BillsListFilter.ALL] filter, a blank [query], a null [activeTopic],
+ * and a null [selectedSubject] each pass everything, so the default state hides
+ * nothing.
+ *
+ * [selectedSubject] is the finer-grained legislative-subject facet (issue #10,
+ * data from #28). Like the outcome/search/topic clauses it stays a post-SQL
+ * predicate — `Bill.subjects` is a multi-value list with no extracted column, so
+ * it can't be pushed into the paging query the way `policyArea` is.
  */
 internal fun billMatchesListFilters(
     bill: Bill,
@@ -34,7 +40,29 @@ internal fun billMatchesListFilters(
     query: String,
     activeTopic: BillTopic?,
     summaries: Map<String, BillCardSummary>,
+    selectedSubject: String? = null,
 ): Boolean =
     filter.matches(bill) &&
         bill.matchesSearchQuery(query) &&
-        (activeTopic == null || summaries[bill.id]?.topic == activeTopic)
+        (activeTopic == null || summaries[bill.id]?.topic == activeTopic) &&
+        (selectedSubject == null || bill.hasSubject(selectedSubject))
+
+/**
+ * Case-insensitive membership test against the bill's legislative subjects
+ * (issue #10/#28). A subject picked from [distinctSubjects] always originates
+ * from a bill's own list, but matching case-insensitively keeps the facet robust
+ * to any casing drift in the published data.
+ */
+internal fun Bill.hasSubject(subject: String): Boolean =
+    subjects.any { it.equals(subject, ignoreCase = true) }
+
+/**
+ * The distinct legislative subjects across [bills], sorted for a stable filter
+ * facet (issue #10). Mirrors the `availablePolicyAreas` derivation: bills with
+ * no subjects simply contribute nothing, so the facet is empty (and hidden)
+ * until the #28 subject terms are populated in the feed.
+ */
+internal fun distinctSubjects(bills: List<Bill>): List<String> =
+    bills.flatMap { it.subjects }
+        .distinct()
+        .sorted()
