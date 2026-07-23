@@ -26,6 +26,11 @@ import okio.use
  * Checks (each independently emits a line):
  *  - Current-Congress bills manifest `generated_at` within
  *    [BILLS_MAX_AGE_DAYS].
+ *  - When a sharded bills index is published (issue #40) it is
+ *    internally consistent with the shard files on disk: every listed
+ *    shard exists, its declared `count` matches the shard's actual bill
+ *    count, `total_bills` equals the sum of shard counts, and no orphaned
+ *    shard is left unreferenced. Tolerated if absent.
  *  - Members index `generated_at` within [MEMBERS_MAX_AGE_DAYS].
  *  - Votes index `generated_at` within [VOTES_MAX_AGE_DAYS] (the index
  *    is rebuilt on every fetch-votes run, so a stale timestamp means
@@ -101,6 +106,59 @@ fun checkFreshness(
         } else if (ageDays >= BILLS_MAX_AGE_DAYS) {
             failures += "bills: $billsName generated_at=$generatedAt " +
                 "is older than $BILLS_MAX_AGE_DAYS days"
+        }
+    }
+
+    // 1b. Sharded bills index consistency (issue #40). The shard set is a newer,
+    // optional artifact during the dual-publish transition, so its absence is
+    // tolerated. When present, verify the index doesn't point at a missing or
+    // miscounted shard: a half-written or pruned-mid-run shard set that publishes
+    // an index out of sync with the files on disk would make the app's paging
+    // (#41) fetch a 404 or render the wrong page count.
+    val shardIndexName = shardIndexFileName(congress)
+    val shardIndexPath = outputDir / shardIndexName
+    if (fileSystem.exists(shardIndexPath)) {
+        val index = loadJson(fileSystem, shardIndexPath)
+        if (index == null) {
+            failures += "shards: $shardIndexName is unreadable"
+        } else {
+            val shards = (index["shards"] as? JsonArray).orEmpty().mapNotNull { it as? JsonObject }
+            val listedNames = mutableSetOf<String>()
+            var declaredTotal = 0
+            for (entry in shards) {
+                val name = entry.stringField("path")
+                if (name.isNullOrEmpty()) {
+                    failures += "shards: $shardIndexName has a shard entry with no path"
+                    continue
+                }
+                listedNames += name
+                val declared = entry.intField("count")
+                if (declared != null) declaredTotal += declared
+                val shard = loadJson(fileSystem, outputDir / name)
+                if (shard == null) {
+                    failures += "shards: $shardIndexName references missing or unreadable shard $name"
+                    continue
+                }
+                val actual = (shard["bills"] as? JsonArray)?.size ?: 0
+                if (declared != null && actual != declared) {
+                    failures += "shards: $name holds $actual bills but the index lists $declared"
+                }
+            }
+            val totalBills = index.intField("total_bills")
+            if (totalBills != null && totalBills != declaredTotal) {
+                failures += "shards: $shardIndexName total_bills=$totalBills " +
+                    "!= sum of shard counts $declaredTotal"
+            }
+            // An orphaned shard from a prior larger run that failed to prune would
+            // be served stale by a date-seeking client, so flag any on-disk shard
+            // for this congress the index no longer references.
+            for (path in fileSystem.list(outputDir)) {
+                val match = SHARD_FILE_REGEX.matchEntire(path.name) ?: continue
+                if (match.groupValues[1].toInt() == congress && path.name !in listedNames) {
+                    failures += "shards: orphaned shard ${path.name} on disk is not " +
+                        "referenced by $shardIndexName"
+                }
+            }
         }
     }
 

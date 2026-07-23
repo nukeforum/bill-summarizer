@@ -25,7 +25,7 @@ import okio.use
  */
 const val SHARD_PAGE_SIZE: Int = 500
 
-private val SHARD_FILE_REGEX = Regex("""^congress(\d+)_bills_p(\d+)\.json$""")
+internal val SHARD_FILE_REGEX = Regex("""^congress(\d+)_bills_p(\d+)\.json$""")
 
 /** Mirrors Python `shard_index_path_for`. */
 fun shardIndexFileName(congress: Int): String = "congress${congress}_bills_index.json"

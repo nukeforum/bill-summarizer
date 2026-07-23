@@ -251,6 +251,98 @@ def test_same_day_registration_is_exempt(tmp_path, monkeypatch):
     assert not any("registration" in f for f in check_freshness.check(now=now))
 
 
+def _write_shard_set(now: datetime, shards: list[dict], *, total_bills: int | None = None) -> None:
+    """Publish a shard index plus a shard file per entry. Each entry is
+    ``{"page", "path", "count"}``; the shard file carries ``count`` empty-ish
+    bills so the index/file counts line up unless a test deliberately skews one."""
+    entries = []
+    for s in shards:
+        entries.append({
+            "page": s["page"],
+            "path": s["path"],
+            "count": s["count"],
+            "first_action_date": None,
+            "last_action_date": None,
+        })
+        actual = s.get("actual", s["count"])
+        (_common.OUTPUT_DIR / s["path"]).write_text(json.dumps({
+            "generated_at": _iso(now),
+            "congress": 119,
+            "votes_coverage": False,
+            "bills": [{"id": f"b{i}"} for i in range(actual)],
+        }), encoding="utf-8")
+    (_common.OUTPUT_DIR / "congress119_bills_index.json").write_text(json.dumps({
+        "generated_at": _iso(now),
+        "congress": 119,
+        "page_size": 500,
+        "total_bills": sum(s["count"] for s in shards) if total_bills is None else total_bills,
+        "votes_coverage": False,
+        "shards": entries,
+    }), encoding="utf-8")
+
+
+def test_absent_shard_index_is_not_a_failure(tmp_path, monkeypatch):
+    """The fresh world never seeds a shard index; its absence is tolerated during
+    the dual-publish transition (issue #40)."""
+    now = datetime(2026, 6, 1, 12, 0, tzinfo=timezone.utc)
+    _seed_fresh_world(tmp_path, monkeypatch, now)
+    assert not (_common.OUTPUT_DIR / "congress119_bills_index.json").is_file()
+    assert not any("shards:" in f for f in check_freshness.check(now=now))
+
+
+def test_consistent_shard_set_is_green(tmp_path, monkeypatch):
+    now = datetime(2026, 6, 1, 12, 0, tzinfo=timezone.utc)
+    _seed_fresh_world(tmp_path, monkeypatch, now)
+    _write_shard_set(now, [
+        {"page": 1, "path": "congress119_bills_p001.json", "count": 3},
+        {"page": 2, "path": "congress119_bills_p002.json", "count": 1},
+    ])
+    assert not any("shards:" in f for f in check_freshness.check(now=now))
+
+
+def test_missing_shard_file_flagged(tmp_path, monkeypatch):
+    now = datetime(2026, 6, 1, 12, 0, tzinfo=timezone.utc)
+    _seed_fresh_world(tmp_path, monkeypatch, now)
+    _write_shard_set(now, [{"page": 1, "path": "congress119_bills_p001.json", "count": 2}])
+    (_common.OUTPUT_DIR / "congress119_bills_p001.json").unlink()
+    failures = check_freshness.check(now=now)
+    assert any("shards:" in f and "missing or unreadable shard" in f for f in failures), failures
+
+
+def test_shard_count_mismatch_flagged(tmp_path, monkeypatch):
+    now = datetime(2026, 6, 1, 12, 0, tzinfo=timezone.utc)
+    _seed_fresh_world(tmp_path, monkeypatch, now)
+    # Index lists 5 but the shard file only holds 2 bills.
+    _write_shard_set(now, [
+        {"page": 1, "path": "congress119_bills_p001.json", "count": 5, "actual": 2},
+    ])
+    failures = check_freshness.check(now=now)
+    assert any("holds 2 bills but the index lists 5" in f for f in failures), failures
+
+
+def test_total_bills_mismatch_flagged(tmp_path, monkeypatch):
+    now = datetime(2026, 6, 1, 12, 0, tzinfo=timezone.utc)
+    _seed_fresh_world(tmp_path, monkeypatch, now)
+    # Shard counts sum to 3 but total_bills claims 99.
+    _write_shard_set(now, [
+        {"page": 1, "path": "congress119_bills_p001.json", "count": 3},
+    ], total_bills=99)
+    failures = check_freshness.check(now=now)
+    assert any("total_bills=99" in f and "sum of shard counts 3" in f for f in failures), failures
+
+
+def test_orphaned_shard_file_flagged(tmp_path, monkeypatch):
+    now = datetime(2026, 6, 1, 12, 0, tzinfo=timezone.utc)
+    _seed_fresh_world(tmp_path, monkeypatch, now)
+    _write_shard_set(now, [{"page": 1, "path": "congress119_bills_p001.json", "count": 2}])
+    # A stale shard from a prior larger run the index no longer references.
+    (_common.OUTPUT_DIR / "congress119_bills_p002.json").write_text(json.dumps({
+        "generated_at": _iso(now), "congress": 119, "votes_coverage": False, "bills": [],
+    }), encoding="utf-8")
+    failures = check_freshness.check(now=now)
+    assert any("orphaned shard congress119_bills_p002.json" in f for f in failures), failures
+
+
 def test_stale_backfill_cursor_flagged(tmp_path, monkeypatch):
     now = datetime(2026, 6, 1, 12, 0, tzinfo=timezone.utc)
     _seed_fresh_world(tmp_path, monkeypatch, now)
