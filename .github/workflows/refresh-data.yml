@@ -75,19 +75,24 @@ jobs:
         if: ${{ inputs.surface == 'bills' || inputs.surface == 'all' }}
         env:
           CONGRESS_API_KEY: ${{ secrets.CONGRESS_API_KEY }}
+          CONGRESS: ${{ inputs.congress }}
+          RECENT_DAYS: ${{ inputs.recent_days }}
         run: |
           python data-pipeline/scripts/fetch_bills.py \
-            ${{ inputs.congress && format('--congress {0}', inputs.congress) || '' }} \
-            --recent-days "${{ inputs.recent_days }}"
+            ${CONGRESS:+--congress "$CONGRESS"} \
+            --recent-days "$RECENT_DAYS"
 
       - name: Refresh votes
         if: ${{ inputs.surface == 'votes' || inputs.surface == 'all' }}
         # No CONGRESS_API_KEY: votes come from keyless sources (senate.gov LIS,
         # clerk.house.gov EVS, two GitHub-raw legislator YAMLs).
+        env:
+          CONGRESS: ${{ inputs.congress }}
+          MAX_NEW_VOTES: ${{ inputs.max_new_votes }}
         run: |
           python data-pipeline/scripts/fetch_votes.py \
-            ${{ inputs.congress && format('--congress {0}', inputs.congress) || '' }} \
-            --max-new "${{ inputs.max_new_votes }}"
+            ${CONGRESS:+--congress "$CONGRESS"} \
+            --max-new "$MAX_NEW_VOTES"
           # refresh_bill_vote_refs inside this run re-attaches vote_refs /
           # party_split to ALL published bills and flips votes_coverage — the
           # manual path to "the votes feature is live now".
