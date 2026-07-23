@@ -78,9 +78,11 @@ fun BillDetailScreen(
     val hasShareableBody = successBill != null &&
         (!successBill.summaryCrs.isNullOrBlank() || !successBill.textUrlHtml.isNullOrBlank())
 
+    // Full text arrives already stripped (BillTextFetcher); the CRS summary is
+    // light HTML, so plain-text-ify it before it becomes the LLM prompt body.
     fun resolveBody(useFullText: Boolean): String? = when {
         useFullText -> (fullTextState as? FullTextState.Loaded)?.text
-        else -> successBill?.summaryCrs
+        else -> successBill?.summaryCrs?.let(LlmShareHelper::crsSummaryToPlainText)
     }
 
     fun closeSheet(after: () -> Unit = {}) {
