@@ -2,9 +2,11 @@ package com.informedcitizen.testutil
 
 import com.informedcitizen.data.cache.BillSource
 import com.informedcitizen.data.cache.CachedArtifact
+import com.informedcitizen.data.cache.ElectionCalendarCache
 import com.informedcitizen.data.cache.MemberVotesCache
 import com.informedcitizen.data.cache.MembersIndexCache
 import com.informedcitizen.data.cache.SessionCalendarCache
+import com.informedcitizen.pipeline.model.ElectionCalendar
 import com.informedcitizen.pipeline.model.MemberVotes
 import com.informedcitizen.pipeline.model.MembersIndex
 import com.informedcitizen.pipeline.model.SessionCalendar
@@ -59,6 +61,34 @@ class FakeSessionCalendarCache : SessionCalendarCache {
         bySource[source]
 
     override suspend fun loadFreshest(): CachedArtifact<SessionCalendar>? =
+        bySource.values.maxByOrNull { it.fetchedAtMillis }
+
+    override suspend fun clearSource(source: BillSource) {
+        bySource.remove(source)
+    }
+}
+
+/** In-memory fake of [ElectionCalendarCache] for repository tests. */
+class FakeElectionCalendarCache : ElectionCalendarCache {
+    private val bySource = mutableMapOf<BillSource, CachedArtifact<ElectionCalendar>>()
+
+    override suspend fun replaceForSource(
+        source: BillSource,
+        calendar: ElectionCalendar,
+        fetchedAtMillis: Long,
+    ) {
+        bySource[source] = CachedArtifact(
+            value = calendar,
+            source = source,
+            generatedAt = calendar.generatedAt,
+            fetchedAtMillis = fetchedAtMillis,
+        )
+    }
+
+    override suspend fun load(source: BillSource): CachedArtifact<ElectionCalendar>? =
+        bySource[source]
+
+    override suspend fun loadFreshest(): CachedArtifact<ElectionCalendar>? =
         bySource.values.maxByOrNull { it.fetchedAtMillis }
 
     override suspend fun clearSource(source: BillSource) {

@@ -10,8 +10,12 @@ import com.informedcitizen.pipeline.model.CongressesIndex
 import com.informedcitizen.pipeline.model.Member
 import com.informedcitizen.pipeline.model.MemberLegislation
 import com.informedcitizen.pipeline.model.MemberLegislationItem
+import com.informedcitizen.pipeline.model.MemberVoteRow
+import com.informedcitizen.pipeline.model.MemberVotes
 import com.informedcitizen.pipeline.model.MembersIndex
 import com.informedcitizen.pipeline.model.Outcome
+import com.informedcitizen.pipeline.model.VotePosition
+import com.informedcitizen.pipeline.model.ElectionCalendar
 import com.informedcitizen.pipeline.model.SessionCalendar
 import com.informedcitizen.pipeline.model.Sponsor
 import com.informedcitizen.data.repository.BillRepository
@@ -43,12 +47,14 @@ private class StubBillsApi(private val bills: List<Bill>) : BillsApi {
     override suspend fun getBillsManifest(url: String): BillsManifest =
         BillsManifest(generatedAt = "x", congress = 119, bills = bills)
     override suspend fun getSessionCalendar(): SessionCalendar = error("not used")
+    override suspend fun getElectionCalendar(): ElectionCalendar = error("not used")
 }
 
 private class DetailStubMemberRepository(
     private val memberById: Map<String, Member?> = emptyMap(),
     private val sponsoredById: Map<String, MemberLegislation?> = emptyMap(),
     private val cosponsoredById: Map<String, MemberLegislation?> = emptyMap(),
+    private val votesById: Map<String, MemberVotes?> = emptyMap(),
 ) : MemberRepository {
     override suspend fun findRepsForLocation(
         congress: Int,
@@ -65,8 +71,27 @@ private class DetailStubMemberRepository(
         sponsoredById.getOrDefault(bioguideId, MemberLegislation(bioguideId, 119, "sponsored", "x", emptyList()))
     override suspend fun getCosponsored(bioguideId: String): MemberLegislation? =
         cosponsoredById.getOrDefault(bioguideId, MemberLegislation(bioguideId, 119, "cosponsored", "x", emptyList()))
+    override suspend fun getVotes(bioguideId: String): MemberVotes? =
+        votesById.getOrDefault(bioguideId, MemberVotes("x", bioguideId, 0, emptyList()))
     override suspend fun getIndex(congress: Int): MembersIndex? = null
 }
+
+private fun aVoteRow(
+    voteId: String,
+    billId: String? = "hr1-119",
+    position: VotePosition = VotePosition.YEA,
+) = MemberVoteRow(
+    voteId = voteId,
+    congress = 119,
+    date = "2026-07-22",
+    question = "On Passage",
+    result = "Passed",
+    position = position,
+    billId = billId,
+    type = billId?.let { "hr" },
+    number = billId?.let { "1" },
+    shortTitle = billId?.let { "Sample Act" },
+)
 
 private fun anItem(
     id: String,
@@ -175,6 +200,52 @@ class MemberDetailViewModelTest {
         val cleared = vm.uiState.value
         assertEquals(3, cleared.filteredSponsored.size)
         assertEquals(1, cleared.filteredCosponsored.size)
+    }
+
+    @Test
+    fun `load surfaces recent votes newest first`() = runTest {
+        val members = DetailStubMemberRepository(
+            memberById = mapOf("A1" to aMember("A1")),
+            votesById = mapOf(
+                "A1" to MemberVotes(
+                    "x", "A1", 2,
+                    listOf(aVoteRow("v2"), aVoteRow("v1", position = VotePosition.NAY)),
+                ),
+            ),
+        )
+        val bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
+        val vm = MemberDetailViewModel(members, bills).also { it.congressProvider = { 119 } }
+        vm.load("A1")
+        val s = vm.uiState.first { !it.isLoading }
+        assertEquals(listOf("v2", "v1"), s.recentVotes.map { it.voteId })
+    }
+
+    @Test
+    fun `load caps recent votes at 25`() = runTest {
+        val rows = (1..40).map { aVoteRow("v$it") }
+        val members = DetailStubMemberRepository(
+            memberById = mapOf("A1" to aMember("A1")),
+            votesById = mapOf("A1" to MemberVotes("x", "A1", rows.size, rows)),
+        )
+        val bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
+        val vm = MemberDetailViewModel(members, bills).also { it.congressProvider = { 119 } }
+        vm.load("A1")
+        val s = vm.uiState.first { !it.isLoading }
+        assertEquals(25, s.recentVotes.size)
+        assertEquals("v1", s.recentVotes.first().voteId)
+    }
+
+    @Test
+    fun `load leaves votes empty when member has none`() = runTest {
+        val members = DetailStubMemberRepository(
+            memberById = mapOf("A1" to aMember("A1")),
+            votesById = mapOf("A1" to null),
+        )
+        val bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
+        val vm = MemberDetailViewModel(members, bills).also { it.congressProvider = { 119 } }
+        vm.load("A1")
+        val s = vm.uiState.first { !it.isLoading }
+        assertTrue(s.recentVotes.isEmpty())
     }
 
     @Test

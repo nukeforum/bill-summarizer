@@ -3,12 +3,15 @@ package com.informedcitizen.ui.reps
 import com.informedcitizen.domain.search.matchesSearchQuery
 import com.informedcitizen.pipeline.model.Member
 import com.informedcitizen.pipeline.model.MemberLegislationItem
+import com.informedcitizen.pipeline.model.MemberVoteRow
 
 data class MemberDetailUiState(
     val isLoading: Boolean = true,
     val member: Member? = null,
     val sponsored: List<MemberLegislationItem> = emptyList(),
     val cosponsored: List<MemberLegislationItem> = emptyList(),
+    /** Recent recorded roll-call positions, newest first (issue #22). */
+    val recentVotes: List<MemberVoteRow> = emptyList(),
     val errorMessage: String? = null,
     val searchQuery: String = "",
 ) {

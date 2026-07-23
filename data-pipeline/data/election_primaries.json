@@ -1,0 +1,66 @@
+{
+  "_meta": {
+    "description": "Operator-curated state primary (and primary-runoff) election dates for U.S. federal elections. Consumed by scripts/build_election_calendar.py, which merges these rows with the statutory federal general-election date to publish docs/data/election_calendar.json (issue #23, epic #16).",
+    "why_curated": "Per issue #23 correctness beats automation: a wrong primary date is worse than a missing one. Primary dates are announced far ahead and rarely move, so a small hand-verified file in-repo is safer than scraping. Each row carries its own `source` so provenance travels with the date and stays auditable.",
+    "update_cadence": "Reviewed and extended once per even-year federal cycle (and whenever a state moves its primary). Verify every date against the state's Secretary of State / election-authority page before adding it. Rows failing validation (unparseable date, unknown state, non-even election_year) are dropped by the builder with a warning rather than published.",
+    "schema": {
+      "state": "2-letter USPS postal code (see _common._STATE_NAME_TO_CODE)",
+      "date": "ISO-8601 calendar date YYYY-MM-DD in the state's jurisdiction",
+      "type": "one of: primary, primary_runoff",
+      "election_year": "even-numbered federal cycle year the primary feeds into",
+      "source": "human-readable attribution for this specific date"
+    },
+    "verification_status": "SEED — the entries below are statutorily-fixed 2026 primary dates; an operator must re-confirm each against the official state source before the first live publish, and add the remaining states."
+  },
+  "primaries": [
+    {
+      "state": "TX",
+      "date": "2026-03-03",
+      "type": "primary",
+      "election_year": 2026,
+      "source": "Texas Election Code §41.007 (first Tuesday in March in even years)"
+    },
+    {
+      "state": "IN",
+      "date": "2026-05-05",
+      "type": "primary",
+      "election_year": 2026,
+      "source": "Indiana Code §3-10-1-3 (first Tuesday after first Monday in May of even years)"
+    },
+    {
+      "state": "OH",
+      "date": "2026-05-05",
+      "type": "primary",
+      "election_year": 2026,
+      "source": "Ohio Rev. Code §3501.01 (first Tuesday after first Monday in May)"
+    },
+    {
+      "state": "NE",
+      "date": "2026-05-12",
+      "type": "primary",
+      "election_year": 2026,
+      "source": "Nebraska Rev. Stat. §32-401 (second Tuesday in May of even years)"
+    },
+    {
+      "state": "WV",
+      "date": "2026-05-12",
+      "type": "primary",
+      "election_year": 2026,
+      "source": "West Virginia Code §3-5-1 (second Tuesday in May)"
+    },
+    {
+      "state": "OR",
+      "date": "2026-05-19",
+      "type": "primary",
+      "election_year": 2026,
+      "source": "Oregon Rev. Stat. §254.056 (third Tuesday in May of even years)"
+    },
+    {
+      "state": "PA",
+      "date": "2026-05-19",
+      "type": "primary",
+      "election_year": 2026,
+      "source": "25 Pa. Stat. §2753 (third Tuesday in May in even years)"
+    }
+  ]
+}

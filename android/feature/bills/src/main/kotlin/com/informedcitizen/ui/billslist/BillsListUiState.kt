@@ -3,6 +3,7 @@ package com.informedcitizen.ui.billslist
 import com.informedcitizen.data.ai.BillTopic
 import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.ui.components.BillCardSummary
+import java.time.Instant
 
 sealed interface BillsListUiState {
     data object Loading : BillsListUiState
@@ -12,6 +13,8 @@ sealed interface BillsListUiState {
         val filter: BillsListFilter,
         val isRefreshing: Boolean,
         val sessionStatusLine: String? = null,
+        /** Manifest `generated_at`; null hides the freshness line entirely. */
+        val dataGeneratedAt: Instant? = null,
         val aiTitlesEnabled: Boolean = false,
         val deviceCapable: Boolean = false,
         val summaries: Map<String, BillCardSummary> = emptyMap(),

@@ -1,0 +1,151 @@
+name: Update election calendar
+
+on:
+  schedule:
+    # 04:30 UTC every Monday. The election calendar is fully deterministic
+    # (no network: statutory federal general date + operator-curated
+    # primaries in-repo), so unlike the daily feeds it only changes when
+    # the curated file is edited or the federal horizon rolls over. A
+    # weekly run keeps check_freshness.py's horizon guard satisfied and
+    # picks up curated edits without daily churn. Its own concurrency
+    # group so it never contends with the daily bills/calendar jobs.
+    - cron: "30 4 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-election-calendar
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    # Python + Kotlin builders plus a cold-cache Gradle warm-up, matching
+    # update-session-calendar's parallel-run budget. Revert to ~10 once
+    # the cut-over completes and the shadow build is dropped.
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        # See update-bills.yml — PAT needed so the push-back step can
+        # bypass the "main branch" ruleset (GITHUB_TOKEN can't).
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.PIPELINE_PUSH_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+          cache-dependency-glob: data-pipeline/requirements.txt
+
+      - name: Install Python dependencies
+        run: uv pip install --system -r data-pipeline/requirements.txt
+
+      # --- Kotlin tooling (parallel-run, writes to /tmp shadow dir) ---
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      # --- Python: canonical build (no network, no API key) ---
+
+      - name: Build election calendar (Python — canonical)
+        run: python data-pipeline/scripts/build_election_calendar.py
+
+      # --- Kotlin: shadow build for parity validation ---
+      # Runs second so Python's fresh canonical output is available for
+      # the comparison step. Both builders are deterministic (no network),
+      # so barring a curated-file edit mid-run their outputs are identical
+      # modulo generated_at.
+
+      - name: Build election calendar (Kotlin — shadow validation)
+        # Parallel-run safety: never fail the canonical run because the
+        # Kotlin port hit a transient issue. Failure surfaces in the job
+        # UI (red step + the parity-check step logs the missing shadow
+        # file) but safe-push of Python's canonical output still proceeds.
+        #
+        # --primaries is passed explicitly: the CLI's default primaries
+        # path is CWD-relative, and the `:cli` application `run` task's
+        # working directory is the subproject dir (pipeline/cli), so the
+        # repo-root curated file sits two levels up. --output-dir is
+        # absolute so it's CWD-independent.
+        continue-on-error: true
+        working-directory: pipeline
+        run: >-
+          ./gradlew :cli:run
+          --args="build-election-calendar --output-dir /tmp/kotlin-election-shadow --primaries ../../data-pipeline/data/election_primaries.json"
+          --no-daemon
+
+      # --- Compare Python (canonical) vs Kotlin (shadow) ---
+      # jq -S re-serializes both files, so the string "§" compares equal
+      # whether a builder escaped it (§) or emitted it raw. Output is
+      # teed to BOTH stdout (so `gh run view --log` shows the verdicts) AND
+      # $GITHUB_STEP_SUMMARY (so the Actions UI renders a panel). Per the
+      # pipeline-check-cli-readable rule.
+
+      - name: Compare canonical vs Kotlin shadow output
+        if: always()
+        env:
+          CANONICAL: docs/data/election_calendar.json
+          SHADOW: /tmp/kotlin-election-shadow/election_calendar.json
+        run: |
+          set +e  # never fail the job on diff results during parallel-run
+          {
+            echo "## build-election-calendar parity check"
+            echo ""
+            echo "Comparing \`$CANONICAL\` (Python, canonical) vs \`$SHADOW\` (Kotlin)."
+            echo ""
+            if [ ! -f "$CANONICAL" ]; then
+              echo "- ⏭️  \`election_calendar.json\`: canonical missing — skipping parity"
+            elif [ ! -f "$SHADOW" ]; then
+              echo "- ❌ \`election_calendar.json\`: shadow file missing — Kotlin did not produce output"
+            else
+              # Strip `generated_at` — the two runs are minutes apart.
+              py_norm=$(mktemp)
+              kt_norm=$(mktemp)
+              jq -S 'del(.generated_at)' "$CANONICAL" > "$py_norm"
+              jq -S 'del(.generated_at)' "$SHADOW"    > "$kt_norm"
+              py_events=$(jq '.elections | length' "$CANONICAL")
+              if diff -q "$py_norm" "$kt_norm" >/dev/null; then
+                echo "- ✅ \`election_calendar.json\`: identical ($py_events events, ignoring generated_at)"
+              else
+                kt_events=$(jq '.elections | length' "$SHADOW")
+                echo "- ⚠️  \`election_calendar.json\`: outputs differ (Python: $py_events events, Kotlin: $kt_events events)"
+                echo ""
+                echo "<details><summary>diff (truncated to 200 lines, generated_at stripped)</summary>"
+                echo ""
+                echo '```diff'
+                diff -u "$py_norm" "$kt_norm" | head -200
+                echo '```'
+                echo "</details>"
+                echo ""
+              fi
+              rm -f "$py_norm" "$kt_norm"
+            fi
+            echo ""
+            echo "_Validation runs alongside Python during the cut-over period. Python output remains canonical until parity is confirmed._"
+          } | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Rebuild pipeline dashboard
+        if: always()
+        run: python data-pipeline/scripts/build_dashboard.py
+
+      - name: Commit updated election calendar
+        uses: ./.github/actions/safe-push
+        with:
+          paths: |
+            docs/data/election_calendar.json
+            docs/pipeline.html
+          message: "Update election calendar [bot]"

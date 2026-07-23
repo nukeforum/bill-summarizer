@@ -1,6 +1,7 @@
 package com.informedcitizen.data.cache
 
 import com.informedcitizen.pipeline.model.Bill
+import com.informedcitizen.pipeline.model.ElectionCalendar
 import com.informedcitizen.pipeline.model.MemberVotes
 import com.informedcitizen.pipeline.model.MembersIndex
 import com.informedcitizen.pipeline.model.SessionCalendar
@@ -39,6 +40,18 @@ interface SessionCalendarCache {
 
     /** The most recently fetched calendar, regardless of source. */
     suspend fun loadFreshest(): CachedArtifact<SessionCalendar>?
+
+    suspend fun clearSource(source: BillSource)
+}
+
+/** Persistent output cache for the federal election calendar. */
+interface ElectionCalendarCache {
+    suspend fun replaceForSource(source: BillSource, calendar: ElectionCalendar, fetchedAtMillis: Long)
+
+    suspend fun load(source: BillSource): CachedArtifact<ElectionCalendar>?
+
+    /** The most recently fetched calendar, regardless of source. */
+    suspend fun loadFreshest(): CachedArtifact<ElectionCalendar>?
 
     suspend fun clearSource(source: BillSource)
 }

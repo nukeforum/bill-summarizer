@@ -30,8 +30,18 @@ class BillRepository @Inject constructor(
     private val mutex = Mutex()
     private val _bills = MutableStateFlow<List<Bill>>(emptyList())
     private val _votesCoverage = MutableStateFlow(false)
+    private val _generatedAt = MutableStateFlow<String?>(null)
 
     fun observeAll(): Flow<List<Bill>> = _bills.asStateFlow()
+
+    /**
+     * The `generated_at` timestamp (ISO-8601 UTC) of the manifest behind
+     * the current in-memory bills — the artifact's generation time, never
+     * the local fetch time. Drives the user-visible freshness indicator.
+     * Offline this reflects the cached artifact's own timestamp, so the
+     * indicator stays honest ("updated N days ago") rather than resetting.
+     */
+    val generatedAt: StateFlow<String?> = _generatedAt.asStateFlow()
 
     /**
      * [BillsManifest.votesCoverage] from the manifest behind the
@@ -53,6 +63,7 @@ class BillRepository @Inject constructor(
             val manifest = api.getBillsManifest("data/${entry.manifestPath}")
             _bills.value = manifest.bills
             _votesCoverage.value = manifest.votesCoverage
+            _generatedAt.value = manifest.generatedAt
             val now = System.currentTimeMillis()
             dataStore.edit { it[LAST_FETCHED_KEY] = now }
             writeThroughCache(manifest, fetchedAtMillis = now)
@@ -66,6 +77,7 @@ class BillRepository @Inject constructor(
                 ?: throw networkError
             _bills.value = cached.bills
             _votesCoverage.value = false
+            _generatedAt.value = cached.generatedAt
             cached.bills
         }
     }
@@ -80,6 +92,7 @@ class BillRepository @Inject constructor(
     suspend fun publishByokBills(manifest: BillsManifest) = mutex.withLock {
         _bills.value = manifest.bills
         _votesCoverage.value = manifest.votesCoverage
+        _generatedAt.value = manifest.generatedAt
         val now = System.currentTimeMillis()
         dataStore.edit { it[LAST_FETCHED_KEY] = now }
         runCatching {

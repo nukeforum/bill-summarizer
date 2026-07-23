@@ -12,13 +12,20 @@ import javax.inject.Singleton
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.days
 
-/** The three artifacts BYOK refreshes, each on its own cadence. */
+/** The artifacts BYOK refreshes, each on its own cadence. */
 enum class ByokArtifact(
     val prefsKeySuffix: String,
     val cadence: Duration,
 ) {
     /** Daily — matches the canonical update-bills.yml schedule. */
     BILLS("bills", 1.days),
+
+    /**
+     * Daily — matches the canonical update-votes cadence. Ordered right
+     * after [BILLS] so a due-together tick fetches bills first, leaving a
+     * fresh manifest on disk for the votes run to attach vote refs to.
+     */
+    VOTES("votes", 1.days),
 
     /** Weekly — matches the canonical Sunday update-members.yml schedule. */
     MEMBERS("members", 7.days),

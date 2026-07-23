@@ -5,6 +5,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
+import com.informedcitizen.pipeline.model.ElectionCalendar
+import com.informedcitizen.pipeline.model.ElectionEvent
+import com.informedcitizen.pipeline.model.ElectionType
 import com.informedcitizen.ui.preview.PreviewWrap
 import com.informedcitizen.ui.preview.sampleSessionCalendar
 import java.time.LocalDate
@@ -28,9 +31,23 @@ private fun PreviewSessionCalendarSuccess() = PreviewWrap {
         innerPadding = PaddingValues(0.dp),
         onRetry = {},
         today = LocalDate.of(2026, 5, 8),
+        electionCalendar = sampleElectionCalendar(),
         onOpenSource = {},
     )
 }
+
+private fun sampleElectionCalendar() = ElectionCalendar(
+    generatedAt = "2026-05-05T12:00:00Z",
+    source = "Federal general-election date is statutory; state primary dates are operator-curated.",
+    elections = listOf(
+        ElectionEvent(
+            state = ElectionEvent.NATIONWIDE,
+            date = "2026-11-03",
+            type = ElectionType.GENERAL,
+            electionYear = 2026,
+        ),
+    ),
+)
 
 @PreviewLightDark
 @Composable

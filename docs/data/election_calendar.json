@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-07-23T03:22:38Z",
+  "source": "Federal general-election date is statutory (2 U.S.C. \u00a77, 3 U.S.C. \u00a71); state primary dates are operator-curated in data/election_primaries.json.",
+  "elections": [
+    {
+      "state": "TX",
+      "date": "2026-03-03",
+      "type": "primary",
+      "election_year": 2026,
+      "source": "Texas Election Code \u00a741.007 (first Tuesday in March in even years)"
+    },
+    {
+      "state": "IN",
+      "date": "2026-05-05",
+      "type": "primary",
+      "election_year": 2026,
+      "source": "Indiana Code \u00a73-10-1-3 (first Tuesday after first Monday in May of even years)"
+    },
+    {
+      "state": "OH",
+      "date": "2026-05-05",
+      "type": "primary",
+      "election_year": 2026,
+      "source": "Ohio Rev. Code \u00a73501.01 (first Tuesday after first Monday in May)"
+    },
+    {
+      "state": "NE",
+      "date": "2026-05-12",
+      "type": "primary",
+      "election_year": 2026,
+      "source": "Nebraska Rev. Stat. \u00a732-401 (second Tuesday in May of even years)"
+    },
+    {
+      "state": "WV",
+      "date": "2026-05-12",
+      "type": "primary",
+      "election_year": 2026,
+      "source": "West Virginia Code \u00a73-5-1 (second Tuesday in May)"
+    },
+    {
+      "state": "OR",
+      "date": "2026-05-19",
+      "type": "primary",
+      "election_year": 2026,
+      "source": "Oregon Rev. Stat. \u00a7254.056 (third Tuesday in May of even years)"
+    },
+    {
+      "state": "PA",
+      "date": "2026-05-19",
+      "type": "primary",
+      "election_year": 2026,
+      "source": "25 Pa. Stat. \u00a72753 (third Tuesday in May in even years)"
+    },
+    {
+      "state": "US",
+      "date": "2026-11-03",
+      "type": "general",
+      "election_year": 2026
+    }
+  ]
+}

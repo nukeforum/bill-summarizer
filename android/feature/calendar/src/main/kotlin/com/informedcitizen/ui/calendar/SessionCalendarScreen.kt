@@ -42,10 +42,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.semantics.clearAndSetSemantics
+import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.informedcitizen.pipeline.model.ElectionCalendar
 import com.informedcitizen.pipeline.model.SessionCalendar
 import com.informedcitizen.domain.session.Chamber
 import com.informedcitizen.domain.session.ChamberStatus
@@ -64,6 +67,8 @@ private val MONTH_LABEL: DateTimeFormatter =
     DateTimeFormatter.ofPattern("MMMM yyyy", Locale.US)
 private val MON_DAY: DateTimeFormatter =
     DateTimeFormatter.ofPattern("MMM d", Locale.US)
+private val ELECTION_DATE: DateTimeFormatter =
+    DateTimeFormatter.ofPattern("EEE, MMM d, yyyy", Locale.US)
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -73,6 +78,7 @@ fun SessionCalendarScreen(
     viewModel: SessionCalendarViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
+    val electionCalendar by viewModel.electionCalendar.collectAsStateWithLifecycle()
     val context = LocalContext.current
 
     Scaffold(
@@ -92,6 +98,7 @@ fun SessionCalendarScreen(
             state = state,
             innerPadding = innerPadding,
             onRetry = viewModel::retry,
+            electionCalendar = electionCalendar,
             onOpenSource = { url -> openInCustomTab(context, url) },
         )
     }
@@ -103,12 +110,14 @@ internal fun SessionCalendarContent(
     innerPadding: PaddingValues,
     onRetry: () -> Unit,
     today: LocalDate = LocalDate.now(),
+    electionCalendar: ElectionCalendar? = null,
     onOpenSource: (String) -> Unit,
 ) {
     when (state) {
         SessionCalendarUiState.Loading -> Centered(innerPadding) { CircularProgressIndicator() }
         is SessionCalendarUiState.Error -> ErrorBlock(innerPadding, state.message, onRetry = onRetry)
-        is SessionCalendarUiState.Success -> SuccessBody(innerPadding, state.calendar, today, onOpenSource)
+        is SessionCalendarUiState.Success ->
+            SuccessBody(innerPadding, state.calendar, today, electionCalendar, onOpenSource)
     }
 }
 
@@ -141,7 +150,13 @@ private fun ErrorBlock(innerPadding: PaddingValues, message: String, onRetry: ()
 }
 
 @Composable
-private fun SuccessBody(innerPadding: PaddingValues, calendar: SessionCalendar, today: LocalDate, onOpenSource: (String) -> Unit) {
+private fun SuccessBody(
+    innerPadding: PaddingValues,
+    calendar: SessionCalendar,
+    today: LocalDate,
+    electionCalendar: ElectionCalendar?,
+    onOpenSource: (String) -> Unit,
+) {
     val statuses = calendar.statusOn(today)
 
     Column(
@@ -153,9 +168,72 @@ private fun SuccessBody(innerPadding: PaddingValues, calendar: SessionCalendar, 
         verticalArrangement = Arrangement.spacedBy(16.dp),
     ) {
         TodaySummaryCard(today = today, statuses = statuses)
+        if (electionCalendar != null) {
+            UpcomingElectionsSection(calendar = electionCalendar, today = today)
+        }
         CalendarGridSection(calendar = calendar, today = today)
         ComingUpSection(calendar = calendar, today = today)
         SourceFooter(calendar, onOpenSource)
+    }
+}
+
+/**
+ * Issue #24's "when will I vote" surface: the soonest upcoming elections
+ * with a days-remaining countdown. National-only for now (`stateCode = null`
+ * → just the statutory federal general) since [ElectionCalendar] state
+ * derivation lives in `feature:reps`; the section hides entirely when the
+ * calendar holds nothing on or after [today] so it never shows an empty box.
+ */
+@Composable
+private fun UpcomingElectionsSection(
+    calendar: ElectionCalendar,
+    today: LocalDate,
+    stateCode: String? = null,
+) {
+    val elections = upcomingElections(calendar, today, stateCode)
+    if (elections.isEmpty()) return
+
+    Card(modifier = Modifier.fillMaxWidth()) {
+        Column(modifier = Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+            Text("Upcoming elections", style = MaterialTheme.typography.titleMedium)
+            elections.forEach { ElectionRow(it) }
+            Text(
+                text = calendar.source,
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
+    }
+}
+
+@Composable
+private fun ElectionRow(election: UpcomingElection) {
+    val formattedDate = election.date.format(ELECTION_DATE)
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clearAndSetSemantics {
+                contentDescription = electionRowDescription(election, formattedDate)
+            },
+        horizontalArrangement = Arrangement.spacedBy(12.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Column(modifier = Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+            Text(
+                text = electionRowLabel(election),
+                style = MaterialTheme.typography.bodyMedium,
+            )
+            Text(
+                text = formattedDate,
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
+        Text(
+            text = election.countdownText,
+            style = MaterialTheme.typography.labelLarge,
+            color = MaterialTheme.colorScheme.primary,
+        )
     }
 }
 

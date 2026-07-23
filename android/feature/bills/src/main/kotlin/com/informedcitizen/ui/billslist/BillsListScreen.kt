@@ -37,6 +37,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.informedcitizen.data.ai.BillTopic
 import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.ui.components.BillSearchField
+import java.time.Instant
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -102,6 +103,9 @@ internal fun BillsListContent(
     Column(modifier = Modifier.fillMaxSize().padding(top = innerPadding.calculateTopPadding())) {
         (state as? BillsListUiState.Success)?.sessionStatusLine?.let { line ->
             SessionStatusLine(text = line, onClick = onCalendarClick)
+        }
+        (state as? BillsListUiState.Success)?.dataGeneratedAt?.let { generatedAt ->
+            DataFreshnessLine(generatedAt = generatedAt, now = Instant.now())
         }
         if (state is BillsListUiState.Success) {
             BillSearchField(

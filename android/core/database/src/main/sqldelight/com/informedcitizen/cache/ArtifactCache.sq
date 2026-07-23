@@ -27,6 +27,18 @@ CREATE TABLE cached_session_calendar (
     fetched_at INTEGER NOT NULL
 );
 
+-- Federal election calendar (docs/data/election_calendar.json, issue #24).
+-- Whole artifact as one payload for the same reason as the session
+-- calendar: the app consumes the election list whole (filtered in-memory
+-- by state / upcoming-date), so a per-event table would add unread query
+-- surface.
+CREATE TABLE cached_election_calendar (
+    source TEXT NOT NULL PRIMARY KEY,
+    payload TEXT NOT NULL,
+    generated_at TEXT NOT NULL,
+    fetched_at INTEGER NOT NULL
+);
+
 -- Per-member roll-call positions shard (votes/members/{bioguideId}.json),
 -- fetched once per saved rep for the "your reps voted" surfaces. Whole
 -- shard as one payload for the same reason as the artifacts above: the
@@ -74,6 +86,23 @@ INSERT OR REPLACE INTO cached_session_calendar (
 
 clearSessionCalendarForSource:
 DELETE FROM cached_session_calendar WHERE source = :source;
+
+selectElectionCalendar:
+SELECT payload, generated_at, fetched_at FROM cached_election_calendar
+WHERE source = :source;
+
+selectFreshestElectionCalendar:
+SELECT source, payload, generated_at, fetched_at FROM cached_election_calendar
+ORDER BY fetched_at DESC
+LIMIT 1;
+
+upsertElectionCalendar:
+INSERT OR REPLACE INTO cached_election_calendar (
+    source, payload, generated_at, fetched_at
+) VALUES (?, ?, ?, ?);
+
+clearElectionCalendarForSource:
+DELETE FROM cached_election_calendar WHERE source = :source;
 
 selectMemberVotes:
 SELECT payload, generated_at, fetched_at FROM cached_member_votes

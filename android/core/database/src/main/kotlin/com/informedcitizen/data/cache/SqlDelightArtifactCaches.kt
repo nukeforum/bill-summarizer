@@ -1,6 +1,7 @@
 package com.informedcitizen.data.cache
 
 import com.informedcitizen.cache.BillSummaryDatabase
+import com.informedcitizen.pipeline.model.ElectionCalendar
 import com.informedcitizen.pipeline.model.MemberVotes
 import com.informedcitizen.pipeline.model.MembersIndex
 import com.informedcitizen.pipeline.model.SessionCalendar
@@ -127,6 +128,64 @@ class SqlDelightSessionCalendarCache(
     override suspend fun clearSource(source: BillSource) {
         withContext(Dispatchers.IO) {
             q.clearSessionCalendarForSource(source = source.wireString)
+        }
+    }
+}
+
+class SqlDelightElectionCalendarCache(
+    private val db: BillSummaryDatabase,
+    private val json: Json = ArtifactJson,
+) : ElectionCalendarCache {
+
+    private val q = db.artifactCacheQueries
+
+    override suspend fun replaceForSource(
+        source: BillSource,
+        calendar: ElectionCalendar,
+        fetchedAtMillis: Long,
+    ) {
+        withContext(Dispatchers.IO) {
+            q.upsertElectionCalendar(
+                source = source.wireString,
+                payload = json.encodeToString(ElectionCalendar.serializer(), calendar),
+                generated_at = calendar.generatedAt,
+                fetched_at = fetchedAtMillis,
+            )
+        }
+    }
+
+    override suspend fun load(source: BillSource): CachedArtifact<ElectionCalendar>? =
+        withContext(Dispatchers.IO) {
+            q.selectElectionCalendar(source = source.wireString)
+                .executeAsOneOrNull()
+                ?.let { row ->
+                    CachedArtifact(
+                        value = json.decodeFromString(ElectionCalendar.serializer(), row.payload),
+                        source = source,
+                        generatedAt = row.generated_at,
+                        fetchedAtMillis = row.fetched_at,
+                    )
+                }
+        }
+
+    override suspend fun loadFreshest(): CachedArtifact<ElectionCalendar>? =
+        withContext(Dispatchers.IO) {
+            q.selectFreshestElectionCalendar()
+                .executeAsOneOrNull()
+                ?.let { row ->
+                    val source = BillSource.fromWire(row.source) ?: return@let null
+                    CachedArtifact(
+                        value = json.decodeFromString(ElectionCalendar.serializer(), row.payload),
+                        source = source,
+                        generatedAt = row.generated_at,
+                        fetchedAtMillis = row.fetched_at,
+                    )
+                }
+        }
+
+    override suspend fun clearSource(source: BillSource) {
+        withContext(Dispatchers.IO) {
+            q.clearElectionCalendarForSource(source = source.wireString)
         }
     }
 }

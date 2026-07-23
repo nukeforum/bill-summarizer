@@ -24,6 +24,7 @@ import com.informedcitizen.pipeline.model.BillsManifest
 import com.informedcitizen.pipeline.model.CongressEntry
 import com.informedcitizen.pipeline.model.CongressesIndex
 import com.informedcitizen.pipeline.model.Outcome
+import com.informedcitizen.pipeline.model.ElectionCalendar
 import com.informedcitizen.pipeline.model.SessionCalendar
 import com.informedcitizen.pipeline.model.Sponsor
 import com.informedcitizen.data.repository.AiTitlesPreferenceRepository
@@ -202,6 +203,7 @@ private class StubBillsApi(private val manifest: BillsManifest) : BillsApi {
     )
     override suspend fun getBillsManifest(url: String): BillsManifest = manifest
     override suspend fun getSessionCalendar(): SessionCalendar = error("unused")
+    override suspend fun getElectionCalendar(): ElectionCalendar = error("unused")
 }
 
 private class StubPreferencesDataStore : DataStore<Preferences> {

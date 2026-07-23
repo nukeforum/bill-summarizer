@@ -35,6 +35,7 @@ private class FakeMemberRepository(
     override suspend fun getMember(bioguideId: String, congress: Int): Member? = null
     override suspend fun getSponsored(bioguideId: String): MemberLegislation? = null
     override suspend fun getCosponsored(bioguideId: String): MemberLegislation? = null
+    override suspend fun getVotes(bioguideId: String): com.informedcitizen.pipeline.model.MemberVotes? = null
     override suspend fun getIndex(congress: Int): MembersIndex? = null
 }
 
