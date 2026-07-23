@@ -2,6 +2,9 @@ package com.informedcitizen.ui.billslist
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import androidx.paging.PagingData
+import androidx.paging.cachedIn
+import androidx.paging.filter
 import com.informedcitizen.data.ai.AiCapability
 import com.informedcitizen.data.ai.BillTopic
 import com.informedcitizen.data.cache.BillSummaryCache
@@ -15,13 +18,16 @@ import com.informedcitizen.domain.search.matchesSearchQuery
 import com.informedcitizen.domain.session.statusOn
 import com.informedcitizen.ui.components.BillCardSummary
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import java.time.LocalDate
@@ -95,6 +101,67 @@ class BillsListViewModel @Inject constructor(
             )
         }
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), BillsListUiState.Loading)
+
+    // --- Paging 3 stream (issue #41, epic #38) -------------------------------
+    // The bills list is migrating from the in-memory `billsResult`/`buildSuccess`
+    // list above to a shard-paged `Flow<PagingData<Bill>>`. This is the
+    // ViewModel side of that switch; the UI consumes it in a following slice.
+
+    /**
+     * The SQL-paged source. Only the [selectedPolicyArea] filter is bound in
+     * SQL ([BillRepository.pagedBills]), so the Pager is rebuilt via
+     * [flatMapLatest] *only* when the policy area changes. [cachedIn] snapshots
+     * the loaded pages into [viewModelScope] so the three list-only filters
+     * applied downstream (outcome chips, free-text search, AI topic) never
+     * restart the Pager — a keystroke or topic toggle re-filters cached pages
+     * rather than re-hitting the network/DB.
+     */
+    @OptIn(ExperimentalCoroutinesApi::class)
+    private val pagedSource: Flow<PagingData<Bill>> = selectedPolicyArea
+        .flatMapLatest { policyArea ->
+            // status stays null: the outcome chips are a different axis from the
+            // #39 lifecycle `status` column and filter via the predicate below;
+            // the SQL status param is reserved for the future #42 status filter.
+            billRepository.pagedBills(status = null, policyArea = policyArea)
+        }
+        .cachedIn(viewModelScope)
+
+    /** The AI topic to filter by, or null when AI titles are disabled. */
+    private val activeTopicFilter: Flow<BillTopic?> =
+        combine(selectedTopic, aiPrefs.enabled) { topic, aiEnabled ->
+            if (aiEnabled) topic else null
+        }
+
+    /** The summary rows the topic predicate resolves against (empty when AI off). */
+    private val visibleSummariesFlow: Flow<Map<String, BillCardSummary>> =
+        combine(cache.observeAll(), aiPrefs.enabled) { rows, aiEnabled ->
+            if (aiEnabled) {
+                rows.mapValues { (_, entry) ->
+                    BillCardSummary(
+                        generatedTitle = entry.summary?.generatedTitle,
+                        topic = entry.summary?.topic,
+                    )
+                }
+            } else {
+                emptyMap()
+            }
+        }
+
+    /**
+     * The bills list as a paged, filtered stream. The three list-only filters
+     * are applied over the cached pages via [billMatchesListFilters] — the same
+     * seam `buildSuccess` uses — so paged and in-memory filtering stay identical
+     * during the migration.
+     */
+    val pagedBills: Flow<PagingData<Bill>> = combine(
+        pagedSource,
+        filter,
+        _searchQuery,
+        activeTopicFilter,
+        visibleSummariesFlow,
+    ) { data, currentFilter, query, activeTopic, summaries ->
+        data.filter { billMatchesListFilters(it, currentFilter, query, activeTopic, summaries) }
+    }
 
     init {
         load(forceRefresh = false)
