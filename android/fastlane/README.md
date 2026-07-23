@@ -95,3 +95,10 @@ bundle exec fastlane run validate_play_store_json_key
   transitive gems) so `bundle exec fastlane` runs reproducibly. After changing
   `Gemfile`, re-run `bundle install` (or `bundle lock`) and commit the updated
   lockfile.
+- **Play Store "What's new" notes**: each release adds a
+  `metadata/android/en-US/changelogs/<versionCode>.txt` file (matching the new
+  `versionCode` in `app/build.gradle.kts`) alongside its `CHANGELOG.md` entry.
+  supply reads this file and uploads it as the release notes automatically on
+  every `deploy_*` — the lanes skip store-listing metadata, images, and
+  screenshots but not changelogs, so keep each file user-facing and under Play's
+  500-character limit.
