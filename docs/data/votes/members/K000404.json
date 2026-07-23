@@ -1,8 +1,32 @@
 {
-  "generated_at": "2026-07-23T01:50:29Z",
+  "generated_at": "2026-07-23T01:52:18Z",
   "bioguide_id": "K000404",
-  "vote_count": 83,
+  "vote_count": 85,
   "votes": [
+    {
+      "vote_id": "house-119-2-276",
+      "congress": 119,
+      "date": "2026-07-22",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "position": "nay",
+      "bill_id": "hr8800-119",
+      "type": "hr",
+      "number": "8800",
+      "short_title": null
+    },
+    {
+      "vote_id": "house-119-2-275",
+      "congress": 119,
+      "date": "2026-07-22",
+      "question": "On Agreeing to the Amendment",
+      "result": "Agreed to",
+      "position": "yea",
+      "bill_id": "hr8800-119",
+      "type": "hr",
+      "number": "8800",
+      "short_title": null
+    },
     {
       "vote_id": "house-119-2-274",
       "congress": 119,
