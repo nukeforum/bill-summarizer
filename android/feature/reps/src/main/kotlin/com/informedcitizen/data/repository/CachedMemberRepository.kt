@@ -3,6 +3,7 @@ package com.informedcitizen.data.repository
 import com.informedcitizen.crash.CrashReporter
 import com.informedcitizen.data.api.MembersApi
 import com.informedcitizen.data.cache.BillSource
+import com.informedcitizen.data.cache.MemberVotesCache
 import com.informedcitizen.data.cache.MembersIndexCache
 import com.informedcitizen.pipeline.model.Member
 import com.informedcitizen.pipeline.model.MemberLegislation
@@ -19,6 +20,7 @@ class CachedMemberRepository @Inject constructor(
     private val api: MembersApi,
     private val crashReporter: CrashReporter,
     private val persistentCache: MembersIndexCache,
+    private val memberVotesCache: MemberVotesCache,
 ) : MemberRepository {
     private val mutex = Mutex()
     private var indexCache: MembersIndex? = null
@@ -106,21 +108,45 @@ class CachedMemberRepository @Inject constructor(
     override suspend fun getCosponsored(bioguideId: String): MemberLegislation? =
         fetchLegislation(bioguideId) { api.getCosponsored(it) }
 
+    // Cache-first so the shards the in-app BYOK pipeline publishes under
+    // [BillSource.BYOK] surface on the member page without a GitHub Pages
+    // round-trip (backlog #31), and so the tab works offline. A cached
+    // shard younger than [VOTES_STALE_AFTER_MILLIS] (either source) wins;
+    // otherwise fetch, write through under [BillSource.PUBLISHED], and
+    // fall back to a stale cached shard when the network is down.
+    //
     // A 404 means "no recorded votes yet" — an empty shard, not a
     // failure (same as the sponsored/cosponsored endpoints). Unlike
     // those, a genuine error collapses to null instead of propagating:
     // the recent-votes section is supplementary, so a votes-fetch
     // failure must not error out the whole member page.
-    override suspend fun getVotes(bioguideId: String): MemberVotes? =
-        runCatching { api.getMemberVotes(bioguideId) }
+    override suspend fun getVotes(bioguideId: String): MemberVotes? {
+        val now = System.currentTimeMillis()
+        val cached = runCatching { memberVotesCache.loadFreshest(bioguideId) }.getOrNull()
+        if (cached != null && now - cached.fetchedAtMillis < VOTES_STALE_AFTER_MILLIS) {
+            return cached.value
+        }
+        return runCatching { api.getMemberVotes(bioguideId) }
+            .onSuccess { writeThroughVotesCache(it, now) }
             .getOrElse { exc ->
                 if (exc is HttpException && exc.code() == 404) {
                     MemberVotes(generatedAt = "", bioguideId = bioguideId, voteCount = 0, votes = emptyList())
                 } else {
                     crashReporter.recordNonFatal(exc, "member votes fetch failed")
-                    null
+                    cached?.value
                 }
             }
+    }
+
+    private suspend fun writeThroughVotesCache(votes: MemberVotes, fetchedAtMillis: Long) {
+        runCatching {
+            memberVotesCache.replaceForSource(
+                source = BillSource.PUBLISHED,
+                votes = votes,
+                fetchedAtMillis = fetchedAtMillis,
+            )
+        }.onFailure { crashReporter.recordNonFatal(it, "member votes cache write failed") }
+    }
 
     private suspend fun fetchLegislation(
         bioguideId: String,
@@ -143,4 +169,11 @@ class CachedMemberRepository @Inject constructor(
     // identifier and no resolvable congress.gov URL.
     private fun MemberLegislation.withRenderableBillsOnly(): MemberLegislation =
         copy(bills = bills.filter { it.type.isNotBlank() && it.number.isNotBlank() })
+
+    private companion object {
+        // Mirror MemberVotesRepository: shards are republished daily, so
+        // a few hours of staleness only delays the newest roll calls,
+        // never corrupts anything — favour cache hits over re-downloads.
+        const val VOTES_STALE_AFTER_MILLIS = 6 * 60 * 60 * 1000L
+    }
 }

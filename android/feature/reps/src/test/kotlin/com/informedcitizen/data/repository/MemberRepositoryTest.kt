@@ -2,6 +2,7 @@ package com.informedcitizen.data.repository
 
 import com.informedcitizen.crash.FakeCrashReporter
 import com.informedcitizen.data.api.MembersApi
+import com.informedcitizen.data.cache.BillSource
 import com.informedcitizen.pipeline.model.Action
 import com.informedcitizen.pipeline.model.Member
 import com.informedcitizen.pipeline.model.MemberLegislation
@@ -10,6 +11,7 @@ import com.informedcitizen.pipeline.model.MemberVoteRow
 import com.informedcitizen.pipeline.model.MemberVotes
 import com.informedcitizen.pipeline.model.MembersIndex
 import com.informedcitizen.pipeline.model.VotePosition
+import com.informedcitizen.testutil.FakeMemberVotesCache
 import com.informedcitizen.testutil.FakeMembersIndexCache
 import kotlinx.coroutines.test.runTest
 import okhttp3.MediaType.Companion.toMediaType
@@ -49,6 +51,7 @@ private class FakeMembersApi(
     private val votesErrors: Map<String, HttpException> = emptyMap(),
 ) : MembersApi {
     var indexCalls = 0
+    var voteCalls = 0
     override suspend fun getMembersIndex(congress: String): MembersIndex {
         indexCalls++
         return index
@@ -60,6 +63,7 @@ private class FakeMembersApi(
     override suspend fun getCosponsored(bioguideId: String): MemberLegislation =
         cosponsored[bioguideId] ?: error("no cosponsored fixture for $bioguideId")
     override suspend fun getMemberVotes(bioguideId: String): MemberVotes {
+        voteCalls++
         votesErrors[bioguideId]?.let { throw it }
         return votes[bioguideId] ?: error("no votes fixture for $bioguideId")
     }
@@ -69,7 +73,7 @@ class MemberRepositoryTest {
 
     @Test
     fun `findRepsForLocation with district returns rep plus senators`() = runTest {
-        val repo = CachedMemberRepository(FakeMembersApi(sampleIndex), FakeCrashReporter(), FakeMembersIndexCache())
+        val repo = CachedMemberRepository(FakeMembersApi(sampleIndex), FakeCrashReporter(), FakeMembersIndexCache(), FakeMemberVotesCache())
         val out = repo.findRepsForLocation(congress = 119, stateCode = "TX", district = 21)
         assertEquals(listOf("A000001"), out.house.map { it.bioguideId })
         assertTrue("no senators in TX in fixture", out.senators.isEmpty())
@@ -77,7 +81,7 @@ class MemberRepositoryTest {
 
     @Test
     fun `findRepsForLocation with null district returns senators only`() = runTest {
-        val repo = CachedMemberRepository(FakeMembersApi(sampleIndex), FakeCrashReporter(), FakeMembersIndexCache())
+        val repo = CachedMemberRepository(FakeMembersApi(sampleIndex), FakeCrashReporter(), FakeMembersIndexCache(), FakeMemberVotesCache())
         val out = repo.findRepsForLocation(congress = 119, stateCode = "MI", district = null)
         assertTrue(out.house.isEmpty())
         assertEquals(setOf("B000002", "C000003"), out.senators.map { it.bioguideId }.toSet())
@@ -90,7 +94,7 @@ class MemberRepositoryTest {
             generatedAt = "x",
             members = sampleIndex.members + aMember("E000005", "MI", 1, "house"),
         )
-        val repo = CachedMemberRepository(FakeMembersApi(full), FakeCrashReporter(), FakeMembersIndexCache())
+        val repo = CachedMemberRepository(FakeMembersApi(full), FakeCrashReporter(), FakeMembersIndexCache(), FakeMemberVotesCache())
         val out = repo.findRepsForLocation(119, "MI", 1)
         assertEquals(listOf("E000005"), out.house.map { it.bioguideId })
         assertEquals(setOf("B000002", "C000003"), out.senators.map { it.bioguideId }.toSet())
@@ -102,6 +106,7 @@ class MemberRepositoryTest {
             FakeMembersApi(sampleIndex, sponsoredErrors = setOf("A000001")),
             FakeCrashReporter(),
             FakeMembersIndexCache(),
+            FakeMemberVotesCache(),
         )
         val result = repo.getSponsored("A000001")
         assertNotNull(result)
@@ -139,6 +144,7 @@ class MemberRepositoryTest {
             FakeMembersApi(sampleIndex, sponsored = mapOf("A000001" to fixture)),
             FakeCrashReporter(),
             FakeMembersIndexCache(),
+            FakeMemberVotesCache(),
         )
         val result = repo.getSponsored("A000001")
         assertEquals(listOf("hr1-119"), result!!.bills.map { it.id })
@@ -166,6 +172,7 @@ class MemberRepositoryTest {
             FakeMembersApi(sampleIndex, cosponsored = mapOf("A000001" to fixture)),
             FakeCrashReporter(),
             FakeMembersIndexCache(),
+            FakeMemberVotesCache(),
         )
         val result = repo.getCosponsored("A000001")
         assertTrue(result!!.bills.isEmpty())
@@ -174,7 +181,7 @@ class MemberRepositoryTest {
     @Test
     fun `index cached on second call`() = runTest {
         val api = FakeMembersApi(sampleIndex)
-        val repo = CachedMemberRepository(api, FakeCrashReporter(), FakeMembersIndexCache())
+        val repo = CachedMemberRepository(api, FakeCrashReporter(), FakeMembersIndexCache(), FakeMemberVotesCache())
         repo.findRepsForLocation(119, "TX", 21)
         repo.findRepsForLocation(119, "TX", 21)
         assertEquals(1, api.indexCalls)
@@ -189,7 +196,7 @@ class MemberRepositoryTest {
             override suspend fun getCosponsored(bioguideId: String): MemberLegislation = error("unused")
             override suspend fun getMemberVotes(bioguideId: String): MemberVotes = error("unused")
         }
-        val repo = CachedMemberRepository(throwingApi, FakeCrashReporter(), FakeMembersIndexCache())
+        val repo = CachedMemberRepository(throwingApi, FakeCrashReporter(), FakeMembersIndexCache(), FakeMemberVotesCache())
         assertNull(repo.getMember("X", 119))
     }
 
@@ -209,6 +216,7 @@ class MemberRepositoryTest {
             FakeMembersApi(sampleIndex, votes = mapOf("A000001" to shard)),
             FakeCrashReporter(),
             FakeMembersIndexCache(),
+            FakeMemberVotesCache(),
         )
         assertEquals(shard, repo.getVotes("A000001"))
     }
@@ -219,6 +227,7 @@ class MemberRepositoryTest {
             FakeMembersApi(sampleIndex, votesErrors = mapOf("A000001" to http404())),
             FakeCrashReporter(),
             FakeMembersIndexCache(),
+            FakeMemberVotesCache(),
         )
         val result = repo.getVotes("A000001")
         assertNotNull(result)
@@ -234,7 +243,54 @@ class MemberRepositoryTest {
             FakeMembersApi(sampleIndex, votesErrors = mapOf("A000001" to http500)),
             FakeCrashReporter(),
             FakeMembersIndexCache(),
+            FakeMemberVotesCache(),
         )
         assertNull(repo.getVotes("A000001"))
+    }
+
+    @Test
+    fun `getVotes serves a fresh cached shard (e_g_ BYOK) without hitting the network`() = runTest {
+        val shard = MemberVotes(
+            "2026-07-22T00:00:00Z", "A000001", 1,
+            listOf(
+                MemberVoteRow(
+                    voteId = "house-119-2-1", congress = 119, date = "2026-07-22",
+                    question = "On Passage", result = "Passed", position = VotePosition.YEA,
+                    billId = "hr1-119", type = "hr", number = "1", shortTitle = "Sample Act",
+                ),
+            ),
+        )
+        val cache = FakeMemberVotesCache()
+        cache.replaceForSource(BillSource.BYOK, shard, System.currentTimeMillis())
+        // No votes fixture: if the network were consulted the fake would
+        // throw, but a fresh cached shard must short-circuit before that.
+        val api = FakeMembersApi(sampleIndex)
+        val repo = CachedMemberRepository(api, FakeCrashReporter(), FakeMembersIndexCache(), cache)
+        assertEquals(shard, repo.getVotes("A000001"))
+        assertEquals(0, api.voteCalls)
+    }
+
+    @Test
+    fun `getVotes falls back to a stale cached shard when the network fails`() = runTest {
+        val shard = MemberVotes(
+            "2026-07-01T00:00:00Z", "A000001", 1,
+            listOf(
+                MemberVoteRow(
+                    voteId = "house-119-2-1", congress = 119, date = "2026-07-01",
+                    question = "On Passage", result = "Passed", position = VotePosition.NAY,
+                    billId = "hr1-119", type = "hr", number = "1", shortTitle = "Sample Act",
+                ),
+            ),
+        )
+        val http500 = HttpException(
+            Response.error<Any>(500, "".toResponseBody("application/json".toMediaType())),
+        )
+        val cache = FakeMemberVotesCache()
+        // Stale (fetchedAtMillis = 0) so the network is attempted first.
+        cache.replaceForSource(BillSource.BYOK, shard, fetchedAtMillis = 0L)
+        val api = FakeMembersApi(sampleIndex, votesErrors = mapOf("A000001" to http500))
+        val repo = CachedMemberRepository(api, FakeCrashReporter(), FakeMembersIndexCache(), cache)
+        assertEquals(shard, repo.getVotes("A000001"))
+        assertEquals(1, api.voteCalls)
     }
 }
