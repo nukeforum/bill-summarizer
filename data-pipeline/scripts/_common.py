@@ -859,6 +859,65 @@ def _chamber_from_terms(terms: list[dict[str, Any]] | None) -> str:
     return "unknown"
 
 
+# Statutory full-term span in years by chamber: House seats are up every 2
+# years, Senate every 6. A current term whose span differs is anomalous —
+# a mid-term appointment, a special-election winner filling a partial term,
+# or bad upstream data — so we omit next_election_year rather than guess
+# (correctness over coverage, #32).
+_FULL_TERM_YEARS = {"house": 2, "senate": 6}
+
+
+def _coerce_year(value: Any) -> int | None:
+    """Best-effort int coercion for a term start/end year (Congress.gov
+    returns these as ints but has been seen to send strings)."""
+    if isinstance(value, bool):  # bool is an int subclass; reject it
+        return None
+    if isinstance(value, int):
+        return value
+    try:
+        return int(str(value).strip())
+    except (TypeError, ValueError):
+        return None
+
+
+def next_election_year_from_terms(
+    terms: list[dict[str, Any]] | None, chamber: str
+) -> int | None:
+    """Derive the November general-election year this member next faces.
+
+    Both chambers share the same arithmetic: the general is held in the even
+    year immediately before the January term expiry, i.e. ``endYear - 1``
+    (House 2025–2027 → 2026; Senate 2025–2031 → 2030). The chamber only
+    gates a full-term-span sanity check.
+
+    Returns ``None`` (omit the field) when the data is ambiguous:
+
+    - no terms, or an unknown chamber;
+    - the current (most recent) term lacks a parseable start/end year;
+    - the term span isn't the chamber's statutory length (appointed /
+      special-election / redistricted / bad data);
+    - the derived year isn't an even (general-election) year.
+
+    Mirrored by the KMP parity shadow (``nextElectionYearFromTerms``).
+    """
+    expected_span = _FULL_TERM_YEARS.get(chamber)
+    if expected_span is None or not terms:
+        return None
+    current = terms[-1]
+    if not isinstance(current, dict):
+        return None
+    start = _coerce_year(current.get("startYear"))
+    end = _coerce_year(current.get("endYear"))
+    if start is None or end is None:
+        return None
+    if end - start != expected_span:
+        return None
+    year = end - 1
+    if year % 2 != 0:
+        return None
+    return year
+
+
 def parse_member_summary(raw: dict[str, Any]) -> dict[str, Any]:
     addr = raw.get("addressInformation") or {}
     sponsored = raw.get("sponsoredLegislation") or {}
@@ -874,11 +933,12 @@ def parse_member_summary(raw: dict[str, Any]) -> dict[str, Any]:
     # WY) and delegate jurisdictions (DC, AS, GU, MP, PR, VI). The Android
     # picker stores district=0 for these, so map null -> 0 here for consistent
     # matching.
-    chamber = _chamber_from_terms(raw.get("terms"))
+    terms = raw.get("terms")
+    chamber = _chamber_from_terms(terms)
     district = raw.get("district")
     if chamber == "house" and district is None:
         district = 0
-    return {
+    record = {
         "bioguide_id": raw.get("bioguideId") or "",
         "name": name,
         "party": normalize_party(raw.get("partyName") or raw.get("party")),
@@ -892,6 +952,13 @@ def parse_member_summary(raw: dict[str, Any]) -> dict[str, Any]:
         "address": addr.get("officeAddress") or None,
         "phone": addr.get("phoneNumber") or None,
     }
+    # Omit the key entirely (rather than emit null) for ambiguous cases, so
+    # the published JSON stays clean and the app's lenient parser reads
+    # absent-or-null identically.
+    next_election_year = next_election_year_from_terms(terms, chamber)
+    if next_election_year is not None:
+        record["next_election_year"] = next_election_year
+    return record
 
 
 def parse_member_legislation_item(raw: dict[str, Any]) -> dict[str, Any]:
