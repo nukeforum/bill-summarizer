@@ -14,9 +14,10 @@ dependencies {
     implementation(project(":core:database"))
     implementation(project(":core:ui"))
     implementation(project(":feature:calendar"))
-    // Paging 3 RemoteMediator for the sharded bills list (#41); the
-    // paging-compose UI artifact lands with the LazyPagingItems slice.
+    // Paging 3 for the sharded bills list (#41): paging-runtime carries the
+    // RemoteMediator; paging-compose drives the LazyPagingItems list body.
     implementation(libs.androidx.paging.runtime)
+    implementation(libs.androidx.paging.compose)
 
     // BillDetailViewModel uses BillTextFetcher via :core:network and
     // BillRepository (now owned here). LlmShareHelper uses ui/util from
