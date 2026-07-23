@@ -246,6 +246,7 @@ class CongressesIndexTest {
             "\"manifest_path\"",
             "\"is_current\"",
             "\"backfill_complete\"",
+            "\"shard_index_path\"",
         )
         var lastIdx = -1
         for (key in order) {
@@ -253,5 +254,45 @@ class CongressesIndexTest {
             assertTrue(idx > lastIdx, "expected $key after position $lastIdx; full text:\n$text")
             lastIdx = idx
         }
+    }
+
+    @Test fun rebuild_populates_shard_index_path_when_present() {
+        // #40 dual-publish discovery hook: rebuild sets shard_index_path
+        // to the index filename for a Congress that has been sharded on
+        // disk, and null for one that hasn't. Mirrors Python
+        // test_bill_shards.test_rebuild_index_populates_shard_index_path.
+        val fs = FakeFileSystem()
+        writeManifest(fs, "/out", 119, listOf(bill("hr1-119", "2026-05-01")))
+        writeManifest(fs, "/out", 118, emptyList())
+        // Shard only 119, leaving 118 unsharded.
+        FileBillShardStore(fs, "/out".toPath()).save(119, nowIso = "2026-05-18T00:00:00Z")
+
+        val index = FileCongressesIndexStore(fs, "/out".toPath()).rebuild(
+            currentCongress = 119,
+            completed = emptySet(),
+            nowIso = "2026-05-18T00:00:00Z",
+        )
+
+        val byCong = index.congresses.associateBy { it.congress }
+        assertEquals("congress119_bills_index.json", byCong.getValue(119).shardIndexPath)
+        assertNull(byCong.getValue(118).shardIndexPath)
+    }
+
+    @Test fun rebuild_omits_shard_index_path_as_explicit_null() {
+        // The nullable shard_index_path must be emitted as explicit null
+        // (ManifestJson explicitNulls=true) so the field stays present in
+        // the byte-parity diff even when a Congress isn't sharded.
+        val fs = FakeFileSystem()
+        writeManifest(fs, "/out", 119, emptyList())
+        FileCongressesIndexStore(fs, "/out".toPath()).rebuild(
+            currentCongress = 119,
+            completed = emptySet(),
+            nowIso = "2026-05-18T00:00:00Z",
+        )
+        val text = fs.source("/out/congresses.json".toPath()).buffer().use { it.readUtf8() }
+        assertTrue(
+            "\"shard_index_path\": null" in text,
+            "expected explicit null shard_index_path:\n$text",
+        )
     }
 }

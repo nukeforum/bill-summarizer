@@ -86,4 +86,22 @@ class BillStatusTest {
         assertNull(lifecycleStatusFromWireString("unknown"))
         assertNull(lifecycleStatusFromWireString("nonsense"))
     }
+
+    @Test
+    fun lifecycle_typed_enum_maps_to_wire_string() {
+        assertEquals(LIFECYCLE_INTRODUCED, lifecycleStatusToWireString(LifecycleStatus.INTRODUCED))
+        assertEquals(LIFECYCLE_IN_COMMITTEE, lifecycleStatusToWireString(LifecycleStatus.IN_COMMITTEE))
+        assertEquals(LIFECYCLE_REPORTED, lifecycleStatusToWireString(LifecycleStatus.REPORTED))
+        assertEquals("unknown", lifecycleStatusToWireString(LifecycleStatus.UNKNOWN))
+    }
+
+    @Test
+    fun lifecycle_wire_string_round_trips_the_pipeline_values() {
+        // The three pipeline-emitted statuses survive a to->from round-trip, so
+        // the app's extracted `status` column (backlog #41) matches the value the
+        // filter query compares against.
+        for (status in listOf(LifecycleStatus.INTRODUCED, LifecycleStatus.IN_COMMITTEE, LifecycleStatus.REPORTED)) {
+            assertEquals(status, lifecycleStatusFromWireString(lifecycleStatusToWireString(status)))
+        }
+    }
 }

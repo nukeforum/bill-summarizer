@@ -8,6 +8,12 @@ Checks (each independently emits a line):
 
 * Current-Congress bills manifest ``generated_at`` is within
   ``BILLS_MAX_AGE_DAYS``.
+* When a sharded bills index is published (issue #40), it is internally
+  consistent with the shard files on disk: every listed shard exists, its
+  declared ``count`` matches the shard's actual bill count, ``total_bills``
+  equals the sum of shard counts, and no orphaned shard from a prior
+  larger run is left unreferenced. Tolerated if absent (dual-publish
+  transition).
 * Members index ``generated_at`` is within ``MEMBERS_MAX_AGE_DAYS``.
 * Votes index ``generated_at`` is within ``VOTES_MAX_AGE_DAYS`` (the index is
   rebuilt on every ``fetch_votes.py`` run, so a stale timestamp means the
@@ -36,9 +42,11 @@ from pathlib import Path
 from _common import (
     OUTPUT_DIR,
     STATE_DIR,
+    _SHARD_FILE_RE,
     current_congress,
     manifest_path_for,
     members_index_path,
+    shard_index_path_for,
 )
 from _election_calendar import _REGISTRATION_DATE_FIELDS
 
@@ -94,6 +102,62 @@ def check(now: datetime | None = None) -> list[str]:
                 f"bills: {bills_path.name} generated_at={bills['generated_at']} "
                 f"is older than {BILLS_MAX_AGE_DAYS} days"
             )
+
+    # 1b. Sharded bills index consistency (issue #40). The shard set is a newer,
+    # optional artifact during the dual-publish transition, so its absence is
+    # tolerated. When present, verify the index doesn't point at a missing or
+    # miscounted shard: a half-written or pruned-mid-run shard set that publishes
+    # an index out of sync with the files on disk would make the app's paging
+    # (#41) fetch a 404 or render the wrong page count.
+    shard_index_path = shard_index_path_for(congress)
+    if shard_index_path.is_file():
+        index = _load_json(shard_index_path)
+        if index is None:
+            failures.append(f"shards: {shard_index_path.name} is unreadable")
+        else:
+            shards = index.get("shards") or []
+            listed_names: set[str] = set()
+            declared_total = 0
+            for entry in shards:
+                if not isinstance(entry, dict):
+                    continue
+                name = entry.get("path")
+                if not isinstance(name, str) or not name:
+                    failures.append(
+                        f"shards: {shard_index_path.name} has a shard entry with no path"
+                    )
+                    continue
+                listed_names.add(name)
+                declared = entry.get("count")
+                if isinstance(declared, int):
+                    declared_total += declared
+                shard = _load_json(OUTPUT_DIR / name)
+                if shard is None:
+                    failures.append(
+                        f"shards: {shard_index_path.name} references missing or "
+                        f"unreadable shard {name}"
+                    )
+                    continue
+                actual = len(shard.get("bills") or [])
+                if isinstance(declared, int) and actual != declared:
+                    failures.append(
+                        f"shards: {name} holds {actual} bills but the index lists {declared}"
+                    )
+            total_bills = index.get("total_bills")
+            if isinstance(total_bills, int) and total_bills != declared_total:
+                failures.append(
+                    f"shards: {shard_index_path.name} total_bills={total_bills} "
+                    f"!= sum of shard counts {declared_total}"
+                )
+            # An orphaned shard from a prior larger run that failed to prune would
+            # be served stale by a date-seeking client, so flag any on-disk shard
+            # the index no longer references.
+            for stale in OUTPUT_DIR.glob(f"congress{congress}_bills_p*.json"):
+                if _SHARD_FILE_RE.match(stale.name) and stale.name not in listed_names:
+                    failures.append(
+                        f"shards: orphaned shard {stale.name} on disk is not "
+                        f"referenced by {shard_index_path.name}"
+                    )
 
     # 2. Members index freshness.
     members_path = members_index_path(congress)

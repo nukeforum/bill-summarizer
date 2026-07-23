@@ -71,8 +71,36 @@ private class World {
         )
     }
 
+    /**
+     * Publish a shard index plus one shard file per entry. Each [Shard]
+     * carries [Shard.count] empty-ish bills so the index/file counts line up
+     * unless [Shard.actual] deliberately skews one. [totalBills] overrides the
+     * index's `total_bills`, defaulting to the sum of declared counts.
+     */
+    fun writeShardSet(shards: List<Shard>, totalBills: Int? = null) {
+        val entries = shards.joinToString(",") { s ->
+            """{"page":${s.page},"path":"${s.path}","count":${s.count},
+                "first_action_date":null,"last_action_date":null}"""
+        }
+        for (s in shards) {
+            val bills = (0 until (s.actual ?: s.count)).joinToString(",") { """{"id":"b$it"}""" }
+            write(
+                OUTPUT_DIR / s.path,
+                """{"generated_at":"$NOW","congress":119,"votes_coverage":false,"bills":[$bills]}""",
+            )
+        }
+        val total = totalBills ?: shards.sumOf { it.count }
+        write(
+            OUTPUT_DIR / "congress119_bills_index.json",
+            """{"generated_at":"$NOW","congress":119,"page_size":500,
+                "total_bills":$total,"votes_coverage":false,"shards":[$entries]}""",
+        )
+    }
+
     fun check(): List<String> = checkFreshness(fs, OUTPUT_DIR, STATE_DIR, CONGRESS, NOW)
 }
+
+private data class Shard(val page: Int, val path: String, val count: Int, val actual: Int? = null)
 
 class CheckFreshnessTest {
     @Test fun all_green() {
@@ -184,6 +212,64 @@ class CheckFreshnessTest {
         val w = World()
         w.fs.delete(STATE_DIR / "backfill_state.json")
         assertEquals(emptyList(), w.check())
+    }
+
+    @Test fun absent_shard_index_is_not_a_failure() {
+        // The fresh world never seeds a shard index; its absence is tolerated
+        // during the dual-publish transition (issue #40).
+        val w = World()
+        assertFalse(w.fs.exists(OUTPUT_DIR / "congress119_bills_index.json"))
+        assertFalse(w.check().any { "shards:" in it }, "${w.check()}")
+    }
+
+    @Test fun consistent_shard_set_is_green() {
+        val w = World()
+        w.writeShardSet(
+            listOf(
+                Shard(page = 1, path = "congress119_bills_p001.json", count = 3),
+                Shard(page = 2, path = "congress119_bills_p002.json", count = 1),
+            ),
+        )
+        assertFalse(w.check().any { "shards:" in it }, "${w.check()}")
+    }
+
+    @Test fun missing_shard_file_flagged() {
+        val w = World()
+        w.writeShardSet(listOf(Shard(page = 1, path = "congress119_bills_p001.json", count = 2)))
+        w.fs.delete(OUTPUT_DIR / "congress119_bills_p001.json")
+        val failures = w.check()
+        assertTrue(failures.any { "shards:" in it && "missing or unreadable shard" in it }, "$failures")
+    }
+
+    @Test fun shard_count_mismatch_flagged() {
+        // Index lists 5 but the shard file only holds 2 bills.
+        val w = World()
+        w.writeShardSet(listOf(Shard(page = 1, path = "congress119_bills_p001.json", count = 5, actual = 2)))
+        val failures = w.check()
+        assertTrue(failures.any { "holds 2 bills but the index lists 5" in it }, "$failures")
+    }
+
+    @Test fun total_bills_mismatch_flagged() {
+        // Shard counts sum to 3 but total_bills claims 99.
+        val w = World()
+        w.writeShardSet(
+            listOf(Shard(page = 1, path = "congress119_bills_p001.json", count = 3)),
+            totalBills = 99,
+        )
+        val failures = w.check()
+        assertTrue(failures.any { "total_bills=99" in it && "sum of shard counts 3" in it }, "$failures")
+    }
+
+    @Test fun orphaned_shard_file_flagged() {
+        val w = World()
+        w.writeShardSet(listOf(Shard(page = 1, path = "congress119_bills_p001.json", count = 2)))
+        // A stale shard from a prior larger run the index no longer references.
+        w.write(
+            OUTPUT_DIR / "congress119_bills_p002.json",
+            """{"generated_at":"$NOW","congress":119,"votes_coverage":false,"bills":[]}""",
+        )
+        val failures = w.check()
+        assertTrue(failures.any { "orphaned shard congress119_bills_p002.json" in it }, "$failures")
     }
 
     @Test fun absent_election_calendar_is_not_a_failure() {

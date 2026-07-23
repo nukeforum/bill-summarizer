@@ -1,10 +1,13 @@
 package com.informedcitizen.data.repository
 
+import androidx.paging.testing.asSnapshot
 import com.informedcitizen.crash.FakeCrashReporter
 import com.informedcitizen.data.api.BillsApi
 import com.informedcitizen.data.cache.BillSource
 import com.informedcitizen.pipeline.model.Action
 import com.informedcitizen.pipeline.model.Bill
+import com.informedcitizen.pipeline.model.BillShard
+import com.informedcitizen.pipeline.model.BillShardIndex
 import com.informedcitizen.pipeline.model.BillsManifest
 import com.informedcitizen.pipeline.model.CongressEntry
 import com.informedcitizen.pipeline.model.CongressesIndex
@@ -95,6 +98,66 @@ class BillRepositoryTest {
         val result = repo.getBills(forceRefresh = true)
 
         assertTrue(result.isSuccess)
+        assertEquals(listOf("data/congress119_bills.json"), api.manifestUrls)
+    }
+
+    @Test
+    fun `fetchShardIndex returns null when current congress has no shard index`() = runTest {
+        // Dual-publish transition: unsharded Congress publishes only manifest_path.
+        val api = StubApi(BillsManifest(generatedAt = "x", congress = 119, bills = emptyList()))
+        val repo = BillRepository(api, InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
+
+        assertEquals(null, repo.fetchShardIndex())
+        assertTrue("no shard index fetched when path absent", api.shardIndexUrls.isEmpty())
+    }
+
+    @Test
+    fun `fetchShardIndex follows shard_index_path from the current congress entry`() = runTest {
+        val shardIndex = BillShardIndex(
+            generatedAt = "x",
+            congress = 119,
+            pageSize = 500,
+            totalBills = 3,
+            shards = listOf(BillShard(page = 1, path = "congress119_bills_p001.json", count = 3)),
+        )
+        val api = StubApi(
+            manifest = BillsManifest(generatedAt = "x", congress = 119, bills = emptyList()),
+            shardIndex = shardIndex,
+            shardIndexPath = "congress119_bills_index.json",
+        )
+        val repo = BillRepository(api, InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
+
+        val result = repo.fetchShardIndex()
+
+        assertSame(shardIndex, result)
+        assertEquals(listOf("data/congress119_bills_index.json"), api.shardIndexUrls)
+    }
+
+    @Test
+    fun `fetchShard fetches the shard file under the data directory`() = runTest {
+        val shardManifest = BillsManifest(
+            generatedAt = "x",
+            congress = 119,
+            bills = listOf(sampleBill(id = "hr1-119")),
+        )
+        val api = StubApi(manifest = shardManifest)
+        val repo = BillRepository(api, InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
+
+        val result = repo.fetchShard(BillShard(page = 1, path = "congress119_bills_p001.json", count = 1))
+
+        assertSame(shardManifest, result)
+        assertEquals(listOf("data/congress119_bills_p001.json"), api.manifestUrls)
+    }
+
+    @Test
+    fun `fetchCurrentManifest resolves the whole manifest via the congresses index`() = runTest {
+        val manifest = BillsManifest(generatedAt = "x", congress = 119, bills = listOf(sampleBill("hr1-119")))
+        val api = StubApi(manifest)
+        val repo = BillRepository(api, InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
+
+        val result = repo.fetchCurrentManifest()
+
+        assertSame(manifest, result)
         assertEquals(listOf("data/congress119_bills.json"), api.manifestUrls)
     }
 
@@ -268,6 +331,106 @@ class BillRepositoryTest {
     }
 
     @Test
+    fun `resolveCurrentCongress reads the current congress from the index`() = runTest {
+        val api = StubApi(
+            manifest = BillsManifest(generatedAt = "x", congress = 118, bills = emptyList()),
+            index = CongressesIndex(
+                currentCongress = 119,
+                congresses = listOf(
+                    CongressEntry(congress = 118, manifestPath = "congress118_bills.json"),
+                    CongressEntry(congress = 119, manifestPath = "congress119_bills.json", isCurrent = true),
+                ),
+            ),
+        )
+        val repo = BillRepository(api, InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
+
+        assertEquals(119, repo.resolveCurrentCongress())
+    }
+
+    @Test
+    fun `resolveCurrentCongress falls back to the freshest cached congress when offline`() = runTest {
+        val reporter = FakeCrashReporter()
+        val cache = FakeBillCache().apply {
+            replaceForSource(
+                congress = 118,
+                source = BillSource.PUBLISHED,
+                bills = listOf(sampleBill("hr1-118")),
+                generatedAt = "2026-06-01T00:00:00Z",
+                fetchedAtMillis = 1L,
+            )
+        }
+        val repo = BillRepository(ThrowingApi(IOException("offline")), InMemoryPreferencesDataStore(), reporter, cache)
+
+        assertEquals(118, repo.resolveCurrentCongress())
+        assertEquals("index failure is reported before the cache fallback", 1, reporter.recorded.size)
+    }
+
+    @Test
+    fun `pagedBills serves recency-ordered cached bills over more than one page`() = runTest {
+        // Seed a fully-cached shard set so the mediator's initialize() skips
+        // the network refresh and the Pager reads straight from the DB — the
+        // filter-toggle / already-loaded runtime path. (Mediator fetch itself
+        // is covered by BillsRemoteMediatorTest.)
+        val bills = (1..25).map {
+            sampleBill("hr$it-119").copy(latestAction = Action(date = "2026-01-%02d".format(it), text = "x"))
+        }
+        val cache = FakeBillCache().apply {
+            appendShard(
+                congress = 119,
+                source = BillSource.PUBLISHED,
+                shardIndex = 0,
+                bills = bills,
+                generatedAt = "2026-05-01",
+                fetchedAtMillis = 1L,
+                totalShards = 1,
+                pageSize = 500,
+            )
+        }
+        val repo = BillRepository(
+            api = StubApi(BillsManifest(generatedAt = "2026-05-01", congress = 119, bills = emptyList())),
+            dataStore = InMemoryPreferencesDataStore(),
+            crashReporter = FakeCrashReporter(),
+            billCache = cache,
+        )
+
+        val snapshot = repo.pagedBills().asSnapshot()
+
+        // Newest-first (latest_action_date DESC), and all pages are stitched
+        // together across the 20-row page window.
+        assertEquals(bills.map { it.id }.reversed(), snapshot.map { it.id })
+    }
+
+    @Test
+    fun `pagedBills applies the DB-side policy-area filter`() = runTest {
+        val cache = FakeBillCache().apply {
+            appendShard(
+                congress = 119,
+                source = BillSource.PUBLISHED,
+                shardIndex = 0,
+                bills = listOf(
+                    sampleBill("hr1-119").copy(policyArea = "Health"),
+                    sampleBill("hr2-119").copy(policyArea = "Taxation"),
+                    sampleBill("hr3-119").copy(policyArea = "Health"),
+                ),
+                generatedAt = "2026-05-01",
+                fetchedAtMillis = 1L,
+                totalShards = 1,
+                pageSize = 500,
+            )
+        }
+        val repo = BillRepository(
+            api = StubApi(BillsManifest(generatedAt = "2026-05-01", congress = 119, bills = emptyList())),
+            dataStore = InMemoryPreferencesDataStore(),
+            crashReporter = FakeCrashReporter(),
+            billCache = cache,
+        )
+
+        val snapshot = repo.pagedBills(policyArea = "Health").asSnapshot()
+
+        assertEquals(setOf("hr1-119", "hr3-119"), snapshot.map { it.id }.toSet())
+    }
+
+    @Test
     fun `containsBillId returns false before load`() {
         val repo = BillRepository(
             api = StubApi(BillsManifest(generatedAt = "x", congress = 119, bills = emptyList())),
@@ -280,18 +443,30 @@ class BillRepositoryTest {
 
     private class StubApi(
         private val manifest: BillsManifest,
+        private val shardIndex: BillShardIndex? = null,
+        shardIndexPath: String? = null,
         private val index: CongressesIndex = CongressesIndex(
             currentCongress = manifest.congress,
             congresses = listOf(
-                CongressEntry(congress = manifest.congress, manifestPath = "congress${manifest.congress}_bills.json", isCurrent = true),
+                CongressEntry(
+                    congress = manifest.congress,
+                    manifestPath = "congress${manifest.congress}_bills.json",
+                    isCurrent = true,
+                    shardIndexPath = shardIndexPath,
+                ),
             ),
         ),
     ) : BillsApi {
         val manifestUrls = mutableListOf<String>()
+        val shardIndexUrls = mutableListOf<String>()
         override suspend fun getCongressesIndex(): CongressesIndex = index
         override suspend fun getBillsManifest(url: String): BillsManifest {
             manifestUrls += url
             return manifest
+        }
+        override suspend fun getBillShardIndex(url: String): BillShardIndex {
+            shardIndexUrls += url
+            return shardIndex ?: error("no shard index configured")
         }
         override suspend fun getSessionCalendar(): SessionCalendar = error("not used in this test")
         override suspend fun getElectionCalendar(): ElectionCalendar = error("not used in this test")
@@ -308,6 +483,7 @@ class BillRepositoryTest {
         override suspend fun getCongressesIndex(): CongressesIndex =
             if (failOnIndex) throw throwable else index
         override suspend fun getBillsManifest(url: String): BillsManifest = throw throwable
+        override suspend fun getBillShardIndex(url: String): BillShardIndex = throw throwable
         override suspend fun getSessionCalendar(): SessionCalendar = error("not used in this test")
         override suspend fun getElectionCalendar(): ElectionCalendar = error("not used in this test")
     }

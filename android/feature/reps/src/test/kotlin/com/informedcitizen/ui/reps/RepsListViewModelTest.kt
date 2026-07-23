@@ -2,6 +2,7 @@ package com.informedcitizen.ui.reps
 
 import com.informedcitizen.crash.FakeCrashReporter
 import com.informedcitizen.data.api.BillsApi
+import com.informedcitizen.pipeline.model.BillShardIndex
 import com.informedcitizen.pipeline.model.BillsManifest
 import com.informedcitizen.pipeline.model.CongressesIndex
 import com.informedcitizen.pipeline.model.ElectionCalendar
@@ -66,6 +67,7 @@ private fun aMember(bid: String, chamber: String = "house", nextElectionYear: In
 private class StubElectionApi(private val election: ElectionCalendar?) : BillsApi {
     override suspend fun getCongressesIndex(): CongressesIndex = error("unused")
     override suspend fun getBillsManifest(url: String): BillsManifest = error("unused")
+    override suspend fun getBillShardIndex(url: String): BillShardIndex = error("unused")
     override suspend fun getSessionCalendar(): SessionCalendar = error("unused")
     override suspend fun getElectionCalendar(): ElectionCalendar = election ?: error("no calendar")
 }

@@ -162,6 +162,23 @@ fun lifecycleStatusFromWireString(value: String): LifecycleStatus? =
         else -> null
     }
 
+/**
+ * The wire-format string for a typed [LifecycleStatus] — the inverse of
+ * [lifecycleStatusFromWireString]. Kept here (not on the model enum) so
+ * callers round-trip a status through the same `@SerialName` contract without
+ * importing the model package's serialization details. Used by the app's
+ * SQLDelight cache (backlog #41) to store a bill's lifecycle status in an
+ * extracted, DB-filterable column that matches the values the pipeline emits.
+ * [LifecycleStatus.UNKNOWN] round-trips to its `@SerialName` `"unknown"`.
+ */
+fun lifecycleStatusToWireString(status: LifecycleStatus): String =
+    when (status) {
+        LifecycleStatus.INTRODUCED -> LIFECYCLE_INTRODUCED
+        LifecycleStatus.IN_COMMITTEE -> LIFECYCLE_IN_COMMITTEE
+        LifecycleStatus.REPORTED -> LIFECYCLE_REPORTED
+        LifecycleStatus.UNKNOWN -> "unknown"
+    }
+
 // ---------- outcome from roll-call votes (backlog #30) --------------------
 
 /**

@@ -41,8 +41,11 @@ def test_rebuild_index_reads_existing_manifests(tmp_path, monkeypatch):
     assert cur["manifest_path"] == "congress119_bills.json"
     assert cur["is_current"] is True
     assert cur["backfill_complete"] is False
+    # #40 dual-publish discovery hook: present but null until sharded.
+    assert cur["shard_index_path"] is None
     prev = idx["congresses"][1]
     assert prev["is_current"] is False
+    assert prev["shard_index_path"] is None
 
 
 def test_rebuild_index_marks_completed_from_state(tmp_path, monkeypatch):

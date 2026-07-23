@@ -1,0 +1,45 @@
+-- Migration from schema v4 → v5.
+--
+-- Two things land here:
+--
+-- 1. Sharded bills paging (backlog #41). Existing v4 databases predate the
+--    extracted `shard_index` / `status` / `policy_area` columns on
+--    `cached_bill`, the two composite filter indices, and the
+--    `cached_shard_cursor` table — add them in place. Existing rows get
+--    `shard_index = 0` (the whole-manifest default) and null status/policy
+--    area until the next full manifest fetch re-writes them via
+--    `replaceForSource`; the JSON `payload` already carries those values, so
+--    detail/display is unaffected — only SQL-level filtering of stale rows is
+--    empty until a refresh. Fresh installs get these via `BillCache.sq` and
+--    skip this migration.
+--
+-- 2. Repair for a missing v3→v4 table. `cached_election_calendar` (issue #24)
+--    was added to `ArtifactCache.sq` for fresh installs but never got a
+--    migration, so a device that upgraded through schema v4 without a fresh
+--    install has no such table and would crash the election-calendar cache
+--    read. `IF NOT EXISTS` makes this idempotent: a device that fresh-installed
+--    a v4 build already has the table (created via `ArtifactCache.sq`) and is
+--    left untouched, while a device that migrated into v4 gets it created here.
+
+ALTER TABLE cached_bill ADD COLUMN shard_index INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE cached_bill ADD COLUMN status TEXT;
+ALTER TABLE cached_bill ADD COLUMN policy_area TEXT;
+
+CREATE INDEX cached_bill_status ON cached_bill(congress, source, status);
+CREATE INDEX cached_bill_policy_area ON cached_bill(congress, source, policy_area);
+
+CREATE TABLE cached_shard_cursor (
+    congress INTEGER NOT NULL,
+    source TEXT NOT NULL,
+    next_shard_index INTEGER NOT NULL,
+    total_shards INTEGER NOT NULL,
+    page_size INTEGER NOT NULL,
+    PRIMARY KEY (congress, source)
+);
+
+CREATE TABLE IF NOT EXISTS cached_election_calendar (
+    source TEXT NOT NULL PRIMARY KEY,
+    payload TEXT NOT NULL,
+    generated_at TEXT NOT NULL,
+    fetched_at INTEGER NOT NULL
+);

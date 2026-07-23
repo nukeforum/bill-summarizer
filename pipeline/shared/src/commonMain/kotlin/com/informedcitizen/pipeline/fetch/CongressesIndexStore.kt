@@ -63,6 +63,13 @@ class FileCongressesIndexStore(
                 val manifest = FileBillsManifestStore(fileSystem, outputDir).load(congress)
                     ?: return@mapNotNull null
                 val dates = manifest.bills.mapNotNull { it.latestAction.date.takeIf { d -> d.isNotEmpty() } }
+                // #40 dual-publish discovery hook: point at the sharded
+                // bills-index when this Congress has been sharded on disk,
+                // else null. Emitted always (ManifestJson explicitNulls=true)
+                // so the field stays byte-identical to Python rebuild_index.
+                val shardIndexName = shardIndexFileName(congress)
+                val shardIndexPath =
+                    if (fileSystem.exists(outputDir / shardIndexName)) shardIndexName else null
                 CongressEntry(
                     congress = congress,
                     billCount = manifest.bills.size,
@@ -71,6 +78,7 @@ class FileCongressesIndexStore(
                     manifestPath = path.name,
                     isCurrent = congress == currentCongress,
                     backfillComplete = congress in completed,
+                    shardIndexPath = shardIndexPath,
                 )
             }
             .sortedByDescending { it.congress }

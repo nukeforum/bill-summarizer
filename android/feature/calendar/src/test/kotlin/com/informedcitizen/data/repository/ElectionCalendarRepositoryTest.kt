@@ -3,6 +3,7 @@ package com.informedcitizen.data.repository
 import com.informedcitizen.crash.FakeCrashReporter
 import com.informedcitizen.data.api.BillsApi
 import com.informedcitizen.data.cache.BillSource
+import com.informedcitizen.pipeline.model.BillShardIndex
 import com.informedcitizen.pipeline.model.BillsManifest
 import com.informedcitizen.pipeline.model.CongressesIndex
 import com.informedcitizen.pipeline.model.ElectionCalendar
@@ -130,6 +131,7 @@ class ElectionCalendarRepositoryTest {
         var callCount = 0
         override suspend fun getCongressesIndex(): CongressesIndex = error("not used in this test")
         override suspend fun getBillsManifest(url: String): BillsManifest = error("not used in this test")
+        override suspend fun getBillShardIndex(url: String): BillShardIndex = error("not used in this test")
         override suspend fun getSessionCalendar(): SessionCalendar = error("not used in this test")
         override suspend fun getElectionCalendar(): ElectionCalendar {
             callCount += 1
@@ -140,6 +142,7 @@ class ElectionCalendarRepositoryTest {
     private class ThrowingApi(private val throwable: Throwable) : BillsApi {
         override suspend fun getCongressesIndex(): CongressesIndex = error("not used in this test")
         override suspend fun getBillsManifest(url: String): BillsManifest = error("not used in this test")
+        override suspend fun getBillShardIndex(url: String): BillShardIndex = error("not used in this test")
         override suspend fun getSessionCalendar(): SessionCalendar = error("not used in this test")
         override suspend fun getElectionCalendar(): ElectionCalendar = throw throwable
     }

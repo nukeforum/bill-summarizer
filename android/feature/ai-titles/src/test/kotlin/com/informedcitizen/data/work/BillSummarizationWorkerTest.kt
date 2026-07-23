@@ -20,6 +20,7 @@ import com.informedcitizen.data.cache.BillSummaryCache
 import com.informedcitizen.data.cache.BillSummaryEntry
 import com.informedcitizen.pipeline.model.Action
 import com.informedcitizen.pipeline.model.Bill
+import com.informedcitizen.pipeline.model.BillShardIndex
 import com.informedcitizen.pipeline.model.BillsManifest
 import com.informedcitizen.pipeline.model.CongressEntry
 import com.informedcitizen.pipeline.model.CongressesIndex
@@ -202,6 +203,7 @@ private class StubBillsApi(private val manifest: BillsManifest) : BillsApi {
         congresses = listOf(CongressEntry(congress = manifest.congress, manifestPath = "congress${manifest.congress}_bills.json", isCurrent = true)),
     )
     override suspend fun getBillsManifest(url: String): BillsManifest = manifest
+    override suspend fun getBillShardIndex(url: String): BillShardIndex = error("unused")
     override suspend fun getSessionCalendar(): SessionCalendar = error("unused")
     override suspend fun getElectionCalendar(): ElectionCalendar = error("unused")
 }
