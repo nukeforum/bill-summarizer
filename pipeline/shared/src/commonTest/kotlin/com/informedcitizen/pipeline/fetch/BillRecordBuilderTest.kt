@@ -43,6 +43,13 @@ class BillRecordBuilderTest {
                               ]}
                             ]}
                         """.trimIndent()
+                        path.endsWith("/subjects") -> """
+                            {"subjects":{"legislativeSubjects":[
+                              {"name":"Taxation"},
+                              {"name":"Agriculture"},
+                              {"name":"Taxation"}
+                            ],"policyArea":{"name":"Taxation"}}}
+                        """.trimIndent()
                         else -> """
                             {"bill":{
                               "title":"A Bill For All Purposes",
@@ -81,6 +88,8 @@ class BillRecordBuilderTest {
         assertEquals("https://x/bill.xml", bill.textUrlXml)
         assertEquals("https://x/bill.pdf", bill.textUrlPdf)
         assertEquals("https://www.congress.gov/bill/119th-congress/house-bill/1234", bill.congressGovUrl)
+        // Subjects: de-duplicated and sorted for deterministic (byte-parity) order.
+        assertEquals(listOf("Agriculture", "Taxation"), bill.subjects)
     }
 
     @Test fun falls_back_to_summary_title_when_detail_title_missing() = runTest {
@@ -101,6 +110,30 @@ class BillRecordBuilderTest {
         assertEquals("fallback title from summary", bill.title)
         assertNull(bill.shortTitle)
         assertNull(bill.policyArea)
+        // An absent `subjects` field decodes to the empty-list default (a bare
+        // bill often has none), matching Python `_fetch_subjects`'s `[]`.
+        assertEquals(emptyList(), bill.subjects)
+    }
+
+    @Test fun subjects_endpoint_without_legislative_subjects_yields_empty_list() = runTest {
+        val client = HttpClient(MockEngine) {
+            configurePipelineForTest(PipelineHttpConfig(retryBaseDelayMillis = 0))
+            engine {
+                addHandler { request ->
+                    val body = if (request.url.encodedPath.endsWith("/subjects")) {
+                        // Only a policyArea, no legislativeSubjects array.
+                        """{"subjects":{"policyArea":{"name":"Taxation"}}}"""
+                    } else {
+                        """{"bill":{}}"""
+                    }
+                    respond(body, HttpStatusCode.OK, jsonHeaders())
+                }
+            }
+        }
+        val cc = CongressClient(client, apiKey = "k")
+        val summary = parse("""{"type":"s","number":"7","latestAction":{"text":"Passed Senate","actionDate":"2026-04-01"}}""")
+        val bill = buildBillRecord(cc, 119, summary, "passed_senate")
+        assertEquals(emptyList(), bill.subjects)
     }
 
     @Test fun no_summaries_endpoint_response_yields_null_summaryCrs() = runTest {

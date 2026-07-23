@@ -12,9 +12,9 @@ import kotlinx.serialization.json.JsonObject
 
 /**
  * Build a fully-enriched [Bill] from a list-endpoint summary. Issues
- * three sequential Congress.gov GETs per bill (detail / summaries /
- * text) — same shape as Python `_common.build_bill_record`. Suspending
- * so the orchestrator can fan it out across coroutines.
+ * four sequential Congress.gov GETs per bill (detail / summaries /
+ * text / subjects) — same shape as Python `_common.build_bill_record`.
+ * Suspending so the orchestrator can fan it out across coroutines.
  */
 suspend fun buildBillRecord(
     client: CongressClient,
@@ -39,6 +39,7 @@ suspend fun buildBillRecord(
 
     val summaryText = fetchLatestCrsSummary(client, congress, billType, billNumber)
     val textUrls = fetchTextUrls(client, congress, billType, billNumber)
+    val subjects = fetchSubjects(client, congress, billType, billNumber)
 
     val actionDate = (latestAction.stringField("actionDate") ?: latestAction.stringField("date") ?: "")
         .take(10)
@@ -68,6 +69,7 @@ suspend fun buildBillRecord(
         textUrlXml = textUrls["xml"],
         textUrlPdf = textUrls["pdf"],
         congressGovUrl = congressGovUrl(congress, billType, billNumber),
+        subjects = subjects,
     )
 }
 
@@ -88,6 +90,36 @@ internal fun extractShortTitle(detail: JsonObject): String? {
         }
     }
     return null
+}
+
+/**
+ * Fetch a bill's Congress.gov legislative-subject terms (issue #28).
+ *
+ * The `/subjects` endpoint returns `{"subjects": {"legislativeSubjects":
+ * [{"name": ...}], "policyArea": {...}}}`. We keep only the finer-grained
+ * `legislativeSubjects` names (`policyArea` is already carried by the record's
+ * [Bill.policyArea] field). Names are de-duplicated and sorted so the published
+ * order is deterministic — the API's ordering is not guaranteed stable, and a
+ * stable order is what keeps this KMP shadow byte-identical to Python
+ * `_common._fetch_subjects`. Returns `[]` for a bill with no subjects (a
+ * bare-introduced bill often has none), matching the wire model's empty default.
+ */
+internal suspend fun fetchSubjects(
+    client: CongressClient,
+    congress: Int,
+    billType: String,
+    billNumber: String,
+): List<String> {
+    val body = client.get("/bill/$congress/$billType/$billNumber/subjects")
+    val subjects = body.jsonObjectField("subjects") ?: return emptyList()
+    val legislative = subjects["legislativeSubjects"] as? JsonArray ?: return emptyList()
+    val names = mutableSetOf<String>()
+    for (entry in legislative) {
+        val obj = entry as? JsonObject ?: continue
+        val name = obj.stringField("name")
+        if (name != null && name.isNotEmpty()) names.add(name)
+    }
+    return names.sorted()
 }
 
 internal suspend fun fetchLatestCrsSummary(
