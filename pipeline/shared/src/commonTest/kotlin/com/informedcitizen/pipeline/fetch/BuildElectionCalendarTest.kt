@@ -3,6 +3,7 @@ package com.informedcitizen.pipeline.fetch
 import com.informedcitizen.pipeline.model.ElectionCalendar
 import com.informedcitizen.pipeline.model.ElectionEvent
 import com.informedcitizen.pipeline.model.ElectionType
+import com.informedcitizen.pipeline.model.RegistrationDeadline
 import kotlinx.datetime.LocalDate
 import okio.Path.Companion.toPath
 import okio.buffer
@@ -203,5 +204,111 @@ class BuildElectionCalendarTest {
     private fun assertOnlyGeneral(bad: CuratedPrimary) {
         val cal = buildElectionCalendar(TODAY, GEN_AT, curatedPrimaries = listOf(bad))
         assertEquals(listOf(ElectionType.GENERAL), cal.elections.map { it.type })
+    }
+
+    // --- registration deadlines (issue #35) --------------------------------
+
+    private val election = LocalDate(2026, 3, 3)
+
+    @Test
+    fun registration_differing_methods_pass_through() {
+        val reg = CuratedRegistration(
+            online = "2026-02-16",
+            byMail = "2026-02-02",
+            inPerson = "2026-03-03",
+            sameDay = false,
+            source = "https://www.sos.state.tx.us/",
+        )
+        assertEquals(
+            RegistrationDeadline(
+                online = "2026-02-16",
+                byMail = "2026-02-02",
+                inPerson = "2026-03-03",
+                sameDay = false,
+                source = "https://www.sos.state.tx.us/",
+            ),
+            validateRegistration(reg, election, "TX primary"),
+        )
+    }
+
+    @Test
+    fun registration_same_day_with_no_dates_is_kept() {
+        val reg = CuratedRegistration(sameDay = true, source = "https://vote.gov/")
+        assertEquals(
+            RegistrationDeadline(sameDay = true, source = "https://vote.gov/"),
+            validateRegistration(reg, election, "MN primary"),
+        )
+    }
+
+    @Test
+    fun registration_null_is_null() {
+        assertNull(validateRegistration(null, election, "US general"))
+    }
+
+    @Test
+    fun registration_deadline_after_election_is_dropped() {
+        // A deadline the day after the election is nonsensical; that field
+        // drops, and with nothing else usable the whole block collapses to null.
+        val warnings = mutableListOf<String>()
+        assertNull(
+            validateRegistration(CuratedRegistration(online = "2026-03-04"), election, "XX primary") { warnings.add(it) },
+        )
+        assertTrue(warnings.any { it.contains("after election") })
+    }
+
+    @Test
+    fun registration_keeps_valid_field_drops_bad_one() {
+        val reg = CuratedRegistration(online = "2026-02-16", byMail = "not-a-date", inPerson = "2026-03-04")
+        val warnings = mutableListOf<String>()
+        assertEquals(
+            RegistrationDeadline(online = "2026-02-16"),
+            validateRegistration(reg, election, "XX primary") { warnings.add(it) },
+        )
+        assertTrue(warnings.any { it.contains("unparseable") })
+        assertTrue(warnings.any { it.contains("after election") })
+    }
+
+    @Test
+    fun registration_source_only_collapses_to_null() {
+        val warnings = mutableListOf<String>()
+        assertNull(
+            validateRegistration(CuratedRegistration(source = "https://vote.gov/"), election, "XX primary") {
+                warnings.add(it)
+            },
+        )
+        assertTrue(warnings.any { it.contains("no usable deadline") })
+    }
+
+    @Test
+    fun registration_attaches_to_curated_primary_event() {
+        val row = CuratedPrimary(
+            state = "TX",
+            date = "2026-03-03",
+            type = "primary",
+            electionYear = 2026,
+            source = "Texas Election Code §41.007",
+            registration = CuratedRegistration(online = "2026-02-02", source = "https://www.sos.state.tx.us/"),
+        )
+        val cal = buildElectionCalendar(TODAY, GEN_AT, curatedPrimaries = listOf(row))
+        val tx = cal.elections.single { it.state == "TX" }
+        assertEquals(
+            RegistrationDeadline(online = "2026-02-02", source = "https://www.sos.state.tx.us/"),
+            tx.registration,
+        )
+    }
+
+    @Test
+    fun curated_primary_without_registration_omits_key() {
+        val row = primary("OH", "2026-05-05", 2026)
+        val cal = buildElectionCalendar(TODAY, GEN_AT, curatedPrimaries = listOf(row))
+        val oh = cal.elections.single { it.state == "OH" }
+        assertNull(oh.registration)
+
+        // explicitNulls=false must keep the omitted-registration row bytes clean.
+        val fs = FakeFileSystem()
+        val store = FileElectionCalendarStore(fs, "/out".toPath())
+        val path = store.save(cal)
+        val text = fs.source(path).buffer().use { it.readUtf8() }
+        assertFalse(text.contains("\"registration\""), "a null registration must be omitted from published output")
     }
 }

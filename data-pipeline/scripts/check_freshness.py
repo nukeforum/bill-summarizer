@@ -17,6 +17,10 @@ Checks (each independently emits a line):
   "session" line never reads "session has ended" for users).
 * Election calendar names at least one election on or after today, so its
   federal-general horizon never lapses (issue #23). Tolerated if absent.
+* No upcoming election carries a registration deadline that has already
+  passed (issue #35): a published deadline dated before today while its
+  election is still in the future is stale by definition — the app would
+  count down to an election the voter can no longer register for.
 * ``backfill_state.json.last_run_at`` advanced within
   ``BACKFILL_MAX_AGE_DAYS`` — unless the backfill queue is empty, in which
   case the cursor is allowed to be stale.
@@ -36,6 +40,7 @@ from _common import (
     manifest_path_for,
     members_index_path,
 )
+from _election_calendar import _REGISTRATION_DATE_FIELDS
 
 BILLS_MAX_AGE_DAYS = 2
 MEMBERS_MAX_AGE_DAYS = 14
@@ -176,6 +181,33 @@ def check(now: datetime | None = None) -> list[str]:
                         f"election: {election_path.name} horizon {last} is less than "
                         f"{ELECTION_CALENDAR_MIN_LOOKAHEAD_DAYS} days out"
                     )
+
+        # 4c. Registration-deadline lookahead (issue #35). For every election
+        # still upcoming (date on or after today), any published method deadline
+        # dated before today is stale — the voter can no longer act on it, yet
+        # the app would still count down to that election. Fail so the operator
+        # advances or removes the deadline. same_day carries no date and is exempt.
+        for event in events:
+            if not isinstance(event, dict):
+                continue
+            event_date = event.get("date")
+            if not isinstance(event_date, str) or event_date < today.isoformat():
+                continue
+            reg = event.get("registration")
+            if not isinstance(reg, dict):
+                continue
+            passed = []
+            for field in _REGISTRATION_DATE_FIELDS:
+                value = reg.get(field)
+                if isinstance(value, str) and value < today.isoformat():
+                    passed.append(f"{field}={value}")
+            if passed:
+                state = event.get("state", "?")
+                failures.append(
+                    f"election: {state} {event_date} election has passed registration "
+                    f"deadline(s) {', '.join(passed)} before today {today}; "
+                    "the curated deadline is stale and must be advanced or removed"
+                )
 
     # 5. Backfill cursor advancement (only if there's still work queued).
     state_path = STATE_DIR / "backfill_state.json"

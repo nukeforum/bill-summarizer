@@ -9,6 +9,7 @@ import com.informedcitizen.pipeline.model.ElectionCalendar
 import com.informedcitizen.pipeline.model.ElectionEvent
 import com.informedcitizen.pipeline.model.ElectionType
 import com.informedcitizen.pipeline.model.Member
+import com.informedcitizen.pipeline.model.RegistrationDeadline
 import com.informedcitizen.ui.preview.PreviewWrap
 import com.informedcitizen.ui.preview.sampleSessionCalendar
 import java.time.LocalDate
@@ -53,6 +54,19 @@ private fun sampleElectionCalendar() = ElectionCalendar(
     generatedAt = "2026-05-05T12:00:00Z",
     source = "Federal general-election date is statutory; state primary dates are operator-curated.",
     elections = listOf(
+        ElectionEvent(
+            state = "NY",
+            date = "2026-06-23",
+            type = ElectionType.PRIMARY,
+            electionYear = 2026,
+            source = "https://www.elections.ny.gov/",
+            registration = RegistrationDeadline(
+                online = "2026-06-13",
+                byMail = "2026-06-13",
+                inPerson = "2026-06-13",
+                source = "https://www.elections.ny.gov/",
+            ),
+        ),
         ElectionEvent(
             state = ElectionEvent.NATIONWIDE,
             date = "2026-11-03",

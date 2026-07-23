@@ -64,6 +64,74 @@ def next_federal_general_election_year(from_date: dt.date) -> int:
     return year
 
 
+# Registration-deadline date fields, in wire order (issue #35). Each is an
+# optional ISO date the voter must register by for the given method; mirrors
+# RegistrationDeadline.{online,byMail,inPerson} in pipeline:shared.
+_REGISTRATION_DATE_FIELDS = ("online", "by_mail", "in_person")
+
+
+def _validate_registration(reg: Any, event_date: dt.date, label: str) -> dict | None:
+    """Coerce a curated ``registration`` block to a wire ``RegistrationDeadline``
+    dict, or return ``None`` if nothing verifiable survives (issue #35).
+
+    Correctness over coverage: an individual malformed field is dropped with a
+    warning rather than failing the whole row, and a deadline dated *after* its
+    election is nonsensical (registration closes on or before election day) so
+    it is dropped too. A block that contributes nothing actionable — no valid
+    method deadline and no ``same_day`` availability — collapses to ``None`` so
+    the event simply omits ``registration`` rather than carrying an empty husk.
+    """
+    if reg is None:
+        return None
+    if not isinstance(reg, dict):
+        print(f"  ! skipping {label} registration: not an object ({reg!r})", file=sys.stderr)
+        return None
+
+    out: dict = {}
+    for field in _REGISTRATION_DATE_FIELDS:
+        value = reg.get(field)
+        if value is None:
+            continue
+        if not isinstance(value, str):
+            print(f"  ! dropping {label} registration.{field}: non-string {value!r}", file=sys.stderr)
+            continue
+        try:
+            parsed = dt.date.fromisoformat(value)
+        except ValueError:
+            print(f"  ! dropping {label} registration.{field}: unparseable {value!r}", file=sys.stderr)
+            continue
+        if parsed > event_date:
+            print(
+                f"  ! dropping {label} registration.{field} {value}: after election {event_date}",
+                file=sys.stderr,
+            )
+            continue
+        out[field] = value
+
+    same_day = reg.get("same_day")
+    if same_day is not None:
+        if isinstance(same_day, bool):
+            out["same_day"] = same_day
+        else:
+            print(f"  ! dropping {label} registration.same_day: non-bool {same_day!r}", file=sys.stderr)
+
+    # Nothing actionable? A block is useful only if it carries at least one
+    # method deadline or advertises same-day registration; source alone (or an
+    # explicit same_day:false with no dates) tells the voter nothing to act on.
+    has_deadline = any(out.get(field) for field in _REGISTRATION_DATE_FIELDS)
+    if not has_deadline and out.get("same_day") is not True:
+        anything_supplied = out or reg.get("source") is not None or \
+            any(reg.get(field) is not None for field in _REGISTRATION_DATE_FIELDS)
+        if anything_supplied:
+            print(f"  ! dropping {label} registration: no usable deadline survived", file=sys.stderr)
+        return None
+
+    source = reg.get("source")
+    if isinstance(source, str) and source:
+        out["source"] = source
+    return out
+
+
 def _validate_primary(row: Any, min_year: int) -> dict | None:
     """Coerce one curated row to a wire ``ElectionEvent`` dict, or return
     ``None`` (with a stderr warning) if it fails validation. Rows for cycles
@@ -114,6 +182,9 @@ def _validate_primary(row: Any, min_year: int) -> dict | None:
     source = row.get("source")
     if isinstance(source, str) and source:
         event["source"] = source
+    registration = _validate_registration(row.get("registration"), parsed, f"{state} {etype}")
+    if registration is not None:
+        event["registration"] = registration
     return event
 
 

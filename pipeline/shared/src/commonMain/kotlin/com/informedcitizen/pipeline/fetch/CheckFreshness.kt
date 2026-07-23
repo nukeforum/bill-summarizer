@@ -33,6 +33,9 @@ import okio.use
  *  - Session calendar's latest House and Senate session day at least
  *    [CALENDAR_MIN_LOOKAHEAD_DAYS] ahead of today (so the bills
  *    list's "session" line never reads "session has ended").
+ *  - Election calendar names at least one election on or after today
+ *    (issue #23) and no upcoming election carries a registration
+ *    deadline that has already passed (issue #35). Tolerated if absent.
  *  - `backfill_state.json.last_run_at` advanced within
  *    [BACKFILL_MAX_AGE_DAYS] — unless the backfill queue is empty, in
  *    which case the cursor is allowed to be stale.
@@ -42,6 +45,16 @@ const val MEMBERS_MAX_AGE_DAYS: Int = 14
 const val VOTES_MAX_AGE_DAYS: Int = 2
 const val CALENDAR_MIN_LOOKAHEAD_DAYS: Int = 30
 const val BACKFILL_MAX_AGE_DAYS: Int = 3
+
+// The election calendar must always name a real upcoming election. Its horizon
+// is far out (the next federal general is up to ~2 years away), so unlike the
+// session calendar this guards that the horizon hasn't lapsed entirely, not a
+// rolling look-ahead window (issue #23).
+const val ELECTION_CALENDAR_MIN_LOOKAHEAD_DAYS: Int = 1
+
+// Registration-deadline date fields on a RegistrationDeadline wire block, in
+// wire order (issue #35). Mirrors Python `_election_calendar._REGISTRATION_DATE_FIELDS`.
+private val REGISTRATION_DATE_FIELDS = listOf("online", "by_mail", "in_person")
 
 private fun parseIsoUtc(value: String?): Instant? {
     if (value.isNullOrEmpty()) return null
@@ -148,6 +161,51 @@ fun checkFreshness(
             if (today.daysUntil(last) < CALENDAR_MIN_LOOKAHEAD_DAYS) {
                 failures += "calendar: $chamber last known session day $last is less than " +
                     "$CALENDAR_MIN_LOOKAHEAD_DAYS days out; upstream feed needs refresh"
+            }
+        }
+    }
+
+    // 4b. Election calendar horizon: at least one election on or after today.
+    // A newer artifact (issue #23); absence is tolerated until its workflow is
+    // live rather than failing every run.
+    val election = loadJson(fileSystem, outputDir / ELECTION_CALENDAR_FILE_NAME)
+    if (election != null) {
+        val todayIso = today.toString()
+        val events = (election["elections"] as? JsonArray).orEmpty().mapNotNull { it as? JsonObject }
+        val futureDates = events.mapNotNull { it.stringField("date") }.filter { it >= todayIso }
+        if (futureDates.isEmpty()) {
+            failures += "election: $ELECTION_CALENDAR_FILE_NAME has no election on or after " +
+                "$today; the federal general horizon needs advancing"
+        } else {
+            val last = try {
+                LocalDate.parse(futureDates.max())
+            } catch (_: Exception) {
+                null
+            }
+            if (last == null) {
+                failures += "election: $ELECTION_CALENDAR_FILE_NAME latest future date is malformed"
+            } else if (today.daysUntil(last) < ELECTION_CALENDAR_MIN_LOOKAHEAD_DAYS) {
+                failures += "election: $ELECTION_CALENDAR_FILE_NAME horizon $last is less than " +
+                    "$ELECTION_CALENDAR_MIN_LOOKAHEAD_DAYS days out"
+            }
+        }
+
+        // 4c. Registration-deadline lookahead (issue #35). For every election
+        // still upcoming, any published method deadline dated before today is
+        // stale — the voter can no longer act on it, yet the app would still
+        // count down to that election. same_day carries no date and is exempt.
+        for (event in events) {
+            val eventDate = event.stringField("date") ?: continue
+            if (eventDate < todayIso) continue
+            val reg = event["registration"] as? JsonObject ?: continue
+            val passed = REGISTRATION_DATE_FIELDS.mapNotNull { field ->
+                reg.stringField(field)?.takeIf { it < todayIso }?.let { "$field=$it" }
+            }
+            if (passed.isNotEmpty()) {
+                val state = event.stringField("state") ?: "?"
+                failures += "election: $state $eventDate election has passed registration " +
+                    "deadline(s) ${passed.joinToString(", ")} before today $today; " +
+                    "the curated deadline is stale and must be advanced or removed"
             }
         }
     }
