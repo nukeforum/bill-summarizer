@@ -48,3 +48,80 @@ def test_output_dir_under_repo_root():
     # Just confirm the constants resolve, not their exact value.
     assert _common.OUTPUT_DIR.name == "data"
     assert _common.STATE_DIR.name == "state"
+
+
+# ---------- outcome_from_vote / outcome_from_votes ------------------------
+
+
+def test_outcome_from_vote_house_passage():
+    # Real values from house_vote_119_1_roll017.xml (passage of H.R. 30).
+    assert (
+        _common.outcome_from_vote("house", "On Passage", "Passed")
+        == _common.OUTCOME_PASSED_HOUSE
+    )
+
+
+def test_outcome_from_vote_senate_passage():
+    # Real values from senate_vote_119_1_00618.xml (passage of H.R. 5371).
+    assert (
+        _common.outcome_from_vote("senate", "On Passage of the Bill", "Bill Passed")
+        == _common.OUTCOME_PASSED_SENATE
+    )
+
+
+def test_outcome_from_vote_failed_passage():
+    assert (
+        _common.outcome_from_vote("house", "On Passage", "Failed")
+        == _common.OUTCOME_FAILED
+    )
+    assert (
+        _common.outcome_from_vote("senate", "On Passage of the Bill", "Bill Defeated")
+        == _common.OUTCOME_FAILED
+    )
+
+
+def test_outcome_from_vote_amendment_rejection_is_not_a_bill_outcome():
+    # The correctness fix #30 targets: a rejected *amendment* must NOT be read
+    # as a failed bill the way the latest-action substring rules can.
+    assert _common.classify_outcome("Amendment SA 2411 rejected") == _common.OUTCOME_FAILED
+    assert _common.outcome_from_vote("senate", "On the Amendment", "Rejected") is None
+
+
+def test_outcome_from_vote_procedural_motions_are_not_bill_outcomes():
+    assert _common.outcome_from_vote("senate", "On the Cloture Motion", "Agreed to") is None
+    assert _common.outcome_from_vote("house", "On Motion to Table", "Agreed to") is None
+    assert _common.outcome_from_vote("senate", "On the Motion to Proceed", "Agreed to") is None
+
+
+def test_outcome_from_vote_suspension_passage():
+    assert (
+        _common.outcome_from_vote(
+            "house", "On Motion to Suspend the Rules and Pass, as Amended", "Passed"
+        )
+        == _common.OUTCOME_PASSED_HOUSE
+    )
+
+
+def test_outcome_from_votes_empty_returns_none():
+    assert _common.outcome_from_votes([]) is None
+
+
+def test_outcome_from_votes_ignores_amendment_votes():
+    votes = [
+        {"chamber": "senate", "question": "On the Amendment", "result": "Rejected",
+         "date": "2025-03-01", "roll_number": 10},
+    ]
+    assert _common.outcome_from_votes(votes) is None
+
+
+def test_outcome_from_votes_latest_decisive_vote_wins():
+    # House passage, then Senate passage a day later: the Senate result wins.
+    votes = [
+        {"chamber": "house", "question": "On Passage", "result": "Passed",
+         "date": "2025-03-01", "roll_number": 5},
+        {"chamber": "senate", "question": "On the Amendment", "result": "Agreed to",
+         "date": "2025-03-05", "roll_number": 90},
+        {"chamber": "senate", "question": "On Passage of the Bill", "result": "Bill Passed",
+         "date": "2025-03-02", "roll_number": 88},
+    ]
+    assert _common.outcome_from_votes(votes) == _common.OUTCOME_PASSED_SENATE
