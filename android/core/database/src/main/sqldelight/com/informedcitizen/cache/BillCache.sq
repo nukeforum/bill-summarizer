@@ -10,7 +10,17 @@
 -- `payload` stores the kotlinx-serialization JSON of the Bill data
 -- class — flexible against future field additions without requiring
 -- per-field column ALTERs. The extracted columns (congress, source,
--- latest_action_date) cover the common query paths (filter + sort).
+-- latest_action_date, status, policy_area) cover the common query
+-- paths (filter + sort + paging).
+--
+-- `shard_index` records which #40 shard wrote the row, so a partial
+-- refresh can replace one shard's rows without nuking shards it never
+-- re-fetched (the whole-manifest / BYOK path writes shard 0). `status`
+-- holds the #39 lifecycle-status wire string (null for a bill with a
+-- terminal floor outcome, matching `Bill.lifecycleStatus`) and
+-- `policy_area` the CRS policy area — both extracted so the paged bills
+-- list (backlog #41) can filter in SQL instead of in memory once the
+-- broadened ~10k-bill manifest no longer fits comfortably in RAM.
 
 CREATE TABLE cached_bill (
     bill_id TEXT NOT NULL,
@@ -19,10 +29,15 @@ CREATE TABLE cached_bill (
     latest_action_date TEXT NOT NULL,
     payload TEXT NOT NULL,
     fetched_at INTEGER NOT NULL,
+    shard_index INTEGER NOT NULL DEFAULT 0,
+    status TEXT,
+    policy_area TEXT,
     PRIMARY KEY (bill_id, source)
 );
 CREATE INDEX cached_bill_congress ON cached_bill(congress);
 CREATE INDEX cached_bill_latest_action ON cached_bill(latest_action_date DESC);
+CREATE INDEX cached_bill_status ON cached_bill(congress, source, status);
+CREATE INDEX cached_bill_policy_area ON cached_bill(congress, source, policy_area);
 
 -- Per-(congress, source) manifest metadata so the UI / refresh logic
 -- can answer "when was congress 119's published data last fetched?"
@@ -33,6 +48,23 @@ CREATE TABLE cached_bills_manifest (
     source TEXT NOT NULL,
     generated_at TEXT NOT NULL,
     fetched_at INTEGER NOT NULL,
+    PRIMARY KEY (congress, source)
+);
+
+-- Paging cursor for the sharded bills read path (backlog #41). One row
+-- per (congress, source): `next_shard_index` is the next #40 shard the
+-- RemoteMediator should append, `total_shards` (from the shard index)
+-- lets the UI show an honest "showing N of ~M" partial-list footer when
+-- `loaded < total` and the network is down, and `page_size` records the
+-- shard contract's page size. A Congress with no shard index (today's
+-- single `congressNNN_bills.json`) is treated as exactly one shard, so
+-- the same cursor drives the no-regression 256-bill case.
+CREATE TABLE cached_shard_cursor (
+    congress INTEGER NOT NULL,
+    source TEXT NOT NULL,
+    next_shard_index INTEGER NOT NULL,
+    total_shards INTEGER NOT NULL,
+    page_size INTEGER NOT NULL,
     PRIMARY KEY (congress, source)
 );
 
@@ -53,13 +85,54 @@ WHERE bill_id = :bill_id AND source = :source;
 countBillsBySource:
 SELECT COUNT(*) FROM cached_bill WHERE congress = :congress AND source = :source;
 
+-- Paged, DB-filtered read for the sharded bills list (backlog #41). The
+-- status / policy_area filters are optional (a null bind matches every
+-- row), so one query serves the unfiltered list and the #42 lifecycle /
+-- #10 policy-area filters without an in-memory `List.filter` pass. The
+-- tie-break on bill_id keeps page boundaries stable across LIMIT/OFFSET.
+-- Free-text search across shards is deliberately deferred to the paging
+-- read-path slice (it needs fixture tests over the exact match rules).
+selectBillsPaged:
+SELECT payload FROM cached_bill
+WHERE congress = :congress
+  AND source = :source
+  AND (:status IS NULL OR status = :status)
+  AND (:policyArea IS NULL OR policy_area = :policyArea)
+ORDER BY latest_action_date DESC, bill_id
+LIMIT :limit OFFSET :offset;
+
+-- Total matching rows for the same filter tuple — the paged query's
+-- companion so the UI can render "N of ~M" without materialising the set.
+countBillsPaged:
+SELECT COUNT(*) FROM cached_bill
+WHERE congress = :congress
+  AND source = :source
+  AND (:status IS NULL OR status = :status)
+  AND (:policyArea IS NULL OR policy_area = :policyArea);
+
+-- Distinct policy areas present in the cache for the #10 filter dropdown,
+-- which can no longer be derived from an in-memory full list once paging
+-- lands. Nulls are dropped so the dropdown only lists real areas.
+selectDistinctPolicyAreas:
+SELECT DISTINCT policy_area FROM cached_bill
+WHERE congress = :congress AND source = :source AND policy_area IS NOT NULL
+ORDER BY policy_area;
+
 upsertBill:
 INSERT OR REPLACE INTO cached_bill (
-    bill_id, congress, source, latest_action_date, payload, fetched_at
-) VALUES (?, ?, ?, ?, ?, ?);
+    bill_id, congress, source, latest_action_date, payload, fetched_at,
+    shard_index, status, policy_area
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);
 
 clearCongressForSource:
 DELETE FROM cached_bill WHERE congress = :congress AND source = :source;
+
+-- Replace just one shard's rows on a partial refresh (backlog #41), so a
+-- re-fetched shard prunes its own vanished bills without touching shards
+-- the mediator never re-requested.
+clearShardForSource:
+DELETE FROM cached_bill
+WHERE congress = :congress AND source = :source AND shard_index = :shardIndex;
 
 clearAllCachedBills:
 DELETE FROM cached_bill;
@@ -84,3 +157,18 @@ INSERT OR REPLACE INTO cached_bills_manifest (
 
 clearAllManifestMeta:
 DELETE FROM cached_bills_manifest;
+
+selectShardCursor:
+SELECT next_shard_index, total_shards, page_size FROM cached_shard_cursor
+WHERE congress = :congress AND source = :source;
+
+upsertShardCursor:
+INSERT OR REPLACE INTO cached_shard_cursor (
+    congress, source, next_shard_index, total_shards, page_size
+) VALUES (?, ?, ?, ?, ?);
+
+clearShardCursorForSource:
+DELETE FROM cached_shard_cursor WHERE congress = :congress AND source = :source;
+
+clearAllShardCursors:
+DELETE FROM cached_shard_cursor;

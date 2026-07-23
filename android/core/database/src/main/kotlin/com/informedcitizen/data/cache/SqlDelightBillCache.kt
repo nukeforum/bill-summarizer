@@ -1,6 +1,7 @@
 package com.informedcitizen.data.cache
 
 import com.informedcitizen.cache.BillSummaryDatabase
+import com.informedcitizen.pipeline.lifecycleStatusToWireString
 import com.informedcitizen.pipeline.model.Bill
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -31,6 +32,14 @@ class SqlDelightBillCache(
                         latest_action_date = bill.latestAction.date,
                         payload = json.encodeToString(Bill.serializer(), bill),
                         fetched_at = fetchedAtMillis,
+                        // Whole-manifest / BYOK writes are a single logical
+                        // shard 0; the sharded read path (backlog #41) will set
+                        // real shard indices when it lands. status/policy_area
+                        // are extracted into their own columns for DB-side
+                        // filtering; payload stays authoritative for the rest.
+                        shard_index = 0,
+                        status = bill.lifecycleStatus?.let(::lifecycleStatusToWireString),
+                        policy_area = bill.policyArea,
                     )
                 }
                 q.upsertManifest(
@@ -90,6 +99,7 @@ class SqlDelightBillCache(
         withContext(Dispatchers.IO) {
             db.transaction {
                 q.clearCongressForSource(congress = congress.toLong(), source = source.wireString)
+                q.clearShardCursorForSource(congress = congress.toLong(), source = source.wireString)
                 // Manifest meta clear is row-scoped to (congress, source) so
                 // hand-rolled rather than via a query (no per-row delete query
                 // defined — the bulk clearAll path is rare).
@@ -102,6 +112,7 @@ class SqlDelightBillCache(
             db.transaction {
                 q.clearAllCachedBills()
                 q.clearAllManifestMeta()
+                q.clearAllShardCursors()
             }
         }
     }
