@@ -38,6 +38,13 @@ data class ElectionCalendar(
  * source so the provenance of each date travels with it — correctness of
  * these dates matters more than automation (issue #23), so provenance is
  * first-class.
+ *
+ * [registration] is an optional per-state voter-registration deadline for
+ * this event (issue #35): the *actionable* date, since registration
+ * typically closes weeks before the election itself. It is null for the
+ * shared [NATIONWIDE] general row (deadlines are per-state) and for any
+ * state whose deadline is unverified — correctness over coverage means an
+ * absent deadline is preferred to a guessed one.
  */
 @Serializable
 data class ElectionEvent(
@@ -46,12 +53,41 @@ data class ElectionEvent(
     val type: ElectionType = ElectionType.UNKNOWN,
     @SerialName("election_year") val electionYear: Int,
     val source: String? = null,
+    val registration: RegistrationDeadline? = null,
 ) {
     companion object {
         /** [state] sentinel for the federal general election shared by all states. */
         const val NATIONWIDE: String = "US"
     }
 }
+
+/**
+ * A state's voter-registration deadlines for a given election (issue #35,
+ * epic #16 — "cast their vote"). All fields are optional so the app parses
+ * leniently and the pipeline can ship this data-first, and so a state can
+ * carry only the deadline types it actually distinguishes.
+ *
+ * [online], [byMail], and [inPerson] are ISO-8601 calendar dates
+ * (`YYYY-MM-DD`); many states share one deadline across methods, in which
+ * case only the applicable field(s) need be set. [byMail] is the
+ * postmark-by date where the state accepts a postmark (rather than
+ * receipt) cutoff. [sameDay] is true when the state offers same-day /
+ * election-day registration, in which case the printed deadlines are the
+ * *advance* cutoffs and a voter can still register at the polls.
+ *
+ * [source] is the authoritative state-election-office or vote.gov URL the
+ * deadline was verified against, so the app can always link out to the
+ * page of record (correctness-over-coverage: provenance travels with every
+ * deadline, same rule as [ElectionEvent.source]).
+ */
+@Serializable
+data class RegistrationDeadline(
+    val online: String? = null,
+    @SerialName("by_mail") val byMail: String? = null,
+    @SerialName("in_person") val inPerson: String? = null,
+    @SerialName("same_day") val sameDay: Boolean? = null,
+    val source: String? = null,
+)
 
 /**
  * Kind of election. [UNKNOWN] is the lenient-decode fallback: because
