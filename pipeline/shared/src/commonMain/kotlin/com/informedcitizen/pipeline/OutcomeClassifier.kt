@@ -1,5 +1,10 @@
 package com.informedcitizen.pipeline
 
+import com.informedcitizen.pipeline.model.Bill
+import com.informedcitizen.pipeline.model.Chamber
+import com.informedcitizen.pipeline.model.Outcome
+import com.informedcitizen.pipeline.model.VoteRef
+
 const val OUTCOME_PASSED_HOUSE: String = "passed_house"
 const val OUTCOME_PASSED_SENATE: String = "passed_senate"
 const val OUTCOME_ENACTED: String = "enacted"
@@ -44,12 +49,132 @@ fun classifyOutcome(actionText: String): String? {
  * and the classifier) so callers don't have to import both packages
  * to round-trip an outcome.
  */
-fun outcomeFromWireString(value: String): com.informedcitizen.pipeline.model.Outcome? =
+fun outcomeFromWireString(value: String): Outcome? =
     when (value) {
-        OUTCOME_PASSED_HOUSE -> com.informedcitizen.pipeline.model.Outcome.PASSED_HOUSE
-        OUTCOME_PASSED_SENATE -> com.informedcitizen.pipeline.model.Outcome.PASSED_SENATE
-        OUTCOME_ENACTED -> com.informedcitizen.pipeline.model.Outcome.ENACTED
-        OUTCOME_VETOED -> com.informedcitizen.pipeline.model.Outcome.VETOED
-        OUTCOME_FAILED -> com.informedcitizen.pipeline.model.Outcome.FAILED
+        OUTCOME_PASSED_HOUSE -> Outcome.PASSED_HOUSE
+        OUTCOME_PASSED_SENATE -> Outcome.PASSED_SENATE
+        OUTCOME_ENACTED -> Outcome.ENACTED
+        OUTCOME_VETOED -> Outcome.VETOED
+        OUTCOME_FAILED -> Outcome.FAILED
         else -> null
     }
+
+// ---------- outcome from roll-call votes (backlog #30) --------------------
+
+/**
+ * Question-text markers that identify a *passage*-type roll call — the
+ * only votes that decide a bill. Mirrors Python `_common`'s
+ * `_PASSAGE_QUESTION_MARKERS`. Amendment, table, cloture and other
+ * procedural questions are deliberately excluded so they can never
+ * override a bill's outcome (the substring text classifier's bug: a
+ * rejected amendment read as a failed bill).
+ */
+private val PASSAGE_QUESTION_MARKERS: List<String> = listOf(
+    "on passage", // House "On Passage"; Senate "On Passage of the Bill"
+    "suspend the rules and pass", // House passage under suspension of the rules
+    "suspend the rules and agree", // House resolution adoption under suspension
+    "on agreeing to the resolution", // simple / concurrent resolution adoption
+    "on the conference report", // final adoption of the conference report
+    "on concurring", // concur in the other chamber's amendment (final passage)
+    "on the motion to concur",
+    "on the joint resolution",
+    "on overriding the veto", // veto override
+)
+
+private fun voteQuestionIsPassage(question: String): Boolean {
+    val q = question.lowercase()
+    return PASSAGE_QUESTION_MARKERS.any { it in q }
+}
+
+/**
+ * True the measure prevailed, false it lost, null unrecognised. Failure
+ * markers are tested first so "Not Agreed to" / "Bill Defeated" are never
+ * read as a pass by a stray "agreed"/"pass" substring. Mirrors Python
+ * `_common._vote_result_prevailed`.
+ */
+private fun voteResultPrevailed(result: String): Boolean? {
+    val r = result.lowercase()
+    if (listOf("fail", "reject", "defeat", "negativ", "not agreed", "not passed").any { it in r }) {
+        return false
+    }
+    if (listOf("pass", "agreed to", "adopted", "concurred").any { it in r }) {
+        return true
+    }
+    return null
+}
+
+/**
+ * The [Outcome] a single roll call implies, or null if it doesn't decide
+ * the bill. Only passage-type questions with a recognised result yield an
+ * outcome; amendment and procedural votes return null so they can never
+ * override a bill's outcome. Mirrors Python `_common.outcome_from_vote`.
+ */
+fun outcomeFromVote(chamber: Chamber, question: String, result: String): Outcome? {
+    if (!voteQuestionIsPassage(question)) return null
+    return when (voteResultPrevailed(result)) {
+        false -> Outcome.FAILED
+        true -> when (chamber) {
+            Chamber.HOUSE -> Outcome.PASSED_HOUSE
+            Chamber.SENATE -> Outcome.PASSED_SENATE
+        }
+        null -> null
+    }
+}
+
+/**
+ * Derive a bill's [Outcome] from its linked roll-call votes, or null.
+ *
+ * Considers only passage-type roll calls ([outcomeFromVote]); the most
+ * recent decisive one by date wins (roll number then chamber break ties),
+ * mirroring the latest-action semantics of [classifyOutcome] but grounded
+ * in the actual vote rather than action text. Returns null when no linked
+ * roll call is a decisive passage vote (the bill moved by voice vote, or
+ * every roll call was an amendment) — the caller then keeps the text
+ * classifier's outcome. Mirrors Python `_common.outcome_from_votes`.
+ */
+fun outcomeFromVotes(votes: List<VoteRef>): Outcome? =
+    votes
+        .mapNotNull { vote ->
+            outcomeFromVote(vote.chamber, vote.question, vote.result)?.let { vote to it }
+        }
+        .maxWithOrNull(
+            // Same (date, roll_number, chamber) order as buildVotesIndex and
+            // Python's reverse sort; Chamber's ordinal (HOUSE, SENATE) matches
+            // the wire strings' lexical order ("house" < "senate").
+            compareBy<Pair<VoteRef, Outcome>>({ it.first.date })
+                .thenBy { it.first.rollNumber }
+                .thenBy { it.first.chamber },
+        )
+        ?.second
+
+/** Result of [reconcileVoteOutcomes]: the corrected bills and how many changed. */
+data class ReconcileResult(val bills: List<Bill>, val overrides: Int)
+
+/**
+ * Override each bill's text-derived [Bill.outcome] with the outcome its
+ * linked roll-call votes imply, when a passage vote decides the measure.
+ *
+ * Bills are classified at build time from latest-action text
+ * ([classifyOutcome]), which can misread an amendment rejection or a
+ * motion to table as a *failed bill*. Once roll calls are linked
+ * ([com.informedcitizen.pipeline.fetch.attachVoteRefs] sets each bill's
+ * [Bill.votes]), a passage vote is the authoritative signal: where
+ * [outcomeFromVotes] yields an outcome that differs from the stored one,
+ * this replaces it and counts the correction. Bills with no decisive
+ * passage roll call keep their text outcome. Returns a copy of [bills]
+ * with corrections applied plus the override count (a discrepancy signal
+ * the caller can surface). Mirrors Python `_common.reconcile_vote_outcomes`.
+ */
+fun reconcileVoteOutcomes(bills: List<Bill>): ReconcileResult {
+    var overrides = 0
+    val reconciled = bills.map { bill ->
+        val derived = outcomeFromVotes(bill.votes)
+        if (derived != null && derived != bill.outcome) {
+            overrides++
+            bill.copy(outcome = derived)
+        } else {
+            bill
+        }
+    }
+    return ReconcileResult(reconciled, overrides)
+}

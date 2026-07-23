@@ -2,6 +2,7 @@ package com.informedcitizen.pipeline.fetch
 
 import com.informedcitizen.pipeline.ErrorCollector
 import com.informedcitizen.pipeline.http.SenateVotesApiException
+import com.informedcitizen.pipeline.reconcileVoteOutcomes
 import com.informedcitizen.pipeline.http.SenateVotesClient
 import com.informedcitizen.pipeline.model.Chamber
 import com.informedcitizen.pipeline.model.RollCallVote
@@ -77,6 +78,13 @@ data class FetchVotesResult(
     val index: VotesIndex,
     /** True iff the bills manifest's vote refs changed and it was rewritten. */
     val billManifestRefreshed: Boolean,
+    /**
+     * Bills whose text-classified outcome was overridden by a linked
+     * passage roll call this run (backlog #30). A discrepancy signal: a
+     * nonzero count means the substring classifier disagreed with the
+     * actual vote. Zero when no manifest was supplied.
+     */
+    val outcomeOverrides: Int,
     /** Per-member shards rewritten this run (their rows changed). */
     val memberShardsWritten: Int,
     /** Per-member shards left byte-untouched (rows unchanged). */
@@ -265,32 +273,40 @@ private suspend fun fetchNewHouseVotes(
     return HouseFetchResult(fetched, skipped, unsupported)
 }
 
+/** Result of [refreshBillVoteRefs]: whether the manifest was rewritten and how many outcomes it corrected. */
+data class RefreshBillVoteRefsResult(val refreshed: Boolean, val outcomeOverrides: Int)
+
 /**
- * Re-attach vote refs to the bills manifest after new votes land.
- * Mirrors Python `fetch_votes.refresh_bill_vote_refs`.
+ * Re-attach vote refs to the bills manifest after new votes land, and
+ * reconcile each bill's outcome against its passage roll calls (backlog
+ * #30). Mirrors Python `fetch_votes.refresh_bill_vote_refs`.
  *
  * Bills leave fetch-bills' refresh window ~60 days after their last
  * action, so this pass — not the bills workflow — is what links votes
- * that arrive later (or between bill runs) to their bills. Returns true
- * when the manifest changed and was rewritten; no-ops when there is no
- * manifest to enrich (votes can backfill before bills on a fresh tree).
+ * that arrive later (or between bill runs) to their bills. After
+ * attaching, [reconcileVoteOutcomes] overrides any bill whose stored
+ * text-classified outcome disagrees with its actual passage vote (an
+ * amendment rejection misread as a failed bill). Returns whether the
+ * manifest changed and was rewritten, plus the outcome-override count as
+ * a discrepancy signal; no-ops (false, 0) when there is no manifest to
+ * enrich (votes can backfill before bills on a fresh tree).
  */
 fun refreshBillVoteRefs(
     manifestStore: FileBillsManifestStore,
     congress: Int,
     refs: List<VoteRef>,
     nowIso: String,
-): Boolean {
-    val manifest = manifestStore.load(congress) ?: return false
+): RefreshBillVoteRefsResult {
+    val manifest = manifestStore.load(congress) ?: return RefreshBillVoteRefsResult(false, 0)
     val bills = manifest.bills
-    val enriched = attachVoteRefs(bills, refs)
+    val (enriched, overrides) = reconcileVoteOutcomes(attachVoteRefs(bills, refs))
     // The rewrite must also happen when only the votes_coverage gate flips
     // (first index publish with no bill-linked votes yet), or the app would
     // keep hiding vote surfaces until the next bills run.
     val coverageChanged = manifest.votesCoverage != manifestStore.votesCoverage(congress)
-    if (enriched == bills && !coverageChanged) return false
+    if (enriched == bills && !coverageChanged) return RefreshBillVoteRefsResult(false, overrides)
     manifestStore.save(congress, enriched, nowIso)
-    return true
+    return RefreshBillVoteRefsResult(true, overrides)
 }
 
 /** Result of [rebuildMemberVotes]: shards rewritten vs. left untouched. */
@@ -422,8 +438,11 @@ suspend fun fetchVotes(
     val refs = votesByCongress[congress].orEmpty().map(::buildVoteRef)
     val index = buildVotesIndex(congress, refs, nowIso)
     store.saveIndex(index)
-    val billManifestRefreshed = manifestStore != null &&
+    val refresh = if (manifestStore != null) {
         refreshBillVoteRefs(manifestStore, congress, index.votes, nowIso)
+    } else {
+        RefreshBillVoteRefsResult(false, 0)
+    }
     val memberShards = rebuildMemberVotes(store, votesByCongress, manifestStore, nowIso)
     return FetchVotesResult(
         congress = congress,
@@ -435,7 +454,8 @@ suspend fun fetchVotes(
         skipped = senateSkipped + house.skipped,
         unsupported = house.unsupported,
         index = index,
-        billManifestRefreshed = billManifestRefreshed,
+        billManifestRefreshed = refresh.refreshed,
+        outcomeOverrides = refresh.outcomeOverrides,
         memberShardsWritten = memberShards.written,
         memberShardsUnchanged = memberShards.unchanged,
     )

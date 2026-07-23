@@ -91,6 +91,9 @@ object FetchVotesCommand {
             if (result.billManifestRefreshed) {
                 println("bill manifest: ${manifestFileName(congress)} vote refs refreshed")
             }
+            if (result.outcomeOverrides > 0) {
+                println("${result.outcomeOverrides} outcome(s) corrected from roll-call votes")
+            }
             println(
                 "member shards: ${result.memberShardsWritten} written, " +
                     "${result.memberShardsUnchanged} unchanged",
