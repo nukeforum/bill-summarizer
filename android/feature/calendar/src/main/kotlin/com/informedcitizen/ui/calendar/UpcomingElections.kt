@@ -175,3 +175,31 @@ internal fun upForElectionBadgeText(election: UpcomingElection): String =
  */
 internal fun ballotBadgeDescription(election: UpcomingElection): String =
     "up for election ${BALLOT_BADGE_A11Y_FORMAT.format(election.date)}"
+
+/**
+ * One saved rep who appears on an upcoming general-election ballot, paired with
+ * the [election] they face — the row model for issue #33's "On your ballot"
+ * section on the #24 elections surface.
+ */
+data class BallotRep(
+    val member: Member,
+    val election: UpcomingElection,
+)
+
+/**
+ * The saved [members] who appear on an upcoming general ballot, each paired with
+ * the election they face (via [ballotElectionFor]), soonest election first and
+ * ties broken by member name so the ordering is stable. Members with no dated
+ * upcoming general on record are omitted, so an empty result means "render no
+ * section". A null [calendar] yields an empty list (nothing cached → no ballot
+ * claim), matching issue #33's graceful-degradation rule — the section is a pure
+ * read over already-cached artifacts and never fabricates a date.
+ */
+fun savedRepsOnBallot(
+    members: List<Member>,
+    calendar: ElectionCalendar?,
+    today: LocalDate = LocalDate.now(),
+): List<BallotRep> =
+    members.mapNotNull { member ->
+        ballotElectionFor(member, calendar, today)?.let { BallotRep(member, it) }
+    }.sortedWith(compareBy({ it.election.date }, { it.member.name }))

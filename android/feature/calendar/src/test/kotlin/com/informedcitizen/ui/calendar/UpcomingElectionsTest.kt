@@ -237,4 +237,53 @@ class UpcomingElectionsTest {
         assertEquals("Up for election · Nov 3, 2026", upForElectionBadgeText(match))
         assertEquals("up for election November 3, 2026", ballotBadgeDescription(match))
     }
+
+    // -- "On your ballot" saved-reps section (issue #33, slice 3) ------------
+
+    private fun namedMember(bioguideId: String, name: String, nextElectionYear: Int?) = Member(
+        bioguideId = bioguideId,
+        name = name,
+        party = "D",
+        state = "OH",
+        chamber = "senate",
+        nextElectionYear = nextElectionYear,
+    )
+
+    @Test
+    fun `savedRepsOnBallot keeps only members with a dated upcoming general`() {
+        val onBallot = namedMember("A000001", "Ada Onballot", 2026)
+        val offCycle = namedMember("B000002", "Ben Offcycle", 2028)
+        val noYear = namedMember("C000003", "Cy Noyear", null)
+
+        val result = savedRepsOnBallot(listOf(onBallot, offCycle, noYear), generalCal, today)
+
+        assertEquals(listOf("A000001"), result.map { it.member.bioguideId })
+        assertEquals("2026-11-03", result.single().election.event.date)
+    }
+
+    @Test
+    fun `savedRepsOnBallot sorts by soonest election then member name`() {
+        val cal = calendar(
+            event(ElectionEvent.NATIONWIDE, "2026-11-03", ElectionType.GENERAL, year = 2026),
+            event(ElectionEvent.NATIONWIDE, "2028-11-07", ElectionType.GENERAL, year = 2028),
+        )
+        val later = namedMember("A000001", "Aaron Later", 2028)
+        val soonerZ = namedMember("Z000009", "Zoe Sooner", 2026)
+        val soonerA = namedMember("A000002", "Amy Sooner", 2026)
+
+        val result = savedRepsOnBallot(listOf(later, soonerZ, soonerA), cal, today)
+
+        assertEquals(listOf("Amy Sooner", "Zoe Sooner", "Aaron Later"), result.map { it.member.name })
+    }
+
+    @Test
+    fun `savedRepsOnBallot is empty when the calendar is null`() {
+        val onBallot = namedMember("A000001", "Ada Onballot", 2026)
+        assertTrue(savedRepsOnBallot(listOf(onBallot), null, today).isEmpty())
+    }
+
+    @Test
+    fun `savedRepsOnBallot is empty for no members`() {
+        assertTrue(savedRepsOnBallot(emptyList(), generalCal, today).isEmpty())
+    }
 }
