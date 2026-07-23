@@ -8,6 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
+import com.informedcitizen.pipeline.model.LifecycleStatus
 import com.informedcitizen.pipeline.model.Outcome
 import com.informedcitizen.ui.preview.PreviewWrap
 import com.informedcitizen.ui.preview.sampleBill
@@ -60,6 +61,40 @@ private fun PreviewBillCardOutcomes() = PreviewWrap(modifier = Modifier.fillMaxW
             bill = sampleBill(
                 outcome = Outcome.FAILED,
                 sponsor = sampleSponsor(party = "I", state = "VT"),
+            ),
+            onClick = {},
+        )
+    }
+}
+
+@PreviewLightDark
+@Composable
+private fun PreviewBillCardLifecycleStatuses() = PreviewWrap(modifier = Modifier.fillMaxWidth().padding(16.dp)) {
+    // Pre-floor bills (issue #42): outcome UNKNOWN + a lifecycle status → the
+    // neutral lifecycle chip shows in place of the outcome chip.
+    Column(
+        modifier = Modifier.fillMaxWidth().padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(8.dp),
+    ) {
+        BillCard(
+            bill = sampleBill(
+                outcome = Outcome.UNKNOWN,
+                lifecycleStatus = LifecycleStatus.INTRODUCED,
+            ),
+            onClick = {},
+        )
+        BillCard(
+            bill = sampleBill(
+                outcome = Outcome.UNKNOWN,
+                lifecycleStatus = LifecycleStatus.IN_COMMITTEE,
+                sponsor = sampleSponsor(party = "R", state = "TX"),
+            ),
+            onClick = {},
+        )
+        BillCard(
+            bill = sampleBill(
+                outcome = Outcome.UNKNOWN,
+                lifecycleStatus = LifecycleStatus.REPORTED,
             ),
             onClick = {},
         )
