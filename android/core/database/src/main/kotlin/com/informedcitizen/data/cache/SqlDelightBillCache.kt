@@ -117,6 +117,111 @@ class SqlDelightBillCache(
         }
     }
 
+    override suspend fun appendShard(
+        congress: Int,
+        source: BillSource,
+        shardIndex: Int,
+        bills: List<Bill>,
+        generatedAt: String,
+        fetchedAtMillis: Long,
+        totalShards: Int,
+        pageSize: Int,
+    ) {
+        withContext(Dispatchers.IO) {
+            db.transaction {
+                // Prune this shard's prior rows so a re-fetched shard drops
+                // its own vanished bills without touching other shards.
+                q.clearShardForSource(
+                    congress = congress.toLong(),
+                    source = source.wireString,
+                    shardIndex = shardIndex.toLong(),
+                )
+                for (bill in bills) {
+                    q.upsertBill(
+                        bill_id = bill.id,
+                        congress = bill.congress.toLong(),
+                        source = source.wireString,
+                        latest_action_date = bill.latestAction.date,
+                        payload = json.encodeToString(Bill.serializer(), bill),
+                        fetched_at = fetchedAtMillis,
+                        shard_index = shardIndex.toLong(),
+                        status = bill.lifecycleStatus?.let(::lifecycleStatusToWireString),
+                        policy_area = bill.policyArea,
+                    )
+                }
+                q.upsertShardCursor(
+                    congress = congress.toLong(),
+                    source = source.wireString,
+                    next_shard_index = (shardIndex + 1).toLong(),
+                    total_shards = totalShards.toLong(),
+                    page_size = pageSize.toLong(),
+                )
+                q.upsertManifest(
+                    congress = congress.toLong(),
+                    source = source.wireString,
+                    generated_at = generatedAt,
+                    fetched_at = fetchedAtMillis,
+                )
+            }
+        }
+    }
+
+    override suspend fun loadShardCursor(congress: Int, source: BillSource): ShardCursor? =
+        withContext(Dispatchers.IO) {
+            q.selectShardCursor(
+                congress = congress.toLong(),
+                source = source.wireString,
+            ).executeAsOneOrNull()?.let {
+                ShardCursor(
+                    nextShardIndex = it.next_shard_index.toInt(),
+                    totalShards = it.total_shards.toInt(),
+                    pageSize = it.page_size.toInt(),
+                )
+            }
+        }
+
+    override suspend fun loadBillsPaged(
+        congress: Int,
+        source: BillSource,
+        status: String?,
+        policyArea: String?,
+        limit: Int,
+        offset: Int,
+    ): List<Bill> =
+        withContext(Dispatchers.IO) {
+            q.selectBillsPaged(
+                congress = congress.toLong(),
+                source = source.wireString,
+                status = status,
+                policyArea = policyArea,
+                limit = limit.toLong(),
+                offset = offset.toLong(),
+            ).executeAsList().map { json.decodeFromString(Bill.serializer(), it) }
+        }
+
+    override suspend fun countBills(
+        congress: Int,
+        source: BillSource,
+        status: String?,
+        policyArea: String?,
+    ): Int =
+        withContext(Dispatchers.IO) {
+            q.countBillsPaged(
+                congress = congress.toLong(),
+                source = source.wireString,
+                status = status,
+                policyArea = policyArea,
+            ).executeAsOne().toInt()
+        }
+
+    override suspend fun distinctPolicyAreas(congress: Int, source: BillSource): List<String> =
+        withContext(Dispatchers.IO) {
+            q.selectDistinctPolicyAreas(
+                congress = congress.toLong(),
+                source = source.wireString,
+            ).executeAsList()
+        }
+
     private companion object {
         val DefaultJson: Json = Json {
             ignoreUnknownKeys = true

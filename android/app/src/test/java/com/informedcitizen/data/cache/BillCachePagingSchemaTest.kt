@@ -145,6 +145,104 @@ class BillCachePagingSchemaTest {
         assertEquals(1L, q.countBillsBySource(119, "published").executeAsOne())
     }
 
+    // ---- sharded append + paged reads via the cache API ------------------
+
+    @Test fun `appendShard tags rows, advances the cursor, and powers DB-filtered pages`() = runTest {
+        BillSummaryDatabase.Schema.create(driver)
+        val cache = SqlDelightBillCache(BillSummaryDatabase(driver))
+
+        cache.appendShard(
+            congress = 119,
+            source = BillSource.PUBLISHED,
+            shardIndex = 0,
+            bills = listOf(
+                bill("hr1-119", "2026-04-10", LifecycleStatus.INTRODUCED, "Health"),
+                bill("hr2-119", "2026-04-09", LifecycleStatus.IN_COMMITTEE, "Taxation"),
+            ),
+            generatedAt = "g0",
+            fetchedAtMillis = 10L,
+            totalShards = 2,
+            pageSize = 2,
+        )
+        cache.appendShard(
+            congress = 119,
+            source = BillSource.PUBLISHED,
+            shardIndex = 1,
+            bills = listOf(bill("hr3-119", "2026-04-08", LifecycleStatus.REPORTED, "Health")),
+            generatedAt = "g1",
+            fetchedAtMillis = 20L,
+            totalShards = 2,
+            pageSize = 2,
+        )
+
+        // Cursor advanced to the next shard and now covers every published shard.
+        val cursor = cache.loadShardCursor(119, BillSource.PUBLISHED)!!
+        assertEquals(2, cursor.nextShardIndex)
+        assertEquals(2, cursor.totalShards)
+        assertEquals(2, cursor.pageSize)
+        assertTrue(cursor.isComplete)
+
+        // Cross-shard recency paging is stable across LIMIT/OFFSET.
+        assertEquals(3, cache.countBills(119, BillSource.PUBLISHED, null, null))
+        assertEquals(
+            listOf("hr1-119", "hr2-119"),
+            cache.loadBillsPaged(119, BillSource.PUBLISHED, null, null, limit = 2, offset = 0).map { it.id },
+        )
+        assertEquals(
+            listOf("hr3-119"),
+            cache.loadBillsPaged(119, BillSource.PUBLISHED, null, null, limit = 2, offset = 2).map { it.id },
+        )
+
+        // DB-side filters span shards (Health lives in shard 0 and shard 1).
+        assertEquals(2, cache.countBills(119, BillSource.PUBLISHED, null, "Health"))
+        assertEquals(
+            listOf("hr1-119", "hr3-119"),
+            cache.loadBillsPaged(119, BillSource.PUBLISHED, null, "Health", limit = 10, offset = 0).map { it.id },
+        )
+        assertEquals(1, cache.countBills(119, BillSource.PUBLISHED, "reported", null))
+        assertEquals(listOf("Health", "Taxation"), cache.distinctPolicyAreas(119, BillSource.PUBLISHED))
+    }
+
+    @Test fun `re-appending a shard prunes only its own rows`() = runTest {
+        BillSummaryDatabase.Schema.create(driver)
+        val cache = SqlDelightBillCache(BillSummaryDatabase(driver))
+        cache.appendShard(
+            119, BillSource.PUBLISHED, shardIndex = 0,
+            bills = listOf(bill("hr1-119", "2026-04-10", null, "Health")),
+            generatedAt = "g", fetchedAtMillis = 1L, totalShards = 2, pageSize = 1,
+        )
+        cache.appendShard(
+            119, BillSource.PUBLISHED, shardIndex = 1,
+            bills = listOf(bill("hr2-119", "2026-04-09", null, "Health")),
+            generatedAt = "g", fetchedAtMillis = 1L, totalShards = 2, pageSize = 1,
+        )
+
+        // A partial refresh of shard 0 drops its vanished bill without touching shard 1.
+        cache.appendShard(
+            119, BillSource.PUBLISHED, shardIndex = 0,
+            bills = listOf(bill("hr9-119", "2026-04-11", null, "Health")),
+            generatedAt = "g2", fetchedAtMillis = 2L, totalShards = 2, pageSize = 1,
+        )
+
+        assertEquals(
+            listOf("hr9-119", "hr2-119"),
+            cache.loadBillsPaged(119, BillSource.PUBLISHED, null, null, limit = 10, offset = 0).map { it.id },
+        )
+    }
+
+    @Test fun `loadShardCursor is null before the first append and isComplete tracks progress`() = runTest {
+        BillSummaryDatabase.Schema.create(driver)
+        val cache = SqlDelightBillCache(BillSummaryDatabase(driver))
+        assertNull(cache.loadShardCursor(119, BillSource.PUBLISHED))
+
+        cache.appendShard(
+            119, BillSource.PUBLISHED, shardIndex = 0,
+            bills = listOf(bill("hr1-119", "2026-04-10", null, null)),
+            generatedAt = "g", fetchedAtMillis = 1L, totalShards = 3, pageSize = 1,
+        )
+        assertFalse(cache.loadShardCursor(119, BillSource.PUBLISHED)!!.isComplete)
+    }
+
     // ---- helpers ---------------------------------------------------------
 
     private fun ids(payloads: List<String>): List<String> =
