@@ -100,8 +100,7 @@ internal fun RollCallCard(
  */
 @Composable
 internal fun VoteResultChip(result: String, modifier: Modifier = Modifier) {
-    val passed = result.startsWith("passed", ignoreCase = true) ||
-        result.startsWith("agreed", ignoreCase = true)
+    val passed = voteResultPassed(result)
     val container = if (passed) {
         MaterialTheme.colorScheme.primaryContainer
     } else {
@@ -120,6 +119,23 @@ internal fun VoteResultChip(result: String, modifier: Modifier = Modifier) {
             .background(container, RoundedCornerShape(50))
             .padding(horizontal = 10.dp, vertical = 4.dp),
     )
+}
+
+/**
+ * Whether a roll-call [result] string denotes that the question carried,
+ * driving the [VoteResultChip]'s highlight. Congress.gov phrases a
+ * success many ways beyond a bare "Passed" — "Bill Passed", "Joint
+ * Resolution Passed", "Motion Agreed to", "Resolution Agreed to" — while
+ * failures read "Rejected" / "Failed" / "Defeated". A `startsWith` check
+ * caught only the bare "Passed"/"Agreed…" forms and left the overwhelming
+ * majority of successful votes styled as neutral; matching the affirmative
+ * verbs anywhere in the string reads a carried vote as passed at a glance.
+ * No negative result string contains these tokens, so a positive substring
+ * test is unambiguous.
+ */
+internal fun voteResultPassed(result: String): Boolean {
+    val normalized = result.lowercase()
+    return normalized.contains("passed") || normalized.contains("agreed to")
 }
 
 @Composable

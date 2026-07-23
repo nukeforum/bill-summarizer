@@ -179,41 +179,62 @@ internal fun BillsListContent(
                     },
                     modifier = Modifier.fillMaxSize(),
                 ) {
-                    val refresh = bills.loadState.refresh
-                    when {
-                        bills.itemCount == 0 && refresh is LoadState.Loading ->
-                            CenteredMessage("Loading bills…", showSpinner = true)
-                        bills.itemCount == 0 && refresh is LoadState.Error ->
-                            CenteredMessage(
-                                "Couldn't load bills:\n${refresh.error.localizedMessage.orEmpty()}",
+                    val listPadding = PaddingValues(
+                        start = 16.dp,
+                        end = 16.dp,
+                        top = 8.dp,
+                        bottom = 8.dp + innerPadding.calculateBottomPadding(),
+                    )
+                    val emptyMessage = when {
+                        state.searchQuery.isNotBlank() ->
+                            "No bills match \"${state.searchQuery.trim()}\""
+                        state.selectedPolicyArea != null ->
+                            "No bills with subject \"${state.selectedPolicyArea}\" match this filter"
+                        state.selectedSubject != null ->
+                            "No bills about \"${state.selectedSubject}\" match this filter"
+                        else -> "No bills match this filter"
+                    }
+                    // With a free-text query active the result set is small and
+                    // wants relevance ordering, so render the in-memory ranked
+                    // list (state.bills, sorted by searchRelevance) instead of the
+                    // latest-action-date-ordered paged stream, which cannot be
+                    // globally reordered across page boundaries.
+                    if (state.searchQuery.isNotBlank()) {
+                        if (state.bills.isEmpty()) {
+                            CenteredMessage(emptyMessage)
+                        } else {
+                            BillsRankedList(
+                                bills = state.bills,
+                                summaries = state.summaries,
+                                aiTitlesEnabled = state.aiTitlesEnabled,
+                                deviceCapable = state.deviceCapable,
+                                onBillClick = onBillClick,
+                                onResummarize = onResummarize,
+                                contentPadding = listPadding,
+                                modifier = Modifier.fillMaxSize(),
                             )
-                        bills.itemCount == 0 ->
-                            CenteredMessage(
-                                when {
-                                    state.searchQuery.isNotBlank() ->
-                                        "No bills match \"${state.searchQuery.trim()}\""
-                                    state.selectedPolicyArea != null ->
-                                        "No bills with subject \"${state.selectedPolicyArea}\" match this filter"
-                                    state.selectedSubject != null ->
-                                        "No bills about \"${state.selectedSubject}\" match this filter"
-                                    else -> "No bills match this filter"
-                                },
+                        }
+                    } else {
+                        val refresh = bills.loadState.refresh
+                        when {
+                            bills.itemCount == 0 && refresh is LoadState.Loading ->
+                                CenteredMessage("Loading bills…", showSpinner = true)
+                            bills.itemCount == 0 && refresh is LoadState.Error ->
+                                CenteredMessage(
+                                    "Couldn't load bills:\n${refresh.error.localizedMessage.orEmpty()}",
+                                )
+                            bills.itemCount == 0 -> CenteredMessage(emptyMessage)
+                            else -> BillsPagedList(
+                                bills = bills,
+                                summaries = state.summaries,
+                                aiTitlesEnabled = state.aiTitlesEnabled,
+                                deviceCapable = state.deviceCapable,
+                                onBillClick = onBillClick,
+                                onResummarize = onResummarize,
+                                contentPadding = listPadding,
+                                modifier = Modifier.fillMaxSize(),
                             )
-                        else -> BillsPagedList(
-                            bills = bills,
-                            summaries = state.summaries,
-                            aiTitlesEnabled = state.aiTitlesEnabled,
-                            deviceCapable = state.deviceCapable,
-                            onBillClick = onBillClick,
-                            onResummarize = onResummarize,
-                            contentPadding = PaddingValues(
-                                start = 16.dp,
-                                end = 16.dp,
-                                top = 8.dp,
-                                bottom = 8.dp + innerPadding.calculateBottomPadding(),
-                            ),
-                            modifier = Modifier.fillMaxSize(),
-                        )
+                        }
                     }
                 }
             }

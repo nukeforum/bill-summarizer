@@ -131,4 +131,51 @@ object LlmShareHelper {
             body.substring(0, BODY_CAP_CHARS) +
                 "\n\n[Bill text truncated. Full text: $congressGovUrl]"
         }
+
+    /**
+     * Converts a Congressional Research Service (CRS) summary — stored as light HTML
+     * (`<p>`, `<ul>`/`<li>`, `<strong>`, `&amp;`, `&nbsp;` …) — into plain text suitable
+     * for embedding in an LLM prompt.
+     *
+     * The bill-detail screen renders `summaryCrs` through `AnnotatedString.fromHtml`, and the
+     * full-text share path is stripped by `BillTextFetcher`, but the DEFAULT AI-share body is
+     * the CRS summary — so without this, prompts leak `<p>` tags and `&amp;` entities to
+     * ChatGPT/Claude/Gemini. Input is trusted Congress.gov HTML, so raw `<`/`>` only appear in
+     * tags (literal angle brackets arrive pre-encoded), making the tag-strip regex safe.
+     */
+    fun crsSummaryToPlainText(html: String): String {
+        val withBreaks = html
+            .replace(Regex("(?i)<li[^>]*>"), "\n• ") // each list item on its own line
+            .replace(Regex("(?i)<br\\s*/?>"), "\n")
+            .replace(Regex("(?i)</(p|div|ul|ol|h[1-6])>"), "\n\n") // block ends = paragraph break
+        val stripped = withBreaks.replace(Regex("<[^>]+>"), "")
+        return decodeEntities(stripped)
+            .replace(' ', ' ') // any surviving NBSP → regular space
+            .replace(Regex("[ \\t]+"), " ")
+            .replace(Regex(" *\\n *"), "\n")
+            .replace(Regex("\\n{3,}"), "\n\n")
+            .trim()
+    }
+
+    private val NAMED_ENTITIES = mapOf(
+        "amp" to "&", "lt" to "<", "gt" to ">", "quot" to "\"", "apos" to "'",
+        "nbsp" to " ", "mdash" to "—", "ndash" to "–", "hellip" to "…",
+        "rsquo" to "’", "lsquo" to "‘", "ldquo" to "“", "rdquo" to "”",
+        "sect" to "§", "para" to "¶",
+    )
+
+    private fun decodeEntities(text: String): String =
+        Regex("&(#x?[0-9a-fA-F]+|[a-zA-Z]+);").replace(text) { m ->
+            val body = m.groupValues[1]
+            when {
+                body.startsWith("#x") || body.startsWith("#X") ->
+                    body.drop(2).toIntOrNull(16)?.let { cp -> codePointString(cp) } ?: m.value
+                body.startsWith("#") ->
+                    body.drop(1).toIntOrNull()?.let { cp -> codePointString(cp) } ?: m.value
+                else -> NAMED_ENTITIES[body.lowercase()] ?: m.value
+            }
+        }
+
+    private fun codePointString(cp: Int): String? =
+        if (cp in 1..0x10FFFF) String(Character.toChars(cp)) else null
 }

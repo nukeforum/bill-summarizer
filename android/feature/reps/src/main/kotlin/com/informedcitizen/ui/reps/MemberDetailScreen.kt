@@ -133,7 +133,9 @@ internal fun MemberDetailContent(
     onVoteClick: (MemberVoteRow) -> Unit = {},
     onSearchQueryChange: (String) -> Unit = {},
 ) {
-    var tab by remember { mutableIntStateOf(0) }
+    // Reset to the member's default tab when a different member loads
+    // (bioguideId changes); keep the user's tab choice within one member.
+    var tab by remember(state.member?.bioguideId) { mutableIntStateOf(defaultMemberDetailTab(state)) }
 
     Column(modifier = Modifier.padding(innerPadding).fillMaxSize()) {
         when {
@@ -158,6 +160,14 @@ internal fun MemberDetailContent(
                     )
                 }
                 PrimaryTabRow(selectedTabIndex = tab) {
+                    // Voting record leads: a citizen opens a rep's profile to
+                    // see how they actually voted, not just what they sponsored
+                    // (issue #55).
+                    Tab(
+                        selected = tab == TAB_VOTES,
+                        onClick = { tab = TAB_VOTES },
+                        text = { Text("Voting record (${state.recentVotes.size})") },
+                    )
                     Tab(
                         selected = tab == TAB_SPONSORED,
                         onClick = { tab = TAB_SPONSORED },
@@ -167,11 +177,6 @@ internal fun MemberDetailContent(
                         selected = tab == TAB_COSPONSORED,
                         onClick = { tab = TAB_COSPONSORED },
                         text = { Text("Cosponsored (${state.filteredCosponsored.size})") },
-                    )
-                    Tab(
-                        selected = tab == TAB_VOTES,
-                        onClick = { tab = TAB_VOTES },
-                        text = { Text("Votes (${state.recentVotes.size})") },
                     )
                 }
                 if (tab == TAB_VOTES) {
@@ -203,9 +208,19 @@ internal fun MemberDetailContent(
     }
 }
 
-private const val TAB_SPONSORED = 0
-private const val TAB_COSPONSORED = 1
-private const val TAB_VOTES = 2
+internal const val TAB_VOTES = 0
+internal const val TAB_SPONSORED = 1
+internal const val TAB_COSPONSORED = 2
+
+/**
+ * The tab a freshly-loaded member profile opens on. Lands on the voting record
+ * whenever the member has recorded votes (issue #55 — the see-the-record pillar:
+ * a citizen wants their rep's actual Yea/Nay, which the profile previously buried
+ * behind the sponsorship tabs), and falls back to Sponsored only when there are
+ * no votes so the profile never opens on an empty tab.
+ */
+internal fun defaultMemberDetailTab(state: MemberDetailUiState): Int =
+    if (state.recentVotes.isNotEmpty()) TAB_VOTES else TAB_SPONSORED
 
 @Composable
 private fun VotesTab(votes: List<MemberVoteRow>, onVoteClick: (MemberVoteRow) -> Unit) {

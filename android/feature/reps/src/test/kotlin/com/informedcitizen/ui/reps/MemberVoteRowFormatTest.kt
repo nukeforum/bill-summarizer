@@ -71,4 +71,16 @@ class MemberVoteRowFormatTest {
         assertTrue(description, description.contains("Result: Passed"))
         assertTrue(description, description.contains("Voted nay"))
     }
+
+    @Test
+    fun `default tab is the voting record when the member has votes`() {
+        val state = MemberDetailUiState(isLoading = false, recentVotes = listOf(row()))
+        assertEquals(TAB_VOTES, defaultMemberDetailTab(state))
+    }
+
+    @Test
+    fun `default tab falls back to sponsored when there are no votes`() {
+        val state = MemberDetailUiState(isLoading = false, recentVotes = emptyList())
+        assertEquals(TAB_SPONSORED, defaultMemberDetailTab(state))
+    }
 }

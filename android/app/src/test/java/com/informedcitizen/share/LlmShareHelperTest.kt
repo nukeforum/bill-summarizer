@@ -4,6 +4,7 @@ import com.informedcitizen.pipeline.model.Action
 import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.pipeline.model.Outcome
 import com.informedcitizen.pipeline.model.Sponsor
+import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -112,6 +113,68 @@ class LlmShareHelperTest {
 
         assertFalse("no truncation sentinel", out.contains("[Bill text truncated."))
         assertTrue("full body present", out.contains("x".repeat(50_000)))
+    }
+
+    @Test
+    fun `crs summary strips paragraph tags into blank-line-separated text`() {
+        val out = LlmShareHelper.crsSummaryToPlainText(
+            "<p>First paragraph.</p><p>Second paragraph.</p>",
+        )
+
+        assertEquals("First paragraph.\n\nSecond paragraph.", out)
+    }
+
+    @Test
+    fun `crs summary decodes common entities`() {
+        val out = LlmShareHelper.crsSummaryToPlainText(
+            "<p>Centers for Medicare &amp; Medicaid Services&nbsp;(CMS).</p>",
+        )
+
+        assertEquals("Centers for Medicare & Medicaid Services (CMS).", out)
+    }
+
+    @Test
+    fun `crs summary decodes numeric entities`() {
+        val out = LlmShareHelper.crsSummaryToPlainText("<p>rule&#8212;the notice&#39;s scope</p>")
+
+        assertEquals("rule—the notice's scope", out)
+    }
+
+    @Test
+    fun `crs summary renders list items as bullets`() {
+        val out = LlmShareHelper.crsSummaryToPlainText(
+            "<p>It does:</p><ul><li>one thing</li><li>another thing</li></ul>",
+        )
+
+        assertEquals("It does:\n\n• one thing\n• another thing", out)
+    }
+
+    @Test
+    fun `crs summary removes inline formatting tags but keeps their text`() {
+        val out = LlmShareHelper.crsSummaryToPlainText(
+            "<p>The <strong>Act</strong> <em>also</em> <b>repeals</b> section 5.</p>",
+        )
+
+        assertEquals("The Act also repeals section 5.", out)
+    }
+
+    @Test
+    fun `crs summary output contains no residual markup when used as prompt body`() {
+        val body = LlmShareHelper.crsSummaryToPlainText(
+            "<p>Prohibits the model &amp; nullifies a notice.</p>",
+        )
+        val out = LlmShareHelper.buildPrompt(fixture(), body = body)
+
+        assertFalse("no paragraph tag", out.contains("<p>"))
+        assertFalse("no raw ampersand entity", out.contains("&amp;"))
+        assertTrue("decoded body present", out.contains("Prohibits the model & nullifies a notice."))
+    }
+
+    @Test
+    fun `crs summary leaves already-plain text unchanged apart from trimming`() {
+        val out = LlmShareHelper.crsSummaryToPlainText("  Just a plain sentence.  ")
+
+        assertEquals("Just a plain sentence.", out)
     }
 
     private fun fixture(shortTitle: String? = null): Bill = Bill(
