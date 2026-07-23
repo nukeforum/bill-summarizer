@@ -28,6 +28,16 @@ data class Bill(
      */
     @SerialName("status") val lifecycleStatus: LifecycleStatus? = null,
     @SerialName("policy_area") val policyArea: String? = null,
+    /**
+     * Congress.gov finer-grained legislative subjects (issue #28): multi-value
+     * terms like "Firearms and explosives" or "Intelligence activities,
+     * surveillance, classified information", distinct from the single-value
+     * [policyArea]. Fetched per bill from the `/subjects` endpoint during
+     * record building and used by #10's topical filtering. Additive and
+     * defaulted empty: manifests published before the field existed — and apps
+     * released before it — keep decoding unchanged (`ignoreUnknownKeys`).
+     */
+    val subjects: List<String> = emptyList(),
     @SerialName("summary_crs") val summaryCrs: String? = null,
     @SerialName("text_url_html") val textUrlHtml: String? = null,
     @SerialName("text_url_xml") val textUrlXml: String? = null,
