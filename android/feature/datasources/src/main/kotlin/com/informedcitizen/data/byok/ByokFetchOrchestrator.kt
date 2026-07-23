@@ -11,12 +11,15 @@ import com.informedcitizen.pipeline.fetch.FileBillsManifestStore
 import com.informedcitizen.pipeline.fetch.FileMemberLegislationStore
 import com.informedcitizen.pipeline.fetch.FileMembersIndexStore
 import com.informedcitizen.pipeline.fetch.RECENT_DAYS
+import com.informedcitizen.pipeline.fetch.FileVotesStore
 import com.informedcitizen.pipeline.fetch.buildSessionCalendar
 import com.informedcitizen.pipeline.fetch.fetchBills
 import com.informedcitizen.pipeline.fetch.fetchMembers
+import com.informedcitizen.pipeline.fetch.fetchVotes
 import com.informedcitizen.pipeline.fetch.nowIso
 import com.informedcitizen.pipeline.http.CongressClient
 import com.informedcitizen.pipeline.http.LegislatorsClient
+import com.informedcitizen.pipeline.http.SenateVotesClient
 import com.informedcitizen.pipeline.http.SessionCalendarClient
 import com.informedcitizen.pipeline.http.createPipelineHttpClient
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -31,6 +34,15 @@ import okio.Path.Companion.toOkioPath
 import java.io.File
 import javax.inject.Inject
 import javax.inject.Singleton
+
+/**
+ * Per-run cap on newly fetched roll calls for the BYOK votes step.
+ * Lower than the CLI's [com.informedcitizen.pipeline.fetch.FETCH_VOTES_MAX_NEW_DEFAULT]
+ * (1000) because a phone shouldn't pull an unbounded batch of vote XML
+ * in one tick; fetching is incremental, so the record catches up across
+ * daily runs.
+ */
+private const val BYOK_VOTES_MAX_NEW = 400
 
 /**
  * Runs the in-app data pipeline with the user's own API key — the
@@ -70,6 +82,46 @@ class ByokFetchOrchestrator @Inject constructor(
         )
         billRepository.publishByokBills(result.finalManifest)
         result.finalManifest.bills.size
+    }
+
+    /**
+     * Daily refresh of roll-call votes (backlog #31). The vote feeds
+     * (senate.gov LIS XML, clerk.house.gov EVS XML, congress-legislators
+     * YAML) are all keyless — same public-feed pattern as [fetchCalendar]
+     * — so votes never touch the user's Congress.gov key budget.
+     *
+     * Passing the BYOK bills [FileBillsManifestStore] lets the shared
+     * driver attach vote refs to the recent-bills manifest and reconcile
+     * misclassified outcomes against real passage roll calls (#30). When
+     * that changes the manifest, we re-publish it so the enriched refs
+     * reach the bill-detail roll-call surfaces (#20) on the BYOK path.
+     *
+     * [BYOK_VOTES_MAX_NEW] bounds per-run work on a phone; fetching is
+     * incremental (a roll call already on disk is never refetched), so a
+     * capped first run tops up on subsequent daily ticks.
+     */
+    suspend fun fetchVotes(): Result<Int> = runReported("byok votes fetch failed") {
+        val client = createPipelineHttpClient()
+        try {
+            val now = Clock.System.now()
+            val congress = congressForYear(now.toLocalDateTime(TimeZone.UTC).year)
+            val manifestStore = FileBillsManifestStore.system(workDir.toOkioPath())
+            val result = fetchVotes(
+                client = SenateVotesClient(client),
+                store = FileVotesStore.system(workDir.toOkioPath()),
+                congress = congress,
+                nowIso = nowIso(now),
+                errors = ErrorCollector(),
+                manifestStore = manifestStore,
+                maxNew = BYOK_VOTES_MAX_NEW,
+            )
+            if (result.billManifestRefreshed) {
+                manifestStore.load(congress)?.let { billRepository.publishByokBills(it) }
+            }
+            result.fetched
+        } finally {
+            client.close()
+        }
     }
 
     /** Weekly refresh of the members index (Phase 1 only — no legislation crawl). */

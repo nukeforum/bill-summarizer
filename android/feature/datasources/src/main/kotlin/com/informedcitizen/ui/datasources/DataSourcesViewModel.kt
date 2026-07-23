@@ -118,6 +118,12 @@ class DataSourcesViewModel @Inject constructor(
                         onSuccess = { add("Bills: $it") },
                         onFailure = { add("Bills failed: ${it.message}") },
                     )
+                orchestrator.fetchVotes()
+                    .onSuccess { tracker.recordSuccess(ByokArtifact.VOTES, now) }
+                    .fold(
+                        onSuccess = { add("Votes: $it") },
+                        onFailure = { add("Votes failed: ${it.message}") },
+                    )
                 orchestrator.fetchMembersIndex()
                     .onSuccess { tracker.recordSuccess(ByokArtifact.MEMBERS, now) }
                     .fold(
@@ -146,6 +152,7 @@ class DataSourcesViewModel @Inject constructor(
                 artifact = artifact,
                 label = when (artifact) {
                     ByokArtifact.BILLS -> "Bills (refreshed daily)"
+                    ByokArtifact.VOTES -> "Roll-call votes (refreshed daily)"
                     ByokArtifact.MEMBERS -> "Representatives (refreshed weekly)"
                     ByokArtifact.CALENDAR -> "Session calendar (refreshed weekly)"
                 },

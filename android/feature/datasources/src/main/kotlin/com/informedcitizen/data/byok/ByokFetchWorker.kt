@@ -19,8 +19,8 @@ import javax.inject.Singleton
 
 /**
  * Daily BYOK refresh tick. Each run re-checks which artifacts are due
- * per [ByokFetchTracker] cadences (bills daily; members and calendar
- * weekly) and fetches only those. No-ops instantly when no key is
+ * per [ByokFetchTracker] cadences (bills and votes daily; members and
+ * calendar weekly) and fetches only those. No-ops instantly when no key is
  * configured, so a stale enqueued worker after key removal is
  * harmless.
  *
@@ -47,6 +47,7 @@ class ByokFetchWorker @AssistedInject constructor(
             if (!tracker.isDue(artifact, now)) continue
             val result = when (artifact) {
                 ByokArtifact.BILLS -> orchestrator.fetchBills()
+                ByokArtifact.VOTES -> orchestrator.fetchVotes()
                 ByokArtifact.MEMBERS -> orchestrator.fetchMembersIndex()
                 ByokArtifact.CALENDAR -> orchestrator.fetchCalendar()
             }

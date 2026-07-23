@@ -27,6 +27,16 @@ class ByokFetchTrackerTest {
     }
 
     @Test
+    fun `votes are daily`() = runTest {
+        val tracker = ByokFetchTracker(InMemoryPreferencesDataStore())
+        val t0 = 1_000_000L
+        tracker.recordSuccess(ByokArtifact.VOTES, t0)
+
+        assertFalse(tracker.isDue(ByokArtifact.VOTES, t0 + 12.hours.inWholeMilliseconds))
+        assertTrue(tracker.isDue(ByokArtifact.VOTES, t0 + 1.days.inWholeMilliseconds))
+    }
+
+    @Test
     fun `members and calendar are weekly`() = runTest {
         val tracker = ByokFetchTracker(InMemoryPreferencesDataStore())
         val t0 = 1_000_000L
