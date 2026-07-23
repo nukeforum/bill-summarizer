@@ -252,6 +252,101 @@ def classify_outcome(action_text: str) -> str | None:
     return None
 
 
+# ---------- pre-floor lifecycle classification (issue #39) ----------------
+#
+# The vast majority of bills never reach a floor vote — they are introduced,
+# referred to committee, and often reported out — but ``classify_outcome``
+# only recognizes the 5 *terminal* outcomes, so ``evaluate_bill`` historically
+# rejected every pre-floor bill as ``no_outcome_match``. These lifecycle
+# statuses let those bills carry a real, derived status instead of being
+# silently dropped. Precedence: a terminal floor outcome ALWAYS wins over a
+# lifecycle status (see ``classify_bill_status``).
+
+LIFECYCLE_INTRODUCED = "introduced"
+LIFECYCLE_IN_COMMITTEE = "in_committee"
+LIFECYCLE_REPORTED = "reported"
+
+# Ordered most-advanced-first so a bill's latest action maps to the furthest
+# stage it has reached: reported (out of committee, floor-ready) beats
+# in_committee (referred) beats introduced. Matched case-insensitively as
+# substrings over the latest-action text, mirroring ``_OUTCOME_RULES``.
+_LIFECYCLE_RULES: list[tuple[str, tuple[str, ...]]] = [
+    (
+        LIFECYCLE_REPORTED,
+        (
+            "reported by",
+            "reported (",
+            "reported to the house",
+            "reported to the senate",
+            "reported original measure",
+            "reported, without amendment",
+            "reported with amendment",
+            "ordered to be reported",
+            "placed on the union calendar",
+            "placed on the house calendar",
+            "placed on the senate legislative calendar",
+            "placed on senate legislative calendar",
+        ),
+    ),
+    (
+        LIFECYCLE_IN_COMMITTEE,
+        (
+            "referred to the committee",
+            "referred to the subcommittee",
+            "referred to the house committee",
+            "referred to the senate committee",
+            "committee consideration and mark-up",
+            "committee hearings held",
+            "hearings held",
+            "sponsor introductory remarks",
+        ),
+    ),
+    (
+        LIFECYCLE_INTRODUCED,
+        (
+            "introduced in house",
+            "introduced in senate",
+            "introduced in the house",
+            "introduced in the senate",
+        ),
+    ),
+]
+
+
+def classify_lifecycle_status(action_text: str) -> str | None:
+    """The pre-floor lifecycle status implied by a bill's latest-action text,
+    or None when no rule matches.
+
+    Deliberately narrow and additive: this only recognizes the pre-floor
+    stages (introduced / in_committee / reported). Terminal floor outcomes are
+    ``classify_outcome``'s job and take precedence — see
+    ``classify_bill_status``.
+    """
+    needle = action_text.lower()
+    for status, patterns in _LIFECYCLE_RULES:
+        if any(p in needle for p in patterns):
+            return status
+    return None
+
+
+def classify_bill_status(action_text: str) -> tuple[str | None, bool]:
+    """Classify a bill's status from its latest-action text as
+    ``(status, is_outcome)``.
+
+    Precedence, defined once here (issue #39): a terminal floor outcome always
+    wins over a pre-floor lifecycle status. ``is_outcome`` is True when the
+    status is one of the terminal ``_OUTCOME_RULES`` values, False for a
+    lifecycle status. Returns ``(None, False)`` when neither matches.
+    """
+    outcome = classify_outcome(action_text)
+    if outcome is not None:
+        return outcome, True
+    lifecycle = classify_lifecycle_status(action_text)
+    if lifecycle is not None:
+        return lifecycle, False
+    return None, False
+
+
 # ---------- outcome from roll-call votes ----------------------------------
 #
 # When a bill has linked roll calls (see _votes.attach_vote_refs), the actual
