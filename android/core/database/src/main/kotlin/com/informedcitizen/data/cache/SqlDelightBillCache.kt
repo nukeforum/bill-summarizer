@@ -1,5 +1,6 @@
 package com.informedcitizen.data.cache
 
+import androidx.paging.PagingSource
 import com.informedcitizen.cache.BillSummaryDatabase
 import com.informedcitizen.pipeline.lifecycleStatusToWireString
 import com.informedcitizen.pipeline.model.Bill
@@ -196,8 +197,36 @@ class SqlDelightBillCache(
                 policyArea = policyArea,
                 limit = limit.toLong(),
                 offset = offset.toLong(),
-            ).executeAsList().map { json.decodeFromString(Bill.serializer(), it) }
+            ) { _, payload -> json.decodeFromString(Bill.serializer(), payload) }
+                .executeAsList()
         }
+
+    override fun billsPagingSource(
+        congress: Int,
+        source: BillSource,
+        status: String?,
+        policyArea: String?,
+    ): PagingSource<Int, Bill> =
+        BillsOffsetPagingSource(
+            transacter = db,
+            context = Dispatchers.IO,
+            countQuery = q.countBillsPaged(
+                congress = congress.toLong(),
+                source = source.wireString,
+                status = status,
+                policyArea = policyArea,
+            ),
+            pageQuery = { limit, offset ->
+                q.selectBillsPaged(
+                    congress = congress.toLong(),
+                    source = source.wireString,
+                    status = status,
+                    policyArea = policyArea,
+                    limit = limit,
+                    offset = offset,
+                ) { _, payload -> json.decodeFromString(Bill.serializer(), payload) }
+            },
+        )
 
     override suspend fun countBills(
         congress: Int,

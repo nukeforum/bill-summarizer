@@ -1,5 +1,7 @@
 package com.informedcitizen.testutil
 
+import androidx.paging.PagingSource
+import androidx.paging.PagingState
 import com.informedcitizen.data.cache.BillCache
 import com.informedcitizen.data.cache.BillSource
 import com.informedcitizen.data.cache.CachedManifestMeta
@@ -133,6 +135,14 @@ class FakeBillCache : BillCache {
         policyArea: String?,
     ): Int = matching(congress, source, status, policyArea).size
 
+    override fun billsPagingSource(
+        congress: Int,
+        source: BillSource,
+        status: String?,
+        policyArea: String?,
+    ): PagingSource<Int, Bill> =
+        OffsetSnapshotPagingSource { matching(congress, source, status, policyArea) }
+
     override suspend fun distinctPolicyAreas(congress: Int, source: BillSource): List<String> =
         rows[congress to source].orEmpty()
             .mapNotNull { it.bill.policyArea }
@@ -152,4 +162,34 @@ class FakeBillCache : BillCache {
                     (policyArea == null || bill.policyArea == policyArea)
             }
             .sortedWith(compareByDescending<Bill> { it.latestAction.date }.thenBy { it.id })
+}
+
+/**
+ * An offset-keyed [PagingSource] over an in-memory snapshot, mirroring the
+ * page semantics of SQLDelight's `OffsetQueryPagingSource` (the key is the
+ * absolute row offset) so repository / view-model tests exercise the real
+ * Paging flow without a driver. The snapshot is re-read on each [load] so a
+ * write between loads is reflected, matching the DB source's behaviour.
+ */
+private class OffsetSnapshotPagingSource(
+    private val snapshot: () -> List<Bill>,
+) : PagingSource<Int, Bill>() {
+
+    override fun getRefreshKey(state: PagingState<Int, Bill>): Int? =
+        state.anchorPosition?.let { anchor ->
+            val page = state.closestPageToPosition(anchor)
+            page?.prevKey?.plus(page.data.size) ?: page?.nextKey?.minus(page.data.size)
+        }
+
+    override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Bill> {
+        val all = snapshot()
+        val offset = params.key ?: 0
+        val page = all.drop(offset).take(params.loadSize)
+        val nextOffset = offset + page.size
+        return LoadResult.Page(
+            data = page,
+            prevKey = if (offset == 0) null else (offset - params.loadSize).coerceAtLeast(0),
+            nextKey = if (nextOffset >= all.size) null else nextOffset,
+        )
+    }
 }

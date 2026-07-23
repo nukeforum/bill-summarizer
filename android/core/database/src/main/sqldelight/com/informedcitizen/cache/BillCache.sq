@@ -92,8 +92,12 @@ SELECT COUNT(*) FROM cached_bill WHERE congress = :congress AND source = :source
 -- tie-break on bill_id keeps page boundaries stable across LIMIT/OFFSET.
 -- Free-text search across shards is deliberately deferred to the paging
 -- read-path slice (it needs fixture tests over the exact match rules).
+-- Selects bill_id alongside payload (rather than payload alone) so SQLDelight
+-- generates a custom-mapper overload: both the List read (`loadBillsPaged`)
+-- and the Paging 3 `QueryPagingSource` deserialize the payload into a `Bill`
+-- through that mapper. bill_id is otherwise unused by the mapper.
 selectBillsPaged:
-SELECT payload FROM cached_bill
+SELECT bill_id, payload FROM cached_bill
 WHERE congress = :congress
   AND source = :source
   AND (:status IS NULL OR status = :status)

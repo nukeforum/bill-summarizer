@@ -46,4 +46,13 @@ dependencies {
     // BillSummaryDatabase type is part of the api surface.
     api(libs.sqldelight.android.driver)
     api(libs.sqldelight.coroutines.extensions)
+
+    // Sharded bills paging (backlog #41): the BillCache surface exposes a
+    // PagingSource<Int, Bill> (paging-common) so the repository can build a
+    // Pager over it — hence api, not implementation. The DB-backed
+    // BillsOffsetPagingSource adapts the `selectBillsPaged` /
+    // `countBillsPaged` queries into that PagingSource (sqldelight's own
+    // QueryPagingSource factory is shadowed by its public same-named abstract
+    // class under Kotlin 2.3, so we roll the small offset source ourselves).
+    api(libs.androidx.paging.common)
 }

@@ -40,8 +40,10 @@ aicore = "0.0.1-exp02"
 # #40 shard fetches into cached_bill and Paging drives lazy load + honest
 # "more pages exist but failed" load states. paging-runtime carries
 # paging-common (RemoteMediator/PagingState); paging-compose lands with the
-# LazyPagingItems UI slice.
-androidxPaging = "3.3.6"
+# LazyPagingItems UI slice. Pinned to 3.4.2 to match the paging-common
+# that sqldelight:androidx-paging3-extensions (QueryPagingSource) pulls, so
+# the app resolves to one paging version with no cross-module skew.
+androidxPaging = "3.4.2"
 
 [libraries]
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidxCore" }
@@ -98,6 +100,7 @@ androidx-hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref =
 robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric" }
 google-ai-edge-aicore = { module = "com.google.ai.edge.aicore:aicore", version.ref = "aicore" }
 androidx-paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "androidxPaging" }
+androidx-paging-common = { module = "androidx.paging:paging-common", version.ref = "androidxPaging" }
 
 # Gradle plugin artifacts referenced from build-logic convention plugins.
 android-gradle-plugin = { module = "com.android.tools.build:gradle", version.ref = "androidGradlePlugin" }

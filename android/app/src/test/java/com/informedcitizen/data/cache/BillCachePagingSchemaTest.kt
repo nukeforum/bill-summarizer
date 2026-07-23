@@ -1,5 +1,6 @@
 package com.informedcitizen.data.cache
 
+import androidx.paging.PagingSource
 import app.cash.sqldelight.db.QueryResult
 import app.cash.sqldelight.driver.jdbc.sqlite.JdbcSqliteDriver
 import com.informedcitizen.cache.BillSummaryDatabase
@@ -102,11 +103,11 @@ class BillCachePagingSchemaTest {
         // Paging: recency order, stable across LIMIT/OFFSET boundaries.
         assertEquals(
             listOf("hr1-119", "hr2-119"),
-            ids(q.selectBillsPaged(119, "published", null, null, limit = 2, offset = 0).executeAsList()),
+            ids(q.selectBillsPaged(119, "published", null, null, limit = 2, offset = 0, mapper = ::payloadOf).executeAsList()),
         )
         assertEquals(
             listOf("hr3-119", "hr4-119"),
-            ids(q.selectBillsPaged(119, "published", null, null, limit = 2, offset = 2).executeAsList()),
+            ids(q.selectBillsPaged(119, "published", null, null, limit = 2, offset = 2, mapper = ::payloadOf).executeAsList()),
         )
 
         // Optional filters (null bind matches everything).
@@ -117,7 +118,7 @@ class BillCachePagingSchemaTest {
         assertEquals(1L, q.countBillsPaged(119, "published", "in_committee", "Health").executeAsOne())
         assertEquals(
             listOf("hr2-119"),
-            ids(q.selectBillsPaged(119, "published", "in_committee", "Health", 10, 0).executeAsList()),
+            ids(q.selectBillsPaged(119, "published", "in_committee", "Health", 10, 0, mapper = ::payloadOf).executeAsList()),
         )
 
         // Distinct policy areas for the #10 dropdown — nulls dropped, sorted.
@@ -243,10 +244,51 @@ class BillCachePagingSchemaTest {
         assertFalse(cache.loadShardCursor(119, BillSource.PUBLISHED)!!.isComplete)
     }
 
+    // ---- Paging 3 PagingSource read path ---------------------------------
+
+    @Test fun `billsPagingSource pages recency-ordered bills and honours DB filters`() = runTest {
+        BillSummaryDatabase.Schema.create(driver)
+        val cache = SqlDelightBillCache(BillSummaryDatabase(driver))
+        cache.appendShard(
+            119, BillSource.PUBLISHED, shardIndex = 0,
+            bills = listOf(
+                bill("hr1-119", "2026-04-10", LifecycleStatus.INTRODUCED, "Health"),
+                bill("hr2-119", "2026-04-09", LifecycleStatus.IN_COMMITTEE, "Taxation"),
+                bill("hr3-119", "2026-04-08", LifecycleStatus.REPORTED, "Health"),
+            ),
+            generatedAt = "g", fetchedAtMillis = 1L, totalShards = 1, pageSize = 3,
+        )
+
+        // First page (loadSize 2) is the two newest bills; a next key follows.
+        val first = cache.billsPagingSource(119, BillSource.PUBLISHED, null, null)
+            .load(PagingSource.LoadParams.Refresh(key = null, loadSize = 2, placeholdersEnabled = false))
+                as PagingSource.LoadResult.Page
+        assertEquals(listOf("hr1-119", "hr2-119"), first.data.map { it.id })
+        assertNull(first.prevKey)
+        assertEquals(2, first.nextKey)
+
+        // Appending from that key yields the tail page and ends the list.
+        val second = cache.billsPagingSource(119, BillSource.PUBLISHED, null, null)
+            .load(PagingSource.LoadParams.Append(key = first.nextKey!!, loadSize = 2, placeholdersEnabled = false))
+                as PagingSource.LoadResult.Page
+        assertEquals(listOf("hr3-119"), second.data.map { it.id })
+        assertNull(second.nextKey)
+
+        // The policy-area filter narrows in SQL, still recency-ordered.
+        val health = cache.billsPagingSource(119, BillSource.PUBLISHED, null, "Health")
+            .load(PagingSource.LoadParams.Refresh(key = null, loadSize = 10, placeholdersEnabled = false))
+                as PagingSource.LoadResult.Page
+        assertEquals(listOf("hr1-119", "hr3-119"), health.data.map { it.id })
+    }
+
     // ---- helpers ---------------------------------------------------------
 
     private fun ids(payloads: List<String>): List<String> =
         payloads.map { json.decodeFromString(Bill.serializer(), it).id }
+
+    // selectBillsPaged now selects (bill_id, payload); this mapper keeps the
+    // direct-query assertions above reading just the payload column.
+    private fun payloadOf(billId: String, payload: String): String = payload
 
     private fun bill(
         id: String,

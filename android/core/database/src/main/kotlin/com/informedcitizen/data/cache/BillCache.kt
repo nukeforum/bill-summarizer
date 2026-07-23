@@ -1,5 +1,6 @@
 package com.informedcitizen.data.cache
 
+import androidx.paging.PagingSource
 import com.informedcitizen.pipeline.model.Bill
 
 /**
@@ -136,6 +137,24 @@ interface BillCache {
         status: String?,
         policyArea: String?,
     ): Int
+
+    /**
+     * A Paging 3 [PagingSource] over the same DB-filtered, recency-ordered
+     * page window as [loadBillsPaged] — the read side of the sharded bills
+     * list. The repository builds a `Pager` over this factory (paired with
+     * the shard-appending `RemoteMediator`), so the ~10k-bill broadened
+     * manifest (#39) loads lazily one page at a time instead of as one list.
+     *
+     * A fresh source is returned on each call (the `Pager` re-invokes the
+     * factory on invalidation); [status] / [policyArea] are the same optional
+     * filters as [loadBillsPaged], applied in SQL.
+     */
+    fun billsPagingSource(
+        congress: Int,
+        source: BillSource,
+        status: String?,
+        policyArea: String?,
+    ): PagingSource<Int, Bill>
 
     /** Distinct non-null policy areas cached for [congress]/[source], sorted — the #10 filter dropdown source. */
     suspend fun distinctPolicyAreas(congress: Int, source: BillSource): List<String>
