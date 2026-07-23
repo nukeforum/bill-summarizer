@@ -5,6 +5,7 @@ import com.informedcitizen.pipeline.federalGeneralElectionDate
 import com.informedcitizen.pipeline.model.ElectionCalendar
 import com.informedcitizen.pipeline.model.ElectionEvent
 import com.informedcitizen.pipeline.model.ElectionType
+import com.informedcitizen.pipeline.model.RegistrationDeadline
 import com.informedcitizen.pipeline.nextFederalGeneralElectionYear
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.SerialName
@@ -62,7 +63,91 @@ data class CuratedPrimary(
     val type: String? = null,
     @SerialName("election_year") val electionYear: Int? = null,
     val source: String? = null,
+    val registration: CuratedRegistration? = null,
 )
+
+/**
+ * One curated `registration` block on a primary row (issue #35). Fields are
+ * nullable so a partially-supplied block decodes rather than failing the
+ * whole file parse, then is validated by [validateRegistration] exactly as
+ * Python's `_validate_registration` walks a dynamic dict.
+ *
+ * Unlike Python — which reads untyped dict values and warns on a non-string
+ * date or non-bool `same_day` — the strongly-typed decode here rejects those
+ * shapes at parse time, so those two warning branches have no KMP analogue;
+ * the surviving validation (unparseable/after-election date drop, actionable
+ * collapse to null) is mirrored field-for-field.
+ */
+@Serializable
+data class CuratedRegistration(
+    val online: String? = null,
+    @SerialName("by_mail") val byMail: String? = null,
+    @SerialName("in_person") val inPerson: String? = null,
+    @SerialName("same_day") val sameDay: Boolean? = null,
+    val source: String? = null,
+)
+
+/**
+ * Coerce a curated [CuratedRegistration] block to a wire
+ * [RegistrationDeadline], or return `null` if nothing verifiable survives
+ * (issue #35). Mirrors Python `_election_calendar._validate_registration`.
+ *
+ * Correctness over coverage: a deadline dated *after* its election is
+ * nonsensical (registration closes on or before election day) so that field
+ * is dropped with a warning, and a block that contributes nothing
+ * actionable — no valid method deadline and no same-day availability —
+ * collapses to `null` so the event omits `registration` rather than carrying
+ * an empty husk.
+ */
+fun validateRegistration(
+    reg: CuratedRegistration?,
+    eventDate: LocalDate,
+    label: String,
+    onWarn: (String) -> Unit = {},
+): RegistrationDeadline? {
+    if (reg == null) return null
+
+    fun keepDate(field: String, value: String?): String? {
+        if (value == null) return null
+        val parsed = try {
+            LocalDate.parse(value)
+        } catch (e: IllegalArgumentException) {
+            onWarn("dropping $label registration.$field: unparseable $value")
+            return null
+        }
+        if (parsed > eventDate) {
+            onWarn("dropping $label registration.$field $value: after election $eventDate")
+            return null
+        }
+        return value
+    }
+
+    val online = keepDate("online", reg.online)
+    val byMail = keepDate("by_mail", reg.byMail)
+    val inPerson = keepDate("in_person", reg.inPerson)
+    val sameDay = reg.sameDay
+
+    // A block is useful only if it carries at least one method deadline or
+    // advertises same-day registration; source alone (or an explicit
+    // same_day:false with no dates) tells the voter nothing to act on.
+    val hasDeadline = online != null || byMail != null || inPerson != null
+    if (!hasDeadline && sameDay != true) {
+        val anythingSupplied = sameDay != null || reg.source != null ||
+            reg.online != null || reg.byMail != null || reg.inPerson != null
+        if (anythingSupplied) {
+            onWarn("dropping $label registration: no usable deadline survived")
+        }
+        return null
+    }
+
+    return RegistrationDeadline(
+        online = online,
+        byMail = byMail,
+        inPerson = inPerson,
+        sameDay = sameDay,
+        source = reg.source?.takeIf { it.isNotEmpty() },
+    )
+}
 
 /**
  * Coerce one curated row to a wire [ElectionEvent], or return `null` (via
@@ -116,6 +201,7 @@ fun validateCuratedPrimary(
         type = type,
         electionYear = year,
         source = row.source?.takeIf { it.isNotEmpty() },
+        registration = validateRegistration(row.registration, parsed, "$state ${row.type}", onWarn),
     )
 }
 
