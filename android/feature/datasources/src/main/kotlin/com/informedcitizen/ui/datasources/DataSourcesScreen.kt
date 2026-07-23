@@ -38,6 +38,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.informedcitizen.data.byok.BYOK_BILLS_COVERAGE_STATEMENT
 import com.informedcitizen.ui.util.openInCustomTab
 
 /**
@@ -214,6 +215,11 @@ private fun FetchBlock(
     state.fetchMessage?.let {
         Text(it, style = MaterialTheme.typography.bodySmall)
     }
+    Text(
+        BYOK_BILLS_COVERAGE_STATEMENT,
+        style = MaterialTheme.typography.bodySmall,
+        color = MaterialTheme.colorScheme.onSurfaceVariant,
+    )
     Text(
         "Background refresh runs daily for bills and weekly for representatives " +
             "and the calendar, on Wi-Fi or mobile data. Historical bill archives " +

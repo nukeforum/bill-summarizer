@@ -31,6 +31,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.informedcitizen.data.ai.BillTopic
 import com.informedcitizen.pipeline.model.Bill
+import com.informedcitizen.pipeline.model.Outcome
 import com.informedcitizen.theme.PartyColors
 import com.informedcitizen.ui.util.formatBillRef
 import com.informedcitizen.ui.util.formatDate
@@ -90,7 +91,16 @@ fun BillCard(
                         color = MaterialTheme.colorScheme.onSurface,
                     )
                 }
-                OutcomeChip(outcome = bill.outcome)
+                // A bill has EITHER a terminal floor outcome OR a pre-floor
+                // lifecycle status (issue #42), never both — show whichever
+                // applies. OutcomeChip self-omits UNKNOWN, so a pre-floor bill
+                // (outcome UNKNOWN + a lifecycle status) falls through to the
+                // lifecycle chip.
+                if (bill.outcome != Outcome.UNKNOWN) {
+                    OutcomeChip(outcome = bill.outcome)
+                } else {
+                    bill.lifecycleStatus?.let { LifecycleStatusChip(status = it) }
+                }
             }
 
             Text(

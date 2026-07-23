@@ -7,6 +7,7 @@ import androidx.compose.ui.Modifier
 import com.informedcitizen.pipeline.model.Action
 import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.pipeline.model.ChamberCalendar
+import com.informedcitizen.pipeline.model.LifecycleStatus
 import com.informedcitizen.pipeline.model.Member
 import com.informedcitizen.pipeline.model.MemberLegislationItem
 import com.informedcitizen.pipeline.model.SocialHandle
@@ -75,6 +76,7 @@ fun sampleBill(
     introducedDate: String = "2026-03-02",
     latestAction: Action = sampleAction(),
     outcome: Outcome = Outcome.PASSED_SENATE,
+    lifecycleStatus: LifecycleStatus? = null,
     summaryCrs: String? = "<p>This bill establishes a unified data architecture across federal " +
         "agencies that administer public benefits, with new standards for interoperability, " +
         "privacy controls, and audit logging.</p>",
@@ -93,6 +95,7 @@ fun sampleBill(
     introducedDate = introducedDate,
     latestAction = latestAction,
     outcome = outcome,
+    lifecycleStatus = lifecycleStatus,
     summaryCrs = summaryCrs,
     textUrlHtml = textUrlHtml,
     textUrlXml = textUrlXml,

@@ -138,6 +138,27 @@ private fun PreviewBillsListAiOnMixedSummaries() = PreviewWrap {
 
 @PreviewLightDark
 @Composable
+private fun PreviewBillsListStatusFilter() = PreviewWrap {
+    BillsListContent(
+        state = BillsListUiState.Success(
+            bills = sampleBills,
+            filter = BillsListFilter.ALL,
+            isRefreshing = false,
+            sessionStatusLine = null,
+            statusFilterAvailable = true,
+            selectedStatus = BillStatusFilter.IN_COMMITTEE,
+        ),
+        bills = previewBills(sampleBills),
+        innerPadding = PaddingValues(0.dp),
+        onFilterChange = {},
+        onRefresh = {},
+        onBillClick = {},
+        onCalendarClick = {},
+    )
+}
+
+@PreviewLightDark
+@Composable
 private fun PreviewBillsListAiOnTopicFilter() = PreviewWrap {
     val summaries = mapOf(
         sampleBills[0].id to BillCardSummary("Concise tech bill", BillTopic.Tech),

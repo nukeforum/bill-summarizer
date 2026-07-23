@@ -41,10 +41,29 @@ stores the key encrypted on the device. From then on:
   (background, network-connected only), and
 - **Fetch now** refreshes everything immediately.
 
-Note the cost of a full refresh: roughly one request per bill plus one
-per member (~550). At 5,000 requests/hour you can comfortably refresh
-several times a day; the historical bill archive is deliberately not
-fetched on-device.
+Note the cost of a full refresh: roughly three requests per bill
+(detail, summaries, and text) plus one per member (~550). At 5,000
+requests/hour you can comfortably refresh several times a day; the
+historical bill archive is deliberately not fetched on-device.
+
+### BYOK bill-coverage bound
+
+The published record is broadening ~100× — beyond the bills that reached
+a floor outcome to every bill introduced, in committee, or reported
+(~10,000+ per Congress). Enriching that whole set on-device would need
+~30,000 requests, far past one key's 5,000/hour budget. So direct fetch
+with your own key is **bounded**:
+
+- Your key fetches bills **active in the last 60 days** directly — the
+  freshness-critical slice, capped per run (≈1,660 bills, three requests
+  each, leaving headroom under 5,000/hour) and resumed across daily runs
+  if a window is unusually busy.
+- Breadth beyond that window comes from the **project-published data**
+  (sharded per-Congress manifests) over the app's normal read path — no
+  key needed, so your record stays complete.
+
+The Data sources screen states this bound so you always know what your
+key is fetching directly versus what comes from the published data.
 
 ## HUD USER token (CLI users only)
 

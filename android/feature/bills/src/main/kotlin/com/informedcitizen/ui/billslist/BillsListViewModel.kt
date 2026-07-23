@@ -49,6 +49,7 @@ class BillsListViewModel @Inject constructor(
     private val sessionStatusLine = MutableStateFlow<String?>(null)
     private val selectedTopic = MutableStateFlow<BillTopic?>(null)
     private val selectedPolicyArea = MutableStateFlow<String?>(null)
+    private val selectedStatus = MutableStateFlow(BillStatusFilter.ALL)
     private val _searchQuery = MutableStateFlow("")
     val searchQuery: StateFlow<String> = _searchQuery.asStateFlow()
 
@@ -65,6 +66,7 @@ class BillsListViewModel @Inject constructor(
             _searchQuery,
             selectedPolicyArea,
             billRepository.generatedAt,
+            selectedStatus,
         ),
     ) { values ->
         @Suppress("UNCHECKED_CAST")
@@ -80,6 +82,7 @@ class BillsListViewModel @Inject constructor(
         val query = values[8] as String
         val policyArea = values[9] as String?
         val generatedAt = values[10] as String?
+        val status = values[11] as BillStatusFilter
 
         when {
             result == null -> BillsListUiState.Loading
@@ -98,6 +101,7 @@ class BillsListViewModel @Inject constructor(
                 query = query,
                 policyArea = policyArea,
                 generatedAt = generatedAt,
+                status = status,
             )
         }
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), BillsListUiState.Loading)
@@ -108,23 +112,28 @@ class BillsListViewModel @Inject constructor(
     // ViewModel side of that switch; the UI consumes it in a following slice.
 
     /**
-     * The SQL-paged source. Only the [selectedPolicyArea] filter is bound in
-     * SQL ([BillRepository.pagedBills]), so the Pager is rebuilt via
-     * [flatMapLatest] *only* when the policy area changes. [cachedIn] snapshots
-     * the loaded pages into [viewModelScope] so the three list-only filters
-     * applied downstream (outcome chips, free-text search, AI topic) never
-     * restart the Pager — a keystroke or topic toggle re-filters cached pages
-     * rather than re-hitting the network/DB.
+     * The SQL-paged source. The two SQL-bound filters — [selectedStatus] (#42
+     * lifecycle status) and [selectedPolicyArea] (#10) — drive
+     * [BillRepository.pagedBills], so the Pager is rebuilt via [flatMapLatest]
+     * *only* when either of those changes. [cachedIn] snapshots the loaded pages
+     * into [viewModelScope] so the three list-only filters applied downstream
+     * (outcome chips, free-text search, AI topic) never restart the Pager — a
+     * keystroke or topic toggle re-filters cached pages rather than re-hitting
+     * the network/DB.
+     *
+     * The outcome chips ([BillsListFilter]) stay a downstream predicate, not a
+     * SQL param: they filter `Bill.outcome`, a different axis from the #39
+     * lifecycle `status` column (see [BillStatusFilter]).
      */
     @OptIn(ExperimentalCoroutinesApi::class)
-    private val pagedSource: Flow<PagingData<Bill>> = selectedPolicyArea
-        .flatMapLatest { policyArea ->
-            // status stays null: the outcome chips are a different axis from the
-            // #39 lifecycle `status` column and filter via the predicate below;
-            // the SQL status param is reserved for the future #42 status filter.
-            billRepository.pagedBills(status = null, policyArea = policyArea)
+    private val pagedSource: Flow<PagingData<Bill>> =
+        combine(selectedStatus, selectedPolicyArea) { status, policyArea ->
+            status to policyArea
         }
-        .cachedIn(viewModelScope)
+            .flatMapLatest { (status, policyArea) ->
+                billRepository.pagedBills(status = status.sqlStatus, policyArea = policyArea)
+            }
+            .cachedIn(viewModelScope)
 
     /** The AI topic to filter by, or null when AI titles are disabled. */
     private val activeTopicFilter: Flow<BillTopic?> =
@@ -181,6 +190,10 @@ class BillsListViewModel @Inject constructor(
         selectedPolicyArea.value = policyArea
     }
 
+    fun setStatusFilter(status: BillStatusFilter) {
+        selectedStatus.value = status
+    }
+
     fun setSearchQuery(query: String) {
         _searchQuery.value = query
     }
@@ -201,6 +214,7 @@ class BillsListViewModel @Inject constructor(
         query: String,
         policyArea: String?,
         generatedAt: String?,
+        status: BillStatusFilter,
     ): BillsListUiState.Success {
         val capable = capStatus == AiCapability.Status.Available ||
             capStatus is AiCapability.Status.ModelDownloading
@@ -254,6 +268,11 @@ class BillsListViewModel @Inject constructor(
             searchQuery = query,
             availablePolicyAreas = availablePolicyAreas,
             selectedPolicyArea = activePolicyArea,
+            selectedStatus = status,
+            // The lifecycle-status filter only makes sense once the broadened
+            // (#39) pre-floor bills are published; until then every bill has a
+            // null status, so the row stays hidden rather than showing dead chips.
+            statusFilterAvailable = allBills.any { it.lifecycleStatus != null },
         )
     }
 

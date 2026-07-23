@@ -1,5 +1,6 @@
 package com.informedcitizen.ui.util
 
+import com.informedcitizen.pipeline.model.LifecycleStatus
 import com.informedcitizen.pipeline.model.Outcome
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
@@ -32,4 +33,11 @@ fun Outcome.displayName(): String = when (this) {
     Outcome.VETOED -> "Vetoed"
     Outcome.FAILED -> "Failed"
     Outcome.UNKNOWN -> "Unknown"
+}
+
+fun LifecycleStatus.displayName(): String = when (this) {
+    LifecycleStatus.INTRODUCED -> "Introduced"
+    LifecycleStatus.IN_COMMITTEE -> "In committee"
+    LifecycleStatus.REPORTED -> "Reported"
+    LifecycleStatus.UNKNOWN -> "Unknown"
 }

@@ -75,7 +75,18 @@ class ByokFetchOrchestrator @Inject constructor(
     private val workDir: File
         get() = File(context.filesDir, "byok-pipeline").apply { mkdirs() }
 
-    /** Daily refresh of the current-Congress bills manifest. */
+    /**
+     * Daily refresh of the current-Congress bills manifest (backlog #43).
+     *
+     * The direct fetch is bounded to the [RECENT_DAYS]-day recency window
+     * (the `cutoff` below) and capped per run at [byokMaxBillsPerRun] new
+     * bills so a phone never spends the user's whole hourly Congress.gov
+     * budget in one tick. Enrichment is incremental — a bill already in
+     * the BYOK manifest is skipped for free, so the window fills in across
+     * daily ticks. Breadth beyond the window comes from the app's
+     * published shards over the keyless read path; the coverage bound is
+     * stated to the user via [BYOK_BILLS_COVERAGE_STATEMENT].
+     */
     suspend fun fetchBills(): Result<Int> = withKeyedClient { client, apiKey ->
         val now = Clock.System.now()
         val congress = congressForYear(now.toLocalDateTime(TimeZone.UTC).year)
@@ -86,6 +97,7 @@ class ByokFetchOrchestrator @Inject constructor(
             nowIso = nowIso(now),
             manifestStore = FileBillsManifestStore.system(workDir.toOkioPath()),
             errors = ErrorCollector(),
+            maxNew = byokMaxBillsPerRun(),
         )
         billRepository.publishByokBills(result.finalManifest)
         result.finalManifest.bills.size
