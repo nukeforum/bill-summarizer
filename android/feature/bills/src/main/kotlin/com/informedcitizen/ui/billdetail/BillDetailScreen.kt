@@ -234,6 +234,13 @@ private fun BillDetailSuccessBody(
             ),
         verticalArrangement = Arrangement.spacedBy(20.dp),
     ) {
+        // The LargeTopAppBar subtitle is capped at two lines and collapses on
+        // scroll, so long official titles (common for CRA disapproval
+        // resolutions — "…of the rule submitted by the Department of …") get
+        // truncated with the substance lost. Render the full title here,
+        // untruncated, so it is always readable even with no official summary.
+        TitleHeader(bill = bill)
+
         Section(title = "Status") {
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 OutcomeChip(outcome = bill.outcome)
@@ -315,6 +322,26 @@ private fun BillDetailSuccessBody(
                 Spacer(Modifier.size(8.dp))
                 Text(text = "Open full text")
             }
+        }
+    }
+}
+
+@Composable
+private fun TitleHeader(bill: Bill) {
+    val shortTitle = bill.shortTitle?.takeIf { it.isNotBlank() && it != bill.title }
+    Column(verticalArrangement = Arrangement.spacedBy(4.dp), modifier = Modifier.fillMaxWidth()) {
+        Text(
+            text = shortTitle ?: bill.title,
+            style = MaterialTheme.typography.titleLarge,
+        )
+        // When a short (popular) title leads, still show the complete official
+        // title beneath it so nothing is hidden.
+        if (shortTitle != null) {
+            Text(
+                text = bill.title,
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
         }
     }
 }
