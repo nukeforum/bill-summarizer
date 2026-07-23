@@ -844,6 +844,134 @@ def save_manifest(congress: int, manifest: dict[str, Any]) -> dict[str, Any]:
     return final
 
 
+# ---------- sharded manifest (issue #40) -----------------------------------
+#
+# Canonical shard builder for epic #38. It splits a Congress's bills into
+# recency-first pages so the published record can grow from ~256 bills to the
+# full ~10,000+ without the app fetching one tens-of-MB manifest. The single
+# ``congress<N>_bills.json`` keeps being written (dual-publish); the shard set
+# (``congress<N>_bills_index.json`` + ``congress<N>_bills_p<NNN>.json``) is
+# published alongside it. Wire shapes mirror ``BillShardIndex``/``BillShard`` in
+# pipeline:shared; each shard file reuses the ``BillsManifest`` shape.
+
+SHARD_PAGE_SIZE = 500
+
+_SHARD_FILE_RE = re.compile(r"^congress(\d+)_bills_p(\d+)\.json$")
+
+
+def shard_index_path_for(congress: int) -> Path:
+    return OUTPUT_DIR / f"congress{congress}_bills_index.json"
+
+
+def shard_path_for(congress: int, page: int) -> Path:
+    """Zero-padded, 1-based shard filename (``congress119_bills_p001.json``)."""
+    return OUTPUT_DIR / f"congress{congress}_bills_p{page:03d}.json"
+
+
+def _bill_action_date(bill: Any) -> str | None:
+    """The bill's latest-action date (ISO string), or None when absent."""
+    if not isinstance(bill, dict):
+        return None
+    action = bill.get("latest_action")
+    if isinstance(action, dict):
+        date = action.get("date")
+        if isinstance(date, str) and date:
+            return date
+    return None
+
+
+def sort_bills_recency_first(bills: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Order bills newest-first by latest-action date, id as a stable tiebreak.
+
+    Mirrors ``fetch_bills``' manifest ordering (id asc, then date desc) so the
+    shard pages carry the same recency-first order the app's bills list uses.
+    """
+    ordered = sorted(bills, key=lambda b: b.get("id") or "" if isinstance(b, dict) else "")
+    ordered.sort(key=lambda b: _bill_action_date(b) or "", reverse=True)
+    return ordered
+
+
+def build_bill_shards(
+    congress: int,
+    bills: list[dict[str, Any]],
+    *,
+    page_size: int = SHARD_PAGE_SIZE,
+    generated_at: str | None = None,
+    votes_coverage_flag: bool | None = None,
+) -> tuple[dict[str, Any], list[tuple[str, dict[str, Any]]]]:
+    """Split ``bills`` into recency-first pages of at most ``page_size``.
+
+    Pure (no disk writes). Returns ``(index, shard_files)`` where ``index`` is
+    the ``BillShardIndex`` dict and ``shard_files`` is a list of
+    ``(filename, shard_manifest)`` in page order (page 1 = newest bills). Only
+    the last (oldest) page may hold fewer than ``page_size`` bills. An empty
+    Congress yields zero shards.
+    """
+    if page_size < 1:
+        raise ValueError("page_size must be >= 1")
+    gen = generated_at or now_iso()
+    coverage = votes_coverage(congress) if votes_coverage_flag is None else votes_coverage_flag
+    ordered = sort_bills_recency_first(bills)
+
+    shard_entries: list[dict[str, Any]] = []
+    shard_files: list[tuple[str, dict[str, Any]]] = []
+    for page, start in enumerate(range(0, len(ordered), page_size), start=1):
+        page_bills = ordered[start:start + page_size]
+        dates = [d for d in (_bill_action_date(b) for b in page_bills) if d]
+        name = shard_path_for(congress, page).name
+        shard_entries.append({
+            "page": page,
+            "path": name,
+            "count": len(page_bills),
+            "first_action_date": min(dates) if dates else None,
+            "last_action_date": max(dates) if dates else None,
+        })
+        shard_files.append((name, {
+            "generated_at": gen,
+            "congress": congress,
+            "votes_coverage": coverage,
+            "bills": page_bills,
+        }))
+
+    index = {
+        "generated_at": gen,
+        "congress": congress,
+        "page_size": page_size,
+        "total_bills": len(ordered),
+        "votes_coverage": coverage,
+        "shards": shard_entries,
+    }
+    return index, shard_files
+
+
+def save_bill_shards(
+    congress: int,
+    bills: list[dict[str, Any]] | None = None,
+    *,
+    page_size: int = SHARD_PAGE_SIZE,
+) -> dict[str, Any]:
+    """Build and write the shard set for ``congress``; returns the shard index.
+
+    Reads the on-disk single manifest when ``bills`` is None. Writes each
+    ``congress<N>_bills_p<NNN>.json`` shard plus the ``congress<N>_bills_index``
+    file, and prunes any stale shard file from a previous run with more pages so
+    a shrunk record never leaves an orphaned shard the index no longer lists.
+    """
+    if bills is None:
+        bills = load_manifest(congress).get("bills") or []
+    index, shard_files = build_bill_shards(congress, bills, page_size=page_size)
+
+    current_names = {name for name, _ in shard_files}
+    for stale in OUTPUT_DIR.glob(f"congress{congress}_bills_p*.json"):
+        if _SHARD_FILE_RE.match(stale.name) and stale.name not in current_names:
+            stale.unlink()
+
+    for name, shard in shard_files:
+        _write_json(OUTPUT_DIR / name, shard)
+    _write_json(shard_index_path_for(congress), index)
+    return index
+
+
 # ---------- votes index ----------------------------------------------------
 
 
@@ -1263,6 +1391,7 @@ def rebuild_index() -> dict[str, Any]:
             and isinstance(b.get("latest_action"), dict)
             and b["latest_action"].get("date")
         ]
+        shard_index = shard_index_path_for(congress)
         entries.append({
             "congress": congress,
             "bill_count": len(bills),
@@ -1271,11 +1400,10 @@ def rebuild_index() -> dict[str, Any]:
             "manifest_path": path.name,
             "is_current": congress == current,
             "backfill_complete": congress in completed,
-            # #40 dual-publish discovery hook: null until this Congress is
-            # sharded (the sharded builder sets it to its bills-index path).
-            # Emitted always so the KMP shadow (explicitNulls=true) stays
-            # byte-identical.
-            "shard_index_path": None,
+            # #40 dual-publish discovery hook: the sharded builder's bills-index
+            # path once this Congress is sharded, else null. Emitted always so
+            # the KMP shadow (explicitNulls=true) stays byte-identical.
+            "shard_index_path": shard_index.name if shard_index.exists() else None,
         })
     entries.sort(key=lambda e: e["congress"], reverse=True)
 
