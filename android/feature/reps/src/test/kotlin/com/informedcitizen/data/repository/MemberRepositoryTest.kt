@@ -6,8 +6,10 @@ import com.informedcitizen.pipeline.model.Action
 import com.informedcitizen.pipeline.model.Member
 import com.informedcitizen.pipeline.model.MemberLegislation
 import com.informedcitizen.pipeline.model.MemberLegislationItem
+import com.informedcitizen.pipeline.model.MemberVoteRow
 import com.informedcitizen.pipeline.model.MemberVotes
 import com.informedcitizen.pipeline.model.MembersIndex
+import com.informedcitizen.pipeline.model.VotePosition
 import com.informedcitizen.testutil.FakeMembersIndexCache
 import kotlinx.coroutines.test.runTest
 import okhttp3.MediaType.Companion.toMediaType
@@ -43,6 +45,8 @@ private class FakeMembersApi(
     private val sponsored: Map<String, MemberLegislation> = emptyMap(),
     private val cosponsored: Map<String, MemberLegislation> = emptyMap(),
     private val sponsoredErrors: Set<String> = emptySet(),
+    private val votes: Map<String, MemberVotes> = emptyMap(),
+    private val votesErrors: Map<String, HttpException> = emptyMap(),
 ) : MembersApi {
     var indexCalls = 0
     override suspend fun getMembersIndex(congress: String): MembersIndex {
@@ -55,8 +59,10 @@ private class FakeMembersApi(
     }
     override suspend fun getCosponsored(bioguideId: String): MemberLegislation =
         cosponsored[bioguideId] ?: error("no cosponsored fixture for $bioguideId")
-    override suspend fun getMemberVotes(bioguideId: String): MemberVotes =
-        error("member votes not fetched by CachedMemberRepository")
+    override suspend fun getMemberVotes(bioguideId: String): MemberVotes {
+        votesErrors[bioguideId]?.let { throw it }
+        return votes[bioguideId] ?: error("no votes fixture for $bioguideId")
+    }
 }
 
 class MemberRepositoryTest {
@@ -185,5 +191,50 @@ class MemberRepositoryTest {
         }
         val repo = CachedMemberRepository(throwingApi, FakeCrashReporter(), FakeMembersIndexCache())
         assertNull(repo.getMember("X", 119))
+    }
+
+    @Test
+    fun `getVotes returns the member shard`() = runTest {
+        val shard = MemberVotes(
+            "2026-07-22T00:00:00Z", "A000001", 1,
+            listOf(
+                MemberVoteRow(
+                    voteId = "house-119-2-1", congress = 119, date = "2026-07-22",
+                    question = "On Passage", result = "Passed", position = VotePosition.YEA,
+                    billId = "hr1-119", type = "hr", number = "1", shortTitle = "Sample Act",
+                ),
+            ),
+        )
+        val repo = CachedMemberRepository(
+            FakeMembersApi(sampleIndex, votes = mapOf("A000001" to shard)),
+            FakeCrashReporter(),
+            FakeMembersIndexCache(),
+        )
+        assertEquals(shard, repo.getVotes("A000001"))
+    }
+
+    @Test
+    fun `getVotes on 404 returns empty shard rather than null`() = runTest {
+        val repo = CachedMemberRepository(
+            FakeMembersApi(sampleIndex, votesErrors = mapOf("A000001" to http404())),
+            FakeCrashReporter(),
+            FakeMembersIndexCache(),
+        )
+        val result = repo.getVotes("A000001")
+        assertNotNull(result)
+        assertTrue(result!!.votes.isEmpty())
+    }
+
+    @Test
+    fun `getVotes on non-404 error returns null`() = runTest {
+        val http500 = HttpException(
+            Response.error<Any>(500, "".toResponseBody("application/json".toMediaType())),
+        )
+        val repo = CachedMemberRepository(
+            FakeMembersApi(sampleIndex, votesErrors = mapOf("A000001" to http500)),
+            FakeCrashReporter(),
+            FakeMembersIndexCache(),
+        )
+        assertNull(repo.getVotes("A000001"))
     }
 }

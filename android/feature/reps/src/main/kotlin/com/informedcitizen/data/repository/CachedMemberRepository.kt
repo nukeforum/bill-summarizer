@@ -6,6 +6,7 @@ import com.informedcitizen.data.cache.BillSource
 import com.informedcitizen.data.cache.MembersIndexCache
 import com.informedcitizen.pipeline.model.Member
 import com.informedcitizen.pipeline.model.MemberLegislation
+import com.informedcitizen.pipeline.model.MemberVotes
 import com.informedcitizen.pipeline.model.MembersIndex
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
@@ -104,6 +105,22 @@ class CachedMemberRepository @Inject constructor(
 
     override suspend fun getCosponsored(bioguideId: String): MemberLegislation? =
         fetchLegislation(bioguideId) { api.getCosponsored(it) }
+
+    // A 404 means "no recorded votes yet" — an empty shard, not a
+    // failure (same as the sponsored/cosponsored endpoints). Unlike
+    // those, a genuine error collapses to null instead of propagating:
+    // the recent-votes section is supplementary, so a votes-fetch
+    // failure must not error out the whole member page.
+    override suspend fun getVotes(bioguideId: String): MemberVotes? =
+        runCatching { api.getMemberVotes(bioguideId) }
+            .getOrElse { exc ->
+                if (exc is HttpException && exc.code() == 404) {
+                    MemberVotes(generatedAt = "", bioguideId = bioguideId, voteCount = 0, votes = emptyList())
+                } else {
+                    crashReporter.recordNonFatal(exc, "member votes fetch failed")
+                    null
+                }
+            }
 
     private suspend fun fetchLegislation(
         bioguideId: String,

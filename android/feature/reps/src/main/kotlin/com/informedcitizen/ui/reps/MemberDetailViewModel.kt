@@ -41,12 +41,14 @@ class MemberDetailViewModel @Inject constructor(
                 val member = members.getMember(bioguideId, congress)
                 val sponsored = members.getSponsored(bioguideId)
                 val cosponsored = members.getCosponsored(bioguideId)
+                val votes = members.getVotes(bioguideId)
                 _uiState.update {
                     it.copy(
                         isLoading = false,
                         member = member,
                         sponsored = sponsored?.bills.orEmpty(),
                         cosponsored = cosponsored?.bills.orEmpty(),
+                        recentVotes = votes?.votes?.take(RECENT_VOTES_CAP).orEmpty(),
                         errorMessage = null,
                     )
                 }
@@ -61,4 +63,11 @@ class MemberDetailViewModel @Inject constructor(
     }
 
     fun isInLocalCache(billId: String): Boolean = bills.containsBillId(billId)
+
+    private companion object {
+        // The per-member shard already runs to hundreds of rows; the
+        // detail history caps at the most recent slice so the tab stays
+        // scannable without a "load more" affordance (issue #22).
+        const val RECENT_VOTES_CAP = 25
+    }
 }
