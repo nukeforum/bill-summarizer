@@ -2,6 +2,7 @@ package com.informedcitizen.pipeline
 
 import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.pipeline.model.Chamber
+import com.informedcitizen.pipeline.model.LifecycleStatus
 import com.informedcitizen.pipeline.model.Outcome
 import com.informedcitizen.pipeline.model.VoteRef
 
@@ -144,6 +145,22 @@ fun classifyBillStatus(actionText: String): BillStatus {
     if (lifecycle != null) return BillStatus(lifecycle, isOutcome = false)
     return BillStatus(null, isOutcome = false)
 }
+
+/**
+ * Map a lifecycle-status wire string (the one [classifyLifecycleStatus] and
+ * Python's `_LIFECYCLE_RULES` return) to the typed [LifecycleStatus] enum for
+ * [Bill.lifecycleStatus]. Returns null on unknown input — kept alongside
+ * [outcomeFromWireString] so callers round-trip a status without importing the
+ * model package's `@SerialName` details. Never returns [LifecycleStatus.UNKNOWN]:
+ * the pipeline emits only recognised statuses; UNKNOWN is a decode-side fallback.
+ */
+fun lifecycleStatusFromWireString(value: String): LifecycleStatus? =
+    when (value) {
+        LIFECYCLE_INTRODUCED -> LifecycleStatus.INTRODUCED
+        LIFECYCLE_IN_COMMITTEE -> LifecycleStatus.IN_COMMITTEE
+        LIFECYCLE_REPORTED -> LifecycleStatus.REPORTED
+        else -> null
+    }
 
 // ---------- outcome from roll-call votes (backlog #30) --------------------
 

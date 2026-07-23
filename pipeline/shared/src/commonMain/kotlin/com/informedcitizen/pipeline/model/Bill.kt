@@ -17,6 +17,16 @@ data class Bill(
     // Defaulted so the lenient wire config's coerceInputValues can map an
     // unrecognised outcome string to Outcome.UNKNOWN instead of crashing.
     val outcome: Outcome = Outcome.UNKNOWN,
+    /**
+     * Pre-floor lifecycle status (issue #39) for a bill that has not reached a
+     * terminal floor [outcome]. Additive, defaulted null: manifests published
+     * before the field existed decode unchanged, and — crucially — a bill that
+     * *does* carry it is safely ignored by any app build released before this
+     * field existed (`ignoreUnknownKeys`). A real floor [outcome] always wins
+     * over a lifecycle status (`classifyBillStatus` precedence), so a bill with
+     * a decisive outcome leaves this null. See [LifecycleStatus].
+     */
+    @SerialName("status") val lifecycleStatus: LifecycleStatus? = null,
     @SerialName("policy_area") val policyArea: String? = null,
     @SerialName("summary_crs") val summaryCrs: String? = null,
     @SerialName("text_url_html") val textUrlHtml: String? = null,

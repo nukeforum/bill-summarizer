@@ -1,5 +1,6 @@
 package com.informedcitizen.pipeline
 
+import com.informedcitizen.pipeline.model.LifecycleStatus
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
@@ -69,5 +70,20 @@ class BillStatusTest {
         val (status, isOutcome) = classifyBillStatus("Some unrecognized action text.")
         assertNull(status)
         assertFalse(isOutcome)
+    }
+
+    @Test
+    fun lifecycle_wire_strings_map_to_typed_enum() {
+        assertEquals(LifecycleStatus.INTRODUCED, lifecycleStatusFromWireString(LIFECYCLE_INTRODUCED))
+        assertEquals(LifecycleStatus.IN_COMMITTEE, lifecycleStatusFromWireString(LIFECYCLE_IN_COMMITTEE))
+        assertEquals(LifecycleStatus.REPORTED, lifecycleStatusFromWireString(LIFECYCLE_REPORTED))
+    }
+
+    @Test
+    fun lifecycle_wire_mapping_returns_null_for_unknown() {
+        // Terminal outcomes are not lifecycle statuses, and UNKNOWN is decode-side only.
+        assertNull(lifecycleStatusFromWireString(OUTCOME_ENACTED))
+        assertNull(lifecycleStatusFromWireString("unknown"))
+        assertNull(lifecycleStatusFromWireString("nonsense"))
     }
 }
