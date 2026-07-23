@@ -7,6 +7,8 @@ package com.informedcitizen.pipeline.cli
  *    queue in `backfill_state.json`.
  *  - `fetch-members` — current Congress members index + sponsored /
  *    cosponsored legislation backfill.
+ *  - `build-bill-shards` — recency-first sharded per-Congress bill
+ *    manifests + shard index (dual-published beside the single manifest).
  *  - `build-session-calendar` — House ICS + Senate XML session days.
  *  - `build-election-calendar` — statutory federal general + curated
  *    state primary dates.
@@ -27,6 +29,7 @@ fun main(args: Array<String>) {
         "fetch-bills" -> FetchBillsCommand.run(args.drop(1))
         "backfill-bills" -> BackfillBillsCommand.run(args.drop(1))
         "fetch-members" -> FetchMembersCommand.run(args.drop(1))
+        "build-bill-shards" -> BuildBillShardsCommand.run(args.drop(1))
         "build-session-calendar" -> BuildSessionCalendarCommand.run(args.drop(1))
         "build-election-calendar" -> BuildElectionCalendarCommand.run(args.drop(1))
         "fetch-votes" -> FetchVotesCommand.run(args.drop(1))
@@ -81,6 +84,16 @@ private fun printUsage() {
               CONGRESS_API_KEY from the environment; pulls
               legislators-current.json from the unitedstates/
               congress-legislators gh-pages branch (no auth).
+          build-bill-shards [--output-dir <path>] [--state-dir <path>]
+                            [--congress N] [--page-size N]
+              Split each on-disk congressNNN_bills.json into recency-first
+              pages (congressNNN_bills_p<NNN>.json) plus an index
+              (congressNNN_bills_index.json), then rebuild congresses.json
+              so each sharded Congress's shard_index_path points at its
+              index. Leaves the single manifest untouched (dual-publish).
+              Pure re-shape — no API key or network. Default output-dir
+              ./docs/data, state-dir ./data-pipeline/state; --page-size
+              defaults to 500.
           build-session-calendar [--output-dir <path>]
               House voting days (USHOR .ics feed) + Senate session days
               (per-year senate.gov XML schedules, candidate years
