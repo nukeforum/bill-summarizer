@@ -10,6 +10,7 @@ import okio.fakefilesystem.FakeFileSystem
 import okio.use
 import kotlin.test.Test
 import kotlin.test.assertEquals
+import kotlin.test.assertFailsWith
 import kotlin.test.assertNotNull
 import kotlin.test.assertNull
 import kotlin.test.assertTrue
@@ -99,6 +100,38 @@ class ManifestIOTest {
                 text.indexOf("\"votes_coverage\"") < text.indexOf("\"bills\""),
             "votes_coverage must sit between congress and bills:\n$text",
         )
+    }
+
+    @Test fun load_tolerates_unknown_manifest_field() {
+        // A manifest carrying a field the Kotlin models don't know yet
+        // (forward-compatible pipeline addition) must decode as the bills
+        // it holds, mirroring the app's lenient wire parsing — not read as
+        // an absent file and trigger a rebuild-from-empty parity diff.
+        val fs = FakeFileSystem()
+        val store = FileBillsManifestStore(fs, "/out".toPath())
+        store.save(119, listOf(fixture()), nowIso = "2026-05-15T00:00:00Z")
+        val original = fs.source("/out/congress119_bills.json".toPath()).buffer().use { it.readUtf8() }
+        val withExtra = original.replaceFirst(
+            "{\n  \"generated_at\"",
+            "{\n  \"future_field\": {\"nested\": [1, 2, 3]},\n  \"generated_at\"",
+        )
+        fs.write("/out/congress119_bills.json".toPath()) { writeUtf8(withExtra) }
+
+        val loaded = store.load(119)
+        assertNotNull(loaded, "unknown field must not read as an absent manifest")
+        assertEquals(1, loaded.bills.size)
+        assertEquals("hr1234-119", loaded.bills.single().id)
+    }
+
+    @Test fun load_throws_on_corrupt_manifest_rather_than_reporting_absent() {
+        // A present-but-unparseable manifest must surface loudly, not
+        // masquerade as an absent file (which would silently rebuild from
+        // empty). Distinguishes corruption from absence.
+        val fs = FakeFileSystem()
+        val store = FileBillsManifestStore(fs, "/out".toPath())
+        fs.createDirectories("/out".toPath())
+        fs.write("/out/congress119_bills.json".toPath()) { writeUtf8("{ not valid json") }
+        assertFailsWith<IllegalStateException> { store.load(119) }
     }
 
     @Test fun save_uses_two_space_indent() {
