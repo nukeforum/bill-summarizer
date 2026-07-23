@@ -66,6 +66,7 @@ class BillsListViewModel @Inject constructor(
             _searchQuery,
             selectedPolicyArea,
             billRepository.generatedAt,
+            selectedStatus,
         ),
     ) { values ->
         @Suppress("UNCHECKED_CAST")
@@ -81,6 +82,7 @@ class BillsListViewModel @Inject constructor(
         val query = values[8] as String
         val policyArea = values[9] as String?
         val generatedAt = values[10] as String?
+        val status = values[11] as BillStatusFilter
 
         when {
             result == null -> BillsListUiState.Loading
@@ -99,6 +101,7 @@ class BillsListViewModel @Inject constructor(
                 query = query,
                 policyArea = policyArea,
                 generatedAt = generatedAt,
+                status = status,
             )
         }
     }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), BillsListUiState.Loading)
@@ -211,6 +214,7 @@ class BillsListViewModel @Inject constructor(
         query: String,
         policyArea: String?,
         generatedAt: String?,
+        status: BillStatusFilter,
     ): BillsListUiState.Success {
         val capable = capStatus == AiCapability.Status.Available ||
             capStatus is AiCapability.Status.ModelDownloading
@@ -264,6 +268,11 @@ class BillsListViewModel @Inject constructor(
             searchQuery = query,
             availablePolicyAreas = availablePolicyAreas,
             selectedPolicyArea = activePolicyArea,
+            selectedStatus = status,
+            // The lifecycle-status filter only makes sense once the broadened
+            // (#39) pre-floor bills are published; until then every bill has a
+            // null status, so the row stays hidden rather than showing dead chips.
+            statusFilterAvailable = allBills.any { it.lifecycleStatus != null },
         )
     }
 

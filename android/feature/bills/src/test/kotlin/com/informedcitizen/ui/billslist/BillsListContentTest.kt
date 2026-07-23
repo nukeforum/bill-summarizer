@@ -57,6 +57,7 @@ class BillsListContentTest {
     private fun success(
         searchQuery: String = "",
         selectedPolicyArea: String? = null,
+        statusFilterAvailable: Boolean = false,
     ) = BillsListUiState.Success(
         bills = emptyList(),
         filter = BillsListFilter.ALL,
@@ -64,6 +65,7 @@ class BillsListContentTest {
         sessionStatusLine = "House in session today.",
         searchQuery = searchQuery,
         selectedPolicyArea = selectedPolicyArea,
+        statusFilterAvailable = statusFilterAvailable,
     )
 
     @Test
@@ -84,6 +86,30 @@ class BillsListContentTest {
         composeRule.setContent { Subject(success(), data) }
 
         composeRule.onNodeWithText("Loading bills…").assertIsDisplayed()
+    }
+
+    @Test
+    fun `renders the lifecycle-status filter row only when it is available`() {
+        val data = PagingData.from(
+            listOf(billFixture("hr-1", title = "First paged bill")),
+            sourceLoadStates = loadStates(LoadState.NotLoading(endOfPaginationReached = true)),
+        )
+        composeRule.setContent { Subject(success(statusFilterAvailable = true), data) }
+
+        composeRule.onNodeWithText("Introduced").assertIsDisplayed()
+        composeRule.onNodeWithText("In committee").assertIsDisplayed()
+        composeRule.onNodeWithText("Reported").assertIsDisplayed()
+    }
+
+    @Test
+    fun `hides the lifecycle-status filter row when unavailable`() {
+        val data = PagingData.from(
+            listOf(billFixture("hr-1", title = "First paged bill")),
+            sourceLoadStates = loadStates(LoadState.NotLoading(endOfPaginationReached = true)),
+        )
+        composeRule.setContent { Subject(success(statusFilterAvailable = false), data) }
+
+        composeRule.onNodeWithText("In committee").assertDoesNotExist()
     }
 
     @Test

@@ -85,6 +85,7 @@ fun BillsListScreen(
             onResummarize = viewModel::resummarize,
             onSearchQueryChange = viewModel::setSearchQuery,
             onPolicyAreaSelected = viewModel::selectPolicyArea,
+            onStatusSelected = viewModel::setStatusFilter,
         )
     }
 }
@@ -103,6 +104,7 @@ internal fun BillsListContent(
     onResummarize: (String) -> Unit = {},
     onSearchQueryChange: (String) -> Unit = {},
     onPolicyAreaSelected: (String?) -> Unit = {},
+    onStatusSelected: (BillStatusFilter) -> Unit = {},
     searchQuery: String = (state as? BillsListUiState.Success)?.searchQuery.orEmpty(),
 ) {
     Column(modifier = Modifier.fillMaxSize().padding(top = innerPadding.calculateTopPadding())) {
@@ -130,6 +132,12 @@ internal fun BillsListContent(
                 policyAreas = success.availablePolicyAreas,
                 selected = success.selectedPolicyArea,
                 onPolicyAreaSelected = onPolicyAreaSelected,
+            )
+        }
+        if (success != null && success.statusFilterAvailable) {
+            StatusFilterRow(
+                selected = success.selectedStatus,
+                onStatusSelected = onStatusSelected,
             )
         }
         if (success != null && success.aiTitlesEnabled) {
@@ -251,6 +259,32 @@ private fun PolicyAreaFilterRow(
                 selected = selected == area,
                 onClick = { onPolicyAreaSelected(if (selected == area) null else area) },
                 label = { Text(area) },
+            )
+        }
+    }
+}
+
+/**
+ * Chips over the #39 pre-floor lifecycle statuses (introduced / in committee /
+ * reported) — a distinct axis from the outcome chips ([FilterChipsRow]), which
+ * slice terminal floor outcomes. Only rendered once the broadened bill set
+ * carries lifecycle statuses (see [BillsListUiState.Success.statusFilterAvailable]),
+ * so it stays invisible on today's floor-outcome-only feed.
+ */
+@Composable
+private fun StatusFilterRow(
+    selected: BillStatusFilter,
+    onStatusSelected: (BillStatusFilter) -> Unit,
+) {
+    LazyRow(
+        contentPadding = PaddingValues(horizontal = 16.dp),
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+    ) {
+        items(items = BillStatusFilter.entries, key = { it.name }) { entry ->
+            FilterChip(
+                selected = entry == selected,
+                onClick = { onStatusSelected(entry) },
+                label = { Text(entry.displayName) },
             )
         }
     }

@@ -23,6 +23,14 @@ sealed interface BillsListUiState {
         val searchQuery: String = "",
         val availablePolicyAreas: List<String> = emptyList(),
         val selectedPolicyArea: String? = null,
+        val selectedStatus: BillStatusFilter = BillStatusFilter.ALL,
+        /**
+         * Whether any loaded bill carries a pre-floor lifecycle status (#39/#42).
+         * Drives whether the status filter row renders — dormant-invisible until
+         * pre-floor bills are published, so it never shows dead chips on today's
+         * floor-outcome-only feed (mirrors [availablePolicyAreas] degradation).
+         */
+        val statusFilterAvailable: Boolean = false,
     ) : BillsListUiState
 
     data class Error(val message: String) : BillsListUiState
