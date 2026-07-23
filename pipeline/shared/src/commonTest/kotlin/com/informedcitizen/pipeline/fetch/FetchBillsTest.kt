@@ -60,6 +60,43 @@ private fun mockApiClient(): HttpClient = HttpClient(MockEngine) {
     }
 }
 
+/**
+ * Serves a recent-bills list of [enactedNumbers] `hr` bills (all
+ * passing the filter as ENACTED) plus their detail/summaries/text, in
+ * the array order given (newest-first). Records every detail-path
+ * request into [detailHits] so a test can prove which bills were
+ * enriched.
+ */
+private fun mockEnactedBills(
+    enactedNumbers: List<Int>,
+    detailHits: MutableList<String>,
+): HttpClient = HttpClient(MockEngine) {
+    configurePipelineForTest(PipelineHttpConfig(retryBaseDelayMillis = 0))
+    engine {
+        addHandler { request ->
+            val path = request.url.encodedPath
+            val listBody = enactedNumbers.joinToString(",", "[", "]") { n ->
+                """{"type":"hr","number":"$n","title":"Bill $n",
+                    "latestAction":{"text":"Became Public Law No: 119-$n.","actionDate":"2026-04-01"}}"""
+            }
+            val detailRe = Regex("""^/v3/bill/119/hr/(\d+)$""")
+            val body = when {
+                path == "/v3/bill/119" -> """{"bills":$listBody}"""
+                detailRe.matches(path) -> {
+                    detailHits += path
+                    """{"bill":{"title":"Bill","introducedDate":"2026-01-15",
+                       "sponsors":[{"fullName":"Rep. Smith","party":"Republican","state":"NE"}]}}"""
+                }
+                path.endsWith("/summaries") -> """{"summaries":[{"updateDate":"2026-04-01","text":"CRS."}]}"""
+                path.endsWith("/text") -> """{"textVersions":[
+                    {"date":"2026-04-01","formats":[{"type":"Formatted Text","url":"https://x/b.htm"}]}]}"""
+                else -> "{}"
+            }
+            respond(body, HttpStatusCode.OK, jsonHeaders())
+        }
+    }
+}
+
 class FetchBillsTest {
     @Test fun end_to_end_filters_enriches_merges_and_saves() = runTest {
         val client = mockApiClient()
@@ -191,5 +228,82 @@ class FetchBillsTest {
         assertEquals(0, second.mergeStats.updated)
         assertEquals(1, second.mergeStats.unchanged)
         assertEquals(listOf(ref), second.finalManifest.bills.single { it.id == "hr1-119" }.votes)
+    }
+
+    @Test fun bounded_run_enriches_only_up_to_maxNew_and_defers_the_rest() = runTest {
+        val detailHits = mutableListOf<String>()
+        val fs = FakeFileSystem()
+        val store = FileBillsManifestStore(fs, "/out".toPath())
+        val cutoff = Instant.parse("2026-03-15T00:00:00Z")
+
+        val result = fetchBills(
+            client = CongressClient(mockEnactedBills(listOf(1, 2, 3), detailHits), apiKey = "k"),
+            congress = 119,
+            cutoff = cutoff,
+            nowIso = "2026-05-15T00:00:00Z",
+            manifestStore = store,
+            errors = ErrorCollector(),
+            maxNew = 2,
+        )
+
+        // Only the two newest-listed bills are enriched; the third is deferred.
+        assertEquals(3, result.evaluated)
+        assertEquals(2, result.keptRecords.size)
+        assertEquals(1, result.newBillsDeferred)
+        assertEquals(setOf("/v3/bill/119/hr/1", "/v3/bill/119/hr/2"), detailHits.toSet())
+        assertEquals(setOf("hr1-119", "hr2-119"), result.finalManifest.bills.map { it.id }.toSet())
+    }
+
+    @Test fun bounded_run_skips_bills_already_in_the_manifest_for_free() = runTest {
+        val detailHits = mutableListOf<String>()
+        val fs = FakeFileSystem()
+        val store = FileBillsManifestStore(fs, "/out".toPath())
+        val cutoff = Instant.parse("2026-03-15T00:00:00Z")
+
+        // First bounded run (budget 1) enriches only the newest bill.
+        val first = fetchBills(
+            client = CongressClient(mockEnactedBills(listOf(1, 2, 3), detailHits), apiKey = "k"),
+            congress = 119,
+            cutoff = cutoff,
+            nowIso = "2026-05-15T00:00:00Z",
+            manifestStore = store,
+            errors = ErrorCollector(),
+            maxNew = 1,
+        )
+        assertEquals(setOf("/v3/bill/119/hr/1"), detailHits.toSet())
+        assertEquals(2, first.newBillsDeferred)
+
+        // Second run resumes: hr1 is on disk and skipped for free, so the
+        // budget is spent on the next new bill (hr2), not re-fetching hr1.
+        detailHits.clear()
+        val second = fetchBills(
+            client = CongressClient(mockEnactedBills(listOf(1, 2, 3), detailHits), apiKey = "k"),
+            congress = 119,
+            cutoff = cutoff,
+            nowIso = "2026-05-16T00:00:00Z",
+            manifestStore = store,
+            errors = ErrorCollector(),
+            maxNew = 1,
+        )
+        assertEquals(setOf("/v3/bill/119/hr/2"), detailHits.toSet())
+        assertEquals(1, second.newBillsDeferred)
+        assertEquals(1, second.mergeStats.added)
+        assertEquals(setOf("hr1-119", "hr2-119"), second.finalManifest.bills.map { it.id }.toSet())
+    }
+
+    @Test fun uncapped_run_enriches_every_bill_and_defers_none() = runTest {
+        val detailHits = mutableListOf<String>()
+        val result = fetchBills(
+            client = CongressClient(mockEnactedBills(listOf(1, 2, 3), detailHits), apiKey = "k"),
+            congress = 119,
+            cutoff = Instant.parse("2026-03-15T00:00:00Z"),
+            nowIso = "2026-05-15T00:00:00Z",
+            manifestStore = FileBillsManifestStore(FakeFileSystem(), "/out".toPath()),
+            errors = ErrorCollector(),
+            // maxNew defaults to NO_ENRICHMENT_CAP.
+        )
+        assertEquals(0, result.newBillsDeferred)
+        assertEquals(3, result.keptRecords.size)
+        assertEquals(3, detailHits.size)
     }
 }
