@@ -15,6 +15,8 @@ Checks (each independently emits a line):
 * Session calendar's latest House and Senate session day is at least
   ``CALENDAR_MIN_LOOKAHEAD_DAYS`` ahead of today (so the bills list's
   "session" line never reads "session has ended" for users).
+* Election calendar names at least one election on or after today, so its
+  federal-general horizon never lapses (issue #23). Tolerated if absent.
 * ``backfill_state.json.last_run_at`` advanced within
   ``BACKFILL_MAX_AGE_DAYS`` — unless the backfill queue is empty, in which
   case the cursor is allowed to be stale.
@@ -40,6 +42,11 @@ MEMBERS_MAX_AGE_DAYS = 14
 VOTES_MAX_AGE_DAYS = 2
 CALENDAR_MIN_LOOKAHEAD_DAYS = 30
 BACKFILL_MAX_AGE_DAYS = 3
+# The election calendar must always name a real upcoming election. Its horizon
+# is far out (the next federal general is up to ~2 years away), so unlike the
+# session calendar this guards that the horizon hasn't lapsed entirely, not a
+# rolling look-ahead window: fail once every published event is in the past.
+ELECTION_CALENDAR_MIN_LOOKAHEAD_DAYS = 1
 
 
 def _parse_iso_utc(value: str | None) -> datetime | None:
@@ -138,6 +145,37 @@ def check(now: datetime | None = None) -> list[str]:
                     f"calendar: {chamber} last known session day {last} is less than "
                     f"{CALENDAR_MIN_LOOKAHEAD_DAYS} days out; upstream feed needs refresh"
                 )
+
+    # 4b. Election calendar horizon: at least one election on or after today.
+    election_path = OUTPUT_DIR / "election_calendar.json"
+    election = _load_json(election_path)
+    if election is None:
+        # The election calendar is a newer artifact (issue #23); absence is
+        # tolerated until its workflow is live, rather than failing every run.
+        pass
+    else:
+        events = election.get("elections") or []
+        future_dates = [
+            e["date"]
+            for e in events
+            if isinstance(e, dict) and isinstance(e.get("date"), str) and e["date"] >= today.isoformat()
+        ]
+        if not future_dates:
+            failures.append(
+                f"election: {election_path.name} has no election on or after {today}; "
+                "the federal general horizon needs advancing"
+            )
+        else:
+            try:
+                last = date.fromisoformat(max(future_dates))
+            except ValueError:
+                failures.append(f"election: {election_path.name} latest future date is malformed")
+            else:
+                if (last - today).days < ELECTION_CALENDAR_MIN_LOOKAHEAD_DAYS:
+                    failures.append(
+                        f"election: {election_path.name} horizon {last} is less than "
+                        f"{ELECTION_CALENDAR_MIN_LOOKAHEAD_DAYS} days out"
+                    )
 
     # 5. Backfill cursor advancement (only if there's still work queued).
     state_path = STATE_DIR / "backfill_state.json"
