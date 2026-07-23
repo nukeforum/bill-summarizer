@@ -42,6 +42,25 @@ internal fun electionTypeLabel(type: ElectionType): String = when (type) {
 }
 
 /**
+ * Title line for one election row. The shared federal general
+ * ([UpcomingElection.isNationwide]) reads as just its type label; a
+ * per-state event is prefixed with its postal code (e.g. "TX Primary")
+ * so the row is self-describing when several states appear together.
+ */
+internal fun electionRowLabel(election: UpcomingElection): String {
+    val type = electionTypeLabel(election.event.type)
+    return if (election.isNationwide) type else "${election.event.state} $type"
+}
+
+/**
+ * Merged screen-reader description for an election row: label, formatted
+ * date, and countdown as one utterance so TalkBack doesn't read three
+ * disconnected fragments.
+ */
+internal fun electionRowDescription(election: UpcomingElection, formattedDate: String): String =
+    "${electionRowLabel(election)}, $formattedDate, ${election.countdownText}"
+
+/**
  * Upcoming elections relevant to [stateCode] (a 2-letter postal code, or
  * null / blank for a national-only view). Keeps events on or after [today]
  * that are either nationwide (the shared federal general) or match

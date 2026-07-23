@@ -139,4 +139,26 @@ class UpcomingElectionsTest {
         assertEquals("Primary runoff", electionTypeLabel(ElectionType.PRIMARY_RUNOFF))
         assertEquals("Election", electionTypeLabel(ElectionType.UNKNOWN))
     }
+
+    @Test
+    fun `electionRowLabel omits state for nationwide and prefixes state otherwise`() {
+        val cal = calendar(
+            event(ElectionEvent.NATIONWIDE, "2026-11-03", ElectionType.GENERAL),
+            event("TX", "2026-03-03", ElectionType.PRIMARY),
+        )
+        val rows = upcomingElections(cal, today, stateCode = "TX")
+        val tx = rows.first { it.event.state == "TX" }
+        val us = rows.first { it.isNationwide }
+
+        assertEquals("TX Primary", electionRowLabel(tx))
+        assertEquals("General election", electionRowLabel(us))
+    }
+
+    @Test
+    fun `electionRowDescription merges label date and countdown`() {
+        val cal = calendar(event("TX", "2026-03-03", ElectionType.PRIMARY))
+        val row = upcomingElections(cal, today, stateCode = "TX").single()
+
+        assertEquals("TX Primary, Tue Mar 3, 2026, in 2 days", electionRowDescription(row, "Tue Mar 3, 2026"))
+    }
 }
