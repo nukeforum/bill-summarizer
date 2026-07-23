@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-23T01:45:17Z",
+  "generated_at": "2026-07-23T01:48:02Z",
   "congress": 119,
-  "vote_count": 1000,
+  "vote_count": 1250,
   "votes": [
     {
       "id": "senate-119-2-206",
@@ -5945,6 +5945,35 @@
       "path": "votes/congress119/senate-2-10.json"
     },
     {
+      "id": "house-119-2-24",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 24,
+      "date": "2026-01-14",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres992-119",
+      "totals": {
+        "yea": 213,
+        "nay": 209,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "R": 213
+        },
+        "nay": {
+          "D": 209
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-2-24.json"
+    },
+    {
       "id": "senate-119-2-9",
       "chamber": "senate",
       "session": 2,
@@ -5970,6 +5999,240 @@
         }
       },
       "path": "votes/congress119/senate-2-9.json"
+    },
+    {
+      "id": "house-119-2-23",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 23,
+      "date": "2026-01-13",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr4593-119",
+      "totals": {
+        "yea": 226,
+        "nay": 197,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "D": 11,
+          "R": 215
+        },
+        "nay": {
+          "D": 197
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-2-23.json"
+    },
+    {
+      "id": "house-119-2-22",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 22,
+      "date": "2026-01-13",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr4593-119",
+      "totals": {
+        "yea": 209,
+        "nay": 215,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 209
+        },
+        "nay": {
+          "R": 215
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-2-22.json"
+    },
+    {
+      "id": "house-119-2-21",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 21,
+      "date": "2026-01-13",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr2312-119",
+      "totals": {
+        "yea": 209,
+        "nay": 215,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 209
+        },
+        "nay": {
+          "R": 215
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-2-21.json"
+    },
+    {
+      "id": "house-119-2-20",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 20,
+      "date": "2026-01-13",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr2270-119",
+      "totals": {
+        "yea": 209,
+        "nay": 213,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 209
+        },
+        "nay": {
+          "R": 213
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-2-20.json"
+    },
+    {
+      "id": "house-119-2-19",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 19,
+      "date": "2026-01-13",
+      "question": "On Passage",
+      "result": "Failed",
+      "bill_id": "hr2262-119",
+      "totals": {
+        "yea": 209,
+        "nay": 215,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "R": 209
+        },
+        "nay": {
+          "D": 209,
+          "R": 6
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-2-19.json"
+    },
+    {
+      "id": "house-119-2-18",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 18,
+      "date": "2026-01-13",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr2262-119",
+      "totals": {
+        "yea": 209,
+        "nay": 213,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 209
+        },
+        "nay": {
+          "R": 213
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-2-18.json"
+    },
+    {
+      "id": "house-119-2-17",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 17,
+      "date": "2026-01-13",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres988-119",
+      "totals": {
+        "yea": 214,
+        "nay": 207,
+        "present": 0,
+        "not_voting": 10
+      },
+      "party_split": {
+        "yea": {
+          "R": 214
+        },
+        "nay": {
+          "D": 207
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-2-17.json"
+    },
+    {
+      "id": "house-119-2-16",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 16,
+      "date": "2026-01-13",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres988-119",
+      "totals": {
+        "yea": 206,
+        "nay": 205,
+        "present": 0,
+        "not_voting": 20
+      },
+      "party_split": {
+        "yea": {
+          "R": 206
+        },
+        "nay": {
+          "D": 205
+        },
+        "not_voting": {
+          "D": 8,
+          "R": 12
+        }
+      },
+      "path": "votes/congress119/house-2-16.json"
     },
     {
       "id": "senate-119-2-8",
@@ -5999,6 +6262,97 @@
         }
       },
       "path": "votes/congress119/senate-2-8.json"
+    },
+    {
+      "id": "house-119-2-15",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 15,
+      "date": "2026-01-12",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr6504-119",
+      "totals": {
+        "yea": 345,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 41
+      },
+      "party_split": {
+        "yea": {
+          "D": 199,
+          "R": 146
+        },
+        "nay": {
+          "R": 45
+        },
+        "not_voting": {
+          "D": 14,
+          "R": 27
+        }
+      },
+      "path": "votes/congress119/house-2-15.json"
+    },
+    {
+      "id": "house-119-2-14",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 14,
+      "date": "2026-01-12",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr6500-119",
+      "totals": {
+        "yea": 340,
+        "nay": 54,
+        "present": 0,
+        "not_voting": 37
+      },
+      "party_split": {
+        "yea": {
+          "D": 191,
+          "R": 149
+        },
+        "nay": {
+          "D": 11,
+          "R": 43
+        },
+        "not_voting": {
+          "D": 11,
+          "R": 26
+        }
+      },
+      "path": "votes/congress119/house-2-14.json"
+    },
+    {
+      "id": "house-119-2-13",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 13,
+      "date": "2026-01-12",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr2683-119",
+      "totals": {
+        "yea": 369,
+        "nay": 22,
+        "present": 0,
+        "not_voting": 39
+      },
+      "party_split": {
+        "yea": {
+          "D": 202,
+          "R": 167
+        },
+        "nay": {
+          "R": 22
+        },
+        "not_voting": {
+          "D": 11,
+          "R": 28
+        }
+      },
+      "path": "votes/congress119/house-2-13.json"
     },
     {
       "id": "senate-119-2-7",
@@ -6034,6 +6388,187 @@
       "path": "votes/congress119/senate-2-7.json"
     },
     {
+      "id": "house-119-2-12",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 12,
+      "date": "2026-01-09",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr5184-119",
+      "totals": {
+        "yea": 263,
+        "nay": 147,
+        "present": 0,
+        "not_voting": 21
+      },
+      "party_split": {
+        "yea": {
+          "D": 57,
+          "R": 206
+        },
+        "nay": {
+          "D": 147
+        },
+        "not_voting": {
+          "D": 9,
+          "R": 12
+        }
+      },
+      "path": "votes/congress119/house-2-12.json"
+    },
+    {
+      "id": "house-119-2-11",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 11,
+      "date": "2026-01-08",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr1834-119",
+      "totals": {
+        "yea": 230,
+        "nay": 196,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "D": 213,
+          "R": 17
+        },
+        "nay": {
+          "R": 196
+        },
+        "not_voting": {
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-2-11.json"
+    },
+    {
+      "id": "house-119-2-10",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 10,
+      "date": "2026-01-08",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres780-119",
+      "totals": {
+        "yea": 224,
+        "nay": 202,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "D": 213,
+          "R": 11
+        },
+        "nay": {
+          "R": 202
+        },
+        "not_voting": {
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-2-10.json"
+    },
+    {
+      "id": "house-119-2-9",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 9,
+      "date": "2026-01-08",
+      "question": "Passage, Objections of the President To The Contrary Notwithstanding",
+      "result": "Failed",
+      "bill_id": "hr131-119",
+      "totals": {
+        "yea": 248,
+        "nay": 177,
+        "present": 1,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "D": 213,
+          "R": 35
+        },
+        "nay": {
+          "R": 177
+        },
+        "present": {
+          "R": 1
+        },
+        "not_voting": {
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-2-9.json"
+    },
+    {
+      "id": "house-119-2-8",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 8,
+      "date": "2026-01-08",
+      "question": "Passage, Objections of the President To The Contrary Notwithstanding",
+      "result": "Failed",
+      "bill_id": "hr504-119",
+      "totals": {
+        "yea": 236,
+        "nay": 188,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 212,
+          "R": 24
+        },
+        "nay": {
+          "R": 188
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-2-8.json"
+    },
+    {
+      "id": "house-119-2-7",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 7,
+      "date": "2026-01-08",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr6938-119",
+      "totals": {
+        "yea": 397,
+        "nay": 28,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "D": 206,
+          "R": 191
+        },
+        "nay": {
+          "D": 6,
+          "R": 22
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-2-7.json"
+    },
+    {
       "id": "senate-119-2-6",
       "chamber": "senate",
       "session": 2,
@@ -6063,6 +6598,37 @@
         }
       },
       "path": "votes/congress119/senate-2-6.json"
+    },
+    {
+      "id": "house-119-2-6",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 6,
+      "date": "2026-01-08",
+      "question": "On Retaining Divisions B and C",
+      "result": "Passed",
+      "bill_id": "hr6938-119",
+      "totals": {
+        "yea": 419,
+        "nay": 6,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "D": 209,
+          "R": 210
+        },
+        "nay": {
+          "D": 3,
+          "R": 3
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-2-6.json"
     },
     {
       "id": "senate-119-2-5",
@@ -6095,6 +6661,37 @@
       "path": "votes/congress119/senate-2-5.json"
     },
     {
+      "id": "house-119-2-5",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 5,
+      "date": "2026-01-08",
+      "question": "On Retaining Division A",
+      "result": "Passed",
+      "bill_id": "hr6938-119",
+      "totals": {
+        "yea": 375,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 204,
+          "R": 171
+        },
+        "nay": {
+          "D": 7,
+          "R": 40
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/house-2-5.json"
+    },
+    {
       "id": "senate-119-2-4",
       "chamber": "senate",
       "session": 2,
@@ -6123,6 +6720,94 @@
         }
       },
       "path": "votes/congress119/senate-2-4.json"
+    },
+    {
+      "id": "house-119-2-4",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 4,
+      "date": "2026-01-07",
+      "question": "On Motion to Discharge",
+      "result": "Passed",
+      "bill_id": "hres780-119",
+      "totals": {
+        "yea": 221,
+        "nay": 205,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "D": 212,
+          "R": 9
+        },
+        "nay": {
+          "R": 205
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-2-4.json"
+    },
+    {
+      "id": "house-119-2-3",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 3,
+      "date": "2026-01-07",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres977-119",
+      "totals": {
+        "yea": 214,
+        "nay": 212,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "R": 214
+        },
+        "nay": {
+          "D": 212
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-2-3.json"
+    },
+    {
+      "id": "house-119-2-2",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 2,
+      "date": "2026-01-07",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres977-119",
+      "totals": {
+        "yea": 213,
+        "nay": 211,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "R": 213
+        },
+        "nay": {
+          "D": 211
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-2-2.json"
     },
     {
       "id": "senate-119-2-3",
@@ -6176,6 +6861,33 @@
         }
       },
       "path": "votes/congress119/senate-2-2.json"
+    },
+    {
+      "id": "house-119-2-1",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 1,
+      "date": "2026-01-06",
+      "question": "Call of the House",
+      "result": "Passed",
+      "bill_id": null,
+      "totals": {
+        "yea": 0,
+        "nay": 0,
+        "present": 406,
+        "not_voting": 24
+      },
+      "party_split": {
+        "present": {
+          "D": 202,
+          "R": 204
+        },
+        "not_voting": {
+          "D": 11,
+          "R": 13
+        }
+      },
+      "path": "votes/congress119/house-2-1.json"
     },
     {
       "id": "senate-119-2-1",
@@ -6391,6 +7103,341 @@
       "path": "votes/congress119/senate-1-654.json"
     },
     {
+      "id": "house-119-1-362",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 362,
+      "date": "2025-12-18",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr498-119",
+      "totals": {
+        "yea": 215,
+        "nay": 201,
+        "present": 0,
+        "not_voting": 17
+      },
+      "party_split": {
+        "yea": {
+          "D": 4,
+          "R": 211
+        },
+        "nay": {
+          "D": 201
+        },
+        "not_voting": {
+          "D": 8,
+          "R": 9
+        }
+      },
+      "path": "votes/congress119/house-1-362.json"
+    },
+    {
+      "id": "house-119-1-361",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 361,
+      "date": "2025-12-18",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr498-119",
+      "totals": {
+        "yea": 204,
+        "nay": 212,
+        "present": 0,
+        "not_voting": 17
+      },
+      "party_split": {
+        "yea": {
+          "D": 204
+        },
+        "nay": {
+          "R": 212
+        },
+        "not_voting": {
+          "D": 9,
+          "R": 8
+        }
+      },
+      "path": "votes/congress119/house-1-361.json"
+    },
+    {
+      "id": "house-119-1-360",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 360,
+      "date": "2025-12-18",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr845-119",
+      "totals": {
+        "yea": 211,
+        "nay": 204,
+        "present": 0,
+        "not_voting": 18
+      },
+      "party_split": {
+        "yea": {
+          "D": 5,
+          "R": 206
+        },
+        "nay": {
+          "D": 200,
+          "R": 4
+        },
+        "not_voting": {
+          "D": 8,
+          "R": 10
+        }
+      },
+      "path": "votes/congress119/house-1-360.json"
+    },
+    {
+      "id": "house-119-1-359",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 359,
+      "date": "2025-12-18",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr845-119",
+      "totals": {
+        "yea": 204,
+        "nay": 213,
+        "present": 0,
+        "not_voting": 16
+      },
+      "party_split": {
+        "yea": {
+          "D": 204
+        },
+        "nay": {
+          "D": 1,
+          "R": 212
+        },
+        "not_voting": {
+          "D": 8,
+          "R": 8
+        }
+      },
+      "path": "votes/congress119/house-1-359.json"
+    },
+    {
+      "id": "house-119-1-358",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 358,
+      "date": "2025-12-18",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr1366-119",
+      "totals": {
+        "yea": 219,
+        "nay": 198,
+        "present": 0,
+        "not_voting": 16
+      },
+      "party_split": {
+        "yea": {
+          "D": 9,
+          "R": 210
+        },
+        "nay": {
+          "D": 197,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 7,
+          "R": 9
+        }
+      },
+      "path": "votes/congress119/house-1-358.json"
+    },
+    {
+      "id": "house-119-1-357",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 357,
+      "date": "2025-12-18",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr1366-119",
+      "totals": {
+        "yea": 205,
+        "nay": 213,
+        "present": 0,
+        "not_voting": 15
+      },
+      "party_split": {
+        "yea": {
+          "D": 205
+        },
+        "nay": {
+          "D": 1,
+          "R": 212
+        },
+        "not_voting": {
+          "D": 7,
+          "R": 8
+        }
+      },
+      "path": "votes/congress119/house-1-357.json"
+    },
+    {
+      "id": "house-119-1-356",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 356,
+      "date": "2025-12-18",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr4776-119",
+      "totals": {
+        "yea": 221,
+        "nay": 196,
+        "present": 0,
+        "not_voting": 16
+      },
+      "party_split": {
+        "yea": {
+          "D": 11,
+          "R": 210
+        },
+        "nay": {
+          "D": 195,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 7,
+          "R": 9
+        }
+      },
+      "path": "votes/congress119/house-1-356.json"
+    },
+    {
+      "id": "house-119-1-355",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 355,
+      "date": "2025-12-18",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr4776-119",
+      "totals": {
+        "yea": 206,
+        "nay": 211,
+        "present": 0,
+        "not_voting": 16
+      },
+      "party_split": {
+        "yea": {
+          "D": 206
+        },
+        "nay": {
+          "D": 1,
+          "R": 210
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 10
+        }
+      },
+      "path": "votes/congress119/house-1-355.json"
+    },
+    {
+      "id": "house-119-1-354",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 354,
+      "date": "2025-12-18",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4776-119",
+      "totals": {
+        "yea": 204,
+        "nay": 217,
+        "present": 0,
+        "not_voting": 17
+      },
+      "party_split": {
+        "yea": {
+          "D": 1,
+          "R": 203
+        },
+        "nay": {
+          "D": 209,
+          "R": 8
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 11
+        }
+      },
+      "path": "votes/congress119/house-1-354.json"
+    },
+    {
+      "id": "house-119-1-353",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 353,
+      "date": "2025-12-18",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4776-119",
+      "totals": {
+        "yea": 208,
+        "nay": 214,
+        "present": 0,
+        "not_voting": 16
+      },
+      "party_split": {
+        "yea": {
+          "D": 1,
+          "R": 207
+        },
+        "nay": {
+          "D": 209,
+          "R": 5
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 10
+        }
+      },
+      "path": "votes/congress119/house-1-353.json"
+    },
+    {
+      "id": "house-119-1-352",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 352,
+      "date": "2025-12-18",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4776-119",
+      "totals": {
+        "yea": 205,
+        "nay": 220,
+        "present": 0,
+        "not_voting": 14
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "R": 203
+        },
+        "nay": {
+          "D": 209,
+          "R": 11
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 9
+        }
+      },
+      "path": "votes/congress119/house-1-352.json"
+    },
+    {
       "id": "senate-119-1-653",
       "chamber": "senate",
       "session": 1,
@@ -6574,6 +7621,454 @@
       "path": "votes/congress119/senate-1-648.json"
     },
     {
+      "id": "house-119-1-351",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 351,
+      "date": "2025-12-17",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr3492-119",
+      "totals": {
+        "yea": 216,
+        "nay": 211,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "D": 3,
+          "R": 213
+        },
+        "nay": {
+          "D": 207,
+          "R": 4
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-351.json"
+    },
+    {
+      "id": "house-119-1-350",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 350,
+      "date": "2025-12-17",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr3492-119",
+      "totals": {
+        "yea": 210,
+        "nay": 218,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "D": 210
+        },
+        "nay": {
+          "R": 218
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-350.json"
+    },
+    {
+      "id": "house-119-1-349",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 349,
+      "date": "2025-12-17",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr6703-119",
+      "totals": {
+        "yea": 216,
+        "nay": 211,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "R": 216
+        },
+        "nay": {
+          "D": 210,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-349.json"
+    },
+    {
+      "id": "house-119-1-348",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 348,
+      "date": "2025-12-17",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr6703-119",
+      "totals": {
+        "yea": 210,
+        "nay": 218,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "D": 210
+        },
+        "nay": {
+          "R": 218
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-348.json"
+    },
+    {
+      "id": "house-119-1-347",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 347,
+      "date": "2025-12-17",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr3616-119",
+      "totals": {
+        "yea": 225,
+        "nay": 203,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "D": 7,
+          "R": 218
+        },
+        "nay": {
+          "D": 203
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-347.json"
+    },
+    {
+      "id": "house-119-1-346",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 346,
+      "date": "2025-12-17",
+      "question": "On Agreeing to the Resolution",
+      "result": "Failed",
+      "bill_id": "hconres64-119",
+      "totals": {
+        "yea": 211,
+        "nay": 213,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 208,
+          "R": 3
+        },
+        "nay": {
+          "D": 1,
+          "R": 212
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-346.json"
+    },
+    {
+      "id": "house-119-1-345",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 345,
+      "date": "2025-12-17",
+      "question": "On Agreeing to the Resolution",
+      "result": "Failed",
+      "bill_id": "hconres61-119",
+      "totals": {
+        "yea": 210,
+        "nay": 216,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 208,
+          "R": 2
+        },
+        "nay": {
+          "D": 2,
+          "R": 214
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-345.json"
+    },
+    {
+      "id": "house-119-1-344",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 344,
+      "date": "2025-12-17",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres953-119",
+      "totals": {
+        "yea": 213,
+        "nay": 209,
+        "present": 0,
+        "not_voting": 11
+      },
+      "party_split": {
+        "yea": {
+          "R": 213
+        },
+        "nay": {
+          "D": 208,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-1-344.json"
+    },
+    {
+      "id": "house-119-1-343",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 343,
+      "date": "2025-12-17",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres953-119",
+      "totals": {
+        "yea": 204,
+        "nay": 203,
+        "present": 0,
+        "not_voting": 26
+      },
+      "party_split": {
+        "yea": {
+          "R": 204
+        },
+        "nay": {
+          "D": 203
+        },
+        "not_voting": {
+          "D": 10,
+          "R": 16
+        }
+      },
+      "path": "votes/congress119/house-1-343.json"
+    },
+    {
+      "id": "house-119-1-342",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 342,
+      "date": "2025-12-16",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr3632-119",
+      "totals": {
+        "yea": 222,
+        "nay": 202,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 7,
+          "R": 215
+        },
+        "nay": {
+          "D": 199,
+          "R": 3
+        },
+        "not_voting": {
+          "D": 7,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-342.json"
+    },
+    {
+      "id": "house-119-1-341",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 341,
+      "date": "2025-12-16",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr3632-119",
+      "totals": {
+        "yea": 207,
+        "nay": 218,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "D": 207
+        },
+        "nay": {
+          "R": 218
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-341.json"
+    },
+    {
+      "id": "house-119-1-340",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 340,
+      "date": "2025-12-16",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr4371-119",
+      "totals": {
+        "yea": 225,
+        "nay": 201,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 7,
+          "R": 218
+        },
+        "nay": {
+          "D": 201
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-340.json"
+    },
+    {
+      "id": "house-119-1-339",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 339,
+      "date": "2025-12-16",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr4371-119",
+      "totals": {
+        "yea": 208,
+        "nay": 218,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 208
+        },
+        "nay": {
+          "R": 218
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-339.json"
+    },
+    {
+      "id": "house-119-1-338",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 338,
+      "date": "2025-12-16",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres951-119",
+      "totals": {
+        "yea": 215,
+        "nay": 209,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "R": 215
+        },
+        "nay": {
+          "D": 207,
+          "R": 2
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-338.json"
+    },
+    {
+      "id": "house-119-1-337",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 337,
+      "date": "2025-12-16",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres951-119",
+      "totals": {
+        "yea": 215,
+        "nay": 207,
+        "present": 0,
+        "not_voting": 11
+      },
+      "party_split": {
+        "yea": {
+          "R": 215
+        },
+        "nay": {
+          "D": 207
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-337.json"
+    },
+    {
       "id": "senate-119-1-647",
       "chamber": "senate",
       "session": 1,
@@ -6605,6 +8100,123 @@
         }
       },
       "path": "votes/congress119/senate-1-647.json"
+    },
+    {
+      "id": "house-119-1-336",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 336,
+      "date": "2025-12-15",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr3187-119",
+      "totals": {
+        "yea": 388,
+        "nay": 0,
+        "present": 0,
+        "not_voting": 45
+      },
+      "party_split": {
+        "yea": {
+          "D": 191,
+          "R": 197
+        },
+        "not_voting": {
+          "D": 22,
+          "R": 23
+        }
+      },
+      "path": "votes/congress119/house-1-336.json"
+    },
+    {
+      "id": "house-119-1-335",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 335,
+      "date": "2025-12-15",
+      "question": "On Motion to Suspend the Rules and Pass",
+      "result": "Passed",
+      "bill_id": "s284-119",
+      "totals": {
+        "yea": 370,
+        "nay": 22,
+        "present": 0,
+        "not_voting": 41
+      },
+      "party_split": {
+        "yea": {
+          "D": 194,
+          "R": 176
+        },
+        "nay": {
+          "R": 22
+        },
+        "not_voting": {
+          "D": 19,
+          "R": 22
+        }
+      },
+      "path": "votes/congress119/house-1-335.json"
+    },
+    {
+      "id": "house-119-1-334",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 334,
+      "date": "2025-12-12",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr3668-119",
+      "totals": {
+        "yea": 213,
+        "nay": 184,
+        "present": 0,
+        "not_voting": 36
+      },
+      "party_split": {
+        "yea": {
+          "D": 7,
+          "R": 206
+        },
+        "nay": {
+          "D": 182,
+          "R": 2
+        },
+        "not_voting": {
+          "D": 24,
+          "R": 12
+        }
+      },
+      "path": "votes/congress119/house-1-334.json"
+    },
+    {
+      "id": "house-119-1-333",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 333,
+      "date": "2025-12-12",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr3668-119",
+      "totals": {
+        "yea": 194,
+        "nay": 204,
+        "present": 0,
+        "not_voting": 34
+      },
+      "party_split": {
+        "yea": {
+          "D": 194
+        },
+        "nay": {
+          "R": 204
+        },
+        "not_voting": {
+          "D": 19,
+          "R": 15
+        }
+      },
+      "path": "votes/congress119/house-1-333.json"
     },
     {
       "id": "senate-119-1-646",
@@ -6728,6 +8340,343 @@
       "path": "votes/congress119/senate-1-643.json"
     },
     {
+      "id": "house-119-1-332",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 332,
+      "date": "2025-12-11",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr2550-119",
+      "totals": {
+        "yea": 231,
+        "nay": 195,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 211,
+          "R": 20
+        },
+        "nay": {
+          "R": 195
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-332.json"
+    },
+    {
+      "id": "house-119-1-331",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 331,
+      "date": "2025-12-11",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres432-119",
+      "totals": {
+        "yea": 232,
+        "nay": 194,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 210,
+          "R": 22
+        },
+        "nay": {
+          "R": 194
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-331.json"
+    },
+    {
+      "id": "house-119-1-330",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 330,
+      "date": "2025-12-11",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr3898-119",
+      "totals": {
+        "yea": 221,
+        "nay": 205,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 6,
+          "R": 215
+        },
+        "nay": {
+          "D": 204,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-330.json"
+    },
+    {
+      "id": "house-119-1-329",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 329,
+      "date": "2025-12-11",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr3898-119",
+      "totals": {
+        "yea": 210,
+        "nay": 216,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 210
+        },
+        "nay": {
+          "R": 216
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-329.json"
+    },
+    {
+      "id": "house-119-1-328",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 328,
+      "date": "2025-12-11",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr3383-119",
+      "totals": {
+        "yea": 302,
+        "nay": 123,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "D": 87,
+          "R": 215
+        },
+        "nay": {
+          "D": 123
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-328.json"
+    },
+    {
+      "id": "house-119-1-327",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 327,
+      "date": "2025-12-11",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr3383-119",
+      "totals": {
+        "yea": 214,
+        "nay": 215,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 212,
+          "R": 2
+        },
+        "nay": {
+          "D": 1,
+          "R": 214
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-1-327.json"
+    },
+    {
+      "id": "house-119-1-326",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 326,
+      "date": "2025-12-11",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr3383-119",
+      "totals": {
+        "yea": 211,
+        "nay": 219,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "D": 207,
+          "R": 4
+        },
+        "nay": {
+          "D": 6,
+          "R": 213
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-326.json"
+    },
+    {
+      "id": "house-119-1-325",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 325,
+      "date": "2025-12-11",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr3383-119",
+      "totals": {
+        "yea": 54,
+        "nay": 374,
+        "present": 0,
+        "not_voting": 11
+      },
+      "party_split": {
+        "yea": {
+          "D": 1,
+          "R": 53
+        },
+        "nay": {
+          "D": 209,
+          "R": 165
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-325.json"
+    },
+    {
+      "id": "house-119-1-324",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 324,
+      "date": "2025-12-11",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr3638-119",
+      "totals": {
+        "yea": 267,
+        "nay": 159,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 51,
+          "R": 216
+        },
+        "nay": {
+          "D": 159
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-324.json"
+    },
+    {
+      "id": "house-119-1-323",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 323,
+      "date": "2025-12-11",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr3628-119",
+      "totals": {
+        "yea": 218,
+        "nay": 207,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "D": 4,
+          "R": 214
+        },
+        "nay": {
+          "D": 206,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-323.json"
+    },
+    {
+      "id": "house-119-1-322",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 322,
+      "date": "2025-12-11",
+      "question": "On Motion to Table",
+      "result": "Passed",
+      "bill_id": "hres939-119",
+      "totals": {
+        "yea": 237,
+        "nay": 140,
+        "present": 47,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 23,
+          "R": 214
+        },
+        "nay": {
+          "D": 140
+        },
+        "present": {
+          "D": 47
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-1-322.json"
+    },
+    {
       "id": "senate-119-1-642",
       "chamber": "senate",
       "session": 1,
@@ -6785,6 +8734,155 @@
         }
       },
       "path": "votes/congress119/senate-1-641.json"
+    },
+    {
+      "id": "house-119-1-321",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 321,
+      "date": "2025-12-10",
+      "question": "On Motion to Discharge",
+      "result": "Passed",
+      "bill_id": "hres432-119",
+      "totals": {
+        "yea": 222,
+        "nay": 200,
+        "present": 0,
+        "not_voting": 11
+      },
+      "party_split": {
+        "yea": {
+          "D": 209,
+          "R": 13
+        },
+        "nay": {
+          "R": 200
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/house-1-321.json"
+    },
+    {
+      "id": "house-119-1-320",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 320,
+      "date": "2025-12-10",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "s1071-119",
+      "totals": {
+        "yea": 312,
+        "nay": 112,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 115,
+          "R": 197
+        },
+        "nay": {
+          "D": 94,
+          "R": 18
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-320.json"
+    },
+    {
+      "id": "house-119-1-319",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 319,
+      "date": "2025-12-10",
+      "question": "On Motion to Commit",
+      "result": "Failed",
+      "bill_id": "s1071-119",
+      "totals": {
+        "yea": 209,
+        "nay": 216,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "D": 209
+        },
+        "nay": {
+          "R": 216
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-319.json"
+    },
+    {
+      "id": "house-119-1-318",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 318,
+      "date": "2025-12-10",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres936-119",
+      "totals": {
+        "yea": 215,
+        "nay": 211,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "R": 215
+        },
+        "nay": {
+          "D": 210,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-318.json"
+    },
+    {
+      "id": "house-119-1-317",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 317,
+      "date": "2025-12-10",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres936-119",
+      "totals": {
+        "yea": 216,
+        "nay": 210,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "R": 216
+        },
+        "nay": {
+          "D": 210
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-317.json"
     },
     {
       "id": "senate-119-1-640",
@@ -6937,6 +9035,63 @@
       "path": "votes/congress119/senate-1-636.json"
     },
     {
+      "id": "house-119-1-316",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 316,
+      "date": "2025-12-09",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr1676-119",
+      "totals": {
+        "yea": 400,
+        "nay": 0,
+        "present": 0,
+        "not_voting": 32
+      },
+      "party_split": {
+        "yea": {
+          "D": 198,
+          "R": 202
+        },
+        "not_voting": {
+          "D": 15,
+          "R": 17
+        }
+      },
+      "path": "votes/congress119/house-1-316.json"
+    },
+    {
+      "id": "house-119-1-315",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 315,
+      "date": "2025-12-09",
+      "question": "On Motion to Suspend the Rules and Pass",
+      "result": "Passed",
+      "bill_id": "s356-119",
+      "totals": {
+        "yea": 399,
+        "nay": 5,
+        "present": 0,
+        "not_voting": 28
+      },
+      "party_split": {
+        "yea": {
+          "D": 201,
+          "R": 198
+        },
+        "nay": {
+          "R": 5
+        },
+        "not_voting": {
+          "D": 12,
+          "R": 16
+        }
+      },
+      "path": "votes/congress119/house-1-315.json"
+    },
+    {
       "id": "senate-119-1-635",
       "chamber": "senate",
       "session": 1,
@@ -7058,6 +9213,66 @@
         }
       },
       "path": "votes/congress119/senate-1-632.json"
+    },
+    {
+      "id": "house-119-1-314",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 314,
+      "date": "2025-12-04",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr1049-119",
+      "totals": {
+        "yea": 247,
+        "nay": 166,
+        "present": 0,
+        "not_voting": 20
+      },
+      "party_split": {
+        "yea": {
+          "D": 33,
+          "R": 214
+        },
+        "nay": {
+          "D": 166
+        },
+        "not_voting": {
+          "D": 14,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-1-314.json"
+    },
+    {
+      "id": "house-119-1-313",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 313,
+      "date": "2025-12-04",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr1069-119",
+      "totals": {
+        "yea": 247,
+        "nay": 164,
+        "present": 0,
+        "not_voting": 22
+      },
+      "party_split": {
+        "yea": {
+          "D": 33,
+          "R": 214
+        },
+        "nay": {
+          "D": 164
+        },
+        "not_voting": {
+          "D": 16,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-1-313.json"
     },
     {
       "id": "senate-119-1-631",
@@ -7185,6 +9400,96 @@
       "path": "votes/congress119/senate-1-628.json"
     },
     {
+      "id": "house-119-1-312",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 312,
+      "date": "2025-12-03",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr1005-119",
+      "totals": {
+        "yea": 242,
+        "nay": 176,
+        "present": 0,
+        "not_voting": 14
+      },
+      "party_split": {
+        "yea": {
+          "D": 30,
+          "R": 212
+        },
+        "nay": {
+          "D": 176
+        },
+        "not_voting": {
+          "D": 7,
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/house-1-312.json"
+    },
+    {
+      "id": "house-119-1-311",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 311,
+      "date": "2025-12-03",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr4305-119",
+      "totals": {
+        "yea": 269,
+        "nay": 146,
+        "present": 0,
+        "not_voting": 17
+      },
+      "party_split": {
+        "yea": {
+          "D": 59,
+          "R": 210
+        },
+        "nay": {
+          "D": 146
+        },
+        "not_voting": {
+          "D": 8,
+          "R": 9
+        }
+      },
+      "path": "votes/congress119/house-1-311.json"
+    },
+    {
+      "id": "house-119-1-310",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 310,
+      "date": "2025-12-03",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr2965-119",
+      "totals": {
+        "yea": 223,
+        "nay": 190,
+        "present": 0,
+        "not_voting": 19
+      },
+      "party_split": {
+        "yea": {
+          "D": 15,
+          "R": 208
+        },
+        "nay": {
+          "D": 190
+        },
+        "not_voting": {
+          "D": 8,
+          "R": 11
+        }
+      },
+      "path": "votes/congress119/house-1-310.json"
+    },
+    {
       "id": "senate-119-1-627",
       "chamber": "senate",
       "session": 1,
@@ -7276,6 +9581,65 @@
       "path": "votes/congress119/senate-1-625.json"
     },
     {
+      "id": "house-119-1-309",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 309,
+      "date": "2025-12-02",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres916-119",
+      "totals": {
+        "yea": 210,
+        "nay": 209,
+        "present": 0,
+        "not_voting": 13
+      },
+      "party_split": {
+        "yea": {
+          "R": 210
+        },
+        "nay": {
+          "D": 206,
+          "R": 3
+        },
+        "not_voting": {
+          "D": 7,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-1-309.json"
+    },
+    {
+      "id": "house-119-1-308",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 308,
+      "date": "2025-12-02",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres916-119",
+      "totals": {
+        "yea": 210,
+        "nay": 205,
+        "present": 0,
+        "not_voting": 17
+      },
+      "party_split": {
+        "yea": {
+          "R": 210
+        },
+        "nay": {
+          "D": 205
+        },
+        "not_voting": {
+          "D": 8,
+          "R": 9
+        }
+      },
+      "path": "votes/congress119/house-1-308.json"
+    },
+    {
       "id": "senate-119-1-624",
       "chamber": "senate",
       "session": 1,
@@ -7307,6 +9671,96 @@
       "path": "votes/congress119/senate-1-624.json"
     },
     {
+      "id": "house-119-1-307",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 307,
+      "date": "2025-12-01",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr4423-119",
+      "totals": {
+        "yea": 385,
+        "nay": 0,
+        "present": 0,
+        "not_voting": 46
+      },
+      "party_split": {
+        "yea": {
+          "D": 193,
+          "R": 192
+        },
+        "not_voting": {
+          "D": 20,
+          "R": 26
+        }
+      },
+      "path": "votes/congress119/house-1-307.json"
+    },
+    {
+      "id": "house-119-1-306",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 306,
+      "date": "2025-12-01",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr5348-119",
+      "totals": {
+        "yea": 386,
+        "nay": 0,
+        "present": 1,
+        "not_voting": 44
+      },
+      "party_split": {
+        "yea": {
+          "D": 191,
+          "R": 195
+        },
+        "present": {
+          "D": 1
+        },
+        "not_voting": {
+          "D": 21,
+          "R": 23
+        }
+      },
+      "path": "votes/congress119/house-1-306.json"
+    },
+    {
+      "id": "house-119-1-305",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 305,
+      "date": "2025-11-21",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hconres58-119",
+      "totals": {
+        "yea": 285,
+        "nay": 98,
+        "present": 2,
+        "not_voting": 47
+      },
+      "party_split": {
+        "yea": {
+          "D": 86,
+          "R": 199
+        },
+        "nay": {
+          "D": 98
+        },
+        "present": {
+          "D": 2
+        },
+        "not_voting": {
+          "D": 27,
+          "R": 20
+        }
+      },
+      "path": "votes/congress119/house-1-305.json"
+    },
+    {
       "id": "senate-119-1-623",
       "chamber": "senate",
       "session": 1,
@@ -7335,6 +9789,66 @@
         }
       },
       "path": "votes/congress119/senate-1-623.json"
+    },
+    {
+      "id": "house-119-1-304",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 304,
+      "date": "2025-11-20",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr1949-119",
+      "totals": {
+        "yea": 217,
+        "nay": 188,
+        "present": 0,
+        "not_voting": 28
+      },
+      "party_split": {
+        "yea": {
+          "D": 11,
+          "R": 206
+        },
+        "nay": {
+          "D": 188
+        },
+        "not_voting": {
+          "D": 15,
+          "R": 13
+        }
+      },
+      "path": "votes/congress119/house-1-304.json"
+    },
+    {
+      "id": "house-119-1-303",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 303,
+      "date": "2025-11-20",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr3109-119",
+      "totals": {
+        "yea": 230,
+        "nay": 176,
+        "present": 0,
+        "not_voting": 27
+      },
+      "party_split": {
+        "yea": {
+          "D": 25,
+          "R": 205
+        },
+        "nay": {
+          "D": 176
+        },
+        "not_voting": {
+          "D": 13,
+          "R": 14
+        }
+      },
+      "path": "votes/congress119/house-1-303.json"
     },
     {
       "id": "senate-119-1-622",
@@ -7429,6 +9943,158 @@
       "path": "votes/congress119/senate-1-620.json"
     },
     {
+      "id": "house-119-1-302",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 302,
+      "date": "2025-11-19",
+      "question": "On Motion to Refer",
+      "result": "Passed",
+      "bill_id": "hres893-119",
+      "totals": {
+        "yea": 310,
+        "nay": 103,
+        "present": 12,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "D": 106,
+          "R": 204
+        },
+        "nay": {
+          "D": 95,
+          "R": 8
+        },
+        "present": {
+          "D": 8,
+          "R": 4
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-302.json"
+    },
+    {
+      "id": "house-119-1-301",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 301,
+      "date": "2025-11-19",
+      "question": "On Motion to Suspend the Rules and Pass",
+      "result": "Passed",
+      "bill_id": "hr6019-119",
+      "totals": {
+        "yea": 426,
+        "nay": 0,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 210,
+          "R": 216
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-301.json"
+    },
+    {
+      "id": "house-119-1-300",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 300,
+      "date": "2025-11-19",
+      "question": "On Motion to Suspend the Rules and Pass",
+      "result": "Passed",
+      "bill_id": "hr4058-119",
+      "totals": {
+        "yea": 380,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "D": 210,
+          "R": 170
+        },
+        "nay": {
+          "R": 45
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-300.json"
+    },
+    {
+      "id": "house-119-1-299",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 299,
+      "date": "2025-11-19",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr5107-119",
+      "totals": {
+        "yea": 233,
+        "nay": 190,
+        "present": 0,
+        "not_voting": 10
+      },
+      "party_split": {
+        "yea": {
+          "D": 20,
+          "R": 213
+        },
+        "nay": {
+          "D": 190
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-1-299.json"
+    },
+    {
+      "id": "house-119-1-298",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 298,
+      "date": "2025-11-19",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr5214-119",
+      "totals": {
+        "yea": 237,
+        "nay": 179,
+        "present": 0,
+        "not_voting": 17
+      },
+      "party_split": {
+        "yea": {
+          "D": 28,
+          "R": 209
+        },
+        "nay": {
+          "D": 179
+        },
+        "not_voting": {
+          "D": 7,
+          "R": 10
+        }
+      },
+      "path": "votes/congress119/house-1-298.json"
+    },
+    {
       "id": "senate-119-1-619",
       "chamber": "senate",
       "session": 1,
@@ -7459,6 +10125,463 @@
         }
       },
       "path": "votes/congress119/senate-1-619.json"
+    },
+    {
+      "id": "house-119-1-297",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 297,
+      "date": "2025-11-18",
+      "question": "On Agreeing to the Resolution",
+      "result": "Failed",
+      "bill_id": "hres888-119",
+      "totals": {
+        "yea": 209,
+        "nay": 214,
+        "present": 3,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "R": 209
+        },
+        "nay": {
+          "D": 211,
+          "R": 3
+        },
+        "present": {
+          "R": 3
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-297.json"
+    },
+    {
+      "id": "house-119-1-296",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 296,
+      "date": "2025-11-18",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "sjres80-119",
+      "totals": {
+        "yea": 216,
+        "nay": 209,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "D": 3,
+          "R": 213
+        },
+        "nay": {
+          "D": 208,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-296.json"
+    },
+    {
+      "id": "house-119-1-295",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 295,
+      "date": "2025-11-18",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hjres131-119",
+      "totals": {
+        "yea": 217,
+        "nay": 209,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 3,
+          "R": 214
+        },
+        "nay": {
+          "D": 208,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-295.json"
+    },
+    {
+      "id": "house-119-1-294",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 294,
+      "date": "2025-11-18",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hjres130-119",
+      "totals": {
+        "yea": 214,
+        "nay": 212,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "R": 214
+        },
+        "nay": {
+          "D": 211,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-294.json"
+    },
+    {
+      "id": "house-119-1-293",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 293,
+      "date": "2025-11-18",
+      "question": "On Motion to Refer",
+      "result": "Failed",
+      "bill_id": "hres888-119",
+      "totals": {
+        "yea": 213,
+        "nay": 214,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "D": 211,
+          "R": 2
+        },
+        "nay": {
+          "R": 214
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-293.json"
+    },
+    {
+      "id": "house-119-1-292",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 292,
+      "date": "2025-11-18",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres878-119",
+      "totals": {
+        "yea": 236,
+        "nay": 183,
+        "present": 4,
+        "not_voting": 10
+      },
+      "party_split": {
+        "yea": {
+          "D": 23,
+          "R": 213
+        },
+        "nay": {
+          "D": 183
+        },
+        "present": {
+          "D": 3,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-292.json"
+    },
+    {
+      "id": "house-119-1-291",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 291,
+      "date": "2025-11-18",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres879-119",
+      "totals": {
+        "yea": 217,
+        "nay": 210,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "D": 1,
+          "R": 216
+        },
+        "nay": {
+          "D": 210
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-291.json"
+    },
+    {
+      "id": "house-119-1-290",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 290,
+      "date": "2025-11-18",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres879-119",
+      "totals": {
+        "yea": 217,
+        "nay": 211,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "R": 217
+        },
+        "nay": {
+          "D": 211
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-290.json"
+    },
+    {
+      "id": "house-119-1-289",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 289,
+      "date": "2025-11-18",
+      "question": "On Motion to Suspend the Rules and Pass",
+      "result": "Passed",
+      "bill_id": "hr4405-119",
+      "totals": {
+        "yea": 427,
+        "nay": 1,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "D": 211,
+          "R": 216
+        },
+        "nay": {
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-289.json"
+    },
+    {
+      "id": "house-119-1-288",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 288,
+      "date": "2025-11-17",
+      "question": "On Motion to Table",
+      "result": "Failed",
+      "bill_id": "hres878-119",
+      "totals": {
+        "yea": 206,
+        "nay": 211,
+        "present": 0,
+        "not_voting": 16
+      },
+      "party_split": {
+        "yea": {
+          "D": 206
+        },
+        "nay": {
+          "D": 2,
+          "R": 209
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 10
+        }
+      },
+      "path": "votes/congress119/house-1-288.json"
+    },
+    {
+      "id": "house-119-1-287",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 287,
+      "date": "2025-11-17",
+      "question": "On Motion to Suspend the Rules and Pass",
+      "result": "Passed",
+      "bill_id": "hr2659-119",
+      "totals": {
+        "yea": 402,
+        "nay": 8,
+        "present": 0,
+        "not_voting": 23
+      },
+      "party_split": {
+        "yea": {
+          "D": 205,
+          "R": 197
+        },
+        "nay": {
+          "R": 8
+        },
+        "not_voting": {
+          "D": 9,
+          "R": 14
+        }
+      },
+      "path": "votes/congress119/house-1-287.json"
+    },
+    {
+      "id": "house-119-1-286",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 286,
+      "date": "2025-11-17",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr1608-119",
+      "totals": {
+        "yea": 400,
+        "nay": 15,
+        "present": 0,
+        "not_voting": 18
+      },
+      "party_split": {
+        "yea": {
+          "D": 207,
+          "R": 193
+        },
+        "nay": {
+          "R": 15
+        },
+        "not_voting": {
+          "D": 7,
+          "R": 11
+        }
+      },
+      "path": "votes/congress119/house-1-286.json"
+    },
+    {
+      "id": "house-119-1-285",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 285,
+      "date": "2025-11-12",
+      "question": "On Motion to Concur in the Senate Amendment",
+      "result": "Passed",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 222,
+        "nay": 209,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 6,
+          "R": 216
+        },
+        "nay": {
+          "D": 207,
+          "R": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/house-1-285.json"
+    },
+    {
+      "id": "house-119-1-284",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 284,
+      "date": "2025-11-12",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres873-119",
+      "totals": {
+        "yea": 213,
+        "nay": 209,
+        "present": 0,
+        "not_voting": 11
+      },
+      "party_split": {
+        "yea": {
+          "R": 213
+        },
+        "nay": {
+          "D": 209
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-1-284.json"
+    },
+    {
+      "id": "house-119-1-283",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 283,
+      "date": "2025-11-12",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres873-119",
+      "totals": {
+        "yea": 216,
+        "nay": 213,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "R": 216
+        },
+        "nay": {
+          "D": 213
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-283.json"
     },
     {
       "id": "senate-119-1-618",
@@ -10235,6 +13358,98 @@
       "path": "votes/congress119/senate-1-527.json"
     },
     {
+      "id": "house-119-1-282",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 282,
+      "date": "2025-09-19",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres719-119",
+      "totals": {
+        "yea": 310,
+        "nay": 58,
+        "present": 38,
+        "not_voting": 26
+      },
+      "party_split": {
+        "yea": {
+          "D": 95,
+          "R": 215
+        },
+        "nay": {
+          "D": 58
+        },
+        "present": {
+          "D": 38
+        },
+        "not_voting": {
+          "D": 22,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-282.json"
+    },
+    {
+      "id": "house-119-1-281",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 281,
+      "date": "2025-09-19",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 217,
+        "nay": 212,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 1,
+          "R": 216
+        },
+        "nay": {
+          "D": 210,
+          "R": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/house-1-281.json"
+    },
+    {
+      "id": "house-119-1-280",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 280,
+      "date": "2025-09-19",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr5371-119",
+      "totals": {
+        "yea": 210,
+        "nay": 218,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 210
+        },
+        "nay": {
+          "R": 218
+        },
+        "not_voting": {
+          "D": 3
+        }
+      },
+      "path": "votes/congress119/house-1-280.json"
+    },
+    {
       "id": "senate-119-1-526",
       "chamber": "senate",
       "session": 1,
@@ -10262,6 +13477,98 @@
         }
       },
       "path": "votes/congress119/senate-1-526.json"
+    },
+    {
+      "id": "house-119-1-279",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 279,
+      "date": "2025-09-18",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr1047-119",
+      "totals": {
+        "yea": 216,
+        "nay": 206,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 5,
+          "R": 211
+        },
+        "nay": {
+          "D": 205,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-1-279.json"
+    },
+    {
+      "id": "house-119-1-278",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 278,
+      "date": "2025-09-18",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr3015-119",
+      "totals": {
+        "yea": 217,
+        "nay": 209,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "D": 4,
+          "R": 213
+        },
+        "nay": {
+          "D": 206,
+          "R": 3
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-278.json"
+    },
+    {
+      "id": "house-119-1-277",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 277,
+      "date": "2025-09-18",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr3062-119",
+      "totals": {
+        "yea": 224,
+        "nay": 203,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "D": 7,
+          "R": 217
+        },
+        "nay": {
+          "D": 203
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-277.json"
     },
     {
       "id": "senate-119-1-525",
@@ -10381,6 +13688,156 @@
       "path": "votes/congress119/senate-1-522.json"
     },
     {
+      "id": "house-119-1-276",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 276,
+      "date": "2025-09-17",
+      "question": "On Motion to Table",
+      "result": "Passed",
+      "bill_id": "hres713-119",
+      "totals": {
+        "yea": 214,
+        "nay": 213,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "D": 210,
+          "R": 4
+        },
+        "nay": {
+          "R": 213
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-276.json"
+    },
+    {
+      "id": "house-119-1-275",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 275,
+      "date": "2025-09-17",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr5143-119",
+      "totals": {
+        "yea": 245,
+        "nay": 182,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "D": 29,
+          "R": 216
+        },
+        "nay": {
+          "D": 182
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-275.json"
+    },
+    {
+      "id": "house-119-1-274",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 274,
+      "date": "2025-09-17",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr5125-119",
+      "totals": {
+        "yea": 218,
+        "nay": 211,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 218
+        },
+        "nay": {
+          "D": 211
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/house-1-274.json"
+    },
+    {
+      "id": "house-119-1-273",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 273,
+      "date": "2025-09-17",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres722-119",
+      "totals": {
+        "yea": 216,
+        "nay": 210,
+        "present": 1,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "R": 216
+        },
+        "nay": {
+          "D": 210
+        },
+        "present": {
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-273.json"
+    },
+    {
+      "id": "house-119-1-272",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 272,
+      "date": "2025-09-17",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres722-119",
+      "totals": {
+        "yea": 213,
+        "nay": 207,
+        "present": 0,
+        "not_voting": 12
+      },
+      "party_split": {
+        "yea": {
+          "R": 213
+        },
+        "nay": {
+          "D": 207
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-1-272.json"
+    },
+    {
       "id": "senate-119-1-521",
       "chamber": "senate",
       "session": 1,
@@ -10438,6 +13895,154 @@
         }
       },
       "path": "votes/congress119/senate-1-520.json"
+    },
+    {
+      "id": "house-119-1-271",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 271,
+      "date": "2025-09-16",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr5140-119",
+      "totals": {
+        "yea": 225,
+        "nay": 203,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 8,
+          "R": 217
+        },
+        "nay": {
+          "D": 202,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/house-1-271.json"
+    },
+    {
+      "id": "house-119-1-270",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 270,
+      "date": "2025-09-16",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr4922-119",
+      "totals": {
+        "yea": 240,
+        "nay": 179,
+        "present": 0,
+        "not_voting": 13
+      },
+      "party_split": {
+        "yea": {
+          "D": 31,
+          "R": 209
+        },
+        "nay": {
+          "D": 178,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 9
+        }
+      },
+      "path": "votes/congress119/house-1-270.json"
+    },
+    {
+      "id": "house-119-1-269",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 269,
+      "date": "2025-09-16",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr2721-119",
+      "totals": {
+        "yea": 413,
+        "nay": 0,
+        "present": 0,
+        "not_voting": 19
+      },
+      "party_split": {
+        "yea": {
+          "D": 204,
+          "R": 209
+        },
+        "not_voting": {
+          "D": 9,
+          "R": 10
+        }
+      },
+      "path": "votes/congress119/house-1-269.json"
+    },
+    {
+      "id": "house-119-1-268",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 268,
+      "date": "2025-09-16",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres707-119",
+      "totals": {
+        "yea": 213,
+        "nay": 211,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "R": 213
+        },
+        "nay": {
+          "D": 208,
+          "R": 3
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-268.json"
+    },
+    {
+      "id": "house-119-1-267",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 267,
+      "date": "2025-09-16",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres707-119",
+      "totals": {
+        "yea": 213,
+        "nay": 207,
+        "present": 0,
+        "not_voting": 11
+      },
+      "party_split": {
+        "yea": {
+          "R": 213
+        },
+        "nay": {
+          "D": 207
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-267.json"
     },
     {
       "id": "senate-119-1-519",
@@ -10532,6 +14137,66 @@
         }
       },
       "path": "votes/congress119/senate-1-517.json"
+    },
+    {
+      "id": "house-119-1-266",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 266,
+      "date": "2025-09-15",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr3400-119",
+      "totals": {
+        "yea": 371,
+        "nay": 21,
+        "present": 0,
+        "not_voting": 40
+      },
+      "party_split": {
+        "yea": {
+          "D": 195,
+          "R": 176
+        },
+        "nay": {
+          "R": 21
+        },
+        "not_voting": {
+          "D": 18,
+          "R": 22
+        }
+      },
+      "path": "votes/congress119/house-1-266.json"
+    },
+    {
+      "id": "house-119-1-265",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 265,
+      "date": "2025-09-15",
+      "question": "On Motion to Table the Motion to Discharge Committee",
+      "result": "Passed",
+      "bill_id": "hjres117-119",
+      "totals": {
+        "yea": 200,
+        "nay": 198,
+        "present": 0,
+        "not_voting": 34
+      },
+      "party_split": {
+        "yea": {
+          "R": 200
+        },
+        "nay": {
+          "D": 196,
+          "R": 2
+        },
+        "not_voting": {
+          "D": 17,
+          "R": 17
+        }
+      },
+      "path": "votes/congress119/house-1-265.json"
     },
     {
       "id": "senate-119-1-516",
@@ -10652,6 +14317,66 @@
       "path": "votes/congress119/senate-1-513.json"
     },
     {
+      "id": "house-119-1-264",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 264,
+      "date": "2025-09-11",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr3486-119",
+      "totals": {
+        "yea": 226,
+        "nay": 197,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 11,
+          "R": 215
+        },
+        "nay": {
+          "D": 197
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-264.json"
+    },
+    {
+      "id": "house-119-1-263",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 263,
+      "date": "2025-09-11",
+      "question": "On Motion to Instruct Conferees",
+      "result": "Failed",
+      "bill_id": "hr3944-119",
+      "totals": {
+        "yea": 211,
+        "nay": 213,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "D": 209,
+          "R": 2
+        },
+        "nay": {
+          "R": 213
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-263.json"
+    },
+    {
       "id": "senate-119-1-512",
       "chamber": "senate",
       "session": 1,
@@ -10677,6 +14402,594 @@
         }
       },
       "path": "votes/congress119/senate-1-512.json"
+    },
+    {
+      "id": "house-119-1-262",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 262,
+      "date": "2025-09-10",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr3838-119",
+      "totals": {
+        "yea": 231,
+        "nay": 196,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "D": 17,
+          "R": 214
+        },
+        "nay": {
+          "D": 192,
+          "R": 4
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/house-1-262.json"
+    },
+    {
+      "id": "house-119-1-261",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 261,
+      "date": "2025-09-10",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr3838-119",
+      "totals": {
+        "yea": 208,
+        "nay": 219,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "D": 208
+        },
+        "nay": {
+          "D": 1,
+          "R": 218
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/house-1-261.json"
+    },
+    {
+      "id": "house-119-1-260",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 260,
+      "date": "2025-09-10",
+      "question": "On Agreeing to the Amendment",
+      "result": "Agreed to",
+      "bill_id": "hr3838-119",
+      "totals": {
+        "yea": 430,
+        "nay": 3,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 210,
+          "R": 220
+        },
+        "nay": {
+          "D": 3
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/house-1-260.json"
+    },
+    {
+      "id": "house-119-1-259",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 259,
+      "date": "2025-09-10",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr3838-119",
+      "totals": {
+        "yea": 200,
+        "nay": 228,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "R": 198
+        },
+        "nay": {
+          "D": 210,
+          "R": 18
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-259.json"
+    },
+    {
+      "id": "house-119-1-258",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 258,
+      "date": "2025-09-10",
+      "question": "On Agreeing to the Amendment",
+      "result": "Agreed to",
+      "bill_id": "hr3838-119",
+      "totals": {
+        "yea": 219,
+        "nay": 211,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "R": 217
+        },
+        "nay": {
+          "D": 210,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-258.json"
+    },
+    {
+      "id": "house-119-1-257",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 257,
+      "date": "2025-09-10",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr3838-119",
+      "totals": {
+        "yea": 9,
+        "nay": 422,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "R": 9
+        },
+        "nay": {
+          "D": 213,
+          "R": 209
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-257.json"
+    },
+    {
+      "id": "house-119-1-256",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 256,
+      "date": "2025-09-10",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr3838-119",
+      "totals": {
+        "yea": 60,
+        "nay": 370,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "R": 60
+        },
+        "nay": {
+          "D": 211,
+          "R": 159
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-256.json"
+    },
+    {
+      "id": "house-119-1-255",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 255,
+      "date": "2025-09-10",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr3838-119",
+      "totals": {
+        "yea": 60,
+        "nay": 372,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "R": 60
+        },
+        "nay": {
+          "D": 213,
+          "R": 159
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-255.json"
+    },
+    {
+      "id": "house-119-1-254",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 254,
+      "date": "2025-09-10",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr3838-119",
+      "totals": {
+        "yea": 194,
+        "nay": 236,
+        "present": 1,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "D": 5,
+          "R": 189
+        },
+        "nay": {
+          "D": 208,
+          "R": 28
+        },
+        "present": {
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-254.json"
+    },
+    {
+      "id": "house-119-1-253",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 253,
+      "date": "2025-09-10",
+      "question": "On Agreeing to the Amendment",
+      "result": "Agreed to",
+      "bill_id": "hr3838-119",
+      "totals": {
+        "yea": 222,
+        "nay": 210,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "D": 5,
+          "R": 217
+        },
+        "nay": {
+          "D": 208,
+          "R": 2
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-253.json"
+    },
+    {
+      "id": "house-119-1-252",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 252,
+      "date": "2025-09-10",
+      "question": "On Agreeing to the Amendment",
+      "result": "Agreed to",
+      "bill_id": "hr3838-119",
+      "totals": {
+        "yea": 228,
+        "nay": 205,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 9,
+          "R": 219
+        },
+        "nay": {
+          "D": 204,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/house-1-252.json"
+    },
+    {
+      "id": "house-119-1-251",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 251,
+      "date": "2025-09-10",
+      "question": "On Agreeing to the Amendment",
+      "result": "Agreed to",
+      "bill_id": "hr3838-119",
+      "totals": {
+        "yea": 224,
+        "nay": 208,
+        "present": 1,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 6,
+          "R": 218
+        },
+        "nay": {
+          "D": 206,
+          "R": 2
+        },
+        "present": {
+          "D": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/house-1-251.json"
+    },
+    {
+      "id": "house-119-1-250",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 250,
+      "date": "2025-09-10",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr3838-119",
+      "totals": {
+        "yea": 209,
+        "nay": 224,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 5,
+          "R": 204
+        },
+        "nay": {
+          "D": 208,
+          "R": 16
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/house-1-250.json"
+    },
+    {
+      "id": "house-119-1-249",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 249,
+      "date": "2025-09-10",
+      "question": "On Agreeing to the Amendment",
+      "result": "Agreed to",
+      "bill_id": "hr3838-119",
+      "totals": {
+        "yea": 219,
+        "nay": 209,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 3,
+          "R": 216
+        },
+        "nay": {
+          "D": 208,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-249.json"
+    },
+    {
+      "id": "house-119-1-248",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 248,
+      "date": "2025-09-10",
+      "question": "On Agreeing to the Amendment",
+      "result": "Agreed to",
+      "bill_id": "hr3838-119",
+      "totals": {
+        "yea": 221,
+        "nay": 210,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "D": 4,
+          "R": 217
+        },
+        "nay": {
+          "D": 209,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-248.json"
+    },
+    {
+      "id": "house-119-1-247",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 247,
+      "date": "2025-09-10",
+      "question": "On Agreeing to the Amendment",
+      "result": "Agreed to",
+      "bill_id": "hr3838-119",
+      "totals": {
+        "yea": 227,
+        "nay": 201,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 10,
+          "R": 217
+        },
+        "nay": {
+          "D": 201
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-247.json"
+    },
+    {
+      "id": "house-119-1-246",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 246,
+      "date": "2025-09-10",
+      "question": "On Agreeing to the Amendment",
+      "result": "Agreed to",
+      "bill_id": "hr3838-119",
+      "totals": {
+        "yea": 221,
+        "nay": 207,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 6,
+          "R": 215
+        },
+        "nay": {
+          "D": 205,
+          "R": 2
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-246.json"
+    },
+    {
+      "id": "house-119-1-245",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 245,
+      "date": "2025-09-10",
+      "question": "On Agreeing to the Amendment",
+      "result": "Agreed to",
+      "bill_id": "hr3838-119",
+      "totals": {
+        "yea": 221,
+        "nay": 210,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "D": 4,
+          "R": 217
+        },
+        "nay": {
+          "D": 209,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-245.json"
+    },
+    {
+      "id": "house-119-1-244",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 244,
+      "date": "2025-09-10",
+      "question": "On Agreeing to the Amendment",
+      "result": "Agreed to",
+      "bill_id": "hr3838-119",
+      "totals": {
+        "yea": 261,
+        "nay": 167,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 212,
+          "R": 49
+        },
+        "nay": {
+          "R": 167
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-1-244.json"
     },
     {
       "id": "senate-119-1-511",
@@ -10890,6 +15203,65 @@
       "path": "votes/congress119/senate-1-505.json"
     },
     {
+      "id": "house-119-1-243",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 243,
+      "date": "2025-09-09",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres682-119",
+      "totals": {
+        "yea": 210,
+        "nay": 207,
+        "present": 0,
+        "not_voting": 14
+      },
+      "party_split": {
+        "yea": {
+          "R": 210
+        },
+        "nay": {
+          "D": 206,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 8
+        }
+      },
+      "path": "votes/congress119/house-1-243.json"
+    },
+    {
+      "id": "house-119-1-242",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 242,
+      "date": "2025-09-09",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres682-119",
+      "totals": {
+        "yea": 213,
+        "nay": 207,
+        "present": 0,
+        "not_voting": 10
+      },
+      "party_split": {
+        "yea": {
+          "R": 213
+        },
+        "nay": {
+          "D": 207
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-242.json"
+    },
+    {
       "id": "senate-119-1-504",
       "chamber": "senate",
       "session": 1,
@@ -10918,6 +15290,63 @@
         }
       },
       "path": "votes/congress119/senate-1-504.json"
+    },
+    {
+      "id": "house-119-1-241",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 241,
+      "date": "2025-09-08",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr3425-119",
+      "totals": {
+        "yea": 402,
+        "nay": 0,
+        "present": 0,
+        "not_voting": 28
+      },
+      "party_split": {
+        "yea": {
+          "D": 196,
+          "R": 206
+        },
+        "not_voting": {
+          "D": 16,
+          "R": 12
+        }
+      },
+      "path": "votes/congress119/house-1-241.json"
+    },
+    {
+      "id": "house-119-1-240",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 240,
+      "date": "2025-09-08",
+      "question": "On Motion to Suspend the Rules and Pass",
+      "result": "Passed",
+      "bill_id": "hr3424-119",
+      "totals": {
+        "yea": 397,
+        "nay": 1,
+        "present": 0,
+        "not_voting": 32
+      },
+      "party_split": {
+        "yea": {
+          "D": 195,
+          "R": 202
+        },
+        "nay": {
+          "D": 1
+        },
+        "not_voting": {
+          "D": 16,
+          "R": 16
+        }
+      },
+      "path": "votes/congress119/house-1-240.json"
     },
     {
       "id": "senate-119-1-503",
@@ -11011,6 +15440,579 @@
       "path": "votes/congress119/senate-1-501.json"
     },
     {
+      "id": "house-119-1-239",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 239,
+      "date": "2025-09-04",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr4553-119",
+      "totals": {
+        "yea": 214,
+        "nay": 213,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "R": 214
+        },
+        "nay": {
+          "D": 209,
+          "R": 4
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/house-1-239.json"
+    },
+    {
+      "id": "house-119-1-238",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 238,
+      "date": "2025-09-04",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr4553-119",
+      "totals": {
+        "yea": 209,
+        "nay": 218,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 209
+        },
+        "nay": {
+          "R": 218
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/house-1-238.json"
+    },
+    {
+      "id": "house-119-1-237",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 237,
+      "date": "2025-09-04",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4553-119",
+      "totals": {
+        "yea": 76,
+        "nay": 351,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "R": 76
+        },
+        "nay": {
+          "D": 210,
+          "R": 141
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-237.json"
+    },
+    {
+      "id": "house-119-1-236",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 236,
+      "date": "2025-09-04",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4553-119",
+      "totals": {
+        "yea": 127,
+        "nay": 297,
+        "present": 0,
+        "not_voting": 12
+      },
+      "party_split": {
+        "yea": {
+          "R": 127
+        },
+        "nay": {
+          "D": 209,
+          "R": 88
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-1-236.json"
+    },
+    {
+      "id": "house-119-1-235",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 235,
+      "date": "2025-09-04",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4553-119",
+      "totals": {
+        "yea": 120,
+        "nay": 302,
+        "present": 0,
+        "not_voting": 14
+      },
+      "party_split": {
+        "yea": {
+          "R": 120
+        },
+        "nay": {
+          "D": 207,
+          "R": 95
+        },
+        "not_voting": {
+          "D": 8,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-1-235.json"
+    },
+    {
+      "id": "house-119-1-234",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 234,
+      "date": "2025-09-03",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4553-119",
+      "totals": {
+        "yea": 120,
+        "nay": 307,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "R": 120
+        },
+        "nay": {
+          "D": 211,
+          "R": 96
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-234.json"
+    },
+    {
+      "id": "house-119-1-233",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 233,
+      "date": "2025-09-03",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4553-119",
+      "totals": {
+        "yea": 127,
+        "nay": 299,
+        "present": 0,
+        "not_voting": 10
+      },
+      "party_split": {
+        "yea": {
+          "R": 127
+        },
+        "nay": {
+          "D": 211,
+          "R": 88
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-1-233.json"
+    },
+    {
+      "id": "house-119-1-232",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 232,
+      "date": "2025-09-03",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4553-119",
+      "totals": {
+        "yea": 124,
+        "nay": 303,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "R": 124
+        },
+        "nay": {
+          "D": 211,
+          "R": 92
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-232.json"
+    },
+    {
+      "id": "house-119-1-231",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 231,
+      "date": "2025-09-03",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4553-119",
+      "totals": {
+        "yea": 120,
+        "nay": 306,
+        "present": 0,
+        "not_voting": 10
+      },
+      "party_split": {
+        "yea": {
+          "R": 120
+        },
+        "nay": {
+          "D": 210,
+          "R": 96
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-231.json"
+    },
+    {
+      "id": "house-119-1-230",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 230,
+      "date": "2025-09-03",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4553-119",
+      "totals": {
+        "yea": 140,
+        "nay": 286,
+        "present": 0,
+        "not_voting": 10
+      },
+      "party_split": {
+        "yea": {
+          "R": 140
+        },
+        "nay": {
+          "D": 208,
+          "R": 78
+        },
+        "not_voting": {
+          "D": 7,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-230.json"
+    },
+    {
+      "id": "house-119-1-229",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 229,
+      "date": "2025-09-03",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4553-119",
+      "totals": {
+        "yea": 77,
+        "nay": 347,
+        "present": 0,
+        "not_voting": 12
+      },
+      "party_split": {
+        "yea": {
+          "R": 77
+        },
+        "nay": {
+          "D": 209,
+          "R": 138
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-1-229.json"
+    },
+    {
+      "id": "house-119-1-228",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 228,
+      "date": "2025-09-03",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4553-119",
+      "totals": {
+        "yea": 143,
+        "nay": 285,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "R": 143
+        },
+        "nay": {
+          "D": 212,
+          "R": 73
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-228.json"
+    },
+    {
+      "id": "house-119-1-227",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 227,
+      "date": "2025-09-03",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4553-119",
+      "totals": {
+        "yea": 195,
+        "nay": 235,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "R": 195
+        },
+        "nay": {
+          "D": 213,
+          "R": 22
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-227.json"
+    },
+    {
+      "id": "house-119-1-226",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 226,
+      "date": "2025-09-03",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hjres105-119",
+      "totals": {
+        "yea": 215,
+        "nay": 211,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "R": 215
+        },
+        "nay": {
+          "D": 210,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-226.json"
+    },
+    {
+      "id": "house-119-1-225",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 225,
+      "date": "2025-09-03",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hjres106-119",
+      "totals": {
+        "yea": 215,
+        "nay": 210,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "R": 215
+        },
+        "nay": {
+          "D": 209,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-225.json"
+    },
+    {
+      "id": "house-119-1-224",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 224,
+      "date": "2025-09-03",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hjres104-119",
+      "totals": {
+        "yea": 211,
+        "nay": 208,
+        "present": 0,
+        "not_voting": 12
+      },
+      "party_split": {
+        "yea": {
+          "R": 211
+        },
+        "nay": {
+          "D": 207,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/house-1-224.json"
+    },
+    {
+      "id": "house-119-1-223",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 223,
+      "date": "2025-09-03",
+      "question": "On Motion to Table",
+      "result": "Passed",
+      "bill_id": "hres539-119",
+      "totals": {
+        "yea": 215,
+        "nay": 207,
+        "present": 2,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 210,
+          "R": 5
+        },
+        "nay": {
+          "R": 207
+        },
+        "present": {
+          "R": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-223.json"
+    },
+    {
+      "id": "house-119-1-222",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 222,
+      "date": "2025-09-03",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres672-119",
+      "totals": {
+        "yea": 212,
+        "nay": 208,
+        "present": 1,
+        "not_voting": 10
+      },
+      "party_split": {
+        "yea": {
+          "R": 212
+        },
+        "nay": {
+          "D": 208
+        },
+        "present": {
+          "R": 1
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-1-222.json"
+    },
+    {
+      "id": "house-119-1-221",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 221,
+      "date": "2025-09-03",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres672-119",
+      "totals": {
+        "yea": 212,
+        "nay": 209,
+        "present": 0,
+        "not_voting": 10
+      },
+      "party_split": {
+        "yea": {
+          "R": 212
+        },
+        "nay": {
+          "D": 209
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/house-1-221.json"
+    },
+    {
       "id": "senate-119-1-500",
       "chamber": "senate",
       "session": 1,
@@ -11041,6 +16043,66 @@
         }
       },
       "path": "votes/congress119/senate-1-500.json"
+    },
+    {
+      "id": "house-119-1-220",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 220,
+      "date": "2025-09-02",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr747-119",
+      "totals": {
+        "yea": 407,
+        "nay": 4,
+        "present": 0,
+        "not_voting": 19
+      },
+      "party_split": {
+        "yea": {
+          "D": 198,
+          "R": 209
+        },
+        "nay": {
+          "D": 4
+        },
+        "not_voting": {
+          "D": 10,
+          "R": 9
+        }
+      },
+      "path": "votes/congress119/house-1-220.json"
+    },
+    {
+      "id": "house-119-1-219",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 219,
+      "date": "2025-09-02",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr4216-119",
+      "totals": {
+        "yea": 395,
+        "nay": 20,
+        "present": 0,
+        "not_voting": 15
+      },
+      "party_split": {
+        "yea": {
+          "D": 184,
+          "R": 211
+        },
+        "nay": {
+          "D": 20
+        },
+        "not_voting": {
+          "D": 8,
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/house-1-219.json"
     },
     {
       "id": "senate-119-1-499",
@@ -13283,6 +18345,66 @@
       "path": "votes/congress119/senate-1-426.json"
     },
     {
+      "id": "house-119-1-218",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 218,
+      "date": "2025-07-23",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr4275-119",
+      "totals": {
+        "yea": 399,
+        "nay": 12,
+        "present": 0,
+        "not_voting": 19
+      },
+      "party_split": {
+        "yea": {
+          "D": 202,
+          "R": 197
+        },
+        "nay": {
+          "R": 12
+        },
+        "not_voting": {
+          "D": 10,
+          "R": 9
+        }
+      },
+      "path": "votes/congress119/house-1-218.json"
+    },
+    {
+      "id": "house-119-1-217",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 217,
+      "date": "2025-07-23",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr3357-119",
+      "totals": {
+        "yea": 381,
+        "nay": 31,
+        "present": 0,
+        "not_voting": 18
+      },
+      "party_split": {
+        "yea": {
+          "D": 205,
+          "R": 176
+        },
+        "nay": {
+          "R": 31
+        },
+        "not_voting": {
+          "D": 7,
+          "R": 11
+        }
+      },
+      "path": "votes/congress119/house-1-217.json"
+    },
+    {
       "id": "senate-119-1-425",
       "chamber": "senate",
       "session": 1,
@@ -13494,6 +18616,66 @@
       "path": "votes/congress119/senate-1-419.json"
     },
     {
+      "id": "house-119-1-216",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 216,
+      "date": "2025-07-22",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr1917-119",
+      "totals": {
+        "yea": 360,
+        "nay": 57,
+        "present": 0,
+        "not_voting": 13
+      },
+      "party_split": {
+        "yea": {
+          "D": 207,
+          "R": 153
+        },
+        "nay": {
+          "R": 57
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 8
+        }
+      },
+      "path": "votes/congress119/house-1-216.json"
+    },
+    {
+      "id": "house-119-1-215",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 215,
+      "date": "2025-07-22",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr3937-119",
+      "totals": {
+        "yea": 410,
+        "nay": 1,
+        "present": 0,
+        "not_voting": 19
+      },
+      "party_split": {
+        "yea": {
+          "D": 204,
+          "R": 206
+        },
+        "nay": {
+          "D": 1
+        },
+        "not_voting": {
+          "D": 7,
+          "R": 12
+        }
+      },
+      "path": "votes/congress119/house-1-215.json"
+    },
+    {
       "id": "senate-119-1-418",
       "chamber": "senate",
       "session": 1,
@@ -13522,6 +18704,367 @@
         }
       },
       "path": "votes/congress119/senate-1-418.json"
+    },
+    {
+      "id": "house-119-1-214",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 214,
+      "date": "2025-07-21",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr3351-119",
+      "totals": {
+        "yea": 387,
+        "nay": 12,
+        "present": 0,
+        "not_voting": 31
+      },
+      "party_split": {
+        "yea": {
+          "D": 197,
+          "R": 190
+        },
+        "nay": {
+          "R": 12
+        },
+        "not_voting": {
+          "D": 15,
+          "R": 16
+        }
+      },
+      "path": "votes/congress119/house-1-214.json"
+    },
+    {
+      "id": "house-119-1-213",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 213,
+      "date": "2025-07-21",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr3095-119",
+      "totals": {
+        "yea": 278,
+        "nay": 121,
+        "present": 0,
+        "not_voting": 31
+      },
+      "party_split": {
+        "yea": {
+          "D": 75,
+          "R": 203
+        },
+        "nay": {
+          "D": 121
+        },
+        "not_voting": {
+          "D": 16,
+          "R": 15
+        }
+      },
+      "path": "votes/congress119/house-1-213.json"
+    },
+    {
+      "id": "house-119-1-212",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 212,
+      "date": "2025-07-18",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr4016-119",
+      "totals": {
+        "yea": 221,
+        "nay": 209,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 5,
+          "R": 216
+        },
+        "nay": {
+          "D": 206,
+          "R": 3
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/house-1-212.json"
+    },
+    {
+      "id": "house-119-1-211",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 211,
+      "date": "2025-07-18",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr4016-119",
+      "totals": {
+        "yea": 211,
+        "nay": 219,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 211
+        },
+        "nay": {
+          "R": 219
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/house-1-211.json"
+    },
+    {
+      "id": "house-119-1-210",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 210,
+      "date": "2025-07-18",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4016-119",
+      "totals": {
+        "yea": 76,
+        "nay": 355,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "R": 76
+        },
+        "nay": {
+          "D": 212,
+          "R": 143
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-210.json"
+    },
+    {
+      "id": "house-119-1-209",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 209,
+      "date": "2025-07-18",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4016-119",
+      "totals": {
+        "yea": 76,
+        "nay": 353,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "R": 76
+        },
+        "nay": {
+          "D": 212,
+          "R": 141
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-209.json"
+    },
+    {
+      "id": "house-119-1-208",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 208,
+      "date": "2025-07-18",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4016-119",
+      "totals": {
+        "yea": 30,
+        "nay": 400,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "R": 30
+        },
+        "nay": {
+          "D": 212,
+          "R": 188
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-208.json"
+    },
+    {
+      "id": "house-119-1-207",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 207,
+      "date": "2025-07-18",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4016-119",
+      "totals": {
+        "yea": 6,
+        "nay": 422,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 4,
+          "R": 2
+        },
+        "nay": {
+          "D": 207,
+          "R": 215
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-207.json"
+    },
+    {
+      "id": "house-119-1-206",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 206,
+      "date": "2025-07-18",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4016-119",
+      "totals": {
+        "yea": 104,
+        "nay": 326,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "R": 104
+        },
+        "nay": {
+          "D": 212,
+          "R": 114
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-206.json"
+    },
+    {
+      "id": "house-119-1-205",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 205,
+      "date": "2025-07-18",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4016-119",
+      "totals": {
+        "yea": 6,
+        "nay": 421,
+        "present": 0,
+        "not_voting": 10
+      },
+      "party_split": {
+        "yea": {
+          "R": 6
+        },
+        "nay": {
+          "D": 212,
+          "R": 209
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/house-1-205.json"
+    },
+    {
+      "id": "house-119-1-204",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 204,
+      "date": "2025-07-18",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr4016-119",
+      "totals": {
+        "yea": 63,
+        "nay": 365,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "R": 63
+        },
+        "nay": {
+          "D": 212,
+          "R": 153
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-1-204.json"
+    },
+    {
+      "id": "house-119-1-203",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 203,
+      "date": "2025-07-18",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres590-119",
+      "totals": {
+        "yea": 216,
+        "nay": 213,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 216
+        },
+        "nay": {
+          "D": 211,
+          "R": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-203.json"
     },
     {
       "id": "senate-119-1-417",
@@ -13921,6 +19464,123 @@
       "path": "votes/congress119/senate-1-405.json"
     },
     {
+      "id": "house-119-1-202",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 202,
+      "date": "2025-07-17",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres590-119",
+      "totals": {
+        "yea": 218,
+        "nay": 211,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 218
+        },
+        "nay": {
+          "D": 211
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-202.json"
+    },
+    {
+      "id": "house-119-1-201",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 201,
+      "date": "2025-07-17",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr1919-119",
+      "totals": {
+        "yea": 219,
+        "nay": 210,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "R": 217
+        },
+        "nay": {
+          "D": 210
+        },
+        "not_voting": {
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-201.json"
+    },
+    {
+      "id": "house-119-1-200",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 200,
+      "date": "2025-07-17",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "s1582-119",
+      "totals": {
+        "yea": 308,
+        "nay": 122,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 102,
+          "R": 206
+        },
+        "nay": {
+          "D": 110,
+          "R": 12
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-200.json"
+    },
+    {
+      "id": "house-119-1-199",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 199,
+      "date": "2025-07-17",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr3633-119",
+      "totals": {
+        "yea": 294,
+        "nay": 134,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 78,
+          "R": 216
+        },
+        "nay": {
+          "D": 134
+        },
+        "not_voting": {
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-199.json"
+    },
+    {
       "id": "senate-119-1-404",
       "chamber": "senate",
       "session": 1,
@@ -14283,6 +19943,65 @@
       "path": "votes/congress119/senate-1-393.json"
     },
     {
+      "id": "house-119-1-198",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 198,
+      "date": "2025-07-16",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres580-119",
+      "totals": {
+        "yea": 217,
+        "nay": 212,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 217
+        },
+        "nay": {
+          "D": 211,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-198.json"
+    },
+    {
+      "id": "house-119-1-197",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 197,
+      "date": "2025-07-16",
+      "question": "On Motion to Reconsider",
+      "result": "Passed",
+      "bill_id": "hres580-119",
+      "totals": {
+        "yea": 215,
+        "nay": 211,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "R": 215
+        },
+        "nay": {
+          "D": 211
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-197.json"
+    },
+    {
       "id": "senate-119-1-392",
       "chamber": "senate",
       "session": 1,
@@ -14485,6 +20204,96 @@
       "path": "votes/congress119/senate-1-386.json"
     },
     {
+      "id": "house-119-1-196",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 196,
+      "date": "2025-07-15",
+      "question": "On Motion to Suspend the Rules and Pass",
+      "result": "Passed",
+      "bill_id": "hr1717-119",
+      "totals": {
+        "yea": 380,
+        "nay": 33,
+        "present": 0,
+        "not_voting": 19
+      },
+      "party_split": {
+        "yea": {
+          "D": 205,
+          "R": 175
+        },
+        "nay": {
+          "D": 1,
+          "R": 32
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 13
+        }
+      },
+      "path": "votes/congress119/house-1-196.json"
+    },
+    {
+      "id": "house-119-1-195",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 195,
+      "date": "2025-07-15",
+      "question": "On Agreeing to the Resolution",
+      "result": "Failed",
+      "bill_id": "hres580-119",
+      "totals": {
+        "yea": 196,
+        "nay": 223,
+        "present": 0,
+        "not_voting": 13
+      },
+      "party_split": {
+        "yea": {
+          "R": 196
+        },
+        "nay": {
+          "D": 210,
+          "R": 13
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 11
+        }
+      },
+      "path": "votes/congress119/house-1-195.json"
+    },
+    {
+      "id": "house-119-1-194",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 194,
+      "date": "2025-07-15",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres580-119",
+      "totals": {
+        "yea": 211,
+        "nay": 210,
+        "present": 0,
+        "not_voting": 11
+      },
+      "party_split": {
+        "yea": {
+          "R": 211
+        },
+        "nay": {
+          "D": 210
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 9
+        }
+      },
+      "path": "votes/congress119/house-1-194.json"
+    },
+    {
       "id": "senate-119-1-385",
       "chamber": "senate",
       "session": 1,
@@ -14544,6 +20353,94 @@
         }
       },
       "path": "votes/congress119/senate-1-384.json"
+    },
+    {
+      "id": "house-119-1-193",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 193,
+      "date": "2025-07-14",
+      "question": "On Motion to Suspend the Rules and Pass",
+      "result": "Passed",
+      "bill_id": "s1596-119",
+      "totals": {
+        "yea": 372,
+        "nay": 0,
+        "present": 0,
+        "not_voting": 59
+      },
+      "party_split": {
+        "yea": {
+          "D": 178,
+          "R": 194
+        },
+        "not_voting": {
+          "D": 34,
+          "R": 25
+        }
+      },
+      "path": "votes/congress119/house-1-193.json"
+    },
+    {
+      "id": "house-119-1-192",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 192,
+      "date": "2025-07-14",
+      "question": "On Motion to Suspend the Rules and Pass",
+      "result": "Passed",
+      "bill_id": "hr1770-119",
+      "totals": {
+        "yea": 336,
+        "nay": 36,
+        "present": 0,
+        "not_voting": 59
+      },
+      "party_split": {
+        "yea": {
+          "D": 175,
+          "R": 161
+        },
+        "nay": {
+          "D": 4,
+          "R": 32
+        },
+        "not_voting": {
+          "D": 33,
+          "R": 26
+        }
+      },
+      "path": "votes/congress119/house-1-192.json"
+    },
+    {
+      "id": "house-119-1-191",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 191,
+      "date": "2025-07-14",
+      "question": "On Motion to Suspend the Rules and Pass",
+      "result": "Passed",
+      "bill_id": "hr1709-119",
+      "totals": {
+        "yea": 360,
+        "nay": 10,
+        "present": 0,
+        "not_voting": 61
+      },
+      "party_split": {
+        "yea": {
+          "D": 177,
+          "R": 183
+        },
+        "nay": {
+          "R": 10
+        },
+        "not_voting": {
+          "D": 35,
+          "R": 26
+        }
+      },
+      "path": "votes/congress119/house-1-191.json"
     },
     {
       "id": "senate-119-1-383",
@@ -14880,6 +20777,140 @@
         }
       },
       "path": "votes/congress119/senate-1-373.json"
+    },
+    {
+      "id": "house-119-1-190",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 190,
+      "date": "2025-07-03",
+      "question": "On Motion to Concur in the Senate Amendment",
+      "result": "Passed",
+      "bill_id": "hr1-119",
+      "totals": {
+        "yea": 218,
+        "nay": 214,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "R": 218
+        },
+        "nay": {
+          "D": 212,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-190.json"
+    },
+    {
+      "id": "house-119-1-189",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 189,
+      "date": "2025-07-03",
+      "question": "On Agreeing to the Resolution, as Amended",
+      "result": "Passed",
+      "bill_id": "hres566-119",
+      "totals": {
+        "yea": 219,
+        "nay": 213,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "R": 219
+        },
+        "nay": {
+          "D": 212,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/house-1-189.json"
+    },
+    {
+      "id": "house-119-1-188",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 188,
+      "date": "2025-07-02",
+      "question": "On Agreeing to the Amendment",
+      "result": "Agreed to",
+      "bill_id": "hres566-119",
+      "totals": {
+        "yea": 220,
+        "nay": 212,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "R": 220
+        },
+        "nay": {
+          "D": 212
+        }
+      },
+      "path": "votes/congress119/house-1-188.json"
+    },
+    {
+      "id": "house-119-1-187",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 187,
+      "date": "2025-07-02",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres566-119",
+      "totals": {
+        "yea": 214,
+        "nay": 212,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "R": 214
+        },
+        "nay": {
+          "D": 212
+        },
+        "not_voting": {
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-1-187.json"
+    },
+    {
+      "id": "house-119-1-186",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 186,
+      "date": "2025-07-02",
+      "question": "On Consideration of the Resolution",
+      "result": "Passed",
+      "bill_id": "hres566-119",
+      "totals": {
+        "yea": 212,
+        "nay": 211,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "R": 212
+        },
+        "nay": {
+          "D": 211
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 8
+        }
+      },
+      "path": "votes/congress119/house-1-186.json"
     },
     {
       "id": "senate-119-1-372",
@@ -16092,6 +22123,36 @@
       "path": "votes/congress119/senate-1-328.json"
     },
     {
+      "id": "house-119-1-185",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 185,
+      "date": "2025-06-27",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres516-119",
+      "totals": {
+        "yea": 215,
+        "nay": 195,
+        "present": 0,
+        "not_voting": 22
+      },
+      "party_split": {
+        "yea": {
+          "D": 7,
+          "R": 208
+        },
+        "nay": {
+          "D": 195
+        },
+        "not_voting": {
+          "D": 10,
+          "R": 12
+        }
+      },
+      "path": "votes/congress119/house-1-185.json"
+    },
+    {
       "id": "senate-119-1-327",
       "chamber": "senate",
       "session": 1,
@@ -16119,6 +22180,66 @@
         }
       },
       "path": "votes/congress119/senate-1-327.json"
+    },
+    {
+      "id": "house-119-1-184",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 184,
+      "date": "2025-06-26",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr275-119",
+      "totals": {
+        "yea": 231,
+        "nay": 182,
+        "present": 0,
+        "not_voting": 18
+      },
+      "party_split": {
+        "yea": {
+          "D": 23,
+          "R": 208
+        },
+        "nay": {
+          "D": 182
+        },
+        "not_voting": {
+          "D": 7,
+          "R": 11
+        }
+      },
+      "path": "votes/congress119/house-1-184.json"
+    },
+    {
+      "id": "house-119-1-183",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 183,
+      "date": "2025-06-26",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr875-119",
+      "totals": {
+        "yea": 246,
+        "nay": 160,
+        "present": 0,
+        "not_voting": 25
+      },
+      "party_split": {
+        "yea": {
+          "D": 37,
+          "R": 209
+        },
+        "nay": {
+          "D": 160
+        },
+        "not_voting": {
+          "D": 15,
+          "R": 10
+        }
+      },
+      "path": "votes/congress119/house-1-183.json"
     },
     {
       "id": "senate-119-1-326",
@@ -16180,6 +22301,123 @@
         }
       },
       "path": "votes/congress119/senate-1-325.json"
+    },
+    {
+      "id": "house-119-1-182",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 182,
+      "date": "2025-06-25",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr3944-119",
+      "totals": {
+        "yea": 218,
+        "nay": 206,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "R": 216
+        },
+        "nay": {
+          "D": 206
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-182.json"
+    },
+    {
+      "id": "house-119-1-181",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 181,
+      "date": "2025-06-25",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr3944-119",
+      "totals": {
+        "yea": 208,
+        "nay": 216,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "D": 208
+        },
+        "nay": {
+          "R": 216
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-181.json"
+    },
+    {
+      "id": "house-119-1-180",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 180,
+      "date": "2025-06-25",
+      "question": "On Agreeing to the Amendment",
+      "result": "Agreed to",
+      "bill_id": "hr3944-119",
+      "totals": {
+        "yea": 219,
+        "nay": 206,
+        "present": 0,
+        "not_voting": 13
+      },
+      "party_split": {
+        "yea": {
+          "D": 7,
+          "R": 212
+        },
+        "nay": {
+          "D": 204,
+          "R": 2
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 9
+        }
+      },
+      "path": "votes/congress119/house-1-180.json"
+    },
+    {
+      "id": "house-119-1-179",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 179,
+      "date": "2025-06-25",
+      "question": "On Motion to Suspend the Rules and Agree, as Amended",
+      "result": "Passed",
+      "bill_id": "hres519-119",
+      "totals": {
+        "yea": 424,
+        "nay": 0,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "D": 207,
+          "R": 217
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-179.json"
     },
     {
       "id": "senate-119-1-324",
@@ -16246,6 +22484,124 @@
       "path": "votes/congress119/senate-1-323.json"
     },
     {
+      "id": "house-119-1-178",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 178,
+      "date": "2025-06-24",
+      "question": "On Motion to Adjourn",
+      "result": "Failed",
+      "bill_id": null,
+      "totals": {
+        "yea": 191,
+        "nay": 213,
+        "present": 0,
+        "not_voting": 27
+      },
+      "party_split": {
+        "yea": {
+          "D": 191
+        },
+        "nay": {
+          "D": 9,
+          "R": 204
+        },
+        "not_voting": {
+          "D": 12,
+          "R": 15
+        }
+      },
+      "path": "votes/congress119/house-1-178.json"
+    },
+    {
+      "id": "house-119-1-177",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 177,
+      "date": "2025-06-24",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres530-119",
+      "totals": {
+        "yea": 217,
+        "nay": 206,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "R": 217
+        },
+        "nay": {
+          "D": 206
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-177.json"
+    },
+    {
+      "id": "house-119-1-176",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 176,
+      "date": "2025-06-24",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres530-119",
+      "totals": {
+        "yea": 219,
+        "nay": 208,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "R": 219
+        },
+        "nay": {
+          "D": 208
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/house-1-176.json"
+    },
+    {
+      "id": "house-119-1-175",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 175,
+      "date": "2025-06-24",
+      "question": "On Motion to Table",
+      "result": "Passed",
+      "bill_id": "hres537-119",
+      "totals": {
+        "yea": 344,
+        "nay": 79,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 128,
+          "R": 216
+        },
+        "nay": {
+          "D": 79
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-175.json"
+    },
+    {
       "id": "senate-119-1-322",
       "chamber": "senate",
       "session": 1,
@@ -16276,6 +22632,97 @@
         }
       },
       "path": "votes/congress119/senate-1-322.json"
+    },
+    {
+      "id": "house-119-1-174",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 174,
+      "date": "2025-06-23",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr3422-119",
+      "totals": {
+        "yea": 321,
+        "nay": 87,
+        "present": 0,
+        "not_voting": 23
+      },
+      "party_split": {
+        "yea": {
+          "D": 199,
+          "R": 122
+        },
+        "nay": {
+          "R": 87
+        },
+        "not_voting": {
+          "D": 13,
+          "R": 10
+        }
+      },
+      "path": "votes/congress119/house-1-174.json"
+    },
+    {
+      "id": "house-119-1-173",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 173,
+      "date": "2025-06-23",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr3394-119",
+      "totals": {
+        "yea": 397,
+        "nay": 12,
+        "present": 0,
+        "not_voting": 23
+      },
+      "party_split": {
+        "yea": {
+          "D": 186,
+          "R": 211
+        },
+        "nay": {
+          "D": 12
+        },
+        "not_voting": {
+          "D": 14,
+          "R": 9
+        }
+      },
+      "path": "votes/congress119/house-1-173.json"
+    },
+    {
+      "id": "house-119-1-172",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 172,
+      "date": "2025-06-23",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr1998-119",
+      "totals": {
+        "yea": 392,
+        "nay": 14,
+        "present": 0,
+        "not_voting": 25
+      },
+      "party_split": {
+        "yea": {
+          "D": 190,
+          "R": 202
+        },
+        "nay": {
+          "D": 7,
+          "R": 7
+        },
+        "not_voting": {
+          "D": 15,
+          "R": 10
+        }
+      },
+      "path": "votes/congress119/house-1-172.json"
     },
     {
       "id": "senate-119-1-321",
@@ -16708,6 +23155,184 @@
       "path": "votes/congress119/senate-1-308.json"
     },
     {
+      "id": "house-119-1-171",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 171,
+      "date": "2025-06-12",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr2056-119",
+      "totals": {
+        "yea": 224,
+        "nay": 194,
+        "present": 0,
+        "not_voting": 14
+      },
+      "party_split": {
+        "yea": {
+          "D": 11,
+          "R": 213
+        },
+        "nay": {
+          "D": 194
+        },
+        "not_voting": {
+          "D": 7,
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/house-1-171.json"
+    },
+    {
+      "id": "house-119-1-170",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 170,
+      "date": "2025-06-12",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr2056-119",
+      "totals": {
+        "yea": 205,
+        "nay": 215,
+        "present": 0,
+        "not_voting": 12
+      },
+      "party_split": {
+        "yea": {
+          "D": 205
+        },
+        "nay": {
+          "R": 215
+        },
+        "not_voting": {
+          "D": 7,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-170.json"
+    },
+    {
+      "id": "house-119-1-169",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 169,
+      "date": "2025-06-12",
+      "question": "On Motion to Adjourn",
+      "result": "Failed",
+      "bill_id": null,
+      "totals": {
+        "yea": 206,
+        "nay": 218,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "D": 206
+        },
+        "nay": {
+          "R": 218
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-169.json"
+    },
+    {
+      "id": "house-119-1-168",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 168,
+      "date": "2025-06-12",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr4-119",
+      "totals": {
+        "yea": 214,
+        "nay": 212,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "R": 214
+        },
+        "nay": {
+          "D": 208,
+          "R": 4
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-168.json"
+    },
+    {
+      "id": "house-119-1-167",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 167,
+      "date": "2025-06-12",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr4-119",
+      "totals": {
+        "yea": 208,
+        "nay": 218,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "D": 208
+        },
+        "nay": {
+          "R": 218
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-167.json"
+    },
+    {
+      "id": "house-119-1-166",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 166,
+      "date": "2025-06-12",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "s331-119",
+      "totals": {
+        "yea": 321,
+        "nay": 104,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 104,
+          "R": 217
+        },
+        "nay": {
+          "D": 103,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-166.json"
+    },
+    {
       "id": "senate-119-1-307",
       "chamber": "senate",
       "session": 1,
@@ -16835,6 +23460,65 @@
         }
       },
       "path": "votes/congress119/senate-1-304.json"
+    },
+    {
+      "id": "house-119-1-165",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 165,
+      "date": "2025-06-11",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres499-119",
+      "totals": {
+        "yea": 213,
+        "nay": 207,
+        "present": 0,
+        "not_voting": 12
+      },
+      "party_split": {
+        "yea": {
+          "R": 213
+        },
+        "nay": {
+          "D": 206,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-1-165.json"
+    },
+    {
+      "id": "house-119-1-164",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 164,
+      "date": "2025-06-11",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres499-119",
+      "totals": {
+        "yea": 210,
+        "nay": 204,
+        "present": 0,
+        "not_voting": 18
+      },
+      "party_split": {
+        "yea": {
+          "R": 210
+        },
+        "nay": {
+          "D": 204
+        },
+        "not_voting": {
+          "D": 8,
+          "R": 10
+        }
+      },
+      "path": "votes/congress119/house-1-164.json"
     },
     {
       "id": "senate-119-1-303",
@@ -16987,6 +23671,131 @@
       "path": "votes/congress119/senate-1-299.json"
     },
     {
+      "id": "house-119-1-163",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 163,
+      "date": "2025-06-10",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr884-119",
+      "totals": {
+        "yea": 266,
+        "nay": 148,
+        "present": 1,
+        "not_voting": 17
+      },
+      "party_split": {
+        "yea": {
+          "D": 56,
+          "R": 210
+        },
+        "nay": {
+          "D": 148
+        },
+        "present": {
+          "D": 1
+        },
+        "not_voting": {
+          "D": 7,
+          "R": 10
+        }
+      },
+      "path": "votes/congress119/house-1-163.json"
+    },
+    {
+      "id": "house-119-1-162",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 162,
+      "date": "2025-06-10",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr2096-119",
+      "totals": {
+        "yea": 235,
+        "nay": 178,
+        "present": 1,
+        "not_voting": 18
+      },
+      "party_split": {
+        "yea": {
+          "D": 30,
+          "R": 205
+        },
+        "nay": {
+          "D": 174,
+          "R": 4
+        },
+        "present": {
+          "D": 1
+        },
+        "not_voting": {
+          "D": 7,
+          "R": 11
+        }
+      },
+      "path": "votes/congress119/house-1-162.json"
+    },
+    {
+      "id": "house-119-1-161",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 161,
+      "date": "2025-06-10",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres489-119",
+      "totals": {
+        "yea": 211,
+        "nay": 206,
+        "present": 0,
+        "not_voting": 15
+      },
+      "party_split": {
+        "yea": {
+          "R": 211
+        },
+        "nay": {
+          "D": 206
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 9
+        }
+      },
+      "path": "votes/congress119/house-1-161.json"
+    },
+    {
+      "id": "house-119-1-160",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 160,
+      "date": "2025-06-10",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres489-119",
+      "totals": {
+        "yea": 213,
+        "nay": 206,
+        "present": 0,
+        "not_voting": 13
+      },
+      "party_split": {
+        "yea": {
+          "R": 213
+        },
+        "nay": {
+          "D": 206
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/house-1-160.json"
+    },
+    {
       "id": "senate-119-1-298",
       "chamber": "senate",
       "session": 1,
@@ -17044,6 +23853,132 @@
         }
       },
       "path": "votes/congress119/senate-1-297.json"
+    },
+    {
+      "id": "house-119-1-159",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 159,
+      "date": "2025-06-09",
+      "question": "On Motion to Suspend the Rules and Agree",
+      "result": "Passed",
+      "bill_id": "hres481-119",
+      "totals": {
+        "yea": 400,
+        "nay": 0,
+        "present": 2,
+        "not_voting": 30
+      },
+      "party_split": {
+        "yea": {
+          "D": 194,
+          "R": 206
+        },
+        "present": {
+          "D": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 17,
+          "R": 13
+        }
+      },
+      "path": "votes/congress119/house-1-159.json"
+    },
+    {
+      "id": "house-119-1-158",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 158,
+      "date": "2025-06-09",
+      "question": "On Motion to Suspend the Rules and Agree",
+      "result": "Passed",
+      "bill_id": "hres488-119",
+      "totals": {
+        "yea": 280,
+        "nay": 113,
+        "present": 6,
+        "not_voting": 33
+      },
+      "party_split": {
+        "yea": {
+          "D": 75,
+          "R": 205
+        },
+        "nay": {
+          "D": 113
+        },
+        "present": {
+          "D": 5,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 19,
+          "R": 14
+        }
+      },
+      "path": "votes/congress119/house-1-158.json"
+    },
+    {
+      "id": "house-119-1-157",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 157,
+      "date": "2025-06-09",
+      "question": "On Motion to Suspend the Rules and Pass",
+      "result": "Passed",
+      "bill_id": "hr2035-119",
+      "totals": {
+        "yea": 373,
+        "nay": 14,
+        "present": 0,
+        "not_voting": 44
+      },
+      "party_split": {
+        "yea": {
+          "D": 187,
+          "R": 186
+        },
+        "nay": {
+          "D": 2,
+          "R": 12
+        },
+        "not_voting": {
+          "D": 23,
+          "R": 21
+        }
+      },
+      "path": "votes/congress119/house-1-157.json"
+    },
+    {
+      "id": "house-119-1-156",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 156,
+      "date": "2025-06-06",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr2966-119",
+      "totals": {
+        "yea": 217,
+        "nay": 190,
+        "present": 0,
+        "not_voting": 25
+      },
+      "party_split": {
+        "yea": {
+          "D": 8,
+          "R": 209
+        },
+        "nay": {
+          "D": 190
+        },
+        "not_voting": {
+          "D": 14,
+          "R": 11
+        }
+      },
+      "path": "votes/congress119/house-1-156.json"
     },
     {
       "id": "senate-119-1-296",
@@ -17164,6 +24099,126 @@
         }
       },
       "path": "votes/congress119/senate-1-293.json"
+    },
+    {
+      "id": "house-119-1-155",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 155,
+      "date": "2025-06-05",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr2987-119",
+      "totals": {
+        "yea": 214,
+        "nay": 198,
+        "present": 0,
+        "not_voting": 20
+      },
+      "party_split": {
+        "yea": {
+          "D": 3,
+          "R": 211
+        },
+        "nay": {
+          "D": 198
+        },
+        "not_voting": {
+          "D": 11,
+          "R": 9
+        }
+      },
+      "path": "votes/congress119/house-1-155.json"
+    },
+    {
+      "id": "house-119-1-154",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 154,
+      "date": "2025-06-05",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr2987-119",
+      "totals": {
+        "yea": 201,
+        "nay": 212,
+        "present": 0,
+        "not_voting": 19
+      },
+      "party_split": {
+        "yea": {
+          "D": 201
+        },
+        "nay": {
+          "R": 212
+        },
+        "not_voting": {
+          "D": 11,
+          "R": 8
+        }
+      },
+      "path": "votes/congress119/house-1-154.json"
+    },
+    {
+      "id": "house-119-1-153",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 153,
+      "date": "2025-06-05",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr2931-119",
+      "totals": {
+        "yea": 211,
+        "nay": 199,
+        "present": 0,
+        "not_voting": 22
+      },
+      "party_split": {
+        "yea": {
+          "D": 5,
+          "R": 206
+        },
+        "nay": {
+          "D": 195,
+          "R": 4
+        },
+        "not_voting": {
+          "D": 12,
+          "R": 10
+        }
+      },
+      "path": "votes/congress119/house-1-153.json"
+    },
+    {
+      "id": "house-119-1-152",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 152,
+      "date": "2025-06-05",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr2931-119",
+      "totals": {
+        "yea": 202,
+        "nay": 210,
+        "present": 0,
+        "not_voting": 20
+      },
+      "party_split": {
+        "yea": {
+          "D": 201,
+          "R": 1
+        },
+        "nay": {
+          "R": 210
+        },
+        "not_voting": {
+          "D": 11,
+          "R": 9
+        }
+      },
+      "path": "votes/congress119/house-1-152.json"
     },
     {
       "id": "senate-119-1-292",
@@ -17318,6 +24373,125 @@
         }
       },
       "path": "votes/congress119/senate-1-288.json"
+    },
+    {
+      "id": "house-119-1-151",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 151,
+      "date": "2025-06-04",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr2483-119",
+      "totals": {
+        "yea": 366,
+        "nay": 57,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 178,
+          "R": 188
+        },
+        "nay": {
+          "D": 30,
+          "R": 27
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-1-151.json"
+    },
+    {
+      "id": "house-119-1-150",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 150,
+      "date": "2025-06-04",
+      "question": "On Agreeing to the Amendment",
+      "result": "Failed",
+      "bill_id": "hr2483-119",
+      "totals": {
+        "yea": 213,
+        "nay": 213,
+        "present": 0,
+        "not_voting": 12
+      },
+      "party_split": {
+        "yea": {
+          "D": 211,
+          "R": 2
+        },
+        "nay": {
+          "R": 213
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 8
+        }
+      },
+      "path": "votes/congress119/house-1-150.json"
+    },
+    {
+      "id": "house-119-1-149",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 149,
+      "date": "2025-06-04",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres458-119",
+      "totals": {
+        "yea": 217,
+        "nay": 208,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "R": 217
+        },
+        "nay": {
+          "D": 208
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-149.json"
+    },
+    {
+      "id": "house-119-1-148",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 148,
+      "date": "2025-06-04",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres458-119",
+      "totals": {
+        "yea": 213,
+        "nay": 206,
+        "present": 0,
+        "not_voting": 12
+      },
+      "party_split": {
+        "yea": {
+          "R": 213
+        },
+        "nay": {
+          "D": 206
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-1-148.json"
     },
     {
       "id": "senate-119-1-287",
@@ -17476,6 +24650,67 @@
         }
       },
       "path": "votes/congress119/senate-1-283.json"
+    },
+    {
+      "id": "house-119-1-147",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 147,
+      "date": "2025-06-03",
+      "question": "On Motion to Suspend the Rules and Pass",
+      "result": "Passed",
+      "bill_id": "hr1804-119",
+      "totals": {
+        "yea": 405,
+        "nay": 3,
+        "present": 0,
+        "not_voting": 24
+      },
+      "party_split": {
+        "yea": {
+          "D": 197,
+          "R": 208
+        },
+        "nay": {
+          "D": 1,
+          "R": 2
+        },
+        "not_voting": {
+          "D": 14,
+          "R": 10
+        }
+      },
+      "path": "votes/congress119/house-1-147.json"
+    },
+    {
+      "id": "house-119-1-146",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 146,
+      "date": "2025-06-03",
+      "question": "On Motion to Suspend the Rules and Pass",
+      "result": "Passed",
+      "bill_id": "hr1642-119",
+      "totals": {
+        "yea": 396,
+        "nay": 5,
+        "present": 0,
+        "not_voting": 30
+      },
+      "party_split": {
+        "yea": {
+          "D": 195,
+          "R": 201
+        },
+        "nay": {
+          "R": 5
+        },
+        "not_voting": {
+          "D": 17,
+          "R": 13
+        }
+      },
+      "path": "votes/congress119/house-1-146.json"
     },
     {
       "id": "senate-119-1-282",
@@ -17657,6 +24892,213 @@
         }
       },
       "path": "votes/congress119/senate-1-277.json"
+    },
+    {
+      "id": "house-119-1-145",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 145,
+      "date": "2025-05-22",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr1-119",
+      "totals": {
+        "yea": 215,
+        "nay": 214,
+        "present": 1,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 215
+        },
+        "nay": {
+          "D": 212,
+          "R": 2
+        },
+        "present": {
+          "R": 1
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-145.json"
+    },
+    {
+      "id": "house-119-1-144",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 144,
+      "date": "2025-05-22",
+      "question": "On Motion to Recommit",
+      "result": "Failed",
+      "bill_id": "hr1-119",
+      "totals": {
+        "yea": 212,
+        "nay": 216,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 212
+        },
+        "nay": {
+          "R": 216
+        },
+        "not_voting": {
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-144.json"
+    },
+    {
+      "id": "house-119-1-143",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 143,
+      "date": "2025-05-22",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "sjres31-119",
+      "totals": {
+        "yea": 216,
+        "nay": 212,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "R": 216
+        },
+        "nay": {
+          "D": 211,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-143.json"
+    },
+    {
+      "id": "house-119-1-142",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 142,
+      "date": "2025-05-22",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres436-119",
+      "totals": {
+        "yea": 217,
+        "nay": 212,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 217
+        },
+        "nay": {
+          "D": 211,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/house-1-142.json"
+    },
+    {
+      "id": "house-119-1-141",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 141,
+      "date": "2025-05-22",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres436-119",
+      "totals": {
+        "yea": 213,
+        "nay": 211,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "R": 213
+        },
+        "nay": {
+          "D": 211
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/house-1-141.json"
+    },
+    {
+      "id": "house-119-1-140",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 140,
+      "date": "2025-05-22",
+      "question": "On Consideration of the Resolution",
+      "result": "Passed",
+      "bill_id": "hres436-119",
+      "totals": {
+        "yea": 216,
+        "nay": 211,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "R": 216
+        },
+        "nay": {
+          "D": 211
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-1-140.json"
+    },
+    {
+      "id": "house-119-1-139",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 139,
+      "date": "2025-05-22",
+      "question": "On Consideration of the Resolution",
+      "result": "Passed",
+      "bill_id": "hres436-119",
+      "totals": {
+        "yea": 217,
+        "nay": 211,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "R": 217
+        },
+        "nay": {
+          "D": 211
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/house-1-139.json"
     },
     {
       "id": "senate-119-1-276",
@@ -18075,6 +25517,65 @@
         }
       },
       "path": "votes/congress119/senate-1-263.json"
+    },
+    {
+      "id": "house-119-1-138",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 138,
+      "date": "2025-05-21",
+      "question": "On Motion to Adjourn",
+      "result": "Failed",
+      "bill_id": null,
+      "totals": {
+        "yea": 211,
+        "nay": 213,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "D": 211
+        },
+        "nay": {
+          "R": 213
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/house-1-138.json"
+    },
+    {
+      "id": "house-119-1-137",
+      "chamber": "house",
+      "session": 1,
+      "roll_number": 137,
+      "date": "2025-05-20",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "sjres13-119",
+      "totals": {
+        "yea": 220,
+        "nay": 207,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "D": 1,
+          "R": 219
+        },
+        "nay": {
+          "D": 207
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/house-1-137.json"
     },
     {
       "id": "house-119-1-136",
