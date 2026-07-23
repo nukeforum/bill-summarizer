@@ -60,6 +60,14 @@ class BillSearchMatcherTest {
         assertFalse(bill(policyArea = null).matchesSearchQuery("armed forces"))
     }
 
+    @Test fun `matches legislative subject term`() {
+        val b = bill(title = "Secure America Act", subjects = listOf("Firearms and explosives", "Border security"))
+        assertTrue(b.matchesSearchQuery("firearms"))
+        assertTrue(b.matchesSearchQuery("border"))
+        assertFalse(b.matchesSearchQuery("wildfire"))
+        assertFalse(bill().matchesSearchQuery("firearms"))
+    }
+
     @Test fun `legislation item matches title and policy area`() {
         val item = legislationItem(title = "A bill to amend title 20", policyArea = "Education")
         assertTrue(item.matchesSearchQuery("education"))
@@ -77,6 +85,7 @@ private fun bill(
     type: String = "hr",
     number: String = "1",
     policyArea: String? = null,
+    subjects: List<String> = emptyList(),
 ) = Bill(
     id = "$type$number-119",
     congress = 119,
@@ -90,6 +99,7 @@ private fun bill(
     outcome = Outcome.PASSED_HOUSE,
     policyArea = policyArea,
     summaryCrs = summaryCrs,
+    subjects = subjects,
     congressGovUrl = "https://congress.gov/example",
 )
 

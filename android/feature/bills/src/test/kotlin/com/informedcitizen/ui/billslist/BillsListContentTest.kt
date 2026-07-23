@@ -58,6 +58,8 @@ class BillsListContentTest {
         searchQuery: String = "",
         selectedPolicyArea: String? = null,
         statusFilterAvailable: Boolean = false,
+        availableSubjects: List<String> = emptyList(),
+        selectedSubject: String? = null,
     ) = BillsListUiState.Success(
         bills = emptyList(),
         filter = BillsListFilter.ALL,
@@ -66,6 +68,8 @@ class BillsListContentTest {
         searchQuery = searchQuery,
         selectedPolicyArea = selectedPolicyArea,
         statusFilterAvailable = statusFilterAvailable,
+        availableSubjects = availableSubjects,
+        selectedSubject = selectedSubject,
     )
 
     @Test
@@ -110,6 +114,48 @@ class BillsListContentTest {
         composeRule.setContent { Subject(success(statusFilterAvailable = false), data) }
 
         composeRule.onNodeWithText("In committee").assertDoesNotExist()
+    }
+
+    @Test
+    fun `renders the legislative-subject filter row only when subjects are present`() {
+        val data = PagingData.from(
+            listOf(billFixture("hr-1", title = "First paged bill")),
+            sourceLoadStates = loadStates(LoadState.NotLoading(endOfPaginationReached = true)),
+        )
+        composeRule.setContent {
+            Subject(success(availableSubjects = listOf("Immigration", "Voting rights")), data)
+        }
+
+        composeRule.onNodeWithText("All topics").assertIsDisplayed()
+        composeRule.onNodeWithText("Immigration").assertIsDisplayed()
+        composeRule.onNodeWithText("Voting rights").assertIsDisplayed()
+    }
+
+    @Test
+    fun `hides the legislative-subject filter row when no subjects are present`() {
+        val data = PagingData.from(
+            listOf(billFixture("hr-1", title = "First paged bill")),
+            sourceLoadStates = loadStates(LoadState.NotLoading(endOfPaginationReached = true)),
+        )
+        composeRule.setContent { Subject(success(availableSubjects = emptyList()), data) }
+
+        composeRule.onNodeWithText("All topics").assertDoesNotExist()
+    }
+
+    @Test
+    fun `shows a subject-specific empty message keyed off the paged item count`() {
+        val data = PagingData.from(
+            emptyList<Bill>(),
+            sourceLoadStates = loadStates(LoadState.NotLoading(endOfPaginationReached = true)),
+        )
+        composeRule.setContent {
+            Subject(
+                success(availableSubjects = listOf("Immigration"), selectedSubject = "Immigration"),
+                data,
+            )
+        }
+
+        composeRule.onNodeWithText("No bills about \"Immigration\" match this filter").assertIsDisplayed()
     }
 
     @Test

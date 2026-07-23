@@ -8,7 +8,10 @@ import com.informedcitizen.pipeline.model.MemberLegislationItem
  * query matches everything; otherwise every whitespace-separated term must
  * appear in at least one searchable field, so "education committee" narrows
  * results rather than widening them. Dots are stripped from terms so a typed
- * "H.R. 1357" still matches the raw type/number pair.
+ * "H.R. 1357" still matches the raw type/number pair. The finer-grained
+ * legislative [Bill.subjects] (issue #28) are searchable too, so a typed
+ * subject keyword surfaces subject-tagged bills the same way the dedicated
+ * subject filter chip does.
  */
 fun Bill.matchesSearchQuery(query: String): Boolean = allTermsMatchSomeField(
     query,
@@ -21,6 +24,7 @@ fun Bill.matchesSearchQuery(query: String): Boolean = allTermsMatchSomeField(
         sponsor.name,
         "$type$number",
         "$type $number",
+        subjects.joinToString(" "),
     ),
 )
 

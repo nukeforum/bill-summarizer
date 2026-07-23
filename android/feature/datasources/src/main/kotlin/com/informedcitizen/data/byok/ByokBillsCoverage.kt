@@ -8,8 +8,8 @@ import com.informedcitizen.pipeline.fetch.RECENT_DAYS
  *
  * Post-#39 a single Congress holds ~10,000+ bills once pre-floor
  * lifecycle statuses (introduced / in committee / reported) stop being
- * dropped. Direct on-device enrichment of that whole set — three
- * Congress.gov GETs per bill (detail / summaries / text, see
+ * dropped. Direct on-device enrichment of that whole set — four
+ * Congress.gov GETs per bill (detail / summaries / text / subjects, see
  * [com.informedcitizen.pipeline.fetch.buildBillRecord]) — cannot
  * complete inside one key's 5,000 requests/hour budget. So BYOK
  * deliberately does NOT mirror the full broadened set on the device.
@@ -41,10 +41,10 @@ const val CONGRESS_HOURLY_REQUEST_BUDGET: Int = 5_000
 
 /**
  * Congress.gov GETs issued per enriched bill: bill detail, CRS
- * summaries, and text-format URLs — the three sequential calls in
- * [com.informedcitizen.pipeline.fetch.buildBillRecord].
+ * summaries, text-format URLs, and legislative subjects (#28) — the four
+ * sequential calls in [com.informedcitizen.pipeline.fetch.buildBillRecord].
  */
-const val REQUESTS_PER_BILL: Int = 3
+const val REQUESTS_PER_BILL: Int = 4
 
 /**
  * The recency window (in days) BYOK direct-fetches. Mirrors the shared

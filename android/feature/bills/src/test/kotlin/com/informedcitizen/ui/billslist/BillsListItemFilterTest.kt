@@ -3,6 +3,7 @@ package com.informedcitizen.ui.billslist
 import com.informedcitizen.data.ai.BillTopic
 import com.informedcitizen.pipeline.model.Outcome
 import com.informedcitizen.ui.components.BillCardSummary
+import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -73,6 +74,40 @@ class BillsListItemFilterTest {
             billMatchesListFilters(bill, BillsListFilter.PASSED, "water", BillTopic.Tech, summaries),
         )
     }
+
+    @Test fun `subject filter keeps only bills tagged with that subject`() {
+        val guns = billFixture("a", subjects = listOf("Firearms and explosives", "Crime and law enforcement"))
+        val budget = billFixture("b", subjects = listOf("Appropriations"))
+        assertTrue(guns.matchesSubject("Firearms and explosives"))
+        assertFalse(budget.matchesSubject("Firearms and explosives"))
+    }
+
+    @Test fun `subject filter matches case-insensitively`() {
+        val bill = billFixture("a", subjects = listOf("Firearms and explosives"))
+        assertTrue(bill.matchesSubject("firearms and explosives"))
+    }
+
+    @Test fun `null subject passes every bill including untagged ones`() {
+        val untagged = billFixture("a")
+        assertTrue(
+            billMatchesListFilters(untagged, BillsListFilter.ALL, "", null, emptyMap(), selectedSubject = null),
+        )
+    }
+
+    @Test fun `distinctSubjects flattens de-dupes and sorts, skipping untagged bills`() {
+        val bills = listOf(
+            billFixture("a", subjects = listOf("Taxation", "Firearms and explosives")),
+            billFixture("b", subjects = listOf("Firearms and explosives")),
+            billFixture("c"),
+        )
+        assertEquals(
+            listOf("Firearms and explosives", "Taxation"),
+            distinctSubjects(bills),
+        )
+    }
+
+    private fun com.informedcitizen.pipeline.model.Bill.matchesSubject(subject: String) =
+        billMatchesListFilters(this, BillsListFilter.ALL, "", null, emptyMap(), selectedSubject = subject)
 
     private fun com.informedcitizen.pipeline.model.Bill.matchesFilter(filter: BillsListFilter) =
         billMatchesListFilters(this, filter, "", null, emptyMap())

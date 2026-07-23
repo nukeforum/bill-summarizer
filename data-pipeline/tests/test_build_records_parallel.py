@@ -43,6 +43,8 @@ class _RecordingClient:
                 return {"summaries": []}
             if path.endswith("/text"):
                 return {"textVersions": []}
+            if path.endswith("/subjects"):
+                return {"subjects": {"legislativeSubjects": []}}
             # Detail endpoint.
             return {"bill": {
                 "title": "Stub title",
@@ -81,8 +83,9 @@ def test_records_built_in_parallel_when_multiple_bills():
 
     assert failures == 0
     assert len(records) == 10
-    # 10 bills × 3 endpoints = 30 calls regardless of parallelism.
-    assert client.calls == 30
+    # 10 bills × 4 endpoints (detail/summaries/text/subjects) = 40 calls
+    # regardless of parallelism.
+    assert client.calls == 40
     # With 4 workers and 10 bills we should observe > 1 in flight at some
     # point. Smoke-check parallelism actually engaged.
     assert client.max_in_flight > 1

@@ -582,6 +582,7 @@ def build_bill_record(
 
     summary_text = _fetch_latest_crs_summary(client, congress, bill_type, bill_number)
     text_urls = _fetch_text_urls(client, congress, bill_type, bill_number)
+    subjects = _fetch_subjects(client, congress, bill_type, bill_number)
     policy = detail.get("policyArea") or None
 
     return {
@@ -603,6 +604,7 @@ def build_bill_record(
         },
         "outcome": outcome,
         "policy_area": (policy.get("name") if isinstance(policy, dict) else policy),
+        "subjects": subjects,
         "summary_crs": summary_text,
         "text_url_html": text_urls.get("html"),
         "text_url_xml": text_urls.get("xml"),
@@ -679,6 +681,37 @@ def _fetch_text_urls(
     return out
 
 
+def _fetch_subjects(
+    client: CongressClient, congress: int, bill_type: str, bill_number: str
+) -> list[str]:
+    """Fetch a bill's Congress.gov legislative-subject terms (issue #28).
+
+    The ``/subjects`` endpoint returns ``{"subjects": {"legislativeSubjects":
+    [{"name": ...}], "policyArea": {...}}}``. We keep only the finer-grained
+    ``legislativeSubjects`` names (``policyArea`` is already carried by the
+    record's ``policy_area`` field). Names are de-duplicated and sorted so the
+    published order is deterministic — the API's ordering is not guaranteed
+    stable, and a stable order is what keeps the KMP shadow byte-identical.
+    Returns ``[]`` for a bill with no subjects (a bare-introduced bill often
+    has none), which matches the wire model's empty-list default.
+    """
+    body = client.get(f"/bill/{congress}/{bill_type}/{bill_number}/subjects")
+    subjects = body.get("subjects")
+    if not isinstance(subjects, dict):
+        return []
+    legislative = subjects.get("legislativeSubjects")
+    if not isinstance(legislative, list):
+        return []
+    names: set[str] = set()
+    for entry in legislative:
+        if not isinstance(entry, dict):
+            continue
+        name = entry.get("name")
+        if isinstance(name, str) and name:
+            names.add(name)
+    return sorted(names)
+
+
 def build_bill_records_parallel(
     client: CongressClient,
     congress: int,
@@ -688,9 +721,9 @@ def build_bill_records_parallel(
 ) -> tuple[list[dict[str, Any]], int]:
     """Build bill records for ``items`` (each ``(summary, outcome)``) in parallel.
 
-    Each call to ``build_bill_record`` issues three sequential Congress.gov
-    requests (detail / summaries / text) — independent across bills, so we
-    fan them out across a thread pool. Returns ``(records, failure_count)``.
+    Each call to ``build_bill_record`` issues four sequential Congress.gov
+    requests (detail / summaries / text / subjects) — independent across bills,
+    so we fan them out across a thread pool. Returns ``(records, failure_count)``.
     Build failures are recorded into ``errors`` keyed by ``"build_bill_record"``
     and excluded from the returned list. Result order is **not** stable
     (futures complete in arbitrary order); callers that need a sort must
