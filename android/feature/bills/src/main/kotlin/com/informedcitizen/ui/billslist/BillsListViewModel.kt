@@ -15,6 +15,7 @@ import com.informedcitizen.data.repository.BillRepository
 import com.informedcitizen.data.repository.SessionCalendarRepository
 import com.informedcitizen.data.work.BillSummarizationController
 import com.informedcitizen.domain.search.matchesSearchQuery
+import com.informedcitizen.domain.search.searchRelevance
 import com.informedcitizen.domain.session.statusOn
 import com.informedcitizen.ui.components.BillCardSummary
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -261,8 +262,17 @@ class BillsListViewModel @Inject constructor(
         // the remaining four narrow via the shared billMatchesListFilters seam.
         val policyFiltered = allBills
             .filter { activePolicyArea == null || it.policyArea == activePolicyArea }
-        val filteredBills = policyFiltered.filter {
+        val matchedBills = policyFiltered.filter {
             billMatchesListFilters(it, currentFilter, query, activeTopic, visibleSummaries, activeSubject)
+        }
+        // With a free-text query active, rank the matches by relevance so a bill
+        // genuinely about the query outranks one that only mentions the words in
+        // a long summary; sortedByDescending is stable, so ties keep the
+        // latest-action date order the list is otherwise sorted by.
+        val filteredBills = if (query.isBlank()) {
+            matchedBills
+        } else {
+            matchedBills.sortedByDescending { it.searchRelevance(query) }
         }
         // Bills passing every filter except the topic are counted as hidden so
         // the "N bills hidden — not yet summarized" nudge stays honest.

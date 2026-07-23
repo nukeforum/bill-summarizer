@@ -80,6 +80,46 @@ internal fun BillsPagedList(
     }
 }
 
+/**
+ * The relevance-ranked search body: a plain in-memory [LazyColumn] over the
+ * already-sorted [bills] (see [BillsListViewModel.buildSuccess]). Used only when
+ * a free-text query is active, where the result set is small and wants
+ * relevance ordering rather than the [BillsPagedList] latest-action-date order —
+ * a paged stream cannot be reordered globally across page boundaries.
+ */
+@Composable
+internal fun BillsRankedList(
+    bills: List<Bill>,
+    summaries: Map<String, BillCardSummary>,
+    aiTitlesEnabled: Boolean,
+    deviceCapable: Boolean,
+    onBillClick: (Bill) -> Unit,
+    onResummarize: (String) -> Unit,
+    contentPadding: PaddingValues,
+    modifier: Modifier = Modifier,
+) {
+    LazyColumn(
+        modifier = modifier,
+        contentPadding = contentPadding,
+        verticalArrangement = Arrangement.spacedBy(12.dp),
+    ) {
+        items(items = bills, key = { it.id }) { bill ->
+            BillCard(
+                bill = bill,
+                summary = summaries[bill.id],
+                onClick = { onBillClick(bill) },
+                onResummarize = if (aiTitlesEnabled && deviceCapable) {
+                    { onResummarize(bill.id) }
+                } else {
+                    null
+                },
+                aiTitlesEnabled = aiTitlesEnabled,
+                deviceCapable = deviceCapable,
+            )
+        }
+    }
+}
+
 @Composable
 private fun AppendLoadingFooter() {
     Box(

@@ -5,6 +5,7 @@ import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.pipeline.model.MemberLegislationItem
 import com.informedcitizen.pipeline.model.Outcome
 import com.informedcitizen.pipeline.model.Sponsor
+import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -66,6 +67,39 @@ class BillSearchMatcherTest {
         assertTrue(b.matchesSearchQuery("border"))
         assertFalse(b.matchesSearchQuery("wildfire"))
         assertFalse(bill().matchesSearchQuery("firearms"))
+    }
+
+    @Test fun `blank query scores zero relevance`() {
+        assertEquals(0, bill(title = "Student Loan Relief Act").searchRelevance(""))
+        assertEquals(0, bill(title = "Student Loan Relief Act").searchRelevance("   "))
+    }
+
+    @Test fun `a title match outranks a summary-only mention`() {
+        // The reported case: "student loans" matched a tangential appropriations
+        // bill that names the phrase only in its long CRS summary. A bill that is
+        // genuinely titled about student loans must rank above it.
+        val onTitle = bill(title = "Student Loan Forgiveness Act")
+        val tangential = bill(
+            title = "Consolidated Appropriations Act",
+            summaryCrs = "Provides funding across agencies, including student loan servicing operations.",
+        )
+        assertTrue(onTitle.searchRelevance("student loan") > tangential.searchRelevance("student loan"))
+    }
+
+    @Test fun `a subject or policy-area match outranks a summary-only mention`() {
+        val onSubject = bill(title = "Omnibus Act", subjects = listOf("Student aid and college costs"))
+        val tangential = bill(title = "Omnibus Act", summaryCrs = "Mentions student aid once in passing.")
+        assertTrue(onSubject.searchRelevance("student aid") > tangential.searchRelevance("student aid"))
+    }
+
+    @Test fun `an exact title phrase earns the phrase bonus over scattered terms`() {
+        val phrase = bill(title = "Clean Water Act")
+        val scattered = bill(title = "Water Quality Act", summaryCrs = "Keeps rivers clean.")
+        assertTrue(phrase.searchRelevance("clean water") > scattered.searchRelevance("clean water"))
+    }
+
+    @Test fun `relevance is zero when no term is found`() {
+        assertEquals(0, bill(title = "Wildfire Act").searchRelevance("student loan"))
     }
 
     @Test fun `legislation item matches title and policy area`() {

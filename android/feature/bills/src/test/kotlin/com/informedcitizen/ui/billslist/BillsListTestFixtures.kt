@@ -33,6 +33,7 @@ internal fun billFixture(
     policyArea: String? = null,
     lifecycleStatus: com.informedcitizen.pipeline.model.LifecycleStatus? = null,
     subjects: List<String> = emptyList(),
+    summaryCrs: String? = null,
 ): Bill = Bill(
     id = id,
     congress = 119,
@@ -47,7 +48,7 @@ internal fun billFixture(
     lifecycleStatus = lifecycleStatus,
     policyArea = policyArea,
     subjects = subjects,
-    summaryCrs = null,
+    summaryCrs = summaryCrs,
     textUrlHtml = null,
     textUrlXml = null,
     textUrlPdf = null,

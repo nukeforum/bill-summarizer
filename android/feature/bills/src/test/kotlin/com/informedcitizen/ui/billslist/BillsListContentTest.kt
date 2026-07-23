@@ -60,8 +60,9 @@ class BillsListContentTest {
         statusFilterAvailable: Boolean = false,
         availableSubjects: List<String> = emptyList(),
         selectedSubject: String? = null,
+        bills: List<Bill> = emptyList(),
     ) = BillsListUiState.Success(
-        bills = emptyList(),
+        bills = bills,
         filter = BillsListFilter.ALL,
         isRefreshing = false,
         sessionStatusLine = "House in session today.",
@@ -156,6 +157,28 @@ class BillsListContentTest {
         }
 
         composeRule.onNodeWithText("No bills about \"Immigration\" match this filter").assertIsDisplayed()
+    }
+
+    @Test
+    fun `renders the in-memory ranked list instead of the paged body when searching`() {
+        // The paged stream carries a different bill; an active query must render
+        // the relevance-ordered in-memory state.bills, not the paged body.
+        val data = PagingData.from(
+            listOf(billFixture("hr-1", title = "First paged bill")),
+            sourceLoadStates = loadStates(LoadState.NotLoading(endOfPaginationReached = true)),
+        )
+        composeRule.setContent {
+            Subject(
+                success(
+                    searchQuery = "student",
+                    bills = listOf(billFixture("hr-9", title = "Student Loan Act")),
+                ),
+                data,
+            )
+        }
+
+        composeRule.onNodeWithText("Student Loan Act").assertIsDisplayed()
+        composeRule.onNodeWithText("First paged bill").assertDoesNotExist()
     }
 
     @Test

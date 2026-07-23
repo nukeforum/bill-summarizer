@@ -88,6 +88,24 @@ class BillsListViewModelSearchTest {
         assertEquals(listOf("b"), state.bills.map { it.id })
     }
 
+    @Test fun `search results are ranked with title matches above summary-only mentions`() = runTest {
+        // "b" is loaded first (it would win on latest-action date order), but "a"
+        // is genuinely titled about the query so relevance must float it to the top.
+        val vm = makeVm(
+            listOf(
+                billFixture(
+                    "b",
+                    title = "Consolidated Appropriations Act",
+                    summaryCrs = "Funds many programs, including student loan servicing.",
+                ),
+                billFixture("a", title = "Student Loan Forgiveness Act"),
+            ),
+        )
+        vm.setSearchQuery("student loan")
+        val state = vm.uiState.filterIsInstance<BillsListUiState.Success>().first()
+        assertEquals(listOf("a", "b"), state.bills.map { it.id })
+    }
+
     @Test fun `no matches yields empty list with query preserved`() = runTest {
         val vm = makeVm(listOf(billFixture("a", title = "Gold Medal Award")))
         vm.setSearchQuery("education")
