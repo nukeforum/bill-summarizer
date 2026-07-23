@@ -1271,6 +1271,11 @@ def rebuild_index() -> dict[str, Any]:
             "manifest_path": path.name,
             "is_current": congress == current,
             "backfill_complete": congress in completed,
+            # #40 dual-publish discovery hook: null until this Congress is
+            # sharded (the sharded builder sets it to its bills-index path).
+            # Emitted always so the KMP shadow (explicitNulls=true) stays
+            # byte-identical.
+            "shard_index_path": None,
         })
     entries.sort(key=lambda e: e["congress"], reverse=True)
 

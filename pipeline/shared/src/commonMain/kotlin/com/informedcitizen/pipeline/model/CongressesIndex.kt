@@ -29,6 +29,13 @@ data class CongressesIndex(
  * `manifest_path`, `is_current`, `backfill_complete`. All new fields
  * default so existing Android test fakes that only pass
  * `congress` + `manifestPath` + `isCurrent` keep compiling.
+ *
+ * [shardIndexPath] is the #40 dual-publish discovery hook: when a
+ * Congress has been sharded, it points at the [BillShardIndex] file
+ * (`congress<N>_bills_index.json`) published *alongside* the unchanged
+ * whole [manifestPath]. It is optional and defaulted null so the field
+ * is additive — current app versions ignore an unknown key, and a
+ * Congress with no shard set omits it entirely.
  */
 @Serializable
 data class CongressEntry(
@@ -39,4 +46,5 @@ data class CongressEntry(
     @SerialName("manifest_path") val manifestPath: String,
     @SerialName("is_current") val isCurrent: Boolean = false,
     @SerialName("backfill_complete") val backfillComplete: Boolean = false,
+    @SerialName("shard_index_path") val shardIndexPath: String? = null,
 )
