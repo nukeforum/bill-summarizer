@@ -13,6 +13,7 @@ import com.informedcitizen.pipeline.model.BillsManifest
 import com.informedcitizen.pipeline.model.CongressEntry
 import com.informedcitizen.pipeline.model.CongressesIndex
 import com.informedcitizen.pipeline.model.ElectionCalendar
+import com.informedcitizen.pipeline.model.LifecycleStatus
 import com.informedcitizen.pipeline.model.Outcome
 import com.informedcitizen.pipeline.model.SessionCalendar
 import com.informedcitizen.testutil.FakeBillCache
@@ -94,6 +95,40 @@ class BillsListViewModelPagingTest {
         val snapshot = vm.pagedBills.asSnapshot()
 
         assertEquals(setOf("b", "c"), snapshot.map { it.id }.toSet())
+    }
+
+    @Test fun `the lifecycle-status filter narrows the paged stream in SQL`() = runTest {
+        val vm = pagingVm(
+            seed(
+                listOf(
+                    billFixture("a").copy(lifecycleStatus = LifecycleStatus.INTRODUCED),
+                    billFixture("b").copy(lifecycleStatus = LifecycleStatus.IN_COMMITTEE),
+                    billFixture("c").copy(lifecycleStatus = LifecycleStatus.INTRODUCED),
+                ),
+            ),
+        )
+
+        vm.setStatusFilter(BillStatusFilter.INTRODUCED)
+        val snapshot = vm.pagedBills.asSnapshot()
+
+        assertEquals(setOf("a", "c"), snapshot.map { it.id }.toSet())
+    }
+
+    @Test fun `the default status filter serves every bill regardless of lifecycle status`() = runTest {
+        val vm = pagingVm(
+            seed(
+                listOf(
+                    billFixture("a").copy(lifecycleStatus = LifecycleStatus.INTRODUCED),
+                    billFixture("b"),
+                    billFixture("c").copy(lifecycleStatus = LifecycleStatus.REPORTED),
+                ),
+            ),
+        )
+
+        // No setStatusFilter call — the ALL default applies no status predicate.
+        val snapshot = vm.pagedBills.asSnapshot()
+
+        assertEquals(setOf("a", "b", "c"), snapshot.map { it.id }.toSet())
     }
 
     @Test fun `the policy-area filter narrows the paged stream in SQL`() = runTest {
