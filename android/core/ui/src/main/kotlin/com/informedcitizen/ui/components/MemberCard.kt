@@ -2,18 +2,23 @@ package com.informedcitizen.ui.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.OpenInNew
 import androidx.compose.material.icons.automirrored.filled.Send
 import androidx.compose.material.icons.filled.Phone
+import androidx.compose.material.icons.outlined.HowToVote
 import androidx.compose.material.icons.outlined.Public
 import androidx.compose.material3.Card
 import androidx.compose.material3.DropdownMenu
@@ -36,6 +41,12 @@ import androidx.compose.ui.unit.dp
 import com.informedcitizen.pipeline.model.Member
 import com.informedcitizen.theme.PartyColors
 
+/**
+ * @param upForElection optional "on your ballot" badge text (e.g. "Up for election · Nov 3, 2026").
+ *   When null the card renders exactly as before (existing sponsor call sites pass nothing). When
+ *   present a third line + vote icon appears and the card grows past its 80.dp floor via
+ *   [IntrinsicSize.Min] so the party rail and contact region stretch to match.
+ */
 @Composable
 fun MemberCard(
     member: Member,
@@ -45,6 +56,7 @@ fun MemberCard(
     onOpenWebsite: (String) -> Unit,
     onOpenSocial: (String) -> Unit,
     modifier: Modifier = Modifier,
+    upForElection: String? = null,
 ) {
     val methods = member.availableContactMethods()
     Card(
@@ -56,18 +68,23 @@ fun MemberCard(
                 role = Role.Button,
             ),
     ) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
+        Row(
+            modifier = Modifier.height(IntrinsicSize.Min),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
             Column(
                 modifier = Modifier
                     .width(8.dp)
-                    .height(80.dp)
+                    .fillMaxHeight()
                     .background(PartyColors.forParty(member.party)),
             ) {}
             Column(
                 modifier = Modifier
                     .weight(1f)
+                    .defaultMinSize(minHeight = 80.dp)
                     .padding(horizontal = 12.dp, vertical = 8.dp)
                     .semantics(mergeDescendants = true) {},
+                verticalArrangement = Arrangement.Center,
             ) {
                 Text(member.name, style = MaterialTheme.typography.titleMedium)
                 val role = if (member.chamber == "senate") "Senator" else "Representative"
@@ -76,6 +93,25 @@ fun MemberCard(
                     "$role · ${member.party}-${member.state}$districtSuffix",
                     style = MaterialTheme.typography.bodyMedium,
                 )
+                if (upForElection != null) {
+                    Row(
+                        modifier = Modifier.padding(top = 4.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(4.dp),
+                    ) {
+                        Icon(
+                            Icons.Outlined.HowToVote,
+                            contentDescription = null,
+                            modifier = Modifier.size(16.dp),
+                            tint = MaterialTheme.colorScheme.primary,
+                        )
+                        Text(
+                            upForElection,
+                            style = MaterialTheme.typography.labelMedium,
+                            color = MaterialTheme.colorScheme.primary,
+                        )
+                    }
+                }
             }
             SegmentedContactEndRegion(
                 methods = methods,
@@ -98,7 +134,7 @@ internal fun SegmentedContactEndRegion(
 ) {
     if (methods.isEmpty()) return
     Row(
-        modifier = Modifier.height(80.dp),
+        modifier = Modifier.fillMaxHeight(),
         verticalAlignment = Alignment.CenterVertically,
     ) {
         methods.forEachIndexed { index, method ->
