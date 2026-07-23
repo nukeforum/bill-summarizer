@@ -7,6 +7,7 @@ import pytest
 
 from _election_calendar import (
     NATIONWIDE,
+    _validate_registration,
     build_election_calendar,
     federal_general_election_date,
     next_federal_general_election_year,
@@ -132,3 +133,82 @@ def test_none_curated_publishes_general_only():
     cal = build_election_calendar(dt.date(2026, 7, 22), GEN_AT, curated_primaries=None)
     assert len(cal["elections"]) == 1
     assert cal["elections"][0]["type"] == "general"
+
+
+# --- registration deadlines (issue #35) ------------------------------------
+
+ELECTION = dt.date(2026, 3, 3)
+
+
+def test_registration_differing_methods_pass_through():
+    reg = {
+        "online": "2026-02-16",
+        "by_mail": "2026-02-02",
+        "in_person": "2026-03-03",
+        "same_day": False,
+        "source": "https://www.sos.state.tx.us/",
+    }
+    out = _validate_registration(reg, ELECTION, "TX primary")
+    assert out == {
+        "online": "2026-02-16",
+        "by_mail": "2026-02-02",
+        "in_person": "2026-03-03",
+        "same_day": False,
+        "source": "https://www.sos.state.tx.us/",
+    }
+
+
+def test_registration_same_day_with_no_dates_is_kept():
+    out = _validate_registration({"same_day": True, "source": "https://vote.gov/"}, ELECTION, "MN primary")
+    assert out == {"same_day": True, "source": "https://vote.gov/"}
+
+
+def test_registration_none_is_none():
+    assert _validate_registration(None, ELECTION, "US general") is None
+
+
+@pytest.mark.parametrize("bad", ["not-an-object", 42, ["online", "2026-02-16"]])
+def test_registration_non_object_dropped(bad):
+    assert _validate_registration(bad, ELECTION, "XX primary") is None
+
+
+def test_registration_deadline_after_election_is_dropped():
+    # A deadline the day after the election is nonsensical; that field drops,
+    # and with nothing else usable the whole block collapses to None.
+    assert _validate_registration({"online": "2026-03-04"}, ELECTION, "XX primary") is None
+
+
+def test_registration_keeps_valid_field_drops_bad_one():
+    reg = {"online": "2026-02-16", "by_mail": "not-a-date", "in_person": "2026-03-04"}
+    out = _validate_registration(reg, ELECTION, "XX primary")
+    assert out == {"online": "2026-02-16"}
+
+
+def test_registration_source_only_collapses_to_none():
+    assert _validate_registration({"source": "https://vote.gov/"}, ELECTION, "XX primary") is None
+
+
+def test_registration_non_bool_same_day_dropped():
+    assert _validate_registration({"same_day": "yes"}, ELECTION, "XX primary") is None
+
+
+def test_registration_attaches_to_curated_primary_event():
+    primaries = [
+        {
+            "state": "TX", "date": "2026-03-03", "type": "primary", "election_year": 2026,
+            "source": "Texas Election Code §41.007",
+            "registration": {"online": "2026-02-02", "source": "https://www.sos.state.tx.us/"},
+        },
+    ]
+    cal = build_election_calendar(dt.date(2026, 7, 22), GEN_AT, curated_primaries=primaries)
+    tx = next(e for e in cal["elections"] if e["state"] == "TX")
+    assert tx["registration"] == {"online": "2026-02-02", "source": "https://www.sos.state.tx.us/"}
+
+
+def test_curated_primary_without_registration_omits_key():
+    primaries = [
+        {"state": "OH", "date": "2026-05-05", "type": "primary", "election_year": 2026},
+    ]
+    cal = build_election_calendar(dt.date(2026, 7, 22), GEN_AT, curated_primaries=primaries)
+    oh = next(e for e in cal["elections"] if e["state"] == "OH")
+    assert "registration" not in oh

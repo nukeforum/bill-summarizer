@@ -8,7 +8,8 @@
       "date": "ISO-8601 calendar date YYYY-MM-DD in the state's jurisdiction",
       "type": "one of: primary, primary_runoff",
       "election_year": "even-numbered federal cycle year the primary feeds into",
-      "source": "human-readable attribution for this specific date"
+      "source": "human-readable attribution for this specific date",
+      "registration": "OPTIONAL per-issue-#35 registration-deadline block for this election, dropped by the builder unless it carries a usable deadline: {online, by_mail, in_person} ISO dates the voter must register by (each optional, must be on/before the election date), same_day (bool — voter may register at the polls), source (authoritative state-office/vote.gov URL). Omit any deadline you have not verified — correctness over coverage."
     },
     "verification_status": "SEED — the entries below are statutorily-fixed 2026 primary dates; an operator must re-confirm each against the official state source before the first live publish, and add the remaining states."
   },
