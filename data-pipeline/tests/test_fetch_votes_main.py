@@ -469,3 +469,23 @@ def test_bills_manifest_untouched_when_vote_refs_unchanged(env, monkeypatch, cap
     assert fetch_votes.main(["--congress", "119"]) == 0
     assert "vote refs refreshed" not in capsys.readouterr().out
     assert manifest_path.read_bytes() == enriched
+
+
+def test_main_corrects_bill_outcome_from_passage_vote(env, monkeypatch, capsys):
+    # #30: the bill was text-classified as failed, but roll call 618 is its
+    # Senate passage vote — the manifest outcome must be corrected in place.
+    (env / "congress119_bills.json").write_text(
+        json.dumps({
+            "generated_at": "2026-01-01T00:00:00Z",
+            "congress": 119,
+            "bills": [{"id": "hr5371-119", "title": "A bill", "outcome": "failed"}],
+        }),
+        encoding="utf-8",
+    )
+    _fake(monkeypatch, {MENU_1_URL: _menu_xml(119, 1, [618]), DETAIL_618_URL: DETAIL_618})
+
+    assert fetch_votes.main(["--congress", "119"]) == 0
+    assert "1 outcome(s) corrected from roll-call votes" in capsys.readouterr().out
+
+    manifest = json.loads((env / "congress119_bills.json").read_text(encoding="utf-8"))
+    assert manifest["bills"][0]["outcome"] == "passed_senate"

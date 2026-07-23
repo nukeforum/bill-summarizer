@@ -125,3 +125,68 @@ def test_outcome_from_votes_latest_decisive_vote_wins():
          "date": "2025-03-02", "roll_number": 88},
     ]
     assert _common.outcome_from_votes(votes) == _common.OUTCOME_PASSED_SENATE
+
+
+# ---------- reconcile_vote_outcomes --------------------------------------
+
+
+def test_reconcile_overrides_misclassified_text_outcome():
+    # #30 headline: an amendment rejection made the text classifier read the
+    # bill as failed, but its passage roll call shows it passed the Senate.
+    bills = [
+        {
+            "id": "hr5371-119",
+            "outcome": _common.OUTCOME_FAILED,
+            "votes": [
+                {"chamber": "senate", "question": "On the Amendment SA 2411",
+                 "result": "Rejected", "date": "2025-11-09", "roll_number": 610},
+                {"chamber": "senate", "question": "On Passage of the Bill",
+                 "result": "Bill Passed", "date": "2025-11-10", "roll_number": 618},
+            ],
+        }
+    ]
+    assert _common.reconcile_vote_outcomes(bills) == 1
+    assert bills[0]["outcome"] == _common.OUTCOME_PASSED_SENATE
+
+
+def test_reconcile_leaves_matching_outcome_untouched():
+    bills = [
+        {
+            "id": "hr30-119",
+            "outcome": _common.OUTCOME_PASSED_HOUSE,
+            "votes": [
+                {"chamber": "house", "question": "On Passage", "result": "Passed",
+                 "date": "2025-02-01", "roll_number": 17},
+            ],
+        }
+    ]
+    assert _common.reconcile_vote_outcomes(bills) == 0
+    assert bills[0]["outcome"] == _common.OUTCOME_PASSED_HOUSE
+
+
+def test_reconcile_keeps_text_outcome_when_no_passage_vote():
+    # Voice-vote / amendment-only bills have no decisive roll call, so the
+    # text-derived outcome stands.
+    bills = [
+        {
+            "id": "s42-119",
+            "outcome": _common.OUTCOME_FAILED,
+            "votes": [
+                {"chamber": "senate", "question": "On the Cloture Motion",
+                 "result": "Rejected", "date": "2025-03-01", "roll_number": 40},
+            ],
+        },
+        {"id": "hr99-119", "outcome": _common.OUTCOME_PASSED_HOUSE, "votes": []},
+    ]
+    assert _common.reconcile_vote_outcomes(bills) == 0
+    assert bills[0]["outcome"] == _common.OUTCOME_FAILED
+    assert bills[1]["outcome"] == _common.OUTCOME_PASSED_HOUSE
+
+
+def test_reconcile_fills_absent_outcome_from_passage_vote():
+    bills = [{"id": "hr30-119", "outcome": None, "votes": [
+        {"chamber": "house", "question": "On Passage", "result": "Passed",
+         "date": "2025-02-01", "roll_number": 17},
+    ]}]
+    assert _common.reconcile_vote_outcomes(bills) == 1
+    assert bills[0]["outcome"] == _common.OUTCOME_PASSED_HOUSE

@@ -350,6 +350,30 @@ def outcome_from_votes(votes: list[dict[str, Any]]) -> str | None:
     return decisive[-1][3]
 
 
+def reconcile_vote_outcomes(bills: list[dict[str, Any]]) -> int:
+    """Override each bill's text-derived ``outcome`` with the outcome its
+    linked roll-call votes imply, when a passage vote decides the measure.
+
+    Bills are classified at build time from latest-action text
+    (``classify_outcome``), which can misread an amendment rejection or a
+    motion to table as a *failed bill*. Once roll calls are linked
+    (``_votes.attach_vote_refs`` sets each bill's ``votes``), a passage vote
+    is the authoritative signal: where ``outcome_from_votes`` yields an
+    outcome that differs from the stored one, this replaces it and counts the
+    correction. Bills with no decisive passage roll call (voice votes,
+    amendment-only votes) keep their text outcome — ``outcome_from_votes``
+    returns None. Mutates ``bills`` in place; returns the number of overrides
+    applied (a discrepancy counter the caller can surface).
+    """
+    overrides = 0
+    for bill in bills:
+        derived = outcome_from_votes(bill.get("votes") or [])
+        if derived is not None and derived != bill.get("outcome"):
+            bill["outcome"] = derived
+            overrides += 1
+    return overrides
+
+
 # ---------- congress math -------------------------------------------------
 
 
