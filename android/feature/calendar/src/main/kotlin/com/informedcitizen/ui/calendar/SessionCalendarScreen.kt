@@ -23,6 +23,8 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.OpenInNew
+import androidx.compose.material.icons.outlined.HowToVote
+import androidx.compose.material.icons.outlined.WarningAmber
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CircularProgressIndicator
@@ -273,14 +275,17 @@ private fun BallotRepRow(ballotRep: BallotRep, onMemberClick: (String) -> Unit) 
 
 /**
  * Issue #24's "when will I vote" surface: the soonest upcoming elections
- * with a days-remaining countdown, still national-only for the countdown rows
- * (`stateCode = null` → the statutory federal general). Issue #25 adds the
+ * with a days-remaining countdown. The scope is the user's state when a single
+ * one can be derived from [savedReps] (the same [VoteGovLinks.registrationStateCode]
+ * rule the "Register & vote" button uses), falling back to the nationwide
+ * federal general when zero or multiple states are known — so a single-state
+ * user also sees their state's primary rows, which is where issue #36's
+ * registration-deadline block (attached per state) can appear. An explicit
+ * [stateCode] overrides the derivation (previews/tests). Issue #25 adds the
  * always-actionable "Register & vote" affordance below the rows: registration
- * is useful year-round, so — unlike before — the card renders even when nothing
- * is upcoming, replacing the rows with a quiet "no upcoming elections" line but
- * keeping the button. The button targets the user's state (derived from
- * [savedReps] like #24's scope rule) or vote.gov's front door in the
- * multi-/no-state fallback; the app collects no address or PII.
+ * is useful year-round, so the card renders even when nothing is upcoming,
+ * replacing the rows with a quiet "no upcoming elections" line but keeping the
+ * button. The app collects no address or PII.
  */
 @Composable
 private fun UpcomingElectionsSection(
@@ -289,8 +294,9 @@ private fun UpcomingElectionsSection(
     savedReps: List<Member>,
     stateCode: String? = null,
 ) {
-    val elections = upcomingElections(calendar, today, stateCode)
-    val registrationUrl = VoteGovLinks.registrationUrl(VoteGovLinks.registrationStateCode(savedReps))
+    val effectiveState = stateCode ?: VoteGovLinks.registrationStateCode(savedReps)
+    val elections = upcomingElections(calendar, today, effectiveState)
+    val registrationUrl = VoteGovLinks.registrationUrl(effectiveState)
 
     Card(modifier = Modifier.fillMaxWidth()) {
         Column(modifier = Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
@@ -302,7 +308,7 @@ private fun UpcomingElectionsSection(
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             } else {
-                elections.forEach { ElectionRow(it) }
+                elections.forEach { ElectionRow(it, today) }
                 Text(
                     text = calendar.source,
                     style = MaterialTheme.typography.bodySmall,
@@ -350,33 +356,126 @@ private fun RegisterAndVoteAffordance(registrationUrl: String) {
 }
 
 @Composable
-private fun ElectionRow(election: UpcomingElection) {
+private fun ElectionRow(election: UpcomingElection, today: LocalDate) {
     val formattedDate = election.date.format(ELECTION_DATE)
-    Row(
-        modifier = Modifier
-            .fillMaxWidth()
-            .clearAndSetSemantics {
-                contentDescription = electionRowDescription(election, formattedDate)
-            },
-        horizontalArrangement = Arrangement.spacedBy(12.dp),
-        verticalAlignment = Alignment.CenterVertically,
-    ) {
-        Column(modifier = Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+    Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .clearAndSetSemantics {
+                    contentDescription = electionRowDescription(election, formattedDate)
+                },
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Column(modifier = Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                Text(
+                    text = electionRowLabel(election),
+                    style = MaterialTheme.typography.bodyMedium,
+                )
+                Text(
+                    text = formattedDate,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
             Text(
-                text = electionRowLabel(election),
-                style = MaterialTheme.typography.bodyMedium,
-            )
-            Text(
-                text = formattedDate,
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                text = election.countdownText,
+                style = MaterialTheme.typography.labelLarge,
+                color = MaterialTheme.colorScheme.primary,
             )
         }
-        Text(
-            text = election.countdownText,
-            style = MaterialTheme.typography.labelLarge,
-            color = MaterialTheme.colorScheme.primary,
-        )
+        registrationDeadlineDisplay(election.event.registration, today)?.let { display ->
+            RegistrationDeadlineBlock(display)
+        }
+    }
+}
+
+/**
+ * Issue #36's registration-deadline block under an election row: the countdown
+ * to the state's registration deadline (or a "closed" note once it has passed),
+ * with an urgent (≤ 7 days) caution treatment mirroring #27's data-freshness
+ * line — an amber warning icon and error color so urgency reads without relying
+ * on color alone. Only ever rendered when [registrationDeadlineDisplay] returns
+ * a non-null display (a published, parseable deadline), so an omitted or
+ * unverified deadline shows nothing rather than a guessed state.
+ *
+ * The static headline + notes carry one merged TalkBack description
+ * ([registrationDeadlineDescription]); the optional per-method "Show details"
+ * expander sits outside that semantics group so it stays an actionable node.
+ */
+@Composable
+private fun RegistrationDeadlineBlock(display: RegistrationDeadlineDisplay) {
+    val urgent = display is RegistrationDeadlineDisplay.Open && display.urgent
+    val headlineColor =
+        if (urgent) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.onSurfaceVariant
+
+    Column(
+        modifier = Modifier.fillMaxWidth(),
+        verticalArrangement = Arrangement.spacedBy(2.dp),
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .clearAndSetSemantics {
+                    contentDescription = registrationDeadlineDescription(display)
+                },
+            verticalArrangement = Arrangement.spacedBy(2.dp),
+        ) {
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(6.dp),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Icon(
+                    imageVector = if (urgent) Icons.Outlined.WarningAmber else Icons.Outlined.HowToVote,
+                    contentDescription = null,
+                    tint = headlineColor,
+                    modifier = Modifier.size(16.dp),
+                )
+                Text(
+                    text = when (display) {
+                        is RegistrationDeadlineDisplay.Open -> registrationOpenHeadline(display)
+                        is RegistrationDeadlineDisplay.Closed -> registrationClosedText(display)
+                    },
+                    style = MaterialTheme.typography.bodySmall,
+                    color = headlineColor,
+                )
+            }
+            if (display is RegistrationDeadlineDisplay.Open) {
+                registrationPartialClosedText(display)?.let { note ->
+                    Text(
+                        text = note,
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+            }
+            if (display.sameDay) {
+                Text(
+                    text = SAME_DAY_REGISTRATION_NOTE,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
+        }
+        if (display is RegistrationDeadlineDisplay.Open && display.methods.size > 1) {
+            var expanded by remember { mutableStateOf(false) }
+            TextButton(
+                onClick = { expanded = !expanded },
+                contentPadding = PaddingValues(0.dp),
+            ) {
+                Text(if (expanded) "Hide deadlines" else "Show all deadlines")
+            }
+            if (expanded) {
+                display.methods.forEach { method ->
+                    Text(
+                        text = registrationDetailLine(method),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+            }
+        }
     }
 }
 
