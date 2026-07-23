@@ -5,16 +5,27 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
+import androidx.paging.PagingData
+import androidx.paging.compose.LazyPagingItems
+import androidx.paging.compose.collectAsLazyPagingItems
 import com.informedcitizen.data.ai.BillTopic
+import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.ui.components.BillCardSummary
 import com.informedcitizen.ui.preview.PreviewWrap
 import com.informedcitizen.ui.preview.sampleBills
+import kotlinx.coroutines.flow.flowOf
+
+/** Wraps a static list as [LazyPagingItems] so previews can drive the paged body. */
+@Composable
+private fun previewBills(bills: List<Bill>): LazyPagingItems<Bill> =
+    flowOf(PagingData.from(bills)).collectAsLazyPagingItems()
 
 @Preview(showBackground = true)
 @Composable
 private fun PreviewBillsListLoading() = PreviewWrap {
     BillsListContent(
         state = BillsListUiState.Loading,
+        bills = previewBills(emptyList()),
         innerPadding = PaddingValues(0.dp),
         onFilterChange = {},
         onRefresh = {},
@@ -33,6 +44,7 @@ private fun PreviewBillsListSuccess() = PreviewWrap {
             isRefreshing = false,
             sessionStatusLine = "House in session today; Senate on recess until May 12.",
         ),
+        bills = previewBills(sampleBills),
         innerPadding = PaddingValues(0.dp),
         onFilterChange = {},
         onRefresh = {},
@@ -51,6 +63,7 @@ private fun PreviewBillsListSuccessEmpty() = PreviewWrap {
             isRefreshing = false,
             sessionStatusLine = null,
         ),
+        bills = previewBills(emptyList()),
         innerPadding = PaddingValues(0.dp),
         onFilterChange = {},
         onRefresh = {},
@@ -64,6 +77,7 @@ private fun PreviewBillsListSuccessEmpty() = PreviewWrap {
 private fun PreviewBillsListError() = PreviewWrap {
     BillsListContent(
         state = BillsListUiState.Error(message = "Network unreachable. Check your connection and try again."),
+        bills = previewBills(emptyList()),
         innerPadding = PaddingValues(0.dp),
         onFilterChange = {},
         onRefresh = {},
@@ -85,6 +99,7 @@ private fun PreviewBillsListAiOnNoSummaries() = PreviewWrap {
             deviceCapable = true,
             summaries = emptyMap(),
         ),
+        bills = previewBills(sampleBills),
         innerPadding = PaddingValues(0.dp),
         onFilterChange = {},
         onRefresh = {},
@@ -112,6 +127,7 @@ private fun PreviewBillsListAiOnMixedSummaries() = PreviewWrap {
             deviceCapable = true,
             summaries = summaries,
         ),
+        bills = previewBills(sampleBills),
         innerPadding = PaddingValues(0.dp),
         onFilterChange = {},
         onRefresh = {},
@@ -138,6 +154,7 @@ private fun PreviewBillsListAiOnTopicFilter() = PreviewWrap {
             selectedTopic = BillTopic.Tech,
             hiddenByTopicCount = 4,
         ),
+        bills = previewBills(listOf(sampleBills[0])),
         innerPadding = PaddingValues(0.dp),
         onFilterChange = {},
         onRefresh = {},

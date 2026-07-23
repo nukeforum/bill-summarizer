@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
@@ -34,6 +33,9 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.paging.LoadState
+import androidx.paging.compose.LazyPagingItems
+import androidx.paging.compose.collectAsLazyPagingItems
 import com.informedcitizen.data.ai.BillTopic
 import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.ui.components.BillSearchField
@@ -50,6 +52,7 @@ fun BillsListScreen(
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     val searchQuery by viewModel.searchQuery.collectAsStateWithLifecycle()
+    val pagedBills = viewModel.pagedBills.collectAsLazyPagingItems()
 
     Scaffold(
         modifier = modifier,
@@ -71,6 +74,7 @@ fun BillsListScreen(
     ) { innerPadding ->
         BillsListContent(
             state = uiState,
+            bills = pagedBills,
             searchQuery = searchQuery,
             innerPadding = innerPadding,
             onFilterChange = viewModel::setFilter,
@@ -89,6 +93,7 @@ fun BillsListScreen(
 @Composable
 internal fun BillsListContent(
     state: BillsListUiState,
+    bills: LazyPagingItems<Bill>,
     innerPadding: PaddingValues,
     onFilterChange: (BillsListFilter) -> Unit,
     onRefresh: () -> Unit,
@@ -148,43 +153,48 @@ internal fun BillsListContent(
             is BillsListUiState.Success -> {
                 PullToRefreshBox(
                     isRefreshing = state.isRefreshing,
-                    onRefresh = onRefresh,
+                    // Refresh both channels: the paged stream repopulates the list
+                    // body while viewModel.refresh() re-pulls the session line and
+                    // the in-memory chrome path (policy areas, freshness).
+                    onRefresh = {
+                        bills.refresh()
+                        onRefresh()
+                    },
                     modifier = Modifier.fillMaxSize(),
                 ) {
-                    if (state.bills.isEmpty()) {
-                        CenteredMessage(
-                            when {
-                                state.searchQuery.isNotBlank() ->
-                                    "No bills match \"${state.searchQuery.trim()}\""
-                                state.selectedPolicyArea != null ->
-                                    "No bills with subject \"${state.selectedPolicyArea}\" match this filter"
-                                else -> "No bills match this filter"
-                            },
-                        )
-                    } else {
-                        LazyColumn(
-                            modifier = Modifier.fillMaxSize(),
+                    val refresh = bills.loadState.refresh
+                    when {
+                        bills.itemCount == 0 && refresh is LoadState.Loading ->
+                            CenteredMessage("Loading bills…", showSpinner = true)
+                        bills.itemCount == 0 && refresh is LoadState.Error ->
+                            CenteredMessage(
+                                "Couldn't load bills:\n${refresh.error.localizedMessage.orEmpty()}",
+                            )
+                        bills.itemCount == 0 ->
+                            CenteredMessage(
+                                when {
+                                    state.searchQuery.isNotBlank() ->
+                                        "No bills match \"${state.searchQuery.trim()}\""
+                                    state.selectedPolicyArea != null ->
+                                        "No bills with subject \"${state.selectedPolicyArea}\" match this filter"
+                                    else -> "No bills match this filter"
+                                },
+                            )
+                        else -> BillsPagedList(
+                            bills = bills,
+                            summaries = state.summaries,
+                            aiTitlesEnabled = state.aiTitlesEnabled,
+                            deviceCapable = state.deviceCapable,
+                            onBillClick = onBillClick,
+                            onResummarize = onResummarize,
                             contentPadding = PaddingValues(
                                 start = 16.dp,
                                 end = 16.dp,
                                 top = 8.dp,
                                 bottom = 8.dp + innerPadding.calculateBottomPadding(),
                             ),
-                            verticalArrangement = Arrangement.spacedBy(12.dp),
-                        ) {
-                            items(items = state.bills, key = { it.id }) { bill ->
-                                com.informedcitizen.ui.components.BillCard(
-                                    bill = bill,
-                                    summary = state.summaries[bill.id],
-                                    onClick = { onBillClick(bill) },
-                                    onResummarize = if (state.aiTitlesEnabled && state.deviceCapable) {
-                                        { onResummarize(bill.id) }
-                                    } else null,
-                                    aiTitlesEnabled = state.aiTitlesEnabled,
-                                    deviceCapable = state.deviceCapable,
-                                )
-                            }
-                        }
+                            modifier = Modifier.fillMaxSize(),
+                        )
                     }
                 }
             }
