@@ -18,5 +18,7 @@ data class BillsManifest(
     @SerialName("generated_at") val generatedAt: String,
     val congress: Int,
     @SerialName("votes_coverage") val votesCoverage: Boolean = false,
-    val bills: List<Bill>,
+    // Elements use BillManifestWriteSerializer so a null policy_area is omitted
+    // on write (Python-canonical byte parity, issue #74); read is unchanged.
+    val bills: List<@Serializable(with = BillManifestWriteSerializer::class) Bill>,
 )

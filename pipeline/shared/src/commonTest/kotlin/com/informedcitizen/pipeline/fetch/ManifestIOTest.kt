@@ -82,6 +82,47 @@ class ManifestIOTest {
         assertTrue("\"text_url_html\": null" in text, "missing explicit null text_url_html:\n$text")
     }
 
+    @Test fun save_omits_policy_area_when_null() {
+        // Byte-parity: Python omits the `policy_area` key entirely when the
+        // value is absent (issue #74), while KEEPING every other null field
+        // explicit. Kotlin must match, otherwise a carried-forward bill that
+        // decodes to a null policyArea re-serializes as `"policy_area": null`
+        // and diverges from the Python canonical output.
+        val fs = FakeFileSystem()
+        val store = FileBillsManifestStore(fs, "/out".toPath())
+        store.save(119, listOf(fixture()), nowIso = "2026-05-15T00:00:00Z")
+        val text = fs.source("/out/congress119_bills.json".toPath()).buffer().use { it.readUtf8() }
+        assertTrue("policy_area" !in text, "null policy_area must be omitted, not written:\n$text")
+        // The other null-valued fields must still be written explicitly.
+        assertTrue("\"short_title\": null" in text, "short_title null must stay explicit:\n$text")
+        assertTrue("\"summary_crs\": null" in text, "summary_crs null must stay explicit:\n$text")
+    }
+
+    @Test fun save_writes_policy_area_when_present() {
+        // The omit rule is null-only: a real policy_area value is written.
+        val fs = FakeFileSystem()
+        val store = FileBillsManifestStore(fs, "/out".toPath())
+        store.save(
+            119,
+            listOf(fixture().copy(policyArea = "Taxation")),
+            nowIso = "2026-05-15T00:00:00Z",
+        )
+        val text = fs.source("/out/congress119_bills.json".toPath()).buffer().use { it.readUtf8() }
+        assertTrue("\"policy_area\": \"Taxation\"" in text, "present policy_area must be written:\n$text")
+    }
+
+    @Test fun save_then_load_roundtrip_with_omitted_policy_area() {
+        // Omitting the key on write must not break the read round-trip: a
+        // manifest without policy_area decodes back to a null policyArea.
+        val fs = FakeFileSystem()
+        val store = FileBillsManifestStore(fs, "/out".toPath())
+        val manifest = store.save(119, listOf(fixture()), nowIso = "2026-05-15T00:00:00Z")
+        val loaded = store.load(119)
+        assertNotNull(loaded)
+        assertEquals(manifest, loaded)
+        assertNull(loaded.bills.single().policyArea)
+    }
+
     @Test fun save_stamps_votes_coverage_from_index_presence() {
         val fs = FakeFileSystem()
         val store = FileBillsManifestStore(fs, "/out".toPath())
