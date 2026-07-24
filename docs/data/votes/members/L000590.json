@@ -1,8 +1,32 @@
 {
-  "generated_at": "2026-07-23T01:52:17Z",
+  "generated_at": "2026-07-24T09:04:46Z",
   "bioguide_id": "L000590",
-  "vote_count": 642,
+  "vote_count": 644,
   "votes": [
+    {
+      "vote_id": "house-119-2-283",
+      "congress": 119,
+      "date": "2026-07-23",
+      "question": "On Passage",
+      "result": "Passed",
+      "position": "yea",
+      "bill_id": "hr8884-119",
+      "type": "hr",
+      "number": "8884",
+      "short_title": null
+    },
+    {
+      "vote_id": "house-119-2-282",
+      "congress": 119,
+      "date": "2026-07-23",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "position": "yea",
+      "bill_id": "hconres89-119",
+      "type": "hconres",
+      "number": "89",
+      "short_title": null
+    },
     {
       "vote_id": "house-119-2-281",
       "congress": 119,

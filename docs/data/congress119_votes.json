@@ -1,8 +1,161 @@
 {
-  "generated_at": "2026-07-23T09:07:56Z",
+  "generated_at": "2026-07-24T09:04:44Z",
   "congress": 119,
-  "vote_count": 1507,
+  "vote_count": 1512,
   "votes": [
+    {
+      "id": "house-119-2-283",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 283,
+      "date": "2026-07-23",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr8884-119",
+      "totals": {
+        "yea": 232,
+        "nay": 188,
+        "present": 0,
+        "not_voting": 11
+      },
+      "party_split": {
+        "yea": {
+          "D": 19,
+          "I": 1,
+          "R": 212
+        },
+        "nay": {
+          "D": 188
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-2-283.json"
+    },
+    {
+      "id": "house-119-2-282",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 282,
+      "date": "2026-07-23",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hconres89-119",
+      "totals": {
+        "yea": 214,
+        "nay": 208,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 210,
+          "R": 4
+        },
+        "nay": {
+          "I": 1,
+          "R": 207
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/house-2-282.json"
+    },
+    {
+      "id": "senate-119-2-209",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 209,
+      "date": "2026-07-23",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 49,
+        "nay": 44,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "R": 47
+        },
+        "nay": {
+          "D": 42,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/senate-2-209.json"
+    },
+    {
+      "id": "senate-119-2-208",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 208,
+      "date": "2026-07-23",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 48,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "R": 48
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/senate-2-208.json"
+    },
+    {
+      "id": "senate-119-2-207",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 207,
+      "date": "2026-07-23",
+      "question": "On the Motion to Discharge",
+      "result": "Motion to Discharge Rejected",
+      "bill_id": "sjres180-119",
+      "totals": {
+        "yea": 47,
+        "nay": 49,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 2,
+          "R": 1
+        },
+        "nay": {
+          "D": 1,
+          "R": 48
+        },
+        "not_voting": {
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/senate-2-207.json"
+    },
     {
       "id": "house-119-2-281",
       "chamber": "house",
