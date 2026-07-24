@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T08:29:14Z",
+  "generated_at": "2026-07-24T08:26:55Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
@@ -22,6 +22,12 @@
       },
       "outcome": "failed",
       "policy_area": "Health",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Congressional oversight",
+        "Department of Health and Human Services",
+        "Medicare"
+      ],
       "summary_crs": "<p>This joint resolution prohibits the Centers for Medicare &amp; Medicaid Services (CMS) from testing a new Medicare payment model in certain states that involves a prior authorization process and the use of enhanced technology by third-party contractors to determine whether certain claims should be paid.</p><p>Specifically, the joint resolution nullifies a notice issued by the CMS on July 1, 2025, titled <em>Medicare Program; Implementation of Prior Authorization for Select Services for the Wasteful and Inappropriate Services Reduction (WISeR) Model</em>. (On May 12, 2026, the Government Accountability Office issued a letter of opinion stating that this notice constituted an agency rule and is therefore subject to the Congressional Review Act.)</p><p>The CMS selected six states to participate in this model over a six-year period: New Jersey, Ohio, Oklahoma, Texas, Arizona, and Washington. Under the model, contracted companies must process prior authorization requests (i.e., requests for coverage determinations before a service is furnished) for certain services using enhanced technology (e.g., artificial intelligence). Contracted companies are paid based on the share of resulting savings. The CMS aims to test the model's ability to produce accurate results while streamlining the prior authorization process for Medicare claims. The model is based in part on similar processes used for Medicare Advantage claims.&nbsp;</p><p>CMS began implementing the model on January 1, 2026. This joint resolution prohibits the CMS from continuing to do so.</p>",
       "text_url_html": "https://www.congress.gov/119/bills/sjres198/BILLS-119sjres198pcs.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/sjres198/BILLS-119sjres198pcs.xml",
@@ -79,6 +85,11 @@
       },
       "outcome": "passed_senate",
       "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Congressional tributes",
+        "Criminal investigation, prosecution, interrogation",
+        "Fraud offenses and financial crimes"
+      ],
       "summary_crs": null,
       "text_url_html": "https://www.congress.gov/119/bills/sres772/BILLS-119sres772ats.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/sres772/BILLS-119sres772ats.xml",
@@ -105,6 +116,13 @@
       },
       "outcome": "passed_senate",
       "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Congressional tributes",
+        "Crime victims",
+        "Firearms and explosives",
+        "Illinois",
+        "Violent crime"
+      ],
       "summary_crs": null,
       "text_url_html": "https://www.congress.gov/119/bills/sres799/BILLS-119sres799ats.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/sres799/BILLS-119sres799ats.xml",
@@ -130,6 +148,12 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4087)"
       },
       "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Congressional tributes",
+        "Environmental assessment, monitoring, research",
+        "Hawaii"
+      ],
       "summary_crs": null,
       "text_url_html": "https://www.congress.gov/119/bills/sres742/BILLS-119sres742ats.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/sres742/BILLS-119sres742ats.xml",
@@ -156,6 +180,10 @@
       },
       "outcome": "passed_senate",
       "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Congressional tributes",
+        "Outdoor recreation"
+      ],
       "summary_crs": null,
       "text_url_html": "https://www.congress.gov/119/bills/sres798/BILLS-119sres798ats.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/sres798/BILLS-119sres798ats.xml",
@@ -182,6 +210,14 @@
       },
       "outcome": "enacted",
       "policy_area": "Agriculture and Food",
+      "subjects": [
+        "Agricultural prices, subsidies, credit",
+        "Emergency planning and evacuation",
+        "Farmland",
+        "Fires",
+        "Forests, forestry, trees",
+        "Natural disasters"
+      ],
       "summary_crs": "<p><strong>Emergency Conservation Program Improvement Act of 2025 </strong></p><p>This bill revises the Emergency Conservation Program (ECP) and the Emergency Forest Restoration Program (EFRP) to expand eligibility for payments to agricultural producers and owners of forest land impacted by natural disasters. The bill also&nbsp;provides additional options to receive an advance on cost-sharing payments before carrying out emergency measures.</p><p>The bill expands advance ECP payments  to include&nbsp;the replacement, repair, or restoration of farmland or conservation structures requiring an immediate response. Producers may receive an advance on cost-sharing payments for 75% of the cost of the replacement and 50% of the cost of the repair or restoration. Current law limits advance payments to 25% of the cost of the repair or replacement of fencing.</p><p>Under EFRP, the bill allows owners of nonindustrial private forest land impacted by a natural disaster to receive an advance on cost-sharing payments for up to 75% of the cost of the emergency measures. Currently, advance payments are not available under the program.</p><p>ECP and EFRP recipients must use the funds within 180 days after the funds are disbursed. This provides additional time to ECP recipients who currently must use the funds within 60 days.</p><p>The bill also expands eligibility for payments under the programs to include emergency measures to address damages caused by (1) a wildfire that is not caused naturally, if the damage is caused by the spread of the wildfire due to natural causes; and (2) a wildfire that is caused by the federal government.</p>",
       "text_url_html": "https://www.congress.gov/119/plaws/publ102/PLAW-119publ102.htm",
       "text_url_xml": "https://www.congress.gov/119/plaws/publ102/PLAW-119publ102_uslm.xml",
@@ -240,6 +276,27 @@
       },
       "outcome": "enacted",
       "policy_area": "Housing and Community Development",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Advisory bodies",
+        "Congressional oversight",
+        "Data collection, sharing, protection",
+        "Department of Housing and Urban Development",
+        "Disability assistance",
+        "Environmental assessment, monitoring, research",
+        "Government information and archives",
+        "Government studies and investigations",
+        "Housing and community development funding",
+        "Housing finance and home ownership",
+        "Housing industry and standards",
+        "Housing supply and affordability",
+        "Land use and conservation",
+        "Landlord and tenant",
+        "Licensing and registrations",
+        "Low- and moderate-income housing",
+        "Performance measurement",
+        "Public housing"
+      ],
       "summary_crs": "<p><strong>Housing for the 21st Century Act<br/><br/></strong>This bill revises federal housing programs, including by expanding available financing for affordable housing and providing grants for planning and community development activities.<br/><br/>For example, the bill increases the statutory maximum loan limits for mortgage insurance programs administered by the&nbsp;Federal Housing Administration&nbsp;for multifamily homes and requires the use of a more specific inflation index for such loans.<br/><br/>The bill also increases the maximum&nbsp;eligible income for the Department of Housing and Urban Development's (HUD's) HOME Investment Partnerships Program (grants to states and localities to support housing for low-income households) and&nbsp;establishes a grant program to assist regional, state, and local entities with&nbsp;strategies to support affordable housing.<br/><br/>In addition, the bill</p><ul><li>exempts certain housing-related activities from the environmental review process, including certain construction, improvement, or rehabilitation of residential buildings;</li><li>excludes veterans' disability benefits from being considered as income for purposes of determining eligibility for the Veterans Affairs Supportive Housing (VASH) program;</li><li>establishes a pilot program to provide grants to public housing agencies (PHAs) and other owners of federally assisted housing to  test the efficacy of temperature sensors to support compliance with temperature requirements;</li><li>eliminates the requirement that manufactured homes must be constructed with a permanent chassis; and</li><li>authorizes HUD to conduct performance reviews of organizations that&nbsp;provide&nbsp;housing counseling services.</li></ul><p>The bill also expands oversight of HUD and PHAs, such as by requiring PHAs to post information about contracts on their websites.</p><p>For more information about this bill, see <a href=\"https://www.congress.gov/crs-product/R48849#_Toc221206484\">CRS Report&nbsp;</a><a href=\"https://www.congress.gov/crs-product/R48849#_Toc221206484\">R48849</a>.&nbsp;</p>",
       "text_url_html": "https://www.congress.gov/119/bills/hr6644/BILLS-119hr6644eas2.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/hr6644/BILLS-119hr6644eas2.xml",
@@ -558,6 +615,11 @@
       },
       "outcome": "enacted",
       "policy_area": "Science, Technology, Communications",
+      "subjects": [
+        "Animal protection and human-animal relationships",
+        "Emergency communications systems",
+        "Fishes"
+      ],
       "summary_crs": "<p><strong>Lulu’s Law</strong></p><p>This act requires the Federal Communications Commission to issue an order explicitly permitting the transmission of wireless emergency alerts to mobile phones in the event of a shark attack.</p><p>(Under current regulations, authorized government authorities are permitted to send wireless emergency alerts regarding public safety emergencies, including severe weather, missing children, and other threats to life or property.)</p>",
       "text_url_html": "https://www.congress.gov/119/plaws/publ100/PLAW-119publ100.htm",
       "text_url_xml": "https://www.congress.gov/119/plaws/publ100/PLAW-119publ100_uslm.xml",
@@ -615,6 +677,14 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 50. Record Vote Number: 192. (CR S3194)"
       },
       "outcome": "failed",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Conflicts and wars",
+        "Congressional oversight",
+        "Congressional-executive branch relations",
+        "Iran",
+        "Middle East"
+      ],
       "summary_crs": "<p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending against an attack on the United States or its personnel or facilities in other nations.</p>",
       "text_url_html": "https://www.congress.gov/119/bills/sjres185/BILLS-119sjres185pcs.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/sjres185/BILLS-119sjres185pcs.xml",
@@ -1176,6 +1246,13 @@
       },
       "outcome": "enacted",
       "policy_area": "Native Americans",
+      "subjects": [
+        "Alaska",
+        "Alaska Natives and Hawaiians",
+        "Historical and cultural resources",
+        "Mammals",
+        "Wildlife conservation and habitat protection"
+      ],
       "summary_crs": "<p><strong>Alaska’s Right to Ivory Sales and Tradition Act or the ARTIST Act</strong></p><p>This act prohibits states from imposing bans on marine mammal products produced by Alaska Natives.</p><p>Specifically, states may not prohibit the interstate commerce, importation, sale, transfer, trade, barter, or possession of marine mammal ivory, marine mammal bone, or baleen legally produced by an Alaska Native as an authentic Alaska Native article of handicrafts and clothing.</p>",
       "text_url_html": "https://www.congress.gov/119/plaws/publ99/PLAW-119publ99.htm",
       "text_url_xml": "https://www.congress.gov/119/plaws/publ99/PLAW-119publ99_uslm.xml",
@@ -1359,6 +1436,17 @@
       },
       "outcome": "enacted",
       "policy_area": "Immigration",
+      "subjects": [
+        "Advanced technology and technological innovations",
+        "Border security and unlawful immigration",
+        "Computer security and identity theft",
+        "Computers and information technology",
+        "Drug trafficking and controlled substances",
+        "Human trafficking",
+        "Immigration status and procedures",
+        "Law enforcement administration and funding",
+        "Smuggling and trafficking"
+      ],
       "summary_crs": "<p><strong>Secure America Act</strong></p><p>This act provides $70 billion in&nbsp;funding to the Department of Homeland Security (DHS), U.S. Customs and Border Protection (CBP), and U.S. Immigration and Customs Enforcement (ICE) through FY2029 for immigration enforcement, border security, and related activities.</p><p>It is known as a reconciliation bill and includes legislation submitted by certain congressional committees pursuant to provisions in the FY2026 congressional budget resolution (<a href=\"https://www.congress.gov/bill/119th-congress/senate-concurrent-resolution/33\">S. Con. Res. 33</a>) that directed the committees to submit legislation to the House or Senate Budget Committee that will increase the deficit. (Reconciliation bills are considered by Congress using expedited legislative procedures that prevent a filibuster and restrict amendments in the Senate.)</p><p>TITLE I--COMMITTEE ON HOMELAND SECURITY AND GOVERNMENTAL AFFAIRS</p><p>(Sec. 101) This section provides funding for CBP to hire, pay, train, and equip Border Patrol agents and Border Patrol support personnel to conduct functions other than immigration enforcement and customs functions.</p><p>The funds provided by this section may not be used to recruit, hire, or train personnel for the duties of processing coordinators after October 31, 2028.</p><p>(Sec. 102) This section provides funding to ICE for (1) hiring, paying, training, and equipping Homeland Security Investigations (HIS) agents and support personnel; and (2) other necessary expenses for&nbsp;HSI’s mission support and operations and maintenance.</p><p>It also requires specified funds to be used to hire, pay, and equip&nbsp;additional child exploitation investigators and forensics analysts for&nbsp;certain HSI offices to (1) support the identification and rescue of victims of child sexual exploitation and abuse, and (2) train such personnel and state and local law enforcement regarding identifying victims of child sexual exploitation and abuse.</p><p>The funds provided by this section must be used for functions other than those related to HSI’s immigration enforcement and customs enforcement missions.</p><p>(Sec. 103) This section provides funding to CBP for border security, technology, and screening, including</p><ul><li>procurement and integration of new nonintrusive inspection equipment and associated civil works (e.g., artificial intelligence, machine learning, and other innovative technologies)&nbsp;and other mission support to combat the entry or exit of illicit narcotics at ports of entry and along the southwest, northern, and maritime borders;</li><li>upgrading and procurement of platforms for rapid air and marine response capabilities;</li><li>upgrading and procurement of border surveillance technologies along the southwest, northern, and maritime borders;</li><li>necessary expenses, including the deployment of technology, relating to the biometric entry and exit system under the Intelligence Reform and Terrorism Prevention Act of 2004;</li><li>enhancing border security by combating drug trafficking, including fentanyl and its precursor chemicals, at the southwest, northern, and maritime borders; and</li><li>necessary expenses for CBP's mission support and operations and maintenance for functions other than those related to its immigration enforcement and customs missions.</li></ul><p>None of the funds provided by this section may be used for the procurement or deployment of surveillance towers along the southwest border and the northern border that have not been tested and accepted by CBP to deliver autonomous capabilities.</p><p>Under this section the term <em>autonomous </em>means a system designed to apply artificial intelligence, machine learning, computer vision, or other algorithms to accurately detect, identify, classify, and track items of interest in real time such that the system can make operational adjustments without the active engagement of personnel or continuous human command or control.</p><p>(Sec. 104) This section provides additional funding to DHS for the purposes for which funding is provided in this title.</p><p>TITLE II--COMMITTEE ON THE JUDICIARY</p><p>(Sec. 201) This section provides funding to CBP for hiring, paying, training, and equipping CBP agents and the necessary support staff, and other necessary expenses for mission support and operations and maintenance, in order to carry out immigration enforcement activities.</p><p>(Sec. 202) This section provides funding to ICE for immigration enforcement and related activities, including</p><ul><li>hiring, paying, and training personnel;</li><li>transportation;</li><li>information technology;</li><li>facility and fleet maintenance and sustainment;</li><li>287(g) agreements (i.e., agreements that allow state and local law enforcement agencies to perform certain immigration enforcement functions);</li><li>the Office of the Principal Legal Advisor;</li><li>operation and maintenance; and</li><li>operations by ICE to arrest certain unlawful aliens.</li></ul><p>(Sec. 203) This section provides additional funding to DHS for (1) the purposes for which funding is provided in this title, (2) the assignment of certain&nbsp;DHS employees and state officers to carry out immigration enforcement activities, or (3) the participation of state and local agencies in certain homeland security efforts. &nbsp;</p>",
       "text_url_html": "https://www.congress.gov/119/plaws/publ98/PLAW-119publ98.htm",
       "text_url_xml": "https://www.congress.gov/119/plaws/publ98/PLAW-119publ98_uslm.xml",
@@ -1776,6 +1864,12 @@
       },
       "outcome": "enacted",
       "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Building construction",
+        "Government buildings, facilities, and property",
+        "Missouri",
+        "Veterans' medical care"
+      ],
       "summary_crs": "<p><strong>Fiscal Year 2025 Veterans Affairs Major Medical Facility Authorization Act</strong></p><p>This act authorizes the Department of Veterans Affairs to carry out a major medical facility project in St. Louis, Missouri, during FY2026.</p><p>The act specifies the maximum amount that may be spent on the project and details that the project consists of the construction of a new bed tower, clinical building expansion, consolidated administrative building and warehouse, utility plant, and parking garages.</p>",
       "text_url_html": "https://www.congress.gov/119/plaws/publ97/PLAW-119publ97.htm",
       "text_url_xml": "https://www.congress.gov/119/plaws/publ97/PLAW-119publ97_uslm.xml",
@@ -1834,6 +1928,14 @@
       },
       "outcome": "failed",
       "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "American Battle Monuments Commission",
+        "Military facilities and property",
+        "Military history",
+        "Public contracts and procurement",
+        "Religion",
+        "Veterans' organizations and recognition"
+      ],
       "summary_crs": "<p><strong>Foreign Intelligence Accountability Act and the Anti-CBDC Surveillance State Act</strong></p><p>This bill reauthorizes Title VII of the Foreign Intelligence Surveillance Act (FISA) until April 30, 2029, and expands protections related to surveillance under Section 702 of&nbsp;FISA. It also prohibits a Federal Reserve bank from offering financial products or services directly to an individual, maintaining an account on behalf of an individual, or issuing a central bank digital currency (CBDC).</p><p>Section 702 of FISA concerns acquiring communications of non-U.S. persons believed to be outside the United States to obtain foreign intelligence information. Information about U.S. persons may incidentally be acquired by this type of surveillance and subsequently <em>queried </em>(searched) under certain circumstances.</p><p>Changes to Section 702 include requiring monthly reviews by the Office of the Director of National Intelligence (ODNI) for each U.S. person query conducted by the Federal Bureau of Investigation (FBI). ODNI must refer queries that do not comply with established standards, as well as possible abuses of civil liberties or privacy, to the Office of the Intelligence Community Inspector General.</p><p>The bill institutes criminal penalties for (1) those who knowingly and willingly falsify or materially misrepresent complying with querying procedures, and (2) FBI personnel who knowingly and willingly violate procedures related to U.S. person queries.</p><p>FBI supervisors may no longer approve U.S. person queries; only certain FBI attorneys may do so.</p><p>The  Federal Reserve System's Board of Governors&nbsp;may not use a CBDC to implement monetary policy or test, study, create, or implement a CBDC, with certain exceptions.</p>",
       "text_url_html": "https://www.congress.gov/119/bills/s1318/BILLS-119s1318eah.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/s1318/BILLS-119s1318eah.xml",
@@ -2029,6 +2131,13 @@
       },
       "outcome": "enacted",
       "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Congressional agencies",
+        "Congressional officers and employees",
+        "Government employee pay, benefits, personnel management",
+        "Law enforcement officers",
+        "U.S. Capitol"
+      ],
       "summary_crs": "<p>This act authorizes the Capitol Police Board to increase the mandatory retirement age for a member of the Capitol Police to up to age 62 when the board determines such waiver is in the public interest.</p><p>Under current law, members of the Capitol Police are generally subject to mandatory retirement at (1) age 57; or (2) upon completing 20 years of service&nbsp;if the member is older than 57.&nbsp;Previously, a waiver from the board would authorize a member to continue working until age 60.</p><p>The act authorizes the board to issue a waiver specifying a retirement age between 57 and 62.</p>",
       "text_url_html": "https://www.congress.gov/119/plaws/publ95/PLAW-119publ95.htm",
       "text_url_xml": "https://www.congress.gov/119/plaws/publ95/PLAW-119publ95_uslm.xml",

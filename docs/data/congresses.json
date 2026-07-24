@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T14:16:58Z",
+  "generated_at": "2026-07-24T08:26:55Z",
   "current_congress": 119,
   "congresses": [
     {
@@ -9,7 +9,8 @@
       "last_action_date": "2026-07-16",
       "manifest_path": "congress119_bills.json",
       "is_current": true,
-      "backfill_complete": true
+      "backfill_complete": true,
+      "shard_index_path": null
     },
     {
       "congress": 118,
@@ -18,7 +19,8 @@
       "last_action_date": "2025-01-06",
       "manifest_path": "congress118_bills.json",
       "is_current": false,
-      "backfill_complete": true
+      "backfill_complete": true,
+      "shard_index_path": null
     },
     {
       "congress": 117,
@@ -27,7 +29,8 @@
       "last_action_date": "2023-01-05",
       "manifest_path": "congress117_bills.json",
       "is_current": false,
-      "backfill_complete": true
+      "backfill_complete": true,
+      "shard_index_path": null
     },
     {
       "congress": 116,
@@ -36,7 +39,8 @@
       "last_action_date": "2021-01-13",
       "manifest_path": "congress116_bills.json",
       "is_current": false,
-      "backfill_complete": true
+      "backfill_complete": true,
+      "shard_index_path": null
     },
     {
       "congress": 115,
@@ -45,7 +49,8 @@
       "last_action_date": "2019-01-14",
       "manifest_path": "congress115_bills.json",
       "is_current": false,
-      "backfill_complete": false
+      "backfill_complete": false,
+      "shard_index_path": null
     }
   ]
 }
