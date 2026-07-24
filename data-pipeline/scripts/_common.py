@@ -585,7 +585,7 @@ def build_bill_record(
     subjects = _fetch_subjects(client, congress, bill_type, bill_number)
     policy = detail.get("policyArea") or None
 
-    return {
+    record = {
         "id": f"{bill_type}{bill_number}-{congress}",
         "congress": congress,
         "type": bill_type,
@@ -611,6 +611,14 @@ def build_bill_record(
         "text_url_pdf": text_urls.get("pdf"),
         "congress_gov_url": _build_congress_gov_url(congress, bill_type, bill_number),
     }
+    # Omit policy_area entirely when absent (rather than emit null) so the
+    # published manifest byte-matches the app-canonical shape and the Kotlin
+    # shadow, which drops the null key on write too (issue #74). Every other
+    # null-valued field stays explicit. Position is preserved for the non-null
+    # case: the key sits between outcome and subjects when present.
+    if record["policy_area"] is None:
+        del record["policy_area"]
+    return record
 
 
 def _extract_short_title(detail: dict[str, Any]) -> str | None:

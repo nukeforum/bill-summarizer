@@ -2,6 +2,11 @@ package com.informedcitizen.pipeline.model
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
+import kotlinx.serialization.json.JsonElement
+import kotlinx.serialization.json.JsonNull
+import kotlinx.serialization.json.JsonObject
+import kotlinx.serialization.json.JsonTransformingSerializer
+import kotlinx.serialization.json.jsonObject
 
 @Serializable
 data class Bill(
@@ -53,3 +58,36 @@ data class Bill(
      */
     val votes: List<VoteRef> = emptyList(),
 )
+
+/**
+ * Manifest write serializer that omits the `policy_area` key when its value is
+ * null, so the published bills manifest byte-matches the Python pipeline's
+ * canonical output.
+ *
+ * The write [ManifestJson][com.informedcitizen.pipeline.fetch.ManifestJson]
+ * keeps null fields explicit (`explicitNulls = true`) because Python emits
+ * `"short_title": null`, `"summary_crs": null`, etc. `policy_area` is the one
+ * exception: Python omits the key entirely when the value is absent (its record
+ * builder drops it, and carried-forward bills round-trip the raw dict, which
+ * never carried the key). Without this transform, Kotlin decodes such a
+ * carried-forward bill into [Bill.policyArea] = null and re-serializes it as
+ * `"policy_area": null`, the sole reproducible divergence in the bills/backfill
+ * parity check (issue #74).
+ *
+ * kotlinx-serialization has no per-property "omit when null" knob that leaves
+ * other nulls explicit, so this narrowly drops just that one key on write and
+ * leaves every other field — including all other explicit nulls — untouched.
+ * Deserialization is unchanged (identity transform): a manifest with or without
+ * the key decodes to the same [Bill], so round-trips are preserved.
+ */
+internal object BillManifestWriteSerializer :
+    JsonTransformingSerializer<Bill>(Bill.serializer()) {
+    override fun transformSerialize(element: JsonElement): JsonElement {
+        val obj = element.jsonObject
+        return if (obj["policy_area"] is JsonNull) {
+            JsonObject(obj - "policy_area")
+        } else {
+            element
+        }
+    }
+}

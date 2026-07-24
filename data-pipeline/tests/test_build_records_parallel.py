@@ -6,7 +6,7 @@ import threading
 import time
 from concurrent.futures import ThreadPoolExecutor
 
-from _common import ErrorCollector, build_bill_records_parallel
+from _common import ErrorCollector, build_bill_record, build_bill_records_parallel
 
 
 class _RecordingClient:
@@ -116,6 +116,46 @@ def test_per_bill_failures_recorded_into_collector_not_raised():
     assert rec.kind == "build_bill_record"
     assert rec.identifier == "hr7"
     assert rec.error_class == "RuntimeError"
+
+
+class _PolicyAreaClient:
+    """Minimal client returning a detail payload with a controllable
+    ``policyArea`` so ``build_bill_record`` can be exercised directly."""
+
+    def __init__(self, policy_area) -> None:
+        self._policy_area = policy_area
+
+    def get(self, path, **params):
+        if path.endswith("/summaries"):
+            return {"summaries": []}
+        if path.endswith("/text"):
+            return {"textVersions": []}
+        if path.endswith("/subjects"):
+            return {"subjects": {"legislativeSubjects": []}}
+        return {"bill": {
+            "title": "Stub title",
+            "introducedDate": "2025-01-01",
+            "sponsors": [{"fullName": "Sen. Stub, S. [D-XX]", "party": "D", "state": "XX"}],
+            "titles": [],
+            "policyArea": self._policy_area,
+        }}
+
+
+def test_build_bill_record_omits_policy_area_when_absent():
+    # Byte-parity with the Kotlin shadow (issue #74): the key is dropped
+    # entirely when there is no policy area, while other null fields stay.
+    record = build_bill_record(_PolicyAreaClient(None), 119, _summary("hr", 1), "enacted")
+    assert "policy_area" not in record
+    # Sibling nullable fields are still emitted explicitly as null.
+    assert record["short_title"] is None
+    assert record["summary_crs"] is None
+
+
+def test_build_bill_record_keeps_policy_area_when_present():
+    record = build_bill_record(
+        _PolicyAreaClient({"name": "Taxation"}), 119, _summary("hr", 1), "enacted"
+    )
+    assert record["policy_area"] == "Taxation"
 
 
 def test_error_collector_record_is_thread_safe():
