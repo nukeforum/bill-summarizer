@@ -33,6 +33,9 @@ jobs:
         with:
           token: ${{ secrets.PIPELINE_PUSH_TOKEN }}
 
+      # --- Python tooling (build_dashboard.py only — fetch-votes is
+      # Kotlin-canonical; see issue #73) ---
+
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
@@ -47,7 +50,7 @@ jobs:
       - name: Install Python dependencies
         run: uv pip install --system -r data-pipeline/requirements.txt
 
-      # --- Kotlin tooling (parallel-run, writes to /tmp shadow dir) ---
+      # --- Kotlin tooling (canonical, writes to docs/data/) ---
 
       - name: Set up Java
         uses: actions/setup-java@v4
@@ -58,205 +61,21 @@ jobs:
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      # --- Pre-stage Kotlin's shadow input from the current canonical ---
-      # fetch-votes is incremental against the files on disk (a vote
-      # already present is never refetched), so both fetchers must start
-      # from the same prior per-vote tree — otherwise the Kotlin run
-      # would re-backfill the whole Congress and the comparison would
-      # measure staleness, not parity. The canonical files reflect the
-      # last successful run's output (committed by `safe-push`).
-      # The bills manifests are staged too: both drivers re-attach the
-      # derived per-bill `votes` refs to the manifest in their output
-      # dir when new roll calls land (issue #19). Staging happens before
-      # the Python run, so the shadow sees the same pre-run manifest
-      # state Python's refresh reads.
-      - name: Stage Kotlin shadow input from canonical
-        run: |
-          mkdir -p /tmp/kotlin-votes-shadow
-          cp -r docs/data/votes /tmp/kotlin-votes-shadow/ 2>/dev/null || true
-          cp docs/data/congress*_votes.json /tmp/kotlin-votes-shadow/ 2>/dev/null || true
-          cp docs/data/congress*_bills.json /tmp/kotlin-votes-shadow/ 2>/dev/null || true
-          ls -laR /tmp/kotlin-votes-shadow/ | head -20 || true
+      # --- Kotlin: canonical fetch (Senate LIS XML, House clerk EVS
+      # XML, and legislators YAMLs all need no API key). fetch-votes is
+      # incremental against the files already on disk (a vote already
+      # present is never refetched), so it picks up from the last
+      # successful run's output (committed by `safe-push`). The bills
+      # manifests are re-attached in place too: the driver re-attaches
+      # the derived per-bill `votes` refs to the manifest in the output
+      # dir when new roll calls land (issue #19). ---
 
-      # --- Python: canonical fetch (Senate LIS XML, House clerk EVS
-      # XML, and legislators YAMLs all need no API key) ---
-
-      - name: Fetch votes (Python — canonical)
-        run: python data-pipeline/scripts/fetch_votes.py
-
-      # --- Kotlin: shadow fetch for parity validation ---
-      # Runs second so Python's fresh canonical output is available for
-      # the comparison step. Both fetchers see the same senate.gov menu
-      # state modulo the ~minute gap between their fetches — a roll
-      # call published mid-run is tolerated by the compare step.
-
-      - name: Fetch votes (Kotlin — shadow validation)
-        # Parallel-run safety: never fail the canonical run because the
-        # Kotlin port hit a transient issue. Failure surfaces in the
-        # job UI but `safe-push` of Python's canonical output still
-        # proceeds.
-        continue-on-error: true
+      - name: Fetch votes (Kotlin)
         working-directory: pipeline
-        run: ./gradlew :cli:run --args="fetch-votes --output-dir /tmp/kotlin-votes-shadow" --no-daemon
-
-      # --- Compare Python (canonical) vs Kotlin (shadow) ---
-      # Output is teed to BOTH stdout (so `gh run view --log` shows the
-      # verdicts) AND $GITHUB_STEP_SUMMARY (so the Actions UI renders
-      # them as a panel). Per the pipeline-check-cli-readable rule.
-      # The parallel-run period is for observation; we'll switch
-      # canonical ownership once diffs are clean for ~a week. Both
-      # drivers cover both chambers (Senate LIS + House clerk EVS) and
-      # both rebuild the per-member votes/members/ shards, so the
-      # per-vote votes/ tree is expected byte-identical and the shards
-      # identical modulo generated_at (compared separately below).
-
-      - name: Compare canonical vs Kotlin shadow output
-        if: always()
-        env:
-          CANONICAL_DIR: docs/data
-          SHADOW_DIR: /tmp/kotlin-votes-shadow
-        run: |
-          set +e  # never fail the job on diff results during parallel-run
-          {
-            echo "## fetch-votes parity check"
-            echo ""
-            echo "Comparing \`$CANONICAL_DIR\` (Python, canonical) vs \`$SHADOW_DIR\` (Kotlin)."
-            echo ""
-            # Per-vote files carry no timestamps, so the trees must be
-            # byte-identical. The per-member shards under votes/members/
-            # DO carry a generated_at (stamped minutes apart when both
-            # runs rewrite a shard), so they are excluded here and
-            # compared separately below with generated_at stripped.
-            if [ ! -d "$SHADOW_DIR/votes" ]; then
-              echo "- ❌ \`votes/\`: shadow tree missing — Kotlin did not produce output"
-            elif diff -r --exclude=members "$CANONICAL_DIR/votes" "$SHADOW_DIR/votes" > /tmp/votes-tree.diff 2>&1; then
-              count=$(find "$CANONICAL_DIR/votes" -path '*/members/*' -prune -o -name '*.json' -print | wc -l)
-              echo "- ✅ \`votes/\`: byte-identical per-vote trees ($count files; members/ shards compared below)"
-            else
-              echo "- ⚠️  \`votes/\`: per-vote trees differ"
-              echo ""
-              echo "<details><summary>diff (truncated to 400 lines)</summary>"
-              echo ""
-              echo '```diff'
-              head -400 /tmp/votes-tree.diff
-              echo '```'
-              echo "</details>"
-              echo ""
-            fi
-
-            # --- per-member shard parity (generated_at stripped: a
-            # shard rewritten by both runs stamps minutes apart; shards
-            # with unchanged rows keep their staged bytes on both sides).
-            # ~540 files, so verdicts are aggregated: one summary line
-            # plus details for the first few mismatches. ---
-            if [ -d "$CANONICAL_DIR/votes/members" ]; then
-              matched=0; differing=0; missing=0
-              for canonical in "$CANONICAL_DIR"/votes/members/*.json; do
-                [ -f "$canonical" ] || continue
-                fname=$(basename "$canonical")
-                shadow="$SHADOW_DIR/votes/members/$fname"
-                if [ ! -f "$shadow" ]; then
-                  missing=$((missing + 1))
-                  [ "$missing" -le 3 ] && echo "- ❌ \`votes/members/$fname\`: shadow shard missing"
-                  continue
-                fi
-                if diff -q <(jq -S 'del(.generated_at)' "$canonical") \
-                           <(jq -S 'del(.generated_at)' "$shadow") >/dev/null; then
-                  matched=$((matched + 1))
-                else
-                  differing=$((differing + 1))
-                  if [ "$differing" -le 3 ]; then
-                    echo "- ⚠️  \`votes/members/$fname\`: shard differs"
-                    echo ""
-                    echo "<details><summary>diff (truncated to 100 lines, generated_at stripped)</summary>"
-                    echo ""
-                    echo '```diff'
-                    diff -u <(jq -S 'del(.generated_at)' "$canonical") \
-                            <(jq -S 'del(.generated_at)' "$shadow") | head -100
-                    echo '```'
-                    echo "</details>"
-                    echo ""
-                  fi
-                fi
-              done
-              extras=$(find "$SHADOW_DIR/votes/members" -name '*.json' 2>/dev/null | wc -l)
-              extras=$((extras - matched - differing))
-              if [ "$differing" -eq 0 ] && [ "$missing" -eq 0 ] && [ "$extras" -eq 0 ]; then
-                echo "- ✅ \`votes/members/\`: identical shards ($matched files, ignoring generated_at)"
-              else
-                echo "- ⚠️  \`votes/members/\`: $matched identical, $differing differ, $missing missing, $extras shadow-only"
-              fi
-            fi
-
-            # --- per-Congress index parity (generated_at stripped:
-            # the two runs are minutes apart) ---
-            for canonical in "$CANONICAL_DIR"/congress*_votes.json; do
-              [ -f "$canonical" ] || continue
-              fname=$(basename "$canonical")
-              shadow="$SHADOW_DIR/$fname"
-              if [ ! -f "$shadow" ]; then
-                echo "- ❌ \`$fname\`: shadow file missing — Kotlin did not produce index"
-                continue
-              fi
-              py_norm=$(mktemp)
-              kt_norm=$(mktemp)
-              jq -S 'del(.generated_at)' "$canonical" > "$py_norm"
-              jq -S 'del(.generated_at)' "$shadow"    > "$kt_norm"
-              py_count=$(jq '.vote_count' "$canonical")
-              kt_count=$(jq '.vote_count' "$shadow")
-              if diff -q "$py_norm" "$kt_norm" >/dev/null; then
-                echo "- ✅ \`$fname\`: identical index ($py_count votes, ignoring generated_at)"
-              else
-                echo "- ⚠️  \`$fname\`: index differs (Python: $py_count votes, Kotlin: $kt_count votes)"
-                echo ""
-                echo "<details><summary>diff (truncated to 200 lines, generated_at stripped)</summary>"
-                echo ""
-                echo '```diff'
-                diff -u "$py_norm" "$kt_norm" | head -200
-                echo '```'
-                echo "</details>"
-                echo ""
-              fi
-              rm -f "$py_norm" "$kt_norm"
-            done
-
-            # --- bills-manifest refresh parity (issue #19): both
-            # drivers re-attach vote refs to the manifest in their
-            # output dir when new votes land. generated_at is stripped
-            # because Python stamps at write time while Kotlin stamps at
-            # run start; manifests for Congresses with no new votes are
-            # untouched by both and compare byte-identical anyway. ---
-            for canonical in "$CANONICAL_DIR"/congress*_bills.json; do
-              [ -f "$canonical" ] || continue
-              fname=$(basename "$canonical")
-              shadow="$SHADOW_DIR/$fname"
-              if [ ! -f "$shadow" ]; then
-                echo "- ❌ \`$fname\`: shadow manifest missing — staging step failed?"
-                continue
-              fi
-              py_norm=$(mktemp)
-              kt_norm=$(mktemp)
-              jq -S 'del(.generated_at)' "$canonical" > "$py_norm"
-              jq -S 'del(.generated_at)' "$shadow"    > "$kt_norm"
-              if diff -q "$py_norm" "$kt_norm" >/dev/null; then
-                echo "- ✅ \`$fname\`: identical vote-ref enrichment (ignoring generated_at)"
-              else
-                echo "- ⚠️  \`$fname\`: manifest vote refs differ"
-                echo ""
-                echo "<details><summary>diff (truncated to 200 lines, generated_at stripped)</summary>"
-                echo ""
-                echo '```diff'
-                diff -u "$py_norm" "$kt_norm" | head -200
-                echo '```'
-                echo "</details>"
-                echo ""
-              fi
-              rm -f "$py_norm" "$kt_norm"
-            done
-
-            echo ""
-            echo "_Validation runs alongside Python during the cut-over period. Python output remains canonical until parity is confirmed._"
-          } | tee -a "$GITHUB_STEP_SUMMARY"
+        # --output-dir must be absolute: this step's working directory
+        # is the pipeline/ subproject dir, so the default (docs/data)
+        # would resolve to the nonexistent pipeline/docs/data.
+        run: ./gradlew :cli:run --args="fetch-votes --output-dir $GITHUB_WORKSPACE/docs/data" --no-daemon
 
       - name: Rebuild pipeline dashboard
         if: always()
@@ -265,7 +84,7 @@ jobs:
       - name: Commit updated votes
         uses: ./.github/actions/safe-push
         with:
-          # congress*_bills.json: fetch_votes.py re-attaches the derived
+          # congress*_bills.json: fetch-votes re-attaches the derived
           # per-bill `votes` refs to the bills manifest whenever new roll
           # calls land (issue #19).
           paths: |
