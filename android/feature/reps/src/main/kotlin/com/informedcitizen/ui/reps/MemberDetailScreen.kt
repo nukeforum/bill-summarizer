@@ -15,6 +15,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.HelpOutline
+import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
@@ -38,6 +39,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -92,6 +94,7 @@ fun MemberDetailScreen(
         MemberDetailContent(
             state = state,
             innerPadding = padding,
+            onRetry = { viewModel.retry() },
             onLegislationClick = { item ->
                 if (viewModel.isInLocalCache(item.id)) {
                     onBillClick(item.id)
@@ -132,6 +135,7 @@ internal fun MemberDetailContent(
     onOpenUrl: (String) -> Unit,
     onVoteClick: (MemberVoteRow) -> Unit = {},
     onSearchQueryChange: (String) -> Unit = {},
+    onRetry: () -> Unit = {},
 ) {
     // Reset to the member's default tab when a different member loads
     // (bioguideId changes); keep the user's tab choice within one member.
@@ -203,7 +207,26 @@ internal fun MemberDetailContent(
                     }
                 }
             }
-            state.errorMessage != null -> Text("Error: ${state.errorMessage}")
+            state.errorMessage != null -> MemberDetailError(message = state.errorMessage, onRetry = onRetry)
+        }
+    }
+}
+
+@Composable
+private fun MemberDetailError(message: String, onRetry: () -> Unit) {
+    Column(
+        modifier = Modifier.fillMaxSize().padding(24.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center,
+    ) {
+        Text(
+            text = message,
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            textAlign = TextAlign.Center,
+        )
+        Button(onClick = onRetry, modifier = Modifier.padding(top = 16.dp)) {
+            Text("Retry")
         }
     }
 }
