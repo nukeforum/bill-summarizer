@@ -1,8 +1,38 @@
 {
-  "generated_at": "2026-07-27T10:26:56Z",
+  "generated_at": "2026-07-28T09:17:59Z",
   "congress": 119,
-  "vote_count": 1512,
+  "vote_count": 1513,
   "votes": [
+    {
+      "id": "senate-119-2-210",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 210,
+      "date": "2026-07-27",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 43,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 41,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-210.json"
+    },
     {
       "id": "house-119-2-283",
       "chamber": "house",
