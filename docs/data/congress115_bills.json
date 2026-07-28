@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T14:49:16Z",
+  "generated_at": "2026-07-28T14:23:44Z",
   "congress": 115,
   "votes_coverage": false,
   "bills": [
@@ -355,6 +355,41 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ412/PLAW-115publ412_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ412/PLAW-115publ412.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/3460",
+      "votes": []
+    },
+    {
+      "id": "s2652-115",
+      "congress": 115,
+      "type": "s",
+      "number": "2652",
+      "title": "Stephen Michael Gleason Congressional Gold Medal Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cassidy, Bill",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2018-04-11",
+      "latest_action": {
+        "date": "2019-01-03",
+        "text": "Became Public Law No: 115-415."
+      },
+      "outcome": "enacted",
+      "policy_area": "Sports and Recreation",
+      "subjects": [
+        "Athletes",
+        "Congressional tributes",
+        "Disability and paralysis",
+        "Medical research",
+        "Musculoskeletal and skin diseases",
+        "Neurological disorders",
+        "Professional sports"
+      ],
+      "summary_crs": " <p><b>Stephen Michael Gleason Congressional Gold Medal Act</b></p> <p>This bill directs the Speaker of the House of Representatives and the President pro tempore of the Senate to arrange for the award of a Congressional Gold Medal to Stephen Michael Gleason.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ415/PLAW-115publ415.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ415/PLAW-115publ415_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ415/PLAW-115publ415.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/2652",
       "votes": []
     },
     {
@@ -1894,6 +1929,40 @@
       "votes": []
     },
     {
+      "id": "s825-115",
+      "congress": 115,
+      "type": "s",
+      "number": "825",
+      "title": "Southeast Alaska Regional Health Consortium Land Transfer Act of 2017",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Murkowski, Lisa",
+        "party": "R",
+        "state": "AK"
+      },
+      "introduced_date": "2017-04-04",
+      "latest_action": {
+        "date": "2018-12-18",
+        "text": "Became Public Law No: 115-326."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Alaska",
+        "Alaska Natives and Hawaiians",
+        "Health facilities and institutions",
+        "Land transfers",
+        "Minority health",
+        "Pollution liability"
+      ],
+      "summary_crs": " <p><b>Southeast Alaska Regional Health Consortium Land Transfer Act of 2017</b></p> <p>(Sec. 2) This bill directs the Department of Health and Human Services (HHS) to convey specified property in Sitka, Alaska, to the Southeast Alaska Regional Health Consortium for use in connection with health and social services programs. </p> <p>Such conveyance shall not require any consideration from, or impose any obligation, term, or condition on, the consortium or allow for any U.S. reversionary interest in the property. </p> <p>(Sec. 4) The consortium shall not be liable for any environmental contamination that occurred before such conveyance.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ326/PLAW-115publ326.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ326/PLAW-115publ326_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ326/PLAW-115publ326.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/825",
+      "votes": []
+    },
+    {
       "id": "hr1417-115",
       "congress": 115,
       "type": "hr",
@@ -1917,6 +1986,40 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ321/PLAW-115publ321_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ321/PLAW-115publ321.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/1417",
+      "votes": []
+    },
+    {
+      "id": "hr1861-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "1861",
+      "title": "Larry Doby Congressional Gold Medal Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Renacci, James B.",
+        "party": "R",
+        "state": "OH"
+      },
+      "introduced_date": "2017-04-03",
+      "latest_action": {
+        "date": "2018-12-17",
+        "text": "Became Public Law No: 115-322."
+      },
+      "outcome": "enacted",
+      "policy_area": "Sports and Recreation",
+      "subjects": [
+        "Athletes",
+        "Conflicts and wars",
+        "Congressional tributes",
+        "Military history",
+        "Professional sports",
+        "Racial and ethnic relations"
+      ],
+      "summary_crs": " <p><strong>Larry Doby Congressional Gold Medal Act</strong></p> <p>This bill directs the Speaker of the House of Representatives and the President pro tempore of the Senate to arrange for the presentation of a Congressional Gold Medal in honor of Larry Doby in recognition of his achievements and contributions to American major league athletics, civil rights, and the Armed Forces during World War II.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ322/PLAW-115publ322.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ322/PLAW-115publ322_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ322/PLAW-115publ322.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/1861",
       "votes": []
     },
     {
@@ -2092,6 +2195,40 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ311/PLAW-115publ311_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ311/PLAW-115publ311.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/1207",
+      "votes": []
+    },
+    {
+      "id": "hr754-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "754",
+      "title": "Anwar Sadat Centennial Celebration Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Stewart, Chris",
+        "party": "R",
+        "state": "UT"
+      },
+      "introduced_date": "2017-01-31",
+      "latest_action": {
+        "date": "2018-12-13",
+        "text": "Became Public Law No: 115-310."
+      },
+      "outcome": "enacted",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Arab-Israeli relations",
+        "Congressional tributes",
+        "Diplomacy, foreign officials, Americans abroad",
+        "Egypt",
+        "International law and treaties",
+        "Middle East"
+      ],
+      "summary_crs": " <p><strong>Anwar Sadat Centennial Celebration Act</strong></p> <p> This bill directs Congress to arrange for the posthumous award of a Congressional Gold Medal to Anwar Sadat, the former President of Egypt, in recognition of his achievements and efforts to attain comprehensive peace in the Middle East.</p> <p> Such medal shall be presented to: (1) the widow of Anwar Sadat, Jehan Sadat, or her next of kin; and (2) a representative of the government of Egypt.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ310/PLAW-115publ310.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ310/PLAW-115publ310_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ310/PLAW-115publ310.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/754",
       "votes": []
     },
     {
@@ -2978,6 +3115,35 @@
       "votes": []
     },
     {
+      "id": "sres702-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "702",
+      "title": "A resolution recognizing National Native American Heritage Month and celebrating the heritages and cultures of Native Americans and the contributions of Native Americans to the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hoeven, John",
+        "party": "R",
+        "state": "ND"
+      },
+      "introduced_date": "2018-11-15",
+      "latest_action": {
+        "date": "2018-11-26",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Voice Vote."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Native Americans",
+      "subjects": [
+        "Commemorative events and holidays"
+      ],
+      "summary_crs": " <p>Recognizes November 2018 as National Native American Heritage Month, and the Friday after Thanksgiving as Native American Heritage Day.</p>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres702/BILLS-115sres702ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres702/BILLS-115sres702ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres702/BILLS-115sres702ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/702",
+      "votes": []
+    },
+    {
       "id": "hr3359-115",
       "congress": 115,
       "type": "hr",
@@ -3177,6 +3343,53 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ271/PLAW-115publ271_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ271/PLAW-115publ271.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/6",
+      "votes": []
+    },
+    {
+      "id": "s3021-115",
+      "congress": 115,
+      "type": "s",
+      "number": "3021",
+      "title": "America's Water Infrastructure Act of 2018",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Klobuchar, Amy",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2018-06-07",
+      "latest_action": {
+        "date": "2018-10-23",
+        "text": "Became Public Law No: 115-270."
+      },
+      "outcome": "enacted",
+      "policy_area": "Water Resources Development",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Advanced technology and technological innovations",
+        "Alabama",
+        "Alaska",
+        "Alternative and renewable resources",
+        "Aquatic ecology",
+        "Arizona",
+        "Arkansas",
+        "Army Corps of Engineers",
+        "Atmospheric science and weather",
+        "Buy American requirements",
+        "California",
+        "Child care and development",
+        "Child health",
+        "Congressional oversight",
+        "Congressional tributes",
+        "Connecticut",
+        "Consumer affairs",
+        "Dams and canals"
+      ],
+      "summary_crs": " <p><b>America's Water Infrastructure Act of 2018</b></p> <p> TITLE I--WATER RESOURCES DEVELOPMENT</p> <p><i>Water Resources Development Act of 2018</i></p> <p> Subtitle A--General Provisions </p> <p>(Sec. 1102) The bill provides for a study on: (1) the ability of the U.S. Army Corps of Engineers to carry out its statutory missions and responsibilities, and (2) improving the Corps of Engineers' project delivery processes. </p> <p>(Sec. 1103) The Corps of Engineers must contract with the National Academy of Sciences to study the economic principles and analytical methodologies used when formulating, evaluating, and budgeting for water resources development projects. The study must make recommendations on potential changes to such principles and methodologies to improve transparency, return on federal investment, cost savings, and prioritization. </p> <p>(Sec. 1104) The Corps of Engineers must develop, support, and implement education and awareness efforts for nonfederal interests with respect to the annual Report to Congress on Future Water Resources Development required under the Water Resources Reform and Development Act (WRRDA) of 2014.</p> <p>(Sec. 1105) Prior to developing and issuing implementation guidance for certain water resources development laws, the Corps of Engineers must notify nonfederal stakeholders and allow them to provide input. The Corps of Engineers must consider the input when it develops such guidance.</p> <p> (Sec. 1106) The Corps of Engineers must expedite completion of the Lake Okeechobee regulation schedule to coincide with the completion of the Herbert Hoover Dike project in Florida.</p> <p> (Sec. 1107) The Corps of Engineers must publish information on all real estate assets in the United States that are owned, operated, or managed by, or in the custody of, the Corps. </p> <p>(Sec. 1108) The Corps of Engineers must: (1) undertake research on the management and eradication of aquatic invasive species, including Asian carp and zebra mussels; (2) implement a five-year harmful algal bloom technology development demonstration under the Aquatic Nuisance Research Program; and (3) enter into a memorandum of understanding with the Environmental Protection Agency to facilitate ecosystem restoration activities at the South Fork of the South Branch of the Chicago River (commonly known as Bubbly Creek). </p> <p>(Sec. 1111) The Corps of Engineers may carry out a pilot program to award contracts with a duration of up to five years for the operation and maintenance of harbors and inland harbors if the Corps determines that the contract provides cost savings compared to the awarding of such work on an annual basis.</p> <p>(Sec. 1112) The Corps of Engineers must carry out a pilot program that awards a single contract for multiple hurricane and storm damage reduction projects if the Corps determines the contract will provide cost savings compared to a contract awarded for work on a project-by-project basis. </p> <p>(Sec. 1113) The Corps of Engineers must improve the reliability and the operation and maintenance of existing infrastructure. In addition, the Corps must improve such infrastructure's resilience to cyber-related threats. </p> <p>(Sec. 1114) The Corps of Engineers may provide assistance to municipalities with a water supply that is adversely affected by construction carried out by the Corps. </p> <p>(Sec. 1115) In acquiring an interest in land or requiring a nonfederal interest to acquire an interest in land, the Corps of Engineers must first consider the minimum interest in real property necessary to support a project. In determining the interest in land, the Corps must first consider a temporary easement or other interest designed to reduce the overall cost, reduce the time, and minimize conflict with property owners related to such project.</p> <p>(Sec. 1116) The Corps of Engineers must expedite dredged material management plans initiated after this bill's enactment and make maximum use of existing information, studies, and innovative dredged material management practices. </p> <p>(Sec. 1117) The Corps of Engineers must include in its future workplans certain projects or facilities for disposition.</p> <p> (Sec. 1118) The Corps of Engineers must develop guidance for accepting and using information obtained from a nonfederal interest through geomatic techniques, such as global navigation satellite systems.</p> <p> (Sec. 1119) During the next ten years, the Corps of Engineers must expedite the review of applications from local governments for permits to modify certain reservoirs owned or operated by the Corps. </p> <p>(Sec. 1120) Each district of the Corps of Engineers must provide, if requested, balance sheets of funds for water resources development projects to nonfederal interests that provided funds for the project. The Corps must refund excess funds provided by nonfederal interests for underbudget projects.</p> <p> (Sec. 1121) During the next ten years, the Corps of Engineers must expedite the review of applications for certain easements necessary to access federal land for the placement of water withdrawal intakes in the Upper Missouri Mainstem Reservoirs. </p> <p>(Sec. 1122) The bill addresses the pricing of water storage under contracts with local government entities. Specifically, the Corps of Engineers must limit the rate increase for each unit of water stored in a nonhydropower lake within the Verdigris River Basin.</p> <p>(Sec. 1123) The Corps of Engineers may provide technical services, on a reimbursable basis, to a local government upon request to assess the reasons a federally constructed levee owned or operated by the local government is not accredited by the Federal Emergency Management Agency (FEMA).</p> <p> (Sec. 1124) The Corps of Engineers must, subject to the availability of appropriations, pay the outstanding balance for the federal share of the program for providing environmental assistance to nonfederal interests in central New Mexico.</p> <p> (Sec. 1125) The Corps of Engineers may consider recreational boat traffic levels and related economic benefits in making funding determinations with respect to the operation and maintenance of locks on the Allegheny River in Pennsylvania. </p> <p>(Sec. 1126) The Corps of Engineers must provide to an applicant for a water storage project a purpose and need statement for the project.</p> <p> (Sec. 1127) In the case of a project that is budgeted under a different business line than the original line, the Corps of Engineers must ensure that the project follows requirements that apply to the business line under which the project was originally authorized.</p> <p>(Sec. 1128) The Corps of Engineers must expeditiously reset and restore certain levees after the activation of a floodway or backwater feature within the Mississippi River and Tributaries Project through natural overtopping of a federal levee or artificial crevassing of a federal levee to relieve pressure on the levees elsewhere in the system. </p> <p>(Sec. 1129) As soon as practicable, the Corps of Engineers must submit tribal consultation reports as required under the Water Resources Development Act (WRDA) of 2016. In addition, the Corps must ensure that: (1) existing tribal consultation policies, regulations, and guidance continue to be implemented; and (2) consultations with federal and state agencies and Indian tribes required for a water resources development project are carried out.</p> <p> (Sec. 1130) The bill amends WRDA 2016 to increase the number of pilot projects for: (1) the beneficial use of dredged material, and (2) the prevention and mitigation of flood damages associated with ice jams. </p> <p>(Sec. 1132) The bill increases funding limits for the rehabilitation of Corps of Engineers constructed dams. </p> <p>(Sec. 1133) The Corps of Engineers may provide assistance to Indians who have been displaced as a result of the construction of the Bonneville or John Day Dams on the Columbia River in Oregon and Washington.</p> <p>The Corps of Engineers must carry out a village development plan for tribal villages submerged as a result of the construction of the Dalles Dam, Columbia River, Oregon and Washington.</p> <p>(Sec. 1134) The bill amends WRDA 2016 to revise the Upper Missouri River Basin Pilot Program, including to require the Corps to prioritize sediment management plans that affect reservoirs that cross state lines.</p> <p>(Sec. 1135) The bill extends the pilot program that allows nonfederal interests to contribute funds for increasing the hours of operation of locks at water resources development projects. </p> <p>(Sec. 1136) WRRDA 2014 is amended to revise provisions regarding the Corps of Engineers providing credit in lieu of reimbursement to a nonfederal interest for the federal cost share of certain projects.</p> <p>(Sec. 1137) WRRDA 2014 is amended to extend through FY2023 and expand the Nonfederal Implementation Pilot Program. </p> <p>(Sec. 1138) The bill prohibits the Corps of Engineers from assessing a water storage fee with respect to water storage in the Upper Missouri Mainstem Reservoirs. In addition, the bill extends the existing limitation on fees for certain surplus water in such reservoirs.</p> <p> (Sec. 1139) The bill amends WRRDA 2014 to require post-disaster watershed assessments in U.S. territories to be conducted at full federal expense unless the President determines that the territory has the ability to pay the cost share for an assessment without the use of nonfederal funds or loans. </p> <p>(Sec. 1140) The bill extends the expedited consideration procedures for the Senate to consider certain water resources development or conservation projects outside the regular WRDA authorization cycle. </p> <p>(Sec. 1141) The bill extends the period for which the Corps of Engineers must carry out independent peer review on feasibility studies under WRDA 2007.</p> <p> (Sec. 1142) WRDA 2007 is amended to provide that, with respect to the Chicago Sanitary and Ship Canal Dispersal Barriers Project, Illinois, the operation and maintenance of a project authorized to be carried out pursuant to the feasibility study must be carried out at 80% federal expense and 20% nonfederal expense.</p> <p> (Sec. 1143) The bill amends WRDA 2007 to authorize the Corps of Engineers to provide credit for work on a project carried out by a nonfederal interest during the period beginning on November 8, 2007, and ending on the date of this bill's enactment if the Corps determines that the work is integral to the project and lawfully conducted. </p> <p>(Sec. 1144) The bill reauthorizes through FY2023 the Levee Safety Initiative under WRDA 1986. </p> <p>(Sec. 1145) WRDA 2000 is amended to make permanent the authority of a public-utility company, natural gas company, or railroad carrier to pay to expedite a project permit. By the end of 2022, the Government Accountability Office (GAO) must carry out a follow-up study of the implementation of this authority by the Corps of Engineers.</p> <p>(Sec. 1146) The bill authorizes nonfederal interests to remove sediment captured behind dams owned or operated by the Corps of Engineers.</p> <p>(Sec. 1147) WRDA 2000 is amended to specify additional circumstances under which the Corps of Engineers may provide credit toward the nonfederal cost share for work performed in connection with a study, preconstruction engineering and design, or construction necessary for implementation of the Comprehensive Everglades Restoration Plan. The bill authorizes credit for work carried out by the nonfederal sponsor: (1) in the implementation of an authorized project implementation report, as defined in an agreement between the Corps and the nonfederal sponsor; or (2) as agreed to in advance by the District Commander and the nonfederal sponsor.</p> <p> (Sec. 1148) In carrying out a project for the beneficial reuse of sediment to reduce storm damage to property under WRDA 1992, the Corps of Engineers may grant a temporary easement to facilitate the placement of sediment. If an easement is granted, then the project will no longer be eligible for future placement of sediment under that Act.</p> <p>(Sec. 1149) The bill directs the Corps of Engineers to consider a natural or nature-based feature when restoring and protecting aquatic ecosystems or estuaries under WRDA 1996.</p> <p>(Sec. 1151) WRDA 1990 is amended to include operation and maintenance activities at Corps navigation facilities (currently, limited to Corps hydroelectric power generating facilities) among inherently governmental functions.</p> <p> (Sec. 1152) WRDA 1986 is amended to revise provisions regarding the study of water resources development projects by nonfederal interests.</p> <p> (Sec. 1153) The bill exempts a nonfederal interest from the requirement to obtain a federal permit or approval for constructing a water resources development project if the nonfederal interest has a written agreement with the Corps of Engineers that contains the same requirements that would apply to a project carried out by the Corps. However, this exemption does not apply if significant new circumstances or information relevant to environmental concerns or compliance have arisen since development of the project recommendation. </p> <p>(Sec. 1154) WRDA 1986 is amended to require the Corps of Engineers to include in its comprehensive backlog report a list of feasibility studies, projects, and major federal operation and maintenance needs for projects and properties under the control of the Corps. For FY2020 and biennially thereafter, in conjunction with the President's annual budget submission to Congress, the Corps must submit information on the backlog and operation and maintenance needs to Congress and the Office of Management and Budget. The bill establishes requirements concerning the public participation process in the development of proposed budgets for water resources development projects. </p> <p>(Sec. 1157) The bill increases the authorization of appropriations for programs under the continuing authorities program.</p> <p> (Sec. 1158) WRDA 1976 is amended to provide that the 15 additional years that the Corps of Engineers may extend beach nourishment at the request of a nonfederal interest begins upon initiation of construction of congressionally authorized nourishment.</p> <p>(Sec. 1159) The Corps of Engineers may cooperate with a regional coalition of governmental entities in the preparation of comprehensive plans for development, utilization, and conservation of water and related resources. In addition, the Corps of Engineers may work with institutions of higher education when developing those plans.</p> <p>(Sec. 1160) The bill authorizes the use of an emergency fund to repair or restore a federally authorized hurricane or shore protective structure or project damaged or destroyed by a natural disaster to the pre-storm level of protection, instead of the design level of protection, if the pre-storm level of protection provides greater protection.</p> <p> (Sec. 1161) The Corps of Engineers may carry out emergency repair or restoration work that does not produce benefits greater than cost if: (1) the nonfederal sponsor agrees to pay an amount sufficient to make the remaining costs of the project equal to the estimated value of the benefits, (2) the Corps determines the damage to the structure was not the result of negligent operation and maintenance, and (3) repair of the project could benefit other Corps project missions.</p> <p>(Sec. 1162) The Corps of Engineers must, upon request, extend emergency provision of clean water to a locality with contaminated water beyond the applicable time limit, subject to the availability of appropriations.</p> <p>(Sec. 1163) The bill reauthorizes through FY2023 the dam inspection program under the National Dam Safety Program Act.</p> <p>(Sec. 1164) The Corps of Engineers, with the consent of nonfederal interests, may allow local governments to participate in feasibility studies for a water resources development project in order to achieve the purposes of local or regional water management plans.</p> <p> (Sec. 1165) The prohibition on taking possession of, use of, or injury to harbor or river improvements does not apply to unimproved real estate owned or operated by the Corps of Engineers as part of a water resources development project if the Corps determines that modification of such real estate would not affect the function and usefulness of the project. </p> <p>(Sec. 1166) Whenever a state offers advance funds for a federally authorized water resources development project, the Corps of Engineers may receive the funds and expend them on the project. The Corps of Engineers must repay the funds without interest.</p> <p> (Sec. 1167) The Flood Control Act of 1946 is amended to provide that if specified funding for flood control is insufficient to cover the federal cost share for a project, then the nonfederal interest must be responsible for the remaining costs.</p> <p> (Sec. 1168) In carrying out a disposition study for a project of the Corps of Engineers, the Corps must consider modifications that would improve the overall quality of the environment in the public interest, including removal of the project. If a study recommends removal, the Corps may pursue removal of the project.</p> <p>(Sec. 1169) The bill authorizes the Corps of Engineers to receive and expend funds from an owner of a nonfederal reservoir to formulate, review, or revise reservoir operational documents. The reservoir must have been constructed at least in part with federal funds provided for the use of storage for flood control or navigation.</p> <p>(Sec. 1170) The River and Harbor Act of 1958 is amended to expand a program to control invasive or noxious aquatic plants in the Columbia River Basin to include the Upper Missouri River Basin, the Upper Colorado River Basin, the South Platte River Basin, and the Arizona River Basin.</p> <p> (Sec. 1171) The Freedom to Fish Act is amended to extend the prohibition against the Corps of Engineers restricting public access to areas of certain dams in the Cumberland River Basin in Kentucky and Tennessee.</p> <p>(Sec. 1172) The bill requires the Corps of Engineers to complete operation and maintenance renourishment to mitigate coastal erosion attributed to federal project structures in the upper northeast United States.</p> <p>(Sec. 1173) The bill prohibits the Corps of Engineers from charging a fee for certain surplus water stored in the Lake Cumberland Watershed in Kentucky and Tennessee.</p> <p>(Sec. 1174) The Corps of Engineers must restart the temporary deviation in the operation of Cochiti Lake and Jemez Canyon Dam in New Mexico after obtaining the approval of the Pueblo de Cochiti, Pueblo of Santa Ana, and the Rio Grande Compact Commission.</p> <p> (Sec. 1175) The bill prohibits the Corps of Engineers from charging administrative fees in carrying out the Rough River Lake Flowage Easement Encroachment Resolution Plan. </p> <p>(Sec. 1176) The Corps of Engineers must establish a demonstration program to allow projects authorized under WRDA 1996 to begin preconstruction engineering and design if the projects are technically feasible, economically justified, and environmentally acceptable.</p> <p>Subtitle B--Studies and Reports </p> <p>(Sec. 1201) The Corps of Engineers may conduct feasibility studies for specified projects nationwide. </p> <p>(Sec. 1202) The Corps of Engineers may carry out studies to determine the feasibility of habitat restoration for each of the eight reaches identified as priorities in the report titled &quot;Lower Mississippi River Resource Assessment; Final Assessment In Response to Section 402 of WRDA 2000&quot; and dated July 2015. The Corps may carry out studies to determine the feasibility of a project for ecosystem restoration and flood risk management in specified areas of Illinois and Missouri. </p> <p>(Sec. 1203) The Corps of Engineers must expedite specified feasibility studies for projects. After completion of the studies, the projects may proceed directly to preconstruction planning, engineering, and design if the Corps determines that the project is justified. In addition, the Corps must expedite: (1) the completion of a postauthorization change report for the project for flood risk management, San Luis Rey River Flood Control Protection Project, California; (2) the updating of the master plan for the Juniata River and tributaries project, Huntingdon County, Pennsylvania; and (3) certain activities in the Upper Missouri River Basin.</p> <p>(Sec. 1204) The GAO must study and report on certain benefit-cost procedures of the Corps of Engineers and the Office of Management and Budget. </p> <p>(Sec. 1205) The Corps of Engineers must submit certain reports under WRDA 1986 and WRDA 1992 concerning costs for harbors.</p> <p>(Sec. 1206) The Corps of Engineers must develop a list of its existing nonpowered dams that have the greatest potential for hydropower development.</p> <p> (Sec. 1207) The Corps of Engineers must study ports and harbors that could become innovative ports for offshore wind development. </p> <p>(Sec. 1208) The Corps of Engineers must report on its activities relating to the testing, research, development, identification, and recommended uses for innovative materials and advanced technologies in water resources development projects. </p> <p>(Sec. 1209) The Corps of Engineers must report on the best options available to implement the waiver process for the nonfederal cost share for certain projects in Alaska for storm damage prevention and reduction, coastal erosion, and ice and glacial damage. </p> <p>(Sec. 1210) The Corps of Engineers must report on: </p> <ul> <li> their work carried out under the Act of March 2, 1945 concerning the removal of debris located in or adjacent to certain channels; </li> <li> flooding within urban floodplains;</li> <li> incomplete feasibility studies for certain projects that mitigate damages from weather or emergency events;</li> <li> the application of military leasing authorities to the Corps civil works program; and</li> <li> potential disproportionate and adverse health or environmental effects of programs, policies, and activities of the Corps related to water resources development projects on minority communities, low-income communities, rural communities, and Indian tribes.</li> </ul> <p>(Sec. 1215) The bill establishes a deadline for the Corps of Engineers to contract with the National Academy of Public Administration to study the efficiency of the current staff salaries and administrative expense procedures of the Corps.</p> <p>(Sec. 1216) The bill amends WRDA 1986 to direct the Corps of Engineers to identify potential opportunities for the beneficial use of dredged materials obtained from harbors and inland harbors. </p> <p>(Sec. 1217) For each project classified as class III (high priority, conditionally unsafe) under the Dam Safety Action Classification of the Corps of Engineers for which the Corps has assumed responsibility for maintenance, the Corps must assess the anticipated effects of the Corps continuing to be responsible for the maintenance of the project for 15 years or ceasing responsibility for maintenance, including the benefits or costs to the state and local community.</p> <p>(Sec. 1218) The Corps of Engineers must: </p> <ul> <li> report on the durability and resiliency of existing hurricane barriers and harbors of refuge in the North Atlantic Division; </li> <li> assess the water resources needs of the Great Lakes System; </li> <li> report on the status of the project at McMicken Dam, Arizona, as well as the project for flood damage reduction and environmental restoration of the Muddy River in Brookline and Boston, Massachusetts; and </li> <li>report on the implementation of a study concerning Table Rock Lake in Arkansas and Missouri.</li> </ul> <p>(Sec. 1222) The Corps of Engineers must report to Congress on the results of the forecast-informed reservoir operations research study pilot program at Coyote Valley Dam, Russian River Basin, California, no later than one year after completion of the study pilot program.</p> <p>(Sec. 1223) The Corps of Engineers must: </p> <ul> <li>report on the project for flood risk management in the Cedar River watershed of Iowa;</li> <li> report on the structure and operations plan for the Old River control structure in Louisiana;</li> <li> expedite the completion of a study on the Upper St. Anthony Falls Lock and Dam in Minnesota;</li> <li> report on the function and reliability of the Lower Missouri River bank stabilization and navigation project; </li> <li>expedite the completion of studies for flood damage reduction, hurricane and storm damage reduction, and ecosystem restoration in certain coastal areas of Texas; and</li> <li> report on the implementation of a water supply contract for Wright Patman Lake, Texas. </li> </ul> <p>(Sec. 1226) The bill prohibits the Corps of Engineers from constructing additional interception-rearing complexes on the Missouri River until the Corps submits a report on the impacts of interception-rearing complex construction on the navigation, flood control, and other authorized purposes set forth in the Missouri River Master Manual, and on the population recovery of the pallid sturgeon. </p> <p>Subtitle C--Deauthorizations, Modifications, and Related Provisions </p> <p>(Sec. 1301) The Corps of Engineers must develop a process for deauthorizing inactive Corps projects. Specifically, the Corps must develop a list of projects for deauthorization. The projects on the list are deauthorized 180 days after submission of the list unless Congress passes a joint resolution disapproving the list. </p> <p>(Sec. 1302) The bill terminates authorization provided under this bill for construction of a water resources development project after 10 years unless: (1) funds have been obligated for construction or a postauthorization study, or (2) the authorization contained in this bill has been modified by a subsequent Act of Congress.</p> <p>(Sec. 1303) The bill increases the amount of assistance the Corps of Engineers may provide to an industrial water reuse project in Harbor/South Bay, California, and to certain water supply treatment and distribution projects in South Carolina.</p> <p>(Sec. 1304) The bill deauthorizes a portion of the channel improvement project in Lytle and Cajon Creeks that was authorized as part of the Santa Ana River project. </p> <p>(Sec. 1305) The project for flood damage reduction, Yuba River Basin, California, authorized by WRDA 1999 is modified to allow a nonfederal interest to construct a new levee to connect the existing levee with high ground.</p> <p> (Sec. 1306) The bill deauthorizes the portion of a dredging project for navigation at Bridgeport Harbor, Connecticut, that is upstream of the Congress Street Bridge on the Pequonnock River, thereby allowing the bridge to be replaced with a fixed (not movable) bridge. </p> <p>(Sec. 1307) WRDA 1986 is amended to revise provisions concerning a certain navigation project for the Delaware River. Specifically, the bill increases the elevation level to which an area may be filled.</p> <p>(Sec. 1308) The Corps of Engineers must prepare a report that addresses certain concerns, recommendations, and conditions before the Corps may carry out a certain project for ecosystem restoration in an Everglades agricultural area in Florida.</p> <p>(Sec. 1309) The Corps of Engineers may credit work performed by a nonfederal sponsor as an in-kind contribution for a certain project for restoring the Kissimmee River in Florida. </p> <p>(Sec. 1310) The bill deauthorizes portions of a certain flood control project along the Ocklawaha River in the Four River Basins, Florida. </p> <p>(Sec. 1311) WRDA 2016 is amended to require the Corps of Engineers to remove certain locks and dams, or portions of the locks and dams, in the Green River and Barren River in Kentucky if the Corps determines that the removal is necessary.</p> <p>(Sec. 1312) The bill requires the Cape Arundel Disposal Site in Maine to remain available for disposal of dredged material through 2021.</p> <p>(Sec. 1313) The bill deauthorizes certain portions of projects for navigation in the Penobscot River, Maine, and the Boston Harbor Reserved Channel in Massachusetts.</p> <p>(Sec. 1315) The Corps of Engineers may repair or replace any bridge it owns and operates that is: (1) located in Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island, or Vermont; and (2) necessary for evacuation during an extreme weather event. </p> <p>(Sec. 1316) The Corps of Engineers must expedite and complete the dredging of Plymouth Harbor, Massachusetts.</p> <p>(Sec. 1317) The Corps of Engineers must expedite the project for navigation for Portsmouth Harbor and the Piscataqua River authorized by the River and Harbor Act of 1962. </p> <p>(Sec. 1318) The Corps of Engineers must align the schedules of and ensure cooperation and information sharing with respect to a project for flood damage reduction and a project for flood risk management in Kansas City, Missouri, and Kansas City, Kansas.</p> <p> (Sec. 1319) In carrying out the project for navigation, Hampton Harbor, New Hampshire, under the River and Harbor Act of 1960, the Corps of Engineers must use existing authorities to mitigate severe shoaling.</p> <p> (Sec. 1320) The bill deauthorizes: (1) a portion of a project for the Passaic River navigation channel in New Jersey; (2) a flood risk management project in Svensen Island, Oregon; and (3) the unconstructed portions of the West Tennessee tributaries project along the Obion and Forked Deer Rivers in Tennessee.</p> <p> (Sec. 1321) Property in North Dakota, acquired through hazard mitigation assistance, is exempted from open space deed restrictions to the extent necessary to complete the Fargo-Moorhead Metropolitan Area Diversion Project.</p> <p> (Sec. 1322) The bill deauthorizes the portions of the project for raising and improving existing levees of Clatsop County Diking District No. 13, in Clatsop County, Oregon, referred to as Christensen No. 1 Dike No. 42 and Christensen No. 2 Levee No. 43.</p> <p>(Sec. 1325) The bill amends WRDA 2000 to increase funding limits for Puget Sound Nearshore Ecosystem Restoration. </p> <p>(Sec. 1326) The bill deauthorizes a portion of the project for navigation in Milwaukee Harbor, Milwaukee, Wisconsin, consisting of the navigation channel within the Menomonee River that extends from the 16th Street Bridge upstream to the upper limit of the authorized navigation channel.</p> <p>(Sec. 1327) The Corps of Engineers must expedite projects for flood risk management or hurricane and storm damage risk reduction in Texas, Florida, Georgia, Louisiana, South Carolina, Puerto Rico, or the U.S. Virgin Islands.</p> <p>(Sec. 1328) The Corps of Engineers may provide assistance for the operation and maintenance of a flood risk reduction project in the Red River of the North Basin. The basin encompasses parts of Minnesota, North Dakota, and South Dakota.</p> <p> (Sec. 1330) WRRDA 2014 is amended to revise requirements concerning the deauthorization of water resources development projects to prevent backlogs.</p> <p> (Sec. 1331) The Corps of Engineers may make specified conveyances to Cheatham County, Tennessee, and to the city of Nashville, Tennessee. The Corps of Engineers must make specified conveyances to Kentucky, the city of Bainbridge, Georgia, the Port of Whitman County, Washington, and the city of Tuscaloosa, Alabama, if certain conditions are met. In addition, the Corps must transfer certain property rights and interests to the Fort DuPont Redevelopment and Preservation Corporation and Delaware.</p> <p> (Sec. 1332) WRRDA 2014 is amended to require the Corps of Engineers to identify any programmatic modifications for environmental infrastructure assistance programs in its annual Report on Future Water Resources Development.</p> <p>Projects and separable elements of projects identified in the FY2017 list of projects that have received no obligations in the previous five fiscal years must not be deauthorized unless such projects and separable elements meet specified requirements of WRDA 2016.</p> <p>Subtitle D--Water Resources Infrastructure</p> <p>(Sec. 1401) The bill authorizes specified water resource projects in Arkansas, Puerto Rico, Texas, Washington, California, Hawaii, New York, Florida, and New Mexico. The bill also authorizes project modifications for previously authorized projects in Georgia, Michigan, and Tennessee. </p> <p>(Sec. 1402) The bill establishes cost sharing requirements for the navigation project in St. Paul Harbor in Alaska and the flood risk management and ecosystem restoration project in the Espanola Valley in New Mexico.</p> <p>(Sec. 1403) The Corps of Engineers may further improve the Norfolk Harbor and Channels Federal Navigation project in Virginia.</p> <p> TITLE II--DRINKING WATER SYSTEM IMPROVEMENT</p> <p>(Sec. 2001) The EPA must implement a program for connecting, expanding, or repairing existing public water systems that are on Indian reservations in the Upper Missouri River Basin or the Upper Rio Grande Basin.</p> <p>(Sec. 2002) The Safe Drinking Water Act is amended to authorize states to use their drinking water state revolving funds (SRFs) to protect certain source water areas.</p> <p>(Sec. 2003) The EPA must study and report on intractable water systems (small drinking water systems with a history of significant noncompliance with such Act) and barriers to delivery of potable water to individuals served by such systems.</p> <p>(Sec. 2005) The EPA may issue grants to assist: (1) underserved communities with contaminated drinking water, and (2) water systems with programs or projects that increase the resilience of drinking water infrastructure to natural hazards. </p> <p>(Sec. 2006) The EPA must provide grants to: (1) address lead contamination in drinking water at schools and child care programs; and (2) accelerate the development and deployment of innovative water technologies that address pressing drinking water supply, quality, treatment, or security challenges. </p> <p>(Sec. 2008) The bill expands requirements concerning consumer confidence reports issued by community water systems. </p> <p>(Sec. 2010) The EPA or a state with primary enforcement authority responsibility under the Act may require the owners or operators of certain public water systems that have repeatedly violated national primary drinking water regulations to consolidate or transfer ownership. </p> <p>(Sec. 2011) The EPA must develop a strategic plan for improving the accuracy and availability of compliance monitoring data. </p> <p>(Sec. 2012) Within five years and every five years thereafter, the EPA must review and update educational materials concerning best practices for asset management strategies that may be used by public water systems.</p> <p> (Sec. 2013) The bill expands risk assessment requirements for community water systems to include risks from natural hazards and creates a grant program within the EPA called the Drinking Water Infrastructure Risk and Resilience Program. </p> <p>(Sec. 2014) The bill: (1) reauthorizes through FY2021 the public water system supervision grant program and the source water petition program, and (2) reauthorizes through FY2021 and revises the drinking water SRFs. </p> <p>(Sec. 2017) The EPA must review and report to the public on existing and potential methods, means, equipment, and technologies for the treatment and distribution of drinking water. </p> <p>(Sec. 2018) The Emergency Planning and Community Right-To-Know Act of 1986 is amended to ensure that states and community water systems are notified of a release of a contaminant into their source waters. </p> <p>(Sec. 2019) The GAO must study and report on demonstrations of compliance with a state or local environmental law that may be substantially equivalent to demonstrations required by the EPA for compliance with a cross-cutting requirement (i.e., a requirement that is a condition for obtaining loan or loan guarantee under the Safe Drinking Water Act).</p> <p>(Sec. 2020) The bill authorizes additional grants for SRFs in order to aid certain community water systems that were affected by natural disasters after January 1, 2017. </p> <p>(Sec. 2021) The bill: (1) expands requirements for public water systems to monitor unregulated containments, and (2) extends through FY2023 a requirement that water system projects financed through a drinking water SRF program only use iron and steel products that are produced in the United States.</p> <p> (Sec. 2023) The bill reauthorizes through FY2021 and revises the drinking water SRF. </p> <p>TITLE III--ENERGY </p> <p>(Sec. 3001) The bill amends the Federal Power Act to authorize the Federal Energy Regulatory Commission (FERC) to issue a preliminary permit to a hydropower construction license applicant for up to four years, instead of three. FERC may extend a preliminary permit once for up to four years and may issue an additional four-year extension if it determines there are extraordinary circumstances that warrant the issuance of an additional extension. </p> <p>FERC may also extend the time a licensee has to commence construction on a project for up to eight years. Under current law, FERC may extend the license for no more than two years. The licensee is not required to pay an annual charge for administrative expenses until construction commences or a preliminary permit extension expires. </p> <p>(Sec. 3002) The bill revises the criteria for a facility to qualify as a conduit hydropower facility. Under current law, such a facility does not need to be licensed, but must have a capacity that does not exceed five megawatts. The bill raises the capacity limit to 40 megawatts.</p> <p>In addition, the bill revises the time frame from 45 days to 30 days for an entity to contest whether its hydroelectric facility meets the qualifying criteria.</p> <p>(Sec. 3003) FERC must establish an expedited licensing process for issuing and amending licenses for certain hydropower facilities to be constructed at nonpowered dams. In establishing the expedited process, FERC must convene an interagency task force with appropriate federal and state agencies and Indian tribes to coordinate the regulatory process associated with the authorizations required to construct and operate a qualifying facility. FERC must assess the safety of existing nonfederal dams and other nonfederal structures related to the qualifying facility before issuing a license.</p> <p>FERC must coordinate with the Corps of Engineers, Department of the Interior, and the Department of Agriculture to jointly develop a list of existing nonpowered federal dams that have the greatest potential for nonfederal hydropower development.</p> <p>(Sec. 3004) FERC may establish an expedited licensing process for issuing and amending licenses for closed-loop pumped storage projects in which the upper and lower reservoirs do not impound or directly withdraw water from navigable waters, or that are not continuously connected to a naturally flowing water feature.</p> <p> In addition, FERC must: (1) assess the safety of existing dams and other structures related to the project before issuing a license for a closed-loop storage project, and (2) hold a workshop to explore potential opportunities for development of storage projects at abandoned mine sites. </p> <p>(Sec. 3005) The bill outlines considerations that FERC must make when determining the relicensing terms for hydropower licensees. </p> <p>(Sec. 3006) The bill sets forth procedures for the case of FERC not taking action after notice by a public utility of a rate change. </p> <p>(Sec. 3007) The bill authorizes FERC, upon request, to extend by six years the time period during which construction must commence on the Red River Lock and Dam No. 3, 4, and 5 Hydroelectric Projects located on the Red River in Louisiana. The licensee is not required to pay an annual charge for administrative expenses until construction commences. FERC may reinstate the construction license if it is expired.</p> <p> (Sec. 3008) FERC, upon request, must issue a stay of the statutory deadline by which construction must commence on the Mahoney Lake Hydroelectric Project located in Ketchikan Gateway Borough, Alaska. </p> <p>If certain conditions are met, FERC may extend for up to six years the statutory deadline by which construction must commence on the project. </p> <p>(Sec. 3009) The Department of Energy must draw down and sell 5,000,000 barrels of crude oil from the Strategic Petroleum Reserve during FY2028. </p> <p>TITLE IV--OTHER MATTERS </p> <p>Subtitle A--Clean Water </p> <p>(Sec. 4101) The Environmental Protection Agency (EPA) must establish a stormwater infrastructure funding task force composed of representatives from governmental and private entities. The task force must study, and develop recommendations for improving, the availability of funding for stormwater infrastructure to meet the requirements of the Federal Water Pollution Control Act (commonly known as the Clean Water Act). </p> <p>(Sec. 4102) The EPA must update and disseminate information on cost-effective and alternative wastewater recycling and treatment technologies.</p> <p> (Sec. 4103) The bill amends the Federal Water Pollution Control Act (commonly known as the Clean Water Act) to authorize the EPA to make grants to nonprofit organizations to provide technical assistance relating to wastewater treatment systems in rural, small, and tribal municipalities.</p> <p>(Sec. 4104) The bill reauthorizes the Management Conference of the Long Island Sound Study, the Long Island Sound Stewardship Act of 2006, the Long Island Sound Grants, and Long Island Sound Stewardship Grants through FY2023.</p> <p>The EPA's Office of the Management Conference of the Long Island Sound Study must include in studies on strengthening the implementation of the Comprehensive Conservation and Management Plan for Long Island Sound environmental vulnerabilities of the sound watershed.</p> <p>The office must: (1) develop and implement strategies to increase education and awareness about the ecological health and water quality of the sound; and (2) monitor progress toward meeting the goals, actions, and schedules of the plan.</p> <p>The limit on the federal share for certain grants for projects and studies to help implement the plan is revised by increasing the limit for grants other than citizen involvement and education grants. </p> <p>A federal agency that owns or occupies real property, or carries out activities, within the sound watershed must ensure that the property and activities are consistent with the plan to the maximum extent practicable.</p> <p> (Sec. 4105) The bill reauthorizes the Columbia River Basin Restoration Program through FY2021. </p> <p>(Sec. 4106) The bill reauthorizes through FY2020 and revises the sewer overflow control grant program, including by allowing the EPA to provide grants for measures to reuse stormwater. </p> <p>(Sec. 4107) States may use their SRFs to provide assistance to households with income below a certain threshold for decentralized wastewater systems or cost-effective connections of the households to publicly owned treatment works.</p> <p>Subtitle B--WIFIA Reauthorization and Innovative Financing for State Loan Funds </p> <p>(Sec. 4201) WRRDA 2014 is amended to reauthorize through FY2021 and revise the Water Infrastructure Finance and Innovation Act program, including by providing additional sources of funding for state infrastructure financing authorities.</p> <p>Subtitle C--Miscellaneous </p> <p>(Sec. 4302) The Bureau of Reclamation must develop a flood prevention action plan for each state within the Snake River Basin.</p> <p> (Sec. 4303) The GAO must audit and report on certain maintenance repayment contracts between the United States and the Bostwick Division for repairs to the Tainter gates and other features at the Harlan County Dam in Nebraska.</p> <p>(Sec. 4304) The EPA must establish a competitive grant program to: (1) assist the development of innovative activities relating to workforce development in the water utility sector, and (2) expand public awareness about water utilities and connect individuals to careers in the water utility sector. </p> <p>(Sec. 4305) The EPA must assign at least one employee in each of its regional offices to serve as a liaison to minority, tribal, and low-income communities.</p> <p>(Sec. 4306) The bill amends the Energy Policy and Conservation Act to provide statutory authority for the WaterSense Program of the EPA, which allows water-efficient products, buildings, landscapes, facilities, processes, and services to bear a &quot;WaterSense&quot; label.</p>   <p> (Sec. 4307) The U.S. Fish and Wildlife Service must use the most expeditious procedure practicable to process and administer certain permits that allow the taking of certain wild animals, such as bald eagles. </p> <p>(Sec. 4308) The Klamath Basin Water Supply Enhancement Act of 2000 is amended to authorize Interior to align water supplies and demand for irrigation water users associated with the Klamath Project, which is a Reclamation project in California and Oregon.</p> <p> (Sec. 4309) The federal cost share for the operation and maintenance of certain dikes owned by Reclamation must be 100%.</p> <p> (Sec. 4310) The bill authorizes Interior, in cooperation with Wyoming, to amend the Definite Plan Report for the Seedskadee Project to enable the use of all active storage capacity of Fontenelle Dam and Reservoir.</p> <p> (Sec. 4311) The Water Infrastructure Improvements for the Nation Act is amended to: (1) revise the requirements governing the Blackfeet settlement trust fund, (2) extend through FY2028 appropriations for the Indian Irrigation Fund as well as a program of the Corps of Engineers that assists Indian tribes with certain irrigation projects, and (3) extend through FY2030 appropriations for the High-Hazard Indian Dam Safety Deferred Maintenance Fund.</p> <p>(Sec. 4315) The bill designates the U.S. courthouse at 300 South Fourth Street in Minneapolis, Minnesota, as the &quot;Diana E. Murphy United States Courthouse.&quot; </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ270/PLAW-115publ270.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ270/PLAW-115publ270_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ270/PLAW-115publ270.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/3021",
       "votes": []
     },
     {
@@ -3383,6 +3596,39 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ256/PLAW-115publ256_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ256/PLAW-115publ256.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/2259",
+      "votes": []
+    },
+    {
+      "id": "hr4958-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "4958",
+      "title": "Veterans' Compensation Cost-of-Living Adjustment Act of 2018",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Bost, Mike",
+        "party": "R",
+        "state": "IL"
+      },
+      "introduced_date": "2018-02-07",
+      "latest_action": {
+        "date": "2018-10-09",
+        "text": "Became Public Law No: 115-258."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Department of Veterans Affairs",
+        "Disability assistance",
+        "Inflation and prices",
+        "Veterans' pensions and compensation"
+      ],
+      "summary_crs": " <p><strong>Veterans' Compensation Cost-of-Living Adjustment Act of 2018</strong></p> <p> (Sec. 2) This bill directs the Department of Veterans Affairs to increase, as of December 1, 2018, the rates of veterans' disability compensation, additional compensation for dependents, the clothing allowance for certain disabled veterans, and dependency and indemnity compensation for surviving spouses and children.</p> <p>Each such increase shall be the same percentage as the increase in benefits provided under title II (Old Age, Survivors and Disability Insurance) of the Social Security Act, on the same effective date.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ258/PLAW-115publ258.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ258/PLAW-115publ258_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ258/PLAW-115publ258.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/4958",
       "votes": []
     },
     {
@@ -3691,6 +3937,37 @@
       "votes": []
     },
     {
+      "id": "hr4318-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "4318",
+      "title": "Miscellaneous Tariff Bill Act of 2018",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Brady, Kevin",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2017-11-09",
+      "latest_action": {
+        "date": "2018-09-13",
+        "text": "Became Public Law No: 115-239."
+      },
+      "outcome": "enacted",
+      "policy_area": "Foreign Trade and International Finance",
+      "subjects": [
+        "Customs enforcement",
+        "Tariffs",
+        "User charges and fees"
+      ],
+      "summary_crs": " <p><b>Miscellaneous Tariff Bill Act of 2018</b></p> <p>This bill amends the Harmonized Tariff Schedule of the United States to: (1) repeal expired reductions in rates of duty for specified chemicals and other items; and (2) provide for duty suspensions and reductions through December 31, 2020, for specified chemicals and other items.</p> <p>(Sec. 1665) The bill amends the Consolidated Omnibus Budget Reconciliation Act of 1985 to extend through October 13, 2027 (currently, July 21, 2027), the authority of the Department of the Treasury to collect certain customs user fees for the processing of formally or informally entered or released merchandise.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ239/PLAW-115publ239.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ239/PLAW-115publ239_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ239/PLAW-115publ239.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/4318",
+      "votes": []
+    },
+    {
       "id": "sres525-115",
       "congress": 115,
       "type": "sres",
@@ -3923,6 +4200,39 @@
       "votes": []
     },
     {
+      "id": "s2245-115",
+      "congress": 115,
+      "type": "s",
+      "number": "2245",
+      "title": "KIWI Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hirono, Mazie K.",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2017-12-18",
+      "latest_action": {
+        "date": "2018-08-01",
+        "text": "Became Public Law No: 115-226."
+      },
+      "outcome": "enacted",
+      "policy_area": "Immigration",
+      "subjects": [
+        "Immigration status and procedures",
+        "New Zealand",
+        "Oceania",
+        "U.S. and foreign investments",
+        "Visas and passports"
+      ],
+      "summary_crs": " <p><b>Knowledgeable Innovators and Worthy Investors Act or the KIWI Act</b></p> <p> (Sec. 2) This bill makes New Zealand nationals eligible to enter the United States as nonimmigrant traders and investors as provided for under the Immigration and Nationality Act if New Zealand provides reciprocal nonimmigrant treatment to U.S. nationals.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ226/PLAW-115publ226.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ226/PLAW-115publ226_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ226/PLAW-115publ226.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/2245",
+      "votes": []
+    },
+    {
       "id": "s2850-115",
       "congress": 115,
       "type": "s",
@@ -3971,6 +4281,36 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ224/PLAW-115publ224_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ224/PLAW-115publ224.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/2353",
+      "votes": []
+    },
+    {
+      "id": "s1182-115",
+      "congress": 115,
+      "type": "s",
+      "number": "1182",
+      "title": "National Flood Insurance Program Extension Act of 2018",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Young, Todd",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2017-05-18",
+      "latest_action": {
+        "date": "2018-07-31",
+        "text": "Became Public Law No: 115-225."
+      },
+      "outcome": "enacted",
+      "policy_area": "Finance and Financial Sector",
+      "subjects": [
+        "Disaster relief and insurance",
+        "Floods and storm protection"
+      ],
+      "summary_crs": " <p><b>National Flood Insurance Program Extension Act of 2018</b></p> <p>(Sec. 2) This bill amends the National Flood Insurance Act of 1968 to reauthorize the National Flood Insurance Program through November 30, 2018.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ225/PLAW-115publ225.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ225/PLAW-115publ225_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ225/PLAW-115publ225.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/1182",
       "votes": []
     },
     {
@@ -4427,6 +4767,148 @@
       "votes": []
     },
     {
+      "id": "hr2122-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "2122",
+      "title": "To reinstate and extend the deadline for commencement of construction of a hydroelectric project involving Jennings Randolph Dam.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McKinley, David B.",
+        "party": "R",
+        "state": "WV"
+      },
+      "introduced_date": "2017-04-25",
+      "latest_action": {
+        "date": "2018-07-23",
+        "text": "Became Public Law No: 115-205."
+      },
+      "outcome": "enacted",
+      "policy_area": "Energy",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Alternative and renewable resources",
+        "Dams and canals",
+        "Electric power generation and transmission",
+        "Federal Energy Regulatory Commission (FERC)",
+        "Licensing and registrations",
+        "West Virginia"
+      ],
+      "summary_crs": " <p>(Sec.\t1)\tThis bill authorizes the Federal Energy Regulatory Commission (FERC), upon request, to extend for up to six years the time period during which construction must commence on the Jennings Randolph Hydroelectric Project located on the North Branch of the Potomac River in Garrett County, Maryland, and Mineral County, West Virginia.</p> <p>Additionally, FERC may reinstate the construction license if it is expired.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ205/PLAW-115publ205.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ205/PLAW-115publ205_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ205/PLAW-115publ205.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/2122",
+      "votes": []
+    },
+    {
+      "id": "hr2292-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "2292",
+      "title": "To extend a project of the Federal Energy Regulatory Commission involving the Cannonsville Dam.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Faso, John J.",
+        "party": "R",
+        "state": "NY"
+      },
+      "introduced_date": "2017-05-02",
+      "latest_action": {
+        "date": "2018-07-23",
+        "text": "Became Public Law No: 115-206."
+      },
+      "outcome": "enacted",
+      "policy_area": "Energy",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Alternative and renewable resources",
+        "Dams and canals",
+        "Electric power generation and transmission",
+        "Federal Energy Regulatory Commission (FERC)",
+        "Licensing and registrations",
+        "New York City",
+        "New York State",
+        "Water storage"
+      ],
+      "summary_crs": " <p>(Sec.\t1)\tThis bill authorizes the Federal Energy Regulatory Commission (FERC), upon request, to extend for up to eight years the time period during which construction must commence on the Cannonsville Hydroelectric Project located on the West Branch of the Delaware River in the Catskill Mountains of upstate New York. (The City of New York was granted a construction license for the Cannonsville Hydroelectric Project on May 13, 2014.)</p> <p>Additionally, FERC may reinstate the construction license if it is expired.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ206/PLAW-115publ206.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ206/PLAW-115publ206_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ206/PLAW-115publ206.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/2292",
+      "votes": []
+    },
+    {
+      "id": "hr446-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "446",
+      "title": "To extend the deadline for commencement of construction of a hydroelectric project.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Griffith, H. Morgan",
+        "party": "R",
+        "state": "VA"
+      },
+      "introduced_date": "2017-01-11",
+      "latest_action": {
+        "date": "2018-07-23",
+        "text": "Became Public Law No: 115-202."
+      },
+      "outcome": "enacted",
+      "policy_area": "Energy",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Alternative and renewable resources",
+        "Dams and canals",
+        "Electric power generation and transmission",
+        "Federal Energy Regulatory Commission (FERC)",
+        "Licensing and registrations",
+        "Virginia"
+      ],
+      "summary_crs": " <p>(Sec.\t1)\tThis bill authorizes the Federal Energy Regulatory Commission (FERC), upon request, to extend for up to six years the time period during which construction must commence on the Gathright Hydroelectric Project located in Alleghany County, Virginia.</p> <p>Additionally, FERC may reinstate the construction license if it is expired.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ202/PLAW-115publ202.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ202/PLAW-115publ202_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ202/PLAW-115publ202.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/446",
+      "votes": []
+    },
+    {
+      "id": "hr447-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "447",
+      "title": "To extend the deadline for commencement of construction of a hydroelectric project.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Griffith, H. Morgan",
+        "party": "R",
+        "state": "VA"
+      },
+      "introduced_date": "2017-01-11",
+      "latest_action": {
+        "date": "2018-07-23",
+        "text": "Became Public Law No: 115-203."
+      },
+      "outcome": "enacted",
+      "policy_area": "Energy",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Alternative and renewable resources",
+        "Dams and canals",
+        "Electric power generation and transmission",
+        "Federal Energy Regulatory Commission (FERC)",
+        "Licensing and registrations",
+        "Virginia"
+      ],
+      "summary_crs": " <p>(Sec.\t1)\tThis bill authorizes the Federal Energy Regulatory Commission (FERC), upon request, to extend for up to six years the time period during which construction must commence on the Flannagan Dam and Reservoir Hydroelectric Project located in Dickenson County, Virginia.</p> <p>Additionally, FERC may reinstate the construction license if it is expired.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ203/PLAW-115publ203.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ203/PLAW-115publ203_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ203/PLAW-115publ203.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/447",
+      "votes": []
+    },
+    {
       "id": "hr951-115",
       "congress": 115,
       "type": "hr",
@@ -4524,6 +5006,39 @@
       "text_url_xml": "https://www.congress.gov/115/bills/sres386/BILLS-115sres386ats.xml",
       "text_url_pdf": "https://www.congress.gov/115/bills/sres386/BILLS-115sres386ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/386",
+      "votes": []
+    },
+    {
+      "id": "sres558-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "558",
+      "title": "A resolution designating July 30, 2018, as \"National Whistleblower Appreciation Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Grassley, Chuck",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2018-06-28",
+      "latest_action": {
+        "date": "2018-07-12",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Employment discrimination and employee rights",
+        "Fraud offenses and financial crimes",
+        "Government employee pay, benefits, personnel management",
+        "Government ethics and transparency, public corruption"
+      ],
+      "summary_crs": " <p>Designates July 30, 2018, as National Whistleblower Appreciation Day.</p> <ul> </ul>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres558/BILLS-115sres558ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres558/BILLS-115sres558ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres558/BILLS-115sres558ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/558",
       "votes": []
     },
     {
@@ -4625,6 +5140,40 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ185/PLAW-115publ185_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ185/PLAW-115publ185.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/3249",
+      "votes": []
+    },
+    {
+      "id": "hr3663-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "3663",
+      "title": "To designate the medical center of the Department of Veterans Affairs in Huntington, West Virginia, as the Hershel \"Woody\" Williams VA Medical Center.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Jenkins, Evan H.",
+        "party": "R",
+        "state": "WV"
+      },
+      "introduced_date": "2017-08-22",
+      "latest_action": {
+        "date": "2018-06-15",
+        "text": "Became Public Law No: 115-183."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Congressional tributes",
+        "Department of Veterans Affairs",
+        "Government buildings, facilities, and property",
+        "Health facilities and institutions",
+        "Veterans' medical care",
+        "West Virginia"
+      ],
+      "summary_crs": " <p>(Sec. 1) This bill designates the medical center of the Department of Veterans Affairs in Huntington, West Virginia, as the &quot;Hershel `Woody' Williams VA Medical Center.&quot;</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ183/PLAW-115publ183.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ183/PLAW-115publ183_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ183/PLAW-115publ183.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/3663",
       "votes": []
     },
     {
@@ -4730,6 +5279,81 @@
       "votes": []
     },
     {
+      "id": "sjres57-115",
+      "congress": 115,
+      "type": "sjres",
+      "number": "57",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by Bureau of Consumer Financial Protection relating to \"Indirect Auto Lending and Compliance with the Equal Credit Opportunity Act\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Moran, Jerry",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2018-03-22",
+      "latest_action": {
+        "date": "2018-05-21",
+        "text": "Became Public Law No: 115-172."
+      },
+      "outcome": "enacted",
+      "policy_area": "Finance and Financial Sector",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Congressional oversight",
+        "Consumer Financial Protection Bureau",
+        "Consumer credit",
+        "Interest, dividends, interest rates",
+        "Motor vehicles"
+      ],
+      "summary_crs": " <p>This joint resolution nullifies the rule submitted by the Consumer Financial Protection Bureau and printed in the Congressional Record on December 6, 2017, relating to indirect auto lending and compliance with the Equal Credit Opportunity Act. The rule provides guidance for compliance with fair lending requirements for third-party auto lenders. </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ172/PLAW-115publ172.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ172/PLAW-115publ172_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ172/PLAW-115publ172.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-joint-resolution/57",
+      "votes": []
+    },
+    {
+      "id": "sconres36-115",
+      "congress": 115,
+      "type": "sconres",
+      "number": "36",
+      "title": "A concurrent resolution setting forth the congressional budget for the United States Government for fiscal year 2019 and setting forth the appropriate budgetary levels for fiscal years 2020 through 2028.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Paul, Rand",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2018-04-18",
+      "latest_action": {
+        "date": "2018-05-17",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 21 - 76. Record Vote Number: 99."
+      },
+      "outcome": "failed",
+      "policy_area": "Economics and Public Finance",
+      "subjects": [
+        "Appropriations",
+        "Budget deficits and national debt",
+        "Budget process",
+        "Defense spending",
+        "Disability assistance",
+        "Executive agency funding and structure",
+        "Government trust funds",
+        "Health care costs and insurance",
+        "Health programs administration and funding",
+        "Legislative rules and procedure",
+        "Postal service",
+        "Social security and elderly assistance",
+        "U.S. Postal Service"
+      ],
+      "summary_crs": " <p>Establishes the congressional budget for the federal government for FY2019 and sets forth budgetary levels for FY2020-FY2028.</p> <p> Recommends levels and amounts for FY2019-FY2028 in both houses of Congress for: </p> <ul> <li> federal revenues, </li> <li> new budget authority, </li> <li> budget outlays, </li> <li> deficits, </li> <li> public debt, </li> <li> debt held by the public, and </li> <li> the major functional categories of spending. </li> </ul> <p>Recommends levels and amounts for FY2019-FY2028 in the Senate for Social Security and Postal Service discretionary administrative expenses. </p> <p>Includes reconciliation instructions directing: (1) several Senate authorizing committees to report and submit to the Senate Budget Committee legislation to reduce the deficit, and (2) the Senate Finance Committee to report and submit to the Senate Budget Committee legislation to reduce the deficit and legislation to reduce revenues. </p> <p>(Under the Congressional Budget Act of 1974, reconciliation bills are considered by Congress using expedited legislative procedures that prevent a filibuster and restrict amendments in the Senate.) </p> <p>Establishes reserve funds that provide flexibility in applying budget enforcement rules to legislation relating to efficiencies, consolidations, and other savings; or health savings accounts. </p> <p>Sets forth budget enforcement procedures for legislation considered in the Senate. </p>",
+      "text_url_html": "https://www.congress.gov/115/bills/sconres36/BILLS-115sconres36pcs.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sconres36/BILLS-115sconres36pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sconres36/BILLS-115sconres36pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-concurrent-resolution/36",
+      "votes": []
+    },
+    {
       "id": "sres440-115",
       "congress": 115,
       "type": "sres",
@@ -4804,6 +5428,43 @@
       "text_url_xml": "https://www.congress.gov/115/bills/sres431/BILLS-115sres431ats.xml",
       "text_url_pdf": "https://www.congress.gov/115/bills/sres431/BILLS-115sres431ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/431",
+      "votes": []
+    },
+    {
+      "id": "sres426-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "426",
+      "title": "A resolution supporting the goals of International Women's Day.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Shaheen, Jeanne",
+        "party": "D",
+        "state": "NH"
+      },
+      "introduced_date": "2018-03-08",
+      "latest_action": {
+        "date": "2018-04-18",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Voice Vote. (consideration: CR S2280-2283; text: CR S2281-2283)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Civil Rights and Liberties, Minority Issues",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Crimes against women",
+        "Economic development",
+        "Human rights",
+        "Racial and ethnic relations",
+        "Religion",
+        "Sex, gender, sexual orientation discrimination",
+        "Women's employment",
+        "Women's rights"
+      ],
+      "summary_crs": " <p>Supports the goals of International Women's Day. </p> <p>Recognizes that the empowerment of women is linked to a country's potential to generate economic growth, sustainable democracy, and inclusive security. </p> <p>Recognizes individuals in the United States and around the world, including women human rights defenders and civil society leaders, who have worked to ensure that women are guaranteed equality and basic human rights. </p> <p>Recognizes the unique cultural, historical, and religious differences throughout the world and urges the U.S. government to act with respect and understanding toward legitimate differences when promoting any policies.</p> <p>Reaffirms the commitment to: (1) end discrimination and violence against women and girls, and ensure their safety and welfare; (2) pursue policies that guarantee the basic human rights of women and girls worldwide; and (3) promote women's participation in every aspect of society and community. </p> <p> Supports sustainable global development that seeks to achieve gender equality.</p>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres426/BILLS-115sres426ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres426/BILLS-115sres426ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres426/BILLS-115sres426ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/426",
       "votes": []
     },
     {
@@ -5081,6 +5742,41 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ157/PLAW-115publ157_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ157/PLAW-115publ157.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/2154",
+      "votes": []
+    },
+    {
+      "id": "s188-115",
+      "congress": 115,
+      "type": "s",
+      "number": "188",
+      "title": "EGO Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cassidy, Bill",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2017-01-23",
+      "latest_action": {
+        "date": "2018-03-27",
+        "text": "Became Public Law No: 115-158."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Appropriations",
+        "Art, artists, authorship",
+        "Congressional officers and employees",
+        "Federal officials",
+        "Government employee pay, benefits, personnel management",
+        "Members of Congress",
+        "Presidents and presidential powers, Vice Presidents"
+      ],
+      "summary_crs": " <p><strong>Eliminating Government-funded Oil-painting Act or the EGO Act</strong></p> <p>(Sec. 2) This bill prohibits the use of funds appropriated or otherwise made available to the federal government to pay for an official portrait of an officer or employee of the federal government, including the President, the Vice President, a Member of Congress, the head of an executive agency, or the head of an office of the legislative branch.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ158/PLAW-115publ158.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ158/PLAW-115publ158_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ158/PLAW-115publ158.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/188",
       "votes": []
     },
     {
@@ -5964,6 +6660,53 @@
       "votes": []
     },
     {
+      "id": "hr1-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "1",
+      "title": "An act to provide for reconciliation pursuant to titles II and V of the concurrent resolution on the budget for fiscal year 2018.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Brady, Kevin",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2017-11-02",
+      "latest_action": {
+        "date": "2017-12-22",
+        "text": "Became Public Law No: 115-97."
+      },
+      "outcome": "enacted",
+      "policy_area": "Taxation",
+      "subjects": [
+        "Accounting and auditing",
+        "Administrative law and regulatory procedures",
+        "Adoption and foster care",
+        "Agricultural equipment and machinery",
+        "Alaska",
+        "Alaska Natives and Hawaiians",
+        "Alcoholic beverages",
+        "Alternative and renewable resources",
+        "American Samoa",
+        "Arctic and polar regions",
+        "Art, artists, authorship",
+        "Assault and harassment offenses",
+        "Aviation and airports",
+        "Bank accounts, deposits, capital",
+        "Business expenses",
+        "Business investment and capital",
+        "Capital gains tax",
+        "Caribbean area",
+        "Charitable contributions"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was reported to the House on November 13, 2017. The summary of that version is repeated here.)</p> <p><b>Tax Cuts and Jobs Act </b></p> <p>This bill amends the Internal Revenue Code (IRC) to reduce tax rates and modify policies, credits, and deductions for individuals and businesses. </p> <p>TITLE I--TAX REFORM FOR INDIVIDUALS </p> <p>Subtitle A--Simplification and Reform of Rates, Standard Deduction, and Exemptions </p> <p>(Sec. 1001) This section replaces the seven existing tax brackets (10%, 15%, 25%, 28%, 33%, 35%, and 39.6%) with four brackets (12%, 25%, 35%, and 39.6%) and specifies the income levels that apply for each bracket. </p> <p>Under the bill, most of the income that is currently included in the 10% and 15% brackets is taxed at 12%, and most of the income currently included in the 25% and 28% brackets is taxed at 25%. The bill also raises the threshold for income that is taxed at the 39.6% rate. </p> <p>The bill imposes an additional tax on taxpayers with adjusted gross income that exceeds $1 million ($1.2 million for married taxpayers filing jointly) by phasing out the benefit of the 12% tax bracket, as measured against the 39.6% bracket. </p> <p>The bill also: (1) modifies the taxation of the unearned income of children, and (2) requires the chained Consumer Price Index to be used to index the brackets for inflation. </p> <p>(Sec. 1002) This section increases the standard deduction to $24,400 for married individuals filing a joint return, to $18,300 for head-of-household filers, and to $12,200 for all other taxpayers. (Under current law, the standard deduction for 2017 is $6,350 for single individuals and married individuals filing separate returns, $9,350 for heads of households, and $12,700 for married individuals filing a joint return and surviving spouses.) </p> <p>(Sec. 1003) This section: (1) repeals the deduction for personal exemptions (2) modifies the requirements that determine who is required to file a tax return, and (3) repeals the increased deduction for qualified disability trusts. </p> <p>(Sec. 1004) This section establishes a maximum 25% rate on the qualified business income of individuals (i.e., business income of an individual from a partnership, S corporation, or sole proprietorship which is currently taxed using individual income tax rates.) </p> <p>Qualified business income is all net business income from a passive business activity plus the capital percentage of net business income from an active business activity, reduced by carryover business losses and by certain net business losses from the current year, as specified in the bill. </p> <p>The bill provides a reduced tax rate for certain small businesses with net active business income below an indexed threshold of $75,000 for married individuals filing jointly. The amount taxed at the rate is reduced by the excess of taxable income over an indexed threshold of $150,000. </p> <p>(Sec. 1005) This section makes several conforming changes related to the modified individual tax rates. </p> <p>Subtitle B--Simplification and Reform of Family and Individual Tax Credits </p> <p>(Sec. 1101) This section increases the child tax credit and expands it to include a new family tax credit. </p> <p>The bill allows credits of: $1,600 ($1,000 under current law) per qualifying child under the age of 17, and $300 for the taxpayer (both spouses in the case of married taxpayers filing a joint return) and each dependent of the taxpayer who is not a qualifying child under age 17. </p> <p>The credits are phased out at adjusted gross income (AGI) levels of $230,000 for married taxpayers filing joint returns and $115,000 for individuals. </p> <p>The refundable portion of the credit is limited to $1,000 per qualifying child, adjusted for inflation after 2017. The $300 credit for the taxpayer, spouse, and non-child dependents of the taxpayer expires after 2022. </p> <p>(Sec. 1102) This section repeals the nonrefundable credits for: (1) taxpayers who are over 65 or retired on the account of permanent and total disability, (2) interest on certain home mortgages covered by a mortgage credit certificate issued by a qualified governmental unit, and (3) new plug-in electric drive motor vehicles. </p> <p>(Sec. 1103) This section modifies the taxpayer identification number requirements for the child tax credit, the earned income tax credit (EITC), and the American Opportunity tax credit. </p> <p>(Sec. 1104) This section specifies that a taxpayer must claim all allowable deductions when determining net earnings from self-employment for the purpose of the EITC. </p> <p>It also modifies the requirements for employer reporting of wages to require employers to report, along with the aggregate wages paid and employment taxes collected, the name and address of each employee and the amount of reportable wages received by each of those employees. </p> <p>(Sec. 1105) This section limits earned income, for purposes of the EITC, to amounts substantiated by the taxpayer on statements furnished or returns filed under third party information reporting requirements or amounts substantiated by the taxpayer's books and records. </p> <p>Subtitle C--Simplification and Reform of Education Incentives </p> <p>(Sec. 1201) This section repeals the Lifetime Learning credit and modifies the American Opportunity credit, which, under current law, may both be used for qualified tuition and related expenses. </p> <p>The modified American Opportunity credit may be claimed with respect to a student for five taxable years (four years under current law). For a credit claimed with respect to the student's fifth taxable year, the credit is half the value of the American Opportunity credit that is applicable to the first four taxable years. A student may claim the credit for any of the first five years of postsecondary education. </p> <p>(Sec. 1202) This section consolidates and modifies several provisions regarding education savings accounts to replace Coverdell savings accounts with modified rules for tax-exempt qualified tuition programs (known as 529 plans). </p> <p>The bill prohibits new contributions to Coverdell savings accounts after 2017. Rollovers from one Coverdell savings account to another are permitted after this date. 529 plans may receive rollovers from Coverdell savings accounts. </p> <p>The bill modifies 529 plans to allow the plans to distribute up to $10,000 in expenses for tuition incurred during the taxable year in connection with the enrollment or attendance of the designated beneficiary at a public, private, or religious elementary or secondary school. The $10,000 limitation applies on a per-student basis for distributions from all 529 accounts. </p> <p>The bill also modifies 529 plans to: (1) allow distributions to be used for certain expenses required for attendance in a registered apprenticeship program, and (2) specify that an unborn child may qualify as a designated beneficiary. </p> <p>(Sec. 1203) This section modifies the exclusion of student loan discharges from gross income, to include within the exclusion certain discharges on account of the death or total and permanent disability of the student. </p> <p>The section also modifies the gross income exclusion for amounts received under the National Health Service Corps loan repayment program or certain state loan repayment programs to include any amount received by an individual under the Indian Health Service loan repayment program. </p> <p>(Sec. 1204) This section repeals several education-related deductions and exclusions, including: </p> <ul> <li> the deduction for interest on education loans, </li> <li> the deduction for qualified tuition and related expenses, </li> <li> the exclusion for income from U.S. savings bonds used to pay higher education tuition and fees, </li> <li> the exclusion for educational assistance programs, and</li> <li>the exclusion for qualified tuition reductions. </li> </ul> <p>(Sec. 1205) This section allows funds from 529 accounts to be rolled over to an ABLE account without penalty if the ABLE account is owned by the designated beneficiary of that 529 account, or a member of the designated beneficiary's family. (Tax-favored ABLE [Achieving a Better Life Experience] accounts are designed to enable individuals with disabilities to save for and pay for disability-related expenses.) </p> <p>Subtitle D--Simplification and Reform of Deductions </p> <p>(Sec. 1301) This section repeals the overall limitation on itemized deductions, which currently applies when AGI exceeds a specified amount. </p> <p>(Sec. 1302) This section modifies the deduction for home mortgage interest to: (1) limit the deduction to mortgages for a principal residence, (2) limit the deduction for debt incurred after November 2, 2017, to mortgages of up to $500,000 (currently $1 million), and (3) prohibit the deduction from being used for interest paid on home equity loans. </p> <p>(Sec. 1303) For individual taxpayers, this section prohibits the deductions for state, local, and foreign real property taxes; and state and local personal property taxes unless the taxes are paid or accrued in a trade or business or for expenses for the production of income. </p> <p>The bill includes an exception that allows an individual to deduct up to $10,000 in state and local property taxes, in addition to taxes that may be deducted because they are paid or accrued in a trade or business or for expenses for the production of income. </p> <p>The bill also repeals the deduction for state and local income, war profits, and excess profits taxes of individuals. </p> <p>(Sec. 1304) This section repeals the deduction for personal casualty and theft losses, with an exception for the deduction, as modified by the Disaster Tax Relief and Airport and Airway Extension Act of 2017, for individuals who sustained a personal casualty loss as a result of Hurricanes Harvey, Irma, or Maria. </p> <p>(Sec. 1305) This section modifies a provision that limits the deduction for wagering losses to the extent of the gains from such transactions. The bill specifies that &quot;losses from wagering transactions&quot; include otherwise deductible expenses incurred in carrying out a wagering transaction (e.g., expenses for traveling to or from a casino). </p> <p>(Sec. 1306) This section modifies the deduction for charitable contributions to: (1) increase from 50% to 60% the income-based percentage limitations for contributions of cash to public charities, (2) prohibit a charitable deduction for college athletic event seating rights, (3) replace the statutory charitable mileage rate of 14 cents per mile with a rate that takes into account the variable cost of operating an automobile (adjusted for inflation), (4) repeal the exception to substantiation requirements for certain contributions reported by the donee organization. </p> <p>(Sec. 1307) This section repeals the deduction for expenses paid or incurred in connection with determination, collection, or refund of any tax. </p> <p>(Sec. 1308) This section repeals the deduction for unreimbursed medical expenses. </p> <p>(Sec. 1309) This section repeals the deduction for alimony or separate maintenance payments from the payer spouse and the corresponding inclusion of the payments in the gross income of the recipient spouse. </p> <p>(Sec. 1310) This section repeals the deduction for moving expenses, with an exception for moving expense of members of the Armed Forces. </p> <p>(Sec. 1311) This section repeals the deductions and exclusions for contributions to Archer Medical Savings Accounts. </p> <p>(Sec. 1312) This section prohibits any deduction for expenses attributable to the trade or business of being an employee, except for expenses that are deductible from gross income (above-the-line deductions). </p> <p>This section also repeals the above-the-line deductions for: (1) certain expenses of performing artists; (2) expenses of state or local government officials performing services on a fee basis; and (3) expenses of elementary and secondary school teachers for professional development or books, supplies, equipment, and materials used in the classroom. </p> <p>Subtitle E--Simplification and Reform of Exclusions and Taxable Compensation </p> <p>(Sec. 1401) This section modifies the exclusion for employer-provided housing to: (1) limit the exclusion to $50,000 ($25,000 in the case of a married individual filing a separate return), subject to a phase-out for certain highly compensated employees; (2) deny the deduction to 5% owners; and (2) prohibit the exclusion from applying to more than one residence of the taxpayer at any given time. </p> <p>(Sec. 1402) The section modifies the exclusion of gain from the sale of principal residence to: (1) extend the time-period during which a taxpayer must own and use the residence as a principal residence to at least five of the eight years before the sale or exchange (two of five years under current law), (2) limit the exclusion to one sale or exchange during any five-year period, and (3) phase out the exclusion when a taxpayer's average AGI for the tax year and the two preceding years exceeds $250,000 ($500,000 if married filing a joint return). </p> <p>(Sec. 1403) This section repeals: (1) the exclusion from gross income of the value of certain employee achievement awards, and (2) the limitation on the deduction for the cost of employee achievement awards. </p> <p>(Sec. 1404) This section repeals the exclusions from gross income and wages for employer-provided dependent care assistance programs for taxable years beginning after December 31, 2022. </p> <p>(Sec. 1405) This section repeals the exclusion from gross income and wages for qualified moving expense reimbursements. </p> <p>(Sec. 1406) This section repeals the exclusion from gross income for adoption assistance programs. </p> <p>Subtitle F--Simplification and Reform of Savings, Pensions, Retirement </p> <p>(Sec. 1501) This section repeals the rule that allows Individual Retirement Arrangement (IRA) contributions to one type of IRA (traditional or Roth) to be recharacterized as a contribution to the other type of IRA. </p> <p>(Sec. 1502) This section reduces from 62 to 59 1/2 the minimum age for in-service distributions under pension plans and deferred compensation plans of state and local government employers (governmental section 457[b] plans). </p> <p>(Sec. 1503) The Department of the Treasury must modify regulations governing hardship distributions from certain retirement plans to: (1) delete the requirement that an employee be prohibited from making elective deferrals and employee contributions for six months after the receipt of a hardship distribution in order for the distribution to be deemed necessary to satisfy an immediate and heavy financial need, and (2) make any other modifications necessary to carry out the purposes of the rule allowing elective deferrals to be distributed in the case of hardship. </p> <p>(Sec. 1504) This section allows earnings on elective deferrals under a section 401(k) plan, as well as qualified nonelective contributions and qualified matching contributions (and associated earnings), to be distributed on account of hardship. A distribution is not treated as failing to be on account of hardship solely because the employee does not take any available plan loan. </p> <p>(Sec. 1505) This section extends the period during which a qualified plan loan offset amount may be contributed to an eligible retirement plan as a rollover contribution. A &quot;qualified plan loan offset amount&quot; is a plan loan offset amount that is treated as distributed from a qualified retirement plan, a section 403(b) plan or a governmental section 457(b) plan solely by reason of the termination of the plan or the failure to meet the repayment terms of the loan because of the employee's separation from service, whether due to layoff, cessation of business, termination of employment, or otherwise. </p> <p>(Sec. 1506) This section modifies the nondiscrimination requirements for certain defined benefit retirement plans that: (1) limit participation or certain features to a closed class, such as individuals who were hired before a certain date; or (2) have closed or ceased benefit accruals for all participants (frozen plan).</p> <p>Subtitle G--Estate, Gift, and Generation-skipping Transfer Taxes </p> <p>(Sec. 1601) This section doubles the estate and gift tax exemption amount for decedents dying and gifts made after December 31, 2017, by increasing the basic exclusion amount from $5 million to $10 million. (Under current law, the amount is indexed for inflation occurring after 2011.) </p> <p>(Sec. 1602) This section repeals the estate and generation-skipping transfer taxes for the estates of decedents dying or generation-skipping transfers after December 31, 2024. </p> <p>TITLE II--ALTERNATIVE MINIMUM TAX REPEAL </p> <p>(Sec. 2001) This section repeals the individual and corporate alternative minimum taxes. </p> <p>TITLE III--BUSINESS TAX REFORM </p> <p>Subtitle A--Tax Rates </p> <p>(Sec. 3001) This section reduces the corporate tax rate from a maximum of 35% under the existing graduated rate structure to a flat 20% rate (25% for personal services corporations).</p> <p>The bill also reduces the 70% dividends received deduction to 50% and the 80% dividends received deduction to 65%. </p> <p>The bill imposes an increased tax on taxpayers who violate rules requiring the use of a normalization method of accounting. </p> <p>This section applies to tax years beginning after 2017. </p> <p>Subtitle B--Cost Recovery </p> <p>(Sec. 3101) This section allows increased expensing of the costs of certain business property. The bill: </p> <ul> <li> allows 100% expensing for certain business property acquired and placed in service after September 27, 2017, and before January 1, 2023 (January 1, 2024 for longer production period property and certain aircraft); </li> <li> removes the requirement that the original use of qualified property must commence with the taxpayer, subject to certain acquisition requirements and anti-abuse rules; </li> <li> excludes from the definition of &quot;qualified property&quot; the property of certain businesses that are not subject to the limitation on interest expenses; and </li> <li> increases from $8,000 to $16,000 the limit on depreciation deductions for certain passenger automobiles acquired and placed in service after September 27, 2017, and before January 1, 2023.</li> </ul> <p>Subtitle C--Small Business Reforms </p> <p>(Sec. 3201) This section expands the expensing of certain depreciable business assets that is currently permitted under section 179 of the IRC. </p> <p>The provision modifies section 179 to: </p> <ul> <li> increase the maximum amount a taxpayer may expense to $5 million (currently $500,000) for taxable years beginning before January 1, 2023;</li> <li> increase the phaseout threshold amount to $20 million (currently $2 million) for taxable years beginning before January 1, 2023;</li> <li> index the amounts for inflation after 2018, and </li> <li> expand the definition of qualified real property to include qualified energy efficient heating and air-conditioning property acquired and placed in service by the taxpayer after November 2, 2017. </li> </ul> <p>(Sec. 3202) This section modifies the accounting rules for small businesses to: </p> <ul> <li> expand the group of taxpayers who qualify for the cash accounting method by increasing the limit for the gross receipts test from $5 million to $25 million (adjusted for inflation after 2018),</li> <li> allow any farming C corporation (or farming partnership with a C corporation partner) that meets the gross receipts test to use the cash method of accounting, </li> <li> exempt taxpayers that meet the gross receipts test from certain requirements to account for inventories, </li> <li> expand the exceptions for small taxpayers from the uniform capitalization rules to include any producer or reseller that meets the gross receipts test, and </li> <li> expand the exception for small construction contracts from the requirement to use the percentage-of-completion method. </li> </ul> <p>(Sec. 3203) This section exempts certain small businesses that meet the gross receipts test from the limitation on the deduction for business interest. </p> <p>(Sec. 3204) This section modifies the tax treatment of S corporation conversions to C corporations. </p> <p>Subtitle D--Reform of Business-related Exclusions, Deductions, etc. </p> <p>(Sec. 3301) This section limits the deduction for business interest to the sum of: (1) business interest income for the year, (2) 30% of the adjusted taxable income of the taxpayer for the taxable year, and (3) the floor plan financing interest of the taxpayer for the taxable year. </p> <p>The amount of any business interest not allowed as a deduction for any year may be carried forward for up to five years beyond the year in which the business interest was paid or accrued, treating business interest as allowed as a deduction on a first-in, first-out basis. </p> <p>&quot;Business interest income&quot; is the amount of interest includible in the gross income of the taxpayer for the taxable year which is properly allocable to a trade or business. It does not include investment interest or investment income. </p> <p>&quot;Floor plan financing interest&quot; is interest paid on debt used to finance the acquisition of motor vehicles held for sale to retail customers and secured by the inventory so acquired. </p> <p>The bill includes exceptions for: </p> <ul> <li> small businesses that meet the gross receipts test, </li> <li> the trade or business of performing services as an employee, </li> <li> a real property trade or business, and </li> <li> certain regulated public utilities. </li> </ul> <p>(Sec. 3302) This section modifies the net operating loss deduction to: (1) limit the deduction to 90% of taxable income, (2) adjust carryover amounts to account for the new limitation allow and allow an indefinite carryforward of net operating losses, (3) repeal the two-year and other specified carryback provisions, and (4) allow a one-year carryback for certain disaster losses incurred in the trade or business of farming or by certain small businesses. </p> <p>(Sec. 3303) This section modifies the rule providing for the nonrecognition of gain in the case of like-kind exchanges to limit the application of the rule to real property that is not held primarily for sale. </p> <p>(Sec. 3304) This section requires a contribution to capital, other than a contribution of money or property made in exchange for stock of a corporation or any interest in an entity, to be included in the gross income of a corporation. </p> <p>(Sec. 3305) This section eliminates the deduction for lobbying expenditures to influence the legislation of any local council or similar governing body, including an Indian tribal government. </p> <p>(Sec. 3306) This section repeals the deduction for income attributable to domestic production activities. </p> <p>(Sec. 3307) This section modifies the tax treatment of certain expenses for entertainment and fringe benefits. </p> <p>The bill denies deductions for amounts paid or incurred for: </p> <ul> <li> an activity generally considered to be entertainment, amusement or recreation; </li> <li> membership dues for any club organized for business, pleasure, recreation or other social purposes; </li> <li> a de minimis fringe that is primarily personal in nature and involving property or services that are not directly related to the taxpayer's trade or business; </li> <li> a facility or portion thereof used in connection with any of the above items; </li> <li> a qualified transportation fringe, including costs of operating a facility used for qualified parking, and </li> <li> an on-premises athletic facility provided by an employer to its employees. </li> </ul> <p>The bill specifies requirements for the IRS regulations implementing this section. </p> <p>The bill also: (1) includes exceptions for certain expenses that are treated as compensation or includible in the income of the recipient, (2) modifies the rules regarding reimbursed expenses, and (3) specifies that the exception to the 50% deduction limit for food or beverages applies to any expense excludible from the gross income of the recipient related to meals furnished for the convenience of the employer. </p> <p>(Sec. 3308) This section includes in unrelated business taxable income of a tax-exempt organization any expenses paid or incurred by the organization for certain fringe benefits for which a deduction is not allowed under section 274 of the IRC, including qualified transportation fringe benefits, a parking facility used in connection with qualified parking, or any on-premises athletic facility. </p> <p>(Sec. 3309) This section limits the deduction for Federal Deposit Insurance Corporation premiums for certain financial institutions with consolidated assets that exceed $10 billion. </p> <p>(Sec. 3310) This section repeals a provision that permits the tax-free rollover of certain gains from the sale of publicly traded securities into common stock or a partnership interest in a specialized small business investment company. </p> <p>(Sec. 3311) This section excludes certain patents, inventions, models, designs, secret formulas, or processes created by the taxpayer from the definition of a ''capital asset.'' </p> <p>(Sec. 3312) This section repeals the special rule for the sale or exchange of patents by the holder of the patent that treats the sale or exchange as the sale of a capital asset. </p> <p>(Sec. 3313) This section repeals the rule that provides for a technical termination of partnerships if, within any 12-month period, there is a sale or exchange of 50% or more of the total interest in partnership capital and profits. </p> <p>(Sec. 3314) This section requires a three-year holding period (one year under current law) for certain net long-term capital gains with respect to partnership interests held in connection with the performance of investment services. If the holder of an applicable partnership interest is allocated gain from the sale of property held for less than three years, that gain is treated as short-term capital gain and is taxed as ordinary income. </p> <p>(Sec. 3315) This section adjusts the amortization rules and schedules for certain research and experimentation expenditures. </p> <p>(Sec. 3316) This section prohibits attorneys from deducting legal expenses paid or incurred for contingency fee cases until the contingency is resolved. </p> <p>Subtitle E--Reform of Business Credits </p> <p>(Sec. 3401) This section repeals the credit for clinical testing expenses incurred in testing certain drugs for rare diseases or conditions (commonly referred to as orphan drugs). </p> <p>(Sec. 3402) This section repeals the credit for employer-provided child care. </p> <p>(Sec. 3403) This section repeals the credit for rehabilitation expenditures for certain buildings. </p> <p>(Sec. 3404) This section repeals the work opportunity tax credit.</p> <p>(Sec. 3405) This section repeal the deduction for certain unused business credits. </p> <p>(Sec. 3406) This section repeals the new markets tax credit. </p> <p>(Sec. 3407) This section repeals the credit for eligible expenditures of a small business to comply with requirements under the Americans with Disabilities Act of 1990. </p> <p>(Sec. 3408) This section revises the amount of the credit for the portion of employer Social Security taxes that are paid with respect to employee tips. </p> <p>Subtitle F--Energy Credits </p> <p>(Sec. 3501) This section modifies the credit for electricity produced from certain renewable resources to: (1) terminate the inflation adjustment for wind facilities with construction that begins after enactment of this bill to allow a credit of 1.5 cents per kilowatt hour (currently 2.4 cents for 2017), and (2) specify requirements for determining the beginning of construction. </p> <p>(Sec. 3502) This section modifies the credit for investment in energy property to extend the energy credit for fiber optic solar, fuel cell, microturbine, and combined heat and power system, geothermal heat pump, and small wind property for property with construction that begins before January 1, 2022. </p> <p>With respect to fiber optic solar, fuel cell, and small wind property, the bill reduces the 30% credit rate to 26% for property with construction that begins in 2020 and to 22% for property with construction that begins in 2021. For fuel cell property or small wind energy property, the credit rate is reduced to 10% if the property is not placed in service before 2024.</p> <p> The bill terminates the permanent credits for solar and geothermal property after 2027. </p> <p>The bill also specifies that construction may not be treated as beginning before any date unless there is a continuous program of construction which begins before the date and ends on the date that the property is placed in service.</p> <p>(Sec. 3503) This section extends the residential energy efficient property credit for fuel cell, small wind, and geothermal heat pump property expenditures through December 31, 2021. The bill reduces the credit rate for the property from 30% to 26% for property placed in service in 2020 and to 22% for property placed in service in 2021. </p> <p>(Sec. 3504) This section repeals the enhanced oil recovery credit. </p> <p>(Sec. 3505) This section repeals the credit for producing oil and gas from marginal wells. </p> <p>(Sec. 3506) This section modifies the tax credit for the production of electricity from advanced nuclear power facilities to: (1) establish requirements for the allocation of unutilized portions of the national megawatt capacity limitation, and (2) allow public entities to transfer the credit to project partners. </p> <p>Subtitle G--Bond Reforms </p> <p>(Sec. 3601) This section terminates the exclusion for interest on qualified private activity bonds. </p> <p>(Sec. 3602) This section repeals the exclusion from gross income for interest on a bond issued to advance refund another bond. </p> <p>(Sec. 3603) This section repeals the authority to issue tax-credit bonds and direct-pay bonds. </p> <p>(Sec. 3604) This section prohibits tax-exempt bonds from being used to finance professional sports stadiums.</p> <p>Subtitle H--Insurance </p> <p>(Sec. 3701) This section repeals the operations losses deduction for life insurance companies and allows the net operating loss deduction under section 172 of the IRC. </p> <p>(Sec. 3702) This section repeals the small life insurance company deduction. </p> <p>(Sec. 3703) This section imposes an additional 8% income tax on life insurance company taxable income. </p> <p>(Sec. 3704) This section revises the tax treatment of income or loss resulting from a change in the method of computing life insurance company reserves. The bill eliminates the 10-year period for taking into account the changes and requires the changes to be taken into account as adjustments attributable to a change in method of accounting.</p> <p>(Sec. 3705) This section repeals the special rule for distributions to shareholders of a stock life insurance company from a pre-1984 policyholders surplus account, which provides that amounts in the account are not taxed unless the amounts are treated as distributed to shareholders or subtracted from the account. The bill requires a life insurance company with such an account to pay taxes on the balance of the account ratably over the first eight taxable years beginning after December 31, 2017. </p> <p>(Sec. 3706) This section modifies the proration rules for property and casualty insurance companies to replace the 15% reduction under current law with a 26.25% reduction. (Under the proration rules, in calculating the deductible amount of its reserve for losses incurred, a property or casualty insurance company must reduce the amount of the losses incurred by a specified percentage of: (1) the insurer's tax-exempt interest, (2) the deductible portion of dividends received, and (3) the increase for the taxable year in the cash value of life insurance, endowment, or annuity contracts the company owns.) </p> <p>(Sec. 3707) This section modifies the reserve discounting rules applicable to property and casualty insurance companies to: (1) modify the interest rate, (2) extend the periods applicable under the loss payment pattern, and (3) repeal the election to use a taxpayer's historical loss payment pattern. </p> <p>(Sec. 3708) This section repeals the special estimated tax payment rules for insurance companies. </p> <p>Subtitle I--Compensation </p> <p>(Sec. 3801) This section modifies a provision that limits the deduction for compensation of covered employees of a publicly held corporation to salaries of no more than $1 million per year. The bill: (1) repeals the performance-based compensation and commission exceptions, (2) modifies the definition of &quot;covered employee,&quot; and (3) expands the definition of &quot;publicly held corporation.&quot; </p> <p>(Sec. 3802) This section imposes an excise tax on excess tax-exempt organization executive compensation. The tax is equal to 20% of the sum of: (1) any remuneration (other than an excess parachute payment) in excess of $1 million paid to a covered employee by an applicable tax-exempt organization for a taxable year, and (2) any excess parachute payment (separation pay), as specified in the bill. </p> <p>(Sec. 3803) This section allows qualified employees to elect to defer, for income tax purposes, income attributable to certain stock transferred to the employee by an employer. </p> <p>Employees are excluded if they: (1) are a 1% owner, the chief executive officer, or the chief financial officer of the corporation or have been at any time during the 10 preceding calendar years; (2) are a family member of the specified individuals; or (3) have been one of the four highest compensated officers of the corporation during any of the 10 preceding taxable years. </p> <p>TITLE IV--TAXATION OF FOREIGN INCOME AND FOREIGN PERSONS </p> <p>Under current law, the earnings of foreign subsidiaries of U.S. multinational corporations are not taxed until the income is repatriated (paid as dividends) into the United States. The corporations are allowed a tax credit against U.S. taxes for taxes paid to foreign jurisdictions. This title establishes a territorial system in which foreign source income is not subject to regular U.S. taxes. </p> Subtitle A--Establishment of Participation Exemption System for Taxation of Foreign Income <p>(Sec. 4001) This section establishes a participation exemption system for foreign income. Under the system, the bill allows a 100% deduction for the foreign-source portion of dividends received from specified 10% owned foreign corporations by domestic corporations that are U.S. shareholders of those foreign corporations. </p> <p>A &quot;specified 10% owned foreign corporation&quot; is any foreign corporation with respect to which any domestic corporation is a U.S. shareholder. It does not include a passive foreign investment company that is not a controlled foreign corporation (CFC). </p> <p>No foreign tax credit or deduction is allowed for any taxes paid or accrued with respect to any dividend for which a deduction is allowed under this section</p> <p>The bill establishes a six-month holding period requirement for dividends of a domestic corporation to be eligible for a participation dividends received deduction. </p> <p>(Sec. 4002) This section applies the participation exemption to investments in U.S. property by specifying that the tax for CFC investments in U.S. property with respect to a domestic corporation is zero. </p> <p>(Sec. 4003) This section specifies that, solely for the purpose of determining a loss, a domestic corporate shareholder's adjusted basis in the stock of a specified 10% owned foreign corporation is reduced by the portion of any dividend received with respect to such stock from such foreign corporation that was not taxed by reason of a dividends received deduction. </p> <p>If a domestic corporation transfers substantially all of the assets of a foreign branch to a foreign corporation which, after such transfer, is a specified 10% owned foreign corporation with respect to which the domestic corporation is a U.S. shareholder, the domestic corporation must include in gross income an amount equal to the transferred loss amount, subject to certain limitations. </p> <p>(Sec. 4004) This section specifies rules for the tax treatment of deferred foreign income upon transition to the participation exemption system of taxation. The bill deems the earnings to be repatriated and impose taxes of: (1) 14% for earnings held in liquid form, and (2) 7% for accumulated foreign earnings that have been reinvested in the foreign subsidiary's business. </p> <p>Subtitle B--Modifications Related to Foreign Tax Credit System </p> <p>(Sec. 4101) This section repeals the deemed-paid credit with respect to dividends received by a domestic corporation that owns 10% or more of the voting stock of a foreign corporation. The bill allows a deemed-paid credit with respect to any income inclusion under subpart F. The credit is limited to the amount of foreign income taxes properly attributable to the subpart F inclusion.</p> <p>(Sec. 4102) This section requires gains, profits, and income from the sale or exchange of inventory property produced partly in, and partly outside, the United States to be allocated and apportioned between sources within and without the United States solely on the basis of the production activities with respect to the property. </p> <p>Subtitle C--Modification of Subpart F Provisions </p> <p>(Sec. 4201) This section repeals the requirement for a U.S. shareholder in a CFC that invested previously excluded subpart F income in foreign base company shipping operations to include in income a pro rata share of the previously excluded subpart F income when the CFC decreases the investments. </p> <p>(Sec. 4202) This section repeals provisions that treat foreign base company oil related income as category of subpart F income. </p> <p>(Sec. 4203) This section adds an inflation adjustment for the de minimis exception for foreign base company income. </p> <p>(Sec. 4204) The provision makes permanent the exclusion from foreign personal holding company income for certain dividends, interest, rents, and royalties received or accrued by one CFC from a related CFC. </p> <p>(Sec. 4205) This section modifies the stock attribution rules for determining status as a CFC. Certain stock of a foreign corporation owned by a foreign person must be attributed to a related U.S. person for purposes of determining whether the related U.S. person is a U.S. shareholder of the foreign corporation.</p> <p>(Sec. 4206) This section eliminates the requirement for a corporation to be controlled for an uninterrupted period of 30 days before subpart F inclusions apply. </p> <p>Subtitle D--Prevention of Base Erosion </p> <p>(Sec. 4301) This section requires a U.S. shareholder of any CFC to include in gross income 50% of shareholder's foreign high return amount for the year, as calculated using a formula specified in this bill. </p> <p>(Sec. 4302) This section limits the deduction for interest expenses of domestic corporations which are members of an international financial reporting group. </p> <p>For a domestic corporation which is a member of any international financial reporting group, the deduction for interest paid or accrued during the year may not exceed the sum of the member's interest income plus the allowable percentage of 110% of net interest expense. </p> <p>An &quot;international financial reporting group&quot; is a group that: (1) includes at least one foreign corporation engaged in a U.S. trade or business or at least one domestic corporation and one foreign corporation at any time during the group's reporting year, (2) prepares consolidated financial statements in accordance specified principles or standards, and (3) has average annual gross receipts that exceed $100 million. </p> <p>(Sec. 4303) This section imposes a 20% excise tax on payments from domestic corporations to related foreign corporations to the extent that the amounts are deductible by the U.S. payor. The excise tax does not apply if the foreign recipient elects to be subject to U.S. income tax on the amounts received. </p> <p>Subtitle E--Provisions Related to Possessions of the United States </p> <p>(Sec. 4401) This section extends the rules that apply to the deduction for income attributable to domestic production activities in Puerto Rico.</p> <p> (Sec. 4402) This section extends for six years the increase in the limit on the amount of excise taxes on rum covered over to Puerto Rico and the Virgin Islands. (Under the provision, the limitation of $13.25 per proof gallon is extended for rum brought into the United States after December 31, 2016, and before January 1, 2023. After December 31, 2022, the limit reverts to $10.50 per proof gallon.) </p> <p>(Sec. 4403) This section extends the American Samoa economic development credit for five years. </p> <p>Subtitle F--Other International Reforms </p> <p>(Sec. 4501) This section modifies the exception from the passive foreign investment company rules for insurance businesses. The bill replaces the test based on whether a corporation is predominantly engaged in an insurance business with a test based on the corporation's insurance liabilities. </p> <p>TITLE V--EXEMPT ORGANIZATIONS </p> <p>Subtitle A--Unrelated Business Income Tax </p> <p>(Sec. 5001) This section specifies that a tax-exempt organization does not fail to be subject to tax on its unrelated business income solely because the organization also is exempt, or excludes amounts from gross income, by reason of another provision of the IRC. </p> <p>(Sec. 5002) This section modifies the exclusion of research income from the tax on unrelated business income to limit the exclusion to fundamental research the results of which are freely available to the general public. </p> <p>Subtitle B--Excise Taxes </p> <p>(Sec. 5101) This section replaces the two excise tax rates for the net investment income of tax-exempt private foundations with a single tax rate of 1.4%. It repeals the reduced excise tax rate for private foundations that exceed their historical level of qualifying distributions. </p> <p>(Sec. 5102) This section prohibits an organization that operates an art museum as a substantial activity from qualifying as a private operating foundation unless the museum is open during normal business hours to the public for at least 1,000 hours during the taxable year. </p> <p>(Sec. 5103) This section imposes a 1.4% excise tax on the net investment income of certain private colleges and universities that have at least 500 students. </p> <p>(Sec. 5104) This section creates an exception to the excise taxes on excess business holdings for the holdings of a private foundation in any business enterprise that meets specified requirements relating to exclusive ownership, minimum distribution of net operating income for the charitable purpose (all profits to charity distribution requirement), and independent operation (not controlled by a substantial contributor or family members) from the excise taxes on excess business holdings. </p> <p>Subtitle C--Requirements for Organizations Exempt From Tax </p> <p>(Sec. 5201) This section permits a tax-exempt organization to make certain statements related to a political campaign without losing its tax-exempt status. </p> <p>An organization may not lose its tax-exempt status under section 501(c)(3) or be deemed to have participated in, or intervened in any political campaign on behalf of (or in opposition to) any candidate for public office, solely because of the content of any statement that: (1) is made in the ordinary course of the organization's regular and customary activities in carrying out its exempt purpose, and (2) results in the organization incurring not more than de minimis incremental expenses. </p> <p>(Sec. 5202) This section establishes additional reporting requirements for organizations that sponsor donor advised funds. (A donor advised fund is a fund or account that is separately identified by reference to contributions of a donor or donors. The account is owned and controlled by a sponsoring charitable organization, while the donor retains advisory privileges with respect to the distribution and investment of funds in the account.) </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ97/PLAW-115publ97.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ97/PLAW-115publ97_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ97/PLAW-115publ97.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/1",
+      "votes": []
+    },
+    {
       "id": "hr1370-115",
       "congress": 115,
       "type": "hr",
@@ -6087,6 +6830,39 @@
       "text_url_xml": "https://www.congress.gov/115/bills/sres150/BILLS-115sres150ats.xml",
       "text_url_pdf": "https://www.congress.gov/115/bills/sres150/BILLS-115sres150ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/150",
+      "votes": []
+    },
+    {
+      "id": "sres326-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "326",
+      "title": "A resolution recognizing the crew of the San Antonio Rose, B-17F, who sacrificed their lives during World War II, and honoring their memory during the week of the 75th anniversary of that tragic event.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blumenthal, Richard",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2017-11-09",
+      "latest_action": {
+        "date": "2017-12-20",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S8154)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Asia",
+        "Conflicts and wars",
+        "Congressional tributes",
+        "Military history",
+        "Military personnel and dependents"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p> Commemorates the 75th anniversary of the loss of the San Antonio Rose and honors the memory of its crew. </p>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres326/BILLS-115sres326ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres326/BILLS-115sres326ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres326/BILLS-115sres326ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/326",
       "votes": []
     },
     {
@@ -6419,6 +7195,39 @@
       "votes": []
     },
     {
+      "id": "hr1329-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "1329",
+      "title": "Veterans' Compensation Cost-of-Living Adjustment Act of 2017",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Bost, Mike",
+        "party": "R",
+        "state": "IL"
+      },
+      "introduced_date": "2017-03-02",
+      "latest_action": {
+        "date": "2017-11-02",
+        "text": "Became Public Law No: 115-75."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Department of Veterans Affairs",
+        "Disability assistance",
+        "Inflation and prices",
+        "Veterans' pensions and compensation"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was reported to the House on May 19, 2017. The summary of that version is repeated here.)</p> <p><strong>Veterans' Compensation Cost-of-Living Adjustment Act of 2017</strong></p> <p> (Sec. 2) This bill directs the Department of Veterans Affairs (VA) to increase, as of December 1, 2017, the rates of veterans' wartime disability compensation, additional compensation for dependents, the clothing allowance for certain disabled veterans, and dependency and indemnity compensation for surviving spouses and children.</p> <p>Each such increase shall be the same percentage as the increase in benefits provided under title II (Old Age, Survivors and Disability Insurance) of the Social Security Act, on the same effective date.</p> <p> The VA may adjust administratively, consistent with such increases, the rates of disability compensation payable to persons entitled to veterans benefits under public laws administered by the VA on December 31, 1958, who have not received benefits under provisions governing veterans compensation for service-connected disability or death.</p> <p>(Sec. 3) The VA shall publish such increased rates in the Federal Register not later than the date on which certain social security increases are required to be published in FY2018.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ75/PLAW-115publ75.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ75/PLAW-115publ75_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ75/PLAW-115publ75.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/1329",
+      "votes": []
+    },
+    {
       "id": "s504-115",
       "congress": 115,
       "type": "s",
@@ -6470,6 +7279,42 @@
       "votes": []
     },
     {
+      "id": "hjres111-115",
+      "congress": 115,
+      "type": "hjres",
+      "number": "111",
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by Bureau of Consumer Financial Protection relating to \"Arbitration Agreements\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Rothfus, Keith J.",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2017-07-20",
+      "latest_action": {
+        "date": "2017-11-01",
+        "text": "Became Public Law No: 115-74."
+      },
+      "outcome": "enacted",
+      "policy_area": "Finance and Financial Sector",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Alternative dispute resolution, mediation, arbitration",
+        "Business records",
+        "Congressional oversight",
+        "Consumer Financial Protection Bureau",
+        "Consumer credit",
+        "Financial services and investments",
+        "Government information and archives"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>This joint resolution nullifies a rule submitted by the Consumer Financial Protection Bureau (CFPB) regarding arbitration agreements. </p> <p>(The rule regulates the use of arbitration agreements in contracts for specific consumer financial products and services. It prohibits the use of a predispute arbitration agreement to prevent a consumer from filing or participating in certain class action suits. The rule also requires consumer financial product and service providers to furnish the CFPB with particular information regarding arbitrations.)</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ74/PLAW-115publ74.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ74/PLAW-115publ74_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ74/PLAW-115publ74.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-joint-resolution/111",
+      "votes": []
+    },
+    {
       "id": "sres245-115",
       "congress": 115,
       "type": "sres",
@@ -6517,6 +7362,53 @@
       "text_url_xml": "https://www.congress.gov/115/bills/sres75/BILLS-115sres75ats.xml",
       "text_url_pdf": "https://www.congress.gov/115/bills/sres75/BILLS-115sres75ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/75",
+      "votes": []
+    },
+    {
+      "id": "hr2266-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "2266",
+      "title": "Making additional supplemental appropriations for disaster relief requirements for the fiscal year ending September 30, 2018, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Conyers, John, Jr.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2017-05-01",
+      "latest_action": {
+        "date": "2017-10-26",
+        "text": "Became Public Law No: 115-72."
+      },
+      "outcome": "enacted",
+      "policy_area": "Economics and Public Finance",
+      "subjects": [
+        "Agricultural prices, subsidies, credit",
+        "Appropriations",
+        "Bankruptcy",
+        "Budget deficits and national debt",
+        "Caribbean area",
+        "Congressional oversight",
+        "Delaware",
+        "Department of Agriculture",
+        "Department of Homeland Security",
+        "Department of the Interior",
+        "Disaster relief and insurance",
+        "Executive agency funding and structure",
+        "Federal Emergency Management Agency (FEMA)",
+        "Federal district courts",
+        "Fires",
+        "Floods and storm protection",
+        "Florida",
+        "Food assistance and relief",
+        "Forests, forestry, trees"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was passed by the House on October 12, 2017. The summary of that version is repeated here.)</p> <p><b>Additional Supplemental Appropriations for Disaster Relief Requirements Act, 2017 </b></p> <p>This bill provides supplemental appropriations for disaster relief, reauthorizes temporary bankruptcy judgeships, and revises requirements regarding the U.S. Trustee System Fund and bankruptcy.</p> <p>DIVISION A--ADDITIONAL SUPPLEMENTAL APPROPRIATIONS FOR DISASTER RELIEF REQUIREMENTS ACT OF 2017 </p> <p><i>Additional Supplemental Appropriations for Disaster Relief Requirements Act of 2017</i></p> <p>This division provides $36.5 billion in FY2018 emergency supplemental appropriations to the Federal Emergency Management Agency (FEMA), the Department of Agriculture (USDA), and the Department of the Interior for relief and recovery efforts in response to recent hurricanes and wildfires. </p> <p>The funds provided by the division are designated as emergency requirements, which exempts the funding from discretionary spending limits and other budget enforcement rules. </p> <p>TITLE I--DEPARTMENT OF HOMELAND SECURITY</p> <p>For FEMA, the bill provides $18.67 billion for the Disaster Relief Fund, of which: (1) $10 million must be transferred to the Department of Homeland Security Office of Inspector General for audits and investigations related to disasters, and (2) up to $4.9 billion may be transferred to the Community Disaster Loans Program for direct loans to assist local governments in providing essential services as a result of Hurricanes Harvey, Irma, or Maria. </p> <p>TITLE II--DEPARTMENT OF AGRICULTURE AND DEPARTMENT OF THE INTERIOR</p> <p>This title provides $576.5 million for wildfire suppression operations and activities, including: (1) $526.5 million for the Forest Service, and (2) $50 million for the Department of the Interior.</p> <p>TITLE III--GENERAL PROVISIONS</p> <p>(Sec. 301) Funds provided by this division are in addition to amounts otherwise appropriated for the fiscal year involved. </p> <p>(Sec. 302) No part of any appropriation provided by this division is available for obligation beyond the fiscal year, unless this bill expressly provides otherwise. </p> <p>(Sec. 303) The terms and conditions applicable to the funds provided in this division, including those provided by this title, also apply to the funds provided by the Supplemental Appropriations for Disaster Relief Requirements, 2017.</p> <p>(Sec. 304) Each amount designated in this division by Congress as being for an emergency requirement is only available if the President subsequently designates the amounts and transmits the designations to Congress. </p> <p>(Sec. 305) Each agency must submit to the Office of Management and Budget (OMB), the Government Accountability Office (GAO), the respective Inspector General of each agency, and the congressional appropriations committees internal control plans for funds provided by this division and the Supplemental Appropriations for Disaster Relief Requirements, 2017. The GAO must review the design of the plans. </p> <p>All programs and activities receiving funds under this division shall be deemed to be &quot;susceptible to significant improper payments&quot; for purposes of the Improper Payments Information Act of 2002. (This requires the relevant agency to comply with certain requirements for reports and corrective actions regarding improper payments.) </p> <p>Funds for grants provided by this division or the Supplemental Appropriations for Disaster Relief Requirements, 2017 must be expended by the grantees within 24 months of the agency's obligation of funds for the grant, unless the OMB waives the requirement. </p> <p>(Sec. 306) This section amends the Supplemental Appropriations for Disaster Relief Requirements, 2017 to permit the Department of Housing and Urban Development to award Community Development Block Grant funds provided by the Act directly to Indian tribes, in addition to a state or unit of general local government. </p> <p>(Sec. 307) This section amends the Continuing Appropriations Act, 2018 to specify that the language included in The Department of the Interior, Environment, and Related Agencies Appropriations Act, 2017 under the heading &quot;FLAME Wildfire Suppression Reserve Fund' for the Departments of Agriculture and the Interior does not apply for the purpose of the continuing appropriations provided by the Act. </p> <p>(Sec. 308) This section cancels $16 billion of the debt held by the Department of the Treasury under notes or obligations issued by the National Flood Insurance Program. </p> <p>(Sec. 309) USDA may use up to $1.27 billion of funds from the Supplemental Nutrition Assistance Program (SNAP, formerly known as the food stamp program) contingency reserve to provide a grant to Puerto Rico for disaster nutrition assistance in response to the presidentially declared major disasters and emergencies. </p> <p>(Sec. 310) This section specifies that the dollar limitation on advance billing of a customer of a Department of Defense working-capital fund does not apply to FEMA during FY2018.</p> <p>DIVISION B--BANKRUPTCY JUDGESHIP ACT OF 2017</p> <p><i>Bankruptcy Judgeship Act of 2017</i></p> <p>(Sec. 1002) This bill reauthorizes 14 temporary bankruptcy judgeships in judicial districts in Delaware, Florida, Puerto Rico, Maryland, Michigan, Virginia, Nevada, and North Carolina.</p> <p>(Sec. 1003) It authorizes the appointment of four additional temporary bankruptcy judges in Delaware, Florida, and Michigan.</p> <p>(Sec. 1004) The bill amends the federal judicial code to increase the quarterly fee imposed on certain chapter 11 (reorganization) debtors. Specifically, if the balance in the U.S. Trustee System Fund is less than $200 million, then a debtor with total quarterly disbursements of $1 million or more must pay a quarterly fee equal to $250,000 or 1% of disbursements, whichever is less. </p> <p>It also specifies that for FY2018-FY2022, 98% of the quarterly fees collected must be deposited as offsetting collections to the U.S. Trustee System Fund and 2% must be deposited in the general fund of the Treasury.</p> (Sec. 1005) This section amends the federal bankruptcy code to include an unsecured claim by a governmental unit (e.g., a tax claim by the Internal Revenue Service) resulting from the sale, transfer, exchange, or disposition of farming property in chapter 12 bankruptcy (family farmer or fisherman reorganization) proceedings. Such a claim that arises before a debtor's discharge, regardless of whether the claim is pre-petition or post-petition, must be treated as a pre-petition claim, is not entitled to priority status, must be provided for under the bankruptcy plan, and is dischargeable.",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ72/PLAW-115publ72.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ72/PLAW-115publ72_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ72/PLAW-115publ72.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/2266",
       "votes": []
     },
     {
@@ -6747,6 +7639,37 @@
       "votes": []
     },
     {
+      "id": "hr2519-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "2519",
+      "title": "The American Legion 100th Anniversary Commemorative Coin Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Walz, Timothy J.",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2017-05-18",
+      "latest_action": {
+        "date": "2017-10-06",
+        "text": "Became Public Law No: 115-65."
+      },
+      "outcome": "enacted",
+      "policy_area": "Finance and Financial Sector",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Currency",
+        "Veterans' organizations and recognition"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was passed by the House on September 25, 2017. The summary of that version is repeated here.)</p> <p><strong>The American Legion 100th Anniversary Commemorative Coin Act</strong></p> <p>(Sec. 3) This bill requires the Department of the Treasury to mint and issue gold, silver, and half-dollar clad commemorative coins in recognition and celebration of the 100th anniversary of the American Legion. </p> <p>(Sec. 5) Treasury may issue coins minted under this bill for only a one-year period, beginning January 1, 2019. </p> <p>(Sec. 7) All sales of coins minted under this bill shall include a surcharge of $35 per gold coin, $10 per silver coin, and $5 per half-dollar clad coin. Surcharges received shall be paid to the American Legion for costs related to promoting the importance of: (1) caring for those who have served or are serving in the Armed Forces; and (2) maintaining patriotic values, strong families, and assistance for at-risk children. </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ65/PLAW-115publ65.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ65/PLAW-115publ65_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ65/PLAW-115publ65.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/2519",
+      "votes": []
+    },
+    {
       "id": "sres147-115",
       "congress": 115,
       "type": "sres",
@@ -6874,6 +7797,38 @@
       "votes": []
     },
     {
+      "id": "s1616-115",
+      "congress": 115,
+      "type": "s",
+      "number": "1616",
+      "title": "Bob Dole Congressional Gold Medal Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Roberts, Pat",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2017-07-24",
+      "latest_action": {
+        "date": "2017-09-15",
+        "text": "Became Public Law No: 115-60."
+      },
+      "outcome": "enacted",
+      "policy_area": "Congress",
+      "subjects": [
+        "Congressional tributes",
+        "Kansas",
+        "Members of Congress",
+        "Senate"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the Senate passed version is repeated here.)</p> <p><b>Bob Dole Congressional Gold Medal Act</b></p> <p> (Sec. 3) This bill directs the Speaker of the House of Representatives and the President pro tempore of the Senate to arrange for the award of a Congressional Gold Medal to Bob Dole in recognition for his service to the nation as a soldier, legislator, and statesman.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ60/PLAW-115publ60.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ60/PLAW-115publ60_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ60/PLAW-115publ60.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/1616",
+      "votes": []
+    },
+    {
       "id": "hr3732-115",
       "congress": 115,
       "type": "hr",
@@ -6946,6 +7901,53 @@
       "text_url_xml": "https://www.congress.gov/115/bills/sres160/BILLS-115sres160ats.xml",
       "text_url_pdf": "https://www.congress.gov/115/bills/sres160/BILLS-115sres160ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/160",
+      "votes": []
+    },
+    {
+      "id": "hr2430-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "2430",
+      "title": "FDA Reauthorization Act of 2017",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Walden, Greg",
+        "party": "R",
+        "state": "OR"
+      },
+      "introduced_date": "2017-05-16",
+      "latest_action": {
+        "date": "2017-08-18",
+        "text": "Became Public Law No: 115-52."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Cancer",
+        "Child health",
+        "Congressional oversight",
+        "Department of Health and Human Services",
+        "Drug safety, medical device, and laboratory regulation",
+        "Drug therapy",
+        "Executive agency funding and structure",
+        "Food and Drug Administration (FDA)",
+        "Fraud offenses and financial crimes",
+        "Government buildings, facilities, and property",
+        "Government information and archives",
+        "Government studies and investigations",
+        "Health information and medical records",
+        "Health personnel",
+        "Health technology, devices, supplies",
+        "Hearing, speech, and vision care",
+        "Infectious and parasitic diseases",
+        "Licensing and registrations"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was passed by the House on July 12, 2017. The summary of that version is repeated here.)</p> <p><b>FDA Reauthorization Act of 2017</b></p> <p>TITLE I--FEES RELATING TO DRUGS</p> <p><i>Prescription Drug User Fee Amendments of 2017</i></p> <p>(Sec. 102) This bill amends the Federal Food, Drug, and Cosmetic Act to extend through FY2022 and revise Food and Drug Administration (FDA) user fees for brand name drugs. User fees are eliminated for supplemental new drug applications and drug manufacturing facilities.</p> <p>A prescription drug program fee replaces the prescription drug product fee. This annual fee is assessed on a new drug application holder for each approved drug for up to five drugs.</p> <p>The total user fee revenue amount is adjusted annually for changes in review process capacity needs, to provide for operational reserves, and for additional direct costs. Eighty percent of revenues must be generated by prescription drug program fees, with the remainder from application fees.</p> <p>(Sec. 103) The bill extends through FY2022 requirements for annual reports and consultation by the FDA on reauthorization of brand name drug user fees.</p> <p>TITLE II--FEES RELATING TO DEVICES</p> <p><i>Medical Device User Fee Amendments of 2017</i></p> <p>(Sec. 203) The bill extends through FY2022 and revises FDA user fees for medical devices. A user fee is established for requests to classify devices that are not substantially equivalent to marketed devices. The FDA&rsquo;s authority to waive or reduce device user fees in the interest of public health is eliminated.</p> <p>(Sec. 204) The bill extends through FY2022 requirements for annual reports and consultation by the FDA on reauthorization of user fees for medical devices.</p> <p>(Sec. 205) The FDA must establish a pilot program to accredit testing laboratories to determine whether medical devices conform to performance standards.</p> <p>(Sec. 206) The bill extends through FY2022 the FDA's authority to accredit third parties to review premarket notifications for medical devices. The bill revises the types of devices that third parties may review.</p> <p>(Sec. 207) Submissions to the FDA regarding medical devices must be solely in electronic format.</p> <p>TITLE III--FEES RELATING TO GENERIC DRUGS</p> <p><i>Generic Drug User Fee Amendments of 2017</i></p> <p>(Sec. 302) Generic drug applications submitted by government entities for non-commercial drugs are not subject to user fees.</p> <p>(Sec. 303) The bill extends through FY2022 and revises FDA user fees for generic drugs. User fees are eliminated for supplements to generic drug applications.</p> <p>An annual generic drug applicant program fee is assessed on holders of approved generic drug applications. The amount of the fee is based on the number of applications held. Of total user fee revenue, 35% must be generated from this fee. Application holders who do not pay this fee may not market their drugs.</p> <p>(Sec. 304) The bill extends through FY2022 requirements for annual reports and consultation by the FDA on reauthorization of user fees for generic drugs.</p> <p>TITLE IV--FEES RELATING TO BIOSIMILAR BIOLOGICAL PRODUCTS</p> <p><i>Biosimilar User Fee Amendments of 2017</i></p> <p>(Sec. 403) The bill extends through FY2022 and revises FDA user fees for biosimilars. (Biosimilars are biological products approved by the FDA based on their similarity to an already-approved biological product.) User fees are eliminated for supplemental biosimilar applications and biosimilar manufacturing facilities.</p> <p>An annual biosimilar biological product program fee is assessed on biosimilar application holders for each approved biosimilar for up to five biosimilars.</p> <p>The bill sets the annual amount of revenue that must be generated by user fees. The FDA must determine the percentage of revenue generated by each fee. The total fee revenue amount is adjusted annually for changes in review process capacity needs and to provide for operational reserves.</p> <p>TITLE V--PEDIATRIC DRUGS AND DEVICES</p> <p>(Sec. 501) The bill extends through FY2022 and revises the National Institutes of Health (NIH) program to conduct pediatric studies of drugs. The NIH, in developing its list of priority issues in pediatric therapeutics, must consider identification of biomarkers for pediatric conditions.</p> <p>(Sec. 502) The bill revises requirements for the FDA to report on pediatric use of medical devices.</p> <p>The bill extends and revises the authorization for certain medical devices for pediatric patients to be sold above cost under the humanitarian device exemption.</p> <p>The bill extends and revises grants for consortia to facilitate development of pediatric medical devices.</p> <p>The FDA must convene a meeting on the development, approval, and labeling of pediatric medical devices.</p> <p>(Sec. 503) The FDA must meet with applicants for approval of new drugs or biological products to discuss, upon request, the initial pediatric study plan for medications to treat serious conditions and to discuss deferral or waiver of pediatric assessments.</p> <p>(Sec. 504) The bill revises the requirement for pediatric assessments to be submitted with applications for FDA approval of new medications. Sponsors of new medications for adult cancer, including orphan drugs, that target a molecule relevant to pediatric cancer must complete an investigation to yield pediatric study data to inform potential pediatric labeling of the medication. (Orphan drugs are medications for rare conditions.)</p> <p>The FDA must publish a list of target molecules considered relevant to pediatric cancer and a list of molecules for which pediatric study requirements are waived.</p> <p>The FDA must convene a meeting regarding the lists and the revisions to the pediatric assessment requirement.</p> <p>The bill revises FDA reporting requirements regarding pediatric studies and assessments.</p> <p>The Government Accountability Office (GAO) must report on the effectiveness of requiring pediatric assessments and investigations in the development of medications for pediatric cancer.</p> <p>(Sec. 505) The FDA must provide additional information to the internal committee that reviews requests for pediatric studies. (Currently, completion of pediatric clinical studies requested by the FDA extends the patents or marketing exclusivity period for a medication by six months, with exceptions.) This committee must develop and implement a plan to achieve earlier submission of pediatric studies.</p> <p>The FDA must: (1) act within 120 days on proposed pediatric study requests and proposed amendments to requests, and (2) report on the lack of pediatric labeling for orphan drugs.</p> <p>The FDA's Office of Pediatric Therapeutics must have a staff member with expertise in neonatology.</p> <p>TITLE VI--REAUTHORIZATIONS AND IMPROVEMENTS RELATED TO DRUGS</p> <p>(Sec. 601) The bill extends through FY2022: (1) marketing exclusivity for certain chemical variants of approved drugs; (2) Critical Path Public-Private Partnerships; and (3) support to defray the costs of developing drugs, devices, and medical food for rare conditions.</p> <p>(Sec. 604) Except in cases of a drug shortage or certain importation of drugs from Canada, prescription drugs manufactured outside the United States may only be imported if authorized by the manufacturer and appropriately labeled.</p> <p>The bill establishes a penalty for manufacturing, dispensing, or selling a counterfeit drug.</p> <p>(Sec. 605) The bill revises the definition of patient experience data, for purposes of collecting such data as part of the medical product development process, to specifically include physical and psychosocial impacts of a condition, therapy, or clinical investigation.</p> <p>(Sec. 606) The communication plan for a risk evaluation and mitigation strategy may include informing health care providers about drug formulations or properties and how those formulations or properties may be related to serious adverse drug events.</p> <p>(Sec. 607) For a medication to be approved as an orphan drug with seven years of marketing exclusivity when it is the same medication for the same condition as an already approved orphan drug, the sponsor of the new medication must demonstrate that the new medication is clinically superior to the approved medication.</p> <p>(Sec. 608) The bill expands to cover brand name drugs provisions that allow generic drugs to be approved and marketed without labeling for pediatric indications when the pediatric indications are protected by patent or marketing exclusivity.</p> <p>(Sec. 610) The FDA, in coordination with the NIH, must convene a meeting to discuss clinical trial inclusion and exclusion criteria. The FDA must report on the meeting and issue guidance regarding eligibility criteria for clinical trials.</p> <p>The GAO must report on individual access to investigational drugs through the expanded access program. (Expanded access, also known as compassionate use, allows patients to be treated with an investigational drug outside of a clinical trial.)</p> <p>The FDA must streamline review by institutional review boards of expanded access protocols for individual patients.</p> <p>The manufacturer or distributor of an investigational drug for a serious condition must publish its expanded access policy not later than 15 days after the drug is designated a breakthrough therapy, fast track product, or regenerative advanced therapy.</p> <p>(Sec. 611) The bill revises the priority review program for medications for tropical diseases to limit eligibility to applications that include new clinical investigations that were not submitted as part of an application in certain foreign countries.</p> <p>TITLE VII--DEVICE INSPECTION AND REGULATORY IMPROVEMENTS</p> <p>(Sec. 701) The bill revises provisions regarding FDA inspections of establishments that manufacture or process medical devices. The biannual inspection schedule for medical device establishments handling higher risk devices is replaced with a risk-based schedule. In establishing the risk-based schedule, the FDA must consider an establishment's participation in international medical device audit programs.</p> <p>(Sec. 702) The FDA must adopt uniform processes and standards for inspections of domestic and foreign medical device establishments.</p> <p>Upon request, the FDA must provide to the person in charge of a medical device establishment feedback regarding the person's proposals to address certain issues identified during an inspection.</p> <p>(Sec. 703) The bill extends through FY2022 accreditation by the FDA of third parties to conduct inspections of medical device establishments.</p> <p>(Sec. 704) The bill revises provisions regarding FDA certification of medical devices for export. The FDA must provide the basis for denying requests for certification of products for export as meeting FDA requirements for domestic products. A person denied such a certification may request supervisory review of that decision.</p> <p>Products from a medical device establishment that an inspector found to be contaminated or insanitary may be certified for export if the person in charge of the establishment has agreed to a plan to correct the issues identified during the inspection.</p> <p>(Sec. 705) The FDA may recognize auditing organizations that are recognized by organizations established by governments to facilitate international harmonization for purposes of inspecting medical device establishments.</p> <p>(Sec. 706) The FDA may approve or classify a medical imaging device intended to be used with an approved contrast agent if differences from the approved use of the contrast agent do not adversely affect the safety and effectiveness of the contrast agent. (Contrast agents are substances used to enhance the visibility of body structures in medical imaging.) The FDA center that reviews medical devices has primary jurisdiction over such reviews.</p> <p>After authorization of a medical imaging device that makes new use of a contrast agent, the sponsor of the approved contrast agent may submit a supplemental application for the new use of the contrast agent.</p> <p>(Sec. 707) The bill revises how accessories to medical devices are classified. The FDA must classify accessories based on the risks when used as intended and the level of regulatory controls necessary to provide a reasonable assurance of safety and effectiveness.</p> <p>Applications for approval or clearance of a medical device used with an unclassified accessory may request that the FDA classify the accessory. The FDA's response to the application must grant or deny the request for classification of the accessory.</p> <p>The FDA must periodically classify suitable medical device accessories that have been approved for marketing as low risk devices. Manufacturers and importers of accessories approved for marketing may request classification of the accessories.</p> <p>(Sec. 708) In order to provide timely and reliable information on the safety and effectiveness of medical devices that have been approved, cleared, or classified, the FDA must support pilot projects that use electronic health data to generate safety and active surveillance data and inform methods and programs to support safety and active surveillance activities.</p> <p>(Sec. 709) The FDA must categorize certain hearing aids as over-the-counter hearing aids and issue regulations regarding those hearing aids. The regulations for over-the-counter hearing aids must: (1) provide reasonable assurances of safety and efficacy; (2) establish output limits and labeling requirements; and (3) describe requirements for the sale of hearing aids in-person, by mail, or online, without a prescription. The FDA must determine whether premarket notification is required for over-the-counter hearing aids to provide reasonable assurance of safety and effectiveness.</p> <p>State and local governments may not establish or continue in effect requirements specifically applicable to hearing products that are not identical to FDA requirements and that restrict or interfere with the servicing or sale of over-the-counter hearing aids.</p> <p>The FDA must update and finalize its draft guidance on hearing products. The guidance must clarify which products are medical devices.</p> <p>(Sec. 710) The FDA must report on the continued quality, safety, and effectiveness of medical devices after servicing. The report must contain information including the current authority of the FDA to regulate medical device servicing and how the FDA could improve its regulation of servicing.</p> <p>TITLE VIII--IMPROVING GENERIC DRUG ACCESS</p> <p>(Sec. 801) The FDA must prioritize review of, and act within eight months of submission on, generic drug applications for drugs for which there is a shortage or for which there are not more than three approved products and no blocking patents or exclusivities.</p> <p>To be eligible for priority review, an applicant must submit, at least 60 days in advance of the application, information to the FDA on facilities involved in the manufacturing and testing of the drug. The FDA may expedite inspection of such manufacturing facilities.</p> <p>The FDA must publish a list of brand name drugs for which all patents and exclusivities have expired and no generic drug application has been approved.</p> <p>(Sec. 802) Upon request, the FDA must provide review status updates to applicants with pending generic drug applications.</p> <p>(Sec. 803) The FDA may, upon the request of an applicant for approval of a generic drug, designate a generic drug as a competitive generic therapy and expedite the development and review of the application. A drug may be designated as a competitive generic therapy if there is not more than one approved, marketed drug that is the same drug.</p> <p>(Sec. 804) Holders of approved brand name or generic drug applications must notify the FDA: (1) 180 days prior to withdrawing a drug from sale, or as soon as practicable, and provide specified information including the reason for withdrawal; (2) within 180 days of approval of a drug if the drug will not be available for sale within 180 days of approval and provide specified information including the reason the drug is not for sale; and (3) within 180 days of enactment of this bill of whether their drugs on the FDA&rsquo;s list of marketed drugs are marketed. The FDA must update its list of marketed drugs based on this information.</p> <p>(Sec. 805) The FDA must annually report information regarding petitions for permission to seek approval for a generic drug application for a drug that differs from the brand name drug.</p> <p>(Sec. 806) The FDA must implement a protocol to expedite review of responses to inspection reports pertaining to certain drug applications, including applications for drugs in a shortage or drugs for which approval is dependent on remediation of conditions identified in the inspection report.</p> <p>(Sec. 807) The FDA must report quarterly on generic drug applications, including information regarding applications subject to priority review or expedited development and review and withdrawals of generic drug applications.</p> <p>(Sec. 808) First approved applicants for a competitive generic therapy are granted a 180-day marketing exclusivity period. There may be only one such period for a drug. This exclusivity period is forfeited by an applicant if the applicant fails to market the drug within 75 days after approval.</p> <p>(Sec. 809) For FY2013-FY2017, the GAO must report on the rate of approval of generic drug applications upon completion of the FDA's first review of an application. For years when the rate is below 20%, the GAO must report on the reasons for the low rate. The GAO must report on whether there are ways the generic drug review process could be improved to increase the rate of approvals upon first review.</p> <p>TITLE IX--ADDITIONAL PROVISIONS</p> <p>(Sec. 902) The FDA must annually publish information regarding the past year&rsquo;s inspections of drug or medical device facilities, including the amount of time between steps in the inspection process.</p> <p>(Sec. 903) The bill revises requirements for performance reports under user fee provisions for prescription drugs, medical devices, generic drugs, and biosimilars, including to require quarterly publication of information regarding guidance and meetings. Performance reports must include: (1) an analysis of changes in the number of full time equivalents hired under user fee agreements and the number funded under the FDA budget, (2) an analysis of changes in user fee revenue amounts and review costs, and (3) the number of employees in specified FDA offices for whom time reporting is required and the number for whom it is not required.</p> <p>(Sec. 904) User fee performance reports must include an analysis of: (1) the number of product applications filed and approved, (2) whether the relevant FDA review office has met performance enhancement goals, and (3) circumstances affecting the ability of the FDA to meet review time and performance enhancement goals.</p> <p>The FDA must annually submit a corrective action report to Congress as part of user fee reporting. If the FDA determines that fiscal year goals were met, the report must include recommendations on ways to improve the product review process. If goals were not met, the report must include a description of the circumstances under which goals were missed and efforts to improve the FDA&rsquo;s ability to meet the goals.</p> <p>Each fiscal year, as requested, representatives of the FDA must meet with members of Congress and participate in a congressional hearing regarding user fee reports.</p> <p>(Sec. 905) The GAO must report on FDA expenses related to facility maintenance and renovation for FY2012-FY2019. The report must include an analysis of the FDA&rsquo;s ability to further its public health mission and review medical products by incurring such expenses.</p> <p>Beginning FY2024, the bill prohibits the use of user fees for: (1) maintenance, renovation, and repair of facilities; and (2) acquisition, maintenance, and repair of materials and supplies that are not necessary scientific equipment.</p> <div> <div> </div> <div> </div> <div> </div> <div> </div> </div>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ52/PLAW-115publ52.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ52/PLAW-115publ52_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ52/PLAW-115publ52.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/2430",
       "votes": []
     },
     {
@@ -7259,6 +8261,39 @@
       "votes": []
     },
     {
+      "id": "sres231-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "231",
+      "title": "A resolution designating July 30, 2017, as \"National Whistleblower Appreciation Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Grassley, Chuck",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2017-07-25",
+      "latest_action": {
+        "date": "2017-08-01",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4695; text: 7/25/2017 CR S4195)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Employment discrimination and employee rights",
+        "Fraud offenses and financial crimes",
+        "Government employee pay, benefits, personnel management",
+        "Government ethics and transparency, public corruption"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates July 30, 2017, as National Whistleblower Appreciation Day.</p>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres231/BILLS-115sres231ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres231/BILLS-115sres231ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres231/BILLS-115sres231ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/231",
+      "votes": []
+    },
+    {
       "id": "sres233-115",
       "congress": 115,
       "type": "sres",
@@ -7357,6 +8392,41 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ41/PLAW-115publ41_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ41/PLAW-115publ41.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/1094",
+      "votes": []
+    },
+    {
+      "id": "sjres42-115",
+      "congress": 115,
+      "type": "sjres",
+      "number": "42",
+      "title": "A joint resolution relating to the disapproval of the proposed export to the Government of the Kingdom of Saudi Arabia of certain defense articles.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Paul, Rand",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2017-05-25",
+      "latest_action": {
+        "date": "2017-06-13",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 53. Record Vote Number: 143. (consideration: CR S3428)"
+      },
+      "outcome": "failed",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Congressional oversight",
+        "Foreign aid and international relief",
+        "Middle East",
+        "Military assistance, sales, and agreements",
+        "Military operations and strategy",
+        "Saudi Arabia",
+        "Trade restrictions"
+      ],
+      "summary_crs": " <p>This joint resolution prohibits the issuance of a letter of offer for the following proposed exports to the government of Saudi Arabia:</p> <ul> <li>the transfer of certain technical data, hardware, and defense services to the Royal Saudi Air Force and Boeing Saudi Arabia to support the deployment of the Joint Direct Attack Munition off Saudi Arabia's western made aircraft platforms;</li> <li>the transfer of certain technical data, hardware, and defense services to the Royal Saudi Air Force to support the integration of the FMU-152A/B JPB Fuze System into the MK-80, BLU-109, and BLU-100 series warhead family of weapons; and</li> <li>the transfer of defense articles, defense services, and technical data to support the Paveway II and III, Enhanced Paveway II and III, and Paveway IV Weapons Systems for the Royal Saudi Air Force F-15, Tornado, and Typhoon Aircraft.</li> </ul> <ul> </ul>",
+      "text_url_html": "https://www.congress.gov/115/bills/sjres42/BILLS-115sjres42is.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sjres42/BILLS-115sjres42is.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sjres42/BILLS-115sjres42is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-joint-resolution/42",
       "votes": []
     },
     {
@@ -7511,6 +8581,37 @@
       "votes": []
     },
     {
+      "id": "sres181-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "181",
+      "title": "A resolution designating the week of May 21 through May 27, 2017, as \"National Public Works Week\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Inhofe, James M.",
+        "party": "R",
+        "state": "OK"
+      },
+      "introduced_date": "2017-05-25",
+      "latest_action": {
+        "date": "2017-05-25",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S3225; text as passed Senate: CR S3223-3224)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Transportation and Public Works",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Infrastructure development"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates the week of May 21-May 27, 2017, as National Public Works Week.</p>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres181/BILLS-115sres181ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres181/BILLS-115sres181ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres181/BILLS-115sres181ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/181",
+      "votes": []
+    },
+    {
       "id": "sres182-115",
       "congress": 115,
       "type": "sres",
@@ -7637,6 +8738,39 @@
       "votes": []
     },
     {
+      "id": "hjres66-115",
+      "congress": 115,
+      "type": "hjres",
+      "number": "66",
+      "title": "Disapproving the rule submitted by the Department of Labor relating to savings arrangements established by States for non-governmental employees.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Walberg, Tim",
+        "party": "R",
+        "state": "MI"
+      },
+      "introduced_date": "2017-02-07",
+      "latest_action": {
+        "date": "2017-05-17",
+        "text": "Became Public Law No: 115-35."
+      },
+      "outcome": "enacted",
+      "policy_area": "Labor and Employment",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Congressional oversight",
+        "Department of Labor",
+        "Employee benefits and pensions",
+        "State and local government operations"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>This joint resolution nullifies a rule submitted by the Department of Labor's Employee Benefits Security Administration regarding savings arrangements established by states for non-governmental employees. </p> <p>(The rule describes circumstances in which state payroll deduction savings programs with automatic enrollment would not give rise to the establishment of employee pension benefit plans under the Employee Retirement Income Security Act of 1974 [ERISA]. It provides guidance to states designing the programs to reduce the risk of ERISA preemption of state laws and private-sector employers that may be covered by the state laws.) </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ35/PLAW-115publ35.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ35/PLAW-115publ35_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ35/PLAW-115publ35.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-joint-resolution/66",
+      "votes": []
+    },
+    {
       "id": "sres171-115",
       "congress": 115,
       "type": "sres",
@@ -7684,6 +8818,38 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ34/PLAW-115publ34_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ34/PLAW-115publ34.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/274",
+      "votes": []
+    },
+    {
+      "id": "sres163-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "163",
+      "title": "A resolution recognizing the roles and contributions of the teachers of the United States in building and enhancing the civic, cultural, and economic well-being of the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Collins, Susan M.",
+        "party": "R",
+        "state": "ME"
+      },
+      "introduced_date": "2017-05-16",
+      "latest_action": {
+        "date": "2017-05-16",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2968; text as passed Senate: CR S2968)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Education",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Elementary and secondary education",
+        "Teaching, teachers, curricula"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Thanks the teachers of the United States and promotes the teaching profession by encouraging students, parents, school administrators, and public officials to participate in National Teacher Appreciation Week.</p>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres163/BILLS-115sres163ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres163/BILLS-115sres163ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres163/BILLS-115sres163ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/163",
       "votes": []
     },
     {
@@ -8218,6 +9384,38 @@
       "votes": []
     },
     {
+      "id": "sres98-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "98",
+      "title": "A resolution designating the first week of April 2017 as \"National Asbestos Awareness Week\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Tester, Jon",
+        "party": "D",
+        "state": "MT"
+      },
+      "introduced_date": "2017-03-27",
+      "latest_action": {
+        "date": "2017-03-29",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Environmental health",
+        "Hazardous wastes and toxic substances",
+        "Health promotion and preventive care"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates the first week of April 2017 as National Asbestos Awareness Week. Urges the Surgeon General to warn and educate people about asbestos exposure, which may be hazardous to their health.</p>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres98/BILLS-115sres98ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres98/BILLS-115sres98ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres98/BILLS-115sres98ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/98",
+      "votes": []
+    },
+    {
       "id": "s305-115",
       "congress": 115,
       "type": "s",
@@ -8316,6 +9514,42 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ12/PLAW-115publ12_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ12/PLAW-115publ12.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-joint-resolution/44",
+      "votes": []
+    },
+    {
+      "id": "hjres58-115",
+      "congress": 115,
+      "type": "hjres",
+      "number": "58",
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Education relating to teacher preparation issues.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Guthrie, Brett",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2017-02-01",
+      "latest_action": {
+        "date": "2017-03-27",
+        "text": "Became Public Law No: 115-14."
+      },
+      "outcome": "enacted",
+      "policy_area": "Education",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Congressional oversight",
+        "Department of Education",
+        "Elementary and secondary education",
+        "Government information and archives",
+        "Higher education",
+        "Performance measurement",
+        "Teaching, teachers, curricula"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>This joint resolution nullifies the &quot;Teacher Preparation Issues&quot; rule&nbsp;finalized by the Department of Education on October 31, 2016. The rule implements requirements related to assessing the quality of teacher preparation programs under title II (Teacher Quality Enhancement) of the Higher Education Act of 1965.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ14/PLAW-115publ14.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ14/PLAW-115publ14_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ14/PLAW-115publ14.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-joint-resolution/58",
       "votes": []
     },
     {
@@ -8597,6 +9831,45 @@
       "votes": []
     },
     {
+      "id": "hjres38-115",
+      "congress": 115,
+      "type": "hjres",
+      "number": "38",
+      "title": "Disapproving the rule submitted by the Department of the Interior known as the Stream Protection Rule.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Johnson, Bill",
+        "party": "R",
+        "state": "OH"
+      },
+      "introduced_date": "2017-01-30",
+      "latest_action": {
+        "date": "2017-02-16",
+        "text": "Became Public Law No: 115-5."
+      },
+      "outcome": "enacted",
+      "policy_area": "Environmental Protection",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Coal",
+        "Congressional oversight",
+        "Department of the Interior",
+        "Environmental assessment, monitoring, research",
+        "Environmental regulatory procedures",
+        "Hydrology and hydrography",
+        "Lakes and rivers",
+        "Licensing and registrations",
+        "Mining",
+        "Water quality"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>This joint resolution nullifies the Stream Protection Rule finalized by the Department of the Interior's Office of Surface Mining Reclamation and Enforcement on December 20, 2016. The rule addresses the impacts of surface coal mining operations on surface water, groundwater, and the productivity of mining operation sites.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ5/PLAW-115publ5.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ5/PLAW-115publ5_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ5/PLAW-115publ5.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-joint-resolution/38",
+      "votes": []
+    },
+    {
       "id": "hjres41-115",
       "congress": 115,
       "type": "hjres",
@@ -8671,6 +9944,39 @@
       "text_url_xml": "https://www.congress.gov/115/bills/sres45/BILLS-115sres45ats.xml",
       "text_url_pdf": "https://www.congress.gov/115/bills/sres45/BILLS-115sres45ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/45",
+      "votes": []
+    },
+    {
+      "id": "sres47-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "47",
+      "title": "A resolution supporting the contributions of Catholic schools.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Donnelly, Joe",
+        "party": "D",
+        "state": "IN"
+      },
+      "introduced_date": "2017-02-03",
+      "latest_action": {
+        "date": "2017-02-10",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Education",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Elementary and secondary education",
+        "Religion",
+        "Teaching, teachers, curricula"
+      ],
+      "summary_crs": " <p>Expresses support for: (1) the goals of National Catholic Schools Week, an event cosponsored by the National Catholic Educational Association and the United States Conference of Catholic Bishops and established to recognize the contributions of Catholic elementary and secondary schools in the United States; and (2) the continued dedication of Catholic schools, students, parents, and teachers toward academic excellence and the key role they play in promoting and ensuring a brighter, stronger future for the nation.</p>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres47/BILLS-115sres47ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres47/BILLS-115sres47ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres47/BILLS-115sres47ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/47",
       "votes": []
     },
     {
@@ -8797,6 +10103,41 @@
       "text_url_xml": "https://www.congress.gov/115/bills/sres41/BILLS-115sres41ats.xml",
       "text_url_pdf": "https://www.congress.gov/115/bills/sres41/BILLS-115sres41ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/41",
+      "votes": []
+    },
+    {
+      "id": "hr72-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "72",
+      "title": "GAO Access and Oversight Act of 2017",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Carter, Earl L. \"Buddy\"",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2017-01-31",
+        "text": "Became Public Law No: 115-3."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Civil actions and liability",
+        "Congressional agencies",
+        "Congressional oversight",
+        "Government Accountability Office (GAO)",
+        "Government information and archives",
+        "Government studies and investigations"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the House passed version is repeated here.)</p> <p><strong>GAO Access and Oversight Act of 2017</strong></p> <p>(Sec. 2) This bill authorizes the Government Accountability Office (GAO) to obtain federal agency records required to discharge the GAO's duties (including audit, evaluation, and investigative duties), including through bringing civil actions to require an agency to produce a record.</p> <p>No provision of the Social Security Act shall&nbsp;be construed to limit, amend, or supersede the GAO's authority to: (1) obtain information or inspect records about an agency's duties, powers, activities, organization, or financial transactions; or (2) obtain other agency records that the GAO requires to discharge its duties.</p> <p>Agency statements on actions taken or planned in response to GAO recommendations must be submitted to: (1) the congressional committees with jurisdiction over the pertinent agency program or activity, and (2) the GAO.<br /></p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ3/PLAW-115publ3.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ3/PLAW-115publ3_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ3/PLAW-115publ3.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/72",
       "votes": []
     },
     {
