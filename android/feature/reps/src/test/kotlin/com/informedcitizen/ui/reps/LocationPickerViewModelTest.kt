@@ -328,6 +328,29 @@ class LocationPickerViewModelTest {
     }
 
     @Test
+    fun `state districts fill a vacant seat gap below the highest known district`() = runTest {
+        // Regression for #106: GA-13 (David Scott) died and Congress.gov's
+        // currentMember filter correctly omits the vacant seat, so the live
+        // index has GA's 14 districts minus 13. The picker must still show
+        // 1-14 (GA-13 selectable, even though it currently resolves to no
+        // rep) instead of silently skipping "13" as if the district didn't
+        // exist.
+        val gaDistricts = (1..14).filter { it != 13 }
+        val index = MembersIndex(
+            congress = 119,
+            generatedAt = "x",
+            members = gaDistricts.map { d ->
+                Member("GA$d", "Member $d", "D", "GA", d, "house", null, null, 0, 0, null, null)
+            },
+        )
+        val vm = LocationPickerViewModel(newRepo(), StubZipLookup(), newMembers(index))
+        advanceUntilIdle()
+        vm.selectState("GA")
+        val s = vm.uiState.first()
+        assertEquals((1..14).toList(), s.districtsForState)
+    }
+
+    @Test
     fun `falls back to hardcoded counts when index unavailable`() = runTest {
         // getIndex returns null → fallback path uses HOUSE_DISTRICT_COUNTS.
         val vm = LocationPickerViewModel(newRepo(), StubZipLookup(), newMembers(index = null))
