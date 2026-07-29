@@ -1,8 +1,69 @@
 {
-  "generated_at": "2026-07-28T09:17:59Z",
+  "generated_at": "2026-07-29T09:22:28Z",
   "congress": 119,
-  "vote_count": 1513,
+  "vote_count": 1515,
   "votes": [
+    {
+      "id": "senate-119-2-212",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 212,
+      "date": "2026-07-28",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Agreed to",
+      "bill_id": "hr5334-119",
+      "totals": {
+        "yea": 86,
+        "nay": 12,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 35,
+          "I": 1,
+          "R": 50
+        },
+        "nay": {
+          "D": 10,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-212.json"
+    },
+    {
+      "id": "senate-119-2-211",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 211,
+      "date": "2026-07-28",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-211.json"
+    },
     {
       "id": "senate-119-2-210",
       "chamber": "senate",

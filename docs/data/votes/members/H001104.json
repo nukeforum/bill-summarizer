@@ -1,8 +1,32 @@
 {
-  "generated_at": "2026-07-28T09:17:59Z",
+  "generated_at": "2026-07-29T09:22:28Z",
   "bioguide_id": "H001104",
-  "vote_count": 861,
+  "vote_count": 863,
   "votes": [
+    {
+      "vote_id": "senate-119-2-212",
+      "congress": 119,
+      "date": "2026-07-28",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Agreed to",
+      "position": "yea",
+      "bill_id": "hr5334-119",
+      "type": "hr",
+      "number": "5334",
+      "short_title": null
+    },
+    {
+      "vote_id": "senate-119-2-211",
+      "congress": 119,
+      "date": "2026-07-28",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "position": "yea",
+      "bill_id": null,
+      "type": null,
+      "number": null,
+      "short_title": null
+    },
     {
       "vote_id": "senate-119-2-210",
       "congress": 119,
