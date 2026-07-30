@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T14:23:02Z",
+  "generated_at": "2026-07-30T14:18:13Z",
   "congress": 115,
   "votes_coverage": false,
   "bills": [
@@ -48,6 +48,45 @@
       "votes": []
     },
     {
+      "id": "hr672-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "672",
+      "title": "Combating European Anti-Semitism Act of 2017",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Lowey, Nita M.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2017-01-24",
+      "latest_action": {
+        "date": "2019-01-14",
+        "text": "Became Public Law No: 115-434."
+      },
+      "outcome": "enacted",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Cemeteries and funerals",
+        "Congressional oversight",
+        "Diplomacy, foreign officials, Americans abroad",
+        "Educational facilities and institutions",
+        "Europe",
+        "Human rights",
+        "International organizations and cooperation",
+        "Law enforcement administration and funding",
+        "Racial and ethnic relations",
+        "Religion",
+        "Teaching, teachers, curricula"
+      ],
+      "summary_crs": " <p><strong>Combating European Anti-Semitism Act</strong> <strong>of 2017</strong></p> <p>This bill requires the Department of State to include in its Annual Report on International Religious Freedom information about each European country where there have been particularly significant threats or attacks against Jewish persons or institutions. The report shall include information about the security needs of such Jewish communities, U.S. efforts to partner with European law enforcement agencies and civil society groups, European public awareness initiatives to promote pluralism and tolerance, and efforts by European governments to adopt and apply a working definition of anti-Semitism.</p> <p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ434/PLAW-115publ434.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ434/PLAW-115publ434_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ434/PLAW-115publ434.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/672",
+      "votes": []
+    },
+    {
       "id": "hr7279-115",
       "congress": 115,
       "type": "hr",
@@ -70,6 +109,38 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ436/PLAW-115publ436_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ436/PLAW-115publ436.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/7279",
+      "votes": []
+    },
+    {
+      "id": "hr7318-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "7318",
+      "title": "To amend the Federal Assets Sale and Transfer Act of 2016 to ensure that the Public Buildings Reform Board has adequate time to carry out the responsibilities of the Board, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Barletta, Lou",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2018-12-17",
+      "latest_action": {
+        "date": "2019-01-14",
+        "text": "Became Public Law No: 115-437."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Accounting and auditing",
+        "Advisory bodies",
+        "Government buildings, facilities, and property",
+        "Government studies and investigations"
+      ],
+      "summary_crs": " <p>(Sec. 1) This bill amends the Federal Assets Sale and Transfer Act of 2016 to remove the deadline for appointment of members to the Public Buildings Reform Board and revise the board's termination date to six years after its members have been selected for appointment pursuant to the Act. </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ437/PLAW-115publ437.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ437/PLAW-115publ437_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ437/PLAW-115publ437.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/7318",
       "votes": []
     },
     {
@@ -123,6 +194,48 @@
       "votes": []
     },
     {
+      "id": "s1580-115",
+      "congress": 115,
+      "type": "s",
+      "number": "1580",
+      "title": "Protecting Girls' Access to Education in Vulnerable Settings Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Rubio, Marco",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2017-07-19",
+      "latest_action": {
+        "date": "2019-01-14",
+        "text": "Became Public Law No: 115-442."
+      },
+      "outcome": "enacted",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Assault and harassment offenses",
+        "Child safety and welfare",
+        "Conflicts and wars",
+        "Congressional oversight",
+        "Crimes against women",
+        "Elementary and secondary education",
+        "Foreign aid and international relief",
+        "Human rights",
+        "Human trafficking",
+        "International organizations and cooperation",
+        "Marriage and family status",
+        "Refugees, asylum, displaced persons",
+        "Sex, gender, sexual orientation discrimination",
+        "Women's education"
+      ],
+      "summary_crs": " <p><b>Protecting Girls' Access to Education in Vulnerable Settings Act</b></p> <p>This bill authorizes the Department of State and the U.S. Agency for International Development (USAID) to prioritize programs that protect displaced children, particularly displaced girls. The State Department and USAID may coordinate their efforts with multilateral organizations such as the World Bank, the private sector, and civil society organizations. </p> <p>Such programs include those that (1) provide safe primary and secondary education for displaced children; (2) build capacity in countries hosting displaced people to prevent educational discrimination against such children, especially girls; and (3) increase such children's access to educational, economic, and entrepreneurial opportunities. </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ442/PLAW-115publ442.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ442/PLAW-115publ442_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ442/PLAW-115publ442.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/1580",
+      "votes": []
+    },
+    {
       "id": "s512-115",
       "congress": 115,
       "type": "s",
@@ -170,6 +283,43 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ430/PLAW-115publ430_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ430/PLAW-115publ430.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/5636",
+      "votes": []
+    },
+    {
+      "id": "hr6602-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "6602",
+      "title": "To reauthorize the New Jersey Coastal Heritage Trail Route, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. LoBiondo, Frank A.",
+        "party": "R",
+        "state": "NJ"
+      },
+      "introduced_date": "2018-07-26",
+      "latest_action": {
+        "date": "2019-01-10",
+        "text": "Became Public Law No: 115-431."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Historic sites and heritage areas",
+        "Historical and cultural resources",
+        "Land use and conservation",
+        "Marine and coastal resources, fisheries",
+        "New Jersey",
+        "Parks, recreation areas, trails",
+        "Roads and highways",
+        "Wilderness and natural areas, wildlife refuges, wild rivers, habitats",
+        "Wildlife conservation and habitat protection"
+      ],
+      "summary_crs": " <p>This bill reauthorizes the New Jersey Coastal Heritage Trail Route through FY2025. </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ431/PLAW-115publ431.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ431/PLAW-115publ431_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ431/PLAW-115publ431.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/6602",
       "votes": []
     },
     {
@@ -402,6 +552,81 @@
       "votes": []
     },
     {
+      "id": "hr6287-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "6287",
+      "title": "9/11 Memorial Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. MacArthur, Thomas",
+        "party": "R",
+        "state": "NJ"
+      },
+      "introduced_date": "2018-06-28",
+      "latest_action": {
+        "date": "2019-01-03",
+        "text": "Became Public Law No: 115-413."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Accounting and auditing",
+        "Congressional oversight",
+        "Crime victims",
+        "Department of Defense",
+        "First responders and emergency personnel",
+        "Government buildings, facilities, and property",
+        "Military personnel and dependents",
+        "Monuments and memorials",
+        "Museums, exhibitions, cultural centers",
+        "New York City",
+        "Pennsylvania",
+        "Social work, volunteer service, charitable organizations",
+        "Terrorism",
+        "User charges and fees",
+        "Virginia"
+      ],
+      "summary_crs": " <p><b>9/11 Memorial Act</b></p> <p>This bill directs the Department of the Interior to award competitive grants for the continued operation, security, and maintenance of&nbsp;the on-site memorials to the events and victims of the&nbsp;September 11, 2001,&nbsp;terrorist attacks on the World Trade Center and&nbsp;the Pentagon. </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ413/PLAW-115publ413.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ413/PLAW-115publ413_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ413/PLAW-115publ413.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/6287",
+      "votes": []
+    },
+    {
+      "id": "s2276-115",
+      "congress": 115,
+      "type": "s",
+      "number": "2276",
+      "title": "GAO-IG Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Young, Todd",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2018-01-04",
+      "latest_action": {
+        "date": "2019-01-03",
+        "text": "Became Public Law No: 115-414."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Congressional oversight",
+        "Executive agency funding and structure",
+        "Government Accountability Office (GAO)",
+        "Government studies and investigations"
+      ],
+      "summary_crs": " <p><b>Good Accounting Obligation in Government Act or the GAO-IG Act</b></p> <p>This bill requires each federal agency (including each legislative branch agency), in its&nbsp;annual budget justification, to include a report on (1) each public recommendation of the Government Accountability Office (GAO) that is designated as \"open\" or \"closed, unimplemented\" for a period of at least one year preceding the date on which such justification is submitted; (2) each public recommendation for corrective action from the agency's office of the&nbsp;inspector general (OIG) that was published at least one year before the justification is submitted&nbsp;for which no final action was taken; and (3) the implementation status of each such recommendation. </p> <p>Each agency shall also provide a copy of this&nbsp;information to its OIG and to&nbsp;the GAO.</p> <p>The deadline for submission to Congress of agency statements is extended.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ414/PLAW-115publ414.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ414/PLAW-115publ414_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ414/PLAW-115publ414.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/2276",
+      "votes": []
+    },
+    {
       "id": "s2652-115",
       "congress": 115,
       "type": "s",
@@ -434,6 +659,39 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ415/PLAW-115publ415_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ415/PLAW-115publ415.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/2652",
+      "votes": []
+    },
+    {
+      "id": "s2679-115",
+      "congress": 115,
+      "type": "s",
+      "number": "2679",
+      "title": "Veterans Small Business Enhancement Act of 2018",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Duckworth, Tammy",
+        "party": "D",
+        "state": "IL"
+      },
+      "introduced_date": "2018-04-16",
+      "latest_action": {
+        "date": "2019-01-03",
+        "text": "Became Public Law No: 115-416."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commerce",
+      "subjects": [
+        "Government buildings, facilities, and property",
+        "Intergovernmental relations",
+        "Small business",
+        "State and local government operations",
+        "Veterans' education, employment, rehabilitation"
+      ],
+      "summary_crs": " <p><strong>Veterans Small Business Enhancement Act of 2018</strong></p> <p>(Sec. 2) This bill amends the Small Business Act to direct the Small Business Administration (SBA) to give access to and manage the distribution of U.S-owned surplus property, pursuant to a memorandum of agreement between the SBA, the General Services Administration, and the head of the state agency for surplus properties, to small businesses owned and controlled by veterans. This includes access to foreign excess property returned to a state for handling as surplus property.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ416/PLAW-115publ416.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ416/PLAW-115publ416_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ416/PLAW-115publ416.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/2679",
       "votes": []
     },
     {
@@ -589,6 +847,45 @@
       "votes": []
     },
     {
+      "id": "hr767-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "767",
+      "title": "SOAR to Health and Wellness Act of 2018",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Cohen, Steve",
+        "party": "D",
+        "state": "TN"
+      },
+      "introduced_date": "2017-01-31",
+      "latest_action": {
+        "date": "2018-12-31",
+        "text": "Became Public Law No: 115-398."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Crime victims",
+        "Criminal investigation, prosecution, interrogation",
+        "Criminal justice information and records",
+        "Emergency medical services and trauma care",
+        "Health facilities and institutions",
+        "Health information and medical records",
+        "Health personnel",
+        "Health programs administration and funding",
+        "Health promotion and preventive care",
+        "Human trafficking",
+        "Medical education"
+      ],
+      "summary_crs": " <p><strong>Stop, Observe, Ask, and Respond to Health and Wellness Act of 2018 or the SOAR to Health and Wellness Act of </strong><b>2018</b></p> <p>(Sec. 2) This bill provides statutory authority for and expands the Department of Health and Human Services program known as the Stop, Observe, Ask, and Respond to Health and Wellness Training Program&nbsp;or the SOAR to Health and Wellness Training Program. </p> <p>The program trains health care and social service providers to:</p> <ul> <li>identify potential human trafficking victims, </li> <li>work with law enforcement to report and facilitate communication with such victims, </li> <li>refer victims to social or victims service agencies or organizations, and</li> <li>provide such victims with coordinated care tailored to their circumstances.</li> </ul> <p>The program must include the functions of the training program with the same name that was operating before this bill's enactment and the following initiatives:</p> <ul> <li>engaging stakeholders to develop a flexible training module, </li> <li>providing technical assistance relating to program activities, </li> <li>developing a methodology for collecting and reporting data on the number of human trafficking victims served through the program, and</li> <li>integrating program training with other types of training for health care and social service providers (e.g., training regarding sexual assault victims). </li> </ul>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ398/PLAW-115publ398.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ398/PLAW-115publ398_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ398/PLAW-115publ398.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/767",
+      "votes": []
+    },
+    {
       "id": "s1520-115",
       "congress": 115,
       "type": "s",
@@ -615,6 +912,43 @@
       "votes": []
     },
     {
+      "id": "s2076-115",
+      "congress": 115,
+      "type": "s",
+      "number": "2076",
+      "title": "BOLD Infrastructure for Alzheimer's Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Collins, Susan M.",
+        "party": "R",
+        "state": "ME"
+      },
+      "introduced_date": "2017-11-06",
+      "latest_action": {
+        "date": "2018-12-31",
+        "text": "Became Public Law No: 115-406."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Aging",
+        "Health care coverage and access",
+        "Health information and medical records",
+        "Health programs administration and funding",
+        "Health promotion and preventive care",
+        "Hospital care",
+        "Neurological disorders",
+        "Public-private cooperation",
+        "Rural conditions and development"
+      ],
+      "summary_crs": " <p><strong>Building Our Largest Dementia Infrastructure for Alzheimer's Act or the BOLD Infrastructure for Alzheimer's Act</strong></p> <p>(Sec. 2) This bill amends the Public Health Service Act to reauthorize through FY2024 and revise grant programs regarding Alzheimer's disease and related dementias. Among other changes, the Department of Health and Human Services (HHS) must support: (1) the establishment of regional centers that address Alzheimer's disease and related dementias, such as through public awareness campaigns; and (2) data collection on the incidence and prevalence of such conditions. </p> <p>(Sec. 3) HHS must also award cooperative agreements to health departments for the purpose of addressing Alzheimer's disease and related dementias, such as through reducing cognitive decline and helping caregivers.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ406/PLAW-115publ406.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ406/PLAW-115publ406_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ406/PLAW-115publ406.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/2076",
+      "votes": []
+    },
+    {
       "id": "s2248-115",
       "congress": 115,
       "type": "s",
@@ -637,6 +971,38 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ407/PLAW-115publ407_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ407/PLAW-115publ407.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/2248",
+      "votes": []
+    },
+    {
+      "id": "s2278-115",
+      "congress": 115,
+      "type": "s",
+      "number": "2278",
+      "title": "State Offices of Rural Health Reauthorization Act of 2018",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Roberts, Pat",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2018-01-04",
+      "latest_action": {
+        "date": "2018-12-31",
+        "text": "Became Public Law No: 115-408."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Health care coverage and access",
+        "Health programs administration and funding",
+        "Rural conditions and development",
+        "State and local government operations"
+      ],
+      "summary_crs": " <p><b>State Offices of Rural Health Reauthorization Act of 2018</b></p> <p>(Sec. 2) This bill amends the Public Health Service Act to reauthorize through FY2022 and revise the grant program for state offices of rural health. Among other changes, the bill requires (rather than authorizes) the Department of Health and Human Services to make such grants and also alters matching fund requirements. </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ408/PLAW-115publ408.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ408/PLAW-115publ408_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ408/PLAW-115publ408.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/2278",
       "votes": []
     },
     {
@@ -694,6 +1060,43 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ403/PLAW-115publ403_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ403/PLAW-115publ403.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/7",
+      "votes": []
+    },
+    {
+      "id": "s943-115",
+      "congress": 115,
+      "type": "s",
+      "number": "943",
+      "title": "Johnson-O'Malley Supplemental Indian Education Program Modernization Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Heitkamp, Heidi",
+        "party": "D",
+        "state": "ND"
+      },
+      "introduced_date": "2017-04-26",
+      "latest_action": {
+        "date": "2018-12-31",
+        "text": "Became Public Law No: 115-404."
+      },
+      "outcome": "enacted",
+      "policy_area": "Native Americans",
+      "subjects": [
+        "Congressional oversight",
+        "Education programs funding",
+        "Elementary and secondary education",
+        "Government information and archives",
+        "Government studies and investigations",
+        "Indian social and development programs",
+        "Minority education",
+        "Public contracts and procurement",
+        "Student records"
+      ],
+      "summary_crs": " <p><b>Johnson-O'Malley Supplemental Indian Education Program Modernization Act</b></p> <p>This bill requires the Department of the Interior to annually update the number of Indian students eligible for the Johnson-O'Malley Program (JOM Program). The JOM Program awards contracts to tribal organizations, schools, states, and others to educate Indian students. Under the program, the contract amounts are based on the number of students served.</p> <p>Under the bill, contracting parties must annually report to Interior on the number of students they serve and how the amounts for which contract funds were used. If they fail to submit the report, Interior shall not give them program funds for the fiscal year following the academic year for which the report should have been submitted.</p> <p>This bill allows Interior to make recommendations for legislation to increase funds per eligible student and to identify additional sources of funding that do not reallocate existing funds utilized by Indian students. The bill allocates appropriations for any fiscal year for which the appropriated amount exceeds the previous fiscal year appropriation.</p> <p> Interior must confer with Indian tribes, state and local education agencies, and Alaska Native organizations that have not participated in the program to determine their interest in the JOM Program.</p>  <p>This bill requires the Government Accountability Office to review the implementation of this bill.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ404/PLAW-115publ404.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ404/PLAW-115publ404_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ404/PLAW-115publ404.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/943",
       "votes": []
     },
     {
@@ -1951,6 +2354,43 @@
       "votes": []
     },
     {
+      "id": "s2511-115",
+      "congress": 115,
+      "type": "s",
+      "number": "2511",
+      "title": "CENOTE Act of 2018",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wicker, Roger F.",
+        "party": "R",
+        "state": "MS"
+      },
+      "introduced_date": "2018-03-07",
+      "latest_action": {
+        "date": "2018-12-21",
+        "text": "Became Public Law No: 115-394."
+      },
+      "outcome": "enacted",
+      "policy_area": "Transportation and Public Works",
+      "subjects": [
+        "Advanced technology and technological innovations",
+        "Advisory bodies",
+        "Congressional oversight",
+        "Government studies and investigations",
+        "Higher education",
+        "Intergovernmental relations",
+        "Public participation and lobbying",
+        "Public-private cooperation",
+        "Research and development"
+      ],
+      "summary_crs": " <p><b>Commercial Engagement Through Ocean Technology Act of 2018 or the CENOTE Act of 2018</b></p> <p>(Sec.\t3)\tThis bill requires the National Oceanic and Atmospheric Administration (NOAA)\tto direct the Office of Oceanic and Atmospheric Research (OAR)\tand the Office of Marine and Aviation Operations (OMAO)\tto coordinate the assessment and acquisition of unmanned maritime systems.</p> <p>NOAA must coordinate with the Department of the Navy to leverage expertise in the development and operational transition of unmanned maritime systems. It may also coordinate with other federal agencies, the academic sector, and the private sector to maximize research opportunities and to support commercialization of unmanned maritime systems.</p> <p>(Sec.\t4)\tThe OAR and OMAO must regularly assess publicly and commercially available unmanned maritime systems for potential use to support the missions of NOAA.</p> <p>(Sec.\t5)\tNOAA must coordinate and centralize its acquisition of unmanned maritime systems to meet the prioritized list of data requirements identified by the OAR and OMAO.</p> <p>(Sec.\t6)\tNOAA must submit to Congress a report on the usage of unmanned maritime systems for its mission.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ394/PLAW-115publ394.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ394/PLAW-115publ394_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ394/PLAW-115publ394.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/2511",
+      "votes": []
+    },
+    {
       "id": "s3170-115",
       "congress": 115,
       "type": "s",
@@ -2124,6 +2564,39 @@
       "votes": []
     },
     {
+      "id": "hr3996-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "3996",
+      "title": "Protecting Access to the Courts for Taxpayers Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Issa, Darrell E.",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2017-10-10",
+      "latest_action": {
+        "date": "2018-12-19",
+        "text": "Became Public Law No: 115-332."
+      },
+      "outcome": "enacted",
+      "policy_area": "Law",
+      "subjects": [
+        "Federal appellate courts",
+        "Federal district courts",
+        "Jurisdiction and venue",
+        "Specialized courts",
+        "Tax administration and collection, taxpayers"
+      ],
+      "summary_crs": " <p><b>Protecting Access to the Courts for Taxpayers Act</b></p> <p>(Sec. 2) This bill amends the federal judicial code to authorize a U.S. district court, a U.S. court of appeals, the U.S. Court of Federal Claims, or the Court of International Trade to transfer to the U.S. Tax Court a misfiled case within the Tax Court's jurisdiction.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ332/PLAW-115publ332.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ332/PLAW-115publ332_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ332/PLAW-115publ332.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/3996",
+      "votes": []
+    },
+    {
       "id": "s245-115",
       "congress": 115,
       "type": "s",
@@ -2270,6 +2743,43 @@
       "votes": []
     },
     {
+      "id": "hr315-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "315",
+      "title": "Improving Access to Maternity Care Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Burgess, Michael C.",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2017-01-05",
+      "latest_action": {
+        "date": "2018-12-17",
+        "text": "Became Public Law No: 115-320."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Child health",
+        "Government information and archives",
+        "Government lending and loan guarantees",
+        "Health care coverage and access",
+        "Health personnel",
+        "Medical education",
+        "Sex and reproductive health",
+        "Student aid and college costs",
+        "Women's health"
+      ],
+      "summary_crs": " <p><b>Improving Access to Maternity Care Act</b></p> <p>(Sec. 2) This bill amends the Public Health Service Act to require the Health Resources and Services Administration (HRSA) to identify maternity care health professional target areas, which are areas within health professional shortage areas that have a shortage of maternity care health professionals, for purposes of assigning maternity care health professionals to those areas.</p> HRSA must collect and publish data comparing the availability of and need for maternity care health services in health professional shortage areas and areas within those areas.",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ320/PLAW-115publ320.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ320/PLAW-115publ320_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ320/PLAW-115publ320.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/315",
+      "votes": []
+    },
+    {
       "id": "hr3398-115",
       "congress": 115,
       "type": "hr",
@@ -2292,6 +2802,35 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ323/PLAW-115publ323_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ323/PLAW-115publ323.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/3398",
+      "votes": []
+    },
+    {
+      "id": "hr6330-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "6330",
+      "title": "Small Business Runway Extension Act of 2018",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Knight, Stephen",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2018-07-11",
+      "latest_action": {
+        "date": "2018-12-17",
+        "text": "Became Public Law No: 115-324."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commerce",
+      "subjects": [
+        "Small business"
+      ],
+      "summary_crs": " <p><b>Small Business Runway Extension Act of 2018</b></p> <p>(Sec. 2) This bill amends the Small Business Act to revise certain requirements for prescribing size standards for small businesses. Such standards shall be calculated using average annual gross receipts of such businesses from at least the previous five (currently, three) years.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ324/PLAW-115publ324.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ324/PLAW-115publ324_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ324/PLAW-115publ324.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/6330",
       "votes": []
     },
     {
@@ -2683,6 +3222,37 @@
       "votes": []
     },
     {
+      "id": "hr5317-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "5317",
+      "title": "To repeal section 2141 of the Revised Statutes to remove the prohibition on certain alcohol manufacturing on Indian lands.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Herrera Beutler, Jaime",
+        "party": "R",
+        "state": "WA"
+      },
+      "introduced_date": "2018-03-15",
+      "latest_action": {
+        "date": "2018-12-11",
+        "text": "Became Public Law No: 115-304."
+      },
+      "outcome": "enacted",
+      "policy_area": "Native Americans",
+      "subjects": [
+        "Alcoholic beverages",
+        "Civil actions and liability",
+        "Indian lands and resources rights"
+      ],
+      "summary_crs": " <p>(Sec. 2) This bill repeals a prohibition on creating or continuing a distillery in Indian country for manufacturing ardent spirits (distilled liquors).</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ304/PLAW-115publ304.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ304/PLAW-115publ304_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ304/PLAW-115publ304.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/5317",
+      "votes": []
+    },
+    {
       "id": "s1768-115",
       "congress": 115,
       "type": "s",
@@ -2731,6 +3301,38 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ309/PLAW-115publ309_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ309/PLAW-115publ309.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/3389",
+      "votes": []
+    },
+    {
+      "id": "sres154-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "154",
+      "title": "A resolution promoting awareness of motorcycle profiling and encouraging collaboration and communication with the motorcycle community and law enforcement officials to prevent instances of profiling.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Johnson, Ron",
+        "party": "R",
+        "state": "WI"
+      },
+      "introduced_date": "2017-05-04",
+      "latest_action": {
+        "date": "2018-12-11",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Criminal investigation, prosecution, interrogation",
+        "Law enforcement administration and funding",
+        "Law enforcement officers",
+        "Motor vehicles"
+      ],
+      "summary_crs": " <p>Promotes increased public awareness of motorcycle profiling.</p> <p>Encourages collaboration and communication with the motorcycle community and law enforcement to engage in efforts to end motorcycle profiling.</p> <p>Urges state law enforcement officials to include statements condemning motorcycle profiling in written policies and training materials.</p> <ul> </ul>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres154/BILLS-115sres154ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres154/BILLS-115sres154ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres154/BILLS-115sres154ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/154",
       "votes": []
     },
     {
@@ -2807,6 +3409,43 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ298/PLAW-115publ298_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ298/PLAW-115publ298.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-joint-resolution/143",
+      "votes": []
+    },
+    {
+      "id": "s2152-115",
+      "congress": 115,
+      "type": "s",
+      "number": "2152",
+      "title": "Amy, Vicky, and Andy Child Pornography Victim Assistance Act of 2018",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hatch, Orrin G.",
+        "party": "R",
+        "state": "UT"
+      },
+      "introduced_date": "2017-11-16",
+      "latest_action": {
+        "date": "2018-12-07",
+        "text": "Became Public Law No: 115-299."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Congressional oversight",
+        "Crime victims",
+        "Crimes against children",
+        "Criminal procedure and sentencing",
+        "Evidence and witnesses",
+        "Government trust funds",
+        "Pornography",
+        "Sex offenses",
+        "Smuggling and trafficking"
+      ],
+      "summary_crs": " <p><b>Amy, Vicky, and Andy Child Pornography Victim Assistance Act of 2018</b></p> <p>(Sec. 3) This bill amends the federal criminal code to modify procedures for determining the amount of mandatory restitution in child pornography cases.</p> <p>If a defendant is convicted of trafficking in child pornography, then the court must order mandatory restitution in an amount that reflects the defendant's relative role in the causal process that underlies the victim's losses, but which is no less than $3,000. The full amount of the victim's losses includes costs incurred as a proximate result of all trafficking in child pornography offenses involving the same victim.</p> <p>(Sec. 4) If a defendant is convicted of trafficking in child pornography, then a victim of the offense may elect to receive a one-time payment in the amount of $35,000 (adjusted for inflation) from a Child Pornography Victims Reserve, subject to limitations. </p> <p>(Sec. 5) The bill amends the Victims of Crime Act of 1984 to establish the Child Pornography Victims Reserve within the Crime Victims Fund. Courts must impose additional assessments on persons convicted of child pornography offenses, and the additional assessments must be deposited into the Child Pornography Victims Reserve.</p> <p>(Sec. 6) In a criminal proceeding, a victim of a child pornography offense must have reasonable access to the pornographic material depicting the victim for inspection, viewing, and examination by the victim, his or her attorney, and potential expert witnesses.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ299/PLAW-115publ299.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ299/PLAW-115publ299_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ299/PLAW-115publ299.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/2152",
       "votes": []
     },
     {
@@ -3784,6 +4423,39 @@
       "votes": []
     },
     {
+      "id": "s2553-115",
+      "congress": 115,
+      "type": "s",
+      "number": "2553",
+      "title": "Know the Lowest Price Act of 2018",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Stabenow, Debbie",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2018-03-14",
+      "latest_action": {
+        "date": "2018-10-10",
+        "text": "Became Public Law No: 115-262."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Health care costs and insurance",
+        "Health care coverage and access",
+        "Insurance industry and regulation",
+        "Medicare",
+        "Prescription drugs"
+      ],
+      "summary_crs": " <p><b>Know the Lowest Price Act of 2018</b></p> <p>(Sec. 2) This bill prohibits a prescription drug plan under Medicare or Medicare Advantage&nbsp;from restricting a pharmacy from informing an enrollee of any difference between the price, copayment, or coinsurance of a drug under the plan and a lower price of the drug without health-insurance coverage. (Such restrictions are commonly referred to as gag clauses.)</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ262/PLAW-115publ262.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ262/PLAW-115publ262_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ262/PLAW-115publ262.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/2553",
+      "votes": []
+    },
+    {
       "id": "s2554-115",
       "congress": 115,
       "type": "s",
@@ -3888,6 +4560,35 @@
       "votes": []
     },
     {
+      "id": "hr4854-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "4854",
+      "title": "Justice Served Act of 2018",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Carter, John R.",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2018-01-19",
+      "latest_action": {
+        "date": "2018-10-09",
+        "text": "Became Public Law No: 115-257."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Government employee pay, benefits, personnel management"
+      ],
+      "summary_crs": " <p><b>Justice Served Act of 2018</b></p> <p>(Sec. 2) This bill amends the DNA Analysis Backlog Elimination Act of 2000 to add, as a purpose area under the Debbie Smith DNA Backlog Grant Program, increasing the capacity of prosecutors to address the backlog of violent crime cases involving suspects identified through DNA evidence. The Department of Justice (DOJ) must allocate a specified percentage of grant funds for such purpose, subject to limitations.</p> <p>Additionally, of amounts made available over FY2019-FY2022 for a DNA analysis and capacity enhancement program and for other forensic activities, DOJ must allocate at least 5% for grants to prosecute cold cases involving violent crime, where suspects have been identified through DNA evidence.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ257/PLAW-115publ257.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ257/PLAW-115publ257_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ257/PLAW-115publ257.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/4854",
+      "votes": []
+    },
+    {
       "id": "hr4958-115",
       "congress": 115,
       "type": "hr",
@@ -3918,6 +4619,36 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ258/PLAW-115publ258_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ258/PLAW-115publ258.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/4958",
+      "votes": []
+    },
+    {
+      "id": "s1668-115",
+      "congress": 115,
+      "type": "s",
+      "number": "1668",
+      "title": "A bill to rename a waterway in the State of New York as the \"Joseph Sanford Jr. Channel\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Schumer, Charles E.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2017-07-27",
+      "latest_action": {
+        "date": "2018-10-09",
+        "text": "Became Public Law No: 115-260."
+      },
+      "outcome": "enacted",
+      "policy_area": "Transportation and Public Works",
+      "subjects": [
+        "Navigation, waterways, harbors",
+        "New York City"
+      ],
+      "summary_crs": " <b><p /></b> <p>This bill redesignates the waterway in New York State known as the Negro Bar Channel as the \"Joseph Sanford Jr. Channel.\"</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ260/PLAW-115publ260.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ260/PLAW-115publ260_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ260/PLAW-115publ260.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/1668",
       "votes": []
     },
     {
@@ -4206,6 +4937,44 @@
       "text_url_xml": "https://www.congress.gov/115/bills/sres637/BILLS-115sres637ats.xml",
       "text_url_pdf": "https://www.congress.gov/115/bills/sres637/BILLS-115sres637ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/637",
+      "votes": []
+    },
+    {
+      "id": "sres610-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "610",
+      "title": "A resolution urging the release of information regarding the September 11, 2001, terrorist attacks upon the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blumenthal, Richard",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2018-08-21",
+      "latest_action": {
+        "date": "2018-09-26",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR 8/31/2018 S5762)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Crime victims",
+        "Department of Defense",
+        "Government buildings, facilities, and property",
+        "Government information and archives",
+        "Government studies and investigations",
+        "Intelligence activities, surveillance, classified information",
+        "New York City",
+        "Pennsylvania",
+        "Terrorism",
+        "Virginia"
+      ],
+      "summary_crs": " <p>Resolves that documents related to the events of September 11, 2001, should be declassified to the greatest extent possible so as to provide answers to survivors, the families of the victims, and the people of the United States.</p>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres610/BILLS-115sres610ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres610/BILLS-115sres610ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres610/BILLS-115sres610ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/610",
       "votes": []
     },
     {
@@ -4576,6 +5345,41 @@
       "votes": []
     },
     {
+      "id": "hr2345-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "2345",
+      "title": "National Suicide Hotline Improvement Act of 2018",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Stewart, Chris",
+        "party": "R",
+        "state": "UT"
+      },
+      "introduced_date": "2017-05-03",
+      "latest_action": {
+        "date": "2018-08-14",
+        "text": "Became Public Law No: 115-233."
+      },
+      "outcome": "enacted",
+      "policy_area": "Science, Technology, Communications",
+      "subjects": [
+        "Congressional oversight",
+        "Emergency communications systems",
+        "Government studies and investigations",
+        "Health promotion and preventive care",
+        "Mental health",
+        "Telephone and wireless communication",
+        "Veterans' medical care"
+      ],
+      "summary_crs": " <br /> <div><b>National Suicide Hotline Improvement Act of 2018</b></div> <p>(Sec. 3) This bill requires the Federal Communications Commission (FCC) to coordinate with the Substance Abuse and Mental Health Services Administration (SAMHSA) of the Department of Health and Human Services and the Department of Veterans Affairs (VA) to conduct a study that: (1) examines the feasibility of designating a three-digit dialing code (N11 dialing code) for a national suicide prevention and mental health crisis hotline system; and (2) analyzes the effectiveness of the National Suicide Prevention Lifeline (NSPL) as of the date on which the study is initiated, including how well it addresses the needs of veterans. </p> <p>To assist the FCC in conducting the study, SAMHSA shall analyze and report to the FCC on: (1) the potential impact of such designation of a dialing code on suicide prevention, crisis services, and other suicide prevention and mental health crisis hotlines; and (2) possible recommendations for improving the NSPL generally. The VA shall study and report to the FCC on how well the NSPL and the Veterans Crisis Line are working to address the needs of veterans.</p> <p>The FCC, in coordination with SAMHSA and the VA, shall report on the study to specified congressional committees.</p> <p>(Sec. 4) No additional funds are authorized to carry out this bill.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ233/PLAW-115publ233.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ233/PLAW-115publ233_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ233/PLAW-115publ233.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/2345",
+      "votes": []
+    },
+    {
       "id": "hr5554-115",
       "congress": 115,
       "type": "hr",
@@ -4624,6 +5428,38 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ235/PLAW-115publ235_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ235/PLAW-115publ235.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/6414",
+      "votes": []
+    },
+    {
+      "id": "s770-115",
+      "congress": 115,
+      "type": "s",
+      "number": "770",
+      "title": "NIST Small Business Cybersecurity Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Schatz, Brian",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2017-03-29",
+      "latest_action": {
+        "date": "2018-08-14",
+        "text": "Became Public Law No: 115-236."
+      },
+      "outcome": "enacted",
+      "policy_area": "Science, Technology, Communications",
+      "subjects": [
+        "Computer security and identity theft",
+        "Government information and archives",
+        "Infrastructure development",
+        "Small business"
+      ],
+      "summary_crs": " <div><b><br /></b></div> <div><b>NIST Small Business Cybersecurity Act</b></div> <p class=\"MsoNormal\" style=\"line-height: normal;\">(Sec. 2) This bill amends the National Institute of Standards and Technology Act to require the National Institute of Standards and Technology (NIST) to consider small businesses when it facilitates and supports the development of voluntary, consensus-based, industry-led guidelines and procedures to cost-effectively reduce cyber risks to critical infrastructure.</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">NIST must disseminate, and publish on its website, standard and method resources that small business may use voluntarily to help identify, assess, manage, and reduce their cybersecurity risks. The resources must be: (1) technology-neutral, (2) based on international standards to the extent possible, (3) able to vary with the nature and size of the implementing small business and the sensitivity of the data collected or stored on the information systems, and (4) consistent with the national cybersecurity awareness and education program under the Cybersecurity Enhancement Act of 2014. Additionally, the resources must include case studies of practical application.</p> <p class=\"MsoNormal\" style=\"line-height: normal;\">Other federal agencies may also elect to publish the resources on their own websites. </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ236/PLAW-115publ236.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ236/PLAW-115publ236_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ236/PLAW-115publ236.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/770",
       "votes": []
     },
     {
@@ -5645,6 +6481,83 @@
       "votes": []
     },
     {
+      "id": "hr931-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "931",
+      "title": "Firefighter Cancer Registry Act of 2018",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Collins, Chris",
+        "party": "R",
+        "state": "NY"
+      },
+      "introduced_date": "2017-02-07",
+      "latest_action": {
+        "date": "2018-07-07",
+        "text": "Became Public Law No: 115-194."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Cancer",
+        "Fires",
+        "First responders and emergency personnel",
+        "Government information and archives",
+        "Health information and medical records",
+        "Medical research",
+        "Medical tests and diagnostic methods",
+        "Minority health",
+        "Personnel records",
+        "State and local government operations",
+        "Women's health",
+        "Worker safety and health"
+      ],
+      "summary_crs": " <p><b>Firefighter Cancer Registry Act of </b> <b>2018</b></p> <p>(Sec. 2) This bill requires the Centers for Disease Control and Prevention (CDC) to develop and maintain a voluntary registry of firefighters in order to collect history and occupational information that can be used to determine the incidence of cancer among firefighters. The registry must be used to improve monitoring of cancer among firefighters and to collect and publish epidemiological information. The CDC should seek to include specified information in the registry, including the number and type of fire incidents attended by an individual.</p> <p>To collect information for the registry, the CDC must enable the registry to connect to state-based cancer registries. </p> <p>The CDC must also: (1) develop a strategy to encourage participation in the registry, (2) develop guidance for states and firefighting agencies regarding the registry, and (3) seek feedback on the registry from nonfederal experts.</p> <p>The CDC must make registry data available to the public and in accordance with privacy laws.</p> <p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ194/PLAW-115publ194.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ194/PLAW-115publ194_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ194/PLAW-115publ194.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/931",
+      "votes": []
+    },
+    {
+      "id": "s1091-115",
+      "congress": 115,
+      "type": "s",
+      "number": "1091",
+      "title": "Supporting Grandparents Raising Grandchildren Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Collins, Susan M.",
+        "party": "R",
+        "state": "ME"
+      },
+      "introduced_date": "2017-05-10",
+      "latest_action": {
+        "date": "2018-07-07",
+        "text": "Became Public Law No: 115-196."
+      },
+      "outcome": "enacted",
+      "policy_area": "Families",
+      "subjects": [
+        "Child care and development",
+        "Child health",
+        "Child safety and welfare",
+        "Congressional oversight",
+        "Department of Health and Human Services",
+        "Drug trafficking and controlled substances",
+        "Executive agency funding and structure",
+        "Family relationships",
+        "Government information and archives"
+      ],
+      "summary_crs": " <p><b>Supporting Grandparents Raising Grandchildren Act </b></p> (Sec. 3) This bill establishes an Advisory Council to Support Grandparents Raising Grandchildren. <p>The council must identify, promote, coordinate, and publicly disseminate information and resources to help older relatives meet the needs of the children in their care and maintain their own health and emotional well-being.</p> <p>The council must report on the information and resources.</p> <p>The bill terminates the council after three years.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ196/PLAW-115publ196.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ196/PLAW-115publ196_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ196/PLAW-115publ196.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/1091",
+      "votes": []
+    },
+    {
       "id": "s1869-115",
       "congress": 115,
       "type": "s",
@@ -5667,6 +6580,39 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ192/PLAW-115publ192_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ192/PLAW-115publ192.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/1869",
+      "votes": []
+    },
+    {
+      "id": "s2246-115",
+      "congress": 115,
+      "type": "s",
+      "number": "2246",
+      "title": "A bill to designate the health care center of the Department of Veterans Affairs in Tallahassee, Florida, as the Sergeant Ernest I. \"Boots\" Thomas VA Clinic, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Nelson, Bill",
+        "party": "D",
+        "state": "FL"
+      },
+      "introduced_date": "2017-12-19",
+      "latest_action": {
+        "date": "2018-06-25",
+        "text": "Became Public Law No: 115-193."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Congressional tributes",
+        "Department of Veterans Affairs",
+        "Florida",
+        "Health facilities and institutions",
+        "Veterans' medical care"
+      ],
+      "summary_crs": " <p>(Sec. 1) This bill designates the Department of Veterans Affairs health care center located at 2181 Orange Avenue in Tallahassee, Florida, as the \"Sergeant Ernest I. `Boots' Thomas VA Clinic.&quot; </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ193/PLAW-115publ193.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ193/PLAW-115publ193_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ193/PLAW-115publ193.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/2246",
       "votes": []
     },
     {
@@ -5723,6 +6669,40 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ189/PLAW-115publ189_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ189/PLAW-115publ189.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/4743",
+      "votes": []
+    },
+    {
+      "id": "sres551-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "551",
+      "title": "A resolution expressing support for the designation of the week of June 18 through June 22, 2018, as National GI Bill Commemoration Week.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Carper, Thomas R.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2018-06-19",
+      "latest_action": {
+        "date": "2018-06-21",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: 6/19/2018 CR S4037)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Higher education",
+        "Student aid and college costs",
+        "Veterans' education, employment, rehabilitation",
+        "Veterans' organizations and recognition"
+      ],
+      "summary_crs": " <p>Honors the achievements of the Servicemen's Readjustment Act of 1944 in democratizing higher education and affirms Congress's responsibility to ensure that veterans educational assistance endures as an honorable investment of public dollars.</p>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres551/BILLS-115sres551ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres551/BILLS-115sres551ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres551/BILLS-115sres551ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/551",
       "votes": []
     },
     {
@@ -5786,6 +6766,37 @@
       "votes": []
     },
     {
+      "id": "hr4910-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "4910",
+      "title": "Veterans Cemetery Benefit Correction Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Scott, Austin",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2018-01-30",
+      "latest_action": {
+        "date": "2018-06-15",
+        "text": "Became Public Law No: 115-184."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Administrative remedies",
+        "Cemeteries and funerals",
+        "Veterans' organizations and recognition"
+      ],
+      "summary_crs": " <p><b>Veterans Cemetery Benefit Correction Act</b> </p> <p>This bill requires the Department of the Interior to provide outer burial receptacles for veterans' remains buried in open cemeteries under National Park Service control. </p> <p>The use of outer burial receptacles in such cemeteries shall be in accordance with regulations or procedures approved by Interior.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ184/PLAW-115publ184.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ184/PLAW-115publ184_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ184/PLAW-115publ184.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/4910",
+      "votes": []
+    },
+    {
       "id": "sres503-115",
       "congress": 115,
       "type": "sres",
@@ -5809,6 +6820,53 @@
       "text_url_xml": "https://www.congress.gov/115/bills/sres503/BILLS-115sres503ats.xml",
       "text_url_pdf": "https://www.congress.gov/115/bills/sres503/BILLS-115sres503ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/503",
+      "votes": []
+    },
+    {
+      "id": "s2372-115",
+      "congress": 115,
+      "type": "s",
+      "number": "2372",
+      "title": "VA MISSION Act of 2018",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Isakson, Johnny",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2018-02-05",
+      "latest_action": {
+        "date": "2018-06-06",
+        "text": "Became Public Law No: 115-182."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Appropriations",
+        "California",
+        "Cemeteries and funerals",
+        "Congressional oversight",
+        "Dental care",
+        "Department of Veterans Affairs",
+        "District of Columbia",
+        "Drug trafficking and controlled substances",
+        "Drug, alcohol, tobacco use",
+        "Education programs funding",
+        "Employee hiring",
+        "Employee performance",
+        "Federal officials",
+        "Georgia",
+        "Government employee pay, benefits, personnel management",
+        "Government lending and loan guarantees",
+        "Government studies and investigations",
+        "Health care coverage and access",
+        "Health care quality"
+      ],
+      "summary_crs": " <b> <p />John S. McCain III, Daniel K. Akaka, and Samuel R. Johnson VA Maintaining Internal Systems and Strengthening Integrated Outside Networks Act of 2018 or the VA MISSION Act of 2018</b> <p />TITLE I--CARING FOR OUR VETERANS <p /><i>Caring for Our Veterans Act of 2018</i> <p />Subtitle A--Developing an Integrated High-Performing Network <p>Chapter 1--Establishing Community Care Programs</p> <p>(Sec. 101) This bill revises current provisions relating to veterans' health care to establish a new Veterans Community Care Program (VCCP). This program provides hospital care, medical services, and extended care services to eligible veterans through non-Veteran Administration (VA) health care providers. The VA must coordinate health care to such veterans by: (1) ensuring timely scheduling of medical appointments, (2) ensuring the continuity of care and services, (3) coordinating among regional networks, and (4) ensuring that eligible veterans do not experience a lapse in care or an unusual or excessive burden in accessing care due to errors or delays by the VA or its contractors. </p> <p>The VA shall provide an eligible veteran with health care through the VCCP if: (1) the VA does not offer the care or services the veteran requires, (2) the VA does not operate a full-service VA medical facility in the veteran's state, or (3) the veteran was eligible for care under Veterans Choice Program criteria. </p> <p>The VA must report on the types and frequency of care provided under the VCCP.</p> <p>(Sec. 102) The VA may enter into agreements known as Veterans Care Agreements (VCAs) if health care for veterans is not feasibly available from a VA facility. In authorizing care pursuant to a VCA, the VA must consider factors that would make the use of a VA facility or a community care network facility impracticable, such as the veteran's medical condition, the travel involved, or the nature of the care or services required. </p> <p>(Sec. 103) The VA may enter into VCAs with state veterans homes. Such homes are subject to all provisions of law regarding integrity, ethics, or fraud and all provisions of law that protect against employment discrimination.</p> <p>(Sec. 104) The VA must develop access and quality standards for furnishing hospital care, medical services, or extended care services to eligible veterans under the VCCP.</p> <p>(Sec. 105) The VA must develop procedures to allow certain veterans to access walk-in care through community providers.</p> <p>(Sec. 106) The VA must conduct a quadrennial market area assessment regarding VHA health care services. Such assessment must consider the demand for VA health care, the VA's health care capacity, the capacity of VCCP providers, and the capacity of academic affiliates and other federal partners that provide health care to veterans. </p> <p>(Sec. 107) The Office of Federal Contract Compliance Programs' moratorium shall be applicable to VCAs throughout the duration of the moratorium.</p> <p>(Sec. 108) The VA must deny or revoke the eligibility of certain health care providers who violated VA policies pertaining to the safe delivery of health care to veterans to provide services to veterans.</p> <p>(Sec. 109) The VA must take steps to improve a medical service line that fails to meet quality standards by increasing personnel, utilizing special hiring incentives and direct hiring authority, providing improved training, and purchasing improved equipment. </p> <p>Chapter 2--Paying Providers and Improving Collections</p> <p>(Sec. 111) The VA must adopt prompt payment standards for care provided to eligible veterans. Health care providers must submit claims within a certain time frame and are subject to penalties for fraudulent claims. </p> <p>(Sec. 112) The VA may compensate a provider for care provided to a veteran, even if the provider does not have a contract or agreement with the VA. The VA must take steps to enter into a contract or agreement with such a provider to cover future costs for care. </p> <p>(Sec. 113) The VA may recover the cost of care furnished by the VA to nonveterans requiring emergency services. The VA may also recover the cost of care of a nonservice-connected disability incurred by an individual entitled to care under a private health insurance plan. </p> <p>(Sec. 114) The VA may enter into an agreement with a third party to process medical claims using an electronic interface.</p> <p>Chapter 3--Education and Training Programs</p> <p>(Sec. 121) The VA must: (1) conduct an education program to teach veterans about their health care options through the VA health care system, as well as VCCP eligibility criteria and other financial obligations; (2) educate veterans about the interaction between Medicare, Medicaid, TRICARE, tribal health programs, and VA health care; and (3) inform veterans about the process for filing complaints about health care received from the VA. </p> <p>(Sec. 122) The VA must develop and implement a training program to educate VA employees and contractors about the VCCP, reimbursement for non-VA community emergency room services, and safe opioid prescription management. </p> <p>(Sec. 123) The VA must establish a continuing medical education program for non-VA medical professionals. The program must provide the same materials to such professionals as is provided to VA medical professionals</p> <p>Chapter 4--Other Matters Relating to Non-Department of Veterans Affairs Providers</p> <p>(Sec. 131) The VA must ensure that all non-VA, nonfederal, community providers are knowledgable about opioid-prescribing practices described in the VA &quot;Opioid Safety Initiative.&quot;</p> <p>(Sec. 132) The VA may share a veteran's medical records with non-VA entities to provide health care and with third-party insurance providers to recover charges for care provided to a veteran with a nonservice-connected condition. </p> <p>(Sec. 133) The VA must establish standards and requirements for non-VA community providers when providing care to eligible veterans. Such standards and requirements must focus on clinical areas for which the VA has special expertise, including post-traumatic stress disorder, military sexual trauma-related conditions, and traumatic brain injuries. </p> <p>(Sec. 134) The VA must enter into an agreement with a national network of prescription drug-monitoring programs or any state or regional drug prescription monitoring programs to allow licensed VA health care providers to question controlled substance prescriptions written in participating states or regions. </p> <p>Chapter 5--Other Non-Department Health Care Matters</p> <p>(Sec. 141) If the VA requests supplemental appropriations outside the annual appropriations process, it must submit a justification detailing how it will use such funds and the expected duration of the supplemental appropriations. </p> <p>(Sec. 142) The VA may, beginning on March 1, 2019, use the remaining funds in the VCF for care in the community programs provided at non-VA facilities, but the VA may not use remaining VCF funds for the VCCP. </p> <p>(Sec. 143) The VA may not authorize care under the VCP one year after the enactment of the Caring for Our Veterans Act of 2018 (i.e., on June 6, 2019). </p> <p>Subtitle B--Improving Department of Veterans Affairs Health Care Delivery</p> <p>(Sec. 151) This section removes all geographic barriers to telemedicine and protects VA providers against liability stemming from state licensure laws. The VA must report to Congress on the effectiveness of its use of telemedicine. </p> <p>(Sec. 152) This section establishes within the VA a Center for Innovation for Care and Payment. The VA may implement pilot programs to develop innovative approaches to testing payment and service delivery models for the purpose of reducing expenditures and enhancing the quality of care for veterans. </p> <p>(Sec. 153) The VA may furnish live donors any care or services required to provide transplants for eligible veterans. </p> <p>Subtitle C--Family Caregivers</p> <p>(Sec. 161) The VA family caregiver program is expanded to pre-9/11 veterans. The types of assistance available to family caregivers are also expanded to include financial planning services and legal services for injured veterans and their caregivers. </p> <p>The VA must periodically evaluate the needs of veterans and the skills of their caregivers to determine if additional support is necessary. The definition of &quot;personal care services&quot; is modified to include services that provide a veteran with: (1) supervision or protection based on symptoms or residuals of neurological or other impairment or injury, and (2) regular instruction or supervision necessary to enable the veteran to function in daily life.</p> <p>(Sec. 162) The VA must, not later than October 1, 2018, implement an IT system that fully supports the Comprehensive Caregiver Program and allows for data assessment and program monitoring. The VA must also report on the status of the planning, development, and deployment of the IT system. </p> <p>(Sec. 163) The VA must expand its reporting requirements for caregiver programs to describe any barriers to accessing and receiving care and services under such programs and to evaluate the sufficiency and consistency of the training provided to family caregivers.</p> <p>TITLE II--VA ASSET AND INFRASTRUCTURE REVIEW</p> <p>Subtitle A--Asset and Infrastructure Review</p> <p><i>VA Asset and Infrastructure Review Act of 2018</i></p> <p>(Sec. 202) This title establishes the Asset and Infrastructure Review Commission. The commission shall terminate on December 31, 2023. </p> <p>(Sec. 203) The VA shall publish, not later than February 21, 2021, criteria in the Federal Register and transmit it to the congressional veterans' affairs committees for the modernization or realignment of facilities of the Veterans Health Administration. </p> <p>(Sec. 204) The VA must begin to implement the recommended modernizations and realignments not later than three years after the President reports to Congress on approval or disapproval of the commission's recommendations.</p> <p>(Sec. 205) The VA may take certain actions to modernize or realign a facility of the Veterans Health Administration, including environmental mitigation, abatement, or restoration. </p> <p>(Sec. 206) The bill establishes the Department of Veterans Affairs Asset and Infrastructure Review Account to carry out asset and infrastructure review activities. </p> <p>(Sec. 207) The bill provides for congressional approval or disapproval of the recommendations of the VHA Asset and Infrastructure Review Commission. </p> <p>(Sec. 208) The bill requires online publication of communications received by the VA, the commission, or the President. </p> <p>(Sec. 209) The bill defines terms relevant to asset and infrastructure review, including &quot;modernization&quot; and &quot;realignment.&quot; </p> <p>Subtitle B--Other Infrastructure Matters</p> <p>(Sec. 211) The bill requires the VA to implement a training curriculum and certification program for construction personnel. </p> <p>(Sec. 212) The bill requires the Office of Management and Budget to review each enhanced-use lease before it goes into effect. An &quot;enhanced-use lease&quot; is a lease for real property under the jurisdiction or control of the Department of the Army. </p> <p>(Sec. 213) The VA must submit to the congressional veterans' affairs committees a report on health care furnished by the VA to veterans living in the Pacific territories (i.e., American Samoa, Guam, and the Northern Mariana Islands). </p> <p>TITLE III--IMPROVEMENTS TO RECRUITMENT OF HEALTH CARE PROFESSIONALS</p> <p>(Sec. 301) The VA shall ensure that at least 50 scholarships are awarded to individuals in a program of education or training leading to employment as a physician or dentist until the VA determines that the staffing shortage of physicians and dentists in the VA is less than 500. The scholarship program is extended through 2033. </p> <p>(Sec. 302) The bill increases the maximum amount of debt that may be reduced under the VA education debt reduction program. </p> <p>(Sec. 303) The VA may carry out the student loan repayment program known as the Department of Veterans Affairs Specialty Education Loan Repayment Program. The purpose of the program is to assist in meeting the staffing needs of the Veterans Health Administration for physicians in medical specialties for which the VA determines recruitment or retention of qualified personnel is difficult. </p> <p>(Sec. 304) The VA must carry out a pilot program to fund the medical education of 18 eligible veterans. Such veterans shall: (1) have been discharged not more than 10 years before the date of application to a specified medical school, and (2) not been entitled to educational assistance under other specified VA or Department of Defense (DOD) programs</p> <p>(Sec. 305) The bill increases amounts available for bonuses for recruitment, reallocation, and retention for VA health care professionals. </p> <p>(Sec. 306) The VA must ensure that clinical staff working at Vet Centers are eligible to participate in the VA Education Debt Reduction Program.</p> <p>TITLE IV--HEALTH CARE IN UNDERSERVED AREAS</p> <p>(Sec. 401) The VA must develop criteria to designate medical centers, ambulatory care facilities, and community based outpatient VA clinics as underserved facilities, and must submit to Congress a plan to address the problem of underserved facilities of the VA.</p> <p>(Sec. 402) The VA must carry out a three-year pilot program to furnish mobile deployment teams of medical personnel to underserved facilities. </p> <p>(Sec. 403) The VA must establish a pilot program to establish medical residency positions at the VA, the Indian Health Service, and DOD health care facilities.</p> <p>TITLE V--OTHER MATTERS</p> <p>(Sec. 501) The VA must submit to the congressional veterans' affairs and appropriations committees an annual report on performance awards or bonuses awarded to: (1) a Regional Office Director, (2) a Director of a Medical Center, (3) a Director of a Veterans Integrated Service Network, and (4) a senior executive of the VA. </p> <p>(Sec. 502) A doctor of podiatry is eligible for any supervisory position in the Veterans Health Administration to the same degree that a physician is eligible.</p> <p>(Sec. 503) The bill revises the definition of &quot;major medical facility project.&quot;</p> <p>(Sec. 504) The bill authorizes the VA to carry out specified major medical facility projects. </p> <p>(Sec. 505) The VA must make publicly available on its website, and update quarterly, information on: (1) the number of personnel encumbering positions; (2) the number of accessions and separation actions processed in the preceding quarter; (3) the number of vacancies, by occupation; and (4) the percentage of new hires for the VA who were hired within the time-to-hire target of the Office of Personnel Management. The VA must report to Congress annually on steps it is taking to achieve full staffing capacity. </p> <p>(Sec. 506) The bill requires the VA to carry out a program to establish at least two peer specialists in patient-aligned care teams at VA medical centers to promote the use and integration of services for mental health, substance use disorder, and behavioral health in a primary care setting. </p> <p>(Sec. 507) The bill requires the VA to carry out a two-year pilot program to increase the use of medical scribes at VA medical centers. A &quot;medical scribe&quot; is an unlicensed individual hired to enter information into the electronic health record or chart at the direction of a physician or licensed practitioner. The VA and the Government Accountability Office must report to Congress on the pilot program. </p> <p>(Sec. 508) The bill extends through 2028 the requirement to collect fees for housing loans guaranteed by the VA. </p> <p>(Sec. 509) The bill extends until September 30, 2028, the reduction in VA pensions for certain veterans covered by Medicaid plans for services furnished by nursing facilities. </p> <p>(Sec. 510) The bill authorizes a certain amount to be deposited in the Veterans Choice Fund under the Veterans Access, Choice, and Accountability Act of 2014. </p> <p>(Sec. 512) The budgetary effects of this bill shall not be entered on statutory or Senate PAYGO scorecards.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ182/PLAW-115publ182.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ182/PLAW-115publ182_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ182/PLAW-115publ182.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/2372",
       "votes": []
     },
     {
@@ -5881,6 +6939,76 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ177/PLAW-115publ177_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ177/PLAW-115publ177.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/3562",
+      "votes": []
+    },
+    {
+      "id": "hr4009-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "4009",
+      "title": "Smithsonian National Zoological Park Central Parking Facility Authorization Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Johnson, Sam",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2017-10-11",
+      "latest_action": {
+        "date": "2018-06-01",
+        "text": "Became Public Law No: 115-178."
+      },
+      "outcome": "enacted",
+      "policy_area": "Science, Technology, Communications",
+      "subjects": [
+        "District of Columbia",
+        "Motor vehicles",
+        "Museums, exhibitions, cultural centers",
+        "Parks, recreation areas, trails",
+        "Pedestrians and bicycling",
+        "Smithsonian Institution",
+        "Wildlife conservation and habitat protection"
+      ],
+      "summary_crs": " <p><b>Smithsonian National Zoological Park Central Parking Facility Authorization Act</b></p> <p>(Sec. 2) This bill authorizes the Board of Regents of the Smithsonian Institution to plan, design, and construct a central parking facility on National Zoological Park property in Washington, DC to improve visitor experience and multi-modal access to the park.</p> <p>The bill requires the parking facility to be constructed with funds from nonappropriated sources. </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ178/PLAW-115publ178.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ178/PLAW-115publ178_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ178/PLAW-115publ178.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/4009",
+      "votes": []
+    },
+    {
+      "id": "s204-115",
+      "congress": 115,
+      "type": "s",
+      "number": "204",
+      "title": "Trickett Wendler, Frank Mongiello, Jordan McLinn, and Matthew Bellina Right to Try Act of 2017",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Johnson, Ron",
+        "party": "R",
+        "state": "WI"
+      },
+      "introduced_date": "2017-01-24",
+      "latest_action": {
+        "date": "2018-05-30",
+        "text": "Became Public Law No: 115-176."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Civil actions and liability",
+        "Drug safety, medical device, and laboratory regulation",
+        "Drug therapy",
+        "Health technology, devices, supplies",
+        "Long-term, rehabilitative, and terminal care",
+        "Prescription drugs",
+        "Product safety and quality"
+      ],
+      "summary_crs": " <p><b>Trickett Wendler, Frank Mongiello, Jordan McLinn, and Matthew Bellina Right to Try Act of 2017</b></p> <p>(Sec.\t2)\tThis bill amends the Federal Food, Drug, and Cosmetic Act to exempt,&nbsp;from&nbsp;specified requirements and restrictions under that Act and other laws, the provision of certain unapproved, investigational drugs to a terminally ill patient who has exhausted approved treatment options and&nbsp;is unable to participate in a clinical trial involving the drugs. The manufacturer or sponsor of an eligible investigational drug must report annually to the Food and Drug Administration (FDA) on any use of&nbsp;the drug in accordance with these provisions. The FDA shall post an annual summary report of such use on its website.</p> <p>The bill limits&nbsp;the liability of&nbsp;a sponsor, manufacturer, prescriber,&nbsp;or dispenser that provides, or declines to provide, an eligible investigational drug to an eligible patient in accordance with the bill.</p> <ul></ul>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ176/PLAW-115publ176.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ176/PLAW-115publ176_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ176/PLAW-115publ176.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/204",
       "votes": []
     },
     {
@@ -6094,6 +7222,78 @@
       "votes": []
     },
     {
+      "id": "sres429-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "429",
+      "title": "A resolution commemorating the 59th anniversary of Tibet's 1959 uprising as \"Tibetan Rights Day\", and expressing support for the human rights and religious freedom of the Tibetan people and the Tibetan Buddhist faith community.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Leahy, Patrick J.",
+        "party": "D",
+        "state": "VT"
+      },
+      "introduced_date": "2018-03-08",
+      "latest_action": {
+        "date": "2018-04-25",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S2442)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Asia",
+        "China",
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Diplomacy, foreign officials, Americans abroad",
+        "Human rights",
+        "Protest and dissent",
+        "Religion",
+        "Sovereignty, recognition, national governance and status",
+        "Tibet"
+      ],
+      "summary_crs": " <p>Recognizes March 10, 2018, as Tibetan Rights Day and calls on the Department of State to fully implement the provisions of the Tibetan Policy Act of 2002.</p>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres429/BILLS-115sres429ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres429/BILLS-115sres429ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres429/BILLS-115sres429ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/429",
+      "votes": []
+    },
+    {
+      "id": "hr3979-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "3979",
+      "title": "Keep America's Refuges Operational Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Jeffries, Hakeem S.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2017-10-05",
+      "latest_action": {
+        "date": "2018-04-23",
+        "text": "Became Public Law No: 115-168."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Department of the Interior",
+        "Executive agency funding and structure",
+        "Public-private cooperation",
+        "Social work, volunteer service, charitable organizations",
+        "Wilderness and natural areas, wildlife refuges, wild rivers, habitats",
+        "Wildlife conservation and habitat protection"
+      ],
+      "summary_crs": " <p><b>Keep America's Refuges Operational Act</b></p> <p>(Sec. 2) This bill amends the Fish and Wildlife Act of 1956 to reauthorize through FY2022: (1) the volunteer services, community partnerships, and refuge education programs of the National Wildlife Refuge System; and (2) provisions authorizing the Department of the Interior to accept and use gifts, devises, or bequests of real and personal property for the benefit of the U.S. Fish and Wildlife Service in the performance of its activities and services. </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ168/PLAW-115publ168.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ168/PLAW-115publ168_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ168/PLAW-115publ168.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/3979",
+      "votes": []
+    },
+    {
       "id": "sres431-115",
       "congress": 115,
       "type": "sres",
@@ -6203,6 +7403,41 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ165/PLAW-115publ165_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ165/PLAW-115publ165.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/4547",
+      "votes": []
+    },
+    {
+      "id": "s772-115",
+      "congress": 115,
+      "type": "s",
+      "number": "772",
+      "title": "Ashlynne Mike AMBER Alert in Indian Country Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. McCain, John",
+        "party": "R",
+        "state": "AZ"
+      },
+      "introduced_date": "2017-03-29",
+      "latest_action": {
+        "date": "2018-04-13",
+        "text": "Became Public Law No: 115-166."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Alaska Natives and Hawaiians",
+        "Child safety and welfare",
+        "Congressional oversight",
+        "Crimes against children",
+        "Emergency communications systems",
+        "Indian social and development programs",
+        "Law enforcement administration and funding"
+      ],
+      "summary_crs": " <p><b>Ashlynne Mike AMBER Alert in Indian Country Act</b></p> <p>(Sec. 2) This bill amends the PROTECT Act to reauthorize the AMBER Alert grant program for FY2019.</p> <p>The bill also modifies the program to:</p> <ul> <li>add, as a new purpose area, the integration of tribal AMBER Alert systems into state AMBER alert systems;</li> <li>make Indian tribes eligible for AMBER Alert grants;</li> <li>permit the use of grant funds to integrate state or regional AMBER Alert communication plans with an Indian tribe; and</li> <li>allow the waiver of the matching funds requirement for grants awarded to Indian tribes.</li></ul> <p>(Sec. 3) The Department of Justice must submit to Congress a report evaluating the readiness, education, and training needs, technological challenges, and specific obstacles encountered by Indian tribes in the integration of state or regional AMBER Alert communication plans.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ166/PLAW-115publ166.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ166/PLAW-115publ166_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ166/PLAW-115publ166.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/772",
       "votes": []
     },
     {
@@ -6490,6 +7725,37 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ159/PLAW-115publ159_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ159/PLAW-115publ159.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/324",
+      "votes": []
+    },
+    {
+      "id": "hr1177-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "1177",
+      "title": "Removing Outdated Restrictions to Allow for Job Growth Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Poliquin, Bruce",
+        "party": "R",
+        "state": "ME"
+      },
+      "introduced_date": "2017-02-16",
+      "latest_action": {
+        "date": "2018-03-26",
+        "text": "Became Public Law No: 115-156."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Land transfers",
+        "Land use and conservation",
+        "Maine"
+      ],
+      "summary_crs": " <p><b>Removing Outdated Restrictions to Allow for Job Growth Act</b></p> <p>(Sec. 2) This bill directs the Department of Agriculture, if requested in writing by the city of Old Town, Maine, to release, convey, and quitclaim to the city, without monetary consideration, all rights, title, and interest of the United States in and to lands that: (1) were conveyed by the federal government to the city under the Bankhead-Jones Farm Tenant Act by the deed dated June 5, 1941, and (2) are proposed for conveyance by the city for the purpose of economic development. </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ156/PLAW-115publ156.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ156/PLAW-115publ156_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ156/PLAW-115publ156.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/1177",
       "votes": []
     },
     {
@@ -7020,6 +8286,38 @@
       "votes": []
     },
     {
+      "id": "hr3656-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "3656",
+      "title": "To amend title 38, United States Code, to provide for a consistent eligibility date for provision of Department of Veterans Affairs memorial headstones and markers for eligible spouses and dependent children of veterans whose remains are unavailable.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Banks, Jim",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2017-08-18",
+      "latest_action": {
+        "date": "2018-03-16",
+        "text": "Became Public Law No: 115-136."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Cemeteries and funerals",
+        "Military personnel and dependents",
+        "Monuments and memorials",
+        "Veterans' organizations and recognition"
+      ],
+      "summary_crs": " <p> This bill expands eligibility for memorial headstones and markers provided by the Department of Veterans Affairs to certain family members of veterans. Eligibility for dependent children and remarried spouses whose remains are unavailable is expanded to include all those who die on or after November 11, 1998.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ136/PLAW-115publ136.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ136/PLAW-115publ136_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ136/PLAW-115publ136.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/3656",
+      "votes": []
+    },
+    {
       "id": "hr452-115",
       "congress": 115,
       "type": "hr",
@@ -7129,6 +8427,38 @@
       "votes": []
     },
     {
+      "id": "hr3122-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "3122",
+      "title": "Veterans Care Financial Protection Act of 2017",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Cartwright, Matt",
+        "party": "D",
+        "state": "PA"
+      },
+      "introduced_date": "2017-06-29",
+      "latest_action": {
+        "date": "2018-03-09",
+        "text": "Became Public Law No: 115-131."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Congressional oversight",
+        "Fraud offenses and financial crimes",
+        "Government studies and investigations",
+        "Veterans' pensions and compensation"
+      ],
+      "summary_crs": " <p><strong>Veterans Care Financial Protection Act of 2017</strong></p> <p>(Sec. 2) This bill requires the Department of Veterans Affairs to include on its Internet website a warning to veterans relating to dishonest, predatory, or otherwise unlawful practices targeting individuals who are eligible for increased pension on the basis of need for regular aid and attendance.</p> <p>The Government Accountability Office shall: </p> <ul> <li>complete a study on financial exploitation of veterans, which shall include an analysis of the types of financial exploitation facing such veterans and any gaps in efforts to address these issues and an analysis of the types of standards used by federal and state agencies intended to protect vulnerable populations from financial exploitation; and </li> <li>submit a preliminary report and a final report to Congress.</li> </ul>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ131/PLAW-115publ131.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ131/PLAW-115publ131_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ131/PLAW-115publ131.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/3122",
+      "votes": []
+    },
+    {
       "id": "hr4533-115",
       "congress": 115,
       "type": "hr",
@@ -7151,6 +8481,40 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ132/PLAW-115publ132_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ132/PLAW-115publ132.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/4533",
+      "votes": []
+    },
+    {
+      "id": "sres404-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "404",
+      "title": "A resolution recognizing the coordinated struggle of workers on the 50th anniversary of the 1968 Memphis sanitation workers strike to voice their grievances and reach a collective agreement for rights in the workplace.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Alexander, Lamar",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2018-02-13",
+      "latest_action": {
+        "date": "2018-02-28",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S1291-1292; text: CR 2/13/2018 S909)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Labor and Employment",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Labor-management relations",
+        "Protest and dissent",
+        "Racial and ethnic relations",
+        "Tennessee"
+      ],
+      "summary_crs": " <p>Recognizes the 50th anniversary of the 1968 Memphis sanitation workers strike.</p> <p>Honors the perseverance of the members of Union Local 1733 and the contribution of Rev. Dr. Martin Luther King, Jr., in resolving the labor dispute. </p>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres404/BILLS-115sres404ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres404/BILLS-115sres404ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres404/BILLS-115sres404ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/404",
       "votes": []
     },
     {
@@ -7260,6 +8624,48 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ125/PLAW-115publ125_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ125/PLAW-115publ125.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/4708",
+      "votes": []
+    },
+    {
+      "id": "s534-115",
+      "congress": 115,
+      "type": "s",
+      "number": "534",
+      "title": "Protecting Young Victims from Sexual Abuse and Safe Sport Authorization Act of 2017",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feinstein, Dianne",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2017-03-06",
+      "latest_action": {
+        "date": "2018-02-14",
+        "text": "Became Public Law No: 115-126."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Athletes",
+        "Civil actions and liability",
+        "Correctional facilities and imprisonment",
+        "Crime victims",
+        "Crimes against children",
+        "Criminal justice information and records",
+        "Domestic violence and child abuse",
+        "Fraud offenses and financial crimes",
+        "Human trafficking",
+        "Jurisdiction and venue",
+        "Juvenile crime and gang violence",
+        "Olympic games",
+        "Pornography",
+        "Sex offenses"
+      ],
+      "summary_crs": " <p><b><b><b>Protecting Young Victims from Sexual Abuse and Safe Sport Authorization Act of 2017</b></b></b></p> <p>TITLE I--PROTECTING YOUNG VICTIMS FROM SEXUAL ABUSE</p> <p>(Sec. 101) This bill amends the Victims of Child Abuse Act of 1990 to extend the duty to report suspected child abuse, including sexual abuse, to adults who are authorized to interact with minor or amateur athletes at an amateur sports organization facility or at an event sanctioned by a national governing body (NGB) or member of an NGB. An NGB is an amateur sports organization that is recognized by the U.S. Olympic Committee.</p> <p>An authorized adult who fails to report suspected child abuse within a 24-hour period is subject to criminal penalties.</p> <p>(Sec. 102) The bill amends the federal criminal code to revise civil remedy provisions for a victim of a human trafficking offense or federal sex offense. Among other things, it changes the civil statute of limitations to 10 years from the date the victim reasonably discovers the violation or injury (currently, 10 years from the date the cause of action arose). The bill also extends the statute of limitations for a minor victim of a human trafficking or federal sex offense to file a civil action to 10 years (currently, 3 years) from the date such individual reaches age 18.</p> <p>TITLE II--UNITED STATES CENTER FOR SAFE SPORT AUTHORIZATION</p> <p>(Sec. 201) The bill expands the purposes of the U.S. Olympic Committee to include promoting a safe environment in sports that is free from abuse of amateur athletes.</p> <p>(Sec. 202) The bill designates the United States Center for Safe Sport to serve as the independent national safe sport organization.</p> <p>The center has jurisdiction over the U.S. Olympic Committee, NGBs, and Paralympic sports organizations with respect to safeguarding amateur athletes from abuse. It must develop training, practices, policies, and procedures to prevent abuse.</p> <p>NGBs must implement the policies and procedures to prevent abuse.</p> <p>(Sec. 203) An amateur sports organization that requests an NGB sanction to host an international amateur athletic competition inside the United States or to sponsor U.S. athletes in an international amateur athletic competition outside the United States must implement and comply with the policies and procedures to prevent abuse.</p> <p>(Sec. 204) An amateur sports organization that is not subject to the center's policies and procedures to prevent abuse must comply with certain general requirements, including to report suspected child abuse and to limit one-on-one contact between an amateur athlete who is a minor and an adult.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ126/PLAW-115publ126.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ126/PLAW-115publ126_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ126/PLAW-115publ126.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/534",
       "votes": []
     },
     {
@@ -7442,6 +8848,41 @@
       "votes": []
     },
     {
+      "id": "hr2611-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "2611",
+      "title": "Little Rock Central High School National Historic Site Boundary Modification Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Hill, J. French",
+        "party": "R",
+        "state": "AR"
+      },
+      "introduced_date": "2017-05-23",
+      "latest_action": {
+        "date": "2018-01-12",
+        "text": "Became Public Law No: 115-117."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Arkansas",
+        "Educational facilities and institutions",
+        "Elementary and secondary education",
+        "Historic sites and heritage areas",
+        "Land transfers",
+        "Racial and ethnic relations",
+        "U.S. history"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the House reported version is repeated here.)</p> <p><b>Little Rock Central High School National Historic Site Boundary Modification Act</b></p> <p>(Sec. 2) This bill adjusts the boundary of the Little Rock Central High School National Historic Site in Arkansas to include the 7 residences on South Park Street in Little Rock, which consist of 1.47 acres of specified land. </p> <p>The Department of the Interior may enter into separate cooperative agreements with the owners of such residences to mark, interpret, improve, restore, and provide technical assistance for the preservation and interpretation of their properties. </p> <p>Such an agreement must include a provision specifying that no changes or alterations shall be made to the exterior of the properties except by mutual agreement. </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ117/PLAW-115publ117.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ117/PLAW-115publ117_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ117/PLAW-115publ117.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/2611",
+      "votes": []
+    },
+    {
       "id": "hr954-115",
       "congress": 115,
       "type": "hr",
@@ -7474,6 +8915,76 @@
       "votes": []
     },
     {
+      "id": "hr2142-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "2142",
+      "title": "INTERDICT Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Tsongas, Niki",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2017-04-25",
+      "latest_action": {
+        "date": "2018-01-10",
+        "text": "Became Public Law No: 115-112."
+      },
+      "outcome": "enacted",
+      "policy_area": "Foreign Trade and International Finance",
+      "subjects": [
+        "Chemistry",
+        "Customs enforcement",
+        "Department of Homeland Security",
+        "Drug trafficking and controlled substances",
+        "Government employee pay, benefits, personnel management"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was reported to the House on September 21, 2017. The summary of that version is repeated here.)</p> <p><b>International Narcotics Trafficking Emergency Response by Detecting Incoming Contraband with Technology Act or the INTERDICT Act</b></p> <p>(Sec. 3) This bill requires the U.S. Customs and Border Protection (CBP) to: (1) increase the number of chemical screening devices available to CBP officers to interdict fentanyl, other synthetic opioids, and other narcotics and psychoactive substances that are illegally imported into the United States, including such substances imported through the mail or by an express consignment operator or carrier; and (2) dedicate the appropriate number of CBP personnel, including scientists, to interpret data collected by such devices during all operational hours.</p> <p>(Sec. 4) The bill authorizes appropriations to the CBP to ensure that the necessary screening and interdiction resources are available during all operational hours.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ112/PLAW-115publ112.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ112/PLAW-115publ112_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ112/PLAW-115publ112.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/2142",
+      "votes": []
+    },
+    {
+      "id": "hr2228-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "2228",
+      "title": "Law Enforcement Mental Health and Wellness Act of 2017",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Brooks, Susan W.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2017-04-28",
+      "latest_action": {
+        "date": "2018-01-10",
+        "text": "Became Public Law No: 115-113."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Congressional oversight",
+        "Government employee pay, benefits, personnel management",
+        "Government studies and investigations",
+        "Health promotion and preventive care",
+        "Law enforcement officers",
+        "Medical tests and diagnostic methods",
+        "Mental health",
+        "Right of privacy",
+        "Worker safety and health"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was passed by the House on November 28, 2017. The summary of that version is repeated here.)</p> <p><b>Law Enforcement Mental Health and Wellness Act of 2017</b></p> <p>(Sec. 2) This bill directs the Department of Justice (DOJ) to report on Department of Defense and Department of Veterans Affairs mental health practices and services that could be adopted by law enforcement agencies.</p> <p>Additionally, DOJ's Office of Community Oriented Policing Services must report on programs to address the psychological health and well-being of law enforcement officers.</p> <p>The bill amends the Omnibus Crime Control and Safe Streets Act of 1968 to expand the allowable use of grant funds under the Community Oriented Policing Services program to include establishing peer mentoring mental health and wellness pilot programs within state, local, and tribal law enforcement agencies.</p> <p>(Sec. 3) DOJ must coordinate with the Department of Health and Human Services to develop educational resources for mental health providers regarding the culture of law enforcement agencies and therapies for mental health issues common to law enforcement officers.</p> <p>(Sec. 4) DOJ must also: (1) review existing crisis hotlines, recommend improvements, and research annual mental health checks; (2) examine the mental health and wellness needs of federal officers; (3) ensure that recommendations, resources, or programs under this bill protect the privacy of participating officers; and (4) report to Congress on findings and final recommendations. </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ113/PLAW-115publ113.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ113/PLAW-115publ113_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ113/PLAW-115publ113.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/2228",
+      "votes": []
+    },
+    {
       "id": "s1393-115",
       "congress": 115,
       "type": "s",
@@ -7496,6 +9007,40 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ105/PLAW-115publ105_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ105/PLAW-115publ105.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/1393",
+      "votes": []
+    },
+    {
+      "id": "s1532-115",
+      "congress": 115,
+      "type": "s",
+      "number": "1532",
+      "title": "No Human Trafficking on Our Roads Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Thune, John",
+        "party": "R",
+        "state": "SD"
+      },
+      "introduced_date": "2017-07-12",
+      "latest_action": {
+        "date": "2018-01-08",
+        "text": "Became Public Law No: 115-106."
+      },
+      "outcome": "enacted",
+      "policy_area": "Transportation and Public Works",
+      "subjects": [
+        "Human trafficking",
+        "Licensing and registrations",
+        "Motor carriers",
+        "Motor vehicles",
+        "Transportation employees",
+        "Transportation safety and security"
+      ],
+      "summary_crs": " <b><br />No Human Trafficking on Our Roads Act</b> <p>(Sec. 2) This bill directs the Department of Transportation to disqualify from operating a commercial motor vehicle for life an individual who uses such a vehicle in committing a felony involving a severe form of human trafficking.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ106/PLAW-115publ106.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ106/PLAW-115publ106_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ106/PLAW-115publ106.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/1532",
       "votes": []
     },
     {
@@ -7548,6 +9093,46 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ98/PLAW-115publ98_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ98/PLAW-115publ98.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/4661",
+      "votes": []
+    },
+    {
+      "id": "s1536-115",
+      "congress": 115,
+      "type": "s",
+      "number": "1536",
+      "title": "Combating Human Trafficking in Commercial Vehicles Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Klobuchar, Amy",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2017-07-12",
+      "latest_action": {
+        "date": "2018-01-03",
+        "text": "Became Public Law No: 115-99."
+      },
+      "outcome": "enacted",
+      "policy_area": "Transportation and Public Works",
+      "subjects": [
+        "Advisory bodies",
+        "Crime prevention",
+        "Criminal justice information and records",
+        "Department of Transportation",
+        "Executive agency funding and structure",
+        "Federal officials",
+        "Human trafficking",
+        "Licensing and registrations",
+        "Motor carriers",
+        "Motor vehicles",
+        "Transportation employees",
+        "Transportation safety and security"
+      ],
+      "summary_crs": " <b><br />Combating Human Trafficking in Commercial Vehicles Act</b> <p>(Sec. 2) This bill directs the Department of Transportation (DOT) to designate an official to: (1) coordinate human trafficking prevention efforts across DOT modal administrations and with other federal agencies, and (2) take into account the unique challenges of combating human trafficking within different transportation modes.</p> <p>(Sec. 3) The bill expands the Federal Motor Carrier Safety Administration's outreach and education program and DOT's commercial driver's license financial assistance program to include activities for the recognition, prevention, and reporting of human trafficking.</p> <p>(Sec. 5) DOT shall establish an advisory committee on human trafficking. The committee shall: (1) make recommendations on actions DOT can take to help combat human trafficking, and (2) develop recommended best practices for states and state and local transportation stakeholders in combating human trafficking.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ99/PLAW-115publ99.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ99/PLAW-115publ99_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ99/PLAW-115publ99.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/1536",
       "votes": []
     },
     {
@@ -7910,6 +9495,42 @@
       "votes": []
     },
     {
+      "id": "hjres123-115",
+      "congress": 115,
+      "type": "hjres",
+      "number": "123",
+      "title": "Making further continuing appropriations for fiscal year 2018, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Frelinghuysen, Rodney P.",
+        "party": "R",
+        "state": "NJ"
+      },
+      "introduced_date": "2017-12-04",
+      "latest_action": {
+        "date": "2017-12-08",
+        "text": "Became Public Law No: 115-90."
+      },
+      "outcome": "enacted",
+      "policy_area": "Economics and Public Finance",
+      "subjects": [
+        "Appropriations",
+        "Child health",
+        "Executive agency funding and structure",
+        "Health care costs and insurance",
+        "Health care coverage and access",
+        "Health programs administration and funding",
+        "Poverty and welfare assistance",
+        "State and local finance"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was passed by the House on December 7, 2017. The summary of that version is repeated here.)</p> <p>DIVISION A--FURTHER CONTINUING APPROPRIATIONS ACT, 2018</p> <p><em>Further Continuing Appropriations Act, 2018</em></p> <p>(Sec. 101) This division amends the Continuing Appropriations Act, 2018 to extend the expiration date of the FY2018 Continuing Resolution (CR) from December 8, 2017, to December 22, 2017. The division provides continuing appropriations for federal agencies through the earlier of December 22, 2017, or the enactment of the applicable appropriations legislation. It prevents a government shutdown that would otherwise occur when the existing CR expires because none of the 12 FY2018 regular appropriations bills that fund the federal government have been enacted.</p> <p>DIVISION B--CHILDREN'S HEALTH INSURANCE PROGRAM (CHIP) ALLOCATION REDISTRIBUTION SPECIAL RULE</p> <p>(Sec. 201) This division amends title XXI (Children's Health Insurance Program [CHIP]) of the Social Security Act to establish a special rule,&nbsp;with respect to&nbsp;the first quarter of FY2018,&nbsp;for the redistribution of unused CHIP allotments to state child health plans&nbsp;experiencing emergency shortfalls. Specifically, the Centers for Medicare &amp; Medicaid Services&nbsp;(CMS) must&nbsp;redistribute&nbsp;unused allotments to each&nbsp;such state in an amount equal to the state's emergency shortfall before the CMS may redistribute the allotments to any state that is experiencing a nonemergency shortfall. </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ90/PLAW-115publ90.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ90/PLAW-115publ90_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ90/PLAW-115publ90.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-joint-resolution/123",
+      "votes": []
+    },
+    {
       "id": "hr1545-115",
       "congress": 115,
       "type": "hr",
@@ -8179,6 +9800,41 @@
       "votes": []
     },
     {
+      "id": "s1617-115",
+      "congress": 115,
+      "type": "s",
+      "number": "1617",
+      "title": "Javier Vega, Jr. Memorial Act of 2017",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2017-07-24",
+      "latest_action": {
+        "date": "2017-11-02",
+        "text": "Became Public Law No: 115-81."
+      },
+      "outcome": "enacted",
+      "policy_area": "Immigration",
+      "subjects": [
+        "Border security and unlawful immigration",
+        "Congressional tributes",
+        "Department of Homeland Security",
+        "Law enforcement officers",
+        "Monuments and memorials",
+        "Roads and highways",
+        "Texas"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the Senate passed version is repeated here.)</p> <p><b>Javier Vega, Jr. Memorial Act of 2017</b></p> <p>(Sec. 3) This bill designates the checkpoint of the U.S. Border Patrol located on U.S. Highway 77 North in Sarita, Texas, as the &quot;Javier Vega, Jr. Border Patrol Checkpoint.&quot;</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ81/PLAW-115publ81.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ81/PLAW-115publ81_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ81/PLAW-115publ81.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/1617",
+      "votes": []
+    },
+    {
       "id": "s504-115",
       "congress": 115,
       "type": "s",
@@ -8201,6 +9857,42 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ79/PLAW-115publ79_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ79/PLAW-115publ79.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/504",
+      "votes": []
+    },
+    {
+      "id": "s782-115",
+      "congress": 115,
+      "type": "s",
+      "number": "782",
+      "title": "PROTECT Our Children Act of 2017",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2017-03-30",
+      "latest_action": {
+        "date": "2017-11-02",
+        "text": "Became Public Law No: 115-82."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Crime prevention",
+        "Crimes against children",
+        "Criminal justice information and records",
+        "Domestic violence and child abuse",
+        "Internet and video services",
+        "Internet, web applications, social media",
+        "Law enforcement administration and funding",
+        "Pornography"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was passed by the House on October 3, 2017. The summary of that version is repeated here.)</p> <p><b>Providing Resources, Officers, and Technology To Eradicate Cyber Threats to Our Children Act of 2017 or the PROTECT Our Children Act of 2017</b></p> <p>(Sec. 2) This bill amends the PROTECT our Children Act of 2008 to reauthorize through FY2022 the National Strategy for Child Exploitation Prevention and Interdiction.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ82/PLAW-115publ82.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ82/PLAW-115publ82_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ82/PLAW-115publ82.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/782",
       "votes": []
     },
     {
@@ -8291,6 +9983,43 @@
       "votes": []
     },
     {
+      "id": "sres211-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "211",
+      "title": "A resolution condemning the violence and persecution in Chechnya.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Toomey, Patrick",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2017-06-29",
+      "latest_action": {
+        "date": "2017-10-30",
+        "text": "Resolution agreed to in Senate with an amendment and an amended preamble by Voice Vote. (consideration: CR S6878; text: CR S6878)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Criminal investigation, prosecution, interrogation",
+        "Detention of persons",
+        "Foreign property",
+        "Government ethics and transparency, public corruption",
+        "Human rights",
+        "Russia",
+        "Sanctions",
+        "Sex, gender, sexual orientation discrimination",
+        "Visas and passports"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was reported to the Senate on October 16, 2017. The summary of that version is repeated here.)</p> <p>Condemns the violence and persecution in Chechnya.</p> <p>Calls on:</p> <ul> <li> Chechen officials to cease the abduction, detention, and torture of individuals on the basis of their sexual orientation and hold accountable those involved in perpetrating such abuses;</li> <li> the government of the Russian Federation to protect the human rights of all its citizens, condemn the violence and persecution, investigate the allegations in Chechnya, and hold accountable those involved in perpetrating such abuses; and</li> <li> the U.S. government to continue to condemn the violence and persecution in Chechnya, demand the release of individuals wrongfully detained, and identify those individuals whose involvement in such violence qualifies for the imposition of sanctions under the Sergei Magnitsky Rule of Law Accountability Act of 2012 or the Global Magnitsky Human Rights Accountability Act.</li> </ul> <p>Affirms the fundamental human rights to peaceful assembly, freedom of association and expression, and freedom from arbitrary detention and torture or cruel, inhuman, or degrading treatment.</p>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres211/BILLS-115sres211ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres211/BILLS-115sres211ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres211/BILLS-115sres211ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/211",
+      "votes": []
+    },
+    {
       "id": "sres75-115",
       "congress": 115,
       "type": "sres",
@@ -8360,6 +10089,50 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ72/PLAW-115publ72_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ72/PLAW-115publ72.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/2266",
+      "votes": []
+    },
+    {
+      "id": "s585-115",
+      "congress": 115,
+      "type": "s",
+      "number": "585",
+      "title": "Dr. Chris Kirkpatrick Whistleblower Protection Act of 2017",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Johnson, Ron",
+        "party": "R",
+        "state": "WI"
+      },
+      "introduced_date": "2017-03-08",
+      "latest_action": {
+        "date": "2017-10-26",
+        "text": "Became Public Law No: 115-73."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Administrative remedies",
+        "Congressional oversight",
+        "Department of Veterans Affairs",
+        "Employee performance",
+        "Employment discrimination and employee rights",
+        "Fraud offenses and financial crimes",
+        "Government employee pay, benefits, personnel management",
+        "Government information and archives",
+        "Government studies and investigations",
+        "Health information and medical records",
+        "Intelligence activities, surveillance, classified information",
+        "Law enforcement officers",
+        "Mental health",
+        "Merit Systems Protection Board",
+        "Office of Special Counsel",
+        "Veterans' medical care"
+      ],
+      "summary_crs": " <p><strong>Dr. Chris Kirkpatrick Whistleblower Protection Act of 2017</strong></p> <p>TITLE I--EMPLOYEES GENERALLY</p> <p>(Sec. 102) This bill directs federal agencies (excluding any entity that is an element of the intelligence community) to give priority to an employee transfer request if the Merit Systems Protections Board (MSPB) grants a stay of a personnel action at the request of: (1) the Office of Special Counsel (OSC) if the OSC determines the personnel action was taken, or is to be taken, as a result of a prohibited personnel practice; or (2) the employee if the individual is in probationary status and seeks corrective action.</p> <p>The Government Accountability Office (GAO) shall report to Congress on retaliation against employees in probationary status.</p> <p>(Sec. 103) The bill prohibits any employee who has the authority to take, direct others to take, recommend, or approve of any personnel action to access the medical records of another employee or applicant for employment.</p> <p>(Sec. 104) Agencies employing a supervisor who has committed a prohibited personnel action may propose: (1) a suspension of not less than three days, (2) a reduction in grade or pay, and (3) removal from the position. A supervisor must receive written notice specifying the reasons for the proposed action and the right of the supervisor to review the material which is relied on to support the reasons for the proposed action. A supervisor is entitled to 14 days following the notice to answer and furnish evidence in support of the answer.</p> <p>(Sec. 105) Agencies must refer information about employee suicides to the OSC indicating whether, prior to the death of&nbsp;the employee,&nbsp;any disclosure of information was made evidencing: (1)&nbsp;a violation of&nbsp;any law, rule, or regulation; (2) gross mismanagement, a gross waste of funds, an abuse of authority, or a substantial danger to public health or safety; or (3) whether any personnel action was taken against the employee as a result.</p> <p>(Sec. 106) Agencies must&nbsp;provide training on how to respond to complaints alleging a violation of whistle-blower protections&nbsp;to: (1) any employee appointed to a supervisory position in the agency who has not previously served as a supervisor; and (2) on an annual basis, to all employees serving in a supervisory position.</p> <p>(Sec. 107) Agencies must: (1)&nbsp;provide information regarding whistle-blower protections to new employees during probationary periods, (2) inform employees of the role of the OSC and the MSPB with regard to whistle-blower protection, and (3) make information about such protections available on agency websites.</p> <p>TITLE II--DEPARTMENT OF VETERANS AFFAIRS EMPLOYEES</p> <p>(Sec. 201) The Department of Veterans Affairs (VA) must submit a plan to Congress on efforts to prevent&nbsp;any unauthorized access to the medical records of VA employees.<strike></strike></p> <p>(Sec. 202) The VA must conduct an outreach program to inform its employees of any mental health services, including telemedicine options.</p> <p>(Sec. 203) The VA must ensure protocols are in effect to address threats against VA employees providing health care.</p> <p>(Sec. 204) The GAO shall conduct a study to assess the reporting, staffing, accountability, and chain of command structure of the VA police officers at VA medical centers.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ73/PLAW-115publ73.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ73/PLAW-115publ73_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ73/PLAW-115publ73.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/585",
       "votes": []
     },
     {
@@ -8629,6 +10402,43 @@
       "votes": []
     },
     {
+      "id": "s652-115",
+      "congress": 115,
+      "type": "s",
+      "number": "652",
+      "title": "Early Hearing Detection and Intervention Act of 2017",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Portman, Rob",
+        "party": "R",
+        "state": "OH"
+      },
+      "introduced_date": "2017-03-15",
+      "latest_action": {
+        "date": "2017-10-18",
+        "text": "Became Public Law No: 115-71."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Child health",
+        "Health information and medical records",
+        "Health programs administration and funding",
+        "Health promotion and preventive care",
+        "Hearing, speech, and vision care",
+        "Medical research",
+        "Medical tests and diagnostic methods",
+        "Research administration and funding",
+        "Surgery and anesthesia"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was passed by the Senate on September 6, 2017. The summary of that version is repeated here.)</p> <p><b>Early Hearing Detection and Intervention Act of 2017</b></p> <p>(Sec. 2) This bill amends the Public Health Service Act to revise programs for deaf and hard-of-hearing newborns and infants, including to expand the programs to include young children. The programs are reauthorized through FY2022. Health Resources and Services Administration support for the education and training of personnel and health care providers for such programs is expanded to include education and training of family members.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ71/PLAW-115publ71.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ71/PLAW-115publ71_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ71/PLAW-115publ71.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/652",
+      "votes": []
+    },
+    {
       "id": "sres99-115",
       "congress": 115,
       "type": "sres",
@@ -8724,6 +10534,43 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ68/PLAW-115publ68_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ68/PLAW-115publ68.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/1141",
+      "votes": []
+    },
+    {
+      "id": "s810-115",
+      "congress": 115,
+      "type": "s",
+      "number": "810",
+      "title": "A bill to facilitate construction of a bridge on certain property in Christian County, Missouri, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blunt, Roy",
+        "party": "R",
+        "state": "MO"
+      },
+      "introduced_date": "2017-04-04",
+      "latest_action": {
+        "date": "2017-10-06",
+        "text": "Became Public Law No: 115-67."
+      },
+      "outcome": "enacted",
+      "policy_area": "Transportation and Public Works",
+      "subjects": [
+        "Disaster relief and insurance",
+        "Floods and storm protection",
+        "Government liability",
+        "Land use and conservation",
+        "Missouri",
+        "Outdoor recreation",
+        "Roads and highways",
+        "State and local government operations",
+        "Wetlands"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was reported to the Senate on August 2, 2017. The summary of that version is repeated here.)</p> <p>(Sec. 1) This bill authorizes the Riverside Bridge Project, to construct, maintain, and operate a bridge on certain property conveyed to Christian County, Missouri, by the Riverside Inn, Inc. </p> <p>As a condition for such authorization, the county or an assignee shall:</p> <ul> <li>carry out the project in a manner that ensures that no attributable flood damage occurs, and</li> <li>be liable for any such damage that does occur.</li> </ul> <p>The government shall not be liable for future flood damage that is caused by the project.</p> <p>No future federal disaster assistance may be provided with respect to the project.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ67/PLAW-115publ67.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ67/PLAW-115publ67_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ67/PLAW-115publ67.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/810",
       "votes": []
     },
     {
@@ -8947,6 +10794,48 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ60/PLAW-115publ60_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ60/PLAW-115publ60.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/1616",
+      "votes": []
+    },
+    {
+      "id": "sjres49-115",
+      "congress": 115,
+      "type": "sjres",
+      "number": "49",
+      "title": "A joint resolution condemning the violence and domestic terrorist attack that took place during events between August 11 and August 12, 2017, in Charlottesville, Virginia, recognizing the first responders who lost their lives while monitoring the events, offering deepest condolences to the families and friends of those individuals who were killed and deepest sympathies and support to those individuals who were injured by the violence, expressing support for the Charlottesville community, rejecting White nationalists, White supremacists, the Ku Klux Klan, neo-Nazis, and other hate groups, and urging the President and the President's Cabinet to use all available resources to address the threats posed by those groups.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Warner, Mark R.",
+        "party": "D",
+        "state": "VA"
+      },
+      "introduced_date": "2017-09-06",
+      "latest_action": {
+        "date": "2017-09-14",
+        "text": "Became Public Law No: 115-58."
+      },
+      "outcome": "enacted",
+      "policy_area": "Civil Rights and Liberties, Minority Issues",
+      "subjects": [
+        "Congressional tributes",
+        "Crime prevention",
+        "Crime victims",
+        "Criminal investigation, prosecution, interrogation",
+        "Criminal justice information and records",
+        "Hate crimes",
+        "Law enforcement officers",
+        "Political movements and philosophies",
+        "Presidential administrations",
+        "Presidents and presidential powers, Vice Presidents",
+        "Racial and ethnic relations",
+        "State and local government operations",
+        "Terrorism",
+        "Virginia"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>This joint resolution condemns the&nbsp;racist violence and domestic terror attack in Charlottesville, Virginia, and rejects white nationalism, white supremacy, and neo-Nazism sentiments as antithetical to U.S. values.&nbsp;</p> <p>Congress offers condolences to the families of those who died in Charlottesville and sympathy and support for those injured, and expresses support to the Charlottesville community.</p> <p>Congress urges the President and the Administration to speak out against hate groups and use all available resources to address the growing prevalence of domestic hate groups.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ58/PLAW-115publ58.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ58/PLAW-115publ58_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ58/PLAW-115publ58.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-joint-resolution/49",
       "votes": []
     },
     {
@@ -10062,6 +11951,38 @@
       "votes": []
     },
     {
+      "id": "sres177-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "177",
+      "title": "A resolution congratulating the Webster University chess team for winning a record-breaking fifth consecutive national title at the President's Cup collegiate chess championship in New York City.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. McCaskill, Claire",
+        "party": "D",
+        "state": "MO"
+      },
+      "introduced_date": "2017-05-24",
+      "latest_action": {
+        "date": "2017-05-24",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S3150; text as passed Senate: CR S3150; text of measure as introduced: CR S3148)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Education",
+      "subjects": [
+        "Congressional tributes",
+        "Games and hobbies",
+        "Higher education",
+        "Missouri"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Congratulates Webster University for winning its fifth consecutive national title at the President's Cup collegiate chess championship in New York City. Encourages the university to continue promoting the educational benefits of chess among its students and the larger community. </p><ul> </ul>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres177/BILLS-115sres177ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres177/BILLS-115sres177ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres177/BILLS-115sres177ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/177",
+      "votes": []
+    },
+    {
       "id": "sres178-115",
       "congress": 115,
       "type": "sres",
@@ -10198,6 +12119,42 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ35/PLAW-115publ35_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ35/PLAW-115publ35.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-joint-resolution/66",
+      "votes": []
+    },
+    {
+      "id": "sres170-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "170",
+      "title": "A resolution expressing the sense of the Senate that defense laboratories are on the cutting-edge of scientific and technological advancement, and supporting the designation of May 18, 2017, as \"Department of Defense Laboratory Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Donnelly, Joe",
+        "party": "D",
+        "state": "IN"
+      },
+      "introduced_date": "2017-05-17",
+      "latest_action": {
+        "date": "2017-05-17",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Voice Vote. (consideration: CR S3021; text as passed Senate: CR S3020)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Science, Technology, Communications",
+      "subjects": [
+        "Advanced technology and technological innovations",
+        "Commemorative events and holidays",
+        "Competitiveness, trade promotion, trade deficits",
+        "Department of Defense",
+        "Government buildings, facilities, and property",
+        "Military procurement, research, weapons development",
+        "Research administration and funding",
+        "Research and development"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Supports the designation of the Department of Defense Laboratory Day in celebration of the work of the national network of laboratories and engineering centers of the U.S. Armed Forces.</p> <p>Recognizes: (1) that a key to maintaining Armed Forces superiority, innovation, and competitiveness in a global economy is to continue to support federally sponsored research and development; and (2) such network's scientists, technicians, and support staff.</p> <p>Acknowledges that the knowledge base, technologies, and techniques generated in such network serve as a foundation for additional efforts relating to the Armed Forces in the defense industrial base. Commits to finding ways to increase investment in such network.</p> <p>Encourages such network, federal agencies, and Congress to hold an outreach event on May 18, 2017.</p>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres170/BILLS-115sres170ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres170/BILLS-115sres170ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres170/BILLS-115sres170ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/170",
       "votes": []
     },
     {
@@ -10355,6 +12312,40 @@
       "text_url_xml": "https://www.congress.gov/115/bills/sres166/BILLS-115sres166ats.xml",
       "text_url_pdf": "https://www.congress.gov/115/bills/sres166/BILLS-115sres166ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/166",
+      "votes": []
+    },
+    {
+      "id": "s496-115",
+      "congress": 115,
+      "type": "s",
+      "number": "496",
+      "title": "A bill to repeal the rule issued by the Federal Highway Administration and the Federal Transit Administration entitled \"Metropolitan Planning Organization Coordination and Planning Area Reform\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Duckworth, Tammy",
+        "party": "D",
+        "state": "IL"
+      },
+      "introduced_date": "2017-03-02",
+      "latest_action": {
+        "date": "2017-05-12",
+        "text": "Became Public Law No: 115-33."
+      },
+      "outcome": "enacted",
+      "policy_area": "Transportation and Public Works",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Department of Transportation",
+        "Public transit",
+        "Regional and metropolitan planning",
+        "Roads and highways",
+        "Urban and suburban affairs and development"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the Senate passed version is repeated here.)</p><p>(Sec. 1) This bill nullifies the Federal Highway Administration's and the Federal Transit Administration's rule published on December 20, 2016, that revises transportation planning regulations with regard to the alignment of planning regulations with statutory provisions relating to the establishment of metropolitan planning area boundaries and the designation of metropolitan planning organizations.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ33/PLAW-115publ33.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ33/PLAW-115publ33_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ33/PLAW-115publ33.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/496",
       "votes": []
     },
     {
@@ -10702,6 +12693,39 @@
       "text_url_xml": "https://www.congress.gov/115/bills/sres133/BILLS-115sres133ats.xml",
       "text_url_pdf": "https://www.congress.gov/115/bills/sres133/BILLS-115sres133ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/133",
+      "votes": []
+    },
+    {
+      "id": "s544-115",
+      "congress": 115,
+      "type": "s",
+      "number": "544",
+      "title": "A bill to amend the Veterans Access, Choice, and Accountability Act of 2014 to modify the termination date for the Veterans Choice Program, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Tester, Jon",
+        "party": "D",
+        "state": "MT"
+      },
+      "introduced_date": "2017-03-07",
+      "latest_action": {
+        "date": "2017-04-19",
+        "text": "Became Public Law No: 115-26."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Disability and paralysis",
+        "Health care coverage and access",
+        "Health information and medical records",
+        "Hospital care",
+        "Veterans' medical care"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the Senate passed version is repeated here.)</p> <p>(Sec. 1) This bill amends the Veterans Access, Choice, and Accountability Act of 2014 to eliminate the August 7, 2017, sunset date for the Veterans Choice Program, thus allowing the program to operate until all of the money in the Veterans Choice Fund is expended. </p> <p>(Sec. 2) The bill makes the Department of Veterans Affairs (VA) the primary payer (currently the VA is the secondary payer) for medical care relating to non-service connected disabilities and recovery of costs from third parties for certain care under the program.</p> <p>(Sec. 3) The VA may share medical information with a non-VA entity (including private entities and other federal agencies) that provides veterans with authorized hospital care or medical services. Such entity may not redisclose or use such information for a purpose other than that for which the disclosure was made.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ26/PLAW-115publ26.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ26/PLAW-115publ26_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ26/PLAW-115publ26.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/544",
       "votes": []
     },
     {
@@ -11409,6 +13433,38 @@
       "votes": []
     },
     {
+      "id": "sres96-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "96",
+      "title": "A resolution designating March 25, 2017, as \"National Cerebral Palsy Awareness Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Casey, Robert P., Jr.",
+        "party": "D",
+        "state": "PA"
+      },
+      "introduced_date": "2017-03-23",
+      "latest_action": {
+        "date": "2017-03-23",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S1979-1980; text as passed Senate: CR S1979)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Child health",
+        "Commemorative events and holidays",
+        "Disability and paralysis",
+        "Neurological disorders"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates March 25, 2017, as National Cerebral Palsy Awareness Day.</p>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres96/BILLS-115sres96ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres96/BILLS-115sres96ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres96/BILLS-115sres96ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/96",
+      "votes": []
+    },
+    {
       "id": "sres97-115",
       "congress": 115,
       "type": "sres",
@@ -11483,6 +13539,45 @@
       "text_url_xml": "https://www.congress.gov/115/bills/sres76/BILLS-115sres76ats.xml",
       "text_url_pdf": "https://www.congress.gov/115/bills/sres76/BILLS-115sres76ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/76",
+      "votes": []
+    },
+    {
+      "id": "sres83-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "83",
+      "title": "A resolution expressing the sense of the Senate regarding the trafficking of illicit fentanyl into the United States from Mexico and China.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Markey, Edward J.",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2017-03-08",
+      "latest_action": {
+        "date": "2017-03-15",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Asia",
+        "China",
+        "Diplomacy, foreign officials, Americans abroad",
+        "Drug trafficking and controlled substances",
+        "Drug, alcohol, tobacco use",
+        "Health promotion and preventive care",
+        "International organizations and cooperation",
+        "Latin America",
+        "Law enforcement administration and funding",
+        "Mexico",
+        "Organized crime"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Expresses the sense of the Senate that:</p> <ul> <li> the use of illicit fentanyl in the United States and the resulting overdose deaths are a public health crisis;</li> <li> the trafficking of illicit fentanyl into the United States, especially by transnational criminal organizations, is a problem that requires close cooperation between the U.S. government and the governments of Mexico and China; and </li> <li>all three such countries have a shared interest in, and responsibility for, stopping the production of illicit fentanyl and its trafficking into the United States.</li> </ul> <p>Calls for the United States to:</p> <ul> <li>support the efforts by the governments of Mexico and China to stop such production and trafficking into the United States;</li> <li> take further measures to reduce and prevent heroin and fentanyl consumption through enhanced enforcement to reduce the illegal supply and increased use of evidence-based prevention, treatment, and recovery services; and</li> <li>use its broad diplomatic and law enforcement resources, in partnership with the governments of China and Mexico, to stop such production and trafficking.</li> </ul>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres83/BILLS-115sres83ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres83/BILLS-115sres83ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres83/BILLS-115sres83ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/83",
       "votes": []
     },
     {
@@ -11586,6 +13681,40 @@
       "votes": []
     },
     {
+      "id": "sres80-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "80",
+      "title": "A resolution designating March 3, 2017, as \"World Wildlife Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Coons, Christopher A.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2017-03-02",
+      "latest_action": {
+        "date": "2017-03-02",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S1583, S1585; text as passed Senate: CR S1583)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Animals",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Crime prevention",
+        "Crimes against animals and natural resources",
+        "International organizations and cooperation",
+        "Smuggling and trafficking",
+        "Wildlife conservation and habitat protection"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates March 3, 2017, as World Wildlife Day. Supports: (1) raising awareness of the benefits that wildlife provides to people and the threats facing wildlife around the world; and (2) escalating the fight against wildlife crime, such as wildlife trafficking. </p> <p>Commends efforts of the United States to mobilize the government in a coordinated, efficient, and effective manner for progress in the fight against wildlife crime.</p> <p>Encourages continued cooperation between the United States, international partners, local communities, nonprofit organizations, private industry, and other partner organizations in an effort to conserve and celebrate wildlife.</p>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres80/BILLS-115sres80ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres80/BILLS-115sres80ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres80/BILLS-115sres80ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/80",
+      "votes": []
+    },
+    {
       "id": "sres74-115",
       "congress": 115,
       "type": "sres",
@@ -11608,6 +13737,77 @@
       "text_url_xml": "https://www.congress.gov/115/bills/sres74/BILLS-115sres74ats.xml",
       "text_url_pdf": "https://www.congress.gov/115/bills/sres74/BILLS-115sres74ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/74",
+      "votes": []
+    },
+    {
+      "id": "sres77-115",
+      "congress": 115,
+      "type": "sres",
+      "number": "77",
+      "title": "A resolution supporting the goals and ideals of Multiple Sclerosis Awareness Week.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Casey, Robert P., Jr.",
+        "party": "D",
+        "state": "PA"
+      },
+      "introduced_date": "2017-03-01",
+      "latest_action": {
+        "date": "2017-03-01",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S1543; text as passed Senate: CR S1542-1543)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Health personnel",
+        "Health promotion and preventive care",
+        "Medical research",
+        "Neurological disorders"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Expresses support for the goals and ideals of Multiple Sclerosis Awareness Week. </p> <p>Reaffirms the U.S. commitment to ending multiple sclerosis by promoting awareness about individuals affected by multiple sclerosis and supporting research and education programs.</p> <p>Recognizes people living with multiple sclerosis and salutes the health care professionals and medical researchers who assist those so affected and continue to work to find ways to stop the disease, restore what has been lost, and end multiple sclerosis forever.</p>",
+      "text_url_html": "https://www.congress.gov/115/bills/sres77/BILLS-115sres77ats.htm",
+      "text_url_xml": "https://www.congress.gov/115/bills/sres77/BILLS-115sres77ats.xml",
+      "text_url_pdf": "https://www.congress.gov/115/bills/sres77/BILLS-115sres77ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/77",
+      "votes": []
+    },
+    {
+      "id": "hjres40-115",
+      "congress": 115,
+      "type": "hjres",
+      "number": "40",
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Social Security Administration relating to Implementation of the NICS Improvement Amendments Act of 2007.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Johnson, Sam",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2017-01-30",
+      "latest_action": {
+        "date": "2017-02-28",
+        "text": "Became Public Law No: 115-8."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Congressional oversight",
+        "Criminal justice information and records",
+        "Disability and paralysis",
+        "Disability assistance",
+        "Firearms and explosives",
+        "Mental health",
+        "Poverty and welfare assistance",
+        "Social Security Administration"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>This joint resolution nullifies the &ldquo;Implementation of the NICS Improvement Amendments Act of 2007<b>&rdquo;</b> rule finalized by the Social Security Administration on December 19, 2016. The rule implements a plan to provide to the National Instant Criminal History Background Check System the name of an individual who meets certain criteria, including that benefit payments are made through a representative payee because the individual is determined to be mentally incapable of managing them. (Current law prohibits firearm sale or transfer to and purchase or possession by a person who has been adjudicated as a mental defective.) </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ8/PLAW-115publ8.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ8/PLAW-115publ8_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ8/PLAW-115publ8.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-joint-resolution/40",
       "votes": []
     },
     {
