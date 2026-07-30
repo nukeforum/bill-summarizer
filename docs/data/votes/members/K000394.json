@@ -1,8 +1,32 @@
 {
-  "generated_at": "2026-07-29T09:22:28Z",
+  "generated_at": "2026-07-30T09:14:22Z",
   "bioguide_id": "K000394",
-  "vote_count": 871,
+  "vote_count": 873,
   "votes": [
+    {
+      "vote_id": "senate-119-2-214",
+      "congress": 119,
+      "date": "2026-07-29",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "position": "nay",
+      "bill_id": "sres817-119",
+      "type": "sres",
+      "number": "817",
+      "short_title": null
+    },
+    {
+      "vote_id": "senate-119-2-213",
+      "congress": 119,
+      "date": "2026-07-29",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Agreed to",
+      "position": "nay",
+      "bill_id": "hr5334-119",
+      "type": "hr",
+      "number": "5334",
+      "short_title": null
+    },
     {
       "vote_id": "senate-119-2-212",
       "congress": 119,
