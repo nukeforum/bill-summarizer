@@ -1,8 +1,97 @@
 {
-  "generated_at": "2026-07-30T09:14:22Z",
+  "generated_at": "2026-07-31T09:24:27Z",
   "congress": 119,
-  "vote_count": 1517,
+  "vote_count": 1520,
   "votes": [
+    {
+      "id": "senate-119-2-217",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 217,
+      "date": "2026-07-30",
+      "question": "On the Resolution",
+      "result": "Resolution Agreed to",
+      "bill_id": "sres817-119",
+      "totals": {
+        "yea": 50,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-217.json"
+    },
+    {
+      "id": "senate-119-2-216",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 216,
+      "date": "2026-07-30",
+      "question": "On the Motion to Discharge",
+      "result": "Motion to Discharge Rejected",
+      "bill_id": "sjres181-119",
+      "totals": {
+        "yea": 49,
+        "nay": 50,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 2,
+          "R": 3
+        },
+        "nay": {
+          "D": 1,
+          "R": 49
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-216.json"
+    },
+    {
+      "id": "senate-119-2-215",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 215,
+      "date": "2026-07-30",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Rejected",
+      "bill_id": "sjres199-119",
+      "totals": {
+        "yea": 47,
+        "nay": 52,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2
+        },
+        "nay": {
+          "R": 52
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-215.json"
+    },
     {
       "id": "senate-119-2-214",
       "chamber": "senate",
