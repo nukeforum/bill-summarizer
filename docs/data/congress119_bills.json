@@ -1,8 +1,42 @@
 {
-  "generated_at": "2026-07-30T09:14:22Z",
+  "generated_at": "2026-07-31T08:48:44Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "sres608-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "608",
+      "title": "A resolution expressing the sense of the Senate that Ghislaine Maxwell should not be granted a Presidential pardon or any form of clemency for her crimes with Jeffrey Epstein relating to the sexual exploitation and abuse of minors.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Rosen, Jacky",
+        "party": "D",
+        "state": "NV"
+      },
+      "introduced_date": "2026-02-12",
+      "latest_action": {
+        "date": "2026-07-29",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4311)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Correctional facilities and imprisonment",
+        "Crimes against children",
+        "Criminal procedure and sentencing",
+        "Human trafficking",
+        "Presidents and presidential powers, Vice Presidents",
+        "Sex offenses"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres608/BILLS-119sres608ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres608/BILLS-119sres608ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres608/BILLS-119sres608ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/608",
+      "votes": []
+    },
     {
       "id": "sres781-119",
       "congress": 119,
@@ -21,7 +55,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4286)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Civil Rights and Liberties, Minority Issues",
       "subjects": [
         "Commemorative events and holidays",
@@ -53,7 +86,6 @@
         "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 49. Record Vote Number: 207."
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": "<p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending against an attack on the United States or its personnel or facilities in other nations.</p>",
@@ -177,7 +209,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4117)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Congressional tributes",
@@ -209,7 +240,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4117)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Congressional tributes",
@@ -243,7 +273,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4087)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional tributes",
@@ -275,7 +304,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4087)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional tributes",
@@ -305,8 +333,7 @@
         "date": "2026-07-12",
         "text": "Became Public Law No: 119-102."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Agriculture and Food",
       "subjects": [
         "Agricultural prices, subsidies, credit",
@@ -372,8 +399,7 @@
         "date": "2026-07-11",
         "text": "Became Public Law No: 119-101."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Housing and Community Development",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -712,8 +738,7 @@
         "date": "2026-06-26",
         "text": "Became Public Law No: 119-100."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Animal protection and human-animal relationships",
@@ -777,7 +802,6 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 50. Record Vote Number: 192. (CR S3194)"
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Conflicts and wars",
@@ -1281,8 +1305,13 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 48. Record Vote Number: 173. (consideration: CR S2816)"
       },
       "outcome": "failed",
-      "status": null,
-      "subjects": [],
+      "policy_area": "Immigration",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Congressional oversight",
+        "Federal appellate courts",
+        "Immigration status and procedures"
+      ],
       "summary_crs": null,
       "text_url_html": "https://www.congress.gov/119/bills/sjres190/BILLS-119sjres190pcs.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/sjres190/BILLS-119sjres190pcs.xml",
@@ -1568,8 +1597,7 @@
         "date": "2026-06-10",
         "text": "Became Public Law No: 119-98."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Immigration",
       "subjects": [
         "Advanced technology and technological innovations",
@@ -1983,7 +2011,6 @@
         "text": "Became Public Law No: 119-96."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Government Operations and Politics",
       "subjects": [
         "Cancer",
@@ -2080,8 +2107,7 @@
         "date": "2026-06-05",
         "text": "Motion to proceed to consideration of the House message to accompany S. 1318 rejected in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 164."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "failed",
       "policy_area": "Armed Forces and National Security",
       "subjects": [
         "American Battle Monuments Commission",
