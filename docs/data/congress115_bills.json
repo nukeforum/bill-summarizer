@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T14:22:18Z",
+  "generated_at": "2026-08-01T13:40:37Z",
   "congress": 115,
   "votes_coverage": false,
   "bills": [
@@ -300,6 +300,38 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ439/PLAW-115publ439_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ439/PLAW-115publ439.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/512",
+      "votes": []
+    },
+    {
+      "id": "hr4689-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "4689",
+      "title": "To authorize early repayment of obligations to the Bureau of Reclamation within the Northport Irrigation District in the State of Nebraska.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Smith, Adrian",
+        "party": "R",
+        "state": "NE"
+      },
+      "introduced_date": "2017-12-19",
+      "latest_action": {
+        "date": "2019-01-10",
+        "text": "Became Public Law No: 115-429."
+      },
+      "outcome": "enacted",
+      "policy_area": "Water Resources Development",
+      "subjects": [
+        "Government lending and loan guarantees",
+        "Nebraska",
+        "Water resources funding",
+        "Water use and supply"
+      ],
+      "summary_crs": " <p>(Sec. 1) This bill authorizes any landowner within the Northport Irrigation District in Nebraska to repay, at any time, the construction costs of project facilities allocated to the landowner's land within the district. Upon discharge in full of the obligation for repayment of all such costs, the parcels of land may not be subject to the ownership and full-cost pricing limitations under federal reclamation law. The Department of the Interior, upon request, must provide to the landowner who has repaid such costs in full a certificate acknowledging that the landholding is free of such limitations.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ429/PLAW-115publ429.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ429/PLAW-115publ429_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ429/PLAW-115publ429.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/4689",
       "votes": []
     },
     {
@@ -947,6 +979,41 @@
       "votes": []
     },
     {
+      "id": "hr4227-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "4227",
+      "title": "Vehicular Terrorism Prevention Act of 2018",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Latta, Robert E.",
+        "party": "R",
+        "state": "OH"
+      },
+      "introduced_date": "2017-11-02",
+      "latest_action": {
+        "date": "2018-12-31",
+        "text": "Became Public Law No: 115-400."
+      },
+      "outcome": "enacted",
+      "policy_area": "Emergency Management",
+      "subjects": [
+        "Congressional oversight",
+        "Crime prevention",
+        "First responders and emergency personnel",
+        "Government studies and investigations",
+        "Motor vehicles",
+        "Public-private cooperation",
+        "Terrorism"
+      ],
+      "summary_crs": " <p><strong>Vehicular Terrorism Prevention Act of 2018</strong></p> <p>(Sec. 2) This bill directs the Department of Homeland Security (DHS): (1) to assess the activities that DHS is undertaking to support emergency response providers and the private sector to prevent, mitigate, and respond to the threat of vehicular terrorism; and (2) based on such assessment, to develop and submit to the congressional homeland security committees a strategy to improve its efforts to support such providers and the private sector in that regard. </p> <p> The strategy shall include:</p> <ul> <li> an examination of the current threat of vehicular terrorism;</li> <li>methods to improve DHS information sharing activities with such providers and the private sector regarding best practices to prevent, mitigate, and respond to the increasing threat of vehicular terrorism; and</li> <li>training activities that DHS can provide for such providers to prevent and respond to such threat.</li> </ul> <ul> </ul>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ400/PLAW-115publ400.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ400/PLAW-115publ400_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ400/PLAW-115publ400.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/4227",
+      "votes": []
+    },
+    {
       "id": "hr5075-115",
       "congress": 115,
       "type": "hr",
@@ -1518,6 +1585,39 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ344/PLAW-115publ344_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ344/PLAW-115publ344.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/1318",
+      "votes": []
+    },
+    {
+      "id": "hr1733-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "1733",
+      "title": "To direct the Secretary of Energy to review and update a report on the energy and environmental benefits of the re-refining of used lubricating oil.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Brooks, Susan W.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2017-03-27",
+      "latest_action": {
+        "date": "2018-12-21",
+        "text": "Became Public Law No: 115-345."
+      },
+      "outcome": "enacted",
+      "policy_area": "Energy",
+      "subjects": [
+        "Congressional oversight",
+        "Energy efficiency and conservation",
+        "Government information and archives",
+        "Oil and gas",
+        "Solid waste and recycling"
+      ],
+      "summary_crs": " <p>(Sec.\t1)\tThis bill directs the Department of Energy to update its report on the energy and environmental benefits of re-refining used lubricating oil and submit to Congress a strategic plan to increase the beneficial reuse of lubricating oil. </p> <p>The strategic plan shall address measures needed to (1)\tincrease the responsible collection of used oil; (2)\tdisseminate public information concerning sustainable reuse options for used oil; and (3)\tpromote sustainable reuse of used oil by federal agencies, recipients of federal grant funds, entities contracting with the federal government, and the general public.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ345/PLAW-115publ345.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ345/PLAW-115publ345_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ345/PLAW-115publ345.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/1733",
       "votes": []
     },
     {
@@ -3079,6 +3179,44 @@
       "votes": []
     },
     {
+      "id": "hr2454-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "2454",
+      "title": "Department of Homeland Security Data Framework Act of 2018",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Hurd, Will",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2017-05-16",
+      "latest_action": {
+        "date": "2018-12-19",
+        "text": "Became Public Law No: 115-331."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Arms control and nonproliferation",
+        "Chemical and biological weapons",
+        "Department of Homeland Security",
+        "Government employee pay, benefits, personnel management",
+        "Government information and archives",
+        "Intelligence activities, surveillance, classified information",
+        "Nuclear weapons",
+        "Right of privacy",
+        "Terrorism"
+      ],
+      "summary_crs": " <p><b>Department of Homeland Security Data Framework Act of 2018</b></p> <p>(Sec. 2) This bill directs the Department of Homeland Security (DHS) to: (1) develop a data framework to integrate existing DHS datasets and systems for access by authorized personnel in a manner consistent with relevant legal authorities and privacy, civil rights, and civil liberties protections; (2) ensure that all information of a DHS office or component that falls within the scope of the information sharing environment, and any information or intelligence relevant to priority mission needs and capability requirements of the homeland security enterprise, is included; and (3) ensure that the framework is accessible to DHS employees who have an appropriate security clearance, who are assigned to perform a function that requires access, and who are trained in applicable standards for safeguarding and using such information.</p> <p>DHS shall: (1) issue guidance for DHS employees authorized to access and contribute to the framework that enforces a duty to share between DHS offices and components for mission needs; and (2) promulgate data standards and instruct DHS components to make available information through the framework in a machine-readable standard format.</p> <p>DHS may exclude information that may:</p> <ul> <li>jeopardize the protection of sources, methods, or activities; </li> <li>compromise a criminal or national security investigation;</li> <li>be inconsistent with the other federal laws or regulations; or</li> <li>be duplicative or not serve an operational purpose.</li> </ul> <p>DHS shall incorporate into such framework systems capabilities for auditing and ensuring the security of information. Such capabilities shall include: (1) mechanisms for identifying insider threats and security risks; and (2) safeguards for privacy, civil rights, and civil liberties.</p> <p>DHS shall ensure that, by two years after this bill's enactment, the framework has the ability to include appropriate information in existence within DHS to meet its critical mission operations.</p> <p>DHS shall: (1) submit to Congress regular updates on the status of the data framework until it is fully operational, and (2) annually brief Congress on component use of such framework to support operations that disrupt terrorist activities and incidents in the homeland.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ331/PLAW-115publ331.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ331/PLAW-115publ331_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ331/PLAW-115publ331.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/2454",
+      "votes": []
+    },
+    {
       "id": "hr3996-115",
       "congress": 115,
       "type": "hr",
@@ -3232,6 +3370,46 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ328/PLAW-115publ328_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ328/PLAW-115publ328.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/3029",
+      "votes": []
+    },
+    {
+      "id": "s3119-115",
+      "congress": 115,
+      "type": "s",
+      "number": "3119",
+      "title": "Endangered Salmon Predation Prevention Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Risch, James E.",
+        "party": "R",
+        "state": "ID"
+      },
+      "introduced_date": "2018-06-21",
+      "latest_action": {
+        "date": "2018-12-18",
+        "text": "Became Public Law No: 115-329."
+      },
+      "outcome": "enacted",
+      "policy_area": "Animals",
+      "subjects": [
+        "Endangered and threatened species",
+        "Fishes",
+        "Idaho",
+        "Indian lands and resources rights",
+        "Lakes and rivers",
+        "Licensing and registrations",
+        "Mammals",
+        "Marine and coastal resources, fisheries",
+        "Oregon",
+        "Pacific Ocean",
+        "Washington State",
+        "Wildlife conservation and habitat protection"
+      ],
+      "summary_crs": " <p><b>Endangered Salmon Predation Prevention Act</b> </p> <p> (Sec. 3) This bill amends the Marine Mammal Protection Act of 1972 to authorize the National Oceanic and Atmospheric Administration (NOAA) to issue permits allowing Washington, Oregon, Idaho, the Nez Perce Tribe, the Confederated Tribes of the Umatilla Indian Reservation, the Confederated Tribes of the Warm Springs Reservation of Oregon, and the Confederated Tribes and Bands of the Yakama Nation to kill sea lions in a portion of the Columbia River and certain tributaries in order to protect certain fish from sea lion predation. Specifically, the permits may be issued to protect (1) endangered or threatened species of salmon, steelhead, or eulachon; and (2) species of lamprey or sturgeon that are listed as a species of concern.</p> <p>Permits may be issued to kill sea lions only if the sea lions are part of a population that is not categorized as depleted or strategic. </p> <p>The cumulative annual taking of sea lions each year under all such permits is limited to 10% of the annual potential biological removal level (the maximum number of animals that may be removed from a marine mammal stock while allowing that stock to reach or maintain its optimum sustainable population). In addition, the takings must be humane.</p> <p>NOAA must suspend the issuance of the permits if, after five years, lethal removal authority is no longer necessary to protect fish from sea lion predation.</p> <p>(Sec. 5) The Department of Commerce must study the effectiveness of the permits on the recovery of endangered and threatened salmon and steelhead stocks.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ329/PLAW-115publ329.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ329/PLAW-115publ329_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ329/PLAW-115publ329.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/3119",
       "votes": []
     },
     {
@@ -4002,6 +4180,42 @@
       "votes": []
     },
     {
+      "id": "s2074-115",
+      "congress": 115,
+      "type": "s",
+      "number": "2074",
+      "title": "A bill to establish a procedure for the conveyance of certain Federal property around the Jamestown Reservoir in the State of North Dakota, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hoeven, John",
+        "party": "R",
+        "state": "ND"
+      },
+      "introduced_date": "2017-11-02",
+      "latest_action": {
+        "date": "2018-12-11",
+        "text": "Became Public Law No: 115-308."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Dams and canals",
+        "Government buildings, facilities, and property",
+        "Land transfers",
+        "Missouri River",
+        "North Dakota",
+        "Outdoor recreation",
+        "State and local government operations",
+        "Water storage"
+      ],
+      "summary_crs": " <p>(Sec. 2) This bill directs the Bureau of Reclamation, within five years, to convey certain recreation land and permitted cabin land around the Jamestown Reservoir to the Stutsman County Park Board in Jamestown, North Dakota. The board must pay administrative costs related to the conveyance, but no other costs.</p> <p>The board must manage the conveyed recreational land for certain recreation and public purposes, public access, fish and wildlife habitat, or the preservation of the natural character of the recreation land. The board may continue to permit haying and grazing on such recreational land if those activities are authorized under a contract that is in effect on this bill's enactment. In addition, the board must manage the conveyed permitted cabin land for (1) existing cabins or recreational residences, or (2) certain recreational land management purposes. The conveyed land reverts to the United States if the land is used in a manner that is inconsistent with the authorized uses.</p> <p>The board must charge fair market value for the sale of a parcel of permitted cabin land. However, improvements made by the permittee may not be included in the valuation. The board must pay Reclamation the amount of sale proceeds that exceed the costs of preparing the sale.</p> <p>Any amount paid to Reclamation for the land conveyed must be made available to Reclamation, subject to the availability of appropriations made in advance, for activities relating to the operation of the Jamestown Dam and Reservoir.</p> <p>(Sec. 3) Within five years, Reclamation must convey to North Dakota a game and fish headquarters currently leased by the North Dakota Game and Fish Department. The headquarters must continue to be used as a game and fish headquarters.</p> <p>(Sec. 4) The bill specifies that the conveyances made under this bill are subject to certain reservations, easements, and rights, including the requirements of the Pick-Sloan Missouri River Basin Program.</p> <p>The bill exempts the United States from liability for certain damages, including flood damage to property subject to a permit.</p> <p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ308/PLAW-115publ308.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ308/PLAW-115publ308_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ308/PLAW-115publ308.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/2074",
+      "votes": []
+    },
+    {
       "id": "s3389-115",
       "congress": 115,
       "type": "s",
@@ -4024,6 +4238,42 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ309/PLAW-115publ309_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ309/PLAW-115publ309.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/3389",
+      "votes": []
+    },
+    {
+      "id": "s440-115",
+      "congress": 115,
+      "type": "s",
+      "number": "440",
+      "title": "A bill to establish a procedure for the conveyance of certain Federal property around the Dickinson Reservoir in the State of North Dakota.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hoeven, John",
+        "party": "R",
+        "state": "ND"
+      },
+      "introduced_date": "2017-02-17",
+      "latest_action": {
+        "date": "2018-12-11",
+        "text": "Became Public Law No: 115-306."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Dams and canals",
+        "Government buildings, facilities, and property",
+        "Land transfers",
+        "Missouri River",
+        "North Dakota",
+        "Outdoor recreation",
+        "State and local government operations",
+        "Water storage"
+      ],
+      "summary_crs": " <p>(Sec. 2) This bill requires the Bureau of Reclamation, within five years, to convey certain recreation land and permitted cabin land around the Dickinson Dam and Reservoir to the Dickinson Parks and Recreation Department in Dickinson, North Dakota. The department must pay administrative costs related to the conveyance, but no other costs.</p> <p>The department must manage the conveyed recreational land for certain recreation and public purposes, public access, fish and wildlife habitat, or the preservation of the natural character of the recreation land. The department may continue to permit haying and grazing on such recreational land if those activities are authorized under a contract that is in effect on this bill's enactment. In addition, the department must manage the conveyed permitted cabin land for (1) existing cabins or recreational residences, or (2) certain recreational land management purposes. The conveyed land reverts to the United States if the land is used in a manner that is inconsistent with the authorized uses.</p> <p>The department must charge fair market value for the sale of a parcel of permitted cabin land. However, improvements made by the permittee may not be included in the valuation. The department must pay Reclamation the amount of sale proceeds that exceed the costs of preparing the sale.</p> <p>Any amount paid to Reclamation for the land conveyed must be made available to Reclamation, subject to the availability of appropriations made in advance, for activities relating to the operation of the Dickinson Dam and Reservoir.</p>  <p>(Sec. 3) Within five years, Reclamation must convey to North Dakota a game and fish headquarters currently leased by the North Dakota Game and Fish Department. The headquarters must continue to be used as a game and fish headquarters.</p> <p>(Sec. 4) The bill specifies that the conveyances made under this bill are subject to certain reservations, easements, and rights, including the requirements of the Pick-Sloan Missouri River Basin Program.</p> <p>The bill exempts the United States from liability for certain damages, including flood damage to property subject to a permit.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ306/PLAW-115publ306.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ306/PLAW-115publ306_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ306/PLAW-115publ306.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/440",
       "votes": []
     },
     {
@@ -4828,6 +5078,39 @@
       "votes": []
     },
     {
+      "id": "hr2615-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "2615",
+      "title": "Gulf Islands National Seashore Land Exchange Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Palazzo, Steven M.",
+        "party": "R",
+        "state": "MS"
+      },
+      "introduced_date": "2017-05-23",
+      "latest_action": {
+        "date": "2018-11-20",
+        "text": "Became Public Law No: 115-279."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Gulf of Mexico",
+        "Land transfers",
+        "Mississippi",
+        "Parks, recreation areas, trails",
+        "Seashores and lakeshores"
+      ],
+      "summary_crs": " <p><b>Gulf Islands National Seashore Land Exchange Act</b></p> (Sec. 3) This bill authorizes the National Park Service (NPS) to convey approximately 1.542 acres of federal land located within the Gulf Islands National Seashore in Jackson County, Mississippi, to the Veterans of Foreign Wars Post 5699 in exchange for approximately 2.161 acres located in the county (the nonfederal land). <p>The values of the parcels to be exchanged shall be determined by an independent appraiser in accordance with nationally recognized appraisal standards. If the values of such parcels are not equal, their values shall be equalized through a cash payment or adjustments to their acreage. </p> <p>The NPS shall require the post to pay or reimburse the costs incurred by the NPS to carry out such exchange.</p> <p>The bill subjects the exchange of the federal and nonfederal lands to valid existing rights.</p> <p>Any nonfederal land acquired by the United States under this bill shall be administered as part of the Gulf Islands National Seashore. </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ279/PLAW-115publ279.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ279/PLAW-115publ279_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ279/PLAW-115publ279.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/2615",
+      "votes": []
+    },
+    {
       "id": "hr3359-115",
       "congress": 115,
       "type": "hr",
@@ -5392,6 +5675,40 @@
       "votes": []
     },
     {
+      "id": "hr46-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "46",
+      "title": "Fort Ontario Study Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Katko, John",
+        "party": "R",
+        "state": "NY"
+      },
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2018-10-09",
+        "text": "Became Public Law No: 115-255."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Government studies and investigations",
+        "Historic sites and heritage areas",
+        "Military history",
+        "New York State",
+        "Parks, recreation areas, trails",
+        "U.S. history"
+      ],
+      "summary_crs": " <p><b>Fort Ontario Study Act</b></p> <p>(Sec. 3) This bill directs the Department of the Interior to conduct a special resource study of Fort Ontario in Oswego, New York. </p> <p>Interior shall: (1) evaluate the fort's national significance, and (2) determine the suitability and feasibility of designating it as a unit of the National Park System.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ255/PLAW-115publ255.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ255/PLAW-115publ255_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ255/PLAW-115publ255.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/46",
+      "votes": []
+    },
+    {
       "id": "hr4854-115",
       "congress": 115,
       "type": "hr",
@@ -5609,6 +5926,37 @@
       "votes": []
     },
     {
+      "id": "hr698-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "698",
+      "title": "Elkhorn Ranch and White River National Forest Conveyance Act of 2017",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Tipton, Scott  R.",
+        "party": "R",
+        "state": "CO"
+      },
+      "introduced_date": "2017-01-24",
+      "latest_action": {
+        "date": "2018-10-03",
+        "text": "Became Public Law No: 115-252."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Colorado",
+        "Forests, forestry, trees",
+        "Land transfers"
+      ],
+      "summary_crs": " <p><b>Elkhorn Ranch and White River National Forest Conveyance Act of 2017</b></p> <p> (Sec. 2) This bill requires all interest of the United States in approximately 148 acres of identified land to be conveyed by patent to the Gordman-Leverich Partnership (GLP), a Colorado Limited Liability Partnership. </p> <p> The conveyance: (1) is subject to the valid existing rights of the lessee of federal oil and gas lease COC-75070 and any other valid existing rights, and (2) shall reserve to the United States the right to collect rent and royalty payments on such lease for its duration. </p> <p> The conveyance shall: (1) be completed by no later than 180 days of enactment of this bill; and (2) be without consideration, except that all costs incurred by the Department of the Interior relating to any survey, platting, legal description, or other activities carried out to prepare and issue the patent shall be paid by the GLP to Interior prior to the conveyance of such land. </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ252/PLAW-115publ252.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ252/PLAW-115publ252_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ252/PLAW-115publ252.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/698",
+      "votes": []
+    },
+    {
       "id": "s2946-115",
       "congress": 115,
       "type": "s",
@@ -5746,6 +6094,87 @@
       "votes": []
     },
     {
+      "id": "hr1109-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "1109",
+      "title": "To amend section 203 of the Federal Power Act.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Walberg, Tim",
+        "party": "R",
+        "state": "MI"
+      },
+      "introduced_date": "2017-02-16",
+      "latest_action": {
+        "date": "2018-09-28",
+        "text": "Became Public Law No: 115-247."
+      },
+      "outcome": "enacted",
+      "policy_area": "Energy",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Corporate finance and management",
+        "Electric power generation and transmission",
+        "Federal Energy Regulatory Commission (FERC)",
+        "Government information and archives",
+        "Public utilities and utility rates"
+      ],
+      "summary_crs": " <p>(Sec.\t1)\tThis bill amends the Federal Power Act with respect to the prohibition regarding mergers or consolidations by a public utility. Any merger or consolidation of a public utility whose value exceeds $10 million must first be authorized by the Federal Energy Regulatory Commission (FERC).</p> <p>(Sec.\t2)\tIn addition, FERC is required to promulgate a rule within 180 days that mandates any public utility seeking to merge or consolidate to notify FERC, within 30 days of transaction consummation, if the value of such merger or consolidation exceeds $1 million but is less than $10 million.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ247/PLAW-115publ247.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ247/PLAW-115publ247_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ247/PLAW-115publ247.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/1109",
+      "votes": []
+    },
+    {
+      "id": "hr589-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "589",
+      "title": "Department of Energy Research and Innovation Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Smith, Lamar",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2017-01-20",
+      "latest_action": {
+        "date": "2018-09-28",
+        "text": "Became Public Law No: 115-246."
+      },
+      "outcome": "enacted",
+      "policy_area": "Energy",
+      "subjects": [
+        "Advanced technology and technological innovations",
+        "Alternative and renewable resources",
+        "Biological and life sciences",
+        "Chemistry",
+        "Competitiveness, trade promotion, trade deficits",
+        "Computers and information technology",
+        "Congressional oversight",
+        "Department of Energy",
+        "Electric power generation and transmission",
+        "Energy research",
+        "Energy storage, supplies, demand",
+        "Executive agency funding and structure",
+        "Freedom of information",
+        "Government buildings, facilities, and property",
+        "Government information and archives",
+        "Licensing and registrations",
+        "Medical research",
+        "Nuclear Regulatory Commission (NRC)",
+        "Nuclear power"
+      ],
+      "summary_crs": " <p><b>Department of Energy Research and Innovation Act</b> </p> <p>TITLE I--LABORATORY MODERNIZATION AND TECHNOLOGY TRANSFER</p> <p><i>Laboratory Modernization and Technology Transfer Act</i></p> <p>(Sec. 102) This bill instructs the Department of Energy (DOE) to permit specified National Laboratories owned by DOE to use funds authorized to support technology transfer within DOE to: (1) carry out early stage and precommercial technology demonstration activities to remove technology barriers limiting private sector interest, and (2) demonstrate potential commercial applications of any research and technologies arising from activities of the national laboratories. </p> <p>(Sec. 103) The bill expresses the sense of Congress that Congress, DOE, and energy industry participants should advance efforts to promote international, domestic, and regional cooperation on the research and development of energy innovations that:</p> <ul> <li>provide clean, affordable, and reliable energy;</li> <li>promote economic growth;</li> <li>are critical for energy security; and </li> <li>are sustainable without government support. </li> </ul> <p>(Sec. 104) DOE shall ensure that laboratory operating contractors do not allocate costs of general and administrative overhead to laboratory-directed research and development. This prohibition does not apply to certain national security laboratories.</p> <p>(Sec. 105) DOE shall establish and maintain a public database, accessible on its website, containing a searchable listing of each unclassified research and development project contract, grant, cooperative agreement, task order for a federally funded research and development center, or other DOE-administered transaction. </p> <p>DOE shall provide information through such database on relevant literature and patents that are associated with each such project contract, grant, or cooperative agreement, or other transaction, of DOE.</p> <p>(Sec. 106) Within one year of enactment of this bill and as often as determined to be necessary thereafter, DOE shall report on its ability to successfully transfer new energy technologies to the private sector. </p> <p>(Sec. 107) DOE shall carry out the Agreements for Commercializing Technology pilot program in accordance with this bill, including by giving the contractors of the national laboratories increased authority to negotiate contract terms and making every such facility eligible for the program. The pilot program is extended through FY2019.</p> <p> DOE shall permit the directors of the national laboratories to execute agreements with non-federal entities. </p> <p> The bill: (1) subjects funding agreements to the requirements of the Bayh-Dole Act (concerning patent rights to inventions arising from federally-supported research and development), and (2) imposes contractor certification requirements for the avoidance of direct competition with the private sector and conflicts of interest. </p> <p>(Sec. 108) The bill amends the Energy Policy Act of 2005 to exempt institutions of higher education and nonprofit institutions from the cost-sharing requirements for research and development for two years. </p> <p>During such period, DOE shall submit an initial report, then subsequent annual reports, that describe the use of cost-sharing waivers by DOE with regard to carrying out research, development, demonstration, and commercial application programs and activities that have been initiated since August 9, 2005. </p> <p>TITLE II--DEPARTMENT OF ENERGY RESEARCH COORDINATION</p> <p><i>Department of Energy Research Coordination Act</i></p> <p>(Sec. 202) The bill amends the America Competes Act to require the following types of information collected by the Advanced Research Projects Agency-Energy (ARPA-E) from recipients of financial assistance awards to be considered commercial and financial information obtained from a person and privileged or confidential and therefore not subject to disclosure under the Freedom of Information Act: </p> <ul> <li>plans for commercialization of technologies developed under the award,</li> <li>investments provided to an awardee from third parties,</li> <li>additional financial support that the awardee plans to or has invested into the technology developed under the award or is seeking from third parties, and </li> <li>revenue from the licensing or sale of new products or services that result from the research conducted under the award. </li> </ul> <p>(Sec. 203) DOE shall use its capabilities to identify strategic opportunities for collaborative research, development, demonstration, and commercial application of innovative science and technologies. </p> <p>DOE shall seek to leverage existing DOE programs and consolidate and coordinate activities throughout DOE to promote collaboration and crosscutting approaches within its programs. </p> <p>Also, DOE shall:</p> <ul> <li>prioritize activities that use all affordable domestic resources;</li> <li>develop a planning, evaluation, and technical assessment framework for setting long-term objective strategic goals and evaluating progress that ensures integrity and independence and provides the flexibility to adapt to market dynamics;</li> <li>ensure that activities do not duplicate other activities within DOE or other federal government activities; and </li> <li>identify programs that may be more effectively left to the states, industry, nongovernmental organizations, institutions of higher education, or other stakeholders. </li> </ul> <p>(Sec. 204) The bill amends the Energy Policy Act of 2005 to require DOE, when periodically reviewing all of its science and technology activities in a strategic framework, to also take global energy dynamics into account under such a review. </p> <p>Plans developed by DOE to improve coordination and collaboration in research, development, demonstration, and commercial application activities across DOE's organizational boundaries shall also include:</p> <ul> <li>critical assessments of any ongoing programs that have experienced subpar performance or cost overruns of 10% or more over 1 or more years;</li> <li>any activities that may be more effectively left to the states, industry, nongovernmental organizations, institutions of higher education, or other stakeholders; and </li> <li>evaluations and proposals for innovation hubs, institutes, and research centers of DOE, including an affirmation that they will advance DOE's mission, prioritize research, development, and demonstration, and that those that are established or renewed within the Office of Science are consistent with its mission. </li> </ul> <p>(Sec. 205) The bill amends the Energy Policy Act of 2005 to require DOE to submit a report for FY2018 concerning the development and implementation of a strategy for facilities and infrastructure supported at certain DOE offices, the national laboratories, and single-purpose research facilities.</p> <p>(Sec. 206) DOE shall carry out a program to enhance economic, environmental, and energy security by making awards to consortia for the establishment and operation of Energy Innovation Hubs to conduct and support at one centralized location, multidisciplinary, collaborative research, development, demonstration, and commercial application of advanced energy technologies. </p> <p>DOE shall: (1) designate a unique advanced energy technology basic research focus for each hub, and (2) ensure coordination and avoid unnecessary duplication of each hub's activities with those of other DOE research entities.</p> <p>To become eligible to receive an award to establish and operate a hub, a consortium must:</p> <ul> <li>be composed of at least two qualifying entities;</li> <li>operate subject to a binding agreement, entered into by each consortium member, which documents the proposed partnership agreement, including the governance and management structure of the hub; and</li> <li>operate as a nonprofit organization. </li> </ul> <p>Each hub shall conduct or provide for multidisciplinary, collaborative research, development, demonstration, and commercial application of advanced energy technologies. </p> <p>In addition, each hub shall:</p> <ul> <li>encourage collaboration and communication among the members of the qualifying entities of the consortium and awardees;</li> <li> develop and publish proposed plans and programs on a publicly accessible website;</li> <li>submit annual reports to DOE summarizing its activities; </li> <li>monitor project implementation and coordination; and</li> <li>maintain conflict of interest procedures, consistent with those of DOE. </li> </ul> <p>TITLE III--DEPARTMENT OF ENERGY OFFICE OF SCIENCE POLICY</p> <p><i>Department of Energy Office of Science Policy Act</i></p> <p>(Sec. 302) The bill states that the mission of the Office of Science shall be the delivery of scientific discoveries, capabilities, and major scientific tools to transform the understanding of nature and to advance U.S. energy, economic, and national security. </p> <p>(Sec. 303) The Office of Science shall carry out an awards program to conduct fundamental and use-inspired energy research to accelerate scientific breakthroughs. </p> <p> The office shall carry out a program for the development, construction, operation, and maintenance of national user facilities. Such facilities shall serve the needs of DOE, industry, the academic community, and other relevant entities in creating and examining materials and chemical processes for the purpose of improving U.S. competitiveness.</p> <p>Those facilities shall include x-ray light sources, neutron sources, nanoscale science research centers, and other appropriate facilities, consistent with the duties and responsibilities of the office under the Department of Energy Reorganization Act.</p> <p> The office shall carry out research and development on advanced accelerator and storage ring technologies that are relevant to the development of basic energy sciences user facilities. </p> <p>The bill repeals provisions for the catalysis research program and instead directs DOE to carry out a Solar Fuels Research Initiative to expand theoretical and fundamental knowledge of photochemistry, electrochemistry, biochemistry, and materials science that is useful for the practical development of experimental systems for the conversion of solar energy into chemical energy. </p> <p>In carrying out programs and activities under the Initiative, DOE shall leverage expertise and resources from: (1) the Basic Energy Sciences Program and the Biological and Environmental Research Program of the office, and (2) the Office of Energy Efficiency and Renewable Energy. </p> <p>Under the Initiative, DOE shall organize activities among multidisciplinary teams to leverage expertise from the national laboratories, institutions of higher education, and the private sector. Such teams shall pursue aggressive, milestone-driven, basic research goals.</p> <p> DOE shall carry out under the Initiative a program to support research needed to bridge scientific barriers to, and discover knowledge relevant to, artificial photosynthetic systems. </p> <p>As part of such program, the Office of Basic Energy Sciences shall support basic research to pursue distinct lines of scientific inquiry, including:</p> <ul> <li>photoinduced production of hydrogen and oxygen from water; and </li> <li>the sustainable photoinduced reduction of carbon dioxide to fuel products which include hydrocarbons, alcohols, carbon monoxide, and natural gas. </li> </ul> <p>DOE shall carry out under the Initiative a program to support research needed to replicate natural photosynthetic processes by the use of artificial photosynthetic components and materials. </p> <p>Under such program, the Office of Basic Energy Sciences shall support basic research to expand fundamental knowledge to replicate natural synthesis processes, including:</p> <ul> <li>the photoinduced reduction of dinitrogen to ammonia,</li> <li>the absorption of carbon dioxide from ambient air,</li> <li>molecular-based charge separation and storage,</li> <li>photoinitiated electron transfer, and </li> <li>catalysis in biological or biomimetic systems. </li> </ul> <p>Also under such program:</p> <ul> <li> the Office of Biological and Environmental Research shall support systems biology and genomics approaches in understanding genetic and physiological pathways connected to photosynthetic mechanisms; and</li> <li>the Office for Energy Efficiency and Renewable Energy shall support translational research, development, and validation of physical concepts developed under the program. </li> </ul> <p>The bill repeals the program of fundamental research on solid state lighting in support of the Next Generation Lighting Initiative and instead directs DOE to carry out an Electricity Storage Research Initiative to:</p> <ul> <li>expand theoretical and fundamental knowledge to control, store, and convert electrical energy into chemical energy and chemical energy into electrical energy; and </li> <li>support scientific inquiry into the practical understanding of the chemical and physical processes occurring within systems that involve crystalline and amorphous solids, polymers, and organic and aqueous liquids. </li> </ul> <p>In carrying out programs and activities under the Initiative, DOE shall leverage expertise and resources from: (1) the Basic Energy Sciences Program, the Advanced Scientific Computing Research Program, and the Biological and Environmental Research Program of the office; and (2) the Office of Energy Efficiency and Renewable Energy.</p> <p>Under the Initiative, DOE shall organize activities among multidisciplinary teams to leverage expertise from the national laboratories, institutions of higher education, and the private sector. </p> <p>Also, DOE may organize additional activities under the Initiative through Energy Frontier Research Centers, Energy Innovation Hubs, or other organizational structures.</p> <p>Under the Initiative, DOE shall carry out a program to support research needed to bridge scientific barriers to, and discover knowledge relevant to, multivalent ion materials in electric energy storage systems.</p> <p>As part of such program: </p> <ul> <li>the Office of Basic Energy Sciences shall investigate electrochemical properties and the dynamics of materials, including charge transfer phenomena and mass transport in materials; and </li> <li>the Office for Energy Efficiency and Renewable Energy shall support translational research, development, and validation of physical concepts developed under the program. </li> </ul> <p>DOE shall carry out a program under the Initiative to: (1) support research to model and simulate organic electrolytes, and (2) support research needed to reveal electrochemistry in confined mesoscale spaces.</p> <p>As part of such program, the Office of Basic Energy Science and the Office of Biological and Environmental Research shall investigate phenomena of mesoscale electrochemical confinement for replicating and controlling new electrochemical behavior, and the Office for Energy Efficiency and Renewable Energy shall support translational research and validation of physical concepts developed under the program.</p> <p>(Sec. 304) The Department of Energy High-End Computing Revitalization Act of 2004 is renamed as the American Super Computing Leadership Act of 2017. </p> <p>The bill repeals requirements under such renamed Act for high-end software development centers and instead directs DOE to conduct a research program for exascale computing, including the development of two or more exascale computing machine architectures, to promote DOE missions.</p> <p>The bill defines &quot;exascale computing&quot; as computing through the use of a computing machine that performs near or above 10 to the 18th power operations per second. </p> <p>In carrying out the research program, DOE shall:</p> <ul> <li>establish two or more national laboratory partnerships with industry partners and institutions of higher education for the research and development of two or more exascale computing architectures across all applicable DOE organizations;</li> <li>conduct mission-related codesign activities in developing such architectures;</li> <li>develop advancements in hardware and software technology required to fully realize the potential of an exascale production system in addressing DOE target applications and solving scientific problems that involve predictive modeling and simulation and large scale data analytics and management; </li> <li>explore the use of exascale computing technologies to advance a broad range of science and engineering; and </li> <li>provide on a competitive, merit-reviewed basis, access for researchers in U.S. industries, institutions of higher education, national laboratories, and other federal agencies to the exascale computing systems developed pursuant to these partnerships.</li> </ul> <p>DOE shall: (1) carry out the program through an integration of applications, computer science, applied mathematics, and computer hardware architecture using the partnerships to ensure that two or more exascale computing machine architectures are capable of solving DOE target applications and broader scientific problems; and (2) conduct outreach programs to increase the readiness for the use of such platforms by domestic industries, including manufacturers. </p> <p>DOE shall report to Congress on: (1) how such integration is furthering application science data and computational workloads across application interests, including national security, cybersecurity, the Materials Genome and BRAIN initiatives, advanced manufacturing, and the national electric grid; and (2) the roles and responsibilities of the national laboratories and industry to ensure an integrated program across DOE. </p> <p>Exascale architectures developed by these partnerships shall be reviewed through a project review process. DOE shall report to Congress on: (1) the results of such reviews, and (2) the coordination and management of the program, ensuring that there is an integrated research program across DOE. </p> <p>DOE shall submit annual reports to Congress describing funding for the program.</p> <p>The Office of Science shall support research in high-performance computing and networking relevant to energy applications, including modeling, simulation, and advanced data analytics for basic and applied energy research programs carried out by DOE. </p> <p>The Office of Science shall carry out activities to develop, test, and support: (1) mathematics, models, and algorithms for complex systems and programming environments; and (2) tools, languages, and operating systems for high-end computing systems. </p> <p>(Sec. 305) The Office of Science shall ensure the access of U.S. researchers to the most advanced accelerator facilities and research capabilities in the world, including the Large Hadron Collider. </p> <p>The Office of Science shall carry out research on: (1) rare decay processes and the nature of the neutrino, and (2) the nature of dark energy and dark matter.</p> <p>(Sec. 306) The Office of Science shall carry out research and development activities in fundamental, structural, computational, and systems biology to increase systems-level understanding of complex biological systems, which may include activities to: </p> <ul> <li>accelerate breakthroughs and new knowledge to enable the cost-effective, sustainable production of biomass-based liquid transportation fuels, bioenergy, and biobased materials;</li> <li>improve understanding of the global carbon cycle, including processes for removing carbon dioxide from the atmosphere, through photosynthesis and other biological processes, for sequestration and storage; and </li> <li>understand the biological mechanisms used to transform, immobilize, or remove contaminants from subsurface environments. </li> </ul> <p>The office shall not approve any new climate science-related initiatives without first determining that such work will be well-coordinated with any relevant work being carried out by other federal agencies.</p> <p>The office shall carry out a low-dose radiation research program to enhance the scientific knowledge of, and reduce uncertainties associated with, the effects of exposure to low-dose radiation to inform improved risk-management methods. </p> <p>(Sec. 307) As part of the activities authorized under the fission and fusion energy materials research program, the Office of Science shall carry out research and development activities to identify, characterize, and demonstrate materials that can endure the neutron, plasma, and heat fluxes which are expected in a fusion power system. </p> <p>The office shall also provide an assessment of:</p> <ul> <li>the need for one or more facilities that can examine and test potential fusion and next generation fission materials and other enabling technologies that are relevant to the development of fusion power; and </li> <li>whether a single new facility that substantially addresses magnetic fusion and next generation fission materials research needs is feasible, in conjunction with the expected capabilities of facilities that are operational as of this bill's enactment. </li> </ul> <p>The office shall support: (1) research and development activities and facility operations to optimize the tokamak approach to fusion energy, and (2) research and development activities for inertial fusion for energy applications. </p> <p>The office shall support research and development activities and facility operations at institutions of higher education, national laboratories, and private facilities for a portfolio of alternative and enabling fusion energy concepts that may provide solutions to significant challenges to the establishment of a commercial magnetic fusion power plant, to be prioritized based on the ability of the United States to play a leadership role in the international fusion research community. </p> <p>The office shall coordinate with ARPA-E to: (1) assess the potential for any ARPA-E-supported fusion energy project as representing an approach to a viable fusion power plant that is commercially viable, (2) determine whether the results of any such project merit the support of follow-on research activities carried out by the office, and (3) avoid unintentional duplication of activities. </p> <p> DOE shall submit to Congress a report on the fusion energy research and development activities that the DOE proposes to carry out over a period of 10 years under at least 3 budget scenarios, including one based on 3% annual growth in the non-ITER portion of the budget for those activities. </p> <p>Such report shall: </p> <ul> <li>identify specific areas of fusion energy research and enabling technology development in which the United States can and should establish or solidify a lead in global fusion energy development; </li> <li>identify priorities for the initiation of facility construction and facility decommissioning under each of the three budget scenarios; and </li> <li>assess the ability of the U.S. fusion workforce to carry out these activities, including the adequacy of programs at institutions of higher education in the United States in training the leaders and workers of the next generation of fusion energy researchers. </li> </ul> <p>To develop such report, DOE shall leverage best practices and lessons learned from the process used to develop the most recent report of the Particle Physics Project Prioritization Panel of the High Energy Physics Advisory Panel. </p> <p>(Sec. 308) The Office of Science: (1) may carry out a program for the production of isotopes; and (2) shall ensure that isotope production activities do not compete with private industry, unless critical national interests require the involvement of the federal government. </p> <p>The Rare Isotope Accelerator is renamed as the &quot;Facility for Rare Isotope Beams.&quot;</p> <p>(Sec. 309) The Office of Science shall carry out a program for improving the safety, efficiency, and mission readiness of infrastructure at its laboratories. </p> <p>Such program shall include projects to:</p> <ul> <li>renovate or replace space that does not meet research needs,</li> <li>replace facilities that are no longer cost-effective to renovate or operate,</li> <li>modernize utility systems to prevent failures and ensure efficiency, </li> <li>remove excess facilities to allow safe and efficient operations, and </li> <li>construct modern facilities to conduct advanced research in controlled environmental conditions. </li> </ul>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ246/PLAW-115publ246.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ246/PLAW-115publ246_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ246/PLAW-115publ246.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/589",
+      "votes": []
+    },
+    {
       "id": "hr6157-115",
       "congress": 115,
       "type": "hr",
@@ -5790,6 +6219,44 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ245/PLAW-115publ245_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ245/PLAW-115publ245.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/6157",
+      "votes": []
+    },
+    {
+      "id": "s97-115",
+      "congress": 115,
+      "type": "s",
+      "number": "97",
+      "title": "Nuclear Energy Innovation Capabilities Act of 2017",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Crapo, Mike",
+        "party": "R",
+        "state": "ID"
+      },
+      "introduced_date": "2017-01-11",
+      "latest_action": {
+        "date": "2018-09-28",
+        "text": "Became Public Law No: 115-248."
+      },
+      "outcome": "enacted",
+      "policy_area": "Energy",
+      "subjects": [
+        "Advanced technology and technological innovations",
+        "Computers and information technology",
+        "Congressional oversight",
+        "Energy research",
+        "Government buildings, facilities, and property",
+        "Licensing and registrations",
+        "Nuclear Regulatory Commission (NRC)",
+        "Nuclear power",
+        "Research and development",
+        "User charges and fees"
+      ],
+      "summary_crs": " <p><b>Nuclear Energy Innovation Capabilities Act of 2017</b></p> <p>(Sec. 2) This bill amends the Energy Policy Act of 2005 to revise the objectives of the civilian nuclear energy research, development, demonstration, and commercial application programs of the Department of Energy (DOE) to emphasize : (1) providing research infrastructure to promote scientific progress and enable users from academia, the National Laboratories, and the private sector to make scientific discoveries relevant for nuclear, chemical, and materials science engineering; and (2) enabling the private sector to partner with the National Laboratories to demonstrate novel reactor concepts for the purpose of resolving technical uncertainty associated with the aforementioned objectives. </p> <p>The bill repeals the Nuclear Power 2010 Program, and makes technical corrections removing the Office of Nuclear Energy, Science and Technology as the designated entity to conduct the research, development, and demonstration programs on advanced fuel recycling technology and cost-effective technologies for increasing the safety and security of nuclear facilities. (The Office of Nuclear Energy, Science and Technology was replaced in DOE by the Office of Nuclear Energy, the Office of Science, and the Office of Technology Transitions.) </p> <p> The bill repeals requirements for development of a comprehensive plan for the operation and maintenance of its facilities at the Idaho National Laboratory to support civilian nuclear energy research, development, demonstration, and commercial application programs, including radiological facilities management, isotope production, and facilities management. </p> <p>By December 31, 2017, DOE shall determine the mission need for a versatile reactor-based fast neutron source, which shall operate as a national user facility. </p> <p>DOE shall ensure that the user facility will provide at a minimum: (1) fast neutron spectrum irradiation capability, and (2) capacity for upgrades to accommodate new or expanded research needs. </p> <p>DOE shall leverage from the Office of Science the best practices for management, construction, and operation of national user facilities. </p> <p>DOE shall carry out a program for enhancing the capability to develop new reactor technologies through high-performance computation modeling and simulation techniques. Such program shall coordinate with relevant federal agencies through the National Strategic Computing Initiative while taking into account specified objectives. </p> <p> The bill authorizes a program to enable the testing and demonstration of reactor concepts to be proposed and funded by the private sector. DOE shall leverage the technical expertise of relevant federal agencies and the National Laboratories in order to minimize the time required to enable construction and operation of privately funded experimental reactors at national laboratories or other DOE-owned sites. </p> <p>Such reactors shall operate to enable physical validation of advanced nuclear reactor concepts and generate research and development to improve nascent technologies. </p> <p>DOE may enter into a memorandum of understanding with the Nuclear Regulatory Commission (NRC) in order to share technical expertise and knowledge through:</p> <ul> <li>testing and demonstration of advanced nuclear reactor concepts to be proposed and funded by the private sector,</li> <li>operating a database to store and share data and knowledge relevant to nuclear science and engineering between federal agencies and the private sector,</li> <li>developing and testing electric and nonelectric integration and energy conversion systems relevant to advanced nuclear reactors,</li> <li>leveraging expertise from the NRC respecting safety analysis, and </li> <li>enabling the technical staff of the NRC to actively observe and learn about technologies developed under such testing and demonstration program. </li> </ul> <p>The NRC and DOE shall enter into another memorandum of understanding to ensure that:</p> <ul> <li> DOE has sufficient technical expertise to support the timely research, development, demonstration, and commercial application by the civilian nuclear industry of safe and innovative advanced nuclear technology; and </li> <li>the NRC has sufficient technical expertise to assist in the evaluation of applications for licenses, permits, and design certifications and other requests for regulatory approval for advanced nuclear reactors. </li> </ul> <p>This memorandum must also address: </p> <ul> <li>the use of computers and software to calculate the behavior and performance of advanced nuclear reactors, and </li> <li>ensuring that DOE maintains and develops the necessary facilities to enable timely research, development, demonstration, and commercial application by the civilian nuclear industry of safe and innovative reactor technology, and that the NRC has access to those facilities, as needed. </li> </ul> <p>DOE shall assess its capabilities to authorize, host, and oversee privately funded experimental advanced nuclear reactors at national laboratories or other DOE-owned sites. </p> <p>The bill subjects any activities carried out under such testing and demonstration program which involves the risk of public liability to the financial protection or indemnification requirements under the Price-Anderson Act. </p> <p>Within 1 year of this bill's enactment, DOE must submit to Congress two specified alternative 10-year budget plans for civilian nuclear energy research and development by DOE, one assuming constant annual funding for 10 years at the appropriated FY2016 level, and the other an unconstrained budget.</p> <p>DOE must also identify to Congress: (1) engineering designs for innovative fusion energy systems that have the potential to demonstrate net energy production within 15 years of the start of construction, and (2) budgetary requirements necessary for DOE to carry out a fusion innovation initiative to accelerate research and development of those designs. </p> <p>(Sec. 3) DOE shall establish an Advanced Nuclear Energy Cost-Share Grant Program to make cost-share grants to applicants to fund a portion of the applicant's NRC fees for pre-application and application review activities. </p> <p>DOE shall: (1) seek out technology diversity in making such grants, and (2) determine each grant's cost-share amount in accordance with the Energy Policy Act of 2005.</p> <p>Grant recipients may use their grant funds to cover NRC fees, including those associated with developing a licensing project plan, obtaining a statement of licensing feasibility, reviewing topical reports, other pre-application and application review activities, and interactions with the NRC.</p> ",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ248/PLAW-115publ248.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ248/PLAW-115publ248_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ248/PLAW-115publ248.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/97",
       "votes": []
     },
     {
@@ -6803,6 +7270,40 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ221/PLAW-115publ221_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ221/PLAW-115publ221.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/2734",
+      "votes": []
+    },
+    {
+      "id": "s490-115",
+      "congress": 115,
+      "type": "s",
+      "number": "490",
+      "title": "A bill to reinstate and extend the deadline for commencement of construction of a hydroelectric project involving the Gibson Dam.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daines, Steve",
+        "party": "R",
+        "state": "MT"
+      },
+      "introduced_date": "2017-03-02",
+      "latest_action": {
+        "date": "2018-07-27",
+        "text": "Became Public Law No: 115-219."
+      },
+      "outcome": "enacted",
+      "policy_area": "Energy",
+      "subjects": [
+        "Alternative and renewable resources",
+        "Dams and canals",
+        "Electric power generation and transmission",
+        "Licensing and registrations",
+        "Montana",
+        "Water storage"
+      ],
+      "summary_crs": " <p>(Sec.\t1)\tThis bill authorizes the Federal Energy Regulatory Commission (FERC), upon request, to extend for up to six years the time period during which construction must commence on the Gibson Dam Hydroelectric Project located on the Sun River in Lewis, Clark, and Teton Counties, Montana.</p> <p>Additionally, FERC may reinstate the construction license if it is expired.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ219/PLAW-115publ219.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ219/PLAW-115publ219_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ219/PLAW-115publ219.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/490",
       "votes": []
     },
     {
@@ -8287,6 +8788,85 @@
       "votes": []
     },
     {
+      "id": "s35-115",
+      "congress": 115,
+      "type": "s",
+      "number": "35",
+      "title": "Black Hills National Cemetery Boundary Expansion Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Thune, John",
+        "party": "R",
+        "state": "SD"
+      },
+      "introduced_date": "2017-01-05",
+      "latest_action": {
+        "date": "2018-05-25",
+        "text": "Became Public Law No: 115-175."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Cemeteries and funerals",
+        "Land transfers",
+        "South Dakota",
+        "Veterans' organizations and recognition"
+      ],
+      "summary_crs": " <p><strong>Black Hills National Cemetery Boundary Expansion Act </strong></p> <p>(Sec. 3) This bill directs the Department of Veterans Affairs (VA) to: (1) complete environmental, cultural resource, and other due diligence activities on certain federal land to confirm its suitability for inclusion in the Black Hills National Cemetery, South Dakota; and (2) notify, and coordinate with, the Department of the Interior regarding such activities. </p> <p>After completion of such activities and upon receipt by Interior of written confirmation of suitability from the VA, the land shall: (1) be withdrawn from all forms of appropriation under the public land laws, including the mining laws, the mineral leasing laws, and the geothermal leasing laws, for as long as it remains under VA administrative jurisdiction; (2) be treated as property; and (3) be transferred, except for the land within 100 feet of the center of the Centennial Trail, from Interior to the VA for use as a national cemetery.</p> <p> Interior shall publish a notice containing the legal descriptions of such transferred land. </p> <p>The VA shall reimburse Interior for reasonable transfer costs, including survey costs. </p> <p> The cemetery's boundary is modified to include such federal land.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ175/PLAW-115publ175.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ175/PLAW-115publ175_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ175/PLAW-115publ175.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/35",
+      "votes": []
+    },
+    {
+      "id": "s2155-115",
+      "congress": 115,
+      "type": "s",
+      "number": "2155",
+      "title": "Economic Growth, Regulatory Relief, and Consumer Protection Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Crapo, Mike",
+        "party": "R",
+        "state": "ID"
+      },
+      "introduced_date": "2017-11-16",
+      "latest_action": {
+        "date": "2018-05-24",
+        "text": "Became Public Law No: 115-174."
+      },
+      "outcome": "enacted",
+      "policy_area": "Finance and Financial Sector",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Advisory bodies",
+        "Aging",
+        "American Samoa",
+        "Bank accounts, deposits, capital",
+        "Banking and financial institutions regulation",
+        "Bankruptcy",
+        "Business investment and capital",
+        "Caribbean area",
+        "Child health",
+        "Civil actions and liability",
+        "Computer security and identity theft",
+        "Congressional oversight",
+        "Consumer Financial Protection Bureau",
+        "Consumer credit",
+        "Department of the Treasury",
+        "Elementary and secondary education",
+        "Employment discrimination and employee rights",
+        "Environmental assessment, monitoring, research"
+      ],
+      "summary_crs": " <p><b>Economic Growth, Regulatory Relief, and Consumer Protection Act</b></p> <p>TITLE I--IMPROVING CONSUMER ACCESS TO MORTGAGE CREDIT</p> <p> (Sec. 101) This bill amends the Truth in Lending Act (TILA) to allow a depository institution or credit union with assets below a specified threshold to forgo certain ability-to-pay requirements regarding residential mortgage loans. Specifically, those requirements are waived if a loan: (1) is originated by and retained by the institution, (2) complies with requirements regarding prepayment penalties and points and fees, and (3) does not have negative amortization or interest-only terms. Furthermore, for such requirements to be waived, the institution must consider and verify the debt, income, and financial resources of the consumer. </p> <p>The bill also provides for circumstances in which&nbsp;such requirements shall be waived with respect to a&nbsp;loan that is&nbsp;transferred: (1) by reason of bankruptcy or failure of the originating institution, (2) to a similar institution, (3) in the event of a merger, or (4) to a wholly owned subsidiary of the institution. </p> <p>(Sec. 102) Mortgage appraisal services donated by a fee appraiser to an organization eligible to receive tax-deductible charitable contributions are deemed to be customary and reasonable under TILA. </p> <p>(Sec. 103) The bill&nbsp;amends the Financial Institutions Reform, Recovery, and Enforcement Act of 1989&nbsp;to&nbsp;exempt from appraisal requirements certain federally related, rural&nbsp;real-estate transactions valued below a specified limit if&nbsp;no certified appraiser is available. </p> <p>(Sec. 104) The bill amends the Home Mortgage Disclosure Act of 1975 to exempt from specified public disclosure requirements depository institutions and&nbsp;credit unions that&nbsp;originate fewer than a specified number of closed-end mortgages or open-end lines of credit. </p> <p>The Government Accountability Office (GAO) must report on these changes. </p> <p>(Sec. 105) The bill amends the Federal Credit Union Act to allow a credit union to extend a member business loan with respect to a one- to four-family dwelling, regardless of whether the dwelling is the member's primary residence. Under current law, a member business loan may be extended with respect to such a dwelling only if it is the member's primary residence. </p> <p>(Sec. 106) The bill amends the S.A.F.E. Mortgage Licensing Act of 2008 to revise the Act's civil liability immunity provisions and to temporarily allow loan originators that meet specified requirements to continue to originate loans after moving: (1) from one state to another, or (2) from a depository institution to a non-depository institution. </p> <p>(Sec. 107) The bill amends TILA to specify that a retailer of manufactured housing that meets certain requirements is generally not a \"mortgage originator\" subject to requirements under that Act.</p> <p>(Sec. 108) The bill exempts from certain escrow requirements a residential mortgage loan held by a depository institution or credit union that: (1) has&nbsp;assets of $10 billion or less, (2)&nbsp;originated 1,000 or fewer mortgages in the preceding year, and (3) meets other specified requirements. </p> <p>(Sec. 109) The required mortgage disclosure waiting period is eliminated with respect to a second offer of credit if the creditor offers a consumer a lower annual percentage rate in the&nbsp;second offer. </p> <p>TITLE II--REGULATORY RELIEF AND PROTECTING CONSUMER ACCESS TO CREDIT</p> <p>(Sec. 201) Federal banking agencies must develop a specified&nbsp;Community Bank Leverage Ratio (the ratio of a bank's equity capital to its consolidated assets) for banks with assets of less than $10 billion. Such banks that exceed this ratio&nbsp;shall be&nbsp;deemed to be in compliance with all other capital and leverage requirements. Federal banking agencies may consider a company's risk profile when evaluating whether it qualifies as a community bank for purposes of the ratio requirement. </p> <p>(Sec. 202) The bill amends the Federal Deposit Insurance Act to exclude reciprocal deposits of an insured depository institution from certain limitations on&nbsp;prohibited broker deposits if the total reciprocal deposits of the institution do not exceed the lesser of $5 billion or 20% of its total liabilities. Reciprocal deposits are deposits that banks make with each other in equal amounts. (Generally, an insured depository institution that is not well capitalized may not accept funds obtained by or through any deposit broker for deposit.) </p> <p>(Sec. 203) The bill amends the Bank Holding Company Act of 1956 to exempt from the \"Volcker Rule\" banks with: (1) total assets valued at less than $10 billion, and (2) trading assets and liabilities&nbsp;comprising not more than 5% of total assets. (The Volcker Rule prohibits banking agencies from engaging in proprietary trading or entering into certain relationships with hedge funds and private-equity funds.) </p> <p>(Sec. 204) Volcker Rule restrictions on entity name sharing are eased in specified circumstances. </p> <p>(Sec. 205) The bill amends the Federal Deposit Insurance Act to require federal banking agencies to issue regulations allowing certain small depository institutions to satisfy reporting requirements with a reduced Report of Condition and Income (i.e., call report). </p> <p>(Sec. 206) The bill amends the Home Owners' Loan Act to permit certain&nbsp;federal savings associations to elect to operate, subject to supervision by the Office of the Comptroller of the Currency, with the same rights and duties as national banks (including operating without certain lending restrictions). </p> <p>(Sec. 207) The Federal Reserve Board (FRB) must increase, from $1 billion to $3 billion, the consolidated asset threshold (i.e., permissible debt level) for a bank holding company or savings and loan holding company that: (1) is not engaged in significant nonbanking activities; (2) does not conduct significant off-balance-sheet activities; and (3) does not have a material amount of debt or equity securities, other than trust-preferred securities, outstanding. If warranted for supervisory purposes, the FRB may exclude a company from this threshold increase. </p> <p>(Sec. 208) The bill amends the Expedited Funds Availability Act to apply the Act, which governs bank deposit holds, to American Samoa, the Commonwealth of the Northern Mariana Islands, and Guam. The Act's one-day extension for certain deposits in noncontiguous states or territories shall also apply to these territories. </p> <p>(Sec. 209) The bill amends the United States Housing Act of 1937 to reduce inspection requirements and environmental-review requirements for certain smaller, rural public-housing agencies. </p> <p> (Sec. 210) The bill amends the Federal Deposit Insurance Act to increase the asset limit below which&nbsp;certain depository institutions are&nbsp;eligible for an 18-month, instead of a 12-month, examination cycle. </p> <p>(Sec. 211) The bill creates the Insurance Policy Advisory Committee on International Capital Standards and Other Insurance Issues at the FRB. The FRB and the Department of the Treasury must report on: (1)&nbsp;their efforts regarding&nbsp;global insurance regulatory or supervisory forums, and (2) any final&nbsp;international insurance capital standards prior to adoption of such standards. </p> <p>(Sec. 212) The bill amends the Federal Credit Union Act to require the National Credit Union Administration to hold public hearings on its draft annual budget. </p> <p>(Sec. 213) A financial institution is authorized to record personal information from a scan, copy, or image of an individual's driver's license or personal identification card and store the information electronically when an individual initiates an online request to open an account or obtain a financial product. The financial institution may use the information for the purpose of verifying the authenticity of the driver's license or identification card, verifying the identity of the individual, or complying with legal requirements. The financial institution must delete any copy or image of an individual's driver's license or personal identification card after use.</p> <p>(Sec. 214) The bill amends the Federal Deposit Insurance Act to specify that a federal banking agency may not subject a depository institution to higher capital standards with respect to a high-volatility commercial real-estate (HVCRE) exposure unless the exposure is an HVCRE acquisition, development, or construction (ADC) loan.</p> <p>An HVCRE ADC loan : (1) is secured by land or improved real property; (2) has the purpose of providing financing to acquire, develop, or improve the real property such that the property becomes income-producing; and (3) is dependent upon future income or sales proceeds from, or refinancing of, the real property for the repayment of the loan.</p> <p> (Sec. 215) The Social Security Administration (SSA) is directed to develop a database to facilitate the verification of consumer information upon request by a certified financial institution. Such verification shall be provided only&nbsp;with the consumer's consent and in connection with a credit transaction. Users of the database shall pay system costs as determined by the SSA.</p> <p>(Sec. 216) The bill directs Treasury to report on the risks of cyber threats to financial institutions and capital markets. </p> <p>(Sec. 217) The bill amends the Federal Reserve Act to lower the maximum allowable amount of surplus funds of the Federal Reserve banks.</p> <p>TITLE III--PROTECTIONS FOR VETERANS, CONSUMERS, AND HOMEOWNERS</p> <p>(Sec. 301) The bill amends the Fair Credit Reporting Act to increase the length of time a consumer reporting agency must include a fraud alert in a consumer's file. It also: (1) requires a consumer reporting agency&nbsp;to provide a consumer with free credit freezes and to notify a consumer of their availability, (2) establishes provisions related to the placement and removal of these freezes, (3) creates requirements related to the&nbsp;protection of the credit records of minors. </p> <p>(Sec. 302) The bill limits, and establishes&nbsp; a dispute process and verification procedures&nbsp;with respect to, the inclusion of&nbsp;a veteran's medical debt in a consumer credit report. </p> <p>(Sec. 303) The bill extends immunity from liability to certain individuals employed at financial institutions who, in good faith and with reasonable care, disclose the suspected exploitation of a senior citizen to a regulatory or law-enforcement agency. Similarly, the employing financial institution shall not be liable with respect to disclosures made by such employees. </p> <p>The bill allows financial institutions and third-party entities to offer training related to the suspected financial exploitation of a senior citizen to specified employees. The bill provides guidance regarding the content, timing, and record-maintenance requirements of such training. </p> <p>(Sec. 304) The sunset provision of the Protecting Tenants at Foreclosure Act is repealed, restoring notification requirements and other protections related to the eviction of renters in foreclosed properties. (The Act expired on December 31, 2014.)</p> <p>(Sec. 305) Treasury may&nbsp;use loan guarantees and credit enhancements to remediate lead and asbestos hazards in residential properties. </p> <p>(Sec. 306) The bill amends the United States Housing Act of 1937 to revise the Family-Self-Sufficiency (FSS) program,&nbsp;an employment and savings incentive program for families that reside in public housing or have housing vouchers. Specifically, the bill: </p> <ul> <li>combines existing, separately&nbsp;operated FSS programs into a single program; </li> <li>extends program eligibility to tenants of certain privately owned properties&nbsp;subsidized with project-based rental assistance; </li> <li>revises program requirements related to eligibility,&nbsp;supportive services, and&nbsp;escrow deposits; and </li> <li>otherwise&nbsp;modifies the&nbsp;FSS program</s>. </li></ul> <p>(Sec. 307) The Consumer Financial Protection Bureau is directed to promulgate ability-to-repay regulations regarding property assessed clean energy financing.</p> <p>(Sec. 308) The bill directs the GAO to report on the accuracy and security of consumer reporting agencies&nbsp;and consumer reports. </p> <p>(Sec. 309) A refinanced home loan may not be guaranteed by the Department of Veterans Affairs (VA), unless: (1) a specified minimum time period has passed between the original loan and the refinancing; and (2) the lender complies with provisions related to fee recoupment, mortgage interest rates, and net tangible benefit tests.</p> <p>The Department of Housing and Urban Development (HUD) and the Government National Mortgage Association (Ginnie Mae) must report on the liquidity of the VA Housing Loan Program.</p> <p>The VA must report annually on refinanced home loans to veterans.</p> <p>(Sec. 310) The bill amends the Federal National Mortgage Association Charter Act and the Federal Home Loan Mortgage Corporation Act to allow the Federal National Mortgage Association (Fannie Mae) and the Federal Home Loan Mortgage Corporation (Freddie Mac), when determining whether to purchase a residential mortgage, to consider a borrower's credit score only if certain procedural requirements are met with respect to the validation and approval of credit-scoring models.</p> <p>The Federal Housing Finance Agency must, by regulation, establish standards and criteria for processes used by Fannie Mae and Freddie Mac to validate and approve credit-scoring models in accordance with the bill.</p> <p>(Sec. 311) The GAO is directed to report on foreclosures, homeownership, and mortgage defaults in Puerto Rico before and after Hurricane Maria.</p> <p>(Sec. 312) HUD must report on and provide recommendations for lead-based paint hazard prevention and abatement, with an emphasis on preventing exposure in children.</p> <p>(Sec. 313) The bill amends the Honoring America's Veterans and Caring for Camp Lejeune Families Act of 2012 to make permanent the&nbsp;one-year grace period during which a servicemember is protected from foreclosure after leaving military service. </p> <p>TITLE IV--TAILORING REGULATIONS FOR CERTAIN BANK HOLDING COMPANIES </p> <p>(Sec. 401) The bill amends the Financial Stability Act of 2010, with respect to nonbank financial&nbsp;companies supervised by the FRB and certain bank holding companies,&nbsp;to:</p> <ul> <li>increase the asset threshold at which certain enhanced prudential standards shall apply, from $50 billion to $250 billion, while allowing the FRB discretion in determining whether a financial institution with assets equal or greater than $100 billion must be subject to such standards; </li> <li>increase the asset threshold at which company-run stress tests are required, from $10 billion to $250 billion; and&nbsp;</li> <li>increase the asset threshold for mandatory risk committees, from $10 billion to $50 billion. </li></ul> <p>(Sec. 402) The bill requires the appropriate federal banking agencies to exclude, for purposes of calculating a custodial bank's supplementary leverage ratio, funds of a custodial bank that are deposited with a central bank. (\"Supplementary leverage ratio\" is a capital adequacy measure that refers to the ratio of a banking organization's tier-one capital to its leverage exposure.) The amount of such funds may not exceed the total value of deposits of the custodial bank linked to fiduciary or custodial and safekeeping accounts. </p> <p>(Sec. 403) This bill amends the Federal Deposit Insurance Act to require certain municipal obligations to be treated as level 2B liquid assets if they are investment grade, liquid, and readily marketable. Under current law, corporate debt securities and publicly traded common-equity shares, but not municipal obligations, may be treated as level 2B liquid assets (which are considered to be high-quality assets). </p> <p>TITLE V--ENCOURAGING CAPITAL FORMATION </p> <p>(Sec. 501) The bill amends the Securities Act of 1933 to exempt from state registration securities qualified for national trading by the Securities and Exchange Commission (SEC) and authorized to be listed on a national securities exchange. Currently, securities listed on exchanges specified by statute or SEC rule are exempt. </p> <p>(Sec. 502) The bill directs the SEC to report on the risks and benefits of algorithmic trading in capital markets.</p> <p>(Sec. 504) The bill amends the Investment Company Act of 1940 to exempt from the definition of an \"investment company,\" for purposes of specified limitations applicable to such a company under the Act, a qualifying venture capital fund that has no more than 250 investors. Specifically, the bill applies to a venture capital fund that has less than $10 million in aggregate capital contributions and uncalled committed capital. Under current law, a venture capital fund is considered to be an investment company if it has more than 100 investors.</p> <p>(Sec. 505) The bill requires the SEC to offset future fees and assessments due from a national securities exchange or association that: (1) has previously overpaid such fees and assessments, and (2) informs the SEC of the overpayment within 10 years.</p> <p>(Sec. 506) The bill amends the Investment Company Act of 1940 to apply the Act to investment companies created under the laws of Puerto Rico, the U.S. Virgin Islands, or any other U.S. possession.</p> <p>(Sec. 507) The bill requires the SEC to increase, from $5 million to $10 million, the 12-month sales threshold beyond which an issuer is required to provide investors with additional disclosures related to compensatory benefit plans.</p> <p>(Sec. 508) The bill expands the applicability to issuers of&nbsp;\"Regulation A+\" (which exempts certain smaller offerings from securities registration requirements).</p> <p>(Sec. 509) The bill directs the SEC to revise registration rules to allow a closed-end company to use offering and proxy rules currently available to other issuers of securities, thereby reducing filing requirements and restrictions on communications with investors in certain circumstances. (A closed-end company is a publicly traded investment management company that sells a limited number of shares to investors in an initial public offering.)</p> <p>TITLE VI--PROTECTIONS FOR STUDENT BORROWERS</p> <p>(Sec. 601) The bill amends TILA to prospectively&nbsp;revise&nbsp;provisions relating to cosigners of private student loans. Specifically, the bill: (1) prohibits a creditor from declaring a default or accelerating the debt of a private student loan on the sole basis&nbsp;of the death or bankruptcy of a cosigner to such a loan, and (2) directs loan holders to release cosigners from any obligation upon the death of the student borrower. </p> <p>(Sec. 602) The bill amends the Fair Credit Reporting Act to allow a person to request the removal of a previously reported default regarding a private education loan from a consumer report if: (1) the lender chooses to offer a loan-rehabilitation program that requires a number of consecutive on-time monthly payments demonstrating renewed ability and willingness to repay the loan, and (2) the consumer meets those requirements. A consumer may obtain such rehabilitation benefits only once per loan. The GAO shall report on the implementation of these provisions.</p> <p>(Sec. 603) The bill amends the Financial Literacy and Education Improvement Act to direct the Financial Literacy and Education Commission to establish best practices for teaching financial literacy skills at institutions of higher education.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ174/PLAW-115publ174.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ174/PLAW-115publ174_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ174/PLAW-115publ174.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/2155",
+      "votes": []
+    },
+    {
       "id": "hr3210-115",
       "congress": 115,
       "type": "hr",
@@ -8481,6 +9061,73 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ171/PLAW-115publ171_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ171/PLAW-115publ171.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/447",
+      "votes": []
+    },
+    {
+      "id": "hr4300-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "4300",
+      "title": "Admiral Lloyd R. \"Joe\" Vasey Pacific War Commemorative Display Establishment Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Hanabusa, Colleen",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2017-11-08",
+      "latest_action": {
+        "date": "2018-05-07",
+        "text": "Became Public Law No: 115-170."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Conflicts and wars",
+        "Hawaii",
+        "Military facilities and property",
+        "Military history",
+        "Monuments and memorials",
+        "U.S. history",
+        "Veterans' organizations and recognition"
+      ],
+      "summary_crs": " <p><b>Admiral Lloyd R. &quot;Joe&quot; Vasey Pacific War Commemorative Display Establishment Act </b></p> <p>(Sec. 4) This bill authorizes the Pacific Historic Parks to establish and maintain a commemorative display to honor the members of the U.S. Armed Forces and Allies who served in the Pacific Theater during World War II. Federal funds may not be used to design, procure, prepare, install, or maintain the commemorative display, but the National Park Service may accept and expend contributions of non-Federal funds and resources for such purposes. </p> <p>Federal funds may not be used to design, procure, prepare, install, or maintain the commemorative display, but the National Park Service may accept and expend contributions of nonfederal funds and resources for such purposes.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ170/PLAW-115publ170.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ170/PLAW-115publ170_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ170/PLAW-115publ170.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/4300",
+      "votes": []
+    },
+    {
+      "id": "s167-115",
+      "congress": 115,
+      "type": "s",
+      "number": "167",
+      "title": "National Memorial to Fallen Educators Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Moran, Jerry",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2017-01-17",
+      "latest_action": {
+        "date": "2018-04-30",
+        "text": "Became Public Law No: 115-169."
+      },
+      "outcome": "enacted",
+      "policy_area": "Education",
+      "subjects": [
+        "Crime victims",
+        "Kansas",
+        "Monuments and memorials",
+        "Teaching, teachers, curricula"
+      ],
+      "summary_crs": " <p><strong>National Memorial to Fallen Educators Act</strong></p> <p>(Sec. 2) This bill designates as the \"National Memorial to Fallen Educators\" an existing&nbsp;memorial located at the National Teachers Hall of Fame in Emporia, Kansas. The memorial is not a unit of the National Park System, and its designation shall not require or allow federal funds to be expended for any purpose related to it.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ169/PLAW-115publ169.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ169/PLAW-115publ169_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ169/PLAW-115publ169.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/167",
       "votes": []
     },
     {
@@ -8999,6 +9646,39 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ160/PLAW-115publ160_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ160/PLAW-115publ160.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/3731",
+      "votes": []
+    },
+    {
+      "id": "s2030-115",
+      "congress": 115,
+      "type": "s",
+      "number": "2030",
+      "title": "Ceiling Fan Energy Conservation Harmonization Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Tillis, Thomas",
+        "party": "R",
+        "state": "NC"
+      },
+      "introduced_date": "2017-10-30",
+      "latest_action": {
+        "date": "2018-04-03",
+        "text": "Became Public Law No: 115-161."
+      },
+      "outcome": "enacted",
+      "policy_area": "Energy",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Department of Energy",
+        "Energy efficiency and conservation",
+        "Lighting and heating",
+        "Lighting, heating, cooling"
+      ],
+      "summary_crs": " <p><b>Ceiling Fan Energy Conservation Harmonization Act</b></p> <p>(Sec. 2) This bill makes January 21, 2020, the compliance date for the amended energy conservation standards for ceiling fan light kits, which is also the compliance date for ceiling fan standards. Currently, the compliance date for the ceiling fan light kits is January 7, 2019.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ161/PLAW-115publ161.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ161/PLAW-115publ161_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ161/PLAW-115publ161.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/2030",
       "votes": []
     },
     {
@@ -9988,6 +10668,37 @@
       "votes": []
     },
     {
+      "id": "s1438-115",
+      "congress": 115,
+      "type": "s",
+      "number": "1438",
+      "title": "Gateway Arch National Park Designation Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blunt, Roy",
+        "party": "R",
+        "state": "MO"
+      },
+      "introduced_date": "2017-06-26",
+      "latest_action": {
+        "date": "2018-02-22",
+        "text": "Became Public Law No: 115-128."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Missouri",
+        "Monuments and memorials",
+        "Parks, recreation areas, trails"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the Senate passed version is repeated here.)</p> <p><b>Gateway Arch National Park Designation Act</b></p> <p>(Sec. 2) This bill designates the Jefferson National Expansion Memorial in Missouri as the &quot;Gateway Arch National Park.&quot;</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ128/PLAW-115publ128.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ128/PLAW-115publ128_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ128/PLAW-115publ128.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/1438",
+      "votes": []
+    },
+    {
       "id": "hr582-115",
       "congress": 115,
       "type": "hr",
@@ -10175,6 +10886,37 @@
       "text_url_xml": "https://www.congress.gov/115/bills/sres385/BILLS-115sres385ats.xml",
       "text_url_pdf": "https://www.congress.gov/115/bills/sres385/BILLS-115sres385ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-resolution/385",
+      "votes": []
+    },
+    {
+      "id": "s117-115",
+      "congress": 115,
+      "type": "s",
+      "number": "117",
+      "title": "Alex Diekmann Peak Designation Act of 2017",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daines, Steve",
+        "party": "R",
+        "state": "MT"
+      },
+      "introduced_date": "2017-01-12",
+      "latest_action": {
+        "date": "2018-01-31",
+        "text": "Became Public Law No: 115-122."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Congressional tributes",
+        "Montana",
+        "Wilderness and natural areas, wildlife refuges, wild rivers, habitats"
+      ],
+      "summary_crs": " <p><b>Alex Diekmann Peak Designation Act of 2017</b></p> <p> This bill designates as the &quot;Alex Diekmann Peak&quot; the 9,765-foot peak located 2.2 miles west-northwest of Finger Mountain on the western boundary of the Lee Metcalf Wilderness in Montana. </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ122/PLAW-115publ122.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ122/PLAW-115publ122_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ122/PLAW-115publ122.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-bill/117",
       "votes": []
     },
     {
@@ -10376,6 +11118,41 @@
       "votes": []
     },
     {
+      "id": "hr518-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "518",
+      "title": "EPS Improvement Act of 2017",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. DeGette, Diana",
+        "party": "D",
+        "state": "CO"
+      },
+      "introduced_date": "2017-01-13",
+      "latest_action": {
+        "date": "2018-01-12",
+        "text": "Became Public Law No: 115-115."
+      },
+      "outcome": "enacted",
+      "policy_area": "Energy",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Department of Energy",
+        "Electric power generation and transmission",
+        "Energy efficiency and conservation",
+        "Energy storage, supplies, demand",
+        "Lighting and heating",
+        "Lighting, heating, cooling"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was passed by the House on January 23, 2017. The summary of that version is repeated here.)</p> <p><b>EPS Improvement Act of 2017</b></p> <p>(Sec. 2) This bill amends the Energy Policy and Conservation Act to exclude from energy conservation standards for external power supplies any power supply circuit, driver, or device designed to power light-emitting diodes (commonly known as LEDs) or to power ceiling fans using direct current motors. The Department of Energy may prescribe new energy conservation standards for that equipment no earlier than one year after the date on which a test procedure has been prescribed. </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ115/PLAW-115publ115.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ115/PLAW-115publ115_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ115/PLAW-115publ115.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/518",
+      "votes": []
+    },
+    {
       "id": "hr954-115",
       "congress": 115,
       "type": "hr",
@@ -10511,6 +11288,74 @@
       "votes": []
     },
     {
+      "id": "hr381-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "381",
+      "title": "To designate a mountain in the John Muir Wilderness of the Sierra National Forest as \"Sky Point\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McClintock, Tom",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2017-01-09",
+      "latest_action": {
+        "date": "2018-01-10",
+        "text": "Became Public Law No: 115-109."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "California",
+        "Congressional tributes",
+        "Forests, forestry, trees",
+        "Military personnel and dependents",
+        "Wilderness and natural areas, wildlife refuges, wild rivers, habitats"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the House passed version is repeated here.)</p> <p>(Sec. 2) This bill designates a specified mountain in the John Muir Wilderness of the Sierra National Forest in California as &quot;Sky Point.&quot;</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ109/PLAW-115publ109.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ109/PLAW-115publ109_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ109/PLAW-115publ109.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/381",
+      "votes": []
+    },
+    {
+      "id": "hr699-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "699",
+      "title": "Mount Hood Cooper Spur Land Exchange Clarification Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Walden, Greg",
+        "party": "R",
+        "state": "OR"
+      },
+      "introduced_date": "2017-01-24",
+      "latest_action": {
+        "date": "2018-01-10",
+        "text": "Became Public Law No: 115-110."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Land transfers",
+        "Land use and conservation",
+        "Oregon",
+        "Parks, recreation areas, trails",
+        "Sports and recreation facilities",
+        "Wetlands",
+        "Wilderness and natural areas, wildlife refuges, wild rivers, habitats"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the House passed version is repeated here.)</p> <p><b>Mount Hood Cooper Spur Land Exchange Clarification Act</b></p> <p> (Sec. 2) This bill amends the Omnibus Public Land Management Act of 2009 to revise details of the Cooper Spur-Government Camp land exchange between the United States and Oregon. </p> <p>After the final appraised value of the federal and nonfederal lands is determined and approved by the Department of Agriculture (USDA), USDA shall not be required to reappraise or update that value for up to three years, unless the condition of any of the lands is significantly and substantially altered by fire, windstorm, or other events. </p> <p>The bill revises conveyance conditions regarding reservation of a conservation easement to protect identified wetland, reservation of a nonexclusive trail easement, and equalization of values of the exchange properties. </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ110/PLAW-115publ110.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ110/PLAW-115publ110_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ110/PLAW-115publ110.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/699",
+      "votes": []
+    },
+    {
       "id": "hr1242-115",
       "congress": 115,
       "type": "hr",
@@ -10573,6 +11418,108 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ103/PLAW-115publ103_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ103/PLAW-115publ103.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/1306",
+      "votes": []
+    },
+    {
+      "id": "hr1927-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "1927",
+      "title": "African American Civil Rights Network Act of 2017",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Clay, Wm. Lacy",
+        "party": "D",
+        "state": "MO"
+      },
+      "introduced_date": "2017-04-05",
+      "latest_action": {
+        "date": "2018-01-08",
+        "text": "Became Public Law No: 115-104."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Government buildings, facilities, and property",
+        "Government studies and investigations",
+        "Historic sites and heritage areas",
+        "Parks, recreation areas, trails",
+        "Protest and dissent",
+        "Racial and ethnic relations",
+        "U.S. history"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was passed by the House on July 26, 2017. The summary of that version is repeated here.)</p> <p><b>African American Civil Rights Network Act of 2017</b></p> <p>(Sec. 3) This bill requires the Department of the Interior to establish within the National Park Service (NPS) a U.S. Civil Rights Network that encompasses: (1) all NPS units and programs that relate to the African American civil rights movement from 1939 through 1968; (2) with the property owner's consent, other federal, state, local, and privately owned properties that relate or have a verifiable connection to such movement and that are included in, or eligible for, the National Register of Historic Places; and (3) other governmental and nongovernmental facilities and programs of an educational, research, or interpretive nature that are directly related to such movement. </p> <p>In carrying out the network, Interior must: (1) review civil rights movement studies and reports, such as the Civil Rights Framework Study; (2) produce and disseminate educational materials relating to such movement; (3) provide technical assistance; and (4) adopt an official, uniform symbol or device for the Network and issue regulations for the symbol's use. </p> <p>The network shall expire seven years after enactment of this bill. </p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ104/PLAW-115publ104.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ104/PLAW-115publ104_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ104/PLAW-115publ104.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/1927",
+      "votes": []
+    },
+    {
+      "id": "hr267-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "267",
+      "title": "Martin Luther King, Jr. National Historical Park Act of 2017",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Lewis, John",
+        "party": "D",
+        "state": "GA"
+      },
+      "introduced_date": "2017-01-04",
+      "latest_action": {
+        "date": "2018-01-08",
+        "text": "Became Public Law No: 115-108."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Georgia",
+        "Historic sites and heritage areas",
+        "Parks, recreation areas, trails",
+        "Racial and ethnic relations"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was passed by the House on March 15, 2017. The summary of that version is repeated here.)</p> <p><strong>Martin Luther King, Jr. National Historical Park Act of 2017</strong></p> <p>(Sec. 2) This bill redesignates the Martin Luther King, Junior, National Historic Site in the state of Georgia as the \"Martin Luther King, Jr. National Historical Park.\" The bill replaces the current boundary map with a map of a proposed boundary revision dated June 2015.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ108/PLAW-115publ108.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ108/PLAW-115publ108_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ108/PLAW-115publ108.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/267",
+      "votes": []
+    },
+    {
+      "id": "hr560-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "560",
+      "title": "To amend the Delaware Water Gap National Recreation Area Improvement Act to provide access to certain vehicles serving residents of municipalities adjacent to the Delaware Water Gap National Recreation Area, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Marino, Tom",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2017-01-13",
+      "latest_action": {
+        "date": "2018-01-08",
+        "text": "Became Public Law No: 115-101."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Licensing and registrations",
+        "Motor carriers",
+        "Motor vehicles",
+        "Parks, recreation areas, trails",
+        "Pennsylvania",
+        "Roads and highways",
+        "User charges and fees"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the House passed version is repeated here.)</p> <p>(Sec. 1) This bill amends the Delaware Water Gap National Recreation Area Improvement Act with respect to the prohibition against the use of Highway 209, a federally owned road within the boundaries of the Delaware Water Gap National Recreation Area in Pennsylvania, by certain commercial vehicles except as they serve businesses located within or in the vicinity of the recreation area. </p> <p>The local business use exception to the prohibition is revised to permit, until September 30, 2021, the use of commercial vehicles with four or fewer axles that are: (1) owned and operated by a business located in the recreation area or one or more adjacent municipalities, or (2) necessary to provide services to businesses or persons located in the recreation area or one or more such municipalities. </p> <p>The adjacent municipalities referred to are Delaware Township, Dingman Township, Lehman Township, Matamoras Borough, Middle Smithfield Township, Milford Borough, Milford Township, Smithfield Township, and Westfall Township in Pennsylvania. </p> <p>The Department of the Interior shall establish a fee and permit program for the use of Highway 209 by commercial vehicles, including an annual fee of up to $200 per vehicle. All fees received shall be set aside in a special account and be available for the administration and enforcement of the program, including registering vehicles, issuing permits and vehicle identification stickers, and personnel costs. </p> <p>The following vehicles may use Highway 209 without a fee or permit requirement:</p> <ul> <li>local school buses;</li> <li>fire, ambulance, and other safety and emergency vehicles; and</li> <li>commercial vehicles along specified segments of the highway. </li> </ul>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ101/PLAW-115publ101.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ101/PLAW-115publ101_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ101/PLAW-115publ101.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/560",
       "votes": []
     },
     {
@@ -12931,6 +13878,40 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ54/PLAW-115publ54_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ54/PLAW-115publ54.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-joint-resolution/76",
+      "votes": []
+    },
+    {
+      "id": "hr339-115",
+      "congress": 115,
+      "type": "hr",
+      "number": "339",
+      "title": "Northern Mariana Islands Economic Expansion Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Del. Sablan, Gregorio Kilili Camacho [D-MP-At Large]",
+        "party": "D",
+        "state": "MP"
+      },
+      "introduced_date": "2017-01-05",
+      "latest_action": {
+        "date": "2017-08-22",
+        "text": "Became Public Law No: 115-53."
+      },
+      "outcome": "enacted",
+      "policy_area": "Immigration",
+      "subjects": [
+        "Building construction",
+        "Foreign labor",
+        "Immigration status and procedures",
+        "Licensing and registrations",
+        "Northern Mariana Islands",
+        "User charges and fees"
+      ],
+      "summary_crs": " <p><strong>Northern Mariana Islands Economic Expansion Act</strong></p> <p> (Sec. 2) This bill revises Commonwealth of the Northern Mariana Islands (CNMI) transitional worker (CW-1 visa) provisions.</p> <p>The supplemental vocational education fee charged to a prospective CNMI employer for each transitional worker is increased from $150 to $200. </p> <p>Construction occupation permits may be issued only to extend permits issued before October 1, 2015, except that for FY2017, an additional 350 permits shall be made available with at least 60 reserved for health care practitioners and technical operations and at least 10 reserved for plant and system operators.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ53/PLAW-115publ53.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ53/PLAW-115publ53_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ53/PLAW-115publ53.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/339",
       "votes": []
     },
     {
@@ -15451,6 +16432,42 @@
       "text_url_xml": "https://www.congress.gov/115/plaws/publ16/PLAW-115publ16_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/115/plaws/publ16/PLAW-115publ16.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/115th-congress/house-bill/1362",
+      "votes": []
+    },
+    {
+      "id": "sjres1-115",
+      "congress": 115,
+      "type": "sjres",
+      "number": "1",
+      "title": "A joint resolution approving the location of a memorial to commemorate and honor the members of the Armed Forces who served on active duty in support of Operation Desert Storm or Operation Desert Shield.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Boozman, John",
+        "party": "R",
+        "state": "AR"
+      },
+      "introduced_date": "2017-01-03",
+      "latest_action": {
+        "date": "2017-03-31",
+        "text": "Became Public Law No: 115-18."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Conflicts and wars",
+        "District of Columbia",
+        "Iraq",
+        "Kuwait",
+        "Middle East",
+        "Military operations and strategy",
+        "Military personnel and dependents",
+        "Monuments and memorials"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>This joint resolution approves the location within Washington, DC and the surrounding area of the National Desert Storm and Desert Shield Memorial authorized to be established under the Carl Levin and Howard P. `Buck' McKeon National Defense Authorization Act for Fiscal Year 2015.</p>",
+      "text_url_html": "https://www.congress.gov/115/plaws/publ18/PLAW-115publ18.htm",
+      "text_url_xml": "https://www.congress.gov/115/plaws/publ18/PLAW-115publ18_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/115/plaws/publ18/PLAW-115publ18.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/115th-congress/senate-joint-resolution/1",
       "votes": []
     },
     {
