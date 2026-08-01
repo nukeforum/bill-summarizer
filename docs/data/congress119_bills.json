@@ -1,8 +1,215 @@
 {
-  "generated_at": "2026-07-31T09:24:27Z",
+  "generated_at": "2026-08-01T08:20:12Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "sjres181-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "181",
+      "title": "A joint resolution to direct the removal of United States Armed Forces from hostilities within or against the Islamic Republic of Iran that have not been authorized by Congress.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Gillibrand, Kirsten E.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2026-04-13",
+      "latest_action": {
+        "date": "2026-07-30",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 49 - 50. Record Vote Number: 216. (consideration: CR S4357)"
+      },
+      "outcome": "failed",
+      "policy_area": "International Affairs",
+      "subjects": [],
+      "summary_crs": "<p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending against an attack on the United States or its personnel or facilities in other nations.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/sjres181/BILLS-119sjres181is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres181/BILLS-119sjres181is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres181/BILLS-119sjres181is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/181",
+      "votes": [
+        {
+          "id": "senate-119-2-216",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 216,
+          "date": "2026-07-30",
+          "question": "On the Motion to Discharge",
+          "result": "Motion to Discharge Rejected",
+          "bill_id": "sjres181-119",
+          "totals": {
+            "yea": 49,
+            "nay": 50,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "D": 44,
+              "I": 2,
+              "R": 3
+            },
+            "nay": {
+              "D": 1,
+              "R": 49
+            },
+            "not_voting": {
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-2-216.json"
+        }
+      ]
+    },
+    {
+      "id": "sjres199-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "199",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Department of Health and Human Services relating to \"Restoring Flexibility in the Child Care and Development Fund (CCDF)\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Murray, Patty",
+        "party": "D",
+        "state": "WA"
+      },
+      "introduced_date": "2026-06-24",
+      "latest_action": {
+        "date": "2026-07-30",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 215."
+      },
+      "outcome": "failed",
+      "policy_area": "Families",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Child care and development",
+        "Congressional oversight",
+        "Department of Health and Human Services"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres199/BILLS-119sjres199pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres199/BILLS-119sjres199pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres199/BILLS-119sjres199pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/199",
+      "votes": [
+        {
+          "id": "senate-119-2-215",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 215,
+          "date": "2026-07-30",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Rejected",
+          "bill_id": "sjres199-119",
+          "totals": {
+            "yea": 47,
+            "nay": 52,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "D": 45,
+              "I": 2
+            },
+            "nay": {
+              "R": 52
+            },
+            "not_voting": {
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-2-215.json"
+        }
+      ]
+    },
+    {
+      "id": "sres817-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "817",
+      "title": "An executive resolution authorizing the en bloc consideration in Executive Session of certain nominations on the Executive Calendar.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Thune, John",
+        "party": "R",
+        "state": "SD"
+      },
+      "introduced_date": "2026-07-23",
+      "latest_action": {
+        "date": "2026-07-30",
+        "text": "Resolution agreed to in Senate without amendment by Yea-Nay Vote. 50 - 47. Record Vote Number: 217."
+      },
+      "outcome": "passed_senate",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres817/BILLS-119sres817ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres817/BILLS-119sres817ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres817/BILLS-119sres817ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/817",
+      "votes": [
+        {
+          "id": "senate-119-2-217",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 217,
+          "date": "2026-07-30",
+          "question": "On the Resolution",
+          "result": "Resolution Agreed to",
+          "bill_id": "sres817-119",
+          "totals": {
+            "yea": 50,
+            "nay": 47,
+            "present": 0,
+            "not_voting": 3
+          },
+          "party_split": {
+            "yea": {
+              "R": 50
+            },
+            "nay": {
+              "D": 45,
+              "I": 2
+            },
+            "not_voting": {
+              "R": 3
+            }
+          },
+          "path": "votes/congress119/senate-2-217.json"
+        },
+        {
+          "id": "senate-119-2-214",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 214,
+          "date": "2026-07-29",
+          "question": "On the Cloture Motion",
+          "result": "Cloture Motion Agreed to",
+          "bill_id": "sres817-119",
+          "totals": {
+            "yea": 50,
+            "nay": 45,
+            "present": 0,
+            "not_voting": 5
+          },
+          "party_split": {
+            "yea": {
+              "R": 50
+            },
+            "nay": {
+              "D": 43,
+              "I": 2
+            },
+            "not_voting": {
+              "D": 2,
+              "R": 3
+            }
+          },
+          "path": "votes/congress119/senate-2-214.json"
+        }
+      ]
+    },
     {
       "id": "sres608-119",
       "congress": 119,
@@ -21,7 +228,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4311)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Correctional facilities and imprisonment",
@@ -56,7 +262,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4286)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Civil Rights and Liberties, Minority Issues",
       "subjects": [
         "Commemorative events and holidays",
@@ -88,7 +293,6 @@
         "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 49. Record Vote Number: 207."
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": "<p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending against an attack on the United States or its personnel or facilities in other nations.</p>",
@@ -212,7 +416,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4117)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Congressional tributes",
@@ -244,7 +447,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4117)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Congressional tributes",
@@ -278,7 +480,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4087)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional tributes",
@@ -310,7 +511,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4087)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional tributes",
@@ -340,8 +540,7 @@
         "date": "2026-07-12",
         "text": "Became Public Law No: 119-102."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Agriculture and Food",
       "subjects": [
         "Agricultural prices, subsidies, credit",
@@ -351,7 +550,7 @@
         "Forests, forestry, trees",
         "Natural disasters"
       ],
-      "summary_crs": "<p><strong>Emergency Conservation Program Improvement Act of 2025 </strong></p><p>This bill revises the Emergency Conservation Program (ECP) and the Emergency Forest Restoration Program (EFRP) to expand eligibility for payments to agricultural producers and owners of forest land impacted by natural disasters. The bill also&nbsp;provides additional options to receive an advance on cost-sharing payments before carrying out emergency measures.</p><p>The bill expands advance ECP payments  to include&nbsp;the replacement, repair, or restoration of farmland or conservation structures requiring an immediate response. Producers may receive an advance on cost-sharing payments for 75% of the cost of the replacement and 50% of the cost of the repair or restoration. Current law limits advance payments to 25% of the cost of the repair or replacement of fencing.</p><p>Under EFRP, the bill allows owners of nonindustrial private forest land impacted by a natural disaster to receive an advance on cost-sharing payments for up to 75% of the cost of the emergency measures. Currently, advance payments are not available under the program.</p><p>ECP and EFRP recipients must use the funds within 180 days after the funds are disbursed. This provides additional time to ECP recipients who currently must use the funds within 60 days.</p><p>The bill also expands eligibility for payments under the programs to include emergency measures to address damages caused by (1) a wildfire that is not caused naturally, if the damage is caused by the spread of the wildfire due to natural causes; and (2) a wildfire that is caused by the federal government.</p>",
+      "summary_crs": "<p><strong>Emergency Conservation Program Improvement Act of 2025 </strong></p><p>This act revises the Emergency Conservation Program (ECP) and the Emergency Forest Restoration Program (EFRP) to expand eligibility for payments to agricultural producers and owners of forest land impacted by natural disasters. The act also&nbsp;provides additional options to receive an advance on cost-sharing payments before carrying out emergency measures.</p><p>The act expands advance ECP payments to include&nbsp;the replacement, repair, or restoration of farmland or conservation structures requiring an immediate response. Producers may receive an advance on cost-sharing payments for 75% of the cost of the replacement and 50% of the cost of the repair or restoration. Current law limits advance payments to 25% of the cost of the repair or replacement of fencing.</p><p>Under EFRP, the act allows owners of nonindustrial private forest land impacted by a natural disaster to receive an advance on cost-sharing payments for up to 75% of the cost of the emergency measures. Currently, advance payments are not available under the program.</p><p>ECP and EFRP recipients must use the funds within 180 days after the funds are disbursed. This provides additional time to ECP recipients who currently must use the funds within 60 days.</p><p>The act also expands eligibility for payments under the programs to include emergency measures to address damages caused by (1) a wildfire that is not caused naturally, if the damage is caused by the spread of the wildfire due to natural causes; and (2) a wildfire that is caused by the federal government.</p>",
       "text_url_html": "https://www.congress.gov/119/plaws/publ102/PLAW-119publ102.htm",
       "text_url_xml": "https://www.congress.gov/119/plaws/publ102/PLAW-119publ102_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ102/PLAW-119publ102.pdf",
@@ -407,8 +606,7 @@
         "date": "2026-07-11",
         "text": "Became Public Law No: 119-101."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Housing and Community Development",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -747,8 +945,7 @@
         "date": "2026-06-26",
         "text": "Became Public Law No: 119-100."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Animal protection and human-animal relationships",
@@ -812,7 +1009,6 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 50. Record Vote Number: 192. (CR S3194)"
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Conflicts and wars",
@@ -1609,8 +1805,7 @@
         "date": "2026-06-10",
         "text": "Became Public Law No: 119-98."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Immigration",
       "subjects": [
         "Advanced technology and technological innovations",
@@ -2024,7 +2219,6 @@
         "text": "Became Public Law No: 119-96."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Government Operations and Politics",
       "subjects": [
         "Cancer",
@@ -2121,8 +2315,7 @@
         "date": "2026-06-05",
         "text": "Motion to proceed to consideration of the House message to accompany S. 1318 rejected in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 164."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "failed",
       "policy_area": "Armed Forces and National Security",
       "subjects": [
         "American Battle Monuments Commission",
