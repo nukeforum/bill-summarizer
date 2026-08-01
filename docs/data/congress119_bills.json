@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T08:20:12Z",
+  "generated_at": "2026-08-01T08:40:30Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
@@ -21,6 +21,7 @@
         "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 49 - 50. Record Vote Number: 216. (consideration: CR S4357)"
       },
       "outcome": "failed",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": "<p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending against an attack on the United States or its personnel or facilities in other nations.</p>",
@@ -80,6 +81,7 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 215."
       },
       "outcome": "failed",
+      "status": null,
       "policy_area": "Families",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -142,6 +144,7 @@
         "text": "Resolution agreed to in Senate without amendment by Yea-Nay Vote. 50 - 47. Record Vote Number: 217."
       },
       "outcome": "passed_senate",
+      "status": null,
       "subjects": [],
       "summary_crs": null,
       "text_url_html": "https://www.congress.gov/119/bills/sres817/BILLS-119sres817ats.htm",
@@ -228,6 +231,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4311)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Correctional facilities and imprisonment",
@@ -262,6 +266,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4286)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Civil Rights and Liberties, Minority Issues",
       "subjects": [
         "Commemorative events and holidays",
@@ -293,6 +298,7 @@
         "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 49. Record Vote Number: 207."
       },
       "outcome": "failed",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": "<p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending against an attack on the United States or its personnel or facilities in other nations.</p>",
@@ -416,6 +422,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4117)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Congressional tributes",
@@ -447,6 +454,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4117)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Congressional tributes",
@@ -480,6 +488,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4087)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional tributes",
@@ -511,6 +520,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4087)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional tributes",
@@ -540,7 +550,8 @@
         "date": "2026-07-12",
         "text": "Became Public Law No: 119-102."
       },
-      "outcome": "enacted",
+      "outcome": "passed_house",
+      "status": null,
       "policy_area": "Agriculture and Food",
       "subjects": [
         "Agricultural prices, subsidies, credit",
@@ -606,7 +617,8 @@
         "date": "2026-07-11",
         "text": "Became Public Law No: 119-101."
       },
-      "outcome": "enacted",
+      "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Housing and Community Development",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -945,7 +957,8 @@
         "date": "2026-06-26",
         "text": "Became Public Law No: 119-100."
       },
-      "outcome": "enacted",
+      "outcome": "passed_house",
+      "status": null,
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Animal protection and human-animal relationships",
@@ -1009,6 +1022,7 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 50. Record Vote Number: 192. (CR S3194)"
       },
       "outcome": "failed",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Conflicts and wars",
@@ -1805,7 +1819,8 @@
         "date": "2026-06-10",
         "text": "Became Public Law No: 119-98."
       },
-      "outcome": "enacted",
+      "outcome": "passed_house",
+      "status": null,
       "policy_area": "Immigration",
       "subjects": [
         "Advanced technology and technological innovations",
@@ -2219,6 +2234,7 @@
         "text": "Became Public Law No: 119-96."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Government Operations and Politics",
       "subjects": [
         "Cancer",
@@ -2315,7 +2331,8 @@
         "date": "2026-06-05",
         "text": "Motion to proceed to consideration of the House message to accompany S. 1318 rejected in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 164."
       },
-      "outcome": "failed",
+      "outcome": "passed_house",
+      "status": null,
       "policy_area": "Armed Forces and National Security",
       "subjects": [
         "American Battle Monuments Commission",
