@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-08-03T10:13:22Z",
+  "generated_at": "2026-08-04T09:20:57Z",
   "congress": 119,
-  "vote_count": 1520,
+  "vote_count": 1521,
   "votes": [
+    {
+      "id": "senate-119-2-218",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 218,
+      "date": "2026-08-03",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Agreed to",
+      "bill_id": "hr6500-119",
+      "totals": {
+        "yea": 89,
+        "nay": 4,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 39,
+          "I": 1,
+          "R": 49
+        },
+        "nay": {
+          "D": 2,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-218.json"
+    },
     {
       "id": "senate-119-2-217",
       "chamber": "senate",
