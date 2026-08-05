@@ -1,8 +1,105 @@
 {
-  "generated_at": "2026-08-04T09:20:57Z",
+  "generated_at": "2026-08-05T08:34:49Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "s2666-119",
+      "congress": 119,
+      "type": "s",
+      "number": "2666",
+      "title": "Foreign Robocall Elimination Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Budd, Ted",
+        "party": "R",
+        "state": "NC"
+      },
+      "introduced_date": "2025-08-01",
+      "latest_action": {
+        "date": "2026-08-03",
+        "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S4412-4414; text: CR S4412-4414)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Science, Technology, Communications",
+      "subjects": [
+        "Advisory bodies",
+        "Congressional oversight",
+        "Consumer affairs",
+        "Foreign and international corporations",
+        "Government information and archives",
+        "Government studies and investigations",
+        "Marketing and advertising",
+        "Right of privacy",
+        "Telephone and wireless communication"
+      ],
+      "summary_crs": "<p><strong>Foreign Robocall Elimination Act</strong></p><p>This bill establishes an interagency task force on unlawful&nbsp;robocalls to advise federal agencies and Congress on combating robocalls made from outside of the United States.</p><p>The bill also increases the term applicable to the Federal Communications Commission’s designation of an industry-led consortium to trace the origin of suspected unlawful&nbsp;robocalls. Under current law, the commission must annually seek applications from industry groups to serve as the designated consortium; under the bill, the commission must seek applications once every three years.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s2666/BILLS-119s2666es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s2666/BILLS-119s2666es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s2666/BILLS-119s2666es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2666",
+      "votes": []
+    },
+    {
+      "id": "s289-119",
+      "congress": 119,
+      "type": "s",
+      "number": "289",
+      "title": "Youth Poisoning Protection Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Duckworth, Tammy",
+        "party": "D",
+        "state": "IL"
+      },
+      "introduced_date": "2025-01-29",
+      "latest_action": {
+        "date": "2026-08-03",
+        "text": "Passed Senate without amendment by Voice Vote. (consideration: CR S4411-4412; text: CR S4411-4412)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commerce",
+      "subjects": [
+        "Child safety and welfare",
+        "Consumer affairs",
+        "Hazardous wastes and toxic substances",
+        "Product safety and quality",
+        "Retail and wholesale trades"
+      ],
+      "summary_crs": "<p><strong>Youth Poisoning Protection Act</strong></p><p>This bill makes a consumer product with a concentration of sodium nitrite of 10% or greater a banned hazardous product.</p><p>The restriction does not apply to specified drugs, medical devices, cosmetics, or food products.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s289/BILLS-119s289es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s289/BILLS-119s289es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s289/BILLS-119s289es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/289",
+      "votes": []
+    },
+    {
+      "id": "s3977-119",
+      "congress": 119,
+      "type": "s",
+      "number": "3977",
+      "title": "Bankruptcy Threshold Adjustment Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Grassley, Chuck",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2026-03-03",
+      "latest_action": {
+        "date": "2026-08-03",
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S4412; text: CR S4412)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Finance and Financial Sector",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s3977/BILLS-119s3977es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s3977/BILLS-119s3977es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s3977/BILLS-119s3977es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/3977",
+      "votes": []
+    },
     {
       "id": "sjres181-119",
       "congress": 119,
@@ -21,7 +118,6 @@
         "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 49 - 50. Record Vote Number: 216. (consideration: CR S4357)"
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": "<p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending against an attack on the United States or its personnel or facilities in other nations.</p>",
@@ -81,7 +177,6 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 215."
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "Families",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -144,7 +239,6 @@
         "text": "Resolution agreed to in Senate without amendment by Yea-Nay Vote. 50 - 47. Record Vote Number: 217."
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Congress",
       "subjects": [
         "Diplomacy, foreign officials, Americans abroad",
@@ -238,7 +332,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4311)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Correctional facilities and imprisonment",
@@ -273,7 +366,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4286)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Civil Rights and Liberties, Minority Issues",
       "subjects": [
         "Commemorative events and holidays",
@@ -305,7 +397,6 @@
         "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 49. Record Vote Number: 207."
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": "<p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending against an attack on the United States or its personnel or facilities in other nations.</p>",
@@ -429,7 +520,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4117)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Congressional tributes",
@@ -461,7 +551,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4117)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Congressional tributes",
@@ -557,8 +646,7 @@
         "date": "2026-07-12",
         "text": "Became Public Law No: 119-102."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Agriculture and Food",
       "subjects": [
         "Agricultural prices, subsidies, credit",
@@ -624,8 +712,7 @@
         "date": "2026-07-11",
         "text": "Became Public Law No: 119-101."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Housing and Community Development",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -964,8 +1051,7 @@
         "date": "2026-06-26",
         "text": "Became Public Law No: 119-100."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Animal protection and human-animal relationships",
@@ -1029,7 +1115,6 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 50. Record Vote Number: 192. (CR S3194)"
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Conflicts and wars",
@@ -1625,8 +1710,7 @@
         "date": "2026-06-12",
         "text": "Became Public Law No: 119-99."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Native Americans",
       "subjects": [
         "Alaska",
@@ -1826,8 +1910,7 @@
         "date": "2026-06-10",
         "text": "Became Public Law No: 119-98."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Immigration",
       "subjects": [
         "Advanced technology and technological innovations",
@@ -2241,7 +2324,6 @@
         "text": "Became Public Law No: 119-96."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Government Operations and Politics",
       "subjects": [
         "Cancer",
@@ -2273,8 +2355,7 @@
         "date": "2026-06-09",
         "text": "Became Public Law No: 119-97."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Armed Forces and National Security",
       "subjects": [
         "Building construction",
