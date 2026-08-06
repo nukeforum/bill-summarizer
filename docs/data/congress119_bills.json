@@ -1,8 +1,81 @@
 {
-  "generated_at": "2026-08-05T09:19:19Z",
+  "generated_at": "2026-08-06T08:34:40Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "s4472-119",
+      "congress": 119,
+      "type": "s",
+      "number": "4472",
+      "title": "Accelerating Access to Critical Therapies for ALS Reauthorization Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Murkowski, Lisa",
+        "party": "R",
+        "state": "AK"
+      },
+      "introduced_date": "2026-04-30",
+      "latest_action": {
+        "date": "2026-08-04",
+        "text": "Passed Senate with an amendment by Voice Vote. (consideration: CR S4425-4426; text: CR S4425-4426)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Department of Health and Human Services",
+        "Drug therapy",
+        "Food and Drug Administration (FDA)",
+        "Government information and archives",
+        "Health programs administration and funding",
+        "Internet, web applications, social media",
+        "Medical research",
+        "National Institutes of Health (NIH)",
+        "Neurological disorders",
+        "Public-private cooperation",
+        "Research administration and funding"
+      ],
+      "summary_crs": "<p><strong>Accelerating Access to Critical Therapies for ALS Reauthorization Act of 2026</strong></p><p>This bill reauthorizes through FY2031 and revises programs that support research and development of drugs and other therapies to address&nbsp;amyotrophic lateral sclerosis (also known as ALS or Lou Gehrig's disease) and other neurodegenerative diseases.</p><p>The bill reauthorizes</p><ul><li>grants from the National Institutes of Health (NIH) for scientific research on investigational drugs to prevent or treat ALS for individuals not otherwise eligible for clinical trials,</li><li>grants from the Food and Drug Administration (FDA) for research and development of therapies to prevent and treat ALS and other neurodegenerative diseases, and</li><li>a Public-Private Partnership including the FDA and NIH that supports development and regulatory review of treatments for neurodegenerative diseases.&nbsp;</li></ul><p>Also, the bill revises the NIH grants to require (1) the NIH, in considering grant renewal, to assess available information on the safety and efficacy of the investigational drugs; (2) grantees to promptly report available safety data from ongoing clinical trials; and (3) the NIH to determine the timeframe for enrollment in clinical trials for the investigational drugs.</p><p>Additionally, every five years, the FDA must publish a plan describing actions it will take over a five-year period to foster development of safe and effective drugs, and facilitate access to&nbsp;investigational drugs, for ALS and other rare neurodegenerative diseases. Each plan must include the FDA's previous actions and recommendations for improvements.</p><p>Finally, the Government Accountability Office and the Department of Health and Human Services must report on the impacts of these grants.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s4472/BILLS-119s4472es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s4472/BILLS-119s4472es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s4472/BILLS-119s4472es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/4472",
+      "votes": []
+    },
+    {
+      "id": "s494-119",
+      "congress": 119,
+      "type": "s",
+      "number": "494",
+      "title": "National Plan for Epilepsy Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Schmitt, Eric",
+        "party": "R",
+        "state": "MO"
+      },
+      "introduced_date": "2025-02-10",
+      "latest_action": {
+        "date": "2026-08-04",
+        "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S4426-4427; text: CR S4426-4427)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Advisory bodies",
+        "Congressional oversight",
+        "Data collection, sharing, protection",
+        "Health promotion and preventive care",
+        "Medical research",
+        "Neurological disorders"
+      ],
+      "summary_crs": "<p><strong>National Plan for Epilepsy Act</strong></p><p>This bill requires the Department of Health and Human Services (HHS) to establish a national plan, form an advisory council, and take other actions to address epilepsy. The requirements sunset on December 31, 2035.</p><p>Specifically, the bill requires&nbsp;HHS to carry out a National Plan for Epilepsy to prevent, diagnose, treat, and cure epilepsy. In carrying out the plan,&nbsp;HHS must implement activities such as coordinating research and services across all federal agencies and soliciting public comments.</p><p>Also,&nbsp;HHS must establish an Advisory Council on Epilepsy Research, Care, and Services. The advisory council must report to&nbsp;HHS and Congress every two years with an evaluation of federally funded efforts.</p><p>Additionally,&nbsp;HHS must annually report to Congress with recommended actions based on its assessments of the nation’s progress on epilepsy. </p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s494/BILLS-119s494es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s494/BILLS-119s494es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s494/BILLS-119s494es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/494",
+      "votes": []
+    },
     {
       "id": "s2666-119",
       "congress": 119,
@@ -21,7 +94,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S4412-4414; text: CR S4412-4414)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Advisory bodies",
@@ -59,7 +131,6 @@
         "text": "Passed Senate without amendment by Voice Vote. (consideration: CR S4411-4412; text: CR S4411-4412)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Commerce",
       "subjects": [
         "Child safety and welfare",
@@ -93,7 +164,6 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S4412; text: CR S4412)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [],
       "summary_crs": null,
@@ -121,7 +191,6 @@
         "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 49 - 50. Record Vote Number: 216. (consideration: CR S4357)"
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": "<p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending against an attack on the United States or its personnel or facilities in other nations.</p>",
@@ -181,7 +250,6 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 215."
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "Families",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -244,7 +312,6 @@
         "text": "Resolution agreed to in Senate without amendment by Yea-Nay Vote. 50 - 47. Record Vote Number: 217."
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Congress",
       "subjects": [
         "Diplomacy, foreign officials, Americans abroad",
@@ -338,7 +405,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4311)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Correctional facilities and imprisonment",
@@ -373,7 +439,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4286)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Civil Rights and Liberties, Minority Issues",
       "subjects": [
         "Commemorative events and holidays",
@@ -405,7 +470,6 @@
         "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 49. Record Vote Number: 207."
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": "<p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending against an attack on the United States or its personnel or facilities in other nations.</p>",
@@ -529,7 +593,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4117)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Congressional tributes",
@@ -561,7 +624,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4117)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Congressional tributes",
@@ -657,8 +719,7 @@
         "date": "2026-07-12",
         "text": "Became Public Law No: 119-102."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Agriculture and Food",
       "subjects": [
         "Agricultural prices, subsidies, credit",
@@ -724,8 +785,7 @@
         "date": "2026-07-11",
         "text": "Became Public Law No: 119-101."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Housing and Community Development",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -1064,8 +1124,7 @@
         "date": "2026-06-26",
         "text": "Became Public Law No: 119-100."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Animal protection and human-animal relationships",
@@ -1129,7 +1188,6 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 50. Record Vote Number: 192. (CR S3194)"
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Conflicts and wars",
@@ -1633,7 +1691,6 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 48. Record Vote Number: 173. (consideration: CR S2816)"
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "Immigration",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -1725,8 +1782,7 @@
         "date": "2026-06-12",
         "text": "Became Public Law No: 119-99."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Native Americans",
       "subjects": [
         "Alaska",
@@ -1926,8 +1982,7 @@
         "date": "2026-06-10",
         "text": "Became Public Law No: 119-98."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Immigration",
       "subjects": [
         "Advanced technology and technological innovations",
@@ -2341,7 +2396,6 @@
         "text": "Became Public Law No: 119-96."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Government Operations and Politics",
       "subjects": [
         "Cancer",
@@ -2373,8 +2427,7 @@
         "date": "2026-06-09",
         "text": "Became Public Law No: 119-97."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Armed Forces and National Security",
       "subjects": [
         "Building construction",
