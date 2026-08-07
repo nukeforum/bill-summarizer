@@ -1,8 +1,104 @@
 {
-  "generated_at": "2026-08-06T09:22:05Z",
+  "generated_at": "2026-08-07T07:14:06Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "s850-119",
+      "congress": 119,
+      "type": "s",
+      "number": "850",
+      "title": "Northern Border Security Enhancement and Review Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hassan, Margaret Wood",
+        "party": "D",
+        "state": "NH"
+      },
+      "introduced_date": "2025-03-05",
+      "latest_action": {
+        "date": "2026-08-05",
+        "text": "Passed Senate with amendments by Unanimous Consent. (text: CR S4481)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Immigration",
+      "subjects": [
+        "Border security and unlawful immigration",
+        "Canada",
+        "Congressional oversight",
+        "Government studies and investigations",
+        "North America"
+      ],
+      "summary_crs": "<p><strong>Northern Border Security Enhancement and Review Act</strong></p><p>This bill requires the Department of Homeland Security (DHS) to regularly perform a threat analysis of the northern U.S. border.</p><p>The analysis must be performed every three years and include terroristic and criminal threats, recent changes in apprehensions, and improvements needed to prevent terrorism and reduce criminal activity.</p><p>DHS must update its northern border strategy not later than September 2, 2026, and every five years thereafter, incorporating the results from the latest threat analysis. DHS must also provide a classified briefing to the appropriate congressional committees.</p><p>U.S. Customs and Border Protection’s Air and Marine Operations (AMO) must develop performance metrics to assess the AMO’s effectiveness at securing the northern border between ports of entry in air and maritime environments.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s850/BILLS-119s850es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s850/BILLS-119s850es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s850/BILLS-119s850es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/850",
+      "votes": []
+    },
+    {
+      "id": "sjres187-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "187",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Environmental Protection Agency relating to \"Modification to the Start of the Submission Period for Perfluoroalkyl and Polyfluoroalkyl Substances (PFAS) Reporting and Recordkeeping Under TSCA 8(a)(7)\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Whitehouse, Sheldon",
+        "party": "D",
+        "state": "RI"
+      },
+      "introduced_date": "2026-04-27",
+      "latest_action": {
+        "date": "2026-08-05",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 50. Record Vote Number: 222."
+      },
+      "outcome": "failed",
+      "policy_area": "Environmental Protection",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Environmental Protection Agency (EPA)",
+        "Hazardous wastes and toxic substances",
+        "Manufacturing"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres187/BILLS-119sjres187pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres187/BILLS-119sjres187pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres187/BILLS-119sjres187pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/187",
+      "votes": [
+        {
+          "id": "senate-119-2-222",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 222,
+          "date": "2026-08-05",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Rejected",
+          "bill_id": "sjres187-119",
+          "totals": {
+            "yea": 48,
+            "nay": 50,
+            "present": 0,
+            "not_voting": 2
+          },
+          "party_split": {
+            "yea": {
+              "D": 45,
+              "I": 2,
+              "R": 1
+            },
+            "nay": {
+              "R": 50
+            },
+            "not_voting": {
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-2-222.json"
+        }
+      ]
+    },
     {
       "id": "s4472-119",
       "congress": 119,
@@ -21,7 +117,6 @@
         "text": "Passed Senate with an amendment by Voice Vote. (consideration: CR S4425-4426; text: CR S4425-4426)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Department of Health and Human Services",
@@ -61,7 +156,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S4426-4427; text: CR S4426-4427)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Advisory bodies",
@@ -96,7 +190,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S4412-4414; text: CR S4412-4414)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Advisory bodies",
@@ -134,7 +227,6 @@
         "text": "Passed Senate without amendment by Voice Vote. (consideration: CR S4411-4412; text: CR S4411-4412)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Commerce",
       "subjects": [
         "Child safety and welfare",
@@ -168,9 +260,12 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S4412; text: CR S4412)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Finance and Financial Sector",
-      "subjects": [],
+      "subjects": [
+        "Bankruptcy",
+        "Debt collection",
+        "Small business"
+      ],
       "summary_crs": null,
       "text_url_html": "https://www.congress.gov/119/bills/s3977/BILLS-119s3977es.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/s3977/BILLS-119s3977es.xml",
@@ -196,7 +291,6 @@
         "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 49 - 50. Record Vote Number: 216. (consideration: CR S4357)"
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": "<p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending against an attack on the United States or its personnel or facilities in other nations.</p>",
@@ -256,7 +350,6 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 215."
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "Families",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -319,7 +412,6 @@
         "text": "Resolution agreed to in Senate without amendment by Yea-Nay Vote. 50 - 47. Record Vote Number: 217."
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Congress",
       "subjects": [
         "Diplomacy, foreign officials, Americans abroad",
@@ -413,7 +505,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4311)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Correctional facilities and imprisonment",
@@ -448,7 +539,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4286)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Civil Rights and Liberties, Minority Issues",
       "subjects": [
         "Commemorative events and holidays",
@@ -480,7 +570,6 @@
         "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 49. Record Vote Number: 207."
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": "<p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending against an attack on the United States or its personnel or facilities in other nations.</p>",
@@ -604,7 +693,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4117)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Congressional tributes",
@@ -636,7 +724,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4117)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Congressional tributes",
@@ -732,8 +819,7 @@
         "date": "2026-07-12",
         "text": "Became Public Law No: 119-102."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Agriculture and Food",
       "subjects": [
         "Agricultural prices, subsidies, credit",
@@ -799,8 +885,7 @@
         "date": "2026-07-11",
         "text": "Became Public Law No: 119-101."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Housing and Community Development",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -823,7 +908,7 @@
         "Performance measurement",
         "Public housing"
       ],
-      "summary_crs": "<p><strong>Housing for the 21st Century Act<br/><br/></strong>This bill revises federal housing programs, including by expanding available financing for affordable housing and providing grants for planning and community development activities.<br/><br/>For example, the bill increases the statutory maximum loan limits for mortgage insurance programs administered by the&nbsp;Federal Housing Administration&nbsp;for multifamily homes and requires the use of a more specific inflation index for such loans.<br/><br/>The bill also increases the maximum&nbsp;eligible income for the Department of Housing and Urban Development's (HUD's) HOME Investment Partnerships Program (grants to states and localities to support housing for low-income households) and&nbsp;establishes a grant program to assist regional, state, and local entities with&nbsp;strategies to support affordable housing.<br/><br/>In addition, the bill</p><ul><li>exempts certain housing-related activities from the environmental review process, including certain construction, improvement, or rehabilitation of residential buildings;</li><li>excludes veterans' disability benefits from being considered as income for purposes of determining eligibility for the Veterans Affairs Supportive Housing (VASH) program;</li><li>establishes a pilot program to provide grants to public housing agencies (PHAs) and other owners of federally assisted housing to  test the efficacy of temperature sensors to support compliance with temperature requirements;</li><li>eliminates the requirement that manufactured homes must be constructed with a permanent chassis; and</li><li>authorizes HUD to conduct performance reviews of organizations that&nbsp;provide&nbsp;housing counseling services.</li></ul><p>The bill also expands oversight of HUD and PHAs, such as by requiring PHAs to post information about contracts on their websites.</p><p>For more information about this bill, see <a href=\"https://www.congress.gov/crs-product/R48849#_Toc221206484\">CRS Report&nbsp;</a><a href=\"https://www.congress.gov/crs-product/R48849#_Toc221206484\">R48849</a>.&nbsp;</p>",
+      "summary_crs": "<p><strong>21st Century ROAD to Housing Act</strong></p><p>This act establishes and modifies various federal housing programs.<br/><br/>TITLE I--OPPORTUNITIES FOR HOUSING<br/><br/>(Sec. 101) This section requires the Department of Housing and Urban Development (HUD) to review the performance of organizations that receive grants to provide housing counseling services. Such review may take into account the performance of individual counselors.<br/><br/>HUD may terminate assistance for such organizations that are not in compliance with the program's requirements.<br/><br/>(Sec. 102) This section requires HUD to establish best practices and provide technical assistance to state and local entities to support permitting for point-access block buildings (i.e., apartments with a single staircase to access the dwelling units and that are no more than six stories high).</p><p>It also allows HUD to award competitive grants to state and local entities to assess the feasibility, safety, and cost-effectiveness of such buildings. This authority expires after seven years.<br/><br/>(Sec. 103) This section exempts from environmental review specified rural housing projects located on an infill site (i.e., a site served by existing infrastructure, including water lines, sewer lines, and roads).<br/><br/>(Sec. 104) This section requires Community Development Block Grant (CDBG) grantees to maintain a publicly accessible, searchable database identifying undeveloped land owned by the grantee.<br/><br/>(Sec. 105) This section authorizes the Federal Housing Administration (FHA) to establish a four-year pilot program to increase the number of mortgages originated with a principal balance of $100,000 or less.<br/><br/>(Sec. 106) This section requires HUD to establish a three-year pilot program to award grants to public housing agencies (PHAs) and owners of federally assisted rental housing to install temperature sensors in residential dwelling units.<br/><br/>(Sec. 107) This section requires HUD to publish guidelines and best practices for state and local zoning frameworks that support production of adequate housing to meet the needs of communities and provide housing opportunities for individuals of all income levels.</p><p>TITLE II--BUILDING MORE IN AMERICA<br/><br/>(Sec. 201) This section allows HUD to give additional weight to competitive housing grant applications that include proposals for projects located in, or substantially benefiting, communities designated as Qualified Opportunity Zones (i.e., designated low-income areas for which economic investments may receive certain tax benefits).<br/><br/>(Sec. 202) This section authorizes a pilot program through which HUD provides grants to state and local governments&nbsp;to support the ability of certain landlords and low- to moderate-income homeowners to make necessary modifications, repairs, or updates to their property.<br/><br/>State and local governments must use the funds they receive under the program to award grants to homeowners and loans to landlords to make changes that address issues such as accessibility, habitability, and energy efficiency.</p><p>The program ends on&nbsp;October 1, 2031.<br/><br/>(Sec. 203) This section increases the cap on investments that state member banks of the Federal Reserve System and national banks supervised by the Office of the Comptroller of the Currency may make to promote the public welfare, which include projects that provide housing, services, or jobs to low- and moderate-income communities or families.<br/><br/>The section increases the aggregate amount of allowable investments by such banks from 15% to 20% of the bank's capital stock and unimpaired surplus.<br/><br/>(Sec. 204) This section authorizes the new construction of affordable housing as an allowable use of funds under the CDBG program.<br/><br/>(Sec. 205) This section allows HUD to designate housing assistance as funds for a special project for the purpose of environmental review under the National Environmental Policy Act of 1969 (NEPA). Such designation allows states, local governments, or tribal entities to assume responsibility for the project's&nbsp;environmental review obligations.<br/><br/>(Sec. 206) This section requires HUD to reclassify certain housing activities as exempt or excluded from specified environmental review requirements under NEPA.</p><p>These activities include tenant-based rental assistance, supportive services, rehabilitation of public facilities, and infill projects to develop residential housing units.<br/><br/>(Sec. 207) This section establishes a five-year competitive grant program to assist local jurisdictions or regional planning agencies in developing housing plans to increase affordable housing and reduce barriers to housing development.&nbsp;<br/><br/>(Sec. 208) This section establishes a seven-year competitive grant program to assist metropolitan cities, urban counties, local governments, or tribes that have demonstrated improved housing supply growth.</p><p>Grants may be used to expand the housing supply available to households at specified income levels.<br/><br/>(Sec. 209) This section authorizes competitive grants for local governments, municipal membership organizations, and tribes to select prereviewed designs of mixed-income housing for use in the grantee’s jurisdiction.<br/><br/><em>Prereviewed designs</em>, also known as pattern books, are construction plans that are assessed and approved by localities for compliance with local building and permitting standards to expedite approval for housing construction.<br/><br/>Grants may not be used for construction, alteration, or repair work.<br/><br/>(Sec. 210) This section authorizes a pilot program from FY2027-FY2031 under the HOME Investment Partnerships Program to award competitive grants to states and localities to convert vacant and abandoned buildings into housing that serves low- and moderate-income households.<br/><br/>(Sec. 211) This section increases the statutory maximum loan limits for mortgage insurance programs administered by the FHA for multifamily homes and requires the use of a more specific inflation index for such loans.<br/><br/>(Sec. 212) This section makes the Rental Assistance Demonstration (RAD) program permanent and increases from 455,000 to 555,000 the number of housing units that may be converted to Housing Choice Voucher&nbsp;(Section 8) properties under the program.<br/><br/>(Sec. 213) This section adjusts the allocation of CDBG funds to certain jurisdictions based on the annual percentage change in the number of available housing units in the jurisdiction.<br/><br/>For example, jurisdictions with annual growth above 4% shall receive additional funding, while jurisdictions with a growth rate below the median housing growth rate compared to other jurisdictions shall receive 10% less funding.</p><p>TITLE III--MANUFACTURED HOUSING FOR AMERICA<br/><br/>(Sec. 301) This section eliminates the requirement that manufactured homes must be constructed with a permanent chassis.<br/><br/>Additionally, HUD must issue revised standards for such homes, including energy efficiency standards.<br/><br/>(Sec. 302) This section requires the FHA to review its construction financing programs to identify barriers to the use of modular home methods.&nbsp;<br/><br/><em>Modular homes</em> are constructed in a factory in one or more modules, transported to the home building site, installed on a foundation, and completed.<br/><br/>(Sec. 303) This section increases the maximum FHA-insured loan amount for (1) improvements to single-family structures, and (2) purchasing manufactured homes. The section also authorizes the use of property improvement loans for construction of accessory dwelling units.<br/><br/>HUD must study and report on the cost effectiveness of constructing manufactured and modular homes.<br/><br/>(Sec. 304) This section reauthorizes the Preservation and Reinvestment Initiative for Community Enhancement (PRICE) program for seven years. The program provides competitive grants to develop manufactured-housing communities.</p><p>TITLE IV--ACCESSING THE AMERICAN DREAM<br/><br/>(Sec. 401) This section requires the Consumer Financial Protection Bureau (CFPB) to report on loan originator compensation practices throughout the residential mortgage market, including the effect of such practices on the availability of small-dollar mortgages (mortgages with an original principal of not more than $100,000).<br/><br/>(Sec. 402) This section requires the CFPB,&nbsp;in consultation with the Federal Housing Finance Agency (FHFA),&nbsp;to study the impact of current regulations that limit the total points and fees that lenders may charge on small-dollar mortgages.<br/><br/>(Sec. 403) This section revises the eligibility criteria for real estate appraisers who are authorized to perform appraisals for federally related mortgage loans, including by allowing federal employees who are state certified or licensed as an appraiser to perform federally related appraisals in states and territories other than the state or territory in which they are certified or licensed.</p><p>The section also expands the national registry of state certified and licensed appraisers to include credentialed trainees. It also allows state certified appraisers to use the assistance of a credentialed trainee or an unlicensed trainee.</p><p>The section also requires the Appraisal Subcommittee of the Federal Financial Institutions Examination Council to make grants to support appraisal workforce development. The appraisal subcommittee generally oversees the real estate appraisal regulatory framework for federally related transactions.<br/><br/>(Sec. 404) This section authorizes a 10-year pilot program to expand the Family Self-Sufficiency (FSS) escrow account program to provide up to 5,000 families receiving public housing assistance with interest-bearing escrow accounts. The&nbsp;FSS program is administered by PHAs&nbsp;or multifamily property owners that receive assistance to provide low-income housing.</p><p>Under the pilot program, FSS administrators must fund such additional escrow accounts based on any increase in the amount of rent paid by a participating family due to increases in the family's earned income while receiving housing assistance. A family eventually may withdraw funds from the escrow account if certain conditions are met (e.g., the family no longer receives housing assistance or&nbsp;Temporary Assistance for Needy Families).<br/><br/>(Sec. 405) This section allows housing units financed through the Low-Income Housing Tax Credit, HOME Investment Partnerships Program, and Rural Housing Service to satisfy the inspection requirements of the Section 8&nbsp;program if they have passed an inspection within the past year.<br/><br/>The section also allows new Section 8 landlords to request an inspection before entering a lease agreement with a tenant under the program, subject to specified conditions.</p><p>TITLE V--PROGRAM REFORM<br/><br/>(Sec. 501) This section modifies and reauthorizes the HOME Investment Partnerships program. The program provides grants to state and local governments to create affordable housing for low-income households.<br/><br/>The section expands eligibility for the program to households with an income of not more than 100% of the median family income for the area. The current income threshold is 80% of the median income for the area.<br/><br/>Further, participating jurisdictions may, subject to certain conditions, use funds under the program to improve infrastructure, including the installation or repair of water and sewer lines, sidewalks, roads, and utility connections.<br/><br/>The section also exempts certain projects, such as infill development or acquisition, from specified environmental review requirements.<br/><br/>(Sec. 502) This section modifies programs administered by the Rural Housing Service (RHS).<br/><br/>This includes requiring the&nbsp;RHS to maintain any rental assistance payments that are attached to a multifamily property during the foreclosure process or while managing and disposing of a multifamily property&nbsp;that is owned&nbsp;by HUD.<br/><br/>The section also authorizes the RHS to renew a rental assistance contract with the owner of a multifamily property for a term of 20 years after the&nbsp;owner's mortgage term ends.<br/><br/>(Sec. 503) This section allows states and localities receiving assistance under the HUD Emergency Solutions Grant program to request a waiver to exceed the 60% spending cap on emergency shelter activities for FY2027-FY2030.<br/><br/>(Sec. 504) This section authorizes for three years HUD's Community Development Block Grant Disaster Recovery program. The program provides assistance to state and local grantees to rebuild disaster-impacted areas and support long-term recovery efforts.<br/><br/>The section also requires grantees under the program to prioritize assistance for individuals with extremely low-, low-, and moderate-incomes and other vulnerable populations.<br/><br/>Further, the section establishes the Office of Disaster Management and Resiliency to oversee and coordinate HUD's disaster preparedness and response responsibilities.<br/><br/>(Sec. 505) This section establishes a new cohort of 25 PHAs that are designated by HUD as high performing to participate in the Moving to Work demonstration program.&nbsp;<br/><br/>The Moving to Work demonstration program exempts PHAs from certain public housing and voucher rules and provides flexibility with respect to the use of federal funds.</p><p>TITLE VI--VETERANS AND HOUSING<br/><br/>(Sec. 601) This section requires mortgage lenders to include on the Uniform Residential Loan Application (i.e., Fannie Mae Form 1003 or Freddie Mac Form 65) a notification that applicants with military service may qualify for a Department of Veterans Affairs (VA) Home Loan.<br/><br/>Not later than 18 months after the enactment of this act, the Government Accountability Office (GAO) must study and report on whether at least 80% of lenders using the loan application form have met this requirement.<br/><br/>(Sec. 602) This section provides statutory authority for excluding disability benefits from a veteran's income when determining eligibility for the HUD Veterans Affairs Supportive Housing (HUD-VASH) program.<br/><br/>(Sec. 603) This section requires lenders offering FHA&nbsp;loans to include additional notices to prospective borrowers. Specifically, the notices must provide a comparison of the loans available through the VA for which the borrower would qualify.&nbsp;<br/><br/>Such notices include the insurance premiums and other costs and fees that would be due over the life of such other mortgages products.</p><p>TITLE VII--OVERSIGHT AND ACCOUNTABILITY<br/><br/>(Sec. 701) This section requires the Secretary of HUD to testify annually before Congress about HUD's operations, oversight activities, and program performance.<br/><br/>(Sec. 702) This section requires HUD to report monthly to Congress on the capital ratio of the Mutual Mortgage Insurance Fund (MMI Fund) and to notify Congress if that ratio falls below the 2% ratio required under current law. (The capital ratio is the economic value of the MMI Fund divided by the total dollar amount of mortgages insured under the fund.&nbsp;Lender claims on FHA-insured home mortgages are paid out of the MMI Fund, which is funded through premiums paid by borrowers.)<br/><br/>(Sec. 703) This section requires the United States Interagency Council on Homelessness to provide annual updates about the council's National Strategic Plan to End Homelessness and, if requested, testify annually before Congress.<br/><br/>(Sec. 704) This section requires the Department of Agriculture (USDA), VA, the FHA, and the FHFA to implement requirements that creditors of federally backed mortgages must have a review and resolution procedure for a consumer-initiated reconsideration of value (or subsequent appraisal) in connection with a credit transaction secured by the consumer's principal dwelling.<br/><br/>Additionally, the GAO must study the feasibility of creating a publicly available appraisal database for specified agencies.</p><p>TITLE VIII--ACCOUNTABILITY, COORDINATION, STUDIES, AND REPORTING<br/><br/>(Sec. 801) This section requires HUD, USDA, and the VA to enter into an interagency agreement to share relevant housing-related research and market data to facilitate evidence-based policymaking.<br/><br/>(Sec. 802) This section requires HUD and USDA to evaluate the (1) environmental review process for housing projects funded by the agencies and (2) feasibility of a joint physical inspection process for such projects.&nbsp;<br/><br/>(Sec. 803) This section requires HUD to study the impact of the work requirements implemented by PHAs participating in the Moving to Work demonstration.<br/><br/>(Sec. 804) This section requires the GAO to study various housing issues, including&nbsp;</p><ul><li>obstacles to affordable housing facing middle-income households,</li><li>barriers to supportive housing for older adults and individuals with disabilities,</li><li>the number of residential housing units (including public housing units) that are located less than one mile from a&nbsp;Superfund site (a site contaminated with hazardous substances), and</li><li>how to reduce the number of residential heirs properties (property inherited without a will).</li></ul><p>(Sec. 805) This section expands HUD oversight over&nbsp;PHAs for which an administrative or judicial receiver or federal monitor has been appointed. The section requires each monitor or receiver to provide an annual assessment to Congress that includes a description of their management and oversight activities.</p><p>TITLE IX--STRENGTHENING COMMUNITY BANKS' ROLE IN HOUSING<br/><br/>(Sec. 901) This section changes the treatment of certain types of deposits so they are no longer classified as brokered deposits. Brokered deposits are funds placed by a broker on behalf of a client in a depository institution to maximize interest rates and for depository insurance purposes. Currently, institutions that accept brokered deposits may be subject to additional oversight.</p><p>In particular, under the section, custodial deposits at insured depository institutions with less than $10 billion in total assets shall not be treated as brokered deposits if the deposits do not exceed 20% of the institution’s liabilities. The institution must be well-capitalized and have a specified minimum soundness rating, or be in possession of a waiver from the Federal Deposit Insurance Corporation.</p><p>The section also generally applies existing interest rate limits applicable to institutions that are not well-capitalized to similar institutions that accept custodial deposits.</p><p>(Sec. 902) This section increases the amount insured depository institutions may accept as reciprocal deposits. (Reciprocal deposits are used by institutions to increase the availability of deposit insurance by splitting large deposits using a reciprocal network of institutions.) The section creates a tiered system so that the allowable amount is based on the institution's total liabilities.</p><p>Additionally, the section changes certain qualifications insured depository institutions may be required to have to accept reciprocal deposits. Under current law, institutions may qualify by having a composite rating of outstanding or good, among other requirements. The section allows institutions with a 1, 2, or 3 rating under the CAMELS scale to qualify. (The Uniform Financial Institutions Rating System uses the characteristics of capital adequacy, asset quality, management, earnings, liquidity, and sensitivity to market risk (i.e., CAMELS ratings) to rate the health of financial institutions, with a 1 indicating the highest rating and least degree of supervisory concern and a 5 indicating the lowest rating and highest degree of supervisory concern.)</p><p>(Sec. 903)  This section raises certain asset thresholds so as to allow additional small banks to qualify for a longer examination cycle.<br/><br/>(Sec. 904) This section reduces the required frequency of meetings held by the board of directors of certain credit unions. Under the section, new credit unions and credit unions with a low soundness rating must meet monthly, as required under current law. All other credit unions must hold at least six meetings annually, with at least one meeting held during each fiscal quarter.<br/><br/>(Sec. 905) This section requires banking regulators to submit a report to Congress in the event of the failure of an insured depository institution that leads to a systemic risk determination by the Department of the Treasury.</p><p>Regulators must report supervisory information relating to the institution, any mismanagement by the executives and the board, any shortcomings by the regulator, and recommendations to improve the safety and soundness of similarly situated institutions. This report must be made no later than 90 days after such a determination and again 210 days afterwards.</p><p>The GAO must report on additional factors in its report regarding such a determination. Specifically, the GAO must report on any mismanagement by the executives and board of the institution, a review of the institution's compensation practices, supervisory or regulatory shortcomings, actions taken by regulators, and other relevant information. The section also requires this report to be made no later than 60 days after such a determination and again 180 days afterwards.</p><p>(Sec. 906) This section establishes the Financial Agent Mentor-Protégé Program within Treasury. The program provides participating minority and rural depository institutions and small financial institutions with mentorship from large financial institutions or from financial agents designated by Treasury. This mentorship prepares protégé institutions to improve service capacity or to perform as financial agents for the federal government.<br/><br/>(Sec. 907) This section requires federal financial regulators to review and streamline the application process for the formation of de novo, or new, depository institutions or credit unions.</p><p>Regulators must (1) review the application process; (2) to the extent practicable, collect necessary information from other agencies in order to minimize requests for applicant information; and (3) review how de novo financial intuitions raise capital while maintaining investor protections, including the impact of restrictions on raising capital.</p><p>At the request of an applicant, regulators must (1) designate an employee as a caseworker to assist in the application process, and (2) provide a list of similar institutions interested in serving as a mentor.</p><p>Each regulator must also develop a state and stakeholder engagement plan to assist interested parties with understanding the relevant regulatory processes.</p><p>(Sec. 908) This section authorizes federal banking agencies to issue rules allowing a qualifying&nbsp;community bank or its depository institution holding company two years to meet capital requirements. During this period, a qualifying community bank or its depository institution holding company may request to deviate from an approved business plan, and the appropriate agency has 180 days to approve or deny the request.</p><p>(Sec. 909) This section requires federal banking agencies and the National Credit Union Administration to study and report on methods to improve the growth, capital adequacy, and profitability of depository institutions and credit unions, respectively, serving rural areas.</p><p>TITLE X--HOME-OWNERSHIP FOR MAIN STREET AMERICA<br/><br/>(Sec. 1001) This section generally prohibits large institutional investors that invest in single-family homes (and have investment control of at least 350 such homes in aggregate) from purchasing single-family homes. The section authorizes specified agencies to issue rules to implement the prohibition.</p><p>The section authorizes civil penalties of up to $1 million per violation or 3 times the purchase price of the property involved, whichever is greater.</p><p>The section's restrictions and penalties take effect 180 days after enactment and expire 15 years after this date.</p><p>TITLE XI--CENTRAL BANK DIGITAL CURRENCY<br/><br/>(Sec. 1101) This section temporarily prohibits the Federal Reserve from issuing a central bank digital currency. A <em>central bank</em> <em>digital currency</em> is a digital asset (i.e., cryptocurrency) that is (1) denominated in U.S. dollars, (2) a U.S. currency,&nbsp;(3)&nbsp;a direct liability of the Federal Reserve System, and (4) widely available to the general public.<br/><br/>The prohibition ends on December 31, 2030.</p><p>TITLE XII--MISCELLANEOUS<br/><br/>(Sec. 1201) This section provides that if any provision of this act is held to be invalid,  the remainder of the provisions of the act are not affected.<br/><br/>(Sec. 1202) This section provides that no additional funds are authorized to be appropriated to carry out this act.</p>",
       "text_url_html": "https://www.congress.gov/119/plaws/publ101/PLAW-119publ101.htm",
       "text_url_xml": "https://www.congress.gov/119/plaws/publ101/PLAW-119publ101_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ101/PLAW-119publ101.pdf",
@@ -1139,8 +1224,7 @@
         "date": "2026-06-26",
         "text": "Became Public Law No: 119-100."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Animal protection and human-animal relationships",
@@ -1708,7 +1792,6 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 48. Record Vote Number: 173. (consideration: CR S2816)"
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "Immigration",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -1800,8 +1883,7 @@
         "date": "2026-06-12",
         "text": "Became Public Law No: 119-99."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Native Americans",
       "subjects": [
         "Alaska",
@@ -2001,8 +2083,7 @@
         "date": "2026-06-10",
         "text": "Became Public Law No: 119-98."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Immigration",
       "subjects": [
         "Advanced technology and technological innovations",
@@ -2416,7 +2497,6 @@
         "text": "Became Public Law No: 119-96."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Government Operations and Politics",
       "subjects": [
         "Cancer",
@@ -2448,8 +2528,7 @@
         "date": "2026-06-09",
         "text": "Became Public Law No: 119-97."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Armed Forces and National Security",
       "subjects": [
         "Building construction",
