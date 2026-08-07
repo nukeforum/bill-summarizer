@@ -29,11 +29,24 @@ class MemberDetailViewModel @Inject constructor(
 
     internal var congressProvider: () -> Int = { computeCurrentCongress() }
 
+    // The last bioguide loaded, so a Retry from the error state can re-run
+    // the same fetch without the screen having to thread the id back in.
+    private var lastBioguideId: String? = null
+
     private fun computeCurrentCongress(today: LocalDate = LocalDate.now()): Int =
         ((today.year - 1789) / 2) + 1
 
+    /** Re-run the last load; wired to the error state's Retry button. */
+    fun retry() {
+        lastBioguideId?.let { load(it) }
+    }
+
     fun load(bioguideId: String) {
+        lastBioguideId = bioguideId
         viewModelScope.launch {
+            // Reset to the spinner and clear any prior error so a Retry after
+            // a failed load shows progress rather than the stale error screen.
+            _uiState.update { it.copy(isLoading = true, errorMessage = null) }
             val congress = congressProvider()
             // Pre-warm the bill cache so isInLocalCache returns accurate
             // results when the user taps a sponsored/cosponsored row, even
@@ -66,7 +79,11 @@ class MemberDetailViewModel @Inject constructor(
                     )
                 }
             } catch (t: Throwable) {
-                _uiState.update { it.copy(isLoading = false, errorMessage = t.message) }
+                // A failed fetch (typically no connectivity) must not dead-end
+                // on a raw OkHttp/DNS string like `Unable to resolve host
+                // "nukeforum.github.io"` (issue #101). Surface a plain,
+                // actionable message; the screen pairs it with a Retry.
+                _uiState.update { it.copy(isLoading = false, errorMessage = LOAD_ERROR_MESSAGE) }
             }
         }
     }
@@ -82,5 +99,10 @@ class MemberDetailViewModel @Inject constructor(
         // detail history caps at the most recent slice so the tab stays
         // scannable without a "load more" affordance (issue #22).
         const val RECENT_VOTES_CAP = 25
+
+        // Human-readable, connection-oriented copy shown in place of a raw
+        // network exception message (issue #101).
+        const val LOAD_ERROR_MESSAGE =
+            "Couldn't load this representative's record. Check your connection and try again."
     }
 }
