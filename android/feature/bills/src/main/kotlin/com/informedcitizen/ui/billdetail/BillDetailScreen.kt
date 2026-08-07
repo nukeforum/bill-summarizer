@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
@@ -25,6 +26,7 @@ import androidx.compose.material3.LargeTopAppBar
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.material3.rememberModalBottomSheetState
@@ -73,6 +75,7 @@ fun BillDetailScreen(
     val scope = rememberCoroutineScope()
     val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
     var showSheet by remember { mutableStateOf(false) }
+    var showReader by remember { mutableStateOf(false) }
 
     val successBill = (uiState as? BillDetailUiState.Success)?.bill
     val hasShareableBody = successBill != null &&
@@ -111,7 +114,28 @@ fun BillDetailScreen(
             state = uiState,
             innerPadding = innerPadding,
             onOpenFullText = { url -> openInCustomTab(context, url) },
+            onReadFullText = {
+                viewModel.fetchFullText()
+                showReader = true
+            },
             repVotes = repVotes,
+        )
+    }
+
+    if (showReader && successBill != null) {
+        fun closeReader() {
+            showReader = false
+            viewModel.resetFullText()
+        }
+        BackHandler(onBack = { closeReader() })
+        FullTextReader(
+            title = formatBillRef(successBill.type, successBill.number),
+            state = fullTextState,
+            onRetry = { viewModel.fetchFullText() },
+            onOpenInBrowser = {
+                openInCustomTab(context, successBill.textUrlHtml ?: successBill.congressGovUrl)
+            },
+            onClose = { closeReader() },
         )
     }
 
@@ -184,6 +208,7 @@ internal fun BillDetailContent(
     state: BillDetailUiState,
     innerPadding: PaddingValues,
     onOpenFullText: (String) -> Unit,
+    onReadFullText: () -> Unit,
     repVotes: RepVotesUiState = RepVotesUiState.Empty,
 ) {
     when (state) {
@@ -202,6 +227,7 @@ internal fun BillDetailContent(
             repVotes = repVotes,
             innerPadding = innerPadding,
             onOpenFullText = onOpenFullText,
+            onReadFullText = onReadFullText,
         )
     }
 }
@@ -213,6 +239,7 @@ private fun BillDetailSuccessBody(
     repVotes: RepVotesUiState,
     innerPadding: PaddingValues,
     onOpenFullText: (String) -> Unit,
+    onReadFullText: () -> Unit,
 ) {
     val fullTextUrl = bill.textUrlHtml ?: bill.congressGovUrl
 
@@ -313,14 +340,24 @@ private fun BillDetailSuccessBody(
         }
 
         Section(title = "Full text") {
-            FilledTonalButton(onClick = { onOpenFullText(fullTextUrl) }) {
+            // Reading in-app is the primary, reliable path: it fetches the
+            // unguarded GPO text file and renders it here, independent of
+            // congress.gov's Cloudflare interstitial (issue #98). The browser
+            // hand-off — which lands on the guarded page — stays as a secondary
+            // escape hatch, not the only route.
+            if (!bill.textUrlHtml.isNullOrBlank()) {
+                FilledTonalButton(onClick = onReadFullText) {
+                    Text(text = "Read the full text")
+                }
+            }
+            TextButton(onClick = { onOpenFullText(fullTextUrl) }) {
                 Icon(
                     imageVector = Icons.AutoMirrored.Filled.OpenInNew,
                     contentDescription = null,
                     modifier = Modifier.size(18.dp),
                 )
                 Spacer(Modifier.size(8.dp))
-                Text(text = "Open full text")
+                Text(text = "Open on congress.gov")
             }
         }
     }

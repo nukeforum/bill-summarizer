@@ -18,6 +18,9 @@ dependencies {
     // RemoteMediator; paging-compose drives the LazyPagingItems list body.
     implementation(libs.androidx.paging.runtime)
     implementation(libs.androidx.paging.compose)
+    // BackHandler in the in-app full-text reader (issue #98): system back
+    // closes the reader overlay rather than leaving the bill-detail screen.
+    implementation(libs.androidx.activity.compose)
 
     // BillDetailViewModel uses BillTextFetcher via :core:network and
     // BillRepository (now owned here). LlmShareHelper uses ui/util from
