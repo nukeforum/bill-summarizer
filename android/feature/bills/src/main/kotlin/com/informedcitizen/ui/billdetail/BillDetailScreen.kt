@@ -38,10 +38,13 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
+import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.fromHtml
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -68,7 +71,6 @@ fun BillDetailScreen(
 
     LaunchedEffect(billId) { viewModel.load(billId) }
 
-    val scrollBehavior = TopAppBarDefaults.exitUntilCollapsedScrollBehavior()
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
     val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
@@ -94,26 +96,15 @@ fun BillDetailScreen(
         }
     }
 
-    Scaffold(
-        modifier = modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
-        topBar = { DetailTopBar(state = uiState, onBack = onBack, scrollBehavior = scrollBehavior) },
-        floatingActionButton = {
-            if (hasShareableBody) {
-                ExtendedFloatingActionButton(
-                    text = { Text("Summarize with AI") },
-                    icon = {},
-                    onClick = { showSheet = true },
-                )
-            }
-        },
-    ) { innerPadding ->
-        BillDetailContent(
-            state = uiState,
-            innerPadding = innerPadding,
-            onOpenFullText = { url -> openInCustomTab(context, url) },
-            repVotes = repVotes,
-        )
-    }
+    BillDetailScaffold(
+        modifier = modifier,
+        uiState = uiState,
+        repVotes = repVotes,
+        hasShareableBody = hasShareableBody,
+        onBack = onBack,
+        onSummarizeClick = { showSheet = true },
+        onOpenFullText = { url -> openInCustomTab(context, url) },
+    )
 
     if (showSheet && successBill != null) {
         SummarizeBottomSheet(
@@ -138,6 +129,65 @@ fun BillDetailScreen(
         )
     }
 }
+
+/**
+ * Hosts the [Scaffold], the "Summarize with AI" FAB, and the scrollable
+ * content. Split out from [BillDetailScreen] so it renders — and its FAB
+ * clearance fix (issue #85) is directly testable — without a Hilt
+ * [BillDetailViewModel].
+ */
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+internal fun BillDetailScaffold(
+    uiState: BillDetailUiState,
+    repVotes: RepVotesUiState,
+    hasShareableBody: Boolean,
+    onBack: () -> Unit,
+    onSummarizeClick: () -> Unit,
+    onOpenFullText: (String) -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    val scrollBehavior = TopAppBarDefaults.exitUntilCollapsedScrollBehavior()
+    val density = LocalDensity.current
+    // Measured, not assumed: an ExtendedFloatingActionButton grows taller as
+    // the system font scale grows (issue #85 was worst at the largest
+    // accessibility font size), so the clearance reserved below the scrollable
+    // content tracks the FAB's actual rendered height rather than a constant
+    // that would under-reserve at large font scales.
+    var fabHeight by remember { mutableStateOf(0.dp) }
+
+    Scaffold(
+        modifier = modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
+        topBar = { DetailTopBar(state = uiState, onBack = onBack, scrollBehavior = scrollBehavior) },
+        floatingActionButton = {
+            if (hasShareableBody) {
+                ExtendedFloatingActionButton(
+                    modifier = Modifier.onSizeChanged { size ->
+                        fabHeight = with(density) { size.height.toDp() }
+                    },
+                    text = { Text("Summarize with AI") },
+                    icon = {},
+                    onClick = onSummarizeClick,
+                )
+            }
+        },
+    ) { innerPadding ->
+        BillDetailContent(
+            state = uiState,
+            innerPadding = innerPadding,
+            onOpenFullText = onOpenFullText,
+            repVotes = repVotes,
+            // Scaffold's innerPadding accounts for the top/bottom bars only —
+            // a floating action button overlaps content by design and is not
+            // reflected there — so the FAB's measured height, plus a margin,
+            // is reserved separately. Without this the FAB permanently
+            // covers the tail of the scrollable content (issue #85).
+            extraBottomPadding = if (hasShareableBody) fabHeight + FabClearance else 0.dp,
+        )
+    }
+}
+
+private val FabClearance = 24.dp
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -185,6 +235,7 @@ internal fun BillDetailContent(
     innerPadding: PaddingValues,
     onOpenFullText: (String) -> Unit,
     repVotes: RepVotesUiState = RepVotesUiState.Empty,
+    extraBottomPadding: Dp = 0.dp,
 ) {
     when (state) {
         BillDetailUiState.Loading -> CenteredMessage(
@@ -202,6 +253,7 @@ internal fun BillDetailContent(
             repVotes = repVotes,
             innerPadding = innerPadding,
             onOpenFullText = onOpenFullText,
+            extraBottomPadding = extraBottomPadding,
         )
     }
 }
@@ -213,14 +265,16 @@ private fun BillDetailSuccessBody(
     repVotes: RepVotesUiState,
     innerPadding: PaddingValues,
     onOpenFullText: (String) -> Unit,
+    extraBottomPadding: Dp = 0.dp,
 ) {
     val fullTextUrl = bill.textUrlHtml ?: bill.congressGovUrl
 
     // Top inset is applied as layout padding (so the verticalScroll's
-    // gesture region starts below the LargeTopAppBar). The bottom inset
-    // — gesture-pill area + the FAB's height-equivalent — is rolled into
-    // the inner padding so scrolling to the end leaves space above the
-    // navigation bar instead of clipping the last paragraph.
+    // gesture region starts below the LargeTopAppBar). The bottom inset —
+    // gesture-pill area from Scaffold, plus [extraBottomPadding] reserved by
+    // the caller for the floating "Summarize with AI" button (issue #85) —
+    // is rolled into the inner padding so scrolling to the end leaves space
+    // above the FAB instead of the FAB covering the last paragraph.
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -230,7 +284,7 @@ private fun BillDetailSuccessBody(
                 start = 16.dp,
                 end = 16.dp,
                 top = 8.dp,
-                bottom = 8.dp + innerPadding.calculateBottomPadding(),
+                bottom = 8.dp + innerPadding.calculateBottomPadding() + extraBottomPadding,
             ),
         verticalArrangement = Arrangement.spacedBy(20.dp),
     ) {
@@ -251,6 +305,29 @@ private fun BillDetailSuccessBody(
                 )
             }
             Text(text = bill.latestAction.text, style = MaterialTheme.typography.bodyMedium)
+        }
+
+        // Placed ahead of Votes/Sponsor (issue #102): on a bill with many
+        // roll-call votes, the vote list can run long, and the plain-language
+        // summary is what most readers want first. Leading with it here means
+        // reaching it never requires scrolling past the whole vote list.
+        Section(title = "Official summary") {
+            val summary = bill.summaryCrs
+            if (summary.isNullOrBlank()) {
+                Text(
+                    text = "No official summary available yet.",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            } else {
+                Text(
+                    text = "Plain-English summary from the Congressional Research Service — no AI account needed.",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+                val annotated = remember(summary) { AnnotatedString.fromHtml(summary) }
+                Text(text = annotated, style = MaterialTheme.typography.bodyMedium)
+            }
         }
 
         // Vote refs ride on the bill record itself, so this section needs
@@ -291,25 +368,6 @@ private fun BillDetailSuccessBody(
                 text = "${bill.sponsor.name} (${bill.sponsor.party}-${bill.sponsor.state})",
                 style = MaterialTheme.typography.bodyLarge,
             )
-        }
-
-        Section(title = "Official summary") {
-            val summary = bill.summaryCrs
-            if (summary.isNullOrBlank()) {
-                Text(
-                    text = "No official summary available yet.",
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
-            } else {
-                Text(
-                    text = "Plain-English summary from the Congressional Research Service — no AI account needed.",
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
-                val annotated = remember(summary) { AnnotatedString.fromHtml(summary) }
-                Text(text = annotated, style = MaterialTheme.typography.bodyMedium)
-            }
         }
 
         Section(title = "Full text") {
