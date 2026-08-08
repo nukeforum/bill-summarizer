@@ -1,8 +1,137 @@
 {
-  "generated_at": "2026-08-07T07:52:45Z",
+  "generated_at": "2026-08-08T07:29:49Z",
   "congress": 119,
-  "vote_count": 1525,
+  "vote_count": 1529,
   "votes": [
+    {
+      "id": "senate-119-2-226",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 226,
+      "date": "2026-08-07",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 91,
+        "nay": 6,
+        "present": 1,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 42,
+          "I": 1,
+          "R": 48
+        },
+        "nay": {
+          "D": 3,
+          "I": 1,
+          "R": 2
+        },
+        "present": {
+          "R": 1
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-226.json"
+    },
+    {
+      "id": "senate-119-2-225",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 225,
+      "date": "2026-08-07",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 51,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 51
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-225.json"
+    },
+    {
+      "id": "senate-119-2-224",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 224,
+      "date": "2026-08-07",
+      "question": "On Passage of the Bill",
+      "result": "Bill Passed",
+      "bill_id": "hr5334-119",
+      "totals": {
+        "yea": 86,
+        "nay": 11,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 36,
+          "I": 1,
+          "R": 49
+        },
+        "nay": {
+          "D": 9,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-224.json"
+    },
+    {
+      "id": "senate-119-2-223",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 223,
+      "date": "2026-08-07",
+      "question": "On the Amendment",
+      "result": "Amendment Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 32,
+        "nay": 64,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 29,
+          "I": 1,
+          "R": 2
+        },
+        "nay": {
+          "D": 15,
+          "I": 1,
+          "R": 48
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-223.json"
+    },
     {
       "id": "senate-119-2-222",
       "chamber": "senate",
