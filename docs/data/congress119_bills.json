@@ -1,8 +1,163 @@
 {
-  "generated_at": "2026-08-07T07:52:45Z",
+  "generated_at": "2026-08-08T06:51:49Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "s1838-119",
+      "congress": 119,
+      "type": "s",
+      "number": "1838",
+      "title": "DeOndra Dixon INCLUDE Project Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hickenlooper, John W.",
+        "party": "D",
+        "state": "CO"
+      },
+      "introduced_date": "2025-05-21",
+      "latest_action": {
+        "date": "2026-08-06",
+        "text": "Passed Senate with an amendment by Voice Vote. (text of amendment in the nature of a substitute: CR S4495-4496)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s1838/BILLS-119s1838es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s1838/BILLS-119s1838es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s1838/BILLS-119s1838es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1838",
+      "votes": []
+    },
+    {
+      "id": "s2398-119",
+      "congress": 119,
+      "type": "s",
+      "number": "2398",
+      "title": "Kay Hagan Tick Reauthorization Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Collins, Susan M.",
+        "party": "R",
+        "state": "ME"
+      },
+      "introduced_date": "2025-07-23",
+      "latest_action": {
+        "date": "2026-08-06",
+        "text": "Passed Senate with an amendment by Voice Vote. (consideration: CR S4494-4495; text: CR S4494-4495)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Health programs administration and funding",
+        "Infectious and parasitic diseases",
+        "Insects"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s2398/BILLS-119s2398es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s2398/BILLS-119s2398es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s2398/BILLS-119s2398es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2398",
+      "votes": []
+    },
+    {
+      "id": "s3266-119",
+      "congress": 119,
+      "type": "s",
+      "number": "3266",
+      "title": "USMMA Athletics Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wicker, Roger F.",
+        "party": "R",
+        "state": "MS"
+      },
+      "introduced_date": "2025-11-20",
+      "latest_action": {
+        "date": "2026-08-06",
+        "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S4492-4493; text: CR S4492-4493)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Transportation and Public Works",
+      "subjects": [
+        "Advisory bodies",
+        "Employment and training programs",
+        "Government corporations and government-sponsored enterprises",
+        "Government employee pay, benefits, personnel management",
+        "Higher education",
+        "Intellectual property",
+        "Licensing and registrations",
+        "Public contracts and procurement",
+        "School athletics",
+        "User charges and fees"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s3266/BILLS-119s3266es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s3266/BILLS-119s3266es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s3266/BILLS-119s3266es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/3266",
+      "votes": []
+    },
+    {
+      "id": "s434-119",
+      "congress": 119,
+      "type": "s",
+      "number": "434",
+      "title": "Space Commerce Advisory Committee Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Peters, Gary C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2025-02-05",
+      "latest_action": {
+        "date": "2026-08-06",
+        "text": "Passed Senate with an amendment by Unanimous Consent. (text: CR S4493-4494)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Science, Technology, Communications",
+      "subjects": [
+        "Advisory bodies",
+        "Environmental assessment, monitoring, research",
+        "Public-private cooperation",
+        "Space flight and exploration",
+        "Spacecraft and satellites"
+      ],
+      "summary_crs": "<p><strong>Space Commerce Advisory Committee Act</strong></p><p>This bill requires the Office of Space Commerce to establish a Commercial Space Activity Advisory Committee to provide information and recommendations on nongovernmental space activities and promoting a robust and innovative commercial space sector.&nbsp;</p><p>Among other duties, the committee is directed to identify challenges to the U.S. commercial space sector and to review best practices for commercial space entities with respect to avoiding harmful contamination of the Moon and other celestial bodies and adverse impacts to the Earth’s environment from extraterrestrial matter.&nbsp;</p><p>The committee must be comprised of representatives from varying fields with significant experience in the commercial space industry. The committee must terminate ten years after it is established.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s434/BILLS-119s434es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s434/BILLS-119s434es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s434/BILLS-119s434es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/434",
+      "votes": []
+    },
+    {
+      "id": "sres833-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "833",
+      "title": "A resolution recognizing the 1960 University of Missouri Tigers Football Team for its undefeated regular season, Orange Bowl victory, and claim to the 1960 National Championship.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Schmitt, Eric",
+        "party": "R",
+        "state": "MO"
+      },
+      "introduced_date": "2026-08-06",
+      "latest_action": {
+        "date": "2026-08-06",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4498-4499; text: CR S4523)"
+      },
+      "outcome": "passed_senate",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres833/BILLS-119sres833ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres833/BILLS-119sres833ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres833/BILLS-119sres833ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/833",
+      "votes": []
+    },
     {
       "id": "s850-119",
       "congress": 119,
@@ -21,7 +176,6 @@
         "text": "Passed Senate with amendments by Unanimous Consent. (text: CR S4481)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Immigration",
       "subjects": [
         "Border security and unlawful immigration",
@@ -55,7 +209,6 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 50. Record Vote Number: 222."
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "Environmental Protection",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -119,7 +272,6 @@
         "text": "Passed Senate with an amendment by Voice Vote. (consideration: CR S4425-4426; text: CR S4425-4426)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Department of Health and Human Services",
@@ -159,7 +311,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S4426-4427; text: CR S4426-4427)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Advisory bodies",
@@ -194,7 +345,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S4412-4414; text: CR S4412-4414)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Advisory bodies",
@@ -232,7 +382,6 @@
         "text": "Passed Senate without amendment by Voice Vote. (consideration: CR S4411-4412; text: CR S4411-4412)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Commerce",
       "subjects": [
         "Child safety and welfare",
@@ -266,7 +415,6 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S4412; text: CR S4412)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Bankruptcy",
@@ -298,7 +446,6 @@
         "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 49 - 50. Record Vote Number: 216. (consideration: CR S4357)"
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": "<p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending against an attack on the United States or its personnel or facilities in other nations.</p>",
@@ -358,7 +505,6 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 215."
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "Families",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -421,7 +567,6 @@
         "text": "Resolution agreed to in Senate without amendment by Yea-Nay Vote. 50 - 47. Record Vote Number: 217."
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Congress",
       "subjects": [
         "Diplomacy, foreign officials, Americans abroad",
@@ -515,7 +660,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4311)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Correctional facilities and imprisonment",
@@ -550,7 +694,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4286)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Civil Rights and Liberties, Minority Issues",
       "subjects": [
         "Commemorative events and holidays",
@@ -834,8 +977,7 @@
         "date": "2026-07-12",
         "text": "Became Public Law No: 119-102."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Agriculture and Food",
       "subjects": [
         "Agricultural prices, subsidies, credit",
@@ -901,8 +1043,7 @@
         "date": "2026-07-11",
         "text": "Became Public Law No: 119-101."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Housing and Community Development",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -1241,8 +1382,7 @@
         "date": "2026-06-26",
         "text": "Became Public Law No: 119-100."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Animal protection and human-animal relationships",
@@ -1810,7 +1950,6 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 48. Record Vote Number: 173. (consideration: CR S2816)"
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "Immigration",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -1902,8 +2041,7 @@
         "date": "2026-06-12",
         "text": "Became Public Law No: 119-99."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Native Americans",
       "subjects": [
         "Alaska",
@@ -2103,8 +2241,7 @@
         "date": "2026-06-10",
         "text": "Became Public Law No: 119-98."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Immigration",
       "subjects": [
         "Advanced technology and technological innovations",
