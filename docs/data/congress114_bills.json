@@ -1,8 +1,45 @@
 {
-  "generated_at": "2026-08-08T12:59:46Z",
+  "generated_at": "2026-08-09T13:02:58Z",
   "congress": 114,
   "votes_coverage": false,
   "bills": [
+    {
+      "id": "hr2726-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "2726",
+      "title": "Apollo 11 50th Anniversary Commemorative Coin Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Posey, Bill",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2015-06-10",
+      "latest_action": {
+        "date": "2016-12-16",
+        "text": "Became Public Law No: 114-282."
+      },
+      "outcome": "enacted",
+      "policy_area": "Finance and Financial Sector",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Currency",
+        "Higher education",
+        "Museums, exhibitions, cultural centers",
+        "Science and engineering education",
+        "Smithsonian Institution",
+        "Social work, volunteer service, charitable organizations",
+        "Space flight and exploration",
+        "Student aid and college costs"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was passed by the House on December 5, 2016. The summary of that version is repeated here.)</p> <p><b>Apollo 11 50th Anniversary Commemorative Coin Act</b></p> <p>(Sec. 3) This bill directs the Department of the Treasury to mint and issue gold, silver, half-dollar clad, and proof silver coins in recognition and celebration of the 50th anniversary of the first manned landing on the moon. </p> <p>(Sec. 5) Treasury may issue coins minted under this bill for only a one-year period, beginning January 1, 2019.</p> <p>(Sec. 7) All sales of coins minted under this bill shall include a surcharge of $35 per gold coin, $10 per silver coin, $5 per half-dollar clad coin, and $50 per proof silver coin. </p> <p>All of the surcharges received from the sale of such coins shall be paid as follows: </p> <ul> <li>one-half to the Smithsonian Institution's National Air and Space Museum's &quot;Destination Moon&quot; exhibit;</li> <li>one-quarter to the Astronauts Memorial Foundation; and </li> <li>one-quarter to the Astronaut Scholarship Foundation, to aid its missions by providing college scholarships for the very best and brightest students pursuing degrees in science, technology, engineering, or mathematics (STEM). </li> </ul> <p>There may not be any surcharge if issuance of the coin would exceed the annual commemorative coin program issuance limitation.</p> <p>(Sec. 8) Treasury shall ensure that: </p> <ul> <li>minting and issuing such coins will not result in any net cost to the federal government; and</li> <li>no funds, including surcharges, will be disbursed to any recipient designated in section 7 until the total cost of designing and issuing all authorized coins is recovered.</li> </ul>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ282/PLAW-114publ282.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ282/PLAW-114publ282_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ282/PLAW-114publ282.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/2726",
+      "votes": []
+    },
     {
       "id": "hr3784-114",
       "congress": 114,
@@ -1143,6 +1180,75 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ260/PLAW-114publ260_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ260/PLAW-114publ260.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/5995",
+      "votes": []
+    },
+    {
+      "id": "s1555-114",
+      "congress": 114,
+      "type": "s",
+      "number": "1555",
+      "title": "Filipino Veterans of World War II Congressional Gold Medal Act of 2015",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hirono, Mazie K.",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2015-06-11",
+      "latest_action": {
+        "date": "2016-12-14",
+        "text": "Became Public Law No: 114-265."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Asia",
+        "Conflicts and wars",
+        "Congressional tributes",
+        "Military history",
+        "Museums, exhibitions, cultural centers",
+        "Philippines",
+        "Smithsonian Institution",
+        "Veterans' organizations and recognition"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the Senate passed version is repeated here.)</p> <p><strong>Filipino Veterans of World War II Congressional Gold Medal Act of 2015</strong></p> <p>(Sec. 3) This bill defines \"Filipino Veterans of World War II\" to include an individual who served: </p> <ul> <li> honorably at any time from July 26, 1941, to December 31, 1946; </li> <li> in an active-duty status under the command of the U.S. Armed Forces in the Far East; and </li> <li> within the Philippine Commonwealth Army, the Philippine Scouts, the Philippine Constabulary, Recognized Guerrilla units, the New Philippine Scouts, the First Filipino Infantry Regiment, the Second Filipino Infantry Battalion (Separate), or the First Reconnaissance Battalion; or<br /></li> <li>commanding or serving in such a unit as a U.S. military officer or enlisted soldier.</li> </ul> <p>(Sec. 4) The President pro tempore of the Senate and the Speaker of the House of Representatives shall make appropriate arrangements for the award of a single Congressional Gold Medal to the Filipino Veterans of World War II in recognition of their dedicated service during World War II. </p> <p> The medal, following its award, shall be given to the Smithsonian Institution where it will be available for research and display.</p> <p> It is the sense of Congress that the Smithsonian Institution should make the gold medal available for display elsewhere, particularly at other appropriate locations associated with the Filipino Veterans of World War II.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ265/PLAW-114publ265.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ265/PLAW-114publ265_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ265/PLAW-114publ265.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/1555",
+      "votes": []
+    },
+    {
+      "id": "s2234-114",
+      "congress": 114,
+      "type": "s",
+      "number": "2234",
+      "title": "Office of Strategic Services Congressional Gold Medal Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blunt, Roy",
+        "party": "R",
+        "state": "MO"
+      },
+      "introduced_date": "2015-11-04",
+      "latest_action": {
+        "date": "2016-12-14",
+        "text": "Became Public Law No: 114-269."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Congressional tributes",
+        "Intelligence activities, surveillance, classified information",
+        "Military history",
+        "Museums, exhibitions, cultural centers",
+        "Smithsonian Institution"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the Senate passed version is repeated here.) </p><p><strong>Office of Strategic Services Congressional Gold Medal Act</strong> </p> <p>(Sec. 3) This bill requires the Speaker of the House of Representatives and the President pro tempore of the Senate to arrange for the presentation of a Congressional Gold Medal to the members of the Office of Strategic Services in recognition of their service and contributions during World War II.</p> <p>After the medal is awarded, it must be given to the Smithsonian Institution. </p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ269/PLAW-114publ269.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ269/PLAW-114publ269_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ269/PLAW-114publ269.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/2234",
       "votes": []
     },
     {
@@ -3394,6 +3500,39 @@
       "votes": []
     },
     {
+      "id": "hr5588-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "5588",
+      "title": "Veterans' Compensation COLA Act of 2016",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Abraham, Ralph Lee",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2016-06-28",
+      "latest_action": {
+        "date": "2016-07-22",
+        "text": "Became Public Law No: 114-197."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Department of Veterans Affairs",
+        "Disability assistance",
+        "Inflation and prices",
+        "Veterans' pensions and compensation"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the House passed version is repeated here.)</p> <p><strong>Veterans' Compensation COLA Act of 2016</strong></p> <p>(Sec. 2) This bill directs the Department of Veterans Affairs (VA) to increase, as of December 1, 2016, the rates of veterans' disability compensation, additional compensation for dependents, the clothing allowance for certain disabled veterans, and dependency and indemnity compensation for surviving spouses and children.</p> <p>Each such increase shall be the same percentage as the increase in benefits provided under title II (Old Age, Survivors, and Disability Insurance [OASDI]) of the Social Security Act, on the same effective date.</p> <p>(Sec. 3) The VA shall publish such increased amounts in the Federal Register not later than the date on which certain OASDI cost-of-living increases are required to be published during FY2017.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ197/PLAW-114publ197.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ197/PLAW-114publ197_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ197/PLAW-114publ197.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/5588",
+      "votes": []
+    },
+    {
       "id": "s2840-114",
       "congress": 114,
       "type": "s",
@@ -3655,6 +3794,47 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres540/BILLS-114sres540ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres540/BILLS-114sres540ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/540",
+      "votes": []
+    },
+    {
+      "id": "sres541-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "541",
+      "title": "A resolution recognizing the 100th anniversary of the establishment of Hawaii Volcanoes National Park and Haleakala National Park in the State of Hawaii, and designating August 1, 2016, as \"Hawaii Volcanoes and Haleakala National Parks Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hirono, Mazie K.",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2016-07-14",
+      "latest_action": {
+        "date": "2016-07-14",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S5193-5194; text as passed Senate: CR S5174)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Asia",
+        "Commemorative events and holidays",
+        "Conflicts and wars",
+        "Congressional tributes",
+        "Detention of persons",
+        "Hawaii",
+        "Historic sites and heritage areas",
+        "Military history",
+        "Monuments and memorials",
+        "Parks, recreation areas, trails",
+        "Racial and ethnic relations",
+        "Travel and tourism",
+        "U.S. history"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Congratulates and celebrates Hawaii Volcanoes National Park and Haleakala National Park on the 100th anniversary of their establishment. </p> <p>Acknowledges the range of natural and cultural wonders that make up the other national parks and monuments of Hawaii, including: </p> <ul> <li>Honouliuli National Monument, </li> <li>Kalaupapa National Historical Park,</li> <li>Kaloko-Honokohau National Historical Park,</li> <li>Puuhonua o Honaunau National Historical Park,</li> <li>Puukohola Heiau National Historic Site, and </li> <li>World War II Valor in the Pacific National Monument. </li> </ul> <p>Encourages the people of Hawaii and of the United States to visit those parks and monuments. </p> <p>Designates August 1, 2016, as Hawaii Volcanoes and Haleakala National Parks Day. </p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres541/BILLS-114sres541ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres541/BILLS-114sres541ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres541/BILLS-114sres541ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/541",
       "votes": []
     },
     {
@@ -5013,6 +5193,40 @@
       "votes": []
     },
     {
+      "id": "sres488-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "488",
+      "title": "A resolution recognizing the historical significance and the 50th anniversary of the \"James H. Meredith March Against Fear\", a 220-mile walk down Highway 51 from Memphis, Tennessee, to Jackson, Mississippi.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wicker, Roger F.",
+        "party": "R",
+        "state": "MS"
+      },
+      "introduced_date": "2016-06-10",
+      "latest_action": {
+        "date": "2016-06-10",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S3790; text as passed Senate: CR S3797)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Civil Rights and Liberties, Minority Issues",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Mississippi",
+        "Protest and dissent",
+        "Racial and ethnic relations",
+        "U.S. history",
+        "Voting rights"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</p> <p>Commemorates the 50th anniversary of the &quot;James H. Meredith March Against Fear.&quot;</p> <p>Recognizes the discipline and focus required to complete the march during the most contentious decade in the Civil Rights Movement to encourage African-Americans to defy intimidation and register voters.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres488/BILLS-114sres488ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres488/BILLS-114sres488ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres488/BILLS-114sres488ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/488",
+      "votes": []
+    },
+    {
       "id": "sres489-114",
       "congress": 114,
       "type": "sres",
@@ -6107,6 +6321,39 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres445/BILLS-114sres445ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres445/BILLS-114sres445ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/445",
+      "votes": []
+    },
+    {
+      "id": "sres440-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "440",
+      "title": "A resolution expressing the sense of the Senate about the importance of effective civic and government education programs in schools in the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Grassley, Chuck",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2016-04-26",
+      "latest_action": {
+        "date": "2016-04-26",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2463; text as passed Senate: CR S2462)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Education",
+      "subjects": [
+        "Constitution and constitutional amendments",
+        "Elementary and secondary education",
+        "Public participation and lobbying",
+        "Teaching, teachers, curricula",
+        "U.S. history"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Expresses the sense of the Senate that:</p> <ul> <li>civic and government education is essential to the well-being of the constitutional government of the United States, </li> <li>comprehensive and formal instruction in civics and government would provide students with a basis for understanding the rights and responsibilities of citizens under such government, </li> <li>elementary and secondary schools are encouraged to offer courses on the history and theories of such government, and </li> <li>civics and government teachers are well served by having access to professional development programs that enhance their capacity to provide effective civic and government education in the classroom. </li></ul>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres440/BILLS-114sres440ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres440/BILLS-114sres440ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres440/BILLS-114sres440ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/440",
       "votes": []
     },
     {
@@ -7503,6 +7750,39 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres366/BILLS-114sres366ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres366/BILLS-114sres366ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/366",
+      "votes": []
+    },
+    {
+      "id": "sres363-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "363",
+      "title": "A resolution congratulating the University of Mount Union football team for winning the 2015 National Collegiate Athletic Association Division III Football Championship.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Brown, Sherrod",
+        "party": "D",
+        "state": "OH"
+      },
+      "introduced_date": "2016-02-04",
+      "latest_action": {
+        "date": "2016-02-04",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S691; text as passed Senate: CR S674)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Sports and Recreation",
+      "subjects": [
+        "Athletes",
+        "Congressional tributes",
+        "Higher education",
+        "Ohio",
+        "School athletics"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Congratulates the University of Mount Union Purple Raiders football team for winning the 2015 National Collegiate Athletic Association Division III Football Championship. </p><ul> </ul>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres363/BILLS-114sres363ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres363/BILLS-114sres363ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres363/BILLS-114sres363ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/363",
       "votes": []
     },
     {
@@ -12058,6 +12338,37 @@
       "votes": []
     },
     {
+      "id": "sres166-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "166",
+      "title": "A resolution expressing the sense of the Senate that domestically grown flowers support the farmers, small businesses, jobs, and economy of the United States, enhance the ability of the people of  the United States to honor their mothers on Mother's Day, and that the White House should strive to showcase domestically grown flowers.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feinstein, Dianne",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2015-05-04",
+      "latest_action": {
+        "date": "2015-05-04",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2608-2609; text as passed Senate: CR S2602)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Agriculture and Food",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Horticulture and plants",
+        "Small business"
+      ],
+      "summary_crs": " <p>Expresses the sense of the Senate that: purchasing flowers grown in the United States supports farmers, small businesses, jobs, and the economy; flowers grown in the United States enhance the ability of Americans to honor their mothers on Mother's Day; and the White House should strive to showcase flowers grown in the United States. </p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres166/BILLS-114sres166ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres166/BILLS-114sres166ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres166/BILLS-114sres166ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/166",
+      "votes": []
+    },
+    {
       "id": "sres162-114",
       "congress": 114,
       "type": "sres",
@@ -12453,6 +12764,37 @@
       "votes": []
     },
     {
+      "id": "hjres10-114",
+      "congress": 114,
+      "type": "hjres",
+      "number": "10",
+      "title": "Providing for the reappointment of David M. Rubenstein as a citizen regent of the Board of Regents of the Smithsonian Institution.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Johnson, Sam",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2015-01-07",
+      "latest_action": {
+        "date": "2015-04-07",
+        "text": "Became Public Law No: 114-9."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Federal officials",
+        "Museums, exhibitions, cultural centers",
+        "Smithsonian Institution"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Reappoints David M. Rubenstein as a citizen regent of the Board of Regents of the Smithsonian Institution. </p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ9/PLAW-114publ9.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ9/PLAW-114publ9_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ9/PLAW-114publ9.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-joint-resolution/10",
+      "votes": []
+    },
+    {
       "id": "hr1092-114",
       "congress": 114,
       "type": "hr",
@@ -12800,6 +13142,41 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres93/BILLS-114sres93ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres93/BILLS-114sres93ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/93",
+      "votes": []
+    },
+    {
+      "id": "hr431-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "431",
+      "title": "To award a Congressional Gold Medal to the Foot Soldiers who participated in Bloody Sunday, Turnaround Tuesday, or the final Selma to Montgomery Voting Rights March in March of 1965, which served as a catalyst for the Voting Rights Act of 1965.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Sewell, Terri A.",
+        "party": "D",
+        "state": "AL"
+      },
+      "introduced_date": "2015-01-21",
+      "latest_action": {
+        "date": "2015-03-07",
+        "text": "Became Public Law No: 114-5."
+      },
+      "outcome": "enacted",
+      "policy_area": "Civil Rights and Liberties, Minority Issues",
+      "subjects": [
+        "Alabama",
+        "Congressional tributes",
+        "Museums, exhibitions, cultural centers",
+        "Protest and dissent",
+        "Racial and ethnic relations",
+        "U.S. history",
+        "Voting rights"
+      ],
+      "summary_crs": " <p dir=\"ltr\">(This measure has not been amended since it was introduced. The expanded summary of the House passed version is repeated here.)</p> <p>(Sec. 2) This bill directs the Speaker of the House and the President Pro Tempore of the Senate to arrange for the presentation, on behalf of Congress, of a gold medal to the Foot Soldiers who participated in Bloody Sunday, Turnaround Tuesday, or the final Selma to Montgomery Voting Rights March during March of 1965, which served as a catalyst for the Voting Rights Act of 1965. </p> <p>(Sec. 4) The medals struck pursuant to this Act are national medals.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ5/PLAW-114publ5.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ5/PLAW-114publ5_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ5/PLAW-114publ5.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/431",
       "votes": []
     },
     {
@@ -13352,6 +13729,44 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres38/BILLS-114sres38ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres38/BILLS-114sres38ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/38",
+      "votes": []
+    },
+    {
+      "id": "sres29-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "29",
+      "title": "A resolution condemning the terrorist attacks in Paris, offering condolences to the families of the victims, expressing solidarity with the people of France, and reaffirming fundamental freedom of expression.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Murphy, Christopher",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2015-01-20",
+      "latest_action": {
+        "date": "2015-01-20",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S300; text as passed Senate: CR S290-291)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Congressional tributes",
+        "Crime prevention",
+        "Crime victims",
+        "Criminal investigation, prosecution, interrogation",
+        "Europe",
+        "France",
+        "Human rights",
+        "News media and reporting",
+        "Religion",
+        "Terrorism"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Condemns the terrorist attacks and murders at the French newspaper <i>Charlie Hebdo</i> and the kosher market Hyper Cacher in Paris. </p> <p>Expresses: (1) condolences to the families of the victims and to the Republic of France; and (2) solidarity with the people of the Republic of France, and pays tribute to our shared values, ideals, and liberties, including the freedom of thought and expression and freedom of the press. </p> <p>Recognizes the statements from Muslim majority nations and leaders across the world that terrorist attacks purportedly conducted in Islam's name, such as the Paris attacks, are an affront to the Muslim faith. </p> <p>Reaffirms the support of the House of Representatives for the government of France to bring the perpetrators of this violence to justice and to prevent future attacks.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres29/BILLS-114sres29ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres29/BILLS-114sres29ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres29/BILLS-114sres29ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/29",
       "votes": []
     },
     {
