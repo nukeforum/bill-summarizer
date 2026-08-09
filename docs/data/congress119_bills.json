@@ -1,8 +1,561 @@
 {
-  "generated_at": "2026-08-08T07:29:49Z",
+  "generated_at": "2026-08-09T06:55:22Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "hr6500-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "6500",
+      "title": "Continuing Appropriations and Extensions Act, 2027",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Smith, Jason",
+        "party": "R",
+        "state": "MO"
+      },
+      "introduced_date": "2025-12-09",
+      "latest_action": {
+        "date": "2026-08-08",
+        "text": "Passed Senate with an amendment and an amendment to the Title by Yea-Nay Vote. 90 - 6. Record Vote Number: 228."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Foreign Trade and International Finance",
+      "subjects": [
+        "Africa",
+        "Competitiveness, trade promotion, trade deficits",
+        "Customs enforcement",
+        "Normal trade relations, most-favored-nation treatment",
+        "User charges and fees"
+      ],
+      "summary_crs": "<p><strong>AGOA Extension Act</strong></p><p>This bill extends through December 31, 2028, trade preferences that provide duty-free access to the U.S. market for most exports from eligible countries in sub-Saharan Africa (SSA). The bill also extends through December 31, 2031, customs user fees and merchandise processing fees.</p><p>Specifically, the bill extends through 2028 the duty-free treatment of the products of beneficiary&nbsp;SSA&nbsp;countries under the Trade Act of 1974 (specifically, the Generalized System of Preferences) and the African Growth and Opportunity Act (AGOA). (Currently, there are 32&nbsp;countries eligible for AGOA.)</p><p>Additionally, the extended period applies to the following provisions of AGOA: (1) the duty-free treatment of certain apparel articles from beneficiary SSA countries; and (2) the third-country fabric provision, which allows limited amounts of apparel articles from lesser developed beneficiary&nbsp;SSA countries to qualify for duty-free treatment, even if the yarns and fabrics used in their production are imported from non-AGOA countries (e.g., apparel assembled in Kenya with Chinese fabrics).</p><p>The bill also provides for the refund of duties (i.e., liquidation or reliquidation of entries) on articles from eligible&nbsp;SSA countries that entered into the United States after September 30, 2025, and before the date of this bill's enactment. A refund request must be filed with U.S. Customs and Border Protection (CBP) and must contain sufficient information for CBP to locate the entry or, if the entry cannot be located, reconstruct the entry. CBP must refund any duties previously paid with respect to the entry within 90 days.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr6500/BILLS-119hr6500eas.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr6500/BILLS-119hr6500eas.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr6500/BILLS-119hr6500eas.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/6500",
+      "votes": [
+        {
+          "id": "senate-119-2-218",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 218,
+          "date": "2026-08-03",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Agreed to",
+          "bill_id": "hr6500-119",
+          "totals": {
+            "yea": 89,
+            "nay": 4,
+            "present": 0,
+            "not_voting": 7
+          },
+          "party_split": {
+            "yea": {
+              "D": 39,
+              "I": 1,
+              "R": 49
+            },
+            "nay": {
+              "D": 2,
+              "I": 1,
+              "R": 1
+            },
+            "not_voting": {
+              "D": 4,
+              "R": 3
+            }
+          },
+          "path": "votes/congress119/senate-2-218.json"
+        },
+        {
+          "id": "house-119-2-14",
+          "chamber": "house",
+          "session": 2,
+          "roll_number": 14,
+          "date": "2026-01-12",
+          "question": "On Motion to Suspend the Rules and Pass, as Amended",
+          "result": "Passed",
+          "bill_id": "hr6500-119",
+          "totals": {
+            "yea": 340,
+            "nay": 54,
+            "present": 0,
+            "not_voting": 37
+          },
+          "party_split": {
+            "yea": {
+              "D": 191,
+              "R": 149
+            },
+            "nay": {
+              "D": 11,
+              "R": 43
+            },
+            "not_voting": {
+              "D": 11,
+              "R": 26
+            }
+          },
+          "path": "votes/congress119/house-2-14.json"
+        }
+      ]
+    },
+    {
+      "id": "hr1276-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "1276",
+      "title": "To remove restrictions from a parcel of land in Paducah, Kentucky.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Comer, James",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2025-02-13",
+      "latest_action": {
+        "date": "2026-08-07",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Kentucky",
+        "Land transfers",
+        "Land use and conservation"
+      ],
+      "summary_crs": "<p>This bill directs the Department of the Interior to remove all deed restrictions from approximately 3.62 acres located at 2956 Park Avenue, on the Paducah Memorial Army Reserve Center in&nbsp;Paducah, Kentucky. The restrictions include easements, exceptions, reservations, terms, conditions, and covenants described in the quitclaim deed that was executed on April 27, 2012. The deed conveyed land from Interior to the City of&nbsp;Paducah, Kentucky.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr1276/BILLS-119hr1276rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr1276/BILLS-119hr1276rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr1276/BILLS-119hr1276rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1276",
+      "votes": []
+    },
+    {
+      "id": "hr2069-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "2069",
+      "title": "Stop Secret Spending Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Moore, Barry",
+        "party": "R",
+        "state": "AL"
+      },
+      "introduced_date": "2025-03-11",
+      "latest_action": {
+        "date": "2026-08-07",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Budget deficits and national debt",
+        "Congressional oversight",
+        "Government information and archives",
+        "Internet, web applications, social media"
+      ],
+      "summary_crs": "<p><strong>Stop Secret Spending Act of 2025</strong></p><p>This bill expands a requirement for federal agencies to report expenditures on the USAspending.gov website to include <em>other transaction agreement </em>expenditures. (Other transaction agreements, or OTAs, are contractual instruments other than standard procurement contracts, grants, or cooperative agreements; they are exempt from many federal procurement laws and regulations).</p><p>Under current law, federal agencies must report expenditures on federal awards to USAspending.gov with the term <em>federal award</em> defined as federal grants, loans, cooperative agreements, contracts, and certain other types of expenditures. This bill expands the definition of federal award to include expenditures under OTAs, and therefore such expenditures must be included on the USAspending.gov website.</p><p>The Department of the Treasury must ensure that data relating to OTAs are automatically transmitted to the website and a centralized view of this data is available on the website.&nbsp;Treasury must also annually post on the&nbsp;USAspending.gov website a report that includes (1) the total amount of federal spending on federal awards for which data has not been posted on the website, and (2) the reason why such spending data was not posted.</p><p>For 10 years after enactment, the Office of Inspector General of specified federal agencies must periodically submit to Congress and make publicly available a report assessing the agency's spending data and use of data standards.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr2069/BILLS-119hr2069eh.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr2069/BILLS-119hr2069eh.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr2069/BILLS-119hr2069eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2069",
+      "votes": []
+    },
+    {
+      "id": "hr2196-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "2196",
+      "title": "National Emergency Medical Services Memorial Extension Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Hudson, Richard",
+        "party": "R",
+        "state": "NC"
+      },
+      "introduced_date": "2025-03-18",
+      "latest_action": {
+        "date": "2026-08-07",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Art, artists, authorship",
+        "District of Columbia",
+        "First responders and emergency personnel",
+        "Monuments and memorials"
+      ],
+      "summary_crs": "<p><strong>National Emergency Medical Services Memorial Extension Act</strong></p><p>This bill reauthorizes the National Emergency Medical Services Memorial Foundation to establish&nbsp;in Washington, DC, a monument to commemorate the commitment and service represented by emergency medical services. This authorization expires seven years after enactment of the bill.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr2196/BILLS-119hr2196rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr2196/BILLS-119hr2196rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr2196/BILLS-119hr2196rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2196",
+      "votes": []
+    },
+    {
+      "id": "hr5334-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "5334",
+      "title": "Lindsey O. Graham Sanctioning Russia and Iran Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Panetta, Jimmy",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2025-09-11",
+      "latest_action": {
+        "date": "2026-08-07",
+        "text": "Passed Senate with an amendment and an amendment to the Title by Yea-Nay Vote. 86 - 11. Record Vote Number: 224."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Taxation",
+      "subjects": [
+        "Income tax deductions",
+        "Preschool education",
+        "Teaching, teachers, curricula"
+      ],
+      "summary_crs": "<p><strong>Supporting Early-childhood Educators' Deductions Act of 2025 or the SEED Act of 2025</strong></p><p>This bill expands&nbsp;eligibility for the above-the-line federal tax deduction for certain eligible educator expenses to include early childhood educators. (An above-the-line tax deduction is subtracted from gross income to calculate adjusted gross income.)</p><p>Under current law, kindergarten through grade 12 teachers, instructors, counselors, principals, or aides in schools that provide&nbsp;elementary or secondary education are allowed an above-the-line tax deduction of up to $300 (in 2025 and adjusted annually) for certain unreimbursed professional development and classroom expenses. (Other conditions apply.)</p><p>The bill expands eligibility for the tax deduction for such educator expenses to include early childhood educators in schools that provide early childhood (pre-kindergarten) education.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr5334/BILLS-119hr5334eas.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr5334/BILLS-119hr5334eas.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr5334/BILLS-119hr5334eas.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/5334",
+      "votes": [
+        {
+          "id": "senate-119-2-224",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 224,
+          "date": "2026-08-07",
+          "question": "On Passage of the Bill",
+          "result": "Bill Passed",
+          "bill_id": "hr5334-119",
+          "totals": {
+            "yea": 86,
+            "nay": 11,
+            "present": 0,
+            "not_voting": 3
+          },
+          "party_split": {
+            "yea": {
+              "D": 36,
+              "I": 1,
+              "R": 49
+            },
+            "nay": {
+              "D": 9,
+              "I": 1,
+              "R": 1
+            },
+            "not_voting": {
+              "R": 3
+            }
+          },
+          "path": "votes/congress119/senate-2-224.json"
+        },
+        {
+          "id": "senate-119-2-213",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 213,
+          "date": "2026-07-29",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Agreed to",
+          "bill_id": "hr5334-119",
+          "totals": {
+            "yea": 84,
+            "nay": 12,
+            "present": 0,
+            "not_voting": 4
+          },
+          "party_split": {
+            "yea": {
+              "D": 33,
+              "I": 1,
+              "R": 50
+            },
+            "nay": {
+              "D": 10,
+              "I": 1,
+              "R": 1
+            },
+            "not_voting": {
+              "D": 2,
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-2-213.json"
+        },
+        {
+          "id": "senate-119-2-212",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 212,
+          "date": "2026-07-28",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Agreed to",
+          "bill_id": "hr5334-119",
+          "totals": {
+            "yea": 86,
+            "nay": 12,
+            "present": 0,
+            "not_voting": 2
+          },
+          "party_split": {
+            "yea": {
+              "D": 35,
+              "I": 1,
+              "R": 50
+            },
+            "nay": {
+              "D": 10,
+              "I": 1,
+              "R": 1
+            },
+            "not_voting": {
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-2-212.json"
+        }
+      ]
+    },
+    {
+      "id": "hr5366-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "5366",
+      "title": "Doug LaMalfa Federal Disaster Tax Relief Certainty Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Steube, W. Gregory",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2025-09-15",
+      "latest_action": {
+        "date": "2026-08-07",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Taxation",
+      "subjects": [
+        "Disaster relief and insurance",
+        "Fires",
+        "Forests, forestry, trees",
+        "Income tax deductions",
+        "Natural disasters"
+      ],
+      "summary_crs": "<p><strong>Doug LaMalfa Federal Disaster Tax Relief Certainty Act</strong></p><p>This bill extends the federal tax deduction for qualified disaster-related personal casualty losses and the exclusion from gross income of qualified wildfire relief payments.</p><p>Under current law, unreimbursed personal casualty losses arising in a qualified disaster area (qualified disaster-related personal casualty losses) are deductible (as an itemized tax deduction or as part of the standard tax deduction) if such losses exceed $500 per casualty.  A <em>qualified disaster area</em> is an area with respect to which a major disaster has been declared during the period beginning in 2020 and ending 60 days after&nbsp;July 4, 2025, if the incident period begins on or after December 28, 2019, and on or before July 4, 2025.</p><p>The bill extends the federal tax deduction for qualified disaster-related personal casualty losses by defining a <em>qualified disaster area</em> as an area with respect to which a major disaster&nbsp;has been declared if the incident period&nbsp;begins on or after December 28, 2019, and before January 1, 2027.</p><p>The bill provides&nbsp;that the exclusion from gross income of qualified wildfire relief payments applies to such payments attributable to forest or range fires declared a federal disaster after 2014 and before 2027, regardless of when such payments are received. (Currently, qualified wildfire relief payments attributable to forest or range fires declared a federal disaster after 2014 and received after 2019 and before 2026 may be excluded from gross income.)</p><p>The bill also provides statutory authority for several related tax rules.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr5366/BILLS-119hr5366rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr5366/BILLS-119hr5366rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr5366/BILLS-119hr5366rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/5366",
+      "votes": []
+    },
+    {
+      "id": "s1525-119",
+      "congress": 119,
+      "type": "s",
+      "number": "1525",
+      "title": "Common Cents Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lummis, Cynthia M.",
+        "party": "R",
+        "state": "WY"
+      },
+      "introduced_date": "2025-04-30",
+      "latest_action": {
+        "date": "2026-08-07",
+        "text": "Passed Senate with an amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Finance and Financial Sector",
+      "subjects": [
+        "Consumer affairs",
+        "Currency",
+        "Monetary policy"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s1525/BILLS-119s1525es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s1525/BILLS-119s1525es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s1525/BILLS-119s1525es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1525",
+      "votes": []
+    },
+    {
+      "id": "s2542-119",
+      "congress": 119,
+      "type": "s",
+      "number": "2542",
+      "title": "Federal Building Threat Notification Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Peters, Gary C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2025-07-30",
+      "latest_action": {
+        "date": "2026-08-07",
+        "text": "Passed Senate with an amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s2542/BILLS-119s2542es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s2542/BILLS-119s2542es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s2542/BILLS-119s2542es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2542",
+      "votes": []
+    },
+    {
+      "id": "s2677-119",
+      "congress": 119,
+      "type": "s",
+      "number": "2677",
+      "title": "A bill to expand the sharing of information with respect to suspected violations of intellectual property rights in trade.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Grassley, Chuck",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2025-08-01",
+      "latest_action": {
+        "date": "2026-08-07",
+        "text": "Passed Senate with an amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Foreign Trade and International Finance",
+      "subjects": [],
+      "summary_crs": "<p>This bill expands the authority of U.S. Customs and Border Protection (CBP) to provide information to&nbsp;certain persons (e.g., trademark or copyright owners) regarding suspected violations of intellectual property rights in trade.&nbsp;</p><p>Under current law, if&nbsp;CBP suspects that merchandise is being imported in violation of certain trademark and copyright laws,&nbsp;it may request assistance from specified persons when determining whether the merchandise is imported in violation of these laws. To permit the party to conduct examination and testing, CBP must provide them with specified information that appears on the merchandise and&nbsp;its packaging and labels.&nbsp;</p><p>This bill (1) expands the definition of <em>person</em> to allow CBP to request assistance from any other appropriate party with an interest in the imported merchandise, and (2) expands the scope of information that CBP is authorized to share with others to include information on and images of&nbsp;packing materials and shipping containers.</p><p>The bill allows CBP to request this assistance if it has a reasonable suspicion (currently, suspects) that the merchandise being imported is in violation of certain trademark and copyright laws.</p><p>Additionally,&nbsp;CBP may provide a person with nonpublic information about the imported merchandise that was generated by an online marketplace or similar market platform, express&nbsp;consignment operator, freight forwarder, or any other entity that plays a role in the sale, importation, or facilitation&nbsp;of the merchandise&nbsp;into the United States and has been provided to, shared with, or obtained by CBP.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s2677/BILLS-119s2677es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s2677/BILLS-119s2677es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s2677/BILLS-119s2677es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2677",
+      "votes": []
+    },
+    {
+      "id": "s3897-119",
+      "congress": 119,
+      "type": "s",
+      "number": "3897",
+      "title": "Officer John Barnes and Chief Michael Ansbro Public Safety Officers' Benefit Program Expansion Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Gillibrand, Kirsten E.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2026-02-24",
+      "latest_action": {
+        "date": "2026-08-07",
+        "text": "Passed Senate with an amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Congressional oversight",
+        "Disability assistance",
+        "Employee benefits and pensions",
+        "Government studies and investigations",
+        "Law enforcement officers"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s3897/BILLS-119s3897es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s3897/BILLS-119s3897es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s3897/BILLS-119s3897es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/3897",
+      "votes": []
+    },
+    {
+      "id": "s4850-119",
+      "congress": 119,
+      "type": "s",
+      "number": "4850",
+      "title": "Diversity Jurisdiction Inflation Adjustment Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kennedy, John",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2026-06-22",
+      "latest_action": {
+        "date": "2026-08-07",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Law",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s4850/BILLS-119s4850es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s4850/BILLS-119s4850es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s4850/BILLS-119s4850es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/4850",
+      "votes": []
+    },
+    {
+      "id": "sres815-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "815",
+      "title": "A resolution commending the Chicago Cubs baseball teams as it celebrates its 150th anniversary on August 29, 2026.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Durbin, Richard J.",
+        "party": "D",
+        "state": "IL"
+      },
+      "introduced_date": "2026-07-23",
+      "latest_action": {
+        "date": "2026-08-07",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Sports and Recreation",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres815/BILLS-119sres815is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres815/BILLS-119sres815is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres815/BILLS-119sres815is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/815",
+      "votes": []
+    },
+    {
+      "id": "sres820-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "820",
+      "title": "A resolution designating August 7, 2026, as \"National Lighthouse Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Peters, Gary C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2026-07-30",
+      "latest_action": {
+        "date": "2026-08-07",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres820/BILLS-119sres820is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres820/BILLS-119sres820is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres820/BILLS-119sres820is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/820",
+      "votes": []
+    },
     {
       "id": "s1838-119",
       "congress": 119,
@@ -21,7 +574,6 @@
         "text": "Passed Senate with an amendment by Voice Vote. (text of amendment in the nature of a substitute: CR S4495-4496)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [],
       "summary_crs": null,
@@ -49,7 +601,6 @@
         "text": "Passed Senate with an amendment by Voice Vote. (consideration: CR S4494-4495; text: CR S4494-4495)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Health programs administration and funding",
@@ -81,7 +632,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S4492-4493; text: CR S4492-4493)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Transportation and Public Works",
       "subjects": [
         "Advisory bodies",
@@ -120,7 +670,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (text: CR S4493-4494)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Advisory bodies",
@@ -151,10 +700,9 @@
       "introduced_date": "2026-08-06",
       "latest_action": {
         "date": "2026-08-06",
-        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4498-4499; text: CR S4523)"
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
       },
       "outcome": "passed_senate",
-      "status": null,
       "subjects": [],
       "summary_crs": null,
       "text_url_html": "https://www.congress.gov/119/bills/sres833/BILLS-119sres833ats.htm",
@@ -181,7 +729,6 @@
         "text": "Passed Senate with amendments by Unanimous Consent. (text: CR S4481)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Immigration",
       "subjects": [
         "Border security and unlawful immigration",
@@ -215,7 +762,6 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 50. Record Vote Number: 222."
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "Environmental Protection",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -279,7 +825,6 @@
         "text": "Passed Senate with an amendment by Voice Vote. (consideration: CR S4425-4426; text: CR S4425-4426)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Department of Health and Human Services",
@@ -319,7 +864,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S4426-4427; text: CR S4426-4427)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Advisory bodies",
@@ -354,7 +898,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S4412-4414; text: CR S4412-4414)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Advisory bodies",
@@ -392,7 +935,6 @@
         "text": "Passed Senate without amendment by Voice Vote. (consideration: CR S4411-4412; text: CR S4411-4412)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Commerce",
       "subjects": [
         "Child safety and welfare",
@@ -426,7 +968,6 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S4412; text: CR S4412)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Bankruptcy",
@@ -458,7 +999,6 @@
         "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 49 - 50. Record Vote Number: 216. (consideration: CR S4357)"
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": "<p>This joint resolution directs the President to remove U.S. Armed Forces from hostilities within or against Iran unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending against an attack on the United States or its personnel or facilities in other nations.</p>",
@@ -518,7 +1058,6 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 47 - 52. Record Vote Number: 215."
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "Families",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -581,7 +1120,6 @@
         "text": "Resolution agreed to in Senate without amendment by Yea-Nay Vote. 50 - 47. Record Vote Number: 217."
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Congress",
       "subjects": [
         "Diplomacy, foreign officials, Americans abroad",
@@ -675,7 +1213,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4311)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Correctional facilities and imprisonment",
@@ -710,7 +1247,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4286)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Civil Rights and Liberties, Minority Issues",
       "subjects": [
         "Commemorative events and holidays",
@@ -994,8 +1530,7 @@
         "date": "2026-07-12",
         "text": "Became Public Law No: 119-102."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Agriculture and Food",
       "subjects": [
         "Agricultural prices, subsidies, credit",
@@ -1061,8 +1596,7 @@
         "date": "2026-07-11",
         "text": "Became Public Law No: 119-101."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Housing and Community Development",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -1401,8 +1935,7 @@
         "date": "2026-06-26",
         "text": "Became Public Law No: 119-100."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Animal protection and human-animal relationships",
@@ -1970,7 +2503,6 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 48. Record Vote Number: 173. (consideration: CR S2816)"
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "Immigration",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -2062,8 +2594,7 @@
         "date": "2026-06-12",
         "text": "Became Public Law No: 119-99."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Native Americans",
       "subjects": [
         "Alaska",
