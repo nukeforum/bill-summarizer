@@ -1,8 +1,68 @@
 {
-  "generated_at": "2026-08-08T07:29:49Z",
+  "generated_at": "2026-08-09T07:32:57Z",
   "bioguide_id": "C001035",
-  "vote_count": 885,
+  "vote_count": 890,
   "votes": [
+    {
+      "vote_id": "senate-119-2-231",
+      "congress": 119,
+      "date": "2026-08-08",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "position": "yea",
+      "bill_id": "s5271-119",
+      "type": "s",
+      "number": "5271",
+      "short_title": null
+    },
+    {
+      "vote_id": "senate-119-2-230",
+      "congress": 119,
+      "date": "2026-08-08",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "position": "nay",
+      "bill_id": null,
+      "type": null,
+      "number": null,
+      "short_title": null
+    },
+    {
+      "vote_id": "senate-119-2-229",
+      "congress": 119,
+      "date": "2026-08-08",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "position": "nay",
+      "bill_id": null,
+      "type": null,
+      "number": null,
+      "short_title": null
+    },
+    {
+      "vote_id": "senate-119-2-228",
+      "congress": 119,
+      "date": "2026-08-08",
+      "question": "On Passage of the Bill",
+      "result": "Bill Passed",
+      "position": "yea",
+      "bill_id": "hr6500-119",
+      "type": "hr",
+      "number": "6500",
+      "short_title": null
+    },
+    {
+      "vote_id": "senate-119-2-227",
+      "congress": 119,
+      "date": "2026-08-08",
+      "question": "On the Motion to Table",
+      "result": "Motion to Table Agreed to",
+      "position": "nay",
+      "bill_id": null,
+      "type": null,
+      "number": null,
+      "short_title": null
+    },
     {
       "vote_id": "senate-119-2-226",
       "congress": 119,

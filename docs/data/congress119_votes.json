@@ -1,8 +1,165 @@
 {
-  "generated_at": "2026-08-08T07:29:49Z",
+  "generated_at": "2026-08-09T07:32:57Z",
   "congress": 119,
-  "vote_count": 1529,
+  "vote_count": 1534,
   "votes": [
+    {
+      "id": "senate-119-2-231",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 231,
+      "date": "2026-08-08",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "s5271-119",
+      "totals": {
+        "yea": 52,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-231.json"
+    },
+    {
+      "id": "senate-119-2-230",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 230,
+      "date": "2026-08-08",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 50,
+        "nay": 49,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 45,
+          "I": 2,
+          "R": 2
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-230.json"
+    },
+    {
+      "id": "senate-119-2-229",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 229,
+      "date": "2026-08-08",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 50,
+        "nay": 49,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 45,
+          "I": 2,
+          "R": 2
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-229.json"
+    },
+    {
+      "id": "senate-119-2-228",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 228,
+      "date": "2026-08-08",
+      "question": "On Passage of the Bill",
+      "result": "Bill Passed",
+      "bill_id": "hr6500-119",
+      "totals": {
+        "yea": 90,
+        "nay": 6,
+        "present": 1,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 42,
+          "I": 1,
+          "R": 47
+        },
+        "nay": {
+          "D": 3,
+          "I": 1,
+          "R": 2
+        },
+        "present": {
+          "R": 1
+        },
+        "not_voting": {
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-228.json"
+    },
+    {
+      "id": "senate-119-2-227",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 227,
+      "date": "2026-08-08",
+      "question": "On the Motion to Table",
+      "result": "Motion to Table Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 61,
+        "nay": 32,
+        "present": 0,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 34,
+          "I": 1,
+          "R": 26
+        },
+        "nay": {
+          "D": 11,
+          "R": 21
+        },
+        "not_voting": {
+          "I": 1,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/senate-2-227.json"
+    },
     {
       "id": "senate-119-2-226",
       "chamber": "senate",
