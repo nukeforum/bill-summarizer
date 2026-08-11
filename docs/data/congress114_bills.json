@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T13:21:51Z",
+  "generated_at": "2026-08-11T13:18:30Z",
   "congress": 114,
   "votes_coverage": false,
   "bills": [
@@ -210,6 +210,41 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ290/PLAW-114publ290_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ290/PLAW-114publ290.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/4887",
+      "votes": []
+    },
+    {
+      "id": "hr5015-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "5015",
+      "title": "Combat-Injured Veterans Tax Fairness Act of 2016",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Rouzer, David",
+        "party": "R",
+        "state": "NC"
+      },
+      "introduced_date": "2016-04-20",
+      "latest_action": {
+        "date": "2016-12-16",
+        "text": "Became Public Law No: 114-292."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Conflicts and wars",
+        "Congressional oversight",
+        "Disability and paralysis",
+        "Government studies and investigations",
+        "Income tax exclusion",
+        "Tax administration and collection, taxpayers",
+        "Veterans' pensions and compensation"
+      ],
+      "summary_crs": " <p><strong>Combat-Injured Veterans Tax Fairness Act of 2016</strong></p> <p>(Sec. 3) This bill directs the Department of Defense (DOD), within one year after enactment of this bill, to identify: </p> <ul> <li>certain disability severance payments that were not considered gross income to veterans with combat-related injuries paid after January 17, 1991, from which DOD withheld amounts for tax purposes, and </li> <li>the individuals to whom such severance payments were made. </li> </ul> <p>DOD shall provide each such veteran with: (1) notice of the amount of improperly withheld severance payments, and (2) instructions for filing amended tax returns to recover such amount.</p> <p>The period for filing a related claim with the Internal Revenue Service for a credit or refund is extended beyond the three-year limitation to the date that is one year after DOD provides the veteran with the information required by this bill. </p> <p>(Sec. 4) DOD shall ensure that amounts are not withheld for tax purposes from DOD severance payments to individuals when such payments are not considered gross income.</p> <p>(Sec. 5) DOD shall report on: (1) the number of identified individuals, (2) the aggregate amount of payments withheld for tax purposes from such severance payments, and (3) a description of how DOD shall ensure that the withheld amounts will not be considered gross income to the affected individuals.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ292/PLAW-114publ292.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ292/PLAW-114publ292_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ292/PLAW-114publ292.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/5015",
       "votes": []
     },
     {
@@ -732,6 +767,40 @@
       "votes": []
     },
     {
+      "id": "hr6130-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "6130",
+      "title": "Holocaust Expropriated Art Recovery Act of 2016",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Goodlatte, Bob",
+        "party": "R",
+        "state": "VA"
+      },
+      "introduced_date": "2016-09-22",
+      "latest_action": {
+        "date": "2016-12-16",
+        "text": "Became Public Law No: 114-308."
+      },
+      "outcome": "enacted",
+      "policy_area": "Law",
+      "subjects": [
+        "Art, artists, authorship",
+        "Civil actions and liability",
+        "Europe",
+        "Germany",
+        "Historical and cultural resources",
+        "War crimes, genocide, crimes against humanity"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the House passed version is repeated here.) </p><p><b>Holocaust Expropriated Art Recovery Act of 2016</b></p> <p>(Sec. 5) This bill allows civil claims or causes of action for the recovery of artwork or certain other property lost between January 1, 1933, and December 31, 1945, because of Nazi persecution to be commenced within six years after the claimant's actual discovery of: (1) the identity and location of the artwork or other property, and (2) a possessory interest in the artwork or property.</p> <p>Such statutory limitation period of six years after actual discovery preempts any other statutes of limitation or defenses relating to the passage of time.</p> <p>Preexisting claims known by a claimant before enactment of this bill shall be considered discovered on the date of this bill's enactment if they were barred before, or not barred on, the date of enactment.</p> <p>This bill applies to claims or actions that are: (1) pending on the date of this bill's enactment, including an action for which the time to file an appeal has not expired; or (2) filed after enactment but before 2027. But the bill does not apply to claims barred on the day before enactment of this bill if: (1) the claimant had knowledge on or after January 1, 1999, and (2) six years have passed from the date such claimant acquired such knowledge and during which time the claim was not barred by a statute of limitations.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ308/PLAW-114publ308.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ308/PLAW-114publ308_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ308/PLAW-114publ308.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/6130",
+      "votes": []
+    },
+    {
       "id": "hr6138-114",
       "congress": 114,
       "type": "hr",
@@ -853,6 +922,37 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ313/PLAW-114publ313_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ313/PLAW-114publ313.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/6323",
+      "votes": []
+    },
+    {
+      "id": "hr6400-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "6400",
+      "title": "To revise the boundaries of certain John H. Chafee Coastal Barrier Resources System units in New Jersey.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Pallone, Frank, Jr.",
+        "party": "D",
+        "state": "NJ"
+      },
+      "introduced_date": "2016-11-29",
+      "latest_action": {
+        "date": "2016-12-16",
+        "text": "Became Public Law No: 114-314."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Marine and coastal resources, fisheries",
+        "New Jersey",
+        "Seashores and lakeshores"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the House passed version is repeated here.)</p> <p>(Sec. \t1)\tThis bill modifies certain boundaries of the John H. Chafee Coastal Barrier Resources System Units located in Middlesex and Monmouth Counties, New Jersey.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ314/PLAW-114publ314.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ314/PLAW-114publ314_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ314/PLAW-114publ314.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/6400",
       "votes": []
     },
     {
@@ -1005,6 +1105,77 @@
       "votes": []
     },
     {
+      "id": "hr875-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "875",
+      "title": "Cross-Border Trade Enhancement Act of 2016",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Cuellar, Henry",
+        "party": "D",
+        "state": "TX"
+      },
+      "introduced_date": "2015-02-11",
+      "latest_action": {
+        "date": "2016-12-16",
+        "text": "Became Public Law No: 114-279."
+      },
+      "outcome": "enacted",
+      "policy_area": "Foreign Trade and International Finance",
+      "subjects": [
+        "Agricultural trade",
+        "Border security and unlawful immigration",
+        "Customs enforcement",
+        "Department of Homeland Security",
+        "Executive agency funding and structure",
+        "Public contracts and procurement",
+        "User charges and fees"
+      ],
+      "summary_crs": " <p><b>Cross-Border Trade Enhancement Act of 2016</b></p> <p />(Sec. 2) This bill amends the Homeland Security Act of 2002 to authorize the U.S. Customs and Border Protection (CBP) to enter into agreements with certain entities for the CBP to provide customs, agricultural processing, border security, or inspection-related immigration services at federal-owned land, or sea or air ports of entry, subject to payment of a fee to reimburse the CBP for providing such services. The bill prescribes requirements for the termination of CBP services and the imposition of a penalty after notice and demand for payment of fees not timely paid by an entity. <p />The CBP and the General Services Administration may enter into an agreement with an entity to accept donations of: <ul> <li>personal property, money, or nonpersonal services for use in the purchase and installation of furniture and other equipment at new or existing sea or air ports of entry or new or existing federal-owned land ports of entry; or</li> <li>real property or money for use in the construction or maintenance of such facilities.</li> </ul> <p>The CBP shall establish, and make available to the public, criteria for evaluating a proposal to enter into agreements to accept donations.</p> <p>CBP and the Government Accountability Office shall report annually to specified congressional committees on CBP fee agreements and donations. </p> <p>(Sec. 3) Modifies CBP reporting requirements under the Trade Facilitation and Trade Enforcement Act of 2015 to include reporting on reimbursable fee agreements with CBP.</p> <p>(Sec. 4) The bill amends the Consolidated and Further Continuing Appropriations Act, 2013, and the Consolidated Appropriations Act, 2014, to repeal:</p> <ul> <li>CBP authority to enter into reimbursable fee agreements for a period of up to five years, and</li> <li>the partnership pilot program allowing CBP to enter into partnerships with the private sector and government entities at ports of entry for certain CBP services and to accept certain donations.</li> </ul> <p>(Sec. 5) The bill amends the Anti-Border Corruption Act of 2010 to permit the CBP to waive certain polygraph examination requirements for certain qualifying applicants for law enforcement positions with CBP.</p> <p />",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ279/PLAW-114publ279.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ279/PLAW-114publ279_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ279/PLAW-114publ279.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/875",
+      "votes": []
+    },
+    {
+      "id": "hr960-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "960",
+      "title": "To designate the Department of Veterans Affairs community-based outpatient clinic in Newark, Ohio, as the Daniel L. Kinnard VA Clinic.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Tiberi, Patrick J.",
+        "party": "R",
+        "state": "OH"
+      },
+      "introduced_date": "2015-02-12",
+      "latest_action": {
+        "date": "2016-12-16",
+        "text": "Became Public Law No: 114-280."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Congressional tributes",
+        "Department of Veterans Affairs",
+        "Government buildings, facilities, and property",
+        "Health facilities and institutions",
+        "Home and outpatient care",
+        "Military personnel and dependents",
+        "Ohio",
+        "Veterans' medical care"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was passed by the House on May 23, 2016. The summary of that version is repeated here.)</p> <p>(Sec. 2) The Department of Veterans Affairs community based outpatient clinic in Newark, Ohio, shall be known as the &quot;Daniel L. Kinnard VA Clinic.&quot;</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ280/PLAW-114publ280.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ280/PLAW-114publ280_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ280/PLAW-114publ280.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/960",
+      "votes": []
+    },
+    {
       "id": "s2971-114",
       "congress": 114,
       "type": "s",
@@ -1116,6 +1287,41 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ277/PLAW-114publ277_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ277/PLAW-114publ277.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/6297",
+      "votes": []
+    },
+    {
+      "id": "hr4419-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "4419",
+      "title": "District of Columbia Judicial Financial Transparency Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Del. Norton, Eleanor Holmes [D-DC-At Large]",
+        "party": "D",
+        "state": "DC"
+      },
+      "introduced_date": "2016-02-01",
+      "latest_action": {
+        "date": "2016-12-14",
+        "text": "Became Public Law No: 114-257."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "District of Columbia",
+        "Government ethics and transparency, public corruption",
+        "Government information and archives",
+        "Judges",
+        "Judicial procedure and administration",
+        "State and local courts",
+        "State and local government operations"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it passed the House on September 22, 2016. The summary of that version is repeated here.)</p> <p><b>District of Columbia Judicial Financial Transparency Act </b></p> <p>(Sec. 2) This bill amends the District of Columbia Code to revise the financial disclosure requirements for District of Columbia judges. The revisions establish new dollar thresholds and requirements for reporting to the District of Columbia Commission on Judicial Disabilities and Tenure the financial interests of the judges and specified family members with respect to: </p> <ul> <li> income; </li> <li> dividends, rents, interest, and capital gains; </li> <li> liabilities; </li> <li> gifts; </li> <li>real and personal property;</li> <li> honoraria; </li> <li> expense accounts or reimbursements for expenses; and </li> <li> waivers or partial waivers of fees or charges. </li> </ul> <p>The financial disclosure reports must be available for public inspection and copying, unless revealing personal and sensitive information could endanger the judge or a family member. A report may be redacted only: (1) to the extent necessary to protect the individual or family member, and (2) as long as the danger to the individual exists.</p> <p>(Sec. 3) The Probate Divisions of the Superior Court of the District of Columbia may use magistrate judges. <p>(Sec. 4) DC courts may accept payment of fines, fees, escrow payments, restitution, bonds, and other payments by credit card or electronic funds transfer. The executive officer of the courts may contract with a bank or credit card vendor, or other third party provider, to accept such payments, making every effort to find the lowest cost vendor among them. <p>(Sec. 5) The maximum amount in controversy for cases under the Small Claims and Conciliation Branch of DC Superior Court shall increase from $5,000 to $10,000. <p>(Sec. 6) Each chief judge of the Superior Court or of the Court of Appeals, as appropriate, may delegate to an active or senior judge (in the court in which the chief judge sits) the authority to approve any compensation for court-appointed criminal defense or child abuse and neglect attorneys exceeding the usual maximum.",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ257/PLAW-114publ257.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ257/PLAW-114publ257_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ257/PLAW-114publ257.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/4419",
       "votes": []
     },
     {
@@ -1288,6 +1494,40 @@
       "votes": []
     },
     {
+      "id": "s2974-114",
+      "congress": 114,
+      "type": "s",
+      "number": "2974",
+      "title": "A bill to ensure funding for the National Human Trafficking Hotline, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Klobuchar, Amy",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2016-05-23",
+      "latest_action": {
+        "date": "2016-12-14",
+        "text": "Became Public Law No: 114-271."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Crime victims",
+        "Department of Justice",
+        "Executive agency funding and structure",
+        "Health programs administration and funding",
+        "Human trafficking",
+        "Law enforcement administration and funding"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the Senate passed version is repeated here.)</p> <p>(Sec. 1) This bill amends the Victims of Trafficking and Violence Protection Act of 2000 to eliminate the provision that specifies that Department of Health and Human Services national human trafficking hotline grants be funded by amounts made available to the Department of Justice for trafficking victim services grants.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ271/PLAW-114publ271.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ271/PLAW-114publ271_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ271/PLAW-114publ271.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/2974",
+      "votes": []
+    },
+    {
       "id": "s3183-114",
       "congress": 114,
       "type": "s",
@@ -1414,6 +1654,38 @@
       "votes": []
     },
     {
+      "id": "s818-114",
+      "congress": 114,
+      "type": "s",
+      "number": "818",
+      "title": "A bill to amend the Grand Ronde Reservation Act to make technical corrections, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wyden, Ron",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2015-03-19",
+      "latest_action": {
+        "date": "2016-12-14",
+        "text": "Became Public Law No: 114-263."
+      },
+      "outcome": "enacted",
+      "policy_area": "Native Americans",
+      "subjects": [
+        "Federal-Indian relations",
+        "Indian lands and resources rights",
+        "Land transfers",
+        "Oregon"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was reported to the Senate on March 16, 2016. The summary of that version is repeated here.)</p> <p> (Sec. 1) The Department of the Interior may accept title to any real property located within the boundaries of the original 1857 reservation of the Confederated Tribes of the Grand Ronde Community of Oregon (comprising land within the political boundaries of Polk and Yamhill Counties, Oregon), if such real property is transferred to the United States by or on behalf of the tribes. </p> <p>Interior must treat such a transfer of real property as an on-reservation trust acquisition. Gaming is prohibited on such real property, except for real property within two miles of a specified gaming facility. Real property taken into trust within the boundaries of the original reservation after September 9, 1988, must be considered part of the reservation.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ263/PLAW-114publ263.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ263/PLAW-114publ263_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ263/PLAW-114publ263.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/818",
+      "votes": []
+    },
+    {
       "id": "sres335-114",
       "congress": 114,
       "type": "sres",
@@ -1509,6 +1781,40 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres636/BILLS-114sres636ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres636/BILLS-114sres636ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/636",
+      "votes": []
+    },
+    {
+      "id": "sres637-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "637",
+      "title": "A resolution honoring the individuals who lost their lives in the tragic fire in Oakland, California, on December 2, 2016.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feinstein, Dianne",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2016-12-10",
+      "latest_action": {
+        "date": "2016-12-10",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S7121; text as passed Senate: CR S7037-7038)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Emergency Management",
+      "subjects": [
+        "California",
+        "Congressional tributes",
+        "Department of Justice",
+        "Fires",
+        "First responders and emergency personnel",
+        "Law enforcement officers"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Honors: (1) the individuals who lost their lives in the tragic fire in Oakland, California, on December 2, 2016; and (2) the sacrifice of the individuals who put themselves in harm's way to help save lives and to respond to the fire. Expresses support for Oakland's continued emergency response efforts and work to assist the victims' families. </p> <p>Offers condolences and support to the victims' families and loved ones. Expresses solidarity with the people of the East Bay of California as they work to heal their community.</p> <p>Reaffirms a commitment to support long-term recovery efforts in partnership with local and state governments, citizens, and businesses. </p>  <ul> </ul>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres637/BILLS-114sres637ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres637/BILLS-114sres637ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres637/BILLS-114sres637ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/637",
       "votes": []
     },
     {
@@ -1842,6 +2148,33 @@
       "votes": []
     },
     {
+      "id": "sres627-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "627",
+      "title": "A resolution designating December 3, 2016, as \"National Phenylketonuria Awareness Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Isakson, Johnny",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2016-12-01",
+      "latest_action": {
+        "date": "2016-12-01",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S6681; text as passed Senate: CR S6667)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates December 3, 2016, as National Phenylketonuria Awareness Day. (Phenylketonuria or PKU is a rare, inherited metabolic disorder that can cause intellectual disability and other neurological problems.)</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres627/BILLS-114sres627ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres627/BILLS-114sres627ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres627/BILLS-114sres627ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/627",
+      "votes": []
+    },
+    {
       "id": "sres628-114",
       "congress": 114,
       "type": "sres",
@@ -2081,6 +2414,41 @@
       "votes": []
     },
     {
+      "id": "hr4511-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "4511",
+      "title": "Gold Star Families Voices Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Smith, Christopher H.",
+        "party": "R",
+        "state": "NJ"
+      },
+      "introduced_date": "2016-02-09",
+      "latest_action": {
+        "date": "2016-11-28",
+        "text": "Became Public Law No: 114-246."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Conflicts and wars",
+        "Congressional agencies",
+        "Government information and archives",
+        "Library of Congress",
+        "Military history",
+        "Military personnel and dependents",
+        "Veterans' organizations and recognition"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the House reported version is repeated here.)</p> <p><strong>Gold Star Families Voices Act</strong></p> <p>(Sec. 2) This bill amends the Veterans' Oral History Project Act to require the veterans oral history program to include the collection of video and audio recordings of biographical histories by immediate family members of members of the Armed Forces who became missing in action or who died as a result of their wartime service.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ246/PLAW-114publ246.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ246/PLAW-114publ246_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ246/PLAW-114publ246.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/4511",
+      "votes": []
+    },
+    {
       "id": "hr5392-114",
       "congress": 114,
       "type": "hr",
@@ -2150,6 +2518,39 @@
       "votes": []
     },
     {
+      "id": "hr845-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "845",
+      "title": "National Forest System Trails Stewardship Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Lummis, Cynthia M. [R-WY-At Large]",
+        "party": "R",
+        "state": "WY"
+      },
+      "introduced_date": "2015-02-10",
+      "latest_action": {
+        "date": "2016-11-28",
+        "text": "Became Public Law No: 114-245."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Forests, forestry, trees",
+        "Licensing and registrations",
+        "Parks, recreation areas, trails",
+        "Social work, volunteer service, charitable organizations",
+        "User charges and fees"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was reported to the House on September 20, 2016<strong>. </strong>The summary of that version is repeated here.)</p> <p><b>National Forest System Trails Stewardship Act</b></p> <p> (Sec. 4) This bill directs the Department of Agriculture (USDA) to publish a national strategy to significantly increase the role of volunteers and partners in trail maintenance. </p> <p> The strategy shall: </p> <ul> <li> augment and support the capabilities of federal employees to carry out or contribute to trail maintenance; </li> <li> provide opportunities for volunteers and partners to carry out trail maintenance in each region of the Forest Service; </li> <li> address the barriers to increased volunteerism and partnerships; </li> <li> prioritize increased volunteerism and partnerships in those regions with the most severe trail maintenance needs, and where backlogs are jeopardizing access to national forest lands; and </li> <li> aim to increase trail maintenance by volunteers and partners by 100% within 5 years. </li> </ul> <p> As a component of the strategy, USDA shall study opportunities to improve trail maintenance by addressing opportunities to use fire crews in trail maintenance activities that do not jeopardize firefighting capabilities, public safety, or resource protection. Upon a determination that trail maintenance would be advanced by the use of fire crews, USDA shall incorporate these proposals into the strategy. </p> <p>The Volunteers in the National Forest Act of 1972 is amended, for purposes of certain provisions relating to the employment status of volunteers in the National Forests Program, to include as a volunteer a person providing volunteer services to USDA who is recruited, trained, and supported by a cooperator under a mutual benefit agreement with the USDA. </p> <p>Such a volunteer also performs such volunteer services under the cooperator's supervision as directed by the USDA in such agreement, including direction that specifies:</p> <ul> <li>the volunteer services to be performed by the volunteers and the supervision to be provided by the cooperator;</li> <li>the project safety standards and protocols to be adhered to by the volunteers and enforced by the cooperator; and </li> <li>the on-site visits to be made by USDA, when feasible, to verify that volunteers are performing the volunteer services and the cooperator is providing the supervision agreed upon. </li> </ul> <p>USDA shall adopt regulations for the implementation of this section. Such regulations shall ensure that the financial risk from claims or liability associated with volunteers who undertake trail maintenance is shared by all administrative units. </p> <p>USDA shall report on: </p> <ul> <li>the effectiveness of the strategy in addressing the trail maintenance backlog;</li> <li>the increase in volunteerism and partnership efforts on trail maintenance as a result of the strategy;</li> <li>the miles of National Forest System trails maintained by volunteers and partners, and the approximate value of volunteer and partnership efforts;</li> <li>the status of the stewardship credits for the outfitters and guides pilot program established by this bill; and</li> <li>recommendations for further increasing volunteerism and partnerships in trail maintenance. </li> </ul> <p>(Sec. 5) USDA shall select at least 9 and no more than 15 priority areas for increased trail maintenance accomplishments.</p> <p>Priority areas shall include a well-defined region on National Forest System land where the lack of trail maintenance has:</p> <ul> <li>reduced access to public land;</li> <li>led to an increase, or risk of increase, in harm to natural resources;</li> <li>jeopardized public safety;</li> <li>resulted in trails being impassible by the intended managed users; or </li> <li>increased future deferred trail maintenance costs. </li> </ul> <p>In selecting priority areas, USDA shall:</p> <ul> <li>consider any public input received on such areas within three months of enactment of this bill;</li> <li>consider the range of trail users, including motorized and non-motorized trail users; and</li> <li>include at least one such area in each region of the Forest Service. </li> </ul> <p>Within six months of the selection of the priority areas, USDA shall develop an approach to substantially increase trail maintenance accomplishments within each area. </p> <p>In developing such an approach, USDA shall:</p> <ul> <li>consider any public input received on trail maintenance priorities and needs within the priority area,</li> <li>consider the costs and benefits of increased trail maintenance within the priority area, and </li> <li>incorporate partners and volunteers in the trail's maintenance. </li> </ul> <p>In utilizing such an approach, USDA shall substantially increase trail maintenance within each of the priority areas.</p> <p>Regional volunteer and partnership coordinators may be responsible in assisting partner organizations in the development and implementation of volunteer and partnership projects to increase trail maintenance within the priority areas.</p> <p>USDA shall, in its sole discretion, periodically review the priority areas to determine whether revisions are necessary and may revise such areas, including by the selection of new areas or the removal of existing areas. </p> <p>(Sec. 6) USDA may enter into cooperative agreements with any state, tribal, local governmental, and private entities to carry out this bill. </p> <p>A cooperative agreement authorized under this section may:</p> <ul> <li>improve trail maintenance in a priority area,</li> <li>implement the strategy, or </li> <li>advance trail maintenance as deemed appropriate by the USDA.</li> </ul> <p>(Sec. 7) USDA shall establish a pilot program on at least 20 administrative units to offset all or part of the land use fee for an outfitting and guiding permit by the cost of the work performed by the permit holder for the construction, improvement, or maintenance of National Forest System trails, trailheads, or developed sites that support public use. </p> <p>In establishing the pilot program, USDA shall:</p> <ul> <li>select administrative units where the pilot program will improve trail maintenance; and </li> <li>establish appropriate terms and conditions, including those meeting the National Quality Standards for Trails and the Trail Management Objectives identified for the trail. </li> </ul>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ245/PLAW-114publ245.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ245/PLAW-114publ245_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ245/PLAW-114publ245.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/845",
+      "votes": []
+    },
+    {
       "id": "sres604-114",
       "congress": 114,
       "type": "sres",
@@ -2207,6 +2608,33 @@
       "votes": []
     },
     {
+      "id": "sres619-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "619",
+      "title": "A resolution recognizing National Native American Heritage Month and celebrating the heritages and cultures of Native Americans and the contributions of Native Americans to the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Barrasso, John",
+        "party": "R",
+        "state": "WY"
+      },
+      "introduced_date": "2016-11-17",
+      "latest_action": {
+        "date": "2016-11-17",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S6496-6497; text as passed Senate: CR S6490)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Native Americans",
+      "subjects": [],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Recognizes November 2016 as National Native American Heritage Month and the Friday after Thanksgiving as Native American Heritage Day. </p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres619/BILLS-114sres619ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres619/BILLS-114sres619ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres619/BILLS-114sres619ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/619",
+      "votes": []
+    },
+    {
       "id": "sres560-114",
       "congress": 114,
       "type": "sres",
@@ -2236,6 +2664,38 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres560/BILLS-114sres560ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres560/BILLS-114sres560ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/560",
+      "votes": []
+    },
+    {
+      "id": "hr2733-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "2733",
+      "title": "Nevada Native Nations Land Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Amodei, Mark E.",
+        "party": "R",
+        "state": "NV"
+      },
+      "introduced_date": "2015-06-11",
+      "latest_action": {
+        "date": "2016-10-07",
+        "text": "Became Public Law No: 114-232."
+      },
+      "outcome": "enacted",
+      "policy_area": "Native Americans",
+      "subjects": [
+        "Federal-Indian relations",
+        "Indian lands and resources rights",
+        "Land transfers",
+        "Nevada"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was reported to the House on April 12, 2016. The summary of that version is repeated here.)</p> <p><b>Nevada Native Nations Land Act</b></p> <p>(Sec. 3) This bill requires the United States to hold in trust the following lands for the benefit of:</p> <ul> <li>the Fort McDermitt Paiute and Shoshone Tribe of the Fort McDermitt Indian Reservation, 19,094 acres of Bureau of Land Management (BLM) land;</li> <li>the Shoshone-Paiute Tribes of the Duck Valley Indian Reservation, 82 acres of Forest Service land;</li> <li>the Summit Lake Paiute Tribe, 941 acres of BLM land;</li> <li>the Reno-Sparks Indian Colony, 13,434 acres of BLM land;</li> <li>the Pyramid Lake Paiute Tribe, 6,357 acres of BLM land; and</li> <li>the Duckwater Shoshone Tribe, 31,269 acres of BLM land.</li> </ul> <p>The lands held for these tribes shall be part of their respective reservations.</p> <p>(Sec. 4) Gaming is prohibited on these lands.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ232/PLAW-114publ232.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ232/PLAW-114publ232_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ232/PLAW-114publ232.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/2733",
       "votes": []
     },
     {
@@ -2339,6 +2799,36 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ236/PLAW-114publ236_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ236/PLAW-114publ236.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/5578",
+      "votes": []
+    },
+    {
+      "id": "hr5883-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "5883",
+      "title": "Clarification of Treatment of Electronic Sales of Livestock Act of 2016",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Rouzer, David",
+        "party": "R",
+        "state": "NC"
+      },
+      "introduced_date": "2016-07-14",
+      "latest_action": {
+        "date": "2016-10-07",
+        "text": "Became Public Law No: 114-237."
+      },
+      "outcome": "enacted",
+      "policy_area": "Agriculture and Food",
+      "subjects": [
+        "Agricultural marketing and promotion",
+        "Livestock"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was reported to the House on September 20, 2016. The summary of that version is repeated here.)</p><p><b>Clarification of Treatment of Electronic Sales of Livestock Act of 2016</b></p> <p>(Sec. 2) This bill amends the Packers and Stockyards Act, 1921 to expand the definition of &quot;marketing agency&quot; to include any person who engages in the business of buying or selling livestock, on a commission or other fee basis, through the use of online, video, or other electronic methods. The term &quot;marketing agency&quot; does not include a person whose annual average of online, video, or electronic sales of livestock, on a commission or other fee basis, is less than $250,000.</p> <p>(Sec. 3) The bill also permits electronic funds transfers and other expeditious payment methods that the Department of Agriculture determines to be appropriate to be used as options for meeting prompt payment requirements for livestock purchases. </p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ237/PLAW-114publ237.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ237/PLAW-114publ237_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ237/PLAW-114publ237.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/5883",
       "votes": []
     },
     {
@@ -2784,6 +3274,36 @@
       "votes": []
     },
     {
+      "id": "sres600-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "600",
+      "title": "A resolution designating the week of September 26 through 30, 2016, as \"National Adult Education and Family Literacy Week\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Murray, Patty",
+        "party": "D",
+        "state": "WA"
+      },
+      "introduced_date": "2016-09-29",
+      "latest_action": {
+        "date": "2016-09-29",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S6286; text as passed Senate: CR S6277)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Education",
+      "subjects": [
+        "Adult education and literacy",
+        "Commemorative events and holidays"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates the week of September 26-30, 2016, as National Adult Education and Family Literacy Week.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres600/BILLS-114sres600ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres600/BILLS-114sres600ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres600/BILLS-114sres600ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/600",
+      "votes": []
+    },
+    {
       "id": "sres601-114",
       "congress": 114,
       "type": "sres",
@@ -2845,6 +3365,37 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres562/BILLS-114sres562ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres562/BILLS-114sres562ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/562",
+      "votes": []
+    },
+    {
+      "id": "sres585-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "585",
+      "title": "A resolution designating October 26, 2016, as \"Day of the Deployed\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hoeven, John",
+        "party": "R",
+        "state": "ND"
+      },
+      "introduced_date": "2016-09-28",
+      "latest_action": {
+        "date": "2016-09-28",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S6197; text as passed Senate: CR S6241-6242)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Military personnel and dependents"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates October 26, 2016, as Day of the Deployed. </p> <p>Honors the deployed members of the Armed Forces and their families. </p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres585/BILLS-114sres585ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres585/BILLS-114sres585ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres585/BILLS-114sres585ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/585",
       "votes": []
     },
     {
@@ -2979,6 +3530,38 @@
       "votes": []
     },
     {
+      "id": "sres574-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "574",
+      "title": "A resolution recognizing Hispanic Heritage Month and celebrating the heritage and culture of Latinos in the United States and the immense contributions of Latinos and Latinas to the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Menendez, Robert",
+        "party": "D",
+        "state": "NJ"
+      },
+      "introduced_date": "2016-09-26",
+      "latest_action": {
+        "date": "2016-09-26",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S6089; text as passed Senate: CR S6082-6083)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Civil Rights and Liberties, Minority Issues",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Historical and cultural resources",
+        "Racial and ethnic relations"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Recognizes the celebration of Hispanic Heritage Month from September 15, 2016, through October 15, 2016.</p> <p>Esteems the integral role of Latinos and their manifold heritage in the economy, culture, and identity of the United States. </p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres574/BILLS-114sres574ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres574/BILLS-114sres574ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres574/BILLS-114sres574ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/574",
+      "votes": []
+    },
+    {
       "id": "sres575-114",
       "congress": 114,
       "type": "sres",
@@ -3009,6 +3592,38 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres575/BILLS-114sres575ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres575/BILLS-114sres575ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/575",
+      "votes": []
+    },
+    {
+      "id": "sres576-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "576",
+      "title": "A resolution calling on Congress, schools, and State and local educational agencies to recognize the significant educational implications of dyslexia that must be addressed and designating October 2016 as \"National Dyslexia Awareness Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cassidy, Bill",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2016-09-26",
+      "latest_action": {
+        "date": "2016-09-26",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S6089; text as passed Senate: CR S6083-6084)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Education",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Elementary and secondary education",
+        "Neurological disorders",
+        "Special education"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates October 2016 as National Dyslexia Awareness Month, and calls on Congress, schools, and educational agencies to recognize that dyslexia has significant educational implications that must be addressed.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres576/BILLS-114sres576ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres576/BILLS-114sres576ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres576/BILLS-114sres576ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/576",
       "votes": []
     },
     {
@@ -3075,6 +3690,38 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ220/PLAW-114publ220_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ220/PLAW-114publ220.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/3969",
+      "votes": []
+    },
+    {
+      "id": "sjres39-114",
+      "congress": 114,
+      "type": "sjres",
+      "number": "39",
+      "title": "A joint resolution relating to the disapproval of the proposed foreign military sale to the Government of the Kingdom of Saudi Arabia of M1A1/A2 Abrams Tank structures and other major defense equipment.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Paul, Rand",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2016-09-08",
+      "latest_action": {
+        "date": "2016-09-21",
+        "text": "Motion to table the motion to discharge Committee on Foreign Relations agreed to in Senate by Yea-Nay Vote. 71 - 27. Record Vote Number: 145. (consideration: CR S5934-5935)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Congressional oversight",
+        "Middle East",
+        "Military assistance, sales, and agreements",
+        "Saudi Arabia"
+      ],
+      "summary_crs": " <p>This joint resolution prohibits the issuance of a letter of offer with respect to proposed sales to the government of Saudi Arabia of 153 M1A1/A2 Abrams Tank structures and specified other defense equipment and ammunition.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sjres39/BILLS-114sjres39is.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sjres39/BILLS-114sjres39is.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sjres39/BILLS-114sjres39is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-joint-resolution/39",
       "votes": []
     },
     {
@@ -3641,6 +4288,40 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ209/PLAW-114publ209_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ209/PLAW-114publ209.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/4877",
+      "votes": []
+    },
+    {
+      "id": "hr4904-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "4904",
+      "title": "MEGABYTE Act of 2016",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Cartwright, Matt",
+        "party": "D",
+        "state": "PA"
+      },
+      "introduced_date": "2016-04-12",
+      "latest_action": {
+        "date": "2016-07-29",
+        "text": "Became Public Law No: 114-210."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Computers and information technology",
+        "Government information and archives",
+        "Licensing and registrations",
+        "Office of Management and Budget (OMB)",
+        "Performance measurement"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded House reported version is repeated here.)</p> <p><strong>Making Electronic Government Accountable By Yielding Tangible Efficiencies Act of 2016 or the MEGABYTE Act of 2016</strong></p> <p>(Sec. 2) This bill requires the Office of Management and Budget (OMB) to issue a directive to require the Chief Information Officer (CIO) of each executive agency to develop a comprehensive software licensing policy, which shall: (1) require the CIO of each agency to establish a comprehensive inventory of software licenses; (2) track and maintain such licenses; (3) analyze software usage to make cost-effective decisions; (4) provide software license management training; (5) establish goals and objectives of the agency's software license management program; and (6) consider the software license management life cycle phases to implement effective decision making and incorporate existing standards, processes, and metrics.</p> <p>The CIO of each executive agency must report to the OMB, beginning in the first fiscal year after this Act's enactment and in each of the following five fiscal years, on the savings from improved software license management.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ210/PLAW-114publ210.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ210/PLAW-114publ210_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ210/PLAW-114publ210.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/4904",
       "votes": []
     },
     {
@@ -4315,6 +4996,40 @@
       "votes": []
     },
     {
+      "id": "sres544-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "544",
+      "title": "A resolution expressing the sense of the Senate regarding compliance enforcement of Russian violations of the Open Skies Treaty.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cotton, Tom",
+        "party": "R",
+        "state": "AR"
+      },
+      "introduced_date": "2016-07-14",
+      "latest_action": {
+        "date": "2016-07-14",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S5193-5194; text as passed Senate: CR S5175)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Arms control and nonproliferation",
+        "Aviation and airports",
+        "Intelligence activities, surveillance, classified information",
+        "International law and treaties",
+        "Military operations and strategy",
+        "Russia"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Expresses the sense of the Senate that: (1) restrictions upon the ability of Open Skies Treaty aircraft to overfly all portions of a State Party's territory impede openness of military forces and undermine confidence; (2) the Russian Federation's overfly restrictions constitute treaty violations; and (3) the United States should take measures to bring about the Russian Federation's return to full compliance with its treaty obligations, including by restricting Russian overflights of the United States.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres544/BILLS-114sres544ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres544/BILLS-114sres544ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres544/BILLS-114sres544ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/544",
+      "votes": []
+    },
+    {
       "id": "sres545-114",
       "congress": 114,
       "type": "sres",
@@ -4769,6 +5484,41 @@
       "votes": []
     },
     {
+      "id": "sres482-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "482",
+      "title": "A resolution urging the European Union to designate Hizballah in its entirety as a terrorist organization and to increase pressure on the organization and its members to the fullest extent possible.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Shaheen, Jeanne",
+        "party": "D",
+        "state": "NH"
+      },
+      "introduced_date": "2016-06-06",
+      "latest_action": {
+        "date": "2016-07-06",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4837)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Criminal investigation, prosecution, interrogation",
+        "Europe",
+        "European Union",
+        "Foreign property",
+        "International organizations and cooperation",
+        "Middle East",
+        "Terrorism"
+      ],
+      "summary_crs": " <p>Expresses appreciation to the European Union (EU) for the progress made in countering Hizballah since the EU designated Hizballah's military wing as a terrorist organization.</p> <p> Supports cooperation between the United States and the EU in thwarting Hizballah's criminal and terrorist activities.</p> <p> Urges the EU to designate Hizballah in its entirety as a terrorist organization and increase pressure on the group, including through: </p> <ul> <li>better cross-border cooperation among EU members,</li> <li>issuing arrest warrants against Hizballah members and active supporters,</li> <li>freezing Hizballah's assets in Europe, and </li> <li>prohibiting fund raising activities in support of Hizballah.</li> </ul>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres482/BILLS-114sres482ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres482/BILLS-114sres482ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres482/BILLS-114sres482ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/482",
+      "votes": []
+    },
+    {
       "id": "sres504-114",
       "congress": 114,
       "type": "sres",
@@ -5071,6 +5821,39 @@
       "votes": []
     },
     {
+      "id": "hr2137-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "2137",
+      "title": "Federal Law Enforcement Self-Defense and Protection Act of 2015",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Collins, Doug",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2015-04-30",
+      "latest_action": {
+        "date": "2016-06-22",
+        "text": "Became Public Law No: 114-180."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Appropriations",
+        "Executive agency funding and structure",
+        "Firearms and explosives",
+        "Government employee pay, benefits, personnel management",
+        "Law enforcement officers"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the House passed version is repeated here.)</p> <p><strong>Federal Law Enforcement Self-Defense and Protection Act of 2015</strong></p> <p>(Sec. 4) This bill authorizes a federal law enforcement officer to carry a government-issued firearm during a covered furlough (i.e., a planned event during which an agency involuntarily furloughs employees due to downsizing, reduced funding, lack of work, or budget constraints including a lapse in appropriations).</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ180/PLAW-114publ180.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ180/PLAW-114publ180_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ180/PLAW-114publ180.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/2137",
+      "votes": []
+    },
+    {
       "id": "hr812-114",
       "congress": 114,
       "type": "hr",
@@ -5208,6 +5991,47 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres495/BILLS-114sres495ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres495/BILLS-114sres495ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/495",
+      "votes": []
+    },
+    {
+      "id": "sres496-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "496",
+      "title": "A resolution condemning the terrorist attack on the Pulse Orlando nightclub, honoring the memory of the victims of the attack, offering condolences to and expressing support for their families and friends and all those affected, and applauding the dedication and bravery of law enforcement, emergency response, and counterterrorism officials in responding to the attack.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Nelson, Bill",
+        "party": "D",
+        "state": "FL"
+      },
+      "introduced_date": "2016-06-16",
+      "latest_action": {
+        "date": "2016-06-16",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S4263; text as passed Senate: CR S4304)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Congressional tributes",
+        "Crime victims",
+        "Emergency medical services and trauma care",
+        "First responders and emergency personnel",
+        "Florida",
+        "Hate crimes",
+        "Law enforcement officers",
+        "Middle East",
+        "Racial and ethnic relations",
+        "Religion",
+        "Sex, gender, sexual orientation discrimination",
+        "Terrorism",
+        "Violent crime"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Condemns the terrorist attack on the Pulse Orlando nightclub on June 12, 2016. </p> <p>Honors those who were killed and expresses hope for the recovery of those who were injured.</p> <p>Applauds the dedication and bravery of the law enforcement and counterterrorism officials who responded to the attack. </p> <p>Declares that the House of Representatives stands together with all people of the United States in the face of terror and hate.</p> <p>Reaffirms the commitment of the United States and its allies to defeat the Islamic State of Iraq and the Levant and other terrorist groups at home and abroad and to address the threat posed by homegrown terrorism.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres496/BILLS-114sres496ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres496/BILLS-114sres496ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres496/BILLS-114sres496ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/496",
       "votes": []
     },
     {
@@ -6252,6 +7076,39 @@
       "votes": []
     },
     {
+      "id": "sres473-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "473",
+      "title": "A resolution expressing appreciation of the goals of American Craft Beer Week and commending the small and independent craft brewers of the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cardin, Benjamin L.",
+        "party": "D",
+        "state": "MD"
+      },
+      "introduced_date": "2016-05-24",
+      "latest_action": {
+        "date": "2016-05-24",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S3128; text as passed Senate: CR S3103)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commerce",
+      "subjects": [
+        "Alcoholic beverages",
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Food industry and services",
+        "Small business"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Appreciates the goals of American Craft Beer Week, established by the Brewers Association, which represents the U.S. small craft brewers.</p> <p>Recognizes their significant contributions to the economy and to the communities in which they are located.</p> <p>Commends them for providing jobs, supporting U.S. agriculture, improving the balance of trade, and educating the people of the United States and beer lovers around the world about the history and culture of beer while promoting the legal and responsible consumption of beer.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres473/BILLS-114sres473ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres473/BILLS-114sres473ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres473/BILLS-114sres473ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/473",
+      "votes": []
+    },
+    {
       "id": "sres375-114",
       "congress": 114,
       "type": "sres",
@@ -6420,6 +7277,39 @@
       "votes": []
     },
     {
+      "id": "s2143-114",
+      "congress": 114,
+      "type": "s",
+      "number": "2143",
+      "title": "A bill to provide for the authority for the successors and assigns of the Starr-Camargo Bridge Company to maintain and operate a toll bridge across the Rio Grande near Rio Grande City, Texas, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2015-10-06",
+      "latest_action": {
+        "date": "2016-05-20",
+        "text": "Became Public Law No: 114-163."
+      },
+      "outcome": "enacted",
+      "policy_area": "Transportation and Public Works",
+      "subjects": [
+        "Latin America",
+        "Mexico",
+        "Public contracts and procurement",
+        "Roads and highways",
+        "Texas"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the Senate reported version is repeated here.)</p> <p>(Sec. 1) This bill modifies the existing authority for the Starr-Camargo Bridge Company to maintain and operate a toll bridge across the Rio Grande River near Rio Grande City, Texas. </p> <p>The authority, which currently expires 66 years after completion of the bridge (in 1966), is made permanent and expanded to include the successors or assigns of the company. The bridge must not consist of more than 14 lanes. </p> <p>The company and its successors and assigns shall have the rights and privileges granted by federal law to the B and P Bridge Company, and may use eminent domain to acquire certain land needed for the bridge, subject to Texas laws and requirements for just compensation and public proceedings. </p> <p>The company's successors and assigns may fix and charge tolls for transit over the bridge. </p> <p>Those successors and assigns may also sell, assign, transfer, or mortgage the rights, powers, and privileges conferred on the company by the enacting law, to any public agency, to an international bridge authority or commission, or to a corporation. </p> <p>Any such corporation may exercise such rights, powers, and privileges (including acquisition by mortgage foreclosure) as if they had been granted by the enacting law directly to the corporation. </p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ163/PLAW-114publ163.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ163/PLAW-114publ163_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ163/PLAW-114publ163.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/2143",
+      "votes": []
+    },
+    {
       "id": "sres469-114",
       "congress": 114,
       "type": "sres",
@@ -6581,6 +7471,71 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres403/BILLS-114sres403ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres403/BILLS-114sres403ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/403",
+      "votes": []
+    },
+    {
+      "id": "sres467-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "467",
+      "title": "A resolution supporting the goals and ideals of National Nurses Week, to be observed from May 6 through May 12, 2016.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wicker, Roger F.",
+        "party": "R",
+        "state": "MS"
+      },
+      "introduced_date": "2016-05-16",
+      "latest_action": {
+        "date": "2016-05-16",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2832; text as passed Senate: CR S2827)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Health personnel",
+        "Nursing"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p> Expresses support for the goals and ideals of National Nurses Week. Recognizes the contributions of nurses to the U.S. health care system.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres467/BILLS-114sres467ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres467/BILLS-114sres467ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres467/BILLS-114sres467ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/467",
+      "votes": []
+    },
+    {
+      "id": "sres394-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "394",
+      "title": "A resolution recognizing the 195th anniversary of the independence of Greece and celebrating democracy in Greece and the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Menendez, Robert",
+        "party": "D",
+        "state": "NJ"
+      },
+      "introduced_date": "2016-03-09",
+      "latest_action": {
+        "date": "2016-05-12",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S2794)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Europe",
+        "Greece",
+        "Sovereignty, recognition, national governance and status"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Congratulates the people of Greece as they celebrate the 195th anniversary of the independence of Greece. </p> <p>Supports the principles of democratic governance to which the people of Greece are committed. </p> <p>Notes Greece's important role in the wider European region and in the community of nations since gaining its independence 195 years ago.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres394/BILLS-114sres394ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres394/BILLS-114sres394ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres394/BILLS-114sres394ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/394",
       "votes": []
     },
     {
@@ -6856,6 +7811,41 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres448/BILLS-114sres448ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres448/BILLS-114sres448ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/448",
+      "votes": []
+    },
+    {
+      "id": "sres449-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "449",
+      "title": "A resolution congratulating the students, parents, teachers, and leaders of charter schools across the United States for making ongoing contributions to education, and supporting the ideals and goals of the 17th annual National Charter Schools Week, to be held May 1 through May 7, 2016.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Alexander, Lamar",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2016-04-28",
+      "latest_action": {
+        "date": "2016-04-28",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2576-2577; text as passed Senate: CR S2564)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Education",
+      "subjects": [
+        "Academic performance and assessments",
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Education of the disadvantaged",
+        "Elementary and secondary education",
+        "School administration",
+        "Teaching, teachers, curricula"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Congratulates the students, families, teachers, administrators, and staff of public charter schools across the United States for: (1)&nbsp;making ongoing contributions to public education, (2) making impressive strides in closing the academic achievement gap in U.S. schools, and (3) improving and strengthening the public school system.</p> <p>Expresses support for the ideals and goals of the 17th annual National Charter Schools Week (May 1-May 7, 2016).</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres449/BILLS-114sres449ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres449/BILLS-114sres449ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres449/BILLS-114sres449ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/449",
       "votes": []
     },
     {
@@ -7159,6 +8149,39 @@
       "votes": []
     },
     {
+      "id": "sres446-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "446",
+      "title": "A resolution designating April 2016 as \"National 9-1-1 Education Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Klobuchar, Amy",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2016-04-27",
+      "latest_action": {
+        "date": "2016-04-27",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2500-2501; text as passed Senate:  CR S2497-2498)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Emergency Management",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Elementary and secondary education",
+        "Emergency communications systems",
+        "School administration",
+        "Telephone and wireless communication"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates April 2016 as National 9-1-1 Education Month. </p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres446/BILLS-114sres446ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres446/BILLS-114sres446ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres446/BILLS-114sres446ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/446",
+      "votes": []
+    },
+    {
       "id": "sres440-114",
       "congress": 114,
       "type": "sres",
@@ -7427,6 +8450,39 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres428/BILLS-114sres428ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres428/BILLS-114sres428ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/428",
+      "votes": []
+    },
+    {
+      "id": "sres429-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "429",
+      "title": "A resolution expressing support for the designation of the week of April 11 through April 15, 2016, as \"National Assistant Principals Week\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Perdue, David",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2016-04-14",
+      "latest_action": {
+        "date": "2016-04-14",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2107; text as passed Senate: CR S2103)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Education",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Elementary and secondary education",
+        "School administration",
+        "Teaching, teachers, curricula"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Supports the designation of April 11-April 15, 2016, as National Assistant Principals Week.</p> <p>Honors the contributions of assistant principals to students' success.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres429/BILLS-114sres429ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres429/BILLS-114sres429ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres429/BILLS-114sres429ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/429",
       "votes": []
     },
     {
@@ -7866,6 +8922,36 @@
       "votes": []
     },
     {
+      "id": "s2393-114",
+      "congress": 114,
+      "type": "s",
+      "number": "2393",
+      "title": "Foreclosure Relief and Extension for Servicemembers Act of 2015",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Whitehouse, Sheldon",
+        "party": "D",
+        "state": "RI"
+      },
+      "introduced_date": "2015-12-10",
+      "latest_action": {
+        "date": "2016-03-31",
+        "text": "Became Public Law No: 114-142."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Housing finance and home ownership",
+        "Veterans' loans, housing, homeless programs"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the Senate passed version is repeated here.)</p> <p><b>Foreclosure Relief and Extension for Servicemembers Act of 2015</b></p> <p>(Sec. 2) This bill amends the Honoring America's Veterans and Caring for Camp Lejeune Families Act of 2012 to extend through 2017 the one-year period after a service member's military service during which: (1) a court may stay proceedings to enforce an obligation on real or personal property owned by the service member before such military service; and (2) any sale, foreclosure, or seizure of such property shall be invalid without a court order or waiver agreement signed by the service member. (Currently, the extended one-year period is scheduled to expire on December 31, 2015, and return to a nine-month period under the Servicemembers Civil Relief Act.)</p> <p>Effective January 1, 2018 (currently, January 1, 2016), the old nine-month period in place of the one-year period granted by such Act shall be restored.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ142/PLAW-114publ142.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ142/PLAW-114publ142_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ142/PLAW-114publ142.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/2393",
+      "votes": []
+    },
+    {
       "id": "hr1755-114",
       "congress": 114,
       "type": "hr",
@@ -8265,6 +9351,38 @@
       "votes": []
     },
     {
+      "id": "sjres31-114",
+      "congress": 114,
+      "type": "sjres",
+      "number": "31",
+      "title": "A joint resolution relating to the disapproval of the proposed foreign military sale to the Government of Pakistan of F-16 Block 52 aircraft.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Paul, Rand",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2016-02-25",
+      "latest_action": {
+        "date": "2016-03-10",
+        "text": "Motion to table the motion to discharge Committee on Foreign Relations agreed to in Senate by Yea-Nay Vote. 71 - 24. Record Vote Number: 35. (consideration: CR S1423-1424)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Asia",
+        "Congressional oversight",
+        "Military assistance, sales, and agreements",
+        "Pakistan"
+      ],
+      "summary_crs": " <p>This joint resolution prohibits the issuance of a letter of offer with respect to any of the following proposed sales to Pakistan in Transmittal Numbered 15-80, including related defense articles and defense services: </p> <ul> <li>8 F-16 Block 52 aircraft (2 C and 6 D models) with the Fl00-PW-229 increased performance engine,</li> <li>14 Joint Helmet Mounted Cueing Systems,</li> <li>8 AN/APG-68(V)9 radars, and </li> <li>8 ALQ-211(V)9 Advanced Integrated Defensive Electronic Warfare Suites.</li></ul>",
+      "text_url_html": "https://www.congress.gov/114/bills/sjres31/BILLS-114sjres31is.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sjres31/BILLS-114sjres31is.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sjres31/BILLS-114sjres31is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-joint-resolution/31",
+      "votes": []
+    },
+    {
       "id": "sres395-114",
       "congress": 114,
       "type": "sres",
@@ -8391,6 +9509,40 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres389/BILLS-114sres389ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres389/BILLS-114sres389ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/389",
+      "votes": []
+    },
+    {
+      "id": "sres390-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "390",
+      "title": "A resolution designating March 3, 2016 as \"World Wildlife Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Coons, Christopher A.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2016-03-03",
+      "latest_action": {
+        "date": "2016-03-03",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S1296; text as passed Senate: CR S1284)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Animals",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Crime prevention",
+        "Crimes against animals and natural resources",
+        "International organizations and cooperation",
+        "Smuggling and trafficking",
+        "Wildlife conservation and habitat protection"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates March 3, 2016, as World Wildlife Day. Supports: (1) raising awareness of the benefits that wildlife provides to people and the threats facing wildlife around the world; and (2) escalating the fight against wildlife crime, such as wildlife trafficking.</p> <p>Commends efforts of the United States to mobilize the government in a coordinated, efficient, and effective manner for progress in the fight.</p> <p>Encourages continued cooperation between the United States, international partners, local communities, nonprofit organizations, private industry, and other partner organizations in an effort to conserve and celebrate wildlife.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres390/BILLS-114sres390ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres390/BILLS-114sres390ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres390/BILLS-114sres390ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/390",
       "votes": []
     },
     {
@@ -8760,6 +9912,37 @@
       "votes": []
     },
     {
+      "id": "sres99-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "99",
+      "title": "A resolution calling on the Government of Iran to follow through on repeated promises of assistance in the case of Robert Levinson, the longest held United States civilian in our Nation's history.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Nelson, Bill",
+        "party": "D",
+        "state": "FL"
+      },
+      "introduced_date": "2015-03-10",
+      "latest_action": {
+        "date": "2016-02-11",
+        "text": "Resolution agreed to in Senate with an amendment and an amendment to the Title and an amended preamble by Unanimous Consent. (consideration: CR S881-882; text of committee substitute as amended: CR S881-882)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Diplomacy, foreign officials, Americans abroad",
+        "Iran",
+        "Middle East"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was reported to the Senate on February 10, 2016. The summary of that version is repeated here.)</p> <p>Recognizes that Robert Levinson is the longest held U.S. civilian in our nation's history.</p> <p> Notes the repeated pledges by and renewed commitment of Iranian officials to provide their government's assistance in the Robert Levinson case. </p> <p> Urges the government of Iran, as a humanitarian gesture, to act on its promises to assist in Robert Levinson's case and to provide all information from all entities of the government of Iran regarding Robert Levinson's disappearance to the U.S. government. </p> <p> Urges the President and U.S. allies to continue to raise the Robert Levinson case with Iranian officials at every opportunity, notwithstanding the disagreements the United States has with Iran on a broad array of issues, including Iran's ballistic missile program, sponsorship of international terrorism, and human rights abuses. </p> <p> Expresses sympathy to Robert Levinson's family for their anguish and expresses hope that their ordeal can be brought to an end in the near future.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres99/BILLS-114sres99ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres99/BILLS-114sres99ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres99/BILLS-114sres99ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/99",
+      "votes": []
+    },
+    {
       "id": "sres367-114",
       "congress": 114,
       "type": "sres",
@@ -8950,6 +10133,38 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres357/BILLS-114sres357ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres357/BILLS-114sres357ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/357",
+      "votes": []
+    },
+    {
+      "id": "sres358-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "358",
+      "title": "A resolution designating February 1 through 5, 2016, as \"National School Counseling Week\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Murray, Patty",
+        "party": "D",
+        "state": "WA"
+      },
+      "introduced_date": "2016-02-03",
+      "latest_action": {
+        "date": "2016-02-03",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S571; text as passed Senate: CR S577)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Education",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Educational guidance",
+        "Elementary and secondary education",
+        "Teaching, teachers, curricula"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates February 1-February 5, 2016, as National School Counseling Week.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres358/BILLS-114sres358ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres358/BILLS-114sres358ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres358/BILLS-114sres358ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/358",
       "votes": []
     },
     {
@@ -9498,6 +10713,108 @@
       "votes": []
     },
     {
+      "id": "hr2693-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "2693",
+      "title": "To designate the arboretum at the Hunter Holmes McGuire VA Medical Center in Richmond, Virginia, as the \"Phyllis E. Galanti Arboretum\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Brat, Dave",
+        "party": "R",
+        "state": "VA"
+      },
+      "introduced_date": "2015-06-09",
+      "latest_action": {
+        "date": "2015-12-18",
+        "text": "Became Public Law No: 114-103."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Congressional tributes",
+        "Department of Veterans Affairs",
+        "Health facilities and institutions",
+        "Veterans' medical care",
+        "Virginia"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the House passed version is repeated here.)</p> <p>(Sec. 2) This bill designates the arboretum at the Hunter Holmes McGuire VA Medical Center in Richmond, Virginia, as the Phyllis E. Galanti Arboretum.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ103/PLAW-114publ103.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ103/PLAW-114publ103_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ103/PLAW-114publ103.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/2693",
+      "votes": []
+    },
+    {
+      "id": "hr2820-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "2820",
+      "title": "Stem Cell Therapeutic and Research Reauthorization Act of 2015",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Smith, Christopher H.",
+        "party": "R",
+        "state": "NJ"
+      },
+      "introduced_date": "2015-06-18",
+      "latest_action": {
+        "date": "2015-12-18",
+        "text": "Became Public Law No: 114-104."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Blood and blood diseases",
+        "Cell biology and embryology",
+        "Department of Health and Human Services",
+        "Health programs administration and funding",
+        "Medical research",
+        "Organ and tissue donation and transplantation",
+        "Public contracts and procurement",
+        "Research administration and funding"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was reported to the Senate on December 3, 2015. The summary of that version is repeated here.)</p> <p><b>Stem Cell Therapeutic and Research Reauthorization Act of 2015</b></p> <p>(Sec. 2) This bill amends the Public Health Service Act and the Stem Cell Therapeutic and Research Act of 2005 to revise and extend through FY2020 the C.W. Bill Young Cell Transplantation Program and the National Cord Blood Inventory program. (These programs help match patients in need of a transplant with unrelated bone marrow and cord blood donors.) </p> <p>The Department of Health and Human Services (HHS) must review the state of the science of using adult stem cells and birthing tissues to develop new therapies and consider the inclusion of new therapies in the C.W. Bill Young Cell Transplantation Program. <p>(Sec. 3) Requirements for HHS contracts under the Stem Cell Therapeutic and Research Act of 2005 are revised.</p> (Sec. 4) HHS must determine whether to include peripheral blood stem cells and umbilical cord blood in the definition of human organ.",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ104/PLAW-114publ104.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ104/PLAW-114publ104_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ104/PLAW-114publ104.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/2820",
+      "votes": []
+    },
+    {
+      "id": "hr3831-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "3831",
+      "title": "Securing Fairness in Regulatory Timing Act of 2015",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Brady, Kevin",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2015-10-26",
+      "latest_action": {
+        "date": "2015-12-18",
+        "text": "Became Public Law No: 114-106."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Department of Health and Human Services",
+        "Health care costs and insurance",
+        "Medicare"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was passed by the House on December 10, 2015. The summary of that version is repeated here.)</p> <p><b>Securing Fairness in Regulatory Timing Act of 2015</b></p> <p>(Sec. 2) This bill amends title XVIII (Medicare) of the Social Security Act to extend from 45 days to 60 days the annual notice period for the announcement of payment rates under Medicare Advantage (MA). MA organizations shall have at least 30 days to comment on proposed changes.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ106/PLAW-114publ106.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ106/PLAW-114publ106_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ106/PLAW-114publ106.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/3831",
+      "votes": []
+    },
+    {
       "id": "hr4246-114",
       "congress": 114,
       "type": "hr",
@@ -9762,6 +11079,43 @@
       "text_url_xml": "https://www.congress.gov/114/bills/hjres78/BILLS-114hjres78eh.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/hjres78/BILLS-114hjres78eh.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-joint-resolution/78",
+      "votes": []
+    },
+    {
+      "id": "sres189-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "189",
+      "title": "A resolution expressing the sense of the Senate regarding the 25th anniversary of democracy in Mongolia.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Whitehouse, Sheldon",
+        "party": "D",
+        "state": "RI"
+      },
+      "introduced_date": "2015-06-01",
+      "latest_action": {
+        "date": "2015-12-16",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S8729)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Asia",
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Cultural exchanges and relations",
+        "Elections, voting, political campaign regulation",
+        "International exchange and broadcasting",
+        "Mongolia",
+        "Rule of law and government transparency",
+        "Sovereignty, recognition, national governance and status"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the Senate reported version is repeated here.)</p> <p>Congratulates the people and the government of Mongolia on the 25th anniversary of the first democratic elections in Mongolia, to be celebrated on July 29, 2015.</p> <p> Commends Mongolia for a peaceful and successful democratic transition.</p> <p>Recognizes Mongolia's role as a global leader for emerging democracies. </p> <p>Acknowledges the shared interest of the U.S. government and the government of Mongolia in promoting peace and stability in Northeast and Central Asia. </p> <p> Recognizes that the United States should continue to support actions taken by the government of Mongolia to develop democratic institutions. </p> <p>Recommends that the U.S. government expand academic, cultural, and other people-to-people partnerships between Mongolia and the United States.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres189/BILLS-114sres189ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres189/BILLS-114sres189ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres189/BILLS-114sres189ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/189",
       "votes": []
     },
     {
@@ -10070,6 +11424,39 @@
       "votes": []
     },
     {
+      "id": "sres324-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "324",
+      "title": "A resolution designating December 3, 2015, as \"National Phenylketonuria Awareness Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Isakson, Johnny",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2015-12-02",
+      "latest_action": {
+        "date": "2015-12-02",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S8319; text as passed Senate: CR S8307)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Digestive and metabolic diseases",
+        "Health promotion and preventive care",
+        "Hereditary and development disorders",
+        "Nutrition and diet"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates December 3, 2015, as National Phenylketonuria Awareness Day. (Phenylketonuria or PKU is a rare, inherited metabolic disorder that can cause intellectual disability and other neurological problems.)</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres324/BILLS-114sres324ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres324/BILLS-114sres324ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres324/BILLS-114sres324ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/324",
+      "votes": []
+    },
+    {
       "id": "sres325-114",
       "congress": 114,
       "type": "sres",
@@ -10169,6 +11556,45 @@
       "votes": []
     },
     {
+      "id": "s799-114",
+      "congress": 114,
+      "type": "s",
+      "number": "799",
+      "title": "Protecting Our Infants Act of 2015",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. McConnell, Mitch",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2015-03-19",
+      "latest_action": {
+        "date": "2015-11-25",
+        "text": "Became Public Law No: 114-91."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Child health",
+        "Congressional oversight",
+        "Drug, alcohol, tobacco use",
+        "Government information and archives",
+        "Government studies and investigations",
+        "Health care coverage and access",
+        "Health information and medical records",
+        "Health promotion and preventive care",
+        "Medical research",
+        "Sex and reproductive health",
+        "Women's health"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was reported to the Senate on October 1, 2015. The summary of that version is repeated here.)</p> <p><b>Protecting Our Infants Act of 2015</b></p> <p>(Sec. 2) This bill requires the Department of Health and Human Services (HHS) to review its activities related to prenatal opioid use, including neonatal abstinence syndrome, and develop a strategy to address gaps in research and gaps and overlap in programs. (An opioid is a drug with effects similar to opium, such as heroin or certain pain medications. Neonatal abstinence syndrome is withdrawal in a newborn.)</p> <p>(Sec. 3) HHS must conduct a study and develop recommendations for preventing and treating prenatal opioid use disorders, including the effects of those disorders on infants. HHS must publish a report that includes:</p> <ul> <li>an assessment of existing research on neonatal abstinence syndrome;</li> <li>an evaluation of the causes, and barriers to treatment, of opioid use disorders among women of reproductive age and recommendations on preventing opioid use disorders in these women;</li> <li>an evaluation of, and recommendations on, treatment for pregnant women with opioid use disorders and the effects of prenatal opioid use on infants; and</li> <li>an evaluation of the differences in prenatal opioid use between demographic groups and recommendations on reducing disparities.</li> </ul> (Sec. 4) HHS may continue providing technical assistance: (1) to states and Indian tribes to improve neonatal abstinence syndrome surveillance; and (2) to states to support implementation of effective public health measures, such as disseminating information to educate the public on prenatal opioid use and neonatal abstinence syndrome.",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ91/PLAW-114publ91.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ91/PLAW-114publ91_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ91/PLAW-114publ91.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/799",
+      "votes": []
+    },
+    {
       "id": "hr3996-114",
       "congress": 114,
       "type": "hr",
@@ -10213,6 +11639,36 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ87/PLAW-114publ87_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ87/PLAW-114publ87.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/3996",
+      "votes": []
+    },
+    {
+      "id": "sres314-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "314",
+      "title": "A resolution expressing support for designation of the third Tuesday in November as \"National Entrepreneurs' Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Moran, Jerry",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2015-11-17",
+      "latest_action": {
+        "date": "2015-11-19",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commerce",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Small business"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Expresses support for the designation of National Entrepreneurs Day.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres314/BILLS-114sres314ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres314/BILLS-114sres314ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres314/BILLS-114sres314ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/314",
       "votes": []
     },
     {
@@ -10754,6 +12210,35 @@
       "votes": []
     },
     {
+      "id": "sres307-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "307",
+      "title": "A resolution recognizing National Native American Heritage Month and celebrating the heritages and cultures of Native Americans and the contributions of Native Americans to the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Barrasso, John",
+        "party": "R",
+        "state": "WY"
+      },
+      "introduced_date": "2015-11-05",
+      "latest_action": {
+        "date": "2015-11-05",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S7843; text as passed Senate: CR S7822)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Native Americans",
+      "subjects": [
+        "Commemorative events and holidays"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Recognizes November 2015 as National Native American Heritage Month and the Friday after Thanksgiving as Native American Heritage Day. </p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres307/BILLS-114sres307ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres307/BILLS-114sres307ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres307/BILLS-114sres307ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/307",
+      "votes": []
+    },
+    {
       "id": "sres308-114",
       "congress": 114,
       "type": "sres",
@@ -11075,6 +12560,37 @@
       "votes": []
     },
     {
+      "id": "sres294-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "294",
+      "title": "A resolution designating October 26, 2015, as Day of the Deployed.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hoeven, John",
+        "party": "R",
+        "state": "ND"
+      },
+      "introduced_date": "2015-10-22",
+      "latest_action": {
+        "date": "2015-10-22",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S7477; text as passed Senate: CR S7474-7475)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Military personnel and dependents"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates October 26, 2015, as Day of the Deployed.</p> <p> Honors the deployed members of the U.S. Armed Forces and their families.</p> ",
+      "text_url_html": "https://www.congress.gov/114/bills/sres294/BILLS-114sres294ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres294/BILLS-114sres294ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres294/BILLS-114sres294ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/294",
+      "votes": []
+    },
+    {
       "id": "sres295-114",
       "congress": 114,
       "type": "sres",
@@ -11273,6 +12789,76 @@
       "votes": []
     },
     {
+      "id": "s2078-114",
+      "congress": 114,
+      "type": "s",
+      "number": "2078",
+      "title": "United States Commission on International Religious Freedom Reauthorization Act of 2015",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Corker, Bob",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2015-09-24",
+      "latest_action": {
+        "date": "2015-10-16",
+        "text": "Became Public Law No: 114-71."
+      },
+      "outcome": "enacted",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Advisory bodies",
+        "Congressional oversight",
+        "Executive agency funding and structure",
+        "Federal officials",
+        "Government employee pay, benefits, personnel management",
+        "Human rights",
+        "Political parties and affiliation",
+        "Religion",
+        "U.S. Commission on International Religious Freedom"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the Senate reported version is repeated here.) </p> <p><strong>United States Commission on International Religious Freedom Reauthorization Act of 2015</strong></p> <p>This bill reauthorizes the U.S.&nbsp;Commission on International Religious Freedom (USCIRF) through FY2019.</p> <p>(Sec. 2) It expresses the sense of Congress that USCIRF: (1) was created to independently assess and accurately describe threats to religious freedom around the world; and (2) should ensure that U.S. efforts to advance religious freedom abroad are timely, appropriate to the circumstances, prudent, and effective.</p> <p>(Sec. 3) The termination date of USCIRF is extended to September 30, 2019.</p> <p>(Sec. 4) The Chair and Vice Chair of USCIRF must at least biennially carry out a strategic policy and organizational review and submit a strategic plan to Congress concerning: (1) prioritized actions for USCIRF, (2) any changes it considers necessary with regard to the scope, content, and timing of USCIRF's annual report; (3) any changes USCIRF considers necessary with regard to personnel matters; and (4) USCIRF's funding requirements.</p> <p>If unanimous agreement is not possible, items for inclusion in the strategic plan may, at the joint discretion of the Chair and Vice Chair, be approved by: (1) a majority of Commissioners appointed by an elected official from the political party of the President, and (2) a majority of Commissioners appointed by an elected official from the political party that is not the party of the President. </p> <p>The Vice Chair for such purposes must be appointed by an elected official from the political party that is different from the political party of the elected official who appointed the Chair. </p> <p>USCIRF is authorized to implement provisions related to personnel and the annual report that are included in the strategic plan, notwithstanding USCIRF's annual recommendations on U.S. policy options and a current requirement that a decision to employ or terminate an Executive Director be made by an affirmative vote of at least six of USCIRF's nine members. </p> <p>USCIRF, upon request, must provide testimony and make information available to Congress.</p> <p>(Sec. 5) USCIRF is authorized to expend appropriated amounts only if it complies with this Act and submits its annual financial report identifying expenditures for the preceding fiscal year.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ71/PLAW-114publ71.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ71/PLAW-114publ71_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ71/PLAW-114publ71.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/2078",
+      "votes": []
+    },
+    {
+      "id": "sres278-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "278",
+      "title": "A resolution welcoming the President of the Republic of Korea on her official visit to the United States and celebrating the United States-Republic of Korea relationship, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Gardner, Cory",
+        "party": "R",
+        "state": "CO"
+      },
+      "introduced_date": "2015-10-06",
+      "latest_action": {
+        "date": "2015-10-08",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S7281)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Asia",
+        "Congressional tributes",
+        "Diplomacy, foreign officials, Americans abroad",
+        "Military assistance, sales, and agreements",
+        "South Korea"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Welcomes Her Excellency Park Geun-hye, the President of the Republic of Korea, on her official U.S. visit. </p> <p> Reaffirms the importance of the alliance between the United States and the Republic of Korea, as enshrined in the Mutual Defense Treaty of 1953, and welcomes opportunities to strengthen security ties, including on space, cyber, and missile defense.</p> <p> Encourages the U.S. government and the government of the Republic of Korea to enhance cooperation in the security, economic, scientific, health, education, and cultural spheres.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres278/BILLS-114sres278ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres278/BILLS-114sres278ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres278/BILLS-114sres278ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/278",
+      "votes": []
+    },
+    {
       "id": "sres285-114",
       "congress": 114,
       "type": "sres",
@@ -11402,6 +12988,37 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ62/PLAW-114publ62_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ62/PLAW-114publ62.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/136",
+      "votes": []
+    },
+    {
+      "id": "s139-114",
+      "congress": 114,
+      "type": "s",
+      "number": "139",
+      "title": "Ensuring Access to Clinical Trials Act of 2015",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wyden, Ron",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2015-01-08",
+      "latest_action": {
+        "date": "2015-10-07",
+        "text": "Became Public Law No: 114-63."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Medicaid",
+        "Medical research",
+        "Poverty and welfare assistance"
+      ],
+      "summary_crs": " <p />This measure has not been amended since it was introduced. The expanded summary of the Senate-passed version is repeated here.) <p><b>Ensuring Access to Clinical Trials Act of 2015 </b></p> <p>(Sec. 2) This bill amends the Improving Access to Clinical Trials Act of 2009 to repeal the sunset of, and so extend indefinitely, the exclusion from resources under titles XVI (Supplemental Security Income) and XIX (Medicaid) of the Social Security Act, for eligibility purposes, of compensation in the amount of the first $2,000 per year received by individuals who participate in clinical trials for rare diseases or conditions.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ63/PLAW-114publ63.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ63/PLAW-114publ63_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ63/PLAW-114publ63.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/139",
       "votes": []
     },
     {
@@ -11592,6 +13209,39 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres281/BILLS-114sres281ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres281/BILLS-114sres281ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/281",
+      "votes": []
+    },
+    {
+      "id": "sres279-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "279",
+      "title": "A resolution honoring the Red Land Little League Team of Lewisberry, Pennsylvania, for the performance of the Team in the 2015 Little League World Series.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Casey, Robert P., Jr.",
+        "party": "D",
+        "state": "PA"
+      },
+      "introduced_date": "2015-10-06",
+      "latest_action": {
+        "date": "2015-10-06",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S7171; text as passed Senate: CR S7162)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Sports and Recreation",
+      "subjects": [
+        "Athletes",
+        "Congressional tributes",
+        "Outdoor recreation",
+        "Pennsylvania",
+        "Social work, volunteer service, charitable organizations"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Congratulates the Red Land Little League Team of Lewisberry, Pennsylvania, on its performance at the 69th Little League World Series Championship.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres279/BILLS-114sres279ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres279/BILLS-114sres279ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres279/BILLS-114sres279ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/279",
       "votes": []
     },
     {
@@ -11888,6 +13538,40 @@
       "votes": []
     },
     {
+      "id": "sres270-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "270",
+      "title": "A resolution designating September 2015 as \"Pulmonary Fibrosis Awareness Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Coons, Christopher A.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2015-09-24",
+      "latest_action": {
+        "date": "2015-09-24",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S6949; text as passed Senate: CR S6942)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Cardiovascular and respiratory health",
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Health personnel",
+        "Medical research",
+        "Social work, volunteer service, charitable organizations"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates September 2015 as Pulmonary Fibrosis Awareness Month. (Pulmonary fibrosis is scarring of the lungs that causes breathing problems.)</p> <p>Expresses continued support for more robust and accelerated research to develop more effective treatments for pulmonary fibrosis and to ultimately find a cure for the disease.</p> <p>Recognizes the courage and contributions of individuals with pulmonary fibrosis who participate in clinical trials.</p> Commends the dedication of those working to improve the quality of life of individuals with pulmonary fibrosis and the families of those individuals.",
+      "text_url_html": "https://www.congress.gov/114/bills/sres270/BILLS-114sres270ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres270/BILLS-114sres270ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres270/BILLS-114sres270ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/270",
+      "votes": []
+    },
+    {
       "id": "sres263-114",
       "congress": 114,
       "type": "sres",
@@ -11952,6 +13636,70 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres264/BILLS-114sres264ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres264/BILLS-114sres264ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/264",
+      "votes": []
+    },
+    {
+      "id": "sres265-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "265",
+      "title": "A resolution honoring the life, accomplishments, and legacy of Congressman Louis Stokes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Brown, Sherrod",
+        "party": "D",
+        "state": "OH"
+      },
+      "introduced_date": "2015-09-22",
+      "latest_action": {
+        "date": "2015-09-22",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S6907; text as passed Senate: CR S6900-6901)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Congressional tributes",
+        "House of Representatives",
+        "Members of Congress",
+        "Ohio"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Honor the life, accomplishments, and legacy of Congressman Louis Stokes.</p> <p>Extends heartfelt sympathies and condolences to his family, friends, and loved ones.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres265/BILLS-114sres265ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres265/BILLS-114sres265ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres265/BILLS-114sres265ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/265",
+      "votes": []
+    },
+    {
+      "id": "sres257-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "257",
+      "title": "A resolution congratulating Captain Kristen Griest and First Lieutenant Shaye Haver on their graduation from Ranger School.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Collins, Susan M.",
+        "party": "R",
+        "state": "ME"
+      },
+      "introduced_date": "2015-09-17",
+      "latest_action": {
+        "date": "2015-09-21",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Congressional tributes",
+        "Military operations and strategy",
+        "Military personnel and dependents",
+        "Women's employment"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Recognizes the patriotism and historic contributions to the United States by Captain Kristen Griest and First Lieutenant Shaye Haver.</p> <p> Commends their character, courage, and tenacity as the first women to earn the Ranger tab signifying graduation from Ranger School.</p> <p> Congratulates them for their inspiring and ground breaking accomplishments.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres257/BILLS-114sres257ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres257/BILLS-114sres257ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres257/BILLS-114sres257ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/257",
       "votes": []
     },
     {
@@ -12088,6 +13836,38 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres245/BILLS-114sres245ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres245/BILLS-114sres245ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/245",
+      "votes": []
+    },
+    {
+      "id": "sres254-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "254",
+      "title": "A resolution recognizing Hispanic Heritage Month and celebrating the heritage and culture of Latinos in the United States and the immense contributions of Latinos to the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Menendez, Robert",
+        "party": "D",
+        "state": "NJ"
+      },
+      "introduced_date": "2015-09-15",
+      "latest_action": {
+        "date": "2015-09-15",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S6660; text as passed Senate: CR S6657)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Civil Rights and Liberties, Minority Issues",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Historical and cultural resources",
+        "Racial and ethnic relations"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Recognizes the celebration of Hispanic Heritage Month from September 15, 2015, through October 15, 2015. </p> <p>Esteems the integral role of Latinos and their manifold heritage in the economy, culture, and identity of the United States. </p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres254/BILLS-114sres254ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres254/BILLS-114sres254ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres254/BILLS-114sres254ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/254",
       "votes": []
     },
     {
@@ -12323,6 +14103,39 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ49/PLAW-114publ49_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ49/PLAW-114publ49.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/2559",
+      "votes": []
+    },
+    {
+      "id": "hr1626-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "1626",
+      "title": "DHS IT Duplication Reduction Act of 2015",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Hurd, Will",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2015-03-25",
+      "latest_action": {
+        "date": "2015-08-06",
+        "text": "Became Public Law No: 114-43."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Computers and information technology",
+        "Congressional oversight",
+        "Department of Homeland Security",
+        "Government studies and investigations",
+        "Technology assessment"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was reported to the House on June 17, 2015. The summary of that version is repeated here.)</p> <p><strong>DHS IT Duplication Reduction Act of 2015</strong></p> <p>(Sec. 2) Directs the Chief Information Officer of the Department of Homeland Security (DHS) to report on: </p> <ul> <li> the number of information technology systems at DHS;</li> <li> the number of such systems exhibiting duplication or fragmentation (i.e., where there are two or more systems or programs that deliver similar functionality to similar user populations);</li> <li>a strategy for reducing such duplicative systems, including an assessment of potential cost savings; and</li> <li>a methodology for determining which system should be eliminated when there is duplication or fragmentation.</li> </ul> <ul> <ul> </ul> </ul>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ43/PLAW-114publ43.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ43/PLAW-114publ43_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ43/PLAW-114publ43.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/1626",
       "votes": []
     },
     {
@@ -12567,6 +14380,39 @@
       "votes": []
     },
     {
+      "id": "s984-114",
+      "congress": 114,
+      "type": "s",
+      "number": "984",
+      "title": "Steve Gleason Act of 2015",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Vitter, David",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2015-04-16",
+      "latest_action": {
+        "date": "2015-07-30",
+        "text": "Became Public Law No: 114-40."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Health care coverage and access",
+        "Health technology, devices, supplies",
+        "Hearing, speech, and vision care",
+        "Medicare",
+        "Neurological disorders"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the Senate passed version is repeated here.)</p> <p><b>Steve Gleason Act of 2015</b></p> <p>(Sec. 2) This bill amends title XVIII (Medicare) of the Social Security Act to cover as durable medical equipment any eye tracking and gaze interaction accessories for speech generating devices furnished to individuals with a demonstrated medical need for them.</p> <p>(Sec. 3) Payment for speech generating devices or accessories shall be made on a rental basis, or in a lump-sum amount for the purchase of the item, without a cap on the amount in the case of devices furnished on or after October 1, 2015, and before October 1, 2018.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ40/PLAW-114publ40.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ40/PLAW-114publ40_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ40/PLAW-114publ40.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/984",
+      "votes": []
+    },
+    {
       "id": "sres234-114",
       "congress": 114,
       "type": "sres",
@@ -12799,6 +14645,37 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ35/PLAW-114publ35_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ35/PLAW-114publ35.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/1350",
+      "votes": []
+    },
+    {
+      "id": "hr2620-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "2620",
+      "title": "To amend the United States Cotton Futures Act to exclude certain cotton futures contracts from coverage under such Act.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Scott, David",
+        "party": "D",
+        "state": "GA"
+      },
+      "introduced_date": "2015-06-02",
+      "latest_action": {
+        "date": "2015-07-20",
+        "text": "Became Public Law No: 114-36."
+      },
+      "outcome": "enacted",
+      "policy_area": "Agriculture and Food",
+      "subjects": [
+        "Agricultural marketing and promotion",
+        "Agricultural trade",
+        "Commodities markets"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was passed by the House on June 23, 2015. The summary of that version is repeated here.)</p> <p>(Sec. 1) This bill amends the United States Cotton Futures Act to exclude cotton future contracts involving cotton that is grown outside of the United States and tendered for delivery from coverage under the Act, including the requirement that the cotton be classified by the Department of Agriculture. </p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ36/PLAW-114publ36.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ36/PLAW-114publ36_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ36/PLAW-114publ36.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/2620",
       "votes": []
     },
     {
@@ -13203,6 +15080,40 @@
       "votes": []
     },
     {
+      "id": "hr893-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "893",
+      "title": "Boys Town Centennial Commemorative Coin Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Fortenberry, Jeff",
+        "party": "R",
+        "state": "NE"
+      },
+      "introduced_date": "2015-02-11",
+      "latest_action": {
+        "date": "2015-07-06",
+        "text": "Became Public Law No: 114-30."
+      },
+      "outcome": "enacted",
+      "policy_area": "Finance and Financial Sector",
+      "subjects": [
+        "Child care and development",
+        "Child safety and welfare",
+        "Commemorative events and holidays",
+        "Currency",
+        "Nebraska",
+        "Social work, volunteer service, charitable organizations"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was passed by the House on June 23, 2015. The summary of that version is repeated here.)</p> <p><b>Boys Town Centennial Commemorative Coin Act</b></p> <p> (Sec. 3) Directs the Secretary of the Treasury to mint and issue up to 50,000 $5 gold coins, 350,000 $1 silver coins, and 300,000 half-dollar clad coins to commemorate the centennial of the founding of Father Flanagan's Boys Town.</p> <p>(Sec. 4) Requires the design of the coins to be emblematic of the 100 years of Boys Town, one of the largest nonprofit child care agencies in the United States.</p> <p>(Sec. 5) Permits issuance of such coins only between January 1, 2017, and December 31, 2017.</p> <p>(Sec. 7) Subjects all coin sales to specified surcharges, which shall be paid to Boys Town to carry out its cause of caring for and assisting children and families in underserved communities across America. Prohibits any surcharge if issuance of the coin would exceed the annual commemorative coin program issuance limitation.</p> <p>(Sec. 8) Directs the Secretary to ensure that: (1) minting and issuing such coins will not result in any net cost to the federal government; and (2) no funds, including surcharges, will be disbursed to Boys Town until the total cost of designing and issuing all authorized coins is recovered by the Treasury.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ30/PLAW-114publ30.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ30/PLAW-114publ30_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ30/PLAW-114publ30.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/893",
+      "votes": []
+    },
+    {
       "id": "sres215-114",
       "congress": 114,
       "type": "sres",
@@ -13270,6 +15181,41 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres212/BILLS-114sres212ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres212/BILLS-114sres212ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/212",
+      "votes": []
+    },
+    {
+      "id": "sres209-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "209",
+      "title": "A resolution designating the Ulysses S. Grant Association as the organization to implement the bicentennial celebration of the birth of Ulysses S. Grant, Civil War General and 2-term President of the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blunt, Roy",
+        "party": "R",
+        "state": "MO"
+      },
+      "introduced_date": "2015-06-23",
+      "latest_action": {
+        "date": "2015-06-23",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S4554; text as passed Senate: CR S4549-4550)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Social Sciences and History",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Higher education",
+        "Libraries and archives",
+        "Military history",
+        "Mississippi",
+        "Presidents and presidential powers, Vice Presidents",
+        "U.S. history"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Expresses support for the bicentennial celebration of the birth of Ulysses S. Grant. &nbsp;</p> <p>Designates the Ulysses S. Grant Association, housed at the Ulysses S. Grant Presidential Library at Mississippi State University,&nbsp;as the designated institution for organizing and leading the celebration of the bicentennial. </p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres209/BILLS-114sres209ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres209/BILLS-114sres209ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres209/BILLS-114sres209ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/209",
       "votes": []
     },
     {
@@ -13611,6 +15557,79 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres191/BILLS-114sres191ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres191/BILLS-114sres191ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/191",
+      "votes": []
+    },
+    {
+      "id": "sres87-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "87",
+      "title": "A resolution to express the sense of the Senate regarding the rise of anti-Semitism in Europe and to encourage greater cooperation with the European governments, the European Union, and the Organization for Security and Co-operation in Europe in preventing and responding to anti-Semitism.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Menendez, Robert",
+        "party": "D",
+        "state": "NJ"
+      },
+      "introduced_date": "2015-02-25",
+      "latest_action": {
+        "date": "2015-06-03",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S3728)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Crime victims",
+        "Criminal investigation, prosecution, interrogation",
+        "Diplomacy, foreign officials, Americans abroad",
+        "Europe",
+        "European Union",
+        "Human rights",
+        "International organizations and cooperation",
+        "Law enforcement officers",
+        "Racial and ethnic relations",
+        "Religion",
+        "Terrorism",
+        "Violent crime"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Urges the Secretary of State, the Attorney General, and other relevant U.S. government agencies and officials to work with the European Union and European governments to encourage further efforts to address anti-Semitism.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres87/BILLS-114sres87ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres87/BILLS-114sres87ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres87/BILLS-114sres87ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/87",
+      "votes": []
+    },
+    {
+      "id": "sres188-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "188",
+      "title": "A resolution expressing appreciation of the goals of American Craft Beer Week and commending the small and independent craft brewers of the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cardin, Benjamin L.",
+        "party": "D",
+        "state": "MD"
+      },
+      "introduced_date": "2015-05-31",
+      "latest_action": {
+        "date": "2015-05-31",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S3371; text as passed Senate: CR S3341-3342)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commerce",
+      "subjects": [
+        "Alcoholic beverages",
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Food industry and services",
+        "Small business"
+      ],
+      "summary_crs": " <p>Appreciates the goals of American Craft Beer Week, established by the Brewers Association, which represents the U.S. small craft brewers.</p> <p>Recognizes their significant contributions to the economy and to the communities in which they are located.</p> <p>Commends them for providing jobs, supporting U.S. agriculture, improving the balance of trade, and educating the people of the United States and beer lovers around the world about the history and culture of beer while promoting the legal and responsible consumption of beer.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres188/BILLS-114sres188ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres188/BILLS-114sres188ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres188/BILLS-114sres188ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/188",
       "votes": []
     },
     {
@@ -14052,6 +16071,39 @@
       "votes": []
     },
     {
+      "id": "sres179-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "179",
+      "title": "A resolution designating May 16, 2015, as \"Kids to Parks Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wyden, Ron",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2015-05-14",
+      "latest_action": {
+        "date": "2015-05-14",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2946-2947; text as passed Senate: CR S2937)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Child health",
+        "Commemorative events and holidays",
+        "Land use and conservation",
+        "Outdoor recreation",
+        "Parks, recreation areas, trails"
+      ],
+      "summary_crs": " <p>Designates May 16, 2015, as National Kids to Parks Day.</p> <p>Recognizes the importance of outdoor recreation and the preservation of open spaces to the health and education of young people of the United States. </p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres179/BILLS-114sres179ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres179/BILLS-114sres179ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres179/BILLS-114sres179ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/179",
+      "votes": []
+    },
+    {
       "id": "sres177-114",
       "congress": 114,
       "type": "sres",
@@ -14143,6 +16195,41 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres170/BILLS-114sres170ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres170/BILLS-114sres170ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/170",
+      "votes": []
+    },
+    {
+      "id": "sres171-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "171",
+      "title": "A resolution congratulating the students, parents, teachers, and administrators of charter schools across the United States for making ongoing contributions to education, and supporting the ideals and goals of the 16th annual National Charter Schools Week, to be held May 3 through May 9, 2015.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Alexander, Lamar",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2015-05-06",
+      "latest_action": {
+        "date": "2015-05-06",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2697; text as passed Senate: CR S2692-2693)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Education",
+      "subjects": [
+        "Academic performance and assessments",
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Education of the disadvantaged",
+        "Elementary and secondary education",
+        "School administration",
+        "Teaching, teachers, curricula"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Congratulates the students, families, teachers, administrators, and staff of public charter schools across the United States for making ongoing contributions to public education, for making impressive strides in closing the academic achievement gap in U.S. schools, and for improving and strengthening the public school system.</p> <p>Expresses support for the ideals and goals of the 16th annual National Charter Schools Week (May 3-May 9, 2015).</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres171/BILLS-114sres171ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres171/BILLS-114sres171ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres171/BILLS-114sres171ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/171",
       "votes": []
     },
     {
@@ -14344,6 +16431,37 @@
       "votes": []
     },
     {
+      "id": "sres136-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "136",
+      "title": "A resolution expressing support for the designation of May 1, 2015, as \"Silver Star Service Banner Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blunt, Roy",
+        "party": "R",
+        "state": "MO"
+      },
+      "introduced_date": "2015-04-16",
+      "latest_action": {
+        "date": "2015-04-30",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S2589)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Military personnel and dependents",
+        "Veterans' organizations and recognition"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Supports the designation of May 1, 2015, as Silver Star Service Banner Day.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres136/BILLS-114sres136ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres136/BILLS-114sres136ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres136/BILLS-114sres136ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/136",
+      "votes": []
+    },
+    {
       "id": "sres158-114",
       "congress": 114,
       "type": "sres",
@@ -14372,6 +16490,71 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres158/BILLS-114sres158ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres158/BILLS-114sres158ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/158",
+      "votes": []
+    },
+    {
+      "id": "sres159-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "159",
+      "title": "A resolution designating April 2015, as \"National 9-1-1 Education Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Klobuchar, Amy",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2015-04-30",
+      "latest_action": {
+        "date": "2015-04-30",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2589; text as passed Senate: CR S2580)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Emergency Management",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Elementary and secondary education",
+        "Emergency communications systems",
+        "School administration",
+        "Telephone and wireless communication"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates April 2015 as National 9-1-1 Education Month.</p> ",
+      "text_url_html": "https://www.congress.gov/114/bills/sres159/BILLS-114sres159ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres159/BILLS-114sres159ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres159/BILLS-114sres159ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/159",
+      "votes": []
+    },
+    {
+      "id": "sres160-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "160",
+      "title": "A resolution expressing the sense of the Senate that public servants should be commended for their dedication and continued service to the United States during Public Service Recognition Week.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Heitkamp, Heidi",
+        "party": "D",
+        "state": "ND"
+      },
+      "introduced_date": "2015-04-30",
+      "latest_action": {
+        "date": "2015-04-30",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2589; text as passed Senate: CR S2580-2581)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Government employee pay, benefits, personnel management",
+        "Military personnel and dependents"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Expresses support for the designation of the week of May 3 through May 9, 2015, as Public Service Recognition Week. </p> <p>Commends public servants, government employees, and members of the uniformed services for their public service and honors those who have given their lives in service. </p> <p>Calls upon a new generation to consider a career in public service as an honorable profession. </p> <p>Encourages efforts to promote public service careers at all levels of government. </p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres160/BILLS-114sres160ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres160/BILLS-114sres160ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres160/BILLS-114sres160ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/160",
       "votes": []
     },
     {
@@ -14566,6 +16749,39 @@
       "votes": []
     },
     {
+      "id": "sres150-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "150",
+      "title": "A resolution expressing the sense of the Senate about the importance of effective civic and government education programs in schools in the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Grassley, Chuck",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2015-04-23",
+      "latest_action": {
+        "date": "2015-04-23",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2417; text as passed Senate: CR S2406-2407)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Education",
+      "subjects": [
+        "Constitution and constitutional amendments",
+        "Elementary and secondary education",
+        "Public participation and lobbying",
+        "Teaching, teachers, curricula",
+        "U.S. history"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Expresses the sense of the Senate that:</p> <ul> <li>civic and government education is essential to the well-being of the constitutional government of the United States,</li> <li>comprehensive and formal instruction in civics and government would provide students with a basis for understanding the rights and responsibilities of citizens under such government,</li> <li> elementary and secondary schools are encouraged to offer courses on the history and theories of such government, and</li> <li>civics and government teachers are well served by having access to professional development programs that enhance their capacity to provide effective civic and government education in the classroom.</li></ul>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres150/BILLS-114sres150ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres150/BILLS-114sres150ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres150/BILLS-114sres150ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/150",
+      "votes": []
+    },
+    {
       "id": "sres151-114",
       "congress": 114,
       "type": "sres",
@@ -14601,6 +16817,36 @@
       "votes": []
     },
     {
+      "id": "sres144-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "144",
+      "title": "A resolution supporting the mission and goals of 2015 National Crime Victims' Rights Week, which include increasing public awareness of the rights, needs, and concerns of, and services available to assist, victims and survivors of crime in the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Grassley, Chuck",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2015-04-22",
+      "latest_action": {
+        "date": "2015-04-22",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2319; text of measure as passed Senate: CR S2357)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Crime victims"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Expresses support for the mission and goals of 2015 National Crime Victims' Rights Week, which include increasing individual and public awareness of: (1) the impact of crime on victims, survivors, and their families; (2) the challenges to achieving justice for victims and survivors of crime and their families; and (3) the many solutions to meet such challenges.</p> <p>Recognizes that crime victims and survivors and their families should be treated with dignity, fairness, and respect.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres144/BILLS-114sres144ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres144/BILLS-114sres144ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres144/BILLS-114sres144ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/144",
+      "votes": []
+    },
+    {
       "id": "sres145-114",
       "congress": 114,
       "type": "sres",
@@ -14632,6 +16878,39 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres145/BILLS-114sres145ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres145/BILLS-114sres145ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/145",
+      "votes": []
+    },
+    {
+      "id": "sres146-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "146",
+      "title": "A resolution expressing support for the designation of the week of April 13 through April 17, 2015, as \"National Assistant Principals Week\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Isakson, Johnny",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2015-04-22",
+      "latest_action": {
+        "date": "2015-04-22",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2319; text of measure as passed Senate: CR S2357-2358)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Education",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Elementary and secondary education",
+        "School administration",
+        "Teaching, teachers, curricula"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p> Supports the designation of April 13-April 17, 2015, as National Assistant Principals Week.</p> <p> Honors the contributions of assistant principals to students' success.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres146/BILLS-114sres146ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres146/BILLS-114sres146ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres146/BILLS-114sres146ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/146",
       "votes": []
     },
     {
@@ -14837,6 +17116,39 @@
       "votes": []
     },
     {
+      "id": "sres133-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "133",
+      "title": "A resolution supporting the goals and ideals of National Public Health Week.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Udall, Tom",
+        "party": "D",
+        "state": "NM"
+      },
+      "introduced_date": "2015-04-13",
+      "latest_action": {
+        "date": "2015-04-13",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2139; text as passed Senate: CR S2112)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Health care quality",
+        "Health personnel",
+        "Health programs administration and funding",
+        "Health promotion and preventive care"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Expresses support for the goals and ideals of National Public Health Week.</p> <p>Recognizes the efforts of public health professionals, governments, tribes, and individuals in preventing disease and injury.</p> <p>Encourages increased efforts and resources to improve the health of people in the United States to create the healthiest nation in one generation through greater opportunities to improve community health and by strengthening the public health system.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres133/BILLS-114sres133ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres133/BILLS-114sres133ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres133/BILLS-114sres133ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/133",
+      "votes": []
+    },
+    {
       "id": "hjres10-114",
       "congress": 114,
       "type": "hjres",
@@ -14896,6 +17208,39 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ8/PLAW-114publ8_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ8/PLAW-114publ8.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/1092",
+      "votes": []
+    },
+    {
+      "id": "sres105-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "105",
+      "title": "A resolution recognizing the 194th anniversary of the independence of Greece and celebrating democracy in Greece and the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Menendez, Robert",
+        "party": "D",
+        "state": "NJ"
+      },
+      "introduced_date": "2015-03-19",
+      "latest_action": {
+        "date": "2015-03-27",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Europe",
+        "Greece",
+        "Sovereignty, recognition, national governance and status"
+      ],
+      "summary_crs": " <p>Congratulates the people of Greece as they celebrate the 194th anniversary of the independence of Greece.</p> <p> Supports the principles of democratic governance to which the people of Greece are committed.</p> <p> Notes Greece's important role in the wider European region and in the community of nations since gaining its independence 194 years ago.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres105/BILLS-114sres105ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres105/BILLS-114sres105ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres105/BILLS-114sres105ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/105",
       "votes": []
     },
     {
@@ -15386,6 +17731,75 @@
       "votes": []
     },
     {
+      "id": "sres95-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "95",
+      "title": "A resolution designating March 3, 2015, as \"World Wildlife Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Coons, Christopher A.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2015-03-03",
+      "latest_action": {
+        "date": "2015-03-03",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S1260; text as passed Senate: CR S1254-1255)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Animals",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Crime prevention",
+        "Crimes against animals and natural resources",
+        "International organizations and cooperation",
+        "Smuggling and trafficking",
+        "Wildlife conservation and habitat protection"
+      ],
+      "summary_crs": " <p>Designates March 3, 2015, as World Wildlife Day. Supports: (1) raising awareness of the benefits that wildlife provides to people and the threats facing wildlife around the world; and (2) escalating the fight against wildlife crime, such as wildlife trafficking. </p> <p>Commends efforts of the United States to mobilize the government in a coordinated, efficient, and effective manner for progress in the fight.</p> <p>Encourages continued cooperation between the United States, international partners, local communities, nonprofit organizations, private industry, and other partner organizations in an effort to conserve and celebrate wildlife.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres95/BILLS-114sres95ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres95/BILLS-114sres95ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres95/BILLS-114sres95ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/95",
+      "votes": []
+    },
+    {
+      "id": "sres92-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "92",
+      "title": "A resolution designating February 28, 2015, as \"Rare Disease Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Brown, Sherrod",
+        "party": "D",
+        "state": "OH"
+      },
+      "introduced_date": "2015-02-27",
+      "latest_action": {
+        "date": "2015-02-27",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S1206; text as passed Senate: CR S1203-1204)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Health care coverage and access",
+        "Health promotion and preventive care",
+        "Hereditary and development disorders",
+        "Medical research",
+        "Medical tests and diagnostic methods",
+        "World health"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates February 28, 2015, as Rare Disease Day. Expresses support for a national and global commitment to developing new treatments, diagnostics, and cures for rare diseases and disorders. </p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres92/BILLS-114sres92ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres92/BILLS-114sres92ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres92/BILLS-114sres92ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/92",
+      "votes": []
+    },
+    {
       "id": "sres88-114",
       "congress": 114,
       "type": "sres",
@@ -15778,6 +18192,38 @@
       "votes": []
     },
     {
+      "id": "sres64-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "64",
+      "title": "A resolution designating February 2 through 6, 2015, as \"National School Counseling Week\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Murray, Patty",
+        "party": "D",
+        "state": "WA"
+      },
+      "introduced_date": "2015-02-03",
+      "latest_action": {
+        "date": "2015-02-03",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S739; text as passed Senate: CR S738-739)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Education",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Educational guidance",
+        "Elementary and secondary education",
+        "Teaching, teachers, curricula"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates February 2-February 6, 2015, as National School Counseling Week.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres64/BILLS-114sres64ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres64/BILLS-114sres64ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres64/BILLS-114sres64ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/64",
+      "votes": []
+    },
+    {
       "id": "sres62-114",
       "congress": 114,
       "type": "sres",
@@ -15873,6 +18319,39 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres60/BILLS-114sres60ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres60/BILLS-114sres60ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/60",
+      "votes": []
+    },
+    {
+      "id": "sres58-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "58",
+      "title": "A resolution recognizing January 2015 as \"National Mentoring Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Isakson, Johnny",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2015-01-29",
+      "latest_action": {
+        "date": "2015-01-29",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S662; text as passed Senate: CR S660-661)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Education",
+      "subjects": [
+        "Child care and development",
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Educational guidance",
+        "Elementary and secondary education"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Recognizes: (1) January 2015 as National Mentoring Month, and (2) the staff and volunteers at quality mentoring programs who help young people reach their full potential.</p> <p>Acknowledges that mentoring is beneficial in that it encourages educational achievement, reduces juvenile delinquency, improves life outcomes, and strengthens communities.</p> <p>Expresses support for: (1) the creation and expansion of quality mentoring programs across the country, and (2) initiatives to increase the percentage of young people who have a mentor.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres58/BILLS-114sres58ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres58/BILLS-114sres58ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres58/BILLS-114sres58ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/58",
       "votes": []
     },
     {
@@ -16188,6 +18667,53 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres24/BILLS-114sres24ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres24/BILLS-114sres24ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/24",
+      "votes": []
+    },
+    {
+      "id": "sres21-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "21",
+      "title": "A resolution making majority party appointments for the 114th Congress.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. McConnell, Mitch",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2015-01-07",
+      "latest_action": {
+        "date": "2015-01-07",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S67; text as passed Senate: CR S67; text of measure as introduced: CR S66)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Congressional committees",
+        "Joint Economic Committee",
+        "Members of Congress",
+        "Senate",
+        "Senate Committee on Agriculture, Nutrition, and Forestry",
+        "Senate Committee on Appropriations",
+        "Senate Committee on Armed Services",
+        "Senate Committee on Banking, Housing, and Urban Affairs",
+        "Senate Committee on Commerce, Science, and Transportation",
+        "Senate Committee on Energy and Natural Resources",
+        "Senate Committee on Environment and Public Works",
+        "Senate Committee on Finance",
+        "Senate Committee on Foreign Relations",
+        "Senate Committee on Health, Education, Labor, and Pensions",
+        "Senate Committee on Homeland Security and Governmental Affairs",
+        "Senate Committee on Indian Affairs",
+        "Senate Committee on Rules and Administration",
+        "Senate Committee on Small Business and Entrepreneurship",
+        "Senate Committee on Veterans' Affairs"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates the majority party membership on specified Senate committees for the 114th Congress.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres21/BILLS-114sres21ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres21/BILLS-114sres21ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres21/BILLS-114sres21ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/21",
       "votes": []
     },
     {
