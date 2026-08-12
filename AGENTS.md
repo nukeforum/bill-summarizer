@@ -35,3 +35,36 @@ Two sharp edges, verified on Gradle 9.5:
   consumed by `android/` via `includeBuild("../pipeline")`), so it cannot
   share android's property file idiomatically — its `gradle.properties`
   carries a second copy of the property. Keep the two values in sync.
+
+## Test
+
+### `boundsInRoot()` on a clipped-out node returns `Rect.Zero`, not its real off-screen position
+
+In a Robolectric-hosted Compose UI test, a `SemanticsNode` positioned outside
+its scrollable ancestor's current viewport (e.g. below the fold of a
+`Modifier.verticalScroll` `Column`) reports `boundsInRoot() == Rect.Zero`, not
+its actual (larger) layout coordinates. This is because the scrollable
+clips its content to its own bounds, and a fully-clipped node's window
+bounds resolve to empty. Robolectric's default compose-test viewport is also
+small and fixed (320×470dp) unless the content is wrapped in an explicitly
+sized `Box`, making this easy to hit incidentally.
+
+Two consequences when writing render tests for tall/scrollable screens:
+
+- **Don't assert section order via `boundsInRoot()` comparisons** on content
+  that may be off-screen — a below-the-fold node can silently compare as
+  `(0, 0)` and produce a false pass or a confusing failure. Compare
+  semantics-tree traversal order instead (first-encountered index of each
+  node's merged text in a depth-first walk from `onRoot().fetchSemanticsNode()`),
+  which reflects layout order regardless of clipping.
+- **`performScrollTo()` scrolls only the minimum distance** needed to bring a
+  node fully into view — it does not scroll to the end of the scrollable
+  range. A geometry-based occlusion assertion (e.g. "does this floating
+  button ever cover the last line?") needs the *true* max scroll position:
+  drive the scrollable's own `SemanticsActions.ScrollBy` with a
+  large delta instead (`onNode(SemanticsMatcher.keyIsDefined(SemanticsActions.ScrollBy))
+  .performSemanticsAction(SemanticsActions.ScrollBy) { it(0f, 1_000_000f) }`).
+
+Also: `ExtendedFloatingActionButton` merges its descendants' semantics (it is
+a `Button` under the hood), so finding its label text requires
+`onNodeWithText(..., useUnmergedTree = true)`.
