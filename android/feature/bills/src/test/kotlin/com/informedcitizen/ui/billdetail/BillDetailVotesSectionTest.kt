@@ -44,6 +44,7 @@ class BillDetailVotesSectionTest {
                 ),
                 innerPadding = PaddingValues(0.dp),
                 onOpenFullText = {},
+                onReadFullText = {},
                 repVotes = repVotes,
             )
         }

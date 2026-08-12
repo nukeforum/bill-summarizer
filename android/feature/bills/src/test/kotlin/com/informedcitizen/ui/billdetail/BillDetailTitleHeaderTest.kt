@@ -38,6 +38,7 @@ class BillDetailTitleHeaderTest {
                 ),
                 innerPadding = PaddingValues(0.dp),
                 onOpenFullText = {},
+                onReadFullText = {},
             )
         }
     }

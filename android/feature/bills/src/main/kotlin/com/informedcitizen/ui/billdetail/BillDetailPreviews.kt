@@ -72,6 +72,7 @@ private fun PreviewBillDetailLoading() = PreviewWrap {
         state = BillDetailUiState.Loading,
         innerPadding = PaddingValues(0.dp),
         onOpenFullText = {},
+        onReadFullText = {},
     )
 }
 
@@ -85,6 +86,7 @@ private fun PreviewBillDetailSuccess() = PreviewWrap {
         ),
         innerPadding = PaddingValues(0.dp),
         onOpenFullText = {},
+        onReadFullText = {},
     )
 }
 
@@ -98,6 +100,7 @@ private fun PreviewBillDetailSuccessWithRepVotes() = PreviewWrap {
         ),
         innerPadding = PaddingValues(0.dp),
         onOpenFullText = {},
+        onReadFullText = {},
         repVotes = sampleRepVotes,
     )
 }
@@ -112,6 +115,7 @@ private fun PreviewBillDetailRepVotesFetchFailed() = PreviewWrap {
         ),
         innerPadding = PaddingValues(0.dp),
         onOpenFullText = {},
+        onReadFullText = {},
         repVotes = RepVotesUiState(emptyMap(), fetchFailed = true),
     )
 }
@@ -126,6 +130,7 @@ private fun PreviewBillDetailVoiceVote() = PreviewWrap {
         ),
         innerPadding = PaddingValues(0.dp),
         onOpenFullText = {},
+        onReadFullText = {},
     )
 }
 
@@ -139,6 +144,7 @@ private fun PreviewBillDetailSuccessNoSummary() = PreviewWrap {
         ),
         innerPadding = PaddingValues(0.dp),
         onOpenFullText = {},
+        onReadFullText = {},
     )
 }
 
@@ -149,5 +155,6 @@ private fun PreviewBillDetailError() = PreviewWrap {
         state = BillDetailUiState.Error(message = "Bill not found in cache."),
         innerPadding = PaddingValues(0.dp),
         onOpenFullText = {},
+        onReadFullText = {},
     )
 }
