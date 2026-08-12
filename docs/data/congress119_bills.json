@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T07:45:52Z",
+  "generated_at": "2026-08-12T07:23:46Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
@@ -567,13 +567,12 @@
         "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text of amendment in the nature of a substitute: CR S4552-4553)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [],
       "summary_crs": null,
-      "text_url_html": "https://www.congress.gov/119/bills/sres815/BILLS-119sres815is.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/sres815/BILLS-119sres815is.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/sres815/BILLS-119sres815is.pdf",
+      "text_url_html": "https://www.congress.gov/119/bills/sres815/BILLS-119sres815ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres815/BILLS-119sres815ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres815/BILLS-119sres815ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/815",
       "votes": []
     },
@@ -595,13 +594,16 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4553)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Transportation and Public Works",
-      "subjects": [],
+      "subjects": [
+        "Commemorative events and holidays",
+        "Historic sites and heritage areas",
+        "Marine and inland water transportation"
+      ],
       "summary_crs": null,
-      "text_url_html": "https://www.congress.gov/119/bills/sres820/BILLS-119sres820is.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/sres820/BILLS-119sres820is.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/sres820/BILLS-119sres820is.pdf",
+      "text_url_html": "https://www.congress.gov/119/bills/sres820/BILLS-119sres820ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres820/BILLS-119sres820ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres820/BILLS-119sres820ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/820",
       "votes": []
     },
@@ -817,7 +819,6 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 50. Record Vote Number: 222."
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "Environmental Protection",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -1277,7 +1278,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4311)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Correctional facilities and imprisonment",
@@ -1312,7 +1312,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4286)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Civil Rights and Liberties, Minority Issues",
       "subjects": [
         "Commemorative events and holidays",
@@ -1468,7 +1467,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4117)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Congressional tributes",
@@ -1500,7 +1498,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4117)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Congressional tributes",
@@ -1566,7 +1563,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4087)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional tributes",
@@ -1663,8 +1659,7 @@
         "date": "2026-07-11",
         "text": "Became Public Law No: 119-101."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Housing and Community Development",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -2227,7 +2222,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S3195)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Emergency Management",
       "subjects": [
         "Commemorative events and holidays",
@@ -2351,7 +2345,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S3024)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Assault and harassment offenses",
@@ -2385,7 +2378,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S3024)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Civil Rights and Liberties, Minority Issues",
       "subjects": [
         "Colorado",
@@ -2595,7 +2587,6 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 46 - 48. Record Vote Number: 173. (consideration: CR S2816)"
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "Immigration",
       "subjects": [
         "Administrative law and regulatory procedures",
