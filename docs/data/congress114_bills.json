@@ -1,8 +1,55 @@
 {
-  "generated_at": "2026-08-12T13:22:35Z",
+  "generated_at": "2026-08-13T13:24:06Z",
   "congress": 114,
   "votes_coverage": false,
   "bills": [
+    {
+      "id": "s3084-114",
+      "congress": 114,
+      "type": "s",
+      "number": "3084",
+      "title": "American Innovation and Competitiveness Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Gardner, Cory",
+        "party": "R",
+        "state": "CO"
+      },
+      "introduced_date": "2016-06-22",
+      "latest_action": {
+        "date": "2017-01-06",
+        "text": "Became Public Law No: 114-329."
+      },
+      "outcome": "enacted",
+      "policy_area": "Science, Technology, Communications",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Advanced technology and technological innovations",
+        "Advisory bodies",
+        "Arctic and polar regions",
+        "Atmospheric science and weather",
+        "Biological and life sciences",
+        "Business education",
+        "Chemistry",
+        "Competitiveness, trade promotion, trade deficits",
+        "Computer security and identity theft",
+        "Computers and information technology",
+        "Congressional oversight",
+        "Department of Commerce",
+        "Department of Education",
+        "Department of Energy",
+        "Education programs funding",
+        "Elementary and secondary education",
+        "Emergency communications systems",
+        "Employment and training programs"
+      ],
+      "summary_crs": " <p><b>American Innovation and Competitiveness Act</b></p> <p>This bill calls on the National Science Foundation (NSF) to maintain the intellectual merit and broader impacts criteria as the basis for evaluating grant proposals in the merit review process. </p> <p>The NSF shall issue and periodically update policy guidance for both NSF staff and other NSF merit review process participants, emphasizing the importance of transparency and accountability of the outcomes made through such process. </p> <p>The bill renames the Experimental Program to Stimulate Competitive Research as the Established Program to Stimulate Competitive Research (EPSCoR) and revises program requirements. </p> <p>The National Institute of Standards and Technology (NIST) shall: (1) research information systems for future cybersecurity needs; and (2) develop a process to research and identify, or if necessary, develop cryptography standards and guidelines for future cybersecurity needs, including quantum-resistant cryptography standards. </p> <p>The bill renames the National High Performance Computing Program as the Networking and Information Technology Research and Development Program and revises program requirements.</p> <p>The National Science and Technology Council (NSTC) shall define and coordinate federal research in high-energy physics. </p> <p> NIST shall implement a comprehensive strategic plan for laboratory programs expanding interactions with academia, international researchers, and industry, and commercial and industrial applications.</p> <p>The NSF shall: </p> <ul> <li>evaluate the existing and future needs, across all NSF-supported disciplines, for mid-scale projects; and </li> <li> strengthen oversight and accountability over the full life-cycle of large-scale research facility projects; and</li> <li>continue to review its efforts to sustain scientific efforts in the face of logistical challenges for the U.S. Antarctic Program.</li> </ul> <p>The Department of Commerce Office of Security shall directly manage NIST's law enforcement and security programs through an assigned Director of Security for NIST.</p> <p>The Office of Management and Budget shall establish an interagency working group to reduce administrative burdens of federally funded researchers while protecting the public's interest in the transparency of, and accountability for, federally funded activities. </p> <p>The NSF, the Department of Education, the National Oceanic and Atmospheric Administration, and the National Aeronautics and Space Administration (NASA) shall establish the STEM Education Advisory Panel to advise the NSTC Committee on STEM Education on matters related to science, technology, engineering, and mathematics (STEM). </p> <p>The NSF shall award grants to:</p> <ul> <li>increase the participation of women and underrepresented groups in STEM fields,</li> <li>for research to advance the engagement of students in grades kindergarten through 8 in STEM, and </li> <li>for establishment of at least one Center of Excellence for the collection, maintenance, and dissemination of information to increase the participation of women and groups underrepresented in STEM fields. </li> </ul> <p>The National Institute of Standards and Technology Act is amended to revise requirements for:</p> <ul> <li>NIST's post-doctoral fellowship program, and </li> <li>the Hollings Manufacturing Extension Partnership.</li> </ul> <p>Federal agencies may use crowdsourcing and voluntary, collaborative citizen science to advance their missions.</p> <p>The Office of Science and Technology Policy shall establish an interagency working group to:</p> <ul> <li>summarize available research and best practices on how to promote diversity and inclusions in STEM fields, and </li> <li>examine whether barriers exist to promoting diversity and inclusion within federal agencies employing scientists and engineers. </li> </ul> <p>Each federal agency shall recommend to the President how it could expand research opportunities for undergraduate students attending institutions of higher education.</p> <p>The NSF shall award grants for:</p> <ul> <li>research on computer science education and computational thinking; and </li> <li>Innovation Corps entrepreneurship and commercialization education, training, and mentoring. </li> </ul>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ329/PLAW-114publ329.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ329/PLAW-114publ329_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ329/PLAW-114publ329.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/3084",
+      "votes": []
+    },
     {
       "id": "s2943-114",
       "congress": 114,
@@ -172,6 +219,43 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ284/PLAW-114publ284_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ284/PLAW-114publ284.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/3784",
+      "votes": []
+    },
+    {
+      "id": "hr3842-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "3842",
+      "title": "Federal Law Enforcement Training Centers Reform and Improvement Act of 2015",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Carter, Earl L. \"Buddy\"",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2015-10-28",
+      "latest_action": {
+        "date": "2016-12-16",
+        "text": "Became Public Law No: 114-285."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Department of Homeland Security",
+        "Executive agency funding and structure",
+        "Federal officials",
+        "Homeland security",
+        "Intergovernmental relations",
+        "Law enforcement administration and funding",
+        "Law enforcement officers",
+        "Teaching, teachers, curricula",
+        "Terrorism"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was reported to the House on November 19, 2015. The summary of that version is repeated here.)</p> <p><b>Federal Law Enforcement Training Centers Reform and Improvement Act of 2015</b></p> <p>(Sec. 2) This bill amends the Homeland Security Act of 2002 to codify the establishment of the Federal Law Enforcement Training Center (FLETC) within the Department of Homeland Security (DHS).</p> <p>The FLETC must be headed by a director who reports to the DHS Secretary. </p> <p>The bill sets forth functions of the director, including to: establish and execute organizational plans and priorities; direct and manage training facilities, programs, and activities; develop training goals and curricula; disseminate homeland security information to law enforcement and security agencies and private sector stakeholders; conduct acquisition in compliance with federal law and regulations; coordinate and share digital resources with federal agencies; and collaborate to improve international instructional development, training, and technical assistance to foreign law enforcement.</p> <p>Additionally, the bill sets forth training responsibilities of the FLETC and partner organizations (i.e., federal agencies that participate in FLETC training programs under a formal memorandum of understanding).</p> <p>It authorizes the FLETC to: (1) train federal employees engaged in homeland security operations or law enforcement activities, and (2) execute strategic partnerships with state and local law enforcement agencies and coordinate with private sector stakeholders to provide training. The FLETC must consult with relevant law enforcement and security agencies to develop and deliver training programs.</p> <p>A partner organization must pay for and assign non-reimbursable detailed instructors to support training programs.</p> <p>The FLETC may conduct federal employee trainings at FLETC facilities, at off-site locations, or by distributed learning (e.g., online); detail its employees throughout DHS; charge fees for non-federal trainings; provide certain student support services; hire retired federal employees with training experience; and reimburse travel expenses of non-federal and intermittent federal employees. </p> <p>Individuals who attend FLETC training must reside in FLETC housing, to the extent practicable.</p> <p>Finally, the bill codifies existing authorities of the FLETC to spend funds to promote awareness of and support for law enforcement training, accept and use gifts for authorized purposes, accept reimbursement for the construction or renovation of training facilities, obligate funds in anticipation of reimbursements, purchase uniforms and passenger vehicles, and provide room and board for student interns. It also authorizes the FLETC to spend funds to honor and memorialize FLETC graduates who have died in the line of duty.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ285/PLAW-114publ285.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ285/PLAW-114publ285_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ285/PLAW-114publ285.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/3842",
       "votes": []
     },
     {
@@ -1514,6 +1598,89 @@
       "votes": []
     },
     {
+      "id": "s2577-114",
+      "congress": 114,
+      "type": "s",
+      "number": "2577",
+      "title": "Justice for All Reauthorization Act of 2016",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2016-02-24",
+      "latest_action": {
+        "date": "2016-12-16",
+        "text": "Became Public Law No: 114-324."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Accounting and auditing",
+        "Assault and harassment offenses",
+        "Congressional oversight",
+        "Correctional facilities and imprisonment",
+        "Crime victims",
+        "Crimes against women",
+        "Criminal investigation, prosecution, interrogation",
+        "Criminal procedure and sentencing",
+        "Debt collection",
+        "Evidence and witnesses",
+        "Foreign language and bilingual programs",
+        "Genetics",
+        "Government studies and investigations",
+        "Health personnel",
+        "Law enforcement administration and funding",
+        "Lawyers and legal services",
+        "Medical tests and diagnostic methods",
+        "Nursing",
+        "Public housing"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was passed by the House on November 29, 2016. The summary of that version is repeated here.)</p> <p><b>Justice for All Reauthorization Act of 2016</b></p> <p>(Sec. 2) This bill amends the federal criminal code to require a court to order, as an explicit condition of supervised release, that a defendant makes restitution to the victim of a federal offense for which restitution is authorized.</p> <p>A defendant's liability to pay restitution terminates 20 years from the filing date of the judgment or the defendant's release from prison. In the event of the death of the person ordered to pay restitution, the individual's estate will be held responsible.</p> <p>The bill amends Rule 28 of the Federal Rules of Criminal Procedure to authorize a court to appoint and compensate an interpreter for a crime victim.</p> <p>The Government Accountability Office (GAO) must study and report to Congress on whether providing broader authority for courts to award restitution would benefit crime victims. </p> <p>(Sec. 3) Of amounts made available over FY2018-FY2021 for a DNA analysis and capacity enhancement program and for other forensic activities, the Department of Justice (DOJ) must allocate at least 75% to test rape kits and at least 5% to audit backlogged rape kits.</p> <p>The bill establishes reporting requirements for DOJ and grant recipients.</p> <p>(Sec. 4) It amends the DNA Sexual Assault Justice Act of 2004 to give preference to Sexual Assault Forensic Exam Program grant applicants that use the funds to: (1) improve forensic nurse examiner programs in a rural or underserved area, (2) employ full-time forensic nurse examiners in a rural or underserved program, or (3) sustain or establish a forensic nurse examiner training program.</p> <p>DOJ must coordinate with the Department of Health and Human Services to inform federally qualified health centers, hospitals, colleges and universities, and other health-related entities about the role of forensic nurses and the resources available to train or employ them.</p> <p>(Sec. 5) This section amends the Prison Rape Elimination Act of 2003 to specify that funds under the STOP (Services, Training, Officers, and Prosecutors) Violence Against Women Formula Grant Program are not subject to a 5% reduction for a state that fails to comply with the national prison rape standards.</p> <p>(Sec. 6) The bill amends the Violence Against Women Act of 1994 to specify that accommodations applicable to a remaining tenant, after the eviction of the sole tenant eligible to receive assistance under a covered housing program, also apply to a resident.</p> <p>(Sec. 7) The bill revises and expands requirements with respect to adopting national prison rape standards. Specifically, it requires states to also provide certain additional information. </p> <p>Additionally, it requires compliance auditors to submit to criminal history background checks. </p> <p>(Sec. 8) It reauthorizes through FY2021 appropriations for: (1) demonstration grants for DNA research and development, (2) DNA programs and activities at the FBI, and (3) grants to promote DNA technology to identify missing persons.</p> <p>(Sec. 9) This section revises and reauthorizes through FY2021 the Paul Coverdell Forensic Science Improvement Grants Program. </p> <p>A grant applicant must certify that a forensic laboratory system, medical examiner's office, or coroner's office that receives grant funds is accredited.</p> <p> It revises the allocation of Coverdell funds to: (1) increase from 75% to 85% the funds allocated for formula grants to eligible states based on population, (2) increase the minimum formula grant award for an eligible state from 0.6% to 1% of the funds allocated for formula grants, and (3) decrease from 25% to 15% the funds allocated for competitive grants. </p> <p>It revises existing purpose areas to specify that, with respect to eliminating a backlog in analyzing forensic science evidence: (1) forensic science evidence includes impression evidence, digital evidence, and fire evidence; and (2) medicolegal death investigators may be trained and employed. It also adds new purpose areas to address emerging forensic science issues and technology, educate and train forensic pathologists, and fund medicolegal death investigation systems.</p> <p>A Coverdell grant recipient must include, in its annual report, the progress of an unaccredited forensic science service provider in obtaining accreditation. </p> <p>(Sec. 10) This section amends the Innocence Protection Act of 2004 to reauthorize through FY2021 the Capital Representation Improvement Grant Program (i.e., the grant program to improve the quality of legal representation for indigent criminal defendants in death penalty cases).</p> <p>(Sec. 11) This section amends the federal criminal code to specify that if a court-ordered DNA test excludes a defendant as the DNA source and meets other requirements, then the DNA profile must be submitted to the National DNA Index System to identify matching profiles of known individuals or profiles from unsolved crimes. </p> <p>Additionally, it revises the applicability of the requirement to preserve biological evidence in the federal investigation or prosecution of a defendant who was sentenced to prison.</p> <p>(Sec. 12) It reauthorizes through FY2021 the Kirk Bloodsworth Post-Conviction DNA Testing Grant Program. </p> <p>(Sec. 13) This section directs the National Institute of Justice (NIJ) to establish best practices for evidence retention that focus on preserving forensic evidence. The NIJ must assist state, local, and tribal governments to adopt and implement such best practices.</p> <p><i>Effective Administration of Criminal Justice Act of 2016</i></p> <p>(Sec. 14) The bill amends the Omnibus Crime Control and Safe Streets Act of 1968 to require an application for funds under the Edward Byrne Memorial Justice Assistance Grant Program to include a statewide strategic plan to improve the administration criminal justice. It requires DOJ to provide technical assistance and authorizes FY2017-FY2021 appropriations for such technical assistance.</p> <p>(Sec. 15) The DOJ Office of Inspector General must conduct annual audits of selected grant recipients. </p> <p>The bill prohibits DOJ from awarding grants to nonprofit organizations that hold money in an offshore account to avoid tax liability. It also prohibits DOJ from using more than 7.5% of the amount authorized for salaries and administrative expenses. It limits the use of grant funds for conferences that use more than $20,000 in DOJ funds. It prohibits a grantee from using grant funds to lobby DOJ or a state, local, or tribal government regarding the award of grant funding. </p> <p>DOJ must identify and report on duplicative grant awards.</p> <p>(Sec. 16) DOJ must study and report to Congress on the status and needs of the forensic science community.</p> <p>(Sec. 17) It amends the Victims of Crime Act of 1984 to authorize DOJ's Office for Victims of Crimes (OVC) to use discretionary funds for victim services.</p> <p>It expresses the sense of Congress that the proposed rule entitled &quot;VOCA Victim Assistance Program&quot; is consistent with the OVC's Victim Assistance Program.</p> <p>(Sec. 18) DOJ must evaluate the performance of U.S. Attorneys offices and DOJ component offices in seeking and recovering restitution under each provision of the federal criminal code and the Controlled Substances Act that authorizes it.</p> <p>The GAO must report to Congress on restitution sought by DOJ under each provision of the federal criminal code and the Controlled Substances Act. </p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ324/PLAW-114publ324.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ324/PLAW-114publ324_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ324/PLAW-114publ324.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/2577",
+      "votes": []
+    },
+    {
+      "id": "s2854-114",
+      "congress": 114,
+      "type": "s",
+      "number": "2854",
+      "title": "Emmett Till Unsolved Civil Rights Crimes Reauthorization Act of 2016",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Burr, Richard",
+        "party": "R",
+        "state": "NC"
+      },
+      "introduced_date": "2016-04-26",
+      "latest_action": {
+        "date": "2016-12-16",
+        "text": "Became Public Law No: 114-325."
+      },
+      "outcome": "enacted",
+      "policy_area": "Civil Rights and Liberties, Minority Issues",
+      "subjects": [
+        "Congressional oversight",
+        "Crime victims",
+        "Criminal investigation, prosecution, interrogation",
+        "Criminal justice information and records",
+        "Freedom of information",
+        "Law enforcement administration and funding",
+        "Racial and ethnic relations",
+        "Violent crime"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was passed by the House on December 7, 2016. The summary of that version is repeated here.)</p> <p><b>Emmett Till Unsolved Civil Rights Crimes Reauthorization Act of 2016</b></p> <p>(Sec. 2) This bill reauthorizes the Emmett Till Unsolved Civil Rights Crime Act of 2007 (Emmett Till Act) and expands the responsibilities of the Department of Justice (DOJ) and the Federal Bureau of Investigation (FBI) to include the investigation and prosecution of criminal civil rights statutes violations that occurred before 1980 and resulted in a death. (Currently, Emmett Till Act investigations are limited to violations that occurred before 1970.)</p> <p>The bill expresses the sense of Congress that all authorities with jurisdiction should: (1) meet regularly with civil rights organizations, institutions of higher education, and DOJ-designated entities to coordinate information sharing and discuss the status of DOJ's Emmett Till Act work; (2) support the full accounting of all victims whose deaths or disappearances were the result of racially motivated crimes; (3) hold accountable under federal and state law individuals who were perpetrators of, or accomplices in, unsolved civil rights murders and disappearances; (4) keep families regularly informed about the status of the investigations; and (5) expeditiously comply with Freedom of Information Act requests and develop a singular, publicly accessible repository of these disclosed documents.</p> <p>In investigating a complaint, DOJ may coordinate activities with entities that DOJ determines to be appropriate. </p> <p>DOJ may reopen and review cases closed without an in-person investigation conducted by DOJ or the FBI.</p> <p>DOJ must hold meetings with the Civil Rights Division, the FBI, the Community Relations Service, civil rights organizations, institutions of higher education, DOJ-designated entities, and state and local law enforcement to discuss the status of its Emmett Till Act work.</p> <p>In an annual report to Congress, DOJ must indicate: </p> <ul> <li>the number of cases referred by a civil rights organization, an institution of higher education, or a state or local law enforcement agency; </li> <li>the number of such cases that resulted in federal charges; </li> <li>the date any such charges were filed; </li> <li>whether DOJ has declined to prosecute or participate in an investigation of a referred case; </li> <li>the outreach, collaboration, and support for investigations and prosecutions of violations of criminal civil rights statutes, including murders and disappearances; and </li> <li>any activity on reopened cases. </li> </ul> <p>The Community Relations Service must provide technical assistance by bringing together law enforcement agencies and communities to address tensions raised by civil rights era crimes.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ325/PLAW-114publ325.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ325/PLAW-114publ325_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ325/PLAW-114publ325.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/2854",
+      "votes": []
+    },
+    {
       "id": "s2971-114",
       "congress": 114,
       "type": "s",
@@ -2182,6 +2349,37 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ271/PLAW-114publ271_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ271/PLAW-114publ271.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/2974",
+      "votes": []
+    },
+    {
+      "id": "s3028-114",
+      "congress": 114,
+      "type": "s",
+      "number": "3028",
+      "title": "Daniel J. Evans Olympic National Park Wilderness Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cantwell, Maria",
+        "party": "D",
+        "state": "WA"
+      },
+      "introduced_date": "2016-06-07",
+      "latest_action": {
+        "date": "2016-12-14",
+        "text": "Became Public Law No: 114-272."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Congressional tributes",
+        "Washington State",
+        "Wilderness and natural areas, wildlife refuges, wild rivers, habitats"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the Senate passed version is repeated here.)</p> <p><strong>Daniel J. Evans Olympic National Park Wilderness Act</strong></p> <p>(Sec. 2) This bill amends the Washington Park Wilderness Act of 1988 to redesignate the Olympic Wilderness as the \"Daniel J. Evans Wilderness.\"</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ272/PLAW-114publ272.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ272/PLAW-114publ272_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ272/PLAW-114publ272.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/3028",
       "votes": []
     },
     {
@@ -3529,6 +3727,42 @@
       "votes": []
     },
     {
+      "id": "hr1475-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "1475",
+      "title": "Korean War Veterans Memorial Wall of Remembrance Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Johnson, Sam",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2015-03-19",
+      "latest_action": {
+        "date": "2016-10-07",
+        "text": "Became Public Law No: 114-230."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Asia",
+        "Conflicts and wars",
+        "District of Columbia",
+        "Military personnel and dependents",
+        "Monuments and memorials",
+        "North Korea",
+        "South Korea",
+        "Veterans' organizations and recognition"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was reported to the Senate on July 14, 2016. The summary of that version is repeated here.) </p> <p><strong>Korean War Veterans Memorial Wall of Remembrance Act</strong></p> <p>(Sec. 2) This bill authorizes the Korean War Veterans Memorial Foundation, Inc., to construct a Wall of Remembrance at the site of the Korean War Veterans Memorial.</p> <p>The wall shall include a list of names of members of the U.S. Armed Forces who died in the Korean War, as determined by the Department of Defense (DOD).</p> <p>DOD shall: (1) establish eligibility criteria for the inclusion of names on the wall, and (2) provide to the Department of the Interior a final list of names for inclusion on the wall.</p> <p>The wall may include other information about the Korean War, including the number of members of the U.S. Armed Forces, the Korean Augmentation to the U.S. Army, the Republic of Korea Armed Forces, and the other nations of the United Nations Command who were killed in action, were wounded in action, are listed as missing in action, or were prisoners of war with regard to such war.</p> <p>The Commemorative Works Act shall apply to the wall.</p> <p>The bill prohibits using any federal funds to construct the wall.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ230/PLAW-114publ230.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ230/PLAW-114publ230_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ230/PLAW-114publ230.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/1475",
+      "votes": []
+    },
+    {
       "id": "hr2494-114",
       "congress": 114,
       "type": "hr",
@@ -3604,6 +3838,40 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ232/PLAW-114publ232_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ232/PLAW-114publ232.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/2733",
+      "votes": []
+    },
+    {
+      "id": "hr3004-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "3004",
+      "title": "To amend the Gullah/Geechee Cultural Heritage Act to extend the authorization for the Gullah/Geechee Cultural Heritage Corridor Commission.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Clyburn, James E.",
+        "party": "D",
+        "state": "SC"
+      },
+      "introduced_date": "2015-07-09",
+      "latest_action": {
+        "date": "2016-10-07",
+        "text": "Became Public Law No: 114-233."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Florida",
+        "Georgia",
+        "Historic sites and heritage areas",
+        "Historical and cultural resources",
+        "North Carolina",
+        "South Carolina"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the House passed version is repeated here.)</p> <p>(Sec. 1) This bill amends the Gullah/Geechee Cultural Heritage Act to extend the authorization for the Gullah/Geechee Cultural Heritage Corridor Commission through October 12, 2021.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ233/PLAW-114publ233.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ233/PLAW-114publ233_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ233/PLAW-114publ233.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/3004",
       "votes": []
     },
     {
@@ -3803,6 +4071,36 @@
       "votes": []
     },
     {
+      "id": "s1004-114",
+      "congress": 114,
+      "type": "s",
+      "number": "1004",
+      "title": "Veterans Day Moment of Silence Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kirk, Mark Steven",
+        "party": "R",
+        "state": "IL"
+      },
+      "introduced_date": "2015-04-16",
+      "latest_action": {
+        "date": "2016-10-07",
+        "text": "Became Public Law No: 114-240."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Veterans' organizations and recognition"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the Senate passed version is repeated here.)</p> <p><strong>Veterans Day Moment of Silence Act</strong></p> <p>(Sec. 2) Directs the President to issue an annual proclamation calling on the people of the United States to observe two minutes of silence on Veterans Day, beginning at 3:11 p.m. Atlantic standard time, in honor of the service and sacrifice of veterans throughout the history of the nation.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ240/PLAW-114publ240.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ240/PLAW-114publ240_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ240/PLAW-114publ240.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/1004",
+      "votes": []
+    },
+    {
       "id": "s1698-114",
       "congress": 114,
       "type": "s",
@@ -3944,6 +4242,38 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ229/PLAW-114publ229_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ229/PLAW-114publ229.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/1878",
+      "votes": []
+    },
+    {
+      "id": "hr2615-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "2615",
+      "title": "Virgin Islands of the United States Centennial Commission Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Del. Plaskett, Stacey E. [D-VI-At Large]",
+        "party": "D",
+        "state": "VI"
+      },
+      "introduced_date": "2015-06-02",
+      "latest_action": {
+        "date": "2016-09-29",
+        "text": "Became Public Law No: 114-224."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Caribbean area",
+        "Commemorative events and holidays",
+        "U.S. territories and protectorates",
+        "Virgin Islands"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was reported to the House on April 12, 2016. The summary of that version is repeated here.)</p> <p><strong>Virgin Islands of the United States Centennial Commission Act</strong></p> <p>(Sec. 2) This bill establishes the Virgin Islands of the United States Centennial Commission to carry out activities to commemorate the 100th anniversary of the date the U.S. Virgin Islands became an unincorporated U.S. territory.</p> <p>(Sec. 7) The Commission shall report annually to the President and Congress on Commission revenue and expenditures, including a list of each gift, bequest, or devise worth more than $250, and the identity of the donor.</p> <p>(Sec. 8) The Inspector General of the Department of the Interior may audit the Commission, making the results available to Congress and the public.</p> <p>(Sec. 10) The Commission shall terminate on September 30, 2018, or at an earlier date determined by the Commission after submitting its final report to Congress.</p> <p>(Sec. 11) No federal funds are authorized or may be obligated to carry out this Act.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ224/PLAW-114publ224.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ224/PLAW-114publ224_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ224/PLAW-114publ224.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/2615",
       "votes": []
     },
     {
@@ -4360,6 +4690,41 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres601/BILLS-114sres601ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres601/BILLS-114sres601ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/601",
+      "votes": []
+    },
+    {
+      "id": "s2040-114",
+      "congress": 114,
+      "type": "s",
+      "number": "2040",
+      "title": "Justice Against Sponsors of Terrorism Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2015-09-16",
+      "latest_action": {
+        "date": "2016-09-28",
+        "text": "Became Public Law No: 114-222."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Civil actions and liability",
+        "Crime victims",
+        "Diplomacy, foreign officials, Americans abroad",
+        "Federal district courts",
+        "Government liability",
+        "Jurisdiction and venue",
+        "Terrorism"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was passed by the Senate on May 17, 2016. The summary of that version is repeated here.)</p> <p><b>Justice Against Sponsors of Terrorism Act</b></p> <p>(Sec. 3) This bill amends the federal judicial code to narrow the scope of foreign sovereign immunity (i.e., a foreign state's immunity from the jurisdiction of U.S. courts).</p> <p>Specifically, it authorizes federal court jurisdiction over a civil claim against a foreign state for physical injury to a person or property or death that occurs inside the United States as a result of: (1) an act of international terrorism, and (2) a tort committed anywhere by an official, agent, or employee of a foreign state acting within the scope of employment.</p> <p>International terrorism does not include an act of war. Federal court jurisdiction does not extend to a tort claim based on an omission or an act that is merely negligent.</p> <p> A U.S. national may file a civil action against a foreign state for physical injury, death, or damage as a result of an act of international terrorism committed by a designated terrorist organization.</p> <p>(Sec. 4) The bill amends the federal criminal code to impose civil liability on a person who conspires to commit or aids and abets (by knowingly providing substantial assistance) an act of international terrorism committed, planned, or authorized by a designated terrorist organization.</p> <p>(Sec. 5) It establishes exclusive federal court jurisdiction over civil claims under this bill.</p> <p>It authorizes the Department of Justice (DOJ) to intervene in civil proceedings to seek a stay. A court may grant the stay if the Department of State certifies that the United States is engaged in good-faith discussions with the foreign state to resolve the civil claims. <p>(Sec. 7) This bill's amendments apply to a civil claim: (1) pending on or commenced on or after enactment; and (2) arising out of an injury to a person, property, or business on or after September 11, 2001.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ222/PLAW-114publ222.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ222/PLAW-114publ222_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ222/PLAW-114publ222.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/2040",
       "votes": []
     },
     {
@@ -5843,6 +6208,53 @@
       "votes": []
     },
     {
+      "id": "s524-114",
+      "congress": 114,
+      "type": "s",
+      "number": "524",
+      "title": "Comprehensive Addiction and Recovery Act of 2016",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Whitehouse, Sheldon",
+        "party": "D",
+        "state": "RI"
+      },
+      "introduced_date": "2015-02-12",
+      "latest_action": {
+        "date": "2016-07-22",
+        "text": "Became Public Law No: 114-198."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Advisory bodies",
+        "Alternative treatments",
+        "Child health",
+        "Child safety and welfare",
+        "Civil actions and liability",
+        "Congressional oversight",
+        "Correctional facilities and imprisonment",
+        "Crime prevention",
+        "Criminal investigation, prosecution, interrogation",
+        "Criminal procedure and sentencing",
+        "Department of Veterans Affairs",
+        "Drug safety, medical device, and laboratory regulation",
+        "Drug therapy",
+        "Drug trafficking and controlled substances",
+        "Drug, alcohol, tobacco use",
+        "Education programs funding",
+        "Elementary and secondary education",
+        "Emergency medical services and trauma care",
+        "Employee hiring"
+      ],
+      "summary_crs": " <p><b>Comprehensive Addiction and Recovery Act of 2016</b></p> <p>TITLE I--PREVENTION AND EDUCATION</p> <p>(Sec. 101) This bill requires the Department of Health and Human Services (HHS), in cooperation with the Department of Veterans Affairs, the Department of Defense, and the Drug Enforcement Administration , to convene a Pain Management Best Practices Interagency Task Force to review, modify, and update best practices for pain management and prescription of pain medication. The task force does not have rulemaking authority. </p> <p>(Sec. 102) It directs HHS to promote education and awareness of prescription opioid abuse. Such education and training must include information on the dangers, prevention, and early warning signs of opioid abuse. (Opioids are drugs with effects similar to opium, such as certain prescription pain medication, fentanyl [a synthetic opioid], and heroin.)</p> <p>The Office of National Drug Control Policy must establish a national drug awareness campaign that addresses the similarities between opioids and heroin, the link between prescription opioid abuse and heroin use, and the dangerous effects of mixing fentanyl with heroin.</p> <p>(Sec. 103) The bill amends the Omnibus Crime Control and Safe Streets Act of 1968 to authorize HHS to award grants to community-based coalitions to enhance community-wide prevention strategies to address a high rate or rapid increase of opioid or methamphetamine abuse. </p> <p>TITLE II--LAW ENFORCEMENT AND TREATMENT</p> <p>(Sec. 201) HHS may award grants to state, local, or tribal governments or nonprofit organizations to develop, implement, or expand treatment alternative to incarceration programs and to enhance state criminal justice and substance abuse agency collaboration to address prescription opioid abuse and heroin use. HHS must give priority to joint applications from criminal justice and substance abuse agencies and applications from states that provide civil liability protection for trained first responders, health professionals, or family members who administer an opioid overdose reversal drug (e.g., naloxone) to counteract opioid overdose. </p> <p>(Sec. 202) HHS may award grants to state, local, or tribal governments to allow appropriately trained first responders to administer an opioid overdose reversal drug to treat an opioid overdose. Grant funds must be used to equip first responders with opioid overdose reversal drugs, train first responders to administer such drugs, and develop protocols to refer overdose victims to appropriate treatment. HHS must provide technical assistance and training grants. At least 25% of grant funds must be awarded to entities in rural areas with limited access to emergency medical services. </p> <p>(Sec. 203) The Department of Justice (DOJ) must expand or make available disposal sites for unwanted prescription medications. </p> <p>(Sec. 204) DOJ may make grants to state law enforcement agencies to investigate illicit activities related to: (1) heroin, fentanyl, or unlawful prescription opioid distribution, and (2) precursor diversion, laboratories, or methamphetamine manufacture or distribution.</p> <p>TITLE III--TREATMENT AND RECOVERY</p> <p>(Sec. 301) The bill authorizes the Substance Abuse and Mental Health Services Administration (SAMHSA) to award grants to state, local, or tribal governments or community-based organizations to expand treatment programs, including medication-assisted treatment programs, in areas with a high rate or rapid increase in prescription opioid or heroin use. SAMHSA must equitably distribute grants geographically, evaluate grant-supported activities, and provide technical assistance. </p> <p>(Sec. 302) HHS may award grants to state, local, or tribal governments to implement medication-assisted treatment programs through courts, prisons, jails, or other criminal justice agencies. HHS must prioritize entities in states that provide civil liability protection for trained first responders, health professionals, or family members who administer naloxone to counteract opioid overdose. Additionally, HHS must provide technical assistance and training to grant recipients. </p> <p>(Sec. 303) HHS may award grants to high schools, institutions of higher education, or nonprofit organizations to provide recovery support services, build supportive communities, and promote sustained recovery for young people with substance use disorders. </p> <p>(Sec. 304) HHS may award matching grants to recovery community organizations to expand, develop, and enhance state and community recovery support services to facilitate long-term recovery from substance use disorders. A recovery community organization is an independent nonprofit organization that is led by individuals who are in long-term recovery from substance abuse disorders. </p> <p>TITLE IV--ADDRESSING COLLATERAL CONSEQUENCES</p> <p>(Sec. 401) The bill authorizes DOJ to award grants to state, local, or tribal governments to design, implement, and expand educational programs for offenders in prisons, jails, and juvenile facilities. A grant recipient may restrict prisoners' Internet access to ensure public safety. </p> <p>(Sec. 402) DOJ must establish a bipartisan Task Force on Recovery and Collateral Consequences to identify collateral consequences imposed on convicted drug offenders who are in recovery for a substance use disorder and develop and submit legislative and regulatory recommendations to modify such collateral consequences. A collateral consequence is a penalty imposed as a result of a criminal conviction but not as part of the court judgment. </p> <p>TITLE V--ADDICTION AND TREATMENT SERVICES FOR WOMEN, FAMILIES, AND VETERANS</p> <p>(Sec. 501) The bill authorizes SAMHSA to create a pilot program to award competitive grants to state substance abuse agencies to support family-based services for pregnant and postpartum women with a substance use disorder, address gaps in services provided to women in non-residential based settings, and encourage evidence-based services. The Center for Behavioral Health Statistics and Quality must evaluate the pilot program and report to Congress. </p> <p>(Sec. 502) DOJ must annually report the number of grant awards under the Family-Based Adult Offender Substance Abuse Treatment Program and how such grants are used for family-based substance abuse treatment programs that serve as an alternative to incarceration for custodial parent drug offenders. </p> <p>TITLE VI--INCENTIVIZING STATE COMPREHENSIVE INITIATIVES TO ADDRESS OPIOID AND HEROIN ABUSE</p> <p>(Sec. 601) DOJ may award grants to states to establish and implement a comprehensive response to opioid abuse that includes prevention and education efforts, a prescription drug monitoring program, prescription drug and opioid addiction treatment programs, and overdose death prevention programs. DOJ must give priority to states that: (1) provide civil liability protection for trained first responders, health professionals, or family members who administer naloxone; (2) do not terminate Medicaid eligibility for individuals who are incarcerated for less than two years; (3) enroll incarcerated drug offenders in community-based treatment services prior to reentry; and (4) record, share, or analyze data from prescription drug monitoring database to identify potential abuse.</p> <p>TITLE VII--MISCELLANEOUS</p> <p>(Sec. 701) The Government Accountability Office must report to Congress on how the Medicaid institutions for mental disease (IMD) exclusion impacts access to inpatient treatment and quality of inpatient and outpatient treatment for Medicaid enrollees with substance use disorders. The Medicaid IMD exclusion bars Medicaid reimbursement for certain inpatient mental health care services (including substance use disorder treatment) for patients aged 21 to 64. </p> <p>(Sec. 702) The bill authorizes addiction and recovery programs under this Act through FY2020. </p> <p>(Sec. 704) It prohibits the use of DOJ and HHS grants under this Act for conferences that cost more than $20,000 without prior written approval. The Inspector General for DOJ and HHS must conduct annual audits of selected grant recipients. It bars DOJ and HHS grants to nonprofit organizations that hold money in an offshore account to avoid tax liability. Additionally, DOJ and HHS must identify and report on duplicative grant awards.</p> <p>(Sec. 705) This bill amends part D (Voluntary Prescription Drug Benefit Program) of title XVIII (Medicare) of the Social Security Act to authorize a Medicare prescription drug plan (PDP) sponsor to establish a drug management program to limit the prescribers and pharmacies who provide frequently abused drugs to an at-risk beneficiary. A PDP sponsor must have in place a utilization management tool to prevent drug abuse.</p> <p>A PDP sponsor must: (1) notify a beneficiary who is identified as being at-risk for prescription drug abuse, (2) consider the beneficiary's preferences in selecting allowable prescribers and pharmacies, and (3) ensure the beneficiary has continued reasonable access to drugs. </p> <p>The bill exempts from identification as at-risk beneficiary an individual who is receiving hospice care or residing in a long-term care facility.</p> <p>HHS must establish procedures for PDP plan sponsors to share information about at-risk beneficiaries. </p> <p>TITLE VIII--TRANSNATIONAL DRUG TRAFFICKING ACT</p> <p><i>Transnational Drug Trafficking Act of 2015</i></p> <p>(Sec. 802) This bill amends the Controlled Substances Import and Export Act to broaden the scope of persons subject to criminal prosecution for manufacturing or distributing a controlled substance in schedule I or II, a precursor chemical, or flunitrazepam for unlawful import into the United States. The Controlled Substances Act classifies drugs, substances, and chemicals used to make drugs into one of five schedules based on the drug's medical use, potential for abuse, and risk of dependence. <p>Current law prohibits such manufacture or distribution by a person who knows or intends that the substance or chemical will be unlawfully imported. This bill broadens the scope to also prohibit such manufacture or distribution by a person who reasonably believes that the substance or chemical will be unlawfully imported. <p>In addition, this bill prohibits the manufacture or distribution of a precursor chemical by a person who: (1) knows or intends that the chemical will be used to manufacture a controlled substance; and (2) knows, intends, or reasonably believes that the controlled substance will be unlawfully imported into the United States. <p>(Sec. 803) The legislation amends the federal criminal code to replace statutory references to prohibited trafficking in a &quot;counterfeit drug&quot; with references to prohibited trafficking in a &quot;drug that uses a counterfeit mark on or in connection with the drug.&quot;",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ198/PLAW-114publ198.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ198/PLAW-114publ198_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ198/PLAW-114publ198.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/524",
+      "votes": []
+    },
+    {
       "id": "s1252-114",
       "congress": 114,
       "type": "s",
@@ -7109,6 +7521,43 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ188/PLAW-114publ188_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ188/PLAW-114publ188.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/2487",
+      "votes": []
+    },
+    {
+      "id": "s337-114",
+      "congress": 114,
+      "type": "s",
+      "number": "337",
+      "title": "FOIA Improvement Act of 2016",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2015-02-02",
+      "latest_action": {
+        "date": "2016-06-30",
+        "text": "Became Public Law No: 114-185."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Administrative remedies",
+        "Alternative dispute resolution, mediation, arbitration",
+        "Congressional oversight",
+        "Executive agency funding and structure",
+        "Federal officials",
+        "Freedom of information",
+        "Government information and archives",
+        "Government studies and investigations"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was passed by the Senate on March 15, 2016. The summary of that version is repeated here.)</p> <p><strong>FOIA Improvement Act of 2016</strong></p> <p> (Sec. 2) This bill amends the Freedom of Information Act (FOIA) to: </p> <ul> <li>require federal agencies to make their disclosable records and documents available for public inspection in an electronic format;</li> <li>require agencies to make available for inspection in an electronic format records that have been requested three or more times (frequently requested records); </li> <li>prohibit an agency from charging a fee for providing records if the agency misses a deadline for complying with an FOIA request unless unusual circumstances apply and more than 5,000 pages are necessary to respond to the request; </li> <li>prohibit an agency from withholding information requested under FOIA unless the agency reasonably foresees that disclosure would harm an interest protected by a FOIA exemption or disclosure is prohibited by law (presumption of openness); </li> <li>limit the FOIA exemption for agency communications to allow the disclosure of agency records created 25 years or more before the date of a FOIA request; </li> <li>require the Office of Government Information Services (OGIS) to offer mediation services to resolve disputes between agencies and FOIA requesters;</li> <li>expand the authority and duties of the Chief FOIA Officer of each agency to require officers to serve as the primary agency liaison with OGIS and the Office of Information Policy; </li> <li>establish a Chief FOIA Officers Council to develop recommendations for increasing compliance and efficiency in responding to FOIA requests, disseminating information about agency experiences, identifying, developing, and coordinating initiatives to increase transparency and compliance, and promoting performance measures to ensure agency compliance with FOIA requirements; and</li> <li>require the Director of the Office of Management and Budget to ensure the operation of a consolidated online request portal that allows a member of the public to submit a request for records to any agency from a single website.</li> </ul> <p>(Sec. 3) The head of each agency (i.e., each authority of the U.S. government, excluding the Congress, U.S. courts, governments of U.S. territories and possessions, and the government of the District of Columbia) is required to: (1) review agency regulations and issue regulations on procedures for disclosure of records in accordance with the amendments made by this bill, and (2) include in such regulations procedures for engaging in dispute resolution through the FOIA Public Liaison and OGIS. </p> <p>(Sec. 4) The program for the efficient management of federal agency records is expanded to require agency heads to establish procedures for: (1) identifying records of general interest or use to the public that are appropriate for public disclosure, and (2) posting such records in a publicly-accessible electronic format. </p> <p>(Sec. 5) No additional funds are authorized to carry out the requirements of this bill. </p> <p>(Sec. 6) This bill shall take effect on its enactment date and shall apply to all FOIA requests for records made after its enactment date. </p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ185/PLAW-114publ185.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ185/PLAW-114publ185_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ185/PLAW-114publ185.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/337",
       "votes": []
     },
     {
@@ -8578,6 +9027,40 @@
       "votes": []
     },
     {
+      "id": "sres416-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "416",
+      "title": "A resolution recognizing the contributions of Hawaii to the culinary heritage of the United States and designating the week beginning on June 12, 2016, as \"National Hawaiian Food Week\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Schatz, Brian",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2016-04-07",
+      "latest_action": {
+        "date": "2016-05-25",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text as modified: CR S3228)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Arts, Culture, Religion",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Food industry and services",
+        "Hawaii",
+        "Historical and cultural resources",
+        "Seafood"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates the week beginning on June 12, 2016, as National Hawaiian Food Week.</p> <p>Recognizes the contributions of Hawaii to the culinary heritage of the United States. </p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres416/BILLS-114sres416ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres416/BILLS-114sres416ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres416/BILLS-114sres416ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/416",
+      "votes": []
+    },
+    {
       "id": "sres459-114",
       "congress": 114,
       "type": "sres",
@@ -9076,6 +9559,38 @@
       "votes": []
     },
     {
+      "id": "s125-114",
+      "congress": 114,
+      "type": "s",
+      "number": "125",
+      "title": "Bulletproof Vest Partnership Grant Program Reauthorization Act of 2015",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Leahy, Patrick J.",
+        "party": "D",
+        "state": "VT"
+      },
+      "introduced_date": "2015-01-08",
+      "latest_action": {
+        "date": "2016-05-16",
+        "text": "Became Public Law No: 114-155."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Appropriations",
+        "Law enforcement administration and funding",
+        "Law enforcement officers",
+        "Worker safety and health"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was passed by the Senate on May 6, 2015. The summary of that version is repeated here.)</p> <p><strong>Bulletproof Vest Partnership Grant Program Reauthorization Act of 2015</strong></p> <p>(Sec. 2) This bill amends the Omnibus Crime Control and Safe Streets Act of 1968 to extend through FY2020 the authorization of appropriations for the Bulletproof Vest Partnership (BVP) program.</p> <p>(Sec. 3) It requires the transfer to the general fund of the Treasury, no later than January 31, 2023, of all funds appropriated for the BVP program for FY2016-FY2020 that are not obligated on or before December 31, 2022.</p> <p>(Sec. 4) The bill expresses the sense of Congress that amounts made available to carry out the BVP program should be made available through the end of the fiscal year following the one for which the amounts are appropriated and should not be made available until expended. </p> <p>(Sec. 5) It prohibits the use of federal funds under another grant program to pay or defer the cost of the matching funds requirement for the BVP program.</p> <p>(Sec. 6) It requires a state, local, or tribal government that receives a BVP program grant to comply with BVP program requirements, to have a written policy requiring uniformed patrol officers to wear an armor vest or body armor, and to use the funds to purchase vests or body armor that meet performance standards established by the Bureau of Justice Assistance.</p> <p>(Sec. 7) The bill allows preferential consideration to a BVP program grant applicant from a jurisdiction that provides armor vests that are uniquely fitted to law enforcement officers, including individual female officers. </p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ155/PLAW-114publ155.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ155/PLAW-114publ155_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ155/PLAW-114publ155.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/125",
+      "votes": []
+    },
+    {
       "id": "s2755-114",
       "congress": 114,
       "type": "s",
@@ -9106,6 +9621,37 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ156/PLAW-114publ156_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ156/PLAW-114publ156.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/2755",
+      "votes": []
+    },
+    {
+      "id": "s32-114",
+      "congress": 114,
+      "type": "s",
+      "number": "32",
+      "title": "Transnational Drug Trafficking Act of 2015",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feinstein, Dianne",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2015-01-06",
+      "latest_action": {
+        "date": "2016-05-16",
+        "text": "Became Public Law No: 114-154."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Crimes against property",
+        "Drug trafficking and controlled substances",
+        "Intellectual property"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the Senate reported version is repeated here.)</p> <p><b>Transnational Drug Trafficking Act of 2015</b></p> <p>(Sec. 2) This bill amends the Controlled Substances Import and Export Act to broaden the scope of persons subject to criminal prosecution for manufacturing or distributing a controlled substance in schedule I or II, a precursor chemical, or flunitrazepam for unlawful import into the United States. The Controlled Substances Act classifies drugs, substances, and chemicals used to make drugs into one of five schedules based on the drug's medical use, potential for abuse, and risk of dependence.</p> <p>Current law prohibits such manufacture or distribution by a person who knows or intends that the substance or chemical will be unlawfully imported. This bill broadens the scope to also prohibit such manufacture or distribution by a person who reasonably believes that the substance or chemical will be unlawfully imported.</p> <p>In addition, this bill prohibits the manufacture or distribution of a precursor chemical by a person who: (1) knows or intends that the chemical will be used to manufacture a controlled substance; and (2) knows, intends, or reasonably believes that the controlled substance will be unlawfully imported into the United States.</p> <p>(Sec. 3) The legislation amends the federal criminal code to replace statutory references to prohibited trafficking in a \"counterfeit drug\" with references to prohibited trafficking in a \"drug that uses a counterfeit mark on or in connection with the drug.\"</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ154/PLAW-114publ154.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ154/PLAW-114publ154_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ154/PLAW-114publ154.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/32",
       "votes": []
     },
     {
@@ -9275,6 +9821,47 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres442/BILLS-114sres442ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres442/BILLS-114sres442ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/442",
+      "votes": []
+    },
+    {
+      "id": "s1890-114",
+      "congress": 114,
+      "type": "s",
+      "number": "1890",
+      "title": "Defend Trade Secrets Act of 2016",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hatch, Orrin G.",
+        "party": "R",
+        "state": "UT"
+      },
+      "introduced_date": "2015-07-29",
+      "latest_action": {
+        "date": "2016-05-11",
+        "text": "Became Public Law No: 114-153."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Business ethics",
+        "Business records",
+        "Civil actions and liability",
+        "Competitiveness, trade promotion, trade deficits",
+        "Congressional oversight",
+        "Crimes against property",
+        "Criminal investigation, prosecution, interrogation",
+        "Evidence and witnesses",
+        "Fraud offenses and financial crimes",
+        "Jurisdiction and venue",
+        "Product development and innovation",
+        "Trade agreements and negotiations",
+        "Trade secrets and economic espionage"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was reported to the Senate on January 28, 2016. The summary of that version is repeated here.)</p> <p><b>Defend Trade Secrets Act of 2016</b></p> <p>(Sec. 2) This bill amends the federal criminal code to create a private civil cause of action for trade secret misappropriation.</p> <p>A trade secret owner may file a civil action in a U.S. district court seeking relief for trade secret misappropriation related to a product or service in interstate or foreign commerce. The bill establishes remedies including injunctive relief, compensatory damages, and attorney's fees. It sets a three-year statute of limitation from the date of discovery of the misappropriation. </p> <p>A trade secret owner may apply for and a court may grant, in extraordinary circumstances, an ex parte seizure order to prevent dissemination of a trade secret if the court makes specific findings, including that: (1) a temporary restraining order or another form of equitable relief is inadequate, (2) an immediate and irreparable injury will occur if seizure is not ordered, and (3) the person against whom seizure would be ordered has actual possession of the trade secret and any property to be seized. </p> <p>A court must take custody of and secure seized materials and hold a seizure hearing within seven days. An interested party may file a motion to encrypt seized material. </p> <p> A party harmed by a wrongful or excessive seizure may move to dissolve or modify the order and may also seek relief against the applicant of the seizure order. </p> <p>(Sec. 3) The bill increases the maximum penalty for trade secret theft (currently $5 million) to the greater of $5 million or three times the value of the stolen trade secret. </p> <p>A court may not authorize or require the disclosure of information that an owner asserts to be a trade secret unless the court allows the owner to submit under seal a description of the interest in keeping the information confidential. Additionally, disclosure of information related to a trade secret in connection with a prosecution does not constitute a waiver of trade secret protection unless an owner expressly consents to such waiver. </p> <p>It adds economic espionage and trade secret theft to the list of predicate offenses that constitute racketeering activity.&nbsp; </p> <p>(Sec. 4) The Department of Justice must submit to Congress and publish a biannual report on trade secret theft outside the United States. </p> <p> (Sec. 5) The bill expresses the sense of Congress that: (1) trade secret theft occurs in the United States and around the world, (2) trade secret theft harms owner companies and their employees, (3) the Economic Espionage Act of 1996 applies broadly to protect trade secrets from theft; and (4) it is important, when seizing information, to balance the need to address misappropriation with the needs of third parties and the accused party.</p> <p>(Sec. 6) The Federal Judicial Center must develop, update, and submit to Congress best practices for seizing information and securing seized information. </p> <p>(Sec. 7) The bill provides immunity from civil and criminal liability for an individual who discloses a trade secret: (1) to a government official or attorney in confidence to report or investigate a violation of law, or (2) in a legal complaint or filing under seal. </p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ153/PLAW-114publ153.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ153/PLAW-114publ153_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ153/PLAW-114publ153.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/1890",
       "votes": []
     },
     {
@@ -9528,6 +10115,39 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ149/PLAW-114publ149_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ149/PLAW-114publ149.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/719",
+      "votes": []
+    },
+    {
+      "id": "sres435-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "435",
+      "title": "A resolution designating May 21, 2016, as \"Kids to Parks Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wyden, Ron",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2016-04-21",
+      "latest_action": {
+        "date": "2016-04-28",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Child health",
+        "Commemorative events and holidays",
+        "Land use and conservation",
+        "Outdoor recreation",
+        "Parks, recreation areas, trails"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates May 21, 2016, as Kids to Parks Day.</p> <p>Recognizes the importance of outdoor recreation and the preservation of open spaces to the health and education of young people of the United States. </p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres435/BILLS-114sres435ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres435/BILLS-114sres435ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres435/BILLS-114sres435ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/435",
       "votes": []
     },
     {
@@ -10140,6 +10760,47 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ146/PLAW-114publ146_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ146/PLAW-114publ146.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/2512",
+      "votes": []
+    },
+    {
+      "id": "s483-114",
+      "congress": 114,
+      "type": "s",
+      "number": "483",
+      "title": "Ensuring Patient Access and Effective Drug Enforcement Act of 2016",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hatch, Orrin G.",
+        "party": "R",
+        "state": "UT"
+      },
+      "introduced_date": "2015-02-12",
+      "latest_action": {
+        "date": "2016-04-19",
+        "text": "Became Public Law No: 114-145."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Administrative remedies",
+        "Congressional oversight",
+        "Crime prevention",
+        "Criminal investigation, prosecution, interrogation",
+        "Department of Justice",
+        "Drug trafficking and controlled substances",
+        "Government information and archives",
+        "Government studies and investigations",
+        "Health care coverage and access",
+        "Licensing and registrations",
+        "Medical education",
+        "Prescription drugs",
+        "Retail and wholesale trades"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was reported to the Senate on February 11, 2016. The summary of that version is repeated here.)</p> <p><b>Ensuring Patient Access and Effective Drug Enforcement Act of 2016</b></p> <p>(Sec. 2) This bill amends the Controlled Substances Act to define phrases related to the Drug Enforcement Administration's (DEA's) authority to register manufacturers, distributors, and dispensers of controlled substances.</p> <p>Currently, the DEA registers a controlled substances manufacturer, distributor, or dispenser if it is in the public interest after considering certain factors, including factors relevant to and consistent with the public health and safety. This bill defines \"factors as may be relevant to and consistent with the public health and safety\" to mean factors relevant to and consistent with the specified purposes of the Controlled Substances Act.</p> <p>Additionally, current law allows the DEA to immediately suspend a registration to prevent imminent danger to the public health and safety. This bill defines \"imminent danger to the public health and safety\" to mean an immediate threat of death, serious bodily harm, or abuse of a controlled substance due to a registrant's failure to maintain effective controls against diversion.</p> <p>The bill revises and expands the required elements of an order to show cause issued by the DEA before it denies, revokes, or suspends a registration for a Controlled Substances Act violation. An order to show cause must specifically state the legal basis for the action and notify the registrant of the opportunity to submit a corrective action plan. </p> <p>(Sec. 3) The Food and Drug Administration, the Substance Abuse and Mental Health Services Administration, the Agency for Research and Quality, and the Centers for Disease Control and Prevention, in coordination with the DEA, must report to Congress on:</p> <ul> <li>obstacles to legitimate patient access to controlled substances; </li> <li>diversion of controlled substances; </li> <li>how collaboration between law enforcement agencies and the pharmaceutical industry can benefit patients and prevent diversion and abuse of controlled substances; </li> <li>the availability of and gaps in medical education, training opportunities, and comprehensive clinical guidance for pain management and opioid prescribing; </li> <li>enhancements to prescription drug monitoring programs; and </li> <li>improvements to prescription opioid reporting requirements.</li> </ul>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ145/PLAW-114publ145.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ145/PLAW-114publ145_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ145/PLAW-114publ145.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/483",
       "votes": []
     },
     {
@@ -11287,6 +11948,74 @@
       "votes": []
     },
     {
+      "id": "s238-114",
+      "congress": 114,
+      "type": "s",
+      "number": "238",
+      "title": "Eric Williams Correctional Officer Protection Act of 2015",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Toomey, Patrick",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2015-01-22",
+      "latest_action": {
+        "date": "2016-03-09",
+        "text": "Became Public Law No: 114-133."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Congressional oversight",
+        "Correctional facilities and imprisonment",
+        "Crime prevention",
+        "Department of Justice",
+        "Government employee pay, benefits, personnel management",
+        "Government studies and investigations",
+        "Law enforcement officers",
+        "Violent crime"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the Senate passed version is repeated here.)</p> <p><b>Eric Williams Correctional Officer Protection Act of 2015</b></p> <p>(Sec. 2) This bill amends the federal criminal code to require the Bureau of Prisons (BOP) to issue oleoresin capsicum spray (i.e., pepper spray) to officers and employees who respond to emergency situations at high-security, medium-security, and administrative facilities.</p> <p> Officers and employees may use pepper spray to reduce violent acts by prisoners and visitors. </p> <p>An officer of employee must complete a training course prior to receiving pepper spray and annually thereafter on its use.&nbsp;</p> <p>(Sec. 3) The Government Accountability Office must: (1) evaluate the effect of issuing pepper spray on reducing crime and violence in high-security, medium-security, and administrative facilities; (2) evaluate the advisability of issuing pepper spray at low- or minimum-security facilities; and (3) recommend safety improvements for BOP officers and employees. </p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ133/PLAW-114publ133.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ133/PLAW-114publ133_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ133/PLAW-114publ133.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/238",
+      "votes": []
+    },
+    {
+      "id": "sres376-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "376",
+      "title": "A resolution designating the first week of April 2016 as \"National Asbestos Awareness Week\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Markey, Edward J.",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2016-02-25",
+      "latest_action": {
+        "date": "2016-03-09",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Environmental health",
+        "Hazardous wastes and toxic substances",
+        "Health promotion and preventive care"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates the first week of April 2016 as National Asbestos Awareness Week. Urges the Surgeon General to warn and educate people about asbestos exposure, which may be hazardous to their health.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres376/BILLS-114sres376ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres376/BILLS-114sres376ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres376/BILLS-114sres376ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/376",
+      "votes": []
+    },
+    {
       "id": "sres395-114",
       "congress": 114,
       "type": "sres",
@@ -11481,6 +12210,41 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres384/BILLS-114sres384ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres384/BILLS-114sres384ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/384",
+      "votes": []
+    },
+    {
+      "id": "sres380-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "380",
+      "title": "A resolution designating February 29, 2016 as \"Rare Disease Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Brown, Sherrod",
+        "party": "D",
+        "state": "OH"
+      },
+      "introduced_date": "2016-02-29",
+      "latest_action": {
+        "date": "2016-03-01",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Voice Vote."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Health care coverage and access",
+        "Health promotion and preventive care",
+        "Hereditary and development disorders",
+        "Medical research",
+        "Medical tests and diagnostic methods",
+        "World health"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates February 29, 2016, as Rare Disease Day. Expresses support for a national and global commitment to developing new treatments, diagnostics, and cures for rare diseases and disorders. </p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres380/BILLS-114sres380ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres380/BILLS-114sres380ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres380/BILLS-114sres380ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/380",
       "votes": []
     },
     {
@@ -11815,6 +12579,39 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres374/BILLS-114sres374ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres374/BILLS-114sres374ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/374",
+      "votes": []
+    },
+    {
+      "id": "hr1428-114",
+      "congress": 114,
+      "type": "hr",
+      "number": "1428",
+      "title": "Judicial Redress Act of 2015",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Sensenbrenner, F. James, Jr.",
+        "party": "R",
+        "state": "WI"
+      },
+      "introduced_date": "2015-03-18",
+      "latest_action": {
+        "date": "2016-02-24",
+        "text": "Became Public Law No: 114-126."
+      },
+      "outcome": "enacted",
+      "policy_area": "Law",
+      "subjects": [
+        "Civil actions and liability",
+        "Criminal investigation, prosecution, interrogation",
+        "Government information and archives",
+        "International organizations and cooperation",
+        "Right of privacy"
+      ],
+      "summary_crs": " (This measure has not been amended since&nbsp;it was reported to the Senate on February 1, 2016. The summary of that version is repeated here.)&nbsp; <p><b>Judicial Redress Act of 2015</b></p> <p>(Sec. 2) This bill authorizes the Department of Justice (DOJ) to designate foreign countries or regional economic integration organizations whose natural citizens may bring civil actions under the Privacy Act of 1974 against certain U.S. government agencies for purposes of accessing, amending, or redressing unlawful disclosures of records transferred from a foreign country to the United States to prevent, investigate, detect, or prosecute criminal offenses. </p> <p>The citizens of such countries or organizations may bring a civil action against: (1) U.S. agencies that intentionally or willfully violate conditions for disclosing records without the consent of the individual to whom the record pertains; and (2) U.S. agencies designated by DOJ, with the concurrence of the agency, that refuse an individual's request to review or amend his or her records.</p> <p>DOJ, with the concurrence of the Department of State, the Department of the Treasury, and the Department of Homeland Security, may designate countries or organizations whose citizens may pursue such civil remedies if the person's country or organization: (1) has appropriate privacy protections for sharing information with the United States, as provided for in an agreement with the United States or as determined by DOJ; (2) permits the transfer of personal data for commercial purposes between its territory and the United States; and (3) has DOJ-certified data transfer policies that do not impede U.S. national security interests. </p> <p>A country's designation may be revoked if it: (1) is not complying with a privacy protection agreement, (2) no longer has appropriate privacy protections for sharing information, (3) fails to meet requirements for transfers of personal data for commercial purposes, (4) no longer meets the DOJ's transfer policy certification requirements, or (5) impedes the transfer of information to the United States (for purposes of reporting or preventing unlawful activity) by a private entity or person. </p> <p>DOJ's designations are exempt from judicial or administrative review. </p> <p>The U.S. District Court for the District of Columbia is granted exclusive jurisdiction over any claim arising under this Act. </p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ126/PLAW-114publ126.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ126/PLAW-114publ126_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ126/PLAW-114publ126.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/1428",
       "votes": []
     },
     {
@@ -15394,6 +16191,38 @@
       "votes": []
     },
     {
+      "id": "sres293-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "293",
+      "title": "A resolution supporting the goals and ideals of National Domestic Violence Awareness Month, commending domestic violence victim advocates, domestic violence victim service providers, crisis hotline staff, and first responders serving victims of domestic violence for their compassionate support of victims of domestic violence, and expressing the sense of the Senate that Congress should continue to support efforts to end domestic violence and hold perpetrators of domestic violence accountable.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Grassley, Chuck",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2015-10-22",
+      "latest_action": {
+        "date": "2015-10-28",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Families",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Crime victims",
+        "Criminal investigation, prosecution, interrogation",
+        "Domestic violence and child abuse"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Supports the goals and ideals of National Domestic Violence Awareness Month.</p> <p>Expresses the sense of the Senate that Congress should: (1) continue to raise awareness of domestic violence in the United States and the corresponding devasting effects of domestic violence on survivors, families, and communities; and (2) pledge continued support for programs designed to assist survivors, hold perpetrators accountable, and bring an end to domestic violence.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres293/BILLS-114sres293ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres293/BILLS-114sres293ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres293/BILLS-114sres293ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/293",
+      "votes": []
+    },
+    {
       "id": "sres300-114",
       "congress": 114,
       "type": "sres",
@@ -15580,6 +16409,39 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres274/BILLS-114sres274ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres274/BILLS-114sres274ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/274",
+      "votes": []
+    },
+    {
+      "id": "sres283-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "283",
+      "title": "A resolution designating October 2015 as \"Filipino American History Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hirono, Mazie K.",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2015-10-08",
+      "latest_action": {
+        "date": "2015-10-22",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S7476)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Immigration",
+      "subjects": [
+        "Asia",
+        "Commemorative events and holidays",
+        "Philippines",
+        "Racial and ethnic relations",
+        "U.S. history"
+      ],
+      "summary_crs": " <blockquote>&nbsp;</blockquote> <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates October 2015 as Filipino American History Month.</p> <p>Recognizes the celebration of Filipino American History Month as: (1) a study of the advancement of Filipino Americans, and (2) a time to renew efforts toward the research and examination of history and culture so as to provide an opportunity for all people of the United States to learn more about Filipino Americans and to appreciate the historic contributions of Filipino Americans to the United States.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres283/BILLS-114sres283ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres283/BILLS-114sres283ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres283/BILLS-114sres283ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/283",
       "votes": []
     },
     {
@@ -15879,6 +16741,38 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ68/PLAW-114publ68_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ68/PLAW-114publ68.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/2835",
+      "votes": []
+    },
+    {
+      "id": "s1300-114",
+      "congress": 114,
+      "type": "s",
+      "number": "1300",
+      "title": "Adoptive Family Relief Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feinstein, Dianne",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2015-05-12",
+      "latest_action": {
+        "date": "2015-10-16",
+        "text": "Became Public Law No: 114-70."
+      },
+      "outcome": "enacted",
+      "policy_area": "Immigration",
+      "subjects": [
+        "Adoption and foster care",
+        "Immigration status and procedures",
+        "User charges and fees",
+        "Visas and passports"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the Senate reported version is repeated here.)</p> <p><strong>Adoptive Family Relief Act</strong> </p> <p>(Sec. 2) This bill amends the Immigration and Nationality Act to declare that if an immigrant visa was issued on or after March 27, 2013, for a child who has been lawfully adopted, or who is coming to the United States to be adopted, by a U.S. citizen, any statutory immigrant visa fees relating to a renewal or replacement of such visa may be waived or refunded if: </p> <ul> <li>the child was unable to use the original immigrant visa during the period of its validity as a direct result of extraordinary circumstances, including the denial of an exit permit; and </li> <li>such inability was attributable to factors beyond the control of the adopting parent or parents.</li></ul>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ70/PLAW-114publ70.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ70/PLAW-114publ70_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ70/PLAW-114publ70.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/1300",
       "votes": []
     },
     {
@@ -16346,6 +17240,38 @@
       "votes": []
     },
     {
+      "id": "sres275-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "275",
+      "title": "A resolution calling on Congress, schools, and State and local educational agencies to recognize the significant educational implications of dyslexia that must be addressed and designating October 2015 as \"National Dyslexia Awareness Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cassidy, Bill",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2015-10-01",
+      "latest_action": {
+        "date": "2015-10-07",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Education",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Elementary and secondary education",
+        "Neurological disorders",
+        "Special education"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates October 2015 as National Dyslexia Awareness Month, and calls on Congress, schools, and educational agencies to recognize that dyslexia has significant educational implications that must be addressed.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres275/BILLS-114sres275ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres275/BILLS-114sres275ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres275/BILLS-114sres275ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/275",
+      "votes": []
+    },
+    {
       "id": "sres280-114",
       "congress": 114,
       "type": "sres",
@@ -16405,6 +17331,38 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres281/BILLS-114sres281ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres281/BILLS-114sres281ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/281",
+      "votes": []
+    },
+    {
+      "id": "sres272-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "272",
+      "title": "A resolution congratulating the University of Kansas for 150 years of outstanding service to the State of Kansas, the United States, and the world.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Moran, Jerry",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2015-09-30",
+      "latest_action": {
+        "date": "2015-10-06",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Education",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Higher education",
+        "Kansas"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Congratulates the University of Kansas for 150 years of outstanding service to the state of Kansas, the United States, and the world. <br /><br />Recognizes that the diverse elements of the University of Kansas are united by the mission to educate leaders, build healthy communities, and make discoveries that benefit and improve society. <br /><br /> </p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres272/BILLS-114sres272ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres272/BILLS-114sres272ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres272/BILLS-114sres272ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/272",
       "votes": []
     },
     {
@@ -16715,6 +17673,41 @@
       "votes": []
     },
     {
+      "id": "sres266-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "266",
+      "title": "A resolution designating September 2015 as \"National Kinship Care Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wyden, Ron",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2015-09-22",
+      "latest_action": {
+        "date": "2015-09-30",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Families",
+      "subjects": [
+        "Adoption and foster care",
+        "Child care and development",
+        "Child safety and welfare",
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Family relationships",
+        "Family services"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>This bill designates September 2015 as National Kinship Care Month.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres266/BILLS-114sres266ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres266/BILLS-114sres266ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres266/BILLS-114sres266ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/266",
+      "votes": []
+    },
+    {
       "id": "sres217-114",
       "congress": 114,
       "type": "sres",
@@ -16886,6 +17879,36 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ51/PLAW-114publ51_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ51/PLAW-114publ51.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/1359",
+      "votes": []
+    },
+    {
+      "id": "sres258-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "258",
+      "title": "A resolution designating the week of September 20 through 26, 2015, as \"National Adult Education and Family Literacy Week\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Murray, Patty",
+        "party": "D",
+        "state": "WA"
+      },
+      "introduced_date": "2015-09-17",
+      "latest_action": {
+        "date": "2015-09-24",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Education",
+      "subjects": [
+        "Adult education and literacy",
+        "Commemorative events and holidays"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</p> <p>Designates the week of September 20-26, 2015, as National Adult Education and Family Literacy Week.</p> <p>Encourages people across the United States to support programs to assist individuals in need of adult education, workforce skills, and family literacy programs. </p> <p>Recognizes the importance of such programs. </p> <p>Calls upon public, private, and non-profit entities to support increased access to adult education and family literacy programs to ensure a literate society.",
+      "text_url_html": "https://www.congress.gov/114/bills/sres258/BILLS-114sres258ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres258/BILLS-114sres258ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres258/BILLS-114sres258ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/258",
       "votes": []
     },
     {
@@ -17555,6 +18578,38 @@
       "votes": []
     },
     {
+      "id": "s1482-114",
+      "congress": 114,
+      "type": "s",
+      "number": "1482",
+      "title": "Need-Based Educational Aid Act of 2015",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Grassley, Chuck",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2015-06-02",
+      "latest_action": {
+        "date": "2015-08-06",
+        "text": "Became Public Law No: 114-44."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commerce",
+      "subjects": [
+        "Competition and antitrust",
+        "Higher education",
+        "Student aid and college costs",
+        "Student records"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the Senate reported version is repeated here.)</p> <p><b>Need</b>-<b>Based</b> <b>Educational</b> <b>Aid Act of 2015</b></p> <p>(Sec. 2) This bill amends the Improving America's Schools Act of 1994 to extend through FY2022 the antitrust exemption that allows institutions of higher education that admit all students on a need-blind basis to enter or attempt to enter into agreements among themselves regarding the administration of need-based financial aid.</p> <p>The bill also, however, repeals the permission for these institutions to exchange through an independent third party, before awarding financial aid to any of the students, data submitted by the student, his or her family, or a financial institution on their behalf relating to assets, liabilities, income, expenses, the number of family members, and the number of the student's siblings in college, if each of the institutions is permitted to retrieve the data only once with respect to the student.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ44/PLAW-114publ44.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ44/PLAW-114publ44_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ44/PLAW-114publ44.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/1482",
+      "votes": []
+    },
+    {
       "id": "sres228-114",
       "congress": 114,
       "type": "sres",
@@ -17927,6 +18982,37 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ38/PLAW-114publ38_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ38/PLAW-114publ38.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/2499",
+      "votes": []
+    },
+    {
+      "id": "sres225-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "225",
+      "title": "A resolution honoring the National Association of Women Business Owners on its 40th anniversary.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Vitter, David",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2015-07-21",
+      "latest_action": {
+        "date": "2015-07-28",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commerce",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Women in business"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Commends the National Association of Women Business Owners for its tireless efforts and decades of support of women entrepreneurs and business owners.</p> <p> Congratulates the Association on its 40th anniversary.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres225/BILLS-114sres225ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres225/BILLS-114sres225ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres225/BILLS-114sres225ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/225",
       "votes": []
     },
     {
@@ -19334,6 +20420,53 @@
       "votes": []
     },
     {
+      "id": "s178-114",
+      "congress": 114,
+      "type": "s",
+      "number": "178",
+      "title": "Justice for Victims of Trafficking Act of 2015",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2015-01-13",
+      "latest_action": {
+        "date": "2015-05-29",
+        "text": "Became Public Law No: 114-22."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Abortion",
+        "Accounting and auditing",
+        "Advisory bodies",
+        "Appropriations",
+        "Child safety and welfare",
+        "Computer security and identity theft",
+        "Computers and information technology",
+        "Congressional oversight",
+        "Crime prevention",
+        "Crime victims",
+        "Crimes against children",
+        "Criminal investigation, prosecution, interrogation",
+        "Criminal justice information and records",
+        "Criminal procedure and sentencing",
+        "Department of Homeland Security",
+        "Domestic violence and child abuse",
+        "Evidence and witnesses",
+        "Executive agency funding and structure",
+        "Fraud offenses and financial crimes"
+      ],
+      "summary_crs": " <p>(Although this measure has not been amended since it was passed by the Senate, the text was changed by H. Con. Res. 47 which made enrollment corrections, and the summary has been modified as necessary.)</p> <p><strong>Justice for Victims of Trafficking Act of 2015</strong></p> <p> TITLE I--JUSTICE FOR VICTIMS OF TRAFFICKING</p> <p>(Sec. 101) This section amends the federal criminal code to impose an additional assessment until the end of FY2019 of $5,000 on any non-indigent person or entity convicted of an offense involving: (1) peonage, slavery, and trafficking in persons; (2) sexual abuse; (3) sexual exploitation and other abuse of children; (4) transportation for illegal sexual activity; or (5) human smuggling in violation of the Immigration and Nationality Act (exempting any individual involved in the smuggling of an alien who is the alien's spouse, parent, son, or daughter). An assessment is not payable, however, until the person being assessed has satisfied all outstanding court-ordered fines, orders of restitution, and any other obligation related to victim compensation.</p> <p>This section also establishes the Domestic Trafficking Victims' Fund into which revenues from such assessments shall be deposited and used in in FY2016-FY2019 to award grants to states and localities to combat trafficking, provide protection and assistance for victims of trafficking, develop and implement child abuse investigation and prosecution programs, and provide services for victims of child pornography. None of the amounts in the Fund may be used to provide health care or medical items or services, except for medical items or services to victims of trafficking. </p> <p>(Sec. 102) This section amends the Trafficking Victims Protection Act of 2000 to allow U.S. citizens and permanent residents who are victims of severe forms of trafficking to obtain benefits and services available to such victims without obtaining official certification from the Department of Health and Human Services (HHS) of their status as victims.</p> <p>(Sec. 103) This section amends the Trafficking Victims Protection Reauthorization Act of 2005 to replace the pilot program to establish residential treatment facilities for juveniles subjected to trafficking with a program of three-year renewable block grants administered by the Department of Justice (DOJ) to develop, improve, or expand domestic child human trafficking deterrence programs that assist law enforcement and other entities in rescuing and restoring the lives of trafficking victims, while investigating and prosecuting offenses involving child human trafficking. No entity shall be disqualified from receiving a grant on the grounds that it has only recently begun soliciting data on child human trafficking. </p> <p>Grant funds may be used for the establishment or enhancement of: (1) specialized training programs for law enforcement officers, first responders, health care and child welfare officials, juvenile justice personnel, prosecutors, and judicial personnel to identify victims and acts of child human trafficking and facilitate the rescue of child victims of human trafficking; (2) anti-trafficking law enforcement units and task forces to investigate child human trafficking offenses and to rescue victims; and (3) problem solving court programs for trafficking victims. Grant funds may also be used for activities of law enforcement agencies to find homeless and runaway youth. </p> <p>DOJ must enter into a contract with a nongovernmental organization with experience in child human trafficking issues to conduct periodic evaluations of the such block grants to determine their effectiveness. </p> <p>DOJ is authorized to use funds from the Domestic Trafficking Victims' Fund in each of FY2016-FY2020 to carry out the block grant program. </p> <p>(Sec. 104) This section expand the definition of \"child abuse\" under the Victims of Child Abuse Act of 1990 to include human trafficking and the production of child pornography and authorizes grants to develop and implement specialized programs to identify and provide direct services to victims of child pornography. </p> <p>(Sec. 105) This section provides for the forfeiture of real or personal property that was involved in the commission of human trafficking crimes. (Currently, forfeiture is allowed if the property was used or intended to be used to commit such crimes.) DOJ must transfer assets that are forfeited to satisfy victim restitution orders arising from human trafficking crimes. </p> <p>(Sec. 106) This section expands DOJ authority to intercept wire, oral, or electronic communications to include investigations of offenses relating to peonage, involuntary servitude, forced labor, and trafficking.</p> <p>(Sec. 107) This section amends the Omnibus Crime Control and Safe Streets Act of 1968 to classify severe forms of trafficking in persons as a part I violent crime for purposes of allocating grant funds among states under the Edward Byrne Memorial Justice Assistance Grant Program. </p> <p>(Sec. 108) This section provides for the prosecution of individuals who patronize or solicit persons for a commercial sex act, thus making traffickers and buyers equally culpable for sex trafficking offenses. </p> <p>(Sec. 109) This section expresses the sense of Congress with respect to the criminal liability of buyers of commercial sex acts in sex trafficking prosecutions. </p> <p>(Sec. 110) This section requires DOJ to ensure that: (1) all task forces and working groups within the Innocence Lost National Initiative engage in activities, programs, or operations to increase the investigative capabilities of state and local law enforcement officers in detecting, investigating, and prosecuting persons who patronize or solicit children for sex; and (2) all components and task forces with jurisdiction to detect, investigate, and prosecute cases of child labor trafficking engage in activities, programs, or operations to increase the capacity of such components to deter and punish child labor trafficking. </p> <p>(Sec. 111) This section classifies producers of child pornography as traffickers engaged in illicit sexual conduct.</p> <p>The evidentiary burden on the defense, in prosecutions for transporting minors to engage in illicit sexual conduct, to show that an accused reasonably believed that the minor had attained the age of 18 years is increased from a preponderance of the evidence to clear and convincing evidence. </p> <p>(Sec. 112) This section classifies crimes involving peonage, slavery, and trafficking in persons as crimes of violence under the federal criminal code. </p> <p>(Sec. 113) This section expands crime victims' rights by requiring notice of the right: (1) to be informed in a timely manner of any plea bargain or deferred prosecution agreement, and (2) to be informed of rights and services described in the Victims' Rights and Restitution Act of 1990 and contact information for the Office of the DOJ Victims' Rights Ombudsman. Appellate courts must apply ordinary standards of appellate review in reviewing appeals filed by crime victims. </p> <p><em>Combat Human Trafficking Act of 2015</em></p> <p>(Sec. 114) This section requires DOJ to ensure that each DOJ anti-human trafficking program includes technical training on: (1) effective methods for investigating and prosecuting persons who obtain, patronize, or solicit commercial sex acts involving a person subject to severe forms of trafficking in persons (buyers); and (2) facilitating the provision of physical and mental health services to persons subject to severe forms of trafficking in persons. The Bureau of Justice Statistics of DOJ is required to prepare and submit annual reports on state enforcement of human trafficking prohibitions. </p> <p><em>Survivors of Human Trafficking Empowerment Act</em></p> <p>(Sec. 115) This section establishes the United States Advisory Council on Human Trafficking to provide advice and recommendations to the Senior Policy Operating Group established under the Trafficking Victims Protection Act of 2000 and the President's Interagency Task Force to Monitor and Combat Trafficking. The Advisory Council terminates on September 30, 2020. </p> <p><em>Bringing Missing Children Home Act</em></p> <p>(Sec. 116) This section amends the Crime Control Act of 1990 to: (1) require state reports on missing children to include a recent photograph of the missing child (if available), (2) reduce from 60 days to 30 days the period for verifying and updating records on missing children in a state law enforcement system and in National Crime Information Center computer networks, (3) require notification to the National Center for Missing and Exploited Children of each report received of a child reported missing from a foster care family home or childcare institution, and (4) grant permission to the National Crime Information Center Terminal Contractor to update the missing person record in the National Crime Information Center computer networks with additional information obtained from missing person investigations. </p> <p>(Sec. 117) This section requires the DOJ Inspector General to conduct annual audits of grant recipients under the Trafficking Victims Protection Reauthorization Act of 2005 to prevent waste, fraud, and abuse of funds. DOJ is prohibited from awarding a grant to a nonprofit organization that holds money in offshore accounts for tax avoidance purposes.</p> <p>The bill imposes restrictions and reporting requirements on DOJ conferences that use more than $20,000 in DOJ funds and prohibits grant recipients from lobbying any representative of DOJ or a state, local, or tribal government regarding the award of grant funding. </p> <p><em>Stop Advertising Victims of Exploitation Act of 2015 or the SAVE Act of 2015</em></p> <p>(Sec. 118) This bill amends the federal criminal code to prohibit knowingly: (1) advertising commercial sex acts involving a minor or an individual engaged in such an act through force, fraud, or coercion; or (2) benefitting financially or otherwise from such advertising knowing that the individual involved was a minor or victim of force, fraud, or coercion. </p> <p>(Sec. 119) DOJ must make available on the website of the Office of Juvenile Justice and Delinquency Prevention a database for trafficking victim advocates, crisis hotline personnel, foster parents, law enforcement personnel, and crime survivors that contains information on counseling and hotline resources, housing resources, legal assistance, and other services for trafficking survivors. <p>(Sec. 120) This section extends the statute of limitations for civil actions against perpetrators of human trafficking offenses until ten years after the victim reaches age 18. <p>(Sec. 121) The General Accountability Office (GAO) must: (1) conduct a study on each program or initiative authorized under this Act and other specified anti-trafficking Acts to determine whether any program or initiative is duplicative, and (2) submit a report to Congress on such study. <p>TITLE II--COMBATING HUMAN TRAFFICKING</p> <p> Subtitle A--Enhancing Services for Runaway and Homeless Victims of Youth Trafficking </p> <p>(Sec. 201) This subtitle amends the Runaway and Homeless Youth Act to include within criteria for awarding grants for services to runaway and homeless youth whether such youth have been subject to severe forms of trafficking in persons or sex trafficking as defined in the Trafficking Victims Protection Act of 2000. </p> <p>Subtitle B--Improving the Response to Victims of Child Sex Trafficking </p> <p>(Sec. 211) This subtitle amends the Missing Children's Assistance Act to confirm that the cyber tipline for reporting internet-related child sexual exploitation includes child prostitution as a form of child sex trafficking. </p> <p>Subtitle C--Interagency Task Force to Monitor and Combat Trafficking </p> <p>(Sec. 222) The Interagency Task Force to Monitor and Combat Trafficking established under the Trafficking Victims Protection Act of 2000 shall conduct a review of research and academic literature on trafficking in persons in the United States and make such review publicly available in an electronic format. </p> <p>(Sec. 223) The GAO shall submit a report to Congress, one year after the enactment of this Act, that includes information on: (1) the efforts of federal and state law enforcement agencies to combat human trafficking in the United States, and (2) each federal grant program for combatting human trafficking or assisting victims of trafficking. </p> <p>(Sec. 224) DOJ is authorized to provide housing to victims of trafficking under the grant program for assistance to trafficking victims in the United States and other countries. </p> <p>Subtitle D--Expanded Training</p> <p>(Sec. 231) This section amends the Trafficking Protection Act of 2000 to require training for federal government personnel related to trafficking in persons to include: (1) a distance learning course on trafficking-in-persons issues and the Department of State's obligations under such Act, designed for embassy reporting officers, regional bureaus' trafficking-in-persons coordinators, and their superiors; (2) specific trafficking-in-persons briefings for all ambassadors and deputy chiefs of mission before they depart for their posts; and (3) at least annual reminders to all such personnel and other federal personnel at each diplomatic or consular post outside the United States of key problems, threats, methods, and warning signs of trafficking in persons specific to the country of jurisdiction in which such post is located and appropriate procedures to report information acquired about possible trafficking cases. </p> <p> TITLE III--HERO ACT</p> <p><em>Human Exploitation Rescue Operations Act of 2015 or the HERO Act of 2015</em></p> <p>(Sec. 302) This title amends the Homeland Security Act of 2002 to direct the Department of Homeland Security (DHS) to operate, within U.S. Immigration and Customs Enforcement (ICE), a Cyber Crimes Center to provide investigative assistance, training, and equipment to support domestic and international investigations by ICE of cyber-related crimes. </p> <p>Within the Cyber Crimes Center, DHS shall operate a Child Exploitation Investigations Unit (CEIU), which shall: </p> <ul> <li>coordinate all ICE child exploitation initiatives, including investigations into child exploitation, child pornography, child victim identification, traveling child sex offenders, and forced child labor, including the sexual exploitation of minors; </li> <li>focus on child exploitation prevention, investigative capacity building, enforcement operations, and training for law enforcement personnel; </li> <li>provide training and technical expertise to cooperating law enforcement agencies and personnel; </li> <li>provide psychological support and counseling services for ICE personnel engaged in child exploitation prevention initiatives; </li> <li>collaborate with the Department of Defense (DOD) and the National Association to Protect Children to recruit, train, equip, and hire wounded, ill, and injured veterans and transitioning service members through the Human Exploitation Rescue Operative (HERO) Child Rescue Corps program; </li> <li>collaborate with other governmental and nongovernmental entities for the sponsorship of, and participation in, outreach and training activities; and </li> <li>collect and maintain data on the total number of suspects identified by ICE, the number of arrests and cases opened for investigation by ICE, and the number of cases resulting in prosecution and report on such data. </li></ul> <p>DHS shall operate, within the Cyber Crimes Center, a Computer Forensics Unit (CFU). The CFU is directed to: (1) provide training and technical support in digital forensics to ICE personnel and other law enforcement personnel investigating crimes; (2) provide computer hardware, software, and forensic licenses for all computer forensics personnel within ICE; (3) participate in research and development in the area of digital forensics; and (4) collaborate with DOD and the National Association to Protect Children to recruit, train, equip, and hire wounded, ill, and injured veterans and transitioning service members through the Human Exploitation Rescue Operative (HERO) Child Rescue Corps program. </p> <p>DHS shall also operate, within the Cyber Crimes Center, a Cyber Crimes Unit (CCU). The CCU shall: (1) oversee the cyber security strategy and cyber-related operations and programs for ICE, (2) enhance the ability of ICE to combat criminal enterprises operating on or through the Internet, (3) provide training and technical support in cyber investigations to ICE personnel and other law enforcement personnel, (4) participate in research and development in the area of cyber investigations, and (5) recruit participants in the Human Exploitation Rescue Operative (HERO) Child Rescue Corps program for investigative and forensic positions. </p> <p> Congress declares that Homeland Security Investigations of ICE should hire, recruit, train, and equipment wounded, ill, or injured military veterans who are affiliated with the HERO Child Rescue Corps program for investigative, intelligence, analyst, and forensic positions. </p> <p>This section further amends the Homeland Security Act of 2002 to expand the purposes of the DHS Acceleration Fund for Research and Development of Homeland Security Technologies to include conducting research and development to advance technology for the investigation of child exploitation crimes, including child victim identification, trafficking in persons, child pornography, and for advanced forensics. </p> <p>(Sec. 303) This section amends the federal criminal code to impose a fine and/or prison term of up to 10 years on anyone who knowingly transports any individual with the intent that such individual engage in prostitution or in any criminal sexual activity. DOJ must grant the request by a state attorney general for designation of a state or local attorney to prosecute a violation of such an offense unless DOJ determines that granting such request would undermine the administration of justice. </p> <p>TITLE IV--RAPE SURVIVOR CHILD CUSTODY </p> <p><em>Rape Survivor Child Custody Act</em></p> <p>(Sec. 404) This title directs DOJ to increase grant funding to states that have in place a law that allows the mother of any child that was conceived through rape to seek court-ordered termination of the parental rights of her rapist with regard to that child, which the court is authorized to grant upon clear and convincing evidence of rape. Authorizations of appropriations are provided in FY2015-FY2019 to cover such increases.</p> <p> TITLE V--MILITARY SEX OFFENDER REPORTING </p> <p><em>Military Sex Offender Reporting Act of 2015</em></p> <p> (Sec. 502) This title amends the Sex Offender Registration and Notification Act to direct DOD to provide DOJ with sex offender registration information, to be included in the National Sex Offender Registry and the Dru Sjodin National Sex Offender Public Website, regarding persons who are required to register under such Act and who are: (1) released from military corrections facilities, or (2) convicted if the sentences adjudged by courts-martial under the Uniform Code of Military Justice do not include confinement.</p> <p>TITLE VI--STOPPING EXPLOITATION THROUGH TRAFFICKING</p> <p>(Sec. 601) This section amends the Omnibus Crime Control and Safe Streets Act of 1968 to authorize DOJ to give preferential consideration in awarding public safety and community-oriented policing grants to an application from an applicant in a state that has in effect a law that: (1) treats a minor who has engaged in, or has attempted to engage in, a commercial sex act as a victim of a severe form of trafficking in persons; (2) discourages or prohibits the charging or prosecution of such individual for a prostitution or sex trafficking offense based on such conduct; and (3) encourages the diversion of such an individual to appropriate service providers, including child welfare services, victim treatment programs, child advocacy centers, rape crisis centers, or other social services.</p> <p>(Sec. 602) This section amends the Victims of Trafficking and Violence Protection Act of 2000 (VTVPA) to require DOJ's annual report on federal agencies that are implementing provisions relating to the Interagency Task Force to Monitor and Combat Trafficking to include information on the activities of such agencies, in cooperation with state, tribal, and local law enforcement officials, to identify, investigate, and prosecute: (1) sex trafficking by force, fraud, or coercion or with a minor; (2) sexual exploitation of children; (3) the selling and buying of children; (4) transportation with intent that the victim engage in illegal sexual activity; (5) coercion or enticement to travel for illegal sexual activity; and (6) transportation of minors for illegal sexual activity. </p> <p>(Sec. 603) This section further amends VTVPA to require HHS, annually beginning in FY2017, to make grants for a national communication system to assist victims of severe forms of trafficking in persons in communicating with service providers.</p> <p>(Sec. 604) This section amends the Workforce Innovation and Opportunity Act to include victims of a severe form of trafficking in persons among those eligible for the Job Corps without being required to demonstrate low-income eligibility. </p> <p>(Sec. 605) This section amends the federal judicial code to authorize the United States Marshals Service to assist state, local, and other federal law enforcement agencies, upon request, in locating and recovering missing children. </p> <p>(Sec. 606) This section requires DOJ to implement and maintain a National Strategy for Combating Human Trafficking, which shall include: (1) integrated federal, state, local, and tribal efforts to investigate and prosecute human trafficking cases; (2) case coordination with DOJ on human trafficking investigations among the U.S. Attorneys, relevant DOJ departments, and the Federal Bureau of Investigation; and (3) annual budget priorities and federal efforts dedicated to preventing and combating human trafficking.</p> <p>TITLE VII--TRAFFICKING AWARENESS TRAINING FOR HEALTH CARE </p> <p><em>Trafficking Awareness Training for Health Care Act of 2015</em></p> <p>(Sec. 702) This title requires the Health Resources and Services Administration of HHS to award a grant or contract to an accredited school of medicine or nursing with experience in the study or treatment of victims of a severe form of trafficking to train health care professionals to recognize and respond to trafficking victims.</p> <p>Grantees must: (1) develop evidence-based best practices for health care professionals to recognize and respond to victims of a severe form of trafficking, (2) design and implement a pilot program to test the best practices and educational material developed to identify victims of human trafficking by health care professionals, and (3) analyze and report on the pilot program. </p> <p>HHS must disseminate and post on its website evidence-based best practices identified by the pilot program as effective in recognizing potential victims of a severe form of human trafficking. </p> <p>(Sec. 704) This section prohibits the authorization of additional funds to carry out this title. </p> <p> TITLE VIII--BETTER RESPONSE FOR VICTIMS OF CHILD SEX TRAFFICKING </p> <p><em>Ensuring a Better Response for Victims of Child Sex Trafficking</em></p> <p>(Sec. 802) This title amends the Child Abuse Prevention and Treatment Act to require a state plan for its child protective services system to include a certified assurance that the state has in effect and is enforcing a law requiring: (1) identification and assessment of all reports involving children known or suspected to be victims of sex trafficking; and (2) training child protective services workers in identifying, assessing, and providing comprehensive services for children who are sex trafficking victims. </p> <p>Each state receiving a grant must work with HHS to make an annual data report that includes the number of children determined to be victims of sex trafficking. A child is considered to be a victim of &quot;child abuse and neglect&quot; and of &quot;sexual abuse&quot; if the child is identified by a state or local agency employee as being a victim of sex trafficking or a victim of severe forms of trafficking in persons. A state is given the option to define &quot;child&quot; under such Act as a person who has not attained age 24. </p> <p> TITLE IX--ANTI-TRAFFICKING TRAINING FOR DEPARTMENT OF HOMELAND SECURITY PERSONNEL</p> <p>(Sec. 902) This title requires DHS to implement a program to: (1) train and periodically retrain relevant personnel in the Transportation Security Administration and the U.S. Customs and Border Protection and other DHS personnel on how to effectively deter, detect, and disrupt human trafficking; and (2) ensure that such personnel regularly receive current information on matters related to the detection of human trafficking. DHS must certify to Congress that all such personnel have successfully completed required training. </p> <p>(Sec. 904) DHS may provide training to assist any state, local, or tribal government or private organization in establishing a program of training to identify human trafficking. </p> <p>(Sec. 905) This section expands the purposes for which funds from the Domestic Trafficking Victims' Fund may be used to include grant funding for state and local Internet Crimes Against Children Task Forces to combat child exploitation.</p> <p>TITLE X--HUMAN TRAFFICKING SURVIVORS RELIEF AND EMPOWERMENT ACT</p> <p><em>Human Trafficking Survivors Relief and Empowerment Act of 2015</em></p> <p>(Sec. 1002) This title sets forth additional criteria for granting preferential consideration of grant applications under the public safety and community-oriented policing grant program of the Omnibus Crime Control and Safe Streets Act of 1968 by granting preference to applicants from states that have in effect a law that: (1) provides a process by which a human trafficking survivor can move to vacate any arrest or conviction records for a non-violent offense committed as a direct result of human trafficking, including prostitution or lewdness; (2) establishes a rebuttable presumption that any arrest or conviction of an individual for a human trafficking offense is a result of being trafficked if such individual has been granted nonimmigrant status as a victim of a severe form of trafficking in persons, is certified by HHS as a victim of a severe form of trafficking in persons under the Trafficking Victims Protection Act of 2000, or has other similar documentation of trafficking; (3) protects the identify of individuals who are human trafficking survivors in public and court records; and (4) does not require an individual who is a human trafficking survivor to provide official documentation in order to receive protection under the law. </p> <p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ22/PLAW-114publ22.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ22/PLAW-114publ22_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ22/PLAW-114publ22.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/178",
+      "votes": []
+    },
+    {
       "id": "sres156-114",
       "congress": 114,
       "type": "sres",
@@ -19579,6 +20712,42 @@
       "votes": []
     },
     {
+      "id": "sres109-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "109",
+      "title": "A resolution acknowledging and honoring brave young men from Hawaii who enabled the United States to establish and maintain jurisdiction in remote equatorial islands as prolonged conflict in the Pacific led to World War II.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Schatz, Brian",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2015-03-24",
+      "latest_action": {
+        "date": "2015-05-21",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text: CR S3250-3251)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Social Sciences and History",
+      "subjects": [
+        "Alaska Natives and Hawaiians",
+        "Congressional tributes",
+        "Government liability",
+        "Hawaii",
+        "Military history",
+        "Pacific Ocean",
+        "Sovereignty, recognition, national governance and status",
+        "U.S. history"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Honors the accomplishments of the Hui Panala 'au colonists and the young men who helped secure and maintain U.S. jurisdiction over equatorial islands in the Pacific Ocean during the years leading up to and the months immediately following the bombing of Pearl Harbor and the entry of the United States into World War II.</p> <p>Acknowledges the local, national, and international significance of the seven-year colonization of such islands by the United States, which resulted in the United States extending sovereignty into the Equatorial Pacific. </p> <p>Recognizes the dedication of the young men, the majority of whom were Native Hawaiian, who participated in the Equatorial Pacific colonization project.</p> <p>Extends condolences to the families of Carl Kahalewai, Joseph Keliihananui, and Richard Whaley for the loss of their loved ones in the service of the United States.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres109/BILLS-114sres109ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres109/BILLS-114sres109ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres109/BILLS-114sres109ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/109",
+      "votes": []
+    },
+    {
       "id": "sres168-114",
       "congress": 114,
       "type": "sres",
@@ -19705,6 +20874,41 @@
       "text_url_xml": "https://www.congress.gov/114/plaws/publ13/PLAW-114publ13_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/114/plaws/publ13/PLAW-114publ13.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/house-bill/2252",
+      "votes": []
+    },
+    {
+      "id": "s665-114",
+      "congress": 114,
+      "type": "s",
+      "number": "665",
+      "title": "Rafael Ramos and Wenjian Liu National Blue Alert Act of 2015",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cardin, Benjamin L.",
+        "party": "D",
+        "state": "MD"
+      },
+      "introduced_date": "2015-03-04",
+      "latest_action": {
+        "date": "2015-05-19",
+        "text": "Became Public Law No: 114-12."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Advisory bodies",
+        "Criminal justice information and records",
+        "Emergency communications systems",
+        "Law enforcement administration and funding",
+        "Law enforcement officers",
+        "State and local government operations",
+        "Violent crime"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The expanded summary of the Senate reported version is repeated here.)</p> <p><strong>Rafael Ramos and Wenjian Liu</strong> <strong>National Blue Alert Act of 2015</strong></p> <p> (Sec. 3) Directs the Attorney General to: (1) establish a national Blue Alert communications network within the Department of Justice (DOJ) to issue Blue Alerts through the initiation, facilitation, and promotion of Blue Alert plans for the dissemination of information received as a Blue Alert, in coordination with states, local governments, and law enforcement agencies; and (2) assign an existing DOJ officer to act as the national coordinator of the network.</p> <p>Defines &quot;Blue Alert&quot; as information sent through the network relating to: (1) the serious injury or death of a law enforcement officer in the line of duty, (2) an officer who is missing in connection with the officer's official duties, or (3) an imminent and credible threat that an individual intends to cause the serious injury or death of a law enforcement officer.</p> <p>(Sec. 4) Sets forth the duties of the national coordinator, including:</p> <ul> <li> providing assistance to states and local governments that are using Blue Alert plans; </li> <li>establishing voluntary guidelines for states and local governments to use in developing such plans; </li> <li>developing protocols for efforts to apprehend suspects;</li> <li> working with states to ensure appropriate regional coordination of various elements of the network; </li> <li>establishing an advisory group to assist states, local governments, law enforcement agencies, and other entities in initiating, facilitating, and promoting Blue Alert plans; </li> <li>acting as the nationwide point of contact for the development of the network and the regional coordination of Blue Alerts through the network; and </li> <li>determining what procedures and practices are in use for notifying law enforcement and the public of a Blue Alert and which procedures and practices are effective and do not require the expenditure of additional resources to implement. </li> </ul> <p>Requires the guidelines to: (1) provide that appropriate information relating to a Blue Alert is disseminated to officials of law enforcement, public health, and other agencies; (2) provide mechanisms that ensure that Blue Alerts comply with all applicable federal, state, and local privacy laws and regulations; and (3) include standards that specifically provide for the protection of the civil liberties of law enforcement officers and their families. </p> <p>Directs the coordinator to report annually on the coordinator's activities and the effectiveness and status of the Blue Alert plans that are in effect or being developed.</p>",
+      "text_url_html": "https://www.congress.gov/114/plaws/publ12/PLAW-114publ12.htm",
+      "text_url_xml": "https://www.congress.gov/114/plaws/publ12/PLAW-114publ12_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/114/plaws/publ12/PLAW-114publ12.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-bill/665",
       "votes": []
     },
     {
@@ -20903,6 +22107,39 @@
       "text_url_xml": "https://www.congress.gov/114/bills/sres135/BILLS-114sres135ats.xml",
       "text_url_pdf": "https://www.congress.gov/114/bills/sres135/BILLS-114sres135ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/135",
+      "votes": []
+    },
+    {
+      "id": "sres131-114",
+      "congress": 114,
+      "type": "sres",
+      "number": "131",
+      "title": "A resolution designating April 5, 2015, as \"Gold Star Wives Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Burr, Richard",
+        "party": "R",
+        "state": "NC"
+      },
+      "introduced_date": "2015-03-27",
+      "latest_action": {
+        "date": "2015-04-13",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Conflicts and wars",
+        "Congressional tributes",
+        "Military personnel and dependents",
+        "Veterans' organizations and recognition"
+      ],
+      "summary_crs": " <p>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</p> <p>Designates April 5, 2015, as Gold Star Wives Day.</p> <p>Recognizes the contributions of the members of the Gold Star Wives of America, Inc., and their dedication to the members and veterans of the Armed Forces.</p>",
+      "text_url_html": "https://www.congress.gov/114/bills/sres131/BILLS-114sres131ats.htm",
+      "text_url_xml": "https://www.congress.gov/114/bills/sres131/BILLS-114sres131ats.xml",
+      "text_url_pdf": "https://www.congress.gov/114/bills/sres131/BILLS-114sres131ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/114th-congress/senate-resolution/131",
       "votes": []
     },
     {
