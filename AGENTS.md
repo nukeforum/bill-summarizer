@@ -68,22 +68,3 @@ Two consequences when writing render tests for tall/scrollable screens:
 Also: `ExtendedFloatingActionButton` merges its descendants' semantics (it is
 a `Button` under the hood), so finding its label text requires
 `onNodeWithText(..., useUnmergedTree = true)`.
-
-## Security
-
-### The Congress.gov API key goes in the `X-Api-Key` header — never the query string
-
-Congress.gov accepts an `api_key` query parameter too, but neither the
-app nor `pipeline/` may use it: Ktor's timeout exceptions interpolate the
-request URL into their message, and on the BYOK path those messages reach
-both Crashlytics and the Data sources screen. `CongressClient` (shared
-with the CLI) and `ByokKeyValidator` authenticate with
-`CongressClient.API_KEY_HEADER`, and `SecretRedaction.kt` scrubs the
-egress paths as a second line of defence — the reasoning for each piece
-lives in those files' KDoc. `ApiKeyLeakTest` and
-`CongressClientTest.get_never_puts_the_api_key_in_the_url` lock it down.
-
-The Python pipeline (`data-pipeline/scripts/_common.py`) still uses the
-query parameter: that path is CI-only, runs with a repo secret rather
-than a user's key, and has no crash reporting. Don't copy its shape into
-app or `pipeline/` code.
