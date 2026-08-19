@@ -12,6 +12,8 @@ import kotlinx.serialization.json.jsonPrimitive
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith
+import kotlin.test.assertFalse
+import kotlin.test.assertNull
 import kotlin.test.assertTrue
 
 private fun jsonHeaders() = headersOf(HttpHeaders.ContentType, "application/json")
@@ -38,15 +40,17 @@ class CongressClientTest {
     }
 
     @Test
-    fun get_appends_api_key_to_query_and_includes_user_agent() = runTest {
+    fun get_sends_api_key_in_header_and_includes_user_agent() = runTest {
         var capturedUrl: String? = null
         var capturedUserAgent: String? = null
+        var capturedApiKeyHeader: String? = null
         val client = HttpClient(MockEngine) {
             configurePipelineForTest(PipelineHttpConfig(retryBaseDelayMillis = 0))
             engine {
                 addHandler { request ->
                     capturedUrl = request.url.toString()
                     capturedUserAgent = request.headers[HttpHeaders.UserAgent]
+                    capturedApiKeyHeader = request.headers[CongressClient.API_KEY_HEADER]
                     respond("{}", HttpStatusCode.OK, jsonHeaders())
                 }
             }
@@ -55,10 +59,39 @@ class CongressClientTest {
         congress.get("/bill/119/hr/1234", params = mapOf("format" to "json"))
 
         val url = capturedUrl ?: error("no request captured")
-        assertTrue("api_key=S3CRET" in url, url)
+        assertEquals("S3CRET", capturedApiKeyHeader)
         assertTrue("format=json" in url, url)
         assertTrue(url.startsWith("https://api.congress.gov/v3/bill/119/hr/1234"), url)
         assertEquals(PipelineHttpConfig.DEFAULT_USER_AGENT, capturedUserAgent)
+    }
+
+    /**
+     * The credential must never reach the URL. Ktor's timeout exceptions
+     * embed `request.url.buildString()` verbatim, and the app forwards
+     * those messages to crash reporting and to on-screen error text — so a
+     * key in the query string is a credential leak, not a style nit.
+     */
+    @Test
+    fun get_never_puts_the_api_key_in_the_url() = runTest {
+        val key = "NOT_A_REAL_KEY_ABC123"
+        var capturedUrl: String? = null
+        var capturedQuery: String? = null
+        val client = HttpClient(MockEngine) {
+            configurePipelineForTest(PipelineHttpConfig(retryBaseDelayMillis = 0))
+            engine {
+                addHandler { request ->
+                    capturedUrl = request.url.toString()
+                    capturedQuery = request.url.parameters["api_key"]
+                    respond("{}", HttpStatusCode.OK, jsonHeaders())
+                }
+            }
+        }
+        val congress = CongressClient(client, apiKey = key)
+        congress.get("/bill", params = mapOf("limit" to "1"))
+
+        val url = capturedUrl ?: error("no request captured")
+        assertNull(capturedQuery, "api_key query parameter must not be emitted")
+        assertFalse(key in url, "api key leaked into the URL: $url")
     }
 
     @Test

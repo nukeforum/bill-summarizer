@@ -9,6 +9,7 @@ import com.informedcitizen.data.byok.ByokFetchTracker
 import com.informedcitizen.data.byok.ByokKeyStore
 import com.informedcitizen.data.byok.ByokKeyValidator
 import com.informedcitizen.data.byok.KeyValidationResult
+import com.informedcitizen.data.byok.redactSecret
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -111,30 +112,33 @@ class DataSourcesViewModel @Inject constructor(
         viewModelScope.launch {
             _state.update { it.copy(fetching = true, fetchMessage = null) }
             val now = System.currentTimeMillis()
+            // Read once up front: every failure branch below needs it to
+            // scrub the key out of the message before it reaches the screen.
+            val apiKey = keyStore.currentCongressApiKey()
             val outcomes = buildList {
                 orchestrator.fetchBills()
                     .onSuccess { tracker.recordSuccess(ByokArtifact.BILLS, now) }
                     .fold(
                         onSuccess = { add("Bills: $it") },
-                        onFailure = { add("Bills failed: ${it.message}") },
+                        onFailure = { add(fetchFailureText("Bills", it, apiKey)) },
                     )
                 orchestrator.fetchVotes()
                     .onSuccess { tracker.recordSuccess(ByokArtifact.VOTES, now) }
                     .fold(
                         onSuccess = { add("Votes: $it") },
-                        onFailure = { add("Votes failed: ${it.message}") },
+                        onFailure = { add(fetchFailureText("Votes", it, apiKey)) },
                     )
                 orchestrator.fetchMembersIndex()
                     .onSuccess { tracker.recordSuccess(ByokArtifact.MEMBERS, now) }
                     .fold(
                         onSuccess = { add("Members: $it") },
-                        onFailure = { add("Members failed: ${it.message}") },
+                        onFailure = { add(fetchFailureText("Members", it, apiKey)) },
                     )
                 orchestrator.fetchCalendar()
                     .onSuccess { tracker.recordSuccess(ByokArtifact.CALENDAR, now) }
                     .fold(
                         onSuccess = { add("Calendar: $it chambers") },
-                        onFailure = { add("Calendar failed: ${it.message}") },
+                        onFailure = { add(fetchFailureText("Calendar", it, apiKey)) },
                     )
             }
             refreshArtifactStatus()
@@ -161,4 +165,21 @@ class DataSourcesViewModel @Inject constructor(
         }
         _state.update { it.copy(artifacts = statuses) }
     }
+}
+
+/**
+ * On-screen text for one failed BYOK fetch, with [apiKey] scrubbed out of
+ * the exception message.
+ *
+ * The result reaches `DataSourcesUiState.fetchMessage` and is rendered
+ * verbatim by `DataSourcesScreen`. Ktor's timeout exceptions quote the
+ * request URL, so an unscrubbed message could print the user's key in
+ * plaintext on the very screen whose input field masks it. The key is
+ * kept out of the URL upstream; this is the second line of defence.
+ */
+internal fun fetchFailureText(label: String, throwable: Throwable, apiKey: String?): String {
+    val detail = redactSecret(throwable.message, apiKey)?.takeIf { it.isNotBlank() }
+        ?: throwable::class.simpleName
+        ?: "unknown error"
+    return "$label failed: $detail"
 }

@@ -68,3 +68,47 @@ Two consequences when writing render tests for tall/scrollable screens:
 Also: `ExtendedFloatingActionButton` merges its descendants' semantics (it is
 a `Button` under the hood), so finding its label text requires
 `onNodeWithText(..., useUnmergedTree = true)`.
+
+## Security
+
+### The Congress.gov API key goes in the `X-Api-Key` header — never the query string
+
+`CongressClient` and `ByokKeyValidator` authenticate with the
+`X-Api-Key` request header. Congress.gov accepts an `api_key` query
+parameter too, and that is how this started — but **do not move it
+back**. Ktor's timeout exceptions interpolate
+`request.url.buildString()` into their message
+(`Request timeout has expired [url=…, request_timeout=… ms]`, same for
+connect and socket timeouts), and on the BYOK path those messages go
+two places the key must never reach:
+
+- `ByokFetchOrchestrator.runReported` → `CrashReporter.recordNonFatal`
+  → `FirebaseCrashlytics.recordException`, which uploads the message.
+  The daily `ByokFetchWorker` runs this in the background, so the user
+  never sees the failure that leaked their credential.
+- `DataSourcesViewModel` (`fetchMessage`) and
+  `KeyValidationResult.Unreachable`, both rendered verbatim by
+  `DataSourcesScreen` — the second one directly beneath the
+  password-masked field that hides the key.
+
+It also falsifies `docs/privacy.html`: *"Your key is sent only to
+Congress.gov … never to us or any third party."*
+
+`SecretRedaction.kt` (`redactSecret` / `redactThrowable`) is the second
+line of defence, applied on all three egress paths. It scrubs the
+stored key and, as a backstop, any `api_key=`/`key=` query value
+regardless of whose it is. `redactThrowable` returns the *original*
+instance when there is nothing to scrub, so ordinary failures keep
+their real type and Crashlytics grouping; when it does fire it rebuilds
+the chain as `RedactedThrowable` and deliberately does not attach the
+original as a cause (that would re-upload the message just scrubbed).
+
+`ApiKeyLeakTest` and `CongressClientTest.get_never_puts_the_api_key_in_the_url`
+lock this down. Verified against the live API: a request with no key
+returns `API_KEY_MISSING`, one with a bogus key in the header returns
+`API_KEY_INVALID` — proof the header is read and parsed.
+
+Note the Python pipeline (`data-pipeline/scripts/_common.py`) still uses
+the query parameter. That path is CI-only, runs with a repo secret
+rather than a user's key, and has no crash reporting — so it is not part
+of this leak, but keep the distinction in mind before copying its shape.

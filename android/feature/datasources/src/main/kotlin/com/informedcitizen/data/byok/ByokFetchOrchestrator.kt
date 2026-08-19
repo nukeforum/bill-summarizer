@@ -211,9 +211,45 @@ class ByokFetchOrchestrator @Inject constructor(
         nonFatalMessage: String,
         block: suspend () -> T,
     ): Result<T> = withContext(Dispatchers.IO) {
-        runCatching { block() }
-            .onFailure { crashReporter.recordNonFatal(it, nonFatalMessage) }
+        val result = runCatching { block() }
+        result.exceptionOrNull()?.let { throwable ->
+            // The reporting path must not turn a Result.failure into a
+            // thrown one, so a keystore read that fails is not fatal here
+            // — redaction falls back to the query-parameter backstop.
+            val apiKey = runCatching { keyStore.currentCongressApiKey() }.getOrNull()
+            reportRedactedNonFatal(
+                crashReporter = crashReporter,
+                throwable = throwable,
+                apiKey = apiKey,
+                nonFatalMessage = nonFatalMessage,
+            )
+        }
+        result
     }
+}
+
+/**
+ * Hand [throwable] to [crashReporter] with [apiKey] scrubbed out of its
+ * message chain first.
+ *
+ * `recordNonFatal` ends at `FirebaseCrashlytics.recordException`, which
+ * uploads the throwable's message — and the failures that reach here are
+ * network failures, the class of exception most likely to quote the
+ * request. The key is kept out of the URL upstream
+ * ([com.informedcitizen.pipeline.http.CongressClient]) so there should be
+ * nothing to scrub; this makes that a belt-and-braces guarantee rather
+ * than an invariant one refactor could quietly break.
+ *
+ * Extracted as a top-level function — like [publishByokMemberVotes] — so
+ * it is unit-testable without an Android [Context].
+ */
+internal fun reportRedactedNonFatal(
+    crashReporter: CrashReporter,
+    throwable: Throwable,
+    apiKey: String?,
+    nonFatalMessage: String,
+) {
+    crashReporter.recordNonFatal(redactThrowable(throwable, apiKey), nonFatalMessage)
 }
 
 /**

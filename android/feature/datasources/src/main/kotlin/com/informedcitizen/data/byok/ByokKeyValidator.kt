@@ -1,8 +1,11 @@
 package com.informedcitizen.data.byok
 
+import com.informedcitizen.pipeline.http.CongressClient
 import com.informedcitizen.pipeline.http.createPipelineHttpClient
 import io.ktor.client.HttpClient
 import io.ktor.client.request.get
+import io.ktor.client.request.header
+import io.ktor.client.request.parameter
 import io.ktor.http.isSuccess
 
 sealed interface KeyValidationResult {
@@ -20,6 +23,11 @@ sealed interface KeyValidationResult {
  * request (`/bill?limit=1`). Same client stack the BYOK fetch uses, so
  * a Valid here means the fetch will authenticate. Only the status code
  * matters — the body is never parsed.
+ *
+ * The key goes in [CongressClient.API_KEY_HEADER], not the query string:
+ * [KeyValidationResult.Unreachable] carries the exception message straight
+ * to the screen, and Ktor's timeout messages embed the request URL. The
+ * message is scrubbed on the way out as well — see [redactSecret].
  */
 class ByokKeyValidator(
     private val httpClientFactory: () -> HttpClient = { createPipelineHttpClient() },
@@ -27,7 +35,10 @@ class ByokKeyValidator(
     suspend fun validateCongressKey(key: String): KeyValidationResult {
         val http = httpClientFactory()
         return try {
-            val status = http.get("$CONGRESS_BASE_URL/bill?limit=1&api_key=$key").status
+            val status = http.get("${CongressClient.DEFAULT_BASE_URL}/bill") {
+                header(CongressClient.API_KEY_HEADER, key)
+                parameter("limit", "1")
+            }.status
             when {
                 status.isSuccess() -> KeyValidationResult.Valid
                 status.value == 401 || status.value == 403 ->
@@ -35,13 +46,10 @@ class ByokKeyValidator(
                 else -> KeyValidationResult.Unreachable("Congress.gov returned HTTP ${status.value}")
             }
         } catch (e: Exception) {
-            KeyValidationResult.Unreachable(e.message ?: e::class.simpleName ?: "unknown error")
+            val detail = redactSecret(e.message, key)?.takeIf { it.isNotBlank() }
+            KeyValidationResult.Unreachable(detail ?: e::class.simpleName ?: "unknown error")
         } finally {
             http.close()
         }
-    }
-
-    private companion object {
-        const val CONGRESS_BASE_URL = "https://api.congress.gov/v3"
     }
 }
