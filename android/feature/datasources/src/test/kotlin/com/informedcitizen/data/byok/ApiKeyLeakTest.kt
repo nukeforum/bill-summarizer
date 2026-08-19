@@ -3,11 +3,14 @@ package com.informedcitizen.data.byok
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import com.informedcitizen.crash.FakeCrashReporter
+import com.informedcitizen.ui.datasources.MALFORMED_KEY_MESSAGE
 import com.informedcitizen.ui.datasources.fetchFailureText
 import com.informedcitizen.ui.datasources.redactionSecret
+import com.informedcitizen.ui.datasources.unreachableMessage
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.mock.MockEngine
 import io.ktor.client.engine.mock.respond
+import io.ktor.client.engine.mock.respondOk
 import io.ktor.http.HttpHeaders
 import io.ktor.http.HttpStatusCode
 import io.ktor.http.headersOf
@@ -71,8 +74,10 @@ private fun messageChain(throwable: Throwable): String = buildString {
  * Regression guard for the BYOK key leak: the user's Congress.gov key
  * must not appear in anything reported to Crashlytics or rendered on
  * screen. The primary fix is that the key never enters the URL at all
- * (see `CongressClientTest.get_never_puts_the_api_key_in_the_url`);
- * these cover the scrub that backs it up on all three egress paths.
+ * (see `CongressClientTest.get_never_puts_the_api_key_in_the_url`); these
+ * cover the scrub that backs it up on the two paths that still render
+ * upstream text, and — on the key-entry screen, where the key is raw user
+ * input — that no upstream text is rendered in the first place.
  */
 class ApiKeyLeakTest {
 
@@ -213,7 +218,7 @@ class ApiKeyLeakTest {
     }
 
     @Test
-    fun `validator unreachable message never carries the api key`() = runTest {
+    fun `validator returns no upstream text for the screen to render`() = runTest {
         val validator = ByokKeyValidator(httpClientFactory = {
             HttpClient(MockEngine) {
                 engine {
@@ -228,9 +233,63 @@ class ApiKeyLeakTest {
 
         val result = validator.validateCongressKey(FAKE_KEY)
 
-        val message = (result as KeyValidationResult.Unreachable).message
-        assertFalse("api key leaked to the screen: $message", message.contains(FAKE_KEY))
-        assertTrue(message, message.contains("Request timeout has expired"))
+        // The result type carries no message at all, so there is nothing
+        // for the screen to echo and nothing left to scrub.
+        assertEquals(KeyValidationResult.Unreachable(), result)
+        val shown = unreachableMessage(httpStatus = null)
+        assertFalse("api key leaked to the screen: $shown", shown.contains(FAKE_KEY))
+    }
+
+    /**
+     * The one shape that can still quote the key now that it travels in a
+     * header: Ktor rejects a header value carrying a control character and
+     * embeds the whole rejected value in the exception message
+     * (`Header value '…' contains illegal character …`). It must not reach
+     * the screen — and it is not scrubbed, it is never rendered.
+     */
+    @Test
+    fun `a key that cannot be a header is reported without quoting it`() = runTest {
+        var requested = false
+        val validator = ByokKeyValidator(httpClientFactory = {
+            HttpClient(MockEngine) {
+                engine {
+                    addHandler {
+                        requested = true
+                        respondOk()
+                    }
+                }
+            }
+        })
+
+        val result = validator.validateCongressKey("$FAKE_KEY\nX-Injected: 1")
+
+        assertEquals(KeyValidationResult.Malformed, result)
+        assertFalse("a request went out carrying the invalid header", requested)
+        assertFalse(
+            "api key leaked to the screen: $MALFORMED_KEY_MESSAGE",
+            MALFORMED_KEY_MESSAGE.contains(FAKE_KEY),
+        )
+    }
+
+    /**
+     * The typed key is unvalidated input, so a one-character entry used to
+     * be substituted out of the error text ("no networ***"). Nothing the
+     * user types can reach the supporting text now.
+     */
+    @Test
+    fun `a one-character key does not garble the network error`() = runTest {
+        val validator = ByokKeyValidator(httpClientFactory = {
+            HttpClient(MockEngine) {
+                engine { addHandler { throw IOException("no network") } }
+            }
+        })
+
+        val result = validator.validateCongressKey("k")
+
+        assertEquals(KeyValidationResult.Unreachable(), result)
+        val shown = unreachableMessage(httpStatus = null)
+        assertFalse(shown, shown.contains("networ***"))
+        assertTrue(shown, shown.contains("Congress.gov couldn't be reached"))
     }
 
     // --- The scrub itself ---

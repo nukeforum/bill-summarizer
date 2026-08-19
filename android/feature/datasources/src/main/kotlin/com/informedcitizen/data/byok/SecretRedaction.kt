@@ -102,10 +102,12 @@ private fun rebuild(throwable: Throwable, secret: String?, depth: Int): Throwabl
  * then to a fixed string when the message is null or scrubs away to
  * nothing.
  *
- * Shared by the two on-screen egress paths — the "Fetch now" result line
- * ([fetchFailureText][com.informedcitizen.ui.datasources.fetchFailureText])
- * and the key-entry supporting text ([ByokKeyValidator]) — so they cannot
- * drift apart on what a scrubbed-to-empty message degrades to.
+ * Used by the one screen path that still renders upstream text — the
+ * "Fetch now" result line
+ * ([fetchFailureText][com.informedcitizen.ui.datasources.fetchFailureText]).
+ * The key-entry supporting text does not go through here at all: it maps
+ * failures to app-authored constants, so [ByokKeyValidator] has nothing
+ * to scrub.
  */
 internal fun redactedDetail(throwable: Throwable, secret: String?): String =
     redactSecret(throwable.message, secret)?.takeIf { it.isNotBlank() }

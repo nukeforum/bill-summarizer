@@ -92,8 +92,11 @@ class DataSourcesViewModel @Inject constructor(
                 is KeyValidationResult.Invalid -> _state.update {
                     it.copy(keyState = KeyUiState.Rejected("Congress.gov rejected this key (HTTP ${result.httpStatus})."))
                 }
+                KeyValidationResult.Malformed -> _state.update {
+                    it.copy(keyState = KeyUiState.Rejected(MALFORMED_KEY_MESSAGE))
+                }
                 is KeyValidationResult.Unreachable -> _state.update {
-                    it.copy(keyState = KeyUiState.Unreachable("Couldn't verify the key: ${result.message}"))
+                    it.copy(keyState = KeyUiState.Unreachable(unreachableMessage(result.httpStatus)))
                 }
             }
         }
@@ -166,6 +169,29 @@ class DataSourcesViewModel @Inject constructor(
         }
         _state.update { it.copy(artifacts = statuses) }
     }
+}
+
+/**
+ * Shown when the key the user typed cannot be sent as an HTTP header at
+ * all. Deliberately says nothing about the value itself: the upstream
+ * exception quotes the whole rejected header verbatim, and this text is
+ * rendered directly beneath the field that masks it.
+ */
+internal const val MALFORMED_KEY_MESSAGE: String =
+    "That key can't be sent to Congress.gov — it contains a line break or " +
+        "other control character. Paste it again as a single line."
+
+/**
+ * Supporting text for a check that never got an answer. [httpStatus] is
+ * the status Congress.gov replied with, or null when the request didn't
+ * complete. Both branches are app-authored constants plus an integer, so
+ * neither can echo what the user typed.
+ */
+internal fun unreachableMessage(httpStatus: Int?): String = when (httpStatus) {
+    null -> "Couldn't verify the key — Congress.gov couldn't be reached. " +
+        "Check your connection and try again."
+    else -> "Couldn't verify the key — Congress.gov returned HTTP $httpStatus. " +
+        "Try again shortly."
 }
 
 /**
