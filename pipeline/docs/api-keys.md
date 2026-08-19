@@ -23,8 +23,8 @@ and needs no key at all.
    it under spam.
 4. The key is active immediately. To check that it works, enter it in
    the app — **Verify and save** (below) makes one test request and
-   tells you right away whether the key was accepted, mistyped, or not
-   yet activated.
+   tells you right away whether the key was accepted or rejected; a
+   rejection means it was mistyped or not yet activated.
 
 ### Entering it in the app
 

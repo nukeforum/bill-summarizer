@@ -8,6 +8,7 @@ import io.ktor.client.request.header
 import io.ktor.client.request.parameter
 import io.ktor.http.IllegalHeaderValueException
 import io.ktor.http.isSuccess
+import kotlinx.coroutines.CancellationException
 
 /**
  * The outcome of a live key check. Deliberately carries no free-form
@@ -68,6 +69,8 @@ class ByokKeyValidator(
                     KeyValidationResult.Invalid(status.value)
                 else -> KeyValidationResult.Unreachable(status.value)
             }
+        } catch (cancellation: CancellationException) {
+            throw cancellation
         } catch (malformed: IllegalArgumentException) {
             KeyValidationResult.Malformed
         } catch (unreachable: Exception) {

@@ -34,16 +34,30 @@ import kotlinx.serialization.json.JsonObject
  * BYOK path forwards to crash reporting and renders in the UI. Keeping
  * it out of the URL means no exception message, log line, or retry
  * trace can ever contain it. Do not move it back into `parameters`.
+ *
+ * For the same reason the key is normalized before it reaches the
+ * header builder: Ktor's `IllegalHeaderValueException` quotes the whole
+ * rejected value in its message, so a key carrying a stray control
+ * character (typically the trailing newline from
+ * `export CONGRESS_API_KEY=$(cat key.txt)`) would land verbatim in a
+ * recorded [com.informedcitizen.pipeline.ErrorCollector] entry and be
+ * printed by the CLI. Surrounding whitespace is trimmed and anything
+ * still unusable as a header value throws [IllegalArgumentException]
+ * with an app-authored message that contains no part of the key —
+ * the same closed-outcome contract the Android key validator maps to
+ * its `Malformed` result.
  */
 class CongressClient(
     private val client: HttpClient,
-    private val apiKey: String,
+    apiKey: String,
     private val baseUrl: String = DEFAULT_BASE_URL,
 ) {
+    private val headerApiKey: String by lazy { normalizeApiKey(apiKey) }
+
     suspend fun get(path: String, params: Map<String, String> = emptyMap()): JsonObject {
         val response: HttpResponse = client.get(baseUrl + path) {
             accept(ContentType.Application.Json)
-            header(API_KEY_HEADER, apiKey)
+            header(API_KEY_HEADER, headerApiKey)
             url {
                 for ((k, v) in params) parameters.append(k, v)
             }
@@ -66,6 +80,34 @@ class CongressClient(
 
         /** Congress.gov's header-based alternative to the `api_key` query parameter. */
         const val API_KEY_HEADER: String = "X-Api-Key"
+
+        internal const val BLANK_KEY_MESSAGE: String =
+            "Congress.gov API key is blank."
+
+        internal const val UNSENDABLE_KEY_MESSAGE: String =
+            "Congress.gov API key cannot be sent as an HTTP header: it contains a " +
+                "control character, typically a line break from a multi-line paste " +
+                "or a trailing newline. The key itself is withheld from this message."
+
+        /**
+         * Trim surrounding whitespace off [rawKey] and reject anything that
+         * still cannot be an HTTP header value. Throws
+         * [IllegalArgumentException] whose message names the problem but
+         * never any part of [rawKey].
+         */
+        fun normalizeApiKey(rawKey: String): String {
+            val key = rawKey.trim()
+            require(key.isNotEmpty()) { BLANK_KEY_MESSAGE }
+            require(key.none(::isUnsendableInHeader)) { UNSENDABLE_KEY_MESSAGE }
+            return key
+        }
+
+        /**
+         * Every character Ktor's `HttpHeaders.checkHeaderValue` rejects
+         * (anything below the space, tab excepted), plus DEL — which Ktor
+         * lets through but no Congress.gov key contains.
+         */
+        private fun isUnsendableInHeader(c: Char): Boolean = c < ' ' || c == '\u007F'
     }
 }
 

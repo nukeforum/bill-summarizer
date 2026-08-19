@@ -1,5 +1,7 @@
 package com.informedcitizen.pipeline.http
 
+import com.informedcitizen.pipeline.ErrorCollector
+import com.informedcitizen.pipeline.fetch.buildBillRecordsParallel
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.mock.MockEngine
 import io.ktor.client.engine.mock.respond
@@ -8,7 +10,9 @@ import io.ktor.http.HttpStatusCode
 import io.ktor.http.headersOf
 import kotlinx.coroutines.test.runTest
 import kotlinx.serialization.json.JsonObject
+import kotlinx.serialization.json.buildJsonObject
 import kotlinx.serialization.json.jsonPrimitive
+import kotlinx.serialization.json.put
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith
@@ -17,6 +21,17 @@ import kotlin.test.assertNull
 import kotlin.test.assertTrue
 
 private fun jsonHeaders() = headersOf(HttpHeaders.ContentType, "application/json")
+
+/**
+ * Every message in the failure, including anything an upstream library
+ * wrapped. A leak that only shows up on `cause.cause` is still a leak:
+ * the CLI prints stack traces and the app forwards throwables to crash
+ * reporting.
+ */
+private fun Throwable.chainText(): String =
+    generateSequence(this) { it.cause }
+        .take(16)
+        .joinToString("\n") { "${it::class.simpleName}: ${it.message} / ${it}" }
 
 class CongressClientTest {
     @Test
@@ -92,6 +107,119 @@ class CongressClientTest {
         val url = capturedUrl ?: error("no request captured")
         assertNull(capturedQuery, "api_key query parameter must not be emitted")
         assertFalse(key in url, "api key leaked into the URL: $url")
+    }
+
+    /**
+     * A keyfile-sourced `export CONGRESS_API_KEY=$(cat key.txt)` carries a
+     * trailing newline. Ktor rejects that as a header value and quotes the
+     * whole key back in the exception message, so the client normalizes
+     * before the header builder ever sees it. The request must still go
+     * out, authenticated, with the key nowhere near the URL.
+     */
+    @Test
+    fun get_trims_surrounding_whitespace_off_the_key_and_still_authenticates() = runTest {
+        val key = "NOT_A_REAL_KEY_ABC123"
+        var capturedApiKeyHeader: String? = null
+        var capturedUrl: String? = null
+        var capturedQuery: String? = null
+        val client = HttpClient(MockEngine) {
+            configurePipelineForTest(PipelineHttpConfig(retryBaseDelayMillis = 0))
+            engine {
+                addHandler { request ->
+                    capturedApiKeyHeader = request.headers[CongressClient.API_KEY_HEADER]
+                    capturedUrl = request.url.toString()
+                    capturedQuery = request.url.parameters["api_key"]
+                    respond("{}", HttpStatusCode.OK, jsonHeaders())
+                }
+            }
+        }
+        val congress = CongressClient(client, apiKey = "  $key\n")
+        congress.get("/bill", params = mapOf("limit" to "1"))
+
+        assertEquals(key, capturedApiKeyHeader)
+        assertNull(capturedQuery, "api_key query parameter must not be emitted")
+        assertFalse(key in (capturedUrl ?: ""), "api key leaked into the URL: $capturedUrl")
+    }
+
+    /**
+     * A key that still cannot be a header value after trimming — a line
+     * break in the middle, the shape a multi-line paste produces — must
+     * fail with an app-authored message. Ktor's own
+     * `IllegalHeaderValueException` embeds the entire rejected value, and
+     * that message is what the CLI records and prints.
+     */
+    @Test
+    fun get_rejects_an_unsendable_key_without_quoting_any_of_it() = runTest {
+        val key = "NOT_A_REAL_KEY_ABC123"
+        val client = HttpClient(MockEngine) {
+            configurePipelineForTest(PipelineHttpConfig(retryBaseDelayMillis = 0))
+            engine { addHandler { respond("{}", HttpStatusCode.OK, jsonHeaders()) } }
+        }
+        val congress = CongressClient(client, apiKey = "$key\nTRAILING")
+
+        val exc = assertFailsWith<IllegalArgumentException> {
+            congress.get("/bill/119/hr/1234")
+        }
+        val text = exc.chainText()
+        assertFalse(key in text, "api key leaked into the failure: $text")
+        assertFalse("TRAILING" in text, "api key leaked into the failure: $text")
+        assertTrue(CongressClient.UNSENDABLE_KEY_MESSAGE in text, text)
+    }
+
+    @Test
+    fun get_rejects_a_blank_key_without_making_a_request() = runTest {
+        var calls = 0
+        val client = HttpClient(MockEngine) {
+            configurePipelineForTest(PipelineHttpConfig(retryBaseDelayMillis = 0))
+            engine {
+                addHandler {
+                    calls++
+                    respond("{}", HttpStatusCode.OK, jsonHeaders())
+                }
+            }
+        }
+        val congress = CongressClient(client, apiKey = "   ")
+
+        val exc = assertFailsWith<IllegalArgumentException> { congress.get("/bill") }
+        assertEquals(CongressClient.BLANK_KEY_MESSAGE, exc.message)
+        assertEquals(0, calls)
+    }
+
+    /**
+     * The CLI failure path end to end: `buildBillRecordsParallel` records
+     * `exc.message` into the [ErrorCollector], and `fetch-bills` prints
+     * `renderSummary` to stderr — straight into CI logs. Nothing that
+     * reaches that string may contain the credential.
+     */
+    @Test
+    fun an_unsendable_key_never_reaches_the_rendered_cli_error_summary() = runTest {
+        val key = "NOT_A_REAL_KEY_ABC123"
+        val client = HttpClient(MockEngine) {
+            configurePipelineForTest(PipelineHttpConfig(retryBaseDelayMillis = 0))
+            engine { addHandler { respond("{}", HttpStatusCode.OK, jsonHeaders()) } }
+        }
+        val congress = CongressClient(client, apiKey = "$key\nTRAILING")
+        val errors = ErrorCollector()
+        val summaries = listOf(
+            buildJsonObject {
+                put("type", "HR")
+                put("number", "1234")
+            } to "enacted",
+        )
+
+        val (records, failures) = buildBillRecordsParallel(
+            client = congress,
+            congress = 119,
+            items = summaries,
+            errors = errors,
+        )
+
+        assertTrue(records.isEmpty())
+        assertEquals(1, failures)
+        val summary = errors.renderSummary(label = "fetch_bills")
+        assertTrue(CongressClient.UNSENDABLE_KEY_MESSAGE in summary, summary)
+        assertFalse(key in summary, "api key leaked into the CLI error summary: $summary")
+        assertFalse("TRAILING" in summary, "api key leaked into the CLI error summary: $summary")
     }
 
     @Test
