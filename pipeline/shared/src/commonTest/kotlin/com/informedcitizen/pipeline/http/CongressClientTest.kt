@@ -166,6 +166,53 @@ class CongressClientTest {
         assertTrue(CongressClient.UNSENDABLE_KEY_MESSAGE in text, text)
     }
 
+    /**
+     * A key copied out of a rendered HTML or PDF activation email picks up
+     * characters that look like ASCII but are not: a non-breaking space
+     * where a space was, a smart quote where an apostrophe was. Ktor lets
+     * them through — it only rejects `c < ' '` — and OkHttp then throws
+     * from `Headers.checkValue` with the whole key appended, because
+     * `X-Api-Key` is not on its sensitive-header list. Interior ones
+     * matter: `trim()` strips a trailing NBSP but not one in the middle.
+     *
+     * Asserted against [CongressClient.normalizeApiKey] directly rather
+     * than through a request, because MockEngine never reaches OkHttp's
+     * validator; the transport side is pinned by
+     * `CongressClientOkHttpBoundaryTest` in jvmTest.
+     */
+    @Test
+    fun normalize_rejects_an_interior_non_breaking_space_without_quoting_the_key() {
+        val key = "NOT_A_REAL\u00A0KEY_ABC123"
+
+        val exc = assertFailsWith<IllegalArgumentException> {
+            CongressClient.normalizeApiKey(key)
+        }
+        val text = exc.chainText()
+        assertFalse("NOT_A_REAL" in text, "api key leaked into the failure: $text")
+        assertFalse("KEY_ABC123" in text, "api key leaked into the failure: $text")
+        assertEquals(CongressClient.UNSENDABLE_KEY_MESSAGE, exc.message)
+    }
+
+    @Test
+    fun normalize_rejects_an_interior_smart_quote_without_quoting_the_key() {
+        val key = "NOT_A_REAL\u2019S_KEY_ABC123"
+
+        val exc = assertFailsWith<IllegalArgumentException> {
+            CongressClient.normalizeApiKey(key)
+        }
+        val text = exc.chainText()
+        assertFalse("NOT_A_REAL" in text, "api key leaked into the failure: $text")
+        assertFalse("S_KEY_ABC123" in text, "api key leaked into the failure: $text")
+        assertEquals(CongressClient.UNSENDABLE_KEY_MESSAGE, exc.message)
+    }
+
+    @Test
+    fun normalize_keeps_every_printable_ascii_key_and_only_trims_the_edges() {
+        val key = "aBcD-1234_~!@#\$%^&*()+={}[]|;:'\",.<>/?"
+
+        assertEquals(key, CongressClient.normalizeApiKey("  $key\n"))
+    }
+
     @Test
     fun get_rejects_a_blank_key_without_making_a_request() = runTest {
         var calls = 0

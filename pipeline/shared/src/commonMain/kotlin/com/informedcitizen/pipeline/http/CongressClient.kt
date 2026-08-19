@@ -36,16 +36,19 @@ import kotlinx.serialization.json.JsonObject
  * trace can ever contain it. Do not move it back into `parameters`.
  *
  * For the same reason the key is normalized before it reaches the
- * header builder: Ktor's `IllegalHeaderValueException` quotes the whole
- * rejected value in its message, so a key carrying a stray control
- * character (typically the trailing newline from
- * `export CONGRESS_API_KEY=$(cat key.txt)`) would land verbatim in a
- * recorded [com.informedcitizen.pipeline.ErrorCollector] entry and be
- * printed by the CLI. Surrounding whitespace is trimmed and anything
- * still unusable as a header value throws [IllegalArgumentException]
- * with an app-authored message that contains no part of the key —
- * the same closed-outcome contract the Android key validator maps to
- * its `Malformed` result.
+ * header builder. Both layers that could reject it quote the whole
+ * rejected value back: Ktor's `IllegalHeaderValueException` and, one
+ * layer down, OkHttp's `Headers.checkValue` — which appends the value
+ * for every header name outside its sensitive list, and `X-Api-Key` is
+ * not on that list. Either message would land verbatim in a recorded
+ * [com.informedcitizen.pipeline.ErrorCollector] entry and be printed by
+ * the CLI, where nothing scrubs it.
+ *
+ * So [normalizeApiKey] trims surrounding whitespace and rejects
+ * anything the transport could still choke on, throwing
+ * [IllegalArgumentException] with an app-authored message that contains
+ * no part of the key — the same closed-outcome contract the Android key
+ * validator maps to its `Malformed` result.
  */
 class CongressClient(
     private val client: HttpClient,
@@ -86,8 +89,9 @@ class CongressClient(
 
         internal const val UNSENDABLE_KEY_MESSAGE: String =
             "Congress.gov API key cannot be sent as an HTTP header: it contains a " +
-                "control character, typically a line break from a multi-line paste " +
-                "or a trailing newline. The key itself is withheld from this message."
+                "character outside printable ASCII — a line break from a multi-line " +
+                "paste, or a non-breaking space or smart quote picked up from a " +
+                "rendered email. The key itself is withheld from this message."
 
         /**
          * Trim surrounding whitespace off [rawKey] and reject anything that
@@ -103,11 +107,17 @@ class CongressClient(
         }
 
         /**
-         * Every character Ktor's `HttpHeaders.checkHeaderValue` rejects
-         * (anything below the space, tab excepted), plus DEL — which Ktor
-         * lets through but no Congress.gov key contains.
+         * Printable ASCII only — deliberately stricter than Ktor, which
+         * rejects just `c < ' '` (tab excepted) and would hand everything
+         * else to the engine. OkHttp, the engine that actually writes the
+         * request, accepts only `'\t'` or `c in ' '..'~'`, so a key
+         * carrying a non-breaking space or a smart quote clears Ktor and
+         * then throws from `Headers.checkValue` with the whole key inline.
+         * Validating to the transport's rule keeps that unreachable. Tab
+         * is rejected too: it is legal in a header value but no
+         * Congress.gov key contains one.
          */
-        private fun isUnsendableInHeader(c: Char): Boolean = c < ' ' || c == '\u007F'
+        private fun isUnsendableInHeader(c: Char): Boolean = c < ' ' || c > '~'
     }
 }
 
