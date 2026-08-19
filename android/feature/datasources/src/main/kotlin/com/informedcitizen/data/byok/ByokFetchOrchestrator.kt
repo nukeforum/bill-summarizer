@@ -124,7 +124,7 @@ class ByokFetchOrchestrator @Inject constructor(
      * incremental (a roll call already on disk is never refetched), so a
      * capped first run tops up on subsequent daily ticks.
      */
-    suspend fun fetchVotes(): Result<Int> = runReported("byok votes fetch failed") {
+    suspend fun fetchVotes(): Result<Int> = runReported("byok votes fetch failed") { _ ->
         val client = createPipelineHttpClient()
         try {
             val now = Clock.System.now()
@@ -178,7 +178,7 @@ class ByokFetchOrchestrator @Inject constructor(
     }
 
     /** Weekly refresh of the session calendar. Public feeds — no key needed. */
-    suspend fun fetchCalendar(): Result<Int> = runReported("byok calendar fetch failed") {
+    suspend fun fetchCalendar(): Result<Int> = runReported("byok calendar fetch failed") { _ ->
         val client = createPipelineHttpClient()
         try {
             val now = Clock.System.now()
@@ -196,9 +196,10 @@ class ByokFetchOrchestrator @Inject constructor(
 
     private suspend fun <T> withKeyedClient(
         block: suspend (client: io.ktor.client.HttpClient, apiKey: String) -> T,
-    ): Result<T> = runReported("byok fetch failed") {
+    ): Result<T> = runReported("byok fetch failed") { secret ->
         val apiKey = keyStore.currentCongressApiKey()
             ?: error("No Congress.gov API key configured")
+        secret.value = apiKey
         val client = createPipelineHttpClient()
         try {
             block(client, apiKey)
@@ -207,25 +208,44 @@ class ByokFetchOrchestrator @Inject constructor(
         }
     }
 
+    /**
+     * Runs [block] and, on failure, reports the throwable with the key
+     * scrubbed out.
+     *
+     * [block] receives a [SecretSlot] to publish the key it read, so the
+     * scrub uses the exact value that was in flight rather than re-reading
+     * the encrypted keystore on the failure path — a second read could
+     * return a different value (the user cleared the key mid-fetch) or
+     * throw. A keyless step ([fetchVotes], [fetchCalendar]) leaves the slot
+     * empty and falls through to [redactSecret]'s query-parameter backstop,
+     * which is all those steps could ever need.
+     */
     private suspend fun <T> runReported(
         nonFatalMessage: String,
-        block: suspend () -> T,
+        block: suspend (secret: SecretSlot) -> T,
     ): Result<T> = withContext(Dispatchers.IO) {
-        val result = runCatching { block() }
+        val secret = SecretSlot()
+        val result = runCatching { block(secret) }
         result.exceptionOrNull()?.let { throwable ->
-            // The reporting path must not turn a Result.failure into a
-            // thrown one, so a keystore read that fails is not fatal here
-            // — redaction falls back to the query-parameter backstop.
-            val apiKey = runCatching { keyStore.currentCongressApiKey() }.getOrNull()
             reportRedactedNonFatal(
                 crashReporter = crashReporter,
                 throwable = throwable,
-                apiKey = apiKey,
+                apiKey = secret.value,
                 nonFatalMessage = nonFatalMessage,
             )
         }
         result
     }
+}
+
+/**
+ * Carries the API key a fetch step actually used out to its failure
+ * reporting, without a second keystore decrypt. Confined to one
+ * [ByokFetchOrchestrator.runReported] call, so no cross-thread visibility
+ * concern beyond the coroutine's own happens-before edges.
+ */
+private class SecretSlot {
+    var value: String? = null
 }
 
 /**

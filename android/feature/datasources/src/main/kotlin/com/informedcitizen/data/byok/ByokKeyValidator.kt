@@ -27,7 +27,7 @@ sealed interface KeyValidationResult {
  * The key goes in [CongressClient.API_KEY_HEADER], not the query string:
  * [KeyValidationResult.Unreachable] carries the exception message straight
  * to the screen, and Ktor's timeout messages embed the request URL. The
- * message is scrubbed on the way out as well — see [redactSecret].
+ * message is scrubbed on the way out as well — see [redactedDetail].
  */
 class ByokKeyValidator(
     private val httpClientFactory: () -> HttpClient = { createPipelineHttpClient() },
@@ -46,8 +46,7 @@ class ByokKeyValidator(
                 else -> KeyValidationResult.Unreachable("Congress.gov returned HTTP ${status.value}")
             }
         } catch (e: Exception) {
-            val detail = redactSecret(e.message, key)?.takeIf { it.isNotBlank() }
-            KeyValidationResult.Unreachable(detail ?: e::class.simpleName ?: "unknown error")
+            KeyValidationResult.Unreachable(redactedDetail(e, key))
         } finally {
             http.close()
         }

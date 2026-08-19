@@ -1,16 +1,22 @@
 package com.informedcitizen.data.byok
 
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
 import com.informedcitizen.crash.FakeCrashReporter
 import com.informedcitizen.ui.datasources.fetchFailureText
+import com.informedcitizen.ui.datasources.redactionSecret
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.mock.MockEngine
 import io.ktor.client.engine.mock.respond
 import io.ktor.http.HttpHeaders
 import io.ktor.http.HttpStatusCode
 import io.ktor.http.headersOf
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
+import org.junit.Assert.assertNotSame
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertSame
 import org.junit.Assert.assertTrue
@@ -30,6 +36,24 @@ private const val FAKE_KEY = "zzzTESTKEYzzzNOTAREALCREDENTIAL000000000"
  */
 private fun ktorTimeoutLookalike(url: String): Throwable =
     IOException("Request timeout has expired [url=$url, request_timeout=30000 ms]")
+
+/**
+ * A [DataStore] whose backing file cannot be read — the shape a corrupt
+ * preferences file takes: `data` throws rather than emitting.
+ */
+private class UnreadableDataStore : DataStore<Preferences> {
+    override val data: Flow<Preferences> = flow { throw IOException("datastore file corrupt") }
+
+    override suspend fun updateData(
+        transform: suspend (t: Preferences) -> Preferences,
+    ): Preferences = throw IOException("datastore file corrupt")
+}
+
+/** Never reached: the store fails before it has bytes to decrypt. */
+private class UnusedCipher : ByokCipher {
+    override fun encrypt(plaintext: ByteArray): ByteArray = error("not reached")
+    override fun decrypt(blob: ByteArray): ByteArray = error("not reached")
+}
 
 /** Every string that could reach Crashlytics from [throwable] and its causes. */
 private fun messageChain(throwable: Throwable): String = buildString {
@@ -138,6 +162,27 @@ class ApiKeyLeakTest {
         assertEquals("Votes failed: IOException", shown)
     }
 
+    @Test
+    fun `a corrupt keystore degrades to a null secret instead of throwing`() = runTest {
+        val keyStore = ByokKeyStore(UnreadableDataStore(), UnusedCipher())
+
+        // Unguarded, this read escapes onFetchNow's coroutine and strands
+        // `fetching = true`; guarded, it costs only scrub precision.
+        assertNull(redactionSecret(keyStore))
+    }
+
+    @Test
+    fun `a null secret still scrubs the query parameter on screen`() {
+        val leaky = ktorTimeoutLookalike(
+            "https://api.congress.gov/v3/bill?limit=1&api_key=$FAKE_KEY",
+        )
+
+        val shown = fetchFailureText("Bills", leaky, apiKey = null)
+
+        assertFalse("api key leaked to the screen: $shown", shown.contains(FAKE_KEY))
+        assertTrue(shown, shown.contains("api_key=***"))
+    }
+
     // --- Path 3: the key-entry supporting text (ByokKeyValidator) ---
 
     @Test
@@ -189,6 +234,36 @@ class ApiKeyLeakTest {
     }
 
     // --- The scrub itself ---
+
+    @Test
+    fun `a secret below the rebuild depth is still caught and dropped`() {
+        val reporter = FakeCrashReporter()
+        // Deeper than the rebuild cap, so detection must not share that cap.
+        var chain: Throwable = ktorTimeoutLookalike(
+            "https://api.congress.gov/v3/bill?api_key=$FAKE_KEY",
+        )
+        repeat(20) { level -> chain = IllegalStateException("wrapper $level", chain) }
+
+        reportRedactedNonFatal(reporter, chain, FAKE_KEY, "byok fetch failed")
+
+        val recorded = reporter.recorded.single().throwable
+        assertNotSame("deep chain was uploaded unscanned", chain, recorded)
+        val reported = messageChain(recorded)
+        assertFalse("api key leaked from a deep cause: $reported", reported.contains(FAKE_KEY))
+    }
+
+    @Test
+    fun `a cyclic cause chain terminates`() {
+        val reporter = FakeCrashReporter()
+        val inner = IllegalStateException("inner")
+        val outer = IllegalStateException("outer: api_key=$FAKE_KEY", inner)
+        inner.initCause(outer)
+
+        reportRedactedNonFatal(reporter, outer, FAKE_KEY, "byok fetch failed")
+
+        val reported = messageChain(reporter.recorded.single().throwable)
+        assertFalse(reported, reported.contains(FAKE_KEY))
+    }
 
     @Test
     fun `redactSecret replaces every occurrence`() {

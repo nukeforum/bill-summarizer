@@ -9,8 +9,9 @@ import com.informedcitizen.data.byok.ByokFetchTracker
 import com.informedcitizen.data.byok.ByokKeyStore
 import com.informedcitizen.data.byok.ByokKeyValidator
 import com.informedcitizen.data.byok.KeyValidationResult
-import com.informedcitizen.data.byok.redactSecret
+import com.informedcitizen.data.byok.redactedDetail
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -114,7 +115,7 @@ class DataSourcesViewModel @Inject constructor(
             val now = System.currentTimeMillis()
             // Read once up front: every failure branch below needs it to
             // scrub the key out of the message before it reaches the screen.
-            val apiKey = keyStore.currentCongressApiKey()
+            val apiKey = redactionSecret(keyStore)
             val outcomes = buildList {
                 orchestrator.fetchBills()
                     .onSuccess { tracker.recordSuccess(ByokArtifact.BILLS, now) }
@@ -168,6 +169,29 @@ class DataSourcesViewModel @Inject constructor(
 }
 
 /**
+ * The stored key to scrub failure messages with, or null if it can't be
+ * read.
+ *
+ * `ByokKeyStore.currentCongressApiKey` collects `DataStore.data`, which
+ * throws when the backing file is unreadable. That must not escape the
+ * `onFetchNow` coroutine: it is read before the fetches run, so an escaping
+ * exception would leave `fetching = true` forever and the Fetch-now button
+ * dead until the screen is recreated. Failing to read the secret only costs
+ * precision in the scrub — the query-parameter backstop in
+ * [redactSecret][com.informedcitizen.data.byok.redactSecret] still fires —
+ * so it degrades to null and lets the fetches report their own failures
+ * normally.
+ */
+internal suspend fun redactionSecret(keyStore: ByokKeyStore): String? =
+    try {
+        keyStore.currentCongressApiKey()
+    } catch (cancellation: CancellationException) {
+        throw cancellation
+    } catch (unreadable: Exception) {
+        null
+    }
+
+/**
  * On-screen text for one failed BYOK fetch, with [apiKey] scrubbed out of
  * the exception message.
  *
@@ -177,9 +201,5 @@ class DataSourcesViewModel @Inject constructor(
  * plaintext on the very screen whose input field masks it. The key is
  * kept out of the URL upstream; this is the second line of defence.
  */
-internal fun fetchFailureText(label: String, throwable: Throwable, apiKey: String?): String {
-    val detail = redactSecret(throwable.message, apiKey)?.takeIf { it.isNotBlank() }
-        ?: throwable::class.simpleName
-        ?: "unknown error"
-    return "$label failed: $detail"
-}
+internal fun fetchFailureText(label: String, throwable: Throwable, apiKey: String?): String =
+    "$label failed: ${redactedDetail(throwable, apiKey)}"
