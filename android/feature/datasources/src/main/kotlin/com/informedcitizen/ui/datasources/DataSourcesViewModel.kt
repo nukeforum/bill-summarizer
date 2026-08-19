@@ -9,7 +9,9 @@ import com.informedcitizen.data.byok.ByokFetchTracker
 import com.informedcitizen.data.byok.ByokKeyStore
 import com.informedcitizen.data.byok.ByokKeyValidator
 import com.informedcitizen.data.byok.KeyValidationResult
+import com.informedcitizen.data.byok.redactedDetail
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -90,8 +92,11 @@ class DataSourcesViewModel @Inject constructor(
                 is KeyValidationResult.Invalid -> _state.update {
                     it.copy(keyState = KeyUiState.Rejected("Congress.gov rejected this key (HTTP ${result.httpStatus})."))
                 }
+                KeyValidationResult.Malformed -> _state.update {
+                    it.copy(keyState = KeyUiState.Rejected(MALFORMED_KEY_MESSAGE))
+                }
                 is KeyValidationResult.Unreachable -> _state.update {
-                    it.copy(keyState = KeyUiState.Unreachable("Couldn't verify the key: ${result.message}"))
+                    it.copy(keyState = KeyUiState.Unreachable(unreachableMessage(result.httpStatus)))
                 }
             }
         }
@@ -111,30 +116,33 @@ class DataSourcesViewModel @Inject constructor(
         viewModelScope.launch {
             _state.update { it.copy(fetching = true, fetchMessage = null) }
             val now = System.currentTimeMillis()
+            // Read once up front: every failure branch below needs it to
+            // scrub the key out of the message before it reaches the screen.
+            val apiKey = redactionSecret(keyStore)
             val outcomes = buildList {
                 orchestrator.fetchBills()
                     .onSuccess { tracker.recordSuccess(ByokArtifact.BILLS, now) }
                     .fold(
                         onSuccess = { add("Bills: $it") },
-                        onFailure = { add("Bills failed: ${it.message}") },
+                        onFailure = { add(fetchFailureText("Bills", it, apiKey)) },
                     )
                 orchestrator.fetchVotes()
                     .onSuccess { tracker.recordSuccess(ByokArtifact.VOTES, now) }
                     .fold(
                         onSuccess = { add("Votes: $it") },
-                        onFailure = { add("Votes failed: ${it.message}") },
+                        onFailure = { add(fetchFailureText("Votes", it, apiKey)) },
                     )
                 orchestrator.fetchMembersIndex()
                     .onSuccess { tracker.recordSuccess(ByokArtifact.MEMBERS, now) }
                     .fold(
                         onSuccess = { add("Members: $it") },
-                        onFailure = { add("Members failed: ${it.message}") },
+                        onFailure = { add(fetchFailureText("Members", it, apiKey)) },
                     )
                 orchestrator.fetchCalendar()
                     .onSuccess { tracker.recordSuccess(ByokArtifact.CALENDAR, now) }
                     .fold(
                         onSuccess = { add("Calendar: $it chambers") },
-                        onFailure = { add("Calendar failed: ${it.message}") },
+                        onFailure = { add(fetchFailureText("Calendar", it, apiKey)) },
                     )
             }
             refreshArtifactStatus()
@@ -162,3 +170,62 @@ class DataSourcesViewModel @Inject constructor(
         _state.update { it.copy(artifacts = statuses) }
     }
 }
+
+/**
+ * Shown when the key the user typed cannot be sent as an HTTP header at
+ * all. Deliberately says nothing about the value itself: the upstream
+ * exception quotes the whole rejected header verbatim, and this text is
+ * rendered directly beneath the field that masks it.
+ */
+internal const val MALFORMED_KEY_MESSAGE: String =
+    "That key can't be sent to Congress.gov — it contains a line break or " +
+        "other control character. Paste it again as a single line."
+
+/**
+ * Supporting text for a check that never got an answer. [httpStatus] is
+ * the status Congress.gov replied with, or null when the request didn't
+ * complete. Both branches are app-authored constants plus an integer, so
+ * neither can echo what the user typed.
+ */
+internal fun unreachableMessage(httpStatus: Int?): String = when (httpStatus) {
+    null -> "Couldn't verify the key — Congress.gov couldn't be reached. " +
+        "Check your connection and try again."
+    else -> "Couldn't verify the key — Congress.gov returned HTTP $httpStatus. " +
+        "Try again shortly."
+}
+
+/**
+ * The stored key to scrub failure messages with, or null if it can't be
+ * read.
+ *
+ * `ByokKeyStore.currentCongressApiKey` collects `DataStore.data`, which
+ * throws when the backing file is unreadable. That must not escape the
+ * `onFetchNow` coroutine: it is read before the fetches run, so an escaping
+ * exception would leave `fetching = true` forever and the Fetch-now button
+ * dead until the screen is recreated. Failing to read the secret only costs
+ * precision in the scrub — the query-parameter backstop in
+ * [redactSecret][com.informedcitizen.data.byok.redactSecret] still fires —
+ * so it degrades to null and lets the fetches report their own failures
+ * normally.
+ */
+internal suspend fun redactionSecret(keyStore: ByokKeyStore): String? =
+    try {
+        keyStore.currentCongressApiKey()
+    } catch (cancellation: CancellationException) {
+        throw cancellation
+    } catch (unreadable: Exception) {
+        null
+    }
+
+/**
+ * On-screen text for one failed BYOK fetch, with [apiKey] scrubbed out of
+ * the exception message.
+ *
+ * The result reaches `DataSourcesUiState.fetchMessage` and is rendered
+ * verbatim by `DataSourcesScreen`. Ktor's timeout exceptions quote the
+ * request URL, so an unscrubbed message could print the user's key in
+ * plaintext on the very screen whose input field masks it. The key is
+ * kept out of the URL upstream; this is the second line of defence.
+ */
+internal fun fetchFailureText(label: String, throwable: Throwable, apiKey: String?): String =
+    "$label failed: ${redactedDetail(throwable, apiKey)}"

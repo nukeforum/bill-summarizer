@@ -15,6 +15,8 @@ import io.ktor.client.engine.mock.respond
 import io.ktor.http.HttpHeaders
 import io.ktor.http.HttpStatusCode
 import io.ktor.http.headersOf
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.test.runTest
 import kotlinx.datetime.Instant
 import okio.Path.Companion.toPath
@@ -60,12 +62,23 @@ private fun mockApiClient(): HttpClient = HttpClient(MockEngine) {
     }
 }
 
+/** Guards [mockEnactedBills]'s `detailHits` recording against concurrent handler calls. */
+private val detailHitsLock = Mutex()
+
 /**
  * Serves a recent-bills list of [enactedNumbers] `hr` bills (all
  * passing the filter as ENACTED) plus their detail/summaries/text, in
  * the array order given (newest-first). Records every detail-path
  * request into [detailHits] so a test can prove which bills were
  * enriched.
+ *
+ * Enrichment fans out over coroutines ([buildBillRecordsParallel]) and
+ * MockEngine invokes handlers off the test thread on a multi-threaded
+ * dispatcher, so up to `maxWorkers` detail requests are handled at the
+ * same instant. A bare `detailHits += path` is a data race under that
+ * fan-out — two concurrent appends can land on the same slot and one is
+ * silently lost, failing the "which bills were enriched" assertions.
+ * [detailHitsLock] serialises the append so the recording is deterministic.
  */
 private fun mockEnactedBills(
     enactedNumbers: List<Int>,
@@ -83,7 +96,7 @@ private fun mockEnactedBills(
             val body = when {
                 path == "/v3/bill/119" -> """{"bills":$listBody}"""
                 detailRe.matches(path) -> {
-                    detailHits += path
+                    detailHitsLock.withLock { detailHits += path }
                     """{"bill":{"title":"Bill","introducedDate":"2026-01-15",
                        "sponsors":[{"fullName":"Rep. Smith","party":"Republican","state":"NE"}]}}"""
                 }

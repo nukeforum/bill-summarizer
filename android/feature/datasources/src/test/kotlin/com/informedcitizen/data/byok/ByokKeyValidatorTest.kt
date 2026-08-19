@@ -8,6 +8,7 @@ import io.ktor.http.HttpStatusCode
 import io.ktor.http.headersOf
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
@@ -43,6 +44,7 @@ class ByokKeyValidatorTest {
         val result = validatorRespondingWith(HttpStatusCode.InternalServerError)
             .validateCongressKey("k")
         assertTrue(result is KeyValidationResult.Unreachable)
+        assertEquals(KeyValidationResult.Unreachable(500), result)
     }
 
     @Test
@@ -54,5 +56,26 @@ class ByokKeyValidatorTest {
         })
         val result = validator.validateCongressKey("k")
         assertTrue(result is KeyValidationResult.Unreachable)
+        assertEquals(KeyValidationResult.Unreachable(), result)
+    }
+
+    @Test
+    fun `a key carrying a line break is malformed and never sent`() = runTest {
+        var requested = false
+        val validator = ByokKeyValidator(httpClientFactory = {
+            HttpClient(MockEngine) {
+                engine {
+                    addHandler {
+                        requested = true
+                        respond("{}", HttpStatusCode.OK, headersOf(HttpHeaders.ContentType, "application/json"))
+                    }
+                }
+            }
+        })
+
+        val result = validator.validateCongressKey("abc\ndef")
+
+        assertEquals(KeyValidationResult.Malformed, result)
+        assertFalse(requested)
     }
 }
