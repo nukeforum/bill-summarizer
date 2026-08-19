@@ -21,15 +21,10 @@ and needs no key at all.
 3. Watch for the activation email from `api.data.gov` — the key is in
    the email body, a long string like `aBcDeF...`. Some providers file
    it under spam.
-4. The key is active immediately. You can sanity-check it in a
-   browser:
-
-   ```
-   https://api.congress.gov/v3/bill?limit=1&api_key=YOUR_KEY
-   ```
-
-   A JSON document means the key works; an HTTP 403 means it was
-   mistyped or not yet activated.
+4. The key is active immediately. To check that it works, enter it in
+   the app — **Verify and save** (below) makes one test request and
+   tells you right away whether the key was accepted, mistyped, or not
+   yet activated.
 
 ### Entering it in the app
 
