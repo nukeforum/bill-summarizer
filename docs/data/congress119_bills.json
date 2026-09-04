@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T07:23:10Z",
+  "generated_at": "2026-09-04T02:21:53Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
@@ -17,20 +17,33 @@
       },
       "introduced_date": "2025-12-09",
       "latest_action": {
-        "date": "2026-08-08",
-        "text": "Passed Senate with an amendment and an amendment to the Title by Yea-Nay Vote. 90 - 6. Record Vote Number: 228."
+        "date": "2026-09-02",
+        "text": "Became Public Law No: 119-103."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Economics and Public Finance",
       "subjects": [
+        "Abortion",
+        "Access Board",
+        "Accounting and auditing",
+        "Administrative Conference of the U.S.",
+        "Administrative law and regulatory procedures",
+        "Administrative remedies",
+        "Adoption and foster care",
+        "Adult education and literacy",
+        "Advanced technology and technological innovations",
+        "Advisory bodies",
+        "Afghanistan",
         "Africa",
-        "Competitiveness, trade promotion, trade deficits",
-        "Customs enforcement",
-        "Normal trade relations, most-favored-nation treatment",
-        "User charges and fees"
+        "African Development Foundation",
+        "Aging",
+        "Agricultural conservation and pollution",
+        "Agricultural education",
+        "Agricultural equipment and machinery",
+        "Agricultural insurance",
+        "Agricultural marketing and promotion"
       ],
-      "summary_crs": "<p><strong>AGOA Extension Act</strong></p><p>This bill extends through December 31, 2028, trade preferences that provide duty-free access to the U.S. market for most exports from eligible countries in sub-Saharan Africa (SSA). The bill also extends through December 31, 2031, customs user fees and merchandise processing fees.</p><p>Specifically, the bill extends through 2028 the duty-free treatment of the products of beneficiary&nbsp;SSA&nbsp;countries under the Trade Act of 1974 (specifically, the Generalized System of Preferences) and the African Growth and Opportunity Act (AGOA). (Currently, there are 32&nbsp;countries eligible for AGOA.)</p><p>Additionally, the extended period applies to the following provisions of AGOA: (1) the duty-free treatment of certain apparel articles from beneficiary SSA countries; and (2) the third-country fabric provision, which allows limited amounts of apparel articles from lesser developed beneficiary&nbsp;SSA countries to qualify for duty-free treatment, even if the yarns and fabrics used in their production are imported from non-AGOA countries (e.g., apparel assembled in Kenya with Chinese fabrics).</p><p>The bill also provides for the refund of duties (i.e., liquidation or reliquidation of entries) on articles from eligible&nbsp;SSA countries that entered into the United States after September 30, 2025, and before the date of this bill's enactment. A refund request must be filed with U.S. Customs and Border Protection (CBP) and must contain sufficient information for CBP to locate the entry or, if the entry cannot be located, reconstruct the entry. CBP must refund any duties previously paid with respect to the entry within 90 days.</p>",
+      "summary_crs": "<p><strong>Continuing Appropriations and Extensions Act, 2027</strong></p><p>This bill provides continuing FY2027 appropriations for federal agencies and extends various expiring programs and authorities.</p><p>Specifically, the bill provides continuing FY2027 appropriations to federal agencies through the earlier of December 11, 2026, or the enactment of the applicable appropriations act. It is known as a continuing resolution (CR) and prevents a government shutdown that would otherwise occur if the FY2027 appropriations bills have not been enacted when FY2027 begins on October 1, 2026.</p><p>The&nbsp;CR funds most programs and activities at the FY2026 levels with several exceptions that provide funding flexibility or additional appropriations for various programs. For example, the CR includes exceptions for&nbsp;</p><ul><li>the Special Supplemental Nutrition Program for Women, Infants, and Children (WIC);</li><li>Small Business Administration loans;</li><li>the Disaster Relief Fund;&nbsp;</li><li>the Indian Health Service;&nbsp;</li><li>the Department of Justice; and</li><li>wildfire suppression activities.</li></ul><p>In addition, the bill extends several expiring authorizations, including authorities and programs related to&nbsp;</p><ul><li>agriculture,&nbsp;</li><li>flood insurance,</li><li>cybersecurity,</li><li>surface transportation,&nbsp;</li><li>veterans benefits,&nbsp;</li><li>housing,</li><li>defense production, and</li><li>trade preferences for Haiti and certain countries in sub-Saharan Africa.&nbsp;</li></ul><p>The bill also includes provisions that&nbsp;</p><ul><li>temporarily prohibit the implementation of a regulation that revises guidance for federal financial assistance,</li><li>delay the implementation of certain changes to the statutory definition of hemp,</li><li>extend the freeze on cost-of-living adjustments for Members of Congress and limits on pay increases for the Vice President and certain senior political appointees, and</li><li>provide death gratuities to beneficiaries of two Members of Congress who died while in office.&nbsp;</li></ul>",
       "text_url_html": "https://www.congress.gov/119/bills/hr6500/BILLS-119hr6500eas.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/hr6500/BILLS-119hr6500eas.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/hr6500/BILLS-119hr6500eas.pdf",
@@ -136,6 +149,42 @@
           "path": "votes/congress119/house-2-14.json"
         }
       ]
+    },
+    {
+      "id": "hr4795-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "4795",
+      "title": "Protect Economic and Academic Freedom Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Foxx, Virginia",
+        "party": "R",
+        "state": "NC"
+      },
+      "introduced_date": "2025-07-29",
+      "latest_action": {
+        "date": "2026-09-01",
+        "text": "Rule H. Res. 1499 passed House."
+      },
+      "outcome": "passed_house",
+      "policy_area": "Education",
+      "subjects": [
+        "Education programs funding",
+        "Government information and archives",
+        "Higher education",
+        "International exchange and broadcasting",
+        "Israel",
+        "Middle East",
+        "Protest and dissent",
+        "School administration"
+      ],
+      "summary_crs": "<p><strong>Protect Economic and Academic Freedom Act of 2026</strong></p><p>This bill prohibits institutions of higher education (IHEs) that participate in federal student aid programs from engaging in boycotts against Israel. Specifically,&nbsp;IHEs may not engage in a commercial action intended to limit commercial relations with Israel, or with an entity licensed by, regulated by, or organized under the laws of Israel, that is not based on a valid business reason.&nbsp;</p><p>Further,&nbsp;IHEs receiving, or applying to receive, Title VI funds (federal funding for foreign language and international education programs) must annually certify that (1) students and faculty are allowed to participate in academic programs located in Israel in the same manner and under the same terms and conditions as programs in other foreign countries, and (2) students and faculty at postsecondary institutions located in Israel may participate in such IHE’s academic programs in the same manner and under the same terms and conditions as students and faculty from other foreign countries.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr4795/BILLS-119hr4795rh.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr4795/BILLS-119hr4795rh.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr4795/BILLS-119hr4795rh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/4795",
+      "votes": []
     },
     {
       "id": "hr1276-119",
@@ -567,9 +616,12 @@
         "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text of amendment in the nature of a substitute: CR S4552-4553)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
-      "subjects": [],
+      "subjects": [
+        "Congressional tributes",
+        "Illinois",
+        "Professional sports"
+      ],
       "summary_crs": null,
       "text_url_html": "https://www.congress.gov/119/bills/sres815/BILLS-119sres815ats.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/sres815/BILLS-119sres815ats.xml",
