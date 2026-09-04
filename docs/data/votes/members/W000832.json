@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-09-04T11:34:59Z",
+  "bioguide_id": "W000832",
+  "vote_count": 3,
+  "votes": [
+    {
+      "vote_id": "house-119-2-295",
+      "congress": 119,
+      "date": "2026-09-03",
+      "question": "On Passage",
+      "result": "Passed",
+      "position": "nay",
+      "bill_id": "hr4795-119",
+      "type": "hr",
+      "number": "4795",
+      "short_title": null
+    },
+    {
+      "vote_id": "house-119-2-294",
+      "congress": 119,
+      "date": "2026-09-02",
+      "question": "On Passage",
+      "result": "Passed",
+      "position": "nay",
+      "bill_id": "hr1501-119",
+      "type": "hr",
+      "number": "1501",
+      "short_title": null
+    },
+    {
+      "vote_id": "house-119-2-293",
+      "congress": 119,
+      "date": "2026-09-02",
+      "question": "On Motion to Suspend the Rules and Pass",
+      "result": "Failed",
+      "position": "nay",
+      "bill_id": "hjres1-119",
+      "type": "hjres",
+      "number": "1",
+      "short_title": null
+    }
+  ]
+}
