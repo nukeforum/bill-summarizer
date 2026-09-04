@@ -60,34 +60,49 @@ data class Bill(
 )
 
 /**
- * Manifest write serializer that omits the `policy_area` key when its value is
- * null, so the published bills manifest byte-matches the Python pipeline's
- * canonical output.
+ * Manifest write serializer that omits the `policy_area` and `status` keys when
+ * their value is null, so the published bills manifest byte-matches the Python
+ * pipeline's canonical output.
  *
  * The write [ManifestJson][com.informedcitizen.pipeline.fetch.ManifestJson]
  * keeps null fields explicit (`explicitNulls = true`) because Python emits
- * `"short_title": null`, `"summary_crs": null`, etc. `policy_area` is the one
- * exception: Python omits the key entirely when the value is absent (its record
- * builder drops it, and carried-forward bills round-trip the raw dict, which
- * never carried the key). Without this transform, Kotlin decodes such a
- * carried-forward bill into [Bill.policyArea] = null and re-serializes it as
- * `"policy_area": null`, the sole reproducible divergence in the bills/backfill
- * parity check (issue #74).
+ * `"short_title": null`, `"summary_crs": null`, etc. [OMIT_WHEN_NULL] lists the
+ * exceptions: Python omits those keys entirely when the value is absent (its
+ * record builder deletes them, and carried-forward bills round-trip the raw
+ * dict, which never carried the key). Without this transform, Kotlin decodes
+ * such a carried-forward bill into [Bill.policyArea] / [Bill.lifecycleStatus] =
+ * null and re-serializes it as `"policy_area": null` / `"status": null` — the
+ * two reproducible divergences in the bills/backfill parity check (issues #74
+ * and #116).
+ *
+ * This is the **shared** bills write path: [BillsManifest.bills] is typed
+ * through this serializer, so every writer that rewrites the manifest — the
+ * bills fetcher, the backfiller, the votes writer (which re-serializes every
+ * bill to attach vote refs) and the shard builder — produces identical bytes.
+ * Fixing the divergence anywhere narrower would leave the votes path stamping
+ * `"status": null` back onto the manifest, which is exactly how #116 arose.
  *
  * kotlinx-serialization has no per-property "omit when null" knob that leaves
- * other nulls explicit, so this narrowly drops just that one key on write and
+ * other nulls explicit, so this narrowly drops just those keys on write and
  * leaves every other field — including all other explicit nulls — untouched.
- * Deserialization is unchanged (identity transform): a manifest with or without
- * the key decodes to the same [Bill], so round-trips are preserved.
+ * Key order is preserved for the non-null case ([JsonObject] is insertion
+ * ordered and `minus` keeps the remaining order), so no other field's
+ * serialization moves. Deserialization is unchanged (identity transform): a
+ * manifest with or without the keys decodes to the same [Bill], so round-trips
+ * — including manifests published before either field existed — are preserved.
  */
 internal object BillManifestWriteSerializer :
     JsonTransformingSerializer<Bill>(Bill.serializer()) {
+    /**
+     * Wire keys Python omits rather than emitting as null. Kept as a list so
+     * the set is stated once and every writer agrees; add a key here only when
+     * Python's `build_bill_record` deletes it too.
+     */
+    private val OMIT_WHEN_NULL = listOf("status", "policy_area")
+
     override fun transformSerialize(element: JsonElement): JsonElement {
         val obj = element.jsonObject
-        return if (obj["policy_area"] is JsonNull) {
-            JsonObject(obj - "policy_area")
-        } else {
-            element
-        }
+        val nullKeys = OMIT_WHEN_NULL.filter { obj[it] is JsonNull }
+        return if (nullKeys.isEmpty()) element else JsonObject(obj - nullKeys.toSet())
     }
 }

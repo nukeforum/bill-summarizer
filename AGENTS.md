@@ -68,3 +68,59 @@ Two consequences when writing render tests for tall/scrollable screens:
 Also: `ExtendedFloatingActionButton` merges its descendants' semantics (it is
 a `Button` under the hood), so finding its label text requires
 `onNodeWithText(..., useUnmergedTree = true)`.
+
+## Data pipeline (Python canonical ↔ Kotlin shadow)
+
+### One shared choke point decides the published bills-manifest bytes
+
+Every writer that rewrites `docs/data/congressNNN_bills.json` — the bills
+fetcher, the backfiller, the **votes** writer (it re-serializes every bill to
+attach vote refs) and the shard builder — goes through
+`FileBillsManifestStore.save` → `ManifestJson.encodeToString(BillsManifest…)`.
+`BillsManifest.bills` is typed as
+`List<@Serializable(with = BillManifestWriteSerializer::class) Bill>`, so that
+one transform is the only place the published per-bill JSON shape is decided.
+Fix a shape divergence there and every writer agrees; fix it anywhere narrower
+and the votes path silently stamps the old shape back on (that is exactly how
+issue #116 arose after #73 made `update-votes.yml` Kotlin-canonical).
+
+**The write config keeps nulls explicit** (`explicitNulls = true`) because
+Python genuinely emits `"short_title": null` and friends. The exceptions live in
+`BillManifestWriteSerializer.OMIT_WHEN_NULL` and must be kept in lockstep with
+the `del record[...]` loop at the end of Python's `_common.build_bill_record`.
+Adding a nullable field to `Bill` without adding it to both lists reintroduces
+the #74 / #116 class of divergence for every carried-forward bill.
+
+### A green parity job proves nothing about parity
+
+The `Compare canonical vs Kotlin shadow output` step in `update-bills.yml` /
+`backfill-bills.yml` runs under `set +e`, and the Kotlin shadow step is
+`continue-on-error: true`. The verdict exists only as text in the job summary.
+Read the diff, never the job's colour — issue #116 hid behind ~27 consecutive
+green runs.
+
+To check parity **offline**, replay the carry-forward tail of a run (empty fresh
+batch) on both sides over the published manifests and diff them:
+
+- Python: `merge_records(strip_vote_refs(existing["bills"]), [])` →
+  `attach_vote_refs` → `save_manifest`, with `_common.OUTPUT_DIR` and
+  `_common.now_iso` monkeypatched to a temp dir and a fixed timestamp.
+- Kotlin: `FileBillsManifestStore.load` → `mergeBillRecords(stripVoteRefs(…), [])`
+  → `attachVoteRefs` → `save` with the same fixed `nowIso`, driven from a
+  throwaway `src/jvmTest` class (`jvm()` picks the source set up automatically).
+- Compare with CI's own normalisation: `jq -S '.bills'` then `diff -u`.
+
+Both sides must run the **same** merge; skipping `mergeBillRecords` on the
+Kotlin side reorders same-date bills and produces a large phantom diff.
+
+### Known latent divergence: `subjects: []` on congresses 115–118
+
+`Bill.subjects` defaults to `emptyList()` and `encodeDefaults = true`, so Kotlin
+writes `"subjects": []` for a carried-forward bill that predates issue #28,
+while Python's carry-forward dict simply has no key. It affects congresses
+115–118 only; 113, 114 and 119 carry the key on every bill. It is invisible to
+CI today because backfill's `active_congress` is 113 and `update-bills` only
+rewrites 119 — but it will surface the moment one of those Congresses is
+rewritten. The fix is to normalise those four files, **not** to drop empty
+`subjects` on write: a freshly built record legitimately carries `[]` on both
+sides.
