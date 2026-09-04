@@ -52,11 +52,21 @@ suspend fun buildBillRecord(
     // so a bill with a decisive outcome carries no status at all. Classified
     // from the same latest-action text `evaluateBill` used to derive `outcome`,
     // so this stays byte-identical to Python `_common.build_bill_record`.
+    //
+    // A null status means no lifecycle rule matched and legitimately stays null.
+    // A NON-null wire string that fails to map means `LIFECYCLE_RULES` and
+    // `lifecycleStatusFromWireString` / [LifecycleStatus] have drifted apart:
+    // Python would write the string while Kotlin silently omitted the key, a
+    // parity divergence rather than a crash (issue #116), so fail loudly here
+    // exactly as the `outcome` mapping below does.
     val billStatus = classifyBillStatus(actionText)
     val lifecycleStatus = if (billStatus.isOutcome) {
         null
     } else {
-        billStatus.status?.let(::lifecycleStatusFromWireString)
+        billStatus.status?.let { wire ->
+            lifecycleStatusFromWireString(wire)
+                ?: error("buildBillRecord: unknown lifecycle status wire string: '$wire'")
+        }
     }
 
     return Bill(
