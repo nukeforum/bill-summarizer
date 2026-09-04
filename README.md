@@ -94,10 +94,11 @@ via Gradle composite build (`includeBuild("../pipeline")` in
 Every Python script except the operator dashboard now has a Kotlin
 counterpart with a CLI subcommand (`fetch-bills`, `backfill-bills`,
 `fetch-members`, `build-session-calendar`, `build-zip-crosswalk`,
-`check-freshness`), each running as a parity shadow in its GitHub
-Actions workflow. The Python pipeline in `data-pipeline/` stays
-canonical until each shadow has run green for about a week and
-ownership flips per workflow.
+`check-freshness`). Ownership flips per workflow once that workflow's
+Kotlin run has been green for about a week: `update-votes` and
+`update-session-calendar` are already Kotlin-canonical (issue #73).
+Everywhere else the Python pipeline in `data-pipeline/` stays canonical
+and Kotlin runs alongside it as a parity shadow.
 
 Users can also run the pipeline in-app with their own API keys
 (Settings → Data sources) — see `pipeline/docs/api-keys.md`.

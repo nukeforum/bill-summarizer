@@ -74,22 +74,18 @@ a `Button` under the hood), so finding its label text requires
 ### One shared choke point decides the published bills-manifest bytes
 
 Every writer that rewrites `docs/data/congressNNN_bills.json` — the bills
-fetcher, the backfiller, the **votes** writer (it re-serializes every bill to
-attach vote refs) and the shard builder — goes through
-`FileBillsManifestStore.save` → `ManifestJson.encodeToString(BillsManifest…)`.
-`BillsManifest.bills` is typed as
-`List<@Serializable(with = BillManifestWriteSerializer::class) Bill>`, so that
-one transform is the only place the published per-bill JSON shape is decided.
-Fix a shape divergence there and every writer agrees; fix it anywhere narrower
-and the votes path silently stamps the old shape back on (that is exactly how
-issue #116 arose after #73 made `update-votes.yml` Kotlin-canonical).
+fetcher, the backfiller, the **votes** writer and the shard builder — funnels
+through `BillManifestWriteSerializer` (in `pipeline/shared/`'s
+`com/informedcitizen/pipeline/model/Bill.kt`), because `BillsManifest.bills`
+is typed through it. Its `OMIT_WHEN_NULL` list must stay in lockstep with the
+`del record[...]` loop at the end of Python's `_common.build_bill_record`;
+adding a nullable field to `Bill` without adding it to both reintroduces the
+#74 / #116 class of divergence for every carried-forward bill.
 
-**The write config keeps nulls explicit** (`explicitNulls = true`) because
-Python genuinely emits `"short_title": null` and friends. The exceptions live in
-`BillManifestWriteSerializer.OMIT_WHEN_NULL` and must be kept in lockstep with
-the `del record[...]` loop at the end of Python's `_common.build_bill_record`.
-Adding a nullable field to `Bill` without adding it to both lists reintroduces
-the #74 / #116 class of divergence for every carried-forward bill.
+That serializer's KDoc owns the full rationale — why the write config keeps
+other nulls explicit, and why fixing the divergence anywhere narrower lets the
+votes path silently stamp the old shape back on (exactly how issue #116 arose
+after #73 made `update-votes.yml` Kotlin-canonical).
 
 ### A green parity job proves nothing about parity
 
