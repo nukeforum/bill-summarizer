@@ -9,6 +9,18 @@ recorded only in git history and the Play Store release track.
 
 ## [Unreleased]
 
+### Security
+
+- **Your Congress.gov API key no longer appears in error messages.** When a
+  direct fetch or a key check failed, the error text shown on Settings →
+  Data sources — and, if you had crash reporting on, the report uploaded in
+  the background — could quote the request address with your key inside it.
+  The key now travels in a request header instead of the address; the
+  key-check messages are app-written text, and any credential is scrubbed
+  out of the fetch result line before it is shown or reported. A key pasted
+  with a stray line break is now called out as such instead of failing with
+  an opaque message.
+
 ## [1.2.0] - 2026-07-22
 
 ### Added
