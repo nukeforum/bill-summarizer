@@ -36,6 +36,7 @@ from _common import (
     current_congress,
     fetch_contact_info_index,
     fetch_socials_index,
+    find_vacant_house_districts,
     load_members_index,
     member_legislation_path,
     now_iso,
@@ -241,6 +242,18 @@ def main(argv: list[str] | None = None) -> int:
         })
         print(f"Phase 1 done: index has {len(members_out)} members")
         phase1_errors.print_summary(label="Phase 1")
+
+        # Distinguish a real fetch/parse defect from an expected vacancy: a
+        # district Congress.gov's currentMember=true filter correctly omits
+        # because the seat has no sworn-in member right now (resignation,
+        # death, expulsion) pending a special election. See #106.
+        vacant = find_vacant_house_districts(members_out)
+        if vacant:
+            formatted = ", ".join(f"{state}-{district}" for state, district in vacant)
+            print(
+                f"Vacant House seats per 2020-census apportionment (no "
+                f"current member on Congress.gov): {formatted}"
+            )
 
     if not run_phase2:
         print("Skipping Phase 2 (--phase1-only).")

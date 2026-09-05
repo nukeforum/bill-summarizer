@@ -48,6 +48,7 @@ data class FetchMembersProgress(
     val onPhase1Start: (congress: Int) -> Unit = {},
     val onPhase1Member: (member: Member) -> Unit = {},
     val onPhase1Done: (count: Int) -> Unit = {},
+    val onVacantHouseDistricts: (vacant: List<Pair<String, Int>>) -> Unit = {},
     val onPhase2Start: () -> Unit = {},
     val onPhase2MemberDone: (bioguideId: String) -> Unit = {},
     val onPhase2TimeBudgetExceeded: (processed: Int, skipped: Int) -> Unit = { _, _ -> },
@@ -201,6 +202,15 @@ suspend fun fetchMembers(
         indexStore.save(congress, collected, nowIso)
         membersOut = collected
         progress.onPhase1Done(collected.size)
+
+        // Distinguish a real fetch/parse defect from an expected vacancy: a
+        // district Congress.gov's currentMember=true filter correctly omits
+        // because the seat has no sworn-in member right now (resignation,
+        // death, expulsion) pending a special election. See #106.
+        val vacant = findVacantHouseDistricts(collected)
+        if (vacant.isNotEmpty()) {
+            progress.onVacantHouseDistricts(vacant)
+        }
     } else {
         // --phase2-only: must have an existing index to walk.
         if (membersOut.isEmpty()) {

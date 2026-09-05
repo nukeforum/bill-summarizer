@@ -93,7 +93,17 @@ class LocationPickerViewModel @Inject constructor(
                 .toSortedSet()
                 .toList()
         }
-        if (!fromIndex.isNullOrEmpty()) return fromIndex
+        if (!fromIndex.isNullOrEmpty()) {
+            // Congress.gov's currentMember filter (mirrored by the fetch
+            // pipeline) correctly omits a seat with no sworn-in member right
+            // now — a resignation, death, or expulsion pending a special
+            // election (#106) — so the live index can have a gap below its
+            // own highest district. Fill it in rather than silently
+            // dropping the vacant district from the grid: seeing a higher
+            // district for this state proves the lower, missing one still
+            // exists too, it's just currently unrepresented.
+            return (1..fromIndex.max()).toList()
+        }
         val count = HOUSE_DISTRICT_COUNTS[stateCode] ?: return emptyList()
         return (1..count).toList()
     }
