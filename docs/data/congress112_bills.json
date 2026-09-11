@@ -1,8 +1,73 @@
 {
-  "generated_at": "2026-09-10T16:11:18Z",
+  "generated_at": "2026-09-11T16:15:08Z",
   "congress": 112,
   "votes_coverage": false,
   "bills": [
+    {
+      "id": "hr6014-112",
+      "congress": 112,
+      "type": "hr",
+      "number": "6014",
+      "title": "Katie Sepich Enhanced DNA Collection Act of 2012",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Schiff, Adam B.",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2012-06-21",
+      "latest_action": {
+        "date": "2013-01-10",
+        "text": "Became Public Law No: 112-253."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Criminal investigation, prosecution, interrogation",
+        "Criminal justice information and records",
+        "Evidence and witnesses",
+        "Law enforcement administration and funding"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the House on December 18, 2012. The summary of that version is repeated here.)</b></p> <p>Katie Sepich Enhanced DNA Collection Act of 2012 - Directs the Attorney General to make grants to assist states with the costs associated with the implementation of DNA arrestee collection processes.</p> <p>Defines \"DNA arrestee collection process\" to mean a process under which a state provides for the collection, for inclusion in the National DNA Index System, of DNA profiles or DNA data from individuals who are at least 18 years of age who are arrested for or charged under state law with homicide or a criminal offense that is punishable by imprisonment for more than one year involving a sexual act or sexual contact with another, kidnaping or abduction, burglary, or aggravated assault.</p> <p>Sets forth requirements regarding grant applications and the allocation of grant funds. </p> <p>Conditions receipt of a grant on a state having a procedure in place to provide written notification of expungement provisions and instructions to all persons who submit a DNA profile or DNA data and on an appropriate public website. Makes expungement requirements under the DNA Identification Act of 1994 applicable to any DNA profile or DNA data collected pursuant to this Act for inclusion in the System.</p> <p>Amends the DNA Analysis Backlog Elimination Act of 2009 to authorize the Attorney General to make grants to implement a DNA arrestee collection process consistent with this Act.</p>",
+      "text_url_html": "https://www.congress.gov/112/plaws/publ253/PLAW-112publ253.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/112/plaws/publ253/PLAW-112publ253.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/house-bill/6014",
+      "votes": []
+    },
+    {
+      "id": "hr6671-112",
+      "congress": 112,
+      "type": "hr",
+      "number": "6671",
+      "title": "Video Privacy Protection Act Amendments Act of 2012",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Goodlatte, Bob",
+        "party": "R",
+        "state": "VA"
+      },
+      "introduced_date": "2012-12-17",
+      "latest_action": {
+        "date": "2013-01-10",
+        "text": "Became Public Law No: 112-258."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Business records",
+        "Consumer affairs",
+        "Internet and video services",
+        "Internet, web applications, social media",
+        "Right of privacy"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Video Privacy Protection Act Amendments Act of 2012 - Amends provisions of the federal criminal code authorizing a video tape service provider to disclose personally identifiable information concerning any consumer to any person with the informed, written consent of the consumer to: (1) allow such consent to be provided through an electronic means using the Internet; (2) require such consent to be in a form distinct and separate from any form setting forth other legal or financial obligations of the consumer; (3) allow such consent to be given in advance for a set period of time, not to exceed two years or until consent is withdrawn by the consumer, whichever is sooner; and (4) require the video tape service provider to provide an opportunity for the consumer to withdraw such consent on a case-by-case basis or to withdraw from ongoing disclosures, at the consumer's election.</p>",
+      "text_url_html": "https://www.congress.gov/112/plaws/publ258/PLAW-112publ258.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/112/plaws/publ258/PLAW-112publ258.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/house-bill/6671",
+      "votes": []
+    },
     {
       "id": "sres630-112",
       "congress": 112,
@@ -103,6 +168,37 @@
       "text_url_xml": "https://www.congress.gov/112/bills/sres629/BILLS-112sres629ats.xml",
       "text_url_pdf": "https://www.congress.gov/112/bills/sres629/BILLS-112sres629ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/629",
+      "votes": []
+    },
+    {
+      "id": "hjres122-112",
+      "congress": 112,
+      "type": "hjres",
+      "number": "122",
+      "title": "Establishing the date for the counting of the electoral votes for President and Vice President cast by the electors in December 2012.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Denham, Jeff",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2012-12-18",
+      "latest_action": {
+        "date": "2012-12-28",
+        "text": "Became Public Law No: 112-228."
+      },
+      "outcome": "enacted",
+      "policy_area": "Congress",
+      "subjects": [
+        "Congressional operations and organization",
+        "Elections, voting, political campaign regulation",
+        "Presidents and presidential powers, Vice Presidents"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Requires the meeting of the Senate and House of Representatives to be held in January 2013 to count the electoral votes for President and Vice President cast by the electors in December 2012 to be held on January 4, 2013.</p>",
+      "text_url_html": "https://www.congress.gov/112/plaws/publ228/PLAW-112publ228.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/112/plaws/publ228/PLAW-112publ228.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/house-joint-resolution/122",
       "votes": []
     },
     {
@@ -543,6 +639,38 @@
       "votes": []
     },
     {
+      "id": "sres543-112",
+      "congress": 112,
+      "type": "sres",
+      "number": "543",
+      "title": "A resolution to express the sense of the Senate on international parental child abduction.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Boxer, Barbara",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2012-08-02",
+      "latest_action": {
+        "date": "2012-12-04",
+        "text": "Resolution agreed to in Senate with an amendment and an amended preamble by Voice Vote. (consideration: CR S7403-7404; text as passed Senate: CR S7403-7404)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Child safety and welfare",
+        "Diplomacy, foreign officials, Americans abroad",
+        "International law and treaties",
+        "Separation, divorce, custody, support"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was reported to the Senate on September 19, 2012. The summary of that version is repeated here.)</b></p> <p>Condemns the international abduction of all children.</p> Urges countries identified by the Department of State as noncompliant or demonstrating patterns of noncompliance with the Convention on the Civil Aspects of International Child Abduction to fulfill their commitment to implement the Convention. <p> Calls on all countries: (1) to become a party to the Convention and institute measures to address cases of international parental child abduction, and (2) that have not become a party to the Convention to develop a mechanism for the resolution of cases of international parental child abduction that occur prior to becoming a party to the Convention.</p> <p>Expresses the sense of the Senate that the United States should: (1) pursue the return of each child abducted by a parent from the United States to another country through all appropriate means, facilitate access by the left-behind parent if the child is not returned, and, where appropriate, seek the extradition of the abductor parent; (2) take all appropriate measures to ensure that a child abducted to a Convention country is returned to the child's country of habitual residence; (3) use diplomacy to encourage other countries to become a party to the Convention and to encourage countries that have not become a party to the Convention to develop a mechanism to resolve cases of international child abduction that occur prior to becoming a party to the Convention; and (4) review the advisory services made available to U.S. citizens by the Department of State, the Department of Justice (DOJ), and other U.S. government agencies to improve the prevention of such child abduction from the United States, and to ensure that effective assistance is provided to U.S. citizen parents of such abducted children.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sres543/BILLS-112sres543ats.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sres543/BILLS-112sres543ats.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sres543/BILLS-112sres543ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/543",
+      "votes": []
+    },
+    {
       "id": "sres605-112",
       "congress": 112,
       "type": "sres",
@@ -815,6 +943,44 @@
       "votes": []
     },
     {
+      "id": "s3625-112",
+      "congress": 112,
+      "type": "s",
+      "number": "3625",
+      "title": "A bill to change the effective date for the internet publication of certain information to prevent harm to the national security or endangering the military officers and civilian employees to whom the publication requirement applies, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lieberman, Joseph I.",
+        "party": "I",
+        "state": "CT"
+      },
+      "introduced_date": "2012-09-22",
+      "latest_action": {
+        "date": "2012-09-28",
+        "text": "Became Public Law No: 112-178."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Congressional officers and employees",
+        "Congressional oversight",
+        "Federal officials",
+        "Financial services and investments",
+        "Government ethics and transparency, public corruption",
+        "Government information and archives",
+        "Government studies and investigations",
+        "Internet and video services",
+        "Internet, web applications, social media",
+        "Members of Congress"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Postpones until December 8, 2012, the requirement under the Stop Trading on Congressional Knowledge Act of 2012 (STOCK Act) that the Secretary of the Senate, the Sergeant at Arms of the Senate, and the Clerk of the House of Representatives ensure that financial disclosure forms filed by congressional officers and employees be made available to the public on the respective official Senate and House websites within 30 days after filing.</p> <p>Postpones until the same date the requirement that the President ensure that financial disclosure forms filed by executive branch employees are publicly available on appropriate official websites of executive branch agencies within such period.</p> <p>Excludes from these effective date postponements, however, the President, Vice President, Members of Congress, candidates for Congress, and any officer occupying a position listed under Level I and Level II of the Executive Schedule having been nominated by the President and confirmed by the Senate. (Thus maintains September 30, 2012, as the effective date of the requirement that such individuals make their financial disclosure forms available to the public.)</p> <p>Requires the Director of the Office of Personnel Management (OPM) to contract with the National Academy of Public Administration to study issues raised by the website publication of financial disclosure forms. Requires the Academy to report and make recommendations to Congress and the President for ways to avoid or mitigate the risks identified in its study.</p> <p>Postpones until January 1, 2013, the requirement that Members of Congress and congressional officers and employees file financial periodic transaction reports (PTRs) with the Clerk of the House that include information on the sources of income of their spouses or children, but only with respect to any transaction exceeding $1,000 in stocks, bonds, commodities futures, and other forms of securities.</p> <p>Postpones until the same date also the PTRs requirements for certain individuals in the executive branch. Lists these individuals as: (1) the President; (2) the Vice President; (3) executive officers or employees, including certain special government employees and members of a uniformed service; (4) appointed administrative law judges; (5) executive branch employees in positions excepted from the competitive service because of their confidential or policymaking character (except those excluded from such exception by the Director of the Office of Government Ethics [OGE]); (6) the Postmaster General, the Deputy Postmaster General, each Governor of the Board of Governors of the U.S. Postal Service, and certain U.S. Postal Service officers or employees; (7) the OGE Director and each designated agency ethics official; and (8) civilian employees of the Executive Office of the President (other than a special government employee) appointed by the President.</p>",
+      "text_url_html": "https://www.congress.gov/112/plaws/publ178/PLAW-112publ178.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/112/plaws/publ178/PLAW-112publ178.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-bill/3625",
+      "votes": []
+    },
+    {
       "id": "sres576-112",
       "congress": 112,
       "type": "sres",
@@ -1076,6 +1242,42 @@
       "votes": []
     },
     {
+      "id": "sres557-112",
+      "congress": 112,
+      "type": "sres",
+      "number": "557",
+      "title": "A resolution honoring the contributions of Lodi Gyaltsen Gyari as Special Envoy of His Holiness the Dalai Lama and in promoting the legitimate rights and aspirations of the Tibetan people.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kerry, John F.",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2012-09-13",
+      "latest_action": {
+        "date": "2012-09-19",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S6472-6473)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Asia",
+        "China",
+        "Congressional tributes",
+        "Diplomacy, foreign officials, Americans abroad",
+        "Human rights",
+        "Religion",
+        "Sovereignty, recognition, national governance and status",
+        "Tibet"
+      ],
+      "summary_crs": " <p>Honors the service of Lodi Gyaltsen Gyari as Special Envoy of His Holiness the Dalai Lama.</p> <p> Commends the achievements of Lodi Gyaltsen Gyari in building an international coalition of support for Tibet that recognizes: (1) the imperative to preserve Tibet's culture and religious traditions, and (2) that the Tibetan people are entitled under international law to their own identity and autonomy within China. </p> <p>Acknowledges Lodi Gyaltsen Gyari's role, as a naturalized U.S. citizen, in promoting understanding in the United States of the Tibetan people, their culture and religion, and their struggle for autonomy and human rights. </p> <p>Supports a political solution for Tibet within China that satisfies the aspirations of the Tibetan people.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sres557/BILLS-112sres557ats.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sres557/BILLS-112sres557ats.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sres557/BILLS-112sres557ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/557",
+      "votes": []
+    },
+    {
       "id": "sres562-112",
       "congress": 112,
       "type": "sres",
@@ -1208,6 +1410,39 @@
       "votes": []
     },
     {
+      "id": "sres401-112",
+      "congress": 112,
+      "type": "sres",
+      "number": "401",
+      "title": "A resolution expressing appreciation for Foreign Service and Civil Service professionals who represent the United States around the globe.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Whitehouse, Sheldon",
+        "party": "D",
+        "state": "RI"
+      },
+      "introduced_date": "2012-03-21",
+      "latest_action": {
+        "date": "2012-09-13",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S6388-6389; text as passed Senate: CR S6388-6389)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Congressional tributes",
+        "Department of State",
+        "Diplomacy, foreign officials, Americans abroad",
+        "Government employee pay, benefits, personnel management",
+        "U.S. Agency for International Development (USAID)"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Recognizes and expresses appreciation to the Foreign Service and Civil Service personnel of the Department of State, the United States Agency for International Development (USAID), and other federal agencies that promote and protect national priorities abroad. </p> <UL> </UL> <p> <UL> </UL>",
+      "text_url_html": "https://www.congress.gov/112/bills/sres401/BILLS-112sres401ats.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sres401/BILLS-112sres401ats.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sres401/BILLS-112sres401ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/401",
+      "votes": []
+    },
+    {
       "id": "sres552-112",
       "congress": 112,
       "type": "sres",
@@ -1270,6 +1505,88 @@
       "text_url_xml": "https://www.congress.gov/112/bills/sres549/BILLS-112sres549ats.xml",
       "text_url_pdf": "https://www.congress.gov/112/bills/sres549/BILLS-112sres549ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/549",
+      "votes": []
+    },
+    {
+      "id": "sres402-112",
+      "congress": 112,
+      "type": "sres",
+      "number": "402",
+      "title": "Amend the title so as to read: `Condemning Joseph Kony and the Lord's Resistance Army for committing crimes against humanity and mass atrocities, and supporting ongoing efforts by the United States Government and governments and regional organizations in central Africa to remove Joseph Kony and Lord's Resistance Army commanders from the battlefield.'.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Coons, Christopher A.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2012-03-21",
+      "latest_action": {
+        "date": "2012-08-02",
+        "text": "Resolution agreed to in Senate with an amendment and an amendment to the Title and an amended preamble by Unanimous Consent. (text: CR S6009-6010)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Africa",
+        "Central African Republic",
+        "Conflicts and wars",
+        "Congressional tributes",
+        "Democratic Republic of the Congo",
+        "Foreign aid and international relief",
+        "Human rights",
+        "Intelligence activities, surveillance, classified information",
+        "International organizations and cooperation",
+        "Military assistance, sales, and agreements",
+        "Military education and training",
+        "Military operations and strategy",
+        "Refugees, asylum, displaced persons",
+        "South Sudan",
+        "Uganda",
+        "War crimes, genocide, crimes against humanity"
+      ],
+      "summary_crs": " <p>Condemns Joseph Kony and the Lord's Resistance Army (LRA) for committing crimes against humanity and mass atrocities, and supports efforts by the United States and countries in central Africa to remove Joseph Kony and LRA commanders from the battlefield.</p> <p> Commends efforts by Uganda, the Democratic Republic of Congo, the Republic of South Sudan, the Central African Republic, and other countries in the region, as well as the African Union (AU) and the United Nations (U.N.), to end the LRA threat. </p> <p>Welcomes U.S. efforts to assist regional governments to bring Joseph Kony to justice and end LRA atrocities.</p> <p>Commends the Department of Defense (DOD), United States Africa Command (U.S. AFRICOM), and members of the U.S. Armed Forces deployed as advisors to the national militaries in the region seeking to protect local communities and pursuing Joseph Kony and LRA commanders.</p> <p>Commends the AU for committing to enhance troop deployments.</p> <p>Supports increased coordination between the AU and Uganda, the Central African Republic, the Democratic Republic of Congo, and the Republic of South Sudan in order to apprehend or remove Joseph Kony. </p> <p>Supports U.S. efforts to work with partner nations and the international community to: (1) strengthen the capabilities of regional military forces to protect civilians and pursue LRA commanders, (2) enhance cooperation among regional governments, and (3) promote increased donor contributions. </p> <p>Calls on the Secretary of State, the Secretary of Defense, the Administrator of the United States Agency for International Development (USAID), and the heads of other relevant government agencies to utilize existing funds for programs to: (1) enhance mobility, intelligence, and logistical capabilities for partner forces engaged in efforts to protect civilians and apprehend or remove Joseph Kony; (2) expand physical access and telecommunications infrastructure to facilitate the flow of information and access for humanitarian and protection actors; (3) support programs to encourage and help non-indicted LRA commanders, fighters, abductees, and associated noncombatants to defect; and (4) rehabilitate children and youth affected by war and LRA indoctrination. </p> <p>Calls on the President to place restrictions on individuals or governments assisting Joseph Kony or the LRA.</p> <p>Urges that civilian protection be prioritized in LRA-affected areas. </p> <p>Calls on governments in the region and the international community to support demobilization, rehabilitation, and reintegration of LRA defectors.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sres402/BILLS-112sres402ats.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sres402/BILLS-112sres402ats.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sres402/BILLS-112sres402ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/402",
+      "votes": []
+    },
+    {
+      "id": "sres524-112",
+      "congress": 112,
+      "type": "sres",
+      "number": "524",
+      "title": "A resolution reaffirming the strong support of the United States for the 2002 declaration of conduct of parties in the South China Sea among the member states of ASEAN and the People's Republic of China, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kerry, John F.",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2012-07-23",
+      "latest_action": {
+        "date": "2012-08-02",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text: CR S6011-6012)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Asia",
+        "China",
+        "Diplomacy, foreign officials, Americans abroad",
+        "International law and treaties",
+        "International organizations and cooperation",
+        "Military assistance, sales, and agreements",
+        "Military operations and strategy",
+        "Navigation, waterways, harbors",
+        "Pacific Ocean",
+        "Sovereignty, recognition, national governance and status"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p> Reaffirms U.S. support for the 2002 declaration of conduct of parties in the South China Sea among the member states of the Association of Southeast Asian Nations (ASEAN) and China.</p> <p>Urges all parties to exercise self-restraint in the conduct of activities that would complicate disputes and stability, including refraining from inhabiting presently uninhabited islands, reefs, shoals, and other features.</p> <p>Supports a diplomatic process by all claimants for resolving outstanding territorial and jurisdictional disputes.</p> <p>Supports U.S. Armed Forces operations in the Western Pacific, including in the South China Sea, in support of freedom of navigation, the maintenance of peace, respect for international law, and unimpeded lawful commerce.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sres524/BILLS-112sres524ats.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sres524/BILLS-112sres524ats.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sres524/BILLS-112sres524ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/524",
       "votes": []
     },
     {
@@ -2328,6 +2645,46 @@
       "votes": []
     },
     {
+      "id": "sconres37-112",
+      "congress": 112,
+      "type": "sconres",
+      "number": "37",
+      "title": "A concurrent resolution setting forth the congressional budget for the United States Government for fiscal year 2013, and setting forth the appropriate budgetary levels for fiscal years 2014 through 2022.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Toomey, Patrick",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2012-03-29",
+      "latest_action": {
+        "date": "2012-05-16",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 42 - 57. Record Vote Number: 99."
+      },
+      "outcome": "failed",
+      "policy_area": "Economics and Public Finance",
+      "subjects": [
+        "Appropriations",
+        "Budget deficits and national debt",
+        "Budget process",
+        "Defense spending",
+        "Government trust funds",
+        "Income tax rates",
+        "Legislative rules and procedure",
+        "Postal service",
+        "Senate",
+        "Social security and elderly assistance",
+        "Transfer and inheritance taxes",
+        "Veterans' medical care"
+      ],
+      "summary_crs": " <p>Sets forth the congressional budget for the federal government for FY2013, including the appropriate budgetary levels for FY2014-FY2022.</p> <p>Lists recommended budgetary levels and amounts for FY2013-FY2022with respect to: (1) federal revenues, (2) new budget authority, (3) budget outlays, (4) deficits (on-budget), (5) public debt, and (6) debt held by the public.</p> <p>Lists the appropriate levels of new budget authority, outlays, and administrative expenses of the Federal Old-Age and Survivors Insurance Trust Fund and the Federal Disability Insurance Trust Fund (Social Security Trust Funds), U.S. Postal Service discretionary administrative expenses, and specified major functional categories for FY2013-FY2022.</p> <p>Authorizes the Chairman of the Senate Budget Committee to: (1) make a deficit-reduction reserve fund for legislation that eliminates or reduces improper payments; and (2) reduce the allocations of committees for any savings achieved by such eliminations or reductions, with the savings used to reduce the deficit.</p> <p> Makes it out of order to consider in the Senate any legislation that would cause the discretionary spending limits in this resolution to be exceeded (other than those allocated in this resolution to function 970 for war efforts overseas), except by a supermajority waiver. Specifies such discretionary spending limits in the Senate for FY2013-FY2022.</p> <p>Makes it out of order to consider in the Senate any legislation, except by a supermajority, that would require advanced appropriations other than for: (1) up to $28.5 billion in new budget authority in FY2013-FY2014 for programs, projects, activities, or accounts identified in the joint explanatory statement of managers accompanying this resolution; and (2) the Department of Veterans Affairs (VA) for the Medical Services, Medical Support and Compliance, and Medical Facilities accounts of the Veterans Health Administration.</p> <p>Sets forth requirements for the treatment of emergency legislation.</p> <p>Allows the Chairman to adjust the estimate of budgetary effects of legislation that: (1) amends or supersedes the system for updating physician payments under title XVIII (Medicare) of the Social Security Act, (2) amends the Estate and Gift Tax under the Internal Revenue Code, (3) extends the Alternative Minimum Tax (AMT) relief for individuals, and (4) extends middle-class tax cuts under the Economic Growth and Tax Relief Reconciliation Act of 2001 and the Jobs and Growth Tax Relief and Reconciliation Act of 2003.</p> <p>Permits the Chairman to make such adjustments only for points of order in specified legislation relating to: (1) pay-as-you-go, and (2) long- and short-term deficits.</p> <p>Requires the joint explanatory statement accompanying the conference report on any budget resolution in the Senate to include in its committee allocations to the Senate Committee on Appropriations amounts for the discretionary administrative expenses of the Social Security Administration and of the Postal Service.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sconres37/BILLS-112sconres37pcs.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sconres37/BILLS-112sconres37pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sconres37/BILLS-112sconres37pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-concurrent-resolution/37",
+      "votes": []
+    },
+    {
       "id": "sres465-112",
       "congress": 112,
       "type": "sres",
@@ -2454,6 +2811,37 @@
       "text_url_xml": "https://www.congress.gov/112/bills/sres451/BILLS-112sres451ats.xml",
       "text_url_pdf": "https://www.congress.gov/112/bills/sres451/BILLS-112sres451ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/451",
+      "votes": []
+    },
+    {
+      "id": "sres419-112",
+      "congress": 112,
+      "type": "sres",
+      "number": "419",
+      "title": "A resolution expressing the sense of the Senate that public servants should be commended for their dedication and continued service to the United States during Public Service Recognition week.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Akaka, Daniel K.",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2012-04-17",
+      "latest_action": {
+        "date": "2012-04-26",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S2886; text as passed Senate: CR S2886)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Government employee pay, benefits, personnel management"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Supports the designation of May 6 through May 12, 2012, as Public Service Recognition Week. </p> <p>Commends goverment employees for their contributions and salutes them for their dedication and spirit for public service. </p> <p>Honors government employees who have given their lives in service to their country. </p> <p>Calls upon a new generation to consider a career in public service. </p> <p>Encourages efforts to promote public service careers.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sres419/BILLS-112sres419ats.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sres419/BILLS-112sres419ats.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sres419/BILLS-112sres419ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/419",
       "votes": []
     },
     {
@@ -2721,6 +3109,78 @@
       "text_url_xml": "https://www.congress.gov/112/bills/sres423/BILLS-112sres423ats.xml",
       "text_url_pdf": "https://www.congress.gov/112/bills/sres423/BILLS-112sres423ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/423",
+      "votes": []
+    },
+    {
+      "id": "sres395-112",
+      "congress": 112,
+      "type": "sres",
+      "number": "395",
+      "title": "A resolution expressing the sense of the Senate in support of the North Atlantic Treaty Organization and the NATO summit to be held in Chicago, Illinois from May 20 through 21, 2012.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Durbin, Richard J.",
+        "party": "D",
+        "state": "IL"
+      },
+      "introduced_date": "2012-03-13",
+      "latest_action": {
+        "date": "2012-03-29",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Voice Vote. (consideration: CR S2279-2280; text of measure as reported in Senate: CR S2279; text as passed Senate: CR S2279-2280)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Afghanistan",
+        "Alliances",
+        "Asia",
+        "Collective security",
+        "Congressional tributes",
+        "Europe",
+        "Illinois",
+        "Military operations and strategy",
+        "Military personnel and dependents"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The expanded summary of the Senate reported version is repeated here.)</b></p> <p>Remembers the 63 years that the North Atlantic Treaty Organization (NATO) has served to ensure peace and stability in Europe and throughout the world.</p> <p>Honors the sacrifices of U.S. personnel, NATO allies, and partners in Afghanistan.</p> <p>Reaffirms that NATO, through the new Strategic Concept, is oriented for the changing international security environment and the challenges of the future.</p> <p>Urges all NATO members to take concrete steps to implement the Strategic Concept.</p> <p>Supports the 2012 NATO summit in Chicago, Illinois.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sres395/BILLS-112sres395ats.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sres395/BILLS-112sres395ats.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sres395/BILLS-112sres395ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/395",
+      "votes": []
+    },
+    {
+      "id": "sres397-112",
+      "congress": 112,
+      "type": "sres",
+      "number": "397",
+      "title": "A resolution promoting peace and stability in Sudan, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Coons, Christopher A.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2012-03-15",
+      "latest_action": {
+        "date": "2012-03-29",
+        "text": "Resolution agreed to in Senate with an amendment and an amended preamble by Voice Vote. (consideration: CR S2280-2282; text of measure as reported in Senate: CR S2280-2281; text as passed Senate: CR S2281-2282)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Africa",
+        "Conflicts and wars",
+        "Diplomacy, foreign officials, Americans abroad",
+        "Foreign aid and international relief",
+        "Refugees, asylum, displaced persons",
+        "South Sudan",
+        "Sudan"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was reported to Senate on March 28, 2012. The summary of that version is repeated here.)</b></p> <p>Welcomes the memorandum of understanding on non-aggression and cooperation signed in Addis Ababa between Sudan and South Sudan on February 12, 2012.</p> <p>Calls on Sudan and the Sudan People's Liberation Movement-North to reach a political agreement and allow food and supplies to reach affected civilians.</p> <p>Urges Sudan to allow humanitarian access to all conflict-affected areas of Sudan. </p> <p>Implores the governments of Sudan and South Sudan to refrain from supporting proxy forces.</p> <p>Supports efforts of the Obama Administration, working with partners in the international community, to: (1) facilitate humanitarian access to affected areas, and (2) encourage parties to return to the negotiation table to reach agreements associated with the conclusion of the Comprehensive Peace Agreement.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sres397/BILLS-112sres397ats.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sres397/BILLS-112sres397ats.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sres397/BILLS-112sres397ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/397",
       "votes": []
     },
     {
@@ -3028,6 +3488,38 @@
       "text_url_xml": "https://www.congress.gov/112/bills/sres383/BILLS-112sres383ats.xml",
       "text_url_pdf": "https://www.congress.gov/112/bills/sres383/BILLS-112sres383ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/383",
+      "votes": []
+    },
+    {
+      "id": "sres325-112",
+      "congress": 112,
+      "type": "sres",
+      "number": "325",
+      "title": "A resolution recognizing the 2012 World Choir Games in Cincinnati, Ohio, as a global event of cultural significance to the United States and expressing support for designation of July 2012 as World Choir Games Month in the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Portman, Rob",
+        "party": "R",
+        "state": "OH"
+      },
+      "introduced_date": "2011-11-16",
+      "latest_action": {
+        "date": "2012-02-17",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S1019-1020)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Arts, Culture, Religion",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Music",
+        "Ohio"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>Recognizes: (1) the global significance of the Seventh World Choir Games to be hosted in Cincinnati, Ohio, in July 2012; and (2) Interkultur, the Cincinnati Organizing Committee for the Seventh World Choir Games, the Cincinnati USA Convention and Visitors Bureau, the city of Cincinnati, and Ohio for their efforts to host the World Choir Games.</p> <p>Expresses appreciation to all people of the world who will participate in the World Choir Games, either in competition or as visitors, and to all of the volunteers who will welcome the participants and other visitors to the United States.</p> <p>Supports the designation of July 2012 as World Choir Games Month in the United States. <p>Renews the U.S. commitment to world peace and increasing global cultural understanding through singing in peaceful competition.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sres325/BILLS-112sres325ats.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sres325/BILLS-112sres325ats.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sres325/BILLS-112sres325ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/325",
       "votes": []
     },
     {
@@ -4374,6 +4866,36 @@
       "votes": []
     },
     {
+      "id": "sres270-112",
+      "congress": 112,
+      "type": "sres",
+      "number": "270",
+      "title": "A resolution supporting the goals and ideals of \"National Life Insurance Awareness Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Nelson, Ben",
+        "party": "D",
+        "state": "NE"
+      },
+      "introduced_date": "2011-09-15",
+      "latest_action": {
+        "date": "2011-10-12",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S6470)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Finance and Financial Sector",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Life, casualty, property insurance"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Supports the goals and ideals of National Life Insurance Awareness Month.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sres270/BILLS-112sres270ats.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sres270/BILLS-112sres270ats.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sres270/BILLS-112sres270ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/270",
+      "votes": []
+    },
+    {
       "id": "sres287-112",
       "congress": 112,
       "type": "sres",
@@ -4404,6 +4926,38 @@
       "text_url_xml": "https://www.congress.gov/112/bills/sres287/BILLS-112sres287ats.xml",
       "text_url_pdf": "https://www.congress.gov/112/bills/sres287/BILLS-112sres287ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/287",
+      "votes": []
+    },
+    {
+      "id": "sres266-112",
+      "congress": 112,
+      "type": "sres",
+      "number": "266",
+      "title": "A resolution supporting the goals and ideals of \"National Save for Retirement Week\", including raising public awareness of the various tax-preferred retirement vehicles and increasing personal financial literacy.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Conrad, Kent",
+        "party": "D",
+        "state": "ND"
+      },
+      "introduced_date": "2011-09-14",
+      "latest_action": {
+        "date": "2011-10-04",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S6143)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Finance and Financial Sector",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Employee benefits and pensions",
+        "Financial literacy",
+        "Financial services and investments"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Supports the goals and ideals of National Save for Retirement Week, including raising public awareness of: (1) tax-preferred retirement vehicles for personal savings and retirement financial security, (2) the availability of a variety of ways to save for retirement favored under the Internal Revenue Code, and (3) saving for retirement and the availability of tax-preferred employer-sponsored retirement savings vehicles.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sres266/BILLS-112sres266ats.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sres266/BILLS-112sres266ats.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sres266/BILLS-112sres266ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/266",
       "votes": []
     },
     {
@@ -4917,6 +5471,38 @@
       "votes": []
     },
     {
+      "id": "sres216-112",
+      "congress": 112,
+      "type": "sres",
+      "number": "216",
+      "title": "A resolution encouraging women's political participation in Saudi Arabia.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Boxer, Barbara",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2011-06-23",
+      "latest_action": {
+        "date": "2011-07-29",
+        "text": "Resolution agreed to in Senate with an amendment and an amended preamble by Unanimous Consent. (consideration: CR S5049-5051; text of amendment in the nature of a substitute: CR S5050-5051)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Human rights",
+        "Middle East",
+        "Saudi Arabia",
+        "Women's rights"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was reported to the Senate on July 27, 2011. The summary of that version is repeated here.)</b></p> <p>Urges the government of Saudi Arabia to allow women to fully participate, both as voters and candidates for elective office, in the September 2011 elections.</p> <p>Supports the women of Saudi Arabia as they endeavor to exercise their human rights and participate equally in society.</p> <p>Expresses the belief that it is in the interest of Saudi Arabia and all nations to permit women to run for office, receive civic education, and vote in all elections.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sres216/BILLS-112sres216ats.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sres216/BILLS-112sres216ats.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sres216/BILLS-112sres216ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/216",
+      "votes": []
+    },
+    {
       "id": "sres243-112",
       "congress": 112,
       "type": "sres",
@@ -5285,6 +5871,44 @@
       "votes": []
     },
     {
+      "id": "sres185-112",
+      "congress": 112,
+      "type": "sres",
+      "number": "185",
+      "title": "A resolution reaffirming the commitment of the United States to a negotiated settlement of the Israeli-Palestinian conflict through direct Israeli-Palestinian negotiations, reaffirming opposition to the inclusion of Hamas in a unity government unless it is willing to accept peace with Israel and renounce violence, and declaring that Palestinian efforts to gain recognition of a state outside direct negotiations demonstrates absence of a good faith commitment to peace negotiations, and will have implications for continued United States aid.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cardin, Benjamin L.",
+        "party": "D",
+        "state": "MD"
+      },
+      "introduced_date": "2011-05-16",
+      "latest_action": {
+        "date": "2011-06-28",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S4163)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Arab-Israeli relations",
+        "Diplomacy, foreign officials, Americans abroad",
+        "Foreign aid and international relief",
+        "International law and treaties",
+        "Israel",
+        "Middle East",
+        "Palestinians",
+        "Sovereignty, recognition, national governance and status",
+        "Terrorism",
+        "United Nations"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Reaffirms support for a negotiated solution to the Israeli-Palestinian conflict resulting in two states, a democratic Jewish state of Israel and a democratic Palestinian state living in peace and mutual recognition.</p> <p>States that any Palestinian unity government must forswear terrorism, accept Israel's right to exist, and reaffirm previous agreements made with Israel.</p> <p>Opposes any attempt to establish or seek recognition of a Palestinian state outside of an agreement negotiated between leaders in Israel and the Palestinians.</p> <p>Urges Palestinian leaders to cease efforts at circumventing the negotiation process, including through a unilateral declaration of statehood or by seeking recognition of a Palestinian state from other nations or the United Nations (U.N.).</p> <p>Supports the President's opposition to a unilateral declaration of a Palestinian state. </p> <p>States that the Senate will consider restrictions on aid to the Palestinian Authority (PA) should the PA persist in efforts to circumvent direct negotiations.</p> <p>Reaffirms the requirement under U.S. law precluding assistance to a PA that includes Hamas unless that PA and all its ministers accept Israel's right to exist and all prior agreements and understandings with the governments of the United States and Israel.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sres185/BILLS-112sres185ats.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sres185/BILLS-112sres185ats.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sres185/BILLS-112sres185ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/185",
+      "votes": []
+    },
+    {
       "id": "sres215-112",
       "congress": 112,
       "type": "sres",
@@ -5451,6 +6075,53 @@
       "text_url_xml": "https://www.congress.gov/112/bills/sres203/BILLS-112sres203ats.xml",
       "text_url_pdf": "https://www.congress.gov/112/bills/sres203/BILLS-112sres203ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/203",
+      "votes": []
+    },
+    {
+      "id": "sconres20-112",
+      "congress": 112,
+      "type": "sconres",
+      "number": "20",
+      "title": "A concurrent resolution setting forth the congressional budget for the United States Government for fiscal year 2012 and setting forth the appropriate budgetary levels for fiscal years 2013 through 2016.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Paul, Rand",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2011-05-19",
+      "latest_action": {
+        "date": "2011-05-25",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 7 - 90. Record Vote Number: 80. (consideration: CR S3332-3333)"
+      },
+      "outcome": "failed",
+      "policy_area": "Economics and Public Finance",
+      "subjects": [
+        "Appropriations",
+        "Budget deficits and national debt",
+        "Budget process",
+        "Defense spending",
+        "Executive agency funding and structure",
+        "Financial crises and stabilization",
+        "Government buildings, facilities, and property",
+        "Government trust funds",
+        "Health care costs and insurance",
+        "Income tax rates",
+        "Inflation and prices",
+        "Labor standards",
+        "Land transfers",
+        "Legislative rules and procedure",
+        "Medicare",
+        "Motor vehicles",
+        "Performance measurement",
+        "Postal service",
+        "Public contracts and procurement"
+      ],
+      "summary_crs": " <p>Sets forth the congressional budget for the federal government for FY2012, including the appropriate budgetary levels for FY2013-FY2016.</p> <p>Lists recommended budgetary levels and amounts for FY2012-FY2016 with respect to: (1) federal revenues, (2) new budget authority, (3) budget outlays, (4) deficits, (5) public debt, and (6) debt held by the public.</p> <p>Lists the appropriate levels of new budget authority, outlays, and administrative expenses for the Social Security Administration (SSA), including the Federal Old-Age and Survivors Insurance Trust Fund and the Federal Disability Insurance Trust Fund, U.S. Postal Service discretionary administrative expenses, and specified major functional categories for FY2012-FY2016.</p> <p>Authorizes certain deficit-reduction reserve funds for legislation for: (1) the sale of unused or vacant federal properties, (2) the sale of excess federal lands, (3) repeal of the Davis-Bacon prevailing wage laws, (4) the reduction of the federal vehicles fleet, and (5) the sale of financial assets purchased through the Troubled Asset Relief Program (TARP).</p> <p> Makes it out of order to consider in the Senate any legislation that would cause the discretionary spending limits in this resolution to be exceeded, except by a supermajority waiver. Specifies such discretionary spending limits in the Senate for FY2012-FY2016.</p> <p>Authorizes adjustments to the discretionary spending limits, budgetary aggregates, and allocations for adjustments to support ongoing overseas deployments and other activities.</p> <p>Makes it out of order to consider in the Senate any legislation that would require advanced appropriations, except by a supermajority waiver.</p> <p>Sets forth requirements for the treatment of emergency legislation.</p> <p>Allows the Chairman of the Senate Budget Committee to adjust the estimate of budgetary effects of legislation that: (1) amends or supersedes the system for updating physician payments under title XVIII (Medicare) of the Social Security Act, (2) amends the Estate and Gift Tax under the Internal Revenue Code, (3) extends the Alternative Minimum Tax (AMT) relief for individuals, and (4) extends middle-class tax cuts under the Economic Growth and Tax Relief Reconciliation Act of 2001 (EGTRRA) and the Jobs and Growth Tax Relief and Reconciliation Act of 2003 (JGTRRA).</p> <p>Permits the Chairman to make such adjustments only for points of order in specified legislation relating to: (1) pay-as-you-go, and (2) long- and short-term deficits.</p> <p>Requires Senate committees to: (1) review programs and tax expenditures in their jurisdiction to identify waste, fraud, and abuse or duplication, and to increase the use of performance data to inform committee work; (2) review the matters for congressional consideration identified on the Government Accountability Office's (GAO) High Risk list report; and (3) make recommendations to the Senate Budget Committee to improve governmental performance in their annual views and estimates reports.</p> <p>Requires the joint explanatory statement accompanying the conference report on any budget resolution in the Senate to include in its committee allocations to the Senate Committee on Appropriations amounts for the discretionary administrative expenses of the SSA and of the Postal Service.</p> <p>Sets forth reconciliation instructions for the Senate Committees on: (1) Foreign Relations; (2) Commerce, Science, and Transportation; (3) Agriculture, Nutrition, and Energy [<i>sic</i>]; (4) Banking, Housing, and Urban Affairs; (5) Health, Education, Labor, and Pensions; and (6) Finance.</p> <p>Declares the policy of Congress on attainment of Social Security and Medicare solvency.</p> <p>Requires the Chairman to reduce committee allocations, aggregates, and other appropriate levels by the amount unobligated or unspent within 36 months after such funds are made available pursuant to any adjustments made under this resolution.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sconres20/BILLS-112sconres20pcs.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sconres20/BILLS-112sconres20pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sconres20/BILLS-112sconres20pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-concurrent-resolution/20",
       "votes": []
     },
     {
@@ -5678,6 +6349,38 @@
       "votes": []
     },
     {
+      "id": "sres86-112",
+      "congress": 112,
+      "type": "sres",
+      "number": "86",
+      "title": "A resolution recognizing the Defense Intelligence Agency on its 50th Anniversary.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feinstein, Dianne",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2011-03-01",
+      "latest_action": {
+        "date": "2011-05-12",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S2970)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Department of Defense",
+        "Intelligence activities, surveillance, classified information"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Congratulates the men and women of the Defense Intelligence Agency (DIA) on the occasion of its 50th anniversary.</p> <p>Honors the heroic sacrifice of DIA employees who have given their lives, or have been wounded or injured, in the service of the United States during the past 50 years.</p> <p>Expresses gratitude to all the men and women of the DIA for their past and continued efforts to provide timely and accurate intelligence support to deliver overwhelming advantage to our warfighters, defense planners, and defense and national security policymakers in the defense and security of the United States.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sres86/BILLS-112sres86ats.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sres86/BILLS-112sres86ats.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sres86/BILLS-112sres86ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/86",
+      "votes": []
+    },
+    {
       "id": "sres164-112",
       "congress": 112,
       "type": "sres",
@@ -5738,6 +6441,42 @@
       "text_url_xml": "https://www.congress.gov/112/bills/sres161/BILLS-112sres161ats.xml",
       "text_url_pdf": "https://www.congress.gov/112/bills/sres161/BILLS-112sres161ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/161",
+      "votes": []
+    },
+    {
+      "id": "sres138-112",
+      "congress": 112,
+      "type": "sres",
+      "number": "138",
+      "title": "A resolution calling on the United Nations to rescind the Goldstone report, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Gillibrand, Kirsten E.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2011-04-08",
+      "latest_action": {
+        "date": "2011-04-14",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S2554)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Arab-Israeli relations",
+        "Conflicts and wars",
+        "Gaza Strip",
+        "Human rights",
+        "Israel",
+        "Middle East",
+        "Palestinians",
+        "United Nations"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Calls on the United Nations Human Rights Council (UNHRC) members to reflect the author's repudiation of the Goldstone report's central findings, rescind the report, and reconsider further Council actions with respect to the report's findings.</p> <p>Urges United Nations Secretary-General Ban Ki Moon to work with United Nations (U.N.) member states to reform UNRHC so that it no longer unfairly, disproportionately, and falsely criticizes Israel.</p> <p>Requests Secretary-General Ban Ki Moon to do all in his power to redress the damage caused by the Goldstone report to Israel's reputation.</p> <p>Urges the United States to take a leadership role in getting the U.N. and its bodies to prevent any further action on the report's findings and limit the damage that this libelous report has caused to Israel and to the reputation of the U.N.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sres138/BILLS-112sres138ats.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sres138/BILLS-112sres138ats.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sres138/BILLS-112sres138ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/138",
       "votes": []
     },
     {
@@ -5803,6 +6542,43 @@
       "text_url_xml": "https://www.congress.gov/112/bills/sres157/BILLS-112sres157ats.xml",
       "text_url_pdf": "https://www.congress.gov/112/bills/sres157/BILLS-112sres157ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/157",
+      "votes": []
+    },
+    {
+      "id": "sres135-112",
+      "congress": 112,
+      "type": "sres",
+      "number": "135",
+      "title": "A resolution remembering the 1- year anniversary of the April 10, 2010, plane crash that claimed the lives of the President of Poland Lech Kaczynski, his wife, and 94 others, while they were en route to memorialize those Polish officers, officials, and civilians who were massacred by the Soviet Union in 1940.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lugar, Richard G.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2011-04-07",
+      "latest_action": {
+        "date": "2011-04-13",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S2457-2458)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Accidents",
+        "Aviation and airports",
+        "Congressional tributes",
+        "Diplomacy, foreign officials, Americans abroad",
+        "Europe",
+        "Monuments and memorials",
+        "Poland",
+        "Sovereignty, recognition, national governance and status",
+        "World history"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Remembers the tragedy that took place on April 10, 2010, when an aircraft carrying a delegation of current and former Polish officials, family members, and others crashed en route from Warsaw to Smolensk to memorialize the 1940 Katyn massacres, killing all 96 passengers.</p> <p> Honors the memories of all Poles executed by the Soviet secret police (NKVD) at Katyn, Miednoye, Khakriv, and elsewhere and those who perished in the April 2010 crash.</p> <p> Expresses sympathy for the family members of those who perished in the crash. </p> <p> Recognizes the resilience of Poland's constitution as demonstrated by the stable transfer of constitutional authority that occurred after the crash.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sres135/BILLS-112sres135ats.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sres135/BILLS-112sres135ats.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sres135/BILLS-112sres135ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/135",
       "votes": []
     },
     {
@@ -6149,6 +6925,70 @@
       "votes": []
     },
     {
+      "id": "sres94-112",
+      "congress": 112,
+      "type": "sres",
+      "number": "94",
+      "title": "A resolution to express the sense of the Senate in support of reducing its budget by at least 5 percent.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wicker, Roger F.",
+        "party": "R",
+        "state": "MS"
+      },
+      "introduced_date": "2011-03-08",
+      "latest_action": {
+        "date": "2011-03-16",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S1768)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Appropriations",
+        "Congressional operations and organization",
+        "Senate"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Expresses the sense of the Senate that it should lead by example and reduce its budget by at least 5%.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sres94/BILLS-112sres94ats.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sres94/BILLS-112sres94ats.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sres94/BILLS-112sres94ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/94",
+      "votes": []
+    },
+    {
+      "id": "sres96-112",
+      "congress": 112,
+      "type": "sres",
+      "number": "96",
+      "title": "A resolution congratulating the Army Dental Corps on its 100th anniversary.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hutchison, Kay Bailey",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2011-03-09",
+      "latest_action": {
+        "date": "2011-03-15",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S1707)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Dental care",
+        "Health personnel",
+        "Military medicine"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Congratulates the Army Dental Corps on its 100th anniversary. </p><p>Commends the Corps for its work to improve the dental readiness of the Army and the oral health of soldiers and their families.</p><p>Recognizes the thousands of dentists who have served in the Corps over the last 100 years.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sres96/BILLS-112sres96ats.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sres96/BILLS-112sres96ats.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sres96/BILLS-112sres96ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/96",
+      "votes": []
+    },
+    {
       "id": "sres101-112",
       "congress": 112,
       "type": "sres",
@@ -6211,6 +7051,40 @@
       "text_url_xml": "https://www.congress.gov/112/bills/sres97/BILLS-112sres97ats.xml",
       "text_url_pdf": "https://www.congress.gov/112/bills/sres97/BILLS-112sres97ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/97",
+      "votes": []
+    },
+    {
+      "id": "sres55-112",
+      "congress": 112,
+      "type": "sres",
+      "number": "55",
+      "title": "A resolution expressing support for designation of a \"Welcome Home Vietnam Veterans Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Burr, Richard",
+        "party": "R",
+        "state": "NC"
+      },
+      "introduced_date": "2011-02-16",
+      "latest_action": {
+        "date": "2011-03-07",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S1332-1333)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Asia",
+        "Commemorative events and holidays",
+        "Congressional tributes",
+        "Veterans' education, employment, rehabilitation",
+        "Veterans' organizations and recognition",
+        "Vietnam"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Honors and recognizes the contributions of veterans who served in Vietnam during war and peace.</p> <p>Encourages state and local governments to establish Welcome Home Vietnam Veterans Day, and the people of the United States to observe such Day with appropriate ceremonies and activities.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sres55/BILLS-112sres55ats.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sres55/BILLS-112sres55ats.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sres55/BILLS-112sres55ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/55",
       "votes": []
     },
     {
@@ -6448,6 +7322,40 @@
       "text_url_xml": "https://www.congress.gov/112/bills/sres40/BILLS-112sres40ats.xml",
       "text_url_pdf": "https://www.congress.gov/112/bills/sres40/BILLS-112sres40ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/40",
+      "votes": []
+    },
+    {
+      "id": "sres22-112",
+      "congress": 112,
+      "type": "sres",
+      "number": "22",
+      "title": "A resolution condemning the New Year's Day attack on the Coptic Christian community in Alexandria, Egypt and urging the Government of Egypt to fully investigate and prosecute the perpetrators of this heinous act.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Menendez, Robert",
+        "party": "D",
+        "state": "NJ"
+      },
+      "introduced_date": "2011-01-25",
+      "latest_action": {
+        "date": "2011-01-31",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S368)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Criminal investigation, prosecution, interrogation",
+        "Egypt",
+        "Human rights",
+        "Middle East",
+        "Religion",
+        "Terrorism"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Condemns the New Year's Day 2011 attack on the Saint George and Bishop Peter Church in Alexandria, Egypt.</p> <p>Expresses the Senate's condolences to the Coptic Christian community. </p> <p>Calls on President Hosni Mubarak and the government of Egypt to: (1) fully investigate the bomb attack and prosecute the perpetrators, and (2) enhance security for the Coptic Christian community and ensure religious freedom and equality for all people in Egypt.</p> <p>Calls on the President to work with the government of Egypt to identify the perpetrators of the New Year's Day attack.</p> <p>Calls on the Secretary of State to address the issues of religious freedom and equality of treatment for all people in Egypt with the government of Egypt.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/sres22/BILLS-112sres22ats.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/sres22/BILLS-112sres22ats.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/sres22/BILLS-112sres22ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/22",
       "votes": []
     },
     {
