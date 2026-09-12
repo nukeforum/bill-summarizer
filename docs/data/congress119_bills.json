@@ -1,8 +1,44 @@
 {
-  "generated_at": "2026-09-11T11:41:31Z",
+  "generated_at": "2026-09-12T10:10:29Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "s858-119",
+      "congress": 119,
+      "type": "s",
+      "number": "858",
+      "title": "Hershel ‘Woody' Williams National Medal of Honor Monument Location Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Justice, James C.",
+        "party": "R",
+        "state": "WV"
+      },
+      "introduced_date": "2025-03-05",
+      "latest_action": {
+        "date": "2026-09-10",
+        "text": "Became Public Law No: 119-104."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Conflicts and wars",
+        "Congressional tributes",
+        "District of Columbia",
+        "Government trust funds",
+        "Military history",
+        "Military personnel and dependents",
+        "Monuments and memorials",
+        "Veterans' organizations and recognition"
+      ],
+      "summary_crs": "<p><strong>Hershel \"Woody\" Williams National Medal of Honor Monument Location Act</strong></p><p>This bill requires the authorized monument&nbsp;honoring Medal of Honor recipients to be located within the Reserve (the great cross-axis of the National Mall, which generally extends from the Capitol to the Lincoln Memorial and from the White House to the Jefferson Memorial).</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s858/BILLS-119s858es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s858/BILLS-119s858es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s858/BILLS-119s858es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/858",
+      "votes": []
+    },
     {
       "id": "hr6500-119",
       "congress": 119,
@@ -20,8 +56,7 @@
         "date": "2026-09-02",
         "text": "Became Public Law No: 119-103."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Economics and Public Finance",
       "subjects": [
         "Abortion",
@@ -683,7 +718,6 @@
         "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text of amendment in the nature of a substitute: CR S4552-4553)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Congressional tributes",
@@ -941,7 +975,6 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 50. Record Vote Number: 222."
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "Environmental Protection",
       "subjects": [
         "Administrative law and regulatory procedures",
