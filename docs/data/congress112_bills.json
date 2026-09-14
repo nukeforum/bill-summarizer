@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T15:59:29Z",
+  "generated_at": "2026-09-14T17:58:45Z",
   "congress": 112,
   "votes_coverage": false,
   "bills": [
@@ -9503,6 +9503,43 @@
       "text_url_xml": "https://www.congress.gov/112/bills/sres343/BILLS-112sres343ats.xml",
       "text_url_pdf": "https://www.congress.gov/112/bills/sres343/BILLS-112sres343ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-resolution/343",
+      "votes": []
+    },
+    {
+      "id": "s1917-112",
+      "congress": 112,
+      "type": "s",
+      "number": "1917",
+      "title": "Middle Class Tax Cut Act of 2011",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Casey, Robert P., Jr.",
+        "party": "D",
+        "state": "PA"
+      },
+      "introduced_date": "2011-11-28",
+      "latest_action": {
+        "date": "2011-12-01",
+        "text": "Motion to proceed to consideration of measure, under the order of 12/1/2011, not having achieved the required 60 votes in the affirmative, was rejected in Senate by Yea-Nay. 51 - 49. Record Vote Number: 219."
+      },
+      "outcome": "failed",
+      "policy_area": "Taxation",
+      "subjects": [
+        "Employment taxes",
+        "Government trust funds",
+        "Income tax credits",
+        "Income tax deductions",
+        "Income tax rates",
+        "Inflation and prices",
+        "Self-employed",
+        "Social security and elderly assistance",
+        "Wages and earnings"
+      ],
+      "summary_crs": " <p>Middle Class Tax Cut Act of 2011 - Reduces employment tax rates in calendar year 2012 (payroll tax holiday period) for both employers and employees to 3.1%.&nbsp; Limits the reduction for employers to&nbsp;the first $5 million of wages paid by the employer in 2012.</p> <p>Reduces the tax rate on the first $5 million of&nbsp;net earning of a self-employed taxpayer.</p> <p>Allows nongovernmental employers a tax credit for payroll increases in the last quarter of 2011 and in 2012.</p> <p>Appropriates funds to the social security trust funds to compensate for any revenue loss to such funds from the reduction in rates and the tax credit&nbsp;allowed&nbsp;by this Act.</p> <p>Amends the Internal Revenue Code to impose on individual taxpayers in taxable years beginning after 2012 an additional tax equal to 3.25% of so much of their modified adjusted gross income as exceeds $1 million.&nbsp; Defines \"modified adjusted gross income\" as adjusted gross income reduced by any deduction allowed for investment interest.&nbsp; Provides for an inflation adjustment to the $1 million threshold amount for taxable years beginning after 2013.</p>",
+      "text_url_html": "https://www.congress.gov/112/bills/s1917/BILLS-112s1917pcs.htm",
+      "text_url_xml": "https://www.congress.gov/112/bills/s1917/BILLS-112s1917pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/112/bills/s1917/BILLS-112s1917pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/112th-congress/senate-bill/1917",
       "votes": []
     },
     {
