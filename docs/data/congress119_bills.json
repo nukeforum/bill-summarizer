@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T10:54:55Z",
+  "generated_at": "2026-09-16T11:56:33Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
@@ -21,6 +21,7 @@
         "text": "Rule H. Res. 1530 passed House."
       },
       "outcome": "passed_house",
+      "status": null,
       "policy_area": "Environmental Protection",
       "subjects": [],
       "summary_crs": "<p>This joint resolution revokes the partial authorization granted to the California Air Resources Board (CARB) to amend its Commercial Harbor Craft regulation. Among other elements, the amendments proposed by CARB and partially authorized by the Environmental Protection Agency (EPA) create new emission standards and compliance dates depending on vessel category and engine model year and expand the types of vessels covered by the regulation (e.g. commercial fishing boats). (Under the Clean Air Act, the EPA may authorize California to adopt and enforce standards relating to the control of emissions from nonroad vehicles or engines if those standards meet certain requirements.)</p><p>Specifically, the joint resolution nullifies the EPA authorization decision titled <a href=\"https://www.federalregister.gov/documents/2025/01/10/2025-00465/california-state-nonroad-engine-pollution-control-standards-commercial-harbor-craft-regulations\">California State Nonroad Engine Pollution Control Standards; Commercial Harbor Craft Regulations; Notice of Decision</a>.</p>",
@@ -48,6 +49,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Government Operations and Politics",
       "subjects": [
         "Commemorative events and holidays",
@@ -79,6 +81,7 @@
         "text": "Became Public Law No: 119-104."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Conflicts and wars",
@@ -114,7 +117,8 @@
         "date": "2026-09-02",
         "text": "Became Public Law No: 119-103."
       },
-      "outcome": "enacted",
+      "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Economics and Public Finance",
       "subjects": [
         "Abortion",
@@ -1034,6 +1038,7 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 50. Record Vote Number: 222."
       },
       "outcome": "failed",
+      "status": null,
       "policy_area": "Environmental Protection",
       "subjects": [
         "Administrative law and regulatory procedures",

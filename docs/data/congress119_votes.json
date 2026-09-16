@@ -1,8 +1,413 @@
 {
-  "generated_at": "2026-09-15T11:59:27Z",
+  "generated_at": "2026-09-16T11:56:33Z",
   "congress": 119,
-  "vote_count": 1549,
+  "vote_count": 1562,
   "votes": [
+    {
+      "id": "house-119-2-307",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 307,
+      "date": "2026-09-15",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hconres93-119",
+      "totals": {
+        "yea": 220,
+        "nay": 204,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 213,
+          "R": 7
+        },
+        "nay": {
+          "I": 1,
+          "R": 203
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 8
+        }
+      },
+      "path": "votes/congress119/house-2-307.json"
+    },
+    {
+      "id": "house-119-2-306",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 306,
+      "date": "2026-09-15",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hjres210-119",
+      "totals": {
+        "yea": 216,
+        "nay": 211,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "D": 3,
+          "I": 1,
+          "R": 212
+        },
+        "nay": {
+          "D": 210,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-2-306.json"
+    },
+    {
+      "id": "house-119-2-305",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 305,
+      "date": "2026-09-15",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr9500-119",
+      "totals": {
+        "yea": 408,
+        "nay": 17,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "D": 212,
+          "I": 1,
+          "R": 195
+        },
+        "nay": {
+          "R": 17
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-2-305.json"
+    },
+    {
+      "id": "house-119-2-304",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 304,
+      "date": "2026-09-15",
+      "question": "On Motion to Suspend the Rules and Pass",
+      "result": "Passed",
+      "bill_id": "hr2140-119",
+      "totals": {
+        "yea": 343,
+        "nay": 79,
+        "present": 0,
+        "not_voting": 10
+      },
+      "party_split": {
+        "yea": {
+          "D": 212,
+          "I": 1,
+          "R": 130
+        },
+        "nay": {
+          "R": 79
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 8
+        }
+      },
+      "path": "votes/congress119/house-2-304.json"
+    },
+    {
+      "id": "house-119-2-303",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 303,
+      "date": "2026-09-15",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr4646-119",
+      "totals": {
+        "yea": 424,
+        "nay": 0,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 213,
+          "I": 1,
+          "R": 210
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 8
+        }
+      },
+      "path": "votes/congress119/house-2-303.json"
+    },
+    {
+      "id": "house-119-2-302",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 302,
+      "date": "2026-09-15",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr8278-119",
+      "totals": {
+        "yea": 417,
+        "nay": 7,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 213,
+          "I": 1,
+          "R": 203
+        },
+        "nay": {
+          "R": 7
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 8
+        }
+      },
+      "path": "votes/congress119/house-2-302.json"
+    },
+    {
+      "id": "house-119-2-301",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 301,
+      "date": "2026-09-15",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr2978-119",
+      "totals": {
+        "yea": 414,
+        "nay": 7,
+        "present": 0,
+        "not_voting": 12
+      },
+      "party_split": {
+        "yea": {
+          "D": 210,
+          "I": 1,
+          "R": 203
+        },
+        "nay": {
+          "R": 7
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 8
+        }
+      },
+      "path": "votes/congress119/house-2-301.json"
+    },
+    {
+      "id": "house-119-2-300",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 300,
+      "date": "2026-09-15",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres1530-119",
+      "totals": {
+        "yea": 214,
+        "nay": 211,
+        "present": 0,
+        "not_voting": 8
+      },
+      "party_split": {
+        "yea": {
+          "D": 2,
+          "I": 1,
+          "R": 211
+        },
+        "nay": {
+          "D": 209,
+          "R": 2
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-2-300.json"
+    },
+    {
+      "id": "house-119-2-299",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 299,
+      "date": "2026-09-15",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres1530-119",
+      "totals": {
+        "yea": 214,
+        "nay": 208,
+        "present": 0,
+        "not_voting": 11
+      },
+      "party_split": {
+        "yea": {
+          "I": 1,
+          "R": 213
+        },
+        "nay": {
+          "D": 208
+        },
+        "not_voting": {
+          "D": 6,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/house-2-299.json"
+    },
+    {
+      "id": "house-119-2-298",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 298,
+      "date": "2026-09-15",
+      "question": "On Motion to Table",
+      "result": "Passed",
+      "bill_id": "hres1486-119",
+      "totals": {
+        "yea": 232,
+        "nay": 147,
+        "present": 47,
+        "not_voting": 7
+      },
+      "party_split": {
+        "yea": {
+          "D": 18,
+          "I": 1,
+          "R": 213
+        },
+        "nay": {
+          "D": 147
+        },
+        "present": {
+          "D": 46,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-2-298.json"
+    },
+    {
+      "id": "senate-119-2-235",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 235,
+      "date": "2026-09-15",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Agreed to",
+      "bill_id": "s4668-119",
+      "totals": {
+        "yea": 74,
+        "nay": 24,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 24,
+          "I": 1,
+          "R": 49
+        },
+        "nay": {
+          "D": 19,
+          "I": 1,
+          "R": 4
+        },
+        "not_voting": {
+          "D": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-235.json"
+    },
+    {
+      "id": "senate-119-2-234",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 234,
+      "date": "2026-09-15",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "bill_id": "hr3633-119",
+      "totals": {
+        "yea": 49,
+        "nay": 50,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "R": 49
+        },
+        "nay": {
+          "D": 44,
+          "I": 2,
+          "R": 4
+        },
+        "not_voting": {
+          "D": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-234.json"
+    },
+    {
+      "id": "senate-119-2-233",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 233,
+      "date": "2026-09-15",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 52,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 44,
+          "I": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "I": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-233.json"
+    },
     {
       "id": "house-119-2-297",
       "chamber": "house",
