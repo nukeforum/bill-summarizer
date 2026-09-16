@@ -1,8 +1,35 @@
 {
-  "generated_at": "2026-09-15T11:59:27Z",
+  "generated_at": "2026-09-16T10:54:55Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "hjres213-119",
+      "congress": 119,
+      "type": "hjres",
+      "number": "213",
+      "title": "Providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule issued by the Environmental Protection Agency relating to the \"California State Nonroad Engine Pollution Control Standards; Commercial Harbor Craft Regulations; Notice of Decision\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Gallagher, James",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2026-08-10",
+      "latest_action": {
+        "date": "2026-09-15",
+        "text": "Rule H. Res. 1530 passed House."
+      },
+      "outcome": "passed_house",
+      "policy_area": "Environmental Protection",
+      "subjects": [],
+      "summary_crs": "<p>This joint resolution revokes the partial authorization granted to the California Air Resources Board (CARB) to amend its Commercial Harbor Craft regulation. Among other elements, the amendments proposed by CARB and partially authorized by the Environmental Protection Agency (EPA) create new emission standards and compliance dates depending on vessel category and engine model year and expand the types of vessels covered by the regulation (e.g. commercial fishing boats). (Under the Clean Air Act, the EPA may authorize California to adopt and enforce standards relating to the control of emissions from nonroad vehicles or engines if those standards meet certain requirements.)</p><p>Specifically, the joint resolution nullifies the EPA authorization decision titled <a href=\"https://www.federalregister.gov/documents/2025/01/10/2025-00465/california-state-nonroad-engine-pollution-control-standards-commercial-harbor-craft-regulations\">California State Nonroad Engine Pollution Control Standards; Commercial Harbor Craft Regulations; Notice of Decision</a>.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hjres213/BILLS-119hjres213ih.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hjres213/BILLS-119hjres213ih.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hjres213/BILLS-119hjres213ih.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/213",
+      "votes": []
+    },
     {
       "id": "sres849-119",
       "congress": 119,
@@ -21,9 +48,12 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Government Operations and Politics",
-      "subjects": [],
+      "subjects": [
+        "Commemorative events and holidays",
+        "Terrorism",
+        "U.S. history"
+      ],
       "summary_crs": null,
       "text_url_html": "https://www.congress.gov/119/bills/sres849/BILLS-119sres849is.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/sres849/BILLS-119sres849is.xml",
@@ -49,7 +79,6 @@
         "text": "Became Public Law No: 119-104."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Conflicts and wars",
@@ -85,8 +114,7 @@
         "date": "2026-09-02",
         "text": "Became Public Law No: 119-103."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Economics and Public Finance",
       "subjects": [
         "Abortion",
@@ -1006,7 +1034,6 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 50. Record Vote Number: 222."
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "Environmental Protection",
       "subjects": [
         "Administrative law and regulatory procedures",
