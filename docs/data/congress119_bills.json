@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T11:03:05Z",
+  "generated_at": "2026-09-17T11:58:14Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
@@ -21,6 +21,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [],
       "summary_crs": null,
@@ -56,7 +57,40 @@
       "text_url_xml": "https://www.congress.gov/119/bills/hjres213/BILLS-119hjres213ih.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/hjres213/BILLS-119hjres213ih.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-joint-resolution/213",
-      "votes": []
+      "votes": [
+        {
+          "id": "house-119-2-311",
+          "chamber": "house",
+          "session": 2,
+          "roll_number": 311,
+          "date": "2026-09-16",
+          "question": "On Passage",
+          "result": "Passed",
+          "bill_id": "hjres213-119",
+          "totals": {
+            "yea": 214,
+            "nay": 208,
+            "present": 0,
+            "not_voting": 11
+          },
+          "party_split": {
+            "yea": {
+              "D": 3,
+              "I": 1,
+              "R": 210
+            },
+            "nay": {
+              "D": 207,
+              "R": 1
+            },
+            "not_voting": {
+              "D": 4,
+              "R": 7
+            }
+          },
+          "path": "votes/congress119/house-2-311.json"
+        }
+      ]
     },
     {
       "id": "sres849-119",
@@ -76,6 +110,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4690)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Government Operations and Politics",
       "subjects": [
         "Commemorative events and holidays",
@@ -107,6 +142,7 @@
         "text": "Became Public Law No: 119-104."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Conflicts and wars",
@@ -142,7 +178,8 @@
         "date": "2026-09-02",
         "text": "Became Public Law No: 119-103."
       },
-      "outcome": "enacted",
+      "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Economics and Public Finance",
       "subjects": [
         "Abortion",
@@ -503,6 +540,38 @@
       "text_url_pdf": "https://www.congress.gov/119/bills/hr5334/BILLS-119hr5334eas.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/5334",
       "votes": [
+        {
+          "id": "house-119-2-308",
+          "chamber": "house",
+          "session": 2,
+          "roll_number": 308,
+          "date": "2026-09-16",
+          "question": "On Motion to Concur in the Senate Amendments",
+          "result": "Passed",
+          "bill_id": "hr5334-119",
+          "totals": {
+            "yea": 262,
+            "nay": 159,
+            "present": 0,
+            "not_voting": 12
+          },
+          "party_split": {
+            "yea": {
+              "D": 58,
+              "I": 1,
+              "R": 203
+            },
+            "nay": {
+              "D": 152,
+              "R": 7
+            },
+            "not_voting": {
+              "D": 4,
+              "R": 8
+            }
+          },
+          "path": "votes/congress119/house-2-308.json"
+        },
         {
           "id": "senate-119-2-224",
           "chamber": "senate",

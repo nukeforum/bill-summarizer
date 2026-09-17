@@ -1,8 +1,228 @@
 {
-  "generated_at": "2026-09-16T11:56:33Z",
+  "generated_at": "2026-09-17T11:58:14Z",
   "congress": 119,
-  "vote_count": 1562,
+  "vote_count": 1569,
   "votes": [
+    {
+      "id": "house-119-2-314",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 314,
+      "date": "2026-09-16",
+      "question": "On Motion to Suspend the Rules and Pass",
+      "result": "Passed",
+      "bill_id": "s2403-119",
+      "totals": {
+        "yea": 401,
+        "nay": 14,
+        "present": 0,
+        "not_voting": 18
+      },
+      "party_split": {
+        "yea": {
+          "D": 209,
+          "I": 1,
+          "R": 191
+        },
+        "nay": {
+          "R": 14
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 13
+        }
+      },
+      "path": "votes/congress119/house-2-314.json"
+    },
+    {
+      "id": "house-119-2-313",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 313,
+      "date": "2026-09-16",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr9497-119",
+      "totals": {
+        "yea": 415,
+        "nay": 9,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 212,
+          "I": 1,
+          "R": 202
+        },
+        "nay": {
+          "R": 9
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/house-2-313.json"
+    },
+    {
+      "id": "house-119-2-312",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 312,
+      "date": "2026-09-16",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr9340-119",
+      "totals": {
+        "yea": 417,
+        "nay": 3,
+        "present": 0,
+        "not_voting": 12
+      },
+      "party_split": {
+        "yea": {
+          "D": 206,
+          "I": 1,
+          "R": 210
+        },
+        "nay": {
+          "D": 3
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/house-2-312.json"
+    },
+    {
+      "id": "house-119-2-311",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 311,
+      "date": "2026-09-16",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hjres213-119",
+      "totals": {
+        "yea": 214,
+        "nay": 208,
+        "present": 0,
+        "not_voting": 11
+      },
+      "party_split": {
+        "yea": {
+          "D": 3,
+          "I": 1,
+          "R": 210
+        },
+        "nay": {
+          "D": 207,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/house-2-311.json"
+    },
+    {
+      "id": "house-119-2-310",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 310,
+      "date": "2026-09-16",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr10326-119",
+      "totals": {
+        "yea": 217,
+        "nay": 207,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 6,
+          "I": 1,
+          "R": 210
+        },
+        "nay": {
+          "D": 206,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/house-2-310.json"
+    },
+    {
+      "id": "house-119-2-309",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 309,
+      "date": "2026-09-16",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr9576-119",
+      "totals": {
+        "yea": 352,
+        "nay": 72,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "D": 139,
+          "I": 1,
+          "R": 212
+        },
+        "nay": {
+          "D": 72
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-2-309.json"
+    },
+    {
+      "id": "house-119-2-308",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 308,
+      "date": "2026-09-16",
+      "question": "On Motion to Concur in the Senate Amendments",
+      "result": "Passed",
+      "bill_id": "hr5334-119",
+      "totals": {
+        "yea": 262,
+        "nay": 159,
+        "present": 0,
+        "not_voting": 12
+      },
+      "party_split": {
+        "yea": {
+          "D": 58,
+          "I": 1,
+          "R": 203
+        },
+        "nay": {
+          "D": 152,
+          "R": 7
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 8
+        }
+      },
+      "path": "votes/congress119/house-2-308.json"
+    },
     {
       "id": "house-119-2-307",
       "chamber": "house",
