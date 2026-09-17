@@ -1,8 +1,35 @@
 {
-  "generated_at": "2026-09-16T11:56:33Z",
+  "generated_at": "2026-09-17T11:03:05Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "sres847-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "847",
+      "title": "A resolution commending and congratulating the Pennsylvania State University Nittany Lions men's wrestling team for winning the 2026 National Collegiate Athletic Association Division I National Championship.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. McCormick, David",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2026-08-08",
+      "latest_action": {
+        "date": "2026-09-16",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Sports and Recreation",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres847/BILLS-119sres847is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres847/BILLS-119sres847is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres847/BILLS-119sres847is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/847",
+      "votes": []
+    },
     {
       "id": "hjres213-119",
       "congress": 119,
@@ -46,10 +73,9 @@
       "introduced_date": "2026-08-08",
       "latest_action": {
         "date": "2026-09-14",
-        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4690)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Government Operations and Politics",
       "subjects": [
         "Commemorative events and holidays",
@@ -81,7 +107,6 @@
         "text": "Became Public Law No: 119-104."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Conflicts and wars",
@@ -117,8 +142,7 @@
         "date": "2026-09-02",
         "text": "Became Public Law No: 119-103."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Economics and Public Finance",
       "subjects": [
         "Abortion",
