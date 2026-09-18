@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T11:58:14Z",
+  "generated_at": "2026-09-18T10:39:12Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
@@ -21,7 +21,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [],
       "summary_crs": null,
@@ -110,7 +109,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4690)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Government Operations and Politics",
       "subjects": [
         "Commemorative events and holidays",
@@ -118,9 +116,9 @@
         "U.S. history"
       ],
       "summary_crs": null,
-      "text_url_html": "https://www.congress.gov/119/bills/sres849/BILLS-119sres849is.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/sres849/BILLS-119sres849is.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/sres849/BILLS-119sres849is.pdf",
+      "text_url_html": "https://www.congress.gov/119/bills/sres849/BILLS-119sres849ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres849/BILLS-119sres849ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres849/BILLS-119sres849ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/849",
       "votes": []
     },
@@ -142,7 +140,6 @@
         "text": "Became Public Law No: 119-104."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Conflicts and wars",
@@ -178,8 +175,7 @@
         "date": "2026-09-02",
         "text": "Became Public Law No: 119-103."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Economics and Public Finance",
       "subjects": [
         "Abortion",
