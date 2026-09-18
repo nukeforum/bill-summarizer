@@ -1,8 +1,99 @@
 {
-  "generated_at": "2026-09-17T11:58:14Z",
+  "generated_at": "2026-09-18T11:38:32Z",
   "congress": 119,
-  "vote_count": 1569,
+  "vote_count": 1572,
   "votes": [
+    {
+      "id": "senate-119-2-238",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 238,
+      "date": "2026-09-17",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 49,
+        "nay": 45,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "R": 49
+        },
+        "nay": {
+          "D": 43,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 2,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/senate-2-238.json"
+    },
+    {
+      "id": "senate-119-2-237",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 237,
+      "date": "2026-09-17",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 49,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "R": 49
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/senate-2-237.json"
+    },
+    {
+      "id": "senate-119-2-236",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 236,
+      "date": "2026-09-17",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Agreed to",
+      "bill_id": "s4668-119",
+      "totals": {
+        "yea": 77,
+        "nay": 22,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 27,
+          "I": 1,
+          "R": 49
+        },
+        "nay": {
+          "D": 18,
+          "I": 1,
+          "R": 3
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-236.json"
+    },
     {
       "id": "house-119-2-314",
       "chamber": "house",
