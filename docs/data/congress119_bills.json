@@ -1,8 +1,198 @@
 {
-  "generated_at": "2026-09-18T11:38:32Z",
+  "generated_at": "2026-09-19T10:23:40Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "hr5345-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "5345",
+      "title": "Improving Social Security’s Service to Victims of Identity Theft Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Kustoff, David",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2025-09-15",
+      "latest_action": {
+        "date": "2026-09-17",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Social Welfare",
+      "subjects": [
+        "Computer security and identity theft",
+        "Executive agency funding and structure",
+        "Social Security Administration"
+      ],
+      "summary_crs": "<p><strong>Improving Social Security's Service to Victims of Identity Theft Act</strong></p><p>This bill requires the Social Security Administration to provide a single point of contact for any individual whose Social Security account number has been misused. The single point of contact must consist of a team or subset of specially trained employees, and must track the individual's case to completion and coordinate with other specialized units to resolve issues as quickly as possible.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr5345/BILLS-119hr5345rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr5345/BILLS-119hr5345rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr5345/BILLS-119hr5345rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/5345",
+      "votes": []
+    },
+    {
+      "id": "sres816-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "816",
+      "title": "A resolution honoring 35 years of independence for the countries of Central Asia and recognizing the importance of the United States growing relationship with Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan, and Uzbekistan.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daines, Steve",
+        "party": "R",
+        "state": "MT"
+      },
+      "introduced_date": "2026-07-23",
+      "latest_action": {
+        "date": "2026-09-17",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres816/BILLS-119sres816is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres816/BILLS-119sres816is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres816/BILLS-119sres816is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/816",
+      "votes": []
+    },
+    {
+      "id": "s307-119",
+      "congress": 119,
+      "type": "s",
+      "number": "307",
+      "title": "Prison Staff Safety Enhancement Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blackburn, Marsha",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2025-01-29",
+      "latest_action": {
+        "date": "2026-09-16",
+        "text": "Became Public Law No: 119-110."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Assault and harassment offenses",
+        "Congressional oversight",
+        "Correctional facilities and imprisonment",
+        "Data collection, sharing, protection",
+        "Department of Justice",
+        "Government employee pay, benefits, personnel management",
+        "Government studies and investigations",
+        "Sex offenses"
+      ],
+      "summary_crs": "<p><strong>Prison Staff Safety Enhancement Act</strong></p><p>This act establishes requirements for the Department of Justice (DOJ) and component agencies to assess and respond to incidents of sexual harassment and sexual assault by incarcerated individuals against Bureau of Prisons (BOP) staff.</p><p>Specifically, the&nbsp;act requires DOJ&nbsp;to adopt national standards for the prevention, reduction, and punishment of sexual harassment and sexual assault by incarcerated individuals against correctional officers or other employees of the BOP.</p><p>Additionally, the act requires the BOP to fully implement the recommendations of the DOJ Inspector General&nbsp;contained in the report titled <em>Evaluation of the Federal Bureau of Prisons’ Efforts to Address Sexual Harassment and Sexual Assault Committed by Inmates Toward Staff</em>.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s307/BILLS-119s307es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s307/BILLS-119s307es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s307/BILLS-119s307es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/307",
+      "votes": [
+        {
+          "id": "house-119-2-284",
+          "chamber": "house",
+          "session": 2,
+          "roll_number": 284,
+          "date": "2026-08-31",
+          "question": "On Motion to Suspend the Rules and Pass",
+          "result": "Passed",
+          "bill_id": "s307-119",
+          "totals": {
+            "yea": 376,
+            "nay": 8,
+            "present": 0,
+            "not_voting": 46
+          },
+          "party_split": {
+            "yea": {
+              "D": 189,
+              "R": 187
+            },
+            "nay": {
+              "R": 8
+            },
+            "not_voting": {
+              "D": 23,
+              "I": 1,
+              "R": 22
+            }
+          },
+          "path": "votes/congress119/house-2-284.json"
+        }
+      ]
+    },
+    {
+      "id": "s32-119",
+      "congress": 119,
+      "type": "s",
+      "number": "32",
+      "title": "LACA",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cruz, Ted",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2025-01-08",
+      "latest_action": {
+        "date": "2026-09-16",
+        "text": "Became Public Law No: 119-109."
+      },
+      "outcome": "enacted",
+      "policy_area": "Law",
+      "subjects": [
+        "California",
+        "State and local courts",
+        "Texas"
+      ],
+      "summary_crs": "<p><strong>Local Access to Courts Act or LACA</strong></p><p>This act adds College Station to the list of places where court must be held in the Galveston Division of the Southern District of Texas.</p><p>Additionally, the act adds El Centro to the list of places where court must be held in the Southern District of California.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s32/BILLS-119s32es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s32/BILLS-119s32es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s32/BILLS-119s32es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/32",
+      "votes": [
+        {
+          "id": "house-119-2-285",
+          "chamber": "house",
+          "session": 2,
+          "roll_number": 285,
+          "date": "2026-08-31",
+          "question": "On Motion to Suspend the Rules and Pass",
+          "result": "Passed",
+          "bill_id": "s32-119",
+          "totals": {
+            "yea": 378,
+            "nay": 10,
+            "present": 0,
+            "not_voting": 42
+          },
+          "party_split": {
+            "yea": {
+              "D": 191,
+              "I": 1,
+              "R": 186
+            },
+            "nay": {
+              "R": 10
+            },
+            "not_voting": {
+              "D": 21,
+              "R": 21
+            }
+          },
+          "path": "votes/congress119/house-2-285.json"
+        }
+      ]
+    },
     {
       "id": "sres847-119",
       "congress": 119,
@@ -21,7 +211,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [],
       "summary_crs": null,
@@ -110,7 +299,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4690)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Government Operations and Politics",
       "subjects": [
         "Commemorative events and holidays",
@@ -142,7 +330,6 @@
         "text": "Became Public Law No: 119-104."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Conflicts and wars",
@@ -178,8 +365,7 @@
         "date": "2026-09-02",
         "text": "Became Public Law No: 119-103."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Economics and Public Finance",
       "subjects": [
         "Abortion",
