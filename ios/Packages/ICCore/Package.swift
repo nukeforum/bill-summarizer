@@ -52,7 +52,8 @@ let package = Package(
     ),
     .testTarget(
       name: "ICDataKitTests",
-      dependencies: ["ICModels", "ICClients", "ICDataKit"]
+      dependencies: ["ICModels", "ICClients", "ICDataKit"],
+      resources: [.process("Fixtures")]
     ),
     .testTarget(
       name: "ICFeaturesTests",

@@ -1,0 +1,74 @@
+name: iOS tests
+
+on:
+  pull_request:
+    paths:
+      - 'ios/**'
+      - '.github/workflows/ios-tests.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'ios/**'
+      - '.github/workflows/ios-tests.yml'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ios-tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: format, package, and simulator
+    runs-on: macos-26
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Report toolchain
+        run: |
+          xcodebuild -version
+          swift --version
+
+      - name: Lint Swift formatting
+        run: |
+          xcrun swift-format lint --strict --recursive \
+            ios/App \
+            ios/InformedCitizenUITests \
+            ios/Packages/ICCore/Sources \
+            ios/Packages/ICCore/Tests
+          xcrun swift-format lint --strict ios/Packages/ICCore/Package.swift
+
+      - name: Reject global singleton usage
+        run: |
+          if grep -R -n -E \
+            --include='*.swift' \
+            '\.shared([^[:alnum:]_]|$)|URLSession\.shared|static[[:space:]]+let[[:space:]]+shared' \
+            ios/App ios/Packages/ICCore/Sources; then
+            echo 'Global singleton usage is not allowed; inject dependencies instead.'
+            exit 1
+          fi
+
+      - name: Test Swift packages
+        run: swift test --package-path ios/Packages/ICCore
+
+      - name: Test app on iOS Simulator
+        run: |
+          xcodebuild -quiet \
+            -project ios/InformedCitizen.xcodeproj \
+            -scheme InformedCitizen \
+            -destination 'platform=iOS Simulator,name=iPhone 17 Pro,OS=latest' \
+            -derivedDataPath "$RUNNER_TEMP/InformedCitizenDerivedData" \
+            -resultBundlePath "$RUNNER_TEMP/InformedCitizen.xcresult" \
+            CODE_SIGNING_ALLOWED=NO \
+            test
+
+      - name: Upload test results on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: InformedCitizen-test-results
+          path: ${{ runner.temp }}/InformedCitizen.xcresult
+          if-no-files-found: ignore

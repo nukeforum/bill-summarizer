@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-09-19T15:43:14Z",
+  "current_congress": 119,
+  "congresses": [
+    {
+      "congress": 119,
+      "bill_count": 1,
+      "first_action_date": "2025-01-29",
+      "last_action_date": "2026-09-17",
+      "manifest_path": "congress119_bills.json",
+      "is_current": true,
+      "backfill_complete": true,
+      "shard_index_path": "congress119_bills_index.json"
+    }
+  ]
+}
