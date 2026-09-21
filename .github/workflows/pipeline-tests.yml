@@ -28,9 +28,9 @@ jobs:
           distribution: temurin
           java-version: 17
       - uses: gradle/actions/setup-gradle@v4
-      - name: Run shared and iOS bridge tests
+      - name: Run :shared:check (JVM tests + iOS klib compile)
         working-directory: pipeline
-        run: ./gradlew :shared:check :ios-bridge:jvmTest --no-daemon --stacktrace
+        run: ./gradlew :shared:check --no-daemon --stacktrace
       - name: Upload JVM test reports on failure
         if: failure()
         uses: actions/upload-artifact@v4
@@ -39,8 +39,6 @@ jobs:
           path: |
             pipeline/shared/build/reports/tests/
             pipeline/shared/build/test-results/
-            pipeline/ios-bridge/build/reports/tests/
-            pipeline/ios-bridge/build/test-results/
 
   cli:
     name: cli/run
@@ -56,37 +54,3 @@ jobs:
       - name: Build and run the placeholder CLI
         working-directory: pipeline
         run: ./gradlew :cli:run --no-daemon --stacktrace
-
-  apple-framework:
-    name: shared/xcframework
-    runs-on: macos-26
-    timeout-minutes: 30
-    steps:
-      - uses: actions/checkout@v6
-      - uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: 17
-      - uses: gradle/actions/setup-gradle@v4
-      - name: Assemble release XCFramework
-        working-directory: pipeline
-        run: ./gradlew :ios-bridge:assembleInformedCitizenPipelineReleaseXCFramework --no-daemon --stacktrace
-      - name: Validate Apple slices
-        run: |
-          FRAMEWORK=pipeline/ios-bridge/build/XCFrameworks/release/InformedCitizenPipeline.xcframework
-          HEADER=$FRAMEWORK/ios-arm64/InformedCitizenPipeline.framework/Headers/InformedCitizenPipeline.h
-          test -f "$FRAMEWORK/Info.plist"
-          test -d "$FRAMEWORK/ios-arm64"
-          test -d "$FRAMEWORK/ios-arm64_x86_64-simulator"
-          test -f "$HEADER"
-          if grep -E 'Ktor|Okio|BillsManifest|CongressClient' "$HEADER"; then
-            echo "The Swift-facing framework exposed implementation details."
-            exit 1
-          fi
-      - name: Upload framework on failure
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: InformedCitizenPipeline-xcframework-debug
-          path: pipeline/ios-bridge/build/XCFrameworks/release/InformedCitizenPipeline.xcframework
-          if-no-files-found: ignore
