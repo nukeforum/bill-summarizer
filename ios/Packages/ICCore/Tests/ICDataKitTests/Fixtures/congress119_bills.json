@@ -1,0 +1,62 @@
+{
+  "generated_at": "2026-09-19T11:21:22Z",
+  "congress": 119,
+  "votes_coverage": true,
+  "bills": [
+    {
+      "id": "s307-119",
+      "congress": 119,
+      "type": "s",
+      "number": "307",
+      "title": "Prison Staff Safety Enhancement Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blackburn, Marsha",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2025-01-29",
+      "latest_action": {
+        "date": "2026-09-16",
+        "text": "Became Public Law No: 119-110."
+      },
+      "outcome": "passed_house",
+      "status": null,
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Congressional oversight",
+        "Department of Justice"
+      ],
+      "summary_crs": "<p><strong>Prison Staff Safety Enhancement Act</strong></p><p>This act establishes requirements for the Department of Justice.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s307/BILLS-119s307es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s307/BILLS-119s307es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s307/BILLS-119s307es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/307",
+      "votes": [
+        {
+          "id": "house-119-2-284",
+          "chamber": "house",
+          "session": 2,
+          "roll_number": 284,
+          "date": "2026-08-31",
+          "question": "On Motion to Suspend the Rules and Pass",
+          "result": "Passed",
+          "bill_id": "s307-119",
+          "totals": {
+            "yea": 376,
+            "nay": 8,
+            "present": 0,
+            "not_voting": 46
+          },
+          "party_split": {
+            "yea": {
+              "D": 189,
+              "R": 187
+            }
+          },
+          "path": "votes/congress119/house-2-284.json"
+        }
+      ]
+    }
+  ]
+}

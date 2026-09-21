@@ -38,6 +38,14 @@ Two sharp edges, verified on Gradle 9.5:
 
 ## Test
 
+### iOS foundation
+
+- The iOS app lives under `ios/` and targets iOS 17 with Swift 6 strict concurrency.
+- External effects are Point-Free `Dependencies` clients. Do not add global service singletons or `.shared` application services.
+- Kotlin/KMP types must stay behind an injected bridge client and must not enter SwiftUI features or views.
+- `-SCREENSHOT_MODE` must remain deterministic and network-independent.
+- Run `swift test` from `ios/Packages/ICCore` and the `InformedCitizen` Xcode scheme before opening an iOS PR.
+
 ### `boundsInRoot()` on a clipped-out node returns `Rect.Zero`, not its real off-screen position
 
 In a Robolectric-hosted Compose UI test, a `SemanticsNode` positioned outside
