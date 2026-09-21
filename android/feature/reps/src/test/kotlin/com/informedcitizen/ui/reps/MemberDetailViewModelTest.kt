@@ -304,6 +304,48 @@ class MemberDetailViewModelTest {
     }
 
     @Test
+    fun `load surfaces a human-readable error instead of the raw network string and retry recovers`() = runTest {
+        // Reproduces issue #101: a member-profile fetch that fails with a raw
+        // DNS/OkHttp string (e.g. Unable to resolve host "nukeforum.github.io")
+        // must surface friendly copy, not that string, and offer a working retry.
+        var failNext = true
+        val members = object : MemberRepository {
+            override suspend fun findRepsForLocation(congress: Int, stateCode: String, district: Int?) =
+                error("unused")
+            override suspend fun findRepsByIds(congress: Int, bioguideIds: Set<String>) = error("unused")
+            override suspend fun getMember(bioguideId: String, congress: Int): Member = aMember(bioguideId)
+            override suspend fun getSponsored(bioguideId: String): MemberLegislation {
+                if (failNext) {
+                    throw java.net.UnknownHostException(
+                        "Unable to resolve host \"nukeforum.github.io\": No address associated with hostname",
+                    )
+                }
+                return MemberLegislation(bioguideId, 119, "sponsored", "x", listOf(anItem("hr1-119")))
+            }
+            override suspend fun getCosponsored(bioguideId: String) =
+                MemberLegislation(bioguideId, 119, "cosponsored", "x", emptyList())
+            override suspend fun getVotes(bioguideId: String) = MemberVotes("x", bioguideId, 0, emptyList())
+            override suspend fun getIndex(congress: Int): MembersIndex? = null
+        }
+        val bills = BillRepository(StubBillsApi(emptyList()), InMemoryPreferencesDataStore(), FakeCrashReporter(), FakeBillCache())
+        val vm = MemberDetailViewModel(members, bills, electionRepo()).also { it.congressProvider = { 119 } }
+
+        vm.load("A1")
+        val errored = vm.uiState.first { !it.isLoading }
+        val message = errored.errorMessage
+        assertNotNull(message)
+        assertFalse(message!!.contains("nukeforum.github.io"))
+        assertFalse(message.contains("resolve host"))
+
+        // Connectivity returns; the retry loads the record and clears the error.
+        failNext = false
+        vm.retry()
+        val recovered = vm.uiState.first { !it.isLoading && it.errorMessage == null }
+        assertNotNull(recovered.member)
+        assertEquals(listOf("hr1-119"), recovered.sponsored.map { it.id })
+    }
+
+    @Test
     fun `load leaves the ballot badge null when the election calendar is unavailable`() = runTest {
         val onBallot = Member("A1", "Name A1", "D", "TX", 21, "house", null, null, 1, 1, null, null, nextElectionYear = 2026)
         val members = DetailStubMemberRepository(memberById = mapOf("A1" to onBallot))
