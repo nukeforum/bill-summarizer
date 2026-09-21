@@ -30,3 +30,4 @@ plugins {
 rootProject.name = "pipeline"
 include(":shared")
 include(":cli")
+include(":ios-bridge")
