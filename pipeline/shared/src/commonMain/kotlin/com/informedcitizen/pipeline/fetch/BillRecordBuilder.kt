@@ -1,8 +1,10 @@
 package com.informedcitizen.pipeline.fetch
 
+import com.informedcitizen.pipeline.classifyBillStatus
 import com.informedcitizen.pipeline.classifyTextFormatUrl
 import com.informedcitizen.pipeline.cleanSponsorName
 import com.informedcitizen.pipeline.http.CongressClient
+import com.informedcitizen.pipeline.lifecycleStatusFromWireString
 import com.informedcitizen.pipeline.model.Action
 import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.pipeline.model.Sponsor
@@ -43,6 +45,29 @@ suspend fun buildBillRecord(
 
     val actionDate = (latestAction.stringField("actionDate") ?: latestAction.stringField("date") ?: "")
         .take(10)
+    val actionText = latestAction.stringField("text") ?: ""
+
+    // Pre-floor lifecycle status (backlog #39). [classifyBillStatus] owns the
+    // precedence: a terminal floor outcome ALWAYS wins over a lifecycle status,
+    // so a bill with a decisive outcome carries no status at all. Classified
+    // from the same latest-action text `evaluateBill` used to derive `outcome`,
+    // so this stays byte-identical to Python `_common.build_bill_record`.
+    //
+    // A null status means no lifecycle rule matched and legitimately stays null.
+    // A NON-null wire string that fails to map means `LIFECYCLE_RULES` and
+    // `lifecycleStatusFromWireString` / [LifecycleStatus] have drifted apart:
+    // Python would write the string while Kotlin silently omitted the key, a
+    // parity divergence rather than a crash (issue #116), so fail loudly here
+    // exactly as the `outcome` mapping below does.
+    val billStatus = classifyBillStatus(actionText)
+    val lifecycleStatus = if (billStatus.isOutcome) {
+        null
+    } else {
+        billStatus.status?.let { wire ->
+            lifecycleStatusFromWireString(wire)
+                ?: error("buildBillRecord: unknown lifecycle status wire string: '$wire'")
+        }
+    }
 
     return Bill(
         id = "$billType$billNumber-$congress",
@@ -59,10 +84,11 @@ suspend fun buildBillRecord(
         introducedDate = detail.stringField("introducedDate") ?: "",
         latestAction = Action(
             date = actionDate,
-            text = latestAction.stringField("text") ?: "",
+            text = actionText,
         ),
         outcome = outcomeFromWireString(outcome)
             ?: error("buildBillRecord called with unknown outcome wire string: '$outcome'"),
+        lifecycleStatus = lifecycleStatus,
         policyArea = policyAreaName(detail["policyArea"]),
         summaryCrs = summaryText,
         textUrlHtml = textUrls["html"],

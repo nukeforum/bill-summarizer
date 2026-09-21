@@ -18,7 +18,10 @@ data class BillsManifest(
     @SerialName("generated_at") val generatedAt: String,
     val congress: Int,
     @SerialName("votes_coverage") val votesCoverage: Boolean = false,
-    // Elements use BillManifestWriteSerializer so a null policy_area is omitted
-    // on write (Python-canonical byte parity, issue #74); read is unchanged.
+    // Elements use BillManifestWriteSerializer, which omits every key listed in
+    // its OMIT_WHEN_NULL (currently `status` and `policy_area`) when the value
+    // is null — that list is the single source of truth for which keys Python
+    // drops rather than emitting as null (Python-canonical byte parity, issues
+    // #74 and #116). Read is unchanged.
     val bills: List<@Serializable(with = BillManifestWriteSerializer::class) Bill>,
 )

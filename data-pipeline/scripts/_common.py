@@ -585,6 +585,15 @@ def build_bill_record(
     subjects = _fetch_subjects(client, congress, bill_type, bill_number)
     policy = detail.get("policyArea") or None
 
+    # Pre-floor lifecycle status (issue #39). ``classify_bill_status`` owns the
+    # precedence: a terminal floor outcome ALWAYS wins over a lifecycle status,
+    # so a bill with a decisive outcome carries no ``status`` at all. Classified
+    # from the same latest-action text ``evaluate_bill`` used to derive
+    # ``outcome``, so the Kotlin shadow (``buildBillRecord``) classifies
+    # identically from identical input.
+    status, status_is_outcome = classify_bill_status(latest_action.get("text") or "")
+    lifecycle_status = None if status_is_outcome else status
+
     record = {
         "id": f"{bill_type}{bill_number}-{congress}",
         "congress": congress,
@@ -603,6 +612,7 @@ def build_bill_record(
             "text": latest_action.get("text") or "",
         },
         "outcome": outcome,
+        "status": lifecycle_status,
         "policy_area": (policy.get("name") if isinstance(policy, dict) else policy),
         "subjects": subjects,
         "summary_crs": summary_text,
@@ -611,13 +621,15 @@ def build_bill_record(
         "text_url_pdf": text_urls.get("pdf"),
         "congress_gov_url": _build_congress_gov_url(congress, bill_type, bill_number),
     }
-    # Omit policy_area entirely when absent (rather than emit null) so the
-    # published manifest byte-matches the app-canonical shape and the Kotlin
-    # shadow, which drops the null key on write too (issue #74). Every other
-    # null-valued field stays explicit. Position is preserved for the non-null
-    # case: the key sits between outcome and subjects when present.
-    if record["policy_area"] is None:
-        del record["policy_area"]
+    # Omit policy_area and status entirely when absent (rather than emit null)
+    # so the published manifest byte-matches the app-canonical shape and the
+    # Kotlin shadow, which drops both null keys on write too (issues #74, #116).
+    # Every other null-valued field stays explicit. Position is preserved for
+    # the non-null case: status sits between outcome and policy_area, and
+    # policy_area between status and subjects.
+    for optional_key in ("status", "policy_area"):
+        if record[optional_key] is None:
+            del record[optional_key]
     return record
 
 

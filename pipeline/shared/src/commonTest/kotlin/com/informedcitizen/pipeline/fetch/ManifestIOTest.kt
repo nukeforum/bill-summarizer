@@ -2,6 +2,7 @@ package com.informedcitizen.pipeline.fetch
 
 import com.informedcitizen.pipeline.model.Action
 import com.informedcitizen.pipeline.model.Bill
+import com.informedcitizen.pipeline.model.LifecycleStatus
 import com.informedcitizen.pipeline.model.Outcome
 import com.informedcitizen.pipeline.model.Sponsor
 import okio.Path.Companion.toPath
@@ -121,6 +122,92 @@ class ManifestIOTest {
         assertNotNull(loaded)
         assertEquals(manifest, loaded)
         assertNull(loaded.bills.single().policyArea)
+    }
+
+    @Test fun save_omits_status_when_null() {
+        // Byte-parity (issue #116): Python's build_bill_record deletes a null
+        // `status` exactly as it deletes a null `policy_area`, so Kotlin must
+        // omit the key too. Without this, a carried-forward bill decoded into a
+        // null lifecycleStatus re-serializes as `"status": null` and diverges
+        // from every manifest Python ever wrote.
+        val fs = FakeFileSystem()
+        val store = FileBillsManifestStore(fs, "/out".toPath())
+        store.save(119, listOf(fixture()), nowIso = "2026-05-15T00:00:00Z")
+        val text = fs.source("/out/congress119_bills.json".toPath()).buffer().use { it.readUtf8() }
+        assertTrue("\"status\"" !in text, "null status must be omitted, not written:\n$text")
+        // The other null-valued fields must still be written explicitly.
+        assertTrue("\"short_title\": null" in text, "short_title null must stay explicit:\n$text")
+        assertTrue("\"summary_crs\": null" in text, "summary_crs null must stay explicit:\n$text")
+    }
+
+    @Test fun save_writes_status_when_present() {
+        // The omit rule is null-only: a real lifecycle status is written, in
+        // the declared position between `outcome` and `policy_area` — the key
+        // order Python's record dict produces.
+        val fs = FakeFileSystem()
+        val store = FileBillsManifestStore(fs, "/out".toPath())
+        store.save(
+            119,
+            listOf(fixture().copy(lifecycleStatus = LifecycleStatus.IN_COMMITTEE, policyArea = "Taxation")),
+            nowIso = "2026-05-15T00:00:00Z",
+        )
+        val text = fs.source("/out/congress119_bills.json".toPath()).buffer().use { it.readUtf8() }
+        assertTrue("\"status\": \"in_committee\"" in text, "present status must be written:\n$text")
+        assertTrue(
+            text.indexOf("\"outcome\"") < text.indexOf("\"status\"") &&
+                text.indexOf("\"status\"") < text.indexOf("\"policy_area\""),
+            "status must sit between outcome and policy_area:\n$text",
+        )
+    }
+
+    @Test fun save_omits_both_status_and_policy_area_when_both_null() {
+        // Dropping one key must not resurrect the other: the transform removes
+        // every null key in one pass and leaves the surviving order intact.
+        val fs = FakeFileSystem()
+        val store = FileBillsManifestStore(fs, "/out".toPath())
+        store.save(119, listOf(fixture()), nowIso = "2026-05-15T00:00:00Z")
+        val text = fs.source("/out/congress119_bills.json".toPath()).buffer().use { it.readUtf8() }
+        assertTrue("\"status\"" !in text, "null status must be omitted:\n$text")
+        assertTrue("policy_area" !in text, "null policy_area must be omitted:\n$text")
+        assertTrue(
+            text.indexOf("\"outcome\"") < text.indexOf("\"subjects\""),
+            "surviving key order must be unchanged:\n$text",
+        )
+    }
+
+    @Test fun save_then_load_roundtrip_with_omitted_status() {
+        // Omitting the key on write must not break the read round-trip: a
+        // manifest without `status` decodes back to a null lifecycleStatus.
+        // This is the additive decoding contract — manifests published before
+        // the field existed must keep decoding unchanged.
+        val fs = FakeFileSystem()
+        val store = FileBillsManifestStore(fs, "/out".toPath())
+        val manifest = store.save(119, listOf(fixture()), nowIso = "2026-05-15T00:00:00Z")
+        val loaded = store.load(119)
+        assertNotNull(loaded)
+        assertEquals(manifest, loaded)
+        assertNull(loaded.bills.single().lifecycleStatus)
+    }
+
+    @Test fun load_then_save_normalizes_an_explicit_null_status() {
+        // The #116 regression, reproduced end to end: a manifest carrying the
+        // `"status": null` the Kotlin votes writer used to stamp on must be
+        // rewritten WITHOUT the key, so a single pipeline run converges on the
+        // Python-canonical shape instead of perpetuating the divergence.
+        val fs = FakeFileSystem()
+        val store = FileBillsManifestStore(fs, "/out".toPath())
+        store.save(119, listOf(fixture()), nowIso = "2026-05-15T00:00:00Z")
+        val path = "/out/congress119_bills.json".toPath()
+        val stamped = fs.source(path).buffer().use { it.readUtf8() }
+            .replace("\"outcome\": \"enacted\",", "\"outcome\": \"enacted\",\n      \"status\": null,")
+        fs.write(path) { writeUtf8(stamped) }
+        assertTrue("\"status\": null" in stamped, "precondition: fixture must carry the stray null")
+
+        val reloaded = store.load(119)
+        assertNotNull(reloaded)
+        store.save(119, reloaded.bills, nowIso = "2026-05-15T00:00:00Z")
+        val rewritten = fs.source(path).buffer().use { it.readUtf8() }
+        assertTrue("\"status\"" !in rewritten, "rewrite must drop the stray null status:\n$rewritten")
     }
 
     @Test fun save_stamps_votes_coverage_from_index_presence() {
