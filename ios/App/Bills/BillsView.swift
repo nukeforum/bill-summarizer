@@ -18,7 +18,7 @@ struct BillsView: View {
           }
         }
         .navigationDestination(for: Bill.self) { bill in
-          BillDetailView(bill: bill)
+          BillDetailView(bill: bill, votesCoverage: model.votesCoverage)
         }
     }
     .task {

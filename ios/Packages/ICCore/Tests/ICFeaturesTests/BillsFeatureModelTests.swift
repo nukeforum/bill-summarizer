@@ -20,8 +20,10 @@ struct BillsFeatureModelTests {
       $0.billsClient = BillsClient(fetch: { snapshot })
     } operation: {
       let model = BillsFeatureModel()
+      #expect(!model.votesCoverage)
       await model.load()
       #expect(model.state == .loaded(snapshot))
+      #expect(model.votesCoverage)
     }
   }
 

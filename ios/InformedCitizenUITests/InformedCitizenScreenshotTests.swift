@@ -16,6 +16,12 @@ final class InformedCitizenScreenshotTests: XCTestCase {
     firstBill.tap()
     XCTAssertTrue(app.navigationBars["H.R. 1"].waitForExistence(timeout: 5))
     attachScreenshot(named: "02-bill-detail")
+
+    let rollCall = app.descendants(matching: .any)["roll-call-house-119-1-17"]
+    XCTAssertTrue(rollCall.waitForExistence(timeout: 5))
+    app.swipeUp()
+    XCTAssertTrue(rollCall.isHittable)
+    attachScreenshot(named: "03-bill-votes")
   }
 
   @MainActor
