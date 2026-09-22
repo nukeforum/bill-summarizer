@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T11:01:58Z",
+  "generated_at": "2026-09-22T11:57:13Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
@@ -20,7 +20,8 @@
         "date": "2026-09-18",
         "text": "Became Public Law No: 119-111."
       },
-      "outcome": "enacted",
+      "outcome": "passed_senate",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Civil actions and liability",
@@ -230,6 +231,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4790)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": null,
@@ -256,7 +258,8 @@
         "date": "2026-09-16",
         "text": "Became Public Law No: 119-110."
       },
-      "outcome": "enacted",
+      "outcome": "passed_house",
+      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -325,7 +328,8 @@
         "date": "2026-09-16",
         "text": "Became Public Law No: 119-109."
       },
-      "outcome": "enacted",
+      "outcome": "passed_house",
+      "status": null,
       "policy_area": "Law",
       "subjects": [
         "California",
@@ -389,6 +393,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [],
       "summary_crs": null,
@@ -509,6 +514,7 @@
         "text": "Became Public Law No: 119-105."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Kentucky",
@@ -540,6 +546,7 @@
         "text": "Became Public Law No: 119-106."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Government Operations and Politics",
       "subjects": [
         "Budget deficits and national debt",
@@ -572,6 +579,7 @@
         "text": "Became Public Law No: 119-107."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Art, artists, authorship",
@@ -604,6 +612,7 @@
         "text": "Became Public Law No: 119-108."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Taxation",
       "subjects": [
         "Disaster relief and insurance",
@@ -637,6 +646,7 @@
         "text": "Became Public Law No: 119-104."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Conflicts and wars",
@@ -1105,6 +1115,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4553)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Transportation and Public Works",
       "subjects": [
         "Commemorative events and holidays",
