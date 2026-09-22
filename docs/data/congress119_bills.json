@@ -1,8 +1,185 @@
 {
-  "generated_at": "2026-09-21T12:07:30Z",
+  "generated_at": "2026-09-22T11:01:58Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "hr5334-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "5334",
+      "title": "Lindsey O. Graham Sanctioning Russia and Iran Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Panetta, Jimmy",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2025-09-11",
+      "latest_action": {
+        "date": "2026-09-18",
+        "text": "Became Public Law No: 119-111."
+      },
+      "outcome": "enacted",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Civil actions and liability",
+        "Computers and information technology",
+        "Congressional oversight",
+        "Europe",
+        "Federal officials",
+        "Foreign and international banking",
+        "Foreign loans and debt",
+        "Foreign property",
+        "Fraud offenses and financial crimes",
+        "Human rights",
+        "Immigration status and procedures",
+        "Income tax deductions",
+        "Legislative rules and procedure",
+        "Marine and inland water transportation",
+        "Metals",
+        "Navigation, waterways, harbors",
+        "Oil and gas",
+        "Preschool education",
+        "Presidents and presidential powers, Vice Presidents"
+      ],
+      "summary_crs": "<p><strong>Lindsey O. Graham Sanctioning Russia and Iran Act of 2026</strong></p><p>This bill imposes a variety of sanctions, tariffs, and prohibitions related to Russia, extends an Iran-related sanctions law, and expands a tax deduction&nbsp;for teacher expenses to include early childhood educators.</p><p>For example, under the bill, the President must&nbsp;impose visa- and property-blocking sanctions on specified persons&nbsp;(individuals and entities) such as the Russian president&nbsp;and certain Russian military commanders. The President must also&nbsp;increase&nbsp;the rate of duty up to 100% ad valorem&nbsp;(i.e., relative to the value) on all goods imported into the United States from a country that was among the&nbsp;five largest importers of Russian-origin crude oil or natural gas if such country knowingly makes new purchases of such products after enactment of the bill.</p><p>The bill prohibits (1) the export, reexport, or in-country transfer to or in Russia of any U.S.-produced energy or energy product; (2) U.S. persons from making new investments in Russia or purchasing Russian sovereign debt; and (3) trading the securities of Russian government-owned, -controlled, or -affiliated entities on U.S. national securities exchanges.</p><p>The bill extends through 2031 the Iran Sanctions Act of 1996, which&nbsp;requires the President, with some exceptions, to impose sanctions on certain persons engaged in specified transactions related to Iran's energy sector or Iran's efforts to acquire or develop certain weapons.</p><p>The bill expands eligibility for federal tax deductions of certain educator expenses to early childhood educators providing educational or childcare services to those under age 6.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr5334/BILLS-119hr5334eas.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr5334/BILLS-119hr5334eas.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr5334/BILLS-119hr5334eas.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/5334",
+      "votes": [
+        {
+          "id": "house-119-2-308",
+          "chamber": "house",
+          "session": 2,
+          "roll_number": 308,
+          "date": "2026-09-16",
+          "question": "On Motion to Concur in the Senate Amendments",
+          "result": "Passed",
+          "bill_id": "hr5334-119",
+          "totals": {
+            "yea": 262,
+            "nay": 159,
+            "present": 0,
+            "not_voting": 12
+          },
+          "party_split": {
+            "yea": {
+              "D": 58,
+              "I": 1,
+              "R": 203
+            },
+            "nay": {
+              "D": 152,
+              "R": 7
+            },
+            "not_voting": {
+              "D": 4,
+              "R": 8
+            }
+          },
+          "path": "votes/congress119/house-2-308.json"
+        },
+        {
+          "id": "senate-119-2-224",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 224,
+          "date": "2026-08-07",
+          "question": "On Passage of the Bill",
+          "result": "Bill Passed",
+          "bill_id": "hr5334-119",
+          "totals": {
+            "yea": 86,
+            "nay": 11,
+            "present": 0,
+            "not_voting": 3
+          },
+          "party_split": {
+            "yea": {
+              "D": 36,
+              "I": 1,
+              "R": 49
+            },
+            "nay": {
+              "D": 9,
+              "I": 1,
+              "R": 1
+            },
+            "not_voting": {
+              "R": 3
+            }
+          },
+          "path": "votes/congress119/senate-2-224.json"
+        },
+        {
+          "id": "senate-119-2-213",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 213,
+          "date": "2026-07-29",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Agreed to",
+          "bill_id": "hr5334-119",
+          "totals": {
+            "yea": 84,
+            "nay": 12,
+            "present": 0,
+            "not_voting": 4
+          },
+          "party_split": {
+            "yea": {
+              "D": 33,
+              "I": 1,
+              "R": 50
+            },
+            "nay": {
+              "D": 10,
+              "I": 1,
+              "R": 1
+            },
+            "not_voting": {
+              "D": 2,
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-2-213.json"
+        },
+        {
+          "id": "senate-119-2-212",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 212,
+          "date": "2026-07-28",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Agreed to",
+          "bill_id": "hr5334-119",
+          "totals": {
+            "yea": 86,
+            "nay": 12,
+            "present": 0,
+            "not_voting": 2
+          },
+          "party_split": {
+            "yea": {
+              "D": 35,
+              "I": 1,
+              "R": 50
+            },
+            "nay": {
+              "D": 10,
+              "I": 1,
+              "R": 1
+            },
+            "not_voting": {
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-2-212.json"
+        }
+      ]
+    },
     {
       "id": "hr5345-119",
       "congress": 119,
@@ -50,10 +227,9 @@
       "introduced_date": "2026-07-23",
       "latest_action": {
         "date": "2026-09-17",
-        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4790)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": null,
@@ -80,8 +256,7 @@
         "date": "2026-09-16",
         "text": "Became Public Law No: 119-110."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -150,8 +325,7 @@
         "date": "2026-09-16",
         "text": "Became Public Law No: 119-109."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Law",
       "subjects": [
         "California",
@@ -215,13 +389,12 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [],
       "summary_crs": null,
-      "text_url_html": "https://www.congress.gov/119/bills/sres847/BILLS-119sres847is.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/sres847/BILLS-119sres847is.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/sres847/BILLS-119sres847is.pdf",
+      "text_url_html": "https://www.congress.gov/119/bills/sres847/BILLS-119sres847ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres847/BILLS-119sres847ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres847/BILLS-119sres847ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/847",
       "votes": []
     },
@@ -319,6 +492,134 @@
       "votes": []
     },
     {
+      "id": "hr1276-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "1276",
+      "title": "To remove restrictions from a parcel of land in Paducah, Kentucky.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Comer, James",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2025-02-13",
+      "latest_action": {
+        "date": "2026-09-11",
+        "text": "Became Public Law No: 119-105."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Kentucky",
+        "Land transfers",
+        "Land use and conservation"
+      ],
+      "summary_crs": "<p>This bill directs the Department of the Interior to remove all deed restrictions from approximately 3.62 acres located at 2956 Park Avenue, on the Paducah Memorial Army Reserve Center in&nbsp;Paducah, Kentucky. The restrictions include easements, exceptions, reservations, terms, conditions, and covenants described in the quitclaim deed that was executed on April 27, 2012. The deed conveyed land from Interior to the City of&nbsp;Paducah, Kentucky.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ105/PLAW-119publ105.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ105/PLAW-119publ105_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ105/PLAW-119publ105.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1276",
+      "votes": []
+    },
+    {
+      "id": "hr2069-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "2069",
+      "title": "Stop Secret Spending Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Moore, Barry",
+        "party": "R",
+        "state": "AL"
+      },
+      "introduced_date": "2025-03-11",
+      "latest_action": {
+        "date": "2026-09-11",
+        "text": "Became Public Law No: 119-106."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Budget deficits and national debt",
+        "Congressional oversight",
+        "Government information and archives",
+        "Internet, web applications, social media"
+      ],
+      "summary_crs": "<p><strong>Stop Secret Spending Act of 2025</strong></p><p>This bill expands a requirement for federal agencies to report expenditures on the USAspending.gov website to include <em>other transaction agreement </em>expenditures. (Other transaction agreements, or OTAs, are contractual instruments other than standard procurement contracts, grants, or cooperative agreements; they are exempt from many federal procurement laws and regulations).</p><p>Under current law, federal agencies must report expenditures on federal awards to USAspending.gov with the term <em>federal award</em> defined as federal grants, loans, cooperative agreements, contracts, and certain other types of expenditures. This bill expands the definition of federal award to include expenditures under OTAs, and therefore such expenditures must be included on the USAspending.gov website.</p><p>The Department of the Treasury must ensure that data relating to OTAs are automatically transmitted to the website and a centralized view of this data is available on the website.&nbsp;Treasury must also annually post on the&nbsp;USAspending.gov website a report that includes (1) the total amount of federal spending on federal awards for which data has not been posted on the website, and (2) the reason why such spending data was not posted.</p><p>For 10 years after enactment, the Office of Inspector General of specified federal agencies must periodically submit to Congress and make publicly available a report assessing the agency's spending data and use of data standards.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ106/PLAW-119publ106.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ106/PLAW-119publ106_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ106/PLAW-119publ106.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2069",
+      "votes": []
+    },
+    {
+      "id": "hr2196-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "2196",
+      "title": "National Emergency Medical Services Memorial Extension Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Hudson, Richard",
+        "party": "R",
+        "state": "NC"
+      },
+      "introduced_date": "2025-03-18",
+      "latest_action": {
+        "date": "2026-09-11",
+        "text": "Became Public Law No: 119-107."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Art, artists, authorship",
+        "District of Columbia",
+        "First responders and emergency personnel",
+        "Monuments and memorials"
+      ],
+      "summary_crs": "<p><strong>National Emergency Medical Services Memorial Extension Act</strong></p><p>This bill reauthorizes the National Emergency Medical Services Memorial Foundation to establish&nbsp;in Washington, DC, a monument to commemorate the commitment and service represented by emergency medical services. This authorization expires seven years after enactment of the bill.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ107/PLAW-119publ107.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ107/PLAW-119publ107_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ107/PLAW-119publ107.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2196",
+      "votes": []
+    },
+    {
+      "id": "hr5366-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "5366",
+      "title": "Doug LaMalfa Federal Disaster Tax Relief Certainty Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Steube, W. Gregory",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2025-09-15",
+      "latest_action": {
+        "date": "2026-09-11",
+        "text": "Became Public Law No: 119-108."
+      },
+      "outcome": "enacted",
+      "policy_area": "Taxation",
+      "subjects": [
+        "Disaster relief and insurance",
+        "Fires",
+        "Forests, forestry, trees",
+        "Income tax deductions",
+        "Natural disasters"
+      ],
+      "summary_crs": "<p><strong>Doug LaMalfa Federal Disaster Tax Relief Certainty Act</strong></p><p>This act extends the federal tax deduction for qualified disaster-related personal casualty losses and the exclusion from gross income of qualified wildfire relief payments.</p><p>Under current law, unreimbursed personal casualty losses arising in a qualified disaster area (qualified disaster-related personal casualty losses) are deductible (as an itemized tax deduction or as part of the standard tax deduction) if such losses exceed $500 per casualty. A <em>qualified disaster area</em> is an area with respect to which a major disaster has been declared during the period beginning in 2020 and ending 60 days after&nbsp;July 4, 2025, if the incident period begins on or after December 28, 2019, and on or before July 4, 2025.</p><p>The act extends the federal tax deduction for qualified disaster-related personal casualty losses by defining a <em>qualified disaster area</em> as an area with respect to which a major disaster&nbsp;has been declared if the incident period&nbsp;begins on or after December 28, 2019, and before January 1, 2027.</p><p>The act provides&nbsp;that the exclusion from gross income of qualified wildfire relief payments applies to such payments attributable to forest or range fires declared a federal disaster after 2014 and before 2027, regardless of when such payments are received. (Currently, qualified wildfire relief payments attributable to forest or range fires declared a federal disaster after 2014 and received after 2019 and before 2026 may be excluded from gross income.)</p><p>The act also provides statutory authority for several related tax rules.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr5366/BILLS-119hr5366rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr5366/BILLS-119hr5366rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr5366/BILLS-119hr5366rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/5366",
+      "votes": []
+    },
+    {
       "id": "s858-119",
       "congress": 119,
       "type": "s",
@@ -336,7 +637,6 @@
         "text": "Became Public Law No: 119-104."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Conflicts and wars",
@@ -606,300 +906,6 @@
       ]
     },
     {
-      "id": "hr1276-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "1276",
-      "title": "To remove restrictions from a parcel of land in Paducah, Kentucky.",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Comer, James",
-        "party": "R",
-        "state": "KY"
-      },
-      "introduced_date": "2025-02-13",
-      "latest_action": {
-        "date": "2026-08-07",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S4551-4552)"
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "Public Lands and Natural Resources",
-      "subjects": [
-        "Kentucky",
-        "Land transfers",
-        "Land use and conservation"
-      ],
-      "summary_crs": "<p>This bill directs the Department of the Interior to remove all deed restrictions from approximately 3.62 acres located at 2956 Park Avenue, on the Paducah Memorial Army Reserve Center in&nbsp;Paducah, Kentucky. The restrictions include easements, exceptions, reservations, terms, conditions, and covenants described in the quitclaim deed that was executed on April 27, 2012. The deed conveyed land from Interior to the City of&nbsp;Paducah, Kentucky.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr1276/BILLS-119hr1276rfs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr1276/BILLS-119hr1276rfs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr1276/BILLS-119hr1276rfs.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1276",
-      "votes": []
-    },
-    {
-      "id": "hr2069-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "2069",
-      "title": "Stop Secret Spending Act of 2025",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Moore, Barry",
-        "party": "R",
-        "state": "AL"
-      },
-      "introduced_date": "2025-03-11",
-      "latest_action": {
-        "date": "2026-08-07",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S4547)"
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "Government Operations and Politics",
-      "subjects": [
-        "Budget deficits and national debt",
-        "Congressional oversight",
-        "Government information and archives",
-        "Internet, web applications, social media"
-      ],
-      "summary_crs": "<p><strong>Stop Secret Spending Act of 2025</strong></p><p>This bill expands a requirement for federal agencies to report expenditures on the USAspending.gov website to include <em>other transaction agreement </em>expenditures. (Other transaction agreements, or OTAs, are contractual instruments other than standard procurement contracts, grants, or cooperative agreements; they are exempt from many federal procurement laws and regulations).</p><p>Under current law, federal agencies must report expenditures on federal awards to USAspending.gov with the term <em>federal award</em> defined as federal grants, loans, cooperative agreements, contracts, and certain other types of expenditures. This bill expands the definition of federal award to include expenditures under OTAs, and therefore such expenditures must be included on the USAspending.gov website.</p><p>The Department of the Treasury must ensure that data relating to OTAs are automatically transmitted to the website and a centralized view of this data is available on the website.&nbsp;Treasury must also annually post on the&nbsp;USAspending.gov website a report that includes (1) the total amount of federal spending on federal awards for which data has not been posted on the website, and (2) the reason why such spending data was not posted.</p><p>For 10 years after enactment, the Office of Inspector General of specified federal agencies must periodically submit to Congress and make publicly available a report assessing the agency's spending data and use of data standards.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr2069/BILLS-119hr2069eh.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr2069/BILLS-119hr2069eh.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr2069/BILLS-119hr2069eh.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2069",
-      "votes": []
-    },
-    {
-      "id": "hr2196-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "2196",
-      "title": "National Emergency Medical Services Memorial Extension Act",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Hudson, Richard",
-        "party": "R",
-        "state": "NC"
-      },
-      "introduced_date": "2025-03-18",
-      "latest_action": {
-        "date": "2026-08-07",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S4551)"
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "Public Lands and Natural Resources",
-      "subjects": [
-        "Art, artists, authorship",
-        "District of Columbia",
-        "First responders and emergency personnel",
-        "Monuments and memorials"
-      ],
-      "summary_crs": "<p><strong>National Emergency Medical Services Memorial Extension Act</strong></p><p>This bill reauthorizes the National Emergency Medical Services Memorial Foundation to establish&nbsp;in Washington, DC, a monument to commemorate the commitment and service represented by emergency medical services. This authorization expires seven years after enactment of the bill.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr2196/BILLS-119hr2196rfs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr2196/BILLS-119hr2196rfs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr2196/BILLS-119hr2196rfs.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2196",
-      "votes": []
-    },
-    {
-      "id": "hr5334-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "5334",
-      "title": "Lindsey O. Graham Sanctioning Russia and Iran Act of 2026",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Panetta, Jimmy",
-        "party": "D",
-        "state": "CA"
-      },
-      "introduced_date": "2025-09-11",
-      "latest_action": {
-        "date": "2026-08-07",
-        "text": "Passed Senate with an amendment and an amendment to the Title by Yea-Nay Vote. 86 - 11. Record Vote Number: 224."
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "International Affairs",
-      "subjects": [
-        "Income tax deductions",
-        "Preschool education",
-        "Teaching, teachers, curricula"
-      ],
-      "summary_crs": "<p><strong>Supporting Early-childhood Educators' Deductions Act of 2025 or the SEED Act of 2025</strong></p><p>This bill expands&nbsp;eligibility for the above-the-line federal tax deduction for certain eligible educator expenses to include early childhood educators. (An above-the-line tax deduction is subtracted from gross income to calculate adjusted gross income.)</p><p>Under current law, kindergarten through grade 12 teachers, instructors, counselors, principals, or aides in schools that provide&nbsp;elementary or secondary education are allowed an above-the-line tax deduction of up to $300 (in 2025 and adjusted annually) for certain unreimbursed professional development and classroom expenses. (Other conditions apply.)</p><p>The bill expands eligibility for the tax deduction for such educator expenses to include early childhood educators in schools that provide early childhood (pre-kindergarten) education.&nbsp;</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr5334/BILLS-119hr5334eas.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr5334/BILLS-119hr5334eas.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr5334/BILLS-119hr5334eas.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/5334",
-      "votes": [
-        {
-          "id": "house-119-2-308",
-          "chamber": "house",
-          "session": 2,
-          "roll_number": 308,
-          "date": "2026-09-16",
-          "question": "On Motion to Concur in the Senate Amendments",
-          "result": "Passed",
-          "bill_id": "hr5334-119",
-          "totals": {
-            "yea": 262,
-            "nay": 159,
-            "present": 0,
-            "not_voting": 12
-          },
-          "party_split": {
-            "yea": {
-              "D": 58,
-              "I": 1,
-              "R": 203
-            },
-            "nay": {
-              "D": 152,
-              "R": 7
-            },
-            "not_voting": {
-              "D": 4,
-              "R": 8
-            }
-          },
-          "path": "votes/congress119/house-2-308.json"
-        },
-        {
-          "id": "senate-119-2-224",
-          "chamber": "senate",
-          "session": 2,
-          "roll_number": 224,
-          "date": "2026-08-07",
-          "question": "On Passage of the Bill",
-          "result": "Bill Passed",
-          "bill_id": "hr5334-119",
-          "totals": {
-            "yea": 86,
-            "nay": 11,
-            "present": 0,
-            "not_voting": 3
-          },
-          "party_split": {
-            "yea": {
-              "D": 36,
-              "I": 1,
-              "R": 49
-            },
-            "nay": {
-              "D": 9,
-              "I": 1,
-              "R": 1
-            },
-            "not_voting": {
-              "R": 3
-            }
-          },
-          "path": "votes/congress119/senate-2-224.json"
-        },
-        {
-          "id": "senate-119-2-213",
-          "chamber": "senate",
-          "session": 2,
-          "roll_number": 213,
-          "date": "2026-07-29",
-          "question": "On the Motion to Proceed",
-          "result": "Motion to Proceed Agreed to",
-          "bill_id": "hr5334-119",
-          "totals": {
-            "yea": 84,
-            "nay": 12,
-            "present": 0,
-            "not_voting": 4
-          },
-          "party_split": {
-            "yea": {
-              "D": 33,
-              "I": 1,
-              "R": 50
-            },
-            "nay": {
-              "D": 10,
-              "I": 1,
-              "R": 1
-            },
-            "not_voting": {
-              "D": 2,
-              "R": 2
-            }
-          },
-          "path": "votes/congress119/senate-2-213.json"
-        },
-        {
-          "id": "senate-119-2-212",
-          "chamber": "senate",
-          "session": 2,
-          "roll_number": 212,
-          "date": "2026-07-28",
-          "question": "On Cloture on the Motion to Proceed",
-          "result": "Cloture on the Motion to Proceed Agreed to",
-          "bill_id": "hr5334-119",
-          "totals": {
-            "yea": 86,
-            "nay": 12,
-            "present": 0,
-            "not_voting": 2
-          },
-          "party_split": {
-            "yea": {
-              "D": 35,
-              "I": 1,
-              "R": 50
-            },
-            "nay": {
-              "D": 10,
-              "I": 1,
-              "R": 1
-            },
-            "not_voting": {
-              "R": 2
-            }
-          },
-          "path": "votes/congress119/senate-2-212.json"
-        }
-      ]
-    },
-    {
-      "id": "hr5366-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "5366",
-      "title": "Doug LaMalfa Federal Disaster Tax Relief Certainty Act",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Steube, W. Gregory",
-        "party": "R",
-        "state": "FL"
-      },
-      "introduced_date": "2025-09-15",
-      "latest_action": {
-        "date": "2026-08-07",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S4547)"
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "Taxation",
-      "subjects": [
-        "Disaster relief and insurance",
-        "Fires",
-        "Forests, forestry, trees",
-        "Income tax deductions",
-        "Natural disasters"
-      ],
-      "summary_crs": "<p><strong>Doug LaMalfa Federal Disaster Tax Relief Certainty Act</strong></p><p>This bill extends the federal tax deduction for qualified disaster-related personal casualty losses and the exclusion from gross income of qualified wildfire relief payments.</p><p>Under current law, unreimbursed personal casualty losses arising in a qualified disaster area (qualified disaster-related personal casualty losses) are deductible (as an itemized tax deduction or as part of the standard tax deduction) if such losses exceed $500 per casualty.  A <em>qualified disaster area</em> is an area with respect to which a major disaster has been declared during the period beginning in 2020 and ending 60 days after&nbsp;July 4, 2025, if the incident period begins on or after December 28, 2019, and on or before July 4, 2025.</p><p>The bill extends the federal tax deduction for qualified disaster-related personal casualty losses by defining a <em>qualified disaster area</em> as an area with respect to which a major disaster&nbsp;has been declared if the incident period&nbsp;begins on or after December 28, 2019, and before January 1, 2027.</p><p>The bill provides&nbsp;that the exclusion from gross income of qualified wildfire relief payments applies to such payments attributable to forest or range fires declared a federal disaster after 2014 and before 2027, regardless of when such payments are received. (Currently, qualified wildfire relief payments attributable to forest or range fires declared a federal disaster after 2014 and received after 2019 and before 2026 may be excluded from gross income.)</p><p>The bill also provides statutory authority for several related tax rules.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr5366/BILLS-119hr5366rfs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr5366/BILLS-119hr5366rfs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr5366/BILLS-119hr5366rfs.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/5366",
-      "votes": []
-    },
-    {
       "id": "s1525-119",
       "congress": 119,
       "type": "s",
@@ -1099,7 +1105,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4553)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Transportation and Public Works",
       "subjects": [
         "Commemorative events and holidays",
