@@ -18,7 +18,26 @@ extension Bill {
     policyArea: "Government Operations and Politics",
     subjects: ["Government information and archives"],
     summaryCRS: "Makes legislative information easier for the public to find and understand.",
-    congressURL: URL(string: "https://www.congress.gov/bill/119th-congress/house-bill/1")!
+    congressURL: URL(string: "https://www.congress.gov/bill/119th-congress/house-bill/1")!,
+    votes: [
+      RollCallVoteReference(
+        id: "house-119-1-17",
+        chamber: .house,
+        session: 1,
+        rollNumber: 17,
+        date: "2026-09-17",
+        question: "On Passage",
+        result: "Passed",
+        billID: "hr-1-119",
+        totals: VoteTotals(yea: 218, nay: 210, present: 0, notVoting: 7),
+        partySplit: [
+          "yea": ["D": 210, "R": 8],
+          "nay": ["R": 210],
+          "not_voting": ["D": 2, "R": 5],
+        ],
+        path: "votes/congress119/house-1-17.json"
+      )
+    ]
   )
 
   public static let samples: [Bill] = [

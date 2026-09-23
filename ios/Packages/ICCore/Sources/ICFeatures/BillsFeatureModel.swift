@@ -42,6 +42,11 @@ public final class BillsFeatureModel {
     }
   }
 
+  public var votesCoverage: Bool {
+    guard case .loaded(let snapshot) = state else { return false }
+    return snapshot.votesCoverage
+  }
+
   public func load() async {
     state = .loading
     do {

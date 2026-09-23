@@ -33,5 +33,30 @@ struct BillDecodingTests {
     #expect(manifest.votesCoverage == false)
     #expect(manifest.bills.first?.outcome == .unknown)
     #expect(manifest.bills.first?.lifecycleStatus == .unknown)
+    #expect(manifest.bills.first?.votes.isEmpty == true)
+  }
+
+  @Test("Unknown vote chambers decode safely")
+  func unknownVoteChamber() throws {
+    let data = Data(
+      """
+      {
+        "id": "future-119-1-1",
+        "chamber": "joint",
+        "session": 1,
+        "roll_number": 1,
+        "date": "2026-09-22",
+        "question": "On the Question",
+        "result": "Agreed to",
+        "totals": {"yea": 1, "nay": 0, "present": 0, "not_voting": 0},
+        "path": "votes/congress119/future-1-1.json"
+      }
+      """.utf8
+    )
+
+    let vote = try JSONDecoder().decode(RollCallVoteReference.self, from: data)
+
+    #expect(vote.chamber == .unknown)
+    #expect(vote.partySplit.isEmpty)
   }
 }

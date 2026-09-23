@@ -45,6 +45,13 @@ struct PublishedBillsAPITests {
     #expect(bill.outcome == .passedHouse)
     #expect(bill.policyArea == "Crime and Law Enforcement")
     #expect(bill.subjects == ["Congressional oversight", "Department of Justice"])
+    let vote = try #require(bill.votes.first)
+    #expect(vote.id == "house-119-2-284")
+    #expect(vote.chamber == .house)
+    #expect(vote.rollNumber == 284)
+    #expect(vote.totals.yea == 376)
+    #expect(vote.totals.notVoting == 46)
+    #expect(vote.partySplit["yea"] == ["D": 189, "R": 187])
   }
 
   @Test("HTTP errors retain the response status")

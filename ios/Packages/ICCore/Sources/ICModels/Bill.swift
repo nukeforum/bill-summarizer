@@ -51,6 +51,7 @@ public struct Bill: Codable, Identifiable, Hashable, Sendable {
   public let summaryCRS: String?
   public let textURLHTML: URL?
   public let congressURL: URL
+  public let votes: [RollCallVoteReference]
 
   public init(
     id: String,
@@ -68,7 +69,8 @@ public struct Bill: Codable, Identifiable, Hashable, Sendable {
     subjects: [String] = [],
     summaryCRS: String? = nil,
     textURLHTML: URL? = nil,
-    congressURL: URL
+    congressURL: URL,
+    votes: [RollCallVoteReference] = []
   ) {
     self.id = id
     self.congress = congress
@@ -86,6 +88,7 @@ public struct Bill: Codable, Identifiable, Hashable, Sendable {
     self.summaryCRS = summaryCRS
     self.textURLHTML = textURLHTML
     self.congressURL = congressURL
+    self.votes = votes
   }
 
   public var displayNumber: String {
@@ -105,7 +108,7 @@ public struct Bill: Codable, Identifiable, Hashable, Sendable {
   }
 
   private enum CodingKeys: String, CodingKey {
-    case id, congress, type, number, title, sponsor, outcome, subjects
+    case id, congress, type, number, title, sponsor, outcome, subjects, votes
     case shortTitle = "short_title"
     case introducedDate = "introduced_date"
     case latestAction = "latest_action"
@@ -134,6 +137,7 @@ public struct Bill: Codable, Identifiable, Hashable, Sendable {
     summaryCRS = try container.decodeIfPresent(String.self, forKey: .summaryCRS)
     textURLHTML = try container.decodeIfPresent(URL.self, forKey: .textURLHTML)
     congressURL = try container.decode(URL.self, forKey: .congressURL)
+    votes = try container.decodeIfPresent([RollCallVoteReference].self, forKey: .votes) ?? []
   }
 }
 
