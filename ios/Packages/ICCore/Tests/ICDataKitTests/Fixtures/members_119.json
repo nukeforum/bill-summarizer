@@ -1,0 +1,56 @@
+{
+  "congress": 119,
+  "generated_at": "2026-09-20T08:12:34Z",
+  "members": [
+    {
+      "bioguide_id": "K000377",
+      "name": "Mark Kelly",
+      "party": "D",
+      "state": "AZ",
+      "district": null,
+      "chamber": "senate",
+      "photo_url": "https://example.test/kelly.jpg",
+      "official_url": "https://www.congress.gov/member/mark-kelly/K000377",
+      "sponsored_count": 12,
+      "cosponsored_count": 84,
+      "address": "516 Hart Senate Office Building",
+      "phone": "(202) 224-2235",
+      "contact_form": "https://www.kelly.senate.gov/contact/contact-form/",
+      "website": "https://www.kelly.senate.gov",
+      "socials": [
+        { "platform": "instagram", "handle": "senmarkkelly" }
+      ],
+      "next_election_year": 2028
+    },
+    {
+      "bioguide_id": "G000574",
+      "name": "Ruben Gallego",
+      "party": "D",
+      "state": "AZ",
+      "district": null,
+      "chamber": "senate",
+      "sponsored_count": 4,
+      "cosponsored_count": 21,
+      "phone": "(202) 224-4521",
+      "website": "https://www.gallego.senate.gov",
+      "socials": [],
+      "next_election_year": 2030
+    },
+    {
+      "bioguide_id": "S001183",
+      "name": "David Schweikert",
+      "party": "R",
+      "state": "AZ",
+      "district": 1,
+      "chamber": "house",
+      "sponsored_count": 9,
+      "cosponsored_count": 52,
+      "phone": "(202) 225-2190",
+      "website": "https://schweikert.house.gov",
+      "socials": [
+        { "platform": "twitter", "handle": "RepDavid" }
+      ],
+      "next_election_year": 2026
+    }
+  ]
+}
