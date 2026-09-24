@@ -1,8 +1,37 @@
 {
-  "generated_at": "2026-09-23T11:58:00Z",
+  "generated_at": "2026-09-24T12:04:50Z",
   "congress": 119,
-  "vote_count": 1574,
+  "vote_count": 1575,
   "votes": [
+    {
+      "id": "senate-119-2-241",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 241,
+      "date": "2026-09-23",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 50,
+        "nay": 47,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "R": 50
+        },
+        "nay": {
+          "D": 45,
+          "I": 2
+        },
+        "not_voting": {
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-241.json"
+    },
     {
       "id": "senate-119-2-240",
       "chamber": "senate",
