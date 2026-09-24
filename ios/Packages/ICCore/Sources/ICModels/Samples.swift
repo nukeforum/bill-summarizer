@@ -61,3 +61,48 @@ extension Bill {
     ),
   ]
 }
+
+extension Member {
+  public static let sampleHouse = Member(
+    bioguideID: "S001183",
+    name: "David Schweikert",
+    party: "R",
+    state: "AZ",
+    district: 1,
+    chamber: .house,
+    phone: "(202) 225-2190",
+    website: URL(string: "https://schweikert.house.gov"),
+    socials: [SocialHandle(platform: "twitter", handle: "RepDavid")]
+  )
+
+  public static let sampleSenators = [
+    Member(
+      bioguideID: "K000377",
+      name: "Mark Kelly",
+      party: "D",
+      state: "AZ",
+      chamber: .senate,
+      phone: "(202) 224-2235",
+      contactForm: URL(string: "https://www.kelly.senate.gov/contact/contact-form/"),
+      website: URL(string: "https://www.kelly.senate.gov"),
+      socials: [SocialHandle(platform: "instagram", handle: "senmarkkelly")]
+    ),
+    Member(
+      bioguideID: "G000574",
+      name: "Ruben Gallego",
+      party: "D",
+      state: "AZ",
+      chamber: .senate,
+      phone: "(202) 224-4521",
+      website: URL(string: "https://www.gallego.senate.gov")
+    ),
+  ]
+}
+
+extension MembersIndex {
+  public static let sample = MembersIndex(
+    congress: 119,
+    generatedAt: "2026-09-20T08:12:34Z",
+    members: Member.sampleSenators + [Member.sampleHouse]
+  )
+}

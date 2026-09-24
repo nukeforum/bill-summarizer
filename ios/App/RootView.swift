@@ -3,6 +3,7 @@ import SwiftUI
 
 struct RootView: View {
   let model: BillsFeatureModel
+  let representativesModel: RepresentativesFeatureModel
 
   var body: some View {
     TabView {
@@ -11,17 +12,10 @@ struct RootView: View {
           Label("Bills", systemImage: "doc.text")
         }
 
-      NavigationStack {
-        ContentUnavailableView(
-          "Representatives",
-          systemImage: "building.columns",
-          description: Text("Representative lookup is coming in the next port milestone.")
-        )
-        .navigationTitle("Representatives")
-      }
-      .tabItem {
-        Label("Reps", systemImage: "building.columns")
-      }
+      RepresentativesView(model: representativesModel)
+        .tabItem {
+          Label("Reps", systemImage: "building.columns")
+        }
     }
   }
 }

@@ -2,7 +2,7 @@ import XCTest
 
 final class InformedCitizenScreenshotTests: XCTestCase {
   @MainActor
-  func testBillsFeedAndDetail() throws {
+  func testCoreUserJourney() throws {
     let app = XCUIApplication()
     app.launchArguments += ["-SCREENSHOT_MODE"]
     app.launch()
@@ -22,6 +22,20 @@ final class InformedCitizenScreenshotTests: XCTestCase {
     app.swipeUp()
     XCTAssertTrue(rollCall.isHittable)
     attachScreenshot(named: "03-bill-votes")
+
+    app.navigationBars["H.R. 1"].buttons.element(boundBy: 0).tap()
+    app.tabBars.buttons["Reps"].tap()
+    XCTAssertTrue(app.staticTexts["Mark Kelly"].waitForExistence(timeout: 5))
+    XCTAssertTrue(app.staticTexts["David Schweikert"].exists)
+    attachScreenshot(named: "04-representatives")
+
+    app.navigationBars["Representatives"].buttons["Representative options"].tap()
+    app.buttons["Change location"].tap()
+    XCTAssertTrue(
+      app.staticTexts[
+        "Choose your state and congressional district to see your House representative and senators."
+      ].waitForExistence(timeout: 5))
+    attachScreenshot(named: "05-representative-location")
   }
 
   @MainActor
