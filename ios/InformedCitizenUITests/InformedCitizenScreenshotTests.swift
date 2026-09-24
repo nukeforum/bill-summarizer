@@ -23,6 +23,18 @@ final class InformedCitizenScreenshotTests: XCTestCase {
     XCTAssertTrue(rollCall.isHittable)
     attachScreenshot(named: "03-bill-votes")
 
+    let congressLink = app.buttons["View on Congress.gov"]
+    for _ in 0..<3 where !congressLink.isHittable {
+      app.swipeUp()
+    }
+    XCTAssertTrue(congressLink.isHittable)
+    congressLink.tap()
+    let closeBrowser = app.buttons["Close"]
+    XCTAssertTrue(closeBrowser.waitForExistence(timeout: 5))
+    attachScreenshot(named: "03-in-app-browser")
+    closeBrowser.tap()
+    XCTAssertTrue(app.navigationBars["H.R. 1"].waitForExistence(timeout: 5))
+
     app.navigationBars["H.R. 1"].buttons.element(boundBy: 0).tap()
     app.tabBars.buttons["Reps"].tap()
     XCTAssertTrue(app.staticTexts["Mark Kelly"].waitForExistence(timeout: 5))
