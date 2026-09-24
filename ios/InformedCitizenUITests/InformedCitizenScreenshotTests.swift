@@ -29,13 +29,24 @@ final class InformedCitizenScreenshotTests: XCTestCase {
     XCTAssertTrue(app.staticTexts["David Schweikert"].exists)
     attachScreenshot(named: "04-representatives")
 
+    app.buttons["representative-detail-K000377"].tap()
+    XCTAssertTrue(app.navigationBars["Mark Kelly"].waitForExistence(timeout: 5))
+    XCTAssertTrue(app.staticTexts["Recent voting record (3)"].waitForExistence(timeout: 5))
+    attachScreenshot(named: "05-member-voting-record")
+
+    app.segmentedControls.buttons["Sponsored"].tap()
+    let sponsoredBill = app.descendants(matching: .any)["member-legislation-s4478-119"]
+    XCTAssertTrue(sponsoredBill.waitForExistence(timeout: 5))
+    attachScreenshot(named: "06-member-sponsored-bills")
+
+    app.navigationBars["Mark Kelly"].buttons.element(boundBy: 0).tap()
     app.navigationBars["Representatives"].buttons["Representative options"].tap()
     app.buttons["Change location"].tap()
     XCTAssertTrue(
       app.staticTexts[
         "Choose your state and congressional district to see your House representative and senators."
       ].waitForExistence(timeout: 5))
-    attachScreenshot(named: "05-representative-location")
+    attachScreenshot(named: "07-representative-location")
   }
 
   @MainActor
