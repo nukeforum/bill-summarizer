@@ -1,8 +1,41 @@
 {
-  "generated_at": "2026-09-23T16:35:54Z",
+  "generated_at": "2026-09-24T16:55:04Z",
   "congress": 111,
   "votes_coverage": false,
   "bills": [
+    {
+      "id": "s3592-111",
+      "congress": 111,
+      "type": "s",
+      "number": "3592",
+      "title": "A bill to designate the facility of the United States Postal Service located at 100 Commerce Drive in Tyrone, Georgia, as the \"First Lieutenant Robert Wilson Collins Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Chambliss, Saxby",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2010-07-15",
+      "latest_action": {
+        "date": "2011-01-04",
+        "text": "Became Public Law No: 111-379."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Congressional tributes",
+        "Georgia",
+        "Government buildings, facilities, and property",
+        "Military personnel and dependents",
+        "Postal service"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p>Designates the facility of the United States Postal Service located at 100 Commerce Drive in Tyrone, Georgia, as the \"First Lieutenant Robert Wilson Collins Post Office Building.\"",
+      "text_url_html": "https://www.congress.gov/111/plaws/publ379/PLAW-111publ379.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/111/plaws/publ379/PLAW-111publ379.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/111th-congress/senate-bill/3592",
+      "votes": []
+    },
     {
       "id": "sres705-111",
       "congress": 111,
@@ -497,6 +530,41 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/111/plaws/publ289/PLAW-111publ289.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/111th-congress/senate-joint-resolution/40",
+      "votes": []
+    },
+    {
+      "id": "s3774-111",
+      "congress": 111,
+      "type": "s",
+      "number": "3774",
+      "title": "A bill to extend the deadline for Social Services Block Grant expenditures of supplemental funds appropriated following disasters occurring in 2008.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cornyn, John",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2010-09-14",
+      "latest_action": {
+        "date": "2010-11-24",
+        "text": "Became Public Law No: 111-285."
+      },
+      "outcome": "enacted",
+      "policy_area": "Social Welfare",
+      "subjects": [
+        "Alabama",
+        "Disaster relief and insurance",
+        "Louisiana",
+        "Mississippi",
+        "Natural disasters",
+        "Poverty and welfare assistance",
+        "Texas"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the Senate on September 29, 2010. The summary of that version is repeated here.)</b></p> <p>Extends through FY2011 the deadline for state expenditure of certain emergency supplemental appropriations to the Department of Health and Human Services (HHS) for the Administration for Children and Families provided for recovery from Hurricanes Ike and Rita and other 2008 natural disasters.</p>",
+      "text_url_html": "https://www.congress.gov/111/plaws/publ285/PLAW-111publ285.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/111/plaws/publ285/PLAW-111publ285.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/111th-congress/senate-bill/3774",
       "votes": []
     },
     {
@@ -4287,6 +4355,36 @@
       "text_url_xml": "https://www.congress.gov/111/bills/sres386/BILLS-111sres386ats.xml",
       "text_url_pdf": "https://www.congress.gov/111/bills/sres386/BILLS-111sres386ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/111th-congress/senate-resolution/386",
+      "votes": []
+    },
+    {
+      "id": "s1825-111",
+      "congress": 111,
+      "type": "s",
+      "number": "1825",
+      "title": "A bill to extend the authority for relocation expenses test programs for Federal employees, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lieberman, Joseph I.",
+        "party": "I",
+        "state": "CT"
+      },
+      "introduced_date": "2009-10-21",
+      "latest_action": {
+        "date": "2009-11-30",
+        "text": "Became Public Law No: 111-112."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Government employee pay, benefits, personnel management",
+        "Transportation costs"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the Senate on November 9, 2009. The summary of that version is repeated here.)</b></p><p>Authorizes the Administrator of General Services (GSA) to extend the authority for a relocation expenses test program for federal employees upon the request of the agency administering the program. Requires each such agency to annually submit a report on the results of the program to the Administrator.</p><p>Increases to 12 the number of test programs that may be conducted simultaneously. Limits approval for any test program to an initial four-year period, with four-year extensions authorized. </p><p>Repeals a provision disclaiming any intent to limit agency authority to conduct such test programs.</p>",
+      "text_url_html": "https://www.congress.gov/111/plaws/publ112/PLAW-111publ112.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/111/plaws/publ112/PLAW-111publ112.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/111th-congress/senate-bill/1825",
       "votes": []
     },
     {
