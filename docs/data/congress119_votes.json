@@ -1,8 +1,100 @@
 {
-  "generated_at": "2026-09-24T12:04:50Z",
+  "generated_at": "2026-09-25T12:04:51Z",
   "congress": 119,
-  "vote_count": 1575,
+  "vote_count": 1578,
   "votes": [
+    {
+      "id": "senate-119-2-244",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 244,
+      "date": "2026-09-24",
+      "question": "On the Concurrent Resolution",
+      "result": "Concurrent Resolution Rejected",
+      "bill_id": "hconres89-119",
+      "totals": {
+        "yea": 49,
+        "nay": 50,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 43,
+          "I": 2,
+          "R": 4
+        },
+        "nay": {
+          "D": 1,
+          "R": 49
+        },
+        "not_voting": {
+          "D": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-244.json"
+    },
+    {
+      "id": "senate-119-2-243",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 243,
+      "date": "2026-09-24",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": "s4668-119",
+      "totals": {
+        "yea": 74,
+        "nay": 25,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 24,
+          "I": 1,
+          "R": 49
+        },
+        "nay": {
+          "D": 21,
+          "I": 1,
+          "R": 3
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-243.json"
+    },
+    {
+      "id": "senate-119-2-242",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 242,
+      "date": "2026-09-24",
+      "question": "On the Amendment",
+      "result": "Amendment Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 77,
+        "nay": 23,
+        "present": 0,
+        "not_voting": 0
+      },
+      "party_split": {
+        "yea": {
+          "D": 26,
+          "I": 1,
+          "R": 50
+        },
+        "nay": {
+          "D": 19,
+          "I": 1,
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-242.json"
+    },
     {
       "id": "senate-119-2-241",
       "chamber": "senate",
