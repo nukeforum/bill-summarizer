@@ -1,8 +1,181 @@
 {
-  "generated_at": "2026-09-24T12:04:50Z",
+  "generated_at": "2026-09-25T11:16:01Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "hconres89-119",
+      "congress": 119,
+      "type": "hconres",
+      "number": "89",
+      "title": "Directing the President, pursuant to section 5(c) of the War Powers Resolution, to remove United States Armed Forces from hostilities with Iran.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Jayapal, Pramila",
+        "party": "D",
+        "state": "WA"
+      },
+      "introduced_date": "2026-04-23",
+      "latest_action": {
+        "date": "2026-09-24",
+        "text": "Failed of passage in Senate by Yea-Nay Vote. 49 - 50. Record Vote Number: 244."
+      },
+      "outcome": "failed",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Conflicts and wars",
+        "Congressional-executive branch relations",
+        "Intelligence activities, surveillance, classified information",
+        "Iran",
+        "Middle East",
+        "Military operations and strategy",
+        "Presidents and presidential powers, Vice Presidents"
+      ],
+      "summary_crs": "<p>This concurrent resolution directs the President to remove U.S. Armed Forces from hostilities&nbsp;against Iran or any part of its government or military unless a declaration of war or authorization to use military force for such purpose has been enacted.</p><p>The resolution specifies that it shall not be construed to prevent the United States from defending itself, its Armed Forces, its diplomatic facilities, or allied states from imminent attack.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hconres89/BILLS-119hconres89eh.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hconres89/BILLS-119hconres89eh.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hconres89/BILLS-119hconres89eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-concurrent-resolution/89",
+      "votes": [
+        {
+          "id": "house-119-2-282",
+          "chamber": "house",
+          "session": 2,
+          "roll_number": 282,
+          "date": "2026-07-23",
+          "question": "On Agreeing to the Resolution",
+          "result": "Passed",
+          "bill_id": "hconres89-119",
+          "totals": {
+            "yea": 214,
+            "nay": 208,
+            "present": 0,
+            "not_voting": 9
+          },
+          "party_split": {
+            "yea": {
+              "D": 210,
+              "R": 4
+            },
+            "nay": {
+              "I": 1,
+              "R": 207
+            },
+            "not_voting": {
+              "D": 2,
+              "R": 7
+            }
+          },
+          "path": "votes/congress119/house-2-282.json"
+        }
+      ]
+    },
+    {
+      "id": "hr2388-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "2388",
+      "title": "Lower Elwha Klallam Tribe Project Lands Restoration Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Randall, Emily",
+        "party": "D",
+        "state": "WA"
+      },
+      "introduced_date": "2025-03-26",
+      "latest_action": {
+        "date": "2026-09-24",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Native Americans",
+      "subjects": [
+        "Federal-Indian relations",
+        "Gambling",
+        "Geography and mapping",
+        "Indian lands and resources rights",
+        "Land transfers",
+        "Land use and conservation"
+      ],
+      "summary_crs": "<p><strong>Lower Elwha Klallam Tribe Project Lands Restoration Act</strong></p><p>This bill takes approximately 1,082.63 acres of specified lands in Washington into trust for the benefit of the Lower&nbsp;Elwha Klallam Tribe. Land taken into trust shall be part of the tribe's reservation.</p><p>Further, the bill prohibits gaming on the land taken into trust.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr2388/BILLS-119hr2388rs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr2388/BILLS-119hr2388rs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr2388/BILLS-119hr2388rs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2388",
+      "votes": []
+    },
+    {
+      "id": "s3257-119",
+      "congress": 119,
+      "type": "s",
+      "number": "3257",
+      "title": "John A. Hauser Mental Health in Aviation Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hoeven, John",
+        "party": "R",
+        "state": "ND"
+      },
+      "introduced_date": "2025-11-20",
+      "latest_action": {
+        "date": "2026-09-24",
+        "text": "Passed Senate with an amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Transportation and Public Works",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Aviation and airports",
+        "Congressional oversight",
+        "Department of Transportation",
+        "Drug therapy",
+        "Government information and archives",
+        "Health promotion and preventive care",
+        "Internet, web applications, social media",
+        "Mental health",
+        "Transportation employees",
+        "Transportation safety and security"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s3257/BILLS-119s3257es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s3257/BILLS-119s3257es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s3257/BILLS-119s3257es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/3257",
+      "votes": []
+    },
+    {
+      "id": "s3258-119",
+      "congress": 119,
+      "type": "s",
+      "number": "3258",
+      "title": "Aviation Medication Transparency Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Duckworth, Tammy",
+        "party": "D",
+        "state": "IL"
+      },
+      "introduced_date": "2025-11-20",
+      "latest_action": {
+        "date": "2026-09-24",
+        "text": "Passed Senate with an amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Transportation and Public Works",
+      "subjects": [
+        "Aviation and airports",
+        "Government information and archives",
+        "Licensing and registrations",
+        "Prescription drugs",
+        "Transportation employees"
+      ],
+      "summary_crs": "<p><strong>Aviation Medication Transparency Act of 2025</strong></p><p>This bill directs the Federal Aviation Administration (FAA) to compile, publish, and annually update a list of medications that may be safely prescribed to pilots and air traffic controllers for the purposes of issuing a medical certification. The list must be publicly available on the FAA website and distributed to those seeking a license and medical&nbsp;certification.</p><p>Currently, the FAA does not have a list of approved medications. However, the FAA does have lists for Aviation Medical Examiners of <em>Do Not Issue</em> medications and <em>Do Not Fly</em> medications.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s3258/BILLS-119s3258es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s3258/BILLS-119s3258es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s3258/BILLS-119s3258es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/3258",
+      "votes": []
+    },
     {
       "id": "hr1721-119",
       "congress": 119,
@@ -228,15 +401,14 @@
       "introduced_date": "2026-09-17",
       "latest_action": {
         "date": "2026-09-23",
-        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4958)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "subjects": [],
       "summary_crs": null,
-      "text_url_html": "https://www.congress.gov/119/bills/sres863/BILLS-119sres863is.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/sres863/BILLS-119sres863is.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/sres863/BILLS-119sres863is.pdf",
+      "text_url_html": "https://www.congress.gov/119/bills/sres863/BILLS-119sres863ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres863/BILLS-119sres863ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres863/BILLS-119sres863ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/863",
       "votes": []
     },
@@ -319,8 +491,7 @@
         "date": "2026-09-18",
         "text": "Became Public Law No: 119-111."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "International Affairs",
       "subjects": [
         "Civil actions and liability",
@@ -530,7 +701,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4790)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Asia",
@@ -566,8 +736,7 @@
         "date": "2026-09-16",
         "text": "Became Public Law No: 119-110."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -636,8 +805,7 @@
         "date": "2026-09-16",
         "text": "Became Public Law No: 119-109."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Law",
       "subjects": [
         "California",
@@ -701,7 +869,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4762)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Congressional tributes",
@@ -795,7 +962,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4690)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Government Operations and Politics",
       "subjects": [
         "Commemorative events and holidays",
@@ -827,7 +993,6 @@
         "text": "Became Public Law No: 119-105."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Kentucky",
@@ -859,7 +1024,6 @@
         "text": "Became Public Law No: 119-106."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Government Operations and Politics",
       "subjects": [
         "Budget deficits and national debt",
@@ -892,7 +1056,6 @@
         "text": "Became Public Law No: 119-107."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Art, artists, authorship",
@@ -925,7 +1088,6 @@
         "text": "Became Public Law No: 119-108."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Taxation",
       "subjects": [
         "Disaster relief and insurance",
@@ -959,7 +1121,6 @@
         "text": "Became Public Law No: 119-104."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Conflicts and wars",
@@ -1428,7 +1589,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4553)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Transportation and Public Works",
       "subjects": [
         "Commemorative events and holidays",
