@@ -53,7 +53,7 @@ struct RepresentativesView: View {
       LocationPicker(model: model, message: message)
 
     case .loaded(let snapshot):
-      RepresentativesList(snapshot: snapshot)
+      RepresentativesList(model: model, snapshot: snapshot)
 
     case .staleSavedRepresentatives:
       ContentUnavailableView {
@@ -140,6 +140,7 @@ private struct LocationPicker: View {
 }
 
 private struct RepresentativesList: View {
+  let model: RepresentativesFeatureModel
   let snapshot: RepresentativesSnapshot
 
   var body: some View {
@@ -156,7 +157,7 @@ private struct RepresentativesList: View {
             .foregroundStyle(.secondary)
         } else {
           ForEach(snapshot.senators) { member in
-            RepresentativeRow(member: member)
+            RepresentativeRow(model: model, member: member)
           }
         }
       }
@@ -167,7 +168,7 @@ private struct RepresentativesList: View {
             .foregroundStyle(.secondary)
         } else {
           ForEach(snapshot.house) { member in
-            RepresentativeRow(member: member)
+            RepresentativeRow(model: model, member: member)
           }
         }
       }
@@ -183,6 +184,7 @@ private struct RepresentativesList: View {
 }
 
 private struct RepresentativeRow: View {
+  let model: RepresentativesFeatureModel
   let member: Member
 
   private var presentation: MemberPresentation {
@@ -190,40 +192,21 @@ private struct RepresentativeRow: View {
   }
 
   var body: some View {
-    VStack(alignment: .leading, spacing: 10) {
-      HStack(alignment: .firstTextBaseline) {
-        VStack(alignment: .leading, spacing: 3) {
-          Text(member.name)
-            .font(.headline)
-          Text("\(presentation.roleName) · \(presentation.partyAndJurisdiction)")
-            .font(.subheadline)
-            .foregroundStyle(.secondary)
-        }
-        Spacer()
+    NavigationLink {
+      MemberDetailView(model: model.detailModel(for: member))
+    } label: {
+      VStack(alignment: .leading, spacing: 3) {
+        Text(member.name)
+          .font(.headline)
+        Text("\(presentation.roleName) · \(presentation.partyAndJurisdiction)")
+          .font(.subheadline)
+          .foregroundStyle(.secondary)
       }
-
-      HStack(spacing: 16) {
-        if let phoneURL = presentation.phoneURL {
-          Link(destination: phoneURL) {
-            Label("Call", systemImage: "phone")
-          }
-        }
-        if let webURL = presentation.primaryWebURL {
-          Link(destination: webURL) {
-            Label("Contact", systemImage: "safari")
-          }
-        }
-        if !presentation.socialLinks.isEmpty {
-          Menu("Social", systemImage: "at") {
-            ForEach(presentation.socialLinks, id: \.url) { link in
-              Link(link.label, destination: link.url)
-            }
-          }
-        }
-      }
-      .font(.subheadline)
+      .padding(.vertical, 4)
     }
-    .padding(.vertical, 4)
-    .accessibilityIdentifier("representative-\(member.bioguideID)")
+    .accessibilityElement(children: .combine)
+    .accessibilityLabel("View details for \(member.name)")
+    .accessibilityHint("Shows voting, sponsored, and cosponsored records")
+    .accessibilityIdentifier("representative-detail-\(member.bioguideID)")
   }
 }

@@ -106,3 +106,101 @@ extension MembersIndex {
     members: Member.sampleSenators + [Member.sampleHouse]
   )
 }
+
+extension MemberLegislation {
+  public static let sampleSponsored = MemberLegislation(
+    bioguideID: "K000377",
+    congress: 119,
+    kind: "sponsored",
+    generatedAt: "2026-09-20T08:12:34Z",
+    bills: [
+      MemberLegislationItem(
+        id: "s4478-119",
+        type: "s",
+        number: "4478",
+        congress: 119,
+        title: "Federal Worker Credit Protection Act",
+        introducedDate: "2026-04-30",
+        latestAction: LegislativeAction(
+          date: "2026-04-30",
+          text: "Referred to the Committee on Banking, Housing, and Urban Affairs."
+        ),
+        policyArea: "Government Operations and Politics"
+      ),
+      MemberLegislationItem(
+        id: "s2448-119",
+        type: "s",
+        number: "2448",
+        congress: 119,
+        title: "Health Care Fairness for Military Families Act of 2025",
+        introducedDate: "2025-07-24",
+        latestAction: LegislativeAction(
+          date: "2025-07-24",
+          text: "Referred to the Committee on Armed Services."
+        ),
+        policyArea: "Armed Forces and National Security"
+      ),
+    ]
+  )
+
+  public static let sampleCosponsored = MemberLegislation(
+    bioguideID: "K000377",
+    congress: 119,
+    kind: "cosponsored",
+    generatedAt: "2026-09-20T08:12:34Z",
+    bills: [
+      MemberLegislationItem(
+        id: "hr1-119",
+        type: "hr",
+        number: "1",
+        congress: 119,
+        title: "Public Information Act",
+        introducedDate: "2026-01-08",
+        latestAction: LegislativeAction(date: "2026-09-17", text: "Passed House."),
+        policyArea: "Government Operations and Politics"
+      )
+    ]
+  )
+}
+
+extension MemberVotes {
+  public static let sample = MemberVotes(
+    generatedAt: "2026-09-23T11:58:00Z",
+    bioguideID: "K000377",
+    voteCount: 3,
+    votes: [
+      MemberVoteRow(
+        voteID: "senate-119-2-240",
+        congress: 119,
+        date: "2026-09-22",
+        question: "On the Cloture Motion",
+        result: "Cloture Motion Agreed to",
+        position: .nay
+      ),
+      MemberVoteRow(
+        voteID: "senate-119-2-236",
+        congress: 119,
+        date: "2026-09-17",
+        question: "On the Motion to Proceed",
+        result: "Motion to Proceed Agreed to",
+        position: .nay,
+        billID: "s4668-119",
+        type: "s",
+        number: "4668",
+        shortTitle: "Affordable Housing Act"
+      ),
+      MemberVoteRow(
+        voteID: "senate-119-2-228",
+        congress: 119,
+        date: "2026-08-08",
+        question: "On Passage of the Bill",
+        result: "Bill Passed",
+        position: .yea,
+        billID: "hr6500-119",
+        type: "hr",
+        number: "6500",
+        shortTitle: "Community Preparedness Act"
+      ),
+    ]
+  )
+}
