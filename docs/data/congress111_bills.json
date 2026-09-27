@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T16:10:29Z",
+  "generated_at": "2026-09-27T16:46:02Z",
   "congress": 111,
   "votes_coverage": false,
   "bills": [
@@ -521,6 +521,44 @@
       "votes": []
     },
     {
+      "id": "hr6517-111",
+      "congress": 111,
+      "type": "hr",
+      "number": "6517",
+      "title": "Omnibus Trade Act of 2010",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Levin, Sander M.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2010-12-13",
+      "latest_action": {
+        "date": "2010-12-29",
+        "text": "Became Public Law No: 111-344."
+      },
+      "outcome": "enacted",
+      "policy_area": "Foreign Trade and International Finance",
+      "subjects": [
+        "Appropriations",
+        "Education programs funding",
+        "Employee benefits and pensions",
+        "Employment and training programs",
+        "Health care costs and insurance",
+        "Higher education",
+        "Income tax credits",
+        "Tariffs",
+        "Trade adjustment assistance",
+        "Vocational and technical education"
+      ],
+      "summary_crs": " <p><b>Omnibus Trade Act of 2010 - Title I: Extension of Trade Adjustment Assistance and Health Coverage Improvement - Subtitle A: Extension of Trade Adjustment Assistance</b> - (Sec. 101) Amends the Trade and Globalization Adjustment Assistance Act of 2009 to extend trade adjustment assistance (TAA) programs through February 12, 2011. </p> <p />Requires funding levels for TAA programs under prior law to apply beginning February 13, 2011, as if the amendments made by this Act had never been enacted. Amends the Trade Act of 1974, however, to authorize appropriations through February 12, 2012 for: (1) TAA programs for workers, firms, and farmers; and (2) alternative TAA for older workers. <p />Limits for FY2010, and the six-week period January 1, 2011-February 12, 2011, the total amount of payments that may be made by the Secretary of Labor for training assistance for workers. <p />Authorizes appropriations for the reemployment TAA program through February 12, 2011. <p />Authorizes the Secretary for FY2010, and the six-week period January 1, 2011- February 12, 2011, to make certain TAA funds available for grants to assist eligible communities to develop strategic plans for their economic adjustment to the impact of trade . <p />Extends permanently certain reporting requirements under: (1) the Community College and Career Training Grant program, and (2) the Industry or Sector Partnership Grant program for communities impacted by trade. <p />Authorizes appropriations to the Secretary for FY2010, and the six-week period January 1, 2011-February 12, 2011, to carry out the Sector Partnership Grant program. <p />(Sec. 102) Extends the single transition deadline for implementing certain merit-based personnel staffing requirements for state administration of TAA to a date not earlier than February 12, 2011. <p><b>Subtitle B: Health Coverage Improvement - </b>(Sec. 111) Amends the Internal Revenue Code (IRC) to extend through February 12, 2011, the 80% tax credit for health insurance costs (including advance payments) for TAA (as well as Pension Benefit Guaranty Corporation [PBGC] pension) recipients.</p> <p>(Sec. 113) Makes TAA recipients who are in a break in training under a training program, or who are receiving unemployment compensation, eligible for such tax credit for the period through February 12, 2011. </p> <p>(Sec. 114) Amends the IRC, the Employee Retirement Income Security Act of 1974 (ERISA), and the Public Health Service Act (PHSA) to extend through February 12, 2011, the TAA pre-certification period rule disregarding any 63-day lapse in creditable health care coverage for TAA workers.</p> <p>(Sec. 115) Extends the continued eligibility for the credit for qualifying family members and certain qualified TAA-eligible individuals and PBGC pension recipients for COBRA premium assistance through February 12, 2011.</p> <p>(Sec. 117) Extends through February 12, 2011, coverage under an employee benefit plan funded by a voluntary employees' beneficiary association established pursuant to an order of a bankruptcy court, or by agreement with an authorized representative.</p> <p><b>Title II: Andean Trade Preferences Act - </b>(Sec. 201) Amends the Andean Trade Preference Act (ATPA), as amended and expanded by Andean Trade Promotion and Drug Eradication Act (ATPDEA), to extend duty-free treatment or other preferential treatment of the products of Colombia and Ecuador through February 12, 2011.</p> <p>Extends through FY2012 preferential treatment for apparel articles assembled in one or more ATPDEA beneficiary countries from regional fabrics or regional components, and specified other type apparel (brassieres).</p> <p><b>Title III: Offsets - </b>(Sec. 301) Amends the Consolidated Omnibus Budget Reconciliation Act of 1985 (COBRA) to extend certain customs users fees for the processing of merchandise entered into the United States through January 7, 2020, and other specified customs users fees through January 14, 2020.</p> <p>(Sec. 302) Amends the Hiring Incentives to Restore Employment Act to increase required estimated tax payments of corporations with at least $1 billion in assets in the third quarter of 2015 by 4.5% to 126.0% of such amount.</p> <p><b>Title IV: Budgetary Effects - </b>(Sec. 401) Declares that the budgetary effects of this Act, for the purpose of complying with the Statutory Pay-As-You-Go Act of 2010, shall be determined by reference to the latest statement titled &quot;Budgetary Effects of PAYGO Legislation&quot; for this Act, provided that such statement has been submitted before the vote on passage.</p>",
+      "text_url_html": "https://www.congress.gov/111/plaws/publ344/PLAW-111publ344.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/111/plaws/publ344/PLAW-111publ344.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/111th-congress/house-bill/6517",
+      "votes": []
+    },
+    {
       "id": "s4058-111",
       "congress": 111,
       "type": "s",
@@ -739,6 +777,47 @@
       "votes": []
     },
     {
+      "id": "s3984-111",
+      "congress": 111,
+      "type": "s",
+      "number": "3984",
+      "title": "Museum and Library Services Act of 2010",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Reed, Jack",
+        "party": "D",
+        "state": "RI"
+      },
+      "introduced_date": "2010-11-29",
+      "latest_action": {
+        "date": "2010-12-22",
+        "text": "Became Public Law No: 111-340."
+      },
+      "outcome": "enacted",
+      "policy_area": "Arts, Culture, Religion",
+      "subjects": [
+        "Computers and information technology",
+        "Disaster relief and insurance",
+        "Elementary and secondary education",
+        "Executive agency funding and structure",
+        "Government employee pay, benefits, personnel management",
+        "Higher education",
+        "Humanities programs funding",
+        "Language arts",
+        "Libraries and archives",
+        "Museums, exhibitions, cultural centers",
+        "National Foundation on the Arts and the Humanities",
+        "Preschool education",
+        "Teaching, teachers, curricula"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The expanded summary of the Senate passed version is repeated here.)</b></p> <p>Museum and Library Services Act of 2010 - <b>Title I: General Provisions </b>- (Sec. 102) Amends the Museum and Library Services Act (the Act) to give the Director of the Institute of Museum and Library Services primary responsibility to develop and implement a policy to ensure the availability of museum, library, and information services that are adequate in meeting the essential information, education, research, economic, cultural, and civic needs of the people of the United States. </p> <p>Requires the Director to: (1) advise the President, Congress, and other federal agencies and offices on museum, library, and information services so as to ensure the creation, preservation, organization, and dissemination of knowledge; (2) engage governmental agencies and private entities in assessing the museum, library, and information services needs of the people of the United States; (3) carry out programs of research and development, data collection, and financial assistance in order to extend and improve such services; and (4) ensure that those services are fully integrated into the nation's information and education infrastructures. </p> <p>Authorizes the Director to: (1) enter into interagency agreements to promote or assist with the museum, library, and information services-related activities of other federal agencies; and (2) use funds under this Act for the costs of such activities.</p> <p>Revises requirements for the coordination of policies and activities of the Institute with those of other federal agencies and offices to add requirements ensuring that such policies and activities are coordinated with: (1) programs and activities under the Head Start Act; (2) activities under the Workforce Investment Act of 1998; and (3) federal programs and activities that increase the capacity of libraries and museums to act as partners in economic and community development, education and research, improvement of digital literacy skills, and the dissemination of health information. </p> <p>Requires the Director to collaborate with the heads of relevant federal departments and agencies with respect to certain activities of libraries and museums. </p> <p>(Sec. 103) Revises requirements regarding the number and compensation of technical and professional employees appointed by the Director to help carry out the duties of the Institute. </p> <p>Authorizes the Director to utilize experts and consultants who may be employed on a temporary or intermittent basis. </p> <p>(Sec. 104) Revises requirements regarding the membership and the duties and powers of the National Museum and Library Services Board. </p> <p>(Sec. 105) Restates provisions concerning national awards and medals for library and museum services.</p> <p>(Sec. 106) Requires the Director to annually conduct policy research, analysis, and data collection in order to extend and improve the nation's museum, library, and information services. </p> <p>Sets forth the objectives of the policy research, analysis, and data collection, including the development of plans to improve museum, library, and information services and to strengthen national, state, local, regional, and international communications and cooperative networks. </p> <p>Instructs the Director to widely disseminate the results of such policy research, analysis, and data collection. </p> <p>Authorizes the Director to: (1) enter into arrangements with federal agencies and other organizations to carry out the objectives; and (2) publish and disseminate reports, findings, studies, and other materials that were prepared to accomplish those objectives. </p> <p>Authorizes appropriations for FY2011-FY2016 to carry out this section. </p> <p>(Sec. 107) Authorizes the Director to hold hearings at such times and places as determined appropriate to carry out the Act's purposes. </p> <p>(Sec. 108) Requires the Director to establish an account from which to pay the federal administrative costs of carrying out the Act and limits the amount of appropriated funds placed in such account. </p> <p><b>Title II: Library Services and Technology </b>- (Sec. 201) Expands and revises the purposes under the Library Services and Technology Act (LSTA). </p> <p>(Sec. 202) Authorizes appropriations through FY2011-FY2016 to carry out the LSTA, including the Laura Bush 21st Century Librarian Program (established by section 207 of this Act). </p> <p>Repeals the limitation on the amount of funding under the LSTA that may be used for federal administrative costs. </p> <p>(Sec. 203) Increases the dollar amount of the minimum allotment available to each state and U.S. territory for grants under the LSTA. </p> <p>(Sec. 204) Requires each state plan to describe how the state library administrative agency will work with other state agencies and offices to coordinate resources, programs, and activities and leverage federal and state investment in elementary and secondary education, early childhood education, workforce development, and other federal programs and activities that relate to library services, including economic and community development and health information. </p> <p>(Sec. 205) Expands and revises the types of activities for which a state library administrative agency shall expend at least 96% of its grant funds. Restates the special rule regarding the apportionment of funds to meet the needs of an individual state. </p> <p>(Sec. 206) Expands and revises the activities that may be carried out under national leadership grants, contracts, or cooperative agreements. Permits the use of such a grant, contract, or cooperative agreement for the development of emergency plans that would ensure the preservation of knowledge and library collections in the event of a disaster. </p> <p>(Sec. 207) Establishes the Laura Bush 21st Century Librarian Program to: (1) recruit and educate the next generation of librarians; (2) develop faculty and library leaders; and (3) enhance the training and professional development of librarians and the library workforce to meet the needs of their communities.</p> <p>Authorizes the Director to enter into arrangements with libraries, library consortia and associations, institutions of higher education, and other entities to conduct projects that further the purpose of the Program. </p> <p><b>Title III: Museum Services </b>- (Sec. 301) Expands the purposes of the Museum and Library Services Act relating to museum services. </p> <p>(Sec. 302) Modifies the definition of &quot;museum&quot; to include museums that have tangible and digital collections. </p> <p>(Sec. 303) Authorizes the Director to enter into arrangements with museums and other entities as well as with states and local governments (under current law, only with museums and other entities) to pay the federal share of the cost of the support of certain museum services activities, as expanded and revised under this Act, including for statewide assessments of museum services and needs and the development of state plans to improve and maximize museum services. </p> <p>Requires the Director to consider the equitable distribution of grants to various sizes and types of museums and to different U.S. geographic areas in awarding grants to pay the federal cost share for those activities.</p> <p>(Sec. 304) Authorizes appropriations through FY2011-FY2016 to carry out the Act's provisions relating to museum services and sets forth a special funding rule. </p> <p>Removes the limitation on the amount of funds that may be used to pay the administrative expenses.</p> <p><b>Title IV: Repeal of the National Commission on Libraries and Information Science Act </b>- (Sec. 401) Repeals the National Commission on Libraries and Information Science Act. </p> <p>Transfers the functions, personnel, assets, contracts, property, and records of the National Commission on Libraries and Information Science to the Institute. </p>",
+      "text_url_html": "https://www.congress.gov/111/plaws/publ340/PLAW-111publ340.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/111/plaws/publ340/PLAW-111publ340.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/111th-congress/senate-bill/3984",
+      "votes": []
+    },
+    {
       "id": "s3998-111",
       "congress": 111,
       "type": "s",
@@ -897,6 +976,48 @@
       "text_url_xml": "https://www.congress.gov/111/bills/sres707/BILLS-111sres707ats.xml",
       "text_url_pdf": "https://www.congress.gov/111/bills/sres707/BILLS-111sres707ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/111th-congress/senate-resolution/707",
+      "votes": []
+    },
+    {
+      "id": "s3817-111",
+      "congress": 111,
+      "type": "s",
+      "number": "3817",
+      "title": "CAPTA Reauthorization Act of 2010",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Dodd, Christopher J.",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2010-09-22",
+      "latest_action": {
+        "date": "2010-12-20",
+        "text": "Became Public Law No: 111-320."
+      },
+      "outcome": "enacted",
+      "policy_area": "Families",
+      "subjects": [
+        "Adoption and foster care",
+        "Advisory bodies",
+        "Alaska Natives and Hawaiians",
+        "Child safety and welfare",
+        "Congressional oversight",
+        "Crime prevention",
+        "Crimes against women",
+        "Criminal investigation, prosecution, interrogation",
+        "Domestic violence and child abuse",
+        "Government information and archives",
+        "Government studies and investigations",
+        "Indian social and development programs",
+        "Law enforcement administration and funding",
+        "Social work, volunteer service, charitable organizations"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the House on December 8, 2010. The summary of that version is repeated here.)</b></p> <p>CAPTA Reauthorization Act of 2010 - <b>Title I: Child Abuse Prevention and Treatment Act</b> - (Sec. 101) Amends the Child Abuse Prevention and Treatment Act (CAPTA) to revise the findings under such Act.</p> <p><b>Subtitle A: General Program</b> - (Sec. 111) Revises requirements for: (1) the child abuse prevention and treatment advisory board; (2) the national clearinghouse for information relating to child abuse; (3) research and assistance activities; and (4) specified grants to states, Indian tribes or tribal organizations, and public or private agencies and organizations.</p> <p>(Sec. 113) Directs the Secretary of Health and Human Services (HHS) to study and report to Congress on shaken baby syndrome.</p> <p>(Sec. 114) Authorizes the Secretary to award grants to public or private agencies and organizations to develop or expand effective collaborations between child protective service entities and domestic violence service entities to improve: (1) collaborative investigation and intervention procedures; (2) provision for the safety of the nonabusing parent involved and children; and (3) provision of services to children exposed to domestic violence that also support the caregiving role of the non-abusing parent.</p> <p>Prescribes requirements for adjusting allotments to states for both decreased and increased appropriation years.</p> <p>(Sec. 118) Directs the Secretary to study and report to Congress on: (1) efforts to coordinate the objectives and activities of agencies and organizations responsible for programs and activities related to child abuse and neglect; and (2) the effectiveness of citizen review panels in examining state and local child protection agencies and evaluating the extent to which they fulfill their child protection responsibilities.</p> <p>Requires the Secretary to study and report to Congress on how provisions for immunity from prosecution under state and local laws and regulations facilitate and inhibit individuals cooperating, consulting, or assisting in making good faith reports, including mandatory reports, of suspected or known instances of child abuse or neglect.</p> <p>(Sec. 120) Reauthorizes the general program for child abuse prevention and treatment and adoption reform, and related appropriations, through FY2015.</p> <p><b>Subtitle B: Community-Based Grants for the Prevention of Child Abuse or Neglect</b> - (Sec. 131) Revises requirements for community-based grants for the prevention of child abuse or neglect, including local program requirements. </p> <p>(Sec. 140) Reauthorizes community-based grants for prevention of child abuse and neglect, and related appropriations, through FY2015. </p> <p><b>Subtitle C: Conforming Amendments</b> - (Sec. 151) Makes conforming amendments.</p> <p><b>Title II: Family Violence Prevention and Services Act</b> - (Sec. 201) Reauthorizes the Family Violence Prevention and Services Act, and related appropriations, through FY2015, and revises grant requirements. Directs the Secretary to award formula grants to states and Indian tribes to assist in supporting programs and projects, including through subgrants.</p> <p>Authorizes appropriations through FY2015 for the National Domestic Violence Hotline and for Domestic Violence Prevention Enhancement and Leadership Through Alliances (DELTA).</p> <p>Directs the Secretary to award grants to eligible entities for: (1) the establishment of two national resource centers and at least seven special issue resource centers; (2) a National Resource Center on Domestic Violence; (3) a National Indian Resource Center addressing domestic violence and safety for Indian women; (4) specialized services for abused parents and their children; (5) a National Domestic Violence Hotline; and (6) State Domestic Violence Coalitions.</p> <p>Directs the Secretary to enter into cooperative five-year agreements with State Domestic Violence Coalitions for local community projects to prevent family, domestic, and dating violence, using a coordinated community response model and through prevention and education programs.</p> <p><b>Title III: Child Abuse Prevention and Treatment and Adoption Reform Act of 1978</b> - (Sec. 301) Reauthorizes through FY2015 the Child Abuse Prevention and Treatment and Adoption Reform Act of 1978, including appropriations.</p> <p><b>Title IV: Abandoned Infants Assistance Act of 1988</b> - (Sec. 401) Reauthorizes through FY2015 the Abandoned Infants Assistance Act of 1988, including appropriations.</p>",
+      "text_url_html": "https://www.congress.gov/111/plaws/publ320/PLAW-111publ320.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/111/plaws/publ320/PLAW-111publ320.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/111th-congress/senate-bill/3817",
       "votes": []
     },
     {
@@ -2639,6 +2760,41 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/111/plaws/publ255/PLAW-111publ255.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/111th-congress/senate-bill/1674",
+      "votes": []
+    },
+    {
+      "id": "s2781-111",
+      "congress": 111,
+      "type": "s",
+      "number": "2781",
+      "title": "Rosa's Law",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Mikulski, Barbara A.",
+        "party": "D",
+        "state": "MD"
+      },
+      "introduced_date": "2009-11-17",
+      "latest_action": {
+        "date": "2010-10-05",
+        "text": "Became Public Law No: 111-256."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Disability and paralysis",
+        "Elementary and secondary education",
+        "Employment and training programs",
+        "Health programs administration and funding",
+        "Higher education",
+        "School administration"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was reported to the Senate on August 3, 2010. The summary of that version is repeated here.)</b></p> <p>Rosa's Law - Amends the Higher Education Act of 1965, the Individuals with Disabilities Education Act, the Elementary and Secondary Education Act of 1965, the Rehabilitation Act of 1973, the Public Health Service Act, the Health Professions Education Partnerships Act of 1998, the National Sickle Cell Anemia Act, Cooley's Anemia, Tay-Sachs, and Genetic Diseases Act, the Genetic Information Nondiscrimination Act of 2008, and other federal enactments and regulations to change references to mental retardation to references to an intellectual disability. </p> <p>Declares that the changes by this Act are made without any intent to: (1) change the coverage, eligibility, rights, responsibilities, or definitions referred to in the amended provisions; or (2) compel states to change terminology in state laws for individuals covered by a provision amended by this Act.</p>",
+      "text_url_html": "https://www.congress.gov/111/plaws/publ256/PLAW-111publ256.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/111/plaws/publ256/PLAW-111publ256.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/111th-congress/senate-bill/2781",
       "votes": []
     },
     {
@@ -4521,6 +4677,37 @@
       "votes": []
     },
     {
+      "id": "hr5610-111",
+      "congress": 111,
+      "type": "hr",
+      "number": "5610",
+      "title": "Independent Living Centers Technical Adjustment Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Miller, George",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2010-06-28",
+      "latest_action": {
+        "date": "2010-07-29",
+        "text": "Became Public Law No: 111-213."
+      },
+      "outcome": "enacted",
+      "policy_area": "Social Welfare",
+      "subjects": [
+        "Appropriations",
+        "Disability and paralysis",
+        "Long-term, rehabilitative, and terminal care"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the Senate on July 27, 2010. The summary of that version is repeated here.)</b></p> <p>Independent Living Centers Technical Adjustment Act - Directs the Commissioner of the Rehabilitation Services Administration of the Department of Education, in awarding funds in a state during FY2010 to existing centers for independent living for people with disabilities under the Rehabilitation Act of 1973, if certain conditions are satisfied, to distribute such funds among such centers according to a proportional allocation, disregarding any funds previously distributed from appropriations by the American Recovery and Reinvestment Act of 2009 (ARRA).</p> <p>Sets as such conditions that: (1) the Commissioner receives from the state, by August 5, 2010, a request to disregard ARRA funds, jointly signed by the designated state unit that receives and disburses funds to such centers and the state's Statewide Independent Living Council; and (2) the Commissioner is not conducting a competition to establish a new center for independent living in the state with ARRA funds.</p> <p>Requires the distribution of funds among such centers in a state for FY2010 (except under ARRA) to be in the same proportion as the regular funds appropriated for FY2009 for such centers, disregarding any ARRA funds.</p> <p>Requires continued disregard of ARRA funds in the allocation of funds for such centers in FY2011 and subsequent fiscal years.</p> <p>Authorizes the director of the designated state unit with approval to award funds to existing centers for independent living in the state to: (1) distribute non-ARRA funds among such centers during FY2010 in the same proportion as such funds were distributed in FY2009, disregarding ARRA funds; and (2) continue disregarding ARRA funds in distributions for FY2011 and subsequent fiscal years.</p>",
+      "text_url_html": "https://www.congress.gov/111/plaws/publ213/PLAW-111publ213.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/111/plaws/publ213/PLAW-111publ213.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/111th-congress/house-bill/5610",
+      "votes": []
+    },
+    {
       "id": "sres601-111",
       "congress": 111,
       "type": "sres",
@@ -5027,6 +5214,40 @@
       "text_url_xml": "https://www.congress.gov/111/bills/sres580/BILLS-111sres580ats.xml",
       "text_url_pdf": "https://www.congress.gov/111/bills/sres580/BILLS-111sres580ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/111th-congress/senate-resolution/580",
+      "votes": []
+    },
+    {
+      "id": "s2865-111",
+      "congress": 111,
+      "type": "s",
+      "number": "2865",
+      "title": "Congressional Award Program Reauthorization Act of 2009",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lieberman, Joseph I.",
+        "party": "I",
+        "state": "CT"
+      },
+      "introduced_date": "2009-12-10",
+      "latest_action": {
+        "date": "2010-07-07",
+        "text": "Became Public Law No: 111-200."
+      },
+      "outcome": "enacted",
+      "policy_area": "Congress",
+      "subjects": [
+        "Congressional oversight",
+        "Congressional tributes",
+        "Higher education",
+        "Physical fitness and lifestyle",
+        "Social work, volunteer service, charitable organizations",
+        "Student aid and college costs"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The expanded summary of the Senate reported version is repeated here.)</b></p> <p>Congressional Award Program Reauthorization Act of 2009 - (Sec. 2) Amends the Congressional Award Act to revise requirements for appointment and reappointment of members of the Congressional Award Board, especially the limitation of service on the Board to two consecutive terms.</p> <p>Exempts a member from the two-term limit during a period of service as Board Chairman. Permits reappointment of such individual to an additional full term after termination of such Chairmanship.</p> <p>Requires a Board member's term to begin on October 1 of the even numbered year, with one-half of the Board positions having terms which begin in each even numbered year.</p> <p>Changes from calendar to fiscal year the annual period for which the Director is required to ensure that the Board's liabilities do not exceed its assets.</p> <p>Requires the Board, if the Comptroller General finds that the Director has not substantially complied with such duty, to: (1) instruct the Director to take such necessary actions to correct any deficiencies (as under current law); and (2) remove and replace the Director if they are not promptly corrected. Repeals the requirement that, upon a Director's failure to correct such deficiencies, the Board take necessary action to prepare for the orderly cessation of Board activities.</p> <p>Allows the Board to accept funds to carry out its functions and make expenditures that are awarded in any grant program administered by a federal agency. (Currently the Board is prohibited from using federal resources.)</p> <p>Repeals the limitation on contributions to Statewide Congressional Award Councils to public monetary and in-kind contributions for Program purposes (thus allowing private contributions as well).</p> <p>Allows the donation of funds or other resources to restrict their use to scholarships.</p> <p>Names the nonprofit corporation the Board is required to establish to assist it in carrying out the Program the Congressional Award Foundation. Repeals the requirement that the corporation be private. Treats the Foundation together with any subsidiary nonprofit corporations as the collective Corporation to which appropriate duties shall be delegated, including the employment of personnel, expenditure of funds, and the incurrence of financial or other contractual obligations.</p> <p> Allows the Congressional Award Board (which as under current law shall be members of the Board of Directors of the Foundation) to appoint up to 24 additional voting members to the Foundation Board. Makes the Congressional Award Program Director serve as a nonvoting member of the Foundation Board.</p> <p>Extends the Congressional Award Board until October 1, 2013.</p>",
+      "text_url_html": "https://www.congress.gov/111/plaws/publ200/PLAW-111publ200.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/111/plaws/publ200/PLAW-111publ200.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/111th-congress/senate-bill/2865",
       "votes": []
     },
     {
