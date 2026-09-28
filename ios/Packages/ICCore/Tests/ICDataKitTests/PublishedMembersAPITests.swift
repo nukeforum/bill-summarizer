@@ -37,12 +37,55 @@ struct PublishedMembersAPITests {
   func errorContainsStatus() {
     #expect(PublishedMembersAPIError.httpStatus(503) == .httpStatus(503))
   }
+
+  @Test("Fetches member legislation and vote shards")
+  func fetchesMemberDetail() async throws {
+    let configuration = URLSessionConfiguration.ephemeral
+    configuration.protocolClasses = [MembersFixtureURLProtocol.self]
+    let session = URLSession(configuration: configuration)
+    defer { session.invalidateAndCancel() }
+    let api = PublishedMembersAPI(
+      baseURL: try #require(URL(string: "https://fixture.test/root/")),
+      session: session
+    )
+
+    async let sponsored = api.fetchSponsored(for: "K000377")
+    async let cosponsored = api.fetchCosponsored(for: "K000377")
+    async let votes = api.fetchVotes(for: "K000377")
+    let results = try await (sponsored, cosponsored, votes)
+
+    #expect(results.0.bills.count == 2)
+    #expect(results.0.renderableBills.map(\.id) == ["s4478-119"])
+    #expect(results.1.bills.map(\.id) == ["hr1-119"])
+    #expect(results.2.voteCount == 2)
+    #expect(results.2.votes.map(\.position) == [.nay, .yea])
+    #expect(results.2.votes.last?.shortTitle == "Community Preparedness Act")
+  }
+
+  @Test("Treats missing member shards as empty published data")
+  func missingShardsAreEmpty() async throws {
+    let configuration = URLSessionConfiguration.ephemeral
+    configuration.protocolClasses = [MembersFixtureURLProtocol.self]
+    let session = URLSession(configuration: configuration)
+    defer { session.invalidateAndCancel() }
+    let api = PublishedMembersAPI(
+      baseURL: try #require(URL(string: "https://fixture.test/root/")),
+      session: session
+    )
+
+    #expect(try await api.fetchSponsored(for: "MISSING").bills.isEmpty)
+    #expect(try await api.fetchCosponsored(for: "MISSING").bills.isEmpty)
+    #expect(try await api.fetchVotes(for: "MISSING").votes.isEmpty)
+  }
 }
 
 private final class MembersFixtureURLProtocol: URLProtocol, @unchecked Sendable {
   private static let fixturesByPath = [
     "/root/data/congresses.json": "congresses",
     "/root/data/members_119.json": "members_119",
+    "/root/data/members/K000377_sponsored.json": "K000377_sponsored",
+    "/root/data/members/K000377_cosponsored.json": "K000377_cosponsored",
+    "/root/data/votes/members/K000377.json": "K000377_votes",
   ]
 
   override class func canInit(with request: URLRequest) -> Bool {

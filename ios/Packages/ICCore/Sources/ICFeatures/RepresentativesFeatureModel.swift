@@ -142,6 +142,14 @@ public final class RepresentativesFeatureModel {
     }
   }
 
+  public func detailModel(for member: Member) -> MemberDetailFeatureModel {
+    withDependencies {
+      $0.membersClient = membersClient
+    } operation: {
+      MemberDetailFeatureModel(member: member)
+    }
+  }
+
   private func resolve(
     saved: SavedRepresentativesSelection,
     in index: MembersIndex

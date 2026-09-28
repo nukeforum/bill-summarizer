@@ -3,9 +3,26 @@ import ICModels
 
 public struct MembersClient: Sendable {
   public var fetchCurrent: @Sendable () async throws -> MembersIndex
+  public var fetchSponsored: @Sendable (String) async throws -> MemberLegislation
+  public var fetchCosponsored: @Sendable (String) async throws -> MemberLegislation
+  public var fetchVotes: @Sendable (String) async throws -> MemberVotes
 
-  public init(fetchCurrent: @escaping @Sendable () async throws -> MembersIndex) {
+  public init(
+    fetchCurrent: @escaping @Sendable () async throws -> MembersIndex,
+    fetchSponsored: @escaping @Sendable (String) async throws -> MemberLegislation = { _ in
+      throw UnimplementedMembersClientError()
+    },
+    fetchCosponsored: @escaping @Sendable (String) async throws -> MemberLegislation = { _ in
+      throw UnimplementedMembersClientError()
+    },
+    fetchVotes: @escaping @Sendable (String) async throws -> MemberVotes = { _ in
+      throw UnimplementedMembersClientError()
+    }
+  ) {
     self.fetchCurrent = fetchCurrent
+    self.fetchSponsored = fetchSponsored
+    self.fetchCosponsored = fetchCosponsored
+    self.fetchVotes = fetchVotes
   }
 }
 
@@ -14,9 +31,12 @@ extension MembersClient: DependencyKey {
     throw UnimplementedMembersClientError()
   })
 
-  public static let previewValue = MembersClient(fetchCurrent: {
-    .sample
-  })
+  public static let previewValue = MembersClient(
+    fetchCurrent: { .sample },
+    fetchSponsored: { _ in .sampleSponsored },
+    fetchCosponsored: { _ in .sampleCosponsored },
+    fetchVotes: { _ in .sample }
+  )
 
   public static let testValue = MembersClient(fetchCurrent: {
     throw UnimplementedMembersClientError()

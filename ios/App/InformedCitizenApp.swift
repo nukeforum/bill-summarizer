@@ -34,6 +34,7 @@ struct InformedCitizenApp: App {
     WindowGroup {
       RootView(model: billsModel, representativesModel: representativesModel)
         .tint(ICDesign.accent)
+        .presentsWebDestinationsInApp()
     }
   }
 }

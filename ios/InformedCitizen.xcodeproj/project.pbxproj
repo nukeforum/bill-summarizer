@@ -20,6 +20,8 @@
 		E158CFDEB4D86996B590A12A /* BillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B5EB8318B8E37474CF7D44 /* BillsView.swift */; };
 		EB39D377D2B5B051DEC18F7A /* ICDesign in Frameworks */ = {isa = PBXBuildFile; productRef = 986CC5F856CD0AE314F6C65D /* ICDesign */; };
 		F1A2B3C4D5E60718293A4B5C /* RepresentativesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B5C /* RepresentativesView.swift */; };
+		C2D3E4F5A60718293B4C5D6E /* MemberDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C3D4E5F60718293A4B5C6D /* MemberDetailView.swift */; };
+		D3E4F5A60718293B4C5D6E7F /* InAppBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4E5F60718293A4B5C6D7E /* InAppBrowser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		71143EC37DD0E2AC91BFD4D7 /* InformedCitizen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InformedCitizen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD8504B3575F90DF5ADAB753 /* BillDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BillDetailView.swift; path = Bills/BillDetailView.swift; sourceTree = "<group>"; };
 		A1B2C3D4E5F60718293A4B5C /* RepresentativesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RepresentativesView.swift; path = Representatives/RepresentativesView.swift; sourceTree = "<group>"; };
+		B2C3D4E5F60718293A4B5C6D /* MemberDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MemberDetailView.swift; path = Representatives/MemberDetailView.swift; sourceTree = "<group>"; };
+		C3D4E5F60718293A4B5C6D7E /* InAppBrowser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InAppBrowser.swift; sourceTree = "<group>"; };
 		B6091E9CA60206E542D0FAE6 /* InformedCitizenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InformedCitizenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -118,7 +122,9 @@
 			children = (
 				AD8504B3575F90DF5ADAB753 /* BillDetailView.swift */,
 				40B5EB8318B8E37474CF7D44 /* BillsView.swift */,
+				C3D4E5F60718293A4B5C6D7E /* InAppBrowser.swift */,
 				44C4B56033FFBAD1E6E3CDD5 /* InformedCitizenApp.swift */,
+				B2C3D4E5F60718293A4B5C6D /* MemberDetailView.swift */,
 				A1B2C3D4E5F60718293A4B5C /* RepresentativesView.swift */,
 				0A14020CF6C877086869E3D1 /* RootView.swift */,
 			);
@@ -228,7 +234,9 @@
 			files = (
 				4C45B41B5F3DE9FE36591409 /* BillDetailView.swift in Sources */,
 				E158CFDEB4D86996B590A12A /* BillsView.swift in Sources */,
+				D3E4F5A60718293B4C5D6E7F /* InAppBrowser.swift in Sources */,
 				067CE7E02577BE4E968BD59A /* InformedCitizenApp.swift in Sources */,
+				C2D3E4F5A60718293B4C5D6E /* MemberDetailView.swift in Sources */,
 				F1A2B3C4D5E60718293A4B5C /* RepresentativesView.swift in Sources */,
 				B63BC26482929D807184C0E6 /* RootView.swift in Sources */,
 			);
