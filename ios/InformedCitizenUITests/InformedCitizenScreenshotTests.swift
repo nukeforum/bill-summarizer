@@ -56,9 +56,20 @@ final class InformedCitizenScreenshotTests: XCTestCase {
     app.buttons["Change location"].tap()
     XCTAssertTrue(
       app.staticTexts[
-        "Choose your state and congressional district to see your House representative and senators."
+        "Enter your ZIP code or choose a district to see your House representative and senators."
       ].waitForExistence(timeout: 5))
     attachScreenshot(named: "07-representative-location")
+
+    let zipField = app.textFields["5-digit ZIP code"]
+    XCTAssertTrue(zipField.waitForExistence(timeout: 5))
+    zipField.tap()
+    zipField.typeText("85002")
+    app.buttons["Look up ZIP code"].tap()
+    XCTAssertTrue(
+      app.staticTexts["This ZIP spans AZ districts 1, 2. Choose one to continue."]
+        .waitForExistence(timeout: 5))
+    app.swipeDown()
+    attachScreenshot(named: "08-zip-district-disambiguation")
   }
 
   @MainActor

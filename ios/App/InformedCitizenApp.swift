@@ -24,6 +24,7 @@ struct InformedCitizenApp: App {
       initialValue: withDependencies {
         $0.membersClient = screenshotMode ? .previewValue : .live()
         $0.savedRepresentativesClient = screenshotMode ? .previewValue : .live()
+        $0.zipDistrictClient = screenshotMode ? .previewValue : .live()
       } operation: {
         RepresentativesFeatureModel()
       }
