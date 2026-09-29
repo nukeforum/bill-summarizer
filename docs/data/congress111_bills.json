@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T19:30:37Z",
+  "generated_at": "2026-09-29T17:57:57Z",
   "congress": 111,
   "votes_coverage": false,
   "bills": [
@@ -976,6 +976,38 @@
       "text_url_xml": "https://www.congress.gov/111/bills/sres707/BILLS-111sres707ats.xml",
       "text_url_pdf": "https://www.congress.gov/111/bills/sres707/BILLS-111sres707ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/111th-congress/senate-resolution/707",
+      "votes": []
+    },
+    {
+      "id": "hr5142-111",
+      "congress": 111,
+      "type": "hr",
+      "number": "5142",
+      "title": "Grow a Renewable Energy Economy Now--Jumpstart Other Biofuels Act of 2010",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Schwartz, Allyson Y.",
+        "party": "D",
+        "state": "PA"
+      },
+      "introduced_date": "2010-04-26",
+      "latest_action": {
+        "date": "2010-12-21",
+        "text": "Rule H. Res. 1781 passed House."
+      },
+      "outcome": "passed_house",
+      "policy_area": "Taxation",
+      "subjects": [
+        "Alternative and renewable resources",
+        "Business investment and capital",
+        "Income tax credits",
+        "Income tax deductions"
+      ],
+      "summary_crs": " <p>Grow a Renewable Energy Economy Now--Jumpstart Other Biofuels Act of 2010 - Amends the Internal Revenue Code to: (1) allow a 30% energy tax credit for investments in qualified cellulosic and algae-based biofuel facilities; (2) extend through 2016 the special depreciation allowance for qualified cellulosic biofuel plant property; (3) include algae-based biofuel within the definition of cellulosic biofuel for purposes of the cellulosic biofuel producer tax credit; (4) exclude from the definition of cellulosic biofuel any processed fuel with an acid number greater than 25; (5) extend through 2016 the cellulosic biofuel producer tax credit; and (6) allow a direct payment of 30% of the basis of cellulosic and algae-based biofuel facility property.</p>",
+      "text_url_html": "https://www.congress.gov/111/bills/hr5142/BILLS-111hr5142ih.htm",
+      "text_url_xml": "https://www.congress.gov/111/bills/hr5142/BILLS-111hr5142ih.xml",
+      "text_url_pdf": "https://www.congress.gov/111/bills/hr5142/BILLS-111hr5142ih.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/111th-congress/house-bill/5142",
       "votes": []
     },
     {
