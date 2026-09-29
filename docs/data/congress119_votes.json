@@ -1,8 +1,193 @@
 {
-  "generated_at": "2026-09-28T14:20:01Z",
+  "generated_at": "2026-09-29T13:13:13Z",
   "congress": 119,
-  "vote_count": 1578,
+  "vote_count": 1584,
   "votes": [
+    {
+      "id": "senate-119-2-250",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 250,
+      "date": "2026-09-28",
+      "question": "On Passage of the Bill",
+      "result": "Bill Passed",
+      "bill_id": "s4668-119",
+      "totals": {
+        "yea": 77,
+        "nay": 22,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 26,
+          "I": 1,
+          "R": 50
+        },
+        "nay": {
+          "D": 19,
+          "I": 1,
+          "R": 2
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-250.json"
+    },
+    {
+      "id": "senate-119-2-249",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 249,
+      "date": "2026-09-28",
+      "question": "On the Amendment",
+      "result": "Amendment Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 47,
+        "nay": 52,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 2,
+          "R": 1
+        },
+        "nay": {
+          "D": 1,
+          "R": 51
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-249.json"
+    },
+    {
+      "id": "senate-119-2-248",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 248,
+      "date": "2026-09-28",
+      "question": "On the Amendment",
+      "result": "Amendment Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 49,
+        "nay": 50,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2,
+          "R": 2
+        },
+        "nay": {
+          "R": 50
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-248.json"
+    },
+    {
+      "id": "senate-119-2-247",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 247,
+      "date": "2026-09-28",
+      "question": "On the Amendment",
+      "result": "Amendment Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 42,
+        "nay": 54,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 31,
+          "I": 2,
+          "R": 9
+        },
+        "nay": {
+          "D": 14,
+          "R": 40
+        },
+        "not_voting": {
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/senate-2-247.json"
+    },
+    {
+      "id": "senate-119-2-246",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 246,
+      "date": "2026-09-28",
+      "question": "On the Amendment",
+      "result": "Amendment Rejected",
+      "bill_id": null,
+      "totals": {
+        "yea": 1,
+        "nay": 94,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "R": 1
+        },
+        "nay": {
+          "D": 44,
+          "I": 2,
+          "R": 48
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/senate-2-246.json"
+    },
+    {
+      "id": "senate-119-2-245",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 245,
+      "date": "2026-09-28",
+      "question": "On the Amendment",
+      "result": "Amendment Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 96,
+        "nay": 1,
+        "present": 0,
+        "not_voting": 3
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2,
+          "R": 49
+        },
+        "nay": {
+          "R": 1
+        },
+        "not_voting": {
+          "R": 3
+        }
+      },
+      "path": "votes/congress119/senate-2-245.json"
+    },
     {
       "id": "senate-119-2-244",
       "chamber": "senate",
