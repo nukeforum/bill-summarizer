@@ -17,6 +17,16 @@ final class InformedCitizenScreenshotTests: XCTestCase {
     XCTAssertTrue(app.navigationBars["H.R. 1"].waitForExistence(timeout: 5))
     attachScreenshot(named: "02-bill-detail")
 
+    let officialSummary = app.descendants(matching: .any)["bill-official-summary"]
+    for _ in 0..<3 where !officialSummary.isHittable {
+      app.swipeUp()
+    }
+    XCTAssertTrue(officialSummary.isHittable)
+    XCTAssertFalse(
+      app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "<p>")).firstMatch.exists
+    )
+    attachScreenshot(named: "03-bill-rich-text")
+
     let rollCall = app.descendants(matching: .any)["roll-call-house-119-1-17"]
     XCTAssertTrue(rollCall.waitForExistence(timeout: 5))
     app.swipeUp()

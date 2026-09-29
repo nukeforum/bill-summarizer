@@ -17,7 +17,11 @@ extension Bill {
     outcome: .passedHouse,
     policyArea: "Government Operations and Politics",
     subjects: ["Government information and archives"],
-    summaryCRS: "Makes legislative information easier for the public to find and understand.",
+    summaryCRS: """
+      <p><strong>Plain-language overview</strong></p>
+      <p>Makes legislative information easier for the public to find and understand.</p>
+      <ul><li>Publishes consistent bill data.</li><li>Improves public access.</li></ul>
+      """,
     congressURL: URL(string: "https://www.congress.gov/bill/119th-congress/house-bill/1")!,
     votes: [
       RollCallVoteReference(
