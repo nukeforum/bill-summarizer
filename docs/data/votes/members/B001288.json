@@ -1,8 +1,32 @@
 {
-  "generated_at": "2026-09-29T13:13:13Z",
+  "generated_at": "2026-09-30T12:54:02Z",
   "bioguide_id": "B001288",
-  "vote_count": 909,
+  "vote_count": 911,
   "votes": [
+    {
+      "vote_id": "senate-119-2-252",
+      "congress": 119,
+      "date": "2026-09-29",
+      "question": "On the Motion to Discharge",
+      "result": "Motion to Discharge Rejected",
+      "position": "yea",
+      "bill_id": "sres852-119",
+      "type": "sres",
+      "number": "852",
+      "short_title": null
+    },
+    {
+      "vote_id": "senate-119-2-251",
+      "congress": 119,
+      "date": "2026-09-29",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Rejected",
+      "position": "yea",
+      "bill_id": "sjres197-119",
+      "type": "sjres",
+      "number": "197",
+      "short_title": null
+    },
     {
       "vote_id": "senate-119-2-250",
       "congress": 119,

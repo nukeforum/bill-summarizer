@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T11:59:27Z",
+  "generated_at": "2026-09-30T12:54:02Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
@@ -21,6 +21,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -54,6 +55,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5123)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Bankruptcy",
@@ -85,6 +87,7 @@
         "text": "Passed Senate without amendment by Voice Vote. (consideration: CR S5120)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Department of Health and Human Services",
@@ -123,7 +126,8 @@
         "date": "2026-09-28",
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5123)"
       },
-      "outcome": "passed_senate",
+      "outcome": "passed_house",
+      "status": null,
       "policy_area": "Taxation",
       "subjects": [
         "Federal officials",
@@ -183,6 +187,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5120; text: CR S5120)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Cancer",
@@ -217,6 +222,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5120-5121; text: CR S5120-5121)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Asia",
@@ -257,6 +263,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5122-5123; text: CR S5123)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Life, casualty, property insurance",
@@ -287,6 +294,7 @@
         "text": "Passed Senate with an amendment by Yea-Nay Vote. 77 - 22. Record Vote Number: 250. (text: CR S5044-5063)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Athletes",
@@ -456,6 +464,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5121-5122; text: CR S5121-5122)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -489,6 +498,7 @@
         "text": "Became Public Law No: 119-112."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Alternative and renewable resources",
@@ -520,6 +530,7 @@
         "text": "Became Public Law No: 119-113."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Water Resources Development",
       "subjects": [
         "Montana",
@@ -552,6 +563,7 @@
         "text": "Became Public Law No: 119-114."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Drug trafficking and controlled substances",
@@ -584,6 +596,7 @@
         "text": "Became Public Law No: 119-115."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -618,6 +631,7 @@
         "text": "Became Public Law No: 119-116."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Transportation and Public Works",
       "subjects": [
         "Data collection, sharing, protection",
@@ -653,6 +667,7 @@
         "text": "Became Public Law No: 119-117."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -684,7 +699,8 @@
         "date": "2026-09-24",
         "text": "Failed of passage in Senate by Yea-Nay Vote. 49 - 50. Record Vote Number: 244."
       },
-      "outcome": "failed",
+      "outcome": "passed_house",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Conflicts and wars",
@@ -1102,6 +1118,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4958)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "subjects": [],
       "summary_crs": null,
       "text_url_html": "https://www.congress.gov/119/bills/sres863/BILLS-119sres863ats.htm",
@@ -1189,7 +1206,8 @@
         "date": "2026-09-18",
         "text": "Became Public Law No: 119-111."
       },
-      "outcome": "enacted",
+      "outcome": "passed_senate",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Civil actions and liability",
@@ -1399,6 +1417,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4790)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Asia",
@@ -1504,7 +1523,8 @@
         "date": "2026-09-16",
         "text": "Became Public Law No: 119-109."
       },
-      "outcome": "enacted",
+      "outcome": "passed_house",
+      "status": null,
       "policy_area": "Law",
       "subjects": [
         "California",
@@ -1568,6 +1588,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4762)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Congressional tributes",
@@ -1661,6 +1682,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4690)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Government Operations and Politics",
       "subjects": [
         "Commemorative events and holidays",
@@ -1692,6 +1714,7 @@
         "text": "Became Public Law No: 119-105."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Kentucky",
@@ -1756,6 +1779,7 @@
         "text": "Became Public Law No: 119-107."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Art, artists, authorship",
@@ -1822,6 +1846,7 @@
         "text": "Became Public Law No: 119-104."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Conflicts and wars",
@@ -2258,6 +2283,7 @@
         "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text of amendment in the nature of a substitute: CR S4552-4553)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Congressional tributes",
@@ -2289,6 +2315,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4553)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Transportation and Public Works",
       "subjects": [
         "Commemorative events and holidays",

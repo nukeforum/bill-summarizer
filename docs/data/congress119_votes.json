@@ -1,8 +1,69 @@
 {
-  "generated_at": "2026-09-29T13:13:13Z",
+  "generated_at": "2026-09-30T12:54:02Z",
   "congress": 119,
-  "vote_count": 1584,
+  "vote_count": 1586,
   "votes": [
+    {
+      "id": "senate-119-2-252",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 252,
+      "date": "2026-09-29",
+      "question": "On the Motion to Discharge",
+      "result": "Motion to Discharge Rejected",
+      "bill_id": "sres852-119",
+      "totals": {
+        "yea": 47,
+        "nay": 51,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 44,
+          "I": 2,
+          "R": 1
+        },
+        "nay": {
+          "D": 1,
+          "R": 50
+        },
+        "not_voting": {
+          "R": 2
+        }
+      },
+      "path": "votes/congress119/senate-2-252.json"
+    },
+    {
+      "id": "senate-119-2-251",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 251,
+      "date": "2026-09-29",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Rejected",
+      "bill_id": "sjres197-119",
+      "totals": {
+        "yea": 48,
+        "nay": 51,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 45,
+          "I": 2,
+          "R": 1
+        },
+        "nay": {
+          "R": 51
+        },
+        "not_voting": {
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-251.json"
+    },
     {
       "id": "senate-119-2-250",
       "chamber": "senate",
