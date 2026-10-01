@@ -19,6 +19,21 @@ public struct RepresentativesSnapshot: Equatable, Sendable {
   }
 }
 
+public enum LocationSelectionMode: String, CaseIterable, Equatable, Sendable {
+  case zipCode
+  case district
+}
+
+public enum ZipLookupStatus: Equatable, Sendable {
+  case idle
+  case lookingUp
+  case invalid
+  case notFound
+  case matched(stateCode: String, district: Int)
+  case multiple(stateCode: String, districts: [Int])
+  case failed
+}
+
 @Observable
 @MainActor
 public final class RepresentativesFeatureModel {
@@ -33,6 +48,10 @@ public final class RepresentativesFeatureModel {
   public private(set) var state: State = .loading
   public private(set) var selectedState: String?
   public private(set) var selectedDistrict: Int?
+  public private(set) var locationSelectionMode: LocationSelectionMode = .zipCode
+  public private(set) var zipCode = ""
+  public private(set) var zipLookupStatus: ZipLookupStatus = .idle
+  public private(set) var showsZipConfirmation = false
 
   @ObservationIgnored
   @Dependency(\.membersClient) private var membersClient
@@ -41,7 +60,13 @@ public final class RepresentativesFeatureModel {
   @Dependency(\.savedRepresentativesClient) private var savedRepresentativesClient
 
   @ObservationIgnored
+  @Dependency(\.zipDistrictClient) private var zipDistrictClient
+
+  @ObservationIgnored
   private var index: MembersIndex?
+
+  @ObservationIgnored
+  private var zipCandidateDistricts: [Int] = []
 
   public init() {}
 
@@ -52,6 +77,9 @@ public final class RepresentativesFeatureModel {
 
   public var availableDistricts: [Int] {
     guard let index, let selectedState else { return [] }
+    if !zipCandidateDistricts.isEmpty {
+      return zipCandidateDistricts
+    }
     return Array(
       Set(
         index.members
@@ -63,6 +91,11 @@ public final class RepresentativesFeatureModel {
 
   public var canSaveSelection: Bool {
     selectedState != nil && selectedDistrict != nil
+  }
+
+  public var canLookUpZip: Bool {
+    zipCode.count == 5 && zipCode.allSatisfy(\.isNumber)
+      && zipLookupStatus != .lookingUp
   }
 
   public func load() async {
@@ -86,6 +119,8 @@ public final class RepresentativesFeatureModel {
   public func selectState(_ stateCode: String) {
     selectedState = stateCode
     selectedDistrict = nil
+    zipCandidateDistricts = []
+    zipLookupStatus = .idle
     if availableDistricts.count == 1 {
       selectedDistrict = availableDistricts[0]
     }
@@ -94,7 +129,75 @@ public final class RepresentativesFeatureModel {
 
   public func selectDistrict(_ district: Int) {
     selectedDistrict = district
+    if case .multiple = zipLookupStatus {
+      zipLookupStatus = .idle
+    }
     state = .choosing(message: nil)
+  }
+
+  public func setLocationSelectionMode(_ mode: LocationSelectionMode) {
+    locationSelectionMode = mode
+  }
+
+  public func setZipCode(_ input: String) {
+    let sanitized = String(input.filter(\.isNumber).prefix(5))
+    guard sanitized != zipCode else { return }
+    zipCode = sanitized
+    selectedState = nil
+    selectedDistrict = nil
+    zipCandidateDistricts = []
+    zipLookupStatus = .idle
+    showsZipConfirmation = false
+  }
+
+  public func lookUpZip() async {
+    guard canLookUpZip else {
+      zipLookupStatus = .invalid
+      return
+    }
+
+    selectedState = nil
+    selectedDistrict = nil
+    zipCandidateDistricts = []
+    showsZipConfirmation = false
+    zipLookupStatus = .lookingUp
+    do {
+      switch try await zipDistrictClient.lookup(zipCode) {
+      case .single(let stateCode, let district):
+        selectedState = stateCode
+        selectedDistrict = district
+        zipCandidateDistricts = []
+        zipLookupStatus = .matched(stateCode: stateCode, district: district)
+        showsZipConfirmation = true
+
+      case .multiple(let stateCode, let districts):
+        selectedState = stateCode
+        selectedDistrict = nil
+        zipCandidateDistricts = districts.sorted()
+        zipLookupStatus = .multiple(stateCode: stateCode, districts: districts.sorted())
+        locationSelectionMode = .district
+
+      case .notFound:
+        selectedState = nil
+        selectedDistrict = nil
+        zipCandidateDistricts = []
+        zipLookupStatus = .notFound
+      }
+      state = .choosing(message: nil)
+    } catch is CancellationError {
+      return
+    } catch {
+      zipLookupStatus = .failed
+    }
+  }
+
+  public func confirmZipSelection() async {
+    showsZipConfirmation = false
+    await saveSelection()
+  }
+
+  public func dismissZipConfirmation() {
+    showsZipConfirmation = false
   }
 
   public func saveSelection() async {
@@ -130,6 +233,11 @@ public final class RepresentativesFeatureModel {
   public func changeLocation() {
     selectedState = nil
     selectedDistrict = nil
+    zipCode = ""
+    zipCandidateDistricts = []
+    zipLookupStatus = .idle
+    showsZipConfirmation = false
+    locationSelectionMode = .zipCode
     state = .choosing(message: nil)
   }
 
