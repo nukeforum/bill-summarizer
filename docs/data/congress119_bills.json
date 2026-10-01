@@ -1,8 +1,1333 @@
 {
-  "generated_at": "2026-09-30T12:54:02Z",
+  "generated_at": "2026-10-01T12:31:42Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "hr1703-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "1703",
+      "title": "Choices for Increased Mobility Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Joyce, John",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2025-02-27",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate without amendment by Voice Vote."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Aging",
+        "Disability and paralysis",
+        "Health care costs and insurance",
+        "Health technology, devices, supplies",
+        "Medicare"
+      ],
+      "summary_crs": "<p><strong>Choices for Increased Mobility Act of 2025</strong></p><p>This bill requires the Centers for Medicare &amp; Medicaid Services (CMS) to establish specific billing codes under Medicare for certain materials used in ultralightweight manual wheelchairs.</p><p>Specifically, the CMS must establish at least two billing codes for the base of the wheelchair, with at least one code for a base with titanium or carbon fiber construction material and at least one code for a base without these materials. Suppliers receive the same payment under Medicare for these wheelchairs as would otherwise apply, but may bill beneficiaries for any difference between the payment and the actual charge for the wheelchair. The CMS may require suppliers to inform beneficiaries of their potential financial liability in these cases.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr1703/BILLS-119hr1703rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr1703/BILLS-119hr1703rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr1703/BILLS-119hr1703rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1703",
+      "votes": []
+    },
+    {
+      "id": "hr227-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "227",
+      "title": "Clergy Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Fong, Vince",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2025-01-07",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Social Welfare",
+      "subjects": [
+        "Congressional oversight",
+        "Income tax exclusion",
+        "Religion",
+        "Social security and elderly assistance",
+        "Tax administration and collection, taxpayers"
+      ],
+      "summary_crs": "<p><strong>Clergy Act</strong></p><p>This bill establishes a two-year window for certain members of the clergy and Christian Science practitioners to revoke their exemption from Social Security and Medicare taxes on ministerial earnings. Under current law, such individuals who object to participation in public insurance programs on religious or conscientious grounds may apply to the Internal Revenue Service (IRS) for an irrevocable exemption and will not receive Social Security or Medicare benefits in retirement unless they have qualifying credits from other employment.</p><p>The IRS must develop a plan to inform members of the clergy and Christian Science practitioners of their eligibility to revoke prior exemptions, pursuant to the bill's changes.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr227/BILLS-119hr227rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr227/BILLS-119hr227rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr227/BILLS-119hr227rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/227",
+      "votes": [
+        {
+          "id": "house-119-2-139",
+          "chamber": "house",
+          "session": 2,
+          "roll_number": 139,
+          "date": "2026-04-27",
+          "question": "On Motion to Suspend the Rules and Pass, as Amended",
+          "result": "Passed",
+          "bill_id": "hr227-119",
+          "totals": {
+            "yea": 350,
+            "nay": 5,
+            "present": 0,
+            "not_voting": 74
+          },
+          "party_split": {
+            "yea": {
+              "D": 183,
+              "I": 1,
+              "R": 166
+            },
+            "nay": {
+              "D": 1,
+              "R": 4
+            },
+            "not_voting": {
+              "D": 28,
+              "R": 46
+            }
+          },
+          "path": "votes/congress119/house-2-139.json"
+        }
+      ]
+    },
+    {
+      "id": "hr2400-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "2400",
+      "title": "Pit River Land Transfer Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. LaMalfa, Doug",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2025-03-27",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate with an amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Native Americans",
+      "subjects": [
+        "California",
+        "Indian lands and resources rights",
+        "Land transfers"
+      ],
+      "summary_crs": "<p><strong>Pit River Land Transfer Act of 2025</strong></p><p>This bill takes approximately 603.94 acres of specified lands in California into trust for the benefit of the Pit River Tribe.</p><p>Specifically, the bill directs the Department of the Interior to take the following lands into trust for the benefit of the tribe: (1) approximately 583.79 acres of federal land managed by the Forest Service (but excluding approximately 20.03 acres of roads, highways, and public rights-of-way subject to existing easements), and (2) approximately 40.18 acres of fee land held by the tribe. These combined lands, approximately 603.94 acres, shall be part of the tribe's reservation. Further, the bill prohibits gaming on the land taken into trust.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr2400/BILLS-119hr2400eas.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr2400/BILLS-119hr2400eas.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr2400/BILLS-119hr2400eas.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2400",
+      "votes": []
+    },
+    {
+      "id": "hr4307-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "4307",
+      "title": "Enhancing Detection of Human Trafficking Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Walberg, Tim",
+        "party": "R",
+        "state": "MI"
+      },
+      "introduced_date": "2025-07-10",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Congressional oversight",
+        "Crime prevention",
+        "Employment and training programs",
+        "Government information and archives",
+        "Human trafficking",
+        "Law enforcement administration and funding",
+        "Performance measurement",
+        "Smuggling and trafficking"
+      ],
+      "summary_crs": "<p><strong>Enhancing Detection of Human Trafficking Act</strong></p><p>This bill requires the Department of Labor to provide training and education to its employees on how to effectively assist law enforcement in detecting human trafficking.</p><p>The bill directs Labor to determine which employees should receive the training and education based on their official duties. Further, it requires the training and education to include information that is appropriate for the employees' location or environment; that reflects current trends and best practices for the location or environment; and that is relevant to detecting human trafficking, identifying suspected victims, and referring potential cases to the Department of Justice and other appropriate authorities.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr4307/BILLS-119hr4307eh.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr4307/BILLS-119hr4307eh.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr4307/BILLS-119hr4307eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/4307",
+      "votes": []
+    },
+    {
+      "id": "hr5235-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "5235",
+      "title": "Skills-Based Federal Contracting Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Mace, Nancy",
+        "party": "R",
+        "state": "SC"
+      },
+      "introduced_date": "2025-09-09",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Congressional oversight",
+        "Government information and archives",
+        "Public contracts and procurement"
+      ],
+      "summary_crs": "<p><strong>Skills-Based Federal Contracting Act</strong></p><p>This bill prohibits federal contract bid solicitations for contractor personnel from including minimum educational requirements unless the contracting officer justifies the requirements.&nbsp;The prohibition applies to educational requirements that may be met through education alone, education or experience, or a combination of education and experience.</p><p>The bill also requires the Office of Management and Budget to issue implementing guidance to federal agencies, including instructions for contracting officers that encourage using alternatives to education requirements.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr5235/BILLS-119hr5235rs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr5235/BILLS-119hr5235rs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr5235/BILLS-119hr5235rs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/5235",
+      "votes": []
+    },
+    {
+      "id": "hr5349-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "5349",
+      "title": "TAS Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Moran, Nathaniel",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2025-09-15",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate with an amendment and an amendment to the Title by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Taxation",
+      "subjects": [
+        "Civil actions and liability",
+        "Evidence and witnesses",
+        "Internal Revenue Service (IRS)",
+        "Judges",
+        "Judicial procedure and administration",
+        "Specialized courts"
+      ],
+      "summary_crs": "<p><strong>Tax Court Improvement Act</strong></p><p>This bill expands the authority of the U.S. Tax Court to issue subpoenas, authorizes the Tax Court to extend certain petition deadlines, and makes other changes related to Tax Court procedures.</p><p>The bill authorizes the Tax Court to issue subpoenas compelling the production of documents and other items from a litigant or witness for evidentiary or discovery purposes (whether or not it is in connection with a scheduled hearing). (Under current law, the Tax Court may issue subpoenas only to compel the attendance and testimony of witnesses and the production of evidence at a scheduled hearing or deposition.)</p><p>The bill authorizes the Tax Court to extend (or toll) the deadline to file a Tax Court petition contesting an Internal Revenue Service (IRS) deficiency notice if it is&nbsp;equitable to do so (known as equitable tolling). Further, under the bill, the dismissal of a petition contesting an IRS deficiency notice because the petition is not filed before the deadline and equitable tolling is denied is not treated as a decision of the Tax Court. This allows a subsequent claim to be filed in U.S. district court if certain conditions are met.</p><p>The bill also</p><ul><li>expands the type of Tax Court proceedings for which special trial judges may be appointed,</li><li>authorizes Tax Court special trial judges to impose fines up to $5,000 and up to 30 days in jail for contempt of court, and</li><li>requires Tax Court judges and special trial judges to recuse themselves in certain circumstances.</li></ul>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr5349/BILLS-119hr5349eas.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr5349/BILLS-119hr5349eas.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr5349/BILLS-119hr5349eas.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/5349",
+      "votes": []
+    },
+    {
+      "id": "hr6380-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "6380",
+      "title": "Chiricahua National Park Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Ciscomani, Juan",
+        "party": "R",
+        "state": "AZ"
+      },
+      "introduced_date": "2025-12-03",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Arizona",
+        "Federal-Indian relations",
+        "Monuments and memorials",
+        "Parks, recreation areas, trails"
+      ],
+      "summary_crs": "<p><strong>Chiricahua National Park Act</strong></p><p>This bill redesignates the Chiricahua National Monument in Arizona as the Chiricahua National Park.</p><p>The bill directs the National Park Service (NPS) to (1) ensure the protection of traditional cultural and religious sites in the park, and (2) provide access to those sites by members of Indian tribes for traditional cultural and customary uses. </p><p>Upon the request of an Indian tribe, the&nbsp;NPS may temporarily close to general public use one or more specific areas of the park to protect traditional cultural and customary uses in the area by members of the tribe. The closure must be limited to the smallest practicable area for the minimum period necessary for the traditional cultural and religious activities.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr6380/BILLS-119hr6380rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr6380/BILLS-119hr6380rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr6380/BILLS-119hr6380rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/6380",
+      "votes": []
+    },
+    {
+      "id": "hr7022-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "7022",
+      "title": "Mystic Alerts Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Pfluger, August",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2026-01-12",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Science, Technology, Communications",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Emergency communications systems",
+        "Federal Communications Commission (FCC)",
+        "Spacecraft and satellites",
+        "Telephone and wireless communication",
+        "User charges and fees"
+      ],
+      "summary_crs": "<p><strong>Mystic Alerts Act</strong></p><p>This bill provides for wireless emergency alerts to be transmitted to mobile devices via satellite. (Currently, wireless emergency alerts are sent via terrestrial mobile networks to individual devices in geographically targeted areas. Commercial mobile service providers are not required to participate; only devices connected to a participating service provider’s network receive alerts.)</p><p>Under the bill, commercial mobile service providers that participate in the wireless emergency alerts system must give notice to the Federal Communications Commission (FCC) indicating whether they will transmit such alerts via satellite (in addition to sending alerts via terrestrial networks).</p><p>The FCC must establish technical standards and other regulations to enable satellite emergency alerts. Providers that opt to transmit emergency alerts via satellite must comply with such regulations.</p><p>If a provider elects not to transmit satellite alerts, the provider must give notice of that election to new and existing subscribers. Separately, mobile service subscribers may opt out of receiving satellite alerts.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr7022/BILLS-119hr7022rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr7022/BILLS-119hr7022rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr7022/BILLS-119hr7022rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/7022",
+      "votes": []
+    },
+    {
+      "id": "hr7831-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "7831",
+      "title": "License to Drill Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Kennedy, Mike",
+        "party": "R",
+        "state": "UT"
+      },
+      "introduced_date": "2026-03-05",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Energy",
+      "subjects": [
+        "Licensing and registrations",
+        "Mining",
+        "Oil and gas"
+      ],
+      "summary_crs": "<p><strong>License to Drill Act</strong></p><p>This bill extends through FY2037 the Bureau of Land Management’s (BLM’s) authority to collect oil and gas permit processing fees. For each new permit application, BLM collects a fee that is transferred to the BLM Permit Processing Improvement Fund.&nbsp;(Under current law, the fees are authorized through FY2026.)</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr7831/BILLS-119hr7831rs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr7831/BILLS-119hr7831rs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr7831/BILLS-119hr7831rs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/7831",
+      "votes": []
+    },
+    {
+      "id": "hr8352-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "8352",
+      "title": "Criminal History Access Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Schmidt, Derek",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2026-04-16",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Law",
+      "subjects": [
+        "Criminal justice information and records",
+        "Law enforcement officers",
+        "Licensing and registrations"
+      ],
+      "summary_crs": "<p><strong>Criminal History Access Act of 2026</strong></p><p>This bill authorizes a new type of entity—peace officer standards and training agencies—to access criminal history record information maintained by the Federal Bureau of Investigation. The term <em>peace officer standards and training agency</em> means an agency of a state, the District of Columbia, or a U.S. territory that is authorized to set standards for the hiring, training, ethical conduct, and retention of its law enforcement officers through certification, licensing, or other similar qualification processes.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr8352/BILLS-119hr8352rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr8352/BILLS-119hr8352rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr8352/BILLS-119hr8352rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/8352",
+      "votes": []
+    },
+    {
+      "id": "hr837-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "837",
+      "title": "To require the Secretary of Agriculture to convey the Pleasant Valley Ranger District Administrative Site to Gila County, Arizona.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Crane, Elijah",
+        "party": "R",
+        "state": "AZ"
+      },
+      "introduced_date": "2025-01-31",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Arizona",
+        "Forests, forestry, trees",
+        "Geography and mapping",
+        "Land transfers"
+      ],
+      "summary_crs": "<p>This bill directs the Forest Service to convey specified property to Gila County, Arizona, upon the county's submission of a written request for such conveyance. The property, identified as the Gila County Area, consists of approximately 232.9 acres of National Forest System land located in the Tonto National Forest in Arizona.</p><p>The county must use the land for the purposes of serving and supporting veterans.&nbsp;If any land conveyed under this bill ceases to be used for such purpose, all right, title, and interest in and to the land shall revert to the United States, at the discretion of the Forest Service.</p><p>The conveyance&nbsp;must be made with a&nbsp;quitclaim deed and without consideration (value, such as payment, provided in exchange for the property).</p><p>The Forest Service&nbsp;must not be required to provide any covenant or warranty for the land and improvements conveyed to the county under such conveyance.</p><p>As a condition of the conveyance, the county must pay all the costs associated with the conveyance, including any (1) surveys, (2)&nbsp;environmental analysis or resource survey required under federal law, and (3) analysis required to comply with certain provisions of the National Historic Preservation Act.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr837/BILLS-119hr837rs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr837/BILLS-119hr837rs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr837/BILLS-119hr837rs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/837",
+      "votes": []
+    },
+    {
+      "id": "hr9496-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "9496",
+      "title": "End Tax Penalties on American Hostages Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Tenney, Claudia",
+        "party": "R",
+        "state": "NY"
+      },
+      "introduced_date": "2026-06-29",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Taxation",
+      "subjects": [
+        "Administrative remedies",
+        "Computers and information technology",
+        "Detention of persons",
+        "Diplomacy, foreign officials, Americans abroad",
+        "Internal Revenue Service (IRS)",
+        "Tax administration and collection, taxpayers",
+        "Tax-exempt organizations",
+        "Terrorism"
+      ],
+      "summary_crs": "<p><strong>End Tax Penalties on American Hostages Act</strong></p><p>This bill extends certain federal tax deadlines for U.S. nationals who are unlawfully or wrongfully detained abroad or held hostage abroad and their spouses. The bill also allows for an abatement and refund of additional taxes, interest, and penalties assessed to such individuals for failing to meet a federal tax deadline during a period of detention.</p><p>Specifically, under the bill, the time period during which a U.S. national is unlawfully or wrongfully detained abroad or held hostage abroad is disregarded in determining certain federal tax deadlines, including deadlines for</p><ul><li>filing a return for and paying federal income, estate, gift, employment, or excise taxes;</li><li>a tax credit or refund claim; and</li><li>the determination, assessment, and collection of additional taxes, interest, or penalties.</li></ul><p>The bill requires the&nbsp;Department of State and the Department of Justice&nbsp;to annually provide the Internal Revenue Service (IRS) with lists&nbsp;to identify U.S. nationals who qualify for an extension.</p><p>The bill also requires the IRS to (1) abate and refund additional taxes, interest, and penalties assessed for&nbsp;any tax year ending during a period of detention for which an extension of a federal tax deadline is permitted; and (2) establish a program allowing U.S. nationals unlawfully or wrongfully detained abroad or taken hostage&nbsp;abroad (or their spouse or dependent) to claim a refund of additional taxes, interest, and penalties assessed for any tax year ending during a period of detention&nbsp;from 2021 to the bill’s enactment date.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr9496/BILLS-119hr9496rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr9496/BILLS-119hr9496rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr9496/BILLS-119hr9496rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/9496",
+      "votes": []
+    },
+    {
+      "id": "s1055-119",
+      "congress": 119,
+      "type": "s",
+      "number": "1055",
+      "title": "Indian Health Service Emergency Claims Parity Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Rounds, Mike",
+        "party": "R",
+        "state": "SD"
+      },
+      "introduced_date": "2025-03-13",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Native Americans",
+      "subjects": [
+        "Emergency medical services and trauma care",
+        "Health care costs and insurance",
+        "Health care coverage and access",
+        "Indian social and development programs",
+        "Minority health"
+      ],
+      "summary_crs": "<p><strong>Indian Health Service Emergency Claims Parity Act</strong></p><p>This bill extends from 72 hours to 15 days the time period&nbsp;to notify the Purchased/Referred Care (PRC) program of emergency medical care received from a non-Indian Health Service (IHS) medical provider or at a non-IHS medical facility. This bill does not apply to individuals who are elderly or disabled, who continue to have a 30-day notification requirement for emergency services.</p><p>The IHS provides medical and dental services directly to American Indian and Alaska Native patients whenever possible. The PRC program pays for medical or dental care that is provided away from an IHS or tribal health care facility. The PRC program must be notified of requests for authorization of payment for health care services from a non-IHS provider.</p><p>Currently in emergency cases, the patient, an individual on behalf of the patient, or the medical care provider must, within 72 hours after the beginning of treatment for the condition or after admission to a health care facility, notify a PRC authorizing official of the need for the emergency medical care. This bill instead allows the patient, other individual, or provider to notify PRC within 15 days of the treatment or admission.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s1055/BILLS-119s1055es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s1055/BILLS-119s1055es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s1055/BILLS-119s1055es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1055",
+      "votes": []
+    },
+    {
+      "id": "s1514-119",
+      "congress": 119,
+      "type": "s",
+      "number": "1514",
+      "title": "Quinault Indian Nation Land Transfer Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cantwell, Maria",
+        "party": "D",
+        "state": "WA"
+      },
+      "introduced_date": "2025-04-29",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate with amendments by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Native Americans",
+      "subjects": [
+        "Federal-Indian relations",
+        "Indian lands and resources rights",
+        "Land transfers",
+        "Washington State"
+      ],
+      "summary_crs": "<p><strong>Quinault Indian Nation Land Transfer Act</strong></p><p>This bill administratively transfers approximately 72 acres of specified lands in Washington from the U.S. Forest Service to the Department of the Interior. Interior must take this land into trust for the benefit of the Quinault Indian Nation. Land taken into trust shall be part of the tribe's reservation.</p><p>The bill prohibits gaming on the land taken into trust.</p><p>The bill requires Interior, for purposes of taking the land into trust, to meet the disclosure requirements for hazardous substances, pollutants, or contaminants, without otherwise being required to&nbsp;remediate or abate those hazardous substances, pollutants, or contaminants.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s1514/BILLS-119s1514es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s1514/BILLS-119s1514es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s1514/BILLS-119s1514es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1514",
+      "votes": []
+    },
+    {
+      "id": "s1564-119",
+      "congress": 119,
+      "type": "s",
+      "number": "1564",
+      "title": "Floodplain Enhancement and Recovery Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Murray, Patty",
+        "party": "D",
+        "state": "WA"
+      },
+      "introduced_date": "2025-05-01",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Finance and Financial Sector",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s1564/BILLS-119s1564es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s1564/BILLS-119s1564es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s1564/BILLS-119s1564es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1564",
+      "votes": []
+    },
+    {
+      "id": "s2273-119",
+      "congress": 119,
+      "type": "s",
+      "number": "2273",
+      "title": "Wyoming Education Trust Modernization Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lummis, Cynthia M.",
+        "party": "R",
+        "state": "WY"
+      },
+      "introduced_date": "2025-07-14",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Education programs funding",
+        "Government trust funds",
+        "Land use and conservation",
+        "Wyoming"
+      ],
+      "summary_crs": "<p><strong>Wyoming Education Trust Modernization Act</strong></p><p>This bill provides Wyoming with more flexibility to invest the principal of its permanent school fund by allowing the state to use earnings generated from investment of the fund rather than only interest.</p><p>By way of background, Congress created the fund when Wyoming became a state by granting certain federal lands to be held in a trust for the state. Proceeds from school trust land sales, exchanges, or disposals are deposited into the fund to support public schools.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s2273/BILLS-119s2273es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s2273/BILLS-119s2273es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s2273/BILLS-119s2273es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2273",
+      "votes": []
+    },
+    {
+      "id": "s2437-119",
+      "congress": 119,
+      "type": "s",
+      "number": "2437",
+      "title": "Snow Water Supply Forecasting Program Reauthorization Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hickenlooper, John W.",
+        "party": "D",
+        "state": "CO"
+      },
+      "introduced_date": "2025-07-24",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate with an amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Water Resources Development",
+      "subjects": [
+        "Advanced technology and technological innovations",
+        "Environmental assessment, monitoring, research",
+        "Environmental technology",
+        "Water resources funding",
+        "Water use and supply"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s2437/BILLS-119s2437es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s2437/BILLS-119s2437es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s2437/BILLS-119s2437es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2437",
+      "votes": []
+    },
+    {
+      "id": "s2498-119",
+      "congress": 119,
+      "type": "s",
+      "number": "2498",
+      "title": "National Park System Long-Term Lease Investment Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Tillis, Thomas",
+        "party": "R",
+        "state": "NC"
+      },
+      "introduced_date": "2025-07-29",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate with an amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Land use and conservation",
+        "Parks, recreation areas, trails"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s2498/BILLS-119s2498es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s2498/BILLS-119s2498es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s2498/BILLS-119s2498es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2498",
+      "votes": []
+    },
+    {
+      "id": "s2754-119",
+      "congress": 119,
+      "type": "s",
+      "number": "2754",
+      "title": "Crystal Reservoir Conveyance Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Bennet, Michael F.",
+        "party": "D",
+        "state": "CO"
+      },
+      "introduced_date": "2025-09-10",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate with an amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Colorado",
+        "Dams and canals",
+        "Geography and mapping",
+        "Land transfers",
+        "Water storage"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s2754/BILLS-119s2754es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s2754/BILLS-119s2754es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s2754/BILLS-119s2754es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2754",
+      "votes": []
+    },
+    {
+      "id": "s3315-119",
+      "congress": 119,
+      "type": "s",
+      "number": "3315",
+      "title": "Health Care Cybersecurity and Resiliency Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cassidy, Bill",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2025-12-02",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate with an amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Computer security and identity theft",
+        "Computers and information technology",
+        "Congressional oversight",
+        "Department of Health and Human Services",
+        "Employment and training programs",
+        "Government information and archives",
+        "Government studies and investigations",
+        "Health programs administration and funding",
+        "Public-private cooperation",
+        "Rural conditions and development"
+      ],
+      "summary_crs": "<p><strong>Health Care Cybersecurity and Resiliency Act of 2026</strong></p><p>This bill expands federal requirements and resources for preventing and responding to cybersecurity incidents in the health care and public health sectors.</p><p>The bill directs the Department of Health and Human Services (HHS) to</p><ul><li> require private health care-related entities to adopt minimum cybersecurity practices (e.g., multifactor authentication),</li><li>more specifically identify the standards for mitigating penalties relating to violations of health information privacy and security,</li><li>expand and update biennially a specified plan that details cybersecurity protocols&nbsp;for&nbsp;HHS personnel,</li><li>provide training and best practices to support the expansion of the workforce for health care cybersecurity,&nbsp;</li><li>provide guidance on cybersecurity readiness to rural entities, and</li><li>designate one representative to lead oversight and coordination of cybersecurity activities within HHS.</li></ul><p>Also, HHS and the Cybersecurity and Infrastructure Security Agency (CISA) must coordinate to improve health care cybersecurity, including by (1) providing resources for entities receiving information from HHS or CISA programs, and (2) establishing a joint cybersecurity capability plan to coordinate responses to significant incidents.</p><p>Additionally, the bill requires health care providers and plans to include the number of individuals affected when notifying individuals of unauthorized access to health information (i.e., a breach).&nbsp;</p><p></p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s3315/BILLS-119s3315es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s3315/BILLS-119s3315es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s3315/BILLS-119s3315es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/3315",
+      "votes": []
+    },
+    {
+      "id": "s3798-119",
+      "congress": 119,
+      "type": "s",
+      "number": "3798",
+      "title": "Safe Access to Cash Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cruz, Ted",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2026-02-05",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate with an amendment by Voice Vote."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Bank accounts, deposits, capital",
+        "Crimes against property",
+        "Violent crime"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s3798/BILLS-119s3798es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s3798/BILLS-119s3798es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s3798/BILLS-119s3798es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/3798",
+      "votes": []
+    },
+    {
+      "id": "s5249-119",
+      "congress": 119,
+      "type": "s",
+      "number": "5249",
+      "title": "MORE American Fuel Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kelly, Mark",
+        "party": "D",
+        "state": "AZ"
+      },
+      "introduced_date": "2026-08-05",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Passed Senate with an amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Energy",
+      "subjects": [
+        "Industrial facilities",
+        "Licensing and registrations",
+        "Nuclear power",
+        "Supply chain"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s5249/BILLS-119s5249es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s5249/BILLS-119s5249es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s5249/BILLS-119s5249es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/5249",
+      "votes": []
+    },
+    {
+      "id": "sres866-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "866",
+      "title": "A resolution supporting the designation of October 2026 as \"Substance Use & Misuse Prevention Month\" to raise awareness of substance use and misuse in the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Ricketts, Pete",
+        "party": "R",
+        "state": "NE"
+      },
+      "introduced_date": "2026-09-17",
+      "latest_action": {
+        "date": "2026-09-30",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres866/BILLS-119sres866is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres866/BILLS-119sres866is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres866/BILLS-119sres866is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/866",
+      "votes": []
+    },
+    {
+      "id": "hr10159-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "10159",
+      "title": "To authorize the Secretary of the Army to convey to the State of North Carolina a certain parcel of real property located at Fort Bragg, North Carolina, on which the State shall construct a veterans’ State home, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Hudson, Richard",
+        "party": "R",
+        "state": "NC"
+      },
+      "introduced_date": "2026-08-27",
+      "latest_action": {
+        "date": "2026-09-29",
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5186)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Building construction",
+        "Government buildings, facilities, and property",
+        "Land use and conservation",
+        "North Carolina",
+        "Veterans' loans, housing, homeless programs"
+      ],
+      "summary_crs": "<p>This bill authorizes the Department of the Army to transfer, without compensation or other consideration, all right, title, and interest to a specified 20-acre parcel of land on&nbsp;Fort Bragg to the State of North Carolina for the purpose of constructing a state home under the jurisdiction of the North Carolina Department of Military and Veterans Affairs. (A <em>state home</em> is a home established by a state for veterans who are disabled by age, disease, or otherwise and are incapable of earning a living because of such disability. The term also includes a home that furnishes nursing home care for veterans.)</p><p>Specifically, the bill authorizes the conveyance of a 20-acre parcel of land situated on the Fort&nbsp;Bragg Training Area in Harnett County, North Carolina, that is commonly referred to as Parcel 3B.</p><p>The State of North Carolina must cover all costs to carry out the conveyance.</p><p>If the Department&nbsp;of the Army determines the property is not being used for activities related to a state home, all right, title, and interest in the property may revert to the United States.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr10159/BILLS-119hr10159rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr10159/BILLS-119hr10159rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr10159/BILLS-119hr10159rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/10159",
+      "votes": []
+    },
+    {
+      "id": "hr1190-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "1190",
+      "title": "Expanding Access to Capital for Rural Job Creators Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Downing, Troy",
+        "party": "R",
+        "state": "MT"
+      },
+      "introduced_date": "2025-02-11",
+      "latest_action": {
+        "date": "2026-09-29",
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5185)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Finance and Financial Sector",
+      "subjects": [
+        "Business investment and capital",
+        "Rural conditions and development",
+        "Securities and Exchange Commission (SEC)",
+        "Small business"
+      ],
+      "summary_crs": "<p><strong>Expanding Access to Capital for Rural Job Creators Act</strong></p><p>This bill requires the Office of the Advocate for Small Business Capital Formation within the Securities and Exchange Commission to report on issues encountered by rural-area small businesses.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr1190/BILLS-119hr1190rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr1190/BILLS-119hr1190rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr1190/BILLS-119hr1190rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1190",
+      "votes": []
+    },
+    {
+      "id": "hr1550-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "1550",
+      "title": "Strengthening America’s Turning Point Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Stefanik, Elise M.",
+        "party": "R",
+        "state": "NY"
+      },
+      "introduced_date": "2025-02-25",
+      "latest_action": {
+        "date": "2026-09-29",
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5140-5144)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Geography and mapping",
+        "Historic sites and heritage areas",
+        "Military history",
+        "New York State",
+        "Parks, recreation areas, trails",
+        "U.S. history"
+      ],
+      "summary_crs": "<p><strong>Strengthening America’s Turning Point Act</strong></p><p>This bill renames the Saratoga National Historical Park, located in Stillwater, New York, as Saratoga National Battlefield Park.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr1550/BILLS-119hr1550rs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr1550/BILLS-119hr1550rs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr1550/BILLS-119hr1550rs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1550",
+      "votes": []
+    },
+    {
+      "id": "hr1744-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "1744",
+      "title": "United States Commission on International Religious Freedom Reauthorization Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Smith, Christopher H.",
+        "party": "R",
+        "state": "NJ"
+      },
+      "introduced_date": "2025-02-27",
+      "latest_action": {
+        "date": "2026-09-29",
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5186)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Human rights",
+        "International organizations and cooperation",
+        "Religion",
+        "U.S. Commission on International Religious Freedom"
+      ],
+      "summary_crs": "<p><strong>United States Commission on International Religious Freedom Reauthorization Act of 2026</strong></p><p>This bill reauthorizes the U.S. Commission on International Religious Freedom through 2028. The commission is an independent federal commission tasked with monitoring international religious freedom conditions, reviewing U.S. government policy, and making policy recommendations. (Under current law, the commission is authorized through FY2026.)</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr1744/BILLS-119hr1744rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr1744/BILLS-119hr1744rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr1744/BILLS-119hr1744rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1744",
+      "votes": []
+    },
+    {
+      "id": "hr1945-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "1945",
+      "title": "America's National Churchill Museum National Historic Landmark Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Onder, Robert",
+        "party": "R",
+        "state": "MO"
+      },
+      "introduced_date": "2025-03-06",
+      "latest_action": {
+        "date": "2026-09-29",
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5140)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Congressional oversight",
+        "Government studies and investigations",
+        "Historic sites and heritage areas",
+        "Missouri",
+        "Monuments and memorials",
+        "World history"
+      ],
+      "summary_crs": "<p><strong>America's National Churchill Museum National Historic Landmark Act</strong></p><p>This bill designates the America’s National Churchill Museum, including the Winston Churchill Memorial, located at Westminster College in Fulton, Missouri, as the America’s National Churchill Museum National Historic Landmark. (Former British Prime Minister Winston Churchill gave a speech titled <em>The Sinews of Peace</em>, also widely known as the Iron Curtain Speech, at the college in 1946.)</p><p>The bill permits the Department of the Interior to enter into cooperative agreements with public and private entities for the purposes of protecting historic resources at the landmark and providing educational and interpretive facilities for the public. Interior may provide technical and financial assistance to partner entities.&nbsp;</p><p>The bill also directs Interior to conduct a special resource study to evaluate the national significance of the landmark and to determine the suitability and feasibility of designating it as a unit of the National Park System. The study must consider alternatives to that designation for the preservation, protection, and interpretation of the landmark, and must include cost estimates associated with identified alternatives.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr1945/BILLS-119hr1945eh.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr1945/BILLS-119hr1945eh.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr1945/BILLS-119hr1945eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1945",
+      "votes": []
+    },
+    {
+      "id": "hr3620-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "3620",
+      "title": "Southcentral Foundation Land Transfer Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Begich, Nicholas J. [R-AK-At Large]",
+        "party": "R",
+        "state": "AK"
+      },
+      "introduced_date": "2025-05-29",
+      "latest_action": {
+        "date": "2026-09-29",
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5144)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Alaska",
+        "Hazardous wastes and toxic substances",
+        "Land transfers"
+      ],
+      "summary_crs": "<p><strong>Southcentral Foundation Land Transfer Act of 2025</strong></p><p>This bill directs the Department of Health and Human Services (HHS) to convey approximately 3.4 acres in Anchorage, Alaska, to the Southcentral Foundation (SCF) for use in connection with health and social services programs.</p><p>The conveyance must be made by warranty deed. The conveyance may not (1) require any consideration (such as payment) from the SCF for the property; (2) impose any obligation, term, or condition on the SCF relating to that property; or (3) allow for any U.S. reversionary interest in the property.</p><p>HHS must be accorded any easement or access to the property as may be reasonably necessary to satisfy any retained obligation or liability of HHS.</p><p>The bill prohibits the SCF from being liable for certain environmental contamination that occurred on or before the date on which the property is conveyed to the SCF. In turn, HHS may not be liable for any contamination that occurred after the date that the SCF controlled, occupied, and used the property.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr3620/BILLS-119hr3620rs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr3620/BILLS-119hr3620rs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr3620/BILLS-119hr3620rs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/3620",
+      "votes": []
+    },
+    {
+      "id": "hr5284-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "5284",
+      "title": "Claiming Age Clarity Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Smucker, Lloyd",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2025-09-10",
+      "latest_action": {
+        "date": "2026-09-29",
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5184)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Social Welfare",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Aging",
+        "Social Security Administration",
+        "Social security and elderly assistance"
+      ],
+      "summary_crs": "<p><strong>Claiming Age Clarity Act</strong></p><p>This bill changes certain terms that are used by the Social Security Administration (SSA) to describe the ages at which a worker may claim Social Security retirement benefits.</p><p>First, the SSA must use <em>minimum monthly benefit age</em> instead of <em>early eligibility age</em>. This refers to the earliest age (62 under current law) at which a worker may claim benefits. (Currently, the benefit amount of a worker who claims benefits early is reduced to account for the longer period during which the worker is expected to receive benefits.)</p><p>Second, the SSA must use <em>standard monthly benefit age </em>instead of <em>full retirement age</em> and <em>normal retirement age</em>. These terms refer to the age at which a worker may claim benefits without a reduction in the benefit amount. (Currently, this age ranges from 65 to 67, depending on the worker's year of birth.)</p><p>Finally, the SSA must use the term <em>maximum monthly benefit age</em> for any reference to age 70 as the maximum age at which a worker may receive delayed retirement credits. The SSA may not use the term <em>delayed retirement credit. </em>These terms refer to the mechanism that increases the benefit amount of a worker who delays claiming benefits after reaching the full retirement age. (Currently, a worker receives a credit for each month between the full retirement age and age 70 that the worker delays claiming benefits. Each credit increases the benefit amount that the worker will receive after claiming benefits by a specified percentage.)</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr5284/BILLS-119hr5284rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr5284/BILLS-119hr5284rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr5284/BILLS-119hr5284rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/5284",
+      "votes": []
+    },
+    {
+      "id": "s1574-119",
+      "congress": 119,
+      "type": "s",
+      "number": "1574",
+      "title": "Tribal Access to Electronic Evidence Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cortez Masto, Catherine",
+        "party": "D",
+        "state": "NV"
+      },
+      "introduced_date": "2025-05-01",
+      "latest_action": {
+        "date": "2026-09-29",
+        "text": "Passed Senate with an amendment by Unanimous Consent. (text: CR S5184)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Native Americans",
+      "subjects": [
+        "Criminal procedure and sentencing",
+        "Specialized courts",
+        "Telephone and wireless communication"
+      ],
+      "summary_crs": "<p><strong>Tribal Access to Electronic Evidence Act</strong></p><p>This bill allows tribal courts to execute warrants for electronic material.</p><p>The Stored Communications Act (SCA) generally prohibits&nbsp;providers of electronic communication services (e.g., cell phone providers, email providers, or social media platforms) and remote computing services (e.g., cloud computing providers) from&nbsp;knowingly disclosing stored electronic communications or records (e.g., emails) or information pertaining to customers or subscribers. However, the SCA authorizes governmental entities to compel service providers to disclose electronic communication information through a court-issued warrant, a court order, or an administrative subpoena.</p><p>This bill&nbsp;gives tribal courts the same authority as other governmental entities (e.g., state courts) to compel service providers to disclose stored electronic communication information through court-issued warrants, court orders, or administrative subpoenas.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s1574/BILLS-119s1574es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s1574/BILLS-119s1574es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s1574/BILLS-119s1574es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1574",
+      "votes": []
+    },
+    {
+      "id": "s3219-119",
+      "congress": 119,
+      "type": "s",
+      "number": "3219",
+      "title": "Albuquerque Indian School Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Heinrich, Martin",
+        "party": "D",
+        "state": "NM"
+      },
+      "introduced_date": "2025-11-19",
+      "latest_action": {
+        "date": "2026-09-29",
+        "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5145-5146; text: CR S5145-5146)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Native Americans",
+      "subjects": [
+        "Geography and mapping",
+        "Indian lands and resources rights",
+        "Land transfers",
+        "Land use and conservation",
+        "New Mexico"
+      ],
+      "summary_crs": "<p><strong>Albuquerque Indian School Act of 2025</strong></p><p>This bill takes three tracts of specified federal land (approximately 9.89 acres) in Albuquerque, New Mexico, into trust for the benefit of the 19 Pueblos of New Mexico. (These three tracts of land were historically part of the Albuquerque Indian School, which was an Indian boarding school until 1981.)</p><p>The land is currently administered by the General Services Administration (GSA). Within 90 days of this bill's enactment and the relocation of all federal tenants, the bill requires (1) the GSA to transfer administrative jurisdiction over the land to the Department of the Interior, and (2)&nbsp;Interior to take the land into trust for the benefit of the 19 Pueblos.</p><p>The land taken into trust must be subject to a right-of-way easement, as determined by the GSA, on the federal land located within Tract 1 for purposes of retrieving or relocating federal property from the land to another location. (Tract 1, which is approximately 3.57 acres, contains a warehouse that is 76,682 square feet.)</p><p>The bill requires the land taken into trust to be used for the educational, health, cultural, business, and economic development of the 19 Pueblos. Further, the land must remain subject to existing private and municipal encumbrances, rights-of-way, restrictions, easements of record, and utility service agreements.</p><p>The bill prohibits gaming on the land taken into trust.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s3219/BILLS-119s3219es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s3219/BILLS-119s3219es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s3219/BILLS-119s3219es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/3219",
+      "votes": []
+    },
+    {
+      "id": "s3383-119",
+      "congress": 119,
+      "type": "s",
+      "number": "3383",
+      "title": "Unlocking Native Lands and Opportunities for Commerce and Key Economic Developments Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Schatz, Brian",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2025-12-08",
+      "latest_action": {
+        "date": "2026-09-29",
+        "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5144-5145; text: CR S5144-5145)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Native Americans",
+      "subjects": [
+        "Economic development",
+        "Federal-Indian relations",
+        "Indian lands and resources rights"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s3383/BILLS-119s3383es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s3383/BILLS-119s3383es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s3383/BILLS-119s3383es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/3383",
+      "votes": []
+    },
+    {
+      "id": "s5045-119",
+      "congress": 119,
+      "type": "s",
+      "number": "5045",
+      "title": "Wildfire Emissions Prevention Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Curtis, John R.",
+        "party": "R",
+        "state": "UT"
+      },
+      "introduced_date": "2026-07-21",
+      "latest_action": {
+        "date": "2026-09-29",
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5148-5150; text: CR S5149-5150)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Environmental Protection",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s5045/BILLS-119s5045es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s5045/BILLS-119s5045es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s5045/BILLS-119s5045es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/5045",
+      "votes": []
+    },
+    {
+      "id": "s528-119",
+      "congress": 119,
+      "type": "s",
+      "number": "528",
+      "title": "GLRI Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Peters, Gary C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2025-02-11",
+      "latest_action": {
+        "date": "2026-09-29",
+        "text": "Passed Senate with an amendment by Unanimous Consent. (text: CR S5184)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Environmental Protection",
+      "subjects": [
+        "Aquatic ecology",
+        "Environmental assessment, monitoring, research",
+        "Great Lakes",
+        "Hazardous wastes and toxic substances",
+        "Illinois",
+        "Indiana",
+        "Lakes and rivers",
+        "Marine pollution",
+        "Michigan",
+        "Minnesota",
+        "New York State",
+        "Ohio",
+        "Pennsylvania",
+        "Water quality",
+        "Wildlife conservation and habitat protection",
+        "Wisconsin"
+      ],
+      "summary_crs": "<p><strong>Great Lakes Restoration Initiative Act of 2025 or the&nbsp;GLRI Act of 2025</strong></p><p>This bill reauthorizes through FY2031 the Great Lakes Restoration Initiative, which carries out programs and projects to protect and restore the Great Lakes.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s528/BILLS-119s528es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s528/BILLS-119s528es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s528/BILLS-119s528es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/528",
+      "votes": []
+    },
+    {
+      "id": "sjres197-119",
+      "congress": 119,
+      "type": "sjres",
+      "number": "197",
+      "title": "A joint resolution providing for congressional disapproval under chapter 8 of title 5, United States Code, of the rule submitted by the Centers for Medicare & Medicaid Services of the Department of Health and Human Services relating to \"Patient Protection and Affordable Care Act, HHS Notice of Benefit and Payment Parameters for 2027; and Basic Health Program\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Baldwin, Tammy",
+        "party": "D",
+        "state": "WI"
+      },
+      "introduced_date": "2026-06-17",
+      "latest_action": {
+        "date": "2026-09-29",
+        "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 51. Record Vote Number: 251. (consideration: CR S5139-5140)"
+      },
+      "outcome": "failed",
+      "policy_area": "Health",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Civil actions and liability",
+        "Congressional oversight",
+        "Data collection, sharing, protection",
+        "Dental care",
+        "Department of Health and Human Services",
+        "Health care costs and insurance",
+        "Medicaid",
+        "Medicare",
+        "User charges and fees"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sjres197/BILLS-119sjres197pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sjres197/BILLS-119sjres197pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sjres197/BILLS-119sjres197pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-joint-resolution/197",
+      "votes": [
+        {
+          "id": "senate-119-2-251",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 251,
+          "date": "2026-09-29",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Rejected",
+          "bill_id": "sjres197-119",
+          "totals": {
+            "yea": 48,
+            "nay": 51,
+            "present": 0,
+            "not_voting": 1
+          },
+          "party_split": {
+            "yea": {
+              "D": 45,
+              "I": 2,
+              "R": 1
+            },
+            "nay": {
+              "R": 51
+            },
+            "not_voting": {
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-2-251.json"
+        }
+      ]
+    },
+    {
+      "id": "sres662-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "662",
+      "title": "A resolution honoring the life and service of United States Marine Corps veteran Nicholas Douglas Quets, expressing condolences to his family, and condemning cartel violence.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kelly, Mark",
+        "party": "D",
+        "state": "AZ"
+      },
+      "introduced_date": "2026-03-26",
+      "latest_action": {
+        "date": "2026-09-29",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5186)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres662/BILLS-119sres662is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres662/BILLS-119sres662is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres662/BILLS-119sres662is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/662",
+      "votes": []
+    },
+    {
+      "id": "sres852-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "852",
+      "title": "A resolution requesting information on Israel's human rights practices pursuant to section 502B(c) of the Foreign Assistance Act of 1961.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Van Hollen, Chris",
+        "party": "D",
+        "state": "MD"
+      },
+      "introduced_date": "2026-09-14",
+      "latest_action": {
+        "date": "2026-09-29",
+        "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 51. Record Vote Number: 252. (consideration: CR S5158-5159)"
+      },
+      "outcome": "failed",
+      "policy_area": "International Affairs",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres852/BILLS-119sres852is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres852/BILLS-119sres852is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres852/BILLS-119sres852is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/852",
+      "votes": [
+        {
+          "id": "senate-119-2-252",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 252,
+          "date": "2026-09-29",
+          "question": "On the Motion to Discharge",
+          "result": "Motion to Discharge Rejected",
+          "bill_id": "sres852-119",
+          "totals": {
+            "yea": 47,
+            "nay": 51,
+            "present": 0,
+            "not_voting": 2
+          },
+          "party_split": {
+            "yea": {
+              "D": 44,
+              "I": 2,
+              "R": 1
+            },
+            "nay": {
+              "D": 1,
+              "R": 50
+            },
+            "not_voting": {
+              "R": 2
+            }
+          },
+          "path": "votes/congress119/senate-2-252.json"
+        }
+      ]
+    },
     {
       "id": "hr10167-119",
       "congress": 119,
@@ -21,7 +1346,6 @@
         "text": "Passed Senate without amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -55,7 +1379,6 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5123)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Bankruptcy",
@@ -87,7 +1410,6 @@
         "text": "Passed Senate without amendment by Voice Vote. (consideration: CR S5120)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Department of Health and Human Services",
@@ -126,8 +1448,7 @@
         "date": "2026-09-28",
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5123)"
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "passed_senate",
       "policy_area": "Taxation",
       "subjects": [
         "Federal officials",
@@ -187,7 +1508,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5120; text: CR S5120)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Cancer",
@@ -222,7 +1542,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5120-5121; text: CR S5120-5121)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Asia",
@@ -263,7 +1582,6 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5122-5123; text: CR S5123)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Life, casualty, property insurance",
@@ -294,7 +1612,6 @@
         "text": "Passed Senate with an amendment by Yea-Nay Vote. 77 - 22. Record Vote Number: 250. (text: CR S5044-5063)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Athletes",
@@ -464,7 +1781,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5121-5122; text: CR S5121-5122)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -498,7 +1814,6 @@
         "text": "Became Public Law No: 119-112."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Alternative and renewable resources",
@@ -530,7 +1845,6 @@
         "text": "Became Public Law No: 119-113."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Water Resources Development",
       "subjects": [
         "Montana",
@@ -563,7 +1877,6 @@
         "text": "Became Public Law No: 119-114."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Drug trafficking and controlled substances",
@@ -596,7 +1909,6 @@
         "text": "Became Public Law No: 119-115."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -631,7 +1943,6 @@
         "text": "Became Public Law No: 119-116."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Transportation and Public Works",
       "subjects": [
         "Data collection, sharing, protection",
@@ -667,7 +1978,6 @@
         "text": "Became Public Law No: 119-117."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -699,8 +2009,7 @@
         "date": "2026-09-24",
         "text": "Failed of passage in Senate by Yea-Nay Vote. 49 - 50. Record Vote Number: 244."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "failed",
       "policy_area": "International Affairs",
       "subjects": [
         "Conflicts and wars",
@@ -1118,7 +2427,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4958)"
       },
       "outcome": "passed_senate",
-      "status": null,
+      "policy_area": "Labor and Employment",
       "subjects": [],
       "summary_crs": null,
       "text_url_html": "https://www.congress.gov/119/bills/sres863/BILLS-119sres863ats.htm",
@@ -1417,7 +2726,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4790)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Asia",
@@ -1588,7 +2896,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4762)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Congressional tributes",
@@ -1714,7 +3021,6 @@
         "text": "Became Public Law No: 119-105."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Kentucky",
@@ -1779,7 +3085,6 @@
         "text": "Became Public Law No: 119-107."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Art, artists, authorship",
@@ -1846,7 +3151,6 @@
         "text": "Became Public Law No: 119-104."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Conflicts and wars",
@@ -2283,7 +3587,6 @@
         "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text of amendment in the nature of a substitute: CR S4552-4553)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Congressional tributes",
@@ -2315,7 +3618,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4553)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Transportation and Public Works",
       "subjects": [
         "Commemorative events and holidays",
