@@ -1,8 +1,56 @@
 {
-  "generated_at": "2026-09-30T12:54:02Z",
+  "generated_at": "2026-10-01T13:45:09Z",
   "bioguide_id": "M000355",
-  "vote_count": 911,
+  "vote_count": 915,
   "votes": [
+    {
+      "vote_id": "senate-119-2-256",
+      "congress": 119,
+      "date": "2026-09-30",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "position": "not_voting",
+      "bill_id": null,
+      "type": null,
+      "number": null,
+      "short_title": null
+    },
+    {
+      "vote_id": "senate-119-2-255",
+      "congress": 119,
+      "date": "2026-09-30",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "position": "yea",
+      "bill_id": null,
+      "type": null,
+      "number": null,
+      "short_title": null
+    },
+    {
+      "vote_id": "senate-119-2-254",
+      "congress": 119,
+      "date": "2026-09-30",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "position": "yea",
+      "bill_id": "hr9340-119",
+      "type": "hr",
+      "number": "9340",
+      "short_title": null
+    },
+    {
+      "vote_id": "senate-119-2-253",
+      "congress": 119,
+      "date": "2026-09-30",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Rejected",
+      "position": "yea",
+      "bill_id": "hr7008-119",
+      "type": "hr",
+      "number": "7008",
+      "short_title": null
+    },
     {
       "vote_id": "senate-119-2-252",
       "congress": 119,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T12:31:42Z",
+  "generated_at": "2026-10-01T13:45:09Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
@@ -21,6 +21,7 @@
         "text": "Passed Senate without amendment by Voice Vote."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Aging",
@@ -53,7 +54,8 @@
         "date": "2026-09-30",
         "text": "Passed Senate without amendment by Unanimous Consent."
       },
-      "outcome": "passed_senate",
+      "outcome": "passed_house",
+      "status": null,
       "policy_area": "Social Welfare",
       "subjects": [
         "Congressional oversight",
@@ -120,6 +122,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "California",
@@ -151,6 +154,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Congressional oversight",
@@ -187,6 +191,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Government Operations and Politics",
       "subjects": [
         "Congressional oversight",
@@ -218,6 +223,7 @@
         "text": "Passed Senate with an amendment and an amendment to the Title by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Taxation",
       "subjects": [
         "Civil actions and liability",
@@ -252,6 +258,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Arizona",
@@ -284,6 +291,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -318,6 +326,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Licensing and registrations",
@@ -349,6 +358,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Law",
       "subjects": [
         "Criminal justice information and records",
@@ -380,6 +390,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Arizona",
@@ -412,6 +423,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Taxation",
       "subjects": [
         "Administrative remedies",
@@ -448,6 +460,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Emergency medical services and trauma care",
@@ -481,6 +494,7 @@
         "text": "Passed Senate with amendments by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Federal-Indian relations",
@@ -513,6 +527,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [],
       "summary_crs": null,
@@ -540,6 +555,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Education programs funding",
@@ -572,6 +588,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Water Resources Development",
       "subjects": [
         "Advanced technology and technological innovations",
@@ -605,6 +622,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Land use and conservation",
@@ -635,6 +653,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Colorado",
@@ -668,6 +687,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -707,6 +727,7 @@
         "text": "Passed Senate with an amendment by Voice Vote."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Bank accounts, deposits, capital",
@@ -738,6 +759,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Industrial facilities",
@@ -770,6 +792,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Health",
       "subjects": [],
       "summary_crs": null,
@@ -797,6 +820,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5186)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Armed Forces and National Security",
       "subjects": [
         "Building construction",
@@ -830,6 +854,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5185)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Business investment and capital",
@@ -862,6 +887,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5140-5144)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -896,6 +922,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5186)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Human rights",
@@ -928,6 +955,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5140)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional oversight",
@@ -962,6 +990,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5144)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Alaska",
@@ -993,6 +1022,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5184)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Social Welfare",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -1025,6 +1055,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (text: CR S5184)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Criminal procedure and sentencing",
@@ -1056,6 +1087,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5145-5146; text: CR S5145-5146)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Geography and mapping",
@@ -1089,6 +1121,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5144-5145; text: CR S5144-5145)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Economic development",
@@ -1120,6 +1153,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5148-5150; text: CR S5149-5150)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Environmental Protection",
       "subjects": [],
       "summary_crs": null,
@@ -1147,6 +1181,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (text: CR S5184)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Environmental Protection",
       "subjects": [
         "Aquatic ecology",
@@ -1191,6 +1226,7 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 51. Record Vote Number: 251. (consideration: CR S5139-5140)"
       },
       "outcome": "failed",
+      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -1260,6 +1296,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5186)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Armed Forces and National Security",
       "subjects": [],
       "summary_crs": null,
@@ -1287,6 +1324,7 @@
         "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 51. Record Vote Number: 252. (consideration: CR S5158-5159)"
       },
       "outcome": "failed",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": null,
@@ -1346,6 +1384,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -1379,6 +1418,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5123)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Bankruptcy",
@@ -1410,6 +1450,7 @@
         "text": "Passed Senate without amendment by Voice Vote. (consideration: CR S5120)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Department of Health and Human Services",
@@ -1448,7 +1489,8 @@
         "date": "2026-09-28",
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5123)"
       },
-      "outcome": "passed_senate",
+      "outcome": "passed_house",
+      "status": null,
       "policy_area": "Taxation",
       "subjects": [
         "Federal officials",
@@ -1508,6 +1550,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5120; text: CR S5120)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Cancer",
@@ -1542,6 +1585,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5120-5121; text: CR S5120-5121)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Asia",
@@ -1582,6 +1626,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5122-5123; text: CR S5123)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Life, casualty, property insurance",
@@ -1612,6 +1657,7 @@
         "text": "Passed Senate with an amendment by Yea-Nay Vote. 77 - 22. Record Vote Number: 250. (text: CR S5044-5063)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Athletes",
@@ -1781,6 +1827,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5121-5122; text: CR S5121-5122)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -1814,6 +1861,7 @@
         "text": "Became Public Law No: 119-112."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Alternative and renewable resources",
@@ -1845,6 +1893,7 @@
         "text": "Became Public Law No: 119-113."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Water Resources Development",
       "subjects": [
         "Montana",
@@ -1877,6 +1926,7 @@
         "text": "Became Public Law No: 119-114."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Drug trafficking and controlled substances",
@@ -1909,6 +1959,7 @@
         "text": "Became Public Law No: 119-115."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -1943,6 +1994,7 @@
         "text": "Became Public Law No: 119-116."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Transportation and Public Works",
       "subjects": [
         "Data collection, sharing, protection",
@@ -1978,6 +2030,7 @@
         "text": "Became Public Law No: 119-117."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -2009,7 +2062,8 @@
         "date": "2026-09-24",
         "text": "Failed of passage in Senate by Yea-Nay Vote. 49 - 50. Record Vote Number: 244."
       },
-      "outcome": "failed",
+      "outcome": "passed_house",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Conflicts and wars",
@@ -2427,6 +2481,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4958)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Labor and Employment",
       "subjects": [],
       "summary_crs": null,
@@ -2726,6 +2781,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4790)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Asia",
@@ -2896,6 +2952,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4762)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Congressional tributes",
@@ -3021,6 +3078,7 @@
         "text": "Became Public Law No: 119-105."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Kentucky",
@@ -3085,6 +3143,7 @@
         "text": "Became Public Law No: 119-107."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Art, artists, authorship",
@@ -3151,6 +3210,7 @@
         "text": "Became Public Law No: 119-104."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Conflicts and wars",
@@ -3587,6 +3647,7 @@
         "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text of amendment in the nature of a substitute: CR S4552-4553)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Congressional tributes",
@@ -3618,6 +3679,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4553)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Transportation and Public Works",
       "subjects": [
         "Commemorative events and holidays",
