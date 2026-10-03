@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T13:00:05Z",
+  "generated_at": "2026-10-03T11:10:55Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
@@ -18,10 +18,9 @@
       "introduced_date": "2025-02-27",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate without amendment by Voice Vote."
+        "text": "Passed Senate without amendment by Voice Vote. (consideration: CR S5299)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Aging",
@@ -52,10 +51,9 @@
       "introduced_date": "2025-01-07",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate without amendment by Unanimous Consent."
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5298)"
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "passed_senate",
       "policy_area": "Social Welfare",
       "subjects": [
         "Congressional oversight",
@@ -119,10 +117,9 @@
       "introduced_date": "2025-03-27",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate with an amendment by Unanimous Consent."
+        "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5297-5298)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "California",
@@ -151,10 +148,9 @@
       "introduced_date": "2025-07-10",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate without amendment by Unanimous Consent."
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5299)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Congressional oversight",
@@ -188,10 +184,9 @@
       "introduced_date": "2025-09-09",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate without amendment by Unanimous Consent."
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5295)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Government Operations and Politics",
       "subjects": [
         "Congressional oversight",
@@ -223,7 +218,6 @@
         "text": "Passed Senate with an amendment and an amendment to the Title by Unanimous Consent."
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Taxation",
       "subjects": [
         "Civil actions and liability",
@@ -255,10 +249,9 @@
       "introduced_date": "2025-12-03",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate without amendment by Unanimous Consent."
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5226)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Arizona",
@@ -288,10 +281,9 @@
       "introduced_date": "2026-01-12",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate without amendment by Unanimous Consent."
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5237-5238)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -323,10 +315,9 @@
       "introduced_date": "2026-03-05",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate without amendment by Unanimous Consent."
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5226-5231)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Licensing and registrations",
@@ -355,10 +346,9 @@
       "introduced_date": "2026-04-16",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate without amendment by Unanimous Consent."
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5299)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Law",
       "subjects": [
         "Criminal justice information and records",
@@ -387,10 +377,9 @@
       "introduced_date": "2025-01-31",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate without amendment by Unanimous Consent."
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5226)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Arizona",
@@ -420,10 +409,9 @@
       "introduced_date": "2026-06-29",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate without amendment by Unanimous Consent."
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5238-5239)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Taxation",
       "subjects": [
         "Administrative remedies",
@@ -447,7 +435,7 @@
       "congress": 119,
       "type": "s",
       "number": "1055",
-      "title": "A bill to amend the Indian Health Care Improvement Act to modify the notification requirement for emergency contract health services for certain beneficiaries, and for other purposes.",
+      "title": "Indian Health Service Emergency Claims Parity Act",
       "short_title": null,
       "sponsor": {
         "name": "Sen. Rounds, Mike",
@@ -457,10 +445,9 @@
       "introduced_date": "2025-03-13",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate without amendment by Unanimous Consent."
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5298; text: CR S5298)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Emergency medical services and trauma care",
@@ -491,10 +478,9 @@
       "introduced_date": "2025-04-29",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate with amendments by Unanimous Consent."
+        "text": "Passed Senate with amendments by Unanimous Consent. (consideration: CR S5297; text: CR S5297)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Federal-Indian relations",
@@ -524,10 +510,9 @@
       "introduced_date": "2025-05-01",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate without amendment by Unanimous Consent."
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5298; text: CR S5298)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [],
       "summary_crs": null,
@@ -552,10 +537,9 @@
       "introduced_date": "2025-07-14",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate without amendment by Unanimous Consent."
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5295; text: CR S5295)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Education programs funding",
@@ -588,7 +572,6 @@
         "text": "Became Public Law No: 119-118."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Health programs administration and funding",
@@ -607,7 +590,7 @@
       "congress": 119,
       "type": "s",
       "number": "2437",
-      "title": "A bill to amend the Snow Water Supply Forecasting Program Authorization Act to reauthorize the Snow Water Supply Forecasting Program, and for other purposes.",
+      "title": "Snow Water Supply Forecasting Program Reauthorization Act of 2026",
       "short_title": null,
       "sponsor": {
         "name": "Sen. Hickenlooper, John W.",
@@ -617,10 +600,9 @@
       "introduced_date": "2025-07-24",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate with an amendment by Unanimous Consent."
+        "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5296-5297; text: CR S5296)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Water Resources Development",
       "subjects": [
         "Advanced technology and technological innovations",
@@ -641,7 +623,7 @@
       "congress": 119,
       "type": "s",
       "number": "2498",
-      "title": "A bill to authorize the Secretary of the Interior to extend certain leases within units of the National Park System without opening the lease to bidding.",
+      "title": "National Park System Long-Term Lease Investment Act",
       "short_title": null,
       "sponsor": {
         "name": "Sen. Tillis, Thomas",
@@ -651,10 +633,9 @@
       "introduced_date": "2025-07-29",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate with an amendment by Unanimous Consent."
+        "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5201-5203; text: CR S5201-5202)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Land use and conservation",
@@ -672,7 +653,7 @@
       "congress": 119,
       "type": "s",
       "number": "2754",
-      "title": "A bill to direct the Secretary of Agriculture to convey to the City of Ouray, Colorado, certain land managed by the Forest Service, together with a reservoir.",
+      "title": "Crystal Reservoir Conveyance Act",
       "short_title": null,
       "sponsor": {
         "name": "Sen. Bennet, Michael F.",
@@ -682,10 +663,9 @@
       "introduced_date": "2025-09-10",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate with an amendment by Unanimous Consent."
+        "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5201-5203; text: CR S5202-5203)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Colorado",
@@ -706,7 +686,7 @@
       "congress": 119,
       "type": "s",
       "number": "3315",
-      "title": "A bill to require the Secretary of Health and Human Services and the Director of the Cybersecurity and Infrastructure Security Agency to coordinate to improve cybersecurity in the health care and public health sectors, and for other purposes.",
+      "title": "Health Care Cybersecurity and Resiliency Act of 2026",
       "short_title": null,
       "sponsor": {
         "name": "Sen. Cassidy, Bill",
@@ -716,10 +696,9 @@
       "introduced_date": "2025-12-02",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate with an amendment by Unanimous Consent."
+        "text": "Passed Senate with an amendment by Unanimous Consent. (text: CR S5234-5236)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -746,7 +725,7 @@
       "congress": 119,
       "type": "s",
       "number": "3798",
-      "title": "A bill to amend title 18, United States Code, to establish criminal offenses with respect to violations involving ATMs, regardless of whether the ATM is located on the physical premises of a financial institution, and for other purposes.",
+      "title": "Safe Access to Cash Act of 2026",
       "short_title": null,
       "sponsor": {
         "name": "Sen. Cruz, Ted",
@@ -756,10 +735,9 @@
       "introduced_date": "2026-02-05",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate with an amendment by Voice Vote."
+        "text": "Passed Senate with an amendment by Voice Vote. (consideration: CR S5207; text: CR S5207)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Bank accounts, deposits, capital",
@@ -778,7 +756,7 @@
       "congress": 119,
       "type": "s",
       "number": "5249",
-      "title": "A bill to amend the Atomic Energy Act of 1954 to align the licensing of uranium enrichment facilities with other fuel cycle facilities under that Act, and for other purposes.",
+      "title": "MORE American Fuel Act of 2026",
       "short_title": null,
       "sponsor": {
         "name": "Sen. Kelly, Mark",
@@ -788,10 +766,9 @@
       "introduced_date": "2026-08-05",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Passed Senate with an amendment by Unanimous Consent."
+        "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5295-5296; text: CR S5295-5296)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Industrial facilities",
@@ -821,10 +798,9 @@
       "introduced_date": "2026-09-17",
       "latest_action": {
         "date": "2026-09-30",
-        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5299)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Commemorative events and holidays",
@@ -857,7 +833,6 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5186)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Armed Forces and National Security",
       "subjects": [
         "Building construction",
@@ -891,7 +866,6 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5185)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Business investment and capital",
@@ -924,7 +898,6 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5140-5144)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -959,7 +932,6 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5186)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Human rights",
@@ -992,7 +964,6 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5140)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional oversight",
@@ -1027,7 +998,6 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5144)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Alaska",
@@ -1059,7 +1029,6 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5184)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Social Welfare",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -1092,7 +1061,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (text: CR S5184)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Criminal procedure and sentencing",
@@ -1111,7 +1079,7 @@
       "congress": 119,
       "type": "s",
       "number": "3219",
-      "title": "A bill to transfer certain Federal land into trust for certain Indian Pueblos in the State of New Mexico, and for other purposes.",
+      "title": "Albuquerque Indian School Act of 2026",
       "short_title": null,
       "sponsor": {
         "name": "Sen. Heinrich, Martin",
@@ -1124,7 +1092,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5145-5146; text: CR S5145-5146)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Geography and mapping",
@@ -1158,7 +1125,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5144-5145; text: CR S5144-5145)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Economic development",
@@ -1177,7 +1143,7 @@
       "congress": 119,
       "type": "s",
       "number": "5045",
-      "title": "A bill to amend the Clean Air Act to modify the handling of air quality monitoring with respect to prescribed fires, and for other purposes.",
+      "title": "Wildfire Emissions Prevention Act of 2026",
       "short_title": null,
       "sponsor": {
         "name": "Sen. Curtis, John R.",
@@ -1190,7 +1156,6 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5148-5150; text: CR S5149-5150)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Environmental Protection",
       "subjects": [],
       "summary_crs": null,
@@ -1218,7 +1183,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (text: CR S5184)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Environmental Protection",
       "subjects": [
         "Aquatic ecology",
@@ -1263,7 +1227,6 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 51. Record Vote Number: 251. (consideration: CR S5139-5140)"
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -1333,7 +1296,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5186)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Armed Forces and National Security",
       "subjects": [
         "Congressional tributes",
@@ -1367,7 +1329,6 @@
         "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 51. Record Vote Number: 252. (consideration: CR S5158-5159)"
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": null,
@@ -1427,7 +1388,6 @@
         "text": "Passed Senate without amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -1461,7 +1421,6 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5123)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Bankruptcy",
@@ -1469,9 +1428,9 @@
         "Small business"
       ],
       "summary_crs": "<p><strong>Bankruptcy Threshold Adjustment Act of 2026</strong></p><p>This bill restores changes that expired in 2024 applicable to debt limits for Subchapter V (small business reorganization) and Chapter 13 (the wage earner's plan) bankruptcies.</p><p>Specifically, the bill increases the debt limit under Subchapter&nbsp;V from approximately $3.4 million to $7.5 million and increases the cumulative debt limit under Chapter 13 from approximately $2.1 million to $2.75 million.</p><p>The bill also applies both secured and unsecured debt towards the Chapter 13 limit. (Currently, separate limits apply to secured and unsecured debt under Chapter 13 bankruptcy.)</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr7730/BILLS-119hr7730eh.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr7730/BILLS-119hr7730eh.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr7730/BILLS-119hr7730eh.pdf",
+      "text_url_html": "https://www.congress.gov/119/bills/hr7730/BILLS-119hr7730rds.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr7730/BILLS-119hr7730rds.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr7730/BILLS-119hr7730rds.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/7730",
       "votes": []
     },
@@ -1493,7 +1452,6 @@
         "text": "Passed Senate without amendment by Voice Vote. (consideration: CR S5120)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Department of Health and Human Services",
@@ -1532,8 +1490,7 @@
         "date": "2026-09-28",
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5123)"
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "passed_senate",
       "policy_area": "Taxation",
       "subjects": [
         "Federal officials",
@@ -1593,7 +1550,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5120; text: CR S5120)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Cancer",
@@ -1628,7 +1584,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5120-5121; text: CR S5120-5121)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Asia",
@@ -1669,7 +1624,6 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5122-5123; text: CR S5123)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Life, casualty, property insurance",
@@ -1700,7 +1654,6 @@
         "text": "Passed Senate with an amendment by Yea-Nay Vote. 77 - 22. Record Vote Number: 250. (text: CR S5044-5063)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Athletes",
@@ -1870,7 +1823,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5121-5122; text: CR S5121-5122)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -1904,7 +1856,6 @@
         "text": "Became Public Law No: 119-112."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Alternative and renewable resources",
@@ -1912,9 +1863,9 @@
         "Licensing and registrations"
       ],
       "summary_crs": "<p><strong>Hydropower Relicensing Transparency Act</strong></p><p>This bill directs the Federal Energy Regulatory Commission to report annually to Congress on the status of the&nbsp;relicensing process for each application for a renewed hydropower dam license.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr3657/BILLS-119hr3657rfs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr3657/BILLS-119hr3657rfs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr3657/BILLS-119hr3657rfs.pdf",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ112/PLAW-119publ112.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ112/PLAW-119publ112_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ112/PLAW-119publ112.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/3657",
       "votes": []
     },
@@ -1936,7 +1887,6 @@
         "text": "Became Public Law No: 119-113."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Water Resources Development",
       "subjects": [
         "Montana",
@@ -1945,9 +1895,9 @@
         "Water use and supply"
       ],
       "summary_crs": "<p>This bill reauthorizes through FY2028 the planning, design, and construction of the Assiniboine and Sioux Rural Water System and the Dry Prairie Rural Water System, both located in Montana.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr7250/BILLS-119hr7250rfs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr7250/BILLS-119hr7250rfs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr7250/BILLS-119hr7250rfs.pdf",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ113/PLAW-119publ113.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ113/PLAW-119publ113_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ113/PLAW-119publ113.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/7250",
       "votes": []
     },
@@ -1969,7 +1919,6 @@
         "text": "Became Public Law No: 119-114."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Drug trafficking and controlled substances",
@@ -1978,9 +1927,9 @@
         "Medical tests and diagnostic methods"
       ],
       "summary_crs": "<p>This bill confers jurisdiction to the U.S. Court of Federal Claims for the Miami Tribe of Oklahoma's land claim arising under the Treaty of Grouseland. The court must render judgement without regard to the statute of limitations or any delay-based defense. This jurisdiction expires unless such a claim is filed within one year.</p> All other claims, including any future claims, of the tribe to land in Illinois are extinguished.",
-      "text_url_html": "https://www.congress.gov/119/bills/s550/BILLS-119s550es.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/s550/BILLS-119s550es.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/s550/BILLS-119s550es.pdf",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ114/PLAW-119publ114.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ114/PLAW-119publ114_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ114/PLAW-119publ114.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/550",
       "votes": []
     },
@@ -2002,7 +1951,6 @@
         "text": "Became Public Law No: 119-115."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -2013,9 +1961,9 @@
         "Virginia"
       ],
       "summary_crs": "<p>This bill establishes the General George C. Marshall House in Leesburg, Virginia, as an affiliated area of the National Park System to promote public appreciation of the historic contributions made by George Catlett Marshall, Jr. (George Catlett Marshall, Jr. served as Army Chief of Staff during World War II, and later as Secretary of State, president of the American Red Cross, and Secretary of Defense.)</p><p>The bill designates the George C. Marshall International Center as the management entity for the affiliated area. The Department of the Interior must enter into an agreement with the center that describes the roles and responsibilities for management of the affiliated area. Further, Interior may provide technical assistance and enter into cooperative agreements with the center for the purpose of providing financial assistance for the marketing, marking, interpretation, and preservation of the affiliated area.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/s603/BILLS-119s603es.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/s603/BILLS-119s603es.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/s603/BILLS-119s603es.pdf",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ115/PLAW-119publ115.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ115/PLAW-119publ115_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ115/PLAW-119publ115.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/603",
       "votes": []
     },
@@ -2037,7 +1985,6 @@
         "text": "Became Public Law No: 119-116."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Transportation and Public Works",
       "subjects": [
         "Data collection, sharing, protection",
@@ -2073,7 +2020,6 @@
         "text": "Became Public Law No: 119-117."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -2082,9 +2028,9 @@
         "Wyoming"
       ],
       "summary_crs": "<p>This bill renames the National Historic Trails Interpretive Center located in Casper, Wyoming, as the Barbara L. Cubin National Historic Trails Interpretive Center.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/s790/BILLS-119s790es.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/s790/BILLS-119s790es.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/s790/BILLS-119s790es.pdf",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ117/PLAW-119publ117.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ117/PLAW-119publ117_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ117/PLAW-119publ117.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/790",
       "votes": []
     },
@@ -2105,8 +2051,7 @@
         "date": "2026-09-24",
         "text": "Failed of passage in Senate by Yea-Nay Vote. 49 - 50. Record Vote Number: 244."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "failed",
       "policy_area": "International Affairs",
       "subjects": [
         "Conflicts and wars",
@@ -2524,7 +2469,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4958)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Labor and Employment",
       "subjects": [],
       "summary_crs": null,
@@ -2824,7 +2768,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4790)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Asia",
@@ -2995,7 +2938,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4762)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Congressional tributes",
@@ -3121,7 +3063,6 @@
         "text": "Became Public Law No: 119-105."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Kentucky",
@@ -3186,7 +3127,6 @@
         "text": "Became Public Law No: 119-107."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Art, artists, authorship",
@@ -3690,7 +3630,6 @@
         "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text of amendment in the nature of a substitute: CR S4552-4553)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Congressional tributes",
@@ -3722,7 +3661,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4553)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Transportation and Public Works",
       "subjects": [
         "Commemorative events and holidays",
