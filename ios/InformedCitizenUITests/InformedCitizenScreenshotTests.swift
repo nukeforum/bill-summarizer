@@ -17,6 +17,16 @@ final class InformedCitizenScreenshotTests: XCTestCase {
     XCTAssertTrue(app.navigationBars["H.R. 1"].waitForExistence(timeout: 5))
     attachScreenshot(named: "02-bill-detail")
 
+    let officialSummary = app.descendants(matching: .any)["bill-official-summary"]
+    for _ in 0..<3 where !officialSummary.isHittable {
+      app.swipeUp()
+    }
+    XCTAssertTrue(officialSummary.isHittable)
+    XCTAssertFalse(
+      app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "<p>")).firstMatch.exists
+    )
+    attachScreenshot(named: "03-bill-rich-text")
+
     let rollCall = app.descendants(matching: .any)["roll-call-house-119-1-17"]
     XCTAssertTrue(rollCall.waitForExistence(timeout: 5))
     app.swipeUp()
@@ -56,9 +66,20 @@ final class InformedCitizenScreenshotTests: XCTestCase {
     app.buttons["Change location"].tap()
     XCTAssertTrue(
       app.staticTexts[
-        "Choose your state and congressional district to see your House representative and senators."
+        "Enter your ZIP code or choose a district to see your House representative and senators."
       ].waitForExistence(timeout: 5))
     attachScreenshot(named: "07-representative-location")
+
+    let zipField = app.textFields["5-digit ZIP code"]
+    XCTAssertTrue(zipField.waitForExistence(timeout: 5))
+    zipField.tap()
+    zipField.typeText("85002")
+    app.buttons["Look up ZIP code"].tap()
+    XCTAssertTrue(
+      app.staticTexts["This ZIP spans AZ districts 1, 2. Choose one to continue."]
+        .waitForExistence(timeout: 5))
+    app.swipeDown()
+    attachScreenshot(named: "08-zip-district-disambiguation")
   }
 
   @MainActor

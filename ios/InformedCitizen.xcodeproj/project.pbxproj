@@ -22,6 +22,7 @@
 		F1A2B3C4D5E60718293A4B5C /* RepresentativesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B5C /* RepresentativesView.swift */; };
 		C2D3E4F5A60718293B4C5D6E /* MemberDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C3D4E5F60718293A4B5C6D /* MemberDetailView.swift */; };
 		D3E4F5A60718293B4C5D6E7F /* InAppBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4E5F60718293A4B5C6D7E /* InAppBrowser.swift */; };
+		E4F5A60718293B4C5D6E7F80 /* zip_to_cd.json in Resources */ = {isa = PBXBuildFile; fileRef = D4E5F60718293A4B5C6D7E8F /* zip_to_cd.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		A1B2C3D4E5F60718293A4B5C /* RepresentativesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RepresentativesView.swift; path = Representatives/RepresentativesView.swift; sourceTree = "<group>"; };
 		B2C3D4E5F60718293A4B5C6D /* MemberDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MemberDetailView.swift; path = Representatives/MemberDetailView.swift; sourceTree = "<group>"; };
 		C3D4E5F60718293A4B5C6D7E /* InAppBrowser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InAppBrowser.swift; sourceTree = "<group>"; };
+		D4E5F60718293A4B5C6D7E8F /* zip_to_cd.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = zip_to_cd.json; path = ../android/feature/reps/src/main/assets/zip_to_cd.json; sourceTree = SOURCE_ROOT; };
 		B6091E9CA60206E542D0FAE6 /* InformedCitizenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InformedCitizenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 				A27F4A2603E10450BA03F6CC /* Frameworks */,
 				CF95CA31B9B36F486FE483F7 /* App */,
 				083144997ADC22C8F8A4A126 /* InformedCitizenUITests */,
+				D4E5F60718293A4B5C6D7E8F /* zip_to_cd.json */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4F5A60718293B4C5D6E7F80 /* zip_to_cd.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

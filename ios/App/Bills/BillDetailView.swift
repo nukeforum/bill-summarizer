@@ -27,7 +27,9 @@ struct BillDetailView: View {
 
       if let summary = bill.summaryCRS {
         Section("Congressional Research Service summary") {
-          Text(summary)
+          Text(RichTextPresentation.attributedString(from: summary))
+            .tint(ICDesign.accent)
+            .accessibilityIdentifier("bill-official-summary")
         }
       }
 
