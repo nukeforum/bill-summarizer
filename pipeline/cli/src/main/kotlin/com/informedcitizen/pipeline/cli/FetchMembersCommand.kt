@@ -92,6 +92,13 @@ object FetchMembersCommand {
                     println("  + ${m.bioguideId} ${m.name} (${m.party}-${m.state}$districtPart)")
                 },
                 onPhase1Done = { count -> println("Phase 1 done: index has $count members") },
+                onVacantHouseDistricts = { vacant ->
+                    val formatted = vacant.joinToString(", ") { (state, district) -> "$state-$district" }
+                    println(
+                        "Vacant House seats per 2020-census apportionment (no " +
+                            "current member on Congress.gov): $formatted"
+                    )
+                },
                 onPhase2Start = { println("\nPhase 2: backfilling sponsored/cosponsored legislation") },
                 onPhase2MemberDone = { bid -> println("  + $bid: legislation backfilled") },
                 onPhase2TimeBudgetExceeded = { processed, skipped ->
