@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T18:43:59Z",
+  "generated_at": "2026-10-09T18:14:05Z",
   "congress": 110,
   "votes_coverage": false,
   "bills": [
@@ -436,6 +436,40 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres715/BILLS-110sres715ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres715/BILLS-110sres715ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/715",
+      "votes": []
+    },
+    {
+      "id": "hr6296-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "6296",
+      "title": "To extend through 2013 the authority of the Federal Election Commission to impose civil money penalties on the basis of a schedule of penalties established and published by the Commission.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Brady, Robert A.",
+        "party": "D",
+        "state": "PA"
+      },
+      "introduced_date": "2008-06-18",
+      "latest_action": {
+        "date": "2008-10-16",
+        "text": "Became Public Law No: 110-433."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Campaign funds",
+        "Congress",
+        "Congressional elections",
+        "Fines (Penalties)",
+        "Law",
+        "Presidential elections"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Amends the Federal Election Campaign Act of 1971 to extend through calendar 2013 the authority of the Federal Election Commission (FEC) to impose civil monetary penalties.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ433/PLAW-110publ433.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ433/PLAW-110publ433.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/6296",
       "votes": []
     },
     {
@@ -1309,6 +1343,41 @@
       "votes": []
     },
     {
+      "id": "sres634-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "634",
+      "title": "A resolution recognizing July 30 , 2008, as the 40th anniversary of the enactment of the resolution establishing the Senate Select Committee on Nutrition and Human Needs.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Casey, Robert P., Jr.",
+        "party": "D",
+        "state": "PA"
+      },
+      "introduced_date": "2008-07-30",
+      "latest_action": {
+        "date": "2008-09-22",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S9182-9183)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Agriculture and Food",
+      "subjects": [
+        "Commemorations",
+        "Congress",
+        "Congressional committees (Senate)",
+        "Congressional tributes",
+        "Food relief",
+        "Hunger",
+        "Nutrition"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Recognizes July 30, 2008, as the 40th anniversary of the enactment of the resolution establishing the Senate Select Committee on Nutrition and Human Needs, the substantial contributions the Committee made in ensuring that effective and efficient federal food assistance programs were accessible to those most in need, and that hunger continues to be an issue plaguing the United States.</p> <p>Supports the continued efforts of federal, state, and local governments and private non-profit organizations to eradicate U.S. hunger.<br> </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres634/BILLS-110sres634ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres634/BILLS-110sres634ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres634/BILLS-110sres634ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/634",
+      "votes": []
+    },
+    {
       "id": "sres670-110",
       "congress": 110,
       "type": "sres",
@@ -1523,6 +1592,53 @@
       "votes": []
     },
     {
+      "id": "sres643-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "643",
+      "title": "A resolution calling for greater dialogue between the Dalai Lama and the Government of China regarding rights for the people of Tibet, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Smith, Gordon H.",
+        "party": "R",
+        "state": "OR"
+      },
+      "introduced_date": "2008-08-01",
+      "latest_action": {
+        "date": "2008-09-17",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text: CR S8960-8961)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Buddhism",
+        "China",
+        "Civil Rights and Liberties, Minority Issues",
+        "Clergy",
+        "Constitutions",
+        "Detention of persons",
+        "Diplomacy",
+        "Dissenters",
+        "East Asia",
+        "Freedom of association",
+        "Freedom of speech",
+        "Government Operations and Politics",
+        "Human rights",
+        "Negotiations",
+        "Nonviolence",
+        "President and foreign policy",
+        "Public demonstrations",
+        "Religion",
+        "Religious liberty"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Urges the Dalai Lama or his representatives and the government of the People's Republic of China (PRC) to begin negotiations for a solution that addresses the legitimate grievances of, and provides genuine autonomy for, the Tibetan people.</p> <p> Affirms that the human rights of Tibetans and their right to practice religion free of government regulation is not an internal matter of any one country.</p> <p> Calls on the U.S. government to press the PRC to: (1) respect freedom of speech and freedom of association and to release those who have committed no crime other than peaceful protest; and (2) allow Tibetans to practice their religion freely.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres643/BILLS-110sres643ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres643/BILLS-110sres643ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres643/BILLS-110sres643ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/643",
+      "votes": []
+    },
+    {
       "id": "sres656-110",
       "congress": 110,
       "type": "sres",
@@ -1641,6 +1757,84 @@
       "votes": []
     },
     {
+      "id": "sres618-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "618",
+      "title": "A resolution recognizing the tenth anniversary of the bombings of the United States embassies in Nairobi, Kenya and Dar es Salaam, Tanzania, and memorializing the citizens of the United States, Kenya, and Tanzania whose lives were claimed as a result of the al Qaeda led terrorist attacks.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lugar, Richard G.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2008-07-22",
+      "latest_action": {
+        "date": "2008-08-01",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S8014-8015; text as passed Senate: CR S8015)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Africa (Sub-Saharan)",
+        "Anniversaries",
+        "Bombings",
+        "Commemorations",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Democracy",
+        "Embassies",
+        "Government Operations and Politics",
+        "Kenya",
+        "Tanzania",
+        "Terrorism"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The expanded summary of the Senate reported version is repeated here.)</b> </p> <p>Recognizes the historic significance of the 10th anniversary of the al Qaeda bombings of the U.S. embassies in Nairobi, Kenya, and Dar Es Salaam, Tanzania.</p> <p>Mourns the loss of those killed and remembers their families and colleagues.</p> <p>Expresses gratitude to the people of Kenya and Tanzania for their assistance following the attacks and reaffirms support for their striving for future democracy and prosperity.</p> <p>Reaffirms the Senate's resolve to defeat al Qaeda and other terrorist organizations.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres618/BILLS-110sres618ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres618/BILLS-110sres618ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres618/BILLS-110sres618ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/618",
+      "votes": []
+    },
+    {
+      "id": "sres627-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "627",
+      "title": "A resolution welcoming  home Keith Stansell, Thomas Howes, and Marc Gonsalves, three citizens of the United States who were held hostage for over five years by the Revolutionary Armed Forces of Colombia (FARC) after their plane crashed on February 13, 2003.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Nelson, Bill",
+        "party": "D",
+        "state": "FL"
+      },
+      "introduced_date": "2008-07-25",
+      "latest_action": {
+        "date": "2008-08-01",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S8015)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Colombia",
+        "Commemorations",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Government Operations and Politics",
+        "Hostages",
+        "Insurgency",
+        "Latin America",
+        "Terrorism"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>Welcomes Keith Stansell, Thomas Howes, and Marc Gonsalves home to the United States after being held for over five years by the Revolutionary Armed Forces of Colombia (FARC).</p> <p>Celebrates with the families and relatives of the hostages who kept faith despite being unsure of the fates of their family members. </p> <p>Expresses gratitude to the government and military of Colombia for rescuing the hostages and applauds the U.S. government's contribution to this effort.</p> <p>Calls for the release of all hostages held by FARC and other terrorist groups in Colombia.</p> <p>Urges FARC to reject terrorism.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres627/BILLS-110sres627ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres627/BILLS-110sres627ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres627/BILLS-110sres627ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/627",
+      "votes": []
+    },
+    {
       "id": "sres642-110",
       "congress": 110,
       "type": "sres",
@@ -1752,6 +1946,53 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres621/BILLS-110sres621ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres621/BILLS-110sres621ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/621",
+      "votes": []
+    },
+    {
+      "id": "s2967-110",
+      "congress": 110,
+      "type": "s",
+      "number": "2967",
+      "title": "A bill to provide for certain Federal employee benefits to be continued for certain employees of the Senate Restaurants after operations of the Senate Restaurants are contracted to be performed by a private business concern, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feinstein, Dianne",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2008-05-01",
+      "latest_action": {
+        "date": "2008-07-17",
+        "text": "Became Public Law No: 110-279."
+      },
+      "outcome": "enacted",
+      "policy_area": "Congress",
+      "subjects": [
+        "Administrative procedure",
+        "Agriculture and Food",
+        "Annuities",
+        "Architect of the Capitol",
+        "Civil service retirement",
+        "Commuting",
+        "Congressional agencies",
+        "Congressional employees",
+        "Early retirement",
+        "Federal Retirement Thrift Investment Board",
+        "Finance and Financial Sector",
+        "Food service",
+        "Government Operations and Politics",
+        "Government contractors",
+        "Government employees' health insurance",
+        "Government employees' life insurance",
+        "Government paperwork",
+        "Health",
+        "Labor and Employment"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Authorizes specified Senate Restaurants employees who are employees of the Architect of the Capitol on the date of enactment of this Act and who become employees of a contractor under a food services contract to elect to continue coverage of federal benefits, including retirement benefits, life and health insurance, annual and sick leave balances and accrual rates, and transit subsidies, after operations of the Senate Restaurants are contracted to be performed by a private business concern.</p><p>Prohibits the basic pay of such an employee from being reduced below the rate paid to that employee on the day before operations are transferred.</p><p>Requires the Director of the Office of Personnel Management (OPM) to prescribe regulations to provide for the continuity of benefits.</p><p>Sets forth provisions concerning severance pay and voluntary separation incentive payments to, and early retirement by, such employees.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ279/PLAW-110publ279.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ279/PLAW-110publ279.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/2967",
       "votes": []
     },
     {
@@ -1995,6 +2236,48 @@
       "votes": []
     },
     {
+      "id": "sres440-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "440",
+      "title": "A resolution recognizing soil as an essential natural resource, and soils professionals as playing a critical role in managing our Nation's soil resources.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Brown, Sherrod",
+        "party": "D",
+        "state": "OH"
+      },
+      "introduced_date": "2008-01-31",
+      "latest_action": {
+        "date": "2008-06-23",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text as passed Senate: CR S5971)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Agriculture and Food",
+      "subjects": [
+        "Agricultural pollution",
+        "Carbon cycle",
+        "Commemorations",
+        "Congressional tributes",
+        "Environmental Protection",
+        "Environmental education",
+        "Public Lands and Natural Resources",
+        "Restoration ecology",
+        "Science, Technology, Communications",
+        "Scientists",
+        "Soil conservation",
+        "Soil science",
+        "Sustainable agriculture",
+        "Water Resources Development"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>Recognizes: (1) the necessity to develop and implement best practices for the long-term use of the nation's soil resources; and (2) the important role of soil scientists and soils professionals.</p> <p> Acknowledges the promise of soil scientists and soils professionals to continue to enrich the lives of all Americans by improving stewardship of the soil, combating soil degradation, and ensuring the future protection and sustainable use of our air, soil, and water resources. </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres440/BILLS-110sres440ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres440/BILLS-110sres440ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres440/BILLS-110sres440ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/440",
+      "votes": []
+    },
+    {
       "id": "sres593-110",
       "congress": 110,
       "type": "sres",
@@ -2211,6 +2494,40 @@
       "votes": []
     },
     {
+      "id": "sres550-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "550",
+      "title": "A resolution expressing the sense of the Senate regarding provocative and dangerous statements made by the Government of the Russian Federation that undermine the territorial integrity of the Republic of Georgia.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Biden, Joseph R., Jr.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2008-05-02",
+      "latest_action": {
+        "date": "2008-06-03",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4988-4989; text: CR S4988-4989)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Annexation (International law)",
+        "Central Asia",
+        "Georgia (Republic)",
+        "Negotiations",
+        "Russia",
+        "Sovereignty"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>Condemns recent decisions by the government of the Russian Federation to establish official ties with the regions of Abkhazia and South Ossetia, a process that impedes reconciliation between those regions and the government of the Republic of Georgia and that violates Georgia's sovereignty and Russia's commitments to international peacekeeping. </p> <p>Affirms that restoration of the Republic of Georgia's territorial integrity is in the interest of all who seek regional peace.</p> <p>Urges all parties to the conflicts in the Republic of Georgia and governments around the world to eschew rhetoric that escalates tensions and undermines negotiation efforts.</p> <p>Commends the government of Georgia for acting with restraint in the face of serious provocation.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres550/BILLS-110sres550ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres550/BILLS-110sres550ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres550/BILLS-110sres550ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/550",
+      "votes": []
+    },
+    {
       "id": "sres577-110",
       "congress": 110,
       "type": "sres",
@@ -2273,6 +2590,53 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres579/BILLS-110sres579ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres579/BILLS-110sres579ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/579",
+      "votes": []
+    },
+    {
+      "id": "sres541-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "541",
+      "title": "A resolution supporting humanitarian assistance, protection of civilians, accountability for abuses in Somalia, and urging concrete progress in line with the Transitional Federal Charter of Somalia toward the establishment of a viable government of national unity.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feingold, Russell D.",
+        "party": "D",
+        "state": "WI"
+      },
+      "introduced_date": "2008-04-29",
+      "latest_action": {
+        "date": "2008-05-21",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S4705-4706)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Africa (Sub-Saharan)",
+        "Ammunition",
+        "Armed Forces and National Security",
+        "Civil Rights and Liberties, Minority Issues",
+        "Civil War",
+        "Democracy",
+        "Economic assistance",
+        "Eritrea",
+        "Ethiopia",
+        "Extremist movements in politics",
+        "Government Operations and Politics",
+        "Human rights",
+        "Insurgency",
+        "International relief",
+        "Law",
+        "Military assistance",
+        "Military withdrawal",
+        "Peace",
+        "Peace negotiations"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>Expresses the sense of the Senate that: (1) the United States remains committed to the people of Somalia and to helping build the institutions necessary for a stable and peaceful nation; and (2) the President, in partnership with the African Union, the United Nations, and the international community, should provide humanitarian assistance, ensure accountability for parties responsible for violations of human rights and international humanitarian law in Somalia, and call on all parties to recommit to an inclusive dialogue to promote peace and security in Somalia and across the Horn of Africa.</p> <p> Urges the governments of Ethiopia and of Eritrea to assist in helping to bring about stability to Somalia. </p> <p>States that the Transitional Federal government should: (1) take necessary steps to protect civilians from dangers related to military operations; (2) recommit to the Transitional Federal Charter; and (3) agree to participate in an inclusive political process towards the formation of a government of national unity based on the principles of democracy, accountability, and the rule of law. </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres541/BILLS-110sres541ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres541/BILLS-110sres541ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres541/BILLS-110sres541ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/541",
       "votes": []
     },
     {
@@ -2801,6 +3165,53 @@
       "votes": []
     },
     {
+      "id": "sres533-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "533",
+      "title": "A resolution expressing the sense of the Senate regarding the political situation in Zimbabwe.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kerry, John F.",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2008-04-24",
+      "latest_action": {
+        "date": "2008-04-29",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S3550; text as passed Senate: CR S3550)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Africa (Sub-Saharan)",
+        "Armed Forces and National Security",
+        "Arms sales",
+        "Civil Rights and Liberties, Minority Issues",
+        "Democracy",
+        "Detention of persons",
+        "Economic assistance",
+        "Election administration",
+        "Embargo",
+        "Foreign Trade and International Finance",
+        "Foreign leaders",
+        "Government Operations and Politics",
+        "Human rights",
+        "International cooperation",
+        "Parliamentary government",
+        "Political parties",
+        "Political persecution",
+        "Political violence",
+        "Regionalism (International organization)"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>Expresses the sense of the Senate: (1) supporting the people of Zimbabwe; (2) that the Zimbabwe Electoral Commission should immediately release the legitimate results of the presidential election and ratify the previously announced results of the parliamentary elections; (3) that President Robert Mugabe should accept the will of the people of Zimbabwe in order to effect a timely and peaceful transition to democratic rule; (4) that the U.S. government and the international community should impose targeted sanctions against individuals in the government of Zimbabwe and state security services and militias who are responsible for human rights abuses and election interference; (5) that the U.S. government and the international community should work together to prepare an economic and political recovery package for Zimbabwe; (6) that regional organizations should play an active role in resolving the crisis; and (7) that the U.N. Security Council should support efforts to bring about a peaceful resolution of the crisis and impose an international arms embargo on Zimbabwe until a legitimate democratic government has taken power.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres533/BILLS-110sres533ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres533/BILLS-110sres533ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres533/BILLS-110sres533ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/533",
+      "votes": []
+    },
+    {
       "id": "sres539-110",
       "congress": 110,
       "type": "sres",
@@ -2836,6 +3247,46 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres539/BILLS-110sres539ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres539/BILLS-110sres539ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/539",
+      "votes": []
+    },
+    {
+      "id": "sres523-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "523",
+      "title": "A resolution expressing the strong support of the Senate for the declaration of the North Atlantic Treaty Organization at the Bucharest Summit that Ukraine and Georgia will become members of the alliance.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Biden, Joseph R., Jr.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2008-04-21",
+      "latest_action": {
+        "date": "2008-04-28",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S3451-3452; text as passed Senate: CR S3452)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Alliances",
+        "Armed Forces and National Security",
+        "Central Asia",
+        "Collective security",
+        "Conferences",
+        "Democracy",
+        "Europe",
+        "Georgia (Republic)",
+        "Government Operations and Politics",
+        "NATO countries",
+        "Summit diplomacy",
+        "Ukraine"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Supports the declaration of the Bucharest Summit which stated that Ukraine and Georgia will become members of the North Atlantic Treaty Organization (NATO).</p> <p>Reiterates support for NATO's further enlargement to include democratic governments that are able and willing to meet membership responsibilities.</p> <p> Urges NATO member states at their December 2008 meeting to consider favorably Ukraine's and Georgia's applications for Membership Action Plans. </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres523/BILLS-110sres523ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres523/BILLS-110sres523ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres523/BILLS-110sres523ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/523",
       "votes": []
     },
     {
@@ -3027,6 +3478,53 @@
       "votes": []
     },
     {
+      "id": "sres504-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "504",
+      "title": "A resolution condemning the violence in Tibet and calling for restraint by the Government of the People's Republic of China and the people of Tibet.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feinstein, Dianne",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2008-04-07",
+      "latest_action": {
+        "date": "2008-04-09",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S2826-2827; text: CR S2827)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Buddhism",
+        "China",
+        "Civil Rights and Liberties, Minority Issues",
+        "Clergy",
+        "Constitutions",
+        "Detention of persons",
+        "Diplomacy",
+        "Dissenters",
+        "East Asia",
+        "Embassies",
+        "Freedom of the press",
+        "Government Operations and Politics",
+        "Human rights",
+        "Nonviolence",
+        "Photography",
+        "Political prisoners",
+        "Political violence",
+        "Public demonstrations",
+        "Religion"
+      ],
+      "summary_crs": " <p>Condemns the violence in Tibet and calls for restraint by the government of the People's Republic of China (PRC) and the people of Tibet.</p> <p> Calls for: (1) a dialogue between the government of China and the Dalai Lama on religious and cultural autonomy for Tibet within China; and (2) release of peaceful protesters.</p> <p> Calls on the PRC to: (1) respect the right of the people of Tibet to speak of the Dalai Lama and possess his photograph; (2) respect basic human rights; (3) allow international journalists free access to China; and (4) provide a full accounting of the March 2008 protests in Tibet. </p> <p> Calls on the Department of State to fully implement the Tibetan Policy Act of 2002.</p> <p> Urges that the agreement permitting the PRC to open further diplomatic missions in the United States should be contingent upon establishment of a U.S. government office in Lhasa, Tibet. </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres504/BILLS-110sres504ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres504/BILLS-110sres504ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres504/BILLS-110sres504ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/504",
+      "votes": []
+    },
+    {
       "id": "sres508-110",
       "congress": 110,
       "type": "sres",
@@ -3172,6 +3670,42 @@
       "votes": []
     },
     {
+      "id": "sres478-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "478",
+      "title": "A resolution supporting the goals and ideals of \"World Water Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Smith, Gordon H.",
+        "party": "R",
+        "state": "OR"
+      },
+      "introduced_date": "2008-03-10",
+      "latest_action": {
+        "date": "2008-03-31",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S2250)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Commemorations",
+        "Economic assistance",
+        "Environmental Protection",
+        "Potable water",
+        "Poverty",
+        "Special days",
+        "Water Resources Development",
+        "Water quality"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Supports the goals and ideals of World Water Day.</p> <p>Urges the investment of greater resources by the Department of State, the United States Agency for International Development (USAID), and all relevant federal departments and agencies toward providing sustainable and equitable access to safe drinking water and sanitation for the poor.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres478/BILLS-110sres478ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres478/BILLS-110sres478ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres478/BILLS-110sres478ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/478",
+      "votes": []
+    },
+    {
       "id": "sres492-110",
       "congress": 110,
       "type": "sres",
@@ -3242,6 +3776,53 @@
       "votes": []
     },
     {
+      "id": "sres178-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "178",
+      "title": "A resolution expressing the sympathy of the Senate to the families of women and girls murdered in Guatemala, and encouraging the United States to work with Guatemala to bring an end to these crimes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Bingaman, Jeff",
+        "party": "D",
+        "state": "NM"
+      },
+      "introduced_date": "2007-05-01",
+      "latest_action": {
+        "date": "2008-03-10",
+        "text": "Resolution agreed to in Senate with amendments and an amended preamble by Unanimous Consent. (text: CR 3/11/2008 S1890-1891)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Child abuse",
+        "Civil Rights and Liberties, Minority Issues",
+        "Commemorations",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Crimes against women",
+        "Criminal investigation",
+        "Families",
+        "Family violence",
+        "Forensic medicine",
+        "Government Operations and Politics",
+        "Guatemala",
+        "Health",
+        "Human rights",
+        "Judges",
+        "Judicial officers",
+        "Kidnapping",
+        "Latin America",
+        "Law"
+      ],
+      "summary_crs": " <p>Expresses condolences to the families of women and girls murdered in Guatemala and recognizes the families' courage in seeking justice. </p> <p>Expresses the solidarity of the people of the United States with the people of Guatemala in the face of these tragic acts.</p> <p> Condemns the ongoing abductions and murders of women and girls in Guatemala. </p> <p>Urges the government of Guatemala to: (1) strengthen laws with respect to domestic violence and sexual harassment, improve the integrity of the prosecutorial and judicial systems, and provide the resources to enforce justice for crimes against women; and (2) hold accountable law enforcement and judicial officials who have failed to investigate and prosecute the murders. </p> <p>Encourages the Secretary of State and the Attorney General to provide assistance in establishing a comprehensive missing persons system and a state protection program for witnesses, victims' relatives, and human rights defenders.</p> <p>Encourages the Secretary to support efforts to identify perpetrators and unknown victims through forensic analysis, including assisting the government of Guatemala in adequately funding the National Institute for Forensic Science (INACIF) and training lab personnel in investigatory and evidence gathering protocols.</p> <p>Recommends that the Secretary develop a comprehensive plan to combat the growing problem of violence against women in Latin America.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres178/BILLS-110sres178ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres178/BILLS-110sres178ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres178/BILLS-110sres178ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/178",
+      "votes": []
+    },
+    {
       "id": "sres475-110",
       "congress": 110,
       "type": "sres",
@@ -3274,6 +3855,52 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres475/BILLS-110sres475ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres475/BILLS-110sres475ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/475",
+      "votes": []
+    },
+    {
+      "id": "sres455-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "455",
+      "title": "A resolution calling for peace in Darfur.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Durbin, Richard J.",
+        "party": "D",
+        "state": "IL"
+      },
+      "introduced_date": "2008-02-14",
+      "latest_action": {
+        "date": "2008-03-05",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S1653)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Africa (Sub-Saharan)",
+        "Arabs",
+        "Armed Forces and National Security",
+        "Armistices",
+        "Displaced persons",
+        "Foreign leaders",
+        "Government Operations and Politics",
+        "Insurgency",
+        "International military forces",
+        "International relief",
+        "Nongovernmental organizations",
+        "Peace negotiations",
+        "Peace treaties",
+        "Peacekeeping forces",
+        "Sudan",
+        "United Nations",
+        "Women",
+        "Women's organizations"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>Calls upon the government of Sudan and other signatories and non-signatories to the May 5, 2006, Darfur Peace Agreement to cease hostilities.</p> <p>Calls upon the government of Sudan to facilitate the deployment of the United Nations-African Union peacekeeping force, including any non-African peacekeepers.</p> <p>Urges all invited individuals and movements to attend the next round of peace negotiations without preconditions.</p> <p>Condemns: (1) intimidation or threats against camp or civil society leaders to discourage them from attending the peace talks; and (2) actions by any party that undermines the Darfur peace process.</p> <p>Calls upon all parties to the Comprehensive Peace Agreement to support all terms of the agreement.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres455/BILLS-110sres455ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres455/BILLS-110sres455ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres455/BILLS-110sres455ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/455",
       "votes": []
     },
     {
@@ -3488,6 +4115,40 @@
       "votes": []
     },
     {
+      "id": "sres444-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "444",
+      "title": "A resolution expressing the sense of the Senate regarding the strong alliance that has been forged between the United States and the Republic of Korea and congratulating Myung-Bak Lee on his election to the presidency of the Republic of Korea.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Biden, Joseph R., Jr.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2008-02-06",
+      "latest_action": {
+        "date": "2008-02-14",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text: CR S1083)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Commemorations",
+        "Congressional tributes",
+        "East Asia",
+        "Foreign leaders",
+        "Presidential inaugurations",
+        "South Korea"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.) </b></p> <p>Congratulates Lee Myung-Bak on his election to the presidency of the Republic of Korea and wishes him and the Korean people well on his inauguration on February 25, 2008.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres444/BILLS-110sres444ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres444/BILLS-110sres444ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres444/BILLS-110sres444ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/444",
+      "votes": []
+    },
+    {
       "id": "sres457-110",
       "congress": 110,
       "type": "sres",
@@ -3588,6 +4249,43 @@
       "votes": []
     },
     {
+      "id": "sres432-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "432",
+      "title": "A resolution urging the international community to provide the United Nations-African Union Mission in Sudan with essential tactical and utility helicopters.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Biden, Joseph R., Jr.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2008-01-28",
+      "latest_action": {
+        "date": "2008-02-08",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S820)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Africa (Sub-Saharan)",
+        "Armed Forces and National Security",
+        "International military forces",
+        "International relief",
+        "Military assistance",
+        "Military helicopters",
+        "Peacekeeping forces",
+        "Sudan",
+        "United Nations"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>Urges: (1) the members of the international community, including the United States, that possess the capability to expeditiously provide the tactical and utility helicopters needed for the United Nations-African Union peacekeeping mission in Darfur to do so as soon as possible; and (2) the President to personally ask other heads of state to contribute aircraft and crews for the Darfur mission.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres432/BILLS-110sres432ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres432/BILLS-110sres432ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres432/BILLS-110sres432ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/432",
+      "votes": []
+    },
+    {
       "id": "sres443-110",
       "congress": 110,
       "type": "sres",
@@ -3654,6 +4352,53 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres438/BILLS-110sres438ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres438/BILLS-110sres438ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/438",
+      "votes": []
+    },
+    {
+      "id": "sres431-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "431",
+      "title": "A resolution calling for a peaceful resolution to the current electoral crisis in Kenya.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feingold, Russell D.",
+        "party": "D",
+        "state": "WI"
+      },
+      "introduced_date": "2008-01-25",
+      "latest_action": {
+        "date": "2008-01-29",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S456-457)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Africa (Sub-Saharan)",
+        "Alien property",
+        "Civil Rights and Liberties, Minority Issues",
+        "Commemorations",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Democracy",
+        "Diplomacy",
+        "Dissenters",
+        "Economic assistance",
+        "Election candidates",
+        "Ethnic relations",
+        "Foreign Trade and International Finance",
+        "Foreign leaders",
+        "Freedom of association",
+        "Freedom of the press",
+        "Government Operations and Politics",
+        "Human rights",
+        "Immigration"
+      ],
+      "summary_crs": " <p>Calls for a peaceful resolution to the current electoral crisis in Kenya.</p> <p>Urges the President to take specified actions.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres431/BILLS-110sres431ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres431/BILLS-110sres431ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres431/BILLS-110sres431ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/431",
       "votes": []
     },
     {
@@ -3979,6 +4724,157 @@
       "votes": []
     },
     {
+      "id": "hr3571-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "3571",
+      "title": "To amend the Congressional Accountability Act of 1995 to permit individuals who have served as employees of the Office of Compliance to serve as Executive Director, Deputy Executive Director, or General Counsel of the Office, and to permit individuals appointed to such positions to serve one additional term.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Brady, Robert A.",
+        "party": "D",
+        "state": "PA"
+      },
+      "introduced_date": "2007-09-18",
+      "latest_action": {
+        "date": "2007-12-26",
+        "text": "Became Public Law No: 110-164."
+      },
+      "outcome": "enacted",
+      "policy_area": "Congress",
+      "subjects": [
+        "Congressional agencies",
+        "Congressional employees",
+        "Congressional ethics",
+        "Congressional officers",
+        "Government Operations and Politics",
+        "Government attorneys",
+        "Law",
+        "Members of Congress"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Amends the Congressional Accountability Act of 1995 with respect to the prohibition against any member of the Board of Directors of the Office of Compliance (OC) having held a position as a Member, officer, or employee of the House of Representatives or the Senate, or of certain other legislative branch instrumentalities or entities, within four years of the date of appointment to the OC Board. (The Act also applies such disqualifications to the OC positions of Executive Director, Deputy Executive Director, and General Counsel.)</p> <p>Exempts OC officers or employees from such prohibition (thus allowing a current or former OC officer or employee to be appointed to serve as a Board member, Executive Director, Deputy Executive Director, or General Counsel of the Office).</p> <p>Permits an individual appointed, after the enactment of this Act, as Executive Director, Deputy Executive Director, or General Counsel of the Office to serve two terms.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ164/PLAW-110publ164.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ164/PLAW-110publ164.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/3571",
+      "votes": []
+    },
+    {
+      "id": "s1896-110",
+      "congress": 110,
+      "type": "s",
+      "number": "1896",
+      "title": "A bill to designate the facility of the United States Postal Service located at 11 Central Street in Hillsborough, New Hampshire, as the \"Officer Jeremy Todd Charron Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Sununu, John E.",
+        "party": "R",
+        "state": "NH"
+      },
+      "introduced_date": "2007-07-30",
+      "latest_action": {
+        "date": "2007-12-26",
+        "text": "Became Public Law No: 110-169."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congressional tributes",
+        "Government Operations and Politics",
+        "Names",
+        "New Hampshire",
+        "Postal facilities"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Designates the facility of the United States Postal Service located at 11 Central Street in Hillsborough, New Hampshire, as the \"Officer Jeremy Todd Charron Post Office.\" </p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ169/PLAW-110publ169.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ169/PLAW-110publ169.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/1896",
+      "votes": []
+    },
+    {
+      "id": "sres279-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "279",
+      "title": "A resolution expressing the sense of the Senate regarding the 125th anniversary of the 1882 Treaty of Peace, Amity, Commerce and Navigation between the Kingdom of Chosun (Korea) and the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lugar, Richard G.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2007-07-24",
+      "latest_action": {
+        "date": "2007-12-19",
+        "text": "Resolution agreed to in Senate with an amendment and an amended preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Alliances",
+        "Armed Forces and National Security",
+        "Civil Rights and Liberties, Minority Issues",
+        "Crime and Law Enforcement",
+        "Democracy",
+        "East Asia",
+        "Foreign Trade and International Finance",
+        "Free trade",
+        "Government Operations and Politics",
+        "Human rights",
+        "International cooperation",
+        "Korean reunification",
+        "North Korea",
+        "Peacekeeping forces",
+        "Regionalism (International organization)",
+        "South Korea",
+        "Terrorism",
+        "Trade agreements"
+      ],
+      "summary_crs": " <p>Expresses the sense of the Senate that: (1) the strength of the U.S.-Republic of Korea alliance should be acknowledged; (2) the countries' economic relationship should be deepened; (3) the United States should sustain substantive dialogue with both the Republic of Korea and the Democratic People's Republic of Korea with the expectation of the Korean peninsula's eventual unification; (4) working with the Republic of Korea to foster greater regional cooperation in East Asia should be a U.S. priority; and (5) the United States and the Republic of Korea should strive to develop a more global perspective in their partnership, with the goal of addressing international priorities such as the fight against terrorism, the promotion of human rights, the enhancement of democracy, support for peacekeeping, and protection of the environment. </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres279/BILLS-110sres279ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres279/BILLS-110sres279ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres279/BILLS-110sres279ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/279",
+      "votes": []
+    },
+    {
+      "id": "sres389-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "389",
+      "title": "A resolution commemorating the 25th Anniversary of the United States Air Force Space Command headquartered at Peterson Air Force Base, Colorado.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Allard, Wayne",
+        "party": "R",
+        "state": "CO"
+      },
+      "introduced_date": "2007-12-05",
+      "latest_action": {
+        "date": "2007-12-19",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S16056)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Air force",
+        "Anniversaries",
+        "Armed Forces and National Security",
+        "Congressional tributes",
+        "Intercontinental ballistic missiles",
+        "Military command and control",
+        "Space activities",
+        "Space warfare"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Recognizes the U.S. security contributions made by the Air Force Space Command.</p> <p>Commemorates the Command's 25 years of excellence and service.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres389/BILLS-110sres389ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres389/BILLS-110sres389ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres389/BILLS-110sres389ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/389",
+      "votes": []
+    },
+    {
       "id": "sres410-110",
       "congress": 110,
       "type": "sres",
@@ -4225,6 +5121,42 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres408/BILLS-110sres408ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres408/BILLS-110sres408ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/408",
+      "votes": []
+    },
+    {
+      "id": "sres391-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "391",
+      "title": "A resolution calling on the President of the United States to engage in an open discussion with the leaders of the Republic of Georgia to express support for the planned presidential elections and the expectation that such elections will be held in a manner consistent with democratic principles.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lugar, Richard G.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2007-12-06",
+      "latest_action": {
+        "date": "2007-12-13",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S15571)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Central Asia",
+        "Civil Rights and Liberties, Minority Issues",
+        "Democracy",
+        "Foreign leaders",
+        "Freedom of the press",
+        "Georgia (Republic)",
+        "Government Operations and Politics",
+        "Human rights"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Expresses the sense of the Senate that: (1) the President should publicly support free elections to be held in Georgia on January 5, 2008; and (2) the government of Georgia must conduct free elections open to independent reporting.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres391/BILLS-110sres391ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres391/BILLS-110sres391ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres391/BILLS-110sres391ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/391",
       "votes": []
     },
     {
@@ -5531,6 +6463,41 @@
       "votes": []
     },
     {
+      "id": "sres253-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "253",
+      "title": "A resolution expressing the sense of the Senate that the establishment of a Museum of the History of American Diplomacy through private donations is a worthy endeavor.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lugar, Richard G.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2007-06-25",
+      "latest_action": {
+        "date": "2007-09-07",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S11279-11280; text as passed Senate: CR S11280)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Arts, Culture, Religion",
+        "Diplomacy",
+        "Diplomats",
+        "Foreign service",
+        "History",
+        "Museums"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Expresses the the sense of the Senate that: (1) U.S. diplomats serving overseas and in the United States are in many cases the front line of our national security policy; (2) the people of the United States deserve a better understanding of the efforts of these brave men and women; (3) talented young people and their families should be encouraged to consider foreign affairs careers as an important contribution to their country; (4) the establishment of a Museum of the History of American Diplomacy that highlights the work of these men and women throughout U.S. history is a worthy endeavor; and (5) the Foreign Affairs Museum Council's plan to fund the museum through private donations deserves Department of State support. </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres253/BILLS-110sres253ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres253/BILLS-110sres253ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres253/BILLS-110sres253ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/253",
+      "votes": []
+    },
+    {
       "id": "sres310-110",
       "congress": 110,
       "type": "sres",
@@ -5632,6 +6599,77 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres308/BILLS-110sres308ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres308/BILLS-110sres308ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/308",
+      "votes": []
+    },
+    {
+      "id": "sres305-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "305",
+      "title": "A resolution to express the sense of the Senate regarding the Medicare national coverage determination on the treatment of anemia in cancer patients.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Specter, Arlen",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2007-08-03",
+      "latest_action": {
+        "date": "2007-09-04",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S11080-11081)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Blood",
+        "Blood diseases",
+        "Cancer",
+        "Congress",
+        "Congressional reporting requirements",
+        "Medicare",
+        "Social Welfare"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Expresses the sense of the Senate that the Centers for Medicare &amp; Medicaid Services should: (1) begin an immediate reconsideration of the final National Coverage Determination on the Use of Erythropoiesis Stimulating Agents in Cancer and Related Neoplastic Conditions (CAG-000383N); (2) consult with members of the clinical oncology community to determine appropriate revisions to it: and (3) implement such revisions as soon as feasible, and brief Congress in advance of announcing such changes.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres305/BILLS-110sres305ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres305/BILLS-110sres305ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres305/BILLS-110sres305ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/305",
+      "votes": []
+    },
+    {
+      "id": "s1099-110",
+      "congress": 110,
+      "type": "s",
+      "number": "1099",
+      "title": "A bill to amend chapter 89 of title 5, United States Code, to make individuals employed by the Roosevelt Campobello International Park Commission eligible to obtain Federal health insurance.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Collins, Susan M.",
+        "party": "R",
+        "state": "ME"
+      },
+      "introduced_date": "2007-04-12",
+      "latest_action": {
+        "date": "2007-08-09",
+        "text": "Became Public Law No: 110-74."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Federal employees",
+        "Government employees' health insurance",
+        "Health",
+        "History",
+        "Maine",
+        "Parks",
+        "Presidential residences",
+        "Roosevelt Administration"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Makes a U.S. citizen employed by the Roosevelt Campobello International Park Commission eligible to obtain federal health insurance.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ74/PLAW-110publ74.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ74/PLAW-110publ74.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/1099",
       "votes": []
     },
     {
@@ -5841,6 +6879,97 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres290/BILLS-110sres290ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres290/BILLS-110sres290ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/290",
+      "votes": []
+    },
+    {
+      "id": "sres276-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "276",
+      "title": "A resolution calling for the urgent deployment of a robust and effective multinational peacekeeping mission with sufficient size, resources, leadership, and mandate to protect civilians in Darfur, Sudan, and for efforts to strengthen the renewal of a just and inclusive peace process.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Biden, Joseph R., Jr.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2007-07-19",
+      "latest_action": {
+        "date": "2007-07-31",
+        "text": "Resolution agreed to in Senate with amendments and an amended preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Africa (Sub-Saharan)",
+        "Arab countries",
+        "Armed Forces and National Security",
+        "Arms sales",
+        "Civil Rights and Liberties, Minority Issues",
+        "Crime and Law Enforcement",
+        "Democracy",
+        "Diplomacy",
+        "Diplomats",
+        "Embargo",
+        "Europe",
+        "European Union",
+        "Foreign Trade and International Finance",
+        "Foreign leaders",
+        "Government Operations and Politics",
+        "Human rights",
+        "International cooperation",
+        "International military forces",
+        "International relief"
+      ],
+      "summary_crs": " <p>Urges the President of the United States to: (1) work with members of the U.N. Security Council and the African Union (AU) to ensure deployment of the United Nations-African Union peacekeeping force to protect civilians in Darfur, Sudan; (2) work bilaterally and with member states of the North Atlantic Trade Organization (NATO), the United Nations, the European Union (EU), the AU, and other partners to assist such force; and (3) work with Congress to ensure funding for such force.</p> <p>Urges: (1) the Secretary-General of the United Nations and the Chairperson of the AU to expedite such force's deployment; and (2) President al-Bashir and the government of Sudan to facilitate such deployment without condition; and (3) the President's Special Envoy to Sudan to continue his legislative outreach to bring peace to Darfur through an inclusive political process. </p> <p>Urges all participants in the Darfur conflict, including rebel movements that were not signatories to the Darfur Peace Agreement, to participate in a U.N.-AU political process in order to return peace to Darfur. </p> <p>Regards failure to participate in such process as a political obstruction that may be worthy of international sanctions.</p> <p>Urges President Bush, the Security Council, the AU, the EU, the League of Arab States, regional nations, and individual nations with economic or political influence over Sudan to: (1) hold President al-Bashir and the government of Sudan accountable for any failure to facilitate such force's deployment; and (2) be prepared to implement meaningful measures, including sanctions, an arms embargo, and a no fly zone for Sudanese military flights over Darfur if the government of Sudan obstructs the peacekeeping mission's deployment.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres276/BILLS-110sres276ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres276/BILLS-110sres276ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres276/BILLS-110sres276ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/276",
+      "votes": []
+    },
+    {
+      "id": "sres278-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "278",
+      "title": "A resolution expressing the sense of the Senate regarding the announcement of the Russian Federation of its suspension of implementation of the Conventional Armed Forces in Europe Treaty.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Casey, Robert P., Jr.",
+        "party": "D",
+        "state": "PA"
+      },
+      "introduced_date": "2007-07-24",
+      "latest_action": {
+        "date": "2007-07-31",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text as passed Senate: CR S10528-10529)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Arms control agreements",
+        "Central Asia",
+        "Civil Rights and Liberties, Minority Issues",
+        "Collective security",
+        "Conventional weapons",
+        "Europe",
+        "Foreign leaders",
+        "Georgia (Republic)",
+        "Human rights",
+        "Law",
+        "Military and naval supplies",
+        "Military withdrawal",
+        "Moldova",
+        "Rule of law",
+        "Russia"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Expresses the sense of the Senate that the government of the Russian Federation's decision to suspend implementation of the 1990 Treaty on Conventional Armed Forces in Europe (CFE Treaty) will unnecessarily heighten tensions in Europe, and urges such suspension's reconsideration.</p> <p>Recognizes the CFE Treaty as a cornerstone of European security. </p> <p>Calls on the Russian Federation to fulfill its Istanbul Commitments of 1999 and withdraw all remaining forces and military equipment from Georgia and Moldova.</p> <p>Calls on all States Parties to ensure that the resolution of the current disputes surrounding the CFE Treaty be considered a priority at the highest political levels.</p> <p>Encourages officials of the government of the Russian Federation to refrain from belligerent statements that polarize relations and jeopardize security in Europe.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres278/BILLS-110sres278ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres278/BILLS-110sres278ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres278/BILLS-110sres278ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/278",
       "votes": []
     },
     {
@@ -6666,6 +7795,51 @@
       "votes": []
     },
     {
+      "id": "sres110-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "110",
+      "title": "A resolution expressing the sense of the Senate regarding the 30th Anniversary of ASEAN-United States dialogue and relationship.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lugar, Richard G.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2007-03-15",
+      "latest_action": {
+        "date": "2007-06-11",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S7494; text as passed Senate: CR S7494)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Development credit institutions",
+        "Diplomats",
+        "East Asia",
+        "Education",
+        "Educational exchanges",
+        "Energy",
+        "Energy security",
+        "Foreign Trade and International Finance",
+        "Foreign students",
+        "Government Operations and Politics",
+        "Higher education",
+        "International cooperation",
+        "Public corruption",
+        "Regionalism (International organization)",
+        "Scholarships",
+        "Southeast Asia",
+        "Summit diplomacy"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Expresses the sense of the Senate that the United States: (1) and the Association of Southeast Asian Nations (ASEAN) countries should continue implementing the ASEAN-United States Enhanced Partnership; (2) should proceed with appointing a United States Ambassador for ASEAN Affairs; (3) should work with the ASEAN countries in developing a regional energy strategy; (4) should provide greater support toward encouraging students from ASEAN countries to study in the United States and American students to study in ASEAN countries; and (5) should continue to support the work of multilateral financial institutions assisting the ASEAN countries.</p> <p>Welcomes: (1) initiation of a Fulbright Program for ASEAN scholars; and (2) planning by the ASEAN countries and the United States for a 2007 ASEAN-United States Summit.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres110/BILLS-110sres110ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres110/BILLS-110sres110ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres110/BILLS-110sres110ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/110",
+      "votes": []
+    },
+    {
       "id": "sres223-110",
       "congress": 110,
       "type": "sres",
@@ -6777,6 +7951,45 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres229/BILLS-110sres229ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres229/BILLS-110sres229ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/229",
+      "votes": []
+    },
+    {
+      "id": "sres211-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "211",
+      "title": "A resolution expressing the profound concerns of the Senate regarding the transgression against freedom of thought and expression that is being carried out in Venezuela, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lugar, Richard G.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2007-05-21",
+      "latest_action": {
+        "date": "2007-05-24",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S6923; text as passed Senate: CR S6923)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Civil Rights and Liberties, Minority Issues",
+        "Foreign leaders",
+        "Freedom of speech",
+        "Freedom of the press",
+        "Government Operations and Politics",
+        "Human rights",
+        "Latin America",
+        "Regionalism (International organization)",
+        "Science, Technology, Communications",
+        "Television stations",
+        "Venezuela"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Expresses profound concern about the transgression against freedom of thought and expression in Venezuela by President Hugo Chavez's refusal to renew the concession of Radio Caracas Television.</p> <p> Encourages the Organization of American States (OAS) to respond appropriately to such transgression.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres211/BILLS-110sres211rs.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres211/BILLS-110sres211rs.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres211/BILLS-110sres211rs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/211",
       "votes": []
     },
     {
@@ -7262,6 +8475,88 @@
       "votes": []
     },
     {
+      "id": "sres141-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "141",
+      "title": "A resolution urging all member countries of the International Commission of the International Tracing Service who have yet to ratify the May 2006 amendments to the 1955 Bonn Accords to expedite the ratification process to allow for open access to the Holocaust archives located at Bad Arolsen, Germany.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Clinton, Hillary Rodham",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2007-04-10",
+      "latest_action": {
+        "date": "2007-05-01",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S5435)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Archives",
+        "Arts, Culture, Religion",
+        "Diplomacy",
+        "Europe",
+        "Germany",
+        "Government Operations and Politics",
+        "History",
+        "Jewish holocaust (1939-1945)",
+        "Nazism",
+        "Treaties",
+        "Treaty-making power"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Commends the countries that have: (1) ratified the amendments to the Agreement Constituting an International Commission for the International Tracing Service (&quot;Bonn Accords'') to allow for open access to the Holocaust archives of the International Tracing Service (ITS) located at Bad Arolsen, Germany; and (2) committed to expedite the archives' release. </p> <p> Urges: (1) countries that have not ratified the amendments to abide by the May 2006 treaty obligations and expedite such ratification; and (2) member countries of the International Commission of the ITS to consider the short time left to Holocaust survivors and unanimously consent to open the ITS archives should all countries not ratify the amendments by May 2007.</p> <p>States that the Senate refuses to forget the Holocaust murder of 6 million Jews and more than 5 million other victims by Nazi perpetrators and their collaborators. </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres141/BILLS-110sres141ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres141/BILLS-110sres141ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres141/BILLS-110sres141ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/141",
+      "votes": []
+    },
+    {
+      "id": "sres155-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "155",
+      "title": "A resolution expressing the sense of the Senate on efforts to control violence and strengthen the rule of law in Guatemala.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Dodd, Christopher J.",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2007-04-18",
+      "latest_action": {
+        "date": "2007-05-01",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S5432)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Administration of justice",
+        "Armed Forces and National Security",
+        "Civil Rights and Liberties, Minority Issues",
+        "Crime and Law Enforcement",
+        "Criminal investigation",
+        "Guatemala",
+        "Human rights",
+        "Latin America",
+        "Law",
+        "Legislation",
+        "Peace treaties",
+        "Police",
+        "Prosecution",
+        "Rule of law",
+        "United Nations"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Expresses the sense of the Senate that the International Commission against Impunity in Guatemala is an innovative mechanism to support local efforts to confront the problem posed by illegal armed groups and clandestine security organizations in Guatemala and their infiltration into state institutions.</p> <p>Encourages the Guatemalan Congress to enact legislation to implement the International Commission against Impunity in Guatemala and other pending legislation needed to fulfill the 1996 peace agreement.</p> <p>Calls on the government of Guatemala and all sectors of society in Guatemala to support the investigation and prosecution of illegal armed groups and clandestine security organizations.</p> <p>Reiterates the Senate's commitment to support the government of Guatemala in its efforts to strengthen the rule of law.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres155/BILLS-110sres155ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres155/BILLS-110sres155ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres155/BILLS-110sres155ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/155",
+      "votes": []
+    },
+    {
       "id": "sres181-110",
       "congress": 110,
       "type": "sres",
@@ -7673,6 +8968,38 @@
       "votes": []
     },
     {
+      "id": "sres139-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "139",
+      "title": "A resolution commending General Peter J. Schoomaker for his extraordinary dedication to duty and service to the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Inhofe, James M.",
+        "party": "R",
+        "state": "OK"
+      },
+      "introduced_date": "2007-03-29",
+      "latest_action": {
+        "date": "2007-04-18",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S4721-4722)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Army",
+        "Congressional tributes",
+        "Officer personnel"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.</b><b>)</b></p> <p>Commends General Peter J. Schoomaker for his extraordinary dedication to duty and service to the United States throughout his distinguished career in the U.S. Army.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres139/BILLS-110sres139ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres139/BILLS-110sres139ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres139/BILLS-110sres139ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/139",
+      "votes": []
+    },
+    {
       "id": "sres156-110",
       "congress": 110,
       "type": "sres",
@@ -8072,6 +9399,147 @@
       "votes": []
     },
     {
+      "id": "sres92-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "92",
+      "title": "A resolution calling for the immediate and unconditional release of soldiers of Israel held captive by Hamas and Hezbollah.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Clinton, Hillary Rodham",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2007-03-01",
+      "latest_action": {
+        "date": "2007-04-12",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S4456-4457)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Aggression",
+        "Arab-Israeli conflict",
+        "Armed Forces and National Security",
+        "Charities",
+        "Civil Rights and Liberties, Minority Issues",
+        "Commemorations",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Gaza Strip",
+        "Human rights",
+        "International relief",
+        "Iran",
+        "Israel",
+        "Kidnapping",
+        "Lebanon",
+        "Middle East and North Africa",
+        "Military personnel",
+        "Nongovernmental organizations",
+        "Prisoners of war"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Demands that: (1) Hamas release Israeli soldier Gilad Shalit; (2) Hezbollah accept the mandate of U.N. Security Council Resolution 1701 by releasing Israeli soldiers Ehud Goldwasser and Eldad Regev; and (3) Hezbollah and Hamas accede to basic standards of humanitarian conduct and allow access to the Israeli captives by competent medical personnel and representatives of the International Committee of the Red Cross.</p> <p>Expresses: (1) commitment to Israel's survival as a Jewish and democratic state with secure borders; (2) support and interest in achieving a resolution of the Israeli-Palestinian conflict through the creation of a viable and independent Palestinian state living in peace alongside Israel; (3) concern for the families of Gilad Shalit, Ehud Goldwasser, and Eldad Regev; and (4) commitment to seek the Israeli captives' release.</p> <p>Condemns: (1) Hamas and Hezbollah for the cross border attacks and kidnappings which precipitated the armed conflict between Israel, Hezbollah, and armed Palestinian groups; and (2) Iran and Syria for their ongoing support of Hezbollah and Hamas.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres92/BILLS-110sres92ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres92/BILLS-110sres92ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres92/BILLS-110sres92ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/92",
+      "votes": []
+    },
+    {
+      "id": "sres142-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "142",
+      "title": "A resolution observing Yom Hashoah, Holocaust Memorial Day, and calling on the remaining member countries of the International Commission of the International Tracing Service to ratify the May 2006 amendments to the 1955 Bonn Accords immediately to allow open access to the Bad Arolsen archives.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Biden, Joseph R., Jr.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2007-04-10",
+      "latest_action": {
+        "date": "2007-04-11",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text as passed Senate: CR S4391)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Archives",
+        "Arts, Culture, Religion",
+        "Belgium",
+        "Commemorations",
+        "Congressional tributes",
+        "Europe",
+        "France",
+        "Germany",
+        "Government Operations and Politics",
+        "Greece",
+        "History",
+        "Israel",
+        "Italy",
+        "Jewish holocaust (1939-1945)",
+        "Luxembourg",
+        "Middle East and North Africa",
+        "Netherlands",
+        "Poland",
+        "Special days"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Joins people around the world in observing Yom Hashoah, Holocaust Memorial Day, and mourning the millions who were lost during the Holocaust.</p> <p> Commends the United States, the United Kingdom, Israel, Poland, and the Netherlands as the member countries of the International Commission of the International Tracing Service that have ratified the May 2006 amendments to the Agreement Constituting an International Commission for the International Tracing Service (Bonn Accords).</p> <p> Calls on: (1) Belgium, France, Germany, Greece, Italy, and Luxembourg, the member countries of the International Commission that have not yet ratified the May 2006 amendments to the Bonn Accords, to do so; and (2) the International Commission to approve the immediate distribution of copies of the documents from the Bad Arolsen archives that have already been digitized when the International Commission meets in Amsterdam in May 2007.</p> <p> Requests the Secretary of the Senate to transmit copies of this resolution to the Secretary of State and to the ambassadors of the member countries of the International Commission in the United States. </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres142/BILLS-110sres142ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres142/BILLS-110sres142ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres142/BILLS-110sres142ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/142",
+      "votes": []
+    },
+    {
+      "id": "sres76-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "76",
+      "title": "A resolution calling on the United States Government and the international community to promptly develop, fund, and implement a comprehensive regional strategy in Africa to protect civilians, facilitate humanitarian operations, contain and reduce violence, and contribute to conditions for sustainable peace in eastern Chad, northern Central African Republic, and Darfur, Sudan.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feingold, Russell D.",
+        "party": "D",
+        "state": "WI"
+      },
+      "introduced_date": "2007-02-08",
+      "latest_action": {
+        "date": "2007-04-11",
+        "text": "Resolution agreed to in Senate with amendments and an amendment to the Title and with a preamble by Unanimous Consent. (text as passed Senate: CR S4385-4386)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Administration of justice",
+        "Africa (Sub-Saharan)",
+        "Armed Forces and National Security",
+        "Central African Republic",
+        "Chad",
+        "Civil Rights and Liberties, Minority Issues",
+        "Corrections",
+        "Crime and Law Enforcement",
+        "Democracy",
+        "Displaced persons",
+        "Evidence (Law)",
+        "Government Operations and Politics",
+        "Human rights",
+        "Immigration",
+        "Insurgency",
+        "International cooperation",
+        "International law",
+        "International military forces",
+        "International relief"
+      ],
+      "summary_crs": " <p>Expresses concern for the more than one million citizens of Sudan, Chad, and the Central African Republic who have been affected by violence and instability.</p> <p> Calls upon the governments of Chad and Sudan to: (1) reaffirm their commitment to the Tripoli Declaration of February 8, 2006, and the N'Djamena Agreement of July 26, 2006; (2) refrain from any actions that violate these agreements; and (3) cease all support to each others' insurgent groups.</p> <p>Urges the government of Chad to: (1) improve accountability as well as the provision of basic services to redeem its legitimacy in the eyes of its citizens; and (2) take action to increase political participation and to strengthen democratic institutions.</p> <p>Urges the government of Chad, the government of Sudan, and other key regional and international stakeholders to commit to another round of inclusive political negotiations that can bring regional peace.</p> <p>Urges the government of the Central African Republic to: (1) to engage in inclusive dialogue with rebels in the northwestern region of the country; (2) hold accountable security forces engaging in human rights violations; and (3) strengthen government services in order to meet the needs of affected populations.</p> <p>Calls upon the President to urge the U.N. Security Council to appoint a senior U.N. official to coordinate all international humanitarian activities on both sides of Sudan's western border and expand the response to emergency needs in the Central African Republic.</p> <p>Urges the President to press for the immediate deployment of an advance U.N. mission to eastern Chad and northern Central African Republic to lay the groundwork for a multilateral and multidimensional presence.</p> <p>Urges the Security Council to authorize a multilateral peacekeeping force to eastern Chad and northern Central African Republic to: (1) ensure effective protection of civilians, particularly refugees and internally displaced persons; (2) organize regular patrols along the western border of Sudan and implement protection measures for asylum seekers; (3) maintain the civilian and humanitarian nature of the internally displaced persons and refugee camps in Chad; (4) ensure the safety of humanitarian workers; (5) share information with humanitarian organizations; (6) collect and report evidence of human rights violations and perpetrators to the United Nations; and (7) support domestic and multilateral initiatives to strengthen local judicial, police, and correctional systems in Chad.</p> <p>Urges the President and the international community to coordinate assistance efforts. </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres76/BILLS-110sres76ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres76/BILLS-110sres76ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres76/BILLS-110sres76ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/76",
+      "votes": []
+    },
+    {
       "id": "sres143-110",
       "congress": 110,
       "type": "sres",
@@ -8213,6 +9681,41 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres136/BILLS-110sres136ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres136/BILLS-110sres136ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/136",
+      "votes": []
+    },
+    {
+      "id": "sres114-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "114",
+      "title": "A resolution recognizing the contributions of agricultural producers in Pennsylvania and throughout the Nation on the occasion of National Agriculture Day.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Casey, Robert P., Jr.",
+        "party": "D",
+        "state": "PA"
+      },
+      "introduced_date": "2007-03-21",
+      "latest_action": {
+        "date": "2007-03-28",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4078; text as passed Senate: CR S4078)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Agricultural industries",
+        "Agriculture and Food",
+        "Commerce",
+        "Congressional tributes",
+        "Pennsylvania",
+        "Produce trade",
+        "Special days"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Recognizes: (1) that agriculture is the number one industry in Pennsylvania; (2) the outstanding contribution of Pennsylvania's agricultural producers to the economy of the Commonwealth and the Nation; and (3) that Pennsylvania's agriculture is diverse and provides important nutrition to the people of the United States.</p> <p> Pays tribute to agriculture and agricultural producers in Pennsylvania and throughout the United States on the occasion of National Agriculture Day. </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres114/BILLS-110sres114ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres114/BILLS-110sres114ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres114/BILLS-110sres114ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/114",
       "votes": []
     },
     {
