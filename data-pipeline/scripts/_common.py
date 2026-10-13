@@ -1225,6 +1225,63 @@ def parse_member_summary(raw: dict[str, Any]) -> dict[str, Any]:
     return record
 
 
+# House seat counts by state for the 2020-census apportionment (in effect
+# 2023-2033, i.e. the 118th-121st Congresses). At-large states (AK, DE, ND,
+# SD, VT, WY) and delegate jurisdictions (DC, AS, GU, MP, PR, VI) are
+# deliberately excluded: their lone seat is published with district=0, not
+# a 1..N range, so they fall outside what this table is for (see
+# find_vacant_house_districts below).
+#
+# This exists solely to tell a *real* currently-vacant seat (a member who
+# resigned, died, or was expelled, with no successor sworn in yet — which
+# Congress.gov's currentMember=true filter, mirrored by list_members,
+# correctly omits) apart from an actual fetch/parse defect: a district
+# absent from members_out that IS in this table is an expected vacancy, not
+# a bug. Mirrored by the KMP shadow (HouseApportionment.kt
+# HOUSE_APPORTIONMENT) and by the Android LocationPickerViewModel's own
+# HOUSE_DISTRICT_COUNTS fallback table — keep all three in sync if
+# apportionment ever changes (next scheduled change: the 2030 census).
+HOUSE_APPORTIONMENT: dict[str, int] = {
+    "AL": 7, "AZ": 9, "AR": 4, "CA": 52, "CO": 8, "CT": 5,
+    "FL": 28, "GA": 14, "HI": 2, "ID": 2, "IL": 17, "IN": 9,
+    "IA": 4, "KS": 4, "KY": 6, "LA": 6, "ME": 2, "MD": 8,
+    "MA": 9, "MI": 13, "MN": 8, "MS": 4, "MO": 8, "MT": 2,
+    "NE": 3, "NV": 4, "NH": 2, "NJ": 12, "NM": 3, "NY": 26,
+    "NC": 14, "OH": 15, "OK": 5, "OR": 6, "PA": 17, "RI": 2,
+    "SC": 7, "TN": 9, "TX": 38, "UT": 4, "VA": 11, "WA": 10,
+    "WV": 2, "WI": 8,
+}
+
+
+def find_vacant_house_districts(
+    members: list[dict[str, Any]],
+) -> list[tuple[str, int]]:
+    """Return the ``(state, district)`` pairs ``HOUSE_APPORTIONMENT`` expects
+    but that have no current House member in ``members``.
+
+    Sorted by state then district for stable, diffable output. An empty
+    result is the healthy case; a non-empty one is not by itself a pipeline
+    bug — cross-check the reported seats against Congress.gov / the Clerk's
+    vacancy list before assuming otherwise (#106).
+    """
+    present: dict[str, set[int]] = {}
+    for m in members:
+        if m.get("chamber") != "house":
+            continue
+        state = m.get("state")
+        district = m.get("district")
+        if not state or not isinstance(district, int) or district <= 0:
+            continue
+        present.setdefault(state, set()).add(district)
+    vacant: list[tuple[str, int]] = [
+        (state, district)
+        for state, count in HOUSE_APPORTIONMENT.items()
+        for district in range(1, count + 1)
+        if district not in present.get(state, set())
+    ]
+    return sorted(vacant)
+
+
 def parse_member_legislation_item(raw: dict[str, Any]) -> dict[str, Any]:
     bill_type = (raw.get("type") or "").lower()
     number = str(raw.get("number") or "")
