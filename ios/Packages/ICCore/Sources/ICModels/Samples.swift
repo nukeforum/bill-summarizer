@@ -76,7 +76,8 @@ extension Member {
     chamber: .house,
     phone: "(202) 225-2190",
     website: URL(string: "https://schweikert.house.gov"),
-    socials: [SocialHandle(platform: "twitter", handle: "RepDavid")]
+    socials: [SocialHandle(platform: "twitter", handle: "RepDavid")],
+    nextElectionYear: 2026
   )
 
   public static let sampleSenators = [

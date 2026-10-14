@@ -12,6 +12,7 @@
 		2FA0531C58C03467FCD44F31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E3AF55153216202AB76200 /* Foundation.framework */; };
 		40534CA3DEF6820CDC39A821 /* ICClients in Frameworks */ = {isa = PBXBuildFile; productRef = 5043DE220EF51A3EAFA1C512 /* ICClients */; };
 		4C45B41B5F3DE9FE36591409 /* BillDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8504B3575F90DF5ADAB753 /* BillDetailView.swift */; };
+		5A9C7E1D3B4F6082A6C8E0F2 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0D8F2E4C5A7193B7D9F103 /* CalendarView.swift */; };
 		5B7D77F6C6168AB9AA6BE91D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E3AF55153216202AB76200 /* Foundation.framework */; };
 		B63BC26482929D807184C0E6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A14020CF6C877086869E3D1 /* RootView.swift */; };
 		C91CAE772925470576CAC969 /* ICDataKit in Frameworks */ = {isa = PBXBuildFile; productRef = BFAC879A6200C4879B826F61 /* ICDataKit */; };
@@ -40,6 +41,7 @@
 		40B5EB8318B8E37474CF7D44 /* BillsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BillsView.swift; path = Bills/BillsView.swift; sourceTree = "<group>"; };
 		44C4B56033FFBAD1E6E3CDD5 /* InformedCitizenApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InformedCitizenApp.swift; sourceTree = "<group>"; };
 		58E3AF55153216202AB76200 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6B0D8F2E4C5A7193B7D9F103 /* CalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarView.swift; path = Calendar/CalendarView.swift; sourceTree = "<group>"; };
 		6C5E3369B1F469E7F042B2F7 /* InformedCitizenScreenshotTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InformedCitizenScreenshotTests.swift; sourceTree = "<group>"; };
 		71143EC37DD0E2AC91BFD4D7 /* InformedCitizen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InformedCitizen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD8504B3575F90DF5ADAB753 /* BillDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BillDetailView.swift; path = Bills/BillDetailView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			children = (
 				AD8504B3575F90DF5ADAB753 /* BillDetailView.swift */,
 				40B5EB8318B8E37474CF7D44 /* BillsView.swift */,
+				6B0D8F2E4C5A7193B7D9F103 /* CalendarView.swift */,
 				C3D4E5F60718293A4B5C6D7E /* InAppBrowser.swift */,
 				44C4B56033FFBAD1E6E3CDD5 /* InformedCitizenApp.swift */,
 				B2C3D4E5F60718293A4B5C6D /* MemberDetailView.swift */,
@@ -238,6 +241,7 @@
 			files = (
 				4C45B41B5F3DE9FE36591409 /* BillDetailView.swift in Sources */,
 				E158CFDEB4D86996B590A12A /* BillsView.swift in Sources */,
+				5A9C7E1D3B4F6082A6C8E0F2 /* CalendarView.swift in Sources */,
 				D3E4F5A60718293B4C5D6E7F /* InAppBrowser.swift in Sources */,
 				067CE7E02577BE4E968BD59A /* InformedCitizenApp.swift in Sources */,
 				C2D3E4F5A60718293B4C5D6E /* MemberDetailView.swift in Sources */,
