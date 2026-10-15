@@ -80,6 +80,25 @@ final class InformedCitizenScreenshotTests: XCTestCase {
         .waitForExistence(timeout: 5))
     app.swipeDown()
     attachScreenshot(named: "08-zip-district-disambiguation")
+
+    app.tabBars.buttons["Calendar"].tap()
+    let calendar = app.descendants(matching: .any)["calendar-content"]
+    XCTAssertTrue(calendar.waitForExistence(timeout: 5))
+    XCTAssertTrue(app.staticTexts["General election"].exists)
+    XCTAssertTrue(app.staticTexts["in 20 days"].exists)
+    attachScreenshot(named: "09-congress-calendar")
+
+    app.buttons["calendar-register-vote"].tap()
+    XCTAssertTrue(closeBrowser.waitForExistence(timeout: 5))
+    closeBrowser.tap()
+    XCTAssertTrue(app.navigationBars["Congress Calendar"].waitForExistence(timeout: 5))
+
+    let november = app.staticTexts["November 2026"]
+    for _ in 0..<4 where !november.isHittable {
+      app.swipeUp()
+    }
+    XCTAssertTrue(november.isHittable)
+    attachScreenshot(named: "10-session-calendar")
   }
 
   @MainActor
