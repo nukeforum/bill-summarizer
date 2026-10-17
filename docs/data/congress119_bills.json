@@ -1,8 +1,137 @@
 {
-  "generated_at": "2026-10-16T10:47:25Z",
+  "generated_at": "2026-10-17T10:13:09Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "s240-119",
+      "congress": 119,
+      "type": "s",
+      "number": "240",
+      "title": "Crow Tribe Water Rights Settlement Amendments Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daines, Steve",
+        "party": "R",
+        "state": "MT"
+      },
+      "introduced_date": "2025-01-24",
+      "latest_action": {
+        "date": "2026-10-15",
+        "text": "Became Public Law No: 119-122."
+      },
+      "outcome": "enacted",
+      "policy_area": "Native Americans",
+      "subjects": [
+        "Dams and canals",
+        "Government trust funds",
+        "Indian lands and resources rights",
+        "Montana",
+        "Water use and supply"
+      ],
+      "summary_crs": "<p><strong>Crow Tribe Water Rights Settlement Amendments Act of 2025</strong></p><p>This bill revises the water rights settlement agreement entered into by the Crow Tribe of Montana and Montana.</p><p>The Crow Tribe Water Rights Settlement Act of 2010 ratified, authorized, and confirmed the water rights compact between the tribe and Montana. Among other provisions, this settlement act authorized the Bureau of Reclamation to plan, design and construct the following two major projects on the Crow Reservation: (1) the rehabilitation and improvement of the Crow Irrigation Project (CIP); and (2) the planning, design, and construction of the MR&amp;I System (the municipal, rural, and industrial water system of the Crow Reservation).</p><p>Among other provisions, the bill revises the settlement act to</p><ul><li>replace references to the <em>MR&amp;I System</em> with <em>MR&amp;I Projects</em>;&nbsp;</li><li>establish a nontrust, interest-bearing account&nbsp;(to be known as the Crow&nbsp;CIP Implementation Account) to allow Reclamation to continue to work on the rehabilitation of the CIP;&nbsp;</li><li>create a new MR&amp;I Projects Account, through which the tribe must use funds for activities related to water production, treatment, or delivery infrastructure; and</li><li>extend by five years (to 2030) the period during which the tribe has the exclusive right to construct hydropower facilities on the Yellowtail&nbsp;Afterbay Dam in Montana.</li></ul>",
+      "text_url_html": "https://www.congress.gov/119/bills/s240/BILLS-119s240eah.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s240/BILLS-119s240eah.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s240/BILLS-119s240eah.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/240",
+      "votes": []
+    },
+    {
+      "id": "s2403-119",
+      "congress": 119,
+      "type": "s",
+      "number": "2403",
+      "title": "Retire through Ownership Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Marshall, Roger",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2025-07-23",
+      "latest_action": {
+        "date": "2026-10-15",
+        "text": "Became Public Law No: 119-124."
+      },
+      "outcome": "enacted",
+      "policy_area": "Labor and Employment",
+      "subjects": [
+        "Employee benefits and pensions",
+        "Financial services and investments",
+        "Securities"
+      ],
+      "summary_crs": "<p><strong>Retire through Ownership Act</strong></p><p>This bill allows the fiduciary of an Employee Stock Ownership Plan (ESOP) to rely on a valuation provided by an independent valuation expert or business appraiser in determining the fair market value&nbsp;of the plan's securities if the securities are not traded on a national securities exchange (i.e., not publicly traded) and the expert or appraiser follows specified methodologies.&nbsp;</p><p>In general,&nbsp;ESOPs are defined contribution pension plans where employees accrue shares of their employers' stock in individual accounts as part of their compensation. After separating from employment or retiring, employees receive the cash value of their shares.</p><p>Under the bill, an independent expert or appraiser must adhere to the methodology established under the Internal Revenue Service Ruling 59-60, which prescribes the factors a professional business appraiser should consider in forming a valuation of the stock&nbsp;for a closely held business.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s2403/BILLS-119s2403es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s2403/BILLS-119s2403es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s2403/BILLS-119s2403es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2403",
+      "votes": [
+        {
+          "id": "house-119-2-314",
+          "chamber": "house",
+          "session": 2,
+          "roll_number": 314,
+          "date": "2026-09-16",
+          "question": "On Motion to Suspend the Rules and Pass",
+          "result": "Passed",
+          "bill_id": "s2403-119",
+          "totals": {
+            "yea": 401,
+            "nay": 14,
+            "present": 0,
+            "not_voting": 18
+          },
+          "party_split": {
+            "yea": {
+              "D": 209,
+              "I": 1,
+              "R": 191
+            },
+            "nay": {
+              "R": 14
+            },
+            "not_voting": {
+              "D": 5,
+              "R": 13
+            }
+          },
+          "path": "votes/congress119/house-2-314.json"
+        }
+      ]
+    },
+    {
+      "id": "s283-119",
+      "congress": 119,
+      "type": "s",
+      "number": "283",
+      "title": "Illegal Red Snapper and Tuna Enforcement Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cruz, Ted",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2025-01-28",
+      "latest_action": {
+        "date": "2026-10-15",
+        "text": "Became Public Law No: 119-123."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Congressional oversight",
+        "Fishes",
+        "Food supply, safety, and labeling",
+        "Marine and coastal resources, fisheries",
+        "Seafood"
+      ],
+      "summary_crs": "<p><strong>Illegal Red Snapper and Tuna Enforcement Act</strong></p><p>This bill directs the National Oceanic and Atmospheric Administration (NOAA) and the National Institute of Standards and Technology (NIST) to jointly develop a standard methodology for identifying the country of origin of seafood to support enforcement against illegal, unreported, and unregulated fishing (IUU fishing). It also authorizes technical assistance to other countries&nbsp;to help combat IUU fishing and transnational organized crime.&nbsp;</p><p>NOAA and NIST must consult with U.S. Customs and Border Protection and the Coast Guard in developing the methodology, which must use chemical analysis to identify the country of origin of seafood. The methodology must be consistent with the needs of federal and state law enforcement agencies in combating IUU fishing. The methodology must also include a portable field kit and, to the extent practicable, be appropriate for testing prepared food (including raw preparations of seafood such as sushi). The agencies must conduct&nbsp;pilot studies of the methodology on red snapper and tuna.</p><p>Within two&nbsp;years after the bill's enactment, NIST must report to Congress regarding the methodology&nbsp;and a plan for operationalizing it. The report must explain any aspects of its&nbsp;methodology&nbsp;that are impracticable,&nbsp;whether additional research would make the methodology practicable, and whether an alternate approach might be practicable.&nbsp;</p><p>The bill also authorizes the Department of Defense to use operation and maintenance funds to provide technical assistance&nbsp;to maritime forces of other countries to help combat IUU fishing and transnational organized crime (e.g., by providing observers or data analysis).</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s283/BILLS-119s283eah.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s283/BILLS-119s283eah.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s283/BILLS-119s283eah.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/283",
+      "votes": []
+    },
     {
       "id": "s195-119",
       "congress": 119,
@@ -30,9 +159,9 @@
         "Travel and tourism"
       ],
       "summary_crs": "<p><strong>American Music Tourism Act of 2025</strong></p><p>This bill directs the National Travel and Tourism Office (NTTO) of the Department of Commerce to promote tourism to music-related and sports attractions.</p><p>The bill requires NTTO to promote domestic and international travel and tourism to&nbsp;U.S. music festivals, concert venues, and other music-related attractions and locations. The bill also expands NTTO's current mandate to facilitate sports and recreation events and activities to include the&nbsp;promotion of international travel and tourism to such activities in the United States.</p><p>NTTO must report its activities and findings to Congress within one year after the bill's enactment and, thereafter, every two years.&nbsp;</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/s195/BILLS-119s195es.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/s195/BILLS-119s195es.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/s195/BILLS-119s195es.pdf",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ121/PLAW-119publ121.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ121/PLAW-119publ121_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ121/PLAW-119publ121.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/195",
       "votes": []
     },
@@ -3343,8 +3472,7 @@
         "date": "2026-09-02",
         "text": "Became Public Law No: 119-103."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Economics and Public Finance",
       "subjects": [
         "Abortion",
@@ -3367,10 +3495,10 @@
         "Agricultural insurance",
         "Agricultural marketing and promotion"
       ],
-      "summary_crs": "<p><strong>Continuing Appropriations and Extensions Act, 2027</strong></p><p>This bill provides continuing FY2027 appropriations for federal agencies and extends various expiring programs and authorities.</p><p>Specifically, the bill provides continuing FY2027 appropriations to federal agencies through the earlier of December 11, 2026, or the enactment of the applicable appropriations act. It is known as a continuing resolution (CR) and prevents a government shutdown that would otherwise occur if the FY2027 appropriations bills have not been enacted when FY2027 begins on October 1, 2026.</p><p>The&nbsp;CR funds most programs and activities at the FY2026 levels with several exceptions that provide funding flexibility or additional appropriations for various programs. For example, the CR includes exceptions for&nbsp;</p><ul><li>the Special Supplemental Nutrition Program for Women, Infants, and Children (WIC);</li><li>Small Business Administration loans;</li><li>the Disaster Relief Fund;&nbsp;</li><li>the Indian Health Service;&nbsp;</li><li>the Department of Justice; and</li><li>wildfire suppression activities.</li></ul><p>In addition, the bill extends several expiring authorizations, including authorities and programs related to&nbsp;</p><ul><li>agriculture,&nbsp;</li><li>flood insurance,</li><li>cybersecurity,</li><li>surface transportation,&nbsp;</li><li>veterans benefits,&nbsp;</li><li>housing,</li><li>defense production, and</li><li>trade preferences for Haiti and certain countries in sub-Saharan Africa.&nbsp;</li></ul><p>The bill also includes provisions that&nbsp;</p><ul><li>temporarily prohibit the implementation of a regulation that revises guidance for federal financial assistance,</li><li>delay the implementation of certain changes to the statutory definition of hemp,</li><li>extend the freeze on cost-of-living adjustments for Members of Congress and limits on pay increases for the Vice President and certain senior political appointees, and</li><li>provide death gratuities to beneficiaries of two Members of Congress who died while in office.&nbsp;</li></ul>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr6500/BILLS-119hr6500eas.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr6500/BILLS-119hr6500eas.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr6500/BILLS-119hr6500eas.pdf",
+      "summary_crs": "<p><strong>Continuing Appropriations and Extensions Act, 2027</strong></p><p>This act provides continuing FY2027 appropriations for federal agencies through December 11, 2026, and extends various expiring programs and authorities.</p><p>DIVISION A--CONTINUING APPROPRIATIONS ACT, 2027</p><p><em>Continuing Appropriations Act, 2027</em></p><p>This division provides continuing FY2027 appropriations to federal agencies through the earlier of December 11, 2026, or the enactment of the applicable appropriations act. It is known as a continuing resolution (CR) and prevents a government shutdown that would otherwise occur if the FY2027 appropriations bills have not been enacted when FY2027 begins on October 1, 2026.</p><p>The CR funds most programs and activities at the FY2026 levels with several exceptions that provide funding flexibility or additional appropriations for various programs. For example, the CR includes exceptions for&nbsp;</p><ul><li>the Special Supplemental Nutrition Program for Women, Infants, and Children (WIC);</li><li>Small Business Administration loans;</li><li>the Disaster Relief Fund;</li><li>the Indian Health Service;</li><li>the Department of Justice; and</li><li>wildfire suppression activities.</li></ul><p>For more information on this division, see <a href=\"https://www.congress.gov/crs-product/R49353\">CRS Report R49353, Overview of Continuing Appropriations for FY2027 (Division A of P.L. 119-103)</a>.</p><p>DIVISION B--AUTHORIZING EXTENSIONS</p><p>This division extends various expiring programs and authorities, including certain programs related to agriculture and foreign trade.</p><p>(Sec. 2001) This section reauthorizes the United States Grain Standards Act, which authorizes the Department of Agriculture to establish official marketing standards for grains.</p><p>Specifically, this section extends the authority of the Federal Grain Inspection Service (FGIS) through December 11, 2026, to (1) collect fees for required federal supervision of official inspections and weighing services provided by designated official agencies and state agencies, and (2) maintain the Grain Inspection Advisory Committee.</p><p>The section also extends through FY2027 (1) the cap on FGIS's administrative and supervisory costs, and (2) authorization for FGIS grain standards development and maintenance activities.</p><p>(Sec. 2002) This section extends the authority for the Forest Service to use the Agriculture Conservation Experienced Services (ACES) program through December 11, 2026. The program allows the Forest Service to acquire skilled personnel (age 55 and older) from nonprofit partners to provide temporary technical and administrative services for conservation-related programs that are executed on or directly impacting National Forest System land.</p><p>(Sec. 2003) This section extends through December 11, 2026, the authority for entering into agreements to finance sales or provide other assistance through the Food for Peace program.</p><p>(Sec. 2004) This section extends certain authorities under the Defense Production Act of 1950 through December 11, 2026.</p><p>(Sec. 2005) This section extends through December 11, 2026, the authority of the Environmental Protection Agency to collect user fees under the Toxic Substances Control Act.</p><p>(Sec. 2006) This section increases Medicaid funding for FY2026 for the Northern Mariana Islands.</p><p>(Sec. 2007) This section reduces funding for the Medicare Improvement Fund beginning in FY2027.</p><p>(Sec. 2008) This section extends through December 31, 2028, trade preferences that provide duty-free access to the U.S. market for most exports from eligible countries in sub-Saharan Africa (SSA).</p><p>Specifically, the section extends through 2028 the duty-free treatment of the products of beneficiary SSA countries under the Trade Act of 1974 (specifically, the Generalized System of Preferences) and the African Growth and Opportunity Act (AGOA). (Currently, there are 32 countries eligible for AGOA.)</p><p>Additionally, the extended period applies to the following provisions of AGOA: (1) the duty-free treatment of certain apparel articles from beneficiary SSA countries; and (2) the third-country fabric provision, which allows limited amounts of apparel articles from lesser developed beneficiary SSA countries to qualify for duty-free treatment, even if the yarns and fabrics used in their production are imported from non-AGOA countries (e.g., apparel assembled in Kenya with Chinese fabrics).</p><p>(Sec. 2009) This section extends through December 31, 2028, the special duty-free rules for various apparel products imported from Haiti.</p><p>(Sec. 2010) This section extends various customs user fees through March 31, 2032,&nbsp;including certain rates for merchandise processing fees.</p><p>(Sec. 2011) This section extends the authorization for the Cybersecurity Information Sharing Act through December 11, 2026. The act authorizes sharing of appropriate cybersecurity information between federal and nonfederal entities, defensive cybersecurity activities, liability protections, and oversight.</p><p>(Sec. 2012) This section extends the authority for the Department of Homeland Security's (DHS’s) National Cybersecurity Protection System and related reporting requirements through December 11, 2026. The system authorizes multiple activities by DHS to help defend federal agencies from cyberthreats.</p><p>(Sec. 2013) This section extends the authority for&nbsp;DHS's Joint Task Forces&nbsp;through December 11, 2026.</p><p>(Sec. 2014) This section extends&nbsp;through December 11, 2026,&nbsp;the Technology Modernization Fund and the fund's board. The fund is administered by the General Services Administration to improve information technology and enhance cybersecurity across the federal government.</p><p>(Sec. 2015) This section extends the authority of the U.S. Patent and Trademark Office to set fees&nbsp;through December 11, 2026.</p><p>(Sec. 2016) This section extends the U.S. Commission on International Religious Freedom through December 11, 2026. The commission is an independent federal commission tasked with monitoring international religious freedom conditions, reviewing U.S. government policy, and making policy recommendations.</p><p>(Sec. 2017) This section extends through December 11, 2026, the authority of the Department of State to collect passport fees under the Western Hemisphere Travel Initiative.</p><p>(Sec. 2018) This section exempts the budgetary effects of Divisions B-D of this act from (1) the Statutory Pay-As-You-Go (PAYGO) Act of 2010, (2) the Senate PAYGO rule, and (3) certain budget scorekeeping rules.</p><p>(Sec. 2019) This section delays the effective date of portions of the new statutory definition of <em>hemp</em> until December 11, 2026. For more information, see&nbsp;CRS In Focus <a href=\"https://www.congress.gov/crs-product/IF13136\">IF13136, Changes to the Statutory Definition of Hemp and Implications for Agricultural Policy</a>.</p><p>DIVISION C--SURFACE TRANSPORTATION EXTENSION ACT OF 2026</p><p><em>Surface Transportation Extension Act of 2026</em></p><p>This division extends various expiring surface transportation programs and authorities.</p><p>TITLE I--SURFACE TRANSPORTATION PROGRAMS</p><p>(Sec. 3101) This section extends federal highway, transit, and road safety programs of the Department of Transportation through December 11, 2026.</p><p>(Sec. 3102) This section reauthorizes until December 11, 2026, the Appalachian Regional Commission, including the high-speed broadband deployment and energy hub initiatives.</p><p>(Sec. 3103) This section reauthorizes until December 11, 2026, the Sport Fish Restoration Program.</p><p>(Sec. 3104) This section extends until September 30, 2027, the deadline to use previously authorized federal highway funds for certain Federal Highway Administration programs, including the</p><ul><li>Bridge Investment Program;</li><li>Congestion Relief Program;</li><li>Charging and Fueling Infrastructure Discretionary Grant Program;</li><li>Rural Surface Transportation Grant Program;</li><li>Promoting Resilient Operations for Transformative, Efficient, and Cost-saving Transportation Program (PROTECT) grants;</li><li>Reduction of Truck Emissions at Port Facilities Program; and</li><li>Nationally Significant Federal Lands and Tribal Projects program.</li></ul><p>TITLE II--TRUST FUNDS</p><p>(Sec. 3201) This section extends expenditure authority through December 11, 2026, for the Highway Trust Fund, Sport Fish Restoration and Boating Trust Fund, and Leaking Underground Storage Tank Trust Fund.</p><p>DIVISION D--DEPARTMENT OF VETERANS AFFAIRS EXTENDERS</p><p>This division extends various expiring Department of Veterans Affairs (VA) programs and authorities.</p><p>TITLE I--HEALTH CARE MATTERS</p><p>(Sec. 4101) This section extends through December 10, 2026, the authority for the VA to collect copayments from certain veterans for hospital care or nursing home care.</p><p>(Sec. 4102) This section extends through December 11, 2026, the requirement that the VA provide nursing home care to certain veterans with a service-connected disability.</p><p>(Sec. 4103) This section extends through December 11, 2026, the authorization for the expansion of the VA’s Rural Access Network for Growth Enhancement (RANGE) program, which serves veterans in rural areas who are experiencing mental illness.</p><p>(Sec. 4104) This section extends through December 11, 2026, the VA’s authority to provide grants under the Staff Sergeant Parker Gordon Fox Suicide Prevention Grant Program, for purposes of providing community-based suicide prevention services and mental health care.</p><p>(Sec. 4105) This section extends through December 11, 2026, the VA grant program to provide mental health support for family caregivers of veterans who participate in the VA’s Program of Comprehensive Assistance for Family Caregivers.</p><p>(Sec. 4106) This section extends through December 11, 2026, the requirement that the VA pay or reimburse certain veterans with a service-connected disability for ambulance transport from a rural area.</p><p>(Sec. 4107) This section extends through December 11, 2026, the joint incentive program between the VA and Department of Defense to share health care resources.</p><p>TITLE II--BENEFITS</p><p>(Sec. 4201) This section extends through December 11, 2026, the authority of the VA to maintain a regional office in the Philippines.</p><p>(Sec. 4202) This section extends through December 11, 2026, the period of relief for those affected by a closure or disapproval of a course of education in regard to the individual’s educational assistance entitlement. Generally, when an individual transfers fewer than 12 credits from a program of education that is closed or disapproved, the individual is deemed to have not received those credits, and no charge from the individual's entitlement to education assistance may be made for that period of enrollment. This section extends the relief through December 11, 2026.</p><p>TITLE III--HOUSING</p><p>(Sec. 4301) This section extends through December 11, 2026, a Department of Labor grant program for programs and facilities that provide dedicated services for homeless women veterans and homeless veterans with children.</p><p>(Sec. 4302) This section extends through December 11, 2026, the VA's Health Care for Homeless Veterans program, which provides outreach, treatment, rehabilitation, and therapeutic transitional housing assistance for seriously mentally ill and homeless veterans. Additionally, the section extends the authority of the VA to operate a program to expand and improve the provision of benefits and services to homeless veterans.</p><p>(Sec. 4303) This section extends through December 11, 2026, the VA’s authority to provide housing assistance to homeless veterans and their families.</p><p>(Sec. 4304) This section extends through December 11, 2026, the Supportive Services for Veterans Families program, which provides financial assistance for supportive services for very low-income veteran families in permanent housing or transitioning from homelessness.</p><p>(Sec. 4305) This section extends through December 11, 2026, the VA program to provide grants to encourage the development of programs for homeless veterans with special needs.</p><p>(Sec. 4306) This section extends through December 11, 2026, the authority and activities of the VA’s Advisory Committee on Homeless Veterans.</p><p>(Sec. 4307) This section extends through December 11, 2026, the VA’s authority to provide assistance for housing adaptations for disabled veterans who are residing temporarily in housing owned by a family member.</p><p>(Sec. 4308) This section extends through December 11, 2026, the Specially Adapted&nbsp;Housing&nbsp;Assistive Technology (SAHAT) Grant Program, through which the VA provides grants to develop assistive technologies for use in specially adapted housing.</p><p>TITLE IV--OTHER MATTERS</p><p>(Sec. 4401) This section extends through December 11, 2026, the&nbsp;VA's authority to transport individuals in connection with vocational rehabilitation or required counseling or for the purpose of examination, treatment, or care.</p><p>(Sec. 4402) This section extends through December 11, 2026, the authority of the VA Office of Inspector General to subpoena the attendance and testimony of witnesses as necessary to carry out the duties of the office.</p><p>(Sec. 4403) This section extends through December 11, 2026, the authority of the VA to provide assistance for adaptive sports opportunities for disabled veterans and disabled members of the Armed Forces.</p><p>(Sec. 4404) This section extends through December 11, 2026, the authority and activities of the VA’s Advisory Committee on Minority Veterans.</p><p>(Sec. 4405) This section extends a requirement for the VA to provide a burial and funeral allowance for a veteran who dies in a home or other setting at which the veteran was receiving VA hospice care (if such care was directly preceded by VA hospital or nursing home care). The section applies the requirement to deaths&nbsp;occurring before December 12, 2026.</p><p>(Sec. 4406) This section extends through December 11, 2026, certain rates and procedures under the VA Vendee Loan Program, under which qualified borrowers may purchase VA real estate owned properties with little to no money down. Specifically, not more than 85% of purchases made during any fiscal year under the Vendee Loan Program&nbsp;shall be property marketed with VA financing.</p><p>(Sec. 4407) This section extends through December 11, 2026, the authority of the VA to transfer real property to other agencies, states, or public or private entities.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ103/PLAW-119publ103.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ103/PLAW-119publ103_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ103/PLAW-119publ103.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/6500",
       "votes": [
         {
