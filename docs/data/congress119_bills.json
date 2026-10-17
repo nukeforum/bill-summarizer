@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T10:13:09Z",
+  "generated_at": "2026-10-17T11:03:16Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
@@ -21,6 +21,7 @@
         "text": "Became Public Law No: 119-122."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Dams and canals",
@@ -53,7 +54,8 @@
         "date": "2026-10-15",
         "text": "Became Public Law No: 119-124."
       },
-      "outcome": "enacted",
+      "outcome": "passed_house",
+      "status": null,
       "policy_area": "Labor and Employment",
       "subjects": [
         "Employee benefits and pensions",
@@ -117,6 +119,7 @@
         "text": "Became Public Law No: 119-123."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional oversight",
@@ -150,6 +153,7 @@
         "text": "Became Public Law No: 119-121."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Arts, Culture, Religion",
       "subjects": [
         "Congressional oversight",
@@ -183,6 +187,7 @@
         "text": "Became Public Law No: 119-119."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Social Welfare",
       "subjects": [
         "Computer security and identity theft",
@@ -214,6 +219,7 @@
         "text": "Became Public Law No: 119-120."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Government Operations and Politics",
       "subjects": [
         "Congressional oversight",
@@ -346,6 +352,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5297-5298)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "California",
@@ -446,6 +453,7 @@
         "text": "Passed Senate with an amendment and an amendment to the Title by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Taxation",
       "subjects": [
         "Civil actions and liability",
@@ -810,6 +818,7 @@
         "text": "Became Public Law No: 119-118."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Health programs administration and funding",
@@ -1045,6 +1054,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5299)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Commemorative events and holidays",
@@ -1483,6 +1493,7 @@
         "text": "Motion to proceed to consideration of measure rejected in Senate by Yea-Nay Vote. 48 - 51. Record Vote Number: 251. (consideration: CR S5139-5140)"
       },
       "outcome": "failed",
+      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -1552,6 +1563,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5186)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Armed Forces and National Security",
       "subjects": [
         "Congressional tributes",
@@ -1585,6 +1597,7 @@
         "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 51. Record Vote Number: 252. (consideration: CR S5158-5159)"
       },
       "outcome": "failed",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": "<p>This resolution requests that the Department of State provide Congress with an unclassified statement regarding&nbsp;Israel's human rights practices.</p><p>The resolution specifies that the statement should include certain elements, including (1) all credible information concerning the alleged killing of nine specified U.S. citizens and any other U.S. citizens by the Israeli Defense Forces, Israeli security forces, or Israeli settlers in 2022 or later; (2) all credible information concerning the identities of potential suspects in the killings; and (3) details on any steps taken by Israeli authorities to investigate the killings and hold accountable those responsible.</p><p>The statement should also include other elements, such as assessments of U.S. citizens currently held in Israeli prisons and the human rights situation of Palestinian children in Israeli military detention in the West Bank.&nbsp;</p>",
@@ -2121,6 +2134,7 @@
         "text": "Became Public Law No: 119-112."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Alternative and renewable resources",
@@ -2185,6 +2199,7 @@
         "text": "Became Public Law No: 119-114."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Drug trafficking and controlled substances",
@@ -2252,6 +2267,7 @@
         "text": "Became Public Law No: 119-116."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Transportation and Public Works",
       "subjects": [
         "Data collection, sharing, protection",
@@ -2287,6 +2303,7 @@
         "text": "Became Public Law No: 119-117."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -2737,6 +2754,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4958)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Labor and Employment",
       "subjects": [
         "Adult education and literacy",
@@ -3179,6 +3197,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4762)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Congressional tributes",
@@ -3472,7 +3491,8 @@
         "date": "2026-09-02",
         "text": "Became Public Law No: 119-103."
       },
-      "outcome": "enacted",
+      "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Economics and Public Finance",
       "subjects": [
         "Abortion",
