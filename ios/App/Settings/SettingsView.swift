@@ -193,8 +193,8 @@ private struct SettingsRow: View {
   }
 }
 
-private extension AppearancePreference {
-  var displayName: String {
+extension AppearancePreference {
+  fileprivate var displayName: String {
     switch self {
     case .system: "System"
     case .light: "Light"

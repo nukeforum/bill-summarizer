@@ -123,20 +123,20 @@ private actor ClearRecorder {
 
 private struct SettingsFailure: Error {}
 
-private extension SavedRepresentativesClient {
-  static let sampleSelection = SavedRepresentativesSelection(
+extension SavedRepresentativesClient {
+  fileprivate static let sampleSelection = SavedRepresentativesSelection(
     stateCode: "AZ",
     district: 1,
     bioguideIDs: ["K000377", "G000574", "S001183"]
   )
 
-  static let saved = Self(
+  fileprivate static let saved = Self(
     load: { sampleSelection },
     save: { _ in },
     clear: {}
   )
 
-  static let empty = Self(
+  fileprivate static let empty = Self(
     load: { nil },
     save: { _ in },
     clear: {}

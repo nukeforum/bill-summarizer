@@ -18,10 +18,10 @@ struct RootView: View {
         representativesModel: representativesModel,
         onOpenCalendar: { selection = .calendar }
       )
-        .tabItem {
-          Label("Bills", systemImage: "doc.text")
-        }
-        .tag(RootTab.bills)
+      .tabItem {
+        Label("Bills", systemImage: "doc.text")
+      }
+      .tag(RootTab.bills)
 
       RepresentativesView(model: representativesModel)
         .tabItem {
@@ -49,8 +49,8 @@ private enum RootTab: Hashable {
   case calendar
 }
 
-private extension AppearancePreference {
-  var colorScheme: ColorScheme? {
+extension AppearancePreference {
+  fileprivate var colorScheme: ColorScheme? {
     switch self {
     case .system: nil
     case .light: .light

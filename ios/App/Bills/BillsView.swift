@@ -21,7 +21,7 @@ struct BillsView: View {
             Button("Settings", systemImage: "gearshape") {
               showsSettings = true
             }
-              .accessibilityIdentifier("settings-button")
+            .accessibilityIdentifier("settings-button")
           }
         }
         .navigationDestination(for: Bill.self) { bill in
