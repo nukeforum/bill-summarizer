@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T16:26:00Z",
+  "generated_at": "2026-10-17T15:20:19Z",
   "congress": 110,
   "votes_coverage": false,
   "bills": [
@@ -579,6 +579,38 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/110/plaws/publ450/PLAW-110publ450.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/5714",
+      "votes": []
+    },
+    {
+      "id": "hr6867-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "6867",
+      "title": "Unemployment Compensation Extension Act of 2008",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McDermott, Jim",
+        "party": "D",
+        "state": "WA"
+      },
+      "introduced_date": "2008-09-10",
+      "latest_action": {
+        "date": "2008-11-21",
+        "text": "Became Public Law No: 110-449."
+      },
+      "outcome": "enacted",
+      "policy_area": "Labor and Employment",
+      "subjects": [
+        "Federal-state relations",
+        "Government Operations and Politics",
+        "Intergovernmental fiscal relations",
+        "Unemployment insurance"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the House on October 3, 2008. The summary of that version is repeated here.)</b></p> <p>Unemployment Compensation Extension Act of 2008 - Amends the Supplemental Appropriations Act, 2008 to revise the formula for Tier-1 amounts a state credits to an applicant's emergency unemployment compensation account (EUCA) for a benefit year. Increases the figures in the formula (the lesser of which shall be the amount credited): (1) from 50% to 80% of the total amount of regular compensation (including dependents' allowances) payable to the individual during the benefit year; and (2) from 13 to 20 times the individual's average weekly benefit amount for the benefit year.</p> <p>Provides an additional Tier-2 period for deposits to an individual's EUCA, using the current formula, if, at the time that the amount established under this Act is exhausted, or at any time thereafter, the individual's state is in an extended benefit period.</p> <p>Prescribes a formula for determining if a state is in an extended benefit period.</p> <p>Allows the Tier-2 period augmentation to be applied to the individual's EUCA only once.</p> <p>Prohibits a Tier-2 augmentation to an individual's EUCA under this Act after March 31, 2009, if the EUCA is exhausted after such date.</p> <p>Extends the period of emergency unemployment compensation through August 27, 2009.</p> <p>Exempts weeks of unemployment between enactment of this Act and December 8, 2009, from the prohibition in the Federal-State Extended Unemployment Compensation Act of 1970 against federal matching payments to a state for the first week in an individual's eligibility period for which extended compensation or sharable regular compensation is paid if the state law of such state provides for payment (at any time or under any circumstances) of regular compensation to an individual for his first week of otherwise compensable unemployment. (Thus allows temporary federal matching for the first week of extended benefits for states with no waiting period.)</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ449/PLAW-110publ449.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ449/PLAW-110publ449.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/6867",
       "votes": []
     },
     {
@@ -1182,6 +1214,72 @@
       "votes": []
     },
     {
+      "id": "hr6531-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "6531",
+      "title": "Vessel Hull Design Protection Amendments of 2008",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Berman, Howard L.",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2008-07-17",
+      "latest_action": {
+        "date": "2008-10-16",
+        "text": "Became Public Law No: 110-434."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commerce",
+      "subjects": [
+        "Intellectual property",
+        "Marine and inland water transportation",
+        "Military procurement, research, weapons development"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Vessel Hull Design Protection Amendments of 2008 - Amends federal copyright law to specify that the design of a vessel's hull, deck, or combination of a hull and deck, including a plug or mold are protected (currently, only the design of the vessel hull is protected, including a plug or mold). </p> <p>Requires that Department of Defense (DOD) rights in a registered design, including the right to build to such a design, be determined solely by provisions of federal Armed Forces law relating to rights in technical data or by the instrument under which the design was developed for the U.S. government.</p> <p>Redefines &quot;useful article&quot; and &quot;hull.&quot; Defines &quot;deck&quot; as the horizontal surface of the vessel that covers the hull, including exterior cabin and cockpit surfaces, and exclusive of masts, sails, yards, rigging, hardware, fixtures, and other attachments.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ434/PLAW-110publ434.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ434/PLAW-110publ434.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/6531",
+      "votes": []
+    },
+    {
+      "id": "hr7084-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "7084",
+      "title": "Webcaster Settlement Act of 2008",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Inslee, Jay",
+        "party": "D",
+        "state": "WA"
+      },
+      "introduced_date": "2008-09-25",
+      "latest_action": {
+        "date": "2008-10-16",
+        "text": "Became Public Law No: 110-435."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commerce",
+      "subjects": [
+        "Arts, Culture, Religion",
+        "Copyright",
+        "Intellectual property",
+        "Internet",
+        "Science, Technology, Communications",
+        "Sound recording and reproducing",
+        "Web sites"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the Senate on September 30, 2008. The summary of that version is repeated here.)</b></p> <p>Webcaster Settlement Act of 2008 - Allows a receiving agent (designated by the Librarian of Congress to collect royalties that ultimately are disbursed to sound recording copyright owners and performers) to enter into agreements with webcasters that establish royalty terms for the performance of sound recordings over the Internet. Provides that such agreements, which may be effective for a period of up to 11 years following January 1, 2005, are to be binding on all copyright owners of sound recordings and other persons entitled to payment, in lieu of any determination of compulsory license rates by the Copyright Royalty Judges. <br> <br> Terminates the authority to negotiate settlement agreements under this Act on February 15, 2009. <br> <br> Declares that nothing in this Act (or any agreement entered into under this Act) shall be taken into account by the U.S. Court of Appeals for the District of Columbia Circuit in its review of the May 1, 2007 determination of royalty rates by the Copyright Royalty Judges.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ435/PLAW-110publ435.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ435/PLAW-110publ435.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/7084",
+      "votes": []
+    },
+    {
       "id": "hr7222-110",
       "congress": 110,
       "type": "hr",
@@ -1412,6 +1510,43 @@
       "votes": []
     },
     {
+      "id": "hr6469-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "6469",
+      "title": "Stephanie Tubbs Jones Organ Transplant Authorization Act of 2008",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. DeGette, Diana",
+        "party": "D",
+        "state": "CO"
+      },
+      "introduced_date": "2008-07-10",
+      "latest_action": {
+        "date": "2008-10-15",
+        "text": "Became Public Law No: 110-426."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Data banks",
+        "Donation of organs, tissues, etc.",
+        "Economics and Public Finance",
+        "Federal aid to health facilities",
+        "Health information systems",
+        "Nonprofit organizations",
+        "Science, Technology, Communications",
+        "Social Welfare",
+        "Transplantation of organs, tissues, etc."
+      ],
+      "summary_crs": " <p>Stephanie Tubbs Jones Organ Transplant Authorization Act of 2008 - Amends the Public Health Service Act to increase the maximum amount of funds provided for the establishment and operation of the Organ Procurement and Transplantation Network for any fiscal year.</p> <p>Directs the Secretary of Health and Human Services to request that the Executive Director of the Network report to Congress on the effects of the heart allocation policy change of 2006. Conditions increased funding on submission of such a report.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ426/PLAW-110publ426.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ426/PLAW-110publ426.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/6469",
+      "votes": []
+    },
+    {
       "id": "hr6524-110",
       "congress": 110,
       "type": "hr",
@@ -1539,6 +1674,47 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/110/plaws/publ429/PLAW-110publ429.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/7177",
+      "votes": []
+    },
+    {
+      "id": "s3641-110",
+      "congress": 110,
+      "type": "s",
+      "number": "3641",
+      "title": "A bill to authorize funding for the National Crime Victim Law Institute to provide support for victims of crime under Crime Victims Legal Assistance Programs as a part of the Victims of Crime Act of 1984.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kyl, Jon",
+        "party": "R",
+        "state": "AZ"
+      },
+      "introduced_date": "2008-09-27",
+      "latest_action": {
+        "date": "2008-10-15",
+        "text": "Became Public Law No: 110-431."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Authorization",
+        "Compensation for victims of crime",
+        "Department of Justice",
+        "Economics and Public Finance",
+        "Federal aid to Indians",
+        "Federal aid to law enforcement",
+        "Government Operations and Politics",
+        "Indian law enforcement",
+        "Law",
+        "Legal services",
+        "Minorities",
+        "Victims of crimes",
+        "Witnesses"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Amends the Justice for All Act of 2004 to extend through FY2013 funding for the grant program to provide legal assistance to victims of crime.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ431/PLAW-110publ431.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ431/PLAW-110publ431.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/3641",
       "votes": []
     },
     {
@@ -2185,6 +2361,53 @@
       "votes": []
     },
     {
+      "id": "s2162-110",
+      "congress": 110,
+      "type": "s",
+      "number": "2162",
+      "title": "Veterans' Mental Health and Other Care Improvements Act of 2008",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Akaka, Daniel K.",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2007-10-15",
+      "latest_action": {
+        "date": "2008-10-10",
+        "text": "Became Public Law No: 110-387."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Access to health care",
+        "Ambulatory care",
+        "Clinics",
+        "Commemorations",
+        "Community health services",
+        "Congress",
+        "Congressional reporting requirements",
+        "Congressional tributes",
+        "Department of Veterans Affairs",
+        "Drug abuse",
+        "Drug abuse treatment",
+        "Drug therapy",
+        "Education",
+        "Emergency Management",
+        "Emergency medicine",
+        "Employee selection",
+        "Epilepsy",
+        "Families",
+        "Family services"
+      ],
+      "summary_crs": " <p>Veterans' Mental Health and Other Care Improvements Act of 2008 -<b> Title I: Substance Use Disorders and Mental Health Care</b> - (Sec. 101) Enacts this title in tribute to Justin Bailey, who, after returning to the United States from service in Operation Iraqi Freedom, died in a Department of Veterans Affairs (VA) domiciliary facility while receiving care for post-traumatic stress disorder (PTSD) and a substance use disorder.</p> <p>(Sec. 103) Directs the Secretary of Veterans Affairs to ensure the provision of the following services and treatment to each veteran enrolled in the VA health care system and in need of services and treatment for a substance use disorder: (1) screening for substance use disorder in all settings, including primary care; (2) short-term motivational counseling; (3) marital and family counseling; (4) intensive outpatient or residential care; (5) relapse prevention; (6) ongoing aftercare and outpatient counseling; (7) opiate substitution therapy; (8) pharmacological treatments to reduce cravings for drugs and alcohol; (9) detoxification and stabilization; (10) coordination with groups providing peer-to-peer counseling; and (11) such other services as considered appropriate by the Secretary. Requires the Secretary to ensure that amounts available for such care are allocated to ensure a full continuum of such care, treatment, or services to all veterans without regard to the location of their residences.</p> <p>(Sec. 104) Requires the Secretary to ensure that treatment for a substance use disorder and a comorbid mental health disorder is provided concurrently through a health professional with training and expertise in the treatment of both disorders, by separate services for each disorder, or by a team of experienced clinicians.</p> <p>(Sec. 105) Directs the Secretary to conduct a two-year pilot program on the feasibility and advisability of providing veterans who seek treatment for substance use disorders access to a computer-based self-assessment, education, and treatment program through a secure Internet website operated by the Secretary. Makes eligible for such program volunteer veterans who have served in Operations Enduring Freedom or Iraqi Freedom. Requires a program report from the Secretary to Congress. Authorizes appropriations.</p> <p>(Sec. 106) Requires the Secretary to conduct a: (1) review of all Veterans Health Administration (VHA) residential mental health care facilities; and (2) follow-up review, within two years after the first review, to evaluate any improvements made or problems remaining with respect to such facilities. Requires a report from the Secretary to the veterans' committees after the initial review.</p> <p>(Sec. 107) Directs the Secretary to conduct a three-year pilot program on the provision of the following services to veterans of Operations Iraqi Freedom and Enduring Freedom, particularly to those who served as a member of the National Guard or Reserve: (1) peer outreach; (2) peer support provided by licensed providers or veterans with personal experience with mental illness; (3) readjustment counseling; and (4) other mental health services. Requires: (1) the Secretary to conduct training programs for veterans and clinicians providing such services; (2) annual reports to the Secretary from entities participating in the program; and (3) the Secretary to design and implement a strategy for evaluating the program. Authorizes appropriations.</p> <p><b>Title II: Mental Health Research</b> - (Sec. 201) Directs the Secretary to carry out a program of research into comorbid PTSD and substance use disorder through the National Center for Posttraumatic Stress Disorder. Authorizes appropriations.</p> <p>(Sec. 202) Amends the Veterans' Health Care Act of 1984 to extend through 2012 (currently, 2008) the reporting requirement for the Special Committee on Post-Traumatic Stress Disorder.</p> <p><b>Title III: Assistance For Families of Veterans</b> - (Sec. 301) Includes marriage and family counseling within authorized VA care for veterans.</p> <p>(Sec. 302) Directs the Secretary to carry out, through a non-VA entity, a three-year pilot program (with authorized one-year extensions) to assess the feasibility and advisability of providing readjustment and transition assistance to veterans and their families in cooperation with ten VA Vet Centers. Requires a report from the Secretary to the veterans' committees at the conclusion of the pilot program. Authorizes appropriations.</p> <p><b>Title IV: Health Care Matters </b>- (Sec. 401) Repeals a requirement that the Secretary adjust the amounts deducted from payments or allowances made by the VA for beneficiary travel expenses in connection with health care whenever the payment or allowance is adjusted. Requires the Secretary, in determining the amount of travel reimbursement, to use the mileage reimbursement rate for the use of privately owned vehicles by government employees on official business. Authorizes the Secretary to use a rate in excess of such rate, subject to the availability of appropriations. Requires a report from the Secretary to the veterans' committees on additional costs incurred by the VA due to implementation of this section.</p> <p>(Sec. 402) Requires (under current law, authorizes) the Secretary to reimburse a veteran for the costs of emergency treatment received in a non-VA facility prior to transfer to a VA facility.</p> <p>(Sec. 403) Directs the Secretary to carry out a three-year pilot program to provide, through qualifying non-VA health care providers, VA-authorized hospital care or medical, rehabilitative, or preventive health services to veterans who reside in highly rural areas. Requires annual reports during the program period from the Secretary to the veterans' committees assessing the program.</p> <p>(Sec. 404) Directs the Secretary to designate at least four and up to six VA health-care facilities as locations for epilepsy centers of excellence. Requires the: (1) VA's Under Secretary for Health to establish a peer review panel to assess the scientific and clinical merit of proposals submitted for designation as such a center; and (2) Secretary to follow the panel's determinations in making designations. Directs the Secretary to designate an individual in the VHA as a national coordinator for VHA epilepsy programs. Authorizes appropriations.</p> <p>(Sec. 405) Establishes as qualifications for appointment as a peer specialist within the VHA that the person: (1) be a veteran who has recovered or is recovering from a mental health condition; and (2) is certified as having met the criteria for such position. Authorizes the Secretary to enter into contracts with nonprofit entities to provide peer specialist training and certification for veterans.</p> <p>(Sec. 406) Directs the Secretary to establish up to seven patient accounting centers for conducting industry-modeled regionalized VA billing and collection activities.</p> <p>(Sec. 407) Amends the Veterans' Benefits and Services Act of 1988 to repeal a limitation on VA authority to conduct HIV testing in connection with the care of certain patients.</p> <p>(Sec. 408) Requires the Secretary to provide comprehensive health care coverage through the VA for a child of a Vietnam veteran who is suffering from spina bifida. (Current law requires the Secretary to provide such child such health care as the Secretary determines is needed by the child for the spina bifida or any disability associated with such condition.)</p> <p>(Sec. 409) Prohibits the Secretary from collecting a copayment from a veteran being furnished inpatient or outpatient hospice care by the VA.</p> <p><b>Title V: Pain Care </b>- (Sec. 501) Directs the Secretary to: (1) develop and implement a comprehensive policy on the management of pain experienced by veterans enrolled for VA health care services; (2) periodically update the policy; and (3) report annually through FY2018 to the veterans' committees on such policy.</p> <p></p> <p><b>Title VI: Homeless Veterans Matters </b>- (Sec. 601) Increases from $130 million to $150 million the annual authorization of appropriations for VA comprehensive service programs for homeless veterans.</p> <p>(Sec. 602) Revises provisions establishing a demonstration program of referral and counseling services for at-risk veterans transitioning from institutional living to: (1) remove the &quot;demonstration&quot; designation; (2) require the program to be carried out in at least 12 (currently, six) locations; and (3) extend the program through FY2012.</p> <p>(Sec. 603) Requires the Secretary to ensure that VA domiciliary care programs are adequate, with respect to capacity and safety, to meet the needs of women veterans.</p> <p>(Sec. 604) Directs the Secretary to provide financial assistance to eligible entities (private nonprofit organizations or consumer cooperatives) to provide and coordinate the provision of supportive services for very low-income veteran families occupying permanent housing. Requires: (1) an assistance preference with respect to families transitioning from homelessness to permanent housing; (2) equitable geographic distribution of such assistance; and (3) the Secretary to provide training and technical assistance to participating entities regarding the planning, development, and provision of such services. Includes within authorized services outreach, case management, and assistance in obtaining VA and other federal, state, or local benefits. Provides funding.</p> <p>Directs the Secretary to: (1) conduct a two-year study of the effectiveness of the assistance program in meeting the needs of very low-income veteran families; and (2) report study results to the veterans' committees.</p> <p><b>Title VII: Authorization of Medical Facility Projects and Major Medical Facility Leases </b>- (Sec. 701) Authorizes the Secretary to carry out major medical facility projects (projects) in FY2009 in: (1) Palo Alto, California; (2) San Antonio, Texas; and (3) San Juan, Puerto Rico.</p> <p>(Sec. 702) Amends the Veterans Benefits, Health Care, and Information Technology Act of 2006 to: (1) increase amounts authorized for projects at VA medical centers in New Orleans, Louisiana, and Denver, Colorado; and (2) repeal the authority for a project at the VA medical center in Gulfport, Mississippi.</p> <p>Increases amounts authorized for projects at the following locations in connection with the Capital Asset Realignment Initiative: (1) Gainesville, Florida; (2) Las Vegas, Nevada; (3) Lee County, Florida; (4) Orlando, Florida; and (5) Pittsburgh, Pennsylvania.</p> <p>(Sec. 703) Authorizes the Secretary to carry out specified major medical facility leases (leases) in Arizona, California, Colorado, Florida, Georgia, Illinois, Ohio, Oregon, Puerto Rico, South Carolina, and Wisconsin.</p> <p>(Sec. 704) Authorizes appropriations for projects and leases authorized under this title.</p> <p>(Sec. 705) Increases from $600,000 to $1 million the threshold before a VA major medical facility lease must receive congressional approval.</p> <p>(Sec. 706) Amends the Consolidated Appropriations Act, 2008 to authorize the city of Aurora, Colorado, to convey by donation to the United States nonfederal lands consisting of parcel I of the former United States Army Garrison Fitzsimons, Colorado, and the parcel of land described in a related quitclaim deed, for construction of a veterans' medical facility.</p> <p>(Sec. 707) Requires a report from the Secretary to the veterans' committees on the progress of the VA's Director of Construction and Facilities Management in carrying out required duties.</p> <p>(Sec. 708) Directs the Secretary to report annually to the veterans committees detailing information on VA community-based outpatient clinics and other outpatient clinics.</p> <p>(Sec. 709) Designates the James A. Haley Department of Veterans Affairs Medical Center's spinal cord injury center in Tampa, Florida, as the &quot;Michael Bilirakis Department of Veterans Affairs Spinal Cord Injury Center.&quot;</p> <p><b>Title VIII: Extension of Certain Authorities </b>- (Sec. 801) Makes permanent the temporary authority to consider noninstitutional extended care services as covered VA medical services.</p> <p>(Sec. 802) Extends through FY2013 VA authority to conduct audits of payments made for non-VA care and services furnished to veterans through contracts and fee-based arrangements.</p> <p>(Sec. 803) Makes permanent (under current law, expires at the end of 2008) the authority to provide hospital care, medical services, and nursing home care to certain veterans who participated in Department of Defense (DOD) chemical and biological testing.</p> <p>(Sec. 804) Extends through FY2010 VA authority to collect: (1) specified copayments for each day of hospital or nursing home care provided to certain veterans; and (2) from third-party insurers the cost of certain care and services provided by the VA to veterans with non-service-connected disabilities.</p> <p>(Sec. 805) Extends through 2013 VA authority to provide nursing home care to veterans with service-connected disabilities rated at 70% or higher, and to veterans in need of nursing home care for their service-connected disabilities.</p> <p>(Sec. 806) Extends permanently (under current law, terminates at the end of 2008) VA authority to establish research corporations.</p> <p>(Sec. 807) Extends through 2012 the annual report requirement of the Committee on Care of Severely Chronically Mentally Ill Veterans.</p> <p>(Sec. 808) Makes permanent (under current law, terminates in 2008) a required biannual report from the Advisory Committee on Women Veterans.</p> <p>(Sec. 809) Amends the Veterans Benefits, Health Care, and Information Technology Act of 2006 to extend through FY2009 a pilot program on VA expansion and improvement of caregiver assistance services.</p> <p><b>Title IX: Other Matters </b>- (Sec. 901) Makes technical amendments.</p> <p><br> </p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ387/PLAW-110publ387.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ387/PLAW-110publ387.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/2162",
+      "votes": []
+    },
+    {
       "id": "s2816-110",
       "congress": 110,
       "type": "s",
@@ -2363,6 +2586,48 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/110/plaws/publ370/PLAW-110publ370.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-joint-resolution/62",
+      "votes": []
+    },
+    {
+      "id": "hr1157-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "1157",
+      "title": "Breast Cancer and Environmental Research Act of 2008",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Lowey, Nita M.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2007-02-16",
+      "latest_action": {
+        "date": "2008-10-08",
+        "text": "Became Public Law No: 110-354."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Breast cancer",
+        "Economics and Public Finance",
+        "Environmental Protection",
+        "Environmental health",
+        "Environmental research",
+        "Federal advisory bodies",
+        "Federal aid to health facilities",
+        "Federal aid to research",
+        "Government Operations and Politics",
+        "Medical research",
+        "Research centers",
+        "Science, Technology, Communications",
+        "Women",
+        "Women's health"
+      ],
+      "summary_crs": " <p>Breast Cancer and Environmental Research Act of 2008 - Amends the Public Health Service Act to require the Secretary of Health and Human Services to establish the Interagency Breast Cancer and Environmental Research Coordinating Committee to: (1) share and coordinate information on existing breast cancer research activities and make recommendations for improvement of research programs; (2) develop a comprehensive strategy and advise the National Institutes of Health (NIH) and other federal agencies in the solicitation of proposals for collaborative, multidisciplinary research, including proposals to evaluate environmental and genomic factors that may be related to the etiology of breast cancer; (3) develop a summary of advances in federal breast cancer research relevant to the diagnosis, prevention, and treatment of cancer and other diseases and disorders; and (4) make recommendations to the Secretary regarding changes to research activities, avoiding unnecessary duplication of effort among federal agencies, public participation in decisions relating to breast cancer research, how best to disseminate information on breast cancer research progress, and how to expand partnerships between public and private entities to expand collaborative, crosscutting research. Authorizes appropriations for FY2009-FY2012.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ354/PLAW-110publ354.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ354/PLAW-110publ354.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/1157",
       "votes": []
     },
     {
@@ -2687,6 +2952,53 @@
       "votes": []
     },
     {
+      "id": "hr7081-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "7081",
+      "title": "United States-India Nuclear Cooperation Approval and Nonproliferation Enhancement Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Berman, Howard L.",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2008-09-25",
+      "latest_action": {
+        "date": "2008-10-08",
+        "text": "Became Public Law No: 110-369."
+      },
+      "outcome": "enacted",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Congress",
+        "Congress and foreign policy",
+        "Congressional oversight",
+        "Congressional reporting requirements",
+        "Energy",
+        "Foreign Trade and International Finance",
+        "Government Operations and Politics",
+        "India",
+        "International control of nuclear power",
+        "Law",
+        "Legislative resolutions",
+        "Licenses",
+        "Negotiations",
+        "Nuclear exports",
+        "Nuclear fuels",
+        "Nuclear nonproliferation",
+        "Nuclear power plants",
+        "President and foreign policy"
+      ],
+      "summary_crs": " <p>United States-India Nuclear Cooperation Approval and Nonproliferation Enhancement Act - (Sec. 2) Defines specified terms.</p> <p><b>Title I: </b> <b>Approval of United States-India Agreement for Cooperation on Peaceful Uses of Nuclear Energy</b> - (Sec. 101) Approves the United States-India Agreement for Cooperation on Peaceful Uses of Nuclear Energy (Agreement), subject to the provisions of the Atomic Energy Act of 1954, the Henry J. Hyde United States-India Peaceful Atomic Energy Cooperation Act of 2006, and other applicable U.S. law.</p> <p>(Sec. 102) Declares that it is the understanding of the United States that the provisions of the Agreement have the meanings conveyed in the authoritative representations provided by the President and his representatives to the Congress and its committees prior to September 20, 2008.</p> <p>Declares it to be congressional policy that: (1) in the event that nuclear transfers to India are suspended or terminated it is U.S. policy to prevent the transfer to India of nuclear equipment, materials, or technology from other participating governments in the Nuclear Suppliers Group (NSG) or from any other source; and (2) any nuclear power reactor fuel reserve provided to India for use in safeguarded civilian nuclear facilities should be commensurate with reasonable reactor operating requirements.</p> <p>States that before exchanging specified diplomatic notes the President shall certify to Congress that entry into force and implementation of the Agreement pursuant to its terms is consistent with the obligation of the United States under the Treaty on the Nonproliferation of Nuclear Weapons (Nuclear Nonproliferation Treaty) not to assist, encourage, or induce India to manufacture or otherwise acquire nuclear weapons or other nuclear explosive devices.</p> <p>(Sec. 103) Urges the government of India to sign and adhere to an Additional Protocol with the International Atomic Energy Agency (IAEA).</p> <p>(Sec. 104) States that licenses may be issued by the Nuclear Regulatory Commission (NRC) for transfers pursuant to the Agreement only after the President certifies to Congress that: (1) the Agreement Between the Government of India and the International Atomic Energy Agency for the Application of Safeguards to Civilian Nuclear Facilities has entered into force; and (2) the government of India has filed a declaration of facilities that is not materially inconsistent with the facilities and schedule of the separation plan presented in the national parliament of India.</p> <p>(Sec. 105) Amends the Henry J. Hyde United States-India Peaceful Atomic Energy Cooperation Act of 2006 to revise related congressional reporting requirements.</p> <p><b>Title II: Strengthening United States Nonproliferation</b> <b>Law Relating to Peaceful Nuclear Cooperation</b> - (Sec. 201) States that no subsequent arrangement concerning reprocessing arrangements and procedures shall take effect until: (1) the President reports to the House Committee on Foreign Affairs and the Senate Committee on Foreign Relations (Committees) respecting the reasons for such arrangement and a certification that third-party reprocessing arrangements with India will be conducted under similar arrangements; and (2) a period of 30 days of continuous session has elapsed after such report's transmittal.</p> <p>States that a subsequent agreement shall not become effective if during such 30-day period Congress enacts a joint resolution of disapproval.</p> <p>(Sec. 202) Amends the Atomic Energy Act of 1954 to direct the President to inform the Committees of any negotiations relating to a new or amended agreement for peaceful nuclear cooperation.</p> <p>(Sec. 203) Requires that Congress enact a joint resolution to override a presidential determination permitting the export of nuclear materials, equipment, or technology to a country to which such export is otherwise prohibited. (Current law provides for a concurrent resolution of disapproval.)</p> <p>(Sec. 204) Directs the President to: (1) certify to the Committees that it is U.S. policy to work with members of the Nuclear Suppliers Group (NSG) to restrict transfers of equipment and technology related to the enrichment of uranium and reprocessing of spent nuclear fuel; (2) seek to achieve within NSG or with NSG participating governments the adoption of principles and exchanges of information to assure peaceful use and accounting of byproduct material; and (3) report every six months to the Committees until such purposes have been achieved. </p> <p>(Sec. 205) Makes conforming amendments with respect to related congressional actions under the Atomic Energy Act of 1954.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ369/PLAW-110publ369.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ369/PLAW-110publ369.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/7081",
+      "votes": []
+    },
+    {
       "id": "s1046-110",
       "congress": 110,
       "type": "s",
@@ -2901,6 +3213,53 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/110/plaws/publ377/PLAW-110publ377.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/2932",
+      "votes": []
+    },
+    {
+      "id": "s3560-110",
+      "congress": 110,
+      "type": "s",
+      "number": "3560",
+      "title": "QI Program Supplemental Funding Act of 2008",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Baucus, Max",
+        "party": "D",
+        "state": "MT"
+      },
+      "introduced_date": "2008-09-24",
+      "latest_action": {
+        "date": "2008-10-08",
+        "text": "Became Public Law No: 110-379."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Antibiotics",
+        "Appropriations",
+        "Commerce",
+        "Computer matching",
+        "Conferences",
+        "Drug approvals",
+        "Drug industry",
+        "Economics and Public Finance",
+        "Employee training",
+        "Government Operations and Politics",
+        "Government contractors",
+        "Government trust funds",
+        "Health information systems",
+        "Labor and Employment",
+        "Local employees",
+        "Local officials",
+        "Marketing",
+        "Medicaid",
+        "Medicare"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>QI Program Supplemental Funding Act of 2008 - Amends title XIX (Medicaid) of the Social Security Act, as amended by the Medicare Improvements for Patients and Providers Act of 2008, to provide supplemental funding for the qualifying individual (QI) program.</p> <p>Requires a state to have in operation, in mechanized Medicaid claims processing and information retrieval systems, an eligibility determination system which provides for data matching through the Public Assistance Reporting Information System (PARIS) facilitated by the Secretary of Health and Human Services, including matching with medical assistance programs operated by other states.</p> <p>Amends the Federal Food, Drug, and Cosmetic Act to make sponsors of certain antibiotic drugs eligible for a three-year or a five-year market exclusivity if a marketing application is submitted for an antibiotic drug that: (1) was approved by the Secretary of Health and Human Services before November 21, 1997; or (2) was the subject of one or more applications received by the Secretary before November 21, 1997, none of which was approved. </p> <p>Authorizes the use of Medicaid integrity program funds for transportation and travel expenses for attendees at education, training, or consultative activities.</p> <p>Increases FY2014 funding for the Medicare Improvement Fund.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ379/PLAW-110publ379.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ379/PLAW-110publ379.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/3560",
       "votes": []
     },
     {
@@ -4842,6 +5201,45 @@
       "votes": []
     },
     {
+      "id": "sres648-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "648",
+      "title": "A resolution recognizing the 50th anniversary of the crossing of the North Pole by the USS Nautilus (SSN 571) and its significance in the history of both our Nation and the world.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Dodd, Christopher J.",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2008-08-01",
+      "latest_action": {
+        "date": "2008-09-22",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S9181-9182)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Anniversaries",
+        "Arctic Ocean",
+        "Arctic and polar regions",
+        "Armed Forces and National Security",
+        "Cold War",
+        "Congressional tributes",
+        "History",
+        "Military history",
+        "Military personnel",
+        "Officer personnel",
+        "Submarines"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Recognizes the historic significance of the journey to, and successful crossing of, the North Pole by the USS Nautilus.</p> <p>Commends its officers and crew on the 50th anniversary of such achievement.</p> <p>Recognizes the Nautilus's journey as not only a military and scientific accomplishment, but also in confirming America's long-standing interest in that vital region.</p> <p>Commends the role of the Nautilus and the U.S. submarine force in protecting the interests of the free world during the Cold War.</p> <p>Supports the continuing role of the U.S. submarine force in defending our country in the 21st century.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres648/BILLS-110sres648ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres648/BILLS-110sres648ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres648/BILLS-110sres648ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/648",
+      "votes": []
+    },
+    {
       "id": "sres670-110",
       "congress": 110,
       "type": "sres",
@@ -5254,6 +5652,41 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres643/BILLS-110sres643ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres643/BILLS-110sres643ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/643",
+      "votes": []
+    },
+    {
+      "id": "hr6532-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "6532",
+      "title": "To amend the Internal Revenue Code of 1986 to restore the Highway Trust Fund balance.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Rangel, Charles B.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2008-07-17",
+      "latest_action": {
+        "date": "2008-09-15",
+        "text": "Became Public Law No: 110-318."
+      },
+      "outcome": "enacted",
+      "policy_area": "Taxation",
+      "subjects": [
+        "Economics and Public Finance",
+        "Energy",
+        "Excise tax",
+        "Gasoline",
+        "Government trust funds",
+        "Highway use tax",
+        "Transportation and Public Works"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the Senate on September 10, 2008. The summary of that version is repeated here.)</b></p><p>Amends the Internal Revenue Code to transfer from the Treasury $8.017 billion to the Highway Trust Fund. </p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ318/PLAW-110publ318.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ318/PLAW-110publ318.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/6532",
       "votes": []
     },
     {
@@ -5979,6 +6412,41 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres627/BILLS-110sres627ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres627/BILLS-110sres627ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/627",
+      "votes": []
+    },
+    {
+      "id": "s3298-110",
+      "congress": 110,
+      "type": "s",
+      "number": "3298",
+      "title": "A bill to clarify the circumstances during which the Administrator of the Environmental Protection Agency and applicable States may require permits for discharges from certain vessels, and to require the Administrator to conduct a study of discharges incidental to the normal operation of vessels.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Murkowski, Lisa",
+        "party": "R",
+        "state": "AK"
+      },
+      "introduced_date": "2008-07-22",
+      "latest_action": {
+        "date": "2008-07-31",
+        "text": "Became Public Law No: 110-299."
+      },
+      "outcome": "enacted",
+      "policy_area": "Environmental Protection",
+      "subjects": [
+        "Congressional oversight",
+        "Environmental Protection Agency (EPA)",
+        "Environmental assessment, monitoring, research",
+        "Environmental regulatory procedures",
+        "Licensing and registrations",
+        "Marine pollution",
+        "Water quality"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>Prohibits the Administrator of the Environmental Protection Agency (EPA), or a state with an approved National Pollutant Discharge Elimination System (NPDES) permit program under the Federal Water Pollution Control Act, from requiring an NPDES permit for a covered vessel for the next two years for any discharge: (1) of effluent from properly functioning marine engines; (2) of laundry, shower, and galley sink wastes; or (3) that is incidental to the normal operation of a covered vessel. Defines &quot;covered vessel&quot; to mean a vessel that is less than 79 feet in length or a fishing vessel.</p> <p>Requires the Administrator to evaluate the impacts of such discharges, excluding discharges: (1) from a vessel of the Armed Forces; (2) of sewage from a vessel, other than the discharge of graywater from a vessel operating on the Great Lakes; and (3) of ballast water. Requires the Administrator to: (1) provide for public comment on a draft of such evaluation; and (2) submit a final report to the House Transportation and Infrastructure Committee, the Senate Environmental and Public Works Committee, and the Senate Commerce, Science, and Transportation Committee.</p> <p>Provides that such prohibition does not apply with respect to: (1) rubbish, trash, garbage, or other such materials discharged overboard; (2) other discharges when the vessel is operating in a capacity other than as a means of transportation; (3) ballast water discharges; or (4) any discharge that contributes to a violation of a water quality standard or poses an unacceptable risk to human health or the environment.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ299/PLAW-110publ299.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ299/PLAW-110publ299.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/3298",
       "votes": []
     },
     {
@@ -7140,6 +7608,40 @@
       "votes": []
     },
     {
+      "id": "hr3913-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "3913",
+      "title": "To amend the International Center Act to authorize the lease or sublease of certain property described in such Act to an entity other than a foreign government or international organization if certain conditions are met.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Ros-Lehtinen, Ileana",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2007-10-22",
+      "latest_action": {
+        "date": "2008-06-26",
+        "text": "Became Public Law No: 110-249."
+      },
+      "outcome": "enacted",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Commerce",
+        "Corporations",
+        "District of Columbia",
+        "International agencies",
+        "Leases",
+        "Public Lands and Natural Resources"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Amends the International Center Act to authorize the lease or sublease of property identified by the District of Columbia as tax lots 803, 804, 805, and 806 to an entity other than a foreign government or international organization, so long as the Secretary of State maintains the right to approve the occupant and the intended use of the property.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ249/PLAW-110publ249.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ249/PLAW-110publ249.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/3913",
+      "votes": []
+    },
+    {
       "id": "s1245-110",
       "congress": 110,
       "type": "s",
@@ -7521,6 +8023,39 @@
       "votes": []
     },
     {
+      "id": "sres585-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "585",
+      "title": "A resolution supporting National Men's Health Week.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Crapo, Mike",
+        "party": "R",
+        "state": "ID"
+      },
+      "introduced_date": "2008-06-05",
+      "latest_action": {
+        "date": "2008-06-17",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S5704)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Health",
+        "Health education",
+        "Men",
+        "Preventive medicine",
+        "Special weeks"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Expresses support for the annual National Men's Health Week.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres585/BILLS-110sres585ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres585/BILLS-110sres585ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres585/BILLS-110sres585ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/585",
+      "votes": []
+    },
+    {
       "id": "sres593-110",
       "congress": 110,
       "type": "sres",
@@ -7734,6 +8269,46 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres586/BILLS-110sres586ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres586/BILLS-110sres586ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/586",
+      "votes": []
+    },
+    {
+      "id": "hr4008-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "4008",
+      "title": "Credit and Debit Card Receipt Clarification Act of 2007",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Mahoney, Tim",
+        "party": "D",
+        "state": "FL"
+      },
+      "introduced_date": "2007-10-30",
+      "latest_action": {
+        "date": "2008-06-03",
+        "text": "Became Public Law No: 110-241."
+      },
+      "outcome": "enacted",
+      "policy_area": "Finance and Financial Sector",
+      "subjects": [
+        "Commerce",
+        "Consumer protection",
+        "Credit cards",
+        "Crime and Law Enforcement",
+        "Crime prevention",
+        "Debit cards",
+        "Fraud",
+        "Frivolous lawsuits",
+        "Government Operations and Politics",
+        "Government paperwork",
+        "Identity theft",
+        "Law"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Credit and Debit Card Receipt Clarification Act of 2007 - Amends the Fair Credit Reporting Act (FCRA) to declare that any person who printed an expiration date on any receipt provided to a consumer cardholder at a point of sale (POS) or transaction between December 4, 2004, and the enactment of this Act, but otherwise complied with FCRA requirements for such receipt, shall not be in willful noncompliance by reason of printing such expiration date on it.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ241/PLAW-110publ241.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ241/PLAW-110publ241.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/4008",
       "votes": []
     },
     {
@@ -8046,6 +8621,43 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres577/BILLS-110sres577ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres577/BILLS-110sres577ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/577",
+      "votes": []
+    },
+    {
+      "id": "sres578-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "578",
+      "title": "A resolution recognizing the 100th anniversary of the founding of the Congressional Club.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Enzi, Michael B.",
+        "party": "R",
+        "state": "WY"
+      },
+      "introduced_date": "2008-05-22",
+      "latest_action": {
+        "date": "2008-05-22",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S4847; text as passed Senate: CR S4847; text of measure as introduced: CR S4809)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Anniversaries",
+        "Charitable contributions",
+        "Congress",
+        "Congressional tributes",
+        "Social Welfare",
+        "Volunteer workers",
+        "Women",
+        "Women in public life",
+        "Women's organizations"
+      ],
+      "summary_crs": " <p>Recognizes the 100th anniversary of the founding of the Congressional Club.</p> <p>Acknowledges the contributions of political spouses to public life in the United States and around the world through the Congressional Club for the past 100 years.</p> <p>Honors the Club's past and present membership.</p> <p>Encourages the people of the United States to strive for greater friendship, civility, and generosity in order to heighten public service, elevate the culture, and enrich humanity, to seek opportunities to give financially, and to volunteer to assist charitable organizations in their own communities.<br> </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres578/BILLS-110sres578ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres578/BILLS-110sres578ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres578/BILLS-110sres578ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/578",
       "votes": []
     },
     {
@@ -8428,6 +9040,40 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres565/BILLS-110sres565ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres565/BILLS-110sres565ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/565",
+      "votes": []
+    },
+    {
+      "id": "sres566-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "566",
+      "title": "A resolution designating June 2008 as \"National Aphasia Awareness Month\" and supporting efforts to increase awareness of aphasia.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Johnson, Tim",
+        "party": "D",
+        "state": "SD"
+      },
+      "introduced_date": "2008-05-14",
+      "latest_action": {
+        "date": "2008-05-14",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S4202; text as passed Senate: CR S4202; text of measure as introduced: CR S4186)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Brain",
+        "Health",
+        "Neurology",
+        "Special months",
+        "Speech disorders",
+        "Stroke"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Expresses support for the goals and ideals of National Aphasia Awareness Month in June 2008. </p><p></p><p></p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres566/BILLS-110sres566ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres566/BILLS-110sres566ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres566/BILLS-110sres566ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/566",
       "votes": []
     },
     {
@@ -10006,6 +10652,39 @@
       "votes": []
     },
     {
+      "id": "hjres70-110",
+      "congress": 110,
+      "type": "hjres",
+      "number": "70",
+      "title": "Congratulating the Army Reserve on its centennial, which will be formally celebrated on April 23, 2008, and commemorating the historic contributions of its veterans and continuing contributions of its soldiers to the vital national security interests and homeland defense missions of the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Bishop, Sanford D., Jr.",
+        "party": "D",
+        "state": "GA"
+      },
+      "introduced_date": "2007-12-13",
+      "latest_action": {
+        "date": "2008-04-23",
+        "text": "Became Public Law No: 110-203."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Anniversaries",
+        "Armed Forces and National Security",
+        "Armed forces reserves",
+        "Army",
+        "Congressional tributes"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the House on April 8, 2008. The summary of that version is repeated here.)</b></p> <p>Congratulates the Army Reserve on the occasion of the 100th anniversary of the enactment of its original authorizing law on April 23, 1908.</p> <p>Recognizes and commends the Army Reserve for the service of its past and present citizen-soldiers whose personal courage, contributions, and sacrifices have helped preserve the freedom and advance the national security and homeland defense of the United States.</p> <p>Extends gratitude to the veterans, soldiers, families, and employers who have supported the Army Reserve in accomplishing its vital missions. </p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ203/PLAW-110publ203.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ203/PLAW-110publ203.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-joint-resolution/70",
+      "votes": []
+    },
+    {
       "id": "s845-110",
       "congress": 110,
       "type": "s",
@@ -10658,6 +11337,39 @@
       "votes": []
     },
     {
+      "id": "sres495-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "495",
+      "title": "A resolution designating April 2008 as \"Financial Literacy Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Akaka, Daniel K.",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2008-04-01",
+      "latest_action": {
+        "date": "2008-04-01",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2306-2307; text as passed Senate: CR S2306-2307; text of measure as introduced: CR S2300)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Finance and Financial Sector",
+        "Financial planning",
+        "Personal budgets",
+        "Saving and investment",
+        "Special months"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Designates April 2008 as Financial Literacy Month to raise public awareness about the importance of personal financial education in the United States and the serious consequences that may result from a lack of understanding about personal finances.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres495/BILLS-110sres495ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres495/BILLS-110sres495ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres495/BILLS-110sres495ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/495",
+      "votes": []
+    },
+    {
       "id": "sres478-110",
       "congress": 110,
       "type": "sres",
@@ -10761,6 +11473,44 @@
       "votes": []
     },
     {
+      "id": "s2745-110",
+      "congress": 110,
+      "type": "s",
+      "number": "2745",
+      "title": "A bill to extend agricultural programs beyond March 15, 2008, to suspend permanent price support authorities beyond that date, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Harkin, Tom",
+        "party": "D",
+        "state": "IA"
+      },
+      "introduced_date": "2008-03-12",
+      "latest_action": {
+        "date": "2008-03-14",
+        "text": "Became Public Law No: 110-196."
+      },
+      "outcome": "enacted",
+      "policy_area": "Agriculture and Food",
+      "subjects": [
+        "Agricultural conservation",
+        "Agricultural subsidies",
+        "Animals",
+        "Environmental Protection",
+        "Farm lands",
+        "Groundwater",
+        "Habitat conservation",
+        "Public Lands and Natural Resources",
+        "Water Resources Development",
+        "Water conservation"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Extends: (1) with specified exceptions, agricultural programs under the Farm Security and Rural Investment Act of 2002 until April 18, 2008; and (2) the farmland protection program, the ground and surface water conservation program, and the wildlife habitat incentives program.</p> <p> Suspends permanent price support authorities through April 18, 2008.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/s2745/BILLS-110s2745enr.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/s2745/BILLS-110s2745enr.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/s2745/BILLS-110s2745enr.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/2745",
+      "votes": []
+    },
+    {
       "id": "sjres25-110",
       "congress": 110,
       "type": "sjres",
@@ -10793,6 +11543,40 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/110/plaws/publ197/PLAW-110publ197.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-joint-resolution/25",
+      "votes": []
+    },
+    {
+      "id": "s2272-110",
+      "congress": 110,
+      "type": "s",
+      "number": "2272",
+      "title": "A bill to designate the facility of the United States Postal Service known as the Southpark Station in Alexandria, Louisiana, as the John \"Marty\" Thiels Southpark Station, in honor and memory of Thiels, a Louisiana postal worker who was killed in the line of duty on October 4, 2007.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Vitter, David",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2007-10-31",
+      "latest_action": {
+        "date": "2008-03-12",
+        "text": "Became Public Law No: 110-195."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congressional tributes",
+        "Federal employees",
+        "Government Operations and Politics",
+        "Louisiana",
+        "Names",
+        "Postal facilities"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Designates the facility of the United States Postal Service known as the Southpark Station in Alexandria, Louisiana, as the &quot;John 'Marty' Thiels Southpark Station.&quot;</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ195/PLAW-110publ195.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ195/PLAW-110publ195.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/2272",
       "votes": []
     },
     {
@@ -10958,6 +11742,42 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres178/BILLS-110sres178ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres178/BILLS-110sres178ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/178",
+      "votes": []
+    },
+    {
+      "id": "sres476-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "476",
+      "title": "A resolution designating March 25, 2008, as \"Greek Independence Day: A National Day of Celebration of Greek and American Democracy\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Specter, Arlen",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2008-03-07",
+      "latest_action": {
+        "date": "2008-03-07",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S1782; text as passed Senate: CR S1782; text of measure as introduced: CR S1746-1747)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Anniversaries",
+        "Democracy",
+        "Europe",
+        "Government Operations and Politics",
+        "Greece",
+        "International Affairs",
+        "Sovereignty",
+        "Special days"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates March 25, 2008, as Greek Independence Day: A National Day of Celebration of Greek and American Democracy.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres476/BILLS-110sres476ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres476/BILLS-110sres476ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres476/BILLS-110sres476ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/476",
       "votes": []
     },
     {
@@ -11331,6 +12151,45 @@
       "votes": []
     },
     {
+      "id": "sres465-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "465",
+      "title": "A resolution designating March 3, 2008, as \"Read Across America Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Reed, Jack",
+        "party": "D",
+        "state": "RI"
+      },
+      "introduced_date": "2008-02-29",
+      "latest_action": {
+        "date": "2008-02-29",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S1436; text as passed Senate: CR S1436; text of measure as introduced: CR S1433)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Anniversaries",
+        "Arts, Culture, Religion",
+        "Authors and authorship",
+        "Books",
+        "Congressional tributes",
+        "Education",
+        "Elementary and secondary education",
+        "Families",
+        "Parent and child",
+        "Reading",
+        "Special days"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates March 3, 2008, as Read Across America Day.</p> <p>Honors Theodor Geisel (Dr. Seuss) for his success in encouraging children to discover the joy of reading.</p> <p>Honors the 11th anniversary of Read Across America Day.</p> <p>Encourages parents to read with their children for at least 30 minutes on Read Across America Day.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres465/BILLS-110sres465ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres465/BILLS-110sres465ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres465/BILLS-110sres465ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/465",
+      "votes": []
+    },
+    {
       "id": "sres466-110",
       "congress": 110,
       "type": "sres",
@@ -11573,6 +12432,46 @@
       "text_url_xml": "https://www.congress.gov/110/bills/hres980/BILLS-110hres980eh.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/hres980/BILLS-110hres980eh.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-resolution/980",
+      "votes": []
+    },
+    {
+      "id": "sres439-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "439",
+      "title": "A resolution expressing the strong support of the Senate for the North Atlantic Treaty Organization to enter into a Membership Action Plan with Georgia and Ukraine.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lugar, Richard G.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2008-01-31",
+      "latest_action": {
+        "date": "2008-02-14",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S1083-1084; text as passed Senate: CR S1084)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Alliances",
+        "Armed Forces and National Security",
+        "Central Asia",
+        "Civil Rights and Liberties, Minority Issues",
+        "Collective security",
+        "Democracy",
+        "Europe",
+        "Georgia (Republic)",
+        "Government Operations and Politics",
+        "Human rights",
+        "NATO countries",
+        "Ukraine"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The expanded summary of the Senate reported version is repeated here.)</b></p> <p>Expresses the sense of the House of Representatives: (1) reaffirming support for enlargement of the North Atlantic Treaty Organization (NATO) to include democratic governments that are able to meet the membership responsibilities; (2) that NATO's expansion contributes to its relevance; (3) that Georgia and Ukraine are strong allies that have made important progress in the areas of defense and democratic and human rights reform; (4) that a stronger relationship among Georgia, Ukraine, and NATO will benefit those countries and NATO member states; and (5) that the United States should take the lead in supporting the awarding of a Membership Action Plan to Georgia and Ukraine. </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres439/BILLS-110sres439ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres439/BILLS-110sres439ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres439/BILLS-110sres439ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/439",
       "votes": []
     },
     {
@@ -11829,6 +12728,39 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres432/BILLS-110sres432ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres432/BILLS-110sres432ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/432",
+      "votes": []
+    },
+    {
+      "id": "s2110-110",
+      "congress": 110,
+      "type": "s",
+      "number": "2110",
+      "title": "A bill to designate the facility of the United States Postal Service located at 427 North Street in Taft, California, as the \"Larry S. Pierce Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feinstein, Dianne",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2007-09-27",
+      "latest_action": {
+        "date": "2008-02-06",
+        "text": "Became Public Law No: 110-184."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "California",
+        "Congressional tributes",
+        "Government Operations and Politics",
+        "Names",
+        "Postal facilities"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Designates the facility of the United States Postal Service located at 427 North Street in Taft, California, as the \"Larry S. Pierce Post Office.\" </p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ184/PLAW-110publ184.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ184/PLAW-110publ184.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/2110",
       "votes": []
     },
     {
@@ -12700,6 +13632,53 @@
       "votes": []
     },
     {
+      "id": "hr4839-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "4839",
+      "title": "Tax Technical Corrections Act of 2007",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Rangel, Charles B.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2007-12-19",
+      "latest_action": {
+        "date": "2007-12-29",
+        "text": "Became Public Law No: 110-172."
+      },
+      "outcome": "enacted",
+      "policy_area": "Taxation",
+      "subjects": [
+        "Alternative energy sources",
+        "Biomass energy",
+        "Capital gains tax",
+        "Charitable contributions",
+        "Commerce",
+        "Commodity tax straddles",
+        "Congress",
+        "Diesel motor",
+        "Dividends",
+        "Electric power production",
+        "Energy",
+        "Energy research",
+        "Estate tax",
+        "Excise tax",
+        "Finance and Financial Sector",
+        "Foreign Trade and International Finance",
+        "Foreign corporations",
+        "Foreign tax credit",
+        "Foundations"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p><p>Tax Technical Corrections Act of 2007 - Makes technical amendments and clerical corrections to the Internal Revenue Code, including corrections to provisions enacted by: (1) the Tax Relief and Health Care Act of 2006; (2) the Pension Protection Act of 2006; (3) the Tax Increase Prevention and Reconciliation Act of 2005; (4) the Safe, Accountable, Flexible, Efficient Transportation Equity Act: A Legacy for Users; (5) the Energy Policy Act of 2005; (6) the American Jobs Creation Act of 2004; (7) the Economic Growth and Tax Relief Reconciliation Act of 2001; (8) the Tax Relief Extension Act of 1999; and (9) the Internal Revenue Service Restructuring and Reform Act of 1998. Makes the amendments made by this Act effective as of the effective date of the Acts to which they relate.</p><p>(Sec. 2) Revises the formula for calculating the alternative minimum tax (AMT) refundable credit amount.</p><p>(Sec. 3) Revises and expands the exclusion from gross income for distributions from individual retirement accounts (IRAs) made for charitable purposes. </p><p>Revises the basis rule for contributions of appreciated property by an S corporation. </p><p>Modifies criteria for charitable contributions of property to tax-exempt organizations to require officers of such organizations to certify that the organization's use of such property was substantial. </p><p>Eliminates special valuation rules for estate and gift tax purposes. </p><p>Applies certain tax penalties for substantial and gross valuation misstatements to estates and gifts. </p><p>Provides for the inclusion of capital gains from appreciation in the tax base of private foundation net investment income. </p><p>Requires the Internal Revenue Service (IRS) to make public certain tax information relating to the unrelated business income of tax-exempt organizations.</p><p>(Sec. 4) Revises the tax treatment of dividends, interest, rents, and royalties received by a controlled foreign corporation from a related entity that creates or increases a deficit in subpart F income.</p><p>Modifies rules for the foreign tax credit relating to the definition of active business income and the tentative minimum tax on nonexcluded income.</p><p>(Sec. 5) Modifies rules for filing excise tax refund claims for alternative fuel mixtures and the definition of alternative fuels relating to hydrogen and carbon resources.</p><p>(Sec. 6) Modifies provisions relating to the authority of the Secretary of the Treasury to allocate amounts under the tax credit for production of electricity from nuclear power facilities.</p><p>Revises definitions relating to qualified alternative fuel refueling property for purposes of the tax credit for investment in such property.</p><p>Limits the type of energy research eligible for the tax credit for increasing research activities. </p><p>Permits a refund in the amount of the Leaking Underground Storage Tank Trust Fund financing rate of additional taxes imposed from the use of dyed fuel. Makes such financing rate applicable to off-highway business use of gasoline. </p><p>(Sec. 7) Removes certain restrictions relating to basis reduction and deductibility for the tax credit for production of low sulfur diesel fuel.</p><p>Eliminates the requirement that open-loop biomass be segregated from other waste material in order to be eligible for the tax credit for producing electricity from renewable resources.</p><p>Eliminates certain restrictions on tax-exempt use property.</p><p>Provides additional rules for the treatment of losses on positions in identified straddles (i.e., offsetting positions in actively traded personal property).</p><p>(Sec. 8) Applies certain tax rules relating to deferral limits and social security taxes for Roth IRA contributions.</p><p>(Sec. 9) Qualifies certain wind energy facilities placed in service prior to June 30, 1999, for the tax credit for producing electricity from renewable resources.</p><p>Revises the definition of &quot;lodging facility&quot; for purposes of tax rules relating to real estate investment trusts (REITs).</p><p>(Sec. 10) Authorizes redactions to background documents (to the extent permitted by law) used by the Office of the IRS Chief Counsel to provide tax advice or information.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ172/PLAW-110publ172.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ172/PLAW-110publ172.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/4839",
+      "votes": []
+    },
+    {
       "id": "s2499-110",
       "congress": 110,
       "type": "s",
@@ -12946,6 +13925,47 @@
       "votes": []
     },
     {
+      "id": "hr366-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "366",
+      "title": "To designate the Department of Veterans Affairs Outpatient Clinic in Tulsa, Oklahoma, as the \"Ernest Childers Department of Veterans Affairs Outpatient Clinic\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Sullivan, John",
+        "party": "R",
+        "state": "OK"
+      },
+      "introduced_date": "2007-01-10",
+      "latest_action": {
+        "date": "2007-12-26",
+        "text": "Became Public Law No: 110-156."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Ambulatory care",
+        "Armed Forces and National Security",
+        "Clinics",
+        "Congress",
+        "Congressional tributes",
+        "Health",
+        "History",
+        "Minorities",
+        "Names",
+        "Native Americans",
+        "Oklahoma",
+        "Veterans' hospitals",
+        "World War II"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Designates the Department of Veterans Affairs Outpatient Clinic in Tulsa, Oklahoma, as the &quot;Ernest Childers Department of Veterans Affairs Outpatient Clinic.&quot;</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ156/PLAW-110publ156.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ156/PLAW-110publ156.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/366",
+      "votes": []
+    },
+    {
       "id": "hr3974-110",
       "congress": 110,
       "type": "hr",
@@ -13172,6 +14192,40 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/110/plaws/publ169/PLAW-110publ169.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/1896",
+      "votes": []
+    },
+    {
+      "id": "s1916-110",
+      "congress": 110,
+      "type": "s",
+      "number": "1916",
+      "title": "Chimp Haven is Home Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Burr, Richard",
+        "party": "R",
+        "state": "NC"
+      },
+      "introduced_date": "2007-08-01",
+      "latest_action": {
+        "date": "2007-12-26",
+        "text": "Became Public Law No: 110-170."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Animals",
+        "Chimpanzees",
+        "Laboratory animals",
+        "Medical research",
+        "Protection of animals",
+        "Science, Technology, Communications"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was reported to the Senate on December 12, 2007. The summary of that version is repeated here.)</b></p><p>Chimp Haven is Home Act - Amends the Public Health Service Act to repeal provisions providing for the removal of surplus chimpanzees from a sanctuary facility. Prohibits use of such chimpanzees for research except for noninvasive behavioral studies.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ170/PLAW-110publ170.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ170/PLAW-110publ170.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/1916",
       "votes": []
     },
     {
@@ -13597,6 +14651,52 @@
       "votes": []
     },
     {
+      "id": "hr4118-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "4118",
+      "title": "To exclude from gross income payments from the Hokie Spirit Memorial Fund to the victims of the tragic event at Virginia Polytechnic Institute & State University.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Boucher, Rick",
+        "party": "D",
+        "state": "VA"
+      },
+      "introduced_date": "2007-11-08",
+      "latest_action": {
+        "date": "2007-12-19",
+        "text": "Became Public Law No: 110-141."
+      },
+      "outcome": "enacted",
+      "policy_area": "Taxation",
+      "subjects": [
+        "Charities",
+        "Colleges",
+        "Commemorations",
+        "Compensation for victims of crime",
+        "Crime and Law Enforcement",
+        "Education",
+        "Foundations",
+        "Higher education",
+        "Income tax",
+        "Monuments and memorials",
+        "Murder",
+        "Partnerships",
+        "Social Welfare",
+        "Students",
+        "Tax exclusion",
+        "Tax penalties",
+        "Victims of crimes",
+        "Virginia"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the House on December 4, 2007. The summary of that version is repeated here.)</b></p> <p>Excludes from gross income, for federal income tax purposes, any payments made by Virginia Polytechnic Institute &amp; State University (Virginia Tech) out of the Hokie Spirit Memorial Fund to the victims of the tragic shootings at such school on April 16, 2007.</p> <p>Increases the penalty for failure to file a partnership income tax return, for a taxable year beginning in 2008, by one dollar (from $85 to $86) per month (multiplied, as under current law, by the number of partners in the offending partnership during any part of the taxable year).</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ141/PLAW-110publ141.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ141/PLAW-110publ141.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/4118",
+      "votes": []
+    },
+    {
       "id": "sres279-110",
       "congress": 110,
       "type": "sres",
@@ -13893,6 +14993,70 @@
       "votes": []
     },
     {
+      "id": "sres416-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "416",
+      "title": "A resolution recognizing the 60th anniversary of the United States Air Force as an independent military service.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Nelson, Ben",
+        "party": "D",
+        "state": "NE"
+      },
+      "introduced_date": "2007-12-19",
+      "latest_action": {
+        "date": "2007-12-19",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR 12/18/2007 S15936-15939; text as passed Senate: CR 12/18/2007 S15938-15939; text of measure as introduced: CR 12/18/2007 S15924-15925)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Air force",
+        "Anniversaries",
+        "Armed Forces and National Security",
+        "Congressional tributes"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Declares that the Senate remembers, honors, and commends the achievements of the U.S. Air Force in serving and defending the United States on the 60th anniversary of its creation as an independent military service. </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres416/BILLS-110sres416ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres416/BILLS-110sres416ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres416/BILLS-110sres416ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/416",
+      "votes": []
+    },
+    {
+      "id": "hr3315-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "3315",
+      "title": "To provide that the great hall of the Capitol Visitor Center shall be known as Emancipation Hall.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Wamp, Zach",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2007-08-02",
+      "latest_action": {
+        "date": "2007-12-18",
+        "text": "Became Public Law No: 110-139."
+      },
+      "outcome": "enacted",
+      "policy_area": "Congress",
+      "subjects": [
+        "Capitol (Washington, D.C.)",
+        "Commemorations",
+        "Names",
+        "Tourism"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates the great hall of the Capitol Visitor Center as Emancipation Hall.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ139/PLAW-110publ139.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ139/PLAW-110publ139.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/3315",
+      "votes": []
+    },
+    {
       "id": "sres409-110",
       "congress": 110,
       "type": "sres",
@@ -14165,6 +15329,39 @@
       "votes": []
     },
     {
+      "id": "sres405-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "405",
+      "title": "A resolution recognizing the life and contributions of Henry John Hyde.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Grassley, Chuck",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2007-12-13",
+      "latest_action": {
+        "date": "2007-12-13",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S15569-15570; text as passed Senate: CR S15569-15570; text of measure as introduced: CR S15475-15476)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congress",
+        "Congressional tributes",
+        "Ex-Members of Congress",
+        "House of Representatives",
+        "Illinois"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Declares that the Senate: (1) notes with deep sorrow the death of Henry John Hyde, a former Representative from Illinois, on November 29, 2007, in Chicago; (2) extends its heartfelt sympathy to his family; and (3) recognizes his life of service and outstanding contributions.<br> </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres405/BILLS-110sres405ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres405/BILLS-110sres405ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres405/BILLS-110sres405ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/405",
+      "votes": []
+    },
+    {
       "id": "hr1429-110",
       "congress": 110,
       "type": "hr",
@@ -14433,6 +15630,42 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres393/BILLS-110sres393ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres393/BILLS-110sres393ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/393",
+      "votes": []
+    },
+    {
+      "id": "sres394-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "394",
+      "title": "A resolution recognizing the 100th Anniversary of the founding of the American Association for Cancer Research and declaring the month of May 2007 as National Cancer Research Month.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feinstein, Dianne",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2007-12-06",
+      "latest_action": {
+        "date": "2007-12-06",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S14999-15000; text as passed Senate: CR S14999-15000; text of measure as introduced: CR S14857-14858)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Anniversaries",
+        "Cancer",
+        "Congressional tributes",
+        "Health",
+        "Medical associations",
+        "Medical research",
+        "Science, Technology, Communications",
+        "Special months"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Congratulates the American Association for Cancer Research on its 100-year anniversary celebration. Expresses gratitude for the Association's contributions toward progress in advancing cancer research.</p> <p>Declares the month of May 2007 to be National Cancer Research Month to support the Association's public education efforts to make cancer research a national and international priority. </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres394/BILLS-110sres394ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres394/BILLS-110sres394ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres394/BILLS-110sres394ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/394",
       "votes": []
     },
     {
@@ -15216,6 +16449,41 @@
       "votes": []
     },
     {
+      "id": "hr2779-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "2779",
+      "title": "To recognize the Navy UDT-SEAL Museum in Fort Pierce, Florida, as the official national museum of Navy SEALS and their predecessors.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Mahoney, Tim",
+        "party": "D",
+        "state": "FL"
+      },
+      "introduced_date": "2007-06-19",
+      "latest_action": {
+        "date": "2007-11-13",
+        "text": "Became Public Law No: 110-115."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Arts, Culture, Religion",
+        "Florida",
+        "History",
+        "Military history",
+        "Museums",
+        "Navy",
+        "Special forces (Military science)"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Recognizes the Navy UDT-SEAL Museum in Fort Pierce, Florida, as the official national museum of Navy SEALs and their predecessors, including the Underwater Demolition Teams, Naval Combat Demolition Units, Office of Strategic Services Maritime Units, and Amphibious Scouts and Raiders. </p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ115/PLAW-110publ115.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ115/PLAW-110publ115.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/2779",
+      "votes": []
+    },
+    {
       "id": "sres377-110",
       "congress": 110,
       "type": "sres",
@@ -15359,6 +16627,38 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres373/BILLS-110sres373ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres373/BILLS-110sres373ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/373",
+      "votes": []
+    },
+    {
+      "id": "sres374-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "374",
+      "title": "A resolution expressing support for designation of a National Veterans History Project Week to encourage public participation in a nationwide project that collects and preserves the stories of the men and women who served our Nation in times of war and conflict.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Landrieu, Mary L.",
+        "party": "D",
+        "state": "LA"
+      },
+      "introduced_date": "2007-11-08",
+      "latest_action": {
+        "date": "2007-11-08",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S14233; text as passed Senate: CR S14233; text of measure as introduced: CR S14202)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Armed Forces and National Security",
+        "History",
+        "Military history",
+        "Special weeks"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Recognizes National Veterans Awareness Week.</p> <p>Supports the designation of a National Veterans History Project Week.</p> <p>Calls on the people of the United States to interview at least one veteran in their families or communities according to guidelines provided by the Veterans History Project.</p> <p>Encourages local, state, and national organizations along with federal, state, city and county governmental institutions to participate in support of the effort to document, preserve, and honor the service of American wartime veterans.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres374/BILLS-110sres374ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres374/BILLS-110sres374ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres374/BILLS-110sres374ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/374",
       "votes": []
     },
     {
@@ -17447,6 +18747,47 @@
       "votes": []
     },
     {
+      "id": "s377-110",
+      "congress": 110,
+      "type": "s",
+      "number": "377",
+      "title": "United States-Poland Parliamentary Youth Exchange Program Act of 2007",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lugar, Richard G.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2007-01-24",
+      "latest_action": {
+        "date": "2007-09-20",
+        "text": "Became Public Law No: 110-83."
+      },
+      "outcome": "enacted",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Civics education",
+        "Congress",
+        "Congressional reporting requirements",
+        "Education",
+        "Educational exchanges",
+        "Elementary and secondary education",
+        "Europe",
+        "Government Operations and Politics",
+        "Government internships",
+        "History",
+        "Law",
+        "Poland",
+        "Secondary education"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The expanded summary of the Senate reported version is repeated here.)</b></p> United States-Poland Parliamentary Youth Exchange Program Act of 2007 - Authorizes the Secretary of State, in cooperation with the government of Poland, to establish a United States-Poland Parliamentary Youth Exchange Program for American and Polish secondary students under 19 years old who have been accepted for up to one academic year of study abroad in a credit-approved program. <p>States that eligible participants shall: (1) live in and attend a public secondary school in the host country for one academic year; (2) undertake academic studies in the host country, with particular emphasis on the history, constitution, and political development of the host country; and (3) be eligible for an internship in the host country.</p> <p>Directs the Secretary to report annually to the appropriate congressional committees respecting the Program.</p> <p>Authorizes FY2008 appropriations. </p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ83/PLAW-110publ83.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ83/PLAW-110publ83.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/377",
+      "votes": []
+    },
+    {
       "id": "sres324-110",
       "congress": 110,
       "type": "sres",
@@ -18009,6 +19350,44 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/110/plaws/publ76/PLAW-110publ76.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/2952",
+      "votes": []
+    },
+    {
+      "id": "hr3006-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "3006",
+      "title": "To improve the use of a grant of a parcel of land to the State of Idaho for use as an agricultural college, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Simpson, Michael K.",
+        "party": "R",
+        "state": "ID"
+      },
+      "introduced_date": "2007-07-11",
+      "latest_action": {
+        "date": "2007-08-13",
+        "text": "Became Public Law No: 110-77."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Agricultural colleges",
+        "Agriculture and Food",
+        "Building construction",
+        "Construction costs",
+        "Education",
+        "Government Operations and Politics",
+        "Higher education",
+        "Idaho",
+        "Land transfers",
+        "Land use"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Authorizes Idaho, respecting Morrill Act agricultural college assets, to: (1) invest earnings and proceeds in accordance with the standards applicable to a trustee under Idaho law; (2) deduct trustee expenses from earnings and proceeds; and (3) use earnings and proceeds from granted land without regard to the limitations that prohibit the state from exceeding 10% on the purchase of land and prohibit the state from purchasing, erecting, preserving, or repairing buildings.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ77/PLAW-110publ77.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ77/PLAW-110publ77.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/3006",
       "votes": []
     },
     {
@@ -18655,6 +20034,40 @@
       "votes": []
     },
     {
+      "id": "hr2429-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "2429",
+      "title": "To amend title XVIII of the Social Security Act to provide an exception to the 60-day limit on Medicare reciprocal billing arrangements between two physicians during the period in which one of the physicians is ordered to active duty as a member of a reserve component of the Armed Forces.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Thompson, Mike",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2007-05-22",
+      "latest_action": {
+        "date": "2007-08-03",
+        "text": "Became Public Law No: 110-54."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Armed forces reserves",
+        "Medical fees",
+        "Medicare",
+        "Physicians",
+        "Social Welfare"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Amends title XVIII (Medicare) of the Social Security Act to create an exception to the 60-day limit on Medicare reciprocal billing arrangements in the case of arrangements between two physicians over a longer continuous period during all of which one of them is ordered to active duty as a member of a reserve component of the armed forces.</p><p>Applies this exception to medical services provided before January 1, 2008.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ54/PLAW-110publ54.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ54/PLAW-110publ54.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/2429",
+      "votes": []
+    },
+    {
       "id": "sres304-110",
       "congress": 110,
       "type": "sres",
@@ -18721,6 +20134,46 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres294/BILLS-110sres294ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres294/BILLS-110sres294ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/294",
+      "votes": []
+    },
+    {
+      "id": "sres295-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "295",
+      "title": "A resolution designating September 19, 2007, as \"National Attention Deficit Disorder Awareness Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cantwell, Maria",
+        "party": "D",
+        "state": "WA"
+      },
+      "introduced_date": "2007-08-02",
+      "latest_action": {
+        "date": "2007-08-02",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S10840-10841; text as passed Senate: CR S10840-10841; text of measure as introduced: CR S10822-10823)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Access to health care",
+        "Attention deficit disorders",
+        "Child health",
+        "Disabled",
+        "Families",
+        "Health",
+        "Health education",
+        "Mental health services",
+        "Public health",
+        "Quality of care",
+        "Quality of life",
+        "Special days"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates September 19, 2007, as National Attention Deficit Disorder Awareness Day.</p> <p>Recognizes Attention Deficit/Hyperactivity Disorder (ADHD) as a major public health concern. Encourages Americans to find out more about ADHD, support ADHD mental health services, and seek treatment and support. Expresses the sense of the Senate that the government has a responsibility to: (1) raise awareness about ADHD; and (2) consider ways to improve mental health services for children and adults with ADHD.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres295/BILLS-110sres295ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres295/BILLS-110sres295ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres295/BILLS-110sres295ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/295",
       "votes": []
     },
     {
@@ -18828,6 +20281,53 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres298/BILLS-110sres298ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres298/BILLS-110sres298ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/298",
+      "votes": []
+    },
+    {
+      "id": "sres87-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "87",
+      "title": "A resolution expressing the sense of the Senate that the President should declare lung cancer a public health priority and should implement a comprehensive interagency program to reduce the lung cancer mortality rate by at least 50 percent by 2015.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hagel, Chuck",
+        "party": "R",
+        "state": "NE"
+      },
+      "introduced_date": "2007-02-27",
+      "latest_action": {
+        "date": "2007-08-02",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text as passed Senate: CR S10842)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Case management",
+        "Centers for Disease Control and Prevention (CDC)",
+        "Chemotherapy",
+        "Department of Health and Human Services",
+        "Drug abuse",
+        "Economics and Public Finance",
+        "Education",
+        "Executive reorganization",
+        "Federal advisory bodies",
+        "Federal aid to research",
+        "Federal officials",
+        "Government Operations and Politics",
+        "Graduate education",
+        "Health surveys",
+        "Higher education",
+        "Imaging systems in medicine",
+        "Lung cancer",
+        "Medicaid"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Urges the President to: (1) declare lung cancer a public health priority and immediately lead a coordinated effort to reduce the mortality rate of lung cancer by 50% by 2015; (2) direct the Secretary of Health and Human Services to increase funding for lung cancer research; (3) direct the Secretary of Defense to develop a lung cancer screening and disease management program among members of the Armed Forces and veterans and diagnostic programs for the early detection of lung cancer; (4) appoint the Lung Cancer Scientific and Medical Advisory Committee; and (5) convene a National Lung Cancer Public Health Policy Board to oversee and coordinate all efforts to reduce the lung cancer mortality rate.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres87/BILLS-110sres87ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres87/BILLS-110sres87ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres87/BILLS-110sres87ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/87",
       "votes": []
     },
     {
@@ -18940,6 +20440,76 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres290/BILLS-110sres290ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres290/BILLS-110sres290ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/290",
+      "votes": []
+    },
+    {
+      "id": "sres291-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "291",
+      "title": "A resolution designating the week beginning September 9, 2007, as \"National Historically Black Colleges and Universities Week\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Graham, Lindsey",
+        "party": "R",
+        "state": "SC"
+      },
+      "introduced_date": "2007-08-01",
+      "latest_action": {
+        "date": "2007-08-01",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S10679-10680; text as passed Senate: CR S10679-10680; text of measure as introduced: CR S10628)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Black colleges",
+        "Education",
+        "Higher education",
+        "Minorities",
+        "Special weeks"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates the week beginning September 9, 2007, as National Historically Black Colleges and Universities Week.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres291/BILLS-110sres291ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres291/BILLS-110sres291ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres291/BILLS-110sres291ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/291",
+      "votes": []
+    },
+    {
+      "id": "s1868-110",
+      "congress": 110,
+      "type": "s",
+      "number": "1868",
+      "title": "Second Higher Education Extension Act of 2007",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kennedy, Edward M.",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2007-07-24",
+      "latest_action": {
+        "date": "2007-07-31",
+        "text": "Became Public Law No: 110-51."
+      },
+      "outcome": "enacted",
+      "policy_area": "Education",
+      "subjects": [
+        "Authorization",
+        "Department of Education",
+        "Economics and Public Finance",
+        "Federal aid to education",
+        "Government Operations and Politics",
+        "Higher education",
+        "Scholarships",
+        "Student aid",
+        "Student loan funds"
+      ],
+      "summary_crs": " <p>Second Higher Education Extension Act of 2007 - Amends the Higher Education Extension Act of 2005 to extend the programs under the Higher Education Act of 1965 through October 31, 2007.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ51/PLAW-110publ51.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ51/PLAW-110publ51.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/1868",
       "votes": []
     },
     {
@@ -19069,6 +20639,41 @@
       "votes": []
     },
     {
+      "id": "sres285-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "285",
+      "title": "A resolution designating September 9, 2007, as \"National Fetal Alcohol Spectrum Disorders Awareness Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Murkowski, Lisa",
+        "party": "R",
+        "state": "AK"
+      },
+      "introduced_date": "2007-07-31",
+      "latest_action": {
+        "date": "2007-07-31",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S10525-10526; text as passed Senate: CR S10525-10526; text of measure as introduced: CR S10431)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Alcohol and women",
+        "Drug abuse",
+        "Fetal alcohol syndrome",
+        "Health",
+        "Pregnant women",
+        "Special days",
+        "Women"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates September 9, 2007, as National Fetal Alcohol Spectrum Disorders Awareness Day. </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres285/BILLS-110sres285ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres285/BILLS-110sres285ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres285/BILLS-110sres285ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/285",
+      "votes": []
+    },
+    {
       "id": "sres286-110",
       "congress": 110,
       "type": "sres",
@@ -19138,6 +20743,48 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres287/BILLS-110sres287ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres287/BILLS-110sres287ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/287",
+      "votes": []
+    },
+    {
+      "id": "s966-110",
+      "congress": 110,
+      "type": "s",
+      "number": "966",
+      "title": "Passport Backlog Reduction Act of 2007",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Schumer, Charles E.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2007-03-22",
+      "latest_action": {
+        "date": "2007-07-30",
+        "text": "Became Public Law No: 110-50."
+      },
+      "outcome": "enacted",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Afghanistan",
+        "Civil service retirement",
+        "Department of State",
+        "Foreign service",
+        "Government Operations and Politics",
+        "Immigration",
+        "Iraq",
+        "Labor and Employment",
+        "Middle East and North Africa",
+        "Passports",
+        "Recruiting of employees",
+        "Salaries",
+        "South Asia",
+        "Visas"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the House on July 16, 2007. The summary of that version is repeated here.)</b></p> <p>Passport Backlog Reduction Act of 2007 - Amends the Foreign Service Act of 1980 to authorize the Secretary of State to employ Foreign Service annuitants to assist in the processing of: (1) passport applications, including passport fraud investigations; and (2) visa applications at consular posts with a substantial application backlog.</p> <p>Authorizes the Secretary to waive salary and full-time employment pension restrictions through: (1) September 30, 2008, for consular-related employment; and (2) through September 30, 2009, for passport-related employment.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ50/PLAW-110publ50.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ50/PLAW-110publ50.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/966",
       "votes": []
     },
     {
@@ -19582,6 +21229,43 @@
       "votes": []
     },
     {
+      "id": "s1704-110",
+      "congress": 110,
+      "type": "s",
+      "number": "1704",
+      "title": "First Higher Education Extension Act of 2007",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kennedy, Edward M.",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2007-06-27",
+      "latest_action": {
+        "date": "2007-07-03",
+        "text": "Became Public Law No: 110-44."
+      },
+      "outcome": "enacted",
+      "policy_area": "Education",
+      "subjects": [
+        "Authorization",
+        "Department of Education",
+        "Economics and Public Finance",
+        "Federal aid to education",
+        "Government Operations and Politics",
+        "Higher education",
+        "Scholarships",
+        "Student aid",
+        "Student loan funds"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>First Higher Education Extension Act of 2007 - Amends the Higher Education Extension Act of 2005 to extend the programs under the Higher Education Act of 1965 through July 31, 2007.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ44/PLAW-110publ44.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ44/PLAW-110publ44.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/1704",
+      "votes": []
+    },
+    {
       "id": "hr1830-110",
       "congress": 110,
       "type": "hr",
@@ -19664,6 +21348,40 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres259/BILLS-110sres259ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres259/BILLS-110sres259ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/259",
+      "votes": []
+    },
+    {
+      "id": "sres256-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "256",
+      "title": "A resolution designating June 2007 as \"National Aphasia Awareness Month\" and supporting efforts to increase awareness of aphasia.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Biden, Joseph R., Jr.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2007-06-26",
+      "latest_action": {
+        "date": "2007-06-26",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S8521; text as passed Senate: CR S8521; text of measure as introduced: CR S8418)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Brain",
+        "Health",
+        "Neurology",
+        "Special months",
+        "Speech disorders",
+        "Stroke"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Expresses support for the goals and ideals of National Aphasia Awareness Month in June 2007. </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres256/BILLS-110sres256ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres256/BILLS-110sres256ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres256/BILLS-110sres256ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/256",
       "votes": []
     },
     {
@@ -19883,6 +21601,42 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/110/plaws/publ38/PLAW-110publ38.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/676",
+      "votes": []
+    },
+    {
+      "id": "sres242-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "242",
+      "title": "A resolution celebrating the accomplishments of title IX of the Education Amendments of 1972, also known as the Patsy Takemoto Mink Equal Opportunity in Education Act, and recognizing the need to continue pursuing the goal of educational opportunities for women and girls.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Murray, Patty",
+        "party": "D",
+        "state": "WA"
+      },
+      "introduced_date": "2007-06-20",
+      "latest_action": {
+        "date": "2007-06-20",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S8153-8154; text as passed Senate: CR S8153-8154; text of measure as introduced: CR S8089)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Civil Rights and Liberties, Minority Issues",
+      "subjects": [
+        "College sports",
+        "Discrimination in education",
+        "Education",
+        "Higher education",
+        "Sex discrimination",
+        "Sports and Recreation",
+        "Women",
+        "Women athletes"
+      ],
+      "summary_crs": " <p>Celebrates: (1) the accomplishments of title IX of the Education Amendments of 1972, also known as the Patsy Takemoto Mink Equal Opportunity in Education Act, in increasing opportunities for women and girls in all facets of education; and (2) the magnificent accomplishments of women and girls in sports.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres242/BILLS-110sres242ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres242/BILLS-110sres242ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres242/BILLS-110sres242ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/242",
       "votes": []
     },
     {
@@ -20222,6 +21976,39 @@
       "text_url_xml": "https://www.congress.gov/110/bills/s1104/BILLS-110s1104eah.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/s1104/BILLS-110s1104eah.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/1104",
+      "votes": []
+    },
+    {
+      "id": "sres213-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "213",
+      "title": "A resolution supporting National Men's Health Week.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Crapo, Mike",
+        "party": "R",
+        "state": "ID"
+      },
+      "introduced_date": "2007-05-22",
+      "latest_action": {
+        "date": "2007-06-14",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S7776-7777; text as passed Senate: CR S7776-7777)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Health",
+        "Health education",
+        "Men",
+        "Preventive medicine",
+        "Special weeks"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Expresses support for the annual National Men's Health Week.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres213/BILLS-110sres213ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres213/BILLS-110sres213ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres213/BILLS-110sres213ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/213",
       "votes": []
     },
     {
@@ -21067,6 +22854,53 @@
       "votes": []
     },
     {
+      "id": "hr1681-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "1681",
+      "title": "American National Red Cross Governance Modernization Act of 2007",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Lantos, Tom",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2007-03-26",
+      "latest_action": {
+        "date": "2007-05-11",
+        "text": "Became Public Law No: 110-26."
+      },
+      "outcome": "enacted",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Auditing",
+        "Charities",
+        "Commerce",
+        "Congressional reporting requirements",
+        "Corporate governance",
+        "Corporation directors",
+        "Disaster relief",
+        "Electronic data interchange",
+        "Emergency Management",
+        "Finance and Financial Sector",
+        "Government Operations and Politics",
+        "Government paperwork",
+        "International relief",
+        "Law",
+        "Nongovernmental organizations",
+        "Ombudsman",
+        "Presidential appointments",
+        "Science, Technology, Communications",
+        "Social Welfare"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the Senate on April 23, 2007. The summary of that version is repeated here.)</b></p><p>American National Red Cross Governance Modernization Act of 2007 - (Sec. 2) Expresses the sense of Congress that: (1) charitable organizations are an indispensable part of American society; (2) such organizations must maintain the trust of the American public by fostering effective governance and transparency; (3) the American National Red Cross (ANRC) is and will remain a federally chartered instrumentality of the United States; and (4) the ANRC should maintain appropriate communications with state regulators of charitable organizations and cooperate with such regulators.</p><p>(Sec. 3) Amends the charter of the ANRC to designate the ANRC as a federally chartered instrumentality of the United States and authorize it to conduct its business and affairs as the American Red Cross in any jurisdiction and to conduct other activities consistent with its traditional purposes.</p><p>(Sec. 5) Authorizes the ANRC corporation (corporation), rather than its board of directors, to prescribe policies and regulations relating to ANRC chapters. Provides for the selection of delegates to the annual meeting of the ANRC, instead of its national convention.</p><p>(Sec. 6) Modifies provisions relating to the ANRC board of governors to restate the role of the board as the governing body of the corporation and to revise provisions relating to its size, composition, and relationship with management. Establishes an Advisory Council to advise, report to, and meet with the board of governors.</p><p>(Sec. 7) Authorizes the corporation to adopt policies in lieu of bylaws. </p><p>(Sec. 8) Defines the annual meeting of the corporation as the annual meeting of the delegates of the chapters (instead of the national convention). Designates the time and place of the annual meeting and determines the voting guidelines and requirements for such meeting. </p><p>(Sec. 9) Eliminates the requirement that the number of trustees overseeing the ANRC endowment fund be nine. Grants the corporation, rather than the board of governors, the authority to prescribe policies and regulations on terms and tenure of office, accountability, and expenses of the board of trustees. </p><p>(Sec. 10) Requires the corporation to submit a report to the Secretary of Defense on the activities of the corporation during the preceding fiscal year, including a complete, itemized report of all receipts and expenditures. </p><p>(Sec. 11) Authorizes the Comptroller General to review the corporation's involvement in any federal program or activity. </p><p>Requires the corporation to establish an Office of the Ombudsman. Requires such Office to submit an annual report to specified congressional committees on trends and systemic matters that the Office has identified as confronting the corporation.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ26/PLAW-110publ26.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ26/PLAW-110publ26.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/1681",
+      "votes": []
+    },
+    {
       "id": "sres194-110",
       "congress": 110,
       "type": "sres",
@@ -21259,6 +23093,97 @@
       "votes": []
     },
     {
+      "id": "hr137-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "137",
+      "title": "Animal Fighting Prohibition Enforcement Act of 2007",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Gallegly, Elton",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2007-01-04",
+      "latest_action": {
+        "date": "2007-05-03",
+        "text": "Became Public Law No: 110-22."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Advertising",
+        "Animals",
+        "Birds",
+        "Commerce",
+        "Dogs",
+        "Evidence (Law)",
+        "Fines (Penalties)",
+        "Foreign Trade and International Finance",
+        "Gambling",
+        "Government Operations and Politics",
+        "Interstate commerce",
+        "Law",
+        "Postal service",
+        "Protection of animals",
+        "Sports and Recreation",
+        "State laws"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the House on March 26, 2007. The summary of that version is repeated here.)</b></p><p>Animal Fighting Prohibition Enforcement Act of 2007 - Amends the federal criminal code to impose a fine and/or prison term of up to three years for violations of the Animal Welfare Act relating to: (1) sponsoring or exhibiting an animal in an animal fighting venture; (2) buying, selling, transporting, delivering, or receiving for purposes of transportation, in interstate or foreign commerce, any dog or other animal for participation in an animal fighting venture; and (3) using the mails or other instrumentality of interstate commerce to promote or further an animal fighting venture. </p><p>Amends the Animal Welfare Act to prohibit knowingly selling, buying, transporting, or delivering, in interstate or foreign commerce, a knife, a gaffe, or any other sharp instrument for attachment to the leg of a bird for use in an animal fighting venture.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ22/PLAW-110publ22.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ22/PLAW-110publ22.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/137",
+      "votes": []
+    },
+    {
+      "id": "hr727-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "727",
+      "title": "Trauma Care Systems Planning and Development Act of 2007",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Green, Gene",
+        "party": "D",
+        "state": "TX"
+      },
+      "introduced_date": "2007-01-30",
+      "latest_action": {
+        "date": "2007-05-03",
+        "text": "Became Public Law No: 110-23."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Access to health care",
+        "Ambulances",
+        "Authorization",
+        "Biological warfare",
+        "Child health",
+        "Communication in medicine",
+        "Congressional reporting requirements",
+        "Continuing education",
+        "Crime and Law Enforcement",
+        "Curricula",
+        "Data banks",
+        "Department of Health and Human Services",
+        "Disasters",
+        "Distance education",
+        "Economics and Public Finance",
+        "Education",
+        "Emergency Management",
+        "Emergency medicine",
+        "Families"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the Senate on March 29, 2007. The summary of that version is repeated here.)</b></p><p>Trauma Care Systems Planning and Development Act of 2007 - (Sec. 2) Amends the Public Health Service Act to direct the Secretary of Health and Human Services to: (1) collect, compile, and disseminate information on achievements and problems in providing trauma care and emergency medical services; and (2) promote the collection and categorization of trauma data in a consistent and standardized manner.</p><p>(Sec. 3) Removes authorization for the National Clearinghouse on Trauma Care and Emergency Medical Services. <p>(Sec. 4) Allows the Secretary to make grants to public and nonprofit private entities to carry out demonstration projects to improve emergency medical services in rural areas by increasing communication and coordination with state trauma systems. <p>(Sec. 5) Authorizes the Secretary, acting through the Administrator of the Health Resources and Services Administration, to make grants to states, political subdivisions, or consortia thereof to improve access to and enhance the development of trauma care systems. Requires grant funds be used to: (1) integrate and broaden the reach of such a system; (2) strengthen, develop, and improve an existing system; (3) expand communications between the system and emergency medical services through improved equipment or a telemedicine system; (4) improve data collection and retention; or (5) increase education, training, and technical assistance opportunities. Requires the Secretary to give preference in awarding grants to applicants that: (1) have developed a process, using national standards, for designating trauma centers; (2) recognize protocols for the delivery of seriously injured patients to trauma centers; (3) implement a process for evaluating the performance of the trauma system; and (4) agree to participate in specified information systems by collecting, providing, and sharing information. Requires the Secretary to give priority to applicants that will use the grants to focus on improving access to trauma care systems. Requires the Secretary to give special consideration to projects that demonstrate strong state or local support. <p> (Sec. 6) Revises the matching requirements for states to be eligible for grants to improve emergency medical services by decreasing the amount of matching funds required after the fourth and subsequent years of grant payments to the state. <p>(Sec. 7) Prohibits the Secretary from making trauma care grants to a state unless the state's emergency medical services plan coordinates planning for trauma systems with state disaster emergency planning and bioterrorism hospital preparedness planning. Requires the Secretary to update the model plan for the designation of trauma centers and for triage, transfer, and transportation policies. <p>(Sec. 8) Prohibits the Secretary from making trauma grants to a state unless the state submits to the Secretary any changes to, and any plans to address deficiencies in, the trauma care component. <p>(Sec. 9) Removes the requirement that states, in order to receive trauma grant funds, must agree not to expend such payments to purchase any major medical or communication equipment, ambulances, or aircraft. <p>(Sec. 10) Removes provisions related to annual reporting requirements for states. <p>(Sec. 11) Sets forth reporting requirements. <p> <p>(Sec. 12) Authorizes appropriation for FY2008-FY2012. <p>(Sec. 13) Authorizes appropriations for FY2008-FY2012 for residency training programs in emergency medicine. <p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ23/PLAW-110publ23.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ23/PLAW-110publ23.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/727",
+      "votes": []
+    },
+    {
       "id": "sres186-110",
       "congress": 110,
       "type": "sres",
@@ -21424,6 +23349,40 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/110/plaws/publ21/PLAW-110publ21.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/1003",
+      "votes": []
+    },
+    {
+      "id": "sres150-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "150",
+      "title": "A resolution expressing the sense of the Senate that public servants should be commended for their dedication and continued service to the Nation during Public Service Recognition Week, May 7 through 13, 2007.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Akaka, Daniel K.",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2007-04-17",
+      "latest_action": {
+        "date": "2007-05-02",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S5523-5524)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congressional tributes",
+        "Federal employees",
+        "Government Operations and Politics",
+        "Local employees",
+        "Special weeks",
+        "State employees"
+      ],
+      "summary_crs": " <p>Commends public servants for their outstanding contributions to nation during Public Service Recognition Week and throughout the year.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres150/BILLS-110sres150ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres150/BILLS-110sres150ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres150/BILLS-110sres150ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/150",
       "votes": []
     },
     {
@@ -22462,6 +24421,43 @@
       "votes": []
     },
     {
+      "id": "sres147-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "147",
+      "title": "A resolution congratulating the University of Tennessee women's basketball team for winning the 2007 NCAA Division I Women's Basketball Championship.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Alexander, Lamar",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2007-04-12",
+      "latest_action": {
+        "date": "2007-04-12",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S4455-4456; text as passed Senate: CR S4455-4456; text of measure as introduced:  CR S4452)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Basketball",
+        "College sports",
+        "Congressional tributes",
+        "Education",
+        "Higher education",
+        "Sports and Recreation",
+        "Tennessee",
+        "Women",
+        "Women athletes"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Congratulates the University of Tennessee women's basketball team for winning the 2007 NCAA Division I Women's Basketball Championship. </p><p></p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres147/BILLS-110sres147ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres147/BILLS-110sres147ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres147/BILLS-110sres147ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/147",
+      "votes": []
+    },
+    {
       "id": "sres148-110",
       "congress": 110,
       "type": "sres",
@@ -22777,6 +24773,48 @@
       "votes": []
     },
     {
+      "id": "s494-110",
+      "congress": 110,
+      "type": "s",
+      "number": "494",
+      "title": "NATO Freedom Consolidation Act of 2007",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lugar, Richard G.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2007-02-06",
+      "latest_action": {
+        "date": "2007-04-09",
+        "text": "Became Public Law No: 110-17."
+      },
+      "outcome": "enacted",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Albania",
+        "Armed Forces and National Security",
+        "Arms sales",
+        "Central Asia",
+        "Collective security",
+        "Croatia",
+        "Economic assistance",
+        "Europe",
+        "Foreign Trade and International Finance",
+        "Georgia (Republic)",
+        "Macedonia",
+        "Military assistance",
+        "NATO countries",
+        "Ukraine"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the Senate on March 15, 2007. The summary of that version is repeated here.)</b></p> <p>NATO Freedom Consolidation Act of 2007 - Designates Albania, Croatia, Georgia, Macedonia (FYROM), and Ukraine as eligible to receive assistance under the NATO Participation Act of 1994.</p> <p>States that such designation: (1) is in addition to the designation of Poland, Hungary, the Czech Republic, and Slovenia pursuant to the NATO Enlargement Facilitation Act of 1996, the designation of Romania, Estonia, Latvia, Lithuania, and Bulgaria pursuant to the European Security Act of 1998, and the designation of Slovakia pursuant to the Gerald B. H. Solomon Freedom Consolidation Act of 2002 as eligible to receive assistance under the NATO Participation Act of 1994; and (2) shall not preclude the designation by the President of other countries as eligible to receive assistance under the NATO Participation Act of 1994.</p> <p>Authorizes FY2008 appropriations for security assistance to: (1) Albania; (2) Croatia; (3) Georgia; (4) Macedonia (FYROM); and (5) Ukraine.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ17/PLAW-110publ17.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ17/PLAW-110publ17.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/494",
+      "votes": []
+    },
+    {
       "id": "sres136-110",
       "congress": 110,
       "type": "sres",
@@ -22882,6 +24920,39 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres133/BILLS-110sres133ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres133/BILLS-110sres133ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/133",
+      "votes": []
+    },
+    {
+      "id": "sres126-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "126",
+      "title": "A resolution designating April 2007 as \"Financial Literacy Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Akaka, Daniel K.",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2007-03-27",
+      "latest_action": {
+        "date": "2007-03-27",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S3980-3981; text as passed Senate: CR S3980-3981; text of measure as introduced: CR S3846)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Finance and Financial Sector",
+        "Financial planning",
+        "Personal budgets",
+        "Saving and investment",
+        "Special months"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates April 2007 as Financial Literacy Month to raise public awareness about the importance of financial education in the United States and the serious consequences that may result from a lack of understanding about personal finances.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres126/BILLS-110sres126ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres126/BILLS-110sres126ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres126/BILLS-110sres126ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/126",
       "votes": []
     },
     {
@@ -23069,6 +25140,42 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres119/BILLS-110sres119ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres119/BILLS-110sres119ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/119",
+      "votes": []
+    },
+    {
+      "id": "sres120-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "120",
+      "title": "A resolution designating March 22, 2007, as National Rehabilitation Counselors Appreciation Day.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Chambliss, Saxby",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2007-03-22",
+      "latest_action": {
+        "date": "2007-03-22",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S3647-3648; text as passed Senate: CR S3647-3648; text of measure as introduced: CR S3630-3631)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congressional tributes",
+        "Counseling",
+        "Disabled",
+        "Rehabilitation of the disabled",
+        "Social Welfare",
+        "Social work",
+        "Special days",
+        "Vocational rehabilitation"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>Designates March 22, 2007, as National Rehabilitation Counselors Appreciation Day. Commends the hard work and dedication that rehabilitation counselors provide and the efforts that professional organizations have made to assist those requiring rehabilitation.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres120/BILLS-110sres120ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres120/BILLS-110sres120ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres120/BILLS-110sres120ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/120",
       "votes": []
     },
     {
@@ -23301,6 +25408,42 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres102/BILLS-110sres102ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres102/BILLS-110sres102ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/102",
+      "votes": []
+    },
+    {
+      "id": "hr335-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "335",
+      "title": "To designate the facility of the United States Postal Service located at 152 North 5th Street in Laramie, Wyoming, as the \"Gale W. McGee Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Cubin, Barbara [R-WY-At Large]",
+        "party": "R",
+        "state": "WY"
+      },
+      "introduced_date": "2007-01-09",
+      "latest_action": {
+        "date": "2007-03-07",
+        "text": "Became Public Law No: 110-8."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congress",
+        "Congressional tributes",
+        "Ex-Members of Congress",
+        "Government Operations and Politics",
+        "Names",
+        "Postal facilities",
+        "Senate",
+        "Wyoming"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Designates the facility of the United States Postal Service located at 152 North 5th Street in Laramie, Wyoming, as the \"Gale W. McGee Post Office.\" </p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ8/PLAW-110publ8.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ8/PLAW-110publ8.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/335",
       "votes": []
     },
     {
@@ -23624,6 +25767,77 @@
       "votes": []
     },
     {
+      "id": "sres91-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "91",
+      "title": "A resolution designating March 2, 2007, as \"Read Across America Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Reed, Jack",
+        "party": "D",
+        "state": "RI"
+      },
+      "introduced_date": "2007-02-28",
+      "latest_action": {
+        "date": "2007-02-28",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2434; text as passed Senate: CR S2434; text of measure as introduced: CR S2378)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Anniversaries",
+        "Arts, Culture, Religion",
+        "Authors and authorship",
+        "Books",
+        "Congressional tributes",
+        "Education",
+        "Elementary and secondary education",
+        "Families",
+        "Parent and child",
+        "Reading",
+        "Special days"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates March 2, 2007, as Read Across America Day.</p> <p>Honors Theodor Geisel (Dr. Seuss) for his success in encouraging children to discover the joy of reading.</p> <p>Honors the 10th anniversary of Read Across America Day.</p> <p>Encourages parents to read with their children for at least 30 minutes on Read Across America Day.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres91/BILLS-110sres91ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres91/BILLS-110sres91ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres91/BILLS-110sres91ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/91",
+      "votes": []
+    },
+    {
+      "id": "hr742-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "742",
+      "title": "Antitrust Modernization Commission Extension Act of 2007",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Conyers, John, Jr.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2007-01-31",
+      "latest_action": {
+        "date": "2007-02-26",
+        "text": "Became Public Law No: 110-6."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commerce",
+      "subjects": [
+        "Antitrust law",
+        "Federal advisory bodies",
+        "Government Operations and Politics",
+        "Governmental investigations"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Antitrust Modernization Commission Extension Act of 2007 - Amends the Antitrust Modernization Commission Act of 2002 to extend the termination date of the Antitrust Modernization Commission to 60 (currently, 30) days after the Commission's report to the President and Congress.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ6/PLAW-110publ6.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ6/PLAW-110publ6.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/742",
+      "votes": []
+    },
+    {
       "id": "hjres20-110",
       "congress": 110,
       "type": "hjres",
@@ -23815,6 +26029,36 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/110/plaws/publ2/PLAW-110publ2.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/475",
+      "votes": []
+    },
+    {
+      "id": "hr2-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "2",
+      "title": "Fair Minimum Wage Act of 2007",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Miller, George",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2007-01-05",
+      "latest_action": {
+        "date": "2007-02-01",
+        "text": "Passed Senate with an amendment by Yea-Nay Vote. 94 - 3. Record Vote Number: 42. (text: CR S1500-1511)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Labor and Employment",
+      "subjects": [
+        "Minimum wages",
+        "Northern Mariana Islands"
+      ],
+      "summary_crs": " <p>Fair Minimum Wage Act of 2007 - Amends the Fair Labor Standards Act of 1938 to increase the federal minimum wage to: (1) $5.85 an hour, beginning on the 60th day after enactment of this Act; (2) $6.55 an hour, beginning 12 months after that 60th day; and (3) $7.25 an hour, beginning 24 months after that 60th day.</p> <p>Applies federal minimum wage requirements to the Commonwealth of the Northern Mariana Islands. Sets forth a transition period during which a specified minimum wage in the Commonwealth shall be gradually increased to equal the federal minimum wage.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/hr2/BILLS-110hr2eas.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/bills/hr2/BILLS-110hr2eas.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/2",
       "votes": []
     },
     {
