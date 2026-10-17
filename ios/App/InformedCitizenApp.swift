@@ -11,6 +11,7 @@ struct InformedCitizenApp: App {
   @State private var billsModel: BillsFeatureModel
   @State private var representativesModel: RepresentativesFeatureModel
   @State private var calendarModel: CalendarFeatureModel
+  @State private var settingsModel: SettingsFeatureModel
 
   init() {
     let screenshotMode = ProcessInfo.processInfo.arguments.contains("-SCREENSHOT_MODE")
@@ -44,6 +45,14 @@ struct InformedCitizenApp: App {
         CalendarFeatureModel()
       }
     )
+    _settingsModel = State(
+      initialValue: withDependencies {
+        $0.appearancePreferenceClient = screenshotMode ? .previewValue : .live()
+        $0.savedRepresentativesClient = screenshotMode ? .previewValue : .live()
+      } operation: {
+        SettingsFeatureModel()
+      }
+    )
   }
 
   var body: some Scene {
@@ -51,7 +60,8 @@ struct InformedCitizenApp: App {
       RootView(
         model: billsModel,
         representativesModel: representativesModel,
-        calendarModel: calendarModel
+        calendarModel: calendarModel,
+        settingsModel: settingsModel
       )
       .tint(ICDesign.accent)
       .presentsWebDestinationsInApp()

@@ -24,6 +24,7 @@
 		C2D3E4F5A60718293B4C5D6E /* MemberDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C3D4E5F60718293A4B5C6D /* MemberDetailView.swift */; };
 		D3E4F5A60718293B4C5D6E7F /* InAppBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4E5F60718293A4B5C6D7E /* InAppBrowser.swift */; };
 		E4F5A60718293B4C5D6E7F80 /* zip_to_cd.json in Resources */ = {isa = PBXBuildFile; fileRef = D4E5F60718293A4B5C6D7E8F /* zip_to_cd.json */; };
+		F6A7B8C9D0E1122334455667 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6A7B8C9D0E11223344556 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B2C3D4E5F60718293A4B5C6D /* MemberDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MemberDetailView.swift; path = Representatives/MemberDetailView.swift; sourceTree = "<group>"; };
 		C3D4E5F60718293A4B5C6D7E /* InAppBrowser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InAppBrowser.swift; sourceTree = "<group>"; };
 		D4E5F60718293A4B5C6D7E8F /* zip_to_cd.json */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json; name = zip_to_cd.json; path = ../android/feature/reps/src/main/assets/zip_to_cd.json; sourceTree = SOURCE_ROOT; };
+		E5F6A7B8C9D0E11223344556 /* SettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = Settings/SettingsView.swift; sourceTree = "<group>"; };
 		B6091E9CA60206E542D0FAE6 /* InformedCitizenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InformedCitizenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,7 @@
 				B2C3D4E5F60718293A4B5C6D /* MemberDetailView.swift */,
 				A1B2C3D4E5F60718293A4B5C /* RepresentativesView.swift */,
 				0A14020CF6C877086869E3D1 /* RootView.swift */,
+				E5F6A7B8C9D0E11223344556 /* SettingsView.swift */,
 			);
 			name = App;
 			path = App;
@@ -247,6 +250,7 @@
 				C2D3E4F5A60718293B4C5D6E /* MemberDetailView.swift in Sources */,
 				F1A2B3C4D5E60718293A4B5C /* RepresentativesView.swift in Sources */,
 				B63BC26482929D807184C0E6 /* RootView.swift in Sources */,
+				F6A7B8C9D0E1122334455667 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
