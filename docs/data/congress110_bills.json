@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T15:20:19Z",
+  "generated_at": "2026-10-18T15:41:24Z",
   "congress": 110,
   "votes_coverage": false,
   "bills": [
@@ -2554,6 +2554,49 @@
       "votes": []
     },
     {
+      "id": "hr2851-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "2851",
+      "title": "Michelle's Law",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Hodes, Paul W.",
+        "party": "D",
+        "state": "NH"
+      },
+      "introduced_date": "2007-06-25",
+      "latest_action": {
+        "date": "2008-10-09",
+        "text": "Became Public Law No: 110-381."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Child health",
+        "Education",
+        "Employee health benefits",
+        "Evidence (Law)",
+        "Families",
+        "Finance and Financial Sector",
+        "Health insurance",
+        "Health insurance continuation",
+        "Higher education",
+        "Labor and Employment",
+        "Law",
+        "Leave of absence",
+        "Physicians",
+        "Sick leave",
+        "Students"
+      ],
+      "summary_crs": " <p>Michelle's Law - Amends the Employee Retirement Income Security Act of 1974 (ERISA), the Public Health Service Act, and the Internal Revenue Code to prohibit a group health plan from terminating coverage of a dependent child due to a medically necessary leave of absence from, or any other change in enrollment at, a postsecondary education institution that commences while such child is suffering from a serious illness or injury and that causes such child to lose student status for purposes of coverage under the plan, before the earlier of: (1) one year after the first day of the medically necessary leave of absence; or (2) the date on which such coverage would otherwise terminate under the terms of the plan. Requires written certification by the child's treating physician. Directs group health plans to include notice of the terms of this Act with any notice regarding a requirement for certification of student status for coverage under the plan.</p><p>Provides that coverage under this Act continues in the manner in which the participant or beneficiary is covered under the plan changes so long as the change of coverage continues to provide coverage of beneficiaries as dependent children.</p><p>Applies such requirement to coverage offered in the individual market. </p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ381/PLAW-110publ381.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ381/PLAW-110publ381.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/2851",
+      "votes": []
+    },
+    {
       "id": "hjres62-110",
       "congress": 110,
       "type": "hjres",
@@ -2754,6 +2797,51 @@
       "votes": []
     },
     {
+      "id": "hr5265-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "5265",
+      "title": "Paul D. Wellstone Muscular Dystrophy Community Assistance, Research, and Education Amendments of 2008",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Engel, Eliot L.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2008-02-07",
+      "latest_action": {
+        "date": "2008-10-08",
+        "text": "Became Public Law No: 110-361."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Commemorations",
+        "Communication in medicine",
+        "Congress",
+        "Congressional reporting requirements",
+        "Congressional tributes",
+        "Ex-Members of Congress",
+        "Government Operations and Politics",
+        "Government publicity",
+        "Health education",
+        "Health surveys",
+        "Medical research",
+        "Medical statistics",
+        "Muscular diseases",
+        "Names",
+        "Research centers",
+        "Science, Technology, Communications",
+        "Senate"
+      ],
+      "summary_crs": " <p>Paul D. Wellstone Muscular Dystrophy Community Assistance, Research, and Education Amendments of 2008 - Amends the Public Health Service Act to designate centers of excellence for research on various forms of muscular dystrophy as Paul D. Wellstone Muscular Dystrophy Cooperative Research Centers.</p><p>Authorizes the Muscular Dystrophy Interagency Coordinating Committee to evaluate the potential need to enhance the clinical research infrastructure required to test emerging therapies for the various forms of muscular dystrophy.</p><p>Authorizes the Secretary of Health and Human Services to ensure that any data on patients that is collected as part of the Muscular Dystrophy Surveillance, Tracking and Research Network (MD STARnet) is regularly updated to reflect changes in patient condition over time. Requires the Director of the Centers for Disease Control and Prevention (CDC) to report to the appropriate congressional committees on MD STARnet and data collection. Authorizes the Secretary to provide prospective health outcome data on the health and survival of people with muscular dystrophy.</p><p>Authorizes the Secretary, in carrying out a program to provide information and education on muscular dystrophy to health professionals and the general public, to: (1) partner with leaders in the muscular dystrophy patient community; (2) cooperate with professional organizations and the patient community to develop, issue, and update care considerations for Duchenne-Baker muscular dystrophy and other forms of muscular dystrophy; and (3) widely disseminate such care considerations as broadly as possible, including through partnership opportunities with the muscular dystrophy patient community.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ361/PLAW-110publ361.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ361/PLAW-110publ361.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/5265",
+      "votes": []
+    },
+    {
       "id": "hr5872-110",
       "congress": 110,
       "type": "hr",
@@ -2787,6 +2875,48 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/110/plaws/publ363/PLAW-110publ363.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/5872",
+      "votes": []
+    },
+    {
+      "id": "hr6370-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "6370",
+      "title": "Oregon Surplus Federal Land Act of 2008",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. DeFazio, Peter A.",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2008-06-25",
+      "latest_action": {
+        "date": "2008-10-08",
+        "text": "Became Public Law No: 110-364."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Coast guard",
+        "Commemorations",
+        "Easements",
+        "Historic sites",
+        "History",
+        "Indian lands",
+        "Islands",
+        "Land transfers",
+        "Law",
+        "Lighthouses and lightships",
+        "Marine and coastal resources, fisheries",
+        "Minorities",
+        "Oregon",
+        "Transportation and Public Works"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>Oregon Surplus Federal Land Act of 2008 - Requires transfer of administrative jurisdiction over Coast Guard lands in Coos County, Oregon (including Cape Arago Light Station on Chief's Island), in the areas commonly known as Gregory Point and Chief's Island, to the Secretary of the Interior to hold in trust for the benefit of the Confederated Tribes of the Coos, Lower Umpqua, and Siuslaw Indians. Requires that, before the transfer, the Coast Guard commandant comply with all environmental and cultural resources laws. Requires that the land be included in the reservation of those tribes. Allows the Coast Guard to retain easements for access to aids to navigation.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ364/PLAW-110publ364.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ364/PLAW-110publ364.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/6370",
       "votes": []
     },
     {
@@ -3681,6 +3811,100 @@
       "votes": []
     },
     {
+      "id": "hr1424-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "1424",
+      "title": "A bill to provide authority for the Federal Government to purchase and insure certain types of troubled assets for the purposes of providing stability to and preventing disruption in the economy and financial system and protecting taxpayers, to amend the Internal Revenue Code of 1986 to provide incentives for energy production and conservation, to extend certain expiring provisions, to provide individual income tax relief, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Kennedy, Patrick J.",
+        "party": "D",
+        "state": "RI"
+      },
+      "introduced_date": "2007-03-09",
+      "latest_action": {
+        "date": "2008-10-03",
+        "text": "Became Public Law No: 110-343."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Access to health care",
+        "Accounting",
+        "Administrative procedure",
+        "Advice and consent of the Senate",
+        "Agricultural machinery",
+        "Agricultural research",
+        "Agriculture and Food",
+        "Air pollution control",
+        "Alabama",
+        "Alaska",
+        "Alcohol as fuel",
+        "Alcohol tax",
+        "Alcoholic beverages",
+        "Alternative energy sources",
+        "Ambulatory care",
+        "American Samoa",
+        "Apartment houses",
+        "Apprenticeship",
+        "Arkansas"
+      ],
+      "summary_crs": " <p><b>Division A: Emergency Economic Stabilization</b> - Emergency Economic Stabilization Act of 2008 - <b>Title I: Troubled Assets Relief Program</b> - (Sec. 101) Authorizes the Secretary of the Treasury (Secretary) to establish the Troubled Asset Relief Program (TARP) to purchase troubled assets from any financial institution, in accordance with terms, conditions, policies, and procedures the Secretary develops.</p><p>Directs the Secretary to establish within the Office of Domestic Finance of the Department of the Treasury an Office of Financial Stability, through which TARP shall be implemented.</p><p>Authorizes the Secretary to: (1) designate financial institutions as financial agents of the federal government; and (2) establish vehicles to purchase, hold, and sell troubled assets and issue obligations.</p><p>Directs the Secretary to prevent unjust enrichment of participating financial institutions, including any sale of a troubled asset (with certain exceptions) to the Secretary at a price higher than what the seller paid to purchase the asset. Exempts from this requirement any troubled assets acquired in a merger or acquisition, or a purchase of assets from a financial institution that is either under conservatorship or receivership, or that has initiated bankruptcy proceedings.</p><p>(Sec. 102) Requires the Secretary, if TARP is established, to establish also a program to guarantee troubled assets originated or issued before March 14, 2008, including mortgage-backed securities.</p><p>Establishes the Troubled Assets Insurance Financing Fund for deposit of premiums collected from participating financial institutions in order to fund such guarantee program.</p><p>(Sec. 104) Establishes the Financial Stability Oversight Board to review and report to Congress on the authorities created under this Act and their effect in assisting American families in preserving home ownership, stabilizing financial markets, and protecting taxpayers.</p><p>(Sec. 105) Requires the Secretary to report periodically to Congress regarding: (1) transactions (tranche reports); (2) purchases; (3) liabilities; and (4) the status of regulatory oversight over financial markets.</p><p>(Sec. 106) Authorizes the Secretary to enter into financial transactions regarding any troubled asset purchased under this Act. Requires deposit into the Treasury of all revenues and proceeds from the sale of troubled assets.</p><p>(Sec. 107) Authorizes the Secretary to waive specific provisions of the Federal Acquisition Regulation if urgent and compelling circumstances make compliance with them contrary to the public interest. Requires submission of such a waiver, and its justification, to certain congressional oversight committees.</p><p>Requires the Secretary, in any solicitation or contract containing such a waiver, to develop and implement standards and procedures to ensure the inclusion and utilization of minorities and women, and minority- and women-owned businesses, in that solicitation or contract, including contracts to asset managers, servicers, property managers, and other service providers or expert consultants.</p><p>Makes the Federal Deposit Insurance Corporation (FDIC) eligible for, and requires its consideration in, the selection of asset managers for residential mortgage loans and residential mortgage-backed securities. Requires the Secretary to reimburse the FDIC for any services rendered.</p><p>(Sec. 108) Directs the Secretary to prescribe regulations or guidelines to address and manage or to prohibit conflicts-of-interest that may arise in connection with the administration and execution of the authorities under this Act.</p><p>(Sec. 109) Directs the Secretary, to the extent that he or she acquires mortgages, mortgage-backed securities, and other assets secured by residential real estate, and the Federal Housing Finance Agency, as conservator of the Federal National Mortgage Association (Fannie Mae) and the Federal Home Loan Mortgage Corporation (Freddie Mac), to implement a plan to maximize assistance for home owners and encourage the servicers of the underlying mortgages to take advantage of the HOPE for Homeowners Program under the National Housing Act or other available programs to minimize foreclosures. Authorizes the Secretary to use loan guarantees and credit enhancements to facilitate loan modifications to prevent avoidable foreclosures.</p><p>(Sec. 110) Directs federal property managers (the Federal Housing Finance Agency, as conservator of Fannie Mae and Freddie Mac, the FDIC, and the Board of Governors of the Federal Reserve System), the FDIC, and the Board of Governors of the Federal Reserve System), to the extent that they hold, own, or control mortgages, mortgage-backed securities, and other assets secured by residential real estate, including multifamily housing, to implement a plan that seeks to maximize assistance for homeowners and use its authority to encourage the servicers of the underlying mortgages to take advantage of the HOPE for Homeowners Program or other available programs to minimize foreclosures.</p><p>(Sec. 111) Subjects any financial institution that sells troubled assets to the Secretary to specified executive compensation requirements.</p><p>Directs the Secretary to require a financial institution to meet appropriate standards for executive compensation and corporate governance whenever: (1) the purposes of this Act are best met through direct purchases of troubled assets from an individual financial institution where no bidding process or market prices are available; and (2) the Secretary receives a meaningful equity or debt position in the financial institution as a result of the transaction.</p><p>Requires such standards to include: (1) limits on compensation that exclude incentives for senior executive officers to take unnecessary and excessive risks that threaten the financial institution's value during the period the Secretary holds an equity or debt position in it; (2) a provision for the recovery by the financial institution of any bonus or incentive compensation paid to a senior executive officer based on statements of earnings, gains, or other criteria that are later proven to be materially inaccurate; and (3) a prohibition on the institution's making any golden parachute payment to its senior executive officer during the period that the Secretary holds an equity or debt position in the financial institution.</p><p>Requires the Secretary, upon a determination that specified auction purchases of troubled assets best meet the purposes of this Act, to prohibit, for certain financial institutions, any new employment contract with a senior executive officer that provides a golden parachute in the event of an involuntary termination, bankruptcy filing, insolvency, or receivership.</p><p>(Sec. 112) Instructs the Secretary to coordinate with foreign financial authorities and central banks to work toward the establishment of similar programs by such authorities and central banks.</p><p>States that, to the extent the foreign entities hold troubled assets as a result of extending financing to financial institutions that have failed or defaulted on such financing, such troubled assets qualify for purchase under this title.</p><p>(Sec. 113) Prescribes requirements for purchase and sale of assets by the Secretary, using market mechanisms, in a manner that will minimize any potential long-term negative impact on the taxpayer and maximize the return on investment for the federal government, including by making such purchases at the lowest price determined to be consistent with this Act. Authorizes the Secretary, if the Secretary determines that use of a market mechanism is not feasible or appropriate, and the purposes of the Act are best met through direct purchases from an individual financial institution, to pursue additional measures to ensure that prices paid are reasonable and reflect the asset's underlying value. Provides requirements for warrants and senior debt instruments.</p><p>(Sec. 114) Requires the Secretary to: (1) make available to the public a description, amounts, and pricing of assets acquired under this Act within two business days of purchase, trade, or other disposition; and (2) determine whether the disclosure required of financial institutions that sell troubled assets to the Secretary with respect to off-balance sheet transactions, derivatives instruments, contingent liabilities, and similar sources of potential exposure adequately provides sufficient information to the public regarding the true financial position of the institutions (market transparency).</p><p>Requires the Secretary to recommend additional disclosure requirements to the relevant regulators if disclosure pursuant to this market transparency requirement is not adequate for that purpose.</p><p>(Sec. 115) Limits the Secretary's authority to purchase troubled assets under this Act to: (1) $250 billion outstanding at any one time; (2) $350 billion outstanding at any one time if, at any time, the President certifies to Congress that the Secretary needs to exercise authority for up to such an amount; and (3) $700 billion outstanding at any one time if, at any time after such a certification, the President reports to Congress a plan of the Secretary to exercise the authority authority for up to such an amount, unless Congress enacts a joint resolution of disapproval within 15 calendar days of transmission of the plan.</p><p>Requires a joint resolution of disapproval to receive fast track consideration in the House and the Senate.</p><p>(Sec. 116) Directs the Comptroller General to: (1) perform ongoing oversight of TARP activities and performance and its agents and representatives, including vehicles established by the Secretary under this Act; and (2) study and report to Congress on the extent to which leverage and sudden deleveraging of financial institutions was a factor behind the current financial crisis.</p><p>(Sec. 118) Authorizes the Secretary to use proceeds from the sale of government bonds to pay the costs of administering authorities under this Act.</p><p>Declares that funds expended or obligated by the Secretary for actions authorized by this Act, including the payment of administrative expenses, shall be deemed appropriated at the time of expenditure or obligation.</p><p>(Sec. 119) Subjects the actions of the Secretary under this Act to judicial review, with specified limitations.</p><p>(Sec. 120 Terminates the authorities under sections 101 and 102, with a certain exception, on December 31, 2009. Authorizes a two-year extension of such authorities if the Secretary submits a specified certification to Congress.</p><p>(Sec. 121) Establishes the Office of the Special Inspector General for TARP to conduct oversight of the purchase, management, and sale of assets by the Secretary, including the management of any program established under this Act.</p><p>(Sec. 122) Increases the statutory limit on the public debt to $11.315 trillion.</p><p>(Sec. 124) Amends the National Housing Act, with respect to extinguishment of subordinate liens for refinanced mortgages, to authorize the Secretary to make payments, which shall be accepted as payment in full of all indebtedness to any holder of an existing subordinate mortgage in lieu of certain future appreciation payments.</p><p>(Sec. 125) Establishes the Congressional Oversight Panel to review and report to Congress on the status of the financial markets and regulatory system.</p><p>(Sec. 126) Amends the Federal Deposit Insurance Act to prohibit false advertising, misuse of Federal Deposit Insurance Corporation (FDIC) names, and misrepresentation of insured status.</p><p>(Sec. 127) Requires the federal financial regulatory agencies to cooperate with the Federal Bureau of Investigation (FBI) and other law enforcement agencies investigating fraud, misrepresentation, and malfeasance regarding development, advertising, and sale of financial products.</p><p>(Sec. 128) Amends the Financial Services Regulatory Relief Act of 2006 to accelerate from October 1, 2011, to October 1, 2008, the effective date for the Board of Governors of the Federal Reserve (Board) to: (1) pay interest on balances maintained at a Federal Reserve bank; and (2) employ increased flexibility to set reserve requirements for member banks.</p><p>(Sec. 129) Instructs the Board to submit periodic updates to certain congressional committees regarding its exercise of loan authority.</p><p>(Sec. 131) Directs the Secretary to reimburse the Exchange Stabilization Fund for any funds that are used for the Treasury Money Market Funds Guaranty Program for the U.S. money market mutual fund industry.</p><p>Prohibits the Secretary from using the Exchange Stabilization Fund to establish any future guaranty programs for the U.S. money market mutual fund industry.</p><p>(Sec. 132) Authorizes the Securities and Exchange Commission (SEC) to suspend application of Statement Number 157 (about mark-to-market accounting) of the Financial Accounting Standards Board.</p><p>Instructs the SEC to study and report to Congress on the applicability of such standard to financial and depository institutions.</p><p>(Sec. 133) Directs the SEC to study and report to Congress on Statement Number 157.</p><p>(Sec. 134) Instructs the Director of the Office of Management and Budget (OMB) to report to Congress, after five years, on the net amount within TARP.</p><p>Instructs the President, in case of a shortfall within TARP, to submit to Congress a legislative proposal that recoups from the financial industry an amount equal to such shortfall in order to ensure that TARP does not add to the deficit or national debt.</p><p>(Sec. 136) Increases from $100,000 to $250,000, until December 31, 2009, the amount of deposit and share insurance coverage offered under the Federal Deposit Insurance Act and the Federal Credit Union Act.</p><p><b>Title II: Budget-Related Provisions</b> - (Sec. 201) Requires all information used by the Secretary in connection with activities authorized under this Act (including the records to which the Comptroller General is entitled) to be made available, upon request, to the Congressional Budget Office (CBO) and the Joint Committee on Taxation to assist congressional committees with conducting oversight, monitoring, and analysis of such authorized activities.</p><p>(Sec. 202) Requires OMB to report to the President and Congress semiannually: (1) an estimate of the cost of troubled assets and their guarantees; (2) the information used to derive such estimate; and (3) a detailed analysis of how the estimate has changed from the previous report.</p><p>Requires the second and each ensuing report to explain the differences between CBO's required estimate and prior OMB estimates.</p><p>Requires CBO to assess and report to Congress on OMB's report, including: (1) the cost of the troubled assets and their guarantees; (2) the information and valuation methods used to calculate such cost; and (3) the impact on the deficit and the debt.</p><p>Authorizes appropriations.</p><p>(Sec. 203) Requires the President's annual budget request to Congress to include as supplementary materials a separate analysis of the budgetary effects for all prior fiscal years, the current fiscal year, the fiscal year for which the budget is submitted, and ensuing fiscal years of the Secretary's actions taken or to be taken using any authority provided in this Act.</p><p>(Sec. 204) Designates all provisions of this Act as an emergency requirement necessary to meet emergency needs. Prohibits rescissions of any amounts provided in it from being counted for budget enforcement purposes.</p><p><b>Title III: Tax Provisions </b>- (Sec. 301) Provides for ordinary income or loss treatment of gain or loss from the sale or exchange of any applicable preferred stock by any applicable financial institution. Defines &quot;applicable preferred stock&quot; as preferred stock in Fannie Mae or Freddie Mac that was held on September 6, 2008, or that was sold or exchanged on or after January 1, 2008, and before September 7, 2008. Defines &quot;applicable financial institution&quot; as a banking, financial, or investment institution or a depository institution holding company. Allows the Secretary of the Treasury to apply ordinary gain or loss treatment to certain sales of preferred stock not held on September 6, 2008. Authorizes the Secretary to prescribe regulations to carry out this section. </p><p>(Sec. 302) Denies certain employers whose assets have been purchased under the Troubled Asset Relief Program (TARP) a tax deduction for the payment of compensation or other benefits in excess of $500,000 to their executives or other highly compensated employees. Makes tax penalties for excess parachute payments applicable to employers who participate in TARP and their executives.</p><p>(Sec. 303) Extends through 2012 the exclusion from gross income of income attributable to a discharge of indebtedness on a principal residence.</p><p><b>Division B: Energy Improvement and Extension Act of 2008 </b>- Energy Improvement and Extension Act of 2008<b> - Title I: Energy Production Incentives - Subtitle A: Renewable Energy Incentives - </b>(Sec. 101) Extends through 2009 the tax credit for producing electricity from wind and refined coal facilities. Extends through 2010 such tax credit for other facilities, including closed and open-loop biomass, solar energy, small irrigation power, landfill gas, trash combustion, and hydropower. Modifies rules for and definitions of refined coal, trash and biomass facilities, and hydropower production.</p><p>(Sec. 102) Includes marine and hydrokinetic renewable energy as a renewable resource for purposes of the tax credit for producing electricity from renewable resources.</p><p>(Sec. 103) Extends through 2016 the energy tax credit for solar energy, fuel cell, and microturbine property. Allows a new energy tax credit for combined heat and power system property. Increases to $1,500 the credit limitation for fuel cell property. Modifies energy tax credit rules to allow: (1) offsets of tax credit amounts against alternative minimum tax (AMT) liabilities; and (2) public utility property to qualify for such credit.</p><p>(Sec. 104) Allows a new energy tax credit for 30% of expenditures for wind turbines used to generate electricity in a residence and for geothermal heat pump systems.</p><p>(Sec. 106) Extends through 2016 the tax credit for residential energy efficient property. Eliminates the limitation on the tax credit for solar electric property. Allows a residential energy tax credit for 30% of small wind energy and geothermal heat pump property expenditures.</p><p>(Sec. 107) Allows a new tax credit for investment in new clean renewable energy bonds for capital investment in renewable energy facilities.</p><p>Extends through 2009 the authority to issue clean renewable energy bonds.</p><p>(Sec. 108) Includes steel industry fuel as a renewable resource for purposes of the tax credit for producing electricity from renewable resources. Defines &quot;steel industry fuel&quot; as fuel that: (1) is produced by liquefying coal waste sludge and distributing it on coal; and (2) is used as a feedstock for the manufacture of coke. </p><p>(Sec. 109) Extends through 2009 the deferral of tax on the gain on sales of transmission property by vertically-integrated electric utilities to independent transmission companies approved by the Federal Energy Regulatory Commission (FERC).</p><p><b>Subtitle B: Carbon Mitigation and Coal Provisions</b> - (Sec. 111) Allows a 30% investment tax credit rate for advanced coal-based generation technology projects and increases the maximum credit amounts allocable for such projects to $2.55 billion.</p><p> Authorizes additional carbon energy projects, including projects for the capture and and sequestration of carbon dioxide. </p><p>(Sec. 112) Increases to 30% the investment tax credit rate for coal gasification projects and the aggregate credit amount for such projects.</p><p> (Sec. 113) Extends the excise tax on coal until the earlier of January 1, 2019, or the day after the first December 31 after December 31, 2007, on which there is no balance of repayable advances made to the Black Lung Disability Trust Fund and no unpaid interest on such advances. Makes a one-time appropriation to the Trust Fund to pay the difference between the market value of outstanding repayable advances (plus accrued interest) and the proceeds from the obligations issued by such Trust Fund to the Secretary of the Treasury.</p><p>(Sec. 114) Sets forth special rules for refund claims of the coal excise tax by certain coal producers and exporters.</p><p>(Sec. 115) Allows a new tax credit for carbon dioxide sequestration. </p><p>(Sec. 116) Provides for the treatment of certain income and gains from industrial source carbon dioxide as qualifying income for publicly traded partnerships. </p><p>(Sec. 117) Directs the Secretary of the Treasury to contract with the National Academy of Sciences for a comprehensive review of Internal Revenue Code provisions that have the largest effects on carbon and other greenhouse gas emissions and an estimate of the magnitude of such effects. Requires the Academy to report to Congress on the results of such study within two years after the enactment of this Act. Authorizes appropriations.</p><p><b>Title II: Transportation and Domestic Fuel Security Provisions</b> - (Sec. 201) Includes cellulosic biofuel within the definition of biomass ethanol plant property for purposes of the bonus depreciation allowance. </p><p>(Sec. 202) Increases and extends through 2009 income and excise tax credits for biodiesel and renewable diesel used as fuel. </p><p>(Sec. 203) Disqualifies foreign-produced fuel that is used or sold for use outside the United States from the income and excise tax credits for alcohol, biodiesel, and alternative fuel production. </p><p>(Sec. 204) Extends through 2009 the excise tax credit for alternative fuel and fuel mixtures. Requires such fuels to include compressed or liquefied biomass gas and to meet certain carbon capture requirements. </p><p>(Sec. 205) Allows a new tax credit for new qualified plug-in electric drive motor vehicles. Limits the amount of such credit based upon the gross vehicle weight rating of such vehicles. Terminates such credit after 2014.</p><p>(Sec. 206) Allows an exclusion from the heavy truck excise tax for idling reduction devices and advanced insulation used in certain heavy trucks and trailers.</p><p>(Sec. 207) Extends through 2010 the tax credit for alternative fuel vehicle refueling property expenditures. Includes electricity as a clean burning fuel for purposes of such credit. </p><p>(Sec. 208) Provides for the treatment of certain income and gains from alcohol, biodiesel, and alternative fuels and mixtures as qualifying income for publicly traded partnerships. </p><p>(Sec. 209) Extends through 2013 the taxpayer election to expense costs of certain refinery property. </p><p>(Sec. 210) Extends the suspension of the taxable income limit on percentage depletion for oil and natural gas produced from marginal properties.</p><p>(Sec. 211) Allows employees to exclude reimbursements for bicycle commuting expenses from gross income. </p><p><b>Title III: Energy Conservation And Efficiency Provisions</b> - (Sec. 301) Allows a new tax credit for investment in qualified energy conservation bonds for capital expenditures to reduce energy consumption in public buildings, implement green community programs, develop alternative and renewable energy sources, and promote mass commuting facilities. </p><p>(Sec. 302) Extends through 2009 the tax credit for nonbusiness energy property expenditures. Includes energy-efficient biomass fuel stoves as property eligible for such tax credit. Modifies tax credit standards for water heaters, geothermal heat pumps, and energy efficiency improvements.</p><p>(Sec. 303) Extends through 2013 the tax deduction for energy efficient commercial buildings.</p><p>(Sec. 304) Extends through 2009 the tax credit for residential energy efficiency improvements.</p><p>(Sec. 305) Modifies tax credit amounts and standards for energy efficient household appliances produced after 2007. </p><p>(Sec. 306) Allows an accelerated 10-year recovery period for the depreciation of qualified smart electric meters and smart electric grid systems.</p><p>(Sec. 307) Extends through FY2012 the authority to issue tax-exempt bonds for qualified green building and sustainable design projects.</p><p>(Sec. 308) Allows a 50% depreciation allowance for reuse and recycling property used to collect, distribute, or recycle certain materials, including scrap, fibers, and metals.</p><p><b>Title IV: Revenue Provisions</b> - (Sec. 401) Reduces by 3% the tax deduction for income attributable to domestic production activities for taxpayers with income derived from activities related to oil, gas, or any primary products thereof.</p><p>(Sec. 402) Revises the tax treatment of foreign oil and gas extraction income and foreign oil related income for purposes of the foreign tax credit. </p><p>(Sec. 403) Includes within the reporting requirements of investment brokers the adjusted basis of any publicly traded security owned by customers of such brokers.</p><p>(Sec. 404) Extends through 2009 the 0.2% Federal Unemployment Tax Act (FUTA) surtax.</p><p>(Sec. 405) Increases the Oil Spill Liability Trust Fund financing rate and extends such rate through 2017.</p><p><b>Division C: Tax Extenders and Alternative Minimum Tax Relief </b>- Tax Extenders and Alternative Minimum Tax Relief Act of 2008 - <b>Title I: Alternative Minimum Tax Relief</b> - (Sec. 101) Amends the Internal Revenue Code to extend through 2008 for individual taxpayers: (1) the offset of nonrefundable personal tax credits against regular and alternative minimum tax (AMT) liability; and (2) the increased AMT exemption amounts.</p><p>Increases the AMT refundable credit amount for individuals who have long-term unused minimum tax credits from prior taxable years. Abates any underpayment of tax attributable to the application of special AMT rules for the treatment of incentive stock options.</p><p><b>Title II: Extension of Individual Tax Provisions</b> - (Sec. 201) Extends through 2009: (1) the tax deduction for state and local sales taxes in lieu of state and local income taxes; (2) the tax deduction for qualified tuition and related expenses; (3) the tax deduction for certain expenses of elementary and secondary school teachers; (4) the additional standard tax deduction from gross income for real property taxes; (5) tax-free distributions from individual retirement plans for charitable purposes; (6) the exemption from withholding of tax of interest-related and short-term capital gain dividends received from a regulated investment company (RIC) and the special rule for RIC stock held in the estate of a nonresident non-citizen; and (7) the inclusion of an RIC within the definition of &quot;qualified investment entity&quot; for income tax purposes.</p><p><b>Title III: Extension of Business Tax Provisions - </b>(Sec. 301) Extends through 2009: (1) the tax credit for increasing research activities; (2) the new markets tax credit; (3) the subpart F income exemption for active financing income; (4) special rules for related controlled foreign corporations and for the tax treatment of certain payments to tax-exempt organizations by a controlled subsidiary; (5) accelerated depreciation for qualified leasehold and restaurant improvements and for certain improvements to retail space; (6) the special rule for reductions in the basis of S corporation stock for charitable contributions of property; (7) the increase in alcohol excise taxes payable to Puerto Rico and the Virgin Islands; (8) the economic development credit for American Samoa; (9) tax incentives for mine rescue team training and advanced mine safety equipment; (10) the tax deduction for income attributable to domestic production activities in Puerto Rico; (11) issuance authority for qualified zone academy bonds; (12) the Indian employment tax credit; (13) accelerated depreciation of business property on Indian reservations and of motorsports racing track facilities; (14) the tax credit for railroad track maintenance; (15) expensing allowances for film and television production costs and for environmental remediation costs; (16) work opportunity tax credit eligibility for Hurricane Katrina employees (through August 28, 2009); (17) the increased rehabilitation tax credit for property in the Gulf Opportunity (GO) Zone; (18) the tax deduction for corporate contributions of computer technology and equipment for educational purposes; (19) tax incentives for investment in the District of Columbia; and (20) the expanded tax deductions for charitable contributions of food and book inventories by noncorporate taxpayers.</p><p>(Sec. 325) Extends through 2014: (1) the suspension of tariff duties on certain wool products; and (2) the Wool Research, Promotion, and Development Trust Fund.</p><p><b>Title IV: Extension of Tax Administration Provisions - </b>(Sec. 401) Makes permanent the authority of the Internal Revenue Service (IRS) to: (1) conduct undercover operations; and (2) disclose tax return information related to terrorist activities.</p><p><b>Title V: Additional Tax Relief and Other Tax Provisions - Subtitle A: General Provisions </b>- (Sec. 501) Lowers in 2008 (from $10,000 to $8,500) the earned income threshold amount for determining the refundable portion of the child tax credit.</p><p>(Sec. 502) Amends Internal Revenue Code provisions relating to the tax deduction for domestic film and television productions to: (1) include within the income base for such deduction compensation for services performed in the United States by actors, production personnel, directors, and producers and any copyrights, trademarks, or other intangibles with respect to a film production; and (2) allow a deduction for partners or S corporation shareholders who own at least a 20% interest in a film project.</p><p>(Sec. 503) Exempts from the excise tax on bows and arrows certain shafts consisting of all natural wood that, after assembly, measure 5/16 of an inch or less in diameter and that are not suitable for use with bows that would otherwise be subject to such tax (having a peak draw weight of 30 pounds or more).</p><p>(Sec. 504) Allows taxpayers who are plaintiffs in the civil action <i>In re Exxon Valdez</i>, No. 89-095-CV (HRH) (Consolidated) (D. Alaska), or their heirs or dependents, to: (1) elect to average, for income tax purposes, income received in settlement of such civil action; and (2) make a limited contribution of such settlement income to certain tax-exempt retirement plans in the year such income is received.</p><p>(Sec. 505) Allows accelerated depreciation (i.e., five-year recovery period) for certain farming business machinery or equipment placed in service before January 1, 2010.</p><p>(Sec. 506) Modifies the standards for imposing penalties on tax return preparers for understatements of tax to require: (1) substantial authority for a position with respect to an item on a tax return if such position was not disclosed with the return; and (2) a reasonable basis for a position that was disclosed with the return. </p><p>Requires tax return preparers to have a reasonable belief that a position with respect to a tax shelter or a reportable transaction (a transaction having a potential for tax avoidance or evasion) will more likely than not be sustained on its merits.</p><p><b>Subtitle B: Paul Wellstone and Pete Domenici Mental Health Parity and Addiction Equity Act of 2008</b> - (Sec. 511) Paul Wellstone and Pete Domenici Mental Health Parity and Addiction Equity Act of 2008 - Amends the Employee Retirement Income Security Act of 1974 (ERISA), the Public Health Service Act, and the Internal Revenue Code to require a group health plan that provides both medical and surgical benefits and mental health or substance use disorder benefits to ensure that: (1) the financial requirements, such as deductibles and copayments, applicable to such mental health or substance use disorder benefits are no more restrictive than the predominant financial requirements applied to substantially all medical and surgical benefits covered by the plan; (2) there are no separate cost sharing requirements that are applicable only with respect to mental health or substance use disorder benefits; (3) the treatment limitations applicable to such mental health or substance use disorder benefits are no more restrictive than the predominant treatment limitations applied to substantially all medical and surgical benefits covered by the plan; and (4) there are no separate treatment limitations that are applicable only with respect to mental health or substance use disorder benefits.</p><p>Requires the criteria for medical necessity determinations and the reason for any denial of reimbursement or payment for services made under the plan with respect to mental health or substance use disorder benefits to be made available by the plan administrator.</p><p>Requires the plan to provide out-of network coverage for mental health or substance use disorder benefits if the plan provides coverage for medical or surgical benefits provided by out-of network providers.</p><p>Exempts from the requirements of this Act a group health plan if the application of this Act results in an increase for the plan year of the actual total costs of coverage with respect to medical and surgical benefits and mental health and substance use disorder benefits by an amount that exceeds 2% for the first plan year and 1% for each subsequent plan year. Requires determinations as to increases in actual costs under a plan to be made and certified by a qualified and licensed actuary. </p><p>Requires determinations for such an exemption to be made after such plan has complied with this Act for the first six months of the plan year.</p><p>Sets forth requirements for notifications of exemptions under this Act, including notification of the Secretary of Health and Human Services, the appropriate state agencies, and participants and beneficiaries in the plan.</p><p>Authorizes the Secretary and the appropriate state agency to audit the books and records of a group health plan relating to an exemption.</p><p>Directs the Secretary to: (1) report to the appropriate congressional committees on compliance of group health plans with the requirements of this Act; and (2) publish guidance and information concerning the requirements of this Act and provide assistance concerning such requirements and the continued operation of applicable state law. </p><p>Requires the Comptroller General to report to Congress on the specific rates, patterns, and trends in coverage and exclusion of specific mental health and substance use disorder diagnoses by health plans and health insurance.</p><p><b>Title VI: Other Provisions</b> - (Sec. 601) Revises the provisions of the Secure Rural Schools and Community Self-Determination Act of 2000.</p><p>Provides for: (1) calculating payments to eligible states, counties, and territories for FY2008-FY2011 and; (2) the making of transition payments for FY2008-FY2010 to California, Louisiana, Oregon, Pennsylvania, South Carolina, South Dakota, Texas, and Washington. Sets forth distribution, election, and expenditure rules.</p><p>Permits eligible electing counties to expend a portion of funds received for the protection, restoration, and enhancement of fish and wildlife habitat, and other consistent resource objectives upon project approval.</p><p>Sets forth requirements for a merchantable timber contracting pilot program.</p><p>Revises provisions concerning resource advisory committees and the use and availability of project funds for projects submitted by such committees. Terminates authority to initiate projects on September 30, 2011.</p><p>Revises provisions for the use of county funds for certain projects. Requires certification by participating counties that county funds have been expended only for authorized uses. Terminates authority to initiate such projects on September 30, 2011.</p><p>Authorizes appropriations for FY2008-FY2011 to carry out the Secure Rural Schools and Community Self-Determination Act of 2000.</p><p>Amends the Act of May 23, 1908, and the Weeks Law to prescribe that an amount equal to the annual average of 25% of all amounts received for the applicable fiscal year and each of the preceding six fiscal years from each national forest (under current law, 25% of all moneys received during any fiscal year) be paid at the end of such year to eligible states and counties for the benefit of public schools and public roads in which such forests are situated.</p><p>Amends federal law regarding payment in lieu of taxes to provide, for FY2008-FY2012, for each county or other eligible unit of local government to be entitled to payment for entitlement land (certain land owned by the U.S. government).</p><p>(Sec. 602) Amends the Surface Mining Control and Reclamation Act of 1977 to require the transfer of $9 million on October 1, 2010, to the United Mine Workers of America Combined Benefit Fund to provide for refunds of certain health benefit premiums, death benefit premiums, and unassigned beneficiaries premiums.</p><p><b>Title VII: Disaster Relief - Subtitle A: Heartland and Hurricane Ike Disaster Relief </b>- Heartland Disaster Tax Relief Act of 2008 - (Sec. 702) Makes certain provisions of the Internal Revenue Code providing tax benefits to residents of the Gulf Opportunity (GO) Zone and the Hurricane Katrina disaster areas, including provisions for tax-exempt bond financing, the low-income housing tax credit, an increased rehabilitation tax credit, education and housing tax benefits, employee retention tax credits, and tax-exempt bond financing, applicable to residents of the Midwestern disaster area on a similar basis. Defines &quot;Midwestern disaster area&quot; as an area in which a major disaster has been declared by the President on or after May 20, 2008, and before August 1, 2008, under the Robert T. Stafford Disaster Relief and Emergency Assistance Act by reason of severe storms, tornados, or flooding occurring in any of the states of Arkansas, Illinois, Indiana, Iowa, Kansas, Michigan, Minnesota, Missouri, Nebraska, and Wisconsin. </p><p>(Sec. 703) Includes within the reporting requirements of tax-exempt public charities information about disaster relief activities and contributions received for those purposes. </p><p>(Sec. 704) Extends through 2010 tax-exempt bond financing and low-income housing tax credit benefits to the Hurricane Ike disaster area. Defines the &quot;Hurricane Ike disaster area&quot; as an area in Texas or Louisiana that was declared a major disaster area by the President by reason of Hurricane Ike and that was determined by the President to warrant federal assistance.</p><p><b>Subtitle B: National Disaster Relief</b> - (Sec. 706) Waives the 10% adjusted gross income limitation on personal casualty losses for losses sustained from a federally declared disaster occurring before January 1, 2010. Defines &quot;federally declared disaster&quot; as any disaster determined by the President to warrant federal assistance under the Robert T. Stafford Relief and Emergency Assistance Act. </p><p>Increases the standard tax deduction by a taxpayer's net disaster loss (i.e., personal casualty losses in a disaster area over personal casualty gains). </p><p>Increases until December 31, 2009, the threshold for deductible casualty losses (from $100 to $500).</p><p>(Sec. 707) Allows the expensing of business-related costs incurred due to a federally declared disaster for: (1) the abatement or control of hazardous substances; (2) removal of debris or demolition of damaged structures; or (3) repair of damaged property.</p><p>(Sec. 708) Provides for a five-year carryback period for net operating losses attributable to a federally declared disaster. Allows such losses as a deduction in computing alternative minimum taxable income.</p><p>(Sec. 709) Modifies certain mortgage revenue bond requirements for principal residences damaged or destroyed in a federally declared disaster occurring before January 1, 2010.</p><p>(Sec. 710) Allows accelerated depreciation and increases the expensing allowance for qualified disaster assistance property. Defines &quot;qualified disaster assistance property&quot; to include nonresidential real or residential rental property in a federally declared disaster area.</p><p><b>Title VIII: Spending Reductions and Appropriate Revenue Raisers for New Tax Relief Policy</b> - (Sec. 801) Requires the inclusion in gross income for income tax purposes of employee compensation deferred under a nonqualified deferred compensation plan of a nonqualified entity when there is no substantial risk of forfeiture of the rights to such compensation. Defines &quot;nonqualified entity&quot; as any foreign corporation unless substantially all of its income is: (1) effectively connected with a trade or business in the United States; or (2) subject to a comprehensive foreign income tax. Includes certain partnerships within such definition.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/hr1424/BILLS-110hr1424enr.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/hr1424/BILLS-110hr1424enr.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/hr1424/BILLS-110hr1424enr.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/1424",
+      "votes": []
+    },
+    {
+      "id": "s1760-110",
+      "congress": 110,
+      "type": "s",
+      "number": "1760",
+      "title": "Healthy Start Reauthorization Act of 2007",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Brown, Sherrod",
+        "party": "D",
+        "state": "OH"
+      },
+      "introduced_date": "2007-07-10",
+      "latest_action": {
+        "date": "2008-10-03",
+        "text": "Became Public Law No: 110-339."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Alaska",
+        "Arizona",
+        "Authorization",
+        "Child health",
+        "Community health services",
+        "Department of Health and Human Services",
+        "Economics and Public Finance",
+        "Families",
+        "Federal aid to health facilities",
+        "Government Operations and Politics",
+        "Hawaii",
+        "Hawaiians",
+        "Infant mortality",
+        "Low birth weight",
+        "Maternal health services",
+        "Minorities",
+        "Minority health",
+        "New Mexico",
+        "Performance measurement"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was reported to the Senate on April 29, 2008. The summary of that version is repeated here.)</b></p> <p>Healthy Start Reauthorization Act of 2007 [<i>sic</i>] - Amends the Public Health Service Act to require the Secretary of Health and Human Services to consider certain criteria in making grants under the Healthy Start Initiative, including: (1) factors that contribute to infant mortality, such as low birthweight; and (2) the extent to which applicants for grants facilitate a community-based approach to the delivery of services and a comprehensive approach to women's health care to improve perinatal outcomes.</p><p>Provides that the Secretary is not prevented from awarding grants for special projects that are intended to address significant disparities in perinatal health indicators in communities along the United States-Mexico border or in Alaska or Hawaii.</p><p>Eliminates authority for the Secretary to make additional grants to: (1) assist communities with technical assistance, replication of successful projects, and state policy formation to reduce infant and maternal mortality and morbidity; and (2) conduct and support research and to provide additional health care services for pregnant women and infants.</p><p>Reauthorizes appropriations for FY2008-FY2013 for the Healthy Start Initiative.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ339/PLAW-110publ339.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ339/PLAW-110publ339.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/1760",
+      "votes": []
+    },
+    {
       "id": "sjres35-110",
       "congress": 110,
       "type": "sjres",
@@ -3867,6 +4091,38 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres702/BILLS-110sres702ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres702/BILLS-110sres702ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/702",
+      "votes": []
+    },
+    {
+      "id": "sres703-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "703",
+      "title": "A resolution designating November 2008 as \"National Methamphetamine Awareness Month\", to increase awareness of methamphetamine abuse.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Baucus, Max",
+        "party": "D",
+        "state": "MT"
+      },
+      "introduced_date": "2008-10-02",
+      "latest_action": {
+        "date": "2008-10-02",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S10426-10427; text as passed Senate: CR S10427; text of measure as introduced: CR S10490)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Drug abuse",
+        "Drug abuse prevention",
+        "Methamphetamine",
+        "Special months"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Designates November 2008 as National Methamphetamine Awareness Month to increase awareness of methamphetamine abuse.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres703/BILLS-110sres703ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres703/BILLS-110sres703ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres703/BILLS-110sres703ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/703",
       "votes": []
     },
     {
@@ -6415,6 +6671,50 @@
       "votes": []
     },
     {
+      "id": "hr4841-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "4841",
+      "title": "Soboba Band of Luiseno Indians Settlement Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Bono, Mary",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2007-12-19",
+      "latest_action": {
+        "date": "2008-07-31",
+        "text": "Became Public Law No: 110-297."
+      },
+      "outcome": "enacted",
+      "policy_area": "Native Americans",
+      "subjects": [
+        "California",
+        "District courts",
+        "Economics and Public Finance",
+        "Federal-Indian relations",
+        "Government trust funds",
+        "Indian claims",
+        "Indian lands",
+        "Indian water rights",
+        "Infrastructure",
+        "Jurisdiction",
+        "Law",
+        "Minorities",
+        "Water Resources Development",
+        "Water districts",
+        "Water use",
+        "Watersheds"
+      ],
+      "summary_crs": " <p>Soboba Band of Luiseno Indians Settlement Act - Approves, ratifies, and confirms the Settlement Agreement dated June 7, 2006, between the Soboba Band of Luiseno Indians (Tribe) and certain water districts in California relating to the water rights of such Tribe.</p><p>Establishes in the Treasury: (1) the San Jacinto Basin Restoration Fund to pay costs associated with the construction, operation, and maintenance of the basin recharge project for accommodating supplemental imported water deliveries; and (2) the Soboba Band of Luiseno Indians Water Development Fund for costs associated with constructing and maintaining water-related development projects.</p><p>Provides for waivers and releases of specified claims made by the Tribe.</p><p>Declares that the United States consents to jurisdiction in the case of <i>Soboba Band of Luiseno Indians v. Metropolitan Water District of Southern California</i>, No. 001-04208, for the purpose of entering the judgment and decree rendered in such case.</p><p>Allows the Tribe to use water made available to it under the Settlement Agreement for any use it deems advisable on the Reservation and to enter into contracts and other agreements to exchange water made available to it under the Settlement Agreement, subject to certain limitations.</p><p>Requires the Secretary of the Interior to comply with all federal environmental requirements in implementing the Agreement. </p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ297/PLAW-110publ297.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ297/PLAW-110publ297.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/4841",
+      "votes": []
+    },
+    {
       "id": "s3298-110",
       "congress": 110,
       "type": "s",
@@ -6766,6 +7066,50 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/110/plaws/publ287/PLAW-110publ287.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-joint-resolution/93",
+      "votes": []
+    },
+    {
+      "id": "hr1553-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "1553",
+      "title": "Caroline Pryce Walker Conquer Childhood Cancer Act of 2008",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Pryce, Deborah",
+        "party": "R",
+        "state": "OH"
+      },
+      "introduced_date": "2007-03-15",
+      "latest_action": {
+        "date": "2008-07-29",
+        "text": "Became Public Law No: 110-285."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Cancer",
+        "Child health",
+        "Clinical trials",
+        "Communication in medicine",
+        "Data banks",
+        "Economics and Public Finance",
+        "Families",
+        "Federal aid to research",
+        "Government Operations and Politics",
+        "Grants-in-aid",
+        "Health education",
+        "Health information systems",
+        "Medical research",
+        "Preventive medicine",
+        "Research grants",
+        "Science, Technology, Communications"
+      ],
+      "summary_crs": " <p>Caroline Pryce Walker Conquer Childhood Cancer Act of 2008 - (Sec. 4) Amends the Public Health Service Act to require the Secretary of Health and Human Services to continue to enhance, expand, and intensify pediatric cancer research and other activities related to pediatric cancer, including therapeutically applicable research to generate effective treatments, pediatric preclinical testing, and pediatric clinical trials through National Cancer Institute-supported pediatric cancer clinical trials groups and their member institutions. Encourages the Secretary to take into consideration the application of such research and other activities for minority, health disparity, and medically underserved communities. </p><p>Authorizes the Secretary to award grants to childhood cancer professional and direct service organizations for the expansion and widespread implementation of: (1) activities that provide information on treatment protocols to ensure early access to the best available therapies and clinical trials for pediatric cancers; (2) activities that provide available information on the late effects of pediatric cancer treatment to ensure access to necessary long-term medical and psychological care; and (3) direct resource services such as educational outreach for parents, information on school reentry and postsecondary education, and resource directories or referral services for financial assistance, psychological counseling, and other support services. Encourages the Secretary to take into consideration the extent to which an entity would use such grant for purposes of making activities and services available to minority, health disparity, and medically underserved communities. Requires the Secretary to develop and implement metrics-based performance measures to assess the effectiveness of activities funded under such grants. Requires any information made available pursuant to a grant to be: (1) culturally and linguistically appropriate as needed by patients and families affected by childhood cancer; and (2) approved by the Secretary.</p><p>Authorizes appropriations for FY2009-FY2013. </p><p>Requires the Secretary, acting through the Director of the Centers for Disease Control and Prevention (CDC), to award a grant to enhance and expand infrastructure to track the epidemiology of pediatric cancer into a comprehensive nationwide registry of actual occurrences of pediatric cancer. Requires such registry to be updated to include an actual occurrence within weeks of the date of such occurrence. Subjects such registry to federal laws regarding records maintained on individuals, health information privacy regulations, informed consent regulations, and any other federal laws relating to the privacy of patient information.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ285/PLAW-110publ285.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ285/PLAW-110publ285.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/1553",
       "votes": []
     },
     {
@@ -7228,6 +7572,53 @@
       "votes": []
     },
     {
+      "id": "hr6331-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "6331",
+      "title": "Medicare Improvements for Patients and Providers Act of 2008",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Rangel, Charles B.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2008-06-20",
+      "latest_action": {
+        "date": "2008-07-15",
+        "text": "Became Public Law No: 110-275."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Access to health care",
+        "Accreditation (Medical care)",
+        "Administrative remedies",
+        "Adoption",
+        "Afghanistan",
+        "Aid to dependent children",
+        "Ambulances",
+        "Ambulatory care",
+        "Anesthetics",
+        "Annuities",
+        "Appropriations",
+        "Armed Forces and National Security",
+        "Armed forces reserves",
+        "Barbiturates",
+        "Brain",
+        "California",
+        "Capitation (Medical care)",
+        "Cardiovascular diseases",
+        "Case management"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the House on June 24, 2008. The summary of that version is repeated here.) </b></p> <p> Medicare Improvements for Patients and Providers Act of 2008 - <b>Title I: Medicare - Subtitle A: Beneficiary Improvements - Part 1: Prevention, Mental Health, and Marketing</b> - (Sec. 101) Amends title XVIII (Medicare) of the Social Security Act (SSA), as amended by the Medicare, Medicaid, and SCHIP Extension Act of 2007, to cover additional preventive services.</p> <p>Includes body mass index and end-of-life planning among initial preventive physical examinations.</p> <p>(Sec. 102) Specifies stages for gradual elimination by 2014 of copayment rates for Medicare psychiatric services.</p> <p>(Sec. 103) Prescribes prohibitions on certain sales and marketing activities under Medicare Advantage (MA) plans and prescription drug plans, including: (1) the provision of gifts or prizes as enrollment inducements; (2) unsolicited means of direct contact; (3) cross-selling (the sale of other non-health related products, such as annuities and life insurance, during any sales or marketing activity or presentation conducted with respect to an MA plan); or (4) the provision of meals to prospective plan enrollees.</p> <p>Requires the Secretary of Health and Human Services to establish limitations under MA plans of certain other marketing activities, including co-branding.</p> <p>Requires the inclusion of the plan type in the plan name.</p> <p>Imposes requirements on MA organizations relating to the exclusive use of licensed agents and brokers and compliance with state information requests in order to enable states to collaborate with the Secretary to address fraudulent or inappropriate marketing practices. </p> <p>(Sec. 104) Directs the Secretary to provide for implementation of the changes in the National Association of Insurance Commissioners (NAIC) model law and regulations approved by NAIC in its Model #651 on March 11, 2007, as modified to reflect the changes made under this Act and the Genetic Information Nondiscrimination Act of 2008.</p> <p>Requires a Medigap policy issuer to make available to an eligible individual at least Medicare supplemental policies classified as &quot;C&quot; or &quot;F.&quot;</p> <p><b>Part II: Low-Income Programs</b> - (Sec. 111) Extends the qualifying individual (QI) program through December 2009.</p> <p>Extends the total amount available for allocation with respect to state coverage of Medicare cost-sharing for additional low-income Medicare beneficiaries. </p> <p>(Sec. 112) Provides for application of a full low-income subsidy (LIS) assets test under the Medicare Savings Program.</p> <p>(Sec. 113) Requires Social Security Administration assistance with Medicare Savings Program and LIS program applications. Makes appropriations for Administration costs related to such assistance.</p> <p>(Sec. 114) Eliminates Medicare part D (Voluntary Prescription Drug Benefit Program) late enrollment penalties payable by subsidy-eligible individuals.</p> <p>(Sec. 115) Eliminates estate recovery under Medicaid of state-paid medical assistance for Medicare cost-sharing. </p> <p>(Sec. 116) Prohibits support and maintenance furnished in kind from being counted as income with respect to eligibility for low-income subsidies under Medicare part D (Voluntary Prescription Drug Benefit Program).</p> <p>Excludes life insurance policies from being counted as a resource under the Supplemental Security Income program (thus precluding their use in determining resources under the Medicare part D program).</p> <p>(Sec. 117) Provides for judicial review of decisions of the Commissioner of Social Security under the Medicare part D program.</p> <p>(Sec. 118) Requires translation into 10 languages (other than English) of the model application form for medical assistance for Medicare cost-sharing.</p> <p>(Sec. 119) Directs the Secretary to make grants to states for state health insurance assistance programs, area agencies on aging, and aging and disability resource centers. </p> <p>Requires the Secretary, acting through the Assistant Secretary for Aging, to make a grant to, or contract with, a qualified, experienced entity to: (1) maintain and update web-based decision support tools, and integrated, person-centered systems, designed to inform older individuals about the full range of benefits for which they may be eligible under federal and state programs; and (2) develop an information clearinghouse on best practices and the most cost-effective methods for finding and informing older individuals with greatest economic need about such programs.</p> <p><b>Subtitle B: Provisions Relating to Part A</b> - (Sec. 121) Authorizes the Secretary to award grants to states for increasing the delivery of mental health services or other health care services to meet the needs of veterans of Operation Iraqi Freedom and Operation Enduring Freedom living in rural areas. </p> <p>Extends the authorization for FLEX (Medicare rural hospital flexibility program) grants through FY2010.</p> <p>Includes among FLEX grant purposes providing support for critical access hospitals for quality improvement, quality reporting, performance improvements, and benchmarking.</p> <p>Authorizes the Secretary to award grants to eligible critical access hospitals to assist them to transition to skilled nursing facilities (SNFs) and assisted living facilities.</p> <p>(Sec. 122) Permits substitution of a specified rebased target amount for the amount ordinarily calculated in Medicare payments to sole community hospitals for inpatient hospital services.</p> <p>(Sec. 123) Directs the Secretary to establish a demonstration project for development and testing of new community health integration models in certain rural counties for the delivery of acute care, extended care, and other essential health services to Medicare beneficiaries. Authorizes appropriations for FY2010-FY2012. </p> <p>(Sec. 124) Amends the Tax Relief and Health Care Act of 2006, as amended by the Medicare, Medicaid, and SCHIP Extension Act of 2007, to extend through FY2009 the reclassification of certain hospitals.</p> <p>(Sec. 125) Amends SSA title XVIII to repeal the unique deeming authority under which an insitution accredited as a hospital by the Joint Commission on Accreditation of Hospitals shall be deemed to be a hospital eligible for Medicare payments.</p> <p><b>Subtitle C: Provisions Relating to Part B - Part 1: Physicians' Services</b> - (Sec. 131) Increases the update for physicians' payments for the second half of 2008 and for 2009. </p> <p>Modifies the Physician Assistance and Quality Initiative Fund to eliminate funding for FY2013 and, if a specified contingency occurs, FY2014.</p> <p>Revises requirements for and extends the quality reporting system for 2010 and subsequent years, including increased incentive payments. Includes qualified audiologists as eligible professionals who must report data of quality measures. </p> <p>Directs the Secretary to establish a Physician Feedback Program, under which the Secretary shall use claims data to make confidential reports to physicians that measure the resources involved in furnishing care to individuals.</p> <p>Directs the Comptroller General to study and report to Congress on the Physician Feedback Program.</p> <p>(Sec. 132) Provides for incentive payments for electronic prescribing of medicine.</p> <p>(Sec. 133) Amends the Tax Relief and Health Care Act of 2006 to authorize the Secretary to expand the duration and the scope of the Medicare Medical Home Demonstration Project if such expansion is expected to: (1) improve the quality of patient care without increasing spending under the Medicare program; and (2) reduce spending under the Medicare program without reducing the quality of patient care. Provides funding. </p> <p>(Sec. 134) Amends SSA title XVIII, as amended by the Medicare, Medicaid, and SCHIP Extension Act of 2007, to extend through calendar 2009 the 1.0 floor on the Medicare work geographic adjustment under the Medicare physician fee schedule.</p> <p>(Sec. 135) Establishes an accreditation requirement for advanced diagnostic imaging services.</p> <p>Directs the Secretary to conduct a demonstration project to assess the appropriate use of imaging services.</p> <p>(Sec. 136) Amends the Medicare, Medicaid, and SCHIP Benefits Improvement and Protection Act of 2000, as amended by the Medicare Prescription Drug, Improvement, and Modernization Act of 2003, the Tax Relief and Health Care Act of 2006, and the Medicare, Medicaid, and SCHIP Extension Act of 2007, to extend through 2009 specified treatment of certain physician pathology services under Medicare. </p> <p>(Sec. 137) Makes permanent the exception to the 60-day limit on Medicare reciprocal billing arrangements between two physicians over a longer continuous period during all of which one of them is ordered to active duty as a member of a reserve component of the armed forces.</p> <p>(Sec. 138) Directs the Secretary to increase by 5% the fee schedule otherwise applicable for specified psychotherapy services during the period from July 1, 2008, through December 31, 2009.</p> <p>(Sec. 139) Sets forth a special 100% fee schedule payment rule for teaching anesthesiologists. Directs the Secretary to make specified adjustments to payments to teaching certified registered nurse anesthetists.</p> <p><b>Part II: Other Payment and Coverage Improvements</b> - (Sec. 141) Amends SSA title XVIII, as amended by the Medicare, Medicaid, and SCHIP Extension Act of 2007, to extend the exceptions process for Medicare physical therapy caps through December 31, 2009.</p> <p>(Sec. 142) Extends the payment rule for brachytherapy and therapeutic radiopharmaceuticals through December 31, 2009.</p> <p>(Sec. 143) Defines covered outpatient speech-language pathology services. </p> <p>(Sec. 144) Provides for coverage of pulmonary and cardiac rehabilitation items and services, including an intensive cardiac rehabilitation program.</p> <p>Repeals the requirement that ownership of oxygen equipment be transferred from the supplier to the individual user after the 36th continuous month of its use. Requires continuous: (1) furnishing of such equipment by the supplier after the 36th month for the remainder of the equipment's useful lifetime; and (2) Medicare payment for the rental of the equipment.</p> <p>(Sec. 145) Repeals the Medicare competitive bidding demonstration project for clinical laboratory services.</p> <p>Specifies a reduction in the clinical laboratory test fee schedule update adjustment for 2009 through 2013.</p> <p>(Sec. 146) Extends increased Medicare payments for ground ambulance services. Sets forth a special payment rule for air ambulance services under the ambulance fee schedule. </p> <p>(Sec. 147) Extends and expands the Medicare hold harmless provision under the prospective payment system for hospital outpatient department (HOPD) services for certain hospitals.</p> <p>(Sec. 148) Provides that clinical diagnostic laboratory services furnished by a critical access hospital shall be treated as being furnished as part of outpatient critical access services without regard to whether the outpatient is physically present in the critical access hospital, or in a skilled nursing facility (SNF) or a clinic (including a rural health clinic) operated by such a hospital, at the time the specimen is collected.</p> <p>(Sec. 149) Adds a hospital-based or critical access hospital-based renal dialysis center, a SNF, and a community mental health center as originating sites for purposes of payment for telehealth services.</p> <p>(Sec. 150) Directs the Medicare Payment Advisory Commission (MEDPAC) to study and report to Congress on the feasibility and advisability of establishing a Medicare Chronic Care Practice Research Network that would serve as a standing network of providers testing new models of care coordination and other care approaches for chronically ill beneficiaries.</p> <p>(Sec. 151) Directs the Secretary, in the case of services furnished by federally qualified health centers (FQHCs), to establish payment limits with respect to services furnished: (1) in 2010 at the limits otherwise established for such year increased by $5; and (2) in a subsequent year at the limits established for the previous year increased by the percentage increase in the Medicare Economic Index (MEI).</p> <p>Requires the Comptroller General to study and report to the Congress on the effects and adequacy of the Medicare FQHC payment structure.</p> <p>(Sec. 152) Amends the Public Health Service Act to direct the Secretary to establish pilot projects to increase public and medical community awareness of and screening for chronic kidney disease, as well as enhance surveillance systems to better assess its prevalence and incidence. Authorizes appropriations. </p> <p>Extends Medicare coverage to kidney disease patient education services.</p> <p>(Sec. 153) Revises requirements for payments for renal dialysis services. Reduces the composite rate factor in the updates for renal dialysis services furnished during calendar 2009, and those furnished on or after January 1, 2010.</p> <p>Directs the Secretary, for dialysis services furnished on or after January 1, 2011, to implement a (bundled) payment system under which a single payment is made to a service provider or a renal dialysis facility for renal dialysis services in lieu of any other payment.</p> <p>Institutes a system of quality incentives for service providers and renal dialysis facilities in the end-stage renal disease (ESRD) program.</p> <p>Directs the Comptroller General to report to Congress on implementation of the ESRD bundling payment system and quality initiative.</p> <p>(Sec. 154) Delays generally until after 2011 full implementation of the Medicare competitive acquisition program for the purchase of durable medical equipment (DME), prosthetics, orthotics, and supplies (DMEPOS).</p> <p>Revises requirements for such program, dividing its implementation into two rounds, and specifying covered item updates for 2009-2014.</p> <p>Prescribes requirements for application of accreditation in implementing quality standards.</p> <p>Requires suppliers to disclose subcontractors.</p> <p>Directs the Secretary of Health and Human Services to provide for a competitive acquisition ombudsman within the Centers for Medicare &amp; Medicaid Services to respond to complaints and inquiries by suppliers and individuals.</p> <p>Specifies topics for the Comptroller General's required study and report to Congress on the impact of competitive acquisition of DME on suppliers, manufacturers, and patients.</p> <p>Sets forth a special rule for the competitive acquisition program for diabetic testing strips.</p> <p><b>Subtitle D: Provisions Relating to Part C</b> - (Sec. 161) Provides for phase-out of indirect costs of medical education (IME) from capitation rates.</p> <p>(Sec. 162) Revises requirements for certain non-employer Medicare Advantage (MA) private fee-for-service plans, as well as MA plans for special needs individuals, including, respectively, among other changes, requirements to assure access to network coverage and care management requirements for all special needs plans. </p> <p>(Sec. 163) Requires MA private fee-for-service and Medicare Savings Account (MSA) plans to have a quality improvement program</p> <p>(Sec. 165) Places a limitation on out-of-pocket costs (cost-sharing) for dual eligibles and qualified Medicare beneficiaries enrolled in a specialized MA plan for special needs individuals.</p> <p>(Sec. 166) Amends SSA title XVIII, as amended by the Medicare, Medicaid, and SCHIP Extension Act of 2007, to decrease the amount of funding available to the Medicare Advantage Regional Plan Stabilization Fund during 2014. </p> <p>(Sec. 167) Extends through January 1, 2010, reasonable cost reimbursement contracts the Secretary may enter with organizations whose capacity to bear the risk of potential losses under a risk-sharing contract is in doubt.</p> <p>Modifies the requirement that at least two MA regional plans be offered in the service area for the prohibition against the extension or renewal of a reasonable cost contract on or after January 1, 2010, to apply. Requires that such plans not be offered by the same MA organization.</p> <p>Changes the minimum enrollment requirements applicable to such a plan.</p> <p>Directs the Comptroller General to study and report to Congress on the reasons, if any, why reasonable cost reimbursement contracts are unable to become MA plans under Medicare part C.</p> <p>(Sec. 168) Requires MEDPAC to study and report to Congress on how comparable measures of performance and patient experience (quality measures) can be collected and reported by 2011 for the MA program and the original Medicare fee-for-service program.</p> <p>(Sec. 169) Directs MEDPAC to study and report to Congress on the correlation between: (1) the costs that Medicare Advantage organizations incur in providing Medicare Advantage plan coverage for items and services covered under the original Medicare fee-for-service program, as reflected in plan bids; and (2) county-level spending under such original Medicare fee-for-service program on a per capita basis. Requires study of: (1) alternate approaches to payment with respect to a Medicare beneficiary enrolled in an MA plan other than through county-level payment area equivalents; (2) the accuracy and completeness of county-level estimates of per capita spending under the original Medicare fee-for-service program; and (3) ways to improve the accuracy and completeness of such county-level estimates.</p> <p><b>Subtitle E: Provisions Relating to Part D - Part I: Improving Pharmacy Access</b> - (Sec. 171) Requires prompt payment of clean claims by prescription drug plans (PDPs) and MA-Prescription Drug plans under Medicare part D. Requires interest payments on late claims. </p> <p>(Sec. 172) Requires each PDP contract with a PDP sponsor to provide that the pharmacy located in, or having a contract with, a long-term care facility shall have between 30 and 90 days to submit claims to the sponsor for reimbursement.</p> <p>(Sec. 173) Requires each contract with a PDP sponsor using a pharmacy reimbursement prescription drug pricing standard to require a weekly update of the standard to reflect accurately the market price of acquiring the drug.</p> <p><b>Part II: Other Provisions</b> - (Sec. 175) Includes barbiturates and benzodiazepines as covered part D drugs.</p> <p>(Sec. 176) Directs the Secretary to identify categories and classes of drugs for which: (1) restricted access would have major or life threatening clinical consequences for individuals who have a disease or disorder treated by them; and (2) there is significant clinical need for such individuals to have access to multiple drugs within a category or class because of unique chemical actions and pharmacological effects of such drugs, such as drugs used in the treatment of cancer.</p> <p>Requires PDP sponsors to include all covered part D drugs in a formulary in categories and classes identified by the Secretary, unless the Secretary establishes exceptions according to a specified process.</p> <p><b>Subtitle F: Other Provisions</b> - (Sec. 181) Allows the use of information provided to the Secretary under contracts with PDP sponsors for the general purposes of Medicare part D, improving public health through research. Requires such information to be made available to congressional support agencies for congressional oversight of the part D program.</p> <p>(Sec. 182) Revises the definition of &quot;medically accepted indication for drugs.&quot;</p> <p>(Sec. 183) Directs the Secretary to: (1) contract with a consensus-based entity (e.g., the National Quality Forum) for certain activities relating to health care performance measurement; and (2) evaluate and report to Congress on approaches for the collection of data regarding health care disparities. Provides funding. </p> <p>Requires the Comptroller General to study and report to Congress on the performance and costs of such entity.</p> <p>(Sec. 184) Authorizes the Secretary to develop alternative methods of payment for items and services provided under clinical trials and comparative effectiveness studies sponsored or supported by an agency supported by an agency of the Department of Health and Human Services to the extent such alternative methods are necessary to preserve the scientific validity of such trials or studies, such as in the case where masking the identity of interventions from patients and investigators is necessary to comply with the particular trial or study design.</p> <p>(Sec. 185) Directs the Secretary to: (1) evaluate approaches for the collection of data that allow for the ongoing, accurate, and timely collection and evaluation of data on disparities in health care services and performance on the basis of race, ethnicity, and gender; and (2) implement the most effective ones.</p> <p>(Sec. 186) Directs the Secretary to establish a demonstration project to determine the greatest needs and most effective methods of outreach to Medicare beneficiaries who were previously uninsured.</p> <p>(Sec. 187) Directs the Inspector General to prepare and publish a report on: (1) the extent to which Medicare providers and plans are complying with the Office for Civil Rights' Guidance to Federal Financial Assistance Recipients Regarding Prohibition Against National Origin Discrimination Affecting Limited English Proficient Persons and the Office of Minority Health's Culturally and Linguistically Appropriate Services (CLAS) Standards in health care; and (2) a description of the costs associated with or savings related to the provision of language services.</p> <p>(Sec. 188) Creates the Medicare Improvement Fund. Provides funding. </p> <p>(Sec. 189) Directs the Centers for Medicare &amp; Medicaid Services to participate in the Federal Payment Levy Program and ensure that all Medicare provider and supplier payments are processed through it, in specified graduated percentages, by the end of FY2011. </p> <p>Requires any disbursing official of the Department of Health and Human Services to apply administrative offsets with respect to Medicare provider or supplier payments.</p> <p><b>Title II: Medicaid</b> - (Sec. 201) Amends the Tax Relief and Health Care Act of 2006 to extend through June 30, 2009, the transitional medical assistance (TMA), and the abstinence education program under SSA title XIX (Medicaid).</p> <p>(Sec. 202) Amends SSA title XVIII to extend the Medicaid disproportionate share hospital (DSH) allotment for Tennessee and Hawaii.</p> <p>(Sec. 203) Delays until October 1, 2009, the application of the new payment limit for multiple source drugs under Medicaid.</p> <p>(Sec. 204) Amends SSA title XI to entitle states to receive reconsideration of a claim disallowance. </p> <p>(Sec. 205) Amends the Consolidated Omnibus Budget Reconciliation Act of 1985 to exempt Medicaid health insuring organizations operated by public entities in Ventura and Merced Counties, California, from the requirement that they be Medicaid managed care organizations meeting certain criteria.</p> <p>Declares that such exemption shall not apply with respect to any period for which the number of Medicaid beneficiaries enrolled with such health insuring organizations exceeds 16% (currently 14%) of the number of such beneficiaries in California.</p> <p><b>Title III: Miscellaneous</b> - (Sec. 301) Amends the Deficit Reduction Act of 2005 to extend through FY2009 supplemental grants under SSA title IV part D (Temporary Assistance for Needy Families) (TANF).</p> <p>(Sec. 302) Amends SSA title IV part E (Federal Payments for Foster Care and Adoption Assistance) to set at 70% the federal matching rate for foster care and adoption assistance for the District of Columbia.</p> <p>(Sec. 303) Amends the Public Health Service Act to extend through FY2011 special diabetes grant programs for Type I diabetes and for Indians. </p> <p>(Sec. 304) Directs the Secretary to contract with the Institute of Medicine (IOM) of the National Academies to identify, and report to the Secretary and Congress on, the methodological standards for conducting systematic reviews of clinical effectiveness research on health and health care in order to ensure that reviewing organizations have objective, scientifically valid, and consistent information on methods.</p> <p>Requires the Secretary to contract with the IOM, also, to study and report to the Secretary and the appropriate congressional committees on the best methods used in developing clinical practice guidelines in order to ensure that organizations developing such guidelines have objective, scientifically valid, and consistent information on approaches.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ275/PLAW-110publ275.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ275/PLAW-110publ275.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/6331",
+      "votes": []
+    },
+    {
       "id": "sres611-110",
       "congress": 110,
       "type": "sres",
@@ -7400,6 +7791,40 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/110/plaws/publ261/PLAW-110publ261.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/6304",
+      "votes": []
+    },
+    {
+      "id": "s254-110",
+      "congress": 110,
+      "type": "s",
+      "number": "254",
+      "title": "A bill to award posthumously a Congressional gold medal to Constantino Brumidi.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Enzi, Michael B.",
+        "party": "R",
+        "state": "WY"
+      },
+      "introduced_date": "2007-01-10",
+      "latest_action": {
+        "date": "2008-07-01",
+        "text": "Became Public Law No: 110-259."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Artists",
+        "Arts, Culture, Religion",
+        "Capitol (Washington, D.C.)",
+        "Congress",
+        "Congressional gold medals",
+        "Sculpture"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the Senate on May 21, 2008. The summary of that version is repeated here.)</b></p><p>Directs the Speaker of the House of Representatives and the President pro tempore of the Senate to make appropriate arrangements for the posthumous presentation, on behalf of Congress, of a gold medal to Constantino Brumidi, in recognition of his contributions to the nation as a designer and decorator of the U.S. Capitol. </p><p>Requires the Architect of the Capitol to arrange for the gold medal to be displayed in the Capitol Visitor Center as part of an exhibit honoring Constantino Brumidi.</p><p>Directs the Secretary of the Treasury, for purposes of the presentation, to strike a gold medal with suitable emblems, devices, and inscriptions. </p><p>Authorizes the Secretary to strike and sell duplicates in bronze of such gold medal. </p><p>States that: (1) the medals struck under this Act are national medals; and (2) all medals struck under this Act shall be considered to be numismatic items. </p><p>Authorizes to be charged against the U.S. Mint Public Enterprise Fund such amounts as may be necessary to pay for the costs of the medals struck pursuant to this Act.</p><p>Provides for amounts received from the sale of the duplicate bronze medals to be deposited into such Fund. </p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ259/PLAW-110publ259.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ259/PLAW-110publ259.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/254",
       "votes": []
     },
     {
@@ -8056,6 +8481,78 @@
       "votes": []
     },
     {
+      "id": "sres595-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "595",
+      "title": "A resolution designating September 2008 as \"Gospel Music Heritage Month\" and honoring gospel music for its valuable and longstanding contributions to the culture of the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lincoln, Blanche L.",
+        "party": "D",
+        "state": "AR"
+      },
+      "introduced_date": "2008-06-16",
+      "latest_action": {
+        "date": "2008-06-16",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S5666; text as passed Senate: CR S5666; text of measure as introduced: CR S5663)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Arts, Culture, Religion",
+        "Christianity",
+        "Congressional tributes",
+        "Music",
+        "Religion",
+        "Special months"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Designates September 2008 as Gospel Music Heritage Month. </p><p>Recognizes the great contributions to the culture of the United States derived from the rich heritage of gospel music and gospel music artists. </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres595/BILLS-110sres595ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres595/BILLS-110sres595ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres595/BILLS-110sres595ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/595",
+      "votes": []
+    },
+    {
+      "id": "sres592-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "592",
+      "title": "A resolution commending the Tennessee Valley Authority on its 75th anniversary.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Alexander, Lamar",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2008-06-12",
+      "latest_action": {
+        "date": "2008-06-12",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S5636; text as passed Senate: CR S5636; text of measure as introduced: CR S5633)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Anniversaries",
+        "Commerce",
+        "Congressional tributes",
+        "Electric utilities",
+        "Energy",
+        "Government Operations and Politics",
+        "Government corporations",
+        "Tennessee Valley Authority",
+        "Tennessee Valley development",
+        "Water Resources Development"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Commends the Tennessee Valley Authority on its 75th anniversary.</p> <p>Recognizes the Tennessee Valley Authority for its long and proud history of service in the areas of energy, the environment, and economic development in a service area that includes seven states.</p> <p>Honors the accomplishments of the Board of Directors, retirees, staff, and supporters of the Tennessee Valley Authority who were instrumental during the Tennessee Valley Authority's first 75 years.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres592/BILLS-110sres592ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres592/BILLS-110sres592ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres592/BILLS-110sres592ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/592",
+      "votes": []
+    },
+    {
       "id": "sres593-110",
       "congress": 110,
       "type": "sres",
@@ -8689,6 +9186,53 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres579/BILLS-110sres579ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres579/BILLS-110sres579ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/579",
+      "votes": []
+    },
+    {
+      "id": "hr493-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "493",
+      "title": "Genetic Information Nondiscrimination Act of 2008",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Slaughter, Louise McIntosh",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2007-01-16",
+      "latest_action": {
+        "date": "2008-05-21",
+        "text": "Became Public Law No: 110-233."
+      },
+      "outcome": "enacted",
+      "policy_area": "Civil Rights and Liberties, Minority Issues",
+      "subjects": [
+        "Administrative procedure",
+        "Apprenticeship",
+        "Civil actions and liability",
+        "Civil rights enforcement",
+        "Congress",
+        "Congressional reporting requirements",
+        "Damages",
+        "Department of Health and Human Services",
+        "Department of Labor",
+        "Department of the Treasury",
+        "Discrimination in employment",
+        "Discrimination in insurance",
+        "Discrimination in medical care",
+        "Dismissal of employees",
+        "Economics and Public Finance",
+        "Education",
+        "Employee health benefits",
+        "Employee rights",
+        "Employee selection"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the Senate on April 24, 2008. The summary of that version is repeated here, with changes reflecting enrollment corrections.)</b></p><p>Genetic Information Nondiscrimination Act of 2008 - <b>Title I: Genetic Nondiscrimination in Health Insurance</b> - (Sec. 101) Amends the Employee Retirement Income Security Act of 1974 (ERISA), the Public Health Service Act (PHSA), and the Internal Revenue Code to prohibit a group health plan from adjusting premium or contribution amounts for a group on the basis of genetic information.</p><p>Prohibits a group health plan from requesting or requiring an individual or family member of an individual from undergoing a genetic test. Provides that such prohibition does not: (1) limit the authority of a health care professional to request an individual to undergo a genetic test; or (2) preclude a group health plan from obtaining or using the results of a genetic test in making a determination regarding payment. Requires the plan to request only the minimum amount of information necessary to accomplish the intended purpose.</p><p>Allows a group health plan to request, but not require, a participant or beneficiary to undergo a genetic test for research purposes if certain requirements are met, including: (1) the plan clearly indicates that compliance is voluntary and that noncompliance will have no effect on enrollment status or premium or contribution amounts; (2) no genetic information collected or acquired is used for underwriting purposes; and (3) the plan notifies the Secretary of Health and Human Services that it is conducting activities pursuant to this exception and includes a description of the activities.</p><p>Prohibits a group health plan from requesting, requiring, or purchasing genetic information: (1) for underwriting purposes; or (2) with respect to any individual prior to such individual's enrollment in connection with such enrollment (provides that incidentally obtains such information is not a violation).</p><p>Applies such prohibitions to all group health plans, including small group health plans.</p><p>Provides that any reference to genetic information concerning an individual or family member includes genetic information of: (1) a fetus carried by a pregnant woman; and (2) an embryo legally held by an individual or family member utilizing an assisted reproductive technology.</p><p>Authorizes a penalty against any sponsor of a group health plan for any failure to meet requirements of this Act. Allows a waiver or limitation on such penalty if the failure was not discovered after exercising reasonable diligence or was due to reasonable cause.</p><p>(Sec. 102) Amends the PHSA to prohibit: (1) a health insurance issuer offering health insurance coverage in the individual market from establishing eligibility rules for enrollment based on genetic information; (2) discrimination on the basis of genetic information for health insurance offered in the individual market in the same manner as such discrimination is prohibited for group coverage; and (3) the imposition by a health insurance issuer offering health insurance coverage in the individual market of a preexisting condition exclusion on the basis of genetic information.</p><p>Applies such requirements to nonfederal governmental plans.</p><p>(Sec. 104) Amends title XVIII (Medicare) of the Social Security Act (SSA) to prohibit an issuer of a Medicare supplemental policy, on the basis of genetic information, from: (1) denying or conditioning the issuance or effectiveness of the policy, including the imposition of any exclusion of benefits based on a preexisting condition; or (2) discriminating in the pricing of the policy, including the adjustment of premium rates.</p><p>Prohibits an issuer of a Medicare supplemental policy from: (1) requesting or requiring an individual or a family member to undergo a genetic test; or (2) requesting, requiring, or purchasing genetic information for underwriting purposes or for any individual prior to enrollment.</p><p>(Sec. 105) Amends title XI (General Provisions, Peer Review, and Administrative Simplification) of SSA to require the Secretary of Health and Human Services to revise Health Insurance Portability and Accountability Act of 1996 (HIPAA) privacy regulations to: (1) treat genetic information as health information; and (2) prohibit the use or disclosure by a group health plan, health insurance coverage, or Medicare supplemental policy of genetic information about an individual for underwriting purposes.</p><p>(Sec. 106) Requires the Secretaries of Health and Human Services, Labor, and the Treasury to ensure that their regulations, rulings, and interpretations under this title are administered so as to have the same effect at all times and that they adopt a coordinated enforcement strategy.</p><p><b>Title II: Prohibiting Employment Discrimination on the Basis of Genetic Information</b> - (Sec. 202) Prohibits, as an unlawful employment practice, an employer, employment agency, labor organization, or joint labor-management committee from discriminating against an employee, individual, or member because of genetic information, including: (1) for an employer, by failing to hire or discharging an employee or otherwise discriminating against an employee with respect to the compensation, terms, conditions, or privileges of employment; (2) for an employment agency, by failing or refusing to refer an individual for employment; (3) for a labor organization, by excluding or expelling a member from the organization; (4) for an employment agency, labor organization, or joint labor-management committee, by causing or attempting to cause an employer to discriminate against a member in violation of this Act; or (5) for an employer, labor organization, or joint labor-management committee, by discriminating against an individual in admission to, or employment in, any program established to provide apprenticeships or other training or retraining.</p><p>Prohibits, as an unlawful employment practice, an employer, employment agency, labor organization, or joint labor-management committee from limiting, segregating, or classifying employees, individuals, or members because of genetic information in any way that would deprive or tend to deprive such individuals of employment opportunities or otherwise adversely affect their status as employees.</p><p>Prohibits, as an unlawful employment practice, an employer, employment agency, labor organization, or joint labor-management committee from requesting, requiring, or purchasing an employee's genetic information, except for certain purposes, which include where: (1) such information is requested or required to comply with certification requirements of family and medical leave laws; (2) the information involved is to be used for genetic monitoring of the biological effects of toxic substances in the workplace; and (3) the employer conducts DNA analysis for law enforcement purposes as a forensic laboratory or for purposes of human remains identification.</p><p>(Sec. 206) Requires an employer, employment agency, labor organization, or joint labor-management committee that possesses any genetic information about an employee or member to maintain such information in separate files and treat such information as a confidential medical record.</p><p>Prohibits an employer, employment agency, labor organization, or joint labor-management committee from disclosing such genetic information, except: (1) to the employee or member upon request; (2) to an occupational or other health researcher; (3) in response to a court order; (4) to a government official investigating compliance with this Act if the information is relevant to the investigation; (5) in connection with the employee's compliance with the certification provisions of the Family and Medical Leave Act of 1993 or such requirements under state family and medical leave laws; or (6) to a public health agency.</p><p>(Sec. 207) Sets forth provisions regarding enforcement of this Act. </p><p>(Sec. 208) Provides that disparate impact on the basis of genetic information does not establish a cause of action under this Act.</p><p>Establishes the Genetic Nondiscrimination Study Commission six years after enactment of this Act to review the developing science of genetics and to make recommendations to Congress regarding whether to provide a disparate impact cause of action under this Act. Authorizes appropriations to the Equal Employment Opportunity Commission (EEOC) to carry out this section.</p><p>(Sec. 212) Authorizes appropriations.</p><p><b>Title III: Miscellaneous Provisions</b> - (Sec. 301) Provides that if any provision of this Act, an amendment made by this Act, or the application of such provision or amendment to any person or circumstance is held to be unconstitutional, the remainder of this Act shall not be affected.</p><p>(Sec. 302) Amends the Fair Labor Standards Act of 1938 to increase the maximum employer penalty for violations involving oppressive child labor provisions or certain child labor safety requirements. Establishes an additional civil penalty for any such violation that causes the death or serious injury of an employee under the age of 18, which may be doubled for a repeated or willful violation.</p><p>Defines &quot;serious injury&quot; as: (1) permanent loss or substantial impairment of one of the senses or of the function of a bodily member, organ, or mental faculty; or (2) permanent paralysis or substantial impairment that causes loss of movement or mobility of a body part.</p><p>Increases the maximum civil penalty for any repeated or willful violation of minimum wage or maximum hours requirements.<br> </p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ233/PLAW-110publ233.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ233/PLAW-110publ233.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/493",
       "votes": []
     },
     {
@@ -10237,6 +10781,45 @@
       "votes": []
     },
     {
+      "id": "sres545-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "545",
+      "title": "A resolution honoring the recipients of the El Dorado Promise scholarship.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Pryor, Mark L.",
+        "party": "D",
+        "state": "AR"
+      },
+      "introduced_date": "2008-05-01",
+      "latest_action": {
+        "date": "2008-05-01",
+        "text": "Received in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S3729; text of measure as passed Senate: CR S3729; text of measure as introduced: CR S3720)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Arkansas",
+        "Commerce",
+        "Congressional tributes",
+        "Corporate philanthropy",
+        "Education",
+        "Energy",
+        "Higher education",
+        "Industry-university relations",
+        "Petroleum industry",
+        "Scholarships",
+        "Special days"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Congratulates the recipients of the El Dorado Promise scholarship for choosing to further their education.</p> <p>Recognizes April 30, 2008, as the second Academic Signing Day for graduating El Dorado High School students receiving El Dorado Promise and other academic scholarships.</p> <p>Acknowledges the importance of the El Dorado Promise scholarship program in revitalizing southern Arkansas.</p> <p>Recognizes Murphy Oil Corporation for creating and funding the scholarship which enables all eligible high school graduates of the El Dorado Public School District in El Dorado, Arkansas, to attend college.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres545/BILLS-110sres545ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres545/BILLS-110sres545ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres545/BILLS-110sres545ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/545",
+      "votes": []
+    },
+    {
       "id": "sres546-110",
       "congress": 110,
       "type": "sres",
@@ -10432,6 +11015,53 @@
       "votes": []
     },
     {
+      "id": "s793-110",
+      "congress": 110,
+      "type": "s",
+      "number": "793",
+      "title": "Traumatic Brain Injury Act of 2008",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hatch, Orrin G.",
+        "party": "R",
+        "state": "UT"
+      },
+      "introduced_date": "2007-03-07",
+      "latest_action": {
+        "date": "2008-04-28",
+        "text": "Became Public Law No: 110-206."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Access to health care",
+        "Afghanistan",
+        "Armed Forces and National Security",
+        "Authorization",
+        "Brain",
+        "Case management",
+        "Community health services",
+        "Congress",
+        "Congressional investigations",
+        "Congressional reporting requirements",
+        "Data banks",
+        "Department of Health and Human Services",
+        "Disabled",
+        "Economics and Public Finance",
+        "Emergency Management",
+        "Epidemiology",
+        "Federal aid to Indians",
+        "Federal aid to research",
+        "Government Operations and Politics"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the House on April 8, 2008. The summary of that version is repeated here.)</b></p> <p>Traumatic Brain Injury Act of 2008 - (Sec. 3) Amends the Public Health Service Act to revise the national program for traumatic brain injury registries to make grants for state traumatic brain injury surveillance systems or registries (currently, only for registries) to: (1) determine the incidence and prevalence of traumatic brain injury and related disability; (2) ensure the uniformity of reporting under each such system or registry; (3) link individuals with traumatic brain injury to services and supports; and (4) link such individuals with academic institutions to conduct applied research. </p> <p>Requires the Secretary of Health and Human Services, acting through the Director of the Centers for Disease Control and Prevention (CDC) and the Director of the National Institutes of Health (NIH), to report to the relevant congressional committees on activities and procedures that can be implemented by the CDC to improve the collection and dissemination of compatible epidemiological studies on the incidence and prevalence of traumatic brain injury in individuals who were formerly in the military.</p> <p>(Sec. 4) Authorizes the Secretary, acting through the Director of CDC, to conduct a study to: (1) determine the incidence of traumatic brain injury and prevalence of traumatic brain injury related disability; (2) report national trends in traumatic brain injury; (3) identify common therapeutic interventions which are used for the rehabilitation of individuals with such injuries; (4) identify interventions and therapies that can prevent or remediate the development of secondary neurologic conditions related to traumatic brain injury; and (5) develop practice guidelines for such rehabilitation.</p> <p>(Sec. 5) Authorizes appropriations for FY2009-FY2012 for NIH's trauma research program. </p> <p>(Sec. 6) Allows the Secretary, acting through the Administrator of the Health Resources Services Administration (HRSA), to make grants to states and American Indian consortia (currently, only to states) to improve access to rehabilitation and other services (currently, to health and other services) regarding traumatic brain injury. Authorizes appropriations for such grants for FY2009-FY2012. </p> <p>Requires the Administrator and the Commissioner of the Administration on Developmental Disabilities to coordinate the collection of data regarding protection and advocacy services. Directs the Administrator to make a grant for training and technical assistance to protection and advocacy systems, if funds permit. Authorizes appropriations for FY2009-FY2012.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ206/PLAW-110publ206.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ206/PLAW-110publ206.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/793",
+      "votes": []
+    },
+    {
       "id": "sres497-110",
       "congress": 110,
       "type": "sres",
@@ -10611,6 +11241,53 @@
       "votes": []
     },
     {
+      "id": "s1858-110",
+      "congress": 110,
+      "type": "s",
+      "number": "1858",
+      "title": "Newborn Screening Saves Lives Act of 2007",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Dodd, Christopher J.",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2007-07-23",
+      "latest_action": {
+        "date": "2008-04-24",
+        "text": "Became Public Law No: 110-204."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Ambulatory care",
+        "Authorization",
+        "Birth defects",
+        "Clinical trials",
+        "Communication in medicine",
+        "Conferences",
+        "Congress",
+        "Congressional reporting requirements",
+        "Continuing education",
+        "Demography",
+        "Economics and Public Finance",
+        "Education",
+        "Emergency Management",
+        "Emergency medicine",
+        "Environmental Protection",
+        "Environmental health",
+        "Epidemiology",
+        "Families",
+        "Federal advisory bodies"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the Senate on December 13, 2007. The summary of that version is repeated here.)</b></p><p>Newborn Screening Saves Lives Act of 2007 - (Sec. 2) Amends the Public Health Service Act to authorize the Secretary of Health and Human Services, acting through the Administrator of the Health Resources and Services Administration (HRSA), to award grants to eligible entities to: (1) provide screening, counseling, or health care services to newborns and children having or at risk for heritable disorders; (2) provide education and training in newborn screening and congenital, genetic, and metabolic disorders to health care professionals and newborn screening laboratory personnel; (3) develop and deliver educational programs about newborn screening, counseling, testing, follow-up, treatment, and specialty services to parents, families, and patient advocacy and support groups; and (4) establish, maintain, and operate a system to assess and coordinate treatment relating to congenital, genetic, and metabolic disorders. </p><p>(Sec. 3) Authorizes appropriations for FY2008-FY2012 for grants for demonstration programs to evaluate the effectiveness of screening, counseling, or health care services in reducing the morbidity and mortality caused by heritable disorders in newborns and children.</p><p>(Sec. 4) Expands the duties of the Advisory Committee on Heritable Disorders in Newborns and Children to include: (1) making recommendations that include the heritable disorders for which all newborns should be screened; (2) developing a model decision-matrix for newborn screening expansion; and (3) considering ways to ensure that all states attain the capacity to screen for the recommended conditions. Sets forth deadlines for the Secretary to make a decision on Advisory Committee recommendations.</p><p>Requires the Advisory Committee to continue to operate during the five-year period beginning on the date of enactment of this Act.</p><p>(Sec. 5) Requires the Secretary, acting through the Administrator, to establish and maintain a central clearinghouse of current information on newborn screening. Sets forth requirements for such clearinghouse, including: (1) ensuring that the clearinghouse is available on the Internet and is updated at least quarterly; (2) providing links to websites that have expertise in newborn screening; (3) providing information about newborn conditions and screening services available in each state; (4) providing current research on conditions for which newborn screening tests are available; and (5) providing the availability of federal funding for newborn and child screening for heritable disorders.</p><p>(Sec. 6) Requires the Secretary, acting through the Director of the Centers for Disease Control and Prevention (CDC), to provide for: (1) quality assurance for screening laboratories; and (2) appropriate quality control and other performance test materials to evaluate the performance of new screening tools.</p><p>Requires the Secretary to establish an Interagency Coordinating Committee on Newborn and Child Screening to make recommendations on: (1) programs to collect, analyze, and make available data on certain heritable disorders; and (2) the establishment of regional centers to conduct applied epidemiological research on effective interventions for preventing poor health outcomes resulting from such disorders and to provide information and education to the public on such effective interventions.</p><p>(Sec. 7) Requires the Secretary, acting through the Director of CDC, to develop a national contingency plan for newborn screening in the event of a public health emergency. </p><p>Authorizes the Secretary to continue to carry out, coordinate, and expand research in newborn screening (to be known as the Hunter Kelly Newborn Screening Research Program), including: (1) identifying, developing, and testing the most promising new screening technologies; and (2) experimental treatments and disease management strategies for conditions that can be detected through newborn screening for which treatment is not yet available.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/s1858/BILLS-110s1858enr.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/s1858/BILLS-110s1858enr.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/s1858/BILLS-110s1858enr.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/1858",
+      "votes": []
+    },
+    {
       "id": "sres510-110",
       "congress": 110,
       "type": "sres",
@@ -10729,6 +11406,47 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/110/plaws/publ202/PLAW-110publ202.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/845",
+      "votes": []
+    },
+    {
+      "id": "sres522-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "522",
+      "title": "A resolution recognizing the 60th anniversary of the founding of the modern State of Israel and reaffirming the bonds of close friendship and cooperation between the United States and Israel.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Reid, Harry",
+        "party": "D",
+        "state": "NV"
+      },
+      "introduced_date": "2008-04-17",
+      "latest_action": {
+        "date": "2008-04-22",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S3267)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Aggression",
+        "Anniversaries",
+        "Armed Forces and National Security",
+        "Commemorations",
+        "Congressional tributes",
+        "Democracy",
+        "Government Operations and Politics",
+        "Israel",
+        "Middle East and North Africa",
+        "Peace negotiations",
+        "Pluralism (Social sciences)",
+        "Sovereignty",
+        "Terrorism"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Recognizes the historic significance of the 60th anniversary of the reestablishment of Israel as a homeland for the Jewish people.</p> <p> Reaffirms the bonds of friendship and cooperation between the United States and Israel.</p> <p> Commends the people of Israel for their achievements in building a new state and a pluralistic democratic society.</p> <p> Reaffirms support for Israel's right to defend itself against threats to its security and existence.</p> <p> Extends congratulations and best wishes to Israel and the Israeli people for a peaceful and successful future. </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres522/BILLS-110sres522ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres522/BILLS-110sres522ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres522/BILLS-110sres522ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/522",
       "votes": []
     },
     {
@@ -10905,6 +11623,41 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres521/BILLS-110sres521ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres521/BILLS-110sres521ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/521",
+      "votes": []
+    },
+    {
+      "id": "sres517-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "517",
+      "title": "A resolution designating the week of April 13-19, 2008, as \"Week of the Young Child\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Salazar, Ken",
+        "party": "D",
+        "state": "CO"
+      },
+      "introduced_date": "2008-04-16",
+      "latest_action": {
+        "date": "2008-04-16",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S3103; text as passed Senate: CR S3103; text of measure as introduced: CR S3082)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Day care",
+        "Education",
+        "Elementary and secondary education",
+        "Families",
+        "Preschool education",
+        "Special weeks",
+        "Teachers"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates the week of April 13-19, 2008, as &quot;Week of the Young Child.&quot;</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres517/BILLS-110sres517ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres517/BILLS-110sres517ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres517/BILLS-110sres517ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/517",
       "votes": []
     },
     {
@@ -13632,6 +14385,53 @@
       "votes": []
     },
     {
+      "id": "s2488-110",
+      "congress": 110,
+      "type": "s",
+      "number": "2488",
+      "title": "OPEN Government Act of 2007",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Leahy, Patrick J.",
+        "party": "D",
+        "state": "VT"
+      },
+      "introduced_date": "2007-12-14",
+      "latest_action": {
+        "date": "2007-12-31",
+        "text": "Became Public Law No: 110-175."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Administrative fees",
+        "Civil Rights and Liberties, Minority Issues",
+        "Civil actions and liability",
+        "Congress",
+        "Congressional investigations",
+        "Congressional reporting requirements",
+        "Consent decrees",
+        "Disciplining of employees",
+        "Economics and Public Finance",
+        "Executive reorganization",
+        "Federal employees",
+        "Federal officials",
+        "Freedom of information",
+        "Government paperwork",
+        "Government publicity",
+        "Government statistics",
+        "Identification devices",
+        "Journalism",
+        "Law"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p><p>Openness Promotes Effectiveness in our National Government Act of 2007 or the OPEN Government Act of 2007 - Amends the Freedom of Information Act (FOIA) to revise requirements for federal agency disclosures of information requested under that Act. </p><p>(Sec. 3) Provides definitions of &quot;representative of the news media&quot; and &quot;news&quot; for purposes of request processing fees. Regards a freelance journalist as working for a news-media entity if the journalist can demonstrate a solid basis for expecting publication through that entity. </p><p>(Sec. 4) Provides that, for purposes of awarding attorney fees and litigation costs, a FOIA complainant has substantially prevailed in a legal proceeding to compel disclosure if such complainant obtained relief through either: (1) a judicial order or an enforceable written agreement or consent decree; or (2) a voluntary or unilateral change in position by the agency if the complainant's claim is not insubstantial. </p><p>Prohibits the Treasury's Claims and Judgment Fund from being used to pay reasonable attorney fees in cases where the complainant has substantially prevailed. Requires fees to be paid only from funds annually appropriated for authorized purposes for the federal agency against which a claim or judgment has been rendered.</p><p>(Sec. 5) Directs the Attorney General to: (1) notify the Special Counsel of civil actions taken for arbitrary and capricious rejections of requests for agency records; and (2) submit annual reports to Congress on such civil actions. Directs the Special Counsel to submit an annual report on investigations of agency rejections of FOIA requests. </p><p>(Sec. 6) Requires the 20-day period during which an agency must determine whether to comply with a FOIA request to begin on the date the request is received by the appropriate component of the agency, but no later than 10 days after the request is received by any component that is designated to receive FOIA requests in the agency's FOIA regulations. Prohibits the tolling of the 20-day period by the agency, except: (1) that the agency may make one request to the requester for information and toll the 20-day period while it is awaiting such information; or (2) if necessary to clarify with the requester issues regarding fee assessment. Ends the tolling period on the agency's receipt of the requester's response. </p><p>Prohibits an agency from assessing search or duplication fees if it fails to comply with time limits, provided that no unusual or exceptional circumstances apply to the processing of the request. Requires each agency to make available its FOIA Public Liaison, who shall assist in the resolution of any disputes between the requester and the agency.</p><p>(Sec. 7) Requires agencies to establish: (1) a system to assign an individualized tracking number for each FOIA request received that will take longer than 10 days to process; and (2) a telephone line or Internet service that provides information on the status of a request. </p> <p>(Sec. 8) Revises annual reporting requirements on agency compliance with FOIA to require information on: (1) FOIA denials based upon particular statutes; (2) response times; and (3) compliance by the agency and by each principal component thereof. Requires agencies to make the raw statistical data used in reports electronically available to the public upon request.</p> <p>(Sec. 9) Redefines \"record\" under FOIA to include any information maintained by an agency contractor. </p><p>(Sec. 10) Establishes within the National Archives and Records Administration (NARA) an Office of Government Information Services to: (1) review compliance with FOIA policies; (2) recommend policy changes to Congress and the President; and (3) offer mediation services between FOIA requesters and administrative agencies as a non-exclusive alternative to litigation. Authorizes the Office to issue advisory opinions if mediation has not resolved the dispute. </p><p>Requires each agency to designate a Chief FOIA Officer, who shall: (1) have responsibility for FOIA compliance; (2) monitor FOIA implementation; (3) recommend to the agency head adjustments to agency practices, policies, personnel, and funding to improve implementation of FOIA; and (4) facilitate public understanding of the purposes of FOIA's statutory exemptions. Requires agencies to designate at least one FOIA Public Liaison, who shall be appointed by the Chief FOIA Officer, to: (1) serve as an official to whom a FOIA requester can raise concerns about service from the FOIA Requester Center; and (2) be responsible for assisting in reducing delays, increasing transparency and understanding of the status of requests, and assisting in the resolution of disputes.</p><p>(Sec. 11) Requires the Office of Personnel Management (OPM) to report to Congress on personnel policies related to FOIA. <p>(Sec. 12) Sets forth requirements to describe exemptions authorizing deletions of material provided under FOIA.",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ175/PLAW-110publ175.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ175/PLAW-110publ175.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/2488",
+      "votes": []
+    },
+    {
       "id": "hr4839-110",
       "congress": 110,
       "type": "hr",
@@ -14694,6 +15494,46 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/110/plaws/publ141/PLAW-110publ141.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/4118",
+      "votes": []
+    },
+    {
+      "id": "s1974-110",
+      "congress": 110,
+      "type": "s",
+      "number": "1974",
+      "title": "Pension Protection Technical Corrections Act of 2007",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kennedy, Edward M.",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2007-08-02",
+      "latest_action": {
+        "date": "2007-12-19",
+        "text": "Passed Senate with an amendment by Unanimous Consent. (text: CR S16049-16055)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Labor and Employment",
+      "subjects": [
+        "Administrative procedure",
+        "Defined benefit pension plans",
+        "Defined contribution plans",
+        "Department of the Treasury",
+        "Government Operations and Politics",
+        "Income tax",
+        "Law",
+        "Pension funds",
+        "Standards",
+        "Tax deductions",
+        "Taxation",
+        "Trusts and trustees"
+      ],
+      "summary_crs": " <p><b></b></p><p>Pension Protection Technical Corrections Act of 2007<b> - </b> Amends the Employee Retirement Income Security Act of 1974 (ERISA) and the Internal Revenue Code, as amended by the Pension Protection Act of 2006, to make changes to rules governing defined benefit and defined contribution pension plans. </p><p>(Sec. 2) Modifies rules relating to increases in pension plan benefits while a waiver or amortization extension is in effect or with respect to retroactive amendments to such plans. </p><p>Revises the definition of &quot;target normal cost&quot; with respect to increases and decreases in such costs. </p><p>Requires the Secretary of the Treasury to prescribe rules for quarterly contributions to pension plans with a shortfall in 2008. </p><p>(Sec. 3) Revises the criteria for use of the shortfall funding method for multiemployer defined benefit plans. </p><p>Requires the Secretary of the Treasury, in consultation with the Secretary of Labor, to establish criteria for required notices relating to multiemployer plans in endangered or critical status. </p><p>Revises: (1) criteria for implementation and enforcement of a multiemployer plan default schedule; (2) the definition of plan sponsor for purposes of multiemployer plan funding rules; and (3) the method for calculating the excise tax on trustees of multiemployer plans for failure to adopt a timely rehabilitation plan. </p><p>(Sec. 4) Extends until 2009 the temporary interest rate for pension plan funding. </p><p>(Sec. 5) Limits the coverage of the missing participant rules to qualified plans that did not provide for employer contributions. </p><p>(Sec. 6) Revises requirements relating to: (1) annual funding notices for single and multiemployer defined benefit plans; (2) termination information for pension plan participants; (3) periodic pension benefit statements; and (4) notices to pension plan participants or beneficiaries of blackout periods (i.e, restrictions on plan operations, including investment changes).</p><p>(Sec. 7) Modifies pension plan requirements relating to investment advice, prohibited transactions, and fiduciary rules. </p><p>(Sec. 8) Provides that failure to meet pension plan preservation of capital requirements constitutes a violation of ERISA age discrimination rules.</p><p>(Sec. 9) Modifies rules relating to: (1) the deduction limit for single-employer pension plans; (2) deductions for employer contributions to one or more defined contribution plans; (3) rollovers from retirement plans to Roth individual retirement accounts (IRAs); (4) rollovers by nonspouse beneficiaries of retirement plans; (5) distributions from public pension plans for health and long-term care insurance for public safety officers; and (6) survivor annuity plans of special trial judges of the U.S. Tax Court. </p><p>Exempts assets transfers from health accounts to maintain a pension plan's funded status from the excise tax on reversions.</p><p>(Sec. 10) Revises the definition of &quot;one-participant retirement plan&quot; for purposes of ERISA diversification and participation requirements.</p><p>Expands rules allowing automatic contributions to employer pension plans. </p><p>Requires the administrator of a combined pension plan (consisting of a defined benefit plan and a qualified cash or deferred arrangement) to treat such plans separately upon termination.</p><p>(Sec. 11) Provides that former spouses shall be entitled to survivor benefits under the Railroad Retirement Act if: (1) the employee completed 10 years of service in the railroad industry (or five years of service after December 31, 1995); (2) the spouse or former spouse has attained age 62; and (3) the employee attains age 62 (or if deceased, would have attained age 62). Makes such provision effective for payments due after August 2007.</p><p>(Sec. 12) Prohibits states from reducing unemployment compensation by the amount of pension rollovers. </p><p>(Sec. 13) Modifies the formula for determining inclusion in gross income of distributions from individual retirement accounts (IRAs) for charitable purposes. </p><p>(Sec. 14) Provides that the value of assets for any ERISA plan under the averaging method shall be adjusted for contributions, distributions, and expected earnings as determined by the Secretary of the Treasury. </p><p>Provides for an alternative method of meeting the definition of qualified optional survivor annuity.</p><p>(Sec. 15) Makes the amendments made by this Act effective as if originally included in the Pension Protection Act of 2006.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/s1974/BILLS-110s1974es.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/s1974/BILLS-110s1974es.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/s1974/BILLS-110s1974es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/1974",
       "votes": []
     },
     {
@@ -16161,6 +17001,42 @@
       "votes": []
     },
     {
+      "id": "sres385-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "385",
+      "title": "A resolution honoring those who have volunteered to assist in the cleanup of the November 7, 2007, oil spill in San Francisco Bay.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Boxer, Barbara",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2007-11-16",
+      "latest_action": {
+        "date": "2007-11-16",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S14658; text as passed Senate: CR S14658; text of measure as introduced: CR S14643)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Animals",
+        "California",
+        "Congressional tributes",
+        "Environmental Protection",
+        "Oil pollution",
+        "Oil spills and wildlife",
+        "Social Welfare",
+        "Volunteer workers"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Honors those individuals and organizations who have volunteered to assist in the cleanup of the November 7, 2007, oil spill in San Francisco Bay.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres385/BILLS-110sres385ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres385/BILLS-110sres385ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres385/BILLS-110sres385ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/385",
+      "votes": []
+    },
+    {
       "id": "sres386-110",
       "congress": 110,
       "type": "sres",
@@ -16195,6 +17071,53 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres386/BILLS-110sres386ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres386/BILLS-110sres386ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/386",
+      "votes": []
+    },
+    {
+      "id": "sres387-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "387",
+      "title": "A resolution expressing the sense of the Senate regarding the degradation of the Jordan River and the Dead Sea and welcoming cooperation between the peoples of Israel, Jordan, and the Palestinian Authority.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lugar, Richard G.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2007-11-16",
+      "latest_action": {
+        "date": "2007-11-16",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S14658-14659; text as passed Senate: CR S14659; text of measure as introduced: CR S14643-14644)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Arab-Israeli conflict",
+        "Economic impact statements",
+        "Economics and Public Finance",
+        "Environmental Protection",
+        "Environmental assessment",
+        "Environmental degradation",
+        "Infrastructure",
+        "International environmental cooperation",
+        "Israel",
+        "Jordan",
+        "Marine and coastal resources, fisheries",
+        "Marine pollution",
+        "Middle East and North Africa",
+        "Palestinians",
+        "Pipelines",
+        "Rivers",
+        "Summit diplomacy",
+        "Transportation and Public Works",
+        "Waste disposal in rivers, lakes, etc."
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>Calls the world's attention to the serious degradation of the Jordan River and the Dead Sea.</p> <p> Applauds the cooperative manner with which the governments of Israel and Jordan, as well as the Palestinian Authority (PA) have worked to address the declining water level and quality of the Dead Sea and other water-related challenges in the region. </p> <p> Supports efforts to assess the environmental, social, health, and economic impacts, costs, and feasibility of a Red Sea-Dead Sea pipeline in comparison to alternative proposals. </p> <p> Encourages Israel and Jordan, as well as the PA, to continue to work in a spirit of cooperation as they address the region's serious water challenges.</p> <p> Urges Israel, Jordan, and the PA to develop a comprehensive strategy to rectify the Jordan River's degradation.</p> <p>Expresses hopes that the spirit of cooperation manifested in the search for a solution to the Dead Sea water crisis might serve as a model for addressing the degradation of the Jordan River, as well as a model of peace and cooperation for the upcoming meetings in Washington between Israel and the PA. </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres387/BILLS-110sres387ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres387/BILLS-110sres387ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres387/BILLS-110sres387ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/387",
       "votes": []
     },
     {
@@ -16484,6 +17407,53 @@
       "votes": []
     },
     {
+      "id": "hr3222-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "3222",
+      "title": "Department of Defense Appropriations Act, 2008",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Murtha, John P.",
+        "party": "D",
+        "state": "PA"
+      },
+      "introduced_date": "2007-07-30",
+      "latest_action": {
+        "date": "2007-11-13",
+        "text": "Became Public Law No: 110-116."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "AIDS (Disease)",
+        "Afghanistan",
+        "Africa (Sub-Saharan)",
+        "Air force",
+        "Air-to-air missiles",
+        "Aliens",
+        "American Samoa",
+        "Ammunition",
+        "Appropriations",
+        "Armed forces reserves",
+        "Arms control",
+        "Army",
+        "Ballistic missiles",
+        "Buy American",
+        "Central Intelligence Agency",
+        "Chemical warfare",
+        "Civil service retirement",
+        "Congress",
+        "Congress and military policy"
+      ],
+      "summary_crs": " <p><b>Division A: </b>Department of Defense Appropriations Act, 2008 -<b> Department of Defense - Title I: Military Personnel </b>- Appropriates funds for FY2008 for active-duty and reserve personnel in the Army, Navy, Marine Corps, and Air Force, and for National Guard personnel in the Army and Air Force.</p> <p><b>Title II: Operation and Maintenance </b>- Appropriates funds for FY2008 for operation and maintenance (O&amp;M) for the Army, Navy, Marine Corps, and Air Force, the defense agencies, the reserve components, and the Army and Air National Guard. Appropriates funds for: (1) the United States Court of Appeals for the Armed Forces; (2) environmental restoration for the military departments, the Department of Defense (DOD), and at formerly used defense sites; (3) overseas humanitarian, disaster, and civic aid; and (4) former Soviet Union threat reduction.</p> <p><b>Title III: Procurement </b>- Appropriates funds for FY2008 for procurement by the Armed Forces of aircraft, missiles, weapons, tracked combat vehicles, ammunition, shipbuilding and conversion, and other procurement. Appropriates funds for: (1) defense-wide procurement; (2) National Guard and reserve equipment; and (3) certain procurements under the Defense Production Act of 1950.</p> <p><b>Title IV: Research, Development, Test and Evaluation </b>- Appropriates funds for FY2008 for research, development, test and evaluation (RDT&amp;E) by the Armed Forces and defense agencies. Appropriates funds for the Director of Operational Test and Evaluation.</p> <p><b>Title V: Revolving and Management Funds </b>- Appropriates funds for: (1) the Defense Working Capital Funds; and (2) programs under the National Defense Sealift Fund.</p> <p><b>Title VI: Other Department of Defense Programs </b>- Appropriates funds for: (1) the Defense Health Program; (2) the destruction of lethal chemical agents and munitions; (3) drug interdiction and counter-drug activities, defense; (4) the Joint Improvised Explosive Device Defeat Fund; and (5) the Office of the Inspector General.</p> <p><b>Title VII: Related Agencies </b>- Appropriates funds for the: (1) Central Intelligence Agency Retirement and Disability System Fund; and (2) Intelligence Community Management Account.</p> <p><b>Title VIII: General Provisions </b>- Specifies authorized, restricted, and prohibited uses of authorized funds.</p> <p>(Sec. 8006) Requires a report from DOD to the defense committees to establish the baseline for application of FY2008 reprogramming and transfer authorities.</p> <p>(Sec. 8010) Authorizes procurement funds to be used for a multiyear procurement contract for: (1) the Army CH-47 Chinook helicopter; (2) M1A2 Abrams system enhancement package upgrades; (3) M2A3/M3A3 Bradley upgrades; and (4) the Virginia class submarine.</p> <p>(Sec. 8012) Prohibits, during FY2008, the management by end strengths of DOD civilian personnel.</p> <p>(Sec. 8023) Authorizes DOD to incur obligations of up to $350 million for DOD military compensation, construction projects, and supplies and services in anticipation of receipts of contributions from the government of Kuwait.</p> <p>(Sec. 8025) Prohibits the use of funds from this Act to establish a new federally funded research and development center (FFRDC). Limits the federal compensation to be paid to FFRDC members or consultants. Prohibits the use of FY2008 funds for new building construction, cost-sharing payments for projects funded by government grants, absorption of cost overruns, or certain charitable contributions. Limits the staff years of technical effort that may be funded for FFRDCs from FY2008 funds. Reduces, by $57.725 million, the total amount appropriated in this Act for FFRDCs.</p> <p>(Sec. 8026) Provides Buy American requirements with respect to the DOD procurement of carbon, alloy, or armor steel plating.</p> <p>(Sec. 8029) Requires the Secretary of Defense (Secretary) to report to Congress on the amount of DOD purchases from foreign entities in FY2008.</p> <p>(Sec. 8032) Authorizes the Secretary of the Air Force to convey to Indian tribes located in North Dakota, South Dakota, Montana, and Minnesota relocatable military housing units currently located at Grand Forks and Minot Air Force Bases that are excess to the needs of the Air Force. Requires the Operation Walking Shield Program to resolve any housing unit conflicts arising after such conveyance.</p> <p>(Sec. 8038) Makes specified DOD O&amp;M funds available only for the mitigation of environmental impacts on Indian lands resulting from DOD activities.</p> <p>(Sec. 8039) Prohibits the use of funds: (1) by a DOD entity without compliance with the Buy American Act; (2) to establish additional field operating agencies of DOD elements, except for those funded within the National Foreign Intelligence Program and Army agencies established to eliminate, mitigate, or counter the effects of improvised explosive devices; (3) for assistance to the Democratic People's Republic of North Korea, unless specifically appropriated for such purpose; and (4) to reduce the civilian medical and medical support personnel assigned to military treatment facilities below the September 30, 2003, level.</p> <p>(Sec. 8043) Rescinds specified funds from various accounts under prior defense appropriations Acts.</p> <p>(Sec. 8048) Prohibits the transfer to any other department or agency, except as specifically provided in an appropriations law, of funds available to DOD or the Central Intelligence Agency (CIA) for drug interdiction or counter-drug activities.</p> <p>(Sec. 8052) Prohibits current fiscal year DOD funds from being obligated or expended to transfer to another nation or international organization defense articles or services for use in any United Nations (UN) peacekeeping or peace enforcement operation, or for any other international peacekeeping, peace enforcement, or humanitarian assistance operation, unless specified congressional committees are given 15 days' advance notice.</p> <p>(Sec. 8059) Makes DOD funds available to provide transportation of medical supplies and equipment to: (1) American Samoa; and (2) the Indian Health Service in conjunction with a civil-military project.</p> <p>(Sec. 8060) Prohibits funds from being used to approve or license the sale of the F-22 advanced tactical fighter to any foreign government.</p> <p>(Sec. 8061) Authorizes the Secretary, on a case-by-case basis, to waive limitations on the procurement of defense items from a foreign country if: (1) the Secretary determines that such limitations would invalidate cooperative or reciprocal trade agreements for the procurement of defense items; and (2) such country does not discriminate against the same or similar defense items procured in the United States for that country. Provides exceptions.</p> <p>(Sec. 8062) Prohibits the use of appropriated funds to support a unit of the security forces of a foreign country if credible information exists that such unit has committed a gross violation of human rights, unless all necessary corrective steps have been taken. Requires the monitoring of such information. Authorizes the Secretary to waive such prohibition under extraordinary circumstances (requiring a report to the defense committees on any such waiver).</p> <p>(Sec. 8067) Provides for the crediting during the current fiscal year of certain refunds attributable to the use of government travel or purchase cards or refunds for travel arranged by a government-contracted travel management center.</p> <p>(Sec. 8068) Prohibits appropriated funds from being used for a mission critical or mission essential financial management information technology system that is not registered with the DOD Chief Information Officer. Prohibits such a system from receiving a Milestone A or B approval, or full rate production approval, until the Chief Information Officer certifies to the defense committees that the system is being developed in accordance with the Clinger-Cohen Act of 1996.</p> <p>(Sec. 8070) Authorizes members of the National Guard performing full-time duty to support ground-based elements of the National Ballistic Missile Defense System.</p> <p>(Sec. 8071) Prohibits appropriated funds from being used to transfer to any nongovernmental entity specified armor-piercing ammunition, except to an entity performing demilitarization services for DOD.</p> <p>(Sec. 8072) Authorizes the Chief of the National Guard Bureau to waive payment for the lease of non-excess DOD personal property to certain, youth, social, or fraternal nonprofit organizations.</p> <p>(Sec. 8079) Authorizes the Secretary to carry out a program to distribute surplus DOD dental and medical equipment to Indian Health Service facilities and federally-qualified health centers.</p> <p>(Sec. 8080) Earmarks specified RDT&amp;E funds for producing Arrow missile components in the United States and Arrow missile components and missiles in Israel to meet Israel's defense requirements.</p> <p>(Sec. 8081) Makes Navy shipbuilding and conversion funds available to fund prior-year shipbuilding cost increases, allocating such funds among specified naval accounts.</p> <p>(Sec. 8086) Appropriates funds for a grant by the Secretary of the Army to facilitate access by veterans to opportunities for skilled employment in the construction industry.</p> <p>(Sec. 8087) Appropriates funds for assistance to public schools that have unusually high concentrations of special needs military dependents enrolled.</p> <p>(Sec. 8088) Directs: (1) DOD and the Army to make future budgetary and programming plans to fully finance the Non-Line of Sight Objective Force cannon and ammunition resupply capability in order to field such system in FY2010; and (2) the Army to ensure that budgetary and programmatic plans will provide for no fewer than seven Stryker Brigade Combat Teams.</p> <p>(Sec. 8089) Appropriates funds to DOD for nine specified grants by the Secretary.</p> <p>(Sec. 8091) Requires the FY2009 budget to include separate budget justification documents for costs of U.S. Armed Forces' participation in contingency operations for the military personnel, O&amp;M, and procurement accounts.</p> <p>(Sec. 8092) Prohibits funds from being used for RDT&amp;E, procurement, or deployment of nuclear armed interceptors of a missile defense system.</p> <p>(Sec. 8094) Prohibits the availability of funds for integration of foreign intelligence information unless such information has been lawfully collected and processed during the conduct of authorized foreign intelligence activities.</p> <p>(Sec. 8095) Requires Ready Reserve members who are called or ordered to active duty in time of national emergency to be notified of their expected mobilization period at the time they are called or ordered. Allows the Secretary to waive such requirement in order to respond to a national security emergency or meet dire operational requirements.</p> <p>(Sec. 8097) Reduces by $506.9 million the total amount appropriated in titles II, III, and IV of this Act, for contractor efficiencies.</p> <p>(Sec. 8099) Authorizes the Secretary to present promotional materials, including a U.S. flag and other recognition items, to any member who participates in Operations Enduring Freedom or Iraqi Freedom, in conjunction with any week-long national observation and day of national celebration.</p> <p>(Sec. 8101) Earmarks funds for the operations and development of training and technology for the Joint Interagency Training and Education Center and affiliated Center for National Response at the Memorial Tunnel.</p> <p>(Sec. 8104) Reduces by $1.353 billion the total amount appropriated in titles II through V of this Act, to reflect savings from revised economic assumptions.</p> <p>(Sec. 8111) Directs the Secretary to create a major force program category for space for DOD's future years defense program.</p> <p>(Sec. 8112) Appropriates funds to the Tanker Replacement Transfer Fund in connection with a tanker acquisition program.</p> <p>(Sec. 8113) Prohibits the use of funds to: (1) establish any military installation or base for the permanent stationing of U.S. Armed Forces in Iraq; or (2) exercise U.S. control over any oil resource of Iraq.</p> <p>(Sec. 8114) Prohibits the use of funds in contravention of specified laws or regulations promulgated to implement the United Nations Convention Against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment.</p> <p>(Sec. 8116) Requires any request for funds for a fiscal year after 2008 for an ongoing military operation overseas, including operations in Afghanistan and Iraq, to be included in the annual budget of the President for that fiscal year.</p> <p>(Sec. 8118) Authorizes the transfer of specified funds to the Secretary of the Interior for construction expenses at the USS ARIZONA Memorial Museum and Visitors Center.</p> <p>(Sec. 8119) Requires DOD to complete work on the destruction of the U.S. stockpile of lethal chemical agents and munitions, including those stored at Blue Grass Army Depot, Kentucky, and Pueblo Chemical Depot, Colorado, by the deadline established by the Chemical Weapons Convention, and in no circumstances later than December 30, 2017. Requires a report from the Secretary to specified congressional leaders and the defense committees, at the end of 2007 and every 180 days afterwards until compliance, on DOD progress toward such stockpile destruction.</p> <p>(Sec. 8120) Amends the Senate Rules to state that it is not a gift for a Member (or a Senate employee making a reservation for that Member) to make more than one reservation on scheduled flights with participating airlines when such action assists the Member in conducting official business.</p> <p>(Sec. 8121) Directs the Secretary to establish and maintain on the DOD Internet homepage a direct link to the website of the DOD Office of the Inspector General.</p> <p>(Sec. 8122) Appropriates funds for the Mine Resistant Ambush Protected Vehicle Fund, for use in connection with research and development, upgrades, and procurement of mine resistant ambush protected vehicles. Directs the Secretary, after five days' prior notification to the defense committees, to transfer such funds to O&amp;M, procurement, and RDT&amp;E appropriations for such purposes. Designates such funds as an emergency requirement.</p> <p><b>Division B: Further Continuing Appropriations, 2008 </b>- (Sec. 101) Amends the joint resolution making continuing appropriations for FY2008 to extend the November 16, 2007, expiration date to December 14, 2007.</p> <p>(Sec. 102) Amends such joint resolution to add provisions which: (1) continue through the December 14, 2007, date the budget authority of the National Dairy Promotion and Research Board under the Dairy Production Stabilization Act of 1983; (2) provide amounts for the rate of operations for the Department of Commerce's periodic censuses and programs; (3) designate certain obligations as emergency requirements; (4) appropriate a specified amount for Charles Davis, widower of JoAnn Davis, late a Representative from Virginia; (5) provide amounts and rates of operations for specified accounts and programs within the Department of Veterans Affairs' Veterans Health Administration; (6) continue through the December 14, 2007, date the authority of the Secretary of Transportation to provide insurance and reinsurance for certain aircraft and related property placed into federal service; (7) make additional appropriations for the Department of Agriculture's Forest Service and the Department of the Interior's Bureau of Land Management for wildfire management; (8) make additional appropriations for the Department of Homeland Security's Federal Emergency Management Agency for disaster relief; and (9) make additional appropriations for the Department of Housing and Urban Development's Community Development Fund for grants to Louisiana under that state's Road Home program.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ116/PLAW-110publ116.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ116/PLAW-110publ116.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/3222",
+      "votes": []
+    },
+    {
       "id": "sres377-110",
       "congress": 110,
       "type": "sres",
@@ -16596,6 +17566,38 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/110/plaws/publ112/PLAW-110publ112.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/1808",
+      "votes": []
+    },
+    {
+      "id": "sres289-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "289",
+      "title": "A resolution expressing the sense of the Senate that a \"Welcome Home Vietnam Veterans Day\" should be established.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Boxer, Barbara",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2007-08-01",
+      "latest_action": {
+        "date": "2007-11-08",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S14234)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Special days",
+        "Veterans Day",
+        "Vietnam veterans"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Expresses the sense of the Senate that there should be established a &quot;Welcome Home Vietnam Veterans Day&quot; to honor those members of the U.S. Armed Forces who served in Vietnam.</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres289/BILLS-110sres289ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres289/BILLS-110sres289ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres289/BILLS-110sres289ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/289",
       "votes": []
     },
     {
@@ -18747,6 +19749,39 @@
       "votes": []
     },
     {
+      "id": "hr2358-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "2358",
+      "title": "Native American $1 Coin Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Kildee, Dale E.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2007-05-17",
+      "latest_action": {
+        "date": "2007-09-20",
+        "text": "Became Public Law No: 110-82."
+      },
+      "outcome": "enacted",
+      "policy_area": "Finance and Financial Sector",
+      "subjects": [
+        "Coins and coinage",
+        "Congressional reporting requirements",
+        "History",
+        "Minorities",
+        "Native Americans"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the Senate on August 3, 2007. The summary of that version is repeated here.)</b></p><p>Native American $1 Coin Act - Directs the Secretary of the Treasury to mint and issue $1 coins in commemoration of Native Americans and important contributions made by Indian tribes and individual Native Americans to the development and history of the United States.</p><p>Requires, effective beginning January 1, 2008, that such coins have designs: (1) on the obverse bearing the &quot; Sacagawea design;&quot; and (2) on the reverse bearing images celebrating important contributions made by Indian tribes and individual Native Americans to the history and development of the United States.</p><p>States that, if the date of the enactment of this Act is after August 25, 2007, such design shall be implemented beginning January 1, 2009. </p><p>Requires edge-incusing of the inscriptions &quot;E Pluribus Unum&quot; and &quot;In God We Trust&quot; in a manner that preserves the distinctive coin edge so that its denomination is readily discernible, including by individuals who are blind or visually impaired.</p><p> Requires the number of $1 coins minted and issued in a year with the Sacagawea-design on the obverse to be not less than 20% of the total number of $1 coins minted and issued in such year.</p><p>Instructs the Secretary of the Treasury to carry out an aggressive, cost-effective, continuing campaign to encourage commercial enterprises to accept and dispense $1 coins that have the so-called &quot;Sacagawea design.&quot;</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ82/PLAW-110publ82.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ82/PLAW-110publ82.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/2358",
+      "votes": []
+    },
+    {
       "id": "s377-110",
       "congress": 110,
       "type": "s",
@@ -19320,6 +20355,39 @@
       "votes": []
     },
     {
+      "id": "hr2863-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "2863",
+      "title": "To authorize the Coquille Indian Tribe of the State of Oregon to convey land and interests in land owned by the Tribe.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. DeFazio, Peter A.",
+        "party": "D",
+        "state": "OR"
+      },
+      "introduced_date": "2007-06-26",
+      "latest_action": {
+        "date": "2007-08-13",
+        "text": "Became Public Law No: 110-75."
+      },
+      "outcome": "enacted",
+      "policy_area": "Native Americans",
+      "subjects": [
+        "Indian lands",
+        "Land transfers",
+        "Minorities",
+        "Oregon",
+        "Public Lands and Natural Resources"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the House on July 30, 2007. The summary of that version is repeated here.)</b></p> <p>Allows, subject to the provisions of this Act, the Coquille Indian Tribe of Oregon to transfer, lease, encumber, or otherwise convey, without further authorization or approval, all or any part of the Tribe's interest in any real property that is not held in trust by the United States for the benefit of the Tribe. </p> <p>Makes such authority nonapplicable with respect to any transfer, encumbrance, lease, or other conveyance of any land or interest in land of the Tribe that occurred before January 1, 2007.</p> <p>Prohibits anything in this Act from intending to authorize the Tribe to transfer, lease, encumber, or otherwise convey, any lands, or any interest in any lands, that are held in trust by the United States for the benefit of the Tribe. </p> <p>Bars the United States from being held liable to any party (including the Tribe or any agent or instrumentality of the Tribe) for any term of, or any loss resulting from the term of any transfer, lease, encumbrance, or conveyance of land pursuant to this Act, except as specified. Makes such prohibition nonapplicable to land transferred or conveyed by the Tribe to the United States to be held in trust for the benefit of the Tribe. </p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ75/PLAW-110publ75.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ75/PLAW-110publ75.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/2863",
+      "votes": []
+    },
+    {
       "id": "hr2952-110",
       "congress": 110,
       "type": "hr",
@@ -19886,6 +20954,41 @@
       "votes": []
     },
     {
+      "id": "hr2563-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "2563",
+      "title": "To designate the facility of the United States Postal Service located at 309 East Linn Street in Marshalltown, Iowa, as the \"Major Scott Nisely Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Latham, Tom",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2007-06-05",
+      "latest_action": {
+        "date": "2007-08-09",
+        "text": "Became Public Law No: 110-71."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Congressional tributes",
+        "Government Operations and Politics",
+        "Iowa",
+        "Names",
+        "Officer personnel",
+        "Postal facilities"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Designates the facility of the United States Postal Service located at 309 East Linn Street in Marshalltown, Iowa, as the \"Major Scott Nisely Post Office.\" </p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ71/PLAW-110publ71.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ71/PLAW-110publ71.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/2563",
+      "votes": []
+    },
+    {
       "id": "hr2570-110",
       "congress": 110,
       "type": "hr",
@@ -20031,6 +21134,49 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/110/plaws/publ57/PLAW-110publ57.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/3206",
+      "votes": []
+    },
+    {
+      "id": "hr3311-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "3311",
+      "title": "To authorize additional funds for emergency repairs and reconstruction of the Interstate I-35 bridge located in Minneapolis, Minnesota, that collapsed on August 1, 2007, to waive the $100,000,000 limitation on emergency relief funds for those emergency repairs and reconstruction, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Oberstar, James L.",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2007-08-02",
+      "latest_action": {
+        "date": "2007-08-06",
+        "text": "Became Public Law No: 110-56."
+      },
+      "outcome": "enacted",
+      "policy_area": "Transportation and Public Works",
+      "subjects": [
+        "Bridges",
+        "Disaster relief",
+        "Economics and Public Finance",
+        "Emergency Management",
+        "Federal aid to transportation",
+        "Federal-state relations",
+        "Government Operations and Politics",
+        "Government publicity",
+        "Highway maintenance",
+        "Infrastructure",
+        "Intergovernmental fiscal relations",
+        "Interstate highway system",
+        "Minnesota",
+        "Road construction",
+        "Traffic engineering"
+      ],
+      "summary_crs": " <p>Authorizes the Secretary of Transportation to carry out a project for the repair and reconstruction of the Interstate I-35 bridge located in Minneapolis, Minnesota, that collapsed on August 1, 2007.</p> <p>Makes the federal share of the project cost 100%.</p> <p>Authorizes appropriations.</p> <p>Waives, for such project, the $100 million per state single-failure (or, single-disaster) highway-related total obligation limitation.</p> <p>Amends the Safe, Accountable, Flexible, Efficient Transportation Equity Act: A Legacy for Users to authorize the Secretary to: (1) use such single-failure (or, single-disaster) highway-related funds for the repair and reconstruction of the Interstate I-35W bridge in Minneapolis, Minnesota, that collapsed on August 1, 2007; and (2) use no more than $5 million of funds made available for FY2007 for Federal Transit Administration Discretionary Programs, Bus and Bus Facilities (without any local matching funds requirement) to reimburse the Minnesota state department of transportation for actual and necessary costs of maintenance and operation (less the amount of fares earned) for providing temporary substitute highway traffic service following the collapse of the Interstate I-35W bridge in Minneapolis, Minnesota, on August 1, 2007, until highway traffic service is restored on such bridge. Makes the federal share of the project cost 100%.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ56/PLAW-110publ56.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ56/PLAW-110publ56.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/3311",
       "votes": []
     },
     {
@@ -20905,6 +22051,45 @@
       "votes": []
     },
     {
+      "id": "s1701-110",
+      "congress": 110,
+      "type": "s",
+      "number": "1701",
+      "title": "A bill to provide for the extension of transitional medical assistance (TMA) and the abstinence education program through the end of fiscal year 2007, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Baucus, Max",
+        "party": "D",
+        "state": "MT"
+      },
+      "introduced_date": "2007-06-27",
+      "latest_action": {
+        "date": "2007-07-18",
+        "text": "Became Public Law No: 110-48."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Congress",
+        "Economics and Public Finance",
+        "Health education",
+        "Health maintenance organizations",
+        "Managed care",
+        "Medicaid",
+        "Medicare",
+        "Sexual abstinence",
+        "Social Welfare",
+        "Sunset legislation",
+        "Welfare eligibility"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Amends the Tax Relief and Health Care Act of 2006 to extend transitional medical assistance (TMA) and the abstinence education program through FY2007.</p><p>Amends title XVIII (Medicare) of the Social Security Act with respect to limited continuous open enrollment of original fee-for-service enrollees in Medicare Advantage non-prescription drug plans. Accelerates from the end of 2008 to July 31, 2007, the sunset of the period during which a Medicare Advantage-eligible but unenrolled fee-for-service individual may elect to enroll in a Medicare Advantage plan that is not an MA-Prescription Drug plan.</p><p>Revises the initial funding available to the Medicare Advantage Regional Plan Stabilization for expenditures during 2012 and 2013. Reduces the total for both years currently set at $3.5 billion to: (1) $1.6 billion during 2012; and (2) $1.79 billion during 2013.</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ48/PLAW-110publ48.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ48/PLAW-110publ48.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/1701",
+      "votes": []
+    },
+    {
       "id": "sres274-110",
       "congress": 110,
       "type": "sres",
@@ -21190,6 +22375,39 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres265/BILLS-110sres265ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres265/BILLS-110sres265ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/265",
+      "votes": []
+    },
+    {
+      "id": "s229-110",
+      "congress": 110,
+      "type": "s",
+      "number": "229",
+      "title": "A bill to redesignate a Federal building in Albuquerque, New Mexico, as the \"Raymond G. Murphy Department of Veterans Affairs Medical Center\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Domenici, Pete V.",
+        "party": "R",
+        "state": "NM"
+      },
+      "introduced_date": "2007-01-09",
+      "latest_action": {
+        "date": "2007-07-05",
+        "text": "Became Public Law No: 110-45."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Commemorations",
+        "Health",
+        "Names",
+        "New Mexico",
+        "Veterans' hospitals"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Redesignates the Department of Veterans Affairs Medical Center at 1501 San Pedro Drive, SE, in Albuquerque, New Mexico, as the &quot;Raymond G. Murphy Department of Veterans Affairs Medical Center.&quot;</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ45/PLAW-110publ45.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ45/PLAW-110publ45.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-bill/229",
       "votes": []
     },
     {
@@ -23352,6 +24570,39 @@
       "votes": []
     },
     {
+      "id": "hr753-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "753",
+      "title": "To redesignate the Federal building located at 167 North Main Street in Memphis, Tennessee, as the \"Clifford Davis and Odell Horton Federal Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Cohen, Steve",
+        "party": "D",
+        "state": "TN"
+      },
+      "introduced_date": "2007-01-31",
+      "latest_action": {
+        "date": "2007-05-02",
+        "text": "Became Public Law No: 110-20."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congressional tributes",
+        "Federal office buildings",
+        "Judges",
+        "Names",
+        "Tennessee"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the House on March 26, 2007. The summary of that version is repeated here.)</b></p> <p>Designates the federal building located at 167 North Main Street in Memphis, Tennessee, as the &quot;Clifford Davis and Odell Horton Federal Building.&quot;</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ20/PLAW-110publ20.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ20/PLAW-110publ20.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/753",
+      "votes": []
+    },
+    {
       "id": "sres150-110",
       "congress": 110,
       "type": "sres",
@@ -24023,6 +25274,41 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres163/BILLS-110sres163ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres163/BILLS-110sres163ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/163",
+      "votes": []
+    },
+    {
+      "id": "sres164-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "164",
+      "title": "A resolution designating the week beginning April 22, 2007, as \"Week of the Young Child\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Salazar, Ken",
+        "party": "D",
+        "state": "CO"
+      },
+      "introduced_date": "2007-04-20",
+      "latest_action": {
+        "date": "2007-04-20",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S4820-4821; text as passed Senate: CR S4821; text of measure as introduced: CR S4817)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Day care",
+        "Education",
+        "Elementary and secondary education",
+        "Families",
+        "Preschool education",
+        "Special weeks",
+        "Teachers"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates the week beginning April 22, 2007, as &quot;Week of the Young Child.&quot;</p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres164/BILLS-110sres164ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres164/BILLS-110sres164ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres164/BILLS-110sres164ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/164",
       "votes": []
     },
     {
@@ -24856,6 +26142,53 @@
       "votes": []
     },
     {
+      "id": "hr1129-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "1129",
+      "title": "To provide for the construction, operation, and maintenance of an arterial road in St. Louis County, Missouri.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Carnahan, Russ",
+        "party": "D",
+        "state": "MO"
+      },
+      "introduced_date": "2007-02-16",
+      "latest_action": {
+        "date": "2007-03-28",
+        "text": "Became Public Law No: 110-16."
+      },
+      "outcome": "enacted",
+      "policy_area": "Transportation and Public Works",
+      "subjects": [
+        "Conservation easements",
+        "Disaster relief",
+        "Easements",
+        "Emergency Management",
+        "Environmental Protection",
+        "Flood control",
+        "Floods",
+        "Government liability",
+        "Highway maintenance",
+        "Infrastructure",
+        "Law",
+        "Missouri",
+        "Open space lands",
+        "Outdoor recreation",
+        "Public Lands and Natural Resources",
+        "Road construction",
+        "Roads and highways",
+        "Sports and Recreation",
+        "Water Resources Development"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Authorizes the construction, operation, and maintenance of St. Louis County arterial road 1151, known as the &quot;Lemay Connector Road&quot; in St. Louis City and County, Missouri, over certain deed-restricted property, notwithstanding specified federal law and any easement or other similar restriction pursuant to those laws that requires the property to be maintained for open space, recreation, or wetland management.</p> <p>Requires St. Louis County to: (1) ensure that the project is constructed, operated, and maintained in a manner that would not cause any future additional flood damage that would not have occurred without the project; and (2) identify and agree to restrict a nearby parcel of land of equal or greater size to such deed restricted land so that such parcel is maintained for open space, recreation, or wetland management.</p> <p>Declares that the federal government shall not be liable for future flood damage caused by the project. Makes St. Louis County, Missouri, or its assignee liable for any such damage.</p> <p>Declares that the deed-restricted property specified by this Act is not eligible for any future disaster assistance from any other federal source.<br> </p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ16/PLAW-110publ16.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ16/PLAW-110publ16.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/1129",
+      "votes": []
+    },
+    {
       "id": "sres114-110",
       "congress": 110,
       "type": "sres",
@@ -25102,6 +26435,43 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres124/BILLS-110sres124ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres124/BILLS-110sres124ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/124",
+      "votes": []
+    },
+    {
+      "id": "hr584-110",
+      "congress": 110,
+      "type": "hr",
+      "number": "584",
+      "title": "To designate the Federal building located at 400 Maryland Avenue Southwest in the District of Columbia as the 'Lyndon Baines Johnson Department of Education Building'.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Green, Gene",
+        "party": "D",
+        "state": "TX"
+      },
+      "introduced_date": "2007-01-19",
+      "latest_action": {
+        "date": "2007-03-23",
+        "text": "Became Public Law No: 110-15."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congressional tributes",
+        "Department of Education",
+        "District of Columbia",
+        "Ex-presidents",
+        "Federal office buildings",
+        "Government Operations and Politics",
+        "History",
+        "Johnson Administration",
+        "Names"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was reported to the House on February 16, 2007. The summary of that version is repeated here.)</b></p><p>Designates the federal building located at 400 Maryland Avenue Southwest in the District of Columbia as the &quot;Lyndon Baines Johnson Department of Education Building.&quot;</p>",
+      "text_url_html": "https://www.congress.gov/110/plaws/publ15/PLAW-110publ15.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/110/plaws/publ15/PLAW-110publ15.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/house-bill/584",
       "votes": []
     },
     {
@@ -25408,6 +26778,47 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres102/BILLS-110sres102ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres102/BILLS-110sres102ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/102",
+      "votes": []
+    },
+    {
+      "id": "sres103-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "103",
+      "title": "A resolution commending the Kingdom of Lesotho, on the occasion of International Women's Day, for the enactment of a law to improve the status of married women and ensure the access of married women to property rights.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lugar, Richard G.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2007-03-09",
+      "latest_action": {
+        "date": "2007-03-09",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2988-2989; text as passed Senate: CR S2988-2989; text of measure as introduced: CR S2976)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Africa (Sub-Saharan)",
+        "Civil Rights and Liberties, Minority Issues",
+        "Commemorations",
+        "Congressional tributes",
+        "Families",
+        "Human rights",
+        "Legislation",
+        "Lesotho",
+        "Married people",
+        "Sex discrimination",
+        "Special days",
+        "Women",
+        "Women's rights"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Acknowledges the observance of March 8, 2007, as International Women's Day.</p> <p> Applauds the enactment of the Legal Capacity of Married Persons Act by the Kingdom of Lesotho.</p> <p> Lauds the Kingdom of Lesotho for demonstrating its commitment to improve gender equity.</p> <p>Commends the Millennium Challenge Corporation (MCC) for developing and implementing policies to advance gender equity in the Kingdom of Lesotho and other countries eligible for MCC financial assistance. </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres103/BILLS-110sres103ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres103/BILLS-110sres103ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres103/BILLS-110sres103ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/103",
       "votes": []
     },
     {
@@ -26494,6 +27905,41 @@
       "text_url_xml": "https://www.congress.gov/110/bills/sres25/BILLS-110sres25ats.xml",
       "text_url_pdf": "https://www.congress.gov/110/bills/sres25/BILLS-110sres25ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/25",
+      "votes": []
+    },
+    {
+      "id": "sres26-110",
+      "congress": 110,
+      "type": "sres",
+      "number": "26",
+      "title": "A resolution commending the Appalachian State University football team for winning the 2006 National Collegiate Athletic Association Division I-AA Football Championship.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Dole, Elizabeth",
+        "party": "R",
+        "state": "NC"
+      },
+      "introduced_date": "2007-01-11",
+      "latest_action": {
+        "date": "2007-01-11",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S475; text as passed Senate: CR S475; text of measure as introduced: CR S465-466)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "College sports",
+        "Congressional tributes",
+        "Education",
+        "Football",
+        "Higher education",
+        "North Carolina",
+        "Sports and Recreation"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Commends the Appalachian State University football team for their historic win in the 2006 National Collegiate Athletic Association (NCAA) 1-AA Football Championship. </p>",
+      "text_url_html": "https://www.congress.gov/110/bills/sres26/BILLS-110sres26ats.htm",
+      "text_url_xml": "https://www.congress.gov/110/bills/sres26/BILLS-110sres26ats.xml",
+      "text_url_pdf": "https://www.congress.gov/110/bills/sres26/BILLS-110sres26ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/110th-congress/senate-resolution/26",
       "votes": []
     },
     {
