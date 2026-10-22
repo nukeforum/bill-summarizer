@@ -1,8 +1,365 @@
 {
-  "generated_at": "2026-10-21T12:11:28Z",
+  "generated_at": "2026-10-22T11:14:06Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "hr1721-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "1721",
+      "title": "Critical Infrastructure Manufacturing Feasibility Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Miller-Meeks, Mariannette",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2025-02-27",
+      "latest_action": {
+        "date": "2026-10-20",
+        "text": "Became Public Law No: 119-127."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commerce",
+      "subjects": [
+        "Government studies and investigations",
+        "Industrial policy and productivity",
+        "Infrastructure development",
+        "Rural conditions and development"
+      ],
+      "summary_crs": "<p><strong>Critical Infrastructure Manufacturing Feasibility Act</strong></p> <p>This bill requires the Department of Commerce to study and report on products that are in high demand across the critical infrastructure sectors. Critical infrastructure sectors are those whose assets, systems, and networks are vital to national security, the economy, public health or safety, or any combination of those matters.</p> <p>The study must (1) identify the products in high demand across those sectors that are being imported due to manufacturing, material, or supply chain constraints; and (2) analyze the costs, benefits, and feasibility of manufacturing those products in the United States.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr1721/BILLS-119hr1721rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr1721/BILLS-119hr1721rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr1721/BILLS-119hr1721rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1721",
+      "votes": []
+    },
+    {
+      "id": "hr227-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "227",
+      "title": "Clergy Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Fong, Vince",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2025-01-07",
+      "latest_action": {
+        "date": "2026-10-20",
+        "text": "Became Public Law No: 119-125."
+      },
+      "outcome": "enacted",
+      "policy_area": "Social Welfare",
+      "subjects": [
+        "Congressional oversight",
+        "Income tax exclusion",
+        "Religion",
+        "Social security and elderly assistance",
+        "Tax administration and collection, taxpayers"
+      ],
+      "summary_crs": "<p><strong>Clergy Act</strong></p><p>This bill establishes a two-year window for certain members of the clergy and Christian Science practitioners to revoke their exemption from Social Security and Medicare taxes on ministerial earnings. Under current law, such individuals who object to participation in public insurance programs on religious or conscientious grounds may apply to the Internal Revenue Service (IRS) for an irrevocable exemption and will not receive Social Security or Medicare benefits in retirement unless they have qualifying credits from other employment.</p><p>The IRS must develop a plan to inform members of the clergy and Christian Science practitioners of their eligibility to revoke prior exemptions, pursuant to the bill's changes.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr227/BILLS-119hr227rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr227/BILLS-119hr227rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr227/BILLS-119hr227rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/227",
+      "votes": [
+        {
+          "id": "house-119-2-139",
+          "chamber": "house",
+          "session": 2,
+          "roll_number": 139,
+          "date": "2026-04-27",
+          "question": "On Motion to Suspend the Rules and Pass, as Amended",
+          "result": "Passed",
+          "bill_id": "hr227-119",
+          "totals": {
+            "yea": 350,
+            "nay": 5,
+            "present": 0,
+            "not_voting": 74
+          },
+          "party_split": {
+            "yea": {
+              "D": 183,
+              "I": 1,
+              "R": 166
+            },
+            "nay": {
+              "D": 1,
+              "R": 4
+            },
+            "not_voting": {
+              "D": 28,
+              "R": 46
+            }
+          },
+          "path": "votes/congress119/house-2-139.json"
+        }
+      ]
+    },
+    {
+      "id": "hr2388-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "2388",
+      "title": "Lower Elwha Klallam Tribe Project Lands Restoration Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Randall, Emily",
+        "party": "D",
+        "state": "WA"
+      },
+      "introduced_date": "2025-03-26",
+      "latest_action": {
+        "date": "2026-10-20",
+        "text": "Became Public Law No: 119-128."
+      },
+      "outcome": "enacted",
+      "policy_area": "Native Americans",
+      "subjects": [
+        "Federal-Indian relations",
+        "Gambling",
+        "Geography and mapping",
+        "Indian lands and resources rights",
+        "Land transfers",
+        "Land use and conservation"
+      ],
+      "summary_crs": "<p><strong>Lower Elwha Klallam Tribe Project Lands Restoration Act</strong></p><p>This bill takes approximately 1,082.63 acres of specified lands in Washington into trust for the benefit of the Lower&nbsp;Elwha Klallam Tribe. Land taken into trust shall be part of the tribe's reservation.</p><p>Further, the bill prohibits gaming on the land taken into trust.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr2388/BILLS-119hr2388rs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr2388/BILLS-119hr2388rs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr2388/BILLS-119hr2388rs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2388",
+      "votes": []
+    },
+    {
+      "id": "hr2481-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "2481",
+      "title": "Romance Scam Prevention Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Valadao, David G.",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2025-03-31",
+      "latest_action": {
+        "date": "2026-10-20",
+        "text": "Became Public Law No: 119-129."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commerce",
+      "subjects": [
+        "Civil actions and liability",
+        "Consumer affairs",
+        "Fraud offenses and financial crimes",
+        "Internet, web applications, social media",
+        "Licensing and registrations"
+      ],
+      "summary_crs": "<p><strong>Romance Scam Prevention Act</strong></p><p>This bill requires online dating service providers (i.e., mobile applications or websites) to provide users with&nbsp;a fraud ban notification if the user has established an account with the service and received a message through the service from a banned user of the service.</p><p>The fraud ban notification must include (1) the username or other profile identifier of the banned user and the most recent time when the user who is receiving the notification sent or received a message through the service&nbsp;to or from the banned user, (2) a statement that the banned user may have been using a false identity or&nbsp;attempting to defraud other users, (3) a statement that the user should not send cash (or another form of currency) or personal financial information to another user, (4)  information about avoiding online fraud (e.g., a link to another website or a disclosure) and (5) contact information for the provider's customer service department.</p><p>The bill provides for enforcement of these requirements by the Federal Trade Commission and state attorneys general.&nbsp;&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr2481/BILLS-119hr2481pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr2481/BILLS-119hr2481pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr2481/BILLS-119hr2481pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2481",
+      "votes": []
+    },
+    {
+      "id": "hr3620-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "3620",
+      "title": "Southcentral Foundation Land Transfer Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Begich, Nicholas J. [R-AK-At Large]",
+        "party": "R",
+        "state": "AK"
+      },
+      "introduced_date": "2025-05-29",
+      "latest_action": {
+        "date": "2026-10-20",
+        "text": "Became Public Law No: 119-130."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Alaska",
+        "Hazardous wastes and toxic substances",
+        "Land transfers"
+      ],
+      "summary_crs": "<p><strong>Southcentral Foundation Land Transfer Act of 2025</strong></p><p>This bill directs the Department of Health and Human Services (HHS) to convey approximately 3.4 acres in Anchorage, Alaska, to the Southcentral Foundation (SCF) for use in connection with health and social services programs.</p><p>The conveyance must be made by warranty deed. The conveyance may not (1) require any consideration (such as payment) from the SCF for the property; (2) impose any obligation, term, or condition on the SCF relating to that property; or (3) allow for any U.S. reversionary interest in the property.</p><p>HHS must be accorded any easement or access to the property as may be reasonably necessary to satisfy any retained obligation or liability of HHS.</p><p>The bill prohibits the SCF from being liable for certain environmental contamination that occurred on or before the date on which the property is conveyed to the SCF. In turn, HHS may not be liable for any contamination that occurred after the date that the SCF controlled, occupied, and used the property.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr3620/BILLS-119hr3620rs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr3620/BILLS-119hr3620rs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr3620/BILLS-119hr3620rs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/3620",
+      "votes": []
+    },
+    {
+      "id": "hr4307-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "4307",
+      "title": "Enhancing Detection of Human Trafficking Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Walberg, Tim",
+        "party": "R",
+        "state": "MI"
+      },
+      "introduced_date": "2025-07-10",
+      "latest_action": {
+        "date": "2026-10-20",
+        "text": "Became Public Law No: 119-131."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Congressional oversight",
+        "Crime prevention",
+        "Employment and training programs",
+        "Government information and archives",
+        "Human trafficking",
+        "Law enforcement administration and funding",
+        "Performance measurement",
+        "Smuggling and trafficking"
+      ],
+      "summary_crs": "<p><strong>Enhancing Detection of Human Trafficking Act</strong></p><p>This bill requires the Department of Labor to provide training and education to its employees on how to effectively assist law enforcement in detecting human trafficking.</p><p>The bill directs Labor to determine which employees should receive the training and education based on their official duties. Further, it requires the training and education to include information that is appropriate for the employees' location or environment; that reflects current trends and best practices for the location or environment; and that is relevant to detecting human trafficking, identifying suspected victims, and referring potential cases to the Department of Justice and other appropriate authorities.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr4307/BILLS-119hr4307rds.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr4307/BILLS-119hr4307rds.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr4307/BILLS-119hr4307rds.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/4307",
+      "votes": []
+    },
+    {
+      "id": "hr4467-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "4467",
+      "title": "Vicksburg National Military Park Boundary Modification Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Thompson, Bennie G.",
+        "party": "D",
+        "state": "MS"
+      },
+      "introduced_date": "2025-07-16",
+      "latest_action": {
+        "date": "2026-10-20",
+        "text": "Became Public Law No: 119-132."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Mississippi",
+        "Parks, recreation areas, trails"
+      ],
+      "summary_crs": "<p><strong>Vicksburg National Military Park Boundary Modification Act</strong></p><p>This bill directs the Department of the Interior to convey approximately 7 acres of specified land (in two parcels) within the Vicksburg National Military Park to Mississippi for an interpretive center.</p><p>The conveyed land must&nbsp;facilitate public access to&nbsp;the park, may not be used in a manner that adversely impacts the park's resources or visitor experience, and remains subject to any use restriction&nbsp;that Interior determines is&nbsp;appropriate.</p><p>Interior must convey the land by quitclaim deed and without consideration, such as payment. Upon the conveyance of the land, Interior must modify the park's boundary to exclude the land.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr4467/BILLS-119hr4467rds.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr4467/BILLS-119hr4467rds.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr4467/BILLS-119hr4467rds.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/4467",
+      "votes": []
+    },
+    {
+      "id": "hr6380-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "6380",
+      "title": "Chiricahua National Park Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Ciscomani, Juan",
+        "party": "R",
+        "state": "AZ"
+      },
+      "introduced_date": "2025-12-03",
+      "latest_action": {
+        "date": "2026-10-20",
+        "text": "Became Public Law No: 119-133."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Arizona",
+        "Federal-Indian relations",
+        "Monuments and memorials",
+        "Parks, recreation areas, trails"
+      ],
+      "summary_crs": "<p><strong>Chiricahua National Park Act</strong></p><p>This bill redesignates the Chiricahua National Monument in Arizona as the Chiricahua National Park.</p><p>The bill directs the National Park Service (NPS) to (1) ensure the protection of traditional cultural and religious sites in the park, and (2) provide access to those sites by members of Indian tribes for traditional cultural and customary uses. </p><p>Upon the request of an Indian tribe, the&nbsp;NPS may temporarily close to general public use one or more specific areas of the park to protect traditional cultural and customary uses in the area by members of the tribe. The closure must be limited to the smallest practicable area for the minimum period necessary for the traditional cultural and religious activities.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr6380/BILLS-119hr6380rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr6380/BILLS-119hr6380rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr6380/BILLS-119hr6380rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/6380",
+      "votes": []
+    },
+    {
+      "id": "hr7831-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "7831",
+      "title": "License to Drill Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Kennedy, Mike",
+        "party": "R",
+        "state": "UT"
+      },
+      "introduced_date": "2026-03-05",
+      "latest_action": {
+        "date": "2026-10-20",
+        "text": "Became Public Law No: 119-134."
+      },
+      "outcome": "enacted",
+      "policy_area": "Energy",
+      "subjects": [
+        "Licensing and registrations",
+        "Mining",
+        "Oil and gas"
+      ],
+      "summary_crs": "<p><strong>License to Drill Act</strong></p><p>This bill extends through FY2037 the Bureau of Land Management’s (BLM’s) authority to collect oil and gas permit processing fees. For each new permit application, BLM collects a fee that is transferred to the BLM Permit Processing Improvement Fund.&nbsp;(Under current law, the fees are authorized through FY2026.)</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr7831/BILLS-119hr7831rs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr7831/BILLS-119hr7831rs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr7831/BILLS-119hr7831rs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/7831",
+      "votes": []
+    },
+    {
+      "id": "hr837-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "837",
+      "title": "To require the Secretary of Agriculture to convey the Pleasant Valley Ranger District Administrative Site to Gila County, Arizona.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Crane, Elijah",
+        "party": "R",
+        "state": "AZ"
+      },
+      "introduced_date": "2025-01-31",
+      "latest_action": {
+        "date": "2026-10-20",
+        "text": "Became Public Law No: 119-126."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Arizona",
+        "Forests, forestry, trees",
+        "Geography and mapping",
+        "Land transfers"
+      ],
+      "summary_crs": "<p>This bill directs the Forest Service to convey specified property to Gila County, Arizona, upon the county's submission of a written request for such conveyance. The property, identified as the Gila County Area, consists of approximately 232.9 acres of National Forest System land located in the Tonto National Forest in Arizona.</p><p>The county must use the land for the purposes of serving and supporting veterans.&nbsp;If any land conveyed under this bill ceases to be used for such purpose, all right, title, and interest in and to the land shall revert to the United States, at the discretion of the Forest Service.</p><p>The conveyance&nbsp;must be made with a&nbsp;quitclaim deed and without consideration (value, such as payment, provided in exchange for the property).</p><p>The Forest Service&nbsp;must not be required to provide any covenant or warranty for the land and improvements conveyed to the county under such conveyance.</p><p>As a condition of the conveyance, the county must pay all the costs associated with the conveyance, including any (1) surveys, (2)&nbsp;environmental analysis or resource survey required under federal law, and (3) analysis required to comply with certain provisions of the National Historic Preservation Act.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr837/BILLS-119hr837rs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr837/BILLS-119hr837rs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr837/BILLS-119hr837rs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/837",
+      "votes": []
+    },
     {
       "id": "s240-119",
       "congress": 119,
@@ -21,7 +378,6 @@
         "text": "Became Public Law No: 119-122."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Dams and canals",
@@ -54,8 +410,7 @@
         "date": "2026-10-15",
         "text": "Became Public Law No: 119-124."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Labor and Employment",
       "subjects": [
         "Employee benefits and pensions",
@@ -119,7 +474,6 @@
         "text": "Became Public Law No: 119-123."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional oversight",
@@ -153,7 +507,6 @@
         "text": "Became Public Law No: 119-121."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Arts, Culture, Religion",
       "subjects": [
         "Congressional oversight",
@@ -187,7 +540,6 @@
         "text": "Became Public Law No: 119-119."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Social Welfare",
       "subjects": [
         "Computer security and identity theft",
@@ -219,7 +571,6 @@
         "text": "Became Public Law No: 119-120."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Government Operations and Politics",
       "subjects": [
         "Congressional oversight",
@@ -268,73 +619,6 @@
       "votes": []
     },
     {
-      "id": "hr227-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "227",
-      "title": "Clergy Act",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Fong, Vince",
-        "party": "R",
-        "state": "CA"
-      },
-      "introduced_date": "2025-01-07",
-      "latest_action": {
-        "date": "2026-09-30",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5298)"
-      },
-      "outcome": "passed_house",
-      "status": null,
-      "policy_area": "Social Welfare",
-      "subjects": [
-        "Congressional oversight",
-        "Income tax exclusion",
-        "Religion",
-        "Social security and elderly assistance",
-        "Tax administration and collection, taxpayers"
-      ],
-      "summary_crs": "<p><strong>Clergy Act</strong></p><p>This bill establishes a two-year window for certain members of the clergy and Christian Science practitioners to revoke their exemption from Social Security and Medicare taxes on ministerial earnings. Under current law, such individuals who object to participation in public insurance programs on religious or conscientious grounds may apply to the Internal Revenue Service (IRS) for an irrevocable exemption and will not receive Social Security or Medicare benefits in retirement unless they have qualifying credits from other employment.</p><p>The IRS must develop a plan to inform members of the clergy and Christian Science practitioners of their eligibility to revoke prior exemptions, pursuant to the bill's changes.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr227/BILLS-119hr227rfs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr227/BILLS-119hr227rfs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr227/BILLS-119hr227rfs.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/227",
-      "votes": [
-        {
-          "id": "house-119-2-139",
-          "chamber": "house",
-          "session": 2,
-          "roll_number": 139,
-          "date": "2026-04-27",
-          "question": "On Motion to Suspend the Rules and Pass, as Amended",
-          "result": "Passed",
-          "bill_id": "hr227-119",
-          "totals": {
-            "yea": 350,
-            "nay": 5,
-            "present": 0,
-            "not_voting": 74
-          },
-          "party_split": {
-            "yea": {
-              "D": 183,
-              "I": 1,
-              "R": 166
-            },
-            "nay": {
-              "D": 1,
-              "R": 4
-            },
-            "not_voting": {
-              "D": 28,
-              "R": 46
-            }
-          },
-          "path": "votes/congress119/house-2-139.json"
-        }
-      ]
-    },
-    {
       "id": "hr2400-119",
       "congress": 119,
       "type": "hr",
@@ -352,7 +636,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5297-5298)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "California",
@@ -364,43 +647,6 @@
       "text_url_xml": "https://www.congress.gov/119/bills/hr2400/BILLS-119hr2400eas.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/hr2400/BILLS-119hr2400eas.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2400",
-      "votes": []
-    },
-    {
-      "id": "hr4307-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "4307",
-      "title": "Enhancing Detection of Human Trafficking Act",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Walberg, Tim",
-        "party": "R",
-        "state": "MI"
-      },
-      "introduced_date": "2025-07-10",
-      "latest_action": {
-        "date": "2026-09-30",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5299)"
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "Crime and Law Enforcement",
-      "subjects": [
-        "Congressional oversight",
-        "Crime prevention",
-        "Employment and training programs",
-        "Government information and archives",
-        "Human trafficking",
-        "Law enforcement administration and funding",
-        "Performance measurement",
-        "Smuggling and trafficking"
-      ],
-      "summary_crs": "<p><strong>Enhancing Detection of Human Trafficking Act</strong></p><p>This bill requires the Department of Labor to provide training and education to its employees on how to effectively assist law enforcement in detecting human trafficking.</p><p>The bill directs Labor to determine which employees should receive the training and education based on their official duties. Further, it requires the training and education to include information that is appropriate for the employees' location or environment; that reflects current trends and best practices for the location or environment; and that is relevant to detecting human trafficking, identifying suspected victims, and referring potential cases to the Department of Justice and other appropriate authorities.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr4307/BILLS-119hr4307rds.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr4307/BILLS-119hr4307rds.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr4307/BILLS-119hr4307rds.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/4307",
       "votes": []
     },
     {
@@ -453,7 +699,6 @@
         "text": "Passed Senate with an amendment and an amendment to the Title by Unanimous Consent."
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Taxation",
       "subjects": [
         "Civil actions and liability",
@@ -468,39 +713,6 @@
       "text_url_xml": "https://www.congress.gov/119/bills/hr5349/BILLS-119hr5349eas.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/hr5349/BILLS-119hr5349eas.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/5349",
-      "votes": []
-    },
-    {
-      "id": "hr6380-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "6380",
-      "title": "Chiricahua National Park Act",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Ciscomani, Juan",
-        "party": "R",
-        "state": "AZ"
-      },
-      "introduced_date": "2025-12-03",
-      "latest_action": {
-        "date": "2026-09-30",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5226)"
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "Public Lands and Natural Resources",
-      "subjects": [
-        "Arizona",
-        "Federal-Indian relations",
-        "Monuments and memorials",
-        "Parks, recreation areas, trails"
-      ],
-      "summary_crs": "<p><strong>Chiricahua National Park Act</strong></p><p>This bill redesignates the Chiricahua National Monument in Arizona as the Chiricahua National Park.</p><p>The bill directs the National Park Service (NPS) to (1) ensure the protection of traditional cultural and religious sites in the park, and (2) provide access to those sites by members of Indian tribes for traditional cultural and customary uses. </p><p>Upon the request of an Indian tribe, the&nbsp;NPS may temporarily close to general public use one or more specific areas of the park to protect traditional cultural and customary uses in the area by members of the tribe. The closure must be limited to the smallest practicable area for the minimum period necessary for the traditional cultural and religious activities.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr6380/BILLS-119hr6380rfs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr6380/BILLS-119hr6380rfs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr6380/BILLS-119hr6380rfs.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/6380",
       "votes": []
     },
     {
@@ -539,38 +751,6 @@
       "votes": []
     },
     {
-      "id": "hr7831-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "7831",
-      "title": "License to Drill Act",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Kennedy, Mike",
-        "party": "R",
-        "state": "UT"
-      },
-      "introduced_date": "2026-03-05",
-      "latest_action": {
-        "date": "2026-09-30",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5226-5231)"
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "Energy",
-      "subjects": [
-        "Licensing and registrations",
-        "Mining",
-        "Oil and gas"
-      ],
-      "summary_crs": "<p><strong>License to Drill Act</strong></p><p>This bill extends through FY2037 the Bureau of Land Management’s (BLM’s) authority to collect oil and gas permit processing fees. For each new permit application, BLM collects a fee that is transferred to the BLM Permit Processing Improvement Fund.&nbsp;(Under current law, the fees are authorized through FY2026.)</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr7831/BILLS-119hr7831rs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr7831/BILLS-119hr7831rs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr7831/BILLS-119hr7831rs.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/7831",
-      "votes": []
-    },
-    {
       "id": "hr8352-119",
       "congress": 119,
       "type": "hr",
@@ -600,39 +780,6 @@
       "text_url_xml": "https://www.congress.gov/119/bills/hr8352/BILLS-119hr8352rfs.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/hr8352/BILLS-119hr8352rfs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/8352",
-      "votes": []
-    },
-    {
-      "id": "hr837-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "837",
-      "title": "To require the Secretary of Agriculture to convey the Pleasant Valley Ranger District Administrative Site to Gila County, Arizona.",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Crane, Elijah",
-        "party": "R",
-        "state": "AZ"
-      },
-      "introduced_date": "2025-01-31",
-      "latest_action": {
-        "date": "2026-09-30",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5226)"
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "Public Lands and Natural Resources",
-      "subjects": [
-        "Arizona",
-        "Forests, forestry, trees",
-        "Geography and mapping",
-        "Land transfers"
-      ],
-      "summary_crs": "<p>This bill directs the Forest Service to convey specified property to Gila County, Arizona, upon the county's submission of a written request for such conveyance. The property, identified as the Gila County Area, consists of approximately 232.9 acres of National Forest System land located in the Tonto National Forest in Arizona.</p><p>The county must use the land for the purposes of serving and supporting veterans.&nbsp;If any land conveyed under this bill ceases to be used for such purpose, all right, title, and interest in and to the land shall revert to the United States, at the discretion of the Forest Service.</p><p>The conveyance&nbsp;must be made with a&nbsp;quitclaim deed and without consideration (value, such as payment, provided in exchange for the property).</p><p>The Forest Service&nbsp;must not be required to provide any covenant or warranty for the land and improvements conveyed to the county under such conveyance.</p><p>As a condition of the conveyance, the county must pay all the costs associated with the conveyance, including any (1) surveys, (2)&nbsp;environmental analysis or resource survey required under federal law, and (3) analysis required to comply with certain provisions of the National Historic Preservation Act.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr837/BILLS-119hr837rs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr837/BILLS-119hr837rs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr837/BILLS-119hr837rs.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/837",
       "votes": []
     },
     {
@@ -818,7 +965,6 @@
         "text": "Became Public Law No: 119-118."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Health programs administration and funding",
@@ -1054,7 +1200,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5299)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Commemorative events and holidays",
@@ -1237,38 +1382,6 @@
       "text_url_xml": "https://www.congress.gov/119/bills/hr1945/BILLS-119hr1945rds.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/hr1945/BILLS-119hr1945rds.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1945",
-      "votes": []
-    },
-    {
-      "id": "hr3620-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "3620",
-      "title": "Southcentral Foundation Land Transfer Act of 2025",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Begich, Nicholas J. [R-AK-At Large]",
-        "party": "R",
-        "state": "AK"
-      },
-      "introduced_date": "2025-05-29",
-      "latest_action": {
-        "date": "2026-09-29",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5144)"
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "Public Lands and Natural Resources",
-      "subjects": [
-        "Alaska",
-        "Hazardous wastes and toxic substances",
-        "Land transfers"
-      ],
-      "summary_crs": "<p><strong>Southcentral Foundation Land Transfer Act of 2025</strong></p><p>This bill directs the Department of Health and Human Services (HHS) to convey approximately 3.4 acres in Anchorage, Alaska, to the Southcentral Foundation (SCF) for use in connection with health and social services programs.</p><p>The conveyance must be made by warranty deed. The conveyance may not (1) require any consideration (such as payment) from the SCF for the property; (2) impose any obligation, term, or condition on the SCF relating to that property; or (3) allow for any U.S. reversionary interest in the property.</p><p>HHS must be accorded any easement or access to the property as may be reasonably necessary to satisfy any retained obligation or liability of HHS.</p><p>The bill prohibits the SCF from being liable for certain environmental contamination that occurred on or before the date on which the property is conveyed to the SCF. In turn, HHS may not be liable for any contamination that occurred after the date that the SCF controlled, occupied, and used the property.&nbsp;</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr3620/BILLS-119hr3620rs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr3620/BILLS-119hr3620rs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr3620/BILLS-119hr3620rs.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/3620",
       "votes": []
     },
     {
@@ -1563,7 +1676,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5186)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Armed Forces and National Security",
       "subjects": [
         "Congressional tributes",
@@ -1597,7 +1709,6 @@
         "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 51. Record Vote Number: 252. (consideration: CR S5158-5159)"
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": "<p>This resolution requests that the Department of State provide Congress with an unclassified statement regarding&nbsp;Israel's human rights practices.</p><p>The resolution specifies that the statement should include certain elements, including (1) all credible information concerning the alleged killing of nine specified U.S. citizens and any other U.S. citizens by the Israeli Defense Forces, Israeli security forces, or Israeli settlers in 2022 or later; (2) all credible information concerning the identities of potential suspects in the killings; and (3) details on any steps taken by Israeli authorities to investigate the killings and hold accountable those responsible.</p><p>The statement should also include other elements, such as assessments of U.S. citizens currently held in Israeli prisons and the human rights situation of Palestinian children in Israeli military detention in the West Bank.&nbsp;</p>",
@@ -2134,7 +2245,6 @@
         "text": "Became Public Law No: 119-112."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Alternative and renewable resources",
@@ -2199,7 +2309,6 @@
         "text": "Became Public Law No: 119-114."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Drug trafficking and controlled substances",
@@ -2267,7 +2376,6 @@
         "text": "Became Public Law No: 119-116."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Transportation and Public Works",
       "subjects": [
         "Data collection, sharing, protection",
@@ -2303,7 +2411,6 @@
         "text": "Became Public Law No: 119-117."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -2418,41 +2525,6 @@
       ]
     },
     {
-      "id": "hr2388-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "2388",
-      "title": "Lower Elwha Klallam Tribe Project Lands Restoration Act",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Randall, Emily",
-        "party": "D",
-        "state": "WA"
-      },
-      "introduced_date": "2025-03-26",
-      "latest_action": {
-        "date": "2026-09-24",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5020)"
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "Native Americans",
-      "subjects": [
-        "Federal-Indian relations",
-        "Gambling",
-        "Geography and mapping",
-        "Indian lands and resources rights",
-        "Land transfers",
-        "Land use and conservation"
-      ],
-      "summary_crs": "<p><strong>Lower Elwha Klallam Tribe Project Lands Restoration Act</strong></p><p>This bill takes approximately 1,082.63 acres of specified lands in Washington into trust for the benefit of the Lower&nbsp;Elwha Klallam Tribe. Land taken into trust shall be part of the tribe's reservation.</p><p>Further, the bill prohibits gaming on the land taken into trust.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr2388/BILLS-119hr2388rs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr2388/BILLS-119hr2388rs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr2388/BILLS-119hr2388rs.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2388",
-      "votes": []
-    },
-    {
       "id": "s3257-119",
       "congress": 119,
       "type": "s",
@@ -2524,73 +2596,6 @@
       "text_url_xml": "https://www.congress.gov/119/bills/s3258/BILLS-119s3258es.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/s3258/BILLS-119s3258es.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/3258",
-      "votes": []
-    },
-    {
-      "id": "hr1721-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "1721",
-      "title": "Critical Infrastructure Manufacturing Feasibility Act",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Miller-Meeks, Mariannette",
-        "party": "R",
-        "state": "IA"
-      },
-      "introduced_date": "2025-02-27",
-      "latest_action": {
-        "date": "2026-09-23",
-        "text": "Passed Senate without amendment by Unanimous Consent."
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "Commerce",
-      "subjects": [
-        "Government studies and investigations",
-        "Industrial policy and productivity",
-        "Infrastructure development",
-        "Rural conditions and development"
-      ],
-      "summary_crs": "<p><strong>Critical Infrastructure Manufacturing Feasibility Act</strong></p> <p>This bill requires the Department of Commerce to study and report on products that are in high demand across the critical infrastructure sectors. Critical infrastructure sectors are those whose assets, systems, and networks are vital to national security, the economy, public health or safety, or any combination of those matters.</p> <p>The study must (1) identify the products in high demand across those sectors that are being imported due to manufacturing, material, or supply chain constraints; and (2) analyze the costs, benefits, and feasibility of manufacturing those products in the United States.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr1721/BILLS-119hr1721rfs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr1721/BILLS-119hr1721rfs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr1721/BILLS-119hr1721rfs.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1721",
-      "votes": []
-    },
-    {
-      "id": "hr2481-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "2481",
-      "title": "Romance Scam Prevention Act",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Valadao, David G.",
-        "party": "R",
-        "state": "CA"
-      },
-      "introduced_date": "2025-03-31",
-      "latest_action": {
-        "date": "2026-09-23",
-        "text": "Passed Senate without amendment by Unanimous Consent."
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "Commerce",
-      "subjects": [
-        "Civil actions and liability",
-        "Consumer affairs",
-        "Fraud offenses and financial crimes",
-        "Internet, web applications, social media",
-        "Licensing and registrations"
-      ],
-      "summary_crs": "<p><strong>Romance Scam Prevention Act</strong></p><p>This bill requires online dating service providers (i.e., mobile applications or websites) to provide users with&nbsp;a fraud ban notification if the user has established an account with the service and received a message through the service from a banned user of the service.</p><p>The fraud ban notification must include (1) the username or other profile identifier of the banned user and the most recent time when the user who is receiving the notification sent or received a message through the service&nbsp;to or from the banned user, (2) a statement that the banned user may have been using a false identity or&nbsp;attempting to defraud other users, (3) a statement that the user should not send cash (or another form of currency) or personal financial information to another user, (4)  information about avoiding online fraud (e.g., a link to another website or a disclosure) and (5) contact information for the provider's customer service department.</p><p>The bill provides for enforcement of these requirements by the Federal Trade Commission and state attorneys general.&nbsp;&nbsp;</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr2481/BILLS-119hr2481pcs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr2481/BILLS-119hr2481pcs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr2481/BILLS-119hr2481pcs.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2481",
       "votes": []
     },
     {
@@ -2754,7 +2759,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4958)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Labor and Employment",
       "subjects": [
         "Adult education and literacy",
@@ -2766,37 +2770,6 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sres863/BILLS-119sres863ats.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sres863/BILLS-119sres863ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/863",
-      "votes": []
-    },
-    {
-      "id": "hr4467-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "4467",
-      "title": "Vicksburg National Military Park Boundary Modification Act",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Thompson, Bennie G.",
-        "party": "D",
-        "state": "MS"
-      },
-      "introduced_date": "2025-07-16",
-      "latest_action": {
-        "date": "2026-09-22",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S4882)"
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "Public Lands and Natural Resources",
-      "subjects": [
-        "Mississippi",
-        "Parks, recreation areas, trails"
-      ],
-      "summary_crs": "<p><strong>Vicksburg National Military Park Boundary Modification Act</strong></p><p>This bill directs the Department of the Interior to convey approximately 7 acres of specified land (in two parcels) within the Vicksburg National Military Park to Mississippi for an interpretive center.</p><p>The conveyed land must&nbsp;facilitate public access to&nbsp;the park, may not be used in a manner that adversely impacts the park's resources or visitor experience, and remains subject to any use restriction&nbsp;that Interior determines is&nbsp;appropriate.</p><p>Interior must convey the land by quitclaim deed and without consideration, such as payment. Upon the conveyance of the land, Interior must modify the park's boundary to exclude the land.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr4467/BILLS-119hr4467rds.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr4467/BILLS-119hr4467rds.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr4467/BILLS-119hr4467rds.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/4467",
       "votes": []
     },
     {
@@ -3197,7 +3170,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4762)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Congressional tributes",
@@ -3491,8 +3463,7 @@
         "date": "2026-09-02",
         "text": "Became Public Law No: 119-103."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Economics and Public Finance",
       "subjects": [
         "Abortion",
