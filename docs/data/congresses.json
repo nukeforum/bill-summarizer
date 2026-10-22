@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T11:14:06Z",
+  "generated_at": "2026-10-22T16:59:15Z",
   "current_congress": 119,
   "congresses": [
     {
@@ -100,6 +100,16 @@
       "manifest_path": "congress110_bills.json",
       "is_current": false,
       "backfill_complete": true,
+      "shard_index_path": null
+    },
+    {
+      "congress": 109,
+      "bill_count": 237,
+      "first_action_date": "2005-01-04",
+      "last_action_date": "2006-12-09",
+      "manifest_path": "congress109_bills.json",
+      "is_current": false,
+      "backfill_complete": false,
       "shard_index_path": null
     }
   ]
