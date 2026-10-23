@@ -1,8 +1,37 @@
 {
-  "generated_at": "2026-10-22T16:59:15Z",
+  "generated_at": "2026-10-23T16:50:46Z",
   "congress": 109,
   "votes_coverage": false,
   "bills": [
+    {
+      "id": "hjres101-109",
+      "congress": 109,
+      "type": "hjres",
+      "number": "101",
+      "title": "Appointing the day for the convening of the first session of the One Hundred Tenth Congress.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Boehner, John A.",
+        "party": "R",
+        "state": "OH"
+      },
+      "introduced_date": "2006-11-15",
+      "latest_action": {
+        "date": "2006-12-22",
+        "text": "Became Public Law No: 109-447."
+      },
+      "outcome": "enacted",
+      "policy_area": "Congress",
+      "subjects": [
+        "Congressional sessions"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Provides for convening of the first session of the 110th Congress at noon on January 4, 2007.</p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ447/PLAW-109publ447.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ447/PLAW-109publ447.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-joint-resolution/101",
+      "votes": []
+    },
     {
       "id": "sres631-109",
       "congress": 109,
@@ -6565,6 +6594,37 @@
       "text_url_xml": "https://www.congress.gov/109/bills/sres200/BILLS-109sres200ats.xml",
       "text_url_pdf": "https://www.congress.gov/109/bills/sres200/BILLS-109sres200ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/200",
+      "votes": []
+    },
+    {
+      "id": "hconres198-109",
+      "congress": 109,
+      "type": "hconres",
+      "number": "198",
+      "title": "Providing for an adjournment or recess of the two Houses.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. DeLay, Tom",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2005-06-30",
+      "latest_action": {
+        "date": "2005-07-01",
+        "text": "Resolution agreed to in Senate without amendment by Unanimous Consent. (consideration: CR S7872-7873; text: CR S7873)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Congressional sessions",
+        "House of Representatives",
+        "Senate"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Provides for an adjournment of the House of Representatives from June 30 or July 1, 2005, until July 11, 2005 (or until another time of reassembly under this concurrent resolution), and a recess or an adjournment of the Senate from June 30, July 1, or July 2, 2005, until July 11, 2005 (or until another time of reassembly).</p> <p>Authorizes the Speaker of the House and the Majority Leader of the Senate, or their respective designees, acting jointly after consultation with the Minority Leaders of the House and of the Senate, to notify the Members of the House and the Senate, respectively, to reassemble at such place and time as they may designate whenever, in their opinion, the public interest shall warrant it.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/hconres198/BILLS-109hconres198enr.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/bills/hconres198/BILLS-109hconres198enr.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-concurrent-resolution/198",
       "votes": []
     },
     {
