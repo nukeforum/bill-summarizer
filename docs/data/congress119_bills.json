@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T12:15:07Z",
+  "generated_at": "2026-10-23T11:05:48Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
@@ -21,7 +21,6 @@
         "text": "Became Public Law No: 119-127."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Commerce",
       "subjects": [
         "Government studies and investigations",
@@ -53,8 +52,7 @@
         "date": "2026-10-20",
         "text": "Became Public Law No: 119-125."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Social Welfare",
       "subjects": [
         "Congressional oversight",
@@ -63,7 +61,7 @@
         "Social security and elderly assistance",
         "Tax administration and collection, taxpayers"
       ],
-      "summary_crs": "<p><strong>Clergy Act</strong></p><p>This bill establishes a two-year window for certain members of the clergy and Christian Science practitioners to revoke their exemption from Social Security and Medicare taxes on ministerial earnings. Under current law, such individuals who object to participation in public insurance programs on religious or conscientious grounds may apply to the Internal Revenue Service (IRS) for an irrevocable exemption and will not receive Social Security or Medicare benefits in retirement unless they have qualifying credits from other employment.</p><p>The IRS must develop a plan to inform members of the clergy and Christian Science practitioners of their eligibility to revoke prior exemptions, pursuant to the bill's changes.</p>",
+      "summary_crs": "<p><strong>Clergy Act</strong></p><p>This act establishes a two-year window for members of the clergy who have opted out of Social Security and Medicare taxes (and are thus ineligible for benefits under those programs) to opt back in.</p><p>Under current law, certain ministers, members of religious orders, and Christian Science practitioners who object to participation in public insurance programs on religious or conscientious grounds may apply to the Internal Revenue Service (IRS) for an exemption from Social Security and Medicare taxes on ministerial earnings.&nbsp;Individuals who are approved for the exemption do&nbsp;not receive Social Security or Medicare benefits in retirement unless they have qualifying credits from other employment. The exemption is irrevocable. </p><p>Under the act, clergy members may choose to revoke their exemption by filing an application with the IRS by the due date of their federal income tax return for the second taxable year after December 31, 2028 (i.e., April 15, 2031, unless an individual obtains an extension to file their taxes). A clergy member may choose for the revocation to take effect in taxable year 2029 or taxable year 2030. A revocation under the act is permanent.</p><p>Clergy members who opt back in will generally need 10 years of covered employment (40 credits) to be eligible for Social Security and Medicare&nbsp;benefits, as is currently required for these programs.</p><p>The IRS must develop a plan to inform clergy members of their eligibility to revoke prior exemptions, pursuant to the act's changes.</p>",
       "text_url_html": "https://www.congress.gov/119/bills/hr227/BILLS-119hr227rfs.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/hr227/BILLS-119hr227rfs.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/hr227/BILLS-119hr227rfs.pdf",
@@ -121,7 +119,6 @@
         "text": "Became Public Law No: 119-128."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Federal-Indian relations",
@@ -156,7 +153,6 @@
         "text": "Became Public Law No: 119-129."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Commerce",
       "subjects": [
         "Civil actions and liability",
@@ -190,7 +186,6 @@
         "text": "Became Public Law No: 119-130."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Alaska",
@@ -222,7 +217,6 @@
         "text": "Became Public Law No: 119-131."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Congressional oversight",
@@ -234,7 +228,7 @@
         "Performance measurement",
         "Smuggling and trafficking"
       ],
-      "summary_crs": "<p><strong>Enhancing Detection of Human Trafficking Act</strong></p><p>This bill requires the Department of Labor to provide training and education to its employees on how to effectively assist law enforcement in detecting human trafficking.</p><p>The bill directs Labor to determine which employees should receive the training and education based on their official duties. Further, it requires the training and education to include information that is appropriate for the employees' location or environment; that reflects current trends and best practices for the location or environment; and that is relevant to detecting human trafficking, identifying suspected victims, and referring potential cases to the Department of Justice and other appropriate authorities.</p>",
+      "summary_crs": "<p><strong>Enhancing Detection of Human Trafficking Act</strong></p><p>This act requires the Department of Labor to provide training and education to its employees on how to effectively assist law enforcement in detecting human trafficking.</p><p>The act directs Labor to determine which employees should receive the training and education based on their official duties. Further, it requires the training and education to include information that is appropriate for the employees' location or environment; that reflects current trends and best practices for the location or environment; and that is relevant to detecting human trafficking, identifying suspected victims, and referring potential cases to the Department of Justice and other appropriate authorities.</p>",
       "text_url_html": "https://www.congress.gov/119/bills/hr4307/BILLS-119hr4307rds.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/hr4307/BILLS-119hr4307rds.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/hr4307/BILLS-119hr4307rds.pdf",
@@ -259,7 +253,6 @@
         "text": "Became Public Law No: 119-132."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Mississippi",
@@ -290,7 +283,6 @@
         "text": "Became Public Law No: 119-133."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Arizona",
@@ -323,14 +315,13 @@
         "text": "Became Public Law No: 119-134."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Licensing and registrations",
         "Mining",
         "Oil and gas"
       ],
-      "summary_crs": "<p><strong>License to Drill Act</strong></p><p>This bill extends through FY2037 the Bureau of Land Management’s (BLM’s) authority to collect oil and gas permit processing fees. For each new permit application, BLM collects a fee that is transferred to the BLM Permit Processing Improvement Fund.&nbsp;(Under current law, the fees are authorized through FY2026.)</p>",
+      "summary_crs": "<p><strong>License to Drill Act</strong></p><p>This act extends through FY2037 the Bureau of Land Management’s (BLM’s) authority to collect oil and gas permit processing fees. For each new permit application, BLM collects a fee that is transferred to the BLM Permit Processing Improvement Fund.&nbsp;(Under current law, the fees are authorized through FY2026.)</p>",
       "text_url_html": "https://www.congress.gov/119/bills/hr7831/BILLS-119hr7831rs.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/hr7831/BILLS-119hr7831rs.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/hr7831/BILLS-119hr7831rs.pdf",
@@ -355,7 +346,6 @@
         "text": "Became Public Law No: 119-126."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Arizona",
@@ -388,7 +378,6 @@
         "text": "Became Public Law No: 119-122."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Dams and canals",
@@ -398,9 +387,9 @@
         "Water use and supply"
       ],
       "summary_crs": "<p><strong>Crow Tribe Water Rights Settlement Amendments Act of 2025</strong></p><p>This bill revises the water rights settlement agreement entered into by the Crow Tribe of Montana and Montana.</p><p>The Crow Tribe Water Rights Settlement Act of 2010 ratified, authorized, and confirmed the water rights compact between the tribe and Montana. Among other provisions, this settlement act authorized the Bureau of Reclamation to plan, design and construct the following two major projects on the Crow Reservation: (1) the rehabilitation and improvement of the Crow Irrigation Project (CIP); and (2) the planning, design, and construction of the MR&amp;I System (the municipal, rural, and industrial water system of the Crow Reservation).</p><p>Among other provisions, the bill revises the settlement act to</p><ul><li>replace references to the <em>MR&amp;I System</em> with <em>MR&amp;I Projects</em>;&nbsp;</li><li>establish a nontrust, interest-bearing account&nbsp;(to be known as the Crow&nbsp;CIP Implementation Account) to allow Reclamation to continue to work on the rehabilitation of the CIP;&nbsp;</li><li>create a new MR&amp;I Projects Account, through which the tribe must use funds for activities related to water production, treatment, or delivery infrastructure; and</li><li>extend by five years (to 2030) the period during which the tribe has the exclusive right to construct hydropower facilities on the Yellowtail&nbsp;Afterbay Dam in Montana.</li></ul>",
-      "text_url_html": "https://www.congress.gov/119/bills/s240/BILLS-119s240eah.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/s240/BILLS-119s240eah.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/s240/BILLS-119s240eah.pdf",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ122/PLAW-119publ122.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ122/PLAW-119publ122_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ122/PLAW-119publ122.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/240",
       "votes": []
     },
@@ -421,8 +410,7 @@
         "date": "2026-10-15",
         "text": "Became Public Law No: 119-124."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Labor and Employment",
       "subjects": [
         "Employee benefits and pensions",
@@ -486,7 +474,6 @@
         "text": "Became Public Law No: 119-123."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional oversight",
@@ -520,7 +507,6 @@
         "text": "Became Public Law No: 119-121."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Arts, Culture, Religion",
       "subjects": [
         "Congressional oversight",
@@ -554,7 +540,6 @@
         "text": "Became Public Law No: 119-119."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Social Welfare",
       "subjects": [
         "Computer security and identity theft",
@@ -586,7 +571,6 @@
         "text": "Became Public Law No: 119-120."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Government Operations and Politics",
       "subjects": [
         "Congressional oversight",
@@ -652,7 +636,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5297-5298)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "California",
@@ -716,7 +699,6 @@
         "text": "Passed Senate with an amendment and an amendment to the Title by Unanimous Consent."
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Taxation",
       "subjects": [
         "Civil actions and liability",
@@ -983,7 +965,6 @@
         "text": "Became Public Law No: 119-118."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Health programs administration and funding",
@@ -1219,7 +1200,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5299)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Commemorative events and holidays",
@@ -1696,7 +1676,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5186)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Armed Forces and National Security",
       "subjects": [
         "Congressional tributes",
@@ -1730,7 +1709,6 @@
         "text": "Motion to discharge Senate Committee on Foreign Relations rejected by Yea-Nay Vote. 47 - 51. Record Vote Number: 252. (consideration: CR S5158-5159)"
       },
       "outcome": "failed",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": "<p>This resolution requests that the Department of State provide Congress with an unclassified statement regarding&nbsp;Israel's human rights practices.</p><p>The resolution specifies that the statement should include certain elements, including (1) all credible information concerning the alleged killing of nine specified U.S. citizens and any other U.S. citizens by the Israeli Defense Forces, Israeli security forces, or Israeli settlers in 2022 or later; (2) all credible information concerning the identities of potential suspects in the killings; and (3) details on any steps taken by Israeli authorities to investigate the killings and hold accountable those responsible.</p><p>The statement should also include other elements, such as assessments of U.S. citizens currently held in Israeli prisons and the human rights situation of Palestinian children in Israeli military detention in the West Bank.&nbsp;</p>",
@@ -2267,7 +2245,6 @@
         "text": "Became Public Law No: 119-112."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Alternative and renewable resources",
@@ -2400,7 +2377,6 @@
         "text": "Became Public Law No: 119-116."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Transportation and Public Works",
       "subjects": [
         "Data collection, sharing, protection",
@@ -2785,7 +2761,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4958)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Labor and Employment",
       "subjects": [
         "Adult education and literacy",
@@ -3491,8 +3466,7 @@
         "date": "2026-09-02",
         "text": "Became Public Law No: 119-103."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Economics and Public Finance",
       "subjects": [
         "Abortion",
