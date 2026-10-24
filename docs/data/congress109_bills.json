@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T16:50:46Z",
+  "generated_at": "2026-10-24T15:42:39Z",
   "congress": 109,
   "votes_coverage": false,
   "bills": [
@@ -30,6 +30,110 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/109/plaws/publ447/PLAW-109publ447.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-joint-resolution/101",
+      "votes": []
+    },
+    {
+      "id": "s4044-109",
+      "congress": 109,
+      "type": "s",
+      "number": "4044",
+      "title": "Religious Liberty and Charitable Donation Clarification Act of 2006",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hatch, Orrin G.",
+        "party": "R",
+        "state": "UT"
+      },
+      "introduced_date": "2006-09-29",
+      "latest_action": {
+        "date": "2006-12-20",
+        "text": "Became Public Law No: 109-439."
+      },
+      "outcome": "enacted",
+      "policy_area": "Finance and Financial Sector",
+      "subjects": [
+        "Bankruptcy",
+        "Charitable contributions",
+        "Debtor and creditor"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Religious Liberty and Charitable Donation Clarification Act of 2006 - Amends federal bankruptcy law with respect to calculation of the projected disposable income of an individual with regular income to meet the requirements for court confirmation of a plan for adjustment of the individual's debts.</p> <p>Removes charitable contributions from the statutory formula used to determine what portion of such contributions is reasonably necessary to be expended for such purposes from a debtor's current monthly income. (Thus allows full deduction of such contributions from current monthly income to arrive at disposable income, consistent with the requirements of the Religious Liberty and Charitable Contribution Protection Act of 1998.)</p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ439/PLAW-109publ439.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ439/PLAW-109publ439.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-bill/4044",
+      "votes": []
+    },
+    {
+      "id": "s4073-109",
+      "congress": 109,
+      "type": "s",
+      "number": "4073",
+      "title": "A bill to designate the outpatient clinic of the Department of Veterans Affairs located in Farmington, Missouri, as the \"Robert Silvey Department of Veterans Affairs Outpatient Clinic\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Talent, Jim",
+        "party": "R",
+        "state": "MO"
+      },
+      "introduced_date": "2006-11-16",
+      "latest_action": {
+        "date": "2006-12-18",
+        "text": "Became Public Law No: 109-414."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Ambulatory care",
+        "Armed Forces and National Security",
+        "Clinics",
+        "Congressional tributes",
+        "Health",
+        "Missouri",
+        "Names",
+        "Veterans' hospitals"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates the outpatient clinic of the Department of Veterans Affairs located in Farmington, Missouri, as the &quot;Robert Silvey Department of Veterans Affairs Outpatient Clinic.&quot;</p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ414/PLAW-109publ414.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ414/PLAW-109publ414.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-bill/4073",
+      "votes": []
+    },
+    {
+      "id": "sres549-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "549",
+      "title": "A resolution expressing the sense of the Senate regarding modern-day slavery.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Santorum, Rick",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2006-08-03",
+      "latest_action": {
+        "date": "2006-12-09",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Civil Rights and Liberties, Minority Issues",
+        "Crime and Law Enforcement",
+        "Foreign Trade and International Finance",
+        "Human rights",
+        "International agencies",
+        "Nongovernmental organizations",
+        "Slavery",
+        "Summit diplomacy",
+        "Victims of crimes"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Expresses the sense of the Senate that: (1) the abolition of modern-day slavery should be a priority of U.S. foreign and domestic policy; (2) the United States should continue to bring together governments, international organizations, nongovernmental organizations, and individuals to fight modern-day slavery; (3) the federal government should continue to expand protection and legal options for victims of modern-day slavery; (4) the abolition of modern-day slavery should be prioritized at the 2007 Group of 8 (G-8) Summit in Germany; and (5) U.S. trade policy should reflect the U.S. commitment to freedom for all people. </p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres549/BILLS-109sres549ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres549/BILLS-109sres549ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres549/BILLS-109sres549ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/549",
       "votes": []
     },
     {
@@ -344,6 +448,83 @@
       "votes": []
     },
     {
+      "id": "sres607-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "607",
+      "title": "A resolution admonishing the statements made by President Hugo Chavez at the United Nations General Assembly on September 20, 2006, and the undemocratic actions of President Chavez.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Bunning, Jim",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2006-09-29",
+      "latest_action": {
+        "date": "2006-12-06",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR 12/7/2006 S11388)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Civil Rights and Liberties, Minority Issues",
+        "Democracy",
+        "Foreign leaders",
+        "Government Operations and Politics",
+        "Human rights",
+        "Latin America",
+        "Political persecution",
+        "United Nations",
+        "Venezuela"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Condemns: (1) the statements made by President Hugo Chavez at the U.N. General Assembly on September 20, 2006; and (2) the undemocratic actions of President Chavez.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres607/BILLS-109sres607ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres607/BILLS-109sres607ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres607/BILLS-109sres607ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/607",
+      "votes": []
+    },
+    {
+      "id": "sres610-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "610",
+      "title": "A resolution expressing the sense of the Senate that the United States should promote the adoption of, and the United Nations should adopt, a resolution at its October meeting to protect the living resources of the high seas from destructive, illegal, unreported, and unregulated fishing practices.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Stevens, Ted",
+        "party": "R",
+        "state": "AK"
+      },
+      "introduced_date": "2006-09-29",
+      "latest_action": {
+        "date": "2006-12-06",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR 12/7/2006 S11388-11389)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Environmental Protection",
+        "Fishery agreements",
+        "Fishery management",
+        "Fishing boats",
+        "Habitat conservation",
+        "Marine and coastal resources, fisheries",
+        "Marine ecology",
+        "Marine resources conservation",
+        "Overfishing",
+        "Public Lands and Natural Resources",
+        "Sustainable fisheries",
+        "United Nations"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Expresses the sense of the Senate that the United States: (1) should continue to demonstrate international leadership regarding the conservation and sustainable use of high seas living marine resources by promoting adoption of a resolution at this year's U.N. General Assembly calling on all nations to prohibit destructive fishing activity in areas where there are no applicable conservation or management measures or in areas with no applicable international fishery management organizations or agreements until conservation and management measures consistent with the Magnuson-Stevens Act, the United Nations Fish Stocks Agreement, and other relevant instruments are implemented; and (2) calls upon U.N. member nations to adopt a resolution to protect the living resources of the high seas from destructive fishing practices.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres610/BILLS-109sres610ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres610/BILLS-109sres610ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/610",
+      "votes": []
+    },
+    {
       "id": "sres625-109",
       "congress": 109,
       "type": "sres",
@@ -464,6 +645,53 @@
       "text_url_xml": "https://www.congress.gov/109/bills/sres619/BILLS-109sres619ats.xml",
       "text_url_pdf": "https://www.congress.gov/109/bills/sres619/BILLS-109sres619ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/619",
+      "votes": []
+    },
+    {
+      "id": "s3728-109",
+      "congress": 109,
+      "type": "s",
+      "number": "3728",
+      "title": "North Korea Nonproliferation Act of 2006",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Frist, William H.",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2006-07-25",
+      "latest_action": {
+        "date": "2006-10-13",
+        "text": "Became Public Law No: 109-353."
+      },
+      "outcome": "enacted",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Ballistic missiles",
+        "Biological warfare",
+        "Chemical warfare",
+        "Congress",
+        "Congress and foreign policy",
+        "Congressional reporting requirements",
+        "Cruise missiles",
+        "East Asia",
+        "Energy",
+        "Export controls",
+        "Foreign Trade and International Finance",
+        "Government Operations and Politics",
+        "Guided missiles",
+        "International cooperation",
+        "North Korea",
+        "Nuclear exports",
+        "Nuclear nonproliferation",
+        "President and foreign policy"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>North Korea Nonproliferation Act of 2006 - Amends the Iran and Syria Nonproliferation Act to extend the provisions of such Act to North Korea.</p> <p>States that in view of North Korea's determination to produce missiles, nuclear weapons, and other weapons of mass destruction and to proliferate missiles, and in view of U.N. Security Council Resolution 1695 (prevention by Member states of missile and related transfers to or from North Korea), it should be U.S. policy to impose sanctions on persons who transfer such weapons and related goods and technology to and from North Korea in the same manner as persons who transfer such items to and from Iran and Syria currently are sanctioned under U.S. law.</p> <p>Urges all governments to comply with Resolution 1695 and to impose measures on persons involved in such proliferation that are similar to those imposed by the United States pursuant to the Iran, North Korea, and Syria Nonproliferation Act, as amended by this Act. </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ353/PLAW-109publ353.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ353/PLAW-109publ353.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-bill/3728",
       "votes": []
     },
     {
@@ -813,6 +1041,53 @@
       "votes": []
     },
     {
+      "id": "sres559-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "559",
+      "title": "A resolution calling on the President to take immediate steps to help stop the violence in Darfur.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Biden, Joseph R., Jr.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2006-09-07",
+      "latest_action": {
+        "date": "2006-09-13",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S9566)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Africa (Sub-Saharan)",
+        "Arab countries",
+        "Armed Forces and National Security",
+        "Armistices",
+        "China",
+        "Civil Rights and Liberties, Minority Issues",
+        "Civil War",
+        "Commemorations",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Crimes against humanity",
+        "Diplomats",
+        "East Asia",
+        "Foreign Trade and International Finance",
+        "Human rights",
+        "International military forces",
+        "Logistics",
+        "Military and naval supplies",
+        "Military aviation"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Condemns the government of Sudan's: (1) military offensive in Darfur in violation of the terms of the Darfur Peace Agreement (2006) and the N'Djamena cease-fire accord (2004); and (2) rejection of U.N. Security Council Resolution 1706 (2006).</p> <p> Commends the African Union Mission in Sudan (AMIS) for its monitoring of the N'djamena cease-fire agreement and encourages the African Union (AU) to leave the AMIS force in place until a U.N. peacekeeping mission is deployed to Darfur.</p> <p> Calls upon the government of Sudan to: (1) cease its military offensive in Darfur; and (2) comply with the deployment of U.N. peacekeepers to Darfur.</p> <p> Calls upon the United Nations to: (1) deploy as quickly as practicable well trained and equipped peacekeeping troops as authorized by Security Council Resolution 1706; and (2) begin considerations of sanctions as called for by Security Council Resolution 1556 (2004) and Security Council Resolution 1564 (2004).</p> <p>Urges the President to help improve the security situation in Darfur by: (1) pursuing the imposition of a &quot;no-fly zone&quot; in Darfur in cooperation with the United Nations, the North Atlantic Treaty Organization (NATO), or NATO allies; (2) garnering support for NATO assistance with the AU handover of AMIS to the United Nations; (3) obtaining the support of China, Russia, and U.S. allies in the Arab League to secure Sudan's compliance with U.N. peacekeeper deployment; (4) supporting full funding for the U.N. peacekeeping mission in Sudan; (5) securing U.N. member state support for a special session on Sudan in the U.N. Human Rights Council; and (6) appointing a Special Envoy to Sudan to head the Office of the Presidential Special Envoy. </p> <p>Urges the international community to: (1) support the deployment of U.N. peacekeepers to Darfur financially, with logistical and equipment support, or through troop contributions; (2) fulfill financial obligations to U.N. and international humanitarian aid agencies for responding to the crisis in Darfur or addressing humanitarian needs throughout Sudan; (3) impose targeted sanctions against members of the National Congress Party responsible for human rights violations, war crimes, and crimes against humanity; and (4) impose sanctions consistent with Security Council Resolutions 1556 and 1564.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres559/BILLS-109sres559ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres559/BILLS-109sres559ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres559/BILLS-109sres559ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/559",
+      "votes": []
+    },
+    {
       "id": "sres569-109",
       "congress": 109,
       "type": "sres",
@@ -1015,6 +1290,96 @@
       "text_url_xml": "https://www.congress.gov/109/bills/sres561/BILLS-109sres561ats.xml",
       "text_url_pdf": "https://www.congress.gov/109/bills/sres561/BILLS-109sres561ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/561",
+      "votes": []
+    },
+    {
+      "id": "s3693-109",
+      "congress": 109,
+      "type": "s",
+      "number": "3693",
+      "title": "A bill to make technical corrections to the Violence Against Women and Department of Justice Reauthorization Act of 2005.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Specter, Arlen",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2006-07-19",
+      "latest_action": {
+        "date": "2006-08-12",
+        "text": "Became Public Law No: 109-271."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Alaska",
+        "Aliens",
+        "Arrest",
+        "Authorization",
+        "Child safety",
+        "Child sexual abuse",
+        "Crime prevention",
+        "Crimes against women",
+        "Criminal justice information",
+        "Deportation",
+        "Economics and Public Finance",
+        "Education",
+        "Families",
+        "Family violence",
+        "Federal aid to Indians",
+        "Federal aid to housing",
+        "Federal aid to law enforcement",
+        "Government Operations and Politics",
+        "Higher education"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>Makes technical corrections and other amendments to the Violence Against Women and Department of Justice Reauthorization Act of 2005 (the Act) and other related federal legislation.</p> <p>(Sec. 1) Establishes as new short titles for specified provisions of the Act: (1) the Violence Against Women Reauthorization Act of 2005; and (2) the Department of Justice Appropriations Authorization Act of 2005. </p> <p>Delays the effective date of specified provisions of the Act until FY2007. </p> <p>Makes certain definitions and grant conditions in the Violence Against Women Act of 1994 applicable to provisions of the Act relating to crimes on campuses, outreach to underserved populations, and cultural services.</p> <p>Defines &quot;tribal nonprofit organization&quot; for purposes of the Act.</p> <p>Modifies universal grant conditions of the Act to qualify states for waivers of matching fund requirements based on demonstrated financial need.</p> <p>(Sec. 2) Extends the authorization of appropriations for sex offender management programs through FY2011.</p> <p>Amends federal criminal code provisions relating to domestic violence and stalking to modify the definition of &quot;spouse or intimate partner.&quot;</p> <p>Eliminates provisions of the Act relating to training, technical assistance, and data collection for violence against women &quot;STOP&quot; grants and grants to encourage arrest.</p> <p>Modifies the reporting requirement for recipients of grants for outreach to underserved populations.</p> <p>Extends to three years the compliance period for making forensic medical exams available to victims of sexual assault.</p> <p>Expands grant purposes for community-based programs for victims of domestic violence, dating violence, sexual assault, and stalking.</p> <p>Modifies funding allocations under the grant program to combat violent crimes against women relating to law enforcement, prosecutors, and victims services.</p> <p>(Sec. 3) Repeals the sexual assault services program enacted by the Violence Against Women and Department of Justice Reauthorization Act of 2005 and reestablishes such program in the Violence Against Women Act of 1994. </p> <p>(Sec. 4) Modifies: (1) grant purpose provisions relating to violent crimes on campuses; and (2) grantee reporting requirements to require annual rather than biennial reports on programs to combat such crime.</p> <p>(Sec. 5) Makes technical amendments to housing provisions of the Violence Against Women Act of 1994, the Stewart B. McKinney Homeless Assistance Act, and the United States Housing Act of 1937.</p> <p>Amends the Housing Act of 1937 to: (1) prohibit the denial of assisted housing benefits to individuals who are victims of domestic violence, sexual assault, or stalking; and (2) allow the eviction of assisted housing tenants who engage in criminal acts of domestic violence against family members or others.</p> <p>(Sec. 6) Amends the Immigration and Naturalization Act to modify provisions relating to admissibility, waivers, removal, and adjustment of status for Violence Against Women Act (VAWA) self-petitioners. Allows the Secretary of Homeland Security to waive inadmissibility for a VAWA self-petitioner if there is a connection between the alien's battering or subjection to extreme cruelty and the alien's removal, departure from the United States, or reentry or reentries into the United States.</p> <p>(Sec. 7) Amends the Omnibus Crime Control and Safe Streets Act of 1968 (OCCSSA) to: (1) modify grant allocations to Indian tribal governments for programs to combat violence against women and to encourage arrests and enforce protection orders; and (2) authorize the Attorney General to make grants to such governments for free (or minimal cost) legal assistance to victims of domestic violence, dating violence, stalking, or sexual assault who are seeking legal relief.</p> <p>Amends the Safe Homes for Women Act of 1994, the Violence Against Women Act of 1994, and the Violence Against Women Act of 2000 to modify grant allocations for specified programs to combat violence against Indian tribal women.</p> <p>(Sec. 8) Transfers grant authority for the organized retail theft national database and the juvenile and young adult witness assistance program from the Attorney General to the Director of the Bureau of Justice Assistance in the Office of Justice Programs.</p> <p>Repeals provisions of the Act relating to state grants and reporting requirements under OCCSSA.</p> <p>Extends restrictions on payments to private entities for Justice Department employee training facilities to include meals, lodging, or other expenses related to internal training or conference meetings.</p> <p>Extends the application period for grants under the Bureau of Justice Assistance Grant Programs (Byrne Grants) from 90 to 120 days after the date funds for such grants are appropriated.</p> <p>Transfers grant authority for the matching grant program for school security from the Attorney General to the Director of the Office of Community Oriented Policing Services.</p> <p>Increases FY2006 authorizations of appropriations for: (1) the U.S. Marshals Service; (2) the Bureau of Alcohol, Tobacco, Firearms and Explosives (ATF); (3) fees and expenses of witnesses; and (4) the Foreign Claims Settlement Commission.</p> <p>Transfers responsibility for Drug Courts technical assistance and training from the Community Capacity Development Office to the Bureau of Justice Assistance.</p> <p>Changes effective dates for various programs under the Act.</p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ271/PLAW-109publ271.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ271/PLAW-109publ271.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-bill/3693",
+      "votes": []
+    },
+    {
+      "id": "s3741-109",
+      "congress": 109,
+      "type": "s",
+      "number": "3741",
+      "title": "A bill to provide funding authority to facilitate the evacuation of persons from Lebanon, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lugar, Richard G.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2006-07-26",
+      "latest_action": {
+        "date": "2006-08-04",
+        "text": "Became Public Law No: 109-268."
+      },
+      "outcome": "enacted",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Americans in foreign countries",
+        "Appropriations",
+        "Arab-Israeli conflict",
+        "Congress",
+        "Congress and foreign policy",
+        "Congressional oversight",
+        "Congressional reporting requirements",
+        "Department of State",
+        "Economics and Public Finance",
+        "Evacuation of civilians",
+        "Foreign service",
+        "Government Operations and Politics",
+        "Lebanon",
+        "Middle East and North Africa",
+        "Reprogramming of appropriated funds"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Authorizes the Secretary of State, upon a determination that additional funding for the Emergencies in the Diplomatic and Consular Service account (Account) is necessary as a result of the extraordinary costs of facilitating the evacuation of persons from Lebanon on or after July 16, 2006, to transfer to the Account from unobligated amounts in any Administration of Foreign Affairs account necessary sums to: (1) cover the costs of such evacuations; and (2) replenish the Account to the July 15, 2006, funding level.</p> <p>States that transferred amounts shall be merged with Account amounts, and shall be available for the same purposes and subject to the same conditions as Account amounts. </p> <p>Directs the Secretary to notify the Committee on Foreign Relations and the Committee on Appropriations of the Senate and the Committee on International Relations and the Committee on Appropriations of the House of Representatives at least five days prior to any proposed transfer. Authorizes the Secretary to waive such requirement if exigent circumstances exist, but requires the Secretary to notify the Committees no later than three days after such transfer.</p> <p>Authorizes specified funds to be made available for such evacuation costs. </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ268/PLAW-109publ268.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ268/PLAW-109publ268.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-bill/3741",
       "votes": []
     },
     {
@@ -1281,6 +1646,47 @@
       "votes": []
     },
     {
+      "id": "sres526-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "526",
+      "title": "A resolution condemning the murder of United States journalist Paul Klebnikov on July 9, 2004, in Moscow, and the murders of other members of the media in the Russian Federation.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Clinton, Hillary Rodham",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2006-06-29",
+      "latest_action": {
+        "date": "2006-07-25",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Americans in foreign countries",
+        "Civil Rights and Liberties, Minority Issues",
+        "Commemorations",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Criminal investigation",
+        "Freedom of the press",
+        "Government Operations and Politics",
+        "Human rights",
+        "Murder",
+        "Reporters and reporting",
+        "Right of privacy",
+        "Russia"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Condemns: (1) the July 2004 murder of U.S. journalist Paul Klebnikov in Moscow; and (2) the murders of other members of the media in the Russian Federation.</p> <p> Commends the Office of the Russian Prosecutor General for its continuing investigation of Mr. Klebnikov's murder.</p> <p> Urges the government of Russia to: (1) continue its inquiries into Mr. Klebnikov's murder, and to bring the responsible parties to justice; (2) accept offers of investigatory assistance from the United States and other concerned governments; (3) assist journalists who have started independent inquiries into Mr. Klebnikov's death, to the extent that such assistance conforms with Russian privacy safeguards and laws; and (4) take action to protect the independence and freedom of the media of Russia and of visiting members of the media. </p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres526/BILLS-109sres526ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres526/BILLS-109sres526ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres526/BILLS-109sres526ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/526",
+      "votes": []
+    },
+    {
       "id": "sres538-109",
       "congress": 109,
       "type": "sres",
@@ -1394,6 +1800,48 @@
       "text_url_xml": "https://www.congress.gov/109/bills/sres533/BILLS-109sres533ats.xml",
       "text_url_pdf": "https://www.congress.gov/109/bills/sres533/BILLS-109sres533ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/533",
+      "votes": []
+    },
+    {
+      "id": "sres500-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "500",
+      "title": "A resolution expressing the sense of Congress that the Russian Federation should fully protect the freedoms of all religious communities without distinction, whether registered or unregistered, as stipulated by the Russian Constitution and international standards.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Brownback, Sam",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2006-06-06",
+      "latest_action": {
+        "date": "2006-07-14",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S7564)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Civil Rights and Liberties, Minority Issues",
+        "Crime and Law Enforcement",
+        "Criminal investigation",
+        "Europe",
+        "Foreign service",
+        "Human rights",
+        "Negotiations",
+        "Police corruption",
+        "Regionalism (International organization)",
+        "Religion",
+        "Religious liberty",
+        "Russia",
+        "United Nations",
+        "Violence"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Expresses the sense of Congress that the United States should: (1) urge the government of the Russian Federation to ensure full protection of freedoms for all religious communities and end the harassment of unregistered religious groups; (2) urge vigorous investigation and prosecution of criminal acts against registered and unregistered religious communities; (3) continue to raise concerns with the government of the Russian Federation over violations of religious freedom; (4) ensure that U.S. Embassy officials engage local officials throughout the Russian Federation and undertake outreach activities; (5) urge the government of the Russian Federation to invite representatives of the Organization for Security and Cooperation in Europe (OSCE) and the United Nations Special Rapporteur on Freedom of Religion or Belief to visit the Russian Federation and discuss issues relating to freedom of religion; and (6) urge the Council of Europe and other members of the G-8 to raise such issues with Russian officials in the context of the presidency of the council and membership in the G-8.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres500/BILLS-109sres500ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres500/BILLS-109sres500ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres500/BILLS-109sres500ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/500",
       "votes": []
     },
     {
@@ -1759,6 +2207,91 @@
       "votes": []
     },
     {
+      "id": "hr3829-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "3829",
+      "title": "To designate the Department of Veterans Affairs Medical Center in Muskogee, Oklahoma, as the Jack C. Montgomery Department of Veterans Affairs Medical Center.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Boren, Dan",
+        "party": "D",
+        "state": "OK"
+      },
+      "introduced_date": "2005-09-20",
+      "latest_action": {
+        "date": "2006-06-15",
+        "text": "Became Public Law No: 109-231."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Army",
+        "Congress",
+        "Congressional tributes",
+        "Department of Veterans Affairs",
+        "Federal employees",
+        "Government Operations and Politics",
+        "Health",
+        "History",
+        "Korean War, 1950-1953",
+        "Names",
+        "Officer personnel",
+        "Oklahoma",
+        "Veterans' hospitals",
+        "World War II"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates the Department of Veterans Affairs medical center in Muskogee, Oklahoma, as the &quot;Jack C. Montgomery Department of Veterans Affairs Medical Center.&quot;</p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ231/PLAW-109publ231.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ231/PLAW-109publ231.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/3829",
+      "votes": []
+    },
+    {
+      "id": "sres491-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "491",
+      "title": "A resolution recognizing the accomplishments of Ignacy Jan Paderewski as a musician, composer, statesman, and philanthropist, and commemorating the 65th anniversary of his death on June 29, 1941.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hagel, Chuck",
+        "party": "R",
+        "state": "NE"
+      },
+      "introduced_date": "2006-05-24",
+      "latest_action": {
+        "date": "2006-06-14",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S5899)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Alliances",
+        "Anniversaries",
+        "Armed Forces and National Security",
+        "Artists",
+        "Arts, Culture, Religion",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Entertainers",
+        "Europe",
+        "Foreign leaders",
+        "International Affairs",
+        "Music",
+        "Poland",
+        "Terrorism"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Recognizes: (1) Ignacy Jan Paderewski's accomplishments as a musician, composer, statesman, and philanthropist and his invaluable efforts in forging close ties between Poland and the United States, on the 65th anniversary of his death; and (2) Poland as an ally and strong partner in the war against terrorism.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres491/BILLS-109sres491ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres491/BILLS-109sres491ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres491/BILLS-109sres491ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/491",
+      "votes": []
+    },
+    {
       "id": "sres512-109",
       "congress": 109,
       "type": "sres",
@@ -1788,6 +2321,86 @@
       "text_url_xml": "https://www.congress.gov/109/bills/sres512/BILLS-109sres512ats.xml",
       "text_url_pdf": "https://www.congress.gov/109/bills/sres512/BILLS-109sres512ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/512",
+      "votes": []
+    },
+    {
+      "id": "sres503-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "503",
+      "title": "A resolution mourning the loss of life caused by the earthquake that occurred on May 27, 2006, in Indonesia, expressing the condolences of the American people to the families of the victims, and urging assistance to those affected.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feingold, Russell D.",
+        "party": "D",
+        "state": "WI"
+      },
+      "introduced_date": "2006-06-07",
+      "latest_action": {
+        "date": "2006-06-09",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5685; text as passed Senate: CR S5685)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Commemorations",
+        "Congressional tributes",
+        "Disaster relief",
+        "Earthquakes",
+        "East Asia",
+        "Emergency Management",
+        "Federal employees",
+        "Government Operations and Politics",
+        "Indonesia",
+        "International relief",
+        "Military civic action",
+        "Nongovernmental organizations",
+        "United Nations"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>Mourns the loss of life and suffering caused by the earthquake that occurred on May 27, 2006, in Indonesia.</p> <p>Expresses the condolences of the American people to the families, communities, and government of the victims.</p> <p>Expresses sympathy for the hundreds of thousands of people who have been seriously affected.</p> <p>Commends the international humanitarian response to the earthquake by the governments of many countries, the United Nations and other international organizations, and nongovernmental organizations.</p> <p>Expresses gratitude and respect for the work of all individuals providing aid, including U.S. civilian and military personnel. </p> <p>Urges the President and the U.S. government to provide all appropriate assistance to the government of Indonesia and people of the affected region.</p> <p>Recognizes the lead role of the Indonesian government in providing assistance and promoting recovery.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres503/BILLS-109sres503ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres503/BILLS-109sres503ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres503/BILLS-109sres503ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/503",
+      "votes": []
+    },
+    {
+      "id": "sres456-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "456",
+      "title": "A resolution expressing the sense of the Senate on the discussion by the North Atlantic Council of secure, sustainable, and reliable sources of energy.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lugar, Richard G.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2006-05-01",
+      "latest_action": {
+        "date": "2006-06-08",
+        "text": "Resolution agreed to in Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Congress",
+        "Congressional reporting requirements",
+        "Energy",
+        "Energy policy",
+        "Energy security",
+        "Government Operations and Politics",
+        "International cooperation",
+        "NATO countries",
+        "Negotiations",
+        "President and foreign policy"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The expanded summary of the Senate passed version is repeated here.)</b></p> <p>Expresses the sense of the Senate that the President should: (1) place on the agenda for discussion at the North Atlantic Council the merits of establishing a policy and strategy for the North Atlantic Treaty Organization (NATO) to promote the security of members of NATO through the development of secure, sustainable, and reliable sources of energy; and (2) report to Congress on designated agenda items, including a summary of the debate and a strategy for NATO to develop secure, sustainable, and reliable sources of energy, and contingency plans if current energy resources are put at risk.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres456/BILLS-109sres456ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres456/BILLS-109sres456ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres456/BILLS-109sres456ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/456",
       "votes": []
     },
     {
@@ -2036,6 +2649,46 @@
       "text_url_xml": "https://www.congress.gov/109/bills/sres497/BILLS-109sres497ats.xml",
       "text_url_pdf": "https://www.congress.gov/109/bills/sres497/BILLS-109sres497ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/497",
+      "votes": []
+    },
+    {
+      "id": "sres469-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "469",
+      "title": "A resolution condemning the April 25, 2006, beating and intimidation of Cuban dissident Martha Beatriz Roque.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lieberman, Joseph I.",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2006-05-08",
+      "latest_action": {
+        "date": "2006-05-25",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5283; text as passed Senate: CR S5283)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Caribbean area",
+        "Civil Rights and Liberties, Minority Issues",
+        "Commemorations",
+        "Congressional tributes",
+        "Cuba",
+        "Democracy",
+        "Dissenters",
+        "Government Operations and Politics",
+        "Human rights",
+        "Latin America",
+        "Political persecution",
+        "Political prisoners"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Condemns the brutality of the Castro regime toward Martha Beatriz Roque, a 61-year-old woman in frail health.</p> <p> Demands that the Cuban regime allow the people of Cuba to exercise their fundamental human rights. </p> <p> Commends the courage and perseverance of Martha Beatriz Roque and all dissidents in Cuba.</p> <p>Calls on the Cuban regime to release the hundreds of political prisoners and to stop the intimidation of dissidents and their families.</p> <p> Calls for continued international support of pro-democracy leaders in Cuba. </p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres469/BILLS-109sres469ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres469/BILLS-109sres469ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres469/BILLS-109sres469ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/469",
       "votes": []
     },
     {
@@ -2539,6 +3192,42 @@
       "text_url_xml": "https://www.congress.gov/109/bills/sres461/BILLS-109sres461ats.xml",
       "text_url_pdf": "https://www.congress.gov/109/bills/sres461/BILLS-109sres461ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/461",
+      "votes": []
+    },
+    {
+      "id": "sres415-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "415",
+      "title": "A resolution expressing the continuing support of the Senate to the Junior Reserve Officers' Training Corps (JROTC), and commending the efforts of that vital program as it carries out its mission of instilling the values of citizenship and service in the hearts and minds of the youth of the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Ensign, John",
+        "party": "R",
+        "state": "NV"
+      },
+      "introduced_date": "2006-03-30",
+      "latest_action": {
+        "date": "2006-05-01",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Commemorations",
+        "Congressional tributes",
+        "Education",
+        "Elementary and secondary education",
+        "Military training",
+        "Officer personnel",
+        "Retired military personnel",
+        "Secondary education"
+      ],
+      "summary_crs": " <p>Expresses appreciation to the Junior Reserve Officers' Training Corps (JROTC).</p> <p>Commends the professionalism and dedication of retired members of the Armed Forces who serve as JROTC instructors.</p> <p>Honors modern-day JROTC members.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres415/BILLS-109sres415ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres415/BILLS-109sres415ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres415/BILLS-109sres415ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/415",
       "votes": []
     },
     {
@@ -3318,6 +4007,43 @@
       "votes": []
     },
     {
+      "id": "sres385-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "385",
+      "title": "A resolution expressing the gratitude and appreciation to the men and women of the Armed Forces who serve as military recruiters, commending their selfless service in recruiting young men and woman to serve in the United States military, particularly in support of the global war on terrorism.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Ensign, John",
+        "party": "R",
+        "state": "NV"
+      },
+      "introduced_date": "2006-02-28",
+      "latest_action": {
+        "date": "2006-03-29",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text as passed Senate: CR S2540)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Commemorations",
+        "Congress",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "International Affairs",
+        "Legislation",
+        "Military operations",
+        "Recruiting and enlistment",
+        "Terrorism"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Commends military recruiters for their service and performance of duty during difficult times of sustained combat and the global war on terrorism.</p> <p>Reaffirms the commitment to supporting all aspects of military recruiting services in order that recruiters may continue to meet and exceed military personnel requirements.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres385/BILLS-109sres385ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres385/BILLS-109sres385ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/385",
+      "votes": []
+    },
+    {
       "id": "sres413-109",
       "congress": 109,
       "type": "sres",
@@ -3721,6 +4447,53 @@
       "votes": []
     },
     {
+      "id": "sres383-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "383",
+      "title": "A resolution calling on the President to take immediate steps to help improve the security situation in Darfur, Sudan, with an emphasis on civilian protection.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Biden, Joseph R., Jr.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2006-02-17",
+      "latest_action": {
+        "date": "2006-03-02",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S1661; text as passed Senate: CR S1661)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Africa (Sub-Saharan)",
+        "Arabs",
+        "Armed Forces and National Security",
+        "Armistices",
+        "Arms control",
+        "Chad",
+        "Civil Rights and Liberties, Minority Issues",
+        "Civil War",
+        "Congress",
+        "Congressional tributes",
+        "Government Operations and Politics",
+        "Human rights",
+        "Insurgency",
+        "International military forces",
+        "Military aircraft",
+        "Military assistance",
+        "Military aviation",
+        "Military training",
+        "Military withdrawal"
+      ],
+      "summary_crs": " <p>Condemns the continued attacks on civilians in Darfur by the government of Sudan and violations of the N'Djamena Ceasefire Agreement by the government and rebels in Darfur (particularly the Sudan Liberation Army).</p> <p>Commends the Africa Union Mission in Sudan (AMIS) in monitoring the Agreement in Darfur and its role in diminishing some acts of violence. </p> <p>Calls on: (1) all parties to abide by the terms of the Agreement and engage in good-faith negotiations to end the conflict in Darfur; (2) the government of Sudan to withdraw all military aircraft from the region, to cease all support for the Janjaweed militia and rebels from Chad, and to disarm the Janjaweed; and (3) the African Union to request assistance from the United Nations (U.N.) and the North Atlantic Treaty Organization (NATO) to deter violence and instability until a U.N. peacekeeping force is deployed in Darfur.</p> <p>Urges the President to take steps to help improve the security situation in Darfur, including calling upon NATO allies, led by the United States, to support a NATO mission in Darfur and the AMIS.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres383/BILLS-109sres383ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres383/BILLS-109sres383ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/383",
+      "votes": []
+    },
+    {
       "id": "sres388-109",
       "congress": 109,
       "type": "sres",
@@ -4045,6 +4818,53 @@
       "text_url_xml": "https://www.congress.gov/109/bills/sres380/BILLS-109sres380ats.xml",
       "text_url_pdf": "https://www.congress.gov/109/bills/sres380/BILLS-109sres380ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/380",
+      "votes": []
+    },
+    {
+      "id": "sres355-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "355",
+      "title": "A resolution honoring the service of the National Guard and requesting consultation by the Department of Defense with Congress and the chief executive officers of the States prior to offering proposals to change the National Guard force structure.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Nelson, Ben",
+        "party": "D",
+        "state": "NE"
+      },
+      "introduced_date": "2006-01-26",
+      "latest_action": {
+        "date": "2006-02-07",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S777)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Afghanistan",
+        "Congress",
+        "Congress and military policy",
+        "Congressional oversight",
+        "Cost accounting",
+        "Crime and Law Enforcement",
+        "Defense budgets",
+        "Disaster relief",
+        "Economics and Public Finance",
+        "Emergency Management",
+        "Federal-state relations",
+        "Government Operations and Politics",
+        "Iraq",
+        "Iraq compilation",
+        "Middle East and North Africa",
+        "Military and naval supplies",
+        "Military occupation",
+        "Military operations",
+        "Military posture"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p></p> <p>Expresses support for the federal and state missions of the Army National Guard and the Air National Guard.</p> <p>Recommends that the Department of Defense (DOD) propose to fully fund the National Guard's equipment needs. </p> <p>Urges DOD to consult with the states' chief executive officers and Congress on any proposed changes to the National Guard force structure. Requests that: (1) any DOD plan regarding force structure take into account the National Guard role in homeland defense and other state missions; (2) DOD prepare budget projections that detail cost savings from any changes in force structure, as well as projected costs in the event large personnel increases are necessary to respond to a national emergency; and (3) DOD assure Congress and the chief executive officers that potential changes in force structure will not impact the safety and security of the U.S. people.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres355/BILLS-109sres355ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres355/BILLS-109sres355ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/355",
       "votes": []
     },
     {
@@ -5393,6 +6213,51 @@
       "votes": []
     },
     {
+      "id": "sres260-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "260",
+      "title": "A resolution calling for free and fair parliamentary elections in the Republic of Azerbaijan.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Biden, Joseph R., Jr.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2005-09-29",
+      "latest_action": {
+        "date": "2005-10-20",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S11700)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Azerbaijan",
+        "Central Asia",
+        "Civil Rights and Liberties, Minority Issues",
+        "Democracy",
+        "Election administration",
+        "Freedom of speech",
+        "Freedom of the press",
+        "Government Operations and Politics",
+        "Human rights",
+        "Nongovernmental organizations",
+        "Opposition (Political science)",
+        "Parliamentary government",
+        "Political participation",
+        "Political parties",
+        "Political rights",
+        "Political violence",
+        "Right of assembly"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Calls upon the government of the Republic of Azerbaijan to: (1) hold free and fair parliamentary elections in November 2005; (2) guarantee opposition party participation; and (3) guarantee freedom of speech and assembly. </p> <p>Calls upon the opposition parties to peacefully participate in such elections. </p> <p>Supports Council of Europe recommendations on amendments to the Unified Election Code of Azerbaijan to ensure equitable election commission representation of opposition and pro-government forces.</p> <p>Urges the international community and domestic nongovernmental organizations to provide sufficient election observers.</p> <p>Recognizes the need for establishment of an independent media. </p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres260/BILLS-109sres260ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres260/BILLS-109sres260ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/260",
+      "votes": []
+    },
+    {
       "id": "sres280-109",
       "congress": 109,
       "type": "sres",
@@ -5702,6 +6567,47 @@
       "text_url_xml": "https://www.congress.gov/109/bills/sres264/BILLS-109sres264ats.xml",
       "text_url_pdf": "https://www.congress.gov/109/bills/sres264/BILLS-109sres264ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/264",
+      "votes": []
+    },
+    {
+      "id": "s1368-109",
+      "congress": 109,
+      "type": "s",
+      "number": "1368",
+      "title": "United States Parole Commission Extension and Sentencing Commission Authority Act of 2005",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Specter, Arlen",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2005-07-01",
+      "latest_action": {
+        "date": "2005-09-29",
+        "text": "Became Public Law No: 109-76."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Administrative procedure",
+        "Drug abuse",
+        "Fraud",
+        "Government Operations and Politics",
+        "International Affairs",
+        "Law",
+        "Obstruction of justice",
+        "Parole",
+        "Sentencing guidelines",
+        "Sports and Recreation",
+        "Steroids",
+        "Terrorism",
+        "U.S. Sentencing Commission"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>United States Parole Commission Extension and Sentencing Commission Authority Act of 2005 - Extends the U.S. Parole Commission for three years. Directs the U.S. Sentencing Commission to amend the federal sentencing guidelines, commentary, and policy statements to implement provisions of: (1) the Intelligence Reform and Terrorism Prevention Act of 2004 requiring increases in statutory penalties and the offense level for making false statements to federal authorities and for obstructing administrative or congressional proceedings if the matter relates to international or domestic terrorism; and (2) the Anabolic Steroid Control Act of 2004 providing for increased penalties with respect to offenses involving anabolic steroids in a manner that reflects the seriousness of such offenses and the need to deter anabolic steroid trafficking and use.</p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ76/PLAW-109publ76.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ76/PLAW-109publ76.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-bill/1368",
       "votes": []
     },
     {
@@ -7161,6 +8067,43 @@
       "votes": []
     },
     {
+      "id": "sres122-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "122",
+      "title": "A resolution recognizing the historic efforts of the Republic of Kazakhstan to reduce the threat of weapons of mass destruction through cooperation in the Nunn-Lugar/Cooperative Threat Reduction Program, and celebrating the 10th anniversary of the removal of all nuclear weapons from the territory of Kazakhstan.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lugar, Richard G.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2005-04-25",
+      "latest_action": {
+        "date": "2005-05-25",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S5940)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Anniversaries",
+        "Armed Forces and National Security",
+        "Arms control",
+        "Central Asia",
+        "Commemorations",
+        "Congress",
+        "Congressional tributes",
+        "Kazakhstan",
+        "Nuclear weapons"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Commends, on the occasion of the 10th anniversary of the removal of the last nuclear warhead from the territory of Kazakhstan, the people and the Government of the Republic of Kazakhstan for their historic decision to rid Kazakhstan of nuclear weapons. </p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres122/BILLS-109sres122ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres122/BILLS-109sres122ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/122",
+      "votes": []
+    },
+    {
       "id": "sres156-109",
       "congress": 109,
       "type": "sres",
@@ -7649,6 +8592,40 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/109/bills/sres131/BILLS-109sres131ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/131",
+      "votes": []
+    },
+    {
+      "id": "sres118-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "118",
+      "title": "A resolution recognizing June 2 through June 5, 2005, as the \"Vermont Dairy Festival\", in honor of Harold Howrigan for his service to his community and the Vermont dairy industry.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Jeffords, James M.",
+        "party": "I",
+        "state": "VT"
+      },
+      "introduced_date": "2005-04-21",
+      "latest_action": {
+        "date": "2005-04-27",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S4432)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Agricultural cooperatives",
+        "Agriculture and Food",
+        "Commerce",
+        "Dairy industry",
+        "Special days",
+        "Vermont"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Recognizes June 2 through June 5, 2005, as the &quot;Vermont Dairy Festival&quot; in honor of Harold Howrigan for his service to his community and the Vermont dairy industry. </p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres118/BILLS-109sres118ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres118/BILLS-109sres118ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/118",
       "votes": []
     },
     {
@@ -8170,6 +9147,47 @@
       "votes": []
     },
     {
+      "id": "sres69-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "69",
+      "title": "A resolution expressing the sense of the Senate about the actions of Russia regarding Georgia and Moldova.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lugar, Richard G.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2005-03-03",
+      "latest_action": {
+        "date": "2005-03-10",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S2500-2501)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Border patrols",
+        "Boundaries",
+        "Central Asia",
+        "Europe",
+        "Georgia (Republic)",
+        "International cooperation",
+        "Military occupation",
+        "Military withdrawal",
+        "Moldova",
+        "Regionalism (International organization)",
+        "Russia",
+        "Summit diplomacy"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Expresses the sense of the Senate that the United States should: (1) urge Russia to live up to its commitments at the 1999 Organization for Security and Cooperation in Europe (OSCE) Summit regarding Georgia and Moldova; (2) in cooperation with its European allies, maintain diplomatic pressure to permit the OSCE Border Monitoring Operation (BMO) in Georgia to continue; and (3) if the BMO ceases to exist, seek, in cooperation with its European allies, an international presence to monitor border crossings between Georgia and the Russian republics of Chechnya, Dagestan, and Ingushetia. </p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres69/BILLS-109sres69ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres69/BILLS-109sres69ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/69",
+      "votes": []
+    },
+    {
       "id": "sres79-109",
       "congress": 109,
       "type": "sres",
@@ -8439,6 +9457,46 @@
       "text_url_xml": "https://www.congress.gov/109/bills/sres63/BILLS-109sres63ats.xml",
       "text_url_pdf": "https://www.congress.gov/109/bills/sres63/BILLS-109sres63ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/63",
+      "votes": []
+    },
+    {
+      "id": "sres54-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "54",
+      "title": "A resolution paying tribute to John Hume.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kennedy, Edward M.",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2005-02-14",
+      "latest_action": {
+        "date": "2005-02-16",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S1578-1579)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Congress",
+        "Congressional tributes",
+        "Democracy",
+        "Europe",
+        "Government Operations and Politics",
+        "Legislators",
+        "Northern Ireland",
+        "Peace",
+        "Peace negotiations",
+        "Peace treaties",
+        "United Kingdom"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Pays tribute to John Hume for his lifetime commitment to promoting reconciliation and peace in Northern Ireland. </p> <p>Calls on all the parties in Northern Ireland to redouble their effort to restore the trust that is necessary to implement the Good Friday Agreement and to achieve democratic institutions, peace, and justice in Northern Ireland. </p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres54/BILLS-109sres54ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres54/BILLS-109sres54ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres54/BILLS-109sres54ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/54",
       "votes": []
     },
     {
