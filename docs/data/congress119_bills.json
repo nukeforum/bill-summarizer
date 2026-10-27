@@ -1,8 +1,72 @@
 {
-  "generated_at": "2026-10-26T12:19:55Z",
+  "generated_at": "2026-10-27T11:40:00Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "hr7022-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "7022",
+      "title": "Mystic Alerts Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Pfluger, August",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2026-01-12",
+      "latest_action": {
+        "date": "2026-10-22",
+        "text": "Became Public Law No: 119-136."
+      },
+      "outcome": "enacted",
+      "policy_area": "Science, Technology, Communications",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Emergency communications systems",
+        "Federal Communications Commission (FCC)",
+        "Spacecraft and satellites",
+        "Telephone and wireless communication",
+        "User charges and fees"
+      ],
+      "summary_crs": "<p><strong>Mystic Alerts Act</strong></p><p>This bill provides for wireless emergency alerts to be transmitted to mobile devices via satellite. (Currently, wireless emergency alerts are sent via terrestrial mobile networks to individual devices in geographically targeted areas. Commercial mobile service providers are not required to participate; only devices connected to a participating service provider’s network receive alerts.)</p><p>Under the bill, commercial mobile service providers that participate in the wireless emergency alerts system must give notice to the Federal Communications Commission (FCC) indicating whether they will transmit such alerts via satellite (in addition to sending alerts via terrestrial networks).</p><p>The FCC must establish technical standards and other regulations to enable satellite emergency alerts. Providers that opt to transmit emergency alerts via satellite must comply with such regulations.</p><p>If a provider elects not to transmit satellite alerts, the provider must give notice of that election to new and existing subscribers. Separately, mobile service subscribers may opt out of receiving satellite alerts.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr7022/BILLS-119hr7022rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr7022/BILLS-119hr7022rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr7022/BILLS-119hr7022rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/7022",
+      "votes": []
+    },
+    {
+      "id": "hr952-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "952",
+      "title": "Reversionary Interest Conveyance Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Matsui, Doris O.",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2025-02-04",
+      "latest_action": {
+        "date": "2026-10-22",
+        "text": "Became Public Law No: 119-135."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "California",
+        "Land transfers"
+      ],
+      "summary_crs": "<p><strong>Reversionary Interest Conveyance Act</strong></p><p>This bill directs the Bureau of Land Management (BLM) to&nbsp;offer to sell the reversionary interest of the United States in approximately 8.43 acres of land in Sacramento, California, as generally depicted on a specified map dated November 7, 2022.&nbsp;Within two years of receiving a request from the owner of the land, the BLM must offer the reversionary interest and convey the reversionary interest to the buyer upon payment. The payment must be&nbsp;in an amount that is at least the fair market value of the reversionary interest. The buyer must also pay all costs related to the applicable conveyance of the reversionary interest, including all surveys, appraisals, and other administrative costs.</p><p>The bill subjects the conveyance to valid existing rights.</p><p>The proceeds from the sale must be deposited into Federal Land Disposal Account.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr952/BILLS-119hr952rs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr952/BILLS-119hr952rs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr952/BILLS-119hr952rs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/952",
+      "votes": []
+    },
     {
       "id": "hr1721-119",
       "congress": 119,
@@ -417,7 +481,7 @@
         "Financial services and investments",
         "Securities"
       ],
-      "summary_crs": "<p><strong>Retire through Ownership Act</strong></p><p>This bill allows the fiduciary of an Employee Stock Ownership Plan (ESOP) to rely on a valuation provided by an independent valuation expert or business appraiser in determining the fair market value&nbsp;of the plan's securities if the securities are not traded on a national securities exchange (i.e., not publicly traded) and the expert or appraiser follows specified methodologies.&nbsp;</p><p>In general,&nbsp;ESOPs are defined contribution pension plans where employees accrue shares of their employers' stock in individual accounts as part of their compensation. After separating from employment or retiring, employees receive the cash value of their shares.</p><p>Under the bill, an independent expert or appraiser must adhere to the methodology established under the Internal Revenue Service Ruling 59-60, which prescribes the factors a professional business appraiser should consider in forming a valuation of the stock&nbsp;for a closely held business.&nbsp;</p>",
+      "summary_crs": "<p><strong>Retire through Ownership Act</strong></p><p>This bill allows the fiduciary of an Employee Stock Ownership Plan (ESOP) to rely on a valuation provided by an independent valuation expert or business appraiser in determining the fair market value&nbsp;of the plan's&nbsp;assets if the assets are not securities for which there is a generally recognized market&nbsp;and the expert or appraiser follows specified methodologies.&nbsp;</p><p>In general,&nbsp;ESOPs are defined contribution pension plans where employees accrue shares of their employers' stock in individual accounts as part of their compensation. After separating from employment or retiring, employees receive the cash value of their shares.</p><p>Under the bill, an independent expert or appraiser must adhere to the methodology established under the Internal Revenue Service Ruling 59-60, which prescribes the factors a professional business appraiser should consider in forming a valuation of the stock&nbsp;for a closely held business.&nbsp;</p>",
       "text_url_html": "https://www.congress.gov/119/plaws/publ124/PLAW-119publ124.htm",
       "text_url_xml": "https://www.congress.gov/119/plaws/publ124/PLAW-119publ124_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ124/PLAW-119publ124.pdf",
@@ -482,7 +546,7 @@
         "Marine and coastal resources, fisheries",
         "Seafood"
       ],
-      "summary_crs": "<p><strong>Illegal Red Snapper and Tuna Enforcement Act</strong></p><p>This bill directs the National Oceanic and Atmospheric Administration (NOAA) and the National Institute of Standards and Technology (NIST) to jointly develop a standard methodology for identifying the country of origin of seafood to support enforcement against illegal, unreported, and unregulated fishing (IUU fishing). It also authorizes technical assistance to other countries&nbsp;to help combat IUU fishing and transnational organized crime.&nbsp;</p><p>NOAA and NIST must consult with U.S. Customs and Border Protection and the Coast Guard in developing the methodology, which must use chemical analysis to identify the country of origin of seafood. The methodology must be consistent with the needs of federal and state law enforcement agencies in combating IUU fishing. The methodology must also include a portable field kit and, to the extent practicable, be appropriate for testing prepared food (including raw preparations of seafood such as sushi). The agencies must conduct&nbsp;pilot studies of the methodology on red snapper and tuna.</p><p>Within two&nbsp;years after the bill's enactment, NIST must report to Congress regarding the methodology&nbsp;and a plan for operationalizing it. The report must explain any aspects of its&nbsp;methodology&nbsp;that are impracticable,&nbsp;whether additional research would make the methodology practicable, and whether an alternate approach might be practicable.&nbsp;</p><p>The bill also authorizes the Department of Defense to use operation and maintenance funds to provide technical assistance&nbsp;to maritime forces of other countries to help combat IUU fishing and transnational organized crime (e.g., by providing observers or data analysis).</p>",
+      "summary_crs": "<p><strong>Illegal Red Snapper and Tuna Enforcement Act</strong></p><p>This act directs the National Oceanic and Atmospheric Administration (NOAA) and the National Institute of Standards and Technology (NIST) to jointly develop a standard methodology for identifying the country of origin of seafood to support enforcement against illegal, unreported, and unregulated fishing (IUU fishing) and seafood fraud.</p><p>NOAA and NIST must consult with U.S. Customs and Border Protection and the Coast Guard in developing the methodology, which must use chemical analysis to identify the country of origin of seafood. The methodology must be consistent with the needs of federal and state law enforcement agencies in combating IUU fishing and seafood fraud. The methodology must also include a portable field kit and, to the extent practicable, be appropriate for testing prepared food (including raw preparations of seafood such as sushi). The agencies must conduct&nbsp;pilot studies of the methodology on red snapper and tuna.</p><p>Within two&nbsp;years after the act's enactment, NIST must report to Congress regarding the methodology&nbsp;and a plan for operationalizing it. The report must explain any aspects of its&nbsp;methodology&nbsp;that are impracticable,&nbsp;whether additional research would make the methodology practicable, and whether an alternate approach might be practicable.&nbsp;</p><p></p>",
       "text_url_html": "https://www.congress.gov/119/plaws/publ123/PLAW-119publ123.htm",
       "text_url_xml": "https://www.congress.gov/119/plaws/publ123/PLAW-119publ123_uslm.xml",
       "text_url_pdf": "https://www.congress.gov/119/plaws/publ123/PLAW-119publ123.pdf",
@@ -713,41 +777,6 @@
       "text_url_xml": "https://www.congress.gov/119/bills/hr5349/BILLS-119hr5349eas.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/hr5349/BILLS-119hr5349eas.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/5349",
-      "votes": []
-    },
-    {
-      "id": "hr7022-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "7022",
-      "title": "Mystic Alerts Act",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Pfluger, August",
-        "party": "R",
-        "state": "TX"
-      },
-      "introduced_date": "2026-01-12",
-      "latest_action": {
-        "date": "2026-09-30",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5237-5238)"
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "Science, Technology, Communications",
-      "subjects": [
-        "Administrative law and regulatory procedures",
-        "Emergency communications systems",
-        "Federal Communications Commission (FCC)",
-        "Spacecraft and satellites",
-        "Telephone and wireless communication",
-        "User charges and fees"
-      ],
-      "summary_crs": "<p><strong>Mystic Alerts Act</strong></p><p>This bill provides for wireless emergency alerts to be transmitted to mobile devices via satellite. (Currently, wireless emergency alerts are sent via terrestrial mobile networks to individual devices in geographically targeted areas. Commercial mobile service providers are not required to participate; only devices connected to a participating service provider’s network receive alerts.)</p><p>Under the bill, commercial mobile service providers that participate in the wireless emergency alerts system must give notice to the Federal Communications Commission (FCC) indicating whether they will transmit such alerts via satellite (in addition to sending alerts via terrestrial networks).</p><p>The FCC must establish technical standards and other regulations to enable satellite emergency alerts. Providers that opt to transmit emergency alerts via satellite must comply with such regulations.</p><p>If a provider elects not to transmit satellite alerts, the provider must give notice of that election to new and existing subscribers. Separately, mobile service subscribers may opt out of receiving satellite alerts.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr7022/BILLS-119hr7022rfs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr7022/BILLS-119hr7022rfs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr7022/BILLS-119hr7022rfs.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/7022",
       "votes": []
     },
     {
@@ -2772,37 +2801,6 @@
       "text_url_xml": "https://www.congress.gov/119/bills/sres863/BILLS-119sres863ats.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/sres863/BILLS-119sres863ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/863",
-      "votes": []
-    },
-    {
-      "id": "hr952-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "952",
-      "title": "Reversionary Interest Conveyance Act",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Matsui, Doris O.",
-        "party": "D",
-        "state": "CA"
-      },
-      "introduced_date": "2025-02-04",
-      "latest_action": {
-        "date": "2026-09-22",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S4882-4883)"
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "Public Lands and Natural Resources",
-      "subjects": [
-        "California",
-        "Land transfers"
-      ],
-      "summary_crs": "<p><strong>Reversionary Interest Conveyance Act</strong></p><p>This bill directs the Bureau of Land Management (BLM) to&nbsp;offer to sell the reversionary interest of the United States in approximately 8.43 acres of land in Sacramento, California, as generally depicted on a specified map dated November 7, 2022.&nbsp;Within two years of receiving a request from the owner of the land, the BLM must offer the reversionary interest and convey the reversionary interest to the buyer upon payment. The payment must be&nbsp;in an amount that is at least the fair market value of the reversionary interest. The buyer must also pay all costs related to the applicable conveyance of the reversionary interest, including all surveys, appraisals, and other administrative costs.</p><p>The bill subjects the conveyance to valid existing rights.</p><p>The proceeds from the sale must be deposited into Federal Land Disposal Account.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr952/BILLS-119hr952rs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr952/BILLS-119hr952rs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr952/BILLS-119hr952rs.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/952",
       "votes": []
     },
     {
