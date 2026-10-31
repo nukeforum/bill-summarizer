@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T17:54:30Z",
+  "generated_at": "2026-10-31T17:06:26Z",
   "congress": 109,
   "votes_coverage": false,
   "bills": [
@@ -717,6 +717,40 @@
       "votes": []
     },
     {
+      "id": "hr4057-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "4057",
+      "title": "To provide that attorneys employed by the Department of Justice shall be eligible for compensatory time off for travel under section 5550b of title 5, United States Code.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Porter, Jon C.",
+        "party": "R",
+        "state": "NV"
+      },
+      "introduced_date": "2005-10-17",
+      "latest_action": {
+        "date": "2006-12-20",
+        "text": "Became Public Law No: 109-425."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Department of Justice",
+        "Federal employees",
+        "Government attorneys",
+        "Government travel",
+        "Law",
+        "Leave of absence"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the House on March 28, 2006. The summary of that version is repeated here.) </b></p> <p>Makes attorneys employed by the Department of Justice (including assistant U.S. attorneys) eligible for compensatory time off for travel. </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ425/PLAW-109publ425.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ425/PLAW-109publ425.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/4057",
+      "votes": []
+    },
+    {
       "id": "hr4416-109",
       "congress": 109,
       "type": "hr",
@@ -795,6 +829,45 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/109/plaws/publ427/PLAW-109publ427.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/4510",
+      "votes": []
+    },
+    {
+      "id": "hr5132-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "5132",
+      "title": "River Raisin National Battlefield Study Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Dingell, John D.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2006-04-06",
+      "latest_action": {
+        "date": "2006-12-20",
+        "text": "Became Public Law No: 109-429."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Commemorations",
+        "Congress",
+        "Congressional reporting requirements",
+        "Europe",
+        "Governmental investigations",
+        "History",
+        "Michigan",
+        "Military parks",
+        "National parks",
+        "United Kingdom",
+        "War"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was reported to the House on September 6, 2006. The summary of that version is repeated here.) </b></p> <p>River Raisin National Battlefield Study Act - Directs the Secretary of the Interior to conduct a special resource study of, and report to specified congressional committees on, sites in Monroe County, Michigan, relating to the Battles of the River Raisin on January 18 and 22, 1813, and their aftermath to determine: (1) the national significance of the sites; and (2) the suitability and feasibility of including them in the National Park System (NPS). </p> <p>Requires the study to include the Secretary's analysis and recommendations on: (1) the effect on Monroe County, Michigan, of including the sites in the NPS; and (2) whether the sites could be included in an existing NPS unit.</p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ429/PLAW-109publ429.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ429/PLAW-109publ429.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/5132",
       "votes": []
     },
     {
@@ -987,6 +1060,91 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/109/plaws/publ439/PLAW-109publ439.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-bill/4044",
+      "votes": []
+    },
+    {
+      "id": "s4046-109",
+      "congress": 109,
+      "type": "s",
+      "number": "4046",
+      "title": "Iraq Reconstruction Accountability Act of 2006",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Collins, Susan M.",
+        "party": "R",
+        "state": "ME"
+      },
+      "introduced_date": "2006-11-13",
+      "latest_action": {
+        "date": "2006-12-20",
+        "text": "Became Public Law No: 109-440."
+      },
+      "outcome": "enacted",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Appropriations",
+        "Auditing",
+        "Crime and Law Enforcement",
+        "Economics and Public Finance",
+        "Finance and Financial Sector",
+        "Fraud",
+        "Government Operations and Politics",
+        "Government contractors",
+        "Governmental investigations",
+        "Inspectors general",
+        "Iraq",
+        "Iraq compilation",
+        "Middle East and North Africa",
+        "War relief"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Iraq Reconstruction Accountability Act of 2006 - Amends the John Warner National Defense Authorization Act for Fiscal Year 2007 to change the date for termination of the Office of the Special Inspector General for Iraq Reconstruction (Office). Provides that the Office shall terminate 10 months after 80% of the funds appropriated or made available for the Iraq Relief and Reconstruction Fund have been expended. </p> <p>Requires the Special Inspector General, prior to the termination date of the Office, to prepare a final forensic audit report on all funds appropriated or made available to the Iraq Relief and Reconstruction Fund. </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ440/PLAW-109publ440.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ440/PLAW-109publ440.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-bill/4046",
+      "votes": []
+    },
+    {
+      "id": "hr5466-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "5466",
+      "title": "Captain John Smith Chesapeake National Historic Trail Designation Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Davis, Jo Ann",
+        "party": "R",
+        "state": "VA"
+      },
+      "introduced_date": "2006-05-24",
+      "latest_action": {
+        "date": "2006-12-19",
+        "text": "Became Public Law No: 109-418."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Chesapeake Bay",
+        "Commemorations",
+        "Delaware",
+        "District of Columbia",
+        "Historic sites",
+        "History",
+        "Maryland",
+        "Pennsylvania",
+        "Rivers",
+        "Sports and Recreation",
+        "Trails",
+        "Transportation and Public Works",
+        "Virginia",
+        "Water Resources Development",
+        "Waterways"
+      ],
+      "summary_crs": " <p>Captain John Smith Chesapeake National Historic Trail Designation Act - Amends the National Trails System Act to designate the Captain John Smith Chesapeake National Historic Trail (a series of water routes extending approximately 3,000 miles along the Chesapeake Bay and its tributaries in Virginia, Maryland, Pennsylvania, Delaware, and in the District of Columbia that traces the 1607 and 1608 voyages of Captain John Smith to chart the land and waterways of the Chesapeake Bay). </p> <p>Requires the Trail to be administered by the Secretary of the Interior in coordination with: (1) the Chesapeake Bay Gateways and Watertrails Network authorized under the Chesapeake Bay Initiative Act of 1998; and (2) the Chesapeake Bay Program authorized under the Federal Water Pollution Control Act. </p> <p>Prohibits the United States from acquiring for the Trail any land or interest in land outside the exterior boundary of any federally-managed area without the consent of the owner of such land or interest. </p> <p>Amends federal law to decrease the maximum limit on the amount that may be made available with respect to all expenses incident to the examination and establishment of the Park and for the acquisition of lands and/or lands and improvements needed for the completion of the Park, including the securing of options and other incidental expenses.</p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ418/PLAW-109publ418.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ418/PLAW-109publ418.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/5466",
       "votes": []
     },
     {
@@ -1423,6 +1581,41 @@
       "votes": []
     },
     {
+      "id": "hr6151-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "6151",
+      "title": "To designate the facility of the United States Postal Service located at 216 Oak Street in Farmington, Minnesota, as the \"Hamilton H. Judson Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Kline, John",
+        "party": "R",
+        "state": "MN"
+      },
+      "introduced_date": "2006-09-21",
+      "latest_action": {
+        "date": "2006-12-18",
+        "text": "Became Public Law No: 109-409."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congressional tributes",
+        "Federal employees",
+        "Government Operations and Politics",
+        "Minnesota",
+        "Names",
+        "Postal facilities",
+        "United States Postal Service"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Designates the facility of the United States Postal Service located at 216 Oak Street in Farmington, Minnesota, as the \"Hamilton H. Judson Post Office.\" </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ409/PLAW-109publ409.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ409/PLAW-109publ409.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/6151",
+      "votes": []
+    },
+    {
       "id": "s1820-109",
       "congress": 109,
       "type": "s",
@@ -1570,6 +1763,41 @@
       "votes": []
     },
     {
+      "id": "s2250-109",
+      "congress": 109,
+      "type": "s",
+      "number": "2250",
+      "title": "Congressional Tribute to Dr. Norman E. Borlaug Act of 2006",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Grassley, Chuck",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2006-02-07",
+      "latest_action": {
+        "date": "2006-12-14",
+        "text": "Became Public Law No: 109-395."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Agricultural innovations",
+        "Agricultural production",
+        "Agriculture and Food",
+        "Congress",
+        "Congressional gold medals",
+        "Science, Technology, Communications",
+        "Scientists"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Congressional Tribute to Dr. Norman E. Borlaug Act of 2006 - Authorizes The President Pro Tempore of the Senate and the Speaker of the House of Representatives to make appropriate arrangements for the presentation, on behalf of Congress, of a gold medal of appropriate design, to Dr. Norman E. Borlaug, in recognition of his enduring contributions to the United States and the world. </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ395/PLAW-109publ395.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ395/PLAW-109publ395.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-bill/2250",
+      "votes": []
+    },
+    {
       "id": "hr4559-109",
       "congress": 109,
       "type": "hr",
@@ -1671,6 +1899,44 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/109/plaws/publ391/PLAW-109publ391.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/5690",
+      "votes": []
+    },
+    {
+      "id": "hr6121-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "6121",
+      "title": "To amend the Federal Water Pollution Control Act to reauthorize a program relating to the Lake Pontchartrain Basin, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Baker, Richard H.",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2006-09-20",
+      "latest_action": {
+        "date": "2006-12-12",
+        "text": "Became Public Law No: 109-392."
+      },
+      "outcome": "enacted",
+      "policy_area": "Environmental Protection",
+      "subjects": [
+        "Authorization",
+        "Economics and Public Finance",
+        "Environmental monitoring",
+        "Federal aid to water pollution control",
+        "Lakes",
+        "Louisiana",
+        "Mississippi",
+        "Restoration ecology",
+        "Water Resources Development",
+        "Watersheds"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Amends the Federal Water Pollution Control Act (popularly known as the Clean Water Act) to extend through FY2011 the authorization of appropriations for the Environmental Protection Agency's (EPA) Lake Pontchartrain Basin Restoration Program in Louisiana and Mississippi.</p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ392/PLAW-109publ392.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ392/PLAW-109publ392.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/6121",
       "votes": []
     },
     {
@@ -2146,6 +2412,53 @@
       "votes": []
     },
     {
+      "id": "hr5842-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "5842",
+      "title": "Pueblo of Isleta Settlement and Natural Resources Restoration Act of 2006",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Pearce, Stevan",
+        "party": "R",
+        "state": "NM"
+      },
+      "introduced_date": "2006-07-19",
+      "latest_action": {
+        "date": "2006-12-01",
+        "text": "Became Public Law No: 109-379."
+      },
+      "outcome": "enacted",
+      "policy_area": "Native Americans",
+      "subjects": [
+        "Agriculture and Food",
+        "Compensation (Law)",
+        "Damages",
+        "Drainage",
+        "Economics and Public Finance",
+        "Environmental Protection",
+        "Farm lands",
+        "Federal-Indian relations",
+        "Forest conservation",
+        "Forest health",
+        "Forest management",
+        "Government Operations and Politics",
+        "Government paperwork",
+        "Government trust funds",
+        "Indian claims",
+        "Indian lands",
+        "Infrastructure",
+        "Irrigation",
+        "Land transfers"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Pueblo of Isleta Settlement and Natural Resources Restoration Act of 2006 - Establishes in the Treasury the Pueblo of Isleta Natural Resources Restoration Fund for: (1) settlement of the claims of the Pueblo of Isleta; and (2) the acquisition, restoration, improvement, development, and protection of land, natural resources, and cultural resources within the exterior boundaries of the Pueblo. Provides for the maintenance and investment of the restoration fund.</p><p>Ratifies the Agreement of Compromise and Settlement entered into between the United States and the Pueblo dated 12, 2005, as modified by the Extension and Modification Agreement executed by the United States and the Pueblo on June 22, 2006, to settle the claims in the case of Pueblo of Isleta v. United States, Docket No. 98-166L, pending in the United States Court of Federal Claims.</p><p>Directs the Pueblo and the United States to execute and file a joint stipulation for entry of final judgment in dismissal of such case.</p><p>Provides for the payment of compensation to the Pueblo from the permanent judgment appropriation for all monetary damages and attorney fees, interest, and other fees and costs of any kind that were or could have been presented in connection with Docket No. 98-166L.</p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ379/PLAW-109publ379.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ379/PLAW-109publ379.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/5842",
+      "votes": []
+    },
+    {
       "id": "hr860-109",
       "congress": 109,
       "type": "hr",
@@ -2391,6 +2704,50 @@
       "votes": []
     },
     {
+      "id": "sres618-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "618",
+      "title": "A resolution designating November 26, 2006, as \"Drive Safer Sunday\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Chambliss, Saxby",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2006-11-16",
+      "latest_action": {
+        "date": "2006-11-16",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S11102-11103; text as passed Senate: CR S11102-11103; text of measure as introduced: CR S11076)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Transportation and Public Works",
+      "subjects": [
+        "Citizens band radio",
+        "Clergy",
+        "Commemorations",
+        "Crime and Law Enforcement",
+        "Driver education",
+        "Education",
+        "Higher education",
+        "Labor and Employment",
+        "Police",
+        "Religion",
+        "Science, Technology, Communications",
+        "Special days",
+        "Students",
+        "Thanksgiving Day",
+        "Traffic accidents and safety",
+        "Truck drivers"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>Encourages educational institutions, national trucking firms, clergy, law enforcement, and the general public to promote motor vehicle driving safety.</p> <p>Designates November 26, 2006, as Drive Safer Sunday.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres618/BILLS-109sres618ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres618/BILLS-109sres618ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres618/BILLS-109sres618ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/618",
+      "votes": []
+    },
+    {
       "id": "sres619-109",
       "congress": 109,
       "type": "sres",
@@ -2425,6 +2782,79 @@
       "text_url_xml": "https://www.congress.gov/109/bills/sres619/BILLS-109sres619ats.xml",
       "text_url_pdf": "https://www.congress.gov/109/bills/sres619/BILLS-109sres619ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/619",
+      "votes": []
+    },
+    {
+      "id": "sres620-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "620",
+      "title": "A resolution designating November 2006 as \"National Lung Cancer Awareness Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Chambliss, Saxby",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2006-11-16",
+      "latest_action": {
+        "date": "2006-11-16",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S11103; text as passed Senate: CR S11103; text of measure as introduced: CR S11076-11077)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Commemorations",
+        "Georgia",
+        "Health education",
+        "Lung cancer",
+        "Medical research",
+        "Medical tests",
+        "Science, Technology, Communications",
+        "Special months"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates November 2006 as National Lung Cancer Awareness Month.</p> <p>Reaffirms the Senate's commitment to: (1) advancing lung cancer research and early detection, particularly the Lung Cancer Alliance of Georgia's goal of significantly increasing the 5-year survival rate of individuals diagnosed with lung cancer in the United States to 50% within 10 years; and (2) working with all federal agencies involved in cancer research to develop a coordinated road map for accomplishing that goal.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres620/BILLS-109sres620ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres620/BILLS-109sres620ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres620/BILLS-109sres620ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/620",
+      "votes": []
+    },
+    {
+      "id": "sres621-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "621",
+      "title": "A resolution designating the week of February 5 through February 9, 2007, as \"National Teen Dating Violence Awareness and Prevention Week\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Crapo, Mike",
+        "party": "R",
+        "state": "ID"
+      },
+      "introduced_date": "2006-11-16",
+      "latest_action": {
+        "date": "2006-11-16",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S11103; text as passed Senate: CR S11103; text of measure as introduced: CR S11077)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Crime and Law Enforcement",
+        "Crime prevention",
+        "Families",
+        "Rape",
+        "Sex crimes",
+        "Social life and customs",
+        "Special weeks",
+        "Women",
+        "Youth violence"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates the week of February 5-February 9, 2007, as &quot;National Teen Dating Violence Awareness and Prevention Week.&quot;</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres621/BILLS-109sres621ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres621/BILLS-109sres621ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres621/BILLS-109sres621ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/621",
       "votes": []
     },
     {
@@ -3284,6 +3714,77 @@
       "votes": []
     },
     {
+      "id": "hr5929-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "5929",
+      "title": "To designate the facility of the United States Postal Service located at 950 Missouri Avenue in East St. Louis, Illinois, as the \"Katherine Dunham Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Costello, Jerry F.",
+        "party": "D",
+        "state": "IL"
+      },
+      "introduced_date": "2006-07-27",
+      "latest_action": {
+        "date": "2006-10-12",
+        "text": "Became Public Law No: 109-333."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Arts, Culture, Religion",
+        "Congressional tributes",
+        "Entertainers",
+        "Government Operations and Politics",
+        "Illinois",
+        "Names",
+        "Performing arts",
+        "Postal facilities"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Designates the facility of the United States Postal Service located at 950 Missouri Avenue in East St. Louis, Illinois, as the \"Katherine Dunham Post Office Building.\" </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ333/PLAW-109publ333.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ333/PLAW-109publ333.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/5929",
+      "votes": []
+    },
+    {
+      "id": "hr6033-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "6033",
+      "title": "To designate the facility of the United States Postal Service located at 39-25 61st Street in Woodside, New York, as the \"Thomas J. Manton Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Crowley, Joseph",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2006-09-06",
+      "latest_action": {
+        "date": "2006-10-12",
+        "text": "Became Public Law No: 109-334."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congress",
+        "Congressional tributes",
+        "Ex-Members of Congress",
+        "Government Operations and Politics",
+        "Names",
+        "New York City",
+        "Postal facilities"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Designates the facility of the United States Postal Service located at 39-25 61st Street in Woodside, New York, as the \"Thomas J. Manton Post Office Building.\" </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ334/PLAW-109publ334.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ334/PLAW-109publ334.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/6033",
+      "votes": []
+    },
+    {
       "id": "hr6051-109",
       "congress": 109,
       "type": "hr",
@@ -3519,6 +4020,42 @@
       "votes": []
     },
     {
+      "id": "hr5664-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "5664",
+      "title": "To designate the facility of the United States Postal Service located at 110 Cooper Street in Babylon, New York, as the \"Jacob Samuel Fletcher Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. King, Peter T.",
+        "party": "R",
+        "state": "NY"
+      },
+      "introduced_date": "2006-06-21",
+      "latest_action": {
+        "date": "2006-10-10",
+        "text": "Became Public Law No: 109-315."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Army",
+        "Congressional tributes",
+        "Government Operations and Politics",
+        "Military personnel",
+        "Names",
+        "New York State",
+        "Postal facilities"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the House on September 20, 2006. The summary of that version is repeated here.)</b></p><p>Designates the facility of the United States Postal Service located at 110 Cooper Street in Babylon, New York, as the \"Jacob Samuel Fletcher Post Office Building.\" </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ315/PLAW-109publ315.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ315/PLAW-109publ315.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/5664",
+      "votes": []
+    },
+    {
       "id": "hr6159-109",
       "congress": 109,
       "type": "hr",
@@ -3627,6 +4164,42 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/109/plaws/publ310/PLAW-109publ310.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-bill/3187",
+      "votes": []
+    },
+    {
+      "id": "s3613-109",
+      "congress": 109,
+      "type": "s",
+      "number": "3613",
+      "title": "A bill to designate the facility of the United States Postal Service located at 2951 New York Highway 43 in Averill Park, New York, as the \"Major George Quamo Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Clinton, Hillary Rodham",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2006-06-29",
+      "latest_action": {
+        "date": "2006-10-06",
+        "text": "Became Public Law No: 109-311."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Army",
+        "Congressional tributes",
+        "Government Operations and Politics",
+        "Names",
+        "New York State",
+        "Officer personnel",
+        "Postal facilities"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Designates the facility of the United States Postal Service located at 2951 New York Highway 43 in Averill Park, New York, as the \"Major George Quamo Post Office Building.\" </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ311/PLAW-109publ311.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ311/PLAW-109publ311.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-bill/3613",
       "votes": []
     },
     {
@@ -3770,6 +4343,100 @@
       "votes": []
     },
     {
+      "id": "hr6138-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "6138",
+      "title": "Third Higher Education Extension Act of 2006",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Keller, Ric",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2006-09-21",
+      "latest_action": {
+        "date": "2006-09-30",
+        "text": "Became Public Law No: 109-292."
+      },
+      "outcome": "enacted",
+      "policy_area": "Education",
+      "subjects": [
+        "Administrative procedure",
+        "Armed Forces and National Security",
+        "Authorization",
+        "Colleges",
+        "Crime and Law Enforcement",
+        "Debtor and creditor",
+        "Department of Education",
+        "Economics and Public Finance",
+        "Emergency Management",
+        "Families",
+        "Federal aid to education",
+        "Federally-guaranteed loans",
+        "Fees",
+        "Finance and Financial Sector",
+        "Fire fighters",
+        "Government Operations and Politics",
+        "Government lending",
+        "Government publicity",
+        "Health"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the House on September 27, 2006. The summary of that version is repeated here.)</b></p> <p>Third Higher Education Extension Act of 2006 - Amends the Higher Education Extension Act of 2005 to extend the programs under the Higher Education Act of 1965 through June 30, 2007.</p> <p>Amends the Higher Education Act of 1965 to bar trustees of institutions of higher education (IHEs), or of institution-affiliated organizations, from serving as eligible lenders under the Federal Family Education Loan (FFEL) program, unless the trusteeship continues pursuant to a contract entered into before the enactment of this Act. Imposes specified requirements on exempt lender-trustees and the IHEs or institution-affiliated organizations they serve. Subjects exempt lender-trustee loans to compliance audits.</p> <p>Alters the grant program for Hispanic-serving IHEs to: (1) move the time at which at least 25% of their full-time students must be Hispanic, from the time such IHEs apply for a new grant back to the end of the preceding grant year; (2) eliminate the requirement that at least 50% of their Hispanic students be poor; and (3) eliminate the two-year waiting period between grant applications.</p> <p>Requires that account maintenance fees payable to guarantee agencies under the FFEL program be calculated on the basis of .10% of the original principal amount of such outstanding loans on which insurance was issued. (Currently, such fees are capped at such percentage.)</p> <p>Directs the Secretary of Education to discharge or cancel the federal student loan indebtedness of spouses and parents of individuals who died (or die) or who became (or become) permanently and totally disabled from injuries suffered in the terrorist attacks on September 11, 2001.</p> <p>States that, in the case of a consolidation loan used jointly by a victim of such attacks and his or her spouse, the discharge or cancellation shall apply only to that portion of debt incurred on behalf of the victim; except that, where the victim served as a police officer, firefighter, other safety or rescue personnel, or member of the Armed Forces, all of the debt on such loan shall be discharged or canceled.</p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ292/PLAW-109publ292.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ292/PLAW-109publ292.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/6138",
+      "votes": []
+    },
+    {
+      "id": "s418-109",
+      "congress": 109,
+      "type": "s",
+      "number": "418",
+      "title": "Military Personnel Financial Services Protection Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Enzi, Michael B.",
+        "party": "R",
+        "state": "WY"
+      },
+      "introduced_date": "2005-02-17",
+      "latest_action": {
+        "date": "2006-09-29",
+        "text": "Became Public Law No: 109-290."
+      },
+      "outcome": "enacted",
+      "policy_area": "Finance and Financial Sector",
+      "subjects": [
+        "Administrative procedure",
+        "Administrative remedies",
+        "Armed Forces and National Security",
+        "Brokers",
+        "Choice of law",
+        "Civil service retirement",
+        "Commerce",
+        "Congress",
+        "Congressional investigations",
+        "Congressional reporting requirements",
+        "Consumer education",
+        "Department of Defense",
+        "Disciplining of employees",
+        "Families",
+        "Federal-state relations",
+        "Financial services",
+        "Fraud",
+        "Government Operations and Politics",
+        "Government life insurance"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was reported to the Senate on July 13, 2006. The summary of that version is repeated here.)</b></p> <p>Military Personnel Financial Services Protection Act - (Sec. 4) Amends the Investment Company Act of 1940 to make it unlawful for any registered investment company to issue or sell any periodic payment plan certificate.</p> <p>Retains the validity of certain previously issued certificates.</p> <p>Directs the Securities and Exchange Commission (SEC) to report to certain congressional committees on: (1) measures taken by a registered broker or dealer to refund voluntarily payments made by military service members on any periodic payment plan certificate, and the amounts of such refunds; (2) the sales practices of such brokers or dealers on military installations over the five years preceding submission of the report, and any legislative or regulatory recommendations to improve such practices; and (3) the revenues generated by such brokers or dealers in the sales of periodic payment plan certificates over such five-year period, and the products marketed by them to replace the revenue generated from the sales of prohibited certificates.</p> <p>(Sec. 5) Amends the Securities Exchange Act of 1934 to require the rules of a registered securities association to: (1) govern the sales, or offers of sales, of securities on the premises of any military installation to any member of the Armed Forces, including absence of referral fees or incentives and conspicuous disclosure that the securities are neither sanctioned, recommended, nor encouraged by the federal government; and (2) establish a system for collecting and retaining registration, disciplinary, and disputed information, as well as a toll-free telephone listing for prompt response to inquiries about member registration information.</p> <p>(Sec. 7) Amends the Investment Advisers Act of 1940 to authorize the SEC to require an investment adviser to file with the SEC any fee, application, report, or notice required to be filed, and pay associated costs.</p> <p>Directs the SEC to require such entity to establish and maintain a toll-free telephone listing, or other readily accessible process to receive and promptly respond to inquiries regarding registration, disciplinary, and other information involving investment advisers and associated persons.</p> <p>(Sec. 8) Declares that any state law, regulation, or order regarding the business of insurance shall apply to insurance activities conducted on federal land or facilities in the United States and abroad, including military installations.</p> <p>Prescribes the requirements of primary state jurisdiction of insurance or securities activities on federal land or facilities.</p> <p>(Sec. 9) Expresses the sense of Congress that the National Association of Insurance Commissioners (NAIC) should study and report to certain congressional committees on the extent to which the states have worked collectively with the Secretary of Defense to ensure implementation of appropriate standards to protect members of the Armed Forces from dishonest and predatory insurance sales practices while on a federal military installation.</p> <p>Expresses the sense of Congress that senior representatives of the Secretary of Defense, the SEC, and the NAIC should meet twice a year to coordinate their activities and monitor enforcement of the sale of financial products on federal military installations. </p> <p>(Sec. 10) Prohibits an insurer or producer from selling, or offering for sale, any life insurance product to any member of the Armed Forces or a dependent on a federal military installation, unless specified written disclosures have been provided at the time of the sale. </p> <p>Makes the sale of a life insurance product in violation of this Act voidable from its inception, at the sole option of the member of the Armed Forces or dependent.</p> <p>Prohibits any person who has intentionally violated, or willfully disregarded, these prohibitions and requirements from further engaging in the business of insurance with respect to federal employees on federal land, except regarding existing policies.</p> <p>Exempts from these prohibitions and requirements any life insurance product specifically contracted by or through the federal government.</p> <p>(Sec. 11) Expresses the sense of Congress that the NAIC should study and report to certain congressional committees on ways of improving the quality of and sale of life insurance products sold on federal military installations.</p> <p>Directs the Comptroller General, if the NAIC does not submit such a report, to study and report to specified congressional committees on any proposals that have been made to improve the quality and sale of life insurance products sold on military installations of the United States.</p> <p>(Sec. 12) Prohibits any insurer from contracting with any person that sells or solicits the sale of any life insurance product on U.S. military installations unless the insurer has implemented a system to report to certain state insurance commissioners any federal, state, or corporate disciplinary actions taken with respect to such sales or solicitations.</p> <p>Expresses the sense of Congress that the states should collectively implement a system to: (1) receive reports of such disciplinary actions; and (2) disseminate such information to all other states and to the Secretary of Defense.</p> <p>(Sec. 13) Requires the Secretary of Defense to: (1) establish a list of insurance agents and financial advisors that have been barred or banned from doing business on federal military installations; and (2) ensure that federal and state regulatory agencies for securities and insurance are promptly notified upon the inclusion in or removal from the list. </p> <p>(Sec. 14) Instructs the Inspector General of the Department of Defense to study and report to certain congressional committees on the impact of a certain Department of Defense Instruction and the reforms included in this Act on the quality and suitability of sales of securities and insurance products marketed or otherwise offered to members of the Armed Forces.</p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ290/PLAW-109publ290.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ290/PLAW-109publ290.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-bill/418",
+      "votes": []
+    },
+    {
       "id": "hr2808-109",
       "congress": 109,
       "type": "hr",
@@ -3848,6 +4515,96 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/109/plaws/publ286/PLAW-109publ286.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-bill/1773",
+      "votes": []
+    },
+    {
+      "id": "s2784-109",
+      "congress": 109,
+      "type": "s",
+      "number": "2784",
+      "title": "Fourteenth Dalai Lama Congressional Gold Medal Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feinstein, Dianne",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2006-05-11",
+      "latest_action": {
+        "date": "2006-09-27",
+        "text": "Became Public Law No: 109-287."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Buddhism",
+        "Civil Rights and Liberties, Minority Issues",
+        "Clergy",
+        "Congress",
+        "Congressional gold medals",
+        "Democracy",
+        "East Asia",
+        "Government Operations and Politics",
+        "Human rights",
+        "International Affairs",
+        "Nonviolence",
+        "Peace",
+        "Religion",
+        "Religious liberty",
+        "Tibet"
+      ],
+      "summary_crs": "<p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>The Fourteenth Dalai Lama Congressional Gold Medal Act - Directs the Speaker of the House of Representatives and the President pro Tempore of the Senate to make appropriate arrangements for the presentation, on behalf of Congress, of a gold medal of appropriate design to Tenzin Gyatso, the Fourteenth Dalai Lama, in recognition of his many contributions to peace and religious understanding. </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ287/PLAW-109publ287.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ287/PLAW-109publ287.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-bill/2784",
+      "votes": []
+    },
+    {
+      "id": "hr5684-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "5684",
+      "title": "United States-Oman Free Trade Agreement Implementation Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Boehner, John A.",
+        "party": "R",
+        "state": "OH"
+      },
+      "introduced_date": "2006-06-26",
+      "latest_action": {
+        "date": "2006-09-26",
+        "text": "Became Public Law No: 109-283."
+      },
+      "outcome": "enacted",
+      "policy_area": "Foreign Trade and International Finance",
+      "subjects": [
+        "Administrative remedies",
+        "Clothing",
+        "Commerce",
+        "Congress",
+        "Congress and foreign policy",
+        "Customs administration",
+        "Economics and Public Finance",
+        "Finance and Financial Sector",
+        "Free trade",
+        "Government Operations and Politics",
+        "Government trust funds",
+        "Governmental investigations",
+        "Import relief",
+        "International Affairs",
+        "Law",
+        "Middle East and North Africa",
+        "Oman",
+        "President and foreign policy",
+        "Tariff"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>United States-Oman Free Trade Agreement Implementation Act - <b>Title I: Approval of, and General Provisions Relating to, the Agreement - </b>(Sec. 101) Approves the United States-Oman Free Trade Agreement (Agreement) entered into on January 19, 2006, with the government of Oman, and the statement of administrative action proposed to implement the Agreement, both submitted to Congress on June 26, 2006.</p> <p>Authorizes the entry into force of the Agreement on or after January 1, 2007, if the President determines that the government of Oman has complied with certain provisions of the Agreement. </p> <p>(Sec. 102) Declares as void any provision of the Agreement which is inconsistent with U.S. law. Prohibits the invalidation of any state law, or the application thereof, on the ground of inconsistency with the Agreement, except as determined in a legal proceeding brought by the United States.</p> <p>(Sec. 103) Authorizes the President to proclaim actions and issue regulations to implement the Agreement on or after the date such Agreement enters into force. Requires the issuance of initial regulations for the statement of administrative action to implement the Agreement within one year after the Agreement enters into force.</p> <p>(Sec. 104) Grants the President proclamation authority under the Agreement subject to specified consultation requirements with the appropriate advisory committees established under the Trade Act of 1974 and the U.S. International Trade Commission (ITC). Requires the President to submit a report to the House Ways and Means Committee and the Senate Finance Committee on any action proposed to be proclaimed. Requires the expiration of a 60-day period before any action proposed to be proclaimed takes effect (layover).</p> <p>(Sec. 105) Authorizes the President to establish or designate within the Department of Commerce an office to provide administrative assistance to dispute settlement panels established under the Agreement. Authorizes appropriations.</p> <p>(Sec. 106) Authorizes the United States to resolve any claim against it covered by the Agreement, pursuant to the Investor-State Dispute Settlement procedures set forth in the Agreement.</p> <p><b>Title II: Customs Provisions </b>- (Sec. 201) Authorizes the President to: (1) proclaim tariff modifications necessary or appropriate to carry out the Agreement; (2) proclaim tariff modifications, subject to consultation and layover, necessary or appropriate to maintain concessions granted to Oman by the Agreement; and (3) substitute an ad valorem rate for goods under the Agreement for which the base rate is a specific or compound rate of duty, for purposes of carrying out tariff modifications.</p> <p>Requires the President to terminate the designation of Oman as a beneficiary developing country for purposes of the Generalized System of Preferences program under the Trade Act of 1974 on the date the Agreement enters into force. </p> <p>(Sec. 202) Prescribes rules of origin with respect to the reduction and elimination of duties imposed by the United States and Oman on goods imported directly from Oman or the United States into the other country's territory. Specifies content requirements allowing certain textile and apparel goods to be considered originating goods.</p> <p>Authorizes the President to proclaim, as part of the Harmonized Tariff Schedule (HTS) of the United States, certain provisions in the Agreement (including modifications) and any additional subordinate category that is necessary to carry out this title, consistent with the Agreement.</p> <p>(Sec. 203) Amends the Consolidated Omnibus Budget Reconciliation Act of 1985 to prohibit the charging of a fee for certain customs services for goods imported from, and originating in, Oman. Prohibits any service exempted from such fees from being funded with money from the Customs User Fee Account.</p> <p>(Sec. 204) Authorizes the President to direct the Secretary of the Treasury, pending the verification process under the Agreement to confirm the authenticity and claims of origin of Omani textiles and apparel goods, to take certain actions, including: (1) suspension of liquidation of the entry of any Omani textile or apparel good linked to unlawful activity; (2) publication of the name and address of any person subject to verification; (3) denial of preferential tariff treatment for such textiles or goods; and (4) denial of entry into the United States of such textiles or goods.</p> <p>(Sec. 205) Amends the Tariff Act of 1930 to permit the refund of excess duties (including any merchandise processing fees) for Omani goods qualifying under the rules of origin of the Agreement.</p> <p>(Sec. 206) Requires the Secretary of the Treasury to prescribe regulations to carry out provisions of this title relating to rules of origin, customs user fees, and presidential proclamation authority under the HTS.</p> <p><b>Title III: Relief From Imports - Subtitle A: Relief From Imports Benefiting From the Agreement</b> - (Sec. 311) Authorizes an entity (including a trade association, firm, certified or recognized union, or group of workers) to petition the ITC for an adjustment to U.S. obligations (import relief) under the Agreement. Requires the ITC, upon the filing of a petition, to: (1) transmit a copy of the petition to the U.S. Trade Representative; (2) investigate whether an Omani article is being imported into the United States in such increased quantities that it constitutes a substantial cause of serious injury or threat to a domestic industry producing a similar article; (3) make a determination on a petition within 120 days after the start of an investigation; (4) report to the President on its determination with a recommendation on the amount of import relief necessary to remedy or prevent an injury to a domestic industry and to help the affected domestic industry to make a positive adjustment to import competition; and (5) make its report public and publish a summary in the Federal Register. </p> <p>(Sec. 313) Requires the President, not later than 30 days after receiving an ITC report affirming serious injury to a domestic industry, to provide import relief as recommended by the ITC.</p> <p>Exempts the President from providing import relief if the President determines that the cost of providing such relief outweighs its economic and social benefits.</p> <p>Sets forth the types of import relief which the President may grant, including suspension of any further reduction in the duty imposed on an imported article and an increase in the duty on such article.</p> <p>Limits the aggregate period during which import relief may be granted to three years.</p> <p>(Sec. 314) Prohibits any import relief under this title 10 years after the Agreement enters into force, unless the President determines that the government of Oman has consented to such relief.</p> <p>(Sec. 315) Authorizes the President to compensate Oman for reductions or eliminations of duties under the Agreement.</p> <p>(Sec. 316) Amends the Trade Act of 1974 to apply to ITC investigations conducted under this Act the procedural requirements of the Tariff Act of 1930 concerning release of confidential business information.</p> <p><b>Subtitle B: Textile and Apparel Safeguard Measures</b> - (Sec. 321) Authorizes any interested party to petition the President to adjust U.S. obligations under the Agreement to reflect serious damage or actual threat to a domestic industry from the reduction or elimination of a duty on an Omani textile or apparel article (Omani article) which is in competition with articles produced by a domestic industry (safeguard relief).</p> <p>(Sec. 322) Authorizes the President, if an affirmative serious damage determination is made, to provide safeguard relief to remedy or prevent the damage and to facilitate adjustment by the domestic industry to import competition, including to increase the rate of duty imposed on the article. </p> <p>(Sec. 323) Limits the aggregate period during which safeguard relief may be granted to three years.</p> <p>(Sec. 324) Authorizes the President to exempt certain articles from safeguard relief.</p> <p>(Sec. 326) Terminates the authority to provide safeguard relief 10 years after the date on which certain duties are eliminated under the Agreement.</p> <p>(Sec. 327) Authorizes the President to compensate Oman if safeguard relief is ordered under this title.</p> <p>(Sec. 328) Restricts the authority of the President to release confidential business information provided in a safeguard review proceeding.</p> <p><b>Title IV: Procurement</b> - (Sec. 401) Amends the Trade Agreements Act of 1979 to make products or services of any foreign country or instrumentality that is a party to the Agreement eligible for U.S. government procurement.</p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ283/PLAW-109publ283.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ283/PLAW-109publ283.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/5684",
       "votes": []
     },
     {
@@ -3970,6 +4727,38 @@
       "text_url_xml": "https://www.congress.gov/109/bills/sres584/BILLS-109sres584ats.xml",
       "text_url_pdf": "https://www.congress.gov/109/bills/sres584/BILLS-109sres584ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/584",
+      "votes": []
+    },
+    {
+      "id": "sres180-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "180",
+      "title": "A resolution supporting the goals and ideals of a National Epidermolysis Bullosa Awareness Week to raise public awareness and understanding of the disease and to foster understanding of the impact of the disease on patients and their families.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Schumer, Charles E.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2005-06-23",
+      "latest_action": {
+        "date": "2006-09-21",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S10004)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Health",
+        "Health education",
+        "Skin diseases",
+        "Special weeks"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Expresses support for the goals and ideals of National Epidermolysis Bullosa Awareness Week. Recognizes the need for a cure for the disease.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres180/BILLS-109sres180ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres180/BILLS-109sres180ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres180/BILLS-109sres180ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/180",
       "votes": []
     },
     {
@@ -4466,6 +5255,40 @@
       "votes": []
     },
     {
+      "id": "sres564-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "564",
+      "title": "A resolution designating September 10 through September 16, 2006, as \"National Polycystic Kidney Disease Awareness Week\" and supporting the goals and ideals of a National Polycystic Kidney Disease Awareness Week to raise public awareness and understanding of the impact polycystic kidney disease has on patients and future generations of their families.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. DeWine, Mike",
+        "party": "R",
+        "state": "OH"
+      },
+      "introduced_date": "2006-09-08",
+      "latest_action": {
+        "date": "2006-09-08",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S9280; text as passed Senate: 9280; text of measure as introduced: CR S9256)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Health",
+        "Health education",
+        "Kidney diseases",
+        "Medical research",
+        "Science, Technology, Communications",
+        "Special weeks"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates September 10 through September 16, 2006, as National Polycystic Kidney Disease Awareness Week. Recognizes the need for additional research into a cure. </p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres564/BILLS-109sres564ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres564/BILLS-109sres564ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres564/BILLS-109sres564ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/564",
+      "votes": []
+    },
+    {
       "id": "sres561-109",
       "congress": 109,
       "type": "sres",
@@ -4572,6 +5395,42 @@
       "votes": []
     },
     {
+      "id": "hr4962-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "4962",
+      "title": "To designate the facility of the United States Postal Service located at 100 Pitcher Street in Utica, New York, as the \"Captain George A. Wood Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Boehlert, Sherwood",
+        "party": "R",
+        "state": "NY"
+      },
+      "introduced_date": "2006-03-15",
+      "latest_action": {
+        "date": "2006-08-17",
+        "text": "Became Public Law No: 109-275."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Army",
+        "Congressional tributes",
+        "Government Operations and Politics",
+        "Names",
+        "New York State",
+        "Officer personnel",
+        "Postal facilities"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Designates the facility of the United States Postal Service located at 100 Pitcher Street in Utica, New York, as the \"Captain George A. Wood Post Office Building.\" </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ275/PLAW-109publ275.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ275/PLAW-109publ275.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/4962",
+      "votes": []
+    },
+    {
       "id": "hr5104-109",
       "congress": 109,
       "type": "hr",
@@ -4605,6 +5464,42 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/109/plaws/publ276/PLAW-109publ276.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/5104",
+      "votes": []
+    },
+    {
+      "id": "hr5107-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "5107",
+      "title": "To designate the facility of the United States Postal Service located at 1400 West Jordan Street in Pensacola, Florida, as the \"Earl D. Hutto Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Miller, Jeff",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2006-04-05",
+      "latest_action": {
+        "date": "2006-08-17",
+        "text": "Became Public Law No: 109-277."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congress",
+        "Congressional tributes",
+        "Ex-Members of Congress",
+        "Florida",
+        "Government Operations and Politics",
+        "House of Representatives",
+        "Names",
+        "Postal facilities"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Designates the facility of the United States Postal Service located at 1400 West Jordan Street in Pensacola, Florida, as the \"Earl D. Hutto Post Office Building.\" </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ277/PLAW-109publ277.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ277/PLAW-109publ277.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/5107",
       "votes": []
     },
     {
@@ -5309,6 +6204,48 @@
       "votes": []
     },
     {
+      "id": "hjres86-109",
+      "congress": 109,
+      "type": "hjres",
+      "number": "86",
+      "title": "Approving the renewal of import restrictions contained in the Burmese Freedom and Democracy Act of 2003, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Lantos, Tom",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2006-05-19",
+      "latest_action": {
+        "date": "2006-08-01",
+        "text": "Became Public Law No: 109-251."
+      },
+      "outcome": "enacted",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Burma",
+        "Civil Rights and Liberties, Minority Issues",
+        "Congress",
+        "Congress and foreign policy",
+        "Democracy",
+        "East Asia",
+        "Ethnic relations",
+        "Foreign Trade and International Finance",
+        "Government Operations and Politics",
+        "Human rights",
+        "Import restrictions",
+        "Legislation",
+        "Minorities",
+        "Sanctions (International law)"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Amends the Burmese Freedom and Democracy Act of 2003 to extend from three years to six years after enactment of that Act the maximum duration of any renewal under it of import restrictions on Burmese products. </p> <p>Approves the renewal of import restrictions contained in the Act. Deems this resolution a renewal resolution.</p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ251/PLAW-109publ251.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ251/PLAW-109publ251.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-joint-resolution/86",
+      "votes": []
+    },
+    {
       "id": "hr2977-109",
       "congress": 109,
       "type": "hr",
@@ -5416,6 +6353,77 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/109/plaws/publ254/PLAW-109publ254.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/3549",
+      "votes": []
+    },
+    {
+      "id": "hr3934-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "3934",
+      "title": "To designate the facility of the United States Postal Service located at 80 Killian Road in Massapequa, New York, as the \"Gerard A. Fiorenza Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. King, Peter T.",
+        "party": "R",
+        "state": "NY"
+      },
+      "introduced_date": "2005-09-28",
+      "latest_action": {
+        "date": "2006-08-01",
+        "text": "Became Public Law No: 109-255."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congress",
+        "Congressional tributes",
+        "Federal employees",
+        "Government Operations and Politics",
+        "Names",
+        "New York State",
+        "Postal facilities"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Designates the facility of the United States Postal Service located at 80 Killian Road in Massapequa, New York, as the \"Gerard A. Fiorenza Post Office Building.\" </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ255/PLAW-109publ255.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ255/PLAW-109publ255.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/3934",
+      "votes": []
+    },
+    {
+      "id": "hr4101-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "4101",
+      "title": "To designate the facility of the United States Postal Service located at 170 East Main Street in Patchogue, New York, as the \"Lieutenant Michael P. Murphy Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Bishop, Timothy H.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2005-10-20",
+      "latest_action": {
+        "date": "2006-08-01",
+        "text": "Became Public Law No: 109-256."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Congressional tributes",
+        "Government Operations and Politics",
+        "Names",
+        "Navy",
+        "New York State",
+        "Officer personnel",
+        "Postal facilities"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Designates the facility of the United States Postal Service located at 170 East Main Street in Patchogue, New York, as the \"Lieutenant Michael P. Murphy Post Office Building.\" </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ256/PLAW-109publ256.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ256/PLAW-109publ256.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/4101",
       "votes": []
     },
     {
@@ -5788,6 +6796,42 @@
       "votes": []
     },
     {
+      "id": "s3504-109",
+      "congress": 109,
+      "type": "s",
+      "number": "3504",
+      "title": "Fetus Farming Prohibition Act of 2006",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Santorum, Rick",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2006-06-13",
+      "latest_action": {
+        "date": "2006-07-19",
+        "text": "Became Public Law No: 109-242."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Crime and Law Enforcement",
+        "Donation of organs, tissues, etc.",
+        "Fetus",
+        "Human embryology",
+        "Medical research",
+        "Pregnancy",
+        "Science, Technology, Communications",
+        "Women"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Fetus Farming Prohibition Act of 2006 - Amends the Public Health Service Act to prohibit any person or entity involved in interstate commerce from: (1) soliciting or knowingly acquiring, receiving, or accepting a donation of human fetal tissue knowing that a human pregnancy was deliberately initiated to provide such tissue; or (2) knowingly acquiring, receiving, or accepting tissue or cells obtained from a human embryo or fetus that was gestated in the uterus of a nonhuman animal. Imposes fines and/or imprisonment for violations of this Act.</p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ242/PLAW-109publ242.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ242/PLAW-109publ242.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-bill/3504",
+      "votes": []
+    },
+    {
       "id": "sres534-109",
       "congress": 109,
       "type": "sres",
@@ -6052,6 +7096,53 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/109/plaws/publ240/PLAW-109publ240.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/4912",
+      "votes": []
+    },
+    {
+      "id": "hr5403-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "5403",
+      "title": "Safe and Timely Interstate Placement of Foster Children Act of 2006",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. DeLay, Tom",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2006-05-17",
+      "latest_action": {
+        "date": "2006-07-03",
+        "text": "Became Public Law No: 109-239."
+      },
+      "outcome": "enacted",
+      "policy_area": "Families",
+      "subjects": [
+        "Adoption",
+        "Caregivers",
+        "Child development",
+        "Child health",
+        "Child safety",
+        "Child welfare",
+        "Civil actions and liability",
+        "Congress",
+        "Congressional reporting requirements",
+        "Court records",
+        "Data banks",
+        "Education",
+        "Elementary and secondary education",
+        "Family services",
+        "Foster home care",
+        "Government Operations and Politics",
+        "Government contractors",
+        "Government paperwork",
+        "Government service contracts"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Safe and Timely Interstate Placement of Foster Children Act of 2006 - Amends the Social Security Act to require each state plan for foster care and adoption assistance to provide that the state shall: (1) have in effect procedures for orderly and timely interstate placement of children; (2) complete home studies requested by another state within a specified period; (3) accept such studies received from another state; and (4) not impose any restrictions on contracting with a private agency to conduct such a study.</p> <p>Directs the Secretary of Health and Human Services to make grants for timely interstate home study incentive payments to states that have approved plans and that have completed, and provided the Secretary a report on, such studies.</p> <p>Expresses the sense of Congress that state agencies should cooperate with courts which have authority with respect to the placement of a child in foster care or for adoption for the purpose of locating a parent of the child.</p> <p> Amends the definition of &quot;case review system&quot; to: (1) increase the required frequency of state caseworker visits to a child who is placed in foster care outside the state in which the child's parents reside; (2) require a child's health and education record to be supplied to the child at no cost when he/she leaves foster care by reason of having attained the age of majority under state law; and (3) provide for a foster parent's right (currently, opportunity) to be heard in any proceeding (currently, review or hearing) respecting their foster child. Requires state courts to ensure that foster parents, pre-adoptive parents, and relative caregivers of a child in foster care are notified of any such proceedings.</p> <p>Includes among the purposes of grants to the highest state courts the assessment of the court's role in carrying out state laws requiring proceedings that determine the best strategy to use to expedite the interstate placement of children.</p> <p>Provides for consideration of out-of-state placements in permanency hearings, case plans, and case reviews. </p> <p>Requires each plan for child welfare services to include the assurance that the state will eliminate legal barriers to facilitate timely adoptive or permanent placements for children.</p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ239/PLAW-109publ239.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ239/PLAW-109publ239.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/5403",
       "votes": []
     },
     {
@@ -8245,6 +9336,47 @@
       "votes": []
     },
     {
+      "id": "hr1259-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "1259",
+      "title": "To award a congressional gold medal on behalf of the Tuskegee Airmen, collectively,  in recognition of their unique military record, which inspired revolutionary reform in the Armed Forces.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Rangel, Charles B.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2005-03-10",
+      "latest_action": {
+        "date": "2006-04-11",
+        "text": "Became Public Law No: 109-213."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Air force",
+        "Armed Forces and National Security",
+        "Arts, Culture, Religion",
+        "Blacks",
+        "Congress",
+        "Congressional gold medals",
+        "Exhibitions",
+        "History",
+        "Military history",
+        "Minorities",
+        "Museums",
+        "Smithsonian Institution",
+        "World War II"
+      ],
+      "summary_crs": " <p>Directs the Speaker of the House of Representatives and the President pro tempore of the Senate to make appropriate arrangements for the award, on behalf of Congress, of a single gold medal collectively to the Tuskegee Airmen in recognition of their unique military record, which inspired revolutionary reform in the Armed Forces. Directs that, after such award, the medal be displayed at the Smithsonian Institution. Expresses the sense of Congress that such Institution should make the medal available for display elsewhere, particularly at locations associated with the Airmen.</p> <p>Provides funding from the United States Mint Public Enterprise Fund to cover the cost of duplicate medals authorized for sale. </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ213/PLAW-109publ213.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ213/PLAW-109publ213.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/1259",
+      "votes": []
+    },
+    {
       "id": "s2116-109",
       "congress": 109,
       "type": "s",
@@ -9235,6 +10367,46 @@
       "votes": []
     },
     {
+      "id": "s2064-109",
+      "congress": 109,
+      "type": "s",
+      "number": "2064",
+      "title": "A bill to designate the facility of the United States Postal Service located at 122 South Bill Street in Francesville, Indiana, as the Malcolm Melville \"Mac\" Lawrence Post Office.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lugar, Richard G.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2005-11-18",
+      "latest_action": {
+        "date": "2006-03-23",
+        "text": "Became Public Law No: 109-207."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Congress",
+        "Congressional tributes",
+        "Education",
+        "Elementary and secondary education",
+        "Government Operations and Politics",
+        "History",
+        "Indiana",
+        "Names",
+        "Postal facilities",
+        "Teachers",
+        "World War II"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates the facility of the United States Postal Service located at 122 South Bill Street in Francesville, Indiana, as the &quot;Malcolm Melville 'Mac' Lawrence Post Office.&quot;</p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ207/PLAW-109publ207.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ207/PLAW-109publ207.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-bill/2064",
+      "votes": []
+    },
+    {
       "id": "s2275-109",
       "congress": 109,
       "type": "s",
@@ -9270,6 +10442,42 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/109/plaws/publ208/PLAW-109publ208.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-bill/2275",
+      "votes": []
+    },
+    {
+      "id": "hr1287-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "1287",
+      "title": "Designating the facility of the United States Postal Service located at 312 East North Avenue in Flora, Illinois, as the \"Robert T. Ferguson Post Office Building.\"",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Shimkus, John",
+        "party": "R",
+        "state": "IL"
+      },
+      "introduced_date": "2005-03-14",
+      "latest_action": {
+        "date": "2006-03-20",
+        "text": "Became Public Law No: 109-184."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congress",
+        "Congressional tributes",
+        "Federal employees",
+        "Government Operations and Politics",
+        "Illinois",
+        "Names",
+        "Postal facilities",
+        "United States Postal Service"
+      ],
+      "summary_crs": " <p>Designates the facility of the United States Postal Service located at 312 East North Avenue in Flora, Illinois, as the \"Robert T. Ferguson Post Office Building.\" </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ184/PLAW-109publ184.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ184/PLAW-109publ184.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/1287",
       "votes": []
     },
     {
@@ -9847,6 +11055,40 @@
       "votes": []
     },
     {
+      "id": "hr4152-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "4152",
+      "title": "To designate the facility of the United States Postal Service located at 320 High Street in Clinton, Massachusetts, as the \"Raymond J. Salmon Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McGovern, James P.",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2005-10-26",
+      "latest_action": {
+        "date": "2006-03-20",
+        "text": "Became Public Law No: 109-201."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congress",
+        "Congressional tributes",
+        "Government Operations and Politics",
+        "Massachusetts",
+        "Names",
+        "Postal facilities"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p><p>Designates the facility of the United States Postal Service located at 320 High Street in Clinton, Massachusetts, as the \"Raymond J. Salmon Post Office.\" </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ201/PLAW-109publ201.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ201/PLAW-109publ201.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/4152",
+      "votes": []
+    },
+    {
       "id": "hr4295-109",
       "congress": 109,
       "type": "hr",
@@ -9879,6 +11121,76 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/109/plaws/publ202/PLAW-109publ202.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/4295",
+      "votes": []
+    },
+    {
+      "id": "s2089-109",
+      "congress": 109,
+      "type": "s",
+      "number": "2089",
+      "title": "A bill to designate the facility of the United States Postal Service located at 1271 North King Street in Honolulu, Oahu, Hawaii, as the \"Hiram L. Fong Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Akaka, Daniel K.",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2005-12-13",
+      "latest_action": {
+        "date": "2006-03-20",
+        "text": "Became Public Law No: 109-203."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congress",
+        "Congressional tributes",
+        "Ex-Members of Congress",
+        "Government Operations and Politics",
+        "Hawaii",
+        "Names",
+        "Postal facilities",
+        "Senate"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates the facility of the United States Postal Service located at 1271 North King Street in Honolulu, Oahu, Hawaii, as the \"Hiram L. Fong Post Office Building.\" </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ203/PLAW-109publ203.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ203/PLAW-109publ203.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-bill/2089",
+      "votes": []
+    },
+    {
+      "id": "sres404-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "404",
+      "title": "A resolution expressing the sense of the Senate that all people in the United States should participate in a moment of silence to reflect upon the service and sacrifice of members of the Armed Forces both at home and abroad.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Stabenow, Debbie",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2006-03-16",
+      "latest_action": {
+        "date": "2006-03-16",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2387; text as passed Senate: CR S2387; text of measure as introduced:  CR S2377)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Armed forces abroad",
+        "Congress",
+        "Congressional tributes",
+        "Iraq compilation",
+        "Military personnel"
+      ],
+      "summary_crs": " <p>Expresses the sense of the Senate that all people in the United States should participate in a moment of silence (on March 26, 2006, National Support the Troops Day) to reflect upon the service and sacrifice of members of the U.S. Armed Forces both at home and abroad.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres404/BILLS-109sres404ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres404/BILLS-109sres404ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres404/BILLS-109sres404ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/404",
       "votes": []
     },
     {
@@ -10302,6 +11614,40 @@
       "votes": []
     },
     {
+      "id": "sres389-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "389",
+      "title": "A resolution recognizing and honoring the 150th anniversary of the founding of the Sigma Alpha Epsilon Fraternity.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Isakson, Johnny",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2006-03-03",
+      "latest_action": {
+        "date": "2006-03-03",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S1756-1757; text as passed Senate: CR S1757; text of measure as introduced: CR S1681)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Anniversaries",
+        "Congress",
+        "Congressional tributes",
+        "Education",
+        "Fraternal organizations",
+        "Higher education"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Recognizes the 150th anniversary of the founding of the Sigma Alpha Epsilon Fraternity.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres389/BILLS-109sres389ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres389/BILLS-109sres389ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres389/BILLS-109sres389ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/389",
+      "votes": []
+    },
+    {
       "id": "sres383-109",
       "congress": 109,
       "type": "sres",
@@ -10432,6 +11778,45 @@
       "text_url_xml": "https://www.congress.gov/109/bills/sres386/BILLS-109sres386ats.xml",
       "text_url_pdf": "https://www.congress.gov/109/bills/sres386/BILLS-109sres386ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/386",
+      "votes": []
+    },
+    {
+      "id": "sres384-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "384",
+      "title": "A resolution designating March 2, 2006, as \"Read Across America Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Collins, Susan M.",
+        "party": "R",
+        "state": "ME"
+      },
+      "introduced_date": "2006-02-28",
+      "latest_action": {
+        "date": "2006-02-28",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S1554; text as passed Senate: CR S1554; text of measure as introduced: CR S1550)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Arts, Culture, Religion",
+        "Authors and authorship",
+        "Books",
+        "Congress",
+        "Congressional tributes",
+        "Education",
+        "Elementary and secondary education",
+        "Families",
+        "Parent and child",
+        "Reading",
+        "Special days"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates March 2, 2005, as Read Across America Day.</p> <p>Honors Theodor Geisel (Dr. Seuss) for his success in encouraging children to discover the joy of reading.</p> <p>Encourages parents to read with their children for at least 30 minutes on Read Across America Day. </p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres384/BILLS-109sres384ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres384/BILLS-109sres384ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres384/BILLS-109sres384ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/384",
       "votes": []
     },
     {
@@ -11158,6 +12543,41 @@
       "votes": []
     },
     {
+      "id": "sres364-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "364",
+      "title": "A resolution honoring the valuable contributions of Catholic schools in the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Vitter, David",
+        "party": "R",
+        "state": "LA"
+      },
+      "introduced_date": "2006-02-01",
+      "latest_action": {
+        "date": "2006-02-01",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S460; text of measure as passed Senate: CR S460; text of measure as introduced: CR S454)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Catholic Church",
+        "Congress",
+        "Congressional tributes",
+        "Education",
+        "Elementary and secondary education",
+        "Religion",
+        "Religious education"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Recognizes the goals of Catholic Schools Week, an event cosponsored by the National Catholic Educational Association and the United States Conference of Catholic Bishops that recognizes the vital contributions of thousands of Catholic elementary and secondary schools in the United States.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres364/BILLS-109sres364ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres364/BILLS-109sres364ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres364/BILLS-109sres364ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/364",
+      "votes": []
+    },
+    {
       "id": "sres360-109",
       "congress": 109,
       "type": "sres",
@@ -11473,6 +12893,53 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/109/plaws/publ169/PLAW-109publ169.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/4340",
+      "votes": []
+    },
+    {
+      "id": "hr2017-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "2017",
+      "title": "Torture Victims Relief Reauthorization Act of 2005",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Smith, Christopher H.",
+        "party": "R",
+        "state": "NJ"
+      },
+      "introduced_date": "2005-04-28",
+      "latest_action": {
+        "date": "2006-01-10",
+        "text": "Became Public Law No: 109-165."
+      },
+      "outcome": "enacted",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Authorization",
+        "Civil Rights and Liberties, Minority Issues",
+        "Continuing education",
+        "Crime and Law Enforcement",
+        "Democracy",
+        "Department of Health and Human Services",
+        "Disabled",
+        "Displaced persons",
+        "Economics and Public Finance",
+        "Education",
+        "Employee training",
+        "Executive Office of the President",
+        "Federal aid to education",
+        "Federal aid to health facilities",
+        "Federal aid to research",
+        "Government Operations and Politics",
+        "Health",
+        "Higher education",
+        "Human rights"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The expanded summary of the House passed version is repeated here.)</b></p> Torture Victims Relief Reauthorization Act of 2005 - Amends the Torture Victims Relief Act of 1998 to authorize appropriations for FY2006-FY2007 to: (1) the Department of Health and Human Services (HHS) to provide grants to programs in the United States to cover the costs of services provided by domestic treatment centers in the rehabilitation of victims of torture (including treatment of the physical and psychological effects of torture), social and legal services, and research and training of health care providers outside of treatment centers or programs to enable them to provide such services; (2) the President for grants to treatment centers and programs in foreign countries that carry out projects and activities specifically designed to treat victims of torture for the physical and psychological effects of torture; and (3) the President for voluntary contributions to the United Nations Voluntary Fund for Victims of Torture.",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ165/PLAW-109publ165.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ165/PLAW-109publ165.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/2017",
       "votes": []
     },
     {
@@ -12544,6 +14011,42 @@
       "votes": []
     },
     {
+      "id": "sres339-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "339",
+      "title": "A resolution urging the Government of the Russian Federation to withdraw the first draft of the proposed legislation as passed in its first reading in the State Duma that would have the effect of severely restricting the establishment, operations, and activities of domestic, international, and foreign nongovernmental organizations in the Russian Federation, or to modify the proposed legislation to entirely remove these restrictions.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. McCain, John",
+        "party": "R",
+        "state": "AZ"
+      },
+      "introduced_date": "2005-12-16",
+      "latest_action": {
+        "date": "2005-12-16",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S13942-13943; text as passed Senate: CR S13942-13943; text of measure as introduced: CR S13856)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Civil Rights and Liberties, Minority Issues",
+        "Democracy",
+        "Government Operations and Politics",
+        "Human rights",
+        "Legislation",
+        "Legislative bodies",
+        "Nongovernmental organizations",
+        "Russia"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Urges: (1) the government of the Russian Federation to withdraw the first draft of the proposed legislation that would restrict the establishment and activities of domestic, international, and foreign nongovernmental organizations in the Russian Federation, or to modify the proposed legislation to remove such restrictions; and (2) in the event that the first draft of such proposed legislation is not withdrawn, the State Duma and the Federation Council of the Federal Assembly to amend the legislation to ensure the establishment and autonomous operations of such nongovernmental organizations in accordance with the practices universally adopted by democracies, including the provisions regarding foreign assistance.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres339/BILLS-109sres339ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres339/BILLS-109sres339ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres339/BILLS-109sres339ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/339",
+      "votes": []
+    },
+    {
       "id": "sres332-109",
       "congress": 109,
       "type": "sres",
@@ -12801,6 +14304,43 @@
       "votes": []
     },
     {
+      "id": "hr2183-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "2183",
+      "title": "To designate the facility of the United States Postal Service located at 567 Tompkins Avenue in Staten Island, New York, as the \"Vincent Palladino Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Fossella, Vito",
+        "party": "R",
+        "state": "NY"
+      },
+      "introduced_date": "2005-05-05",
+      "latest_action": {
+        "date": "2005-12-01",
+        "text": "Became Public Law No: 109-123."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congress",
+        "Congressional tributes",
+        "Federal employees",
+        "Government Operations and Politics",
+        "Names",
+        "New York City",
+        "Postal facilities",
+        "Supervisors",
+        "United States Postal Service"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates the facility of the United States Postal Service located at 567 Tompkins Avenue in Staten Island, New York, as the \"Vincent Palladino Post Office.\" </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ123/PLAW-109publ123.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ123/PLAW-109publ123.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/2183",
+      "votes": []
+    },
+    {
       "id": "hr3853-109",
       "congress": 109,
       "type": "hr",
@@ -12832,6 +14372,43 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/109/plaws/publ124/PLAW-109publ124.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/3853",
+      "votes": []
+    },
+    {
+      "id": "hr4145-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "4145",
+      "title": "To direct the Joint Committee on the Library to obtain a statue of Rosa Parks and to place the statue in the United States Capitol in National Statuary Hall, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Jackson, Jesse L., Jr.",
+        "party": "D",
+        "state": "IL"
+      },
+      "introduced_date": "2005-10-26",
+      "latest_action": {
+        "date": "2005-12-01",
+        "text": "Became Public Law No: 109-116."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Arts, Culture, Religion",
+        "Blacks",
+        "Capitol (Washington, D.C.)",
+        "Civil Rights and Liberties, Minority Issues",
+        "Civil rights workers",
+        "Congress",
+        "Congressional tributes",
+        "Minorities",
+        "Sculpture"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the House on November 18, 2005. The summary of that version is repeated here.)</b></p> <p>Directs the Architect of the Capitol to enter into an agreement to obtain a statue of Rosa Parks and to place the statue in the Capitol in a suitable permanent location in National Statuary Hall.</p> <p>Prohibits a statue of any individual from being placed in National Statuary Hall until after the expiration of the 10-year period which begins on the date of the individual's death.</p> <p>Exempts a statue: (1) obtained and placed in National Statuary Hall under this Act; or (2) provided and furnished by a state under the Revised Statutes of the United States or its replacement provided under the Legislative Branch Appropriations Act, 2001.</p> <p>Authorizes appropriations.</p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ116/PLAW-109publ116.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ116/PLAW-109publ116.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/4145",
       "votes": []
     },
     {
@@ -13060,6 +14637,46 @@
       "votes": []
     },
     {
+      "id": "sres323-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "323",
+      "title": "A resolution expressing the sense of the Senate that the United Nations and other international organizations should not be allowed to exercise control over the Internet.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Coleman, Norm",
+        "party": "R",
+        "state": "MN"
+      },
+      "introduced_date": "2005-11-18",
+      "latest_action": {
+        "date": "2005-11-18",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S13410-13411; text as passed Senate: CR S13410-13411; text of measure as introduced: CR S13397)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Commerce",
+        "Diplomacy",
+        "Foreign Trade and International Finance",
+        "Government Operations and Politics",
+        "International agencies",
+        "Internet",
+        "Negotiations",
+        "President and foreign policy",
+        "Privatization",
+        "Science, Technology, Communications",
+        "Trade negotiations",
+        "United Nations"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>Calls on the President to: (1) oppose any effort to transfer control of the Internet to the United Nations or any other international entity; (2) advance the values of an open Internet in the broader trade and diplomatic conversations of the United States; and (3) pursue a continuing and constructive dialogue with the international community on the Internet's future governance.</p> <p> Applauds the President for: (1) asserting that the United States has no present intention of relinquishing its historic leadership role in Internet governance; and (2) articulating a vision of the Internet that places privatization over politicization. </p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres323/BILLS-109sres323ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres323/BILLS-109sres323ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres323/BILLS-109sres323ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/323",
+      "votes": []
+    },
+    {
       "id": "sres325-109",
       "congress": 109,
       "type": "sres",
@@ -13090,6 +14707,50 @@
       "text_url_xml": "https://www.congress.gov/109/bills/sres325/BILLS-109sres325ats.xml",
       "text_url_pdf": "https://www.congress.gov/109/bills/sres325/BILLS-109sres325ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/325",
+      "votes": []
+    },
+    {
+      "id": "sres326-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "326",
+      "title": "A resolution designating November 27, 2005, as \"Drive Safer Sunday.\"",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Chambliss, Saxby",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2005-11-18",
+      "latest_action": {
+        "date": "2005-11-18",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S13417; text as passed Senate: CR S13417; text of measure as introduced: CR S13398-13399)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Transportation and Public Works",
+      "subjects": [
+        "Citizens band radio",
+        "Clergy",
+        "Commemorations",
+        "Crime and Law Enforcement",
+        "Driver education",
+        "Education",
+        "Higher education",
+        "Labor and Employment",
+        "Police",
+        "Religion",
+        "Science, Technology, Communications",
+        "Special days",
+        "Students",
+        "Thanksgiving Day",
+        "Traffic accidents and safety",
+        "Truck drivers"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p><b>(This measure has not been amended since [it was reported to the House/Senate] [it was passed by the House/Senate] [the Conference Report was filed in the House/Senate] on ____. The summary of that version is repeated here.)</b></p> <p><b>(This measure has not been amended since it was introduced. The expanded summary of the [House/Senate reported] [House/Senate passed] version is repeated here.)</b></p> <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>Encourages various institutions and people to urge drivers to be careful about safety when driving.</p> <p>Designates November 27, 2005, as &quot;Drive Safer Sunday.&quot;</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres326/BILLS-109sres326ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres326/BILLS-109sres326ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres326/BILLS-109sres326ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/326",
       "votes": []
     },
     {
@@ -13188,6 +14849,44 @@
       "text_url_xml": "https://www.congress.gov/109/bills/sres315/BILLS-109sres315ats.xml",
       "text_url_pdf": "https://www.congress.gov/109/bills/sres315/BILLS-109sres315ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/315",
+      "votes": []
+    },
+    {
+      "id": "hr2967-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "2967",
+      "title": "To designate the Federal building located at 333 Mt. Elliott Street in Detroit, Michigan, as the \"Rosa Parks Federal Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Kilpatrick, Carolyn C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2005-06-17",
+      "latest_action": {
+        "date": "2005-11-11",
+        "text": "Became Public Law No: 109-98."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Blacks",
+        "Civil Rights and Liberties, Minority Issues",
+        "Civil rights workers",
+        "Congress",
+        "Congressional reporting requirements",
+        "Congressional tributes",
+        "Federal office buildings",
+        "Michigan",
+        "Minorities",
+        "Names"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates the federal building located at 333 Mt. Elliott Street in Detroit, Michigan, as the &quot;Rosa Parks Federal Building.&quot;</p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ98/PLAW-109publ98.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ98/PLAW-109publ98.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/2967",
       "votes": []
     },
     {
@@ -14117,6 +15816,41 @@
       "votes": []
     },
     {
+      "id": "sres277-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "277",
+      "title": "A resolution supporting the goals of Red Ribbon Week.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Murkowski, Lisa",
+        "party": "R",
+        "state": "AK"
+      },
+      "introduced_date": "2005-10-18",
+      "latest_action": {
+        "date": "2005-10-18",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S11497-11498; text as passed Senate: CR S11498; text of measure as introduced: CR S11483)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Drug abuse",
+        "Drug abuse prevention",
+        "Drugs and youth",
+        "Families",
+        "Government Operations and Politics",
+        "Signs and symbols",
+        "Special weeks"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Expresses support for the goals of Red Ribbon Week (October 23-October 31).</p> <p>Encourages: (1) children and teens to live a drug-free life; and (2) the promotion of drug-free communities and participation in drug prevention activities.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres277/BILLS-109sres277ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres277/BILLS-109sres277ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres277/BILLS-109sres277ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/277",
+      "votes": []
+    },
+    {
       "id": "sres278-109",
       "congress": 109,
       "type": "sres",
@@ -14496,6 +16230,41 @@
       "votes": []
     },
     {
+      "id": "hr3667-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "3667",
+      "title": "To designate the facility of the United States Postal Service located at 200 South Barrington Street in Los Angeles, California, as the \"Karl Malden Station\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Waxman, Henry A.",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2005-09-07",
+      "latest_action": {
+        "date": "2005-10-04",
+        "text": "Became Public Law No: 109-84."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "California",
+        "Congress",
+        "Congressional tributes",
+        "Entertainers",
+        "Government Operations and Politics",
+        "Names",
+        "Postal facilities"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates the facility of the United States Postal Service located at 200 South Barrington Street in Los Angeles, California, as the \"Karl Malden Station.\" </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ84/PLAW-109publ84.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ84/PLAW-109publ84.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/3667",
+      "votes": []
+    },
+    {
       "id": "hr3767-109",
       "congress": 109,
       "type": "hr",
@@ -14577,6 +16346,52 @@
       "text_url_xml": "https://www.congress.gov/109/bills/sres264/BILLS-109sres264ats.xml",
       "text_url_pdf": "https://www.congress.gov/109/bills/sres264/BILLS-109sres264ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/264",
+      "votes": []
+    },
+    {
+      "id": "sres263-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "263",
+      "title": "A resolution commending the efforts of the Department of Veterans Affairs in responding to Hurricane Katrina.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Craig, Larry E.",
+        "party": "R",
+        "state": "ID"
+      },
+      "introduced_date": "2005-10-03",
+      "latest_action": {
+        "date": "2005-10-03",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S10911; text as passed Senate: CR S10911; text of measure as introduced: CR S10827)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Alabama",
+        "Clinics",
+        "Commemorations",
+        "Congress",
+        "Congressional tributes",
+        "Department of Veterans Affairs",
+        "Disaster relief",
+        "Emergency Management",
+        "Federal employees",
+        "Government Operations and Politics",
+        "Health",
+        "Hurricane aftermath legislation",
+        "Hurricanes",
+        "Louisiana",
+        "Mississippi",
+        "Social Welfare",
+        "Veterans' hospitals",
+        "Volunteer workers"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Commends the employees and volunteers of the Department of Veterans Affairs, who risked life and limb to assist veterans, staff, and their respective families who were affected by Hurricane Katrina.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres263/BILLS-109sres263ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres263/BILLS-109sres263ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres263/BILLS-109sres263ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/263",
       "votes": []
     },
     {
@@ -15851,6 +17666,82 @@
       "votes": []
     },
     {
+      "id": "s904-109",
+      "congress": 109,
+      "type": "s",
+      "number": "904",
+      "title": "A bill to designate the facility of the United States Postal Service located at 1560 Union Valley Road in West Milford, New Jersey, as the \"Brian P. Parrello Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lautenberg, Frank R.",
+        "party": "D",
+        "state": "NJ"
+      },
+      "introduced_date": "2005-04-26",
+      "latest_action": {
+        "date": "2005-08-02",
+        "text": "Became Public Law No: 109-52."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Congress",
+        "Congressional tributes",
+        "Government Operations and Politics",
+        "Marines",
+        "Military personnel",
+        "Names",
+        "New Jersey",
+        "Postal facilities"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates the facility of the United States Postal Service located at 1560 Union Valley Road in West Milford, New Jersey, as the \"Brian P. Parrello Post Office Building.\" </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ52/PLAW-109publ52.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ52/PLAW-109publ52.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-bill/904",
+      "votes": []
+    },
+    {
+      "id": "sres230-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "230",
+      "title": "A resolution designating September 2005 as \"National Prostate Cancer Awareness Month\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Sessions, Jeff",
+        "party": "R",
+        "state": "AL"
+      },
+      "introduced_date": "2005-07-29",
+      "latest_action": {
+        "date": "2005-07-29",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S9583; text as passed Senate: CR S8583; text of measure as introduced: CR S8540)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Access to health care",
+        "Commemorations",
+        "Economics and Public Finance",
+        "Federal aid to research",
+        "Health education",
+        "Medical research",
+        "Medical screening",
+        "Prostate cancer",
+        "Quality of care",
+        "Science, Technology, Communications",
+        "Special months"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates September 2005 as National Prostate Cancer Awareness Month.</p> <p>Declares that it is critical to: (1) raise awareness about prostate cancer screening and treatment; (2) increase funding for prostate cancer research; and (3) improve access to and the quality of health care services for detecting and treating prostate cancer.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres230/BILLS-109sres230ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres230/BILLS-109sres230ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres230/BILLS-109sres230ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/230",
+      "votes": []
+    },
+    {
       "id": "sres231-109",
       "congress": 109,
       "type": "sres",
@@ -16008,6 +17899,49 @@
       "text_url_xml": "https://www.congress.gov/109/bills/sres223/BILLS-109sres223ats.xml",
       "text_url_pdf": "https://www.congress.gov/109/bills/sres223/BILLS-109sres223ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/223",
+      "votes": []
+    },
+    {
+      "id": "hjres52-109",
+      "congress": 109,
+      "type": "hjres",
+      "number": "52",
+      "title": "Approving the renewal of import restrictions contained in the Burmese Freedom and Democracy Act of 2003.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Lantos, Tom",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2005-05-26",
+      "latest_action": {
+        "date": "2005-07-27",
+        "text": "Became Public Law No: 109-39."
+      },
+      "outcome": "enacted",
+      "policy_area": "Foreign Trade and International Finance",
+      "subjects": [
+        "Burma",
+        "Civil Rights and Liberties, Minority Issues",
+        "Democracy",
+        "East Asia",
+        "Freedom of association",
+        "Freedom of speech",
+        "Freedom of the press",
+        "Government Operations and Politics",
+        "Human rights",
+        "Import restrictions",
+        "International Affairs",
+        "Political prisoners",
+        "Religion",
+        "Religious liberty",
+        "Sanctions (International law)"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Approves the renewal of certain import restrictions contained in the Burmese Freedom and Democracy Act of 2003.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/hjres52/BILLS-109hjres52enr.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/bills/hjres52/BILLS-109hjres52enr.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-joint-resolution/52",
       "votes": []
     },
     {
@@ -16720,6 +18654,77 @@
       "votes": []
     },
     {
+      "id": "hr120-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "120",
+      "title": "To designate the facility of the United States Postal Service located at 30777 Rancho California Road in Temecula, California, as the \"Dalip Singh Saund Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Issa, Darrell E.",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2005-01-04",
+      "latest_action": {
+        "date": "2005-07-12",
+        "text": "Became Public Law No: 109-22."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "California",
+        "Congress",
+        "Congressional tributes",
+        "Ex-Members of Congress",
+        "Government Operations and Politics",
+        "House of Representatives",
+        "Names",
+        "Postal facilities"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates the facility of the United States Postal Service located at 30777 Rancho California Road in Temecula, California, as the \"Dalip Singh Saund Post Office Building.\" </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ22/PLAW-109publ22.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ22/PLAW-109publ22.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/120",
+      "votes": []
+    },
+    {
+      "id": "hr1236-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "1236",
+      "title": "To designate the facility of the United States Postal Service located at 750 4th Street in Sparks, Nevada, as the \"Mayor Tony Armstrong Memorial Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Gibbons, Jim",
+        "party": "R",
+        "state": "NV"
+      },
+      "introduced_date": "2005-03-10",
+      "latest_action": {
+        "date": "2005-07-12",
+        "text": "Became Public Law No: 109-29."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congress",
+        "Congressional tributes",
+        "Government Operations and Politics",
+        "Mayors",
+        "Names",
+        "Nevada",
+        "Postal facilities"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates the facility of the United States Postal Service located at 750 4th Street in Sparks, Nevada, as the \"Mayor Tony Armstrong Memorial Post Office.\" </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ29/PLAW-109publ29.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ29/PLAW-109publ29.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/1236",
+      "votes": []
+    },
+    {
       "id": "hr1460-109",
       "congress": 109,
       "type": "hr",
@@ -16896,6 +18901,44 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/109/plaws/publ23/PLAW-109publ23.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/289",
+      "votes": []
+    },
+    {
+      "id": "hr324-109",
+      "congress": 109,
+      "type": "hr",
+      "number": "324",
+      "title": "To designate the facility of the United States Postal Service located at 321 Montgomery Road in Altamonte Springs, Florida, as the \"Arthur Stacey Mastrapa Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Feeney, Tom",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2005-01-25",
+      "latest_action": {
+        "date": "2005-07-12",
+        "text": "Became Public Law No: 109-24."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Armed forces reserves",
+        "Army",
+        "Congress",
+        "Congressional tributes",
+        "Florida",
+        "Government Operations and Politics",
+        "Names",
+        "Officer personnel",
+        "Postal facilities"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates the facility of the United States Postal Service located at 321 Montgomery Road in Altamonte Springs, Florida, as the \"Arthur Stacey Mastrapa Post Office Building.\" </p>",
+      "text_url_html": "https://www.congress.gov/109/plaws/publ24/PLAW-109publ24.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/plaws/publ24/PLAW-109publ24.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-bill/324",
       "votes": []
     },
     {
@@ -18328,6 +20371,78 @@
       "votes": []
     },
     {
+      "id": "hconres135-109",
+      "congress": 109,
+      "type": "hconres",
+      "number": "135",
+      "title": "Authorizing the use of the Capitol Grounds for the District of Columbia Special Olympics Law Enforcement Torch Run.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Shuster, Bill",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2005-04-19",
+      "latest_action": {
+        "date": "2005-05-12",
+        "text": "Resolution agreed to in Senate without amendment by Unanimous Consent. (consideration: CR S5183)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Capitol (Washington, D.C.)",
+        "Crime and Law Enforcement",
+        "Disabled",
+        "District of Columbia",
+        "Law enforcement officers",
+        "Olympic games",
+        "Public Lands and Natural Resources",
+        "Running",
+        "Sports and Recreation"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Authorizes the use of the Capitol grounds for the 2005 District of Columbia Special Olympics Law Enforcement Torch Run on June 10, 2005.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/hconres135/BILLS-109hconres135rds.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/bills/hconres135/BILLS-109hconres135rds.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-concurrent-resolution/135",
+      "votes": []
+    },
+    {
+      "id": "hconres136-109",
+      "congress": 109,
+      "type": "hconres",
+      "number": "136",
+      "title": "Authorizing the use of the Capitol Grounds for the National Peace Officers' Memorial Service.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Shuster, Bill",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2005-04-19",
+      "latest_action": {
+        "date": "2005-05-12",
+        "text": "Resolution agreed to in Senate without amendment by Unanimous Consent. (consideration: CR S5183)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Capitol (Washington, D.C.)",
+        "Commemorations",
+        "Crime and Law Enforcement",
+        "Law enforcement officers",
+        "Monuments and memorials",
+        "Police",
+        "Public Lands and Natural Resources"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Permits the Grand Lodge of the Fraternal Order of Police and its auxiliary to sponsor a free public event, the 24th annual National Peace Officers' Memorial Service, on the Capitol grounds on May 15, 2005, to honor the law enforcement officers who died in the line of duty during 2004.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/hconres136/BILLS-109hconres136rds.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/bills/hconres136/BILLS-109hconres136rds.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-concurrent-resolution/136",
+      "votes": []
+    },
+    {
       "id": "hconres86-109",
       "congress": 109,
       "type": "hconres",
@@ -18688,6 +20803,42 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/109/plaws/publ12/PLAW-109publ12.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-joint-resolution/20",
+      "votes": []
+    },
+    {
+      "id": "hconres41-109",
+      "congress": 109,
+      "type": "hconres",
+      "number": "41",
+      "title": "Recognizing the second century of Big Brothers Big Sisters, and supporting the mission and goals of that organization.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Schiff, Adam B.",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2005-02-01",
+      "latest_action": {
+        "date": "2005-04-29",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR 4/28/2005 S4606)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Associations, institutions, etc.",
+        "Congress",
+        "Congressional tributes",
+        "Families",
+        "Mentoring",
+        "Social Welfare",
+        "Volunteer workers",
+        "Youth services"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Recognizes the second century of Big Brothers Big Sisters, and supports the mission and goals of that organization.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/hconres41/BILLS-109hconres41rds.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/bills/hconres41/BILLS-109hconres41rds.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/house-concurrent-resolution/41",
       "votes": []
     },
     {
@@ -19388,6 +21539,43 @@
       "text_url_xml": "https://www.congress.gov/109/bills/sres112/BILLS-109sres112ats.xml",
       "text_url_pdf": "https://www.congress.gov/109/bills/sres112/BILLS-109sres112ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/112",
+      "votes": []
+    },
+    {
+      "id": "sconres27-109",
+      "congress": 109,
+      "type": "sconres",
+      "number": "27",
+      "title": "A concurrent resolution honoring military children during \"National Month of the Military Child\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kennedy, Edward M.",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2005-04-14",
+      "latest_action": {
+        "date": "2005-04-14",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S3713; text as passed Senate: CR S3713; text of measure as introduced: CR S3690-3691)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Associations, institutions, etc.",
+        "Charities",
+        "Congress",
+        "Congressional tributes",
+        "Families",
+        "Military dependents",
+        "Social Welfare",
+        "Special months"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Joins the Secretary of Defense in honoring the children of members of the Armed Forces and recognizes that they share in the burden of protecting the Nation.</p> <p>Urges Americans to join the military community in observing April as &quot;National Month of the Military Child.&quot;</p> <p>Recognizes with great appreciation the contributions of private sector organizations in providing resources and assistance to military families and their communities.</p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sconres27/BILLS-109sconres27es.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/109/bills/sconres27/BILLS-109sconres27es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-concurrent-resolution/27",
       "votes": []
     },
     {
@@ -20583,6 +22771,45 @@
       "text_url_xml": "https://www.congress.gov/109/bills/sres67/BILLS-109sres67ats.xml",
       "text_url_pdf": "https://www.congress.gov/109/bills/sres67/BILLS-109sres67ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/67",
+      "votes": []
+    },
+    {
+      "id": "sres68-109",
+      "congress": 109,
+      "type": "sres",
+      "number": "68",
+      "title": "A resolution designating March 2, 2005, as \"Read Across America Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Collins, Susan M.",
+        "party": "R",
+        "state": "ME"
+      },
+      "introduced_date": "2005-02-28",
+      "latest_action": {
+        "date": "2005-02-28",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S1811; text as passed Senate: CR S1811; text of measure as introduced: CR S1810)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Arts, Culture, Religion",
+        "Authors and authorship",
+        "Books",
+        "Congress",
+        "Congressional tributes",
+        "Education",
+        "Elementary and secondary education",
+        "Families",
+        "Parent and child",
+        "Reading",
+        "Special days"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates March 2, 2005, as Read Across America Day.</p> <p>Honors Theodor Geisel (Dr. Seuss) for his success in encouraging children to discover the joy of reading.</p> <p>Encourages parents to read with their children for at least 30 minutes on Read Across America Day. </p>",
+      "text_url_html": "https://www.congress.gov/109/bills/sres68/BILLS-109sres68ats.htm",
+      "text_url_xml": "https://www.congress.gov/109/bills/sres68/BILLS-109sres68ats.xml",
+      "text_url_pdf": "https://www.congress.gov/109/bills/sres68/BILLS-109sres68ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/109th-congress/senate-resolution/68",
       "votes": []
     },
     {
