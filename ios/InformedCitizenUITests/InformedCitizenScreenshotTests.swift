@@ -102,6 +102,36 @@ final class InformedCitizenScreenshotTests: XCTestCase {
   }
 
   @MainActor
+  func testSettingsJourney() throws {
+    let app = XCUIApplication()
+    app.launchArguments += ["-SCREENSHOT_MODE"]
+    app.launch()
+
+    XCTAssertTrue(app.descendants(matching: .any)["bills-list"].waitForExistence(timeout: 5))
+    app.buttons["settings-button"].tap()
+    XCTAssertTrue(app.navigationBars["Settings"].waitForExistence(timeout: 5))
+    XCTAssertTrue(app.segmentedControls["appearance-picker"].exists)
+    XCTAssertTrue(app.staticTexts["When the House and Senate are in session."].exists)
+    attachScreenshot(named: "11-settings")
+
+    app.buttons["settings-calendar"].tap()
+    XCTAssertTrue(app.navigationBars["Congress Calendar"].waitForExistence(timeout: 5))
+    app.tabBars.buttons["Bills"].tap()
+    app.buttons["settings-button"].tap()
+    XCTAssertTrue(app.navigationBars["Settings"].waitForExistence(timeout: 5))
+
+    let privacyPolicy = app.descendants(matching: .any)["settings-privacy-policy"]
+    for _ in 0..<4 where !privacyPolicy.isHittable {
+      app.swipeUp()
+    }
+    app.swipeUp()
+    XCTAssertTrue(privacyPolicy.isHittable)
+    attachScreenshot(named: "12-settings-about")
+    privacyPolicy.tap()
+    XCTAssertTrue(app.buttons["OpenInSafariButton"].waitForExistence(timeout: 5))
+  }
+
+  @MainActor
   private func attachScreenshot(named name: String) {
     let attachment = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
     attachment.name = name

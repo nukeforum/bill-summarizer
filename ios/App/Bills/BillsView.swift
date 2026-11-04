@@ -5,6 +5,11 @@ import SwiftUI
 
 struct BillsView: View {
   @Bindable var model: BillsFeatureModel
+  let settingsModel: SettingsFeatureModel
+  let representativesModel: RepresentativesFeatureModel
+  let onOpenCalendar: () -> Void
+
+  @State private var showsSettings = false
 
   var body: some View {
     NavigationStack {
@@ -13,8 +18,10 @@ struct BillsView: View {
         .searchable(text: $model.searchQuery, prompt: "Search bills")
         .toolbar {
           ToolbarItem(placement: .topBarTrailing) {
-            Button("Settings", systemImage: "gearshape") {}
-              .accessibilityIdentifier("settings-button")
+            Button("Settings", systemImage: "gearshape") {
+              showsSettings = true
+            }
+            .accessibilityIdentifier("settings-button")
           }
         }
         .navigationDestination(for: Bill.self) { bill in
@@ -24,6 +31,13 @@ struct BillsView: View {
     .task {
       guard case .loading = model.state else { return }
       await model.load()
+    }
+    .sheet(isPresented: $showsSettings) {
+      SettingsView(
+        model: settingsModel,
+        representativesModel: representativesModel,
+        onOpenCalendar: onOpenCalendar
+      )
     }
   }
 
