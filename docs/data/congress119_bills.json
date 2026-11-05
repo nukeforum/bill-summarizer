@@ -1,8 +1,79 @@
 {
-  "generated_at": "2026-11-04T13:50:34Z",
+  "generated_at": "2026-11-05T14:04:03Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "hr1744-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "1744",
+      "title": "United States Commission on International Religious Freedom Reauthorization Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Smith, Christopher H.",
+        "party": "R",
+        "state": "NJ"
+      },
+      "introduced_date": "2025-02-27",
+      "latest_action": {
+        "date": "2026-11-03",
+        "text": "Became Public Law No: 119-137."
+      },
+      "outcome": "enacted",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Human rights",
+        "International organizations and cooperation",
+        "Religion",
+        "U.S. Commission on International Religious Freedom"
+      ],
+      "summary_crs": "<p><strong>United States Commission on International Religious Freedom Reauthorization Act of 2026</strong></p><p>This bill reauthorizes the U.S. Commission on International Religious Freedom through 2028. The commission is an independent federal commission tasked with monitoring international religious freedom conditions, reviewing U.S. government policy, and making policy recommendations. (Under current law, the commission is authorized through December 11, 2026.)</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr1744/BILLS-119hr1744rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr1744/BILLS-119hr1744rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr1744/BILLS-119hr1744rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1744",
+      "votes": []
+    },
+    {
+      "id": "hr8205-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "8205",
+      "title": "Accelerating Access to Critical Therapies for ALS Reauthorization Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Quigley, Mike",
+        "party": "D",
+        "state": "IL"
+      },
+      "introduced_date": "2026-04-06",
+      "latest_action": {
+        "date": "2026-11-03",
+        "text": "Became Public Law No: 119-138."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Department of Health and Human Services",
+        "Drug therapy",
+        "Food and Drug Administration (FDA)",
+        "Government information and archives",
+        "Health programs administration and funding",
+        "Internet, web applications, social media",
+        "Medical research",
+        "National Institutes of Health (NIH)",
+        "Neurological disorders",
+        "Public-private cooperation",
+        "Research administration and funding"
+      ],
+      "summary_crs": "<p><strong>Accelerating Access to Critical Therapies for ALS Reauthorization Act of 2026</strong></p><p>This act reauthorizes through FY2031 and revises programs that support research and development of drugs and other therapies to address&nbsp;amyotrophic lateral sclerosis (also known as ALS or Lou Gehrig's disease) and other neurodegenerative diseases.</p><p>The act reauthorizes</p><ul><li>grants from the National Institutes of Health (NIH) for scientific research on investigational drugs to prevent or treat ALS for individuals not otherwise eligible for clinical trials,</li><li>grants from the Food and Drug Administration (FDA) for research and development of therapies to prevent and treat ALS and other neurodegenerative diseases, and</li><li>a Public-Private Partnership including the FDA and NIH that supports development and regulatory review of treatments for neurodegenerative diseases.&nbsp;</li></ul><p>Also, the NIH, in considering renewal of its grants, must assess available information on the safety and efficacy of the investigational drugs. It must also require grantees to promptly report serious and unexpected adverse events associated with their investigational drugs.</p><p>Additionally, the FDA must publish a plan describing actions it will take over a five-year period to foster development of safe and effective drugs, and facilitate access to&nbsp;investigational drugs, that treat ALS and other rare neurodegenerative diseases. The FDA must also publish&nbsp;a report describing the actions it has taken under the plan.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr8205/BILLS-119hr8205pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr8205/BILLS-119hr8205pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr8205/BILLS-119hr8205pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/8205",
+      "votes": []
+    },
     {
       "id": "hr7022-119",
       "congress": 119,
@@ -1359,39 +1430,6 @@
       "votes": []
     },
     {
-      "id": "hr1744-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "1744",
-      "title": "United States Commission on International Religious Freedom Reauthorization Act of 2026",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Smith, Christopher H.",
-        "party": "R",
-        "state": "NJ"
-      },
-      "introduced_date": "2025-02-27",
-      "latest_action": {
-        "date": "2026-09-29",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5186)"
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "International Affairs",
-      "subjects": [
-        "Human rights",
-        "International organizations and cooperation",
-        "Religion",
-        "U.S. Commission on International Religious Freedom"
-      ],
-      "summary_crs": "<p><strong>United States Commission on International Religious Freedom Reauthorization Act of 2026</strong></p><p>This bill reauthorizes the U.S. Commission on International Religious Freedom through 2028. The commission is an independent federal commission tasked with monitoring international religious freedom conditions, reviewing U.S. government policy, and making policy recommendations. (Under current law, the commission is authorized through FY2026.)</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr1744/BILLS-119hr1744rfs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr1744/BILLS-119hr1744rfs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr1744/BILLS-119hr1744rfs.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1744",
-      "votes": []
-    },
-    {
       "id": "hr1945-119",
       "congress": 119,
       "type": "hr",
@@ -1856,46 +1894,6 @@
       "text_url_xml": "https://www.congress.gov/119/bills/hr7730/BILLS-119hr7730rds.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/hr7730/BILLS-119hr7730rds.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/7730",
-      "votes": []
-    },
-    {
-      "id": "hr8205-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "8205",
-      "title": "Accelerating Access to Critical Therapies for ALS Reauthorization Act of 2026",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Quigley, Mike",
-        "party": "D",
-        "state": "IL"
-      },
-      "introduced_date": "2026-04-06",
-      "latest_action": {
-        "date": "2026-09-28",
-        "text": "Passed Senate without amendment by Voice Vote. (consideration: CR S5120)"
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "Health",
-      "subjects": [
-        "Department of Health and Human Services",
-        "Drug therapy",
-        "Food and Drug Administration (FDA)",
-        "Government information and archives",
-        "Health programs administration and funding",
-        "Internet, web applications, social media",
-        "Medical research",
-        "National Institutes of Health (NIH)",
-        "Neurological disorders",
-        "Public-private cooperation",
-        "Research administration and funding"
-      ],
-      "summary_crs": "<p><strong>Accelerating Access to Critical Therapies for ALS Reauthorization Act of 2026</strong></p><p>This bill reauthorizes through FY2031 and revises programs that support research and development of drugs and other therapies to address&nbsp;amyotrophic lateral sclerosis (also known as ALS or Lou Gehrig's disease) and other neurodegenerative diseases.</p><p>The bill reauthorizes</p><ul><li>grants from the National Institutes of Health (NIH) for scientific research on investigational drugs to prevent or treat ALS for individuals not otherwise eligible for clinical trials,</li><li>grants from the Food and Drug Administration (FDA) for research and development of therapies to prevent and treat ALS and other neurodegenerative diseases, and</li><li>a Public-Private Partnership including the FDA and NIH that supports development and regulatory review of treatments for neurodegenerative diseases.&nbsp;</li></ul><p>Also, the  NIH, in considering renewal of its grants, must assess available information on the safety and efficacy of the investigational drugs. It must also require grantees to promptly report serious and unexpected adverse events associated with their investigational drugs.</p><p>Additionally,  the FDA must publish a plan describing actions it will take over a five-year period to foster development of safe and effective drugs, and facilitate access to&nbsp;investigational drugs, that treat ALS and other rare neurodegenerative diseases. The FDA must also publish&nbsp;a report describing the actions it has taken under the plan.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr8205/BILLS-119hr8205pcs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr8205/BILLS-119hr8205pcs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr8205/BILLS-119hr8205pcs.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/8205",
       "votes": []
     },
     {
