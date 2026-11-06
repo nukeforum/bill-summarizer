@@ -1,8 +1,100 @@
 {
-  "generated_at": "2026-11-05T19:47:11Z",
+  "generated_at": "2026-11-06T19:09:39Z",
   "congress": 108,
   "votes_coverage": false,
   "bills": [
+    {
+      "id": "hr5363-108",
+      "congress": 108,
+      "type": "hr",
+      "number": "5363",
+      "title": "To authorize salary adjustments for Justices and judges of the United States for fiscal year 2005.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Sensenbrenner, F. James, Jr.",
+        "party": "R",
+        "state": "WI"
+      },
+      "introduced_date": "2004-11-16",
+      "latest_action": {
+        "date": "2004-12-23",
+        "text": "Became Public Law No: 108-491."
+      },
+      "outcome": "enacted",
+      "policy_area": "Law",
+      "subjects": [
+        "Cost of living adjustments",
+        "Judicial compensation",
+        "Labor and Employment"
+      ],
+      "summary_crs": " <p><b>(</b><b>This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Authorizes U.S. justices and judges to receive a salary adjustment during FY 2005 (in accordance with specified Federal judicial code provisions).</p>",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ491/PLAW-108publ491.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ491/PLAW-108publ491.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/5363",
+      "votes": []
+    },
+    {
+      "id": "s3034-108",
+      "congress": 108,
+      "type": "s",
+      "number": "3034",
+      "title": "A bill for the relief of Susan Overton Huey.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Pryor, Mark L.",
+        "party": "D",
+        "state": "AR"
+      },
+      "introduced_date": "2004-12-08",
+      "latest_action": {
+        "date": "2004-12-08",
+        "text": "Introduced in the Senate, read twice, considered, read the third time, and passed without amendment by Unanimous Consent. (consideration: CR S12018; text as passed Senate: CR S12018)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Private Legislation",
+      "subjects": [
+        "Federal employees"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Deems an annuity payable to Susan Overton Huey.</p>",
+      "text_url_html": "https://www.congress.gov/108/bills/s3034/BILLS-108s3034cps.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/bills/s3034/BILLS-108s3034cps.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-bill/3034",
+      "votes": []
+    },
+    {
+      "id": "sres486-108",
+      "congress": 108,
+      "type": "sres",
+      "number": "486",
+      "title": "A resolution relative to the death of J. Stanley Kimmitt, Former Secretary of the Senate.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Frist, William H.",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2004-12-08",
+      "latest_action": {
+        "date": "2004-12-08",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S12070-12071; text as passed Senate: CR S12018; text of measure as introduced: CR S12070-12071)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Commemorations",
+        "Congressional officers",
+        "Congressional tributes",
+        "Senate"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Expresses the condolences of the Senate upon the death of the Honorable J. Stanley Kimmitt, former Secretary of the Senate.</p>",
+      "text_url_html": "https://www.congress.gov/108/bills/sres486/BILLS-108sres486ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/bills/sres486/BILLS-108sres486ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/486",
+      "votes": []
+    },
     {
       "id": "sres487-108",
       "congress": 108,
@@ -598,6 +690,88 @@
       "votes": []
     },
     {
+      "id": "s2883-108",
+      "congress": 108,
+      "type": "s",
+      "number": "2883",
+      "title": "Prevention of Child Abduction Partnership Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hatch, Orrin G.",
+        "party": "R",
+        "state": "UT"
+      },
+      "introduced_date": "2004-10-01",
+      "latest_action": {
+        "date": "2004-10-25",
+        "text": "Became Public Law No: 108-370."
+      },
+      "outcome": "enacted",
+      "policy_area": "Families",
+      "subjects": [
+        "Crime and Law Enforcement",
+        "Custody of children",
+        "Damages",
+        "International Affairs",
+        "Kidnapping",
+        "Law",
+        "Liability (Law)",
+        "Torts",
+        "Treaties"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Prevention of Child Abduction Partnership Act - Amends the International Child Abduction Remedies Act (ICARA) to limit the tort liability of private entities or organizations that receive grants or enter into contracts or agreements to assist the U.S. Central Authority in carrying out its responsibilities and functions under the Hague Convention on the Civil Aspects of International Child Abduction and ICARA where the action is directly related to the performance of such responsibilities and functions.</p> <p>Creates exceptions to this limitation on liability for: (1) intentional misconduct, actual malice, reckless disregard to a substantial risk of injury without legal justification, or actions unrelated to the performance of responsibilities or functions under such Act; and (2) alleged acts or omissions related to an ordinary business activity.</p>",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ370/PLAW-108publ370.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ370/PLAW-108publ370.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-bill/2883",
+      "votes": []
+    },
+    {
+      "id": "sconres144-108",
+      "congress": 108,
+      "type": "sconres",
+      "number": "144",
+      "title": "A concurrent resolution to correct the enrollment of H.R. 4837",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Harkin, Tom",
+        "party": "D",
+        "state": "IA"
+      },
+      "introduced_date": "2004-10-11",
+      "latest_action": {
+        "date": "2004-10-11",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S11228-11229; text as passed Senate: CR S11229; text of measure as introduced: CR S11311)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Agricultural conservation",
+        "Agriculture and Food",
+        "Animals",
+        "Crop insurance",
+        "Disaster relief",
+        "Economics and Public Finance",
+        "Emergency Management",
+        "Environmental Protection",
+        "Federal aid to Indians",
+        "Federal budget process",
+        "Finance and Financial Sector",
+        "Legislation",
+        "Livestock",
+        "Minorities",
+        "Public Lands and Natural Resources",
+        "Supplemental appropriations",
+        "Trees"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Directs the Clerk of the House of Representatives to make certain corrections in the enrollment of H.R. 4837 (Military Construction Appropriations and Emergency Hurricane Supplemental Appropriations Act, 2005).</p> <p>Repeals the requirement that: (1) the Secretary of Agriculture shall use not more than $6.037 billion of the funds, facilities, and authorities of the Commodity Credit Corporation to carry out the conservation security program for the period of FY 2005 through 2014; and (2) any savings from that requirement not be scored until FY 2008.</p> <p>Replaces such requirement with the designation of agricultural disaster assistance under such Act as an emergency requirement.</p>",
+      "text_url_html": "https://www.congress.gov/108/bills/sconres144/BILLS-108sconres144ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/bills/sconres144/BILLS-108sconres144ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-concurrent-resolution/144",
+      "votes": []
+    },
+    {
       "id": "sres464-108",
       "congress": 108,
       "type": "sres",
@@ -764,6 +938,87 @@
       "text_url_xml": "https://www.congress.gov/108/bills/sres467/BILLS-108sres467ats.xml",
       "text_url_pdf": "https://www.congress.gov/108/bills/sres467/BILLS-108sres467ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/467",
+      "votes": []
+    },
+    {
+      "id": "s2974-108",
+      "congress": 108,
+      "type": "s",
+      "number": "2974",
+      "title": "Family Smoking Prevention and Tobacco Control Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. DeWine, Mike",
+        "party": "R",
+        "state": "OH"
+      },
+      "introduced_date": "2004-10-10",
+      "latest_action": {
+        "date": "2004-10-10",
+        "text": "Introduced in the Senate, read twice, considered, read the third time, and passed without amendment by Unanimous Consent. (consideration: CR S11068-11087; text as passed Senate: CR S11068-11084; text of measure as introduced: CR S11091-11107)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Administrative procedure",
+        "Administrative remedies",
+        "Advertising",
+        "Agriculture and Food",
+        "Business records",
+        "Cancer",
+        "Carcinogens",
+        "Cardiovascular diseases",
+        "Chemicals",
+        "Child health",
+        "Cigarettes",
+        "Civil Rights and Liberties, Minority Issues",
+        "Commerce",
+        "Congress",
+        "Congressional investigations",
+        "Congressional oversight",
+        "Congressional powers",
+        "Congressional reporting requirements",
+        "Consumer education"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>Family Smoking Prevention and Tobacco Control Act - <b>Title I</b><b>: Authority of the Food and Drug Administration -</b> (Sec. 101) Amends the Federal Food, Drug, and Cosmetic Act (FFDCA) to provide for the regulation of tobacco products by the Secretary of Health and Human Services through the Food and Drug Administration (FDA).</p> <p>Defines a tobacco product as any product made or derived from tobacco that is intended for human consumption. Prohibits a tobacco product from being marketed in combination with any other article or product regulated under FFDCA. Requires the Secretary to regulate tobacco products. Excludes from FDA authority: (1) the tobacco leaf that is not in the possession of a tobacco product manufacturer; (2) the producers of the tobacco leaf, unless the producer is also a manufacturer; and (3) tobacco farms.</p> <p>Deems a tobacco product to be adulterated if: (1) it contains any filthy, putrid, or decomposed substance, or is contaminated by any added poisonous or deleterious substance that may render the product injurious to health; (2) it has been prepared, packed, or held under unsanitary conditions; (3) its package is composed of any poisonous or deleterious substance; (4) it fails to meet specified tobacco product standards; (5) it does not have required pre-market approval or violates the order approving the application; (6) it fails to meet other applicable requirements or conditions on manufacturing, packing, or storage; or (7) it fails to conform to requirements for modified risk tobacco products. </p> <p>Deems a tobacco product to be misbranded if: (1) its labeling, packaging, or advertising contains any false or misleading information; (2) its label or advertising fails to contain all required information displayed prominently and conspicuously, including its established name, manufacturer, and contents and adequate directions and warnings; (3) it was manufactured, prepared, or processed in an establishment not registered with the Secretary; or (4) there is any failure to submit the required information or notices to the Secretary.</p> <p>Allows the Secretary to require prior approval of all label statements on tobacco products and all advertising for modified risk tobacco products.</p> <p>Requires tobacco product manufacturers or importers to submit to the FDA: (1) a list of all ingredients, including ingredients added by the manufacturer to the tobacco, paper, or filter, by brand and quantity; (2) a description of the content, delivery, and form of nicotine in each tobacco product; (3) a listing of all constituents, including smoke constituents, identified by the Secretary as harmful or potentially harmful to health in each tobacco product; and (4) all documents developed that relate to the health, toxicological, behavioral, or physiologic effects of tobacco products and their constituents, ingredients, components, and additives.</p> <p>Allows the Secretary to request additional information from a tobacco product manufacturer or importer relating to: (1) research activities or findings on the health, toxicological, behavioral, or physiologic effects of tobacco products and their constituents; (2) research activities or findings relating to whether the health risk can be reduced if the manufacturer employs known or available technology; and (3) marketing research or practices and the effectiveness of such practices used by manufacturers or distributors.</p> <p>Requires a manufacturer to: (1) submit required documents to the Secretary 90 days prior to the delivery for introduction into interstate commerce of a new tobacco product; (2) notify the Secretary 90 days prior to adding or increasing the quantity of a tobacco additive; and (3) notify the Secretary 60 days after eliminating or decreasing an additive or adding or increasing an additive that is not a carcinogen or harmful to health under intended conditions of use.</p> <p>Requires the Secretary to publicly display and annually publish a list (that is understandable and not misleading to a lay person) of harmful or potentially harmful constituents in each tobacco product by brand and quantity.</p> <p>Requires owners and operators of establishments in the United States engaged in the manufacture, preparation, compounding, or processing of a tobacco product to register annually with the Secretary. Allows the Secretary to prescribe a uniform system for the identification of tobacco products, which registrants must use. Requires the Secretary to make such registration information available to the public and to inspect registered establishments every two years.</p> <p>Requires foreign establishments to register and provides that adequate and effective means must be available to enable the Secretary to determine whether tobacco products manufactured, prepared, compounded, or processed at such establishments conform with FFDCA requirements.</p> <p>Requires registrants to: (1) include a complete product list, including labeling and a sampling of advertising, and provide updates twice a year; and (2) report to the Secretary on all new tobacco products 90 days prior to introducing such products into interstate commerce, including any basis for determination that the product is substantially equivalent to an existing product and actions taken to comply with the tobacco product standards. (Requires such a report on all tobacco products introduced for commercial distribution after June 1, 2003, within 15 months of enactment of this Act.)</p> <p>Prohibits the disclosure of privileged or confidential trade secrets and commercial financial information that is obtained by the Secretary.</p> <p>Allows the Secretary to restrict: (1) the sale or distribution of tobacco products if appropriate for the protection of the public health; and (2) the advertising and promotion of tobacco products consistent with and to the full extent permitted by the First Amendment. Prohibits restrictions that: (1) limit the sale or distribution of a tobacco product to written or oral authorization by a practitioner licensed to prescribe medicine; (2) prohibit the sale of a tobacco product in face-to-face transactions by a specific category of retail outlets; or (3) establish a minimum age of sale of tobacco products to any person older than 18 years of age.</p> <p>Allows the Secretary to prescribe regulations governing good manufacturing practices to protect the public health and assure that tobacco products are in compliance with this Act, which may include the testing of raw tobacco for pesticide chemical residues regardless of whether a tolerance for such residues has been established. Requires the Secretary to: (1) afford the Tobacco Products Scientific Advisory Committee an opportunity to submit recommendations on such regulations; (2) afford an opportunity for an oral hearing on such regulations; (3) allow the Advisory Committee a reasonable time to make recommendations; and (4) provide a reasonable period for manufacturers to conform to good manufacturing practices. Allows the Secretary to grant exemptions and variances from such regulations under certain circumstances and to submit petitions for such exemptions or variances to the Committee for recommendations.</p> <p>Allows the Secretary to enter into contracts for research, testing, and demonstrations respecting tobacco products and to obtain tobacco products for such purposes.</p> <p>Establishes as a tobacco product standard a prohibition against a cigarette or any of its components containing as a constituent or additive any artificial or natural flavor (other than tobacco or menthol) or any herb or spice (including strawberry, grape, orange, clove, cinnamon, and vanilla) that is a characterizing flavor of the tobacco product or tobacco smoke. Allows the Secretary to adopt additional tobacco product standards the Secretary finds are appropriate to protect the public health determined with respect to the risks and benefits to the population as a whole and taking into account: (1) the increased or decreased likelihood that existing users of tobacco products will stop using such products; and (2) the increased or decreased likelihood that those who do not use tobacco products will start using such products. Provides that such tobacco product standards shall include provisions to protect the public health, including provisions, where appropriate, for: (1) reducing nicotine yields; (2) reducing or eliminating other constituents or harmful components; (3) the construction, components, ingredients, additives, constituents, and properties of tobacco product; (4) product testing; (5) measuring product characteristics; (6) requiring that the test results show that the product is in conformity with the standards; (7) restricting product sale and distribution to the extent allowable; and (8) requiring the use of, and prescribing the form and content of, labeling for the proper product use. Requires the Secretary to: (1) periodically evaluate such standards to determine whether they should be changed to reflect new medical, scientific, or other technological data; (2) consider all information submitted in connection with a proposed standard, including the effects such a standard would have on the health of tobacco users and nonusers and the creation of a significant demand for contraband; and (3) issue the standard if it would be appropriate to protect the public health. Reserves to Congress the power to ban any tobacco product or reduce the nicotine level to zero. Allows the Secretary to amend or revoke a tobacco product standard.</p> <p>Allows the Secretary to notify the public if a tobacco product poses an unreasonable risk of substantial harm or to prohibit the sale of or recall a tobacco product if there is a reasonable probability that it contains a defect not ordinarily contained in tobacco products that would cause serious, adverse health consequences or death.</p> <p>Requires manufacturers and importers to comply with record keeping and reporting requirements established by the Secretary, such as: (1) informing the Secretary of any information that reasonably suggests that a marketed tobacco product may have caused or contributed to a serious unexpected adverse experience; and (2) reporting any significant increase in the frequency of a serious, unexpected adverse product experience. Prohibits the Secretary from: (1) imposing unduly burdensome requirements, taking into account the cost of complying and the need for protection of the public health; or (2) requiring that the identity of any patient or user be disclosed unless required for the medical welfare of an individual, to determine risks to the public health, or to verify information. Requires the Secretary to have due regard for the professional ethics of the medical profession.</p> <p>Requires the Secretary to require prompt notification by manufacturers and importers of any corrective action taken or any removal from the market of a tobacco product to reduce the risk to health posed by the product or to remedy a violation of this Act that may present a health risk.</p> <p>Requires pre-market approval of all new tobacco products (products not substantially equivalent to an existing tobacco product) commercially marketed after June 1, 2003. Defines &quot;substantially equivalent&quot; as having the same characteristics or having different characteristics but not raising different questions of public health. </p> <p>Requires the Secretary to deny an application for pre-market approval and include a statement of corrective action necessary for approval if: (1) there is a lack of a showing that permitting the marketing of the tobacco product would be appropriate to protect the public health; (2) the product does not conform to applicable manufacturing, processing, or packing requirements; (3) the proposed labeling is false or misleading; or (4) the product does not conform to tobacco product standards. Sets forth requirements for the Secretary to withdrawal approval, including if: (1) the continued marketing of a product is no longer appropriate for the protection of the public health; (2) the application contained an untrue statement of material fact; and (3) the applicant has refused access to its records. Allows the Secretary to temporarily suspend an application if there is a reasonable probability that continuing the distribution of a tobacco product under an approved application would cause serious, adverse health consequences or death that is greater than ordinarily caused by tobacco products on the market.</p> <p>Prohibits the sale of any modified risk tobacco product without prior approval of an application by the Secretary. Defines a &quot;modified risk tobacco product&quot; as any tobacco product that is sold or distributed for use to reduce harm or the risk of tobacco-related diseases associated with commercially marketed tobacco products, specifically products where: (1) the labeling or advertising represents that the product presents a lower risk of tobacco-related disease or is less harmful than other tobacco products, contains a reduced level of or presents a reduced exposure to a substance, or is free of a substance; (2) the labeling or advertising uses descriptors such as &quot;light,&quot; &quot;mild,&quot; or &quot;low&quot;; or (3) the product manufacturer has taken action reasonably expected to result in consumers believing that the product or its smoke presents a lower risk of disease, is less harmful, presents a reduced exposure, or is free of a substance. Requires that such applications include a product description, the proposed advertising, the formulations of the product, sample product labels, documents relating to research findings of the product's effects on tobacco related diseases and health-related conditions, and data and information on how consumers actually use the product. Requires the Secretary to: (1) make such applications public; (2) request comments by interested persons on such applications; (3) refer such applications to the Advisory Committee for recommendations; and (4) approve such an application if a product, as it is actually used by consumers, will significantly reduce harm and the risk of tobacco-related disease to individual tobacco users and benefit the health of the population as a whole.</p> <p>Allows the Secretary to approve tobacco products that are not approved as modified risk tobacco products for five years if: (1) the approval of the application is appropriate to promote public health; (2) the labeling or advertising that would cause the tobacco product to be considered a modified risk tobacco product is limited to a representation that the tobacco product is free of a substance, contains a reduced level, or presents a reduced exposure; (3) scientific evidence is not available and cannot be made available without conducting long-term epidemiological studies; (4) the available scientific evidence demonstrates that a measurable and substantial reduction in morbidity among individual tobacco users is anticipated in subsequent studies; (5) the magnitude of the overall reductions in exposure to the substance is substantial, such substance is harmful, and the product as actually used exposes consumers to the specified reduced level of the substance; (6) the product as actually used by consumers will not expose them to higher levels of other harmful substances compared to similar tobacco products unless such increases are minimal and the anticipated overall impact of the use of the product remains a substantial and measurable reduction in overall morbidity and mortality among tobacco users; (7) testing of actual consumer perception shows that consumers will not be misled into believing that the product has been demonstrated to be less harmful or presents less of a risk of disease than other tobacco products; and (8) approval of the application is expected to benefit the health of the population as a whole.</p> <p>Requires the Secretary to require that advertising and labeling concerning modified risk products enable the public to understand the information and its significance in the context of total health and in relation to all of the diseases and health-related conditions associated with the use of tobacco products. </p> <p>Allows the Secretary to require: (1) that comparative claims compare the product to another tobacco product representative of that type on the market; (2) that quantitative comparisons identify in immediate proximity to the most prominent claim the change, the identity of the reference tobacco product, and a quantitative comparison of the amount of the substance claimed to be reduced; and (3) the disclosure on the label of other substances in the tobacco product that may affect a disease or health-related condition. </p> <p>Requires the Secretary to require applicants to annually submit the results of post-market surveillance and studies to determine the impact of the approval on consumer perceptions, behavior, and health, and studies to enable the Secretary to review the accuracy of the scientific evidence upon which the approval was based.</p> <p>Requires the Secretary to withdraw approval of an application if: (1) the applicant can no longer make the demonstrations required; (2) the Secretary can no longer make the determinations required; (3) the application failed to include material information or contained an untrue statement of material fact; (4) a representation that the product reduces risk or exposure is no longer valid; (5) the applicant failed to conduct or submit the required post-market surveillance and studies; or (6) the applicant failed to meet an advertising or labeling condition.</p> <p>Requires the Secretary to issue regulations or guidance on the scientific evidence required for assessment and review of modified risk tobacco products, including: (1) minimum standards for scientific studies needed prior to approval to show that a substantial reduction in morbidity or mortality among users is likely; (2) feasible outcome measures; (3) minimum standards for post-market studies and surveillance.</p> <p>Prohibits distributors from taking any action that would reasonably be expected to result in consumers believing that a tobacco product or its smoke may present a lower risk of disease or is less harmful than other tobacco products.</p> <p>Sets forth provisions regarding the judicial review of regulations and denied applications for new tobacco products.</p> <p>Requires the Secretary to require retail establishments for which the predominant business is the sale of tobacco products to comply with advertising restrictions applicable to retail establishments accessible to individuals under the age of 18.</p> <p>States that any violation of regulations required to be promulgated by the Secretary under this Act concerning the sale, distribution, and use of cigarettes and smokeless tobacco is an unfair or deceptive act or practice under the Federal Trade Commission (FTC) Act. Requires the Chairman of the FTC to coordinate with the Secretary concerning enforcement of the FTC Act for the advertisement of cigarettes or smokeless tobacco. Requires the Secretary to consult with the Chairman in revising the label statements and requirements for tobacco products under the FTC Act.</p> <p>Requires Congress to review, and allows Congress to disapprove, economically significant regulations.</p> <p>Requires the Secretary, acting through the Commissioner of the FDA, to promulgate regulations under this Act within two years that require the testing and reporting of tobacco product constituents, ingredients, and additives that the Secretary determines should be tested to protect the public health. Gives the FDA the authority to conduct or require the testing, reporting, or disclosure of tobacco product constituents.</p> <p>Declares that this Act does not: (1) prohibit Federal agencies, States, political subdivisions, or Indian tribes from enacting additional measures more stringent measures, except requirements relating to tobacco product standards, pre-market approval, adulteration, misbranding, labeling, registration, good manufacturing practices, or reduced risk products; (2) prohibit State, tribal or local taxation of tobacco products; and (3) modify or affect the liability of any person under the product liability laws of any State.</p> <p>Requires the Secretary to establish a Tobacco Products Scientific Advisory Committee to provide advice, information, and recommendations to the Secretary, including on the effects of altering nicotine yields from tobacco products and whether there is a threshold level below which nicotine yields do not produce dependence on the tobacco product involved.</p> <p>Requires the Secretary to consider: (1) designating nicotine replacement products as fast track research and approval products; (2) directing the Commissioner to approve the extended use of nicotine replacement products for the treatment of tobacco dependence; (3) evidence for additional indications for such products, including products for craving relief or relapse prevention; (4) relieving companies of pre-market burdens if the requirement is redundant considering other nicotine replacement therapies on the market; and (5) the time and extent applications for nicotine replacement therapies approved and marketed in foreign countries.</p> <p>Requires the Secretary to assess a quarterly user fee on manufacturers and importers of tobacco products based on the class of tobacco product and the company market share to pay for the costs of activities of the FDA related to the regulation of tobacco products.</p> <p>(Sec. 102) Requires the Secretary to publish an interim final rule regarding cigarettes and smokeless tobacco that is identical to regulations promulgated by the Secretary on August 28, 1996, that set out restrictions under FFDCA on the sale, distribution, and use of cigarettes and smokeless tobacco that contain nicotine, except for labeling requirements. Limits the effect of specified advisory opinions and prohibits the Secretary and the FDA from citing them as binding precedent.</p> <p>(Sec. 103) Adds tobacco related violations to the list of prohibited acts under the FFDCA, including prohibiting the charitable distribution of tobacco products.</p> <p>Allows the Secretary to impose a no-tobacco-sale order on retail outlets to prohibit the sale of tobacco products at an outlet for repeated violations of restrictions on the sale of tobacco products, including the sale to individuals under the age of 18.</p> <p>Requires the Secretary to submit a report to the relevant committees on: (1) the nature, extent, and destination of U.S. tobacco product exports that do not conform to tobacco product standards established under this Act; (2) the public health implications of such exports; and (3) recommendations or assessments of policy alternatives available to reduce any negative public health impact.</p> <p><b>Title II: </b><b>Tobacco Product Warnings; Constituent and Smoke Constituent Disclosure -</b> (Sec. 201) Amends the Federal Cigarette Labeling and Advertising Act to prohibit any person from manufacturing, packaging, selling, offering to sell, distributing, or importing for sale or distribution within the United States any cigarettes the packages of which fail to bear specified warning labels. Specifies location, size, type size, and color of such labeling.</p> <p>Prohibits tobacco product manufacturers, importers, distributors, or retailers of cigarettes to advertise without specified labeling. Specifies location, size, type size, color, and border of warning labels for different types of advertisement.</p> <p>Retains retailer liability for selling or distributing tobacco products not properly labeled.</p> <p>(Sec. 202) Allows the Secretary to alter label requirements if the Secretary finds that such a change would promote greater public understanding of the risks associated with the use of tobacco products.</p> <p>(Sec. 203) Allows States or localities to impose specific bans or restrictions on the time, place, and manner, but not content, of the advertising or promotion of any cigarettes or smokeless tobacco.</p> <p>(Sec. 204) Amends the Comprehensive Smokeless Tobacco Health Education Act of 1986 to apply the same restrictions on labeling and advertising to smokeless tobacco products.</p> <p>(Sec. 206) Requires the Secretary to determine whether manufacturers should be required to include on the label and advertisements the tar and nicotine yields of the product. Allows the Secretary to require disclosure of the level of constituents in a tobacco product if such disclosures would benefit the public health or increase consumer awareness of the health consequences of the use of tobacco products.</p> <p><b>Title III</b><b>: Prevention of Illicit Trade in Tobacco Products - </b>(Sec. 301) Sets forth labeling, inspection, and record keeping requirements to prevent the illicit trade, smuggling, or counterfeiting of tobacco products.</p> <p>Requires a manufacturer or distributor to notify the Attorney General promptly of any knowledge which reasonably supports the conclusion that a tobacco product manufactured or distributed has left its control and may be or has been: (1) imported, exported, distributed, or sold without paying duties or taxes; or (2) diverted for possible illicit marketing.</p> <p>(Sec. 302) Requires the Comptroller General to conduct a study of cross-border trade and cross-border advertising in tobacco products to collect data on such trades and advertisements and make recommendations on the monitoring of such trades and how to prevent or eliminate such advertising.</p>",
+      "text_url_html": "https://www.congress.gov/108/bills/s2974/BILLS-108s2974cps.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/bills/s2974/BILLS-108s2974cps.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-bill/2974",
+      "votes": []
+    },
+    {
+      "id": "s2975-108",
+      "congress": 108,
+      "type": "s",
+      "number": "2975",
+      "title": "A bill to amend the Fair Labor Standards Act of 1938 to clarify regulations relating to overtime compensation.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Harkin, Tom",
+        "party": "D",
+        "state": "IA"
+      },
+      "introduced_date": "2004-10-10",
+      "latest_action": {
+        "date": "2004-10-10",
+        "text": "Introduced in the Senate, read twice, considered, read the third time, and passed without amendment by Unanimous Consent. (consideration: CR S11068-11087; text as passed Senate: CR S11084; text of measure as introduced: CR S11107)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Labor and Employment",
+      "subjects": [
+        "Administrative procedure",
+        "Department of Labor",
+        "Government Operations and Politics",
+        "Hours of labor",
+        "Law",
+        "Salaries"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Amends the Fair Labor Standards Act of 1938 to nullify the force or effect of any portion of a specified final rule promulgated on April 23, 2004, that exempts any employee from overtime pay provisions who would not otherwise be exempt if regulations in effect on March 31, 2003, remained in effect. </p> <p>Provides for the following to remain in effect: (1) that portion of the regulations in effect on March 31, 2003, that would prevent such an employee from being exempt; and (2) the increased salary level eligibility for overtime pay in the final rule promulgated on April 23, 2004.</p>",
+      "text_url_html": "https://www.congress.gov/108/bills/s2975/BILLS-108s2975cps.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/bills/s2975/BILLS-108s2975cps.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-bill/2975",
       "votes": []
     },
     {
@@ -1426,6 +1681,94 @@
       "votes": []
     },
     {
+      "id": "hr5008-108",
+      "congress": 108,
+      "type": "hr",
+      "number": "5008",
+      "title": "To provide an additional temporary extension of programs under the Small Business Act and the Small Business Investment Act of 1958 through September 30, 2004, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Manzullo, Donald A.",
+        "party": "R",
+        "state": "IL"
+      },
+      "introduced_date": "2004-09-07",
+      "latest_action": {
+        "date": "2004-09-24",
+        "text": "Became Public Law No: 108-306."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commerce",
+      "subjects": [
+        "Administrative fees",
+        "Bonds",
+        "Business education",
+        "Collection of accounts",
+        "Compensation (Law)",
+        "Economics and Public Finance",
+        "Entrepreneurs",
+        "Federally-guaranteed loans",
+        "Fees",
+        "Finance and Financial Sector",
+        "Government Operations and Politics",
+        "Government contractors",
+        "Government lending",
+        "Government procurement",
+        "Interest",
+        "Law",
+        "Minorities",
+        "Minority business enterprises",
+        "Securities"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Extends through September 30 (currently, June 4), 2004, under the same terms and conditions, the authorization for any program, activity, or provision, including any pilot program, that is authorized under the Small Business Act or the Small Business Investment Act of 1958 as of September 30, 2003.</p> <p>Amends the Small Business Act to authorize the Small Business Administration (SBA) to contract with an agent to carry out the assessment and collection of annual fees for SBA-guaranteed loans to small businesses. Allows the agent to be compensated through any of the fees assessed, as well as interest earned on such assessments while in the agent's control.</p>",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ306/PLAW-108publ306.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ306/PLAW-108publ306.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/5008",
+      "votes": []
+    },
+    {
+      "id": "sres428-108",
+      "congress": 108,
+      "type": "sres",
+      "number": "428",
+      "title": "A resolution reauthorizing the John Heinz Senate Fellowship Program.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Specter, Arlen",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2004-09-15",
+      "latest_action": {
+        "date": "2004-09-23",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR 9/24/2004 S9653)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Aging",
+        "Authorization",
+        "Congressional fellows",
+        "Economics and Public Finance",
+        "Education",
+        "Foundations",
+        "Gerontology",
+        "Government Operations and Politics",
+        "Higher education",
+        "Policy sciences",
+        "Scholarships",
+        "Senate",
+        "Social Welfare"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Amends Senate Resolution 356, 102d Congress (establishing the John Heinz Senate Fellowship Program) to reauthorize the Program through FY 2010.</p>",
+      "text_url_html": "https://www.congress.gov/108/bills/sres428/BILLS-108sres428ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/bills/sres428/BILLS-108sres428ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/428",
+      "votes": []
+    },
+    {
       "id": "sres433-108",
       "congress": 108,
       "type": "sres",
@@ -1493,6 +1836,53 @@
       "text_url_xml": "https://www.congress.gov/108/bills/sres434/BILLS-108sres434ats.xml",
       "text_url_pdf": "https://www.congress.gov/108/bills/sres434/BILLS-108sres434ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/434",
+      "votes": []
+    },
+    {
+      "id": "sres431-108",
+      "congress": 108,
+      "type": "sres",
+      "number": "431",
+      "title": "A resolution expressing the sense of the Senate that the United Nations Security Council should immediately consider and take appropriate actions to respond to the growing threats posed by conditions in Burma under the illegitimate rule of the State Peace and Development Council.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. McConnell, Mitch",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2004-09-21",
+      "latest_action": {
+        "date": "2004-09-22",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text:  CR S9538)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "AIDS (Disease)",
+        "Armed Forces and National Security",
+        "Arms sales",
+        "Burma",
+        "Child labor",
+        "China",
+        "Civil Rights and Liberties, Minority Issues",
+        "Crime and Law Enforcement",
+        "Democracy",
+        "Drug abuse",
+        "Drug traffic",
+        "East Asia",
+        "Families",
+        "Forced labor",
+        "Foreign Trade and International Finance",
+        "Government Operations and Politics",
+        "Health",
+        "Human immunodeficiency viruses",
+        "Human rights"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Expresses the sense of the Senate that the United Nations Security Council should take responsive actions to the growing threats posed to the Southeast Asia region by conditions in Burma under the illegitimate rule of the State Peace and Development Council, including the threats posed by: (1) human rights violations; (2) the spread of HIV/AIDS; (3) the illicit production and trafficking in narcotics, and trafficking in persons; and (4) alleged efforts by the State Peace and Development Council to purchase weapons from North Korea, China, and Russia. </p>",
+      "text_url_html": "https://www.congress.gov/108/bills/sres431/BILLS-108sres431ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/bills/sres431/BILLS-108sres431ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/431",
       "votes": []
     },
     {
@@ -1571,6 +1961,41 @@
       "text_url_xml": "https://www.congress.gov/108/bills/sres421/BILLS-108sres421ats.xml",
       "text_url_pdf": "https://www.congress.gov/108/bills/sres421/BILLS-108sres421ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/421",
+      "votes": []
+    },
+    {
+      "id": "sjres38-108",
+      "congress": 108,
+      "type": "sjres",
+      "number": "38",
+      "title": "A joint resolution providing for the appointment of Eli Broad as a citizen regent of the Board of Regents of the Smithsonian Institution.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cochran, Thad",
+        "party": "R",
+        "state": "MS"
+      },
+      "introduced_date": "2004-06-03",
+      "latest_action": {
+        "date": "2004-08-02",
+        "text": "Became Public Law No: 108-284."
+      },
+      "outcome": "enacted",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Arts, Culture, Religion",
+        "District of Columbia",
+        "Federal officials",
+        "Law",
+        "Museums",
+        "Smithsonian Institution",
+        "Trusts and trustees"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Provides for the appointment of Eli Broad as a citizen regent of the Board of Regents of the Smithsonian Institution, to fill the vacancy resulting from the death of Barber B. Conable, Jr.</p>",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ284/PLAW-108publ284.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ284/PLAW-108publ284.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-joint-resolution/38",
       "votes": []
     },
     {
@@ -2462,6 +2887,43 @@
       "votes": []
     },
     {
+      "id": "sres341-108",
+      "congress": 108,
+      "type": "sres",
+      "number": "341",
+      "title": "A resolution to urge the resolution of claims related to the confiscation of certain property by the Government of Italy.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Reid, Harry",
+        "party": "D",
+        "state": "NV"
+      },
+      "introduced_date": "2004-04-20",
+      "latest_action": {
+        "date": "2004-06-09",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S6680-6681)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Compensation (Law)",
+        "Diplomacy",
+        "Europe",
+        "Expropriation",
+        "Government liability (International law)",
+        "International claims",
+        "Italy",
+        "Law",
+        "Treaties"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Expresses the sense of the Senate that: (1) the Government of Italy should fulfill the requirements of the Treaty of Friendship, Commerce and Navigation between the United States and the Italian Republic with respect to the property of Mr. Pier Talenti that was confiscated by Italy and make reasonable efforts to resolve Mr. Talenti's claims; and (2) the Secretary of State should continue to press the Government of Italy to resolve Mr. Talenti's claims and take any further measures that could assist Mr. Talenti in receiving such compensation.</p>",
+      "text_url_html": "https://www.congress.gov/108/bills/sres341/BILLS-108sres341ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/bills/sres341/BILLS-108sres341ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/341",
+      "votes": []
+    },
+    {
       "id": "sres371-108",
       "congress": 108,
       "type": "sres",
@@ -3051,6 +3513,53 @@
       "votes": []
     },
     {
+      "id": "hr4062-108",
+      "congress": 108,
+      "type": "hr",
+      "number": "4062",
+      "title": "To provide for an additional temporary extension of programs under the Small Business Act and the Small Business Investment Act of 1958 through June 4, 2004, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Manzullo, Donald A.",
+        "party": "R",
+        "state": "IL"
+      },
+      "introduced_date": "2004-03-30",
+      "latest_action": {
+        "date": "2004-04-05",
+        "text": "Became Public Law No: 108-217."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commerce",
+      "subjects": [
+        "Administrative fees",
+        "Administrative procedure",
+        "Bank loans",
+        "Bonds",
+        "Business education",
+        "Congress",
+        "Congressional reporting requirements",
+        "Economics and Public Finance",
+        "Entrepreneurs",
+        "Federally-guaranteed loans",
+        "Fees",
+        "Finance and Financial Sector",
+        "Government Operations and Politics",
+        "Government contractors",
+        "Government lending",
+        "Government paperwork",
+        "Government procurement",
+        "Government trust funds",
+        "Law"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The expanded summary of the House passed version is repeated here.)</b></p> <p>(Sec. 1) Extends through June 4 (currently, April 2), 2004, under the same terms and conditions, the authorization for any program, authority, or provision, including any pilot program, that is authorized under the Small Business Act (the Act) or the Small Business Investment Act of 1958 (SBIA) as of September 30, 2003.</p> <p>(Sec. 2) Amends the SBIA to extend through FY 2004 (currently, May 21, 2004) the authority of the Small Business Administration (SBA) to charge and collect certain fees in connection with the guarantee of development company debentures under the small business investment program.</p> <p>(Sec. 3) Amends the Act to authorize the SBA to make specified amounts in purchases of participating securities and guarantees of debentures under the SBIA small business investment company program.</p> <p>(Sec. 4) Provides that, during the period beginning on the enactment of this Act and ending on September 30, 2004, in the case of any combination financing by a small business (receiving a loan guaranteed by the SBA and a commercial loan, no portion of which is guaranteed by the Federal Government), the amount of the commercial loan shall not exceed the gross amount of the guaranteed loan which is part of the financing. Allows the commercial loan to be: (1) made by the lender providing the guaranteed financing or by a different lender; (2) secured by a senior lien; and (3) made by a lender in the Preferred Lenders Program. Requires a fee to be paid by the lender to the SBA if the commercial loan has a senior credit position to that of the guaranteed loan.</p> <p>(Sec. 5) Directs the SBA Administrator, during the same period as above, to assess and collect a loan guarantee fee, which shall be a percentage of the outstanding balance of the deferred participation share of the loan. Terminates, during such period, the authority of lenders under SBA-guaranteed loans to retain any loan guarantee fees collected.</p> <p>(Sec. 6) Limits the authority to make Express Loans to those lenders deemed qualified by the Administrator. Increases, until the end of FY 2004, the maximum loan amount under the Express Loan Pilot Program. Gives a qualified lender the option to participate in such Program.</p> <p>(Sec. 7) Continues through FY 2004 current SBA guaranteed loan deferred participation standards.</p> <p>(Sec. 8) Provides through FY 2004: (1) an increase in SBA guaranteed loan limits; and (2) an additional loan guarantee fee.</p>",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ217/PLAW-108publ217.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ217/PLAW-108publ217.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/4062",
+      "votes": []
+    },
+    {
       "id": "sres329-108",
       "congress": 108,
       "type": "sres",
@@ -3125,6 +3634,53 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/108/bills/sres323/BILLS-108sres323ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/323",
+      "votes": []
+    },
+    {
+      "id": "hr3915-108",
+      "congress": 108,
+      "type": "hr",
+      "number": "3915",
+      "title": "To provide for an additional temporary extension of programs under the Small Business Act and the Small Business Investment Act of 1958 through April 2, 2004.\r",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Manzullo, Donald A.",
+        "party": "R",
+        "state": "IL"
+      },
+      "introduced_date": "2004-03-09",
+      "latest_action": {
+        "date": "2004-03-15",
+        "text": "Became Public Law No: 108-205."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commerce",
+      "subjects": [
+        "Administrative fees",
+        "Bonds",
+        "Business education",
+        "Economics and Public Finance",
+        "Entrepreneurs",
+        "Federally-guaranteed loans",
+        "Finance and Financial Sector",
+        "Government Operations and Politics",
+        "Government contractors",
+        "Government lending",
+        "Government procurement",
+        "Law",
+        "Minorities",
+        "Minority business enterprises",
+        "Securities",
+        "Small business",
+        "Venture capital",
+        "Women",
+        "Women in business"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the House on March 10, 2004. The summary of that version is repeated here.)</b></p> <p>Extends through April 2 (currently March 15), 2004, under the same terms and conditions, the authorization for any program, authority, or provision, including any pilot program, that is authorized under the Small Business Act or the Small Business Investment Act of 1958 (SBIA) as of September 30, 2003.</p> <p>Amends the SBIA to extend through May 21, 2004, the authority of the Small Business Administration to charge and collect certain fees in connection with the guarantee of development company debentures under the small business investment program.</p>",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ205/PLAW-108publ205.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ205/PLAW-108publ205.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/3915",
       "votes": []
     },
     {
@@ -3694,6 +4250,52 @@
       "votes": []
     },
     {
+      "id": "sres237-108",
+      "congress": 108,
+      "type": "sres",
+      "number": "237",
+      "title": "A resolution welcoming the public apologies issued by the President of Serbia and Montenegro and the President of the Republic of Croatia and urging other leaders in the region to perform similar concrete acts of reconciliation.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lieberman, Joseph I.",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2003-10-01",
+      "latest_action": {
+        "date": "2003-12-09",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S16196-16197; text as passed Senate: CR S16197)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Commemorations",
+        "Congress",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Croatia",
+        "Displaced persons",
+        "Europe",
+        "Foreign leaders",
+        "Indictments",
+        "International courts",
+        "Law",
+        "Montenegro",
+        "Prosecution",
+        "Refugees",
+        "Serbia",
+        "Serbia and Montenegro",
+        "War crimes",
+        "Yugoslavia"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>Welcomes and commends the public apologies issued on September 10, 2003, by the President of Serbia and Montenegro and the President of the Republic of Croatia for the crimes committed by citizens of each country against citizens of the other country, and recognizes the value of the apologies in the process of reconciliation.</p> <p> Calls upon the governments in the region to continue their efforts to encourage and advance reconciliation.</p> <p> Reiterates the importance of resolving post-conflict issues, including by allowing refugees and the displaced to return home and by bringing to justice indicted war criminals. </p>",
+      "text_url_html": "https://www.congress.gov/108/bills/sres237/BILLS-108sres237ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/bills/sres237/BILLS-108sres237ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/237",
+      "votes": []
+    },
+    {
       "id": "sres280-108",
       "congress": 108,
       "type": "sres",
@@ -3725,6 +4327,44 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/108/bills/sres280/BILLS-108sres280ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/280",
+      "votes": []
+    },
+    {
+      "id": "sres177-108",
+      "congress": 108,
+      "type": "sres",
+      "number": "177",
+      "title": "A resolution to direct the Senate Commission on Art to select an appropriate scene commemorating the Great Compromise of our forefathers establishing a bicameral Congress with equal representation in the United States Senate, to be placed in the Senate wing of the Capitol, and to authorize the Committees on Rules and Administration to obtain technical advice and assistance in carrying out its duties.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Dodd, Christopher J.",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2003-06-19",
+      "latest_action": {
+        "date": "2003-11-25",
+        "text": "Resolution agreed to in Senate with an amendment and an amendment to the Title and an amended preamble by Unanimous Consent. (text as passed Senate: CR S16054)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Art",
+        "Arts, Culture, Religion",
+        "Capitol (Washington, D.C.)",
+        "Congress",
+        "Constitutional conventions",
+        "Federal-state relations",
+        "History",
+        "House of Representatives",
+        "Law",
+        "Senate"
+      ],
+      "summary_crs": " <p>Directs the Senate Commission on Art to select an appropriate scene commemorating the Great Compromise (which established a bicameral Congress with equal State representation in the Senate). Requires such scene to be placed in a location in the Senate wing to be determined by the Chairman and Ranking Member of the Senate Committee on Rules and Administration (Committee).</p> <p>Authorizes the Committee Chairman to seek technical advice and assistance in carrying out its duties from individuals from the public and private sectors, who shall serve without compensation, at the pleasure of the Chairman. Provides that such individuals are not to be deemed to be Senate members, officers, or employees, or to be providing services to the Senate, for purposes of the Senate Code of Official Conduct. Allows such individuals to be reimbursed for transportation expenses.</p>",
+      "text_url_html": "https://www.congress.gov/108/bills/sres177/BILLS-108sres177ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/bills/sres177/BILLS-108sres177ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/177",
       "votes": []
     },
     {
@@ -4339,6 +4979,53 @@
       "votes": []
     },
     {
+      "id": "sres225-108",
+      "congress": 108,
+      "type": "sres",
+      "number": "225",
+      "title": "A resolution commemorating the 100th anniversary of diplomatic relations between the United States and Bulgaria.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. McCain, John",
+        "party": "R",
+        "state": "AZ"
+      },
+      "introduced_date": "2003-09-15",
+      "latest_action": {
+        "date": "2003-09-17",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text:  CR S11706-11707)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Anniversaries",
+        "Armed Forces and National Security",
+        "Arts, Culture, Religion",
+        "Commemorations",
+        "Congress",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Cultural relations",
+        "Democracy",
+        "Diplomacy",
+        "Europe",
+        "European Union",
+        "Foreign Trade and International Finance",
+        "Foreign investments",
+        "Government Operations and Politics",
+        "International cooperation",
+        "Peace",
+        "Public corruption",
+        "Recognition (International law)"
+      ],
+      "summary_crs": " <p>Recognizes: (1) the 100 years of diplomatic relations between the United States and Bulgaria; (2) Bulgaria's continued contributions towards bringing peace, stability, and prosperity to southeastern Europe; (3) Bulgaria's cooperation and increasingly vital role as an ally in the war against terrorism; and (4) the importance of Bulgaria's participation in regional initiatives such as the Stability Pact for Southeast Europe, the Southeast Europe Cooperative Initiative, and the Southeast Europe Cooperation Process in preparing Bulgaria and Southeast Europe for membership in the European Union. Encourages opportunities for greater U.S.-Bulgarian cooperation in political, military, economic, and cultural spheres. </p>",
+      "text_url_html": "https://www.congress.gov/108/bills/sres225/BILLS-108sres225ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/bills/sres225/BILLS-108sres225ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/225",
+      "votes": []
+    },
+    {
       "id": "sres226-108",
       "congress": 108,
       "type": "sres",
@@ -4456,6 +5143,47 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/108/bills/sres224/BILLS-108sres224ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/224",
+      "votes": []
+    },
+    {
+      "id": "sres212-108",
+      "congress": 108,
+      "type": "sres",
+      "number": "212",
+      "title": "A resolution welcoming His Holiness the Fourteenth Dalai Lama and recognizing his commitment to non-violence, human rights, freedom, and democracy.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feinstein, Dianne",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2003-07-31",
+      "latest_action": {
+        "date": "2003-09-08",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text: CR S11190)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Buddhism",
+        "China",
+        "Civil Rights and Liberties, Minority Issues",
+        "Clergy",
+        "Congress",
+        "Congressional tributes",
+        "East Asia",
+        "Human rights",
+        "International Affairs",
+        "Negotiations",
+        "Religion",
+        "Sovereignty",
+        "Tibet"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Declares the sense of the Senate that: (1) the visit of the Dalai Lama to the United States in September 2003 is warmly welcomed; (2) the Dalai Lama should be recognized and congratulated for his consistent efforts to promote dialogue to peacefully resolve the Tibet issue and to increase the religious and cultural autonomy of the Tibetan people; and (3) all parties to the current discussions should be encouraged by the Government of the United States to deepen these contacts in order to achieve the aspirations of the people of Tibet for genuine autonomy and basic human rights.</p>",
+      "text_url_html": "https://www.congress.gov/108/bills/sres212/BILLS-108sres212ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/bills/sres212/BILLS-108sres212ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/212",
       "votes": []
     },
     {
@@ -4737,6 +5465,138 @@
       "votes": []
     },
     {
+      "id": "s1276-108",
+      "congress": 108,
+      "type": "s",
+      "number": "1276",
+      "title": "Strengthen AmeriCorps Program Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Bond, Christopher S.",
+        "party": "R",
+        "state": "MO"
+      },
+      "introduced_date": "2003-06-18",
+      "latest_action": {
+        "date": "2003-07-03",
+        "text": "Became Public Law No: 108-45."
+      },
+      "outcome": "enacted",
+      "policy_area": "Social Welfare",
+      "subjects": [
+        "Administrative procedure",
+        "Auditing",
+        "Congress",
+        "Congressional oversight",
+        "Congressional reporting requirements",
+        "Corporation for National and Community Service",
+        "Economics and Public Finance",
+        "Education",
+        "Federal aid to education",
+        "Finance and Financial Sector",
+        "Government Operations and Politics",
+        "Government corporations",
+        "Government paperwork",
+        "Government trust funds",
+        "Grants-in-aid",
+        "Higher education",
+        "Law",
+        "National service",
+        "Scholarships"
+      ],
+      "summary_crs": "Strengthen AmeriCorps Program Act - Revises the manner in which the Corporation for National and Community Service approves, and records obligations relating to, national service positions under the National and Community Service Act of 1990 and the Domestic Volunteer Service Act of 1973.",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ45/PLAW-108publ45.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ45/PLAW-108publ45.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-bill/1276",
+      "votes": []
+    },
+    {
+      "id": "sres149-108",
+      "congress": 108,
+      "type": "sres",
+      "number": "149",
+      "title": "A resolution expressing the sense of the Senate that the international response to the current need for food in the Horn of Africa remains inadequate.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feingold, Russell D.",
+        "party": "D",
+        "state": "WI"
+      },
+      "introduced_date": "2003-05-20",
+      "latest_action": {
+        "date": "2003-06-27",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (consideration: CR S8848; text as passed Senate: CR S8848)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "AIDS (Disease)",
+        "Africa",
+        "Africa (Sub-Saharan)",
+        "Agricultural assistance",
+        "Agriculture and Food",
+        "Developing countries",
+        "Disaster relief",
+        "Djibouti",
+        "Emergency Management",
+        "Eritrea",
+        "Ethiopia",
+        "Famines",
+        "Food relief",
+        "Food supply",
+        "Government Operations and Politics",
+        "Health",
+        "Human immunodeficiency viruses",
+        "Hunger",
+        "Infrastructure"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The expanded summary of the Senate reported version is repeated here.)</b></p> <p>Expresses the sense of the Senate that the President should take the following actions concerning U.S. food assistance programs: (1) review the programs to ensure that needs in Africa are met to the same degree as food needs elsewhere in the world; (2) shift available food assistance resources to meet needs in the Horn of Africa, including by drawdowns of reserve stocks in the Emerson Humanitarian Trust; (3) encourage other donors to commit increased resources; (4) direct the Secretaries of State and of Agriculture and the Administrator of the United States Agency for International Development (USAID) to develop with international organizations, other donor countries, and African governments a long-term comprehensive strategy for sustainable recovery in regions affected by food crisis.</p>",
+      "text_url_html": "https://www.congress.gov/108/bills/sres149/BILLS-108sres149ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/bills/sres149/BILLS-108sres149ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/149",
+      "votes": []
+    },
+    {
+      "id": "sres178-108",
+      "congress": 108,
+      "type": "sres",
+      "number": "178",
+      "title": "A resolution to prohibit Members of the Senate and other persons from removing art and historic objects from the Senate wing of the Capitol and Senate office buildings for personal use.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Dodd, Christopher J.",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2003-06-20",
+      "latest_action": {
+        "date": "2003-06-27",
+        "text": "Resolution agreed to in Senate without amendment by Unanimous Consent. (consideration: CR S8846; text as passed Senate: CR S8846)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Art",
+        "Congressional committees",
+        "Congressional office buildings",
+        "Congressional reporting requirements",
+        "Government Operations and Politics",
+        "Government paperwork",
+        "Government property",
+        "History",
+        "Senate",
+        "Senate Rules and Administration"
+      ],
+      "summary_crs": "Prohibits Members of the Senate and other persons from removing works of art, historical objects, or exhibits from the Senate wing of the Capitol or any Senate office building for personal use.",
+      "text_url_html": "https://www.congress.gov/108/bills/sres178/BILLS-108sres178ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/bills/sres178/BILLS-108sres178ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/178",
+      "votes": []
+    },
+    {
       "id": "sres186-108",
       "congress": 108,
       "type": "sres",
@@ -4839,6 +5699,43 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/108/bills/sres190/BILLS-108sres190ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/190",
+      "votes": []
+    },
+    {
+      "id": "sres90-108",
+      "congress": 108,
+      "type": "sres",
+      "number": "90",
+      "title": "A resolution expressing the sense of the Senate that the Senate strongly supports the nonproliferation programs of the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Byrd, Robert C.",
+        "party": "D",
+        "state": "WV"
+      },
+      "introduced_date": "2003-03-17",
+      "latest_action": {
+        "date": "2003-06-27",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (consideration: CR S8848-8849; text as passed Senate: CR S8848-8849)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Appropriations",
+        "Armed Forces and National Security",
+        "Arms control",
+        "Arms control verification",
+        "Biological warfare",
+        "Chemical warfare",
+        "Economics and Public Finance",
+        "Nuclear nonproliferation",
+        "Russia"
+      ],
+      "summary_crs": "Declares the sense of the Senate that: (1) the Senate strongly supports the nonproliferation programs of the Department of Defense, the Department of Energy, and the Department of State (Federal nonproliferation programs), which are intended to reduce the worldwide threat posed by nuclear, chemical, and biological weapons that remain unsecured in the Russian Federation and elsewhere; (2) the Russian Federation should continue to improve U.S. access to key facilities, and the sharing of information with the United States, so as to bring a successful and timely conclusion to various nonproliferation programs and activities; and (3) the United States should redouble its efforts to achieve full implementation of the Federal nonproliferation programs under effective management, and make full use of all funds that Congress appropriates or otherwise makes available for such programs.",
+      "text_url_html": "https://www.congress.gov/108/bills/sres90/BILLS-108sres90rs.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/bills/sres90/BILLS-108sres90rs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/90",
       "votes": []
     },
     {
@@ -5598,6 +6495,53 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/108/bills/sres105/BILLS-108sres105ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/105",
+      "votes": []
+    },
+    {
+      "id": "sres97-108",
+      "congress": 108,
+      "type": "sres",
+      "number": "97",
+      "title": "A resolution expressing the sense of the Senate regarding the arrests of Cuban democracy activists by the Cuban Government.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Nelson, Bill",
+        "party": "D",
+        "state": "FL"
+      },
+      "introduced_date": "2003-03-25",
+      "latest_action": {
+        "date": "2003-04-07",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (text as passed Senate: CR S4914-4915)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Amnesties",
+        "Arrest",
+        "Caribbean area",
+        "Civil Rights and Liberties, Minority Issues",
+        "Commemorations",
+        "Congress",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Cuba",
+        "Cubans",
+        "Democracy",
+        "Dissenters",
+        "Freedom of speech",
+        "Government Operations and Politics",
+        "Human rights",
+        "Latin America",
+        "Political persecution",
+        "Political prisoners",
+        "Right of petition"
+      ],
+      "summary_crs": "Condemns the recent arrests and other intimidation tactics against democracy activists by the Castro regime.<p>Calls on the Cuban Government to release immediately those imprisoned and held during this most recent crackdown for activities the government wrongly deems \"subversive, counter-revolutionary, and provocative.\"<p>Reaffirms Senate Resolution 272, 107th Congress, which was agreed to on June 10, 2002, without opposition and which called for, among other things, amnesty for all political prisoners.<p>Praises the bravery of those Cubans who, because they practiced free speech and signed the Varela Project petition, have been targeted in this most recent government crackdown.<p>Urges the President to demand the immediate release of these prisoners and to take all appropriate steps to secure their immediate release.",
+      "text_url_html": "https://www.congress.gov/108/bills/sres97/BILLS-108sres97ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/bills/sres97/BILLS-108sres97ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/97",
       "votes": []
     },
     {
