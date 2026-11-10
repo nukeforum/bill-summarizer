@@ -1,8 +1,103 @@
 {
-  "generated_at": "2026-11-09T16:44:59Z",
+  "generated_at": "2026-11-10T15:08:18Z",
   "congress": 119,
-  "vote_count": 1590,
+  "vote_count": 1593,
   "votes": [
+    {
+      "id": "house-119-2-316",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 316,
+      "date": "2026-11-09",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr9612-119",
+      "totals": {
+        "yea": 394,
+        "nay": 3,
+        "present": 0,
+        "not_voting": 36
+      },
+      "party_split": {
+        "yea": {
+          "D": 197,
+          "I": 1,
+          "R": 196
+        },
+        "nay": {
+          "D": 3
+        },
+        "not_voting": {
+          "D": 14,
+          "R": 22
+        }
+      },
+      "path": "votes/congress119/house-2-316.json"
+    },
+    {
+      "id": "house-119-2-315",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 315,
+      "date": "2026-11-09",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr3978-119",
+      "totals": {
+        "yea": 397,
+        "nay": 2,
+        "present": 0,
+        "not_voting": 34
+      },
+      "party_split": {
+        "yea": {
+          "D": 200,
+          "I": 1,
+          "R": 196
+        },
+        "nay": {
+          "D": 2
+        },
+        "not_voting": {
+          "D": 12,
+          "R": 22
+        }
+      },
+      "path": "votes/congress119/house-2-315.json"
+    },
+    {
+      "id": "senate-119-2-257",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 257,
+      "date": "2026-11-09",
+      "question": "On Cloture on the Motion to Proceed",
+      "result": "Cloture on the Motion to Proceed Agreed to",
+      "bill_id": "hr2347-119",
+      "totals": {
+        "yea": 73,
+        "nay": 25,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "D": 21,
+          "I": 1,
+          "R": 51
+        },
+        "nay": {
+          "D": 23,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-257.json"
+    },
     {
       "id": "senate-119-2-256",
       "chamber": "senate",
