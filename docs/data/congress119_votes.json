@@ -1,8 +1,132 @@
 {
-  "generated_at": "2026-11-10T15:08:18Z",
+  "generated_at": "2026-11-11T14:38:52Z",
   "congress": 119,
-  "vote_count": 1593,
+  "vote_count": 1597,
   "votes": [
+    {
+      "id": "house-119-2-319",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 319,
+      "date": "2026-11-10",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres1650-119",
+      "totals": {
+        "yea": 215,
+        "nay": 209,
+        "present": 0,
+        "not_voting": 9
+      },
+      "party_split": {
+        "yea": {
+          "I": 1,
+          "R": 214
+        },
+        "nay": {
+          "D": 209
+        },
+        "not_voting": {
+          "D": 5,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/house-2-319.json"
+    },
+    {
+      "id": "house-119-2-318",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 318,
+      "date": "2026-11-10",
+      "question": "On Ordering the Previous Question",
+      "result": "Passed",
+      "bill_id": "hres1650-119",
+      "totals": {
+        "yea": 213,
+        "nay": 207,
+        "present": 0,
+        "not_voting": 13
+      },
+      "party_split": {
+        "yea": {
+          "I": 1,
+          "R": 212
+        },
+        "nay": {
+          "D": 207
+        },
+        "not_voting": {
+          "D": 7,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/house-2-318.json"
+    },
+    {
+      "id": "house-119-2-317",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 317,
+      "date": "2026-11-10",
+      "question": "On Motion to Refer",
+      "result": "Passed",
+      "bill_id": "hres1655-119",
+      "totals": {
+        "yea": 211,
+        "nay": 204,
+        "present": 0,
+        "not_voting": 18
+      },
+      "party_split": {
+        "yea": {
+          "I": 1,
+          "R": 210
+        },
+        "nay": {
+          "D": 203,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 11,
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/house-2-317.json"
+    },
+    {
+      "id": "senate-119-2-258",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 258,
+      "date": "2026-11-10",
+      "question": "On the Motion to Proceed",
+      "result": "Motion to Proceed Agreed to",
+      "bill_id": "hr2347-119",
+      "totals": {
+        "yea": 62,
+        "nay": 21,
+        "present": 0,
+        "not_voting": 17
+      },
+      "party_split": {
+        "yea": {
+          "D": 15,
+          "I": 1,
+          "R": 46
+        },
+        "nay": {
+          "D": 19,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 11,
+          "R": 6
+        }
+      },
+      "path": "votes/congress119/senate-2-258.json"
+    },
     {
       "id": "house-119-2-316",
       "chamber": "house",

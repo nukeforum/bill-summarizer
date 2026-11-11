@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T13:39:21Z",
+  "generated_at": "2026-11-11T14:38:52Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
@@ -21,6 +21,7 @@
         "text": "Rule H. Res. 1650 passed House."
       },
       "outcome": "passed_house",
+      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Employee benefits and pensions",
@@ -54,6 +55,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Foreign Trade and International Finance",
       "subjects": [
         "Customs enforcement",
@@ -85,6 +87,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [],
       "summary_crs": "<p>This bill adjusts the boundary of the Dayton Aviation Heritage National Historical Park to include approximately one acre of land in Dayton, Ohio.</p>",
@@ -112,6 +115,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "California",
@@ -144,6 +148,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Advanced technology and technological innovations",
@@ -191,6 +196,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": null,
@@ -218,6 +224,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Alternative and renewable resources",
@@ -249,6 +256,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Child health",
@@ -280,6 +288,7 @@
         "text": "Passed Senate with an amendment by Voice Vote. (consideration: CR S5376-5377; text: CR S5376-5377)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Education",
       "subjects": [
         "Data collection, sharing, protection",
@@ -314,6 +323,7 @@
         "text": "Became Public Law No: 119-137."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Human rights",
@@ -346,6 +356,7 @@
         "text": "Became Public Law No: 119-138."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Department of Health and Human Services",
@@ -385,6 +396,7 @@
         "text": "Became Public Law No: 119-136."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -419,6 +431,7 @@
         "text": "Became Public Law No: 119-135."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "California",
@@ -449,6 +462,7 @@
         "text": "Became Public Law No: 119-127."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Commerce",
       "subjects": [
         "Government studies and investigations",
@@ -480,7 +494,8 @@
         "date": "2026-10-20",
         "text": "Became Public Law No: 119-125."
       },
-      "outcome": "enacted",
+      "outcome": "passed_house",
+      "status": null,
       "policy_area": "Social Welfare",
       "subjects": [
         "Congressional oversight",
@@ -547,6 +562,7 @@
         "text": "Became Public Law No: 119-128."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Federal-Indian relations",
@@ -581,6 +597,7 @@
         "text": "Became Public Law No: 119-129."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Commerce",
       "subjects": [
         "Civil actions and liability",
@@ -614,6 +631,7 @@
         "text": "Became Public Law No: 119-130."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Alaska",
@@ -645,6 +663,7 @@
         "text": "Became Public Law No: 119-131."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [
         "Congressional oversight",
@@ -681,6 +700,7 @@
         "text": "Became Public Law No: 119-132."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Mississippi",
@@ -711,6 +731,7 @@
         "text": "Became Public Law No: 119-133."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Arizona",
@@ -743,6 +764,7 @@
         "text": "Became Public Law No: 119-134."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Licensing and registrations",
@@ -774,6 +796,7 @@
         "text": "Became Public Law No: 119-126."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Arizona",
@@ -806,6 +829,7 @@
         "text": "Became Public Law No: 119-122."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Dams and canals",
@@ -838,7 +862,8 @@
         "date": "2026-10-15",
         "text": "Became Public Law No: 119-124."
       },
-      "outcome": "enacted",
+      "outcome": "passed_house",
+      "status": null,
       "policy_area": "Labor and Employment",
       "subjects": [
         "Employee benefits and pensions",
@@ -902,6 +927,7 @@
         "text": "Became Public Law No: 119-123."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional oversight",
@@ -1131,6 +1157,7 @@
         "text": "Passed Senate with an amendment and an amendment to the Title by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Taxation",
       "subjects": [
         "Administrative remedies",
@@ -1375,6 +1402,7 @@
         "text": "Became Public Law No: 119-118."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Health programs administration and funding",
@@ -2754,6 +2782,7 @@
         "text": "Became Public Law No: 119-117."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -3133,7 +3162,8 @@
         "date": "2026-09-18",
         "text": "Became Public Law No: 119-111."
       },
-      "outcome": "enacted",
+      "outcome": "passed_senate",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Civil actions and liability",
