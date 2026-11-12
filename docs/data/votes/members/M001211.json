@@ -1,8 +1,44 @@
 {
-  "generated_at": "2026-11-11T14:38:52Z",
+  "generated_at": "2026-11-12T15:30:49Z",
   "bioguide_id": "M001211",
-  "vote_count": 680,
+  "vote_count": 683,
   "votes": [
+    {
+      "vote_id": "house-119-2-322",
+      "congress": 119,
+      "date": "2026-11-12",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "position": "nay",
+      "bill_id": "hres1247-119",
+      "type": "hres",
+      "number": "1247",
+      "short_title": null
+    },
+    {
+      "vote_id": "house-119-2-321",
+      "congress": 119,
+      "date": "2026-11-11",
+      "question": "On Passage",
+      "result": "Passed",
+      "position": "yea",
+      "bill_id": "hr1013-119",
+      "type": "hr",
+      "number": "1013",
+      "short_title": null
+    },
+    {
+      "vote_id": "house-119-2-320",
+      "congress": 119,
+      "date": "2026-11-11",
+      "question": "On Motion to Discharge",
+      "result": "Passed",
+      "position": "nay",
+      "bill_id": "hres1247-119",
+      "type": "hres",
+      "number": "1247",
+      "short_title": null
+    },
     {
       "vote_id": "house-119-2-319",
       "congress": 119,

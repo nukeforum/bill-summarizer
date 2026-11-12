@@ -1,8 +1,101 @@
 {
-  "generated_at": "2026-11-11T14:38:52Z",
+  "generated_at": "2026-11-12T15:30:49Z",
   "congress": 119,
-  "vote_count": 1597,
+  "vote_count": 1600,
   "votes": [
+    {
+      "id": "house-119-2-322",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 322,
+      "date": "2026-11-12",
+      "question": "On Agreeing to the Resolution",
+      "result": "Passed",
+      "bill_id": "hres1247-119",
+      "totals": {
+        "yea": 271,
+        "nay": 135,
+        "present": 0,
+        "not_voting": 26
+      },
+      "party_split": {
+        "yea": {
+          "D": 210,
+          "I": 1,
+          "R": 60
+        },
+        "nay": {
+          "R": 135
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 22
+        }
+      },
+      "path": "votes/congress119/house-2-322.json"
+    },
+    {
+      "id": "house-119-2-321",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 321,
+      "date": "2026-11-11",
+      "question": "On Passage",
+      "result": "Passed",
+      "bill_id": "hr1013-119",
+      "totals": {
+        "yea": 295,
+        "nay": 128,
+        "present": 0,
+        "not_voting": 10
+      },
+      "party_split": {
+        "yea": {
+          "D": 83,
+          "I": 1,
+          "R": 211
+        },
+        "nay": {
+          "D": 128
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 7
+        }
+      },
+      "path": "votes/congress119/house-2-321.json"
+    },
+    {
+      "id": "house-119-2-320",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 320,
+      "date": "2026-11-11",
+      "question": "On Motion to Discharge",
+      "result": "Passed",
+      "bill_id": "hres1247-119",
+      "totals": {
+        "yea": 245,
+        "nay": 175,
+        "present": 0,
+        "not_voting": 13
+      },
+      "party_split": {
+        "yea": {
+          "D": 210,
+          "I": 1,
+          "R": 34
+        },
+        "nay": {
+          "R": 175
+        },
+        "not_voting": {
+          "D": 4,
+          "R": 9
+        }
+      },
+      "path": "votes/congress119/house-2-320.json"
+    },
     {
       "id": "house-119-2-319",
       "chamber": "house",
