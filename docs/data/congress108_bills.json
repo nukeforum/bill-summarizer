@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T19:27:32Z",
+  "generated_at": "2026-11-12T19:45:19Z",
   "congress": 108,
   "votes_coverage": false,
   "bills": [
@@ -12316,6 +12316,50 @@
       "votes": []
     },
     {
+      "id": "s1805-108",
+      "congress": 108,
+      "type": "s",
+      "number": "1805",
+      "title": "Protection of Lawful Commerce in Arms Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Craig, Larry E.",
+        "party": "R",
+        "state": "ID"
+      },
+      "introduced_date": "2003-10-31",
+      "latest_action": {
+        "date": "2004-03-02",
+        "text": "Failed of passage in Senate by Yea-Nay Vote. 8 - 90. Record Vote Number: 30."
+      },
+      "outcome": "failed",
+      "policy_area": "Law",
+      "subjects": [
+        "Ammunition",
+        "Civil actions and liability",
+        "Commerce",
+        "Crime and Law Enforcement",
+        "District courts",
+        "Firearms",
+        "Firearms injuries",
+        "Government Operations and Politics",
+        "Health",
+        "Jurisdiction",
+        "Liability (Law)",
+        "Products liability",
+        "Retail trade",
+        "State courts",
+        "Torts",
+        "Trade associations"
+      ],
+      "summary_crs": " Protection of Lawful Commerce in Arms Act - Prohibits any qualified civil liability action from being brought in any State or Federal court and requires pending actions to be dismissed. Defines such an action to: (1) include an action brought against a manufacturer or seller of a firearm, ammunition, or a component of a firearm that has been shipped or transported in interstate or foreign commerce (qualified product), or against a trade association of such manufacturers or sellers, for damages resulting from the criminal or unlawful misuse of a firearm; and (2) exclude an action brought against persons who transfer a firearm knowing that it will be used to commit a crime of violence or a drug trafficking crime; an action brought against a seller for negligent entrustment or negligence per se; an action in which a manufacturer or seller of a firearm willfully violated a State or Federal statute applicable to the sale or marketing of the firearm and the violation was a proximate cause of the harm for which relief is sought; an action for breach of contract or warranty in connection with the purchase of the firearm; or an action for physical injuries or property damage resulting directly from a defect in design or manufacture of the firearm when used as intended or in a manner that is reasonably foreseeable.",
+      "text_url_html": "https://www.congress.gov/108/bills/s1805/BILLS-108s1805pcs.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/bills/s1805/BILLS-108s1805pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-bill/1805",
+      "votes": []
+    },
+    {
       "id": "s523-108",
       "congress": 108,
       "type": "s",
@@ -15567,6 +15611,53 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/108/bills/sres268/BILLS-108sres268ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/268",
+      "votes": []
+    },
+    {
+      "id": "hr1442-108",
+      "congress": 108,
+      "type": "hr",
+      "number": "1442",
+      "title": "Vietnam Veterans Memorial Visitor Center Act ",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Pombo, Richard W.",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2003-03-26",
+      "latest_action": {
+        "date": "2003-11-17",
+        "text": "Became Public Law No: 108-126."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Arts, Culture, Religion",
+        "Building construction",
+        "Commemorations",
+        "Commerce",
+        "Congress",
+        "Congressional reporting requirements",
+        "Construction costs",
+        "Exhibitions",
+        "Gifts",
+        "Government Operations and Politics",
+        "History",
+        "Leases",
+        "Maintenance and repair",
+        "Monuments and memorials",
+        "Tourism",
+        "Transportation and Public Works",
+        "Vietnam veterans",
+        "Vietnamese Conflict"
+      ],
+      "summary_crs": "Vietnam Veterans Memorial Visitor Center Act - Authorizes the Vietnam Veterans Memorial Fund, Inc. to design and construct a visitor center for the Vietnam Veterans Memorial. Directs the Commission on Fine Arts to approve a final design for the center within one year. Requires the center to be operated and maintained by the Secretary of the Interior subject to the Secretary entering into an operation and maintenance agreement with the Memorial Fund.<p>Prohibits the use of any Federal funds for the planning, design, construction, operation, or maintenance of such center.",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ126/PLAW-108publ126.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ126/PLAW-108publ126.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/1442",
       "votes": []
     },
     {
