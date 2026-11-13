@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T13:59:22Z",
+  "generated_at": "2026-11-13T14:48:31Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
@@ -21,6 +21,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "District of Columbia",
@@ -53,6 +54,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "California",
@@ -85,6 +87,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Bank accounts, deposits, capital",
@@ -122,6 +125,7 @@
         "text": "Passed Senate without amendment by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -155,6 +159,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [],
       "summary_crs": null,
@@ -423,6 +428,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": null,
@@ -450,6 +456,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Alternative and renewable resources",
@@ -481,6 +488,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Child health",
@@ -547,6 +555,7 @@
         "text": "Became Public Law No: 119-137."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Human rights",
@@ -579,6 +588,7 @@
         "text": "Became Public Law No: 119-138."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Department of Health and Human Services",
@@ -618,6 +628,7 @@
         "text": "Became Public Law No: 119-136."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -652,6 +663,7 @@
         "text": "Became Public Law No: 119-135."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "California",
@@ -682,6 +694,7 @@
         "text": "Became Public Law No: 119-127."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Commerce",
       "subjects": [
         "Government studies and investigations",
@@ -713,7 +726,8 @@
         "date": "2026-10-20",
         "text": "Became Public Law No: 119-125."
       },
-      "outcome": "enacted",
+      "outcome": "passed_house",
+      "status": null,
       "policy_area": "Social Welfare",
       "subjects": [
         "Congressional oversight",
@@ -780,6 +794,7 @@
         "text": "Became Public Law No: 119-128."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Federal-Indian relations",
@@ -814,6 +829,7 @@
         "text": "Became Public Law No: 119-129."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Commerce",
       "subjects": [
         "Civil actions and liability",
@@ -847,6 +863,7 @@
         "text": "Became Public Law No: 119-130."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Alaska",
@@ -946,6 +963,7 @@
         "text": "Became Public Law No: 119-133."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Arizona",
@@ -978,6 +996,7 @@
         "text": "Became Public Law No: 119-134."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Licensing and registrations",
@@ -1075,7 +1094,8 @@
         "date": "2026-10-15",
         "text": "Became Public Law No: 119-124."
       },
-      "outcome": "enacted",
+      "outcome": "passed_house",
+      "status": null,
       "policy_area": "Labor and Employment",
       "subjects": [
         "Employee benefits and pensions",
@@ -1139,6 +1159,7 @@
         "text": "Became Public Law No: 119-123."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional oversight",
@@ -1304,6 +1325,7 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5297-5298)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "California",
@@ -1367,6 +1389,7 @@
         "text": "Passed Senate with an amendment and an amendment to the Title by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Taxation",
       "subjects": [
         "Administrative remedies",
@@ -1611,6 +1634,7 @@
         "text": "Became Public Law No: 119-118."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Health programs administration and funding",
@@ -2990,6 +3014,7 @@
         "text": "Became Public Law No: 119-117."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -3369,7 +3394,8 @@
         "date": "2026-09-18",
         "text": "Became Public Law No: 119-111."
       },
-      "outcome": "enacted",
+      "outcome": "passed_senate",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Civil actions and liability",
