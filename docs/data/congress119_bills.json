@@ -1,8 +1,169 @@
 {
-  "generated_at": "2026-11-12T15:30:49Z",
+  "generated_at": "2026-11-13T13:59:22Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "s1353-119",
+      "congress": 119,
+      "type": "s",
+      "number": "1353",
+      "title": "A bill to extend the authority for modifications to the Second Division Memorial in the District of Columbia.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Murkowski, Lisa",
+        "party": "R",
+        "state": "AK"
+      },
+      "introduced_date": "2025-04-08",
+      "latest_action": {
+        "date": "2026-11-12",
+        "text": "Passed Senate with an amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "District of Columbia",
+        "Military history",
+        "Monuments and memorials",
+        "Veterans' organizations and recognition"
+      ],
+      "summary_crs": "<p>This bill extends through September 30, 2032, the authority to modify the Second Division Memorial located in President’s Park in the District of Columbia. Specifically, it extends the authority of the Second Indianhead Division Association, Inc., Scholarship and Memorials Foundation to place additional commemorative elements or engravings on the raised platform or stone work to honor the members of the Second Infantry Division who have given their lives in service to the United States.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/s1353/BILLS-119s1353es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s1353/BILLS-119s1353es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s1353/BILLS-119s1353es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1353",
+      "votes": []
+    },
+    {
+      "id": "s2887-119",
+      "congress": 119,
+      "type": "s",
+      "number": "2887",
+      "title": "Route 66 National Historic Trail Designation Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cruz, Ted",
+        "party": "R",
+        "state": "TX"
+      },
+      "introduced_date": "2025-09-18",
+      "latest_action": {
+        "date": "2026-11-12",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "California",
+        "Illinois",
+        "Land use and conservation",
+        "Parks, recreation areas, trails"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s2887/BILLS-119s2887es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s2887/BILLS-119s2887es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s2887/BILLS-119s2887es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2887",
+      "votes": []
+    },
+    {
+      "id": "s3493-119",
+      "congress": 119,
+      "type": "s",
+      "number": "3493",
+      "title": "Carson City Public Land Correction Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Rosen, Jacky",
+        "party": "D",
+        "state": "NV"
+      },
+      "introduced_date": "2025-12-16",
+      "latest_action": {
+        "date": "2026-11-12",
+        "text": "Passed Senate with an amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Bank accounts, deposits, capital",
+        "Geography and mapping",
+        "Interest, dividends, interest rates",
+        "Land transfers",
+        "Land use and conservation",
+        "Nevada",
+        "Public utilities and utility rates",
+        "Roads and highways",
+        "Wildlife conservation and habitat protection"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s3493/BILLS-119s3493es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s3493/BILLS-119s3493es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s3493/BILLS-119s3493es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/3493",
+      "votes": []
+    },
+    {
+      "id": "s432-119",
+      "congress": 119,
+      "type": "s",
+      "number": "432",
+      "title": "Fort Ontario Holocaust Refugee Shelter National Historical Park Establishment Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Gillibrand, Kirsten E.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2025-02-05",
+      "latest_action": {
+        "date": "2026-11-12",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Geography and mapping",
+        "Monuments and memorials",
+        "New York State",
+        "Parks, recreation areas, trails",
+        "Public-private cooperation"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s432/BILLS-119s432es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s432/BILLS-119s432es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s432/BILLS-119s432es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/432",
+      "votes": []
+    },
+    {
+      "id": "sres834-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "834",
+      "title": "A resolution honoring and commending the 100th anniversary of the Golf Course Superintendents Association of America.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Moran, Jerry",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2026-08-06",
+      "latest_action": {
+        "date": "2026-11-12",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Sports and Recreation",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres834/BILLS-119sres834is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres834/BILLS-119sres834is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres834/BILLS-119sres834is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/834",
+      "votes": []
+    },
     {
       "id": "hr8552-119",
       "congress": 119,
@@ -259,16 +420,15 @@
       "introduced_date": "2025-10-29",
       "latest_action": {
         "date": "2026-11-10",
-        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": null,
-      "text_url_html": "https://www.congress.gov/119/bills/sres472/BILLS-119sres472is.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/sres472/BILLS-119sres472is.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/sres472/BILLS-119sres472is.pdf",
+      "text_url_html": "https://www.congress.gov/119/bills/sres472/BILLS-119sres472ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres472/BILLS-119sres472ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres472/BILLS-119sres472ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/472",
       "votes": []
     },
@@ -287,10 +447,9 @@
       "introduced_date": "2026-10-15",
       "latest_action": {
         "date": "2026-11-10",
-        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Alternative and renewable resources",
@@ -298,9 +457,9 @@
         "Energy efficiency and conservation"
       ],
       "summary_crs": "<p>This resolution designates the week of September 14-18, 2026, as National Clean Energy Week.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/sres950/BILLS-119sres950is.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/sres950/BILLS-119sres950is.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/sres950/BILLS-119sres950is.pdf",
+      "text_url_html": "https://www.congress.gov/119/bills/sres950/BILLS-119sres950ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres950/BILLS-119sres950ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres950/BILLS-119sres950ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/950",
       "votes": []
     },
@@ -319,10 +478,9 @@
       "introduced_date": "2026-10-15",
       "latest_action": {
         "date": "2026-11-10",
-        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Child health",
@@ -330,9 +488,9 @@
         "Health promotion and preventive care"
       ],
       "summary_crs": null,
-      "text_url_html": "https://www.congress.gov/119/bills/sres951/BILLS-119sres951is.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/sres951/BILLS-119sres951is.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/sres951/BILLS-119sres951is.pdf",
+      "text_url_html": "https://www.congress.gov/119/bills/sres951/BILLS-119sres951ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres951/BILLS-119sres951ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres951/BILLS-119sres951ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/951",
       "votes": []
     },
@@ -389,7 +547,6 @@
         "text": "Became Public Law No: 119-137."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Human rights",
@@ -422,7 +579,6 @@
         "text": "Became Public Law No: 119-138."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Department of Health and Human Services",
@@ -462,7 +618,6 @@
         "text": "Became Public Law No: 119-136."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -497,7 +652,6 @@
         "text": "Became Public Law No: 119-135."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "California",
@@ -528,7 +682,6 @@
         "text": "Became Public Law No: 119-127."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Commerce",
       "subjects": [
         "Government studies and investigations",
@@ -560,8 +713,7 @@
         "date": "2026-10-20",
         "text": "Became Public Law No: 119-125."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Social Welfare",
       "subjects": [
         "Congressional oversight",
@@ -628,7 +780,6 @@
         "text": "Became Public Law No: 119-128."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Federal-Indian relations",
@@ -663,7 +814,6 @@
         "text": "Became Public Law No: 119-129."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Commerce",
       "subjects": [
         "Civil actions and liability",
@@ -697,7 +847,6 @@
         "text": "Became Public Law No: 119-130."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Alaska",
@@ -797,7 +946,6 @@
         "text": "Became Public Law No: 119-133."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Arizona",
@@ -830,7 +978,6 @@
         "text": "Became Public Law No: 119-134."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Licensing and registrations",
@@ -928,8 +1075,7 @@
         "date": "2026-10-15",
         "text": "Became Public Law No: 119-124."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Labor and Employment",
       "subjects": [
         "Employee benefits and pensions",
@@ -993,7 +1139,6 @@
         "text": "Became Public Law No: 119-123."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional oversight",
@@ -1159,14 +1304,13 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5297-5298)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "California",
         "Indian lands and resources rights",
         "Land transfers"
       ],
-      "summary_crs": "<p><strong>Pit River Land Transfer Act of 2025</strong></p><p>This bill takes approximately 603.94 acres of specified lands in California into trust for the benefit of the Pit River Tribe.</p><p>Specifically, the bill directs the Department of the Interior to take the following lands into trust for the benefit of the tribe: (1) approximately 583.79 acres of federal land managed by the Forest Service (but excluding approximately 20.03 acres of roads, highways, and public rights-of-way subject to existing easements), and (2) approximately 40.18 acres of fee land held by the tribe. These combined lands, approximately 603.94 acres, shall be part of the tribe's reservation. Further, the bill prohibits gaming on the land taken into trust.</p>",
+      "summary_crs": "<p><strong>Pit River Land Transfer Act of 2026</strong></p><p>This bill takes approximately 557 acres of specified federal land in Shasta County, California, into trust for the benefit of the Pit River Tribe.</p><p>The land, known as the Four Corners Property, is currently administered and managed by the Forest Service.&nbsp;Administrative jurisdiction over the land must be transferred to the Department of the Interior. Interior must then take the land into trust for the benefit of the Tribe. The land taken into trust shall be part of the Tribe's reservation.</p><p>The bill also prohibits gaming on the land taken into trust.</p>",
       "text_url_html": "https://www.congress.gov/119/bills/hr2400/BILLS-119hr2400eas.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/hr2400/BILLS-119hr2400eas.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/hr2400/BILLS-119hr2400eas.pdf",
@@ -1223,7 +1367,6 @@
         "text": "Passed Senate with an amendment and an amendment to the Title by Unanimous Consent."
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Taxation",
       "subjects": [
         "Administrative remedies",
@@ -1468,7 +1611,6 @@
         "text": "Became Public Law No: 119-118."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Health programs administration and funding",
@@ -2848,7 +2990,6 @@
         "text": "Became Public Law No: 119-117."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -3228,8 +3369,7 @@
         "date": "2026-09-18",
         "text": "Became Public Law No: 119-111."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "International Affairs",
       "subjects": [
         "Civil actions and liability",
