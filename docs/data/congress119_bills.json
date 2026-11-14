@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T14:48:31Z",
+  "generated_at": "2026-11-14T13:02:07Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
@@ -18,10 +18,9 @@
       "introduced_date": "2025-04-08",
       "latest_action": {
         "date": "2026-11-12",
-        "text": "Passed Senate with an amendment by Unanimous Consent."
+        "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5666-5667; text: CR S5667)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "District of Columbia",
@@ -51,10 +50,9 @@
       "introduced_date": "2025-09-18",
       "latest_action": {
         "date": "2026-11-12",
-        "text": "Passed Senate without amendment by Unanimous Consent."
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5668; text: CR S5668-5669)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "California",
@@ -84,10 +82,9 @@
       "introduced_date": "2025-12-16",
       "latest_action": {
         "date": "2026-11-12",
-        "text": "Passed Senate with an amendment by Unanimous Consent."
+        "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5666-5667; text: CR S5667-5668)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Bank accounts, deposits, capital",
@@ -122,10 +119,9 @@
       "introduced_date": "2025-02-05",
       "latest_action": {
         "date": "2026-11-12",
-        "text": "Passed Senate without amendment by Unanimous Consent."
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5668; text: CR S5669)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -156,10 +152,9 @@
       "introduced_date": "2026-08-06",
       "latest_action": {
         "date": "2026-11-12",
-        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5666)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [],
       "summary_crs": null,
@@ -270,6 +265,73 @@
       ]
     },
     {
+      "id": "hr1703-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "1703",
+      "title": "Choices for Increased Mobility Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Joyce, John",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2025-02-27",
+      "latest_action": {
+        "date": "2026-11-10",
+        "text": "Became Public Law No: 119-140."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Aging",
+        "Disability and paralysis",
+        "Health care costs and insurance",
+        "Health technology, devices, supplies",
+        "Medicare"
+      ],
+      "summary_crs": "<p><strong>Choices for Increased Mobility Act of 2025</strong></p><p>This bill requires the Centers for Medicare &amp; Medicaid Services (CMS) to establish specific billing codes under Medicare for certain materials used in ultralightweight manual wheelchairs.</p><p>Specifically, the CMS must establish at least two billing codes for the base of the wheelchair, with at least one code for a base with titanium or carbon fiber construction material and at least one code for a base without these materials. Suppliers receive the same payment under Medicare for these wheelchairs as would otherwise apply, but may bill beneficiaries for any difference between the payment and the actual charge for the wheelchair. The CMS may require suppliers to inform beneficiaries of their potential financial liability in these cases.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr1703/BILLS-119hr1703rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr1703/BILLS-119hr1703rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr1703/BILLS-119hr1703rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1703",
+      "votes": []
+    },
+    {
+      "id": "hr1945-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "1945",
+      "title": "America's National Churchill Museum National Historic Landmark Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Onder, Robert",
+        "party": "R",
+        "state": "MO"
+      },
+      "introduced_date": "2025-03-06",
+      "latest_action": {
+        "date": "2026-11-10",
+        "text": "Became Public Law No: 119-141."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Congressional oversight",
+        "Government studies and investigations",
+        "Historic sites and heritage areas",
+        "Missouri",
+        "Monuments and memorials",
+        "World history"
+      ],
+      "summary_crs": "<p><strong>America's National Churchill Museum National Historic Landmark Act</strong></p><p>This bill designates the America’s National Churchill Museum, including the Winston Churchill Memorial, located at Westminster College in Fulton, Missouri, as the America’s National Churchill Museum National Historic Landmark. (Former British Prime Minister Winston Churchill gave a speech titled <em>The Sinews of Peace</em>, also widely known as the Iron Curtain Speech, at the college in 1946.)</p><p>The bill permits the Department of the Interior to enter into cooperative agreements with public and private entities for the purposes of protecting historic resources at the landmark and providing educational and interpretive facilities for the public. Interior may provide technical and financial assistance to partner entities.&nbsp;</p><p>The bill also directs Interior to conduct a special resource study to evaluate the national significance of the landmark and to determine the suitability and feasibility of designating it as a unit of the National Park System. The study must consider alternatives to that designation for the preservation, protection, and interpretation of the landmark, and must include cost estimates associated with identified alternatives.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr1945/BILLS-119hr1945rds.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr1945/BILLS-119hr1945rds.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr1945/BILLS-119hr1945rds.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1945",
+      "votes": []
+    },
+    {
       "id": "hr4930-119",
       "congress": 119,
       "type": "hr",
@@ -300,6 +362,96 @@
       "text_url_pdf": "https://www.congress.gov/119/bills/hr4930/BILLS-119hr4930rfs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/4930",
       "votes": []
+    },
+    {
+      "id": "hr7730-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "7730",
+      "title": "Bankruptcy Threshold Adjustment Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Cline, Ben",
+        "party": "R",
+        "state": "VA"
+      },
+      "introduced_date": "2026-02-26",
+      "latest_action": {
+        "date": "2026-11-10",
+        "text": "Became Public Law No: 119-142."
+      },
+      "outcome": "enacted",
+      "policy_area": "Finance and Financial Sector",
+      "subjects": [
+        "Bankruptcy",
+        "Debt collection",
+        "Small business"
+      ],
+      "summary_crs": "<p><strong>Bankruptcy Threshold Adjustment Act of 2026</strong></p><p>This bill restores changes that expired in 2024 applicable to debt limits for Subchapter V (small business reorganization) and Chapter 13 (the wage earner's plan) bankruptcies.</p><p>Specifically, the bill increases the debt limit under Subchapter&nbsp;V from approximately $3.4 million to $7.5 million and increases the cumulative debt limit under Chapter 13 from approximately $2.1 million to $2.75 million.</p><p>The bill also applies both secured and unsecured debt towards the Chapter 13 limit. (Currently, separate limits apply to secured and unsecured debt under Chapter 13 bankruptcy.)</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr7730/BILLS-119hr7730rds.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr7730/BILLS-119hr7730rds.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr7730/BILLS-119hr7730rds.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/7730",
+      "votes": []
+    },
+    {
+      "id": "hr997-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "997",
+      "title": "National Taxpayer Advocate Enhancement Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Feenstra, Randy",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2025-02-05",
+      "latest_action": {
+        "date": "2026-11-10",
+        "text": "Became Public Law No: 119-139."
+      },
+      "outcome": "enacted",
+      "policy_area": "Taxation",
+      "subjects": [
+        "Federal officials",
+        "Lawyers and legal services",
+        "Tax administration and collection, taxpayers"
+      ],
+      "summary_crs": "<p><strong>National Taxpayer Advocate Enhancement Act of 2025 </strong></p><p>This bill authorizes the National Taxpayer Advocate to appoint legal counsel within the Taxpayer Advocate Service (TAS) to report directly to the National Taxpayer Advocate. The bill also expands the authority of the National Taxpayer Advocate to take personnel actions with respect to local taxpayer advocates (located in each state) to include actions with respect to any employee of TAS.</p><p>Currently, pursuant to a Department of the Treasury order, all legal counsel whose duties include providing legal advice to any official in any office or bureau of Treasury are part of the Legal Division within Treasury and under the supervision of the General Counsel, with limited exceptions. TAS assists taxpayers in matters involving the Internal Revenue Service (IRS) and is part of the IRS, within Treasury.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr997/BILLS-119hr997rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr997/BILLS-119hr997rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr997/BILLS-119hr997rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/997",
+      "votes": [
+        {
+          "id": "house-119-1-85",
+          "chamber": "house",
+          "session": 1,
+          "roll_number": 85,
+          "date": "2025-03-31",
+          "question": "On Motion to Suspend the Rules and Pass, as Amended",
+          "result": "Passed",
+          "bill_id": "hr997-119",
+          "totals": {
+            "yea": 385,
+            "nay": 0,
+            "present": 0,
+            "not_voting": 45
+          },
+          "party_split": {
+            "yea": {
+              "D": 193,
+              "R": 192
+            },
+            "not_voting": {
+              "D": 20,
+              "R": 25
+            }
+          },
+          "path": "votes/congress119/house-1-85.json"
+        }
+      ]
     },
     {
       "id": "s2434-119",
@@ -428,7 +580,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": null,
@@ -456,7 +607,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Alternative and renewable resources",
@@ -488,7 +638,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Child health",
@@ -555,7 +704,6 @@
         "text": "Became Public Law No: 119-137."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Human rights",
@@ -588,7 +736,6 @@
         "text": "Became Public Law No: 119-138."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Department of Health and Human Services",
@@ -628,7 +775,6 @@
         "text": "Became Public Law No: 119-136."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -663,7 +809,6 @@
         "text": "Became Public Law No: 119-135."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "California",
@@ -694,7 +839,6 @@
         "text": "Became Public Law No: 119-127."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Commerce",
       "subjects": [
         "Government studies and investigations",
@@ -726,8 +870,7 @@
         "date": "2026-10-20",
         "text": "Became Public Law No: 119-125."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Social Welfare",
       "subjects": [
         "Congressional oversight",
@@ -794,7 +937,6 @@
         "text": "Became Public Law No: 119-128."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Federal-Indian relations",
@@ -829,7 +971,6 @@
         "text": "Became Public Law No: 119-129."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Commerce",
       "subjects": [
         "Civil actions and liability",
@@ -863,7 +1004,6 @@
         "text": "Became Public Law No: 119-130."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Alaska",
@@ -963,7 +1103,6 @@
         "text": "Became Public Law No: 119-133."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Arizona",
@@ -996,7 +1135,6 @@
         "text": "Became Public Law No: 119-134."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Licensing and registrations",
@@ -1193,7 +1331,6 @@
         "text": "Became Public Law No: 119-121."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Arts, Culture, Religion",
       "subjects": [
         "Congressional oversight",
@@ -1274,40 +1411,6 @@
       "votes": []
     },
     {
-      "id": "hr1703-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "1703",
-      "title": "Choices for Increased Mobility Act of 2026",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Joyce, John",
-        "party": "R",
-        "state": "PA"
-      },
-      "introduced_date": "2025-02-27",
-      "latest_action": {
-        "date": "2026-09-30",
-        "text": "Passed Senate without amendment by Voice Vote. (consideration: CR S5299)"
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "Health",
-      "subjects": [
-        "Aging",
-        "Disability and paralysis",
-        "Health care costs and insurance",
-        "Health technology, devices, supplies",
-        "Medicare"
-      ],
-      "summary_crs": "<p><strong>Choices for Increased Mobility Act of 2025</strong></p><p>This bill requires the Centers for Medicare &amp; Medicaid Services (CMS) to establish specific billing codes under Medicare for certain materials used in ultralightweight manual wheelchairs.</p><p>Specifically, the CMS must establish at least two billing codes for the base of the wheelchair, with at least one code for a base with titanium or carbon fiber construction material and at least one code for a base without these materials. Suppliers receive the same payment under Medicare for these wheelchairs as would otherwise apply, but may bill beneficiaries for any difference between the payment and the actual charge for the wheelchair. The CMS may require suppliers to inform beneficiaries of their potential financial liability in these cases.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr1703/BILLS-119hr1703rfs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr1703/BILLS-119hr1703rfs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr1703/BILLS-119hr1703rfs.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1703",
-      "votes": []
-    },
-    {
       "id": "hr2400-119",
       "congress": 119,
       "type": "hr",
@@ -1325,7 +1428,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5297-5298)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "California",
@@ -1389,7 +1491,6 @@
         "text": "Passed Senate with an amendment and an amendment to the Title by Unanimous Consent."
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Taxation",
       "subjects": [
         "Administrative remedies",
@@ -1988,41 +2089,6 @@
       "votes": []
     },
     {
-      "id": "hr1945-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "1945",
-      "title": "America's National Churchill Museum National Historic Landmark Act",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Onder, Robert",
-        "party": "R",
-        "state": "MO"
-      },
-      "introduced_date": "2025-03-06",
-      "latest_action": {
-        "date": "2026-09-29",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5140)"
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "Public Lands and Natural Resources",
-      "subjects": [
-        "Congressional oversight",
-        "Government studies and investigations",
-        "Historic sites and heritage areas",
-        "Missouri",
-        "Monuments and memorials",
-        "World history"
-      ],
-      "summary_crs": "<p><strong>America's National Churchill Museum National Historic Landmark Act</strong></p><p>This bill designates the America’s National Churchill Museum, including the Winston Churchill Memorial, located at Westminster College in Fulton, Missouri, as the America’s National Churchill Museum National Historic Landmark. (Former British Prime Minister Winston Churchill gave a speech titled <em>The Sinews of Peace</em>, also widely known as the Iron Curtain Speech, at the college in 1946.)</p><p>The bill permits the Department of the Interior to enter into cooperative agreements with public and private entities for the purposes of protecting historic resources at the landmark and providing educational and interpretive facilities for the public. Interior may provide technical and financial assistance to partner entities.&nbsp;</p><p>The bill also directs Interior to conduct a special resource study to evaluate the national significance of the landmark and to determine the suitability and feasibility of designating it as a unit of the National Park System. The study must consider alternatives to that designation for the preservation, protection, and interpretation of the landmark, and must include cost estimates associated with identified alternatives.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr1945/BILLS-119hr1945rds.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr1945/BILLS-119hr1945rds.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr1945/BILLS-119hr1945rds.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1945",
-      "votes": []
-    },
-    {
       "id": "hr5284-119",
       "congress": 119,
       "type": "hr",
@@ -2423,98 +2489,6 @@
       "text_url_pdf": "https://www.congress.gov/119/bills/hr10167/BILLS-119hr10167rfs.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/10167",
       "votes": []
-    },
-    {
-      "id": "hr7730-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "7730",
-      "title": "Bankruptcy Threshold Adjustment Act",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Cline, Ben",
-        "party": "R",
-        "state": "VA"
-      },
-      "introduced_date": "2026-02-26",
-      "latest_action": {
-        "date": "2026-09-28",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5123)"
-      },
-      "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "Finance and Financial Sector",
-      "subjects": [
-        "Bankruptcy",
-        "Debt collection",
-        "Small business"
-      ],
-      "summary_crs": "<p><strong>Bankruptcy Threshold Adjustment Act of 2026</strong></p><p>This bill restores changes that expired in 2024 applicable to debt limits for Subchapter V (small business reorganization) and Chapter 13 (the wage earner's plan) bankruptcies.</p><p>Specifically, the bill increases the debt limit under Subchapter&nbsp;V from approximately $3.4 million to $7.5 million and increases the cumulative debt limit under Chapter 13 from approximately $2.1 million to $2.75 million.</p><p>The bill also applies both secured and unsecured debt towards the Chapter 13 limit. (Currently, separate limits apply to secured and unsecured debt under Chapter 13 bankruptcy.)</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr7730/BILLS-119hr7730rds.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr7730/BILLS-119hr7730rds.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr7730/BILLS-119hr7730rds.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/7730",
-      "votes": []
-    },
-    {
-      "id": "hr997-119",
-      "congress": 119,
-      "type": "hr",
-      "number": "997",
-      "title": "National Taxpayer Advocate Enhancement Act of 2025",
-      "short_title": null,
-      "sponsor": {
-        "name": "Rep. Feenstra, Randy",
-        "party": "R",
-        "state": "IA"
-      },
-      "introduced_date": "2025-02-05",
-      "latest_action": {
-        "date": "2026-09-28",
-        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5123)"
-      },
-      "outcome": "passed_house",
-      "status": null,
-      "policy_area": "Taxation",
-      "subjects": [
-        "Federal officials",
-        "Lawyers and legal services",
-        "Tax administration and collection, taxpayers"
-      ],
-      "summary_crs": "<p><strong>National Taxpayer Advocate Enhancement Act of 2025 </strong></p><p>This bill authorizes the National Taxpayer Advocate to appoint legal counsel within the Taxpayer Advocate Service (TAS) to report directly to the National Taxpayer Advocate. The bill also expands the authority of the National Taxpayer Advocate to take personnel actions with respect to local taxpayer advocates (located in each state) to include actions with respect to any employee of TAS.</p><p>Currently, pursuant to a Department of the Treasury order, all legal counsel whose duties include providing legal advice to any official in any office or bureau of Treasury are part of the Legal Division within Treasury and under the supervision of the General Counsel, with limited exceptions. TAS assists taxpayers in matters involving the Internal Revenue Service (IRS) and is part of the IRS, within Treasury.&nbsp;</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr997/BILLS-119hr997rfs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr997/BILLS-119hr997rfs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr997/BILLS-119hr997rfs.pdf",
-      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/997",
-      "votes": [
-        {
-          "id": "house-119-1-85",
-          "chamber": "house",
-          "session": 1,
-          "roll_number": 85,
-          "date": "2025-03-31",
-          "question": "On Motion to Suspend the Rules and Pass, as Amended",
-          "result": "Passed",
-          "bill_id": "hr997-119",
-          "totals": {
-            "yea": 385,
-            "nay": 0,
-            "present": 0,
-            "not_voting": 45
-          },
-          "party_split": {
-            "yea": {
-              "D": 193,
-              "R": 192
-            },
-            "not_voting": {
-              "D": 20,
-              "R": 25
-            }
-          },
-          "path": "votes/congress119/house-1-85.json"
-        }
-      ]
     },
     {
       "id": "s2339-119",
@@ -3014,7 +2988,6 @@
         "text": "Became Public Law No: 119-117."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -3394,8 +3367,7 @@
         "date": "2026-09-18",
         "text": "Became Public Law No: 119-111."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "International Affairs",
       "subjects": [
         "Civil actions and liability",
