@@ -1,7 +1,41 @@
 {
   "congress": 119,
-  "generated_at": "2026-11-08T09:54:34Z",
+  "generated_at": "2026-11-15T10:16:14Z",
   "members": [
+    {
+      "bioguide_id": "S001223",
+      "name": "Emilia Strong Sykes",
+      "party": "D",
+      "state": "OH",
+      "district": 13,
+      "chamber": "house",
+      "photo_url": "https://www.congress.gov/img/member/43152de484af12075474f7bb5fa418a8_200.jpg",
+      "official_url": null,
+      "sponsored_count": 68,
+      "cosponsored_count": 547,
+      "address": "1217 Longworth House Office Building",
+      "phone": "(202) 225-6265",
+      "contact_form": null,
+      "website": "https://sykes.house.gov",
+      "socials": [
+        {
+          "platform": "twitter",
+          "handle": "RepEmiliaSykes"
+        },
+        {
+          "platform": "facebook",
+          "handle": "repemiliasykes"
+        },
+        {
+          "platform": "youtube",
+          "handle": "repemiliasykes"
+        },
+        {
+          "platform": "instagram",
+          "handle": "RepEmiliaSykes"
+        }
+      ]
+    },
     {
       "bioguide_id": "F000476",
       "name": "Maxwell Frost",
@@ -11,8 +45,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/69a71e9a55f11d8282dde7a0_200.jpg",
       "official_url": null,
-      "sponsored_count": 48,
-      "cosponsored_count": 1037,
+      "sponsored_count": 49,
+      "cosponsored_count": 1042,
       "address": "1224 Longworth House Office Building",
       "phone": "(202) 225-2176",
       "contact_form": null,
@@ -41,13 +75,26 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/698206b2eb30d3271899373e_200.jpg",
       "official_url": null,
-      "sponsored_count": 4,
-      "cosponsored_count": 126,
+      "sponsored_count": 5,
+      "cosponsored_count": 128,
       "address": "1318 Longworth House Office Building",
       "phone": "(202) 225-3816",
       "contact_form": null,
       "website": "https://menefee.house.gov",
-      "socials": []
+      "socials": [
+        {
+          "platform": "twitter",
+          "handle": "RepCDMenefee"
+        },
+        {
+          "platform": "facebook",
+          "handle": "repcdmenefee"
+        },
+        {
+          "platform": "instagram",
+          "handle": "repcdmenefee"
+        }
+      ]
     },
     {
       "bioguide_id": "W000831",
@@ -58,13 +105,30 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/68c1bd4ca929c5b98220e069_200.jpg",
       "official_url": null,
-      "sponsored_count": 27,
-      "cosponsored_count": 400,
+      "sponsored_count": 28,
+      "cosponsored_count": 404,
       "address": "2265 Rayburn House Office Building",
       "phone": "(202) 225-1492",
       "contact_form": null,
       "website": "https://walkinshaw.house.gov",
-      "socials": []
+      "socials": [
+        {
+          "platform": "twitter",
+          "handle": "Rep_Walkinshaw"
+        },
+        {
+          "platform": "facebook",
+          "handle": "RepJamesWalkinshaw"
+        },
+        {
+          "platform": "youtube",
+          "handle": "repwalkinshaw"
+        },
+        {
+          "platform": "instagram",
+          "handle": "rep_walkinshaw"
+        }
+      ]
     },
     {
       "bioguide_id": "V000138",
@@ -75,8 +139,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/6774617a0b34857ecc9091b5_200.jpg",
       "official_url": null,
-      "sponsored_count": 81,
-      "cosponsored_count": 1077,
+      "sponsored_count": 85,
+      "cosponsored_count": 1089,
       "address": "1005 Longworth House Office Building",
       "phone": "(202) 225-2815",
       "contact_form": null,
@@ -106,7 +170,7 @@
       "photo_url": "https://www.congress.gov/img/member/6797be8bc75fbc6f720e476a_200.jpg",
       "official_url": null,
       "sponsored_count": 49,
-      "cosponsored_count": 412,
+      "cosponsored_count": 420,
       "address": "1009 Longworth House Office Building",
       "phone": "(202) 225-5136",
       "contact_form": null,
@@ -136,12 +200,25 @@
       "photo_url": "https://www.congress.gov/img/member/67745dcf0b34857ecc909173_200.jpg",
       "official_url": null,
       "sponsored_count": 14,
-      "cosponsored_count": 465,
+      "cosponsored_count": 475,
       "address": "1531 Longworth House Office Building",
       "phone": "(202) 225-5916",
       "contact_form": null,
       "website": "https://randall.house.gov",
-      "socials": []
+      "socials": [
+        {
+          "platform": "facebook",
+          "handle": "RepEmilyRandall"
+        },
+        {
+          "platform": "youtube",
+          "handle": "CongresswomanEmilyRandall"
+        },
+        {
+          "platform": "instagram",
+          "handle": "repemilyrandall"
+        }
+      ]
     },
     {
       "bioguide_id": "M001239",
@@ -153,7 +230,7 @@
       "photo_url": "https://www.congress.gov/img/member/67744ba20b34857ecc909149_200.jpg",
       "official_url": null,
       "sponsored_count": 22,
-      "cosponsored_count": 316,
+      "cosponsored_count": 319,
       "address": "1013 Longworth House Office Building",
       "phone": "(202) 225-4711",
       "contact_form": null,
@@ -269,7 +346,7 @@
       "photo_url": "https://www.congress.gov/img/member/677428ac0b34857ecc9090b3_200.jpg",
       "official_url": null,
       "sponsored_count": 27,
-      "cosponsored_count": 330,
+      "cosponsored_count": 348,
       "address": "1305 Longworth House Office Building",
       "phone": "(202) 225-7772",
       "contact_form": null,
@@ -329,7 +406,7 @@
       "photo_url": "https://www.congress.gov/img/member/6734b6724c72e343a6aff9e6_200.jpg",
       "official_url": null,
       "sponsored_count": 21,
-      "cosponsored_count": 244,
+      "cosponsored_count": 245,
       "address": "424 Cannon House Office Building",
       "phone": "(202) 225-5665",
       "contact_form": null,
@@ -358,7 +435,7 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/m001228_200.jpg",
       "official_url": null,
-      "sponsored_count": 41,
+      "sponsored_count": 42,
       "cosponsored_count": 216,
       "address": "249 Cannon House Office Building",
       "phone": "(202) 225-9730",
@@ -393,7 +470,7 @@
       "photo_url": "https://www.congress.gov/img/member/m001227_200.jpg",
       "official_url": null,
       "sponsored_count": 51,
-      "cosponsored_count": 951,
+      "cosponsored_count": 953,
       "address": "1628 Longworth House Office Building",
       "phone": "(202) 225-6365",
       "contact_form": null,
@@ -483,7 +560,7 @@
       "photo_url": "https://www.congress.gov/img/member/66b0ce45b0288a917d98f619_200.jpg",
       "official_url": null,
       "sponsored_count": 83,
-      "cosponsored_count": 722,
+      "cosponsored_count": 724,
       "address": "152 Cannon House Office Building",
       "phone": "(202) 225-4215",
       "contact_form": null,
@@ -525,7 +602,7 @@
       "socials": [
         {
           "platform": "twitter",
-          "handle": "RepWesleyHunt"
+          "handle": "RepWPH"
         },
         {
           "platform": "facebook",
@@ -547,7 +624,7 @@
       "photo_url": "https://www.congress.gov/img/member/h001096_200.jpg",
       "official_url": null,
       "sponsored_count": 136,
-      "cosponsored_count": 555,
+      "cosponsored_count": 558,
       "address": "1227 Longworth House Office Building",
       "phone": "(202) 225-2311",
       "contact_form": null,
@@ -607,7 +684,7 @@
       "photo_url": "https://www.congress.gov/img/member/c001130_200.jpg",
       "official_url": null,
       "sponsored_count": 44,
-      "cosponsored_count": 1022,
+      "cosponsored_count": 1025,
       "address": "1616 Longworth House Office Building",
       "phone": "(202) 225-8885",
       "contact_form": null,
@@ -637,7 +714,7 @@
       "photo_url": "https://www.congress.gov/img/member/c001131_200.jpg",
       "official_url": null,
       "sponsored_count": 19,
-      "cosponsored_count": 730,
+      "cosponsored_count": 734,
       "address": "446 Cannon House Office Building",
       "phone": "(202) 225-5645",
       "contact_form": null,
@@ -667,7 +744,7 @@
       "photo_url": "https://www.congress.gov/img/member/b001318_200.jpg",
       "official_url": null,
       "sponsored_count": 50,
-      "cosponsored_count": 870,
+      "cosponsored_count": 871,
       "address": "1510 Longworth House Office Building",
       "phone": "(202) 225-4115",
       "contact_form": null,
@@ -701,7 +778,7 @@
       "photo_url": "https://www.congress.gov/img/member/677461060b34857ecc9091af_200.jpg",
       "official_url": null,
       "sponsored_count": 115,
-      "cosponsored_count": 805,
+      "cosponsored_count": 806,
       "address": "1725 Longworth House Office Building",
       "phone": "(202) 225-6605",
       "contact_form": null,
@@ -731,7 +808,7 @@
       "photo_url": "https://www.congress.gov/img/member/s001159_200.jpg",
       "official_url": null,
       "sponsored_count": 59,
-      "cosponsored_count": 1314,
+      "cosponsored_count": 1315,
       "address": "1724 Longworth House Office Building",
       "phone": "(202) 225-9740",
       "contact_form": null,
@@ -855,7 +932,7 @@
       "photo_url": "https://www.congress.gov/img/member/f000471_200.jpg",
       "official_url": null,
       "sponsored_count": 80,
-      "cosponsored_count": 551,
+      "cosponsored_count": 555,
       "address": "2444 Rayburn House Office Building",
       "phone": "(202) 225-5101",
       "contact_form": null,
@@ -881,7 +958,7 @@
       "photo_url": "https://www.congress.gov/img/member/t000165_200.jpg",
       "official_url": null,
       "sponsored_count": 72,
-      "cosponsored_count": 944,
+      "cosponsored_count": 946,
       "address": "451 Cannon House Office Building",
       "phone": "(202) 225-3365",
       "contact_form": null,
@@ -907,7 +984,7 @@
       "photo_url": "https://www.congress.gov/img/member/m001205_200.jpg",
       "official_url": null,
       "sponsored_count": 101,
-      "cosponsored_count": 996,
+      "cosponsored_count": 999,
       "address": "465 Cannon House Office Building",
       "phone": "(202) 225-3452",
       "contact_form": null,
@@ -954,8 +1031,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/s001216_200.jpg",
       "official_url": null,
-      "sponsored_count": 106,
-      "cosponsored_count": 1347,
+      "sponsored_count": 107,
+      "cosponsored_count": 1350,
       "address": "1110 Longworth House Office Building",
       "phone": "(202) 225-7761",
       "contact_form": null,
@@ -981,7 +1058,7 @@
       "photo_url": "https://www.congress.gov/img/member/69825a92eb30d32718993747_200.jpg",
       "official_url": null,
       "sponsored_count": 63,
-      "cosponsored_count": 1107,
+      "cosponsored_count": 1109,
       "address": "2443 Rayburn House Office Building",
       "phone": "(202) 225-5431",
       "contact_form": null,
@@ -1015,7 +1092,7 @@
       "photo_url": "https://www.congress.gov/img/member/g000587_200.jpg",
       "official_url": null,
       "sponsored_count": 89,
-      "cosponsored_count": 1862,
+      "cosponsored_count": 1865,
       "address": "2419 Rayburn House Office Building",
       "phone": "(202) 225-1688",
       "contact_form": null,
@@ -1041,7 +1118,7 @@
       "photo_url": "https://www.congress.gov/img/member/r000614_200.jpg",
       "official_url": null,
       "sponsored_count": 234,
-      "cosponsored_count": 679,
+      "cosponsored_count": 680,
       "address": "103 Cannon House Office Building",
       "phone": "(202) 225-4236",
       "contact_form": null,
@@ -1062,8 +1139,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/e000299_200.jpg",
       "official_url": null,
-      "sponsored_count": 84,
-      "cosponsored_count": 1581,
+      "sponsored_count": 85,
+      "cosponsored_count": 1584,
       "address": "2448 Rayburn House Office Building",
       "phone": "(202) 225-4831",
       "contact_form": null,
@@ -1092,8 +1169,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/115_rp_tx_27_cloud_michael_200.jpg",
       "official_url": null,
-      "sponsored_count": 78,
-      "cosponsored_count": 825,
+      "sponsored_count": 81,
+      "cosponsored_count": 827,
       "address": "304 Cannon House Office Building",
       "phone": "(202) 225-7742",
       "contact_form": null,
@@ -1101,11 +1178,11 @@
       "socials": [
         {
           "platform": "twitter",
-          "handle": "RepCloudTX"
+          "handle": "RepMichaelCloud"
         },
         {
           "platform": "facebook",
-          "handle": "RepCloudTX"
+          "handle": "repmichaelcloud"
         },
         {
           "platform": "youtube",
@@ -1113,7 +1190,7 @@
         },
         {
           "platform": "instagram",
-          "handle": "repcloudtx"
+          "handle": "repmichaelcloud"
         }
       ]
     },
@@ -1127,7 +1204,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_wa_7_jayapal_pramila_200.jpg",
       "official_url": null,
       "sponsored_count": 204,
-      "cosponsored_count": 3200,
+      "cosponsored_count": 3203,
       "address": "2346 Rayburn House Office Building",
       "phone": "(202) 225-3106",
       "contact_form": null,
@@ -1140,6 +1217,10 @@
         {
           "platform": "facebook",
           "handle": "RepJayapal"
+        },
+        {
+          "platform": "youtube",
+          "handle": "repjayapal"
         },
         {
           "platform": "instagram",
@@ -1169,7 +1250,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "JodeyArrington"
+          "handle": "repjodeyarrington"
         },
         {
           "platform": "instagram",
@@ -1187,7 +1268,7 @@
       "photo_url": "https://www.congress.gov/img/member/115_rp_tx_15_gonzalez_vicente_200.jpg",
       "official_url": null,
       "sponsored_count": 55,
-      "cosponsored_count": 1626,
+      "cosponsored_count": 1628,
       "address": "1201 Longworth House Office Building",
       "phone": "(202) 225-2531",
       "contact_form": null,
@@ -1199,11 +1280,11 @@
         },
         {
           "platform": "facebook",
-          "handle": "USCongressmanVicenteGonzalez"
+          "handle": "repvicentegonzalez"
         },
         {
           "platform": "instagram",
-          "handle": "repvicentegonzaleztx"
+          "handle": "repvicentegonzalez"
         }
       ]
     },
@@ -1217,7 +1298,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_wi_6_grothman_glenn_200.jpg",
       "official_url": null,
       "sponsored_count": 193,
-      "cosponsored_count": 2027,
+      "cosponsored_count": 2030,
       "address": "1211 Longworth House Office Building",
       "phone": "(202) 225-2476",
       "contact_form": null,
@@ -1247,7 +1328,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_wa_4_newhouse_dan_200.jpg",
       "official_url": null,
       "sponsored_count": 169,
-      "cosponsored_count": 1582,
+      "cosponsored_count": 1583,
       "address": "460 Cannon House Office Building",
       "phone": "(202) 225-5816",
       "contact_form": null,
@@ -1277,7 +1358,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_dg_vi_plaskett_stacey_200.jpg",
       "official_url": null,
       "sponsored_count": 138,
-      "cosponsored_count": 1022,
+      "cosponsored_count": 1023,
       "address": "2059 Rayburn House Office Building",
       "phone": "(202) 225-1790",
       "contact_form": null,
@@ -1307,7 +1388,7 @@
       "photo_url": "https://www.congress.gov/img/member/b001292_200.jpg",
       "official_url": null,
       "sponsored_count": 275,
-      "cosponsored_count": 2568,
+      "cosponsored_count": 2569,
       "address": "1226 Longworth House Office Building",
       "phone": "(202) 225-4376",
       "contact_form": null,
@@ -1319,6 +1400,10 @@
         },
         {
           "platform": "facebook",
+          "handle": "RepDonBeyer"
+        },
+        {
+          "platform": "youtube",
           "handle": "RepDonBeyer"
         },
         {
@@ -1363,7 +1448,7 @@
       "photo_url": "https://www.congress.gov/img/member/p000607_200.jpg",
       "official_url": null,
       "sponsored_count": 174,
-      "cosponsored_count": 4817,
+      "cosponsored_count": 4823,
       "address": "1026 Longworth House Office Building",
       "phone": "(202) 225-2906",
       "contact_form": null,
@@ -1396,8 +1481,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/v000131_200.jpg",
       "official_url": null,
-      "sponsored_count": 126,
-      "cosponsored_count": 2580,
+      "sponsored_count": 127,
+      "cosponsored_count": 2581,
       "address": "2186 Rayburn House Office Building",
       "phone": "(202) 225-9897",
       "contact_form": null,
@@ -1469,7 +1554,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "326420614138023"
+          "handle": "joaquincastrotx"
         },
         {
           "platform": "youtube",
@@ -1491,7 +1576,7 @@
       "photo_url": "https://www.congress.gov/img/member/w000814_200.jpg",
       "official_url": null,
       "sponsored_count": 108,
-      "cosponsored_count": 3159,
+      "cosponsored_count": 3163,
       "address": "107 Cannon House Office Building",
       "phone": "(202) 225-2831",
       "contact_form": null,
@@ -1525,7 +1610,7 @@
       "photo_url": "https://www.congress.gov/img/member/d000617_200.jpg",
       "official_url": null,
       "sponsored_count": 155,
-      "cosponsored_count": 3371,
+      "cosponsored_count": 3379,
       "address": "2311 Rayburn House Office Building",
       "phone": "(202) 225-6311",
       "contact_form": null,
@@ -1555,7 +1640,7 @@
       "photo_url": "https://www.congress.gov/img/member/w000804_200.jpg",
       "official_url": null,
       "sponsored_count": 212,
-      "cosponsored_count": 2896,
+      "cosponsored_count": 2900,
       "address": "2055 Rayburn House Office Building",
       "phone": "(202) 225-4261",
       "contact_form": null,
@@ -1588,7 +1673,7 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/68094df86c2e6631263de737_200.jpg",
       "official_url": null,
-      "sponsored_count": 220,
+      "sponsored_count": 221,
       "cosponsored_count": 1263,
       "address": "2110 Rayburn House Office Building",
       "phone": "(202) 225-3861",
@@ -1623,7 +1708,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_wa_9_smith_adam_200.jpg",
       "official_url": null,
       "sponsored_count": 239,
-      "cosponsored_count": 5060,
+      "cosponsored_count": 5064,
       "address": "2264 Rayburn House Office Building",
       "phone": "(202) 225-8901",
       "contact_form": null,
@@ -1639,7 +1724,7 @@
         },
         {
           "platform": "youtube",
-          "handle": "CongressmanAdamSmith"
+          "handle": "repadamsmith"
         },
         {
           "platform": "instagram",
@@ -1657,7 +1742,7 @@
       "photo_url": "https://www.congress.gov/img/member/c8be64cedcc68c174b2039b5debce8f5_200.jpg",
       "official_url": null,
       "sponsored_count": 458,
-      "cosponsored_count": 4681,
+      "cosponsored_count": 4682,
       "address": "2204 Rayburn House Office Building",
       "phone": "(202) 225-6105",
       "contact_form": null,
@@ -1724,8 +1809,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/116_rp_wi_4_moore_gwen_200.jpg",
       "official_url": null,
-      "sponsored_count": 291,
-      "cosponsored_count": 6256,
+      "sponsored_count": 293,
+      "cosponsored_count": 6258,
       "address": "2252 Rayburn House Office Building",
       "phone": "(202) 225-4572",
       "contact_form": null,
@@ -1759,7 +1844,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_tx_28_cuellar_henry_200.jpg",
       "official_url": null,
       "sponsored_count": 124,
-      "cosponsored_count": 2518,
+      "cosponsored_count": 2519,
       "address": "2308 Rayburn House Office Building",
       "phone": "(202) 225-1640",
       "contact_form": null,
@@ -1771,7 +1856,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "152569121550"
+          "handle": "repcuellar"
         },
         {
           "platform": "youtube",
@@ -1793,7 +1878,7 @@
       "photo_url": "https://www.congress.gov/img/member/c001051_200.jpg",
       "official_url": null,
       "sponsored_count": 143,
-      "cosponsored_count": 2316,
+      "cosponsored_count": 2318,
       "address": "2208 Rayburn House Office Building",
       "phone": "(202) 225-3864",
       "contact_form": null,
@@ -1826,8 +1911,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/116_rp_wa_2_larsen_rick_200.jpg",
       "official_url": null,
-      "sponsored_count": 182,
-      "cosponsored_count": 3689,
+      "sponsored_count": 183,
+      "cosponsored_count": 3692,
       "address": "2163 Rayburn House Office Building",
       "phone": "(202) 225-2605",
       "contact_form": null,
@@ -1861,7 +1946,7 @@
       "photo_url": "https://www.congress.gov/img/member/d000399_200.jpg",
       "official_url": null,
       "sponsored_count": 268,
-      "cosponsored_count": 3830,
+      "cosponsored_count": 3832,
       "address": "2307 Rayburn House Office Building",
       "phone": "(202) 225-4865",
       "contact_form": null,
@@ -1873,7 +1958,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "lloyddoggett"
+          "handle": "replloyddoggett"
         },
         {
           "platform": "youtube",
@@ -1895,12 +1980,25 @@
       "photo_url": "https://www.congress.gov/img/member/6931b7d5f478c0f1228e9abe_200.jpg",
       "official_url": null,
       "sponsored_count": 9,
-      "cosponsored_count": 101,
+      "cosponsored_count": 102,
       "address": "2446 Rayburn House Office Building",
       "phone": "(202) 225-2811",
       "contact_form": null,
       "website": "https://vanepps.house.gov",
-      "socials": []
+      "socials": [
+        {
+          "platform": "twitter",
+          "handle": "repvanepps"
+        },
+        {
+          "platform": "facebook",
+          "handle": "RepVanEpps"
+        },
+        {
+          "platform": "instagram",
+          "handle": "repvaneppstn"
+        }
+      ]
     },
     {
       "bioguide_id": "T000490",
@@ -1911,8 +2009,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/677460190b34857ecc9091a3_200.jpg",
       "official_url": null,
-      "sponsored_count": 38,
-      "cosponsored_count": 197,
+      "sponsored_count": 39,
+      "cosponsored_count": 198,
       "address": "325 Cannon House Office Building",
       "phone": "(202) 225-3164",
       "contact_form": null,
@@ -1942,7 +2040,7 @@
       "photo_url": "https://www.congress.gov/img/member/67745e360b34857ecc909179_200.jpg",
       "official_url": null,
       "sponsored_count": 21,
-      "cosponsored_count": 450,
+      "cosponsored_count": 456,
       "address": "128 Cannon House Office Building",
       "phone": "(202) 225-5441",
       "contact_form": null,
@@ -1968,7 +2066,7 @@
       "photo_url": "https://www.congress.gov/img/member/677446860b34857ecc909119_200.jpg",
       "official_url": null,
       "sponsored_count": 10,
-      "cosponsored_count": 350,
+      "cosponsored_count": 352,
       "address": "1516 Longworth House Office Building",
       "phone": "(202) 225-3701",
       "contact_form": null,
@@ -1998,7 +2096,7 @@
       "photo_url": "https://www.congress.gov/img/member/677430a40b34857ecc909113_200.jpg",
       "official_url": null,
       "sponsored_count": 33,
-      "cosponsored_count": 299,
+      "cosponsored_count": 302,
       "address": "121 Cannon House Office Building",
       "phone": "(202) 225-6411",
       "contact_form": null,
@@ -2028,7 +2126,7 @@
       "photo_url": "https://www.congress.gov/img/member/6774301b0b34857ecc909107_200.jpg",
       "official_url": null,
       "sponsored_count": 13,
-      "cosponsored_count": 481,
+      "cosponsored_count": 483,
       "address": "1507 Longworth House Office Building",
       "phone": "(202) 225-2464",
       "contact_form": null,
@@ -2088,7 +2186,7 @@
       "photo_url": "https://www.congress.gov/img/member/677427de0b34857ecc9090ad_200.jpg",
       "official_url": null,
       "sponsored_count": 22,
-      "cosponsored_count": 311,
+      "cosponsored_count": 313,
       "address": "428 Cannon House Office Building",
       "phone": "(202) 225-5516",
       "contact_form": null,
@@ -2147,8 +2245,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/677425260b34857ecc90907d_200.jpg",
       "official_url": null,
-      "sponsored_count": 20,
-      "cosponsored_count": 400,
+      "sponsored_count": 22,
+      "cosponsored_count": 402,
       "address": "1207 Longworth House Office Building",
       "phone": "(202) 225-4811",
       "contact_form": null,
@@ -2207,8 +2305,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/677423150b34857ecc909059_200.jpg",
       "official_url": null,
-      "sponsored_count": 24,
-      "cosponsored_count": 402,
+      "sponsored_count": 25,
+      "cosponsored_count": 404,
       "address": "1508 Longworth House Office Building",
       "phone": "(202) 225-5711",
       "contact_form": null,
@@ -2268,12 +2366,25 @@
       "photo_url": "https://www.congress.gov/img/member/69401dcc8cd6e06e9e3b36de_200.jpg",
       "official_url": null,
       "sponsored_count": 24,
-      "cosponsored_count": 394,
+      "cosponsored_count": 397,
       "address": "421 Cannon House Office Building",
       "phone": "(202) 225-5705",
       "contact_form": null,
       "website": "https://rulli.house.gov",
-      "socials": []
+      "socials": [
+        {
+          "platform": "twitter",
+          "handle": "repmichaelrulli"
+        },
+        {
+          "platform": "facebook",
+          "handle": "RepMikeRulli"
+        },
+        {
+          "platform": "instagram",
+          "handle": "repmikerulli"
+        }
+      ]
     },
     {
       "bioguide_id": "K000402",
@@ -2284,8 +2395,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/668e9306658443009a697c8c_200.jpg",
       "official_url": null,
-      "sponsored_count": 36,
-      "cosponsored_count": 745,
+      "sponsored_count": 37,
+      "cosponsored_count": 749,
       "address": "423 Cannon House Office Building",
       "phone": "(202) 225-3306",
       "contact_form": null,
@@ -2319,7 +2430,7 @@
       "photo_url": "https://www.congress.gov/img/member/669ace45fa2fb0d731226768_200.jpg",
       "official_url": null,
       "sponsored_count": 29,
-      "cosponsored_count": 686,
+      "cosponsored_count": 694,
       "address": "1119 Longworth House Office Building",
       "phone": "(202) 225-4911",
       "contact_form": null,
@@ -2340,40 +2451,6 @@
       ]
     },
     {
-      "bioguide_id": "S001223",
-      "name": "Emilia Strong Sykes",
-      "party": "D",
-      "state": "OH",
-      "district": 13,
-      "chamber": "house",
-      "photo_url": "https://www.congress.gov/img/member/s001223_200.jpg",
-      "official_url": null,
-      "sponsored_count": 68,
-      "cosponsored_count": 545,
-      "address": "1217 Longworth House Office Building",
-      "phone": "(202) 225-6265",
-      "contact_form": null,
-      "website": "https://sykes.house.gov",
-      "socials": [
-        {
-          "platform": "twitter",
-          "handle": "RepEmiliaSykes"
-        },
-        {
-          "platform": "facebook",
-          "handle": "repemiliasykes"
-        },
-        {
-          "platform": "youtube",
-          "handle": "repemiliasykes"
-        },
-        {
-          "platform": "instagram",
-          "handle": "RepEmiliaSykes"
-        }
-      ]
-    },
-    {
       "bioguide_id": "S001224",
       "name": "Keith Self",
       "party": "R",
@@ -2382,7 +2459,7 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/s001224_200.jpg",
       "official_url": null,
-      "sponsored_count": 95,
+      "sponsored_count": 96,
       "cosponsored_count": 633,
       "address": "1030 Longworth House Office Building",
       "phone": "(202) 225-4201",
@@ -2413,7 +2490,7 @@
       "photo_url": "https://www.congress.gov/img/member/s001226_200.jpg",
       "official_url": null,
       "sponsored_count": 65,
-      "cosponsored_count": 1318,
+      "cosponsored_count": 1321,
       "address": "403 Cannon House Office Building",
       "phone": "(202) 225-5643",
       "contact_form": null,
@@ -2473,7 +2550,7 @@
       "photo_url": "https://www.congress.gov/img/member/680008c5f22eaf56065817f4_200.jpg",
       "official_url": null,
       "sponsored_count": 46,
-      "cosponsored_count": 481,
+      "cosponsored_count": 486,
       "address": "1605 Longworth House Office Building",
       "phone": "(202) 225-3035",
       "contact_form": null,
@@ -2541,7 +2618,7 @@
       "photo_url": "https://www.congress.gov/img/member/m001223_200.jpg",
       "official_url": null,
       "sponsored_count": 51,
-      "cosponsored_count": 1119,
+      "cosponsored_count": 1126,
       "address": "252 Cannon House Office Building",
       "phone": "(202) 225-2735",
       "contact_form": null,
@@ -2567,7 +2644,7 @@
       "photo_url": "https://www.congress.gov/img/member/l000603_200.jpg",
       "official_url": null,
       "sponsored_count": 45,
-      "cosponsored_count": 267,
+      "cosponsored_count": 269,
       "address": "444 Cannon House Office Building",
       "phone": "(202) 225-4901",
       "contact_form": null,
@@ -2597,7 +2674,7 @@
       "photo_url": "https://www.congress.gov/img/member/l000602_200.jpg",
       "official_url": null,
       "sponsored_count": 44,
-      "cosponsored_count": 1039,
+      "cosponsored_count": 1042,
       "address": "2437 Rayburn House Office Building",
       "phone": "(202) 225-2135",
       "contact_form": null,
@@ -2626,8 +2703,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/l000599_200.jpg",
       "official_url": null,
-      "sponsored_count": 204,
-      "cosponsored_count": 2382,
+      "sponsored_count": 205,
+      "cosponsored_count": 2386,
       "address": "324 Cannon House Office Building",
       "phone": "(202) 225-6506",
       "contact_form": null,
@@ -2661,7 +2738,7 @@
       "photo_url": "https://www.congress.gov/img/member/680901e76c2e6631263de716_200.jpg",
       "official_url": null,
       "sponsored_count": 84,
-      "cosponsored_count": 700,
+      "cosponsored_count": 704,
       "address": "422 Cannon House Office Building",
       "phone": "(202) 225-3161",
       "contact_form": null,
@@ -2691,7 +2768,7 @@
       "photo_url": "https://www.congress.gov/img/member/l000601_200.jpg",
       "official_url": null,
       "sponsored_count": 54,
-      "cosponsored_count": 1005,
+      "cosponsored_count": 1007,
       "address": "2244 Rayburn House Office Building",
       "phone": "(202) 225-2216",
       "contact_form": null,
@@ -2721,7 +2798,7 @@
       "photo_url": "https://www.congress.gov/img/member/h001094_200.jpg",
       "official_url": null,
       "sponsored_count": 28,
-      "cosponsored_count": 692,
+      "cosponsored_count": 693,
       "address": "1620 Longworth House Office Building",
       "phone": "(202) 225-6416",
       "contact_form": null,
@@ -2751,7 +2828,7 @@
       "photo_url": "https://www.congress.gov/img/member/g000599_200.jpg",
       "official_url": null,
       "sponsored_count": 67,
-      "cosponsored_count": 1418,
+      "cosponsored_count": 1419,
       "address": "245 Cannon House Office Building",
       "phone": "(202) 225-7944",
       "contact_form": null,
@@ -2781,7 +2858,7 @@
       "photo_url": "https://www.congress.gov/img/member/f000478_200.jpg",
       "official_url": null,
       "sponsored_count": 33,
-      "cosponsored_count": 431,
+      "cosponsored_count": 432,
       "address": "345 Cannon House Office Building",
       "phone": "(202) 225-9895",
       "contact_form": null,
@@ -2815,7 +2892,7 @@
       "photo_url": "https://www.congress.gov/img/member/d000530_200.jpg",
       "official_url": null,
       "sponsored_count": 59,
-      "cosponsored_count": 1096,
+      "cosponsored_count": 1100,
       "address": "1222 Longworth House Office Building",
       "phone": "(202) 225-2301",
       "contact_form": null,
@@ -2927,7 +3004,7 @@
       "photo_url": "https://www.congress.gov/img/member/b001313_200.jpg",
       "official_url": null,
       "sponsored_count": 48,
-      "cosponsored_count": 1038,
+      "cosponsored_count": 1041,
       "address": "2455 Rayburn House Office Building",
       "phone": "(202) 225-7032",
       "contact_form": null,
@@ -2953,7 +3030,7 @@
       "photo_url": "https://www.congress.gov/img/member/e000071_200.jpg",
       "official_url": null,
       "sponsored_count": 11,
-      "cosponsored_count": 713,
+      "cosponsored_count": 714,
       "address": "1721 Longworth House Office Building",
       "phone": "(202) 225-2002",
       "contact_form": null,
@@ -2979,7 +3056,7 @@
       "photo_url": "https://www.congress.gov/img/member/t000486_200.jpg",
       "official_url": null,
       "sponsored_count": 171,
-      "cosponsored_count": 1342,
+      "cosponsored_count": 1354,
       "address": "1414 Longworth House Office Building",
       "phone": "(202) 225-4361",
       "contact_form": null,
@@ -3012,8 +3089,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/p000048_200.jpg",
       "official_url": null,
-      "sponsored_count": 166,
-      "cosponsored_count": 934,
+      "sponsored_count": 167,
+      "cosponsored_count": 935,
       "address": "2202 Rayburn House Office Building",
       "phone": "(202) 225-3605",
       "contact_form": null,
@@ -3042,7 +3119,7 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/m000317_200.jpg",
       "official_url": null,
-      "sponsored_count": 139,
+      "sponsored_count": 140,
       "cosponsored_count": 1157,
       "address": "1124 Longworth House Office Building",
       "phone": "(202) 225-3371",
@@ -3051,7 +3128,7 @@
       "socials": [
         {
           "platform": "twitter",
-          "handle": "RepMalliotakis"
+          "handle": "RepNicole"
         },
         {
           "platform": "facebook",
@@ -3068,7 +3145,7 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/m000194_200.jpg",
       "official_url": null,
-      "sponsored_count": 224,
+      "sponsored_count": 226,
       "cosponsored_count": 1031,
       "address": "1728 Longworth House Office Building",
       "phone": "(202) 225-3176",
@@ -3099,7 +3176,7 @@
       "photo_url": "https://www.congress.gov/img/member/j000304_200.jpg",
       "official_url": null,
       "sponsored_count": 102,
-      "cosponsored_count": 978,
+      "cosponsored_count": 981,
       "address": "125 Cannon House Office Building",
       "phone": "(202) 225-3706",
       "contact_form": null,
@@ -3129,7 +3206,7 @@
       "photo_url": "https://www.congress.gov/img/member/h001086_200.jpg",
       "official_url": null,
       "sponsored_count": 81,
-      "cosponsored_count": 877,
+      "cosponsored_count": 879,
       "address": "167 Cannon House Office Building",
       "phone": "(202) 225-6356",
       "contact_form": null,
@@ -3189,7 +3266,7 @@
       "photo_url": "https://www.congress.gov/img/member/b000740_200.jpg",
       "official_url": null,
       "sponsored_count": 86,
-      "cosponsored_count": 819,
+      "cosponsored_count": 820,
       "address": "2402 Rayburn House Office Building",
       "phone": "(202) 225-2132",
       "contact_form": null,
@@ -3215,7 +3292,7 @@
       "photo_url": "https://www.congress.gov/img/member/b000668_200.jpg",
       "official_url": null,
       "sponsored_count": 33,
-      "cosponsored_count": 362,
+      "cosponsored_count": 363,
       "address": "409 Cannon House Office Building",
       "phone": "(202) 225-6730",
       "contact_form": null,
@@ -3244,8 +3321,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/67813f931f9ad6ea6fb1eb6f_200.jpg",
       "official_url": null,
-      "sponsored_count": 59,
-      "cosponsored_count": 1255,
+      "sponsored_count": 60,
+      "cosponsored_count": 1260,
       "address": "2004 Rayburn House Office Building",
       "phone": "(202) 225-2571",
       "contact_form": null,
@@ -3275,7 +3352,7 @@
       "photo_url": "https://www.congress.gov/img/member/g000589_200.jpg",
       "official_url": null,
       "sponsored_count": 69,
-      "cosponsored_count": 1099,
+      "cosponsored_count": 1101,
       "address": "2431 Rayburn House Office Building",
       "phone": "(202) 225-3484",
       "contact_form": null,
@@ -3322,7 +3399,7 @@
       "photo_url": "https://www.congress.gov/img/member/r000612_200.jpg",
       "official_url": null,
       "sponsored_count": 46,
-      "cosponsored_count": 783,
+      "cosponsored_count": 785,
       "address": "2238 Rayburn House Office Building",
       "phone": "(202) 225-4231",
       "contact_form": null,
@@ -3347,8 +3424,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/b001309_200.jpg",
       "official_url": null,
-      "sponsored_count": 154,
-      "cosponsored_count": 807,
+      "sponsored_count": 155,
+      "cosponsored_count": 812,
       "address": "1122 Longworth House Office Building",
       "phone": "(202) 225-5435",
       "contact_form": null,
@@ -3370,7 +3447,7 @@
       "photo_url": "https://www.congress.gov/img/member/j000301_200.jpg",
       "official_url": null,
       "sponsored_count": 135,
-      "cosponsored_count": 736,
+      "cosponsored_count": 737,
       "address": "1714 Longworth House Office Building",
       "phone": "(202) 225-2801",
       "contact_form": null,
@@ -3422,7 +3499,7 @@
       "photo_url": "https://www.congress.gov/img/member/r000610_200.jpg",
       "official_url": null,
       "sponsored_count": 58,
-      "cosponsored_count": 1182,
+      "cosponsored_count": 1184,
       "address": "2209 Rayburn House Office Building",
       "phone": "(202) 225-2065",
       "contact_form": null,
@@ -3478,7 +3555,7 @@
       "photo_url": "https://www.congress.gov/img/member/6776ebbf4f8a93753830ca7d_200.jpg",
       "official_url": null,
       "sponsored_count": 69,
-      "cosponsored_count": 1284,
+      "cosponsored_count": 1286,
       "address": "350 Cannon House Office Building",
       "phone": "(202) 225-6511",
       "contact_form": null,
@@ -3504,7 +3581,7 @@
       "photo_url": "https://www.congress.gov/img/member/681bc0e6b763f94d6e471f50_200.jpg",
       "official_url": null,
       "sponsored_count": 121,
-      "cosponsored_count": 1600,
+      "cosponsored_count": 1602,
       "address": "1727 Longworth House Office Building",
       "phone": "(202) 225-4315",
       "contact_form": null,
@@ -3534,7 +3611,7 @@
       "photo_url": "https://www.congress.gov/img/member/d000631_200.jpg",
       "official_url": null,
       "sponsored_count": 126,
-      "cosponsored_count": 2205,
+      "cosponsored_count": 2209,
       "address": "150 Cannon House Office Building",
       "phone": "(202) 225-4731",
       "contact_form": null,
@@ -3564,7 +3641,7 @@
       "photo_url": "https://www.congress.gov/img/member/o000172_200.jpg",
       "official_url": null,
       "sponsored_count": 77,
-      "cosponsored_count": 1664,
+      "cosponsored_count": 1666,
       "address": "250 Cannon House Office Building",
       "phone": "(202) 225-3965",
       "contact_form": null,
@@ -3616,7 +3693,7 @@
       "photo_url": "https://www.congress.gov/img/member/67ffc962f22eaf56065817bb_200.jpg",
       "official_url": null,
       "sponsored_count": 145,
-      "cosponsored_count": 1901,
+      "cosponsored_count": 1905,
       "address": "570 Cannon House Office Building",
       "phone": "(202) 225-3615",
       "contact_form": null,
@@ -3642,7 +3719,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_pa_5_scanlon_mary_200.jpg",
       "official_url": null,
       "sponsored_count": 125,
-      "cosponsored_count": 2287,
+      "cosponsored_count": 2291,
       "address": "1214 Longworth House Office Building",
       "phone": "(202) 225-2011",
       "contact_form": null,
@@ -3783,8 +3860,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/116_rp_pa_1_fitzpatrick_brian_200.jpg",
       "official_url": null,
-      "sponsored_count": 256,
-      "cosponsored_count": 5722,
+      "sponsored_count": 257,
+      "cosponsored_count": 5728,
       "address": "271 Cannon House Office Building",
       "phone": "(202) 225-4276",
       "contact_form": null,
@@ -3796,7 +3873,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "repbrianfitzpatrick"
+          "handle": "repbrianfitz"
         },
         {
           "platform": "instagram",
@@ -3814,7 +3891,7 @@
       "photo_url": "https://www.congress.gov/img/member/t000478_200.jpg",
       "official_url": null,
       "sponsored_count": 236,
-      "cosponsored_count": 1884,
+      "cosponsored_count": 1887,
       "address": "2230 Rayburn House Office Building",
       "phone": "(202) 225-3665",
       "contact_form": null,
@@ -3856,7 +3933,7 @@
         },
         {
           "platform": "instagram",
-          "handle": "repadrianoespaillat"
+          "handle": "repespaillat"
         }
       ]
     },
@@ -3870,7 +3947,7 @@
       "photo_url": "https://www.congress.gov/img/member/115_rp_pa_2_evans_dwight_200.jpg",
       "official_url": null,
       "sponsored_count": 64,
-      "cosponsored_count": 3128,
+      "cosponsored_count": 3131,
       "address": "1105 Longworth House Office Building",
       "phone": "(202) 225-4001",
       "contact_form": null,
@@ -3908,7 +3985,7 @@
       "socials": [
         {
           "platform": "twitter",
-          "handle": "WarrenDavidson"
+          "handle": "Rep_Davidson"
         },
         {
           "platform": "facebook",
@@ -3916,7 +3993,7 @@
         },
         {
           "platform": "instagram",
-          "handle": "instawarrendavidson"
+          "handle": "repwarrendavidson"
         }
       ]
     },
@@ -3929,8 +4006,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/69b30d648b7b84825b02d362_200.jpg",
       "official_url": null,
-      "sponsored_count": 134,
-      "cosponsored_count": 2346,
+      "sponsored_count": 136,
+      "cosponsored_count": 2347,
       "address": "1502 Longworth House Office Building",
       "phone": "(202) 225-6111",
       "contact_form": null,
@@ -3943,6 +4020,10 @@
         {
           "platform": "facebook",
           "handle": "CongressmanBoyle"
+        },
+        {
+          "platform": "youtube",
+          "handle": "congressmanboyle"
         }
       ]
     },
@@ -3969,6 +4050,10 @@
         {
           "platform": "facebook",
           "handle": "RepEliseStefanik"
+        },
+        {
+          "platform": "youtube",
+          "handle": "repelisestefanik"
         },
         {
           "platform": "instagram",
@@ -4020,7 +4105,7 @@
       "photo_url": "https://www.congress.gov/img/member/j000295_200.jpg",
       "official_url": null,
       "sponsored_count": 141,
-      "cosponsored_count": 1861,
+      "cosponsored_count": 1864,
       "address": "2065 Rayburn House Office Building",
       "phone": "(202) 225-5731",
       "contact_form": null,
@@ -4053,8 +4138,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/b001281_200.jpg",
       "official_url": null,
-      "sponsored_count": 185,
-      "cosponsored_count": 3260,
+      "sponsored_count": 186,
+      "cosponsored_count": 3267,
       "address": "2079 Rayburn House Office Building",
       "phone": "(202) 225-4324",
       "contact_form": null,
@@ -4066,7 +4151,11 @@
         },
         {
           "platform": "facebook",
-          "handle": "RepJoyceBeatty"
+          "handle": "656884781042633"
+        },
+        {
+          "platform": "youtube",
+          "handle": "RepBeatty"
         },
         {
           "platform": "instagram",
@@ -4096,7 +4185,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "RepHakeemJeffries"
+          "handle": "repjeffries"
         },
         {
           "platform": "instagram",
@@ -4113,7 +4202,7 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/m001188_200.jpg",
       "official_url": null,
-      "sponsored_count": 322,
+      "sponsored_count": 323,
       "cosponsored_count": 3664,
       "address": "2468 Rayburn House Office Building",
       "phone": "(202) 225-2601",
@@ -4139,8 +4228,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/b001278_200.jpg",
       "official_url": null,
-      "sponsored_count": 299,
-      "cosponsored_count": 4192,
+      "sponsored_count": 300,
+      "cosponsored_count": 4201,
       "address": "2231 Rayburn House Office Building",
       "phone": "(202) 225-0855",
       "contact_form": null,
@@ -4174,7 +4263,7 @@
       "photo_url": "https://www.congress.gov/img/member/6984c938b1dfe04d989a1e21_200.jpg",
       "official_url": null,
       "sponsored_count": 242,
-      "cosponsored_count": 2334,
+      "cosponsored_count": 2335,
       "address": "2470 Rayburn House Office Building",
       "phone": "(202) 225-6405",
       "contact_form": null,
@@ -4208,7 +4297,7 @@
       "photo_url": "https://www.congress.gov/img/member/d000616_200.jpg",
       "official_url": null,
       "sponsored_count": 52,
-      "cosponsored_count": 1532,
+      "cosponsored_count": 1533,
       "address": "2304 Rayburn House Office Building",
       "phone": "(202) 225-6831",
       "contact_form": null,
@@ -4242,7 +4331,7 @@
       "photo_url": "https://www.congress.gov/img/member/f000459_200.jpg",
       "official_url": null,
       "sponsored_count": 51,
-      "cosponsored_count": 1528,
+      "cosponsored_count": 1531,
       "address": "2187 Rayburn House Office Building",
       "phone": "(202) 225-3271",
       "contact_form": null,
@@ -4272,7 +4361,7 @@
       "photo_url": "https://www.congress.gov/img/member/k000376_200.jpg",
       "official_url": null,
       "sponsored_count": 189,
-      "cosponsored_count": 2403,
+      "cosponsored_count": 2406,
       "address": "1707 Longworth House Office Building",
       "phone": "(202) 225-5406",
       "contact_form": null,
@@ -4284,7 +4373,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "191056827594903"
+          "handle": "mikekellypa"
         },
         {
           "platform": "youtube",
@@ -4302,7 +4391,7 @@
       "photo_url": "https://www.congress.gov/img/member/c001068_200.jpg",
       "official_url": null,
       "sponsored_count": 500,
-      "cosponsored_count": 8540,
+      "cosponsored_count": 8544,
       "address": "2268 Rayburn House Office Building",
       "phone": "(202) 225-3265",
       "contact_form": null,
@@ -4336,7 +4425,7 @@
       "photo_url": "https://www.congress.gov/img/member/j000289_200.jpg",
       "official_url": null,
       "sponsored_count": 55,
-      "cosponsored_count": 1326,
+      "cosponsored_count": 1327,
       "address": "2056 Rayburn House Office Building",
       "phone": "(202) 225-2676",
       "contact_form": null,
@@ -4366,7 +4455,7 @@
       "photo_url": "https://www.congress.gov/img/member/674dfc6b5c48ff736e6e1762_200.jpg",
       "official_url": null,
       "sponsored_count": 208,
-      "cosponsored_count": 6042,
+      "cosponsored_count": 6046,
       "address": "2058 Rayburn House Office Building",
       "phone": "(202) 225-6231",
       "contact_form": null,
@@ -4378,15 +4467,15 @@
         },
         {
           "platform": "facebook",
-          "handle": "repyvettedclarke"
-        },
-        {
-          "platform": "youtube",
           "handle": "repyvetteclarke"
         },
         {
+          "platform": "youtube",
+          "handle": "RepYvetteDClarke"
+        },
+        {
           "platform": "instagram",
-          "handle": "repyvettedclarke"
+          "handle": "repyvetteclarke"
         }
       ]
     },
@@ -4400,7 +4489,7 @@
       "photo_url": "https://www.congress.gov/img/member/115_rp_pa_5_thompson_glenn_200.jpg",
       "official_url": null,
       "sponsored_count": 185,
-      "cosponsored_count": 2470,
+      "cosponsored_count": 2473,
       "address": "400 Cannon House Office Building",
       "phone": "(202) 225-5121",
       "contact_form": null,
@@ -4434,7 +4523,7 @@
       "photo_url": "https://www.congress.gov/img/member/t000469_200.jpg",
       "official_url": null,
       "sponsored_count": 227,
-      "cosponsored_count": 4726,
+      "cosponsored_count": 4728,
       "address": "2269 Rayburn House Office Building",
       "phone": "(202) 225-5076",
       "contact_form": null,
@@ -4468,7 +4557,7 @@
       "photo_url": "https://www.congress.gov/img/member/m001137_200.jpg",
       "official_url": null,
       "sponsored_count": 247,
-      "cosponsored_count": 5873,
+      "cosponsored_count": 5877,
       "address": "2310 Rayburn House Office Building",
       "phone": "(202) 225-3461",
       "contact_form": null,
@@ -4480,11 +4569,11 @@
         },
         {
           "platform": "facebook",
-          "handle": "gregorymeeksny05"
+          "handle": "repgregorymeeks"
         },
         {
           "platform": "youtube",
-          "handle": "gwmeeks"
+          "handle": "repgregorymeeks"
         },
         {
           "platform": "instagram",
@@ -4502,7 +4591,7 @@
       "photo_url": "https://www.congress.gov/img/member/v000081_200.jpg",
       "official_url": null,
       "sponsored_count": 515,
-      "cosponsored_count": 5766,
+      "cosponsored_count": 5769,
       "address": "2302 Rayburn House Office Building",
       "phone": "(202) 225-2361",
       "contact_form": null,
@@ -4514,7 +4603,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "8037068318"
+          "handle": "repnydiavelazquez"
         },
         {
           "platform": "youtube",
@@ -4532,7 +4621,7 @@
       "photo_url": "https://www.congress.gov/img/member/n000002_200.jpg",
       "official_url": null,
       "sponsored_count": 547,
-      "cosponsored_count": 7666,
+      "cosponsored_count": 7667,
       "address": "2132 Rayburn House Office Building",
       "phone": "(202) 225-5635",
       "contact_form": null,
@@ -4680,7 +4769,7 @@
         },
         {
           "platform": "youtube",
-          "handle": "reptomcole"
+          "handle": "TomColeOK04"
         },
         {
           "platform": "instagram",
@@ -4698,7 +4787,7 @@
       "photo_url": "https://www.congress.gov/img/member/68014c674e51529406f18e56_200.jpg",
       "official_url": null,
       "sponsored_count": 193,
-      "cosponsored_count": 2163,
+      "cosponsored_count": 2165,
       "address": "2183 Rayburn House Office Building",
       "phone": "(202) 225-6465",
       "contact_form": null,
@@ -4711,10 +4800,6 @@
         {
           "platform": "facebook",
           "handle": "RepMikeTurner"
-        },
-        {
-          "platform": "youtube",
-          "handle": "CongressmanTurner"
         },
         {
           "platform": "instagram",
@@ -4732,7 +4817,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_sc_2_wilson_joe_200.jpg",
       "official_url": null,
       "sponsored_count": 348,
-      "cosponsored_count": 4799,
+      "cosponsored_count": 4801,
       "address": "1436 Longworth House Office Building",
       "phone": "(202) 225-2452",
       "contact_form": null,
@@ -4778,7 +4863,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "jameseclyburn"
+          "handle": "repjamesclyburn"
         },
         {
           "platform": "youtube",
@@ -4800,7 +4885,7 @@
       "photo_url": "https://www.congress.gov/img/member/k000009_200.jpg",
       "official_url": null,
       "sponsored_count": 519,
-      "cosponsored_count": 10251,
+      "cosponsored_count": 10254,
       "address": "2314 Rayburn House Office Building",
       "phone": "(202) 225-4146",
       "contact_form": null,
@@ -4812,7 +4897,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "RepresentativeMarcyKaptur"
+          "handle": "repmarcykaptur"
         },
         {
           "platform": "youtube",
@@ -4834,12 +4919,25 @@
       "photo_url": "https://www.congress.gov/img/member/69eb9743277642362f6112ce_200.jpg",
       "official_url": null,
       "sponsored_count": 5,
-      "cosponsored_count": 154,
+      "cosponsored_count": 160,
       "address": "1427 Longworth House Office Building",
       "phone": "(202) 225-5034",
       "contact_form": null,
       "website": "https://mejia.house.gov",
-      "socials": []
+      "socials": [
+        {
+          "platform": "twitter",
+          "handle": "RepAnalilia"
+        },
+        {
+          "platform": "facebook",
+          "handle": "repanalilia"
+        },
+        {
+          "platform": "instagram",
+          "handle": "repanalilia"
+        }
+      ]
     },
     {
       "bioguide_id": "P000621",
@@ -4851,7 +4949,7 @@
       "photo_url": "https://www.congress.gov/img/member/67745d3b0b34857ecc909167_200.jpg",
       "official_url": null,
       "sponsored_count": 16,
-      "cosponsored_count": 253,
+      "cosponsored_count": 255,
       "address": "1007 Longworth House Office Building",
       "phone": "(202) 225-5751",
       "contact_form": null,
@@ -4859,15 +4957,15 @@
       "socials": [
         {
           "platform": "twitter",
-          "handle": "caohouse"
+          "handle": "RepNellie"
         },
         {
           "platform": "facebook",
-          "handle": "CAOHouseofReps"
+          "handle": "congresswomannelliepou"
         },
         {
           "platform": "instagram",
-          "handle": "housecreativeservices"
+          "handle": "RepNellie"
         }
       ]
     },
@@ -4880,7 +4978,7 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/67744f970b34857ecc909161_200.jpg",
       "official_url": null,
-      "sponsored_count": 19,
+      "sponsored_count": 20,
       "cosponsored_count": 175,
       "address": "1113 Longworth House Office Building",
       "phone": "(202) 225-2956",
@@ -4910,8 +5008,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/6a3974507d3b72f27fb69f0c_200.jpg",
       "official_url": null,
-      "sponsored_count": 20,
-      "cosponsored_count": 304,
+      "sponsored_count": 21,
+      "cosponsored_count": 306,
       "address": "1339 Longworth House Office Building",
       "phone": "(202) 225-3061",
       "contact_form": null,
@@ -4967,7 +5065,7 @@
       "photo_url": "https://www.congress.gov/img/member/69d7f4ee7304cef7a0c977a8_200.jpg",
       "official_url": null,
       "sponsored_count": 19,
-      "cosponsored_count": 355,
+      "cosponsored_count": 356,
       "address": "1408 Longworth House Office Building",
       "phone": "(202) 225-3611",
       "contact_form": null,
@@ -4997,7 +5095,7 @@
       "photo_url": "https://www.congress.gov/img/member/67744a540b34857ecc909137_200.jpg",
       "official_url": null,
       "sponsored_count": 32,
-      "cosponsored_count": 309,
+      "cosponsored_count": 311,
       "address": "1424 Longworth House Office Building",
       "phone": "(202) 225-5634",
       "contact_form": null,
@@ -5027,7 +5125,7 @@
       "photo_url": "https://www.congress.gov/img/member/677449a70b34857ecc90912b_200.jpg",
       "official_url": null,
       "sponsored_count": 17,
-      "cosponsored_count": 255,
+      "cosponsored_count": 263,
       "address": "1205 Longworth House Office Building",
       "phone": "(202) 225-2871",
       "contact_form": null,
@@ -5043,7 +5141,7 @@
         },
         {
           "platform": "instagram",
-          "handle": "kellymorrisonmn"
+          "handle": "repkellymorrison"
         }
       ]
     },
@@ -5056,8 +5154,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/677446d80b34857ecc90911f_200.jpg",
       "official_url": null,
-      "sponsored_count": 30,
-      "cosponsored_count": 460,
+      "sponsored_count": 31,
+      "cosponsored_count": 464,
       "address": "1130 Longworth House Office Building",
       "phone": "(202) 225-2721",
       "contact_form": null,
@@ -5117,7 +5215,7 @@
       "photo_url": "https://www.congress.gov/img/member/67742f0a0b34857ecc9090fb_200.jpg",
       "official_url": null,
       "sponsored_count": 21,
-      "cosponsored_count": 154,
+      "cosponsored_count": 156,
       "address": "425 Cannon House Office Building",
       "phone": "(202) 225-2646",
       "contact_form": null,
@@ -5147,7 +5245,7 @@
       "photo_url": "https://www.congress.gov/img/member/67742d1b0b34857ecc9090dd_200.jpg",
       "official_url": null,
       "sponsored_count": 17,
-      "cosponsored_count": 216,
+      "cosponsored_count": 217,
       "address": "126 Cannon House Office Building",
       "phone": "(202) 225-1976",
       "contact_form": null,
@@ -5176,8 +5274,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/67742ca40b34857ecc9090d7_200.jpg",
       "official_url": null,
-      "sponsored_count": 33,
-      "cosponsored_count": 334,
+      "sponsored_count": 34,
+      "cosponsored_count": 337,
       "address": "1233 Longworth House Office Building",
       "phone": "(202) 225-2576",
       "contact_form": null,
@@ -5207,7 +5305,7 @@
       "photo_url": "https://www.congress.gov/img/member/678ff62d66bf616cf1a7ce13_200.jpg",
       "official_url": null,
       "sponsored_count": 18,
-      "cosponsored_count": 385,
+      "cosponsored_count": 393,
       "address": "223 Cannon House Office Building",
       "phone": "(202) 225-5206",
       "contact_form": null,
@@ -5219,7 +5317,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "61571606604866"
+          "handle": "repgoodlander"
         },
         {
           "platform": "instagram",
@@ -5267,7 +5365,7 @@
       "photo_url": "https://www.congress.gov/img/member/677425dc0b34857ecc909089_200.jpg",
       "official_url": null,
       "sponsored_count": 17,
-      "cosponsored_count": 370,
+      "cosponsored_count": 371,
       "address": "1213 Longworth House Office Building",
       "phone": "(202) 225-4016",
       "contact_form": null,
@@ -5297,7 +5395,7 @@
       "photo_url": "https://www.congress.gov/img/member/677424da0b34857ecc909077_200.jpg",
       "official_url": null,
       "sponsored_count": 27,
-      "cosponsored_count": 181,
+      "cosponsored_count": 182,
       "address": "1529 Longworth House Office Building",
       "phone": "(202) 225-3211",
       "contact_form": null,
@@ -5327,7 +5425,7 @@
       "photo_url": "https://www.congress.gov/img/member/6774243a0b34857ecc90906b_200.jpg",
       "official_url": null,
       "sponsored_count": 16,
-      "cosponsored_count": 243,
+      "cosponsored_count": 244,
       "address": "1022 Longworth House Office Building",
       "phone": "(202) 225-4765",
       "contact_form": null,
@@ -5349,7 +5447,7 @@
       "photo_url": "https://www.congress.gov/img/member/677422240b34857ecc90904a_200.jpg",
       "official_url": null,
       "sponsored_count": 35,
-      "cosponsored_count": 540,
+      "cosponsored_count": 548,
       "address": "1429 Longworth House Office Building",
       "phone": "(202) 225-2406",
       "contact_form": null,
@@ -5375,7 +5473,7 @@
       "photo_url": "https://www.congress.gov/img/member/6774207d0b34857ecc909034_200.jpg",
       "official_url": null,
       "sponsored_count": 54,
-      "cosponsored_count": 218,
+      "cosponsored_count": 219,
       "address": "1232 Longworth House Office Building",
       "phone": "(202) 225-4872",
       "contact_form": null,
@@ -5401,7 +5499,7 @@
       "photo_url": "https://www.congress.gov/img/member/681dfed94fc893ce843e24b8_200.jpg",
       "official_url": null,
       "sponsored_count": 20,
-      "cosponsored_count": 672,
+      "cosponsored_count": 675,
       "address": "426 Cannon House Office Building",
       "phone": "(202) 225-3436",
       "contact_form": null,
@@ -5431,7 +5529,7 @@
       "photo_url": "https://www.congress.gov/img/member/v000136_200.jpg",
       "official_url": null,
       "sponsored_count": 67,
-      "cosponsored_count": 642,
+      "cosponsored_count": 646,
       "address": "322 Cannon House Office Building",
       "phone": "(202) 225-2365",
       "contact_form": null,
@@ -5461,7 +5559,7 @@
       "photo_url": "https://www.congress.gov/img/member/68122bf2246d1b6bd8d9f6a2_200.jpg",
       "official_url": null,
       "sponsored_count": 70,
-      "cosponsored_count": 1663,
+      "cosponsored_count": 1668,
       "address": "154 Cannon House Office Building",
       "phone": "(202) 225-5802",
       "contact_form": null,
@@ -5490,8 +5588,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/s001221_200.jpg",
       "official_url": null,
-      "sponsored_count": 68,
-      "cosponsored_count": 748,
+      "sponsored_count": 69,
+      "cosponsored_count": 755,
       "address": "1317 Longworth House Office Building",
       "phone": "(202) 225-3831",
       "contact_form": null,
@@ -5521,7 +5619,7 @@
       "photo_url": "https://www.congress.gov/img/member/681231f6246d1b6bd8d9f6b4_200.jpg",
       "official_url": null,
       "sponsored_count": 36,
-      "cosponsored_count": 610,
+      "cosponsored_count": 611,
       "address": "2453 Rayburn House Office Building",
       "phone": "(202) 225-7919",
       "contact_form": null,
@@ -5644,8 +5742,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/i000058_200.jpg",
       "official_url": null,
-      "sponsored_count": 11,
-      "cosponsored_count": 667,
+      "sponsored_count": 12,
+      "cosponsored_count": 669,
       "address": "1610 Longworth House Office Building",
       "phone": "(202) 225-8699",
       "contact_form": null,
@@ -5675,7 +5773,7 @@
       "photo_url": "https://www.congress.gov/img/member/68122e57246d1b6bd8d9f6ab_200.jpg",
       "official_url": null,
       "sponsored_count": 49,
-      "cosponsored_count": 862,
+      "cosponsored_count": 875,
       "address": "2452 Rayburn House Office Building",
       "phone": "(202) 225-1784",
       "contact_form": null,
@@ -5709,7 +5807,7 @@
       "photo_url": "https://www.congress.gov/img/member/e000235_200.jpg",
       "official_url": null,
       "sponsored_count": 45,
-      "cosponsored_count": 438,
+      "cosponsored_count": 440,
       "address": "443 Cannon House Office Building",
       "phone": "(202) 225-5772",
       "contact_form": null,
@@ -5739,7 +5837,7 @@
       "photo_url": "https://www.congress.gov/img/member/e6f7494e24986a5f6be219578e9b3bae_200.jpg",
       "official_url": null,
       "sponsored_count": 43,
-      "cosponsored_count": 537,
+      "cosponsored_count": 538,
       "address": "1505 Longworth House Office Building",
       "phone": "(202) 225-6401",
       "contact_form": null,
@@ -5747,7 +5845,7 @@
       "socials": [
         {
           "platform": "twitter",
-          "handle": "RepEdwards"
+          "handle": "RepChuckEdwards"
         },
         {
           "platform": "facebook",
@@ -5769,7 +5867,7 @@
       "photo_url": "https://www.congress.gov/img/member/d000230_200.jpg",
       "official_url": null,
       "sponsored_count": 57,
-      "cosponsored_count": 1571,
+      "cosponsored_count": 1573,
       "address": "1123 Longworth House Office Building",
       "phone": "(202) 225-3101",
       "contact_form": null,
@@ -5829,7 +5927,7 @@
       "photo_url": "https://www.congress.gov/img/member/a000379_200.jpg",
       "official_url": null,
       "sponsored_count": 55,
-      "cosponsored_count": 397,
+      "cosponsored_count": 399,
       "address": "328 Cannon House Office Building",
       "phone": "(202) 225-2876",
       "contact_form": null,
@@ -5841,7 +5939,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "100089595940547"
+          "handle": "repmarkalford"
         },
         {
           "platform": "youtube",
@@ -5863,7 +5961,7 @@
       "photo_url": "https://www.congress.gov/img/member/f000475_200.jpg",
       "official_url": null,
       "sponsored_count": 68,
-      "cosponsored_count": 757,
+      "cosponsored_count": 759,
       "address": "2418 Rayburn House Office Building",
       "phone": "(202) 225-2472",
       "contact_form": null,
@@ -5897,7 +5995,7 @@
       "photo_url": "https://www.congress.gov/img/member/67b4de4a61bd80d04553b0a5_200.jpg",
       "official_url": null,
       "sponsored_count": 51,
-      "cosponsored_count": 456,
+      "cosponsored_count": 457,
       "address": "343 Cannon House Office Building",
       "phone": "(202) 225-4806",
       "contact_form": null,
@@ -5923,7 +6021,7 @@
       "photo_url": "https://www.congress.gov/img/member/s001218_200.jpg",
       "official_url": null,
       "sponsored_count": 56,
-      "cosponsored_count": 1670,
+      "cosponsored_count": 1673,
       "address": "1421 Longworth House Office Building",
       "phone": "(202) 225-6316",
       "contact_form": null,
@@ -5949,7 +6047,7 @@
       "photo_url": "https://www.congress.gov/img/member/r000305_200.jpg",
       "official_url": null,
       "sponsored_count": 92,
-      "cosponsored_count": 1885,
+      "cosponsored_count": 1890,
       "address": "1221 Longworth House Office Building",
       "phone": "(202) 225-3032",
       "contact_form": null,
@@ -5979,7 +6077,7 @@
       "photo_url": "https://www.congress.gov/img/member/677836d41658e791a384976d_200.jpg",
       "official_url": null,
       "sponsored_count": 71,
-      "cosponsored_count": 491,
+      "cosponsored_count": 492,
       "address": "562 Cannon House Office Building",
       "phone": "(202) 225-2106",
       "contact_form": null,
@@ -6009,7 +6107,7 @@
       "photo_url": "https://www.congress.gov/img/member/220c9f13e61af5f7a2a250c8deb38b87_200.jpg",
       "official_url": null,
       "sponsored_count": 106,
-      "cosponsored_count": 885,
+      "cosponsored_count": 888,
       "address": "2417 Rayburn House Office Building",
       "phone": "(202) 225-6190",
       "contact_form": null,
@@ -6043,7 +6141,7 @@
       "photo_url": "https://www.congress.gov/img/member/g000597_200.jpg",
       "official_url": null,
       "sponsored_count": 100,
-      "cosponsored_count": 1100,
+      "cosponsored_count": 1103,
       "address": "2344 Rayburn House Office Building",
       "phone": "(202) 225-7896",
       "contact_form": null,
@@ -6069,7 +6167,7 @@
       "photo_url": "https://www.congress.gov/img/member/f000470_200.jpg",
       "official_url": null,
       "sponsored_count": 72,
-      "cosponsored_count": 555,
+      "cosponsored_count": 557,
       "address": "2229 Rayburn House Office Building",
       "phone": "(202) 225-2165",
       "contact_form": null,
@@ -6129,7 +6227,7 @@
       "photo_url": "https://www.congress.gov/img/member/g000592_200.jpg",
       "official_url": null,
       "sponsored_count": 90,
-      "cosponsored_count": 936,
+      "cosponsored_count": 937,
       "address": "1107 Longworth House Office Building",
       "phone": "(202) 225-6306",
       "contact_form": null,
@@ -6151,7 +6249,7 @@
       "photo_url": "https://www.congress.gov/img/member/l000590_200.jpg",
       "official_url": null,
       "sponsored_count": 105,
-      "cosponsored_count": 1314,
+      "cosponsored_count": 1315,
       "address": "365 Cannon House Office Building",
       "phone": "(202) 225-3252",
       "contact_form": null,
@@ -6211,7 +6309,7 @@
       "photo_url": "https://www.congress.gov/img/member/p000614_200.jpg",
       "official_url": null,
       "sponsored_count": 184,
-      "cosponsored_count": 2137,
+      "cosponsored_count": 2138,
       "address": "452 Cannon House Office Building",
       "phone": "(202) 225-5456",
       "contact_form": null,
@@ -6232,8 +6330,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/g000591_200.jpg",
       "official_url": null,
-      "sponsored_count": 58,
-      "cosponsored_count": 1177,
+      "sponsored_count": 59,
+      "cosponsored_count": 1181,
       "address": "450 Cannon House Office Building",
       "phone": "(202) 225-5031",
       "contact_form": null,
@@ -6259,7 +6357,7 @@
       "photo_url": "https://www.congress.gov/img/member/s001212_200.jpg",
       "official_url": null,
       "sponsored_count": 100,
-      "cosponsored_count": 1308,
+      "cosponsored_count": 1310,
       "address": "145 Cannon House Office Building",
       "phone": "(202) 225-6211",
       "contact_form": null,
@@ -6285,7 +6383,7 @@
       "photo_url": "https://www.congress.gov/img/member/o000173_200.jpg",
       "official_url": null,
       "sponsored_count": 127,
-      "cosponsored_count": 2273,
+      "cosponsored_count": 2281,
       "address": "1730 Longworth House Office Building",
       "phone": "(202) 225-4755",
       "contact_form": null,
@@ -6307,7 +6405,7 @@
       "photo_url": "https://www.congress.gov/img/member/c001119_200.jpg",
       "official_url": null,
       "sponsored_count": 119,
-      "cosponsored_count": 2298,
+      "cosponsored_count": 2299,
       "address": "2052 Rayburn House Office Building",
       "phone": "(202) 225-2271",
       "contact_form": null,
@@ -6332,8 +6430,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/t000481_200.jpg",
       "official_url": null,
-      "sponsored_count": 149,
-      "cosponsored_count": 3487,
+      "sponsored_count": 150,
+      "cosponsored_count": 3494,
       "address": "2438 Rayburn House Office Building",
       "phone": "(202) 225-5126",
       "contact_form": null,
@@ -6363,7 +6461,7 @@
       "photo_url": "https://www.congress.gov/img/member/s001215_200.jpg",
       "official_url": null,
       "sponsored_count": 133,
-      "cosponsored_count": 1557,
+      "cosponsored_count": 1559,
       "address": "2411 Rayburn House Office Building",
       "phone": "(202) 225-8171",
       "contact_form": null,
@@ -6389,7 +6487,7 @@
       "photo_url": "https://www.congress.gov/img/member/p000617_200.jpg",
       "official_url": null,
       "sponsored_count": 160,
-      "cosponsored_count": 1890,
+      "cosponsored_count": 1893,
       "address": "402 Cannon House Office Building",
       "phone": "(202) 225-5111",
       "contact_form": null,
@@ -6419,7 +6517,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_ny_3_suozzi_thomas_200.jpg",
       "official_url": null,
       "sponsored_count": 86,
-      "cosponsored_count": 2881,
+      "cosponsored_count": 2885,
       "address": "203 Cannon House Office Building",
       "phone": "(202) 225-3335",
       "contact_form": null,
@@ -6444,8 +6542,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/115_rp_nj_5_gottheimer_josh_200.jpg",
       "official_url": null,
-      "sponsored_count": 229,
-      "cosponsored_count": 3381,
+      "sponsored_count": 231,
+      "cosponsored_count": 3398,
       "address": "106 Cannon House Office Building",
       "phone": "(202) 225-4465",
       "contact_form": null,
@@ -6474,8 +6572,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/115_rp_ne_2_bacon_don_200.jpg",
       "official_url": null,
-      "sponsored_count": 207,
-      "cosponsored_count": 2997,
+      "sponsored_count": 215,
+      "cosponsored_count": 3004,
       "address": "2104 Rayburn House Office Building",
       "phone": "(202) 225-4155",
       "contact_form": null,
@@ -6504,8 +6602,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/b001301_200.jpg",
       "official_url": null,
-      "sponsored_count": 111,
-      "cosponsored_count": 1110,
+      "sponsored_count": 112,
+      "cosponsored_count": 1111,
       "address": "566 Cannon House Office Building",
       "phone": "(202) 225-4735",
       "contact_form": null,
@@ -6521,7 +6619,7 @@
         },
         {
           "platform": "youtube",
-          "handle": "RepJackBergman"
+          "handle": "RepBergman"
         },
         {
           "platform": "instagram",
@@ -6554,6 +6652,10 @@
           "handle": "repraskin"
         },
         {
+          "platform": "youtube",
+          "handle": "RepRaskin"
+        },
+        {
           "platform": "instagram",
           "handle": "repraskin"
         }
@@ -6569,7 +6671,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_ms_1_kelly_trent_200.jpg",
       "official_url": null,
       "sponsored_count": 67,
-      "cosponsored_count": 1073,
+      "cosponsored_count": 1076,
       "address": "2243 Rayburn House Office Building",
       "phone": "(202) 225-4306",
       "contact_form": null,
@@ -6599,7 +6701,7 @@
       "photo_url": "https://www.congress.gov/img/member/w000822_200.jpg",
       "official_url": null,
       "sponsored_count": 205,
-      "cosponsored_count": 4188,
+      "cosponsored_count": 4196,
       "address": "168 Cannon House Office Building",
       "phone": "(202) 225-5801",
       "contact_form": null,
@@ -6723,7 +6825,7 @@
       "photo_url": "https://www.congress.gov/img/member/d000624_200.jpg",
       "official_url": null,
       "sponsored_count": 295,
-      "cosponsored_count": 3156,
+      "cosponsored_count": 3163,
       "address": "102 Cannon House Office Building",
       "phone": "(202) 225-4071",
       "contact_form": null,
@@ -6753,7 +6855,7 @@
       "photo_url": "https://www.congress.gov/img/member/m001194_200.jpg",
       "official_url": null,
       "sponsored_count": 113,
-      "cosponsored_count": 1615,
+      "cosponsored_count": 1617,
       "address": "246 Cannon House Office Building",
       "phone": "(202) 225-3561",
       "contact_form": null,
@@ -6783,7 +6885,7 @@
       "photo_url": "https://www.congress.gov/img/member/m001196_200.jpg",
       "official_url": null,
       "sponsored_count": 112,
-      "cosponsored_count": 3259,
+      "cosponsored_count": 3264,
       "address": "1126 Longworth House Office Building",
       "phone": "(202) 225-8020",
       "contact_form": null,
@@ -6795,7 +6897,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "CongressmanSethMoulton"
+          "handle": "repmoulton"
         },
         {
           "platform": "instagram",
@@ -6813,7 +6915,7 @@
       "photo_url": "https://www.congress.gov/img/member/n000188_200.jpg",
       "official_url": null,
       "sponsored_count": 111,
-      "cosponsored_count": 1873,
+      "cosponsored_count": 1874,
       "address": "2427 Rayburn House Office Building",
       "phone": "(202) 225-6501",
       "contact_form": null,
@@ -6828,8 +6930,12 @@
           "handle": "DonaldNorcrossNJ"
         },
         {
+          "platform": "youtube",
+          "handle": "donaldnorcross"
+        },
+        {
           "platform": "instagram",
-          "handle": "donald_norcross"
+          "handle": "donaldnorcross"
         }
       ]
     },
@@ -6843,7 +6949,7 @@
       "photo_url": "https://www.congress.gov/img/member/a000370_200.jpg",
       "official_url": null,
       "sponsored_count": 190,
-      "cosponsored_count": 2434,
+      "cosponsored_count": 2440,
       "address": "2436 Rayburn House Office Building",
       "phone": "(202) 225-1510",
       "contact_form": null,
@@ -6873,7 +6979,7 @@
       "photo_url": "https://www.congress.gov/img/member/h001066_200.jpg",
       "official_url": null,
       "sponsored_count": 119,
-      "cosponsored_count": 1803,
+      "cosponsored_count": 1806,
       "address": "406 Cannon House Office Building",
       "phone": "(202) 225-9894",
       "contact_form": null,
@@ -7057,7 +7163,7 @@
       "photo_url": "https://www.congress.gov/img/member/117_rp_md_1_harris_andy_200.jpg",
       "official_url": null,
       "sponsored_count": 51,
-      "cosponsored_count": 1933,
+      "cosponsored_count": 1934,
       "address": "1536 Longworth House Office Building",
       "phone": "(202) 225-5311",
       "contact_form": null,
@@ -7099,7 +7205,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "Congressman.Keating"
+          "handle": "usrepkeating"
         },
         {
           "platform": "youtube",
@@ -7116,8 +7222,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/s001172_200.jpg",
       "official_url": null,
-      "sponsored_count": 141,
-      "cosponsored_count": 1821,
+      "sponsored_count": 142,
+      "cosponsored_count": 1825,
       "address": "502 Cannon House Office Building",
       "phone": "(202) 225-6435",
       "contact_form": null,
@@ -7185,7 +7291,7 @@
       "photo_url": "https://www.congress.gov/img/member/6809296b6c2e6631263de728_200.jpg",
       "official_url": null,
       "sponsored_count": 256,
-      "cosponsored_count": 4522,
+      "cosponsored_count": 4526,
       "address": "2370 Rayburn House Office Building",
       "phone": "(202) 225-5965",
       "contact_form": null,
@@ -7219,7 +7325,7 @@
       "photo_url": "https://www.congress.gov/img/member/p000597_200.jpg",
       "official_url": null,
       "sponsored_count": 182,
-      "cosponsored_count": 4924,
+      "cosponsored_count": 4928,
       "address": "2354 Rayburn House Office Building",
       "phone": "(202) 225-6116",
       "contact_form": null,
@@ -7231,7 +7337,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "ChelliePingree"
+          "handle": "91529332807"
         },
         {
           "platform": "youtube",
@@ -7287,7 +7393,7 @@
       "photo_url": "https://www.congress.gov/img/member/t000193_200.jpg",
       "official_url": null,
       "sponsored_count": 256,
-      "cosponsored_count": 5608,
+      "cosponsored_count": 5609,
       "address": "2466 Rayburn House Office Building",
       "phone": "(202) 225-5876",
       "contact_form": null,
@@ -7303,7 +7409,7 @@
         },
         {
           "platform": "youtube",
-          "handle": "RepBennieThompson"
+          "handle": "RepBennieG.ThompsonMS02"
         },
         {
           "platform": "instagram",
@@ -7321,7 +7427,7 @@
       "photo_url": "https://www.congress.gov/img/member/s000522_200.jpg",
       "official_url": null,
       "sponsored_count": 952,
-      "cosponsored_count": 7670,
+      "cosponsored_count": 7672,
       "address": "2373 Rayburn House Office Building",
       "phone": "(202) 225-3765",
       "contact_form": null,
@@ -7329,7 +7435,7 @@
       "socials": [
         {
           "platform": "facebook",
-          "handle": "RepChrisSmith"
+          "handle": "371621772908416"
         },
         {
           "platform": "youtube",
@@ -7351,7 +7457,7 @@
       "photo_url": "https://www.congress.gov/img/member/m000687_200.jpg",
       "official_url": null,
       "sponsored_count": 96,
-      "cosponsored_count": 2898,
+      "cosponsored_count": 2900,
       "address": "2263 Rayburn House Office Building",
       "phone": "(202) 225-4741",
       "contact_form": null,
@@ -7415,7 +7521,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_mo_5_cleaver_emanuel_200.jpg",
       "official_url": null,
       "sponsored_count": 235,
-      "cosponsored_count": 4353,
+      "cosponsored_count": 4354,
       "address": "2217 Rayburn House Office Building",
       "phone": "(202) 225-4535",
       "contact_form": null,
@@ -7449,7 +7555,7 @@
       "photo_url": "https://www.congress.gov/img/member/6a46604a8b827ec333b929fe_200.jpg",
       "official_url": null,
       "sponsored_count": 255,
-      "cosponsored_count": 4576,
+      "cosponsored_count": 4583,
       "address": "2109 Rayburn House Office Building",
       "phone": "(202) 225-8273",
       "contact_form": null,
@@ -7465,7 +7571,7 @@
         },
         {
           "platform": "youtube",
-          "handle": "RepLynch"
+          "handle": "CongressmanStephenLynch"
         },
         {
           "platform": "instagram",
@@ -7483,7 +7589,7 @@
       "photo_url": "https://www.congress.gov/img/member/g000546_200.jpg",
       "official_url": null,
       "sponsored_count": 272,
-      "cosponsored_count": 2072,
+      "cosponsored_count": 2073,
       "address": "1135 Longworth House Office Building",
       "phone": "(202) 225-7041",
       "contact_form": null,
@@ -7495,7 +7601,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "118514606128"
+          "handle": "repsamgraves"
         },
         {
           "platform": "instagram",
@@ -7513,7 +7619,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_mn_4_mccollum_betty_200.jpg",
       "official_url": null,
       "sponsored_count": 175,
-      "cosponsored_count": 6970,
+      "cosponsored_count": 6973,
       "address": "2426 Rayburn House Office Building",
       "phone": "(202) 225-6631",
       "contact_form": null,
@@ -7547,7 +7653,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_md_5_hoyer_steny_200.jpg",
       "official_url": null,
       "sponsored_count": 376,
-      "cosponsored_count": 4106,
+      "cosponsored_count": 4108,
       "address": "1705 Longworth House Office Building",
       "phone": "(202) 225-4131",
       "contact_form": null,
@@ -7580,13 +7686,22 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/6a9869d92a68122e10181e62_200.jpg",
       "official_url": null,
-      "sponsored_count": 6,
-      "cosponsored_count": 50,
+      "sponsored_count": 7,
+      "cosponsored_count": 58,
       "address": "468 Cannon House Office Building",
       "phone": "(202) 225-2939",
       "contact_form": null,
       "website": "https://blair.house.gov/",
-      "socials": []
+      "socials": [
+        {
+          "platform": "twitter",
+          "handle": "repevertonblair"
+        },
+        {
+          "platform": "instagram",
+          "handle": "congressmanblair"
+        }
+      ]
     },
     {
       "bioguide_id": "F000485",
@@ -7597,13 +7712,26 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/69eb95e5277642362f6112c5_200.jpg",
       "official_url": null,
-      "sponsored_count": 15,
-      "cosponsored_count": 96,
+      "sponsored_count": 16,
+      "cosponsored_count": 97,
       "address": "2201 Rayburn House Office Building",
       "phone": "(202) 225-5211",
       "contact_form": null,
       "website": "https://fuller.house.gov",
-      "socials": []
+      "socials": [
+        {
+          "platform": "twitter",
+          "handle": "RepClayFuller"
+        },
+        {
+          "platform": "facebook",
+          "handle": "61570681866170"
+        },
+        {
+          "platform": "instagram",
+          "handle": "repclayfuller"
+        }
+      ]
     },
     {
       "bioguide_id": "S001229",
@@ -7615,7 +7743,7 @@
       "photo_url": "https://www.congress.gov/img/member/67745f0e0b34857ecc90918b_200.jpg",
       "official_url": null,
       "sponsored_count": 20,
-      "cosponsored_count": 228,
+      "cosponsored_count": 230,
       "address": "224 Cannon House Office Building",
       "phone": "(202) 225-3021",
       "contact_form": null,
@@ -7645,7 +7773,7 @@
       "photo_url": "https://www.congress.gov/img/member/67745ec50b34857ecc909185_200.jpg",
       "official_url": null,
       "sponsored_count": 18,
-      "cosponsored_count": 339,
+      "cosponsored_count": 340,
       "address": "1223 Longworth House Office Building",
       "phone": "(202) 225-6601",
       "contact_form": null,
@@ -7701,7 +7829,7 @@
       "photo_url": "https://www.congress.gov/img/member/67742e330b34857ecc9090ef_200.jpg",
       "official_url": null,
       "sponsored_count": 9,
-      "cosponsored_count": 122,
+      "cosponsored_count": 125,
       "address": "1320 Longworth House Office Building",
       "phone": "(202) 225-5901",
       "contact_form": null,
@@ -7731,7 +7859,7 @@
       "photo_url": "https://www.congress.gov/img/member/t000487_200.jpg",
       "official_url": null,
       "sponsored_count": 78,
-      "cosponsored_count": 1753,
+      "cosponsored_count": 1758,
       "address": "1027 Longworth House Office Building",
       "phone": "(202) 225-4906",
       "contact_form": null,
@@ -7760,8 +7888,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/s001225_200.jpg",
       "official_url": null,
-      "sponsored_count": 25,
-      "cosponsored_count": 735,
+      "sponsored_count": 26,
+      "cosponsored_count": 739,
       "address": "1314 Longworth House Office Building",
       "phone": "(202) 225-5905",
       "contact_form": null,
@@ -7786,8 +7914,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/684c2356333714e4aee2e1fd_200.jpg",
       "official_url": null,
-      "sponsored_count": 46,
-      "cosponsored_count": 1127,
+      "sponsored_count": 47,
+      "cosponsored_count": 1128,
       "address": "1523 Longworth House Office Building",
       "phone": "(202) 225-5701",
       "contact_form": null,
@@ -7817,7 +7945,7 @@
       "photo_url": "https://www.congress.gov/img/member/n000193_200.jpg",
       "official_url": null,
       "sponsored_count": 124,
-      "cosponsored_count": 885,
+      "cosponsored_count": 888,
       "address": "1410 Longworth House Office Building",
       "phone": "(202) 225-5476",
       "contact_form": null,
@@ -7847,7 +7975,7 @@
       "photo_url": "https://www.congress.gov/img/member/m001219_200.jpg",
       "official_url": null,
       "sponsored_count": 62,
-      "cosponsored_count": 639,
+      "cosponsored_count": 642,
       "address": "228 Cannon House Office Building",
       "phone": "(202) 225-1188",
       "contact_form": null,
@@ -7877,7 +8005,7 @@
       "photo_url": "https://www.congress.gov/img/member/m001217_200.jpg",
       "official_url": null,
       "sponsored_count": 38,
-      "cosponsored_count": 822,
+      "cosponsored_count": 823,
       "address": "242 Cannon House Office Building",
       "phone": "(202) 225-3001",
       "contact_form": null,
@@ -7910,8 +8038,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/m001220_200.jpg",
       "official_url": null,
-      "sponsored_count": 48,
-      "cosponsored_count": 704,
+      "sponsored_count": 49,
+      "cosponsored_count": 709,
       "address": "1527 Longworth House Office Building",
       "phone": "(202) 225-5401",
       "contact_form": null,
@@ -7941,7 +8069,7 @@
       "photo_url": "https://www.congress.gov/img/member/m001218_200.jpg",
       "official_url": null,
       "sponsored_count": 60,
-      "cosponsored_count": 577,
+      "cosponsored_count": 578,
       "address": "1719 Longworth House Office Building",
       "phone": "(202) 225-4272",
       "contact_form": null,
@@ -7971,7 +8099,7 @@
       "photo_url": "https://www.congress.gov/img/member/j000309_200.jpg",
       "official_url": null,
       "sponsored_count": 16,
-      "cosponsored_count": 1149,
+      "cosponsored_count": 1155,
       "address": "1632 Longworth House Office Building",
       "phone": "(202) 225-4372",
       "contact_form": null,
@@ -8087,7 +8215,7 @@
       "photo_url": "https://www.congress.gov/img/member/y000067_200.jpg",
       "official_url": null,
       "sponsored_count": 52,
-      "cosponsored_count": 566,
+      "cosponsored_count": 567,
       "address": "349 Cannon House Office Building",
       "phone": "(202) 225-3915",
       "contact_form": null,
@@ -8112,8 +8240,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/c001125_200.jpg",
       "official_url": null,
-      "sponsored_count": 78,
-      "cosponsored_count": 1552,
+      "sponsored_count": 79,
+      "cosponsored_count": 1557,
       "address": "442 Cannon House Office Building",
       "phone": "(202) 225-6636",
       "contact_form": null,
@@ -8139,7 +8267,7 @@
       "photo_url": "https://www.congress.gov/img/member/l000595_200.jpg",
       "official_url": null,
       "sponsored_count": 33,
-      "cosponsored_count": 467,
+      "cosponsored_count": 469,
       "address": "142 Cannon House Office Building",
       "phone": "(202) 225-8490",
       "contact_form": null,
@@ -8164,8 +8292,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/w000788_200.jpg",
       "official_url": null,
-      "sponsored_count": 163,
-      "cosponsored_count": 2034,
+      "sponsored_count": 164,
+      "cosponsored_count": 2037,
       "address": "1406 Longworth House Office Building",
       "phone": "(202) 225-3801",
       "contact_form": null,
@@ -8195,7 +8323,7 @@
       "photo_url": "https://www.congress.gov/img/member/s000929_200.jpg",
       "official_url": null,
       "sponsored_count": 49,
-      "cosponsored_count": 319,
+      "cosponsored_count": 320,
       "address": "1609 Longworth House Office Building",
       "phone": "(202) 225-2276",
       "contact_form": null,
@@ -8221,7 +8349,7 @@
       "photo_url": "https://www.congress.gov/img/member/s000168_200.jpg",
       "official_url": null,
       "sponsored_count": 74,
-      "cosponsored_count": 1373,
+      "cosponsored_count": 1375,
       "address": "2162 Rayburn House Office Building",
       "phone": "(202) 225-3931",
       "contact_form": null,
@@ -8251,7 +8379,7 @@
       "photo_url": "https://www.congress.gov/img/member/m001215_200.jpg",
       "official_url": null,
       "sponsored_count": 137,
-      "cosponsored_count": 1237,
+      "cosponsored_count": 1238,
       "address": "504 Cannon House Office Building",
       "phone": "(202) 225-6576",
       "contact_form": null,
@@ -8277,7 +8405,7 @@
       "photo_url": "https://www.congress.gov/img/member/m001214_200.jpg",
       "official_url": null,
       "sponsored_count": 19,
-      "cosponsored_count": 792,
+      "cosponsored_count": 795,
       "address": "2441 Rayburn House Office Building",
       "phone": "(202) 225-2461",
       "contact_form": null,
@@ -8303,7 +8431,7 @@
       "photo_url": "https://www.congress.gov/img/member/m001211_200.jpg",
       "official_url": null,
       "sponsored_count": 87,
-      "cosponsored_count": 1292,
+      "cosponsored_count": 1294,
       "address": "1740 Longworth House Office Building",
       "phone": "(202) 225-5271",
       "contact_form": null,
@@ -8385,7 +8513,7 @@
       "photo_url": "https://www.congress.gov/img/member/g000593_200.jpg",
       "official_url": null,
       "sponsored_count": 58,
-      "cosponsored_count": 783,
+      "cosponsored_count": 785,
       "address": "448 Cannon House Office Building",
       "phone": "(202) 225-2778",
       "contact_form": null,
@@ -8415,7 +8543,7 @@
       "photo_url": "https://www.congress.gov/img/member/f000446_200.jpg",
       "official_url": null,
       "sponsored_count": 103,
-      "cosponsored_count": 826,
+      "cosponsored_count": 827,
       "address": "2434 Rayburn House Office Building",
       "phone": "(202) 225-4426",
       "contact_form": null,
@@ -8441,7 +8569,7 @@
       "photo_url": "https://www.congress.gov/img/member/c001116_200.jpg",
       "official_url": null,
       "sponsored_count": 79,
-      "cosponsored_count": 561,
+      "cosponsored_count": 563,
       "address": "445 Cannon House Office Building",
       "phone": "(202) 225-9893",
       "contact_form": null,
@@ -8471,7 +8599,7 @@
       "photo_url": "https://www.congress.gov/img/member/67817e391f9ad6ea6fb1ebda_200.jpg",
       "official_url": null,
       "sponsored_count": 26,
-      "cosponsored_count": 1008,
+      "cosponsored_count": 1009,
       "address": "1524 Longworth House Office Building",
       "phone": "(202) 225-5931",
       "contact_form": null,
@@ -8501,7 +8629,7 @@
       "photo_url": "https://www.congress.gov/img/member/t000482_200.jpg",
       "official_url": null,
       "sponsored_count": 77,
-      "cosponsored_count": 1653,
+      "cosponsored_count": 1656,
       "address": "2233 Rayburn House Office Building",
       "phone": "(202) 225-3411",
       "contact_form": null,
@@ -8530,8 +8658,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/d000629_200.jpg",
       "official_url": null,
-      "sponsored_count": 82,
-      "cosponsored_count": 1585,
+      "sponsored_count": 83,
+      "cosponsored_count": 1597,
       "address": "2435 Rayburn House Office Building",
       "phone": "(202) 225-2865",
       "contact_form": null,
@@ -8553,7 +8681,7 @@
       "photo_url": "https://www.congress.gov/img/member/6a3aa8877d3b72f27fb69f15_200.jpg",
       "official_url": null,
       "sponsored_count": 45,
-      "cosponsored_count": 1119,
+      "cosponsored_count": 1120,
       "address": "2303 Rayburn House Office Building",
       "phone": "(202) 225-5037",
       "contact_form": null,
@@ -8578,8 +8706,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/u000040_200.jpg",
       "official_url": null,
-      "sponsored_count": 131,
-      "cosponsored_count": 1129,
+      "sponsored_count": 132,
+      "cosponsored_count": 1130,
       "address": "2228 Rayburn House Office Building",
       "phone": "(202) 225-2976",
       "contact_form": null,
@@ -8601,7 +8729,7 @@
       "photo_url": "https://www.congress.gov/img/member/c001117_200.jpg",
       "official_url": null,
       "sponsored_count": 141,
-      "cosponsored_count": 1843,
+      "cosponsored_count": 1844,
       "address": "2440 Rayburn House Office Building",
       "phone": "(202) 225-4561",
       "contact_form": null,
@@ -8631,7 +8759,7 @@
       "photo_url": "https://www.congress.gov/img/member/g000586_200.jpg",
       "official_url": null,
       "sponsored_count": 74,
-      "cosponsored_count": 2641,
+      "cosponsored_count": 2646,
       "address": "2334 Rayburn House Office Building",
       "phone": "(202) 225-8203",
       "contact_form": null,
@@ -8657,7 +8785,7 @@
       "photo_url": "https://www.congress.gov/img/member/f000469_200.jpg",
       "official_url": null,
       "sponsored_count": 52,
-      "cosponsored_count": 668,
+      "cosponsored_count": 670,
       "address": "1514 Longworth House Office Building",
       "phone": "(202) 225-6611",
       "contact_form": null,
@@ -8669,6 +8797,10 @@
         },
         {
           "platform": "facebook",
+          "handle": "RepRussFulcher"
+        },
+        {
+          "platform": "youtube",
           "handle": "RepRussFulcher"
         },
         {
@@ -8687,7 +8819,7 @@
       "photo_url": "https://www.congress.gov/img/member/m001208_200.jpg",
       "official_url": null,
       "sponsored_count": 78,
-      "cosponsored_count": 1389,
+      "cosponsored_count": 1390,
       "address": "2246 Rayburn House Office Building",
       "phone": "(202) 225-4501",
       "contact_form": null,
@@ -8777,7 +8909,7 @@
       "photo_url": "https://www.congress.gov/img/member/h001077_200.jpg",
       "official_url": null,
       "sponsored_count": 165,
-      "cosponsored_count": 1090,
+      "cosponsored_count": 1092,
       "address": "572 Cannon House Office Building",
       "phone": "(202) 225-2031",
       "contact_form": null,
@@ -8806,8 +8938,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/k000391_200.jpg",
       "official_url": null,
-      "sponsored_count": 172,
-      "cosponsored_count": 2688,
+      "sponsored_count": 173,
+      "cosponsored_count": 2695,
       "address": "2367 Rayburn House Office Building",
       "phone": "(202) 225-3711",
       "contact_form": null,
@@ -8837,7 +8969,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_fl_18_mast_brian_200.jpg",
       "official_url": null,
       "sponsored_count": 161,
-      "cosponsored_count": 1223,
+      "cosponsored_count": 1225,
       "address": "2182 Rayburn House Office Building",
       "phone": "(202) 225-3026",
       "contact_form": null,
@@ -8871,7 +9003,7 @@
       "photo_url": "https://www.congress.gov/img/member/c001108_200.jpg",
       "official_url": null,
       "sponsored_count": 53,
-      "cosponsored_count": 622,
+      "cosponsored_count": 624,
       "address": "2410 Rayburn House Office Building",
       "phone": "(202) 225-3115",
       "contact_form": null,
@@ -8901,7 +9033,7 @@
       "photo_url": "https://www.congress.gov/img/member/115_rp_il_18_lahood_darin_200.jpg",
       "official_url": null,
       "sponsored_count": 142,
-      "cosponsored_count": 1100,
+      "cosponsored_count": 1101,
       "address": "503 Cannon House Office Building",
       "phone": "(202) 225-6201",
       "contact_form": null,
@@ -8927,7 +9059,7 @@
       "photo_url": "https://www.congress.gov/img/member/b001295_200.jpg",
       "official_url": null,
       "sponsored_count": 140,
-      "cosponsored_count": 1680,
+      "cosponsored_count": 1683,
       "address": "352 Cannon House Office Building",
       "phone": "(202) 225-5661",
       "contact_form": null,
@@ -8998,6 +9130,10 @@
           "handle": "reploudermilk"
         },
         {
+          "platform": "youtube",
+          "handle": "rep.barryloudermilk2718"
+        },
+        {
           "platform": "instagram",
           "handle": "RepLoudermilk"
         }
@@ -9013,7 +9149,7 @@
       "photo_url": "https://www.congress.gov/img/member/c001103_200.jpg",
       "official_url": null,
       "sponsored_count": 214,
-      "cosponsored_count": 1955,
+      "cosponsored_count": 1960,
       "address": "2432 Rayburn House Office Building",
       "phone": "(202) 225-5831",
       "contact_form": null,
@@ -9055,7 +9191,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "CongresswomanClark"
+          "handle": "repkclark"
         },
         {
           "platform": "instagram",
@@ -9073,7 +9209,7 @@
       "photo_url": "https://www.congress.gov/img/member/b001282_200.jpg",
       "official_url": null,
       "sponsored_count": 223,
-      "cosponsored_count": 1751,
+      "cosponsored_count": 1753,
       "address": "2430 Rayburn House Office Building",
       "phone": "(202) 225-4706",
       "contact_form": null,
@@ -9107,7 +9243,7 @@
       "photo_url": "https://www.congress.gov/img/member/s001190_200.jpg",
       "official_url": null,
       "sponsored_count": 220,
-      "cosponsored_count": 2128,
+      "cosponsored_count": 2130,
       "address": "300 Cannon House Office Building",
       "phone": "(202) 225-4835",
       "contact_form": null,
@@ -9141,7 +9277,7 @@
       "photo_url": "https://www.congress.gov/img/member/f000462_200.jpg",
       "official_url": null,
       "sponsored_count": 103,
-      "cosponsored_count": 2303,
+      "cosponsored_count": 2306,
       "address": "2305 Rayburn House Office Building",
       "phone": "(202) 225-9890",
       "contact_form": null,
@@ -9174,7 +9310,7 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/m001184_200.jpg",
       "official_url": null,
-      "sponsored_count": 126,
+      "sponsored_count": 128,
       "cosponsored_count": 874,
       "address": "2371 Rayburn House Office Building",
       "phone": "(202) 225-3465",
@@ -9239,7 +9375,7 @@
       "photo_url": "https://www.congress.gov/img/member/s001189_200.jpg",
       "official_url": null,
       "sponsored_count": 89,
-      "cosponsored_count": 1657,
+      "cosponsored_count": 1658,
       "address": "2185 Rayburn House Office Building",
       "phone": "(202) 225-6531",
       "contact_form": null,
@@ -9269,7 +9405,7 @@
       "photo_url": "https://www.congress.gov/img/member/w000808_200.jpg",
       "official_url": null,
       "sponsored_count": 180,
-      "cosponsored_count": 4037,
+      "cosponsored_count": 4041,
       "address": "2080 Rayburn House Office Building",
       "phone": "(202) 225-4506",
       "contact_form": null,
@@ -9303,7 +9439,7 @@
       "photo_url": "https://www.congress.gov/img/member/j000288_200.jpg",
       "official_url": null,
       "sponsored_count": 261,
-      "cosponsored_count": 6118,
+      "cosponsored_count": 6120,
       "address": "2240 Rayburn House Office Building",
       "phone": "(202) 225-1605",
       "contact_form": null,
@@ -9315,7 +9451,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "115356957005"
+          "handle": "rephankjohnson"
         },
         {
           "platform": "youtube",
@@ -9337,7 +9473,7 @@
       "photo_url": "https://www.congress.gov/img/member/q000023_200.jpg",
       "official_url": null,
       "sponsored_count": 196,
-      "cosponsored_count": 3870,
+      "cosponsored_count": 3879,
       "address": "2083 Rayburn House Office Building",
       "phone": "(202) 225-4061",
       "contact_form": null,
@@ -9439,7 +9575,7 @@
       "photo_url": "https://www.congress.gov/img/member/f000454_200.jpg",
       "official_url": null,
       "sponsored_count": 288,
-      "cosponsored_count": 2640,
+      "cosponsored_count": 2642,
       "address": "2366 Rayburn House Office Building",
       "phone": "(202) 225-3515",
       "contact_form": null,
@@ -9468,8 +9604,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/c001072_200.jpg",
       "official_url": null,
-      "sponsored_count": 171,
-      "cosponsored_count": 6425,
+      "sponsored_count": 172,
+      "cosponsored_count": 6432,
       "address": "2135 Rayburn House Office Building",
       "phone": "(202) 225-4011",
       "contact_form": null,
@@ -9503,7 +9639,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_il_2_kelly_robin_200.jpg",
       "official_url": null,
       "sponsored_count": 160,
-      "cosponsored_count": 2800,
+      "cosponsored_count": 2802,
       "address": "2329 Rayburn House Office Building",
       "phone": "(202) 225-0773",
       "contact_form": null,
@@ -9533,7 +9669,7 @@
       "photo_url": "https://www.congress.gov/img/member/678152c81f9ad6ea6fb1eb7f_200.jpg",
       "official_url": null,
       "sponsored_count": 160,
-      "cosponsored_count": 2251,
+      "cosponsored_count": 2253,
       "address": "2084 Rayburn House Office Building",
       "phone": "(202) 225-5531",
       "contact_form": null,
@@ -9567,7 +9703,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_il_9_schakowsky_janice_200.jpg",
       "official_url": null,
       "sponsored_count": 464,
-      "cosponsored_count": 10380,
+      "cosponsored_count": 10384,
       "address": "2408 Rayburn House Office Building",
       "phone": "(202) 225-2111",
       "contact_form": null,
@@ -9601,7 +9737,7 @@
       "photo_url": "https://www.congress.gov/img/member/117_rp_ma_2_mcgovern_james_200.jpg",
       "official_url": null,
       "sponsored_count": 441,
-      "cosponsored_count": 11942,
+      "cosponsored_count": 11944,
       "address": "370 Cannon House Office Building",
       "phone": "(202) 225-6101",
       "contact_form": null,
@@ -9634,8 +9770,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/116_rp_il_7_davis_danny_200.jpg",
       "official_url": null,
-      "sponsored_count": 409,
-      "cosponsored_count": 7739,
+      "sponsored_count": 410,
+      "cosponsored_count": 7740,
       "address": "2159 Rayburn House Office Building",
       "phone": "(202) 225-5006",
       "contact_form": null,
@@ -9647,11 +9783,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "CongressmanDKDavis"
-        },
-        {
-          "platform": "youtube",
-          "handle": "dannykdavis07"
+          "handle": "officialrepdannydavis"
         }
       ]
     },
@@ -9665,7 +9797,7 @@
       "photo_url": "https://www.congress.gov/img/member/r000395_200.jpg",
       "official_url": null,
       "sponsored_count": 147,
-      "cosponsored_count": 2906,
+      "cosponsored_count": 2907,
       "address": "2406 Rayburn House Office Building",
       "phone": "(202) 225-4601",
       "contact_form": null,
@@ -9699,7 +9831,7 @@
       "photo_url": "https://www.congress.gov/img/member/b000490_200.jpg",
       "official_url": null,
       "sponsored_count": 145,
-      "cosponsored_count": 6375,
+      "cosponsored_count": 6378,
       "address": "2407 Rayburn House Office Building",
       "phone": "(202) 225-3631",
       "contact_form": null,
@@ -9759,7 +9891,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_fl_23_wassermanschultz_debbie_200.jpg",
       "official_url": null,
       "sponsored_count": 184,
-      "cosponsored_count": 4536,
+      "cosponsored_count": 4538,
       "address": "270 Cannon House Office Building",
       "phone": "(202) 225-7931",
       "contact_form": null,
@@ -9779,7 +9911,7 @@
         },
         {
           "platform": "instagram",
-          "handle": "RepDWSTweets"
+          "handle": "repdws"
         }
       ]
     },
@@ -9793,7 +9925,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_fl_25_diazbalart_mario_200.jpg",
       "official_url": null,
       "sponsored_count": 112,
-      "cosponsored_count": 2180,
+      "cosponsored_count": 2181,
       "address": "374 Cannon House Office Building",
       "phone": "(202) 225-4211",
       "contact_form": null,
@@ -9827,7 +9959,7 @@
       "photo_url": "https://www.congress.gov/img/member/c001055_200.jpg",
       "official_url": null,
       "sponsored_count": 140,
-      "cosponsored_count": 3165,
+      "cosponsored_count": 3169,
       "address": "2210 Rayburn House Office Building",
       "phone": "(202) 225-2726",
       "contact_form": null,
@@ -9873,7 +10005,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "Congressman-Cleo-Fields"
+          "handle": "61569937980769"
         },
         {
           "platform": "instagram",
@@ -9891,7 +10023,7 @@
       "photo_url": "https://www.congress.gov/img/member/6a986b632a68122e10181e6b_200.jpg",
       "official_url": null,
       "sponsored_count": 0,
-      "cosponsored_count": 3,
+      "cosponsored_count": 4,
       "address": "174 Cannon House Office Building",
       "phone": "(202) 225-5065",
       "contact_form": null,
@@ -9913,7 +10045,20 @@
       "phone": "(202) 225-4136",
       "contact_form": "https://patronis.house.gov/contact/email-me",
       "website": "https://patronis.house.gov",
-      "socials": []
+      "socials": [
+        {
+          "platform": "twitter",
+          "handle": "PatronisFL"
+        },
+        {
+          "platform": "facebook",
+          "handle": "61577293801543"
+        },
+        {
+          "platform": "instagram",
+          "handle": "patronisfl"
+        }
+      ]
     },
     {
       "bioguide_id": "F000484",
@@ -9925,12 +10070,29 @@
       "photo_url": "https://www.congress.gov/img/member/67efda8c1b05a5a598f7fde0_200.jpg",
       "official_url": null,
       "sponsored_count": 32,
-      "cosponsored_count": 233,
+      "cosponsored_count": 234,
       "address": "244 Cannon House Office Building",
       "phone": "(202) 225-2706",
       "contact_form": "hhttps://fine.house.gov/address_authentication?form=/contact/email-me",
       "website": "https://fine.house.gov",
-      "socials": []
+      "socials": [
+        {
+          "platform": "twitter",
+          "handle": "RepFine"
+        },
+        {
+          "platform": "facebook",
+          "handle": "CongressmanRandyFine"
+        },
+        {
+          "platform": "youtube",
+          "handle": "RepFine"
+        },
+        {
+          "platform": "instagram",
+          "handle": "repfine"
+        }
+      ]
     },
     {
       "bioguide_id": "W000830",
@@ -9942,7 +10104,7 @@
       "photo_url": "https://www.congress.gov/img/member/68dc43db199559bad714973d_200.jpg",
       "official_url": null,
       "sponsored_count": 28,
-      "cosponsored_count": 327,
+      "cosponsored_count": 332,
       "address": "1504 Longworth House Office Building",
       "phone": "(202) 225-1956",
       "contact_form": null,
@@ -9972,12 +10134,25 @@
       "photo_url": "https://www.congress.gov/img/member/6774606d0b34857ecc9091a9_200.jpg",
       "official_url": null,
       "sponsored_count": 17,
-      "cosponsored_count": 337,
+      "cosponsored_count": 339,
       "address": "1127 Longworth House Office Building",
       "phone": "(202) 225-2415",
       "contact_form": null,
       "website": "https://tran.house.gov",
-      "socials": []
+      "socials": [
+        {
+          "platform": "twitter",
+          "handle": "RepDerekTranCA"
+        },
+        {
+          "platform": "facebook",
+          "handle": "CongressmanTran"
+        },
+        {
+          "platform": "instagram",
+          "handle": "repderektran"
+        }
+      ]
     },
     {
       "bioguide_id": "S001231",
@@ -9988,8 +10163,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/67745f940b34857ecc909197_200.jpg",
       "official_url": null,
-      "sponsored_count": 13,
-      "cosponsored_count": 707,
+      "sponsored_count": 14,
+      "cosponsored_count": 712,
       "address": "1023 Longworth House Office Building",
       "phone": "(202) 225-2661",
       "contact_form": null,
@@ -10019,7 +10194,7 @@
       "photo_url": "https://www.congress.gov/img/member/67745d860b34857ecc90916d_200.jpg",
       "official_url": null,
       "sponsored_count": 16,
-      "cosponsored_count": 193,
+      "cosponsored_count": 194,
       "address": "1319 Longworth House Office Building",
       "phone": "(202) 225-6131",
       "contact_form": null,
@@ -10049,12 +10224,25 @@
       "photo_url": "https://www.congress.gov/img/member/67744ed90b34857ecc909155_200.jpg",
       "official_url": null,
       "sponsored_count": 33,
-      "cosponsored_count": 418,
+      "cosponsored_count": 423,
       "address": "1034 Longworth House Office Building",
       "phone": "(202) 225-5611",
       "contact_form": null,
       "website": "https://min.house.gov",
-      "socials": []
+      "socials": [
+        {
+          "platform": "twitter",
+          "handle": "CongressMin"
+        },
+        {
+          "platform": "facebook",
+          "handle": "thecongressmin"
+        },
+        {
+          "platform": "instagram",
+          "handle": "repdavemin"
+        }
+      ]
     },
     {
       "bioguide_id": "M001238",
@@ -10066,7 +10254,7 @@
       "photo_url": "https://www.congress.gov/img/member/67744b460b34857ecc909143_200.jpg",
       "official_url": null,
       "sponsored_count": 10,
-      "cosponsored_count": 698,
+      "cosponsored_count": 706,
       "address": "1306 Longworth House Office Building",
       "phone": "(202) 225-4165",
       "contact_form": null,
@@ -10092,7 +10280,7 @@
       "photo_url": "https://www.congress.gov/img/member/6774305d0b34857ecc90910d_200.jpg",
       "official_url": null,
       "sponsored_count": 17,
-      "cosponsored_count": 200,
+      "cosponsored_count": 203,
       "address": "1117 Longworth House Office Building",
       "phone": "(202) 225-8104",
       "contact_form": null,
@@ -10134,7 +10322,7 @@
         },
         {
           "platform": "youtube",
-          "handle": "RepJeffHurd03"
+          "handle": "RepJeffHurd"
         },
         {
           "platform": "instagram",
@@ -10151,8 +10339,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/67742ab50b34857ecc9090cb_200.jpg",
       "official_url": null,
-      "sponsored_count": 6,
-      "cosponsored_count": 266,
+      "sponsored_count": 7,
+      "cosponsored_count": 267,
       "address": "1039 Longworth House Office Building",
       "phone": "(202) 225-3671",
       "contact_form": null,
@@ -10204,7 +10392,7 @@
       "photo_url": "https://www.congress.gov/img/member/6a0f0dcb69b12040cf77e337_200.jpg",
       "official_url": null,
       "sponsored_count": 12,
-      "cosponsored_count": 348,
+      "cosponsored_count": 349,
       "address": "1517 Longworth House Office Building",
       "phone": "(202) 225-4176",
       "contact_form": null,
@@ -10293,8 +10481,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/669ff04f5d19788d1f2034aa_200.jpg",
       "official_url": null,
-      "sponsored_count": 20,
-      "cosponsored_count": 188,
+      "sponsored_count": 21,
+      "cosponsored_count": 192,
       "address": "243 Cannon House Office Building",
       "phone": "(202) 225-2915",
       "contact_form": null,
@@ -10319,8 +10507,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/p000620_200.jpg",
       "official_url": null,
-      "sponsored_count": 78,
-      "cosponsored_count": 946,
+      "sponsored_count": 79,
+      "cosponsored_count": 951,
       "address": "348 Cannon House Office Building",
       "phone": "(202) 225-2645",
       "contact_form": null,
@@ -10349,8 +10537,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/m001225_200.jpg",
       "official_url": null,
-      "sponsored_count": 42,
-      "cosponsored_count": 1182,
+      "sponsored_count": 43,
+      "cosponsored_count": 1185,
       "address": "1404 Longworth House Office Building",
       "phone": "(202) 225-3531",
       "contact_form": null,
@@ -10380,7 +10568,7 @@
       "photo_url": "https://www.congress.gov/img/member/m001216_200.jpg",
       "official_url": null,
       "sponsored_count": 53,
-      "cosponsored_count": 424,
+      "cosponsored_count": 426,
       "address": "346 Cannon House Office Building",
       "phone": "(202) 225-4035",
       "contact_form": null,
@@ -10409,7 +10597,7 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/l000596_200.jpg",
       "official_url": null,
-      "sponsored_count": 86,
+      "sponsored_count": 87,
       "cosponsored_count": 625,
       "address": "226 Cannon House Office Building",
       "phone": "(202) 225-5961",
@@ -10440,7 +10628,7 @@
       "photo_url": "https://www.congress.gov/img/member/l000597_200.jpg",
       "official_url": null,
       "sponsored_count": 47,
-      "cosponsored_count": 384,
+      "cosponsored_count": 385,
       "address": "2464 Rayburn House Office Building",
       "phone": "(202) 225-5626",
       "contact_form": null,
@@ -10470,7 +10658,7 @@
       "photo_url": "https://www.congress.gov/img/member/k000401_200.jpg",
       "official_url": null,
       "sponsored_count": 44,
-      "cosponsored_count": 300,
+      "cosponsored_count": 301,
       "address": "2445 Rayburn House Office Building",
       "phone": "(202) 225-2523",
       "contact_form": null,
@@ -10500,7 +10688,7 @@
       "photo_url": "https://www.congress.gov/img/member/k000400_200.jpg",
       "official_url": null,
       "sponsored_count": 74,
-      "cosponsored_count": 891,
+      "cosponsored_count": 894,
       "address": "144 Cannon House Office Building",
       "phone": "(202) 225-7084",
       "contact_form": null,
@@ -10530,7 +10718,7 @@
       "photo_url": "https://www.congress.gov/img/member/g000598_200.jpg",
       "official_url": null,
       "sponsored_count": 48,
-      "cosponsored_count": 830,
+      "cosponsored_count": 834,
       "address": "109 Cannon House Office Building",
       "phone": "(202) 225-7924",
       "contact_form": null,
@@ -10590,7 +10778,7 @@
       "photo_url": "https://www.congress.gov/img/member/o000019_200.jpg",
       "official_url": null,
       "sponsored_count": 72,
-      "cosponsored_count": 763,
+      "cosponsored_count": 764,
       "address": "2433 Rayburn House Office Building",
       "phone": "(202) 225-5861",
       "contact_form": null,
@@ -10646,7 +10834,7 @@
       "photo_url": "https://www.congress.gov/img/member/j000305_200.jpg",
       "official_url": null,
       "sponsored_count": 83,
-      "cosponsored_count": 1402,
+      "cosponsored_count": 1406,
       "address": "2348 Rayburn House Office Building",
       "phone": "(202) 225-2040",
       "contact_form": null,
@@ -10722,7 +10910,7 @@
         },
         {
           "platform": "instagram",
-          "handle": "byrondonalds"
+          "handle": "repdonaldspress"
         }
       ]
     },
@@ -10736,7 +10924,7 @@
       "photo_url": "https://www.congress.gov/img/member/c001039_200.jpg",
       "official_url": null,
       "sponsored_count": 75,
-      "cosponsored_count": 725,
+      "cosponsored_count": 728,
       "address": "2421 Rayburn House Office Building",
       "phone": "(202) 225-5744",
       "contact_form": null,
@@ -10765,7 +10953,7 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/b000825_200.jpg",
       "official_url": null,
-      "sponsored_count": 163,
+      "sponsored_count": 164,
       "cosponsored_count": 939,
       "address": "1713 Longworth House Office Building",
       "phone": "(202) 225-4761",
@@ -10792,7 +10980,7 @@
       "photo_url": "https://www.congress.gov/img/member/s001214_200.jpg",
       "official_url": null,
       "sponsored_count": 292,
-      "cosponsored_count": 1686,
+      "cosponsored_count": 1688,
       "address": "2457 Rayburn House Office Building",
       "phone": "(202) 225-5792",
       "contact_form": null,
@@ -10826,7 +11014,7 @@
       "photo_url": "https://www.congress.gov/img/member/h001081_200.jpg",
       "official_url": null,
       "sponsored_count": 134,
-      "cosponsored_count": 2969,
+      "cosponsored_count": 2973,
       "address": "2049 Rayburn House Office Building",
       "phone": "(202) 225-4476",
       "contact_form": null,
@@ -10855,8 +11043,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/69d7f4167304cef7a0c9779f_200.jpg",
       "official_url": null,
-      "sponsored_count": 167,
-      "cosponsored_count": 1658,
+      "sponsored_count": 168,
+      "cosponsored_count": 1659,
       "address": "1323 Longworth House Office Building",
       "phone": "(202) 225-7882",
       "contact_form": null,
@@ -10881,8 +11069,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/n000191_200.jpg",
       "official_url": null,
-      "sponsored_count": 369,
-      "cosponsored_count": 2769,
+      "sponsored_count": 370,
+      "cosponsored_count": 2771,
       "address": "2400 Rayburn House Office Building",
       "phone": "(202) 225-2161",
       "contact_form": null,
@@ -10907,8 +11095,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/l000593_200.jpg",
       "official_url": null,
-      "sponsored_count": 123,
-      "cosponsored_count": 1910,
+      "sponsored_count": 124,
+      "cosponsored_count": 1914,
       "address": "2352 Rayburn House Office Building",
       "phone": "(202) 225-3906",
       "contact_form": null,
@@ -10937,8 +11125,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/6807d8d63e52ea7df920ef05_200.jpg",
       "official_url": null,
-      "sponsored_count": 38,
-      "cosponsored_count": 1268,
+      "sponsored_count": 41,
+      "cosponsored_count": 1280,
       "address": "2463 Rayburn House Office Building",
       "phone": "(202) 225-5256",
       "contact_form": null,
@@ -10964,7 +11152,7 @@
       "photo_url": "https://www.congress.gov/img/member/h001090_200.jpg",
       "official_url": null,
       "sponsored_count": 159,
-      "cosponsored_count": 1920,
+      "cosponsored_count": 1923,
       "address": "209 Cannon House Office Building",
       "phone": "(202) 225-4540",
       "contact_form": null,
@@ -11016,7 +11204,7 @@
       "photo_url": "https://www.congress.gov/img/member/115_rp_fl_9_soto_darren_200.jpg",
       "official_url": null,
       "sponsored_count": 156,
-      "cosponsored_count": 3648,
+      "cosponsored_count": 3649,
       "address": "2353 Rayburn House Office Building",
       "phone": "(202) 225-9889",
       "contact_form": null,
@@ -11050,7 +11238,7 @@
       "photo_url": "https://www.congress.gov/img/member/r000609_200.jpg",
       "official_url": null,
       "sponsored_count": 49,
-      "cosponsored_count": 1770,
+      "cosponsored_count": 1771,
       "address": "1711 Longworth House Office Building",
       "phone": "(202) 225-2501",
       "contact_form": null,
@@ -11084,7 +11272,7 @@
       "photo_url": "https://www.congress.gov/img/member/115_rp_fl_2_dunn_neal_200.jpg",
       "official_url": null,
       "sponsored_count": 93,
-      "cosponsored_count": 1181,
+      "cosponsored_count": 1182,
       "address": "466 Cannon House Office Building",
       "phone": "(202) 225-5235",
       "contact_form": null,
@@ -11110,7 +11298,7 @@
       "photo_url": "https://www.congress.gov/img/member/115_rp_ca_46_correa_j_200.jpg",
       "official_url": null,
       "sponsored_count": 130,
-      "cosponsored_count": 1924,
+      "cosponsored_count": 1926,
       "address": "2082 Rayburn House Office Building",
       "phone": "(202) 225-2965",
       "contact_form": null,
@@ -11140,7 +11328,7 @@
       "photo_url": "https://www.congress.gov/img/member/b001300_200.jpg",
       "official_url": null,
       "sponsored_count": 143,
-      "cosponsored_count": 3221,
+      "cosponsored_count": 3227,
       "address": "2312 Rayburn House Office Building",
       "phone": "(202) 225-8220",
       "contact_form": null,
@@ -11170,7 +11358,7 @@
       "photo_url": "https://www.congress.gov/img/member/115_rp_ca_24_carbajal_salud_200.jpg",
       "official_url": null,
       "sponsored_count": 148,
-      "cosponsored_count": 2957,
+      "cosponsored_count": 2963,
       "address": "2331 Rayburn House Office Building",
       "phone": "(202) 225-3601",
       "contact_form": null,
@@ -11204,7 +11392,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_ca_20_panetta_jimmy_200.jpg",
       "official_url": null,
       "sponsored_count": 232,
-      "cosponsored_count": 3114,
+      "cosponsored_count": 3119,
       "address": "200 Cannon House Office Building",
       "phone": "(202) 225-2861",
       "contact_form": null,
@@ -11234,7 +11422,7 @@
       "photo_url": "https://www.congress.gov/img/member/k000389_200.jpg",
       "official_url": null,
       "sponsored_count": 203,
-      "cosponsored_count": 3739,
+      "cosponsored_count": 3745,
       "address": "306 Cannon House Office Building",
       "phone": "(202) 225-2631",
       "contact_form": null,
@@ -11264,7 +11452,7 @@
       "photo_url": "https://www.congress.gov/img/member/t000474_200.jpg",
       "official_url": null,
       "sponsored_count": 200,
-      "cosponsored_count": 1770,
+      "cosponsored_count": 1774,
       "address": "2227 Rayburn House Office Building",
       "phone": "(202) 225-6161",
       "contact_form": null,
@@ -11294,7 +11482,7 @@
       "photo_url": "https://www.congress.gov/img/member/l000582_200.jpg",
       "official_url": null,
       "sponsored_count": 274,
-      "cosponsored_count": 4136,
+      "cosponsored_count": 4140,
       "address": "2454 Rayburn House Office Building",
       "phone": "(202) 225-3976",
       "contact_form": null,
@@ -11350,7 +11538,7 @@
       "photo_url": "https://www.congress.gov/img/member/115_rp_ca_11_desaulnier_mark_200.jpg",
       "official_url": null,
       "sponsored_count": 234,
-      "cosponsored_count": 3768,
+      "cosponsored_count": 3781,
       "address": "2134 Rayburn House Office Building",
       "phone": "(202) 225-2095",
       "contact_form": null,
@@ -11380,7 +11568,7 @@
       "photo_url": "https://www.congress.gov/img/member/p000608_200.jpg",
       "official_url": null,
       "sponsored_count": 245,
-      "cosponsored_count": 3507,
+      "cosponsored_count": 3508,
       "address": "2369 Rayburn House Office Building",
       "phone": "(202) 225-0508",
       "contact_form": null,
@@ -11393,6 +11581,10 @@
         {
           "platform": "facebook",
           "handle": "RepScottPeters"
+        },
+        {
+          "platform": "youtube",
+          "handle": "repscottpeters"
         },
         {
           "platform": "instagram",
@@ -11409,8 +11601,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/v000130_200.jpg",
       "official_url": null,
-      "sponsored_count": 92,
-      "cosponsored_count": 3204,
+      "sponsored_count": 93,
+      "cosponsored_count": 3209,
       "address": "2467 Rayburn House Office Building",
       "phone": "(202) 225-8045",
       "contact_form": null,
@@ -11444,7 +11636,7 @@
       "photo_url": "https://www.congress.gov/img/member/t000472_200.jpg",
       "official_url": null,
       "sponsored_count": 231,
-      "cosponsored_count": 3919,
+      "cosponsored_count": 3924,
       "address": "2078 Rayburn House Office Building",
       "phone": "(202) 225-2305",
       "contact_form": null,
@@ -11477,8 +11669,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/66e1aec832c796cea99fe06f_200.jpg",
       "official_url": null,
-      "sponsored_count": 287,
-      "cosponsored_count": 2010,
+      "sponsored_count": 288,
+      "cosponsored_count": 2011,
       "address": "2342 Rayburn House Office Building",
       "phone": "(202) 225-5330",
       "contact_form": null,
@@ -11490,7 +11682,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "CongressmanRaulRuizMD"
+          "handle": "repraulruizmd"
         },
         {
           "platform": "youtube",
@@ -11508,7 +11700,7 @@
       "photo_url": "https://www.congress.gov/img/member/68000188f22eaf56065817e8_200.jpg",
       "official_url": null,
       "sponsored_count": 308,
-      "cosponsored_count": 4118,
+      "cosponsored_count": 4125,
       "address": "2262 Rayburn House Office Building",
       "phone": "(202) 225-5811",
       "contact_form": null,
@@ -11520,11 +11712,11 @@
         },
         {
           "platform": "facebook",
-          "handle": "RepJuliaBrownley"
+          "handle": "repbrownley"
         },
         {
           "platform": "youtube",
-          "handle": "RepJuliaBrownley"
+          "handle": "RepBrownley"
         },
         {
           "platform": "instagram",
@@ -11568,7 +11760,7 @@
       "photo_url": "https://www.congress.gov/img/member/b001287_200.jpg",
       "official_url": null,
       "sponsored_count": 120,
-      "cosponsored_count": 1991,
+      "cosponsored_count": 1993,
       "address": "172 Cannon House Office Building",
       "phone": "(202) 225-5716",
       "contact_form": null,
@@ -11602,7 +11794,7 @@
       "photo_url": "https://www.congress.gov/img/member/g000559_200.jpg",
       "official_url": null,
       "sponsored_count": 242,
-      "cosponsored_count": 3762,
+      "cosponsored_count": 3765,
       "address": "2428 Rayburn House Office Building",
       "phone": "(202) 225-1880",
       "contact_form": null,
@@ -11636,7 +11828,7 @@
       "photo_url": "https://www.congress.gov/img/member/c001080_200.jpg",
       "official_url": null,
       "sponsored_count": 263,
-      "cosponsored_count": 5457,
+      "cosponsored_count": 5464,
       "address": "2423 Rayburn House Office Building",
       "phone": "(202) 225-5464",
       "contact_form": null,
@@ -11670,7 +11862,7 @@
       "photo_url": "https://www.congress.gov/img/member/w000806_200.jpg",
       "official_url": null,
       "sponsored_count": 60,
-      "cosponsored_count": 1354,
+      "cosponsored_count": 1357,
       "address": "2184 Rayburn House Office Building",
       "phone": "(202) 225-1002",
       "contact_form": null,
@@ -11700,7 +11892,7 @@
       "photo_url": "https://www.congress.gov/img/member/b001260_200.jpg",
       "official_url": null,
       "sponsored_count": 214,
-      "cosponsored_count": 1927,
+      "cosponsored_count": 1928,
       "address": "2409 Rayburn House Office Building",
       "phone": "(202) 225-5015",
       "contact_form": null,
@@ -11733,8 +11925,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/c001066_200.jpg",
       "official_url": null,
-      "sponsored_count": 216,
-      "cosponsored_count": 3719,
+      "sponsored_count": 217,
+      "cosponsored_count": 3720,
       "address": "2188 Rayburn House Office Building",
       "phone": "(202) 225-3376",
       "contact_form": null,
@@ -11768,7 +11960,7 @@
       "photo_url": "https://www.congress.gov/img/member/117_rp_fl_12_bilirakis_gus_200.jpg",
       "official_url": null,
       "sponsored_count": 305,
-      "cosponsored_count": 3101,
+      "cosponsored_count": 3103,
       "address": "2306 Rayburn House Office Building",
       "phone": "(202) 225-5755",
       "contact_form": null,
@@ -11814,11 +12006,11 @@
         },
         {
           "platform": "facebook",
-          "handle": "joecourtney"
+          "handle": "repjoecourtney"
         },
         {
           "platform": "youtube",
-          "handle": "repcourtney"
+          "handle": "RepCourtneyCT2"
         },
         {
           "platform": "instagram",
@@ -11848,11 +12040,11 @@
         },
         {
           "platform": "facebook",
-          "handle": "CongressmanJimHimes"
+          "handle": "repjimhimes"
         },
         {
           "platform": "youtube",
-          "handle": "congressmanhimes"
+          "handle": "RepJimHimes"
         },
         {
           "platform": "instagram",
@@ -11870,7 +12062,7 @@
       "photo_url": "https://www.congress.gov/img/member/m001177_200.jpg",
       "official_url": null,
       "sponsored_count": 156,
-      "cosponsored_count": 1900,
+      "cosponsored_count": 1901,
       "address": "2256 Rayburn House Office Building",
       "phone": "(202) 225-2511",
       "contact_form": null,
@@ -11904,7 +12096,7 @@
       "photo_url": "https://www.congress.gov/img/member/m001163_200.jpg",
       "official_url": null,
       "sponsored_count": 297,
-      "cosponsored_count": 4518,
+      "cosponsored_count": 4521,
       "address": "2206 Rayburn House Office Building",
       "phone": "(202) 225-7163",
       "contact_form": null,
@@ -11937,8 +12129,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/p000197_200.jpg",
       "official_url": null,
-      "sponsored_count": 199,
-      "cosponsored_count": 5099,
+      "sponsored_count": 200,
+      "cosponsored_count": 5101,
       "address": "1236 Longworth House Office Building",
       "phone": "(202) 225-4965",
       "contact_form": null,
@@ -11968,7 +12160,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_ca_5_thompson_mike_200.jpg",
       "official_url": null,
       "sponsored_count": 368,
-      "cosponsored_count": 4440,
+      "cosponsored_count": 4442,
       "address": "268 Cannon House Office Building",
       "phone": "(202) 225-3311",
       "contact_form": null,
@@ -12032,7 +12224,7 @@
       "photo_url": "https://www.congress.gov/img/member/s000344_200.jpg",
       "official_url": null,
       "sponsored_count": 230,
-      "cosponsored_count": 5426,
+      "cosponsored_count": 5428,
       "address": "2365 Rayburn House Office Building",
       "phone": "(202) 225-5911",
       "contact_form": null,
@@ -12044,11 +12236,11 @@
         },
         {
           "platform": "facebook",
-          "handle": "63158229861"
+          "handle": "congressmanbradsherman"
         },
         {
           "platform": "youtube",
-          "handle": "shermanca27"
+          "handle": "CongressmanBradShermanCA"
         },
         {
           "platform": "instagram",
@@ -12078,7 +12270,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "DianaDeGette"
+          "handle": "repdianadegette"
         },
         {
           "platform": "youtube",
@@ -12130,7 +12322,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_dg_dc_norton_eleanor_200.jpg",
       "official_url": null,
       "sponsored_count": 1148,
-      "cosponsored_count": 17659,
+      "cosponsored_count": 17675,
       "address": "2136 Rayburn House Office Building",
       "phone": "(202) 225-8050",
       "contact_form": null,
@@ -12164,7 +12356,7 @@
       "photo_url": "https://www.congress.gov/img/member/6973c909ded7781a35cc1fd7_200.jpg",
       "official_url": null,
       "sponsored_count": 189,
-      "cosponsored_count": 4008,
+      "cosponsored_count": 4011,
       "address": "2081 Rayburn House Office Building",
       "phone": "(202) 225-3341",
       "contact_form": null,
@@ -12206,11 +12398,11 @@
         },
         {
           "platform": "facebook",
-          "handle": "CongresswomanLindaSanchez"
+          "handle": "replindasanchez"
         },
         {
           "platform": "youtube",
-          "handle": "LindaTSanchez"
+          "handle": "RepLindaSanchez"
         },
         {
           "platform": "instagram",
@@ -12254,7 +12446,7 @@
       "photo_url": "https://www.congress.gov/img/member/c000059_200.jpg",
       "official_url": null,
       "sponsored_count": 286,
-      "cosponsored_count": 5239,
+      "cosponsored_count": 5241,
       "address": "2205 Rayburn House Office Building",
       "phone": "(202) 225-1986",
       "contact_form": null,
@@ -12266,7 +12458,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "70063393423"
+          "handle": "repkencalvert"
         },
         {
           "platform": "youtube",
@@ -12288,7 +12480,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_ct_3_delauro_rosa_200.jpg",
       "official_url": null,
       "sponsored_count": 645,
-      "cosponsored_count": 6540,
+      "cosponsored_count": 6541,
       "address": "2413 Rayburn House Office Building",
       "phone": "(202) 225-3661",
       "contact_form": null,
@@ -12318,7 +12510,7 @@
       "photo_url": "https://www.congress.gov/img/member/671024d7ec807bca66057fcb_200.jpg",
       "official_url": null,
       "sponsored_count": 377,
-      "cosponsored_count": 8518,
+      "cosponsored_count": 8522,
       "address": "1401 Longworth House Office Building",
       "phone": "(202) 225-3072",
       "contact_form": null,
@@ -12347,13 +12539,30 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/6a29d4f81c6ce0de6fbae1f7_200.jpg",
       "official_url": null,
-      "sponsored_count": 11,
-      "cosponsored_count": 59,
+      "sponsored_count": 12,
+      "cosponsored_count": 61,
       "address": "408 Cannon House Office Building",
       "phone": "(202) 225-3076",
       "contact_form": null,
       "website": "https://gallagher.house.gov/",
-      "socials": []
+      "socials": [
+        {
+          "platform": "twitter",
+          "handle": "RepGallagherCA1"
+        },
+        {
+          "platform": "facebook",
+          "handle": "RepJamesGallagher"
+        },
+        {
+          "platform": "youtube",
+          "handle": "JamesGallagher_CA01"
+        },
+        {
+          "platform": "instagram",
+          "handle": "repgallagherca1"
+        }
+      ]
     },
     {
       "bioguide_id": "G000606",
@@ -12365,12 +12574,29 @@
       "photo_url": "https://www.congress.gov/img/member/6915fa2585b49de40f52cacb_200.jpg",
       "official_url": null,
       "sponsored_count": 17,
-      "cosponsored_count": 530,
+      "cosponsored_count": 541,
       "address": "1203 Longworth House Office Building",
       "phone": "(202) 225-2435",
       "contact_form": null,
       "website": "https://grijalva.house.gov",
-      "socials": []
+      "socials": [
+        {
+          "platform": "twitter",
+          "handle": "rep_grijalva"
+        },
+        {
+          "platform": "facebook",
+          "handle": "repadelitasgrijalva"
+        },
+        {
+          "platform": "youtube",
+          "handle": "RepGrijalva"
+        },
+        {
+          "platform": "instagram",
+          "handle": "repgrijalva"
+        }
+      ]
     },
     {
       "bioguide_id": "H001098",
@@ -12381,13 +12607,26 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/67742a6f0b34857ecc9090c5_200.jpg",
       "official_url": null,
-      "sponsored_count": 35,
-      "cosponsored_count": 267,
+      "sponsored_count": 36,
+      "cosponsored_count": 268,
       "address": "1722 Longworth House Office Building",
       "phone": "(202) 225-4576",
       "contact_form": null,
       "website": "https://hamadeh.house.gov",
-      "socials": []
+      "socials": [
+        {
+          "platform": "twitter",
+          "handle": "RepAbeHamadeh"
+        },
+        {
+          "platform": "facebook",
+          "handle": "RepAbeHamadeh"
+        },
+        {
+          "platform": "instagram",
+          "handle": "repabehamadeh"
+        }
+      ]
     },
     {
       "bioguide_id": "F000481",
@@ -12399,7 +12638,7 @@
       "photo_url": "https://www.congress.gov/img/member/68013eaa4e51529406f18e42_200.jpg",
       "official_url": null,
       "sponsored_count": 26,
-      "cosponsored_count": 372,
+      "cosponsored_count": 375,
       "address": "225 Cannon House Office Building",
       "phone": "(202) 225-4931",
       "contact_form": null,
@@ -12411,7 +12650,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "congressman.shomari.figures"
+          "handle": "61571773900898"
         },
         {
           "platform": "instagram",
@@ -12459,7 +12698,7 @@
       "photo_url": "https://www.congress.gov/img/member/67741fc30b34857ecc90902e_200.jpg",
       "official_url": null,
       "sponsored_count": 33,
-      "cosponsored_count": 596,
+      "cosponsored_count": 603,
       "address": "1432 Longworth House Office Building",
       "phone": "(202) 225-4065",
       "contact_form": null,
@@ -12489,7 +12728,7 @@
       "photo_url": "https://www.congress.gov/img/member/s001220_200.jpg",
       "official_url": null,
       "sponsored_count": 31,
-      "cosponsored_count": 225,
+      "cosponsored_count": 227,
       "address": "449 Cannon House Office Building",
       "phone": "(202) 225-4801",
       "contact_form": null,
@@ -12501,7 +12740,7 @@
         },
         {
           "platform": "facebook",
-          "handle": "repdalestrong"
+          "handle": "dalestrongal"
         },
         {
           "platform": "instagram",
@@ -12519,7 +12758,7 @@
       "photo_url": "https://www.congress.gov/img/member/c001132_200.jpg",
       "official_url": null,
       "sponsored_count": 58,
-      "cosponsored_count": 1025,
+      "cosponsored_count": 1026,
       "address": "307 Cannon House Office Building",
       "phone": "(202) 225-3361",
       "contact_form": null,
@@ -12549,7 +12788,7 @@
       "photo_url": "https://www.congress.gov/img/member/c001133_200.jpg",
       "official_url": null,
       "sponsored_count": 65,
-      "cosponsored_count": 688,
+      "cosponsored_count": 690,
       "address": "461 Cannon House Office Building",
       "phone": "(202) 225-2542",
       "contact_form": null,
@@ -12579,7 +12818,7 @@
       "photo_url": "https://www.congress.gov/img/member/m001212_200.jpg",
       "official_url": null,
       "sponsored_count": 67,
-      "cosponsored_count": 1183,
+      "cosponsored_count": 1185,
       "address": "1511 Longworth House Office Building",
       "phone": "(202) 225-2901",
       "contact_form": null,
@@ -12605,7 +12844,7 @@
       "photo_url": "https://www.congress.gov/img/member/s001211_200.jpg",
       "official_url": null,
       "sponsored_count": 80,
-      "cosponsored_count": 1190,
+      "cosponsored_count": 1192,
       "address": "207 Cannon House Office Building",
       "phone": "(202) 225-9888",
       "contact_form": null,
@@ -12635,7 +12874,7 @@
       "photo_url": "https://www.congress.gov/img/member/b001302_200.jpg",
       "official_url": null,
       "sponsored_count": 936,
-      "cosponsored_count": 1493,
+      "cosponsored_count": 1494,
       "address": "464 Cannon House Office Building",
       "phone": "(202) 225-2635",
       "contact_form": null,
@@ -12665,7 +12904,7 @@
       "photo_url": "https://www.congress.gov/img/member/w000821_200.jpg",
       "official_url": null,
       "sponsored_count": 96,
-      "cosponsored_count": 1167,
+      "cosponsored_count": 1169,
       "address": "202 Cannon House Office Building",
       "phone": "(202) 225-3772",
       "contact_form": null,
@@ -12691,7 +12930,7 @@
       "photo_url": "https://www.congress.gov/img/member/h001072_200.jpg",
       "official_url": null,
       "sponsored_count": 152,
-      "cosponsored_count": 1157,
+      "cosponsored_count": 1160,
       "address": "1533 Longworth House Office Building",
       "phone": "(202) 225-2506",
       "contact_form": null,
@@ -12734,6 +12973,10 @@
         {
           "platform": "facebook",
           "handle": "aumuaamata"
+        },
+        {
+          "platform": "youtube",
+          "handle": "congresswomanaumuaamata2861"
         }
       ]
     },
@@ -12747,7 +12990,7 @@
       "photo_url": "https://www.congress.gov/img/member/p000609_200.jpg",
       "official_url": null,
       "sponsored_count": 113,
-      "cosponsored_count": 728,
+      "cosponsored_count": 729,
       "address": "170 Cannon House Office Building",
       "phone": "(202) 225-4921",
       "contact_form": null,
@@ -12777,7 +13020,7 @@
       "photo_url": "https://www.congress.gov/img/member/h001068_200.jpg",
       "official_url": null,
       "sponsored_count": 244,
-      "cosponsored_count": 3952,
+      "cosponsored_count": 3961,
       "address": "2330 Rayburn House Office Building",
       "phone": "(202) 225-5161",
       "contact_form": null,
@@ -12811,7 +13054,7 @@
       "photo_url": "https://www.congress.gov/img/member/s001183_200.jpg",
       "official_url": null,
       "sponsored_count": 194,
-      "cosponsored_count": 1526,
+      "cosponsored_count": 1527,
       "address": "166 Cannon House Office Building",
       "phone": "(202) 225-2190",
       "contact_form": null,
@@ -12824,10 +13067,6 @@
         {
           "platform": "facebook",
           "handle": "repdavidschweikert"
-        },
-        {
-          "platform": "youtube",
-          "handle": "RepDavidSchweikert"
         },
         {
           "platform": "instagram",
@@ -12845,7 +13084,7 @@
       "photo_url": "https://www.congress.gov/img/member/g000565_200.jpg",
       "official_url": null,
       "sponsored_count": 378,
-      "cosponsored_count": 2745,
+      "cosponsored_count": 2747,
       "address": "2057 Rayburn House Office Building",
       "phone": "(202) 225-2315",
       "contact_form": null,
@@ -12879,7 +13118,7 @@
       "photo_url": "https://www.congress.gov/img/member/117_rp_ar_3_womack_steve_200.jpg",
       "official_url": null,
       "sponsored_count": 63,
-      "cosponsored_count": 1173,
+      "cosponsored_count": 1174,
       "address": "2412 Rayburn House Office Building",
       "phone": "(202) 225-4301",
       "contact_form": null,
@@ -12913,7 +13152,7 @@
       "photo_url": "https://www.congress.gov/img/member/6916065185b49de40f52cad4_200.jpg",
       "official_url": null,
       "sponsored_count": 147,
-      "cosponsored_count": 1621,
+      "cosponsored_count": 1622,
       "address": "2422 Rayburn House Office Building",
       "phone": "(202) 225-4076",
       "contact_form": null,
@@ -12947,7 +13186,7 @@
       "photo_url": "https://www.congress.gov/img/member/s001185_200.jpg",
       "official_url": null,
       "sponsored_count": 125,
-      "cosponsored_count": 3233,
+      "cosponsored_count": 3234,
       "address": "1035 Longworth House Office Building",
       "phone": "(202) 225-2665",
       "contact_form": null,
@@ -12980,8 +13219,8 @@
       "chamber": "house",
       "photo_url": "https://www.congress.gov/img/member/a000055_200.jpg",
       "official_url": null,
-      "sponsored_count": 104,
-      "cosponsored_count": 2312,
+      "sponsored_count": 105,
+      "cosponsored_count": 2313,
       "address": "272 Cannon House Office Building",
       "phone": "(202) 225-4876",
       "contact_form": null,
@@ -13011,7 +13250,7 @@
       "photo_url": "https://www.congress.gov/img/member/116_rp_al_3_rogers_mike_200.jpg",
       "official_url": null,
       "sponsored_count": 115,
-      "cosponsored_count": 2004,
+      "cosponsored_count": 2006,
       "address": "2469 Rayburn House Office Building",
       "phone": "(202) 225-3261",
       "contact_form": null,
@@ -13045,7 +13284,7 @@
       "photo_url": "https://www.congress.gov/img/member/w000817_200.jpg",
       "official_url": null,
       "sponsored_count": 917,
-      "cosponsored_count": 4460,
+      "cosponsored_count": 4467,
       "address": "311 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-4543",
       "contact_form": "https://www.warren.senate.gov/?p=email_senator",
@@ -13079,7 +13318,7 @@
       "photo_url": "https://www.congress.gov/img/member/w000802_200.jpg",
       "official_url": null,
       "sponsored_count": 785,
-      "cosponsored_count": 4958,
+      "cosponsored_count": 4961,
       "address": "530 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2921",
       "contact_form": "https://www.whitehouse.senate.gov/contact/email-sheldon",
@@ -13112,8 +13351,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/y000064_200.jpg",
       "official_url": null,
-      "sponsored_count": 443,
-      "cosponsored_count": 2161,
+      "sponsored_count": 444,
+      "cosponsored_count": 2162,
       "address": "185 Dirksen Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5623",
       "contact_form": "https://www.young.senate.gov/contact",
@@ -13146,8 +13385,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/fd3cb364b8bf93c25834cff750637802_200.jpg",
       "official_url": null,
-      "sponsored_count": 768,
-      "cosponsored_count": 5523,
+      "sponsored_count": 778,
+      "cosponsored_count": 5527,
       "address": "115 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-4242",
       "contact_form": "https://www.welch.senate.gov/email-peter/",
@@ -13180,8 +13419,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/w000779_200.jpg",
       "official_url": null,
-      "sponsored_count": 2041,
-      "cosponsored_count": 8683,
+      "sponsored_count": 2043,
+      "cosponsored_count": 8698,
       "address": "221 Dirksen Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5244",
       "contact_form": "https://www.wyden.senate.gov/contact/",
@@ -13215,7 +13454,7 @@
       "photo_url": "https://www.congress.gov/img/member/f49ac425119375e9fe6a075762734079_200.jpg",
       "official_url": null,
       "sponsored_count": 761,
-      "cosponsored_count": 4537,
+      "cosponsored_count": 4538,
       "address": "425 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-6253",
       "contact_form": "https://www.wicker.senate.gov/public/index.cfm/contact",
@@ -13248,8 +13487,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/w000790_200.jpg",
       "official_url": null,
-      "sponsored_count": 292,
-      "cosponsored_count": 1313,
+      "sponsored_count": 293,
+      "cosponsored_count": 1315,
       "address": "717 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-3643",
       "contact_form": "https://www.warnock.senate.gov/contact/",
@@ -13279,7 +13518,7 @@
       "photo_url": "https://www.congress.gov/img/member/t000278_200.jpg",
       "official_url": null,
       "sponsored_count": 317,
-      "cosponsored_count": 719,
+      "cosponsored_count": 720,
       "address": "455 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-4124",
       "contact_form": "https://www.tuberville.senate.gov/contact/contact-form/",
@@ -13309,7 +13548,7 @@
       "photo_url": "https://www.congress.gov/img/member/t000476_200.jpg",
       "official_url": null,
       "sponsored_count": 687,
-      "cosponsored_count": 2683,
+      "cosponsored_count": 2690,
       "address": "113 Dirksen Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-6342",
       "contact_form": "https://www.tillis.senate.gov/public/index.cfm/email-me",
@@ -13339,7 +13578,7 @@
       "photo_url": "https://www.congress.gov/img/member/w000805_200.jpg",
       "official_url": null,
       "sponsored_count": 773,
-      "cosponsored_count": 2568,
+      "cosponsored_count": 2569,
       "address": "703 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2023",
       "contact_form": "https://www.warner.senate.gov/public/index.cfm?p=Contact",
@@ -13372,7 +13611,7 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/t000250_200.jpg",
       "official_url": null,
-      "sponsored_count": 1083,
+      "sponsored_count": 1090,
       "cosponsored_count": 2806,
       "address": "511 Dirksen Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2321",
@@ -13406,8 +13645,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/bfd06b6d2baa5394bd0cf5ca0176014e_200.jpg",
       "official_url": null,
-      "sponsored_count": 638,
-      "cosponsored_count": 6951,
+      "sponsored_count": 641,
+      "cosponsored_count": 6955,
       "address": "730 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-4654",
       "contact_form": "https://www.vanhollen.senate.gov/contact/email",
@@ -13441,7 +13680,7 @@
       "photo_url": "https://www.congress.gov/img/member/677d8231fdb6cf36bbb6498b_200.jpg",
       "official_url": null,
       "sponsored_count": 95,
-      "cosponsored_count": 350,
+      "cosponsored_count": 356,
       "address": "124 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2644",
       "contact_form": null,
@@ -13457,8 +13696,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/s001217_200.jpg",
       "official_url": null,
-      "sponsored_count": 682,
-      "cosponsored_count": 1784,
+      "sponsored_count": 684,
+      "cosponsored_count": 1787,
       "address": "110 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5274",
       "contact_form": "https://www.rickscott.senate.gov/contact/contact",
@@ -13488,7 +13727,7 @@
       "photo_url": "https://www.congress.gov/img/member/s001208_200.jpg",
       "official_url": null,
       "sponsored_count": 227,
-      "cosponsored_count": 1592,
+      "cosponsored_count": 1597,
       "address": "291 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-4822",
       "contact_form": null,
@@ -13517,8 +13756,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/s001203_200.jpg",
       "official_url": null,
-      "sponsored_count": 362,
-      "cosponsored_count": 2854,
+      "sponsored_count": 366,
+      "cosponsored_count": 2857,
       "address": "720 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5641",
       "contact_form": "https://www.smith.senate.gov/share-your-opinion/",
@@ -13548,7 +13787,7 @@
       "photo_url": "https://www.congress.gov/img/member/s001198_200.jpg",
       "official_url": null,
       "sponsored_count": 553,
-      "cosponsored_count": 1830,
+      "cosponsored_count": 1832,
       "address": "706 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-3004",
       "contact_form": "https://www.sullivan.senate.gov/contact/email",
@@ -13577,8 +13816,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/s001181_200.jpg",
       "official_url": null,
-      "sponsored_count": 1259,
-      "cosponsored_count": 4381,
+      "sponsored_count": 1261,
+      "cosponsored_count": 4392,
       "address": "506 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2841",
       "contact_form": "https://www.shaheen.senate.gov/contact/contact-jeanne",
@@ -13611,8 +13850,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/b66a0806e77f63e862391b15a0b1f753_200.jpg",
       "official_url": null,
-      "sponsored_count": 129,
-      "cosponsored_count": 410,
+      "sponsored_count": 131,
+      "cosponsored_count": 414,
       "address": "404 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5721",
       "contact_form": "https://www.schmitt.senate.gov/contact/",
@@ -13646,7 +13885,7 @@
       "photo_url": "https://www.congress.gov/img/member/r000605_200.jpg",
       "official_url": null,
       "sponsored_count": 407,
-      "cosponsored_count": 1929,
+      "cosponsored_count": 1932,
       "address": "716 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5842",
       "contact_form": "https://www.rounds.senate.gov/contact/email-mike",
@@ -13675,8 +13914,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/s001194_200.jpg",
       "official_url": null,
-      "sponsored_count": 737,
-      "cosponsored_count": 2386,
+      "sponsored_count": 739,
+      "cosponsored_count": 2396,
       "address": "722 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-3934",
       "contact_form": "https://www.schatz.senate.gov/contact",
@@ -13710,7 +13949,7 @@
       "photo_url": "https://www.congress.gov/img/member/s001184_200.jpg",
       "official_url": null,
       "sponsored_count": 483,
-      "cosponsored_count": 1929,
+      "cosponsored_count": 1930,
       "address": "104 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-6121",
       "contact_form": "https://www.scott.senate.gov/contact/email-me",
@@ -13744,7 +13983,7 @@
       "photo_url": "https://www.congress.gov/img/member/s000148_200.jpg",
       "official_url": null,
       "sponsored_count": 2456,
-      "cosponsored_count": 8129,
+      "cosponsored_count": 8130,
       "address": "322 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-6542",
       "contact_form": "https://www.schumer.senate.gov/contact/email-chuck",
@@ -13777,8 +14016,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/s000033_200.jpg",
       "official_url": null,
-      "sponsored_count": 1187,
-      "cosponsored_count": 7955,
+      "sponsored_count": 1188,
+      "cosponsored_count": 7957,
       "address": "332 Dirksen Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5141",
       "contact_form": "https://www.sanders.senate.gov/contact/",
@@ -13807,8 +14046,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/677d870dfdb6cf36bbb649b3_200.jpg",
       "official_url": null,
-      "sponsored_count": 594,
-      "cosponsored_count": 6007,
+      "sponsored_count": 600,
+      "cosponsored_count": 6019,
       "address": "112 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-3841",
       "contact_form": null,
@@ -13875,8 +14114,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/p000145_200.jpg",
       "official_url": null,
-      "sponsored_count": 624,
-      "cosponsored_count": 2240,
+      "sponsored_count": 633,
+      "cosponsored_count": 2247,
       "address": "331 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-3553",
       "contact_form": "https://www.padilla.senate.gov/contact/",
@@ -13905,8 +14144,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/r000608_200.jpg",
       "official_url": null,
-      "sponsored_count": 543,
-      "cosponsored_count": 2650,
+      "sponsored_count": 545,
+      "cosponsored_count": 2659,
       "address": "713 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-6244",
       "contact_form": "https://www.rosen.senate.gov/contact_jacky",
@@ -13935,8 +14174,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/p000603_200.jpg",
       "official_url": null,
-      "sponsored_count": 1114,
-      "cosponsored_count": 1134,
+      "sponsored_count": 1115,
+      "cosponsored_count": 1135,
       "address": "295 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-4343",
       "contact_form": "https://www.paul.senate.gov/connect/email-rand",
@@ -13970,7 +14209,7 @@
       "photo_url": "https://www.congress.gov/img/member/p000595_200.jpg",
       "official_url": null,
       "sponsored_count": 921,
-      "cosponsored_count": 3577,
+      "cosponsored_count": 3580,
       "address": "724 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-6221",
       "contact_form": "https://www.peters.senate.gov/contact/email-gary",
@@ -14004,7 +14243,7 @@
       "photo_url": "https://www.congress.gov/img/member/r000584_200.jpg",
       "official_url": null,
       "sponsored_count": 650,
-      "cosponsored_count": 2874,
+      "cosponsored_count": 2877,
       "address": "483 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2752",
       "contact_form": "https://www.risch.senate.gov/public/index.cfm?p=Email",
@@ -14034,7 +14273,7 @@
       "photo_url": "https://www.congress.gov/img/member/r000122_200.jpg",
       "official_url": null,
       "sponsored_count": 1292,
-      "cosponsored_count": 5039,
+      "cosponsored_count": 5045,
       "address": "728 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-4642",
       "contact_form": "https://www.reed.senate.gov/contact/",
@@ -14063,8 +14302,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/695d82c8550dfb80c3063bee_200.jpg",
       "official_url": null,
-      "sponsored_count": 78,
-      "cosponsored_count": 230,
+      "sponsored_count": 79,
+      "cosponsored_count": 234,
       "address": "387 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-3041",
       "contact_form": null,
@@ -14081,7 +14320,7 @@
       "photo_url": "https://www.congress.gov/img/member/67c8694e6159152e59828afb_200.jpg",
       "official_url": null,
       "sponsored_count": 39,
-      "cosponsored_count": 221,
+      "cosponsored_count": 223,
       "address": "284 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2315",
       "contact_form": null,
@@ -14106,8 +14345,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/o000174_200.jpg",
       "official_url": null,
-      "sponsored_count": 225,
-      "cosponsored_count": 835,
+      "sponsored_count": 226,
+      "cosponsored_count": 838,
       "address": "317 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-3521",
       "contact_form": "https://www.ossoff.senate.gov/contact-us/",
@@ -14137,7 +14376,7 @@
       "photo_url": "https://www.congress.gov/img/member/m001169_200.jpg",
       "official_url": null,
       "sponsored_count": 633,
-      "cosponsored_count": 3504,
+      "cosponsored_count": 3505,
       "address": "136 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-4041",
       "contact_form": "https://www.murphy.senate.gov/contact",
@@ -14170,8 +14409,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/m000934_200.jpg",
       "official_url": null,
-      "sponsored_count": 790,
-      "cosponsored_count": 3856,
+      "sponsored_count": 793,
+      "cosponsored_count": 3858,
       "address": "521 Dirksen Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-6521",
       "contact_form": "https://www.moran.senate.gov/public/index.cfm/e-mail-jerry",
@@ -14205,7 +14444,7 @@
       "photo_url": "https://www.congress.gov/img/member/1b52ad6d215684d847d1c2bf28b9b262_200.jpg",
       "official_url": null,
       "sponsored_count": 1209,
-      "cosponsored_count": 6424,
+      "cosponsored_count": 6433,
       "address": "154 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2621",
       "contact_form": "https://www.murray.senate.gov/write-to-patty/",
@@ -14234,8 +14473,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/m001153_200.jpg",
       "official_url": null,
-      "sponsored_count": 1238,
-      "cosponsored_count": 3650,
+      "sponsored_count": 1242,
+      "cosponsored_count": 3651,
       "address": "522 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-6665",
       "contact_form": "https://www.murkowski.senate.gov/public/index.cfm/contact",
@@ -14269,7 +14508,7 @@
       "photo_url": "https://www.congress.gov/img/member/677d85e0fdb6cf36bbb649aa_200.jpg",
       "official_url": null,
       "sponsored_count": 79,
-      "cosponsored_count": 390,
+      "cosponsored_count": 392,
       "address": "702 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-6324",
       "contact_form": "https://mccormick.senate.gov/",
@@ -14298,8 +14537,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/m001198_200.jpg",
       "official_url": null,
-      "sponsored_count": 524,
-      "cosponsored_count": 1867,
+      "sponsored_count": 527,
+      "cosponsored_count": 1868,
       "address": "479A Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-4774",
       "contact_form": "https://www.marshall.senate.gov/contact/",
@@ -14329,7 +14568,7 @@
       "photo_url": "https://www.congress.gov/img/member/l000571_200.jpg",
       "official_url": null,
       "sponsored_count": 249,
-      "cosponsored_count": 2278,
+      "cosponsored_count": 2279,
       "address": "127A Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-3424",
       "contact_form": "https://www.lummis.senate.gov/contact/contact-form/",
@@ -14358,8 +14597,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/444677102da26d1ab2e0365d4db904c5_200.jpg",
       "official_url": null,
-      "sponsored_count": 575,
-      "cosponsored_count": 3336,
+      "sponsored_count": 583,
+      "cosponsored_count": 3351,
       "address": "498 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-6621",
       "contact_form": "https://www.lujan.senate.gov/contact/",
@@ -14388,8 +14627,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/m001176_200.jpg",
       "official_url": null,
-      "sponsored_count": 1287,
-      "cosponsored_count": 5069,
+      "sponsored_count": 1317,
+      "cosponsored_count": 5081,
       "address": "531 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-3753",
       "contact_form": "https://www.merkley.senate.gov/contact/",
@@ -14422,8 +14661,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/m000133_200.jpg",
       "official_url": null,
-      "sponsored_count": 1689,
-      "cosponsored_count": 10253,
+      "sponsored_count": 1697,
+      "cosponsored_count": 10258,
       "address": "255 Dirksen Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2742",
       "contact_form": "https://www.markey.senate.gov/contact",
@@ -14457,7 +14696,7 @@
       "photo_url": "https://www.congress.gov/img/member/m000355_200.jpg",
       "official_url": null,
       "sponsored_count": 1296,
-      "cosponsored_count": 2847,
+      "cosponsored_count": 2849,
       "address": "317 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2541",
       "contact_form": "https://www.mcconnell.senate.gov/public/index.cfm?p=contact",
@@ -14486,8 +14725,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/k000377_200.jpg",
       "official_url": null,
-      "sponsored_count": 298,
-      "cosponsored_count": 1294,
+      "sponsored_count": 299,
+      "cosponsored_count": 1306,
       "address": "516 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2235",
       "contact_form": "https://www.kelly.senate.gov/contact/contact-form/",
@@ -14520,8 +14759,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/677d84cbfdb6cf36bbb649a1_200.jpg",
       "official_url": null,
-      "sponsored_count": 238,
-      "cosponsored_count": 2039,
+      "sponsored_count": 242,
+      "cosponsored_count": 2046,
       "address": "520 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-4744",
       "contact_form": null,
@@ -14546,8 +14785,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/k000393_200.jpg",
       "official_url": null,
-      "sponsored_count": 696,
-      "cosponsored_count": 1179,
+      "sponsored_count": 697,
+      "cosponsored_count": 1180,
       "address": "437 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-4623",
       "contact_form": "https://www.kennedy.senate.gov/public/email-me",
@@ -14576,8 +14815,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/k000383_200.jpg",
       "official_url": null,
-      "sponsored_count": 475,
-      "cosponsored_count": 3230,
+      "sponsored_count": 481,
+      "cosponsored_count": 3234,
       "address": "133 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5344",
       "contact_form": "https://www.king.senate.gov/contact",
@@ -14607,7 +14846,7 @@
       "photo_url": "https://www.congress.gov/img/member/k000367_200.jpg",
       "official_url": null,
       "sponsored_count": 1433,
-      "cosponsored_count": 5725,
+      "cosponsored_count": 5729,
       "address": "425 Dirksen Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-3244",
       "contact_form": "https://www.klobuchar.senate.gov/public/index.cfm/contact",
@@ -14632,8 +14871,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/l000577_200.jpg",
       "official_url": null,
-      "sponsored_count": 2113,
-      "cosponsored_count": 1808,
+      "sponsored_count": 2114,
+      "cosponsored_count": 1813,
       "address": "363 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5444",
       "contact_form": "https://www.lee.senate.gov/public/index.cfm/contact",
@@ -14666,8 +14905,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/l000575_200.jpg",
       "official_url": null,
-      "sponsored_count": 684,
-      "cosponsored_count": 2435,
+      "sponsored_count": 685,
+      "cosponsored_count": 2437,
       "address": "731 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5754",
       "contact_form": "https://www.lankford.senate.gov/contact/email",
@@ -14701,7 +14940,7 @@
       "photo_url": "https://www.congress.gov/img/member/67f0316b1b05a5a598f7fdf3_200.jpg",
       "official_url": null,
       "sponsored_count": 88,
-      "cosponsored_count": 173,
+      "cosponsored_count": 174,
       "address": "304 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-3353",
       "contact_form": null,
@@ -14718,7 +14957,7 @@
       "photo_url": "https://www.congress.gov/img/member/67c86b5e6159152e59828b1a_200.jpg",
       "official_url": null,
       "sponsored_count": 17,
-      "cosponsored_count": 314,
+      "cosponsored_count": 316,
       "address": "509 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-3954",
       "contact_form": null,
@@ -14744,7 +14983,7 @@
       "photo_url": "https://www.congress.gov/img/member/h001079_200.jpg",
       "official_url": null,
       "sponsored_count": 165,
-      "cosponsored_count": 1577,
+      "cosponsored_count": 1578,
       "address": "528 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5054",
       "contact_form": "https://www.hydesmith.senate.gov/contact-senator",
@@ -14774,7 +15013,7 @@
       "photo_url": "https://www.congress.gov/img/member/k000384_200.jpg",
       "official_url": null,
       "sponsored_count": 674,
-      "cosponsored_count": 2984,
+      "cosponsored_count": 2987,
       "address": "231 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-4024",
       "contact_form": "https://www.kaine.senate.gov/contact",
@@ -14803,7 +15042,7 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/d522c3b291177f5fea1f3259232301ee_200.jpg",
       "official_url": null,
-      "sponsored_count": 610,
+      "sponsored_count": 611,
       "cosponsored_count": 1337,
       "address": "328 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5323",
@@ -14838,7 +15077,7 @@
       "photo_url": "https://www.congress.gov/img/member/h000273_200.jpg",
       "official_url": null,
       "sponsored_count": 285,
-      "cosponsored_count": 1161,
+      "cosponsored_count": 1173,
       "address": "316 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5941",
       "contact_form": "https://www.hickenlooper.senate.gov/contact/",
@@ -14867,8 +15106,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/h001089_200.jpg",
       "official_url": null,
-      "sponsored_count": 349,
-      "cosponsored_count": 976,
+      "sponsored_count": 353,
+      "cosponsored_count": 978,
       "address": "381 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-6154",
       "contact_form": "https://www.hawley.senate.gov/contact-senator-hawley",
@@ -14898,7 +15137,7 @@
       "photo_url": "https://www.congress.gov/img/member/h001076_200.jpg",
       "official_url": null,
       "sponsored_count": 421,
-      "cosponsored_count": 2530,
+      "cosponsored_count": 2532,
       "address": "324 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-3324",
       "contact_form": "https://www.hassan.senate.gov/content/contact-senator",
@@ -14928,7 +15167,7 @@
       "photo_url": "https://www.congress.gov/img/member/h001061_200.jpg",
       "official_url": null,
       "sponsored_count": 511,
-      "cosponsored_count": 2048,
+      "cosponsored_count": 2049,
       "address": "338 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2551",
       "contact_form": "https://www.hoeven.senate.gov/contact/contact-the-senator",
@@ -14962,7 +15201,7 @@
       "photo_url": "https://www.congress.gov/img/member/h001042_200.jpg",
       "official_url": null,
       "sponsored_count": 811,
-      "cosponsored_count": 5159,
+      "cosponsored_count": 5164,
       "address": "109 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-6361",
       "contact_form": "https://www.hirono.senate.gov/contact",
@@ -14996,7 +15235,7 @@
       "photo_url": "https://www.congress.gov/img/member/h001046_200.jpg",
       "official_url": null,
       "sponsored_count": 667,
-      "cosponsored_count": 3350,
+      "cosponsored_count": 3351,
       "address": "709 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5521",
       "contact_form": "https://www.heinrich.senate.gov/contact",
@@ -15030,7 +15269,7 @@
       "photo_url": "https://www.congress.gov/img/member/6ab6df93aeae0a5cbbfbea84_200.jpg",
       "official_url": null,
       "sponsored_count": 5,
-      "cosponsored_count": 66,
+      "cosponsored_count": 68,
       "address": "211 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5972",
       "contact_form": null,
@@ -15047,7 +15286,7 @@
       "photo_url": "https://www.congress.gov/img/member/f000479_200.jpg",
       "official_url": null,
       "sponsored_count": 83,
-      "cosponsored_count": 913,
+      "cosponsored_count": 917,
       "address": "142 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-4254",
       "contact_form": "https://www.fetterman.senate.gov/contact/",
@@ -15072,8 +15311,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/h000601_200.jpg",
       "official_url": null,
-      "sponsored_count": 334,
-      "cosponsored_count": 882,
+      "sponsored_count": 335,
+      "cosponsored_count": 883,
       "address": "251 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-4944",
       "contact_form": "https://www.hagerty.senate.gov/email-me/",
@@ -15102,8 +15341,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/c6870f487cf4bc9a568d8afbe61d754b_200.jpg",
       "official_url": null,
-      "sponsored_count": 284,
-      "cosponsored_count": 2804,
+      "sponsored_count": 285,
+      "cosponsored_count": 2813,
       "address": "302 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-4521",
       "contact_form": null,
@@ -15133,7 +15372,7 @@
       "photo_url": "https://www.congress.gov/img/member/669ec7925d19788d1f2034a1_200.jpg",
       "official_url": null,
       "sponsored_count": 351,
-      "cosponsored_count": 1614,
+      "cosponsored_count": 1617,
       "address": "448 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-6551",
       "contact_form": "https://www.fischer.senate.gov/public/index.cfm/contact",
@@ -15166,8 +15405,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/g000555_200.jpg",
       "official_url": null,
-      "sponsored_count": 922,
-      "cosponsored_count": 5296,
+      "sponsored_count": 923,
+      "cosponsored_count": 5301,
       "address": "478 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-4451",
       "contact_form": "https://www.gillibrand.senate.gov/contact/email-me",
@@ -15201,7 +15440,7 @@
       "photo_url": "https://www.congress.gov/img/member/b5b30dc4407d5ae57f15105d15cfec1e_200.jpg",
       "official_url": null,
       "sponsored_count": 2497,
-      "cosponsored_count": 7599,
+      "cosponsored_count": 7604,
       "address": "135 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-3744",
       "contact_form": "https://www.grassley.senate.gov/contact",
@@ -15234,8 +15473,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/1b9d1007d6895a37da28a67cd8149803_200.jpg",
       "official_url": null,
-      "sponsored_count": 216,
-      "cosponsored_count": 986,
+      "sponsored_count": 217,
+      "cosponsored_count": 990,
       "address": "502 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5251",
       "contact_form": null,
@@ -15264,7 +15503,7 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/e000295_200.jpg",
       "official_url": null,
-      "sponsored_count": 670,
+      "sponsored_count": 671,
       "cosponsored_count": 1936,
       "address": "260 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-3254",
@@ -15294,7 +15533,7 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/c001098_200.jpg",
       "official_url": null,
-      "sponsored_count": 1149,
+      "sponsored_count": 1156,
       "cosponsored_count": 2118,
       "address": "167 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5922",
@@ -15329,7 +15568,7 @@
       "photo_url": "https://www.congress.gov/img/member/d000618_200.jpg",
       "official_url": null,
       "sponsored_count": 645,
-      "cosponsored_count": 2542,
+      "cosponsored_count": 2544,
       "address": "320 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2651",
       "contact_form": "https://www.daines.senate.gov/connect/email-steve",
@@ -15362,8 +15601,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/d000622_200.jpg",
       "official_url": null,
-      "sponsored_count": 595,
-      "cosponsored_count": 3403,
+      "sponsored_count": 601,
+      "cosponsored_count": 3416,
       "address": "524 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2854",
       "contact_form": "https://www.duckworth.senate.gov/content/contact-senator",
@@ -15396,8 +15635,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/d000563_200.jpg",
       "official_url": null,
-      "sponsored_count": 2187,
-      "cosponsored_count": 10560,
+      "sponsored_count": 2189,
+      "cosponsored_count": 10565,
       "address": "711 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2152",
       "contact_form": "https://www.durbin.senate.gov/contact/",
@@ -15427,7 +15666,7 @@
       "photo_url": "https://www.congress.gov/img/member/c000880_200.jpg",
       "official_url": null,
       "sponsored_count": 630,
-      "cosponsored_count": 4441,
+      "cosponsored_count": 4443,
       "address": "239 Dirksen Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-6142",
       "contact_form": "https://www.crapo.senate.gov/contact",
@@ -15460,8 +15699,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/c001113_200.jpg",
       "official_url": null,
-      "sponsored_count": 715,
-      "cosponsored_count": 2345,
+      "sponsored_count": 718,
+      "cosponsored_count": 2351,
       "address": "309 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-3542",
       "contact_form": "https://www.cortezmasto.senate.gov/contact",
@@ -15491,7 +15730,7 @@
       "photo_url": "https://www.congress.gov/img/member/c001096_200.jpg",
       "official_url": null,
       "sponsored_count": 251,
-      "cosponsored_count": 3343,
+      "cosponsored_count": 3345,
       "address": "313 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2043",
       "contact_form": "https://www.cramer.senate.gov/contact/contact-kevin",
@@ -15525,7 +15764,7 @@
       "photo_url": "https://www.congress.gov/img/member/c001095_200.jpg",
       "official_url": null,
       "sponsored_count": 581,
-      "cosponsored_count": 1973,
+      "cosponsored_count": 1975,
       "address": "326 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2353",
       "contact_form": "https://www.cotton.senate.gov/contact/contact-tom",
@@ -15555,7 +15794,7 @@
       "photo_url": "https://www.congress.gov/img/member/c001088_200.jpg",
       "official_url": null,
       "sponsored_count": 802,
-      "cosponsored_count": 4234,
+      "cosponsored_count": 4240,
       "address": "218 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5042",
       "contact_form": "https://www.coons.senate.gov/contact",
@@ -15589,7 +15828,7 @@
       "photo_url": "https://www.congress.gov/img/member/c001075_200.jpg",
       "official_url": null,
       "sponsored_count": 733,
-      "cosponsored_count": 2534,
+      "cosponsored_count": 2536,
       "address": "455 Dirksen Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5824",
       "contact_form": "https://www.cassidy.senate.gov/contact",
@@ -15623,7 +15862,7 @@
       "photo_url": "https://www.congress.gov/img/member/c001035_200.jpg",
       "official_url": null,
       "sponsored_count": 1209,
-      "cosponsored_count": 6649,
+      "cosponsored_count": 6652,
       "address": "413 Dirksen Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2523",
       "contact_form": "https://www.collins.senate.gov/contact",
@@ -15656,7 +15895,7 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/c001056_200.jpg",
       "official_url": null,
-      "sponsored_count": 1649,
+      "sponsored_count": 1651,
       "cosponsored_count": 4096,
       "address": "517 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2934",
@@ -15686,8 +15925,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/b001319_200.jpg",
       "official_url": null,
-      "sponsored_count": 63,
-      "cosponsored_count": 738,
+      "sponsored_count": 64,
+      "cosponsored_count": 740,
       "address": "416 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5744",
       "contact_form": "https://www.britt.senate.gov/contact/",
@@ -15716,8 +15955,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/b001305_200.jpg",
       "official_url": null,
-      "sponsored_count": 278,
-      "cosponsored_count": 2031,
+      "sponsored_count": 279,
+      "cosponsored_count": 2034,
       "address": "354 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-3154",
       "contact_form": "https://www.budd.senate.gov/contact/",
@@ -15750,8 +15989,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/b001303_200.jpg",
       "official_url": null,
-      "sponsored_count": 225,
-      "cosponsored_count": 2475,
+      "sponsored_count": 229,
+      "cosponsored_count": 2485,
       "address": "513 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2441",
       "contact_form": null,
@@ -15780,8 +16019,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/b001288_200.jpg",
       "official_url": null,
-      "sponsored_count": 1067,
-      "cosponsored_count": 4366,
+      "sponsored_count": 1073,
+      "cosponsored_count": 4374,
       "address": "306 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-3224",
       "contact_form": "https://www.booker.senate.gov/?p=contact",
@@ -15815,7 +16054,7 @@
       "photo_url": "https://www.congress.gov/img/member/b001277_200.jpg",
       "official_url": null,
       "sponsored_count": 1168,
-      "cosponsored_count": 6334,
+      "cosponsored_count": 6344,
       "address": "503 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-2823",
       "contact_form": "https://www.blumenthal.senate.gov/contact/",
@@ -15848,8 +16087,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/b001236_200.jpg",
       "official_url": null,
-      "sponsored_count": 408,
-      "cosponsored_count": 4257,
+      "sponsored_count": 409,
+      "cosponsored_count": 4262,
       "address": "555 Dirksen Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-4843",
       "contact_form": "https://www.boozman.senate.gov/public/index.cfm/contact",
@@ -15882,7 +16121,7 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/c001047_200.jpg",
       "official_url": null,
-      "sponsored_count": 399,
+      "sponsored_count": 400,
       "cosponsored_count": 4003,
       "address": "170 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-6472",
@@ -15912,8 +16151,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/c000127_200.jpg",
       "official_url": null,
-      "sponsored_count": 1006,
-      "cosponsored_count": 4303,
+      "sponsored_count": 1013,
+      "cosponsored_count": 4314,
       "address": "511 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-3441",
       "contact_form": "https://www.cantwell.senate.gov/public/index.cfm/email-maria",
@@ -15943,7 +16182,7 @@
       "photo_url": null,
       "official_url": null,
       "sponsored_count": 4,
-      "cosponsored_count": 39,
+      "cosponsored_count": 40,
       "address": "330 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-4721",
       "contact_form": null,
@@ -15959,8 +16198,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/67acdbbf044eb506e25958f2_200.jpg",
       "official_url": null,
-      "sponsored_count": 101,
-      "cosponsored_count": 527,
+      "sponsored_count": 104,
+      "cosponsored_count": 540,
       "address": "374 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-4524",
       "contact_form": "https://alsobrooks.senate.gov/",
@@ -16016,7 +16255,7 @@
       "photo_url": "https://www.congress.gov/img/member/b001261_200.jpg",
       "official_url": null,
       "sponsored_count": 713,
-      "cosponsored_count": 2478,
+      "cosponsored_count": 2479,
       "address": "307 Dirksen Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-6441",
       "contact_form": "https://www.barrasso.senate.gov/public/index.cfm/contact-form",
@@ -16045,8 +16284,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/b001267_200.jpg",
       "official_url": null,
-      "sponsored_count": 980,
-      "cosponsored_count": 3310,
+      "sponsored_count": 991,
+      "cosponsored_count": 3325,
       "address": "261 Russell Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5852",
       "contact_form": "https://www.bennet.senate.gov/public/index.cfm/contact",
@@ -16079,8 +16318,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/b001230_200.jpg",
       "official_url": null,
-      "sponsored_count": 766,
-      "cosponsored_count": 6914,
+      "sponsored_count": 768,
+      "cosponsored_count": 6919,
       "address": "141 Hart Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-5653",
       "contact_form": "https://www.baldwin.senate.gov/feedback",
@@ -16113,8 +16352,8 @@
       "chamber": "senate",
       "photo_url": "https://www.congress.gov/img/member/b001243_200.jpg",
       "official_url": null,
-      "sponsored_count": 816,
-      "cosponsored_count": 4915,
+      "sponsored_count": 818,
+      "cosponsored_count": 4918,
       "address": "357 Dirksen Senate Office Building  Washington, DC 20510",
       "phone": "(202) 224-3344",
       "contact_form": "https://www.blackburn.senate.gov/email-me",
