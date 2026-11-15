@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T17:51:15Z",
+  "generated_at": "2026-11-15T18:41:37Z",
   "congress": 108,
   "votes_coverage": false,
   "bills": [
@@ -2024,6 +2024,53 @@
       "votes": []
     },
     {
+      "id": "hr1350-108",
+      "congress": 108,
+      "type": "hr",
+      "number": "1350",
+      "title": "Individuals with Disabilities Education Improvement Act of 2004",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Castle, Michael N. [R-DE-At Large]",
+        "party": "R",
+        "state": "DE"
+      },
+      "introduced_date": "2003-03-19",
+      "latest_action": {
+        "date": "2004-12-03",
+        "text": "Became Public Law No: 108-446."
+      },
+      "outcome": "enacted",
+      "policy_area": "Education",
+      "subjects": [
+        "Academic performance",
+        "Administrative remedies",
+        "Attention deficit disorders",
+        "Authorization",
+        "Blind",
+        "Charter schools",
+        "Child abuse",
+        "Child development",
+        "Class size",
+        "Congress",
+        "Congressional investigations",
+        "Congressional reporting requirements",
+        "Continuing education",
+        "Curricula",
+        "Day care",
+        "Deaf",
+        "Department of Education",
+        "Disability evaluation",
+        "Disabled"
+      ],
+      "summary_crs": "Improving Education Results for Children With Disabilities Act of 2003 - Amends the Individuals with Disabilities Education Act to reauthorize appropriations through FY 2009.<p>Revises requirements for: (1) assistance for education of all children with disabilities, including infants and toddlers, particularly the identification of such children; (2) national activities to improve the education of such children; (3) scientifically based research into educational practices that support learning and improve academic achievement and progress for all students with disabilities; (4) technical assistance, model demonstration projects, dissemination of information, and personnel programs; and (5) supports to improve results for children with disabilities, especially parent and community training and information centers.<p>Replaces State program improvement grants for children with disabilities with grants to State education agencies for professional development of both special education and regular education teachers of children with disabilities.<p>Revises reporting requirements to reduce paperwork for special education teachers.",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ446/PLAW-108publ446.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ446/PLAW-108publ446.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/1350",
+      "votes": []
+    },
+    {
       "id": "hr1630-108",
       "congress": 108,
       "type": "hr",
@@ -2174,6 +2221,53 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/108/plaws/publ440/PLAW-108publ440.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-bill/2214",
+      "votes": []
+    },
+    {
+      "id": "s2640-108",
+      "congress": 108,
+      "type": "s",
+      "number": "2640",
+      "title": "A bill to designate the facility of the United States Postal Service located at 1050 North Hills Boulevard in Reno, Nevada, as the \"Guardians of Freedom Memorial Post Office Building\" and to authorize the installation of a plaque at such site, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Ensign, John",
+        "party": "R",
+        "state": "NV"
+      },
+      "introduced_date": "2004-07-13",
+      "latest_action": {
+        "date": "2004-12-03",
+        "text": "Became Public Law No: 108-442."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Afghanistan",
+        "Armed Forces and National Security",
+        "Armed forces abroad",
+        "Congress",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Government Operations and Politics",
+        "International Affairs",
+        "Iraq",
+        "Iraq compilation",
+        "Middle East and North Africa",
+        "Military occupation",
+        "Military operations",
+        "Monuments and memorials",
+        "Names",
+        "Nevada",
+        "Postal facilities",
+        "Signs and signboards",
+        "South Asia"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced in the Senate on July 13, 2004. The summary of that version is repeated here.)</b></p> <p>Designates the facility of the United States Postal Service located at 1050 North Hills Boulevard in Reno, Nevada, as the &quot;Guardians of Freedom Memorial Post Office Building.&quot; </p> <p>Authorizes the Postmaster General to enter into an agreement with the Office of Veterans' Services of the State of Nevada under which the Office agrees to install, maintain, and update a plaque to be displayed at such Building. Requires the plaque to include inscriptions containing the names, ranks, branches of service, hometowns, and dates of death of those men and women of Nevada who have lost their lives while serving in the U.S. Armed Forces in the global war on terrorism and in Operation Iraqi Freedom.</p>",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ442/PLAW-108publ442.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ442/PLAW-108publ442.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-bill/2640",
       "votes": []
     },
     {
@@ -3226,6 +3320,53 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/108/plaws/publ391/PLAW-108publ391.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-joint-resolution/57",
+      "votes": []
+    },
+    {
+      "id": "hr2023-108",
+      "congress": 108,
+      "type": "hr",
+      "number": "2023",
+      "title": "Asthmatic Schoolchildren's Treatment and Health Management Act of 2004",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Stearns, Cliff",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2003-05-07",
+      "latest_action": {
+        "date": "2004-10-30",
+        "text": "Became Public Law No: 108-377."
+      },
+      "outcome": "enacted",
+      "policy_area": "Education",
+      "subjects": [
+        "Access to health care",
+        "Allergies",
+        "Asthma",
+        "Case management",
+        "Child health",
+        "Drugs",
+        "Economics and Public Finance",
+        "Elementary and secondary education",
+        "Elementary education",
+        "Emergency Management",
+        "Emergency medicine",
+        "Families",
+        "Federal aid to education",
+        "Federal aid to health facilities",
+        "Government Operations and Politics",
+        "Government paperwork",
+        "Health",
+        "Health counseling",
+        "Health education"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was reported to the House on July 14, 2004. The summary of that version is repeated here.)</b></p> <p>Asthmatic Schoolchildren's Treatment and Health Management Act of 2004 - (Sec. 3) Amends the Public Health Service Act (PHSA) to direct the Secretary of Health and Human Services, in making certain PHSA grants or any other asthma-related grant to a State, to give preference to States that require public elementary and secondary schools to allow students to self-administer medication to treat that student's asthma or anaphylaxis under specified conditions.</p> <p>Provides that this Act does not create a cause of action or in any other way increase or diminish the liability of any person under any other law.</p> <p>(Sec. 4) Expresses the sense of Congress: (1) commending the Centers for Disease Control and Prevention for identifying and creating strategies for addressing asthma within a coordinated school program; and (2) encouraging all schools to review these strategies and adopt policies that will best meet the needs of their student population.</p>",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ377/PLAW-108publ377.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ377/PLAW-108publ377.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/2023",
       "votes": []
     },
     {
@@ -4484,6 +4625,100 @@
       "votes": []
     },
     {
+      "id": "hr2828-108",
+      "congress": 108,
+      "type": "hr",
+      "number": "2828",
+      "title": "Water Supply, Reliability, and Environmental Improvement Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Calvert, Ken",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2003-07-23",
+      "latest_action": {
+        "date": "2004-10-25",
+        "text": "Became Public Law No: 108-361."
+      },
+      "outcome": "enacted",
+      "policy_area": "Water Resources Development",
+      "subjects": [
+        "Administrative procedure",
+        "Agriculture and Food",
+        "Animals",
+        "California",
+        "Central Valley Reclamation Project (California)",
+        "Congress",
+        "Congressional oversight",
+        "Congressional reporting requirements",
+        "Congressional veto",
+        "Cost effectiveness",
+        "Crime and Law Enforcement",
+        "Dams",
+        "Department of the Interior",
+        "Disasters",
+        "Ecological research",
+        "Economics and Public Finance",
+        "Ecosystem management",
+        "Emergency Management",
+        "Environmental Protection"
+      ],
+      "summary_crs": " <p>Water Supply, Reliability, and Environmental Improvement Act - <b>Title I: California Water Security and Environmental Enhancement</b> - Calfed Bay-Delta Authorization Act - (Sec. 103) Approves the Calfed Bay-Delta Program Record of Decision, dated August 28, 2000, as a general framework for addressing the Calfed Bay-Delta Program. Authorizes the Secretary of the Interior (the Secretary) and the heads of the Department of the Interior, the Bureau of Reclamation, the U.S. Fish and Wildlife Service, the Bureau of Land Management, the U.S. Geological Survey, the Environmental Protection Agency (EPA), the Army Corps of Engineers, the Department of Commerce, the National Marine Fisheries Service, the Department of Agriculture, the Natural Resources Conservation Service, the Forest Service, and the Western Area Power Administration to carry out activities under this title consistent with: (1) the Record of Decision; (2) the requirement that Program activities consisting of protecting drinking water quality, restoring ecological health, improving water supply reliability (including additional storage, conveyance, and new firm yield [i.e., a quantity of water projected to be available on a reliable basis, given a specified level of risk, during a critically dry period]), and protecting Delta levees will progress in a balanced manner; and (3) this title. Directs the Secretary and such agency heads to consider, in selecting programs and projects, whether the activities have multiple benefits. </p> <p>Authorizes the Secretary and such agency heads to carry out specified activities in furtherance of the Calfed Bay-Delta Program as set forth in the Record of Decision, subject to the cost-share and other provisions of this title, if such an activity has been: (1) subject to environmental review and approval, as required under applicable Federal and State law; and (2) approved and certified by the relevant Federal agency, following consideration and coordination with the Governor of California (the Governor), to be consistent with the Record of Decision.</p> <p>Authorizes the Secretary, the Administrator of EPA, the Secretary of the Army, the Secretary of Commerce, and the Secretary of Agriculture to carry out specified activities, including planning activities and feasibility studies for specific projects (including the Shasta Dam in Shasta County, California, the Los Vaqueros Reservoir in Contra Costa County, and projects requiring further consideration at the Sites Reservoir in Colusa County and the Upper San Joaquin River storage in Fresno and Madera Counties), developing and implementing groundwater management and storage projects, and conducting comprehensive water management planning.</p> <p></p> <p> Directs the Secretary: (1) upon completion of the feasibility study and upon determination that the project should be constructed with Federal funds, to submit the feasibility study to Congress; (2) if Congress fails to authorize project construction by the end of the next full session following the study's submission, to prepare a written determination making a finding of imbalance for the Calfed Bay-Delta Program; and (3) upon making such a finding, to prepare and submit to Congress a report on the measures necessary to rebalance the Program (including preparation of revised schedules and identification of alternatives to rebalance the Program).</p> <p> Directs the Secretary, acting through the Bureau of Reclamation, to conduct a study of available water supplies and existing and future needs for water within: (1) the units of the Central Valley Project (CVP); (2) the area served by CVP agricultural , municipal, and industrial water service contractors; and (3) the Calfed Delta solution area. Directs that the study incorporate and revise as necessary a study required by the CVP Improvement Act of 1992. Directs the Secretary to conduct activities related to developing groundwater storage projects and to comprehensive water management planning, to the extent authorized under existing law. Requires the Secretary to submit a report to the congressional authorizing committees describing the results of the study, including: (1) any new firm yield and water supply improvements for CVP agricultural water service contractors and municipal and industrial water service contractors; (2) all water management actions or projects that would improve new firm yield or water supply and that would balance available supplies and existing demand with due recognition of water right priorities and environmental needs; (3) the financial costs of such actions and projects; and (4) the beneficiaries of those actions and projects and an assessment of their willingness to pay the capital costs and operation and maintenance costs.</p> <p>Specifies authorized activities, including for: (1) the South Delta, actions to increase the State Water Project (SWP) export limit, install permanent operable barriers in the south Delta, evaluate (consistent with the Record of Decision) fish screens and intake facilities at the Tracy Pumping Plant facilities, and increase the SWP export to the maximum capability; and (2) the North Delta, evaluation and implementation of improved operational procedures for the Delta Cross Channel to address fishery and water quality concerns, evaluation of a screened through-Delta facility on the Sacramento River, and evaluation of lower Mokelumne River flood-way improvements. Requires the Secretary, prior to increasing export limits from the Delta to convey water to south-of-Delta CVP contractors or increasing deliveries through an intertie, to develop and initiate implementation of a program to meet all existing water quality standards and objectives for which the CVP has responsibility. </p> <p>Directs the Secretary to: (1) develop and implement, in coordination with the State of California's (State) programs to improve water quality in the San Joaquin River, a best management practices plan to reduce the water quality impacts of the discharges from wildlife refuges that receive water from the Government and discharge salt or other constituents into the San Joaquin River, developed in coordination with interested parties in the San Joaquin Valley and the Delta; and (2) coordinate activities with other entities that discharge water into that River to reduce salinity concentrations discharged into the River, including the timing of discharges to optimize their assimilation.</p> <p>Directs the Secretary to: (1) incorporate into the Program the acquisition from willing sellers of water from tributaries to the San Joaquin River or other sources to provide flow, dilute discharges of salt or other constituents, and improve water quality in that river below its confluence with the Merced River and to reduce the reliance on New Melones Reservoir for meeting water quality and fishery flow objectives; and (2) update the New Melones operating plan to consider the actions outlined in this title designed to reduce the reliance on New Melones Reservoir for meeting water quality and fishery flow objectives and to ensure that actions to enhance fisheries in the Stanislaus River are based on the best available science.</p> <p>Lists authorized activities with respect to water use efficiency, water transfers, integrated regional water management plans, and ecosystem restoration. Directs the Secretary to submit to the appropriate authorizing committees by October 1 of each year, with respect to an ecosystem restoration action carried out by or for the Secretary, an annual ecosystem program plan report that includes information on the program's goals and objectives, accomplishments, major activities, implementation schedules and budgets, monitoring programs and performance measures, and expected benefits relative to cost. Directs that projects involving acquisition of private lands be included in the plan.</p> <p>Authorizes the Secretary, EPA Administrator, Secretary of the Army, and Secretaries of Agriculture and Commerce to carry out specified activities under new and expanded authorizations, including: (1) feasibility studies, evaluation, and implementation of the San Luis Reservoir lowpoint improvement project and increased capacity of the intertie between the SWP California Aqueduct and the CVP Delta Mendota Canal near the City of Tracy; (2) reconstructing Delta levees to a base level of protection; and (3) program support and tracking, oversight, and coordination of public outreach and involvement.</p> <p>(Sec. 104) Requires Federal agencies, in carrying out the Program, to: (1) coordinate their activities with specified California agencies (State agencies); (2) cooperate with local and tribal governments and the public, through an advisory committee and other appropriate means, to seek input on Program elements, such as planning, design, technical assistance, and development of peer review science programs; and (3) seek to ensure that all major aspects of implementing the Program are subjected to credible and objective scientific review and that major decisions are based upon the best available scientific information.</p> <p>Directs the Federal and State agencies to continue to collaborate to develop a comprehensive environmental justice work plan for the Program and to fulfill the commitment to addressing specified environmental justice challenges. Allows Federal funds appropriated specifically for implementation of the Program to be used to acquire land where consistent with the Record of Decision.</p> <p>(Sec. 105) Directs the Secretary, by February 15 of each year, in cooperation with the Governor, to submit to the appropriate authorizing and appropriating House and Senate Committees a report that: (1) describes the status of implementation of all components of the Program; (2) sets forth any written determination resulting from the review required; and (3) includes any revised schedule prepared under this title. Sets forth report requirements, including a description of accomplishments during the past fiscal year in achieving specified objectives, such as additional and improved water storage, water quality (including progress in, and pending actions that may affect, achieving specified targets for water supply and quality and environmental water account requirements), ecosystem restoration, water supply reliability, and completion of key projects and milestones identified in the Ecosystem Restoration Program. Requires the Secretary, by November 15 of each year, to review progress in implementing the Program based on consistency with the Record of Decision and balance in achieving Program goals and objectives and to prepare a revised schedule if specified conditions are not met.</p> <p>(Sec. 106) Requires: (1) the budget of the President to include requests for the appropriate funding level for each of the Federal agencies to carry out their responsibilities under the Program; (2) the Federal agencies with authority and programmatic responsibility to request the funds; and (3) the Director of the Office of Management and Budget, in coordination with the Governor, to submit to the authorizing and appropriating committees a financial report certified by the Secretary containing an interagency budget crosscut report, a detailed accounting of all funds received and obligated by all Federal and State agencies responsible for implementing the Program during the previous fiscal year, a budget for the proposed projects to be carried out in the upcoming fiscal year with the Federal portion of funds for specified activities, and a listing of all projects to be undertaken in the upcoming fiscal year with the Federal portion for such activities.</p> <p>(Sec. 107) Limits the Federal share of the cost of implementing the Program for FY 2005 through 2010 in the aggregate, as set forth in the Record of Decision, to 33.3 percent. Directs the Secretary to ensure that all beneficiaries pay for the benefit received from all projects or activities carried out under the Program. Declares that Federal Program expenditures shall be implemented so as to encourage integrated resource planning.</p> <p>(Sec. 108) Provides that nothing in this title: (1) invalidates or preempts State water law or an interstate compact governing water; (2) alters the rights of any State to an appropriate share of the waters of any body of surface or ground water; (3) preempts or modifies any State or Federal law or interstate compact governing water quality or disposal; (4) confers on any non-Federal entity the ability to exercise any Federal right to the waters of any stream or to any ground water resource; and (5) alters or modifies any provision of existing Federal law, except as specifically provided in this title.</p> <p>(Sec. 109) Authorizes appropriations to the Secretary and Federal agency heads to pay the Federal cost share of carrying out the new and expanded authorities in this title for FY 2005 through 2010.</p> <p><b>Title II: Miscellaneous</b> - (Sec. 201) Directs the Secretary, by December 31, 2006, in coordination with the State and the Salton Sea Authority, to complete a feasibility study on a preferred alternative for Salton Sea restoration.</p> <p>(Sec. 202) Authorizes the Secretary, through the Bureau of Reclamation and in cooperation with the El Dorado Irrigation District, to study the feasibility of constructing a project on Alder Creek in El Dorado County to store water and provide water supplies during dry and critically dry years for consumptive use, recreation, in-stream flows, irrigation, and power production. Directs the Secretary to report to specified congressional committees with the results of the study, including cost sharing options for the implementation of the project based on the use and possible allocation of any stored water. Limits the Federal share to 50 percent of the total cost of the study. Authorizes appropriations.</p> <p>(Sec. 203) Increases the authorization for a temperature control device for Folsom Reservoir.</p>",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ361/PLAW-108publ361.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ361/PLAW-108publ361.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/2828",
+      "votes": []
+    },
+    {
+      "id": "hr3858-108",
+      "congress": 108,
+      "type": "hr",
+      "number": "3858",
+      "title": "Pancreatic Islet Cell Transplantation Act of 2004",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Nethercutt, George R., Jr.",
+        "party": "R",
+        "state": "WA"
+      },
+      "introduced_date": "2004-02-26",
+      "latest_action": {
+        "date": "2004-10-25",
+        "text": "Became Public Law No: 108-362."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Accreditation (Medical care)",
+        "Administrative procedure",
+        "Clinical trials",
+        "Communication in medicine",
+        "Communication in science",
+        "Congress",
+        "Diabetes",
+        "Economics and Public Finance",
+        "Federal aid to health facilities",
+        "Federal aid to research",
+        "Government Operations and Politics",
+        "Government paperwork",
+        "Government regulation",
+        "Health information systems",
+        "Insulin",
+        "Law",
+        "Legislation",
+        "Medical records",
+        "Medical research"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The expanded summary of the House passed version is repeated here.)</b></p> <p>Pancreatic Islet Cell Transplantation Act of 2004 - Amends the Public Health Service Act to allow pancreata procured for use in islet cell transplantation or research to be counted for certification purposes for qualified organ procurement organization grants.</p> <p>Requires the Diabetes Mellitus Interagency Coordinating Committee to include in its annual report an assessment of the Federal activities and programs related to pancreatic islet cell transplantation, which shall address: (1) the adequacy of funding; (2) policies and regulations affecting the supply of pancreata; (3) the effect of xenotransplantation; (4) the effect of the United Network for Organ Sharing policies; (5) the existing mechanisms to collect and coordinate outcome data from trials; (6) implementation of multi-agency clinical investigations; and (7) recommendations for legislation and administrative actions to increase the supply of pancreata.</p>",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ362/PLAW-108publ362.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ362/PLAW-108publ362.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/3858",
+      "votes": []
+    },
+    {
       "id": "hr4175-108",
       "congress": 108,
       "type": "hr",
@@ -4523,6 +4758,53 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/108/bills/hr4175/BILLS-108hr4175eas.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/4175",
+      "votes": []
+    },
+    {
+      "id": "hr4278-108",
+      "congress": 108,
+      "type": "hr",
+      "number": "4278",
+      "title": "Assistive Technology Act of 2004",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McKeon, Howard P. \"Buck\"",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2004-05-05",
+      "latest_action": {
+        "date": "2004-10-25",
+        "text": "Became Public Law No: 108-364."
+      },
+      "outcome": "enacted",
+      "policy_area": "Health",
+      "subjects": [
+        "Arts, Culture, Religion",
+        "Authorization",
+        "Colleges",
+        "Commerce",
+        "Community and school",
+        "Congress",
+        "Congressional reporting requirements",
+        "Consumer credit",
+        "Consumer education",
+        "Data banks",
+        "Department of Education",
+        "Disabled",
+        "Economics and Public Finance",
+        "Education",
+        "Electronic government information",
+        "Elementary and secondary education",
+        "Employee training",
+        "Employment of the disabled",
+        "Engineers"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the Senate on September 30, 2004. The summary of that version is repeated here.)</b></p> <p>Assistive Technology Act of 2004 - (Sec. 2) Amends the Assistive Technology Act of 1998 (ATA) to reauthorize and revise ATA programs. </p> <p> Revises ATA State grant programs to direct the Secretary of Education to make assistive technology (AT) grants to States to maintain comprehensive statewide programs designed to: (1) maximize the ability of individuals with disabilities, and their family members, guardians, advocates, and authorized representatives, to obtain AT; and (2) increase access to AT. (This grants program, which emphasizes addressing the AT needs of individuals with disabilities, revises and renames the current program of continuity grants for States that received funding for a limited period for technology-related assistance through establishing State administrative systems.)</p> <p>Increases the minimum grant allotment amount for each State AT program.</p> <p>Requires States to use portions of AT grant funds for: (1) State-level activities, including State financing system activities (which may include loan programs) to increase access to and funding for AT devices and services, as well as for programs for device reutilization, device loan, and device demonstration and information; and (2) State leadership activities (not more than 40 percent of the AT grant), including training and technical assistance (with at least five percent of the leadership portion to be used for transition assistance to individuals with disabilities), public-awareness activities, and coordination and collaboration. </p> <p>Provides a flexibility option under which a State may opt to use AT grant funds to carry out any two or more of the otherwise required State-level activities. Requires a State, if it exercises such flexibility option with respect to State-level activities, to: (1) carry out each of the required State leadership activities; and (2) use not more than 30 percent of the AT grant funds to carry out State leadership activities.</p> <p>Caps at ten percent the portion of AT grant funds that may be used for indirect costs.</p> <p>Prohibits AT grant funds from being used as direct payment for an AT device for an individual with a disability.</p> <p>Revises the ATA program of grants to States for protection and advocacy related to AT, through systems established under the Developmental Disabilities Assistance and Bill of Rights Act. Includes the American Indian Consortium as a recipient of such program grants. Allows such systems to carry over program income generated from the grant amount for two additional fiscal years. Requires such funds to be used for activities that enhance AT accessibility awareness among individuals with disabilities and help such individuals acquire, use, or maintain AT devices or services. </p> <p>Revises ATA national activities to direct the Secretary of Education to: (1) provide funds to establish and maintain a National Public Internet Site to provide individuals with disabilities and the general public with technical assistance and information on increased access to AT devices, AT services, and other disability-related resources; and (2) make competitive grants to provide various forms of technical assistance.</p> <p>Revises ATA national activities. Authorizes the Secretary to award competitive grants, contracts, and cooperative agreements for: (1) a national public-awareness toolkit developed through a training and technical assistance program that expands public-awareness efforts, uses appropriate accessible multimedia materials, and coordinates with State AT programs in informing targeted individuals and entities about the availability of AT devices and services; and (2) AT research and development. Directs the Secretary to award competitive grants, contracts, and cooperative agreements for: (1) a training and technical assistance program to address State-specific information requests concerning AT from entities funded under ATA and public entities not funded under ATA, disseminate certain information to targeted individuals and entities, and provide training and technical assistance to various public and private entities; (2) renovation, updating, and maintenance of the National Public Internet Site under ATA, with certain required features; and (3) data-collection and reporting assistance.</p> <p>Revises ATA administrative requirements. Directs the Assistant Secretary for Special Education and Rehabilitative Services of the Department of Education, acting through the Rehabilitation Services Administration, to administer this Act.</p> <p>Extends through FY 2010 the authorization of appropriations under ATA for: (1) State grants for AT and for national activities; and (2) State grants for AT-related protection and advocacy services.</p>",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ364/PLAW-108publ364.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ364/PLAW-108publ364.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/4278",
       "votes": []
     },
     {
@@ -6722,6 +7004,36 @@
       "votes": []
     },
     {
+      "id": "hr3908-108",
+      "congress": 108,
+      "type": "hr",
+      "number": "3908",
+      "title": "To provide for the conveyance of the real property located at 1081 West Main Street in Ravenna, Ohio.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Ryan, Tim",
+        "party": "D",
+        "state": "OH"
+      },
+      "introduced_date": "2004-03-04",
+      "latest_action": {
+        "date": "2004-09-24",
+        "text": "Became Public Law No: 108-305."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Land transfers",
+        "Ohio"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The expanded summary of the House passed version is repeated here.)</b></p> <p>Directs the Secretary of Labor to convey, without charge or consideration, to Portage County, Ohio, all right, title, and interest of the United States (including all Federal equity) in and to the parcel of real property located at 1081 West Main Street in Ravenna, Ohio, to the extent such right, title, or interest was acquired through grants to the State of Ohio under title III (Grants to States for Unemployment Compensation Administration) of the Social Security Act or the Wagner-Peyser Act or through funds distributed to the State under section 903 (Amounts Transferred to State Accounts) of IX (Employment Security Administrative Financing) of the Social Security Act.</p>",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ305/PLAW-108publ305.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ305/PLAW-108publ305.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/3908",
+      "votes": []
+    },
+    {
       "id": "hr5008-108",
       "congress": 108,
       "type": "hr",
@@ -8597,6 +8909,43 @@
       "votes": []
     },
     {
+      "id": "s2017-108",
+      "congress": 108,
+      "type": "s",
+      "number": "2017",
+      "title": "A bill to designate the United States courthouse and post office building located at 93 Atocha Street in Ponce, Puerto Rico, as the \"Luis A. Ferre United States Courthouse and Post Office Building\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Santorum, Rick",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2004-01-22",
+      "latest_action": {
+        "date": "2004-07-07",
+        "text": "Became Public Law No: 108-273."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congress",
+        "Congressional tributes",
+        "Federal office buildings",
+        "Government Operations and Politics",
+        "Governors",
+        "Names",
+        "Postal facilities",
+        "Puerto Ricans",
+        "Puerto Rico"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates the U.S. courthouse and post office building located at 93 Atocha Street in Ponce, Puerto Rico, as the Luis A. Ferre United States Courthouse and Post Office Building.</p>",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ273/PLAW-108publ273.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ273/PLAW-108publ273.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-bill/2017",
+      "votes": []
+    },
+    {
       "id": "hr3378-108",
       "congress": 108,
       "type": "hr",
@@ -8641,6 +8990,48 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/108/plaws/publ266/PLAW-108publ266.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/3378",
+      "votes": []
+    },
+    {
+      "id": "hr3504-108",
+      "congress": 108,
+      "type": "hr",
+      "number": "3504",
+      "title": "To amend the Indian Self-Determination and Education Assistance Act to redesignate the American Indian Education Foundation as the National Fund for Excellence in American Indian Education.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Renzi, Rick",
+        "party": "R",
+        "state": "AZ"
+      },
+      "introduced_date": "2003-11-17",
+      "latest_action": {
+        "date": "2004-07-02",
+        "text": "Became Public Law No: 108-267."
+      },
+      "outcome": "enacted",
+      "policy_area": "Native Americans",
+      "subjects": [
+        "Commerce",
+        "Education",
+        "Elementary and secondary education",
+        "Elementary education",
+        "Federal incorporation",
+        "Foundations",
+        "Fund raising",
+        "Gifts",
+        "Government Operations and Politics",
+        "Indian education",
+        "Minorities",
+        "Names",
+        "Secondary education",
+        "Social Welfare"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Amends the Indian Self-Determination and Education Assistance Act to redesignate the American Indian Education Foundation as the National Fund for Excellence in American Indian Education.</p>",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ267/PLAW-108publ267.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ267/PLAW-108publ267.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/3504",
       "votes": []
     },
     {
@@ -9488,6 +9879,42 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/108/plaws/publ255/PLAW-108publ255.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/3855",
+      "votes": []
+    },
+    {
+      "id": "hr3917-108",
+      "congress": 108,
+      "type": "hr",
+      "number": "3917",
+      "title": "To designate the facility of the United States Postal Service located at 695 Marconi Boulevard in Copiague, New York, as the \"Maxine S. Postal United States Post Office\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Israel, Steve",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2004-03-09",
+      "latest_action": {
+        "date": "2004-06-25",
+        "text": "Became Public Law No: 108-256."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congress",
+        "Congressional tributes",
+        "County politics and government",
+        "Government Operations and Politics",
+        "Local officials",
+        "Names",
+        "New York State",
+        "Postal facilities"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Designates the U.S. Postal Service facility located at 695 Marconi Boulevard in Copiague, New York, as the Maxine S. Postal United States Post Office.</p>",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ256/PLAW-108publ256.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ256/PLAW-108publ256.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/3917",
       "votes": []
     },
     {
@@ -12077,6 +12504,44 @@
       "votes": []
     },
     {
+      "id": "s2136-108",
+      "congress": 108,
+      "type": "s",
+      "number": "2136",
+      "title": "An original bill to extend the final report date and termination date of the National Commission on Terrorist Attacks Upon the United States, to provide additional funding for the Commission, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Roberts, Pat",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2004-02-26",
+      "latest_action": {
+        "date": "2004-03-16",
+        "text": "Became Public Law No: 108-207."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Appropriations",
+        "Crime and Law Enforcement",
+        "EBB Terrorism",
+        "Economics and Public Finance",
+        "Federal advisory bodies",
+        "Government Operations and Politics",
+        "Governmental investigations",
+        "International Affairs",
+        "September 11, 2001",
+        "Terrorism"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary of that version is repeated here.)</b></p> <p>Amends provisions of the Intelligence Authorization Act for Fiscal Year 2003 which establish the National Commission on Terrorist Attacks Upon the United States to: (1) extend the Commission's final report date from 18 to 20 months after the enactment of such Act; (2) terminate the Commission 30 (currently 60) days after such final report; and (3) earmark $1 million for Commission activities out of amounts appropriated for programs and activities of the Federal Government for FY 2004.</p>",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ207/PLAW-108publ207.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ207/PLAW-108publ207.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-bill/2136",
+      "votes": []
+    },
+    {
       "id": "hr3915-108",
       "congress": 108,
       "type": "hr",
@@ -13851,6 +14316,53 @@
       "votes": []
     },
     {
+      "id": "hr2115-108",
+      "congress": 108,
+      "type": "hr",
+      "number": "2115",
+      "title": "Vision 100--Century of Aviation Reauthorization Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Young, Don [R-AK-At Large]",
+        "party": "R",
+        "state": "AK"
+      },
+      "introduced_date": "2003-05-15",
+      "latest_action": {
+        "date": "2003-12-12",
+        "text": "Became Public Law No: 108-176."
+      },
+      "outcome": "enacted",
+      "policy_area": "Transportation and Public Works",
+      "subjects": [
+        "Access to airports",
+        "Administrative procedure",
+        "Advice and consent of the Senate",
+        "Air cargo",
+        "Air piracy",
+        "Air pollution control",
+        "Air routes",
+        "Air traffic",
+        "Aircraft construction",
+        "Aircraft engines",
+        "Aircraft industry",
+        "Aircraft pilots",
+        "Airline employees",
+        "Airline passenger traffic",
+        "Airlines",
+        "Airports",
+        "Alaska",
+        "Alternative dispute resolution",
+        "Alternative energy sources"
+      ],
+      "summary_crs": "Flight 100--Century of Aviation Reauthorization Act - Amends Federal transportation law to authorize appropriations for FY 2004 through 2007 for the Federal Aviation Administration (FAA), including: (1) air navigation facilities and equipment; and (2) airport and noise compatibility planning and development. Extends the current authority of the Secretary of Transportation to provide air carrier insurance and reinsurance through calendar 2007, after which limits are imposed.<p>Airport Streamlining Approval Process Act of 2003 - Directs the Secretary to develop and implement a coordinated review process for airport capacity enhancement projects at congested airports.<p>Directs the FAA Administrator to convert the Air Traffic Services Subcommittee of the Federal Aviation Management Advisory Council into an independent Air Traffic Services Board.<p>Establishes in the FAA a Small Business Ombudsman.<p>Revises requirements with respect to airline service improvements, involving among other things: (1) data on incidents and complaints involving passenger and baggage security screening; (2) conversion of ground support equipment or airport-owned vehicles to low-emission technology; (3) the passenger facility fee program; (4) overflights of national parks; (5) a collaborative decision-making pilot program; (6) availability of aircraft accident site information; (7) slot exemptions at Ronald Reagan Washington National Airport; (8) small community air service and the essential air service program, including a community and regional choice alternate essential air service pilot program; (9) action for de novo review in U.S. district court of a discrimination complaint by an employee providing air safety information; (10) agreements to permit use of type certificates by other persons; (11) design organization certificates; (12) runway safety standards; (13) availability of maintenance information; (14) flight attendant certification; (15) a civil penalty for closure of an airport without providing sufficient notice; (16) improvement of curriculum standards for aviation maintenance technicians; (17) a task force on future of air transportation system; (18) air quality in aircraft cabins; (19) a task force on enhanced transfer of applications of technology for military aircraft to civilian aircraft; (20) reimbursement for losses incurred by general aviation entities; (21) impasse procedures for national association of air traffic specialists; (22) FAA inspector training; (23) a prohibition on air traffic control privatization; and (24) reduced airfares for members of the Armed Forces on commercial U.S. flights.<p>Revises requirements relating to airport development and involving among other things: (1) security costs at small airports; (2) runway safety areas; (3) proceeds from disposition of land acquired for noise compatibility purposes; (4) hangar construction grant assurances; (5) costs of construction or modification of public parking facilities for security purposes; (6) formulae for apportionments to primary airports and cargo airports; (7) considerations in making discretionary grants; (8) flexible funding for nonprimary airport apportionments; (9) use of apportioned amounts for noise mitigation projects; (10) increased funding for the military airport program and air traffic control contract towers; (11) 100 percent Federal share of the cost of airport safety data collection by a private contractor; (12) the use of revenues in the airport privatization pilot program; (13) further limitations on innovative financing techniques for airport development projects; (14) emission credits for air quality projects and an airport ground support equipment emissions retrofit pilot program; (15) compatible land use planning and projects by State and local governments; and (16) funding for Midway Island Airport.",
+      "text_url_html": "https://www.congress.gov/108/bills/hr2115/BILLS-108hr2115eas.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/bills/hr2115/BILLS-108hr2115eas.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/2115",
+      "votes": []
+    },
+    {
       "id": "hr3348-108",
       "congress": 108,
       "type": "hr",
@@ -14460,6 +14972,46 @@
       "votes": []
     },
     {
+      "id": "s1768-108",
+      "congress": 108,
+      "type": "s",
+      "number": "1768",
+      "title": "National Flood Insurance Program Reauthorization Act of 2004",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Bunning, Jim",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2003-10-21",
+      "latest_action": {
+        "date": "2003-12-06",
+        "text": "Became Public Law No: 108-171."
+      },
+      "outcome": "enacted",
+      "policy_area": "Emergency Management",
+      "subjects": [
+        "Authorization",
+        "Department of Homeland Security",
+        "Disaster insurance",
+        "Economics and Public Finance",
+        "Federal Emergency Management Agency",
+        "Finance and Financial Sector",
+        "Floods",
+        "Government Operations and Politics",
+        "Government securities",
+        "Government trust funds",
+        "Governmental investigations",
+        "Water Resources Development"
+      ],
+      "summary_crs": " <p>National Flood Insurance Program Reauthorization Act of 2004 - Amends the National Flood Insurance Act of 1968 to extend through March 31, 2004: (1) the authority to enter into new flood insurance contracts under the national flood insurance program; (2) the authority under which the Director of the Federal Emergency Management Agency may issue notes and other obligations to the Secretary of the Treasury for the purpose of carrying out the program; (3) requirements for carrying out emergency implementation of the program; and (4) the authorization of appropriations for carrying out studies under the Act. </p>",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ171/PLAW-108publ171.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ171/PLAW-108publ171.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-bill/1768",
+      "votes": []
+    },
+    {
       "id": "s1895-108",
       "congress": 108,
       "type": "s",
@@ -14738,6 +15290,51 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/108/plaws/publ151/PLAW-108publ151.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/3379",
+      "votes": []
+    },
+    {
+      "id": "s1824-108",
+      "congress": 108,
+      "type": "s",
+      "number": "1824",
+      "title": "Overseas Private Investment Corporation Amendments Act of 2003",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lugar, Richard G.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2003-11-05",
+      "latest_action": {
+        "date": "2003-12-03",
+        "text": "Became Public Law No: 108-158."
+      },
+      "outcome": "enacted",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "American investments",
+        "Commerce",
+        "Counterpart funds",
+        "Developing countries",
+        "Economics and Public Finance",
+        "Expropriation",
+        "Federally-guaranteed loans",
+        "Foreign Trade and International Finance",
+        "Foreign banks and banking",
+        "Foreign corporations",
+        "Government Operations and Politics",
+        "Government corporations",
+        "Government insurance",
+        "Government ownership",
+        "Investment guaranty insurance",
+        "Overseas Private Investment Corporation",
+        "Revolving funds"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The summary has been expanded because action occurred on the measure.)</b></p> <p>Overseas Private Investment Corporation Amendments Act of 2003 - (Sec. 2) Amends the Foreign Assistance Act of 1961 to continue through FY 2007 the authority of the Overseas Private Investment Corporation (OPIC) to issue investment insurance and guaranties.</p> <p>(Sec. 3) Authorizes OPIC to make transfers from its noncredit activities to pay for administrative costs of its investment guaranties and direct loan programs as well as (under current law) to pay for their subsidy costs.</p> <p>Changes to a noncredit account revolving fund in the Treasury the current insurance and guaranty fund, with its separate Insurance Reserve and Guaranty Reserve accounts, hereby abolished.</p> <p>Revises requirements for the OPIC Board of Directors to require the seven U.S. Government directors to be principal officers (currently, officials) whose duties relate to OPIC programs.</p> <p>(Sec. 4) Extends OPIC investment insurance coverage to loss of investment in an approved project due to expropriation or confiscation by any political subdivision of, or a corporation owned or controlled by, a foreign government (currently, expropriation or confiscation only by the foreign government itself).</p> <p>(Sec. 5) Authorizes OPIC to issue loan guaranties: (1) denominated in currencies other than U.S. dollars (local currencies); and (2) to local financial institutions, that is, any bank or financial institution organized under the laws of any country or area in which the OPIC operates, but excluding a branch, however organized, of a bank or other financial institution organized under the laws of a country in which OPIC does not operate.</p> <p>(Sec. 6) Directs OPIC to collect and report annually to Congress about data on the involvement of minority- and women-owned businesses in OPIC-supported projects, including: (1) the amount of insurance and financing provided by OPIC to such businesses; and (2) the involvement of such businesses in OPIC-conducted and -supported procurement activities (to the extent such information is available).</p>",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ158/PLAW-108publ158.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ158/PLAW-108publ158.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-bill/1824",
       "votes": []
     },
     {
@@ -15470,6 +16067,53 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/108/plaws/publ133/PLAW-108publ133.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/3054",
+      "votes": []
+    },
+    {
+      "id": "hr3232-108",
+      "congress": 108,
+      "type": "hr",
+      "number": "3232",
+      "title": "To reauthorize certain school lunch and child nutrition programs through March 31, 2004.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Castle, Michael N. [R-DE-At Large]",
+        "party": "R",
+        "state": "DE"
+      },
+      "introduced_date": "2003-10-02",
+      "latest_action": {
+        "date": "2003-11-22",
+        "text": "Became Public Law No: 108-134."
+      },
+      "outcome": "enacted",
+      "policy_area": "Agriculture and Food",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Authorization",
+        "Child nutrition",
+        "Commerce",
+        "Day care",
+        "Department of Agriculture",
+        "Economics and Public Finance",
+        "Education",
+        "Elementary and secondary education",
+        "Families",
+        "Food relief",
+        "Food safety",
+        "Government Operations and Politics",
+        "Grants-in-aid",
+        "Housing and Community Development",
+        "Military dependents",
+        "Military housing",
+        "School lunch program",
+        "Social Welfare"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was passed by the House on October 28, 2003. The summary of that version is repeated here.)</b></p> <p>Amends the Richard B. Russell National School Lunch Act, and the Commodity Distribution Reform Act and WIC Amendments of 1987, to reauthorize certain school lunch and child nutrition programs through March 31, 2004.</p> <p>Extends requirements relating to: (1) an exclusion of certain military housing allowances from family income determinations for purposes of a child's program eligibility; (2) the Child and Adult Care Food Program; (3) reimbursement to States under commodity distribution programs (for purposes of the National School Lunch and Breakfast Programs, the After-School Snack Program, the Summer Food Service Program, the Child and Adult Care Food Program, and the Special Supplemental Nutrition Program for Women, Infants, and Children (WIC)); (4) funding maintenance of commodity distribution to schools; and (5) the Summer Food Service Program.</p>",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ134/PLAW-108publ134.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ134/PLAW-108publ134.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/3232",
       "votes": []
     },
     {
@@ -17286,6 +17930,43 @@
       "votes": []
     },
     {
+      "id": "s570-108",
+      "congress": 108,
+      "type": "s",
+      "number": "570",
+      "title": "A bill to amend the Higher Education Act of 1965 with respect to the qualifications of foreign schools.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Ensign, John",
+        "party": "R",
+        "state": "NV"
+      },
+      "introduced_date": "2003-03-06",
+      "latest_action": {
+        "date": "2003-10-10",
+        "text": "Became Public Law No: 108-98."
+      },
+      "outcome": "enacted",
+      "policy_area": "Education",
+      "subjects": [
+        "Animals",
+        "Economics and Public Finance",
+        "Federal aid to education",
+        "Foreign-trained physicians",
+        "Health",
+        "Higher education",
+        "Medical education",
+        "Student loan funds",
+        "Veterinary medicine"
+      ],
+      "summary_crs": "Amends the Higher Education Act of 1965 to revise requirements for the qualification of foreign medical or veterinary schools to participate in title IV part B Federal Family Education Loan Program.<p>Exempts graduate medical schools or veterinary schools located outside the United States from a requirement that they be a public or other nonprofit institution in order to qualify. Retains certain requirements for foreign medical schools, but no longer applies these to foreign veterinary schools. Requires the students of a foreign veterinary institution that is neither public nor nonprofit to complete their clinical training at an approved veterinary school located in the United States. (Current law applies the latter requirement to all foreign veterinary schools.)",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ98/PLAW-108publ98.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ98/PLAW-108publ98.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-bill/570",
+      "votes": []
+    },
+    {
       "id": "hr659-108",
       "congress": 108,
       "type": "hr",
@@ -17484,6 +18165,53 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/108/bills/sres238/BILLS-108sres238ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/238",
+      "votes": []
+    },
+    {
+      "id": "hr2555-108",
+      "congress": 108,
+      "type": "hr",
+      "number": "2555",
+      "title": "Department of Homeland Security Appropriations Act, 2004",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Rogers, Harold",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2003-06-23",
+      "latest_action": {
+        "date": "2003-10-01",
+        "text": "Became Public Law No: 108-90."
+      },
+      "outcome": "enacted",
+      "policy_area": "Economics and Public Finance",
+      "subjects": [
+        "Administrative fees",
+        "Administrative procedure",
+        "Administrative remedies",
+        "Agriculture and Food",
+        "Agriculture in foreign trade",
+        "Air cargo",
+        "Air traffic",
+        "Airline passenger traffic",
+        "Airports",
+        "Alaska",
+        "Aliens",
+        "Animals",
+        "Antibiotics",
+        "Appropriations",
+        "Arizona",
+        "Armed Forces and National Security",
+        "Armed forces reserves",
+        "Automation",
+        "Automobile insurance"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since the Conference Report was filed in the House on September 23, 2003. The summary of that version is repeated here.)</b></p> <p>Department of Homeland Security Appropriations Act, 2004 - <b>Title I: Departmental Management and Operations</b> - Makes FY 2004 appropriations to the Department of Homeland Security (Department) for: (1) the Office of the Secretary and Executive Management; (2) the Office of the Under Secretary for Management; (3) Department-Wide Technology Investments; and (4) the Office of the Inspector General.</p> <p><b>Title II: Security, Enforcement, and Investigations </b>- Makes FY 2004 appropriations for: (1) the Office of the Under Secretary for Border and Transportation Security (salaries and expenses, and U.S. visitor and immigrant status indicator technology), (2) customs and border protection (salaries and expenses, automation modernization, and construction); (3) immigration and customs enforcement (salaries and expenses, Air and Marine interdiction, operations, maintenance and procurement); (4) Federal air marshals; (5) the Federal Protective Service; (6) the Transportation Security Administration (aviation security, maritime and land security, intelligence, research and development, and administration); (7) the U.S. Coast Guard (including a rescission of funds, operating expenses, environmental compliance and restoration, reserve training, acquisition, construction, and improvements, alteration of bridges, research, development, test, and evaluation, and retired pay); (8) the U.S. Secret Service (salaries and expenses); and (9) acquisition, construction, improvements, and related expenses.</p> <p><b>Title III: Preparedness and Recovery</b> - Makes FY 2004 appropriations for: (1) the Office for Domestic Preparedness; (2) firefighter assistance grants; (3) the Counterterrorism Fund; (4) the Office of the Under Secretary for Emergency Preparedness and Response (including for securing medical countermeasures against biological terror attacks); (5) the Radiological Emergency Preparedness Program; (6) disaster relief; (7) the Disaster Assistance Direct Loan Program Account; (8) the National Pre-Disaster Mitigation Fund; (9) the Flood Map Modernization Fund; (10) the National Flood Insurance Fund; (11) the National Flood Mitigation Fund; (12) emergency management performance grants; (13) emergency food and shelter; and (14) Cerro Grande fire claims.</p> <p><b>Title IV: Research and Development, Training, Assessments, and Services - </b>Makes FY 2004 appropriations for: (1). citizenship and immigration services; (2) the Federal Law Enforcement Training Center (salaries and expenses, acquisition, construction, improvements, and related expenses); (3) information analysis and infrastructure protection; and (4) science and technology (research, development, acquisition, and operations).</p> <p><b>Title V: General Provisions </b>- (Sec. 503) Prohibits the availability of funds provided in this Act, provided by previous appropriations Acts to the agencies in or transferred to the Department, or from any accounts in the Treasury derived by the collection of fees available to the agencies funded by this Act for obligation or expenditure through a reprogamming of funds that: (1) creates new programs; (2) eliminates programs, projects, or activities; (3) increases funds for programs, projects, or activities that have been denied or restricted by Congress; or (4) proposes to use funds that have been directed for a specific activity by the appropriations committees for a different activity unless such committees are notified 15 days in advance.</p> <p>(Sec. 505) Authorizes the use of appropriated funds for FY 2004 and thereafter for: (1) the purchase of uniforms without regard to the general purchase price limitations for the current fiscal year; (2) the purchase of insurance for official motor vehicles operated in foreign countries; (3) entering into contracts with the Department of State to furnish health and medical services to employees and their dependents serving in foreign countries; (4) the employment of experts and consultants; and (5) the hire and purchase of motor vehicles.</p> <p>(Sec. 508) Deems any funds made available by this Act for intelligence activities to be specifically authorized by Congress under the National Security Act of 1947 during FY 2004 until enactment of an Act authorizing such activities for FY 2004.</p> <p>(Sec. 509) Directs the Federal Law Enforcement Training Center to establish an accrediting body of both Federal and non-Federal law enforcement training experts to establish standards for measuring and assessing the quality and effectiveness of Federal law enforcement training programs, facilities, and instructors. Requires the Center to ensure that all training centers under its control are operated at optimal capacity throughout the fiscal year.</p> <p>(Sec. 513) Prohibits the use of Department funds: (1) for the production of customs declarations that do not inquire whether the passenger had been in the proximity of livestock; (2) for any activity or Government employee salary that would prohibit the enforcement of the ban of the Tariff Act of 1930 against the importation of goods mined, produced, or manufactured by convict labor; or (3) to allow the importation of goods (or the release of goods on which there is in effect a detention order) mined, produced, or manufactured by forced or indentured child labor.</p> <p>(Sec. 517) Prohibits the use of funds in this Act to pursue or adopt regulations requiring airport sponsors to provide, without cost to the Transportation Security Administration (TSA), building construction, maintenance, utilities and expenses, or space for services relating to aviation security (excluding space for necessary checkpoints). Permits negotiations of below-market rates for these items.</p> <p>(Sec. 518) Prohibits the use of funds in this Act in contravention of the Buy American Act.</p> <p>(Sec. 519) Prohibits the use of funds provided by this or previous appropriations Acts for deployment or implementation on other than a test basis of the Computer Assisted Passenger Prescreening System (CAPPS II) until the General Accounting Office has reported to the Committees on Appropriations that: (1) a system of due process exists by which passengers considered to pose a threat may appeal their delay or prohibition from boarding a flight; (2) the underlying error rate of databases will not produce a large number of false positives that will result in a significant number of passengers being treated mistakenly or security resources being diverted; (3) the TSA has stressed-tested and demonstrated the efficacy and predictive accuracy of all search tools in CAPPS II; and (4) the Secretary of Homeland Security (Secretary) has established an internal oversight board to monitor the manner in which CAPPS II is being developed and prepared.</p> <p>(Sec. 520) Requires the Secretary, for FY 2004 and thereafter, to charge reasonable fees for providing credentialing and background investigations in the field of transportation.</p> <p>(Sec. 521) Directs the Secretary to research, develop, and procure certified systems to inspect and screen air cargo on passenger aircraft at the earliest possible date and to take certain preventive measures in the interim.</p>",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ90/PLAW-108publ90.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ90/PLAW-108publ90.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/2555",
       "votes": []
     },
     {
@@ -17911,6 +18639,42 @@
       "votes": []
     },
     {
+      "id": "hr1668-108",
+      "congress": 108,
+      "type": "hr",
+      "number": "1668",
+      "title": "To designate the United States courthouse located at 101 North Fifth Street in Muskogee, Oklahoma, as the \"Ed Edmondson United States Courthouse\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Carson, Brad",
+        "party": "D",
+        "state": "OK"
+      },
+      "introduced_date": "2003-04-08",
+      "latest_action": {
+        "date": "2003-09-17",
+        "text": "Became Public Law No: 108-80."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congress",
+        "Congressional tributes",
+        "Courthouses",
+        "Ex-Members of Congress",
+        "House of Representatives",
+        "Law",
+        "Names",
+        "Oklahoma"
+      ],
+      "summary_crs": "Designates the U.S. courthouse located at 101 North Fifth Street in Muskogee, Oklahoma, as the Ed Edmondson United States Courthouse.",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ80/PLAW-108publ80.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ80/PLAW-108publ80.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/house-bill/1668",
+      "votes": []
+    },
+    {
       "id": "sres225-108",
       "congress": 108,
       "type": "sres",
@@ -18116,6 +18880,53 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/108/bills/sres212/BILLS-108sres212ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/212",
+      "votes": []
+    },
+    {
+      "id": "s1435-108",
+      "congress": 108,
+      "type": "s",
+      "number": "1435",
+      "title": "Prison Rape Elimination Act of 2003",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Sessions, Jeff",
+        "party": "R",
+        "state": "AL"
+      },
+      "introduced_date": "2003-07-21",
+      "latest_action": {
+        "date": "2003-09-04",
+        "text": "Became Public Law No: 108-79."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "AIDS (Disease)",
+        "Administrative procedure",
+        "Architecture",
+        "Arts, Culture, Religion",
+        "Building construction",
+        "Civil Rights and Liberties, Minority Issues",
+        "Confidential communications",
+        "Congress",
+        "Congressional reporting requirements",
+        "Continuum of care",
+        "Correctional institutions",
+        "Correctional personnel",
+        "Cost effectiveness",
+        "Crime prevention",
+        "Criminal investigation",
+        "Criminal justice information",
+        "Criminal statistics",
+        "Criminology",
+        "Department of Justice"
+      ],
+      "summary_crs": " <p><b>(This measure has not been amended since it was introduced. The expanded summary of the Senate passed version is repeated here.)</b></p> <p>Prison Rape Elimination Act of 2003 - (Sec. 4) Directs the Bureau of Justice Statistics to carry out, annually, a comprehensive statistical review and analysis of the incidence and effects of prison rape. Requires: (1) the review and analysis to be based on a sample of not less than ten percent of all Federal, State, and county prisons, and a representative sample of municipal prisons, that includes at least one prison from each State; and (2) Federal, State, or local officials or facility administrators that receive a request from the Bureau to participate in the national survey and provide access to any inmates under their legal custody.</p> <p>Establishes within the Department of Justice the Review Panel on Prison Rape to carry out, for each calendar year, public hearings concerning the operation of the three prisons with the highest incidence of prison rape and the two prisons with the lowest incidence in each category of facilities identified. Declares that the purpose of these hearings shall be to collect evidence to aid in the identification of common characteristics of: (1) victims and perpetrators of prison rape; (2) prisons and prison systems with a high incidence of prison rape; and and (3) prisons and prison systems that appear to have been successful in deterring prison rape.</p> <p> </p> <p>Requires the Attorney General to submit an annual report to Congress and the Secretary of Health and Human Services on Bureau and Panel activities regarding prison rape. Authorizes appropriations for FY 2004 through 2010. <p>(Sec. 5) Establishes within the National Institute of Corrections (NIC) a national clearinghouse for the provision of information, assistance, and training to Federal, State, and local authorities for the prevention, investigation, and punishment of prison rape. <p> (Sec. 6) Directs the Attorney General to make grants to to assist States in ensuring that budgetary circumstances do not compromise efforts to protect inmates and to safeguard the communities to which inmates return. Authorizes appropriations for FY 2004 through 2010, with a limitation. <p>(Sec. 7) Establishes the National Prison Rape Reduction Commission to: (1) study the impact of prison rape on Federal, State, and local governments and on communities and social institutions; and (2) report recommended national standards for enhancing the detection, prevention, reduction, and punishment of prison rape. <p>(Sec. 8) Directs the Attorney General, within one year after receiving such report, to publish a final rule adopting national standards. Provides for a five percent reduction of any amount of grant funds for prisons that a State would otherwise receive for a fiscal year, unless the chief executive of the State submits to the Attorney General: (1) a certification that the State has adopted, and is in full compliance with, the national standards; or (2) an assurance that not less than five percent of such amount shall be used only to enable the State to adopt and achieve full compliance with such standards, so as to ensure that such certification may be submitted in future years. Requires the Attorney General to publish an annual report listing each grantee that is not in compliance with the standards. <p>(Sec. 9) Prohibits the receipt of Federal grants by penal facility accredication organizations that fail to adopt accreditation standards for the detection, prevention, reduction, and punishment of prison rape.",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ79/PLAW-108publ79.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ79/PLAW-108publ79.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-bill/1435",
       "votes": []
     },
     {
@@ -20515,6 +21326,40 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/108/plaws/publ28/PLAW-108publ28.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-bill/243",
+      "votes": []
+    },
+    {
+      "id": "s870-108",
+      "congress": 108,
+      "type": "s",
+      "number": "870",
+      "title": "A bill to amend the Richard B. Russell National School Lunch Act to extend the availability of funds to carry out the fruit and vegetable pilot program.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Harkin, Tom",
+        "party": "D",
+        "state": "IA"
+      },
+      "introduced_date": "2003-04-10",
+      "latest_action": {
+        "date": "2003-05-29",
+        "text": "Became Public Law No: 108-30."
+      },
+      "outcome": "enacted",
+      "policy_area": "Agriculture and Food",
+      "subjects": [
+        "Education",
+        "Elementary and secondary education",
+        "Fruit",
+        "School lunch program",
+        "Social Welfare",
+        "Vegetables"
+      ],
+      "summary_crs": "Amends the Richard B. Russell National School Lunch Act to extend the availability of funds to carry out the fruit and vegetable pilot program.",
+      "text_url_html": "https://www.congress.gov/108/plaws/publ30/PLAW-108publ30.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/plaws/publ30/PLAW-108publ30.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-bill/870",
       "votes": []
     },
     {
@@ -23675,6 +24520,67 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/108/bills/sres6/BILLS-108sres6ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/6",
+      "votes": []
+    },
+    {
+      "id": "sres7-108",
+      "congress": 108,
+      "type": "sres",
+      "number": "7",
+      "title": "A resolution electing Emily J. Reynolds of Tennessee as Secretary of the Senate.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Frist, William H.",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2003-01-07",
+      "latest_action": {
+        "date": "2003-01-07",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S7; text as passed Senate: CR S7; text of measure as introduced: CR S86)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Congressional officers",
+        "Senate"
+      ],
+      "summary_crs": "Elects Emily J. Reynolds as Secretary of the Senate.",
+      "text_url_html": "https://www.congress.gov/108/bills/sres7/BILLS-108sres7ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/bills/sres7/BILLS-108sres7ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/7",
+      "votes": []
+    },
+    {
+      "id": "sres8-108",
+      "congress": 108,
+      "type": "sres",
+      "number": "8",
+      "title": "A resolution notifying the President of the United States of the election of a Secretary of the Senate.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Frist, William H.",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2003-01-07",
+      "latest_action": {
+        "date": "2003-01-07",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S7; text as passed Senate: CR S7; text of measure as introduced: CR S86)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Congressional officers",
+        "Government Operations and Politics",
+        "Senate"
+      ],
+      "summary_crs": "Notifies the President of the election of the Honorable Emily J. Reynolds as the Secretary of the Senate.",
+      "text_url_html": "https://www.congress.gov/108/bills/sres8/BILLS-108sres8ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/108/bills/sres8/BILLS-108sres8ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/108th-congress/senate-resolution/8",
       "votes": []
     }
   ]
