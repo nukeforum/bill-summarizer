@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T14:13:15Z",
+  "generated_at": "2026-11-16T14:54:25Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
@@ -21,7 +21,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5666-5667; text: CR S5667)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "District of Columbia",
@@ -54,7 +53,6 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5668; text: CR S5668-5669)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "California",
@@ -87,7 +85,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5666-5667; text: CR S5667-5668)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Bank accounts, deposits, capital",
@@ -125,7 +122,6 @@
         "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5668; text: CR S5669)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -159,7 +155,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5666)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [],
       "summary_crs": null,
@@ -287,7 +282,6 @@
         "text": "Became Public Law No: 119-140."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Aging",
@@ -321,7 +315,6 @@
         "text": "Became Public Law No: 119-141."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional oversight",
@@ -388,7 +381,6 @@
         "text": "Became Public Law No: 119-142."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Bankruptcy",
@@ -419,15 +411,14 @@
         "date": "2026-11-10",
         "text": "Became Public Law No: 119-139."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Taxation",
       "subjects": [
         "Federal officials",
         "Lawyers and legal services",
         "Tax administration and collection, taxpayers"
       ],
-      "summary_crs": "<p><strong>National Taxpayer Advocate Enhancement Act of 2025 </strong></p><p>This bill authorizes the National Taxpayer Advocate to appoint legal counsel within the Taxpayer Advocate Service (TAS) to report directly to the National Taxpayer Advocate. The bill also expands the authority of the National Taxpayer Advocate to take personnel actions with respect to local taxpayer advocates (located in each state) to include actions with respect to any employee of TAS.</p><p>Currently, pursuant to a Department of the Treasury order, all legal counsel whose duties include providing legal advice to any official in any office or bureau of Treasury are part of the Legal Division within Treasury and under the supervision of the General Counsel, with limited exceptions. TAS assists taxpayers in matters involving the Internal Revenue Service (IRS) and is part of the IRS, within Treasury.&nbsp;</p>",
+      "summary_crs": "<p><strong>National Taxpayer Advocate Enhancement Act of 2025 </strong></p><p>This act authorizes the National Taxpayer Advocate to appoint legal counsel within the Taxpayer Advocate Service (TAS) to report directly to the National Taxpayer Advocate. The act also expands the authority of the National Taxpayer Advocate to take personnel actions with respect to local taxpayer advocates (located in each state) to include actions with respect to any employee of TAS.</p><p>Prior to this act, pursuant to a Department of the Treasury order, all legal counsel whose duties include providing legal advice to any official in any office or bureau of Treasury were part of the Legal Division within Treasury and under the supervision of the General Counsel, with limited exceptions. TAS assists taxpayers in matters involving the Internal Revenue Service (IRS) and is part of the IRS, within Treasury.&nbsp;</p>",
       "text_url_html": "https://www.congress.gov/119/bills/hr997/BILLS-119hr997rfs.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/hr997/BILLS-119hr997rfs.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/hr997/BILLS-119hr997rfs.pdf",
@@ -589,7 +580,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [],
       "summary_crs": null,
@@ -617,7 +607,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Alternative and renewable resources",
@@ -649,7 +638,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Child health",
@@ -716,7 +704,6 @@
         "text": "Became Public Law No: 119-137."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Human rights",
@@ -749,7 +736,6 @@
         "text": "Became Public Law No: 119-138."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Department of Health and Human Services",
@@ -789,7 +775,6 @@
         "text": "Became Public Law No: 119-136."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Science, Technology, Communications",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -824,7 +809,6 @@
         "text": "Became Public Law No: 119-135."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "California",
@@ -855,7 +839,6 @@
         "text": "Became Public Law No: 119-127."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Commerce",
       "subjects": [
         "Government studies and investigations",
@@ -887,8 +870,7 @@
         "date": "2026-10-20",
         "text": "Became Public Law No: 119-125."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Social Welfare",
       "subjects": [
         "Congressional oversight",
@@ -955,7 +937,6 @@
         "text": "Became Public Law No: 119-128."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Federal-Indian relations",
@@ -990,7 +971,6 @@
         "text": "Became Public Law No: 119-129."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Commerce",
       "subjects": [
         "Civil actions and liability",
@@ -1024,7 +1004,6 @@
         "text": "Became Public Law No: 119-130."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Alaska",
@@ -1124,7 +1103,6 @@
         "text": "Became Public Law No: 119-133."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Arizona",
@@ -1157,7 +1135,6 @@
         "text": "Became Public Law No: 119-134."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Licensing and registrations",
@@ -1354,7 +1331,6 @@
         "text": "Became Public Law No: 119-121."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Arts, Culture, Religion",
       "subjects": [
         "Congressional oversight",
@@ -1452,7 +1428,6 @@
         "text": "Passed Senate with an amendment by Unanimous Consent. (consideration: CR S5297-5298)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "California",
@@ -1516,7 +1491,6 @@
         "text": "Passed Senate with an amendment and an amendment to the Title by Unanimous Consent."
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Taxation",
       "subjects": [
         "Administrative remedies",
@@ -3014,7 +2988,6 @@
         "text": "Became Public Law No: 119-117."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -3394,8 +3367,7 @@
         "date": "2026-09-18",
         "text": "Became Public Law No: 119-111."
       },
-      "outcome": "passed_senate",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "International Affairs",
       "subjects": [
         "Civil actions and liability",
