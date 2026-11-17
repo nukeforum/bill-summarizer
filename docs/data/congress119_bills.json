@@ -1,8 +1,112 @@
 {
-  "generated_at": "2026-11-16T16:16:14Z",
+  "generated_at": "2026-11-17T15:32:58Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "hr2302-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "2302",
+      "title": "Shingle Springs Band of Miwok Indians Land Transfer Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McClintock, Tom",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2025-03-24",
+      "latest_action": {
+        "date": "2026-11-16",
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5701)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Native Americans",
+      "subjects": [
+        "California",
+        "Indian lands and resources rights",
+        "Land transfers"
+      ],
+      "summary_crs": "<p><strong>Shingle Springs Band of Miwok Indians Land Transfer Act of 2025</strong></p><p>This bill takes approximately 204.14 acres&nbsp;of specified lands in El Dorado County, California, into trust for the benefit of the Shingle Springs Band of Miwok Indians.</p><p>The bill revokes a specified public land order and administratively transfers the land from the Forest Service to the Department of the Interior. (In the public land order, the land was designated for use by the Forest Service as an experiment station.)</p><p>The bill directs Interior to take the following lands into trust for the benefit of the tribe: (1) approximately 85.3 acres of federal land managed by Interior's Bureau of Land Management (which includes the land transferred&nbsp;from the Forest Service), and (2) approximately 118.84 acres of fee land held by the tribe. These combined lands, approximately 204.14 acres, shall be part of the tribe's reservation. Further, the bill prohibits gaming on the land taken into trust.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr2302/BILLS-119hr2302rs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr2302/BILLS-119hr2302rs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr2302/BILLS-119hr2302rs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2302",
+      "votes": []
+    },
+    {
+      "id": "hr7834-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "7834",
+      "title": "Safe Cloud Storage Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Lee, Laurel M.",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2026-03-05",
+      "latest_action": {
+        "date": "2026-11-16",
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5701)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Civil actions and liability",
+        "Computer security and identity theft",
+        "Crimes against children",
+        "Digital media",
+        "Domestic violence and child abuse",
+        "Evidence and witnesses",
+        "Law enforcement administration and funding",
+        "Photography and imaging",
+        "Pornography",
+        "Public contracts and procurement",
+        "Sex offenses"
+      ],
+      "summary_crs": "<p><strong>Safe Cloud Storage Act</strong></p><p>This bill limits the civil and criminal liability of vendors that contract with law enforcement agencies to provide digital storage services (e.g., cloud-based storage) for storing, maintaining, and processing child sexual abuse material (CSAM) in investigations of online child sexual exploitation.</p><p>Under current law, the National Center for Missing &amp; Exploited Children (NCMEC) receives reports of online child sexual exploitation via its CyberTipline, evaluates and prioritizes the reports, and refers the reports to law enforcement agencies to investigate. Currently, federal law limits the liability of vendors that contract directly with the NCMEC to store and transfer CSAM. However, federal law does not limit the liability of vendors that contract with law enforcement agencies to assist&nbsp;in investigations.</p><p>This bill establishes liability protections for vendors that contract with&nbsp;federal, state, and local law enforcement agencies to store, maintain, and process CSAM in investigations of online child sexual exploitation. Specifically, the bill prohibits a civil claim or criminal charge in federal or state court against such a vendor, so long as the vendor has not engaged in intentional misconduct or negligent conduct, acted with malice or reckless disregard, or acted for a purpose unrelated to its contractual duties.</p><p>The bill requires vendors to comply with cybersecurity requirements for&nbsp;CSAM that is stored, maintained, or processed. The bill also requires vendors to comply with storage requirements for CSAM that is retained as evidence.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr7834/BILLS-119hr7834eh.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr7834/BILLS-119hr7834eh.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr7834/BILLS-119hr7834eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/7834",
+      "votes": []
+    },
+    {
+      "id": "s3296-119",
+      "congress": 119,
+      "type": "s",
+      "number": "3296",
+      "title": "Improving Access to Workers’ Compensation for Injured Federal Workers Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Collins, Susan M.",
+        "party": "R",
+        "state": "ME"
+      },
+      "introduced_date": "2025-12-02",
+      "latest_action": {
+        "date": "2026-11-16",
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5701; text: CR S5701)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [
+        "Disability assistance",
+        "Employee benefits and pensions",
+        "Government employee pay, benefits, personnel management",
+        "Health personnel",
+        "Nursing",
+        "Worker safety and health"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s3296/BILLS-119s3296es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s3296/BILLS-119s3296es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s3296/BILLS-119s3296es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/3296",
+      "votes": []
+    },
     {
       "id": "s1353-119",
       "congress": 119,
@@ -159,13 +263,15 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5666)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
-      "subjects": [],
+      "subjects": [
+        "Congressional tributes",
+        "Sports and recreation facilities"
+      ],
       "summary_crs": null,
-      "text_url_html": "https://www.congress.gov/119/bills/sres834/BILLS-119sres834is.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/sres834/BILLS-119sres834is.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/sres834/BILLS-119sres834is.pdf",
+      "text_url_html": "https://www.congress.gov/119/bills/sres834/BILLS-119sres834ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres834/BILLS-119sres834ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres834/BILLS-119sres834ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/834",
       "votes": []
     },
@@ -287,7 +393,6 @@
         "text": "Became Public Law No: 119-140."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Aging",
@@ -321,7 +426,6 @@
         "text": "Became Public Law No: 119-141."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional oversight",
@@ -388,7 +492,6 @@
         "text": "Became Public Law No: 119-142."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Bankruptcy",
@@ -419,8 +522,7 @@
         "date": "2026-11-10",
         "text": "Became Public Law No: 119-139."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Taxation",
       "subjects": [
         "Federal officials",
@@ -589,9 +691,13 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "International Affairs",
-      "subjects": [],
+      "subjects": [
+        "Detention of persons",
+        "Diplomacy, foreign officials, Americans abroad",
+        "Human rights",
+        "Protest and dissent"
+      ],
       "summary_crs": null,
       "text_url_html": "https://www.congress.gov/119/bills/sres472/BILLS-119sres472ats.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/sres472/BILLS-119sres472ats.xml",
@@ -617,7 +723,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Alternative and renewable resources",
@@ -649,7 +754,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Child health",
@@ -716,7 +820,6 @@
         "text": "Became Public Law No: 119-137."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Human rights",
@@ -749,7 +852,6 @@
         "text": "Became Public Law No: 119-138."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Department of Health and Human Services",
@@ -887,8 +989,7 @@
         "date": "2026-10-20",
         "text": "Became Public Law No: 119-125."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Social Welfare",
       "subjects": [
         "Congressional oversight",
@@ -955,7 +1056,6 @@
         "text": "Became Public Law No: 119-128."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Federal-Indian relations",
@@ -1024,7 +1124,6 @@
         "text": "Became Public Law No: 119-130."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Alaska",
@@ -1124,7 +1223,6 @@
         "text": "Became Public Law No: 119-133."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Arizona",
@@ -1354,7 +1452,6 @@
         "text": "Became Public Law No: 119-121."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Arts, Culture, Religion",
       "subjects": [
         "Congressional oversight",
@@ -1516,7 +1613,6 @@
         "text": "Passed Senate with an amendment and an amendment to the Title by Unanimous Consent."
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Taxation",
       "subjects": [
         "Administrative remedies",
@@ -3014,7 +3110,6 @@
         "text": "Became Public Law No: 119-117."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
