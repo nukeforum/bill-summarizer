@@ -1,8 +1,32 @@
 {
-  "generated_at": "2026-11-13T14:48:31Z",
+  "generated_at": "2026-11-18T15:54:12Z",
   "bioguide_id": "J000298",
-  "vote_count": 684,
+  "vote_count": 686,
   "votes": [
+    {
+      "vote_id": "house-119-2-325",
+      "congress": 119,
+      "date": "2026-11-17",
+      "question": "On Motion to Suspend the Rules and Pass",
+      "result": "Passed",
+      "position": "yea",
+      "bill_id": "hr9600-119",
+      "type": "hr",
+      "number": "9600",
+      "short_title": null
+    },
+    {
+      "vote_id": "house-119-2-324",
+      "congress": 119,
+      "date": "2026-11-17",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "position": "yea",
+      "bill_id": "hr8483-119",
+      "type": "hr",
+      "number": "8483",
+      "short_title": null
+    },
     {
       "vote_id": "house-119-2-323",
       "congress": 119,

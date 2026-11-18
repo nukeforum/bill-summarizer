@@ -1,8 +1,97 @@
 {
-  "generated_at": "2026-11-17T16:21:42Z",
+  "generated_at": "2026-11-18T15:54:12Z",
   "congress": 119,
-  "vote_count": 1607,
+  "vote_count": 1610,
   "votes": [
+    {
+      "id": "house-119-2-325",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 325,
+      "date": "2026-11-17",
+      "question": "On Motion to Suspend the Rules and Pass",
+      "result": "Passed",
+      "bill_id": "hr9600-119",
+      "totals": {
+        "yea": 365,
+        "nay": 36,
+        "present": 0,
+        "not_voting": 32
+      },
+      "party_split": {
+        "yea": {
+          "D": 202,
+          "R": 163
+        },
+        "nay": {
+          "R": 36
+        },
+        "not_voting": {
+          "D": 12,
+          "I": 1,
+          "R": 19
+        }
+      },
+      "path": "votes/congress119/house-2-325.json"
+    },
+    {
+      "id": "house-119-2-324",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 324,
+      "date": "2026-11-17",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr8483-119",
+      "totals": {
+        "yea": 398,
+        "nay": 0,
+        "present": 0,
+        "not_voting": 35
+      },
+      "party_split": {
+        "yea": {
+          "D": 199,
+          "R": 199
+        },
+        "not_voting": {
+          "D": 15,
+          "I": 1,
+          "R": 19
+        }
+      },
+      "path": "votes/congress119/house-2-324.json"
+    },
+    {
+      "id": "senate-119-2-265",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 265,
+      "date": "2026-11-17",
+      "question": "On the Nomination",
+      "result": "Nomination Confirmed",
+      "bill_id": null,
+      "totals": {
+        "yea": 52,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 2
+      },
+      "party_split": {
+        "yea": {
+          "R": 52
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-265.json"
+    },
     {
       "id": "senate-119-2-264",
       "chamber": "senate",
