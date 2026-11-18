@@ -1,8 +1,128 @@
 {
-  "generated_at": "2026-11-17T16:21:42Z",
+  "generated_at": "2026-11-18T15:10:50Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "hr5254-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "5254",
+      "title": "Gateway Partnership Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Bell, Wesley",
+        "party": "D",
+        "state": "MO"
+      },
+      "introduced_date": "2025-09-10",
+      "latest_action": {
+        "date": "2026-11-17",
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5709)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Missouri",
+        "Parks, recreation areas, trails",
+        "Public-private cooperation",
+        "User charges and fees"
+      ],
+      "summary_crs": "<p><strong>Gateway Partnership Act</strong></p><p>This bill authorizes the National Park Service (NPS) to enter into a one-time agreement with the Gateway Arch Park Foundation to host private events at the Gateway Arch National Park and its buildings for a period of up to five years. The NPS manages the park, located in St. Louis, Missouri, and&nbsp;its buildings, such as the Arch Visitor Center and the Old Courthouse.</p><p>The bill outlines the terms and conditions that must be included in the agreement. The bill also requires private events hosted at the park or its buildings to be consistent with the park's purposes and compatible with NPS programs. Such events may not (1) degrade the integrity, appearance, or purposes of the park; or (2) take place during times or in locations that prevent or disrupt public use or access to the park or its buildings.</p><p>The NPS must charge a fee to cover the cost of wear and tear resulting from the private events. The NPS may recover all costs incurred as a result of the private events, including maintenance, utilities, administrative expenses, security, and personnel costs.</p><p>The bill terminates the NPS's authority to enter&nbsp;and&nbsp;carry out an agreement with the foundation seven years after the enactment of this bill.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr5254/BILLS-119hr5254rs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr5254/BILLS-119hr5254rs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr5254/BILLS-119hr5254rs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/5254",
+      "votes": []
+    },
+    {
+      "id": "hr8454-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "8454",
+      "title": "To provide for the transfer of administrative jurisdiction over certain Federal land in the State of California, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. McClintock, Tom",
+        "party": "R",
+        "state": "CA"
+      },
+      "introduced_date": "2026-04-22",
+      "latest_action": {
+        "date": "2026-11-17",
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5709)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "California",
+        "Geography and mapping",
+        "Hazardous wastes and toxic substances",
+        "Land transfers",
+        "Land use and conservation",
+        "Parks, recreation areas, trails"
+      ],
+      "summary_crs": "<p>This bill exchanges administrative jurisdiction over specified parcels of federal land between Yosemite National Park and Stanislaus National Forest in California.</p><p>By way of background, cattle are grazing on the land currently managed by the National Park Service. However, grazing on federal lands primarily occurs on lands managed by the Bureau of Land Management or the Forest Service. The transfer would allow the land with cattle grazing to be managed by the Forest Service, which has a&nbsp;multiple-use management plan that is consistent with grazing.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr8454/BILLS-119hr8454pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr8454/BILLS-119hr8454pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr8454/BILLS-119hr8454pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/8454",
+      "votes": []
+    },
+    {
+      "id": "sres908-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "908",
+      "title": "A resolution supporting the designation of the week of September 21 through September 25, 2026, as \"National Hazing Awareness Week\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Klobuchar, Amy",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2026-09-24",
+      "latest_action": {
+        "date": "2026-11-17",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5727)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Education",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres908/BILLS-119sres908is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres908/BILLS-119sres908is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres908/BILLS-119sres908is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/908",
+      "votes": []
+    },
+    {
+      "id": "sres949-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "949",
+      "title": "A resolution designating October 12, 2026, as \"National Loggers Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Baldwin, Tammy",
+        "party": "D",
+        "state": "WI"
+      },
+      "introduced_date": "2026-09-30",
+      "latest_action": {
+        "date": "2026-11-17",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5727)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres949/BILLS-119sres949is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres949/BILLS-119sres949is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres949/BILLS-119sres949is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/949",
+      "votes": []
+    },
     {
       "id": "hr2302-119",
       "congress": 119,
@@ -266,7 +386,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5666)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Congressional tributes",
@@ -397,7 +516,6 @@
         "text": "Became Public Law No: 119-140."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Aging",
@@ -431,7 +549,6 @@
         "text": "Became Public Law No: 119-141."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional oversight",
@@ -498,14 +615,13 @@
         "text": "Became Public Law No: 119-142."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Bankruptcy",
         "Debt collection",
         "Small business"
       ],
-      "summary_crs": "<p><strong>Bankruptcy Threshold Adjustment Act of 2026</strong></p><p>This bill restores changes that expired in 2024 applicable to debt limits for Subchapter V (small business reorganization) and Chapter 13 (the wage earner's plan) bankruptcies.</p><p>Specifically, the bill increases the debt limit under Subchapter&nbsp;V from approximately $3.4 million to $7.5 million and increases the cumulative debt limit under Chapter 13 from approximately $2.1 million to $2.75 million.</p><p>The bill also applies both secured and unsecured debt towards the Chapter 13 limit. (Currently, separate limits apply to secured and unsecured debt under Chapter 13 bankruptcy.)</p>",
+      "summary_crs": "<p><strong>Bankruptcy Threshold Adjustment Act</strong></p><p>This act restores changes that expired in 2024 applicable to debt limits for Subchapter V (small business reorganization) and Chapter 13 (the wage earner's plan) bankruptcies.</p><p>Specifically, the act increases the debt limit under Subchapter&nbsp;V from approximately $3.4 million to $7.5 million and increases the cumulative debt limit under Chapter 13 from approximately $2.1 million to $2.75 million.</p><p>The act also applies both secured and unsecured debt towards the Chapter 13 limit. (Currently, separate limits apply to secured and unsecured debt under Chapter 13 bankruptcy.)</p>",
       "text_url_html": "https://www.congress.gov/119/bills/hr7730/BILLS-119hr7730rds.htm",
       "text_url_xml": "https://www.congress.gov/119/bills/hr7730/BILLS-119hr7730rds.xml",
       "text_url_pdf": "https://www.congress.gov/119/bills/hr7730/BILLS-119hr7730rds.pdf",
@@ -529,8 +645,7 @@
         "date": "2026-11-10",
         "text": "Became Public Law No: 119-139."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Taxation",
       "subjects": [
         "Federal officials",
@@ -699,7 +814,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Detention of persons",
@@ -732,7 +846,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Alternative and renewable resources",
@@ -764,7 +877,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Child health",
@@ -831,7 +943,6 @@
         "text": "Became Public Law No: 119-137."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Human rights",
@@ -864,7 +975,6 @@
         "text": "Became Public Law No: 119-138."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Department of Health and Human Services",
@@ -1469,7 +1579,6 @@
         "text": "Became Public Law No: 119-121."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Arts, Culture, Religion",
       "subjects": [
         "Congressional oversight",
@@ -1631,7 +1740,6 @@
         "text": "Passed Senate with an amendment and an amendment to the Title by Unanimous Consent."
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Taxation",
       "subjects": [
         "Administrative remedies",
@@ -3093,7 +3201,6 @@
         "text": "Became Public Law No: 119-116."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Transportation and Public Works",
       "subjects": [
         "Data collection, sharing, protection",
@@ -3129,7 +3236,6 @@
         "text": "Became Public Law No: 119-117."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
