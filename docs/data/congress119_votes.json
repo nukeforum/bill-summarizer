@@ -1,8 +1,166 @@
 {
-  "generated_at": "2026-11-18T15:54:12Z",
+  "generated_at": "2026-11-19T15:58:34Z",
   "congress": 119,
-  "vote_count": 1610,
+  "vote_count": 1615,
   "votes": [
+    {
+      "id": "house-119-2-327",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 327,
+      "date": "2026-11-19",
+      "question": "On Motion to Suspend the Rules and Pass",
+      "result": "Passed",
+      "bill_id": "hr4464-119",
+      "totals": {
+        "yea": 401,
+        "nay": 0,
+        "present": 0,
+        "not_voting": 32
+      },
+      "party_split": {
+        "yea": {
+          "D": 204,
+          "R": 197
+        },
+        "not_voting": {
+          "D": 10,
+          "I": 1,
+          "R": 21
+        }
+      },
+      "path": "votes/congress119/house-2-327.json"
+    },
+    {
+      "id": "house-119-2-326",
+      "chamber": "house",
+      "session": 2,
+      "roll_number": 326,
+      "date": "2026-11-18",
+      "question": "On Motion to Suspend the Rules and Pass, as Amended",
+      "result": "Passed",
+      "bill_id": "hr9640-119",
+      "totals": {
+        "yea": 396,
+        "nay": 14,
+        "present": 0,
+        "not_voting": 23
+      },
+      "party_split": {
+        "yea": {
+          "D": 206,
+          "R": 190
+        },
+        "nay": {
+          "R": 14
+        },
+        "not_voting": {
+          "D": 8,
+          "I": 1,
+          "R": 14
+        }
+      },
+      "path": "votes/congress119/house-2-326.json"
+    },
+    {
+      "id": "senate-119-2-268",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 268,
+      "date": "2026-11-18",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": "hr2347-119",
+      "totals": {
+        "yea": 65,
+        "nay": 31,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 14,
+          "I": 1,
+          "R": 50
+        },
+        "nay": {
+          "D": 28,
+          "I": 1,
+          "R": 2
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-268.json"
+    },
+    {
+      "id": "senate-119-2-267",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 267,
+      "date": "2026-11-18",
+      "question": "On the Amendment",
+      "result": "Amendment Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 69,
+        "nay": 27,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 17,
+          "I": 1,
+          "R": 51
+        },
+        "nay": {
+          "D": 25,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-267.json"
+    },
+    {
+      "id": "senate-119-2-266",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 266,
+      "date": "2026-11-18",
+      "question": "On the Motion",
+      "result": "Motion Agreed to",
+      "bill_id": "hr2347-119",
+      "totals": {
+        "yea": 70,
+        "nay": 26,
+        "present": 0,
+        "not_voting": 4
+      },
+      "party_split": {
+        "yea": {
+          "D": 18,
+          "I": 1,
+          "R": 51
+        },
+        "nay": {
+          "D": 24,
+          "I": 1,
+          "R": 1
+        },
+        "not_voting": {
+          "D": 3,
+          "R": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-266.json"
+    },
     {
       "id": "house-119-2-325",
       "chamber": "house",
