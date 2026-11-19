@@ -1,8 +1,82 @@
 {
-  "generated_at": "2026-11-18T20:17:06Z",
+  "generated_at": "2026-11-19T20:20:30Z",
   "congress": 107,
   "votes_coverage": false,
   "bills": [
+    {
+      "id": "sjres53-107",
+      "congress": 107,
+      "type": "sjres",
+      "number": "53",
+      "title": "A joint resolution relative to the convening of the first session of the One Hundred Eighth Congress.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daschle, Thomas A.",
+        "party": "D",
+        "state": "SD"
+      },
+      "introduced_date": "2002-11-14",
+      "latest_action": {
+        "date": "2002-12-04",
+        "text": "Became Public Law No: 107-328."
+      },
+      "outcome": "enacted",
+      "policy_area": "Congress",
+      "subjects": [
+        "Congressional sessions"
+      ],
+      "summary_crs": "States that the first regular session of the One Hundred Eighth Congress begins at noon on January 7, 2003.",
+      "text_url_html": "https://www.congress.gov/107/plaws/publ328/PLAW-107publ328.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/plaws/publ328/PLAW-107publ328.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-joint-resolution/53",
+      "votes": []
+    },
+    {
+      "id": "s3156-107",
+      "congress": 107,
+      "type": "s",
+      "number": "3156",
+      "title": "Paul and Sheila Wellstone Center for Community Building Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Barkley, Dean M.",
+        "party": "I",
+        "state": "MN"
+      },
+      "introduced_date": "2002-11-14",
+      "latest_action": {
+        "date": "2002-12-02",
+        "text": "Became Public Law No: 107-316."
+      },
+      "outcome": "enacted",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Community centers",
+        "Congress",
+        "Congressional tributes",
+        "Construction costs",
+        "Economics and Public Finance",
+        "Ex-Members of Congress",
+        "Families",
+        "Government Operations and Politics",
+        "Grants-in-aid",
+        "Members of Congress (Senate)",
+        "Minnesota",
+        "Names",
+        "Nonprofit organizations",
+        "Politicians' spouses",
+        "Social Welfare",
+        "Urban affairs",
+        "Women"
+      ],
+      "summary_crs": "Paul and Sheila Wellstone Center for Community Building Act - Directs the Secretary of Housing and Urban Development to award a grant to Neighborhood House of St. Paul, Minnesota, to finance the construction of a new community center in St. Paul, to be known as the Paul and Sheila Wellstone Center for Community Building.",
+      "text_url_html": "https://www.congress.gov/107/plaws/publ316/PLAW-107publ316.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/plaws/publ316/PLAW-107publ316.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-bill/3156",
+      "votes": []
+    },
     {
       "id": "sres362-107",
       "congress": 107,
@@ -561,6 +635,44 @@
       "votes": []
     },
     {
+      "id": "sres324-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "324",
+      "title": "A resolution congratulating the National Farmers Union for 100 years of service to family farmers, ranchers, and rural communities.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Johnson, Tim",
+        "party": "D",
+        "state": "SD"
+      },
+      "introduced_date": "2002-09-09",
+      "latest_action": {
+        "date": "2002-09-12",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text:  CR S8581)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Agricultural cooperatives",
+        "Agriculture and Food",
+        "Anniversaries",
+        "Congress",
+        "Congressional tributes",
+        "Economics and Public Finance",
+        "Farmers",
+        "Housing and Community Development",
+        "Rural conditions",
+        "Rural economic development"
+      ],
+      "summary_crs": "Congratulates the National Farmers Union for a century of dedicated service to the farmers, ranchers, and rural communities of the United States.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres324/BILLS-107sres324ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres324/BILLS-107sres324ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/324",
+      "votes": []
+    },
+    {
       "id": "sres323-107",
       "congress": 107,
       "type": "sres",
@@ -596,6 +708,53 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres323/BILLS-107sres323ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/323",
+      "votes": []
+    },
+    {
+      "id": "sres300-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "300",
+      "title": "A resolution encouraging the peace process in Sri Lanka.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lugar, Richard G.",
+        "party": "R",
+        "state": "IN"
+      },
+      "introduced_date": "2002-07-09",
+      "latest_action": {
+        "date": "2002-08-01",
+        "text": "Resolution agreed to in Senate with an amendment and an amended preamble by Unanimous Consent. (consideration: CR S8025)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Civil Rights and Liberties, Minority Issues",
+        "Commemorations",
+        "Congress",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Democracy",
+        "Ethnic relations",
+        "Europe",
+        "Government Operations and Politics",
+        "Human rights",
+        "Insurgency",
+        "Law",
+        "Minorities",
+        "National liberation movements",
+        "Norway",
+        "Peace",
+        "Peace negotiations",
+        "Political violence"
+      ],
+      "summary_crs": "Recognizes that the costly military stalemate that has existed between the Government of Sri Lanka and the Liberation Tigers of Tamil Eelam can only be resolved at the negotiating table.<p>Expresses the belief that a political solution, including appropriate constitutional structures and adequate protection of minority rights and cessation of violence, is the path to a comprehensive and lasting peace in Sri Lanka.<p>Calls on all parties to negotiate in good faith with a view to finding a just and lasting political settlement to Sri Lanka's ethnic conflict while respecting Sri Lanka's territorial integrity.<p>States the willingness of the Senate in principle to see the United States lend its good offices to play a constructive role in supporting the peace process, if so desired by all parties to the conflict.<p>Calls on members of the international community to use their good offices to support the peace process and, as appropriate, lend assistance to the reconstruction of war-damaged areas of Sri Lanka and to reconciliation among all parties to the conflict.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres300/BILLS-107sres300ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres300/BILLS-107sres300ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/300",
       "votes": []
     },
     {
@@ -746,6 +905,48 @@
       "votes": []
     },
     {
+      "id": "sres296-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "296",
+      "title": "A resolution recognizing the accomplishment of Ignacy Jan Paderewski as a musician, composer, statesman, and philanthropist and recognizing the 10th Anniversary of the return of his remains to Poland.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hagel, Chuck",
+        "party": "R",
+        "state": "NE"
+      },
+      "introduced_date": "2002-06-28",
+      "latest_action": {
+        "date": "2002-07-18",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S7084)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Anniversaries",
+        "Arts, Culture, Religion",
+        "Authors and authorship",
+        "Cemeteries and funerals",
+        "Charities",
+        "Congress",
+        "Congressional tributes",
+        "Entertainers",
+        "Europe",
+        "Foreign leaders",
+        "International Affairs",
+        "Music",
+        "Poland",
+        "Social Welfare"
+      ],
+      "summary_crs": "Recognizes the accomplishments of Ignacy Jan Paderewski as a musician, composer, statesman, and philanthropist, and acknowledges his efforts in forging close Polish-American ties, on the tenth anniversary of the return of his remains to Poland.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres296/BILLS-107sres296ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres296/BILLS-107sres296ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/296",
+      "votes": []
+    },
+    {
       "id": "sres302-107",
       "congress": 107,
       "type": "sres",
@@ -856,6 +1057,53 @@
       "votes": []
     },
     {
+      "id": "sres283-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "283",
+      "title": "A resolution recognizing the successful completion of democratic elections in the Republic of Colombia.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Graham, Bob",
+        "party": "D",
+        "state": "FL"
+      },
+      "introduced_date": "2002-06-12",
+      "latest_action": {
+        "date": "2002-06-14",
+        "text": "Resolution agreed to in Senate with an amendment and with a preamble by Unanimous Consent. (text: CR S5618)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Administration of justice",
+        "Armed Forces and National Security",
+        "Civil Rights and Liberties, Minority Issues",
+        "Colombia",
+        "Commemorations",
+        "Congress",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Democracy",
+        "Drug abuse",
+        "Drug law enforcement",
+        "Drug traffic",
+        "Due process of law",
+        "Economic development",
+        "Economics and Public Finance",
+        "Foreign leaders",
+        "Government Operations and Politics",
+        "Human rights",
+        "Latin America"
+      ],
+      "summary_crs": "Congratulates: (1) the Government and people of Colombia for the successful completion of democratic elections held on May 26, 2002; (2) President-elect Alvaro Uribe Velez and Vice President-elect Francisco Santos Calderon; and (3) Colombian President Andres Pastrana for his commitment to democracy.<p>Commends all Colombian citizens and political parties for working together to take risks for democracy, to pursue national reconciliation, and to strengthen democratic traditions.<p>Supports Colombian attempts to: (1) ensure democracy, national reconciliation, and economic prosperity; (2) support human rights and the rule of law; and (3) abide by all the essential elements of representative democracy.<p>Encourages such Government and people to continue: (1) their struggle against narcotics and terrorism; and (2) to promote the professionalism of the Colombian Armed Forces and National Police and judicial and legal reforms.<p>Reaffirms the U.S. commitment to encouraging and supporting democracy, human rights, the rule of law, and peaceful development throughout the Americas.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres283/BILLS-107sres283ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres283/BILLS-107sres283ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/283",
+      "votes": []
+    },
+    {
       "id": "sres286-107",
       "congress": 107,
       "type": "sres",
@@ -887,6 +1135,138 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres286/BILLS-107sres286ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/286",
+      "votes": []
+    },
+    {
+      "id": "sres182-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "182",
+      "title": "A resolution expressing the sense of the Senate that the United States must allocate significantly more resources to combat global poverty and that the President's decision to establish the Millennium Challenge Account is a step in the right direction.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feinstein, Dianne",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2001-11-16",
+      "latest_action": {
+        "date": "2002-06-04",
+        "text": "Resolution agreed to in Senate with an amendment and an amendment to the Title and an amended preamble by Unanimous Consent. (consideration: CR S4978-4979; text as passed Senate: CR S4979; text of measure as reported in Senate: CR S4978-4979)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "American economic assistance",
+        "Bush (George W.) Administration",
+        "Commerce",
+        "Congress",
+        "Congress and foreign policy",
+        "Congressional reporting requirements",
+        "Corporations",
+        "Crime and Law Enforcement",
+        "Democracy",
+        "Developing countries",
+        "Economic development",
+        "Economic growth",
+        "Economics and Public Finance",
+        "Foreign Trade and International Finance",
+        "Foreign loans",
+        "Foundations",
+        "Government Operations and Politics",
+        "Multilateral development banks",
+        "Nongovernmental organizations"
+      ],
+      "summary_crs": "Expresses the sense of the Senate that the United States should build on the idea behind President Bush's proposal for the Millennium Challenge Account and increase foreign assistance spending by at least 25 percent for the next five years, with the goal of reaching an amount equal to or exceeding three percent of the Federal budget by 2010 to promote its humanitarian, economic, and security interests around the world.<p>Calls for the Administrator of the U.S. Agency for International Development to: (1) conduct a top-to-bottom evaluation of current foreign assistance efforts to evaluate effectiveness; (2) work with private voluntary organizations, foundations, and corporations to identify areas where increased targeted foreign assistance could help reduce poverty and to promote equitable economic growth and the development of democratic institutions; and (3) report foreign assistance recommendations to appropriate congressional committees within six months.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres182/BILLS-107sres182ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres182/BILLS-107sres182ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/182",
+      "votes": []
+    },
+    {
+      "id": "sres253-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "253",
+      "title": "A resolution reiterating the sense of the Senate regarding Anti-Semitism and religious tolerance in Europe.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Smith, Gordon H.",
+        "party": "R",
+        "state": "OR"
+      },
+      "introduced_date": "2002-04-25",
+      "latest_action": {
+        "date": "2002-06-04",
+        "text": "Resolution agreed to in Senate with an amendment and with a preamble by Unanimous Consent. (consideration: CR S4979-4981; text as passed Senate:  CR S4980-4981; text of measure as reported in Senate:  CR S4979-4980)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Antisemitism",
+        "Arab-Israeli conflict",
+        "Civil Rights and Liberties, Minority Issues",
+        "Congress",
+        "Congress and foreign policy",
+        "Congressional reporting requirements",
+        "Crime and Law Enforcement",
+        "Criminal investigation",
+        "Ethnic relations",
+        "Europe",
+        "Government Operations and Politics",
+        "Government paperwork",
+        "Government publications",
+        "Hate crimes",
+        "History",
+        "Human rights",
+        "Jewish holocaust (1939-1945)",
+        "Jews",
+        "Middle East and North Africa"
+      ],
+      "summary_crs": "Calls upon European governments to: (1) acknowledge the anti-Semitic character of the attacks on Jewish institutions in cities across Europe in the last 18 months as violations of human rights; (2) utilize their law enforcement tools to investigate the crimes and punish the perpetrators; (3) decry the rationalizing of attitudes and attacks against Jews as merely a result of popular frustration with the Middle East conflict; (4) take measures to protect and ensure the security of Jewish citizens and institutions; and (5) make a concerted effort to cultivate an atmosphere of cooperation and reconciliation among the Jewish and non-Jewish residents of Europe.<p>Expresses the sense of the Senate that: (1) Congress and the Administration must raise this issue in bilateral contacts; (2) the State Department's Annual Country Reports on Human Rights should document this phenomenon worldwide; and (3) the Commission on International Religious Freedom should continue to document and report on this phenomenon.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres253/BILLS-107sres253ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres253/BILLS-107sres253ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/253",
+      "votes": []
+    },
+    {
+      "id": "sres274-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "274",
+      "title": "A resolution expressing the sense of the Senate concerning the 2002 World Cup and co-hosts Republic of Korea and Japan.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daschle, Thomas A.",
+        "party": "D",
+        "state": "SD"
+      },
+      "introduced_date": "2002-05-22",
+      "latest_action": {
+        "date": "2002-05-23",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S4880-4881; text: CR S4881)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Commemorations",
+        "Congress",
+        "Congressional tributes",
+        "East Asia",
+        "Foreign leaders",
+        "International cooperation",
+        "Japan",
+        "Soccer",
+        "South Korea",
+        "Sports and Recreation"
+      ],
+      "summary_crs": "Declares that Congress: (1) appreciates the mutually beneficial relationship between the United States and the Republic of Korea and the United States and Japan; (2) commends the Korea/Japan 2002 Federation International Football Association (FIFA) World Cup organizers for their significant preparations for a successful World Cup; and (3) recognizes and applauds the cooperation of the President of the Republic of Korea, Kim Dae-Jung, and the Prime Minister of Japan, Junichiro Koizumi, in hosting the World Cup competition.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres274/BILLS-107sres274ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres274/BILLS-107sres274ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/274",
       "votes": []
     },
     {
@@ -1255,6 +1635,100 @@
       "votes": []
     },
     {
+      "id": "sres205-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "205",
+      "title": "A resolution urging the Government of Ukraine to ensure a democratic, transparent, and fair election process leading up to the March 31, 2002, parliamentary elections.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Campbell, Ben Nighthorse",
+        "party": "R",
+        "state": "CO"
+      },
+      "introduced_date": "2002-02-07",
+      "latest_action": {
+        "date": "2002-03-20",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration:  CR S2189-2190; text as passed Senate:  CR S2189-2190)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Administration of justice",
+        "Administrative remedies",
+        "Ballots",
+        "Civil Rights and Liberties, Minority Issues",
+        "Contested elections",
+        "Democracy",
+        "Due process of law",
+        "Election Day",
+        "Election administration",
+        "Europe",
+        "Fines (Penalties)",
+        "Freedom of the press",
+        "Government Operations and Politics",
+        "Human rights",
+        "Law",
+        "Parliamentary government",
+        "Political advertising",
+        "Political participation",
+        "Political parties"
+      ],
+      "summary_crs": "Expresses support for the efforts of the Ukrainian people to promote democracy, the rule of law, and respect for human rights in Ukraine.<p>Urges the Government of Ukraine to: (1) enforce impartially the Law on Elections of People's Deputies of Ukraine, signed by President Leonid Kuchma on October 30, 2001; and (2) meet its commitments on democratic elections, as delineated in the 1990 Copenhagen Document of the Organization for Security and Cooperation in Europe (OSCE), with respect to the campaign period and election day; and (3) address issues identified by the Office of Democratic Institutions and Human Rights (ODIHR) of OSCE in its final report on the 1999 presidential election, such as state interference in the campaign and pressure on the media.<p>Calls upon the Ukrainian Government to allow election monitors from the ODIHR, other participating OSCE states, and foreign and domestic private institutions and organizations full access to all aspects of the parliamentary election process.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres205/BILLS-107sres205ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres205/BILLS-107sres205ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/205",
+      "votes": []
+    },
+    {
+      "id": "sres213-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "213",
+      "title": "A resolution condemning human rights violations in Chechnya and urging a political solution to the conflict.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wellstone, Paul D.",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2002-02-28",
+      "latest_action": {
+        "date": "2002-03-20",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (consideration:  CR S2190-2191; text as passed Senate:  CR S2190-2191)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "American military assistance",
+        "Armed Forces and National Security",
+        "Central Asia",
+        "Civil Rights and Liberties, Minority Issues",
+        "Crime and Law Enforcement",
+        "Criminal justice information",
+        "Deportation",
+        "Displaced persons",
+        "Evidence (Law)",
+        "Exchange of persons programs",
+        "Families",
+        "Foreign leaders",
+        "Government Operations and Politics",
+        "Human rights",
+        "Immigration",
+        "Insurgency",
+        "Intelligence officers",
+        "International relief",
+        "Law"
+      ],
+      "summary_crs": "Expresses the sense of the Senate that: (1) the war on terrorism does not excuse, and is undermined by, abuses by Russian security forces against the civilian population in Chechnya; and (2) the Government of the Russian Federation and the elected leadership of the Chechen Government should seek a negotiated settlement.<p>Calls for the President of the Russian Federation to: (1) act to end and to investigate human rights violations by Russian soldiers in Chechnya and to initiate prosecutions against those accused; (2) provide access into and around Chechnya by international monitors and humanitarian organizations to report on the situation, investigate alleged atrocities, and distribute assistance; and (3) ensure that refugees and displaced persons in the North Caucasus are registered in accordance with Russian and international law, receive adequate assistance, and are not forced against their will to return to Chechnya.<p>Urges the President of the United States to: (1) ensure that no security forces or intelligence units that are the recipients of U.S. assistance or participants in joint operations, exchanges, or training with U.S. or North Atlantic Treaty Organization forces, are implicated in abuses; (2) seek information from the Russian Federation Government on investigations of reported human rights abuses in Chechnya and prosecutions against individuals accused of those abuses; (3) promote peace negotiations between the Government of the Russian Federation and the elected leadership of the Chechen Government; and (4) re-examine the status of Chechen refugees.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres213/BILLS-107sres213ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres213/BILLS-107sres213ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/213",
+      "votes": []
+    },
+    {
       "id": "sres227-107",
       "congress": 107,
       "type": "sres",
@@ -1457,6 +1931,42 @@
       "votes": []
     },
     {
+      "id": "sjres31-107",
+      "congress": 107,
+      "type": "sjres",
+      "number": "31",
+      "title": "A joint resolution suspending certain provisions of law pursuant to section 258(a)(2) of the Balanced Budget and Emergency Deficit Control Act of 1985.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daschle, Thomas A.",
+        "party": "D",
+        "state": "SD"
+      },
+      "introduced_date": "2002-02-07",
+      "latest_action": {
+        "date": "2002-02-14",
+        "text": "Failed of passage in Senate by Voice Vote. (consideration: CR S877)"
+      },
+      "outcome": "failed",
+      "policy_area": "Economics and Public Finance",
+      "subjects": [
+        "Business cycles",
+        "Congress",
+        "Congressional budget process",
+        "Deficit reduction",
+        "Economic growth",
+        "Economic statistics",
+        "Federal budgets",
+        "Government spending reductions"
+      ],
+      "summary_crs": "See summary of: S.J.Res. 28",
+      "text_url_html": "https://www.congress.gov/107/bills/sjres31/BILLS-107sjres31rs.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sjres31/BILLS-107sjres31rs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-joint-resolution/31",
+      "votes": []
+    },
+    {
       "id": "sres210-107",
       "congress": 107,
       "type": "sres",
@@ -1556,6 +2066,42 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres203/BILLS-107sres203ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/203",
+      "votes": []
+    },
+    {
+      "id": "hr3392-107",
+      "congress": 107,
+      "type": "hr",
+      "number": "3392",
+      "title": "To name the national cemetery in Saratoga, New York, as the Gerald B.H. Solomon Saratoga National Cemetery, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Hastert, J. Dennis",
+        "party": "R",
+        "state": "IL"
+      },
+      "introduced_date": "2001-12-04",
+      "latest_action": {
+        "date": "2002-01-24",
+        "text": "Became Public Law No: 107-136."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Cemeteries and funerals",
+        "Commemorations",
+        "Congress",
+        "Congressional tributes",
+        "Ex-Members of Congress",
+        "Members of Congress (House)",
+        "Names",
+        "New York State"
+      ],
+      "summary_crs": "Designates the national cemetery in Saratoga, New York, as the Gerald B. H. Solomon Saratoga National Cemetery. Directs the Secretary of Veterans Affairs to provide for the placement therein of a suitable memorial to honor Solomon's service to the United States.",
+      "text_url_html": "https://www.congress.gov/107/plaws/publ136/PLAW-107publ136.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/plaws/publ136/PLAW-107publ136.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/house-bill/3392",
       "votes": []
     },
     {
@@ -1904,6 +2450,78 @@
       "votes": []
     },
     {
+      "id": "sres174-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "174",
+      "title": "A resolution expressing appreciation to the United Kingdom for its solidarity and leadership as an ally of the United States and reaffirming the special relationship between the two countries.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Miller, Zell",
+        "party": "D",
+        "state": "GA"
+      },
+      "introduced_date": "2001-10-30",
+      "latest_action": {
+        "date": "2001-11-15",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S11922-11923; text of measure as passed Senate: CR S11922-11923)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Alliances",
+        "Armed Forces and National Security",
+        "Commemorations",
+        "Congress",
+        "Congressional tributes",
+        "Europe",
+        "History",
+        "United Kingdom"
+      ],
+      "summary_crs": "Extends the Senate's appreciation to the United Kingdom for its unwavering solidarity and leadership as an ally of the United States.<p>Reaffirms the special relationship of history, shared values, and common strategic interests that the United States enjoys with the United Kingdom.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres174/BILLS-107sres174ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres174/BILLS-107sres174ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/174",
+      "votes": []
+    },
+    {
+      "id": "sjres28-107",
+      "congress": 107,
+      "type": "sjres",
+      "number": "28",
+      "title": "A joint resolution suspending certain provisions of law pursuant to section 258(a)(2) of the Balanced Budget and Emergency Deficit Control Act of 1985.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daschle, Thomas A.",
+        "party": "D",
+        "state": "SD"
+      },
+      "introduced_date": "2001-11-02",
+      "latest_action": {
+        "date": "2001-11-13",
+        "text": "Failed of passage in Senate by Yea-Nay Vote. 1 - 99. Record Vote Number: 336. (consideration: CR S11711)"
+      },
+      "outcome": "failed",
+      "policy_area": "Economics and Public Finance",
+      "subjects": [
+        "Business cycles",
+        "Congress",
+        "Congressional budget process",
+        "Deficit reduction",
+        "Economic growth",
+        "Economic statistics",
+        "Federal budgets",
+        "Government spending reductions"
+      ],
+      "summary_crs": "Declares that: (1) certain conditions under the Balanced Budget and Emergency Deficit Control Act of 1985 concerning low or negative economic growth for two consecutive quarters have been met; and (2) sequestration procedures under specified provisions of such Act and the Congressional Budget and Impoundment Control Act of 1974 are suspended.",
+      "text_url_html": "https://www.congress.gov/107/bills/sjres28/BILLS-107sjres28rs.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sjres28/BILLS-107sjres28rs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-joint-resolution/28",
+      "votes": []
+    },
+    {
       "id": "sres177-107",
       "congress": 107,
       "type": "sres",
@@ -2061,6 +2679,53 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres168/BILLS-107sres168ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/168",
+      "votes": []
+    },
+    {
+      "id": "sjres22-107",
+      "congress": 107,
+      "type": "sjres",
+      "number": "22",
+      "title": "A joint resolution expressing the sense of the Senate and House of Representatives regarding the terrorist attacks launched against the Unites States on September 11, 2001.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daschle, Thomas A.",
+        "party": "D",
+        "state": "SD"
+      },
+      "introduced_date": "2001-09-12",
+      "latest_action": {
+        "date": "2001-09-18",
+        "text": "Became Public Law No: 107-39."
+      },
+      "outcome": "enacted",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [
+        "Air piracy",
+        "Armed Forces and National Security",
+        "Bombings",
+        "Commemorations",
+        "Commercial aircraft",
+        "Congress",
+        "Congress and foreign policy",
+        "Congressional tributes",
+        "Congressional-Presidential relations",
+        "Criminal investigation",
+        "Defense budgets",
+        "Department of Defense",
+        "Disaster relief",
+        "EBB Terrorism",
+        "Economics and Public Finance",
+        "Emergency Management",
+        "Families",
+        "Federal installations",
+        "Federal office buildings"
+      ],
+      "summary_crs": "Condemns the terrorists who attacked the United States on September 11, 2001, as well as their sponsors.<p>Extends condolences to the victims and their families and commends the heroic actions of the rescue workers, volunteers, and State and local officials who responded.<p>Declares that the United States is entitled under international law to respond to these attacks.<p>Expresses: (1) thanks to those foreign leaders and individuals who have expressed solidarity with the United States in the aftermath of the attacks and asks them to continue to stand with the United States in the war against international terrorism; (2) a commitment to support increased resources in the war to eradicate terrorism; and (3) support for the determination of the President to bring to justice and punish the perpetrators of these attacks and their sponsors.<p>Declares September 12, 2001, to be a National Day of Unity and Mourning.",
+      "text_url_html": "https://www.congress.gov/107/plaws/publ39/PLAW-107publ39.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/plaws/publ39/PLAW-107publ39.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-joint-resolution/22",
       "votes": []
     },
     {
@@ -2341,6 +3006,89 @@
       "votes": []
     },
     {
+      "id": "sres107-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "107",
+      "title": "A resolution congratulating the people of Peru on the occasion of their democratic elections on June 3, 2001.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Helms, Jesse",
+        "party": "R",
+        "state": "NC"
+      },
+      "introduced_date": "2001-06-08",
+      "latest_action": {
+        "date": "2001-06-25",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S6865-6866)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Administration of justice",
+        "Armed Forces and National Security",
+        "Arms sales",
+        "Civil Rights and Liberties, Minority Issues",
+        "Commemorations",
+        "Congress",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Democracy",
+        "Drug abuse",
+        "Drug law enforcement",
+        "Drug traffic",
+        "Economic development",
+        "Economics and Public Finance",
+        "Foreign Trade and International Finance",
+        "Foreign leaders",
+        "Fugitives from justice",
+        "Government Operations and Politics",
+        "Human rights"
+      ],
+      "summary_crs": "Congratulates: (1) the people of Peru for the successful elections held on April 8 and June 3, 2001; (2) Alejandro Toledo for his election as President; (3) Valentin Paniagua, current President, for his commitment to ensuring a stable and peaceful transition; and (4) the Organization of American States Electoral Observer Mission for its service in promoting representative democracy by working to ensure free and fair elections.<p>Calls for cooperation between the governments of the United States and Peru to: (1) promote the strengthening of democratic institutions and the rule of law in Peru, economic development and an improved quality of life for citizens of both countries, and democracy and respect for human rights; (2) confront common threats; and (3) bring to justice former Peruvian officials involved in narcotics and arms trafficking or other illicit activities.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres107/BILLS-107sres107ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres107/BILLS-107sres107ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/107",
+      "votes": []
+    },
+    {
+      "id": "sres88-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "88",
+      "title": "A resolution expressing the sense of the Senate on the importance of membership of the United States on the United Nations Human Rights Commission.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kennedy, Edward M.",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2001-05-14",
+      "latest_action": {
+        "date": "2001-06-19",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S6459-6460; text: CR S6460)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Civil Rights and Liberties, Minority Issues",
+        "Europe",
+        "Government Operations and Politics",
+        "Human rights",
+        "International cooperation",
+        "President and foreign policy",
+        "United Nations",
+        "United Nations delegations"
+      ],
+      "summary_crs": "Expresses the sense of the Senate that the Administration should work with the European allies of the United States and other nations to restore U.S. membership on the United Nations Human Rights Commission.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres88/BILLS-107sres88ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres88/BILLS-107sres88ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/88",
+      "votes": []
+    },
+    {
       "id": "sres110-107",
       "congress": 107,
       "type": "sres",
@@ -2441,6 +3189,69 @@
       "votes": []
     },
     {
+      "id": "sres102-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "102",
+      "title": "A resolution notifying the President of the United States of the election of a President pro tempore.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daschle, Thomas A.",
+        "party": "D",
+        "state": "SD"
+      },
+      "introduced_date": "2001-06-06",
+      "latest_action": {
+        "date": "2001-06-06",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment by Voice Vote. (consideration: CR S5844; text as passed Senate: CR S5844; text of measure as introduced: CR S5904)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Congressional-Presidential relations",
+        "Government Operations and Politics",
+        "Members of Congress (Senate)",
+        "Senate leadership",
+        "Senate rules and procedure"
+      ],
+      "summary_crs": "Notifies the President of the election of Robert C. Byrd of West Virginia as President pro tempore of the Senate.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres102/BILLS-107sres102is.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres102/BILLS-107sres102is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/102",
+      "votes": []
+    },
+    {
+      "id": "sres104-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "104",
+      "title": "A resolution electing Martin P. Paone of Virginia as Secretary for the Majority of the Senate.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daschle, Thomas A.",
+        "party": "D",
+        "state": "SD"
+      },
+      "introduced_date": "2001-06-06",
+      "latest_action": {
+        "date": "2001-06-06",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment by Voice Vote. (consideration: CR S5844; text as passed Senate: CR S5844; text of measure as introduced: CR S5904)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Congressional officers",
+        "Senate"
+      ],
+      "summary_crs": "Elects Martin P. Paone of Virginia as the Secretary for the Majority of the Senate.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres104/BILLS-107sres104is.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres104/BILLS-107sres104is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/104",
+      "votes": []
+    },
+    {
       "id": "sres93-107",
       "congress": 107,
       "type": "sres",
@@ -2476,6 +3287,96 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres93/BILLS-107sres93ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/93",
+      "votes": []
+    },
+    {
+      "id": "sres80-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "80",
+      "title": "A resolution honoring  the \"Whidbey 24\" for their professionalism, bravery, and courage.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Murray, Patty",
+        "party": "D",
+        "state": "WA"
+      },
+      "introduced_date": "2001-05-02",
+      "latest_action": {
+        "date": "2001-05-09",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text:  CR S4582)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Air force personnel",
+        "Aircraft pilots",
+        "Armed Forces and National Security",
+        "Aviation safety",
+        "China",
+        "Congress",
+        "Congressional tributes",
+        "Detention of persons",
+        "East Asia",
+        "Fighter aircraft",
+        "International Affairs",
+        "Marines",
+        "Naval bases",
+        "Naval personnel",
+        "Reconnaissance aircraft",
+        "Repatriation",
+        "Transportation and Public Works",
+        "Washington State"
+      ],
+      "summary_crs": "Expresses relief at the release from detention in the People's Republic of China and safe return of the Whidbey 24 (the crew members of an EP-3 aircraft stationed at Whidbey Island Naval Air Station in Washington (State)) and shares in their families' joy. Applauds them for risking their lives to defend our Nation and praises them for their professionalism and bravery. Acknowledges the sacrifices made every day by the members of the Nation's armed forces as they defend and preserve our Nation.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres80/BILLS-107sres80ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres80/BILLS-107sres80ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/80",
+      "votes": []
+    },
+    {
+      "id": "sres81-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "81",
+      "title": "A resolution commending the members of the United States mission in the People's Republic of China for their persistence, devotion to duty, sacrifice, and success in obtaining the safe repatriation to the United States of the crew of the Navy EP-3E ARIES II aircraft who had been detained in China.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Helms, Jesse",
+        "party": "R",
+        "state": "NC"
+      },
+      "introduced_date": "2001-05-03",
+      "latest_action": {
+        "date": "2001-05-09",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text:  CR S4584)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Air force personnel",
+        "Armed Forces and National Security",
+        "Aviation safety",
+        "China",
+        "Congress",
+        "Congressional tributes",
+        "Detention of persons",
+        "East Asia",
+        "Embassies",
+        "Fighter aircraft",
+        "International Affairs",
+        "Marines",
+        "Naval personnel",
+        "Reconnaissance aircraft",
+        "Repatriation",
+        "Transportation and Public Works"
+      ],
+      "summary_crs": "Commends the members of the United States mission in the People's Republic of China and other responsible officials of the Departments of State and Defense for their outstanding performance in obtaining the safe repatriation to the United States of the crew of the Navy EP-3E ARIES II aircraft.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres81/BILLS-107sres81ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres81/BILLS-107sres81ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/81",
       "votes": []
     },
     {
@@ -2551,6 +3452,48 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres77/BILLS-107sres77ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/77",
+      "votes": []
+    },
+    {
+      "id": "sres60-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "60",
+      "title": "A resolution urging the immediate release of Kosovar Albanians wrongfully imprisoned in Serbia, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Smith, Gordon H.",
+        "party": "R",
+        "state": "OR"
+      },
+      "introduced_date": "2001-03-14",
+      "latest_action": {
+        "date": "2001-04-06",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S3766-3767; text as passed Senate: CR S3767)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Albanians",
+        "Civil Rights and Liberties, Minority Issues",
+        "Dissenters",
+        "Europe",
+        "European Union",
+        "Government Operations and Politics",
+        "Human rights",
+        "International cooperation",
+        "Kosovo",
+        "Political persecution",
+        "Political prisoners",
+        "Prisoners",
+        "Serbia",
+        "Yugoslavia"
+      ],
+      "summary_crs": "Calls on the Federal Republic of Yugoslavia (FRY) and Serbian authorities to provide a complete and precise accounting of all Kosovar Albanians held in any Serbian prison or other detention facility.<p>Urges: (1) the immediate release of all Kosovar Albanians wrongfully held in Serbia; and (2) the European Union and all countries to act collectively with the United States in exerting pressure on the Government of the FRY and of Serbia to release all such prisoners.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres60/BILLS-107sres60ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres60/BILLS-107sres60ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/60",
       "votes": []
     },
     {
@@ -2659,6 +3602,44 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres67/BILLS-107sres67ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/67",
+      "votes": []
+    },
+    {
+      "id": "sres22-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "22",
+      "title": "A resolution urging the appropriate representative of the United States to the United Nations Commission on Human Rights to introduce at the annual meeting of the Commission a resolution calling upon the Peoples Republic of China to end its human rights violations in China and Tibet, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hutchinson, Tim",
+        "party": "R",
+        "state": "AR"
+      },
+      "introduced_date": "2001-02-14",
+      "latest_action": {
+        "date": "2001-03-20",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (text: CR S2601)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "China",
+        "Civil Rights and Liberties, Minority Issues",
+        "Conferences",
+        "East Asia",
+        "Europe",
+        "Human rights",
+        "Switzerland",
+        "Tibet",
+        "Treaties",
+        "United Nations"
+      ],
+      "summary_crs": "Calls for the United States, at the 57th Session of the United Nations Human Rights Commission in Geneva, Switzerland, to solicit co-sponsorship for, and take the lead in organizing multilateral support to obtain passage of, a resolution calling upon the Government of the People's Republic of China to end its human rights abuses in China and Tibet.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres22/BILLS-107sres22ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres22/BILLS-107sres22ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/22",
       "votes": []
     },
     {
@@ -2794,6 +3775,49 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres28/BILLS-107sres28ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/28",
+      "votes": []
+    },
+    {
+      "id": "sres18-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "18",
+      "title": "A resolution expressing sympathy for the victims of the devastating earthquake that struck El Salvador on January 13, 2001.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Landrieu, Mary L.",
+        "party": "D",
+        "state": "LA"
+      },
+      "introduced_date": "2001-02-06",
+      "latest_action": {
+        "date": "2001-02-08",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S1234; text as passed Senate: CR S1234)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "American economic assistance",
+        "Central America",
+        "Commemorations",
+        "Congress",
+        "Congressional tributes",
+        "Disaster relief",
+        "Earthquakes",
+        "Economics and Public Finance",
+        "El Salvador",
+        "Emergency Management",
+        "Environmental Protection",
+        "International relief",
+        "Latin America",
+        "Public Lands and Natural Resources",
+        "Sustainable development"
+      ],
+      "summary_crs": "Expresses: (1) sympathy for the people of El Salvador and other Central American countries for the losses suffered as a result of the January 13, 2001, earthquake; and (2) support for disaster assistance being provided by the United States Agency for International Development and other  relief agencies. Encourages a continued commitment by the United States and other countries to the long-term, sustainable development of El Salvador.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres18/BILLS-107sres18ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres18/BILLS-107sres18ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/18",
       "votes": []
     },
     {
