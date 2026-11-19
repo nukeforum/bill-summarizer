@@ -1,8 +1,103 @@
 {
-  "generated_at": "2026-11-18T15:54:12Z",
+  "generated_at": "2026-11-19T15:18:49Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "hr2478-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "2478",
+      "title": "Financial Exploitation Prevention Act of 2025",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Wagner, Ann",
+        "party": "R",
+        "state": "MO"
+      },
+      "introduced_date": "2025-03-27",
+      "latest_action": {
+        "date": "2026-11-18",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Finance and Financial Sector",
+      "subjects": [
+        "Administrative law and regulatory procedures",
+        "Congressional oversight",
+        "Crime victims",
+        "Fraud offenses and financial crimes",
+        "Government information and archives",
+        "Government studies and investigations",
+        "Securities",
+        "Securities and Exchange Commission (SEC)"
+      ],
+      "summary_crs": "<p><strong>Financial Exploitation Prevention Act of 2025</strong></p><p>This bill establishes procedures for delaying the redemption of certain securities if an investment company or agent believes&nbsp;that an older individual or an individual with certain impairments has been financially exploited.</p><p>Specifically, the bill allows for the delay of the redemption of a security issued by an open-end investment management company and serviced by a transfer agent&nbsp;if the company or agent reasonably believes the redemption involves the financial exploitation of an individual (1) age 65 or older, or (2) age 18 or older who is unable to protect his or her own interests due to a mental or physical impairment.&nbsp;(Open-end investment management companies offer securities in pooled investment vehicles such as mutual funds. Transfer agents facilitate certain transactions for corporations and investment companies, including dividend distribution and change of securities ownership.)</p><p>The company may initially delay the redemption for up to 15 days and, upon making a determination of exploitation, may delay the redemption an additional 10 days. A state regulator, appropriate administrative agency, or court may extend this period.&nbsp;In the event of delay, the company must hold the amounts related to the redemption in a demand deposit account.&nbsp;The bill also establishes notification requirements.&nbsp;</p><p>The bill requires the registered open-end investment company and transfer agent to notify the Securities and Exchange Commission (SEC) if they elect to comply with the procedures established under this bill.&nbsp;</p><p>Additionally, the SEC must make recommendations to address the financial exploitation of these adults.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr2478/BILLS-119hr2478rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr2478/BILLS-119hr2478rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr2478/BILLS-119hr2478rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2478",
+      "votes": [
+        {
+          "id": "house-119-2-227",
+          "chamber": "house",
+          "session": 2,
+          "roll_number": 227,
+          "date": "2026-06-25",
+          "question": "On Motion to Suspend the Rules and Pass, as Amended",
+          "result": "Passed",
+          "bill_id": "hr2478-119",
+          "totals": {
+            "yea": 414,
+            "nay": 2,
+            "present": 0,
+            "not_voting": 14
+          },
+          "party_split": {
+            "yea": {
+              "D": 207,
+              "I": 1,
+              "R": 206
+            },
+            "nay": {
+              "R": 2
+            },
+            "not_voting": {
+              "D": 5,
+              "R": 9
+            }
+          },
+          "path": "votes/congress119/house-2-227.json"
+        }
+      ]
+    },
+    {
+      "id": "s4445-119",
+      "congress": 119,
+      "type": "s",
+      "number": "4445",
+      "title": "Veterans Protection from Fraud Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cortez Masto, Catherine",
+        "party": "D",
+        "state": "NV"
+      },
+      "introduced_date": "2026-04-30",
+      "latest_action": {
+        "date": "2026-11-18",
+        "text": "Passed Senate without amendment by Voice Vote."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Crime and Law Enforcement",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s4445/BILLS-119s4445es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s4445/BILLS-119s4445es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s4445/BILLS-119s4445es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/4445",
+      "votes": []
+    },
     {
       "id": "hr5254-119",
       "congress": 119,
@@ -89,13 +184,12 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5727)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Education",
       "subjects": [],
       "summary_crs": null,
-      "text_url_html": "https://www.congress.gov/119/bills/sres908/BILLS-119sres908is.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/sres908/BILLS-119sres908is.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/sres908/BILLS-119sres908is.pdf",
+      "text_url_html": "https://www.congress.gov/119/bills/sres908/BILLS-119sres908ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres908/BILLS-119sres908ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres908/BILLS-119sres908ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/908",
       "votes": []
     },
@@ -117,13 +211,12 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5727)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [],
       "summary_crs": null,
-      "text_url_html": "https://www.congress.gov/119/bills/sres949/BILLS-119sres949is.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/sres949/BILLS-119sres949is.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/sres949/BILLS-119sres949is.pdf",
+      "text_url_html": "https://www.congress.gov/119/bills/sres949/BILLS-119sres949ats.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres949/BILLS-119sres949ats.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres949/BILLS-119sres949ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/949",
       "votes": []
     },
@@ -390,7 +483,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5666)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Congressional tributes",
@@ -521,7 +613,6 @@
         "text": "Became Public Law No: 119-140."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Aging",
@@ -530,10 +621,10 @@
         "Health technology, devices, supplies",
         "Medicare"
       ],
-      "summary_crs": "<p><strong>Choices for Increased Mobility Act of 2025</strong></p><p>This bill requires the Centers for Medicare &amp; Medicaid Services (CMS) to establish specific billing codes under Medicare for certain materials used in ultralightweight manual wheelchairs.</p><p>Specifically, the CMS must establish at least two billing codes for the base of the wheelchair, with at least one code for a base with titanium or carbon fiber construction material and at least one code for a base without these materials. Suppliers receive the same payment under Medicare for these wheelchairs as would otherwise apply, but may bill beneficiaries for any difference between the payment and the actual charge for the wheelchair. The CMS may require suppliers to inform beneficiaries of their potential financial liability in these cases.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr1703/BILLS-119hr1703rfs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr1703/BILLS-119hr1703rfs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr1703/BILLS-119hr1703rfs.pdf",
+      "summary_crs": "<p><strong>Choices for Increased Mobility Act of 2026</strong></p><p>This act requires the Centers for Medicare &amp; Medicaid Services (CMS) to establish specific billing codes under Medicare for certain materials used in ultralightweight manual wheelchairs.</p><p>Specifically, the CMS must establish at least two billing codes for the base of the wheelchair, with at least one code for a base with titanium or carbon fiber construction material and at least one code for a base without these materials. Suppliers receive the same payment under Medicare for these wheelchairs as would otherwise apply, but may bill beneficiaries for any difference between the payment and the actual charge for the wheelchair. The CMS may require suppliers to inform beneficiaries of their potential financial liability in these cases.</p>",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ140/PLAW-119publ140.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ140/PLAW-119publ140_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ140/PLAW-119publ140.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1703",
       "votes": []
     },
@@ -555,7 +646,6 @@
         "text": "Became Public Law No: 119-141."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional oversight",
@@ -566,9 +656,9 @@
         "World history"
       ],
       "summary_crs": "<p><strong>America's National Churchill Museum National Historic Landmark Act</strong></p><p>This bill designates the America’s National Churchill Museum, including the Winston Churchill Memorial, located at Westminster College in Fulton, Missouri, as the America’s National Churchill Museum National Historic Landmark. (Former British Prime Minister Winston Churchill gave a speech titled <em>The Sinews of Peace</em>, also widely known as the Iron Curtain Speech, at the college in 1946.)</p><p>The bill permits the Department of the Interior to enter into cooperative agreements with public and private entities for the purposes of protecting historic resources at the landmark and providing educational and interpretive facilities for the public. Interior may provide technical and financial assistance to partner entities.&nbsp;</p><p>The bill also directs Interior to conduct a special resource study to evaluate the national significance of the landmark and to determine the suitability and feasibility of designating it as a unit of the National Park System. The study must consider alternatives to that designation for the preservation, protection, and interpretation of the landmark, and must include cost estimates associated with identified alternatives.</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr1945/BILLS-119hr1945rds.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr1945/BILLS-119hr1945rds.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr1945/BILLS-119hr1945rds.pdf",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ141/PLAW-119publ141.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ141/PLAW-119publ141_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ141/PLAW-119publ141.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1945",
       "votes": []
     },
@@ -622,7 +712,6 @@
         "text": "Became Public Law No: 119-142."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Bankruptcy",
@@ -630,9 +719,9 @@
         "Small business"
       ],
       "summary_crs": "<p><strong>Bankruptcy Threshold Adjustment Act</strong></p><p>This act restores changes that expired in 2024 applicable to debt limits for Subchapter V (small business reorganization) and Chapter 13 (the wage earner's plan) bankruptcies.</p><p>Specifically, the act increases the debt limit under Subchapter&nbsp;V from approximately $3.4 million to $7.5 million and increases the cumulative debt limit under Chapter 13 from approximately $2.1 million to $2.75 million.</p><p>The act also applies both secured and unsecured debt towards the Chapter 13 limit. (Currently, separate limits apply to secured and unsecured debt under Chapter 13 bankruptcy.)</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr7730/BILLS-119hr7730rds.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr7730/BILLS-119hr7730rds.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr7730/BILLS-119hr7730rds.pdf",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ142/PLAW-119publ142.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ142/PLAW-119publ142_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ142/PLAW-119publ142.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/7730",
       "votes": []
     },
@@ -653,8 +742,7 @@
         "date": "2026-11-10",
         "text": "Became Public Law No: 119-139."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Taxation",
       "subjects": [
         "Federal officials",
@@ -662,9 +750,9 @@
         "Tax administration and collection, taxpayers"
       ],
       "summary_crs": "<p><strong>National Taxpayer Advocate Enhancement Act of 2025 </strong></p><p>This act authorizes the National Taxpayer Advocate to appoint legal counsel within the Taxpayer Advocate Service (TAS) to report directly to the National Taxpayer Advocate. The act also expands the authority of the National Taxpayer Advocate to take personnel actions with respect to local taxpayer advocates (located in each state) to include actions with respect to any employee of TAS.</p><p>Prior to this act, pursuant to a Department of the Treasury order, all legal counsel whose duties include providing legal advice to any official in any office or bureau of Treasury were part of the Legal Division within Treasury and under the supervision of the General Counsel, with limited exceptions. TAS assists taxpayers in matters involving the Internal Revenue Service (IRS) and is part of the IRS, within Treasury.&nbsp;</p>",
-      "text_url_html": "https://www.congress.gov/119/bills/hr997/BILLS-119hr997rfs.htm",
-      "text_url_xml": "https://www.congress.gov/119/bills/hr997/BILLS-119hr997rfs.xml",
-      "text_url_pdf": "https://www.congress.gov/119/bills/hr997/BILLS-119hr997rfs.pdf",
+      "text_url_html": "https://www.congress.gov/119/plaws/publ139/PLAW-119publ139.htm",
+      "text_url_xml": "https://www.congress.gov/119/plaws/publ139/PLAW-119publ139_uslm.xml",
+      "text_url_pdf": "https://www.congress.gov/119/plaws/publ139/PLAW-119publ139.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/997",
       "votes": [
         {
@@ -823,7 +911,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Detention of persons",
@@ -856,7 +943,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Alternative and renewable resources",
@@ -888,7 +974,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Child health",
@@ -955,7 +1040,6 @@
         "text": "Became Public Law No: 119-137."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Human rights",
@@ -988,7 +1072,6 @@
         "text": "Became Public Law No: 119-138."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Department of Health and Human Services",
@@ -1593,7 +1676,6 @@
         "text": "Became Public Law No: 119-121."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Arts, Culture, Religion",
       "subjects": [
         "Congressional oversight",
@@ -3217,7 +3299,6 @@
         "text": "Became Public Law No: 119-116."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Transportation and Public Works",
       "subjects": [
         "Data collection, sharing, protection",
