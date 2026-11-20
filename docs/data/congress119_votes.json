@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-19T15:58:34Z",
+  "generated_at": "2026-11-20T15:41:15Z",
   "congress": 119,
-  "vote_count": 1615,
+  "vote_count": 1618,
   "votes": [
     {
       "id": "house-119-2-327",
@@ -30,6 +30,100 @@
         }
       },
       "path": "votes/congress119/house-2-327.json"
+    },
+    {
+      "id": "senate-119-2-271",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 271,
+      "date": "2026-11-19",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "bill_id": null,
+      "totals": {
+        "yea": 48,
+        "nay": 46,
+        "present": 0,
+        "not_voting": 6
+      },
+      "party_split": {
+        "yea": {
+          "R": 48
+        },
+        "nay": {
+          "D": 44,
+          "I": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 5
+        }
+      },
+      "path": "votes/congress119/senate-2-271.json"
+    },
+    {
+      "id": "senate-119-2-270",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 270,
+      "date": "2026-11-19",
+      "question": "On Passage of the Bill",
+      "result": "Bill Passed",
+      "bill_id": "hr2347-119",
+      "totals": {
+        "yea": 62,
+        "nay": 33,
+        "present": 0,
+        "not_voting": 5
+      },
+      "party_split": {
+        "yea": {
+          "D": 14,
+          "I": 1,
+          "R": 47
+        },
+        "nay": {
+          "D": 30,
+          "I": 1,
+          "R": 2
+        },
+        "not_voting": {
+          "D": 1,
+          "R": 4
+        }
+      },
+      "path": "votes/congress119/senate-2-270.json"
+    },
+    {
+      "id": "senate-119-2-269",
+      "chamber": "senate",
+      "session": 2,
+      "roll_number": 269,
+      "date": "2026-11-19",
+      "question": "On the Concurrent Resolution",
+      "result": "Concurrent Resolution Rejected",
+      "bill_id": "hconres93-119",
+      "totals": {
+        "yea": 48,
+        "nay": 51,
+        "present": 0,
+        "not_voting": 1
+      },
+      "party_split": {
+        "yea": {
+          "D": 43,
+          "I": 2,
+          "R": 3
+        },
+        "nay": {
+          "D": 1,
+          "R": 50
+        },
+        "not_voting": {
+          "D": 1
+        }
+      },
+      "path": "votes/congress119/senate-2-269.json"
     },
     {
       "id": "house-119-2-326",

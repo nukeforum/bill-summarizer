@@ -1,8 +1,44 @@
 {
-  "generated_at": "2026-11-19T15:58:34Z",
+  "generated_at": "2026-11-20T15:41:15Z",
   "bioguide_id": "H001079",
-  "vote_count": 927,
+  "vote_count": 930,
   "votes": [
+    {
+      "vote_id": "senate-119-2-271",
+      "congress": 119,
+      "date": "2026-11-19",
+      "question": "On the Cloture Motion",
+      "result": "Cloture Motion Agreed to",
+      "position": "yea",
+      "bill_id": null,
+      "type": null,
+      "number": null,
+      "short_title": null
+    },
+    {
+      "vote_id": "senate-119-2-270",
+      "congress": 119,
+      "date": "2026-11-19",
+      "question": "On Passage of the Bill",
+      "result": "Bill Passed",
+      "position": "yea",
+      "bill_id": "hr2347-119",
+      "type": "hr",
+      "number": "2347",
+      "short_title": null
+    },
+    {
+      "vote_id": "senate-119-2-269",
+      "congress": 119,
+      "date": "2026-11-19",
+      "question": "On the Concurrent Resolution",
+      "result": "Concurrent Resolution Rejected",
+      "position": "nay",
+      "bill_id": "hconres93-119",
+      "type": "hconres",
+      "number": "93",
+      "short_title": null
+    },
     {
       "vote_id": "senate-119-2-268",
       "congress": 119,
