@@ -1,8 +1,55 @@
 {
-  "generated_at": "2026-11-19T20:20:30Z",
+  "generated_at": "2026-11-20T19:52:04Z",
   "congress": 107,
   "votes_coverage": false,
   "bills": [
+    {
+      "id": "s2712-107",
+      "congress": 107,
+      "type": "s",
+      "number": "2712",
+      "title": "Afghanistan Freedom Support Act of 2002",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hagel, Chuck",
+        "party": "R",
+        "state": "NE"
+      },
+      "introduced_date": "2002-07-09",
+      "latest_action": {
+        "date": "2002-12-04",
+        "text": "Became Public Law No: 107-327."
+      },
+      "outcome": "enacted",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Administration of justice",
+        "Advice and consent of the Senate",
+        "Afghanistan",
+        "Agricultural credit",
+        "Agricultural education",
+        "Agricultural research",
+        "Agriculture and Food",
+        "American agricultural assistance",
+        "American economic assistance",
+        "American military assistance",
+        "Animals",
+        "Armed Forces and National Security",
+        "Armed forces abroad",
+        "Arms control",
+        "Arts, Culture, Religion",
+        "Asian American ethnic groups",
+        "Auditing",
+        "Border patrols",
+        "Central banks and banking"
+      ],
+      "summary_crs": "Afghanistan Freedom Support Act of 2002 - Authorizes the President to provide assistance for Afghanistan through 2005 for the following activities: (1) urgent humanitarian needs; (2) repatriation and resettlement of refugees and internally displaced persons; (3) counternarcotics efforts; (4) reestablishment of food security, rehabilitation of the agriculture sector, improvement in health conditions, and the reconstruction of basic infrastructure; (5) reestablishment of Afghanistan as a viable nation-state through support for the development and expansion of democratic and market-based institutions; and (6) support for the establishment of a market economy, private financial institutions, the development of a telecommunications infrastructure, and trade and commercial links.<p>Urges the President to: (1) designate within the Department of State a coordinator for such assistance and U.S. interests in Afghanistan; (2) utilize the expertise of Afghan-Americans; (3) encourage the donation of manufacturing equipment by U.S. businesses for the reconstruction of Afghanistan; and (4) utilize research conducted by U.S. land grant universities and the technical expertise of professionals at such institutions, particularly in the agricultural and rural development areas.<p>Expresses the sense of Congress that, during the transition to fully representative government, the U.S. should support: (1) the development of a civilian-controlled and centrally-governed standing Afghanistan army that respects human rights and prohibits the use of children as soldiers; (2) the creation and training of a professional civilian police force that respects human rights; and (3) a multinational security force in Afghanistan.<p>Authorizes the President to provide and direct the drawdown of defense articles and services and military education to the Government of Afghanistan.<p>Prohibits U.S. involvement in poppy cultivation or illicit narcotics growth, production, or trafficking in Afghanistan.",
+      "text_url_html": "https://www.congress.gov/107/plaws/publ327/PLAW-107publ327.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/plaws/publ327/PLAW-107publ327.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-bill/2712",
+      "votes": []
+    },
     {
       "id": "sjres53-107",
       "congress": 107,
@@ -75,6 +122,72 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/plaws/publ316/PLAW-107publ316.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-bill/3156",
+      "votes": []
+    },
+    {
+      "id": "hr5349-107",
+      "congress": 107,
+      "type": "hr",
+      "number": "5349",
+      "title": "To facilitate the use of a portion of the former O'Reilly General Hospital in Springfield, Missouri, by the local Boys and Girls Club through the release of the reversionary interest and other interests retained by the United States in 1955 when the land was conveyed to the State of Missouri.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Blunt, Roy",
+        "party": "R",
+        "state": "MO"
+      },
+      "introduced_date": "2002-09-09",
+      "latest_action": {
+        "date": "2002-11-26",
+        "text": "Became Public Law No: 107-301."
+      },
+      "outcome": "enacted",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Government Operations and Politics",
+        "Health",
+        "Hospitals",
+        "Land transfers",
+        "Missouri"
+      ],
+      "summary_crs": "Directs the Administrator of General Services to release, without consideration, all right, title, and interest retained by the United States in and to the portion of the former O'Reilly General Hospital in Springfield, Missouri, conveyed to the State of Missouri pursuant to Federal law.",
+      "text_url_html": "https://www.congress.gov/107/plaws/publ301/PLAW-107publ301.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/plaws/publ301/PLAW-107publ301.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/house-bill/5349",
+      "votes": []
+    },
+    {
+      "id": "sres361-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "361",
+      "title": "A resolution tendering thanks of the Senate to the Vice President for the courteous, dignified, and impartial manner in which he has presided over the deliberations of the Senate.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daschle, Thomas A.",
+        "party": "D",
+        "state": "SD"
+      },
+      "introduced_date": "2002-11-20",
+      "latest_action": {
+        "date": "2002-11-20",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S11670: text as passed Senate: CR S11670; text of measure as introduced: CR S11739)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Commemorations",
+        "Congressional tributes",
+        "Government Operations and Politics",
+        "Senate leadership",
+        "Vice Presidents"
+      ],
+      "summary_crs": "Thanks the Honorable Richard B. Cheney, Vice President of the United States and President of the Senate, for the courteous, dignified, and impartial manner in which he has presided over the deliberations of the Senate during the second session of the 107th Congress.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres361/BILLS-107sres361ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres361/BILLS-107sres361ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/361",
       "votes": []
     },
     {
@@ -174,6 +287,173 @@
       "votes": []
     },
     {
+      "id": "sres365-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "365",
+      "title": "A resolution congratulating the people of Brazil on the completion of peaceful, free, and fair elections in Brazil and the election of President da Silva.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Chafee, Lincoln",
+        "party": "R",
+        "state": "RI"
+      },
+      "introduced_date": "2002-11-20",
+      "latest_action": {
+        "date": "2002-11-20",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S11790: text as passed Senate: CR S11790; text of measure as introduced: CR S11740)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Arts, Culture, Religion",
+        "Brazil",
+        "Bush (George W.) Administration",
+        "Commemorations",
+        "Congress",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Cultural relations",
+        "Democracy",
+        "Drug abuse",
+        "Drug law enforcement",
+        "Election administration",
+        "Foreign Trade and International Finance",
+        "Foreign leaders",
+        "Government Operations and Politics",
+        "Latin America",
+        "President and foreign policy"
+      ],
+      "summary_crs": "Congratulates the people of Brazil on the nation's peaceful, free, and fair elections on October 6, 2002, and October 27, 2002. Congratulates President-elect Luiz Inacio \"Lula\" da Silva on his electoral victory and welcomes him as a democratic partner of the United States in bilateral and multilateral efforts. Urges President George W. Bush and President-elect da Silva to pursue policies on economic, security, drug enforcement, and other matters of mutual interest to Brazil and the United States that will continue to strengthen the relationship between the people and the governments of the two countries. Pledges the support of the Senate for a strong and friendly economic, political, and cultural relationship between the United States and Brazil based on shared values.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres365/BILLS-107sres365ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres365/BILLS-107sres365ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/365",
+      "votes": []
+    },
+    {
+      "id": "sres366-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "366",
+      "title": "A  resolution urging the Government of Egypt and other Arab governments not to allow their government-controlled television stations to broadcast any program that lends legitimacy to the Protocols of the Elders of Zion, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Nelson, Bill",
+        "party": "D",
+        "state": "FL"
+      },
+      "introduced_date": "2002-11-20",
+      "latest_action": {
+        "date": "2002-11-20",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S11790-11791: text as passed Senate: CR S11790-11791; text of measure as introduced: CR S11740-11741)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Antisemitism",
+        "Arabs",
+        "Civil Rights and Liberties, Minority Issues",
+        "Egypt",
+        "Israel",
+        "Jews",
+        "Judaism",
+        "Middle East and North Africa",
+        "Racism",
+        "Religion",
+        "Religious liberty",
+        "Science, Technology, Communications",
+        "Television broadcasting",
+        "Television programs",
+        "Television stations"
+      ],
+      "summary_crs": "Condemns any publication or program that lends legitimacy to the Protocols of the Elders of Zion. Expresses the belief that such heinous propaganda, especially in the Arab world, incites popular sentiment against Jews and the State of Israel, rather than promoting religious tolerance and preparing Arab populations for peace with Israel. Commends the Department of State for denouncing the \"Horseman Without a Horse\" television series. Urges the Government of Egypt and other Arab governments: (1) not to permit their government-controlled television stations to broadcast this program or other racist and untrue material; and (2) to vigorously and publicly condemn anti-Semitism as a form of bigotry.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres366/BILLS-107sres366ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres366/BILLS-107sres366ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/366",
+      "votes": []
+    },
+    {
+      "id": "sres367-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "367",
+      "title": "A resolution recognizing the community services of Archie Edwards Blues Heritage Foundation, designating the fortnight beginning November 29, 2002, as the \"Blues Heritage Appreciation Fortnight\", and designating Friday, November 29, 2002, as \"Blues Friday\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Hatch, Orrin G.",
+        "party": "R",
+        "state": "UT"
+      },
+      "introduced_date": "2002-11-20",
+      "latest_action": {
+        "date": "2002-11-20",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S11791: text as passed Senate: CR S11791; text of measure as introduced: CR S11741)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Arts, Culture, Religion",
+        "Black history",
+        "Blacks in the performing arts",
+        "Congress",
+        "Congressional tributes",
+        "Cultural property",
+        "District of Columbia",
+        "Minorities",
+        "Music",
+        "Nonprofit organizations",
+        "Social Welfare",
+        "Special days"
+      ],
+      "summary_crs": "Recognizes the community services of the Archie Edwards Blues Heritage Foundation and the importance of blues music in the history of American culture.<p>Designates: (1) the fortnight beginning November 29, 2002, as the Blues Heritage Appreciation Fortnight; and (2) Friday, November 29, 2002, as Blues Friday.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres367/BILLS-107sres367ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres367/BILLS-107sres367ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/367",
+      "votes": []
+    },
+    {
+      "id": "sres360-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "360",
+      "title": "A resolution congratulating former President Jimmy Carter for being awarded the 2002 Nobel Peace Prize, and commending him for his lifetime of dedication to peace.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Dodd, Christopher J.",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2002-11-19",
+      "latest_action": {
+        "date": "2002-11-19",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S11537-11538; text as passed Senate: CR S11538; text of measure as introduced: CR S11580)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Awards, medals, prizes",
+        "Carter Administration",
+        "Congress",
+        "Congressional tributes",
+        "Ex-presidents",
+        "Government Operations and Politics",
+        "History",
+        "International Affairs",
+        "Peace",
+        "Peace negotiations"
+      ],
+      "summary_crs": "Recognizes and congratulates former President Jimmy Carter for being awarded the 2002 Nobel Peace Prize and commends him for his tireless work for and dedication to peace.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres360/BILLS-107sres360ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres360/BILLS-107sres360ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/360",
+      "votes": []
+    },
+    {
       "id": "sres358-107",
       "congress": 107,
       "type": "sres",
@@ -218,6 +498,75 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres358/BILLS-107sres358ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/358",
+      "votes": []
+    },
+    {
+      "id": "sres356-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "356",
+      "title": "A resolution paying a gratuity to Trudy Lapic.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Dayton, Mark",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2002-11-14",
+      "latest_action": {
+        "date": "2002-11-14",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S11148; text as passed Senate: CR S11148; text of measure as introduced: CR S11086)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Cemeteries and funerals",
+        "Congressional employees",
+        "Gifts",
+        "Government Operations and Politics",
+        "Senate",
+        "Widows",
+        "Women"
+      ],
+      "summary_crs": "Directs the Secretary of the Senate to pay a gratuity to Trudy Lapic equal to eight months of compensation at the rate her late husband, Senate employee Thomas Lapic, was receiving by law during the last month of his Senate service, including funeral expenses and all other allowances.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres356/BILLS-107sres356ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres356/BILLS-107sres356ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/356",
+      "votes": []
+    },
+    {
+      "id": "sres357-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "357",
+      "title": "A resolution commending and congratulating the Anaheim Angels for their remarkable spirit, resilience, and athletic discipline in winning the 2002 World Series.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Feinstein, Dianne",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2002-11-14",
+      "latest_action": {
+        "date": "2002-11-14",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S11148-11149; text as passed Senate: CR S11149; text of measure as introduced: CR S11086)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Baseball",
+        "California",
+        "Congress",
+        "Congressional tributes",
+        "Professional sports",
+        "Sports and Recreation"
+      ],
+      "summary_crs": "Congratulates the Anaheim Angels on winning the 2002 Major League Baseball World Series title.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres357/BILLS-107sres357ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres357/BILLS-107sres357ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/357",
       "votes": []
     },
     {
@@ -465,6 +814,39 @@
       "votes": []
     },
     {
+      "id": "sres304-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "304",
+      "title": "An original resolution encouraging the Senate Committee on Appropriations to report thirteen, fiscally responsible, bipartisan appropriations bills to the Senate not later than July 31, 2002.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Byrd, Robert C.",
+        "party": "D",
+        "state": "WV"
+      },
+      "introduced_date": "2002-07-19",
+      "latest_action": {
+        "date": "2002-10-16",
+        "text": "Resolution agreed to in Senate with an amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Economics and Public Finance",
+      "subjects": [
+        "Appropriations",
+        "Congress",
+        "Congressional committees (Senate)",
+        "Legislation",
+        "Senate Appropriations"
+      ],
+      "summary_crs": "Encourages the Senate Committee on Appropriations to report 13 fiscally responsible and bipartisan appropriations bills to the Senate by July 31, 2002.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres304/BILLS-107sres304ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres304/BILLS-107sres304ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/304",
+      "votes": []
+    },
+    {
       "id": "sres342-107",
       "congress": 107,
       "type": "sres",
@@ -604,6 +986,47 @@
       "votes": []
     },
     {
+      "id": "sres329-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "329",
+      "title": "A resolution authorizing the Sergeant at Arms and Doorkeeper of the Senate to ascertain and settle claims arising out of anthrax exposure in the Senate complex.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Dodd, Christopher J.",
+        "party": "D",
+        "state": "CT"
+      },
+      "introduced_date": "2002-09-20",
+      "latest_action": {
+        "date": "2002-09-20",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S8985-8986; text as passed Senate: CR S8985-8986; text of measure as introduced: CR S8982)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Anthrax",
+        "Claims",
+        "Congressional employees",
+        "Congressional office buildings",
+        "Congressional officers",
+        "Damages",
+        "Government Operations and Politics",
+        "Government liability",
+        "Health",
+        "Law",
+        "Members of Congress (Senate)",
+        "Senate",
+        "Senate rules and procedure"
+      ],
+      "summary_crs": "Authorizes the Sergeant at Arms and Doorkeeper of the Senate: (1) to prescribe, consider, and ascertain any claim filed by December 31, 2002, incident to service by a Member, officer, or employee of the Senate for any damage to, or loss of, personal property, for which such individual has not been reimbursed, resulting from the anthrax incident of October 15, 2001, or the related remediation efforts undertaken through March 15, 2002; and (2) with the approval of the Committee on Rules and Administration and in accordance with Federal law with respect to claims against the Federal Government, determine, compromise, adjust, and settle such claim in an amount not exceeding $4,000 per claimant.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres329/BILLS-107sres329ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres329/BILLS-107sres329ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/329",
+      "votes": []
+    },
+    {
       "id": "sres330-107",
       "congress": 107,
       "type": "sres",
@@ -632,6 +1055,42 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres330/BILLS-107sres330ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/330",
+      "votes": []
+    },
+    {
+      "id": "sres327-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "327",
+      "title": "A resolution honoring Ernie Harwell.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Stabenow, Debbie",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2002-09-13",
+      "latest_action": {
+        "date": "2002-09-13",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration:  CR S8622-8623; text as passed Senate:  CR S8623; text of measure as introduced:  CR S8621-8622)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Baseball",
+        "Congress",
+        "Congressional tributes",
+        "Michigan",
+        "Professional sports",
+        "Radio broadcasting",
+        "Science, Technology, Communications",
+        "Sports and Recreation"
+      ],
+      "summary_crs": "Honors and celebrates the achievements of Ernie Harwell (a Major League Baseball broadcaster for 55 years). Wishes him good health and happiness in his retirement.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres327/BILLS-107sres327ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres327/BILLS-107sres327ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/327",
       "votes": []
     },
     {
@@ -670,6 +1129,53 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres324/BILLS-107sres324ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/324",
+      "votes": []
+    },
+    {
+      "id": "sres309-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "309",
+      "title": "A resolution expressing the sense of the Senate that Bosnia and Herzegovina should be congratulated on the 10th anniversary of its recognition by the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Biden, Joseph R., Jr.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2002-07-26",
+      "latest_action": {
+        "date": "2002-09-10",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (consideration:  CR S8473-8474; text as passed Senate:  CR S8473-8474)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Administration of justice",
+        "Anniversaries",
+        "Armed Forces and National Security",
+        "Arrest",
+        "Bosnia and Herzegovina",
+        "Civil Rights and Liberties, Minority Issues",
+        "Collective security agreements",
+        "Commemorations",
+        "Commerce",
+        "Congress",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Democracy",
+        "Displaced persons",
+        "Due process of law",
+        "Europe",
+        "European American ethnic groups",
+        "European Union",
+        "Free enterprise"
+      ],
+      "summary_crs": "Commends Bosnia and Herzegovina for its progress during the past decade on implementing the Dayton Peace Agreement and the Constituent Peoples' Decision of its Constitutional Court. Calls for further strengthening of respect for human rights, the rule of law, and its free market economy. Urges Bosnia and Herzegovina to make all national institutions and state-level governmental bodies mandated by the Dayton Agreement fully operational.<p>Expresses support for: (1) Bosnia and Herzegovina's aspiration to become a member of the Partnership for Peace; and (2) creating a joint military command as soon as possible.<p>Urges Bosnia and Herzegovina to accelerate the return of refugees and displaced persons and to intensify its cooperation with the International Criminal Tribunal for the former Yugoslavia at The Hague, in particular with regard to surrendering to the Court individuals indicted for war crimes.<p>Reaffirms the importance for Bosnia and Herzegovina's future of participation in the European integration process and welcomes the improvement in mutual cooperation among the successor states of the former Yugoslavia and the strengthening of cooperation within the region.<p>Recognizes the important role of the Bosnian-Herzegovinian-American community in improving bilateral relations.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres309/BILLS-107sres309ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres309/BILLS-107sres309ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/309",
       "votes": []
     },
     {
@@ -1057,6 +1563,74 @@
       "votes": []
     },
     {
+      "id": "sres290-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "290",
+      "title": "A resolution expressing the sense of the Senate regarding the designation of June 24, 2002 through July 24, 2002 as French Heritage Month (Le Mois De L'Heritage Francais).",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Smith, Bob",
+        "party": "R",
+        "state": "NH"
+      },
+      "introduced_date": "2002-06-24",
+      "latest_action": {
+        "date": "2002-06-24",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S5966-5967; text as passed Senate: CR S5967; text as introduced: CR S5964)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Europe",
+        "European American ethnic groups",
+        "France",
+        "French",
+        "History",
+        "Special months"
+      ],
+      "summary_crs": "Designates June 24, 2002, through July 24, 2002, as French Heritage Month (Le Mois De L'Heritage Francais), encompassing the celebration of La Fete St. Jean Baptiste and the commemoration of Bastille Day.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres290/BILLS-107sres290ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres290/BILLS-107sres290ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/290",
+      "votes": []
+    },
+    {
+      "id": "sres287-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "287",
+      "title": "A resolution congratulating the Detroit Red Wings on winning the 2002 National Hockey League Stanley Cup Championship and again bringing the Cup home to Hockeytown.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Levin, Carl",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2002-06-18",
+      "latest_action": {
+        "date": "2002-06-18",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S5720; text of measure as passed Senate: CR S5720; text of measure as introduced: CR: S5712-5713)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congress",
+        "Congressional tributes",
+        "Hockey",
+        "Michigan",
+        "Professional sports",
+        "Sports and Recreation"
+      ],
+      "summary_crs": "Congratulates the Detroit Red Wings on winning the 2002 National Hockey League Stanley Cup Championship.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres287/BILLS-107sres287ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres287/BILLS-107sres287ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/287",
+      "votes": []
+    },
+    {
       "id": "sres283-107",
       "congress": 107,
       "type": "sres",
@@ -1138,6 +1712,53 @@
       "votes": []
     },
     {
+      "id": "sres272-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "272",
+      "title": "A resolution expressing the sense of the Senate regarding the success of the Varela Project's collection of 10,000 certified signatures in support of a national referendum and the delivery of these signatures to the Cuban National Assembly.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Nelson, Bill",
+        "party": "D",
+        "state": "FL"
+      },
+      "introduced_date": "2002-05-20",
+      "latest_action": {
+        "date": "2002-06-10",
+        "text": "Resolution agreed to in Senate with an amendment and an amended preamble by Yea-Nay Vote. 87 - 0. Record Vote Number: 146. (text: CR S5279-5280)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Amnesties",
+        "Caribbean area",
+        "Civil Rights and Liberties, Minority Issues",
+        "Commemorations",
+        "Commerce",
+        "Congress",
+        "Congressional tributes",
+        "Cuba",
+        "Democracy",
+        "Dissenters",
+        "Election administration",
+        "Election law",
+        "Free enterprise",
+        "Freedom of speech",
+        "Government Operations and Politics",
+        "Human rights",
+        "Latin America",
+        "Legislative bodies",
+        "Political prisoners"
+      ],
+      "summary_crs": "Expresses support for the constitutional right of Cuban citizens who have signed the Varela Project to petition the Cuban National Assembly for a national referendum on civil liberties. Calls on the Cuban Government to accept the petition and hold such referendum and to provide its citizens with internationally accepted standards for civil and human rights and the opportunity to vote in free and fair elections.<p>Urges the President to: (1) take steps to support the Project and any future efforts by the Cuban people to assert their constitutional right to petition the National Assembly in support of a referendum; and (2) pursue an action-oriented policy of directly assisting the Cuban people and independent organizations to strengthen the forces of change and to improve human rights in Cuba.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres272/BILLS-107sres272ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres272/BILLS-107sres272ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/272",
+      "votes": []
+    },
+    {
       "id": "sres182-107",
       "congress": 107,
       "type": "sres",
@@ -1185,6 +1806,48 @@
       "votes": []
     },
     {
+      "id": "sres252-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "252",
+      "title": "A resolution expressing the sense of the Senate regarding human rights violations in Tibet, the Panchen Lama, and the need for dialogue between the Chinese leadership and the Dalai Lama or his representatives.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wellstone, Paul D.",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2002-04-25",
+      "latest_action": {
+        "date": "2002-06-04",
+        "text": "Resolution agreed to in Senate with an amendment and an amended preamble by Unanimous Consent. (consideration: CR S4982; text as passed Senate:  CR S4982; text of measure as reported in Senate:  CR S4982)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Buddhism",
+        "China",
+        "Civil Rights and Liberties, Minority Issues",
+        "Clergy",
+        "Crime and Law Enforcement",
+        "Detention of persons",
+        "East Asia",
+        "Foreign leaders",
+        "Human rights",
+        "Negotiations",
+        "Religion",
+        "Religious liberty",
+        "Sovereignty",
+        "Tibet"
+      ],
+      "summary_crs": "Expresses the sense of the Senate that: (1) Vice President Hu Jintao of the People's Republic of China should be made aware of congressional concern for the Panchen Lama and the need to resolve the situation in Tibet through dialogue with the Dalai Lama; and (2) the Chinese Government should release the Panchen Lama, allow him to pursue his traditional role at Tashi Lhunpo monastery in Tibet, and enter into a dialogue with the Dalai Lama to find a solution for autonomy that respects the rights of all Tibetans.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres252/BILLS-107sres252ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres252/BILLS-107sres252ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/252",
+      "votes": []
+    },
+    {
       "id": "sres253-107",
       "congress": 107,
       "type": "sres",
@@ -1229,6 +1892,98 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres253/BILLS-107sres253ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/253",
+      "votes": []
+    },
+    {
+      "id": "sres263-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "263",
+      "title": "A resolution congratulating the Republic of Croatia on the 10th anniversary of its recognition by the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. McCain, John",
+        "party": "R",
+        "state": "AZ"
+      },
+      "introduced_date": "2002-05-08",
+      "latest_action": {
+        "date": "2002-06-04",
+        "text": "Resolution agreed to in Senate with an amendment and with a preamble by Unanimous Consent. (consideration: CR S4981-4982; text as passed Senate:  CR S4981-4982; text of measure as reported in Senate:  CR S4981)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Administration of justice",
+        "Anniversaries",
+        "Armed Forces and National Security",
+        "Central Europe",
+        "Civil Rights and Liberties, Minority Issues",
+        "Commemorations",
+        "Commerce",
+        "Conferences",
+        "Congress",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Croatia",
+        "Democracy",
+        "Due process of law",
+        "Europe",
+        "Free enterprise",
+        "Government Operations and Politics",
+        "Human rights",
+        "International cooperation"
+      ],
+      "summary_crs": "Commends the Republic of Croatia for its progress during the past decade and encourages its democratic orientation and further strengthening of respect for human rights, the rule of law, and the free market.<p>Expresses support for Croatia's aspirations to become a member of the North Atlantic Treaty Organization (NATO) and recommends its acceptance into the Membership Action Plan at the NATO Ministerial in Reykjavik, Iceland, in May 2002.<p>Encourages Croatia's contributions in bringing peace, stability, and prosperity to the South Central Europe region, including its cooperation with the International Criminal Tribunal for the former Yugoslavia.<p>Recognizes the important role of the Croatian-American community in supporting the strengthening of bilateral relations between the United States and Croatia.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres263/BILLS-107sres263ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres263/BILLS-107sres263ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/263",
+      "votes": []
+    },
+    {
+      "id": "sres280-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "280",
+      "title": "A resolution designating June 5, 2002, as \"National Hunger Awareness Day\" and authorizing that the Senate office of Senator Richard J. Durbin be used to collect donations of food from June 5, 2002, until June 14, 2002, from concerned Members of Congress and staff to assist families suffering from hunger and food insecurity in the Washington, D.C. metropolitan area.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Durbin, Richard J.",
+        "party": "D",
+        "state": "IL"
+      },
+      "introduced_date": "2002-06-04",
+      "latest_action": {
+        "date": "2002-06-04",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S4982-4983; text as passed Senate: CR S4983; text of measure as introduced: CR S4972-4973)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Agriculture and Food",
+        "Charitable contributions",
+        "Congress",
+        "Congressional employees",
+        "District of Columbia",
+        "Food relief",
+        "Government Operations and Politics",
+        "Hunger",
+        "Maryland",
+        "Members of Congress",
+        "Members of Congress (Senate)",
+        "Metropolitan areas",
+        "Social Welfare",
+        "Special days",
+        "Urban affairs",
+        "Virginia",
+        "Volunteer workers in social service"
+      ],
+      "summary_crs": "Designates June 5, 2002, as National Hunger Awareness Day.<p>Authorizes the office of Senator Richard J. Durbin to collect donations of food from June 5, until June 14, 2002, from concerned Members of Congress and staff to assist families suffering from hunger and food insecurity in the Washington, D.C. metropolitan area.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres280/BILLS-107sres280ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres280/BILLS-107sres280ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/280",
       "votes": []
     },
     {
@@ -1304,6 +2059,75 @@
       "votes": []
     },
     {
+      "id": "sres279-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "279",
+      "title": "A resolution to modify the funding of the Jacob K. Javits Senate Fellowship Program.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daschle, Thomas A.",
+        "party": "D",
+        "state": "SD"
+      },
+      "introduced_date": "2002-05-23",
+      "latest_action": {
+        "date": "2002-05-23",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S4881; text as passed Senate: CR S4881; text of measure as introduced: CR S4876)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Education",
+      "subjects": [
+        "Congress",
+        "Congressional fellows",
+        "Economics and Public Finance",
+        "Federal aid to higher education",
+        "Foundations",
+        "Graduate education",
+        "Higher education",
+        "Scholarships",
+        "Senate",
+        "Social Welfare"
+      ],
+      "summary_crs": "Increases from $250,000 to $350,000 the limit on  total compensation to participants in the Jacob K. Javits Senate Fellowship Program for each five-year period.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres279/BILLS-107sres279ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres279/BILLS-107sres279ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/279",
+      "votes": []
+    },
+    {
+      "id": "sres261-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "261",
+      "title": "A resolution expressing the sense of the Senate that public servants should be commended for their dedication and continued service to the nation during Public Service Recognition Week.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Akaka, Daniel K.",
+        "party": "D",
+        "state": "HI"
+      },
+      "introduced_date": "2002-05-07",
+      "latest_action": {
+        "date": "2002-05-07",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: S3973-3974; text as passed Senate: CR S3973-3974; text of measure as introduced: CR S3963-3964)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congress",
+        "Congressional tributes",
+        "Government Operations and Politics"
+      ],
+      "summary_crs": "Commends government employees for their outstanding contributions to this great Nation and salutes their unyielding dedication and spirit for public service, particularly during Public Service Recognition Week, May 6-12, 2002.<p>Honors those public servants who have given their lives in service to their country and calls upon a new generation of workers to consider a career in public service as an honorable profession.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres261/BILLS-107sres261ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres261/BILLS-107sres261ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/261",
+      "votes": []
+    },
+    {
       "id": "sres256-107",
       "congress": 107,
       "type": "sres",
@@ -1333,6 +2157,40 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres256/BILLS-107sres256ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/256",
+      "votes": []
+    },
+    {
+      "id": "sres257-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "257",
+      "title": "A resolution expressing the gratitude of the United States Senate for the service of Suzanne D. Pearson to the Office of Legislative Counsel.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Byrd, Robert C.",
+        "party": "D",
+        "state": "WV"
+      },
+      "introduced_date": "2002-04-30",
+      "latest_action": {
+        "date": "2002-04-30",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S3578; text as passed Senate: CR S3578; text of measure as introduced: CR S3573)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Bill drafting",
+        "Commemorations",
+        "Congressional officers",
+        "Congressional tributes",
+        "Government Operations and Politics",
+        "Senate"
+      ],
+      "summary_crs": "Commends Suzanne D. Pearson for her almost 32 years of faithful and exemplary service to the Office of Legislative Counsel of the U.S. Senate and to the Nation, and expresses deep appreciation and gratitude for her long, faithful, and outstanding service.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres257/BILLS-107sres257ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres257/BILLS-107sres257ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/257",
       "votes": []
     },
     {
@@ -1556,6 +2414,91 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres237/BILLS-107sres237ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/237",
+      "votes": []
+    },
+    {
+      "id": "sres238-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "238",
+      "title": "A resolution commending the University of Minnesota Golden Gophers for winning the 2002 NCAA Division I Wrestling National Championship.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Wellstone, Paul D.",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2002-04-11",
+      "latest_action": {
+        "date": "2002-04-11",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S2600-2601; text as passed Senate: CR S2600-2601; text of measure as introduced: CR S2595)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Capitol (Washington, D.C.)",
+        "College sports",
+        "Congress",
+        "Congressional tributes",
+        "Education",
+        "Government Operations and Politics",
+        "Higher education",
+        "Minnesota",
+        "Sports and Recreation",
+        "White House (Washington, D.C.)"
+      ],
+      "summary_crs": "Commends the Golden Gophers of the University of Minnesota for winning the 2002 National Collegiate Athletic Association Division I Wrestling National Championship.<p>Recognizes the achievements of all the team's members, coaches, and support staff, and invites them to the U.S. Capitol to be honored.<p>Requests that the President recognize the achievements of the team and invite them to the White House for an appropriate ceremony honoring a national championship team.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres238/BILLS-107sres238ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres238/BILLS-107sres238ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/238",
+      "votes": []
+    },
+    {
+      "id": "sres187-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "187",
+      "title": "A resolution commending the staffs of Members of Congress, the Capitol Police, the Office of the Attending Physician and his health care staff, and other members of the Capitol Hill community for their courage and professionalism during the days and weeks following the release of anthrax in Senator Daschle's office.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cleland, Max",
+        "party": "D",
+        "state": "GA"
+      },
+      "introduced_date": "2001-12-05",
+      "latest_action": {
+        "date": "2002-04-10",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (consideration: CR S2504; text as passed Senate: CR S2504)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Anthrax",
+        "Capitol (Washington, D.C.)",
+        "Commemorations",
+        "Congressional agencies",
+        "Congressional employees",
+        "Congressional leadership",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Emergency Management",
+        "Emergency medical services",
+        "Federal law enforcement officers",
+        "Government Operations and Politics",
+        "Health",
+        "International Affairs",
+        "Members of Congress (Senate)",
+        "Physicians",
+        "Police",
+        "Senate leadership",
+        "September 11, 2001"
+      ],
+      "summary_crs": "Commends the staffs of Members of Congress, the Capitol Police, the Office of the Attending Physician and his health care staff, and other members of the Capitol Hill community for their courage, professionalism, and dedication to serving the public in the aftermath of the September 11, 2001, attacks and the release of anthrax in Senator Daschle's office.<p>Recognizes congressional leadership, congressional employees, the Capitol Police, and the Office of the Attending Physician and the health care professionals in his office, in particular, who by their quick actions and early intervention prevented actual cases of anthrax within the Capitol Complex.<p>Requests that the President recognize the courage and professionalism of congressional staff, the Capitol Police, and other members of the Capitol Hill community for their public service in continuing to do the public's business in defiance of terrorist attacks.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres187/BILLS-107sres187ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres187/BILLS-107sres187ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/187",
       "votes": []
     },
     {
@@ -1851,6 +2794,44 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres222/BILLS-107sres222ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/222",
+      "votes": []
+    },
+    {
+      "id": "sres223-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "223",
+      "title": "A resolution designating March 8, 2002, as \"International Women's Day\".",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Biden, Joseph R., Jr.",
+        "party": "D",
+        "state": "DE"
+      },
+      "introduced_date": "2002-03-08",
+      "latest_action": {
+        "date": "2002-03-08",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S1710-1711; text as passed Senate: CR S1708-1709)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Civil Rights and Liberties, Minority Issues",
+        "Commemorations",
+        "Crime and Law Enforcement",
+        "Crimes against women",
+        "Human rights",
+        "Sex discrimination against women",
+        "Special days",
+        "Violence",
+        "Women",
+        "Women's rights"
+      ],
+      "summary_crs": "Designates March 8, 2002, as International Women's Day.<p>Reaffirms the Senate's commitment to ending discrimination and violence against women, ensuring their safety and welfare, and pursuing policies that guarantee their basic rights both in the United States and in the world.<p>Calls upon the U.S. people to observe International Women's Day with appropriate programs and activities.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres223/BILLS-107sres223ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres223/BILLS-107sres223ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/223",
       "votes": []
     },
     {
@@ -2217,6 +3198,53 @@
       "votes": []
     },
     {
+      "id": "sres194-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "194",
+      "title": "A resolution congratulating the people and government of Kazakhstan on the tenth anniversary of the independence of the Republic of Kazakhstan.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Brownback, Sam",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2001-12-20",
+      "latest_action": {
+        "date": "2001-12-20",
+        "text": "Resolution agreed to in Senate without amendment and an amended preamble by Unanimous Consent. (consideration: CR S14054; text as passed Senate: CR S13981)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Anniversaries",
+        "Armed Forces and National Security",
+        "Central Asia",
+        "Civil Rights and Liberties, Minority Issues",
+        "Commemorations",
+        "Commerce",
+        "Congress",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Democracy",
+        "Economics and Public Finance",
+        "Energy",
+        "Environmental Protection",
+        "Free enterprise",
+        "Gas industry",
+        "Government Operations and Politics",
+        "Human rights",
+        "International cooperation",
+        "Kazakhstan"
+      ],
+      "summary_crs": "Congratulates the people and Government of Kazakhstan on the tenth anniversary of its independence.<p>Declares that the Senate: (1) welcomes the partnership between such Government and U.S. companies in developing its natural resources in an environmentally sustainable manner; (2) applauds the cooperation between such Government and the United States on national security matters, including the war against terrorism; (3) encourages such Government to continue to make progress toward institutionalizing democracy, respecting human rights, reducing corruption, and implementing broad-based market reforms; and (4) looks forward to further enhancing the economic, political, and national security cooperation between Kazakhstan and the United States.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres194/BILLS-107sres194is.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres194/BILLS-107sres194is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/194",
+      "votes": []
+    },
+    {
       "id": "sres195-107",
       "congress": 107,
       "type": "sres",
@@ -2314,6 +3342,79 @@
       "votes": []
     },
     {
+      "id": "sres198-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "198",
+      "title": "A resolution to commend the exemplary leadership of the Republican Leader.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daschle, Thomas A.",
+        "party": "D",
+        "state": "SD"
+      },
+      "introduced_date": "2001-12-20",
+      "latest_action": {
+        "date": "2001-12-20",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S14049; text as passed Senate: CR S13982)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Commemorations",
+        "Congressional tributes",
+        "Members of Congress (Senate)",
+        "Senate leadership"
+      ],
+      "summary_crs": "Tenders the thanks of the Senate to the distinguished Republican Leader, the Senator from Mississippi, the Honorable Trent Lott, for his exemplary leadership and the cooperative and dedicated manner in which he has performed his leadership responsibilities in the conduct of Senate business during the first session of the 107th Congress.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres198/BILLS-107sres198ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres198/BILLS-107sres198ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/198",
+      "votes": []
+    },
+    {
+      "id": "sres193-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "193",
+      "title": "A resolution authorizing certain employees of the Senate who perform service in the uniformed services to be placed in a leave without pay status, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daschle, Thomas A.",
+        "party": "D",
+        "state": "SD"
+      },
+      "introduced_date": "2001-12-19",
+      "latest_action": {
+        "date": "2001-12-19",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S13712; text as passed Senate: CR S13713)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Civil Service pensions",
+        "Congressional employees",
+        "Federal employees",
+        "Finance and Financial Sector",
+        "Government Operations and Politics",
+        "Government employees' health insurance",
+        "Government employees' life insurance",
+        "Health",
+        "Labor and Employment",
+        "Leave of absence",
+        "Senate",
+        "Veterans' employment"
+      ],
+      "summary_crs": "Authorizes leave without pay status for certain Senate employees (except members or civilian employees of the Capitol Police) who are deemed to be on furlough or leave of absence by reason of service in the uniformed services. Requires treatment of such employees, while placed in that status, as congressional employees and  as Federal executive agency employees in a leave without pay status for purposes of the Civil Service Retirement System (CSRS), the Federal Employees Retirement System (FERS), and Federal life and health insurance requirements.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres193/BILLS-107sres193ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres193/BILLS-107sres193ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/193",
+      "votes": []
+    },
+    {
       "id": "sres192-107",
       "congress": 107,
       "type": "sres",
@@ -2343,6 +3444,52 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres192/BILLS-107sres192ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/192",
+      "votes": []
+    },
+    {
+      "id": "sres191-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "191",
+      "title": "A resolution expressing the sense of the Senate commending the inclusion of women in the Afghan Interim Administration and commending those who met at the historic Afghan Women's Summit for Democracy in Brussels.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Boxer, Barbara",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2001-12-13",
+      "latest_action": {
+        "date": "2001-12-13",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S13225; text as passed Senate: CR S13155)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Afghanistan",
+        "Belgium",
+        "Conferences",
+        "Democracy",
+        "Education",
+        "Germany",
+        "Government Operations and Politics",
+        "Health",
+        "Immigration",
+        "Political participation",
+        "South Asia",
+        "United Nations",
+        "Women",
+        "Women in government",
+        "Women in politics",
+        "Women refugees",
+        "Women's education",
+        "Women's health"
+      ],
+      "summary_crs": "Expresses the sense of the Senate that: (1) it is critically important for the future of Afghanistan that women participated at the United Nations sponsored talks in Bonn and will be included in the Afghan interim administration; and (2) the Afghan Women's Summit for Democracy recommendations for health, education, political participation, and refugee programs for women should be strongly considered when shaping the future of Afghanistan.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres191/BILLS-107sres191ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres191/BILLS-107sres191ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/191",
       "votes": []
     },
     {
@@ -2522,6 +3669,48 @@
       "votes": []
     },
     {
+      "id": "sres180-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "180",
+      "title": "A resolution expressing the sense of the Senate regarding the policy of the United States at the 17th Regular Meeting of the International Convention for the Conservation of Atlantic Tunas in Murcia, Spain.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Kerry, John F.",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2001-11-13",
+      "latest_action": {
+        "date": "2001-11-13",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S11727-11728, S11735; text as passed Senate: CR S11727)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Diplomacy",
+        "Fishery agreements",
+        "Foreign Trade and International Finance",
+        "Free trade",
+        "Government Operations and Politics",
+        "Government paperwork",
+        "International Affairs",
+        "International agencies",
+        "International fishery management",
+        "Marine and coastal resources, fisheries",
+        "Maritime law",
+        "Overfishing",
+        "Sustainable fisheries",
+        "Tuna fisheries"
+      ],
+      "summary_crs": "Expresses the sense of the Senate that the United States should: (1) make full use of diplomatic and other appropriate mechanisms to ensure member compliance with International Convention for the Conservation of Atlantic Tunas (ICCAT) conservation measures and quotas; (2) press for improved monitoring, recording, and reporting of harvesting and compliance information by contracting and non-contracting nations to ICCAT; (3) identify nations that engage in actions, including illegal fishing, that diminish the fishery conservation program; and (4) encourage adoption of recommendations authorizing the use of enforceable measures to prevent such nations from taking actions that would undermine the effectiveness of conservation and management recommendations.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres180/BILLS-107sres180ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres180/BILLS-107sres180ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/180",
+      "votes": []
+    },
+    {
       "id": "sres177-107",
       "congress": 107,
       "type": "sres",
@@ -2556,6 +3745,46 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres177/BILLS-107sres177ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/177",
+      "votes": []
+    },
+    {
+      "id": "sres175-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "175",
+      "title": "A resolution honoring Penn State football coach Joe Paterno.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Santorum, Rick",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2001-11-01",
+      "latest_action": {
+        "date": "2001-11-01",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Voice Vote. (consideration: CR S11309-11310; text as passed Senate: CR S11309-11310; text of measure as introduced: CR S11390)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Academic performance",
+        "Athletes",
+        "Charities",
+        "College sports",
+        "Congress",
+        "Congressional tributes",
+        "Education",
+        "Football",
+        "Higher education",
+        "Pennsylvania",
+        "Social Welfare",
+        "Sports and Recreation"
+      ],
+      "summary_crs": "Recognizes and honors Penn State football coach Joe Paterno for his constant integrity, professionalism, and strong focus on academics and character building for amateur athletes, and for becoming the first NCAA Division I-A football coach to achieve 324 career victories, on October 27, 2001.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres175/BILLS-107sres175ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres175/BILLS-107sres175ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/175",
       "votes": []
     },
     {
@@ -2682,6 +3911,41 @@
       "votes": []
     },
     {
+      "id": "sres167-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "167",
+      "title": "A resolution recognizing Ambassador Douglas \"Pete\" Peterson for his service to the United States as the first American ambassador to Vietnam since the Vietnam War.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. McCain, John",
+        "party": "R",
+        "state": "AZ"
+      },
+      "introduced_date": "2001-10-03",
+      "latest_action": {
+        "date": "2001-10-03",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S10140-10141; text as passed Senate: CR S10166)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Ambassadors",
+        "Congress",
+        "Congressional tributes",
+        "East Asia",
+        "International Affairs",
+        "Recognition (International law)",
+        "Vietnam"
+      ],
+      "summary_crs": "Recognizes Douglass \"Pete\" Peterson for his outstanding and dedicated service to the United States as the first U.S. Ambassador to Vietnam and for his historic role in normalizing U.S.-Vietnam relations.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres167/BILLS-107sres167ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres167/BILLS-107sres167ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/167",
+      "votes": []
+    },
+    {
       "id": "sjres22-107",
       "congress": 107,
       "type": "sjres",
@@ -2729,6 +3993,68 @@
       "votes": []
     },
     {
+      "id": "sres154-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "154",
+      "title": "A resolution commending Elizabeth B. Letchworth for her service to the United States Senate.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lott, Trent",
+        "party": "R",
+        "state": "MS"
+      },
+      "introduced_date": "2001-08-03",
+      "latest_action": {
+        "date": "2001-08-03",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S8873; text as passed Senate: CR S8873; text of measure as introduced: CR S8975)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Commemorations",
+        "Congressional officers",
+        "Congressional tributes",
+        "Senate"
+      ],
+      "summary_crs": "Commends Elizabeth Letchworth (first woman to be elected as Republican Secretary for the Majority) for her many years of service to the U.S. Senate. Expresses deep appreciation and gratitude for her contributions to the institution. Wishes Elizabeth and her husband Ron all the best in their future endeavors.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres154/BILLS-107sres154ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres154/BILLS-107sres154ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/154",
+      "votes": []
+    },
+    {
+      "id": "sres155-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "155",
+      "title": "A resolution electing David J. Schiappa of Maryland as Secretary of the Minority of the Senate.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lott, Trent",
+        "party": "R",
+        "state": "MS"
+      },
+      "introduced_date": "2001-08-03",
+      "latest_action": {
+        "date": "2001-08-03",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment by Unanimous Consent. (consideration: CR S8875; text as passed Senate: CR S8975)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Congressional officers",
+        "Senate"
+      ],
+      "summary_crs": "Elects David J. Schiappa of Maryland as Secretary for the Minority of the Senate.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres155/BILLS-107sres155ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres155/BILLS-107sres155ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/155",
+      "votes": []
+    },
+    {
       "id": "sres137-107",
       "congress": 107,
       "type": "sres",
@@ -2758,6 +4084,53 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres137/BILLS-107sres137ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/137",
+      "votes": []
+    },
+    {
+      "id": "sres122-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "122",
+      "title": "A resolution relating to the transfer of Slobodan Milosevic to the International Criminal Tribunal for Yugoslavia, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. McConnell, Mitch",
+        "party": "R",
+        "state": "KY"
+      },
+      "introduced_date": "2001-06-29",
+      "latest_action": {
+        "date": "2001-07-18",
+        "text": "Resolution agreed to in Senate with an amendment and an amended preamble by Unanimous Consent. (consideration:  CR S7885-7887; text as passed Senate:  CR S7886-7887; text of measure as reported in Senate:  CR S7885-7886)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Administration of justice",
+        "American economic assistance",
+        "Civil Rights and Liberties, Minority Issues",
+        "Commemorations",
+        "Congress",
+        "Congressional tributes",
+        "Crime and Law Enforcement",
+        "Democracy",
+        "Economics and Public Finance",
+        "Europe",
+        "Extradition",
+        "Foreign leaders",
+        "Government Operations and Politics",
+        "Human rights",
+        "Indictments",
+        "International courts",
+        "Jurisdiction",
+        "Law",
+        "Political prisoners"
+      ],
+      "summary_crs": "Recognizes the courage of Serbian democrats, in particular, Serbian Prime Minister Zoran Djindjic, in facilitating the transfer of Slobodan Milosevic to the International Criminal Tribunal for Yugoslavia. Calls for the continued transfer of indicted war criminals to the Tribunal and the release of all political prisoners held in Serbian prisons.<p>Expresses the sense of the Senate that the United States should remain committed to providing foreign assistance to support the success of economic, political, and legal reforms in Yugoslavia.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres122/BILLS-107sres122ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres122/BILLS-107sres122ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/122",
       "votes": []
     },
     {
@@ -3053,6 +4426,87 @@
       "votes": []
     },
     {
+      "id": "sres116-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "116",
+      "title": "A resolution congratulating the Republic of Slovenia on its tenth anniversary of independence.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Voinovich, George V.",
+        "party": "R",
+        "state": "OH"
+      },
+      "introduced_date": "2001-06-25",
+      "latest_action": {
+        "date": "2001-06-25",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S6866; text of measure as passed Senate: CR S6866; text of measure as introduced: CR S6864-6865)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Administration of justice",
+        "Anniversaries",
+        "Armed Forces and National Security",
+        "Central Europe",
+        "Civil Rights and Liberties, Minority Issues",
+        "Commemorations",
+        "Commerce",
+        "Congress",
+        "Congressional tributes",
+        "Democracy",
+        "Eastern Europe",
+        "Europe",
+        "European Union",
+        "Free enterprise",
+        "Government Operations and Politics",
+        "Human rights",
+        "Law",
+        "NATO enlargement",
+        "Peace"
+      ],
+      "summary_crs": "Congratulates the Republic of Slovenia on the tenth anniversary of its independence on June 25, 2001.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres116/BILLS-107sres116ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres116/BILLS-107sres116ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/116",
+      "votes": []
+    },
+    {
+      "id": "sres113-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "113",
+      "title": "A resolution congratulating the Los Angeles Lakers on their second consecutive National  Basketball Association championship.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Boxer, Barbara",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2001-06-19",
+      "latest_action": {
+        "date": "2001-06-19",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S6461; text as passed Senate: CR S6455)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Basketball",
+        "California",
+        "Congress",
+        "Congressional tributes",
+        "Professional sports",
+        "Sports and Recreation"
+      ],
+      "summary_crs": "Congratulates the entire 2001 Los Angeles Lakers team and its coach Phil Jackson for their remarkable achievement as 2001 National Basketball Association champions, and their drive, discipline, and dominance.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres113/BILLS-107sres113ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres113/BILLS-107sres113ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/113",
+      "votes": []
+    },
+    {
       "id": "sres88-107",
       "congress": 107,
       "type": "sres",
@@ -3189,6 +4643,37 @@
       "votes": []
     },
     {
+      "id": "sres100-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "100",
+      "title": "A resolution to elect Robert C. Byrd, a Senator from the State of West Virginia, to be President pro tempore of the Senate of the United States.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daschle, Thomas A.",
+        "party": "D",
+        "state": "SD"
+      },
+      "introduced_date": "2001-06-06",
+      "latest_action": {
+        "date": "2001-06-06",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment by Voice Vote. (consideration: CR S5843; text as passed Senate: CR S5843; text of measure as introduced: CR S5904)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Members of Congress (Senate)",
+        "Senate leadership",
+        "Senate rules and procedure"
+      ],
+      "summary_crs": "Elects Robert C. Byrd of West Virginia as President pro tempore of the Senate.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres100/BILLS-107sres100is.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres100/BILLS-107sres100is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/100",
+      "votes": []
+    },
+    {
       "id": "sres102-107",
       "congress": 107,
       "type": "sres",
@@ -3222,6 +4707,38 @@
       "votes": []
     },
     {
+      "id": "sres103-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "103",
+      "title": "A resolution expressing the thanks of the Senate to the Honorable Strom Thurmond for his service as President Pro Tempore of the United States Senate and to designate Senator Thurmond as President Pro Tempore Emeritus of the United States Senate.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lott, Trent",
+        "party": "R",
+        "state": "MS"
+      },
+      "introduced_date": "2001-06-06",
+      "latest_action": {
+        "date": "2001-06-06",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment by Voice Vote. (consideration: CR S5844; text as passed Senate: CR S5844; text of measure as introduced: CR S5904)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Commemorations",
+        "Congressional tributes",
+        "Members of Congress (Senate)",
+        "Senate leadership"
+      ],
+      "summary_crs": "Thanks Senator Strom Thurmond for his dedication and commitment during his service as President pro Tempore. Designates Senator Thurmond as President Pro Tempore Emeritus of the U.S. Senate.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres103/BILLS-107sres103is.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres103/BILLS-107sres103is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/103",
+      "votes": []
+    },
+    {
       "id": "sres104-107",
       "congress": 107,
       "type": "sres",
@@ -3249,6 +4766,73 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres104/BILLS-107sres104is.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/104",
+      "votes": []
+    },
+    {
+      "id": "sres105-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "105",
+      "title": "A resolution electing Elizabeth B. Letchworth of Virginia as Secretary for the Minority of the Senate.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lott, Trent",
+        "party": "R",
+        "state": "MS"
+      },
+      "introduced_date": "2001-06-06",
+      "latest_action": {
+        "date": "2001-06-06",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment by Voice Vote. (consideration: CR S5844; text as passed Senate: CR S5844; text of measure as introduced: CR S5904)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Congressional officers",
+        "Senate"
+      ],
+      "summary_crs": "Elects Elizabeth B. Letchworth of Virginia as Secretary for the Minority of the Senate.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres105/BILLS-107sres105is.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres105/BILLS-107sres105is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/105",
+      "votes": []
+    },
+    {
+      "id": "sres94-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "94",
+      "title": "A resolution expressing the sense of the Senate to designate May 28, 2001, as a special day for recognizing the members of the Armed Forces who have been killed in hostile action since the end of the Vietnam War.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cleland, Max",
+        "party": "D",
+        "state": "GA"
+      },
+      "introduced_date": "2001-05-24",
+      "latest_action": {
+        "date": "2001-05-24",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S5638-5658; text as passed Senate: CR 5/25/2001 S5759)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Armed Forces and National Security",
+        "Congress",
+        "Congressional tributes",
+        "Families",
+        "Memorial Day",
+        "Military dependents",
+        "Military personnel",
+        "Special days",
+        "War casualties"
+      ],
+      "summary_crs": "Designates May 28, 2001, as a special day for recognizing the sacrifice of the members of the armed forces killed in hostile action since the end of the Vietnam War and the sacrifices of their families, in light of the traditional Memorial Day recognition of the U.S. veterans who have given their lives in defense of our Nation.<p>Recognizes that we live in a time of international unrest and that military service in such a time is inherently dangerous and requires the willingness to face the most extreme hazards at unexpected times and places.<p>Acknowledges that the people of the United States owe a debt of gratitude to all members of the armed services who placed themselves in harm's way each day, and to their families.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres94/BILLS-107sres94ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres94/BILLS-107sres94ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/94",
       "votes": []
     },
     {
@@ -3380,6 +4964,50 @@
       "votes": []
     },
     {
+      "id": "sres82-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "82",
+      "title": "A resolution to authorize the production of records by the Permanent Subcommittee on Investigations of the Committee on Governmental Affairs and representation by the Senate Legal Counsel.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lott, Trent",
+        "party": "R",
+        "state": "MS"
+      },
+      "introduced_date": "2001-05-03",
+      "latest_action": {
+        "date": "2001-05-03",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S4370;  text of measure as passed Senate: CR S4270)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Civil actions and liability",
+        "Congressional employees",
+        "Congressional investigations",
+        "Congressional legal counsel",
+        "Congressional officers",
+        "Congressional oversight",
+        "Congressional privileges and immunities",
+        "Department of the Treasury",
+        "Evidence (Law)",
+        "Government Operations and Politics",
+        "Inspectors general",
+        "Law",
+        "Members of Congress (Senate)",
+        "Senate",
+        "Senate Governmental Affairs",
+        "Witnesses"
+      ],
+      "summary_crs": "Authorizes the Chairman and Ranking Minority Member of the Permanent Subcommittee on Investigations of the Committee on Governmental Affairs, acting jointly, to provide copies of records from its Treasury Department Office of Inspector General oversight review to the parties in Richard B. Calahan v. Department of Treasury and Lori Y. Vassar v. Department of Treasury, except concerning matters for which a privilege should be asserted.<p>Authorizes the Senate Legal Counsel to represent the Subcommittee, and any other committee, subcommittee, Member, officer, or employee of the Senate in connection with such testimony or documentary production.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres82/BILLS-107sres82ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres82/BILLS-107sres82ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/82",
+      "votes": []
+    },
+    {
       "id": "sres76-107",
       "congress": 107,
       "type": "sres",
@@ -3452,6 +5080,85 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres77/BILLS-107sres77ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/77",
+      "votes": []
+    },
+    {
+      "id": "sres73-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "73",
+      "title": "A resolution to commend James Harold English for his 23 years of service to the United States Senate.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Byrd, Robert C.",
+        "party": "D",
+        "state": "WV"
+      },
+      "introduced_date": "2001-04-25",
+      "latest_action": {
+        "date": "2001-04-25",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S3879; text as passed Senate: CR S3879; text of measure as introduced: CR S3927)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Congress",
+      "subjects": [
+        "Commemorations",
+        "Congressional committee staffing",
+        "Congressional committees (Senate)",
+        "Congressional employees",
+        "Congressional tributes",
+        "Government Operations and Politics",
+        "Senate",
+        "Senate Appropriations"
+      ],
+      "summary_crs": "Commends James Harold English for his exemplary service to the U.S. Senate and the Nation and expresses deep appreciation and gratitude for his long, faithful, and outstanding service.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres73/BILLS-107sres73ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres73/BILLS-107sres73ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/73",
+      "votes": []
+    },
+    {
+      "id": "sres27-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "27",
+      "title": "A resolution to express the sense of the Senate regarding the 1944 deportation of the Chechen people to central Asia, and for other purposes.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Helms, Jesse",
+        "party": "R",
+        "state": "NC"
+      },
+      "introduced_date": "2001-02-15",
+      "latest_action": {
+        "date": "2001-04-06",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S3766; text as passed Senate: CR S3766)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Anniversaries",
+        "Armed Forces and National Security",
+        "Central Asia",
+        "Civil Rights and Liberties, Minority Issues",
+        "Commemorations",
+        "Deportation",
+        "History",
+        "Human rights",
+        "Immigration",
+        "Insurgency",
+        "International relief",
+        "Military operations",
+        "Peace negotiations",
+        "Peace treaties",
+        "Russia"
+      ],
+      "summary_crs": "Expresses the sense of the Senate that: (1) the United States should commemorate the 57th anniversary of the deportation of the Chechen people from their native land; (2) the current war in Chechnya should be viewed within the historical context of repeated abuses of the Chechen people by the Russian state; (3) the U.S. Government should make every effort to alleviate the suffering of the Chechen people; and (4) it is in the interests of the United States, the Russian Federation, Chechnya, and the international community to find a peaceful solution to the war in Chechnya.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres27/BILLS-107sres27ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres27/BILLS-107sres27ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/27",
       "votes": []
     },
     {
@@ -3643,6 +5350,38 @@
       "votes": []
     },
     {
+      "id": "s279-107",
+      "congress": 107,
+      "type": "s",
+      "number": "279",
+      "title": "A bill affecting the representation of the majority and minority membership of the Senate Members of the Joint Economic Committee.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Lott, Trent",
+        "party": "R",
+        "state": "MS"
+      },
+      "introduced_date": "2001-02-07",
+      "latest_action": {
+        "date": "2001-03-13",
+        "text": "Became Public Law No: 107-3."
+      },
+      "outcome": "enacted",
+      "policy_area": "Congress",
+      "subjects": [
+        "Congressional committee membership",
+        "Congressional joint committees",
+        "Joint Economic",
+        "Members of Congress (Senate)"
+      ],
+      "summary_crs": "Requires Senate representation on the Joint Economic Committee, for the duration of the 107th Congress and notwithstanding any other provision of law, to provide for five members each of the majority and minority parties so long as such parties have equal representation in the Senate.",
+      "text_url_html": "https://www.congress.gov/107/plaws/publ3/PLAW-107publ3.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/plaws/publ3/PLAW-107publ3.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-bill/279",
+      "votes": []
+    },
+    {
       "id": "sres59-107",
       "congress": 107,
       "type": "sres",
@@ -3705,6 +5444,49 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres58/BILLS-107sres58ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/58",
+      "votes": []
+    },
+    {
+      "id": "sres45-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "45",
+      "title": "A resolution honoring the men and women who serve this country in the National Guard and expressing condolences of the United States Senate to family and friends of the 21 National Guardsmen who perished in the crash on March 3, 2001.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Bond, Christopher S.",
+        "party": "R",
+        "state": "MO"
+      },
+      "introduced_date": "2001-03-07",
+      "latest_action": {
+        "date": "2001-03-09",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Air force personnel",
+        "Armed Forces and National Security",
+        "Army personnel",
+        "Aviation safety",
+        "Congress",
+        "Congressional tributes",
+        "Families",
+        "Florida",
+        "Georgia",
+        "Military aircraft",
+        "National Guard",
+        "Transport aircraft",
+        "Transportation and Public Works",
+        "Victims",
+        "Virginia"
+      ],
+      "summary_crs": "Recognizes the contributions of the 21 National Guardsmen who died on March 3, 2001, in the crash of a C-130. Expresses: (1) condolences to the families and friends of the crash victims for their loss; and (2) appreciation for the members of the Tragedy Assistance Program for Survivors for their continued support to surviving family members. Honors the men and women of the National Guard.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres45/BILLS-107sres45ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres45/BILLS-107sres45ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/45",
       "votes": []
     },
     {
@@ -3778,6 +5560,43 @@
       "votes": []
     },
     {
+      "id": "sres17-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "17",
+      "title": "A resolution congratulating President Chandrika Bandaranaike Kumaratunga and the people of the Democratic Socialist Republic of Sri Lanka on the celebration of 53 years of independence.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Brownback, Sam",
+        "party": "R",
+        "state": "KS"
+      },
+      "introduced_date": "2001-02-06",
+      "latest_action": {
+        "date": "2001-02-08",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S1234; text as passed Senate: CR S1234)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Anniversaries",
+        "Commemorations",
+        "Congress",
+        "Congressional tributes",
+        "Foreign leaders",
+        "Holidays",
+        "South Asia",
+        "Sovereignty",
+        "Sri Lanka"
+      ],
+      "summary_crs": "Congratulates President Chandrika Bandaranaike Kumaratunga and the people of the Democratic Socialist Republic of Sri Lanka on their celebration of 53 years of independence on February 4, 2001.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres17/BILLS-107sres17ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres17/BILLS-107sres17ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/17",
+      "votes": []
+    },
+    {
       "id": "sres18-107",
       "congress": 107,
       "type": "sres",
@@ -3818,6 +5637,81 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/bills/sres18/BILLS-107sres18ats.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/18",
+      "votes": []
+    },
+    {
+      "id": "sres15-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "15",
+      "title": "A resolution congratulating the Baltimore Ravens for winning the Super Bowl XXXV.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Sarbanes, Paul S.",
+        "party": "D",
+        "state": "MD"
+      },
+      "introduced_date": "2001-01-30",
+      "latest_action": {
+        "date": "2001-01-30",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S833-834; text as passed Senate: CR S833; text of measure as introduced: CR S787)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Congress",
+        "Congressional tributes",
+        "Football",
+        "Maryland",
+        "New York City",
+        "Professional sports",
+        "Sports and Recreation"
+      ],
+      "summary_crs": "Congratulates the Baltimore Ravens for winning Super Bowl XXXV.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres15/BILLS-107sres15ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres15/BILLS-107sres15ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/15",
+      "votes": []
+    },
+    {
+      "id": "sres14-107",
+      "congress": 107,
+      "type": "sres",
+      "number": "14",
+      "title": "A resolution commending the Georgia Southern University Eagles football team for winning the 2000 NCAA Division I-AA football championship.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Cleland, Max",
+        "party": "D",
+        "state": "GA"
+      },
+      "introduced_date": "2001-01-23",
+      "latest_action": {
+        "date": "2001-01-23",
+        "text": "Submitted in the Senate, considered, and agreed to without amendment and with a preamble by Unanimous Consent. (consideration: CR S505; text as passed Senate: CR S498)"
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commemorations",
+      "subjects": [
+        "Athletes",
+        "Capitol (Washington, D.C.)",
+        "College sports",
+        "Congress",
+        "Congressional tributes",
+        "Education",
+        "Football",
+        "Georgia",
+        "Government Operations and Politics",
+        "Higher education",
+        "Sports and Recreation",
+        "White House (Washington, D.C.)"
+      ],
+      "summary_crs": "Expresses the Senate's commendation of the Georgia Southern University football team for winning the 2000 NCAA Division I-AA collegiate football national championship.",
+      "text_url_html": "https://www.congress.gov/107/bills/sres14/BILLS-107sres14ats.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/bills/sres14/BILLS-107sres14ats.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-resolution/14",
       "votes": []
     },
     {
