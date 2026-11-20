@@ -1,8 +1,677 @@
 {
-  "generated_at": "2026-11-19T15:58:34Z",
+  "generated_at": "2026-11-20T14:57:12Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
+    {
+      "id": "hconres93-119",
+      "congress": 119,
+      "type": "hconres",
+      "number": "93",
+      "title": "Directing the President, pursuant to section 5(c) of the War Powers Resolution, to remove United States Armed Forces from hostilities with Iran.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Moulton, Seth",
+        "party": "D",
+        "state": "MA"
+      },
+      "introduced_date": "2026-04-28",
+      "latest_action": {
+        "date": "2026-11-19",
+        "text": "Failed of passage in Senate by Yea-Nay Vote. 48 - 51. Record Vote Number: 269."
+      },
+      "outcome": "failed",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Conflicts and wars",
+        "Congressional-executive branch relations",
+        "Iran",
+        "Middle East",
+        "Military operations and strategy",
+        "Presidents and presidential powers, Vice Presidents",
+        "War and emergency powers"
+      ],
+      "summary_crs": "<p>This concurrent resolution directs the President to remove U.S. Armed Forces from hostilities against Iran unless explicitly authorized by a declaration of war or a congressional authorization for use of military force against Iran.</p><p>Elements of the U.S. Armed Forces needed to defend the United States, an ally, or a partner from imminent attack are not covered by this requirement provided the President complies with a specified provision of the War Powers Resolution. (The provision generally requires the President to remove U.S. Armed Forces from hostilities no more than 60 days after the President notifies or is required to notify Congress of such involvement, unless Congress authorizes such use. For more information on the War Powers Resolution, see&nbsp;<a href=\"https://www.congress.gov/crs-product/IF13134\">CRS In Focus 13134</a>.)</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hconres93/BILLS-119hconres93rfs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hconres93/BILLS-119hconres93rfs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hconres93/BILLS-119hconres93rfs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-concurrent-resolution/93",
+      "votes": [
+        {
+          "id": "house-119-2-307",
+          "chamber": "house",
+          "session": 2,
+          "roll_number": 307,
+          "date": "2026-09-15",
+          "question": "On Agreeing to the Resolution",
+          "result": "Passed",
+          "bill_id": "hconres93-119",
+          "totals": {
+            "yea": 220,
+            "nay": 204,
+            "present": 0,
+            "not_voting": 9
+          },
+          "party_split": {
+            "yea": {
+              "D": 213,
+              "R": 7
+            },
+            "nay": {
+              "I": 1,
+              "R": 203
+            },
+            "not_voting": {
+              "D": 1,
+              "R": 8
+            }
+          },
+          "path": "votes/congress119/house-2-307.json"
+        }
+      ]
+    },
+    {
+      "id": "hr1520-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "1520",
+      "title": "Charlotte Woodward Organ Transplant Discrimination Prevention Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Cammack, Kat",
+        "party": "R",
+        "state": "FL"
+      },
+      "introduced_date": "2025-02-24",
+      "latest_action": {
+        "date": "2026-11-19",
+        "text": "Passed Senate with an amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Health",
+      "subjects": [
+        "Administrative remedies",
+        "Civil actions and liability",
+        "Department of Health and Human Services",
+        "Disability and health-based discrimination",
+        "Organ and tissue donation and transplantation",
+        "Public-private cooperation"
+      ],
+      "summary_crs": "<p><strong>Charlotte Woodward Organ Transplant Discrimination Prevention Act</strong></p><p>This bill expressly prohibits health care providers and other entities involved in matching donated organs with recipients from denying or restricting an individual's access to organ transplants solely on the basis of the individual's disability, except in limited circumstances.</p><p>Specifically, these entities may consider an individual's disability when making decisions about transplants only if a physician finds, based on an individualized evaluation, that the individual's physical or mental disability is medically significant to the provision of the transplant. A disability shall not be considered medically significant if the individual has an adequate support system in place to comply with transplant-related medical requirements.</p><p>These entities must also make reasonable changes to their policies to make transplants and related care more available to individuals with disabilities.</p><p>Aggrieved individuals may bring claims of discrimination to the Office of Civil Rights of the Department of Health and Human Services. The bill provides for expedited resolutions of these claims.</p><p>In addition, the board of directors of the Organ Procurement and Transplantation Network may not issue policies that prohibit or hinder access to an organ transplant based solely on the individual's disability. This network is a public-private partnership linking professionals involved in the U.S. organ donation and transplantation system.&nbsp;</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr1520/BILLS-119hr1520eas.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr1520/BILLS-119hr1520eas.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr1520/BILLS-119hr1520eas.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/1520",
+      "votes": []
+    },
+    {
+      "id": "hr2347-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "2347",
+      "title": "Survivor Justice Tax Prevention Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Smucker, Lloyd",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2025-03-25",
+      "latest_action": {
+        "date": "2026-11-19",
+        "text": "Passed Senate with an amendment by Yea-Nay Vote. 62 - 33. Record Vote Number: 270."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Taxation",
+      "subjects": [
+        "Assault and harassment offenses",
+        "Civil actions and liability",
+        "Crime victims",
+        "Income tax exclusion",
+        "Sex offenses"
+      ],
+      "summary_crs": "<p><strong>Survivor Justice Tax Prevention Act</strong></p><p>This bill excludes from gross income certain damages received by an individual due to any sexual act or sexual contact and establishes the applicable burden of proof in court proceedings regarding the characterization of such damages for federal tax purposes.&nbsp;</p><p>Under current law, amounts received as damages (other than punitive damages) from a judgment, award, or settlement of a claim may be excluded from gross income and, thus, are not subject to federal income tax, if attributable to a personal physical injury or physical sickness. The Internal Revenue Service (IRS) generally interprets <em>personal physical injury</em> to require observable bodily harm (e.g., bruising, cuts, swelling, or bleeding).</p><p>Under the bill, amounts received as damages (other than punitive damages) from a judgment, award, or settlement due to any sexual act or sexual conduct, whether or not there are medical records or observable injuries of such act or contact, may be excluded from gross income.</p><p>Further, if a judgment, award, or settlement states that damages are due to any sexual act or sexual conduct, then the IRS has the burden of proving otherwise in court proceedings related to the tax liability associated with such damages.&nbsp;</p><p>Finally, the bill requires the IRS to promote public awareness of the exclusion from gross income of damages related to any sexual act or sexual contact.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr2347/BILLS-119hr2347pcs.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr2347/BILLS-119hr2347pcs.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr2347/BILLS-119hr2347pcs.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/2347",
+      "votes": [
+        {
+          "id": "senate-119-2-268",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 268,
+          "date": "2026-11-18",
+          "question": "On the Cloture Motion",
+          "result": "Cloture Motion Agreed to",
+          "bill_id": "hr2347-119",
+          "totals": {
+            "yea": 65,
+            "nay": 31,
+            "present": 0,
+            "not_voting": 4
+          },
+          "party_split": {
+            "yea": {
+              "D": 14,
+              "I": 1,
+              "R": 50
+            },
+            "nay": {
+              "D": 28,
+              "I": 1,
+              "R": 2
+            },
+            "not_voting": {
+              "D": 3,
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-2-268.json"
+        },
+        {
+          "id": "senate-119-2-266",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 266,
+          "date": "2026-11-18",
+          "question": "On the Motion",
+          "result": "Motion Agreed to",
+          "bill_id": "hr2347-119",
+          "totals": {
+            "yea": 70,
+            "nay": 26,
+            "present": 0,
+            "not_voting": 4
+          },
+          "party_split": {
+            "yea": {
+              "D": 18,
+              "I": 1,
+              "R": 51
+            },
+            "nay": {
+              "D": 24,
+              "I": 1,
+              "R": 1
+            },
+            "not_voting": {
+              "D": 3,
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-2-266.json"
+        },
+        {
+          "id": "senate-119-2-258",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 258,
+          "date": "2026-11-10",
+          "question": "On the Motion to Proceed",
+          "result": "Motion to Proceed Agreed to",
+          "bill_id": "hr2347-119",
+          "totals": {
+            "yea": 62,
+            "nay": 21,
+            "present": 0,
+            "not_voting": 17
+          },
+          "party_split": {
+            "yea": {
+              "D": 15,
+              "I": 1,
+              "R": 46
+            },
+            "nay": {
+              "D": 19,
+              "I": 1,
+              "R": 1
+            },
+            "not_voting": {
+              "D": 11,
+              "R": 6
+            }
+          },
+          "path": "votes/congress119/senate-2-258.json"
+        },
+        {
+          "id": "senate-119-2-257",
+          "chamber": "senate",
+          "session": 2,
+          "roll_number": 257,
+          "date": "2026-11-09",
+          "question": "On Cloture on the Motion to Proceed",
+          "result": "Cloture on the Motion to Proceed Agreed to",
+          "bill_id": "hr2347-119",
+          "totals": {
+            "yea": 73,
+            "nay": 25,
+            "present": 0,
+            "not_voting": 2
+          },
+          "party_split": {
+            "yea": {
+              "D": 21,
+              "I": 1,
+              "R": 51
+            },
+            "nay": {
+              "D": 23,
+              "I": 1,
+              "R": 1
+            },
+            "not_voting": {
+              "D": 1,
+              "R": 1
+            }
+          },
+          "path": "votes/congress119/senate-2-257.json"
+        }
+      ]
+    },
+    {
+      "id": "hr4624-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "4624",
+      "title": "Muhammad Ali American Boxing Revival Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Jack, Brian",
+        "party": "R",
+        "state": "GA"
+      },
+      "introduced_date": "2025-07-23",
+      "latest_action": {
+        "date": "2026-11-19",
+        "text": "Passed Senate with an amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Sports and Recreation",
+      "subjects": [
+        "Advisory bodies",
+        "Contracts and agency",
+        "Emergency medical services and trauma care",
+        "Internet, web applications, social media",
+        "Medical tests and diagnostic methods",
+        "Neurological disorders",
+        "Sports and recreation facilities",
+        "State and local government operations",
+        "Women's health"
+      ],
+      "summary_crs": "<p><strong>Muhammad Ali American Boxing Revival Act of 2026</strong></p><p>This bill authorizes the establishment of private-sector Unified Boxing Organizations (UBOs) and otherwise expands the regulatory framework for professional boxing. (See <a href=\"https://www.congress.gov/crs-product/IF12982\">CRS Report IF12982</a>&nbsp;for an overview of the federal regulation of professional boxing in the United States.)</p><p>Under the bill, UBOs&nbsp;may organize matches involving boxers contracted with the UBO and must comply with other regulations with respect to such matches (e.g., conduct matches under the authority of a state boxing commission). UBOs also operate alongside existing professional boxing organizations (e.g., World Boxing Council (WBC)).</p><p>UBOs must meet certain additional requirements, for example</p><ul><li>the UBO must implement an anti-doping program that includes drug testing in advance of matches,</li><li>boxers age 40 or older must receive supplemental physical examinations,</li><li>each match must have at least two ambulances on site, and</li><li>boxers must have access to equipment and facilities that are operated by the UBO for training and rehabilitation.</li></ul><p>The bill also expands the required health insurance coverage and minimum pay for all professional boxers.</p><p>Further, the bill requires state boxing commissions to establish procedures to ensure that drug tests are administered for title matches and at random for all other matches.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr4624/BILLS-119hr4624eas.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr4624/BILLS-119hr4624eas.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr4624/BILLS-119hr4624eas.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/4624",
+      "votes": []
+    },
+    {
+      "id": "hr973-119",
+      "congress": 119,
+      "type": "hr",
+      "number": "973",
+      "title": "Setting Consumer Standards for Lithium-Ion Batteries Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Rep. Torres, Ritchie",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2025-02-04",
+      "latest_action": {
+        "date": "2026-11-19",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Commerce",
+      "subjects": [
+        "Consumer affairs",
+        "Energy storage, supplies, demand",
+        "Pedestrians and bicycling",
+        "Product safety and quality"
+      ],
+      "summary_crs": "<p><strong>Setting Consumer Standards for Lithium-Ion Batteries Act</strong></p><p>This bill requires the Consumer Product Safety Commission to issue a final consumer product safety rule for rechargeable lithium-ion batteries used in&nbsp;micromobility devices, such as electric bikes and electric scooters.</p><p>Specifically, the rule must require manufacturers and distributors of&nbsp;such products to comply with the applicable&nbsp;safety standards jointly&nbsp;established by the American National Standards Institute, the Standards Council of Canada, and UL Solutions Inc.</p>",
+      "text_url_html": "https://www.congress.gov/119/bills/hr973/BILLS-119hr973eh.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/hr973/BILLS-119hr973eh.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/hr973/BILLS-119hr973eh.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/house-bill/973",
+      "votes": [
+        {
+          "id": "house-119-1-103",
+          "chamber": "house",
+          "session": 1,
+          "roll_number": 103,
+          "date": "2025-04-28",
+          "question": "On Motion to Suspend the Rules and Pass",
+          "result": "Passed",
+          "bill_id": "hr973-119",
+          "totals": {
+            "yea": 365,
+            "nay": 42,
+            "present": 0,
+            "not_voting": 25
+          },
+          "party_split": {
+            "yea": {
+              "D": 202,
+              "R": 163
+            },
+            "nay": {
+              "R": 42
+            },
+            "not_voting": {
+              "D": 11,
+              "R": 14
+            }
+          },
+          "path": "votes/congress119/house-1-103.json"
+        }
+      ]
+    },
+    {
+      "id": "s1135-119",
+      "congress": 119,
+      "type": "s",
+      "number": "1135",
+      "title": "A bill to amend the National Trails System Act to direct the Secretary of Agriculture to conduct a study on the feasibility of designating the Bonneville Shoreline Trail.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Curtis, John R.",
+        "party": "R",
+        "state": "UT"
+      },
+      "introduced_date": "2025-03-26",
+      "latest_action": {
+        "date": "2026-11-19",
+        "text": "Passed Senate with an amendment and an amendment to the Title by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Government studies and investigations",
+        "Parks, recreation areas, trails",
+        "Utah"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s1135/BILLS-119s1135es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s1135/BILLS-119s1135es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s1135/BILLS-119s1135es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1135",
+      "votes": []
+    },
+    {
+      "id": "s1288-119",
+      "congress": 119,
+      "type": "s",
+      "number": "1288",
+      "title": "Finger Lakes National Heritage Area Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Gillibrand, Kirsten E.",
+        "party": "D",
+        "state": "NY"
+      },
+      "introduced_date": "2025-04-03",
+      "latest_action": {
+        "date": "2026-11-19",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Historic sites and heritage areas",
+        "Lakes and rivers",
+        "New York State"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s1288/BILLS-119s1288es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s1288/BILLS-119s1288es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s1288/BILLS-119s1288es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/1288",
+      "votes": []
+    },
+    {
+      "id": "s2479-119",
+      "congress": 119,
+      "type": "s",
+      "number": "2479",
+      "title": "Reserve Organization of America Charter Amendments Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Blackburn, Marsha",
+        "party": "R",
+        "state": "TN"
+      },
+      "introduced_date": "2025-07-28",
+      "latest_action": {
+        "date": "2026-11-19",
+        "text": "Passed Senate with an amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Government Operations and Politics",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s2479/BILLS-119s2479es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s2479/BILLS-119s2479es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s2479/BILLS-119s2479es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/2479",
+      "votes": []
+    },
+    {
+      "id": "s3321-119",
+      "congress": 119,
+      "type": "s",
+      "number": "3321",
+      "title": "FAIR Leave Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Ernst, Joni",
+        "party": "R",
+        "state": "IA"
+      },
+      "introduced_date": "2025-12-03",
+      "latest_action": {
+        "date": "2026-11-19",
+        "text": "Passed Senate without amendment by Voice Vote."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Labor and Employment",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s3321/BILLS-119s3321es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s3321/BILLS-119s3321es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s3321/BILLS-119s3321es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/3321",
+      "votes": []
+    },
+    {
+      "id": "s4035-119",
+      "congress": 119,
+      "type": "s",
+      "number": "4035",
+      "title": "DEATH BETS Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Schiff, Adam B.",
+        "party": "D",
+        "state": "CA"
+      },
+      "introduced_date": "2026-03-10",
+      "latest_action": {
+        "date": "2026-11-19",
+        "text": "Passed Senate with an amendment by Voice Vote."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Finance and Financial Sector",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s4035/BILLS-119s4035es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s4035/BILLS-119s4035es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s4035/BILLS-119s4035es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/4035",
+      "votes": []
+    },
+    {
+      "id": "s4238-119",
+      "congress": 119,
+      "type": "s",
+      "number": "4238",
+      "title": "Endless Mountains National Heritage Area Act",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. McCormick, David",
+        "party": "R",
+        "state": "PA"
+      },
+      "introduced_date": "2026-03-26",
+      "latest_action": {
+        "date": "2026-11-19",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Historic sites and heritage areas",
+        "Land use and conservation",
+        "Pennsylvania"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s4238/BILLS-119s4238es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s4238/BILLS-119s4238es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s4238/BILLS-119s4238es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/4238",
+      "votes": []
+    },
+    {
+      "id": "s4448-119",
+      "congress": 119,
+      "type": "s",
+      "number": "4448",
+      "title": "Accelerating Broadband Permits Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Thune, John",
+        "party": "R",
+        "state": "SD"
+      },
+      "introduced_date": "2026-04-30",
+      "latest_action": {
+        "date": "2026-11-19",
+        "text": "Passed Senate with an amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Science, Technology, Communications",
+      "subjects": [
+        "Broadcasting, cable, digital technologies",
+        "Infrastructure development",
+        "Licensing and registrations",
+        "Telephone and wireless communication"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s4448/BILLS-119s4448es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s4448/BILLS-119s4448es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s4448/BILLS-119s4448es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/4448",
+      "votes": []
+    },
+    {
+      "id": "s4538-119",
+      "congress": 119,
+      "type": "s",
+      "number": "4538",
+      "title": "Washington’s Trail—1753 National Historic Trail Feasibility Study Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Fetterman, John",
+        "party": "D",
+        "state": "PA"
+      },
+      "introduced_date": "2026-05-14",
+      "latest_action": {
+        "date": "2026-11-19",
+        "text": "Passed Senate without amendment by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Public Lands and Natural Resources",
+      "subjects": [
+        "Government studies and investigations",
+        "Maryland",
+        "Parks, recreation areas, trails",
+        "Pennsylvania",
+        "U.S. history",
+        "Virginia",
+        "West Virginia"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s4538/BILLS-119s4538es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s4538/BILLS-119s4538es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s4538/BILLS-119s4538es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/4538",
+      "votes": []
+    },
+    {
+      "id": "s580-119",
+      "congress": 119,
+      "type": "s",
+      "number": "580",
+      "title": "Combating CCP Labor Abuses Act of 2026",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Peters, Gary C.",
+        "party": "D",
+        "state": "MI"
+      },
+      "introduced_date": "2025-02-13",
+      "latest_action": {
+        "date": "2026-11-19",
+        "text": "Passed Senate with an amendment and an amendment to the Title by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "International Affairs",
+      "subjects": [
+        "Asia",
+        "China",
+        "Department of Commerce",
+        "Employment and training programs",
+        "Human rights",
+        "U.S. and foreign investments"
+      ],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/s580/BILLS-119s580es.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/s580/BILLS-119s580es.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/s580/BILLS-119s580es.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-bill/580",
+      "votes": []
+    },
+    {
+      "id": "sres858-119",
+      "congress": 119,
+      "type": "sres",
+      "number": "858",
+      "title": "A resolution honoring the life and legacy of the late Constance Benjamin Clery.",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Klobuchar, Amy",
+        "party": "D",
+        "state": "MN"
+      },
+      "introduced_date": "2026-09-16",
+      "latest_action": {
+        "date": "2026-11-19",
+        "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
+      },
+      "outcome": "passed_senate",
+      "policy_area": "Education",
+      "subjects": [],
+      "summary_crs": null,
+      "text_url_html": "https://www.congress.gov/119/bills/sres858/BILLS-119sres858is.htm",
+      "text_url_xml": "https://www.congress.gov/119/bills/sres858/BILLS-119sres858is.xml",
+      "text_url_pdf": "https://www.congress.gov/119/bills/sres858/BILLS-119sres858is.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/119th-congress/senate-resolution/858",
+      "votes": []
+    },
     {
       "id": "hr2478-119",
       "congress": 119,
@@ -18,10 +687,9 @@
       "introduced_date": "2025-03-27",
       "latest_action": {
         "date": "2026-11-18",
-        "text": "Passed Senate without amendment by Unanimous Consent."
+        "text": "Passed Senate without amendment by Unanimous Consent. (consideration: CR S5777-5778)"
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "passed_senate",
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -87,10 +755,9 @@
       "introduced_date": "2026-04-30",
       "latest_action": {
         "date": "2026-11-18",
-        "text": "Passed Senate without amendment by Voice Vote."
+        "text": "Passed Senate without amendment by Voice Vote. (consideration: CR S5778; text: CR S5778)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Crime and Law Enforcement",
       "subjects": [],
       "summary_crs": null,
@@ -186,7 +853,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5727)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Education",
       "subjects": [],
       "summary_crs": null,
@@ -214,7 +880,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5727)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [],
       "summary_crs": null,
@@ -487,7 +1152,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5666)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Congressional tributes",
@@ -618,7 +1282,6 @@
         "text": "Became Public Law No: 119-140."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Aging",
@@ -652,7 +1315,6 @@
         "text": "Became Public Law No: 119-141."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional oversight",
@@ -719,7 +1381,6 @@
         "text": "Became Public Law No: 119-142."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Bankruptcy",
@@ -750,8 +1411,7 @@
         "date": "2026-11-10",
         "text": "Became Public Law No: 119-139."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Taxation",
       "subjects": [
         "Federal officials",
@@ -920,7 +1580,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Detention of persons",
@@ -953,7 +1612,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Alternative and renewable resources",
@@ -985,7 +1643,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Child health",
@@ -1052,7 +1709,6 @@
         "text": "Became Public Law No: 119-137."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Human rights",
@@ -1085,7 +1741,6 @@
         "text": "Became Public Law No: 119-138."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Department of Health and Human Services",
@@ -1690,7 +2345,6 @@
         "text": "Became Public Law No: 119-121."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Arts, Culture, Religion",
       "subjects": [
         "Congressional oversight",
@@ -3314,7 +3968,6 @@
         "text": "Became Public Law No: 119-116."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Transportation and Public Works",
       "subjects": [
         "Data collection, sharing, protection",
