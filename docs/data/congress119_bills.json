@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T14:47:41Z",
+  "generated_at": "2026-11-23T17:29:14Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
@@ -20,8 +20,7 @@
         "date": "2026-11-19",
         "text": "Failed of passage in Senate by Yea-Nay Vote. 48 - 51. Record Vote Number: 269."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "failed",
       "policy_area": "International Affairs",
       "subjects": [
         "Conflicts and wars",
@@ -155,8 +154,7 @@
         "text": "Passed Senate with an amendment by Yea-Nay Vote. 62 - 33. Record Vote Number: 270."
       },
       "outcome": "passed_senate",
-      "status": null,
-      "policy_area": "Taxation",
+      "policy_area": "Environmental Protection",
       "subjects": [
         "Assault and harassment offenses",
         "Civil actions and liability",
@@ -741,7 +739,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Education",
       "subjects": [],
       "summary_crs": null,
@@ -934,7 +931,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5727)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Education",
       "subjects": [
         "Commemorative events and holidays",
@@ -967,7 +963,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5727)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Commemorative events and holidays",
@@ -1244,7 +1239,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5666)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Congressional tributes",
@@ -1375,7 +1369,6 @@
         "text": "Became Public Law No: 119-140."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Aging",
@@ -1409,7 +1402,6 @@
         "text": "Became Public Law No: 119-141."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional oversight",
@@ -1476,7 +1468,6 @@
         "text": "Became Public Law No: 119-142."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Bankruptcy",
@@ -1507,8 +1498,7 @@
         "date": "2026-11-10",
         "text": "Became Public Law No: 119-139."
       },
-      "outcome": "passed_house",
-      "status": null,
+      "outcome": "enacted",
       "policy_area": "Taxation",
       "subjects": [
         "Federal officials",
@@ -1677,7 +1667,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Detention of persons",
@@ -1710,7 +1699,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Alternative and renewable resources",
@@ -1742,7 +1730,6 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
-      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Child health",
@@ -1948,7 +1935,6 @@
         "text": "Became Public Law No: 119-127."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Commerce",
       "subjects": [
         "Government studies and investigations",
@@ -2048,7 +2034,6 @@
         "text": "Became Public Law No: 119-128."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Federal-Indian relations",
@@ -2447,7 +2432,6 @@
         "text": "Became Public Law No: 119-121."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Arts, Culture, Religion",
       "subjects": [
         "Congressional oversight",
@@ -4071,7 +4055,6 @@
         "text": "Became Public Law No: 119-116."
       },
       "outcome": "enacted",
-      "status": null,
       "policy_area": "Transportation and Public Works",
       "subjects": [
         "Data collection, sharing, protection",
