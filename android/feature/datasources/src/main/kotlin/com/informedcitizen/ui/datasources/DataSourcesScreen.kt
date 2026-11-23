@@ -11,6 +11,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.text.input.TextObfuscationMode
+import androidx.compose.foundation.text.input.rememberTextFieldState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -23,18 +25,20 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
-import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedSecureTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.rememberUpdatedState
+import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.input.KeyboardType
-import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -153,13 +157,17 @@ private fun KeyEntryBlock(
     onKeyInputChange: (String) -> Unit,
     onSaveKey: () -> Unit,
 ) {
-    OutlinedTextField(
-        value = state.keyInput,
-        onValueChange = onKeyInputChange,
+    // The field owns its text; the view model gets each edit as a String.
+    val keyField = rememberTextFieldState(initialText = state.keyInput)
+    val currentOnKeyInputChange by rememberUpdatedState(onKeyInputChange)
+    LaunchedEffect(keyField) {
+        snapshotFlow { keyField.text.toString() }.collect { currentOnKeyInputChange(it) }
+    }
+    OutlinedSecureTextField(
+        state = keyField,
         modifier = Modifier.fillMaxWidth(),
         label = { Text("Congress.gov API key") },
-        singleLine = true,
-        visualTransformation = PasswordVisualTransformation(),
+        textObfuscationMode = TextObfuscationMode.Hidden,
         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
         isError = state.keyState is KeyUiState.Rejected,
         supportingText = {
