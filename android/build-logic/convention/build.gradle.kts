@@ -1,9 +1,20 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     `kotlin-dsl`
 }
 
+// Compiled by JDK 25, but these plugins load inside the Gradle daemon, which
+// may run on any JDK Gradle supports (17+), so the bytecode stays at 17.
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(25))
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
 kotlin {
-    jvmToolchain(17)
+    compilerOptions {
+        jvmTarget.set(JvmTarget.JVM_17)
+    }
 }
 
 dependencies {

@@ -26,7 +26,7 @@ jobs:
       - uses: actions/setup-java@v6
         with:
           distribution: temurin
-          java-version: 17
+          java-version: 25
       - uses: gradle/actions/setup-gradle@v5
       - name: Run :shared:check (JVM tests + iOS klib compile)
         working-directory: pipeline
@@ -49,7 +49,7 @@ jobs:
       - uses: actions/setup-java@v6
         with:
           distribution: temurin
-          java-version: 17
+          java-version: 25
       - uses: gradle/actions/setup-gradle@v5
       - name: Build and run the placeholder CLI
         working-directory: pipeline
