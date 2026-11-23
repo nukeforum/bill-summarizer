@@ -59,7 +59,7 @@ jobs:
           java-version: 25
 
       - name: Set up Gradle
-        uses: gradle/actions/setup-gradle@v5
+        uses: gradle/actions/setup-gradle@v6
 
       # --- Kotlin: canonical fetch (Senate LIS XML, House clerk EVS
       # XML, and legislators YAMLs all need no API key). fetch-votes is

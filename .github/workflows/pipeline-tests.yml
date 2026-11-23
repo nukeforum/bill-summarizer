@@ -27,7 +27,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 25
-      - uses: gradle/actions/setup-gradle@v5
+      - uses: gradle/actions/setup-gradle@v6
       - name: Run :shared:check (JVM tests + iOS klib compile)
         working-directory: pipeline
         run: ./gradlew :shared:check --no-daemon --stacktrace
@@ -50,7 +50,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 25
-      - uses: gradle/actions/setup-gradle@v5
+      - uses: gradle/actions/setup-gradle@v6
       - name: Build and run the placeholder CLI
         working-directory: pipeline
         run: ./gradlew :cli:run --no-daemon --stacktrace
