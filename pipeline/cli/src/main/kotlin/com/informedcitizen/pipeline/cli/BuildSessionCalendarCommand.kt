@@ -5,8 +5,8 @@ import com.informedcitizen.pipeline.fetch.buildSessionCalendar
 import com.informedcitizen.pipeline.fetch.nowIso
 import com.informedcitizen.pipeline.http.SessionCalendarClient
 import com.informedcitizen.pipeline.http.createPipelineHttpClient
+import kotlin.time.Clock
 import kotlinx.coroutines.runBlocking
-import kotlinx.datetime.Clock
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 import okio.Path.Companion.toPath

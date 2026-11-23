@@ -91,8 +91,8 @@ bundle exec fastlane run validate_play_store_json_key
   maintaining it by hand.
 - Generated `report.xml`, build artifacts (`*.aab`/`*.apk`), keystores, and
   the service-account JSON are all gitignored — see `android/.gitignore`.
-- `android/Gemfile.lock` is committed and pins fastlane `2.237.0` (plus its
-  transitive gems) so `bundle exec fastlane` runs reproducibly. After changing
+- `android/Gemfile.lock` is committed and pins the exact fastlane version (plus
+  its transitive gems) so `bundle exec fastlane` runs reproducibly. After changing
   `Gemfile`, re-run `bundle install` (or `bundle lock`) and commit the updated
   lockfile.
 - **Play Store "What's new" notes**: each release adds a

@@ -7,7 +7,7 @@ import com.informedcitizen.pipeline.fetch.SHARD_PAGE_SIZE
 import com.informedcitizen.pipeline.fetch.nowIso
 import com.informedcitizen.pipeline.state.FilePipelineStateStore
 import com.informedcitizen.pipeline.state.initialBackfillState
-import kotlinx.datetime.Clock
+import kotlin.time.Clock
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 import okio.FileSystem

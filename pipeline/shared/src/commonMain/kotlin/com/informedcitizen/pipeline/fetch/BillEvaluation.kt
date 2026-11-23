@@ -1,7 +1,7 @@
 package com.informedcitizen.pipeline.fetch
 
 import com.informedcitizen.pipeline.classifyOutcome
-import kotlinx.datetime.Instant
+import kotlin.time.Instant
 import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.JsonPrimitive

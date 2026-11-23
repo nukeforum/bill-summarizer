@@ -22,6 +22,7 @@ import java.time.LocalDate
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.UnconfinedTestDispatcher
 import kotlinx.coroutines.test.resetMain
 import kotlinx.coroutines.test.runTest
@@ -173,6 +174,12 @@ class RepsListViewModelTest {
 
     @Test
     fun `Loaded carries an up-for-election badge only for reps matching an upcoming general`() = runTest {
+        // The VM starts collecting in `init`. On the class-wide unconfined
+        // Main that runs inside the constructor, before `.also` can assign
+        // todayProvider, so the badge was judged against the real date and
+        // this test began failing the day after the 2026 general. A standard
+        // dispatcher queues the collection until `first` suspends below.
+        Dispatchers.setMain(StandardTestDispatcher(testScheduler))
         val prefs = newPrefsRepo()
         prefs.set(setOf("H1", "S1"))
         val members = StubMemberRepository(

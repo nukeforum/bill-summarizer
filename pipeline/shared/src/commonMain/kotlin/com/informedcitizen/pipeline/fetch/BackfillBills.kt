@@ -8,7 +8,7 @@ import com.informedcitizen.pipeline.state.BACKFILL_PAGES_PER_RUN
 import com.informedcitizen.pipeline.state.BackfillState
 import com.informedcitizen.pipeline.state.LIST_PAGE_LIMIT
 import com.informedcitizen.pipeline.state.advanceBackfillState
-import kotlinx.datetime.Instant
+import kotlin.time.Instant
 import kotlinx.serialization.json.JsonObject
 
 /**

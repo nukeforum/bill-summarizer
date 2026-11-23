@@ -1,50 +1,51 @@
 [versions]
-androidGradlePlugin = "9.2.0"
-androidxCore = "1.18.0"
-androidxLifecycle = "2.10.0"
+androidGradlePlugin = "9.5.2"
+androidxCore = "1.19.1"
+androidxLifecycle = "2.11.1"
 androidxActivity = "1.13.0"
 androidxBrowser = "1.10.0"
 androidxSplashscreen = "1.2.0"
-androidxComposeBom = "2026.04.01"
+# Held below 2026.11.01: Compose 1.13 needs compileSdk 37.1 or later.
+androidxComposeBom = "2026.09.00"
 androidxTest = "1.7.0"
 androidxTestExt = "1.3.0"
 androidxTestRunner = "1.7.0"
 androidxTestEspresso = "3.7.0"
-androidxDatastore = "1.2.1"
-androidxHiltNavigationCompose = "1.3.0"
-coroutines = "1.10.2"
+androidxDatastore = "1.3.0"
+androidxHiltNavigationCompose = "1.4.0"
+coroutines = "1.11.0"
 junit = "4.13.2"
-kotlin = "2.3.21"
-kotlinxSerializationJson = "1.11.0"
-hilt = "2.59.2"
-ksp = "2.3.7"
+kotlin = "2.4.21"
+kotlinxSerializationJson = "1.13.0"
+hilt = "2.60.1"
+ksp = "2.3.14"
 retrofit = "3.0.0"
-okhttp = "5.3.2"
-nav3Core = "1.1.1"
-lifecycleViewmodelNav3 = "2.10.0"
-firebaseBom = "33.6.0"
-googleServicesPlugin = "4.4.2"
-firebaseCrashlyticsPlugin = "3.0.2"
-sqldelight = "2.3.2"
+okhttp = "5.5.1"
+nav3Core = "1.2.2"
+lifecycleViewmodelNav3 = "2.11.1"
+firebaseBom = "35.2.0"
+googleServicesPlugin = "4.6.0"
+firebaseCrashlyticsPlugin = "3.0.8"
+sqldelight = "2.4.1"
 # Ktor/okio/datetime versions track pipeline/gradle/libs.versions.toml —
 # the BYOK in-app pipeline calls into pipeline:shared, whose Ktor types
 # appear in :feature:datasources signatures.
-ktor = "3.0.3"
-okio = "3.10.2"
-kotlinxDatetime = "0.6.1"
-workManager = "2.10.0"
-hiltWork = "1.2.0"
-robolectric = "4.13"
+ktor = "3.6.1"
+okio = "3.18.2"
+# Resolves to 0.8.0-0.6.x-compat: ktor 3.6 depends on that artifact and
+# Gradle ranks it above plain 0.8.0. It is a superset that still carries
+# the removed kotlinx.datetime.Instant/Clock; this code uses kotlin.time.
+kotlinxDatetime = "0.8.0"
+workManager = "2.12.0"
+hiltWork = "1.4.0"
+robolectric = "4.18.1"
 aicore = "0.0.1-exp02"
 # Paging 3 backs the sharded bills list (#41): the RemoteMediator bridges
 # #40 shard fetches into cached_bill and Paging drives lazy load + honest
 # "more pages exist but failed" load states. paging-runtime carries
 # paging-common (RemoteMediator/PagingState); paging-compose supplies the
 # LazyPagingItems UI (collectAsLazyPagingItems + append load-state footer).
-# Pinned to 3.4.2 to match the paging-common
-# that sqldelight:androidx-paging3-extensions (QueryPagingSource) pulls, so
-# the app resolves to one paging version with no cross-module skew.
-androidxPaging = "3.4.2"
+androidxPaging = "3.5.3"
 
 [libraries]
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidxCore" }

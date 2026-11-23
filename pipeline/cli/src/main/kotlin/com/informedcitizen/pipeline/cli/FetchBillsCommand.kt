@@ -12,8 +12,8 @@ import com.informedcitizen.pipeline.http.CongressClient
 import com.informedcitizen.pipeline.http.createPipelineHttpClient
 import com.informedcitizen.pipeline.state.FilePipelineStateStore
 import com.informedcitizen.pipeline.state.initialBackfillState
+import kotlin.time.Clock
 import kotlinx.coroutines.runBlocking
-import kotlinx.datetime.Clock
 import kotlinx.datetime.DateTimeUnit
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.minus
