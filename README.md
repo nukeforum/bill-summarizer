@@ -41,7 +41,7 @@ its own — it builds a structured prompt and shares it via Android's
 
 | Layer | Choice |
 |---|---|
-| Language | Kotlin 2.3.21 (Java 17) |
+| Language | Kotlin 2.4.21 (Java 17) |
 | UI | Jetpack Compose + Material 3 |
 | Navigation | AndroidX Navigation 3 |
 | Architecture | Multi-module (`:core:*` + `:feature:*`), MVVM per screen |
@@ -53,9 +53,9 @@ its own — it builds a structured prompt and shares it via Android's
 | On-device AI | Google AI Edge AICore (Gemini Nano) † |
 | Crash reporting | Firebase Crashlytics |
 | Testing | JUnit 4, Robolectric, kotlinx-coroutines-test |
-| Build | Gradle 9.5 Kotlin DSL with `libs.versions.toml`, AGP 9.2, convention plugins |
+| Build | Gradle 9.9 Kotlin DSL with `libs.versions.toml`, AGP 9.5, convention plugins |
 | Min SDK | 26 (Android 8) |
-| Target / Compile SDK | 36 |
+| Target / Compile SDK | 36 / 37 |
 | Strictness | `-Werror` on Kotlin + Java, `lint.warningsAsErrors = true` |
 
 † **Dormant behind `FeatureFlags.AI_TITLES`.** AICore is only invoked by
@@ -126,7 +126,7 @@ android/
 
 ## Building
 
-Open `android/` in a current Android Studio (AGP 9.2 requires a recent
+Open `android/` in a current Android Studio (AGP 9.5 requires a recent
 canary/beta), or build from the command line:
 
 ```bash
@@ -135,7 +135,7 @@ cd android
 ./gradlew :app:installDebug    # with a device or emulator attached
 ```
 
-The first build downloads Gradle 9.5.0 and the AGP 9.2.0 toolchain. The
+The first build downloads Gradle 9.9.2 and the AGP 9.5.2 toolchain. The
 build is strict — Kotlin warnings, Java warnings, and lint warnings are
 all errors. New dependencies that surface deprecation warnings will fail
 the build until you upgrade or `@Suppress` deliberately.
