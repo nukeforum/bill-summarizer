@@ -23,9 +23,9 @@ okhttp = "5.3.2"
 nav3Core = "1.1.1"
 lifecycleViewmodelNav3 = "2.10.0"
 firebaseBom = "33.6.0"
-googleServicesPlugin = "4.4.2"
-firebaseCrashlyticsPlugin = "3.0.2"
-sqldelight = "2.3.2"
+googleServicesPlugin = "4.6.0"
+firebaseCrashlyticsPlugin = "3.0.8"
+sqldelight = "2.4.1"
 # Ktor/okio/datetime versions track pipeline/gradle/libs.versions.toml —
 # the BYOK in-app pipeline calls into pipeline:shared, whose Ktor types
 # appear in :feature:datasources signatures.
