@@ -2,7 +2,7 @@ package com.informedcitizen.pipeline.fetch
 
 import com.informedcitizen.pipeline.http.CongressClient
 import com.informedcitizen.pipeline.state.LIST_PAGE_LIMIT
-import kotlinx.datetime.Instant
+import kotlin.time.Instant
 import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonObject
 

@@ -5,7 +5,7 @@ import com.informedcitizen.pipeline.fetch.buildElectionCalendar
 import com.informedcitizen.pipeline.fetch.loadCuratedPrimaries
 import com.informedcitizen.pipeline.fetch.nowIso
 import com.informedcitizen.pipeline.model.ElectionType
-import kotlinx.datetime.Clock
+import kotlin.time.Clock
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 import okio.FileSystem

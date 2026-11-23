@@ -2,7 +2,7 @@ package com.informedcitizen.pipeline.cli
 
 import com.informedcitizen.pipeline.congressForYear
 import com.informedcitizen.pipeline.fetch.checkFreshness
-import kotlinx.datetime.Clock
+import kotlin.time.Clock
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 import okio.FileSystem

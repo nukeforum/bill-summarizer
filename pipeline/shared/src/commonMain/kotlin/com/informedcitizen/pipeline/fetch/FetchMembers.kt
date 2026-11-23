@@ -6,8 +6,8 @@ import com.informedcitizen.pipeline.http.LegislatorsClient
 import com.informedcitizen.pipeline.model.Member
 import com.informedcitizen.pipeline.model.MemberLegislationItem
 import com.informedcitizen.pipeline.model.SocialHandle
+import kotlin.time.Clock
 import kotlinx.coroutines.CancellationException
-import kotlinx.datetime.Clock
 import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonObject
 

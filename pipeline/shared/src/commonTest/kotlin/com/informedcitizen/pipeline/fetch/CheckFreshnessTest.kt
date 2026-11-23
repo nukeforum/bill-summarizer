@@ -1,6 +1,6 @@
 package com.informedcitizen.pipeline.fetch
 
-import kotlinx.datetime.Instant
+import kotlin.time.Instant
 import okio.Path
 import okio.Path.Companion.toPath
 import okio.buffer

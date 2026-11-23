@@ -1,10 +1,13 @@
 [versions]
 kotlin = "2.4.21"
-coroutines = "1.10.2"
-kotlinxSerializationJson = "1.11.0"
-ktor = "3.0.3"
-okio = "3.10.2"
-kotlinxDatetime = "0.6.1"
+coroutines = "1.11.0"
+kotlinxSerializationJson = "1.13.0"
+ktor = "3.6.1"
+okio = "3.18.2"
+# Resolves to 0.8.0-0.6.x-compat: ktor 3.6 depends on that artifact and
+# Gradle ranks it above plain 0.8.0. It is a superset that still carries
+# the removed kotlinx.datetime.Instant/Clock; this code uses kotlin.time.
+kotlinxDatetime = "0.8.0"
 
 [libraries]
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }

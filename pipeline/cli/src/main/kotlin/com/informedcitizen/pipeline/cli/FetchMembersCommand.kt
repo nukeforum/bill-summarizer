@@ -10,8 +10,8 @@ import com.informedcitizen.pipeline.fetch.nowIso
 import com.informedcitizen.pipeline.http.CongressClient
 import com.informedcitizen.pipeline.http.LegislatorsClient
 import com.informedcitizen.pipeline.http.createPipelineHttpClient
+import kotlin.time.Clock
 import kotlinx.coroutines.runBlocking
-import kotlinx.datetime.Clock
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 import okio.Path.Companion.toPath

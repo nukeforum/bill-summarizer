@@ -1,6 +1,6 @@
 package com.informedcitizen.pipeline.fetch
 
-import kotlinx.datetime.Instant
+import kotlin.time.Instant
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonObject
 import kotlin.test.Test

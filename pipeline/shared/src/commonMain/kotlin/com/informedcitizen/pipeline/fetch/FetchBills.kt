@@ -4,7 +4,7 @@ import com.informedcitizen.pipeline.ErrorCollector
 import com.informedcitizen.pipeline.http.CongressClient
 import com.informedcitizen.pipeline.model.Bill
 import com.informedcitizen.pipeline.model.BillsManifest
-import kotlinx.datetime.Instant
+import kotlin.time.Instant
 import kotlinx.serialization.json.JsonObject
 
 /** Recent-window cutoff in days. Mirrors Python `fetch_bills.RECENT_DAYS = 60`. */
