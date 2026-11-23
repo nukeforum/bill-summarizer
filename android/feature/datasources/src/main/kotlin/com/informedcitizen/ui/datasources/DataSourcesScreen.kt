@@ -85,7 +85,7 @@ fun DataSourcesScreen(
 }
 
 @Composable
-private fun DataSourcesContent(
+internal fun DataSourcesContent(
     state: DataSourcesUiState,
     innerPadding: PaddingValues,
     onKeyInputChange: (String) -> Unit,
