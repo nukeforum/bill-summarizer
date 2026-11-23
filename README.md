@@ -41,7 +41,7 @@ its own — it builds a structured prompt and shares it via Android's
 
 | Layer | Choice |
 |---|---|
-| Language | Kotlin 2.4.21 (Java 17) |
+| Language | Kotlin 2.4.21 (JDK 25 toolchain, Java 17 bytecode) |
 | UI | Jetpack Compose + Material 3 |
 | Navigation | AndroidX Navigation 3 |
 | Architecture | Multi-module (`:core:*` + `:feature:*`), MVVM per screen |
@@ -55,7 +55,7 @@ its own — it builds a structured prompt and shares it via Android's
 | Testing | JUnit 4, Robolectric, kotlinx-coroutines-test |
 | Build | Gradle 9.9 Kotlin DSL with `libs.versions.toml`, AGP 9.5, convention plugins |
 | Min SDK | 26 (Android 8) |
-| Target / Compile SDK | 36 / 37 |
+| Target / Compile SDK | 37 / 37.2 |
 | Strictness | `-Werror` on Kotlin + Java, `lint.warningsAsErrors = true` |
 
 † **Dormant behind `FeatureFlags.AI_TITLES`.** AICore is only invoked by
@@ -135,8 +135,10 @@ cd android
 ./gradlew :app:installDebug    # with a device or emulator attached
 ```
 
-The first build downloads Gradle 9.9.2 and the AGP 9.5.2 toolchain. The
-build is strict — Kotlin warnings, Java warnings, and lint warnings are
+The first build downloads Gradle 9.9.2 and the AGP 9.5.2 toolchain. Code
+compiles with JDK 25: Gradle uses an installed JDK 25 or downloads one
+through the foojay toolchain resolver, and Gradle itself runs on any JDK 17
+or newer. The build is strict — Kotlin warnings, Java warnings, and lint warnings are
 all errors. New dependencies that surface deprecation warnings will fail
 the build until you upgrade or `@Suppress` deliberately.
 
