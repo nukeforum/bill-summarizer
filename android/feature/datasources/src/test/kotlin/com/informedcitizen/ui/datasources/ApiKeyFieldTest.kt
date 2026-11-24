@@ -1,6 +1,7 @@
 package com.informedcitizen.ui.datasources
 
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -8,7 +9,9 @@ import androidx.compose.ui.semantics.SemanticsProperties
 import androidx.compose.ui.test.SemanticsMatcher
 import androidx.compose.ui.test.assert
 import androidx.compose.ui.test.assertIsEnabled
+import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.hasSetTextAction
+import androidx.compose.ui.test.junit4.StateRestorationTester
 import androidx.compose.ui.test.junit4.v2.createComposeRule
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performTextInput
@@ -37,17 +40,20 @@ class ApiKeyFieldTest {
     private var keyInput by mutableStateOf("")
 
     private fun setContent() {
-        composeRule.setContent {
-            DataSourcesContent(
-                state = DataSourcesUiState(keyInput = keyInput),
-                innerPadding = PaddingValues(0.dp),
-                onKeyInputChange = { keyInput = it },
-                onSaveKey = {},
-                onClearKey = {},
-                onFetchNow = {},
-                onOpenGuide = {},
-            )
-        }
+        composeRule.setContent { Content() }
+    }
+
+    @Composable
+    private fun Content() {
+        DataSourcesContent(
+            state = DataSourcesUiState(keyInput = keyInput),
+            innerPadding = PaddingValues(0.dp),
+            onKeyInputChange = { keyInput = it },
+            onSaveKey = {},
+            onClearKey = {},
+            onFetchNow = {},
+            onOpenGuide = {},
+        )
     }
 
     @Test
@@ -67,5 +73,20 @@ class ApiKeyFieldTest {
 
         composeRule.onNode(hasSetTextAction())
             .assert(SemanticsMatcher.keyIsDefined(SemanticsProperties.Password))
+    }
+
+    @Test
+    fun `typed key is not kept in saved instance state`() {
+        val restorationTester = StateRestorationTester(composeRule)
+        restorationTester.setContent { Content() }
+        composeRule.onNode(hasSetTextAction()).performTextInput(typedKey)
+        composeRule.waitForIdle()
+
+        keyInput = ""
+        restorationTester.emulateSavedInstanceStateRestore()
+        composeRule.waitForIdle()
+
+        assertEquals("", keyInput)
+        composeRule.onNodeWithText("Verify and save").assertIsNotEnabled()
     }
 }

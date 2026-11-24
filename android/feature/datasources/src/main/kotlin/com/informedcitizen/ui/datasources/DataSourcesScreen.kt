@@ -11,8 +11,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.text.input.TextFieldState
 import androidx.compose.foundation.text.input.TextObfuscationMode
-import androidx.compose.foundation.text.input.rememberTextFieldState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -33,6 +33,7 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Alignment
@@ -158,7 +159,9 @@ private fun KeyEntryBlock(
     onSaveKey: () -> Unit,
 ) {
     // The field owns its text; the view model gets each edit as a String.
-    val keyField = rememberTextFieldState(initialText = state.keyInput)
+    // Not rememberTextFieldState: that is saveable, and a half-typed key must
+    // not be written to saved instance state. The view model restores it.
+    val keyField = remember { TextFieldState(initialText = state.keyInput) }
     val currentOnKeyInputChange by rememberUpdatedState(onKeyInputChange)
     LaunchedEffect(keyField) {
         snapshotFlow { keyField.text.toString() }.collect { currentOnKeyInputChange(it) }
