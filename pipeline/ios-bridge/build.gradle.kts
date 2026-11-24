@@ -5,7 +5,7 @@ plugins {
 }
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(25)
     jvm()
 
     val frameworkName = "InformedCitizenPipeline"

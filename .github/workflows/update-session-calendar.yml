@@ -50,10 +50,10 @@ jobs:
         uses: actions/setup-java@v6
         with:
           distribution: temurin
-          java-version: 17
+          java-version: 25
 
       - name: Set up Gradle
-        uses: gradle/actions/setup-gradle@v5
+        uses: gradle/actions/setup-gradle@v6
 
       # --- Kotlin: canonical build ---
 

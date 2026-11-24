@@ -3,12 +3,14 @@ import org.gradle.api.tasks.compile.JavaCompile
 import org.gradle.api.tasks.testing.Test
 import org.gradle.kotlin.dsl.configure
 import org.gradle.kotlin.dsl.withType
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.dsl.KotlinAndroidProjectExtension
 
 internal fun Project.configureKotlinAndroid() {
     extensions.configure(KotlinAndroidProjectExtension::class.java) {
         jvmToolchain(Versions.JVM_TOOLCHAIN)
         compilerOptions {
+            jvmTarget.set(JvmTarget.fromTarget(Versions.JAVA.toString()))
             allWarningsAsErrors.set(true)
         }
     }

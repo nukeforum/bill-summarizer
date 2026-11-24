@@ -1,12 +1,20 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
     alias(libs.plugins.kotlin.serialization)
 }
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(25)
 
-    jvm()
+    // The Android app consumes this JVM artifact, and the app's bytecode
+    // target is 17 (android/build-logic Versions.JAVA).
+    jvm {
+        compilerOptions {
+            jvmTarget.set(JvmTarget.JVM_17)
+        }
+    }
     iosArm64()
     iosSimulatorArm64()
     iosX64()
