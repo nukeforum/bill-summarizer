@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T22:12:16Z",
+  "generated_at": "2026-11-25T21:28:34Z",
   "congress": 107,
   "votes_coverage": false,
   "bills": [
@@ -12329,6 +12329,53 @@
       "text_url_xml": null,
       "text_url_pdf": "https://www.congress.gov/107/plaws/publ39/PLAW-107publ39.pdf",
       "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-joint-resolution/22",
+      "votes": []
+    },
+    {
+      "id": "sjres23-107",
+      "congress": 107,
+      "type": "sjres",
+      "number": "23",
+      "title": "Authorization for Use of Military Force",
+      "short_title": null,
+      "sponsor": {
+        "name": "Sen. Daschle, Thomas A.",
+        "party": "D",
+        "state": "SD"
+      },
+      "introduced_date": "2001-09-14",
+      "latest_action": {
+        "date": "2001-09-18",
+        "text": "Became Public Law No: 107-40."
+      },
+      "outcome": "enacted",
+      "policy_area": "Armed Forces and National Security",
+      "subjects": [
+        "Air piracy",
+        "Armed forces abroad",
+        "Bombings",
+        "Commercial aircraft",
+        "Congress",
+        "Congress and military policy",
+        "Congressional-Presidential relations",
+        "Crime and Law Enforcement",
+        "Department of Defense",
+        "EBB Terrorism",
+        "Federal installations",
+        "Federal office buildings",
+        "Government Operations and Politics",
+        "International Affairs",
+        "Military intervention",
+        "Military operations",
+        "New York City",
+        "Office buildings",
+        "Pennsylvania"
+      ],
+      "summary_crs": "Authorization for Use of Military Force - Authorizes the President to use all necessary and appropriate force against those nations, organizations, or persons he determines planned, authorized, committed, or aided the terrorist attacks that occurred on September 11, 2001, or harbored such organizations or persons, in order to prevent any future acts of international terrorism against the United States by such nations, organizations, or persons.<p>States that this Act is intended to constitute specific statutory authorization within the meaning of the War Powers Resolution.",
+      "text_url_html": "https://www.congress.gov/107/plaws/publ40/PLAW-107publ40.htm",
+      "text_url_xml": null,
+      "text_url_pdf": "https://www.congress.gov/107/plaws/publ40/PLAW-107publ40.pdf",
+      "congress_gov_url": "https://www.congress.gov/bill/107th-congress/senate-joint-resolution/23",
       "votes": []
     },
     {
