@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T15:07:00Z",
+  "generated_at": "2026-11-28T15:45:19Z",
   "congress": 119,
   "votes_coverage": true,
   "bills": [
@@ -21,6 +21,7 @@
         "text": "Became Public Law No: 119-147."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Geography and mapping",
@@ -55,6 +56,7 @@
         "text": "Became Public Law No: 119-148."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Foreign Trade and International Finance",
       "subjects": [
         "Customs enforcement",
@@ -86,6 +88,7 @@
         "text": "Became Public Law No: 119-149."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Armed Forces and National Security",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -119,6 +122,7 @@
         "text": "Became Public Law No: 119-146."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Armed Forces and National Security",
       "subjects": [
         "Building construction",
@@ -152,6 +156,7 @@
         "text": "Became Public Law No: 119-143."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -185,6 +190,7 @@
         "text": "Became Public Law No: 119-144."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Social Welfare",
       "subjects": [
         "Administrative law and regulatory procedures",
@@ -217,6 +223,7 @@
         "text": "Became Public Law No: 119-145."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Law",
       "subjects": [
         "Criminal justice information and records",
@@ -247,7 +254,8 @@
         "date": "2026-11-19",
         "text": "Failed of passage in Senate by Yea-Nay Vote. 48 - 51. Record Vote Number: 269."
       },
-      "outcome": "failed",
+      "outcome": "passed_house",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Conflicts and wars",
@@ -981,6 +989,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent."
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Education",
       "subjects": [
         "Congressional tributes",
@@ -1178,6 +1187,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5727)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Education",
       "subjects": [
         "Commemorative events and holidays",
@@ -1210,6 +1220,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5727)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Commemorative events and holidays",
@@ -1486,6 +1497,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5666)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Sports and Recreation",
       "subjects": [
         "Congressional tributes",
@@ -1582,6 +1594,7 @@
         "text": "Became Public Law No: 119-140."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Aging",
@@ -1615,6 +1628,7 @@
         "text": "Became Public Law No: 119-141."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Public Lands and Natural Resources",
       "subjects": [
         "Congressional oversight",
@@ -1649,6 +1663,7 @@
         "text": "Became Public Law No: 119-142."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Finance and Financial Sector",
       "subjects": [
         "Bankruptcy",
@@ -1679,7 +1694,8 @@
         "date": "2026-11-10",
         "text": "Became Public Law No: 119-139."
       },
-      "outcome": "enacted",
+      "outcome": "passed_house",
+      "status": null,
       "policy_area": "Taxation",
       "subjects": [
         "Federal officials",
@@ -1848,6 +1864,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "International Affairs",
       "subjects": [
         "Detention of persons",
@@ -1880,6 +1897,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Energy",
       "subjects": [
         "Alternative and renewable resources",
@@ -1911,6 +1929,7 @@
         "text": "Resolution agreed to in Senate without amendment and with a preamble by Unanimous Consent. (consideration: CR S5525)"
       },
       "outcome": "passed_senate",
+      "status": null,
       "policy_area": "Health",
       "subjects": [
         "Child health",
@@ -2116,6 +2135,7 @@
         "text": "Became Public Law No: 119-127."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Commerce",
       "subjects": [
         "Government studies and investigations",
@@ -2215,6 +2235,7 @@
         "text": "Became Public Law No: 119-128."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Native Americans",
       "subjects": [
         "Federal-Indian relations",
@@ -2613,6 +2634,7 @@
         "text": "Became Public Law No: 119-121."
       },
       "outcome": "enacted",
+      "status": null,
       "policy_area": "Arts, Culture, Religion",
       "subjects": [
         "Congressional oversight",
